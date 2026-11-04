@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T04:07:50.719Z",
-  "status": "Unified Mods / Mod Menus published and live browser verified",
+  "updatedAt": "2026-11-04T04:27:54.333Z",
+  "status": "PS4 and PS5 alignment fixes published and live browser verified",
   "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
   "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
   "publicURL": "https://speedy-away.github.io/",
@@ -204,18 +204,18 @@
     "physicalConsoleTested": false
   },
   "latestFollowup": {
-    "request": "Consolidate GTA V and RDR2 into Mods / Mod Menus and remove excess blank space on PS4 and PS5.",
+    "request": "Fix misaligned controls and layout across PS4 and PS5 pages.",
     "status": "Published and live browser verified",
     "publicationPending": false,
-    "review": "docs/migration/mods-consolidation-review.json",
-    "liveReport": "docs/qa/mods-consolidation-live.json",
-    "screenshot": "docs/screenshots/mods-consolidation-20261104/live-ps5.jpg",
+    "review": "docs/migration/console-alignment-review.json",
+    "liveReport": "docs/qa/console-alignment-live.json",
+    "screenshot": "docs/screenshots/console-alignment-20261104/live-ps5-helper.jpg",
     "deployment": {
-      "id": 41770937806,
-      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
+      "id": 41772877133,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41772877133",
       "conclusion": "success",
-      "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
-      "verifiedAt": "2026-11-04T04:07:50.719Z"
+      "commit": "34a0638df38901abc280247be682a666ee1f8dfc",
+      "verifiedAt": "2026-11-04T04:27:54.333Z"
     },
     "tests": {
       "files": 74,
@@ -223,38 +223,31 @@
       "pass": 515,
       "fail": 0,
       "skipped": 0,
-      "evidence": "docs/qa/mods-consolidation-tests.tap"
+      "evidence": "docs/qa/console-alignment-tests.tap"
     },
     "sender": {
-      "version": "2.1.0+537062853155",
-      "bytes": 107453769,
-      "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
-      "versionsPreserved": 44,
-      "delivery": {
-        "verifiedAt": "2026-11-04T04:01:45.064Z",
-        "version": "2.1.0+537062853155",
-        "name": "console-payload-sender-2.1.0-537062853155.zip",
-        "bytes": 107453769,
-        "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
-        "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-537062853155.zip",
-        "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+537062853155\\console-payload-sender-2.1.0-537062853155.zip",
-        "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-537062853155",
-        "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-537062853155/console-payload-sender-2.1.0-537062853155.zip",
-        "assetId": 708146618,
-        "serverDigest": "sha256:c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
-        "zipUnchanged": true,
-        "archiveVerified": true,
-        "downloadedCodeExecuted": false
-      }
+      "verifiedAt": "2026-11-04T04:20:48.128Z",
+      "version": "2.1.0+de86f180f3ee",
+      "name": "console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "bytes": 107454643,
+      "sha256": "65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+de86f180f3ee\\console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-de86f180f3ee",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-de86f180f3ee/console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "assetId": 708196004,
+      "serverDigest": "sha256:65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
     },
     "archive": {
-      "items": 5012,
-      "fileRecords": 8631,
-      "presentFileRecords": 8631,
+      "items": 5013,
+      "fileRecords": 8632,
+      "presentFileRecords": 8632,
       "missingFileRecords": 0,
-      "otherUnavailableFiles": 0,
-      "priorInventoryRecordsPreserved": 8630,
-      "olderSenderSnapshotsPreserved": 43
+      "priorInventoryRecordsPreserved": 8631,
+      "olderSenderSnapshotsPreserved": 44
     }
   },
   "consoleBannerFollowup": {
@@ -343,5 +336,59 @@
       "verifiedAt": "2026-11-04T03:49:54.155Z"
     },
     "testsPassed": 29
+  },
+  "modsConsolidationFollowup": {
+    "request": "Consolidate GTA V and RDR2 into Mods / Mod Menus and remove excess blank space on PS4 and PS5.",
+    "status": "Published and live browser verified",
+    "publicationPending": false,
+    "review": "docs/migration/mods-consolidation-review.json",
+    "liveReport": "docs/qa/mods-consolidation-live.json",
+    "screenshot": "docs/screenshots/mods-consolidation-20261104/live-ps5.jpg",
+    "deployment": {
+      "id": 41770937806,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
+      "conclusion": "success",
+      "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+      "verifiedAt": "2026-11-04T04:07:50.719Z"
+    },
+    "tests": {
+      "files": 74,
+      "tests": 515,
+      "pass": 515,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/mods-consolidation-tests.tap"
+    },
+    "sender": {
+      "version": "2.1.0+537062853155",
+      "bytes": 107453769,
+      "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+      "versionsPreserved": 44,
+      "delivery": {
+        "verifiedAt": "2026-11-04T04:01:45.064Z",
+        "version": "2.1.0+537062853155",
+        "name": "console-payload-sender-2.1.0-537062853155.zip",
+        "bytes": 107453769,
+        "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+        "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-537062853155.zip",
+        "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+537062853155\\console-payload-sender-2.1.0-537062853155.zip",
+        "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-537062853155",
+        "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-537062853155/console-payload-sender-2.1.0-537062853155.zip",
+        "assetId": 708146618,
+        "serverDigest": "sha256:c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+        "zipUnchanged": true,
+        "archiveVerified": true,
+        "downloadedCodeExecuted": false
+      }
+    },
+    "archive": {
+      "items": 5012,
+      "fileRecords": 8631,
+      "presentFileRecords": 8631,
+      "missingFileRecords": 0,
+      "otherUnavailableFiles": 0,
+      "priorInventoryRecordsPreserved": 8630,
+      "olderSenderSnapshotsPreserved": 43
+    }
   }
 }

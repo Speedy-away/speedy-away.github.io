@@ -1,0 +1,82 @@
+{
+  "actions": [
+    {
+      "font": "15.2px",
+      "label": "Download",
+      "lineHeight": "19px",
+      "rect": {
+        "bottom": 439.671875,
+        "height": 48,
+        "left": 185,
+        "right": 634,
+        "top": 391.671875,
+        "width": 449,
+        "x": 185,
+        "y": 391.671875
+      }
+    },
+    {
+      "font": "15.2px",
+      "label": "Load",
+      "lineHeight": "19px",
+      "rect": {
+        "bottom": 439.671875,
+        "height": 48,
+        "left": 646,
+        "right": 1095,
+        "top": 391.671875,
+        "width": 449,
+        "x": 646,
+        "y": 391.671875
+      }
+    }
+  ],
+  "choice": {
+    "bottom": 305.109375,
+    "height": 67.953125,
+    "left": 185,
+    "right": 1095,
+    "top": 237.15625,
+    "width": 910,
+    "x": 185,
+    "y": 237.15625
+  },
+  "close": {
+    "bottom": 163.71875,
+    "height": 44,
+    "left": 1051,
+    "right": 1095,
+    "top": 119.71875,
+    "width": 44,
+    "x": 1051,
+    "y": 119.71875
+  },
+  "contentEdges": [
+    {
+      "contentLeft": 185,
+      "selector": "#host-version-title"
+    },
+    {
+      "contentLeft": 185,
+      "selector": ".host-version-label"
+    },
+    {
+      "contentLeft": 199,
+      "selector": "#host-version-choices>button"
+    },
+    {
+      "contentLeft": 185,
+      "selector": "#host-version-detail h3"
+    },
+    {
+      "contentLeft": 201,
+      "selector": "#host-version-detail .host-action-buttons>a"
+    },
+    {
+      "contentLeft": 185,
+      "selector": "#host-version-status"
+    }
+  ],
+  "title": "PS5X360 helper",
+  "url": "https://speedy-away.github.io/hosts/ps5/?view=payloads"
+}

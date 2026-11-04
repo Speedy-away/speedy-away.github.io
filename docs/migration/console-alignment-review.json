@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T04:22:59.201Z",
-  "status": "All checks passed; publication pending",
+  "updatedAt": "2026-11-04T04:27:54.333Z",
+  "status": "Published and live browser verified",
   "request": "Fix misaligned controls and layout across PS4 and PS5 pages.",
   "changes": [
     "Use one 24px desktop / 16px phone gutter in build dialogs.",
@@ -99,5 +99,35 @@
     "fail": 0,
     "skipped": 0,
     "evidence": "docs/qa/console-alignment-tests.tap"
+  },
+  "publicationPending": false,
+  "deployment": {
+    "id": 41772877133,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41772877133",
+    "conclusion": "success",
+    "commit": "34a0638df38901abc280247be682a666ee1f8dfc",
+    "verifiedAt": "2026-11-04T04:27:54.333Z"
+  },
+  "liveReport": "docs/qa/console-alignment-live.json",
+  "screenshot": "docs/screenshots/console-alignment-20261104/live-ps5-helper.jpg",
+  "publicBuild": {
+    "revision": "34a0638df38901abc280247be682a666ee1f8dfc",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865584883,
+    "budget": 922746880,
+    "files": 6202,
+    "offloadedFiles": 293,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1040106,
+      "runtime": 255106
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
   }
 }

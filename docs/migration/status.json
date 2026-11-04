@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T04:22:34.724Z",
+  "updatedAt": "2026-11-04T04:27:54.333Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Unified Mods / Mod Menus published and live browser verified",
+  "status": "PS4 and PS5 alignment fixes published and live browser verified",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,21 +14,21 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+    "revision": "34a0638df38901abc280247be682a666ee1f8dfc",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 865575693,
+    "bytes": 865584883,
     "budget": 922746880,
     "files": 6202,
-    "offloadedFiles": 292,
+    "offloadedFiles": 293,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1039871,
-      "runtime": 254871
+      "full": 1040106,
+      "runtime": 255106
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -1189,11 +1189,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41770937806,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
+    "id": 41772877133,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41772877133",
     "conclusion": "success",
-    "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
-    "verifiedAt": "2026-11-04T04:07:50.719Z"
+    "commit": "34a0638df38901abc280247be682a666ee1f8dfc",
+    "verifiedAt": "2026-11-04T04:27:54.333Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1395,7 +1395,7 @@
     "liveReport": "docs/qa/mods-consolidation-live.json"
   },
   "consoleAlignment": {
-    "status": "All checks passed; publication pending",
+    "status": "Published and live browser verified",
     "review": "docs/migration/console-alignment-review.json",
     "senderVersion": "2.1.0+de86f180f3ee",
     "archive": {
@@ -1406,7 +1406,7 @@
       "priorInventoryRecordsPreserved": 8631,
       "olderSenderSnapshotsPreserved": 44
     },
-    "publicationPending": true,
+    "publicationPending": false,
     "tests": {
       "files": 74,
       "tests": 515,
@@ -1414,6 +1414,14 @@
       "fail": 0,
       "skipped": 0,
       "evidence": "docs/qa/console-alignment-tests.tap"
-    }
+    },
+    "deployment": {
+      "id": 41772877133,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41772877133",
+      "conclusion": "success",
+      "commit": "34a0638df38901abc280247be682a666ee1f8dfc",
+      "verifiedAt": "2026-11-04T04:27:54.333Z"
+    },
+    "liveReport": "docs/qa/console-alignment-live.json"
   }
 }

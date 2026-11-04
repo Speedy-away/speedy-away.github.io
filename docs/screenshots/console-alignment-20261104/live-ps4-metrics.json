@@ -1,0 +1,66 @@
+{
+  "actions": [
+    {
+      "font": "15.2px",
+      "label": "Download",
+      "rect": {
+        "bottom": 546.1875,
+        "height": 48,
+        "left": 473.5,
+        "right": 770.75,
+        "top": 498.1875,
+        "width": 297.25,
+        "x": 473.5,
+        "y": 498.1875
+      }
+    },
+    {
+      "font": "15.2px",
+      "label": "Load",
+      "rect": {
+        "bottom": 546.1875,
+        "height": 48,
+        "left": 782.75,
+        "right": 1080,
+        "top": 498.1875,
+        "width": 297.25,
+        "x": 782.75,
+        "y": 498.1875
+      }
+    }
+  ],
+  "choices": [
+    {
+      "bottom": 256.984375,
+      "height": 93.109375,
+      "left": 185,
+      "right": 627.5,
+      "top": 163.875,
+      "width": 442.5,
+      "x": 185,
+      "y": 163.875
+    },
+    {
+      "bottom": 256.984375,
+      "height": 93.109375,
+      "left": 637.5,
+      "right": 1080,
+      "top": 163.875,
+      "width": 442.5,
+      "x": 637.5,
+      "y": 163.875
+    }
+  ],
+  "close": {
+    "bottom": 90.4375,
+    "height": 44,
+    "left": 1036,
+    "right": 1080,
+    "top": 46.4375,
+    "width": 44,
+    "x": 1036,
+    "y": 46.4375
+  },
+  "title": "Expulsion",
+  "url": "https://speedy-away.github.io/hosts/ps4/?view=mods&game=gta5&update=1.57"
+}
