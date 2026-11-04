@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T03:29:43.537Z",
+  "updatedAt": "2026-11-04T03:40:40.128Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Console photo banners published and live verified",
+  "status": "Root host URL repairs published and live browser verified",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,20 +14,21 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
+    "revision": "b42991bfd9816a52ce044a1a139085583dea8127",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864317790,
+    "bytes": 864289835,
     "budget": 922746880,
-    "files": 6199,
+    "files": 6201,
     "offloadedFiles": 292,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
+    "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1039576,
-      "runtime": 254802
+      "full": 1039744,
+      "runtime": 254868
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -1188,11 +1189,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41764712556,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41764712556",
+    "id": 41767690926,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41767690926",
     "conclusion": "success",
-    "commit": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
-    "verifiedAt": "2026-11-04T03:08:04.033Z"
+    "commit": "b42991bfd9816a52ce044a1a139085583dea8127",
+    "verifiedAt": "2026-11-04T03:40:40.128Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1316,7 +1317,7 @@
   },
   "hostOriginFix": {
     "review": "docs/migration/host-origin-fix-review.json",
-    "status": "Checks passed; publication pending",
+    "status": "Published and live browser verified",
     "canonicalHost": "https://speedy-away.github.io/",
     "tests": {
       "files": 73,
@@ -1327,6 +1328,25 @@
       "evidence": "docs/qa/host-origin-fix-tests.tap",
       "mainSiteWorkflowTests": 11,
       "mainSiteNavigationTests": 4
-    }
+    },
+    "publicationPending": false,
+    "deployments": {
+      "host": {
+        "id": 41767690926,
+        "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41767690926",
+        "conclusion": "success",
+        "commit": "b42991bfd9816a52ce044a1a139085583dea8127",
+        "verifiedAt": "2026-11-04T03:40:40.128Z"
+      },
+      "main": {
+        "id": 41767692778,
+        "url": "https://github.com/Speedy-away/whatsite/actions/runs/41767692778",
+        "conclusion": "success",
+        "commit": "90af7951d1d8daf6ac8939a100840d29db839604",
+        "verifiedAt": "2026-11-04T03:40:40.128Z"
+      }
+    },
+    "liveReport": "docs/qa/host-origin-live-verification.json",
+    "browserCases": 5
   }
 }

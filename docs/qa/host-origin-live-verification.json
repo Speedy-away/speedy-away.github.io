@@ -1,0 +1,78 @@
+{
+  "verifiedAt": "2026-11-04T03:40:40.128Z",
+  "status": "passed",
+  "canonicalHost": "https://speedy-away.github.io/",
+  "deployments": {
+    "host": {
+      "id": 41767690926,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41767690926",
+      "conclusion": "success",
+      "commit": "b42991bfd9816a52ce044a1a139085583dea8127",
+      "verifiedAt": "2026-11-04T03:40:40.128Z"
+    },
+    "main": {
+      "id": 41767692778,
+      "url": "https://github.com/Speedy-away/whatsite/actions/runs/41767692778",
+      "conclusion": "success",
+      "commit": "90af7951d1d8daf6ac8939a100840d29db839604",
+      "verifiedAt": "2026-11-04T03:40:40.128Z"
+    }
+  },
+  "browser": "Supported ChatGPT in-app browser",
+  "browserCases": [
+    {
+      "requested": "https://speedy-away.github.io/WWB-HOST/hosts/",
+      "final": "https://speedy-away.github.io/",
+      "visibleHeading": "Choose your console"
+    },
+    {
+      "requested": "https://speedy-away.github.io/WWB-HOST/hosts/ps5/?view=mods#actions",
+      "final": "https://speedy-away.github.io/hosts/ps5/?view=mods#actions",
+      "visibleHeading": "Game mods",
+      "games": 15
+    },
+    {
+      "requested": "https://whatwhatboy.com/hosts/ps4/?view=mods#actions",
+      "final": "https://speedy-away.github.io/hosts/ps4/?view=mods#actions",
+      "visibleHeading": "Game mods",
+      "games": 31
+    },
+    {
+      "requested": "https://whatwhatboy.com/hosts/?lang=en#choose",
+      "final": "https://speedy-away.github.io/?lang=en#choose",
+      "visibleHeading": "Choose your console"
+    },
+    {
+      "requested": "https://whatwhatboy.com/hosts/",
+      "final": "https://speedy-away.github.io/",
+      "visibleHeading": "Choose your console",
+      "screenshot": "docs/screenshots/host-origin-fix-20261104/live-root.jpg"
+    }
+  ],
+  "httpChooserLandings": {
+    "status": 200,
+    "canonical": "https://speedy-away.github.io/",
+    "paths": [
+      "/hosts/",
+      "/hosts/index.html",
+      "/WWB-HOST/",
+      "/WWB-HOST/hosts/"
+    ]
+  },
+  "mainChooserHTTP": {
+    "url": "https://whatwhatboy.com/hosts/?verify=host-root-fix",
+    "status": 200,
+    "directRootRedirect": true
+  },
+  "screenshot": {
+    "path": "docs/screenshots/host-origin-fix-20261104/live-root.jpg",
+    "sha256": "2c39f430520ecb90ab0ac00f2518c893f8ee7251e08ce7ab1d85c2dbf464a626",
+    "width": 1265,
+    "height": 712
+  },
+  "rootRegression": "docs/qa/host-origin-fix-tests.tap",
+  "rootLiveContentVerification": "docs/qa/root-live-verification.json",
+  "lowercaseHistoricalProjectPreserved": true,
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false
+}

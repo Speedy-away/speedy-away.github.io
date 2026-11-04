@@ -1,14 +1,12 @@
 {
-  "updatedAt": "2026-11-04T03:29:43.537Z",
-  "status": "Checks passed; publication pending",
+  "updatedAt": "2026-11-04T03:40:40.128Z",
+  "status": "Published and live browser verified",
   "canonicalHost": "https://speedy-away.github.io/",
   "requestedURLs": [
     "https://whatwhatboy.com/hosts/",
     "https://speedy-away.github.io/WWB-HOST/hosts/"
   ],
   "changes": {
-    "mainSiteAuthoredPages": 514,
-    "mainSiteTemplates": 2,
     "mainSiteRedirectLandings": 23,
     "mainSiteOwnerInstructionsUpdated": true,
     "publicHostsChooserRedirectsToRoot": true,
@@ -19,7 +17,9 @@
     "deepLegacyFallback": "Known same-origin aliases preserve console path, query and fragment; exact immutable download identities stay allowlisted.",
     "loopbackHelperSourceUnchanged": true,
     "oldLowercaseProjectSitePreserved": true,
-    "nativeAndDownloadBytesUnchanged": true
+    "nativeAndDownloadBytesUnchanged": true,
+    "mainSiteAuthoredPagesAudited": 514,
+    "mainSiteTemplatesAudited": 2
   },
   "tests": {
     "files": 73,
@@ -38,5 +38,28 @@
     "issues": 0
   },
   "physicalConsoleContact": false,
-  "nativeCodeExecuted": false
+  "nativeCodeExecuted": false,
+  "scopeNote": "The final source includes the concurrent e72dcf43/69e467f2 main-site audit repairs; this repair commit adds the remaining chooser, fallback, generator and ownership fixes without overwriting that work.",
+  "deployments": {
+    "host": {
+      "id": 41767690926,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41767690926",
+      "conclusion": "success",
+      "commit": "b42991bfd9816a52ce044a1a139085583dea8127",
+      "verifiedAt": "2026-11-04T03:40:40.128Z"
+    },
+    "main": {
+      "id": 41767692778,
+      "url": "https://github.com/Speedy-away/whatsite/actions/runs/41767692778",
+      "conclusion": "success",
+      "commit": "90af7951d1d8daf6ac8939a100840d29db839604",
+      "verifiedAt": "2026-11-04T03:40:40.128Z"
+    }
+  },
+  "live": {
+    "report": "docs/qa/host-origin-live-verification.json",
+    "browserCases": 5,
+    "screenshot": "docs/screenshots/host-origin-fix-20261104/live-root.jpg",
+    "contentReport": "docs/qa/root-live-verification.json"
+  }
 }

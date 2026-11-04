@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-04T03:06:48.561Z",
+  "verifiedAt": "2026-11-04T03:34:15.846Z",
   "status": "passed",
   "site": "https://speedy-away.github.io/",
-  "revision": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
+  "revision": "b42991bfd9816a52ce044a1a139085583dea8127",
   "pages": [
     {
       "path": "/",
@@ -72,20 +72,21 @@
   "immutableSenderAssetHTTP": 200,
   "rootRawRepositoryVerified": true,
   "publicBuild": {
-    "revision": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
+    "revision": "b42991bfd9816a52ce044a1a139085583dea8127",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864317790,
+    "bytes": 864289835,
     "budget": 922746880,
-    "files": 6199,
+    "files": 6201,
     "offloadedFiles": 292,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
+    "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1039576,
-      "runtime": 254802
+      "full": 1039744,
+      "runtime": 254868
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
