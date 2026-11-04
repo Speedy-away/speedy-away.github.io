@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T04:07:50.719Z",
+  "updatedAt": "2026-11-04T04:22:34.724Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -88,17 +88,17 @@
     "hardwareExecutionVerified": false
   },
   "senderReleaseDelivery": {
-    "verifiedAt": "2026-11-04T04:01:45.064Z",
-    "version": "2.1.0+537062853155",
-    "name": "console-payload-sender-2.1.0-537062853155.zip",
-    "bytes": 107453769,
-    "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
-    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-537062853155.zip",
-    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+537062853155\\console-payload-sender-2.1.0-537062853155.zip",
-    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-537062853155",
-    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-537062853155/console-payload-sender-2.1.0-537062853155.zip",
-    "assetId": 708146618,
-    "serverDigest": "sha256:c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+    "verifiedAt": "2026-11-04T04:20:48.128Z",
+    "version": "2.1.0+de86f180f3ee",
+    "name": "console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "bytes": 107454643,
+    "sha256": "65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+de86f180f3ee\\console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-de86f180f3ee",
+    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-de86f180f3ee/console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "assetId": 708196004,
+    "serverDigest": "sha256:65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
     "zipUnchanged": true,
     "archiveVerified": true,
     "downloadedCodeExecuted": false
@@ -1393,5 +1393,27 @@
       "verifiedAt": "2026-11-04T04:07:50.719Z"
     },
     "liveReport": "docs/qa/mods-consolidation-live.json"
+  },
+  "consoleAlignment": {
+    "status": "All checks passed; publication pending",
+    "review": "docs/migration/console-alignment-review.json",
+    "senderVersion": "2.1.0+de86f180f3ee",
+    "archive": {
+      "items": 5013,
+      "fileRecords": 8632,
+      "presentFileRecords": 8632,
+      "missingFileRecords": 0,
+      "priorInventoryRecordsPreserved": 8631,
+      "olderSenderSnapshotsPreserved": 44
+    },
+    "publicationPending": true,
+    "tests": {
+      "files": 74,
+      "tests": 515,
+      "pass": 515,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/console-alignment-tests.tap"
+    }
   }
 }

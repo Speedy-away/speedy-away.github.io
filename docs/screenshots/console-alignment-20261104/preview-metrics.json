@@ -1,0 +1,421 @@
+{
+  "desktop": {
+    "actions": [
+      {
+        "display": "flex",
+        "font": "15.2px",
+        "label": "Download",
+        "lineHeight": "19px",
+        "rect": {
+          "bottom": 439.671875,
+          "height": 48,
+          "left": 185,
+          "right": 634,
+          "top": 391.671875,
+          "width": 449,
+          "x": 185,
+          "y": 391.671875
+        }
+      },
+      {
+        "display": "flex",
+        "font": "15.2px",
+        "label": "Load",
+        "lineHeight": "19px",
+        "rect": {
+          "bottom": 439.671875,
+          "height": 48,
+          "left": 646,
+          "right": 1095,
+          "top": 391.671875,
+          "width": 449,
+          "x": 646,
+          "y": 391.671875
+        }
+      }
+    ],
+    "close": {
+      "bottom": 163.71875,
+      "height": 44,
+      "left": 1051,
+      "right": 1095,
+      "top": 119.71875,
+      "width": 44,
+      "x": 1051,
+      "y": 119.71875
+    },
+    "dialog": {
+      "bottom": 626.71875,
+      "height": 533.4375,
+      "left": 160,
+      "right": 1120,
+      "top": 93.28125,
+      "width": 960,
+      "x": 160,
+      "y": 93.28125
+    },
+    "leftEdges": [
+      {
+        "left": 185,
+        "selector": "#host-version-title"
+      },
+      {
+        "left": 185,
+        "selector": ".host-version-label"
+      },
+      {
+        "left": 185,
+        "selector": "#host-version-choices>button"
+      },
+      {
+        "left": 185,
+        "selector": "#host-version-detail h3"
+      },
+      {
+        "left": 185,
+        "selector": "#host-version-detail .host-action-buttons>a"
+      },
+      {
+        "left": 161,
+        "selector": "#host-version-status"
+      }
+    ]
+  },
+  "phone": {
+    "actions": [
+      {
+        "label": "Download",
+        "rect": {
+          "bottom": 499.59375,
+          "height": 48,
+          "left": 29,
+          "right": 189,
+          "top": 451.59375,
+          "width": 160,
+          "x": 29,
+          "y": 451.59375
+        }
+      },
+      {
+        "label": "Load",
+        "rect": {
+          "bottom": 499.59375,
+          "height": 48,
+          "left": 201,
+          "right": 361,
+          "top": 451.59375,
+          "width": 160,
+          "x": 201,
+          "y": 451.59375
+        }
+      }
+    ],
+    "close": {
+      "bottom": 225.71875,
+      "height": 44,
+      "left": 317,
+      "right": 361,
+      "top": 181.71875,
+      "width": 44,
+      "x": 317,
+      "y": 181.71875
+    },
+    "dialog": {
+      "bottom": 686.640625,
+      "height": 529.28125,
+      "left": 12,
+      "right": 378,
+      "top": 157.359375,
+      "width": 366,
+      "x": 12,
+      "y": 157.359375
+    },
+    "viewport": 390
+  },
+  "ps4": {
+    "actions": [
+      {
+        "label": "Download",
+        "rect": {
+          "bottom": 546.1875,
+          "height": 48,
+          "left": 473.5,
+          "right": 770.75,
+          "top": 498.1875,
+          "width": 297.25,
+          "x": 473.5,
+          "y": 498.1875
+        }
+      },
+      {
+        "label": "Load",
+        "rect": {
+          "bottom": 546.1875,
+          "height": 48,
+          "left": 782.75,
+          "right": 1080,
+          "top": 498.1875,
+          "width": 297.25,
+          "x": 782.75,
+          "y": 498.1875
+        }
+      }
+    ],
+    "art": {
+      "bottom": 428.015625,
+      "height": 151.03125,
+      "left": 185,
+      "right": 453.5,
+      "top": 276.984375,
+      "width": 268.5,
+      "x": 185,
+      "y": 276.984375
+    },
+    "choices": [
+      {
+        "bottom": 256.984375,
+        "height": 93.109375,
+        "left": 185,
+        "right": 627.5,
+        "top": 163.875,
+        "width": 442.5,
+        "x": 185,
+        "y": 163.875
+      },
+      {
+        "bottom": 256.984375,
+        "height": 93.109375,
+        "left": 637.5,
+        "right": 1080,
+        "top": 163.875,
+        "width": 442.5,
+        "x": 637.5,
+        "y": 163.875
+      }
+    ],
+    "close": {
+      "bottom": 90.4375,
+      "height": 44,
+      "left": 1036,
+      "right": 1080,
+      "top": 46.4375,
+      "width": 44,
+      "x": 1036,
+      "y": 46.4375
+    },
+    "dialog": {
+      "bottom": 700,
+      "height": 680,
+      "left": 160,
+      "right": 1120,
+      "top": 20,
+      "width": 960,
+      "x": 160,
+      "y": 20
+    }
+  },
+  "rows": [
+    [
+      {
+        "bottom": 445.03125,
+        "detailBottom": 428.03125,
+        "height": 82.03125,
+        "label": "PS5 Payload ManagerELF · v0.6.3",
+        "top": 363
+      },
+      {
+        "bottom": 445.03125,
+        "detailBottom": 428.03125,
+        "height": 82.03125,
+        "label": "PS5 File Explorer / websrvELF · v0.34",
+        "top": 363
+      },
+      {
+        "bottom": 445.03125,
+        "detailBottom": 428.03125,
+        "height": 82.03125,
+        "label": "PS5 FTP serverELF · v0.21.1",
+        "top": 363
+      },
+      {
+        "bottom": 445.03125,
+        "detailBottom": 428.03125,
+        "height": 82.03125,
+        "label": "PS5 Kernel log serverELF · v0.9",
+        "top": 363
+      }
+    ],
+    [
+      {
+        "bottom": 553.0625,
+        "detailBottom": 536.0625,
+        "height": 82.03125,
+        "label": "PS5 ELF LoaderELF · v0.27",
+        "top": 471.03125
+      },
+      {
+        "bottom": 553.0625,
+        "detailBottom": 536.0625,
+        "height": 82.03125,
+        "label": "PS5 ShadowMountPlusELF · 1.7beta11",
+        "top": 471.03125
+      },
+      {
+        "bottom": 553.0625,
+        "detailBottom": 536.0625,
+        "height": 82.03125,
+        "label": "PS5upload serviceELF · v10.6.0",
+        "top": 471.03125
+      },
+      {
+        "bottom": 553.0625,
+        "detailBottom": 536.0625,
+        "height": 82.03125,
+        "label": "PS5 Orbit StoreELF · v1.8.1",
+        "top": 471.03125
+      }
+    ],
+    [
+      {
+        "bottom": 684.28125,
+        "detailBottom": 667.28125,
+        "height": 105.21875,
+        "label": "ezRemote Client · PS5 · Download app loaderELF",
+        "top": 579.0625
+      },
+      {
+        "bottom": 684.28125,
+        "detailBottom": 667.28125,
+        "height": 105.21875,
+        "label": "PS5 Garlic SaveMgrELF · v1.14",
+        "top": 579.0625
+      },
+      {
+        "bottom": 684.28125,
+        "detailBottom": 667.28125,
+        "height": 105.21875,
+        "label": "PS5 etaHEN 2.5BBIN · 2.5B",
+        "top": 579.0625
+      },
+      {
+        "bottom": 684.28125,
+        "detailBottom": 667.28125,
+        "height": 105.21875,
+        "label": "PS5SX2 installerELF",
+        "top": 579.0625
+      }
+    ],
+    [
+      {
+        "bottom": 792.3125,
+        "detailBottom": 775.3125,
+        "height": 82.03125,
+        "label": "PS5SX2 helperELF",
+        "top": 710.28125
+      },
+      {
+        "bottom": 792.3125,
+        "detailBottom": 775.3125,
+        "height": 82.03125,
+        "label": "PS5X360 helperELF · v1.0.2",
+        "top": 710.28125
+      },
+      {
+        "bottom": 792.3125,
+        "detailBottom": 775.3125,
+        "height": 82.03125,
+        "label": "PS5 XPSemu helperELF",
+        "top": 710.28125
+      },
+      {
+        "bottom": 792.3125,
+        "detailBottom": 775.3125,
+        "height": 82.03125,
+        "label": "PS5 Themes · ps5-theme-stop.elfELF · 1.80",
+        "top": 710.28125
+      }
+    ],
+    [
+      {
+        "bottom": 900.34375,
+        "detailBottom": 883.34375,
+        "height": 82.03125,
+        "label": "PS5 Themes · ps5-theme.elfELF · 1.80",
+        "top": 818.3125
+      },
+      {
+        "bottom": 900.34375,
+        "detailBottom": 883.34375,
+        "height": 82.03125,
+        "label": "PS5 PS Patch System loaderELF",
+        "top": 818.3125
+      },
+      {
+        "bottom": 900.34375,
+        "detailBottom": 883.34375,
+        "height": 82.03125,
+        "label": "PS5 RecompStore · installer ELFELF · v2.7.4",
+        "top": 818.3125
+      }
+    ]
+  ],
+  "firmware": {
+    "loadAboveFirmware": true,
+    "selected": "true",
+    "tickMargin": "0px",
+    "tickPosition": "absolute",
+    "tickRight": "8px"
+  },
+  "patches": {
+    "actions": [
+      {
+        "font": "16px",
+        "label": "Load",
+        "rect": {
+          "bottom": 430.015625,
+          "height": 48,
+          "left": 355,
+          "right": 634,
+          "top": 382.015625,
+          "width": 279,
+          "x": 355,
+          "y": 382.015625
+        }
+      },
+      {
+        "font": "16px",
+        "label": "Download",
+        "rect": {
+          "bottom": 430.015625,
+          "height": 48,
+          "left": 646,
+          "right": 925,
+          "top": 382.015625,
+          "width": 279,
+          "x": 646,
+          "y": 382.015625
+        }
+      }
+    ],
+    "close": {
+      "bottom": 226.1875,
+      "height": 44,
+      "left": 881,
+      "right": 925,
+      "top": 182.1875,
+      "width": 44,
+      "x": 881,
+      "y": 182.1875
+    },
+    "dialog": {
+      "bottom": 562.8125,
+      "height": 405.625,
+      "left": 330,
+      "right": 950,
+      "top": 157.1875,
+      "width": 620,
+      "x": 330,
+      "y": 157.1875
+    }
+  }
+}

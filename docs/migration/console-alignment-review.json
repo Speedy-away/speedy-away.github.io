@@ -1,0 +1,103 @@
+{
+  "updatedAt": "2026-11-04T04:22:59.201Z",
+  "status": "All checks passed; publication pending",
+  "request": "Fix misaligned controls and layout across PS4 and PS5 pages.",
+  "changes": [
+    "Use one 24px desktop / 16px phone gutter in build dialogs.",
+    "Use centered 44px close controls and equal 48px Download/Load controls.",
+    "Expand a single build choice to the full row and align multi-build choices.",
+    "Remove nested detail padding and obsolete minimum artwork heights.",
+    "Align catalogue card bottoms and metadata within each row.",
+    "Keep selected firmware digits centered with an absolute checkmark.",
+    "Align navigation hit areas and patch dialog controls."
+  ],
+  "scope": [
+    "assets/host-playstation.css",
+    "scripts/host-project-pages.cjs presentation cache version"
+  ],
+  "preview": {
+    "status": "passed",
+    "metrics": "docs/screenshots/console-alignment-20261104/preview-metrics.json",
+    "PS5HelperDesktop": true,
+    "PS5HelperPhone390": true,
+    "PS4MultiBuildArtwork": true,
+    "PS5PayloadCards": 19,
+    "cardRowsAligned": 5,
+    "patchDialog": true,
+    "firmwareSelection": true,
+    "loadAboveFirmwarePreserved": true,
+    "screenshots": [
+      "docs/screenshots/console-alignment-20261104/preview-ps5-helper.jpg",
+      "docs/screenshots/console-alignment-20261104/preview-phone-helper.jpg",
+      "docs/screenshots/console-alignment-20261104/preview-ps4-mod.jpg",
+      "docs/screenshots/console-alignment-20261104/preview-card-rows.jpg",
+      "docs/screenshots/console-alignment-20261104/preview-patches.jpg"
+    ]
+  },
+  "targetedTestsPassed": 34,
+  "finalRegressionPending": false,
+  "build": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865494091,
+    "budget": 922746880,
+    "files": 6202,
+    "offloadedFiles": 293,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1030782,
+      "runtime": 245782
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "buildVerification": {
+    "issues": 0,
+    "nativeScriptsUnchanged": 898,
+    "cachedResourcesRetained": 1536,
+    "localLinks": 3625,
+    "compactAliasesVerified": 6946
+  },
+  "sender": {
+    "verifiedAt": "2026-11-04T04:20:48.128Z",
+    "version": "2.1.0+de86f180f3ee",
+    "name": "console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "bytes": 107454643,
+    "sha256": "65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+de86f180f3ee\\console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-de86f180f3ee",
+    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-de86f180f3ee/console-payload-sender-2.1.0-de86f180f3ee.zip",
+    "assetId": 708196004,
+    "serverDigest": "sha256:65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+    "zipUnchanged": true,
+    "archiveVerified": true,
+    "downloadedCodeExecuted": false
+  },
+  "senderVersionsPreserved": 45,
+  "archive": {
+    "items": 5013,
+    "fileRecords": 8632,
+    "presentFileRecords": 8632,
+    "missingFileRecords": 0,
+    "priorInventoryRecordsPreserved": 8631,
+    "olderSenderSnapshotsPreserved": 44
+  },
+  "nativeAndExistingDownloadBytesChanged": 0,
+  "actionControllersAndCatalogueDataUnchanged": true,
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false,
+  "regression": {
+    "files": 74,
+    "tests": 515,
+    "pass": 515,
+    "fail": 0,
+    "skipped": 0,
+    "evidence": "docs/qa/console-alignment-tests.tap"
+  }
+}
