@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T03:03:04.722Z",
-  "status": "Verified and ready for publication",
+  "updatedAt": "2026-11-04T03:08:04.033Z",
+  "status": "Published and live verified",
   "request": "Use the existing PS4 and PS5 photographs as banners inside heading boxes for Game patches, Game mods and other console sections.",
   "design": {
     "headingAttribute": "data-wwb-console-banner",
@@ -46,8 +46,10 @@
     "screenshots": [
       "docs/screenshots/console-banner-20261104/ps5-game-mods.jpg",
       "docs/screenshots/console-banner-20261104/ps4-game-patches.jpg",
-      "docs/screenshots/console-banner-20261104/mobile-ps5-patches.jpg"
-    ]
+      "docs/screenshots/console-banner-20261104/mobile-ps5-patches.jpg",
+      "docs/screenshots/console-banner-20261104/live-ps5-mods.jpg"
+    ],
+    "liveVerified": true
   },
   "sender": {
     "version": "2.1.0+81aa2e7cf141",
@@ -87,5 +89,39 @@
     "fileRecords": 8630,
     "presentFileRecords": 8630,
     "missingFileRecords": 0
+  },
+  "completedAt": "2026-11-04T03:08:04.033Z",
+  "build": {
+    "revision": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 864317790,
+    "budget": 922746880,
+    "files": 6199,
+    "offloadedFiles": 292,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1039576,
+      "runtime": 254802
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "deployment": {
+    "id": 41764712556,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41764712556",
+    "conclusion": "success",
+    "commit": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
+    "verifiedAt": "2026-11-04T03:08:04.033Z"
+  },
+  "live": {
+    "report": "docs/qa/root-live-verification.json",
+    "bannerPhotoHashes": 2,
+    "presentationHashes": 4,
+    "patchFileHashes": 280,
+    "senderAssetHTTP": 200
   }
 }

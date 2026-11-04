@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-04T02:45:40.382Z",
+  "verifiedAt": "2026-11-04T03:06:48.561Z",
   "status": "passed",
   "site": "https://speedy-away.github.io/",
-  "revision": "c28ad9d58298f639e4c497a1c78728796ca3a499",
+  "revision": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
   "pages": [
     {
       "path": "/",
@@ -32,7 +32,7 @@
   "presentation": [
     {
       "path": "assets/host-playstation.css",
-      "sha256": "a837a3d89b32ebefe52083a7b4f9c55908cfa0e5b39c82be63e808b0f1815b2f"
+      "sha256": "e548bd877aa6df2d777cce79a5fff702e159ec81c4ed16715e03868b8cc3f688"
     },
     {
       "path": "assets/host-playstation.js",
@@ -47,34 +47,45 @@
       "sha256": "232abb08709750b0acc3c6f6fc560a8a03208d3f45366945283117e1156c2566"
     }
   ],
+  "bannerPhotos": [
+    {
+      "platform": "ps4",
+      "sha256": "bef1a06ed2b12db203248ce9b044453ed89611cb6188e1278232f4aa8dcdc8ed"
+    },
+    {
+      "platform": "ps5",
+      "sha256": "c417064d8da6e7a44497888d91f89cc1e75667056451c9c69dac8b82efe1790e"
+    }
+  ],
   "noConsoleSearch": true,
   "patchFilesVerified": 280,
   "noConnectionForm": true,
-  "noRepeatedConsolePhotos": true,
+  "consolePhotoBanners": true,
+  "noStandaloneConsolePhotos": true,
   "noKARONavigation": true,
   "artworkHashes": 6,
   "cheatFileHashes": 6,
   "receiverHashes": 2,
   "sourceConfirmedNewPS5Actions": 6,
-  "senderVersion": "2.1.0+b1d198ce2219",
-  "senderVersionsPreserved": 42,
+  "senderVersion": "2.1.0+81aa2e7cf141",
+  "senderVersionsPreserved": 43,
   "immutableSenderAssetHTTP": 200,
   "rootRawRepositoryVerified": true,
   "publicBuild": {
-    "revision": "c28ad9d58298f639e4c497a1c78728796ca3a499",
+    "revision": "0d81be3e6e2059f0d1bb4d8909be9c484502a919",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864310141,
+    "bytes": 864317790,
     "budget": 922746880,
     "files": 6199,
-    "offloadedFiles": 291,
+    "offloadedFiles": 292,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1039341,
-      "runtime": 254567
+      "full": 1039576,
+      "runtime": 254802
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
