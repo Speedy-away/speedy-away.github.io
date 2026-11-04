@@ -1622,5 +1622,13 @@
     "screenshots": "docs/screenshots/firmware-order-20261104",
     "cacheRefresh": "Folder controller now uses the publication asset version",
     "nativeFilesChanged": 0
+  },
+  "xmbTheme20261104": {
+    "status": "Preview reviewed; publication pending",
+    "tabs": "Centered, wrapping category tabs without divider or active underline",
+    "background": "Original layered SVG ribbons animated with CSS transforms, soft blue atmosphere and sparse light points",
+    "motion": "Reduced motion and original console performance guards retained",
+    "nativeFilesChanged": 0,
+    "downloadFilesChanged": 0
   }
 }

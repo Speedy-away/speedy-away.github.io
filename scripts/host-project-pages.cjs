@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261104layout2';
+const ASSET_VERSION='20261104xmb1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('.')?[]:e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 function cacheResources(root,names){const resources=new Set();for(const name of names.filter(p=>/^hosts\/runtime\/.+\.(?:manifest|appcache|cache)$/i.test(p))){if(!fs.existsSync(path.join(root,name)))continue;let section='CACHE';for(let line of fs.readFileSync(path.join(root,name),'utf8').split(/\r?\n/)){line=line.trim();if(!line||line.startsWith('#')||line==='CACHE MANIFEST')continue;if(/^[A-Z]+:$/.test(line)){section=line.slice(0,-1);continue;}if(section!=='CACHE')continue;try{const url=new URL(line,'https://host.invalid/'+name);if(url.origin==='https://host.invalid')resources.add(decodeURIComponent(url.pathname.slice(1)));}catch{}}}return resources;}
@@ -52,7 +52,7 @@ function build(output,revision='main',root=ROOT){
   // Repair migrated image origins and absent social preview images.
   if(name.endsWith('.html'))text=text.replace(/https:\/\/whatwhatboy\.com(\/assets\/images\/[^\s"'<>\\]*)/g,(_,p)=>{const local=p.split(/[?#]/)[0];const fallback='/assets/images/'+require('./style-host-pages.cjs').artwork(name)[0];return ORIGIN+BASE+(fs.existsSync(path.join(root,local))?p:fallback);});
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-pages.css')))text=require('./style-host-pages.cjs').themeHTML(text,name);
-  if(name.endsWith('.html'))text=text.replace(/(host-playstation\.js|host-folders\.js|host-dashboard\.js|host-catalog-grid\.js|host-folders\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-game-patches\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
+  if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-catalog-grid\.js|host-folders\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-game-patches\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
   if(name==='assets/host-dashboard.js')text=text.replaceAll('^\\/hosts\\/runtime\\/','^\\/(?:(?:WWB-HOST|wwb-host)\\/)?hosts\\/runtime\\/');
   if((name==='index.html'||/^hosts\/(?!runtime\/).+\.html$/.test(name))&&fs.existsSync(path.join(root,'assets/host-performance.js'))){
    text=text.replace(/<link\b[^>]*href=["'][^"']*(?:font-awesome|fonts\.googleapis\.com)[^"']*["'][^>]*>/gi,'');
@@ -66,7 +66,7 @@ function build(output,revision='main',root=ROOT){
   if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
   // The new exact GamerHack CSS table adds 10.50 to the public PS4 chooser.
   if(/^hosts\/ps4\//.test(name)&&fs.existsSync(path.join(root,'docs/host-gamerhack-g2all-build.json'))&&!text.includes('data-host-firmware="10.50"'))text=text.replace(/(<button\b[^>]*data-host-firmware="10\.00"[^>]*>[\s\S]*?<\/button>)/,'$1<button type="button" data-host-firmware="10.50" aria-pressed="false" translate="no">10.50</button>');
-  if(/^hosts\/(?!runtime\/).+\.html$/.test(name))text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-compact.css?v=1"><link rel="stylesheet" href="/assets/host-blue-theme.css?v=1"></head>');
+  if(/^hosts\/(?!runtime\/).+\.html$/.test(name))text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-compact.css?v=1"><link rel="stylesheet" href="/assets/host-blue-theme.css?v=20261104xmb1"></head>');
   // Prefix authored root-relative strings, including concatenated directory roots.
   text=text.replace(/https:\/\/whatwhatboy\.com\/(hosts\/[^\s"'<>\\]*)/g,(_,p)=>{const url=target(p);return /^https?:/.test(url)?url:ORIGIN+url;});
   text=text.replace(/(["'`=\s(])\/(hosts|assets|languages|downloads|console|docs)\/([^\s"'`<>)]*)/g,(whole,lead,dir,rest)=>{const p=dir+'/'+rest;if((!rest&&name.endsWith('.js'))||/^\$\{|\+/.test(rest))return lead+BASE+'/'+p;return lead+target(p);});

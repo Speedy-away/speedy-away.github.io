@@ -38,3 +38,10 @@ body.wwb-host-page .host-catalog-grid[data-host-view="payloads"] .host-catalog-t
 body.wwb-host-page .host-catalog-grid[data-host-view="payloads"] .host-catalog-tile__media{display:none!important}
 body.wwb-host-page .host-catalog-grid[data-host-view="payloads"] .host-catalog-tile:hover{border-color:#779cd8!important;background:#1c2a40!important}
 body.wwb-host-page .host-catalog-grid[data-host-view="payloads"] .host-catalog-tile:focus-visible{outline:3px solid #99bdff!important;outline-offset:3px;border-color:#99bdff!important}
+
+/* Center the category tabs without a full-width divider. */
+body.wwb-host-page .host-file-tabs{justify-content:center!important;border:0!important;box-shadow:none!important;padding-inline:56px;min-height:48px}
+body.wwb-host-page .host-primary-tabs{justify-content:center;flex-wrap:wrap;gap:8px 14px;overflow:visible}
+body.wwb-host-page .host-primary-tabs>a{padding:10px 13px;margin:0;border:0!important;border-radius:6px}
+body.wwb-host-page .host-utility-menu{position:absolute;right:0;top:4px;margin:0}
+@media(max-width:640px){body.wwb-host-page .host-file-tabs{align-items:center!important;padding-inline:38px}body.wwb-host-page .host-primary-tabs{gap:4px}body.wwb-host-page .host-primary-tabs>a{padding:9px 8px;font-size:11px}}
