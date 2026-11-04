@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T13:32:11.158Z",
-  "status": "Locally verified; publishing",
+  "updatedAt": "2026-11-04T13:37:30.418Z",
+  "status": "Published and live verified",
   "requestedSource": "https://github.com/illusionyy/PS-Game-Patch/tree/65914503123d4e643aa5aa0e8c720de8e99ef7e8/patches/xml",
   "repository": "https://github.com/illusionyy/PS-Game-Patch",
   "revision": "65914503123d4e643aa5aa0e8c720de8e99ef7e8",
@@ -62,10 +62,10 @@
     }
   },
   "build": {
-    "revision": "main",
+    "revision": "9cf2ab8418eb68c461b7373ca26919574360e05e",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 872350073,
+    "bytes": 872441623,
     "budget": 922746880,
     "files": 6932,
     "offloadedFiles": 300,
@@ -75,32 +75,57 @@
     "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1141290,
-      "runtime": 262395
+      "full": 1150794,
+      "runtime": 271899
     },
     "activeRuntimeFiles": 409,
     "sharedCatalogueFiles": 4,
     "offlinePacks": [
       {
         "platform": "ps4",
-        "version": "a20346ce040c7ccc98ac3288",
+        "version": "ad74f851eb8b5779b36609ff",
         "files": 1981,
-        "bytes": 42927732,
+        "bytes": 42948756,
         "patchXMLs": 382,
         "trainerDefinitions": 1181
       },
       {
         "platform": "ps5",
-        "version": "ddf50721af38c52ec1a2d221",
+        "version": "ac36499bfffcdbce0791d7df",
         "files": 738,
-        "bytes": 16276648,
+        "bytes": 16297276,
         "patchXMLs": 392,
         "trainerDefinitions": 0
       }
     ]
   },
   "publication": {
-    "status": "pending"
+    "status": "published-and-live-verified",
+    "id": 41839091282,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41839091282",
+    "commit": "9cf2ab8418eb68c461b7373ca26919574360e05e",
+    "conclusion": "success",
+    "verifiedAt": "2026-11-04T13:36:08.490Z"
   },
-  "consoleExecution": false
+  "consoleExecution": false,
+  "live": {
+    "xmlURLs": 561,
+    "exactHashes": true,
+    "bulkZIP": true,
+    "coverFiles": 68,
+    "pages": [
+      {
+        "platform": "ps4",
+        "games": 165,
+        "files": 382,
+        "offlineCovered": true
+      },
+      {
+        "platform": "ps5",
+        "games": 169,
+        "files": 392,
+        "offlineCovered": true
+      }
+    ]
+  }
 }

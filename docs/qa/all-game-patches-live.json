@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-04T13:36:08.490Z",
+  "revision": "9cf2ab8418eb68c461b7373ca26919574360e05e",
+  "status": "passed",
+  "sourceXMLFiles": 169,
+  "sourceOptions": 533,
+  "officialTitleXMLs": 387,
+  "uniqueXMLURLsVerified": 561,
+  "localCoversVerified": 68,
+  "bulkZIPVerified": true,
+  "pages": [
+    {
+      "platform": "ps4",
+      "games": 165,
+      "files": 382,
+      "offlineCovered": true
+    },
+    {
+      "platform": "ps5",
+      "games": 169,
+      "files": 392,
+      "offlineCovered": true
+    }
+  ],
+  "issues": 0,
+  "pagesBuild": {
+    "revision": "9cf2ab8418eb68c461b7373ca26919574360e05e",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 872441623,
+    "budget": 922746880,
+    "files": 6932,
+    "offloadedFiles": 300,
+    "nativeScriptsUnchanged": 959,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1150794,
+      "runtime": 271899
+    },
+    "activeRuntimeFiles": 409,
+    "sharedCatalogueFiles": 4,
+    "offlinePacks": [
+      {
+        "platform": "ps4",
+        "version": "ad74f851eb8b5779b36609ff",
+        "files": 1981,
+        "bytes": 42948756,
+        "patchXMLs": 382,
+        "trainerDefinitions": 1181
+      },
+      {
+        "platform": "ps5",
+        "version": "ac36499bfffcdbce0791d7df",
+        "files": 738,
+        "bytes": 16297276,
+        "patchXMLs": 392,
+        "trainerDefinitions": 0
+      }
+    ]
+  }
+}
