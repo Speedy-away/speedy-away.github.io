@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T03:46:19.405Z",
+  "updatedAt": "2026-11-04T03:49:54.155Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Root host URL repairs published and live browser verified",
+  "status": "Load above firmware published and live browser verified",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,10 +14,10 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "b42991bfd9816a52ce044a1a139085583dea8127",
+    "revision": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864289835,
+    "bytes": 864289020,
     "budget": 922746880,
     "files": 6201,
     "offloadedFiles": 292,
@@ -1189,11 +1189,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41767690926,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41767690926",
+    "id": 41769169626,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
     "conclusion": "success",
-    "commit": "b42991bfd9816a52ce044a1a139085583dea8127",
-    "verifiedAt": "2026-11-04T03:40:40.128Z"
+    "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+    "verifiedAt": "2026-11-04T03:49:54.155Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1350,9 +1350,17 @@
     "browserCases": 5
   },
   "loadAboveFirmware": {
-    "status": "Preview verified; publication pending",
+    "status": "Published and live browser verified",
     "review": "docs/migration/load-above-firmware-review.json",
     "testsPassed": 29,
-    "publicationPending": true
+    "publicationPending": false,
+    "deployment": {
+      "id": 41769169626,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
+      "conclusion": "success",
+      "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+      "verifiedAt": "2026-11-04T03:49:54.155Z"
+    },
+    "liveReport": "docs/qa/load-above-firmware-live.json"
   }
 }

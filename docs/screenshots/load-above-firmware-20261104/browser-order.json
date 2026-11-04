@@ -1,0 +1,32 @@
+{
+  "ps4": {
+    "order": [
+      {
+        "bottom": 549.65625,
+        "id": "local-ps4-afterglow",
+        "top": 362.1875
+      },
+      {
+        "bottom": 977.65625,
+        "id": "host-firmware-buttons",
+        "top": 655.65625
+      }
+    ],
+    "url": "https://speedy-away.github.io/hosts/ps4/?view=loaders#actions"
+  },
+  "ps5": {
+    "order": [
+      {
+        "bottom": 670.65625,
+        "id": "built-in-ps5-umtx",
+        "top": 483.1875
+      },
+      {
+        "bottom": 1362.65625,
+        "id": "host-firmware-buttons",
+        "top": 776.65625
+      }
+    ],
+    "url": "https://speedy-away.github.io/hosts/ps5/?view=loaders#actions"
+  }
+}

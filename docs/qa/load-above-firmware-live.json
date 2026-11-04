@@ -1,0 +1,79 @@
+{
+  "verifiedAt": "2026-11-04T03:49:54.155Z",
+  "status": "passed",
+  "revision": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+  "site": "https://speedy-away.github.io/",
+  "deployment": {
+    "id": 41769169626,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
+    "conclusion": "success",
+    "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+    "verifiedAt": "2026-11-04T03:49:54.155Z"
+  },
+  "assets": [
+    {
+      "path": "assets/host-folders.js",
+      "sha256": "49caaaf03a0f6f4e2f68f98ef8833eabdf500ad637118cdfb321df9a76d95aca"
+    },
+    {
+      "path": "assets/host-playstation.css",
+      "sha256": "53859a4c7c74c861b1affb257b3cabff2665e35b8e3178799d4a2b9c67276091"
+    }
+  ],
+  "browser": {
+    "ps4": {
+      "order": [
+        {
+          "bottom": 549.65625,
+          "id": "local-ps4-afterglow",
+          "top": 362.1875
+        },
+        {
+          "bottom": 977.65625,
+          "id": "host-firmware-buttons",
+          "top": 655.65625
+        }
+      ],
+      "url": "https://speedy-away.github.io/hosts/ps4/?view=loaders#actions"
+    },
+    "ps5": {
+      "order": [
+        {
+          "bottom": 670.65625,
+          "id": "built-in-ps5-umtx",
+          "top": 483.1875
+        },
+        {
+          "bottom": 1362.65625,
+          "id": "host-firmware-buttons",
+          "top": 776.65625
+        }
+      ],
+      "url": "https://speedy-away.github.io/hosts/ps5/?view=loaders#actions"
+    }
+  },
+  "screenshot": "docs/screenshots/load-above-firmware-20261104/live-ps5.jpg",
+  "screenshotSHA256": "02f80ece9575b2a4476b13aea9bc014ffa551f18c741c6c86b5e8061d421c786",
+  "publicBuild": {
+    "revision": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 864289020,
+    "budget": 922746880,
+    "files": 6201,
+    "offloadedFiles": 292,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1039744,
+      "runtime": 254868
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false
+}

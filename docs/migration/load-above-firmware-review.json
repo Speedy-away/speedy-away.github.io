@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T03:46:19.405Z",
-  "status": "Preview verified; publication pending",
+  "updatedAt": "2026-11-04T03:49:54.155Z",
+  "status": "Published and live browser verified",
   "request": "Move the large Load button above the firmware grid on PS4 and PS5.",
   "changes": [
     "Move the existing firmware toolbar after the action grid only in Choose firmware.",
@@ -31,10 +31,10 @@
     "failed": 0
   },
   "build": {
-    "revision": "main",
+    "revision": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864198120,
+    "bytes": 864289020,
     "budget": 922746880,
     "files": 6201,
     "offloadedFiles": 292,
@@ -44,8 +44,8 @@
     "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1030384,
-      "runtime": 245508
+      "full": 1039744,
+      "runtime": 254868
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -60,5 +60,15 @@
   "nativeAndDownloadFilesChanged": 0,
   "existingHelperSnapshotsPreserved": true,
   "physicalConsoleContact": false,
-  "nativeCodeExecuted": false
+  "nativeCodeExecuted": false,
+  "publicationPending": false,
+  "deployment": {
+    "id": 41769169626,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
+    "conclusion": "success",
+    "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+    "verifiedAt": "2026-11-04T03:49:54.155Z"
+  },
+  "liveReport": "docs/qa/load-above-firmware-live.json",
+  "screenshot": "docs/screenshots/load-above-firmware-20261104/live-ps5.jpg"
 }

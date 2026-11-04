@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T03:40:40.128Z",
-  "status": "Root host URL repairs published and live browser verified",
+  "updatedAt": "2026-11-04T03:49:54.155Z",
+  "status": "Load above firmware published and live browser verified",
   "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
   "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
   "publicURL": "https://speedy-away.github.io/",
@@ -204,40 +204,20 @@
     "physicalConsoleTested": false
   },
   "latestFollowup": {
-    "review": "docs/migration/host-origin-fix-review.json",
-    "request": "Fix whatwhatboy.com/hosts/ and uppercase WWB-HOST chooser links to the active root host site.",
+    "request": "Move the large Load button above the firmware grid on PS4 and PS5.",
     "status": "Published and live browser verified",
     "publicationPending": false,
-    "regression": {
-      "files": 73,
-      "tests": 510,
-      "pass": 510,
-      "fail": 0,
-      "skipped": 0,
-      "evidence": "docs/qa/host-origin-fix-tests.tap",
-      "mainSiteWorkflowTests": 11,
-      "mainSiteNavigationTests": 4
+    "review": "docs/migration/load-above-firmware-review.json",
+    "liveReport": "docs/qa/load-above-firmware-live.json",
+    "screenshot": "docs/screenshots/load-above-firmware-20261104/live-ps5.jpg",
+    "deployment": {
+      "id": 41769169626,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
+      "conclusion": "success",
+      "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+      "verifiedAt": "2026-11-04T03:49:54.155Z"
     },
-    "deployments": {
-      "host": {
-        "id": 41767690926,
-        "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41767690926",
-        "conclusion": "success",
-        "commit": "b42991bfd9816a52ce044a1a139085583dea8127",
-        "verifiedAt": "2026-11-04T03:40:40.128Z"
-      },
-      "main": {
-        "id": 41767692778,
-        "url": "https://github.com/Speedy-away/whatsite/actions/runs/41767692778",
-        "conclusion": "success",
-        "commit": "90af7951d1d8daf6ac8939a100840d29db839604",
-        "verifiedAt": "2026-11-04T03:40:40.128Z"
-      }
-    },
-    "liveReport": "docs/qa/host-origin-live-verification.json",
-    "screenshot": "docs/screenshots/host-origin-fix-20261104/live-root.jpg",
-    "senderVersion": "2.1.0+81aa2e7cf141",
-    "noNewDownloads": true
+    "testsPassed": 29
   },
   "consoleBannerFollowup": {
     "review": "docs/migration/console-banner-review.json",
@@ -273,5 +253,41 @@
       "patchFileHashes": 280,
       "senderAssetHTTP": 200
     }
+  },
+  "hostOriginFollowup": {
+    "review": "docs/migration/host-origin-fix-review.json",
+    "request": "Fix whatwhatboy.com/hosts/ and uppercase WWB-HOST chooser links to the active root host site.",
+    "status": "Published and live browser verified",
+    "publicationPending": false,
+    "regression": {
+      "files": 73,
+      "tests": 510,
+      "pass": 510,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/host-origin-fix-tests.tap",
+      "mainSiteWorkflowTests": 11,
+      "mainSiteNavigationTests": 4
+    },
+    "deployments": {
+      "host": {
+        "id": 41767690926,
+        "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41767690926",
+        "conclusion": "success",
+        "commit": "b42991bfd9816a52ce044a1a139085583dea8127",
+        "verifiedAt": "2026-11-04T03:40:40.128Z"
+      },
+      "main": {
+        "id": 41767692778,
+        "url": "https://github.com/Speedy-away/whatsite/actions/runs/41767692778",
+        "conclusion": "success",
+        "commit": "90af7951d1d8daf6ac8939a100840d29db839604",
+        "verifiedAt": "2026-11-04T03:40:40.128Z"
+      }
+    },
+    "liveReport": "docs/qa/host-origin-live-verification.json",
+    "screenshot": "docs/screenshots/host-origin-fix-20261104/live-root.jpg",
+    "senderVersion": "2.1.0+81aa2e7cf141",
+    "noNewDownloads": true
   }
 }
