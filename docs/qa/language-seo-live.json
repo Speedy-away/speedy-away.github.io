@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-11-04T15:02:22.558Z",
+  "commit": "50f56fb0ecc7d8d0c2ea1a88bc19bd4fea90e913",
+  "languages": 21,
+  "localizedDictionariesByteVerified": [
+    {
+      "code": "es",
+      "sha256": "6bf9eba25ddb47edf77dbd5fc96bc01998f3643191b68e0d3060f23424ff672e"
+    },
+    {
+      "code": "pt",
+      "sha256": "781614923ed70deb771e83554895c3f4b086efc67d0bd7a839a737c4672b17e8"
+    },
+    {
+      "code": "fr",
+      "sha256": "442f5ffdc32b1bbb42a3ab6d5e439b35a89b8b812cc6639c0974319b607aca77"
+    },
+    {
+      "code": "de",
+      "sha256": "d6a41735e15e13a27f66cef2dc954c3b00cbb51942c775afd9fc274b33f0f989"
+    },
+    {
+      "code": "ru",
+      "sha256": "167d196b454401cbbc0d3972b59efcaf44f447b2856586b74ff22429293d7650"
+    },
+    {
+      "code": "tr",
+      "sha256": "49e7ed21147b2471b432783d7b39b3089ad2c1bee39d6249839855c30f57529d"
+    },
+    {
+      "code": "pl",
+      "sha256": "46b31895d5260fcb103b4157eec91e6a1e7f102b32499aae9baaf98a2c5486a2"
+    },
+    {
+      "code": "it",
+      "sha256": "020ae8dc1a057f5001629918e050e08ea3ec1da1ca6180aebb3d7d6b9a599127"
+    },
+    {
+      "code": "zh",
+      "sha256": "2a2b1552507c5995a32979f6bc8edb2eeba85bfa859ddaf9e832bca0ef230b41"
+    },
+    {
+      "code": "ja",
+      "sha256": "643515d05d87a0edf871b3678024fcf78862a7d67f2828be33224744d1e5358f"
+    },
+    {
+      "code": "ko",
+      "sha256": "75d8c57bd3f40285172cd31629f6ac0bda07b4eba39b02a5f70fab8a1c5669c3"
+    },
+    {
+      "code": "th",
+      "sha256": "8c449ca7d181048bd0122a279511287ce138018e62245934d4809c16cbc8fe6e"
+    },
+    {
+      "code": "vi",
+      "sha256": "ed3a5e4b77aa4785bbd13e69f1789e78a34de1ce172be2b58e4af254eaa47874"
+    },
+    {
+      "code": "id",
+      "sha256": "dc9c57ff8cd519d3ad8f78dafc5b03db3705e6dbaa4bcc707d3470ee85d3921a"
+    },
+    {
+      "code": "hi",
+      "sha256": "2e8cdab590a7972e65d31e2aa0a88ab3b54118fa547192748f4fc0f4a3e14e29"
+    },
+    {
+      "code": "sr",
+      "sha256": "aa385c5afc92cb8a848170aa87bc56901f49d45aecbe2c608ee265e29bf0eecc"
+    },
+    {
+      "code": "nl",
+      "sha256": "c98dd844f0d2f584deaff64576ad380676025968a8b83a52c91a9202e63e743d"
+    },
+    {
+      "code": "ka",
+      "sha256": "06435e66944d3d587464050418ea06d0c762c7e188d00cb84aba2062ed3e940a"
+    },
+    {
+      "code": "ar",
+      "sha256": "13773ef24e7556c041699019a2e6ec6e702114b72eae957d9eb0b638f4a42977"
+    },
+    {
+      "code": "he",
+      "sha256": "78978d336758d5b70e83a86e5def33d4d6f3f31f541c7b4fe2685345b7b11658"
+    }
+  ],
+  "indexablePages": 399,
+  "pagesPerLanguage": {
+    "es": 19,
+    "en": 19,
+    "pt": 19,
+    "fr": 19,
+    "de": 19,
+    "ru": 19,
+    "pl": 19,
+    "tr": 19,
+    "th": 19,
+    "id": 19,
+    "it": 19,
+    "vi": 19,
+    "hi": 19,
+    "zh": 19,
+    "nl": 19,
+    "ja": 19,
+    "ko": 19,
+    "sr": 19,
+    "ar": 19,
+    "ka": 19,
+    "he": 19
+  },
+  "localizedOfflinePages": 40,
+  "sitemapURLs": 399,
+  "reciprocalLanguageLinksVerified": true,
+  "offlinePacks": [
+    {
+      "platform": "ps4",
+      "version": "560f7c2bf70d53906b79269f",
+      "files": 2384,
+      "bytes": 60629546
+    },
+    {
+      "platform": "ps5",
+      "version": "5eb06fe661c75c29eee8c455",
+      "files": 1101,
+      "bytes": 31264998
+    }
+  ],
+  "nativeConsoleCodeExecuted": false,
+  "issues": 0
+}

@@ -1,5 +1,5 @@
 {
-  "status": "Local verification and visual review passed; publication pending",
+  "status": "Published and live verified",
   "languages": [
     {
       "code": "es",
@@ -138,6 +138,29 @@
       "bytes": 31244370,
       "patchXMLs": 392,
       "trainerDefinitions": 0
+    }
+  ],
+  "publication": {
+    "id": 41853058242,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41853058242",
+    "commit": "50f56fb0ecc7d8d0c2ea1a88bc19bd4fea90e913",
+    "conclusion": "success",
+    "verifiedAt": "2026-11-04T15:02:22.558Z"
+  },
+  "liveReport": "docs/qa/language-seo-live.json",
+  "screenshots": "docs/screenshots/languages-20261104",
+  "liveOfflinePacks": [
+    {
+      "platform": "ps4",
+      "version": "560f7c2bf70d53906b79269f",
+      "files": 2384,
+      "bytes": 60629546
+    },
+    {
+      "platform": "ps5",
+      "version": "5eb06fe661c75c29eee8c455",
+      "files": 1101,
+      "bytes": 31264998
     }
   ]
 }
