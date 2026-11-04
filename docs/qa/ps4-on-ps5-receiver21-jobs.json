@@ -1,0 +1,41 @@
+{
+  "reviewed": "2026-11-04",
+  "jobs": [
+    {
+      "id": "root-receiver-ps4-2026.11.02.21",
+      "title": "PS4 console download receiver",
+      "platform": "PS4",
+      "category": [
+        "Tools"
+      ],
+      "project": "WWB HOST Console Downloader",
+      "version": "2026.11.02.21",
+      "filename": "whatsite-ps4.html",
+      "url": "https://speedy-away.github.io/downloads/helpers/console-download-receivers/ps4/2026.11.02.21-9cc45f58fc4a/whatsite-ps4.html",
+      "importPath": "downloads/helpers/console-download-receivers/ps4/2026.11.02.21-9cc45f58fc4a/whatsite-ps4.html",
+      "expectedBytes": 771667,
+      "expectedSha256": "9cc45f58fc4a54c69e14754b4b428adfa57156ac81f2b01e9c88abdcb99ce897",
+      "archiveRole": [
+        "Builds"
+      ]
+    },
+    {
+      "id": "root-receiver-ps5-2026.11.02.21",
+      "title": "PS5 console download receiver",
+      "platform": "PS5",
+      "category": [
+        "Tools"
+      ],
+      "project": "WWB HOST Console Downloader",
+      "version": "2026.11.02.21",
+      "filename": "whatsite-ps5.html",
+      "url": "https://speedy-away.github.io/downloads/helpers/console-download-receivers/ps5/2026.11.02.21-c9f8b8aa4639/whatsite-ps5.html",
+      "importPath": "downloads/helpers/console-download-receivers/ps5/2026.11.02.21-c9f8b8aa4639/whatsite-ps5.html",
+      "expectedBytes": 578519,
+      "expectedSha256": "c9f8b8aa46390ccd48afd8a4192098ef0fd1d19ad599233e6b5a829ce21eab99",
+      "archiveRole": [
+        "Builds"
+      ]
+    }
+  ]
+}

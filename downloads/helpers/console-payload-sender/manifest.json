@@ -531,8 +531,25 @@
       "actions": 185,
       "releaseTag": "sender-2.1.0-ca2a37472b36",
       "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-ca2a37472b36/console-payload-sender-2.1.0-ca2a37472b36.zip",
-      "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip"
+      "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip",
+      "releaseAssetId": 707797468
+    },
+    {
+      "id": "console-payload-sender-25d5c9f0d403",
+      "name": "console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "version": "2.1.0+25d5c9f0d403",
+      "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "source": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "bytes": 107657508,
+      "sha256": "3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
+      "snapshot": "25d5c9f0d403c8e16c7f84fd1a6c88e26b7a8b7ba59c4856e22c91250c3fb978",
+      "files": 1591,
+      "payloads": 131,
+      "actions": 191,
+      "releaseTag": "sender-2.1.0-25d5c9f0d403",
+      "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip"
     }
   ],
-  "latest": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip"
+  "latest": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip"
 }

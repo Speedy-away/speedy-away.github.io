@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T01:08:59.378Z",
-  "status": "Design frozen; 467 tests pass with zero exclusions. Sender archived; immutable release and deployment pending.",
+  "updatedAt": "2026-11-04T01:40:30.653Z",
+  "status": "Design and compatibility expansion validated; final sender release and root deployment pending",
   "source": "22b518676fe15b99331c6395c57f809257003fc7",
   "destination": "ea3fd69fbc864f262692685403736a9334df95b3",
   "mergeCommit": "f15752de0c18816a835ec51ab7a0de54ea47bc1f",
@@ -45,23 +45,34 @@
       },
       {
         "name": "ps4-mods.jpg",
-        "bytes": 45097
+        "bytes": 105461
+      },
+      {
+        "name": "ps4-on-ps5-popup.jpg",
+        "bytes": 61695
+      },
+      {
+        "name": "ps5-mods.jpg",
+        "bytes": 108548
       }
     ],
     "physicalConsole": false
   },
   "tests": {
-    "files": 66,
-    "tests": 467,
-    "pass": 467,
+    "files": 71,
+    "tests": 490,
+    "pass": 490,
     "fail": 0,
     "skipped": 0,
+    "command": "node scripts/test-root-host.cjs",
     "log": "docs/qa/root-redesign-tests.tap"
   },
   "nativePreservation": {
     "changedRuntimeFiles": 0,
     "changedReadyDownloadFiles": 0,
-    "oldSenderRecordsUnchanged": 37
+    "oldSenderRecordsUnchanged": 37,
+    "originalReceiver20Preserved": true,
+    "receiverEngineBytesUnchanged": true
   },
   "patches": {
     "ps4Games": 98,
@@ -72,20 +83,20 @@
     "flow": "Exact title-ID download/receiver handoff; native manager on port 23900 after compatible ELF loader on 9021. No XML execution or installation claims."
   },
   "sender": {
-    "id": "console-payload-sender-ca2a37472b36",
-    "name": "console-payload-sender-2.1.0-ca2a37472b36.zip",
-    "version": "2.1.0+ca2a37472b36",
-    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip",
-    "source": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-ca2a37472b36/console-payload-sender-2.1.0-ca2a37472b36.zip",
-    "bytes": 107647211,
-    "sha256": "cdacbbf0d669f9a9857e01763bad9fdaf93a1a88b9bf1084ac6955a56de9f2b9",
-    "snapshot": "ca2a37472b3620690ffb749c3c6c46cc19b3fc0c1949fc41365435d93f846f5c",
-    "files": 1585,
-    "payloads": 125,
-    "actions": 185,
-    "releaseTag": "sender-2.1.0-ca2a37472b36",
-    "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-ca2a37472b36/console-payload-sender-2.1.0-ca2a37472b36.zip",
-    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip"
+    "id": "console-payload-sender-25d5c9f0d403",
+    "name": "console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "version": "2.1.0+25d5c9f0d403",
+    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "source": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "bytes": 107657508,
+    "sha256": "3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
+    "snapshot": "25d5c9f0d403c8e16c7f84fd1a6c88e26b7a8b7ba59c4856e22c91250c3fb978",
+    "files": 1591,
+    "payloads": 131,
+    "actions": 191,
+    "releaseTag": "sender-2.1.0-25d5c9f0d403",
+    "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip"
   },
   "mainSite": "Two console hub metadata/link edits prepared locally; red CSS and existing host redirects untouched.",
   "limits": [
@@ -111,10 +122,130 @@
     "sharedCatalogueFiles": 3
   },
   "archive": {
-    "items": 4998,
-    "fileRecords": 8617,
-    "present": 8617,
+    "items": 5007,
+    "fileRecords": 8626,
+    "present": 8626,
     "missing": 0,
     "olderVersionsPreserved": true
+  },
+  "ps4OnPS5": {
+    "updatedAt": "2026-11-04T01:26:24.695Z",
+    "source": "https://github.com/etaHEN/PS5_Cheats",
+    "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+    "files": [
+      {
+        "id": "ps5-bc-etahen-cusa00341-01-33",
+        "game": "Uncharted 4: A Thief’s End",
+        "titleIds": [
+          "CUSA00341"
+        ],
+        "gameVersion": "01.33",
+        "bytes": 504,
+        "sha256": "a11a60c6aec6699d4995b9f2c0dc76e9a939b84cd8ae853acbe09039ddd36869",
+        "credits": [
+          "Celogamez_9.00"
+        ]
+      },
+      {
+        "id": "ps5-bc-etahen-cusa00900-01-09",
+        "game": "Bloodborne",
+        "titleIds": [
+          "CUSA00900"
+        ],
+        "gameVersion": "01.09",
+        "bytes": 2653,
+        "sha256": "668127e64c77985e08361dca6144088b7944542d7069330458a62c44a7ac432c",
+        "credits": [
+          "Shiningami"
+        ]
+      },
+      {
+        "id": "ps5-bc-etahen-cusa02624-01-26",
+        "game": "Call of Duty: Black Ops III",
+        "titleIds": [
+          "CUSA02624"
+        ],
+        "gameVersion": "01.26",
+        "bytes": 2920,
+        "sha256": "2e39b76c77fbd67937c5aa43e2b22a3847275350ca45a10625f818def69e3d74",
+        "credits": [
+          "DeathRGH"
+        ]
+      },
+      {
+        "id": "ps5-bc-etahen-cusa02624-01-33",
+        "game": "Call of Duty: Black Ops III",
+        "titleIds": [
+          "CUSA02624"
+        ],
+        "gameVersion": "01.33",
+        "bytes": 1455,
+        "sha256": "52c02ac9953cca1516dd59b09729d6a6e55c3faea48401776532a5168e934839",
+        "credits": [
+          "DeathRGH"
+        ]
+      },
+      {
+        "id": "ps5-bc-etahen-cusa07410-01-35",
+        "game": "God of War",
+        "titleIds": [
+          "CUSA07410"
+        ],
+        "gameVersion": "01.35",
+        "bytes": 2230,
+        "sha256": "5c8187ee948e54b9812e43afb1f67e0668f50908947c23243ee90c87877b5b82",
+        "credits": [
+          "Celogamez"
+        ]
+      },
+      {
+        "id": "ps5-bc-etahen-cusa10249-01-09",
+        "game": "The Last of Us Part II",
+        "titleIds": [
+          "CUSA10249"
+        ],
+        "gameVersion": "01.09",
+        "bytes": 379,
+        "sha256": "c8fc693b9f2e93acea70ddb50ed8765b8999a65ec473a4586a0189691e53344e",
+        "credits": [
+          "illusion"
+        ]
+      }
+    ],
+    "previousCatalogueRowsPreserved": 618,
+    "receiver": {
+      "version": "2026.11.02.21",
+      "records": [
+        {
+          "platform": "ps4",
+          "version": "2026.11.02.21",
+          "path": "console/ps4/whatsite-ps4.html",
+          "immutablePath": "downloads/helpers/console-download-receivers/ps4/2026.11.02.21-9cc45f58fc4a/whatsite-ps4.html",
+          "bytes": 771667,
+          "sha256": "9cc45f58fc4a54c69e14754b4b428adfa57156ac81f2b01e9c88abdcb99ce897",
+          "previousSha256": "9cc45f58fc4a54c69e14754b4b428adfa57156ac81f2b01e9c88abdcb99ce897",
+          "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps4/2026.11.02.20-9cc45f58fc4a/whatsite-ps4.html",
+          "previousItems": 542,
+          "items": 542,
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\WWB HOST Console Downloader\\Builds\\2026.11.02.21\\whatsite-ps4.html"
+        },
+        {
+          "platform": "ps5",
+          "version": "2026.11.02.21",
+          "path": "console/ps5/whatsite-ps5.html",
+          "immutablePath": "downloads/helpers/console-download-receivers/ps5/2026.11.02.21-c9f8b8aa4639/whatsite-ps5.html",
+          "bytes": 578519,
+          "sha256": "c9f8b8aa46390ccd48afd8a4192098ef0fd1d19ad599233e6b5a829ce21eab99",
+          "previousSha256": "f83f4a82ba25fa21ed290126583bb844de8ae88d41cc32b5d5e53d29cd3e6e28",
+          "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps5/2026.11.02.20-f83f4a82ba25/whatsite-ps5.html",
+          "previousItems": 350,
+          "items": 356,
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\WWB HOST Console Downloader\\Builds\\2026.11.02.21\\whatsite-ps5.html"
+        }
+      ]
+    },
+    "engineBytesUnchanged": true,
+    "physicalConsole": false,
+    "activated": true
   }
 }

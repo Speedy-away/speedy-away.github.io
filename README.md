@@ -21,3 +21,5 @@ The 24 authored host pages share `assets/host-pages.css` and image headings. Run
 Original-source provenance tests use retained migration evidence from `WHATSITE_PROVENANCE_ROOT` (default: the sibling `whatsite` workspace). Public runtime and download file checks always use this repository. No native payload is executed by these tests.
 
 Console performance mode is automatic on PS4/PS5: the catalogue starts with 12 text entries and the trainer with 18; Show more and search retain access to the complete library. Large artwork is deferred on consoles and hydrated on desktop. Native runtime documents and immutable downloads are excluded from this presentation adaptation. Regression results and deployment verification are in `docs/migration/console-performance.json`; physical-console timing is unmeasured.
+
+Run the complete host, firmware, translation, native-service and sender regression collection with `node scripts/test-root-host.cjs`. It uses no test-name exclusions. Preserve the sibling original-source evidence workspace or set `WHATSITE_PROVENANCE_ROOT` when running historical provenance tests. No physical console is contacted.

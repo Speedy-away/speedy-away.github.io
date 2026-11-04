@@ -13438,6 +13438,120 @@
       "description": "Ready retained GoldHEN BIN. Saving does not run the exploit or install GoldHEN.",
       "source": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/755/goldhen_2.2.2_755.bin.bz2",
       "preparation": "Choose and prepare a folder in the installed PS4 downloader. Use the exact matching browser exploit to load GoldHEN; this save action does not execute the BIN."
+    },
+    {
+      "id": "ps5-bc-etahen-cusa00341-01-33",
+      "name": "Uncharted 4: A Thief’s End · PS4-on-PS5 cheats · 01.33 · CUSA00341",
+      "filename": "CUSA00341_01.33.json",
+      "url": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00341_01.33.json",
+      "bytes": 504,
+      "sha256": "a11a60c6aec6699d4995b9f2c0dc76e9a939b84cd8ae853acbe09039ddd36869",
+      "version": "01.33",
+      "category": "mods",
+      "compatibility": "PS4 game running on PS5 through backward compatibility; not a native PS5 payload. CUSA00341 game update 01.33 only; eboot.bin process. Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition. Upload the JSON to /data/etaHEN/cheats/json/CUSA00341_01.33.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats. JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified.",
+      "image": "/assets/images/playstation/uncharted.jpg",
+      "page": "/hosts/ps5/other-games/",
+      "platforms": [
+        "ps5"
+      ],
+      "description": "PS4-on-PS5 etaHEN JSON cheat definition. Enable Dev Menu",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00341_01.33.json",
+      "preparation": "/data/etaHEN/cheats/json/CUSA00341_01.33.json"
+    },
+    {
+      "id": "ps5-bc-etahen-cusa00900-01-09",
+      "name": "Bloodborne · PS4-on-PS5 cheats · 01.09 · CUSA00900",
+      "filename": "CUSA00900_01.09.json",
+      "url": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00900_01.09.json",
+      "bytes": 2653,
+      "sha256": "668127e64c77985e08361dca6144088b7944542d7069330458a62c44a7ac432c",
+      "version": "01.09",
+      "category": "mods",
+      "compatibility": "PS4 game running on PS5 through backward compatibility; not a native PS5 payload. CUSA00900 game update 01.09 only; eboot.bin process. Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition. Upload the JSON to /data/etaHEN/cheats/json/CUSA00900_01.09.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats. JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified.",
+      "image": "/assets/images/game-patches/bloodborne-official.jpg",
+      "page": "/hosts/ps5/other-games/",
+      "platforms": [
+        "ps5"
+      ],
+      "description": "PS4-on-PS5 etaHEN JSON cheat definition. Infinite  BloodEcho; Infinite Lucidity; Infinite Health; Infinite Stamina; 1 Hit Kill; Infinite Items",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00900_01.09.json",
+      "preparation": "/data/etaHEN/cheats/json/CUSA00900_01.09.json"
+    },
+    {
+      "id": "ps5-bc-etahen-cusa02624-01-26",
+      "name": "Call of Duty: Black Ops III · PS4-on-PS5 cheats · 01.26 · CUSA02624",
+      "filename": "CUSA02624_01.26.json",
+      "url": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.26.json",
+      "bytes": 2920,
+      "sha256": "2e39b76c77fbd67937c5aa43e2b22a3847275350ca45a10625f818def69e3d74",
+      "version": "01.26",
+      "category": "mods",
+      "compatibility": "PS4 game running on PS5 through backward compatibility; not a native PS5 payload. CUSA02624 game update 01.26 only; eboot.bin process. Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition. Upload the JSON to /data/etaHEN/cheats/json/CUSA02624_01.26.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats. JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified.",
+      "image": "/assets/images/playstation/black-ops-3.jpg",
+      "page": "/hosts/ps5/other-games/",
+      "platforms": [
+        "ps5"
+      ],
+      "description": "PS4-on-PS5 etaHEN JSON cheat definition. All Client Godmode; All Client Demi Godmode; All Client Infinite Ammo; Bypass Death Barriers; Infinite Jetpack; Super Jump; Player 1 Give Points (Zombies); Player 2 Give Points (Zombies); Player 3 Give Points (Zombies); Player 4 Give Points (Zombies)",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.26.json",
+      "preparation": "/data/etaHEN/cheats/json/CUSA02624_01.26.json"
+    },
+    {
+      "id": "ps5-bc-etahen-cusa02624-01-33",
+      "name": "Call of Duty: Black Ops III · PS4-on-PS5 cheats · 01.33 · CUSA02624",
+      "filename": "CUSA02624_01.33.json",
+      "url": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.33.json",
+      "bytes": 1455,
+      "sha256": "52c02ac9953cca1516dd59b09729d6a6e55c3faea48401776532a5168e934839",
+      "version": "01.33",
+      "category": "mods",
+      "compatibility": "PS4 game running on PS5 through backward compatibility; not a native PS5 payload. CUSA02624 game update 01.33 only; eboot.bin process. Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition. Upload the JSON to /data/etaHEN/cheats/json/CUSA02624_01.33.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats. JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified.",
+      "image": "/assets/images/playstation/black-ops-3.jpg",
+      "page": "/hosts/ps5/other-games/",
+      "platforms": [
+        "ps5"
+      ],
+      "description": "PS4-on-PS5 etaHEN JSON cheat definition. All Client Godmode; All Client Infinite Ammo; Super Jump; FPS Counter; Lagometer",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.33.json",
+      "preparation": "/data/etaHEN/cheats/json/CUSA02624_01.33.json"
+    },
+    {
+      "id": "ps5-bc-etahen-cusa07410-01-35",
+      "name": "God of War · PS4-on-PS5 cheats · 01.35 · CUSA07410",
+      "filename": "CUSA07410_01.35.json",
+      "url": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA07410_01.35.json",
+      "bytes": 2230,
+      "sha256": "5c8187ee948e54b9812e43afb1f67e0668f50908947c23243ee90c87877b5b82",
+      "version": "01.35",
+      "category": "mods",
+      "compatibility": "PS4 game running on PS5 through backward compatibility; not a native PS5 payload. CUSA07410 game update 01.35 only; eboot.bin process. Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition. Upload the JSON to /data/etaHEN/cheats/json/CUSA07410_01.35.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats. JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified.",
+      "image": "/assets/images/playstation/god-of-war.jpg",
+      "page": "/hosts/ps5/other-games/",
+      "platforms": [
+        "ps5"
+      ],
+      "description": "PS4-on-PS5 etaHEN JSON cheat definition. Infinite Health; Instant Infinite Rage On First Hit (Disable Infinite Health); Infinite Arrows; Max/Inf XP,HS,Crafting Materials On Gain/Buy; No Cooldown",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA07410_01.35.json",
+      "preparation": "/data/etaHEN/cheats/json/CUSA07410_01.35.json"
+    },
+    {
+      "id": "ps5-bc-etahen-cusa10249-01-09",
+      "name": "The Last of Us Part II · PS4-on-PS5 cheats · 01.09 · CUSA10249",
+      "filename": "CUSA10249_01.09.json",
+      "url": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA10249_01.09.json",
+      "bytes": 379,
+      "sha256": "c8fc693b9f2e93acea70ddb50ed8765b8999a65ec473a4586a0189691e53344e",
+      "version": "01.09",
+      "category": "mods",
+      "compatibility": "PS4 game running on PS5 through backward compatibility; not a native PS5 payload. CUSA10249 game update 01.09 only; eboot.bin process. Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition. Upload the JSON to /data/etaHEN/cheats/json/CUSA10249_01.09.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats. JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified.",
+      "image": "/assets/images/playstation/the-last-of-us-2.jpg",
+      "page": "/hosts/ps5/other-games/",
+      "platforms": [
+        "ps5"
+      ],
+      "description": "PS4-on-PS5 etaHEN JSON cheat definition. Enable Dev Menu",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA10249_01.09.json",
+      "preparation": "/data/etaHEN/cheats/json/CUSA10249_01.09.json"
     }
   ],
   "updatedAt": "2026-11-03T23:28:31.146Z"

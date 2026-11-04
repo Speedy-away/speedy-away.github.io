@@ -9,7 +9,11 @@ test('both main hubs use gallery navigation with a top taskbar and preserve ever
   assert.doesNotMatch(html,/id="sidebar"|class="host-folder-row"|<header class="guide-hero">/);
   const data=JSON.parse(html.match(/id="host-actions-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
   assert.equal(data.catalogGrid,true);assert.equal(data.platform,platform);
-  assert.deepEqual(data.actions,require('../build-host-selector.cjs').hostActions(platform));
+  // The embedded catalogue may append reviewed imports independently of the
+  // source-file aggregation order. Every action and every compatibility field
+  // must still match exactly; individual firmware arrays retain their order.
+  const byId=(a,b)=>a.id.localeCompare(b.id);
+  assert.deepEqual(data.actions.slice().sort(byId),require('../build-host-selector.cjs').hostActions(platform).slice().sort(byId));
   for(const view of ['loaders','mods','payloads','tools','connection','sender'])assert.ok(html.includes('?view='+view));
  }
 });

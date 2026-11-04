@@ -3365,6 +3365,358 @@
         "inventorySource": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09911_01.000.000.json",
         "catalogue": "docs/console-download-catalog.json"
       }
+    },
+    {
+      "id": "ps5-bc-etahen-cusa00341-01-33",
+      "label": "Uncharted 4: A Thief’s End · PS4-on-PS5 cheats",
+      "platform": "ps5",
+      "category": "mods",
+      "game": "Uncharted 4: A Thief’s End",
+      "gamePlatform": "ps4-on-ps5",
+      "gameVersion": "01.33",
+      "titleIds": [
+        "CUSA00341"
+      ],
+      "resourceType": "cheat-definitions",
+      "format": "JSON",
+      "firmwares": [],
+      "firmwarePolicy": "requirements-only",
+      "firmwareEvidence": "Official etaHEN cheat database includes this exact CUSA definition; no PS4 native payload compatibility or hardware result is inferred.",
+      "downloadURL": "/downloads/hosts/ps5/cheats/etahen-ef295511ea42/CUSA00341_01.33.json",
+      "downloadFilename": "CUSA00341_01.33.json",
+      "bytes": 504,
+      "sha256": "a11a60c6aec6699d4995b9f2c0dc76e9a939b84cd8ae853acbe09039ddd36869",
+      "run": null,
+      "launchURL": null,
+      "consoleFileId": "ps5-bc-etahen-cusa00341-01-33",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00341_01.33.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00341_01.33.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/tree/ef295511ea4252474b16325618ffaafd3afb3cbb#usage",
+      "installPath": "/data/etaHEN/cheats/json/CUSA00341_01.33.json",
+      "credits": [
+        "Celogamez_9.00"
+      ],
+      "cheats": [
+        "Enable Dev Menu"
+      ],
+      "license": "See the pinned upstream LICENSE and original cheat-creator credits. No new licence is asserted.",
+      "requirements": [
+        "PS4 game running on PS5 through backward compatibility; not a native PS5 payload.",
+        "CUSA00341 game update 01.33 only; eboot.bin process.",
+        "Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition.",
+        "Upload the JSON to /data/etaHEN/cheats/json/CUSA00341_01.33.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats.",
+        "JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified."
+      ],
+      "image": "/assets/images/playstation/uncharted.jpg",
+      "imageRole": "Matching game artwork",
+      "tags": [
+        "PS5",
+        "PS4 on PS5",
+        "Uncharted 4: A Thief’s End",
+        "CUSA00341",
+        "01.33",
+        "etaHEN",
+        "JSON cheats",
+        "backward compatibility"
+      ]
+    },
+    {
+      "id": "ps5-bc-etahen-cusa00900-01-09",
+      "label": "Bloodborne · PS4-on-PS5 cheats",
+      "platform": "ps5",
+      "category": "mods",
+      "game": "Bloodborne",
+      "gamePlatform": "ps4-on-ps5",
+      "gameVersion": "01.09",
+      "titleIds": [
+        "CUSA00900"
+      ],
+      "resourceType": "cheat-definitions",
+      "format": "JSON",
+      "firmwares": [],
+      "firmwarePolicy": "requirements-only",
+      "firmwareEvidence": "Official etaHEN cheat database includes this exact CUSA definition; no PS4 native payload compatibility or hardware result is inferred.",
+      "downloadURL": "/downloads/hosts/ps5/cheats/etahen-ef295511ea42/CUSA00900_01.09.json",
+      "downloadFilename": "CUSA00900_01.09.json",
+      "bytes": 2653,
+      "sha256": "668127e64c77985e08361dca6144088b7944542d7069330458a62c44a7ac432c",
+      "run": null,
+      "launchURL": null,
+      "consoleFileId": "ps5-bc-etahen-cusa00900-01-09",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00900_01.09.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA00900_01.09.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/tree/ef295511ea4252474b16325618ffaafd3afb3cbb#usage",
+      "installPath": "/data/etaHEN/cheats/json/CUSA00900_01.09.json",
+      "credits": [
+        "Shiningami"
+      ],
+      "cheats": [
+        "Infinite  BloodEcho",
+        "Infinite Lucidity",
+        "Infinite Health",
+        "Infinite Stamina",
+        "1 Hit Kill",
+        "Infinite Items"
+      ],
+      "license": "See the pinned upstream LICENSE and original cheat-creator credits. No new licence is asserted.",
+      "requirements": [
+        "PS4 game running on PS5 through backward compatibility; not a native PS5 payload.",
+        "CUSA00900 game update 01.09 only; eboot.bin process.",
+        "Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition.",
+        "Upload the JSON to /data/etaHEN/cheats/json/CUSA00900_01.09.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats.",
+        "JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified."
+      ],
+      "image": "/assets/images/game-patches/bloodborne-official.jpg",
+      "imageRole": "Matching game artwork",
+      "tags": [
+        "PS5",
+        "PS4 on PS5",
+        "Bloodborne",
+        "CUSA00900",
+        "01.09",
+        "etaHEN",
+        "JSON cheats",
+        "backward compatibility"
+      ]
+    },
+    {
+      "id": "ps5-bc-etahen-cusa02624-01-26",
+      "label": "Call of Duty: Black Ops III · PS4-on-PS5 cheats",
+      "platform": "ps5",
+      "category": "mods",
+      "game": "Call of Duty: Black Ops III",
+      "gamePlatform": "ps4-on-ps5",
+      "gameVersion": "01.26",
+      "titleIds": [
+        "CUSA02624"
+      ],
+      "resourceType": "cheat-definitions",
+      "format": "JSON",
+      "firmwares": [],
+      "firmwarePolicy": "requirements-only",
+      "firmwareEvidence": "Official etaHEN cheat database includes this exact CUSA definition; no PS4 native payload compatibility or hardware result is inferred.",
+      "downloadURL": "/downloads/hosts/ps5/cheats/etahen-ef295511ea42/CUSA02624_01.26.json",
+      "downloadFilename": "CUSA02624_01.26.json",
+      "bytes": 2920,
+      "sha256": "2e39b76c77fbd67937c5aa43e2b22a3847275350ca45a10625f818def69e3d74",
+      "run": null,
+      "launchURL": null,
+      "consoleFileId": "ps5-bc-etahen-cusa02624-01-26",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.26.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.26.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/tree/ef295511ea4252474b16325618ffaafd3afb3cbb#usage",
+      "installPath": "/data/etaHEN/cheats/json/CUSA02624_01.26.json",
+      "credits": [
+        "DeathRGH"
+      ],
+      "cheats": [
+        "All Client Godmode",
+        "All Client Demi Godmode",
+        "All Client Infinite Ammo",
+        "Bypass Death Barriers",
+        "Infinite Jetpack",
+        "Super Jump",
+        "Player 1 Give Points (Zombies)",
+        "Player 2 Give Points (Zombies)",
+        "Player 3 Give Points (Zombies)",
+        "Player 4 Give Points (Zombies)"
+      ],
+      "license": "See the pinned upstream LICENSE and original cheat-creator credits. No new licence is asserted.",
+      "requirements": [
+        "PS4 game running on PS5 through backward compatibility; not a native PS5 payload.",
+        "CUSA02624 game update 01.26 only; eboot.bin process.",
+        "Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition.",
+        "Upload the JSON to /data/etaHEN/cheats/json/CUSA02624_01.26.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats.",
+        "JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified."
+      ],
+      "image": "/assets/images/playstation/black-ops-3.jpg",
+      "imageRole": "Matching game artwork",
+      "tags": [
+        "PS5",
+        "PS4 on PS5",
+        "Call of Duty: Black Ops III",
+        "CUSA02624",
+        "01.26",
+        "etaHEN",
+        "JSON cheats",
+        "backward compatibility"
+      ]
+    },
+    {
+      "id": "ps5-bc-etahen-cusa02624-01-33",
+      "label": "Call of Duty: Black Ops III · PS4-on-PS5 cheats",
+      "platform": "ps5",
+      "category": "mods",
+      "game": "Call of Duty: Black Ops III",
+      "gamePlatform": "ps4-on-ps5",
+      "gameVersion": "01.33",
+      "titleIds": [
+        "CUSA02624"
+      ],
+      "resourceType": "cheat-definitions",
+      "format": "JSON",
+      "firmwares": [],
+      "firmwarePolicy": "requirements-only",
+      "firmwareEvidence": "Official etaHEN cheat database includes this exact CUSA definition; no PS4 native payload compatibility or hardware result is inferred.",
+      "downloadURL": "/downloads/hosts/ps5/cheats/etahen-ef295511ea42/CUSA02624_01.33.json",
+      "downloadFilename": "CUSA02624_01.33.json",
+      "bytes": 1455,
+      "sha256": "52c02ac9953cca1516dd59b09729d6a6e55c3faea48401776532a5168e934839",
+      "run": null,
+      "launchURL": null,
+      "consoleFileId": "ps5-bc-etahen-cusa02624-01-33",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.33.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA02624_01.33.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/tree/ef295511ea4252474b16325618ffaafd3afb3cbb#usage",
+      "installPath": "/data/etaHEN/cheats/json/CUSA02624_01.33.json",
+      "credits": [
+        "DeathRGH"
+      ],
+      "cheats": [
+        "All Client Godmode",
+        "All Client Infinite Ammo",
+        "Super Jump",
+        "FPS Counter",
+        "Lagometer"
+      ],
+      "license": "See the pinned upstream LICENSE and original cheat-creator credits. No new licence is asserted.",
+      "requirements": [
+        "PS4 game running on PS5 through backward compatibility; not a native PS5 payload.",
+        "CUSA02624 game update 01.33 only; eboot.bin process.",
+        "Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition.",
+        "Upload the JSON to /data/etaHEN/cheats/json/CUSA02624_01.33.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats.",
+        "JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified."
+      ],
+      "image": "/assets/images/playstation/black-ops-3.jpg",
+      "imageRole": "Matching game artwork",
+      "tags": [
+        "PS5",
+        "PS4 on PS5",
+        "Call of Duty: Black Ops III",
+        "CUSA02624",
+        "01.33",
+        "etaHEN",
+        "JSON cheats",
+        "backward compatibility"
+      ]
+    },
+    {
+      "id": "ps5-bc-etahen-cusa07410-01-35",
+      "label": "God of War · PS4-on-PS5 cheats",
+      "platform": "ps5",
+      "category": "mods",
+      "game": "God of War",
+      "gamePlatform": "ps4-on-ps5",
+      "gameVersion": "01.35",
+      "titleIds": [
+        "CUSA07410"
+      ],
+      "resourceType": "cheat-definitions",
+      "format": "JSON",
+      "firmwares": [],
+      "firmwarePolicy": "requirements-only",
+      "firmwareEvidence": "Official etaHEN cheat database includes this exact CUSA definition; no PS4 native payload compatibility or hardware result is inferred.",
+      "downloadURL": "/downloads/hosts/ps5/cheats/etahen-ef295511ea42/CUSA07410_01.35.json",
+      "downloadFilename": "CUSA07410_01.35.json",
+      "bytes": 2230,
+      "sha256": "5c8187ee948e54b9812e43afb1f67e0668f50908947c23243ee90c87877b5b82",
+      "run": null,
+      "launchURL": null,
+      "consoleFileId": "ps5-bc-etahen-cusa07410-01-35",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA07410_01.35.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA07410_01.35.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/tree/ef295511ea4252474b16325618ffaafd3afb3cbb#usage",
+      "installPath": "/data/etaHEN/cheats/json/CUSA07410_01.35.json",
+      "credits": [
+        "Celogamez"
+      ],
+      "cheats": [
+        "Infinite Health",
+        "Instant Infinite Rage On First Hit (Disable Infinite Health)",
+        "Infinite Arrows",
+        "Max/Inf XP,HS,Crafting Materials On Gain/Buy",
+        "No Cooldown"
+      ],
+      "license": "See the pinned upstream LICENSE and original cheat-creator credits. No new licence is asserted.",
+      "requirements": [
+        "PS4 game running on PS5 through backward compatibility; not a native PS5 payload.",
+        "CUSA07410 game update 01.35 only; eboot.bin process.",
+        "Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition.",
+        "Upload the JSON to /data/etaHEN/cheats/json/CUSA07410_01.35.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats.",
+        "JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified."
+      ],
+      "image": "/assets/images/playstation/god-of-war.jpg",
+      "imageRole": "Matching game artwork",
+      "tags": [
+        "PS5",
+        "PS4 on PS5",
+        "God of War",
+        "CUSA07410",
+        "01.35",
+        "etaHEN",
+        "JSON cheats",
+        "backward compatibility"
+      ]
+    },
+    {
+      "id": "ps5-bc-etahen-cusa10249-01-09",
+      "label": "The Last of Us Part II · PS4-on-PS5 cheats",
+      "platform": "ps5",
+      "category": "mods",
+      "game": "The Last of Us Part II",
+      "gamePlatform": "ps4-on-ps5",
+      "gameVersion": "01.09",
+      "titleIds": [
+        "CUSA10249"
+      ],
+      "resourceType": "cheat-definitions",
+      "format": "JSON",
+      "firmwares": [],
+      "firmwarePolicy": "requirements-only",
+      "firmwareEvidence": "Official etaHEN cheat database includes this exact CUSA definition; no PS4 native payload compatibility or hardware result is inferred.",
+      "downloadURL": "/downloads/hosts/ps5/cheats/etahen-ef295511ea42/CUSA10249_01.09.json",
+      "downloadFilename": "CUSA10249_01.09.json",
+      "bytes": 379,
+      "sha256": "c8fc693b9f2e93acea70ddb50ed8765b8999a65ec473a4586a0189691e53344e",
+      "run": null,
+      "launchURL": null,
+      "consoleFileId": "ps5-bc-etahen-cusa10249-01-09",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA10249_01.09.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA10249_01.09.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/tree/ef295511ea4252474b16325618ffaafd3afb3cbb#usage",
+      "installPath": "/data/etaHEN/cheats/json/CUSA10249_01.09.json",
+      "credits": [
+        "illusion"
+      ],
+      "cheats": [
+        "Enable Dev Menu"
+      ],
+      "license": "See the pinned upstream LICENSE and original cheat-creator credits. No new licence is asserted.",
+      "requirements": [
+        "PS4 game running on PS5 through backward compatibility; not a native PS5 payload.",
+        "CUSA10249 game update 01.09 only; eboot.bin process.",
+        "Requires a compatible etaHEN build with its Cheats menu. The upstream database does not certify a firmware range for this definition.",
+        "Upload the JSON to /data/etaHEN/cheats/json/CUSA10249_01.09.json, open the matching game, then choose the cheat in etaHEN Toolbox → Cheats.",
+        "JSON cheat data cannot be sent to a BIN/ELF loader. No physical-console execution has been verified."
+      ],
+      "image": "/assets/images/playstation/the-last-of-us-2.jpg",
+      "imageRole": "Matching game artwork",
+      "tags": [
+        "PS5",
+        "PS4 on PS5",
+        "The Last of Us Part II",
+        "CUSA10249",
+        "01.09",
+        "etaHEN",
+        "JSON cheats",
+        "backward compatibility"
+      ]
     }
   ]
 }

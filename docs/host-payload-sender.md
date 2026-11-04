@@ -52,3 +52,9 @@ node scripts/refresh-local-download-index.cjs --write
 ```
 
 `--check` reads files and verifies payload checksums. `--build` writes a new content-versioned ZIP and appends its public manifest record. `--archive` also saves that exact ZIP under the private archive's PC desktop-helper layout and merges its source URL, version, size and SHA-256 into the download inventory. Existing ZIPs, inventory entries and older versions are retained. The archive step uses the normal filesystem permission boundary for the F: drive.
+
+## PS4 games on PS5: etaHEN definitions
+
+The source-pinned additions cover God of War CUSA07410 01.35, Uncharted 4 CUSA00341 01.33, Bloodborne CUSA00900 01.09, The Last of Us Part II CUSA10249 01.09, and Black Ops III CUSA02624 01.26 / 01.33. Install receiver 2026.11.02.21 or newer to resolve their new exact download IDs. Older receiver catalogues report those IDs as unavailable; they never substitute another file.
+
+These JSON files are for the PS4 game running on PS5 with a compatible etaHEN Cheats menu. Copy the exact filename into /data/etaHEN/cheats/json/, start the matching title/update, and select the option in etaHEN Toolbox → Cheats. They have no BIN/ELF Load route or inferred firmware range. Keep only one cheat format for each title ID/update, as upstream requires. Physical-console execution is unverified.

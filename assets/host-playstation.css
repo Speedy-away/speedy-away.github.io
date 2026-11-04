@@ -45,3 +45,5 @@ body.wwb-host-page .host-version-dialog .host-launch:not(:disabled){background:#
 body.wwb-host-page .host-version-dialog .host-launch:disabled{background:#26364f!important;color:#8394ac!important}
 body.wwb-host-page .host-activity,body.wwb-host-page .host-version-status{background:#0c1728!important;color:#a7bad6!important;border-color:#344258!important}
 @media(max-width:640px){body.wwb-host-page .host-taskbar{padding-right:100px!important;gap:7px;min-height:82px}body.wwb-host-page .host-taskbar a{padding:6px;font-size:11px}body.wwb-host-page .host-top-back{display:none!important}body.wwb-host-page .host-top-brand{margin-right:auto;font-size:11px}.host-taskbar .host-platform-switch{margin-inline:0!important}body.wwb-host-page .host-primary-tabs{gap:15px;overflow-x:auto}body.wwb-host-page .host-file-tabs{align-items:flex-start}body.wwb-host-page .host-primary-tabs>a{white-space:nowrap}}
+
+body.wwb-host-page .host-version-dialog .host-action-title>span{color:#99bdff!important}

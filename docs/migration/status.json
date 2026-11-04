@@ -1084,11 +1084,12 @@
     "sourceHistoryPreserved": "22b518676fe15b99331c6395c57f809257003fc7",
     "destinationHistoryPreserved": "ea3fd69fbc864f262692685403736a9334df95b3",
     "tests": {
-      "files": 66,
-      "tests": 467,
-      "pass": 467,
+      "files": 71,
+      "tests": 490,
+      "pass": 490,
       "fail": 0,
       "skipped": 0,
+      "command": "node scripts/test-root-host.cjs",
       "log": "docs/qa/root-redesign-tests.tap"
     },
     "build": {
@@ -1111,14 +1112,17 @@
       "sharedCatalogueFiles": 3
     },
     "archive": {
-      "items": 4998,
-      "fileRecords": 8617,
-      "present": 8617,
+      "items": 5007,
+      "fileRecords": 8626,
+      "present": 8626,
       "missing": 0,
       "olderVersionsPreserved": true
     },
-    "sender": "2.1.0+ca2a37472b36",
+    "sender": "2.1.0+25d5c9f0d403",
     "browserVerified": true,
-    "physicalConsoleVerified": false
+    "physicalConsoleVerified": false,
+    "receiver": "2026.11.02.21",
+    "ps4OnPS5Definitions": 6,
+    "ps4OnPS5Games": 5
   }
 }

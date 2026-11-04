@@ -43,7 +43,8 @@ test('menu covers, actual RDR2 previews and cheat data retain honest distinct ro
   const explosive=actions.find(a=>a.menuFamily==='Explosive');
   assert.equal(ui.imageCaption(explosive),'Menu cover');assert.equal(explosive.menuVersion,null);
   const trainers=load('docs/host-extra-game-actions.json').actions;
-  assert.equal(trainers.length,40);
+  assert.equal(trainers.filter(a=>!a.id.startsWith('ps5-bc-etahen-')).length,40);
+  assert.equal(trainers.filter(a=>a.id.startsWith('ps5-bc-etahen-')).length,6);
   for(const a of trainers) {assert.equal(a.run,null);assert.equal(a.format,'JSON');assert.ok(a.titleIds.length);assert.equal(ui.imageCaption(a),'Game artwork');assert.ok(fs.existsSync(path.join(root,a.image)));}
 });
 

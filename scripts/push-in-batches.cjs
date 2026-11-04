@@ -12,12 +12,12 @@ const batchMiB = Number(args.find(arg => arg.startsWith('--batch-mib='))?.split(
 if (batchMiB < 1 || batchMiB > 768) throw new Error('Batch size must be between 1 and 768 MiB.');
 const limit = batchMiB * 1024 * 1024;
 function git(args, options = {}) {
-  return execFileSync('git', args, {cwd: root, encoding: 'utf8', maxBuffer: 128 * 1024 * 1024, ...options}).trim();
+  return execFileSync('git', ['-c','credential.username=Speedy-away',...args], {cwd: root, encoding: 'utf8', maxBuffer: 128 * 1024 * 1024, env:{...process.env,GIT_TERMINAL_PROMPT:'0',GCM_INTERACTIVE:'Never'}, ...options}).trim();
 }
 function push(refspec, lease, negotiate = false) {
-  const result = spawnSync('git', ['-c', 'http.version=HTTP/1.1',
+  const result = spawnSync('git', ['-c', 'http.version=HTTP/1.1','-c','credential.username=Speedy-away',
     ...(negotiate ? ['-c', 'push.negotiate=true'] : []), 'push', '--progress',
-    ...(lease ? [`--force-with-lease=${lease}`] : []), 'origin', refspec], {cwd: root, stdio: 'inherit'});
+    ...(lease ? [`--force-with-lease=${lease}`] : []), 'origin', refspec], {cwd: root, stdio: 'inherit',env:{...process.env,GIT_TERMINAL_PROMPT:'0',GCM_INTERACTIVE:'Never'}});
   if (result.error) throw result.error;
   if (result.status !== 0) throw new Error('Upload stopped. Rerun the same command to resume; files and commits are unchanged.');
 }
@@ -110,4 +110,4 @@ console.log('Verified '+targetRef+' matches the original local HEAD. Removing th
 push(`:${ref}`, `${ref}:${remoteStage}`);
 state.completedAt = new Date().toISOString();
 fs.writeFileSync(stateFile, JSON.stringify(state, null, 2) + '\n');
-console.log('Push complete. GitHub Desktop should now show main as up to date.');
+console.log('Push complete. Verified '+targetRef+' at '+head+'.');

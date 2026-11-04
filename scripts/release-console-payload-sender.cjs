@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'..');
 const {releaseInfo,markLocalOnly}=require('./sender-release-delivery.cjs');
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 async function main(){
- const file=path.join(root,'downloads/helpers/console-payload-sender/manifest.json'),manifest=JSON.parse(fs.readFileSync(file,'utf8')),info=manifest.files.find(f=>f.url===manifest.latest);if(!info)throw Error('Missing latest sender');
+ const file=path.join(root,'downloads/helpers/console-payload-sender/manifest.json'),manifest=JSON.parse(fs.readFileSync(file,'utf8')),info=manifest.files.find(f=>process.env.SENDER_RELEASE_VERSION?f.version===process.env.SENDER_RELEASE_VERSION:f.url===manifest.latest);if(!info)throw Error('Missing selected sender');
  const bytes=fs.readFileSync(path.join(root,info.url)),digest=hash(bytes);if(digest!==info.sha256||bytes.length!==info.bytes)throw Error('Sender identity mismatch');
  const audit=JSON.parse(fs.readFileSync(path.join(root,'docs/download-audit.json'),'utf8')),backup=audit.items.flatMap(i=>i.files||[]).find(f=>f.sha256===digest&&f.backupPath&&fs.existsSync(f.backupPath));if(!backup||hash(fs.readFileSync(backup.backupPath))!==digest)throw Error('Verified F: sender copy is required');
  const delivery=releaseInfo(info);markLocalOnly(info,root);
@@ -23,7 +23,7 @@ async function main(){
  fs.writeFileSync(file,JSON.stringify(current,null,2)+'\n');
  const index=path.join(root,'downloads/helpers/console-payload-sender/index.html'),before=fs.readFileSync(index,'utf8');fs.writeFileSync(index,before.replace('href="'+info.name+'"','href="'+asset.browser_download_url+'"'));
  const report={verifiedAt:new Date().toISOString(),version:info.version,name:info.name,bytes:bytes.length,sha256:digest,local:info.url,archivePath:backup.backupPath,release:release.html_url,downloadURL:asset.browser_download_url,assetId:asset.id,serverDigest:asset.digest,zipUnchanged:true,archiveVerified:true,downloadedCodeExecuted:false};
- fs.mkdirSync(path.join(root,'docs/qa'),{recursive:true});fs.writeFileSync(path.join(root,'docs/qa/sender-release-delivery.json'),JSON.stringify(report,null,2)+'\n');
+ fs.mkdirSync(path.join(root,'docs/qa'),{recursive:true});fs.writeFileSync(path.join(root,'docs/qa/sender-release-delivery-'+info.snapshot.slice(0,12)+'.json'),JSON.stringify(report,null,2)+'\n');if(info.url===current.latest)fs.writeFileSync(path.join(root,'docs/qa/sender-release-delivery.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report,null,2));
 }
 if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1});

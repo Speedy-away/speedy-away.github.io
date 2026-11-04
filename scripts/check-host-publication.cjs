@@ -5,8 +5,13 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '..');
-const site = 'https://speedy-away.github.io/WWB-HOST/';
-const resolveURL = (value, aliases) => new URL(aliases[value] || value.replace(/^\/(?!WWB-HOST\/)/, ''), site).href;
+const site = 'https://speedy-away.github.io/';
+const resolveURL = (value, aliases) => {
+  const parsed=new URL(value,site);
+  if(parsed.origin!==new URL(site).origin)return parsed.href;
+  const key=parsed.pathname.replace(/^\/(?:WWB-HOST|wwb-host)(?=\/)/,'');
+  return new URL(aliases[key]||key,site).href+parsed.search+parsed.hash;
+};
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 async function request(url, method) {
   let last;
@@ -28,7 +33,7 @@ async function main() {
   const source = await response.text();
   assert.ok(source.startsWith('window.WWB_HOST_PROJECT='));
   const map = JSON.parse(source.slice(source.indexOf('=') + 1).replace(/;\s*$/, ''));
-  const revision = [...new Set(Object.values(map.aliases).map(url => url.match(/^https:\/\/raw\.githubusercontent\.com\/Speedy-away\/WWB-HOST\/([a-f0-9]{40})\//)?.[1]).filter(Boolean))];
+  const revision = [...new Set(Object.values(map.aliases).map(url => url.match(/^https:\/\/raw\.githubusercontent\.com\/Speedy-away\/speedy-away\.github\.io\/([a-f0-9]{40})\//)?.[1]).filter(Boolean))];
   assert.equal(revision.length, 1, 'Downloads must use one immutable deployed revision');
   const build = JSON.parse(fs.readFileSync(path.join(root, 'docs/host-reviews/karo/build.json')));
   const arabic = JSON.parse(fs.readFileSync(path.join(root, 'docs/host-arabicguy-672-actions.json'))).actions;
