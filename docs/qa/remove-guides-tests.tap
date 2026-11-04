@@ -1,0 +1,177 @@
+TAP version 13
+# Subtest: home detects only console and firmware explicitly reported by this browser
+ok 1 - home detects only console and firmware explicitly reported by this browser
+  ---
+  duration_ms: 1.2653
+  type: 'test'
+  ...
+# Subtest: home browser detection makes no network request, storage read, redirect, timer or native action
+ok 2 - home browser detection makes no network request, storage read, redirect, timer or native action
+  ---
+  duration_ms: 1.0304
+  type: 'test'
+  ...
+# Subtest: homepage retains console/tool routes with one full trainer cover and no KARO feature links
+ok 3 - homepage retains console/tool routes with one full trainer cover and no KARO feature links
+  ---
+  duration_ms: 2.3995
+  type: 'test'
+  ...
+# Subtest: blue theme uses uncropped images and removes only the outer catalogue box, with readable desktop columns
+ok 4 - blue theme uses uncropped images and removes only the outer catalogue box, with readable desktop columns
+  ---
+  duration_ms: 0.9778
+  type: 'test'
+  ...
+# Subtest: payload outlines and hidden media apply only to the payload view
+ok 5 - payload outlines and hidden media apply only to the payload view
+  ---
+  duration_ms: 0.3514
+  type: 'test'
+  ...
+# Subtest: old project roots and host choosers open the canonical root with query and fragment intact
+ok 6 - old project roots and host choosers open the canonical root with query and fragment intact
+  ---
+  duration_ms: 0.7175
+  type: 'test'
+  ...
+# Subtest: legacy deep pages retain the exact known console route and browsing state
+ok 7 - legacy deep pages retain the exact known console route and browsing state
+  ---
+  duration_ms: 0.126
+  type: 'test'
+  ...
+# Subtest: preserved downloads keep exact immutable identities and disallow arbitrary external destinations
+ok 8 - preserved downloads keep exact immutable identities and disallow arbitrary external destinations
+  ---
+  duration_ms: 0.1787
+  type: 'test'
+  ...
+# Subtest: unknown or malformed paths do not invent destinations or create redirect loops
+ok 9 - unknown or malformed paths do not invent destinations or create redirect loops
+  ---
+  duration_ms: 0.7245
+  type: 'test'
+  ...
+# Subtest: generated 404 executes the corrected local route without loading another host or native action
+ok 10 - generated 404 executes the corrected local route without loading another host or native action
+  ---
+  duration_ms: 1.8241
+  type: 'test'
+  ...
+# Subtest: public /hosts/ landing uses root ownership without changing the loopback helper source
+ok 11 - public /hosts/ landing uses root ownership without changing the loopback helper source
+  ---
+  duration_ms: 1.1436
+  type: 'test'
+  ...
+# Subtest: four Oysters 5.05 game updates and original FTP 1.08b retain exact identity and compatibility pins
+ok 12 - four Oysters 5.05 game updates and original FTP 1.08b retain exact identity and compatibility pins
+  ---
+  duration_ms: 2.0324
+  type: 'test'
+  ...
+# Subtest: misnamed 5.05 ArabicGuy JavaScript is explicitly excluded from ready files and raw BIN Load
+ok 13 - misnamed 5.05 ArabicGuy JavaScript is explicitly excluded from ready files and raw BIN Load
+  ---
+  duration_ms: 5.2481
+  type: 'test'
+  ...
+# Subtest: five original-only ready BINs have source/version/size/SHA pins and verified private F: archive bytes
+ok 14 - five original-only ready BINs have source/version/size/SHA pins and verified private F: archive bytes
+  ---
+  duration_ms: 459.6863
+  type: 'test'
+  ...
+# Subtest: all readers expose five PS4 additions and preserve one Oysters family while only FTP permits selected-file Load
+ok 15 - all readers expose five PS4 additions and preserve one Oysters family while only FTP permits selected-file Load
+  ---
+  duration_ms: 35.0506
+  type: 'test'
+  ...
+# Subtest: 577 catalogue pins, all seventeen previous sender records and both active native helpers remain unchanged
+ok 16 - 577 catalogue pins, all seventeen previous sender records and both active native helpers remain unchanged
+  ---
+  duration_ms: 43.056
+  type: 'test'
+  ...
+# Subtest: receiver 15 or its successor retains all 501 previous PS4 and 350 PS5 files and maps the five originals exactly
+ok 17 - receiver 15 or its successor retains all 501 previous PS4 and 350 PS5 files and maps the five originals exactly
+  ---
+  duration_ms: 177.3814
+  type: 'test'
+  ...
+# Subtest: all old sender ZIPs and the current sender match SHA/CRC/manifests, preserve 174 actions and exclude five original binaries
+ok 18 - all old sender ZIPs and the current sender match SHA/CRC/manifests, preserve 174 actions and exclude five original binaries
+  ---
+  duration_ms: 130129.5345
+  type: 'test'
+  ...
+# {"revision":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","base":"","origin":"https://speedy-away.github.io","bytes":6936,"budget":922746880,"files":12,"offloadedFiles":1,"nativeScriptsUnchanged":1,"cacheManifestAliases":0,"historicalLandings":0,"legacyHomePages":2,"activeKaro":"hosts/runtime/karo-fixture/","routingBytes":{"full":1319,"runtime":663},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
+# {"revision":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","base":"","origin":"https://speedy-away.github.io","bytes":5379,"budget":922746880,"files":9,"offloadedFiles":0,"nativeScriptsUnchanged":1,"cacheManifestAliases":1,"historicalLandings":0,"legacyHomePages":2,"activeKaro":"hosts/runtime/karo-fixture/","routingBytes":{"full":903,"runtime":341},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
+# {"revision":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","base":"","origin":"https://speedy-away.github.io","bytes":4922,"budget":922746880,"files":5,"offloadedFiles":1,"nativeScriptsUnchanged":0,"cacheManifestAliases":0,"historicalLandings":0,"legacyHomePages":2,"activeKaro":"hosts/runtime/karo-fixture/","routingBytes":{"full":664,"runtime":482},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
+# {"revision":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","base":"","origin":"https://speedy-away.github.io","bytes":4922,"budget":922746880,"files":5,"offloadedFiles":1,"nativeScriptsUnchanged":0,"cacheManifestAliases":0,"historicalLandings":0,"legacyHomePages":2,"activeKaro":"hosts/runtime/karo-fixture/","routingBytes":{"full":664,"runtime":482},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
+# {"revision":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","base":"","origin":"https://speedy-away.github.io","bytes":4970,"budget":922746880,"files":6,"offloadedFiles":0,"nativeScriptsUnchanged":0,"cacheManifestAliases":0,"historicalLandings":0,"legacyHomePages":2,"activeKaro":"hosts/runtime/karo-aaaaaaaaaaaa-bbbbbbbbbbbb/","routingBytes":{"full":767,"runtime":355},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
+# Subtest: project publishing resolves the home consoles, keeps original native bytes, and offloads exact preserved ZIP paths
+ok 19 - project publishing resolves the home consoles, keeps original native bytes, and offloads exact preserved ZIP paths
+  ---
+  duration_ms: 24.1254
+  type: 'test'
+  ...
+# Subtest: original cache files get exact MIME aliases in direct and guarded HTML without changing source files
+ok 20 - original cache files get exact MIME aliases in direct and guarded HTML without changing source files
+  ---
+  duration_ms: 10.0347
+  type: 'test'
+  ...
+# Subtest: sender release aliases work both with a retained local ZIP and without its ignored working copy
+ok 21 - sender release aliases work both with a retained local ZIP and without its ignored working copy
+  ---
+  duration_ms: 19.9106
+  type: 'test'
+  ...
+# Subtest: authored runtime receipts retain the canonical project prefix without changing native script text
+ok 22 - authored runtime receipts retain the canonical project prefix without changing native script text
+  ---
+  duration_ms: 0.7637
+  type: 'test'
+  ...
+# Subtest: public launcher JSON remains canonical and private download inventories never enter output
+ok 23 - public launcher JSON remains canonical and private download inventories never enter output
+  ---
+  duration_ms: 11.6783
+  type: 'test'
+  ...
+# Subtest: package host metadata and dynamic public-only URLs use a fixed trusted origin without changing native contracts
+ok 24 - package host metadata and dynamic public-only URLs use a fixed trusted origin without changing native contracts
+  ---
+  duration_ms: 4.1432
+  type: 'test'
+  ...
+# Subtest: package public route mapping rejects protocol-relative, traversal, encoded path and control overrides
+ok 25 - package public route mapping rejects protocol-relative, traversal, encoded path and control overrides
+  ---
+  duration_ms: 1.5066
+  type: 'test'
+  ...
+# Subtest: sender dynamic navigation uses only predetermined public hosts and leaves local helper pages and payload links local
+ok 26 - sender dynamic navigation uses only predetermined public hosts and leaves local helper pages and payload links local
+  ---
+  duration_ms: 10.5981
+  type: 'test'
+  ...
+# Subtest: real PS4/PS5 embedded catalogues keep all transfer and file identity pins after helper routing
+ok 27 - real PS4/PS5 embedded catalogues keep all transfer and file identity pins after helper routing
+  ---
+  duration_ms: 8.5273
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 130998.9577

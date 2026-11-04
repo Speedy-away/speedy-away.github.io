@@ -111,7 +111,7 @@ function buildHostSelector({hostOnly=false}={}) {
   const cards = ['ps4','ps5'].map(platform=>'<a class="host-console-choice" href="/hosts/'+platform+'/"><span class="host-eyebrow">PlayStation '+platform.slice(-1)+'</span><h3>'+platform.toUpperCase()+'</h3><p>Firmware, payloads, game mods and console files.</p><strong>Open '+platform.toUpperCase()+' →</strong></a>');
   savePage('hosts/index.html', 'PS4 / PS5 webhost',
     'Choose your console to launch payloads, mod menus and tools.', image('ps5'),
-    [['/hosts/', brand], ['/hosts/ps4/', 'PS4'], ['/hosts/ps5/', 'PS5'], ['/guides/console-files/', 'Guides']],
+    [['/hosts/', brand], ['/hosts/ps4/', 'PS4'], ['/hosts/ps5/', 'PS5']],
     section('consoles', 'Choose your console', address + grid(...cards).replace('class="games-grid"', 'class="games-grid host-console-grid"')),
     '#consoles', 'Choose console', true);
 
@@ -125,7 +125,7 @@ function buildHostSelector({hostOnly=false}={}) {
     if (!actions.length) throw Error('The verified action catalogue is not ready: ' + platform);
     savePage(`hosts/${platform}/index.html`, `${name} webhost`,
       'Choose firmware, load compatible payloads and manage your console files.', image(platform),
-      [['/hosts/', 'Choose another console'], [`/hosts/${platform}/`, name], ...(platform==='ps4'?[['/hosts/ps4/firmware/','Firmware selection']]:[]), [base + 'downloads.html', 'Downloads'], [`/guides/console-files/${platform}.html`, 'Guides']],
+      [['/hosts/', 'Choose another console'], [`/hosts/${platform}/`, name], ...(platform==='ps4'?[['/hosts/ps4/firmware/','Firmware selection']]:[]), [base + 'downloads.html', 'Downloads']],
       section('actions', 'Host controls', dashboard(platform, actions,{gamesLanding:true})), '#actions', 'Open host', true);
     for (const scope of ['gta5','rdr2','other-games']) {
       const relative = `hosts/${platform}/${scope}/index.html`;
