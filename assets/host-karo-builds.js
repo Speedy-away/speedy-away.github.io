@@ -11,7 +11,7 @@
   if(!trusted||!confirmed)throw Error('Confirm the selected console and original loader before Load.');
   if(!supports(entry,consoleInfo(win.navigator.userAgent)))throw Error(entry.blockedReason||'Open this entry in its matching console browser and firmware.');
   if(win.document.visibilityState&&win.document.visibilityState!=='visible')throw Error('Keep the loader page visible.');
-  if(entry.cacheRequired&&(!win.applicationCache||[1,4].indexOf(win.applicationCache.status)<0))throw Error('Save the PS4 host for offline use first. Wait for Cache ready, then reopen the PS4 host before Load.');
+  // Cache readiness does not gate online Load; the destination manifest saves in the browser.
   if(locked(win))throw Error('A previous native attempt is saved. Check and restart the console before clearing it.');
   var now=Date.now(),ticket={entry:entry.path,scope:entry.scope||entry.path.slice(0,entry.path.lastIndexOf('/')+1),platform:entry.platform,firmware:consoleInfo(win.navigator.userAgent).firmware,base:base,expires:now+600000,started:false,visited:[],nonce:String(now)+'-'+String(Math.random()).slice(2)};
   win.localStorage.setItem(LOCK,JSON.stringify({entry:entry.path,at:now}));if(!locked(win))throw Error('The browser could not save the native-attempt guard.');
