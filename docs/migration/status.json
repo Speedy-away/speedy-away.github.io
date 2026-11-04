@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T16:24:18.066Z",
+  "updatedAt": "2026-11-04T16:28:36.414Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -1699,7 +1699,7 @@
   },
   "hostUI20261104": {
     "updatedAt": "2026-11-04T16:24:18.066Z",
-    "status": "Implementation complete; final publication pending",
+    "status": "Pushed to main; GitHub Pages deployment queued",
     "changes": [
       "Remove Other divider borders on authored PS4/PS5 pages",
       "Stretch and overscan vector waves to cover ultrawide viewports without visible edges",
@@ -1739,6 +1739,18 @@
     },
     "nativeScriptsUnchanged": 959,
     "patchOptionsRetained": 533,
-    "liveVerified": false
+    "liveVerified": false,
+    "publication": {
+      "commit": "4932383aa2a2fc103357c43594ed63fef298da77",
+      "run": 41867056144,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41867056144",
+      "status": "queued",
+      "checkedAt": "2026-11-04T16:28:36.414Z"
+    },
+    "build": {
+      "directory": "tmp/host-ui-final-release-20261104",
+      "bytes": 891313799,
+      "files": 7375
+    }
   }
 }
