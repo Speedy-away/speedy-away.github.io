@@ -8,7 +8,7 @@ function deferred() {
   const promise = new Promise((yes,no)=>{resolve=yes;reject=no;});
   return {promise,resolve,reject};
 }
-function fixture({platform='ps4',firmwareChoicesOnly=false,storage=new Map(),sessionStore=new Map(),actions,pairDeferred=false,fileListView=false,catalogGrid=false,firmwareButtons,userAgent='Fixture desktop browser',initialCategory='mods',sharedCatalogue,dashboardApi,catalogMetrics}={}) {
+function fixture({platform='ps4',firmwareChoicesOnly=false,storage=new Map(),sessionStore=new Map(),actions,pairDeferred=false,fileListView=false,catalogGrid=false,withoutSearch=false,firmwareButtons,userAgent='Fixture desktop browser',initialCategory='mods',sharedCatalogue,dashboardApi,catalogMetrics}={}) {
   const created=[],opened=[],anchorClicks=[],checks=[],sends=[],pairs=[],windowEvents={};
   let gestureDepth=0,document;
   function matches(node, selector) {
@@ -65,6 +65,7 @@ function fixture({platform='ps4',firmwareChoicesOnly=false,storage=new Map(),ses
   ids['host-actions-data'].textContent=JSON.stringify({platform,actions:sharedCatalogue?undefined:actions,actionsKey:sharedCatalogue?sharedCatalogue.expectedKey||sharedCatalogue.key:undefined,fileListView,catalogGrid,initialCategory,firmwareChoicesOnly});
   const storageKey='whatwhatboy.host.'+platform;
   if(!storage.has(storageKey))storage.set(storageKey,JSON.stringify({address:'192.168.1.40',firmware:platform==='ps4'?'9.00':'4.51'}));
+  if(withoutSearch)delete ids['host-search'];
   const sender=element('details'),info=element('div');
   document={visibilityState:'visible',wasDiscarded:false,body:element('body'),activeElement:null,querySelector(selector){if(selector[0]==='#')return ids[selector.slice(1)]||null;if(selector==='.host-sender')return sender;if(selector==='.host-connection-info')return info;return null;},querySelectorAll(){return[];},createElement:element};
   for(const node of Object.values(ids))document.body.appendChild(node);

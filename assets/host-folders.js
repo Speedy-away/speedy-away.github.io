@@ -10,8 +10,7 @@
  if(firmwareControl)document.getElementById('host-file-firmware').appendChild(firmwareControl);
  if(firmwareControl)firmwareControl.hidden=selected!=='loaders';
  var fileToolbar=document.getElementById('host-file-firmware');
- ['.host-search','#host-game-filter'].forEach(function(selector){var item=document.querySelector(selector);if(item)fileToolbar.appendChild(item);});
- var search=document.querySelector('.host-search');if(search)search.hidden=selected==='connection'||selected==='sender';
+ ['#host-game-filter'].forEach(function(selector){var item=document.querySelector(selector);if(item)fileToolbar.appendChild(item);});
  var options=document.querySelector('.host-options'),setup=document.querySelector('.host-connection-details');if(options&&setup)setup.appendChild(options);
  var warning=document.querySelector('#host-transfer-warning');if(warning)fileToolbar.parentNode.insertBefore(warning,fileToolbar.nextSibling);
  var status=document.querySelector('#host-status'),initialStatus=status.textContent;status.hidden=status.getAttribute('data-host-catalog-error')!=='true';

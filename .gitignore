@@ -50,3 +50,12 @@ node_modules/
 
 # Sender ZIP retained locally and in F:; public download is a release asset.
 /downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip
+
+# Private complete local repository snapshot; never publish.
+/.preserved-local/
+
+# Sender ZIP retained locally and in F:; public download is a release asset.
+/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-093838bc847b.zip
+
+# Sender ZIP retained locally and in F:; public download is a release asset.
+/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-a9ba4920dc2b.zip

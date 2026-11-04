@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-11-04T02:05:00.952Z",
+  "purpose": "Preserve all existing bytes from the old local WWB-HOST folder so it can be removed without losing files, Git history, private evidence, or linked-worktree access.",
+  "source": {
+    "root": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
+    "head": "22b518676fe15b99331c6395c57f809257003fc7",
+    "modified": false,
+    "deleted": false
+  },
+  "snapshot": {
+    "root": "C:\\Users\\whatw\\Documents\\GitHub\\speedy-away.github.io\\.preserved-local\\WWB-HOST",
+    "independentCopy": true,
+    "totalFiles": 211089,
+    "totalBytes": 55838474903,
+    "workingFiles": 203521,
+    "workingBytes": 50190550817,
+    "gitFiles": 7568,
+    "gitBytes": 5647924086,
+    "directories": 21985,
+    "includesIgnoredTempBuilds": true,
+    "includesFullLocalGitMetadata": true,
+    "includesUnreachableGitObjects": true
+  },
+  "verification": {
+    "algorithm": "SHA-256",
+    "everyFileCompared": true,
+    "verifiedFiles": 211089,
+    "verifiedBytes": 55838474903,
+    "mismatches": 0,
+    "missingDirectories": 0,
+    "extraFiles": 0,
+    "symlinks": 0,
+    "passed": true,
+    "startedAt": "2026-11-04T02:01:42.999Z",
+    "completedAt": "2026-11-04T02:03:46.017Z",
+    "manifest": ".preserved-local/WWB-HOST-verification/manifest.jsonl",
+    "manifestSha256": "b3bd00ca298e1ccc9b3ac8d4834a0e0e0b38c8500fe5f66a2a36e133dd4c3bf1",
+    "privateSummary": ".preserved-local/WWB-HOST-verification/summary.json"
+  },
+  "gitPreservation": {
+    "sourceTrackedFiles": 16697,
+    "destinationTrackedFilesBeforeThisTask": 16739,
+    "oldTrackedPathsMissingFromActiveDestination": 0,
+    "oldTrackedPathsWithIntentionallyDifferentCurrentDestination": 116,
+    "oldRefTipsAlreadyInDestinationHistory": [
+      {
+        "oid": "e4c1ef4fc1937cb1c5b0edd2a86db05e6519bc31",
+        "ref": "refs/heads/codex/ps5-original-hosts",
+        "present": true,
+        "ancestor": true
+      },
+      {
+        "oid": "072f4333ea10296d0e9d8bb999ce9edbb3719eab",
+        "ref": "refs/heads/codex/remaining-host-performance",
+        "present": true,
+        "ancestor": true
+      },
+      {
+        "oid": "22b518676fe15b99331c6395c57f809257003fc7",
+        "ref": "refs/heads/main",
+        "present": true,
+        "ancestor": true
+      },
+      {
+        "oid": "22b518676fe15b99331c6395c57f809257003fc7",
+        "ref": "refs/remotes/origin/HEAD",
+        "present": true,
+        "ancestor": true
+      },
+      {
+        "oid": "22b518676fe15b99331c6395c57f809257003fc7",
+        "ref": "refs/remotes/origin/main",
+        "present": true,
+        "ancestor": true
+      },
+      {
+        "oid": "072f4333ea10296d0e9d8bb999ce9edbb3719eab",
+        "ref": "refs/tags/sender-2.1.0-4642d2affd19",
+        "present": true,
+        "ancestor": true
+      },
+      {
+        "oid": "2b42a834ae209db1779c2c26aee8585de765ce21",
+        "ref": "refs/tags/sender-2.1.0-8d8bda70ee88",
+        "present": true,
+        "ancestor": true
+      },
+      {
+        "oid": "4639d34aedb8aa2c50221d1bababab4ac4433d90",
+        "ref": "refs/tags/sender-2.1.0-9aab99b3337b",
+        "present": true,
+        "ancestor": true
+      }
+    ],
+    "sourceStashes": 0,
+    "unreachableObjects": {
+      "commits": 17,
+      "trees": 116,
+      "blobs": 82,
+      "total": 215
+    },
+    "bundleNeeded": false,
+    "bundleReason": "The exact complete .git directory is independently preserved, including refs, reflogs, worktree metadata, object packs, and unreachable objects.",
+    "lfs": false,
+    "submodules": false,
+    "objectAlternates": false,
+    "externalCoreWorktree": false,
+    "externalHooksPath": false,
+    "fsmonitor": false,
+    "independentSnapshotHead": "22b518676fe15b99331c6395c57f809257003fc7",
+    "independentSnapshotTopLevel": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST",
+    "independentSnapshotStatusClean": true
+  },
+  "previousLocalOnlyFiles": {
+    "missingSamePathFiles": 186798,
+    "missingSamePathBytes": 40968688573,
+    "missingOutsideTmp": 13,
+    "missingOutsideTmpBytes": 1194941,
+    "allIncludedInIndependentSnapshot": true
+  },
+  "linkedWorktrees": {
+    "passed": true,
+    "originalPointerEvidence": ".preserved-local/WWB-HOST-verification/linked-worktree-pointers/",
+    "details": [
+      {
+        "name": "ps5-original-hosts",
+        "worktree": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps5-original-hosts",
+        "originalPointer": "gitdir: C:/Users/whatw/Documents/GitHub/WWB-HOST/.git/worktrees/ps5-original-hosts",
+        "newPointer": "gitdir: C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST/.git/worktrees/ps5-original-hosts",
+        "originalSha256": "ca18821c8aebecc80b4db0063136f2be883507802c9a082170d1133add681c4c",
+        "newSha256": "5d574ecd7bd187fcbe39190901a651e4c6947071654cc255702818643181de59",
+        "head": "e4c1ef4fc1937cb1c5b0edd2a86db05e6519bc31",
+        "statusUnchanged": true,
+        "clean": true,
+        "commonDir": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST/.git",
+        "backpointerCorrect": true
+      },
+      {
+        "name": "remaining-host-performance",
+        "worktree": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/remaining-host-performance",
+        "originalPointer": "gitdir: C:/Users/whatw/Documents/GitHub/WWB-HOST/.git/worktrees/remaining-host-performance",
+        "newPointer": "gitdir: C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST/.git/worktrees/remaining-host-performance",
+        "originalSha256": "4ce8f564c74032a83c8fae1a8ab374e8cea0499c1ca6e6e1ff1f5eecceb99749",
+        "newSha256": "57473d25c625d8f415753d4723293dddbfe51d7a6eec86e162b12181a250bd90",
+        "head": "072f4333ea10296d0e9d8bb999ce9edbb3719eab",
+        "statusUnchanged": true,
+        "clean": true,
+        "commonDir": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST/.git",
+        "backpointerCorrect": true
+      }
+    ]
+  },
+  "publication": {
+    "privateSnapshotPushed": false,
+    "ignoredByGit": "/.preserved-local/",
+    "excludedByPagesPublisher": "scripts/host-project-pages.cjs walk() excludes dot-prefixed paths before recursion",
+    "activeDestinationFilesOverwritten": false,
+    "networkUsedForPreservation": false,
+    "quarantinedAbsentSourcesRestoredOrRefetched": false
+  },
+  "dependencies": {
+    "oldLocalFolderRequired": false,
+    "historicalMigrationScripts": [
+      "scripts/migrate-host-repository.cjs",
+      "scripts/plan-host-repository-migration.cjs"
+    ],
+    "historicalMigrationNote": "These retained one-time migration tools still name the historical target folder. They are not part of the active site, publisher, or test runner and should not be rerun as current deployment commands.",
+    "separateHistoricalTestSource": "Some tests use WHATSITE_PROVENANCE_ROOT or sibling whatsite for historical evidence; that separate repository was not deleted.",
+    "oldRemoteRepositoryMustRemain": true,
+    "oldRemoteReason": "Pinned historical raw.githubusercontent.com and GitHub release URLs still use Speedy-away/WWB-HOST. Removing only the old local folder is supported."
+  }
+}

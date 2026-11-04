@@ -13,7 +13,7 @@ function nativeURL(action,root){
  const relative=action.downloadURL.replace(/^\//,'');if(!/^hosts\/runtime\/karo-[a-f0-9]{12}-[a-f0-9]{12}\/web\/_decoded\/[a-z0-9_-]+\/goldhen_[a-z0-9._-]+\.bin$/i.test(relative))throw Error('A ready source-pinned BIN URL is required: '+action.id);
  const options={cwd:root,stdio:['ignore','pipe','pipe'],maxBuffer:4*1024*1024},revision=cp.execFileSync('git',['rev-parse','HEAD'],options).toString().trim();if(!/^[a-f0-9]{40}$/.test(revision))throw Error('Invalid preserved revision.');
  const bytes=cp.execFileSync('git',['show',revision+':'+relative],options);if(bytes.length!==action.bytes||hash(bytes)!==action.sha256)throw Error('Committed ready-file identity mismatch: '+action.id);
- return 'https://raw.githubusercontent.com/Speedy-away/WWB-HOST/'+revision+'/'+relative;
+ return 'https://raw.githubusercontent.com/Speedy-away/speedy-away.github.io/'+revision+'/'+relative;
 }
 function mergeCatalogActions(previous,actions,{root=path.resolve(__dirname,'..')}={}){
  const items=previous.slice(),mappings=[],updated=[];let added=0,reused=0;
