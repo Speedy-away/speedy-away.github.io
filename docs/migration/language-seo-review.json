@@ -3,107 +3,107 @@
   "languages": [
     {
       "code": "es",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "pt",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "fr",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "de",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "ru",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "tr",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "pl",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "it",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "zh",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "ja",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "ko",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "th",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "vi",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "id",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "hi",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "sr",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "nl",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "ka",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "ar",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     },
     {
       "code": "he",
-      "entries": 1345,
+      "entries": 1352,
       "priorEntriesRetained": 1198
     }
   ],
   "defaultLanguage": "en",
-  "currentUITranslationKeys": 80,
+  "currentUITranslationKeys": 81,
   "indexablePages": 399,
   "localizedOfflinePages": 40,
   "sourceBodiesUnchanged": 62,
@@ -113,7 +113,7 @@
   "robots": "robots.txt",
   "testsPassed": 47,
   "buildVerifier": "scripts/verify-host-locales.cjs",
-  "buildDirectory": "tmp/multilingual-ready-20261104",
+  "buildDirectory": "tmp/multilingual-final2-20261104",
   "searchGuidance": "https://developers.google.com/search/docs/specialty/international/localized-versions",
   "buildVerifiersPassed": 5,
   "visualReview": {
@@ -141,26 +141,29 @@
     }
   ],
   "publication": {
-    "id": 41853058242,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41853058242",
-    "commit": "50f56fb0ecc7d8d0c2ea1a88bc19bd4fea90e913",
+    "id": 41854529433,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41854529433",
+    "commit": "1b13946a819515785061bce2a1fb1cee3a0b5b90",
     "conclusion": "success",
-    "verifiedAt": "2026-11-04T15:02:22.558Z"
+    "verifiedAt": "2026-11-04T15:11:29.702Z"
   },
   "liveReport": "docs/qa/language-seo-live.json",
   "screenshots": "docs/screenshots/languages-20261104",
   "liveOfflinePacks": [
     {
       "platform": "ps4",
-      "version": "560f7c2bf70d53906b79269f",
+      "version": "78ebac989cbffd7ba3f69d60",
       "files": 2384,
-      "bytes": 60629546
+      "bytes": 60631610
     },
     {
       "platform": "ps5",
-      "version": "5eb06fe661c75c29eee8c455",
+      "version": "95a39c1cc920d16d9c2db179",
       "files": 1101,
-      "bytes": 31264998
+      "bytes": 31267062
     }
-  ]
+  ],
+  "languageAssetVersion": "20261104languages2",
+  "searchPlaceholder": "Verified French live placeholder and dictionary entries in all20 translations",
+  "browserLanguageRestored": "en"
 }
