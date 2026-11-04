@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T02:14:54.228Z",
+  "updatedAt": "2026-11-04T02:47:12.931Z",
   "status": "Published and live verified",
   "source": "22b518676fe15b99331c6395c57f809257003fc7",
   "destination": "ea3fd69fbc864f262692685403736a9334df95b3",
@@ -61,15 +61,15 @@
       }
     ],
     "physicalConsole": false,
-    "latestLiveScreenshot": "docs/screenshots/load-motion-20261104/live-load.jpg"
+    "latestLiveScreenshot": "docs/screenshots/patch-simple-20261104/live-dialog.jpg"
   },
   "tests": {
-    "files": 71,
-    "tests": 492,
-    "pass": 492,
+    "files": 72,
+    "tests": 504,
+    "pass": 504,
     "fail": 0,
     "skipped": 0,
-    "evidence": "docs/qa/load-motion-tests.tap"
+    "evidence": "docs/qa/patch-simple-tests.tap"
   },
   "nativePreservation": {
     "changedRuntimeFiles": 0,
@@ -87,28 +87,28 @@
     "flow": "Exact title-ID download/receiver handoff; native manager on port 23900 after compatible ELF loader on 9021. No XML execution or installation claims."
   },
   "sender": {
-    "latest": "2.1.0+a9ba4920dc2b",
-    "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
-    "bytes": 107657801,
-    "versions": 41,
-    "allPriorVersionsRetained": true,
+    "version": "2.1.0+b1d198ce2219",
+    "bytes": 107657313,
+    "sha256": "15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
+    "versionsPreserved": 42,
     "delivery": {
-      "verifiedAt": "2026-11-04T02:09:39.488Z",
-      "version": "2.1.0+a9ba4920dc2b",
-      "name": "console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-      "bytes": 107657801,
-      "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
-      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+a9ba4920dc2b\\console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-a9ba4920dc2b",
-      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-a9ba4920dc2b/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-      "assetId": 707887304,
-      "serverDigest": "sha256:84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+      "verifiedAt": "2026-11-04T02:31:53.633Z",
+      "version": "2.1.0+b1d198ce2219",
+      "name": "console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "bytes": 107657313,
+      "sha256": "15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+b1d198ce2219\\console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-b1d198ce2219",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-b1d198ce2219/console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "assetId": 707943617,
+      "serverDigest": "sha256:15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
       "zipUnchanged": true,
       "archiveVerified": true,
       "downloadedCodeExecuted": false
     },
-    "publicDownloadVerified": true
+    "publicPatchPagesOutsideBundle": true,
+    "keyboardFixDoesNotChangeZIP": true
   },
   "mainSite": {
     "site": "https://whatwhatboy.com/",
@@ -122,28 +122,28 @@
     "No physical console, native payload execution, measured console FPS or hardware transfer verification."
   ],
   "build": {
-    "revision": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
+    "revision": "c28ad9d58298f639e4c497a1c78728796ca3a499",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864310037,
+    "bytes": 864310141,
     "budget": 922746880,
     "files": 6199,
-    "offloadedFiles": 290,
+    "offloadedFiles": 291,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1039106,
-      "runtime": 254332
+      "full": 1039341,
+      "runtime": 254567
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
   },
   "archive": {
-    "items": 5009,
-    "fileRecords": 8628,
-    "presentFileRecords": 8628,
+    "items": 5010,
+    "fileRecords": 8629,
+    "presentFileRecords": 8629,
     "missingFileRecords": 0
   },
   "ps4OnPS5": {
@@ -303,11 +303,11 @@
   "sourceWorkingTreeClean": true,
   "completedAt": "2026-11-04T01:53:13.980Z",
   "deployment": {
-    "id": 41758985535,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41758985535",
+    "id": 41762426421,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41762426421",
     "conclusion": "success",
-    "commit": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
-    "verifiedAt": "2026-11-04T02:14:54.228Z"
+    "commit": "c28ad9d58298f639e4c497a1c78728796ca3a499",
+    "verifiedAt": "2026-11-04T02:47:12.931Z"
   },
   "live": {
     "core": "docs/qa/root-live-verification.json",
@@ -318,5 +318,6 @@
     "immutableSenderAssetHTTP": 200
   },
   "migrationMethod": "Bounded resumable Git upload; the proposed temporary contents-write workflow was declined and never installed.",
-  "followupReview": "docs/migration/load-motion-review.json"
+  "followupReview": "docs/migration/load-motion-review.json",
+  "latestFollowup": "docs/migration/patch-simple-review.json"
 }

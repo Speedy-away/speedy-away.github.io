@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T02:32:21.013Z",
+  "updatedAt": "2026-11-04T02:47:12.931Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Simplified patch UI verified; publication pending",
+  "status": "Published and live verified; automatic XML installation is not implemented",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,20 +14,20 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
+    "revision": "c28ad9d58298f639e4c497a1c78728796ca3a499",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864310037,
+    "bytes": 864310141,
     "budget": 922746880,
     "files": 6199,
-    "offloadedFiles": 290,
+    "offloadedFiles": 291,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1039106,
-      "runtime": 254332
+      "full": 1039341,
+      "runtime": 254567
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -1188,11 +1188,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41758985535,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41758985535",
+    "id": 41762426421,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41762426421",
     "conclusion": "success",
-    "commit": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
-    "verifiedAt": "2026-11-04T02:14:54.228Z"
+    "commit": "c28ad9d58298f639e4c497a1c78728796ca3a499",
+    "verifiedAt": "2026-11-04T02:47:12.931Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1243,11 +1243,11 @@
   },
   "patchSimpleUpdate": {
     "review": "docs/migration/patch-simple-review.json",
-    "status": "Verified and ready for publication; direct browser XML installation is unavailable",
+    "status": "Published and live verified; automatic XML installation is not implemented",
     "regression": {
       "files": 72,
-      "tests": 503,
-      "pass": 503,
+      "tests": 504,
+      "pass": 504,
       "fail": 0,
       "skipped": 0,
       "evidence": "docs/qa/patch-simple-tests.tap"
@@ -1261,6 +1261,24 @@
     "automaticXMLInstallation": false,
     "sameConsoleLoadInstalledPatches": true,
     "manualConnectionRemoved": true,
-    "senderVersion": "2.1.0+b1d198ce2219"
+    "senderVersion": "2.1.0+b1d198ce2219",
+    "deployment": {
+      "id": 41762426421,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41762426421",
+      "conclusion": "success",
+      "commit": "c28ad9d58298f639e4c497a1c78728796ca3a499",
+      "verifiedAt": "2026-11-04T02:47:12.931Z"
+    },
+    "live": {
+      "report": "docs/qa/root-live-verification.json",
+      "patchXMLHashes": 280,
+      "noConnectionForm": true,
+      "noRepeatedConsolePhotos": true,
+      "noKARONavigation": true,
+      "presentationHashes": 4,
+      "engineDownloads": "docs/qa/patch-engine-downloads.json",
+      "senderAssetHTTP": 200
+    },
+    "limitation": "The pinned native engine exposes game/settings pages but no browser upload, URL-import or package-install endpoint. PS4 elfldr has no supported public-browser HTTP launch route."
   }
 }

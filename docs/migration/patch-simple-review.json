@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T02:32:21.013Z",
-  "status": "Verified and ready for publication; direct browser XML installation is unavailable",
+  "updatedAt": "2026-11-04T02:47:12.931Z",
+  "status": "Published and live verified; automatic XML installation is not implemented",
   "requests": [
     "Simplify PS4 and PS5 Game patches to Load or Download",
     "Remove console IP/connection/receiver/setup panels from game patches",
@@ -65,9 +65,10 @@
     "screenshots": [
       "docs/screenshots/patch-simple-20261104/desktop-dialog.jpg",
       "docs/screenshots/patch-simple-20261104/mobile-dialog.jpg",
-      "docs/screenshots/patch-simple-20261104/ps5-header.jpg"
+      "docs/screenshots/patch-simple-20261104/ps5-header.jpg",
+      "docs/screenshots/patch-simple-20261104/live-dialog.jpg"
     ],
-    "nativeGateTests": 9,
+    "nativeGateTests": 10,
     "publicPreviewBuild": {
       "files": 6199,
       "bytes": 864215053,
@@ -75,6 +76,21 @@
       "nativeScriptsUnchanged": 898,
       "checkedLocalLinks": 4021,
       "issues": 0
+    },
+    "realBrowserKeyboard": {
+      "closedDetailsTabWraps": true,
+      "expandedDetailsTabWraps": true,
+      "closedDetailsNonemptyRectanglesHandled": true
+    },
+    "live": {
+      "report": "docs/qa/root-live-verification.json",
+      "patchXMLHashes": 280,
+      "noConnectionForm": true,
+      "noRepeatedConsolePhotos": true,
+      "noKARONavigation": true,
+      "presentationHashes": 4,
+      "engineDownloads": "docs/qa/patch-engine-downloads.json",
+      "senderAssetHTTP": 200
     }
   },
   "sender": {
@@ -97,13 +113,15 @@
       "zipUnchanged": true,
       "archiveVerified": true,
       "downloadedCodeExecuted": false
-    }
+    },
+    "publicPatchPagesOutsideBundle": true,
+    "keyboardFixDoesNotChangeZIP": true
   },
   "nativeRuntimeBytesChanged": 0,
   "regression": {
     "files": 72,
-    "tests": 503,
-    "pass": 503,
+    "tests": 504,
+    "pass": 504,
     "fail": 0,
     "skipped": 0,
     "evidence": "docs/qa/patch-simple-tests.tap"
@@ -113,5 +131,32 @@
     "fileRecords": 8629,
     "presentFileRecords": 8629,
     "missingFileRecords": 0
+  },
+  "completedAt": "2026-11-04T02:47:12.931Z",
+  "deployment": {
+    "id": 41762426421,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41762426421",
+    "conclusion": "success",
+    "commit": "c28ad9d58298f639e4c497a1c78728796ca3a499",
+    "verifiedAt": "2026-11-04T02:47:12.931Z"
+  },
+  "build": {
+    "revision": "c28ad9d58298f639e4c497a1c78728796ca3a499",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 864310141,
+    "budget": 922746880,
+    "files": 6199,
+    "offloadedFiles": 291,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1039341,
+      "runtime": 254567
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
   }
 }

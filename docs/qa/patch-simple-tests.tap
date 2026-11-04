@@ -2,2167 +2,2173 @@ TAP version 13
 # Subtest: public route resolves only the exact local isolated landing, with the project prefix preserved
 ok 1 - public route resolves only the exact local isolated landing, with the project prefix preserved
   ---
-  duration_ms: 1.127
+  duration_ms: 1.5658
   type: 'test'
   ...
 # Subtest: rendered public page contains no runtime/source downloads, iframe, executable native module or duplicate picker
 ok 2 - rendered public page contains no runtime/source downloads, iframe, executable native module or duplicate picker
   ---
-  duration_ms: 0.4492
+  duration_ms: 0.5061
   type: 'test'
   ...
 # Subtest: browser glue navigates only to the inert picker and cannot arm, import, run or change autostart preferences
 ok 3 - browser glue navigates only to the inert picker and cannot arm, import, run or change autostart preferences
   ---
-  duration_ms: 4.4101
+  duration_ms: 5.2582
   type: 'test'
   ...
 # Subtest: bad route metadata stays on the public page and disables its fallback without network or native imports
 ok 4 - bad route metadata stays on the public page and disables its fallback without network or native imports
   ---
-  duration_ms: 1.313
+  duration_ms: 0.3279
   type: 'test'
   ...
 # Subtest: autostart starts off, persists opt-in, counts five seconds and selects exact HEN target
 ok 5 - autostart starts off, persists opt-in, counts five seconds and selects exact HEN target
   ---
-  duration_ms: 2.9755
+  duration_ms: 6.1834
   type: 'test'
   ...
 # Subtest: cancel and uncheck clear both countdown and appcache-queued starts
 ok 6 - cancel and uncheck clear both countdown and appcache-queued starts
   ---
-  duration_ms: 2.8858
+  duration_ms: 5.0745
   type: 'test'
   ...
 # Subtest: cache update, storage refusal and unsupported browsers never navigate or arm
 ok 7 - cache update, storage refusal and unsupported browsers never navigate or arm
   ---
-  duration_ms: 3.4273
+  duration_ms: 9.4638
   type: 'test'
   ...
 # Subtest: payload change restarts countdown; pagehide, BFCache and restored entry cannot silently rearm
 ok 8 - payload change restarts countdown; pagehide, BFCache and restored entry cannot silently rearm
   ---
-  duration_ms: 2.3885
+  duration_ms: 2.7609
   type: 'test'
   ...
 # Subtest: run guard consumes one-use entry ticket before mocked import; refuses reload, stale, missing and cross-origin entry
 ok 9 - run guard consumes one-use entry ticket before mocked import; refuses reload, stale, missing and cross-origin entry
   ---
-  duration_ms: 8.6911
+  duration_ms: 10.0235
   type: 'test'
   ...
 # Subtest: every pinned original and deployed file matches recorded bytes; kernel code and payloads are untouched
 ok 10 - every pinned original and deployed file matches recorded bytes; kernel code and payloads are untouched
   ---
-  duration_ms: 31.4729
+  duration_ms: 24.9127
   type: 'test'
   ...
 # Subtest: runtime isolation, dependency closure, honest firmware pins and ad separation
 ok 11 - runtime isolation, dependency closure, honest firmware pins and ad separation
   ---
-  duration_ms: 52.2471
+  duration_ms: 56.4009
   type: 'test'
   ...
 # Subtest: runtime ZIPs use their own folder; sender ZIP default stays unchanged
 ok 12 - runtime ZIPs use their own folder; sender ZIP default stays unchanged
   ---
-  duration_ms: 12.6559
+  duration_ms: 19.7561
   type: 'test'
   ...
 # Subtest: firmware families preserve exact supported sets behind local full-page buttons
 ok 13 - firmware families preserve exact supported sets behind local full-page buttons
   ---
-  duration_ms: 2.3147
+  duration_ms: 3.1243
   type: 'test'
   ...
 # Subtest: landing gains local top navigation and responsive layout without modifying the execution document
 ok 14 - landing gains local top navigation and responsive layout without modifying the execution document
   ---
-  duration_ms: 0.6071
+  duration_ms: 0.6637
   type: 'test'
   ...
 # Subtest: all twenty generated dictionaries and isolated landing translation subset contain new controls
 ok 15 - all twenty generated dictionaries and isolated landing translation subset contain new controls
   ---
-  duration_ms: 332.0696
+  duration_ms: 459.7593
   type: 'test'
   ...
 # Subtest: ready title-specific XMLs preserve exact bytes from the pinned author release
 ok 16 - ready title-specific XMLs preserve exact bytes from the pinned author release
   ---
-  duration_ms: 248.9299
+  duration_ms: 304.4292
   type: 'test'
   ...
 # Subtest: Bloodborne and RDR2 retain exact update pins and source performance caveats
 ok 17 - Bloodborne and RDR2 retain exact update pins and source performance caveats
   ---
-  duration_ms: 0.8968
+  duration_ms: 1.838
   type: 'test'
   ...
 # Subtest: native PS5 and PS5-targeted backward-compatibility files keep their scope and paths
 ok 18 - native PS5 and PS5-targeted backward-compatibility files keep their scope and paths
   ---
-  duration_ms: 0.3016
+  duration_ms: 0.3454
   type: 'test'
   ...
 # Subtest: each catalogue requires explicit title selection and provides platform-specific storage routing
 ok 19 - each catalogue requires explicit title selection and provides platform-specific storage routing
   ---
-  duration_ms: 0.6019
+  duration_ms: 0.6857
   type: 'test'
   ...
 # Subtest: all staged patch-engine assets match captured size and SHA-256
 ok 20 - all staged patch-engine assets match captured size and SHA-256
   ---
-  duration_ms: 62.586
+  duration_ms: 76.9492
   type: 'test'
   ...
 # Subtest: fifteen additional title families contain genuine performance options and retain exact regional XML identities
 ok 21 - fifteen additional title families contain genuine performance options and retain exact regional XML identities
   ---
-  duration_ms: 0.924
+  duration_ms: 1.0448
   type: 'test'
   ...
 # Subtest: new pacing, pattern-scan and source warning details remain distinguishable from blanket 60 FPS support
 ok 22 - new pacing, pattern-scan and source warning details remain distinguishable from blanket 60 FPS support
   ---
-  duration_ms: 0.3409
+  duration_ms: 0.3713
   type: 'test'
   ...
 # Subtest: new game artwork uses documented publisher assets, reuses matching existing covers and matches recorded hashes
 ok 23 - new game artwork uses documented publisher assets, reuses matching existing covers and matches recorded hashes
   ---
-  duration_ms: 3.2777
+  duration_ms: 3.8684
   type: 'test'
   ...
 # Subtest: append mode retains previous record identity and refuses duplicate IDs before changing existing arrays
 ok 24 - append mode retains previous record identity and refuses duplicate IDs before changing existing arrays
   ---
-  duration_ms: 0.5064
+  duration_ms: 0.5358
   type: 'test'
   ...
 # Subtest: next ten performance families keep all twenty exact CUSA files, update pins and backward-compatibility scope
 ok 25 - next ten performance families keep all twenty exact CUSA files, update pins and backward-compatibility scope
   ---
-  duration_ms: 0.6965
+  duration_ms: 1.2011
   type: 'test'
   ...
 # Subtest: DNS targets are resolved once and every result must be a private IPv4
 ok 26 - DNS targets are resolved once and every result must be a private IPv4
   ---
-  duration_ms: 5.6796
+  duration_ms: 5.7688
   type: 'test'
   ...
 # Subtest: curated files must be ready builds with an exact hash, extension, magic and approved transport
 ok 27 - curated files must be ready builds with an exact hash, extension, magic and approved transport
   ---
-  duration_ms: 35.8515
+  duration_ms: 23.569
   type: 'test'
   ...
 # Subtest: static dashboard whitelist excludes arbitrary files, backups and traversal
 ok 28 - static dashboard whitelist excludes arbitrary files, backups and traversal
   ---
-  duration_ms: 2.5129
+  duration_ms: 1.0202
   type: 'test'
   ...
 # Subtest: plugins and cheat data can be downloaded but never become raw payload actions
 ok 29 - plugins and cheat data can be downloaded but never become raw payload actions
   ---
-  duration_ms: 13.628
+  duration_ms: 18.932
   type: 'test'
   ...
 # Subtest: bridge requires pairing and its own origin before any action or readable status
 ok 30 - bridge requires pairing and its own origin before any action or readable status
   ---
-  duration_ms: 63.3652
+  duration_ms: 90.4738
   type: 'test'
   ...
 # Subtest: read-only service inspection uses only fixed GET metadata routes without Origin spoofing
 ok 31 - read-only service inspection uses only fixed GET metadata routes without Origin spoofing
   ---
-  duration_ms: 4.8983
+  duration_ms: 5.3476
   type: 'test'
   ...
 # Subtest: service metadata failures and unknown values never become firmware or game detection
 ok 32 - service metadata failures and unknown values never become firmware or game detection
   ---
-  duration_ms: 3.0047
+  duration_ms: 2.6297
   type: 'test'
   ...
 # Subtest: paired inspect route pins the LAN address and accepts no URL, port, path or payload request
 ok 33 - paired inspect route pins the LAN address and accepts no URL, port, path or payload request
   ---
-  duration_ms: 20.1977
+  duration_ms: 22.1456
   type: 'test'
   ...
 # Subtest: sender uses only a curated action with matching platform, firmware and game update
 ok 34 - sender uses only a curated action with matching platform, firmware and game update
   ---
-  duration_ms: 22.5626
+  duration_ms: 38.039
   type: 'test'
   ...
 # Subtest: sender enforces firmware ranges and upper limits before a mocked transfer
 ok 35 - sender enforces firmware ranges and upper limits before a mocked transfer
   ---
-  duration_ms: 12.2348
+  duration_ms: 41.2628
   type: 'test'
   ...
 # Subtest: file checksum failure prevents any network payload transfer
 ok 36 - file checksum failure prevents any network payload transfer
   ---
-  duration_ms: 9.6627
+  duration_ms: 16.8957
   type: 'test'
   ...
 # Subtest: paired run reports uncertain transport outcomes without claiming failure or retrying
 ok 37 - paired run reports uncertain transport outcomes without claiming failure or retrying
   ---
-  duration_ms: 8.0082
+  duration_ms: 14.1516
   type: 'test'
   ...
 # Subtest: simultaneous transfers do not remove another transfer console lock
 ok 38 - simultaneous transfers do not remove another transfer console lock
   ---
-  duration_ms: 13.5271
+  duration_ms: 49.9778
   type: 'test'
   ...
 # Subtest: bridge serves only its dashboard and curated payloads, without disclosing its token
 ok 39 - bridge serves only its dashboard and curated payloads, without disclosing its token
   ---
-  duration_ms: 27.8975
+  duration_ms: 32.1001
   type: 'test'
   ...
 # Subtest: raw ELF sender uses raw bytes on fixed TCP9021 and reports only transport completion
 ok 40 - raw ELF sender uses raw bytes on fixed TCP9021 and reports only transport completion
   ---
-  duration_ms: 0.6374
+  duration_ms: 0.5552
   type: 'test'
   ...
 # Subtest: raw PS4 BIN transport requires the fixed port, platform, flat format and bounded verified file
 ok 41 - raw PS4 BIN transport requires the fixed port, platform, flat format and bounded verified file
   ---
-  duration_ms: 18.6732
+  duration_ms: 51.3366
   type: 'test'
   ...
 # Subtest: raw PS4 BIN sender makes one fixed TCP9020 connection with exact bytes and EOF, without a readiness probe
 ok 42 - raw PS4 BIN sender makes one fixed TCP9020 connection with exact bytes and EOF, without a readiness probe
   ---
-  duration_ms: 0.5518
+  duration_ms: 0.8956
   type: 'test'
   ...
 # Subtest: raw PS4 BIN failures preserve uncertainty after bytes are offered and never reconnect
 ok 43 - raw PS4 BIN failures preserve uncertainty after bytes are offered and never reconnect
   ---
-  duration_ms: 6.6626
+  duration_ms: 11.2306
   type: 'test'
   ...
 # Subtest: paired raw BIN action reuses firmware, pairing, address and hash checks without HTTP or ELF fallback
 ok 44 - paired raw BIN action reuses firmware, pairing, address and hash checks without HTTP or ELF fallback
   ---
-  duration_ms: 18.6581
+  duration_ms: 73.2377
   type: 'test'
   ...
 # Subtest: GoldHEN bridge honors readiness and HTTP200 rather than faking a TCP result
 ok 45 - GoldHEN bridge honors readiness and HTTP200 rather than faking a TCP result
   ---
-  duration_ms: 0.7491
+  duration_ms: 0.9205
   type: 'test'
   ...
 # Subtest: selected-file capability requires an explicit bounded PS4 BIN contract and never treats an original URL as a local payload
 ok 46 - selected-file capability requires an explicit bounded PS4 BIN contract and never treats an original URL as a local payload
   ---
-  duration_ms: 11.4039
+  duration_ms: 12.7107
   type: 'test'
   ...
 # Subtest: selected-file requests transfer exact memory-only verified bytes through only their curated transport
 ok 47 - selected-file requests transfer exact memory-only verified bytes through only their curated transport
   ---
-  duration_ms: 13.4411
+  duration_ms: 13.7964
   type: 'test'
   ...
 # Subtest: selected-file header and compatibility failures are rejected before resolving or sending
 ok 48 - selected-file header and compatibility failures are rejected before resolving or sending
   ---
-  duration_ms: 37.6738
+  duration_ms: 104.3392
   type: 'test'
   ...
 # Subtest: selected-file size, hash and ELF rejection happen before any console address resolution
 ok 49 - selected-file size, hash and ELF rejection happen before any console address resolution
   ---
-  duration_ms: 18.7074
+  duration_ms: 19.0654
   type: 'test'
   ...
 # Subtest: selected-file stream bound handles chunked overflow, truncation, abort and deadline without keeping bytes
 ok 50 - selected-file stream bound handles chunked overflow, truncation, abort and deadline without keeping bytes
   ---
-  duration_ms: 6.0769
+  duration_ms: 12.0146
   type: 'test'
   ...
 # Subtest: selected-file transfer uncertainty and busy locks preserve the existing no-retry contract
 ok 51 - selected-file transfer uncertainty and busy locks preserve the existing no-retry contract
   ---
-  duration_ms: 17.0109
+  duration_ms: 17.9166
   type: 'test'
   ...
 # Subtest: file links scope the installed receiver to one exact ID even when menu names match
 ok 52 - file links scope the installed receiver to one exact ID even when menu names match
   ---
-  duration_ms: 5.9802
+  duration_ms: 7.8313
   type: 'test'
   ...
 # Subtest: unknown, empty, malformed and wrong-platform file IDs show unavailable without unrelated Save actions
 ok 53 - unknown, empty, malformed and wrong-platform file IDs show unavailable without unrelated Save actions
   ---
-  duration_ms: 1.4323
+  duration_ms: 1.3638
   type: 'test'
   ...
 # Subtest: folder preparation uses the exact client origin, independently from receiver and PS5 websrv ports
 ok 54 - folder preparation uses the exact client origin, independently from receiver and PS5 websrv ports
   ---
-  duration_ms: 0.2541
+  duration_ms: 0.8965
   type: 'test'
   ...
 # Subtest: mkdir creates only a missing directory, verifies its postcondition and preserves an existing directory
 ok 55 - mkdir creates only a missing directory, verifies its postcondition and preserves an existing directory
   ---
-  duration_ms: 0.8558
+  duration_ms: 1.2329
   type: 'test'
   ...
 # Subtest: mkdir refuses a colliding file, missing storage root, unverified creation and unsupported origin
 ok 56 - mkdir refuses a colliding file, missing storage root, unverified creation and unsupported origin
   ---
-  duration_ms: 0.4203
+  duration_ms: 0.5064
   type: 'test'
   ...
 # Subtest: external creation requires a real PS5 mount or explicit PS4 native mount confirmation
 ok 57 - external creation requires a real PS5 mount or explicit PS4 native mount confirmation
   ---
-  duration_ms: 0.2462
+  duration_ms: 0.5087
   type: 'test'
   ...
 # Subtest: browser SHA-256 matches Node crypto for padding boundaries, binary input and a one-million-byte vector
 ok 58 - browser SHA-256 matches Node crypto for padding boundaries, binary input and a one-million-byte vector
   ---
-  duration_ms: 39.8567
+  duration_ms: 74.0128
   type: 'test'
   ...
 # Subtest: reviewed extraction verifies saved bytes, rejects reused output and sends only the documented extraction request
 ok 59 - reviewed extraction verifies saved bytes, rejects reused output and sends only the documented extraction request
   ---
-  duration_ms: 2
+  duration_ms: 2.2615
   type: 'test'
   ...
 # Subtest: unreviewed, oversized, changed and missing archives never cause extraction or mkdir
 ok 60 - unreviewed, oversized, changed and missing archives never cause extraction or mkdir
   ---
-  duration_ms: 3.8985
+  duration_ms: 0.4646
   type: 'test'
   ...
 # Subtest: extraction reports native failures and empty output without deleting originals or retrying
 ok 61 - extraction reports native failures and empty output without deleting originals or retrying
   ---
-  duration_ms: 2.7687
+  duration_ms: 0.8898
   type: 'test'
   ...
 # Subtest: preparation page makes no API requests until its explicit action and returns the verified folder
 ok 62 - preparation page makes no API requests until its explicit action and returns the verified folder
   ---
-  duration_ms: 1.1221
+  duration_ms: 0.7049
   type: 'test'
   ...
 # Subtest: ready/archive/patch filters retain preparation instructions and explicit archive deep links
 ok 63 - ready/archive/patch filters retain preparation instructions and explicit archive deep links
   ---
-  duration_ms: 0.3071
+  duration_ms: 0.6061
   type: 'test'
   ...
 # Subtest: a fresh queue read catches an existing destination before any download is posted
 ok 64 - a fresh queue read catches an existing destination before any download is posted
   ---
-  duration_ms: 1.3027
+  duration_ms: 3.2909
   type: 'test'
   ...
 # Subtest: an uncertain submission stays locked and a later receiver check recovers its state without a duplicate
 ok 65 - an uncertain submission stays locked and a later receiver check recovers its state without a duplicate
   ---
-  duration_ms: 0.6891
+  duration_ms: 1.4002
   type: 'test'
   ...
 # Subtest: PS5 refresh invalidates an absent external destination without changing it or sending a download
 ok 66 - PS5 refresh invalidates an absent external destination without changing it or sending a download
   ---
-  duration_ms: 0.44
+  duration_ms: 0.6491
   type: 'test'
   ...
 # Subtest: only private or loopback HTTP receivers on port 6701 can write
 ok 67 - only private or loopback HTTP receivers on port 6701 can write
   ---
-  duration_ms: 3.2784
+  duration_ms: 1.7602
   type: 'test'
   ...
 # Subtest: requests use the exact platform-specific FILEHOST enum and complete destination filename
 ok 68 - requests use the exact platform-specific FILEHOST enum and complete destination filename
   ---
-  duration_ms: 1.2983
+  duration_ms: 1.3235
   type: 'test'
   ...
 # Subtest: destination validation excludes system paths, traversal and encoded or ambiguous path segments
 ok 69 - destination validation excludes system paths, traversal and encoded or ambiguous path segments
   ---
-  duration_ms: 0.3854
+  duration_ms: 0.3931
   type: 'test'
   ...
 # Subtest: only usable HTTP(S) sources without credentials enter requests
 ok 70 - only usable HTTP(S) sources without credentials enter requests
   ---
-  duration_ms: 0.1677
+  duration_ms: 0.1853
   type: 'test'
   ...
 # Subtest: an empty 200 acknowledges submission, never completion; explicit rejection remains failure
 ok 71 - an empty 200 acknowledges submission, never completion; explicit rejection remains failure
   ---
-  duration_ms: 0.3304
+  duration_ms: 0.35
   type: 'test'
   ...
 # Subtest: 100% transferred does not become complete until receiver state 4; failures stay failed
 ok 72 - 100% transferred does not become complete until receiver state 4; failures stay failed
   ---
-  duration_ms: 0.1843
+  duration_ms: 0.1955
   type: 'test'
   ...
 # Subtest: public preview client sends no receiver requests
 ok 73 - public preview client sends no receiver requests
   ---
-  duration_ms: 0.3592
+  duration_ms: 0.363
   type: 'test'
   ...
 # Subtest: PS4 checks real filesystem paths for destination and partial file before a caller queues
 ok 74 - PS4 checks real filesystem paths for destination and partial file before a caller queues
   ---
-  duration_ms: 0.4478
+  duration_ms: 0.5107
   type: 'test'
   ...
 # Subtest: PS5 checks websrv filesystem listing rather than HEAD against its assets mount
 ok 75 - PS5 checks websrv filesystem listing rather than HEAD against its assets mount
   ---
-  duration_ms: 0.5252
+  duration_ms: 0.6695
   type: 'test'
   ...
 # Subtest: PS5 discovery uses websrv mount evidence, not numbered folder guesses or USB-port labels
 ok 76 - PS5 discovery uses websrv mount evidence, not numbered folder guesses or USB-port labels
   ---
-  duration_ms: 0.4208
+  duration_ms: 0.4922
   type: 'test'
   ...
 # Subtest: filesystem browser links preserve the console host and encode the selected validated path
 ok 77 - filesystem browser links preserve the console host and encode the selected validated path
   ---
-  duration_ms: 0.0921
+  duration_ms: 0.1207
   type: 'test'
   ...
 # Subtest: polling is a read and unknown/invalid responses never report completion
 ok 78 - polling is a read and unknown/invalid responses never report completion
   ---
-  duration_ms: 0.122
+  duration_ms: 0.1474
   type: 'test'
   ...
 # Subtest: companion is standalone and safely embeds untrusted metadata
 ok 79 - companion is standalone and safely embeds untrusted metadata
   ---
-  duration_ms: 4.4228
+  duration_ms: 4.9637
   type: 'test'
   ...
 # Subtest: loading or preselecting a file only reads status; Save click is required before any POST
 ok 80 - loading or preselecting a file only reads status; Save click is required before any POST
   ---
-  duration_ms: 1.4548
+  duration_ms: 1.8152
   type: 'test'
   ...
 # Subtest: Detect mounted storage populates only current mounts without changing the folder or queuing files
 ok 81 - Detect mounted storage populates only current mounts without changing the folder or queuing files
   ---
-  duration_ms: 0.9996
+  duration_ms: 0.7496
   type: 'test'
   ...
 # Subtest: targeted plan includes only the pinned 5.05 and6.72 original cache closures, not all-repository source
 ok 82 - targeted plan includes only the pinned 5.05 and6.72 original cache closures, not all-repository source
   ---
-  duration_ms: 3.1911
+  duration_ms: 3.5271
   type: 'test'
   ...
 # Subtest: all48 preserved originals match exact source Git blobs andSHA256 and every native deployed file is unchanged
 ok 83 - all48 preserved originals match exact source Git blobs andSHA256 and every native deployed file is unchanged
   ---
-  duration_ms: 108.6868
+  duration_ms: 121.4529
   type: 'test'
   ...
 # Subtest: static HTML and AppCache dependency closure is present and no external host is used as the native entry
 ok 84 - static HTML and AppCache dependency closure is present and no external host is used as the native entry
   ---
-  duration_ms: 3.5605
+  duration_ms: 5.0016
   type: 'test'
   ...
 # Subtest: each original HTML is encoded unchanged inside an authored guard wrapper and never parsed before that guard
 ok 85 - each original HTML is encoded unchanged inside an authored guard wrapper and never parsed before that guard
   ---
-  duration_ms: 7.9262
+  duration_ms: 7.9107
   type: 'test'
   ...
 # Subtest: existing exact-console trusted ticket contract authorizes these new local entries and blocks desktop/mismatched/untrusted loads
 ok 86 - existing exact-console trusted ticket contract authorizes these new local entries and blocks desktop/mismatched/untrusted loads
   ---
-  duration_ms: 1.4698
+  duration_ms: 1.5944
   type: 'test'
   ...
 # Subtest: ready ZIP hash, every native byte and complete public entry resources are retained together
 ok 87 - ready ZIP hash, every native byte and complete public entry resources are retained together
   ---
-  duration_ms: 46.4003
+  duration_ms: 48.614
   type: 'test'
   ...
 # Subtest: exact WWB-HOST head and native banner scripts retain supplied attributes
 ok 88 - exact WWB-HOST head and native banner scripts retain supplied attributes
   ---
-  duration_ms: 1.1275
+  duration_ms: 1.2682
   type: 'test'
   ...
 # Subtest: replacing legacy placements is idempotent and does not duplicate banners
 ok 89 - replacing legacy placements is idempotent and does not duplicate banners
   ---
-  duration_ms: 0.4775
+  duration_ms: 0.3451
   type: 'test'
   ...
 # Subtest: all runtime and download documents stay byte identical
 ok 90 - all runtime and download documents stay byte identical
   ---
-  duration_ms: 0.213
+  duration_ms: 0.2211
   type: 'test'
   ...
 # Subtest: redirect pages stay byte identical
 ok 91 - redirect pages stay byte identical
   ---
-  duration_ms: 0.098
+  duration_ms: 0.1128
   type: 'test'
   ...
 # Subtest: actual 6.72 console is required; desktop, PS5, other firmware, unconfirmed and scripted starts fetch nothing
 ok 92 - actual 6.72 console is required; desktop, PS5, other firmware, unconfirmed and scripted starts fetch nothing
   ---
-  duration_ms: 2.3459
+  duration_ms: 2.6176
   type: 'test'
   ...
 # Subtest: a verified preparation calls each original stage once and requires a separate explicit menu Load
 ok 93 - a verified preparation calls each original stage once and requires a separate explicit menu Load
   ---
-  duration_ms: 3.8455
+  duration_ms: 2.2795
   type: 'test'
   ...
 # Subtest: failed verification or hiding the page prevents all native stages; it never retries automatically
 ok 94 - failed verification or hiding the page prevents all native stages; it never retries automatically
   ---
-  duration_ms: 0.6883
+  duration_ms: 0.8821
   type: 'test'
   ...
 # Subtest: kernel failure and ambiguous menu dispatch remain locked without retry or execution acknowledgement
 ok 95 - kernel failure and ambiguous menu dispatch remain locked without retry or execution acknowledgement
   ---
-  duration_ms: 0.4033
+  duration_ms: 0.4707
   type: 'test'
   ...
 # Subtest: bounded source fetch verifies exact URLs, byte counts and SHA-256 before resolving
 ok 96 - bounded source fetch verifies exact URLs, byte counts and SHA-256 before resolving
   ---
-  duration_ms: 0.9049
+  duration_ms: 1.0767
   type: 'test'
   ...
 # Subtest: all three original binaries and native source contracts match pinned data without evaluating them
 ok 97 - all three original binaries and native source contracts match pinned data without evaluating them
   ---
-  duration_ms: 1819.5102
+  duration_ms: 637.0365
   type: 'test'
   ...
 # Subtest: catalogue, browser actions and activated receivers preserve earlier pins and keep native loading separate from senders
 ok 98 - catalogue, browser actions and activated receivers preserve earlier pins and keep native loading separate from senders
   ---
-  duration_ms: 23.1884
+  duration_ms: 49.3163
   type: 'test'
   ...
 # Subtest: mounted controller preflights verified Blob bytes, then passes the same memory URL to the unchanged loader only on Load
 ok 99 - mounted controller preflights verified Blob bytes, then passes the same memory URL to the unchanged loader only on Load
   ---
-  duration_ms: 1.6308
+  duration_ms: 2.8931
   type: 'test'
   ...
 # Subtest: mounted Blob failure stops before all native source stages; restoring a ready page blocks menu loading
 ok 100 - mounted Blob failure stops before all native source stages; restoring a ready page blocks menu loading
   ---
-  duration_ms: 2.9676
+  duration_ms: 6.2388
   type: 'test'
   ...
 # Subtest: build 100 keeps its Download identity and uses its own verified bytes through Prepare and one Load
 ok 101 - build 100 keeps its Download identity and uses its own verified bytes through Prepare and one Load
   ---
-  duration_ms: 0.4051
+  duration_ms: 0.6966
   type: 'test'
   ...
 # Subtest: build 127 keeps its Download identity and uses its own verified bytes through Prepare and one Load
 ok 102 - build 127 keeps its Download identity and uses its own verified bytes through Prepare and one Load
   ---
-  duration_ms: 0.2399
+  duration_ms: 0.8131
   type: 'test'
   ...
 # Subtest: build 132 keeps its Download identity and uses its own verified bytes through Prepare and one Load
 ok 103 - build 132 keeps its Download identity and uses its own verified bytes through Prepare and one Load
   ---
-  duration_ms: 0.2652
+  duration_ms: 0.6189
   type: 'test'
   ...
 # Subtest: each catalogue popup uses its exact original Download or receiver ID and opens the matching first-party Load controller
 ok 104 - each catalogue popup uses its exact original Download or receiver ID and opens the matching first-party Load controller
   ---
-  duration_ms: 34.8461
+  duration_ms: 82.3486
   type: 'test'
   ...
 # Subtest: the generated GTA V page keeps one top navigation bar around its version popup
 ok 105 - the generated GTA V page keeps one top navigation bar around its version popup
   ---
-  duration_ms: 1.1664
+  duration_ms: 1.8566
   type: 'test'
   ...
 # Subtest: game groups preserve exact actions and game identity while known GTA/RDR aliases share a tile
 ok 106 - game groups preserve exact actions and game identity while known GTA/RDR aliases share a tile
   ---
-  duration_ms: 13.1738
+  duration_ms: 10.3988
   type: 'test'
   ...
 # Subtest: game update choices preserve exact source values, sort numeric components and never manufacture compatibility
 ok 107 - game update choices preserve exact source values, sort numeric components and never manufacture compatibility
   ---
-  duration_ms: 3.786
+  duration_ms: 1.7465
   type: 'test'
   ...
 # Subtest: game and update filters are exact and never substitute latest, match a prefix, or cross-list unrelated versions
 ok 108 - game and update filters are exact and never substitute latest, match a prefix, or cross-list unrelated versions
   ---
-  duration_ms: 0.216
+  duration_ms: 0.2089
   type: 'test'
   ...
 # Subtest: game tiles prefer true existing game art and menu tiles retain their actual previews
 ok 109 - game tiles prefer true existing game art and menu tiles retain their actual previews
   ---
-  duration_ms: 0.4717
+  duration_ms: 0.3969
   type: 'test'
   ...
 # Subtest: all local catalogue image paths are bounded and exclude external URLs, traversal and HTML
 ok 110 - all local catalogue image paths are bounded and exclude external URLs, traversal and HTML
   ---
-  duration_ms: 0.2528
+  duration_ms: 0.1956
   type: 'test'
   ...
 # Subtest: tile markup permits only the defined data actions and escapes every metadata value
 ok 111 - tile markup permits only the defined data actions and escapes every metadata value
   ---
-  duration_ms: 0.4901
+  duration_ms: 0.534
   type: 'test'
   ...
 # Subtest: existing host action grouping changes no payload pins and every chosen local game image exists
 ok 112 - existing host action grouping changes no payload pins and every chosen local game image exists
   ---
-  duration_ms: 61.5055
+  duration_ms: 71.7306
   type: 'test'
   ...
 # Subtest: generic category icons are distinct local SVG drawings without external resources or scripts
 ok 113 - generic category icons are distinct local SVG drawings without external resources or scripts
   ---
-  duration_ms: 1.0852
+  duration_ms: 1.2454
   type: 'test'
   ...
 # Subtest: presentation module is inert in the browser and scoped CSS overrides legacy list display at requested breakpoints
 ok 114 - presentation module is inert in the browser and scoped CSS overrides legacy list display at requested breakpoints
   ---
-  duration_ms: 1.5376
+  duration_ms: 1.6123
   type: 'test'
   ...
 # Subtest: primary families contain only existing local entries and exact populated firmware lists
 ok 115 - primary families contain only existing local entries and exact populated firmware lists
   ---
-  duration_ms: 11.4855
+  duration_ms: 8.576
   type: 'test'
   ...
 # Subtest: firmware directory uses family buttons and no dropdown or unsupported empty choice
 ok 116 - firmware directory uses family buttons and no dropdown or unsupported empty choice
   ---
-  duration_ms: 6.5725
+  duration_ms: 2.8751
   type: 'test'
   ...
 # Subtest: family browsing cannot change exact compatibility checks for native payload transfers
 ok 117 - family browsing cannot change exact compatibility checks for native payload transfers
   ---
-  duration_ms: 1.7618
+  duration_ms: 0.3954
   type: 'test'
   ...
 # Subtest: runtime picker keeps every HEN/control identifier while visible branding is firmware based
 ok 118 - runtime picker keeps every HEN/control identifier while visible branding is firmware based
   ---
-  duration_ms: 1.1025
+  duration_ms: 1.0079
   type: 'test'
   ...
 # Subtest: execution documents receive no design, popup or ad transform
 ok 119 - execution documents receive no design, popup or ad transform
   ---
-  duration_ms: 0.501
+  duration_ms: 0.3729
   type: 'test'
   ...
 # Subtest: firmware grid is available only in Choose firmware rather than payload/mod/tool views and trainer shortcut is explicit
 ok 120 - firmware grid is available only in Choose firmware rather than payload/mod/tool views and trainer shortcut is explicit
   ---
-  duration_ms: 1.1698
+  duration_ms: 1.3696
   type: 'test'
   ...
 # Subtest: desktop payload catalogue omits image elements while keeping selectable outlined controls
 ok 121 - desktop payload catalogue omits image elements while keeping selectable outlined controls
   ---
-  duration_ms: 16.6372
+  duration_ms: 7.7562
   type: 'test'
   ...
 # Subtest: primary families use same-origin Load routes and exact native receipt metadata
 ok 122 - primary families use same-origin Load routes and exact native receipt metadata
   ---
-  duration_ms: 48.4382
+  duration_ms: 49.0766
   type: 'test'
   ...
 # Subtest: console address validation permits only private IPv4 and local hostname syntax
 ok 123 - console address validation permits only private IPv4 and local hostname syntax
   ---
-  duration_ms: 3.7151
+  duration_ms: 3.2354
   type: 'test'
   ...
 # Subtest: service URLs preserve verified ports and direct manager capabilities require exact origin
 ok 124 - service URLs preserve verified ports and direct manager capabilities require exact origin
   ---
-  duration_ms: 0.3448
+  duration_ms: 0.6541
   type: 'test'
   ...
 # Subtest: foreign-origin manager inspection and launch make no requests or fake success
 ok 125 - foreign-origin manager inspection and launch make no requests or fake success
   ---
-  duration_ms: 0.4506
+  duration_ms: 0.4803
   type: 'test'
   ...
 # Subtest: manager inspection reports only the service-reported IP and leaves unknown IP unset
 ok 126 - manager inspection reports only the service-reported IP and leaves unknown IP unset
   ---
-  duration_ms: 1.0123
+  duration_ms: 1.1126
   type: 'test'
   ...
 # Subtest: manager launch encodes an approved installed path and distinguishes transfer from execution
 ok 127 - manager launch encodes an approved installed path and distinguishes transfer from execution
   ---
-  duration_ms: 1.4707
+  duration_ms: 27.8242
   type: 'test'
   ...
 # Subtest: manager does not accept arbitrary paths, encoded traversal, BINs or self launch
 ok 128 - manager does not accept arbitrary paths, encoded traversal, BINs or self launch
   ---
-  duration_ms: 0.1753
+  duration_ms: 4.1101
   type: 'test'
   ...
 # Subtest: bridge requests require localhost origin and pairing, then send only an action ID and selected versions
 ok 129 - bridge requests require localhost origin and pairing, then send only an action ID and selected versions
   ---
-  duration_ms: 0.7836
+  duration_ms: 9.6685
   type: 'test'
   ...
 # Subtest: console inspection is an explicit paired read-only bridge request with no firmware guess
 ok 130 - console inspection is an explicit paired read-only bridge request with no firmware guess
   ---
-  duration_ms: 0.3544
+  duration_ms: 2.906
   type: 'test'
   ...
 # Subtest: GoldHEN sends verified BIN bytes only when HTTP readiness is explicit
 ok 131 - GoldHEN sends verified BIN bytes only when HTTP readiness is explicit
   ---
-  duration_ms: 24.3215
+  duration_ms: 22.2709
   type: 'test'
   ...
 # Subtest: GoldHEN busy, mixed-content and bad checksum never POST payload bytes, with or without WebCrypto
 ok 132 - GoldHEN busy, mixed-content and bad checksum never POST payload bytes, with or without WebCrypto
   ---
-  duration_ms: 1.6489
+  duration_ms: 1.6784
   type: 'test'
   ...
 # Subtest: the SHA-256 console fallback matches standard hashes, padding boundaries and changed bytes
 ok 133 - the SHA-256 console fallback matches standard hashes, padding boundaries and changed bytes
   ---
-  duration_ms: 26.4721
+  duration_ms: 25.4869
   type: 'test'
   ...
 # Subtest: GoldHEN sends on an HTTP console browser using the SHA fallback when WebCrypto is absent
 ok 134 - GoldHEN sends on an HTTP console browser using the SHA fallback when WebCrypto is absent
   ---
-  duration_ms: 0.3972
+  duration_ms: 0.4443
   type: 'test'
   ...
 # Subtest: PS5 native HTTP ELF requests use the documented URI endpoint and report request acceptance only
 ok 135 - PS5 native HTTP ELF requests use the documented URI endpoint and report request acceptance only
   ---
-  duration_ms: 0.5661
+  duration_ms: 0.782
   type: 'test'
   ...
 # Subtest: PS5 HTTPS native ELF requests return an explicit navigation fallback without making a request
 ok 136 - PS5 HTTPS native ELF requests return an explicit navigation fallback without making a request
   ---
-  duration_ms: 0.3793
+  duration_ms: 0.3385
   type: 'test'
   ...
 # Subtest: PS5 URL launching uses the actual LAN/public asset origin and refuses localhost previews
 ok 137 - PS5 URL launching uses the actual LAN/public asset origin and refuses localhost previews
   ---
-  duration_ms: 0.4433
+  duration_ms: 0.3383
   type: 'test'
   ...
 # Subtest: execution-request network errors and timeouts are uncertain, never successful or automatically retried
 ok 138 - execution-request network errors and timeouts are uncertain, never successful or automatically retried
   ---
-  duration_ms: 17.7711
+  duration_ms: 5.5143
   type: 'test'
   ...
 # Subtest: selected BIN client posts only exact checked bytes and fixed metadata to the paired same-origin sender
 ok 139 - selected BIN client posts only exact checked bytes and fixed metadata to the paired same-origin sender
   ---
-  duration_ms: 1.1761
+  duration_ms: 1.3861
   type: 'test'
   ...
 # Subtest: selected BIN identity uses checked bytes rather than browser MIME metadata
 ok 140 - selected BIN identity uses checked bytes rather than browser MIME metadata
   ---
-  duration_ms: 2.6827
+  duration_ms: 5.5965
   type: 'test'
   ...
 # Subtest: selected BIN client rejects wrong action, pairing, origin, firmware and file declarations without reading or posting
 ok 141 - selected BIN client rejects wrong action, pairing, origin, firmware and file declarations without reading or posting
   ---
-  duration_ms: 0.4678
+  duration_ms: 0.886
   type: 'test'
   ...
 # Subtest: selected BIN read, length, ELF and checksum failures finish before any execution request
 ok 142 - selected BIN read, length, ELF and checksum failures finish before any execution request
   ---
-  duration_ms: 12.0094
+  duration_ms: 14.8336
   type: 'test'
   ...
 # Subtest: selected BIN acknowledgements distinguish known rejection from uncertain dispatch and never retry
 ok 143 - selected BIN acknowledgements distinguish known rejection from uncertain dispatch and never retry
   ---
-  duration_ms: 30.9693
+  duration_ms: 31.1201
   type: 'test'
   ...
 # Subtest: selected BIN revalidates captured UI state after reading and hashing, before any dispatch
 ok 144 - selected BIN revalidates captured UI state after reading and hashing, before any dispatch
   ---
-  duration_ms: 1.3276
+  duration_ms: 88.9188
   type: 'test'
   ...
 # Subtest: light presentation applies only to PS4/PS5 browsers and excludes native runtime documents
 ok 145 - light presentation applies only to PS4/PS5 browsers and excludes native runtime documents
   ---
-  duration_ms: 1.0906
+  duration_ms: 2.1096
   type: 'test'
   ...
 # Subtest: saved and browser-selected languages stay supported, while only English translation traversal is skipped
 ok 146 - saved and browser-selected languages stay supported, while only English translation traversal is skipped
   ---
-  duration_ms: 0.3057
+  duration_ms: 0.3255
   type: 'test'
   ...
 # Subtest: early console script only marks document policy: no request, timer, observer, canvas or payload side effects
 ok 147 - early console script only marks document policy: no request, timer, observer, canvas or payload side effects
   ---
-  duration_ms: 2.5274
+  duration_ms: 10.1835
   type: 'test'
   ...
 # Subtest: existing early performance flag and new policy both stop background before any canvas or body access
 ok 148 - existing early performance flag and new policy both stop background before any canvas or body access
   ---
-  duration_ms: 2.1923
+  duration_ms: 3.0827
   type: 'test'
   ...
 # Subtest: global console startup keeps functional modules but omits search, typing, counters and smooth scrolling
 ok 149 - global console startup keeps functional modules but omits search, typing, counters and smooth scrolling
   ---
-  duration_ms: 1.3136
+  duration_ms: 2.9877
   type: 'test'
   ...
 # Subtest: background injection and fade scans stop on console while the Back-to-top control still works
 ok 150 - background injection and fade scans stop on console while the Back-to-top control still works
   ---
-  duration_ms: 1.2045
+  duration_ms: 3.2966
   type: 'test'
   ...
 # Subtest: console English creates no translation observer; changing languages starts and stops the normal observer
 ok 151 - console English creates no translation observer; changing languages starts and stops the normal observer
   ---
-  duration_ms: 2.9001
+  duration_ms: 2.8995
   type: 'test'
   ...
 # Subtest: ESP module is loaded only on a secure desktop with Web Serial and never connects a device at startup
 ok 152 - ESP module is loaded only on a secure desktop with Web Serial and never connects a device at startup
   ---
-  duration_ms: 6.4572
+  duration_ms: 5.4674
   type: 'test'
   ...
 # Subtest: console catalogue renders 12 text tiles, preserves all 100 entries through Show more, and sends nothing
 ok 153 - console catalogue renders 12 text tiles, preserves all 100 entries through Show more, and sends nothing
   ---
-  duration_ms: 15.7404
+  duration_ms: 17.7669
   type: 'test'
   ...
 # Subtest: desktop catalogue keeps full artwork and is not paginated
 ok 154 - desktop catalogue keeps full artwork and is not paginated
   ---
-  duration_ms: 2.3785
+  duration_ms: 3.6859
   type: 'test'
   ...
 # Subtest: console search coalesces keystrokes and resets the visible batch without changing exact file identities
 ok 155 - console search coalesces keystrokes and resets the visible batch without changing exact file identities
   ---
-  duration_ms: 168.9909
+  duration_ms: 176.1995
   type: 'test'
   ...
 # Subtest: static console artwork makes zero image-source assignments while desktop images hydrate
 ok 156 - static console artwork makes zero image-source assignments while desktop images hydrate
   ---
-  duration_ms: 2.016
+  duration_ms: 2.8954
   type: 'test'
   ...
 # Subtest: real service-check handlers discard old target replies, including an A to B to A edit
 ok 157 - real service-check handlers discard old target replies, including an A to B to A edit
   ---
-  duration_ms: 11.8024
+  duration_ms: 44.655
   type: 'test'
   ...
 # Subtest: a newer real service check wins over an older reply or rejection for the same address
 ok 158 - a newer real service check wins over an older reply or rejection for the same address
   ---
-  duration_ms: 2.2431
+  duration_ms: 1.8138
   type: 'test'
   ...
 # Subtest: Load with copy opens the exact same-console file during the click and never retargets on completion
 ok 159 - Load with copy opens the exact same-console file during the click and never retargets on completion
   ---
-  duration_ms: 166.9356
+  duration_ms: 22.4899
   type: 'test'
   ...
 # Subtest: uncertain results and mayHaveExecuted errors persist a target lock across reload until explicit clear
 ok 160 - uncertain results and mayHaveExecuted errors persist a target lock across reload until explicit clear
   ---
-  duration_ms: 5.0638
+  duration_ms: 10.9027
   type: 'test'
   ...
 # Subtest: an uncertain A or a busy reply for A cannot lock a different B target
 ok 161 - an uncertain A or a busy reply for A cannot lock a different B target
   ---
-  duration_ms: 1.8969
+  duration_ms: 3.4609
   type: 'test'
   ...
 # Subtest: the real chooser retains two stable popup actions and changes the exact download with its version button
 ok 162 - the real chooser retains two stable popup actions and changes the exact download with its version button
   ---
-  duration_ms: 1.3668
+  duration_ms: 1.76
   type: 'test'
   ...
 # Subtest: stale pairing replies cannot restore a bridge after its token changes away and back
 ok 163 - stale pairing replies cannot restore a bridge after its token changes away and back
   ---
-  duration_ms: 1.7205
+  duration_ms: 2.0545
   type: 'test'
   ...
 # Subtest: a paired older sender without uncertain-outcome support is blocked before copy or any transfer
 ok 164 - a paired older sender without uncertain-outcome support is blocked before copy or any transfer
   ---
-  duration_ms: 2.2552
+  duration_ms: 4.1778
   type: 'test'
   ...
 # Subtest: firmware matching preserves exact compatibility and never fills whitelist gaps
 ok 165 - firmware matching preserves exact compatibility and never fills whitelist gaps
   ---
-  duration_ms: 1.4665
+  duration_ms: 3.0104
   type: 'test'
   ...
 # Subtest: console firmware detection uses the matching console browser identifier
 ok 166 - console firmware detection uses the matching console browser identifier
   ---
-  duration_ms: 0.9761
+  duration_ms: 1.182
   type: 'test'
   ...
 # Subtest: newer GTA plugin builds are the default and old BIN menus remain explicitly accessible
 ok 167 - newer GTA plugin builds are the default and old BIN menus remain explicitly accessible
   ---
-  duration_ms: 0.4098
+  duration_ms: 0.559
   type: 'test'
   ...
 # Subtest: Run requires a selected firmware even when upstream provides no complete matrix
 ok 168 - Run requires a selected firmware even when upstream provides no complete matrix
   ---
-  duration_ms: 0.224
+  duration_ms: 0.126
   type: 'test'
   ...
 # Subtest: game filters retain the exact game update and separate PS4 from PS5 data
 ok 169 - game filters retain the exact game update and separate PS4 from PS5 data
   ---
-  duration_ms: 8.0523
+  duration_ms: 10.0648
   type: 'test'
   ...
 # Subtest: unsafe launch URLs and blank values do not become actionable links
 ok 170 - unsafe launch URLs and blank values do not become actionable links
   ---
-  duration_ms: 0.2579
+  duration_ms: 0.6238
   type: 'test'
   ...
 # Subtest: console saving uses each platform native receiver and rejects arbitrary destinations
 ok 171 - console saving uses each platform native receiver and rejects arbitrary destinations
   ---
-  duration_ms: 2.3965
+  duration_ms: 2.7373
   type: 'test'
   ...
 # Subtest: a desktop cannot mistake its own loopback service for a console
 ok 172 - a desktop cannot mistake its own loopback service for a console
   ---
-  duration_ms: 0.4589
+  duration_ms: 0.7175
   type: 'test'
   ...
 # Subtest: native manager screens use documented PS5 hash routes, never a fabricated web API
 ok 173 - native manager screens use documented PS5 hash routes, never a fabricated web API
   ---
-  duration_ms: 0.4083
+  duration_ms: 0.6268
   type: 'test'
   ...
 # Subtest: dedicated manager pages keep console scopes and native autoload controls separate
 ok 174 - dedicated manager pages keep console scopes and native autoload controls separate
   ---
-  duration_ms: 2.0099
+  duration_ms: 2.0782
   type: 'test'
   ...
 # Subtest: generated dashboards have selectors, separate catalogues and immutable ready-file links
 ok 175 - generated dashboards have selectors, separate catalogues and immutable ready-file links
   ---
-  duration_ms: 18.3681
+  duration_ms: 24.0778
   type: 'test'
   ...
 # Subtest: selected-file requirements expose the exact file identity without translating technical values
 ok 176 - selected-file requirements expose the exact file identity without translating technical values
   ---
-  duration_ms: 8.818
+  duration_ms: 12.1643
   type: 'test'
   ...
 # Subtest: missing or malformed source identity does not fabricate file facts or expose a local path
 ok 177 - missing or malformed source identity does not fabricate file facts or expose a local path
   ---
-  duration_ms: 2.3985
+  duration_ms: 1.6425
   type: 'test'
   ...
 # Subtest: both main hubs use gallery navigation with a top taskbar and preserve every current action
 ok 178 - both main hubs use gallery navigation with a top taskbar and preserve every current action
   ---
-  duration_ms: 56.6196
+  duration_ms: 92.4526
   type: 'test'
   ...
 # Subtest: file rows remain visible across firmware changes and preserve exact filename and download ID
 ok 179 - file rows remain visible across firmware changes and preserve exact filename and download ID
   ---
-  duration_ms: 4.4199
+  duration_ms: 12.9599
   type: 'test'
   ...
 # Subtest: firmware check opens a requirement popup, and mismatched Load cannot transmit
 ok 180 - firmware check opens a requirement popup, and mismatched Load cannot transmit
   ---
-  duration_ms: 2.9539
+  duration_ms: 22.9682
   type: 'test'
   ...
 # Subtest: file-view count describes visible files rather than grouped menu families
 ok 181 - file-view count describes visible files rather than grouped menu families
   ---
-  duration_ms: 22.6153
+  duration_ms: 7.5623
   type: 'test'
   ...
 # Subtest: information popup contains requirements even without numeric firmware pins and restores keyboard focus
 ok 182 - information popup contains requirements even without numeric firmware pins and restores keyboard focus
   ---
-  duration_ms: 1.7742
+  duration_ms: 2.1496
   type: 'test'
   ...
 # Subtest: disabled file Load gives a reason while its information action remains usable
 ok 183 - disabled file Load gives a reason while its information action remains usable
   ---
-  duration_ms: 0.4685
+  duration_ms: 0.6425
   type: 'test'
   ...
 # Subtest: a mismatched file remains browseable but cannot dispatch through its Load handler
 ok 184 - a mismatched file remains browseable but cannot dispatch through its Load handler
   ---
-  duration_ms: 0.5696
+  duration_ms: 0.7573
   type: 'test'
   ...
 # Subtest: PS4 console firmware is selected automatically over a stale saved choice without sending anything
 ok 185 - PS4 console firmware is selected automatically over a stale saved choice without sending anything
   ---
-  duration_ms: 5.8717
+  duration_ms: 8.2435
   type: 'test'
   ...
 # Subtest: PS5 browser firmware is normalized and selected automatically on its matching host
 ok 186 - PS5 browser firmware is normalized and selected automatically on its matching host
   ---
-  duration_ms: 1.5289
+  duration_ms: 4.1621
   type: 'test'
   ...
 # Subtest: a PS5 browser on the PS4 host does not substitute PS5 firmware or dispatch a payload
 ok 187 - a PS5 browser on the PS4 host does not substitute PS5 firmware or dispatch a payload
   ---
-  duration_ms: 0.8664
+  duration_ms: 1.1525
   type: 'test'
   ...
 # Subtest: PC firmware buttons update a single pressed state, preserve the choice and restore it on the next visit
 ok 188 - PC firmware buttons update a single pressed state, preserve the choice and restore it on the next visit
   ---
-  duration_ms: 1.0075
+  duration_ms: 1.625
   type: 'test'
   ...
 # Subtest: an unlisted detected firmware gets one selectable button without inventing payload compatibility
 ok 189 - an unlisted detected firmware gets one selectable button without inventing payload compatibility
   ---
-  duration_ms: 0.4928
+  duration_ms: 1.0921
   type: 'test'
   ...
 # Subtest: Detect console restores actual browser firmware after a manual button selection
 ok 190 - Detect console restores actual browser firmware after a manual button selection
   ---
-  duration_ms: 0.5249
+  duration_ms: 0.6567
   type: 'test'
   ...
 # Subtest: changing firmware with buttons keeps files browseable but refuses a mismatched Load
 ok 191 - changing firmware with buttons keeps files browseable but refuses a mismatched Load
   ---
-  duration_ms: 1.5026
+  duration_ms: 2.185
   type: 'test'
   ...
 # Subtest: game and exact update buttons precede menu families; only that update reaches the popup
 ok 192 - game and exact update buttons precede menu families; only that update reaches the popup
   ---
-  duration_ms: 21.536
+  duration_ms: 20.2647
   type: 'test'
   ...
 # Subtest: breadcrumb buttons move between games and updates without dispatch or dropdowns
 ok 193 - breadcrumb buttons move between games and updates without dispatch or dropdowns
   ---
-  duration_ms: 1.6522
+  duration_ms: 1.3674
   type: 'test'
   ...
 # Subtest: changing firmware keeps exact mod downloads browseable while mismatch still refuses Load
 ok 194 - changing firmware keeps exact mod downloads browseable while mismatch still refuses Load
   ---
-  duration_ms: 35.01
+  duration_ms: 29.5676
   type: 'test'
   ...
 # Subtest: payload and tool tiles open exact file details; opening never sends or downloads
 ok 195 - payload and tool tiles open exact file details; opening never sends or downloads
   ---
-  duration_ms: 1.7987
+  duration_ms: 2.1945
   type: 'test'
   ...
 # Subtest: filtering an open menu rebuilds its version buttons and retains the selected exact file
 ok 196 - filtering an open menu rebuilds its version buttons and retains the selected exact file
   ---
-  duration_ms: 2.5052
+  duration_ms: 2.2273
   type: 'test'
   ...
 # Subtest: PS4 and PS5 keep architecture and backward-compatibility labels distinct
 ok 197 - PS4 and PS5 keep architecture and backward-compatibility labels distinct
   ---
-  duration_ms: 9.8723
+  duration_ms: 10.2392
   type: 'test'
   ...
 # Subtest: RDR2 retains exact game updates and separate 120Hz source note
 ok 198 - RDR2 retains exact game updates and separate 120Hz source note
   ---
-  duration_ms: 1.4087
+  duration_ms: 1.3421
   type: 'test'
   ...
 # Subtest: every existing patch resource matches its source-pinned size and SHA256
 ok 199 - every existing patch resource matches its source-pinned size and SHA256
   ---
-  duration_ms: 36.0772
+  duration_ms: 77.7816
   type: 'test'
   ...
 # Subtest: pages provide simple exact-title Load and Download without console connection or setup panels
 ok 200 - pages provide simple exact-title Load and Download without console connection or setup panels
   ---
-  duration_ms: 10.4029
+  duration_ms: 9.7805
   type: 'test'
   ...
 # Subtest: embedded patch metadata round trips hostile text without executable HTML
 ok 201 - embedded patch metadata round trips hostile text without executable HTML
   ---
-  duration_ms: 0.3845
+  duration_ms: 0.4399
   type: 'test'
   ...
 # Subtest: popup escapes hostile metadata and search matches title IDs and exact updates
 ok 202 - popup escapes hostile metadata and search matches title IDs and exact updates
   ---
-  duration_ms: 0.7992
+  duration_ms: 1.583
   type: 'test'
   ...
 # Subtest: artwork is contained and tiles grow from two to five columns without cropped covers
 ok 203 - artwork is contained and tiles grow from two to five columns without cropped covers
   ---
-  duration_ms: 0.2502
+  duration_ms: 0.2561
   type: 'test'
   ...
 # Subtest: every selected game cover is present in the independent site
 ok 204 - every selected game cover is present in the independent site
   ---
-  duration_ms: 4.9592
+  duration_ms: 5.0893
   type: 'test'
   ...
 # Subtest: all33 retained variants have exact native file mappings and uncompressed pinned HTTPS delivery
 ok 205 - all33 retained variants have exact native file mappings and uncompressed pinned HTTPS delivery
   ---
-  duration_ms: 2.4353
+  duration_ms: 10.4633
   type: 'test'
   ...
 # Subtest: reuse requires exact platform/version/firmware and never broadens an older record
 ok 206 - reuse requires exact platform/version/firmware and never broadens an older record
   ---
-  duration_ms: 0.5664
+  duration_ms: 0.8655
   type: 'test'
   ...
 # Subtest: existing exact official catalogue identities are reused without changing their source or compatibility
 ok 207 - existing exact official catalogue identities are reused without changing their source or compatibility
   ---
-  duration_ms: 0.2169
+  duration_ms: 2.1421
   type: 'test'
   ...
 # Subtest: metadata integration is idempotent and cannot substitute a compressed source for ready BIN bytes
 ok 208 - metadata integration is idempotent and cannot substitute a compressed source for ready BIN bytes
   ---
-  duration_ms: 0.6771
+  duration_ms: 1.2951
   type: 'test'
   ...
 # Subtest: active receiver embeds all33 exact native mappings after archived version activation
 ok 209 - active receiver embeds all33 exact native mappings after archived version activation
   ---
-  duration_ms: 4.6731
+  duration_ms: 5.194
   type: 'test'
   ...
 # Subtest: receiver refresh preserves every non-catalogue byte and uses independent host job URLs
 ok 210 - receiver refresh preserves every non-catalogue byte and uses independent host job URLs
   ---
-  duration_ms: 6.1242
+  duration_ms: 6.9724
   type: 'test'
   ...
 # Subtest: new receiver job URLs use the working canonical Pages address
 ok 211 - new receiver job URLs use the working canonical Pages address
   ---
-  duration_ms: 0.4968
+  duration_ms: 0.7314
   type: 'test'
   ...
 # Subtest: all 34 GoldHEN entries become one card and open the firmware stage without console contact
 ok 212 - all 34 GoldHEN entries become one card and open the firmware stage without console contact
   ---
-  duration_ms: 16.7225
+  duration_ms: 35.3322
   type: 'test'
   ...
 # Subtest: every firmware stage exposes only its original versions and Download identities; Back retains all choices
 ok 213 - every firmware stage exposes only its original versions and Download identities; Back retains all choices
   ---
-  duration_ms: 15.9362
+  duration_ms: 18.5087
   type: 'test'
   ...
 # Subtest: popup firmware labels do not establish a generic BIN ABI or broaden the current build firmware contract
 ok 214 - popup firmware labels do not establish a generic BIN ABI or broaden the current build firmware contract
   ---
-  duration_ms: 0.6297
+  duration_ms: 0.7961
   type: 'test'
   ...
 # Subtest: all older firmware files and their archived copies retain their exact size and SHA-256
 ok 215 - all older firmware files and their archived copies retain their exact size and SHA-256
   ---
-  duration_ms: 3106.1206
+  duration_ms: 20.516
   type: 'test'
   ...
 # Subtest: GoldHEN Load keeps the established matching Afterglow route and never sends a BIN
 ok 216 - GoldHEN Load keeps the established matching Afterglow route and never sends a BIN
   ---
-  duration_ms: 9.479
+  duration_ms: 18.9271
   type: 'test'
   ...
 # Subtest: connection edits keep the firmware-choice stage open and selecting firmware does not launch it
 ok 217 - connection edits keep the firmware-choice stage open and selecting firmware does not launch it
   ---
-  duration_ms: 0.7427
+  duration_ms: 5.4697
   type: 'test'
   ...
 # Subtest: older versions retain exact lower firmware and never acquire an invented generic run method
 ok 218 - older versions retain exact lower firmware and never acquire an invented generic run method
   ---
-  duration_ms: 0.894
+  duration_ms: 2.0447
   type: 'test'
   ...
 # Subtest: every source-pinned retained BIN matches both preserved runtime and F archive
 ok 219 - every source-pinned retained BIN matches both preserved runtime and F archive
   ---
-  duration_ms: 3161.5537
+  duration_ms: 23.6478
   type: 'test'
   ...
 # Subtest: ambiguous source versions stay recorded and selected firmware is independently source-confirmed
 ok 220 - ambiguous source versions stay recorded and selected firmware is independently source-confirmed
   ---
-  duration_ms: 7.2218
+  duration_ms: 17.5389
   type: 'test'
   ...
 # Subtest: three exact 5.05 GTA V downloads stay grouped, original-only and unavailable to every Load path
 ok 221 - three exact 5.05 GTA V downloads stay grouped, original-only and unavailable to every Load path
   ---
-  duration_ms: 613.2754
+  duration_ms: 127.7456
   type: 'test'
   ...
 # Subtest: all previous catalogue pins, native helper identities and sender versions are retained
 ok 222 - all previous catalogue pins, native helper identities and sender versions are retained
   ---
-  duration_ms: 433.5728
+  duration_ms: 8.049
   type: 'test'
   ...
 # Subtest: activated receivers preserve prior pins and contain only the exact three new PS4 IDs
 ok 223 - activated receivers preserve prior pins and contain only the exact three new PS4 IDs
   ---
-  duration_ms: 125.0493
+  duration_ms: 7.4098
   type: 'test'
   ...
 # Subtest: new requirement translations cover all twenty languages and preserve literal firmware and game updates
 ok 224 - new requirement translations cover all twenty languages and preserve literal firmware and game updates
   ---
-  duration_ms: 40.5145
+  duration_ms: 112.139
   type: 'test'
   ...
 # Subtest: home detects only console and firmware explicitly reported by this browser
 ok 225 - home detects only console and firmware explicitly reported by this browser
   ---
-  duration_ms: 1.6395
+  duration_ms: 1.5054
   type: 'test'
   ...
 # Subtest: home browser detection makes no network request, storage read, redirect, timer or native action
 ok 226 - home browser detection makes no network request, storage read, redirect, timer or native action
   ---
-  duration_ms: 1.4098
+  duration_ms: 1.2451
   type: 'test'
   ...
 # Subtest: homepage retains console/tool routes with one full trainer cover and no KARO feature links
 ok 227 - homepage retains console/tool routes with one full trainer cover and no KARO feature links
   ---
-  duration_ms: 4.0212
+  duration_ms: 3.4774
   type: 'test'
   ...
 # Subtest: blue theme uses uncropped images and removes only the outer catalogue box, with readable desktop columns
 ok 228 - blue theme uses uncropped images and removes only the outer catalogue box, with readable desktop columns
   ---
-  duration_ms: 0.6582
+  duration_ms: 0.6482
   type: 'test'
   ...
 # Subtest: payload outlines and hidden media apply only to the payload view
 ok 229 - payload outlines and hidden media apply only to the payload view
   ---
-  duration_ms: 0.4784
+  duration_ms: 0.5536
   type: 'test'
   ...
 # Subtest: all 29 source folders have independent source-confirmed contracts, with restore variants separate
 ok 230 - all 29 source folders have independent source-confirmed contracts, with restore variants separate
   ---
-  duration_ms: 18.8362
+  duration_ms: 20.988
   type: 'test'
   ...
 # Subtest: every entry rejects desktop, wrong console, absent confirmation and synthetic activation before native dispatch
 ok 231 - every entry rejects desktop, wrong console, absent confirmation and synthetic activation before native dispatch
   ---
-  duration_ms: 11.6284
+  duration_ms: 14.9355
   type: 'test'
   ...
 # Subtest: each matching original entry gets exactly one scoped ticket and an attempt lock
 ok 232 - each matching original entry gets exactly one scoped ticket and an attempt lock
   ---
-  duration_ms: 15.0004
+  duration_ms: 11.5955
   type: 'test'
   ...
 # Subtest: expiry, storage failure, altered firmware, hidden page and another directory refuse the original stage
 ok 233 - expiry, storage failure, altered firmware, hidden page and another directory refuse the original stage
   ---
-  duration_ms: 13.1548
+  duration_ms: 12.2806
   type: 'test'
   ...
 # Subtest: one original cache round trip is allowed, while repeated or restored entry attempts stop
 ok 234 - one original cache round trip is allowed, while repeated or restored entry attempts stop
   ---
-  duration_ms: 7.1246
+  duration_ms: 12.5557
   type: 'test'
   ...
 # Subtest: the document parser receives only inert fixture text after its explicit matching ticket
 ok 235 - the document parser receives only inert fixture text after its explicit matching ticket
   ---
-  duration_ms: 11.9463
+  duration_ms: 10.6148
   type: 'test'
   ...
 # Subtest: known corrupt, absent and PHP resources are blocked without changing valid native bytes or selecting alternatives
 ok 236 - known corrupt, absent and PHP resources are blocked without changing valid native bytes or selecting alternatives
   ---
-  duration_ms: 0.7329
+  duration_ms: 0.8313
   type: 'test'
   ...
 # Subtest: current downloads and derived BINs retain their recorded bytes, quarantine paths stay absent and invalid files have no enabled Download
 ok 237 - current downloads and derived BINs retain their recorded bytes, quarantine paths stay absent and invalid files have no enabled Download
   ---
-  duration_ms: 806.5203
+  duration_ms: 1348.2868
   type: 'test'
   ...
 # Subtest: every offered package is immutable and every original native script is unchanged
 ok 238 - every offered package is immutable and every original native script is unchanged
   ---
-  duration_ms: 690.324
+  duration_ms: 755.0598
   type: 'test'
   ...
 # Subtest: the extracted-build server serves module/cache MIME types and never executes PHP or accepts uploads
 ok 239 - the extracted-build server serves module/cache MIME types and never executes PHP or accepts uploads
   ---
-  duration_ms: 50.1928
+  duration_ms: 70.6248
   type: 'test'
   ...
 # Subtest: ZIP validation accepts only the explicit package root and still rejects traversal or a wrong root
 ok 240 - ZIP validation accepts only the explicit package root and still rejects traversal or a wrong root
   ---
-  duration_ms: 21.5713
+  duration_ms: 14.9051
   type: 'test'
   ...
 # Subtest: verified original repairs retain exact identities and online-only entries preserve the original native chain
 ok 241 - verified original repairs retain exact identities and online-only entries preserve the original native chain
   ---
-  duration_ms: 42.205
+  duration_ms: 47.9297
   type: 'test'
   ...
 # Subtest: all original KARO rows, URLs and hashes survive the split without an initial payload DOM
 ok 242 - all original KARO rows, URLs and hashes survive the split without an initial payload DOM
   ---
-  duration_ms: 216.4231
+  duration_ms: 245.0533
   type: 'test'
   ...
 # Subtest: every older KARO archive download remains in a standalone fallback page
 ok 243 - every older KARO archive download remains in a standalone fallback page
   ---
-  duration_ms: 1.9054
+  duration_ms: 2.7474
   type: 'test'
   ...
 # Subtest: nested details split only file-list bodies and unrelated native names remain untouched
 ok 244 - nested details split only file-list bodies and unrelated native names remain untouched
   ---
-  duration_ms: 0.7574
+  duration_ms: 0.9455
   type: 'test'
   ...
 # Subtest: no list fetch until opening; console renders 24 at a time and keeps exact Download URLs
 ok 245 - no list fetch until opening; console renders 24 at a time and keeps exact Download URLs
   ---
-  duration_ms: 0.7286
+  duration_ms: 1.2282
   type: 'test'
   ...
 # Subtest: debounced search waits for latest query and retains firmware context
 ok 246 - debounced search waits for latest query and retains firmware context
   ---
-  duration_ms: 0.625
+  duration_ms: 0.7417
   type: 'test'
   ...
 # Subtest: failed list keeps a working standalone fallback and allows retry
 ok 247 - failed list keeps a working standalone fallback and allows retry
   ---
-  duration_ms: 0.7477
+  duration_ms: 0.2926
   type: 'test'
   ...
 # Subtest: searches share one in-flight index request and only display the latest exact match
 ok 248 - searches share one in-flight index request and only display the latest exact match
   ---
-  duration_ms: 0.5356
+  duration_ms: 0.4214
   type: 'test'
   ...
 # Subtest: timed-out file lists release pending requests, keep fallback links and ignore late responses
 ok 249 - timed-out file lists release pending requests, keep fallback links and ignore late responses
   ---
-  duration_ms: 0.2615
+  duration_ms: 0.3156
   type: 'test'
   ...
 # Subtest: every locale includes all home/navigation/action labels without changing the HEN acronym or placeholders
 ok 250 - every locale includes all home/navigation/action labels without changing the HEN acronym or placeholders
   ---
-  duration_ms: 116.6384
+  duration_ms: 175.8646
   type: 'test'
   ...
 # Subtest: generation preserves existing locale-only entries and every currently published dictionary value
 ok 251 - generation preserves existing locale-only entries and every currently published dictionary value
   ---
-  duration_ms: 218.2764
+  duration_ms: 1128.0384
   type: 'test'
   ...
 # Subtest: all20 labels switch back to English on a console while literal console/firmware values stay intact
 ok 252 - all20 labels switch back to English on a console while literal console/firmware values stay intact
   ---
-  duration_ms: 34.09
+  duration_ms: 63.9899
   type: 'test'
   ...
 # Subtest: homepage loads existing i18n selector before browser display and never auto-connects to another console
 ok 253 - homepage loads existing i18n selector before browser display and never auto-connects to another console
   ---
-  duration_ms: 0.5769
+  duration_ms: 0.7875
   type: 'test'
   ...
 # Subtest: existing language selector mounts beside the homepage brand instead of covering the site link
 ok 254 - existing language selector mounts beside the homepage brand instead of covering the site link
   ---
-  duration_ms: 1.7646
+  duration_ms: 5.2371
   type: 'test'
   ...
 # Subtest: public Load announces handoff before navigation and stays disabled through repeat clicks and form changes
 ok 255 - public Load announces handoff before navigation and stays disabled through repeat clicks and form changes
   ---
-  duration_ms: 3.6096
+  duration_ms: 2.4091
   type: 'test'
   ...
 # Subtest: missing guard dependency and unavailable storage fail closed with an announced truthful error
 ok 256 - missing guard dependency and unavailable storage fail closed with an announced truthful error
   ---
-  duration_ms: 0.9373
+  duration_ms: 1.0751
   type: 'test'
   ...
 # Subtest: restored entry and blocked navigation never imply native execution or automatically retry
 ok 257 - restored entry and blocked navigation never imply native execution or automatically retry
   ---
-  duration_ms: 0.3377
+  duration_ms: 0.6138
   type: 'test'
   ...
 # Subtest: Afterglow announces only opening the inert picker and prevents duplicate adapter/fallback handoffs
 ok 258 - Afterglow announces only opening the inert picker and prevents duplicate adapter/fallback handoffs
   ---
-  duration_ms: 0.43
+  duration_ms: 0.4375
   type: 'test'
   ...
 # Subtest: every source-pinned builtin UMTX firmware uses its separate one-use trusted request contract
 ok 259 - every source-pinned builtin UMTX firmware uses its separate one-use trusted request contract
   ---
-  duration_ms: 87.0756
+  duration_ms: 96.5624
   type: 'test'
   ...
 # Subtest: every source-derived native-route firmware case reaches its exact local guard with a visible loading handoff
 ok 260 - every source-derived native-route firmware case reaches its exact local guard with a visible loading handoff
   ---
-  duration_ms: 77.2414
+  duration_ms: 157.4746
   type: 'test'
   ...
 # Subtest: storage refusal and blocked navigation show errors and never silently reattempt a native handoff
 ok 261 - storage refusal and blocked navigation show errors and never silently reattempt a native handoff
   ---
-  duration_ms: 2.8611
+  duration_ms: 5.7649
   type: 'test'
   ...
 # Subtest: active KARO/GamerHack native documents retain their progress nodes and same-origin script dependencies
 ok 262 - active KARO/GamerHack native documents retain their progress nodes and same-origin script dependencies
   ---
-  duration_ms: 4.5909
+  duration_ms: 20.5449
   type: 'test'
   ...
 # Subtest: PS5 native dependency failures remain visible, stop subsequent loads and preserve the native console
 ok 263 - PS5 native dependency failures remain visible, stop subsequent loads and preserve the native console
   ---
-  duration_ms: 43.6292
+  duration_ms: 115.8723
   type: 'test'
   ...
 # Subtest: active runtime scope protects payloads and progress dependencies while keeping ZIP download policy
 ok 264 - active runtime scope protects payloads and progress dependencies while keeping ZIP download policy
   ---
-  duration_ms: 2.4129
+  duration_ms: 4.8567
   type: 'test'
   ...
 # Subtest: retained PS4 and PS5 bookmark Load controls announce loading and ignore repeat clicks
 ok 265 - retained PS4 and PS5 bookmark Load controls announce loading and ignore repeat clicks
   ---
-  duration_ms: 2.2534
+  duration_ms: 40.827
   type: 'test'
   ...
 # Subtest: every firmware handoff also accepts the canonical lowercase Pages prefix
 ok 266 - every firmware handoff also accepts the canonical lowercase Pages prefix
   ---
-  duration_ms: 54.0681
+  duration_ms: 94.7753
   type: 'test'
   ...
 # Subtest: groups keep exact firmware arrays, separate incompatible native entries and exclude restore/noBD utilities
 ok 267 - groups keep exact firmware arrays, separate incompatible native entries and exclude restore/noBD utilities
   ---
-  duration_ms: 2.1121
+  duration_ms: 2.4248
   type: 'test'
   ...
 # Subtest: Afterglow groups only its two exact versions with real HEN choices and keeps its own landing guard
 ok 268 - Afterglow groups only its two exact versions with real HEN choices and keeps its own landing guard
   ---
-  duration_ms: 0.4339
+  duration_ms: 0.7626
   type: 'test'
   ...
 # Subtest: public page offers only genuine GoldHEN, Load and collapsed credits without source or runtime download buttons
 ok 269 - public page offers only genuine GoldHEN, Load and collapsed credits without source or runtime download buttons
   ---
-  duration_ms: 0.3214
+  duration_ms: 0.5016
   type: 'test'
   ...
 # Subtest: runtime configuration rejects external, traversing, mismatched or non-native public paths
 ok 270 - runtime configuration rejects external, traversing, mismatched or non-native public paths
   ---
-  duration_ms: 0.5063
+  duration_ms: 0.4826
   type: 'test'
   ...
 # Subtest: new public launcher starts inert, gates exact browser firmware and delegates one trusted confirmed Load to existing guard
 ok 271 - new public launcher starts inert, gates exact browser firmware and delegates one trusted confirmed Load to existing guard
   ---
-  duration_ms: 1.5156
+  duration_ms: 1.8768
   type: 'test'
   ...
 # Subtest: 64-bit memory addresses use exact decimal string arithmetic without unsafe JavaScript rounding
 ok 272 - 64-bit memory addresses use exact decimal string arithmetic without unsafe JavaScript rounding
   ---
-  duration_ms: 1.4814
+  duration_ms: 1.8582
   type: 'test'
   ...
 # Subtest: trainer targets reject public networks, URLs, paths and desktop loopback
 ok 273 - trainer targets reject public networks, URLs, paths and desktop loopback
   ---
-  duration_ms: 0.3684
+  duration_ms: 0.3811
   type: 'test'
   ...
 # Subtest: constructing a trainer makes no console requests and attach reads only exact title/process metadata
 ok 274 - constructing a trainer makes no console requests and attach reads only exact title/process metadata
   ---
-  duration_ms: 1.7666
+  duration_ms: 1.702
   type: 'test'
   ...
 # Subtest: manual exact game-update confirmation is required before any native write
 ok 275 - manual exact game-update confirmation is required before any native write
   ---
-  duration_ms: 0.5192
+  duration_ms: 0.3791
   type: 'test'
   ...
 # Subtest: explicit Apply rechecks identity, writes exact bytes, verifies native readback and resumes once
 ok 276 - explicit Apply rechecks identity, writes exact bytes, verifies native readback and resumes once
   ---
-  duration_ms: 2.8324
+  duration_ms: 0.8345
   type: 'test'
   ...
 # Subtest: ambiguous writes and bad readback are never retried or reported as verified; explicit resume is separate
 ok 277 - ambiguous writes and bad readback are never retried or reported as verified; explicit resume is separate
   ---
-  duration_ms: 1.2142
+  duration_ms: 2.6022
   type: 'test'
   ...
 # Subtest: master-code allocation/writes occur only during explicit Apply and run once per attachment
 ok 278 - master-code allocation/writes occur only during explicit Apply and run once per attachment
   ---
-  duration_ms: 0.9084
+  duration_ms: 1.0833
   type: 'test'
   ...
 # Subtest: game tiles preserve every pinned exact build and use only hash-verified local title artwork
 ok 279 - game tiles preserve every pinned exact build and use only hash-verified local title artwork
   ---
-  duration_ms: 53.2871
+  duration_ms: 35.0626
   type: 'test'
   ...
 # Subtest: gallery opens exact-build popup without console contact, traps keyboard focus and restores its trigger
 ok 280 - gallery opens exact-build popup without console contact, traps keyboard focus and restores its trigger
   ---
-  duration_ms: 10.3715
+  duration_ms: 10.8978
   type: 'test'
   ...
 # Subtest: popup cannot discard a paused or in-flight native operation; explicit resume keeps Apply locked
 ok 281 - popup cannot discard a paused or in-flight native operation; explicit resume keeps Apply locked
   ---
-  duration_ms: 2.1866
+  duration_ms: 4.8806
   type: 'test'
   ...
 # Subtest: pinned data and all local flasher modules have exact source hashes, with malformed upstream definitions excluded
 ok 282 - pinned data and all local flasher modules have exact source hashes, with malformed upstream definitions excluded
   ---
-  duration_ms: 152.5605
+  duration_ms: 234.4188
   type: 'test'
   ...
 # Subtest: authored flasher stays inert until explicit device and programming actions; overlapping ranges are rejected
 ok 283 - authored flasher stays inert until explicit device and programming actions; overlapping ranges are rejected
   ---
-  duration_ms: 4.9115
+  duration_ms: 4.7371
   type: 'test'
   ...
 # Subtest: ready local tool ZIPs have bounded intact members, exact manifest hashes and working language files; predecessors are retained
 ok 284 - ready local tool ZIPs have bounded intact members, exact manifest hashes and working language files; predecessors are retained
   ---
-  duration_ms: 120.3889
+  duration_ms: 184.2867
   type: 'test'
   ...
 # Subtest: console trainer pagination retains existing controls and opens a dialog without artwork requests
 ok 285 - console trainer pagination retains existing controls and opens a dialog without artwork requests
   ---
-  duration_ms: 1.7888
+  duration_ms: 25.2537
   type: 'test'
   ...
 # Subtest: merged Download keeps device and console destinations distinct without silent fallback
 ok 286 - merged Download keeps device and console destinations distinct without silent fallback
   ---
-  duration_ms: 2.0216
+  duration_ms: 2.0145
   type: 'test'
   ...
 # Subtest: Load capabilities never present plugin installation or an external host as a direct transfer
 ok 287 - Load capabilities never present plugin installation or an external host as a direct transfer
   ---
-  duration_ms: 0.8148
+  duration_ms: 0.8562
   type: 'test'
   ...
 # Subtest: every downloadable host action has an exact native file ID without broadening duplicate-byte compatibility
 ok 288 - every downloadable host action has an exact native file ID without broadening duplicate-byte compatibility
   ---
-  duration_ms: 86.1538
+  duration_ms: 90.4121
   type: 'test'
   ...
 # Subtest: generated chooser has separate categories and button choices instead of a version select
 ok 289 - generated chooser has separate categories and button choices instead of a version select
   ---
-  duration_ms: 1.3114
+  duration_ms: 1.7592
   type: 'test'
   ...
 # Subtest: GoldHEN device download stays explicit with a configured console and never offers an unsupported receiver route
 ok 290 - GoldHEN device download stays explicit with a configured console and never offers an unsupported receiver route
   ---
-  duration_ms: 25.054
+  duration_ms: 64.7369
   type: 'test'
   ...
 # Subtest: menu families consolidate builds without losing exact files, releases or game pins
 ok 291 - menu families consolidate builds without losing exact files, releases or game pins
   ---
-  duration_ms: 12.0534
+  duration_ms: 12.361
   type: 'test'
   ...
 # Subtest: firmware/search filters apply before grouping and unknown menu versions stay unknown
 ok 292 - firmware/search filters apply before grouping and unknown menu versions stay unknown
   ---
-  duration_ms: 1.5221
+  duration_ms: 0.6775
   type: 'test'
   ...
 # Subtest: menu covers, actual RDR2 previews and cheat data retain honest distinct roles
 ok 293 - menu covers, actual RDR2 previews and cheat data retain honest distinct roles
   ---
-  duration_ms: 2.9371
+  duration_ms: 3.0078
   type: 'test'
   ...
 # Subtest: new receiver snapshots preserve previous files and resolve every host Save action to the exact hash
 ok 294 - new receiver snapshots preserve previous files and resolve every host Save action to the exact hash
   ---
-  duration_ms: 278.4309
+  duration_ms: 28.8623
   type: 'test'
   ...
 # Subtest: native subset translates complete messages in all20languages and preserves arbitrary paths and hashes
 ok 295 - native subset translates complete messages in all20languages and preserves arbitrary paths and hashes
   ---
-  duration_ms: 67.3091
+  duration_ms: 120.4116
   type: 'test'
   ...
 # Subtest: local picker changes controls and prompts while file names, paths and raw autoload bytes remain untouched
 ok 296 - local picker changes controls and prompts while file names, paths and raw autoload bytes remain untouched
   ---
-  duration_ms: 43.2777
+  duration_ms: 40.4979
   type: 'test'
   ...
 # Subtest: embedded languages need no remote script and keep the native CSP and exact authored sources
 ok 297 - embedded languages need no remote script and keep the native CSP and exact authored sources
   ---
-  duration_ms: 93.4079
+  duration_ms: 91.386
   type: 'test'
   ...
 # Subtest: helper construction and script opening never make a console request
 ok 298 - helper construction and script opening never make a console request
   ---
-  duration_ms: 3.6265
+  duration_ms: 5.7055
   type: 'test'
   ...
 # Subtest: public previews and wrong ports cannot call even read APIs
 ok 299 - public previews and wrong ports cannot call even read APIs
   ---
-  duration_ms: 1.3992
+  duration_ms: 1.8595
   type: 'test'
   ...
 # Subtest: path scope rejects traversal, encoded tricks, guessed mounts and writes outside managed roots
 ok 300 - path scope rejects traversal, encoded tricks, guessed mounts and writes outside managed roots
   ---
-  duration_ms: 0.3965
+  duration_ms: 0.5045
   type: 'test'
   ...
 # Subtest: HTTP-compatible SHA-256 and untouched text preservation match exact bytes
 ok 301 - HTTP-compatible SHA-256 and untouched text preservation match exact bytes
   ---
-  duration_ms: 3.0947
+  duration_ms: 8.57
   type: 'test'
   ...
 # Subtest: older console WebKit fallback works without native Promise, encoders or modern Number helpers
 ok 302 - older console WebKit fallback works without native Promise, encoders or modern Number helpers
   ---
-  duration_ms: 2028.3866
+  duration_ms: 2353.5436
   type: 'test'
   ...
 # Subtest: actual list and bounded file reads expose native files without an execution route
 ok 303 - actual list and bounded file reads expose native files without an execution route
   ---
-  duration_ms: 1.0165
+  duration_ms: 1.6908
   type: 'test'
   ...
 # Subtest: uploads use the exact ordered multipart contract and verify saved bytes without overwriting
 ok 304 - uploads use the exact ordered multipart contract and verify saved bytes without overwriting
   ---
-  duration_ms: 1.3706
+  duration_ms: 1.7184
   type: 'test'
   ...
 # Subtest: create and rename verify postconditions instead of trusting unconditional native success
 ok 305 - create and rename verify postconditions instead of trusting unconditional native success
   ---
-  duration_ms: 1.0985
+  duration_ms: 1.4607
   type: 'test'
   ...
 # Subtest: each native autoload save retains a verified original-byte backup and preserves unknown entries
 ok 306 - each native autoload save retains a verified original-byte backup and preserves unknown entries
   ---
-  duration_ms: 2.0962
+  duration_ms: 3.8464
   type: 'test'
   ...
 # Subtest: an unchanged raw editor causes no write, including browser-normalized newlines
 ok 307 - an unchanged raw editor causes no write, including browser-normalized newlines
   ---
-  duration_ms: 0.2762
+  duration_ms: 0.372
   type: 'test'
   ...
 # Subtest: empty autoload files receive real zero-byte backups and clearing uses a closed multipart stage
 ok 308 - empty autoload files receive real zero-byte backups and clearing uses a closed multipart stage
   ---
-  duration_ms: 1.3537
+  duration_ms: 1.6903
   type: 'test'
   ...
 # Subtest: a concurrent native edit blocks replacement before and after the verified backup
 ok 309 - a concurrent native edit blocks replacement before and after the verified backup
   ---
-  duration_ms: 0.6355
+  duration_ms: 1.0289
   type: 'test'
   ...
 # Subtest: bad backup or staging bytes prevent replacement; retained originals are never removed
 ok 310 - bad backup or staging bytes prevent replacement; retained originals are never removed
   ---
-  duration_ms: 0.5926
+  duration_ms: 1.0001
   type: 'test'
   ...
 # Subtest: standalone artifacts contain authored assets, native boundaries and only prepared archive jobs
 ok 311 - standalone artifacts contain authored assets, native boundaries and only prepared archive jobs
   ---
-  duration_ms: 141.7471
+  duration_ms: 203.2411
   type: 'test'
   ...
 # Subtest: four Oysters 5.05 game updates and original FTP 1.08b retain exact identity and compatibility pins
 ok 312 - four Oysters 5.05 game updates and original FTP 1.08b retain exact identity and compatibility pins
   ---
-  duration_ms: 3.1853
+  duration_ms: 3.0361
   type: 'test'
   ...
 # Subtest: misnamed 5.05 ArabicGuy JavaScript is explicitly excluded from ready files and raw BIN Load
 ok 313 - misnamed 5.05 ArabicGuy JavaScript is explicitly excluded from ready files and raw BIN Load
   ---
-  duration_ms: 5.2402
+  duration_ms: 5.6283
   type: 'test'
   ...
 # Subtest: five original-only ready BINs have source/version/size/SHA pins and verified private F: archive bytes
 ok 314 - five original-only ready BINs have source/version/size/SHA pins and verified private F: archive bytes
   ---
-  duration_ms: 913.0288
+  duration_ms: 241.2
   type: 'test'
   ...
 # Subtest: all readers expose five PS4 additions and preserve one Oysters family while only FTP permits selected-file Load
 ok 315 - all readers expose five PS4 additions and preserve one Oysters family while only FTP permits selected-file Load
   ---
-  duration_ms: 30.4039
+  duration_ms: 58.4238
   type: 'test'
   ...
 # Subtest: 577 catalogue pins, all seventeen previous sender records and both active native helpers remain unchanged
 ok 316 - 577 catalogue pins, all seventeen previous sender records and both active native helpers remain unchanged
   ---
-  duration_ms: 123.201
+  duration_ms: 7.0445
   type: 'test'
   ...
 # Subtest: receiver 15 or its successor retains all 501 previous PS4 and 350 PS5 files and maps the five originals exactly
 ok 317 - receiver 15 or its successor retains all 501 previous PS4 and 350 PS5 files and maps the five originals exactly
   ---
-  duration_ms: 256.7438
+  duration_ms: 21.0137
   type: 'test'
   ...
 # Subtest: all old sender ZIPs and the current sender match SHA/CRC/manifests, preserve 174 actions and exclude five original binaries
 ok 318 - all old sender ZIPs and the current sender match SHA/CRC/manifests, preserve 174 actions and exclude five original binaries
   ---
-  duration_ms: 121380.0285
+  duration_ms: 113904.8442
   type: 'test'
   ...
 # Subtest: three game scopes partition every real mod variant exactly once without losing pins or shared tools
 ok 319 - three game scopes partition every real mod variant exactly once without losing pins or shared tools
   ---
-  duration_ms: 46.9716
+  duration_ms: 65.1552
   type: 'test'
   ...
 # Subtest: dedicated file and payload pages contain connection and native workspace controls without the hub or menu library
 ok 320 - dedicated file and payload pages contain connection and native workspace controls without the hub or menu library
   ---
-  duration_ms: 110.1573
+  duration_ms: 178.6062
   type: 'test'
   ...
 # Subtest: native workspace links keep exact platform origins and reject unreviewed views or address injection
 ok 321 - native workspace links keep exact platform origins and reject unreviewed views or address injection
   ---
-  duration_ms: 1.1967
+  duration_ms: 1.662
   type: 'test'
   ...
 # Subtest: sender serves only named game/workspace routes and exact immutable authored helper names
 ok 322 - sender serves only named game/workspace routes and exact immutable authored helper names
   ---
-  duration_ms: 0.9778
+  duration_ms: 1.0146
   type: 'test'
   ...
 # Subtest: new eighteen web utilities are direct verified PS4 BIN actions and retain exact firmware exclusions
 ok 323 - new eighteen web utilities are direct verified PS4 BIN actions and retain exact firmware exclusions
   ---
-  duration_ms: 31.6612
+  duration_ms: 44.4487
   type: 'test'
   ...
 # Subtest: declining an effect confirmation prevents both the optional copy and console transmission
 ok 324 - declining an effect confirmation prevents both the optional copy and console transmission
   ---
-  duration_ms: 21.5388
+  duration_ms: 57.9069
   type: 'test'
   ...
 # Subtest: menu images retain accessible descriptions without visible image-role badges in cards and popups
 ok 325 - menu images retain accessible descriptions without visible image-role badges in cards and popups
   ---
-  duration_ms: 2.6966
+  duration_ms: 2.1818
   type: 'test'
   ...
 # Subtest: dedicated workspace boot tolerates absent library and modal controls without sending anything
 ok 326 - dedicated workspace boot tolerates absent library and modal controls without sending anything
   ---
-  duration_ms: 1.2034
+  duration_ms: 1.4668
   type: 'test'
   ...
 # Subtest: original Orbis builds preserve separate exact firmware files and the HEN-first retail prerequisite
 ok 327 - original Orbis builds preserve separate exact firmware files and the HEN-first retail prerequisite
   ---
-  duration_ms: 2.9546
+  duration_ms: 2.5328
   type: 'test'
   ...
 # Subtest: official GoldHEN 2.4b18 exposes only the reviewed 9.00 raw BIN route and retains its release-wide evidence separately
 ok 328 - official GoldHEN 2.4b18 exposes only the reviewed 9.00 raw BIN route and retains its release-wide evidence separately
   ---
-  duration_ms: 0.2652
+  duration_ms: 0.3127
   type: 'test'
   ...
 # Subtest: all seven archived release jobs have exact source, version, size and hash without a public mirror
 ok 329 - all seven archived release jobs have exact source, version, size and hash without a public mirror
   ---
-  duration_ms: 1127.8665
+  duration_ms: 196.4091
   type: 'test'
   ...
 # Subtest: readers retain original releases while the active selector uses the separately reviewed current GoldHEN listing
 ok 330 - readers retain original releases while the active selector uses the separately reviewed current GoldHEN listing
   ---
-  duration_ms: 59.5431
+  duration_ms: 217.2812
   type: 'test'
   ...
 # Subtest: the 571-file baseline and all sixteen earlier sender snapshots retain their identity pins
 ok 331 - the 571-file baseline and all sixteen earlier sender snapshots retain their identity pins
   ---
-  duration_ms: 2.2755
+  duration_ms: 4.0306
   type: 'test'
   ...
 # Subtest: active immutable receivers retain the prior 495 PS4 files and map all six new original downloads exactly
 ok 332 - active immutable receivers retain the prior 495 PS4 files and map all six new original downloads exactly
   ---
-  duration_ms: 118.9608
+  duration_ms: 16.4823
   type: 'test'
   ...
 # Subtest: construction and public previews never issue a native request
 ok 333 - construction and public previews never issue a native request
   ---
-  duration_ms: 2.8639
+  duration_ms: 4.2428
   type: 'test'
   ...
 # Subtest: only bounded absolute data or exact USB mount PKGs and whole-byte expectations are accepted
 ok 334 - only bounded absolute data or exact USB mount PKGs and whole-byte expectations are accepted
   ---
-  duration_ms: 0.4226
+  duration_ms: 0.448
   type: 'test'
   ...
 # Subtest: USB verification uses the exact existing parent and never establishes mount identity or writability
 ok 335 - USB verification uses the exact existing parent and never establishes mount identity or writability
   ---
-  duration_ms: 1.1622
+  duration_ms: 1.1812
   type: 'test'
   ...
 # Subtest: verification reads one exact parent, rejects absent, partial and mismatched files without installation
 ok 336 - verification reads one exact parent, rejects absent, partial and mismatched files without installation
   ---
-  duration_ms: 0.4223
+  duration_ms: 0.5261
   type: 'test'
   ...
 # Subtest: installation requires the actual unchanged verification object and explicit consent
 ok 337 - installation requires the actual unchanged verification object and explicit consent
   ---
-  duration_ms: 0.2681
+  duration_ms: 0.348
   type: 'test'
   ...
 # Subtest: metadata changes are caught in the fresh read before any install write or guard
 ok 338 - metadata changes are caught in the fresh read before any install write or guard
   ---
-  duration_ms: 0.39
+  duration_ms: 0.5689
   type: 'test'
   ...
 # Subtest: one explicit exact install request keeps a durable guard and never claims completed installation
 ok 339 - one explicit exact install request keeps a durable guard and never claims completed installation
   ---
-  duration_ms: 1.5256
+  duration_ms: 0.4941
   type: 'test'
   ...
 # Subtest: unknown and negative native results are retained across reloads without automatic retry
 ok 340 - unknown and negative native results are retained across reloads without automatic retry
   ---
-  duration_ms: 0.8214
+  duration_ms: 1.984
   type: 'test'
   ...
 # Subtest: overlapping operations and a guard written by another window cannot send a second install
 ok 341 - overlapping operations and a guard written by another window cannot send a second install
   ---
-  duration_ms: 4.2934
+  duration_ms: 5.0355
   type: 'test'
   ...
 # Subtest: a storage failure stops dispatch and the older-WebKit fallback retains native guards
 ok 342 - a storage failure stops dispatch and the older-WebKit fallback retains native guards
   ---
-  duration_ms: 41.1579
+  duration_ms: 44.1194
   type: 'test'
   ...
 # Subtest: rendering native and public pages only preselects a path, leaving install disabled and making no requests
 ok 343 - rendering native and public pages only preselects a path, leaving install disabled and making no requests
   ---
-  duration_ms: 4.1069
+  duration_ms: 4.5131
   type: 'test'
   ...
 # Subtest: prepared immutable helpers contain exact authored bytes, native guards and archive jobs without external scripts
 ok 344 - prepared immutable helpers contain exact authored bytes, native guards and archive jobs without external scripts
   ---
-  duration_ms: 142.6153
+  duration_ms: 229.4863
   type: 'test'
   ...
 # Subtest: generated helpers embed only exact local language keys and keep the full-width Back taskbar free of external runtime resources
 ok 345 - generated helpers embed only exact local language keys and keep the full-width Back taskbar free of external runtime resources
   ---
-  duration_ms: 66.2078
+  duration_ms: 83.481
   type: 'test'
   ...
 # Subtest: the installer translation pack covers every new UI key in all 20 languages without changing placeholders or paths
 ok 346 - the installer translation pack covers every new UI key in all 20 languages without changing placeholders or paths
   ---
-  duration_ms: 7.0319
+  duration_ms: 7.1317
   type: 'test'
   ...
 # Subtest: native patch routes use fixed loopback origin and preserve PS4/PS5 title architecture
 ok 347 - native patch routes use fixed loopback origin and preserve PS4/PS5 title architecture
   ---
-  duration_ms: 1.0755
+  duration_ms: 1.1048
   type: 'test'
   ...
 # Subtest: Load refuses wrong console, unsupported firmware and forged title paths
 ok 348 - Load refuses wrong console, unsupported firmware and forged title paths
   ---
-  duration_ms: 1.1298
+  duration_ms: 1.1334
   type: 'test'
   ...
 # Subtest: native target requires an explicit trusted click from a visible top-level page
 ok 349 - native target requires an explicit trusted click from a visible top-level page
   ---
-  duration_ms: 0.3682
+  duration_ms: 19.3632
   type: 'test'
   ...
 # Subtest: browsing and title selection do no console work and keep exact Download and Load identities together
 ok 350 - browsing and title selection do no console work and keep exact Download and Load identities together
   ---
-  duration_ms: 2.3965
+  duration_ms: 7.8669
   type: 'test'
   ...
 # Subtest: native PS5 selections use PPSA paths while unsupported browsers keep Downloads usable
 ok 351 - native PS5 selections use PPSA paths while unsupported browsers keep Downloads usable
   ---
-  duration_ms: 1.5206
+  duration_ms: 43.0403
   type: 'test'
   ...
 # Subtest: Load handoff is one-use and reports opening rather than installation or patch application
 ok 352 - Load handoff is one-use and reports opening rather than installation or patch application
   ---
-  duration_ms: 0.3686
+  duration_ms: 0.8373
   type: 'test'
   ...
 # Subtest: hidden or framed UI and failed navigation never claim success or retry native handoff
 ok 353 - hidden or framed UI and failed navigation never claim success or retry native handoff
   ---
-  duration_ms: 0.5745
+  duration_ms: 2.8135
   type: 'test'
   ...
 # Subtest: reopening a game after handoff or blocked navigation keeps Load locked and Download available
 ok 354 - reopening a game after handoff or blocked navigation keeps Load locked and Download available
   ---
-  duration_ms: 0.5398
+  duration_ms: 0.8472
+  type: 'test'
+  ...
+# Subtest: modal keyboard loop excludes collapsed detail links even when the browser reports their rectangles
+ok 355 - modal keyboard loop excludes collapsed detail links even when the browser reports their rectangles
+  ---
+  duration_ms: 2.1942
   type: 'test'
   ...
 # Subtest: Download rejects external URLs, executable substitutions and encoded traversal
-ok 355 - Download rejects external URLs, executable substitutions and encoded traversal
+ok 356 - Download rejects external URLs, executable substitutions and encoded traversal
   ---
-  duration_ms: 0.3463
+  duration_ms: 0.4078
   type: 'test'
   ...
 # Subtest: console patch pages request no tile artwork and append every older entry without replacing focused tiles
-ok 356 - console patch pages request no tile artwork and append every older entry without replacing focused tiles
+ok 357 - console patch pages request no tile artwork and append every older entry without replacing focused tiles
   ---
-  duration_ms: 3.7661
+  duration_ms: 3.3909
   type: 'test'
   ...
 # Subtest: console search coalesces input and keeps the exact title-specific XML and update in the popup
-ok 357 - console search coalesces input and keeps the exact title-specific XML and update in the popup
+ok 358 - console search coalesces input and keeps the exact title-specific XML and update in the popup
   ---
-  duration_ms: 1.0643
+  duration_ms: 1.0566
   type: 'test'
   ...
 # Subtest: desktop patch browsing keeps artwork and every page retains all exact download identities
-ok 358 - desktop patch browsing keeps artwork and every page retains all exact download identities
+ok 359 - desktop patch browsing keeps artwork and every page retains all exact download identities
   ---
-  duration_ms: 2.8664
+  duration_ms: 21.2618
   type: 'test'
   ...
 # Subtest: PS4 and PS5 payload tiles and version popups omit image markup
-ok 359 - PS4 and PS5 payload tiles and version popups omit image markup
+ok 360 - PS4 and PS5 payload tiles and version popups omit image markup
   ---
-  duration_ms: 51.0622
+  duration_ms: 125.6937
   type: 'test'
   ...
 # Subtest: GoldHEN and game-mod artwork remains available while payload art is omitted
-ok 360 - GoldHEN and game-mod artwork remains available while payload art is omitted
+ok 361 - GoldHEN and game-mod artwork remains available while payload art is omitted
   ---
-  duration_ms: 40.2692
+  duration_ms: 56.71
   type: 'test'
   ...
 # Subtest: tools cross-listed in Payloads also keep their version popup image-free
-ok 361 - tools cross-listed in Payloads also keep their version popup image-free
+ok 362 - tools cross-listed in Payloads also keep their version popup image-free
   ---
-  duration_ms: 10.4371
+  duration_ms: 19.7983
   type: 'test'
   ...
 # {"revision":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","base":"","origin":"https://speedy-away.github.io","bytes":3872,"budget":922746880,"files":9,"offloadedFiles":1,"nativeScriptsUnchanged":1,"cacheManifestAliases":0,"historicalLandings":0,"activeKaro":"hosts/runtime/karo-fixture/","routingBytes":{"full":1091,"runtime":570},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
@@ -2171,863 +2177,863 @@ ok 361 - tools cross-listed in Payloads also keep their version popup image-free
 # {"revision":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","base":"","origin":"https://speedy-away.github.io","bytes":2436,"budget":922746880,"files":3,"offloadedFiles":1,"nativeScriptsUnchanged":0,"cacheManifestAliases":0,"historicalLandings":0,"activeKaro":"hosts/runtime/karo-fixture/","routingBytes":{"full":496,"runtime":416},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
 # {"revision":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","base":"","origin":"https://speedy-away.github.io","bytes":2484,"budget":922746880,"files":4,"offloadedFiles":0,"nativeScriptsUnchanged":0,"cacheManifestAliases":0,"historicalLandings":0,"activeKaro":"hosts/runtime/karo-aaaaaaaaaaaa-bbbbbbbbbbbb/","routingBytes":{"full":599,"runtime":289},"activeRuntimeFiles":0,"sharedCatalogueFiles":0}
 # Subtest: project publishing resolves the home consoles, keeps original native bytes, and offloads exact preserved ZIP paths
-ok 362 - project publishing resolves the home consoles, keeps original native bytes, and offloads exact preserved ZIP paths
+ok 363 - project publishing resolves the home consoles, keeps original native bytes, and offloads exact preserved ZIP paths
   ---
-  duration_ms: 34.4476
+  duration_ms: 39.7854
   type: 'test'
   ...
 # Subtest: original cache files get exact MIME aliases in direct and guarded HTML without changing source files
-ok 363 - original cache files get exact MIME aliases in direct and guarded HTML without changing source files
+ok 364 - original cache files get exact MIME aliases in direct and guarded HTML without changing source files
   ---
-  duration_ms: 15.8251
+  duration_ms: 26.9439
   type: 'test'
   ...
 # Subtest: sender release aliases work both with a retained local ZIP and without its ignored working copy
-ok 364 - sender release aliases work both with a retained local ZIP and without its ignored working copy
+ok 365 - sender release aliases work both with a retained local ZIP and without its ignored working copy
   ---
-  duration_ms: 17.1188
+  duration_ms: 58.405
   type: 'test'
   ...
 # Subtest: authored runtime receipts retain the canonical project prefix without changing native script text
-ok 365 - authored runtime receipts retain the canonical project prefix without changing native script text
+ok 366 - authored runtime receipts retain the canonical project prefix without changing native script text
   ---
-  duration_ms: 0.7001
+  duration_ms: 1.4174
   type: 'test'
   ...
 # Subtest: public launcher JSON remains canonical and private download inventories never enter output
-ok 366 - public launcher JSON remains canonical and private download inventories never enter output
+ok 367 - public launcher JSON remains canonical and private download inventories never enter output
   ---
-  duration_ms: 14.8474
+  duration_ms: 28.994
   type: 'test'
   ...
 # Subtest: six upstream etaHEN CUSA definitions keep exact versions, bytes and creators for five PS4-on-PS5 games
-ok 367 - six upstream etaHEN CUSA definitions keep exact versions, bytes and creators for five PS4-on-PS5 games
+ok 368 - six upstream etaHEN CUSA definitions keep exact versions, bytes and creators for five PS4-on-PS5 games
   ---
-  duration_ms: 5.0428
+  duration_ms: 5.9635
   type: 'test'
   ...
 # Subtest: modified source data is rejected before use and no firmware or BIN/ELF transport is inferred
-ok 368 - modified source data is rejected before use and no firmware or BIN/ELF transport is inferred
+ok 369 - modified source data is rejected before use and no firmware or BIN/ELF transport is inferred
   ---
-  duration_ms: 3.5407
+  duration_ms: 4.44
   type: 'test'
   ...
 # Subtest: receiver 21 preserves every old entry and the exact receiver engine while adding six scoped PS5 IDs
-ok 369 - receiver 21 preserves every old entry and the exact receiver engine while adding six scoped PS5 IDs
+ok 370 - receiver 21 preserves every old entry and the exact receiver engine while adding six scoped PS5 IDs
   ---
-  duration_ms: 13.1991
+  duration_ms: 17.662
   type: 'test'
   ...
 # Subtest: all new exact file IDs resolve through the real console download catalogue and the PS5 host pages
-ok 370 - all new exact file IDs resolve through the real console download catalogue and the PS5 host pages
+ok 371 - all new exact file IDs resolve through the real console download catalogue and the PS5 host pages
   ---
-  duration_ms: 20.3968
+  duration_ms: 150.2666
   type: 'test'
   ...
 # Subtest: remaining PS5 route is the exact source-confirmed subset and does not mutate the original native metadata
-ok 371 - remaining PS5 route is the exact source-confirmed subset and does not mutate the original native metadata
+ok 372 - remaining PS5 route is the exact source-confirmed subset and does not mutate the original native metadata
   ---
-  duration_ms: 2.0241
+  duration_ms: 29.6668
   type: 'test'
   ...
 # Subtest: three disjoint primary PS5 families cover all62 offered exact versions while builtin and Relapse arrays remain unchanged
-ok 372 - three disjoint primary PS5 families cover all62 offered exact versions while builtin and Relapse arrays remain unchanged
+ok 373 - three disjoint primary PS5 families cover all62 offered exact versions while builtin and Relapse arrays remain unchanged
   ---
-  duration_ms: 6.4058
+  duration_ms: 17.1595
   type: 'test'
   ...
 # Subtest: authored subset page uses only the same-origin native runtime and exact6 launcher configuration
-ok 373 - authored subset page uses only the same-origin native runtime and exact6 launcher configuration
+ok 374 - authored subset page uses only the same-origin native runtime and exact6 launcher configuration
   ---
-  duration_ms: 1.045
+  duration_ms: 1.2367
   type: 'test'
   ...
 # Subtest: all6 exact browser versions authorize the unchanged local native entry at root and Pages prefix without evaluating it
-ok 374 - all6 exact browser versions authorize the unchanged local native entry at root and Pages prefix without evaluating it
+ok 375 - all6 exact browser versions authorize the unchanged local native entry at root and Pages prefix without evaluating it
   ---
-  duration_ms: 1.7883
+  duration_ms: 2.253
   type: 'test'
   ...
 # Subtest: primary catalogue links the remaining versions to the guarded local subset rather than an external host
-ok 375 - primary catalogue links the remaining versions to the guarded local subset rather than an external host
+ok 376 - primary catalogue links the remaining versions to the guarded local subset rather than an external host
   ---
-  duration_ms: 20.7344
+  duration_ms: 33.2325
   type: 'test'
   ...
 # Subtest: live HTTP checks resolve project aliases, query strings and immutable external downloads
-ok 376 - live HTTP checks resolve project aliases, query strings and immutable external downloads
+ok 377 - live HTTP checks resolve project aliases, query strings and immutable external downloads
   ---
-  duration_ms: 0.7976
+  duration_ms: 1.1016
   type: 'test'
   ...
 # Subtest: root publication checks resolve old bookmarks through current aliases without changing pinned repositories
-ok 377 - root publication checks resolve old bookmarks through current aliases without changing pinned repositories
+ok 378 - root publication checks resolve old bookmarks through current aliases without changing pinned repositories
   ---
-  duration_ms: 0.2834
+  duration_ms: 0.7013
   type: 'test'
   ...
 # Subtest: receiver PKG links round-trip only exact native origins, saved paths and expected byte sizes
-ok 378 - receiver PKG links round-trip only exact native origins, saved paths and expected byte sizes
+ok 379 - receiver PKG links round-trip only exact native origins, saved paths and expected byte sizes
   ---
-  duration_ms: 3.1092
+  duration_ms: 3.561
   type: 'test'
   ...
 # Subtest: PKG handoff refuses unsupported native hosts while IPv6 receiver downloading remains available
-ok 379 - PKG handoff refuses unsupported native hosts while IPv6 receiver downloading remains available
+ok 380 - PKG handoff refuses unsupported native hosts while IPv6 receiver downloading remains available
   ---
-  duration_ms: 0.3859
+  duration_ms: 0.4521
   type: 'test'
   ...
 # Subtest: PKG handoff rejects archives, ext mounts, traversal, aliases and native-incompatible sizes
-ok 380 - PKG handoff rejects archives, ext mounts, traversal, aliases and native-incompatible sizes
+ok 381 - PKG handoff rejects archives, ext mounts, traversal, aliases and native-incompatible sizes
   ---
-  duration_ms: 1.0122
+  duration_ms: 27.4356
   type: 'test'
   ...
 # Subtest: submission, full transfer, failure and unrelated completion cannot expose install preparation
-ok 381 - submission, full transfer, failure and unrelated completion cannot expose install preparation
+ok 382 - submission, full transfer, failure and unrelated completion cannot expose install preparation
   ---
-  duration_ms: 3.2864
+  duration_ms: 5.038
   type: 'test'
   ...
 # Subtest: completed downloads on unsupported native mount paths keep installation preparation hidden
-ok 382 - completed downloads on unsupported native mount paths keep installation preparation hidden
+ok 383 - completed downloads on unsupported native mount paths keep installation preparation hidden
   ---
-  duration_ms: 1.0184
+  duration_ms: 1.4461
   type: 'test'
   ...
 # Subtest: non-PKG downloads and public previews cannot dispatch installation requests
-ok 383 - non-PKG downloads and public previews cannot dispatch installation requests
+ok 384 - non-PKG downloads and public previews cannot dispatch installation requests
   ---
-  duration_ms: 0.5641
+  duration_ms: 0.5193
   type: 'test'
   ...
 # Subtest: the four GamerHack variants keep exact original downloads, independent game pins and disabled loading
-ok 384 - the four GamerHack variants keep exact original downloads, independent game pins and disabled loading
+ok 385 - the four GamerHack variants keep exact original downloads, independent game pins and disabled loading
   ---
-  duration_ms: 2.415
+  duration_ms: 3.3644
   type: 'test'
   ...
 # Subtest: new builds join the existing menu families without replacing an older build or file hash
-ok 385 - new builds join the existing menu families without replacing an older build or file hash
+ok 386 - new builds join the existing menu families without replacing an older build or file hash
   ---
-  duration_ms: 9.1978
+  duration_ms: 9.7612
   type: 'test'
   ...
 # Subtest: the integrated catalogues preserve historical actions from their separate source catalogues
-ok 386 - the integrated catalogues preserve historical actions from their separate source catalogues
+ok 387 - the integrated catalogues preserve historical actions from their separate source catalogues
   ---
-  duration_ms: 2.1287
+  duration_ms: 25.5512
   type: 'test'
   ...
 # Subtest: RAW GAME source record keeps its exact external contract while active loading stays fully local
-ok 387 - RAW GAME source record keeps its exact external contract while active loading stays fully local
+ok 388 - RAW GAME source record keeps its exact external contract while active loading stays fully local
   ---
-  duration_ms: 2.2871
+  duration_ms: 2.9658
   type: 'test'
   ...
 # Subtest: the BIN bootstrap keeps the existing official GoldHEN 2.3 bytes and only the 9.00 TCP9020 contract
-ok 388 - the BIN bootstrap keeps the existing official GoldHEN 2.3 bytes and only the 9.00 TCP9020 contract
+ok 389 - the BIN bootstrap keeps the existing official GoldHEN 2.3 bytes and only the 9.00 TCP9020 contract
   ---
-  duration_ms: 0.9608
+  duration_ms: 1.2921
   type: 'test'
   ...
 # Subtest: active receiver IDs map to the exact downloadable host bytes while retaining every earlier receiver item
-ok 389 - active receiver IDs map to the exact downloadable host bytes while retaining every earlier receiver item
+ok 390 - active receiver IDs map to the exact downloadable host bytes while retaining every earlier receiver item
   ---
-  duration_ms: 18.4887
+  duration_ms: 22.5392
   type: 'test'
   ...
 # Subtest: the rendered BIN Load stays disabled until the matching paired sender advertises the exact action
-ok 390 - the rendered BIN Load stays disabled until the matching paired sender advertises the exact action
+ok 391 - the rendered BIN Load stays disabled until the matching paired sender advertises the exact action
   ---
-  duration_ms: 16.5974
+  duration_ms: 58.1422
   type: 'test'
   ...
 # Subtest: BIN capability rejects a wrong platform, format or loader port
-ok 391 - BIN capability rejects a wrong platform, format or loader port
+ok 392 - BIN capability rejects a wrong platform, format or loader port
   ---
-  duration_ms: 0.3137
+  duration_ms: 0.6578
   type: 'test'
   ...
 # Subtest: native patch-manager handoff targets only the installed title on this console
-ok 392 - native patch-manager handoff targets only the installed title on this console
+ok 393 - native patch-manager handoff targets only the installed title on this console
   ---
-  duration_ms: 1.2654
+  duration_ms: 0.8856
   type: 'test'
   ...
 # Subtest: exact title downloads retain real file identities without a receiver or XML execution
-ok 393 - exact title downloads retain real file identities without a receiver or XML execution
+ok 394 - exact title downloads retain real file identities without a receiver or XML execution
   ---
-  duration_ms: 29.2977
+  duration_ms: 48.6771
   type: 'test'
   ...
 # Subtest: decorative code performs no storage, request or native action and stays idle on console and reduced motion
-ok 394 - decorative code performs no storage, request or native action and stays idle on console and reduced motion
+ok 395 - decorative code performs no storage, request or native action and stays idle on console and reduced motion
   ---
-  duration_ms: 2.2428
+  duration_ms: 3.0932
   type: 'test'
   ...
 # Subtest: authored pages get Credits and presentation while native documents remain unchanged by the theme adapter
-ok 395 - authored pages get Credits and presentation while native documents remain unchanged by the theme adapter
+ok 396 - authored pages get Credits and presentation while native documents remain unchanged by the theme adapter
   ---
-  duration_ms: 1.4668
+  duration_ms: 2.4531
   type: 'test'
   ...
 # Subtest: Blue Current mounts one inert scene on desktop without network, storage or recurring JavaScript
-ok 396 - Blue Current mounts one inert scene on desktop without network, storage or recurring JavaScript
+ok 397 - Blue Current mounts one inert scene on desktop without network, storage or recurring JavaScript
   ---
-  duration_ms: 0.7921
+  duration_ms: 0.8205
   type: 'test'
   ...
 # Subtest: console browsing has no search control and firmware Load stays text-only and gated without it
-ok 397 - console browsing has no search control and firmware Load stays text-only and gated without it
+ok 398 - console browsing has no search control and firmware Load stays text-only and gated without it
   ---
-  duration_ms: 65.961
+  duration_ms: 106.1925
   type: 'test'
   ...
 # Subtest: console headings omit repeated photos and shared navigation omits KARO and connection shortcuts without changing controls
-ok 398 - console headings omit repeated photos and shared navigation omits KARO and connection shortcuts without changing controls
+ok 399 - console headings omit repeated photos and shared navigation omits KARO and connection shortcuts without changing controls
   ---
-  duration_ms: 2.0313
+  duration_ms: 3.8049
   type: 'test'
   ...
 # Subtest: public host popup exposes source, fork and existing workflow instructions with a project-base-aware asset URL
-ok 399 - public host popup exposes source, fork and existing workflow instructions with a project-base-aware asset URL
+ok 400 - public host popup exposes source, fork and existing workflow instructions with a project-base-aware asset URL
   ---
-  duration_ms: 1.3459
+  duration_ms: 1.3098
   type: 'test'
   ...
 # Subtest: popup insertion is idempotent and leaves native, runtime and migration-redirect documents unchanged
-ok 400 - popup insertion is idempotent and leaves native, runtime and migration-redirect documents unchanged
+ok 401 - popup insertion is idempotent and leaves native, runtime and migration-redirect documents unchanged
   ---
-  duration_ms: 0.9713
+  duration_ms: 2.2365
   type: 'test'
   ...
 # Subtest: caller notes and labels are escaped and unsafe link or project-base configurations are refused
-ok 401 - caller notes and labels are escaped and unsafe link or project-base configurations are refused
+ok 402 - caller notes and labels are escaped and unsafe link or project-base configurations are refused
   ---
-  duration_ms: 0.3928
+  duration_ms: 0.5453
   type: 'test'
   ...
 # Subtest: opening is explicit and Escape restores prior focus and page scrolling
-ok 402 - opening is explicit and Escape restores prior focus and page scrolling
+ok 403 - opening is explicit and Escape restores prior focus and page scrolling
   ---
-  duration_ms: 0.4098
+  duration_ms: 8.1393
   type: 'test'
   ...
 # Subtest: keyboard navigation wraps in both directions and recovers focus that left the open dialog
-ok 403 - keyboard navigation wraps in both directions and recovers focus that left the open dialog
+ok 404 - keyboard navigation wraps in both directions and recovers focus that left the open dialog
   ---
-  duration_ms: 0.1807
+  duration_ms: 0.53
   type: 'test'
   ...
 # Subtest: close control and backdrop dismiss; clicks within the guide leave it open
-ok 404 - close control and backdrop dismiss; clicks within the guide leave it open
+ok 405 - close control and backdrop dismiss; clicks within the guide leave it open
   ---
-  duration_ms: 0.1122
+  duration_ms: 0.1562
   type: 'test'
   ...
 # Subtest: repeated installation and opening do not duplicate handlers or alter the saved scrolling state
-ok 405 - repeated installation and opening do not duplicate handlers or alter the saved scrolling state
+ok 406 - repeated installation and opening do not duplicate handlers or alter the saved scrolling state
   ---
-  duration_ms: 0.0896
+  duration_ms: 0.131
   type: 'test'
   ...
 # Subtest: payload, utility and loader cards omit project images for both consoles while preserving data and controls
-ok 406 - payload, utility and loader cards omit project images for both consoles while preserving data and controls
+ok 407 - payload, utility and loader cards omit project images for both consoles while preserving data and controls
   ---
-  duration_ms: 9.0761
+  duration_ms: 21.307
   type: 'test'
   ...
 # Subtest: game family cards and version previews retain useful artwork without image-role badges
-ok 407 - game family cards and version previews retain useful artwork without image-role badges
+ok 408 - game family cards and version previews retain useful artwork without image-role badges
   ---
-  duration_ms: 2.845
+  duration_ms: 7.2787
   type: 'test'
   ...
 # Subtest: local browser runtime builds retain exact source bytes and explicit platform/firmware guards
-ok 408 - local browser runtime builds retain exact source bytes and explicit platform/firmware guards
+ok 409 - local browser runtime builds retain exact source bytes and explicit platform/firmware guards
   ---
-  duration_ms: 49.377
+  duration_ms: 56.6614
   type: 'test'
   ...
 # Subtest: package host metadata and dynamic public-only URLs use a fixed trusted origin without changing native contracts
-ok 409 - package host metadata and dynamic public-only URLs use a fixed trusted origin without changing native contracts
+ok 410 - package host metadata and dynamic public-only URLs use a fixed trusted origin without changing native contracts
   ---
-  duration_ms: 2.2016
+  duration_ms: 3.1219
   type: 'test'
   ...
 # Subtest: package public route mapping rejects protocol-relative, traversal, encoded path and control overrides
-ok 410 - package public route mapping rejects protocol-relative, traversal, encoded path and control overrides
+ok 411 - package public route mapping rejects protocol-relative, traversal, encoded path and control overrides
   ---
-  duration_ms: 0.3797
+  duration_ms: 0.5249
   type: 'test'
   ...
 # Subtest: sender dynamic navigation uses only predetermined public hosts and leaves local helper pages and payload links local
-ok 411 - sender dynamic navigation uses only predetermined public hosts and leaves local helper pages and payload links local
+ok 412 - sender dynamic navigation uses only predetermined public hosts and leaves local helper pages and payload links local
   ---
-  duration_ms: 11.5956
+  duration_ms: 21.6617
   type: 'test'
   ...
 # Subtest: real PS4/PS5 embedded catalogues keep all transfer and file identity pins after helper routing
-ok 412 - real PS4/PS5 embedded catalogues keep all transfer and file identity pins after helper routing
+ok 413 - real PS4/PS5 embedded catalogues keep all transfer and file identity pins after helper routing
   ---
-  duration_ms: 9.4298
+  duration_ms: 32.665
   type: 'test'
   ...
 # Subtest: overview returns queue count only and keeps native file-manager probes independent of core availability
-ok 413 - overview returns queue count only and keeps native file-manager probes independent of core availability
+ok 414 - overview returns queue count only and keeps native file-manager probes independent of core availability
   ---
-  duration_ms: 18.3478
+  duration_ms: 27.0655
   type: 'test'
   ...
 # Subtest: receiver count requires the bounded native array shape rather than HTTP200 alone
-ok 414 - receiver count requires the bounded native array shape rather than HTTP200 alone
+ok 415 - receiver count requires the bounded native array shape rather than HTTP200 alone
   ---
-  duration_ms: 3.7276
+  duration_ms: 7.9144
   type: 'test'
   ...
 # Subtest: receiver responses cannot exceed64KiB or rely on an unbounded text fallback
-ok 415 - receiver responses cannot exceed64KiB or rely on an unbounded text fallback
+ok 416 - receiver responses cannot exceed64KiB or rely on an unbounded text fallback
   ---
-  duration_ms: 2.0052
+  duration_ms: 2.6187
   type: 'test'
   ...
 # Subtest: stalled metadata bodies time out and do not infer that the console is absent
-ok 416 - stalled metadata bodies time out and do not infer that the console is absent
+ok 417 - stalled metadata bodies time out and do not infer that the console is absent
   ---
-  duration_ms: 19.2591
+  duration_ms: 24.3401
   type: 'test'
   ...
 # Subtest: blocked and missing endpoints stay distinct from unverified network failures
-ok 417 - blocked and missing endpoints stay distinct from unverified network failures
+ok 418 - blocked and missing endpoints stay distinct from unverified network failures
   ---
-  duration_ms: 1.454
+  duration_ms: 1.6575
   type: 'test'
   ...
 # Subtest: file-manager checks accept only bounded HTML responses and expose no directory contents
-ok 418 - file-manager checks accept only bounded HTML responses and expose no directory contents
+ok 419 - file-manager checks accept only bounded HTML responses and expose no directory contents
   ---
-  duration_ms: 0.4311
+  duration_ms: 0.493
   type: 'test'
   ...
 # Subtest: connection-only changes reuse catalogue calculations and preserve open version controls
-ok 419 - connection-only changes reuse catalogue calculations and preserve open version controls
+ok 420 - connection-only changes reuse catalogue calculations and preserve open version controls
   ---
-  duration_ms: 8.7171
+  duration_ms: 13.3252
   type: 'test'
   ...
 # Subtest: firmware and browser detection changes invalidate cached Load availability
-ok 420 - firmware and browser detection changes invalidate cached Load availability
+ok 421 - firmware and browser detection changes invalidate cached Load availability
   ---
-  duration_ms: 1.2032
+  duration_ms: 1.5679
   type: 'test'
   ...
 # Subtest: browser handoff invalidates cached Load tiles and remains locked during later connection edits
-ok 421 - browser handoff invalidates cached Load tiles and remains locked during later connection edits
+ok 422 - browser handoff invalidates cached Load tiles and remains locked during later connection edits
   ---
-  duration_ms: 0.9732
+  duration_ms: 1.0826
   type: 'test'
   ...
 # Subtest: cached catalogue calculations still refresh busy and uncertain Load guards
-ok 422 - cached catalogue calculations still refresh busy and uncertain Load guards
+ok 423 - cached catalogue calculations still refresh busy and uncertain Load guards
   ---
-  duration_ms: 19.0265
+  duration_ms: 38.8063
   type: 'test'
   ...
 # Subtest: Show more appends console tiles without replacing existing focused controls
-ok 423 - Show more appends console tiles without replacing existing focused controls
+ok 424 - Show more appends console tiles without replacing existing focused controls
   ---
-  duration_ms: 1.8358
+  duration_ms: 2.3013
   type: 'test'
   ...
 # Subtest: editing connection settings preserves catalogue tiles and their exact Download selection
-ok 424 - editing connection settings preserves catalogue tiles and their exact Download selection
+ok 425 - editing connection settings preserves catalogue tiles and their exact Download selection
   ---
-  duration_ms: 2.8595
+  duration_ms: 4.6121
   type: 'test'
   ...
 # Subtest: changing a search still replaces the old batch and keeps the exact matching file
-ok 425 - changing a search still replaces the old batch and keeps the exact matching file
+ok 426 - changing a search still replaces the old batch and keeps the exact matching file
   ---
-  duration_ms: 175.7741
+  duration_ms: 180.4505
   type: 'test'
   ...
 # Subtest: raw ELF failures distinguish connection refusal from bytes already offered, without reconnecting
-ok 426 - raw ELF failures distinguish connection refusal from bytes already offered, without reconnecting
+ok 427 - raw ELF failures distinguish connection refusal from bytes already offered, without reconnecting
   ---
-  duration_ms: 7.5753
+  duration_ms: 15.3879
   type: 'test'
   ...
 # Subtest: GoldHEN bridge never retries an ambiguous POST and keeps preflight failures non-executing
-ok 427 - GoldHEN bridge never retries an ambiguous POST and keeps preflight failures non-executing
+ok 428 - GoldHEN bridge never retries an ambiguous POST and keeps preflight failures non-executing
   ---
-  duration_ms: 47.3614
+  duration_ms: 85.5546
   type: 'test'
   ...
 # Subtest: browser GoldHEN distinguishes preflight rejection from a lost execution response
-ok 428 - browser GoldHEN distinguishes preflight rejection from a lost execution response
+ok 429 - browser GoldHEN distinguishes preflight rejection from a lost execution response
   ---
-  duration_ms: 31.3613
+  duration_ms: 30.7684
   type: 'test'
   ...
 # Subtest: ELF URL requests and paired run requests report uncertain after dispatch but inspection never does
-ok 429 - ELF URL requests and paired run requests report uncertain after dispatch but inspection never does
+ok 430 - ELF URL requests and paired run requests report uncertain after dispatch but inspection never does
   ---
-  duration_ms: 46.3649
+  duration_ms: 46.1177
   type: 'test'
   ...
 # Subtest: paired run server errors cannot acknowledge that an execution request was harmless
-ok 430 - paired run server errors cannot acknowledge that an execution request was harmless
+ok 431 - paired run server errors cannot acknowledge that an execution request was harmless
   ---
-  duration_ms: 0.9669
+  duration_ms: 1.4405
   type: 'test'
   ...
 # Subtest: an acknowledgement body cannot leave a sent action pending forever
-ok 431 - an acknowledgement body cannot leave a sent action pending forever
+ok 432 - an acknowledgement body cannot leave a sent action pending forever
   ---
-  duration_ms: 45.4708
+  duration_ms: 45.9338
   type: 'test'
   ...
 # Subtest: a stalled local BIN body times out before an execution request is sent
-ok 432 - a stalled local BIN body times out before an execution request is sent
+ok 433 - a stalled local BIN body times out before an execution request is sent
   ---
-  duration_ms: 15.2559
+  duration_ms: 15.6146
   type: 'test'
   ...
 # Subtest: GoldHEN uses one chooser and retains the supplied exact-byte entry and 33 pinned older builds
-ok 433 - GoldHEN uses one chooser and retains the supplied exact-byte entry and 33 pinned older builds
+ok 434 - GoldHEN uses one chooser and retains the supplied exact-byte entry and 33 pinned older builds
   ---
-  duration_ms: 50.6335
+  duration_ms: 166.0712
   type: 'test'
   ...
 # Subtest: loader tiles and popup omit console artwork and the removed boilerplate
-ok 434 - loader tiles and popup omit console artwork and the removed boilerplate
+ok 435 - loader tiles and popup omit console artwork and the removed boilerplate
   ---
-  duration_ms: 6.0432
+  duration_ms: 6.395
   type: 'test'
   ...
 # Subtest: activity log retains actual transfer progress and errors without claiming execution
-ok 435 - activity log retains actual transfer progress and errors without claiming execution
+ok 436 - activity log retains actual transfer progress and errors without claiming execution
   ---
-  duration_ms: 12.319
+  duration_ms: 13.7384
   type: 'test'
   ...
 # Subtest: filesystem console index redirects to its published page with query and hash
-ok 436 - filesystem console index redirects to its published page with query and hash
+ok 437 - filesystem console index redirects to its published page with query and hash
   ---
-  duration_ms: 1.4438
+  duration_ms: 1.5577
   type: 'test'
   ...
 # Subtest: sender download URLs allow pinned original assets and reject moving, foreign and credential URLs
-ok 437 - sender download URLs allow pinned original assets and reject moving, foreign and credential URLs
+ok 438 - sender download URLs allow pinned original assets and reject moving, foreign and credential URLs
   ---
-  duration_ms: 0.7389
+  duration_ms: 2.5525
   type: 'test'
   ...
 # Subtest: user-file readiness requires the exact sender capability and matching action advertisement
-ok 438 - user-file readiness requires the exact sender capability and matching action advertisement
+ok 439 - user-file readiness requires the exact sender capability and matching action advertisement
   ---
-  duration_ms: 0.7157
+  duration_ms: 1.0017
   type: 'test'
   ...
 # Subtest: the native chooser starts synchronously and returns one exact-size BIN without retaining its temporary input
-ok 439 - the native chooser starts synchronously and returns one exact-size BIN without retaining its temporary input
+ok 440 - the native chooser starts synchronously and returns one exact-size BIN without retaining its temporary input
   ---
-  duration_ms: 0.6346
+  duration_ms: 1.595
   type: 'test'
   ...
 # Subtest: chooser cancellation, empty change and focus return resolve without a file and always clean up
-ok 440 - chooser cancellation, empty change and focus return resolve without a file and always clean up
+ok 441 - chooser cancellation, empty change and focus return resolve without a file and always clean up
   ---
-  duration_ms: 0.8321
+  duration_ms: 0.2473
   type: 'test'
   ...
 # Subtest: chooser rejects wrong size, unsupported extension and multiple files before any transfer helper runs
-ok 441 - chooser rejects wrong size, unsupported extension and multiple files before any transfer helper runs
+ok 442 - chooser rejects wrong size, unsupported extension and multiple files before any transfer helper runs
   ---
-  duration_ms: 0.6276
+  duration_ms: 0.8131
   type: 'test'
   ...
 # Subtest: the rendered file Load never unlocks for an older sender or falls back to fetching the remote URL
-ok 442 - the rendered file Load never unlocks for an older sender or falls back to fetching the remote URL
+ok 443 - the rendered file Load never unlocks for an older sender or falls back to fetching the remote URL
   ---
-  duration_ms: 17.936
+  duration_ms: 32.7116
   type: 'test'
   ...
 # Subtest: valid user-file Load opens its chooser in the click and sends only through the paired file route
-ok 443 - valid user-file Load opens its chooser in the click and sends only through the paired file route
+ok 444 - valid user-file Load opens its chooser in the click and sends only through the paired file route
   ---
-  duration_ms: 1.3708
+  duration_ms: 22.1878
   type: 'test'
   ...
 # Subtest: cancelled or invalid selection releases the Load lock without sending or opening another page
-ok 444 - cancelled or invalid selection releases the Load lock without sending or opening another page
+ok 445 - cancelled or invalid selection releases the Load lock without sending or opening another page
   ---
-  duration_ms: 1.9148
+  duration_ms: 2.8459
   type: 'test'
   ...
 # Subtest: selected-file loading requires a separate explicit Download when copy-on-Load is checked
-ok 445 - selected-file loading requires a separate explicit Download when copy-on-Load is checked
+ok 446 - selected-file loading requires a separate explicit Download when copy-on-Load is checked
   ---
-  duration_ms: 1.4422
+  duration_ms: 3.4559
   type: 'test'
   ...
 # Subtest: configuration changes while choosing a file prevent dispatch to a changed target or pairing session
-ok 446 - configuration changes while choosing a file prevent dispatch to a changed target or pairing session
+ok 447 - configuration changes while choosing a file prevent dispatch to a changed target or pairing session
   ---
-  duration_ms: 2.359
+  duration_ms: 4.2973
   type: 'test'
   ...
 # Subtest: an uncertain selected-file transfer retains the existing warning lock and never retries
-ok 447 - an uncertain selected-file transfer retains the existing warning lock and never retries
+ok 448 - an uncertain selected-file transfer retains the existing warning lock and never retries
   ---
-  duration_ms: 1.0335
+  duration_ms: 1.6787
   type: 'test'
   ...
 # Subtest: the client receives a live state guard that refuses settings changes during asynchronous file verification
-ok 448 - the client receives a live state guard that refuses settings changes during asynchronous file verification
+ok 449 - the client receives a live state guard that refuses settings changes during asynchronous file verification
   ---
-  duration_ms: 0.9595
+  duration_ms: 1.6326
   type: 'test'
   ...
 # Subtest: compact routing preserves exact known paths, directory indexes, immutable release URLs and URL suffixes
-ok 449 - compact routing preserves exact known paths, directory indexes, immutable release URLs and URL suffixes
+ok 450 - compact routing preserves exact known paths, directory indexes, immutable release URLs and URL suffixes
   ---
-  duration_ms: 1.8445
+  duration_ms: 1.8421
   type: 'test'
   ...
 # Subtest: shared catalogues preserve every action field and share one cached file across page configurations
-ok 450 - shared catalogues preserve every action field and share one cached file across page configurations
+ok 451 - shared catalogues preserve every action field and share one cached file across page configurations
   ---
-  duration_ms: 2.7223
+  duration_ms: 5.176
   type: 'test'
   ...
 # Subtest: shared action data keeps console pagination and exact Download choices available without console requests
-ok 451 - shared action data keeps console pagination and exact Download choices available without console requests
+ok 452 - shared action data keeps console pagination and exact Download choices available without console requests
   ---
-  duration_ms: 4.0583
+  duration_ms: 7.524
   type: 'test'
   ...
 # Subtest: missing or mismatched shared data explains the failed load and attaches no execution handlers
-ok 452 - missing or mismatched shared data explains the failed load and attaches no execution handlers
+ok 453 - missing or mismatched shared data explains the failed load and attaches no execution handlers
   ---
-  duration_ms: 0.5599
+  duration_ms: 0.5417
   type: 'test'
   ...
 # Subtest: language picker dismiss closes once and releases its Escape handler
-ok 453 - language picker dismiss closes once and releases its Escape handler
+ok 454 - language picker dismiss closes once and releases its Escape handler
   ---
-  duration_ms: 2.3323
+  duration_ms: 2.3283
   type: 'test'
   ...
 # Subtest: language picker choice closes once and releases its Escape handler
-ok 454 - language picker choice closes once and releases its Escape handler
+ok 455 - language picker choice closes once and releases its Escape handler
   ---
-  duration_ms: 0.6305
+  duration_ms: 0.6913
   type: 'test'
   ...
 # Subtest: language picker outside closes once and releases its Escape handler
-ok 455 - language picker outside closes once and releases its Escape handler
+ok 456 - language picker outside closes once and releases its Escape handler
   ---
-  duration_ms: 0.5347
+  duration_ms: 0.6334
   type: 'test'
   ...
 # Subtest: language picker escape closes once and releases its Escape handler
-ok 456 - language picker escape closes once and releases its Escape handler
+ok 457 - language picker escape closes once and releases its Escape handler
   ---
-  duration_ms: 0.5584
+  duration_ms: 0.588
   type: 'test'
   ...
 # Subtest: live status text and accessible attributes retain the latest English source on language changes
-ok 457 - live status text and accessible attributes retain the latest English source on language changes
+ok 458 - live status text and accessible attributes retain the latest English source on language changes
   ---
-  duration_ms: 4.5593
+  duration_ms: 7.1938
   type: 'test'
   ...
 # Subtest: complete dictionary templates preserve console names and literal filenames without broad prefix translation
-ok 458 - complete dictionary templates preserve console names and literal filenames without broad prefix translation
+ok 459 - complete dictionary templates preserve console names and literal filenames without broad prefix translation
   ---
-  duration_ms: 1.0431
+  duration_ms: 1.7773
   type: 'test'
   ...
 # Subtest: inserted guides translate while code, marked content and user-entered values stay unchanged
-ok 459 - inserted guides translate while code, marked content and user-entered values stay unchanged
+ok 460 - inserted guides translate while code, marked content and user-entered values stay unchanged
   ---
-  duration_ms: 0.7718
+  duration_ms: 2.1734
   type: 'test'
   ...
 # Subtest: dynamic titles and description metadata revert to their newest source instead of stale text
-ok 460 - dynamic titles and description metadata revert to their newest source instead of stale text
+ok 461 - dynamic titles and description metadata revert to their newest source instead of stale text
   ---
-  duration_ms: 0.6507
+  duration_ms: 0.9455
   type: 'test'
   ...
 # Subtest: failed dictionary loads keep the current language and can be retried successfully
-ok 461 - failed dictionary loads keep the current language and can be retried successfully
+ok 462 - failed dictionary loads keep the current language and can be retried successfully
   ---
-  duration_ms: 1.1144
+  duration_ms: 1.0758
   type: 'test'
   ...
 # Subtest: a slow earlier dictionary cannot overwrite a newer choice, including RTL direction
-ok 462 - a slow earlier dictionary cannot overwrite a newer choice, including RTL direction
+ok 463 - a slow earlier dictionary cannot overwrite a newer choice, including RTL direction
   ---
-  duration_ms: 0.5269
+  duration_ms: 0.7853
   type: 'test'
   ...
 # Subtest: validated date captures in translated templates localize while English reset preserves the source
-ok 463 - validated date captures in translated templates localize while English reset preserves the source
+ok 464 - validated date captures in translated templates localize while English reset preserves the source
   ---
-  duration_ms: 14.8667
+  duration_ms: 28.0199
   type: 'test'
   ...
 # Subtest: date template captures retain their literal source when Intl is unavailable
-ok 464 - date template captures retain their literal source when Intl is unavailable
+ok 465 - date template captures retain their literal source when Intl is unavailable
   ---
-  duration_ms: 0.7831
+  duration_ms: 1.1498
   type: 'test'
   ...
 # Subtest: console English releases the mutation observer and restores dynamic translation on language change
-ok 465 - console English releases the mutation observer and restores dynamic translation on language change
+ok 466 - console English releases the mutation observer and restores dynamic translation on language change
   ---
-  duration_ms: 0.7132
+  duration_ms: 1.1185
   type: 'test'
   ...
 # Subtest: PS4 firmware routes stay local and preserve exact matrices without intermediate versions
-ok 466 - PS4 firmware routes stay local and preserve exact matrices without intermediate versions
+ok 467 - PS4 firmware routes stay local and preserve exact matrices without intermediate versions
   ---
-  duration_ms: 26.593
+  duration_ms: 40.2616
   type: 'test'
   ...
 # Subtest: one trusted PS4 Load gesture authorizes the existing native entry and stays on this site
-ok 467 - one trusted PS4 Load gesture authorizes the existing native entry and stays on this site
+ok 468 - one trusted PS4 Load gesture authorizes the existing native entry and stays on this site
   ---
-  duration_ms: 20.011
+  duration_ms: 33.2989
   type: 'test'
   ...
 # Subtest: a desktop cannot start the local console chain
-ok 468 - a desktop cannot start the local console chain
+ok 469 - a desktop cannot start the local console chain
   ---
-  duration_ms: 17.3073
+  duration_ms: 30.8575
   type: 'test'
   ...
 # Subtest: ordinary records do not become approved external hosts
-ok 469 - ordinary records do not become approved external hosts
+ok 470 - ordinary records do not become approved external hosts
   ---
-  duration_ms: 0.2416
+  duration_ms: 0.3395
   type: 'test'
   ...
 # Subtest: retained PS4 bookmarks offer Load through a same-origin controller and preserve advanced listeners
-ok 470 - retained PS4 bookmarks offer Load through a same-origin controller and preserve advanced listeners
+ok 471 - retained PS4 bookmarks offer Load through a same-origin controller and preserve advanced listeners
   ---
-  duration_ms: 0.2177
+  duration_ms: 0.277
   type: 'test'
   ...
 # Subtest: PS5 firmware choices expose the exact browser run entry; standalone ELF stays under payloads
-ok 471 - PS5 firmware choices expose the exact browser run entry; standalone ELF stays under payloads
+ok 472 - PS5 firmware choices expose the exact browser run entry; standalone ELF stays under payloads
   ---
-  duration_ms: 2.1192
+  duration_ms: 4.244
   type: 'test'
   ...
 # Subtest: one PS5 Load press records the selected firmware and opens the console entry in the same tab
-ok 472 - one PS5 Load press records the selected firmware and opens the console entry in the same tab
+ok 473 - one PS5 Load press records the selected firmware and opens the console entry in the same tab
   ---
-  duration_ms: 5.4593
+  duration_ms: 5.7383
   type: 'test'
   ...
 # Subtest: manual firmware mismatch refuses a Load request and unsupported firmware offers no browser chain
-ok 473 - manual firmware mismatch refuses a Load request and unsupported firmware offers no browser chain
+ok 474 - manual firmware mismatch refuses a Load request and unsupported firmware offers no browser chain
   ---
-  duration_ms: 0.9711
+  duration_ms: 1.0699
   type: 'test'
   ...
 # Subtest: launch request is consumed once, requires matching firmware/referrer, and refuses stale or restored navigation
-ok 474 - launch request is consumed once, requires matching firmware/referrer, and refuses stale or restored navigation
+ok 475 - launch request is consumed once, requires matching firmware/referrer, and refuses stale or restored navigation
   ---
-  duration_ms: 6.9009
+  duration_ms: 8.9834
   type: 'test'
   ...
 # Subtest: PS5 gate follows the native parser and refuses PCs, PS4, unsupported and unparseable version strings
-ok 475 - PS5 gate follows the native parser and refuses PCs, PS4, unsupported and unparseable version strings
+ok 476 - PS5 gate follows the native parser and refuses PCs, PS4, unsupported and unparseable version strings
   ---
-  duration_ms: 2.6497
+  duration_ms: 3.466
   type: 'test'
   ...
 # Subtest: authorized entry reveals the console log and starts once after dependencies; dependency errors remain visible
-ok 476 - authorized entry reveals the console log and starts once after dependencies; dependency errors remain visible
+ok 477 - authorized entry reveals the console log and starts once after dependencies; dependency errors remain visible
   ---
-  duration_ms: 5.4229
+  duration_ms: 6.7352
   type: 'test'
   ...
 # Subtest: PS5 authored entry checksums are current and original exploit scripts remain separate from navigation controls
-ok 477 - PS5 authored entry checksums are current and original exploit scripts remain separate from navigation controls
+ok 478 - PS5 authored entry checksums are current and original exploit scripts remain separate from navigation controls
   ---
-  duration_ms: 2.0728
+  duration_ms: 6.318
   type: 'test'
   ...
 # Subtest: PS5 waits for firmware offsets before starting, and reports an offset load timeout without running the chain
-ok 478 - PS5 waits for firmware offsets before starting, and reports an offset load timeout without running the chain
+ok 479 - PS5 waits for firmware offsets before starting, and reports an offset load timeout without running the chain
   ---
-  duration_ms: 2.3296
+  duration_ms: 2.7502
   type: 'test'
   ...
 # Subtest: six native PPSA JSON definitions retain exact source bytes, game versions and creator credits
-ok 479 - six native PPSA JSON definitions retain exact source bytes, game versions and creator credits
+ok 480 - six native PPSA JSON definitions retain exact source bytes, game versions and creator credits
   ---
-  duration_ms: 6.3653
+  duration_ms: 7.3752
   type: 'test'
   ...
 # Subtest: game-specific validation rejects wrong versions/processes, unrelated IDs and arbitrary JSON option labels
-ok 480 - game-specific validation rejects wrong versions/processes, unrelated IDs and arbitrary JSON option labels
+ok 481 - game-specific validation rejects wrong versions/processes, unrelated IDs and arbitrary JSON option labels
   ---
-  duration_ms: 0.6672
+  duration_ms: 0.7569
   type: 'test'
   ...
 # Subtest: licence and naming instructions accompany ready files while all six prior host cheats remain unchanged
-ok 481 - licence and naming instructions accompany ready files while all six prior host cheats remain unchanged
+ok 482 - licence and naming instructions accompany ready files while all six prior host cheats remain unchanged
   ---
-  duration_ms: 3.2249
+  duration_ms: 3.5313
   type: 'test'
   ...
 # Subtest: source host metadata is retained without making external hosts active Load routes
-ok 482 - source host metadata is retained without making external hosts active Load routes
+ok 483 - source host metadata is retained without making external hosts active Load routes
   ---
-  duration_ms: 20.1265
+  duration_ms: 29.3349
   type: 'test'
   ...
 # Subtest: every offered PS5 firmware has an available local Load route and unsupported gaps stay absent
-ok 483 - every offered PS5 firmware has an available local Load route and unsupported gaps stay absent
+ok 484 - every offered PS5 firmware has an available local Load route and unsupported gaps stay absent
   ---
-  duration_ms: 10.6514
+  duration_ms: 21.438
   type: 'test'
   ...
 # Subtest: 13.60 selects a local native PS5 entry and remains inert until trusted Load
-ok 484 - 13.60 selects a local native PS5 entry and remains inert until trusted Load
+ok 485 - 13.60 selects a local native PS5 entry and remains inert until trusted Load
   ---
-  duration_ms: 17.4907
+  duration_ms: 19.6807
   type: 'test'
   ...
 # Subtest: on-site UMTX2 arms its original kernel mode from the same-origin Load gesture
-ok 485 - on-site UMTX2 arms its original kernel mode from the same-origin Load gesture
+ok 486 - on-site UMTX2 arms its original kernel mode from the same-origin Load gesture
   ---
-  duration_ms: 52.7285
+  duration_ms: 82.8972
   type: 'test'
   ...
 # Subtest: the builtin23 firmware family retains its own one-use local Load request contract
-ok 486 - the builtin23 firmware family retains its own one-use local Load request contract
+ok 487 - the builtin23 firmware family retains its own one-use local Load request contract
   ---
-  duration_ms: 7.7399
+  duration_ms: 10.149
   type: 'test'
   ...
 # Subtest: PS5 exact whitelist includes10.60 and rejects gaps/wrongconsole
-ok 487 - PS5 exact whitelist includes10.60 and rejects gaps/wrongconsole
+ok 488 - PS5 exact whitelist includes10.60 and rejects gaps/wrongconsole
   ---
-  duration_ms: 0.4898
+  duration_ms: 0.9624
   type: 'test'
   ...
 # Subtest: run path stays exact and same-origin atroot andPagesprefix
-ok 488 - run path stays exact and same-origin atroot andPagesprefix
+ok 489 - run path stays exact and same-origin atroot andPagesprefix
   ---
-  duration_ms: 0.3872
+  duration_ms: 0.6616
   type: 'test'
   ...
 # Subtest: captured source native andlicence bytes unchanged
-ok 489 - captured source native andlicence bytes unchanged
+ok 490 - captured source native andlicence bytes unchanged
   ---
-  duration_ms: 6.1312
+  duration_ms: 9.3427
   type: 'test'
   ...
 # Subtest: unarmed PC run creates no original script element
-ok 490 - unarmed PC run creates no original script element
+ok 491 - unarmed PC run creates no original script element
   ---
-  duration_ms: 0.3833
+  duration_ms: 0.5358
   type: 'test'
   ...
 # Subtest: trusted matching PS5 click hands off locally and stages scripts in original order without evaluating them
-ok 491 - trusted matching PS5 click hands off locally and stages scripts in original order without evaluating them
+ok 492 - trusted matching PS5 click hands off locally and stages scripts in original order without evaluating them
   ---
-  duration_ms: 0.7718
+  duration_ms: 1.2446
   type: 'test'
   ...
 # Subtest: different preparations with the same receiver version retain every exact job set
-ok 492 - different preparations with the same receiver version retain every exact job set
+ok 493 - different preparations with the same receiver version retain every exact job set
   ---
-  duration_ms: 5.0289
+  duration_ms: 6.8721
   type: 'test'
   ...
 # Subtest: large sender delivery uses an immutable release and keeps the original working ZIP
-ok 493 - large sender delivery uses an immutable release and keeps the original working ZIP
+ok 494 - large sender delivery uses an immutable release and keeps the original working ZIP
   ---
-  duration_ms: 3.1268
+  duration_ms: 3.2667
   type: 'test'
   ...
 # Subtest: every exact console firmware route authorizes only after Load and stays on this origin
-ok 494 - every exact console firmware route authorizes only after Load and stays on this origin
+ok 495 - every exact console firmware route authorizes only after Load and stays on this origin
   ---
-  duration_ms: 35.6486
+  duration_ms: 67.7693
   type: 'test'
   ...
 # Subtest: a repeat KARO attempt retains the original restart guard
-ok 495 - a repeat KARO attempt retains the original restart guard
+ok 496 - a repeat KARO attempt retains the original restart guard
   ---
-  duration_ms: 10.6104
+  duration_ms: 15.9418
   type: 'test'
   ...
 # Subtest: GoldHEN receipt starts the genuine form exactly once and selects the supplied payload
-ok 496 - GoldHEN receipt starts the genuine form exactly once and selects the supplied payload
+ok 497 - GoldHEN receipt starts the genuine form exactly once and selects the supplied payload
   ---
-  duration_ms: 0.3373
+  duration_ms: 0.4663
   type: 'test'
   ...
 # Subtest: stale, cross-origin, hidden, restored and mismatched GoldHEN receipts remain inert
-ok 497 - stale, cross-origin, hidden, restored and mismatched GoldHEN receipts remain inert
+ok 498 - stale, cross-origin, hidden, restored and mismatched GoldHEN receipts remain inert
   ---
-  duration_ms: 0.2698
+  duration_ms: 0.4093
   type: 'test'
   ...
 # Subtest: PS4 and PS5 show firmware controls only in Choose firmware; other tabs show their content directly
-ok 498 - PS4 and PS5 show firmware controls only in Choose firmware; other tabs show their content directly
+ok 499 - PS4 and PS5 show firmware controls only in Choose firmware; other tabs show their content directly
   ---
-  duration_ms: 3.6206
+  duration_ms: 3.934
   type: 'test'
   ...
 # Subtest: GoldHEN one-use receipt works on the renamed lowercase Pages path
-ok 499 - GoldHEN one-use receipt works on the renamed lowercase Pages path
+ok 500 - GoldHEN one-use receipt works on the renamed lowercase Pages path
   ---
-  duration_ms: 0.2965
+  duration_ms: 0.1836
   type: 'test'
   ...
 # Subtest: only builtin PS5 UMTX uses its own trusted dashboard ticket, with every exact firmware pinned
-ok 500 - only builtin PS5 UMTX uses its own trusted dashboard ticket, with every exact firmware pinned
+ok 501 - only builtin PS5 UMTX uses its own trusted dashboard ticket, with every exact firmware pinned
   ---
-  duration_ms: 31.4189
+  duration_ms: 50.6255
   type: 'test'
   ...
 # Subtest: ELF validation rejects incompatible identity, machine and corrupt header tables
-ok 501 - ELF validation rejects incompatible identity, machine and corrupt header tables
+ok 502 - ELF validation rejects incompatible identity, machine and corrupt header tables
   ---
-  duration_ms: 2.0034
+  duration_ms: 2.3804
   type: 'test'
   ...
 # Subtest: ELF validation catches truncated PT_LOAD bytes and impossible memory sizes
-ok 502 - ELF validation catches truncated PT_LOAD bytes and impossible memory sizes
+ok 503 - ELF validation catches truncated PT_LOAD bytes and impossible memory sizes
   ---
-  duration_ms: 0.306
+  duration_ms: 0.2373
   type: 'test'
   ...
 # Subtest: static report covers runnable files and download-only bootstrap, rejects corruption and hides absolute paths
-ok 503 - static report covers runnable files and download-only bootstrap, rejects corruption and hides absolute paths
+ok 504 - static report covers runnable files and download-only bootstrap, rejects corruption and hides absolute paths
   ---
-  duration_ms: 9.8132
+  duration_ms: 19.1665
   type: 'test'
   ...
-1..503
-# tests 503
+1..504
+# tests 504
 # suites 0
-# pass 503
+# pass 504
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 123379.8232
+# duration_ms 115187.2867
