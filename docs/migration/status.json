@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-03T23:52:30.759Z",
-  "repository": "Speedy-away/WWB-HOST",
-  "site": "https://speedy-away.github.io/WWB-HOST/",
+  "updatedAt": "2026-11-04T01:42:52.161Z",
+  "repository": "Speedy-away/speedy-away.github.io",
+  "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Published and verified: illustrated home, original-loader routing and caches, Load/Download URLs, retained versions and main-site handoff.",
+  "status": "Validated root-domain site and sender releases; final deployment pending",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -1077,7 +1077,7 @@
     }
   },
   "rootDomainRedesign20261104": {
-    "status": "Validated, immutable sender release and root deployment pending",
+    "status": "Validated root-domain site and sender releases; final deployment pending",
     "repository": "Speedy-away/speedy-away.github.io",
     "site": "https://speedy-away.github.io/",
     "review": "docs/migration/root-redesign-review.json",
@@ -1096,20 +1096,20 @@
       "revision": "main",
       "base": "",
       "origin": "https://speedy-away.github.io",
-      "bytes": 864269978,
+      "bytes": 864207239,
       "budget": 922746880,
-      "files": 6191,
-      "offloadedFiles": 286,
+      "files": 6199,
+      "offloadedFiles": 288,
       "nativeScriptsUnchanged": 898,
       "cacheManifestAliases": 7,
       "historicalLandings": 804,
       "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
       "routingBytes": {
-        "full": 1027541,
-        "runtime": 243606
+        "full": 1029276,
+        "runtime": 244502
       },
       "activeRuntimeFiles": 319,
-      "sharedCatalogueFiles": 3
+      "sharedCatalogueFiles": 4
     },
     "archive": {
       "items": 5007,
@@ -1123,6 +1123,9 @@
     "physicalConsoleVerified": false,
     "receiver": "2026.11.02.21",
     "ps4OnPS5Definitions": 6,
-    "ps4OnPS5Games": 5
-  }
+    "ps4OnPS5Games": 5,
+    "senderReleaseVerified": true
+  },
+  "previousRepository": "Speedy-away/WWB-HOST",
+  "previousProjectSite": "https://speedy-away.github.io/WWB-HOST/"
 }

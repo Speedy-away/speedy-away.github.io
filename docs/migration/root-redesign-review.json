@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T01:40:30.653Z",
-  "status": "Design and compatibility expansion validated; final sender release and root deployment pending",
+  "updatedAt": "2026-11-04T01:42:52.160Z",
+  "status": "Ready for final root deployment; full tests, immutable release delivery and archive checks passed",
   "source": "22b518676fe15b99331c6395c57f809257003fc7",
   "destination": "ea3fd69fbc864f262692685403736a9334df95b3",
   "mergeCommit": "f15752de0c18816a835ec51ab7a0de54ea47bc1f",
@@ -96,7 +96,8 @@
     "actions": 191,
     "releaseTag": "sender-2.1.0-25d5c9f0d403",
     "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip"
+    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "releaseAssetId": 707815088
   },
   "mainSite": "Two console hub metadata/link edits prepared locally; red CSS and existing host redirects untouched.",
   "limits": [
@@ -106,20 +107,20 @@
     "revision": "main",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864269978,
+    "bytes": 864207239,
     "budget": 922746880,
-    "files": 6191,
-    "offloadedFiles": 286,
+    "files": 6199,
+    "offloadedFiles": 288,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1027541,
-      "runtime": 243606
+      "full": 1029276,
+      "runtime": 244502
     },
     "activeRuntimeFiles": 319,
-    "sharedCatalogueFiles": 3
+    "sharedCatalogueFiles": 4
   },
   "archive": {
     "items": 5007,
@@ -247,5 +248,40 @@
     "engineBytesUnchanged": true,
     "physicalConsole": false,
     "activated": true
-  }
+  },
+  "senderReleases": [
+    {
+      "verifiedAt": "2026-11-04T01:34:45.009Z",
+      "version": "2.1.0+ca2a37472b36",
+      "name": "console-payload-sender-2.1.0-ca2a37472b36.zip",
+      "bytes": 107647211,
+      "sha256": "cdacbbf0d669f9a9857e01763bad9fdaf93a1a88b9bf1084ac6955a56de9f2b9",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+ca2a37472b36\\console-payload-sender-2.1.0-ca2a37472b36.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-ca2a37472b36",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-ca2a37472b36/console-payload-sender-2.1.0-ca2a37472b36.zip",
+      "assetId": 707797468,
+      "serverDigest": "sha256:cdacbbf0d669f9a9857e01763bad9fdaf93a1a88b9bf1084ac6955a56de9f2b9",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
+    },
+    {
+      "verifiedAt": "2026-11-04T01:42:20.227Z",
+      "version": "2.1.0+25d5c9f0d403",
+      "name": "console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "bytes": 107657508,
+      "sha256": "3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+25d5c9f0d403\\console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-25d5c9f0d403",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+      "assetId": 707815088,
+      "serverDigest": "sha256:3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
+    }
+  ],
+  "sourceWorkingTreeClean": true
 }
