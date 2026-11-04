@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T01:42:52.161Z",
+  "updatedAt": "2026-11-04T01:53:13.980Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Validated root-domain site and sender releases; final deployment pending",
+  "status": "Published and live verified at the root domain",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,17 +14,23 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "468339255178965af15d2cc484550eb0917a8419",
-    "base": "/WWB-HOST",
+    "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
+    "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 842068498,
+    "bytes": 864298138,
     "budget": 922746880,
-    "files": 5568,
-    "offloadedFiles": 274,
-    "nativeScriptsUnchanged": 848,
+    "files": 6199,
+    "offloadedFiles": 288,
+    "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
-    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1038636,
+      "runtime": 253862
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
   },
   "publication": {
     "pagesEnabled": true,
@@ -54,11 +60,11 @@
     "links": [
       "./hosts/ps4/",
       "./hosts/ps5/",
-      "./hosts/karo/",
+      "./hosts/credits/",
       "https://whatwhatboy.com/"
     ],
     "noRedirect": true,
-    "imageCount": 6
+    "browserRenderVerified": true
   },
   "retainedVersionsPage": {
     "file": "hosts/karo/versions.html",
@@ -81,38 +87,20 @@
     "hardwareExecutionVerified": false
   },
   "senderReleaseDelivery": {
-    "verifiedAt": "2026-11-03T20:17:05.459Z",
-    "version": "2.1.0+8d8bda70ee88",
-    "name": "console-payload-sender-2.1.0-8d8bda70ee88.zip",
-    "bytes": 106736981,
-    "sha256": "e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
-    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip",
-    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\WWB HOST\\Helpers\\2.1.0+8d8bda70ee88\\console-payload-sender-2.1.0-8d8bda70ee88.zip",
-    "release": "https://github.com/Speedy-away/WWB-HOST/releases/tag/sender-2.1.0-8d8bda70ee88",
-    "downloadURL": "https://github.com/Speedy-away/WWB-HOST/releases/download/sender-2.1.0-8d8bda70ee88/console-payload-sender-2.1.0-8d8bda70ee88.zip",
-    "assetId": 706948768,
-    "serverDigest": "sha256:e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
+    "verifiedAt": "2026-11-04T01:42:20.227Z",
+    "version": "2.1.0+25d5c9f0d403",
+    "name": "console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "bytes": 107657508,
+    "sha256": "3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+25d5c9f0d403\\console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-25d5c9f0d403",
+    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "assetId": 707815088,
+    "serverDigest": "sha256:3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
     "zipUnchanged": true,
     "archiveVerified": true,
-    "downloadedCodeExecuted": false,
-    "publication": "Release asset and direct Pages download link verified.",
-    "testsPassed": 67,
-    "oversizedGitFiles": 0,
-    "archiveIndex": {
-      "mode": "write",
-      "backupRoot": "F:\\whatsite-backup-downloads-etc",
-      "items": 4868,
-      "fileRecords": 5993,
-      "presentFileRecords": 5993,
-      "missingFileRecords": 0,
-      "missingPaths": 0,
-      "otherUnavailableRecords": 0,
-      "availability": {
-        "present": 5993
-      }
-    },
-    "sourceCommit": "2b42a834ae209db1779c2c26aee8585de765ce21",
-    "allOlderZIPsAndReleasesPreserved": true
+    "downloadedCodeExecuted": false
   },
   "hostGallery20261103": {
     "status": "Published; shared image-led page theme also verified on all authored host pages.",
@@ -934,10 +922,9 @@
     "report": "docs/qa/console-load-audit.json"
   },
   "canonicalPagesSite": {
-    "url": "https://speedy-away.github.io/wwb-host/",
-    "verifiedOldUppercasePathStatus": 404,
-    "reason": "Repository canonical name changed to wwb-host during the authorized push; published prefix follows Pages API html_url",
-    "updatedAt": "2026-11-03T23:42:12.673Z"
+    "url": "https://speedy-away.github.io/",
+    "updatedAt": "2026-11-04T01:53:13.980Z",
+    "previousProjectURL": "https://speedy-away.github.io/wwb-host/"
   },
   "restInteractionPerformance20261103": {
     "status": "Published and live verified",
@@ -1077,7 +1064,7 @@
     }
   },
   "rootDomainRedesign20261104": {
-    "status": "Validated root-domain site and sender releases; final deployment pending",
+    "status": "Published and live verified at the root domain",
     "repository": "Speedy-away/speedy-away.github.io",
     "site": "https://speedy-away.github.io/",
     "review": "docs/migration/root-redesign-review.json",
@@ -1093,10 +1080,10 @@
       "log": "docs/qa/root-redesign-tests.tap"
     },
     "build": {
-      "revision": "main",
+      "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
       "base": "",
       "origin": "https://speedy-away.github.io",
-      "bytes": 864207239,
+      "bytes": 864298138,
       "budget": 922746880,
       "files": 6199,
       "offloadedFiles": 288,
@@ -1105,8 +1092,8 @@
       "historicalLandings": 804,
       "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
       "routingBytes": {
-        "full": 1029276,
-        "runtime": 244502
+        "full": 1038636,
+        "runtime": 253862
       },
       "activeRuntimeFiles": 319,
       "sharedCatalogueFiles": 4
@@ -1124,8 +1111,88 @@
     "receiver": "2026.11.02.21",
     "ps4OnPS5Definitions": 6,
     "ps4OnPS5Games": 5,
-    "senderReleaseVerified": true
+    "senderReleaseVerified": true,
+    "deployment": {
+      "id": 41755985410,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41755985410",
+      "conclusion": "success",
+      "commit": "6f5b64fa942bb547a2c8b40d381b3e478454f236"
+    },
+    "liveVerification": {
+      "core": "docs/qa/root-live-verification.json",
+      "preservedURLs": "docs/migration/public-http-verification.json",
+      "publicURLsVerified": 1553,
+      "failures": 0
+    },
+    "completedAt": "2026-11-04T01:53:13.980Z"
   },
   "previousRepository": "Speedy-away/WWB-HOST",
-  "previousProjectSite": "https://speedy-away.github.io/WWB-HOST/"
+  "previousProjectSite": "https://speedy-away.github.io/WWB-HOST/",
+  "previousProjectPages": {
+    "revision": "468339255178965af15d2cc484550eb0917a8419",
+    "base": "/WWB-HOST",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 842068498,
+    "budget": 922746880,
+    "files": 5568,
+    "offloadedFiles": 274,
+    "nativeScriptsUnchanged": 848,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+  },
+  "previousProjectHome": {
+    "file": "index.html",
+    "title": "WWB HOST | PS4 & PS5",
+    "links": [
+      "./hosts/ps4/",
+      "./hosts/ps5/",
+      "./hosts/karo/",
+      "https://whatwhatboy.com/"
+    ],
+    "noRedirect": true,
+    "imageCount": 6
+  },
+  "previousSenderReleaseDelivery": {
+    "verifiedAt": "2026-11-03T20:17:05.459Z",
+    "version": "2.1.0+8d8bda70ee88",
+    "name": "console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "bytes": 106736981,
+    "sha256": "e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\WWB HOST\\Helpers\\2.1.0+8d8bda70ee88\\console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "release": "https://github.com/Speedy-away/WWB-HOST/releases/tag/sender-2.1.0-8d8bda70ee88",
+    "downloadURL": "https://github.com/Speedy-away/WWB-HOST/releases/download/sender-2.1.0-8d8bda70ee88/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "assetId": 706948768,
+    "serverDigest": "sha256:e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
+    "zipUnchanged": true,
+    "archiveVerified": true,
+    "downloadedCodeExecuted": false,
+    "publication": "Release asset and direct Pages download link verified.",
+    "testsPassed": 67,
+    "oversizedGitFiles": 0,
+    "archiveIndex": {
+      "mode": "write",
+      "backupRoot": "F:\\whatsite-backup-downloads-etc",
+      "items": 4868,
+      "fileRecords": 5993,
+      "presentFileRecords": 5993,
+      "missingFileRecords": 0,
+      "missingPaths": 0,
+      "otherUnavailableRecords": 0,
+      "availability": {
+        "present": 5993
+      }
+    },
+    "sourceCommit": "2b42a834ae209db1779c2c26aee8585de765ce21",
+    "allOlderZIPsAndReleasesPreserved": true
+  },
+  "currentPublication": {
+    "id": 41755985410,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41755985410",
+    "conclusion": "success",
+    "commit": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
+    "verifiedAt": "2026-11-04T01:48:04.230Z",
+    "physicalConsoleVerified": false
+  }
 }

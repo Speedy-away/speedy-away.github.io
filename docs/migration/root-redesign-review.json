@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-11-04T01:42:52.160Z",
-  "status": "Ready for final root deployment; full tests, immutable release delivery and archive checks passed",
+  "status": "Published and live verified",
   "source": "22b518676fe15b99331c6395c57f809257003fc7",
   "destination": "ea3fd69fbc864f262692685403736a9334df95b3",
   "mergeCommit": "f15752de0c18816a835ec51ab7a0de54ea47bc1f",
@@ -30,6 +30,10 @@
       {
         "name": "home.jpg",
         "bytes": 58006
+      },
+      {
+        "name": "live-home.jpg",
+        "bytes": 57640
       },
       {
         "name": "mobile-ps5.jpg",
@@ -99,15 +103,22 @@
     "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
     "releaseAssetId": 707815088
   },
-  "mainSite": "Two console hub metadata/link edits prepared locally; red CSS and existing host redirects untouched.",
+  "mainSite": {
+    "site": "https://whatwhatboy.com/",
+    "commit": "483b6393cac0b3a7615e2ffc0dadc9774f073eb6",
+    "deployment": "https://github.com/Speedy-away/whatsite/actions/runs/41753458318",
+    "rootSidebarAndConsoleMetadataVerified": true,
+    "redThemeRetained": true,
+    "hostRedirectsRegenerated": false
+  },
   "limits": [
     "No physical console, native payload execution, measured console FPS or hardware transfer verification."
   ],
   "build": {
-    "revision": "main",
+    "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864207239,
+    "bytes": 864298138,
     "budget": 922746880,
     "files": 6199,
     "offloadedFiles": 288,
@@ -116,8 +127,8 @@
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1029276,
-      "runtime": 244502
+      "full": 1038636,
+      "runtime": 253862
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -283,5 +294,19 @@
       "downloadedCodeExecuted": false
     }
   ],
-  "sourceWorkingTreeClean": true
+  "sourceWorkingTreeClean": true,
+  "completedAt": "2026-11-04T01:53:13.980Z",
+  "deployment": {
+    "id": 41755985410,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41755985410",
+    "conclusion": "success",
+    "commit": "6f5b64fa942bb547a2c8b40d381b3e478454f236"
+  },
+  "live": {
+    "core": "docs/qa/root-live-verification.json",
+    "preservedURLs": "docs/migration/public-http-verification.json",
+    "publicURLsVerified": 1553,
+    "failures": 0
+  },
+  "migrationMethod": "Bounded resumable Git upload; the proposed temporary contents-write workflow was declined and never installed."
 }

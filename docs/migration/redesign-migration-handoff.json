@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T00:49:16.743Z",
-  "status": "Integration checkpoint for the user-requested new redesign/migration chat; publish the finished redesign at the new root domain.",
+  "updatedAt": "2026-11-04T01:53:13.980Z",
+  "status": "Completed: root-domain redesign, preserved history, verified source expansion, helper releases, deployment and live checks.",
   "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
   "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
   "publicURL": "https://speedy-away.github.io/",
@@ -18,60 +18,67 @@
     "Migrate the complete preserved host repository/history to the existing speedy-away.github.io repository. Retain the old repo and all old downloads/releases; do not overwrite its destination .git or remove source history."
   ],
   "build": {
-    "directory": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/wwb-migration-checkpoint-20261104",
-    "status": "passed",
-    "bytes": 863570471,
-    "publicLinks": 3839,
-    "localRuntimeConfigs": 38,
-    "runtimeHandoffConfigs": 2,
+    "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 864298138,
+    "budget": 922746880,
+    "files": 6199,
+    "offloadedFiles": 288,
     "nativeScriptsUnchanged": 898,
-    "cachedResources": 1536,
-    "pinnedRuntimeFiles": 319,
-    "issues": 0
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1038636,
+      "runtime": 253862
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
   },
   "tests": {
-    "preFinalRemoteMerge": {
-      "tests": 367,
-      "passed": 367
-    },
-    "postMergeInitial": {
-      "tests": 393,
-      "passed": 389,
-      "failed": 4
-    },
-    "pending": "All source regressions are resolved. Rebuild/version/archive/release the latest helper only after the new redesign and root-domain routing are frozen, then rerun the complete suite with no test-name exclusions.",
-    "mergedSource": {
-      "tests": 393,
-      "passed": 393,
-      "failed": 0,
-      "log": "tmp/host-migration-checkpoint-tests.tap",
-      "excluded": "Strict current-helper snapshot equality is intentionally deferred until the redesign/new-domain helper rebuild; it remains intact in the test source."
-    }
+    "files": 71,
+    "tests": 490,
+    "pass": 490,
+    "fail": 0,
+    "skipped": 0,
+    "command": "node scripts/test-root-host.cjs",
+    "log": "docs/qa/root-redesign-tests.tap",
+    "pending": []
   },
   "archive": {
-    "items": 4997,
-    "fileRecords": 8616,
-    "present": 8616,
+    "items": 5007,
+    "fileRecords": 8626,
+    "present": 8626,
     "missing": 0,
-    "note": "Six stale paths were repaired from explicit verified relocation history. No files restored, fetched, moved or deleted."
+    "olderVersionsPreserved": true
   },
   "receiver": {
-    "version": "2026.11.02.20",
+    "version": "2026.11.02.21",
     "activated": true,
     "ps4Items": 542,
-    "ps5Items": 350,
-    "oldRecordsPreserved": 588,
-    "retainedGoldHENNativeMappings": 33,
+    "ps5Items": 356,
+    "oldCatalogueRowsPreserved": 588,
+    "oldPS4ReceiverRowsPreserved": 542,
+    "oldPS5ReceiverRowsPreserved": 350,
     "engineBytesUnchanged": true
   },
   "sender": {
-    "version": "2.1.0+4642d2affd19",
-    "bytes": 106840279,
-    "sha256": "5295c1c33d14f3fb069da7cf074a51b24315750afcef243c63b96d8e2ba5fdd8",
-    "release": "https://github.com/Speedy-away/wwb-host/releases/tag/sender-2.1.0-4642d2affd19",
-    "archived": true,
-    "published": true,
-    "note": "This exact immutable helper was built before the final newer remote UI merge; preserve it and every earlier snapshot. Rebuild/version/archive/release a new helper after redesign. ZIPs >=95 MiB stay ignored in Git."
+    "id": "console-payload-sender-25d5c9f0d403",
+    "name": "console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "version": "2.1.0+25d5c9f0d403",
+    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "source": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "bytes": 107657508,
+    "sha256": "3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
+    "snapshot": "25d5c9f0d403c8e16c7f84fd1a6c88e26b7a8b7ba59c4856e22c91250c3fb978",
+    "files": 1591,
+    "payloads": 131,
+    "actions": 191,
+    "releaseTag": "sender-2.1.0-25d5c9f0d403",
+    "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
+    "releaseAssetId": 707815088
   },
   "migrationRisks": [
     "BASE must become empty for the new root site. Adapt publisher, verifier, canonical URLs, JSON runtime/handoff fields, 404 and generated Home links together; root Home must not redirect to whatwhatboy.com.",
@@ -114,5 +121,84 @@
     "homepageLanguageMountRestored": true,
     "sourceFrozen": true,
     "pushedOldSite": false
+  },
+  "previousCheckpointTests": {
+    "preFinalRemoteMerge": {
+      "tests": 367,
+      "passed": 367
+    },
+    "postMergeInitial": {
+      "tests": 393,
+      "passed": 389,
+      "failed": 4
+    },
+    "pending": "All source regressions are resolved. Rebuild/version/archive/release the latest helper only after the new redesign and root-domain routing are frozen, then rerun the complete suite with no test-name exclusions.",
+    "mergedSource": {
+      "tests": 393,
+      "passed": 393,
+      "failed": 0,
+      "log": "tmp/host-migration-checkpoint-tests.tap",
+      "excluded": "Strict current-helper snapshot equality is intentionally deferred until the redesign/new-domain helper rebuild; it remains intact in the test source."
+    }
+  },
+  "previousCheckpointSender": {
+    "version": "2.1.0+4642d2affd19",
+    "bytes": 106840279,
+    "sha256": "5295c1c33d14f3fb069da7cf074a51b24315750afcef243c63b96d8e2ba5fdd8",
+    "release": "https://github.com/Speedy-away/wwb-host/releases/tag/sender-2.1.0-4642d2affd19",
+    "archived": true,
+    "published": true,
+    "note": "This exact immutable helper was built before the final newer remote UI merge; preserve it and every earlier snapshot. Rebuild/version/archive/release a new helper after redesign. ZIPs >=95 MiB stay ignored in Git."
+  },
+  "previousCheckpointBuild": {
+    "directory": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/wwb-migration-checkpoint-20261104",
+    "status": "passed",
+    "bytes": 863570471,
+    "publicLinks": 3839,
+    "localRuntimeConfigs": 38,
+    "runtimeHandoffConfigs": 2,
+    "nativeScriptsUnchanged": 898,
+    "cachedResources": 1536,
+    "pinnedRuntimeFiles": 319,
+    "issues": 0
+  },
+  "previousCheckpointArchive": {
+    "items": 4997,
+    "fileRecords": 8616,
+    "present": 8616,
+    "missing": 0,
+    "note": "Six stale paths were repaired from explicit verified relocation history. No files restored, fetched, moved or deleted."
+  },
+  "completion": {
+    "completedAt": "2026-11-04T01:53:13.980Z",
+    "deployment": {
+      "id": 41755985410,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41755985410",
+      "conclusion": "success",
+      "commit": "6f5b64fa942bb547a2c8b40d381b3e478454f236"
+    },
+    "live": {
+      "core": "docs/qa/root-live-verification.json",
+      "preservedURLs": "docs/migration/public-http-verification.json",
+      "publicURLsVerified": 1553,
+      "failures": 0
+    },
+    "review": "docs/migration/root-redesign-review.json",
+    "mainSite": {
+      "site": "https://whatwhatboy.com/",
+      "commit": "483b6393cac0b3a7615e2ffc0dadc9774f073eb6",
+      "deployment": "https://github.com/Speedy-away/whatsite/actions/runs/41753458318",
+      "rootSidebarAndConsoleMetadataVerified": true,
+      "redThemeRetained": true,
+      "hostRedirectsRegenerated": false
+    },
+    "newPS4OnPS5Definitions": 6,
+    "newPS4OnPS5Games": 5,
+    "sourceUnchangedAt": "22b518676fe15b99331c6395c57f809257003fc7",
+    "destinationOriginalHistory": "ea3fd69fbc864f262692685403736a9334df95b3",
+    "allOriginalSourceBranchesContained": true,
+    "temporaryWriteWorkflowInstalled": false,
+    "temporaryWriteWorkflowDeclined": true,
+    "physicalConsoleTested": false
   }
 }
