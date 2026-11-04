@@ -1,7 +1,7 @@
 {
   "adCoverage20261104": {
     "date": "2026-11-04",
-    "status": "Host ad initialization order repaired; publishing",
+    "status": "Published 2c7180b and live verified: all 60 authored host ad placements pass HTTP checks; root/PS4/PS5 show four native ads at 1920px and 390px widths",
     "fix": "Create the existing native provider container before its async script on all authored host pages. Native runtimes and downloads excluded.",
     "tests": 5,
     "build": {
@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T04:42:10.669Z",
+  "updatedAt": "2026-11-04T12:24:07.155Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -1475,5 +1475,14 @@
       }
     },
     "liveReport": "docs/qa/remove-guides-live.json"
+  },
+  "metadata20261104": {
+    "status": "Locally verified; publishing",
+    "report": "docs/migration/host-metadata-review.json",
+    "metadataPages": 67,
+    "indexableSitemapURLs": 19,
+    "testsPassed": 40,
+    "nativeFilesChanged": 0,
+    "downloadFilesChanged": 0
   }
 }
