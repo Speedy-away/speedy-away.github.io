@@ -17,4 +17,7 @@ body.host-patches-page{margin:0;background:#11151c;color:#e8edf5;font:16px/1.55 
 .host-patch-information .host-patch-options li:first-child{border-top:0}
 .host-patch-engine{display:flex;align-items:center;flex-wrap:wrap;gap:8px 18px;margin:30px 0 0;padding-top:20px;border-top:1px solid #344258;color:#a4b7d1;font-size:13px}
 .host-patch-engine span{color:#9eafc7}
+.host-patch-library-actions{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0}
+.host-patch-library-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid #557cae;border-radius:6px;color:#d9e9ff;background:#203b60;text-decoration:none;font-weight:600}
+.host-patch-library-actions a:hover{background:#2b4c77}
 @media(max-width:600px){#host-patch-overlay{padding:14px}.host-patch-dialog{max-height:calc(100vh - 28px)}.host-patch-primary-actions{gap:10px}.host-patch-primary-actions button,.host-patch-primary-actions a{min-height:56px;font-size:18px}}

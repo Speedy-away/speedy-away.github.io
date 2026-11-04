@@ -1,0 +1,106 @@
+{
+  "updatedAt": "2026-11-04T13:32:11.158Z",
+  "status": "Locally verified; publishing",
+  "requestedSource": "https://github.com/illusionyy/PS-Game-Patch/tree/65914503123d4e643aa5aa0e8c720de8e99ef7e8/patches/xml",
+  "repository": "https://github.com/illusionyy/PS-Game-Patch",
+  "revision": "65914503123d4e643aa5aa0e8c720de8e99ef7e8",
+  "sourceXMLFiles": 169,
+  "sourceBytes": 611930,
+  "sourceOptions": 533,
+  "officialTitleFiles": 387,
+  "pages": [
+    {
+      "platform": "ps4",
+      "games": 165,
+      "files": 382
+    },
+    {
+      "platform": "ps5",
+      "games": 169,
+      "files": 392
+    }
+  ],
+  "legacyCataloguePreserved": true,
+  "legacyEngineFirmwarePinsPreserved": true,
+  "coverage": "Every source XML and Metadata option retained. Ready XML bytes match the pinned official archive; title-specific option/region bindings remain exact.",
+  "ui": [
+    "Complete ZIP download",
+    "Option-name, author, note, title-ID and game search",
+    "Selected-title option list, including non-FPS patches and AppElf",
+    "RDR2 all5options and120Hz note retained",
+    "99 existing cover paths preserved;68 new local typographic SVGs",
+    "Console pagination remains18;desktop36;short tile update summaries retain full detail"
+  ],
+  "checks": {
+    "focusedTestsPassed": 45,
+    "failed": 0,
+    "sourceGitAndSHA256": "passed",
+    "renderedAndOfflineCoverage": "passed",
+    "nativeRuntimeFilesChanged": 0,
+    "existingDownloadsChanged": 0,
+    "helperSnapshotUnchanged": "5d74a8e3ebeb52af3a6202a08828f732ebdbd23ddcf54ec3191ad5f1dd6a0a94",
+    "helperVersionsRetained": 47,
+    "desktopDialog": "All5RDR2options andsourcecaveat visiblyverified",
+    "phoneLayout": "390px PS4 page count165 andZIP/search usable"
+  },
+  "archive": {
+    "items": 5694,
+    "fileRecords": 9311,
+    "missing": 0,
+    "unavailable": 0,
+    "xmlJobs": 556,
+    "sourceCopies": 169,
+    "readyCopiesVerifiedReused": 387,
+    "rootBaselineRetained": {
+      "items": 5017,
+      "fileRecords": 8636
+    },
+    "newerFBaseRetained": {
+      "items": 5138,
+      "fileRecords": 8755,
+      "additionalFPSIDs": 121
+    }
+  },
+  "build": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 872350073,
+    "budget": 922746880,
+    "files": 6932,
+    "offloadedFiles": 300,
+    "nativeScriptsUnchanged": 959,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1141290,
+      "runtime": 262395
+    },
+    "activeRuntimeFiles": 409,
+    "sharedCatalogueFiles": 4,
+    "offlinePacks": [
+      {
+        "platform": "ps4",
+        "version": "a20346ce040c7ccc98ac3288",
+        "files": 1981,
+        "bytes": 42927732,
+        "patchXMLs": 382,
+        "trainerDefinitions": 1181
+      },
+      {
+        "platform": "ps5",
+        "version": "ddf50721af38c52ec1a2d221",
+        "files": 738,
+        "bytes": 16276648,
+        "patchXMLs": 392,
+        "trainerDefinitions": 0
+      }
+    ]
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "consoleExecution": false
+}

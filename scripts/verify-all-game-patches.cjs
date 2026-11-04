@@ -1,0 +1,14 @@
+'use strict';
+// Verify definition data and rendered metadata only. Never load a console engine.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),parse=require('./import-all-game-patches.cjs').parsePatch,builder=require('./build-host-game-patches.cjs');
+const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex'),blob=bytes=>crypto.createHash('sha1').update(Buffer.concat([Buffer.from('blob '+bytes.length+'\0'),bytes])).digest('hex');
+function verify(output){const full=JSON.parse(fs.readFileSync(path.join(root,'docs/host-all-game-patches.json'))),data=builder.loadData(root),source=new Map();let options=0;
+ for(const file of full.sourceFiles){const bytes=fs.readFileSync(path.join(output,file.local));assert.equal(bytes.length,file.bytes,file.path);assert.equal(sha(bytes),file.sha256,file.path);assert.equal(blob(bytes),file.gitBlobSHA1,file.path);const parsed=parse(bytes.toString('utf8'));assert.equal(parsed.options.length,file.optionCount,file.path);source.set(file.path,parsed);options+=parsed.options.length;}
+ assert.equal(source.size,full.counts.sourceFiles);assert.equal(options,full.counts.options);assert.equal(new Set(full.games.map(game=>game.id)).size,full.games.length);let titleFiles=0;
+ for(const resource of full.resources){const bytes=fs.readFileSync(path.join(output,resource.local));assert.equal(bytes.length,resource.bytes,resource.id);assert.equal(sha(bytes),resource.sha256,resource.id);const parsed=parse(bytes.toString('utf8'));for(const name of resource.sourcePaths)assert.equal(parsed.signature,source.get(name).signature,resource.id);titleFiles++;}
+ assert.equal(titleFiles,full.counts.titleFiles);const pages=[];
+ for(const platform of ['ps4','ps5']){const html=fs.readFileSync(path.join(output,'hosts',platform,'patches/index.html'),'utf8'),embedded=JSON.parse(html.match(/<script id="host-patches-data"[^>]*>([\s\S]*?)<\/script>/)[1]),expected=JSON.parse(JSON.stringify(builder.catalog(data,platform))),pack=JSON.parse(fs.readFileSync(path.join(output,'offline',platform+'.json'))),offline=new Map(pack.files.map(file=>[file.url,file]));assert.deepEqual(embedded.games,expected);assert.ok(html.includes('href="'+full.vendorArchive.url+'" download>Download all patch XMLs (ZIP)'));let files=0;for(const game of expected)for(const file of game.files){assert.ok(offline.has(file.url),platform+' missing offline patch '+file.url);assert.equal(offline.get(file.url).sha256,file.sha256);files++;}pages.push({platform,games:expected.length,titleFiles:files,offlineCovered:true});}
+ const report={status:'passed',sourceXMLFiles:source.size,sourceOptions:options,officialTitleFiles:titleFiles,pages,issues:0};console.log(JSON.stringify(report));return report;
+}
+if(require.main===module)verify(path.resolve(process.argv[2]));module.exports={verify};

@@ -27,6 +27,8 @@ jobs:
         run: node scripts/verify-host-metadata.cjs "$RUNNER_TEMP/wwb-host-pages"
       - name: Verify offline file identities and exploit cache closure
         run: node scripts/verify-host-offline.cjs "$RUNNER_TEMP/wwb-host-pages"
+      - name: Verify complete game patch definitions and offline coverage
+        run: node scripts/verify-all-game-patches.cjs "$RUNNER_TEMP/wwb-host-pages"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ runner.temp }}/wwb-host-pages

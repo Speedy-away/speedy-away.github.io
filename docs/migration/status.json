@@ -12,11 +12,11 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T13:04:09.682Z",
+  "updatedAt": "2026-11-04T13:32:11.160Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "PS4 and PS5 offline caching published and live verified",
+  "status": "Complete upstream game patch collection verified; publishing",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -1535,5 +1535,21 @@
     "deployment": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41833968033",
     "liveReport": "docs/qa/offline-cache-live.json",
     "liveCacheURLsVerified": 2083
+  },
+  "allGamePatches20261104": {
+    "status": "Locally verified; publishing",
+    "report": "docs/migration/all-game-patches-review.json",
+    "revision": "65914503123d4e643aa5aa0e8c720de8e99ef7e8",
+    "sourceXMLFiles": 169,
+    "sourceOptions": 533,
+    "titleFiles": 387,
+    "ps4Games": 165,
+    "ps5Games": 169,
+    "helperRepackRequired": false,
+    "archive": {
+      "items": 5694,
+      "files": 9311,
+      "missing": 0
+    }
   }
 }
