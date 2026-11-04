@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T02:10:00.060Z",
+  "updatedAt": "2026-11-04T02:14:54.228Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "All local and download delivery checks passed; ready for main publication",
+  "status": "Published and live verified",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,20 +14,20 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
+    "revision": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864298138,
+    "bytes": 864310037,
     "budget": 922746880,
     "files": 6199,
-    "offloadedFiles": 288,
+    "offloadedFiles": 290,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1038636,
-      "runtime": 253862
+      "full": 1039106,
+      "runtime": 254332
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -1188,12 +1188,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41755985410,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41755985410",
+    "id": 41758985535,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41758985535",
     "conclusion": "success",
-    "commit": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
-    "verifiedAt": "2026-11-04T01:48:04.230Z",
-    "physicalConsoleVerified": false
+    "commit": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
+    "verifiedAt": "2026-11-04T02:14:54.228Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1203,10 +1202,18 @@
     "filesSHA256Verified": 211089,
     "bytesSHA256Verified": 55838474903,
     "privateFilesRestoredAtActivePaths": 13,
-    "oldRemoteRepositoryStillRequired": true
+    "oldRemoteRepositoryStillRequired": true,
+    "activeGitStoreIndependent": true,
+    "restoredInventoryTestsPassed": 3,
+    "scopedArchiveCheck": {
+      "sidecars": 2,
+      "items": 1,
+      "files": 1,
+      "readOnly": true
+    }
   },
   "loadMotionUpdate": {
-    "status": "All local and download delivery checks passed; ready for main publication",
+    "status": "Published and live verified",
     "review": "docs/migration/load-motion-review.json",
     "regression": {
       "files": 71,
@@ -1223,6 +1230,15 @@
       "presentFileRecords": 8628,
       "missingFileRecords": 0
     },
-    "senderVersion": "2.1.0+a9ba4920dc2b"
+    "senderVersion": "2.1.0+a9ba4920dc2b",
+    "live": {
+      "core": "docs/qa/root-live-verification.json",
+      "preservedURLs": "docs/migration/public-http-verification.json",
+      "publicURLsVerified": 1553,
+      "failures": 0,
+      "presentationHashesVerified": true,
+      "immutableSenderAssetHTTP": 200
+    },
+    "completedAt": "2026-11-04T02:14:54.228Z"
   }
 }

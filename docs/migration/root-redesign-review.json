@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T01:42:52.160Z",
+  "updatedAt": "2026-11-04T02:14:54.228Z",
   "status": "Published and live verified",
   "source": "22b518676fe15b99331c6395c57f809257003fc7",
   "destination": "ea3fd69fbc864f262692685403736a9334df95b3",
@@ -16,7 +16,7 @@
     "authoredPages": 66,
     "artwork": "docs/migration/redesign-artwork.json",
     "payloads": "Cards and version popups outlined and image-free, including tools cross-listed in Payloads",
-    "motion": "Four CSS-transform symbols; absent on PS4/PS5 and reduced motion. No canvas, WebGL, video or recurring JS timers."
+    "motion": "Blue Current: three CSS orbital currents and four floating symbols. No decoration on console/reduced motion/native runtime documents; no canvas, video, requests or recurring JS."
   },
   "visual": {
     "browser": "Supported in-app browser enabled by user after initial Windows-browser policy block",
@@ -60,16 +60,16 @@
         "bytes": 108548
       }
     ],
-    "physicalConsole": false
+    "physicalConsole": false,
+    "latestLiveScreenshot": "docs/screenshots/load-motion-20261104/live-load.jpg"
   },
   "tests": {
     "files": 71,
-    "tests": 490,
-    "pass": 490,
+    "tests": 492,
+    "pass": 492,
     "fail": 0,
     "skipped": 0,
-    "command": "node scripts/test-root-host.cjs",
-    "log": "docs/qa/root-redesign-tests.tap"
+    "evidence": "docs/qa/load-motion-tests.tap"
   },
   "nativePreservation": {
     "changedRuntimeFiles": 0,
@@ -87,21 +87,28 @@
     "flow": "Exact title-ID download/receiver handoff; native manager on port 23900 after compatible ELF loader on 9021. No XML execution or installation claims."
   },
   "sender": {
-    "id": "console-payload-sender-25d5c9f0d403",
-    "name": "console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "version": "2.1.0+25d5c9f0d403",
-    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "source": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "bytes": 107657508,
-    "sha256": "3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
-    "snapshot": "25d5c9f0d403c8e16c7f84fd1a6c88e26b7a8b7ba59c4856e22c91250c3fb978",
-    "files": 1591,
-    "payloads": 131,
-    "actions": 191,
-    "releaseTag": "sender-2.1.0-25d5c9f0d403",
-    "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "releaseAssetId": 707815088
+    "latest": "2.1.0+a9ba4920dc2b",
+    "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+    "bytes": 107657801,
+    "versions": 41,
+    "allPriorVersionsRetained": true,
+    "delivery": {
+      "verifiedAt": "2026-11-04T02:09:39.488Z",
+      "version": "2.1.0+a9ba4920dc2b",
+      "name": "console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "bytes": 107657801,
+      "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+a9ba4920dc2b\\console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-a9ba4920dc2b",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-a9ba4920dc2b/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "assetId": 707887304,
+      "serverDigest": "sha256:84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
+    },
+    "publicDownloadVerified": true
   },
   "mainSite": {
     "site": "https://whatwhatboy.com/",
@@ -115,30 +122,29 @@
     "No physical console, native payload execution, measured console FPS or hardware transfer verification."
   ],
   "build": {
-    "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
+    "revision": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864298138,
+    "bytes": 864310037,
     "budget": 922746880,
     "files": 6199,
-    "offloadedFiles": 288,
+    "offloadedFiles": 290,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1038636,
-      "runtime": 253862
+      "full": 1039106,
+      "runtime": 254332
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
   },
   "archive": {
-    "items": 5007,
-    "fileRecords": 8626,
-    "present": 8626,
-    "missing": 0,
-    "olderVersionsPreserved": true
+    "items": 5009,
+    "fileRecords": 8628,
+    "presentFileRecords": 8628,
+    "missingFileRecords": 0
   },
   "ps4OnPS5": {
     "updatedAt": "2026-11-04T01:26:24.695Z",
@@ -297,16 +303,20 @@
   "sourceWorkingTreeClean": true,
   "completedAt": "2026-11-04T01:53:13.980Z",
   "deployment": {
-    "id": 41755985410,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41755985410",
+    "id": 41758985535,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41758985535",
     "conclusion": "success",
-    "commit": "6f5b64fa942bb547a2c8b40d381b3e478454f236"
+    "commit": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
+    "verifiedAt": "2026-11-04T02:14:54.228Z"
   },
   "live": {
     "core": "docs/qa/root-live-verification.json",
     "preservedURLs": "docs/migration/public-http-verification.json",
     "publicURLsVerified": 1553,
-    "failures": 0
+    "failures": 0,
+    "presentationHashesVerified": true,
+    "immutableSenderAssetHTTP": 200
   },
-  "migrationMethod": "Bounded resumable Git upload; the proposed temporary contents-write workflow was declined and never installed."
+  "migrationMethod": "Bounded resumable Git upload; the proposed temporary contents-write workflow was declined and never installed.",
+  "followupReview": "docs/migration/load-motion-review.json"
 }

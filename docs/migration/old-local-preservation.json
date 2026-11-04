@@ -171,7 +171,23 @@
     "historicalMigrationNote": "These retained one-time migration tools still name the historical target folder. They are not part of the active site, publisher, or test runner and should not be rerun as current deployment commands.",
     "separateHistoricalTestSource": "Some tests use WHATSITE_PROVENANCE_ROOT or sibling whatsite for historical evidence; that separate repository was not deleted.",
     "oldRemoteRepositoryMustRemain": true,
-    "oldRemoteReason": "Pinned historical raw.githubusercontent.com and GitHub release URLs still use Speedy-away/WWB-HOST. Removing only the old local folder is supported."
+    "oldRemoteReason": "Pinned historical raw.githubusercontent.com and GitHub release URLs still use Speedy-away/WWB-HOST. Removing only the old local folder is supported.",
+    "activeDestinationGitIndependence": {
+      "root": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
+      "commonDir": "C:\\Users\\whatw\\Documents\\GitHub\\speedy-away.github.io\\.git",
+      "commonInsideCheckout": true,
+      "objectAlternates": false,
+      "objectAlternatesEnvironment": false,
+      "privateSnapshotIgnored": true
+    },
+    "restoredInventoryValidation": {
+      "metadataMergeTests": 3,
+      "passed": 3,
+      "scopedArchiveSidecars": 2,
+      "scopedArchiveItems": 1,
+      "scopedArchiveFiles": 1,
+      "readOnly": true
+    }
   },
   "localMaintenanceRestoration": {
     "completedAt": "2026-11-04T02:08:16.874Z",

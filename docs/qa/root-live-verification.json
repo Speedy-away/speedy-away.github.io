@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-11-04T01:48:04.230Z",
+  "verifiedAt": "2026-11-04T02:13:04.660Z",
   "status": "passed",
   "site": "https://speedy-away.github.io/",
-  "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
+  "revision": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
   "pages": [
     {
       "path": "/",
@@ -29,29 +29,40 @@
       "status": 200
     }
   ],
+  "presentation": [
+    {
+      "path": "assets/host-playstation.css",
+      "sha256": "a837a3d89b32ebefe52083a7b4f9c55908cfa0e5b39c82be63e808b0f1815b2f"
+    },
+    {
+      "path": "assets/host-playstation.js",
+      "sha256": "e93af282b544f10b1473b77b84f631577795471769de66ba52accece0cdf1bb6"
+    }
+  ],
+  "noConsoleSearch": true,
   "artworkHashes": 6,
   "cheatFileHashes": 6,
   "receiverHashes": 2,
   "sourceConfirmedNewPS5Actions": 6,
-  "senderVersion": "2.1.0+25d5c9f0d403",
-  "senderVersionsPreserved": 39,
+  "senderVersion": "2.1.0+a9ba4920dc2b",
+  "senderVersionsPreserved": 41,
   "immutableSenderAssetHTTP": 200,
   "rootRawRepositoryVerified": true,
   "publicBuild": {
-    "revision": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
+    "revision": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864298138,
+    "bytes": 864310037,
     "budget": 922746880,
     "files": 6199,
-    "offloadedFiles": 288,
+    "offloadedFiles": 290,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1038636,
-      "runtime": 253862
+      "full": 1039106,
+      "runtime": 254332
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4

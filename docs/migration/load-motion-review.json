@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T02:10:00.060Z",
-  "status": "All local and download delivery checks passed; ready for main publication",
+  "updatedAt": "2026-11-04T02:14:54.228Z",
+  "status": "Published and live verified",
   "requests": [
     "Enlarge and center the firmware Load control",
     "Remove the Search this console bar",
@@ -44,9 +44,11 @@
     "ps4AndPS5FirmwareSelectionReviewed": true,
     "screenshots": [
       "docs/screenshots/load-motion-20261104/desktop-load.jpg",
-      "docs/screenshots/load-motion-20261104/mobile-load.jpg"
+      "docs/screenshots/load-motion-20261104/mobile-load.jpg",
+      "docs/screenshots/load-motion-20261104/live-load.jpg"
     ],
-    "sevenCSSAnimationsRunningVerified": true
+    "sevenCSSAnimationsRunningVerified": true,
+    "liveReviewed": true
   },
   "regression": {
     "files": 71,
@@ -96,6 +98,49 @@
     "filesSHA256Verified": 211089,
     "bytesSHA256Verified": 55838474903,
     "privateFilesRestoredAtActivePaths": 13,
-    "oldRemoteRepositoryStillRequired": true
+    "oldRemoteRepositoryStillRequired": true,
+    "activeGitStoreIndependent": true,
+    "restoredInventoryTestsPassed": 3,
+    "scopedArchiveCheck": {
+      "sidecars": 2,
+      "items": 1,
+      "files": 1,
+      "readOnly": true
+    }
+  },
+  "completedAt": "2026-11-04T02:14:54.228Z",
+  "deployment": {
+    "id": 41758985535,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41758985535",
+    "conclusion": "success",
+    "commit": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
+    "verifiedAt": "2026-11-04T02:14:54.228Z"
+  },
+  "build": {
+    "revision": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 864310037,
+    "budget": 922746880,
+    "files": 6199,
+    "offloadedFiles": 290,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1039106,
+      "runtime": 254332
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "live": {
+    "core": "docs/qa/root-live-verification.json",
+    "preservedURLs": "docs/migration/public-http-verification.json",
+    "publicURLsVerified": 1553,
+    "failures": 0,
+    "presentationHashesVerified": true,
+    "immutableSenderAssetHTTP": 200
   }
 }
