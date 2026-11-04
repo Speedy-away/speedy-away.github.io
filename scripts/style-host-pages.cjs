@@ -22,18 +22,25 @@ function themeHTML(html,name){
  if(!html.includes('host-pages.css'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/host-pages.css?v=2">\n</head>');
  if(!/<body[^>]*class="[^"]*\bwwb-host-page\b/.test(html))html=html.replace(/<body([^>]*)>/,(_,attrs)=>'<body'+(/class="/.test(attrs)?attrs.replace(/class="/, 'class="wwb-host-page '):attrs+' class="wwb-host-page"')+'>');
  html=html.replace(/wwb-host-page wwb-host-page /g,'wwb-host-page ');
- if(!html.includes('class="host-taskbar"'))html=html.replace(/<body[^>]*>/,m=>m+'<nav class="host-taskbar" aria-label="Host navigation"><a class="host-taskbar-brand" href="/index.html">WWB HOST</a><a href="/hosts/ps4/">PS4</a><a href="/hosts/ps5/">PS5</a><a href="/hosts/karo/">KARO</a><a href="https://whatwhatboy.com/">Main site</a></nav>');
+ if(!html.includes('class="host-taskbar"'))html=html.replace(/<body[^>]*>/,m=>m+'<nav class="host-taskbar" aria-label="Host navigation"><a class="host-taskbar-brand" href="/index.html">WWB HOST</a><a href="/hosts/ps4/">PS4</a><a href="/hosts/ps5/">PS5</a><a href="https://whatwhatboy.com/">Main site</a></nav>');
+ html=html.replace(/(<nav\b[^>]*class="[^\"]*\b(?:host-taskbar|host-workbench-nav)\b[^\"]*"[^>]*>)([\s\S]*?)(<\/nav>)/g,(_,open,links,close)=>open+links.replace(/<a\b[^>]*href="(?:https:\/\/speedy-away\.github\.io)?\/(?:(?:WWB-HOST|wwb-host)\/)?hosts\/karo\/(?:index\.html)?(?:[?#][^\"]*)?"[^>]*>[\s\S]*?<\/a>/gi,'')+close);
+ if(/^hosts\/ps[45]\//.test(name))html=html.replace(/<a\b[^>]*class="[^\"]*\b(?:host-header-connection|host-top-settings)\b[^\"]*"[^>]*>[\s\S]*?<\/a>/g,'');
  html=html.replace(/(<a\b[^>]*class="host-taskbar-brand"[^>]*>)[^<]*(<\/a>)/g,'$1WWB HOST$2');
  html=html.replace(/(<a\b[^>]*class="host-top-brand"[^>]*>)[\s\S]*?<\/a>/g,'$1<img src="/assets/images/logo.png" alt="" width="32" height="32"><span>WWB HOST</span></a>');
  html=html.replace(/<a\b[^>]*class="(?:host-taskbar-brand|host-top-brand)"[^>]*>/g,tag=>tag.replace(/href="[^"]*"/,'href="https://speedy-away.github.io/"'));
  if(!html.includes('href="/hosts/credits/"'))html=html.replace(/(<nav\b[^>]*class="host-taskbar"[^>]*>[\s\S]*?)(<\/nav>)/,'$1<a href="/hosts/credits/">Credits</a>$2');
  if(!html.includes('host-playstation.css'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/host-playstation.css?v=1"><script defer src="/assets/host-playstation.js?v=1"></script></head>');
+ // Console photographs belong to the home picker, rather than every console heading.
+ if(/^hosts\/ps[45]\//.test(name))html=html.replace(/<header\b([^>]*\bdata-wwb-image-heading\b[^>]*)>([\s\S]*?)<\/header>/g,(whole,attrs,inner)=>{
+  const content=inner.replace(/<figure\b[^>]*class="wwb-heading-art"[^>]*>[\s\S]*?<\/figure>/g,figure=>/host-selector\/whatwhatboy-ps[45]\.jpg/.test(figure)?'':figure);
+  return content===inner?whole:'<header'+attrs.replace(/\bdata-wwb-image-heading\b/,'data-wwb-text-heading')+'>'+content+'</header>';
+ });
  // compact-launcher-heading: firmware families and launch controls need no decorative hero.
  if(/\/(?:exploit|afterglow|firmware)\//.test(name))return html;
- const start=html.indexOf('<main');if(start<0||html.includes('data-wwb-image-heading'))return html;
- let before=html.slice(0,start),content=html.slice(start),[src,alt]=artwork(name);const image='<figure class="wwb-heading-art"><img src="/assets/images/'+src+'" alt="'+alt+'" decoding="async" width="640" height="360"></figure>';
- if(/<header\b/.test(content))content=content.replace(/<header([^>]*)>([\s\S]*?)<\/header>/,(_,attrs,inner)=>'<header'+attrs+' data-wwb-image-heading><div class="wwb-heading-copy">'+inner+'</div>'+image+'</header>');
- else content=content.replace(/<h1([^>]*)>([\s\S]*?)<\/h1>/,(_,attrs,title)=>'<header data-wwb-image-heading><div class="wwb-heading-copy"><h1'+attrs+'>'+title+'</h1></div>'+image+'</header>');
+ const start=html.indexOf('<main');if(start<0||html.includes('data-wwb-image-heading')||html.includes('data-wwb-text-heading'))return html;
+ let before=html.slice(0,start),content=html.slice(start),[src,alt]=artwork(name);const consoleHeading=/^hosts\/ps[45]\//.test(name)&&/^host-selector\/whatwhatboy-ps[45]\.jpg$/.test(src),heading=consoleHeading?'data-wwb-text-heading':'data-wwb-image-heading',image=consoleHeading?'':'<figure class="wwb-heading-art"><img src="/assets/images/'+src+'" alt="'+alt+'" decoding="async" width="640" height="360"></figure>';
+ if(/<header\b/.test(content))content=content.replace(/<header([^>]*)>([\s\S]*?)<\/header>/,(_,attrs,inner)=>'<header'+attrs+' '+heading+'><div class="wwb-heading-copy">'+inner+'</div>'+image+'</header>');
+ else content=content.replace(/<h1([^>]*)>([\s\S]*?)<\/h1>/,(_,attrs,title)=>'<header '+heading+'><div class="wwb-heading-copy"><h1'+attrs+'>'+title+'</h1></div>'+image+'</header>');
  return before+content;
 }
 function contract(html){return JSON.stringify({ids:[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]).sort(),actions:[...html.matchAll(/<script\b[^>]*type="application\/json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]),controls:[...html.matchAll(/<(?:button|input|select|option)\b[^>]*>/g)].map(m=>m[0]),downloads:[...html.matchAll(/href="([^"]+)"[^>]*\bdownload\b/g)].map(m=>m[1])});}

@@ -2,15 +2,16 @@
 // Inert fixtures and file identities only. Never contact a console or run its payloads.
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'../..'),patches=require('../../assets/host-game-patches.js');
-test('native patch-manager handoff accepts only private IPv4 addresses and fixes its port and path',()=>{
- for(const ip of ['10.0.0.4','172.16.1.8','172.31.255.2','192.168.1.42'])assert.equal(patches.managerURL(ip),'http://'+ip+':23900/');
- for(const ip of ['example.com','127.0.0.1','192.168.1.999','172.32.1.1','192.168.1.4:8080','http://192.168.1.4','192.168.1.4/x','192.168.01.4'])assert.throws(()=>patches.managerURL(ip));
+test('native patch-manager handoff targets only the installed title on this console',()=>{
+ assert.equal(patches.nativeURL('ps4','CUSA08519','PlayStation 4/9.00'),'http://127.0.0.1:23900/xml_orbis/CUSA08519.xml');
+ assert.equal(patches.nativeURL('ps5','PPSA01234','PlayStation 5/12.70'),'http://127.0.0.1:23900/xml_prospero/PPSA01234.xml');
+ for(const id of ['../CUSA08519','CUSA08519.xml','CUSA08519?x=1','CUSA08519/','PPSA01234'])assert.throws(()=>patches.nativeURL('ps4',id,'PlayStation 4/9.00'));
 });
-test('exact title-ID receiver links retain real file IDs and do not offer XML execution',()=>{
+test('exact title downloads retain real file identities without a receiver or XML execution',()=>{
  const data=require('../../docs/ps4-ps5-game-patches.json'),builder=require('../build-host-game-patches.cjs'),catalog=require('../../docs/console-download-catalog.json').items;
- for(const platform of ['ps4','ps5'])for(const game of builder.catalog(data,platform)){
-  const html=patches.detail(game);assert.doesNotMatch(html,/data-launch|data-apply-patch|onclick=/);
-  for(const f of game.files){const native=catalog.find(i=>i.id===f.downloadId);assert.ok(native,f.downloadId);assert.equal(native.sha256,f.sha256);assert.ok(native.platforms.includes(platform));assert.ok(html.includes('?file='+encodeURIComponent(f.downloadId)));}
+ for(const platform of ['ps4','ps5'])for(const game of builder.catalog(data,platform))for(const f of game.files){
+  const html=patches.detail(game,{titleId:f.titleId});assert.doesNotMatch(html,/data-launch|data-apply-patch|onclick=|through console receiver/);
+  const native=catalog.find(i=>i.id===f.downloadId);assert.ok(native,f.downloadId);assert.equal(native.sha256,f.sha256);assert.ok(native.platforms.includes(platform));assert.ok(html.includes('href="'+f.url+'"'));assert.ok(html.includes('download="'+f.titleId+'.xml"'));
  }
 });
 test('decorative code performs no storage, request or native action and stays idle on console and reduced motion',()=>{
@@ -49,4 +50,22 @@ test('console browsing has no search control and firmware Load stays text-only a
    assert.equal(app.sends.length+app.opened.length+app.anchorClicks.length,0);
   }
  }
+});
+test('console headings omit repeated photos and shared navigation omits KARO and connection shortcuts without changing controls',()=>{
+ const theme=require('../style-host-pages.cjs');
+ for(const platform of ['ps4','ps5']){
+  const html='<html><head></head><body><nav class="host-taskbar"><a href="/hosts/karo/">KARO</a><a class="host-top-settings" href="/hosts/'+platform+'/?view=connection">Setup</a></nav><main><header data-wwb-image-heading><div class="wwb-heading-copy"><h1 id="title">Console</h1><a class="host-header-connection" href="?view=connection">Connection &amp; setup</a></div><figure class="wwb-heading-art"><img src="/assets/images/host-selector/whatwhatboy-'+platform+'.jpg" alt="Console"></figure></header><button id="native-start">Load</button><script id="data" type="application/json">{"firmware":"9.00"}</script><a href="/hosts/karo/versions.html" download>Archive</a></main></body></html>';
+  const result=theme.themeHTML(html,'hosts/'+platform+'/index.html');
+  assert.doesNotMatch(result,/host-header-connection|host-top-settings|whatwhatboy-ps[45]\.jpg/);
+  assert.doesNotMatch(result.match(/<nav class="host-taskbar">[\s\S]*?<\/nav>/)[0],/KARO|hosts\/karo/);
+  assert.match(result,/data-wwb-text-heading/);assert.match(result,/href="\/hosts\/karo\/versions.html" download/);
+  assert.equal(theme.contract(result),theme.contract(html));assert.equal(theme.themeHTML(result,'hosts/'+platform+'/index.html'),result);
+  const fresh=theme.themeHTML('<html><head></head><body><main><h1>Console</h1></main></body></html>','hosts/'+platform+'/index.html');
+  assert.doesNotMatch(fresh,/wwb-heading-art|whatwhatboy-ps[45]\.jpg/);assert.match(fresh,/data-wwb-text-heading/);
+  const authored=fs.readFileSync(path.join(root,'hosts',platform,'index.html'),'utf8');
+  assert.doesNotMatch(authored,/host-header-connection|host-top-settings|<img\b[^>]*src="[^\"]*whatwhatboy-ps[45]\.jpg/);
+ }
+ const game=theme.themeHTML('<html><head></head><body><main><h1>Game</h1></main></body></html>','hosts/ps4/gta5/index.html');
+ assert.match(game,/playstation\/gta5\.jpg/);assert.match(game,/data-wwb-image-heading/);
+ const home=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.equal(theme.themeHTML(home,'index.html'),home);assert.match(home,/class="console-visual"/);
 });
