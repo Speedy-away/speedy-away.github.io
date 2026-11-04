@@ -1,13 +1,18 @@
 {
-  "updatedAt": "2026-11-03T21:08:03.213Z",
-  "pages": 24,
-  "theme": "Forest/mint, sharp borders, image headings, native HTML/CSS; matches the root home.",
+  "updatedAt": "2026-11-04T01:03:02.293Z",
+  "pages": 66,
+  "theme": "PlayStation blue, full artwork frames, outlined payloads and reduced-motion/console presentation.",
   "actionContractsUnchanged": true,
   "nativeRuntimeFilesChanged": 0,
   "downloadFilesChanged": 0,
   "browserRenderVerified": false,
   "hardwareExecutionVerified": false,
   "records": [
+    {
+      "page": "hosts/credits/index.html",
+      "image": "/assets/images/logo.png",
+      "actionContractSHA256": "ffcdd78cabb4af6ed81548780484e9916f933830b124b9f98726db4f12c97201"
+    },
     {
       "page": "hosts/index.html",
       "image": "/assets/images/logo.png",
@@ -26,32 +31,187 @@
     {
       "page": "hosts/ps4/afterglow/index.html",
       "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
-      "actionContractSHA256": "327f7bc8d68585cc683c5990a3d886bc50fe20372cd09ed41b79fc449bf79b44"
+      "actionContractSHA256": "a07708e24f84ba4fb553f1cac2df5bc7fe34eebb26a78dc040b0fa8c86364f1d"
     },
     {
       "page": "hosts/ps4/cheats/index.html",
       "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
-      "actionContractSHA256": "28318651240b525c17eff05d78a746b7421abed153e8000abc1e4de2cd274d6c"
+      "actionContractSHA256": "382161114a0887eca37958290209ebd3c17e154bb69839a66abe832561a7342e"
+    },
+    {
+      "page": "hosts/ps4/exploit/gamerhack-505/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "396e2332d7c85747c68b2e309c24340147634cf03385640ea98c7878b568c56b"
+    },
+    {
+      "page": "hosts/ps4/exploit/gamerhack-672goldhen/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "bb847199b39bc004dc366129d9b9436ec121be4730ccbee409af3f25bef720ad"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-505/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "113f8fba53176e355530c7fb7d768a18802954d0d1f2135f9e796cfbbfdd6e7c"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-505gold/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "1da2e51f4fbcbb2686fbb7620e82479acfd7ffae4aafbee6154dce0cd0f8e3b9"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-672/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "cd59621f3e61eeafc8d0e4005f0b50d7120720df2b5e53ec1bcc5af232f7907f"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-672a/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "2dca9f35f82f1bcd8c458d8784c9bb5477be662751c6d8d163f8f5e6d66d8ae2"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-672l/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "17ee87b00d536bdaa338c614ca34cd41ca06176bd8ba243130e5d87c21c32796"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-702/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "f312fee8e956b841b8535a53287d412616d43bd875fc6af259662eb150c6fad3"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-702l/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "e7837160c38923af340712692df8dc2aa665380953bbb4265ddfd6444f1f5394"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-755/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "73042ca7fa88b75a04e5a969966c7644682fab5b5b6b16844eee7436560471da"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-755l/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "50a09305c0cef0dd52adbb31ec8185978297183bde487314dd190678c4f48a46"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-900c/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "9cddc8fbb26095f5cf94f31fd9844a45227ce48bceaccba1a0f0524e9b794179"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-900cm/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "834c10a0130d8cb2be589e3d0d491b84020c18351f9ceac07075d4db694466b8"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-900l/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "956750703ba286e9d98a5727ad446a5d1147309db11f47d9d8a41dcc322e074e"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-900n/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "b1f0d9d32d2d2fd2769be1c4dd443d58cbdcb2e491a0546e09b08dbb27b33118"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-900na/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "1b81ee3519e2d079bdaef95a330d6634aa1c5abb6c79cf7eac904381af4f429b"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-900new/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "e19238f74154488ea63f128024079a025504a7006b712c8f98d579179df4db09"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-900nm/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "c9033cc7f5df6bf87cb60913d9d05f1282b29f183ac8f38ec4ef110bbd8abda0"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-binloader-505/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "f95ea4d1a5a012f8aee9592a459e0532cc250e2529fc7dcb0204bf8080fd7f40"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-binloader-672/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "5ac63ca580ef424503bfc311673c8bb59d87569e68213aa5efe09549c207e3a0"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-binloader-702/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "77f632066f8f4cb758c9e8a936972f2830dca1a07148bfe014a4c078761ccc9a"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-binloader-755/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "c4147ffa7f8d56bd23bbe65a6466ce0ce446f28bec8442342e45df2de9351ca2"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-g2all/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "f6fa1775023249113d8b8c887c94124c7d355cc7f4cc010fc3b12b91a7a13f33"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-g2allpro/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "086abac73f06d38c94dc4cbc06356967c987d6162752f65f05f4c365624c0a91"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-g2allpro-modern/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "ea4f86e12248834ff2ae43d1577b9d7bdc72477a828631c7d6c823f32fc87d31"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-g2allproold/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "c9bcadb434823e6e65a4cf6eb2318365f4ffb8c5478904c218036330eca92639"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-g702/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "0312e33571d2f7c2ee5199f99623061b20403d57c716e0135da1f011686faf67"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-g755/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "bf58a3e974171f98fa644e721c5fb2208d97a7d6da236190d00b0cbe70f74068"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-g900/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "694bde2f32b226926ca184760d6e19c740951c6bb3ce80285d242f246b017636"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-goldhen505/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "131608a58676bbec6a4598a00f14b9f8678ddba985412bfee67d660d6c3ded0a"
+    },
+    {
+      "page": "hosts/ps4/exploit/karo-goldhen672/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "40a5fb3bc543c9a1448b9ad802fad7146222fc8200237b52538ef2087a45bfbc"
     },
     {
       "page": "hosts/ps4/files/index.html",
       "image": "/assets/images/host-catalog/files.svg",
-      "actionContractSHA256": "a36ba29f392d58d4cf695180959158a7a959fd3698ce613008ed906fcca45036"
+      "actionContractSHA256": "5daaf0554a56ca744b4ec372e7a2ce84a833df175c197d5c56061ea8855f0ea0"
     },
     {
       "page": "hosts/ps4/firmware/index.html",
       "image": "/assets/images/host-catalog/loaders.svg",
-      "actionContractSHA256": "7b0c04a5b3fad12bbb2fadc1d06c7e1d964bc46bde2c96af880cdbe179a0b573"
+      "actionContractSHA256": "31074accea10395226eca032e21d99a108a06aa3ca467c0cc3fd13bce12ce8e8"
     },
     {
       "page": "hosts/ps4/gta5/index.html",
-      "image": "/assets/images/gta52.png",
-      "actionContractSHA256": "0391000faab9e463780eff68065f8217599ca0f139e7c2767ce7f3b232b92742"
+      "image": "/assets/images/playstation/gta5.jpg",
+      "actionContractSHA256": "cf9f00245d460c2b9822832f0efc1207187727de7f8103747eae5efa97739214"
     },
     {
       "page": "hosts/ps4/index.html",
       "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
-      "actionContractSHA256": "6b613a596aab74108854e3222f18a0c0196a0561aa3692cf9a605dc55ec84cba"
+      "actionContractSHA256": "4282d5a54301ce8b2adff654942e52a8899edcef1a04bca6437dff0f71f34d32"
     },
     {
       "page": "hosts/ps4/lua/index.html",
@@ -61,7 +221,7 @@
     {
       "page": "hosts/ps4/other-games/index.html",
       "image": "/assets/images/host-catalog/games.svg",
-      "actionContractSHA256": "9f84b153cec2ffaefdbebc44aefaab7b7e845acccbbf3f87625f5a21c20da8c7"
+      "actionContractSHA256": "ce2aee40d44ce6fb0003b20098dd767078a7c3a3ad05a4ce8aa50fcdb50674b2"
     },
     {
       "page": "hosts/ps4/packages/index.html",
@@ -69,29 +229,74 @@
       "actionContractSHA256": "cdcdecd551ca6e30490a80b77934494c76bfc0db8a1a8e4797c241752ddf0514"
     },
     {
+      "page": "hosts/ps4/patches/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "61e8c6f2daaa46774caa7cfb17e7cd10ed0860b6fbc3b333be9c2521765352b4"
+    },
+    {
       "page": "hosts/ps4/payload-manager/index.html",
       "image": "/assets/images/host-catalog/payloads.svg",
-      "actionContractSHA256": "1b111ff549ea42dd18f481a5f3297e6c42de7fdb15c329d88e56a3b7d4333801"
+      "actionContractSHA256": "a412ef198522216fe5f4362099f8dff6e401f771381e02a9de3c57c730f2d5cd"
     },
     {
       "page": "hosts/ps4/rdr2/index.html",
-      "image": "/assets/images/rdr2.png",
-      "actionContractSHA256": "5748bdc1cd08efb7d287d034f19348a29faa39c14b1ddf9b121967fa89363ead"
+      "image": "/assets/images/playstation/rdr2.jpg",
+      "actionContractSHA256": "58e8151e5ac155d310b1420b2b8eb6c054eec50739ea7feb8a93e42bc4b4b593"
+    },
+    {
+      "page": "hosts/ps5/exploit/karo-ps5-p2jb/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "2ef8d5ea17063401b2be3ceca59a78de44d268d822c0ed5f6b6472411553acca"
+    },
+    {
+      "page": "hosts/ps5/exploit/karo-ps5-poopspl/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "f13087960f2e9941fbc86809c9629e455c10b66ee180fc04b00b6c6c28c252cc"
+    },
+    {
+      "page": "hosts/ps5/exploit/karo-ps5-pr-poops/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "52ffa241c26ce7800d6eb2932ed93b2faf5708ac95f9b4c2fb6035f9fa540985"
+    },
+    {
+      "page": "hosts/ps5/exploit/karo-ps5-pr-relapse/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "1d90160ab62c8aa10021f7a6ef2c91e3c1dc0628edb68c640c942aa8789c610b"
+    },
+    {
+      "page": "hosts/ps5/exploit/karo-ps5-relapse/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "1ec5290c4fb067d83534ebac842d0845b73d8c00c5e3756dc185e1f06078ea8e"
+    },
+    {
+      "page": "hosts/ps5/exploit/karo-ps5-umtx/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "c343f3130d58af13c652a8217a00398a12492b88fda069b3dfb15864dab2382e"
+    },
+    {
+      "page": "hosts/ps5/exploit/karo-ps5-umtx-remaining/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "3d25c18652761f7bbf0442311ecffc5bab62f34ebd6e3af96c97bb370d9949b1"
     },
     {
       "page": "hosts/ps5/files/index.html",
       "image": "/assets/images/host-catalog/files.svg",
-      "actionContractSHA256": "1da707d8a9e0a347c0681c4ddf10b06a7b3571af922b25793425549236a592d4"
+      "actionContractSHA256": "3e188ca584bf4fc1bfe8b9eab25005eda38a095f5ad098d3d957333d6ddf39f6"
+    },
+    {
+      "page": "hosts/ps5/firmware/index.html",
+      "image": "/assets/images/host-catalog/loaders.svg",
+      "actionContractSHA256": "31074accea10395226eca032e21d99a108a06aa3ca467c0cc3fd13bce12ce8e8"
     },
     {
       "page": "hosts/ps5/gta5/index.html",
-      "image": "/assets/images/gta52.png",
-      "actionContractSHA256": "b0e896fbe37c7b47d6f13f50f3a6dcc6b1597673b3ec9d115059f209ceb126e8"
+      "image": "/assets/images/playstation/gta5.jpg",
+      "actionContractSHA256": "039db1d334fa12bbea6cca2187d86e3841caebdb31565bcaf387b735092d8945"
     },
     {
       "page": "hosts/ps5/index.html",
       "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
-      "actionContractSHA256": "0d88a997c695d6ec55b9cc854bf2275794ab2228048cf5a070d852dcfc1cc591"
+      "actionContractSHA256": "09fc31676440927b4d01a478e1407e56c7fbb75acb76b6e157d2ca3087900018"
     },
     {
       "page": "hosts/ps5/lua/index.html",
@@ -101,7 +306,7 @@
     {
       "page": "hosts/ps5/other-games/index.html",
       "image": "/assets/images/host-catalog/games.svg",
-      "actionContractSHA256": "6e674b23303969e019a5bd5d6c8c0424407842bf449a7a11494950adf72af7e7"
+      "actionContractSHA256": "df731d05427ccaddd5da81d62ca19512ccc13a3a532bdf79ffbf847e1cb64ebf"
     },
     {
       "page": "hosts/ps5/packages/index.html",
@@ -109,14 +314,19 @@
       "actionContractSHA256": "c36226d966ed6c7459c8018bcb67429061807d6ff1005deeb7c3c1bfc30e2695"
     },
     {
+      "page": "hosts/ps5/patches/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "ac1f5ec9e93833f3788625e040832207b152ec271174b9eef3531eb95f1bd860"
+    },
+    {
       "page": "hosts/ps5/payload-manager/index.html",
       "image": "/assets/images/host-catalog/payloads.svg",
-      "actionContractSHA256": "a86ff69217d7a5bf77726b781504e853d0a0e590e24d1542eebe7944efec08dc"
+      "actionContractSHA256": "0e81ef531b50128581aa4d30843dfdb817eecfc79e4736b3b12f04a719dd0349"
     },
     {
       "page": "hosts/ps5/rdr2/index.html",
-      "image": "/assets/images/rdr2.png",
-      "actionContractSHA256": "7d00410f4057b0c1767a678ee90e2be0dcf7a33a9a0d42bb6f595eae7c59c334"
+      "image": "/assets/images/playstation/rdr2.jpg",
+      "actionContractSHA256": "b5e5219b797c29d16a9955a7d44971bc31157c50b1d7db62e1753701be00d8e3"
     },
     {
       "page": "hosts/tools/esp-flasher/index.html",
@@ -125,7 +335,7 @@
     },
     {
       "page": "hosts/tools/ps4-trainer/index.html",
-      "image": "/assets/images/host-catalog/tools.svg",
+      "image": "/assets/images/home/ps4-offline-trainer-cover-v1.jpg",
       "actionContractSHA256": "768252447a3ea307974f2cba08fc9e534b504a911bd262ab66957523cb20c282"
     }
   ]

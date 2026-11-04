@@ -1,0 +1,47 @@
+/* Authored browsing surfaces only. No canvas, video, WebGL or backdrop filters. */
+body.wwb-host-home,body.wwb-host-page{--ps-blue:#1876ed;--ps-white:#f2f6ff;--ps-line:#344258;font-family:system-ui,-apple-system,"Segoe UI",sans-serif!important;background:#0b1220!important}
+body.wwb-host-home:before,body.wwb-host-page:before{content:"";display:block!important;position:absolute;inset:0 0 auto;height:880px;pointer-events:none;background:linear-gradient(180deg,rgba(8,18,38,.5),#0b1220 95%),url("/assets/images/playstation/god-of-war.jpg") center top/contain no-repeat;opacity:.38;z-index:0}
+body.ps-art-ps4:before{background-image:linear-gradient(180deg,rgba(8,18,38,.58),#0b1220 95%),url("/assets/images/playstation/uncharted.jpg")}
+body.ps-art-ps5:before{background-image:linear-gradient(180deg,rgba(8,18,38,.5),#0b1220 95%),url("/assets/images/playstation/the-last-of-us-2.jpg")}
+body.ps-art-gta5:before{background-image:linear-gradient(180deg,rgba(8,18,38,.6),#0b1220 95%),url("/assets/images/playstation/gta5.jpg")}
+body.ps-art-rdr2:before{background-image:linear-gradient(180deg,rgba(8,18,38,.6),#0b1220 95%),url("/assets/images/playstation/rdr2.jpg")}
+body.ps-art-cod:before{background-image:linear-gradient(180deg,rgba(8,18,38,.6),#0b1220 95%),url("/assets/images/playstation/black-ops-3.jpg")}
+body.wwb-host-home main,body.wwb-host-page main{position:relative;z-index:1}
+.topbar,body.wwb-host-page .host-taskbar{position:relative!important;background:#0b1425!important;border-bottom:1px solid #304567!important;z-index:3;min-height:76px}
+.topbar{gap:28px}.topbar .brand{margin-right:auto}.topbar a,.host-taskbar a{min-height:36px;display:inline-flex;align-items:center}
+body.wwb-host-home main{max-width:1440px;padding-top:64px}.home-eyebrow{font-size:.7rem;letter-spacing:.2em;color:#a9c9fc;margin:0 0 18px}.home-lead{color:#bdcbe1;font-size:1.05rem;margin:20px 0 0}.intro{margin-bottom:44px}.intro h1{font-size:clamp(2.6rem,5vw,4.7rem);font-weight:500;letter-spacing:-.055em}.browser-status{background:#101e33;border:1px solid #344258;border-left:3px solid #4797ff;padding:18px 24px}
+.consoles{gap:24px}.console{background:#111e32;border:1px solid #344258;border-radius:12px;overflow:clip}.console-visual{background:linear-gradient(135deg,#182b47,#0d1829);aspect-ratio:2/1;padding:16px}.console-copy{padding:22px 26px;border:0}.console-copy h2{font-size:2rem}.console:hover{border-color:#85b6ff}.console[data-browser-console=true]{border-color:#85b6ff}.open{font-size:.85rem}
+.game-section,.tool-section{margin-top:56px}.game-section>h2,.tool-section>h2{font-size:1.5rem;font-weight:500;letter-spacing:-.025em}.home-game,.home-tool{background:#101d30;border:1px solid #344258;border-radius:10px;overflow:clip}.game-art{aspect-ratio:16/9}.home-game-copy{padding:20px 22px;border:0}.tool-art{aspect-ratio:16/10}.home-tool-copy{padding:18px 20px}.home-tool h3{font-size:.95rem}.tool-console-links a{border-radius:5px}.utility-links{padding-block:24px}
+body.wwb-host-page main,body.wwb-host-page #main-content{max-width:1440px!important;padding-top:40px!important}
+body.wwb-host-page [data-wwb-image-heading]{padding:24px 28px 30px!important;border:1px solid #344258;background:#101e33!important;border-radius:12px;gap:36px;margin-bottom:30px!important}
+body.wwb-host-page .wwb-heading-copy h1{font-weight:500!important;font-size:clamp(2rem,4vw,3.8rem)!important;letter-spacing:-.045em}
+body.wwb-host-page .wwb-heading-art{background:transparent!important}body.wwb-host-page .wwb-heading-art img{height:210px;object-fit:contain!important}
+body.wwb-host-page .host-categories{gap:8px;border-bottom:1px solid #344258;padding-bottom:16px;margin-bottom:24px}
+body.wwb-host-page .host-categories button{border:1px solid #344258;border-radius:6px!important;padding:12px 18px!important;min-height:44px;background:#142137;color:#b9cce9}
+body.wwb-host-page .host-catalog-grid .host-catalog-tile__media{height:auto!important;aspect-ratio:16/10!important;display:flex;align-items:center;justify-content:center;border-radius:8px!important;overflow:hidden!important;border:1px solid #344258!important;background:#101b2c!important}
+body.wwb-host-page .host-catalog-grid .host-catalog-tile__media img{width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important}
+body.wwb-host-page .host-patch-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+body.wwb-host-page .host-patch-tile{background:#111e32;border:1px solid #344258;border-radius:8px;padding:14px;color:#edf3ff}
+body.wwb-host-page .host-patch-tile img{width:100%;height:160px;object-fit:contain;background:#0b1423}
+body.wwb-host-page .host-version-dialog,body.wwb-host-page .host-patch-dialog{border:1px solid #6c92cd!important;border-radius:10px!important;background:#142137!important}
+.credits-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.credits-grid article{background:#111e32;border:1px solid #344258;padding:24px;border-radius:10px}.credits-grid h2{font-size:1.2rem;font-weight:500}.credits-grid p{color:#bdcbe1;line-height:1.8}
+.host-patch-breadcrumb{display:flex;flex-wrap:wrap;gap:24px;padding:18px 4vw;border-bottom:1px solid #344258;position:relative}.host-patch-breadcrumb a{font-size:14px;text-decoration:none;min-height:28px;display:inline-flex;align-items:center}
+.ps-symbols{position:absolute;top:104px;right:4%;display:flex;gap:20px;color:#89baff;opacity:.15;pointer-events:none;font-size:32px;z-index:0}.ps-symbols span{animation:ps-drift 14s ease-in-out infinite alternate}.ps-symbols span:nth-child(2){animation-delay:-4s}.ps-symbols span:nth-child(3){animation-delay:-8s}@keyframes ps-drift{to{transform:translateY(26px) rotate(12deg)}}
+html.host-console-browser .ps-symbols{display:none!important}html.host-console-browser body:before{display:none!important}html.host-console-browser body.wwb-host-page [data-wwb-image-heading]{padding:18px!important}html.host-console-browser .console{padding:18px}html.host-console-browser .console-copy{padding:0}html.host-console-browser .tool-art,html.host-console-browser .game-art{display:none}
+@media(max-width:800px){body.wwb-host-home main{padding-top:34px}.intro{display:block}.browser-status{max-width:360px;margin-top:26px}.tool-gallery{grid-template-columns:1fr 1fr}.credits-grid{grid-template-columns:1fr}body.wwb-host-page .host-patch-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ps-symbols{display:none}.topbar{gap:16px}.topbar .brand{letter-spacing:0}.topbar .main-link{font-size:.75rem}.home-lead{font-size:.9rem}}
+@media(prefers-reduced-motion:reduce){.ps-symbols span{animation:none!important}*{scroll-behavior:auto!important}}
+body.wwb-host-page{--browser-accent:#99bdff;--browser-bg:#0b1220;--browser-panel:#142137}
+body.wwb-host-page .host-taskbar{padding-right:136px!important;gap:16px}
+body.wwb-host-page .host-platform-switch{margin-inline:auto!important;box-shadow:none;background:#101e33}
+body.wwb-host-page .host-platform-switch a[aria-current=page]{background:#203c61!important;color:#d5e7ff!important;border-color:#779cd8!important;box-shadow:none}
+body.wwb-host-page .host-primary-tabs>a[aria-current=page]{background:#142b49;color:#c5deff;border-color:#78afff}
+body.wwb-host-page .host-firmware-buttons button[aria-pressed=true]{background:#203c61!important;color:#edf3ff!important;border-color:#99bdff!important;box-shadow:inset 0 0 0 1px #99bdff}
+body.wwb-host-page .host-version-dialog{width:min(960px,calc(100vw - 40px))!important;max-height:90vh!important;background:#142137!important}
+body.wwb-host-page .host-version-header,body.wwb-host-page .host-version-selector{background:#142137!important;border-color:#344258!important}
+body.wwb-host-page .host-version-dialog .host-action{background:#111e32!important;border:1px solid #344258!important;border-radius:6px!important;margin:0 20px 20px!important;padding:20px!important}
+body.wwb-host-page .host-version-dialog button,body.wwb-host-page .host-version-dialog .host-download{background:#182a44!important;color:#d6e6ff!important;border-color:#45618b!important}
+body.wwb-host-page .host-version-dialog button[aria-pressed=true]{background:#203c61!important;border-color:#99bdff!important;color:#edf3ff!important}
+body.wwb-host-page .host-version-dialog .host-launch:not(:disabled){background:#99bdff!important;color:#0b1220!important}
+body.wwb-host-page .host-version-dialog .host-launch:disabled{background:#26364f!important;color:#8394ac!important}
+body.wwb-host-page .host-activity,body.wwb-host-page .host-version-status{background:#0c1728!important;color:#a7bad6!important;border-color:#344258!important}
+@media(max-width:640px){body.wwb-host-page .host-taskbar{padding-right:100px!important;gap:7px;min-height:82px}body.wwb-host-page .host-taskbar a{padding:6px;font-size:11px}body.wwb-host-page .host-top-back{display:none!important}body.wwb-host-page .host-top-brand{margin-right:auto;font-size:11px}.host-taskbar .host-platform-switch{margin-inline:0!important}body.wwb-host-page .host-primary-tabs{gap:15px;overflow-x:auto}body.wwb-host-page .host-file-tabs{align-items:flex-start}body.wwb-host-page .host-primary-tabs>a{white-space:nowrap}}

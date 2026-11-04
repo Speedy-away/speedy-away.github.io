@@ -23,8 +23,8 @@ test('public host popup exposes source, fork and existing workflow instructions 
  const html=generator.apply('hosts/ps4/index.html',page,{base:'/WWB-HOST'});
  assert.match(html,/host-has-self-host/);assert.match(html,/role="dialog" aria-modal="true"/);
  assert.match(html,/aria-controls="host-self-host-overlay" aria-expanded="false"/);
- assert.match(html,/https:\/\/github\.com\/Speedy-away\/WWB-HOST\/fork/);
- assert.match(html,/https:\/\/github\.com\/Speedy-away\/WWB-HOST\/archive\/refs\/heads\/main\.zip/);
+ assert.match(html,/https:\/\/github\.com\/Speedy-away\/speedy-away\.github\.io\/fork/);
+ assert.match(html,/https:\/\/github\.com\/Speedy-away\/speedy-away\.github\.io\/archive\/refs\/heads\/main\.zip/);
  assert.match(html,/Settings → Pages → Build and deployment/);
  assert.match(html,/Deploy WWB HOST → Run workflow/);
  assert.match(html,/scripts\/host-project-pages\.cjs/);

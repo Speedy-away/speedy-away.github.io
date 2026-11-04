@@ -3,7 +3,7 @@
 // network, console operation, native module or downloaded payload is executed.
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const pack=require('../package-console-payload-sender.cjs'),ui=require('../../assets/host-dashboard.js'),{fixture}=require('./host-continuation-dom.cjs');
-const root=path.resolve(__dirname,'../..'),origin='https://speedy-away.github.io/wwb-host',legacyOrigin='https://speedy-away.github.io/WWB-HOST';
+const root=path.resolve(__dirname,'../..'),origin='https://speedy-away.github.io',legacyOrigin='https://speedy-away.github.io/WWB-HOST';
 function html(actions,extra=''){return '<!doctype html><html><head><meta name="whatwhatboy-public-host" content="https://untrusted.example"></head><body>'+extra+'<script id="host-actions-data" type="application/json">'+JSON.stringify({platform:'ps4',actions})+'</script></body></html>';}
 function embedded(text){return JSON.parse(text.match(/<script id="host-actions-data" type="application\/json">([\s\S]*?)<\/script>/)[1]).actions;}
 function senderFixture(action,publicOrigin,options={}){

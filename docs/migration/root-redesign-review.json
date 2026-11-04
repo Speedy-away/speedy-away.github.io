@@ -1,0 +1,120 @@
+{
+  "updatedAt": "2026-11-04T01:08:59.378Z",
+  "status": "Design frozen; 467 tests pass with zero exclusions. Sender archived; immutable release and deployment pending.",
+  "source": "22b518676fe15b99331c6395c57f809257003fc7",
+  "destination": "ea3fd69fbc864f262692685403736a9334df95b3",
+  "mergeCommit": "f15752de0c18816a835ec51ab7a0de54ea47bc1f",
+  "origin": "https://speedy-away.github.io/",
+  "auditBefore": {
+    "mixedGameArtFrames": true,
+    "legacyGreenSelectionRules": true,
+    "creditsAbsent": true,
+    "projectPrefixAndOldRepositoryRawSHARisk": true,
+    "oldHelperPredatesRootDesign": true
+  },
+  "design": {
+    "authoredPages": 66,
+    "artwork": "docs/migration/redesign-artwork.json",
+    "payloads": "Cards and version popups outlined and image-free, including tools cross-listed in Payloads",
+    "motion": "Four CSS-transform symbols; absent on PS4/PS5 and reduced motion. No canvas, WebGL, video or recurring JS timers."
+  },
+  "visual": {
+    "browser": "Supported in-app browser enabled by user after initial Windows-browser policy block",
+    "verified": true,
+    "viewport390": true,
+    "sourceScreenshots": [
+      {
+        "name": "credits.jpg",
+        "bytes": 61947
+      },
+      {
+        "name": "home.jpg",
+        "bytes": 58006
+      },
+      {
+        "name": "mobile-ps5.jpg",
+        "bytes": 25886
+      },
+      {
+        "name": "patch-title-popup.jpg",
+        "bytes": 78116
+      },
+      {
+        "name": "payload-popup.jpg",
+        "bytes": 45692
+      },
+      {
+        "name": "ps4-mods.jpg",
+        "bytes": 45097
+      }
+    ],
+    "physicalConsole": false
+  },
+  "tests": {
+    "files": 66,
+    "tests": 467,
+    "pass": 467,
+    "fail": 0,
+    "skipped": 0,
+    "log": "docs/qa/root-redesign-tests.tap"
+  },
+  "nativePreservation": {
+    "changedRuntimeFiles": 0,
+    "changedReadyDownloadFiles": 0,
+    "oldSenderRecordsUnchanged": 37
+  },
+  "patches": {
+    "ps4Games": 98,
+    "ps5Games": 101,
+    "verifiedResources": 281,
+    "source": "https://github.com/illusionyy/PS-Game-Patch/tree/65914503123d4e643aa5aa0e8c720de8e99ef7e8",
+    "engine": "https://github.com/illusionyy/ps-patch-system",
+    "flow": "Exact title-ID download/receiver handoff; native manager on port 23900 after compatible ELF loader on 9021. No XML execution or installation claims."
+  },
+  "sender": {
+    "id": "console-payload-sender-ca2a37472b36",
+    "name": "console-payload-sender-2.1.0-ca2a37472b36.zip",
+    "version": "2.1.0+ca2a37472b36",
+    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip",
+    "source": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-ca2a37472b36/console-payload-sender-2.1.0-ca2a37472b36.zip",
+    "bytes": 107647211,
+    "sha256": "cdacbbf0d669f9a9857e01763bad9fdaf93a1a88b9bf1084ac6955a56de9f2b9",
+    "snapshot": "ca2a37472b3620690ffb749c3c6c46cc19b3fc0c1949fc41365435d93f846f5c",
+    "files": 1585,
+    "payloads": 125,
+    "actions": 185,
+    "releaseTag": "sender-2.1.0-ca2a37472b36",
+    "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-ca2a37472b36/console-payload-sender-2.1.0-ca2a37472b36.zip",
+    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-ca2a37472b36.zip"
+  },
+  "mainSite": "Two console hub metadata/link edits prepared locally; red CSS and existing host redirects untouched.",
+  "limits": [
+    "No physical console, native payload execution, measured console FPS or hardware transfer verification."
+  ],
+  "build": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 864269978,
+    "budget": 922746880,
+    "files": 6191,
+    "offloadedFiles": 286,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1027541,
+      "runtime": 243606
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 3
+  },
+  "archive": {
+    "items": 4998,
+    "fileRecords": 8617,
+    "present": 8617,
+    "missing": 0,
+    "olderVersionsPreserved": true
+  }
+}

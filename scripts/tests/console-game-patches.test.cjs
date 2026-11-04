@@ -1,11 +1,13 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'../..');
+const originalRoot=process.env.WHATSITE_PROVENANCE_ROOT||path.resolve(root,'../whatsite');
+const evidence=p=>fs.existsSync(path.join(root,p))?path.join(root,p):path.join(originalRoot,p);
 const d=require('../../docs/ps4-ps5-game-patches.json'),jobs=require('../../docs/ps4-ps5-game-patch-jobs.json').jobs;
 const {unzip,relevant,appendRecords}=require('../prepare-console-game-patches.cjs');
 const {gameCard}=require('../build-console-game-patches.cjs');
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 test('ready title-specific XMLs preserve exact bytes from the pinned author release',()=>{
-  const archive=fs.readFileSync(path.join(root,d.archive.local.slice(1)));
+  const archive=fs.readFileSync(evidence(d.archive.local.slice(1)));
   assert.equal(hash(archive),d.archive.sha256);
   const entries=new Map(unzip(archive).map(e=>[e.name,e.bytes]));
   assert.ok(d.games.length>=20);
@@ -13,7 +15,7 @@ test('ready title-specific XMLs preserve exact bytes from the pinned author rele
     assert.equal(file.filename,file.titleId+'.xml');
     assert.ok(entries.has(file.archiveEntry));
     assert.equal(hash(entries.get(file.archiveEntry)),file.sha256);
-    const local=fs.readFileSync(path.join(root,file.local.slice(1)));
+    const local=fs.readFileSync(evidence(file.local.slice(1)));
     assert.equal(hash(local),file.sha256);
     assert.match(local.toString(),new RegExp('<ID>'+file.titleId+'</ID>'));
     const job=jobs.find(j=>j.id===file.downloadId);assert.ok(job);assert.equal(job.expectedSha256,file.sha256);
@@ -46,7 +48,7 @@ test('each catalogue requires explicit title selection and provides platform-spe
   assert.doesNotMatch(html,/<(?:video|iframe)\b/);
 });
 test('all staged patch-engine assets match captured size and SHA-256',()=>{
-  for(const j of jobs){const bytes=fs.readFileSync(path.join(root,j.importPath));assert.equal(bytes.length,j.expectedBytes,j.id);assert.equal(hash(bytes),j.expectedSha256,j.id);}
+  for(const j of jobs){const bytes=fs.readFileSync(evidence(j.importPath));assert.equal(bytes.length,j.expectedBytes,j.id);assert.equal(hash(bytes),j.expectedSha256,j.id);}
 });
 
 const addedSources=['HorizonZeroDawn-Orbis.xml','HorizonForbiddenWest-Orbis.xml','EldenRing-Orbis.xml','GhostOfTsushimaDC-Orbis.xml','DaysGone-Orbis.xml','MarvelsSpider-Man-Orbis.xml','MarvelsSpider-ManMilesMorales-Orbis.xml','FinalFantasyVIIRemake-Orbis.xml','FinalFantasyXV-orbis.xml','AlienIsolation-Orbis.xml','SleepingDogs-Orbis.xml','Persona5Royal-Orbis.xml','Stray-Orbis.xml','ArmoredCoreVI-Orbis.xml','DetroitBecomeHuman.xml'];

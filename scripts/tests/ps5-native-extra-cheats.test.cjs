@@ -5,7 +5,9 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const {validateCheat, selected, commit} = require('../prepare-ps5-native-extra-cheats.cjs');
 const root = path.resolve(__dirname, '../..');
-const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
+const originalRoot=process.env.WHATSITE_PROVENANCE_ROOT||path.resolve(root,'../whatsite');
+const evidence=p=>fs.existsSync(path.join(root,p))?path.join(root,p):path.join(originalRoot,p);
+const read = file => JSON.parse(fs.readFileSync(evidence(file), 'utf8'));
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 
 test('six native PPSA JSON definitions retain exact source bytes, game versions and creator credits', () => {
@@ -19,7 +21,7 @@ test('six native PPSA JSON definitions retain exact source bytes, game versions 
   for (const item of output.resources) {
     const pin = selected.find(pin => pin.titleId === item.titleId);
     const job = jobs.find(job => job.id === item.id);
-    const bytes = fs.readFileSync(path.join(root, job.importPath));
+    const bytes = fs.readFileSync(evidence(job.importPath));
     const validation = validateCheat(bytes, pin);
     assert.equal(item.sha256, sha(bytes));
     assert.equal(job.expectedSha256, item.sha256);
@@ -66,13 +68,13 @@ test('licence and naming instructions accompany ready files while all six prior 
   const output = read('docs/ps5-native-extra-cheats.json');
   const jobs = read('docs/ps5-native-extra-cheats-jobs.json').jobs;
   for (const job of jobs.filter(job => job.archiveRole.includes('Metadata'))) {
-    const bytes = fs.readFileSync(path.join(root, job.importPath));
+    const bytes = fs.readFileSync(evidence(job.importPath));
     assert.equal(bytes.length, job.expectedBytes);
     assert.equal(sha(bytes), job.expectedSha256);
     assert.equal(job.version, commit);
   }
-  const licence = fs.readFileSync(path.join(root, 'docs/tmp/ps5-native-extra-cheats/LICENSE.txt'), 'utf8');
-  const instructions = fs.readFileSync(path.join(root, 'docs/tmp/ps5-native-extra-cheats/README-upstream.md'), 'utf8');
+  const licence = fs.readFileSync(evidence('docs/tmp/ps5-native-extra-cheats/LICENSE.txt'), 'utf8');
+  const instructions = fs.readFileSync(evidence('docs/tmp/ps5-native-extra-cheats/README-upstream.md'), 'utf8');
   assert.match(licence, /GNU GENERAL PUBLIC LICENSE[\s\S]*Version 3/);
   assert.match(instructions, /\{titleid\}_\{version\}\.\{format\}/);
   assert.match(instructions, /\/data\/etaHEN\/cheats\/json\//);

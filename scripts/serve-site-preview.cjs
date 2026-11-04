@@ -1,6 +1,6 @@
 // Loopback-only public site preview. Never serves private research or executes files.
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
-const root=path.resolve(__dirname,'..'),realRoot=fs.realpathSync(root);
+const root=path.resolve(process.env.WWB_PREVIEW_ROOT||path.join(__dirname,'..')),realRoot=fs.realpathSync(root);
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.txt':'text/plain; charset=utf-8','.xml':'application/xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.avif':'image/avif','.svg':'image/svg+xml','.ico':'image/x-icon','.woff':'font/woff','.woff2':'font/woff2','.ttf':'font/ttf','.zip':'application/zip','.7z':'application/x-7z-compressed','.rar':'application/vnd.rar','.pdf':'application/pdf'};
 const inside=(base,file)=>{const rel=path.relative(base,file);return !rel.startsWith('..')&&!path.isAbsolute(rel);};
 const server=http.createServer((req,res)=>{

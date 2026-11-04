@@ -1075,5 +1075,50 @@
       "sourceFrozen": true,
       "pushedOldSite": false
     }
+  },
+  "rootDomainRedesign20261104": {
+    "status": "Validated, immutable sender release and root deployment pending",
+    "repository": "Speedy-away/speedy-away.github.io",
+    "site": "https://speedy-away.github.io/",
+    "review": "docs/migration/root-redesign-review.json",
+    "sourceHistoryPreserved": "22b518676fe15b99331c6395c57f809257003fc7",
+    "destinationHistoryPreserved": "ea3fd69fbc864f262692685403736a9334df95b3",
+    "tests": {
+      "files": 66,
+      "tests": 467,
+      "pass": 467,
+      "fail": 0,
+      "skipped": 0,
+      "log": "docs/qa/root-redesign-tests.tap"
+    },
+    "build": {
+      "revision": "main",
+      "base": "",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 864269978,
+      "budget": 922746880,
+      "files": 6191,
+      "offloadedFiles": 286,
+      "nativeScriptsUnchanged": 898,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+      "routingBytes": {
+        "full": 1027541,
+        "runtime": 243606
+      },
+      "activeRuntimeFiles": 319,
+      "sharedCatalogueFiles": 3
+    },
+    "archive": {
+      "items": 4998,
+      "fileRecords": 8617,
+      "present": 8617,
+      "missing": 0,
+      "olderVersionsPreserved": true
+    },
+    "sender": "2.1.0+ca2a37472b36",
+    "browserVerified": true,
+    "physicalConsoleVerified": false
   }
 }

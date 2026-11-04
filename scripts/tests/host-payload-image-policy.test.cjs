@@ -39,3 +39,9 @@ test('GoldHEN and game-mod artwork remains available while payload art is omitte
   assert.equal(game.sends.length,0);
   assert.equal(gold.sends.length,0);
 });
+
+test('tools cross-listed in Payloads also keep their version popup image-free',()=>{
+ const action=hostActions('ps5').find(a=>a.id==='ps5-payload-manager');assert.equal(action.category,'tools');
+ const app=fixture({platform:'ps5',actions:[action],catalogGrid:true,initialCategory:'payloads'});
+ app.openMenu();assert.doesNotMatch(app.ids['host-version-detail'].innerHTML,/<img\b|<figure\b|host-action-with-art/);assert.equal(app.sends.length,0);
+});

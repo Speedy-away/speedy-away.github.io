@@ -178,7 +178,7 @@ test('bridge serves only its dashboard and curated payloads, without disclosing 
   const html = await (await fetch(base+'/hosts/ps5/')).text();
   assert.match(html,/Fixture only/);
   assert.match(html,/<meta name="whatwhatboy-local-sender" content="true">/);
-  assert.match(html,/href="https:\/\/whatwhatboy.com\/docs\/host-payload-sender.md"/);
+  assert.match(html,/href="https:\/\/speedy-away\.github\.io\/docs\/host-payload-sender.md"/);
   assert.match(html,/href="\/hosts\/ps4\/"/);
   assert.ok(!html.includes(token));
   assert.equal((await fetch(base+'/AGENTS.md')).status,404);

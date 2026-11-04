@@ -2,10 +2,10 @@
 // Markup for authored public host pages only. Native/runtime documents stay isolated.
 const DEFAULTS={
  projectName:'WWB HOST',
- sourceURL:'https://github.com/Speedy-away/WWB-HOST',
- sourceZipURL:'https://github.com/Speedy-away/WWB-HOST/archive/refs/heads/main.zip',
- forkURL:'https://github.com/Speedy-away/WWB-HOST/fork',
- workflowURL:'https://github.com/Speedy-away/WWB-HOST/blob/main/.github/workflows/pages.yml'
+ sourceURL:'https://github.com/Speedy-away/speedy-away.github.io',
+ sourceZipURL:'https://github.com/Speedy-away/speedy-away.github.io/archive/refs/heads/main.zip',
+ forkURL:'https://github.com/Speedy-away/speedy-away.github.io/fork',
+ workflowURL:'https://github.com/Speedy-away/speedy-away.github.io/blob/main/.github/workflows/pages.yml'
 };
 const DOCS={
  fork:'https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo',
@@ -30,11 +30,11 @@ function markup(options={}){
 <p id="host-self-host-intro">Create your own copy of ${escape(c.projectName)} using its source repository and the existing GitHub Pages workflow.</p>
 <div class="host-self-host-actions">${external(c.forkURL,'Fork on GitHub')}${external(c.sourceZipURL,'Download source ZIP')}</div>
 <p>The source ZIP contains repository files. GitHub release assets and externally linked downloads remain separate. For an editable host, start with a fork.</p>
-<ol><li><strong>Fork the repository</strong>Open the project on GitHub and create a fork under your account. Keep the repository name <code translate="no">wwb-host</code> for this build’s existing path setup.</li>
-<li><strong>Review your host settings</strong>The publisher currently uses <code translate="no">/wwb-host</code> as its base path. In <code translate="no">scripts/host-project-pages.cjs</code>, review the Pages origin, repository owner, raw-file and release links, branding and main-site links for your fork. A different repository name or custom domain needs matching path and routing changes.</li>
+<ol><li><strong>Fork the repository</strong>Open the project on GitHub and create a fork under your account. Use <code translate="no">YOUR-USERNAME.github.io</code> for a root-domain Pages site.</li>
+<li><strong>Review your host settings</strong>The publisher currently uses an empty base path for the root domain. In <code translate="no">scripts/host-project-pages.cjs</code>, review the Pages origin, repository owner, raw-file and release links, branding and main-site links for your fork. A different repository name or custom domain needs matching path and routing changes.</li>
 <li><strong>Enable GitHub Pages</strong>In your fork, open <strong>Settings → Pages → Build and deployment</strong> and choose <strong>GitHub Actions</strong> as the source. If GitHub asks you to enable workflows in the fork, review and enable the existing workflow.</li>
 <li><strong>Run the publishing workflow</strong>Open <strong>Actions → Deploy WWB HOST → Run workflow</strong>, select your default branch and run it. The existing <code translate="no">.github/workflows/pages.yml</code> builds and checks the static output before deployment.</li>
-<li><strong>Open your published address</strong>After a successful deployment, use the address shown by GitHub Pages. With the original repository name, the usual address is <code translate="no">https://YOUR-USERNAME.github.io/wwb-host/</code>. Check navigation and exact download links before sharing it.</li></ol>
+<li><strong>Open your published address</strong>After a successful deployment, use the address shown by GitHub Pages. With the original repository name, the usual address is <code translate="no">https://YOUR-USERNAME.github.io/</code>. Check navigation and exact download links before sharing it.</li></ol>
 <p class="host-self-host-note">The source archive can be large. Use the project’s publisher to build its selected Pages output and retain download mappings; do not upload the entire download archive as a Pages site. Follow GitHub’s published size limits and preserve each bundled project’s license and attribution.</p>
 <div class="host-self-host-docs">${external(c.sourceURL,'Project source')}${external(c.workflowURL,'Publishing workflow')}${license}${projectLinks}${external(DOCS.fork,'GitHub: fork a repository')}${external(DOCS.pages,'GitHub: Pages settings')}${external(DOCS.actions,'GitHub: run a workflow')}${external(DOCS.limits,'GitHub: Pages limits')}</div>${extras?'<div class="host-self-host-extra">'+extras+'</div>':''}
 </section></div>`;

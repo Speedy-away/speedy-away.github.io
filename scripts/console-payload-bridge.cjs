@@ -418,7 +418,7 @@ function createBridge({root = ROOT, actions = loadActions(root), token = crypto.
           if (!href.startsWith('/') || href.startsWith('//')) return all;
           const pathname = href.split(/[?#]/)[0];
           if (staticPath(pathname) || actions.some(action => action.downloadURL === pathname)) return all;
-          return open + 'https://whatwhatboy.com' + href + close;
+          return open + 'https://speedy-away.github.io' + href + close;
         });
         const marker = '<meta name="whatwhatboy-local-sender" content="true">';
         body = Buffer.from(/<head\b[^>]*>/i.test(html) ? html.replace(/<head\b[^>]*>/i, value => value + marker) : marker + html);

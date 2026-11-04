@@ -49,7 +49,7 @@ changes or losing older downloads.
 
 # Independent host repository
 
-Public URL https://speedy-away.github.io/wwb-host/. Main site https://whatwhatboy.com/. Keep original native runtime and immutable downloadable bytes unchanged. All Pages prefix and repository-download adaptation belongs to scripts/host-project-pages.cjs and assets/host-project-routing.js. Do not execute native console files during testing. Never restore or refetch the recorded Defender-quarantined sources. Preserve all prior snapshots. The source history remains in whatsite; this repository owns future host changes. Use bounded/resumable pushes. Read docs/migration before broad generators; some retained historical maintenance tools require private original-source staging from the local archive.
+Public URL https://speedy-away.github.io/. The destination repository preserves the merged WWB-HOST and original speedy-away.github.io histories. The old repository and immutable download/release identities remain preserved. Main site https://whatwhatboy.com/. Keep original native runtime and immutable downloadable bytes unchanged. All Pages prefix and repository-download adaptation belongs to scripts/host-project-pages.cjs and assets/host-project-routing.js. Do not execute native console files during testing. Never restore or refetch the recorded Defender-quarantined sources. Preserve all prior snapshots. The source history remains in whatsite; this repository owns future host changes. Use bounded/resumable pushes. Read docs/migration before broad generators; some retained historical maintenance tools require private original-source staging from the local archive.
 
 # Oversized sender delivery
 

@@ -3,7 +3,7 @@
 // in shell arguments. Limit responses to the fields needed for publication.
 const {execFileSync}=require('node:child_process');
 async function request(repo,route,method='GET',body){
- if(!/^Speedy-away\/(?:WWB-HOST|whatsite)$/.test(repo)||!/^\/(?:pages|actions|releases)(?:\/|$)/.test(route))throw Error('Unapproved publication endpoint');
+ if(!/^Speedy-away\/(?:WWB-HOST|wwb-host|whatsite|speedy-away\.github\.io)$/.test(repo)||!/^\/(?:pages|actions|releases)(?:\/|$)/.test(route))throw Error('Unapproved publication endpoint');
  const raw=execFileSync('git',['credential','fill'],{input:'protocol=https\nhost=github.com\nusername=Speedy-away\n\n',encoding:'utf8',stdio:['pipe','pipe','pipe']});
  const token=raw.split('\n').find(x=>x.startsWith('password='))?.slice(9);if(!token)throw Error('GitHub credential unavailable');
  const response=await fetch('https://api.github.com/repos/'+repo+route,{method,headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'WWB-HOST-publisher',...(body?{'Content-Type':'application/json'}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(60000)});

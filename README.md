@@ -2,9 +2,9 @@
 
 Independent PS4 / PS5 host site for [whatwhatboy.com](https://whatwhatboy.com/).
 
-- Website: https://speedy-away.github.io/WWB-HOST/
-- Main chooser: /WWB-HOST/hosts/
-- KARO builds: /WWB-HOST/hosts/karo/
+- Website: https://speedy-away.github.io/
+- Main chooser: /hosts/
+- KARO builds: /hosts/karo/
 
 All copied older versions and original native files are preserved in this repository and the existing organized local archive. The Pages builder deploys the active site below its size limit and serves large downloads from exact repository revisions. Original native JavaScript is not rewritten. Files referenced by original offline-cache manifests stay on the Pages origin.
 
