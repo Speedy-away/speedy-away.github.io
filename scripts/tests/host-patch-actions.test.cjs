@@ -4,7 +4,7 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const ui=require('../../assets/host-game-patches.js');
 const ua=(platform,firmware)=>'Mozilla/5.0 (PlayStation; PlayStation '+platform.slice(-1)+'/'+firmware+')';
 
-function fixture({platform='ps4',firmware='9.00',userAgent=ua(platform,firmware),titleIds=['CUSA08519','CUSA03041'],navigationError=false}={}){
+function fixture({platform='ps4',firmware='9.00',userAgent=ua(platform,firmware),titleIds=['CUSA08519','CUSA03041'],navigationError=false,closedDetailsHaveRects=false}={}){
  let doc;const nodes={},navigations=[],requests=[],timers=[];
  class Element{
   constructor(tag='div'){this.tagName=tag;this.children=[];this.attrs={};this.events={};this.disabled=false;this.hidden=false;this.open=false;this.value='';this.textContent='';this.markup='';}
@@ -15,7 +15,7 @@ function fixture({platform='ps4',firmware='9.00',userAgent=ua(platform,firmware)
   hasAttribute(k){return Object.hasOwn(this.attrs,k);}getAttribute(k){return this.attrs[k]??null;}
   setAttribute(k,v){this.attrs[k]=String(v);if(k==='disabled')this.disabled=true;if(k==='hidden')this.hidden=true;if(k==='open')this.open=true;}
   addEventListener(k,f){this.events[k]=f;}focus(){doc.activeElement=this;}
-  getClientRects(){for(let n=this;n;n=n.parentNode){if(n.hidden||n.parentNode&&n.parentNode.tagName==='details'&&!n.parentNode.open&&n.tagName!=='summary')return [];}return [{width:100,height:44}];}
+  getClientRects(){for(let n=this;n;n=n.parentNode){if(n.hidden||!closedDetailsHaveRects&&n.parentNode&&n.parentNode.tagName==='details'&&!n.parentNode.open&&n.tagName!=='summary')return [];}return [{width:100,height:44}];}
   querySelectorAll(selector){const match=n=>selector.split(',').some(s=>{const attr=s.match(/^\[([^\]]+)\]$/);if(attr)return n.hasAttribute(attr[1]);return s==='button:not(:disabled)'?n.tagName==='button'&&!n.disabled:s==='a[href]'?n.tagName==='a'&&n.hasAttribute('href'):n.tagName===s;});return this.children.flatMap(n=>[...(match(n)?[n]:[]),...n.querySelectorAll(selector)]);}
   querySelector(s){return this.querySelectorAll(s)[0]||null;}
  }
@@ -103,15 +103,16 @@ test('reopening a game after handoff or blocked navigation keeps Load locked and
  }
 });
 
-test('modal keyboard loop excludes collapsed detail links and includes them only when expanded',()=>{
- for(const userAgent of ['Desktop',ua('ps4','9.00')]){
-  const f=fixture({userAgent});f.open();const close=f.nodes['host-patch-close'],details=f.panel.querySelector('details'),summary=f.panel.querySelector('summary'),source=f.panel.querySelectorAll('a[href]').find(n=>n.getAttribute('href')===f.game.source);
+test('modal keyboard loop excludes collapsed detail links even when the browser reports their rectangles',()=>{
+ for(const userAgent of ['Desktop',ua('ps4','9.00')])for(const closedDetailsHaveRects of [false,true]){
+  // The in-app browser can retain a rectangle for the hidden Source link.
+  const f=fixture({userAgent,closedDetailsHaveRects});f.open();const close=f.nodes['host-patch-close'],details=f.panel.querySelector('details'),summary=f.panel.querySelector('summary'),source=f.panel.querySelectorAll('a[href]').find(n=>n.getAttribute('href')===f.game.source);
   function tab(shiftKey=false){let prevented=false;f.doc.events.keydown({key:'Tab',shiftKey,preventDefault(){prevented=true;}});return prevented;}
-  assert.equal(source.getClientRects().length,0);assert.equal(summary.getClientRects().length,1);
+  assert.equal(source.getClientRects().length,closedDetailsHaveRects?1:0);assert.equal(summary.getClientRects().length,1);
   summary.focus();assert.equal(tab(),true);assert.equal(f.doc.activeElement,close);assert.equal(tab(true),true);assert.equal(f.doc.activeElement,summary);
   details.open=true;assert.equal(source.getClientRects().length,1);summary.focus();assert.equal(tab(),false,'Expanded Source follows the summary in normal tab order');assert.equal(f.doc.activeElement,summary);
   source.focus();assert.equal(tab(),true);assert.equal(f.doc.activeElement,close);assert.equal(tab(true),true);assert.equal(f.doc.activeElement,source);
-  details.open=false;summary.focus();assert.equal(tab(),true);assert.equal(f.doc.activeElement,close);assert.deepEqual(f.requests,[]);assert.deepEqual(f.navigations,[]);
+  details.open=false;assert.equal(source.getClientRects().length,closedDetailsHaveRects?1:0);summary.focus();assert.equal(tab(),true);assert.equal(f.doc.activeElement,close);assert.equal(tab(true),true);assert.equal(f.doc.activeElement,summary);assert.deepEqual(f.requests,[]);assert.deepEqual(f.navigations,[]);
  }
 });
 
