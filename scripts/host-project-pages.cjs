@@ -43,6 +43,8 @@ function build(output,revision='main',root=ROOT){
  function manifestHTML(html,name){return html.replace(/(<html\b[^>]*?\bmanifest\s*=\s*)(?:"([^"]+)"|'([^']+)'|([^\s>]+))/gi,(whole,start,a,b,c)=>{try{const u=new URL(a||b||c,'https://host.invalid/'+name),alias=manifestAliases.get(decodeURIComponent(u.pathname.slice(1)));return alias?start+'"'+BASE+'/'+alias+u.search+u.hash+'"':whole;}catch{return whole;}});}
  const internalRoots=['hosts','assets','languages','downloads','console','docs'];
  function rewrite(text,name){
+  // Crawler directives and canonical sitemap URLs are already deployment-ready.
+  if(name==='robots.txt'||name==='sitemap.xml')return text;
   if(name==='hosts/index.html')return require('./host-legacy-redirect.cjs').renderHomeRedirect(ORIGIN);
   var oldMods=name.match(/^hosts\/(ps[45])\/(gta5|rdr2|other-games)\/index\.html$/);if(oldMods)return require('./host-mods-redirect.cjs').renderModRedirect(oldMods[1],oldMods[2]);
   text=text.replaceAll(ORIGIN+'/wwb-host/',ORIGIN+BASE+'/').replaceAll(ORIGIN+'/WWB-HOST/',ORIGIN+BASE+'/').replaceAll('\"/WWB-HOST/','\"'+BASE+'/').replaceAll("'/WWB-HOST/","'"+BASE+'/');
@@ -72,6 +74,7 @@ function build(output,revision='main',root=ROOT){
   if((name==='index.html'||/^hosts\/(?!runtime\/).+\.html$/.test(name))&&fs.existsSync(path.join(root,'assets/host-playstation.css')))text=text.replace(/<link\b[^>]*href="[^"]*host-playstation\.css[^"]*"[^>]*>/gi,'').replace('</head>','<link rel="stylesheet" href="'+BASE+'/assets/host-playstation.css?v='+ASSET_VERSION+'"></head>');
   if(name==='hosts/karo/index.html'||name==='hosts/karo/versions.html')text=require('./split-karo-file-lists.cjs').split(text,name,{base:BASE,revision,emit:(p,content)=>{assert.ok(!selected.includes(p),'Generated list collides with source: '+p);const dest=path.join(output,p);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,content);hosted.add(p);}});
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-dashboard.js'))&&fs.readFileSync(path.join(root,'assets/host-dashboard.js'),'utf8').includes('WWB_HOST_ACTION_DATA'))text=require('./share-host-catalogues.cjs').share(text,{base:BASE,emit:(p,content)=>{assert.ok(!selected.includes(p),'Generated catalogue collides with source');const dest=path.join(output,p);fs.mkdirSync(path.dirname(dest),{recursive:true});if(fs.existsSync(dest))assert.equal(fs.readFileSync(dest,'utf8'),content);else fs.writeFileSync(dest,content);hosted.add(p);}});
+  if(name.endsWith('.html'))text=require('./host-page-metadata.cjs').apply(text,name);
   return text;
  }
  fs.mkdirSync(output,{recursive:true});let nativeFiles=0;

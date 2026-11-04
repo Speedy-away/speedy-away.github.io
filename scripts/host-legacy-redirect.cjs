@@ -28,10 +28,11 @@ function resolveTarget(location,config){
 function originURL(origin){if(origin!=='https://speedy-away.github.io')throw Error('Unknown host origin');return origin+'/';}
 function renderHomeRedirect(origin){
  const home=originURL(origin);
- return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WWB HOST</title><link rel="canonical" href="'+home+'"><script>location.replace("/"+location.search+location.hash);</script><noscript><meta http-equiv="refresh" content="0;url='+home+'"></noscript></head><body><p>WWB HOST is now at <a href="'+home+'">speedy-away.github.io</a>.</p></body></html>';
+ const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WWB HOST</title><link rel="canonical" href="'+home+'"><script>location.replace("/"+location.search+location.hash);</script><noscript><meta http-equiv="refresh" content="0;url='+home+'"></noscript></head><body><p>WWB HOST is now at <a href="'+home+'">speedy-away.github.io</a>.</p></body></html>';
+ return require('./host-page-metadata.cjs').apply(html,'hosts/index.html');
 }
 function render404(origin,revision){
  const home=originURL(origin);
- return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WWB HOST page lookup</title></head><body><p id="status">Opening the current host page…</p><a href="'+home+'">Open WWB HOST</a><script src="/host-project-map.js?v='+revision+'"></script><script>(function(){var target=('+resolveTarget.toString()+')(location,window.WWB_HOST_PROJECT);if(target)location.replace(target);else document.getElementById("status").textContent="This file is not in the active site. Choose its preserved download from the host directory.";}());</script></body></html>';
+ return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, follow"><title>WWB HOST page lookup</title></head><body><p id="status">Opening the current host page…</p><a href="'+home+'">Open WWB HOST</a><script src="/host-project-map.js?v='+revision+'"></script><script>(function(){var target=('+resolveTarget.toString()+')(location,window.WWB_HOST_PROJECT);if(target)location.replace(target);else document.getElementById("status").textContent="This file is not in the active site. Choose its preserved download from the host directory.";}());</script></body></html>';
 }
 module.exports={resolveTarget,renderHomeRedirect,render404};

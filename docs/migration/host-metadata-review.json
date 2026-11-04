@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-04T12:24:07.122Z",
+  "scope": "Search metadata and URL previews for authored host pages",
+  "baseline": "2c7180b797e19fe2327e37dd93f90d5587f97a6f",
+  "metadataPages": 67,
+  "indexableSitemapURLs": 19,
+  "previewImages": 3,
+  "checks": {
+    "focusedTests": 40,
+    "failed": 0,
+    "publishedArtifactMetadata": "passed",
+    "links": 3625,
+    "issues": 0,
+    "nativeScriptsUnchanged": 898,
+    "cachedResourcesRetained": 1536
+  },
+  "changes": [
+    "Page-specific titles, descriptions and relevant deduplicated keywords",
+    "Consistent Open Graph and Twitter large-image tags including image MIME, dimensions and alternative text",
+    "Canonical URLs and WebSite/WebPage/BreadcrumbList schema on the new host origin",
+    "Root sitemap and crawler directives; legacy aliases, launchers and retained lists excluded from indexing",
+    "Build-time metadata policy and continuous publication checks"
+  ],
+  "preservation": {
+    "htmlBodies": "All67 changed authored HTML files byte-identical outside head; all executable head scripts unchanged",
+    "nativeRuntimeFilesChanged": 0,
+    "downloadFilesChanged": 0,
+    "senderVersions": 46,
+    "senderRepackRequired": false,
+    "unchangedOtherHTMLFiles": 1107,
+    "trees": {
+      "downloads": "2c4a431d9aa9015fdfd10b619597c7c947d1ea82",
+      "runtime": "c4bd0f47ffbaf710d8431ea1c1be2fa78d1090ce"
+    }
+  },
+  "build": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865697306,
+    "budget": 922746880,
+    "files": 6204,
+    "offloadedFiles": 294,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1031075,
+      "runtime": 246042
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "references": [
+    "https://ogp.me/",
+    "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"
+  ]
+}

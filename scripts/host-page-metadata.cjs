@@ -1,0 +1,60 @@
+'use strict';
+// Authored browsing-page metadata only; native runtimes and downloads stay untouched.
+const fs=require('node:fs'),path=require('node:path');
+const ORIGIN='https://speedy-away.github.io',BRAND='WWB HOST';
+const escape=value=>String(value).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+const consoleImage=platform=>({path:'/assets/images/host-selector/whatwhatboy-'+platform+'.jpg',width:1672,height:941,alt:platform==='ps4'?'PlayStation 4 console and DualShock 4 controller':'PlayStation 5 console and DualSense controller'});
+const pages={
+ 'index.html':{name:'PS4 & PS5 Hosts, Payloads & Mods',description:'Choose PS4 or PS5 to browse firmware-specific hosts, homebrew payloads, mods, mod menus, trainers and game patches. Load or download compatible files.',keywords:['PS4 host','PS5 host','PlayStation homebrew','jailbreak hosts','payloads','mod menus','game patches','GoldHEN'],image:consoleImage('ps5')},
+ 'hosts/credits/index.html':{name:'Credits & Sources',description:'Original projects, authors, artwork credits and source links behind WWB HOST, the community PS4 and PS5 host and download directory.',keywords:['WWB HOST credits','PlayStation community','open source','project authors','artwork credits']},
+ 'hosts/tools/ps4-trainer/index.html':{name:'PS4 Offline Trainer',description:'Browse PS4 trainer definitions by game, exact CUSA title ID and update. Choose compatible cheats for an already running WebRTE service.',keywords:['PS4 trainer','offline trainer','PS4 cheats','WebRTE','CUSA','game updates'],image:{path:'/assets/images/home/ps4-offline-trainer-cover-v1.jpg',width:960,height:600,alt:'PS4 controller beside a trainer menu illustration'}},
+ 'hosts/tools/esp-flasher/index.html':{name:'ESP Web Flasher',description:'Flash reviewed ESP firmware in a compatible desktop browser using Web Serial. Choose your device and exact firmware build before writing.',keywords:['ESP web flasher','Web Serial','ESP firmware','PS4 host','self hosting']},
+ 'hosts/karo/index.html':{name:'Retained Original Loader Builds',description:'Browse preserved original PS4 and PS5 loader builds, exact firmware requirements, source credits and downloads of older versions.',keywords:['preserved PlayStation hosts','original loader builds','firmware compatibility','older versions'],index:false},
+ 'hosts/karo/versions.html':{name:'Retained Loader Versions',description:'Preserved older PS4 and PS5 loader downloads with their original build identities. Select the exact version and matching firmware.',keywords:['retained loader versions','PS4 host archive','PS5 host archive','exact build downloads'],index:false}
+};
+for(const platform of ['ps4','ps5']){
+ const label=platform.toUpperCase(),base='hosts/'+platform+'/',common=[label,'PlayStation '+platform.slice(-1),label+' homebrew'];
+ const add=(part,name,description,keywords)=>pages[base+part+'index.html']={name:label+' '+name,description,keywords:[...common,...keywords],platform,image:consoleImage(platform)};
+ add('','Jailbreak Hosts, Payloads & Mods','Browse '+label+' firmware-specific hosts, homebrew payloads, mods, mod menus and game patches. Check exact compatibility, then load or download.',['jailbreak hosts','firmware selector','payloads','mods','mod menus','game patches',...(platform==='ps4'?['GoldHEN','PS4 trainer']:['PS4 games on PS5'])]);
+ add('patches/','Game Patches',platform==='ps4'?'Browse PS4 game patches for FPS unlocks, frame pacing and graphics options. Match your title ID and update, then load installed patches or download XML.':'Browse native PS5 and compatible PS4-on-PS5 game patches. Match your title ID and update, then load installed patches or download the exact XML.',['game patches','FPS unlock','frame pacing','graphics patches','title ID','XML patches']);
+ add('payload-manager/','Payload Manager','Browse '+label+' payload builds and their exact requirements. Load or download compatible ELF and BIN files using the matching console tools.',['payload manager','ELF payloads','BIN payloads','payload downloads']);
+ add('files/','File Manager','Open the installed native '+label+' file workspace with its matching tools. Check the required service and firmware before managing console files.',['file manager','console files','native workspace']);
+ add('packages/','Package Installation','Choose '+label+' package installation tools, check their requirements and use your downloaded PKG with the matching native installer.',['package installer','PKG files','console tools']);
+ add('lua/','Lua Game Loader','Review the native '+label+' game-save entry and its requirements before loading a compatible Lua payload. Match the supported game and version.',['Lua loader','Lua payloads','game save entry']);
+ add('firmware/','Firmware & WebKit Hosts','Choose an exact '+label+' firmware family and review its browser-host requirements. Load only the route listed for your console version.',['firmware selector','WebKit hosts','browser exploit','firmware compatibility']);
+}
+pages['hosts/ps4/cheats/index.html']={name:'PS4 GoldHEN Cheats',description:'Download PS4 GoldHEN cheat files for the exact CUSA title ID and game update. Keep each cheat definition matched to its supported version.',keywords:['PS4 cheats','GoldHEN cheats','CUSA','game updates','cheat files'],platform:'ps4',image:consoleImage('ps4')};
+function descriptor(name,html=''){
+ if(pages[name])return {...pages[name],canonical:ORIGIN+'/'+name.replace(/index\.html$/,'')};
+ if(name==='hosts/index.html')return {...pages['index.html'],canonical:ORIGIN+'/',index:false};
+ if(/^hosts\/ps[45]\/(?:exploit\/[^/]+|afterglow)\/index\.html$/.test(name)){
+  const platform=name.split('/')[1],label=platform.toUpperCase(),match=html.match(/<title>([\s\S]*?)<\/title>/i),title=(match?match[1].replace(/\s*\|.*$/,''):label+' Browser Host').replaceAll('\ufffd','–');
+  return {name:title,description:'Review the exact '+label+' firmware and original loader requirements for this browser entry. Start the supported host only on the matching console.',keywords:[label+' browser host','WebKit exploit','exact firmware','PlayStation homebrew'],platform,image:consoleImage(platform),index:false,canonical:ORIGIN+'/'+name.replace(/index\.html$/,'')};
+ }
+ return null;
+}
+function markup(data){
+ const title=data.name+' | '+BRAND,image=data.image||consoleImage('ps5'),url=data.canonical,keywords=[...new Set([...data.keywords,BRAND,'whatwhatboy'])].join(', '),robots=data.index===false?'noindex, follow':'index, follow, max-image-preview:large';
+ const meta=(key,value,property=false)=>'<meta '+(property?'property':'name')+'="'+key+'" content="'+escape(value)+'">';
+ const schema={'@context':'https://schema.org','@graph':[{'@type':'WebSite','@id':ORIGIN+'/#website',url:ORIGIN+'/',name:BRAND,alternateName:'whatwhatboy PS4 / PS5 Host',inLanguage:'en'},{'@type':'WebPage','@id':url+'#webpage',url,name:title,description:data.description,inLanguage:'en',isPartOf:{'@id':ORIGIN+'/#website'},keywords,image:ORIGIN+image.path}]};
+ if(url!==ORIGIN+'/'){
+  const items=[{name:BRAND,item:ORIGIN+'/'}];
+  if(data.platform&&url!==ORIGIN+'/hosts/'+data.platform+'/')items.push({name:data.platform.toUpperCase(),item:ORIGIN+'/hosts/'+data.platform+'/'});
+  items.push({name:data.name,item:url});schema['@graph'].push({'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:items.map((item,index)=>({'@type':'ListItem',position:index+1,...item}))});schema['@graph'][1].breadcrumb={'@id':url+'#breadcrumb'};
+ }
+ return ['<title>'+escape(title)+'</title>',meta('description',data.description),meta('keywords',keywords),meta('author','whatwhatboy'),meta('robots',robots),'<link rel="canonical" href="'+escape(url)+'">',meta('og:type','website',true),meta('og:site_name',BRAND,true),meta('og:locale','en_GB',true),meta('og:url',url,true),meta('og:title',title,true),meta('og:description',data.description,true),meta('og:image',ORIGIN+image.path,true),meta('og:image:secure_url',ORIGIN+image.path,true),meta('og:image:type','image/jpeg',true),meta('og:image:width',image.width,true),meta('og:image:height',image.height,true),meta('og:image:alt',image.alt,true),meta('twitter:card','summary_large_image'),meta('twitter:title',title),meta('twitter:description',data.description),meta('twitter:image',ORIGIN+image.path),meta('twitter:image:alt',image.alt),'<script id="site-page-schema" type="application/ld+json">'+JSON.stringify(schema).replaceAll('<','\\u003c')+'</script>'].join('\n');
+}
+function apply(html,name,override){
+ const data=override||descriptor(name,html);if(!data||!/<head\b[^>]*>[\s\S]*?<\/head>/i.test(html))return html;
+ return html.replace(/(<head\b[^>]*>)([\s\S]*?)(<\/head>)/i,(_,open,head,close)=>{
+  head=head.replace(/<title\b[^>]*>[\s\S]*?<\/title>\s*/gi,'').replace(/<meta\b[^>]*>\s*/gi,tag=>{const key=tag.match(/\b(?:name|property)\s*=\s*["']([^"']+)["']/i)?.[1];return key&&/^(?:description|keywords|author|robots|googlebot|og:.*|twitter:.*)$/i.test(key)?'':tag;}).replace(/<link\b[^>]*\brel=["']canonical["'][^>]*>\s*/gi,'').replace(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>\s*/gi,'');
+  return open+head+markup(data)+'\n'+close;
+ });
+}
+function sitemap(){return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+Object.entries(pages).filter(([,data])=>data.index!==false).map(([name])=>'  <url><loc>'+ORIGIN+'/'+name.replace(/index\.html$/,'')+'</loc></url>').join('\n')+'\n</urlset>\n';}
+function robots(){return 'User-agent: *\nAllow: /\nDisallow: /hosts/runtime/\nDisallow: /downloads/\nDisallow: /docs/\n\nSitemap: '+ORIGIN+'/sitemap.xml\n';}
+function main(){const root=path.resolve(__dirname,'..'),walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?(entry.name==='runtime'?[]:walk(path.join(dir,entry.name))):[path.join(dir,entry.name)]);let changed=0;
+ for(const name of ['index.html',...walk(path.join(root,'hosts')).filter(file=>file.endsWith('.html')).map(file=>path.relative(root,file).replaceAll('\\','/'))]){const file=path.join(root,name),before=fs.readFileSync(file,'utf8'),after=apply(before,name);if(after!==before){fs.writeFileSync(file,after);changed++;}}
+ fs.writeFileSync(path.join(root,'sitemap.xml'),sitemap());fs.writeFileSync(path.join(root,'robots.txt'),robots());console.log(JSON.stringify({metadataPagesChanged:changed,indexablePages:Object.values(pages).filter(data=>data.index!==false).length,nativeFilesChanged:0,downloadFilesChanged:0}));
+}
+if(require.main===module)main();module.exports={ORIGIN,BRAND,pages,descriptor,markup,apply,sitemap,robots};

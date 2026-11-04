@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /hosts/runtime/
+Disallow: /downloads/
+Disallow: /docs/
+
+Sitemap: https://speedy-away.github.io/sitemap.xml
