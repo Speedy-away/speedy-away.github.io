@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T14:11:41.984Z",
+  "updatedAt": "2026-11-04T14:21:58.075Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -65,11 +65,11 @@
     ]
   },
   "publication": {
-    "id": 41844635377,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41844635377",
-    "commit": "4b3b132bb51ff4e76930fba17bafe6e18e8f88a9",
+    "id": 41846357882,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41846357882",
+    "commit": "cd756485d3646e1f282a071170a62c43ada1a706",
     "conclusion": "success",
-    "verifiedAt": "2026-11-04T14:11:41.984Z"
+    "verifiedAt": "2026-11-04T14:21:58.075Z"
   },
   "constraints": [
     "Preserve every older version.",
@@ -1215,11 +1215,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41844635377,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41844635377",
-    "commit": "4b3b132bb51ff4e76930fba17bafe6e18e8f88a9",
+    "id": 41846357882,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41846357882",
+    "commit": "cd756485d3646e1f282a071170a62c43ada1a706",
     "conclusion": "success",
-    "verifiedAt": "2026-11-04T14:11:41.984Z"
+    "verifiedAt": "2026-11-04T14:21:58.075Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1636,7 +1636,7 @@
     "buildVerifiersPassed": 4
   },
   "offlineSetupImprovements": {
-    "status": "Local checks and browser save/reopen/verify passed; publication pending",
+    "status": "Published and live verified",
     "features": [
       "Resume interrupted saves by reusing checksum-verified files",
       "Repair missing or corrupt files on retry",
@@ -1657,6 +1657,24 @@
       "reopenedWithPreviewServerStopped": true,
       "physicalConsoleTested": false
     },
-    "previewServerFix": "Serve original extensionless LICENSE/COPYING files as inert text so the complete pack can be tested"
+    "previewServerFix": "Serve original extensionless LICENSE/COPYING files as inert text so the complete pack can be tested",
+    "commit": "cd756485d3646e1f282a071170a62c43ada1a706",
+    "deployment": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41846357882",
+    "liveReport": "docs/qa/offline-setup-improvements-live.json",
+    "screenshots": "docs/screenshots/offline-improved-20261104",
+    "livePacks": [
+      {
+        "platform": "ps4",
+        "version": "96252e68cbd27d73abdc28ed",
+        "files": 1982,
+        "bytes": 42979024
+      },
+      {
+        "platform": "ps5",
+        "version": "6d11c0e1b60c07e930773388",
+        "files": 739,
+        "bytes": 16332354
+      }
+    ]
   }
 }
