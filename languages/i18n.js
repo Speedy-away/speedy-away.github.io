@@ -86,6 +86,8 @@
   }
 
   function detect() {
+    var pageLanguage = document.documentElement.getAttribute("data-host-locale");
+    if (CODES.indexOf(pageLanguage) !== -1) {store(pageLanguage);return pageLanguage;}
     var saved = stored();
     if (saved && CODES.indexOf(saved) !== -1) return saved;
     var navLangs = navigator.languages || [navigator.language || ''];
@@ -184,7 +186,7 @@
         names.push(name);
         if (/^(?:count|total|shown|bytes|size|number)$/.test(name)) pattern += '([0-9][0-9.,]*)';
         else if (name === 'platform') pattern += '(PS4(?:\\s*\\/\\s*PS5)?|PS5|PS3|PS Vita|Xbox 360|Nintendo Switch|Steam Deck|PC)';
-        else if (name === 'filename') pattern += '([^\\r\\n<>]+\\.(?:pkg|fpkg|elf|bin|prx|sprx|self|zip|rar|7z|iso|json|vpk|pup|jar|csc|gsc|lua|txt|ini))';
+        else if (name === 'filename') pattern += '([^\\r\\n<>]+\\.(?:pkg|fpkg|elf|bin|prx|sprx|self|zip|rar|7z|iso|json|vpk|pup|jar|csc|gsc|lua|txt|ini|xml))';
         else pattern += '([^\\r\\n]+?)';
         cursor = marker.lastIndex;
       }
@@ -242,6 +244,7 @@
   function translateText(node, table) {
     if (skipped(node.parentNode)) return;
     var original = textOriginals.get(node);
+    if(original === undefined && node.parentNode && node.parentNode.getAttribute){var authored=node.parentNode.getAttribute("data-i18n-source");if(authored!==null){original=authored;textOriginals.set(node,original);textRendered.set(node,node.nodeValue);}}
     var value = node.nodeValue;
     if (original === undefined || value !== textRendered.get(node) && value !== original) {
       original = node.nodeValue;
@@ -305,8 +308,11 @@
     titleRendered = t === undefined ? titleOriginal : t;
     if (document.title !== titleRendered) document.title = titleRendered;
 
-    var metas = document.querySelectorAll('meta[name="description"],meta[property="og:title"],meta[property="og:description"],meta[name="twitter:title"],meta[name="twitter:description"]');
+    var metas = document.querySelectorAll('meta[name="keywords"],meta[property="og:image:alt"],meta[name="twitter:image:alt"],meta[name="description"],meta[property="og:title"],meta[property="og:description"],meta[name="twitter:title"],meta[name="twitter:description"]');
     for (var i = 0; i < metas.length; i++) translateAttrs(metas[i], table, ['content']);
+    var schemaNode=document.querySelector('#site-page-schema');
+    if(schemaNode)try{var schema=JSON.parse(schemaNode.textContent),page=(schema['@graph']||[]).filter(function(item){return item['@type']==='WebPage';})[0],description=document.querySelector('meta[name="description"]'),keywords=document.querySelector('meta[name="keywords"]');if(page){page.name=document.title;page.inLanguage=current;if(description)page.description=description.getAttribute('content');if(keywords)page.keywords=keywords.getAttribute('content');schemaNode.textContent=JSON.stringify(schema).replace(/</g,'\\u003c');}}catch(_){}
+    var locale=document.querySelector('meta[property="og:locale"]'),localeMap={en:'en_GB',es:'es_ES',pt:'pt_BR',fr:'fr_FR',de:'de_DE',ru:'ru_RU',tr:'tr_TR',pl:'pl_PL',it:'it_IT',zh:'zh_CN',ja:'ja_JP',ko:'ko_KR',th:'th_TH',vi:'vi_VN',id:'id_ID',hi:'hi_IN',sr:'sr_RS',nl:'nl_NL',ka:'ka_GE',ar:'ar_AR',he:'he_IL'};if(locale)locale.setAttribute('content',localeMap[current]||current);
   }
 
   function finishApplying() {
@@ -372,6 +378,8 @@
 
   function setLang(code, opts) {
     opts = opts || {};
+    var hostSource=document.documentElement.getAttribute('data-host-source');
+    if(!opts.silent && hostSource && CODES.indexOf(code)!==-1 && code!==current){store(code);window.location.href=(code===DEFAULT_LANG?'':'/'+code)+hostSource+(window.location.search||'')+(window.location.hash||'');return;}
     if (CODES.indexOf(code) === -1) code = DEFAULT_LANG;
 
     // Dictionaries load over the network, so a slow one must never overwrite a
@@ -414,7 +422,7 @@
       startObserver();
 
       try {
-        window.dispatchEvent(new CustomEvent('scooby:langchange', { detail: { lang: code } }));
+        window.dispatchEvent(new CustomEvent('scooby:langchange', { detail: { lang: code, userInitiated: !opts.silent } }));
       } catch (e) {}
     });
   }
@@ -840,6 +848,7 @@
   function syncUI() {
     if (!root) return;
     var meta = LANGS.filter(function (l) { return l.code === current; })[0] || LANGS[0];
+    var toggle = root.querySelector('.i18n-toggle');if(toggle)toggle.setAttribute('aria-label',lookup('Change language',dicts[current]||{})||'Change language');
     var label = root.querySelector('.i18n-current');
     if (label) label.textContent = meta.label;
     var tf = root.querySelector('.i18n-toggle-flag');

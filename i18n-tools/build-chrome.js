@@ -110,6 +110,7 @@ const existing = Object.fromEntries(LANGS.map(code => {
   if (!entry || !entry[1] || Object.values(entry[1]).some(value => typeof value !== 'string')) throw Error('Invalid existing dictionary: '+code);
   return [code,entry[1]];
 }));
+Object.assign(T, require('./host-current-translations.cjs').table);
 const keys = Object.keys(T);
 let written = 0;
 

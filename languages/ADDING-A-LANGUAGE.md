@@ -162,3 +162,22 @@ Delete `languages/<code>.js`, then remove its `LANGS` entry and its `FLAGS` entr
 - [../TRANSLATIONS.md](../TRANSLATIONS.md) — how the engine works, the selector, the first-visit picker
 - [../tools/i18n-update.js](../tools/i18n-update.js) — keeps dictionaries in sync as site copy changes
 - `_todo/` — generated lists of strings still needing translation
+
+
+## Host localization and search pages
+
+The host now publishes English plus 20 language URL sets. Current authored UI
+strings are maintained in `i18n-tools/host-current-translations.cjs`. Preserve
+placeholder names, firmware versions, game title IDs and file identities.
+
+After editing these translations, run `node scripts/update-host-locales.cjs`.
+This merges existing dictionaries without pruning them and refreshes localized
+metadata entries, sitemap and robots directives. `scripts/host-locales.cjs`
+generates the deployed language URLs, static text, canonical links and reciprocal
+hreflang annotations. The Pages build includes these documents in each matching
+console offline pack. Original native runtime files are never translated.
+
+For a new language, update the supported-code lists in the runtime, host locale
+generator, translation table and offline URL policy together. Verify with the
+localization tests and `scripts/verify-host-locales.cjs` against a fresh Pages
+build. Only generated, existing language destinations belong in the sitemap.

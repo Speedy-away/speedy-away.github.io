@@ -52,7 +52,7 @@
  text('Checking offline status…');
  if(typeof service.getRegistration==='function')service.getRegistration('/').then(function(registration){var worker=registration&&(ours(registration.active)?registration.active:ours(registration.waiting)?registration.waiting:null);if(worker){savedWorker=worker;worker.postMessage({type:'STATUS',platform:platform});}else if(!busy)text(button?'No saved offline copy was found. Choose Save for offline to get started.':'No saved offline copy was found. Open offline setup to save this console.');}).catch(function(){if(!busy)text('Offline status could not be checked. Open offline setup to retry.');});
  else text('Open offline setup to save this console.');
- if(summary)summary.textContent='Host pages, exact supported exploit files and game patch XMLs. Large downloads and external services need a connection.';
+ if(summary)summary.textContent='Save host pages and supported files for offline use.';
  if(verifyButton)verifyButton.addEventListener('click',function(){if(busy||!savedWorker||!workerEnhanced)return;running('Checking saved files on this device…');savedWorker.postMessage({type:'VERIFY',platform:platform});});
  if(button)button.addEventListener('click',function(){
   if(busy)return;running('Preparing offline saving…');

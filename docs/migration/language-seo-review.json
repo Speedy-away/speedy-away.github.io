@@ -1,0 +1,143 @@
+{
+  "status": "Local verification and visual review passed; publication pending",
+  "languages": [
+    {
+      "code": "es",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "pt",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "fr",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "de",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "ru",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "tr",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "pl",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "it",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "zh",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "ja",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "ko",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "th",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "vi",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "id",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "hi",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "sr",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "nl",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "ka",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "ar",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    },
+    {
+      "code": "he",
+      "entries": 1345,
+      "priorEntriesRetained": 1198
+    }
+  ],
+  "defaultLanguage": "en",
+  "currentUITranslationKeys": 80,
+  "indexablePages": 399,
+  "localizedOfflinePages": 40,
+  "sourceBodiesUnchanged": 62,
+  "nativeFilesChanged": 0,
+  "downloadFilesChanged": 0,
+  "sitemap": "sitemap.xml",
+  "robots": "robots.txt",
+  "testsPassed": 47,
+  "buildVerifier": "scripts/verify-host-locales.cjs",
+  "buildDirectory": "tmp/multilingual-ready-20261104",
+  "searchGuidance": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+  "buildVerifiersPassed": 5,
+  "visualReview": {
+    "spanishHost": true,
+    "frenchLanguageSwitchPreservedGameAndView": true,
+    "frenchPatchCatalogueLoaded": true,
+    "arabicOfflineRTL": true
+  },
+  "offlinePacks": [
+    {
+      "platform": "ps4",
+      "version": "1b9219dcbba6e74ca14e8e42",
+      "files": 2384,
+      "bytes": 60608522,
+      "patchXMLs": 382,
+      "trainerDefinitions": 1181
+    },
+    {
+      "platform": "ps5",
+      "version": "3737523eec5f91cdada07316",
+      "files": 1101,
+      "bytes": 31244370,
+      "patchXMLs": 392,
+      "trainerDefinitions": 0
+    }
+  ]
+}

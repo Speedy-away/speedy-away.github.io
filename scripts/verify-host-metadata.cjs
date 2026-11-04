@@ -11,6 +11,6 @@ function verify(output){
  }
  const xml=fs.readFileSync(path.join(output,'sitemap.xml'),'utf8');assert.equal(xml,metadata.sitemap());for(const [,url]of xml.matchAll(/<loc>(.*?)<\/loc>/g)){const html=fs.readFileSync(path.join(output,new URL(url).pathname,'index.html'),'utf8');assert.ok(html.includes('<link rel="canonical" href="'+url+'">'));assert.match(html,/<meta name="robots" content="index,/);}
  assert.equal(fs.readFileSync(path.join(output,'robots.txt'),'utf8'),metadata.robots());for(const name of ['WWB-HOST/index.html','WWB-HOST/hosts/index.html','404.html'])assert.match(fs.readFileSync(path.join(output,name),'utf8'),/<meta name="robots" content="noindex, follow">/);
- const report={status:'passed',metadataPages:pages,noindexPages,indexableSitemapURLs:Object.values(metadata.pages).filter(data=>data.index!==false).length,previewImages:images.size,issues:0};console.log(JSON.stringify(report));return report;
+ const report={status:'passed',metadataPages:pages,noindexPages,indexableSitemapURLs:Object.values(metadata.pages).filter(data=>data.index!==false).length*require('./host-locales.cjs').codes.length,previewImages:images.size,issues:0};console.log(JSON.stringify(report));return report;
 }
 if(require.main===module)verify(path.resolve(process.argv[2]));module.exports={verify};

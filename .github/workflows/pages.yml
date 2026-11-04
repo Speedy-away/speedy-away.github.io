@@ -29,6 +29,8 @@ jobs:
         run: node scripts/verify-host-offline.cjs "$RUNNER_TEMP/wwb-host-pages"
       - name: Verify complete game patch definitions and offline coverage
         run: node scripts/verify-all-game-patches.cjs "$RUNNER_TEMP/wwb-host-pages"
+      - name: Verify all language pages and metadata
+        run: node scripts/verify-host-locales.cjs "$RUNNER_TEMP/wwb-host-pages"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ runner.temp }}/wwb-host-pages
