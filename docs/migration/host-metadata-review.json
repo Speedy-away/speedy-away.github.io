@@ -31,13 +31,14 @@
     "trees": {
       "downloads": "2c4a431d9aa9015fdfd10b619597c7c947d1ea82",
       "runtime": "c4bd0f47ffbaf710d8431ea1c1be2fa78d1090ce"
-    }
+    },
+    "trackedHTMLFilesChecked": 1174
   },
   "build": {
-    "revision": "main",
+    "revision": "778bc3d19ada80efd75aa5e866b5c7a8b93fbe46",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 865697306,
+    "bytes": 865787478,
     "budget": 922746880,
     "files": 6204,
     "offloadedFiles": 294,
@@ -47,17 +48,26 @@
     "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1031075,
-      "runtime": 246042
+      "full": 1040399,
+      "runtime": 255366
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
   },
   "publication": {
-    "status": "pending"
+    "status": "published-and-live-verified",
+    "commit": "778bc3d19ada80efd75aa5e866b5c7a8b93fbe46",
+    "deployment": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41829187380",
+    "verifiedAt": "2026-11-04T12:27:52.747Z"
   },
   "references": [
     "https://ogp.me/",
     "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"
-  ]
+  ],
+  "relatedMainSite": {
+    "commit": "d34319fc521ed3c4ced165743a84dfaa0b11f38b",
+    "deployment": "https://github.com/Speedy-away/whatsite/actions/runs/41829615213",
+    "livePages": 25,
+    "status": "passed"
+  }
 }
