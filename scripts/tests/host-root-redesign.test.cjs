@@ -51,21 +51,22 @@ test('console browsing has no search control and firmware Load stays text-only a
   }
  }
 });
-test('console headings omit repeated photos and shared navigation omits KARO and connection shortcuts without changing controls',()=>{
+test('console headings expose full-width photo banner hooks and shared navigation omits KARO and connection shortcuts without changing controls',()=>{
  const theme=require('../style-host-pages.cjs');
  for(const platform of ['ps4','ps5']){
   const html='<html><head></head><body><nav class="host-taskbar"><a href="/hosts/karo/">KARO</a><a class="host-top-settings" href="/hosts/'+platform+'/?view=connection">Setup</a></nav><main><header data-wwb-image-heading><div class="wwb-heading-copy"><h1 id="title">Console</h1><a class="host-header-connection" href="?view=connection">Connection &amp; setup</a></div><figure class="wwb-heading-art"><img src="/assets/images/host-selector/whatwhatboy-'+platform+'.jpg" alt="Console"></figure></header><button id="native-start">Load</button><script id="data" type="application/json">{"firmware":"9.00"}</script><a href="/hosts/karo/versions.html" download>Archive</a></main></body></html>';
   const result=theme.themeHTML(html,'hosts/'+platform+'/index.html');
   assert.doesNotMatch(result,/host-header-connection|host-top-settings|whatwhatboy-ps[45]\.jpg/);
   assert.doesNotMatch(result.match(/<nav class="host-taskbar">[\s\S]*?<\/nav>/)[0],/KARO|hosts\/karo/);
-  assert.match(result,/data-wwb-text-heading/);assert.match(result,/href="\/hosts\/karo\/versions.html" download/);
+  assert.match(result,/data-wwb-text-heading/);assert.ok(result.includes('data-wwb-console-banner="'+platform+'"'));assert.match(result,/href="\/hosts\/karo\/versions.html" download/);
   assert.equal(theme.contract(result),theme.contract(html));assert.equal(theme.themeHTML(result,'hosts/'+platform+'/index.html'),result);
   const fresh=theme.themeHTML('<html><head></head><body><main><h1>Console</h1></main></body></html>','hosts/'+platform+'/index.html');
-  assert.doesNotMatch(fresh,/wwb-heading-art|whatwhatboy-ps[45]\.jpg/);assert.match(fresh,/data-wwb-text-heading/);
+  assert.doesNotMatch(fresh,/wwb-heading-art|whatwhatboy-ps[45]\.jpg/);assert.match(fresh,/data-wwb-text-heading/);assert.ok(fresh.includes('data-wwb-console-banner="'+platform+'"'));
   const authored=fs.readFileSync(path.join(root,'hosts',platform,'index.html'),'utf8');
   assert.doesNotMatch(authored,/host-header-connection|host-top-settings|<img\b[^>]*src="[^\"]*whatwhatboy-ps[45]\.jpg/);
+  assert.ok(authored.includes('data-wwb-console-banner="'+platform+'"'));assert.ok(fs.readFileSync(path.join(root,'hosts',platform,'patches/index.html'),'utf8').includes('data-wwb-console-banner="'+platform+'"'));
  }
  const game=theme.themeHTML('<html><head></head><body><main><h1>Game</h1></main></body></html>','hosts/ps4/gta5/index.html');
- assert.match(game,/playstation\/gta5\.jpg/);assert.match(game,/data-wwb-image-heading/);
+ assert.match(game,/playstation\/gta5\.jpg/);assert.match(game,/data-wwb-image-heading/);assert.doesNotMatch(game,/data-wwb-console-banner/);
  const home=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.equal(theme.themeHTML(home,'index.html'),home);assert.match(home,/class="console-visual"/);
 });

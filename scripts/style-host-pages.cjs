@@ -30,15 +30,17 @@ function themeHTML(html,name){
  html=html.replace(/<a\b[^>]*class="(?:host-taskbar-brand|host-top-brand)"[^>]*>/g,tag=>tag.replace(/href="[^"]*"/,'href="https://speedy-away.github.io/"'));
  if(!html.includes('href="/hosts/credits/"'))html=html.replace(/(<nav\b[^>]*class="host-taskbar"[^>]*>[\s\S]*?)(<\/nav>)/,'$1<a href="/hosts/credits/">Credits</a>$2');
  if(!html.includes('host-playstation.css'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/host-playstation.css?v=1"><script defer src="/assets/host-playstation.js?v=1"></script></head>');
- // Console photographs belong to the home picker, rather than every console heading.
+ // Console photographs form CSS background banners, never a separate image column.
  if(/^hosts\/ps[45]\//.test(name))html=html.replace(/<header\b([^>]*\bdata-wwb-image-heading\b[^>]*)>([\s\S]*?)<\/header>/g,(whole,attrs,inner)=>{
   const content=inner.replace(/<figure\b[^>]*class="wwb-heading-art"[^>]*>[\s\S]*?<\/figure>/g,figure=>/host-selector\/whatwhatboy-ps[45]\.jpg/.test(figure)?'':figure);
   return content===inner?whole:'<header'+attrs.replace(/\bdata-wwb-image-heading\b/,'data-wwb-text-heading')+'>'+content+'</header>';
  });
  // compact-launcher-heading: firmware families and launch controls need no decorative hero.
  if(/\/(?:exploit|afterglow|firmware)\//.test(name))return html;
+ const consolePlatform=name.match(/^hosts\/(ps[45])\//)?.[1];
+ if(consolePlatform)html=html.replace(/<header\b[^>]*\bdata-wwb-text-heading\b[^>]*>/g,tag=>/\bdata-wwb-console-banner="[^\"]*"/.test(tag)?tag.replace(/\bdata-wwb-console-banner="[^\"]*"/,'data-wwb-console-banner="'+consolePlatform+'"'):tag.slice(0,-1)+' data-wwb-console-banner="'+consolePlatform+'">');
  const start=html.indexOf('<main');if(start<0||html.includes('data-wwb-image-heading')||html.includes('data-wwb-text-heading'))return html;
- let before=html.slice(0,start),content=html.slice(start),[src,alt]=artwork(name);const consoleHeading=/^hosts\/ps[45]\//.test(name)&&/^host-selector\/whatwhatboy-ps[45]\.jpg$/.test(src),heading=consoleHeading?'data-wwb-text-heading':'data-wwb-image-heading',image=consoleHeading?'':'<figure class="wwb-heading-art"><img src="/assets/images/'+src+'" alt="'+alt+'" decoding="async" width="640" height="360"></figure>';
+ let before=html.slice(0,start),content=html.slice(start),[src,alt]=artwork(name);const consoleHeading=consolePlatform&&/^host-selector\/whatwhatboy-ps[45]\.jpg$/.test(src),heading=consoleHeading?'data-wwb-text-heading data-wwb-console-banner="'+consolePlatform+'"':'data-wwb-image-heading',image=consoleHeading?'':'<figure class="wwb-heading-art"><img src="/assets/images/'+src+'" alt="'+alt+'" decoding="async" width="640" height="360"></figure>';
  if(/<header\b/.test(content))content=content.replace(/<header([^>]*)>([\s\S]*?)<\/header>/,(_,attrs,inner)=>'<header'+attrs+' '+heading+'><div class="wwb-heading-copy">'+inner+'</div>'+image+'</header>');
  else content=content.replace(/<h1([^>]*)>([\s\S]*?)<\/h1>/,(_,attrs,title)=>'<header '+heading+'><div class="wwb-heading-copy"><h1'+attrs+'>'+title+'</h1></div>'+image+'</header>');
  return before+content;

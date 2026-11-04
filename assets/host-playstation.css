@@ -55,6 +55,24 @@ body.wwb-host-page .host-activity,body.wwb-host-page .host-version-status{backgr
 
 body.wwb-host-page .host-version-dialog .host-action-title>span{color:#99bdff!important}
 
+/* One full-width banner replaces the separate console photograph. */
+body.wwb-host-page [data-wwb-console-banner]{--console-banner-height:280px;position:relative;isolation:isolate;overflow:hidden;display:flex!important;align-items:center!important;box-sizing:border-box;min-height:var(--console-banner-height);padding:34px 42px!important;margin:0 0 28px!important;border:1px solid #344b68!important;border-radius:12px;background:#0b1728!important}
+body.wwb-host-page [data-wwb-console-banner="ps4"]{--console-banner-art:url("/assets/images/host-selector/whatwhatboy-ps4.jpg")}
+body.wwb-host-page [data-wwb-console-banner="ps5"]{--console-banner-art:url("/assets/images/host-selector/whatwhatboy-ps5.jpg")}
+body.wwb-host-page [data-wwb-console-banner]::before,body.wwb-host-page [data-wwb-console-banner]::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none}
+body.wwb-host-page [data-wwb-console-banner]::before{left:auto;width:calc(var(--console-banner-height)*1.777);max-width:100%;background-image:linear-gradient(90deg,#0b1728,transparent 42%),var(--console-banner-art);background-repeat:no-repeat;background-position:center,right center;background-size:100% 100%,auto 100%}
+body.wwb-host-page [data-wwb-console-banner]::after{background:linear-gradient(90deg,#0b1728 0%,rgba(11,23,40,.96) 34%,rgba(11,23,40,.55) 61%,rgba(11,23,40,.04) 100%)}
+body.wwb-host-page [data-wwb-console-banner]>.wwb-heading-copy{position:relative;z-index:1;width:65%;max-width:760px;min-width:0}
+body.wwb-host-page [data-wwb-console-banner] .wwb-heading-copy h1{color:#f4f8ff!important;margin-top:8px!important}
+body.wwb-host-page [data-wwb-console-banner] .wwb-heading-copy p{color:#c8d7eb!important}
+body.wwb-host-page [data-wwb-console-banner] .host-heading-line{margin:0!important}
+@media(max-width:800px){body.wwb-host-page [data-wwb-console-banner]{--console-banner-height:240px;padding:28px!important}body.wwb-host-page [data-wwb-console-banner]>.wwb-heading-copy{width:76%}body.wwb-host-page [data-wwb-console-banner]::after{background:linear-gradient(90deg,rgba(11,23,40,.97),rgba(11,23,40,.81) 48%,rgba(11,23,40,.22))}}
+@media(max-width:480px){body.wwb-host-page [data-wwb-console-banner]{--console-banner-height:220px;padding:24px 20px!important}body.wwb-host-page [data-wwb-console-banner]>.wwb-heading-copy{width:100%}body.wwb-host-page [data-wwb-console-banner]::before{background-position:center,65% center}body.wwb-host-page [data-wwb-console-banner] .wwb-heading-copy h1{font-size:2rem!important;letter-spacing:-.035em}body.wwb-host-page [data-wwb-console-banner] .wwb-heading-copy p{font-size:.85rem;max-width:28ch}}
+/* The console gets one static photo, with no animated or filtered image layers. */
+html.host-console-browser body.wwb-host-page [data-wwb-console-banner]{--console-banner-height:160px;padding:20px!important}
+html.host-console-browser body.wwb-host-page [data-wwb-console-banner]::before{background-image:linear-gradient(90deg,#0b1728,transparent 42%),var(--console-banner-art)!important}
+html.host-console-browser body.wwb-host-page [data-wwb-console-banner]::after{background-image:linear-gradient(90deg,#0b1728,rgba(11,23,40,.8) 52%,rgba(11,23,40,.12))!important}
+
 /* Firmware Load is the primary action, centered across the whole library. */
 body.wwb-host-page .host-catalog-grid--loaders>.host-catalog-tile[data-launch]{grid-column:1/-1;justify-self:center;width:100%;max-width:760px;min-height:180px;display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:30px 24px!important;text-align:center!important;background:#173455!important;border:1px solid #86b9ff!important;border-radius:12px!important}
 body.wwb-host-page .host-catalog-grid--loaders>.host-catalog-tile[data-launch] .host-catalog-tile__label{font-size:clamp(2.2rem,5vw,3.4rem)!important;font-weight:600!important;line-height:1.1;color:#f1f7ff!important}
