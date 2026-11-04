@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261104load1';
+const ASSET_VERSION='20261104ps4fast1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('.')?[]:e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 function cacheResources(root,names){const resources=new Set();for(const name of names.filter(p=>/^hosts\/runtime\/.+\.(?:manifest|appcache|cache)$/i.test(p))){if(!fs.existsSync(path.join(root,name)))continue;let section='CACHE';for(let line of fs.readFileSync(path.join(root,name),'utf8').split(/\r?\n/)){line=line.trim();if(!line||line.startsWith('#')||line==='CACHE MANIFEST')continue;if(/^[A-Z]+:$/.test(line)){section=line.slice(0,-1);continue;}if(section!=='CACHE')continue;try{const url=new URL(line,'https://host.invalid/'+name);if(url.origin==='https://host.invalid')resources.add(decodeURIComponent(url.pathname.slice(1)));}catch{}}}return resources;}
@@ -60,7 +60,7 @@ function build(output,revision='main',root=ROOT){
    text=text.replace(/<script\b([^>]*?)type=["']module["']([^>]*?)src=["']([^"']*host-esp-flasher\.js[^"']*)["']([^>]*)><\/script>/gi,(_,a,b,src)=>'<meta data-host-desktop-module="'+src+'">');
    text=text.replace(/<img\b[^>]*>/gi,tag=>/\bwidth=["'](?:24|32)["']/.test(tag)?tag:tag.replace(/\bsrc=/i,'data-host-src='));
    text=text.replace(/<head\b[^>]*>/i,m=>m+'<script src="/assets/host-performance.js?v=2"></script>');
-   text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-performance.css?v=4"></head>');
+   text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-performance.css?v=5"></head>');
   }
   if(name.endsWith('.html'))text=require('./host-compact-pages.cjs').apply(text,name,{root});
   if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);

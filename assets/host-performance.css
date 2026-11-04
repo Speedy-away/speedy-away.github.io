@@ -14,3 +14,7 @@
 .host-console-browser .console-visual{display:none!important}.host-console-browser .console-copy{border-top:0}.host-console-browser .game-links>a{grid-template-columns:minmax(0,1fr) auto}.host-console-browser .karo-feature{grid-template-columns:1fr;min-height:0;padding:20px}.host-console-browser .intro h1{font-size:2.2rem}
 .host-console-browser #trainer-dialog-art{display:none!important}.host-console-browser .trainer-dialog-summary{grid-template-columns:minmax(0,1fr)}
 .host-console-browser .host-patch-tile{padding:12px;border:1px solid #34435a;min-height:72px}.host-console-browser .host-patch-grid{gap:12px}
+
+/* No advertising, fixed artwork layers or banner paints on console browsers. */
+.host-console-browser .wwb-host-ad,.host-console-browser .ps-atmosphere{display:none!important}
+.host-console-browser [data-wwb-console-banner]::before,.host-console-browser [data-wwb-console-banner]::after{display:none!important}

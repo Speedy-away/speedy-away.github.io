@@ -9,7 +9,7 @@ permissions:
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,6 +35,7 @@ jobs:
         with:
           path: ${{ runner.temp }}/wwb-host-pages
   deploy:
+    timeout-minutes: 35
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -43,3 +44,5 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v4
         id: deployment
+        with:
+          timeout: 1800000

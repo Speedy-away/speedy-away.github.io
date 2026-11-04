@@ -1758,5 +1758,11 @@
     "cache": "Existing destination AppCache manifest saves in the browser while the host is open; offline readiness still requires completion",
     "tests": 5,
     "consoleExecutionVerified": false
+  },
+  "ps4Performance20261104": {
+    "status": "Console advertising scripts disabled; static low-paint presentation enforced",
+    "tests": 6,
+    "nativeExecutionVerified": false,
+    "deployment": "Previous deploy step cancelled after exactly 10 minutes. Increase documented deployment timeout to 30 minutes; preserve in-progress deploys on subsequent pushes."
   }
 }
