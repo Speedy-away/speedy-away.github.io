@@ -665,7 +665,7 @@
   var CHECK = '<svg class="i18n-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
 
   // Ordered by preference; the selector lands in the first container that exists.
-  var MOUNTS = ['.wwb-host-home nav.topbar', '.nav-inner', '.navbar-inner', '.nav-container', 'nav.navbar',
+  var MOUNTS = ['.wwb-host-page .host-taskbar', '.wwb-host-home nav.topbar', '.nav-inner', '.navbar-inner', '.nav-container', 'nav.navbar',
                 '.portal-header .header-inner', 'header.header', '.header-inner'];
   var BRANDS = '.sidebar-brand, .brand, .logo, .navbar-brand-text, .portal-logo, .navbar-brand, .brand-name';
 
@@ -832,6 +832,8 @@
       document.body.appendChild(el);
       return;
     }
+    // Host taskbars reserve an independent end slot after Credits and Offline cache.
+    if (/(?:^|\s)host-taskbar(?:\s|$)/.test(host.className || '')) { host.appendChild(el); return; }
     // Group the selector with the brand so flex spacing stays intact.
     var brand = host.querySelector(BRANDS);
     if (brand && brand.parentNode === host) {

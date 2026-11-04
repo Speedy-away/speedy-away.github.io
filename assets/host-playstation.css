@@ -29,11 +29,11 @@ body.wwb-host-page .host-version-dialog,body.wwb-host-page .host-patch-dialog{bo
 .ps-atmosphere{position:fixed;inset:0;overflow:hidden;pointer-events:none;user-select:none;z-index:0;contain:strict}
 .ps-atmosphere{background:radial-gradient(ellipse at 70% 65%,#19376455,transparent 65%),linear-gradient(155deg,#08111d,#0e1c34 65%,#101c30)}
 .ps-atmosphere::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 16% 40%,#bddeff70 0 1px,transparent 2px),radial-gradient(circle at 63% 26%,#bddeff50 0 1px,transparent 2px),radial-gradient(circle at 82% 73%,#bddeff60 0 1px,transparent 2px);background-size:530px 410px;opacity:.3}
-.ps-current{position:absolute;inset:12% -18% -8%;width:136%;height:96%;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%20700%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%2391d5ff%22%20stop-opacity%3D%22.02%22%2F%3E%3Cstop%20offset%3D%22.5%22%20stop-color%3D%22%237dbbff%22%20stop-opacity%3D%22.25%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%234783e5%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M-100%20390%20C240%2070%20460%20640%20820%20330%20S1330%20230%201700%20310%20L1700%20410%20C1280%20290%201100%20210%20820%20370%20S200%20210-100%20450Z%22%20fill%3D%22url(%23a)%22%2F%3E%3Cpath%20d%3D%22M-100%20390%20C240%2070%20460%20640%20820%20330%20S1330%20230%201700%20310%22%20fill%3D%22none%22%20stroke%3D%22%23b6ddff%22%20stroke-opacity%3D%22.34%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E") center/100% 100% no-repeat;transform-origin:center;animation:ps-xmb-drift 24s ease-in-out infinite alternate;opacity:.72;will-change:transform}
-.ps-current--two{inset:20% -18% -16%;opacity:.42;animation-duration:33s;animation-delay:-17s}
-.ps-current--three{inset:2% -18% 2%;opacity:.26;animation-duration:39s;animation-delay:-26s}
+.ps-current{position:absolute;inset:-12% -35%;width:170%;height:124%;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%20700%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%2391d5ff%22%20stop-opacity%3D%22.02%22%2F%3E%3Cstop%20offset%3D%22.5%22%20stop-color%3D%22%237dbbff%22%20stop-opacity%3D%22.25%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%234783e5%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M-100%20390%20C240%2070%20460%20640%20820%20330%20S1330%20230%201700%20310%20L1700%20410%20C1280%20290%201100%20210%20820%20370%20S200%20210-100%20450Z%22%20fill%3D%22url(%23a)%22%2F%3E%3Cpath%20d%3D%22M-100%20390%20C240%2070%20460%20640%20820%20330%20S1330%20230%201700%20310%22%20fill%3D%22none%22%20stroke%3D%22%23b6ddff%22%20stroke-opacity%3D%22.34%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E") center/100% 100% no-repeat;transform-origin:center;animation:ps-xmb-drift 24s ease-in-out infinite alternate;opacity:.48;will-change:transform}
+.ps-current--two{inset:-2% -35% -22%;opacity:.30;animation-duration:33s;animation-delay:-17s}
+.ps-current--three{inset:-24% -35% 0;opacity:.18;animation-duration:39s;animation-delay:-26s}
 .ps-orbit{display:none}
-@keyframes ps-xmb-drift{0%{transform:translate3d(-3%,4%,0) scaleY(.85) rotate(-3deg)}50%{transform:translate3d(1%,-3%,0) scaleY(1.05) rotate(1deg)}100%{transform:translate3d(4%,2%,0) scaleY(.9) rotate(4deg)}}
+@keyframes ps-xmb-drift{0%{transform:translate3d(-3%,4%,0) scaleY(.92)}50%{transform:translate3d(1%,-3%,0) scaleY(1.03)}100%{transform:translate3d(3%,2%,0) scaleY(.96)}}
 html.host-console-browser .ps-atmosphere{display:none!important}html.host-console-browser body:before{display:none!important}html.host-console-browser body.wwb-host-page [data-wwb-image-heading]{padding:18px!important}html.host-console-browser .console{padding:18px}html.host-console-browser .console-copy{padding:0}html.host-console-browser .tool-art,html.host-console-browser .game-art{display:none}
 @media(max-width:800px){body.wwb-host-home main{padding-top:34px}.intro{display:block}.browser-status{max-width:360px;margin-top:26px}.tool-gallery{grid-template-columns:1fr 1fr}.credits-grid{grid-template-columns:1fr}body.wwb-host-page .host-patch-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.topbar{gap:16px}.topbar .brand{letter-spacing:0}.topbar .main-link{font-size:.75rem}.home-lead{font-size:.9rem}}
 @media(prefers-reduced-motion:reduce){.ps-atmosphere{display:none!important}.ps-atmosphere *{animation:none!important}*{scroll-behavior:auto!important}}
@@ -132,3 +132,37 @@ body.wwb-host-page .host-activity>header{padding:14px var(--host-dialog-gutter) 
 body.wwb-host-page .host-activity .host-version-status{box-sizing:border-box;min-height:64px;max-height:180px;padding:0 var(--host-dialog-gutter) 18px!important;font-size:.8rem;line-height:1.6}
 body.wwb-host-page .host-patch-primary-actions>a,body.wwb-host-page .host-patch-primary-actions>button{min-height:48px;font-size:1rem;line-height:1.25;padding:12px 16px}
 @media(max-width:680px){body.wwb-host-page #host-version-overlay,body.wwb-host-page #host-patch-overlay{padding:12px}body.wwb-host-page .host-version-dialog,body.wwb-host-page .host-patch-dialog{--host-dialog-gutter:16px;max-height:calc(100vh - 24px)!important;max-height:calc(100dvh - 24px)!important}body.wwb-host-page .host-version-header h2,body.wwb-host-page .host-patch-dialog h2{font-size:1.3rem}body.wwb-host-page #host-version-detail>.host-action-with-art{grid-template-columns:minmax(0,1fr)}body.wwb-host-page .host-activity .host-version-status{padding-inline:var(--host-dialog-gutter)!important}}
+
+/* Seamless viewport scene and borderless Other sections, including ultrawide displays. */
+body.wwb-host-page .host-reset .host-other-hosts,
+body.wwb-host-page .host-other-directory{border:0!important;box-shadow:none!important}
+/* Supplied mascot stays at its native size rather than stretching across the banner. */
+body.wwb-host-page [data-wwb-console-banner]{--console-banner-art:url("/assets/images/host-selector/pepe-banner.png")!important}
+body.wwb-host-page [data-wwb-console-banner]::before,
+html.host-console-browser body.wwb-host-page [data-wwb-console-banner]::before{width:156px;max-width:40%;background-image:var(--console-banner-art)!important;background-size:128px 128px;background-position:center;background-repeat:no-repeat;right:16px}
+body.wwb-host-page [data-wwb-console-banner]::after,
+html.host-console-browser body.wwb-host-page [data-wwb-console-banner]::after{background:none!important}
+@media(max-width:600px){body.wwb-host-page [data-wwb-console-banner]::before{right:0;background-size:104px 104px;opacity:.25}body.wwb-host-page [data-wwb-console-banner]>.wwb-heading-copy{width:100%}}
+
+/* The review footer follows long pages and rests at the viewport bottom on short pages. */
+body.wwb-host-page #main-content{display:flex;flex-direction:column;min-height:calc(100vh - 76px);box-sizing:border-box}
+body.wwb-host-page .guide-footer{margin-top:auto!important;padding-top:48px!important;padding-bottom:24px!important;border:0!important}
+.host-plugin-templates{margin:0 0 20px;padding:14px 18px;background:#101e33;border:1px solid #344b68;border-radius:10px}
+.host-plugin-templates>summary{cursor:pointer;font-weight:600;min-height:32px;align-content:center}
+.host-plugin-templates p{font-size:.85rem;color:#bdcbe1;max-width:90ch}
+.host-plugin-template-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.host-plugin-template-links a{display:flex;flex-direction:column;gap:4px;padding:12px;border:1px solid #344b68;border-radius:7px;text-decoration:none;font-size:.85rem}
+.host-plugin-template-links span{font-size:.75rem;color:#9fb6d6}
+/* Language is part of the header flow, with its own space beside Offline cache. */
+body.wwb-host-page .host-taskbar{padding-inline-end:32px!important;flex-wrap:wrap;gap:16px}
+body.wwb-host-page .host-taskbar .i18n-switcher{position:relative;inset:auto!important;margin-inline-start:16px;flex:none}
+body.wwb-host-page .i18n-toggle{width:auto!important;min-width:88px!important;min-height:44px!important;gap:9px;padding:10px 14px!important;border:1px solid #405a7b!important;border-radius:12px!important;background:#14243b!important;color:#edf5ff;box-shadow:none!important;font-size:12px!important}
+body.wwb-host-page .i18n-toggle:hover,body.wwb-host-page .open .i18n-toggle{background:#203c61!important;border-color:#99bdff!important;box-shadow:none!important}
+body.wwb-host-page .i18n-menu{inset-inline-start:auto!important;inset-inline-end:0!important;top:calc(100% + 12px)!important;width:420px;max-width:calc(100vw - 32px);max-height:min(65vh,620px);padding:12px;gap:5px;border:1px solid #405a7b;border-radius:16px;background:#101e33;box-shadow:0 18px 48px #02081380;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#405a7b #101e33}
+body.wwb-host-page .i18n-switcher.open .i18n-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+body.wwb-host-page .i18n-option{display:flex;align-items:center;gap:10px;min-height:46px;padding:10px;border:1px solid transparent;border-radius:9px;font-size:13px;color:#c9d8ed;background:transparent}
+body.wwb-host-page .i18n-option .i18n-badge{display:none}
+body.wwb-host-page .i18n-option:hover{background:#1a304d;color:#fff}
+body.wwb-host-page .i18n-option[aria-selected=true]{background:#203c61;border-color:#648dc4;color:#fff}
+body.wwb-host-page .i18n-check{color:#aed6ff}
+@media(max-width:640px){body.wwb-host-page .host-taskbar{padding-inline:14px!important;gap:8px}body.wwb-host-page .host-taskbar .i18n-switcher{margin-inline-start:auto}body.wwb-host-page .i18n-toggle{min-width:76px!important;min-height:40px!important;padding:8px 10px!important}body.wwb-host-page .i18n-menu{width:350px;max-width:calc(100vw - 28px)}body.wwb-host-page .i18n-option{font-size:12px;padding:8px;gap:7px}}

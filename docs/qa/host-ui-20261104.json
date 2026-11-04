@@ -1,0 +1,44 @@
+{
+  "updatedAt": "2026-11-04T16:24:18.066Z",
+  "status": "Implementation complete; final publication pending",
+  "changes": [
+    "Remove Other divider borders on authored PS4/PS5 pages",
+    "Stretch and overscan vector waves to cover ultrawide viewports without visible edges",
+    "Replace console banner artwork with user-supplied Pepe at native size",
+    "Move review/report footer to bottom of short pages",
+    "Mount language selector after Offline cache with independent spacing and a two-column menu",
+    "Add 17 commented EU / USA / JP plugins.ini templates as standard PC downloads and PS4 offline files"
+  ],
+  "templates": 17,
+  "originalExamplesPreserved": 2,
+  "archiveFilesVerified": 19,
+  "automaticInstall": false,
+  "userClarification": "just put templates for now",
+  "tests": {
+    "passed": 49,
+    "failed": 0
+  },
+  "buildChecks": {
+    "passed": 5,
+    "failed": 0
+  },
+  "browser": {
+    "widths": [
+      3440,
+      1920,
+      390
+    ],
+    "ps4": true,
+    "ps5": true,
+    "otherBorders": "0px",
+    "footerAt3440x1440": {
+      "top": 1328,
+      "bottom": 1417
+    },
+    "languageMenuOpened": true,
+    "escapeCloses": true
+  },
+  "nativeScriptsUnchanged": 959,
+  "patchOptionsRetained": 533,
+  "liveVerified": false
+}

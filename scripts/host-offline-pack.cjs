@@ -27,6 +27,7 @@ function build(output,root,groups=scopes(root)){
    if(new RegExp('^(?:'+require('./host-locales.cjs').codes.join('|')+')/(?:index\\.html|(?:hosts|offline)/'+platform+'/)').test(name))add(name);
    if(name.startsWith('hosts/'+platform+'/')&&!name.includes('/exploit/')&&!name.includes('/afterglow/'))add(name);
    if(activeEntries.has(name))add(name);
+   if(platform==='ps4'&&/^downloads\/hosts\/ps4\/plugin-templates\/20261104\/(?!originals\/).+\.ini$/.test(name))add(name);
    if(platform==='ps4'&&name.startsWith('hosts/tools/ps4-trainer/')&&!name.includes('/source/'))add(name);
    if(routes.some(group=>name.startsWith(group.runtime.slice(1)))&&!/\/payloads\//.test(name))add(name);
    if(routes.some(group=>name.startsWith(group.runtime.slice(1)))&&/\/payloads\/(?:elfldr[^/]*\.elf|kexp_[^/]+\.bin)$/.test(name))add(name);

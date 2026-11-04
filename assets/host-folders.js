@@ -35,6 +35,7 @@
  var status=document.querySelector('#host-status'),initialStatus=status.textContent;status.hidden=status.getAttribute('data-host-catalog-error')!=='true';
  new MutationObserver(function(){status.hidden=status.textContent===initialStatus&&status.getAttribute('data-host-catalog-error')!=='true';}).observe(status,{childList:true,characterData:true,subtree:true});
  var library=document.getElementById('host-folder-library');
+ var pluginTemplates=document.getElementById('host-plugin-templates');if(pluginTemplates)pluginTemplates.hidden=selected!=='mods'&&selected!=='goldhen';
  if(selected==='mods'&&platform==='ps4'){var trainer=document.createElement('a');trainer.className='host-trainer-shortcut';trainer.href='/hosts/tools/ps4-trainer/';trainer.innerHTML='<img src="/assets/images/home/ps4-offline-trainer-cover-v1.jpg" width="144" height="90" alt=""><span><strong>PS4 Offline Trainer</strong><span>Browse games and exact updates →</span></span>';library.parentNode.insertBefore(trainer,library);}
  library.hidden=!selected||selected==='connection'||selected==='sender';
  document.querySelectorAll('[data-host-folder-panel]').forEach(function(panel){panel.hidden=panel.getAttribute('data-host-folder-panel')!==selected;});
