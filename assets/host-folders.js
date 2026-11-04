@@ -13,9 +13,24 @@
  fileToolbar.hidden=selected!=='loaders';
  ['#host-game-filter'].forEach(function(selector){var item=document.querySelector(selector);if(item)fileToolbar.appendChild(item);});
  var options=document.querySelector('.host-options'),setup=document.querySelector('.host-connection-details');if(options&&setup)setup.appendChild(options);
- // Keep Load before the firmware choices in reading and tab order.
+ // Keep the firmware heading above Load, and alternative hosts below the choices.
  var actionGrid=document.getElementById('host-action-grid');
  if(selected==='loaders'&&actionGrid&&actionGrid.parentNode)actionGrid.parentNode.insertBefore(fileToolbar,actionGrid.nextSibling);
+ if(selected==='loaders'&&firmwareControl&&actionGrid){
+  var heading=document.createElement('div');heading.className='host-firmware-control';
+  var headingRow=firmwareControl.querySelector('.host-firmware-heading'),firmwareStatus=document.getElementById('host-firmware-status');
+  if(headingRow)heading.appendChild(headingRow);if(firmwareStatus)heading.appendChild(firmwareStatus);
+  actionGrid.parentNode.insertBefore(heading,actionGrid);
+  var firmwareFocus=null;
+  window.WWB_HOST_LAYOUT=function(beforeRender){
+   if(beforeRender){firmwareFocus=fileToolbar.contains(document.activeElement)?document.activeElement:null;if(fileToolbar.parentNode===actionGrid)actionGrid.parentNode.insertBefore(fileToolbar,actionGrid.nextSibling);return;}
+   var other=actionGrid.querySelector('.host-other-hosts');
+   if(other){other.querySelector('summary').textContent='Other';fileToolbar.style.gridColumn='1 / -1';fileToolbar.style.width='100%';fileToolbar.style.maxWidth='none';firmwareControl.style.maxWidth='none';firmwareControl.style.flex='1 1 100%';actionGrid.insertBefore(fileToolbar,other);}
+   if(firmwareFocus&&document.documentElement.contains(firmwareFocus))firmwareFocus.focus();firmwareFocus=null;
+   document.querySelectorAll('.host-other-directory > summary').forEach(function(summary){summary.textContent='Other';});
+  };
+  window.WWB_HOST_LAYOUT(false);
+ }
  var warning=document.querySelector('#host-transfer-warning');if(warning)fileToolbar.parentNode.insertBefore(warning,fileToolbar.nextSibling);
  var status=document.querySelector('#host-status'),initialStatus=status.textContent;status.hidden=status.getAttribute('data-host-catalog-error')!=='true';
  new MutationObserver(function(){status.hidden=status.textContent===initialStatus&&status.getAttribute('data-host-catalog-error')!=='true';}).observe(status,{childList:true,characterData:true,subtree:true});

@@ -1605,5 +1605,13 @@
         "routingOrderingOnly": true
       }
     ]
+  },
+  "firmwareControlOrder": {
+    "status": "Reviewed locally; publication pending",
+    "heading": "Installed firmware, Detect console and selection status above Load",
+    "choices": "Below Load",
+    "alternatives": "Below choices, labelled Other",
+    "testsPassed": 22,
+    "downloadsChanged": false
   }
 }

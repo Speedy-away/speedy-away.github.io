@@ -470,6 +470,7 @@
       overlay.hidden = false; doc.body.classList.add('host-dialog-open'); renderVariant(); refresh(overlay); versionChoices.querySelector('button').focus();
     }
     function render() {
+      if(win.WWB_HOST_LAYOUT)win.WWB_HOST_LAYOUT(true);
       gridChanged=false;countChanged=false;
       var query=search?search.value:'',selectedGame=game?game.value:'',includeLegacy=Boolean(legacy&&legacy.checked);
       var nextKey=[category,firmware.value,query,selectedGame,includeLegacy,catalogGame,catalogUpdate].join('|');if(nextKey!==renderKey){renderLimit=pageSize;renderKey=nextKey;}
@@ -511,6 +512,7 @@
       if(!reuseCatalogue){var empty=doc.querySelector('#host-empty');empty.hidden = catalogGrid ? Boolean(grid.querySelector('[data-catalog-game],[data-catalog-update],[data-choose-group],[data-launch],.host-firmware-family')) : visible.length !== 0 || category === 'mods' && gamesLanding;empty.textContent=category==='loaders'&&isPlaceholder()?'No loader has been added for '+platform.toUpperCase()+' '+firmware.value+' yet.':'No actions match these filters.';refresh(empty);}
       if(gridChanged)refresh(grid);if(countChanged)refresh(count);
       }
+      if(win.WWB_HOST_LAYOUT)win.WWB_HOST_LAYOUT(false);
       var managerLoad = doc.querySelector('#host-load-manager'); if (managerLoad) managerLoad.disabled = loading || !firmware.value;
       var warning = connection.warning(configuredAddress()), recovery = doc.querySelector('#host-transfer-warning');
       if (recovery) {
