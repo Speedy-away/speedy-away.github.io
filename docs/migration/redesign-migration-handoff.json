@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T03:49:54.155Z",
-  "status": "Load above firmware published and live browser verified",
+  "updatedAt": "2026-11-04T04:07:50.719Z",
+  "status": "Unified Mods / Mod Menus published and live browser verified",
   "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
   "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
   "publicURL": "https://speedy-away.github.io/",
@@ -204,20 +204,58 @@
     "physicalConsoleTested": false
   },
   "latestFollowup": {
-    "request": "Move the large Load button above the firmware grid on PS4 and PS5.",
+    "request": "Consolidate GTA V and RDR2 into Mods / Mod Menus and remove excess blank space on PS4 and PS5.",
     "status": "Published and live browser verified",
     "publicationPending": false,
-    "review": "docs/migration/load-above-firmware-review.json",
-    "liveReport": "docs/qa/load-above-firmware-live.json",
-    "screenshot": "docs/screenshots/load-above-firmware-20261104/live-ps5.jpg",
+    "review": "docs/migration/mods-consolidation-review.json",
+    "liveReport": "docs/qa/mods-consolidation-live.json",
+    "screenshot": "docs/screenshots/mods-consolidation-20261104/live-ps5.jpg",
     "deployment": {
-      "id": 41769169626,
-      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
+      "id": 41770937806,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
       "conclusion": "success",
-      "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
-      "verifiedAt": "2026-11-04T03:49:54.155Z"
+      "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+      "verifiedAt": "2026-11-04T04:07:50.719Z"
     },
-    "testsPassed": 29
+    "tests": {
+      "files": 74,
+      "tests": 515,
+      "pass": 515,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/mods-consolidation-tests.tap"
+    },
+    "sender": {
+      "version": "2.1.0+537062853155",
+      "bytes": 107453769,
+      "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+      "versionsPreserved": 44,
+      "delivery": {
+        "verifiedAt": "2026-11-04T04:01:45.064Z",
+        "version": "2.1.0+537062853155",
+        "name": "console-payload-sender-2.1.0-537062853155.zip",
+        "bytes": 107453769,
+        "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+        "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-537062853155.zip",
+        "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+537062853155\\console-payload-sender-2.1.0-537062853155.zip",
+        "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-537062853155",
+        "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-537062853155/console-payload-sender-2.1.0-537062853155.zip",
+        "assetId": 708146618,
+        "serverDigest": "sha256:c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+        "zipUnchanged": true,
+        "archiveVerified": true,
+        "downloadedCodeExecuted": false
+      }
+    },
+    "archive": {
+      "items": 5012,
+      "fileRecords": 8631,
+      "presentFileRecords": 8631,
+      "missingFileRecords": 0,
+      "otherUnavailableFiles": 0,
+      "priorInventoryRecordsPreserved": 8630,
+      "olderSenderSnapshotsPreserved": 43
+    }
   },
   "consoleBannerFollowup": {
     "review": "docs/migration/console-banner-review.json",
@@ -289,5 +327,21 @@
     "screenshot": "docs/screenshots/host-origin-fix-20261104/live-root.jpg",
     "senderVersion": "2.1.0+81aa2e7cf141",
     "noNewDownloads": true
+  },
+  "loadAboveFirmwareFollowup": {
+    "request": "Move the large Load button above the firmware grid on PS4 and PS5.",
+    "status": "Published and live browser verified",
+    "publicationPending": false,
+    "review": "docs/migration/load-above-firmware-review.json",
+    "liveReport": "docs/qa/load-above-firmware-live.json",
+    "screenshot": "docs/screenshots/load-above-firmware-20261104/live-ps5.jpg",
+    "deployment": {
+      "id": 41769169626,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
+      "conclusion": "success",
+      "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+      "verifiedAt": "2026-11-04T03:49:54.155Z"
+    },
+    "testsPassed": 29
   }
 }

@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T04:03:56.378Z",
+  "updatedAt": "2026-11-04T04:07:50.719Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Load above firmware published and live browser verified",
+  "status": "Unified Mods / Mod Menus published and live browser verified",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,12 +14,12 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
+    "revision": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 864289020,
+    "bytes": 865575693,
     "budget": 922746880,
-    "files": 6201,
+    "files": 6202,
     "offloadedFiles": 292,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
@@ -27,8 +27,8 @@
     "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1039744,
-      "runtime": 254868
+      "full": 1039871,
+      "runtime": 254871
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -1189,11 +1189,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41769169626,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41769169626",
+    "id": 41770937806,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
     "conclusion": "success",
-    "commit": "b80c02abd4d6d6dfc17c28667abb143fe5a93d3a",
-    "verifiedAt": "2026-11-04T03:49:54.155Z"
+    "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+    "verifiedAt": "2026-11-04T04:07:50.719Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1364,9 +1364,9 @@
     "liveReport": "docs/qa/load-above-firmware-live.json"
   },
   "modsConsolidation": {
-    "status": "All checks passed; publication pending",
+    "status": "Published and live browser verified",
     "review": "docs/migration/mods-consolidation-review.json",
-    "publicationPending": true,
+    "publicationPending": false,
     "senderVersion": "2.1.0+537062853155",
     "tests": {
       "files": 74,
@@ -1384,6 +1384,14 @@
       "otherUnavailableFiles": 0,
       "priorInventoryRecordsPreserved": 8630,
       "olderSenderSnapshotsPreserved": 43
-    }
+    },
+    "deployment": {
+      "id": 41770937806,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
+      "conclusion": "success",
+      "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+      "verifiedAt": "2026-11-04T04:07:50.719Z"
+    },
+    "liveReport": "docs/qa/mods-consolidation-live.json"
   }
 }

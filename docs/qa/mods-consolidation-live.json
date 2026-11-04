@@ -1,0 +1,81 @@
+{
+  "verifiedAt": "2026-11-04T04:07:50.719Z",
+  "status": "passed",
+  "revision": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+  "site": "https://speedy-away.github.io/",
+  "deployment": {
+    "id": 41770937806,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
+    "conclusion": "success",
+    "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+    "verifiedAt": "2026-11-04T04:07:50.719Z"
+  },
+  "assets": [
+    {
+      "path": "assets/host-dashboard.js",
+      "sha256": "c9ccc3e0fb482f8ddb11d784d9890a07c651c3460efc5c5ce63c02efb2bb0628"
+    },
+    {
+      "path": "assets/host-folders.js",
+      "sha256": "1cf28b109262b2e509537b097490fa53fd80b16d9f3052246db4de70763aa420"
+    }
+  ],
+  "redirects": [
+    {
+      "path": "hosts/ps4/gta5/",
+      "status": 200,
+      "canonical": "https://speedy-away.github.io/hosts/ps4/?view=mods&game=gta5"
+    },
+    {
+      "path": "hosts/ps4/rdr2/",
+      "status": 200,
+      "canonical": "https://speedy-away.github.io/hosts/ps4/?view=mods&game=rdr2"
+    },
+    {
+      "path": "hosts/ps4/other-games/",
+      "status": 200,
+      "canonical": "https://speedy-away.github.io/hosts/ps4/?view=mods"
+    },
+    {
+      "path": "hosts/ps5/gta5/",
+      "status": 200,
+      "canonical": "https://speedy-away.github.io/hosts/ps5/?view=mods&game=gta5"
+    },
+    {
+      "path": "hosts/ps5/rdr2/",
+      "status": 200,
+      "canonical": "https://speedy-away.github.io/hosts/ps5/?view=mods&game=rdr2"
+    },
+    {
+      "path": "hosts/ps5/other-games/",
+      "status": 200,
+      "canonical": "https://speedy-away.github.io/hosts/ps5/?view=mods"
+    }
+  ],
+  "browser": {
+    "ps5": {
+      "bannerHeight": 180,
+      "games": 15,
+      "title": "Mods / Mod Menus",
+      "toolbarHidden": true,
+      "url": "https://speedy-away.github.io/hosts/ps5/?view=mods"
+    },
+    "legacyPS4GTA": {
+      "level": "menus",
+      "menuFamilies": 7,
+      "title": "Mods / Mod Menus",
+      "url": "https://speedy-away.github.io/hosts/ps4/?update=1.57&lang=en&view=mods&game=gta5#actions"
+    },
+    "legacyPS5RDR": {
+      "title": "Mods / Mod Menus",
+      "updateImages": 0,
+      "updates": 1,
+      "url": "https://speedy-away.github.io/hosts/ps5/?lang=en&view=mods&game=rdr2#actions"
+    }
+  },
+  "screenshot": "docs/screenshots/mods-consolidation-20261104/live-ps5.jpg",
+  "screenshotSHA256": "b129b2e07455412606b30e82946adc80a03301a7edcceb29357c05e99d6d364c",
+  "publicContentReport": "docs/qa/root-live-verification.json",
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false
+}

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T04:03:56.378Z",
-  "status": "All checks passed; publication pending",
+  "updatedAt": "2026-11-04T04:07:50.719Z",
+  "status": "Published and live browser verified",
   "request": "Consolidate GTA V and RDR2 into Mods / Mod Menus and remove excess blank space on PS4 and PS5.",
   "changes": {
     "sharedViews": [
@@ -152,5 +152,35 @@
     "cachedResourcesRetained": 1536,
     "localLinks": 3625,
     "compactAliasesVerified": 6945
+  },
+  "publicationPending": false,
+  "deployment": {
+    "id": 41770937806,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41770937806",
+    "conclusion": "success",
+    "commit": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+    "verifiedAt": "2026-11-04T04:07:50.719Z"
+  },
+  "liveReport": "docs/qa/mods-consolidation-live.json",
+  "screenshot": "docs/screenshots/mods-consolidation-20261104/live-ps5.jpg",
+  "publicBuild": {
+    "revision": "428bdbbeb21b1b2592ad28d6f9d4198bf3b20942",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865575693,
+    "budget": 922746880,
+    "files": 6202,
+    "offloadedFiles": 292,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1039871,
+      "runtime": 254871
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
   }
 }
