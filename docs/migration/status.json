@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T12:32:22.214Z",
+  "updatedAt": "2026-11-04T12:57:41.038Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -101,17 +101,17 @@
     "hardwareExecutionVerified": false
   },
   "senderReleaseDelivery": {
-    "verifiedAt": "2026-11-04T04:33:12.347Z",
-    "version": "2.1.0+2925c5ff39c8",
-    "name": "console-payload-sender-2.1.0-2925c5ff39c8.zip",
-    "bytes": 107454625,
-    "sha256": "e921f5689e5795ef16f06dad163522e704bcf4e22c135797c3ad255517e00671",
-    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-2925c5ff39c8.zip",
-    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+2925c5ff39c8\\console-payload-sender-2.1.0-2925c5ff39c8.zip",
-    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-2925c5ff39c8",
-    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-2925c5ff39c8/console-payload-sender-2.1.0-2925c5ff39c8.zip",
-    "assetId": 708231082,
-    "serverDigest": "sha256:e921f5689e5795ef16f06dad163522e704bcf4e22c135797c3ad255517e00671",
+    "verifiedAt": "2026-11-04T12:55:42.662Z",
+    "version": "2.1.0+5d74a8e3ebeb",
+    "name": "console-payload-sender-2.1.0-5d74a8e3ebeb.zip",
+    "bytes": 107464225,
+    "sha256": "fae781aa6959f8e71ae8a29e94ff84419bacc4d916696c96cf8eb9226fd5507e",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-5d74a8e3ebeb.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+5d74a8e3ebeb\\console-payload-sender-2.1.0-5d74a8e3ebeb.zip",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-5d74a8e3ebeb",
+    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-5d74a8e3ebeb/console-payload-sender-2.1.0-5d74a8e3ebeb.zip",
+    "assetId": 709502729,
+    "serverDigest": "sha256:fae781aa6959f8e71ae8a29e94ff84419bacc4d916696c96cf8eb9226fd5507e",
     "zipUnchanged": true,
     "archiveVerified": true,
     "downloadedCodeExecuted": false
@@ -1493,5 +1493,30 @@
     "livePages": 67,
     "mainSiteCommit": "d34319fc521ed3c4ced165743a84dfaa0b11f38b",
     "mainSiteDeployment": "https://github.com/Speedy-away/whatsite/actions/runs/41829615213"
+  },
+  "offlineCache20261104": {
+    "status": "Verified locally; publishing",
+    "report": "docs/migration/offline-cache-review.json",
+    "gamerHackCommit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+    "packs": [
+      {
+        "platform": "ps4",
+        "version": "6b20f4d2f269e06fd07131f1",
+        "files": 1870,
+        "bytes": 41086590,
+        "patchXMLs": 271,
+        "trainerDefinitions": 1181
+      },
+      {
+        "platform": "ps5",
+        "version": "0724e534bc4be5a42f01539a",
+        "files": 626,
+        "bytes": 14413173,
+        "patchXMLs": 280,
+        "trainerDefinitions": 0
+      }
+    ],
+    "senderVersion": "2.1.0+5d74a8e3ebeb",
+    "hardwareExecutionVerified": false
   }
 }

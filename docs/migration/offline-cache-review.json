@@ -1,0 +1,152 @@
+{
+  "updatedAt": "2026-11-04T12:57:41.037Z",
+  "status": "Verified locally; publishing",
+  "scope": "PS4 and PS5 host offline caching",
+  "cacheArchitecture": {
+    "legacy": "Per-console AppCache manifest associated with authored masters and deployed runtime HTML; exact static dependency closure and query-route fallbacks",
+    "modern": "Explicit Save uses a root service worker with bounded byte/hash-verified packs; completed copies only; no automatic activation or cache deletion"
+  },
+  "gamerHack": {
+    "commit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+    "runtime": "/hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec/web/",
+    "entry": "/hosts/ps4/exploit/gamerhack-g2all/",
+    "exactFirmwares": [
+      "7.00",
+      "7.01",
+      "7.02",
+      "7.50",
+      "7.51",
+      "7.55",
+      "8.00",
+      "8.01",
+      "8.03",
+      "8.50",
+      "8.52",
+      "9.00",
+      "9.03",
+      "9.04",
+      "9.50",
+      "9.51",
+      "9.60",
+      "10.00",
+      "10.50",
+      "11.00",
+      "11.02",
+      "11.50",
+      "11.52",
+      "12.00",
+      "12.02",
+      "12.50",
+      "12.52",
+      "13.00",
+      "13.02",
+      "13.04",
+      "13.50",
+      "13.52",
+      "14.00"
+    ],
+    "version": "GoldHEN 2.4b18.13",
+    "sourceFiles": 92,
+    "nativeFilesUnchanged": 81,
+    "cacheRequiredBeforeTicket": true
+  },
+  "packs": [
+    {
+      "platform": "ps4",
+      "version": "6b20f4d2f269e06fd07131f1",
+      "files": 1870,
+      "bytes": 41086590,
+      "patchXMLs": 271,
+      "trainerDefinitions": 1181
+    },
+    {
+      "platform": "ps5",
+      "version": "0724e534bc4be5a42f01539a",
+      "files": 626,
+      "bytes": 14413173,
+      "patchXMLs": 280,
+      "trainerDefinitions": 0
+    }
+  ],
+  "verification": {
+    "focusedTestsPassed": 103,
+    "focusedTestsFailed": 0,
+    "builtNativeScriptsUnchanged": 959,
+    "preservedCacheResources": 1620,
+    "metadataPages": 68,
+    "staticOfflineIdentityCheck": "passed",
+    "localSWBrowserTest": "Cache ready on three inert data files; server stopped and independent network fetch failed; cached page reloaded successfully",
+    "desktopAndPhoneLayout": "passed at default and390px widths",
+    "hardwareExecution": false,
+    "legacyConsolePersistence": false,
+    "all47SenderZIPs": "SHA, CRC, manifests, current-source freshness and174 baseline actions passed"
+  },
+  "sender": {
+    "version": "2.1.0+5d74a8e3ebeb",
+    "bytes": 107464225,
+    "sha256": "fae781aa6959f8e71ae8a29e94ff84419bacc4d916696c96cf8eb9226fd5507e",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-5d74a8e3ebeb",
+    "archiveVerified": true,
+    "olderVersionsRetained": 46
+  },
+  "archive": {
+    "items": 5017,
+    "fileRecords": 8636,
+    "missing": 0,
+    "unavailable": 0,
+    "previousItemIDsRetained": 5014,
+    "previousFullFileIdentitiesRetained": 8633
+  },
+  "build": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865166800,
+    "budget": 922746880,
+    "files": 6307,
+    "offloadedFiles": 299,
+    "nativeScriptsUnchanged": 959,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1048620,
+      "runtime": 249765
+    },
+    "activeRuntimeFiles": 409,
+    "sharedCatalogueFiles": 4,
+    "offlinePacks": [
+      {
+        "platform": "ps4",
+        "version": "6b20f4d2f269e06fd07131f1",
+        "files": 1870,
+        "bytes": 41086590,
+        "patchXMLs": 271,
+        "trainerDefinitions": 1181
+      },
+      {
+        "platform": "ps5",
+        "version": "0724e534bc4be5a42f01539a",
+        "files": 626,
+        "bytes": 14413173,
+        "patchXMLs": 280,
+        "trainerDefinitions": 0
+      }
+    ]
+  },
+  "limits": [
+    "Physical PS4/PS5 cache persistence and native exploit execution remain unverified.",
+    "PS5 Relapse needs an active local network interface and address even without Internet.",
+    "Large downloads, extra payloads, external links and uncached cover art may still require Internet."
+  ],
+  "references": [
+    "https://github.com/GamerHack/GamerHack.github.io/tree/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all",
+    "https://github.com/ntfargo/Relapse-Exploit/tree/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0",
+    "https://www.w3.org/TR/2011/WD-html5-20110525/offline.html",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers"
+  ],
+  "publication": {
+    "status": "pending"
+  }
+}

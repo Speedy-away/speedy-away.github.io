@@ -20,6 +20,8 @@ function groups(root){
  if(fs.existsSync(rawFile)){const r=(JSON.parse(fs.readFileSync(rawFile)).runtimes||[]).find(r=>r.id==='ps5-umtx');if(r)rows.push({id:r.id,label:'PS5 WebKit Exploit - '+r.firmwares[0]+'–'+r.firmwares[r.firmwares.length-1],platform:'ps5',firmwares:r.firmwares.slice(),entry:r.entry,runtimeEntry:r.runEntry,preferred:true,source:r.source});}
  const gamerFile=path.join(root,'docs/host-gamerhack-local-build.json');
  if(fs.existsSync(gamerFile))rows.push(...JSON.parse(fs.readFileSync(gamerFile)).groups);
+ const gamerOffline=path.join(root,'docs/host-gamerhack-g2all-build.json');
+ if(fs.existsSync(gamerOffline))rows.push(...JSON.parse(fs.readFileSync(gamerOffline)).groups);
  const ps5File=path.join(root,'docs/ps5-webkit-build.json');
  if(fs.existsSync(ps5File)){const b=JSON.parse(fs.readFileSync(ps5File));rows.push({id:b.id,label:'PS5 WebKit Exploit - 7.00–13.60',platform:'ps5',firmwares:b.firmwares,entry:b.entry,runtimeEntry:b.runEntry,preferred:true,source:b.source,siteNative:true});}
  // A family label is presentation; compatibility remains the exact source array.
@@ -34,7 +36,7 @@ function actions(root,platform,previous){
   let route,target;
   if(g.id==='ps4-afterglow'){target=g.runtimeEntry;route={kind:'afterglow',target};}
   else if(g.siteNative){target=g.runtimeEntry;route={kind:'ps5-native',target};}
-  else{const entry=g.originalEntry;if(!entry)throw Error('Missing local native entry: '+g.id);target=g.runtime+entry.path;route={kind:'karo',runtime:g.runtime,entry:{platform:g.platform,path:entry.path,scope:entry.scope,firmwares:g.firmwares.slice(),ranges:[],...(entry.blockedReason?{blockedReason:entry.blockedReason}:{})},...(entry.path==='ps5/UMTX/index.html'?{autorun:'umtx2'}:{})};}
+  else{const entry=g.originalEntry;if(!entry)throw Error('Missing local native entry: '+g.id);target=g.runtime+entry.path;route={kind:'karo',runtime:g.runtime,entry:{platform:g.platform,path:entry.path,scope:entry.scope,firmwares:g.firmwares.slice(),ranges:[],...(entry.cacheRequired?{cacheRequired:true}:{}),...(entry.blockedReason?{blockedReason:entry.blockedReason}:{})},...(entry.path==='ps5/UMTX/index.html'?{autorun:'umtx2'}:{})};}
   return {id:'local-'+g.id,platform,category:'loaders',label:g.label,firmwareLabel:g.label.replace(/^PS[45] WebKit Exploit - /,''),firmwares:g.firmwares.slice(),format:'Local browser loader',launchURL:target,launchLabel:'Load',runtimeId:g.id,localLauncher:true,browserHost:true,nativeRoute:route,source:g.source.repository+'/tree/'+g.source.commit,requirements:['Open on the matching console. Load starts the local runtime and its console progress.']};
  });
  return [...local,...previous.filter(a=>a.category!=='loaders').map(a=>a.id==='ps4-goldhen-user-supplied'?{...a,nativeRoute:{kind:'afterglow',target:a.launchURL}}:a)];

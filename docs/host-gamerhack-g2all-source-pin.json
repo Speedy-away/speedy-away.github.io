@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-04T12:40:29.792Z",
+  "repository": "GamerHack/GamerHack.github.io",
+  "commit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+  "scope": "Original g2all PS4 7.00–14.00 browser-host dependency closure only; unrelated 5.05 branch excluded.",
+  "excludedPaths": [
+    "g2all/505/exploit.js",
+    "g2all/505.manifest",
+    "g2all/cache505.html"
+  ],
+  "quarantinedPathsFetched": false,
+  "files": [
+    {
+      "path": "g2all/700.manifest",
+      "bytes": 558,
+      "gitBlobSHA1": "89b3375158c058fd4f635c866f3eec1e10c69dc5",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700.manifest"
+    },
+    {
+      "path": "g2all/700/alert.js",
+      "bytes": 1697,
+      "gitBlobSHA1": "6029793a6f04f4e58533de255284914185440a96",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/alert.js"
+    },
+    {
+      "path": "g2all/700/config.js",
+      "bytes": 2609,
+      "gitBlobSHA1": "dd17f1e0c66aea866e90994fdbe1c218502f3019",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/config.js"
+    },
+    {
+      "path": "g2all/700/kpatch/700.elf",
+      "bytes": 6208,
+      "gitBlobSHA1": "0050f3aacb95cbc4f41fa8b866ccb581d74836d4",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/700.elf"
+    },
+    {
+      "path": "g2all/700/kpatch/750.elf",
+      "bytes": 6384,
+      "gitBlobSHA1": "3b3348e98056da54b32ae9f7b1ce7d12602d272d",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/750.elf"
+    },
+    {
+      "path": "g2all/700/kpatch/800.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "16304d9c7f5097cfca70cc61e8e116f6054dca41",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/800.elf"
+    },
+    {
+      "path": "g2all/700/kpatch/850.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "55274c94e42da0a96dfc3c0ca6784d436d2a65e5",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/850.elf"
+    },
+    {
+      "path": "g2all/700/lapse.js",
+      "bytes": 56892,
+      "gitBlobSHA1": "3e3a37ece303446a3842efe352cd97ff85bfb641",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse.js"
+    },
+    {
+      "path": "g2all/700/lapse/700.js",
+      "bytes": 1175,
+      "gitBlobSHA1": "daefcf485f903a5a662ab7771c92c7942790f6ff",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/700.js"
+    },
+    {
+      "path": "g2all/700/lapse/750.js",
+      "bytes": 1163,
+      "gitBlobSHA1": "e723a469bed75cd9f8c203435586537dbf8a674a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/750.js"
+    },
+    {
+      "path": "g2all/700/lapse/751.js",
+      "bytes": 1407,
+      "gitBlobSHA1": "fbdaf60eddf738caf0e22e4a3a3689dbba14de83",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/751.js"
+    },
+    {
+      "path": "g2all/700/lapse/800.js",
+      "bytes": 1175,
+      "gitBlobSHA1": "8e8b023fe709a63873549593cb1deb9c985c9e7b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/800.js"
+    },
+    {
+      "path": "g2all/700/lapse/850.js",
+      "bytes": 1162,
+      "gitBlobSHA1": "7565319470dc700ebd6b3864869856afe3eeef9f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/850.js"
+    },
+    {
+      "path": "g2all/700/lapse/852.js",
+      "bytes": 1162,
+      "gitBlobSHA1": "f3887827acb2edcc5275afd6a1aecfb8dc992415",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/852.js"
+    },
+    {
+      "path": "g2all/700/module/chain.js",
+      "bytes": 15173,
+      "gitBlobSHA1": "7f42c091e507e5b58e67b7d274e16f9fb06f6e96",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/chain.js"
+    },
+    {
+      "path": "g2all/700/module/int64.js",
+      "bytes": 3176,
+      "gitBlobSHA1": "c35f893d47a8db97d76a935268427e23ab023e44",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/int64.js"
+    },
+    {
+      "path": "g2all/700/module/mem.js",
+      "bytes": 10871,
+      "gitBlobSHA1": "9ea3b76fcfb2636498ab9de80b92306ee0980146",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/mem.js"
+    },
+    {
+      "path": "g2all/700/module/memtools.js",
+      "bytes": 8342,
+      "gitBlobSHA1": "930d30f0a497a397eb25aa5bd0534f1888925d0f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/memtools.js"
+    },
+    {
+      "path": "g2all/700/module/offset.js",
+      "bytes": 1930,
+      "gitBlobSHA1": "fe8f66f10f4e9dfd7985e2225183e49f8ae1b79d",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/offset.js"
+    },
+    {
+      "path": "g2all/700/module/rw.js",
+      "bytes": 4090,
+      "gitBlobSHA1": "1e1a363610714f90f526a6108e1e0faf8e0576ff",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/rw.js"
+    },
+    {
+      "path": "g2all/700/module/utils.js",
+      "bytes": 4829,
+      "gitBlobSHA1": "55f5568a1992677d1ab5742572b426567f4431d8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/utils.js"
+    },
+    {
+      "path": "g2all/700/module/view.js",
+      "bytes": 6272,
+      "gitBlobSHA1": "ecbfe656d351294d99697ddd2b6322afba80e1af",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/view.js"
+    },
+    {
+      "path": "g2all/700/psfree.js",
+      "bytes": 25793,
+      "gitBlobSHA1": "9fc7f84873042fadf5a5b311f05cdf85e298cf90",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/psfree.js"
+    },
+    {
+      "path": "g2all/700/rop/700.js",
+      "bytes": 8344,
+      "gitBlobSHA1": "6840821c5408310a655332e45c68b9b2921910f2",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/700.js"
+    },
+    {
+      "path": "g2all/700/rop/750.js",
+      "bytes": 8344,
+      "gitBlobSHA1": "bf44f5eb1e5e51cf9c8ff93fa890c69c85400cde",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/750.js"
+    },
+    {
+      "path": "g2all/700/rop/800.js",
+      "bytes": 8342,
+      "gitBlobSHA1": "b3449fd66e4efea564f973c2872141a170d3fe91",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/800.js"
+    },
+    {
+      "path": "g2all/700/rop/850.js",
+      "bytes": 8336,
+      "gitBlobSHA1": "eb7be7a8063bed73adb4c738ebe50bd31e5a638a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/850.js"
+    },
+    {
+      "path": "g2all/700/send.js",
+      "bytes": 7346,
+      "gitBlobSHA1": "af601d40a28ef2be46cb71a858876c9204a4265a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/send.js"
+    },
+    {
+      "path": "g2all/900.manifest",
+      "bytes": 482,
+      "gitBlobSHA1": "cb0ffde9b9ed8158e29b056e9a69258fdd3c8b8c",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900.manifest"
+    },
+    {
+      "path": "g2all/900/alert.js",
+      "bytes": 1809,
+      "gitBlobSHA1": "d8f3b4bd76438fcfb89e623fe21735a4c739d07e",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/alert.js"
+    },
+    {
+      "path": "g2all/900/config.js",
+      "bytes": 2609,
+      "gitBlobSHA1": "dd17f1e0c66aea866e90994fdbe1c218502f3019",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/config.js"
+    },
+    {
+      "path": "g2all/900/kpatch/900.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "7d4dc9d81317c5042e1a5f3b754cbbd47ee361c1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/kpatch/900.elf"
+    },
+    {
+      "path": "g2all/900/kpatch/903.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "d3e4ead4dd4d3db9b4cc8827c194e2fbf792e804",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/kpatch/903.elf"
+    },
+    {
+      "path": "g2all/900/kpatch/950.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "ab9d66d8ae7f0dc19abef0ca75ed3747f250a86b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/kpatch/950.elf"
+    },
+    {
+      "path": "g2all/900/lapse.js",
+      "bytes": 58113,
+      "gitBlobSHA1": "5bd596b5db6503c6b6475f44530aacba7ab4d80c",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse.js"
+    },
+    {
+      "path": "g2all/900/lapse/900.js",
+      "bytes": 1205,
+      "gitBlobSHA1": "109c4f344b3847089517d64ae4dc6d201f0ba70e",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse/900.js"
+    },
+    {
+      "path": "g2all/900/lapse/903.js",
+      "bytes": 1211,
+      "gitBlobSHA1": "e4001aa8abd847c6015294bfbaa78f3f0ba311f1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse/903.js"
+    },
+    {
+      "path": "g2all/900/lapse/950.js",
+      "bytes": 1220,
+      "gitBlobSHA1": "b8f6261e85c0cdd27bcc32111cf2aa8eea6d457b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse/950.js"
+    },
+    {
+      "path": "g2all/900/module/chain.js",
+      "bytes": 16305,
+      "gitBlobSHA1": "ac05df5a91492566325ebd3e5d029b13c4e8d6a8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/chain.js"
+    },
+    {
+      "path": "g2all/900/module/constants.js",
+      "bytes": 773,
+      "gitBlobSHA1": "268f079e30b9ac30083ff7631184311dfb266aed",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/constants.js"
+    },
+    {
+      "path": "g2all/900/module/int64.js",
+      "bytes": 3560,
+      "gitBlobSHA1": "248872ed06ac90d78a7de07be60f2e099f8dda83",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/int64.js"
+    },
+    {
+      "path": "g2all/900/module/mem.js",
+      "bytes": 19339,
+      "gitBlobSHA1": "09f18f3233a05d68d6773e2f6dcbdb16c39ee527",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/mem.js"
+    },
+    {
+      "path": "g2all/900/module/memtools.js",
+      "bytes": 8942,
+      "gitBlobSHA1": "5d8a5481866e33cb6c3f3d829f96e916626b43b6",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/memtools.js"
+    },
+    {
+      "path": "g2all/900/module/offset.js",
+      "bytes": 1931,
+      "gitBlobSHA1": "74c9dc007199714c263a1440393d8e00fe33a485",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/offset.js"
+    },
+    {
+      "path": "g2all/900/module/rw.js",
+      "bytes": 4104,
+      "gitBlobSHA1": "f031736835c81ca499ceaad2ce9e5a196f0e27d3",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/rw.js"
+    },
+    {
+      "path": "g2all/900/module/utils.js",
+      "bytes": 4829,
+      "gitBlobSHA1": "55f5568a1992677d1ab5742572b426567f4431d8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/utils.js"
+    },
+    {
+      "path": "g2all/900/module/view.js",
+      "bytes": 6712,
+      "gitBlobSHA1": "62ec0780af34b00ac877fd4abed71c1dc0a4b827",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/view.js"
+    },
+    {
+      "path": "g2all/900/psfree.js",
+      "bytes": 26500,
+      "gitBlobSHA1": "2ee1e231762349ff9919881e3261fdf2404164cb",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/psfree.js"
+    },
+    {
+      "path": "g2all/900/rop/900.js",
+      "bytes": 11095,
+      "gitBlobSHA1": "987f32b8fdebd01cb04e8fd0ba081af7f90d63ce",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/rop/900.js"
+    },
+    {
+      "path": "g2all/900/rop/950.js",
+      "bytes": 11366,
+      "gitBlobSHA1": "0334a9d610c24b99d35039a86143394ca4706f02",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/rop/950.js"
+    },
+    {
+      "path": "g2all/900/send.js",
+      "bytes": 7635,
+      "gitBlobSHA1": "281f0721e9f1755680e413ac7d3e0ac80cf8465a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/send.js"
+    },
+    {
+      "path": "g2all/cache700.html",
+      "bytes": 1469,
+      "gitBlobSHA1": "81d08cf3da378d965bfd654fbdac7d8e29e07bc1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cache700.html"
+    },
+    {
+      "path": "g2all/cache900.html",
+      "bytes": 1469,
+      "gitBlobSHA1": "ae46aa7c7eddc6a081354506637ecf2cb8be6096",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cache900.html"
+    },
+    {
+      "path": "g2all/cachecss.html",
+      "bytes": 1469,
+      "gitBlobSHA1": "d3f2fedebba5f033f9abdda89a5781781db40a30",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cachecss.html"
+    },
+    {
+      "path": "g2all/cacheslopkit.html",
+      "bytes": 1473,
+      "gitBlobSHA1": "3f0d158ad75a87cc3bbf9e75187459e7e4d7cbae",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cacheslopkit.html"
+    },
+    {
+      "path": "g2all/css.manifest",
+      "bytes": 330,
+      "gitBlobSHA1": "ac915723a92969375b8b650bd442c74984507b5f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css.manifest"
+    },
+    {
+      "path": "g2all/css/lapse.js",
+      "bytes": 35571,
+      "gitBlobSHA1": "a87ac90f86d2fb0d6f9979c667338e05077a576c",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/lapse.js"
+    },
+    {
+      "path": "g2all/css/loader.js",
+      "bytes": 1842,
+      "gitBlobSHA1": "2274b5363f8b61cd7296ff63b12cdb6d361e3f41",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/loader.js"
+    },
+    {
+      "path": "g2all/css/main.js",
+      "bytes": 3178,
+      "gitBlobSHA1": "3b524ac229c73f0c68a6404165036640616f38bc",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/main.js"
+    },
+    {
+      "path": "g2all/css/misc.js",
+      "bytes": 11592,
+      "gitBlobSHA1": "80d3be0851d3c2243a18c7dd5dbbb51da8c2c891",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/misc.js"
+    },
+    {
+      "path": "g2all/css/ps4/constants.js",
+      "bytes": 23889,
+      "gitBlobSHA1": "881827d21b1238416b5e77592f09dbfad21f855a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/constants.js"
+    },
+    {
+      "path": "g2all/css/ps4/kernel.js",
+      "bytes": 17818,
+      "gitBlobSHA1": "5cacc1b9b1e66467c0154b4daf2806daf5dd3e5f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/kernel.js"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1000.bin",
+      "bytes": 589,
+      "gitBlobSHA1": "ef6bf1d6dcc7183126b80dc427ea988aadb9a04a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1000.bin"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1050.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "5e9d3772ae9906eb252c2c948317446b1092ee9b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1050.bin"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1100.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "cfd3515b4ae9a1e46fcd8f92b05e89b9d2c7c01b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1100.bin"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1102.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "214da06f6b8261b708d48d4d7d5dc2bad34f3014",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1102.bin"
+    },
+    {
+      "path": "g2all/css/ps4/userland.js",
+      "bytes": 37526,
+      "gitBlobSHA1": "11cd3226639527eda6e3fabb83a652bbbba03add",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/userland.js"
+    },
+    {
+      "path": "g2all/css/worker.js",
+      "bytes": 1683,
+      "gitBlobSHA1": "b4e40f9e42ead1ac3da50f57566096a4fe8b7256",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/worker.js"
+    },
+    {
+      "path": "g2all/css/workers.js",
+      "bytes": 3311,
+      "gitBlobSHA1": "de29c8cd43b9b0b439cbd757c9ff1551560da06a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/workers.js"
+    },
+    {
+      "path": "g2all/goldhen_2.4b18.13.bin",
+      "bytes": 297496,
+      "gitBlobSHA1": "682bea0de0be660d0522e018d3d250e7d1b7ee83",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/goldhen_2.4b18.13.bin"
+    },
+    {
+      "path": "g2all/index.html",
+      "bytes": 4387,
+      "gitBlobSHA1": "71e8bd769bd6eb07eb408f6800cc3e5e4e35b84b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/index.html"
+    },
+    {
+      "path": "g2all/slopkit.manifest",
+      "bytes": 507,
+      "gitBlobSHA1": "c2673619d23207fa7a997b669fc9e906ba063106",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit.manifest"
+    },
+    {
+      "path": "g2all/slopkit/afterglow.js",
+      "bytes": 85688,
+      "gitBlobSHA1": "4a44649c2758a969e8dc6d54cba097a5a824f757",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/afterglow.js"
+    },
+    {
+      "path": "g2all/slopkit/chain_lapse.js",
+      "bytes": 209270,
+      "gitBlobSHA1": "0bce833ebe6f7b27da7c2002826314afcc29d235",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/chain_lapse.js"
+    },
+    {
+      "path": "g2all/slopkit/chain_poops.js",
+      "bytes": 135998,
+      "gitBlobSHA1": "c7f05377a08700f0a51b89f864beff5298780670",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/chain_poops.js"
+    },
+    {
+      "path": "g2all/slopkit/core.js",
+      "bytes": 43266,
+      "gitBlobSHA1": "56b0349f0ce59884271070e6bb9635a78edd75a1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/core.js"
+    },
+    {
+      "path": "g2all/slopkit/int64.js",
+      "bytes": 2787,
+      "gitBlobSHA1": "824fa3941fbdd0f9fb0da8cf3d90ed5ef6f398bc",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/int64.js"
+    },
+    {
+      "path": "g2all/slopkit/jb.js",
+      "bytes": 115292,
+      "gitBlobSHA1": "a8ce84a0f30c84cb0744cee9b1dfac5122afb9f6",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/jb.js"
+    },
+    {
+      "path": "g2all/slopkit/jb2.js",
+      "bytes": 35371,
+      "gitBlobSHA1": "b822771a2d6de19acb0c73e2cbe2b4fdb1a9dcc0",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/jb2.js"
+    },
+    {
+      "path": "g2all/slopkit/mem.js",
+      "bytes": 28202,
+      "gitBlobSHA1": "63b86c43f87515044612a1c2163f613123b4feb0",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/mem.js"
+    },
+    {
+      "path": "g2all/slopkit/patches/1150.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "acc7deebf8567f82f34ee81c57915b4cdfc628a2",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1150.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1200.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "0207c2ba8dec6c253fb1b31b7601c3e6227635c1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1200.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1250.bin",
+      "bytes": 314,
+      "gitBlobSHA1": "d8102ca1d836699ae3f940c8188fe9fb1aa4e60a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1250.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1300.bin",
+      "bytes": 314,
+      "gitBlobSHA1": "093f6be6d4a741f88d0e63396768ee7a9928d544",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1300.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1302.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "6a3870d35b37684c39ad7049e17c3eee08f7d821",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1302.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1350.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "4ff57da79d2b85483b6d27ca513aa95e53d9d299",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1350.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1352.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "cb07a2b2340e054f1b823245ccf74cfe47d36839",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1352.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1400.bin",
+      "bytes": 641,
+      "gitBlobSHA1": "65256bb99e592ad1f0650aeb1907302ed0149c53",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1400.bin"
+    },
+    {
+      "path": "g2all/slopkit/ps4_offsets.js",
+      "bytes": 17049,
+      "gitBlobSHA1": "a18fdc1fa795cb27d0cb07b718c1b7fd03c47e6e",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/ps4_offsets.js"
+    },
+    {
+      "path": "g2all/slopkit/rpc_worker.js",
+      "bytes": 5395,
+      "gitBlobSHA1": "6c2f6fb91fa36cb3c05d7fe2f712cc552a6e7305",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/rpc_worker.js"
+    },
+    {
+      "path": "img.jpg",
+      "bytes": 93467,
+      "gitBlobSHA1": "04413908fada0d93d185ef85f1c79a7a8f8c40e8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/img.jpg"
+    },
+    {
+      "path": "style.css",
+      "bytes": 1285,
+      "gitBlobSHA1": "1bef851f2a140b0a577d80497dc4e4455b6b0466",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/style.css"
+    }
+  ]
+}

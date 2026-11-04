@@ -3,7 +3,7 @@
   'use strict';
   function config(data,location){
     if(!data||!data.entry||!Array.isArray(data.entry.firmwares)||!data.entry.firmwares.length||data.entry.firmwares.some(function(f){return !/^\d{1,2}\.\d{2}$/.test(f);})||!/^ps[45]$/.test(data.entry.platform||''))throw Error('The selected local route is unavailable.');
-    if(!/^\/(?:(?:WWB-HOST|wwb-host)\/)?hosts\/runtime\/(?:karo|gamerhack)-[a-f0-9]{12}-[a-f0-9]{12}\/web\/$/.test(data.runtime||''))throw Error('Choose the preserved local runtime.');
+    if(!/^\/(?:(?:WWB-HOST|wwb-host)\/)?hosts\/runtime\/(?:karo|gamerhack|gamerhack-g2all)-[a-f0-9]{12}-[a-f0-9]{12}\/web\/$/.test(data.runtime||''))throw Error('Choose the preserved local runtime.');
     if(!/^[a-z0-9_-]+(?:\/[a-z0-9_-]+)*\/index\.html$/i.test(data.entry.path||'')||data.entry.scope!==data.entry.path.slice(0,-10))throw Error('The local entry path is invalid.');
     var base=new URL(data.runtime,location.href);if(base.origin!==location.origin||!/^https?:$/.test(base.protocol)||base.username||base.password||base.search||base.hash)throw Error('The runtime must stay on this host.');
     return {runtime:base.pathname,entry:data.entry};

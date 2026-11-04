@@ -1,0 +1,2121 @@
+{
+  "schemaVersion": 1,
+  "repository": "GamerHack/GamerHack.github.io",
+  "commit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+  "version": "d05d71ff8db2-52269ecd47ec",
+  "sourceSet": "0f29a1cd453ceaf7e0fc16c2498d0efcdfa79089ddce2b3c80ad91ebd0fcea6e",
+  "identity": {
+    "sourceSet": "0f29a1cd453ceaf7e0fc16c2498d0efcdfa79089ddce2b3c80ad91ebd0fcea6e",
+    "firmwares": [
+      "7.00",
+      "7.01",
+      "7.02",
+      "7.50",
+      "7.51",
+      "7.55",
+      "8.00",
+      "8.01",
+      "8.03",
+      "8.50",
+      "8.52",
+      "9.00",
+      "9.03",
+      "9.04",
+      "9.50",
+      "9.51",
+      "9.60",
+      "10.00",
+      "10.50",
+      "11.00",
+      "11.02",
+      "11.50",
+      "11.52",
+      "12.00",
+      "12.02",
+      "12.50",
+      "12.52",
+      "13.00",
+      "13.02",
+      "13.04",
+      "13.50",
+      "13.52",
+      "14.00"
+    ],
+    "authored": [
+      {
+        "path": "assets/host-karo-builds.js",
+        "sha256": "993e06824574090dd483630a43ca8584658faa2da0b970f45eead3bd58faea37"
+      },
+      {
+        "path": "assets/host-karo-resource-guard.js",
+        "sha256": "79b44c1e4e18a24359367f10add66456ada25dd0b0bb92c8809910256c7de913"
+      },
+      {
+        "path": "assets/host-karo-builds.css",
+        "sha256": "0c383af6847ca5082474a2acfb286ed6025971d06c8c3edf8a03dfd17a5fef4c"
+      },
+      {
+        "path": "assets/host-local-launcher.js",
+        "sha256": "456dbdc785559217bf36a2c2a1c6350604fdd1a75cf4832511e4053bdb41333c"
+      }
+    ],
+    "wrapper": "084c0cc5488720bc47db2e43beeb6e7cd18d169bd320f36496e9f80ac5d45f69",
+    "renderer": "aef05d17238b2bab3fdde18a12bb0dc3a494330bcf4a959848edfebbc32c6bfa",
+    "metadata": "6c322d05ec20db81438ee9e060eb873ba166b04f1ef6142193cdc913a7572934"
+  },
+  "base": "hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec",
+  "runtime": "/hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec/web/",
+  "entries": [
+    {
+      "id": "gamerhack-g2all",
+      "path": "g2all/index.html",
+      "scope": "g2all/",
+      "platform": "ps4",
+      "kind": "loader",
+      "label": "GamerHack 7.00–14.00",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.50",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52",
+        "14.00"
+      ],
+      "ranges": [],
+      "cacheRequired": true,
+      "contract": "Pinned original GamerHack g2all browser chain with exact firmware tables, GoldHEN 2.4b18.13 and required saved PS4 AppCache. Native scripts/payload bytes are unchanged."
+    }
+  ],
+  "groups": [
+    {
+      "id": "gamerhack-g2all",
+      "label": "PS4 WebKit Exploit - 7.00–14.00",
+      "platform": "ps4",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.50",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52",
+        "14.00"
+      ],
+      "entry": "/hosts/ps4/exploit/gamerhack-g2all/",
+      "runtime": "/hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec/web/",
+      "runtimeEntry": "/hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec/web/g2all/index.html",
+      "originalEntry": {
+        "id": "gamerhack-g2all",
+        "path": "g2all/index.html",
+        "scope": "g2all/",
+        "platform": "ps4",
+        "kind": "loader",
+        "label": "GamerHack 7.00–14.00",
+        "firmwares": [
+          "7.00",
+          "7.01",
+          "7.02",
+          "7.50",
+          "7.51",
+          "7.55",
+          "8.00",
+          "8.01",
+          "8.03",
+          "8.50",
+          "8.52",
+          "9.00",
+          "9.03",
+          "9.04",
+          "9.50",
+          "9.51",
+          "9.60",
+          "10.00",
+          "10.50",
+          "11.00",
+          "11.02",
+          "11.50",
+          "11.52",
+          "12.00",
+          "12.02",
+          "12.50",
+          "12.52",
+          "13.00",
+          "13.02",
+          "13.04",
+          "13.50",
+          "13.52",
+          "14.00"
+        ],
+        "ranges": [],
+        "cacheRequired": true,
+        "contract": "Pinned original GamerHack g2all browser chain with exact firmware tables, GoldHEN 2.4b18.13 and required saved PS4 AppCache. Native scripts/payload bytes are unchanged."
+      },
+      "payloadChoice": [
+        {
+          "id": "goldhen",
+          "label": "GoldHEN",
+          "file": "goldhen_2.4b18.13.bin"
+        }
+      ],
+      "preferred": true,
+      "cacheRequired": true,
+      "cacheReopen": false,
+      "source": {
+        "repository": "https://github.com/GamerHack/GamerHack.github.io",
+        "commit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+        "path": "g2all/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "g2all/700.manifest",
+      "bytes": 558,
+      "gitBlobSHA1": "89b3375158c058fd4f635c866f3eec1e10c69dc5",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700.manifest",
+      "sha256": "d2bf7a705748aff8e88bb5e3855d9b4a6584d8b58d773578f30b35c16a77c93c",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700.manifest"
+    },
+    {
+      "path": "g2all/700/alert.js",
+      "bytes": 1697,
+      "gitBlobSHA1": "6029793a6f04f4e58533de255284914185440a96",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/alert.js",
+      "sha256": "b3352504520ecf2a187d21cc3de4b1db93dedbfacd9d238e84428d5b0714759b",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/alert.js"
+    },
+    {
+      "path": "g2all/700/config.js",
+      "bytes": 2609,
+      "gitBlobSHA1": "dd17f1e0c66aea866e90994fdbe1c218502f3019",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/config.js",
+      "sha256": "f31906b947300e11642f571e779a00468a2bd9993083dcd232bd4e6b6a8c0f83",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/config.js"
+    },
+    {
+      "path": "g2all/700/kpatch/700.elf",
+      "bytes": 6208,
+      "gitBlobSHA1": "0050f3aacb95cbc4f41fa8b866ccb581d74836d4",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/700.elf",
+      "sha256": "7fe2f30c64e2acaf41924e385e81b4d1bdb6dd7a217faf91cdb580fd82cde851",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/kpatch/700.elf"
+    },
+    {
+      "path": "g2all/700/kpatch/750.elf",
+      "bytes": 6384,
+      "gitBlobSHA1": "3b3348e98056da54b32ae9f7b1ce7d12602d272d",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/750.elf",
+      "sha256": "1f46037bd232cb40ce7f85100350af86acda6aed92ffa0cfaf18fa15b924691b",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/kpatch/750.elf"
+    },
+    {
+      "path": "g2all/700/kpatch/800.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "16304d9c7f5097cfca70cc61e8e116f6054dca41",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/800.elf",
+      "sha256": "8e766df1049d302c01a9c538a92303a3a78f335e007f1139f44a75cc1d8f6fac",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/kpatch/800.elf"
+    },
+    {
+      "path": "g2all/700/kpatch/850.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "55274c94e42da0a96dfc3c0ca6784d436d2a65e5",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/kpatch/850.elf",
+      "sha256": "313b9048b41f1110bc2c7128059cb009d310bb4f014739b3c10809b60d395f03",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/kpatch/850.elf"
+    },
+    {
+      "path": "g2all/700/lapse.js",
+      "bytes": 56892,
+      "gitBlobSHA1": "3e3a37ece303446a3842efe352cd97ff85bfb641",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse.js",
+      "sha256": "dfdbe59a58be4ade840b6425f424fed8c1c05b81dd3db456c0aba8e5752b3708",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/lapse.js"
+    },
+    {
+      "path": "g2all/700/lapse/700.js",
+      "bytes": 1175,
+      "gitBlobSHA1": "daefcf485f903a5a662ab7771c92c7942790f6ff",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/700.js",
+      "sha256": "4b498ef300ddf5dd449250854537db74ef19c0142c4e68f7434a3ed74b8419da",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/lapse/700.js"
+    },
+    {
+      "path": "g2all/700/lapse/750.js",
+      "bytes": 1163,
+      "gitBlobSHA1": "e723a469bed75cd9f8c203435586537dbf8a674a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/750.js",
+      "sha256": "861d6d5ea39c11763cdf302794a5332936a5c55c13a47b1e88bdcfa047030323",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/lapse/750.js"
+    },
+    {
+      "path": "g2all/700/lapse/751.js",
+      "bytes": 1407,
+      "gitBlobSHA1": "fbdaf60eddf738caf0e22e4a3a3689dbba14de83",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/751.js",
+      "sha256": "7ce2bdb60147d176cc2b8f86d0794fdb33ec88759d6e6195598bea6f2ae4f4b8",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/lapse/751.js"
+    },
+    {
+      "path": "g2all/700/lapse/800.js",
+      "bytes": 1175,
+      "gitBlobSHA1": "8e8b023fe709a63873549593cb1deb9c985c9e7b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/800.js",
+      "sha256": "3eeac8d233ca472ddcdfb1581885a4dc24df9a66d6ab4215e9279f4a5d0448ce",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/lapse/800.js"
+    },
+    {
+      "path": "g2all/700/lapse/850.js",
+      "bytes": 1162,
+      "gitBlobSHA1": "7565319470dc700ebd6b3864869856afe3eeef9f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/850.js",
+      "sha256": "64ccda645684670511afa45d258878eedf1b6ce7a3109f72b4f545bd6cfc6b5e",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/lapse/850.js"
+    },
+    {
+      "path": "g2all/700/lapse/852.js",
+      "bytes": 1162,
+      "gitBlobSHA1": "f3887827acb2edcc5275afd6a1aecfb8dc992415",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/lapse/852.js",
+      "sha256": "95149b692401fe2345683865ca5c589d214610edf22a067c81809d8351b9ed63",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/lapse/852.js"
+    },
+    {
+      "path": "g2all/700/module/chain.js",
+      "bytes": 15173,
+      "gitBlobSHA1": "7f42c091e507e5b58e67b7d274e16f9fb06f6e96",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/chain.js",
+      "sha256": "78379e8307b848676de1b6fbfd11c38901ca6522e7d21d1a97339bd5f4d1f3e3",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/chain.js"
+    },
+    {
+      "path": "g2all/700/module/int64.js",
+      "bytes": 3176,
+      "gitBlobSHA1": "c35f893d47a8db97d76a935268427e23ab023e44",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/int64.js",
+      "sha256": "cdd42b5e94f19b3eb821beb8417032a4068282d6f5f7ddd23be32d749c5e3e2e",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/int64.js"
+    },
+    {
+      "path": "g2all/700/module/mem.js",
+      "bytes": 10871,
+      "gitBlobSHA1": "9ea3b76fcfb2636498ab9de80b92306ee0980146",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/mem.js",
+      "sha256": "3d3e476455d751d09a1108818b8d016cf026229dbacafe9b47e923d4191bcbb8",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/mem.js"
+    },
+    {
+      "path": "g2all/700/module/memtools.js",
+      "bytes": 8342,
+      "gitBlobSHA1": "930d30f0a497a397eb25aa5bd0534f1888925d0f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/memtools.js",
+      "sha256": "576357a691a279f1aee7398eb7743d861fe2d9734a16b57761814bec9201f4f3",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/memtools.js"
+    },
+    {
+      "path": "g2all/700/module/offset.js",
+      "bytes": 1930,
+      "gitBlobSHA1": "fe8f66f10f4e9dfd7985e2225183e49f8ae1b79d",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/offset.js",
+      "sha256": "88ae276045da184e796b08fe951eae176e7b76f657d561a5803a62006d24a34b",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/offset.js"
+    },
+    {
+      "path": "g2all/700/module/rw.js",
+      "bytes": 4090,
+      "gitBlobSHA1": "1e1a363610714f90f526a6108e1e0faf8e0576ff",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/rw.js",
+      "sha256": "b7effb458d101b060fd167c5d310f44970c04f01c96cb21abeb5beb8187a7218",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/rw.js"
+    },
+    {
+      "path": "g2all/700/module/utils.js",
+      "bytes": 4829,
+      "gitBlobSHA1": "55f5568a1992677d1ab5742572b426567f4431d8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/utils.js",
+      "sha256": "ab3e616088723a092e4057250e927ecabf4b73be044dc7fbdbe54abb31f414fd",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/utils.js"
+    },
+    {
+      "path": "g2all/700/module/view.js",
+      "bytes": 6272,
+      "gitBlobSHA1": "ecbfe656d351294d99697ddd2b6322afba80e1af",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/module/view.js",
+      "sha256": "86365d053a7fb2f0f63dd1ebe230a57fbdeb7573d4e4a0ad9c35195db9d019d6",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/module/view.js"
+    },
+    {
+      "path": "g2all/700/psfree.js",
+      "bytes": 25793,
+      "gitBlobSHA1": "9fc7f84873042fadf5a5b311f05cdf85e298cf90",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/psfree.js",
+      "sha256": "005372f285712c889cab04130cfffdcbd6d251da14a53f5c3b56d28863718978",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/psfree.js"
+    },
+    {
+      "path": "g2all/700/rop/700.js",
+      "bytes": 8344,
+      "gitBlobSHA1": "6840821c5408310a655332e45c68b9b2921910f2",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/700.js",
+      "sha256": "20f780459e9a028aa3b9949e2b5c06a74bf82d5473160d8a7288892e1228cb3f",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/rop/700.js"
+    },
+    {
+      "path": "g2all/700/rop/750.js",
+      "bytes": 8344,
+      "gitBlobSHA1": "bf44f5eb1e5e51cf9c8ff93fa890c69c85400cde",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/750.js",
+      "sha256": "53448317f194ec686242009bd39e1e99d8d4cbf9ef453d09206df6bfd0a4540f",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/rop/750.js"
+    },
+    {
+      "path": "g2all/700/rop/800.js",
+      "bytes": 8342,
+      "gitBlobSHA1": "b3449fd66e4efea564f973c2872141a170d3fe91",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/800.js",
+      "sha256": "348ed5378369cfe2876a871066b0bb2265732e2de40f6d49131b0ff9b8f3c6de",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/rop/800.js"
+    },
+    {
+      "path": "g2all/700/rop/850.js",
+      "bytes": 8336,
+      "gitBlobSHA1": "eb7be7a8063bed73adb4c738ebe50bd31e5a638a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/rop/850.js",
+      "sha256": "44c16bf8225c36e4a940120e2cae7c19cfc50a3089ea16bfbeb7ef193916367f",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/rop/850.js"
+    },
+    {
+      "path": "g2all/700/send.js",
+      "bytes": 7346,
+      "gitBlobSHA1": "af601d40a28ef2be46cb71a858876c9204a4265a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/700/send.js",
+      "sha256": "dcb3682deadc1e1e7a382e0de0421e616d918829097024b70e36ca16021ff2b0",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/700/send.js"
+    },
+    {
+      "path": "g2all/900.manifest",
+      "bytes": 482,
+      "gitBlobSHA1": "cb0ffde9b9ed8158e29b056e9a69258fdd3c8b8c",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900.manifest",
+      "sha256": "61a14c0c1f27632ef1d4a92abfa5e6d6200e44a8b37ed015f5f3346bc7d13981",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900.manifest"
+    },
+    {
+      "path": "g2all/900/alert.js",
+      "bytes": 1809,
+      "gitBlobSHA1": "d8f3b4bd76438fcfb89e623fe21735a4c739d07e",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/alert.js",
+      "sha256": "2ab0603afd508f1df66df097ef422b439223cf8069c05264458e026e8e963ff1",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/alert.js"
+    },
+    {
+      "path": "g2all/900/config.js",
+      "bytes": 2609,
+      "gitBlobSHA1": "dd17f1e0c66aea866e90994fdbe1c218502f3019",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/config.js",
+      "sha256": "f31906b947300e11642f571e779a00468a2bd9993083dcd232bd4e6b6a8c0f83",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/config.js"
+    },
+    {
+      "path": "g2all/900/kpatch/900.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "7d4dc9d81317c5042e1a5f3b754cbbd47ee361c1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/kpatch/900.elf",
+      "sha256": "650033d4b7e5686624a325e29e1de50efcdbbd164a4862bf2be7a909c8e8b2e2",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/kpatch/900.elf"
+    },
+    {
+      "path": "g2all/900/kpatch/903.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "d3e4ead4dd4d3db9b4cc8827c194e2fbf792e804",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/kpatch/903.elf",
+      "sha256": "5f34a7c7f026310cbf63eddc3fe515d8cee99420c9d1d9b086ee01645f86a3bc",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/kpatch/903.elf"
+    },
+    {
+      "path": "g2all/900/kpatch/950.elf",
+      "bytes": 6368,
+      "gitBlobSHA1": "ab9d66d8ae7f0dc19abef0ca75ed3747f250a86b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/kpatch/950.elf",
+      "sha256": "50aa27d6fbde784ec41e7c24ebf928a7286e273bb5ab03e6c47e7cd70e56d2fb",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/kpatch/950.elf"
+    },
+    {
+      "path": "g2all/900/lapse.js",
+      "bytes": 58113,
+      "gitBlobSHA1": "5bd596b5db6503c6b6475f44530aacba7ab4d80c",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse.js",
+      "sha256": "14ba1621ef9a89b6d81544bc13f218db5d42c012d5572d0c7ec1c0b72e1aea4d",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/lapse.js"
+    },
+    {
+      "path": "g2all/900/lapse/900.js",
+      "bytes": 1205,
+      "gitBlobSHA1": "109c4f344b3847089517d64ae4dc6d201f0ba70e",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse/900.js",
+      "sha256": "835b6cb43c0f825baef5f005c60ee99c54fe53d6dcac15d5d056d5a6ff3db239",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/lapse/900.js"
+    },
+    {
+      "path": "g2all/900/lapse/903.js",
+      "bytes": 1211,
+      "gitBlobSHA1": "e4001aa8abd847c6015294bfbaa78f3f0ba311f1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse/903.js",
+      "sha256": "98eda13aaf1d565dbe0ec4e711b811411310c1d6202a197e451fa8c1e93639bd",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/lapse/903.js"
+    },
+    {
+      "path": "g2all/900/lapse/950.js",
+      "bytes": 1220,
+      "gitBlobSHA1": "b8f6261e85c0cdd27bcc32111cf2aa8eea6d457b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/lapse/950.js",
+      "sha256": "a3ddceca71cce8ef9c4aca386cab9a0851afaee9c0aec3420a50734fe8fe2961",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/lapse/950.js"
+    },
+    {
+      "path": "g2all/900/module/chain.js",
+      "bytes": 16305,
+      "gitBlobSHA1": "ac05df5a91492566325ebd3e5d029b13c4e8d6a8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/chain.js",
+      "sha256": "7e4350d207ad943de7632942a91bd148190756ef0072e43e035796c1aaf25d3e",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/chain.js"
+    },
+    {
+      "path": "g2all/900/module/constants.js",
+      "bytes": 773,
+      "gitBlobSHA1": "268f079e30b9ac30083ff7631184311dfb266aed",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/constants.js",
+      "sha256": "27ce6981d3a26ce5ae125bceef73daf62040394e5c10541c1527bd15e66a86a7",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/constants.js"
+    },
+    {
+      "path": "g2all/900/module/int64.js",
+      "bytes": 3560,
+      "gitBlobSHA1": "248872ed06ac90d78a7de07be60f2e099f8dda83",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/int64.js",
+      "sha256": "46a2d5113d4aaa367463675cee605062c1a17dade7214d80b5428e67a0ba383c",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/int64.js"
+    },
+    {
+      "path": "g2all/900/module/mem.js",
+      "bytes": 19339,
+      "gitBlobSHA1": "09f18f3233a05d68d6773e2f6dcbdb16c39ee527",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/mem.js",
+      "sha256": "7afbad5850cda8e972a5c1981e1acff69b391edc3af9fd8a6cb1ae1715d35787",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/mem.js"
+    },
+    {
+      "path": "g2all/900/module/memtools.js",
+      "bytes": 8942,
+      "gitBlobSHA1": "5d8a5481866e33cb6c3f3d829f96e916626b43b6",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/memtools.js",
+      "sha256": "52ac8d514ab4709ff3b322a0692f394301da980d0de833712d2fe47e4ac4c730",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/memtools.js"
+    },
+    {
+      "path": "g2all/900/module/offset.js",
+      "bytes": 1931,
+      "gitBlobSHA1": "74c9dc007199714c263a1440393d8e00fe33a485",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/offset.js",
+      "sha256": "1966bff1bd12a296bf8f1f0e6510416d2d9c2d40c20bfb85959034b281c955e1",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/offset.js"
+    },
+    {
+      "path": "g2all/900/module/rw.js",
+      "bytes": 4104,
+      "gitBlobSHA1": "f031736835c81ca499ceaad2ce9e5a196f0e27d3",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/rw.js",
+      "sha256": "d605153f35655b6706e5c4bb4e752f490af56436e4d0956430bde90b12085e15",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/rw.js"
+    },
+    {
+      "path": "g2all/900/module/utils.js",
+      "bytes": 4829,
+      "gitBlobSHA1": "55f5568a1992677d1ab5742572b426567f4431d8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/utils.js",
+      "sha256": "ab3e616088723a092e4057250e927ecabf4b73be044dc7fbdbe54abb31f414fd",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/utils.js"
+    },
+    {
+      "path": "g2all/900/module/view.js",
+      "bytes": 6712,
+      "gitBlobSHA1": "62ec0780af34b00ac877fd4abed71c1dc0a4b827",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/module/view.js",
+      "sha256": "bec9fa5d8a44a8d4d64ad039908761c6f4ea6913735338cffbf1594d669b8449",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/module/view.js"
+    },
+    {
+      "path": "g2all/900/psfree.js",
+      "bytes": 26500,
+      "gitBlobSHA1": "2ee1e231762349ff9919881e3261fdf2404164cb",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/psfree.js",
+      "sha256": "2566fe070e0aabb4f1cb370f0dddc1aa0fa5e56ec7a8c8429a119de313f84ee3",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/psfree.js"
+    },
+    {
+      "path": "g2all/900/rop/900.js",
+      "bytes": 11095,
+      "gitBlobSHA1": "987f32b8fdebd01cb04e8fd0ba081af7f90d63ce",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/rop/900.js",
+      "sha256": "499f8fd2fd7fd62b66830d632096dfeedd7c728a0f906d4f313df5c9b8e80cc1",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/rop/900.js"
+    },
+    {
+      "path": "g2all/900/rop/950.js",
+      "bytes": 11366,
+      "gitBlobSHA1": "0334a9d610c24b99d35039a86143394ca4706f02",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/rop/950.js",
+      "sha256": "0170174aab2093c747739808829b398d61e3c21b604f428e422d943cad60abf7",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/rop/950.js"
+    },
+    {
+      "path": "g2all/900/send.js",
+      "bytes": 7635,
+      "gitBlobSHA1": "281f0721e9f1755680e413ac7d3e0ac80cf8465a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/900/send.js",
+      "sha256": "d915c293b1f1f3c2bbdb0af692e711cb0691edbc6cd92f230034f4b2a0555a33",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/900/send.js"
+    },
+    {
+      "path": "g2all/cache700.html",
+      "bytes": 1469,
+      "gitBlobSHA1": "81d08cf3da378d965bfd654fbdac7d8e29e07bc1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cache700.html",
+      "sha256": "9380d3e0a2058721c51940aff752b8e8ec99b851abd00afa99d8465ee8c0b8b6",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/cache700.html"
+    },
+    {
+      "path": "g2all/cache900.html",
+      "bytes": 1469,
+      "gitBlobSHA1": "ae46aa7c7eddc6a081354506637ecf2cb8be6096",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cache900.html",
+      "sha256": "1cf29cd08d5b12169185239e16247ab3bd393a4ac6ca8e5a1cc25b913b7c55b9",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/cache900.html"
+    },
+    {
+      "path": "g2all/cachecss.html",
+      "bytes": 1469,
+      "gitBlobSHA1": "d3f2fedebba5f033f9abdda89a5781781db40a30",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cachecss.html",
+      "sha256": "fe5b24954369e43049f68e35cb094edcc6ae722d8af36ac5e36523cca1bb85c6",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/cachecss.html"
+    },
+    {
+      "path": "g2all/cacheslopkit.html",
+      "bytes": 1473,
+      "gitBlobSHA1": "3f0d158ad75a87cc3bbf9e75187459e7e4d7cbae",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/cacheslopkit.html",
+      "sha256": "2663e77e6cfe8a5c294d815ce025889d867aea6ec7d53a538e8a5d1f3496dac0",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/cacheslopkit.html"
+    },
+    {
+      "path": "g2all/css.manifest",
+      "bytes": 330,
+      "gitBlobSHA1": "ac915723a92969375b8b650bd442c74984507b5f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css.manifest",
+      "sha256": "3d3c93219b20c9de9e8964830f9dad13e335a4ceb411df445d0985319bff2f60",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css.manifest"
+    },
+    {
+      "path": "g2all/css/lapse.js",
+      "bytes": 35571,
+      "gitBlobSHA1": "a87ac90f86d2fb0d6f9979c667338e05077a576c",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/lapse.js",
+      "sha256": "8a3841c61ff8219c9b996672da74dbf65a57f5265265d6665c30449a14b4aeae",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/lapse.js"
+    },
+    {
+      "path": "g2all/css/loader.js",
+      "bytes": 1842,
+      "gitBlobSHA1": "2274b5363f8b61cd7296ff63b12cdb6d361e3f41",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/loader.js",
+      "sha256": "57f9bce0340bb5c7d59b24a5370c86300063edec435ece75c1491e55dbd980c8",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/loader.js"
+    },
+    {
+      "path": "g2all/css/main.js",
+      "bytes": 3178,
+      "gitBlobSHA1": "3b524ac229c73f0c68a6404165036640616f38bc",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/main.js",
+      "sha256": "61d863fdd0e38f9e7742279090f9dc4c83955aa6d43a6b29614a60c61316bc7e",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/main.js"
+    },
+    {
+      "path": "g2all/css/misc.js",
+      "bytes": 11592,
+      "gitBlobSHA1": "80d3be0851d3c2243a18c7dd5dbbb51da8c2c891",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/misc.js",
+      "sha256": "bf509655b71295e6731a205f69992076619133a2230db230fb26d3248ed206d1",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/misc.js"
+    },
+    {
+      "path": "g2all/css/ps4/constants.js",
+      "bytes": 23889,
+      "gitBlobSHA1": "881827d21b1238416b5e77592f09dbfad21f855a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/constants.js",
+      "sha256": "52c6af4a7f75c87238345ad6f6e0761a04e3c54a052ed68a5363461a5a92ef72",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/ps4/constants.js"
+    },
+    {
+      "path": "g2all/css/ps4/kernel.js",
+      "bytes": 17818,
+      "gitBlobSHA1": "5cacc1b9b1e66467c0154b4daf2806daf5dd3e5f",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/kernel.js",
+      "sha256": "bb184cf282dcb9c94aec0a39306e93923ece1b549f847010fc8eb1fe0468ff33",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/ps4/kernel.js"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1000.bin",
+      "bytes": 589,
+      "gitBlobSHA1": "ef6bf1d6dcc7183126b80dc427ea988aadb9a04a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1000.bin",
+      "sha256": "954ff624c9c92ab991c3e92a93fde1583da291dfd9674e245354c7efdcd07cf8",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/ps4/patches/1000.bin"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1050.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "5e9d3772ae9906eb252c2c948317446b1092ee9b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1050.bin",
+      "sha256": "fbf815d2d47a707cf788815ef11558fa6d8f718e628d508e8540417083c55e1f",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/ps4/patches/1050.bin"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1100.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "cfd3515b4ae9a1e46fcd8f92b05e89b9d2c7c01b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1100.bin",
+      "sha256": "15497a2b748dafd49bfb89c51ed048d0c5ba3c5092c5254da46dd4443f80983b",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/ps4/patches/1100.bin"
+    },
+    {
+      "path": "g2all/css/ps4/patches/1102.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "214da06f6b8261b708d48d4d7d5dc2bad34f3014",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/patches/1102.bin",
+      "sha256": "4634f7bcdaeea7a48307a6b0c2f0575dc131d4fcf15138c6678f18b4f19058fd",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/ps4/patches/1102.bin"
+    },
+    {
+      "path": "g2all/css/ps4/userland.js",
+      "bytes": 37526,
+      "gitBlobSHA1": "11cd3226639527eda6e3fabb83a652bbbba03add",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/ps4/userland.js",
+      "sha256": "dc1ae1fd99829511818dd0ecde813e75287f804b4543af4186d09ab875d5c2a4",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/ps4/userland.js"
+    },
+    {
+      "path": "g2all/css/worker.js",
+      "bytes": 1683,
+      "gitBlobSHA1": "b4e40f9e42ead1ac3da50f57566096a4fe8b7256",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/worker.js",
+      "sha256": "8fe6249292dcea160ee71d5fa0e969d146d3ffb58790785b2d55136757cde32e",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/worker.js"
+    },
+    {
+      "path": "g2all/css/workers.js",
+      "bytes": 3311,
+      "gitBlobSHA1": "de29c8cd43b9b0b439cbd757c9ff1551560da06a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/css/workers.js",
+      "sha256": "a92b0f6f72948fb281fb1ef04aad48ec481b94f7a3344d2ca7c98c43cb920ff3",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/css/workers.js"
+    },
+    {
+      "path": "g2all/goldhen_2.4b18.13.bin",
+      "bytes": 297496,
+      "gitBlobSHA1": "682bea0de0be660d0522e018d3d250e7d1b7ee83",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/goldhen_2.4b18.13.bin",
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/goldhen_2.4b18.13.bin"
+    },
+    {
+      "path": "g2all/index.html",
+      "bytes": 4387,
+      "gitBlobSHA1": "71e8bd769bd6eb07eb408f6800cc3e5e4e35b84b",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/index.html",
+      "sha256": "2b3e750882823f7983b4c9a4e535a68a3f101bb6e2903292f6367b32cf05a97f",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/index.html"
+    },
+    {
+      "path": "g2all/slopkit.manifest",
+      "bytes": 507,
+      "gitBlobSHA1": "c2673619d23207fa7a997b669fc9e906ba063106",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit.manifest",
+      "sha256": "a44a8ed876d78ad7b6d15049e5f9a3cec6f8801fcfb2ba11df50d49643964f3a",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit.manifest"
+    },
+    {
+      "path": "g2all/slopkit/afterglow.js",
+      "bytes": 85688,
+      "gitBlobSHA1": "4a44649c2758a969e8dc6d54cba097a5a824f757",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/afterglow.js",
+      "sha256": "3d2c526ab8e42a0f15483c7feeb6a0835cd289430802b3464d072e677bc7a646",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/afterglow.js"
+    },
+    {
+      "path": "g2all/slopkit/chain_lapse.js",
+      "bytes": 209270,
+      "gitBlobSHA1": "0bce833ebe6f7b27da7c2002826314afcc29d235",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/chain_lapse.js",
+      "sha256": "10baf5446f0abc143c4c7d62c23cf13e2701a2759a4c24cffb63829926eb2a6d",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/chain_lapse.js"
+    },
+    {
+      "path": "g2all/slopkit/chain_poops.js",
+      "bytes": 135998,
+      "gitBlobSHA1": "c7f05377a08700f0a51b89f864beff5298780670",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/chain_poops.js",
+      "sha256": "b1b71ca64f157732d138a53f447d7ea949214ddfbe64e0c5ebdaff5bb87b8b28",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/chain_poops.js"
+    },
+    {
+      "path": "g2all/slopkit/core.js",
+      "bytes": 43266,
+      "gitBlobSHA1": "56b0349f0ce59884271070e6bb9635a78edd75a1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/core.js",
+      "sha256": "3acf7e09988f10f800ca22bac1d4965b89ebb5ce2da4850089918fd1a457df4e",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/core.js"
+    },
+    {
+      "path": "g2all/slopkit/int64.js",
+      "bytes": 2787,
+      "gitBlobSHA1": "824fa3941fbdd0f9fb0da8cf3d90ed5ef6f398bc",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/int64.js",
+      "sha256": "a79a3334a3f2c75b9a238ab1093796e326251c97ac5d02663eae5b14bf80f652",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/int64.js"
+    },
+    {
+      "path": "g2all/slopkit/jb.js",
+      "bytes": 115292,
+      "gitBlobSHA1": "a8ce84a0f30c84cb0744cee9b1dfac5122afb9f6",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/jb.js",
+      "sha256": "b177810764810ddf7fa1e92ee9496b749298e95ccf6bac2311a329ede6017677",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/jb.js"
+    },
+    {
+      "path": "g2all/slopkit/jb2.js",
+      "bytes": 35371,
+      "gitBlobSHA1": "b822771a2d6de19acb0c73e2cbe2b4fdb1a9dcc0",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/jb2.js",
+      "sha256": "1b6cf484c152b58cadce1bd14b8e95f68217ba822387c85f3893870cbadc5a63",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/jb2.js"
+    },
+    {
+      "path": "g2all/slopkit/mem.js",
+      "bytes": 28202,
+      "gitBlobSHA1": "63b86c43f87515044612a1c2163f613123b4feb0",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/mem.js",
+      "sha256": "4a1b688e8061372bc8400e911c8e191b7e19e4b6286dcdeb3eef4971c5168a22",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/mem.js"
+    },
+    {
+      "path": "g2all/slopkit/patches/1150.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "acc7deebf8567f82f34ee81c57915b4cdfc628a2",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1150.bin",
+      "sha256": "d4e3a514e462b973842e634eba6c90136dbfd864a208f8c39c229055e5f2e1f9",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1150.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1200.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "0207c2ba8dec6c253fb1b31b7601c3e6227635c1",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1200.bin",
+      "sha256": "87f1d40aea8fbf3adee7b8b5599d90c9d868436c15a498f2dce6bf5d96ae4d27",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1200.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1250.bin",
+      "bytes": 314,
+      "gitBlobSHA1": "d8102ca1d836699ae3f940c8188fe9fb1aa4e60a",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1250.bin",
+      "sha256": "5baaf0bb2663064db1eb1bfd976bc3aa5087ab7f0963648cb6fcb216adce714d",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1250.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1300.bin",
+      "bytes": 314,
+      "gitBlobSHA1": "093f6be6d4a741f88d0e63396768ee7a9928d544",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1300.bin",
+      "sha256": "be70930d96c40b8d7ba03a57e2ea5c834b606fb74ed118756b4dea7fffaa1d57",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1300.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1302.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "6a3870d35b37684c39ad7049e17c3eee08f7d821",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1302.bin",
+      "sha256": "235a051f5a066daa546253de6eb61c1223a2682cb34edd916fc4565bb2c02fc6",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1302.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1350.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "4ff57da79d2b85483b6d27ca513aa95e53d9d299",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1350.bin",
+      "sha256": "f771c196d012496c01f575674e95a74d7b00b7c1bc22325c7321f3ab6eb77b56",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1350.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1352.bin",
+      "bytes": 632,
+      "gitBlobSHA1": "cb07a2b2340e054f1b823245ccf74cfe47d36839",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1352.bin",
+      "sha256": "adfb9771904f71cd1f5a82cbded8ac46c7ffeb3df974579535cf711904ac347e",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1352.bin"
+    },
+    {
+      "path": "g2all/slopkit/patches/1400.bin",
+      "bytes": 641,
+      "gitBlobSHA1": "65256bb99e592ad1f0650aeb1907302ed0149c53",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/patches/1400.bin",
+      "sha256": "615f275b96831cc04173757db39e93f0d27b52888976af2a6444604aa8ac5dbf",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/patches/1400.bin"
+    },
+    {
+      "path": "g2all/slopkit/ps4_offsets.js",
+      "bytes": 17049,
+      "gitBlobSHA1": "a18fdc1fa795cb27d0cb07b718c1b7fd03c47e6e",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/ps4_offsets.js",
+      "sha256": "411c79a592f92254b000480670815c01f8292e2d0060110482851e808f86f8f5",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/ps4_offsets.js"
+    },
+    {
+      "path": "g2all/slopkit/rpc_worker.js",
+      "bytes": 5395,
+      "gitBlobSHA1": "6c2f6fb91fa36cb3c05d7fe2f712cc552a6e7305",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all/slopkit/rpc_worker.js",
+      "sha256": "483925eafec03037596a71b95f046ba0ed1ab9018300ffd5ff718e2ce8c181dd",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/g2all/slopkit/rpc_worker.js"
+    },
+    {
+      "path": "img.jpg",
+      "bytes": 93467,
+      "gitBlobSHA1": "04413908fada0d93d185ef85f1c79a7a8f8c40e8",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/img.jpg",
+      "sha256": "9002befdc689a4e29bd7988a2a815aa94ec01072f38c6b172fea9d78c02a0451",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/img.jpg"
+    },
+    {
+      "path": "style.css",
+      "bytes": 1285,
+      "gitBlobSHA1": "1bef851f2a140b0a577d80497dc4e4455b6b0466",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/d05d71ff8db282f28cbc61f84c0a9588efacc451/style.css",
+      "sha256": "8165adbe3e2127d83175f65d004b0d64cbd4083a36b1511158ccbb2cacea491d",
+      "importPath": "tmp/gamerhack-offline-20261104/raw/style.css"
+    }
+  ],
+  "native": [
+    {
+      "path": "g2all/700/alert.js",
+      "bytes": 1697,
+      "sha256": "b3352504520ecf2a187d21cc3de4b1db93dedbfacd9d238e84428d5b0714759b",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/config.js",
+      "bytes": 2609,
+      "sha256": "f31906b947300e11642f571e779a00468a2bd9993083dcd232bd4e6b6a8c0f83",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/kpatch/700.elf",
+      "bytes": 6208,
+      "sha256": "7fe2f30c64e2acaf41924e385e81b4d1bdb6dd7a217faf91cdb580fd82cde851",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/kpatch/750.elf",
+      "bytes": 6384,
+      "sha256": "1f46037bd232cb40ce7f85100350af86acda6aed92ffa0cfaf18fa15b924691b",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/kpatch/800.elf",
+      "bytes": 6368,
+      "sha256": "8e766df1049d302c01a9c538a92303a3a78f335e007f1139f44a75cc1d8f6fac",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/kpatch/850.elf",
+      "bytes": 6368,
+      "sha256": "313b9048b41f1110bc2c7128059cb009d310bb4f014739b3c10809b60d395f03",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/lapse.js",
+      "bytes": 56892,
+      "sha256": "dfdbe59a58be4ade840b6425f424fed8c1c05b81dd3db456c0aba8e5752b3708",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/lapse/700.js",
+      "bytes": 1175,
+      "sha256": "4b498ef300ddf5dd449250854537db74ef19c0142c4e68f7434a3ed74b8419da",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/lapse/750.js",
+      "bytes": 1163,
+      "sha256": "861d6d5ea39c11763cdf302794a5332936a5c55c13a47b1e88bdcfa047030323",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/lapse/751.js",
+      "bytes": 1407,
+      "sha256": "7ce2bdb60147d176cc2b8f86d0794fdb33ec88759d6e6195598bea6f2ae4f4b8",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/lapse/800.js",
+      "bytes": 1175,
+      "sha256": "3eeac8d233ca472ddcdfb1581885a4dc24df9a66d6ab4215e9279f4a5d0448ce",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/lapse/850.js",
+      "bytes": 1162,
+      "sha256": "64ccda645684670511afa45d258878eedf1b6ce7a3109f72b4f545bd6cfc6b5e",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/lapse/852.js",
+      "bytes": 1162,
+      "sha256": "95149b692401fe2345683865ca5c589d214610edf22a067c81809d8351b9ed63",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/chain.js",
+      "bytes": 15173,
+      "sha256": "78379e8307b848676de1b6fbfd11c38901ca6522e7d21d1a97339bd5f4d1f3e3",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/int64.js",
+      "bytes": 3176,
+      "sha256": "cdd42b5e94f19b3eb821beb8417032a4068282d6f5f7ddd23be32d749c5e3e2e",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/mem.js",
+      "bytes": 10871,
+      "sha256": "3d3e476455d751d09a1108818b8d016cf026229dbacafe9b47e923d4191bcbb8",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/memtools.js",
+      "bytes": 8342,
+      "sha256": "576357a691a279f1aee7398eb7743d861fe2d9734a16b57761814bec9201f4f3",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/offset.js",
+      "bytes": 1930,
+      "sha256": "88ae276045da184e796b08fe951eae176e7b76f657d561a5803a62006d24a34b",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/rw.js",
+      "bytes": 4090,
+      "sha256": "b7effb458d101b060fd167c5d310f44970c04f01c96cb21abeb5beb8187a7218",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/utils.js",
+      "bytes": 4829,
+      "sha256": "ab3e616088723a092e4057250e927ecabf4b73be044dc7fbdbe54abb31f414fd",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/module/view.js",
+      "bytes": 6272,
+      "sha256": "86365d053a7fb2f0f63dd1ebe230a57fbdeb7573d4e4a0ad9c35195db9d019d6",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/psfree.js",
+      "bytes": 25793,
+      "sha256": "005372f285712c889cab04130cfffdcbd6d251da14a53f5c3b56d28863718978",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/rop/700.js",
+      "bytes": 8344,
+      "sha256": "20f780459e9a028aa3b9949e2b5c06a74bf82d5473160d8a7288892e1228cb3f",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/rop/750.js",
+      "bytes": 8344,
+      "sha256": "53448317f194ec686242009bd39e1e99d8d4cbf9ef453d09206df6bfd0a4540f",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/rop/800.js",
+      "bytes": 8342,
+      "sha256": "348ed5378369cfe2876a871066b0bb2265732e2de40f6d49131b0ff9b8f3c6de",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/rop/850.js",
+      "bytes": 8336,
+      "sha256": "44c16bf8225c36e4a940120e2cae7c19cfc50a3089ea16bfbeb7ef193916367f",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/700/send.js",
+      "bytes": 7346,
+      "sha256": "dcb3682deadc1e1e7a382e0de0421e616d918829097024b70e36ca16021ff2b0",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/alert.js",
+      "bytes": 1809,
+      "sha256": "2ab0603afd508f1df66df097ef422b439223cf8069c05264458e026e8e963ff1",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/config.js",
+      "bytes": 2609,
+      "sha256": "f31906b947300e11642f571e779a00468a2bd9993083dcd232bd4e6b6a8c0f83",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/kpatch/900.elf",
+      "bytes": 6368,
+      "sha256": "650033d4b7e5686624a325e29e1de50efcdbbd164a4862bf2be7a909c8e8b2e2",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/kpatch/903.elf",
+      "bytes": 6368,
+      "sha256": "5f34a7c7f026310cbf63eddc3fe515d8cee99420c9d1d9b086ee01645f86a3bc",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/kpatch/950.elf",
+      "bytes": 6368,
+      "sha256": "50aa27d6fbde784ec41e7c24ebf928a7286e273bb5ab03e6c47e7cd70e56d2fb",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/lapse.js",
+      "bytes": 58113,
+      "sha256": "14ba1621ef9a89b6d81544bc13f218db5d42c012d5572d0c7ec1c0b72e1aea4d",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/lapse/900.js",
+      "bytes": 1205,
+      "sha256": "835b6cb43c0f825baef5f005c60ee99c54fe53d6dcac15d5d056d5a6ff3db239",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/lapse/903.js",
+      "bytes": 1211,
+      "sha256": "98eda13aaf1d565dbe0ec4e711b811411310c1d6202a197e451fa8c1e93639bd",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/lapse/950.js",
+      "bytes": 1220,
+      "sha256": "a3ddceca71cce8ef9c4aca386cab9a0851afaee9c0aec3420a50734fe8fe2961",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/chain.js",
+      "bytes": 16305,
+      "sha256": "7e4350d207ad943de7632942a91bd148190756ef0072e43e035796c1aaf25d3e",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/constants.js",
+      "bytes": 773,
+      "sha256": "27ce6981d3a26ce5ae125bceef73daf62040394e5c10541c1527bd15e66a86a7",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/int64.js",
+      "bytes": 3560,
+      "sha256": "46a2d5113d4aaa367463675cee605062c1a17dade7214d80b5428e67a0ba383c",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/mem.js",
+      "bytes": 19339,
+      "sha256": "7afbad5850cda8e972a5c1981e1acff69b391edc3af9fd8a6cb1ae1715d35787",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/memtools.js",
+      "bytes": 8942,
+      "sha256": "52ac8d514ab4709ff3b322a0692f394301da980d0de833712d2fe47e4ac4c730",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/offset.js",
+      "bytes": 1931,
+      "sha256": "1966bff1bd12a296bf8f1f0e6510416d2d9c2d40c20bfb85959034b281c955e1",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/rw.js",
+      "bytes": 4104,
+      "sha256": "d605153f35655b6706e5c4bb4e752f490af56436e4d0956430bde90b12085e15",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/utils.js",
+      "bytes": 4829,
+      "sha256": "ab3e616088723a092e4057250e927ecabf4b73be044dc7fbdbe54abb31f414fd",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/module/view.js",
+      "bytes": 6712,
+      "sha256": "bec9fa5d8a44a8d4d64ad039908761c6f4ea6913735338cffbf1594d669b8449",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/psfree.js",
+      "bytes": 26500,
+      "sha256": "2566fe070e0aabb4f1cb370f0dddc1aa0fa5e56ec7a8c8429a119de313f84ee3",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/rop/900.js",
+      "bytes": 11095,
+      "sha256": "499f8fd2fd7fd62b66830d632096dfeedd7c728a0f906d4f313df5c9b8e80cc1",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/rop/950.js",
+      "bytes": 11366,
+      "sha256": "0170174aab2093c747739808829b398d61e3c21b604f428e422d943cad60abf7",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/900/send.js",
+      "bytes": 7635,
+      "sha256": "d915c293b1f1f3c2bbdb0af692e711cb0691edbc6cd92f230034f4b2a0555a33",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/lapse.js",
+      "bytes": 35571,
+      "sha256": "8a3841c61ff8219c9b996672da74dbf65a57f5265265d6665c30449a14b4aeae",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/loader.js",
+      "bytes": 1842,
+      "sha256": "57f9bce0340bb5c7d59b24a5370c86300063edec435ece75c1491e55dbd980c8",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/main.js",
+      "bytes": 3178,
+      "sha256": "61d863fdd0e38f9e7742279090f9dc4c83955aa6d43a6b29614a60c61316bc7e",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/misc.js",
+      "bytes": 11592,
+      "sha256": "bf509655b71295e6731a205f69992076619133a2230db230fb26d3248ed206d1",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/ps4/constants.js",
+      "bytes": 23889,
+      "sha256": "52c6af4a7f75c87238345ad6f6e0761a04e3c54a052ed68a5363461a5a92ef72",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/ps4/kernel.js",
+      "bytes": 17818,
+      "sha256": "bb184cf282dcb9c94aec0a39306e93923ece1b549f847010fc8eb1fe0468ff33",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/ps4/patches/1000.bin",
+      "bytes": 589,
+      "sha256": "954ff624c9c92ab991c3e92a93fde1583da291dfd9674e245354c7efdcd07cf8",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/ps4/patches/1050.bin",
+      "bytes": 632,
+      "sha256": "fbf815d2d47a707cf788815ef11558fa6d8f718e628d508e8540417083c55e1f",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/ps4/patches/1100.bin",
+      "bytes": 632,
+      "sha256": "15497a2b748dafd49bfb89c51ed048d0c5ba3c5092c5254da46dd4443f80983b",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/ps4/patches/1102.bin",
+      "bytes": 632,
+      "sha256": "4634f7bcdaeea7a48307a6b0c2f0575dc131d4fcf15138c6678f18b4f19058fd",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/ps4/userland.js",
+      "bytes": 37526,
+      "sha256": "dc1ae1fd99829511818dd0ecde813e75287f804b4543af4186d09ab875d5c2a4",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/worker.js",
+      "bytes": 1683,
+      "sha256": "8fe6249292dcea160ee71d5fa0e969d146d3ffb58790785b2d55136757cde32e",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/css/workers.js",
+      "bytes": 3311,
+      "sha256": "a92b0f6f72948fb281fb1ef04aad48ec481b94f7a3344d2ca7c98c43cb920ff3",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/goldhen_2.4b18.13.bin",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/afterglow.js",
+      "bytes": 85688,
+      "sha256": "3d2c526ab8e42a0f15483c7feeb6a0835cd289430802b3464d072e677bc7a646",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/chain_lapse.js",
+      "bytes": 209270,
+      "sha256": "10baf5446f0abc143c4c7d62c23cf13e2701a2759a4c24cffb63829926eb2a6d",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/chain_poops.js",
+      "bytes": 135998,
+      "sha256": "b1b71ca64f157732d138a53f447d7ea949214ddfbe64e0c5ebdaff5bb87b8b28",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/core.js",
+      "bytes": 43266,
+      "sha256": "3acf7e09988f10f800ca22bac1d4965b89ebb5ce2da4850089918fd1a457df4e",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/int64.js",
+      "bytes": 2787,
+      "sha256": "a79a3334a3f2c75b9a238ab1093796e326251c97ac5d02663eae5b14bf80f652",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/jb.js",
+      "bytes": 115292,
+      "sha256": "b177810764810ddf7fa1e92ee9496b749298e95ccf6bac2311a329ede6017677",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/jb2.js",
+      "bytes": 35371,
+      "sha256": "1b6cf484c152b58cadce1bd14b8e95f68217ba822387c85f3893870cbadc5a63",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/mem.js",
+      "bytes": 28202,
+      "sha256": "4a1b688e8061372bc8400e911c8e191b7e19e4b6286dcdeb3eef4971c5168a22",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1150.bin",
+      "bytes": 632,
+      "sha256": "d4e3a514e462b973842e634eba6c90136dbfd864a208f8c39c229055e5f2e1f9",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1200.bin",
+      "bytes": 632,
+      "sha256": "87f1d40aea8fbf3adee7b8b5599d90c9d868436c15a498f2dce6bf5d96ae4d27",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1250.bin",
+      "bytes": 314,
+      "sha256": "5baaf0bb2663064db1eb1bfd976bc3aa5087ab7f0963648cb6fcb216adce714d",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1300.bin",
+      "bytes": 314,
+      "sha256": "be70930d96c40b8d7ba03a57e2ea5c834b606fb74ed118756b4dea7fffaa1d57",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1302.bin",
+      "bytes": 632,
+      "sha256": "235a051f5a066daa546253de6eb61c1223a2682cb34edd916fc4565bb2c02fc6",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1350.bin",
+      "bytes": 632,
+      "sha256": "f771c196d012496c01f575674e95a74d7b00b7c1bc22325c7321f3ab6eb77b56",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1352.bin",
+      "bytes": 632,
+      "sha256": "adfb9771904f71cd1f5a82cbded8ac46c7ffeb3df974579535cf711904ac347e",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/patches/1400.bin",
+      "bytes": 641,
+      "sha256": "615f275b96831cc04173757db39e93f0d27b52888976af2a6444604aa8ac5dbf",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/ps4_offsets.js",
+      "bytes": 17049,
+      "sha256": "411c79a592f92254b000480670815c01f8292e2d0060110482851e808f86f8f5",
+      "unchanged": true
+    },
+    {
+      "path": "g2all/slopkit/rpc_worker.js",
+      "bytes": 5395,
+      "sha256": "483925eafec03037596a71b95f046ba0ed1ab9018300ffd5ff718e2ce8c181dd",
+      "unchanged": true
+    }
+  ],
+  "firmwareEvidence": {
+    "exactFirmwares": [
+      "7.00",
+      "7.01",
+      "7.02",
+      "7.50",
+      "7.51",
+      "7.55",
+      "8.00",
+      "8.01",
+      "8.03",
+      "8.50",
+      "8.52",
+      "9.00",
+      "9.03",
+      "9.04",
+      "9.50",
+      "9.51",
+      "9.60",
+      "10.00",
+      "10.50",
+      "11.00",
+      "11.02",
+      "11.50",
+      "11.52",
+      "12.00",
+      "12.02",
+      "12.50",
+      "12.52",
+      "13.00",
+      "13.02",
+      "13.04",
+      "13.50",
+      "13.52",
+      "14.00"
+    ],
+    "upstreamDispatcherRealFirmwareClaims": [
+      "7.00",
+      "7.01",
+      "7.02",
+      "7.50",
+      "7.51",
+      "7.55",
+      "8.00",
+      "8.01",
+      "8.03",
+      "8.50",
+      "8.52",
+      "9.00",
+      "9.03",
+      "9.04",
+      "9.50",
+      "9.51",
+      "9.60",
+      "10.00",
+      "10.01",
+      "10.50",
+      "10.70",
+      "10.71",
+      "11.00",
+      "11.02",
+      "11.50",
+      "11.52",
+      "12.00",
+      "12.02",
+      "12.50",
+      "12.52",
+      "13.00",
+      "13.02",
+      "13.04",
+      "13.50",
+      "13.52",
+      "14.00"
+    ],
+    "excludedFallbackOnly": [
+      "10.01",
+      "10.70",
+      "10.71"
+    ],
+    "upstreamTitle": "PS4 [5.05] 7.00 - 14.00 FW GoldHEN Host by GamerHack",
+    "sourceSupportIsNotHardwareVerification": true
+  },
+  "cache": {
+    "required": true,
+    "platform": "ps4",
+    "mode": "native AppCache; parent site publisher supplies its complete platform pack",
+    "standaloneManifest": "/offline/ps4.manifest",
+    "manifestResources": [
+      {
+        "manifest": "g2all/700.manifest",
+        "resources": [
+          {
+            "path": "img.jpg",
+            "url": "img.jpg",
+            "bytes": 93467
+          },
+          {
+            "path": "style.css",
+            "url": "style.css",
+            "bytes": 1285
+          },
+          {
+            "path": "g2all/goldhen_2.4b18.13.bin",
+            "url": "g2all/goldhen_2.4b18.13.bin",
+            "bytes": 297496
+          },
+          {
+            "path": "g2all/index.html",
+            "url": "g2all/index.html",
+            "bytes": 4387
+          },
+          {
+            "path": "g2all/700/alert.js",
+            "url": "g2all/700/alert.js",
+            "bytes": 1697
+          },
+          {
+            "path": "g2all/700/config.js",
+            "url": "g2all/700/config.js",
+            "bytes": 2609
+          },
+          {
+            "path": "g2all/700/lapse.js",
+            "url": "g2all/700/lapse.js",
+            "bytes": 56892
+          },
+          {
+            "path": "g2all/700/psfree.js",
+            "url": "g2all/700/psfree.js",
+            "bytes": 25793
+          },
+          {
+            "path": "g2all/700/send.js",
+            "url": "g2all/700/send.js",
+            "bytes": 7346
+          },
+          {
+            "path": "g2all/700/kpatch/700.elf",
+            "url": "g2all/700/kpatch/700.elf",
+            "bytes": 6208
+          },
+          {
+            "path": "g2all/700/kpatch/750.elf",
+            "url": "g2all/700/kpatch/750.elf",
+            "bytes": 6384
+          },
+          {
+            "path": "g2all/700/kpatch/800.elf",
+            "url": "g2all/700/kpatch/800.elf",
+            "bytes": 6368
+          },
+          {
+            "path": "g2all/700/kpatch/850.elf",
+            "url": "g2all/700/kpatch/850.elf",
+            "bytes": 6368
+          },
+          {
+            "path": "g2all/700/lapse/700.js",
+            "url": "g2all/700/lapse/700.js",
+            "bytes": 1175
+          },
+          {
+            "path": "g2all/700/lapse/750.js",
+            "url": "g2all/700/lapse/750.js",
+            "bytes": 1163
+          },
+          {
+            "path": "g2all/700/lapse/751.js",
+            "url": "g2all/700/lapse/751.js",
+            "bytes": 1407
+          },
+          {
+            "path": "g2all/700/lapse/800.js",
+            "url": "g2all/700/lapse/800.js",
+            "bytes": 1175
+          },
+          {
+            "path": "g2all/700/lapse/850.js",
+            "url": "g2all/700/lapse/850.js",
+            "bytes": 1162
+          },
+          {
+            "path": "g2all/700/lapse/852.js",
+            "url": "g2all/700/lapse/852.js",
+            "bytes": 1162
+          },
+          {
+            "path": "g2all/700/module/chain.js",
+            "url": "g2all/700/module/chain.js",
+            "bytes": 15173
+          },
+          {
+            "path": "g2all/700/module/int64.js",
+            "url": "g2all/700/module/int64.js",
+            "bytes": 3176
+          },
+          {
+            "path": "g2all/700/module/mem.js",
+            "url": "g2all/700/module/mem.js",
+            "bytes": 10871
+          },
+          {
+            "path": "g2all/700/module/memtools.js",
+            "url": "g2all/700/module/memtools.js",
+            "bytes": 8342
+          },
+          {
+            "path": "g2all/700/module/offset.js",
+            "url": "g2all/700/module/offset.js",
+            "bytes": 1930
+          },
+          {
+            "path": "g2all/700/module/rw.js",
+            "url": "g2all/700/module/rw.js",
+            "bytes": 4090
+          },
+          {
+            "path": "g2all/700/module/utils.js",
+            "url": "g2all/700/module/utils.js",
+            "bytes": 4829
+          },
+          {
+            "path": "g2all/700/module/view.js",
+            "url": "g2all/700/module/view.js",
+            "bytes": 6272
+          },
+          {
+            "path": "g2all/700/rop/700.js",
+            "url": "g2all/700/rop/700.js",
+            "bytes": 8344
+          },
+          {
+            "path": "g2all/700/rop/750.js",
+            "url": "g2all/700/rop/750.js",
+            "bytes": 8344
+          },
+          {
+            "path": "g2all/700/rop/800.js",
+            "url": "g2all/700/rop/800.js",
+            "bytes": 8342
+          },
+          {
+            "path": "g2all/700/rop/850.js",
+            "url": "g2all/700/rop/850.js",
+            "bytes": 8336
+          }
+        ],
+        "urls": 31,
+        "physicalFiles": 31,
+        "physicalBytes": 611593,
+        "cachedURLBytes": 611593
+      },
+      {
+        "manifest": "g2all/900.manifest",
+        "resources": [
+          {
+            "path": "img.jpg",
+            "url": "img.jpg",
+            "bytes": 93467
+          },
+          {
+            "path": "style.css",
+            "url": "style.css",
+            "bytes": 1285
+          },
+          {
+            "path": "g2all/goldhen_2.4b18.13.bin",
+            "url": "g2all/goldhen_2.4b18.13.bin",
+            "bytes": 297496
+          },
+          {
+            "path": "g2all/index.html",
+            "url": "g2all/index.html",
+            "bytes": 4387
+          },
+          {
+            "path": "g2all/900/alert.js",
+            "url": "g2all/900/alert.js",
+            "bytes": 1809
+          },
+          {
+            "path": "g2all/900/config.js",
+            "url": "g2all/900/config.js",
+            "bytes": 2609
+          },
+          {
+            "path": "g2all/900/lapse.js",
+            "url": "g2all/900/lapse.js",
+            "bytes": 58113
+          },
+          {
+            "path": "g2all/900/psfree.js",
+            "url": "g2all/900/psfree.js",
+            "bytes": 26500
+          },
+          {
+            "path": "g2all/900/send.js",
+            "url": "g2all/900/send.js",
+            "bytes": 7635
+          },
+          {
+            "path": "g2all/900/kpatch/900.elf",
+            "url": "g2all/900/kpatch/900.elf",
+            "bytes": 6368
+          },
+          {
+            "path": "g2all/900/kpatch/903.elf",
+            "url": "g2all/900/kpatch/903.elf",
+            "bytes": 6368
+          },
+          {
+            "path": "g2all/900/kpatch/950.elf",
+            "url": "g2all/900/kpatch/950.elf",
+            "bytes": 6368
+          },
+          {
+            "path": "g2all/900/lapse/900.js",
+            "url": "g2all/900/lapse/900.js",
+            "bytes": 1205
+          },
+          {
+            "path": "g2all/900/lapse/903.js",
+            "url": "g2all/900/lapse/903.js",
+            "bytes": 1211
+          },
+          {
+            "path": "g2all/900/lapse/950.js",
+            "url": "g2all/900/lapse/950.js",
+            "bytes": 1220
+          },
+          {
+            "path": "g2all/900/module/chain.js",
+            "url": "g2all/900/module/chain.js",
+            "bytes": 16305
+          },
+          {
+            "path": "g2all/900/module/constants.js",
+            "url": "g2all/900/module/constants.js",
+            "bytes": 773
+          },
+          {
+            "path": "g2all/900/module/int64.js",
+            "url": "g2all/900/module/int64.js",
+            "bytes": 3560
+          },
+          {
+            "path": "g2all/900/module/mem.js",
+            "url": "g2all/900/module/mem.js",
+            "bytes": 19339
+          },
+          {
+            "path": "g2all/900/module/memtools.js",
+            "url": "g2all/900/module/memtools.js",
+            "bytes": 8942
+          },
+          {
+            "path": "g2all/900/module/offset.js",
+            "url": "g2all/900/module/offset.js",
+            "bytes": 1931
+          },
+          {
+            "path": "g2all/900/module/rw.js",
+            "url": "g2all/900/module/rw.js",
+            "bytes": 4104
+          },
+          {
+            "path": "g2all/900/module/utils.js",
+            "url": "g2all/900/module/utils.js",
+            "bytes": 4829
+          },
+          {
+            "path": "g2all/900/module/view.js",
+            "url": "g2all/900/module/view.js",
+            "bytes": 6712
+          },
+          {
+            "path": "g2all/900/rop/900.js",
+            "url": "g2all/900/rop/900.js",
+            "bytes": 11095
+          },
+          {
+            "path": "g2all/900/rop/950.js",
+            "url": "g2all/900/rop/950.js",
+            "bytes": 11366
+          }
+        ],
+        "urls": 26,
+        "physicalFiles": 26,
+        "physicalBytes": 604997,
+        "cachedURLBytes": 604997
+      },
+      {
+        "manifest": "g2all/css.manifest",
+        "resources": [
+          {
+            "path": "img.jpg",
+            "url": "img.jpg",
+            "bytes": 93467
+          },
+          {
+            "path": "style.css",
+            "url": "style.css",
+            "bytes": 1285
+          },
+          {
+            "path": "g2all/goldhen_2.4b18.13.bin",
+            "url": "g2all/goldhen_2.4b18.13.bin",
+            "bytes": 297496
+          },
+          {
+            "path": "g2all/index.html",
+            "url": "g2all/index.html",
+            "bytes": 4387
+          },
+          {
+            "path": "g2all/css/lapse.js",
+            "url": "g2all/css/lapse.js",
+            "bytes": 35571
+          },
+          {
+            "path": "g2all/css/loader.js",
+            "url": "g2all/css/loader.js",
+            "bytes": 1842
+          },
+          {
+            "path": "g2all/css/main.js",
+            "url": "g2all/css/main.js",
+            "bytes": 3178
+          },
+          {
+            "path": "g2all/css/misc.js",
+            "url": "g2all/css/misc.js",
+            "bytes": 11592
+          },
+          {
+            "path": "g2all/css/worker.js",
+            "url": "g2all/css/worker.js",
+            "bytes": 1683
+          },
+          {
+            "path": "g2all/css/workers.js",
+            "url": "g2all/css/workers.js",
+            "bytes": 3311
+          },
+          {
+            "path": "g2all/css/ps4/constants.js",
+            "url": "g2all/css/ps4/constants.js",
+            "bytes": 23889
+          },
+          {
+            "path": "g2all/css/ps4/kernel.js",
+            "url": "g2all/css/ps4/kernel.js",
+            "bytes": 17818
+          },
+          {
+            "path": "g2all/css/ps4/userland.js",
+            "url": "g2all/css/ps4/userland.js",
+            "bytes": 37526
+          },
+          {
+            "path": "g2all/css/ps4/patches/1000.bin",
+            "url": "g2all/css/ps4/patches/1000.bin",
+            "bytes": 589
+          },
+          {
+            "path": "g2all/css/ps4/patches/1050.bin",
+            "url": "g2all/css/ps4/patches/1050.bin",
+            "bytes": 632
+          },
+          {
+            "path": "g2all/css/ps4/patches/1100.bin",
+            "url": "g2all/css/ps4/patches/1100.bin",
+            "bytes": 632
+          },
+          {
+            "path": "g2all/css/ps4/patches/1102.bin",
+            "url": "g2all/css/ps4/patches/1102.bin",
+            "bytes": 632
+          }
+        ],
+        "urls": 17,
+        "physicalFiles": 17,
+        "physicalBytes": 535530,
+        "cachedURLBytes": 535530
+      },
+      {
+        "manifest": "g2all/slopkit.manifest",
+        "resources": [
+          {
+            "path": "img.jpg",
+            "url": "img.jpg",
+            "bytes": 93467
+          },
+          {
+            "path": "style.css",
+            "url": "style.css",
+            "bytes": 1285
+          },
+          {
+            "path": "g2all/goldhen_2.4b18.13.bin",
+            "url": "g2all/goldhen_2.4b18.13.bin",
+            "bytes": 297496
+          },
+          {
+            "path": "g2all/index.html",
+            "url": "g2all/index.html",
+            "bytes": 4387
+          },
+          {
+            "path": "g2all/slopkit/afterglow.js",
+            "url": "g2all/slopkit/afterglow.js",
+            "bytes": 85688
+          },
+          {
+            "path": "g2all/slopkit/chain_lapse.js",
+            "url": "g2all/slopkit/chain_lapse.js",
+            "bytes": 209270
+          },
+          {
+            "path": "g2all/slopkit/chain_poops.js",
+            "url": "g2all/slopkit/chain_poops.js",
+            "bytes": 135998
+          },
+          {
+            "path": "g2all/slopkit/core.js",
+            "url": "g2all/slopkit/core.js?v=10",
+            "bytes": 43266
+          },
+          {
+            "path": "g2all/slopkit/core.js",
+            "url": "g2all/slopkit/core.js",
+            "bytes": 43266
+          },
+          {
+            "path": "g2all/slopkit/int64.js",
+            "url": "g2all/slopkit/int64.js",
+            "bytes": 2787
+          },
+          {
+            "path": "g2all/slopkit/jb.js",
+            "url": "g2all/slopkit/jb.js?v=19",
+            "bytes": 115292
+          },
+          {
+            "path": "g2all/slopkit/jb2.js",
+            "url": "g2all/slopkit/jb2.js",
+            "bytes": 35371
+          },
+          {
+            "path": "g2all/slopkit/mem.js",
+            "url": "g2all/slopkit/mem.js",
+            "bytes": 28202
+          },
+          {
+            "path": "g2all/slopkit/ps4_offsets.js",
+            "url": "g2all/slopkit/ps4_offsets.js",
+            "bytes": 17049
+          },
+          {
+            "path": "g2all/slopkit/rpc_worker.js",
+            "url": "g2all/slopkit/rpc_worker.js",
+            "bytes": 5395
+          },
+          {
+            "path": "g2all/slopkit/patches/1150.bin",
+            "url": "g2all/slopkit/patches/1150.bin",
+            "bytes": 632
+          },
+          {
+            "path": "g2all/slopkit/patches/1200.bin",
+            "url": "g2all/slopkit/patches/1200.bin",
+            "bytes": 632
+          },
+          {
+            "path": "g2all/slopkit/patches/1250.bin",
+            "url": "g2all/slopkit/patches/1250.bin",
+            "bytes": 314
+          },
+          {
+            "path": "g2all/slopkit/patches/1300.bin",
+            "url": "g2all/slopkit/patches/1300.bin",
+            "bytes": 314
+          },
+          {
+            "path": "g2all/slopkit/patches/1302.bin",
+            "url": "g2all/slopkit/patches/1302.bin",
+            "bytes": 632
+          },
+          {
+            "path": "g2all/slopkit/patches/1350.bin",
+            "url": "g2all/slopkit/patches/1350.bin",
+            "bytes": 632
+          },
+          {
+            "path": "g2all/slopkit/patches/1352.bin",
+            "url": "g2all/slopkit/patches/1352.bin",
+            "bytes": 632
+          },
+          {
+            "path": "g2all/slopkit/patches/1400.bin",
+            "url": "g2all/slopkit/patches/1400.bin",
+            "bytes": 641
+          }
+        ],
+        "urls": 23,
+        "physicalFiles": 22,
+        "physicalBytes": 1079382,
+        "cachedURLBytes": 1122648
+      }
+    ],
+    "sourceBackslashesNormalizedForClosureAuditOnly": true,
+    "queryURLsRetained": true
+  },
+  "sourceCodeExecuted": false,
+  "consoleContact": false,
+  "quarantinedSourcesFetched": false,
+  "sources": {
+    "local": "/downloads/hosts/gamerhack-g2all/d05d71ff8db2/gamerhack-g2all-source-0f29a1cd453c.zip",
+    "bytes": 716128,
+    "sha256": "4b4419936c9a1aeafb5a63dd594ac1e82fd74c8049f3c9123e534864fd191189",
+    "files": 93
+  },
+  "bundle": {
+    "local": "/downloads/hosts/gamerhack-g2all/d05d71ff8db2/gamerhack-g2all-ps4-700-1400-52269ecd47ec.zip",
+    "bytes": 764380,
+    "sha256": "bdee59a8072973e41c55bad4a17490f9e46b7f1c21101b5730cc826430c0e6fc",
+    "files": 104
+  },
+  "jobs": [
+    {
+      "id": "gamerhack-g2all-ready-52269ecd47ec",
+      "title": "GamerHack PS4 7.00–14.00 offline web host",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "GamerHack g2all local web host",
+      "version": "d05d71ff8db2-52269ecd47ec",
+      "filename": "gamerhack-g2all-ps4-700-1400-52269ecd47ec.zip",
+      "url": "https://speedy-away.github.io/downloads/hosts/gamerhack-g2all/d05d71ff8db2/gamerhack-g2all-ps4-700-1400-52269ecd47ec.zip",
+      "importPath": "downloads/hosts/gamerhack-g2all/d05d71ff8db2/gamerhack-g2all-ps4-700-1400-52269ecd47ec.zip",
+      "kind": "generated",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 764380,
+      "expectedSha256": "bdee59a8072973e41c55bad4a17490f9e46b7f1c21101b5730cc826430c0e6fc",
+      "pages": [
+        "hosts/ps4/exploit/gamerhack-g2all/index.html"
+      ]
+    },
+    {
+      "id": "gamerhack-g2all-source-0f29a1cd453c",
+      "title": "GamerHack g2all exact requested source closure",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "GamerHack g2all local web host",
+      "version": "d05d71ff8db2-0f29a1cd453c",
+      "filename": "gamerhack-g2all-source-0f29a1cd453c.zip",
+      "url": "https://github.com/GamerHack/GamerHack.github.io/tree/d05d71ff8db282f28cbc61f84c0a9588efacc451/g2all",
+      "importPath": "downloads/hosts/gamerhack-g2all/d05d71ff8db2/gamerhack-g2all-source-0f29a1cd453c.zip",
+      "kind": "generated-source-capture",
+      "mirror": false,
+      "archiveRole": [
+        "Source Code"
+      ],
+      "expectedBytes": 716128,
+      "expectedSha256": "4b4419936c9a1aeafb5a63dd594ac1e82fd74c8049f3c9123e534864fd191189",
+      "pages": [
+        "hosts/ps4/exploit/gamerhack-g2all/index.html"
+      ]
+    }
+  ]
+}
