@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T02:47:12.931Z",
+  "updatedAt": "2026-11-04T03:03:04.722Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Published and live verified; automatic XML installation is not implemented",
+  "status": "Console banners verified; publication pending",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -87,17 +87,17 @@
     "hardwareExecutionVerified": false
   },
   "senderReleaseDelivery": {
-    "verifiedAt": "2026-11-04T02:31:53.633Z",
-    "version": "2.1.0+b1d198ce2219",
-    "name": "console-payload-sender-2.1.0-b1d198ce2219.zip",
-    "bytes": 107657313,
-    "sha256": "15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
-    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-b1d198ce2219.zip",
-    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+b1d198ce2219\\console-payload-sender-2.1.0-b1d198ce2219.zip",
-    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-b1d198ce2219",
-    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-b1d198ce2219/console-payload-sender-2.1.0-b1d198ce2219.zip",
-    "assetId": 707943617,
-    "serverDigest": "sha256:15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
+    "verifiedAt": "2026-11-04T03:01:19.480Z",
+    "version": "2.1.0+81aa2e7cf141",
+    "name": "console-payload-sender-2.1.0-81aa2e7cf141.zip",
+    "bytes": 107657919,
+    "sha256": "3d9a87c2e97ed80e235e8398ad96db775bd4d77f0e4ee6585c81d53f9159d649",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-81aa2e7cf141.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+81aa2e7cf141\\console-payload-sender-2.1.0-81aa2e7cf141.zip",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-81aa2e7cf141",
+    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-81aa2e7cf141/console-payload-sender-2.1.0-81aa2e7cf141.zip",
+    "assetId": 708012582,
+    "serverDigest": "sha256:3d9a87c2e97ed80e235e8398ad96db775bd4d77f0e4ee6585c81d53f9159d649",
     "zipUnchanged": true,
     "archiveVerified": true,
     "downloadedCodeExecuted": false
@@ -1280,5 +1280,24 @@
       "senderAssetHTTP": 200
     },
     "limitation": "The pinned native engine exposes game/settings pages but no browser upload, URL-import or package-install endpoint. PS4 elfldr has no supported public-browser HTTP launch route."
+  },
+  "consoleBannerUpdate": {
+    "review": "docs/migration/console-banner-review.json",
+    "status": "Verified and ready for publication",
+    "regression": {
+      "files": 72,
+      "tests": 504,
+      "pass": 504,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/console-banner-tests.tap"
+    },
+    "senderVersion": "2.1.0+81aa2e7cf141",
+    "archive": {
+      "items": 5011,
+      "fileRecords": 8630,
+      "presentFileRecords": 8630,
+      "missingFileRecords": 0
+    }
   }
 }
