@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · 离线缓存",
   "{versions} · Pattern matched · see source": "{versions} · 模式匹配 · 查看源码",
   "{platform} WebKit Exploit - {version}": "{platform} WebKit 漏洞利用 - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit 漏洞利用 - {version} · 在 {console} 上打开"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit 漏洞利用 - {version} · 在 {console} 上打开",
+  "Game, CUSA title ID, FPS, camera...": "搜索游戏、游戏编号或补丁名称"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("zh",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["zh",t]);})();

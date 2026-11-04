@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · Cache offline",
   "{versions} · Pattern matched · see source": "{versions} · Pola cocok · lihat sumber",
   "{platform} WebKit Exploit - {version}": "{platform} Eksploit WebKit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Eksploit WebKit - {version} · Buka di {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Eksploit WebKit - {version} · Buka di {console}",
+  "Game, CUSA title ID, FPS, camera...": "Cari game, ID judul, atau nama patch"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("id",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["id",t]);})();

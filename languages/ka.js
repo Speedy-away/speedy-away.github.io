@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · ოფლაინ ქეში",
   "{versions} · Pattern matched · see source": "{versions} · შაბლონის დამთხვევა · იხილეთ წყარო",
   "{platform} WebKit Exploit - {version}": "{platform} WebKit ექსპლოიტი - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit ექსპლოიტი - {version} · გახსენით {console}-ზე"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit ექსპლოიტი - {version} · გახსენით {console}-ზე",
+  "Game, CUSA title ID, FPS, camera...": "მოძებნეთ თამაშები, თამაშის ID ან პატჩის სახელები"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("ka",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["ka",t]);})();

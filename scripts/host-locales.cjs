@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
 const extra=require('../i18n-tools/host-current-translations.cjs');
-const codes=['en',...extra.codes],ORIGIN='https://speedy-away.github.io',version='20261104languages1';
+const codes=['en',...extra.codes],ORIGIN='https://speedy-away.github.io',version='20261104languages2';
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const locales={en:'en_GB',es:'es_ES',pt:'pt_BR',fr:'fr_FR',de:'de_DE',ru:'ru_RU',tr:'tr_TR',pl:'pl_PL',it:'it_IT',zh:'zh_CN',ja:'ja_JP',ko:'ko_KR',th:'th_TH',vi:'vi_VN',id:'id_ID',hi:'hi_IN',sr:'sr_RS',nl:'nl_NL',ka:'ka_GE',ar:'ar_AR',he:'he_IL'};
 function dictionary(root,code){if(code==='en')return {};let table;vm.runInNewContext(fs.readFileSync(path.join(root,'languages',code+'.js'),'utf8'),{window:{__scoobyI18n:{register:(c,t)=>{if(c!==code)throw Error('Wrong language');table=t;}}}});for(const [key,values]of Object.entries(extra.table))table[key]=values[code];return table;}

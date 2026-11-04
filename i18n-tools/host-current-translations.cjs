@@ -80,4 +80,5 @@ table['{platform} · OFFLINE']=Object.fromEntries(codes.map(c=>[c,'{platform} ·
 table['{versions} · Pattern matched · see source']=Object.fromEntries(codes.map(c=>[c,'{versions} · '+table['Pattern matched · see source'][c]]));
 table['{platform} WebKit Exploit - {version}']=Object.fromEntries(codes.map(c=>[c,'{platform} '+table['WebKit exploit'][c]+' - {version}']));
 table['{platform} WebKit Exploit - {version} · Open on {console}']=Object.fromEntries(codes.map(c=>[c,'{platform} '+table['WebKit exploit'][c]+' - {version} · '+table['Open on {platform}'][c].replace('{platform}','{console}')]));
+table['Game, CUSA title ID, FPS, camera...']=table['Search games, title IDs or patch names'];
 module.exports={codes,table,row};

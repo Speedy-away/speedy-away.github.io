@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · แคชออฟไลน์",
   "{versions} · Pattern matched · see source": "{versions} · ตรงตามรูปแบบ · ดูแหล่งที่มา",
   "{platform} WebKit Exploit - {version}": "{platform} เอ็กซ์พลอยต์ WebKit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} เอ็กซ์พลอยต์ WebKit - {version} · เปิดบน {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} เอ็กซ์พลอยต์ WebKit - {version} · เปิดบน {console}",
+  "Game, CUSA title ID, FPS, camera...": "ค้นหาเกม รหัสเกม หรือชื่อแพตช์"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("th",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["th",t]);})();

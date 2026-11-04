@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · Çevrimdışı önbellek",
   "{versions} · Pattern matched · see source": "{versions} · Desen eşleşmesi · kaynağa bak",
   "{platform} WebKit Exploit - {version}": "{platform} WebKit exploiti - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit exploiti - {version} · {console} üzerinde aç"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit exploiti - {version} · {console} üzerinde aç",
+  "Game, CUSA title ID, FPS, camera...": "Oyun, oyun kimliği veya yama adı ara"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("tr",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["tr",t]);})();

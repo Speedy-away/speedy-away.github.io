@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · Офлайн-кэш",
   "{versions} · Pattern matched · see source": "{versions} · Совпадение по шаблону · см. исходник",
   "{platform} WebKit Exploit - {version}": "{platform} Эксплойт WebKit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Эксплойт WebKit - {version} · Открыть на {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Эксплойт WebKit - {version} · Открыть на {console}",
+  "Game, CUSA title ID, FPS, camera...": "Поиск игр, ID и названий патчей"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("ru",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["ru",t]);})();

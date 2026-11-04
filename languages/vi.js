@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · Bộ nhớ đệm ngoại tuyến",
   "{versions} · Pattern matched · see source": "{versions} · Khớp mẫu · xem nguồn",
   "{platform} WebKit Exploit - {version}": "{platform} Khai thác WebKit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Khai thác WebKit - {version} · Mở trên {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Khai thác WebKit - {version} · Mở trên {console}",
+  "Game, CUSA title ID, FPS, camera...": "Tìm trò chơi, mã trò chơi hoặc tên bản vá"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("vi",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["vi",t]);})();

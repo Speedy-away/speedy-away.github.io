@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · 오프라인 캐시",
   "{versions} · Pattern matched · see source": "{versions} · 패턴 일치 · 소스 확인",
   "{platform} WebKit Exploit - {version}": "{platform} WebKit 익스플로잇 - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit 익스플로잇 - {version} · {console}에서 열기"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit 익스플로잇 - {version} · {console}에서 열기",
+  "Game, CUSA title ID, FPS, camera...": "게임, 타이틀 ID 또는 패치 이름 검색"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("ko",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["ko",t]);})();

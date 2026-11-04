@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · ऑफ़लाइन कैश",
   "{versions} · Pattern matched · see source": "{versions} · पैटर्न मेल खाता है · स्रोत देखें",
   "{platform} WebKit Exploit - {version}": "{platform} WebKit एक्सप्लॉइट - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit एक्सप्लॉइट - {version} · {console} पर खोलें"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit एक्सप्लॉइट - {version} · {console} पर खोलें",
+  "Game, CUSA title ID, FPS, camera...": "गेम, टाइटल ID या पैच नाम खोजें"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("hi",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["hi",t]);})();

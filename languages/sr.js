@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · Офлајн кеш",
   "{versions} · Pattern matched · see source": "{versions} · Подударање шаблона · види извор",
   "{platform} WebKit Exploit - {version}": "{platform} WebKit експлоит - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit експлоит - {version} · Отвори на {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit експлоит - {version} · Отвори на {console}",
+  "Game, CUSA title ID, FPS, camera...": "Претражи игре, ID наслова или називе закрпа"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("sr",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["sr",t]);})();

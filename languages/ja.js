@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · オフラインキャッシュ",
   "{versions} · Pattern matched · see source": "{versions} · パターン一致 · ソース参照",
   "{platform} WebKit Exploit - {version}": "{platform} WebKitエクスプロイト - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKitエクスプロイト - {version} · {console} で開く"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKitエクスプロイト - {version} · {console} で開く",
+  "Game, CUSA title ID, FPS, camera...": "ゲーム、タイトルID、パッチ名を検索"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("ja",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["ja",t]);})();

@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · ذاكرة التخزين دون اتصال",
   "{versions} · Pattern matched · see source": "{versions} · تطابق النمط · راجع المصدر",
   "{platform} WebKit Exploit - {version}": "{platform} استغلال WebKit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} استغلال WebKit - {version} · افتح على {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} استغلال WebKit - {version} · افتح على {console}",
+  "Game, CUSA title ID, FPS, camera...": "البحث عن ألعاب أو معرّفات أو أسماء تصحيحات"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("ar",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["ar",t]);})();

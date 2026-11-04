@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · מטמון לא מקוון",
   "{versions} · Pattern matched · see source": "{versions} · התאמת תבנית · ראו מקור",
   "{platform} WebKit Exploit - {version}": "{platform} ניצול פרצה ב-WebKit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} ניצול פרצה ב-WebKit - {version} · פתיחה ב-{console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} ניצול פרצה ב-WebKit - {version} · פתיחה ב-{console}",
+  "Game, CUSA title ID, FPS, camera...": "חיפוש משחקים, מזהי כותרים או שמות תיקונים"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("he",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["he",t]);})();

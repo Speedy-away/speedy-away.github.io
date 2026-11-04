@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · Offlinecache",
   "{versions} · Pattern matched · see source": "{versions} · Patroon gevonden · zie bron",
   "{platform} WebKit Exploit - {version}": "{platform} WebKit-exploit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit-exploit - {version} · Openen op {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} WebKit-exploit - {version} · Openen op {console}",
+  "Game, CUSA title ID, FPS, camera...": "Zoek games, titel-ID’s of patchnamen"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("nl",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["nl",t]);})();

@@ -1350,5 +1350,6 @@
   "{platform} · OFFLINE": "{platform} · Pamięć offline",
   "{versions} · Pattern matched · see source": "{versions} · Dopasowanie wzorca · zobacz źródło",
   "{platform} WebKit Exploit - {version}": "{platform} Exploit WebKit - {version}",
-  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Exploit WebKit - {version} · Otwórz na {console}"
+  "{platform} WebKit Exploit - {version} · Open on {console}": "{platform} Exploit WebKit - {version} · Otwórz na {console}",
+  "Game, CUSA title ID, FPS, camera...": "Szukaj gier, ID tytułów lub nazw poprawek"
 };if(window.__scoobyI18n)window.__scoobyI18n.register("pl",t);else(window.__scoobyI18nQueue=window.__scoobyI18nQueue||[]).push(["pl",t]);})();
