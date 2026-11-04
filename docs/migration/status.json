@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T02:14:54.228Z",
+  "updatedAt": "2026-11-04T02:32:21.013Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Published and live verified",
+  "status": "Simplified patch UI verified; publication pending",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -87,17 +87,17 @@
     "hardwareExecutionVerified": false
   },
   "senderReleaseDelivery": {
-    "verifiedAt": "2026-11-04T02:09:39.488Z",
-    "version": "2.1.0+a9ba4920dc2b",
-    "name": "console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-    "bytes": 107657801,
-    "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
-    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+a9ba4920dc2b\\console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-a9ba4920dc2b",
-    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-a9ba4920dc2b/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
-    "assetId": 707887304,
-    "serverDigest": "sha256:84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+    "verifiedAt": "2026-11-04T02:31:53.633Z",
+    "version": "2.1.0+b1d198ce2219",
+    "name": "console-payload-sender-2.1.0-b1d198ce2219.zip",
+    "bytes": 107657313,
+    "sha256": "15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-b1d198ce2219.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+b1d198ce2219\\console-payload-sender-2.1.0-b1d198ce2219.zip",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-b1d198ce2219",
+    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-b1d198ce2219/console-payload-sender-2.1.0-b1d198ce2219.zip",
+    "assetId": 707943617,
+    "serverDigest": "sha256:15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
     "zipUnchanged": true,
     "archiveVerified": true,
     "downloadedCodeExecuted": false
@@ -1240,5 +1240,27 @@
       "immutableSenderAssetHTTP": 200
     },
     "completedAt": "2026-11-04T02:14:54.228Z"
+  },
+  "patchSimpleUpdate": {
+    "review": "docs/migration/patch-simple-review.json",
+    "status": "Verified and ready for publication; direct browser XML installation is unavailable",
+    "regression": {
+      "files": 72,
+      "tests": 503,
+      "pass": 503,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/patch-simple-tests.tap"
+    },
+    "archive": {
+      "items": 5010,
+      "fileRecords": 8629,
+      "presentFileRecords": 8629,
+      "missingFileRecords": 0
+    },
+    "automaticXMLInstallation": false,
+    "sameConsoleLoadInstalledPatches": true,
+    "manualConnectionRemoved": true,
+    "senderVersion": "2.1.0+b1d198ce2219"
   }
 }

@@ -1,0 +1,117 @@
+{
+  "updatedAt": "2026-11-04T02:32:21.013Z",
+  "status": "Verified and ready for publication; direct browser XML installation is unavailable",
+  "requests": [
+    "Simplify PS4 and PS5 Game patches to Load or Download",
+    "Remove console IP/connection/receiver/setup panels from game patches",
+    "Remove KARO from shared navigation",
+    "Remove repeated console-photo headings on PS4/PS5 pages"
+  ],
+  "ui": {
+    "gameCounts": {
+      "ps4": 98,
+      "ps5": 101
+    },
+    "titleSelection": "One selector, exact original XML Download, and one same-console Load button",
+    "detailsCollapsed": true,
+    "connectionForm": false,
+    "receiverLinks": false,
+    "setupPanels": false,
+    "karoNavigation": false,
+    "repeatedConsolePhotoHeaders": false,
+    "homeAndGameArtworkPreserved": true,
+    "legacyRuntimesAndDownloadsPreserved": true
+  },
+  "nativeBehavior": {
+    "load": "Opens the selected installed title in the on-console native patch manager at fixed loopback port23900.",
+    "requiresInstalledEngineAndXML": true,
+    "download": "Saves the exact original selected title XML; this is not an installation acknowledgement.",
+    "automaticInstallationImplemented": false,
+    "reason": "The pinned native engine exposes game/settings pages but no browser upload, URL-import or package-install endpoint. PS4 elfldr has no supported public-browser HTTP launch route.",
+    "supportedFirmware": {
+      "ps4": "9.00–12.52",
+      "ps5": "3.00–12.70"
+    },
+    "trustedVisibleConsoleClickRequired": true,
+    "noDiscoveryOrBackgroundRequests": true,
+    "nativeCodeExecuted": false,
+    "physicalConsoleVerified": false
+  },
+  "sources": [
+    {
+      "url": "https://github.com/illusionyy/ps-patch-system/blob/e6da6e4d9c5954ee848b24ea211dd8ba706621c7/patch-web/main.cpp#L1037-L1203",
+      "evidence": "Installed XML pages and native toggle/settings handlers; no install/import handler."
+    },
+    {
+      "url": "https://github.com/illusionyy/ps-patch-system/blob/e6da6e4d9c5954ee848b24ea211dd8ba706621c7/patch-bundle-loader/main.cpp#L39-L94",
+      "evidence": "The bundle loader starts its embedded engine, not a game XML archive."
+    },
+    {
+      "url": "https://github.com/ps4-payload-dev/elfldr/blob/master/socksrv.c#L167-L221",
+      "evidence": "TCP ELF or URL intake is not an HTTP GET launch endpoint."
+    }
+  ],
+  "verification": {
+    "existingResourceHashes": 281,
+    "browser": "Supported in-app browser",
+    "desktopAnd390MobileReviewed": true,
+    "ps4AndPS5HeadersReviewed": true,
+    "browserDownload": {
+      "titleId": "CUSA03041",
+      "bytes": 2542,
+      "sha256": "567dc63c9d72dad78d5e2ebd8870445d5bcd175a658982d35b3e7ce3a9cf3f1d",
+      "exactOriginal": true
+    },
+    "screenshots": [
+      "docs/screenshots/patch-simple-20261104/desktop-dialog.jpg",
+      "docs/screenshots/patch-simple-20261104/mobile-dialog.jpg",
+      "docs/screenshots/patch-simple-20261104/ps5-header.jpg"
+    ],
+    "nativeGateTests": 9,
+    "publicPreviewBuild": {
+      "files": 6199,
+      "bytes": 864215053,
+      "budget": 922746880,
+      "nativeScriptsUnchanged": 898,
+      "checkedLocalLinks": 4021,
+      "issues": 0
+    }
+  },
+  "sender": {
+    "version": "2.1.0+b1d198ce2219",
+    "bytes": 107657313,
+    "sha256": "15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
+    "versionsPreserved": 42,
+    "delivery": {
+      "verifiedAt": "2026-11-04T02:31:53.633Z",
+      "version": "2.1.0+b1d198ce2219",
+      "name": "console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "bytes": 107657313,
+      "sha256": "15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+b1d198ce2219\\console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-b1d198ce2219",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-b1d198ce2219/console-payload-sender-2.1.0-b1d198ce2219.zip",
+      "assetId": 707943617,
+      "serverDigest": "sha256:15b8221e113b77c75b19adc9644f0969f9a13d7cb977f908fb08d0102ce25ce2",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
+    }
+  },
+  "nativeRuntimeBytesChanged": 0,
+  "regression": {
+    "files": 72,
+    "tests": 503,
+    "pass": 503,
+    "fail": 0,
+    "skipped": 0,
+    "evidence": "docs/qa/patch-simple-tests.tap"
+  },
+  "archive": {
+    "items": 5010,
+    "fileRecords": 8629,
+    "presentFileRecords": 8629,
+    "missingFileRecords": 0
+  }
+}

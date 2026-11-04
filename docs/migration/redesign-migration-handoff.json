@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T02:14:54.228Z",
+  "updatedAt": "2026-11-04T02:32:21.013Z",
   "status": "Completed: larger centered Load, removed console search, original background animation, full local preservation and verified new-repository publication.",
   "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
   "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
@@ -206,50 +206,44 @@
     "physicalConsoleTested": false
   },
   "latestFollowup": {
-    "review": "docs/migration/load-motion-review.json",
+    "review": "docs/migration/patch-simple-review.json",
     "request": [
-      "Enlarge and center the firmware Load control",
-      "Remove the Search this console bar",
-      "Create an original animated background",
-      "Preserve every old local repository byte inside the new checkout before local removal",
-      "Push the new repository"
+      "Simplify PS4 and PS5 Game patches to Load or Download",
+      "Remove console IP/connection/receiver/setup panels from game patches",
+      "Remove KARO from shared navigation",
+      "Remove repeated console-photo headings on PS4/PS5 pages"
     ],
-    "localOldRepoRemoval": {
-      "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
-      "safeToRemove": true,
-      "removedByAgent": false,
-      "privateSnapshot": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST",
-      "filesSHA256Verified": 211089,
-      "bytesSHA256Verified": 55838474903,
-      "privateFilesRestoredAtActivePaths": 13,
-      "oldRemoteRepositoryStillRequired": true,
-      "activeGitStoreIndependent": true,
-      "restoredInventoryTestsPassed": 3,
-      "scopedArchiveCheck": {
-        "sidecars": 2,
-        "items": 1,
-        "files": 1,
-        "readOnly": true
-      }
+    "status": "Verified and ready for publication; direct browser XML installation is unavailable",
+    "publicationPending": true,
+    "regression": {
+      "files": 72,
+      "tests": 503,
+      "pass": 503,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/patch-simple-tests.tap"
     },
-    "publicationPending": false,
-    "senderVersion": "2.1.0+a9ba4920dc2b",
-    "localChecksPassed": true,
-    "status": "Published and live verified",
-    "deployment": {
-      "id": 41758985535,
-      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41758985535",
-      "conclusion": "success",
-      "commit": "e1faa740927ddf67a80cdd4e2f02429ab946da5c",
-      "verifiedAt": "2026-11-04T02:14:54.228Z"
+    "archive": {
+      "items": 5010,
+      "fileRecords": 8629,
+      "presentFileRecords": 8629,
+      "missingFileRecords": 0
     },
-    "live": {
-      "core": "docs/qa/root-live-verification.json",
-      "preservedURLs": "docs/migration/public-http-verification.json",
-      "publicURLsVerified": 1553,
-      "failures": 0,
-      "presentationHashesVerified": true,
-      "immutableSenderAssetHTTP": 200
+    "senderVersion": "2.1.0+b1d198ce2219",
+    "nativeBehavior": {
+      "load": "Opens the selected installed title in the on-console native patch manager at fixed loopback port23900.",
+      "requiresInstalledEngineAndXML": true,
+      "download": "Saves the exact original selected title XML; this is not an installation acknowledgement.",
+      "automaticInstallationImplemented": false,
+      "reason": "The pinned native engine exposes game/settings pages but no browser upload, URL-import or package-install endpoint. PS4 elfldr has no supported public-browser HTTP launch route.",
+      "supportedFirmware": {
+        "ps4": "9.00–12.52",
+        "ps5": "3.00–12.70"
+      },
+      "trustedVisibleConsoleClickRequired": true,
+      "noDiscoveryOrBackgroundRequests": true,
+      "nativeCodeExecuted": false,
+      "physicalConsoleVerified": false
     }
   }
 }
