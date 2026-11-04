@@ -1,0 +1,29 @@
+'use strict';
+const icon=(name)=>{const shapes={back:'<path d="m14 6-6 6 6 6M8 12h12"/>',more:'<circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',connection:'<rect x="4" y="4" width="16" height="11" rx="2"/><path d="M9 20h6m-3-5v5"/>'};return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+shapes[name]+'</svg>';};
+function organize(markup,platform){
+ const base='/hosts/'+platform+'/',name=platform.toUpperCase();
+ const rows=[['?view=loaders','Choose firmware'],['?view=payloads','Payloads'],['?view=mods','Mods / Mod Menus'],['?view=tools','Tools'],['patches/','Game patches'],['files/','File manager'],['payload-manager/',name+' Payload Manager'],['/console/'+platform+'/downloads.html','Console downloads'],['?view=connection','Connection &amp; setup'],['?view=sender','Desktop sender · connect from a PC']];
+ if(platform==='ps4')rows.splice(4,0,['?view=goldhen','Goldhen PS4']);
+ const primaryCount=platform==='ps4'?6:5;
+ const anchors=items=>items.map(([href,label])=>`<a href="${href.startsWith('/')?href:base+href}" aria-label="${label}">${label}</a>`).join('');
+ const directory=`<header class="host-folder-heading"><div><p class="host-platform-label" translate="no">PLAYSTATION ${platform==='ps4'?'4':'5'}</p><div class="host-heading-line"><h1 id="host-folder-title">${name}</h1><span class="host-file-count" id="host-file-count" role="status"></span></div></div><a class="host-header-connection" aria-label="Connection &amp; setup" href="${base}?view=connection">${icon('connection')}<span>Connection &amp; setup</span></a><span id="host-folder-path" hidden></span></header><nav id="host-folder-directory" class="host-file-tabs" aria-label="${name} files"><div class="host-primary-tabs">${anchors(rows.slice(0,primaryCount))}</div><details class="host-utility-menu"><summary aria-label="More">${icon('more')}<span>More</span></summary><div>${anchors(rows.slice(primaryCount))}</div></details></nav><div id="host-file-firmware"></div>`;
+ let html=markup.replace('<section class="host-connect"','<section data-host-folder-panel="connection" hidden class="host-connect"');
+ html=html.replace('<div class="host-library-heading">','<section id="host-folder-library" hidden><div class="host-library-heading">');
+ html=html.replace('<details class="host-sender">','</section><section data-host-folder-panel="sender" hidden><details class="host-sender">');
+ const tail='</details>\n  <p class="host-note">Download uses';
+ if(!html.includes(tail))throw Error('Sender markup boundary changed');
+ html=html.replace(tail,'</details></section>\n  <p class="host-note">Download uses');
+ return directory+html+'<div id="host-support-overlay" class="host-support-overlay" role="dialog" aria-modal="true" aria-labelledby="host-support-title" hidden><section><header><h2 id="host-support-title">Requirements</h2><button id="host-support-close" type="button" aria-label="Close">'+icon('close')+'</button></header><h3 id="host-support-filename" translate="no"></h3><p id="host-support-facts" translate="no"></p><div class="host-support-body"><p id="host-support-text"></p></div><div id="host-support-links" class="host-support-links"></div></section></div>';
+}
+function shell(html){
+ const main=html.indexOf('<main class="main-content"');if(main<0)throw Error('Missing host main');
+ const open=html.match(/<body\b[^>]*>/)[0];
+ const platform=/hosts\/ps5\//.test(html.match(/<link rel="canonical"[^>]+>/)?.[0]||'')?'ps5':'ps4',base='/hosts/'+platform+'/';
+ const bar=`<nav class="host-taskbar" aria-label="Webhost taskbar"><a class="host-top-back" aria-label="Back" href="/hosts/">${icon('back')}<span>Back</span></a><a class="host-top-brand" aria-label="whatwhatboy / Hosts" href="/hosts/"><img src="/assets/images/logo.png" alt="" width="24" height="24"><span>whatwhatboy</span><span class="host-brand-slash">/</span><span>Hosts</span></a><div class="host-platform-switch"><a href="/hosts/ps4/"${platform==='ps4'?' aria-current="page"':''}>PS4</a><a href="/hosts/ps5/"${platform==='ps5'?' aria-current="page"':''}>PS5</a></div><a class="host-top-settings" href="${base}?view=connection" aria-label="Connection &amp; setup">${icon('connection')}</a></nav>`;
+ let result=html.slice(0,html.indexOf('<body'))+open.replace('host-dashboard-page','host-dashboard-page host-folder-page')+'<a class="skip-link" href="#main-content">Skip to content</a>'+bar+html.slice(main);
+ result=result.replace(/<header class="guide-hero">[\s\S]*?<\/header>/,'').replace(/<div class="container"><nav class="guide-nav"[\s\S]*?<\/nav><\/div>/,'');
+ result=result.replace(/<link rel="stylesheet" href="https:\/\/fonts.googleapis.com[^>]+>/,'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap">');
+ result=result.replace('</head>','<link rel="stylesheet" href="/assets/host-file-browser.css?v=1"></head>');
+ return result.replace('</body>','<script defer src="/assets/host-folders.js?v=4"></script></body>');
+}
+module.exports={organize,shell};

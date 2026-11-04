@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T06:13:58.226Z",
+  "method": "Read-only primary-source inspection and checksum comparison. No downloaded payload was executed.",
+  "kameleonCommit": "da9c138e47c52773aa9ab999cff69590c573667f",
+  "nazkyCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+  "referenceHost": {
+    "url": "https://es7in1.site/ps4/nazky/index.html#",
+    "status": "Direct browser/search access unavailable during research; upstream Nazky and Kameleon GitHub source used instead."
+  },
+  "sources": [
+    {
+      "id": "kameleon-readme",
+      "url": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/README.md",
+      "facts": [
+        "Host explicitly targets PS4 firmware 9.00."
+      ],
+      "httpStatus": 200,
+      "sha256": "c934b153860efd82f24546a6e0844b39346d19fd7389b21107747b1adeebad75",
+      "bytes": 85
+    },
+    {
+      "id": "kameleon-menu-dispatch",
+      "url": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+      "facts": [
+        "Each imported BZIP2 filename is mapped by a named menu function to the exact GTA V or RDR2 game update.",
+        "Upstream loadPayloadDataBz2 decompresses the binary before loading it. The site import performs only this decompression, never execution.",
+        "No regional CUSA list is supplied for these twelve menu builds."
+      ],
+      "httpStatus": 200,
+      "sha256": "da64d80381bcd1a5139b515846864108e05e5d4e3961c879c167d9f8d884de1b",
+      "bytes": 51401
+    },
+    {
+      "id": "nazky-http-transport",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "facts": [
+        "Requests /status with POST for 127.0.0.1, otherwise GET.",
+        "Requires parsed JSON status equal to ready.",
+        "POSTs the raw downloaded ArrayBuffer to http://PS4IP:9090, with no extra framing or explicit custom headers.",
+        "The upstream success callback checks HTTP status 200, not the body. Delivery acceptance does not prove game injection.",
+        "CORS policy is not established by the client source; browser transport must handle connection, mixed-content and CORS failures honestly."
+      ],
+      "httpStatus": 200,
+      "sha256": "0bd3f4d58601838642b726ce88ad79fdcd1bb27198737384554a12bfd5ddd42f",
+      "bytes": 9155
+    },
+    {
+      "id": "ps5-rdr2-release",
+      "url": "https://github.com/armanate/rdr2-60fps-runtime-patcher/releases/expanded_assets/v2.0",
+      "facts": [
+        "Published asset RedDead2.60FPS_v2.0.elf has upstream SHA-256 646ecb71e80415ab9d9c651539451d38ee0052a5997f7ef7504a42932c7f8261."
+      ],
+      "httpStatus": 200,
+      "sha256": "459f7f637bf7d540b77800909b93792f0c4567e73abad154eb9d4875df61f48a",
+      "bytes": 8585
+    },
+    {
+      "id": "ps5-rdr2-readme",
+      "url": "https://raw.githubusercontent.com/armanate/rdr2-60fps-runtime-patcher/v2.0/README.md",
+      "facts": [
+        "PS5 runtime patch for the PS4 RDR2 game at clean update 1.32.",
+        "Supported game title IDs are CUSA08519, CUSA03041 and CUSA08568.",
+        "Load the ELF before starting the game; wait for ready then start within 10 minutes.",
+        "Requires jailbroken PS5 and elfldr. No full validated PS5 firmware list is published; references to 8.40 and 13.60 are not treated as a universal support range."
+      ],
+      "httpStatus": 200,
+      "sha256": "15d6c73af34f2e6221c12ffbdabc5f7786d0d153e5ca80c10a34d426ac7fe83a",
+      "bytes": 5763
+    },
+    {
+      "id": "ps5-rdr2-license",
+      "url": "https://raw.githubusercontent.com/armanate/rdr2-60fps-runtime-patcher/v2.0/LICENSE",
+      "facts": [
+        "Upstream declares GPL redistribution terms and retains the original KurohaXR/Arman Jafari MIT notice plus ps5debug-NG GPL component notice.",
+        "Local metadata preserves the complete upstream LICENSE and README unchanged; catalog links corresponding tagged source."
+      ],
+      "httpStatus": 200,
+      "sha256": "a5832b15a0e6c23fb224927b9706a2e67ab8e22cbb5c2760c9b74c0be36e4f8f",
+      "bytes": 37826
+    },
+    {
+      "id": "ps5-elfldr-http-loader",
+      "url": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c",
+      "verifiedAt": "2026-11-02T06:24:00.672Z",
+      "verification": "Read-only inspection of official tagged source, payload_readhttp and on_connection.",
+      "facts": [
+        "HTTP GET port9021 accepts a uri parameter naming the console-reachable ELF URL.",
+        "The HTTP response declares Access-Control-Allow-Origin: *.",
+        "HTTP200 is written before uri_get_content downloads the ELF and before payload_spawn executes it, so request acceptance must not be labelled execution success.",
+        "Use the actual published or LAN hosting origin for native URL loading. A computer-only 127.0.0.1 source URL is not reachable from the PS5."
+      ]
+    }
+  ],
+  "binaryInspection": [
+    {
+      "id": "host-games-ps4-arabicguy-gta5-100",
+      "sha256": "0de5452601ca151ad3bb6c86c2fb97e2a0bac89b5ff77cf238638dd19bddd372",
+      "headerHex": "e9bb040000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-arabicguy-gta5-127",
+      "sha256": "4e49562a9cb6aefbdeb67cf5a9f20da8b93df90a0d05b9fd0914312b63d7f2d8",
+      "headerHex": "e98b040000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-arabicguy-gta5-132",
+      "sha256": "561306429ff1cadf261e2d67486a7d04ce525acf5e5a03a3867f5657f311bb79",
+      "headerHex": "e98b040000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-arabicguy-gta5-133",
+      "sha256": "617318304d6303272e5d6287f812e7c8a4c6cf99684c5664b5ec27a6704bc85b",
+      "headerHex": "e96b140000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-beefqueef-gta5-133",
+      "sha256": "d9df758cdd076aa360f997cfb598551cf0d69d9e5e2b4635b55bd7d23e33a211",
+      "headerHex": "e9eb040000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-lamance-gta5-138",
+      "sha256": "7c9985cae235bffd95092765a6f294d668ab8f0421344dbef6b6ddd1230b3745",
+      "headerHex": "e99b140000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-oysters-rdr2-100",
+      "sha256": "4c7ce16309f7d6164bab07238f6ca864e3b5744bceea3c9d63ed894b1cd31451",
+      "headerHex": "e96b520000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-oysters-rdr2-113",
+      "sha256": "44174737c965b5063e8257939d0a7320aab697bfdaaa1240a0c3dba90a0b144e",
+      "headerHex": "e96b520000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-oysters-rdr2-119",
+      "sha256": "100e0a0e1205c764001e3a9a37557bb4ab6e02841ae8493321313f4008e40981",
+      "headerHex": "e96b520000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-oysters-rdr2-124",
+      "sha256": "20648156363665c6fcfd0daf77b64c1827168b5b0c775919541d277f7f6d7a93",
+      "headerHex": "e96b520000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-oysters-rdr2-129",
+      "sha256": "d972ff1b73601069e1e18365d08a26637a33ce00ff0c5063aa03c1e221961aa1",
+      "headerHex": "e96b520000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    },
+    {
+      "id": "host-games-ps4-north-beta-rdr2-129",
+      "sha256": "5ab2f81616290b3f8c9705aaf127e6db8c006ff29da87c023c9c1ccdfb4db4eb",
+      "headerHex": "e9db160000662e0f1f84000000000090",
+      "titleIdsFoundInPrintableStrings": [],
+      "interpretation": "Raw PS4 payload BIN; not an ELF or a GoldHEN PRX plugin. Static byte inspection only; never executed."
+    }
+  ],
+  "limitations": [
+    "PS4 firmware pins describe the upstream 9.00 host; binaries were not hardware-tested in this workspace.",
+    "No PS4 BIN is presented as PS5 compatible.",
+    "NorthBeta011 filename is retained as upstream identity, not interpreted as a semantic menu version.",
+    "Unknown menu-specific licences are recorded as unknown; no open-source licence is invented."
+  ],
+  "nazkyBinaryCrossChecks": [
+    {
+      "id": "arabicguy-gta5-127",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin",
+      "status": 200,
+      "bytes": 1059520,
+      "sha256": "be9ee0dacc71e94d607584770c08cdc39c1319427e9fd83424fc19dd15782aa6",
+      "matchesPinnedKameleonBIN": false
+    },
+    {
+      "id": "arabicguy-gta5-132",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin",
+      "status": 200,
+      "bytes": 1059520,
+      "sha256": "7b9c1242b0c18c4e8ce43216518c09bb8550ad31328a3dc16185d8d2ee7f7b8b",
+      "matchesPinnedKameleonBIN": false
+    },
+    {
+      "id": "arabicguy-gta5-133",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin",
+      "status": 200,
+      "bytes": 1059520,
+      "sha256": "617318304d6303272e5d6287f812e7c8a4c6cf99684c5664b5ec27a6704bc85b",
+      "matchesPinnedKameleonBIN": true
+    },
+    {
+      "id": "beefqueef-gta5-133",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.33.bin",
+      "status": 200,
+      "bytes": 1073700,
+      "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+      "matchesPinnedKameleonBIN": false
+    },
+    {
+      "id": "oysters-rdr2-100",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin",
+      "status": 200,
+      "bytes": 1190392,
+      "sha256": "199b68feb24e1d202589b7ccb7b9ee28fdf3cab5546b41bd1263939ecedb7add",
+      "matchesPinnedKameleonBIN": false
+    },
+    {
+      "id": "oysters-rdr2-113",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin",
+      "status": 200,
+      "bytes": 1190392,
+      "sha256": "089f1c3144dffb35589a7fb36a05dd54f642c1eeef3873daa3b7f4ce965af06d",
+      "matchesPinnedKameleonBIN": false
+    },
+    {
+      "id": "oysters-rdr2-119",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin",
+      "status": 200,
+      "bytes": 1190392,
+      "sha256": "370b5bd2b4bace7a2dd51bd28f9b080b1e5221f3bd9e6dec64c5e72baa183254",
+      "matchesPinnedKameleonBIN": false
+    },
+    {
+      "id": "oysters-rdr2-124",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin",
+      "status": 200,
+      "bytes": 1190392,
+      "sha256": "58e2317dd8fe1cc44ce834a174ac06e566b34eb3709ce39e088f63aa51a5944a",
+      "matchesPinnedKameleonBIN": false
+    },
+    {
+      "id": "oysters-rdr2-129",
+      "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin",
+      "status": 200,
+      "bytes": 1260864,
+      "sha256": "424f9dbf4813cd55366d446d36d0dc84aa950025a6341a47d1ac0f5f8dbf6986",
+      "matchesPinnedKameleonBIN": false
+    }
+  ]
+}

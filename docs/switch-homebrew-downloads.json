@@ -1,0 +1,4261 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02T07:09:04.106Z",
+  "method": "Selected store ZIPs and pinned official NROs. ZIP paths, CRC and NRO headers inspected; builds never executed.",
+  "mirror": {
+    "scope": "downloads/nintendo-switch only; older public collections preserved",
+    "budgetBytes": 402653184,
+    "maximumFileBytes": 99614720,
+    "currentBytes": 291633596,
+    "strategy": "Publish standalone NROs when dependencies permit; publish intact SD bundles otherwise. Original containers always preserved in the F: archive."
+  },
+  "apps": [
+    {
+      "id": "appstore",
+      "title": "Homebrew App Store",
+      "version": "2.3.2",
+      "checkedAt": "2026-11-02T07:05:39.915Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/appstore.zip",
+      "package": {
+        "name": "appstore-sd-package.zip",
+        "bytes": 7786002,
+        "sha256": "a4d3e0872dc4b207ea5aa3c3e0f6f829bf2008d7cd19f7868f8e2f69d6f3bca4",
+        "source": "https://switch.cdn.fortheusers.org/zips/appstore.zip",
+        "version": "2.3.2",
+        "local": "/downloads/nintendo-switch/appstore/2.3.2/appstore-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 101,
+          "sha256": "52140092efa8f3389fca824c8ebd409204989a7e8d1e573f9dd86304db282d13",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 3285,
+          "sha256": "751a40eb5bb6f7d3b049043daf7c0284315d640d25bcdfd5cbf51b82ca391019",
+          "directory": false
+        },
+        {
+          "path": "switch/appstore/appstore.nro",
+          "bytes": 11104808,
+          "sha256": "de1ab28c4c142cafd45fb4bfef9ce560122d8aec063f5947982c759e3691e978",
+          "directory": false
+        },
+        {
+          "path": "switch/appstore/background.mp3",
+          "bytes": 2949574,
+          "sha256": "b6f2449795f5807002ec0f9c4063d8194cd99ba57c6afd4cc30ea3de63a47ae3",
+          "directory": false
+        },
+        {
+          "path": "switch/appstore/.get/repos.json",
+          "bytes": 112,
+          "sha256": "966fb12b25cb0050198d33c90e7f535c4e4651251810166309f588d40a0bb43f",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/appstore/appstore.nro"
+      ],
+      "requiresBundle": true,
+      "officialNro": {
+        "name": "appstore.nro",
+        "bytes": 11104808,
+        "sha256": "de1ab28c4c142cafd45fb4bfef9ce560122d8aec063f5947982c759e3691e978",
+        "source": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/appstore.nro",
+        "version": "2.3.2",
+        "local": "/downloads/nintendo-switch/appstore/2.3.2/appstore.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "hbmenu",
+      "title": "Homebrew Menu",
+      "version": "3.6.1",
+      "checkedAt": "2026-11-02T07:05:40.797Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/hbmenu.zip",
+      "package": {
+        "name": "hbmenu-sd-package.zip",
+        "bytes": 1249133,
+        "sha256": "f2618e1471a6a41b3e880a27d3930cf8164ea7f3afa20466fdc9e6a4e503479a",
+        "source": "https://switch.cdn.fortheusers.org/zips/hbmenu.zip",
+        "version": "3.6.1",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "hbmenu.nro",
+          "bytes": 2455539,
+          "sha256": "6cf6d130515723ebe0041c2479420caf9726895087439ff7b2e528c2ed39c100",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 803,
+          "sha256": "3cfb8cdde807b0af2bae1dd01011556eab3941924121a876e74e62048e4fee2c",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 14,
+          "sha256": "3924e2e228f136a8091dc5b68cf4d06b34cf3370a9ba06cc08d74cab7c01c6b4",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "hbmenu.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "hbmenu.nro",
+        "bytes": 2455539,
+        "sha256": "6cf6d130515723ebe0041c2479420caf9726895087439ff7b2e528c2ed39c100",
+        "source": "https://switch.cdn.fortheusers.org/zips/hbmenu.zip",
+        "version": "3.6.1",
+        "local": "/downloads/nintendo-switch/hbmenu/3.6.1/hbmenu.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "f2618e1471a6a41b3e880a27d3930cf8164ea7f3afa20466fdc9e6a4e503479a",
+          "member": "hbmenu.nro"
+        }
+      },
+      "installPath": "hbmenu.nro",
+      "status": "downloaded"
+    },
+    {
+      "id": "jksv",
+      "title": "JKSV",
+      "version": "12/02/2025",
+      "checkedAt": "2026-11-02T07:05:41.153Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/jksv.zip",
+      "package": {
+        "name": "jksv-sd-package.zip",
+        "bytes": 4472291,
+        "sha256": "c7881a6464d87b223755c8f992578855f5a3a86008267b4f250cbd4a836cf0ce",
+        "source": "https://switch.cdn.fortheusers.org/zips/jksv.zip",
+        "version": "12/02/2025",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/JKSV/JKSV.nro",
+          "bytes": 10130471,
+          "sha256": "a2b7f6372a4b81f3c3194aa6f96f2824bdea853b9a8ebf8c4a008d0d865a0cbf",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 17111,
+          "sha256": "f6c3edfa12aa131747a0ab1e109b794e606e8f56b922a9a5f142af1d5b45e805",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 24,
+          "sha256": "9342d8d3dd4a2e027624f94b440222a5405f29b789efeee1e3906dc6099523b9",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/JKSV/JKSV.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "JKSV.nro",
+        "bytes": 10130471,
+        "sha256": "a2b7f6372a4b81f3c3194aa6f96f2824bdea853b9a8ebf8c4a008d0d865a0cbf",
+        "source": "https://switch.cdn.fortheusers.org/zips/jksv.zip",
+        "version": "12/02/2025",
+        "local": "/downloads/nintendo-switch/jksv/12_02_2025/JKSV.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "c7881a6464d87b223755c8f992578855f5a3a86008267b4f250cbd4a836cf0ce",
+          "member": "switch/JKSV/JKSV.nro"
+        }
+      },
+      "installPath": "switch/JKSV/JKSV.nro",
+      "officialNro": {
+        "name": "JKSV.nro",
+        "bytes": 10130471,
+        "sha256": "a2b7f6372a4b81f3c3194aa6f96f2824bdea853b9a8ebf8c4a008d0d865a0cbf",
+        "source": "https://github.com/J-D-K/JKSV/releases/download/12/02/2025/JKSV.nro",
+        "version": "12/02/2025",
+        "local": "/downloads/nintendo-switch/jksv/12_02_2025/JKSV.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "Checkpoint",
+      "title": "Checkpoint",
+      "version": "5.3.0",
+      "checkedAt": "2026-11-02T07:05:43.613Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Checkpoint.zip",
+      "package": {
+        "name": "Checkpoint-sd-package.zip",
+        "bytes": 2440172,
+        "sha256": "a0714c655a13f67de0f17c3a4a7112b66d4def2f58b05839b5900823702ad4e1",
+        "source": "https://switch.cdn.fortheusers.org/zips/Checkpoint.zip",
+        "version": "5.3.0",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/Checkpoint/Checkpoint.nro",
+          "bytes": 5047633,
+          "sha256": "e2c76687df29f845f11a61a62a25327703b22250d4a78dbdbed6dd1401253e48",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 38307,
+          "sha256": "5558c5c1d9e7a95fe758e25d9857e19fc873028ae26abc0504d0b4d54f1c6522",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 36,
+          "sha256": "01bcfc877833ae7711adee22585cd0aae6ff93e549a8f52e3f269eefdd90efbe",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/Checkpoint/Checkpoint.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "Checkpoint.nro",
+        "bytes": 5047633,
+        "sha256": "e2c76687df29f845f11a61a62a25327703b22250d4a78dbdbed6dd1401253e48",
+        "source": "https://switch.cdn.fortheusers.org/zips/Checkpoint.zip",
+        "version": "5.3.0",
+        "local": "/downloads/nintendo-switch/Checkpoint/5.3.0/Checkpoint.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "a0714c655a13f67de0f17c3a4a7112b66d4def2f58b05839b5900823702ad4e1",
+          "member": "switch/Checkpoint/Checkpoint.nro"
+        }
+      },
+      "installPath": "switch/Checkpoint/Checkpoint.nro",
+      "officialNro": {
+        "name": "Checkpoint.nro",
+        "bytes": 5047633,
+        "sha256": "e2c76687df29f845f11a61a62a25327703b22250d4a78dbdbed6dd1401253e48",
+        "source": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.nro",
+        "version": "5.3.0",
+        "local": "/downloads/nintendo-switch/Checkpoint/5.3.0/Checkpoint.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "ftpd",
+      "title": "ftpd",
+      "version": "3.2.1",
+      "checkedAt": "2026-11-02T07:05:45.765Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/ftpd.zip",
+      "package": {
+        "name": "ftpd-sd-package.zip",
+        "bytes": 1011008,
+        "sha256": "9ea5f2397b57ac294cefc4b7e8abc3f881c23adf62060b35300ab0f1f47e92df",
+        "source": "https://switch.cdn.fortheusers.org/zips/ftpd.zip",
+        "version": "3.2.1",
+        "local": "/downloads/nintendo-switch/ftpd/3.2.1/ftpd-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 64,
+          "sha256": "59ccf6121310a72abe23cbbe919dad849483d61633d5677474c8e23a4c845417",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1997,
+          "sha256": "9ad836b8d056bbe498d7015ad761cbdd45eb0232ad5ec5ef78738cf695876852",
+          "directory": false
+        },
+        {
+          "path": "switch/ftpd-classic/ftpd-classic.nro",
+          "bytes": 519311,
+          "sha256": "aac80757163aea4b8919d403e98ab88a3190c9347fec4182dbcf9905ba64cbba",
+          "directory": false
+        },
+        {
+          "path": "switch/ftpd/ftpd.nro",
+          "bytes": 1501247,
+          "sha256": "9817da81d4b1ccfbb206c9e2f425e25c0f5e0051b7a44d8556a78ee522391977",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/ftpd-classic/ftpd-classic.nro",
+        "switch/ftpd/ftpd.nro"
+      ],
+      "requiresBundle": true,
+      "officialNro": {
+        "name": "ftpd.nro",
+        "bytes": 1533963,
+        "sha256": "cc8b2b335ccbe1bf1215a29c4ef3698effc879d3ddde2c6c0de505d14bc39c90",
+        "source": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.nro",
+        "version": "3.2.1",
+        "local": "/downloads/nintendo-switch/ftpd/3.2.1/ftpd.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "ftpsrv",
+      "title": "ftpsrv",
+      "version": "1.2.2",
+      "checkedAt": "2026-11-02T07:05:46.109Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/ftpsrv.zip",
+      "package": {
+        "name": "ftpsrv-sd-package.zip",
+        "bytes": 446946,
+        "sha256": "23caf41817fd0c76395623fa0611610793010a9485633e004d4b7dd29a98d2e1",
+        "source": "https://switch.cdn.fortheusers.org/zips/ftpsrv.zip",
+        "version": "1.2.2",
+        "local": "/downloads/nintendo-switch/ftpsrv/1.2.2/ftpsrv-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/ftpsrv.nro",
+          "bytes": 895173,
+          "sha256": "39ee3a2bf3a2140a33c004ebd735f89c201b5c8067f7bff5500a7ee46a8bab99",
+          "directory": false
+        },
+        {
+          "path": "config/ftpsrv/config.ini",
+          "bytes": 1739,
+          "sha256": "cb33f3dcfc4d91132c2c7b9fe8a5fabd218b828587d7bdd49f3a043e19dafa35",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 436,
+          "sha256": "d042313a4ecb37037c0c46d4bf9cd6b02a1daaf22ff98e8646bedd0b5e99bf3b",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 49,
+          "sha256": "570f313bed73a18972f614444387da670c49222e26ab15b14b88ea054a7ce02c",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/ftpsrv.nro"
+      ],
+      "requiresBundle": true,
+      "status": "downloaded"
+    },
+    {
+      "id": "NX-shell",
+      "title": "NX-Shell",
+      "version": "4.01",
+      "checkedAt": "2026-11-02T07:05:46.380Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/NX-shell.zip",
+      "package": {
+        "name": "NX-shell-sd-package.zip",
+        "bytes": 3614714,
+        "sha256": "d76d646bd70d9e10a39ef92c3f825f4f4f499d5d3263e26a1e02ac20b65cc578",
+        "source": "https://switch.cdn.fortheusers.org/zips/NX-shell.zip",
+        "version": "4.01",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 32,
+          "sha256": "6abb56ee4981f2d03980ba9dc7e12d3ba3b65cb5d487f7b9e5537dd487e94c12",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 10276,
+          "sha256": "32fed20452d2b7423d2659fc02e82b822e86fc93ea18b01ea65a00cdb8ea35f1",
+          "directory": false
+        },
+        {
+          "path": "switch/NX-Shell/NX-Shell.nro",
+          "bytes": 8575621,
+          "sha256": "5aafd64efde89c0881cdbd865a1b2b054e20329d43e0bce0e1b77378977f5878",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/NX-Shell/NX-Shell.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "NX-Shell.nro",
+        "bytes": 8575621,
+        "sha256": "5aafd64efde89c0881cdbd865a1b2b054e20329d43e0bce0e1b77378977f5878",
+        "source": "https://switch.cdn.fortheusers.org/zips/NX-shell.zip",
+        "version": "4.01",
+        "local": "/downloads/nintendo-switch/NX-shell/4.01/NX-Shell.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "d76d646bd70d9e10a39ef92c3f825f4f4f499d5d3263e26a1e02ac20b65cc578",
+          "member": "switch/NX-Shell/NX-Shell.nro"
+        }
+      },
+      "installPath": "switch/NX-Shell/NX-Shell.nro",
+      "officialNro": {
+        "name": "NX-Shell.nro",
+        "bytes": 8575621,
+        "sha256": "5aafd64efde89c0881cdbd865a1b2b054e20329d43e0bce0e1b77378977f5878",
+        "source": "https://github.com/joel16/NX-Shell/releases/download/4.01/NX-Shell.nro",
+        "version": "4.01",
+        "local": "/downloads/nintendo-switch/NX-shell/4.01/NX-Shell.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "NXMP",
+      "title": "NXMP",
+      "version": "0.9.3",
+      "checkedAt": "2026-11-02T07:05:48.542Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/NXMP.zip",
+      "package": {
+        "name": "NXMP-sd-package.zip",
+        "bytes": 45564568,
+        "sha256": "9d9dbc1bc58ed08eeafa88fa67d61632c58195ddd17d0f37526a9d90ce1e1853",
+        "source": "https://switch.cdn.fortheusers.org/zips/NXMP.zip",
+        "version": "0.9.3",
+        "local": "/downloads/nintendo-switch/NXMP/0.9.3/NXMP-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/nxmp/nxmp.nro",
+          "bytes": 66688940,
+          "sha256": "00c598444c285d8b658fd001403141da2617d979d9a037577eabf37e43568665",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/mpv/subfont.ttf",
+          "bytes": 6244952,
+          "sha256": "350444a3ecb564f4640ea02598c86a31601c94641941d1947e48626c732f2b1d",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-fr.json",
+          "bytes": 2772,
+          "sha256": "26c0cacac3ebe3551848deecde328065fb4882efe26609dd3535b84f764bf776",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-jp.json",
+          "bytes": 3265,
+          "sha256": "d3d446a09d81ce319b233fdecb8f43cee9c05887f292bff97eb4960fc8a49533",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-ro.json",
+          "bytes": 2740,
+          "sha256": "31f7b60237f7c86329d84e9d87fc892791a947cd0b5b3d44794c1447fe54682c",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-de.json",
+          "bytes": 2355,
+          "sha256": "e67399bf3b3a5b880bf6e67adc3c36286e7fa6039fa3d006d5c82ea8f1f0871e",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-ru.json",
+          "bytes": 3653,
+          "sha256": "71730df16d465992a48392906a97ac94e04fc1c8c44316e3068cef7ebfea53b9",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-es.json",
+          "bytes": 2513,
+          "sha256": "22000012984f3c0c693a06326bb82f1ed12cd241bd7622870bd3141b91457744",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-ko.json",
+          "bytes": 2490,
+          "sha256": "acedd794dc84ed37170b0ede53cac314ec8caaa6ae417bdaebe4e6ed8b59036e",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-cn-s.json",
+          "bytes": 2196,
+          "sha256": "e458377347e8a933d30a79a90982faf64b68f09b91e36f7116e78898c3ce93e5",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/langs/nxmp-pt_br.json",
+          "bytes": 2815,
+          "sha256": "434e58459c72701664ad860fa080ecd0de7dfa6860902b3ed9c09f6aa446d957",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/config.ini",
+          "bytes": 769,
+          "sha256": "a242369c7f172ca15d3cc4673a9490d527bf0f4a00d357c50eec030dcdb35302",
+          "directory": false
+        },
+        {
+          "path": "switch/nxmp/eqpresets.ini",
+          "bytes": 608,
+          "sha256": "41e55597178f245159ca819a2d68838ccd574281566560e431dfa305e12ac6b0",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2096,
+          "sha256": "b4ba3a954a3e58acd2f71f8daa8c4b2fbd00d533711bf9d071d04707ae229683",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 421,
+          "sha256": "8c7b681de86c7d6cb5324eaa0a09285da0d789f7acfe3839301e8720acf6d24f",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/nxmp/nxmp.nro"
+      ],
+      "requiresBundle": true,
+      "status": "downloaded"
+    },
+    {
+      "id": "Moonlight-Switch",
+      "title": "Moonlight-Switch",
+      "version": "1.5.0",
+      "checkedAt": "2026-11-02T07:05:50.521Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Moonlight-Switch.zip",
+      "package": {
+        "name": "Moonlight-Switch-sd-package.zip",
+        "bytes": 8836707,
+        "sha256": "a1468c68c5334ed1df69e817706d666ed3bfcee0f2f6e4172e862966bd2a5ba9",
+        "source": "https://switch.cdn.fortheusers.org/zips/Moonlight-Switch.zip",
+        "version": "1.5.0",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/Moonlight-Switch/Moonlight-Switch.nro",
+          "bytes": 17677907,
+          "sha256": "594167a17b587d3bf828ea3477afbe71c114b4ef5d25940ea4ca831788d0af69",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 3121,
+          "sha256": "929125daa163c44f97a42f41c4f65db6981a6d54c64f4aabe015ca1b0d31bfd7",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 48,
+          "sha256": "1c3346105c2c9fa0df23f5fbad8981d029d3ec351261d9cf430b36cae24a9e9c",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/Moonlight-Switch/Moonlight-Switch.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "Moonlight-Switch.nro",
+        "bytes": 17677907,
+        "sha256": "594167a17b587d3bf828ea3477afbe71c114b4ef5d25940ea4ca831788d0af69",
+        "source": "https://switch.cdn.fortheusers.org/zips/Moonlight-Switch.zip",
+        "version": "1.5.0",
+        "local": "/downloads/nintendo-switch/Moonlight-Switch/1.5.0/Moonlight-Switch.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "a1468c68c5334ed1df69e817706d666ed3bfcee0f2f6e4172e862966bd2a5ba9",
+          "member": "switch/Moonlight-Switch/Moonlight-Switch.nro"
+        }
+      },
+      "installPath": "switch/Moonlight-Switch/Moonlight-Switch.nro",
+      "officialNro": {
+        "name": "Moonlight-Switch.nro",
+        "bytes": 17677907,
+        "sha256": "594167a17b587d3bf828ea3477afbe71c114b4ef5d25940ea4ca831788d0af69",
+        "source": "https://github.com/XITRIX/Moonlight-Switch/releases/download/v1.5.0/Moonlight-Switch.nro",
+        "version": "1.5.0",
+        "local": "/downloads/nintendo-switch/Moonlight-Switch/1.5.0/Moonlight-Switch.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "switchident-GUI",
+      "title": "SwitchIdent",
+      "version": "0.5",
+      "checkedAt": "2026-11-02T07:05:54.515Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/switchident-GUI.zip",
+      "package": {
+        "name": "switchident-GUI-sd-package.zip",
+        "bytes": 3694357,
+        "sha256": "1a03fbc4b3eb99f859d3bb53d07dfa86709dcf52aa558cb557b78ba31784332a",
+        "source": "https://switch.cdn.fortheusers.org/zips/switchident-GUI.zip",
+        "version": "0.5",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 42,
+          "sha256": "3e12a4a49a558e3042d9fdb8f8444239d8931b8d0bcca754486773f27115d914",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2963,
+          "sha256": "1096ab446e0242a46688b44bda698bb7ba06be5368525b9dda0c7932bc9ef755",
+          "directory": false
+        },
+        {
+          "path": "switch/switchident-GUI/SwitchIdent.nro",
+          "bytes": 8963995,
+          "sha256": "1f092b58256586d009219f88a22a943846d56e7eac49a9e8774e4366b87e833b",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/switchident-GUI/SwitchIdent.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "SwitchIdent.nro",
+        "bytes": 8963995,
+        "sha256": "1f092b58256586d009219f88a22a943846d56e7eac49a9e8774e4366b87e833b",
+        "source": "https://switch.cdn.fortheusers.org/zips/switchident-GUI.zip",
+        "version": "0.5",
+        "local": "/downloads/nintendo-switch/switchident-GUI/0.5/SwitchIdent.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "1a03fbc4b3eb99f859d3bb53d07dfa86709dcf52aa558cb557b78ba31784332a",
+          "member": "switch/switchident-GUI/SwitchIdent.nro"
+        }
+      },
+      "installPath": "switch/switchident-GUI/SwitchIdent.nro",
+      "officialNro": {
+        "name": "SwitchIdent.nro",
+        "bytes": 8963995,
+        "sha256": "1f092b58256586d009219f88a22a943846d56e7eac49a9e8774e4366b87e833b",
+        "source": "https://github.com/joel16/SwitchIdent/releases/download/0.5/SwitchIdent.nro",
+        "version": "0.5",
+        "local": "/downloads/nintendo-switch/switchident-GUI/0.5/SwitchIdent.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "Switch_90DNS_Tester",
+      "title": "Switch 90DNS tester",
+      "version": "1.0.4",
+      "checkedAt": "2026-11-02T07:05:56.941Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Switch_90DNS_Tester.zip",
+      "package": {
+        "name": "Switch_90DNS_Tester-sd-package.zip",
+        "bytes": 150484,
+        "sha256": "296d3e8f4f36aee5337001a42cb9fa6dba6fe5f82d4684c72c6ab2dce5eab27e",
+        "source": "https://switch.cdn.fortheusers.org/zips/Switch_90DNS_Tester.zip",
+        "version": "1.0.4",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 54,
+          "sha256": "9e5ecaa05e1bbc392b8dcd1e4cfe760fef659909c4b7bb301ea06d97ecd816d9",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1063,
+          "sha256": "df8fd306e247f1f5d2d9d004ad1e1eb2240857ba619b1e6aad868cc1533c4a1b",
+          "directory": false
+        },
+        {
+          "path": "switch/Switch_90DNS_Tester/Switch_90DNS_tester.nro",
+          "bytes": 321486,
+          "sha256": "27db5352c32bd2a149274ef278130cff0c30dd4d9c7003836f0a874a134886d2",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/Switch_90DNS_Tester/Switch_90DNS_tester.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "Switch_90DNS_tester.nro",
+        "bytes": 321486,
+        "sha256": "27db5352c32bd2a149274ef278130cff0c30dd4d9c7003836f0a874a134886d2",
+        "source": "https://switch.cdn.fortheusers.org/zips/Switch_90DNS_Tester.zip",
+        "version": "1.0.4",
+        "local": "/downloads/nintendo-switch/Switch_90DNS_Tester/1.0.4/Switch_90DNS_tester.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "296d3e8f4f36aee5337001a42cb9fa6dba6fe5f82d4684c72c6ab2dce5eab27e",
+          "member": "switch/Switch_90DNS_Tester/Switch_90DNS_tester.nro"
+        }
+      },
+      "installPath": "switch/Switch_90DNS_Tester/Switch_90DNS_tester.nro",
+      "status": "downloaded"
+    },
+    {
+      "id": "OpenSupaplex",
+      "title": "OpenSupaplex",
+      "version": "7.2.2",
+      "checkedAt": "2026-11-02T07:05:57.176Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/OpenSupaplex.zip",
+      "package": {
+        "name": "OpenSupaplex-sd-package.zip",
+        "bytes": 7227648,
+        "sha256": "3cd849233c6ddc0c2f2f6f2f12d83eaabe98c7cb617ec48fb1b43168419989a1",
+        "source": "https://switch.cdn.fortheusers.org/zips/OpenSupaplex.zip",
+        "version": "7.2.2",
+        "local": "/downloads/nintendo-switch/OpenSupaplex/7.2.2/OpenSupaplex-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D32",
+          "bytes": 170496,
+          "sha256": "dc704110b3987b450a9aca6f84eec578622b48773da3fc9c4961c723346bbd88",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/MENU.DAT",
+          "bytes": 32000,
+          "sha256": "1c74bbaf8a99be83dba16b26440c9bba5ffc3190af3abb205753394c4e9b9002",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/TITLE1.DAT",
+          "bytes": 32000,
+          "sha256": "f0399b52cc39b1afc38987fcf81699ba07dcc8370d100bc17fe216c50f9e45a1",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L79",
+          "bytes": 3108,
+          "sha256": "03a1a9b9470c15012cc2eae8dbcbd1aeff5cd61b8478ec3441e67f0ec823fe2c",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS12.TXT",
+          "bytes": 278,
+          "sha256": "89611f982e976b7065675d5016e2338e711da01c952884031e8d2e357c4c33b1",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO2.BIN",
+          "bytes": 326,
+          "sha256": "0bf228b8be253a3be15b6c7187236ae69f2953d0af0201a4c38f27f4ff7ddcf9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L11",
+          "bytes": 3108,
+          "sha256": "1575a95316325309003f2acf326732a41235be57dadf4f91b811f8b28ab2801d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D01",
+          "bytes": 170496,
+          "sha256": "450b7fcc379959896a6d881bce016296ca9a27a434ca6714b96781e28f15f841",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D09",
+          "bytes": 170496,
+          "sha256": "9b809032506a113876075c3910719b384d3ccd24bfe2a0d5a3130f3b0b3cc6d8",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS11.TXT",
+          "bytes": 553,
+          "sha256": "6d4531973877b3107e57c0e77944bfa18906cd466fcc13fd978dcdc3593f6a66",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D05",
+          "bytes": 170496,
+          "sha256": "c352265174ce9a6f9c487c4d7a3bf9e670319e1fed598776c7e5c6d8caa676c6",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L02",
+          "bytes": 3108,
+          "sha256": "5ef40b23da6596563d9e4f3263182ab080379f6dcafe1512f68f8c1643439cfb",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS06.TXT",
+          "bytes": 227,
+          "sha256": "71827b994d4c223864f318b3fed4d5f85ca6963f8bb6f2beead04dd41dd86610",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS05.TXT",
+          "bytes": 254,
+          "sha256": "077890d4232f0903e1886d1138b8e3579d1848f7e162f96811d5a178d8a4479d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L03",
+          "bytes": 3108,
+          "sha256": "ccef17650ffd812c978b6504699bd034772541d46b6b3d3d5f8deeda8816ef01",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D35",
+          "bytes": 170496,
+          "sha256": "fe3cc37fa888a41af42a57d47ca675d89d7e6e97d963405df43e503f6d0725c8",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS92.TXT",
+          "bytes": 3357,
+          "sha256": "5ac6e3d34c1ee3d9d48dfb17ec38d428d4a712cd9b63bedb7873efe3266b6947",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/CHARS8.DAT",
+          "bytes": 512,
+          "sha256": "80f48aad089f42dab793802bddf5cbbf46eebd12923e6600cb5ab30e5e0bf997",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D97",
+          "bytes": 170496,
+          "sha256": "207325295d2c210ddf8e51666248c9bcd0d046b934c970015b51a62e59b8e9e4",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO7.BIN",
+          "bytes": 507,
+          "sha256": "9ee8d525f4a33ebf5b5d17a18cb01af9e87fd3043552e3438e25de5566d16cc9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L36",
+          "bytes": 3108,
+          "sha256": "8ae0f61712e5695db301f900f671df4f3d80bf3bbd510f883aca04c43c2dafd8",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS04.TXT",
+          "bytes": 254,
+          "sha256": "e1bcb60d727b5f84a245d60226b2c1feca4a691da91754491c892c147b406176",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L27",
+          "bytes": 3108,
+          "sha256": "920578133a86ca6044210f9a39aa43bff89d5449b1cd379b8a43c48192d28852",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.DAT",
+          "bytes": 170496,
+          "sha256": "f41f3ad35b3eca845baceb1e11db61f185b45b38deefb39f67ef6c3dfc33fbb0",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS10.TXT",
+          "bytes": 433,
+          "sha256": "618abf8d4f80fbce8eb19a8bd007fb7c201eb22eea6ce83c62c3fd001eb847da",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS09.TXT",
+          "bytes": 1118,
+          "sha256": "592de3b5165b395dffdcbf470e55005a23d8012151bebd84d4e0051baa594d6d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO3.BIN",
+          "bytes": 205,
+          "sha256": "d686bf6bebc7caf6ebc37b88bcc1dcb6e8c0c608fec038df2c0fbab0a6129b6c",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.LST",
+          "bytes": 3108,
+          "sha256": "02433076f2c92f3bb5a48a7e47cde3fe4cfc7822eb2c1b3dd34b3c151aef5cf9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS24.TXT",
+          "bytes": 640,
+          "sha256": "a5547cb3b033c6a6869ebdc615d5e0d05d20d6f04e1f37a37fe70081a84ea36e",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L08",
+          "bytes": 3108,
+          "sha256": "e17a99694c8320090a22e99d136db2d344d544ca31d4496440dd6bbcbab8186f",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L32",
+          "bytes": 3108,
+          "sha256": "36deb9556e58a402f4665e4dfe610f51aaa71e06c088ebbbdbd66164285a8d3e",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/CHARS6.DAT",
+          "bytes": 512,
+          "sha256": "e2a68424f31b21b38ce3ff4ed3a16f993878bd5411c9298f8ab199c44c3cbb74",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D03",
+          "bytes": 170496,
+          "sha256": "9ae721292b040e07e43317305028840dbb31e4c41fce4c10433694ab58a93513",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D98",
+          "bytes": 170496,
+          "sha256": "4015461d67ab912e0674be2a7a145051707c745e286652fae0644d67b9463603",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L92",
+          "bytes": 3108,
+          "sha256": "372082dccda16eb5b48c1523e8fc2b1bf218be6111b79b7eb16c58cef21cd51d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS35.TXT",
+          "bytes": 254,
+          "sha256": "d855d15426e9b9a3c03a28b6b6f2dd38771acfb8c83cf05e17918c0cb46dd8bd",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L12",
+          "bytes": 3108,
+          "sha256": "7919f85cf8ce7e01418f7f14162989e8361eaa24a11f5ecd3399ae4045d2a145",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/TITLE.DAT",
+          "bytes": 32001,
+          "sha256": "a389ea7af181d55d8080406c9d3a24b72b7ffb9c109e13134b58e85dea94f476",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L35",
+          "bytes": 3108,
+          "sha256": "2b1fee339fb79b7b25348e42d07692efde427d2cdf865bb2119ebf311df0f19f",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D07",
+          "bytes": 170496,
+          "sha256": "dc68abcecbf8c8d4264f5f119a05de9ad384e3e70f4ee4527cce35b11653d587",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L93",
+          "bytes": 3108,
+          "sha256": "541e0f6e907402e80e811785f4cf60ece10d4a4cb4f0e73090ac753965d5291e",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D11",
+          "bytes": 170496,
+          "sha256": "d9f8398adea7b040628cc163858a562a65c2c8ed73425f01fc3b36e05cc95ba7",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS94.TXT",
+          "bytes": 444,
+          "sha256": "253b9517513cbb4b1750b3d6ae332947cccad89119a6aaccc5db5a6232b65046",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D77",
+          "bytes": 170496,
+          "sha256": "8f82aca15505d131e2e850b8826d0f1d098f948fa363ff6bc71e8193cec285d9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/README.TXT",
+          "bytes": 14071,
+          "sha256": "a81a1f5c562129c5c94832505c8721b053b5d229a098e85dfa35fbb23b15f6d5",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D08",
+          "bytes": 170496,
+          "sha256": "9c795bb899fa89c553f5f92dbcb31e2fdd2cc45344b5c6ea5ce9ad860b257fc9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L01",
+          "bytes": 3108,
+          "sha256": "b4c3f991ba570bc23497ccb9943b2a0f04604c7e65fe027332299a179d57e7fd",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO1.BIN",
+          "bytes": 362,
+          "sha256": "9ec37f1e70b894ec8f1ad09173f4e4daba64167f54914af5ce2389ce462da726",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS36.TXT",
+          "bytes": 293,
+          "sha256": "ad711fd2f4d38eb289af72a3ceaf6fc58f56642eb05a9b0bb3812e208199ff30",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L78",
+          "bytes": 3108,
+          "sha256": "01e480b51353bb879b643d1a48e4748cf4643269c565763f6df0be9836e7dccc",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D27",
+          "bytes": 170496,
+          "sha256": "df6c55c89a50b9dfe1a68915630811a6b592b096a832c258144edd8386ff1cfc",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L04",
+          "bytes": 3108,
+          "sha256": "3f1765deccf93f077d60d1a2f90b1196b5b17155d6950ad4f2feb79838d6f9b9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO0.BIN",
+          "bytes": 206,
+          "sha256": "b2485f462f2d1b73f098aed0342606c29243f352dce3a28056f4fc03dcca8247",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/MOVING.DAT",
+          "bytes": 73920,
+          "sha256": "959b3ea9366421d9404a357abb1e8410959e02fade6b8a853350c0aa35b5b679",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D95",
+          "bytes": 170496,
+          "sha256": "ce129fe6c7ac43a90444f5fd49ba7efa881854203c257d2b5cbd5f62bb11f518",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D06",
+          "bytes": 170496,
+          "sha256": "c2c41115a9b30b76ec57d9788ce907596cebf92ee4df9ca865ffb0fca8b828e9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS79.TXT",
+          "bytes": 5469,
+          "sha256": "861e2856acdabd4d1a2c9de914ea831c7a39b688f1cad08946e13e23b9695bb9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L95",
+          "bytes": 3108,
+          "sha256": "b142c04b5457e0ff201afb862d803ee5479ce3eefc61f8c5f1af17067d9b1025",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/MYSPSIG.TXT",
+          "bytes": 1362,
+          "sha256": "d6a9474578943a4dcb35c93843fa0ab5bfdfe18eec3b00a459f240bf184254c7",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS32.TXT",
+          "bytes": 617,
+          "sha256": "3b2bbc0891987ec7400a0ad8fb6080eab886085e36af46613b609d048e1ea396",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L94",
+          "bytes": 3108,
+          "sha256": "8333bbe8516d535489af301e45a72eee1483dc6d63294049000f1ea647dbef5b",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS96.TXT",
+          "bytes": 561,
+          "sha256": "7ce56a49737183654794b7edcfc0f1679e48ec890aa620d27110819c4262ecac",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPFIX63.DOC",
+          "bytes": 164095,
+          "sha256": "beb7b7768eae438bcb45be0e980d90473ffc0d726a081eb7ee511d3324966807",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D78",
+          "bytes": 170496,
+          "sha256": "c9111731af378b6d897c370a6133d7c01d827832a10a9cd560052e7b391b1cd6",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D04",
+          "bytes": 170496,
+          "sha256": "d6d0e7e0ebc6f200cbbc801798f5cfa2f8b61d5ff30afa98902b06fce45671fd",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS08.TXT",
+          "bytes": 2108,
+          "sha256": "0750abdaadbdc9802f90d7b6da2e053459edbc483b82fc6bbfe5188331e78ee0",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D12",
+          "bytes": 170496,
+          "sha256": "d83906be3d52d1bc2ad022925f2c3e8806e640e9b50f6cc40b4de6edfd2ba3f1",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS95.TXT",
+          "bytes": 3243,
+          "sha256": "ba8c87acd03a0f120b15daded150d1d1db7d6846f29ab7d46b0a9b08e0b2b700",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D94",
+          "bytes": 170496,
+          "sha256": "e554a3e8b6ecfa759e2056a9a865afbb5b57297c7e701b4ab17560f9a81aaade",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS97.TXT",
+          "bytes": 4016,
+          "sha256": "3a54c6b81ed8a19d1d329ce2b02188d1e6eb8938ad32f787f76b15681cf37e62",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS98.TXT",
+          "bytes": 14609,
+          "sha256": "a6835e72fc95ebad0098bfefb206dc84c25a490bf2cbf4415ea7dbc0c4216235",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO8.BIN",
+          "bytes": 466,
+          "sha256": "771f371fa69937cba35e79967d5379720c15a431dff3a4e2a965d2f2d5b8748b",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/GFX.DAT",
+          "bytes": 32001,
+          "sha256": "2eaf2f24f4a269d3b81307ec60cd1da6b9751f12d3c39396ecfc66d70d790cdc",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/FIXED.DAT",
+          "bytes": 5120,
+          "sha256": "ba9781a4809690b86248cf08f18e953ae6ec6bcc487f33d21fbca28f0ba845d4",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS77.TXT",
+          "bytes": 336,
+          "sha256": "58a503706f11eb8bbe45b9ef643b60894db0e79ac1ec0956d107b51bdfd11f2d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO9.BIN",
+          "bytes": 765,
+          "sha256": "fbdf92ffc749ceb77ecfeb851a107da8eedf53383b18c1e701c4362fc4214f2f",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D79",
+          "bytes": 170496,
+          "sha256": "92e5636cf783ae3d6310ebfb121581a271fe0f8d71341002106b420f293f4d58",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L97",
+          "bytes": 3108,
+          "sha256": "2e1593d04e01809183b87f3019c63cafd2be94513a6c4a2a02e1891ec4f4699a",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS01.TXT",
+          "bytes": 2446,
+          "sha256": "468828a15c9c7c7669a78984a80f3e8e98ce1df9b259bf91834d67727c46b135",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS03.TXT",
+          "bytes": 2220,
+          "sha256": "04db145472cfe1ef26e571c28356c3da2e7427a3350aeebdcbf8b3b2c78d2755",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/CONTROLS.DAT",
+          "bytes": 32001,
+          "sha256": "ece4bfb377f834d3c9cadb609065f277dcc9f2bbfa5df1697395b77cb497f46e",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D93",
+          "bytes": 171936,
+          "sha256": "8b144c751e7eb70dc034bdd47bca5dd5c4e9bdce5ae7b0d12bed40380c2576b8",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/BACK.DAT",
+          "bytes": 32000,
+          "sha256": "200b1118e798b50aa36962467d214ba595475118c82affe447f132cd90db72ef",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L05",
+          "bytes": 3108,
+          "sha256": "0e03790686ba8b705007e783aca93f86e0f7b7b013bae8e08be786670f698231",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS27.TXT",
+          "bytes": 1048,
+          "sha256": "110d04393d4e2d43bd05294ddd1e66552399ec39d7988e3fc1a43056f82b9251",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L24",
+          "bytes": 3108,
+          "sha256": "3008d310d649aae2884056ed6c7e2a5e82ff7e351ac3375b6c29535f9f8460da",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/PALETTES.DAT",
+          "bytes": 256,
+          "sha256": "ce4eb1f9d70cd667c65651b69aa7e18493ae41f80ef0a41f0fc639003394a94c",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D36",
+          "bytes": 170496,
+          "sha256": "4642e992c225d1cf72cd520cd798aab77379a6c5768f41e5687672a7305ab933",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/TITLE2.DAT",
+          "bytes": 32000,
+          "sha256": "ecfa231090b10fcbf5d1ad2e51365d80daae38b154d1575b4ff6b833ea1b2689",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO4.BIN",
+          "bytes": 589,
+          "sha256": "1d8f491fba5360482b95feee6fc89f07f20f8cafd36f9f6104b9ee86f90e35e2",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/OpenSupaplex.nro",
+          "bytes": 8012252,
+          "sha256": "009c441bf9fdced10de5cf7ca9f1c6691910014e2ae6a5db3b2caa9a56b0e819",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D02",
+          "bytes": 170496,
+          "sha256": "a14d2331bf4de0906b3f2fc6a47ef5901013864dfb18cf0cff085be8f0a48ed6",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L77",
+          "bytes": 3108,
+          "sha256": "cc2f4e66b7b78b65b5b0566d8320671a6188c95bbf0775da0f4a023fc7287f1d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/PANEL.DAT",
+          "bytes": 3840,
+          "sha256": "c235f859e68f8b56780e082b2c0a1a65b281584ab5b5fc3c363a711a0c351a8f",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS07.TXT",
+          "bytes": 1685,
+          "sha256": "b33948a4de8df373fb8b9c52d112de1abebf462125d4ef7e1414ec57d5714a8b",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D92",
+          "bytes": 170496,
+          "sha256": "518a2afaefef209c65d351b2475e27060efdadb56de454d54cb79b1a8c70e595",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L07",
+          "bytes": 3108,
+          "sha256": "6948aa912bf9e4a526be2793fc9e3fb6c0f8707c68cc9f98ddd15514ce0f4075",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L98",
+          "bytes": 3108,
+          "sha256": "fee2ad72bff85833c52c73d2499b823d2a86faf93602e141a9e1d04781401335",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO5.BIN",
+          "bytes": 300,
+          "sha256": "7190c83dd0323cf2805f05269f6c110b1225b638350cc8798304889743e8c88a",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L09",
+          "bytes": 3108,
+          "sha256": "ca18ea668fe0d094a67d072c5073439445ae22a10bcaba875c9197414f879f7d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D96",
+          "bytes": 170496,
+          "sha256": "16710899418374c9e74838fd0522d49e78c16e416712c853ce1789505e03d609",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D10",
+          "bytes": 170496,
+          "sha256": "9952553f5451f35528da0990070a29fc21234bad410bee51217c43ac1caade6f",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L10",
+          "bytes": 3108,
+          "sha256": "15039090b484ade25cd2474e926b069321e1489ee3b52e5a8b1755b43a6009ac",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L06",
+          "bytes": 3108,
+          "sha256": "a4d94e1f02e66b84a716c2bed674f81b2bb2568bf8bb9367347999ed4ef29f4b",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVELS.D24",
+          "bytes": 170496,
+          "sha256": "10d72867f2dce4ca5c7c7e67b545d3665ab10a7f1738f7bf67c0c9c93b5adee6",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/DEMO6.BIN",
+          "bytes": 423,
+          "sha256": "97ca7d2f63d9b44a57c5e39db18af19ba7fc1d1d4efb9a5ccf6d2b15e27d7f74",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/LEVEL.L96",
+          "bytes": 3108,
+          "sha256": "02433076f2c92f3bb5a48a7e47cde3fe4cfc7822eb2c1b3dd34b3c151aef5cf9",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS93.TXT",
+          "bytes": 1612,
+          "sha256": "692c6232a8c1cab23ae572ed68e671c6e581d4cdc318b46f23f5b7acbb031bdb",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS02.TXT",
+          "bytes": 2363,
+          "sha256": "e9b068047bcd7076a2fec4142eee07d37571a6c81d55014776807711dd8d0e6e",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/SPLVLS78.TXT",
+          "bytes": 1372,
+          "sha256": "10d330e3ff906f90f445b3df87d585a895c6ebcea4acf3302c1df541ecdc9d8b",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/push-adlib.wav",
+          "bytes": 11606,
+          "sha256": "04dd2d4ed75cebb884ce2e565023ae55e4ab8274b4122ca8a3000c86899aec59",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/fall-sample.wav",
+          "bytes": 21456,
+          "sha256": "1cc3a87ca758f4e1a41caf98a4594b361b0ca79da398feabd552901932d3befc",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/music-beep.xm",
+          "bytes": 7593,
+          "sha256": "8518be5f318b5c2cb8b708ef36084846c8ea346519000b46d3f549994783d10a",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/infotron-blaster.wav",
+          "bytes": 41122,
+          "sha256": "5a92131e24662f5c91e2f752db501062420728da1bf3319edb26b6c094332e1b",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/base-roland.wav",
+          "bytes": 9948,
+          "sha256": "1e2ee464b037b51fba9636e38da7d4391a3c03e5d2942623cf274c64afc84548",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/infotron-sample.wav",
+          "bytes": 40578,
+          "sha256": "28ec7eb1af3d52440e0e98b0a980df637131e711ef4891d912ad854590b712da",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/exit-roland.wav",
+          "bytes": 399364,
+          "sha256": "a47b0f6b03d2250751a2a88868bbc942b7660ba9305210c2ef6ff5217ce8ff61",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/exit-sample.wav",
+          "bytes": 157784,
+          "sha256": "e991b74466916591289e323771598353fe9a19e7a4cd1ae43af344579aafeefc",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/exit-blaster.wav",
+          "bytes": 158378,
+          "sha256": "ee6d4c8640e247ac0b885f2d53cc40169973b7dc494412f54f086b9f857abcd5",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/bug-beep.wav",
+          "bytes": 21172,
+          "sha256": "4a62698f8701a2d7deb311b00f6ed452ac1fe428a1b73ac132d295a4122410ef",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/music-adlib.xm",
+          "bytes": 402130,
+          "sha256": "c8fb69efca8900dbf9958feeb72e488c05e6ae6c2fcd341f01fdd0a3265b4eca",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/bug-sample.wav",
+          "bytes": 19730,
+          "sha256": "9cfda979639375da81c6570f1200e3788e951f53313865ee606cd80e10931654",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/fall-blaster.wav",
+          "bytes": 22170,
+          "sha256": "fa97fbdae2e8c4dee3f25e8f8d9345a32f8025967be9cb2d3fd04063b1aec944",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/bug-blaster.wav",
+          "bytes": 21052,
+          "sha256": "3330ff3f31bc8915ae7f735764dded90980bf5adb9ed2b542d5ba1e29c397abf",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/explosion-sample.wav",
+          "bytes": 116318,
+          "sha256": "c3dca1259b7994f8779cfb12fe998e734940289bcab507e3a1e18b2ea6ce4e48",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/base-adlib.wav",
+          "bytes": 9508,
+          "sha256": "ac735b076e038652bffccecafe88f9a07de176ab016c5aa46c15a28e215e8009",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/explosion-adlib.wav",
+          "bytes": 141576,
+          "sha256": "fbc664b7643d3bdd93279aca6fa81a9be130bb25fa4cd347349b93a694068a02",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/explosion-roland.wav",
+          "bytes": 529256,
+          "sha256": "88f72c0ab152c63175056d665351e7b03d75718e3b9ea1aa059cab2cdac0a5cd",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/bug-roland.wav",
+          "bytes": 26176,
+          "sha256": "8b38f04d449fd1fc4ac99631cd7ff7cc595cfd4028851cd35787208b17ae84c2",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/infotron-roland.wav",
+          "bytes": 107942,
+          "sha256": "00defe7e4ada45ff3c7423b501d69a935540f816d8202d74243376deebf0f5ec",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/push-beep.wav",
+          "bytes": 10734,
+          "sha256": "11199ea58416970dad57dcd71dc16d0b625045d9c2118f401f10bb7b7f3d95ab",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/base-sample.wav",
+          "bytes": 1172,
+          "sha256": "758584d2c89853694f26c6f8c670db61d84ce60057432754a0812e51fe0c3a82",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/infotron-adlib.wav",
+          "bytes": 64650,
+          "sha256": "73f470f6e70e00d9351035b663b84047615a37f0671867c9296f47d1161ab053",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/fall-beep.wav",
+          "bytes": 19372,
+          "sha256": "8d46fe05b3de0ee8319ddb4c5a1d95ebba48d1bd2de474cd179c4efa705519f1",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/explosion-beep.wav",
+          "bytes": 86394,
+          "sha256": "7716cdd49238e2f546fce206e8a6e7172614727daec972285f010cf2053b6c54",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/bug-adlib.wav",
+          "bytes": 20566,
+          "sha256": "bb5dbf50f02a3cf994314a6685a77730b6bd89905d895b12a874623f678cb097",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/infotron-beep.wav",
+          "bytes": 16730,
+          "sha256": "3d44dfcbea094ea315f281ff5b879ea65e2d2513f6d6ac57cacd09b98facf42f",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/base-blaster.wav",
+          "bytes": 998,
+          "sha256": "0c2e083a8d9a67d350e63d8323623c9d7b8f0e1cff44b04ec89020dd97226f81",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/base-beep.wav",
+          "bytes": 2134,
+          "sha256": "dbdaf5021255817e97b001b5455ea2894bf5300bf0f76eb29e42bf86a80e7aa6",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/push-roland.wav",
+          "bytes": 49476,
+          "sha256": "b77b429a8e79d7e2affb4c5d635bd3367d7b216b19986399700f79a800fdd64e",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/fall-roland.wav",
+          "bytes": 70732,
+          "sha256": "7347bda32330a5d3c5ab2240d884fceb9cde970c4e975ee47305661b253f04bc",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/explosion-blaster.wav",
+          "bytes": 117676,
+          "sha256": "d2961705dbfcd98cd00aac594f9d09cffa829daf4569c5efbb3a7271b9e32cc2",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/push-sample.wav",
+          "bytes": 18836,
+          "sha256": "0f9ed556011abe13a0bb01a74b2fd50b47bee1e9d9af911d13fc907a6e00682b",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/exit-beep.wav",
+          "bytes": 147220,
+          "sha256": "80b4664df0da830db422a4fa662004b2e0076d1d5de3440a19b3da6143a9638d",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/music-roland.xm",
+          "bytes": 433204,
+          "sha256": "fe65ddd6976c4039a318f30f23df24bb19617c4835851c112360dd3a1ced063c",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/fall-adlib.wav",
+          "bytes": 17084,
+          "sha256": "bcff6aab34015bd47410ce5fd323ab21a92d8b75767a2357e81018fdbb9469a5",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/exit-adlib.wav",
+          "bytes": 239202,
+          "sha256": "e7ddcfa091a0ffb84e218f24200fe3d2dbe60c07a42b173346215eff017c26c5",
+          "directory": false
+        },
+        {
+          "path": "switch/OpenSupaplex/audio/push-blaster.wav",
+          "bytes": 19776,
+          "sha256": "a0bc0a1f963067ca897b349483512df9314a30d82218289f24a8511ba6cc8ae5",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 3195,
+          "sha256": "4db54a16ffdb7af1ec8133b52a18f0ece6e6393782bf839688601b79c5fd0f21",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 5491,
+          "sha256": "cbea2e0d940b1801d5b53b701afc364fd6019b2705131305cf70a5ce2af85499",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/OpenSupaplex/OpenSupaplex.nro"
+      ],
+      "requiresBundle": true,
+      "status": "downloaded"
+    },
+    {
+      "id": "2048",
+      "title": "2048",
+      "version": "1.2.0",
+      "checkedAt": "2026-11-02T07:05:57.710Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/2048.zip",
+      "package": {
+        "name": "2048-sd-package.zip",
+        "bytes": 3365486,
+        "sha256": "8082021738dd9fce8ef6604eb9967649d3da7e79324e6afeeb208ec53e952e2c",
+        "source": "https://switch.cdn.fortheusers.org/zips/2048.zip",
+        "version": "1.2.0",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/2048.nro",
+          "bytes": 7817135,
+          "sha256": "51f6588000d899c58faadc4443f9550f4e4bcc93719fabb3dc0537ec11037ff5",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 658,
+          "sha256": "b2f2a41077c67bed0275d8d98322522eecc3708fa67f602867d215d61b7bdc13",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 19,
+          "sha256": "121b549d89ece85b7f5b70b9bc3f8015aaea5577c6b58245341475c76a5b5f34",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/2048.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "2048.nro",
+        "bytes": 7817135,
+        "sha256": "51f6588000d899c58faadc4443f9550f4e4bcc93719fabb3dc0537ec11037ff5",
+        "source": "https://switch.cdn.fortheusers.org/zips/2048.zip",
+        "version": "1.2.0",
+        "local": "/downloads/nintendo-switch/2048/1.2.0/2048.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "8082021738dd9fce8ef6604eb9967649d3da7e79324e6afeeb208ec53e952e2c",
+          "member": "switch/2048.nro"
+        }
+      },
+      "installPath": "switch/2048.nro",
+      "officialNro": {
+        "name": "2048.nro",
+        "bytes": 7817135,
+        "sha256": "51f6588000d899c58faadc4443f9550f4e4bcc93719fabb3dc0537ec11037ff5",
+        "source": "https://github.com/TooTallNate/switch-2048/releases/download/v1.2.0/2048.nro",
+        "version": "1.2.0",
+        "local": "/downloads/nintendo-switch/2048/1.2.0/2048.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "SuDokuL",
+      "title": "SuDokuL",
+      "version": "1.5",
+      "checkedAt": "2026-11-02T07:06:02.143Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/SuDokuL.zip",
+      "package": {
+        "name": "SuDokuL-sd-package.zip",
+        "bytes": 5433623,
+        "sha256": "e6ab197e23bcb3db79947f400acc729a49d4b6ccca886be2160c1ad57bbeb245",
+        "source": "https://switch.cdn.fortheusers.org/zips/SuDokuL.zip",
+        "version": "1.5",
+        "local": "/downloads/nintendo-switch/SuDokuL/1.5/SuDokuL-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/SuDokuL/SuDokuL.nro",
+          "bytes": 11859054,
+          "sha256": "e02a43720751dadde37710625561abbdc39a1fa5dd91f39dbfa1e5c35edaa3c3",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 5404,
+          "sha256": "cd98341d40c9cd05e17acbe629c8689ef25debed34e287289f97423db246affb",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 30,
+          "sha256": "b427b8099322f873728ddbfdfc82b32975bd1e59a1be013cb81b25bd9b881d3f",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/SuDokuL/SuDokuL.nro"
+      ],
+      "requiresBundle": true,
+      "status": "downloaded"
+    },
+    {
+      "id": "mGBA",
+      "title": "mGBA",
+      "version": "0.10.5",
+      "checkedAt": "2026-11-02T07:06:02.704Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/mGBA.zip",
+      "package": {
+        "name": "mGBA-sd-package.zip",
+        "bytes": 2990112,
+        "sha256": "20be0f72699415c2b25036833863ae1c9221be72371511bd186b28ae11214f55",
+        "source": "https://switch.cdn.fortheusers.org/zips/mGBA.zip",
+        "version": "0.10.5",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/mgba.nro",
+          "bytes": 7956467,
+          "sha256": "00607daffe2d6df20dafff5936eeec1c19e77328471abce76992edc33626ca28",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2257,
+          "sha256": "696e4ee4e9226cabd6f191c2278d7e9bd81b929effaced342078a1d8b2ea4e5f",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 19,
+          "sha256": "3047808a52eec51b38f1074dd681f707b7fde022e47dffdb38f961ea46474077",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/mgba.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "mgba.nro",
+        "bytes": 7956467,
+        "sha256": "00607daffe2d6df20dafff5936eeec1c19e77328471abce76992edc33626ca28",
+        "source": "https://switch.cdn.fortheusers.org/zips/mGBA.zip",
+        "version": "0.10.5",
+        "local": "/downloads/nintendo-switch/mGBA/0.10.5/mgba.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "20be0f72699415c2b25036833863ae1c9221be72371511bd186b28ae11214f55",
+          "member": "switch/mgba.nro"
+        }
+      },
+      "installPath": "switch/mgba.nro",
+      "officialBundle": {
+        "name": "mGBA-0.10.5-switch.7z",
+        "bytes": 2211306,
+        "sha256": "ef7a7f5cea6d6639c8a12ebb282d915e444bf844b658ff5a4dd72886c8cfa016",
+        "source": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-switch.7z",
+        "version": "0.10.5",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "official-bundle",
+        "inspected": "7-Zip member listing; no files executed or extracted"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "melonDS",
+      "title": "melonDS",
+      "version": "7.2.1",
+      "checkedAt": "2026-11-02T07:06:15.910Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/melonDS.zip",
+      "package": {
+        "name": "melonDS-sd-package.zip",
+        "bytes": 1389241,
+        "sha256": "a7a30f699d6f930800c5df9be3a150e0c0eafacfece836f1444c99134850d7c2",
+        "source": "https://switch.cdn.fortheusers.org/zips/melonDS.zip",
+        "version": "7.2.1",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/melonds/melonDS.nro",
+          "bytes": 3252598,
+          "sha256": "aa358df9261f8a7f160060fbaaf8b39c4b1d0a43cb72b608334f32c4cf8aef42",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1568,
+          "sha256": "d957d0ef79219aca53ab99303a479f74d6716d3bdbe01e77a67edd197ac9991a",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 30,
+          "sha256": "4941ea38df492f123940f66d3056d7603d41cb093654b5fa49cf518f09558584",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/melonds/melonDS.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "melonDS.nro",
+        "bytes": 3252598,
+        "sha256": "aa358df9261f8a7f160060fbaaf8b39c4b1d0a43cb72b608334f32c4cf8aef42",
+        "source": "https://switch.cdn.fortheusers.org/zips/melonDS.zip",
+        "version": "7.2.1",
+        "local": "/downloads/nintendo-switch/melonDS/7.2.1/melonDS.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "a7a30f699d6f930800c5df9be3a150e0c0eafacfece836f1444c99134850d7c2",
+          "member": "switch/melonds/melonDS.nro"
+        }
+      },
+      "installPath": "switch/melonds/melonDS.nro",
+      "officialNro": {
+        "name": "melonDS.nro",
+        "bytes": 3252598,
+        "sha256": "aa358df9261f8a7f160060fbaaf8b39c4b1d0a43cb72b608334f32c4cf8aef42",
+        "source": "https://github.com/ArcDelta/melonDS/releases/download/7.2.1/melonDS.nro",
+        "version": "7.2.1",
+        "local": "/downloads/nintendo-switch/melonDS/7.2.1/melonDS.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "pNES",
+      "title": "pNES",
+      "version": "7.2",
+      "checkedAt": "2026-11-02T07:06:26.639Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/pNES.zip",
+      "package": {
+        "name": "pNES-sd-package.zip",
+        "bytes": 14989033,
+        "sha256": "610c2941b64c231959dc0ad968bbba029b0fc3e3664c06f06c2821c4e4f7cd81",
+        "source": "https://switch.cdn.fortheusers.org/zips/pNES.zip",
+        "version": "7.2",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/pnes/pnes.nro",
+          "bytes": 32694687,
+          "sha256": "6f640a7d3c740229247fadf81b2700b951ad76c24ca940b77eceb5f3f9cdbe9f",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1784,
+          "sha256": "7370fde1bad1cd5b3409e6d96c1c8bb6dd660d7e3b5f006da6bbfa42f9978ad9",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 24,
+          "sha256": "bf3d182b3de5c61960afe426c54bd13934530c7cf8e21a0f9d5abe385816d95c",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/pnes/pnes.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "pnes.nro",
+        "bytes": 32694687,
+        "sha256": "6f640a7d3c740229247fadf81b2700b951ad76c24ca940b77eceb5f3f9cdbe9f",
+        "source": "https://switch.cdn.fortheusers.org/zips/pNES.zip",
+        "version": "7.2",
+        "local": "/downloads/nintendo-switch/pNES/7.2/pnes.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "610c2941b64c231959dc0ad968bbba029b0fc3e3664c06f06c2821c4e4f7cd81",
+          "member": "switch/pnes/pnes.nro"
+        }
+      },
+      "installPath": "switch/pnes/pnes.nro",
+      "officialNro": {
+        "name": "pnes.nro",
+        "bytes": 32694687,
+        "sha256": "6f640a7d3c740229247fadf81b2700b951ad76c24ca940b77eceb5f3f9cdbe9f",
+        "source": "https://github.com/Cpasjuste/pemu/releases/download/v7.2/pnes.nro",
+        "version": "7.2",
+        "local": "/downloads/nintendo-switch/pNES/7.2/pnes.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "psnes",
+      "title": "pSNES",
+      "version": "7.2",
+      "checkedAt": "2026-11-02T07:06:41.948Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/psnes.zip",
+      "package": {
+        "name": "psnes-sd-package.zip",
+        "bytes": 14858460,
+        "sha256": "2986e7ed26c8adaa729e9341fe22469fe8e8496b7c8407c40b3e4833d6011391",
+        "source": "https://switch.cdn.fortheusers.org/zips/psnes.zip",
+        "version": "7.2",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/psnes/psnes.nro",
+          "bytes": 32052730,
+          "sha256": "3343eb76f45498961cb53968451c35b20fb0ec7962060723dcad485cff6633e4",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2138,
+          "sha256": "b15ab5efc1df83a3a796e07fe5146a18457f5284cdd57e8eadaf521002efd47c",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 26,
+          "sha256": "f2ca6edd88979a82c3e1f48c62e4e137f42c7651ffef1b6c9ea041950efc8e58",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/psnes/psnes.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "psnes.nro",
+        "bytes": 32052730,
+        "sha256": "3343eb76f45498961cb53968451c35b20fb0ec7962060723dcad485cff6633e4",
+        "source": "https://switch.cdn.fortheusers.org/zips/psnes.zip",
+        "version": "7.2",
+        "local": "/downloads/nintendo-switch/psnes/7.2/psnes.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "2986e7ed26c8adaa729e9341fe22469fe8e8496b7c8407c40b3e4833d6011391",
+          "member": "switch/psnes/psnes.nro"
+        }
+      },
+      "installPath": "switch/psnes/psnes.nro",
+      "officialNro": {
+        "name": "psnes.nro",
+        "bytes": 32052730,
+        "sha256": "3343eb76f45498961cb53968451c35b20fb0ec7962060723dcad485cff6633e4",
+        "source": "https://github.com/Cpasjuste/pemu/releases/download/v7.2/psnes.nro",
+        "version": "7.2",
+        "local": "/downloads/nintendo-switch/psnes/7.2/psnes.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "ppsspp",
+      "title": "PPSSPP Standalone",
+      "version": "1.17.x (Sept 9, 2024)",
+      "checkedAt": "2026-11-02T07:06:51.486Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/ppsspp.zip",
+      "package": {
+        "name": "ppsspp-sd-package.zip",
+        "bytes": 20226510,
+        "sha256": "9296552c26d96c61f04d2aaf12f06f867cf59172b3748c1a4a97367c6361903f",
+        "source": "https://switch.cdn.fortheusers.org/zips/ppsspp.zip",
+        "version": "1.17.x (Sept 9, 2024)",
+        "local": "/downloads/nintendo-switch/ppsspp/1.17.x (Sept 9, 2024)/ppsspp-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 20110,
+          "sha256": "6c17a34fd9e0219be8bf9d979ce597b289e0695b1fb2b574fadf092b49316ce6",
+          "directory": false
+        },
+        {
+          "path": "README.txt",
+          "bytes": 4643,
+          "sha256": "f7a977b6c49b074f8c4f096f2361565143b3e0ac88093a4306bd09562cac6ce1",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/PPSSPP_GL.nro",
+          "bytes": 22001196,
+          "sha256": "b27c0925f1a1ef87a470256ff208b9d549e67ebdb47c131822facbc191ab7f21",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/sfx_toggle_off.wav",
+          "bytes": 34148,
+          "sha256": "5d3c60e5fd12658ffc562f14331b7d0c962b818bee4a38aa9c928d2f08fb4f6b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/logo.png",
+          "bytes": 5681,
+          "sha256": "9f986d0fc639cd6fa3720013802da47479360659c5d27549ba67dc7451a0d1fb",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/zip.png",
+          "bytes": 6351,
+          "sha256": "61abad4c2d06dfe23e601421246f04897417f508ebabdf30c71a29654c1f68f6",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/sfx_leaderbord_submitted.wav",
+          "bytes": 94726,
+          "sha256": "61e780e220798f49d15e6d9eb85634a6e21f05765ed2a7aec682e196f4edda7d",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/icon_regular_72.png",
+          "bytes": 5994,
+          "sha256": "a7c8fd7f99c116dc954ab4b6d3d35a1b9a587c8e69f78c868c49f64af74ca0e9",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/unknown.png",
+          "bytes": 2371,
+          "sha256": "e6ab63db006a438781222ab8c5b1d287877d07c17ae9f48f57046fe770421704",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/rargray.png",
+          "bytes": 9205,
+          "sha256": "61266b34412befcfcb2124b0106ec6e3be6b20bbb62358461aadea329cfe0118",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/sfx_achievement_unlocked.wav",
+          "bytes": 81690,
+          "sha256": "c95f53b1279684c8db5f2b518a63675db3713b3c097c65fd2ff280baf29ffd34",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/ppge_atlas.meta",
+          "bytes": 50242,
+          "sha256": "2eadb18c05d8f492b46c23bcbad4f4811c98cf717145536ccfe136787845f2ed",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/font_atlas.meta",
+          "bytes": 54676,
+          "sha256": "26a173366b420596279d69894384387e4867e66be73cedd1ee5cda5ec96a31fa",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/asciifont_atlas.meta",
+          "bytes": 7115,
+          "sha256": "92ab3d61d17e6fa2111a80bd75d89cc241f2a85461d0f3e58198f84adcf35c9c",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/gamecontrollerdb.txt",
+          "bytes": 543291,
+          "sha256": "964c8aa6f76a43ebd0c13bf8cf6ce119f15ad0a01d2662e09fb83959b27ce30c",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/sfx_confirm.wav",
+          "bytes": 45268,
+          "sha256": "c2fdb1d1e6e677883f13eb866a1d83b8f67cc94f00aec21163612f61afefb693",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/sfx_back.wav",
+          "bytes": 32420,
+          "sha256": "8e6550b975a34511788dbeaacae47c9be6c89c967052c12342c6cc32f5650e4c",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/sfx_toggle_on.wav",
+          "bytes": 38348,
+          "sha256": "f56b389dde4da2ad6f65f3ac136c3d9c1a681aa76c3ca531e984410b261b4810",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/7z.png",
+          "bytes": 5980,
+          "sha256": "f6b885ce1ec15c73dd044027164598aa9a78be22c7a9f5f1325ae618434c177a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/ui_atlas.meta",
+          "bytes": 1670,
+          "sha256": "d48b922fde83c3a0489d60ce42595fa23b0b661e697d636eba1787ef84ea9d46",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/ppge_atlas.zim",
+          "bytes": 666530,
+          "sha256": "3ab7fcf6956d0281ada94d501fc6d1cfa8fc034f139e25fed6c829f723d92a95",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/ui_atlas.zim",
+          "bytes": 72624,
+          "sha256": "b0f2e6b88ee204b3a9a4fc3554052331bcf32558a2db0bd1e8eed44bd0f139bd",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/asciifont_atlas.zim",
+          "bytes": 82980,
+          "sha256": "1020b3cc03eced719dceec715b547f849b5594c4b7085143eab50ed3e3d87afc",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/Roboto-Condensed.ttf",
+          "bytes": 175044,
+          "sha256": "970370587f57f5fc54ea830d71b0d1dad31cdd0d9db35c68e099e45f39f28bee",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/langregion.ini",
+          "bytes": 1267,
+          "sha256": "6288e6b4189e94db82b62843af323897c77960baa63361391f17684ce3ee67e4",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/compat.ini",
+          "bytes": 40273,
+          "sha256": "2ab0a5a6d98a904a744668e9e39b0ea3fae83874138490483d9a9ec86bbbdb1b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/sfx_select.wav",
+          "bytes": 27724,
+          "sha256": "6d108dcae03c5a4ea04136b972c7c202b8b5013f4771791f0cb7348db0051dc1",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/font_atlas.zim",
+          "bytes": 1029864,
+          "sha256": "5929677cbfb28fd9040f6c16cf479d5ac54b205f5df180d100d3b1a210df0353",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/config/ppsspp/PSP/SYSTEM/controls.ini",
+          "bytes": 382,
+          "sha256": "3214304592f64400bbc434841121a24e4daac8651f842ebb4265f1fd4238788b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/dr_ID.ini",
+          "bytes": 54777,
+          "sha256": "d60e1e2f5cb7c7ce4d4cd78d22c6cba2f361233f37fab6140f512d5e58964d15",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/bg_BG.ini",
+          "bytes": 59481,
+          "sha256": "b0292ac81a63d2cab20a56f55d7f6f5a58745495ccf27839e05e0d689ba4d142",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/tg_PH.ini",
+          "bytes": 61431,
+          "sha256": "dffd13e07cb2ab3a45c3974c73df2d47485aa983de65eec16d3b3e3e1661df77",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/tr_TR.ini",
+          "bytes": 60799,
+          "sha256": "50e6f810e4b0195d53e4e59349324e22005e79f4f8c785359ab68e47c434b2be",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/pt_PT.ini",
+          "bytes": 64689,
+          "sha256": "57fbcd2464f2ebf2fb869ca4157024659b52b6c7b37d27fadab6f6f9bdc20791",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/pl_PL.ini",
+          "bytes": 61534,
+          "sha256": "e0aa96fab56b8a1a8b0feb2eb6f3e8003918f6d877cfda2f7b8dabc2593636b5",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/hu_HU.ini",
+          "bytes": 60196,
+          "sha256": "99bd74b39af1f885c0bf0c8e738968f7f8ce028e6c24ee25441195fdb9d8d162",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ko_KR.ini",
+          "bytes": 63576,
+          "sha256": "39a6cf70e201325c516b2e56caf1caa523e0561feabf9cd1d003eff91f993f72",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/zh_CN.ini",
+          "bytes": 55622,
+          "sha256": "270da08e04552292655be7052660a279c6ab2cd21eeefcb88ce09140caba92f0",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/lo_LA.ini",
+          "bytes": 75078,
+          "sha256": "b260718881370e960f07fcb6faebe4a42b43f89866f9b018f8dd51777d476d9f",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/sv_SE.ini",
+          "bytes": 55735,
+          "sha256": "ce84cc923c387dd7f6ff4d1962c3218f325cc81d6402da3a4032f86e64615264",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/da_DK.ini",
+          "bytes": 55431,
+          "sha256": "71e6dae23f7ed07a9f1c608362a46c52f965611785ef9bd11f5fe7ef70ecedb1",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/gr_EL.ini",
+          "bytes": 75336,
+          "sha256": "e7bdeecbc62aa041faadf6d132afd4f9d5892348b457fbdc95e3120b24dd8a55",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/zh_TW.ini",
+          "bytes": 54862,
+          "sha256": "825e551b44ffd96039eb4d9585dee2979172107e2dd99883b1fbe3200f35576a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/uk_UA.ini",
+          "bytes": 73754,
+          "sha256": "ec0f31044b405f45293e9c1a64e4cab05587e4938c202ceb773babdedec9920e",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/hr_HR.ini",
+          "bytes": 56830,
+          "sha256": "37009ffbdab59c03fc0c19ec0b5acb7c2a749b59c4d5863a4c2f2a0b58adb4bf",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/es_ES.ini",
+          "bytes": 59930,
+          "sha256": "91fc8342370dbdcf74e6c0c5deb1cd4edd84ad5fc7a6eba5158c2d8c805de7c0",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/th_TH.ini",
+          "bytes": 117124,
+          "sha256": "de20b3be24fdab547aafb07bc77e0eec939e0b8fbed1c4b1b0811ef54e7807d5",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ja_JP.ini",
+          "bytes": 71398,
+          "sha256": "a7d58366ed6ad71dd0670f39d3556fe215199b64af24bf47e3c5a0177fec8441",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/cz_CZ.ini",
+          "bytes": 57380,
+          "sha256": "16f4771577f07910e0c0ccbfea71a54903767a63d23a1ed7cffeb5b8570d88b3",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/nl_NL.ini",
+          "bytes": 57257,
+          "sha256": "c766a8a4eaedbbf3b800f52127d3139b1288c9038206c790ed2446cffc0e32f8",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/de_DE.ini",
+          "bytes": 58502,
+          "sha256": "77649a2de8ce5e1d0bfb77e4746a6f0a499b8f5018dd56ff910fd0c285699543",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/vi_VN.ini",
+          "bytes": 60066,
+          "sha256": "8b95e224f66d96dc8283b5ec61dab3fe76fb5d7b29a35462afe1af36d3aeed40",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/es_LA.ini",
+          "bytes": 60718,
+          "sha256": "298e1df5758af2d1b47845571e34cc7c39f0bdc74ad5dc5144f5fc06b87ce1c7",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/he_IL_invert.ini",
+          "bytes": 56034,
+          "sha256": "b18c5c731c0b528d2679b7043b5b18db7438035a7a143798cf72f0dec027bd61",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/lt-LT.ini",
+          "bytes": 58074,
+          "sha256": "e078131e4b3fa0631c0a5b3f2b62ba67c947f918e98cc1e804afb35d1346324f",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/fa_IR.ini",
+          "bytes": 66624,
+          "sha256": "f93c72fef4449a81f7347ade95bb2edae2016c31faaefae3b835bc93a238ccd5",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ru_RU.ini",
+          "bytes": 83511,
+          "sha256": "7221750656e47623e7e6e1a665b179bd147b10f101fe87aa7193a68c133bda3a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/it_IT.ini",
+          "bytes": 60883,
+          "sha256": "120a1326683b9246ce749d325fa9418bb18230c5b5a26703401ef35569b63c9a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/he_IL.ini",
+          "bytes": 56261,
+          "sha256": "6414141adae265c9e9d2d172892535568248459ed08f6c7a51d829023ac113b0",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/gl_ES.ini",
+          "bytes": 56202,
+          "sha256": "938e5460b06e9aa512114e22b2ad1b6d30c0c9b611ba354604885b9407f130d4",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/jv_ID.ini",
+          "bytes": 55330,
+          "sha256": "4eb96fd5b0c152f1d2b2d5499aa2e43899833eac2f2264804df97bace30c4915",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/id_ID.ini",
+          "bytes": 58612,
+          "sha256": "9b23d7a0862513d4682562257f202ecfbc0021f1b9bea90345aba2cf8f686c9e",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/pt_BR.ini",
+          "bytes": 63918,
+          "sha256": "92a0031fff8cd1777bcd507f8529b007021d828189b25a555771bb1a382b3942",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/en_US.ini",
+          "bytes": 55812,
+          "sha256": "ca154772f96cb6aa25e3ea902b9514b140c6896c9d7befdf44c281ab8561b6ae",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/az_AZ.ini",
+          "bytes": 54716,
+          "sha256": "f44745355011e91e25bf4ed80ce0ac41888b10fd07713c999bbe0b99f565e354",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ca_ES.ini",
+          "bytes": 57238,
+          "sha256": "1a5779cf5379578757cdff24a0ad01430a5aa428a29f71397554392d597270a1",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/no_NO.ini",
+          "bytes": 54663,
+          "sha256": "dc6a2041d866aae7039dfc15bb71fdfa29a36c01f895153e3e7b7c46157ef594",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ar_AE.ini",
+          "bytes": 65680,
+          "sha256": "8e7d89e9d7605c34426f487903e4bdfcaad1b3435ec432d0f0a8034e3b4f6115",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ro_RO.ini",
+          "bytes": 55905,
+          "sha256": "98863eda48d3e80f3971680d3b48ec230bd872ce901d0445dde2199918f87ce0",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/fi_FI.ini",
+          "bytes": 58492,
+          "sha256": "3238db1cb583f10f0bdfbdb905e2b792192183e3f7a63683b6236c6734b4f3ca",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ms_MY.ini",
+          "bytes": 55479,
+          "sha256": "946d2c3aa9218f69ad30cef296aea80e43cb960655287c3171829d9adb6403fe",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/ku_SO.ini",
+          "bytes": 60507,
+          "sha256": "00483b61b34001cd2f3095b055cc29b081d0c72659cffd4c3fe70a2be41af20e",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/fr_FR.ini",
+          "bytes": 61449,
+          "sha256": "77451d486b827eb6be9164f42fab54a93b229cf97e3c261ee36ca3f74df6fb77",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/lang/README.md",
+          "bytes": 1060,
+          "sha256": "5bce8cf4a2bd04da57dddfc2eacd27c9e01173baad2c1f3ed0d3a3859e4843d7",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_asin_lut65536.dat",
+          "bytes": 1536,
+          "sha256": "7a046ed71cc700dba4f90ff42e66ebd4b292281d3d2899202c3e370aa7c26ef9",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_sin_lut_exceptions.dat",
+          "bytes": 86938,
+          "sha256": "46d585d103c9265393ed7c79bc4db7d047daf855c52358f4311a54d275e7fb74",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_sqrt_lut.dat",
+          "bytes": 262144,
+          "sha256": "634e81488992fc2a0bfe5eaa3982f8895f7cdbb59595cb1dc6934bddafde86a6",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_rsqrt_lut.dat",
+          "bytes": 262144,
+          "sha256": "9ebaa077ce0e70c6e6a706945bd905af681a8cc16d9fedd623b23d59d7794ced",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_log2_lut.dat",
+          "bytes": 2097152,
+          "sha256": "2ce3277fc2eaa9188f7afa341dadfd041447c07482d7aea8c5dbd1a3c869181c",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_exp2_lut.dat",
+          "bytes": 262144,
+          "sha256": "fcd6b4f4bb088e70c0c3e0aa0466d8ae9a2bf6b9459ae0a660e7de37a914ea35",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_sin_lut8192.dat",
+          "bytes": 4100,
+          "sha256": "1017c38fcc37ced830dc68e5603725526ecadcc23bb0fdf99159622351f61676",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_sin_lut_delta.dat",
+          "bytes": 262144,
+          "sha256": "24bddbb34b59b9a714e3c1f9a0335b3fbbfcedf8d04e71f95adf1b4295fbb13b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_log2_lut65536_quadratic.dat",
+          "bytes": 512,
+          "sha256": "25a0ddddbf33bab98a88f9c95a678fb93d54be17b1d08a1a90131161b42eeec5",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_exp2_lut65536.dat",
+          "bytes": 512,
+          "sha256": "7a0c42d5652c0fa48f457072b02a87f949e747d3f8a04f25bfa861fc2b85b01d",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_rcp_lut.dat",
+          "bytes": 262144,
+          "sha256": "0aee9fd249988073e4f364cd724cb6f54aa0c57ce0b515a1fe69a65444a92c55",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_asin_lut_indices.dat",
+          "bytes": 798916,
+          "sha256": "418dd88590f2a2cfe4d45b27abe5e547a81ecf3ea00c90afec86740d6012d9c8",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_asin_lut_deltas.dat",
+          "bytes": 517448,
+          "sha256": "6c6ba37ae631df90b731c6753f500e1bd4455b6435a56d50e3dd8f813b234027",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_log2_lut65536.dat",
+          "bytes": 516,
+          "sha256": "f7b0f2726808c5bb7207a2a5c297df437277e95e121b7e46dc8f5cf152bb0dd4",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/vfpu/vfpu_sin_lut_interval_delta.dat",
+          "bytes": 131074,
+          "sha256": "1506831c116bb5def823fc89c80b8d4fcdd6c938b223855a67709fcfe3fb285b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/4xhqglsl.fsh",
+          "bytes": 2122,
+          "sha256": "3e656f9b30a1d2a4bfe4dda6696d79cd28d4fd499d1d80c704e30b959e3c6001",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/natural.vsh",
+          "bytes": 611,
+          "sha256": "33752c2162f4f5042d251a4732fa5781d6dbcb0964a419509c471103ab43a96a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/cartoon.fsh",
+          "bytes": 1498,
+          "sha256": "c61aedf38403939dbd8eb5df239928fbcdd8522573aa6707098f52bcd0f0b5fe",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/persistence.fsh",
+          "bytes": 337,
+          "sha256": "2bdd958789e33dd9e973227e62f1b36f3bc77b048c34e82aef39b2bfceb5b11f",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/aacolor.vsh",
+          "bytes": 776,
+          "sha256": "a3ea2687befd37aadf269d0934fab5c54034a065b88f18d5861281d5fea31264",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/upscale_bicubic.vsh",
+          "bytes": 172,
+          "sha256": "1f6954bd0113f37759d7e411b916147a0393795002c335c2db524ea87533f19c",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/5xBR.vsh",
+          "bytes": 1042,
+          "sha256": "2c8161eda12a9d7a28b3bdb9c4375e4eb83d0fcbc11e70276391942339568eee",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/4xhqglsl.vsh",
+          "bytes": 992,
+          "sha256": "c195f001259bcdf9b2be7260c91ae59ae171cc825cb494af8472fae2193d6916",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/bloom.fsh",
+          "bytes": 1138,
+          "sha256": "09a3685bac8c85ae7a6d125eadefe5d84d2809c380a47f3d6df4577e565f4bec",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/videoAA.fsh",
+          "bytes": 5679,
+          "sha256": "40b100fd3734cb00c2ce26ff8599bf1686b469a2c7596b5d651bc2ee7e1ac2db",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/scanlines.fsh",
+          "bytes": 677,
+          "sha256": "130ea313492c185fd30baf42bbd45de0815697f9dd5b4e61d263efd6c7bc8995",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/checkers.fsh",
+          "bytes": 415,
+          "sha256": "066efc0c0eb4b380be606a6d4eff9ee7ffe4ab1532793ed8756e4d33d59045e3",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/naturalA.vsh",
+          "bytes": 221,
+          "sha256": "c8049698fa9a637ad9d17857321cff5ae5828ba02249760ee7f7eb7ea99bf1ec",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/upscale_spline36.fsh",
+          "bytes": 3138,
+          "sha256": "43295e897c1d608cfe6128906a85ed04b071943fe08753e652b13eb63a437767",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/upscale_bicubic.fsh",
+          "bytes": 2495,
+          "sha256": "c0d71546f9607b9bb560ef098b8221122f3ce2292c70377eb45278cb43cb2852",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/stereo_sbs.fsh",
+          "bytes": 496,
+          "sha256": "acb4f6149070bcb83953947680ac96519bd3f37219b3e39705d40fab049b3f62",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/cartoon.vsh",
+          "bytes": 968,
+          "sha256": "f1cc9d0d6c269fc257c53880b093a9de70b2f8f88580039bfa50b1372bf6846d",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/upscale_spline36.vsh",
+          "bytes": 230,
+          "sha256": "8a37557a9b87a4c6d2fb1ad3006cc20b59dfe16b50c183344c47f9e650156626",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/GaussianDownscale.fsh",
+          "bytes": 2626,
+          "sha256": "eb36c1b654376381922d1a486e5a1a998155e357e96f5c7ff6c94c2d98214a55",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/fakereflections.fsh",
+          "bytes": 1335,
+          "sha256": "6dc5d69cf82fa861578bb54d3f456b24316f2d6f8f24a73584569fee35354156",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/natural.fsh",
+          "bytes": 1731,
+          "sha256": "31e11f048a9421a3566dc59254d9f24cedca1ca7b7cb7f796c8da6a6d665411b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/psp_color.fsh",
+          "bytes": 1307,
+          "sha256": "2e6cda41b9ad36ee0c33b92155e7069cf9c295770dec8e31675f92ac8425e14f",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/aacolor.fsh",
+          "bytes": 1820,
+          "sha256": "6d4b8e3478a0397181f4476c3e294af11b88b100c25883a2a5453d357d67f146",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/defaultshaders.ini",
+          "bytes": 4937,
+          "sha256": "ce67d00714c87d9f77693208d9226ce01735d9c0435e67ccd77d38e48f8c66e5",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/crt.fsh",
+          "bytes": 1042,
+          "sha256": "dcf1f35df91366b78cd708dacf8140f9b305da8ac69c0461690a623de03e1d24",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/fxaa.vsh",
+          "bytes": 223,
+          "sha256": "05d6207a1b459d131e7cdbce5d8d6aeb35fbac4a60f02d8b072bdb600174c84b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/bloomnoblur.fsh",
+          "bytes": 1246,
+          "sha256": "c709c37901654dd59c30a624e06bb04f67b6c62417b455425faa404874ebfb6c",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/tex_2xbrz.csh",
+          "bytes": 15005,
+          "sha256": "43824c306a4b1cb8d7a6d430f5dfa15be3bfe7e9caff350bd5913b34d0914ea4",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/tex_4xbrz.csh",
+          "bytes": 15303,
+          "sha256": "d9797ae8f4a7335730132fd79406c731da340ad79e7db6cda0391a9e831c2a06",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/stereo_red_blue.fsh",
+          "bytes": 912,
+          "sha256": "5ab5bed9dce6d17a0fd840be30c7bc1e34485f6b49555b650e926404173b68c5",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/5xBR.fsh",
+          "bytes": 5498,
+          "sha256": "44374186c32bebec095ebf014894401969bdf75b67d45b2a3a5a40ae803953f5",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/fxaa.fsh",
+          "bytes": 2536,
+          "sha256": "b0d5bd19ac6658dfa21eeb3a4f2b7a91e19ea09de3499c360a67fdb53487d19d",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/vignette.fsh",
+          "bytes": 561,
+          "sha256": "332c37880e715b5538553c11d88f32a818bdf74bdf4d6e35141913c2062b7efd",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/colorcorrection.fsh",
+          "bytes": 448,
+          "sha256": "e39e2a2dffa0141237351a6be41cd1db645e7f72764f3ceff410adf7ae977283",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/naturalA.fsh",
+          "bytes": 912,
+          "sha256": "dc28e8ea863823bf5d2de3dc81babc99856983507b67d5bc9051df7d1969f1b1",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/5xBR-lv2.fsh",
+          "bytes": 9037,
+          "sha256": "1ccbec50ae113f2ea8088e5535cfc99044e0f5ceb38800e8fcfcf4a8c92522d2",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/tex_mmpx.csh",
+          "bytes": 4864,
+          "sha256": "9940b233526ba7e1fece0e792fddde62e7fb55b7e7b4db4c7815969a32c2c658",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/shaders/sharpen.fsh",
+          "bytes": 451,
+          "sha256": "33e2b9a4797cd722c5963eafb2668a1111b4b54e62c1025c7c36cc46e0b0586c",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/themes/defaultthemes.ini",
+          "bytes": 1099,
+          "sha256": "72aedb2bf0861fba88a0346e9c55e8b2400a0b369d8dee9348e9c3b5d24314d9",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/favicon.ico",
+          "bytes": 112537,
+          "sha256": "250707a1d89256f804446fdcfbdd1475cae75540ac3cf985d615c6c723e158fc",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/.git",
+          "bytes": 43,
+          "sha256": "7064684df4cf2d8f5fcf0db7594de3a23920b9e64e39e2e9a34ed48dac5fe680",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/manifest.json",
+          "bytes": 297,
+          "sha256": "7f59a7589fee042f649cc724ac16da588e71302baa612490b3dd8fdd86f8aca7",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/asset-manifest.json",
+          "bytes": 463,
+          "sha256": "e38019d11d729442d2ce4dd10c651565a0375be8b19e403b7d3bc595c5ddb6f6",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/index.html",
+          "bytes": 549,
+          "sha256": "7be4c8c5a5b1d86543a31fc88cfd070f53178a5e013b4057d9726bfec12c782b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/.nojekyll",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn7.pgf",
+          "bytes": 41696,
+          "sha256": "9a4d35eeeee93fe8b5434e8dff79dabf7bbd914ad0d6461fb60d36eb178bf2c8",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn12.pgf",
+          "bytes": 29756,
+          "sha256": "c71f3dee57b8a105a88791dd041a008adb918b14a3892a1b18ed6a63f721201a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn1.pgf",
+          "bytes": 38124,
+          "sha256": "0cb72bdce33780b78596001fdc6842c244aac06e813fddf28e3437e4db45dd5b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn15.pgf",
+          "bytes": 30232,
+          "sha256": "4ab43137ebed97d8bbec829b32d4b343f9895e0b14ec1c884c1b44dfa35d5204",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn0.pgf",
+          "bytes": 38236,
+          "sha256": "1184f16bc89bad1fea49093806784470281af54f279b57ef0378ce33e6603870",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn11.pgf",
+          "bytes": 29072,
+          "sha256": "ebb94efd7d18143d6c6d54ae7aa5cc801d8c56dc7ca613c779cc60dc8b640a16",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn4.pgf",
+          "bytes": 39484,
+          "sha256": "250babd8a242d7eaaa84284c78d5e2273b29e61d0d8c01b65414e3248d7c1164",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/kr0.pgf",
+          "bytes": 1641624,
+          "sha256": "6b0b3a8be9e709d6af02223d077675e1530f9879f42656377a9d8d42e2614333",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn14.pgf",
+          "bytes": 31516,
+          "sha256": "bc2c9389ac33f120b4be4fd3efc467de12fd886ec147969a4309ea270ccc1da3",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn3.pgf",
+          "bytes": 40760,
+          "sha256": "82bf8f0b60fd7e513560b29c52f6c721ade05910a144704c17f78aba298d9b08",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/jpn0.pgf",
+          "bytes": 4316284,
+          "sha256": "d363cec75fecfafd1511e370e48c748c30199c694b83a4026be34d799b192917",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn10.pgf",
+          "bytes": 31316,
+          "sha256": "ff8fcdebca739eaa81c07caabd78b3e3eafb89cac0e68caf7aaf7a2b25514e85",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn2.pgf",
+          "bytes": 40944,
+          "sha256": "ecfdfc8c7f1ee367dda81ff3177af626b5bf64014315ce0c389903c40964b4bf",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn13.pgf",
+          "bytes": 29072,
+          "sha256": "25b0efa79cf1b6656b35356483ad2b1191626550d59b5943ed681e82b945bd73",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn5.pgf",
+          "bytes": 39236,
+          "sha256": "e30b45662d37516c590ca070c831b44a6883587e223abd28082cb017623474f7",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn8.pgf",
+          "bytes": 29976,
+          "sha256": "c8620bdd244585bbf993a82903168f6ec8464d4cbcad238d4e0ca5623c1ba3c1",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn6.pgf",
+          "bytes": 41920,
+          "sha256": "a0fb14123ceb1ef81cb230cbf0688de594d0725de234a2ad710cd9b89391c7e9",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/flash0/font/ltn9.pgf",
+          "bytes": 27664,
+          "sha256": "e250f2782e0c72707ce16f73331e2604daa84c488c8b9c959e2296867c1710bf",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/static/media/logo.94f885ce93dfb6d29a122402a15cccca.svg",
+          "bytes": 2796,
+          "sha256": "fde10c716b4c718d36011a9224d9c731a253db5cffd93e41e2d8ac1a3ccbdcba",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/static/css/main.3eab8a01.css",
+          "bytes": 15322,
+          "sha256": "57386a394f3f4a0000515d90b68118032e88255d6c499ea25d9eb334b948483a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/static/css/main.3eab8a01.css.map",
+          "bytes": 28131,
+          "sha256": "3db67c404f66e54fe564d6107f0a11515daa0948bf1d1522b03fc42dbd81c84b",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/static/js/main.fe87e942.js",
+          "bytes": 585276,
+          "sha256": "1409c021011ca43fe4567b3af345439da5c2feec2e2c4fe7d373ce80b3fa3b7a",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/static/js/main.fe87e942.js.LICENSE.txt",
+          "bytes": 1759,
+          "sha256": "9cc2775972449bbb33c699aed95a492eb54855299be5f698b9917d90c4817ddf",
+          "directory": false
+        },
+        {
+          "path": "switch/ppsspp/assets/debugger/static/js/main.fe87e942.js.map",
+          "bytes": 2235270,
+          "sha256": "097ee35ee0ece8d070ec20fdadd00babbb48026513684b105d9b4e5df4203472",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1964,
+          "sha256": "1c70a48739704b12589f39b024ebfcb5b96e7d99005298affa5b379b58dd8fd4",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 6966,
+          "sha256": "2c482bc97044ce64be3cb44c2160479eec42a7e1c11965f62ad306988d479f18",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/ppsspp/PPSSPP_GL.nro"
+      ],
+      "requiresBundle": true,
+      "status": "downloaded"
+    },
+    {
+      "id": "BrogueCE",
+      "title": "BrogueCE",
+      "version": "1.9.2-r2",
+      "checkedAt": "2026-11-02T07:07:00.913Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/BrogueCE.zip",
+      "package": {
+        "name": "BrogueCE-sd-package.zip",
+        "bytes": 4428182,
+        "sha256": "6fe4bd2139e86d33d13b154e8d301b904121c7185eeb0f8c5aea746e9b6b15b8",
+        "source": "https://switch.cdn.fortheusers.org/zips/BrogueCE.zip",
+        "version": "1.9.2-r2",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 28,
+          "sha256": "415e491344376a532eed4de91ff7adba5f0e31b32eb92b351f5f6b677dae9e63",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2108,
+          "sha256": "319e582e83a8554970b86c12949ee4733b2421c016df8c380512eb0c178e58cb",
+          "directory": false
+        },
+        {
+          "path": "switch/brogue/brogue.nro",
+          "bytes": 10767662,
+          "sha256": "b7d6366431be73b18b7bad0ed01fe724cd6f00cdf773a81a95d06728889cd1e6",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/brogue/brogue.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "brogue.nro",
+        "bytes": 10767662,
+        "sha256": "b7d6366431be73b18b7bad0ed01fe724cd6f00cdf773a81a95d06728889cd1e6",
+        "source": "https://switch.cdn.fortheusers.org/zips/BrogueCE.zip",
+        "version": "1.9.2-r2",
+        "local": "/downloads/nintendo-switch/BrogueCE/1.9.2-r2/brogue.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "6fe4bd2139e86d33d13b154e8d301b904121c7185eeb0f8c5aea746e9b6b15b8",
+          "member": "switch/brogue/brogue.nro"
+        }
+      },
+      "installPath": "switch/brogue/brogue.nro",
+      "officialBundle": {
+        "name": "BrogueCE-1.9.2-r2.zip",
+        "bytes": 4425335,
+        "sha256": "dc087224346dc18fcb4c83db4e518cb930f2b75be27182bcd26696bb6ff6ee24",
+        "source": "https://github.com/capsterx-switch/BrogueCE/releases/download/v1.9.2-r2/BrogueCE-1.9.2-r2.zip",
+        "version": "1.9.2-r2",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "official-bundle",
+        "inspected": "ZIP paths, CRC and NRO headers"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "Minesweeper",
+      "title": "Minesweeper",
+      "version": "2.0",
+      "checkedAt": "2026-11-02T07:07:10.055Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Minesweeper.zip",
+      "package": {
+        "name": "Minesweeper-sd-package.zip",
+        "bytes": 804097,
+        "sha256": "05e2739ef713395fa0b5ab1d2dd8661982af240e67d64bc849234345a5250490",
+        "source": "https://switch.cdn.fortheusers.org/zips/Minesweeper.zip",
+        "version": "2.0",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 45,
+          "sha256": "2ebf4d30692295336dc62809efe9f728588572d7850f8dcfe0d342ee5b3cff29",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 504,
+          "sha256": "8c5166eceb7b01856e57b4c95d65e533be1ab5aa4935edbc962baaaa5402c9c9",
+          "directory": false
+        },
+        {
+          "path": "switch/Minesweeper/Minesweeper-Switch.nro",
+          "bytes": 1669972,
+          "sha256": "7172be2da02fefdebde3745f15d9e7beb7f08472fad3a2cc86eb70811b22cc9d",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/Minesweeper/Minesweeper-Switch.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "Minesweeper-Switch.nro",
+        "bytes": 1669972,
+        "sha256": "7172be2da02fefdebde3745f15d9e7beb7f08472fad3a2cc86eb70811b22cc9d",
+        "source": "https://switch.cdn.fortheusers.org/zips/Minesweeper.zip",
+        "version": "2.0",
+        "local": "/downloads/nintendo-switch/Minesweeper/2.0/Minesweeper-Switch.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "05e2739ef713395fa0b5ab1d2dd8661982af240e67d64bc849234345a5250490",
+          "member": "switch/Minesweeper/Minesweeper-Switch.nro"
+        }
+      },
+      "installPath": "switch/Minesweeper/Minesweeper-Switch.nro",
+      "officialNro": {
+        "name": "Minesweeper-Switch.nro",
+        "bytes": 1669972,
+        "sha256": "7172be2da02fefdebde3745f15d9e7beb7f08472fad3a2cc86eb70811b22cc9d",
+        "source": "https://github.com/rincew1nd/Minesweeper-Switch/releases/download/v2.0/Minesweeper-Switch.nro",
+        "version": "2.0",
+        "local": "/downloads/nintendo-switch/Minesweeper/2.0/Minesweeper-Switch.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "spacenx",
+      "title": "Space Game NX",
+      "version": "1.1",
+      "checkedAt": "2026-11-02T07:07:18.635Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/spacenx.zip",
+      "package": {
+        "name": "spacenx-sd-package.zip",
+        "bytes": 333250,
+        "sha256": "16261540d06f7d72a6c3eed34f40e2b0e19898b8bfe155840595b69750bd6238",
+        "source": "https://switch.cdn.fortheusers.org/zips/spacenx.zip",
+        "version": "1.1",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 22,
+          "sha256": "f82fef12128bbc961181f270e105f62cfc25e4c32b2ae53b0caff17451895afd",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 521,
+          "sha256": "65e241772ff46670b0f397326023733d7c62d1457a2c7dc51c28da92b22249a4",
+          "directory": false
+        },
+        {
+          "path": "switch/spacenx.nro",
+          "bytes": 759712,
+          "sha256": "9ca9fcc76dffd132f4ceb1a3091cf811bc4a23c5876aea35d9be6e13de254d64",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/spacenx.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "spacenx.nro",
+        "bytes": 759712,
+        "sha256": "9ca9fcc76dffd132f4ceb1a3091cf811bc4a23c5876aea35d9be6e13de254d64",
+        "source": "https://switch.cdn.fortheusers.org/zips/spacenx.zip",
+        "version": "1.1",
+        "local": "/downloads/nintendo-switch/spacenx/1.1/spacenx.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "16261540d06f7d72a6c3eed34f40e2b0e19898b8bfe155840595b69750bd6238",
+          "member": "switch/spacenx.nro"
+        }
+      },
+      "installPath": "switch/spacenx.nro",
+      "officialNro": {
+        "name": "spacenx.nro",
+        "bytes": 759712,
+        "sha256": "9ca9fcc76dffd132f4ceb1a3091cf811bc4a23c5876aea35d9be6e13de254d64",
+        "source": "https://github.com/vgmoose/space-nx/releases/download/1.1/spacenx.nro",
+        "version": "1.1",
+        "local": "/downloads/nintendo-switch/spacenx/1.1/spacenx.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "pinballnx",
+      "title": "pinballnx",
+      "version": "1.0",
+      "checkedAt": "2026-11-02T07:07:31.378Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/pinballnx.zip",
+      "package": {
+        "name": "pinballnx-sd-package.zip",
+        "bytes": 4507287,
+        "sha256": "d7cf0fe4bee6b9859ea0141036b69946208a966b0e5a4cbbb6a3ea797d991073",
+        "source": "https://switch.cdn.fortheusers.org/zips/pinballnx.zip",
+        "version": "1.0",
+        "local": "/downloads/nintendo-switch/pinballnx/1.0/pinballnx-sd-package.zip",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 6473,
+          "sha256": "81a15b32dde00b708266aee716fba1480bbd580ee2ed5f001ade229db12f3c1c",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 681,
+          "sha256": "0e3ab50c3f60903bd7608c5a1e8f1529edf923e4a33571d611e7f527e8251e43",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/pinball.nro",
+          "bytes": 9657032,
+          "sha256": "3609fabdb44163558eb1f554ef0a2d16c9ef12a54284d3094c7905b6903645c9",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget4-0enabled.png",
+          "bytes": 1889,
+          "sha256": "29c2cfbd41b7f6c9bfd89e3f05fa2448ff8ea01e3a84db7d76efe4321c0558b6",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger2disabled.png",
+          "bytes": 3291,
+          "sha256": "00ef19dd941a78ca9383529305586f26fc3bcec2922028c7191a253dd5b72e54",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape2off.png",
+          "bytes": 986,
+          "sha256": "2e0b1806e94339e367f64ab98f3adfc02c0f87b66a4024e4debf160f2f089085",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget0-1enabled.png",
+          "bytes": 4610,
+          "sha256": "144f0132aa60304bd995f9ba6a5a645e28d9ad0d4fad13610abf18e8675a9558",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget0-2enabled.png",
+          "bytes": 5551,
+          "sha256": "4fa5b2841471ebb38fc3249617a88ee2cd9796e479685b8d408d9d180669f4fd",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget3-1enabled.png",
+          "bytes": 4111,
+          "sha256": "3ab348418162c1a3c46abac95125db7a19708df733f1ac6738522b58d2b6da6a",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget3-0enabled.png",
+          "bytes": 4016,
+          "sha256": "739ec0c7701275dd5b52740b4693d38231c2b8cc5675bebee28112ab8fdfb40f",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget0-1enabled.png",
+          "bytes": 4744,
+          "sha256": "245d71fc88e83692b063bf995b53892bcb724036b650710770d8a7fcc17fe0ad",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget0-0enabled.png",
+          "bytes": 4679,
+          "sha256": "e19e6a4d04ef1063a3cced2d55ecd208b725b47224d7a8d2f9bdde087b788000",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-0disabled.png",
+          "bytes": 4341,
+          "sha256": "332aa1fa8b414d05bca704ee6ffa918a0d1ca4a4e1cfb5555b86ebcc927ef916",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget0-2disabled.png",
+          "bytes": 5025,
+          "sha256": "adf20d87496cc3fd0d878dd9424a5965cd3817cba71d9ef31be2954fea061aff",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall4disabled.png",
+          "bytes": 290,
+          "sha256": "e67a8666cbfb77714b981ed80839e27e5591415ff8d5bc5aab183c1794eab451",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape1on.png",
+          "bytes": 485,
+          "sha256": "8c94476d9f9bdbe6384523ce9fc4b772ba42986a02a94853006738cebc2ad2ef",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall7disabled.png",
+          "bytes": 1107,
+          "sha256": "4f30372931450e9b94d81e4192d4846dd96bd5e2837685675e97182802b25e28",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget0-1disabled.png",
+          "bytes": 4153,
+          "sha256": "b29b45f8b06230d8302dcf64a824c9a9e58b7eeee4c335f7f2f58e7fd5595dae",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall0enabled.png",
+          "bytes": 1766,
+          "sha256": "78bf44f2710ea032dcb060faf1f7ec62ac3f1e1e391b2f1c0fdf63504e2131dc",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-0enabled.png",
+          "bytes": 4275,
+          "sha256": "717b44c734db888652ac8a7fa4704516b4592ad5874b3050d702a74f89532e73",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-0disabled.png",
+          "bytes": 3911,
+          "sha256": "eb243193fb4ce581c5b59c876790e7aa8ee3266b248740e1dbc298eaa68e0775",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall7enabled.png",
+          "bytes": 5900,
+          "sha256": "c6e972428432146e2466a9fb4386f8f1c7da41b2035b732075d360aa1e101f22",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall8disabled.png",
+          "bytes": 1552,
+          "sha256": "15b4e04157d1c3d618d46902a79fd234c7209aeadf7c6654be6c9c3b86f8e833",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/controls.png",
+          "bytes": 3540,
+          "sha256": "3e85b1db6f1e23d7ddf204388cc941db1bd3a6fc8e2733f1c015bc5457b6d18b",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-1.png",
+          "bytes": 1721,
+          "sha256": "185d018de0179ca3f8519f0806f86e8fb002224a3d4d986c85fcee49bfba5453",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/advanced_dot_digital-7.ttf",
+          "bytes": 175768,
+          "sha256": "35fe8a869777f5bc16463c75be4c03357b358ceb40429888341fa048c7b4a465",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-2.png",
+          "bytes": 1587,
+          "sha256": "1f3bac29dcaa7875ae14bd5267b36fea2332d09df6c40687a53caecef2a3b8cf",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-1disabled.png",
+          "bytes": 3200,
+          "sha256": "55d81e3295ed9093bac827aa86286094f99f6c66aa9e09ea5dd00c56c20e084a",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape4on.png",
+          "bytes": 1378,
+          "sha256": "6ed05bfe9a719e9bc684c3bc4e9d961989348f81070552a596be6dbff9f83493",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall1disabled.png",
+          "bytes": 963,
+          "sha256": "2f89cb76affb5bed6f4d06094aa381a6044acc3538ee7e199faa6f80b8a93ff5",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-1enabled.png",
+          "bytes": 3669,
+          "sha256": "4a271c5f7e168dfcf45b529a58e07ae314afbf576166aaa0a1092565262212bd",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumper2.png",
+          "bytes": 5224,
+          "sha256": "4c076c26d6363ce62bd8b836dad08e73195e183150c7b6d13e1f1c4c371ec4c6",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-1enabled.png",
+          "bytes": 4905,
+          "sha256": "4e9acc93fc8a22f3f58ccc50447d461df8b3f0e54c1604fd50fc22feed697e28",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger3disabled.png",
+          "bytes": 3217,
+          "sha256": "2bb7cacb91d86904533be7e88580f711b5ba88b8a1a49d76d46351ca3440c3b7",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape3off.png",
+          "bytes": 986,
+          "sha256": "2e0b1806e94339e367f64ab98f3adfc02c0f87b66a4024e4debf160f2f089085",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape5on.png",
+          "bytes": 1376,
+          "sha256": "a2ab54c588b89dd8661600f16808f4aff35d00a882a263c0f2ded7066098612b",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-3.png",
+          "bytes": 1600,
+          "sha256": "d4a6b08c99e592e7e308ce6e1f9a59428f08a0695ca2ae4ce3ea97e43ab294f1",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-7.png",
+          "bytes": 1645,
+          "sha256": "c8f5e2a373c294bea44f05b82630054a55c0d9abd7a7dcacf41ceb45e963eaa7",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger3enabled.png",
+          "bytes": 4048,
+          "sha256": "c8c4abce47a20d529f2bf1d982528ffe6e786a8f2002bccf37406d4f86b18afd",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/wheel0.png",
+          "bytes": 4807,
+          "sha256": "363246e885172e366e2870511789e391a0fc2c29107fa49aaa02fa7fa236d5e8",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall5disabled.png",
+          "bytes": 945,
+          "sha256": "2f8890e49637ac1b458239d8effb87b2e739114c161b184f2b0e6e9f18e8364f",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/flipper.png",
+          "bytes": 4783,
+          "sha256": "d8edf3b643d8c558295d489f8411a88dba24ef85e58d5159f1ec918ecd4bcdba",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape6on.png",
+          "bytes": 954,
+          "sha256": "7682e31a722fd52244cbcbaf9ca501d495dad622a65e49b4595c92e9fee6cd55",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape5off.png",
+          "bytes": 1373,
+          "sha256": "4dc8cae248ac9cd4899c723706d300f3b42e312d1fa2c47324efa2f0065f67ea",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/layer2.png",
+          "bytes": 22420,
+          "sha256": "7818048197c59b83fe0ca2edab593b8dda2d644d08a31bd73ad831a68c729e51",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall1enabled.png",
+          "bytes": 3384,
+          "sha256": "aa196a84fbe06c72d5e27e7172a5a99d866cce55b7f50663412cdfb3cf375e1f",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall3disabled.png",
+          "bytes": 290,
+          "sha256": "ddad2b7a8fe5c48e8444c7a86de6c961213b1ff9d4c0a1c54cf3f3e906e60e83",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger1disabled.png",
+          "bytes": 4082,
+          "sha256": "05f51582d288c333e5745708a3c096c21bcc292e525f9e515de120a27636b009",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger1enabled.png",
+          "bytes": 4796,
+          "sha256": "9e59f98abb74e5d7f308ece45b5d2f1726f320666b5474265e833d1f5d1edae2",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape3on.png",
+          "bytes": 829,
+          "sha256": "91b2138378c07422c94b19b529e6e1b9dde71c3f294953b80de4f20e82b3ad8b",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget3-2enabled.png",
+          "bytes": 4032,
+          "sha256": "f1f03aafed37bba3f117e26e1e5d6f31d1ea794f90b85d0f3e92ccec6fa30de4",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget1-0disabled.png",
+          "bytes": 3382,
+          "sha256": "19a02827fbfbee09966fef423518997503f5660dc89c5a2d26f2694c8ee0a0a8",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-4disabled.png",
+          "bytes": 4489,
+          "sha256": "145fd987fa9a256ed1b2186f670acd5ce748ca77a629dc4cc799ce0aa3d5b692",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget3-2disabled.png",
+          "bytes": 3733,
+          "sha256": "c72f50d346ea3ca92958f5d27e8f7cfcece14c6e5abcc5e01560e7bd7cf01765",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-2enabled.png",
+          "bytes": 4539,
+          "sha256": "edebeacb9b9b185830516ed20840650566ff948eefa6ff831725e76e69813210",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget1-0enabled.png",
+          "bytes": 3380,
+          "sha256": "ec679b4931b9881fdc97e55714c60d770c1537554ef20af224b334bcf4cc81a4",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget2-0enabled.png",
+          "bytes": 3380,
+          "sha256": "f9172e7948c3fe104edb97472dba5259b6f58ed9f02eec580acaf6fc9d743518",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget0-2disabled.png",
+          "bytes": 4105,
+          "sha256": "68934b2da995a55f32edd01373bdbb3e6ddd69f2221b7b2db379333b774c43d1",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget0-0disabled.png",
+          "bytes": 4530,
+          "sha256": "76b2e7f9b13166ba16f78a216edc2f490159c88ea7cb8bb67df499b8babea46c",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget0-2enabled.png",
+          "bytes": 4878,
+          "sha256": "f4df14bf71acc4ed2e05120c27b3cc784cdcbdc4ca4c12d2acab015b96d8121a",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger0enabled.png",
+          "bytes": 1384,
+          "sha256": "864b8d3c030fe0957008a69b8233b6adbded1af98b1ee48f596b2460881e6066",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape1off.png",
+          "bytes": 987,
+          "sha256": "fb5bb856ab929180720f79bffaa9be531c076c111fbbd192fd7fdab7f2c3cc48",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger0disabled.png",
+          "bytes": 1120,
+          "sha256": "00d145ab4c2cfd5ccf2e6888a376982229a0e1b85ed107683c2fdbe8ea8d16ae",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-0enabled.png",
+          "bytes": 5168,
+          "sha256": "505ee4d2cdbbfb9d856b3583018b63d80e6606b9c9ce00298f698a86b14a56e9",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape0off.png",
+          "bytes": 987,
+          "sha256": "fb5bb856ab929180720f79bffaa9be531c076c111fbbd192fd7fdab7f2c3cc48",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall6disabled.png",
+          "bytes": 971,
+          "sha256": "7d07edb8b0dad2664a375dea1b0aaba2e8afead2ef3dd00240e5d40a83e543c1",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-3enabled.png",
+          "bytes": 5827,
+          "sha256": "3cbd587efb5d41795e835cc2bcf21cf0756c6283746a6e97aad9b99b84a2c425",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-9.png",
+          "bytes": 1727,
+          "sha256": "e572d9a9a32c1619826c356d8c237e0d8adc40e61d9c7a27ab4b861465a15f70",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape7off.png",
+          "bytes": 958,
+          "sha256": "9bf17cf61f2a00b167e08d998d986e2b62047356ab9a9c2739ac31253c715a37",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget2-0disabled.png",
+          "bytes": 3381,
+          "sha256": "c6ccf2f5f5f636fb128d9cdac40b78c92ec28eaec120f8b38e3d18d1ebec8e47",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-0.png",
+          "bytes": 1727,
+          "sha256": "6a71b9e821683f25b6b1b1d08e3499fc2c4698cc94c994c8a9a483740e702882",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape6off.png",
+          "bytes": 958,
+          "sha256": "9bf17cf61f2a00b167e08d998d986e2b62047356ab9a9c2739ac31253c715a37",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall8enabled.png",
+          "bytes": 1516,
+          "sha256": "e54814e00fe61256aac74be70a7b0b1f50adb1609cb5e3604a5869a0b2376b0d",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumper1.png",
+          "bytes": 4910,
+          "sha256": "3036236673e346596b743824d2b4bacd6774ee2c93a98480b5e30bedae7c2832",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/pinball.png",
+          "bytes": 1198,
+          "sha256": "4c027682c25c277e27850ed0df2b4c33d65f95e391a8934880967281f0c3e806",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape2on.png",
+          "bytes": 829,
+          "sha256": "7627bb43be467ddbc9c29ef73463e36b00d2681c8edb5aa3382056d26cc87791",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall6enabled.png",
+          "bytes": 3004,
+          "sha256": "7e67191a7f3c51feb09d383f16dc485e8ad69d8b6eec2ec4e4306ef0f0f82912",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-4enabled.png",
+          "bytes": 4737,
+          "sha256": "9ecbcb158cf1c497d87c8c246caac75c23095d2085308409f74c7f35d1fcc562",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget4-0disabled.png",
+          "bytes": 1698,
+          "sha256": "de91542304f4ef5515b072ca7cee8523b82d74e3fd50335f377ac6ea768eac4a",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/layer1.png",
+          "bytes": 44335,
+          "sha256": "1f35a54956aa2a4fcb004402cc1a7249a9b846cbb1671f510086b7e741cda9cb",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall2disabled.png",
+          "bytes": 992,
+          "sha256": "f98be0010ae5e2f4ce926790aec1b2ee4451441a9e41e4c6f10643c64ca0e5b4",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-8.png",
+          "bytes": 1655,
+          "sha256": "79991db4bbeac3f6d7be4659054acdb711b848326bb1010d6b3396a7fbb44b16",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall4enabled.png",
+          "bytes": 3590,
+          "sha256": "f4fd68dfa33bf66e9e427aedd388895857c6354e9448db7223149639ee70fefe",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape7on.png",
+          "bytes": 954,
+          "sha256": "7682e31a722fd52244cbcbaf9ca501d495dad622a65e49b4595c92e9fee6cd55",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget0-1disabled.png",
+          "bytes": 3908,
+          "sha256": "fbd83900e5f5af16661070187b1b60f0fbf5f90df447eb75564fbdc7f5b446b3",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/trigger2enabled.png",
+          "bytes": 4416,
+          "sha256": "a68847c2bab224e6d8a9acfba73feadbe932b92958be2d3b432ad502faff5dec",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-2disabled.png",
+          "bytes": 4518,
+          "sha256": "6626f601d3244107bc354ff3e2b14bd494bcd8b8f2041d5325ce374f5d33c14d",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-3disabled.png",
+          "bytes": 4016,
+          "sha256": "7f91e840b84f918155e1a0399c90164ea9147486f984c4effdef526c0d770264",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape4off.png",
+          "bytes": 1374,
+          "sha256": "0b5a3876e206ef63f238d5dbdc4c7188f4796e0ddb17521078ae0d1af3dcdd87",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-6.png",
+          "bytes": 1644,
+          "sha256": "eebdce6e4bd14dba26409e44954931152415f724bc7e674480faf13779046855",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/layer3.png",
+          "bytes": 22357,
+          "sha256": "c1362a012fc38043c4c7149b242904058dfcee4bcde719e038f8dc5cb778e6d3",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/bumpershape0on.png",
+          "bytes": 485,
+          "sha256": "fb6aca38290f1092cb3b93064e33d1abe472fcb57de4a426972786a9ec0c8d7e",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget3-1disabled.png",
+          "bytes": 3828,
+          "sha256": "52f629cb563c7eae75b1f73e5b05e8174930e5697b0e1a1b06da418bfdddd02f",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-3disabled.png",
+          "bytes": 5419,
+          "sha256": "438ab17ac6a9a73aff521d894bcdcc736ee8b50d90f6e1d6f3f268ec1d428e73",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-2enabled.png",
+          "bytes": 4379,
+          "sha256": "4ba92657236be5d738cc3da20a8c8cf2cfb7151ebdf515434cbd04e56bd5765c",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/layer0.png",
+          "bytes": 22923,
+          "sha256": "8a611e17b92cce91b42a08049be644efb2fed3b04fd44e9fe3a0fcb55fc5ccd4",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-4.png",
+          "bytes": 1622,
+          "sha256": "1ee5eb59751cced3dae892bc372d045d032516af98bd6358bba42422135f110c",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget5-1disabled.png",
+          "bytes": 4868,
+          "sha256": "4cb88eb54b61617d20c1be841c618fc5104f08be41c2ece097322da8eb6b317d",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall3enabled.png",
+          "bytes": 3506,
+          "sha256": "97353394e578d9a81f5aa0ccbe357c7a80cd62b16600db915dd2a1212e0abbd7",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall0disabled.png",
+          "bytes": 1005,
+          "sha256": "e589e16aafdd4a1f8c712deddc6c9dd85b7cef9e8e11612e34ec5790bc646180",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/gtarget3-0disabled.png",
+          "bytes": 3693,
+          "sha256": "aaeafa48b7f836463c7e5758b4aeb50beb3bcb8efc54cc3aa7fa0bca7cd54bd2",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/spinner0-5.png",
+          "bytes": 1627,
+          "sha256": "1692770979e8908ab97b9fb0e6d02ba4934b374e9cf2d2e5818e89fcb4375de6",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall2enabled.png",
+          "bytes": 3669,
+          "sha256": "340b181445d1e840323f2fe9bb2f40a8c786efcab04de6e450da24b9b33b5fce",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget0-0enabled.png",
+          "bytes": 4808,
+          "sha256": "40d4639690f72e46ed2f9c3cc494fcd6f931f3e4b527605e9b5f089b8622ad40",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-3enabled.png",
+          "bytes": 4809,
+          "sha256": "4e4d46cae2f9197a4097903df576dc8db0ef55b90d5c914ebf53ffe647720b22",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/optwall5enabled.png",
+          "bytes": 1652,
+          "sha256": "23fc2479f6098fc308314d7b49a16699e8fc6080f44491c8ba4b8aea00fe3797",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget0-0disabled.png",
+          "bytes": 4035,
+          "sha256": "1d437fd53acd25c77976512dd82b48ea73e42a7dcebdd48a812d6cbe98671f57",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/plunger.png",
+          "bytes": 3963,
+          "sha256": "236e24d7cea5c1660c5c9c5a8d1e6d317351be14a3798988a18f38c5ed990b3f",
+          "directory": false
+        },
+        {
+          "path": "switch/pinballnx/data_romfs/pinballnx/ptarget1-2disabled.png",
+          "bytes": 3764,
+          "sha256": "95620488076968775d626daeaa10240dc5e5880ff532e7d7462cc0a01d03752b",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/pinballnx/pinball.nro"
+      ],
+      "requiresBundle": true,
+      "officialBundle": {
+        "name": "pinballnx.zip",
+        "bytes": 4513773,
+        "sha256": "3f59c6c263856815352f13ccc511a37a1071c32338f1831455ae220034459715",
+        "source": "https://github.com/minkcv/pinballnx/releases/download/1.0/pinballnx.zip",
+        "version": "1.0",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "official-bundle",
+        "inspected": "ZIP paths, CRC and NRO headers"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "Cpp-Snake-NX",
+      "title": "Cpp-Snake-NX",
+      "version": "1.1.0",
+      "checkedAt": "2026-11-02T07:07:43.791Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Cpp-Snake-NX.zip",
+      "package": {
+        "name": "Cpp-Snake-NX-sd-package.zip",
+        "bytes": 297913,
+        "sha256": "e02e63755c0a36b0dff3feacdfb5758b669041f5758a93613159fed4f1bc94c7",
+        "source": "https://switch.cdn.fortheusers.org/zips/Cpp-Snake-NX.zip",
+        "version": "1.1.0",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 40,
+          "sha256": "375fdcd6a7b64bb089f9e19b226ae86e373f4079906bab223f387ce752ce3074",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 428,
+          "sha256": "be65f8b79abe8ecd5c21720b4ed5b027ba31af0da77cac65384cee3026a752a3",
+          "directory": false
+        },
+        {
+          "path": "switch/Cpp-Snake-NX/Cpp-Snake-NX.nro",
+          "bytes": 751813,
+          "sha256": "982ff14c538bb94eb6d18411efe71e885006cf3e944da270d18cd2fa88442f16",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/Cpp-Snake-NX/Cpp-Snake-NX.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "Cpp-Snake-NX.nro",
+        "bytes": 751813,
+        "sha256": "982ff14c538bb94eb6d18411efe71e885006cf3e944da270d18cd2fa88442f16",
+        "source": "https://switch.cdn.fortheusers.org/zips/Cpp-Snake-NX.zip",
+        "version": "1.1.0",
+        "local": "/downloads/nintendo-switch/Cpp-Snake-NX/1.1.0/Cpp-Snake-NX.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "e02e63755c0a36b0dff3feacdfb5758b669041f5758a93613159fed4f1bc94c7",
+          "member": "switch/Cpp-Snake-NX/Cpp-Snake-NX.nro"
+        }
+      },
+      "installPath": "switch/Cpp-Snake-NX/Cpp-Snake-NX.nro",
+      "officialNro": {
+        "name": "Cpp-Snake-NX.nro",
+        "bytes": 751813,
+        "sha256": "982ff14c538bb94eb6d18411efe71e885006cf3e944da270d18cd2fa88442f16",
+        "source": "https://github.com/CompSciOrBust/Cpp-Snake-NX/releases/download/1.1.0/Cpp-Snake-NX.nro",
+        "version": "1.1.0",
+        "local": "/downloads/nintendo-switch/Cpp-Snake-NX/1.1.0/Cpp-Snake-NX.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "jumpnbump",
+      "title": "Jump n Bump",
+      "version": "1.02",
+      "checkedAt": "2026-11-02T07:07:51.106Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/jumpnbump.zip",
+      "package": {
+        "name": "jumpnbump-sd-package.zip",
+        "bytes": 3462247,
+        "sha256": "d453f238c94eb36bceff45ed89cd3618d195ce339694ccdda90ba69022997bc6",
+        "source": "https://switch.cdn.fortheusers.org/zips/jumpnbump.zip",
+        "version": "1.02",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 34,
+          "sha256": "afeff1ac4f7b2904b3166a095f26d267437c1ca327e5cb8ccf234d62db834369",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1573,
+          "sha256": "863fc4152351e84070576c7192d47804cb020866102d941aa04cd32d84dc09dd",
+          "directory": false
+        },
+        {
+          "path": "switch/jumpnbump/jumpnbump.nro",
+          "bytes": 8234598,
+          "sha256": "8e855038b7ab00c1a3174327d0ed0016f0da1c8d9a92035a9cc0c22dcacc252b",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/jumpnbump/jumpnbump.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "jumpnbump.nro",
+        "bytes": 8234598,
+        "sha256": "8e855038b7ab00c1a3174327d0ed0016f0da1c8d9a92035a9cc0c22dcacc252b",
+        "source": "https://switch.cdn.fortheusers.org/zips/jumpnbump.zip",
+        "version": "1.02",
+        "local": "/downloads/nintendo-switch/jumpnbump/1.02/jumpnbump.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "d453f238c94eb36bceff45ed89cd3618d195ce339694ccdda90ba69022997bc6",
+          "member": "switch/jumpnbump/jumpnbump.nro"
+        }
+      },
+      "installPath": "switch/jumpnbump/jumpnbump.nro",
+      "officialBundle": {
+        "name": "jumpnbump_1.02_switch.zip",
+        "bytes": 3466848,
+        "sha256": "7eb427e4fa4bed8397cba235b83a633b003d1df055126093965034422c9253ee",
+        "source": "https://github.com/rsn8887/jumpnbump/releases/download/1.02/jumpnbump_1.02_switch.zip",
+        "version": "1.02",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "official-bundle",
+        "inspected": "ZIP paths, CRC and NRO headers"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "SpaceVue",
+      "title": "SpaceVue",
+      "version": "3.0.1",
+      "checkedAt": "2026-11-02T07:08:04.453Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/SpaceVue.zip",
+      "package": {
+        "name": "SpaceVue-sd-package.zip",
+        "bytes": 3593698,
+        "sha256": "acd0e0fb41dc635e12a34461921649861e21bc86db4802f58649a6a3a1d2cc0f",
+        "source": "https://switch.cdn.fortheusers.org/zips/SpaceVue.zip",
+        "version": "3.0.1",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/SpaceVue.nro",
+          "bytes": 8421717,
+          "sha256": "cab1cc6d9f7fd08f3f1e43a161ae1077a04d8e29036699cfcb7dd2820912c0ad",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1183,
+          "sha256": "c8c216b4c0d0bd966abbe8cd91cabad3c760330e7090656c3382dc7eaf2ab487",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 23,
+          "sha256": "d5686120d31273c6d072491b4c746350e906e5538fb8e962217a387cd72cb34a",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/SpaceVue.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "SpaceVue.nro",
+        "bytes": 8421717,
+        "sha256": "cab1cc6d9f7fd08f3f1e43a161ae1077a04d8e29036699cfcb7dd2820912c0ad",
+        "source": "https://switch.cdn.fortheusers.org/zips/SpaceVue.zip",
+        "version": "3.0.1",
+        "local": "/downloads/nintendo-switch/SpaceVue/3.0.1/SpaceVue.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "acd0e0fb41dc635e12a34461921649861e21bc86db4802f58649a6a3a1d2cc0f",
+          "member": "switch/SpaceVue.nro"
+        }
+      },
+      "installPath": "switch/SpaceVue.nro",
+      "officialNro": {
+        "name": "SpaceVue.nro",
+        "bytes": 8421717,
+        "sha256": "cab1cc6d9f7fd08f3f1e43a161ae1077a04d8e29036699cfcb7dd2820912c0ad",
+        "source": "https://github.com/esteban-cz/SpaceVue/releases/download/v3.0.1/SpaceVue.nro",
+        "version": "3.0.1",
+        "local": "/downloads/nintendo-switch/SpaceVue/3.0.1/SpaceVue.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "NXthemes_Installer",
+      "title": "NXThemes Installer",
+      "version": "nxt-3.0.2",
+      "checkedAt": "2026-11-02T07:08:30.638Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/NXthemes_Installer.zip",
+      "package": {
+        "name": "NXthemes_Installer-sd-package.zip",
+        "bytes": 5452743,
+        "sha256": "d45b52de0438d3176443dde162565609a7cfaec1dfaa4ec99f43ec9f99c476c9",
+        "source": "https://switch.cdn.fortheusers.org/zips/NXthemes_Installer.zip",
+        "version": "nxt-3.0.2",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/Switch_themes_Installer/NXThemesInstaller.nro",
+          "bytes": 10467778,
+          "sha256": "36ac0fac5477e08a176b2f155b8b3c170c1291004d943541348599bae8cf97a1",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 7464,
+          "sha256": "a5bc1310ec74be6bdf5194eb6b07cd5ba6b73fe31462464c2b97a756ac5ecb7a",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 56,
+          "sha256": "508e67a7a8549b7227daff1cd3223141b8e477e13a347f2782602a83e7f5cf70",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/Switch_themes_Installer/NXThemesInstaller.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "NXThemesInstaller.nro",
+        "bytes": 10467778,
+        "sha256": "36ac0fac5477e08a176b2f155b8b3c170c1291004d943541348599bae8cf97a1",
+        "source": "https://switch.cdn.fortheusers.org/zips/NXthemes_Installer.zip",
+        "version": "nxt-3.0.2",
+        "local": "/downloads/nintendo-switch/NXthemes_Installer/nxt-3.0.2/NXThemesInstaller.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "d45b52de0438d3176443dde162565609a7cfaec1dfaa4ec99f43ec9f99c476c9",
+          "member": "switch/Switch_themes_Installer/NXThemesInstaller.nro"
+        }
+      },
+      "installPath": "switch/Switch_themes_Installer/NXThemesInstaller.nro",
+      "officialNro": {
+        "name": "NXThemesInstaller.nro",
+        "bytes": 10467778,
+        "sha256": "36ac0fac5477e08a176b2f155b8b3c170c1291004d943541348599bae8cf97a1",
+        "source": "https://github.com/exelix11/SwitchThemeInjector/releases/download/nxt-3.0.2/NXThemesInstaller.nro",
+        "version": "nxt-3.0.2",
+        "local": "/downloads/nintendo-switch/NXthemes_Installer/nxt-3.0.2/NXThemesInstaller.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    },
+    {
+      "id": "SimpleModManager",
+      "title": "SimpleModManager",
+      "version": "2.1.4",
+      "checkedAt": "2026-11-02T07:08:52.170Z",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/SimpleModManager.zip",
+      "package": {
+        "name": "SimpleModManager-sd-package.zip",
+        "bytes": 4151256,
+        "sha256": "ace860afe31286b9ff8569e040bd56d6c948ea094f889b67ab05f43144a527d6",
+        "source": "https://switch.cdn.fortheusers.org/zips/SimpleModManager.zip",
+        "version": "2.1.4",
+        "mirrorReason": "Original store container retained in the F: archive; use its official source URL.",
+        "archived": true,
+        "role": "store-package"
+      },
+      "members": [
+        {
+          "path": "switch/SimpleModManager/SimpleModManager.nro",
+          "bytes": 8771712,
+          "sha256": "50031babc9fa28da497f2f18751fc0ae6abe1a17db5ae722bff47fda53c13349",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 7281,
+          "sha256": "d140881debb1043a14422d9c31e77794fd4c210f118d35e61a861b0347bd2a33",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 48,
+          "sha256": "5bdc530e2a87b5faf9c57bbf62c090093942ac6dc4172fca94be546bdc173c5d",
+          "directory": false
+        }
+      ],
+      "nroPaths": [
+        "switch/SimpleModManager/SimpleModManager.nro"
+      ],
+      "requiresBundle": false,
+      "nro": {
+        "name": "SimpleModManager.nro",
+        "bytes": 8771712,
+        "sha256": "50031babc9fa28da497f2f18751fc0ae6abe1a17db5ae722bff47fda53c13349",
+        "source": "https://switch.cdn.fortheusers.org/zips/SimpleModManager.zip",
+        "version": "2.1.4",
+        "local": "/downloads/nintendo-switch/SimpleModManager/2.1.4/SimpleModManager.nro",
+        "archived": true,
+        "role": "extracted-nro",
+        "derivedFrom": {
+          "sha256": "ace860afe31286b9ff8569e040bd56d6c948ea094f889b67ab05f43144a527d6",
+          "member": "switch/SimpleModManager/SimpleModManager.nro"
+        }
+      },
+      "installPath": "switch/SimpleModManager/SimpleModManager.nro",
+      "officialNro": {
+        "name": "SimpleModManager.nro",
+        "bytes": 8771712,
+        "sha256": "50031babc9fa28da497f2f18751fc0ae6abe1a17db5ae722bff47fda53c13349",
+        "source": "https://github.com/nadrino/SimpleModManager/releases/download/2.1.4/SimpleModManager.nro",
+        "version": "2.1.4",
+        "local": "/downloads/nintendo-switch/SimpleModManager/2.1.4/SimpleModManager.nro",
+        "archived": true,
+        "role": "official-nro"
+      },
+      "status": "downloaded"
+    }
+  ]
+}

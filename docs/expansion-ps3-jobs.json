@@ -1,0 +1,56 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {
+      "id": "ps3-ezremote-client",
+      "title": "ezRemote Client · PS3",
+      "platform": "PS3",
+      "category": "Tools",
+      "project": "ezRemote Client",
+      "version": "1.15",
+      "filename": "ps3-ezremote-client.pkg",
+      "url": "https://github.com/cy33hc/ps3-ezremote-client/releases/download/1.15/ps3-ezremote-client.pkg",
+      "pages": [
+        "console/ps3.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "ps3-simple-file-manager",
+      "title": "Simple File Manager · PS3",
+      "platform": "PS3",
+      "category": "Tools",
+      "project": "Simple File Manager",
+      "version": "v0.5.2",
+      "filename": "sfm_ps3.pkg",
+      "url": "https://github.com/lmirel/fm_psx/releases/download/v0.5.2/sfm_ps3.pkg",
+      "pages": [
+        "console/ps3.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "ps3-managunz",
+      "title": "ManaGunZ · PS3",
+      "platform": "PS3",
+      "category": "Tools",
+      "project": "ManaGunZ",
+      "version": "1.41",
+      "filename": "ManaGunZ_v1.41.pkg",
+      "url": "https://github.com/Zarh/ManaGunZ/releases/download/1.41/ManaGunZ_v1.41.pkg",
+      "pages": [
+        "console/ps3.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    }
+  ]
+}

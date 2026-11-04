@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "versions": [
+    "7.00",
+    "7.01",
+    "7.02",
+    "7.50",
+    "7.51",
+    "7.55",
+    "8.00",
+    "8.01",
+    "8.03",
+    "8.50",
+    "8.52",
+    "9.00",
+    "9.03",
+    "9.04",
+    "9.50",
+    "9.51",
+    "9.60",
+    "10.00",
+    "10.01",
+    "10.50",
+    "10.70",
+    "10.71",
+    "11.00",
+    "13.52",
+    "14.00"
+  ],
+  "routes": [
+    {
+      "id": "afterglow",
+      "title": "Afterglow · ps4-hen / GoldHEN",
+      "firmwares": [
+        "13.52",
+        "14.00"
+      ],
+      "url": "/hosts/runtime/ps4-afterglow-acf25a831725/web/index.html",
+      "kind": "Built-in browser route",
+      "requirements": [
+        "PS4 browser required",
+        "13.52 / 14.00 only",
+        "Autostart is opt-in"
+      ],
+      "source": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "sourceCommit": "acf25a831725f0d44fcb64725d4ce35acbba8f9d"
+    },
+    {
+      "id": "built-in-ps4-psfree-700-960",
+      "title": "PS4 7.00–9.60 · PSFree / Lapse",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "url": "/hosts/runtime/ps4-psfree-700-960/",
+      "kind": "Built-in browser route",
+      "requirements": [
+        "Open on the matching console browser and choose Start on the built-in loader page. Nothing runs when viewing the dashboard.",
+        "Native BIN listener: TCP 9020. Match this loader’s ABI; other payload transports are separate.",
+        "This PS4 bootstrap does not automatically load GoldHEN. Its raw BIN port 9020 is separate from GoldHEN HTTP port 9090 and ELF port 9021.",
+        "Static dependencies and file checksums verified. Console hardware execution has not been tested."
+      ],
+      "source": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6"
+    },
+    {
+      "id": "built-in-ps4-900",
+      "title": "PS4 9.00 · PSFree / Lapse",
+      "firmwares": [
+        "9.00"
+      ],
+      "url": "/hosts/runtime/ps4-900/",
+      "kind": "Built-in browser route",
+      "requirements": [
+        "Open on the matching console browser and choose Start on the built-in loader page. Nothing runs when viewing the dashboard.",
+        "Native BIN listener: TCP 9020. Match this loader’s ABI; other payload transports are separate.",
+        "This PS4 bootstrap does not automatically load GoldHEN. Its raw BIN port 9020 is separate from GoldHEN HTTP port 9090 and ELF port 9021.",
+        "Static dependencies and file checksums verified. Console hardware execution has not been tested."
+      ],
+      "source": "https://github.com/kmeps4/PSFree/tree/368d82aa40d3017c220757ce315761adb5f06678"
+    },
+    {
+      "id": "pppwn",
+      "title": "PPPwn",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00"
+      ],
+      "url": "https://github.com/TheOfficialFloW/PPPwn#readme",
+      "kind": "Ethernet / PPPoE",
+      "requirements": [
+        "Ethernet, Linux, Python3 and gcc. Configure the PS4 LAN connection as PPPoE. The original PoC only prints PPPwned; a compatible HEN stage2 is separate. This webpage does not perform PPPoE."
+      ],
+      "source": "https://github.com/TheOfficialFloW/PPPwn"
+    },
+    {
+      "id": "poobs4",
+      "title": "pOOBs4 · 9.00",
+      "firmwares": [
+        "9.00"
+      ],
+      "url": "https://github.com/ChendoChap/pOOBs4#readme",
+      "kind": "Browser + modified USB",
+      "requirements": [
+        "Requires a USB drive written with the project’s modified exFAT image. Follow the insertion/removal prompts. Its BIN listener uses TCP 9020; use a matching payload and sender. This is separate from the USB-free PSFree route."
+      ],
+      "source": "https://github.com/ChendoChap/pOOBs4"
+    }
+  ],
+  "notes": "Selector options derive from exact route lists; an option is not universal payload compatibility."
+}

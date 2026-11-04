@@ -1,0 +1,504 @@
+{
+  "reviewed": "2026-11-02",
+  "notes": [
+    "New resources were checked against their official project documentation and release assets. Firmware compatibility remains specific to each release.",
+    "Existing GoldHEN, etaHEN and Orbit entries retain their previously pinned versions.",
+    "Only relevant console release assets are queued for local archival; payloads are never executed."
+  ],
+  "platforms": {
+    "ps4": {
+      "apps": [
+        {
+          "id": "homebrew-store",
+          "title": "Homebrew Store · PS4",
+          "description": "Browse and install PS4 homebrew from the console. Use the standard PS4 package; the PS5 and legacy builds are separate.",
+          "repo": "LightningMods/PS4-Store",
+          "source": "https://github.com/LightningMods/PS4-Store",
+          "release": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+          "version": "4.5",
+          "image": "/assets/images/expansion-ps4-ps5/homebrew-store.png",
+          "downloads": [
+            {
+              "filename": "Store-R2.pkg",
+              "label": "Download PS4 package",
+              "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
+              "jobId": "expand-ps4-homebrew-store"
+            }
+          ]
+        },
+        {
+          "id": "ezremote",
+          "title": "ezRemote Client · PS4",
+          "description": "Transfer files between PS4 and FTP, SFTP, SMB, NFS, WebDAV or HTTP servers. Background transfers need GoldHEN’s BIN Loader.",
+          "repo": "cy33hc/ps4-ezremote-client",
+          "source": "https://github.com/cy33hc/ps4-ezremote-client",
+          "release": "https://github.com/cy33hc/ps4-ezremote-client/releases/tag/2.08",
+          "version": "2.08",
+          "image": "/assets/images/expansion-ps4-ps5/ps4-ezremote.jpg",
+          "downloads": [
+            {
+              "filename": "ezremote_client.pkg",
+              "label": "Download PS4 package",
+              "url": "https://github.com/cy33hc/ps4-ezremote-client/releases/download/2.08/ezremote_client.pkg",
+              "jobId": "expand-ps4-ezremote"
+            }
+          ]
+        },
+        {
+          "id": "ipi",
+          "title": "Internal PKG Installer",
+          "description": "Install local PKG files from PS4 internal storage after transferring them to /data. Keep space for both the package and installed app.",
+          "repo": "0x199/ps4-ipi",
+          "source": "https://github.com/0x199/ps4-ipi",
+          "release": "https://github.com/0x199/ps4-ipi/releases/tag/01.01",
+          "version": "01.01",
+          "image": "/assets/images/expansion-ps4-ps5/ipi.png",
+          "downloads": [
+            {
+              "filename": "IV0000-BREW00050_00-IPI0000000000000.pkg",
+              "label": "Download IPI",
+              "url": "https://github.com/0x199/ps4-ipi/releases/download/01.01/IV0000-BREW00050_00-IPI0000000000000.pkg",
+              "jobId": "expand-ps4-ipi"
+            }
+          ]
+        },
+        {
+          "id": "games-installer",
+          "title": "PS4 Games Installer",
+          "description": "Manage your own hosted package catalogue and installed library. Release r40 is tested on PS4 11.00 with GoldHEN and needs a reachable catalogue server.",
+          "repo": "e1z0/PS4-Games-Installer",
+          "source": "https://github.com/e1z0/PS4-Games-Installer",
+          "release": "https://github.com/e1z0/PS4-Games-Installer/releases/tag/r40",
+          "version": "r40",
+          "image": "/assets/images/expansion-ps4-ps5/games-installer.jpg",
+          "downloads": [
+            {
+              "filename": "PS4Game_installer-r40.pkg",
+              "label": "Download r40",
+              "url": "https://github.com/e1z0/PS4-Games-Installer/releases/download/r40/PS4Game_installer-r40.pkg",
+              "jobId": "expand-ps4-games-installer"
+            }
+          ]
+        },
+        {
+          "id": "payload-guest",
+          "title": "Payload Guest",
+          "description": "Launch your compatible BIN payloads from /data/payloads or a USB payloads folder using an on-console menu. Requires existing homebrew access.",
+          "repo": "Al-Azif/ps4-payload-guest",
+          "source": "https://github.com/Al-Azif/ps4-payload-guest",
+          "release": "https://github.com/Al-Azif/ps4-payload-guest/releases/tag/v0.98",
+          "version": "v0.98",
+          "image": "/assets/images/expansion-ps4-ps5/payload-guest.png",
+          "downloads": [
+            {
+              "filename": "IV0000-AZIF00003_00-PAYLOADGUEST0000.pkg",
+              "label": "Download Payload Guest",
+              "url": "https://github.com/Al-Azif/ps4-payload-guest/releases/download/v0.98/IV0000-AZIF00003_00-PAYLOADGUEST0000.pkg",
+              "jobId": "expand-ps4-payload-guest"
+            }
+          ]
+        }
+      ],
+      "payloads": [
+        {
+          "id": "ftpsrv",
+          "title": "ftpsrv · PS4",
+          "description": "FTP server payload for a jailbroken PS4 with a compatible ELF loader. Connect an FTP client on your local network to port 2121.",
+          "repo": "ps5-payload-dev/ftpsrv",
+          "source": "https://github.com/ps5-payload-dev/ftpsrv",
+          "release": "https://github.com/ps5-payload-dev/ftpsrv/releases/tag/v0.21.1",
+          "version": "v0.21.1",
+          "image": "/assets/images/expansion-ps4-ps5/ftpsrv.png",
+          "downloads": [
+            {
+              "filename": "ftpsrv-ps4.elf",
+              "label": "Download PS4 ELF",
+              "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps4.elf",
+              "jobId": "expand-ps4-ftpsrv"
+            }
+          ]
+        },
+        {
+          "id": "klogsrv",
+          "title": "klogsrv · PS4",
+          "description": "Stream console kernel logs to a local-network client on port 3232 for homebrew troubleshooting. Use the PS4 ELF build.",
+          "repo": "ps5-payload-dev/klogsrv",
+          "source": "https://github.com/ps5-payload-dev/klogsrv",
+          "release": "https://github.com/ps5-payload-dev/klogsrv/releases/tag/v0.9",
+          "version": "v0.9",
+          "image": "/assets/images/expansion-ps4-ps5/klogsrv.png",
+          "downloads": [
+            {
+              "filename": "klogsrv-ps4.elf",
+              "label": "Download PS4 ELF",
+              "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps4.elf",
+              "jobId": "expand-ps4-klogsrv"
+            }
+          ]
+        },
+        {
+          "id": "ps4debug",
+          "title": "ps4debug",
+          "description": "Debugging payload for compatible PS4 builds and external debugging clients. Version 1.1.19 lists specific firmware versions from 5.05 through 12.02; it does not establish 14.00 support.",
+          "repo": "GoldHEN/ps4debug",
+          "source": "https://github.com/GoldHEN/ps4debug",
+          "release": "https://github.com/GoldHEN/ps4debug/releases/tag/v1.1.19",
+          "version": "v1.1.19",
+          "image": "/assets/images/consoles/playstation.jpg",
+          "downloads": [
+            {
+              "filename": "ps4debug_v1.1.19.bin",
+              "label": "Download debugger BIN",
+              "url": "https://github.com/GoldHEN/ps4debug/releases/download/v1.1.19/ps4debug_v1.1.19.bin",
+              "jobId": "expand-ps4-ps4debug"
+            }
+          ]
+        },
+        {
+          "id": "gdbsrv",
+          "title": "gdbsrv · PS4",
+          "description": "GDB remote debugging server for homebrew development on a jailbroken PS4. Match the ELF loader and SDK requirements in the project documentation.",
+          "repo": "ps5-payload-dev/gdbsrv",
+          "source": "https://github.com/ps5-payload-dev/gdbsrv",
+          "release": "https://github.com/ps5-payload-dev/gdbsrv/releases/tag/v0.9",
+          "version": "v0.9",
+          "image": "/assets/images/expansion-ps4-ps5/gdbsrv.png",
+          "downloads": [
+            {
+              "filename": "gdbsrv-ps4.elf",
+              "label": "Download PS4 ELF",
+              "url": "https://github.com/ps5-payload-dev/gdbsrv/releases/download/v0.9/gdbsrv-ps4.elf",
+              "jobId": "expand-ps4-gdbsrv"
+            }
+          ]
+        }
+      ]
+    },
+    "ps5": {
+      "apps": [
+        {
+          "id": "ezremote",
+          "title": "ezRemote Client · PS5",
+          "description": "Manage PS5 files and transfers with the console client. Requires websrv running on the PS5; follow the loader and client installation instructions for this release.",
+          "repo": "cy33hc/ps5-ezremote-client",
+          "source": "https://github.com/cy33hc/ps5-ezremote-client",
+          "release": "https://github.com/cy33hc/ps5-ezremote-client/releases/tag/2.18",
+          "version": "2.18",
+          "image": "/assets/images/expansion-ps4-ps5/ps5-ezremote.jpg",
+          "downloads": [
+            {
+              "filename": "ezremote-client.zip",
+              "label": "Download app files",
+              "url": "https://github.com/cy33hc/ps5-ezremote-client/releases/download/2.18/ezremote-client.zip",
+              "jobId": "expand-ps5-ezremote-ezremote-client"
+            },
+            {
+              "filename": "ezRemote-Loader-1.01.elf",
+              "label": "Download app loader",
+              "url": "https://github.com/cy33hc/ps5-ezremote-client/releases/download/2.18/ezRemote-Loader-1.01.elf",
+              "jobId": "expand-ps5-ezremote-ezremote-loader-1-01"
+            }
+          ]
+        },
+        {
+          "id": "payload-manager",
+          "title": "Payload Manager",
+          "description": "On-console dashboard for browsing, importing and launching PS5 payloads. Load its ELF through your compatible PS5 homebrew environment.",
+          "repo": "itsPLK/ps5-payload-manager",
+          "source": "https://github.com/itsPLK/ps5-payload-manager",
+          "release": "https://github.com/itsPLK/ps5-payload-manager/releases/tag/v0.6.3",
+          "version": "v0.6.3",
+          "image": "/assets/images/expansion-ps4-ps5/payload-manager.png",
+          "downloads": [
+            {
+              "filename": "pldmgr_v0.6.3.elf",
+              "label": "Download manager ELF",
+              "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.3/pldmgr_v0.6.3.elf",
+              "jobId": "expand-ps5-payload-manager"
+            }
+          ]
+        },
+        {
+          "id": "ffplay",
+          "title": "FFplay · PS5",
+          "description": "Media-player homebrew distributed with the PS5 websrv project. Follow its homebrew-folder and websrv launch instructions.",
+          "repo": "ps5-payload-dev/websrv",
+          "source": "https://github.com/ps5-payload-dev/websrv",
+          "release": "https://github.com/ps5-payload-dev/websrv/releases/tag/v0.34",
+          "version": "v0.34",
+          "image": "/assets/images/expansion-ps4-ps5/ffplay.png",
+          "downloads": [
+            {
+              "filename": "FFplay.zip",
+              "label": "Download PS5 media player",
+              "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/FFplay.zip",
+              "jobId": "expand-ps5-ffplay"
+            }
+          ]
+        },
+        {
+          "id": "pkginstall",
+          "title": "PKGInstall · PS5",
+          "description": "Homebrew package-installation utility distributed by the PS5 websrv project. Read the included setup and supported-package requirements before use.",
+          "repo": "ps5-payload-dev/websrv",
+          "source": "https://github.com/ps5-payload-dev/websrv",
+          "release": "https://github.com/ps5-payload-dev/websrv/releases/tag/v0.34",
+          "version": "v0.34",
+          "image": "/assets/images/expansion-ps4-ps5/pkginstall.png",
+          "downloads": [
+            {
+              "filename": "PKGInstall.zip",
+              "label": "Download PS5 utility",
+              "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/PKGInstall.zip",
+              "jobId": "expand-ps5-pkginstall"
+            }
+          ]
+        },
+        {
+          "id": "garlic",
+          "title": "Garlic SaveMgr",
+          "description": "Back up and browse PS5 saves through a browser interface. Load the ELF with elfldr, then open the console’s port 8082 from a device on your local network.",
+          "repo": "earthonion/garlic-savemgr",
+          "source": "https://github.com/earthonion/garlic-savemgr",
+          "release": "https://github.com/earthonion/garlic-savemgr/releases/tag/v1.14",
+          "version": "v1.14",
+          "image": "/assets/images/expansion-ps4-ps5/garlic.png",
+          "downloads": [
+            {
+              "filename": "garlic-savemgr.elf",
+              "label": "Download save manager ELF",
+              "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.14/garlic-savemgr.elf",
+              "jobId": "expand-ps5-garlic"
+            }
+          ]
+        }
+      ],
+      "payloads": [
+        {
+          "id": "ftpsrv",
+          "title": "ftpsrv · PS5",
+          "description": "FTP server payload for a jailbroken PS5 with a compatible ELF loader. Connect from an FTP client on your local network to port 2121.",
+          "repo": "ps5-payload-dev/ftpsrv",
+          "source": "https://github.com/ps5-payload-dev/ftpsrv",
+          "release": "https://github.com/ps5-payload-dev/ftpsrv/releases/tag/v0.21.1",
+          "version": "v0.21.1",
+          "image": "/assets/images/expansion-ps4-ps5/ftpsrv.png",
+          "downloads": [
+            {
+              "filename": "ftpsrv-ps5.elf",
+              "label": "Download PS5 ELF",
+              "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
+              "jobId": "expand-ps5-ftpsrv"
+            }
+          ]
+        },
+        {
+          "id": "websrv",
+          "title": "websrv · PS5",
+          "description": "Run the PS5 homebrew web interface, browser-based file access and app launcher on port 8080. Requires an existing compatible ELF loader.",
+          "repo": "ps5-payload-dev/websrv",
+          "source": "https://github.com/ps5-payload-dev/websrv",
+          "release": "https://github.com/ps5-payload-dev/websrv/releases/tag/v0.34",
+          "version": "v0.34",
+          "image": "/assets/images/expansion-ps4-ps5/websrv.png",
+          "downloads": [
+            {
+              "filename": "websrv-ps5.elf",
+              "label": "Download PS5 ELF",
+              "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
+              "jobId": "expand-ps5-websrv"
+            }
+          ]
+        },
+        {
+          "id": "klogsrv",
+          "title": "klogsrv · PS5",
+          "description": "Stream console kernel logs to a local-network client on port 3232 for homebrew troubleshooting. Use the PS5 ELF build.",
+          "repo": "ps5-payload-dev/klogsrv",
+          "source": "https://github.com/ps5-payload-dev/klogsrv",
+          "release": "https://github.com/ps5-payload-dev/klogsrv/releases/tag/v0.9",
+          "version": "v0.9",
+          "image": "/assets/images/expansion-ps4-ps5/klogsrv.png",
+          "downloads": [
+            {
+              "filename": "klogsrv-ps5.elf",
+              "label": "Download PS5 ELF",
+              "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
+              "jobId": "expand-ps5-klogsrv"
+            }
+          ]
+        },
+        {
+          "id": "elfldr",
+          "title": "ELF Loader · PS5",
+          "description": "Background ELF payload loader that accepts payloads on port 9021. Start it through the compatible initial loader described by the project.",
+          "repo": "ps5-payload-dev/elfldr",
+          "source": "https://github.com/ps5-payload-dev/elfldr",
+          "release": "https://github.com/ps5-payload-dev/elfldr/releases/tag/v0.27",
+          "version": "v0.27",
+          "image": "/assets/images/expansion-ps4-ps5/elfldr.png",
+          "downloads": [
+            {
+              "filename": "elfldr-ps5.elf",
+              "label": "Download PS5 ELF",
+              "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
+              "jobId": "expand-ps5-elfldr"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "imageSources": [
+    {
+      "id": "homebrew-store",
+      "image": "/assets/images/expansion-ps4-ps5/homebrew-store.png",
+      "source": "https://raw.githubusercontent.com/LightningMods/PS4-Store/master/App%20Media-Assets/sce_sys/icon0.png",
+      "bytes": 218511,
+      "sha256": "c63d29cd382ef27c42996a31918166e17ec9ced3c6542d485eca2890adad17bf",
+      "type": "png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "ps4-ezremote",
+      "image": "/assets/images/expansion-ps4-ps5/ps4-ezremote.jpg",
+      "source": "https://raw.githubusercontent.com/cy33hc/ps4-ezremote-client/HEAD/screenshot.jpg",
+      "bytes": 238069,
+      "sha256": "fd3ba2912252d89753e95cc51f699fd7acaf17dcd30f038d9038fc114e40fa01",
+      "type": "jpeg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "ipi",
+      "image": "/assets/images/expansion-ps4-ps5/ipi.png",
+      "source": "https://raw.githubusercontent.com/0x199/ps4-ipi/main/pkg/sce_sys/icon0.png",
+      "bytes": 9514,
+      "sha256": "a88912ee0b45de162b1ebd2784737cc4bd7878856a83f888180c9cdb919d6257",
+      "type": "png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "games-installer",
+      "image": "/assets/images/expansion-ps4-ps5/games-installer.jpg",
+      "source": "https://raw.githubusercontent.com/e1z0/PS4-Games-Installer/main/Screenshots/20261017_001035_00608253.jpg",
+      "bytes": 690228,
+      "sha256": "e5c387fc1594b19b62a1b1a8165329065ef020bfcdace05fa833a6a9c7e791e7",
+      "type": "jpeg",
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "id": "payload-guest",
+      "image": "/assets/images/expansion-ps4-ps5/payload-guest.png",
+      "source": "https://raw.githubusercontent.com/Al-Azif/ps4-payload-guest/main/sce_sys/icon0.png",
+      "bytes": 4692,
+      "sha256": "6136e2659060629ceebe6286e6d035ac86dbb84649046ad4f8087360110ffa88",
+      "type": "png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "ps5-ezremote",
+      "image": "/assets/images/expansion-ps4-ps5/ps5-ezremote.jpg",
+      "source": "https://raw.githubusercontent.com/cy33hc/ps5-ezremote-client/HEAD/screenshot.jpg",
+      "bytes": 238069,
+      "sha256": "fd3ba2912252d89753e95cc51f699fd7acaf17dcd30f038d9038fc114e40fa01",
+      "type": "jpeg",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "payload-manager",
+      "image": "/assets/images/expansion-ps4-ps5/payload-manager.png",
+      "source": "https://raw.githubusercontent.com/itsPLK/ps5-payload-manager/main/pldmgr_screenshot.png",
+      "bytes": 249589,
+      "sha256": "65833da925a740a5f4ae526a26e0e3ded471130164041d23a10cd08d459decab",
+      "type": "png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "ffplay",
+      "image": "/assets/images/expansion-ps4-ps5/ffplay.png",
+      "source": "https://raw.githubusercontent.com/ps5-payload-dev/websrv/master/homebrew/FFplay/sce_sys/icon0.png",
+      "bytes": 68693,
+      "sha256": "91cb9f7df5a10b4fc1b2df844c169c6fb568fa14b1a3db7a8d20d3e6bea422bd",
+      "type": "png",
+      "width": 531,
+      "height": 514
+    },
+    {
+      "id": "pkginstall",
+      "image": "/assets/images/expansion-ps4-ps5/pkginstall.png",
+      "source": "https://raw.githubusercontent.com/ps5-payload-dev/websrv/master/homebrew/PKGInstall/sce_sys/icon0.png",
+      "bytes": 68250,
+      "sha256": "8585daa95825ec49d7a12b1487aa6336529fcb5407c1cd4707d81d44b426cc23",
+      "type": "png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "garlic",
+      "image": "/assets/images/expansion-ps4-ps5/garlic.png",
+      "source": "https://opengraph.githubassets.com/1/earthonion/garlic-savemgr",
+      "bytes": 111451,
+      "sha256": "5fcc15196a7bb9faa3b1b2dc10876e16cb821f8ea5c9e472ddced7c9eeb154d9",
+      "type": "png",
+      "width": 1200,
+      "height": 600
+    },
+    {
+      "id": "ftpsrv",
+      "image": "/assets/images/expansion-ps4-ps5/ftpsrv.png",
+      "source": "https://opengraph.githubassets.com/1/ps5-payload-dev/ftpsrv",
+      "bytes": 42351,
+      "sha256": "eb8154b6c398ff46637c4a4fa2c7c9ded9d0c618f1dab54653a90f18ba14daa3",
+      "type": "png",
+      "width": 1200,
+      "height": 600
+    },
+    {
+      "id": "klogsrv",
+      "image": "/assets/images/expansion-ps4-ps5/klogsrv.png",
+      "source": "https://opengraph.githubassets.com/1/ps5-payload-dev/klogsrv",
+      "bytes": 52493,
+      "sha256": "285a6c44c138936be10a3be7dd15beb6e33a2df28c181004e0cde7882a87bc1d",
+      "type": "png",
+      "width": 1200,
+      "height": 600
+    },
+    {
+      "id": "gdbsrv",
+      "image": "/assets/images/expansion-ps4-ps5/gdbsrv.png",
+      "source": "https://opengraph.githubassets.com/1/ps5-payload-dev/gdbsrv",
+      "bytes": 45428,
+      "sha256": "0ccc3466f381c35411a3540d666be1dec9feb43c36d152bfb60f55b837ff7714",
+      "type": "png",
+      "width": 1200,
+      "height": 600
+    },
+    {
+      "id": "websrv",
+      "image": "/assets/images/expansion-ps4-ps5/websrv.png",
+      "source": "https://opengraph.githubassets.com/1/ps5-payload-dev/websrv",
+      "bytes": 49592,
+      "sha256": "15fe0cf50140e9e0b7977870f2f6f6c9c9c6fc30192fac18cd1b347dce1f78e4",
+      "type": "png",
+      "width": 1200,
+      "height": 600
+    },
+    {
+      "id": "elfldr",
+      "image": "/assets/images/expansion-ps4-ps5/elfldr.png",
+      "source": "https://opengraph.githubassets.com/1/ps5-payload-dev/elfldr",
+      "bytes": 46731,
+      "sha256": "9675d5f825a7497f32afcb06416dec45071934cc34d7a245fba867b36a49cd2a",
+      "type": "png",
+      "width": 1200,
+      "height": 600
+    }
+  ]
+}

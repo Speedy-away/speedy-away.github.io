@@ -1,0 +1,50 @@
+{
+  "collections": [
+    {
+      "page": "source-codes/console/ps4/tools.html",
+      "title": "PS4 Tool & Plugin Source Codes",
+      "description": "Browse the archived GoldHEN Plugins Repository source code for PlayStation 4.",
+      "heading": "PS4 tools & plugins",
+      "trail": [["/source-codes/console/", "Console"], ["/source-codes/console/ps4/", "PS4"], ["/source-codes/console/ps4/tools.html", "Tools"]],
+      "projects": [{"inventoryId": "1a6c695dc889", "title": "GoldHEN Plugins Repository", "description": "PS4 plugin source code and project documentation. Match each plugin's game and firmware requirements."}]
+    },
+    {
+      "page": "source-codes/console/xbox360/index.html",
+      "title": "Xbox 360 Source Codes",
+      "description": "Browse the archived Xbox360PeerPressure source project for Xbox 360.",
+      "heading": "Xbox 360 projects",
+      "trail": [["/source-codes/console/", "Console"], ["/source-codes/console/xbox360/", "Xbox 360"]],
+      "projects": [{"inventoryId": "cb9a1acc80f6", "title": "Xbox360PeerPressure", "description": "Xbox 360 source project. Read the repository for build and system requirements.", "image": "/assets/images/custom-console-art/xbox360-peer-pressure.png"}]
+    },
+    {
+      "page": "source-codes/console/steamdeck/index.html",
+      "title": "Steam Deck Source Codes",
+      "description": "Browse the archived Decky Loader source project for Steam Deck.",
+      "heading": "Steam Deck projects",
+      "trail": [["/source-codes/console/", "Console"], ["/source-codes/console/steamdeck/", "Steam Deck"]],
+      "projects": [{"inventoryId": "2c33c25edbd1", "title": "Decky Loader", "description": "Steam Deck plugin-loader source code. Follow the project documentation to build from source.", "image": "/assets/images/consoles/decky-loader.png"}]
+    },
+    {
+      "page": "source-codes/pc/tools.html",
+      "title": "PC Tool Source Codes",
+      "description": "Browse archived PC tool source code for Xenos and GuidedHacking Injector.",
+      "heading": "PC tool projects",
+      "trail": [["/source-codes/pc/", "PC"], ["/source-codes/pc/tools.html", "Tools"]],
+      "projects": [
+        {"inventoryId": "6b8cd06e1708", "title": "Xenos", "description": "Windows injector source project and its archived source snapshot.", "image": "/assets/images/tools/xenos-injector.png"},
+        {"inventoryId": "e2b03c0ee29f", "title": "GuidedHacking Injector", "description": "Windows injection-tool source project. Check its documentation for build requirements."}
+      ]
+    },
+    {
+      "page": "source-codes/other/index.html",
+      "title": "Other Source Projects",
+      "description": "Browse source archives for graphics shaders and reusable development libraries, including SweetFX and sRDI.",
+      "heading": "Graphics & libraries",
+      "trail": [["/source-codes/other/", "Other Projects"]],
+      "projects": [
+        {"inventoryId": "b75361ec2fb1", "title": "SweetFX", "description": "Shader source code for graphics post-processing."},
+        {"inventoryId": "e011f90aa065", "title": "sRDI", "description": "Reflective DLL injection library source project for Windows development."}
+      ]
+    }
+  ]
+}

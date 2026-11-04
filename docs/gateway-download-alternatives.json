@@ -1,0 +1,118 @@
+{
+  "sources": [
+    {
+      "page": "https://bstlar.com/F/YimV2",
+      "title": "Yim v2 Menu (Enhanced)",
+      "downloads": [
+        {"url":"https://github.com/YimMenu/YimMenuV2/releases/download/nightly/YimMenuV2.dll","filename":"YimMenuV2.dll"}
+      ],
+      "evidence": [
+        "https://github.com/YimMenu/YimMenuV2",
+        "https://github.com/YimMenu/YimMenuV2/releases/tag/nightly"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/SamuraiLUA",
+      "title": "Samurai's Scripts",
+      "downloads": [
+        {"url":"https://github.com/YimMenu-Lua/Samurais-Scripts/releases/download/v2.0.4/Samurais_Scripts_v2.0.4.zip","filename":"Samurais_Scripts_v2.0.4.zip"}
+      ],
+      "evidence": [
+        "https://github.com/YimMenu-Lua/Samurais-Scripts",
+        "https://github.com/YimMenu-Lua/Samurais-Scripts/releases/tag/v2.0.4"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/UltimateLUA",
+      "title": "Ultimate - Recovery/Heists Editor/Unlocks/More (Legacy 1.73)",
+      "downloads": [
+        {"url":"https://github.com/UltimateMenu/UltimateMenu/releases/download/Ultimate_Menu_For_YimMenu_V3/Ultimate_Menu_V3_1.73_Legacy.lua","filename":"Ultimate_Menu_V3_1.73_Legacy.lua"}
+      ],
+      "evidence": [
+        "https://github.com/UltimateMenu/UltimateMenu",
+        "https://github.com/UltimateMenu/UltimateMenu/releases/tag/Ultimate_Menu_For_YimMenu_V3"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/VehicleRewardyimv1",
+      "title": "Vehicle Reward (YimMenu V1)",
+      "downloads": [
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/VehicleReward/main/vehicle_reward.lua","filename":"vehicle_reward.lua"},
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/VehicleReward/main/metadata.json","filename":"metadata.json"}
+      ],
+      "evidence": [
+        "https://github.com/YimMenu-Lua/VehicleReward",
+        "https://github.com/YimMenu-Lua/VehicleReward/blob/main/vehicle_reward.lua"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/BunkerResearchUnlockerYIM",
+      "title": "Bunker Research Unlocker (separate YimMenu V1 and V2 scripts)",
+      "downloads": [
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/BunkerResearchUnlocker/main/Bunker%20Research%20Unlocker.lua","filename":"Bunker Research Unlocker.lua"},
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/BunkerResearchUnlocker/main/Bunker%20Research%20Unlocker%20YimmenuV2.lua","filename":"Bunker Research Unlocker YimmenuV2.lua"},
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/BunkerResearchUnlocker/main/metadata.json","filename":"metadata.json"}
+      ],
+      "evidence": [
+        "https://github.com/YimMenu-Lua/BunkerResearchUnlocker"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/MissionsToolsYimv1",
+      "title": "Skip-missions / MissionTools (YimMenu V1)",
+      "downloads": [
+        {"url":"https://github.com/YimMenu-Lua/MissionTools/releases/download/v1.0/MissionTools.lua","filename":"MissionTools.lua"},
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/MissionTools/main/metadata.json","filename":"metadata.json"}
+      ],
+      "evidence": [
+        "https://github.com/YimMenu-Lua/MissionTools",
+        "https://github.com/YimMenu-Lua/MissionTools/releases/tag/v1.0"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/soloMissionsYimv1",
+      "title": "Solo Missions (YimMenu V1)",
+      "downloads": [
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/SoloMissions/main/SoloMissions.lua","filename":"SoloMissions.lua"},
+        {"url":"https://raw.githubusercontent.com/YimMenu-Lua/SoloMissions/main/mission_id.txt","filename":"mission_id.txt"}
+      ],
+      "evidence": [
+        "https://github.com/YimMenu-Lua/SoloMissions"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/AsphyxiaCS2src",
+      "title": "Asphyxia CS2 Source (archived official source ZIP)",
+      "downloads": [
+        {"url":"https://github.com/maecry/asphyxia-cs2/archive/refs/heads/master.zip","filename":"asphyxia-cs2-master.zip"}
+      ],
+      "evidence": [
+        "https://github.com/maecry/asphyxia-cs2",
+        "https://github.com/maecry/asphyxia-cs2/blob/master/readme.md"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/yimRDR2",
+      "title": "Horse/Yim Mod Menu (Red Dead Redemption 2)",
+      "downloads": [
+        {"url":"https://github.com/YimMenu/HorseMenu/releases/download/nightly/HorseMenu.dll","filename":"HorseMenu.dll"}
+      ],
+      "evidence": [
+        "https://github.com/YimMenu/HorseMenu",
+        "https://github.com/YimMenu/HorseMenu/releases/tag/nightly"
+      ]
+    },
+    {
+      "page": "https://bstlar.com/F/Exloader",
+      "title": "ExLoader (publisher installer ZIP)",
+      "downloads": [
+        {"url":"https://exloader.app/ExLoader_Installer.zip","filename":"ExLoader_Installer.zip"}
+      ],
+      "evidence": [
+        "https://exloader.app/en/",
+        "https://exloader.app/en/resources/scripts.js",
+        "https://t.me/s/ExLoaderApp?before=51"
+      ]
+    }
+  ]
+}

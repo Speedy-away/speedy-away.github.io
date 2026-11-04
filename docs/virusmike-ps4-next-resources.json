@@ -1,0 +1,779 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "source": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need",
+  "sourceScope": "Direct VirusMike Google Sites links and source-provided archive documentation. This audit adds no independently chosen GoldHEN game batch and does not replace the 38 pinned official GoldHEN files.",
+  "artifacts": [
+    {
+      "id": "virusmike-bo3-aio-v2",
+      "title": "VirusMike BO3 GSC Injector & Mods AIO Pack V2",
+      "version": "V2-BO3-01.33",
+      "filename": "GSC Injector & GSC Mods AIO Pack By VirusMike V2.rar",
+      "source": "https://www.mediafire.com/file/68p6hs8zx9fmx1a/GSC_Injector_%2526_GSC_Mods_AIO_Pack_By_VirusMike_V2.rar/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/call-of-duty-black-ops-iii",
+      "importPath": "docs/tmp/virusmike-ps4-next/GSC_Injector_GSC_Mods_AIO_Pack_By_VirusMike_V2.rar",
+      "bytes": 973715,
+      "sha256": "411bd9591e4ace83cee3b54210c079d5e0675f0cb7edd57eb0caca1f8f028c65",
+      "archiveType": "RAR5",
+      "titleIds": [
+        "CUSA03004",
+        "CUSA02290",
+        "CUSA02624"
+      ],
+      "gameUpdate": "01.33",
+      "inspection": {
+        "method": "Static 7-Zip listing and exact-member byte reads. No downloaded contents executed.",
+        "entries": 20,
+        "regularFiles": 16,
+        "directories": 4,
+        "menuScripts": 13,
+        "pluginBytes": 74176,
+        "pluginSha256": "22f9a6093011ee4ccd994181789021beed1f593d3b48f1241f623131c78b878b",
+        "pluginMagic": "4f153d1d",
+        "menuDirectoryInPlugin": "/data/T7 GSC Injector",
+        "licenseNotice": "No license file appears in this original supplied pack. Keep its original archive, contributor filenames and included readme together.",
+        "originalInjectorComparison": {
+          "local": "/downloads/ps4/BO3/injector/T7_GSC_Injector.prx",
+          "bytes": 94488,
+          "sha256": "7f0e438620094e864e2912ec56542835ee4fa6d03f419e609ea4749f331ff573",
+          "sameBytes": false,
+          "decision": "Keep the existing injector and pack as separate source builds. Do not replace either with this archive's PRX."
+        },
+        "members": [
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/GoldHEN/plugins/T7_GSC_Injector.prx",
+            "bytes": 74176,
+            "sha256": "22f9a6093011ee4ccd994181789021beed1f593d3b48f1241f623131c78b878b",
+            "magic": "4f153d1d"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/GoldHEN/plugins.ini",
+            "bytes": 460,
+            "sha256": "897b3e1841c5036213ce52f64b78c4e408e63d8a80c2427f215be1551ca1763c",
+            "magic": "5b435553"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/Read Important.txt",
+            "bytes": 318,
+            "sha256": "86f27c8bcb269a694557505f9c6450c1a662460f0c3ad488300ad222d0a2ae74",
+            "magic": "54372047"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/MP_EliteMossyMenu.gscc",
+            "bytes": 95056,
+            "sha256": "657ef2d327e0ac90beb2cfa44b0e59eeaac61261518992885d764ccd6d11fbcc",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/MP_EnCoReV13.2.gscc",
+            "bytes": 110240,
+            "sha256": "5ea863207c22d5bbb8440708dc0219e8dfa0c607b9559775a46a967607cbb62c",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/MP_SynMP-compiled.gsc",
+            "bytes": 151392,
+            "sha256": "dd5db85c1d88a30def26db0fcd20e991f0841250a6e0c274968c634ed126b62d",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_Apparition-PS4.gscc",
+            "bytes": 671936,
+            "sha256": "130f0ee65855e36394e4c6357c38b6d10e5ccdf9e7d1a7bfc777f2da65578823",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_DevolutionV1.gscc",
+            "bytes": 85536,
+            "sha256": "b449ea85ada5c7267eaa718560bc509bc3d5a13c3ae054aafbeb3b551d3ecf15",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_EnCoReV14.2ZM.gscc",
+            "bytes": 101712,
+            "sha256": "f27b57ae802b579a4f6bc5623e96843f9db296a583738e59b5f2dec2eae70ba6",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_Frostbite v1.1.3 PS4 Version.gscc",
+            "bytes": 648848,
+            "sha256": "d7513471ab2f0d2f477e9957eeb9f7150979c377667da235e42ff8210e5605a1",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_Luna-Ps4-1.10.0.gscc",
+            "bytes": 602304,
+            "sha256": "7e5cb01f5fcf1e4113d2633204e2b4e912fcfb4c2bd9858d5f9ecdff5de6da2f",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_PREDECESSOR_PS4_102.gscc",
+            "bytes": 623040,
+            "sha256": "f64cb49bee8dfbc1bebb63cd9c4588fb701cb1047e5dc80bca36f53e9d532a21",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_PS4_ZM_Snowy.gscc",
+            "bytes": 100016,
+            "sha256": "1c5ba47c944d65cdf786be6dc16f3474399099f7893a43942404e9b1e6e3a00c",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_PurpleLake.gscc",
+            "bytes": 87344,
+            "sha256": "456726dd08bbe77749414951b4f77846810b722514d0c904f79480f39448661e",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_SubVersion2.1.1.gscc",
+            "bytes": 287104,
+            "sha256": "8ddb42af3a259954a50892c5b8db99eae3ff345cb4faaba9d9faba1859edd209",
+            "magic": "80475343"
+          },
+          {
+            "path": "GSC Injector & GSC Mods AIO Pack By VirusMike V2/T7 GSC Injector/ZM_Vengeance.gscc",
+            "bytes": 133792,
+            "sha256": "31b09c3275cc3ae4470193567bf28e6406b516b43e12d3083b376c7caaeaa7af",
+            "magic": "80475343"
+          }
+        ],
+        "expandedBytes": 3773274,
+        "noLinks": true,
+        "relativePaths": true
+      }
+    }
+  ],
+  "resources": [
+    {
+      "id": "virusmike-bo3-aio-v2",
+      "gameIds": [
+        "black-ops-3"
+      ],
+      "category": "pack",
+      "group": "packs",
+      "publication": "include",
+      "name": "VirusMike BO3 AIO Pack V2",
+      "description": "GSC injector and 13 Multiplayer/Zombies menus for BO3 1.33.",
+      "version": "Pack V2",
+      "gameVersions": [
+        "01.33"
+      ],
+      "compatibilityText": "PS4 · BO3 01.33 · CUSA03004, CUSA02290 or CUSA02624. Requires compatible GoldHEN. Native PS5 support is not established.",
+      "tags": [
+        "PS4",
+        "BO3",
+        "GoldHEN",
+        "GSC",
+        "Multiplayer",
+        "Zombies"
+      ],
+      "source": {
+        "postUrl": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/call-of-duty-black-ops-iii",
+        "postTitle": "GSC Injector MP / ZM · GSC Mods AIO Pack V2",
+        "capturedAt": "2026-11-02",
+        "sourceSnapshot": "docs/tmp/virusmike-ps4-next/call-of-duty-black-ops-iii.html",
+        "archiveAssessment": "Original RAR contains one distinct T7 injector PRX, 13 menu scripts, plugins.ini and Read Important.txt. The existing site's standalone T7 injector has different bytes and remains preserved."
+      },
+      "downloads": [
+        {
+          "id": "virusmike-bo3-aio-v2",
+          "label": "Download AIO pack V2",
+          "filename": "GSC Injector & GSC Mods AIO Pack By VirusMike V2.rar",
+          "url": "https://www.mediafire.com/file/68p6hs8zx9fmx1a/GSC_Injector_%2526_GSC_Mods_AIO_Pack_By_VirusMike_V2.rar/file",
+          "distribution": "include"
+        }
+      ],
+      "images": [],
+      "guideLabel": "Setup & controls",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "text": "This is the original VirusMike V2 archive, with its injector, Multiplayer and Zombies scripts, INI example and readme. Extract it before use. The source lists BO3 game update 01.33 and CUSA03004, CUSA02290 or CUSA02624. These are source-stated requirements, not a physical-console test."
+        },
+        {
+          "type": "steps",
+          "title": "Prepare the supplied files",
+          "items": [
+            {
+              "title": "Extract and match your game",
+              "text": "Keep the original RAR. Extract its folders and check your installed BO3 title ID and game update. Use the matching GoldHEN environment supported by your console firmware."
+            },
+            {
+              "title": "Place the selected injector",
+              "text": "Copy this pack's T7_GSC_Injector.prx to /data/GoldHEN/plugins/. Preserve an existing injector with the same filename before changing it; the previously archived standalone build is different."
+            },
+            {
+              "title": "Merge only the matching plugin entry",
+              "text": "In /data/GoldHEN/plugins.ini, add /data/GoldHEN/plugins/T7_GSC_Injector.prx only under your installed BO3 CUSA section. Preserve existing entries. The pack's INI also names BO3-Customs and DeadOps plugins that are not included here, and repeats some sections; do not copy that entire INI over your configuration."
+            },
+            {
+              "title": "Place the menu scripts",
+              "text": "Copy the supplied T7 GSC Injector folder and its scripts to /data/T7 GSC Injector/. That directory is present as a literal path in this pack's PRX. Keep the MP and ZM filenames so you can select the intended mode."
+            },
+            {
+              "title": "Select and inject from the lobby",
+              "text": "Enable your configured GoldHEN plugin loading, then launch the matching game. The included readme says to select and inject a menu while in the game lobby before starting the match. It permits adding or removing menu files while the game is open."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The readme makes a broad firmware claim, but no specific firmware matrix or native PS5 instructions are supplied. Use the requirements of your compatible GoldHEN release. Preserve the source readme and all older archived builds."
+        }
+      ],
+      "controls": [
+        {
+          "input": "L1 + D-pad Left / Right",
+          "action": "Choose a GSC menu in the lobby"
+        },
+        {
+          "input": "L1 + R3",
+          "action": "Inject the selected GSC menu before starting the match"
+        }
+      ],
+      "videos": []
+    }
+  ],
+  "descriptors": [
+    {
+      "id": "virusmike-bo3-aio-v2",
+      "title": "VirusMike BO3 AIO Pack V2",
+      "platforms": [
+        "ps4"
+      ],
+      "category": "game-mod",
+      "version": "V2 · BO3 01.33",
+      "compatibility": "PS4 BO3 01.33 · CUSA03004, CUSA02290 or CUSA02624 · compatible GoldHEN required. Native PS5 support is not established.",
+      "image": "/assets/images/covers/cod-black-ops-3.jpg",
+      "page": "/console/mods/ps4/call-of-duty/black-ops-3/#guide-virusmike-bo3-aio-v2",
+      "source": "https://www.mediafire.com/file/68p6hs8zx9fmx1a/GSC_Injector_%2526_GSC_Mods_AIO_Pack_By_VirusMike_V2.rar/file",
+      "filename": "GSC Injector & GSC Mods AIO Pack By VirusMike V2.rar",
+      "format": "RAR archive",
+      "game": "black-ops-3",
+      "preparation": "Extract the complete pack. Preserve an existing injector, merge only your title's T7 plugin entry and keep the included menu scripts together. Follow Setup & controls before injection.",
+      "bytes": 973715,
+      "sha256": "411bd9591e4ace83cee3b54210c079d5e0675f0cb7edd57eb0caca1f8f028c65"
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "virusmike-bo3-cjhouse",
+      "title": "CJ House custom zombie map",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/call-of-duty-black-ops-iii",
+      "source": "https://www.mediafire.com/file/rbwfnw29u46mkdh/zm_cjhouse.rar/file",
+      "status": "incomplete-transfer",
+      "declaredSize": "428.01 MB on MediaFire",
+      "declaredBytes": 448796338,
+      "partialPath": "docs/tmp/virusmike-ps4-next/zm_cjhouse-1793607730048.rar",
+      "partialBytes": 312508416,
+      "completeSha256": null,
+      "reason": "MediaFire page HTTP 200; a transfer bounded to 512 MiB and 180 seconds timed out after receiving 312508416 of 448796338 bytes. Partial bytes remain preserved; no complete or ready download is claimed.",
+      "requirements": "The page lists BO3 01.33 with CUSA03004/CUSA02290/CUSA02624 and separate custom-map injector/AIO downloads. The CJ House archive was not fully retrieved or inspected; do not treat it as a complete install."
+    },
+    {
+      "id": "virusmike-chronoss-cheats-pack-v2",
+      "title": "GoldHEN Cheats Pack PKG by Chronoss v2",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-pkg-apps",
+      "source": "https://www.mediafire.com/file/nlisl76s0emamo2/GoldHEN_Cheats_Pack_PKG_by_Chronoss_v2.rar/file",
+      "alternativeSource": "https://mega.nz/file/sLwTFYaQ#MDu9UzcoGM197jhpj9DkLJt2dTXz68pVXqSCikhXnZo",
+      "status": "unavailable",
+      "bytes": null,
+      "sha256": null,
+      "reason": "Source MediaFire page returned HTTP 404. The public MEGA alternative returned ETOOMANY (-6), reporting too many concurrent IP addresses, during bounded metadata lookup. No PKG, title ID, game list or ready build has been verified."
+    }
+  ],
+  "sourceAudit": {
+    "checkedAt": "2026-11-02T08:42:42.059Z",
+    "method": "Direct HTTP fetch of the index and every distinct PS4 child URL observed in fetched anchor markup or decoded embed literals. Embedded scripts were treated as text, never executed. Google outbound wrappers were decoded to their actual source URLs.",
+    "pages": [
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/index.html",
+        "bytes": 278373,
+        "sha256": "47b790745a84494bc726a3f36aa943e7c7134b7c5f118b0d8c108b02e17416eb",
+        "decodedEmbedCount": 16,
+        "downloadLinks": [
+          {
+            "url": "https://mega.nz/folder/aUwkma5Y#__-GrZjHvMnRzqmKEZgITQ",
+            "label": "PS4 pkg Themes",
+            "heading": "",
+            "kind": "decoded-embed"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/bd-jb-by-gezine-isos",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/bd-jb-by-gezine-isos.html",
+        "bytes": 232630,
+        "sha256": "f406beefc87150dc9a8365035fa927749dea4173663bcecda534e04ef824d2e6",
+        "decodedEmbedCount": 3,
+        "downloadLinks": [
+          {
+            "url": "https://www.mediafire.com/file/j0biz69l0eur821/Lapse-v1.2-AIO-VirusMike.iso/file",
+            "label": "Literal URL in decoded embed",
+            "heading": "",
+            "kind": "decoded-embed-literal"
+          },
+          {
+            "url": "https://www.mediafire.com/file/h9nia14agtioqdg/Lapse-v1.2-AIO.iso/file",
+            "label": "Literal URL in decoded embed",
+            "heading": "",
+            "kind": "decoded-embed-literal"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/dying-light",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/dying-light.html",
+        "bytes": 224204,
+        "sha256": "a1d369835a81d6ccb2c2e53a4706b0ef26ba85e993251602e5e8b41fe607fefa",
+        "decodedEmbedCount": 3,
+        "downloadLinks": [
+          {
+            "url": "https://www.mediafire.com/file/tqy4hlcs24wh9ad/EP1018-CUSA03991_00-DLEEGAME0DEVMENU-A0135-V0100.pkg/file",
+            "label": "Dying Light 1.35 Developer Cheat Menu PKG By DEv_ShOoTz (6.76 GB)",
+            "heading": "Developer Menu",
+            "kind": "page"
+          },
+          {
+            "url": "https://www.mediafire.com/file/1y6ba7zg0m4f4l3/EP1018-CUSA03991_00-DLEEGAME000000V2-A0199-V0100.pkg",
+            "label": "Dying Light 01.00 Developer Cheat Menu PKG By DeathRGH (74.38 MB)",
+            "heading": "Developer Menu",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/dying-light-2",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/dying-light-2.html",
+        "bytes": 223979,
+        "sha256": "1534ce091b1154376617d4a171f87c8b3d13e8978946de1743ed5d08fb68e084",
+        "decodedEmbedCount": 3,
+        "downloadLinks": [
+          {
+            "url": "https://www.mediafire.com/file/7t019k2vujut867/EP2911-CUSA12555_00-DYINGLIGHT2GAMEU-A0101-V0100.pkg/file",
+            "label": "Dying Light 2 01.00 Developer Cheat Menu PKG By DEv_ShOoTz (338.48 MB)",
+            "heading": "Developer Menu",
+            "kind": "page"
+          },
+          {
+            "url": "https://www.mediafire.com/file/porw17fpmty2afu/Dying_Light_2_Dev_Menu.rar/file",
+            "label": "Dying Light 2 01.00 Developer Cheat Menu PKG By DEv_ShOoTz (338.48 MB)",
+            "heading": "Developer Menu",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/dead-island-riptide",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/dead-island-riptide.html",
+        "bytes": 224730,
+        "sha256": "5128be59447012cd85800976df736fc7fc539c21fad49dae03c4eb67e04586d5",
+        "decodedEmbedCount": 3,
+        "downloadLinks": [
+          {
+            "url": "https://sub4unlock.io/loy6c",
+            "label": "Dead Island Riptide 1.03 PS4 Dev Cheat Menu",
+            "heading": "Developer Menu",
+            "kind": "page"
+          },
+          {
+            "url": "https://sub4unlock.io/ZgiJN",
+            "label": "Dead Island Riptide 1.03 PS4 Dev Cheat Menu",
+            "heading": "Developer Menu",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/cod-ghosts",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/cod-ghosts.html",
+        "bytes": 212033,
+        "sha256": "39a663f737d5f7be847e170b71386f9ad13fae96749e3c1f065bb270c11ef6b6",
+        "decodedEmbedCount": 0,
+        "downloadLinks": [
+          {
+            "url": "https://mega.nz/file/Ufxg2aYK#Enfs3WutLYRsoZ1fFAAJhiMQA-5jiccQdJQJ_rpDlRA",
+            "label": "Appendum",
+            "heading": "Appendum (Game Version 1.00)",
+            "kind": "page"
+          },
+          {
+            "url": "https://sub4unlock.io/3v5SW",
+            "label": ")",
+            "heading": "Appendum (Game Version 1.00)",
+            "kind": "page"
+          },
+          {
+            "url": "https://sub4unlock.io/haO9x",
+            "label": "(elf File Only+Injector)",
+            "heading": "Appendum (Game Version 1.00)",
+            "kind": "page"
+          },
+          {
+            "url": "https://www.mediafire.com/file/4hsmuzvkf0gfjm9/SilentShadowV2%252BElf_Injector.rar/file",
+            "label": "SilentShadowV2 (Elf File+Injector)",
+            "heading": "SilentShadowV2 (Game Version 1.00)",
+            "kind": "page"
+          },
+          {
+            "url": "https://u.pcloud.link/publink/show?code=XZ1Mf9VZ5RpdgPQyLdFc1xMRly5YR5IxgX3y",
+            "label": "SilentShadowV2 (Elf File+Injector)",
+            "heading": "SilentShadowV2 (Game Version 1.00)",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/cod-mw2-remaster",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/cod-mw2-remaster.html",
+        "bytes": 203069,
+        "sha256": "fe6bc337bfe321fdc621b4d41c4e6f4a0ee3a5cf534ea960571cf70b9274558c",
+        "decodedEmbedCount": 0,
+        "downloadLinks": [
+          {
+            "url": "https://mega.nz/file/ZHQmVSBT#RgkE2vOLSoNZESvzo_2X4FClfI-woBExfr-vZypfLWU",
+            "label": "MW2 Mod Menu By TER152 (elf File)",
+            "heading": "MW2 Mod Menu By TER152",
+            "kind": "page"
+          },
+          {
+            "url": "https://mega.nz/file/gH5zAaCB#-rrJDf0tTO8KyT4yI8OTeVQvo18fpZCyM2Ohjw7Noa8",
+            "label": "MODMW2-LOADER (elf Injector)",
+            "heading": "MW2 Mod Menu By TER152",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/cod-modern-warfare-remastered",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/cod-modern-warfare-remastered.html",
+        "bytes": 201799,
+        "sha256": "e593a2f517bcdcd079b09023da64991e87390ab6ee8229c37c70110ec10fbd9a",
+        "decodedEmbedCount": 0,
+        "downloadLinks": [
+          {
+            "url": "https://sub4unlock.io/g5opY",
+            "label": "[1] MWR Mod Menu By Matrix (elf File &Injector)",
+            "heading": "Matrix Menu",
+            "kind": "page"
+          },
+          {
+            "url": "https://sub4unlock.io/Wxs7c",
+            "label": "[2] MWR Mod Menu By Matrix (elf File&Injector)",
+            "heading": "Matrix Menu",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-exploit-pages",
+        "httpStatus": 200,
+        "contentStatus": "Google sign-in page returned; underlying content unavailable",
+        "snapshot": "docs/tmp/virusmike-ps4-next/ps4-exploit-pages.html",
+        "bytes": 926484,
+        "sha256": "866c7d5d5e73f5c7cde21c9cff7cc8e7b0a7a0de93dec929a2ef4238049ab74f",
+        "decodedEmbedCount": 0,
+        "downloadLinks": []
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-theme",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/ps4-theme.html",
+        "bytes": 201995,
+        "sha256": "3b46714e814930a84fa081b218f795451cb7ae6703a452ab3d06bce84912bd53",
+        "decodedEmbedCount": 0,
+        "downloadLinks": [
+          {
+            "url": "https://www.mediafire.com/file/yckqpfsklap7bn1/EP9000-CUSA07875_00-PSLEGACYTHEME001.pkg/file",
+            "label": "[PS2 Legacy Dynamic Theme]",
+            "heading": "",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps2-pkg-games",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/ps2-pkg-games.html",
+        "bytes": 227698,
+        "sha256": "fde71f6699ca8880023b405fe47fde90a51458cab6f76200d36f6f20057a4a36",
+        "decodedEmbedCount": 6,
+        "downloadLinks": [
+          {
+            "url": "https://1fichier.com/?0fdj09c42y9ssqazda1f",
+            "label": "Link (1)",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://1fichier.com/?gnja503i4efv6dc04kgx",
+            "label": "Link (1)",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://mega.nz/file/klFnUCQI#YKox3Ql_a1yD0cb1b_R9VyRGsMQxq5S8VCnW4vwc6Wk",
+            "label": "Link (2)",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://1fichier.com/?m7nf7upcw1dwosu7nxrj",
+            "label": "Link (1)",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://mega.nz/file/rvJ3nKrD#xA_JHZgC-U0eW9YEiBOX7r5BLfqLgoCPidQEn0EiY5I",
+            "label": "Link (1)",
+            "heading": "",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-updates",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/ps4-updates.html",
+        "bytes": 206537,
+        "sha256": "440bc2bfe8ed2420bbf9fa47a09a8a45e709a720daff8c695d094bcdf94e81e4",
+        "decodedEmbedCount": 0,
+        "downloadLinks": []
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-pkg-apps",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/ps4-pkg-apps.html",
+        "bytes": 235401,
+        "sha256": "2d53889de84f021ae52c1f9b97e2c9be79e1d399877cdf30193cff32d6dadc66",
+        "decodedEmbedCount": 3,
+        "downloadLinks": [
+          {
+            "url": "https://mega.nz/file/cKo3XIbB#BexaOluFl2w66nLGwFyl1hbIFktUa38Qig4teuEDOaE",
+            "label": "(5.05/7.55/9.00)",
+            "heading": "YOUTUBE",
+            "kind": "page"
+          },
+          {
+            "url": "https://mega.nz/file/EG430QYB#IckhGUnSxJRVQG9BJ4AGYzpHlNr9Wo2i6usc1LOiEL0",
+            "label": "(5.05/7.55/9.00)",
+            "heading": "YOUTUBE",
+            "kind": "page"
+          },
+          {
+            "url": "https://www.mediafire.com/file/nlisl76s0emamo2/GoldHEN_Cheats_Pack_PKG_by_Chronoss_v2.rar/file",
+            "label": "(Mediafire Link)",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://mega.nz/file/sLwTFYaQ#MDu9UzcoGM197jhpj9DkLJt2dTXz68pVXqSCikhXnZo",
+            "label": "(Mega Link)",
+            "heading": "",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-pc-programs",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/ps4-pc-programs.html",
+        "bytes": 222415,
+        "sha256": "736e909cbc6aabd4a8f47c866fc463bfe52ff08ef88a7dec9f04fe7b644d58d7",
+        "decodedEmbedCount": 0,
+        "downloadLinks": [
+          {
+            "url": "https://www.mediafire.com/file/k2zhpmykb5h6ja7/Duxa%27s+PS4+patch+repackager+7.2.18.zip",
+            "label": "Duxas PS4 patch repackager 7.2.18",
+            "heading": "PS4 Games Reaper",
+            "kind": "page"
+          },
+          {
+            "url": "https://u.pcloud.link/publink/show?code=XZDll2VZTRk7rzH0THHY8j1Y2UoWI0htUYUy",
+            "label": "Duxas PS4 patch repackager 7.2.18",
+            "heading": "Duxas PS4 patch repackager 7.2.18 (Med Fire)",
+            "kind": "page"
+          },
+          {
+            "url": "https://sub4unlock.io/JAbTr",
+            "label": "PlayStation 4 Tool Box v2 [2.1.10.286]",
+            "heading": "Duxas PS4 patch repackager 7.2.18 (PCloud)",
+            "kind": "page"
+          },
+          {
+            "url": "https://sub4unlock.io/WJYky",
+            "label": "PlayStation 4 Tool Box v2 [2.1.10.286]",
+            "heading": "PlayStation 4 Tool Box v2 [2.1.10.286] New!!!",
+            "kind": "page"
+          },
+          {
+            "url": "https://www.mediafire.com/file/lgwohjl6imjkj11/PS4Themes%252BIMAGES.7z/file",
+            "label": "PS4Themes+IMAGES",
+            "heading": "ps4-remote-pkg-sender Public v2.8.0 Latest",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/60-fps-patches",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/60-fps-patches.html",
+        "bytes": 234576,
+        "sha256": "c571bd01eb22a627a2c8948fe0222a2e11dedde19e521316492f96a2f47272f9",
+        "decodedEmbedCount": 3,
+        "downloadLinks": [
+          {
+            "url": "https://www68.zippyshare.com/v/9HPEuELV/file.html",
+            "label": "Far Cry 3 Patch 60FPS CUSA10326",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://mega.nz/file/vZ8HHaZa#A__3LdlNrtqDqNaM78SBTn1ORXlCTpqaZ0jFxBeMwHU",
+            "label": "Uncharted Lost Legacy CUSA9564 patch 720p 60 fps",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://www75.zippyshare.com/v/zwcRlLef/file.html",
+            "label": "The Order 1886 CUSA00076 full screen 60 FPS",
+            "heading": "",
+            "kind": "page"
+          },
+          {
+            "url": "https://1fichier.com/?e2322zkmfcv241ellrb7",
+            "label": "Ghost of tsushima Patch 60 fps",
+            "heading": "",
+            "kind": "page"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/call-of-duty-black-ops-iii",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/call-of-duty-black-ops-iii.html",
+        "bytes": 246448,
+        "sha256": "ef77b80bf448d324f558a7846d62e5b3549b42bbeff201616ec4b0586ad2cbdb",
+        "decodedEmbedCount": 2,
+        "downloadLinks": [
+          {
+            "url": "https://www.mediafire.com/file/68p6hs8zx9fmx1a/GSC_Injector_%2526_GSC_Mods_AIO_Pack_By_VirusMike_V2.rar/file",
+            "label": "↓ Download GSC Injector & GSC Mods AIO Pack",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nil86U3947hwvyMSuWzfwPP2MhQD-x4W/view?usp=sharing",
+            "label": "↓ Google Drive Injector & ZM Maps AIO Pack",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://vikingfile.com/f/KjOyjds33V#ZM%20Maps%20Loader%20&%20Custom%20ZM%20Maps%20AIO%20Pack%20By%20VirusMike%20Fixed.rar%20-%2010.13%20GB",
+            "label": "↓ Viking File Injector & ZM Maps AIO Pack",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://akirabox.com/N2p3DP9kp3Ma/file",
+            "label": "↓ Akira Box Injector & ZM Maps AIO Pack",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://www.mediafire.com/file/rbwfnw29u46mkdh/zm_cjhouse.rar/file",
+            "label": "↓ Download CJ House Custom Zombie Map",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://vikingfile.com/f/KjOyjds33V#ZM",
+            "label": "Literal URL in decoded embed",
+            "heading": "",
+            "kind": "decoded-embed-literal"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-og-cod-games-ports",
+        "httpStatus": 200,
+        "contentStatus": "Source HTML read",
+        "snapshot": "docs/tmp/virusmike-ps4-next/ps4-og-cod-games-ports.html",
+        "bytes": 219603,
+        "sha256": "d53aa617a9cf587864b44a050d4aafebee04bc58271b92b991640e44f45b7d84",
+        "decodedEmbedCount": 2,
+        "downloadLinks": [
+          {
+            "url": "https://www.mediafire.com/file/wiyd6iiydlgvd2w/PS4_MW2_Port_Game_Files.rar/file",
+            "label": "📁 Port Game Files",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://www.mediafire.com/file/w8mdfxu3b5eti38/CoD_Updater_v01.00.pkg/file",
+            "label": "📁 COD Updater Pkg",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://www.mediafire.com/file/xi38mmvcwk0trg6/PS4_COD_4_Classic_port_game_files.rar/file",
+            "label": "PORT GAME FILES Download game files",
+            "heading": "",
+            "kind": "decoded-embed"
+          },
+          {
+            "url": "https://www.mediafire.com/file/rkghezopxs1nycb/CoD_Updater_v01.01.pkg/file",
+            "label": "COD UPDATER PKG Download update package",
+            "heading": "",
+            "kind": "decoded-embed"
+          }
+        ]
+      },
+      {
+        "url": "https://sites.google.com/view/im-virusmike-exe/ps4-pkg-apps",
+        "httpStatus": 404,
+        "resolvedUrl": "https://sites.google.com/view/im-virusmike-exe/ps4-pkg-apps",
+        "contentStatus": "Underlying page unavailable: HTTP 404",
+        "snapshot": "docs/tmp/virusmike-ps4-next/root-ps4-pkg-apps.html",
+        "bytes": 196077,
+        "sha256": "1817f0650fac35c79dcc9a1868ec47423646d73edd45850876516919482d6168",
+        "decodedEmbedCount": 0,
+        "downloadLinks": []
+      }
+    ],
+    "remainingObservedChildUrls": [],
+    "findings": [
+      "Eighteen observed PS4 URLs were fetched, including the alternate Apps URL found as a decoded embed literal (HTTP 404). No additional non-COD game child beyond Dying Light, Dying Light2 and Dead Island/Riptide appears in this index and its observed child navigation.",
+      "The BO3 child has genuine GSC-mod and custom-map downloads omitted from the current catalogue; this reviewed V2 AIO is the only complete newly staged artifact.",
+      "The top card labelled GTA V Mods incorrectly targets the BO3 child. This audit preserves the evidence without adding an incorrect GTA V resource.",
+      "The 60-fps-patches child lists Far Cry3 CUSA10326, Uncharted Lost Legacy CUSA9564 as written, The Order1886 CUSA00076 and Ghost of Tsushima. Old source destinations remain separate from independently archived upstream XML patches; this audit does not edit concurrent FPS work.",
+      "The full BO3 zombie-map AIO mirror is labelled10.13GB. It was not downloaded; custom-map loader/support requirements remain separate from the GSC menu injector pack.",
+      "Commercial game/update PKGs, OG COD port game-data archives and PS2 commercial packages are not mirrored by this audit. Sub4unlock gates stay intact; Bstlar remains skipped."
+    ],
+    "preservation": "No shared catalogue, source registry, builder or public page was written. Existing54game/41OtherGames collections and38officialGoldHEN records remain distinct; the new pack is an additional BO3 resource, not a new game."
+  }
+}

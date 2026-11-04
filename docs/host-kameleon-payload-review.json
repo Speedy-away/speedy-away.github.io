@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T14:49:55.894Z",
+  "scope": "Read-only primary-host and GitHub publisher audit; prepared download jobs/action metadata only. No payload execution, console contact, public download write, existing catalogue/UI mutation or archive write.",
+  "summary": {
+    "buttonsReviewed": 18,
+    "bytesReviewed": 348540,
+    "sourceConfirmedHTTPMappings": 18,
+    "alreadyArchivedPublisherExactMatches": 1,
+    "hostDeclared1300Ports": 17,
+    "bootstrapPayloads": 0,
+    "preparedJobs": "docs/host-web-utility-jobs.json",
+    "preparedActions": "docs/host-web-utility-actions.json",
+    "sourceCapture": "docs/qa/host-kameleon-webpayloads-source.json",
+    "sourceCaptureSHA256": "9e5e38084ed161a46fc387a610b2c36f34e0fbfddf33126be83ac89be0800bfa"
+  },
+  "transport": {
+    "type": "goldhen-http",
+    "port": 9090,
+    "statusPath": "/status",
+    "readyStatus": "ready",
+    "statusMethodInOriginal": "POST (the page fixes its destination to 127.0.0.1)",
+    "dataMethod": "POST",
+    "dataPath": "/",
+    "dataBody": "The fetched raw ArrayBuffer bytes. All 18 selected functions call LoadpayloadGoldHEN; the page’s separate BZ2 helper is not used by them.",
+    "stage": "Post-jailbreak GoldHEN BinLoader. No exploit/bootstrap is run by these buttons.",
+    "confirmation": "HTTP 200 is transfer acceptance only; the source’s Loaded label is not hardware verification.",
+    "integration": "Reuse the existing hash-verified GoldHEN HTTP client/paired sender. Keep native-console loopback distinct from a PC-entered console LAN address. No external Open Host redirect is required to execute these mapped utilities."
+  },
+  "firmwarePolicy": {
+    "ports": "Pin the 17 exact host-declared ports to 13.00 only, recording that this is a primary host declaration rather than independent hardware testing.",
+    "debug": "Preserve the official v1.1.19 exact whitelist through 12.02; do not add 13.00, 13.52 or 14.00.",
+    "noInference": "SDK definitions, matching filenames, old 9.00 files and successful byte transfer do not widen these pins."
+  },
+  "publisherMatches": [
+    {
+      "file": "pl_ps4debug.bin",
+      "sha256": "8af40c2412768bb2cd64c46b9913ee2f7ff2f076c98f6a2f5c7c0534aee15b2e",
+      "bytes": 84936,
+      "source": "https://github.com/GoldHEN/ps4debug/releases/tag/v1.1.19",
+      "commit": "ff8068c45a6d65012fd232e59c4835d1064f4ede",
+      "assetURL": "https://github.com/GoldHEN/ps4debug/releases/download/v1.1.19/ps4debug_v1.1.19.bin",
+      "existingInventoryId": "ps4-ps5-expand-ps4-ps4debug",
+      "exactFileMatch": true,
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "6.71",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.51",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02"
+      ],
+      "license": "No explicit licence found in the exact tagged tree, which contains README.md and ps4debug.bin."
+    }
+  ],
+  "sourceMismatch": [
+    {
+      "file": "pl_pkgbackup.bin",
+      "hostBytes": 33352,
+      "hostSHA256": "1a3d3dd41843d94cc4a3517caaefe8f8996f1bda7709a5856a711bfbaca6021b",
+      "publisherRelease": "https://github.com/kmeps4/PKG-BackUP/releases/tag/PKG-Backup-v1.3",
+      "publisherCommit": "2265105ea1fb262332f504c3d9a1b586c924eb90",
+      "publisherAsset": "ps4-pkg-backup_v13.bin",
+      "publisherBytes": 33224,
+      "publisherSHA256": "05f044b5c2d2e8e09615d59a3ff57d791289cb71ba08833ed428eef57c044298",
+      "publisherDeclaredRange": "3.00–12.02",
+      "hostDeclaredPort": "13.00",
+      "decision": "Keep the host snapshot as a separately identified port. Do not silently substitute the older official binary or apply its firmware range/source-build identity to the changed host file."
+    }
+  ],
+  "licensingReview": {
+    "explicitRightsHolderProhibitionFound": false,
+    "takedownClaimFound": false,
+    "publicationBlock": null,
+    "note": "The reviewed public host and publisher sources contain no identified prohibition or takedown request for this requested local integration. No open-source licence is invented for unmatched BINs. Record source/author and exact snapshot hash; keep every original and older version.",
+    "pkgBackup": "The official PKG-BackUP repository has GPL-3.0, but the changed live port has no exact corresponding source/build pin established by this audit.",
+    "debug": "The official tagged ps4debug binary has no explicit licence grant in its two-file tag tree.",
+    "otherPorts": "Scene-Collective tool/SDK sources are relevant provenance leads; their current definitions or licence do not by themselves identify the exact 17 compiled host ports."
+  },
+  "dependencies": [
+    {
+      "utility": "PKG Backup",
+      "requirement": "The official v1.3 workflow requires config.cfg at the external drive root. Preserve any existing configuration; obtain its documented configuration from the publisher if needed.",
+      "source": "https://github.com/kmeps4/PKG-BackUP/releases/tag/PKG-Backup-v1.3",
+      "publisherConfigBytes": 484,
+      "publisherConfigSHA256": "4f69d51beb4ef8ed10d0896607c94b60543a067baced439b7d9fe8d40c1bcfae",
+      "note": "Configuration is a supporting file, not an executable or an extra Load action. No configuration was downloaded or replaced here."
+    }
+  ],
+  "additionalSourceButtons": {
+    "count": 14,
+    "labels": [
+      "Linux Vram Payloads",
+      "9.60 Linux 1GB Vram",
+      "9.60 Linux 2GB Vram",
+      "9.60 Linux 3GB Vram",
+      "9.60 Linux 4GB Vram",
+      "10.0x Linux 1GB Vram",
+      "10.0x Linux 2GB Vram",
+      "10.0x Linux 3GB Vram",
+      "10.0x Linux 4GB Vram",
+      "11.00 Linux 1GB Vram",
+      "11.00 Linux 2GB Vram",
+      "11.00 Linux 3GB Vram",
+      "11.00 Linux 4GB Vram",
+      "Back"
+    ],
+    "note": "The live page also has twelve Linux VRAM variants and UI navigation controls. The Linux1100 function/file names conflict with 13.00 JavaScript loading labels while buttons say11.00. They are outside this eighteen-tool batch and need separate exact-source/firmware review."
+  },
+  "sources": [
+    {
+      "url": "https://www.kmeps4.site/webpayloads/index.html",
+      "sha256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+      "lastModified": "Thu, 12 Mar 2026 10:29:43 GMT",
+      "supports": "Exact functions, files, HTTP transport and host port declarations."
+    },
+    {
+      "url": "https://github.com/kmeps4",
+      "supports": "Author profile links to kmeps4.site."
+    },
+    {
+      "url": "https://api.github.com/repos/GoldHEN/ps4debug/releases/tags/v1.1.19",
+      "supports": "Exact official binary bytes/digest and firmware whitelist."
+    },
+    {
+      "url": "https://api.github.com/repos/GoldHEN/ps4debug/git/trees/ff8068c45a6d65012fd232e59c4835d1064f4ede?recursive=1",
+      "supports": "Exact tag tree and absence of an explicit licence file."
+    },
+    {
+      "url": "https://api.github.com/repos/kmeps4/PKG-BackUP/releases/tags/PKG-Backup-v1.3",
+      "supports": "Official1.3 asset size/digest/config and declared3.00–12.02 range."
+    },
+    {
+      "url": "https://github.com/kmeps4/PKG-BackUP/blob/2265105ea1fb262332f504c3d9a1b586c924eb90/LICENSE",
+      "supports": "Original project GPL-3.0; no exact changed-host-port source correspondence asserted."
+    }
+  ],
+  "entries": [
+    {
+      "id": "ps4-kme-web-pkg-backup-1300",
+      "label": "PKG Backup",
+      "format": "BIN",
+      "bytes": 33352,
+      "sha256": "1a3d3dd41843d94cc4a3517caaefe8f8996f1bda7709a5856a711bfbaca6021b",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-pkg-backup-1300/pl_pkgbackup.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_pkgbackup.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.3",
+      "sourceFunction": "load_pkgbackup",
+      "sourceDescription": "PKG-Backup v1.3 - Modded Version Of App Dumper / 13.00 Port By Kamaleon",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-app-dumper-1300",
+      "label": "App Dumper",
+      "format": "BIN",
+      "bytes": 26216,
+      "sha256": "290f83e02fb0cc86e659e7ec380021942430a7608d975f03676c8afc52ba7ab0",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-app-dumper-1300/pl_appdumper.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_appdumper.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.8",
+      "sourceFunction": "load_appdumper",
+      "sourceDescription": "App Dumper Only v1.8 - Original Version By xVortex / 13.00 Port Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-disable-updates-1300",
+      "label": "Disable Updates",
+      "format": "BIN",
+      "bytes": 8420,
+      "sha256": "d6d38701f5284f4764f47197052cb189a17120a7de5b961136c5f6045c30a1fc",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-disable-updates-1300/pl_disableupdates.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_disableupdates.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.0",
+      "sourceFunction": "load_disableupdates",
+      "sourceDescription": "Disable-Updates v1.0 - 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-enable-updates-1300",
+      "label": "Enable Updates",
+      "format": "BIN",
+      "bytes": 8388,
+      "sha256": "e261f6e0d18fbe95f3998b0d4b39f0683e125a04633d5333b44ade31ca074de8",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-enable-updates-1300/pl_enableupdates.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_enableupdates.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.0",
+      "sourceFunction": "load_enableupdates",
+      "sourceDescription": "Enable-Updates v1.0 - 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-enable-browser-1300",
+      "label": "Enable Browser",
+      "format": "BIN",
+      "bytes": 10420,
+      "sha256": "0e7c5fadc6fa4abbe5df7954f956d4c75aa71a4c03bcaf514c83578583a1a8ad",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-enable-browser-1300/pl_enablebrowser.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_enablebrowser.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_enablebrowser",
+      "sourceDescription": "Enable Browser / 13.00 Port Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-exit-idu-1300",
+      "label": "Exit IDU",
+      "format": "BIN",
+      "bytes": 10332,
+      "sha256": "f3aa40ba35081f2384d4ec5382950f04769153f4da9b4240989283ad14a94c48",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-exit-idu-1300/pl_exitidu.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_exitidu.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_exitidu",
+      "sourceDescription": "Exit IDU / 13.00 Port Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-rif-renamer-1300",
+      "label": "RIF Renamer",
+      "format": "BIN",
+      "bytes": 9188,
+      "sha256": "8dcb00ee027503d4388f2af88a6d386049458199669209511234f7dc9d36b79e",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-rif-renamer-1300/pl_rifrenamer.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_rifrenamer.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_rifrenamer",
+      "sourceDescription": "Rifrenamer / 13.00 Port Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-ftp-1300",
+      "label": "FTP Server",
+      "format": "BIN",
+      "bytes": 27492,
+      "sha256": "68577a874540b877ba7e95906a77060ff05480b37777d81bb0a4dfe139bda1d1",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-ftp-1300/pl_ftp.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_ftp.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_ftp",
+      "sourceDescription": "Ftp Server - Original Version By xVortex / 13.00 Port Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-history-blocker-1300",
+      "label": "History Blocker",
+      "format": "BIN",
+      "bytes": 10972,
+      "sha256": "a10b34e1cd810b11069c00eca5ca7672a9ab9a5f1c801a81faad36f264137d38",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-history-blocker-1300/pl_historyblocker.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_historyblocker.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "2.0",
+      "sourceFunction": "load_historyblocker",
+      "sourceDescription": "History-Blocker - v2.0 Original Version By Stooged / 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-kernel-dumper-1300",
+      "label": "Kernel Dumper",
+      "format": "BIN",
+      "bytes": 18588,
+      "sha256": "e4ea6a8b13a28991ece96b70fe88baeaea1cd99aee316db218fa1ce7464956d0",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-kernel-dumper-1300/pl_kerneldumper.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_kerneldumper.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.0",
+      "sourceFunction": "load_kerneldumper",
+      "sourceDescription": "Kernel-Dumper - v1.0 Original Version By Eversion / 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-module-dumper-1300",
+      "label": "Kernel Module Dumper",
+      "format": "BIN",
+      "bytes": 17772,
+      "sha256": "62640e215becf50e60690ea5867525e32443b23c1ac74f94a8c1ca78ba964457",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-module-dumper-1300/pl_moduledumper.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_moduledumper.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_moduledumper",
+      "sourceDescription": "Kernel-Module Dumper -  13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-ps4debug-v1-1-19",
+      "label": "ps4debug",
+      "format": "BIN",
+      "bytes": 84936,
+      "sha256": "8af40c2412768bb2cd64c46b9913ee2f7ff2f076c98f6a2f5c7c0534aee15b2e",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-ps4debug-v1-1-19/pl_ps4debug.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_ps4debug.bin",
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "6.71",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.51",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02"
+      ],
+      "firmwarePolicy": "publisher-exact-whitelist",
+      "utilityVersion": "1.1.19",
+      "sourceFunction": "load_ps4debug",
+      "sourceDescription": "Ps4Debug v1.1.19 - By CTN123",
+      "exactPublisherMatch": true
+    },
+    {
+      "id": "ps4-kme-web-db-backup-1300",
+      "label": "Database Backup",
+      "format": "BIN",
+      "bytes": 15092,
+      "sha256": "91eaee1292f8741bd9514fe4c4e3af99189359ae79ee3f75a7292df014d1f4b4",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-db-backup-1300/pl_backup.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_backup.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.0",
+      "sourceFunction": "load_backupdb",
+      "sourceDescription": "DB-Backup v1.0 - By Leeful / 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-db-restore-1300",
+      "label": "Database Restore",
+      "format": "BIN",
+      "bytes": 10796,
+      "sha256": "20c5fd911366bf688d3c569008d1e4e9a020948a0a18ffaa3a34077d898f2a49",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-db-restore-1300/pl_restore.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_restore.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.0",
+      "sourceFunction": "load_restoredb",
+      "sourceDescription": "DB-Restore v1.0 - By Leeful / 13.00 Port Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-app2usb-1300",
+      "label": "App2USB",
+      "format": "BIN",
+      "bytes": 25908,
+      "sha256": "a2e4ae50d28f7e870df21723d976ad9a714db7cd2bb3db21cbf1aac17dc68438",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-app2usb-1300/pl_app2usb.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_app2usb.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_app2usb",
+      "sourceDescription": "App-2-Usb - Original Version By Stooged / 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-to-dex-1300",
+      "label": "ToDEX",
+      "format": "BIN",
+      "bytes": 10164,
+      "sha256": "2fc2357636a04c073d7f904fb5e7ce65f75f3aa9e561287c1123a325b53bd30c",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-to-dex-1300/pl_todex.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_todex.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": "1.0",
+      "sourceFunction": "load_todex",
+      "sourceDescription": "To-Dex v1.0 - By notzecoxao / 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-permanent-uart-1300",
+      "label": "Permanent UART",
+      "format": "BIN",
+      "bytes": 10228,
+      "sha256": "1fe2747142285df475abbaaf2a02c28d30628d068c983d3178fab4c4609987f9",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-permanent-uart-1300/pl_permanentuart.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_permanentuart.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_uart",
+      "sourceDescription": "Permanent UART - 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    },
+    {
+      "id": "ps4-kme-web-disable-aslr-1300",
+      "label": "Disable ASLR",
+      "format": "BIN",
+      "bytes": 10276,
+      "sha256": "9548e6163969a77864eb4b9ef946faa9dd2322c08bf31a7af749eb123a08b59f",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-disable-aslr-1300/pl_disableaslr.bin",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_disableaslr.bin",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "utilityVersion": null,
+      "sourceFunction": "load_disableaslr",
+      "sourceDescription": "Disable ASLR - 13.00 Port By Al Azif",
+      "exactPublisherMatch": false
+    }
+  ],
+  "unchanged": "All current menus, source-host-only BIN compatibility, public downloads, archives, catalogues, UI and helper packages remain untouched by this review.",
+  "noPayloadExecuted": true,
+  "effectsReview": {
+    "reviewedAt": "2026-11-02T14:56:48.675Z",
+    "liveEvidence": "docs/qa/host-kameleon-utility-effects.json",
+    "confirmationCount": 12,
+    "confirmationPolicy": "Product confirmation only after a user explicitly presses Load. Selecting, downloading, opening a page or service checking must not execute any utility. Confirmation does not bypass target/hash/firmware/uncertain-transfer gates.",
+    "sourceContext": [
+      {
+        "url": "https://raw.githubusercontent.com/Scene-Collective/ps4-restore/main/source/main.c",
+        "supports": "Current restore source behavior and persistent overwrite/restart; live paths independently captured from this BIN."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Scene-Collective/ps4-app2usb/f998d6bcf5b22087ad2b68a32989b0ea31998224/source/main.c",
+        "supports": "Package relocation, verification, internal unlink/symlink and configuration selection; no exact host build identity asserted."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Scene-Collective/ps4-app2usb/main/app2usb.ini",
+        "supports": "MOUNT_POINT, IGNORE_UPDATES, MOVE_DLC and title selection options."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Scene-Collective/ps4-todex/df53c38c4e3e827ac2c17b77c3a255db18b83cc4/source/main.c",
+        "supports": "Target-ID0x82 spoof helper."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Scene-Collective/ps4-permanent-uart/332f23cca29f3a7a0de37452585205d0efdc22cb/source/main.c",
+        "supports": "Permanent UART helper invocation."
+      },
+      {
+        "url": "https://github.com/Scene-Collective/ps4-permanent-uart",
+        "supports": "Hardware UART persists through updates."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/Scene-Collective/ps4-payload-sdk/b7326416c23ce14639e9180a24093bdc5eedb579/libPS4/source/payload_utils.c",
+        "supports": "Target spoof writes kernel memory; permanent UART writes system-controller NVS."
+      }
+    ],
+    "notes": [
+      "The older pinned Restore source uses DB_Backup; that spelling is not prescribed for this live Leeful BIN. Its independently captured paths are PS4/Backup.",
+      "Original-source behavior is operational context, not proof that the exact live host file was built from that revision.",
+      "No byte, firmware pin, source URL or download path changed while adding effect descriptions/confirmation metadata."
+    ]
+  }
+}

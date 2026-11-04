@@ -1,0 +1,754 @@
+{
+  "verifiedAt": "2026-11-02T05:51:42.687Z",
+  "exactRequestedSource": "https://hb-app.store/",
+  "catalogueSource": "https://switch.cdn.fortheusers.org/repo.json",
+  "method": "Read-only official store metadata and linked project release/README API. No builds were executed.",
+  "apps": [
+    {
+      "id": "appstore",
+      "title": "Homebrew App Store",
+      "version": "2.3.2",
+      "storeUpdated": "10/01/2025",
+      "storeMD5": "85f80aaf45cc23b70de43a82d56273af",
+      "binary": "/switch/appstore/appstore.nro",
+      "license": "GPLv3",
+      "storeUrl": "https://hb-app.store/switch/appstore",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/appstore.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/appstore/icon.png",
+      "storeProjectUrl": "https://github.com/vgmoose/appstorenx",
+      "project": "https://github.com/fortheusers/hb-appstore",
+      "officialRelease": {
+        "url": "https://github.com/fortheusers/hb-appstore/releases/tag/v2.3.2",
+        "tag": "v2.3.2",
+        "publishedAt": "2023-03-23T15:54:19Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "appstore.nro",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/appstore.nro",
+            "size": 11104808,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "appstore.rpx",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/appstore.rpx",
+            "size": 3441085,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "appstore.wuhb",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/appstore.wuhb",
+            "size": 3499520,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "switch-extracttosd.zip",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/switch-extracttosd.zip",
+            "size": 7784395,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "wiiu-extracttosd.zip",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/wiiu-extracttosd.zip",
+            "size": 10128199,
+            "contentType": "application/zip"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/fortheusers/hb-appstore/blob/main/README.md",
+        "available": true
+      },
+      "installationSummary": "Extract the complete store ZIP to the SD card root, or place appstore.nro in /switch/appstore/. Launch Homebrew App Store from hbmenu.",
+      "requirementsSummary": "A Switch already able to open hbmenu, plus an internet connection for browsing and downloads. Prefer full application mode; the app warns when launched in applet mode."
+    },
+    {
+      "id": "hbmenu",
+      "title": "Homebrew Menu",
+      "version": "3.6.1",
+      "storeUpdated": "16/11/2025",
+      "storeMD5": "7e04919ef2351a8061ab3d58d531c696",
+      "binary": "/hbmenu.nro",
+      "license": "n/a",
+      "storeUrl": "https://hb-app.store/switch/hbmenu",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/hbmenu.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/hbmenu/icon.png",
+      "storeProjectUrl": "https://github.com/switchbrew/nx-hbmenu/",
+      "project": "https://github.com/switchbrew/nx-hbmenu",
+      "officialRelease": {
+        "url": "https://github.com/switchbrew/nx-hbmenu/releases/tag/v3.6.1",
+        "tag": "v3.6.1",
+        "publishedAt": "2025-11-15T16:53:18Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "nx-hbmenu_v3.6.1.zip",
+            "url": "https://github.com/switchbrew/nx-hbmenu/releases/download/v3.6.1/nx-hbmenu_v3.6.1.zip",
+            "size": 1249201,
+            "contentType": "application/zip"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/switchbrew/nx-hbmenu/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Place hbmenu.nro at the SD card root. Applications belong in /switch/. Follow your existing CFW guide to open hbmenu and use title takeover when an app needs full memory.",
+      "requirementsSummary": "An existing supported homebrew/CFW environment. Installing hbmenu alone does not enable homebrew on an unmodified console."
+    },
+    {
+      "id": "jksv",
+      "title": "JKSV",
+      "version": "12/02/2025",
+      "storeUpdated": "03/12/2025",
+      "storeMD5": "f68997d547fe7590eaf53e3008497ede",
+      "binary": "/switch/JKSV/JKSV.nro",
+      "license": "GPLv3",
+      "storeUrl": "https://hb-app.store/switch/jksv",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/jksv.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/jksv/icon.png",
+      "storeProjectUrl": "https://github.com/J-D-K/JKSV/releases",
+      "project": "https://github.com/J-D-K/JKSV",
+      "officialRelease": {
+        "url": "https://github.com/J-D-K/JKSV/releases/tag/12/02/2025",
+        "tag": "12/02/2025",
+        "publishedAt": "2025-12-02T14:08:19Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "JKSV.nro",
+            "url": "https://github.com/J-D-K/JKSV/releases/download/12/02/2025/JKSV.nro",
+            "size": 10130471,
+            "contentType": "application/x-nx-nro"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/J-D-K/JKSV/blob/rewrite/README.MD",
+        "available": true
+      },
+      "installationSummary": "Place JKSV.nro in /switch/JKSV/. Keep a separate copy of important save backups before restoring or removing any save data.",
+      "requirementsSummary": "An existing homebrew environment with save access. Full application mode is preferred; this release permits applet mode with a warning. Cloud services need separate account configuration."
+    },
+    {
+      "id": "Checkpoint",
+      "title": "Checkpoint",
+      "version": "5.3.0",
+      "storeUpdated": "21/10/2026",
+      "storeMD5": "8db0cb522a7e87519ac8423c2bb7d287",
+      "binary": "/switch/Checkpoint/Checkpoint.nro",
+      "license": "GPLv3",
+      "storeUrl": "https://hb-app.store/switch/Checkpoint",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Checkpoint.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/Checkpoint/icon.png",
+      "storeProjectUrl": "https://github.com/FlagBrew/Checkpoint",
+      "project": "https://github.com/BernardoGiordano/Checkpoint",
+      "officialRelease": {
+        "url": "https://github.com/BernardoGiordano/Checkpoint/releases/tag/v5.3.0",
+        "tag": "v5.3.0",
+        "publishedAt": "2026-10-13T19:22:44Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "Checkpoint.3dsx",
+            "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.3dsx",
+            "size": 3652156,
+            "contentType": "application/x-nintendo-3ds-executable"
+          },
+          {
+            "name": "Checkpoint.3dsx.elf",
+            "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.3dsx.elf",
+            "size": 47436676,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "Checkpoint.cia",
+            "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.cia",
+            "size": 2646976,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "Checkpoint.nro",
+            "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.nro",
+            "size": 5047633,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "Checkpoint.nro.elf",
+            "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.nro.elf",
+            "size": 64965504,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/BernardoGiordano/Checkpoint/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Place Checkpoint.nro in /switch/Checkpoint/. Backups are generated under /switch/Checkpoint/saves/. Export a backup before restoring a different one.",
+      "requirementsSummary": "Switch homebrew launcher and current supported CFW. This is the Switch NRO build, separate from the project’s 3DS releases. First title scan can take longer."
+    },
+    {
+      "id": "ftpd",
+      "title": "ftpd",
+      "version": "3.2.1",
+      "storeUpdated": "15/12/2024",
+      "storeMD5": "048fa2e3993eca0a54ac2e68d8c20e74",
+      "binary": "/switch/ftpd/ftpd.nro",
+      "license": "n/a",
+      "storeUrl": "https://hb-app.store/switch/ftpd",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/ftpd.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/ftpd/icon.png",
+      "storeProjectUrl": "https://github.com/mtheall/ftpd/releases/",
+      "project": "https://github.com/mtheall/ftpd",
+      "officialRelease": {
+        "url": "https://github.com/mtheall/ftpd/releases/tag/v3.2.1",
+        "tag": "v3.2.1",
+        "publishedAt": "2024-11-17T07:29:51Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "ftpd-classic.3dsx",
+            "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd-classic.3dsx",
+            "size": 312840,
+            "contentType": "application/x-nintendo-3ds-executable"
+          },
+          {
+            "name": "ftpd-classic.cia",
+            "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd-classic.cia",
+            "size": 612288,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "ftpd-classic.nro",
+            "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd-classic.nro",
+            "size": 531599,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "ftpd.3dsx",
+            "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.3dsx",
+            "size": 1408252,
+            "contentType": "application/x-nintendo-3ds-executable"
+          },
+          {
+            "name": "ftpd.cia",
+            "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.cia",
+            "size": 1344448,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "ftpd.nds",
+            "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.nds",
+            "size": 431104,
+            "contentType": "application/x-nintendo-ds-rom"
+          },
+          {
+            "name": "ftpd.nro",
+            "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.nro",
+            "size": 1533963,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/mtheall/ftpd/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Extract the ZIP to the SD root for standard and classic NRO variants. Launch the preferred variant, then connect to the displayed address from an FTP client.",
+      "requirementsSummary": "Switch and FTP client on the same trusted local network. The app displays the address; the store documents port 5000."
+    },
+    {
+      "id": "ftpsrv",
+      "title": "ftpsrv",
+      "version": "1.2.2",
+      "storeUpdated": "23/03/2025",
+      "storeMD5": "ab96a2379a3f0ec9677dbe23eb57f7e3",
+      "binary": "/switch/ftpsrv.nro",
+      "license": "n/a",
+      "storeUrl": "https://hb-app.store/switch/ftpsrv",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/ftpsrv.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/ftpsrv/icon.png",
+      "storeProjectUrl": "https://github.com/ITotalJustice/ftpsrv",
+      "project": "https://github.com/ITotalJustice/ftpsrv",
+      "officialRelease": {
+        "url": "https://github.com/ITotalJustice/ftpsrv/releases/tag/1.2.2",
+        "tag": "1.2.2",
+        "publishedAt": "2025-01-16T21:37:27Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "3ds.zip",
+            "url": "https://github.com/ITotalJustice/ftpsrv/releases/download/1.2.2/3ds.zip",
+            "size": 93246,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "nds.zip",
+            "url": "https://github.com/ITotalJustice/ftpsrv/releases/download/1.2.2/nds.zip",
+            "size": 167666,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "switch_application.zip",
+            "url": "https://github.com/ITotalJustice/ftpsrv/releases/download/1.2.2/switch_application.zip",
+            "size": 447541,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "switch_sysmod.zip",
+            "url": "https://github.com/ITotalJustice/ftpsrv/releases/download/1.2.2/switch_sysmod.zip",
+            "size": 129705,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "wii.zip",
+            "url": "https://github.com/ITotalJustice/ftpsrv/releases/download/1.2.2/wii.zip",
+            "size": 244805,
+            "contentType": "application/zip"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/ITotalJustice/ftpsrv/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Extract the full ZIP to the SD root, keeping /config/ftpsrv/config.ini alongside the NRO. Configure login before connecting.",
+      "requirementsSummary": "The application build needs /config/ftpsrv/config.ini with a username/password or anon=1 before login works. A separate sysmodule variant exists upstream and is not this application."
+    },
+    {
+      "id": "NX-shell",
+      "title": "NX-Shell",
+      "version": "4.01",
+      "storeUpdated": "08/08/2022",
+      "storeMD5": "149a47027c4a3b309ed31c7a9d71b6be",
+      "binary": "/switch/NX-Shell/NX-Shell.nro",
+      "license": "GPLv3",
+      "storeUrl": "https://hb-app.store/switch/NX-shell",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/NX-shell.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/NX-shell/icon.png",
+      "storeProjectUrl": "https://github.com/joel16/NX-Shell/releases",
+      "project": "https://github.com/joel16/NX-Shell",
+      "officialRelease": {
+        "url": "https://github.com/joel16/NX-Shell/releases/tag/4.01",
+        "tag": "4.01",
+        "publishedAt": "2022-08-07T18:32:20Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "NX-Shell.nro",
+            "url": "https://github.com/joel16/NX-Shell/releases/download/4.01/NX-Shell.nro",
+            "size": 8575621,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/joel16/NX-Shell/blob/next-opengl3/README.md",
+        "available": true
+      },
+      "installationSummary": "Place NX-Shell.nro in /switch/NX-Shell/. Keep backups before using file deletion or move actions.",
+      "requirementsSummary": "An existing homebrew environment. This is the official 4.01 build from 2022; a current firmware compatibility range is not documented here."
+    },
+    {
+      "id": "NXMP",
+      "title": "nxmp",
+      "version": "0.9.3",
+      "storeUpdated": "17/12/2025",
+      "storeMD5": "f7d9db1a9ffd9519c0d41b36a4f8a6d6",
+      "binary": "/switch/nxmp/nxmp.nro",
+      "license": "n/a",
+      "storeUrl": "https://hb-app.store/switch/NXMP",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/NXMP.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/NXMP/icon.png",
+      "storeProjectUrl": "https://github.com/proconsule/nxmp/releases",
+      "project": "https://github.com/proconsule/nxmp",
+      "officialRelease": {
+        "url": "https://github.com/proconsule/nxmp/releases/tag/v0.9.3",
+        "tag": "v0.9.3",
+        "publishedAt": "2025-12-17T09:24:48Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "nxmp-0.9.3.zip",
+            "url": "https://github.com/proconsule/nxmp/releases/download/v0.9.3/nxmp-0.9.3.zip",
+            "size": 45558017,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/proconsule/nxmp/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Extract the complete ZIP to the SD card root so the nxmp folder remains at /switch/nxmp/. Keep its bundled resources and configuration together.",
+      "requirementsSummary": "A homebrew-capable Switch. Keep the supplied data/configuration files; network sources must be configured separately. No media content is included."
+    },
+    {
+      "id": "Moonlight-Switch",
+      "title": "Moonlight-Switch",
+      "version": "1.5.0",
+      "storeUpdated": "25/05/2026",
+      "storeMD5": "bee44e3d4899a635bb41431b4f1613f4",
+      "binary": "/switch/Moonlight-Switch/Moonlight-Switch.nro",
+      "license": "GPLv3",
+      "storeUrl": "https://hb-app.store/switch/Moonlight-Switch",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Moonlight-Switch.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/Moonlight-Switch/icon.png",
+      "storeProjectUrl": "https://github.com/XITRIX/Moonlight-Switch/releases",
+      "project": "https://github.com/XITRIX/Moonlight-Switch",
+      "officialRelease": {
+        "url": "https://github.com/XITRIX/Moonlight-Switch/releases/tag/v1.5.0",
+        "tag": "v1.5.0",
+        "publishedAt": "2026-05-24T20:04:16Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "Debug.elf",
+            "url": "https://github.com/XITRIX/Moonlight-Switch/releases/download/v1.5.0/Debug.elf",
+            "size": 107233680,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "moonlight-app-release.apk",
+            "url": "https://github.com/XITRIX/Moonlight-Switch/releases/download/v1.5.0/moonlight-app-release.apk",
+            "size": 51417949,
+            "contentType": "application/vnd.android.package-archive"
+          },
+          {
+            "name": "Moonlight-Switch.nro",
+            "url": "https://github.com/XITRIX/Moonlight-Switch/releases/download/v1.5.0/Moonlight-Switch.nro",
+            "size": 17677907,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "Moonlight-windows-clangarm64.zip",
+            "url": "https://github.com/XITRIX/Moonlight-Switch/releases/download/v1.5.0/Moonlight-windows-clangarm64.zip",
+            "size": 43799061,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "Moonlight-windows-ucrt64.zip",
+            "url": "https://github.com/XITRIX/Moonlight-Switch/releases/download/v1.5.0/Moonlight-windows-ucrt64.zip",
+            "size": 56517053,
+            "contentType": "application/zip"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/XITRIX/Moonlight-Switch/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Place Moonlight-Switch.nro in /switch/Moonlight-Switch/. Start the host, pair from the app and choose a streamed application.",
+      "requirementsSummary": "A configured compatible host such as Sunshine on your PC, network access between host and Switch, and a homebrew environment. The NRO is the console client; PC/Android builds are separate."
+    },
+    {
+      "id": "switchident-GUI",
+      "title": "SwitchIdent",
+      "version": "0.5",
+      "storeUpdated": "25/06/2023",
+      "storeMD5": "5021247a7d2bb629095a087407938de7",
+      "binary": "/switch/switchident-GUI/SwitchIdent.nro",
+      "license": "GPLv3",
+      "storeUrl": "https://hb-app.store/switch/switchident-GUI",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/switchident-GUI.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/switchident-GUI/icon.png",
+      "storeProjectUrl": "https://github.com/joel16/SwitchIdent/releases",
+      "project": "https://github.com/joel16/SwitchIdent",
+      "officialRelease": {
+        "url": "https://github.com/joel16/SwitchIdent/releases/tag/0.5",
+        "tag": "0.5",
+        "publishedAt": "2023-06-19T20:12:56Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "SwitchIdent.nro",
+            "url": "https://github.com/joel16/SwitchIdent/releases/download/0.5/SwitchIdent.nro",
+            "size": 8963995,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/joel16/SwitchIdent/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Place SwitchIdent.nro in /switch/switchident-GUI/ and open it from hbmenu.",
+      "requirementsSummary": "A homebrew-capable Switch. This is the GUI 0.5 build from 2023, rather than the retired console-interface variant. No modern firmware range is claimed."
+    },
+    {
+      "id": "Switch_90DNS_Tester",
+      "title": "Switch 90DNS tester",
+      "version": "1.0.4",
+      "storeUpdated": "15/11/2022",
+      "storeMD5": "23402546610e1dacea17781b3b644442",
+      "binary": "/switch/Switch_90DNS_Tester/Switch_90DNS_tester.nro",
+      "license": "Lesser GPLv3",
+      "storeUrl": "https://hb-app.store/switch/Switch_90DNS_Tester",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/Switch_90DNS_Tester.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/Switch_90DNS_Tester/icon.png",
+      "storeProjectUrl": "https://github.com/meganukebmp/Switch_90DNS_tester/releases",
+      "project": "https://github.com/meganukebmp/Switch_90DNS_tester",
+      "officialRelease": {
+        "url": "https://github.com/meganukebmp/Switch_90DNS_tester/releases/tag/v1.1.0",
+        "tag": "v1.1.0",
+        "publishedAt": "2026-04-26T22:50:53Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "Switch_90DNS_tester.nro",
+            "url": "https://github.com/meganukebmp/Switch_90DNS_tester/releases/download/v1.1.0/Switch_90DNS_tester.nro",
+            "size": 255950,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/meganukebmp/Switch_90DNS_tester/blob/master/README.MD",
+        "available": true
+      },
+      "installationSummary": "Place Switch_90DNS_tester.nro in /switch/Switch_90DNS_Tester/. Run after configuring the network you want to check; the app is a tester, not a DNS configuration installer.",
+      "requirementsSummary": "A homebrew-capable Switch and an active network connection. Results concern DNS reachability only and do not guarantee protection from bans. Store build is 1.0.4; upstream also has a newer 1.1.0 release."
+    },
+    {
+      "id": "OpenSupaplex",
+      "title": "OpenSupaplex",
+      "version": "7.2.2",
+      "storeUpdated": "31/03/2026",
+      "storeMD5": "9b4c4c8cb65c31556844cc4f2d94e203",
+      "binary": "/switch/OpenSupaplex/OpenSupaplex.nro",
+      "license": "GPLv3",
+      "storeUrl": "https://hb-app.store/switch/OpenSupaplex",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/OpenSupaplex.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/OpenSupaplex/icon.png",
+      "storeProjectUrl": "https://github.com/sergiou87/open-supaplex/releases",
+      "project": "https://github.com/sergiou87/open-supaplex",
+      "officialRelease": {
+        "url": "https://github.com/sergiou87/open-supaplex/releases/tag/v7.2.2",
+        "tag": "v7.2.2",
+        "publishedAt": "2026-03-30T23:08:13Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "OpenSupaplex-3ds.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-3ds.zip",
+            "size": 9511476,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-linux.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-linux.zip",
+            "size": 4025185,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-macOS.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-macOS.zip",
+            "size": 8974450,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-psp.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-psp.zip",
+            "size": 5038192,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-riscos.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-riscos.zip",
+            "size": 4583537,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-switch.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-switch.zip",
+            "size": 7243227,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-wii.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-wii.zip",
+            "size": 4805829,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-wiiu.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-wiiu.zip",
+            "size": 5182547,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex-windows-x86_64.zip",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-windows-x86_64.zip",
+            "size": 6698270,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "OpenSupaplex.nds",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex.nds",
+            "size": 9090048,
+            "contentType": "application/x-nintendo-ds-rom"
+          },
+          {
+            "name": "OpenSupaplex.pkg",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex.pkg",
+            "size": 10568992,
+            "contentType": "application/x-xar"
+          },
+          {
+            "name": "OpenSupaplex.vpk",
+            "url": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex.vpk",
+            "size": 4635077,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/sergiou87/open-supaplex/blob/master/README.md",
+        "available": true
+      },
+      "installationSummary": "Extract the full ZIP to the SD card root. Preserve /switch/OpenSupaplex/ and all supplied game resources; copying only the NRO is insufficient.",
+      "requirementsSummary": "A homebrew-capable Switch and the complete Switch package. The game’s data files must stay with its executable."
+    },
+    {
+      "id": "2048",
+      "title": "2048",
+      "version": "1.2.0",
+      "storeUpdated": "12/03/2026",
+      "storeMD5": "316d699fe3873848cf20fdcb20775ca7",
+      "binary": "/switch/2048.nro",
+      "license": "MIT",
+      "storeUrl": "https://hb-app.store/switch/2048",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/2048.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/2048/icon.png",
+      "storeProjectUrl": "https://github.com/TooTallNate/switch-2048",
+      "project": "https://github.com/TooTallNate/switch-2048",
+      "officialRelease": {
+        "url": "https://github.com/TooTallNate/switch-2048/releases/tag/v1.2.0",
+        "tag": "v1.2.0",
+        "publishedAt": "2026-02-25T11:14:03Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "2048.nro",
+            "url": "https://github.com/TooTallNate/switch-2048/releases/download/v1.2.0/2048.nro",
+            "size": 7817135,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/TooTallNate/switch-2048/blob/main/README.md",
+        "available": true
+      },
+      "installationSummary": "Place 2048.nro in /switch/ and launch 2048 from hbmenu.",
+      "requirementsSummary": "An existing Switch homebrew environment. The official release provides a ready NRO; no commercial game files are needed."
+    },
+    {
+      "id": "SuDokuL",
+      "title": "SuDokuL",
+      "version": "1.5",
+      "storeUpdated": "10/05/2026",
+      "storeMD5": "c98737d4ff65af99f867ec75b9d1e5c6",
+      "binary": "/switch/SuDokuL/SuDokuL.nro",
+      "license": "MIT",
+      "storeUrl": "https://hb-app.store/switch/SuDokuL",
+      "packageUrl": "https://switch.cdn.fortheusers.org/zips/SuDokuL.zip",
+      "iconUrl": "https://switch.cdn.fortheusers.org/packages/SuDokuL/icon.png",
+      "storeProjectUrl": "https://github.com/Mode8fx/SuDokuL",
+      "project": "https://github.com/Mode8fx/SuDokuL",
+      "officialRelease": {
+        "url": "https://github.com/Mode8fx/SuDokuL/releases/tag/v1.5",
+        "tag": "v1.5",
+        "publishedAt": "2026-05-10T02:54:37Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "SuDokuL-v1.5-3ds-cia.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-3ds-cia.zip",
+            "size": 2692972,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-3ds.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-3ds.zip",
+            "size": 2171732,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-android.apk",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-android.apk",
+            "size": 11655335,
+            "contentType": "application/vnd.android.package-archive"
+          },
+          {
+            "name": "SuDokuL-v1.5-funkey.opk",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-funkey.opk",
+            "size": 913408,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "SuDokuL-v1.5-gamecube.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-gamecube.zip",
+            "size": 2538252,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-linux.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-linux.zip",
+            "size": 1370967,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-psp.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-psp.zip",
+            "size": 3100048,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-switch.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-switch.zip",
+            "size": 5424660,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-vita.vpk",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-vita.vpk",
+            "size": 3504034,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "SuDokuL-v1.5-wii.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-wii.zip",
+            "size": 3092800,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-wiiu.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-wiiu.zip",
+            "size": 7398757,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-x64.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-x64.zip",
+            "size": 12220029,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-x86.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-x86.zip",
+            "size": 9045088,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "officialReadme": {
+        "url": "https://github.com/Mode8fx/SuDokuL/blob/main/README.md",
+        "available": true
+      },
+      "installationSummary": "Extract the complete ZIP to the SD card root, keeping the supplied SuDokuL folder and resources together.",
+      "requirementsSummary": "A homebrew-capable Switch. Use the complete Switch package and retain the provided game resources."
+    }
+  ]
+}

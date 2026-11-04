@@ -1,0 +1,64 @@
+{
+  "reviewed": "2026-11-02",
+  "page": "console/retro/ps2.html",
+  "tools": [
+    {
+      "id":"freemcboot","job":"ps2-freemcboot","title":"FreeMcBoot 1.966","version":"1.966 · custom installer",
+      "description":"Memory-card boot menu for launching PS2 homebrew. Use a compatible console and card; late SCPH-900xx units with boot ROM 2.30 or newer and PS2 TV cannot start FMCB directly.",
+      "tags":["Memory card","Softmod","FMCB","Boot menu"],"group":"setup",
+      "image":"/assets/images/expansion-ps2/fmcb.png","imageAlt":"Free McBoot project logo and developer credits",
+      "project":"https://github.com/israpps/FreeMcBoot-Installer","guide":"https://israpps.github.io/FreeMcBoot-Installer/test/6_FAQ.html","guideLabel":"Model compatibility",
+      "release":"https://github.com/israpps/FreeMcBoot-Installer/releases/tag/latest","buildCommit":"6aa96da"
+    },
+    {
+      "id":"opentuna","job":"ps2-opentuna","title":"OpenTuna installer","version":"Build 9b61aee",
+      "description":"Memory-card browser exploit for supported Fat and Slim PS2 systems, including later Slims that cannot autoboot FMCB. The project lists SCPH-18000 through SCPH-90010 and PS2 TV. Back up the card: installation deletes existing APPS, FORTUNA and OPENTUNA folders.",
+      "tags":["Memory card","Browser exploit","Fat & Slim","OpenTuna"],"group":"setup",
+      "image":"/assets/images/expansion-ps2/opentuna.png","imageAlt":"Official OpenTuna memory-card installer artwork",
+      "project":"https://github.com/ps2homebrew/opentuna-installer","guide":"https://github.com/ps2homebrew/opentuna-installer#readme","guideLabel":"Installer requirements",
+      "release":"https://github.com/ps2homebrew/opentuna-installer/releases/tag/latest","buildCommit":"9b61aee"
+    },
+    {
+      "id":"opl","job":"ps2-opl","title":"Open PS2 Loader","version":"Stable 1.1.0",
+      "description":"Game and ELF application loader with USB, network and internal-HDD options, virtual memory cards and controller features. Storage support depends on your hardware and build; this download is the stable 1.1.0 release.",
+      "tags":["OPL","App launcher","USB","SMB","HDD","VMC"],"group":"apps",
+      "image":"/assets/images/expansion-ps2/opl.png","imageAlt":"Open PS2 Loader logo",
+      "project":"https://github.com/ps2homebrew/Open-PS2-Loader","guide":"https://www.ps2homebrew.org/Open-PS2-Loader-User-Guide/","guideLabel":"OPL user guide",
+      "release":"https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/v1.1.0"
+    },
+    {
+      "id":"wlaunchelf","job":"ps2-wlaunchelf","title":"wLaunchELF","version":"4.43a · development build 57c2049",
+      "description":"File browser and ELF launcher for memory cards, USB and other supported PS2 storage. Includes a text editor, hard-drive management and FTP support. The linked BOOT.ELF is an upstream development build.",
+      "tags":["wLE","uLaunchELF","File manager","ELF","FTP"],"group":"apps",
+      "image":"/assets/images/expansion-ps2/wlaunchelf-screen.png","imageAlt":"Example LaunchELF 4.43a menu in the Play! emulator",
+      "project":"https://github.com/ps2homebrew/wLaunchELF","guide":"https://github.com/ps2homebrew/wLaunchELF/tree/master/docs","guideLabel":"Configuration docs",
+      "release":"https://github.com/ps2homebrew/wLaunchELF/releases/tag/latest","buildCommit":"57c2049"
+    },
+    {
+      "id":"apollo","job":"ps2-apollo","title":"Apollo Save Tool · PS2","version":"1.0.2",
+      "description":"Manage PS2 and PS1 saves, import or export supported save formats, work with virtual memory cards and apply supported save patches. Keep original saves before editing or restoring them.",
+      "tags":["Save manager","PS2 & PS1","Memory card","VMC","Import & export"],"group":"apps",
+      "image":"/assets/images/expansion-ps2/apollo.png","imageAlt":"Apollo Save Tool PS2 main menu screenshot",
+      "project":"https://github.com/bucanero/apollo-ps2","guide":"https://github.com/bucanero/apollo-ps2#readme","guideLabel":"Setup & save formats",
+      "release":"https://github.com/bucanero/apollo-ps2/releases/tag/v1.0.2"
+    },
+    {
+      "id":"ps2ident","job":"ps2-ps2ident","title":"PS2Ident","version":"0.850",
+      "description":"Inspect console identifiers, ROM versions and hardware information. The retail-console build also supports creating dumps from your own system for research; the separate PS2TOOL and desktop database builds are different downloads.",
+      "tags":["Hardware info","Boot ROM","Diagnostics","Retail PS2"],"group":"apps",
+      "image":"/assets/images/expansion-ps2/ps2ident.png","imageAlt":"Official blue circuit-board background used by PS2Ident",
+      "project":"https://github.com/ps2homebrew/PS2Ident","guide":"https://github.com/ps2homebrew/PS2Ident#readme","guideLabel":"Usage & hardware notes",
+      "release":"https://github.com/ps2homebrew/PS2Ident/releases/tag/stable","buildCommit":"ca2b5acc"
+    }
+  ],
+  "sources": [
+    {"url":"https://israpps.github.io/FreeMcBoot-Installer/test/6_FAQ.html","supports":"FMCB model, boot-ROM, modchip and memory-card compatibility"},
+    {"url":"https://sites.google.com/view/ysai187/home/projects/fmcbfhdb","supports":"Original FMCB installer workflow and memory-card backup options"},
+    {"url":"https://github.com/ps2homebrew/opentuna-installer","supports":"OpenTuna supported model range and installer folder-deletion behavior"},
+    {"url":"https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/v1.1.0","supports":"Stable OPL release and ready build filenames"},
+    {"url":"https://github.com/ps2homebrew/wLaunchELF","supports":"File manager, ELF launcher, editor, HDD and FTP features"},
+    {"url":"https://github.com/bucanero/apollo-ps2","supports":"PS1/PS2 save and VMC formats, official app screenshot"},
+    {"url":"https://github.com/ps2homebrew/PS2Ident/releases/tag/stable","supports":"PS2Ident 0.850 retail-console build, distinct from PS2TOOL and PC helper"}
+  ],
+  "imageProvenance": "assets/images/expansion-ps2/sources.json"
+}

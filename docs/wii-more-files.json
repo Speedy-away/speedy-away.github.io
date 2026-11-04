@@ -1,0 +1,209 @@
+{
+  "checkedAt": "2026-11-02T08:48:32.547Z",
+  "files": [
+    {
+      "slug": "wiimc",
+      "name": "wiimc-1.3.4.zip",
+      "version": "1.3.4",
+      "bytes": 6267819,
+      "sha256": "58b858bf30e82b0be7dd02f1b832acc725cf32fe2a9f4546ba6e745926ff2cf1",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiimc/wiimc.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/wiimc-1.3.4.zip",
+      "itemId": "wii-more-wiimc",
+      "platform": "Wii",
+      "category": [
+        "Tools"
+      ]
+    },
+    {
+      "slug": "cavestory",
+      "name": "cavestory-1.0.1.zip",
+      "version": "1.0.1",
+      "bytes": 9304946,
+      "sha256": "794840e77b4bd855286f95f3d4059a329653a2d357cfab074e93706f9ff506f0",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/cavestory/cavestory.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/cavestory-1.0.1.zip",
+      "itemId": "wii-more-cavestory",
+      "platform": "Wii",
+      "category": [
+        "Homebrew Games"
+      ]
+    },
+    {
+      "slug": "supertux",
+      "name": "supertux-0.1.4-wii-d.07.zip",
+      "version": "0.1.4-wii-d.07",
+      "bytes": 10219416,
+      "sha256": "7cc4fbaeb1e33a3988266b6be19ac190970c7ec0d0ef4dd3cedb3352e95c73ad",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/supertux/supertux.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/supertux-0.1.4-wii-d.07.zip",
+      "itemId": "wii-more-supertux",
+      "platform": "Wii",
+      "category": [
+        "Homebrew Games"
+      ]
+    },
+    {
+      "slug": "snes9xgx",
+      "name": "snes9xgx-5.0.4.zip",
+      "version": "5.0.4",
+      "bytes": 2988096,
+      "sha256": "b0df208477455d4d7bc8052f9c5698e780551bd14fb6cb0240974ee0e2704bc1",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/snes9xgx/snes9xgx.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/snes9xgx-5.0.4.zip",
+      "itemId": "wii-more-snes9xgx",
+      "platform": "Wii",
+      "category": [
+        "Emulators"
+      ]
+    },
+    {
+      "slug": "not64",
+      "name": "not64-2026-04-10.zip",
+      "version": "2026-04-10",
+      "bytes": 1852870,
+      "sha256": "73e31681dd2dbda5769cfd79638f9275ec9b660730950007a75afcc4ff8e7489",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/not64/not64.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/not64-2026-04-10.zip",
+      "itemId": "wii-more-not64",
+      "platform": "Wii",
+      "category": [
+        "Emulators"
+      ]
+    },
+    {
+      "slug": "WiiSXRX",
+      "name": "WiiSXRX-3.3_Beta.zip",
+      "version": "3.3 Beta",
+      "bytes": 841768,
+      "sha256": "3ffc03c1e0035d942d8a1dcbe27e0a64b8bd124c138519d19db3c22d68e5b564",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/WiiSXRX/WiiSXRX.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/WiiSXRX-3.3_Beta.zip",
+      "itemId": "wii-more-WiiSXRX",
+      "platform": "Wii",
+      "category": [
+        "Emulators"
+      ]
+    },
+    {
+      "slug": "helium",
+      "name": "helium-0.1.1.zip",
+      "version": "0.1.1",
+      "bytes": 3166200,
+      "sha256": "bab11081df9ceb062b352ee7f16cbb9a52f766beb8c879b440cf0d6b2c6ed0df",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/helium/helium.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/helium-0.1.1.zip",
+      "itemId": "wii-more-helium",
+      "platform": "Wii",
+      "category": [
+        "Homebrew Games"
+      ]
+    },
+    {
+      "slug": "wiixplorer",
+      "name": "wiixplorer-r259.zip",
+      "version": "r259",
+      "bytes": 2452156,
+      "sha256": "2fb33da9736f08398cb59cb4029504094273b4fbcb57b634f8cec8a047ad11cd",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiixplorer/wiixplorer.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/wiixplorer-r259.zip",
+      "itemId": "wii-more-wiixplorer",
+      "platform": "Wii",
+      "category": [
+        "Tools"
+      ]
+    },
+    {
+      "slug": "vbagx",
+      "name": "vbagx-3.0.4.zip",
+      "version": "3.0.4",
+      "bytes": 3565078,
+      "sha256": "998202066ca46602b642e6f7343985160e3cabcc8e108c4815ab5c82dc5ca79d",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/vbagx/vbagx.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/vbagx-3.0.4.zip",
+      "itemId": "wii-more-vbagx",
+      "platform": "Wii",
+      "category": [
+        "Emulators"
+      ]
+    },
+    {
+      "slug": "mgba",
+      "name": "mgba-0.10.5.zip",
+      "version": "0.10.5",
+      "bytes": 990061,
+      "sha256": "44c65b34b01abfaa06dc084728886319a3561e54d0960a7b0cdba0bb4ecae91f",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/mgba/mgba.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/mgba-0.10.5.zip",
+      "itemId": "wii-more-mgba",
+      "platform": "Wii",
+      "category": [
+        "Emulators"
+      ]
+    },
+    {
+      "slug": "scummvm",
+      "name": "scummvm-2026.1.0.zip",
+      "version": "2026.1.0",
+      "bytes": 73135442,
+      "sha256": "cf7a756cb4e153f59f79fe0ec444c2a0fb007ebb4c192a7de0c11bbaabcab4ef",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/scummvm/scummvm.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/scummvm-2026.1.0.zip",
+      "itemId": "wii-more-scummvm",
+      "platform": "Wii",
+      "category": [
+        "Emulators"
+      ]
+    },
+    {
+      "slug": "fceugx",
+      "name": "fceugx-4.0.3.zip",
+      "version": "4.0.3",
+      "bytes": 2768607,
+      "sha256": "fb1c3391996ef3d7e91cf246baf5bbe2dcec4768c69bca5cc0b8e2440c6dee18",
+      "sourceUrl": "https://hbb1.oscwii.org/api/contents/fceugx/fceugx.zip",
+      "archiveRole": [
+        "Builds"
+      ],
+      "local": "/downloads/wii-more/fceugx-4.0.3.zip",
+      "itemId": "wii-more-fceugx",
+      "platform": "Wii",
+      "category": [
+        "Emulators"
+      ]
+    }
+  ]
+}

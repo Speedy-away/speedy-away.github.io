@@ -1,0 +1,141 @@
+{
+  "reviewed": "2026-11-02",
+  "resources": [
+    {
+      "platforms": [
+        "ps5"
+      ],
+      "version": "01.000.110",
+      "source": "https://github.com/LedyBacer/ProsperoLight/releases/tag/01.000.110",
+      "image": "/assets/images/console-software/store/ps5-store-prosperolight-01-000-110.png",
+      "page": "/console/ps5/apps.html#ps5-store-prosperolight-01-000-110",
+      "compatibility": "Native PS5 app, PPSA99002. Requires an already compatible homebrew environment and title loader plus a reachable Sunshine-compatible host. The pinned README gives no universal firmware matrix.",
+      "id": "ps5-store-prosperolight-01-000-110",
+      "title": "ProsperoLight",
+      "category": "apps",
+      "filename": "PPSA99002.zip",
+      "url": "https://github.com/LedyBacer/ProsperoLight/releases/download/01.000.110/PPSA99002.zip",
+      "description": "Native PS5 Moonlight-style client for streaming games or a desktop from a Sunshine-compatible PC. Pair your own host; PC games are streamed, not installed on the PS5.",
+      "preparation": "Close the app before updating. Extract the complete PPSA99002/ folder into /data/homebrew/, keep one installation of this title and refresh title registration in your compatible loader. Start Sunshine on your PC, select or add its address in ProsperoLight and enter the pairing PIN on the host. A wired LAN is recommended. Touchpad + L1 ends a stream. Pairings/settings normally stay in /data/prosperolight.",
+      "bytes": 36520955,
+      "sha256": "f29935f3bd9d61926c1ea63f8d34019fff19ee993e8d030ee373c004efd974ba",
+      "packageMetadata": {
+        "ageLevel": {
+          "default": 0
+        },
+        "applicationCategoryType": 0,
+        "applicationDrmType": "free",
+        "attribute": 1644167168,
+        "attribute2": 0,
+        "attribute3": 262208,
+        "conceptId": "99002",
+        "contentBadgeType": 1,
+        "contentId": "UP9000-PPSA99002_00-PROSPEROLIGHT000",
+        "contentVersion": "01.000.110",
+        "downloadDataSize": 256,
+        "gameIntent": {
+          "permittedIntents": [
+            {
+              "intentType": "launchActivity"
+            }
+          ]
+        },
+        "localizedParameters": {
+          "defaultLanguage": "en-US",
+          "en-US": {
+            "titleName": "ProsperoLight"
+          }
+        },
+        "masterVersion": "01.00",
+        "pubtools": {
+          "creationDate": "2026-08-22 00:00:00",
+          "loudnessSnd0": "-28.00",
+          "toolVersion": "2.00"
+        },
+        "requiredSystemSoftwareVersion": "0x0000000000000000",
+        "sdkVersion": "0x0000000000000000",
+        "titleId": "PPSA99002",
+        "versionFileUri": ""
+      },
+      "format": "Complete native PS5 ZIP"
+    },
+    {
+      "platforms": [
+        "ps5"
+      ],
+      "version": "v2.7.4",
+      "source": "https://github.com/elripalda/RecompStore/releases/tag/v2.7.4",
+      "image": "/assets/images/console-software/store/ps5-store-recompstore-2-7-4.png",
+      "page": "/console/ps5/apps.html#ps5-store-recompstore-2-7-4",
+      "compatibility": "Native PS5 app, PPSA92000. Publisher requires kstuff, an ELF loader on TCP 9021 and ShadowMountPlus 1.7 Beta 5 or newer. No firmware range is inferred from these prerequisites.",
+      "id": "ps5-store-recompstore-2-7-4",
+      "title": "RecompStore",
+      "category": "apps",
+      "filename": "PPSA92000.zip",
+      "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.4/PPSA92000.zip",
+      "description": "PS5 homebrew store for native recompiled ports, emulators and apps. Game setup uses your own disc images or other required source files; no commercial game data is in this download.",
+      "preparation": "Manual install: extract the complete PPSA92000/ directory into /data/homebrew/ and let ShadowMountPlus register the title. Alternatively use the separately archived matching RecompStore-Installer.elf. The installer fetches the newest upstream build when online, or uses its embedded copy offline; use this pinned ZIP for an exact v2.7.4 install. Keep required data, modules and included payloads together. Follow each port’s own game-input requirements.",
+      "bytes": 25830650,
+      "sha256": "2c7a58ef65d08974cb43a0045388be457b21a1fde3f98d6ecfd77eae6d309601",
+      "packageMetadata": {
+        "ageLevel": {
+          "default": 0
+        },
+        "applicationCategoryType": 0,
+        "applicationDrmType": "free",
+        "attribute": 0,
+        "attribute2": 0,
+        "attribute3": 524352,
+        "conceptId": "92000",
+        "contentBadgeType": 1,
+        "contentId": "UP9000-PPSA92000_00-RECOMPSTORE00000",
+        "contentVersion": "02.740.000",
+        "downloadDataSize": 256,
+        "gameIntent": {
+          "permittedIntents": [
+            {
+              "intentType": "launchActivity"
+            }
+          ]
+        },
+        "localizedParameters": {
+          "defaultLanguage": "en-US",
+          "en-US": {
+            "titleName": "RecompStore"
+          }
+        },
+        "masterVersion": "01.00",
+        "pubtools": {
+          "creationDate": "2026-10-12 00:00:00",
+          "loudnessSnd0": "-28.00",
+          "toolVersion": "2.00"
+        },
+        "requiredSystemSoftwareVersion": "0x0000000000000000",
+        "sdkVersion": "0x0000000000000000",
+        "titleId": "PPSA92000",
+        "versionFileUri": ""
+      },
+      "format": "Complete native PS5 ZIP"
+    },
+    {
+      "platforms": [
+        "ps5"
+      ],
+      "version": "v2.7.4",
+      "source": "https://github.com/elripalda/RecompStore/releases/tag/v2.7.4",
+      "image": "/assets/images/console-software/store/ps5-store-recompstore-2-7-4.png",
+      "page": "/console/ps5/apps.html#ps5-recompstore-installer-2-7-4",
+      "compatibility": "Native PS5 app, PPSA92000. Publisher requires kstuff, an ELF loader on TCP 9021 and ShadowMountPlus 1.7 Beta 5 or newer. No firmware range is inferred from these prerequisites.",
+      "id": "ps5-recompstore-installer-2-7-4",
+      "title": "RecompStore · installer ELF",
+      "category": "payloads",
+      "filename": "RecompStore-Installer.elf",
+      "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.4/RecompStore-Installer.elf",
+      "description": "Standalone publisher installer for the matching PS5 store, separate from the manual app ZIP.",
+      "preparation": "Requires kstuff, an active PS5 ELF loader on TCP 9021 and ShadowMountPlus 1.7 Beta 5 or newer. Explicitly send this ELF with your supported payload sender. Online, it downloads the newest upstream release; offline, it uses its embedded copy. For an exactly pinned v2.7.4 install, use the manual ZIP instead. A download link does not execute the installer.",
+      "bytes": 26794760,
+      "sha256": "3a20194226cf5e1ee66a5a67d81610c1ac9bf82deee7b791c752d0e7d6202d5c",
+      "format": "PS5 installer ELF"
+    }
+  ]
+}

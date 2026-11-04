@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "source": "https://github.com/nabucasa/ESP-Web-flasher",
+  "version": "5.1.4",
+  "license": "MIT",
+  "records": [
+    {
+      "path": "hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/esp32-273074c1.js",
+      "source": "https://unpkg.com/esp-web-flasher@5.1.4/dist/web/esp32-273074c1.js",
+      "bytes": 4810,
+      "sha256": "06b34475f81c51fc68365d22083ad962c5f750406bebff0f1156a934bbcfbf0a",
+      "registryIntegrity": "sha256-BrNEdfgcUfxoNl0iCDrZYsX3UEBr6/8PEVapNLvPvwo="
+    },
+    {
+      "path": "hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/esp32c3-8f007052.js",
+      "source": "https://unpkg.com/esp-web-flasher@5.1.4/dist/web/esp32c3-8f007052.js",
+      "bytes": 5066,
+      "sha256": "3be0076047e4e9e27a3fab08dabeae52da7afbd8ff4dd2fe8ef25917eb0e9018",
+      "registryIntegrity": "sha256-O+AHYEfk6eJ6P6sI2r6uUtp6+9j/TdL+jvJZF+sOkBg="
+    },
+    {
+      "path": "hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/esp32s2-f8cf1215.js",
+      "source": "https://unpkg.com/esp-web-flasher@5.1.4/dist/web/esp32s2-f8cf1215.js",
+      "bytes": 5750,
+      "sha256": "aab02b836128c3febadb2cae6ba22b1160889462dfd38a5089d93a34f07ebe07",
+      "registryIntegrity": "sha256-qrArg2Eow/662yyua6IrEWCIlGLf04pQidk6NPB+vgc="
+    },
+    {
+      "path": "hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/esp32s3-b0a5f517.js",
+      "source": "https://unpkg.com/esp-web-flasher@5.1.4/dist/web/esp32s3-b0a5f517.js",
+      "bytes": 6662,
+      "sha256": "58e477c39274d8800defc58a85f5f799b52b5a5b34b99ec3b523fa1b26638d5f",
+      "registryIntegrity": "sha256-WOR3w5J02IAN78WKhfX3mbUrWls0uZ7DtSP6GyZjjV8="
+    },
+    {
+      "path": "hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/esp8266-b7fae3a7.js",
+      "source": "https://unpkg.com/esp-web-flasher@5.1.4/dist/web/esp8266-b7fae3a7.js",
+      "bytes": 12229,
+      "sha256": "151529b9f74cb473682049763d516c62295507f810b86040a30146f1327756b7",
+      "registryIntegrity": "sha256-FRUpufdMtHNoIEl2PVFsYilVB/gQuGBAowFG8TJ3Vrc="
+    },
+    {
+      "path": "hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/index.js",
+      "source": "https://unpkg.com/esp-web-flasher@5.1.4/dist/web/index.js",
+      "bytes": 59828,
+      "sha256": "19132c4ad79b839251543a2ee5981ce6b7a27c4f1630946e4400d303546d85c0",
+      "registryIntegrity": "sha256-GRMsStebg5JRVDou5Zgc5reifE8WMJRuRADTA1RthcA="
+    },
+    {
+      "path": "hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/license.md",
+      "source": "https://unpkg.com/esp-web-flasher@5.1.4/license.md",
+      "bytes": 1135,
+      "sha256": "297d4048a2fef212bfb5a52fec40c4f7b9cb1b71dc4be9b3587960b311565b60",
+      "registryIntegrity": "sha256-KX1ASKL+8hK/taUv7EDE97nLG3HcS+mzWHlgsxFWW2A="
+    }
+  ]
+}

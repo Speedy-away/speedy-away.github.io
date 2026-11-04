@@ -1,0 +1,110 @@
+{
+  "checkedAt": "2026-11-02T09:27:37.255Z",
+  "entries": [
+    {
+      "repo": "dbeef/SpelunkyDS",
+      "source": "https://github.com/dbeef/SpelunkyDS/releases/latest",
+      "status": 404,
+      "tag": "",
+      "checkedAt": "2026-11-02T09:27:30.329Z"
+    },
+    {
+      "repo": "ArthurCose/Minicraft-DS-Edition",
+      "source": "https://github.com/ArthurCose/Minicraft-DS-Edition/releases/tag/v1.0.0-beta.3",
+      "status": 200,
+      "tag": "v1.0.0-beta.3",
+      "checkedAt": "2026-11-02T09:27:31.027Z",
+      "assets": [
+        "https://github.com/ArthurCose/Minicraft-DS-Edition/releases/download/v1.0.0-beta.3/Minicraft-DS-Edition.nds"
+      ],
+      "notes": "Changes: Save files Input repeat support (Holding down buttons can repeat actions) Basic touch support for inventory management Hotbar selection wraps Updated item swapping logic to shift items instead of swap Performance Improvements Removed random ticks from sky level Rendered sprites reduced by using a secondary spritesheet with 16x16 tiles Lighting optimizations Distance calculations are cached Every other non corner lava tile is skipped Larger storage type used for faster access Bottom screen UI will recycle pixels from previous frames Lava + Water tiles recycle RNG values during render Tiles that spread check neighbors before generating random numbers Mobs further than 48 tiles from the player will immediately despawn Improved bounded random number generation using standard library distribution classes Fixed LevelTransition Fixed palette issues causing colors to become black Fixed game loop timing Fixed random numbers used for particles Fixed furniture item deletion bug",
+      "readmeSource": "https://raw.githubusercontent.com/ArthurCose/Minicraft-DS-Edition/v1.0.0-beta.3/README.md",
+      "readme": "# Minicraft DS Edition\n\nMinicraft DS Edition is a fan port of [Minicraft](https://wikipedia.org/wiki/Minicraft) for the Nintendo DS\n\n## Notable Version Differences\n\n- Save files (NBT format)\n- Loading screen\n- Separate button used for interacting with furniture\n- New level map on the bottom screen\n- Inventory changes:\n  - Selecting an item in the inventory doesn't move it to the top\n  - Move button for moving items in inventory\n  - Opening the inventory doesn't place the cursor at the top\n    - Cursor is placed on the active item instead\n  - Item wheel and cycle with L/R\n  - Touchscreen can be used for player inventory management\n- Active item name moved to the bottom screen\n- Lighting is lower resolution (1/3)\n- Mobs 48+ tiles away will despawn\n\n## Internal Differences\n\n- Two screens, with two screen classes\n  - Top screen uses hardware rendering (The 3D engine)\n    - Backgrounds as a single rect rather than many tiles to reduce polygon count and bypass color limitations (text + frames)\n  - Bottom screen uses mostly the old software rendering code\n  - Removed renderLight from screen, now using a LightMask class\n  - Additional 2D methods renderPixel, renderBox, renderBoxFilled, renderTexture\n- icon.png uses 5 colors\n  - Multiples of 51\n  - Black is now transparent, other colors are shifted\n- Initialization of many interdependent globals is now done in main\n- Many direct uses of global objects are switched with IDs\n- Circular references removed, replaced with passing in methods by parent instead\n  - Game passes references to game and player instead of storing on player + level\n- Level generation split into three files based on generator\n  - No longer using static class methods\n  - New Noise class\n- Menus and entities are organized into folders\n- Spark entities reference owners using an ID to preserve ownership after reloading\n- Sky level has no random tick\n- A secondary sprite sheet with 16x16 tiles is used to reduce sprite count\n\n## Screenshots\n\n![Title Screen](screenshots/title-screen.png)\n![Loading Screen](screenshots/loading-screen.png)\n![Overworld](screenshots/overworld.png)\n![Crafting](screenshots/crafting.png)\n![Underground 3](screenshots/underground-3.png)\n\n## TODO\n\n- Drop button\n- Make use of the bottom screen in the title menus\n- More LightMask optimizations\n- Tweak inventory and crafting menus to better fit the DS?\n- Secondary build with custom recipes, tiles, and features\n"
+    },
+    {
+      "repo": "mariod8/2048-nds",
+      "source": "https://github.com/mdmrk/2048-nds/releases/tag/v1.0.2",
+      "status": 200,
+      "tag": "v1.0.2",
+      "checkedAt": "2026-11-02T09:27:31.305Z",
+      "assets": [
+        "https://github.com/mdmrk/2048-nds/releases/download/v1.0.2/2048-nds.nds"
+      ],
+      "notes": "Hold 'shift' to restart game",
+      "readmeSource": "https://raw.githubusercontent.com/mdmrk/2048-nds/v1.0.2/README.md",
+      "readme": "# 2048-nds\n\n2048 puzzle game inspired in Professor Layton using some assets from the game.\n\n<p align=\"center\">\n<img src=\"assets/game.png\" width=250px>\n</p>\n\n## Download\n\n[Latest release](https://github.com/mariod8/2048-nds/releases/latest)\n\n## Build\n\nInstall [devkitPro](https://devkitpro.org/wiki/devkitPro_pacman). Installation might be different depending on the platform. On Linux and using [pacman](https://wiki.archlinux.org/title/pacman) as the package manager we'll type\n\n```\nsudo pacman -Syu nds-dev\n```\n\nThen simply run\n\n```\nmake\n```\n\nto compile.\n\n## Acknowledgements\n\n- [libnds](https://github.com/devkitPro/libnds) - C library for Nintendo DS\n- [nds_nflib](https://github.com/knightfox75/nds_nflib) - C library for Nintendo DS software development based upon DevkitARM\n"
+    },
+    {
+      "repo": "mdmrk/2048-nds",
+      "source": "https://github.com/mdmrk/2048-nds/releases/tag/v1.0.2",
+      "status": 200,
+      "tag": "v1.0.2",
+      "checkedAt": "2026-11-02T09:27:32.616Z",
+      "assets": [
+        "https://github.com/mdmrk/2048-nds/releases/download/v1.0.2/2048-nds.nds"
+      ],
+      "notes": "Hold 'shift' to restart game",
+      "readmeSource": "https://raw.githubusercontent.com/mdmrk/2048-nds/v1.0.2/README.md",
+      "readme": "# 2048-nds\n\n2048 puzzle game inspired in Professor Layton using some assets from the game.\n\n<p align=\"center\">\n<img src=\"assets/game.png\" width=250px>\n</p>\n\n## Download\n\n[Latest release](https://github.com/mariod8/2048-nds/releases/latest)\n\n## Build\n\nInstall [devkitPro](https://devkitpro.org/wiki/devkitPro_pacman). Installation might be different depending on the platform. On Linux and using [pacman](https://wiki.archlinux.org/title/pacman) as the package manager we'll type\n\n```\nsudo pacman -Syu nds-dev\n```\n\nThen simply run\n\n```\nmake\n```\n\nto compile.\n\n## Acknowledgements\n\n- [libnds](https://github.com/devkitPro/libnds) - C library for Nintendo DS\n- [nds_nflib](https://github.com/knightfox75/nds_nflib) - C library for Nintendo DS software development based upon DevkitARM\n"
+    },
+    {
+      "repo": "tallHouse64/CerealBoxSnow",
+      "source": "https://github.com/tallHouse64/CerealBoxSnow/releases/tag/v1.2.0",
+      "status": 200,
+      "tag": "v1.2.0",
+      "checkedAt": "2026-11-02T09:27:33.085Z",
+      "assets": [
+        "https://github.com/tallHouse64/CerealBoxSnow/releases/download/v1.2.0/CerealBoxSnowLinux1.2.0.zip",
+        "https://github.com/tallHouse64/CerealBoxSnow/releases/download/v1.2.0/CerealBoxSnowNds1.2.0.nds",
+        "https://github.com/tallHouse64/CerealBoxSnow/releases/download/v1.2.0/CerealBoxSnowWin1.2.0.zip"
+      ],
+      "notes": "1.2.0 Release New features! Attract particles with the mouse (left click) Push particles with the mouse (right click) Rain simulator Bird simulator Firefly simulator On Nintendo DS, use the x or up buttons to toggle between attracting and pushing particles. The Windows build is only tested on Windows 11. On linux, you need SDL2 installed. The Linux build is only tested on Manjaro Linux.",
+      "readmeSource": "https://raw.githubusercontent.com/tallHouse64/CerealBoxSnow/v1.2.0/README.md",
+      "readme": "# Cereal Box Snow\nThis is a snow sim. It can simulate pixel art style snow and fire.\n\n## Screenshots\n<img src=\"https://github.com/tallHouse64/CerealBoxSnow/blob/main/screenshot1.png?raw=true\" width=\"428\" alt=\"A screenshot of Cereal Box Snow simulating snow.\"/>\n<img src=\"https://github.com/tallHouse64/CerealBoxSnow/blob/main/screenshot2.png?raw=true\" width=\"428\" alt=\"Another screenshot of Cereal Box Snow simulating snow with the UI shown.\"/>\n<img src=\"https://github.com/tallHouse64/CerealBoxSnow/blob/main/screenshot3.png?raw=true\" width=\"428\" alt=\"A screenshot of Cereal Box Snow's fire simulation.\"/>\n\n## Features\nThis program doesn't have many features.\nThere is a slider to control the number of particles simulated.\n\nIt can simulate two things:\n- Snow\n- Fire\n\n## Supported platforms\n\nCereal Box Snow supports:\n- Windows\n- Linux\n- Nintendo DS\n\n## How to install\n\nFirst download Cereal Box Snow from the releases page (https://github.com/tallHouse64/CerealBoxSnow/releases/latest). Then extract the zip file to anywhere and double click the executable (for Windows that is \"cbsnow.exe\").\n\n## How to compile\n\nTo compile this you do need to be comfortable using a terminal, extracting zip files and know how to use the \"cd\" command.\n\nWindows:\nYou need to install:\n- msys2 (https://www.msys2.org/)\n- gcc (inside msys2)\n- make (inside msys2)\n- SDL2 (inside msys2)\n\nThen you can download a copy of the source code (https://github.com/tallHouse64/CerealBoxSnow/releases/latest download the zip file).\n\nExtract the zip file anywhere and open msys2 ucrt64 terminal. Then navigate to the folder with the \"cd\" command and run \"make\".\n\n## Dependencies\nThis program uses Drws-lib for graphics, input and output. Drws-lib uses SDL2 as an optional dependency.\n\n## System requirements\nIt runs great on a small laptop 4 Core 1.1Ghz CPU with 4GB RAM.\nIt would probably run fine on a potato.\n"
+    },
+    {
+      "repo": "Epicpkmn11/dsidl",
+      "source": "https://github.com/Epicpkmn11/dsidl/releases",
+      "status": 200,
+      "tag": "",
+      "checkedAt": "2026-11-02T09:27:33.536Z"
+    },
+    {
+      "repo": "0xtob/nitrotracker",
+      "source": "https://github.com/0xtob/nitrotracker/releases",
+      "status": 200,
+      "tag": "",
+      "checkedAt": "2026-11-02T09:27:34.638Z"
+    },
+    {
+      "repo": "RetroGamer02/RaptorDS",
+      "source": "https://github.com/RetroGamer02/RaptorDS/releases/latest",
+      "status": 404,
+      "tag": "",
+      "checkedAt": "2026-11-02T09:27:33.921Z"
+    },
+    {
+      "repo": "Headshotnoby/3dmaze",
+      "source": "https://github.com/Headshotnoby/3dmaze/releases/latest",
+      "status": 404,
+      "tag": "",
+      "checkedAt": "2026-11-02T09:27:33.920Z"
+    },
+    {
+      "repo": "DS-Homebrew/DSDoom",
+      "source": "https://github.com/DS-Homebrew/DSDoom/releases/latest",
+      "status": 404,
+      "tag": "",
+      "checkedAt": "2026-11-02T09:27:35.093Z"
+    },
+    {
+      "repo": "devkitPro/nds-examples",
+      "source": "https://github.com/devkitPro/nds-examples/releases/tag/v20241110",
+      "status": 200,
+      "tag": "v20241110",
+      "checkedAt": "2026-11-02T09:27:35.609Z",
+      "assets": [],
+      "notes": "Updated and cleaned up for libnds v2 and calico"
+    }
+  ]
+}

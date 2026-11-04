@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-11-02T14:45:07.960Z",
+  "mode": "Read-only API/raw source metadata; no archive download or code execution.",
+  "securityLimit": "Source tree and README review only; no malware-free or safety claim and no executable was run.",
+  "projects": [
+    {
+      "repo": "Mr-X-GTA/YimMenu",
+      "branch": "master",
+      "edition": "Legacy",
+      "sha": "e69bbb6adbdbc7e4e99f703bb1c4518b67e6a982",
+      "license": "GPL-2.0",
+      "gameVersionNote": "Commit title explicitly says Update for b3889; do not imply compatibility with every later Legacy update.",
+      "sourceCodeFiles": null,
+      "binaryFiles": null,
+      "treeStatus": 403,
+      "cmakeStatus": 200,
+      "buildNotes": [
+        "cmake_minimum_required(VERSION 3.20)",
+        "set(CMAKE_MSVC_RUNTIME_LIBRARY \"MultiThreaded$<$<CONFIG:Debug>:Debug>\")",
+        "if (NOT MSVC)",
+        "  message(FATAL_ERROR \"Unsupported compiler used '${CMAKE_CXX_COMPILER_ID}', YimMenu only supports MSVC.\")",
+        "if (MSVC)",
+        "  add_compile_options(\"$<$<C_COMPILER_ID:MSVC>:/utf-8>\")",
+        "  add_compile_options(\"$<$<CXX_COMPILER_ID:MSVC>:/utf-8>\")",
+        "set_property(TARGET YimMenu PROPERTY CXX_STANDARD 23) # 23 Because std::format is not avalible in std:c++20 for some reason. Maybe it's because i use v142 toolset."
+      ],
+      "snapshotUrl": "https://codeload.github.com/Mr-X-GTA/YimMenu/zip/e69bbb6adbdbc7e4e99f703bb1c4518b67e6a982",
+      "repositoryUrl": "https://github.com/Mr-X-GTA/YimMenu",
+      "branchUrl": "https://github.com/Mr-X-GTA/YimMenu/tree/master",
+      "commitUrl": "https://github.com/Mr-X-GTA/YimMenu/commit/e69bbb6adbdbc7e4e99f703bb1c4518b67e6a982",
+      "readmeUrl": "https://raw.githubusercontent.com/Mr-X-GTA/YimMenu/e69bbb6adbdbc7e4e99f703bb1c4518b67e6a982/README.md",
+      "licenseUrl": "https://github.com/Mr-X-GTA/YimMenu/blob/e69bbb6adbdbc7e4e99f703bb1c4518b67e6a982/LICENSE",
+      "treeNote": "Recursive tree API returned HTTP 403; tree contents not verified in this call. README and CMake evidence was read successfully."
+    },
+    {
+      "repo": "YimMenu/YimMenuV2",
+      "branch": "enhanced",
+      "edition": "Enhanced",
+      "sha": "f0c352aa64eaaf892a08c033d6abff8c6e8c2fca",
+      "license": "GPL-2.0",
+      "gameVersionNote": "README says experimental Enhanced menu; no exact current game build claimed here.",
+      "requestedUrl": "https://github.com/YimMenu/YimMenuV2/tree/enhance",
+      "requestedBranchStatus": {
+        "commit": 422,
+        "readme": 404
+      },
+      "correction": "Verified actual branches are enhanced and legacy. User intended Enhanced; use enhanced and preserve unavailable enhance URL evidence.",
+      "sourceCodeFiles": null,
+      "binaryFiles": null,
+      "treeStatus": 403,
+      "cmakeStatus": 200,
+      "buildNotes": [
+        "cmake_minimum_required(VERSION 3.20.x)",
+        "set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 23)"
+      ],
+      "snapshotUrl": "https://codeload.github.com/YimMenu/YimMenuV2/zip/f0c352aa64eaaf892a08c033d6abff8c6e8c2fca",
+      "repositoryUrl": "https://github.com/YimMenu/YimMenuV2",
+      "branchUrl": "https://github.com/YimMenu/YimMenuV2/tree/enhanced",
+      "commitUrl": "https://github.com/YimMenu/YimMenuV2/commit/f0c352aa64eaaf892a08c033d6abff8c6e8c2fca",
+      "readmeUrl": "https://raw.githubusercontent.com/YimMenu/YimMenuV2/f0c352aa64eaaf892a08c033d6abff8c6e8c2fca/README.md",
+      "licenseUrl": "https://github.com/YimMenu/YimMenuV2/blob/f0c352aa64eaaf892a08c033d6abff8c6e8c2fca/LICENSE",
+      "treeNote": "Recursive tree API returned HTTP 403; tree contents not verified in this call. README and CMake evidence was read successfully."
+    },
+    {
+      "repo": "sdfq/Impulse",
+      "branch": "main",
+      "edition": "Legacy",
+      "sha": "f64121c867f87e0cfd4e7a7d9f523035c9de23ca",
+      "license": null,
+      "gameVersionNote": "Historical source snapshot includes Impulse_Offsets_1.57.txt; no claim that it builds or works with current GTA Online. Repository author says it is not their project.",
+      "sourceCodeFiles": null,
+      "binaryFiles": null,
+      "treeStatus": 403,
+      "cmakeStatus": 404,
+      "buildNotes": [],
+      "snapshotUrl": "https://codeload.github.com/sdfq/Impulse/zip/f64121c867f87e0cfd4e7a7d9f523035c9de23ca",
+      "repositoryUrl": "https://github.com/sdfq/Impulse",
+      "branchUrl": "https://github.com/sdfq/Impulse/tree/main",
+      "commitUrl": "https://github.com/sdfq/Impulse/commit/f64121c867f87e0cfd4e7a7d9f523035c9de23ca",
+      "readmeUrl": "https://raw.githubusercontent.com/sdfq/Impulse/f64121c867f87e0cfd4e7a7d9f523035c9de23ca/README.md",
+      "licenseUrl": null,
+      "treeNote": "Recursive tree API returned HTTP 403; tree contents not verified in this call. README and CMake evidence was read successfully."
+    }
+  ]
+}

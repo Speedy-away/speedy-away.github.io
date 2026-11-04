@@ -1,0 +1,228 @@
+{
+  "reviewed": "2026-11-02",
+  "platform": "PS3",
+  "scope": "Additive game routing and archive-identified build labels. Archive filenames and included instructions establish the listed contents, not tested support for every firmware, title ID or game update.",
+  "gameAliases": {
+    "cod4-modern-warfare": {
+      "id": "cod4",
+      "url": "/console/ps3/mods/call-of-duty/cod4/",
+      "legacyUrl": "/console/ps3/mods/call-of-duty/cod4-modern-warfare/"
+    }
+  },
+  "assetFallbacks": {
+    "/assets/images/covers/cod-world-at-war.jpg": "/assets/images/ps3-mods/fourth-waw-paradise.jpg"
+  },
+  "collections": {
+    "multicod": {
+      "title": "Call of Duty multi-game collection",
+      "short": "Multi-game packs",
+      "summary": "An index of PS3 packs that support several source-listed Call of Duty games. Open an individual game page to browse its resources."
+    }
+  },
+  "games": [
+    {
+      "id": "advanced-warfare",
+      "parent": "call-of-duty",
+      "title": "Call of Duty: Advanced Warfare",
+      "short": "Advanced Warfare",
+      "url": "/console/ps3/mods/call-of-duty/advanced-warfare/",
+      "image": "/assets/images/covers/cod-advanced-warfare.jpg",
+      "aliases": [
+        "Advanced Warfare",
+        "AW",
+        "COD AW"
+      ],
+      "summary": "PS3 Advanced Warfare resources with archive-listed game files and source-specific build requirements."
+    }
+  ],
+  "resources": {
+    "discord-ps3-jimbo": {
+      "source": "https://discord.com/channels/1528329794947776572/1558987097883545712",
+      "supportedGameIds": [
+        "modern-warfare-2",
+        "black-ops-1",
+        "ghosts",
+        "modern-warfare-3"
+      ],
+      "indexIds": [
+        "multicod"
+      ],
+      "variants": [
+        {
+          "label": "DEX build",
+          "sourceUrl": "https://www.mediafire.com/file/hy7js8v3knwgy2l/Jimbo_%2528PS3DEX%2529.rar/file",
+          "filename": "Jimbo-PS3DEX.rar",
+          "bytes": 17004671,
+          "sha256": "9376d6970cee13003a49a6cd3a74f02f99726a06d9525301631b20f9908125fd",
+          "requirements": "Source-labelled PS3 DEX archive. Exact firmware, title IDs and game updates are not specified. Keep this build separate from HEN.",
+          "evidence": {
+            "readme": "Jimbo Menus/READ ME.txt",
+            "gameFiles": [
+              "Jimbo Menus/EBOOTS/MW2_EBOOT.BIN",
+              "Jimbo Menus/EBOOTS/BO1_EBOOT.BIN",
+              "Jimbo Menus/EBOOTS/Ghosts_EBOOT.BIN",
+              "Jimbo Menus/EBOOTS/MW3_EBOOT.BIN"
+            ],
+            "installation": "The included readme places the whole Jimbo folder in /dev_hdd0/tmp/ and the matching game's EBOOT.BIN in /dev_hdd0/game/<your title ID>/USRDIR/. Preserve the original game executable."
+          }
+        },
+        {
+          "label": "HEN build",
+          "sourceUrl": "https://www.mediafire.com/file/5uk1gc6ujjyjmel/Jimbo_%2528PS3HEN%2529.rar/file",
+          "filename": "Jimbo-PS3HEN.rar",
+          "bytes": 21258078,
+          "sha256": "7b139db0454fd255754b08a2a9fceb74354135bc2b1d965979546add93361f11",
+          "requirements": "Source-labelled PS3 HEN archive. Exact HFW/HEN version, title IDs and game updates are not specified. Keep this build separate from DEX.",
+          "evidence": {
+            "readme": "Jimbos Menus/READ ME.txt",
+            "gameFiles": [
+              "Jimbos Menus/EBOOTS/MW2_EBOOT.BIN",
+              "Jimbos Menus/EBOOTS/BO1_EBOOT.BIN",
+              "Jimbos Menus/EBOOTS/Ghosts_EBOOT.BIN",
+              "Jimbos Menus/EBOOTS/MW3_EBOOT.BIN"
+            ],
+            "installation": "The included readme places the whole Jimbo folder in /dev_hdd0/tmp/ and the matching game's EBOOT.BIN in /dev_hdd0/game/<your title ID>/USRDIR/. Preserve the original game executable."
+          }
+        }
+      ]
+    },
+    "discord-ps3-matrixmods-v2": {
+      "source": "https://discord.com/channels/1528329794947776572/1554840043921739876",
+      "supportedGameIds": [
+        "cod4",
+        "world-at-war",
+        "modern-warfare-2",
+        "modern-warfare-3",
+        "black-ops-1",
+        "black-ops-2",
+        "ghosts",
+        "advanced-warfare"
+      ],
+      "indexIds": [
+        "multicod"
+      ],
+      "variants": [
+        {
+          "label": "V2 DEX build",
+          "sourceUrl": "https://www.mediafire.com/file/x7zh07my3iyvole/MatrixMods_%2528PS3DEX%2529.rar/file",
+          "filename": "MatrixMods-PS3DEX.rar",
+          "bytes": 39101677,
+          "sha256": "e8cd2f9c2d29026a4b81bf8b67c675c8ec509b973be222501642f571f3d169ef",
+          "requirements": "DEX only. The included readme requires both Target Type and LV2 Kernel set to DEX in Rebug Toolbox. Exact title IDs and game updates are not supplied.",
+          "evidence": {
+            "gameFolders": [
+              "MatrixMods/eboots/COD4",
+              "MatrixMods/eboots/WAW",
+              "MatrixMods/eboots/MW2",
+              "MatrixMods/eboots/MW3",
+              "MatrixMods/eboots/BO1/mp",
+              "MatrixMods/eboots/BO1/zm",
+              "MatrixMods/eboots/BO2",
+              "MatrixMods/eboots/GHOSTS",
+              "MatrixMods/eboots/AW"
+            ],
+            "installation": "The included readme places the whole Matrix folder in /dev_hdd0/tmp/ and the selected game's EBOOT.BIN in /dev_hdd0/game/<your title ID>/USRDIR/."
+          }
+        }
+      ]
+    },
+    "discord-ps3-mw2-inphect-package": {
+      "source": "https://discord.com/channels/1528329794947776572/1558986109051207801",
+      "supportedGameIds": [
+        "modern-warfare-2",
+        "modern-warfare-3",
+        "black-ops-1",
+        "black-ops-2",
+        "ghosts"
+      ],
+      "indexIds": [
+        "multicod"
+      ],
+      "variants": [
+        {
+          "label": "HEN/CEX and DEX folders in one archive",
+          "sourceUrl": "https://www.mediafire.com/file/mcm8474fo17o0sl/Multicod_Inphect_Paks.rar/file",
+          "filename": "Multicod_Inphect_Paks.rar",
+          "bytes": 55497086,
+          "sha256": "edc048940bfff468165d0f0497ed629ac9dbf3cbf7616e5df5b4568f5d202f62",
+          "requirements": "Choose the matching HEN+CEX or DEX SPRX folder and the appropriate supplied HEN or DEX game EBOOT. This is a combined archive, not two separate downloads. Exact firmware, title IDs and game updates are unspecified.",
+          "evidence": {
+            "readme": "Read Instrctions/Instructions.txt",
+            "sprxFolders": [
+              "Read Instrctions/HEN+CEX",
+              "Read Instrctions/DEX"
+            ],
+            "ebootFolders": [
+              "Read Instrctions/EBOOTS/HEN",
+              "Read Instrctions/EBOOTS/DEX"
+            ],
+            "gameLabels": [
+              "MW2",
+              "MW3",
+              "BO1",
+              "BO2",
+              "Ghosts"
+            ],
+            "installation": "The included instructions rename the selected complete HEN/CEX or DEX folder to lowercase inphect and place it in /dev_hdd0/tmp/. Preserve assets and configurations. Put only the matching game's EBOOT.BIN in its documented USRDIR destination."
+          }
+        }
+      ]
+    },
+    "discord-ps3-bo1-mp-pepitax-cfw-hen": {
+      "source": "https://discord.com/channels/1528329794947776572/1559134222596182077",
+      "supportedGameIds": [
+        "advanced-warfare",
+        "black-ops-1",
+        "black-ops-3",
+        "ghosts",
+        "modern-warfare-3"
+      ],
+      "indexIds": [
+        "multicod"
+      ],
+      "variants": [
+        {
+          "label": "CEX/HEN and DEX variants in one archive",
+          "sourceUrl": "https://www.mediafire.com/file/jjsx07k99lapx6z/Pepitax_All_Cod.rar/file",
+          "filename": "Pepitax_All_Cod.rar",
+          "bytes": 54312080,
+          "sha256": "3e94cb9e79e50b76842e409201fd3ca69e3a6b604eee90e37b221aee3d2ed037",
+          "requirements": "Archive components identify AW, BO1, BO3, Ghosts and MW3. Each game has EBOOT CEX-HEN and EBOOT DEX folders. Exact firmware, title IDs, game updates and modes are unspecified; folder labels are not hardware test results.",
+          "evidence": {
+            "readme": [
+              "Pepitax All Cod/Read to work.txt.txt"
+            ],
+            "supportedGameEvidence": {
+              "advanced-warfare": {
+                "sprx": "Pepitax All Cod/Pepitax/Pepitax_AW.sprx",
+                "cexHenEboot": "Pepitax All Cod/EBOOTS/AW/EBOOT CEX-HEN/EBOOT.BIN",
+                "dexEboot": "Pepitax All Cod/EBOOTS/AW/EBOOT DEX/EBOOT.BIN"
+              },
+              "black-ops-1": {
+                "sprx": "Pepitax All Cod/Pepitax/Pepitax_BO1.sprx",
+                "cexHenEboot": "Pepitax All Cod/EBOOTS/BO1/EBOOT CEX-HEN/EBOOT.BIN",
+                "dexEboot": "Pepitax All Cod/EBOOTS/BO1/EBOOT DEX/EBOOT.BIN"
+              },
+              "black-ops-3": {
+                "sprx": "Pepitax All Cod/Pepitax/Pepitax_BO3.sprx",
+                "cexHenEboot": "Pepitax All Cod/EBOOTS/BO3/EBOOT CEX-HEN/EBOOT.BIN",
+                "dexEboot": "Pepitax All Cod/EBOOTS/BO3/EBOOT DEX/EBOOT.BIN"
+              },
+              "ghosts": {
+                "sprx": "Pepitax All Cod/Pepitax/Pepitax_GHOST.sprx",
+                "cexHenEboot": "Pepitax All Cod/EBOOTS/GHOST/EBOOT CEX-HEN/EBOOT.BIN",
+                "dexEboot": "Pepitax All Cod/EBOOTS/GHOST/EBOOT DEX/EBOOT.BIN"
+              },
+              "modern-warfare-3": {
+                "sprx": "Pepitax All Cod/Pepitax/Pepitax_MW3.sprx",
+                "cexHenEboot": "Pepitax All Cod/EBOOTS/MW3/EBOOT CEX-HEN/EBOOT.BIN",
+                "dexEboot": "Pepitax All Cod/EBOOTS/MW3/EBOOT DEX/EBOOT.BIN"
+              }
+            },
+            "installation": "Read to work.txt.txt says to place the whole Pepitax folder in the PS3 tmp directory. Keep its game-specific SPRX files inside that folder. No full path, controls or game-update requirement is documented."
+          }
+        }
+      ]
+    }
+  }
+}

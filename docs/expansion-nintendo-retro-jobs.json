@@ -1,0 +1,385 @@
+{
+  "reviewed": "2026-11-02",
+  "selection": "Relevant official console builds only. Nintendont has no releases: its ready loader DOL and accompanying Homebrew Channel metadata are pinned to the inspected upstream commit. GCMM has one shared Wii/GameCube release; CleanRip has separate binaries for those consoles.",
+  "jobs": [
+    {
+      "id": "wii-priiloader",
+      "title": "Priiloader",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Priiloader",
+      "version": "0.10.0",
+      "filename": "Priiloader_v0_10.zip",
+      "url": "https://github.com/DacoTaco/priiloader/releases/download/0.10.0/Priiloader_v0_10.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-loadpriiloader",
+      "title": "Load Priiloader",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Priiloader",
+      "version": "0.10.0",
+      "filename": "LoadPriiloader.zip",
+      "url": "https://github.com/DacoTaco/priiloader/releases/download/0.10.0/LoadPriiloader.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-usbloadergx",
+      "title": "USB Loader GX",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "USB Loader GX",
+      "version": "v4.0-r1283",
+      "filename": "usbloadergx_r1283.zip",
+      "url": "https://github.com/wiidev/usbloadergx/releases/download/v4.0-r1283/usbloadergx_r1283.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-nintendont-dol",
+      "title": "Nintendont",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Nintendont",
+      "version": "build-c683db3",
+      "filename": "loader.dol",
+      "url": "https://raw.githubusercontent.com/FIX94/Nintendont/c683db301c941a64e6fe5cef6ac079bd1a726074/loader/loader.dol",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-nintendont-meta",
+      "title": "Nintendont",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Nintendont",
+      "version": "build-c683db3",
+      "filename": "meta.xml",
+      "url": "https://raw.githubusercontent.com/FIX94/Nintendont/c683db301c941a64e6fe5cef6ac079bd1a726074/nintendont/meta.xml",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-nintendont-icon",
+      "title": "Nintendont",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Nintendont",
+      "version": "build-c683db3",
+      "filename": "icon.png",
+      "url": "https://raw.githubusercontent.com/FIX94/Nintendont/c683db301c941a64e6fe5cef6ac079bd1a726074/nintendont/icon.png",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-cleanrip",
+      "title": "CleanRip",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "CleanRip",
+      "version": "2.4",
+      "filename": "CleanRip-v2.4.zip",
+      "url": "https://github.com/emukidid/cleanrip/releases/download/2.4/CleanRip-v2.4.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "gamecube-gcmm",
+      "title": "GCMM",
+      "platform": "GameCube",
+      "category": "Tools",
+      "project": "GCMM",
+      "version": "1.5.2",
+      "filename": "gcmm_1.5.2.zip",
+      "url": "https://github.com/suloku/gcmm/releases/download/1.5.2/gcmm_1.5.2.zip",
+      "pages": [
+        "console/retro/gamecube.html",
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "gamecube-swiss",
+      "title": "Swiss",
+      "platform": "GameCube",
+      "category": "Tools",
+      "project": "Swiss",
+      "version": "v0.6r2119",
+      "filename": "swiss_r2119.7z",
+      "url": "https://github.com/emukidid/swiss-gc/releases/download/v0.6r2119/swiss_r2119.7z",
+      "pages": [
+        "console/retro/gamecube.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "gamecube-cleanrip",
+      "title": "CleanRip",
+      "platform": "GameCube",
+      "category": "Tools",
+      "project": "CleanRip",
+      "version": "2.4",
+      "filename": "CleanRip-v2.4-gc.zip",
+      "url": "https://github.com/emukidid/cleanrip/releases/download/2.4/CleanRip-v2.4-gc.zip",
+      "pages": [
+        "console/retro/gamecube.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-twilight-flashcard",
+      "title": "TWiLight Menu++ Flashcard",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "TWiLight Menu++",
+      "version": "v27.25.1",
+      "filename": "TWiLightMenu-Flashcard.7z",
+      "url": "https://github.com/DS-Homebrew/TWiLightMenu/releases/download/v27.25.1/TWiLightMenu-Flashcard.7z",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "dsi-twilight",
+      "title": "TWiLight Menu++ DSi",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "TWiLight Menu++",
+      "version": "v27.25.1",
+      "filename": "TWiLightMenu-DSi.7z",
+      "url": "https://github.com/DS-Homebrew/TWiLightMenu/releases/download/v27.25.1/TWiLightMenu-DSi.7z",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-nds-bootstrap",
+      "title": "nds-bootstrap",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "nds-bootstrap",
+      "version": "v2.17.0",
+      "filename": "nds-bootstrap.zip",
+      "url": "https://github.com/DS-Homebrew/nds-bootstrap/releases/download/v2.17.0/nds-bootstrap.zip",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-godmode9i",
+      "title": "GodMode9i",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "GodMode9i",
+      "version": "v3.10.0",
+      "filename": "GodMode9i.7z",
+      "url": "https://github.com/DS-Homebrew/GodMode9i/releases/download/v3.10.0/GodMode9i.7z",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-ftpd",
+      "title": "ftpd for Nintendo DS",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "ftpd",
+      "version": "v3.2.1",
+      "filename": "ftpd.nds",
+      "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.nds",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-luma",
+      "title": "Luma3DS",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "Luma3DS",
+      "version": "v13.5",
+      "filename": "Luma3DSv13.5.zip",
+      "url": "https://github.com/LumaTeam/Luma3DS/releases/download/v13.5/Luma3DSv13.5.zip",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-godmode9",
+      "title": "GodMode9",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "GodMode9",
+      "version": "v2.2.3",
+      "filename": "GodMode9-v2.2.3-20260331144941.zip",
+      "url": "https://github.com/d0k3/GodMode9/releases/download/v2.2.3/GodMode9-v2.2.3-20260331144941.zip",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-universal-updater",
+      "title": "Universal-Updater",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "Universal-Updater",
+      "version": "v3.4.1",
+      "filename": "Universal-Updater.cia",
+      "url": "https://github.com/Universal-Team/Universal-Updater/releases/download/v3.4.1/Universal-Updater.cia",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-checkpoint",
+      "title": "Checkpoint",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "Checkpoint",
+      "version": "v5.3.0",
+      "filename": "Checkpoint.cia",
+      "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.cia",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-ftpd",
+      "title": "ftpd for Nintendo 3DS",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "ftpd",
+      "version": "v3.2.1",
+      "filename": "ftpd.cia",
+      "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.cia",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-twilight",
+      "title": "TWiLight Menu++ 3DS",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "TWiLight Menu++",
+      "version": "v27.25.1",
+      "filename": "TWiLightMenu-3DS.7z",
+      "url": "https://github.com/DS-Homebrew/TWiLightMenu/releases/download/v27.25.1/TWiLightMenu-3DS.7z",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    }
+  ]
+}

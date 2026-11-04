@@ -1,0 +1,555 @@
+{
+  "reviewed": "2026-11-02",
+  "repository": "https://github.com/etaHEN/PS5_Cheats",
+  "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+  "sourceScope": "Separate primary publisher expansion. VirusMike has no native PS5 game download page; these files are not attributed to it.",
+  "resources": [
+    {
+      "gameSlug": "demons-souls",
+      "game": "Demon's Souls",
+      "titleId": "PPSA01342",
+      "gameVersion": "01.004.000",
+      "filename": "PPSA01342_01.004.000.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01342_01.004.000.shn",
+      "bytes": 4507,
+      "sha256": "97de311640e5fe95ef9300e1adbb1bc980de01abe58524fc246eed80ef068d1f",
+      "gitBlob": "a8a9ca91a1f54927e7f2dc24fef642f1ca3819d0",
+      "importPath": "docs/tmp/console-batch5/PPSA01342_01.004.000.shn",
+      "id": "ps5-native-shn-ppsa01342-01-004-000",
+      "importJobId": "ps5-native-shn-ppsa01342-01-004-000",
+      "name": "Demon's Souls · native PS5 01.004.000",
+      "version": "01.004.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa01342-01-004-000/PPSA01342_01.004.000.shn",
+      "page": "/console/ps5/game-cheats/demons-souls/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01342_01.004.000.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA01342"
+      ],
+      "compatibility": "Native PS5 only · PPSA01342 · game 01.004.000. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/game-patches/demons-souls-official.jpg",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA01342_01.004.000.shn",
+      "preparation": "Native PS5 Demon's Souls, PPSA01342, update 01.004.000. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Infinity HP",
+        "Infinity MP",
+        "One Hit Kill",
+        "Untouchable",
+        "Infinity Stamina",
+        "Enemy Zero Stamina",
+        "Infinity Max Souls",
+        "Infinity Weapon Durability",
+        "No Souls loss Upon Death",
+        "Max Items (Use, Move, Drop)",
+        "Duplicate Anything (Storage * Inventory)",
+        "All Infinity Health (for training)"
+      ],
+      "cheatDetails": [
+        {
+          "name": "Duplicate Anything (Storage * Inventory)",
+          "description": "non stackable like weapon, armor and rings, chance of lossing all if exceed the max when discard"
+        }
+      ],
+      "cheatCount": 12,
+      "credits": [
+        "hejran7"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file. The original embedded Version is 1.004; the publisher filename/index pins 01.004.000. Neither filename nor file content was rewritten. The original XML declares utf-16 but contains UTF-8 text. Its bytes are preserved unchanged; parser behavior and gameplay have not been tested on hardware.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "Demon's Souls Remake",
+        "Moder": "hejran7",
+        "Cusa": "PPSA01342",
+        "Version": "1.004",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA01342_01.004.000.shn=Demon's Souls Remake",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    },
+    {
+      "gameSlug": "mortal-kombat-11",
+      "game": "Mortal Kombat 11",
+      "titleId": "PPSA01619",
+      "gameVersion": "01.000.004",
+      "filename": "PPSA01619_01.000.004.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01619_01.000.004.shn",
+      "bytes": 2246,
+      "sha256": "96fbd86f92fb01427b179d3aef103befc5f30bb95b567599a4b35d670bdf670c",
+      "gitBlob": "1f1fec366e900d5e31a37dce64d6b8d1b8ca742e",
+      "importPath": "docs/tmp/console-batch5/PPSA01619_01.000.004.shn",
+      "id": "ps5-native-shn-ppsa01619-01-000-004",
+      "importJobId": "ps5-native-shn-ppsa01619-01-000-004",
+      "name": "Mortal Kombat 11 · native PS5 01.000.004",
+      "version": "01.000.004",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa01619-01-000-004/PPSA01619_01.000.004.shn",
+      "page": "/console/ps5/game-cheats/mortal-kombat-11/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01619_01.000.004.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA01619"
+      ],
+      "compatibility": "Native PS5 only · PPSA01619 · game 01.000.004. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/ps5-games/mortal-kombat-11-official.jpg",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA01619_01.000.004.shn",
+      "preparation": "Native PS5 Mortal Kombat 11, PPSA01619, update 01.000.004. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Infinity HP",
+        "Untouchable",
+        "Freeze Timer",
+        "Full Defensive\\Offensive Meter"
+      ],
+      "cheatDetails": [
+        {
+          "name": "Infinity HP",
+          "description": "P1"
+        },
+        {
+          "name": "Untouchable",
+          "description": "P1"
+        },
+        {
+          "name": "Full Defensive\\Offensive Meter",
+          "description": "P1"
+        }
+      ],
+      "cheatCount": 4,
+      "credits": [
+        "hejran7"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file. The original embedded Version is 1.000.004; the publisher filename/index pins 01.000.004. Neither filename nor file content was rewritten. The original XML declares utf-16 but contains UTF-8 text. Its bytes are preserved unchanged; parser behavior and gameplay have not been tested on hardware.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "Mortal Kombat 11",
+        "Moder": "hejran7",
+        "Cusa": "PPSA01619",
+        "Version": "1.000.004",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA01619_01.000.004.shn=Mortal Kombat 11",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    },
+    {
+      "gameSlug": "maneater",
+      "game": "Maneater",
+      "titleId": "PPSA01861",
+      "gameVersion": "01.000.010",
+      "filename": "PPSA01861_01.000.010.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01861_01.000.010.shn",
+      "bytes": 3834,
+      "sha256": "a46d39f8636c1a203cd93cba196244b06f1399ef56dbbe90590f2fea69f7fd8f",
+      "gitBlob": "6e1759c6d24a776e017e7f82fe0ea34a8d574d22",
+      "importPath": "docs/tmp/console-batch5/PPSA01861_01.000.010.shn",
+      "id": "ps5-native-shn-ppsa01861-01-000-010",
+      "importJobId": "ps5-native-shn-ppsa01861-01-000-010",
+      "name": "Maneater · native PS5 01.000.010",
+      "version": "01.000.010",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa01861-01-000-010/PPSA01861_01.000.010.shn",
+      "page": "/console/ps5/game-cheats/maneater/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01861_01.000.010.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA01861"
+      ],
+      "compatibility": "Native PS5 only · PPSA01861 · game 01.000.010. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/ps5-games/maneater-official.jpg",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA01861_01.000.010.shn",
+      "preparation": "Native PS5 Maneater, PPSA01861, update 01.000.010. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Infinite Health",
+        "Infinite Oxygen",
+        "Max Fats",
+        "Max Protein",
+        "Max Mineral",
+        "Max Mutagens",
+        "2X Experience Points"
+      ],
+      "cheatDetails": [],
+      "cheatCount": 7,
+      "credits": [
+        "Saso"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "Maneater",
+        "Moder": "Saso",
+        "Cusa": "PPSA01861",
+        "Version": "01.000.010",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA01861_01.000.010.shn=Maneater",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    },
+    {
+      "gameSlug": "alan-wake-remastered",
+      "game": "Alan Wake Remastered",
+      "titleId": "PPSA01925",
+      "gameVersion": "01.000.003",
+      "filename": "PPSA01925_01.000.003.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01925_01.000.003.shn",
+      "bytes": 3215,
+      "sha256": "2754a9259cb466143684a679dc530eefdcdaa5abaa67280da3d231f71b7751db",
+      "gitBlob": "8f6e0b9ee66460791f88263d15a8eaed86842f91",
+      "importPath": "docs/tmp/console-batch5/PPSA01925_01.000.003.shn",
+      "id": "ps5-native-shn-ppsa01925-01-000-003",
+      "importJobId": "ps5-native-shn-ppsa01925-01-000-003",
+      "name": "Alan Wake Remastered · native PS5 01.000.003",
+      "version": "01.000.003",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa01925-01-000-003/PPSA01925_01.000.003.shn",
+      "page": "/console/ps5/game-cheats/alan-wake-remastered/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA01925_01.000.003.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA01925"
+      ],
+      "compatibility": "Native PS5 only · PPSA01925 · game 01.000.003. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/ps5-games/alan-wake-remastered-official.png",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA01925_01.000.003.shn",
+      "preparation": "Native PS5 Alan Wake Remastered, PPSA01925, update 01.000.003. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Infinite Health",
+        "Infinite Stamina",
+        "Infinite Flashlight Energy",
+        "Infinite Batteries",
+        "Infinite Ammo",
+        "No Reload",
+        "Infinite Flare / Flashbang",
+        "Infinite Car Battery"
+      ],
+      "cheatDetails": [],
+      "cheatCount": 8,
+      "credits": [
+        "Saso"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "Alan Wake Remastered",
+        "Moder": "Saso",
+        "Cusa": "PPSA01925",
+        "Version": "01.000.003",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA01925_01.000.003.shn=Alan Wake Remastered",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    },
+    {
+      "gameSlug": "no-more-heroes-iii",
+      "game": "No More Heroes III",
+      "titleId": "PPSA07576",
+      "gameVersion": "01.000.000",
+      "filename": "PPSA07576_01.000.000.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA07576_01.000.000.shn",
+      "bytes": 3781,
+      "sha256": "9835b51e4a0a75bf423be0e6efecc9c54d27b471baafb1dc2df247e917771ce6",
+      "gitBlob": "562fcc199340e9fd2097ba8660153f2ecf02cb29",
+      "importPath": "docs/tmp/console-batch5/PPSA07576_01.000.000.shn",
+      "id": "ps5-native-shn-ppsa07576-01-000-000",
+      "importJobId": "ps5-native-shn-ppsa07576-01-000-000",
+      "name": "No More Heroes III · native PS5 01.000.000",
+      "version": "01.000.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa07576-01-000-000/PPSA07576_01.000.000.shn",
+      "page": "/console/ps5/game-cheats/no-more-heroes-iii/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA07576_01.000.000.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA07576"
+      ],
+      "compatibility": "Native PS5 only · PPSA07576 · game 01.000.000. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/ps5-games/no-more-heroes-iii-official.jpg",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA07576_01.000.000.shn",
+      "preparation": "Native PS5 No More Heroes III, PPSA07576, update 01.000.000. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Inf HP + OHK",
+        "Inf HP",
+        "Inf Battery",
+        "Inf WESN",
+        "Inf UtopiCoin",
+        "Inf Sushi",
+        "Inf Bike Nitro"
+      ],
+      "cheatDetails": [
+        {
+          "name": "Inf HP + OHK",
+          "description": "Do not use Inf HP at same time"
+        },
+        {
+          "name": "Inf HP",
+          "description": "Do not use Inf HP + OHK at same time"
+        },
+        {
+          "name": "Inf WESN",
+          "description": "On using"
+        },
+        {
+          "name": "Inf UtopiCoin",
+          "description": "On using"
+        },
+        {
+          "name": "Inf Sushi",
+          "description": "On using"
+        },
+        {
+          "name": "Inf Bike Nitro",
+          "description": "On using"
+        }
+      ],
+      "cheatCount": 7,
+      "credits": [
+        "Weysincha"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "No More Heroes III",
+        "Moder": "Weysincha",
+        "Cusa": "PPSA07576",
+        "Version": "01.000.000",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA07576_01.000.000.shn=No More Heroes III",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    },
+    {
+      "gameSlug": "a-plague-tale-requiem",
+      "game": "A Plague Tale: Requiem",
+      "titleId": "PPSA05366",
+      "gameVersion": "01.005.000",
+      "filename": "PPSA05366_01.005.000.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA05366_01.005.000.shn",
+      "bytes": 564,
+      "sha256": "578426e46afcc00f3e922df180b6709654e55d3e2e79d68ccfb3067ae2b3a3dd",
+      "gitBlob": "7ce8767f053941b8ba461b4f6fe1f95f95a9b7f9",
+      "importPath": "docs/tmp/console-batch5/PPSA05366_01.005.000.shn",
+      "id": "ps5-native-shn-ppsa05366-01-005-000",
+      "importJobId": "ps5-native-shn-ppsa05366-01-005-000",
+      "name": "A Plague Tale: Requiem · native PS5 01.005.000",
+      "version": "01.005.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa05366-01-005-000/PPSA05366_01.005.000.shn",
+      "page": "/console/ps5/game-cheats/a-plague-tale-requiem/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA05366_01.005.000.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA05366"
+      ],
+      "compatibility": "Native PS5 only · PPSA05366 · game 01.005.000. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/ps5-games/a-plague-tale-requiem-official.jpg",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA05366_01.005.000.shn",
+      "preparation": "Native PS5 A Plague Tale: Requiem, PPSA05366, update 01.005.000. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Infinite Throwable/ Equipped / Craftable Items on using"
+      ],
+      "cheatDetails": [],
+      "cheatCount": 1,
+      "credits": [
+        "Weysincha"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "A Plague Tale Requiem",
+        "Moder": "Weysincha",
+        "Cusa": "PPSA05366",
+        "Version": "01.005.000",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA05366_01.005.000.shn=A Plague Tale Requiem",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    },
+    {
+      "gameSlug": "tales-of-arise",
+      "game": "Tales of Arise",
+      "titleId": "PPSA02745",
+      "gameVersion": "01.000.004",
+      "filename": "PPSA02745_01.000.004.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA02745_01.000.004.shn",
+      "bytes": 6142,
+      "sha256": "b371b77a4f8db2da9044c3d0f0f6b8c1778955cab33ded3c697ba8331e091bf3",
+      "gitBlob": "29eec69f3f462891d57412f52838421d466dd16f",
+      "importPath": "docs/tmp/console-batch5/PPSA02745_01.000.004.shn",
+      "id": "ps5-native-shn-ppsa02745-01-000-004",
+      "importJobId": "ps5-native-shn-ppsa02745-01-000-004",
+      "name": "Tales of Arise · native PS5 01.000.004",
+      "version": "01.000.004",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa02745-01-000-004/PPSA02745_01.000.004.shn",
+      "page": "/console/ps5/game-cheats/tales-of-arise/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA02745_01.000.004.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA02745"
+      ],
+      "compatibility": "Native PS5 only · PPSA02745 · game 01.000.004. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/ps5-games/tales-of-arise-official.jpg",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA02745_01.000.004.shn",
+      "preparation": "Native PS5 Tales of Arise, PPSA02745, update 01.000.004. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Infinite Health + OHK",
+        "Infinite Health ",
+        "One Hit Kill",
+        "Infinite Gald",
+        "Infinite Experience ",
+        "Infinite CP",
+        "Infinite SP",
+        "Infinite Items"
+      ],
+      "cheatDetails": [
+        {
+          "name": "Infinite Health + OHK",
+          "description": "Only enable once the encounter starts"
+        },
+        {
+          "name": "Infinite Health ",
+          "description": "Only enable once the encounter starts"
+        },
+        {
+          "name": "One Hit Kill",
+          "description": "Only enable once the encounter starts"
+        },
+        {
+          "name": "Infinite Gald",
+          "description": "9,999,999 Gald"
+        },
+        {
+          "name": "Infinite Experience ",
+          "description": "Complete 2 battles for max level"
+        },
+        {
+          "name": "Infinite Items",
+          "description": "Use or sell an item for max stack"
+        }
+      ],
+      "cheatCount": 8,
+      "credits": [
+        "Super Death"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "Tales of Arise ",
+        "Moder": "Super Death",
+        "Cusa": "PPSA02745",
+        "Version": "01.000.004",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA02745_01.000.004.shn=Tales of Arise",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    },
+    {
+      "gameSlug": "lies-of-p",
+      "game": "Lies of P",
+      "titleId": "PPSA10261",
+      "gameVersion": "01.000.000",
+      "filename": "PPSA10261_01.000.000.shn",
+      "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA10261_01.000.000.shn",
+      "bytes": 4300,
+      "sha256": "dba06d37d05af2235029d33b2c506940c9cbd2c128f37965ed636aea60e8920e",
+      "gitBlob": "5869a90276f761bedbc74e29ed32a5b80092aa4f",
+      "importPath": "docs/tmp/console-batch5/PPSA10261_01.000.000.shn",
+      "id": "ps5-native-shn-ppsa10261-01-000-000",
+      "importJobId": "ps5-native-shn-ppsa10261-01-000-000",
+      "name": "Lies of P · native PS5 01.000.000",
+      "version": "01.000.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "format": "SHN",
+      "url": "/downloads/ps4-ps5/ps5-native-shn-ppsa10261-01-000-000/PPSA10261_01.000.000.shn",
+      "page": "/console/ps5/game-cheats/lies-of-p/",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/PPSA10261_01.000.000.shn",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "titleIds": [
+        "PPSA10261"
+      ],
+      "compatibility": "Native PS5 only · PPSA10261 · game 01.000.000. Requires an existing compatible etaHEN cheat manager; no firmware range or hardware success is inferred.",
+      "image": "/assets/images/game-patches/lies-of-p-official.jpg",
+      "imageProvenance": "Platform artwork, not a game screenshot or cover",
+      "installationPath": "/data/etaHEN/cheats/shn/PPSA10261_01.000.000.shn",
+      "preparation": "Native PS5 Lies of P, PPSA10261, update 01.000.000. Copy the unchanged SHN file to /data/etaHEN/cheats/shn/. Launch the matching game and use etaHEN Toolbox > Cheats to select options. Back up any existing definition; keep only one format per title ID/update. Review the original author's conditions below. This is cheat data, not a standalone payload.",
+      "cheats": [
+        "Infinite Health",
+        "Infinite Stamina",
+        "Infinite Ergo",
+        "Infinite Items/ Storage",
+        "Infinite Fable Arts",
+        "Infinite Legion Use"
+      ],
+      "cheatDetails": [
+        {
+          "name": "Infinite Ergo",
+          "description": "Use this cheat by itself/ Buy or sell something "
+        },
+        {
+          "name": "Infinite Items/ Storage",
+          "description": "Store or withdraw any items into/out of storage"
+        }
+      ],
+      "cheatCount": 6,
+      "credits": [
+        "Super Death"
+      ],
+      "metadataValidation": "Original SHN title ID, process, author and option byte fields checked against the pinned publisher file.",
+      "sourceTrainer": {
+        "xsd": "http://www.w3.org/2001/XMLSchema",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "Game": "Lie of P",
+        "Moder": "Super Death",
+        "Cusa": "PPSA10261",
+        "Version": "01.000.000",
+        "Process": "eboot.bin"
+      },
+      "publisherIndexEntry": "PPSA10261_01.000.000.shn=Lies of P",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+    }
+  ],
+  "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt"
+}

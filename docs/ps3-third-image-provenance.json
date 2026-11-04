@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-02T06:11:45.546Z",
+  "scope": "Actual static PS3 mod showcase images, preserved archive screenshots and explicitly historical source artwork. No video embeds or image generation.",
+  "images": [
+    {
+      "path": "/assets/images/ps3-mods/bo3-spectre-engine-v1-source.jpg",
+      "url": "https://i.ytimg.com/vi/KhAJev673vQ/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+      "kind": "static source-showcase still",
+      "bytes": 137904,
+      "sha256": "93a2f34ec6dc876136c65909743cfecdcc1f504f56088a7a4c387e8c1322dc1e",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Actual Spectre Engine Version 1.00 menu visibly shown beside source artwork. This image is not hardware verification."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ghosts-daydream-116-source.jpg",
+      "url": "https://i.ytimg.com/vi/6eKFCXE8eJY/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "kind": "static source-showcase still",
+      "bytes": 226611,
+      "sha256": "83c7d321d2f2682355e330f9ea708c311003643bd882199c11c52290b0754125",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Static image from the DayDream-linked source showcase shows Ghosts gameplay and a Friendly Modder host menu; it also visibly has a Kebab Engine overlay. Do not claim the image proves a single loaded build or firmware compatibility."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ghosts-rebound-source.jpg",
+      "url": "https://i.ytimg.com/vi/Wiz4JDEGwkA/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "kind": "static source-showcase still",
+      "bytes": 167124,
+      "sha256": "cbdd5a058e087b46f2693d08a150fe2152c02e145704a87d41d99b092e0cf320",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Actual Rebound menu and PS3 overlay visible; overlay identifies NPEB01835. No game update is visible."
+    },
+    {
+      "path": "/assets/images/ps3-mods/mw3-resurgence-source.jpg",
+      "url": "https://i.ytimg.com/vi/CRgCr59nSHY/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "kind": "static source-showcase still",
+      "bytes": 129002,
+      "sha256": "8dcfee2a46a737991c4121c3628de8b2689d26983ab0dedf612bc265932cc56f",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Static source showcase composition clearly displays the Resurgence main menu. No firmware/update proof implied."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ghosts-daydream-116-archive.png",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "sourceArchiveUrl": "https://www.mediafire.com/file/14rndxx4h1gp3q7/DayDream_COD_Ghost_1.16.zip/file",
+      "archiveSha256": "83811f674c168eea1145f681518cc61246eb6ee1531cd2033f2b1103ee8be6d3",
+      "memberPath": "DayDream COD Ghost 1.16\\ScreenShots\\Call of DutyÂ® Ghosts_7.png",
+      "kind": "unaltered archive screenshot",
+      "bytes": 1534363,
+      "sha256": "b73fad6d7a282c17a8f83a46c3cda0d3ea42c27951d9ed7d9067ac08c0a7941c",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Actual DayDreams vertical menu label and Friendly Modder credit are visible in the preserved archive screenshot; a Kebab overlay is also present. This is source imagery, not a hardware test."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ps3-pro-lite-source-installer.jpg",
+      "url": "https://www.dekazeta.net/foro/uploads/monthly_2019_10/Installer.thumb.jpg.dc659ef4b089340a5a84b164d8c2c42c.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "kind": "historical installer artwork used by supplied source",
+      "bytes": 115825,
+      "sha256": "b25810a0fc6d1a7d0093cbb4aa955869a4beda34d1bdcc42a42009182f994834",
+      "width": 1200,
+      "height": 675,
+      "visuallyVerified": true,
+      "verification": "Real PS3 XMB screenshot of PS3 4K Pro installer, visibly labelled an older 4.84 HEN/CFW interface. It is not evidence of the linked Pro Lite package version or 4.92/4.93 execution. Kept as provenance; app card retains neutral PS3 image to avoid misrepresenting the saved build."
+    }
+  ]
+}

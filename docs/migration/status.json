@@ -1,0 +1,1079 @@
+{
+  "updatedAt": "2026-11-03T23:52:30.759Z",
+  "repository": "Speedy-away/WWB-HOST",
+  "site": "https://speedy-away.github.io/WWB-HOST/",
+  "mainSite": "https://whatwhatboy.com/",
+  "status": "Published and verified: illustrated home, original-loader routing and caches, Load/Download URLs, retained versions and main-site handoff.",
+  "sourceSnapshot": "docs/migration/source-preservation.json",
+  "rootHome": "index.html",
+  "karo": {
+    "build": "e3c0caf3db54",
+    "entries": 71,
+    "onlineOnly": 3,
+    "originalRepairs": 3,
+    "hardwareVerified": false
+  },
+  "pages": {
+    "revision": "468339255178965af15d2cc484550eb0917a8419",
+    "base": "/WWB-HOST",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 842068498,
+    "budget": 922746880,
+    "files": 5568,
+    "offloadedFiles": 274,
+    "nativeScriptsUnchanged": 848,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+  },
+  "publication": {
+    "pagesEnabled": true,
+    "archiveUploadPending": false,
+    "homepageCommitPending": false,
+    "homeDeployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41705919245",
+    "cacheFix": "Keep every existing CACHE resource on the Pages origin; offload only files that original caches do not require.",
+    "cacheMimeAliasPending": false,
+    "productionCommit": "2b2cbb563491698019f1a487d3eb2a62499d8e5f",
+    "productionDeployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41721967832",
+    "mainCommit": "fe5386a1738bc9d3d40a9c77c81313fb2d9a4d11",
+    "mainLinkVerified": true
+  },
+  "constraints": [
+    "Preserve every older version.",
+    "Never restore or refetch Defender-quarantined files.",
+    "Never execute console files during QA.",
+    "Use the project-prefix publisher and bounded archive pushes."
+  ],
+  "next": [
+    "Continue future host changes in this repository.",
+    "Physical-console execution remains unverified."
+  ],
+  "home": {
+    "file": "index.html",
+    "title": "WWB HOST | PS4 & PS5",
+    "links": [
+      "./hosts/ps4/",
+      "./hosts/ps5/",
+      "./hosts/karo/",
+      "https://whatwhatboy.com/"
+    ],
+    "noRedirect": true,
+    "imageCount": 6
+  },
+  "retainedVersionsPage": {
+    "file": "hosts/karo/versions.html",
+    "readyZIPs": 165
+  },
+  "verification": {
+    "publicLoadDownloadURLs": 1553,
+    "exactArabicBuilds": 3,
+    "nativeScriptsUnchanged": 848,
+    "originalCacheManifests": 30,
+    "existingCacheResourcesOnSameOrigin": 1491,
+    "cacheIssues": 0,
+    "publisherFixtureTests": 3,
+    "httpURLResolverTests": 1,
+    "senderReleaseDeliveryTests": 1,
+    "allRetainedZIPsHTTP": 165,
+    "archiveFileRecords": 5988,
+    "archiveMissingRecords": 0,
+    "browserRenderVerified": false,
+    "hardwareExecutionVerified": false
+  },
+  "senderReleaseDelivery": {
+    "verifiedAt": "2026-11-03T20:17:05.459Z",
+    "version": "2.1.0+8d8bda70ee88",
+    "name": "console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "bytes": 106736981,
+    "sha256": "e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\WWB HOST\\Helpers\\2.1.0+8d8bda70ee88\\console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "release": "https://github.com/Speedy-away/WWB-HOST/releases/tag/sender-2.1.0-8d8bda70ee88",
+    "downloadURL": "https://github.com/Speedy-away/WWB-HOST/releases/download/sender-2.1.0-8d8bda70ee88/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "assetId": 706948768,
+    "serverDigest": "sha256:e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
+    "zipUnchanged": true,
+    "archiveVerified": true,
+    "downloadedCodeExecuted": false,
+    "publication": "Release asset and direct Pages download link verified.",
+    "testsPassed": 67,
+    "oversizedGitFiles": 0,
+    "archiveIndex": {
+      "mode": "write",
+      "backupRoot": "F:\\whatsite-backup-downloads-etc",
+      "items": 4868,
+      "fileRecords": 5993,
+      "presentFileRecords": 5993,
+      "missingFileRecords": 0,
+      "missingPaths": 0,
+      "otherUnavailableRecords": 0,
+      "availability": {
+        "present": 5993
+      }
+    },
+    "sourceCommit": "2b42a834ae209db1779c2c26aee8585de765ce21",
+    "allOlderZIPsAndReleasesPreserved": true
+  },
+  "hostGallery20261103": {
+    "status": "Published; shared image-led page theme also verified on all authored host pages.",
+    "report": "docs/host-gallery-update.json",
+    "preview": "http://127.0.0.1:61823/WWB-HOST/hosts/ps4/?view=mods",
+    "tests": {
+      "total": 67,
+      "passed": 67,
+      "failed": 0,
+      "report": "docs/qa/host-gallery-tests.txt"
+    },
+    "senderVersion": "2.1.0+8d8bda70ee88",
+    "sourceChangesNeedPublication": false
+  },
+  "unrelatedWork": "Concurrent trainer, gallery and catalogue working edits were preserved and excluded from the migration commits.",
+  "pageTheme20261103": {
+    "status": "published-and-verified",
+    "pages": 24,
+    "report": "docs/migration/page-theme-review.json",
+    "stylesheet": "assets/host-pages.css",
+    "generator": "scripts/style-host-pages.cjs",
+    "actionContractsUnchanged": true,
+    "downloadFilesChanged": 0,
+    "nativeRuntimeFilesChanged": 0,
+    "behaviorTestsPassed": 29,
+    "physicalConsoleTested": false,
+    "browserRenderVerified": false,
+    "checkedAt": "2026-11-03T20:36:35.258Z",
+    "commit": "468339255178965af15d2cc484550eb0917a8419",
+    "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41712758658",
+    "uniqueHeaderImages": 11,
+    "liveLoadDownloadURLs": 1553,
+    "nativeScriptsUnchanged": 848,
+    "cacheManifestAliases": 7,
+    "retainedBuildVersions": 165,
+    "hardwareExecutionVerified": false,
+    "pagesBuild": {
+      "revision": "468339255178965af15d2cc484550eb0917a8419",
+      "base": "/WWB-HOST",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 842068498,
+      "budget": 922746880,
+      "files": 5568,
+      "offloadedFiles": 274,
+      "nativeScriptsUnchanged": 848,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+    }
+  },
+  "homeImagePolish20261103": {
+    "report": "docs/home-image-polish.json",
+    "preview": "http://127.0.0.1:57296/WWB-HOST/",
+    "localFilesUpdated": true,
+    "publication": false,
+    "scope": "Existing console photos preserved;4 illustrated trainer/payload/file/firmware cards added; relative assets work when index.html is opened directly.",
+    "verifiedLinks": 2388,
+    "publisherFixtureTests": 3
+  },
+  "firmwareGoldhenCleanup": {
+    "date": "2026-11-03T20:36:01.299Z",
+    "report": "docs/qa/download-size-cleanup.json",
+    "status": "Published and live verified",
+    "legacySenderOriginalLinks": 23,
+    "suppliedGoldhenSHA256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+    "consolePayloadsExecuted": false,
+    "checkedAt": "2026-11-03T20:43:16.733Z",
+    "mainRevision": "5255e8f961727f4ea1f82247405c3fd436e4beda",
+    "hostRevision": "e20e7bad3131d0bc732c3a9686388bc7b1bceedc",
+    "downloadBytesVerified": true,
+    "archivePresentRecords": 5994,
+    "archiveMissingRecords": 0
+  },
+  "ps4BrowserLoad": {
+    "date": "2026-11-03T20:48:34.672Z",
+    "status": "Published and live verified",
+    "report": "docs/qa/ps4-browser-load.json",
+    "hardwareTested": false,
+    "checkedAt": "2026-11-03T20:57:54.968Z",
+    "commit": "6ccc8e8bd29de9f7ac1c3fc649765878e3b49858",
+    "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41716058331",
+    "focusedTests": 54
+  },
+  "allPagesAudit20261103": {
+    "status": "passed",
+    "pages": 25,
+    "images": 87,
+    "missingImages": 0,
+    "invalidImages": 0,
+    "duplicateIDs": 0,
+    "behaviorAndProvenanceTests": 150,
+    "fixes": [
+      "Mobile padding CSS specificity",
+      "Three missing social-preview images",
+      "Explicit GoldHEN PC/mobile Download destination",
+      "Private migration evidence resolution in provenance tests"
+    ],
+    "hardwareExecutionVerified": false,
+    "browserRenderVerified": false,
+    "checkedAt": "2026-11-03T21:12:59.633Z",
+    "revision": "166665902edfd386daf0fb249473648c0d382035",
+    "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41718999722",
+    "publicImageURLs": 152,
+    "authoredActionURLs": 230,
+    "legacyLoadDownloadURLs": 1553,
+    "failures": [],
+    "checkerCorrection": "Six homepage-relative image references were initially parsed as domain-root paths. Their actual declared src values were resolved against the deployed project URL and rechecked successfully.",
+    "report": "docs/migration/all-host-live-audit.json",
+    "immutableTrees": {
+      "downloads": "1c5a712c09a81d0b1a1e09fa05c284e528cd052f",
+      "hosts/runtime": "d6f963d1df4bc8092a5ec4a58eef770ca3241fb3"
+    }
+  },
+  "consolePerformance20261103": {
+    "updatedAt": "2026-11-03T21:25:34.459Z",
+    "status": "published-and-verified",
+    "baseline": "bf348610c9ab6a6cf3819833d2eb5d6ebacb86d4",
+    "changes": [
+      "Console catalogue first batch:12 text entries; Show more keeps all entries reachable",
+      "Console trainer first batch:18 entries, no cover images",
+      "Static console artwork deferred; desktop artwork retained",
+      "Hidden animated background and unrelated main-site script removed from authored host deployment",
+      "Unused external font stylesheet removed",
+      "English refresh skips translation scans; language switching still restores source strings",
+      "Catalogue groups cached and redundant JSON parse/grouping removed",
+      "Console search debounced 120 ms"
+    ],
+    "regressionTests": 166,
+    "fixtureComparison": {
+      "entries": 100,
+      "consoleInitialTiles": 12,
+      "desktopTiles": 100,
+      "allEntriesReachable": true,
+      "consoleImageSourceAssignments": 0
+    },
+    "nativeRuntimeFilesChanged": 0,
+    "downloadFilesChanged": 0,
+    "hardwareMeasured": false,
+    "browserRenderVerified": false,
+    "checkedAt": "2026-11-03T21:30:57.500Z",
+    "revision": "2b2cbb563491698019f1a487d3eb2a62499d8e5f",
+    "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41721967832",
+    "publicPages": [
+      {
+        "path": "",
+        "status": 200,
+        "scriptCount": 2,
+        "deferredStaticImages": 5
+      },
+      {
+        "path": "hosts/ps4/",
+        "status": 200,
+        "scriptCount": 9,
+        "deferredStaticImages": 1
+      },
+      {
+        "path": "hosts/ps5/",
+        "status": 200,
+        "scriptCount": 9,
+        "deferredStaticImages": 1
+      },
+      {
+        "path": "hosts/ps4/gta5/",
+        "status": 200,
+        "scriptCount": 7,
+        "deferredStaticImages": 12
+      },
+      {
+        "path": "hosts/ps5/gta5/",
+        "status": 200,
+        "scriptCount": 7,
+        "deferredStaticImages": 12
+      },
+      {
+        "path": "hosts/tools/ps4-trainer/",
+        "status": 200,
+        "scriptCount": 3,
+        "deferredStaticImages": 1
+      }
+    ],
+    "pagesBuild": {
+      "revision": "2b2cbb563491698019f1a487d3eb2a62499d8e5f",
+      "base": "/WWB-HOST",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 842382267,
+      "budget": 922746880,
+      "files": 5587,
+      "offloadedFiles": 274,
+      "nativeScriptsUnchanged": 848,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+    }
+  },
+  "ps5BrowserLoad": {
+    "updatedAt": "2026-11-03T22:01:49.055Z",
+    "status": "Published and live verified",
+    "report": "docs/qa/ps5-browser-load.json",
+    "entry": "/hosts/runtime/ps5-umtx/web/index.html",
+    "testsPassed": 31,
+    "hardwareTested": false,
+    "concurrentIntegration": "Unfinished compact/local-launcher work remains in the working folder. When integrating that pipeline, retain direct browserHost Load and the ps5-umtx one-use request gate; a WebKit-only entry must not be represented as an established complete jailbreak.",
+    "checkedAt": "2026-11-03T22:08:33.343Z",
+    "revision": "ec57a07f80677551739f0e36d90c1a67636c0924",
+    "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41727111581"
+  },
+  "remainingConsolePerformance20261103": {
+    "status": "Published and live verified",
+    "report": "docs/migration/remaining-console-performance.json",
+    "tests": 215,
+    "authoredPagesChecked": 24,
+    "karoInitialHtmlBytes": 94646,
+    "karoSourceHtmlBytes": 933837,
+    "preservedPayloadRows": 1446,
+    "retainedOlderDownloads": 165,
+    "nativeScriptsUnchanged": 849,
+    "cachedResourcesRetained": 1491,
+    "limits": [
+      "Physical PS4/PS5 performance and native execution not tested",
+      "Browser automation unavailable in current Work settings"
+    ],
+    "commit": "c6687a91f49ee688d3d6f4a5df7d07600c88dcad",
+    "run": 41728129691,
+    "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41728129691",
+    "liveAuthoredPages": 24,
+    "liveFragmentPairs": 62
+  },
+  "sitewideConsolePerformance20261103": {
+    "status": "Published and live verified",
+    "report": "docs/migration/sitewide-console-performance.json",
+    "tests": 227,
+    "runtimeDocumentsOptimized": 213,
+    "runtimeRoutingBytes": 222159,
+    "fullRoutingBytes": 1027171,
+    "exactAliasesVerified": 6395,
+    "cataloguePages": 13,
+    "sharedCatalogueFiles": 4,
+    "unchangedCatalogueRecords": 1028,
+    "limits": [
+      "Physical PS4/PS5 performance not measured",
+      "Browser UI automation unavailable in Work settings; no native console files executed"
+    ],
+    "performanceCommit": "4fa06f41d0de8e9f8e2921f781cf8b9b71916ea5",
+    "verifiedMergedCommit": "0488479b84f9ca3ffe1c12c0a9fc44a23d7e67e4",
+    "run": 41730210213,
+    "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41730210213",
+    "livePages": 1104,
+    "liveSharedCatalogueFiles": 4
+  },
+  "ps5RemainingOriginalHosts": {
+    "updatedAt": "2026-11-03T22:20:45.175Z",
+    "status": "Published and live verified",
+    "report": "docs/qa/ps5-original-hosts.json",
+    "firmwareChoices": 61,
+    "selectionOnly": true,
+    "testsPassed": 49,
+    "hardwareTested": false,
+    "originalHostControl": "UMTX2 retains its own Start control; Relapse starts automatically.",
+    "checkedAt": "2026-11-03T22:27:43.896Z",
+    "revision": "0488479b84f9ca3ffe1c12c0a9fc44a23d7e67e4",
+    "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41730210213"
+  },
+  "compactBlueHosts20261103": {
+    "updatedAt": "2026-11-03T22:32:31.218Z",
+    "status": "Implemented and locally verified; not committed, pushed or deployed by this chat.",
+    "repository": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
+    "preview": "http://127.0.0.1:56842/WWB-HOST/",
+    "previewRoot": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\wwb-blue-host-final-20261103",
+    "changes": [
+      "Grey/blue homepage and authored page theme; larger contain-only images; outer catalogue box removed",
+      "Homepage matching-console firmware detection without a network probe; KARO homepage feature removed",
+      "Grouped populated firmware families; exact transfer firmware remains separate and unchanged",
+      "Local GamerHack5.05 and6.72 runtime closures; pinned native source bytes retained",
+      "Local PS5 Relapse7.00–13.60 with33exact versions; one-use local entry guard and Pages-prefix validation",
+      "Firmware-based PS4 launch titles; HEN choices retained; long source/hosting content moved to corner popup",
+      "Mods / Mod Menus label; PS4 trainer shortcut; Game patches tabs and98PS4/101PS5 game catalogues",
+      "33retained lower-firmware GoldHEN BIN variants; exact source/archive hashes verified",
+      "Requested WWB-HOST ad scripts replace old browsing-page ads; execution documents remain isolated",
+      "Console canvas and decoration/English-observer overhead removed; existing bounded catalogue/trainer batches preserved",
+      "20language packs preserve all existing entries and translate new labels"
+    ],
+    "families": [
+      {
+        "id": "karo-ps5-umtx",
+        "label": "PS5 WebKit Exploit - 1.00–5.50",
+        "platform": "ps5",
+        "firmwares": [
+          "1.00",
+          "1.01",
+          "1.02",
+          "1.05",
+          "1.10",
+          "1.11",
+          "1.12",
+          "1.13",
+          "1.14",
+          "2.00",
+          "2.20",
+          "2.25",
+          "2.26",
+          "2.30",
+          "2.50",
+          "2.70",
+          "3.00",
+          "3.10",
+          "3.20",
+          "3.21",
+          "4.00",
+          "4.02",
+          "4.03",
+          "4.50",
+          "4.51",
+          "5.00",
+          "5.02",
+          "5.10",
+          "5.50"
+        ],
+        "entry": "/hosts/ps5/exploit/karo-ps5-umtx/"
+      },
+      {
+        "id": "gamerhack-505",
+        "label": "PS4 WebKit Exploit - 5.05",
+        "platform": "ps4",
+        "firmwares": [
+          "5.05"
+        ],
+        "entry": "/hosts/ps4/exploit/gamerhack-505/"
+      },
+      {
+        "id": "gamerhack-672goldhen",
+        "label": "PS4 WebKit Exploit - 6.72",
+        "platform": "ps4",
+        "firmwares": [
+          "6.72"
+        ],
+        "entry": "/hosts/ps4/exploit/gamerhack-672goldhen/"
+      },
+      {
+        "id": "ps4-psfree-700-960",
+        "label": "PS4 WebKit Exploit - 7.00–9.60",
+        "platform": "ps4",
+        "firmwares": [
+          "7.00",
+          "7.01",
+          "7.02",
+          "7.50",
+          "7.51",
+          "7.55",
+          "8.00",
+          "8.01",
+          "8.03",
+          "8.50",
+          "8.52",
+          "9.00",
+          "9.03",
+          "9.04",
+          "9.50",
+          "9.51",
+          "9.60"
+        ],
+        "entry": "/hosts/runtime/ps4-psfree-700-960/"
+      },
+      {
+        "id": "karo-g2allpro-modern",
+        "label": "PS4 WebKit Exploit - 10.00–13.52",
+        "platform": "ps4",
+        "firmwares": [
+          "10.00",
+          "11.00",
+          "11.02",
+          "11.50",
+          "11.52",
+          "12.00",
+          "12.02",
+          "12.50",
+          "12.52",
+          "13.00",
+          "13.02",
+          "13.04",
+          "13.50",
+          "13.52"
+        ],
+        "entry": "/hosts/ps4/exploit/karo-g2allpro-modern/"
+      },
+      {
+        "id": "ps4-afterglow",
+        "label": "PS4 WebKit Exploit - 13.52–14.00",
+        "platform": "ps4",
+        "firmwares": [
+          "13.52",
+          "14.00"
+        ],
+        "entry": "/hosts/ps4/afterglow/"
+      },
+      {
+        "id": "ps5-webkit-dd8e4e0914c5",
+        "label": "PS5 WebKit Exploit - 7.00–13.60",
+        "platform": "ps5",
+        "firmwares": [
+          "13.60",
+          "13.42",
+          "13.40",
+          "13.20",
+          "13.00",
+          "12.70",
+          "12.60",
+          "12.40",
+          "12.20",
+          "12.02",
+          "12.00",
+          "11.60",
+          "11.20",
+          "11.00",
+          "10.60",
+          "10.40",
+          "10.20",
+          "10.01",
+          "10.00",
+          "9.60",
+          "9.40",
+          "9.20",
+          "9.00",
+          "8.60",
+          "8.40",
+          "8.20",
+          "8.00",
+          "7.61",
+          "7.60",
+          "7.40",
+          "7.20",
+          "7.01",
+          "7.00"
+        ],
+        "entry": "/hosts/runtime/ps5-webkit-dd8e4e0914c5/"
+      }
+    ],
+    "ps5Source": {
+      "repository": "https://github.com/ntfargo/Relapse-Exploit",
+      "commit": "dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0",
+      "report": "docs/ps5-webkit-build.json",
+      "readyBundle": "/downloads/hosts/ps5-webkit/ps5-webkit-dd8e4e0914c5-8f6ff8455428.zip",
+      "sha256": "8f6ff84554285ca339a00914948c14c322262675dabb4b924a4593197786e795"
+    },
+    "archive": {
+      "report": "docs/host-compact-download-inventory.json",
+      "newRecords": 42,
+      "newBytes": 22534356,
+      "allRecordedFilePathsPresent": 8550,
+      "missingPaths": 0,
+      "indexRefreshed": true
+    },
+    "validation": {
+      "focusedTests": 58,
+      "consoleRegressionTests": 99,
+      "ps5AuthoredGuardTests": 5,
+      "totalPassing": 162,
+      "publicLinksChecked": 3660,
+      "nativeScriptBytesPreserved": 897,
+      "cacheResourcesRetained": 1536,
+      "issues": 0,
+      "buildBytes": 858508581,
+      "consoleContact": false,
+      "nativeCodeExecuted": false,
+      "browserRenderVerified": false,
+      "hardwareExecutionVerified": false
+    },
+    "reports": [
+      "docs/host-home-blue-review.json",
+      "docs/host-console-lite-hooks-applied.json",
+      "docs/host-language-labels-review.json",
+      "docs/host-ads-patches-handoff.json",
+      "docs/host-modern-firmware-evidence.json",
+      "docs/host-gamerhack-local-build.json",
+      "docs/trainer-cover-provenance.json"
+    ],
+    "remainingChecks": [
+      "Visual render review is pending because browser automation is disabled in Work settings.",
+      "Physical PS4/PS5 exploit execution, offline cache persistence and console performance require hardware verification.",
+      "Publish through the independent WWB-HOST repository when authorized; do not regenerate main whatsite host redirects."
+    ],
+    "preservation": "Older runtime files, ready ZIPs, native helpers and downloads remain preserved. No downloaded native module or payload was executed."
+  },
+  "sameOriginConsoleLoads20261103": {
+    "status": "validated before publication",
+    "updatedAt": "2026-11-03T23:19:52.640Z",
+    "tests": {
+      "passed": 112,
+      "failed": 0
+    },
+    "artifact": {
+      "revision": "main",
+      "base": "/WWB-HOST",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 858508361,
+      "budget": 922746880,
+      "files": 6176,
+      "offloadedFiles": 282,
+      "nativeScriptsUnchanged": 898,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+      "routingBytes": {
+        "full": 1081275,
+        "runtime": 238734
+      },
+      "sharedCatalogueFiles": 3
+    },
+    "verification": {
+      "status": "passed",
+      "bytes": 858508361,
+      "pagesLinks": 3815,
+      "nativeScriptsUnchanged": 898,
+      "cachedResourcesRetained": 1536,
+      "runtimeDocumentsOptimized": 218,
+      "offloadedFiles": 282,
+      "compactAliasesVerified": 6905,
+      "sharedCatalogueFiles": 3,
+      "routingBytes": {
+        "full": 1081275,
+        "runtime": 238734
+      },
+      "issues": 0
+    },
+    "platforms": {
+      "ps4": {
+        "firmwares": [
+          "5.05",
+          "6.72",
+          "7.00",
+          "7.01",
+          "7.02",
+          "7.50",
+          "7.51",
+          "7.55",
+          "8.00",
+          "8.01",
+          "8.03",
+          "8.50",
+          "8.52",
+          "9.00",
+          "9.03",
+          "9.04",
+          "9.50",
+          "9.51",
+          "9.60",
+          "10.00",
+          "11.00",
+          "11.02",
+          "11.50",
+          "11.52",
+          "12.00",
+          "12.02",
+          "12.50",
+          "12.52",
+          "13.00",
+          "13.02",
+          "13.04",
+          "13.50",
+          "13.52",
+          "14.00"
+        ],
+        "count": 34,
+        "localRoutes": [
+          {
+            "id": "local-gamerhack-505",
+            "url": "/WWB-HOST/hosts/runtime/gamerhack-23c946a7f85f-706ca871d370/web/505/index.html",
+            "kind": "karo"
+          },
+          {
+            "id": "local-gamerhack-672goldhen",
+            "url": "/WWB-HOST/hosts/runtime/gamerhack-23c946a7f85f-706ca871d370/web/672goldhen/index.html",
+            "kind": "karo"
+          },
+          {
+            "id": "local-karo-g2all",
+            "url": "/WWB-HOST/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2all/index.html",
+            "kind": "karo"
+          },
+          {
+            "id": "local-karo-g2allpro-modern",
+            "url": "/WWB-HOST/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2allpro/index.html",
+            "kind": "karo"
+          },
+          {
+            "id": "local-ps4-afterglow",
+            "url": "/WWB-HOST/hosts/runtime/ps4-afterglow-acf25a831725/web/index.html",
+            "kind": "afterglow"
+          }
+        ],
+        "firmwareGridOnly": "Choose firmware"
+      },
+      "ps5": {
+        "firmwares": [
+          "1.00",
+          "1.01",
+          "1.02",
+          "1.05",
+          "1.10",
+          "1.11",
+          "1.12",
+          "1.13",
+          "1.14",
+          "2.00",
+          "2.20",
+          "2.25",
+          "2.26",
+          "2.30",
+          "2.50",
+          "2.70",
+          "3.00",
+          "3.10",
+          "3.20",
+          "3.21",
+          "4.00",
+          "4.02",
+          "4.03",
+          "4.50",
+          "4.51",
+          "5.00",
+          "5.02",
+          "5.10",
+          "5.50",
+          "7.00",
+          "7.01",
+          "7.20",
+          "7.40",
+          "7.60",
+          "7.61",
+          "8.00",
+          "8.20",
+          "8.40",
+          "8.60",
+          "9.00",
+          "9.20",
+          "9.40",
+          "9.60",
+          "10.00",
+          "10.01",
+          "10.20",
+          "10.40",
+          "10.60",
+          "11.00",
+          "11.20",
+          "11.60",
+          "12.00",
+          "12.02",
+          "12.20",
+          "12.40",
+          "12.60",
+          "12.70",
+          "13.00",
+          "13.20",
+          "13.40",
+          "13.42",
+          "13.60"
+        ],
+        "count": 62,
+        "localRoutes": [
+          {
+            "id": "local-karo-ps5-umtx",
+            "url": "/WWB-HOST/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/UMTX/index.html",
+            "kind": "karo"
+          },
+          {
+            "id": "local-ps5-webkit-dd8e4e0914c5",
+            "url": "/WWB-HOST/hosts/runtime/ps5-webkit-dd8e4e0914c5/web/index.html",
+            "kind": "ps5-native"
+          }
+        ],
+        "firmwareGridOnly": "Choose firmware"
+      }
+    },
+    "limits": [
+      "Physical PS4/PS5 execution has not been tested",
+      "Native exploit and payload code was not executed; handoff tests use inert mocks",
+      "Legacy private KARO acquisition tests require local source-review files absent from isolated worktree"
+    ],
+    "report": "docs/qa/site-hosted-loads.json",
+    "request": "All active PS4 and PS5 Load routes hosted on WWB-HOST; firmware grid only in Choose firmware; payloads, game mods and tools show directly",
+    "preservation": "Reused pinned local builds; older builds, downloads and game mods retained. No new upstream downloads required."
+  },
+  "goldhenPopupAndSmoothRendering20261103": {
+    "status": "Published and live verified",
+    "report": "docs/migration/goldhen-popup-smooth-rendering.json",
+    "tests": 239,
+    "goldhen": {
+      "cards": 1,
+      "firmwareChoices": 9,
+      "entries": 34,
+      "olderBuilds": 33,
+      "archiveCopiesVerified": 33,
+      "load": "Existing Afterglow browser route preserved for 13.52 / 14.00; older BIN entries retain their original host Instructions and Download identities.",
+      "selection": "Card → firmware → version → existing action controls; selecting firmware runs nothing"
+    },
+    "domTileCreation": {
+      "before": 532,
+      "after": 100
+    },
+    "unchangedConnectionEdits": {
+      "before": 500,
+      "after": 0
+    },
+    "preservation": {
+      "downloadBytesChanged": 0,
+      "nativeFilesChanged": 0,
+      "readyPackagesChanged": 0,
+      "olderVersionsRetained": true
+    },
+    "limits": [
+      "DOM operations measured with inert fixtures; physical-console FPS and native execution were not tested",
+      "Browser UI automation is unavailable in Work settings"
+    ],
+    "commit": "ae4736fba1b39f6775ed5f0e2bf282243c13c9b2",
+    "run": 41737190646,
+    "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41737190646",
+    "livePages": 1104,
+    "liveGoldhenDownloadURLs": 34,
+    "pageFirmwareControls": {
+      "status": "GoldHEN view hides the page-level firmware block; firmware selection remains inside its popup.",
+      "testsPassed": 16,
+      "viewsChecked": [
+        "goldhen",
+        "loaders",
+        "payloads",
+        "mods",
+        "tools",
+        "sender"
+      ],
+      "loadAndDownloadControlsUnchanged": true,
+      "published": true,
+      "liveVerified": true,
+      "commit": "2ed22a4ad0c5e3a38784399d891fcb95c95238eb",
+      "run": 41737946944,
+      "checkedAt": "2026-11-03T23:19:46.080Z"
+    }
+  },
+  "consoleLoadAudit20261103": {
+    "updatedAt": "2026-11-03T23:39:22.229Z",
+    "status": "Published and live verified",
+    "scope": "Every active PS4/PS5 browser Load including GoldHEN, exact firmware options, and three retained native bookmark controls",
+    "loadActions": 8,
+    "firmwareRouteCases": 99,
+    "firmwareChoices": {
+      "ps4": 34,
+      "ps5": 62
+    },
+    "tests": {
+      "passed": 137,
+      "failed": 0
+    },
+    "build": {
+      "revision": "main",
+      "base": "/wwb-host",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 863187551,
+      "budget": 922746880,
+      "files": 6177,
+      "offloadedFiles": 281,
+      "nativeScriptsUnchanged": 898,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+      "routingBytes": {
+        "full": 1081225,
+        "runtime": 238518
+      },
+      "activeRuntimeFiles": 259,
+      "sharedCatalogueFiles": 3
+    },
+    "verification": {
+      "status": "passed",
+      "bytes": 863187551,
+      "pagesLinks": 3816,
+      "nativeScriptsUnchanged": 898,
+      "cachedResourcesRetained": 1536,
+      "runtimeDocumentsOptimized": 218,
+      "offloadedFiles": 281,
+      "compactAliasesVerified": 6905,
+      "sharedCatalogueFiles": 3,
+      "routingBytes": {
+        "full": 1081225,
+        "runtime": 238518
+      },
+      "activeRuntimeFiles": 259,
+      "issues": 0
+    },
+    "fixes": [
+      "Pin all active runtime inputs to Pages instead of allowing payload offloading",
+      "Disable browser Load and mark it busy during the handoff; preserve repeat-click protection after a navigation error",
+      "Read back one-use session requests and UMTX2 autorun choice before navigating; surface storage refusal",
+      "Retained PS4 and PS5 bookmark Load controls require a real press and ignore duplicate clicks",
+      "Match GitHub Pages canonical lowercase /wwb-host/ after repository rename; retain legacy and local validator support",
+      "Update theme-injected host header links and self-host instructions; reject obsolete uppercase Pages URLs during verification"
+    ],
+    "onSitePayload": {
+      "path": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/UMTX/payloads/OnionHENk1.11.elf",
+      "bytes": 4676224,
+      "sha256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212"
+    },
+    "runtimeFiles": 259,
+    "nativeExecutionTested": false,
+    "limits": [
+      "Automated handoff/error/progress wiring and byte checks only; physical PS4/PS5 hardware execution not tested",
+      "No original exploit scripts, native payloads or old archive versions were changed"
+    ],
+    "canonicalSite": "https://speedy-away.github.io/wwb-host/",
+    "publishedCommit": "d37a2b00d588aa19a2fb4f51651b36341c6dd39a",
+    "workflow": "https://github.com/Speedy-away/wwb-host/actions/runs/41741965896",
+    "live": {
+      "status": "passed",
+      "verifiedAt": "2026-11-03T23:51:04.304Z",
+      "site": "https://speedy-away.github.io/wwb-host/",
+      "commit": "d37a2b00d588aa19a2fb4f51651b36341c6dd39a",
+      "activeBrowserLoadActions": 8,
+      "firmwareRouteCases": 99,
+      "runtimeFilesFetchedAndMatched": 259,
+      "physicalConsoleExecution": false
+    },
+    "report": "docs/qa/console-load-audit.json"
+  },
+  "canonicalPagesSite": {
+    "url": "https://speedy-away.github.io/wwb-host/",
+    "verifiedOldUppercasePathStatus": 404,
+    "reason": "Repository canonical name changed to wwb-host during the authorized push; published prefix follows Pages API html_url",
+    "updatedAt": "2026-11-03T23:42:12.673Z"
+  },
+  "restInteractionPerformance20261103": {
+    "status": "Published and live verified",
+    "report": "docs/migration/rest-interaction-performance.json",
+    "focusedTests": 342,
+    "patchGames": {
+      "ps4": 98,
+      "ps5": 101
+    },
+    "consolePatchArtworkRequests": 0,
+    "legacyAuditFailures": {
+      "before": 9,
+      "after": 8,
+      "preExisting": true
+    },
+    "preservation": {
+      "nativeFilesChanged": 0,
+      "downloadsChanged": 0,
+      "readyPackagesChanged": 0,
+      "allOlderVersionsRetained": true,
+      "advertisingIntegrationUnchanged": true
+    },
+    "limits": [
+      "No physical-console FPS, native execution or browser rendering test",
+      "Browser automation is disabled in Work settings"
+    ],
+    "integratedBase": "360d394cc837fe08b2980ff8428b9037e9c3c187",
+    "canonicalSite": "https://speedy-away.github.io/wwb-host/",
+    "commit": "d37a2b00d588aa19a2fb4f51651b36341c6dd39a",
+    "run": 41741965896,
+    "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41741965896",
+    "livePages": 1149,
+    "patchDownloadXMLsVerified": 280,
+    "aliasesVerified": 6905
+  },
+  "redesignMigration20261104": {
+    "updatedAt": "2026-11-04T00:49:16.743Z",
+    "status": "Integration checkpoint for the user-requested new redesign/migration chat; publish the finished redesign at the new root domain.",
+    "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
+    "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
+    "publicURL": "https://speedy-away.github.io/",
+    "oldPublicURL": "https://speedy-away.github.io/wwb-host/",
+    "userRequestedNewChat": true,
+    "userRequestedPush": true,
+    "requests": [
+      "Full PlayStation-themed redesign of homepage, PS4/PS5 hosts and related pages, with supplied game artwork as backgrounds and improved cards.",
+      "Animated background with a lightweight console mode: the user previously reported severe PS4/PS5 lag. Keep decorative scripts out of native execution documents.",
+      "Fix inconsistent image frames, resize artwork without cutting off content, fetch missing game artwork, and take honest visual previews during redesign.",
+      "Credits page linked from the top taskbar.",
+      "PS4 and PS5 game patch install/load workflows using actual supported native services; include supported PS4 games running on PS5 and more source-confirmed PS5-host mods. XML patch files are not executable payloads.",
+      "Audit every local WebKit route, exact firmware coverage, ELF/BIN transfers, native download/PKG queue handling and error/progress behavior. Do not claim physical console execution was verified.",
+      "Update descriptive titles, descriptions, canonical/OG URLs, keywords and tags, including PS4 jailbreak/WebKit 14.00 and mod menus. Preserve the main whatwhatboy.com red design; only update its relevant metadata/links.",
+      "Migrate the complete preserved host repository/history to the existing speedy-away.github.io repository. Retain the old repo and all old downloads/releases; do not overwrite its destination .git or remove source history."
+    ],
+    "build": {
+      "directory": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/wwb-migration-checkpoint-20261104",
+      "status": "passed",
+      "bytes": 863570471,
+      "publicLinks": 3839,
+      "localRuntimeConfigs": 38,
+      "runtimeHandoffConfigs": 2,
+      "nativeScriptsUnchanged": 898,
+      "cachedResources": 1536,
+      "pinnedRuntimeFiles": 319,
+      "issues": 0
+    },
+    "tests": {
+      "preFinalRemoteMerge": {
+        "tests": 367,
+        "passed": 367
+      },
+      "postMergeInitial": {
+        "tests": 393,
+        "passed": 389,
+        "failed": 4
+      },
+      "pending": "All source regressions are resolved. Rebuild/version/archive/release the latest helper only after the new redesign and root-domain routing are frozen, then rerun the complete suite with no test-name exclusions.",
+      "mergedSource": {
+        "tests": 393,
+        "passed": 393,
+        "failed": 0,
+        "log": "tmp/host-migration-checkpoint-tests.tap",
+        "excluded": "Strict current-helper snapshot equality is intentionally deferred until the redesign/new-domain helper rebuild; it remains intact in the test source."
+      }
+    },
+    "archive": {
+      "items": 4997,
+      "fileRecords": 8616,
+      "present": 8616,
+      "missing": 0,
+      "note": "Six stale paths were repaired from explicit verified relocation history. No files restored, fetched, moved or deleted."
+    },
+    "receiver": {
+      "version": "2026.11.02.20",
+      "activated": true,
+      "ps4Items": 542,
+      "ps5Items": 350,
+      "oldRecordsPreserved": 588,
+      "retainedGoldHENNativeMappings": 33,
+      "engineBytesUnchanged": true
+    },
+    "sender": {
+      "version": "2.1.0+4642d2affd19",
+      "bytes": 106840279,
+      "sha256": "5295c1c33d14f3fb069da7cf074a51b24315750afcef243c63b96d8e2ba5fdd8",
+      "release": "https://github.com/Speedy-away/wwb-host/releases/tag/sender-2.1.0-4642d2affd19",
+      "archived": true,
+      "published": true,
+      "note": "This exact immutable helper was built before the final newer remote UI merge; preserve it and every earlier snapshot. Rebuild/version/archive/release a new helper after redesign. ZIPs >=95 MiB stay ignored in Git."
+    },
+    "migrationRisks": [
+      "BASE must become empty for the new root site. Adapt publisher, verifier, canonical URLs, JSON runtime/handoff fields, 404 and generated Home links together; root Home must not redirect to whatwhatboy.com.",
+      "Critical: raw download URLs currently combine old WWB-HOST repository with build GITHUB_SHA. A new-repository SHA must point to the repository actually containing its artifact. Preserve old pinned raw/release URLs rather than silently changing them.",
+      "Audit sender release API/allowlists, fixed trusted public-host metadata, new receiver job origin, popup fork/source links, host-file-entry.js and style-host-pages.cjs. The old uppercase /WWB-HOST/ URL returns404; /wwb-host/ currently returns200.",
+      "Native guards already accept root /hosts/runtime paths. Preserve same-origin, exact firmware/path, trusted gesture, one-use ticket, reload/BFcache and durable uncertain-attempt locks. No global replacement in original native modules/BIN/ELF.",
+      "The new domain shares origin with the current Pages project. Existing local/session storage persists. Never auto-clear old native attempt locks; reject obsolete path-bound receipts.",
+      "Preserve 5 primary PS4 families and 3 disjoint PS5 families (builtin23+KARO subset6+ntfargo33=62 exact firmware versions). Preserve other original hosts as documented rather than inventing compatibility.",
+      "Maintain 319 active native-file pins, original JS/BIN/ELF identities, cache closure, 38 public runtime JSON checks, native handoff JSON checks, shared/lazy catalogues, private-inventory exclusions and size budget.",
+      "Browser automation was disabled in Work settings in this chat. Check available browser tools in the new chat. Do not bypass the restriction or invent screenshots. Visual previews and physical console operation must be reported honestly."
+    ],
+    "constraints": [
+      "Read AGENTS.md and docs/migration/status.json. Also read the main whatsite docs/console-expansion-handoff.json before touching its metadata.",
+      "Keep all old versions and archives. F:/whatsite-backup-downloads-etc is the authorized archive, using scripts/download-archive-layout.cjs and full source/version/size/SHA inventory.",
+      "Do not execute downloaded/native code or refetch recorded quarantined files. Test authored guards with inert fixtures only.",
+      "The user asked payload cards and their popups to have outlines and no images; retain that behavior while giving games/artwork proper consistent frames.",
+      "No videos added. Match exact platform, firmware, game version/title ID and engine requirements; PS4 binaries do not become PS5 native payloads merely because the PS5 runs some PS4 games.",
+      "Prefer source-verified real install/load actions and truthful unsupported states. Never fake native writes, installation, execution or successful payload loading."
+    ],
+    "integration": {
+      "previousCheckpoint": "9cca712",
+      "remoteMerged": "072f4333ea10296d0e9d8bb999ce9edbb3719eab",
+      "nativeRouteFirmwareCases": 76,
+      "builtinPS5FirmwareCases": 23,
+      "homepageLanguageMountRestored": true,
+      "sourceFrozen": true,
+      "pushedOldSite": false
+    }
+  }
+}

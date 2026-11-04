@@ -1,0 +1,297 @@
+{
+  "verifiedAt": "2026-11-02",
+  "sources": [
+    {
+      "id": "ctgp-deluxe",
+      "project": "https://www.ctgpdx.com/download",
+      "documentation": "https://www.ctgpdx.com/disclaimer",
+      "compatibility": "Mario Kart 8 Deluxe 3.0.3 only. The publisher explicitly says 1.1.1 does not support other game updates. Players using wireless/LAN must use the matching CTGP version.",
+      "requirements": "An existing modded Switch and the supported game update. The publisher recommends emuMMC. Download is about 3.86 GB and unpacks to about 4.52 GB; allow room for both on your computer.",
+      "release": {
+        "id": "ctgp-deluxe",
+        "title": "CTGP Deluxe",
+        "game": "Mario Kart 8 Deluxe",
+        "gameVersion": "3.0.3 only",
+        "version": "1.1.1",
+        "project": "https://www.ctgpdx.com/",
+        "releaseUrl": "https://www.ctgpdx.com/download",
+        "url": "https://drive.google.com/file/d/1ZI7vtjWWDpxB83WZhK5gbdr1kciom_ZS/view?usp=sharing",
+        "driveId": "1ZI7vtjWWDpxB83WZhK5gbdr1kciom_ZS",
+        "name": "CTGPDX-v1.1.1.zip",
+        "format": "zip",
+        "large": true,
+        "privateOnly": true,
+        "maxBytes": 5368709120,
+        "installPath": "SD root; preserve supplied atmosphere/ and companion folders"
+      }
+    },
+    {
+      "id": "mk8-country-gb-305",
+      "project": "https://github.com/alyeri/nextendo-mk8d-country-flags",
+      "compatibility": "MK8 Deluxe 3.0.5, build ID FE941ED5BA14BE5D505698DA1BBF4FE7 only. Title ID 0100152000022000. The author reports real-Atmosphère testing for Spain on 3.0.5; this GB variant is not separately hardware-tested here.",
+      "requirements": "Atmosphère and a compatible Nextendo setup. Install exactly one country patch. This changes country presentation, not race behaviour or matchmaking.",
+      "release": {
+        "id": "mk8-country-gb-305",
+        "title": "Nextendo GB country patch 3.0.5",
+        "game": "Mario Kart 8 Deluxe",
+        "gameVersion": "3.0.5",
+        "version": "snapshot-a46f0ffe3c18",
+        "project": "https://github.com/alyeri/nextendo-mk8d-country-flags",
+        "url": "https://raw.githubusercontent.com/alyeri/nextendo-mk8d-country-flags/a46f0ffe3c189bcc462d546aa0c875787040a92b/Consoles/Atmosphere/GB/atmosphere/exefs_patches/Nextendo%20Country%20GB/FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+        "name": "FE941ED5BA14BE5D505698DA1BBF4FE7.ips",
+        "bytes": 103,
+        "format": "ips",
+        "buildId": "FE941ED5BA14BE5D505698DA1BBF4FE7",
+        "installPath": "sd:/atmosphere/exefs_patches/Nextendo Country GB/FE941ED5BA14BE5D505698DA1BBF4FE7.ips"
+      }
+    },
+    {
+      "id": "mk8-country-gb-400",
+      "project": "https://github.com/alyeri/nextendo-mk8d-country-flags",
+      "compatibility": "MK8 Deluxe 4.0.0, build ID 2C336A9BCF79C3040CE506CDD391B578 only. Title ID 0100152000022000. The author lists Atmosphère support, with the documented 4.0.0 test performed on Ryujinx.",
+      "requirements": "Atmosphère and a compatible Nextendo setup. Install one country patch and match the game build ID exactly. This does not make CTGP Deluxe compatible with 4.0.0.",
+      "release": {
+        "id": "mk8-country-gb-400",
+        "title": "Nextendo GB country patch 4.0.0",
+        "game": "Mario Kart 8 Deluxe",
+        "gameVersion": "4.0.0",
+        "version": "snapshot-a46f0ffe3c18",
+        "project": "https://github.com/alyeri/nextendo-mk8d-country-flags",
+        "url": "https://raw.githubusercontent.com/alyeri/nextendo-mk8d-country-flags/a46f0ffe3c189bcc462d546aa0c875787040a92b/Consoles/Atmosphere-4.0.0/GB/atmosphere/exefs_patches/Nextendo%20Country%20GB%20(MK8D%204.0.0)/2C336A9BCF79C3040CE506CDD391B578.ips",
+        "name": "2C336A9BCF79C3040CE506CDD391B578.ips",
+        "bytes": 119,
+        "format": "ips",
+        "buildId": "2C336A9BCF79C3040CE506CDD391B578",
+        "installPath": "sd:/atmosphere/exefs_patches/Nextendo Country GB (MK8D 4.0.0)/2C336A9BCF79C3040CE506CDD391B578.ips"
+      }
+    },
+    {
+      "id": "training",
+      "project": "https://github.com/jugeeya/UltimateTrainingModpack",
+      "compatibility": "Switch build for Smash Ultimate with Atmosphère and Skyline. The selected release does not enumerate an exact game-version range; check current project notes before changing your game update.",
+      "requirements": "Skyline runtime. Its complete ZIP includes the mod's support files. The project lists Minecraft Skins as a known conflict and does not support placing this pack in /ultimate/mods/ as a chainloaded mod.",
+      "release": {
+        "id": "training",
+        "title": "Ultimate Training Modpack",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "v7.1.1",
+        "project": "https://github.com/jugeeya/UltimateTrainingModpack",
+        "releaseUrl": "https://github.com/jugeeya/UltimateTrainingModpack/releases/tag/v7.1.1",
+        "url": "https://github.com/jugeeya/UltimateTrainingModpack/releases/download/v7.1.1/TrainingModpack.zip",
+        "name": "TrainingModpack.zip",
+        "bytes": 1156047,
+        "sha256": "edf1ca8fdf479feb801e6afacc3abf440e05263af9f5d872d0d16978fb6590d9",
+        "format": "zip",
+        "installPath": "sd:/atmosphere/contents/01006A800016E000/romfs/skyline/plugins/"
+      }
+    },
+    {
+      "id": "playable-bosses",
+      "project": "https://github.com/NemesisSSBU/Playable_Bosses",
+      "documentation": "https://gamebanana.com/mods/457095",
+      "compatibility": "The current author documentation lists Smash Ultimate 13.0.2, 13.0.3, 13.0.4 and 13.0.5. Do not infer support for another update from that list.",
+      "requirements": "Atmosphère, ARCropolis, Skyline, NRO Hook and the matching Smashline runtime. Smashline 2.0.0 changed APIs after this mod release; read the migration notes and match the version required by the mod. Announcer-voice mods can conflict.",
+      "release": {
+        "id": "playable-bosses",
+        "title": "Competitive Playable Bosses",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "3.1.6",
+        "project": "https://github.com/NemesisSSBU/Playable_Bosses",
+        "releaseUrl": "https://github.com/NemesisSSBU/Playable_Bosses/releases/tag/3.1.6",
+        "url": "https://github.com/NemesisSSBU/Playable_Bosses/releases/download/3.1.6/Competitive_Playable_Bosses_3.1.6.zip",
+        "name": "Competitive_Playable_Bosses_3.1.6.zip",
+        "bytes": 22782662,
+        "sha256": "05c3785ab2787f8447d7475c7c077f918157e9dc60ab92788e4fdec1a632f2ba",
+        "format": "zip",
+        "gameVersion": "13.0.2 / 13.0.3 / 13.0.4 / 13.0.5",
+        "installPath": "sd:/ultimate/mods/Bosses/"
+      }
+    },
+    {
+      "id": "hdr-package",
+      "project": "https://github.com/HDR-Development/HDR-Releases",
+      "compatibility": "Requires the project-supported Smash Ultimate revision and Atmosphère. The selected release page does not provide an exact supported game-version table; check the project before installation.",
+      "requirements": "The full Switch ZIP is about 1.25 GiB. Its launcher and supporting plugin/resource files belong together. The small upgrade ZIP is not a complete first installation.",
+      "release": {
+        "id": "hdr-package",
+        "title": "HewDraw Remix full Switch package",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "v0.49.11",
+        "project": "https://github.com/HDR-Development/HDR-Releases",
+        "releaseUrl": "https://github.com/HDR-Development/HDR-Releases/releases/tag/v0.49.11",
+        "url": "https://github.com/HDR-Development/HDR-Releases/releases/download/v0.49.11/switch-package.zip",
+        "name": "switch-package.zip",
+        "bytes": 1343035337,
+        "sha256": "b7ca9333b0309f0f0893051d68b456a1bb3a8792a0eb1a16df9856d010ac7232",
+        "format": "zip",
+        "large": true,
+        "privateOnly": true,
+        "installPath": "SD root; keep atmosphere/ and ultimate/ together"
+      }
+    },
+    {
+      "id": "arcropolis",
+      "project": "https://github.com/Raytwo/ARCropolis",
+      "documentation": "https://github.com/Raytwo/ARCropolis/wiki/Setup-(Getting-Started)",
+      "compatibility": "Atmosphère and a compatible Smash Ultimate revision. The selected release does not enumerate a universal firmware/game-version range. Skyline is distributed separately.",
+      "requirements": "Skyline runtime and the complete ARCropolis release, including its menu resources. This is a game-loaded plugin, not an hbmenu application. Keep mod authors’ game-version and dependency requirements.",
+      "release": {
+        "id": "arcropolis",
+        "title": "ARCropolis",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "v4.1.1",
+        "project": "https://github.com/Raytwo/ARCropolis",
+        "releaseUrl": "https://github.com/Raytwo/ARCropolis/releases/tag/v4.1.1",
+        "url": "https://github.com/Raytwo/ARCropolis/releases/download/v4.1.1/release.zip",
+        "name": "release.zip",
+        "bytes": 1462329,
+        "sha256": "08b98371f069bc54a326660bc828288c05dd9a4ac0e3c7c00aca557796e032c6",
+        "format": "zip",
+        "installPath": "sd:/atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libarcropolis.nro"
+      },
+      "inspectedPackageEvidence": "Official v4.1.1 release.zip contains both atmosphere/contents/.../libarcropolis.nro and ultimate/arcropolis/resources/ menu files; preserve both complete folder trees."
+    },
+    {
+      "id": "skyline",
+      "project": "https://github.com/skyline-dev/skyline",
+      "compatibility": "The official beta asset checked on 2 November 2026. This is a mutable upstream beta tag, so the archived SHA-256 identifies the precise build. Other games can require their own Skyline variant.",
+      "requirements": "An existing Atmosphère setup. Use the supplied Smash main.npdm with Smash; do not copy this whole runtime into unrelated games.",
+      "release": {
+        "id": "skyline",
+        "title": "Skyline runtime",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "beta",
+        "project": "https://github.com/skyline-dev/skyline",
+        "releaseUrl": "https://github.com/skyline-dev/skyline/releases/tag/beta",
+        "url": "https://github.com/skyline-dev/skyline/releases/download/beta/skyline.zip",
+        "name": "skyline.zip",
+        "bytes": 38607,
+        "sha256": "d677c5bbbfbf55674b047c8d5d11f8a4d71b6a42fbc7ee4bf70f462b077c4ab0",
+        "format": "zip",
+        "installPath": "sd:/atmosphere/contents/01006A800016E000/exefs/"
+      }
+    },
+    {
+      "id": "smashline-168",
+      "project": "https://github.com/HDR-Development/smashline/releases/tag/v1.6.8",
+      "documentation": "https://github.com/HDR-Development/smashline/wiki/%5BREAD!%5D-Major-Update-Information",
+      "compatibility": "Use only when the selected mod requires this API generation. It is an alternative to 2.0.0, not a second plugin to install alongside it. Game and moveset compatibility still depends on the mod.",
+      "requirements": "Skyline and a compatible moveset mod. The newer 2.0.0 runtime can crash older plugins using changed cloning APIs; match the author's instructions.",
+      "release": {
+        "id": "smashline-168",
+        "title": "Smashline 1.6.8 compatibility build",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "v1.6.8",
+        "project": "https://github.com/HDR-Development/smashline",
+        "releaseUrl": "https://github.com/HDR-Development/smashline/releases/tag/v1.6.8",
+        "url": "https://github.com/HDR-Development/smashline/releases/download/v1.6.8/libsmashline_plugin.nro",
+        "name": "libsmashline_plugin.nro",
+        "bytes": 311296,
+        "sha256": "a83636e565be0729271aa7c21817da9aa3b8b3e9b3abed7499c1eeae4cb57d5c",
+        "format": "nro",
+        "installPath": "sd:/atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libsmashline_plugin.nro"
+      }
+    },
+    {
+      "id": "smashline-200",
+      "project": "https://github.com/HDR-Development/smashline/releases/tag/v2.0.0",
+      "documentation": "https://github.com/HDR-Development/smashline/wiki/%5BREAD!%5D-Major-Update-Information",
+      "compatibility": "Released 28 October 2026. The project warns that earlier moveset plugins may be incompatible. A newer runtime does not establish compatibility for an older mod pack.",
+      "requirements": "Skyline and matching mod plugins. Read the major-update notes before changing an existing working setup.",
+      "release": {
+        "id": "smashline-200",
+        "title": "Smashline 2.0.0",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "v2.0.0",
+        "project": "https://github.com/HDR-Development/smashline",
+        "releaseUrl": "https://github.com/HDR-Development/smashline/releases/tag/v2.0.0",
+        "url": "https://github.com/HDR-Development/smashline/releases/download/v2.0.0/libsmashline_plugin.nro",
+        "name": "libsmashline_plugin.nro",
+        "bytes": 364544,
+        "sha256": "d57a437000d13a85192b79941880b4e3b671d0e4a0291951d426f0f6773e6b92",
+        "format": "nro",
+        "installPath": "sd:/atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libsmashline_plugin.nro"
+      }
+    },
+    {
+      "id": "nro-hook",
+      "project": "https://github.com/ultimate-research/nro-hook-plugin",
+      "compatibility": "Install when the selected mod calls for this plugin. The source release is older and does not document a current universal game/firmware range.",
+      "requirements": "Skyline and a dependent mod. Existing complete packs may already include libnro_hook.nro; keep one intended active copy.",
+      "release": {
+        "id": "nro-hook",
+        "title": "NRO Hook",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "v0.4.0",
+        "project": "https://github.com/ultimate-research/nro-hook-plugin",
+        "releaseUrl": "https://github.com/ultimate-research/nro-hook-plugin/releases/tag/v0.4.0",
+        "url": "https://github.com/ultimate-research/nro-hook-plugin/releases/download/v0.4.0/libnro_hook.nro",
+        "name": "libnro_hook.nro",
+        "bytes": 53248,
+        "format": "nro",
+        "installPath": "sd:/atmosphere/contents/01006A800016E000/romfs/skyline/plugins/libnro_hook.nro"
+      }
+    },
+    {
+      "id": "hdr-launcher",
+      "project": "https://github.com/techyCoder81/hdr-launcher-react",
+      "compatibility": "A matching HDR setup with Skyline and the project's required web/plugin dependencies. For a fresh install, use the complete HDR Switch pack.",
+      "requirements": "This NRO is a game-loaded component. It is not a standalone hbmenu app or the full HDR mod.",
+      "release": {
+        "id": "hdr-launcher",
+        "title": "HDR Launcher Switch plugin",
+        "game": "Super Smash Bros. Ultimate",
+        "version": "v0.9.1",
+        "project": "https://github.com/techyCoder81/hdr-launcher-react",
+        "releaseUrl": "https://github.com/techyCoder81/hdr-launcher-react/releases/tag/v0.9.1",
+        "url": "https://github.com/techyCoder81/hdr-launcher-react/releases/download/v0.9.1/hdr-launcher.nro",
+        "name": "hdr-launcher.nro",
+        "bytes": 12918784,
+        "sha256": "ef88b975cfd736087430bd2c90b8947e71076ed93231e0a3f04f0a31051e80ce",
+        "format": "nro",
+        "installPath": "sd:/atmosphere/contents/01006A800016E000/romfs/skyline/plugins/hdr-launcher.nro"
+      }
+    },
+    {
+      "id": "smoo-plus",
+      "project": "https://github.com/SMOO-Plus/SMOO-Plus/releases/tag/SR-1.0.0",
+      "documentation": "https://github.com/Sanae6/SmoOnlineServer",
+      "compatibility": "Super Mario Odyssey 1.0.0 only. This selected speedrun release excludes the game modes, twists and capture synchronization advertised by other SMOO+ versions.",
+      "requirements": "An existing modded Switch and a reachable compatible SMOO server. PC server software runs on another device; the provided ZIP is the console mod only. Do not stack it with another Odyssey exefs mod.",
+      "release": {
+        "id": "smoo-plus",
+        "title": "SMOO+ Speedrun Release",
+        "game": "Super Mario Odyssey",
+        "version": "SR-1.0.0",
+        "project": "https://github.com/DaDev123/SMOO-Plus",
+        "releaseUrl": "https://github.com/SMOO-Plus/SMOO-Plus/releases/tag/SR-1.0.0",
+        "url": "https://github.com/SMOO-Plus/SMOO-Plus/releases/download/SR-1.0.0/SMOO-Plus-Speedrun-Switch.zip",
+        "name": "SMOO-Plus-Speedrun-Switch.zip",
+        "bytes": 2533907,
+        "sha256": "3d33e42ac4662b3a39b812632056219f070e0294243824fdf3bcbf1ace6df26b",
+        "format": "zip",
+        "gameVersion": "1.0.0",
+        "installPath": "sd:/atmosphere/contents/0100000000010000/"
+      },
+      "inspectedPackageEvidence": "Release ZIP has a SMOO-Plus-Speedrun-Switch/ wrapper; copy the contained atmosphere/ folder to SD root. Title ID 0100000000010000 verified in archive members."
+    }
+  ],
+  "limitations": [
+    {
+      "project": "https://www.ctgpdx.com/download",
+      "note": "Publisher lists 1.1.1 requiring MK8 Deluxe 3.0.3; full ZIP is private archive only, original download remains publisher-hosted."
+    },
+    {
+      "project": "https://github.com/HDR-Development/smashline/wiki/%5BREAD!%5D-Major-Update-Information",
+      "note": "Version 2.0.0 changes earlier plugin APIs; preserve older 1.6.8 as a separate alternative."
+    },
+    {
+      "project": "https://github.com/mdietz94/mk8dx_ap",
+      "note": "No GitHub release assets were available when checked; not presented as a ready console build."
+    },
+    {
+      "project": "https://github.com/techyCoder81/hdr-launcher-react",
+      "note": "Only the Switch NRO component selected; desktop OS builds excluded."
+    }
+  ]
+}

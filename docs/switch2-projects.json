@@ -1,0 +1,117 @@
+{
+  "reviewedAt": "2026-11-02T09:23:05.040Z",
+  "projects": [
+    {
+      "id": "civswitch",
+      "title": "CivSwitch",
+      "url": "https://github.com/Gezine/CivSwitch",
+      "summary": "Civilization VII userland entry point, with Pico 1 and Pico 2 firmware.",
+      "requirements": "Physical Switch 1 edition cartridge, game version 1.0.0, compatible RP2040/RP2350 Pico. Author lists firmware 20.x–23.0.1 and reports Switch 2 tests on 20.4.0 and 23.0.1.",
+      "setup": "Follow PicoSwitch’s instructions using the UF2 for your Pico model. The wireless multiplayer lobby chat starts the remote JavaScript loader on port 9026. The optional persistent save-trigger installer wipes save:/saves/Single/; back up your Civilization VII saves first. UF2 files are Pico firmware, not Switch app packages.",
+      "status": "1.0 · ready Pico firmware; installer and host scripts remain in the project."
+    },
+    {
+      "id": "ns2jb",
+      "title": "ns2jb",
+      "url": "https://gitlab.com/pepsipu/ns2jb",
+      "summary": "pepsipu’s Switch 2 execution research and FS demo.",
+      "requirements": "Demo: firmware 23.0.1, SmileBASIC 4.4.9, Node.js 22+ on macOS/Linux, over 20 MiB free in the SmileBASIC save and a reachable LAN connection.",
+      "setup": "Prepare bootstrap.bas and the computer-side run.cjs host using the upstream README. Keep SmileBASIC open during the demo; restart the console afterwards. This demo installs no CFW or persistence. Savekit and OunceCake need their own documented RPC engine/fork; the plain FS demo is not a substitute.",
+      "status": "Original and RPC upstream ZIP links available. Local copies are pending: GitLab archive requests returned406, then its IP rate limit returned429 until2November2026,10:00UTC. No incomplete package is offered as a local download.",
+      "guideSteps": [
+        [
+          "Extract the chosen package",
+          "Keep the complete extracted folder together. Use the original package for the standalone demo; use the separately labelled RPC fork for Savekit or OunceCake. Install Node.js22+ on the documented macOS/Linux host."
+        ],
+        [
+          "Prepare SmileBASIC",
+          "Use firmware23.0.1 and SmileBASIC4.4.9 for the original demo. Enter the included bootstrap.bas in slot0 and save it as NS2. Keep more than20MiB free in the application save."
+        ],
+        [
+          "Start the host",
+          "In the original extracted folder run node run.cjs <computer-LAN-IP>. For dependent tools, use the RPC folder and node run.cjs --rpc <computer-LAN-IP>. Follow that fork’s Ethernet and internal-storage requirements."
+        ],
+        [
+          "Pair and keep the session open",
+          "Follow the included README’s Direct-mode sequence and the exact V=START line printed by the host. Keep SmileBASIC and the host open. Use the printed runs/switch2-* folder for dependent tools."
+        ],
+        [
+          "Finish or recover",
+          "Finish all dependent operations before stopping the host with Ctrl+C. Restart the console after a failed or uncertain session. Preserve run logs for diagnosis."
+        ]
+      ],
+      "upstreamDownloads": [
+        {
+          "label": "Original ns2jb ZIP · upstream, not mirrored",
+          "url": "https://gitlab.com/pepsipu/ns2jb/-/archive/95f5525089273c5fce0b95047f3600f8442e96ae/ns2jb-95f5525089273c5fce0b95047f3600f8442e96ae.zip"
+        },
+        {
+          "label": "RPC dependency ZIP · upstream, not mirrored",
+          "url": "https://gitlab.com/kurumuz/ns2jb/-/archive/main/ns2jb-main.zip"
+        }
+      ]
+    },
+    {
+      "id": "ns2-savekit",
+      "title": "ns2-savekit",
+      "url": "https://github.com/dougchansan/ns2-savekit",
+      "summary": "Back up, verify, restore and modify title saves through ns2jb. Includes separate Artemis Lua save-launch tools.",
+      "requirements": "Patched ns2jb RPC engine, live session and run folder/current-root.json, Node.js, firmware 23.0.1 and retail SmileBASIC 4.",
+      "setup": "Apply the documented engine patches before starting a fresh RPC session. Open tools/kit.cjs with the run folder. Begin with read-only listing and backup, then verify by hash. Keep originals before restore/replace/delete operations. No npm install or compilation is required by the author; this project does not include the exploit, keys or games.",
+      "status": "Pinned complete script/source ZIP with tools, patches, configuration and upstream documentation. Requires the separate RPC download.",
+      "guideSteps": [
+        [
+          "Extract both downloads separately",
+          "Keep Savekit and the RPC fork in separate folders. Retain every engine, tools, patches and config directory; do not run kit.cjs alone."
+        ],
+        [
+          "Prepare the required engine patches",
+          "The upstream patch command expects a Git working tree. For an extracted RPC ZIP, run git init inside that RPC folder first. From Savekit, follow sh patches/apply.sh /absolute/path/to/ns2jb-rpc. If any patch fails, stop and resolve the revision mismatch before starting a session."
+        ],
+        [
+          "Start a fresh RPC session",
+          "Use the RPC setup above, with node run.cjs --rpc <computer-LAN-IP>, and keep it running. A run folder from before patching retains the old engine and must not be reused."
+        ],
+        [
+          "Open the kit",
+          "From the extracted Savekit folder run node tools/kit.cjs /absolute/path/to/ns2jb-rpc/runs/switch2-RUNID. Begin with listing, then backup, then verification. Keep original backups outside the tool folder."
+        ],
+        [
+          "Restore deliberately",
+          "Follow the bundled docs/RESTORE.md and write allowlist requirements. Restore/replace/delete alter saves. The Artemis launcher is separate from general save backup and has its own documented limits."
+        ]
+      ]
+    },
+    {
+      "id": "ouncecake",
+      "title": "OunceCake",
+      "url": "https://github.com/misshexa66/OunceCake",
+      "summary": "Dump unencrypted romFS game assets and exeFS executable files from your own Switch 2 games, updates and DLC, including digital games, cards and Switch 2 Editions.",
+      "requirements": "The RPC-capable ns2jb fork linked in OunceCake’s README, an active run folder, Node.js, console LAN address and an FTP client.",
+      "setup": "Follow the project’s RPC setup, then run node ouncecake.cjs <path-to-ns2jb-run> and select your game. When FTP is ready, connect to the console on port 2121 using Binary/Image (TYPE I) transfer mode. The console loads the files before extraction; no system keys or independent decryption are supplied. Use your own games and keep extracted files private.",
+      "status": "Pinned complete script/source ZIP with bundled FTP engine. Requires the separately labelled RPC fork; Node.js22+.",
+      "guideSteps": [
+        [
+          "Extract the complete package",
+          "Keep ouncecake.cjs, package.json and engine together. The ZIP includes the native FTP helper; no build step is needed for the bundled helper. Install Node.js22+ and an FTP client."
+        ],
+        [
+          "Start the required RPC host",
+          "Use the separate kurumuz RPC fork download and its README. Start node run.cjs --rpc <computer-LAN-IP>, complete the console handshake and keep the live host open."
+        ],
+        [
+          "Select the title",
+          "In the OunceCake folder run node ouncecake.cjs /absolute/path/to/ns2jb-rpc/runs/switch2-RUNID. Select your own game, update or DLC and wait for the FTP-ready message."
+        ],
+        [
+          "Copy the dump",
+          "Connect the FTP client to the Switch2LAN address on port2121, with Binary/Image(TYPE I) transfer mode. No username/password is required by this server. Copy romFS assets and exeFS files to a new computer folder with enough free space."
+        ],
+        [
+          "Close the session",
+          "Complete transfers before stopping the RPC host. Preserve your private dumps separately from these software packages; no games, keys or commercial assets are included."
+        ]
+      ]
+    }
+  ]
+}

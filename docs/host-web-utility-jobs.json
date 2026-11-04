@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T14:49:55.894Z",
+  "status": "prepared-not-downloaded",
+  "scope": "Eighteen explicitly requested host utility files. Exact live bytes reviewed in memory; root must archive with normal F: tooling and verify every expected hash before adding these actions to a serving catalogue. Older versions are preserved.",
+  "jobs": [
+    {
+      "id": "ps4-kme-web-pkg-backup-1300",
+      "title": "PKG Backup · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "PKG Backup",
+      "url": "https://www.kmeps4.site/webpayloads/pl_pkgbackup.bin",
+      "version": "Kameleon-13.00-2026.11.02-1a3d3dd41843",
+      "filename": "pl_pkgbackup.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 33352,
+      "expectedSha256": "1a3d3dd41843d94cc4a3517caaefe8f8996f1bda7709a5856a711bfbaca6021b",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_pkgbackup",
+      "sourceDescription": "PKG-Backup v1.3 - Modded Version Of App Dumper / 13.00 Port By Kamaleon",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Kameleon; based on xVortex App Dumper",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-app-dumper-1300",
+      "title": "App Dumper · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "App Dumper",
+      "url": "https://www.kmeps4.site/webpayloads/pl_appdumper.bin",
+      "version": "Kameleon-13.00-2026.11.02-290f83e02fb0",
+      "filename": "pl_appdumper.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 26216,
+      "expectedSha256": "290f83e02fb0cc86e659e7ec380021942430a7608d975f03676c8afc52ba7ab0",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_appdumper",
+      "sourceDescription": "App Dumper Only v1.8 - Original Version By xVortex / 13.00 Port Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "xVortex; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-disable-updates-1300",
+      "title": "Disable Updates · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Disable Updates",
+      "url": "https://www.kmeps4.site/webpayloads/pl_disableupdates.bin",
+      "version": "Kameleon-13.00-2026.11.02-d6d38701f528",
+      "filename": "pl_disableupdates.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 8420,
+      "expectedSha256": "d6d38701f5284f4764f47197052cb189a17120a7de5b961136c5f6045c30a1fc",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_disableupdates",
+      "sourceDescription": "Disable-Updates v1.0 - 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-enable-updates-1300",
+      "title": "Enable Updates · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Enable Updates",
+      "url": "https://www.kmeps4.site/webpayloads/pl_enableupdates.bin",
+      "version": "Kameleon-13.00-2026.11.02-e261f6e0d18f",
+      "filename": "pl_enableupdates.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 8388,
+      "expectedSha256": "e261f6e0d18fbe95f3998b0d4b39f0683e125a04633d5333b44ade31ca074de8",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_enableupdates",
+      "sourceDescription": "Enable-Updates v1.0 - 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-enable-browser-1300",
+      "title": "Enable Browser · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Enable Browser",
+      "url": "https://www.kmeps4.site/webpayloads/pl_enablebrowser.bin",
+      "version": "Kameleon-13.00-2026.11.02-0e7c5fadc6fa",
+      "filename": "pl_enablebrowser.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 10420,
+      "expectedSha256": "0e7c5fadc6fa4abbe5df7954f956d4c75aa71a4c03bcaf514c83578583a1a8ad",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_enablebrowser",
+      "sourceDescription": "Enable Browser / 13.00 Port Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-exit-idu-1300",
+      "title": "Exit IDU · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Exit IDU",
+      "url": "https://www.kmeps4.site/webpayloads/pl_exitidu.bin",
+      "version": "Kameleon-13.00-2026.11.02-f3aa40ba3508",
+      "filename": "pl_exitidu.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 10332,
+      "expectedSha256": "f3aa40ba35081f2384d4ec5382950f04769153f4da9b4240989283ad14a94c48",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_exitidu",
+      "sourceDescription": "Exit IDU / 13.00 Port Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-rif-renamer-1300",
+      "title": "RIF Renamer · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "RIF Renamer",
+      "url": "https://www.kmeps4.site/webpayloads/pl_rifrenamer.bin",
+      "version": "Kameleon-13.00-2026.11.02-8dcb00ee0275",
+      "filename": "pl_rifrenamer.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 9188,
+      "expectedSha256": "8dcb00ee027503d4388f2af88a6d386049458199669209511234f7dc9d36b79e",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_rifrenamer",
+      "sourceDescription": "Rifrenamer / 13.00 Port Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-ftp-1300",
+      "title": "FTP Server · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "FTP Server",
+      "url": "https://www.kmeps4.site/webpayloads/pl_ftp.bin",
+      "version": "Kameleon-13.00-2026.11.02-68577a874540",
+      "filename": "pl_ftp.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 27492,
+      "expectedSha256": "68577a874540b877ba7e95906a77060ff05480b37777d81bb0a4dfe139bda1d1",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_ftp",
+      "sourceDescription": "Ftp Server - Original Version By xVortex / 13.00 Port Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "xVortex; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-history-blocker-1300",
+      "title": "History Blocker · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "History Blocker",
+      "url": "https://www.kmeps4.site/webpayloads/pl_historyblocker.bin",
+      "version": "Kameleon-13.00-2026.11.02-a10b34e1cd81",
+      "filename": "pl_historyblocker.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 10972,
+      "expectedSha256": "a10b34e1cd810b11069c00eca5ca7672a9ab9a5f1c801a81faad36f264137d38",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_historyblocker",
+      "sourceDescription": "History-Blocker - v2.0 Original Version By Stooged / 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Stooged; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-kernel-dumper-1300",
+      "title": "Kernel Dumper · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Kernel Dumper",
+      "url": "https://www.kmeps4.site/webpayloads/pl_kerneldumper.bin",
+      "version": "Kameleon-13.00-2026.11.02-e4ea6a8b13a2",
+      "filename": "pl_kerneldumper.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 18588,
+      "expectedSha256": "e4ea6a8b13a28991ece96b70fe88baeaea1cd99aee316db218fa1ce7464956d0",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_kerneldumper",
+      "sourceDescription": "Kernel-Dumper - v1.0 Original Version By Eversion / 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Eversion; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-module-dumper-1300",
+      "title": "Kernel Module Dumper · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Kernel Module Dumper",
+      "url": "https://www.kmeps4.site/webpayloads/pl_moduledumper.bin",
+      "version": "Kameleon-13.00-2026.11.02-62640e215bec",
+      "filename": "pl_moduledumper.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 17772,
+      "expectedSha256": "62640e215becf50e60690ea5867525e32443b23c1ac74f94a8c1ca78ba964457",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_moduledumper",
+      "sourceDescription": "Kernel-Module Dumper -  13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-ps4debug-v1-1-19",
+      "title": "ps4debug · official v1.1.19",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "ps4debug",
+      "url": "https://www.kmeps4.site/webpayloads/pl_ps4debug.bin",
+      "version": "v1.1.19",
+      "filename": "pl_ps4debug.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 84936,
+      "expectedSha256": "8af40c2412768bb2cd64c46b9913ee2f7ff2f076c98f6a2f5c7c0534aee15b2e",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_ps4debug",
+      "sourceDescription": "Ps4Debug v1.1.19 - By CTN123",
+      "firmwareScope": [
+        "5.05",
+        "5.07",
+        "6.71",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.51",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02"
+      ],
+      "author": "CTN123; official GoldHEN distribution",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-db-backup-1300",
+      "title": "Database Backup · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Database Backup",
+      "url": "https://www.kmeps4.site/webpayloads/pl_backup.bin",
+      "version": "Kameleon-13.00-2026.11.02-91eaee1292f8",
+      "filename": "pl_backup.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 15092,
+      "expectedSha256": "91eaee1292f8741bd9514fe4c4e3af99189359ae79ee3f75a7292df014d1f4b4",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_backupdb",
+      "sourceDescription": "DB-Backup v1.0 - By Leeful / 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Leeful; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-db-restore-1300",
+      "title": "Database Restore · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Database Restore",
+      "url": "https://www.kmeps4.site/webpayloads/pl_restore.bin",
+      "version": "Kameleon-13.00-2026.11.02-20c5fd911366",
+      "filename": "pl_restore.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 10796,
+      "expectedSha256": "20c5fd911366bf688d3c569008d1e4e9a020948a0a18ffaa3a34077d898f2a49",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_restoredb",
+      "sourceDescription": "DB-Restore v1.0 - By Leeful / 13.00 Port Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Leeful; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-app2usb-1300",
+      "title": "App2USB · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "App2USB",
+      "url": "https://www.kmeps4.site/webpayloads/pl_app2usb.bin",
+      "version": "Kameleon-13.00-2026.11.02-a2e4ae50d28f",
+      "filename": "pl_app2usb.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 25908,
+      "expectedSha256": "a2e4ae50d28f7e870df21723d976ad9a714db7cd2bb3db21cbf1aac17dc68438",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_app2usb",
+      "sourceDescription": "App-2-Usb - Original Version By Stooged / 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Stooged; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-to-dex-1300",
+      "title": "ToDEX · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "ToDEX",
+      "url": "https://www.kmeps4.site/webpayloads/pl_todex.bin",
+      "version": "Kameleon-13.00-2026.11.02-2fc2357636a0",
+      "filename": "pl_todex.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 10164,
+      "expectedSha256": "2fc2357636a04c073d7f904fb5e7ce65f75f3aa9e561287c1123a325b53bd30c",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_todex",
+      "sourceDescription": "To-Dex v1.0 - By notzecoxao / 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "notzecoxao; 13.00 port credited to Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-permanent-uart-1300",
+      "title": "Permanent UART · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Permanent UART",
+      "url": "https://www.kmeps4.site/webpayloads/pl_permanentuart.bin",
+      "version": "Kameleon-13.00-2026.11.02-1fe274714228",
+      "filename": "pl_permanentuart.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 10228,
+      "expectedSha256": "1fe2747142285df475abbaaf2a02c28d30628d068c983d3178fab4c4609987f9",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_uart",
+      "sourceDescription": "Permanent UART - 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    },
+    {
+      "id": "ps4-kme-web-disable-aslr-1300",
+      "title": "Disable ASLR · Kameleon 13.00 host build",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Web Utilities"
+      ],
+      "project": "Disable ASLR",
+      "url": "https://www.kmeps4.site/webpayloads/pl_disableaslr.bin",
+      "version": "Kameleon-13.00-2026.11.02-9548e6163969",
+      "filename": "pl_disableaslr.bin",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 10276,
+      "expectedSha256": "9548e6163969a77864eb4b9ef946faa9dd2322c08bf31a7af749eb123a08b59f",
+      "maxBytes": 4194304,
+      "pages": [
+        "hosts/ps4/index.html",
+        "console/ps4/payloads.html",
+        "console/ps4/downloads.html"
+      ],
+      "sourcePage": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceFunction": "load_disableaslr",
+      "sourceDescription": "Disable ASLR - 13.00 Port By Al Azif",
+      "firmwareScope": [
+        "13.00"
+      ],
+      "author": "Al Azif",
+      "license": "No explicit licence identified for the exact public host binary; retain original source attribution."
+    }
+  ]
+}

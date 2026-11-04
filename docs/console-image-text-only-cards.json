@@ -1,0 +1,20 @@
+{
+  "scope": "Deliberate text-only reference, troubleshooting and mode-description cards. These are not missing image assets.",
+  "cards": [
+    {"file":"console/ps5/relapse.html","title":"DNS tool","reason":"The source archive has no verified product identity or tool artwork; avoid assigning another product's image."},
+    {"file":"console/ps5/y2jb.html","title":"Maj0r’s Y2JB","reason":"Code/reference project with no upstream interface artwork; keep distinct from the separate installer/autoloader."},
+    {"file":"console/ps5/themes.html","title":"Recovery stop ELF","reason":"Headless emergency stop action with no user interface; explanatory text is the meaningful content."},
+    {"file":"console/retro/xbox-online.html","title":"Versus / PvP","reason":"Game-mode definition, not a game or software listing."},
+    {"file":"console/retro/xbox-online.html","title":"Co-op / PvE","reason":"Game-mode definition, not a game or software listing."},
+    {"file":"console/retro/xbox-online.html","title":"Split-screen / shared console","reason":"Game-mode definition, not a game or software listing."},
+    {"file":"console/retro/xbox-online.html","title":"Matchmaking / private games","reason":"Game-mode definition, not a game or software listing."},
+    {"file":"console/retro/xbox-online.html","title":"Rumble Pit","reason":"Compact Halo 2 playlist rules and player counts; game artwork appears on the separate Halo 2 card."},
+    {"file":"console/retro/xbox-online.html","title":"Double Team","reason":"Compact Halo 2 playlist rules and player counts; game artwork appears on the separate Halo 2 card."},
+    {"file":"console/retro/xbox-online.html","title":"Team Slayer","reason":"Compact Halo 2 playlist rules and player counts; game artwork appears on the separate Halo 2 card."},
+    {"file":"console/retro/xbox-online.html","title":"Big Team Battle","reason":"Compact Halo 2 playlist rules and player counts; game artwork appears on the separate Halo 2 card."},
+    {"file":"console/retro/xbox-online.html","title":"Xbox Live login fails","reason":"Text-only connection troubleshooting step."},
+    {"file":"console/retro/xbox-online.html","title":"No System Link lobby","reason":"Text-only connection troubleshooting step."},
+    {"file":"console/retro/xbox-online.html","title":"Co-op option missing","reason":"Text-only compatibility troubleshooting step."},
+    {"file":"console/retro/xbox-online.html","title":"Different Xbox generation","reason":"Text-only routing and compatibility reminder."}
+  ]
+}

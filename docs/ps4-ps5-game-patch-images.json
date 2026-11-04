@@ -1,0 +1,887 @@
+{
+  "reviewed": "2026-11-02",
+  "images": {
+    "bloodborne": {
+      "image": "/assets/images/game-patches/bloodborne-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/bloodborne/",
+      "sourceTitle": "Bloodborne",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202011/0713/WSZqsrnejjt85wYmUqeBQvMQ.png",
+      "bytes": 227582,
+      "sha256": "33f33a882619f432c4de142473520977509c731fed6f15c747cf5b9d32d7bd35",
+      "kind": "Official PlayStation game artwork"
+    },
+    "red-dead-redemption-2": {
+      "image": "/assets/images/game-patches/red-dead-redemption-2-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1174180/",
+      "sourceTitle": "Red Dead Redemption 2",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
+      "bytes": 51987,
+      "sha256": "27aa89c336b381083a1b3e8de84ffbcb842219dabca97aabfcf707b1dd8c135c",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "assassin-s-creed-syndicate": {
+      "image": "/assets/images/game-patches/assassin-s-creed-syndicate-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/368500/",
+      "sourceTitle": "Assassin's Creed® Syndicate",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/368500/header.jpg?t=1786632690",
+      "bytes": 58688,
+      "sha256": "c53916bdb6ca7391286a570481cc7d7284447414a406b5ce60be33a50152b0b4",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "assassin-s-creed-unity": {
+      "image": "/assets/images/game-patches/assassin-s-creed-unity-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/289650/",
+      "sourceTitle": "Assassin's Creed® Unity",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289650/header.jpg?t=1786632648",
+      "bytes": 117184,
+      "sha256": "5979f04fd8f01c17295c537a616173b674b211224cbd6eee441a942e8b30331b",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "batman-arkham-knight": {
+      "image": "/assets/images/game-patches/batman-arkham-knight-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/208650/",
+      "sourceTitle": "Batman™: Arkham Knight",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/208650/header.jpg?t=1745534372",
+      "bytes": 47943,
+      "sha256": "a36e699b87b6da039cbab04afc6c13fba50770abd7a2ff33aff45e5c3452ac0d",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "crash-bandicoot-n-sane-trilogy": {
+      "image": "/assets/images/game-patches/crash-bandicoot-n-sane-trilogy-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/731490/",
+      "sourceTitle": "Crash Bandicoot™ N. Sane Trilogy",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/731490/header.jpg?t=1742399696",
+      "bytes": 72184,
+      "sha256": "d10b452bef598a02493a64728f1b8b13ebafb6b6792aaecc600c040f43b3d8fb",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "cyberpunk-2077": {
+      "image": "/assets/images/game-patches/cyberpunk-2077-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1091500/",
+      "sourceTitle": "Cyberpunk 2077",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/48a93d6445a67520ea49833c93dae8f2e68fc540/header_alt_assets_9.jpg?t=1792682505",
+      "bytes": 41042,
+      "sha256": "7ad6e0ee4f23e26416f5663146f3e97b1c85bbfb157781027e2aa615a4be68cf",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "dead-island-2": {
+      "image": "/assets/images/game-patches/dead-island-2-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/934700/",
+      "sourceTitle": "Dead Island 2",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/934700/header.jpg?t=1790170542",
+      "bytes": 73636,
+      "sha256": "cfa188a50b1b33baa5eb21391f437376c8d88114b6816961bae6db459569cc72",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "demons-souls": {
+      "image": "/assets/images/game-patches/demons-souls-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/demons-souls/",
+      "sourceTitle": "Demons Souls",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/GemRaOZaCMhGxQ9dRhnQQyT5.png",
+      "bytes": 228373,
+      "sha256": "0ad4126d16cbb34a0edcafe93dc55762c9e8df88a87c8a172e3c5c202de4b8e6",
+      "kind": "Official PlayStation game artwork"
+    },
+    "dishonored-definitive-edition": {
+      "image": "/assets/images/game-patches/dishonored-definitive-edition-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/205100/",
+      "sourceTitle": "Dishonored",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/205100/08e23dc25023aac81f2b40e35785e01de64dd171/header.jpg?t=1789050056",
+      "bytes": 33676,
+      "sha256": "e6ddfdb5db88cb0ce0d9d9a8bcfbd0739cdb8a58ad4b31bef10592151883e8cc",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "dying-light": {
+      "image": "/assets/images/game-patches/dying-light-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/239140/",
+      "sourceTitle": "Dying Light",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/9d1b810b85ae46a0acbdfddf583ccbb81271183e/header.jpg?t=1782913513",
+      "bytes": 43436,
+      "sha256": "044bc1c51ab6e312fd79664430cc1e6e00b57f6a44f10dd812bc25e065d46f29",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "dying-light-2-stay-human": {
+      "image": "/assets/images/game-patches/dying-light-2-stay-human-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/534380/",
+      "sourceTitle": "Dying Light 2 Stay Human: Reloaded Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/534380/header.jpg?t=1788258144",
+      "bytes": 41221,
+      "sha256": "7fac6a047e20e7e5e57d33ce725f85208fb536fe75ff4136537a6f626e2b66ee",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "fallout-4": {
+      "image": "/assets/images/game-patches/fallout-4-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/377160/",
+      "sourceTitle": "Fallout 4",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg?t=1786648137",
+      "bytes": 37114,
+      "sha256": "1d90e4bffb552583c8183095756edfa784e10cc2b79e552e31371de0eb83ab42",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "god-of-war": {
+      "image": "/assets/images/game-patches/god-of-war-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1593500/",
+      "sourceTitle": "God of War",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412",
+      "bytes": 37714,
+      "sha256": "cef450471bbaf6058991c841c30539069f436a92ba5e91994bf12d12657e3b80",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "grand-theft-auto-v": {
+      "image": "/assets/images/game-patches/grand-theft-auto-v-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/271590/",
+      "sourceTitle": "Grand Theft Auto V Legacy",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725",
+      "bytes": 63566,
+      "sha256": "e1ee8ed03ef2926d224e331a1bc61711822bbe7261cf847624089c1e95207a9a",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "gravity-rush-2": {
+      "image": "/assets/images/game-patches/gravity-rush-2-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/gravity-rush-2/",
+      "sourceTitle": "Gravity Rush 2 (Gravity Daze 2)",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202010/2320/UQRzoZKzI3PjOYfPa2XOqS19.png",
+      "bytes": 273977,
+      "sha256": "b4357cf71569f8324b25c860a7366a1bee9a4d5d9bf01d94678f4129eb94c0b8",
+      "kind": "Official PlayStation game artwork"
+    },
+    "just-cause-4": {
+      "image": "/assets/images/game-patches/just-cause-4-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/517630/",
+      "sourceTitle": "Just Cause 4 Reloaded",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/517630/header.jpg?t=1782912930",
+      "bytes": 46934,
+      "sha256": "5f9402f0e2073c24c97fcc413603cd357eec5d5e66686f600686b57ee7df8778",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "mad-max": {
+      "image": "/assets/images/game-patches/mad-max-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/234140/",
+      "sourceTitle": "Mad Max",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/234140/header.jpg?t=1780595138",
+      "bytes": 46229,
+      "sha256": "b08b074fa76ced52b78e3c1f1f877e57f89e35625366449f6ecdc3d07309b9e7",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "metal-gear-solid-snake-eater-digital-deluxe-edition": {
+      "image": "/assets/images/game-patches/metal-gear-solid-snake-eater-digital-deluxe-edition-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2417610/",
+      "sourceTitle": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2417610/05c97cbcd0cfc27c8ed6c7fc6d81e0995aa2a7d4/header.jpg?t=1762249119",
+      "bytes": 30812,
+      "sha256": "94fb78155a53f6fa4f789d6e9e44bbbe0b808ed8b7d8787eb65de0611c83d7f2",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "red-dead-redemption": {
+      "image": "/assets/images/game-patches/red-dead-redemption-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2668510/",
+      "sourceTitle": "Red Dead Redemption",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2668510/header.jpg?t=1781132266",
+      "bytes": 50174,
+      "sha256": "97a73571e540df7092dbf7bfc9f945e461291f14cc230b6d9010ec922ecb5067",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "resident-evil-4-remake": {
+      "image": "/assets/images/game-patches/resident-evil-4-remake-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2050650/",
+      "sourceTitle": "Resident Evil 4",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922",
+      "bytes": 28807,
+      "sha256": "33c8dcd2a189dec8c053773e10df4fef2d68cb1db73ab4401de5c078b8650e4b",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "sekiro-shadows-die-twice": {
+      "image": "/assets/images/game-patches/sekiro-shadows-die-twice-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/814380/",
+      "sourceTitle": "Sekiro™: Shadows Die Twice - GOTY Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg?t=1762888662",
+      "bytes": 39009,
+      "sha256": "1a7309b8cef162b7bd4ed33ebddbc70b15734ac0250492110535a4d22eb88b5b",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "shadow-of-the-colossus": {
+      "image": "/assets/images/game-patches/shadow-of-the-colossus-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/shadow-of-the-colossus/",
+      "sourceTitle": "Shadow of the Colossus",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202010/2319/XtqYrG2LWer39eExYBsh9J5x.png",
+      "bytes": 138015,
+      "sha256": "edb005ba902092d861e17df9cd85c7ec980823025279b5aa4aebf5099ce05aa2",
+      "kind": "Official PlayStation game artwork"
+    },
+    "the-evil-within": {
+      "image": "/assets/images/game-patches/the-evil-within-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/268050/",
+      "sourceTitle": "The Evil Within",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268050/header.jpg?t=1750783780",
+      "bytes": 36710,
+      "sha256": "9846895fd55bf6c633e320a903df00bda836437e190c0c6829df9b096951a027",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "the-last-guardian": {
+      "image": "/assets/images/game-patches/the-last-guardian-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/the-last-guardian/",
+      "sourceTitle": "The Last Guardian",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202010/2817/o1vHIpf7WGhgk4Fu1wdxLLne.png",
+      "bytes": 179943,
+      "sha256": "4cd60a9da2ec7a0db09c6d567337558859d6909d5553eee889561f4e66349595",
+      "kind": "Official PlayStation game artwork"
+    },
+    "the-last-of-us-part-ii": {
+      "image": "/assets/images/game-patches/the-last-of-us-part-ii-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/the-last-of-us-part-ii/",
+      "sourceTitle": "The Last of Us: Part II",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png",
+      "bytes": 135501,
+      "sha256": "c46fd16fcc42b6cc70eebe80faeb625b11424b0c51cd901dbcce0683da497f63",
+      "kind": "Official PlayStation game artwork"
+    },
+    "the-last-of-us-remastered": {
+      "image": "/assets/images/game-patches/the-last-of-us-remastered-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/the-last-of-us-remastered/",
+      "sourceTitle": "The Last of Us: Remastered",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202011/1020/FKgazVvG7BcWouCr39mIiXkW.png",
+      "bytes": 132476,
+      "sha256": "7a89ceaceea20787cc7559043670c9fea70550ec4419e7884555168ed4345875",
+      "kind": "Official PlayStation game artwork"
+    },
+    "the-order-1886": {
+      "image": "/assets/images/game-patches/the-order-1886-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/the-order-1886/",
+      "sourceTitle": "The Order 1886",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202010/2621/LSToXWZ9UvC5NBaruzxKbp4W.png",
+      "bytes": 258850,
+      "sha256": "7dce497fc09ea611c50bc10731dbf7c0320bd8048404a11aef872ec2a9180ff5",
+      "kind": "Official PlayStation game artwork"
+    },
+    "the-witcher-3": {
+      "image": "/assets/images/game-patches/the-witcher-3-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/292030/",
+      "sourceTitle": "The Witcher 3: Wild Hunt — Remastered",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/e8afc4252e3fee8ed2525ab2fd7675cca39aa38d/header_alt_assets_1.jpg?t=1790845156",
+      "bytes": 43744,
+      "sha256": "572a97138980ded27bc2d953458bb4c2801860975dd0a6501641d34fa601d821",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "dark-souls-iii": {
+      "image": "/assets/images/game-patches/dark-souls-iii-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/374320/",
+      "sourceTitle": "DARK SOULS™ III",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/374320/header.jpg?t=1748630784",
+      "bytes": 43735,
+      "sha256": "27220371fbd76f7d1012b3ac91757435b0e532ae6fdf983d22a59586581fdbc3",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "far-cry-6": {
+      "image": "/assets/images/game-patches/far-cry-6-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2369390/",
+      "sourceTitle": "Far Cry® 6",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2369390/64af0c6b70ef233bbdff1e5ffe0e397481efb3c9/header.jpg?t=1793372616",
+      "bytes": 42006,
+      "sha256": "459c8105022b61c68ab88a1c645776c0a99d753a43e82c56dd9855aa356a0abf",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "far-cry-primal": {
+      "image": "/assets/images/game-patches/far-cry-primal-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/371660/",
+      "sourceTitle": "Far Cry® Primal",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/371660/header.jpg?t=1772640435",
+      "bytes": 46390,
+      "sha256": "18ec1879c91f16416b413e945cd1cd9d9c3f26ffa2bf1f1b1214fb7e77e5de5f",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "just-cause-3": {
+      "image": "/assets/images/game-patches/just-cause-3-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/225540/",
+      "sourceTitle": "Just Cause™ 3",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/header.jpg?t=1782912719",
+      "bytes": 65979,
+      "sha256": "aa7606193d27e0b840efefdd84a207d28f0428222013d91b070b9424912fb1ec",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "alien-isolation": {
+      "image": "/assets/images/game-patches/alien-isolation-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/214490/",
+      "sourceTitle": "Alien: Isolation",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/header.jpg?t=1793034411",
+      "bytes": 21064,
+      "sha256": "169afafbf683d7529559ad30b6cf7568c45e0a9c99e7390555a3c29117521f83",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "armored-core-vi-fires-of-rubicon": {
+      "image": "/assets/images/game-patches/armored-core-vi-fires-of-rubicon-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1888160/",
+      "sourceTitle": "ARMORED CORE™ VI FIRES OF RUBICON™",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888160/header.jpg?t=1748630736",
+      "bytes": 47173,
+      "sha256": "265c2e2e00b542a65dadd577a24ef8f994cbe600b6ce51325020ba7780b64e65",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "days-gone": {
+      "image": "/assets/images/game-patches/days-gone-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1259420/",
+      "sourceTitle": "Days Gone",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1259420/header.jpg?t=1750947718",
+      "bytes": 18193,
+      "sha256": "07dbc4d574f7d0550213a440efa534b316830720378576762d7592ed636e2ef2",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "detroit-become-human": {
+      "image": "/assets/images/game-patches/detroit-become-human-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1222140/",
+      "sourceTitle": "Detroit: Become Human",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479",
+      "bytes": 36437,
+      "sha256": "6090057ad69a66278d19259834f867d4223569b93ac5b2bffd3894a49425fa53",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "elden-ring": {
+      "image": "/assets/images/ps4-ps5/elden-ring.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1245620/",
+      "sourceTitle": "ELDEN RING",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1790290043",
+      "bytes": 32689,
+      "sha256": "d46402528e357350bdb31a00be57a7896238515e6dc8afc0669aa54573307c02",
+      "kind": "Existing publisher artwork reused; store game identity verified. Image does not imply PC patch compatibility"
+    },
+    "final-fantasy-vii-remake": {
+      "image": "/assets/images/game-patches/final-fantasy-vii-remake-ps4-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/final-fantasy-vii-remake/",
+      "sourceTitle": "Final Fantasy VII Remake (PS4)",
+      "source": "https://image.api.playstation.com/vulcan/img/cfn/113075PxnarzRek4cRpjrRWSpLfrcBd23B5e_Yj2azms6nWYKmySv4h3a22G5_R1CM4BQUmSRD6oOArDROKv041NUkgun78-.png",
+      "bytes": 569155,
+      "sha256": "0d40e857016608e13a0d71259970313185826eab245b94eda47dc19f4091c740",
+      "kind": "Official PlayStation PS4 game artwork",
+      "previousArtwork": {
+        "image": "/assets/images/game-patches/final-fantasy-vii-remake-official.jpg",
+        "sourcePage": "https://store.steampowered.com/app/1462040/",
+        "sourceTitle": "FINAL FANTASY VII REMAKE INTERGRADE",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/67aebedbdfc261278fc5e3cd45b519212ac0555a/header.jpg?t=1789446715",
+        "bytes": 20831,
+        "sha256": "dcd7057036a3ad5460f83dbae409c46dff08f1652831bc8eb2506ea7d1ae978d",
+        "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+      }
+    },
+    "final-fantasy-xv": {
+      "image": "/assets/images/game-patches/final-fantasy-xv-ps4-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/final-fantasy-xv/",
+      "sourceTitle": "Final Fantasy XV Royal Edition (PS4)",
+      "source": "https://image.api.playstation.com/cdn/EP0082/CUSA01615_00/XNsomzrSk6U0TUWod52DBjupDX4SVy4E.png",
+      "bytes": 256172,
+      "sha256": "32ee0d10d0109dfccf807f31b632fb31d2463852a27bd5a50eb360238061c8b7",
+      "kind": "Official PlayStation PS4 game artwork",
+      "previousArtwork": {
+        "image": "/assets/images/game-patches/final-fantasy-xv-official.jpg",
+        "sourcePage": "https://store.steampowered.com/app/637650/",
+        "sourceTitle": "FINAL FANTASY XV WINDOWS EDITION",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/637650/header.jpg?t=1775105127",
+        "bytes": 39708,
+        "sha256": "c41022879de06efe3da0cdbf4f8777f457e8f332ee7ec456e0a17251a00764c9",
+        "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+      }
+    },
+    "ghost-of-tsushima-director-s-cut": {
+      "image": "/assets/images/game-patches/ghost-of-tsushima-director-s-cut-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2215430/",
+      "sourceTitle": "Ghost of Tsushima DIRECTOR'S CUT",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398",
+      "bytes": 36239,
+      "sha256": "fe1bf015452d5e52a6a9fb9b7e535996a5b8f950fd5b4fd958636095ac02f39a",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "horizon-forbidden-west": {
+      "image": "/assets/images/game-patches/horizon-forbidden-west-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2420110/",
+      "sourceTitle": "Horizon Forbidden West™ Complete Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2420110/header.jpg?t=1789585745",
+      "bytes": 58665,
+      "sha256": "6104bbc74ffcc2c87d724897d9ea8cf59f6398af2633e5e9d4443fb4c5c0bf03",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "horizon-zero-dawn": {
+      "image": "/assets/images/ps4-ps5/horizon-zero-dawn.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1151640/",
+      "sourceTitle": "Horizon Zero Dawn™ Complete Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151640/header.jpg?t=1776465788",
+      "bytes": 54076,
+      "sha256": "95971139817f59677278b82584523cf15d0ce57e1d3382e8753dd889e2d31334",
+      "kind": "Existing publisher artwork reused; store game identity verified. Image does not imply PC patch compatibility"
+    },
+    "marvel-s-spider-man": {
+      "image": "/assets/images/game-patches/marvel-s-spider-man-ps4-hero-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/marvels-spider-man/",
+      "sourceTitle": "Marvel's Spider-Man (PS4)",
+      "source": "https://gmedia.playstation.com/is/image/SIEPDC/marvel-spiderman-pdp-hero-desktop-01-ps4-en-11nov20?$1200px$",
+      "bytes": 198136,
+      "sha256": "fa7aebdf30d2cb662db5241f802ff7b2339b6cd9a261f6e9dd376b421f60b2d5",
+      "kind": "Original PS4 hero artwork published on official PlayStation game page; Remastered product metadata was not used",
+      "previousArtwork": {
+        "image": "/assets/images/game-patches/marvel-s-spider-man-official.jpg",
+        "sourcePage": "https://store.steampowered.com/app/1817070/",
+        "sourceTitle": "Marvel’s Spider-Man Remastered",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg?t=1787838689",
+        "bytes": 35271,
+        "sha256": "84417fb73690f07c8f24852f63f220fcc0d422a580cd8fdfd0e62d554bfaff78",
+        "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+      },
+      "unusedArtwork": {
+        "image": "/assets/images/game-patches/marvel-s-spider-man-ps4-official.jpg",
+        "sourcePage": "https://www.playstation.com/en-gb/games/marvels-spider-man/",
+        "sourceTitle": "Marvel's Spider-Man (PS4)",
+        "source": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png",
+        "bytes": 114119,
+        "sha256": "9fc82723dfebddeffe6cc09178884abdf55e02bc46fdb070741ad1aa83ccb877",
+        "kind": "Current og:image from official page displays Spider-Man Remastered; retained unused"
+      }
+    },
+    "marvel-s-spider-man-miles-morales": {
+      "image": "/assets/images/game-patches/marvel-s-spider-man-miles-morales-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1817190/",
+      "sourceTitle": "Marvel’s Spider-Man: Miles Morales",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817190/header.jpg?t=1787838710",
+      "bytes": 28196,
+      "sha256": "a5d7caa2ec02c532d4f8d173f15bbc142c16e11cfbba03bb5d03b3149d32c08c",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "persona-5-royal": {
+      "image": "/assets/images/game-patches/persona-5-royal-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1687950/",
+      "sourceTitle": "Persona 5 Royal",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1783356822",
+      "bytes": 57228,
+      "sha256": "d9ec3a9814a67b255033d0b21a7d1431f19183c0d4ee65354a7e4cd7a6533451",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "sleeping-dogs-definitive-edition": {
+      "image": "/assets/images/game-patches/sleeping-dogs-definitive-edition-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/307690/",
+      "sourceTitle": "Sleeping Dogs: Definitive Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/307690/header.jpg?t=1766070052",
+      "bytes": 110392,
+      "sha256": "770bfdc8f7882c86e2c8ca92d9229ccdb5887c19b663d6e274c5b26250384bfb",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "stray": {
+      "image": "/assets/images/game-patches/stray-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1332010/",
+      "sourceTitle": "Stray",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/71daca1910d664d31240b9623a495e0c0828807f/header.jpg?t=1785424330",
+      "bytes": 34498,
+      "sha256": "1af3d4aa0b05098c29ebeb95dc4a7e38d6335553304d29e93232fb260f0b7d4d",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "assassin-s-creed-rogue-remastered": {
+      "image": "/assets/images/game-patches/assassin-s-creed-rogue-remastered-ps4-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/assassins-creed-rogue-remastered/",
+      "sourceTitle": "Assassin's Creed Rogue Remastered",
+      "source": "https://image.api.playstation.com/cdn/JP0001/CUSA10132_00/Wh098aFfbc0ZxRZGdTzIYCw05SOlX3vi.png",
+      "bytes": 224594,
+      "sha256": "ad5941bacdbdf096ef257f20fac4148987b0f4915eacfcfa16e9ad088e1b23e3",
+      "kind": "Official PlayStation game artwork"
+    },
+    "concrete-genie": {
+      "image": "/assets/images/game-patches/concrete-genie-official.jpg",
+      "sourcePage": "https://www.playstation.com/en-gb/games/concrete-genie/",
+      "sourceTitle": "Concrete Genie",
+      "source": "https://image.api.playstation.com/vulcan/img/rnd/202011/0923/lbjNLN1pA9vZiHjECrt3Gnc7.png",
+      "bytes": 229940,
+      "sha256": "9dc0c9c66b6650d0911619fd39e23e9a1c156eccbba449c505e2499109d59a48",
+      "kind": "Official PlayStation game artwork"
+    },
+    "crisis-core-final-fantasy-vii-reunion": {
+      "image": "/assets/images/game-patches/crisis-core-final-fantasy-vii-reunion-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1608070/",
+      "sourceTitle": "CRISIS CORE –FINAL FANTASY VII– REUNION",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1608070/header.jpg?t=1793266915",
+      "bytes": 34889,
+      "sha256": "215145de5f3c4b8c02e205d59ae5302bc3191b14545eda555cc56079ecfc84df",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "deus-ex-mankind-divided": {
+      "image": "/assets/images/game-patches/deus-ex-mankind-divided-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/337000/",
+      "sourceTitle": "Deus Ex: Mankind Divided",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/337000/39cf848b5d93541865bdf81e1f415cc615de5d80/header.jpg?t=1780670420",
+      "bytes": 32969,
+      "sha256": "3b9e4e06f93e6d7a775aea6c3b0e113b3569516e6aa4f56ca0011f95175b0fbf",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "dragon-age-inquisition": {
+      "image": "/assets/images/game-patches/dragon-age-inquisition-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1222690/",
+      "sourceTitle": "Dragon Age™ Inquisition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222690/header.jpg?t=1779987585",
+      "bytes": 46052,
+      "sha256": "5c7deabf1f3b30394191361cbdf122ff73c269b86610891c646aa4d6229e3e7f",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "dragon-s-dogma-dark-arisen": {
+      "image": "/assets/images/game-patches/dragon-s-dogma-dark-arisen-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/367500/",
+      "sourceTitle": "Dragon's Dogma: Dark Arisen",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367500/header.jpg?t=1768870344",
+      "bytes": 32113,
+      "sha256": "83a1b788811734dd6cd0c8feb8b89bb1e82334f423d28a84421580af8cca7a56",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "god-of-war-ragnarok": {
+      "image": "/assets/images/game-patches/god-of-war-ragnarok-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2322010/",
+      "sourceTitle": "God of War Ragnarök",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1776465233",
+      "bytes": 47645,
+      "sha256": "6f12e8e431fc55073cd0255b9bc7c5ce7e8eeb130e31bd179a7e9ba0d2267b3a",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "hogwarts-legacy": {
+      "image": "/assets/images/game-patches/hogwarts-legacy-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/990080/",
+      "sourceTitle": "Hogwarts Legacy",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992",
+      "bytes": 34362,
+      "sha256": "5d406f44f7725e2249ddb63a40c15d05531bbf504837c4374bb2586fe3c07b79",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "kena-bridge-of-spirits": {
+      "image": "/assets/images/game-patches/kena-bridge-of-spirits-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1954200/",
+      "sourceTitle": "Kena: Bridge of Spirits",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1954200/header.jpg?t=1772142684",
+      "bytes": 46853,
+      "sha256": "3d7e9d93924b5ba3877946b47241851dbee9570a3dc0711aee9f23633cfdfb40",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "lies-of-p": {
+      "image": "/assets/images/game-patches/lies-of-p-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1627720/",
+      "sourceTitle": "Lies of P",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/header.jpg?t=1764565054",
+      "bytes": 30245,
+      "sha256": "dc7ef97a04831df980463c59aef256348661ad054c0b28fd4ceb4457ffe8dae6",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "life-is-strange-true-colors": {
+      "image": "/assets/images/game-patches/life-is-strange-true-colors-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/936790/",
+      "sourceTitle": "Life is Strange: True Colors",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/936790/header.jpg?t=1771867255",
+      "bytes": 61255,
+      "sha256": "b232513467f7f6fe4beceee9d043d523acb1839756c21a8bcdb51b4269ed88c9",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "need-for-speed-heat": {
+      "image": "/assets/images/game-patches/need-for-speed-heat-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1222680/",
+      "sourceTitle": "Need for Speed™ Heat",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222680/header.jpg?t=1777414224",
+      "bytes": 49264,
+      "sha256": "f61e3b999ae9c9fb0faaa492bb30434df0537f7e1c0d5f9f93440220be97fac1",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "resident-evil-hd": {
+      "image": "/assets/images/game-patches/resident-evil-hd-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/304240/",
+      "sourceTitle": "Resident Evil",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304240/header.jpg?t=1790560874",
+      "bytes": 44740,
+      "sha256": "785ced77787b3d3c10aed3915c52b99d1a83bd288a7c799dca96a4176668fd00",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "rise-of-the-tomb-raider": {
+      "image": "/assets/images/game-patches/rise-of-the-tomb-raider-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/391220/",
+      "sourceTitle": "Rise of the Tomb Raider™",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391220/29279804029df9b7540caef5c086c9f0393e2e2d/header_alt_assets_0.jpg?t=1792675385",
+      "bytes": 52966,
+      "sha256": "ee29f710737e4a5e493c272f82ca8fb053f8180632c35a37f3597de272f2a7f9",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "skyrim": {
+      "image": "/assets/images/game-patches/skyrim-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/489830/",
+      "sourceTitle": "The Elder Scrolls V: Skyrim Special Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247",
+      "bytes": 32023,
+      "sha256": "160aaf40eddb413b83b1da78c846b4d66b5123eee1d7e43e287bcfa0bf3584d9",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "sonic-frontiers": {
+      "image": "/assets/images/game-patches/sonic-frontiers-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1237320/",
+      "sourceTitle": "Sonic Frontiers",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1237320/header.jpg?t=1783493175",
+      "bytes": 55812,
+      "sha256": "02b509ae2e569475c3a240375f2060845ac4acf2a5a5307fdbf74317173aef82",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "the-outer-worlds": {
+      "image": "/assets/images/game-patches/the-outer-worlds-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/578650/",
+      "sourceTitle": "The Outer Worlds",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578650/header.jpg?t=1779901907",
+      "bytes": 62605,
+      "sha256": "a31b73fb952e9d01fcf4a41ddb5bc338743daf2033e40f9634f6cf2a8059362f",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "wo-long-fallen-dynasty": {
+      "image": "/assets/images/game-patches/wo-long-fallen-dynasty-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1448440/",
+      "sourceTitle": "Wo Long: Fallen Dynasty",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1448440/header.jpg?t=1792378963",
+      "bytes": 38533,
+      "sha256": "5e5e6b321e1f373d8a47698b3bc38c98a13b874a2f5d12bfd2a610edd072a612",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "wreckfest": {
+      "image": "/assets/images/game-patches/wreckfest-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/228380/",
+      "sourceTitle": "Wreckfest",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228380/header.jpg?t=1742490584",
+      "bytes": 40625,
+      "sha256": "95ca937db84571d739052246d68792b1323e6e0d5daa283cff035d56dc9fd741",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "assassin-s-creed-iii-remastered": {
+      "image": "/assets/images/game-patches/assassin-s-creed-iii-remastered-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/911400/",
+      "sourceTitle": "Assassin's Creed® III Remastered",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/911400/header.jpg?t=1786631735",
+      "bytes": 38718,
+      "sha256": "0876e3223685ca2a6ef7a43f770594467fcb21903f2f2232c3157fc9ec611745",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "atomic-heart": {
+      "image": "/assets/images/game-patches/atomic-heart-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/668580/",
+      "sourceTitle": "Atomic Heart",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/668580/header.jpg?t=1786632138",
+      "bytes": 42366,
+      "sha256": "3e42bc5679d1bf5c7fe3657b200de638008f9080ae8224435c329e964e844d43",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "fatal-frame-maiden-of-black-water": {
+      "image": "/assets/images/game-patches/fatal-frame-maiden-of-black-water-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1732190/",
+      "sourceTitle": "FATAL FRAME / PROJECT ZERO: Maiden of Black Water",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1732190/header.jpg?t=1776994734",
+      "bytes": 30473,
+      "sha256": "e08a671d2d4c45e790c1da008b1d3da81a61810859ad843c1a3b8bac55b76547",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "grand-theft-auto-vice-city-the-definitive-edition": {
+      "image": "/assets/images/game-patches/grand-theft-auto-vice-city-the-definitive-edition-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1546990/",
+      "sourceTitle": "Grand Theft Auto: Vice City – The Definitive Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1546990/header.jpg?t=1781138647",
+      "bytes": 48450,
+      "sha256": "b7a793d5462421167d2a4cc471d88bce1c0c155ff545ff67df757e0eb9705b39",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "judgment": {
+      "image": "/assets/images/game-patches/judgment-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2058180/",
+      "sourceTitle": "Judgment",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058180/header.jpg?t=1781263750",
+      "bytes": 36040,
+      "sha256": "51f34f0711c06bfa5463214d1574d299c73dfaaf6912eba14f242d8e15b6fa82",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "life-is-strange-before-the-storm": {
+      "image": "/assets/images/game-patches/life-is-strange-before-the-storm-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/554620/",
+      "sourceTitle": "Life is Strange: Before the Storm",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/554620/header.jpg?t=1773409621",
+      "bytes": 46698,
+      "sha256": "d50892d86106007df21bc710b06434f83ad1bc6ef00d3d3564059da357c3829d",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "mirror-s-edge-catalyst": {
+      "image": "/assets/images/game-patches/mirror-s-edge-catalyst-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1233570/",
+      "sourceTitle": "Mirror's Edge™ Catalyst",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1233570/header.jpg?t=1777486496",
+      "bytes": 60883,
+      "sha256": "1e724bb66e64b7480ac0a7bc368e655ead5c7f60e36cebac7fd1313f2748effe",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "need-for-speed-payback": {
+      "image": "/assets/images/game-patches/need-for-speed-payback-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1262580/",
+      "sourceTitle": "Need for Speed™ Payback",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1262580/header.jpg?t=1777543107",
+      "bytes": 47404,
+      "sha256": "0e17e3a6ae765833deec75d08b3b11ba699cc419e7bf718c19321d832ad0caa0",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "persona-3-reload": {
+      "image": "/assets/images/game-patches/persona-3-reload-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2161700/",
+      "sourceTitle": "Persona 3 Reload",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg?t=1764776430",
+      "bytes": 62160,
+      "sha256": "3de53e4065607641183888e7c291af90c7be8e90ace694f9215c5e567df5b208",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "resident-evil-zero": {
+      "image": "/assets/images/game-patches/resident-evil-zero-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/339340/",
+      "sourceTitle": "Resident Evil 0",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/339340/header.jpg?t=1768953920",
+      "bytes": 72036,
+      "sha256": "1029d84b4bfd4dc35740cac01321ed71fa7bf0fbb53f872f5d3aa29e00ca3952",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "soul-hackers-2": {
+      "image": "/assets/images/game-patches/soul-hackers-2-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1777620/",
+      "sourceTitle": "Soul Hackers 2",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1777620/header.jpg?t=1763537332",
+      "bytes": 40856,
+      "sha256": "9f5c8873787fccca0ecae2efd1e0915e57517b01cb556e85804bfcbfd236fe10",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "spyro-reignited-trilogy": {
+      "image": "/assets/images/game-patches/spyro-reignited-trilogy-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/996580/",
+      "sourceTitle": "Spyro™ Reignited Trilogy",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/996580/header.jpg?t=1781038162",
+      "bytes": 73038,
+      "sha256": "929c02a9a0c38613080840ba66c75ef32c6aaa40b291bec2784acb45fd3858d4",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "street-fighter-6": {
+      "image": "/assets/images/game-patches/street-fighter-6-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1364780/",
+      "sourceTitle": "Street Fighter™ 6",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/header.jpg?t=1791866175",
+      "bytes": 68241,
+      "sha256": "1335203e286ed008bebe940a073da638010665f01b7cabe8e38ae3b2b7db73d8",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "vampyr": {
+      "image": "/assets/images/game-patches/vampyr-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/427290/",
+      "sourceTitle": "Vampyr",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427290/header.jpg?t=1773669973",
+      "bytes": 64894,
+      "sha256": "e95360cf8468e7c5c382d076e2ce2e153b50a1265c177fae37b1df4f9fa533d9",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "amnesia-the-bunker": {
+      "image": "/assets/images/game-patches/amnesia-the-bunker-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1944430/",
+      "sourceTitle": "Amnesia: The Bunker",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/header.jpg?t=1786607210",
+      "bytes": 31091,
+      "sha256": "2488ae71f9870c46c812afc7859090dee0c7def49a04b5cea1bfd86cfe3a5d37",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "assetto-corsa-competizione": {
+      "image": "/assets/images/game-patches/assetto-corsa-competizione-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/805550/",
+      "sourceTitle": "Assetto Corsa Competizione",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/805550/header.jpg?t=1793287213",
+      "bytes": 38153,
+      "sha256": "c0e4056f25bbaae0f59b9c8347e9b57f0e8d4c2c12c703f7f04310e14945d7fe",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "back-4-blood": {
+      "image": "/assets/images/game-patches/back-4-blood-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/924970/",
+      "sourceTitle": "Back 4 Blood",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/924970/header.jpg?t=1780594976",
+      "bytes": 48665,
+      "sha256": "70b394d36c218f01a1f3de3a6bf8541366316885c12bab1de7953fd90fed49eb",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "daymare-1998": {
+      "image": "/assets/images/game-patches/daymare-1998-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/842100/",
+      "sourceTitle": "Daymare: 1998",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/842100/header.jpg?t=1777303655",
+      "bytes": 40950,
+      "sha256": "2d613372c39d7f63c4ee97a8e333745267068feab3fea0d57be30991fbaf0548",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "far-cry-3-blood-dragon-classic-edition": {
+      "image": "/assets/images/game-patches/far-cry-3-blood-dragon-classic-edition-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/233270/",
+      "sourceTitle": "Far Cry 3 - Blood Dragon",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/233270/header.jpg?t=1793371876",
+      "bytes": 41083,
+      "sha256": "0fcf008f042577a1d08982c967b09e9c6a80baff4c00735ce48ad65c70a7abbc",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "fatal-frame-mask-of-the-lunar-eclipse": {
+      "image": "/assets/images/game-patches/fatal-frame-mask-of-the-lunar-eclipse-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2130460/",
+      "sourceTitle": "FATAL FRAME / PROJECT ZERO: Mask of the Lunar Eclipse",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2130460/header.jpg?t=1776994726",
+      "bytes": 34877,
+      "sha256": "2c75eab880389ada548c2b3583b84b3ca323fa7d56c18e3d8268b88bc2b55029",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "hellblade-senua-s-sacrifice": {
+      "image": "/assets/images/game-patches/hellblade-senua-s-sacrifice-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/414340/",
+      "sourceTitle": "Hellblade: Senua's Sacrifice",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414340/header.jpg?t=1776350290",
+      "bytes": 27557,
+      "sha256": "6b4f6610a77a18c3e772ad6a96ad958d26931c66185ab4517e2fa2e23ac901e8",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "homefront-2": {
+      "image": "/assets/images/game-patches/homefront-2-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/223100/",
+      "sourceTitle": "Homefront®: The Revolution",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223100/header.jpg?t=1614763860",
+      "bytes": 34943,
+      "sha256": "701a25edc6d25c7860fa4715d0142bfbc44f91cffb4ac66caa2eb683fb19a2cb",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "lost-judgment": {
+      "image": "/assets/images/game-patches/lost-judgment-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2058190/",
+      "sourceTitle": "Lost Judgment",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058190/header.jpg?t=1781263270",
+      "bytes": 26679,
+      "sha256": "701d3626f41836f2efe9631beef8901732281563530f6263cf5cdbb5188b7d59",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "mafia-definitive-edition": {
+      "image": "/assets/images/game-patches/mafia-definitive-edition-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/1030840/",
+      "sourceTitle": "Mafia: Definitive Edition",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030840/header.jpg?t=1786727529",
+      "bytes": 32136,
+      "sha256": "9c22ee09c278ebfcd8d86646d4171bba3e015c3892caf55e84344a6b5e9e42ee",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "sonic-x-shadow-generations": {
+      "image": "/assets/images/game-patches/sonic-x-shadow-generations-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/2513280/",
+      "sourceTitle": "SONIC X SHADOW GENERATIONS",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2513280/header.jpg?t=1783614811",
+      "bytes": 67804,
+      "sha256": "fb0fad3aec5177ce69550b6e3bf3dc8cf83493d656ab701d18c558a0c018b719",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "the-sinking-city": {
+      "image": "/assets/images/game-patches/the-sinking-city-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/750130/",
+      "sourceTitle": "The Sinking City Remastered",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/750130/4fb51a8ba323000002ce2c7ffb77ed2a27aba835/header.jpg?t=1787841031",
+      "bytes": 37313,
+      "sha256": "0fbb65aa526e0fa18ec6256f749b4141863e1c416f20a87e2b8aee1e30d9199e",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    },
+    "the-technomancer": {
+      "image": "/assets/images/game-patches/the-technomancer-official.jpg",
+      "sourcePage": "https://store.steampowered.com/app/338390/",
+      "sourceTitle": "The Technomancer",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/338390/header.jpg?t=1712312994",
+      "bytes": 112438,
+      "sha256": "10ac09991f0a44bade2a70b3fff6ba09f27e0c6f798d068436e7c4fc00fc8c72",
+      "kind": "Official Steam store game artwork; image does not imply PC patch compatibility"
+    }
+  }
+}

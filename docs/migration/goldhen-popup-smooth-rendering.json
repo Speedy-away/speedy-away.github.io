@@ -1,0 +1,106 @@
+{
+  "status": "Published and live verified",
+  "checkedAt": "2026-11-03T23:11:26.236Z",
+  "tests": {
+    "passed": 239,
+    "failed": 0
+  },
+  "goldhen": {
+    "cards": 1,
+    "firmwareChoices": 9,
+    "entries": 34,
+    "olderBuilds": 33,
+    "archiveCopiesVerified": 33,
+    "load": "Existing Afterglow browser route preserved for 13.52 / 14.00; older BIN entries retain their original host Instructions and Download identities.",
+    "selection": "Card → firmware → version → existing action controls; selecting firmware runs nothing"
+  },
+  "rendering": {
+    "before": {
+      "visibleTiles": 100,
+      "createdAfterExpansion": 532,
+      "writesAfterExpansion": 9,
+      "extraTilesCreatedForFiveConnectionEdits": 500,
+      "totalGridReplacements": 14,
+      "appendOperations": 0,
+      "consoleSends": 0
+    },
+    "after": {
+      "visibleTiles": 100,
+      "createdAfterExpansion": 100,
+      "writesAfterExpansion": 1,
+      "extraTilesCreatedForFiveConnectionEdits": 0,
+      "totalGridReplacements": 1,
+      "appendOperations": 8,
+      "consoleSends": 0
+    }
+  },
+  "improvements": [
+    "Append console catalogue batches without replacing existing tiles or focus",
+    "Skip unchanged catalogue markup and counter writes while still refreshing active Load controls",
+    "Filter by category and firmware before building search strings; skip search text entirely for empty queries",
+    "Append trainer pagination and suppress console dialog artwork requests",
+    "Share in-flight KARO index/list requests, preserve the newest query and restore fallback links on timeout"
+  ],
+  "verification": {
+    "status": "passed",
+    "bytes": 842941065,
+    "pagesLinks": 2604,
+    "nativeScriptsUnchanged": 849,
+    "cachedResourcesRetained": 1491,
+    "runtimeDocumentsOptimized": 213,
+    "offloadedFiles": 274,
+    "compactAliasesVerified": 6396,
+    "sharedCatalogueFiles": 4,
+    "routingBytes": {
+      "full": 1027268,
+      "runtime": 222196
+    },
+    "issues": 0
+  },
+  "preservation": {
+    "downloadBytesChanged": 0,
+    "nativeFilesChanged": 0,
+    "readyPackagesChanged": 0,
+    "olderVersionsRetained": true
+  },
+  "limits": [
+    "DOM operations measured with inert fixtures; physical-console FPS and native execution were not tested",
+    "Browser UI automation is unavailable in Work settings"
+  ],
+  "commit": "ae4736fba1b39f6775ed5f0e2bf282243c13c9b2",
+  "liveVerification": {
+    "goldhenEntries": 34,
+    "goldhenCards": 1,
+    "goldhenFirmwareChoices": 9,
+    "goldhenDownloadsVerified": 34,
+    "status": "passed",
+    "checkedAt": "2026-11-03T23:14:36.022Z",
+    "revision": "ae4736fba1b39f6775ed5f0e2bf282243c13c9b2",
+    "run": 41737190646,
+    "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41737190646",
+    "livePages": 1104,
+    "sharedCatalogueFiles": 4,
+    "aliasesVerified": 6396,
+    "pagesBuild": {
+      "revision": "ae4736fba1b39f6775ed5f0e2bf282243c13c9b2",
+      "base": "/WWB-HOST",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 842941065,
+      "budget": 922746880,
+      "files": 5719,
+      "offloadedFiles": 274,
+      "nativeScriptsUnchanged": 849,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+      "routingBytes": {
+        "full": 1027268,
+        "runtime": 222196
+      },
+      "sharedCatalogueFiles": 4
+    },
+    "limits": [
+      "Static HTTP and authored adapter verification only; no browser or native console execution"
+    ]
+  }
+}

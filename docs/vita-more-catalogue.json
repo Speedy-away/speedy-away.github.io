@@ -1,0 +1,301 @@
+{
+  "scope": "vita-more",
+  "reviewed": "2026-11-02",
+  "items": [
+    {
+      "id": "supertux",
+      "summary": "A complete, free platform adventure: guide Tux through the classic Milestone 1 levels.",
+      "kind": "Homebrew game",
+      "models": "Native Vita; exact firmware range and PS TV support not specified by author.",
+      "prerequisites": "Homebrew access and VitaShell. Game assets are bundled.",
+      "data": "Standalone free game",
+      "paths": [
+        "ux0:data/supertux/"
+      ],
+      "setup": [
+        "Copy SuperTux-PSVITA.vpk to ux0:downloads/ and install with VitaShell.",
+        "Open the SuperTux bubble from LiveArea. Saves and settings use ux0:data/supertux/."
+      ],
+      "sources": [
+        "https://github.com/theheroGAC/SuperTux-PSVITA/releases/tag/1.04",
+        "https://github.com/theheroGAC/SuperTux-PSVITA"
+      ]
+    },
+    {
+      "id": "jumpnbump",
+      "summary": "A fast multiplayer rabbit arena with local controller and Bluetooth keyboard support.",
+      "kind": "Homebrew game",
+      "models": "Native Vita; no exact firmware minimum published. Multiplayer only.",
+      "prerequisites": "Homebrew access, VitaShell and another player. Up to four players are supported by the port.",
+      "data": "Standalone free game",
+      "paths": [],
+      "setup": [
+        "Install jumpnbump_1.00.vpk with VitaShell; all required game data is included.",
+        "Prepare multiplayer input, then open its LiveArea bubble. Move with the D-pad or stick and jump with an action button.",
+        "The Vita build is 1.00. Release tag 1.02 contains later Switch changes; it is not Vita version 1.02."
+      ],
+      "sources": [
+        "https://github.com/rsn8887/jumpnbump#installation-instructions",
+        "https://github.com/rsn8887/jumpnbump/releases/tag/1.02"
+      ]
+    },
+    {
+      "id": "enigma",
+      "summary": "Marble puzzles built around matching hidden Oxyd stones, with mazes, traps and touch controls.",
+      "kind": "Homebrew game",
+      "models": "Native Vita; no exact firmware minimum or model restriction published.",
+      "prerequisites": "Homebrew access, VitaShell and the matching free data ZIP.",
+      "data": "Free data pack required",
+      "paths": [
+        "ux0:data/enigma/"
+      ],
+      "setup": [
+        "Install enigma_1.11.vpk with VitaShell.",
+        "Extract this project's data.zip into ux0:data/, retaining the enigma folder. Do not use Chocolate Doom's different data.zip.",
+        "The author recommends FTP when transferring the many small data files. Vita remains 1.11; release 1.16 updates Switch only."
+      ],
+      "sources": [
+        "https://github.com/rsn8887/Enigma/blob/master/README.MD",
+        "https://github.com/rsn8887/Enigma/releases/tag/1.16"
+      ]
+    },
+    {
+      "id": "chocolate-doom",
+      "summary": "One native launcher for classic Doom, Heretic, Hexen and Strife engines, with shareware data available.",
+      "kind": "Source port · pre-release",
+      "models": "Native Vita; no exact firmware range or model restriction published.",
+      "prerequisites": "Homebrew access, VitaShell and release data.zip. Full games need your own IWADs.",
+      "data": "Shareware included; full-game data supplied by you",
+      "paths": [
+        "ux0:data/chocolate/iwads/",
+        "ux0:data/chocolate/pwads/"
+      ],
+      "setup": [
+        "Install ChocolateDoom_r3_1.vpk. The author marks Vita Release 3.1 as a pre-release.",
+        "Extract its data.zip at ux0: so the data/chocolate folder lands at ux0:data/chocolate/. This includes Doom and Heretic shareware.",
+        "Copy your own full-game IWADs to ux0:data/chocolate/iwads/. Put PWADs in the appropriate doom, heretic, hexen or strife subfolder under pwads/."
+      ],
+      "sources": [
+        "https://github.com/fgsfdsfgs/chocolate-doom/blob/master/README.Vita.md",
+        "https://github.com/fgsfdsfgs/chocolate-doom/releases/tag/chocolate-doom-3.0.0-vita-3.1"
+      ]
+    },
+    {
+      "id": "mgba",
+      "summary": "The official native Vita emulator for Game Boy, Game Boy Color and Game Boy Advance.",
+      "kind": "Emulator",
+      "models": "Official Vita homebrew build; no exact firmware minimum or handheld model restriction published.",
+      "prerequisites": "Homebrew access, VitaShell and your own game backups. External BIOS is optional.",
+      "data": "Emulator only · bring your own games",
+      "paths": [
+        "ux0:roms/gba/ (suggested)"
+      ],
+      "setup": [
+        "Install the ready VPK extracted unchanged from the official Vita 7z, or unpack the original archive on your computer.",
+        "Copy your own GB/GBC/GBA backups to a folder you choose, for example ux0:roms/gba/, then select them in mGBA's file browser.",
+        "The suggested ROM folder is for organization; upstream does not require that exact location."
+      ],
+      "sources": [
+        "https://mgba.io/downloads.html",
+        "https://github.com/mgba-emu/mgba/blob/0.10.5/README.md"
+      ]
+    },
+    {
+      "id": "daedalus",
+      "summary": "Native Nintendo 64 emulation with vitaGL rendering and a per-game compatibility database.",
+      "kind": "Emulator · rolling nightly",
+      "models": "Author explicitly targets Vita / PS TV. Performance and compatibility vary by game.",
+      "prerequisites": "Homebrew access, VitaShell, matching data ZIP and libshacccg.suprx for the renderer. Bring your own ROMs.",
+      "data": "Emulator only · bring your own games",
+      "paths": [
+        "ux0:data/DaedalusX64/",
+        "ux0:data/DaedalusX64/Roms/",
+        "ur0:data/libshacccg.suprx"
+      ],
+      "setup": [
+        "Install DaedalusX64.vpk. Extract the matching ZIP into ux0:data/; its top-level DaedalusX64 folder must become ux0:data/DaedalusX64/.",
+        "Confirm libshacccg.suprx exists at ur0:data/libshacccg.suprx or ur0:data/external/libshacccg.suprx. This shader compiler is required by the pinned native build and is not bundled here.",
+        "Put your own N64 ROMs in ux0:data/DaedalusX64/Roms/. Check the compatibility list for each game.",
+        "The upstream Nightly identifies build 2026-10-12, commit fb7238e. These files preserve the snapshot retrieved on 2 November 2026, with individual SHA-256 hashes."
+      ],
+      "sources": [
+        "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/tag/Nightly",
+        "https://github.com/Rinnegatamante/DaedalusX64-vitaGL-Compatibility/issues",
+        "https://github.com/Rinnegatamante/DaedalusX64-vitaGL",
+        "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/blob/fb7238e/Source/SysVita/main.cpp#L971-L988",
+        "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/blob/fb7238e/Source/Utility/IO.h#L26-L30"
+      ]
+    },
+    {
+      "id": "moonlight",
+      "summary": "Stream games from your own PC to Vita with touch controls, host pairing and Wake-on-LAN support.",
+      "kind": "Streaming app",
+      "models": "Native Vita client. No exact firmware minimum published; touch features depend on handheld hardware.",
+      "prerequisites": "Homebrew access, unsafe homebrew permission, Wi-Fi/LAN and a compatible Sunshine host on your PC.",
+      "data": "PC host required · no PC games included",
+      "paths": [
+        "ux0:data/moonlight/"
+      ],
+      "setup": [
+        "Install moonlight.vpk with VitaShell. This build uses SceShell permission for optional PS-button capture.",
+        "Set up Sunshine on your PC, connect both devices to your local network, add the host in Moonlight and approve its pairing PIN on the PC.",
+        "Select a host app to stream. START + L + R opens the pause menu; START + LEFT opens the floating keyboard."
+      ],
+      "sources": [
+        "https://github.com/xyzz/vita-moonlight/releases/tag/0.13.2",
+        "https://github.com/xyzz/vita-moonlight",
+        "https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2getting__started.html"
+      ]
+    },
+    {
+      "id": "imago",
+      "summary": "Browse, install and customize Vita themes, then restyle app bubbles and LiveArea artwork.",
+      "kind": "Theme manager",
+      "models": "HENkaku / h-encore / Ensō Vita. Author has not tried PS TV.",
+      "prerequisites": "Enable unsafe homebrew for database writes; internet for browsing the theme repository.",
+      "data": "Theme downloads selected inside the app",
+      "paths": [
+        "ux0:customtheme/",
+        "ux0:data/Imago/",
+        "ur0:shell/db/app.db"
+      ],
+      "setup": [
+        "Install imago-v1.3.0.vpk using VitaShell and enable unsafe homebrew in HENkaku Settings.",
+        "Browse psvt.ovh through Imago, install a theme, then apply it in Settings → Theme & Background → Theme.",
+        "Keep the automatic database and original-artwork backups. Local themes need a folder such as ux0:customtheme/YourTheme/theme.xml."
+      ],
+      "sources": [
+        "https://github.com/SevyW/imago/releases/tag/v1.3.0",
+        "https://github.com/SevyW/imago",
+        "https://psvt.ovh/"
+      ]
+    },
+    {
+      "id": "custom-themes-manager",
+      "summary": "Red Squirrel's established tool for online and local themes, with database backup and restore.",
+      "kind": "Theme manager",
+      "models": "Author specifies HENkaku / h-encore. No exact firmware range or model matrix published.",
+      "prerequisites": "Unsafe homebrew permission is required to install or remove themes in the system database.",
+      "data": "Theme downloads selected inside the app",
+      "paths": [
+        "ux0:customtheme/",
+        "ur0:shell/db/app.db"
+      ],
+      "setup": [
+        "Install CTManager_v4.02.vpk with VitaShell; enable unsafe homebrew and restart as the author instructs.",
+        "Create a database backup before editing themes. Browse the online repository or import an extracted local theme folder.",
+        "Apply the installed theme in Settings → Theme & Background → Theme. Version 4.02 fixes the cache/database-backup menu crash."
+      ],
+      "sources": [
+        "https://redsquirrel87.com/custom-themes-manager",
+        "https://psvt.ovh/"
+      ]
+    },
+    {
+      "id": "psvshell",
+      "summary": "An on-screen CPU, GPU, memory and FPS monitor with optional per-app clock profiles.",
+      "kind": "Kernel plugin",
+      "models": "Stable 1.1 · author supports firmware 3.60 and 3.65 only. Newer 1.2beta is a separate pre-release.",
+      "prerequisites": "taiHEN on supported firmware. Use one active tai config and preserve its existing entries.",
+      "data": "No game data required",
+      "paths": [
+        "ur0:tai/PSVshell.skprx",
+        "ur0:tai/config.txt"
+      ],
+      "setup": [
+        "Copy PSVshell.skprx to ur0:tai/. In your active tai configuration, add ur0:tai/PSVshell.skprx beneath *KERNEL.",
+        "Restart the Vita. SELECT + UP or SELECT + DOWN cycles the display modes.",
+        "Leave clock settings at Default for monitoring. Manual frequencies and per-game/global profiles are optional; this page makes no measured performance claim."
+      ],
+      "sources": [
+        "https://github.com/Electry/PSVshell",
+        "https://github.com/Electry/PSVshell/releases/tag/v1.1"
+      ]
+    },
+    {
+      "id": "shellbat",
+      "summary": "Adds a numeric battery percentage to the Vita's system status bar.",
+      "kind": "Shell plugin",
+      "models": "Handheld Vita. r10 source lists retail 3.55 / 3.60 / 3.65 / 3.67 / 3.68 shells; no 3.69+ claim.",
+      "prerequisites": "taiHEN; battery display has no useful function on PS TV. Firmware identification is not a jailbreak support claim.",
+      "data": "No game data required",
+      "paths": [
+        "ur0:tai/shellbat.suprx",
+        "ur0:tai/config.txt"
+      ],
+      "setup": [
+        "Put shellbat.suprx in your active tai folder. This page uses ur0:tai/; the author's example uses ux0:tai/.",
+        "Add ur0:tai/shellbat.suprx beneath *main in ur0:tai/config.txt, adapting both paths consistently if your active configuration is ux0:tai/config.txt.",
+        "Restart and check the status bar. Do not infer support for newer firmware from the r10 label."
+      ],
+      "sources": [
+        "https://github.com/nowrep/vita-shellbat",
+        "https://github.com/nowrep/vita-shellbat/blob/r10/main.c"
+      ]
+    },
+    {
+      "id": "ds34vita",
+      "summary": "Connect DS3, DS4 or DualSense controllers to the Vita, with up to two controllers supported.",
+      "kind": "Kernel plugin",
+      "models": "Vita taiHEN plugin; author provides no numeric firmware range. Controller pairing limitations are documented.",
+      "prerequisites": "A supported Bluetooth controller and taiHEN. Remove conflicting controller plugins according to the author's notes.",
+      "data": "No game data required",
+      "paths": [
+        "ur0:tai/ds34vita.skprx",
+        "ur0:tai/config.txt"
+      ],
+      "setup": [
+        "Copy ds34vita.skprx to ur0:tai/ and add its path beneath *KERNEL in the active tai config.",
+        "If using reVita, put ds34vita after reVita. Restart and follow the author's controller-specific Bluetooth pairing procedure.",
+        "DS4 pairs with SHARE + PS and DualSense with CREATE + PS. DS3 requires its host Bluetooth address to be set by the pairing procedure; vibration is not supported."
+      ],
+      "sources": [
+        "https://github.com/MERLev/ds34vita",
+        "https://github.com/MERLev/reVita/wiki/External-Controllers"
+      ]
+    },
+    {
+      "id": "revita",
+      "summary": "Remap buttons, touch and sticks, set turbo actions and save profiles for native games and Adrenaline.",
+      "kind": "Kernel plugin",
+      "models": "Vita / PS TV on 3.60 or 3.65 only. Adrenaline menu needs a graphics filter other than Original.",
+      "prerequisites": "taiHEN and the required ioplus.skprx below. Optional reVitaMotion.suprx adds gyro support.",
+      "data": "No game data required",
+      "paths": [
+        "ur0:tai/reVita.skprx",
+        "ur0:tai/ioplus.skprx",
+        "ux0:data/reVita/"
+      ],
+      "setup": [
+        "Copy ioplus.skprx and reVita.skprx to ur0:tai/. Add both paths beneath *KERNEL in the active tai config: ioplus first, reVita second, then ds34vita if present.",
+        "Restart. START + SQUARE opens the remapping menu; profiles and HOTKEYS.ini are stored in ux0:data/reVita/.",
+        "For optional gyro setup, copy reVitaMotion.suprx to ur0:tai/ and follow the author's SceShell/main section configuration instructions."
+      ],
+      "sources": [
+        "https://github.com/MERLev/reVita#installation",
+        "https://github.com/MERLev/reVita/releases/tag/1.0.8"
+      ]
+    },
+    {
+      "id": "minimal-theme",
+      "summary": "A cream and black abstract theme with warped patterns and an optical illusion skull lock screen, created by Alberto Munguia.",
+      "kind": "Custom theme · XML assets",
+      "models": "Custom themes on a homebrew-enabled Vita. No exact firmware range or PS TV claim published by this author.",
+      "prerequisites": "Imago or Custom Themes Manager with unsafe homebrew enabled. This ZIP contains theme assets, not an installable VPK.",
+      "data": "Complete theme assets supplied",
+      "paths": [
+        "ux0:customtheme/MINIMAL/theme.xml"
+      ],
+      "setup": [
+        "Create a new MINIMAL folder beneath ux0:customtheme/. Extract this ZIP into that folder; theme.xml must be directly at ux0:customtheme/MINIMAL/theme.xml. The upstream ZIP has its files at archive root.",
+        "In Imago, add the local theme folder to your Library, or use Custom Themes Manager’s local-folder install option. Keep the existing theme database backup.",
+        "Apply MINIMAL in Settings → Theme & Background → Theme. Author and version are verified from the original theme.xml."
+      ],
+      "sources": [
+        "https://psvt.ovh/theme.php?id=1780106831",
+        "https://github.com/SevyW/imago#readme",
+        "https://redsquirrel87.com/custom-themes-manager"
+      ]
+    }
+  ]
+}

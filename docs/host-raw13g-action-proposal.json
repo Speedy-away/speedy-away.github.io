@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "platform": "ps4",
+  "status": "proposal-for-root-integration",
+  "notes": [
+    "Metadata proposal only; no shared action catalogue altered by the research subtask."
+  ],
+  "sources": [
+    "https://github.com/raw13g/raw13g.github.io",
+    "https://raw13g.github.io/"
+  ],
+  "actions": [
+    {
+      "id": "raw13g-1302-1352",
+      "label": "RAW GAME · 13.02 / 13.04 / 13.50 / 13.52",
+      "category": "loaders",
+      "firmwares": [
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "launchURL": "https://raw13g.github.io/",
+      "launchLabel": "Launch host",
+      "format": "HTML host",
+      "requirements": [
+        "Open in the PS4 browser only on 13.02, 13.04, 13.50 or 13.52. This external host starts its exploit sequence after cache handling.",
+        "The reviewed source has separate exact kernel patch files. Other offset entries and an upstream run-anyway option do not establish compatibility.",
+        "No physical-console execution has been verified by whatwhatboy. The 13.50 and 13.52 patch notes include hardware-testing limitations."
+      ],
+      "source": "https://github.com/raw13g/raw13g.github.io",
+      "sourceCommit": "9ba2f0719591d6900d91aba6cc5291f8fff97e6d",
+      "sourceEvidence": {
+        "review": "docs/qa/raw13g-source-review.json",
+        "landing": {
+          "path": "index.html",
+          "url": "https://raw.githubusercontent.com/raw13g/raw13g.github.io/9ba2f0719591d6900d91aba6cc5291f8fff97e6d/index.html",
+          "lines": "40-82",
+          "status": 200,
+          "bytes": 24773,
+          "sha256": "4898a1249458a4e1baaff5480a92810db010bdf538cdb8f7a58715805166f65c",
+          "gitBlobSHA": "f0cfb39d2b4ad48534993003ad501b1d7d297440"
+        },
+        "offsets": {
+          "path": "ps4_offsets.js",
+          "url": "https://raw.githubusercontent.com/raw13g/raw13g.github.io/9ba2f0719591d6900d91aba6cc5291f8fff97e6d/ps4_offsets.js",
+          "lines": "444-645",
+          "status": 200,
+          "bytes": 17675,
+          "sha256": "12e3886508e13e176018691def0a192c352b72959e2d1f1ea2b8fbd90a62b2dc",
+          "gitBlobSHA": "297ddf140c4074abb471188b084a3c3b1d5dc960"
+        },
+        "license": {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/raw13g/raw13g.github.io/9ba2f0719591d6900d91aba6cc5291f8fff97e6d/LICENSE",
+          "lines": "1-23",
+          "status": 200,
+          "bytes": 1362,
+          "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68",
+          "gitBlobSHA": "5d006df406dfd4c9a5d92d424a92339882a3345e"
+        }
+      },
+      "license": "External link only. MIT covers raw13g-authored code; mandatory primitive files, kernel patches and bundled payload binaries are explicitly excluded. No third-party runtime redistributed.",
+      "automatic": true,
+      "version": "Pinned source review 9ba2f0719591; bundled numeric payload version unconfirmed",
+      "notes": "External original host, not a built-in runtime. goldhen.bin and payload2.bin are byte-identical in this revision; no generic Load transport or PS5 support is asserted."
+    }
+  ]
+}

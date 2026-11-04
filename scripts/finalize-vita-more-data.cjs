@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'..');
+const catalogPath=path.join(root,'docs/vita-more-catalogue.json');const catalog=JSON.parse(fs.readFileSync(catalogPath,'utf8'));
+const d=catalog.items.find(x=>x.id==='daedalus');
+d.setup[0]='Install DaedalusX64.vpk. Extract the matching ZIP into ux0:data/; its top-level DaedalusX64 folder must become ux0:data/DaedalusX64/.';
+d.setup[1]='Confirm libshacccg.suprx exists at ur0:data/libshacccg.suprx or ur0:data/external/libshacccg.suprx. This shader compiler is required by the pinned native build and is not bundled here.';
+d.setup[3]='The upstream Nightly identifies build 2026-10-12, commit fb7238e. These files preserve the snapshot retrieved on 2 November 2026, with individual SHA-256 hashes.';
+for(const s of ['https://github.com/Rinnegatamante/DaedalusX64-vitaGL/blob/fb7238e/Source/SysVita/main.cpp#L971-L988','https://github.com/Rinnegatamante/DaedalusX64-vitaGL/blob/fb7238e/Source/Utility/IO.h#L26-L30'])if(!d.sources.includes(s))d.sources.push(s);
+if(!catalog.items.some(x=>x.id==='minimal-theme'))catalog.items.push({id:'minimal-theme',summary:'A cream and black abstract theme with warped patterns and an optical illusion skull lock screen, created by Alberto Munguia.',kind:'Custom theme · XML assets',models:'Custom themes on a homebrew-enabled Vita. No exact firmware range or PS TV claim published by this author.',prerequisites:'Imago or Custom Themes Manager with unsafe homebrew enabled. This ZIP contains theme assets, not an installable VPK.',data:'Complete theme assets supplied',paths:['ux0:customtheme/MINIMAL/theme.xml'],setup:['Create a new MINIMAL folder beneath ux0:customtheme/. Extract this ZIP into that folder; theme.xml must be directly at ux0:customtheme/MINIMAL/theme.xml. The upstream ZIP has its files at archive root.','In Imago, add the local theme folder to your Library, or use Custom Themes Manager’s local-folder install option. Keep the existing theme database backup.','Apply MINIMAL in Settings → Theme & Background → Theme. Author and version are verified from the original theme.xml.'],sources:['https://psvt.ovh/theme.php?id=1780106831','https://github.com/SevyW/imago#readme','https://redsquirrel87.com/custom-themes-manager']});
+fs.writeFileSync(catalogPath,JSON.stringify(catalog,null,2)+'\n');
+const metadataPath=path.join(root,'docs/vita-more-files.json');const metadata=JSON.parse(fs.readFileSync(metadataPath,'utf8'));
+const theme=metadata.items.find(x=>x.id==='minimal-theme');
+const bytes=execFileSync('C:/Program Files/7-Zip/7z.exe',['e','-so',path.join(root,theme.files[0].local),'preview_page.png'],{maxBuffer:5*1024*1024,windowsHide:true});
+const local='/assets/images/vita-more/minimal-theme-preview.png';fs.writeFileSync(path.join(root,local),bytes);
+theme.screenshot={local,source:'https://psvt.ovh/theme.php?id=1780106831',credit:'Alberto Munguia · MINIMAL original packaged dashboard preview; image rights remain with author',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')};
+fs.writeFileSync(metadataPath,JSON.stringify(metadata,null,2)+'\n');
+console.log('Pinned Daedalus paths and added original MINIMAL theme.');

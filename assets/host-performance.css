@@ -1,0 +1,16 @@
+/* Low-cost console presentation; desktop artwork and every catalogue entry remain available. */
+.host-console-browser *, .host-console-browser *::before, .host-console-browser *::after{animation:none!important;transition:none!important;box-shadow:none!important;filter:none!important;backdrop-filter:none!important;background-image:none!important;scroll-behavior:auto!important}
+.host-console-browser .wwb-heading-art,.host-console-browser img[data-host-src]{display:none!important}
+.host-console-browser [data-wwb-image-heading]{display:block!important;padding-bottom:16px!important;margin-bottom:16px!important}
+.host-console-browser body.wwb-host-page .wwb-heading-copy h1{font-size:1.8rem!important}
+.host-console-browser .host-catalog-grid,.host-console-browser .host-reset #host-action-grid.host-catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
+.host-console-browser .host-catalog-grid .host-catalog-tile{display:block;padding:14px 10px;transform:none!important;min-height:56px}
+.host-console-browser .host-catalog-tile__media{display:none!important}
+.host-console-browser .host-catalog-tile__label,.host-console-browser .host-catalog-tile__detail{padding:0!important}
+#host-show-more{margin:18px 0;padding:12px 20px;background:#18291e;border:1px solid #56745f;color:#e7ede9;cursor:pointer}
+.host-console-browser .trainer-game{min-height:72px;padding:14px}.host-console-browser #trainer-games{gap:10px}
+@media(max-width:640px){.host-console-browser .host-catalog-grid,.host-console-browser .host-reset #host-action-grid.host-catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+.host-console-browser .console-visual{display:none!important}.host-console-browser .console-copy{border-top:0}.host-console-browser .game-links>a{grid-template-columns:minmax(0,1fr) auto}.host-console-browser .karo-feature{grid-template-columns:1fr;min-height:0;padding:20px}.host-console-browser .intro h1{font-size:2.2rem}
+.host-console-browser #trainer-dialog-art{display:none!important}.host-console-browser .trainer-dialog-summary{grid-template-columns:minmax(0,1fr)}
+.host-console-browser .host-patch-tile{padding:12px;border:1px solid #34435a;min-height:72px}.host-console-browser .host-patch-grid{gap:12px}

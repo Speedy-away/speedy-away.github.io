@@ -1,0 +1,72 @@
+{
+  "reviewed": "2026-11-02",
+  "purpose": "Locally hosted game logos for the homepage composition around the existing whatwhatboy logo.",
+  "processing": "Original downloaded asset bytes retained. Logos were not redrawn or generated. SVGs checked for scripts, event handlers and external image/use references; none found.",
+  "assets": [
+    {
+      "name": "Grand Theft Auto series",
+      "file": "assets/images/game-logos/grand-theft-auto.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Grand_Theft_Auto_logo_series.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Grand_Theft_Auto_logo_series.svg",
+      "publisher_source": "https://www.rockstargames.com/grandtheftauto/",
+      "author": "Rockstar Games",
+      "license_record": "Wikimedia Commons PD-textlogo; trademark remains with its owner.",
+      "dimensions": { "width": 431.5, "height": 347.45 },
+      "bytes": 3547,
+      "sha256": "17cdf2e1fea8cf37ab3f8050d8a7d9328f27f74a10795b0b01d234b81da2d052",
+      "notes": "Series logo, not a specific GTA V edition logo. White lettering with the original black outline; transparent SVG background."
+    },
+    {
+      "name": "Counter-Strike 2",
+      "file": "assets/images/game-logos/counter-strike-2.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Counter-Strike_2_logo.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Counter-Strike_2_logo.svg",
+      "publisher_source": "https://www.counter-strike.net/cs2",
+      "author": "Valve Corporation",
+      "license_record": "Wikimedia Commons PD-textlogo; trademark remains with its owner.",
+      "dimensions": { "width": 556, "height": 114 },
+      "bytes": 5436,
+      "sha256": "41fd75de73f7a04015e48bdb5fc6ae9b775e84828be5be67d8b85cd56d9149e5",
+      "notes": "Transparent SVG with dark/navy lettering and the original colour motif. A CSS monochrome filter may be appropriate on the dark homepage."
+    },
+    {
+      "name": "Call of Duty",
+      "file": "assets/images/game-logos/call-of-duty.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Call_of_Duty_2023_logo.svg",
+      "source_url": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo.svg",
+      "publisher_source": "https://www.callofduty.com/",
+      "author": "Activision",
+      "license_record": "Official publisher logo asset; Wikimedia Commons identifies the franchise wordmark as PD-textlogo. Trademark remains with its owner.",
+      "dimensions": { "width": 138, "height": 24 },
+      "bytes": 4738,
+      "sha256": "ca4449a4c99fc5d15d6796f2e351b5fb15649c0b47cff8833bb655ed1a86f941",
+      "notes": "Downloaded directly from the publisher's SVG URL linked by the Commons source page. The current official file is the horizontal white franchise wordmark; transparent background."
+    },
+    {
+      "name": "Garry's Mod",
+      "file": "assets/images/game-logos/garrys-mod.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Garry%27s_Mod_logo.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Garry%27s_Mod_logo.svg",
+      "publisher_source": "https://www.garrysmod.com/",
+      "author": "Garry Newman; source identified by Commons as the Valve press pack",
+      "license_record": "Wikimedia Commons PD-textlogo; trademark remains with its owner.",
+      "dimensions": { "width": 384, "height": 384 },
+      "bytes": 2842,
+      "sha256": "22860def0e570943d8a798988349c2d32d389d4f99e6c1f5cc8c005f04ffb590",
+      "notes": "Original white g on blue square logo; SVG background outside the mark is transparent. Intrinsic dimensions follow the downloaded viewBox."
+    },
+    {
+      "name": "Red Dead Redemption 2",
+      "file": "assets/images/game-logos/red-dead-redemption-2.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Red_Dead_Redemption_2_Logo.png",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Red_Dead_Redemption_2_Logo.png",
+      "publisher_source": "Steam publisher artwork, as linked by the Commons description page",
+      "author": "Rockstar Games",
+      "license_record": "Wikimedia Commons PD-textlogo; trademark remains with its owner.",
+      "dimensions": { "width": 1365, "height": 495 },
+      "bytes": 173944,
+      "sha256": "c27de26b0d1993ac309b3987fae57009680975800ab19bbd8461976b9f78a7bb",
+      "notes": "RGBA PNG with original white/red lettering and black outline. Visually inspected after download."
+    }
+  ]
+}

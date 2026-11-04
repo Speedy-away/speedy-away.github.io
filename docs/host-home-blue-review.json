@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03T21:55:43.363Z",
+  "target": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+  "status": "Actual homepage and scoped blue theme applied. Root owns injection of theme into other authored public pages, compact postprocessing, language aggregation and publication.",
+  "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\host-home-blue-backup-2026-11-03T21-55-43-360Z",
+  "records": [
+    {
+      "path": "index.html",
+      "beforeSha256": "21b317e64a6829d8f84b0d02c376c693029de09d3cad14c6a4132b9d96eb96c2",
+      "afterSha256": "d284836338538ea17c56c7e7dfbb2a27117bed0526f002bad4d04ca972ee1e75",
+      "bytes": 5740
+    },
+    {
+      "path": "assets/host-home.css",
+      "beforeSha256": "b4a66ca7dfccd41967cfe9b06478c2457e902cd008a4c4fdc36e820fdfe05825",
+      "afterSha256": "09d9affc4b9c688985bddaa8e7a2a12f6e143abbe31f8585c4cab5234752baff",
+      "bytes": 6218
+    },
+    {
+      "path": "assets/host-blue-theme.css",
+      "beforeSha256": null,
+      "afterSha256": "9625d4c72797d87fbec2ba3af8ea9bdcd47b9724a8689fb212f2d6c010acfa30",
+      "bytes": 6550
+    },
+    {
+      "path": "assets/host-home-detect.js",
+      "beforeSha256": null,
+      "afterSha256": "a609f673b1a39fd5af3d5e69ae14fae8ad55d47a9c2dc2118b00eb0693362ff2",
+      "bytes": 1662
+    },
+    {
+      "path": "scripts/tests/host-home-blue.test.cjs",
+      "beforeSha256": null,
+      "afterSha256": "883ac4c7729b686a16115e06343926c5f763a32c4d06c5efb54b73a5d628e793",
+      "bytes": 3959
+    },
+    {
+      "path": "i18n-tools/host-home-translations.cjs",
+      "beforeSha256": null,
+      "afterSha256": "92404dc0eca678bccf483232b2abcf7f64267c557b4f26d404478b1b01fae8ef",
+      "bytes": 4903
+    }
+  ],
+  "theme": {
+    "background": "#11161f",
+    "accent": "#99bdff",
+    "desktopColumns": [
+      4,
+      5,
+      6
+    ],
+    "tabletColumns": 3,
+    "phoneColumns": 2,
+    "consoleMode": "Retains existing light3-column mode and bounded18-item trainer batches.",
+    "imageFit": "contain only; visible frames without clipped overflow; outer catalogue box removed on authored host pages."
+  },
+  "home": {
+    "karoFeatureRemoved": true,
+    "karoFilesChanged": false,
+    "autoDetection": "Console and firmware from current browser user agent only. Does not contact or discover another console.",
+    "autoNavigation": false,
+    "trainerImage": {
+      "path": "assets/images/home/ps4-offline-trainer-cover-v1.jpg",
+      "bytes": 66062,
+      "sha256": "4cb4763d96b5a598a3883c802df16bff7af38aa99353c233847340f799e1d3eb",
+      "width": 960,
+      "height": 600
+    },
+    "oldMosaicImagesRetained": true
+  },
+  "languageModule": {
+    "path": "i18n-tools/host-home-translations.cjs",
+    "keys": 9,
+    "languages": 20,
+    "aggregationRequired": true
+  },
+  "verification": {
+    "command": "node --test scripts/tests/host-home-blue.test.cjs",
+    "browser": "Disabled; no browser/headless workaround.",
+    "realConsoleTested": false,
+    "tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "combinedWithConsoleLite": {
+      "tests": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "method": "Authored detection VM uses inert DOM and rejects network/storage/timer/redirect effects. Local route/assets verified. CSS asserts contain-only image fit, visible image frames, outer-only box removal and4/5/6 responsive columns. Existing source trainer image inspected directly; no browser rendering or headless workaround."
+  },
+  "nativeChanges": false,
+  "transportChanges": false,
+  "publication": false,
+  "next": [
+    "Root injects assets/host-blue-theme.css last on every authored public host page, excluding native runtime documents.",
+    "Root aggregates pure host-home-translations.cjs and regenerates languages.",
+    "Root compact/source-popup and Pages build/publication pass preserves this homepage and all old downloads."
+  ]
+}

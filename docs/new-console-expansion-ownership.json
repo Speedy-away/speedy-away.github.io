@@ -1,0 +1,177 @@
+{
+  "updatedAt": "2026-11-02T09:00:57.152Z",
+  "projectId": "c52d75fb-4a9d-4c4d-baa6-d7962f89cc91",
+  "rootOwned": [
+    "pc/**",
+    "shared navigation",
+    "console/index.html",
+    "scripts/build-retro-page.cjs",
+    "sitemap.xml",
+    "console/themes.html"
+  ],
+  "threads": [
+    {
+      "scope": "switch-themes",
+      "title": "Nintendo Switch themes and Themezer",
+      "threadId": "01a19b34-2772-78c3-9b6c-8acf7693522b",
+      "hostId": "local",
+      "canonical": "/console/nintendo-switch/themes.html",
+      "status": "Created; console-specific completion belongs to this chat",
+      "destinationPresent": true
+    },
+    {
+      "scope": "wiiu-more",
+      "title": "Wii U themes and homebrew expansion",
+      "threadId": "01a19b34-3189-7e52-943e-a756a17b1710",
+      "hostId": "local",
+      "canonical": "/console/retro/wiiu.html",
+      "status": "Created; console-specific completion belongs to this chat",
+      "destinationPresent": true
+    },
+    {
+      "scope": "3ds-more",
+      "title": "2DS and 3DS themes, apps and games",
+      "threadId": "01a19b35-18a7-7f61-8314-2832cbec08d6",
+      "hostId": "local",
+      "canonical": "/console/retro/3ds.html",
+      "status": "Created; console-specific completion belongs to this chat",
+      "destinationPresent": true
+    },
+    {
+      "scope": "ps3-themes",
+      "title": "PS3 themes and Themezer collection",
+      "threadId": "01a19b35-a469-7462-b301-4faecfa6ce86",
+      "hostId": "local",
+      "canonical": "/console/ps3/themes.html",
+      "status": "Created; console-specific completion belongs to this chat",
+      "destinationPresent": true
+    },
+    {
+      "scope": "ps2-more",
+      "title": "PlayStation 2 homebrew, ports and emulators",
+      "threadId": "01a19b37-f662-7f23-a72f-a3a7e1f36494",
+      "hostId": "local",
+      "canonical": "/console/retro/ps2.html",
+      "status": "Created; console-specific completion belongs to this chat",
+      "destinationPresent": true
+    },
+    {
+      "scope": "xbox-original",
+      "title": "Original Xbox homebrew and emulators",
+      "threadId": "01a19b39-e27d-7fc0-92b7-b088cae94b14",
+      "hostId": "local",
+      "canonical": "/console/retro/xbox.html",
+      "status": "Created; console-specific completion belongs to this chat",
+      "destinationPresent": false
+    },
+    {
+      "scope": "gamecube-more",
+      "title": "GameCube homebrew, ports and emulators",
+      "threadId": "01a19b45-8327-7ce3-b7dd-43e14b643a9b",
+      "hostId": "local",
+      "canonical": "/console/retro/gamecube.html",
+      "status": "Created; console-specific completion belongs to this chat",
+      "destinationPresent": true
+    },
+    {
+      "scope": "xbox-one-series",
+      "title": "Xbox One and Series Dev Mode guide",
+      "canonical": "/console/xbox-one-series.html",
+      "task": "Create console/xbox-one-series.html with a useful Xbox One / Xbox Series S and X Dev Mode guide. Use official Microsoft documentation for developer-account prerequisites, activation, Developer Home, Device Portal over LAN, storage, native UWP APPX/MSIX installation with actual architecture/dependencies, removal and return to retail mode. Add at least six useful source-confirmed native UWP apps/emulators/tools where ready builds are accessible; Windows EXE files are not Xbox UWP builds. Verify current activation requirements rather than guessing fees or performance. Preserve existing Xbox 360 work. Scope xbox-one-series.",
+      "prompt": "Implement the user's requested console expansion in the current local checkout C:/Users/whatw/Documents/GitHub/whatsite. The user explicitly requested a separate chat for each console and implementation, not only a plan. Read AGENTS.md and docs/console-expansion-handoff.json first. Preserve all shared uncommitted work; do not commit, publish, deploy, create a worktree or add videos. Preview is localhost:8765.\n\nThis chat owns only the scoped console pages and new scoped builders/catalogues below. The coordinating Nintendo Switch chat owns pc/**, shared sidebar/navigation, console/index.html, scripts/build-retro-page.cjs, sitemap.xml and console/themes.html. Other console chats are active. Do not regenerate broad console or Retro builders. Use the page helper in scripts/build-console-guides.cjs without running its broad build. Keep mobile, background and languages/i18n.js?v=3 integration. Do not rewrite immutable packaged console receiver HTML or edit other chats' language/host/mod catalogues.\n\nBrowse official current primary sources. Add ready-to-use builds, real artwork with credits, setup instructions, exact prerequisites, supported model/firmware, SD/USB paths, format tags, search and useful metadata. Archive every new ready file under F:/whatsite-backup-downloads-etc using scripts/download-archive-layout.cjs through scripts/console-expansion-archive.cjs. Read docs/console-expansion-archive-helper.md. Keep a scoped docs/<scope>-private-inventory.json sidecar; do not directly overwrite shared global inventory. Preserve every original, older version and duplicate. Record source URL, version, size and SHA-256. Normal F: escalation tooling applies; this routine saving is already user-authorized. Do not execute downloaded builds, clone repositories, fetch every OS variant or download source archives unless the requested item is source. Bstlar remains skipped. Record inaccessible links truthfully.\n\nVerify file formats, hashes, links and desktop/mobile rendering. Do not claim physical hardware testing. When complete write docs/chat-handoffs/<scope>.json with status, canonical pages, build entrypoints, private inventory, verification and screenshots so the coordinating chat can integrate your work without overwriting it.\n\nCreate console/xbox-one-series.html with a useful Xbox One / Xbox Series S and X Dev Mode guide. Use official Microsoft documentation for developer-account prerequisites, activation, Developer Home, Device Portal over LAN, storage, native UWP APPX/MSIX installation with actual architecture/dependencies, removal and return to retail mode. Add at least six useful source-confirmed native UWP apps/emulators/tools where ready builds are accessible; Windows EXE files are not Xbox UWP builds. Verify current activation requirements rather than guessing fees or performance. Preserve existing Xbox 360 work. Scope xbox-one-series.",
+      "status": "Created; console-specific completion belongs to this chat",
+      "threadId": "01a19b57-c112-7281-a9ab-cbe2cadb7e52",
+      "destinationPresent": true
+    },
+    {
+      "scope": "switch2-console",
+      "title": "Nintendo Switch 2 console resources",
+      "canonical": "/console/nintendo-switch-2.html",
+      "task": "Create console/nintendo-switch-2.html with verified official Nintendo Switch 2 model, setup, storage, backward compatibility and system-software resources. Include current homebrew research only where source-confirmed for this actual hardware; do not copy Switch 1 Atmosphere/Hekate/NXThemes support or manufacture a jailbreak/download ecosystem. Link /pc/emulators.html#switch2 and /pc/nintendo-emulators.html#switch2. The coordinating PC agent owns the exact linked Eden-NS2 project and its source-build status. Make this a useful finished resource page even if native homebrew builds are unavailable. Scope switch2-console.",
+      "prompt": "Implement the user's requested console expansion in the current local checkout C:/Users/whatw/Documents/GitHub/whatsite. The user explicitly requested a separate chat for each console and implementation, not only a plan. Read AGENTS.md and docs/console-expansion-handoff.json first. Preserve all shared uncommitted work; do not commit, publish, deploy, create a worktree or add videos. Preview is localhost:8765.\n\nThis chat owns only the scoped console pages and new scoped builders/catalogues below. The coordinating Nintendo Switch chat owns pc/**, shared sidebar/navigation, console/index.html, scripts/build-retro-page.cjs, sitemap.xml and console/themes.html. Other console chats are active. Do not regenerate broad console or Retro builders. Use the page helper in scripts/build-console-guides.cjs without running its broad build. Keep mobile, background and languages/i18n.js?v=3 integration. Do not rewrite immutable packaged console receiver HTML or edit other chats' language/host/mod catalogues.\n\nBrowse official current primary sources. Add ready-to-use builds, real artwork with credits, setup instructions, exact prerequisites, supported model/firmware, SD/USB paths, format tags, search and useful metadata. Archive every new ready file under F:/whatsite-backup-downloads-etc using scripts/download-archive-layout.cjs through scripts/console-expansion-archive.cjs. Read docs/console-expansion-archive-helper.md. Keep a scoped docs/<scope>-private-inventory.json sidecar; do not directly overwrite shared global inventory. Preserve every original, older version and duplicate. Record source URL, version, size and SHA-256. Normal F: escalation tooling applies; this routine saving is already user-authorized. Do not execute downloaded builds, clone repositories, fetch every OS variant or download source archives unless the requested item is source. Bstlar remains skipped. Record inaccessible links truthfully.\n\nVerify file formats, hashes, links and desktop/mobile rendering. Do not claim physical hardware testing. When complete write docs/chat-handoffs/<scope>.json with status, canonical pages, build entrypoints, private inventory, verification and screenshots so the coordinating chat can integrate your work without overwriting it.\n\nCreate console/nintendo-switch-2.html with verified official Nintendo Switch 2 model, setup, storage, backward compatibility and system-software resources. Include current homebrew research only where source-confirmed for this actual hardware; do not copy Switch 1 Atmosphere/Hekate/NXThemes support or manufacture a jailbreak/download ecosystem. Link /pc/emulators.html#switch2 and /pc/nintendo-emulators.html#switch2. The coordinating PC agent owns the exact linked Eden-NS2 project and its source-build status. Make this a useful finished resource page even if native homebrew builds are unavailable. Scope switch2-console.",
+      "status": "Created; console-specific completion belongs to this chat",
+      "threadId": "01a19b58-0fdf-7770-bc8d-3aa847244bcb",
+      "hostId": "local",
+      "creationResult": {
+        "threadId": "01a19b58-0fdf-7770-bc8d-3aa847244bcb",
+        "hostId": "local"
+      },
+      "destinationPresent": true
+    },
+    {
+      "scope": "wii-more",
+      "title": "Nintendo Wii homebrew, ports and emulators",
+      "canonical": "/console/retro/wii.html",
+      "task": "Expand console/retro/wii.html with a new scoped scripts/build-wii-expansion.cjs. Preserve the existing Homebrew Channel, Priiloader, cIOS, Nintendont, CleanRip and GCMM resources. Add at least ten relevant native ready DOL/ELF apps, homebrew games, ports and emulators with storage/setup instructions. Distinguish Wii, Wii Mini and Wii U vWii support; avoid generic region-blind system-menu replacement guidance. Scope wii-more.",
+      "prompt": "Implement the user's requested console expansion in the current local checkout C:/Users/whatw/Documents/GitHub/whatsite. The user explicitly requested a separate chat for each console and implementation, not only a plan. Read AGENTS.md and docs/console-expansion-handoff.json first. Preserve all shared uncommitted work; do not commit, publish, deploy, create a worktree or add videos. Preview is localhost:8765.\n\nThis chat owns only the scoped console pages and new scoped builders/catalogues below. The coordinating Nintendo Switch chat owns pc/**, shared sidebar/navigation, console/index.html, scripts/build-retro-page.cjs, sitemap.xml and console/themes.html. Other console chats are active. Do not regenerate broad console or Retro builders. Use the page helper in scripts/build-console-guides.cjs without running its broad build. Keep mobile, background and languages/i18n.js?v=3 integration. Do not rewrite immutable packaged console receiver HTML or edit other chats' language/host/mod catalogues.\n\nBrowse official current primary sources. Add ready-to-use builds, real artwork with credits, setup instructions, exact prerequisites, supported model/firmware, SD/USB paths, format tags, search and useful metadata. Archive every new ready file under F:/whatsite-backup-downloads-etc using scripts/download-archive-layout.cjs through scripts/console-expansion-archive.cjs. Read docs/console-expansion-archive-helper.md. Keep a scoped docs/<scope>-private-inventory.json sidecar; do not directly overwrite shared global inventory. Preserve every original, older version and duplicate. Record source URL, version, size and SHA-256. Normal F: escalation tooling applies; this routine saving is already user-authorized. Do not execute downloaded builds, clone repositories, fetch every OS variant or download source archives unless the requested item is source. Bstlar remains skipped. Record inaccessible links truthfully.\n\nVerify file formats, hashes, links and desktop/mobile rendering. Do not claim physical hardware testing. When complete write docs/chat-handoffs/<scope>.json with status, canonical pages, build entrypoints, private inventory, verification and screenshots so the coordinating chat can integrate your work without overwriting it.\n\nExpand console/retro/wii.html with a new scoped scripts/build-wii-expansion.cjs. Preserve the existing Homebrew Channel, Priiloader, cIOS, Nintendont, CleanRip and GCMM resources. Add at least ten relevant native ready DOL/ELF apps, homebrew games, ports and emulators with storage/setup instructions. Distinguish Wii, Wii Mini and Wii U vWii support; avoid generic region-blind system-menu replacement guidance. Scope wii-more.",
+      "status": "Created; console-specific completion belongs to this chat",
+      "threadId": "01a19b58-21a4-7b52-8361-01ce320a6150",
+      "hostId": "local",
+      "creationResult": {
+        "threadId": "01a19b58-21a4-7b52-8361-01ce320a6150",
+        "hostId": "local"
+      },
+      "destinationPresent": true
+    },
+    {
+      "scope": "ds-dsi-more",
+      "title": "Nintendo DS and DSi homebrew expansion",
+      "canonical": "/console/retro/ds.html",
+      "task": "Expand console/retro/ds.html with scoped scripts/build-ds-expansion.cjs, preserving all existing resources. Add at least twelve native NDS/DSi apps, games, ports, emulators and useful TWiLight Menu skins. Distinguish DS/DS Lite flashcart installation from DSi SD/unlaunch paths and 3DS compatibility; do not mix CIA files into DS apps. Scope ds-dsi-more.",
+      "prompt": "Implement the user's requested console expansion in the current local checkout C:/Users/whatw/Documents/GitHub/whatsite. The user explicitly requested a separate chat for each console and implementation, not only a plan. Read AGENTS.md and docs/console-expansion-handoff.json first. Preserve all shared uncommitted work; do not commit, publish, deploy, create a worktree or add videos. Preview is localhost:8765.\n\nThis chat owns only the scoped console pages and new scoped builders/catalogues below. The coordinating Nintendo Switch chat owns pc/**, shared sidebar/navigation, console/index.html, scripts/build-retro-page.cjs, sitemap.xml and console/themes.html. Other console chats are active. Do not regenerate broad console or Retro builders. Use the page helper in scripts/build-console-guides.cjs without running its broad build. Keep mobile, background and languages/i18n.js?v=3 integration. Do not rewrite immutable packaged console receiver HTML or edit other chats' language/host/mod catalogues.\n\nBrowse official current primary sources. Add ready-to-use builds, real artwork with credits, setup instructions, exact prerequisites, supported model/firmware, SD/USB paths, format tags, search and useful metadata. Archive every new ready file under F:/whatsite-backup-downloads-etc using scripts/download-archive-layout.cjs through scripts/console-expansion-archive.cjs. Read docs/console-expansion-archive-helper.md. Keep a scoped docs/<scope>-private-inventory.json sidecar; do not directly overwrite shared global inventory. Preserve every original, older version and duplicate. Record source URL, version, size and SHA-256. Normal F: escalation tooling applies; this routine saving is already user-authorized. Do not execute downloaded builds, clone repositories, fetch every OS variant or download source archives unless the requested item is source. Bstlar remains skipped. Record inaccessible links truthfully.\n\nVerify file formats, hashes, links and desktop/mobile rendering. Do not claim physical hardware testing. When complete write docs/chat-handoffs/<scope>.json with status, canonical pages, build entrypoints, private inventory, verification and screenshots so the coordinating chat can integrate your work without overwriting it.\n\nExpand console/retro/ds.html with scoped scripts/build-ds-expansion.cjs, preserving all existing resources. Add at least twelve native NDS/DSi apps, games, ports, emulators and useful TWiLight Menu skins. Distinguish DS/DS Lite flashcart installation from DSi SD/unlaunch paths and 3DS compatibility; do not mix CIA files into DS apps. Scope ds-dsi-more.",
+      "status": "Created; console-specific completion belongs to this chat",
+      "threadId": "01a19b58-3891-7780-ad2d-6e0694b90ac3",
+      "hostId": "local",
+      "creationResult": {
+        "threadId": "01a19b58-3891-7780-ad2d-6e0694b90ac3",
+        "hostId": "local"
+      },
+      "destinationPresent": true
+    },
+    {
+      "scope": "psp-more",
+      "title": "PSP homebrew, themes, ports and emulators",
+      "canonical": "/console/retro/psp.html",
+      "task": "Create console/retro/psp.html with a scoped builder and at least twelve native PSP EBOOT.PBP apps, homebrew games, ports, emulators and source-confirmed PTF/CTF themes. Include maintained ARK-4 setup references with model/firmware compatibility, exact ms0 versus ef0 paths and CXMB requirements for CTF themes. Preserve source attribution and separate PC helpers. Scope psp-more.",
+      "prompt": "Implement the user's requested console expansion in the current local checkout C:/Users/whatw/Documents/GitHub/whatsite. The user explicitly requested a separate chat for each console and implementation, not only a plan. Read AGENTS.md and docs/console-expansion-handoff.json first. Preserve all shared uncommitted work; do not commit, publish, deploy, create a worktree or add videos. Preview is localhost:8765.\n\nThis chat owns only the scoped console pages and new scoped builders/catalogues below. The coordinating Nintendo Switch chat owns pc/**, shared sidebar/navigation, console/index.html, scripts/build-retro-page.cjs, sitemap.xml and console/themes.html. Other console chats are active. Do not regenerate broad console or Retro builders. Use the page helper in scripts/build-console-guides.cjs without running its broad build. Keep mobile, background and languages/i18n.js?v=3 integration. Do not rewrite immutable packaged console receiver HTML or edit other chats' language/host/mod catalogues.\n\nBrowse official current primary sources. Add ready-to-use builds, real artwork with credits, setup instructions, exact prerequisites, supported model/firmware, SD/USB paths, format tags, search and useful metadata. Archive every new ready file under F:/whatsite-backup-downloads-etc using scripts/download-archive-layout.cjs through scripts/console-expansion-archive.cjs. Read docs/console-expansion-archive-helper.md. Keep a scoped docs/<scope>-private-inventory.json sidecar; do not directly overwrite shared global inventory. Preserve every original, older version and duplicate. Record source URL, version, size and SHA-256. Normal F: escalation tooling applies; this routine saving is already user-authorized. Do not execute downloaded builds, clone repositories, fetch every OS variant or download source archives unless the requested item is source. Bstlar remains skipped. Record inaccessible links truthfully.\n\nVerify file formats, hashes, links and desktop/mobile rendering. Do not claim physical hardware testing. When complete write docs/chat-handoffs/<scope>.json with status, canonical pages, build entrypoints, private inventory, verification and screenshots so the coordinating chat can integrate your work without overwriting it.\n\nCreate console/retro/psp.html with a scoped builder and at least twelve native PSP EBOOT.PBP apps, homebrew games, ports, emulators and source-confirmed PTF/CTF themes. Include maintained ARK-4 setup references with model/firmware compatibility, exact ms0 versus ef0 paths and CXMB requirements for CTF themes. Preserve source attribution and separate PC helpers. Scope psp-more.",
+      "status": "Created; console-specific completion belongs to this chat",
+      "threadId": "01a19b58-46bc-7a31-af8e-43e6771056a9",
+      "hostId": "local",
+      "creationResult": {
+        "threadId": "01a19b58-46bc-7a31-af8e-43e6771056a9",
+        "hostId": "local"
+      },
+      "destinationPresent": true
+    },
+    {
+      "scope": "vita-more",
+      "title": "PS Vita homebrew, ports and emulator library",
+      "canonical": "/console/psvita/library.html",
+      "task": "Create console/psvita/library.html with a new scoped builder and at least twelve native VPK/SUPRX/SKPRX apps, homebrew games, ports, emulators and themes from VitaDB or official authors. Distinguish native Vita from Adrenaline PSP and user-supplied commercial game data. Preserve existing Vita jailbreak/CFW builders/pages and do not overwrite them. Scope vita-more.",
+      "prompt": "Implement the user's requested console expansion in the current local checkout C:/Users/whatw/Documents/GitHub/whatsite. The user explicitly requested a separate chat for each console and implementation, not only a plan. Read AGENTS.md and docs/console-expansion-handoff.json first. Preserve all shared uncommitted work; do not commit, publish, deploy, create a worktree or add videos. Preview is localhost:8765.\n\nThis chat owns only the scoped console pages and new scoped builders/catalogues below. The coordinating Nintendo Switch chat owns pc/**, shared sidebar/navigation, console/index.html, scripts/build-retro-page.cjs, sitemap.xml and console/themes.html. Other console chats are active. Do not regenerate broad console or Retro builders. Use the page helper in scripts/build-console-guides.cjs without running its broad build. Keep mobile, background and languages/i18n.js?v=3 integration. Do not rewrite immutable packaged console receiver HTML or edit other chats' language/host/mod catalogues.\n\nBrowse official current primary sources. Add ready-to-use builds, real artwork with credits, setup instructions, exact prerequisites, supported model/firmware, SD/USB paths, format tags, search and useful metadata. Archive every new ready file under F:/whatsite-backup-downloads-etc using scripts/download-archive-layout.cjs through scripts/console-expansion-archive.cjs. Read docs/console-expansion-archive-helper.md. Keep a scoped docs/<scope>-private-inventory.json sidecar; do not directly overwrite shared global inventory. Preserve every original, older version and duplicate. Record source URL, version, size and SHA-256. Normal F: escalation tooling applies; this routine saving is already user-authorized. Do not execute downloaded builds, clone repositories, fetch every OS variant or download source archives unless the requested item is source. Bstlar remains skipped. Record inaccessible links truthfully.\n\nVerify file formats, hashes, links and desktop/mobile rendering. Do not claim physical hardware testing. When complete write docs/chat-handoffs/<scope>.json with status, canonical pages, build entrypoints, private inventory, verification and screenshots so the coordinating chat can integrate your work without overwriting it.\n\nCreate console/psvita/library.html with a new scoped builder and at least twelve native VPK/SUPRX/SKPRX apps, homebrew games, ports, emulators and themes from VitaDB or official authors. Distinguish native Vita from Adrenaline PSP and user-supplied commercial game data. Preserve existing Vita jailbreak/CFW builders/pages and do not overwrite them. Scope vita-more.",
+      "status": "Created; console-specific completion belongs to this chat",
+      "threadId": "01a19b58-55a9-72e2-9783-0af1e5bfafa7",
+      "hostId": "local",
+      "creationResult": {
+        "threadId": "01a19b58-55a9-72e2-9783-0af1e5bfafa7",
+        "hostId": "local"
+      },
+      "destinationPresent": true
+    },
+    {
+      "scope": "xbox360-more",
+      "title": "Xbox 360 apps, ports and emulator library",
+      "canonical": "/console/xbox360/library.html",
+      "task": "Create console/xbox360/library.html with a new scoped builder and at least ten native XEX apps, homebrew games, ports, emulators and Aurora skins where verified ready files exist. State exact dashboard/storage and temporary-exploit versus RGH/JTAG requirements. Do not touch active Xbox 360 MultiCOD/mods or shared PS3/PS4/PS5 resources. Scope xbox360-more.",
+      "prompt": "Implement the user's requested console expansion in the current local checkout C:/Users/whatw/Documents/GitHub/whatsite. The user explicitly requested a separate chat for each console and implementation, not only a plan. Read AGENTS.md and docs/console-expansion-handoff.json first. Preserve all shared uncommitted work; do not commit, publish, deploy, create a worktree or add videos. Preview is localhost:8765.\n\nThis chat owns only the scoped console pages and new scoped builders/catalogues below. The coordinating Nintendo Switch chat owns pc/**, shared sidebar/navigation, console/index.html, scripts/build-retro-page.cjs, sitemap.xml and console/themes.html. Other console chats are active. Do not regenerate broad console or Retro builders. Use the page helper in scripts/build-console-guides.cjs without running its broad build. Keep mobile, background and languages/i18n.js?v=3 integration. Do not rewrite immutable packaged console receiver HTML or edit other chats' language/host/mod catalogues.\n\nBrowse official current primary sources. Add ready-to-use builds, real artwork with credits, setup instructions, exact prerequisites, supported model/firmware, SD/USB paths, format tags, search and useful metadata. Archive every new ready file under F:/whatsite-backup-downloads-etc using scripts/download-archive-layout.cjs through scripts/console-expansion-archive.cjs. Read docs/console-expansion-archive-helper.md. Keep a scoped docs/<scope>-private-inventory.json sidecar; do not directly overwrite shared global inventory. Preserve every original, older version and duplicate. Record source URL, version, size and SHA-256. Normal F: escalation tooling applies; this routine saving is already user-authorized. Do not execute downloaded builds, clone repositories, fetch every OS variant or download source archives unless the requested item is source. Bstlar remains skipped. Record inaccessible links truthfully.\n\nVerify file formats, hashes, links and desktop/mobile rendering. Do not claim physical hardware testing. When complete write docs/chat-handoffs/<scope>.json with status, canonical pages, build entrypoints, private inventory, verification and screenshots so the coordinating chat can integrate your work without overwriting it.\n\nCreate console/xbox360/library.html with a new scoped builder and at least ten native XEX apps, homebrew games, ports, emulators and Aurora skins where verified ready files exist. State exact dashboard/storage and temporary-exploit versus RGH/JTAG requirements. Do not touch active Xbox 360 MultiCOD/mods or shared PS3/PS4/PS5 resources. Scope xbox360-more.",
+      "status": "Created; console-specific completion belongs to this chat",
+      "threadId": "01a19b58-67b3-7de1-be36-431223a7526f",
+      "hostId": "local",
+      "creationResult": {
+        "threadId": "01a19b58-67b3-7de1-be36-431223a7526f",
+        "hostId": "local"
+      },
+      "destinationPresent": true
+    }
+  ]
+}

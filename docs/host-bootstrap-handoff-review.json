@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T13:28:43.808Z",
+  "scope": "Read-only review of the missing PS4 9.00 native bootstrap handoff. Only this report is written. No new site download, mirror, catalogue entry, bridge/UI change, console contact or payload execution.",
+  "result": {
+    "status": "manual-official-bootstrap-only",
+    "newExecutableActionQualified": false,
+    "recommendation": "Keep the 9.00 runtime explicitly described as the initial BIN-loader stage. Link the official GoldHEN release/direct 9.00 build and provide manual bootstrap guidance. Do not claim the existing 9090/9021 sender completes the 9020 stage.",
+    "reason": "The exact host-provided GoldHEN file has no numeric version or redistribution grant established. The archived official 2.3/9.00 file is independently identified, but exact execution compatibility with this modified runtime handoff was not confirmed. No inferred 9020 Run mapping is enabled."
+  },
+  "runtime": {
+    "id": "ps4-900",
+    "firmware": [
+      "9.00"
+    ],
+    "sourceRepository": "https://github.com/kmeps4/PSFree",
+    "sourceCommit": "368d82aa40d3017c220757ce315761adb5f06678",
+    "sourceURL": "https://github.com/kmeps4/PSFree/blob/368d82aa40d3017c220757ce315761adb5f06678/lapse.mjs",
+    "localSource": "hosts/runtime/ps4-900/upstream/lapse.mjs",
+    "localSourceSHA256": "1bedab6c77188cdef97ccc65bab38d917997dc3ee03c705e6025464d1240936a",
+    "modifiedSource": "hosts/runtime/ps4-900/web/lapse.js",
+    "transport": {
+      "type": "raw-bin-tcp",
+      "port": 9020,
+      "framing": "Unframed raw bytes; end the sending side so the native read loop reaches EOF.",
+      "nativeReceiveAllocationBytes": 3145728,
+      "nativeReadChunkBytes": 4096,
+      "connections": "One accepted connection per loader thread; sockets are closed before invoking the receive buffer.",
+      "acknowledgment": "No application-success acknowledgement or HTTP status protocol.",
+      "readinessProbe": "Do not make an exploratory TCP connection: it can consume the single native handoff without delivering the intended payload.",
+      "browserLimit": "Ordinary browser JavaScript has no raw TCP API. A future paired sender route needs a dedicated fixed 9020 transport and exact approved artifact, not an HTTP request."
+    },
+    "abi": {
+      "context": "x86-64 native executable-memory BIN entry; not top-level ELF, PRX/SPRX, PKG or an archive.",
+      "stubWords": 61,
+      "stubBytes": 244,
+      "stubSHA256": "734345ef8978a945e37d393d50068a6546be11c14eb25ad720416598b0d299cd",
+      "inspection": "Static reconstruction of the literal BLDR words only. The receive stub was not run.",
+      "limit": "The original in-page PayloadLoader and socket loader invoke an executable buffer through different native call paths. A shared .bin extension does not establish entry arguments or every build ABI."
+    },
+    "readinessCaution": "The JavaScript ready log follows thread creation; it does not independently prove a successful native bind or completed payload operation. The integration starts the AIO fetch and BIN loader without a payload-completion acknowledgement."
+  },
+  "candidates": [
+    {
+      "id": "official-goldhen-2.3-900-existing",
+      "publisher": "SiSTR0 / GoldHEN",
+      "version": "2.3",
+      "firmware": "9.00",
+      "format": "raw x86-64 BIN",
+      "bytes": 282648,
+      "sha256": "c9b8f33d28258af9e80465da591868dada25a1454f30f63882668d5e0dcff9c2",
+      "headHex": "e966100000f30f1efa55ba0400000053",
+      "embeddedELFMagicOffset": 280892,
+      "officialSourceURL": "https://raw.githubusercontent.com/GoldHEN/GoldHEN/b5a78e1e1f6ecbc2dfdcd63b4bb5446f49e309c9/goldhen_2.3_900.bin",
+      "sourceCommit": "b5a78e1e1f6ecbc2dfdcd63b4bb5446f49e309c9",
+      "releaseURL": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.3",
+      "inventoryId": "ps4-ps5-goldhen-2-3-9-00",
+      "workspaceEvidencePath": "downloads/console-ready/goldhen-2.3/goldhen_2.3_900.bin",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\GoldHEN\\GoldHEN\\Builds\\2.3-FW9.00\\goldhen_2.3_900.bin",
+      "workspaceAndBackupHashVerified": true,
+      "sourceFirmwareIdentityConfirmed": true,
+      "exactModifiedRuntimeABIConfirmed": false,
+      "licensing": {
+        "status": "No general redistribution licence found in the existing review.",
+        "publicMirror": false,
+        "publicRoute": "Use the publisher pinned official URL; preserve the existing archive-only bytes.",
+        "priorReviews": [
+          "docs/new-console-ready-files.json",
+          "docs/console-ready-file-descriptors.json"
+        ]
+      }
+    },
+    {
+      "id": "psfree-pinned-bundled-goldhen",
+      "publisher": "GoldHEN payload redistributed by kmeps4 PSFree upstream; exact origin release not established",
+      "version": null,
+      "versionLabel": "Upstream pinned build 368d82aa40d3; no numeric GoldHEN version asserted",
+      "firmware": "9.00",
+      "format": "raw x86-64 BIN",
+      "bytes": 290016,
+      "sha256": "c6329401d1810e16c84e6474ac30977dbdc951987c10cdb559370de7d59db0b0",
+      "headHex": "e9360e0000f30f1efa534883ec10488b05",
+      "sourceURL": "https://raw.githubusercontent.com/kmeps4/PSFree/368d82aa40d3017c220757ce315761adb5f06678/goldhen.bin",
+      "sourceCommit": "368d82aa40d3017c220757ce315761adb5f06678",
+      "sourceIntegration": "The same pinned 9.00 lapse.mjs explicitly invokes PayloadLoader(\"goldhen.bin\"). That establishes the original in-page host pairing, not a numeric GoldHEN version or hardware execution.",
+      "inspection": "Fetched once into bounded memory for byte count/SHA-256/strings; not saved or executed.",
+      "archiveState": "No new archive or public mirror created.",
+      "exactSourceInPagePairingConfirmed": true,
+      "exactModifiedRuntimeABIConfirmed": false,
+      "licensing": {
+        "status": "GoldHEN binary licence not established. The host AGPL licence is not a blanket licence for a separately supplied closed binary.",
+        "publicMirror": false
+      }
+    }
+  ],
+  "currentPublisherReleaseReview": {
+    "releaseURL": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.4b18",
+    "version": "2.4b18",
+    "prerelease": true,
+    "publisherStates": [
+      "Supports previous WebKit exploits and PPPwn with its custom stage2.",
+      "Lists 9.00 among supported firmware."
+    ],
+    "asset": {
+      "filename": "GoldHEN_v2.4b18.7z",
+      "bytes": 258065,
+      "sha256": "d0c84c79f65df5afc79a00c578f33ab1aa70aeb9c205f1e789895dc7d4fca38d",
+      "url": "https://github.com/GoldHEN/GoldHEN/releases/download/2.4b18/GoldHEN_v2.4b18.7z",
+      "githubDigest": null,
+      "inspection": "Bounded in-memory read only. 7-Zip stdin listing returned Not implemented; no extraction, payload-member identity or exact match to the host binary was established. No version was inferred from file size."
+    },
+    "decision": "Link official release as the current publisher destination reviewed here. Do not substitute this archive or its uninspected member into a ready BIN action."
+  },
+  "sourceReview": [
+    {
+      "url": "https://github.com/kmeps4/PSFree/blob/368d82aa40d3017c220757ce315761adb5f06678/lapse.mjs",
+      "supports": "Exact 9.00 host pairing and native 9020 receive-stub literals."
+    },
+    {
+      "url": "https://github.com/ChendoChap/pOOBs4",
+      "supports": "Original 9.00 exploit documents initial payload launcher on port 9020; unrelated payload compatibility is left to payload authors."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ChendoChap/pOOBs4/886f4a07d0793ea6ee945ba064c6056e3af0231c/kexploit.js",
+      "commit": "886f4a07d0793ea6ee945ba064c6056e3af0231c",
+      "observedMainSHA256": "efaccb2e77a6d75ff3355a11e4035555d5aabe3ce18751ec8fc93af6fb6b4708",
+      "supports": "Original x86-64 raw-buffer socket loader. Full byte equivalence to the locally integrated stub was not independently computed in this bounded review."
+    },
+    {
+      "url": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.3",
+      "supports": "Official identity and release provenance of the archived 2.3 candidate."
+    },
+    {
+      "url": "https://api.github.com/repos/GoldHEN/GoldHEN/git/trees/b5a78e1e1f6ecbc2dfdcd63b4bb5446f49e309c9",
+      "supports": "Official tag tree lists goldhen_2.3_900.bin at 282648 bytes, blob SHA-1 c0103e0599fecd2523059f8d3af597d9d445aff4."
+    },
+    {
+      "url": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.4b18",
+      "supports": "Current reviewed GitHub prerelease describes previous-WebKit and PPPwn modes and lists 9.00."
+    },
+    {
+      "url": "https://api.github.com/repos/GoldHEN/GoldHEN/releases/tags/2.4b18",
+      "supports": "Exact publisher asset name/byte count; no GitHub asset digest supplied."
+    }
+  ],
+  "futureImplementationRequirements": [
+    "Keep raw initial TCP 9020 separate from GoldHEN HTTP 9090 and persistent ELF 9021.",
+    "Require exact PS4 9.00 and a manually confirmed ready bootstrap stage; never probe-consume the listener.",
+    "Approve one source-pinned, hash-verified matching raw BIN; do not allow arbitrary ports, uploads or silently broaden the fourteen original-host-only menu variants.",
+    "Keep explicit user Load action and no automatic retries after an uncertain send. Report transferred bytes only, then require native GoldHEN confirmation.",
+    "Do not claim native PRX/SPRX plugin menus or JSON/MC4 cheat files become raw 9020 executables.",
+    "Resolve binary distribution permission before adding an automatic bundled/public-mirror bootstrap. Official external links remain usable without declaring an open-source licence."
+  ],
+  "unchanged": [
+    "All existing public/archive payloads and older versions",
+    "All existing 133 sender actions and two public browser-runtime actions",
+    "The fourteen source-host-only PS4 menu BIN run=null pins",
+    "Bridge/UI/catalogue/helper packages and pages"
+  ],
+  "noPayloadExecuted": true,
+  "noConsoleContact": true
+}

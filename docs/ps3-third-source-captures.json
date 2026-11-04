@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-11-02T06:07:25.684Z",
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+      "status": "accessible by direct HTTPS; relevant content in Google Sites custom embeds",
+      "checkedAt": "2026-11-02T06:07:25.684Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "status": "accessible by direct HTTPS; relevant content in Google Sites custom embeds",
+      "checkedAt": "2026-11-02T06:07:25.684Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "status": "accessible by direct HTTPS; relevant content in Google Sites custom embeds",
+      "checkedAt": "2026-11-02T06:07:25.684Z"
+    }
+  ],
+  "evidence": [
+    {
+      "resourceId": "bo3-spectre-engine-v1",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+      "sourceCompatibility": "Source custom-button text explicitly says Spectre Engine v1.0 [DEX-CFW]. HEN/CEX support is not established.",
+      "download": {
+        "url": "https://www.mediafire.com/file/3lbqahw09dvuy4c/%255BBO3%255D_Spectre_Engine_v1.0_%255BOfficial_Files%255D.rar/file",
+        "label": "Original RAR",
+        "filename": "[BO3] Spectre Engine v1.0 [Official Files].rar"
+      }
+    },
+    {
+      "resourceId": "ghosts-daydream-116",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "sourceCompatibility": "BLES/BLUS source card; exact CFW/HEN/CEX/DEX mode is not stated. The file is explicitly named for Ghosts 1.16.",
+      "download": {
+        "url": "https://www.mediafire.com/file/14rndxx4h1gp3q7/DayDream_COD_Ghost_1.16.zip/file",
+        "label": "Original ZIP",
+        "filename": "DayDream COD Ghost 1.16.zip"
+      }
+    },
+    {
+      "resourceId": "ghosts-rebound-digital",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "sourceCompatibility": "NPUB/NPEB source heading; HEN & CFW explicit in RAR filename. Exact title IDs and title update not stated.",
+      "download": {
+        "url": "https://www.mediafire.com/file/snchu1ktoxtxo63/COD_GHOSTS_Rebound_Sprx_HEN_%2526_CFW.rar/file",
+        "label": "Original RAR",
+        "filename": "COD GHOSTS Rebound Sprx HEN & CFW.rar"
+      }
+    },
+    {
+      "resourceId": "mw3-resurgence",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "sourceCompatibility": "Source card explicitly allows CFW and marks HEN unsupported. BLES/BLUS listed; CEX/DEX and title update not stated.",
+      "download": {
+        "url": "https://www.mediafire.com/file/mrmhnys782fz6qu/MW3_Resurgence_Sprx.rar/file",
+        "label": "Original RAR",
+        "filename": "MW3 Resurgence Sprx.rar"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "reason": "Page fetch succeeded but did not expose a usable download in this inspection; no fabricated candidate added."
+    },
+    {
+      "resource": "BO3 Kebab / Quarantine CE adjacent links",
+      "reason": "Adjacent Kebab heading, Quarantine filename and source showcase disagree; selected the more explicit Spectre DEX CFW resource for this bounded batch instead."
+    }
+  ]
+}

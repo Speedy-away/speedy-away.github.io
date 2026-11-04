@@ -1,0 +1,25 @@
+{
+  "reviewedAt": "2026-11-02",
+  "platform": "Original Xbox",
+  "scope": "System Link player counts below are not Xbox Live matchmaking limits or guarantees of local campaign co-op.",
+  "sources": {
+    "kaiGames": "https://www.teamxlink.co.uk/wiki/Xbox",
+    "kai": "https://www.teamxlink.co.uk/",
+    "kaiSetup": "https://www.teamxlink.co.uk/wiki/Original_Xbox_XLink_Kai_Setup",
+    "insignia": "https://insignia.live/guide/connect",
+    "insigniaGames": "https://insignia.live/games",
+    "halo2": "https://insignia.live/halo2"
+  },
+  "games": [
+    {"id":"halo-ce","title":"Halo: Combat Evolved","versus":16,"coop":0,"perConsole":4,"crossRegion":false,"insignia":null},
+    {"id":"halo-2","title":"Halo 2","versus":16,"coop":0,"perConsole":4,"crossRegion":true,"insignia":"https://insignia.live/halo2"},
+    {"id":"doom-3","title":"Doom 3","versus":4,"coop":2,"perConsole":1,"crossRegion":true,"insignia":"https://insignia.live/games/41560020"},
+    {"id":"brute-force","title":"Brute Force","versus":8,"coop":4,"perConsole":4,"crossRegion":false,"insignia":null},
+    {"id":"cod-bro","title":"Call of Duty 2: Big Red One","versus":16,"coop":0,"perConsole":1,"crossRegion":true,"insignia":"https://insignia.live/games/41560051"},
+    {"id":"forza","title":"Forza Motorsport","versus":8,"coop":0,"perConsole":1,"crossRegion":true,"insignia":null},
+    {"id":"pgr-2","title":"Project Gotham Racing 2","versus":8,"coop":0,"perConsole":2,"crossRegion":true,"insignia":null},
+    {"id":"timesplitters-2","title":"TimeSplitters 2","versus":16,"coop":0,"perConsole":4,"crossRegion":true,"insignia":null},
+    {"id":"chaos-theory","title":"Splinter Cell: Chaos Theory","versus":4,"coop":2,"perConsole":1,"crossRegion":true,"insignia":null},
+    {"id":"rainbow-six-3","title":"Rainbow Six 3","versus":16,"coop":4,"perConsole":1,"crossRegion":true,"insignia":null}
+  ]
+}

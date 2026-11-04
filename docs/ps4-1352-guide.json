@@ -1,0 +1,136 @@
+{
+  "reviewed": "2026-11-02",
+  "video": {
+    "id": "PHfqGgf-QjA",
+    "title": "How to Jailbreak the PS4 in 2026 (13.52 or lower)",
+    "creator": "MODDED WARFARE",
+    "url": "https://www.youtube.com/watch?v=PHfqGgf-QjA",
+    "suppliedUrl": "https://youtu.be/PHfqGgf-QjA?si=mSIf0509EMylA-ET",
+    "published": "2026-09-23",
+    "transcript": "English auto-generated captions exported through the supported browser transcript tool and read in full. Private research copy: docs/tmp/ps4-1352/transcript.txt.",
+    "chapters": [
+      {"seconds":0,"label":"Intro"},
+      {"seconds":31,"label":"Disable updates"},
+      {"seconds":71,"label":"Firmware check"},
+      {"seconds":129,"label":"Network settings"},
+      {"seconds":234,"label":"Load the browser jailbreak"},
+      {"seconds":370,"label":"Offline use"},
+      {"seconds":410,"label":"GoldHEN update blocker"},
+      {"seconds":447,"label":"GoldHEN settings"},
+      {"seconds":600,"label":"Sideload homebrew apps"},
+      {"seconds":779,"label":"Install patches and plugins"},
+      {"seconds":815,"label":"Apply cheats and patches"},
+      {"seconds":932,"label":"Reload after restarting"}
+    ]
+  },
+  "compatibility": {
+    "summary": "The supplied video demonstrates the PS4 Internet Browser method on 13.52 and describes supported firmware from 7.00 through 13.52. You do not need to update an already supported system to 13.52.",
+    "videoRange": "7.00–13.52",
+    "excluded": "This browser method does not establish support for 14.00 or later. The separate 14.00 page describes a different experimental route.",
+    "olderFirmware": "GamerHack also lists separate 5.05/5.07 support, and its main selector has a 6.72 route. A label saying 13.52 or lower does not mean every older firmware uses the same exploit chain.",
+    "hostRouterRanges": ["5.05 / 5.07","7.00–8.52","9.00–9.60","10.00–11.02","11.50–12.02","12.50–13.00","13.02–13.52"],
+    "hostRouterCaveat": "These ranges were read from the current primary host's firmware dispatch code. Use the route recognized for your exact installed version; the host rejects unsupported versions.",
+    "goldhenVersions": "The video's optional firmware-update companion references GoldHEN 2.4b18.11. The current GamerHack host advertises 2.4b18.12. Hosted payloads can change; the site's retained GoldHEN 2.3 archive is not the build demonstrated for 13.52.",
+    "persistence": "Apps and saved files remain on the HDD/SSD after a restart, but the jailbreak session ends. Reload the compatible browser host after rebooting before starting homebrew.",
+    "hardwareVerification": "Research and written guide only; no exploit or downloaded payload was executed, and no physical PS4 was tested."
+  },
+  "requirements": [
+    "A PS4 on a firmware recognized by the selected host. Read Settings → System → System Information before proceeding.",
+    "Internet access for the first host visit and its offline-cache download; either Wi-Fi or a LAN cable can be used.",
+    "No Blu-ray burner, game disc, USB exploit device or soldering is needed for the browser-loading part shown in this video.",
+    "An optional USB drive formatted as exFAT or FAT32 is used in the video's package-installation section. Back it up before formatting.",
+    "Use a firmware-compatible GoldHEN host and homebrew packages. Keep existing firmware and archive versions pinned rather than updating solely for the guide."
+  ],
+  "hosts": [
+    {"label":"GamerHack · combined firmware host","url":"https://gamerhack.github.io/g2all/","source":"https://github.com/GamerHack/GamerHack.github.io","scope":"Primary host typed in the supplied video; current source performs firmware detection and offline caching."},
+    {"label":"RAW GAME · alternative host","url":"https://raw13g.github.io/","source":"https://github.com/raw13g/raw13g.github.io","scope":"Alternative linked by the video. Check its displayed version and compatibility; do not present it as a universal older-firmware host."}
+  ],
+  "dns": {"primary":"45.56.67.85","alternatePrimary":"62.210.38.117","note":"The video presents these as alternative primary DNS choices for update blocking. If DNS breaks ordinary internet access, it demonstrates Easy/Automatic network setup, with the consequence that this DNS blocking is removed. Keep the shared site's PSN/online-risk notice with this section."},
+  "steps": [
+    {
+      "title":"Check downloads and disable automatic updates",
+      "text":"Open Notifications → Downloads and check for a pending system-software update. The video removes a queued update before continuing. In Settings → Network, temporarily turn off Connect to the Internet. Then open Settings → System → Automatic Downloads and disable the automatic-download options shown in the tutorial.",
+      "videoSeconds":31,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=31","label":"Watch update preparation"}]
+    },
+    {
+      "title":"Confirm your installed firmware",
+      "text":"Read Settings → System → System Information. This tutorial demonstrates 13.52 and describes the browser route from 7.00 through 13.52. Stay on an already supported version; the optional update video is not a requirement. Use a separate compatible route for older firmware, and the separate guide for 14.00.",
+      "videoSeconds":71,
+      "links":[{"url":"https://gamerhack.github.io/","label":"GamerHack firmware selector"}]
+    },
+    {
+      "title":"Prepare the network connection",
+      "text":"Re-enable Connect to the Internet and choose Set Up Internet Connection. Select Wi-Fi or LAN Cable, then Custom. Keep IP settings appropriate for your network, use Do Not Specify for DHCP on a typical setup, and choose Manual DNS. The video supplies 45.56.67.85 with 62.210.38.117 as an alternate primary resolver. Finish with the normal MTU and proxy settings, then test ordinary browsing. Automatic/Easy settings remove this DNS blocking if the resolver prevents a connection.",
+      "videoSeconds":129,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=129","label":"Watch network setup"}]
+    },
+    {
+      "title":"Clear the browser before the first setup",
+      "text":"In Internet Browser, use Options to remove frequently used pages. Open Settings and delete cookies and website data. Clear Browsing History as shown, then close and reopen the browser. Do this during initial setup or documented troubleshooting; clearing website data later can remove the offline cache.",
+      "videoSeconds":234,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=234","label":"Watch browser preparation"}]
+    },
+    {
+      "title":"Open and cache the matching host",
+      "text":"Type https://gamerhack.github.io/g2all/ in the PS4 browser. Let its offline-cache preparation finish. When it asks you to close and reopen the browser, add the page to Bookmarks first, then close the browser with Circle and reopen it. Keep the typed host address separate from this guide page; this website's guide is not itself the exploit host.",
+      "videoSeconds":268,
+      "links":[{"url":"https://gamerhack.github.io/g2all/","label":"Open GamerHack host"},{"url":"https://raw13g.github.io/","label":"Alternative host from video"}]
+    },
+    {
+      "title":"Wait for GoldHEN and confirm success",
+      "text":"After reopening the cached host, let its compatible jailbreak chain finish. Confirm the GoldHEN notification and settings appear before installing homebrew. A memory error may require dismissing the message and retrying as shown; a failure or system crash may require a restart. Follow the host's current recovery prompts, and do not keep retriggering a host once GoldHEN is already active.",
+      "videoSeconds":320,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=320","label":"Watch loading and recovery"}]
+    },
+    {
+      "title":"Use the cached host offline",
+      "text":"Once caching has completed, the video demonstrates loading the bookmarked page with Connect to the Internet disabled. Keep the cached browser data if you want this offline route. Do not launch the exploit again merely to test the cache while your current GoldHEN session is already running. Reconnect only when a task needs network access.",
+      "videoSeconds":370,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=370","label":"Watch offline use"}]
+    },
+    {
+      "title":"Configure the GoldHEN features you need",
+      "text":"Open GoldHEN settings. Debug Settings contains Package Installer; Cheat Settings and Plugin Settings provide archive updates. The video also shows the FPS overlay, FTP and payload-server settings, local/USB payload loading and date/time synchronization. GoldHEN documents an update-blocking feature, but keep the preparation settings in place instead of treating it as a guarantee against every update or PSN connection.",
+      "videoSeconds":447,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=447","label":"Watch GoldHEN settings"},{"url":"https://github.com/GoldHEN/GoldHEN","label":"GoldHEN features and documentation"}]
+    },
+    {
+      "title":"Install compatible homebrew packages",
+      "text":"For the USB method shown, copy the PS4 PKG files to the root of an exFAT or FAT32 USB drive, connect it to the PS4, then open GoldHEN → Debug Settings → Package Installer. Select the intended homebrew package or the documented Install All option. Homebrew Store can then install more supported homebrew on the console. Archives and ELF/BIN payloads need their own loading or extraction steps; they are not USB PKG installs.",
+      "videoSeconds":600,
+      "links":[{"url":"/console/ps4/apps.html","label":"PS4 apps and packages"},{"url":"/console/ps4/downloads.html","label":"On-console downloads"},{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=600","label":"Watch package installation"}]
+    },
+    {
+      "title":"Finish patch or plugin setup only when needed",
+      "text":"The video demonstrates updating cheats, patches and plugins through GoldHEN, with PS4 Cheats Manager as a fallback if an archive update fails. Match any patch or plugin to the game's title ID and update. Enable the plugin loader and game-patch plugin only after installing the matching components; a downloaded mod file alone is not a completed installation.",
+      "videoSeconds":779,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=779","label":"Watch patches and plugins"},{"url":"/console/mods/ps4/","label":"Game-specific mod instructions"}]
+    },
+    {
+      "title":"Reload the jailbreak after a restart",
+      "text":"A full restart ends the active jailbreak session. Installed homebrew and downloaded files remain on storage, but their launch may be restricted until you reopen the bookmarked compatible host and GoldHEN loads again. The video also discusses Rest Mode; its behavior is specific to the exploit and payload build rather than a permanent CFW guarantee.",
+      "videoSeconds":932,
+      "links":[{"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA&t=932","label":"Watch restarting and reloading"}]
+    }
+  ],
+  "image": {
+    "path":"/assets/images/consoles/ps4-1352.jpg",
+    "source":"https://i.ytimg.com/vi/PHfqGgf-QjA/maxresdefault.jpg",
+    "alt":"MODDED WARFARE PS4 13.52 jailbreak tutorial thumbnail",
+    "width":1280,
+    "height":720,
+    "bytes":171644,
+    "sha256":"884434ddedec598130a494f5d97b33616e9b7b1199f37f813be29c6c249a2963",
+    "credit":"MODDED WARFARE / YouTube supplied tutorial thumbnail"
+  },
+  "sources": [
+    {"url":"https://www.youtube.com/watch?v=PHfqGgf-QjA","supports":"Primary supplied tutorial, official description, chapter times and full English auto-generated captions."},
+    {"url":"https://github.com/GamerHack/GamerHack.github.io","supports":"Primary host project, firmware selection and offline-cache workflow."},
+    {"url":"https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/main/g2all/index.html","supports":"Exact firmware dispatch ranges, unsupported-firmware handling and currently advertised GoldHEN 2.4b18.12 build."},
+    {"url":"https://github.com/raw13g/raw13g.github.io","supports":"Alternative host linked by the video and its AppCache-based host files."},
+    {"url":"https://github.com/GoldHEN/GoldHEN","supports":"Official feature documentation for package installation, FTP/BinLoader, update blocking and plugin support; does not establish that the site's archived GoldHEN 2.3 supports 13.52."},
+    {"url":"https://github.com/bucanero/PS4CheatsManager","supports":"Cheats, patches and plugin management mentioned in the tutorial; optional project reference, not a new ready-build download entry."}
+  ],
+  "downloadDecision":"No new ready-tool download is required for the browser-host guide. Reuse already archived PS4 app packages and link to existing app/download pages. Hosted exploit code and payloads were read as source only, not executed or repackaged."
+}

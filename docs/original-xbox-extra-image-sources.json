@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-11-02T19:12:23.496Z",
+  "records": [
+    {
+      "id": "halo-combat-evolved",
+      "image": "/assets/images/original-xbox-more/halo-combat-evolved-xlink.png",
+      "sourcePageUrl": "https://www.teamxlink.co.uk/wiki/Halo:_Combat_Evolved_(Xbox)",
+      "imageSourceUrl": "https://cdn.teamxlink.co.uk/media/wiki/games/xbox_halo_combat_evolved_title.png",
+      "bytes": 381514,
+      "sha256": "11c63f74b8ff57e3ef9e3cee457bd35e0bd00d04aae827fc8a6a6fa3246958c3",
+      "kind": "Original Xbox game title artwork from Team XLink game page",
+      "compatibilityNote": "Artwork only; does not imply Xbox Live or Insignia support.",
+      "visuallyVerified": true,
+      "verification": "Original Halo Campaign/Multiplayer/Settings title screen clearly visible; XLink watermark preserved.",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": "brute-force",
+      "image": "/assets/images/original-xbox-more/brute-force-xlink.png",
+      "sourcePageUrl": "https://www.teamxlink.co.uk/wiki/Brute_Force_(Xbox)",
+      "imageSourceUrl": "https://cdn.teamxlink.co.uk/media/wiki/games/xbox_brute_force_title.png",
+      "bytes": 251154,
+      "sha256": "8bcf67abac760a3fec533fcb37b07f0c9d3e941d589f53fc0b89098a7d28c3d8",
+      "kind": "Original Xbox game title artwork from Team XLink game page",
+      "compatibilityNote": "Artwork only; does not imply Xbox Live or Insignia support.",
+      "visuallyVerified": true,
+      "verification": "Brute Force original Xbox title screen and 2003 Microsoft copyright visible; XLink watermark preserved.",
+      "width": 720,
+      "height": 480
+    },
+    {
+      "id": "timesplitters-2",
+      "image": "/assets/images/original-xbox-more/timesplitters-2-xlink.webp",
+      "sourcePageUrl": "https://www.teamxlink.co.uk/wiki/TimeSplitters_2_(Xbox)",
+      "imageSourceUrl": "https://cdn.teamxlink.co.uk/media/games/106/xbox_timesplitters-2_title.webp",
+      "bytes": 828872,
+      "sha256": "7de273286bac871c33002480fa0a270c8c9def8a6bfa1f56d0d0e56d1a60288f",
+      "kind": "Original Xbox game title artwork from Team XLink game page",
+      "compatibilityNote": "Artwork only; does not imply Xbox Live or Insignia support.",
+      "visuallyVerified": true,
+      "verification": "Original Xbox NTSC TimeSplitters2 retail cover and game title clearly visible.",
+      "width": 1533,
+      "height": 2153
+    },
+    {
+      "id": "nevolutionx-project-background",
+      "image": "/assets/images/original-xbox-more/nevolutionx-project-background.png",
+      "sourcePageUrl": "https://github.com/dracc/NevolutionX",
+      "imageSourceUrl": "https://raw.githubusercontent.com/dracc/NevolutionX/dd90919765d3bd9565177cb92554214a4e64b15a/Resources/480.png",
+      "revision": "dd90919765d3bd9565177cb92554214a4e64b15a",
+      "bytes": 545992,
+      "sha256": "c75b120c4e303e7281a73f8ecd09b5e5fdf9f7464bbcac8d30177f4eda4c744e",
+      "kind": "Official dashboard project background asset; not a runtime screenshot",
+      "visuallyVerified": true,
+      "verification": "Official resource is only a landscape background (field and sky), not a dashboard screenshot; do not render as a preview.",
+      "recommendedForCard": false,
+      "width": 720,
+      "height": 480
+    }
+  ],
+  "mapping": {
+    "Halo: Combat Evolved": "/assets/images/original-xbox-more/halo-combat-evolved-xlink.png",
+    "Brute Force": "/assets/images/original-xbox-more/brute-force-xlink.png",
+    "TimeSplitters 2": "/assets/images/original-xbox-more/timesplitters-2-xlink.webp"
+  },
+  "unavailable": [
+    {
+      "title": "NevolutionX",
+      "reason": "README has no screenshot; only official PNG resources are plain landscape backgrounds. Downloaded480.png inspected and excluded as a dashboard preview. Use accurately labelled original Xbox platform artwork."
+    },
+    {
+      "title": "SDLPoPX",
+      "reason": "Xbox port repository contains sprite/game-data images, but no readily available native Xbox runtime preview in README/tree. Existing upstream SDLPoP game artwork may be used with a game-artwork label, without claiming an Xbox screenshot."
+    }
+  ],
+  "summary": {
+    "usableGameImages": 3,
+    "rejectedDashboardBackgrounds": 1,
+    "nativeRuntimePreviewsUnavailable": 2,
+    "newBinaryDownloads": 0
+  }
+}

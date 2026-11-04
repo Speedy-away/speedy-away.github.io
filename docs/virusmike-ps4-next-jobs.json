@@ -1,0 +1,62 @@
+{
+  "reviewed": "2026-11-02",
+  "sourceScope": "Exact original mod archive linked by VirusMike Google Sites; distinct from independently sourced GoldHEN cheat JSONs.",
+  "jobs": [
+    {
+      "id": "virusmike-bo3-aio-v2",
+      "title": "VirusMike BO3 GSC Injector & Mods AIO Pack V2",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Menu packs"
+      ],
+      "project": "VirusMike BO3 AIO Pack",
+      "version": "V2-BO3-01.33",
+      "url": "https://www.mediafire.com/file/68p6hs8zx9fmx1a/GSC_Injector_%2526_GSC_Mods_AIO_Pack_By_VirusMike_V2.rar/file",
+      "sourceUrls": [
+        "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/call-of-duty-black-ops-iii"
+      ],
+      "importPath": "docs/tmp/virusmike-ps4-next/GSC_Injector_GSC_Mods_AIO_Pack_By_VirusMike_V2.rar",
+      "filename": "GSC Injector & GSC Mods AIO Pack By VirusMike V2.rar",
+      "expectedBytes": 973715,
+      "expectedSha256": "411bd9591e4ace83cee3b54210c079d5e0675f0cb7edd57eb0caca1f8f028c65",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": true,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html",
+        "console/ps4/downloads.html"
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "virusmike-bo3-cjhouse",
+      "title": "CJ House custom zombie map",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/call-of-duty-black-ops-iii",
+      "source": "https://www.mediafire.com/file/rbwfnw29u46mkdh/zm_cjhouse.rar/file",
+      "status": "incomplete-transfer",
+      "declaredSize": "428.01 MB on MediaFire",
+      "declaredBytes": 448796338,
+      "partialPath": "docs/tmp/virusmike-ps4-next/zm_cjhouse-1793607730048.rar",
+      "partialBytes": 312508416,
+      "completeSha256": null,
+      "reason": "MediaFire page HTTP 200; a transfer bounded to 512 MiB and 180 seconds timed out after receiving 312508416 of 448796338 bytes. Partial bytes remain preserved; no complete or ready download is claimed.",
+      "requirements": "The page lists BO3 01.33 with CUSA03004/CUSA02290/CUSA02624 and separate custom-map injector/AIO downloads. The CJ House archive was not fully retrieved or inspected; do not treat it as a complete install."
+    },
+    {
+      "id": "virusmike-chronoss-cheats-pack-v2",
+      "title": "GoldHEN Cheats Pack PKG by Chronoss v2",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps4-all-you-need/ps4-pkg-apps",
+      "source": "https://www.mediafire.com/file/nlisl76s0emamo2/GoldHEN_Cheats_Pack_PKG_by_Chronoss_v2.rar/file",
+      "alternativeSource": "https://mega.nz/file/sLwTFYaQ#MDu9UzcoGM197jhpj9DkLJt2dTXz68pVXqSCikhXnZo",
+      "status": "unavailable",
+      "bytes": null,
+      "sha256": null,
+      "reason": "Source MediaFire page returned HTTP 404. The public MEGA alternative returned ETOOMANY (-6), reporting too many concurrent IP addresses, during bounded metadata lookup. No PKG, title ID, game list or ready build has been verified."
+    }
+  ]
+}

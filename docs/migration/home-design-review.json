@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-03T19:28:26.851Z",
+  "mode": "Redesign preserve",
+  "before": {
+    "theme": "deep green and mint, sharp edges, sans-serif",
+    "layout": "text-only PS4/PS5 panels",
+    "routes": "unchanged"
+  },
+  "designRead": "Gaming host homepage with existing dark green styling and console photography as the primary visual.",
+  "dials": {
+    "DESIGN_VARIANCE": 5,
+    "MOTION_INTENSITY": 3,
+    "VISUAL_DENSITY": 4
+  },
+  "foundation": "Native HTML/CSS, no new framework or external runtime dependency",
+  "after": {
+    "consoleArtwork": "full original1672x941frames with object-fit contain",
+    "resourceImages": [
+      "./assets/images/logo.png",
+      "./assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "./assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "./assets/images/exploit-hosts/ps4-KaroIMG.png",
+      "./assets/images/gta52.png",
+      "./assets/images/rdr2.png"
+    ],
+    "imageCount": 6,
+    "heroSubtextWords": 12,
+    "mainSiteLink": "https://whatwhatboy.com/",
+    "responsiveBreakpoints": [
+      900,
+      640
+    ],
+    "reducedMotion": true,
+    "preservedRoutes": true
+  },
+  "contrast": [
+    {
+      "text": "#adbbb2",
+      "bg": "#101513",
+      "ratio": 9.25
+    },
+    {
+      "text": "#b1dfbf",
+      "bg": "#151e19",
+      "ratio": 11.51
+    },
+    {
+      "text": "#e7ede9",
+      "bg": "#151e19",
+      "ratio": 14.36
+    }
+  ],
+  "browserQA": "Unavailable: local browser use disabled in Work settings. No alternative browser automation was used.",
+  "nativeCodeExecuted": false
+}

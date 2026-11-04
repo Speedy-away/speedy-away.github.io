@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T07:11:02.627Z",
+  "scope": "Newer GTA V menu choices for PS4 game updates1.56/1.57 and later, native PS5 GTA V, and newer RDR2 menu delivery. Primary-source review only; no payloads executed.",
+  "decision": "No newly verified supported standalone GTA V menu BIN/ELF imported. Modern PS4 plugin downloads should be prioritized; legacy standalone payloads should remain compatibility-specific.",
+  "sources": [
+    {
+      "url": "https://github.com/GronedWaffel/gta-v-ps5-menu/releases/download/v1.1.0/GTA-V.elf",
+      "httpStatus": 404
+    },
+    {
+      "url": "https://github.com/GronedWaffel/gta-v-ps5-menu/releases/expanded_assets/v1.1.0",
+      "httpStatus": 200,
+      "textBytes": 12592,
+      "sha256": "d70dc22cdb4915df26d4851436edd4a53cda6d4f1afafb346a2f46376f020aed",
+      "publishedReleaseAssetLinks": [
+        "https://github.com/GronedWaffel/gta-v-ps5-menu/releases/download/v1.1.0/GTA-V-1.1.0-win-x64.zip",
+        "https://github.com/GronedWaffel/gta-v-ps5-menu/releases/download/v1.1.0/gta-v-ps5-menu-SHA256SUMS.txt"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GronedWaffel/gta-v-ps5-menu/v1.1.0/BUILDING.md",
+      "httpStatus": 200,
+      "textBytes": 1722,
+      "sha256": "bad5895d819165cd7db2c6e8074bb47c8219aa1cbdd5206b9e2f8152f969d449"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GronedWaffel/gta-v-ps5-menu/v1.1.0/README.md",
+      "httpStatus": 200,
+      "textBytes": 4693,
+      "sha256": "1affb67490865ae032e669cff21c25f206863e3e7995661d32d31e7b48625b3d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GronedWaffel/TacHen/main/README.md",
+      "httpStatus": 200,
+      "textBytes": 7132,
+      "sha256": "1fa5fb6286ac8fc597cc9529e2a307c74ec6e140f1f73bbf7b33ab797d16970e"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "gronedwaffel-gta-v-ps5-menu-v1-1-0",
+      "platform": "ps5-native",
+      "menuVersion": "1.1.0",
+      "releaseDate": "2026-10-05",
+      "status": "unavailable-supported-elf",
+      "requestedAssetURL": "https://github.com/GronedWaffel/gta-v-ps5-menu/releases/download/v1.1.0/GTA-V.elf",
+      "gameBuilds": [
+        {
+          "titleId": "PPSA04263",
+          "version": "01.000.000"
+        },
+        {
+          "titleId": "PPSA04264",
+          "version": "01.010.002"
+        }
+      ],
+      "firmwares": [
+        "11.00",
+        "11.20",
+        "11.60",
+        "12.00",
+        "12.02",
+        "12.20",
+        "12.40",
+        "12.60",
+        "12.70",
+        "13.00",
+        "13.20",
+        "13.40",
+        "13.42",
+        "13.60"
+      ],
+      "findings": [
+        "Release description refers to a standalone GTA-V.elf and its checksum file lists one, but the actual release assets exclude that ELF and the direct URL returns404.",
+        "Tagged BUILDING.md describes unresolved model-streaming/clothing-preview regressions in experimental ELF source and explicitly says not to distribute its output as the supported build.",
+        "The supported published delivery is the Windows installer using PS5Debug-NG1.3.2, not a ready console-host ELF. No Windows package was added to console downloads.",
+        "Main README describes trainer1.1.1, while the inspected latest published release is1.1.0; trainer release and game update versions are separate.",
+        "Only active Story Mode and matching executable fingerprints are allowed; other game builds and GTA Online are refused. Firmware targets do not establish per-feature hardware validation."
+      ],
+      "publication": "excluded-from-console-run-actions"
+    },
+    {
+      "id": "goldqueef-gta-v-1-47-1-67",
+      "platform": "ps4",
+      "status": "unverified-primary-source",
+      "findings": [
+        "The located1.47/1.67 lead describes a GoldHEN PRX plugin, not a standalone BIN/ELF.",
+        "A primary-author release with verifiable newer executable and loader mapping was not located in this review.",
+        "No new download or run action added."
+      ],
+      "publication": "not-imported"
+    },
+    {
+      "id": "expulsion-v7-gta-v-1-57",
+      "platform": "ps4",
+      "status": "already-ready-plugin",
+      "findings": [
+        "Existing preserved V7 archive/extracted files contain LushModz-Expulsion-1.57.prx and supporting data/Lua files.",
+        "A PRX plugin requires plugin installation and matching configuration. It must not be renamed or sent as a standalone BIN/ELF.",
+        "Modern plugin frontpage integration is handled by the console-plugin task."
+      ],
+      "publication": "use-existing-reviewed-plugin-files"
+    },
+    {
+      "id": "tachen-havana-rdr2-1-32",
+      "platform": "ps5-running-ps4-game",
+      "status": "source-reported-beta-bridge",
+      "sourceURL": "https://raw.githubusercontent.com/GronedWaffel/TacHen/main/README.md",
+      "menuVersion": "Havana1.2",
+      "gameVersion": "1.32",
+      "reportedFirmware": "13.42",
+      "format": "SPRX plugin through TacHen Beta3 compatibility bridge",
+      "findings": [
+        "TacHen author README identifies official Havana1.2 rdr3Payload_132.sprx as the initially recognized GoldHEN plugin and reports a community test on PS5firmware13.42 with RDR2game1.32.",
+        "This is the PS4 RDR2 game running on PS5, not a native PS5 game menu or a standalone menu ELF.",
+        "Other plugins and broad additional firmware profiles require separate validation; no generic support claim or automatic Send action is established."
+      ],
+      "publication": "optional-beta-source-reference-only"
+    }
+  ],
+  "nextSteps": [
+    "Prioritize ready PS4 GTA V1.56/1.57 plugin downloads and exact installer requirements.",
+    "Retain older standalone menu versions under a legacy/older-game filter rather than removing files.",
+    "Add native Run only after a supported public ready ELF/BIN and exact loader route can be verified."
+  ]
+}

@@ -1,0 +1,702 @@
+{
+  "verifiedAt": "2026-11-02T07:54:19.051Z",
+  "method": "Official project README files, rendered release pages and their linked expanded-assets fragments. REST releases/latest was rate-limited (403); a 403 is not classified as absence. No downloaded executable was run.",
+  "repositories": [
+    {
+      "repo": "PCSX2/pcsx2",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/PCSX2/pcsx2/HEAD/README.md",
+        "status": 200,
+        "sha256": "739358ce872c24806fbd74445a3ad633894495e05677c86aed753760a0a4a80c"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/PCSX2/pcsx2/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "PCSX2/pcsx2",
+        "url": "https://github.com/PCSX2/pcsx2/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/PCSX2/pcsx2/releases/tag/v2.8.2",
+        "tag": "v2.8.2",
+        "fragment": "https://github.com/PCSX2/pcsx2/releases/expanded_assets/v2.8.2",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-linux-appimage-x64-Qt.AppImage",
+          "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-linux-flatpak-x64-Qt.flatpak",
+          "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-macos-Qt.tar.xz",
+          "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-windows-x64-installer.exe",
+          "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-windows-x64-Qt-symbols.7z",
+          "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-windows-x64-Qt.7z"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "RPCS3/rpcs3",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/RPCS3/rpcs3/HEAD/README.md",
+        "status": 200,
+        "sha256": "a074616f81441f36d6a06d4ce30239bd8a6d01123eec9ebe74e8f7e2a9b7e526"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/RPCS3/rpcs3/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "RPCS3/rpcs3",
+        "url": "https://github.com/RPCS3/rpcs3/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/RPCS3/rpcs3/releases/tag/v0.0.43",
+        "tag": "v0.0.43",
+        "fragment": "https://github.com/RPCS3/rpcs3/releases/expanded_assets/v0.0.43",
+        "fragmentStatus": 200,
+        "assets": [],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "RPCS3/rpcs3-binaries-win",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/RPCS3/rpcs3-binaries-win/HEAD/README.md",
+        "status": 200,
+        "sha256": "a77ab4ba2e35ec00723ed7a365aca7c55d949c38264fda09c7664a8ef1ce5147"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/RPCS3/rpcs3-binaries-win/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "RPCS3/rpcs3-binaries-win",
+        "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "tag": "build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "fragment": "https://github.com/RPCS3/rpcs3-binaries-win/releases/expanded_assets/build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-ad468a13f6374f364467a9e4988e95938c37bb42/rpcs3-v0.0.43-20551-ad468a13_win64_msvc.7z",
+          "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-ad468a13f6374f364467a9e4988e95938c37bb42/rpcs3-v0.0.43-20551-ad468a13_win64_msvc.7z.sha256"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "RPCS3/rpcs3-binaries-linux",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/RPCS3/rpcs3-binaries-linux/HEAD/README.md",
+        "status": 200,
+        "sha256": "26caad50e78ee39aefdc8fbb6064dcec6d9d6fd8b6185699f049bc4e0417f1d6"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/RPCS3/rpcs3-binaries-linux/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "RPCS3/rpcs3-binaries-linux",
+        "url": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/tag/build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "tag": "build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "fragment": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/expanded_assets/build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-ad468a13f6374f364467a9e4988e95938c37bb42/rpcs3-v0.0.43-20551-ad468a13_linux64.AppImage"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "RPCS3/rpcs3-binaries-mac",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/RPCS3/rpcs3-binaries-mac/HEAD/README.md",
+        "status": 200,
+        "sha256": "21ab836e74ff95c8357a310a90227821f4d7dca8ce5b6805933e8469df753e94"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/RPCS3/rpcs3-binaries-mac/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "RPCS3/rpcs3-binaries-mac",
+        "url": "https://github.com/RPCS3/rpcs3-binaries-mac/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/RPCS3/rpcs3-binaries-mac/releases/tag/build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "tag": "build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "fragment": "https://github.com/RPCS3/rpcs3-binaries-mac/releases/expanded_assets/build-ad468a13f6374f364467a9e4988e95938c37bb42",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/RPCS3/rpcs3-binaries-mac/releases/download/build-ad468a13f6374f364467a9e4988e95938c37bb42/rpcs3-v0.0.43-20551-ad468a13_macos.7z"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "jpd002/Play-",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/jpd002/Play-/HEAD/README.md",
+        "status": 200,
+        "sha256": "5e36456a3de21f56f317e4111f3fc8ac72c10c03e5ec820474c03e6d2533ff79"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/jpd002/Play-/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "jpd002/Play-",
+        "url": "https://github.com/jpd002/Play-/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/jpd002/Play-/releases",
+        "assets": [],
+        "noReleases": true
+      }
+    },
+    {
+      "repo": "stenzek/duckstation",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/stenzek/duckstation/HEAD/README.md",
+        "status": 200,
+        "sha256": "52c0c0c65e3bd94c46cd60d827b2e2b5439aeb910255773f6af0d9ca1da34ee4"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/stenzek/duckstation/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "stenzek/duckstation",
+        "url": "https://github.com/stenzek/duckstation/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/stenzek/duckstation/releases/tag/latest",
+        "tag": "latest",
+        "fragment": "https://github.com/stenzek/duckstation/releases/expanded_assets/latest",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-arm64.AppImage",
+          "https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-armhf.AppImage",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-mac-release.zip",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-installer.exe",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-release-symbols.7z",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-arm64-release.zip",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-installer.exe",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release-symbols.7z",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-sse2-installer.exe",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-sse2-release-symbols.7z",
+          "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-sse2-release.zip",
+          "https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-x64-SSE2.AppImage",
+          "https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-x64.AppImage"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "cemu-project/Cemu",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/cemu-project/Cemu/HEAD/README.md",
+        "status": 200,
+        "sha256": "f1f658fb8c08a52838f06d5308ecadc1bb22d1eeb20265749c373edb01c669f5"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/cemu-project/Cemu/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "cemu-project/Cemu",
+        "url": "https://github.com/cemu-project/Cemu/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/cemu-project/Cemu/releases/tag/v2.6",
+        "tag": "v2.6",
+        "fragment": "https://github.com/cemu-project/Cemu/releases/expanded_assets/v2.6",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-macos-12-x64.dmg",
+          "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-ubuntu-22.04-x64.zip",
+          "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip",
+          "https://github.com/cemu-project/Cemu/releases/download/v2.6/Cemu-2.6-x86_64.AppImage"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "xemu-project/xemu",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/xemu-project/xemu/HEAD/README.md",
+        "status": 200,
+        "sha256": "c33d35dfe26513b69657f07c718981caa9b0994a29fe4300aaba9546b9631245"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/xemu-project/xemu/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "xemu-project/xemu",
+        "url": "https://github.com/xemu-project/xemu/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/xemu-project/xemu/releases/tag/v0.8.139",
+        "tag": "v0.8.139",
+        "fragment": "https://github.com/xemu-project/xemu/releases/expanded_assets/v0.8.139",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-aarch64.AppImage",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-dbg-aarch64.AppImage",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-dbg-macos-universal-unsigned.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-dbg-windows-arm64-pdb.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-dbg-windows-arm64.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-dbg-windows-x86_64-pdb.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-dbg-windows-x86_64.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-dbg-x86_64.AppImage",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-macos-universal-unsigned.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-macos-universal.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-arm64-pdb.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-arm64.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-x86_64-pdb.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-x86_64.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-x86_64.AppImage",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139.tar.zst",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-win-aarch64-release.zip",
+          "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-win-x86_64-release.zip"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "xenia-project/xenia",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/xenia-project/xenia/HEAD/README.md",
+        "status": 200,
+        "sha256": "05e5df84f1d7765e03dbf6fc3309a419c84c2cebfedec48149d11950dcd0d3c6"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/xenia-project/xenia/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "xenia-project/xenia",
+        "url": "https://github.com/xenia-project/xenia/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/xenia-project/xenia/releases",
+        "assets": [],
+        "noReleases": true
+      }
+    },
+    {
+      "repo": "xenia-project/release-builds-windows",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/xenia-project/release-builds-windows/HEAD/README.md",
+        "status": 200,
+        "sha256": "46aff0cc3676d314e98c40f2c8aea0746fd1b422c9d6b9e3ab9ff0999ed7e90c"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/xenia-project/release-builds-windows/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "xenia-project/release-builds-windows",
+        "url": "https://github.com/xenia-project/release-builds-windows/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/xenia-project/release-builds-windows/releases/tag/v1.0.2844-master",
+        "tag": "v1.0.2844-master",
+        "fragment": "https://github.com/xenia-project/release-builds-windows/releases/expanded_assets/v1.0.2844-master",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2844-master/xenia-cpu-ppc-test.log",
+          "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2844-master/xenia-vfs-dump_master.zip",
+          "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2844-master/xenia_master.zip"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "xenia-canary/xenia-canary",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/xenia-canary/xenia-canary/HEAD/README.md",
+        "status": 200,
+        "sha256": "e3dff3dc9bedec427ccc6eb79b6994af2dc13a355099cba09ceab9ab2f287940"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/xenia-canary/xenia-canary/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "xenia-canary/xenia-canary",
+        "url": "https://github.com/xenia-canary/xenia-canary/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/xenia-canary/xenia-canary/releases/tag/96ce1ac",
+        "tag": "96ce1ac",
+        "fragment": "https://github.com/xenia-canary/xenia-canary/releases/expanded_assets/96ce1ac",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/xenia-canary/xenia-canary/releases/download/96ce1ac/xenia_canary_linux.AppImage",
+          "https://github.com/xenia-canary/xenia-canary/releases/download/96ce1ac/xenia_canary_windows.7z"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "Cxbx-Reloaded/Cxbx-Reloaded",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/Cxbx-Reloaded/Cxbx-Reloaded/HEAD/README.md",
+        "status": 200,
+        "sha256": "e5e030b279266c3b482c4ca80037f6268b5972411f70aeb8749c56b84af863f5"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/Cxbx-Reloaded/Cxbx-Reloaded/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "Cxbx-Reloaded/Cxbx-Reloaded",
+        "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases",
+        "fragment": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/expanded_assets/CI-585c49a",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-585c49a/CxbxReloaded-Release.zip"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "snes9xgit/snes9x",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/snes9xgit/snes9x/HEAD/README.md",
+        "status": 200,
+        "sha256": "77d98431a36509ac7eef1d962e3315ce8e84c7d66ae6927f0fdb4e039e569483"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/snes9xgit/snes9x/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "snes9xgit/snes9x",
+        "url": "https://github.com/snes9xgit/snes9x/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/snes9xgit/snes9x/releases/tag/1.63",
+        "tag": "1.63",
+        "fragment": "https://github.com/snes9xgit/snes9x/releases/expanded_assets/1.63",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-libretro-x64.zip",
+          "https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-libretro.zip",
+          "https://github.com/snes9xgit/snes9x/releases/download/1.63/Snes9x-1.63-Mac.zip",
+          "https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-win32-x64.zip",
+          "https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-win32.zip",
+          "https://github.com/snes9xgit/snes9x/releases/download/1.63/Snes9x-1.63-x86_64.AppImage"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "TASEmulators/desmume",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/TASEmulators/desmume/HEAD/README.md",
+        "status": 200,
+        "sha256": "fdb40ed65d88ca21d62fe127be217dfab444c8d42570a5b67cfa8c8d5e8786a6"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/TASEmulators/desmume/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "TASEmulators/desmume",
+        "url": "https://github.com/TASEmulators/desmume/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/TASEmulators/desmume/releases/tag/release_0_9_13",
+        "tag": "release_0_9_13",
+        "fragment": "https://github.com/TASEmulators/desmume/releases/expanded_assets/release_0_9_13",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-macOS.dmg",
+          "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-OpenEmu.dmg",
+          "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-win64.zip",
+          "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13.tar.xz"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "mupen64plus/mupen64plus-core",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/mupen64plus/mupen64plus-core/HEAD/README.md",
+        "status": 200,
+        "sha256": "0465fcbe9833ed368c04eb603d99da233090084c07bf9f8e6c37c1ca636ec366"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/mupen64plus/mupen64plus-core/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "mupen64plus/mupen64plus-core",
+        "url": "https://github.com/mupen64plus/mupen64plus-core/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/mupen64plus/mupen64plus-core/releases/tag/2.6.0",
+        "tag": "2.6.0",
+        "fragment": "https://github.com/mupen64plus/mupen64plus-core/releases/expanded_assets/2.6.0",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-bundle-linux64-2.6.0.tar.gz",
+          "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-bundle-linux64-ubuntu22-2.6.0.tar.gz",
+          "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-bundle-osx-2.6.0.zip",
+          "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-bundle-src-2.6.0.tar.gz",
+          "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-bundle-win64-2.6.0.zip",
+          "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-core-src-2.6.0.tar.gz",
+          "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-core-src-2.6.0.tar.gz.asc"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "project64/project64",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/project64/project64/HEAD/README.md",
+        "status": 200,
+        "sha256": "4044e711cea590417eba9aefd79c072420d06081740c845a9de7eeb1dc4ae678"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/project64/project64/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "project64/project64",
+        "url": "https://github.com/project64/project64/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/project64/project64/releases",
+        "assets": [],
+        "noReleases": true
+      }
+    },
+    {
+      "repo": "libretro/RetroArch",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/libretro/RetroArch/HEAD/README.md",
+        "status": 200,
+        "sha256": "d4d54b459f3ba449a4fbbc20937537032d804fca00f8c4b210865ffa697a2548"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/libretro/RetroArch/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "libretro/RetroArch",
+        "url": "https://github.com/libretro/RetroArch/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/libretro/RetroArch/releases/tag/v1.22.2",
+        "tag": "v1.22.2",
+        "fragment": "https://github.com/libretro/RetroArch/releases/expanded_assets/v1.22.2",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/libretro/RetroArch/releases/download/v1.22.2/retroarch-sourceonly-1.22.2.tar.xz"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "0x2593/Eden-NS2",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/0x2593/Eden-NS2/HEAD/README.md",
+        "status": 200,
+        "sha256": "bc44b61d88331fc6f7d33645a2bccf504aa8a3b1ed3d148da3f7ab8ae1ae6a0d"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/0x2593/Eden-NS2/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "0x2593/Eden-NS2",
+        "url": "https://github.com/0x2593/Eden-NS2/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/0x2593/Eden-NS2/releases",
+        "assets": [],
+        "noReleases": true
+      }
+    },
+    {
+      "repo": "sharpemu/sharpemu",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/sharpemu/sharpemu/HEAD/README.md",
+        "status": 200,
+        "sha256": "40b345dbdd07e8f9c6e78e86e24ab1aefacaf2b603d4e197c17d9ba085f37cfe"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/sharpemu/sharpemu/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "sharpemu/sharpemu",
+        "url": "https://github.com/sharpemu/sharpemu/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/sharpemu/sharpemu/releases/tag/v0.0.7-pulse",
+        "tag": "v0.0.7-pulse",
+        "fragment": "https://github.com/sharpemu/sharpemu/releases/expanded_assets/v0.0.7-pulse",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/sharpemu/sharpemu/releases/download/v0.0.7-pulse/sharpemu-0.0.7-pulse-linux-x64.tar.gz",
+          "https://github.com/sharpemu/sharpemu/releases/download/v0.0.7-pulse/sharpemu-0.0.7-pulse-win-x64.zip"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "KytyPS5/KytyPS5",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/KytyPS5/KytyPS5/HEAD/README.md",
+        "status": 200,
+        "sha256": "5ba8978d7c4e406b6b2f619a926daeea982448f110f8c93156276e710840e05c"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/KytyPS5/KytyPS5/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "KytyPS5/KytyPS5",
+        "url": "https://github.com/KytyPS5/KytyPS5/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-11-02-02b17af",
+        "tag": "KytyPS5-2026-11-02-02b17af",
+        "fragment": "https://github.com/KytyPS5/KytyPS5/releases/expanded_assets/KytyPS5-2026-11-02-02b17af",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-11-02-02b17af/KytyPS5-2026-11-02-02b17af-Linux-x86_64.tar.gz",
+          "https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-11-02-02b17af/KytyPS5-2026-11-02-02b17af-macOS-x86_64.zip",
+          "https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-11-02-02b17af/KytyPS5-2026-11-02-02b17af-Windows-x64.zip"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "shadps4-emu/shadPS4",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/shadps4-emu/shadPS4/HEAD/README.md",
+        "status": 200,
+        "sha256": "6b1150aeb8744fbac86a06ab5fd1658e0af6cf601a6bacdfb3a7d4d85d999ec6"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/shadps4-emu/shadPS4/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "shadps4-emu/shadPS4",
+        "url": "https://github.com/shadps4-emu/shadPS4/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/shadps4-emu/shadPS4/releases/tag/v.0.21.0",
+        "tag": "v.0.21.0",
+        "fragment": "https://github.com/shadps4-emu/shadPS4/releases/expanded_assets/v.0.21.0",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.21.0/shadps4-linux-sdl-0.21.0.zip",
+          "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.21.0/shadps4-macos-sdl-0.21.0.zip",
+          "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.21.0/shadps4-win64-sdl-0.21.0.zip"
+        ],
+        "noReleases": false
+      }
+    },
+    {
+      "repo": "azahar-emu/azahar",
+      "readme": {
+        "url": "https://raw.githubusercontent.com/azahar-emu/azahar/HEAD/README.md",
+        "status": 200,
+        "sha256": "9d325b7e75be361b51968a69da02b1f1f11d23eac6875a969d61e1afab045d7f"
+      },
+      "restRelease": {
+        "status": 403,
+        "url": "https://api.github.com/repos/azahar-emu/azahar/releases/latest",
+        "error": "API rate limit exceeded for 2.98.147.113. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+      },
+      "renderedRelease": {
+        "repo": "azahar-emu/azahar",
+        "url": "https://github.com/azahar-emu/azahar/releases/latest",
+        "status": 200,
+        "resolved": "https://github.com/azahar-emu/azahar/releases/tag/2126.2",
+        "tag": "2126.2",
+        "fragment": "https://github.com/azahar-emu/azahar/releases/expanded_assets/2126.2",
+        "fragmentStatus": 200,
+        "assets": [
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-android-googleplay-2126.2.aab",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-android-googleplay-2126.2.apk",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-android-vanilla-2126.2.aab",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-android-vanilla-2126.2.apk",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-libretro-android-arm64-v8a-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-libretro-ios-arm64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-libretro-linux-x86_64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-libretro-macos-arm64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-libretro-macos-x86_64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-libretro-tvos-arm64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-libretro-windows-x86_64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-macos-arm64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-macos-universal-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-macos-x86_64-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-room-arm64-2126.2.dockerimage",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-room-x86_64-2126.2.dockerimage",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-unified-source-2126.2.tar.xz",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-unified-source-2126.2.tar.xz.sha256sum",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-msvc-2126.2-installer.exe",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-msvc-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-msys2-2126.2-installer.exe",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-msys2-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-mxe-2126.2-installer.exe",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-mxe-2126.2.zip",
+          "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar.AppImage"
+        ],
+        "noReleases": false
+      }
+    }
+  ],
+  "otherPrimarySources": [
+    "https://dolphin-emu.org/download/",
+    "https://www.ppsspp.org/download/",
+    "https://www.epsxe.com/download.php",
+    "https://purei.org/downloads.php",
+    "https://mgba.io/downloads.html",
+    "https://www.pj64-emu.com/windows-downloads",
+    "https://xemu.app/docs/required-files/",
+    "https://www.mupen64plus.org/",
+    "https://pcsx2.net/docs/setup/bios/",
+    "https://docs.libretro.com/library/genesis_plus_gx/",
+    "https://www.lakka.tv/get/",
+    "https://www.recalbox.com/download/"
+  ],
+  "limits": [
+    "OS and compatibility claims are documented publisher claims, not independently tested execution results.",
+    "Eden NS2 has no release packages on its exact releases page; Linux instructions are explicitly untested; no macOS support is claimed.",
+    "Historical yuzu, Ryujinx and Citra references have no verified current download or support badges."
+  ],
+  "reviewAddendum": {
+    "checkedAt": "2026-11-02T08:27:38.640Z",
+    "sources": [
+      {
+        "url": "https://github.com/shadps4-emu/shadPS4/blob/v.0.21.0/README.md",
+        "finding": "Pinned release requires macOS26.0 or later on AppleSilicon, IntelMacs unsupported; QtLauncher recommended separately."
+      },
+      {
+        "url": "https://github.com/mupen64plus/mupen64plus-core/releases/tag/2.6.0",
+        "finding": "Release bundles include ui-console command-line frontend."
+      },
+      {
+        "url": "https://purei.org/downloads.php",
+        "finding": "Rendered selector JavaScript explicitly links Play stable0.70 Windowsx64 to ./downloads/play/stable/0.70/Play-x86-64.exe and commit0bd77c19."
+      }
+    ]
+  }
+}

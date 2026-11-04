@@ -1,0 +1,1562 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02T08:31:18.531Z",
+  "method": "Original complete store ZIPs pinned against captured metadata; ZIP CRCs and WUHB/PowerPC headers inspected without execution. Companion assets retained.",
+  "apps": [
+    {
+      "id": "AirAttack",
+      "title": "Air Attack",
+      "version": "1.0.1",
+      "checkedAt": "2026-11-02T08:22:01.075Z",
+      "status": "downloaded",
+      "package": {
+        "name": "AirAttack-sd-package.zip",
+        "bytes": 5143343,
+        "sha256": "3a3978352e236842fda10d92f2999cc6db324173d762ef9cabf619b8ef417f81",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/AirAttack.zip",
+        "version": "1.0.1",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/AirAttack/1.0.1/AirAttack-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\AirAttack\\Builds\\1.0.1\\AirAttack-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/AirAttack/AirAttack.wuhb"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 38,
+          "sha256": "e4b2dbb97af5239aa9ce10fa28290de407f96e8bf45469a26afa378b343c473c",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 708,
+          "sha256": "17438c3e46e026246a873a7eb248ec8adf9a3b40670a91fc94071280b7737a99",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/AirAttack/AirAttack.wuhb",
+          "bytes": 5173612,
+          "sha256": "a8892f2cd1b8b001bc042be93d0fff63e1514e5a6b8779adc4e04ff873c44956",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "BlockamokRemix",
+      "title": "Blockamok Remix",
+      "version": "1.2",
+      "checkedAt": "2026-11-02T08:22:34.583Z",
+      "status": "downloaded",
+      "package": {
+        "name": "BlockamokRemix-sd-package.zip",
+        "bytes": 5975961,
+        "sha256": "e17df7bb5c991a1504b1987dd37c28320100633ca66430eafd20e9a83eaa9fda",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/BlockamokRemix.zip",
+        "version": "1.2",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/BlockamokRemix/1.2/BlockamokRemix-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\blockamok\\Builds\\1.2\\BlockamokRemix-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/BlockamokRemix/BlockamokRemix.wuhb",
+        "wiiu/apps/BlockamokRemix/BlockamokRemix.rpx"
+      ],
+      "members": [
+        {
+          "path": "wiiu/apps/BlockamokRemix/BlockamokRemix.wuhb",
+          "bytes": 3012608,
+          "sha256": "00a99db25a5e71004b6136d3a3c51e0160540f36117af132254e2e9b224cd736",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/BlockamokRemix/icon.png",
+          "bytes": 27862,
+          "sha256": "c4861b40cf4cea0da8206c11162788b11a9506fc2f46e67e2f794b1aa72af195",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/BlockamokRemix/meta.xml",
+          "bytes": 568,
+          "sha256": "9fb28af56df11a8a6ec22ea8c06124b2be67cf58bdaa4d1ff3e56bcefba1e8ab",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/BlockamokRemix/BlockamokRemix.rpx",
+          "bytes": 2961715,
+          "sha256": "f38fb676c1195c5c8c3349f37763b39a8b3674fc70dc65d96944590c5d1965d8",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2998,
+          "sha256": "d9da3cfd1786f543bbd1a402785025c85a58f9e95f744dc79d65916f44c04b67",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 169,
+          "sha256": "cba0e680f053ba5033e517cfe21b47efb01b2511b0439f2652d66bd3eac5d4b6",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "Button-Break",
+      "title": "Button Break",
+      "version": "1.0.1",
+      "checkedAt": "2026-11-02T08:22:49.244Z",
+      "status": "downloaded",
+      "package": {
+        "name": "Button-Break-sd-package.zip",
+        "bytes": 344131,
+        "sha256": "534c6742f090cb907dab08ca56f4ee51582c916960446b763e493b758b0a6d08",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/Button-Break.zip",
+        "version": "1.0.1",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/Button-Break/1.0.1/Button-Break-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\Button Break\\Builds\\1.0.1\\Button-Break-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/Button-Break/Button_Break.wuhb"
+      ],
+      "members": [
+        {
+          "path": "wiiu/apps/Button-Break/Button_Break.wuhb",
+          "bytes": 349472,
+          "sha256": "5bf069842dd40999f03abad97e6ea44a6d5113dbdc2664a53e52bdd02877739c",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1237,
+          "sha256": "f2a6c94c266a9387219aae55040c897da09bafe02dc82e595429c6772c56981d",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 44,
+          "sha256": "7730dbe74b4480ba677628ecfc2a6e73f0f544003d288b3d767c8fbe51ca0146",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "Labyrinth",
+      "title": "Labyrinth",
+      "version": "1.0.2",
+      "checkedAt": "2026-11-02T08:22:54.335Z",
+      "status": "downloaded",
+      "package": {
+        "name": "Labyrinth-sd-package.zip",
+        "bytes": 2987648,
+        "sha256": "97f7146e061a29eb7189fb3ef2190c8c263a1b9cbe59a50044d2d082f64337b7",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/Labyrinth.zip",
+        "version": "1.0.2",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/Labyrinth/1.0.2/Labyrinth-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\Labyrinth\\Builds\\1.0.2\\Labyrinth-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/Labyrinth/Labyrinth.wuhb"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 38,
+          "sha256": "ca4ead81388f0a3ea35648b3213d1a56afe83bbffac9ba579a0f10e7501e2798",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 870,
+          "sha256": "0aaca6c5a7ae871358530b26e43a581177654ece9a81b33c623c729a30079633",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/Labyrinth/Labyrinth.wuhb",
+          "bytes": 2993424,
+          "sha256": "01507b051c63cecca24e69361173fcad8b6a5fbc08ef41e060dd3e9a4242c173",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "Othello",
+      "title": "Othello",
+      "version": "1.6.0",
+      "checkedAt": "2026-11-02T08:23:08.376Z",
+      "status": "downloaded",
+      "package": {
+        "name": "Othello-sd-package.zip",
+        "bytes": 1625888,
+        "sha256": "1fa0e5608d8b073f10fcca69e6faa4637db2208934ae472f37651af324a33401",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/Othello.zip",
+        "version": "1.6.0",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/Othello/1.6.0/Othello-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\Othello\\Builds\\1.6.0\\Othello-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/Othello/Othello.wuhb"
+      ],
+      "members": [
+        {
+          "path": "wiiu/apps/Othello/Othello.wuhb",
+          "bytes": 1632760,
+          "sha256": "00c2c5ececbce4194bdd8da3b482d49987f1d41fb7658d5154bbac136e51c41e",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1204,
+          "sha256": "50a6146a35f06734b29e5a942d0f71f88b9f7b0aacab5bf3d6ec8c5b5063a6bd",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 34,
+          "sha256": "6701e0daecee0e2e30ed1a2ad8e3b35c08347f0f48da3ba34edb5044ee835512",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "TankTrap",
+      "title": "Tank Trap",
+      "version": "1.0",
+      "checkedAt": "2026-11-02T08:23:14.606Z",
+      "status": "downloaded",
+      "package": {
+        "name": "TankTrap-sd-package.zip",
+        "bytes": 4494223,
+        "sha256": "4b56d115157a00f5465bbb2eddf5fde6bf92ab064704bffe17670b579606f9f6",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/TankTrap.zip",
+        "version": "1.0",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/TankTrap/1.0/TankTrap-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\UntitledSandGame\\Builds\\1.0\\TankTrap-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/TankTrap/sand.wuhb"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 32,
+          "sha256": "34ca7fbbdba28b8c56bb550a2a1c81d207a8ac0c90517d31e1a562774a4f4c9e",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2324,
+          "sha256": "8509b3a76250f6df4e7f0c27b05860da2327368e3906e1679e2126af825e8f04",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/TankTrap/sand.wuhb",
+          "bytes": 9054548,
+          "sha256": "8094389cef23d509d30a8ca16b6cd0c91401dd54ffbb485d38699b50159eb22a",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "coldstart-wiiu",
+      "title": "COLD START",
+      "version": "3.6.0",
+      "checkedAt": "2026-11-02T08:23:28.953Z",
+      "status": "downloaded",
+      "package": {
+        "name": "coldstart-wiiu-sd-package.zip",
+        "bytes": 53648381,
+        "sha256": "de0541971d00fd32e6d8c081918ceb5346c3f8c5bda980b13c02c9ac5b8eaf75",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/coldstart-wiiu.zip",
+        "version": "3.6.0",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/coldstart-wiiu/3.6.0/coldstart-wiiu-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\cold start nx\\Builds\\3.6.0\\coldstart-wiiu-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/ColdStart/cold_start-wiiu-3.3.0.wuhb"
+      ],
+      "members": [
+        {
+          "path": "wiiu/apps/ColdStart/cold_start-wiiu-3.3.0.wuhb",
+          "bytes": 54522256,
+          "sha256": "b89266187267a8f16068930c2c497dd94ef308d098aafcb8b1735381eff2082f",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 3539,
+          "sha256": "77c9fee3f7adc7728f311ae94de6275ff4008d94670bc2b11164f16f38d1cc1d",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 50,
+          "sha256": "f106d117521928ada9f6d0d70542f6b7d91dac191080fab8ce28d3ed5b905c05",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "CrispyDoomU",
+      "title": "Crispy Doom U",
+      "version": "1.1-graphics-fix",
+      "checkedAt": "2026-11-02T08:25:10.820Z",
+      "status": "downloaded",
+      "package": {
+        "name": "CrispyDoomU-sd-package.zip",
+        "bytes": 2588199,
+        "sha256": "689908a7d5b7878083187e7f33587e16bc84317204923938a2eac674b3949903",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/CrispyDoomU.zip",
+        "version": "1.1-graphics-fix",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/CrispyDoomU/1.1-graphics-fix/CrispyDoomU-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Game ports & interpreters\\crispy doom u aroma\\Builds\\1.1-graphics-fix\\CrispyDoomU-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/CrispyDoomU/crispy-doom-u.rpx",
+        "wiiu/apps/CrispyDoomU/crispy-doom-u.wuhb"
+      ],
+      "members": [
+        {
+          "path": "wiiu/apps/CrispyDoomU/crispy-doom-u.rpx",
+          "bytes": 1294411,
+          "sha256": "a32c24e6cf5db68dedbcd1e14be8905a82e3fc055de03ce25eb17d3884a2be42",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/CrispyDoomU/crispy-doom-u.wuhb",
+          "bytes": 1316192,
+          "sha256": "7dba7bfec00192cb33ddb6619905e864f262c331707cfc9b6ea00068c043a9f8",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 631,
+          "sha256": "6f182a52e47b6483b2ddc76f77776624c24ed56eeb123277b963111e62ad0160",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 87,
+          "sha256": "17e969a9efdf7763b4da01f815cc9f4d82080861769c4222ac2be867c0c009ee",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "EasyRPG",
+      "title": "EasyRPG",
+      "version": "0.8.1.1",
+      "checkedAt": "2026-11-02T08:25:18.419Z",
+      "status": "downloaded",
+      "package": {
+        "name": "EasyRPG-sd-package.zip",
+        "bytes": 6690779,
+        "sha256": "f49f7cab8446b3257729c7b898465b22b6c90c579ace93be64e2757fecae4ac3",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/EasyRPG.zip",
+        "version": "0.8.1.1",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/EasyRPG/0.8.1.1/EasyRPG-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Game ports & interpreters\\Player\\Builds\\0.8.1.1\\EasyRPG-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/EasyRPG/easyrpg-player-0.8.1.1-wiiu.wuhb"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 54,
+          "sha256": "d63d44b5bee13a5488bfd150d19a103c6c51e295b64b0afa489a9154258c66d1",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1390,
+          "sha256": "50731b0b7dcac62eb58110450c55d559ceceb7753288b0248415ee8a1bd55755",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/EasyRPG/easyrpg-player-0.8.1.1-wiiu.wuhb",
+          "bytes": 6758224,
+          "sha256": "e319c08ac86bb2d36602e88b17147e2916f585dfeea5b65868d5d1d6e7a4598f",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "MegaZeux",
+      "title": "MegaZeux",
+      "version": "2.93d",
+      "checkedAt": "2026-11-02T08:25:30.223Z",
+      "status": "downloaded",
+      "package": {
+        "name": "MegaZeux-sd-package.zip",
+        "bytes": 3210021,
+        "sha256": "333bcef82bb2a308ffc825b913dbd38a7075fb7cbec2ded4d3b8f1d6cbd91a21",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/MegaZeux.zip",
+        "version": "2.93d",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/MegaZeux/2.93d/MegaZeux-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Game ports & interpreters\\megazeux\\Builds\\2.93d\\MegaZeux-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/megazeux/megazeux.rpx"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 1226,
+          "sha256": "ab77b4e5e1fb70dd262e2c90267541bb5545aaa05db05c4e6ef98ae474d18bc3",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 805,
+          "sha256": "f497696e5657b33a81fd10fcbdfde99b1e859f9a0a396761bfdfea3cf89c9dd9",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CV_TECH.MOD",
+          "bytes": 59391,
+          "sha256": "0762fe849fe3fe276c3c420b7a676e44b8fe4da10649cd037606e5c95f44e642",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CV_TITLE.MOD",
+          "bytes": 104583,
+          "sha256": "2892bade880304e03d32505978205282c36778de1602c1c03912e4dc3ff3af27",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/LICENSE.3rd",
+          "bytes": 35105,
+          "sha256": "23309d3fdc44ed7e95df2d057b3fe5300c6f3ce153962964d1cc3ba80b083696",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/meta.xml",
+          "bytes": 808,
+          "sha256": "7288d6b3ea9f8af45cd9afef01c4ff2bd3b5c31e3f25cac8a1a04309f14f01d9",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/megazeux.rpx",
+          "bytes": 2024803,
+          "sha256": "d6219580c5493e670aae4fa6514dc16af36a9d8027088f16d91831bc8074e56c",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CV_BOSS.MOD",
+          "bytes": 52757,
+          "sha256": "adb2c499234890867e1b25fc5e30af83ffc2f94b4faffc2535feddde175c2812",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/LICENSE.Newlib",
+          "bytes": 47282,
+          "sha256": "4c9565127c1c0c934a17a7b1d16c330778a98a0a76143e9eaae6163b39c3278f",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/pad.config",
+          "bytes": 845,
+          "sha256": "a859e3f16742e95e634318a11f0115ad670199a615a4fc36c9632380d62a6e45",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CAVERNS.MZX",
+          "bytes": 207018,
+          "sha256": "7d513ffeb2a2d0bc5d8489b6b833c05ba657112433ab52d49c9c915d6c8edc70",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CV_MAGIC.MOD",
+          "bytes": 93737,
+          "sha256": "fd24faed5a24ff5ca38ab4aa5d1b88cf6ed580ca386c26a009abaacd38a1e561",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/LICENSE.MPL2",
+          "bytes": 17099,
+          "sha256": "cde215e5b42363eb28ca2462c4558ff4807b38f383c537624c31e44657ac58f4",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CV_BALON.MOD",
+          "bytes": 62287,
+          "sha256": "9842b962c508e4ffe4b5007a68e17fc3e8875e5eaecec89a7669724feca98713",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/LICENSE",
+          "bytes": 18330,
+          "sha256": "12f34a96938fa3624518ed2c6dfd644746626f12f9e7cdbd0bf067c44a7f0e8c",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CV_HEVEN.MOD",
+          "bytes": 100693,
+          "sha256": "a76a200cad7b4bb7391b4819da16e5db6650819ea0bbe30cc612b87c6731cb5d",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/config.txt",
+          "bytes": 34759,
+          "sha256": "fb65cf8c487434eec2e69df9d36a62588b7ba9536155e1c614d0d63f5376be9d",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/CV_STORY.MOD",
+          "bytes": 64673,
+          "sha256": "72c108ec684f16a3357f83f303c6e1c652e6a24d8c6f63b0a6fd89a4cfcfd246",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/icon.png",
+          "bytes": 4348,
+          "sha256": "a21d6435ce3e2a41a2f301bedd07a942e2d57b0d38d28d1744296eec38a82bcc",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/smzx2.chr",
+          "bytes": 3584,
+          "sha256": "9ad06aa043037c3ba98a7093b9f5172437b995574565fa649717b208de95e3f6",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/help.fil",
+          "bytes": 752756,
+          "sha256": "179a8886b86ccf95ab4c180196e895bb74e4497a5e728413725872ad23f3c8f5",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/default.chr",
+          "bytes": 3584,
+          "sha256": "e808056574863687c0f6bbdaebd62029a3c1c4ad8b47f370b5bf00ff7efcbdd4",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/blank.chr",
+          "bytes": 3584,
+          "sha256": "b7ac52b3d6eefd910b617d620fcaec6f5c7eb7caac04a5b48804ad6fd50a877a",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/smzx.pal",
+          "bytes": 768,
+          "sha256": "60db72c5e0bcac9bd20930194d45f363b49db55d93f4b404a488fbb800d70627",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/smzx.chr",
+          "bytes": 3584,
+          "sha256": "cbdc39809d6844c095946be1f1c34ceb0ea9ba28820996cc1edee38e9494edc2",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/ascii.chr",
+          "bytes": 3584,
+          "sha256": "657ca6588b6bf729f0ed71a3d3c781a465bd30cdfb11eb5fc7e27594c0717ea1",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/assets/edit.chr",
+          "bytes": 3584,
+          "sha256": "5b49ac8cd7f542abc81379f127d093dde889cb11a4c97f39ff40efedecb2b428",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/macro.txt",
+          "bytes": 3721,
+          "sha256": "560c47798ddf9cb1e522844d2f157459c435ac6255622d01fa30a93f4d44bf4a",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/changelog.txt",
+          "bytes": 274865,
+          "sha256": "90bb6929d82ab3f253892580f0111e8e1d77a40f052136944ca6772c17dcd599",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/fileform.html",
+          "bytes": 130469,
+          "sha256": "2db642dac8d98335a98b82fd7d7f4a8b755f74231a188fa0c1907bbe98f6e5ac",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/cycles_and_commands.txt",
+          "bytes": 20327,
+          "sha256": "32905c6d99747ac1aa7bf93cd8edb28d31199beb4843278b7db70f7a921ca847",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/keycodes.html",
+          "bytes": 31683,
+          "sha256": "8807edc1d65f01980b402877a1ead2163ae3071c6deeeb5d50fbd5ab4b86d6a9",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/platform_matrix.html",
+          "bytes": 36392,
+          "sha256": "eaf83977facbf06b6150cd7a633e9a874092f5b1542b5019b389c0ce80a85c3c",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/mzxhelp.html",
+          "bytes": 974750,
+          "sha256": "e03b4abe1d8d53181c00b9dce8633e95a3aed68af8a5a795df63ef1ec228b7ad",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/megazeux/docs/joystick.html",
+          "bytes": 67122,
+          "sha256": "90266e35387b384bda73f83f1ba9a2f07520f6e6ff1cdc0a491a681c05d7c326",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "CHIP8",
+      "title": "CHIP8 Emulator",
+      "version": "2.2",
+      "checkedAt": "2026-11-02T08:25:48.113Z",
+      "status": "downloaded",
+      "package": {
+        "name": "CHIP8-sd-package.zip",
+        "bytes": 969374,
+        "sha256": "0ee1948a909fcab02384e921a5e7346a4562fbada7a3be8ce4a4c1e497876c5f",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/CHIP8.zip",
+        "version": "2.2",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/CHIP8/2.2/CHIP8-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Emulators\\CHIP8 Emulator WiiU\\Builds\\2.2\\CHIP8-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/CHIP8/CHIP8.elf"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 85,
+          "sha256": "10a106099f76040fc92e4c9e6789b8046dfe03fc5da1208052e7f344ca740c78",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 520,
+          "sha256": "b0701c2f6d4f673da53e4e566e5bdf9aef90655cbf421b2f944dbe898cf2b66f",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/CHIP8/meta.xml",
+          "bytes": 647,
+          "sha256": "6407509333af1e1bf78f3310a16557d8e8cb8caefb00a8b63f37ef3a2dfd88ce",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/CHIP8/CHIP8.elf",
+          "bytes": 1666028,
+          "sha256": "7c3aa0ff66fa5032ee893117a0c0ef3589d37ea4497a91e13317d40c57a29749",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/CHIP8/icon.png",
+          "bytes": 3293,
+          "sha256": "c45766d929b04ef6338e90f442a3363fb7ac2f39b602bd1cbccdcadc5e7b8525",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "yapesdl",
+      "title": "YAPE 4 U",
+      "version": "0.70.2-wiiu-version",
+      "checkedAt": "2026-11-02T08:25:55.263Z",
+      "status": "downloaded",
+      "package": {
+        "name": "yapesdl-sd-package.zip",
+        "bytes": 820252,
+        "sha256": "9b2def3f82c6ddd3d81222c669449758145008445d16add09a3e29d3cc5732d0",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/yapesdl.zip",
+        "version": "0.70.2-wiiu-version",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/yapesdl/0.70.2-wiiu-version/yapesdl-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Emulators\\yapesdl\\Builds\\0.70.2-wiiu-version\\yapesdl-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/yape/yapesdl.rpx"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 84,
+          "sha256": "6e44622bae484c0e87a32bb6edba5becbd0da438f4641fdf0ff878121b986374",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 578,
+          "sha256": "60c70c304580bc9a2fb25fed5def90870db8dddbdf2da97bb83b66ed75d05837",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/yape/meta.xml",
+          "bytes": 678,
+          "sha256": "40c19edaff1f71bfdf6bc1c3ee91d6effdf0f7b0c6979c28c4e3941a41924d14",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/yape/yapesdl.rpx",
+          "bytes": 825516,
+          "sha256": "f3e7c5930e45e84f8a5e294ed220bc851c00468109f9a5c9676d235aed8723f2",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/yape/icon.png",
+          "bytes": 892,
+          "sha256": "6feaf74b3e55d4c38342d900cd763daac228db2a64a638935bfad47bac162045",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "wudd",
+      "title": "WUDD",
+      "version": "1.2.2",
+      "checkedAt": "2026-11-02T08:26:19.300Z",
+      "status": "downloaded",
+      "package": {
+        "name": "wudd-sd-package.zip",
+        "bytes": 1622441,
+        "sha256": "439e6c647c2218957a86c6d1095c29166f780f4fe55f736ead69815638965904",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/wudd.zip",
+        "version": "1.2.2",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/wudd/1.2.2/wudd-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\wudd\\Builds\\1.2.2\\wudd-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/wudd/wudd.rpx",
+        "wiiu/apps/wudd/wudd.wuhb"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 109,
+          "sha256": "cd0804107f1669eb3f8f34430728cdb7fc56aa55a28a905b2c75eb4bf29dc9fa",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2232,
+          "sha256": "561c9783f7231759f43b7181a3eaf4bfa1c7653630ad5b65774ee33c57194c8e",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/wudd/meta.xml",
+          "bytes": 500,
+          "sha256": "123248aa8015c3b331fe5a803cd7894b8e412048b0959eaff0b4cf4539eee682",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/wudd/wudd.rpx",
+          "bytes": 786793,
+          "sha256": "c9faa6a17db892ba4aa7c537e93f83eae714f7f6a6886fff63194352f030b83e",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/wudd/wudd.wuhb",
+          "bytes": 819352,
+          "sha256": "31b0b255b7a8edf9e9e3f51eded3c12147c389754bb975e7b823ec959eab39be",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/wudd/icon.png",
+          "bytes": 27164,
+          "sha256": "bcb444d348500204a575e65d4b521b9ddb7ffec8e27f29954d46e68ebd1c6bf7",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "dumpling",
+      "title": "Dumpling",
+      "version": "2.7.2",
+      "checkedAt": "2026-11-02T08:26:23.302Z",
+      "status": "downloaded",
+      "package": {
+        "name": "dumpling-sd-package.zip",
+        "bytes": 2660415,
+        "sha256": "e9a08c8b7f0150bb7f03e8b1cc280294a98d89749fef1b3b569ea659fa50675c",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/dumpling.zip",
+        "version": "2.7.2",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/dumpling/2.7.2/dumpling-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\dumpling\\Builds\\2.7.2\\dumpling-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/dumpling/dumpling.wuhb",
+        "wiiu/apps/dumpling/dumpling.rpx"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 133,
+          "sha256": "b3dcd4bdba7162d73edcbd5b075f7b666cc520d17565b82fa1a7a9c7918c6dbc",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 10934,
+          "sha256": "056756e44a88dc4ac36118f59a30238c2bbc95689b4c80aed9122d19c62b2a27",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/dumpling/meta.xml",
+          "bytes": 460,
+          "sha256": "eda89aa01c6b054c3cf381f553d2a066e52e4e3479d56c865f3bcab0aae951db",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/dumpling/dumpling.wuhb",
+          "bytes": 1944320,
+          "sha256": "a94eb1a036b0284e91f0014c52dfcf8f0841f114b5efb6a379c541391f088c03",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/dumpling/dumpling.rpx",
+          "bytes": 706840,
+          "sha256": "a3c0f38948957de9f3b84ac4aec203178792b052d958fecadaa0c4750fe31447",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/dumpling/icon.png",
+          "bytes": 14679,
+          "sha256": "701ec0cf30c51317dc52226e031980672a85de8481f901721fafe5602213e4bb",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "CafXplorer",
+      "title": "Café-Xplorer",
+      "version": "2.0",
+      "checkedAt": "2026-11-02T08:26:38.279Z",
+      "status": "unavailable",
+      "error": "Source package Cafe-Xplorer.rpx has WUHB magic instead of the expected ELF/RPX header; a mislabeled console bundle. Excluded pending a corrected source package.",
+      "inspection": {
+        "method": "HTTP206 ranges, ZIP central directory, first compressed member partial inflate; no execution",
+        "rpxHeaderHex": "57554842",
+        "actualHeader": "WUHB",
+        "expectedForExtension": "ELF32 big-endian PowerPC"
+      }
+    },
+    {
+      "id": "schismtracker",
+      "title": "Schism Tracker",
+      "version": "20251014",
+      "checkedAt": "2026-11-02T08:27:15.828Z",
+      "status": "downloaded",
+      "package": {
+        "name": "schismtracker-sd-package.zip",
+        "bytes": 1411645,
+        "sha256": "a10058610d2cc20080ba12fea1a25d9dc415c959e3981c6a58217b94cbcb540f",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/schismtracker.zip",
+        "version": "20251014",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/schismtracker/20251014/schismtracker-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Media & network\\schismtracker\\Builds\\20251014\\schismtracker-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/schismtracker/schismtracker.wuhb"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 202,
+          "sha256": "bc905b798535dd85a41d51b91db988c7bfac396ca27677cb82e7ace6032e9bf2",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 3275,
+          "sha256": "08c1f47e7033c445e1553e7f35eade77d0d7238ba6f448f1264aca731ff78394",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/schismtracker/COPYING.Xiph",
+          "bytes": 1509,
+          "sha256": "7866ee98760fc1f0156b4fe6bf530257e02be487ab3fd94e2b63799dd32d6b2c",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/schismtracker/COPYING",
+          "bytes": 17992,
+          "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/schismtracker/schismtracker.wuhb",
+          "bytes": 1420216,
+          "sha256": "707f6058c2af46b956935d91751db7ebfe3dc27191ad3bb956e1e71f74581b4b",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/schismtracker/configuration.md",
+          "bytes": 8995,
+          "sha256": "65cf167a1c6f409585997accd4f41bd7d2d49ca416d2bc3bec4440e38d28b176",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/schismtracker/README.md",
+          "bytes": 2082,
+          "sha256": "229b4c92b29c3023975cccec0bc63f1b04672eda17ba79a9894f820b03c11087",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "moonlight-wiiu",
+      "title": "Moonlight Wii U",
+      "version": "wiiu-v1.6",
+      "checkedAt": "2026-11-02T08:27:33.228Z",
+      "status": "downloaded",
+      "package": {
+        "name": "moonlight-wiiu-sd-package.zip",
+        "bytes": 3914034,
+        "sha256": "206defef33f29bf36ca542655ebb252243a64c0ec58e9a3fe36f7e8b32900410",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/moonlight-wiiu.zip",
+        "version": "wiiu-v1.6",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/moonlight-wiiu/wiiu-v1.6/moonlight-wiiu-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Media & network\\moonlight wiiu\\Builds\\wiiu-v1.6\\moonlight-wiiu-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/moonlight/moonlight.wuhb",
+        "wiiu/apps/moonlight/moonlight.rpx"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 177,
+          "sha256": "28b6023523b51586229330198813dd2770bb36f9fd60ad03b0c479d723c78312",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2317,
+          "sha256": "d717ba3809f0c1e716e7fe5d4db9496055d84df32077595ee54f71cd4513f491",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/moonlight/moonlight.conf",
+          "bytes": 1646,
+          "sha256": "a3267196a2e5eb961625ed181e8d631dd17f2018dbfb4404d0dfe3a7d2a56c74",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/moonlight/meta.xml",
+          "bytes": 698,
+          "sha256": "a0aaf2ff91a8c98d36683ff60c180ec40e2a01f85243f8e2d42b68462e9de86a",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/moonlight/moonlight.wuhb",
+          "bytes": 2026924,
+          "sha256": "43d54998ac3933f1c34e949b9bdfa66a945780c7e424678c8b3e766ff1c9d326",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/moonlight/moonlight.rpx",
+          "bytes": 1905234,
+          "sha256": "11a19e05c719a134c91ee30a13722d80f0b9a95678479e6745eb02a6e62c40d1",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/moonlight/icon.png",
+          "bytes": 15820,
+          "sha256": "4f91953b801c35338041fb7e03e46782b831d47492fdd7dd3834a4554452e205",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "vgedit",
+      "title": "vgedit",
+      "version": "2.2.1",
+      "checkedAt": "2026-11-02T08:27:46.486Z",
+      "status": "downloaded",
+      "package": {
+        "name": "vgedit-sd-package.zip",
+        "bytes": 18079487,
+        "sha256": "04990f8db9d3e26fbdd79a1e7f91935bcc0184617bff318ce322f84e5b421ac7",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/vgedit.zip",
+        "version": "2.2.1",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/vgedit/2.2.1/vgedit-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\vgedit\\Builds\\2.2.1\\vgedit-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/vgedit/vgedit.wuhb",
+        "wiiu/apps/vgedit/vgedit.rpx"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 121,
+          "sha256": "4b7578fa0be661ff604a6a1accd9fbea211a36923fd9f2173b0717df03109357",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 1650,
+          "sha256": "638ce2bf287571880e09fe5e9f1fba755567236e1a0a6fb3051c473211b68934",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/vgedit/meta.xml",
+          "bytes": 839,
+          "sha256": "6e493663e13415fe017d3ae481122701577d58984de14d1cedf509cc2498b28d",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/vgedit/vgedit.wuhb",
+          "bytes": 9169536,
+          "sha256": "d77de6cf1115ee2977c5216d46058016d9b641edef3bbc3039b5a896000a6262",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/vgedit/vgedit.rpx",
+          "bytes": 8939680,
+          "sha256": "f83a0540b11b21aeb554bf8dacb127861ff6e733673e95e2d185deb5fb2929ed",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/vgedit/icon.png",
+          "bytes": 22065,
+          "sha256": "2324a4f280f4e514dedbcc269c17d318135fbde92a38a803cb6717a0f523a178",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "GamePadAutoStandby",
+      "title": "GamePad Auto Standby",
+      "version": "0.8",
+      "checkedAt": "2026-11-02T08:28:07.483Z",
+      "status": "downloaded",
+      "package": {
+        "name": "GamePadAutoStandby-sd-package.zip",
+        "bytes": 51527,
+        "sha256": "277088aa2ab1d68f700f8eb24c3394ad819129e8e5bfce2aa322d52c3a926ce9",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/GamePadAutoStandby.zip",
+        "version": "0.8",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/GamePadAutoStandby/0.8/GamePadAutoStandby-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Plugins & mods\\GamepadAutoStandby\\Builds\\0.8\\GamePadAutoStandby-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/environments/aroma/plugins/gamepad_auto_standby.wps"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 60,
+          "sha256": "11ec056fd825dc68a34160254bed49e92d5edd15136a514e676d31764f272a6d",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 2190,
+          "sha256": "1ce5f981a62c568d6e93ec34bed18a7d907f10a96344718d187a31c40cc18b97",
+          "directory": false
+        },
+        {
+          "path": "wiiu/environments/aroma/plugins/gamepad_auto_standby.wps",
+          "bytes": 50748,
+          "sha256": "652990d436e7f5fec50075f0d69498181bc95148a6e6be68e3935948abd23711",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "NetworkSwitcher",
+      "title": "Network Switcher",
+      "version": "1.2",
+      "checkedAt": "2026-11-02T08:28:09.698Z",
+      "status": "downloaded",
+      "package": {
+        "name": "NetworkSwitcher-sd-package.zip",
+        "bytes": 165754,
+        "sha256": "4ded1d5a4227403ca327f9e0e297ee2484235ea334f7d4bda31cdd5943a5ef05",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/NetworkSwitcher.zip",
+        "version": "1.2",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/NetworkSwitcher/1.2/NetworkSwitcher-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Plugins & mods\\Network Switcher\\Builds\\1.2\\NetworkSwitcher-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/environments/aroma/plugins/network-switcher.wps"
+      ],
+      "members": [
+        {
+          "path": "wiiu/environments/aroma/plugins/network-switcher.wps",
+          "bytes": 167062,
+          "sha256": "d6bb11c2060a7859af914834e9bc0aaa904a7e5e6197abaa40efe3c2d33ffbf3",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 746,
+          "sha256": "9ed62a19ba060c2105c063dea5396a47210c2a7185d5e0586e5aa5c62496e3cd",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 56,
+          "sha256": "a83245778e1cb0abc5e577f55c0bc92a298de6b50ad0a52cdcb121fb5eeae6df",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "ScreenshotUnlocker",
+      "title": "Screenshot Unlocker",
+      "version": "1.1",
+      "checkedAt": "2026-11-02T08:28:18.093Z",
+      "status": "downloaded",
+      "package": {
+        "name": "ScreenshotUnlocker-sd-package.zip",
+        "bytes": 7581,
+        "sha256": "6e6996433aafb91184c378bc37f15ff7581cf48847b718d50cb6e45bbd10ea1d",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/ScreenshotUnlocker.zip",
+        "version": "1.1",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/ScreenshotUnlocker/1.1/ScreenshotUnlocker-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Plugins & mods\\Screenshot Unlocker\\Builds\\1.1\\ScreenshotUnlocker-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/environments/aroma/plugins/screenshot-unlocker.wps"
+      ],
+      "members": [
+        {
+          "path": "wiiu/environments/aroma/plugins/screenshot-unlocker.wps",
+          "bytes": 7428,
+          "sha256": "65db15ff2741459ace4aab126a99bab76190c18d188acde6640cd911c637d18d",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 550,
+          "sha256": "dde69058e5ff23b942cb59b958f42b766e0e259588bd5caab07734892301a316",
+          "directory": false
+        },
+        {
+          "path": "manifest.install",
+          "bytes": 59,
+          "sha256": "0704ce087d61d742f5810026cdc3b7f76f0c13e1da05387085d272fc6ccebd4d",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    },
+    {
+      "id": "WiiU-Shell",
+      "title": "WiiU-Shell",
+      "version": "1.08",
+      "checkedAt": "2026-11-02T08:31:03.960Z",
+      "status": "downloaded",
+      "package": {
+        "name": "WiiU-Shell-sd-package.zip",
+        "bytes": 7367849,
+        "sha256": "f252288f9351a8c07a16fe3ebb937282b51e263bc8c84b4f6e4403d62494411d",
+        "source": "https://wiiu.cdn.fortheusers.org/zips/WiiU-Shell.zip",
+        "version": "1.08",
+        "role": "complete-store-package",
+        "local": "/downloads/wiiu-more/WiiU-Shell/1.08/WiiU-Shell-sd-package.zip",
+        "archived": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\WiiU Shell\\Builds\\1.08\\WiiU-Shell-sd-package.zip"
+      },
+      "buildPaths": [
+        "wiiu/apps/WiiU-Shell/WiiU-Shell.wuhb",
+        "wiiu/apps/WiiU-Shell/WiiU-Shell.rpx"
+      ],
+      "members": [
+        {
+          "path": "manifest.install",
+          "bytes": 145,
+          "sha256": "d4581d4bdb622f04eac0e54401e312f6ff91f555523f3cec53195c8a56fe157f",
+          "directory": false
+        },
+        {
+          "path": "info.json",
+          "bytes": 817,
+          "sha256": "629e02c9c2aabf5aaedd999d6a19f0fdaf7c0f9102c686cc71a9ed51180018f2",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/WiiU-Shell/WiiU-Shell.wuhb",
+          "bytes": 3711360,
+          "sha256": "156e7ce66c558c8be9fd0850cd156f676317f1cf1f5459fc2e9d65f9d635f11b",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/WiiU-Shell/meta.xml",
+          "bytes": 755,
+          "sha256": "96dd21ea139b9868be070b4b5894188138c9b4240185a643f375eb95be4e82b4",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/WiiU-Shell/WiiU-Shell.rpx",
+          "bytes": 3655249,
+          "sha256": "51ee09a0cf0f5d4919b86be94c981102e8b240f14e88074f5c020fe0f03351e8",
+          "directory": false
+        },
+        {
+          "path": "wiiu/apps/WiiU-Shell/icon.png",
+          "bytes": 22652,
+          "sha256": "8406541e254c7f8291d98d1ec78f29d0b0c3ee9ae2cc4a3584b68811dcabf1e2",
+          "directory": false
+        }
+      ],
+      "requiresBundle": true
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-02T08:35:10.439Z",
+    "readyApps": 21,
+    "unavailableApps": 1,
+    "totalReadyBytes": 123778933,
+    "publicAndArchiveSha256Verified": true,
+    "zipCRCVerified": true,
+    "executableHeadersVerified": true,
+    "executed": false,
+    "files": [
+      {
+        "id": "AirAttack",
+        "bytes": 5143343,
+        "sha256": "3a3978352e236842fda10d92f2999cc6db324173d762ef9cabf619b8ef417f81",
+        "local": "/downloads/wiiu-more/AirAttack/1.0.1/AirAttack-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\AirAttack\\Builds\\1.0.1\\AirAttack-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/apps/AirAttack/AirAttack.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "BlockamokRemix",
+        "bytes": 5975961,
+        "sha256": "e17df7bb5c991a1504b1987dd37c28320100633ca66430eafd20e9a83eaa9fda",
+        "local": "/downloads/wiiu-more/BlockamokRemix/1.2/BlockamokRemix-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\blockamok\\Builds\\1.2\\BlockamokRemix-sd-package.zip",
+        "members": 6,
+        "builds": [
+          "wiiu/apps/BlockamokRemix/BlockamokRemix.wuhb",
+          "wiiu/apps/BlockamokRemix/BlockamokRemix.rpx"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "Button-Break",
+        "bytes": 344131,
+        "sha256": "534c6742f090cb907dab08ca56f4ee51582c916960446b763e493b758b0a6d08",
+        "local": "/downloads/wiiu-more/Button-Break/1.0.1/Button-Break-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\Button Break\\Builds\\1.0.1\\Button-Break-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/apps/Button-Break/Button_Break.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "Labyrinth",
+        "bytes": 2987648,
+        "sha256": "97f7146e061a29eb7189fb3ef2190c8c263a1b9cbe59a50044d2d082f64337b7",
+        "local": "/downloads/wiiu-more/Labyrinth/1.0.2/Labyrinth-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\Labyrinth\\Builds\\1.0.2\\Labyrinth-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/apps/Labyrinth/Labyrinth.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "Othello",
+        "bytes": 1625888,
+        "sha256": "1fa0e5608d8b073f10fcca69e6faa4637db2208934ae472f37651af324a33401",
+        "local": "/downloads/wiiu-more/Othello/1.6.0/Othello-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\Othello\\Builds\\1.6.0\\Othello-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/apps/Othello/Othello.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "TankTrap",
+        "bytes": 4494223,
+        "sha256": "4b56d115157a00f5465bbb2eddf5fde6bf92ab064704bffe17670b579606f9f6",
+        "local": "/downloads/wiiu-more/TankTrap/1.0/TankTrap-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\UntitledSandGame\\Builds\\1.0\\TankTrap-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/apps/TankTrap/sand.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "coldstart-wiiu",
+        "bytes": 53648381,
+        "sha256": "de0541971d00fd32e6d8c081918ceb5346c3f8c5bda980b13c02c9ac5b8eaf75",
+        "local": "/downloads/wiiu-more/coldstart-wiiu/3.6.0/coldstart-wiiu-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Homebrew games\\cold start nx\\Builds\\3.6.0\\coldstart-wiiu-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/apps/ColdStart/cold_start-wiiu-3.3.0.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "CrispyDoomU",
+        "bytes": 2588199,
+        "sha256": "689908a7d5b7878083187e7f33587e16bc84317204923938a2eac674b3949903",
+        "local": "/downloads/wiiu-more/CrispyDoomU/1.1-graphics-fix/CrispyDoomU-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Game ports & interpreters\\crispy doom u aroma\\Builds\\1.1-graphics-fix\\CrispyDoomU-sd-package.zip",
+        "members": 4,
+        "builds": [
+          "wiiu/apps/CrispyDoomU/crispy-doom-u.rpx",
+          "wiiu/apps/CrispyDoomU/crispy-doom-u.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "EasyRPG",
+        "bytes": 6690779,
+        "sha256": "f49f7cab8446b3257729c7b898465b22b6c90c579ace93be64e2757fecae4ac3",
+        "local": "/downloads/wiiu-more/EasyRPG/0.8.1.1/EasyRPG-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Game ports & interpreters\\Player\\Builds\\0.8.1.1\\EasyRPG-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/apps/EasyRPG/easyrpg-player-0.8.1.1-wiiu.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "MegaZeux",
+        "bytes": 3210021,
+        "sha256": "333bcef82bb2a308ffc825b913dbd38a7075fb7cbec2ded4d3b8f1d6cbd91a21",
+        "local": "/downloads/wiiu-more/MegaZeux/2.93d/MegaZeux-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Game ports & interpreters\\megazeux\\Builds\\2.93d\\MegaZeux-sd-package.zip",
+        "members": 35,
+        "builds": [
+          "wiiu/apps/megazeux/megazeux.rpx"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "CHIP8",
+        "bytes": 969374,
+        "sha256": "0ee1948a909fcab02384e921a5e7346a4562fbada7a3be8ce4a4c1e497876c5f",
+        "local": "/downloads/wiiu-more/CHIP8/2.2/CHIP8-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Emulators\\CHIP8 Emulator WiiU\\Builds\\2.2\\CHIP8-sd-package.zip",
+        "members": 5,
+        "builds": [
+          "wiiu/apps/CHIP8/CHIP8.elf"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "yapesdl",
+        "bytes": 820252,
+        "sha256": "9b2def3f82c6ddd3d81222c669449758145008445d16add09a3e29d3cc5732d0",
+        "local": "/downloads/wiiu-more/yapesdl/0.70.2-wiiu-version/yapesdl-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Emulators\\yapesdl\\Builds\\0.70.2-wiiu-version\\yapesdl-sd-package.zip",
+        "members": 5,
+        "builds": [
+          "wiiu/apps/yape/yapesdl.rpx"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "wudd",
+        "bytes": 1622441,
+        "sha256": "439e6c647c2218957a86c6d1095c29166f780f4fe55f736ead69815638965904",
+        "local": "/downloads/wiiu-more/wudd/1.2.2/wudd-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\wudd\\Builds\\1.2.2\\wudd-sd-package.zip",
+        "members": 6,
+        "builds": [
+          "wiiu/apps/wudd/wudd.rpx",
+          "wiiu/apps/wudd/wudd.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "dumpling",
+        "bytes": 2660415,
+        "sha256": "e9a08c8b7f0150bb7f03e8b1cc280294a98d89749fef1b3b569ea659fa50675c",
+        "local": "/downloads/wiiu-more/dumpling/2.7.2/dumpling-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\dumpling\\Builds\\2.7.2\\dumpling-sd-package.zip",
+        "members": 6,
+        "builds": [
+          "wiiu/apps/dumpling/dumpling.wuhb",
+          "wiiu/apps/dumpling/dumpling.rpx"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "schismtracker",
+        "bytes": 1411645,
+        "sha256": "a10058610d2cc20080ba12fea1a25d9dc415c959e3981c6a58217b94cbcb540f",
+        "local": "/downloads/wiiu-more/schismtracker/20251014/schismtracker-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Media & network\\schismtracker\\Builds\\20251014\\schismtracker-sd-package.zip",
+        "members": 7,
+        "builds": [
+          "wiiu/apps/schismtracker/schismtracker.wuhb"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "moonlight-wiiu",
+        "bytes": 3914034,
+        "sha256": "206defef33f29bf36ca542655ebb252243a64c0ec58e9a3fe36f7e8b32900410",
+        "local": "/downloads/wiiu-more/moonlight-wiiu/wiiu-v1.6/moonlight-wiiu-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Media & network\\moonlight wiiu\\Builds\\wiiu-v1.6\\moonlight-wiiu-sd-package.zip",
+        "members": 7,
+        "builds": [
+          "wiiu/apps/moonlight/moonlight.wuhb",
+          "wiiu/apps/moonlight/moonlight.rpx"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "vgedit",
+        "bytes": 18079487,
+        "sha256": "04990f8db9d3e26fbdd79a1e7f91935bcc0184617bff318ce322f84e5b421ac7",
+        "local": "/downloads/wiiu-more/vgedit/2.2.1/vgedit-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\vgedit\\Builds\\2.2.1\\vgedit-sd-package.zip",
+        "members": 6,
+        "builds": [
+          "wiiu/apps/vgedit/vgedit.wuhb",
+          "wiiu/apps/vgedit/vgedit.rpx"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "GamePadAutoStandby",
+        "bytes": 51527,
+        "sha256": "277088aa2ab1d68f700f8eb24c3394ad819129e8e5bfce2aa322d52c3a926ce9",
+        "local": "/downloads/wiiu-more/GamePadAutoStandby/0.8/GamePadAutoStandby-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Plugins & mods\\GamepadAutoStandby\\Builds\\0.8\\GamePadAutoStandby-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/environments/aroma/plugins/gamepad_auto_standby.wps"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "NetworkSwitcher",
+        "bytes": 165754,
+        "sha256": "4ded1d5a4227403ca327f9e0e297ee2484235ea334f7d4bda31cdd5943a5ef05",
+        "local": "/downloads/wiiu-more/NetworkSwitcher/1.2/NetworkSwitcher-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Plugins & mods\\Network Switcher\\Builds\\1.2\\NetworkSwitcher-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/environments/aroma/plugins/network-switcher.wps"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "ScreenshotUnlocker",
+        "bytes": 7581,
+        "sha256": "6e6996433aafb91184c378bc37f15ff7581cf48847b718d50cb6e45bbd10ea1d",
+        "local": "/downloads/wiiu-more/ScreenshotUnlocker/1.1/ScreenshotUnlocker-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Plugins & mods\\Screenshot Unlocker\\Builds\\1.1\\ScreenshotUnlocker-sd-package.zip",
+        "members": 3,
+        "builds": [
+          "wiiu/environments/aroma/plugins/screenshot-unlocker.wps"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      },
+      {
+        "id": "WiiU-Shell",
+        "bytes": 7367849,
+        "sha256": "f252288f9351a8c07a16fe3ebb937282b51e263bc8c84b4f6e4403d62494411d",
+        "local": "/downloads/wiiu-more/WiiU-Shell/1.08/WiiU-Shell-sd-package.zip",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Saves & system\\WiiU Shell\\Builds\\1.08\\WiiU-Shell-sd-package.zip",
+        "members": 6,
+        "builds": [
+          "wiiu/apps/WiiU-Shell/WiiU-Shell.wuhb",
+          "wiiu/apps/WiiU-Shell/WiiU-Shell.rpx"
+        ],
+        "crcVerified": true,
+        "headersVerified": true
+      }
+    ]
+  }
+}

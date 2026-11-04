@@ -1,0 +1,629 @@
+{
+  "scope": "xbox360-more",
+  "batch": 2,
+  "reviewed": "2026-11-02",
+  "status": "complete: 5 original-author ready console games downloaded and inspected",
+  "sourcePolicy": "Original author ready releases only. No build executed, no F: writes by research subagent. Permanent public buttons must use the publisher page, not expiring CDN signatures or a POST-only file endpoint.",
+  "downloadResults": [
+    {
+      "id": "quad-carnage",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/Quad Carnage for 360.zip",
+      "bytes": 87175153,
+      "sha256": "3df04b186612f6b10cf9ae6201c0e01f46c4753b45dcded3abff843842756b9c",
+      "sourceUrl": "https://jaredlevi.itch.io/quad-carnage/file/13221820",
+      "publicDownloadUrl": "https://jaredlevi.itch.io/quad-carnage#download"
+    },
+    {
+      "id": "wowjay",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/WOWJAY360.7z",
+      "bytes": 37455015,
+      "sha256": "d8d9fbfe8394c43e2c23f89ed6e5663257d4f83f2a17f8163acda6979da9eafb",
+      "sourceUrl": "https://jaredlevi.itch.io/wowjay/file/14662937",
+      "publicDownloadUrl": "https://jaredlevi.itch.io/wowjay/purchase"
+    },
+    {
+      "id": "nest-bound",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/NestBoud 360.zip",
+      "bytes": 52807754,
+      "sha256": "6580ec0cc55f3e44adbb1695d07cf2e83aaa9007f8d9b6e7763377459721bc62",
+      "sourceUrl": "https://jaredlevi.itch.io/nest-bound/file/14222522",
+      "publicDownloadUrl": "https://jaredlevi.itch.io/nest-bound/purchase"
+    },
+    {
+      "id": "slither360",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/Slither360-v0.10.2-dev.1-PUBLIC.rar",
+      "bytes": 1826917,
+      "sha256": "a28c7ce96e817a4cd270fb461348c6806edbcea8283ac039655ac2e315fe4dbc",
+      "sourceUrl": "https://mathuwsgamermw.itch.io/slither360/file/19738640",
+      "publicDownloadUrl": "https://mathuwsgamermw.itch.io/slither360#download"
+    },
+    {
+      "id": "portal-clone",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/PortalCloneXbox.rar",
+      "bytes": 55805775,
+      "sha256": "2dbc6172f0802f8adab9e2ce53bde3d5397785caf4fca0dfac5e5d45574630cd",
+      "sourceUrl": "https://cayama0811.itch.io/portal-clone-xbox-360/file/18822655",
+      "publicDownloadUrl": "https://cayama0811.itch.io/portal-clone-xbox-360#download"
+    }
+  ],
+  "verification": {
+    "resources": 5,
+    "totalBytes": 235070614,
+    "archiveCrcTestsPassed": 5,
+    "nativeExecutableHeaders": 53,
+    "slitherPublisherManifest": {
+      "matched": 7,
+      "mismatchedDocumentation": 1,
+      "nativeExecutableAndAtlasMatch": true
+    },
+    "physicalHardwareTested": false,
+    "downloadedBuildsExecuted": false,
+    "FArchiveWritesPerformed": false
+  },
+  "attempts": [
+    {
+      "slug": "quad-carnage",
+      "source": "https://jaredlevi.itch.io/quad-carnage",
+      "status": "unavailable",
+      "error": "The operation was aborted due to timeout"
+    }
+  ],
+  "resources": [
+    {
+      "id": "quad-carnage",
+      "title": "Quad Carnage",
+      "author": "JaredLevi",
+      "group": "games",
+      "version": "Publisher build · 2025-03-30 release bug-fix",
+      "source": "https://jaredlevi.itch.io/quad-carnage",
+      "publicDownloadUrl": "https://jaredlevi.itch.io/quad-carnage#download",
+      "sourceUrl": "https://jaredlevi.itch.io/quad-carnage/file/13221820",
+      "filename": "Quad Carnage for 360.zip",
+      "description": "Local arena shooter for up to four players, with geometric visuals and power-ups.",
+      "runtime": "Xbox 360 capable of running unsigned homebrew. The original author identifies the download as Xbox 360 homebrew but does not pin a dashboard version or motherboard.",
+      "temporary": "The publisher does not certify BadUpdate, ABadAvatar or Peer Pressure; use a compatible established unsigned-code setup.",
+      "prerequisites": "At least one Xbox 360 controller; additional controllers for local multiplayer. No external commercial game data is requested by the author.",
+      "installPath": "Hdd1:\\Homebrew\\QuadCarnage\\",
+      "usbPath": "Usb0:\\Homebrew\\QuadCarnage\\",
+      "imageUrl": "https://img.itch.zone/aW1nLzIwNDE3Nzk0LnBuZw==/original/OYlTaY.png",
+      "imageCredit": "JaredLevi · Quad Carnage official itch.io artwork",
+      "sourceEvidence": [
+        "Original author page labels Xbox 360 build and four-player gameplay",
+        "Release Bug Fix devlog dated 2025-03-30"
+      ],
+      "downloadFlow": "Choose Download beside Quad Carnage for 360.zip. Do not select the Windows ZIP.",
+      "status": "ready",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/Quad Carnage for 360.zip",
+      "expectedBytes": 87175153,
+      "expectedSha256": "3df04b186612f6b10cf9ae6201c0e01f46c4753b45dcded3abff843842756b9c",
+      "format": "ZIP / XEX",
+      "formatVerification": {
+        "type": "ZIP / XEX native XEX2",
+        "archiveTest": "7-Zip t: Everything is Ok",
+        "entryCount": 84,
+        "executables": [
+          {
+            "name": "QuadCarnage/default.xex",
+            "bytes": 8949760,
+            "sha256": "b0cfc540a14798ae76e94b13293b3b6c9ea3c23a2e26a16fa668008c3421d1b4",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/Assembly-CSharp.dll.xex",
+            "bytes": 49152,
+            "sha256": "f2fc8662f60e677a11f8a8993e114439750572c8158947e7836066c962c3f345",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/Mono.Posix.dll.xex",
+            "bytes": 151552,
+            "sha256": "1bef9f59f8618b7b650b6c9bf2295726baa24e79d2e3549dc01aab65fa4c9e1c",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/Mono.Security.dll.xex",
+            "bytes": 200704,
+            "sha256": "6a3d616b7f79968ed15934aaf948090412b9ab6d70f2eb90cf3d7b7527529ba8",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/mscorlib.dll.xex",
+            "bytes": 1302528,
+            "sha256": "e4bac29fffa413d87a21d731556624fcbcb8e0f24082d26c3dd3afec186994db",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/System.Configuration.dll.xex",
+            "bytes": 94208,
+            "sha256": "2e203ff9732c57f855909e79d6e970e0796c0536098460d153784cb5611e8193",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/System.Core.dll.xex",
+            "bytes": 241664,
+            "sha256": "b818558fb035d200f1d3e6a6422902f7b395a38d6c8d73690a97b403e47e9f68",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/System.dll.xex",
+            "bytes": 843776,
+            "sha256": "9c0ef8eda6ec007f7c2dda09bffeb478f415749f48b741e9e8619b4fe5d4d2e0",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/System.Security.dll.xex",
+            "bytes": 102400,
+            "sha256": "6fe9787313dac3ab0cbff46dcf5fd59d280cd3de26fce0c5e4238f4c36d1a0bb",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/System.Xml.dll.xex",
+            "bytes": 679936,
+            "sha256": "8fae6b4b643661df3bd7d60880f8831b5119de9b264ee61f06ded72214cd2934",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/UnityEngine.dll.xex",
+            "bytes": 815104,
+            "sha256": "76eb28779ef3a07fc91aa1ee4ea7053d7764c189b43837a57477b489e94352b7",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/UnityEngine.Networking.dll.xex",
+            "bytes": 417792,
+            "sha256": "d38bb4f25f2a44351f8038db9488ca6caf93019bd5cde7d398f5cf1b02f9c17d",
+            "magic": "XEX2"
+          },
+          {
+            "name": "QuadCarnage/Media/Managed/UnityEngine.UI.dll.xex",
+            "bytes": 311296,
+            "sha256": "f01296424a47714091b8fe3403c4efe046b2b112fbca6b0b762c311ed2f75894",
+            "magic": "XEX2"
+          }
+        ],
+        "upstreamManifestMatches": 0,
+        "upstreamManifestMismatches": []
+      },
+      "launch": "default.xex",
+      "setup": [
+        "Extract the ZIP on your PC. Copy its QuadCarnage folder to the shown HDD or USB Homebrew directory.",
+        "Keep Media, game data and all companion files beside default.xex. Launch the XEX through your existing homebrew file manager or add the directory to Aurora scan paths."
+      ],
+      "notes": "No physical-console execution was performed.",
+      "downloadUrl": "https://jaredlevi.itch.io/quad-carnage#download",
+      "downloadLinkKind": "publisher-page",
+      "fileName": "Quad Carnage for 360.zip",
+      "sourceFile": "docs/tmp/xbox360-more-batch2/Quad Carnage for 360.zip",
+      "assetEndpoint": "https://jaredlevi.itch.io/quad-carnage/file/13221820"
+    },
+    {
+      "id": "wowjay",
+      "title": "WowJay",
+      "author": "JaredLevi",
+      "group": "games",
+      "version": "Unversioned publisher build · reviewed 2026-11-02",
+      "source": "https://jaredlevi.itch.io/wowjay",
+      "publicDownloadUrl": "https://jaredlevi.itch.io/wowjay/purchase",
+      "filename": "WOWJAY360.7z",
+      "description": "Retro arcade platformer released by its original creator for Xbox 360.",
+      "runtime": "Xbox 360 capable of running unsigned homebrew; no exact dashboard or motherboard is specified by the author.",
+      "temporary": "A particular temporary exploit or runtime payload is not certified by this game’s author.",
+      "prerequisites": "Keep the complete Xbox 360 game folder together. No separate commercial game data is requested by the author.",
+      "installPath": "Hdd1:\\Homebrew\\WowJay\\",
+      "usbPath": "Usb0:\\Homebrew\\WowJay\\",
+      "imageUrl": "https://img.itch.zone/aW1nLzIyNzE0OTc5LnBuZw==/original/3pRhV8.png",
+      "imageCredit": "JaredLevi · WowJay official itch.io artwork",
+      "downloadFlow": "Choose Download Now, then No thanks, just take me to the downloads, then WOWJAY360.7z. No payment or account required.",
+      "status": "ready",
+      "sourceUrl": "https://jaredlevi.itch.io/wowjay/file/14662937",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/WOWJAY360.7z",
+      "expectedBytes": 37455015,
+      "expectedSha256": "d8d9fbfe8394c43e2c23f89ed6e5663257d4f83f2a17f8163acda6979da9eafb",
+      "format": "7Z / XEX",
+      "formatVerification": {
+        "type": "7Z / XEX native XEX2",
+        "archiveTest": "7-Zip t: Everything is Ok",
+        "entryCount": 78,
+        "executables": [
+          {
+            "name": "default.xex",
+            "bytes": 8949760,
+            "sha256": "3c761b9ade0beac9e0b5c29ac814553bb5a78619f7dfd5b26613fedd262d946e",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/Assembly-CSharp.dll.xex",
+            "bytes": 61440,
+            "sha256": "54bcc52dfe33606a81aa2b8ee38c81fc6687ead9d2c9d463006de411ff56964e",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/Mono.Posix.dll.xex",
+            "bytes": 151552,
+            "sha256": "32aaa5a6d7c07666754dd5ecfb6c519ffff63ca02ca138a905f45295fbe5d260",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/Mono.Security.dll.xex",
+            "bytes": 200704,
+            "sha256": "cbebc1828e3db9e52b6258c55bf6e4cad230a52255d8cd7d8f76df8a3a9f59d0",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/mscorlib.dll.xex",
+            "bytes": 1302528,
+            "sha256": "44bf114c7e3bb041ce5b7a54a46a6dc13d5611c01cce65a0090170d91c565752",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/System.Configuration.dll.xex",
+            "bytes": 94208,
+            "sha256": "dba543e7c9ef13bb27b33ee41332277a4d2fcf8b95d294ad810081305fd98f54",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/System.Core.dll.xex",
+            "bytes": 241664,
+            "sha256": "3a8904a63b46f730860dc6fdfde591268322ce3762d53fb8fae99cdf072c3267",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/System.dll.xex",
+            "bytes": 843776,
+            "sha256": "192a59f45669f0133d2edc9c8cfda5ed3ccc3f295bd3b60463dacc4628675211",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/System.Security.dll.xex",
+            "bytes": 102400,
+            "sha256": "927507218726e8a5bb71bfe2cfeb0f18af82e726c8ebecb67af8893a706c9c2c",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/System.Xml.dll.xex",
+            "bytes": 679936,
+            "sha256": "b53f4833e1e7723232a593eec01925e77c94211310f8a5062a1e63aa2d781bed",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/UnityEngine.dll.xex",
+            "bytes": 815104,
+            "sha256": "c087dc58c8ae90fb211643930559a88baea0855011455d6efe8b265e466db467",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/UnityEngine.Networking.dll.xex",
+            "bytes": 417792,
+            "sha256": "73c45071340ea9a3093a037cad04722f7e42d290cb95e6366d53f3ed53bcca7f",
+            "magic": "XEX2"
+          },
+          {
+            "name": "Media/Managed/UnityEngine.UI.dll.xex",
+            "bytes": 311296,
+            "sha256": "06def412755ddc7262a904355a6845459a62b392bdfe24989ab9f830f13556f1",
+            "magic": "XEX2"
+          }
+        ],
+        "upstreamManifestMatches": 0,
+        "upstreamManifestMismatches": []
+      },
+      "launch": "default.xex",
+      "setup": [
+        "Extract the full 7z archive directly into the shown WowJay directory: default.xex is at the archive root.",
+        "Keep the complete Media directory and data alongside default.xex. Launch default.xex through your existing homebrew launcher."
+      ],
+      "notes": "No physical-console execution was performed.",
+      "downloadUrl": "https://jaredlevi.itch.io/wowjay/purchase",
+      "downloadLinkKind": "publisher-page",
+      "fileName": "WOWJAY360.7z",
+      "sourceFile": "docs/tmp/xbox360-more-batch2/WOWJAY360.7z",
+      "assetEndpoint": "https://jaredlevi.itch.io/wowjay/file/14662937"
+    },
+    {
+      "id": "nest-bound",
+      "title": "Nest Bound",
+      "author": "JaredLevi",
+      "group": "games",
+      "version": "V1 · 2025-07-07 publisher release",
+      "source": "https://jaredlevi.itch.io/nest-bound",
+      "publicDownloadUrl": "https://jaredlevi.itch.io/nest-bound/purchase",
+      "filename": "NestBoud 360.zip",
+      "description": "Drawing puzzle game: draw a path to guide a sliding bird to its goal.",
+      "runtime": "Xbox 360 capable of running unsigned homebrew. The author names Xbox 360 but does not specify a firmware or motherboard.",
+      "temporary": "The publisher does not certify a particular temporary exploit or payload combination.",
+      "prerequisites": "Retain the full game directory and data files; no separate commercial data is requested.",
+      "installPath": "Hdd1:\\Homebrew\\NestBound\\",
+      "usbPath": "Usb0:\\Homebrew\\NestBound\\",
+      "imageUrl": "https://img.itch.zone/aW1nLzIxOTk4MDkxLnBuZw==/original/ohJrF%2F.png",
+      "imageCredit": "JaredLevi · Nest Bound official itch.io artwork",
+      "downloadFlow": "Choose Download Now, then No thanks, just take me to the downloads, then the author’s original filename NestBoud 360.zip.",
+      "status": "ready",
+      "sourceUrl": "https://jaredlevi.itch.io/nest-bound/file/14222522",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/NestBoud 360.zip",
+      "expectedBytes": 52807754,
+      "expectedSha256": "6580ec0cc55f3e44adbb1695d07cf2e83aaa9007f8d9b6e7763377459721bc62",
+      "format": "ZIP / XEX",
+      "formatVerification": {
+        "type": "ZIP / XEX native XEX2",
+        "archiveTest": "7-Zip t: Everything is Ok",
+        "entryCount": 111,
+        "executables": [
+          {
+            "name": "NestBoud 360/Media/Managed/Assembly-CSharp.dll.xex",
+            "bytes": 36864,
+            "sha256": "cc5786125baa0b6d44cfafb26dad7adc345fab6348b3b0cfd3425f9d61077a74",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/Mono.Posix.dll.xex",
+            "bytes": 163840,
+            "sha256": "234ba6432f1fef7a163a0edc003d89cc823d1c3bc3279b9e28b9cc8329c766ce",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/Mono.Security.dll.xex",
+            "bytes": 229376,
+            "sha256": "a08b60689506937ca4ccb2d8218b61451880d7edd9ba0f51ccb8cf7108e250a4",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/mscorlib.dll.xex",
+            "bytes": 1499136,
+            "sha256": "75deaffd4a8512a0e409bfa3ce93f5ea45622fbcc02ab0c255515384cbcfd072",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/System.Configuration.dll.xex",
+            "bytes": 106496,
+            "sha256": "65896d49239f187a26dbfa2d1458f4e9dc401d924ae580c4b74bd77184fc7d1d",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/System.Core.dll.xex",
+            "bytes": 274432,
+            "sha256": "df2fc27d6b8bf337353b32348f49ee5a9de804bc4fdd830d77e95587649a17ae",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/System.dll.xex",
+            "bytes": 991232,
+            "sha256": "c9b17bd268c401f46a9222e295055c14da450a0f87998e841e7b782c6a7aac49",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/System.Security.dll.xex",
+            "bytes": 114688,
+            "sha256": "80bc3b33f1b5721743040c5df6bc3080f2e53d817d4a06278ec6818a5b5cfc1a",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/System.Xml.dll.xex",
+            "bytes": 835584,
+            "sha256": "b43ff63d752f51f403f5e618a5d9d015431395540185467e00182510c48ff89a",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/UnityEngine.dll.xex",
+            "bytes": 897024,
+            "sha256": "7e57354ba8d1c6a74c1b60a65343ecf0b2e0dd3ff8f01c0d6551437b57d34869",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/UnityEngine.Networking.dll.xex",
+            "bytes": 479232,
+            "sha256": "55abd3a8dee13fb676c947652e74472a9c025a9f24ce42e56677060b05e96331",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/Media/Managed/UnityEngine.UI.dll.xex",
+            "bytes": 356352,
+            "sha256": "1b707358822c4ad7edc1ba8653c26dc637364098dd154a34cc9627aa388e20f8",
+            "magic": "XEX2"
+          },
+          {
+            "name": "NestBoud 360/NestBoud 360.xex",
+            "bytes": 10080256,
+            "sha256": "6ca2a95807e7d1e9dacc73b6cb7f571a2c6e9c5cf32ead9f79c3a177ff38d099",
+            "magic": "XEX2"
+          }
+        ],
+        "upstreamManifestMatches": 0,
+        "upstreamManifestMismatches": []
+      },
+      "launch": "NestBoud 360.xex",
+      "setup": [
+        "Extract the ZIP on your PC. Copy the contents of its NestBoud 360 folder to the shown NestBound directory.",
+        "Keep Media and all companion data intact. Launch NestBoud 360.xex; do not rename managed module XEX files inside Media."
+      ],
+      "notes": "No physical-console execution was performed.",
+      "downloadUrl": "https://jaredlevi.itch.io/nest-bound/purchase",
+      "downloadLinkKind": "publisher-page",
+      "fileName": "NestBoud 360.zip",
+      "sourceFile": "docs/tmp/xbox360-more-batch2/NestBoud 360.zip",
+      "assetEndpoint": "https://jaredlevi.itch.io/nest-bound/file/14222522"
+    },
+    {
+      "id": "slither360",
+      "title": "Slither360",
+      "author": "MathuwsGamerMW / lxMWxl",
+      "group": "games",
+      "version": "0.10.2-dev.1 · development build",
+      "source": "https://mathuwsgamermw.itch.io/slither360",
+      "publicDownloadUrl": "https://mathuwsgamermw.itch.io/slither360#download",
+      "sourceUrl": "https://mathuwsgamermw.itch.io/slither360/file/19738640",
+      "filename": "Slither360-v0.10.2-dev.1-PUBLIC.rar",
+      "description": "Experimental offline snake game with up to 64 bots, nine interface languages and local score records. Multiplayer is disabled.",
+      "runtime": "RGH/JTAG homebrew-capable Xbox 360, explicitly named by the author; no dashboard minimum or motherboard list is published.",
+      "temporary": "BadUpdate, ABadAvatar and Peer Pressure are not separately certified by this release.",
+      "prerequisites": "Controller. Keep assets/atlas.rgba beside default.xex in the original folder structure; no external commercial game data required.",
+      "installPath": "Hdd1:\\Homebrew\\Slither360\\",
+      "usbPath": "Usb0:\\Homebrew\\Slither360\\",
+      "launch": "default.xex",
+      "setup": [
+        "Extract the complete RAR on your computer.",
+        "Copy the contents of Slither360-v0.10.2-dev.1-PUBLIC into the shown app folder, retaining assets/atlas.rgba and the license files.",
+        "Launch default.xex with your homebrew dashboard or file manager."
+      ],
+      "notes": "Development build: multiplayer disabled; back up saves before upgrading. Optional LIVE Vision support is for local testing. Independent project; developer discloses AI-assisted code. The bundled checksum list matches default.xex, assets/atlas.rgba and five other files; LEIA-ME.txt has a stale listed hash. The original RAR remains unchanged and its actual SHA-256 is recorded. No physical-console execution was performed.",
+      "imageUrl": "https://img.itch.zone/aW1nLzMwNDQxMTA4LmpwZw==/original/Tjv%2BE3.jpg",
+      "imageCredit": "MathuwsGamerMW / lxMWxl · Slither360 official itch.io artwork",
+      "downloadFlow": "Choose the Slither360-v0.10.2-dev.1-PUBLIC.rar download on the original author page.",
+      "status": "ready",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/Slither360-v0.10.2-dev.1-PUBLIC.rar",
+      "expectedBytes": 1826917,
+      "expectedSha256": "a28c7ce96e817a4cd270fb461348c6806edbcea8283ac039655ac2e315fe4dbc",
+      "format": "RAR / XEX",
+      "formatVerification": {
+        "type": "RAR / XEX native XEX2",
+        "archiveTest": "7-Zip t: Everything is Ok",
+        "entryCount": 11,
+        "executables": [
+          {
+            "name": "Slither360-v0.10.2-dev.1-PUBLIC/default.xex",
+            "bytes": 692224,
+            "sha256": "a42deb70f1400467951860b84baf29cef7cef1a43275d2710d32f1af6b8cd424",
+            "magic": "XEX2"
+          }
+        ],
+        "upstreamManifestMatches": 7,
+        "upstreamManifestMismatches": [
+          {
+            "name": "Slither360-v0.10.2-dev.1-PUBLIC/LEIA-ME.txt",
+            "expectedSha256": "76ba63b671c1f3cce51aa8f0341ef2683c002d0c411d0ceef1d73c62d092d7c6",
+            "actualSha256": "bcadc2bb7ee705e75d893884ddd91e04c942196574cf8f5eb89c393957f8e405"
+          }
+        ]
+      },
+      "downloadUrl": "https://mathuwsgamermw.itch.io/slither360#download",
+      "downloadLinkKind": "publisher-page",
+      "fileName": "Slither360-v0.10.2-dev.1-PUBLIC.rar",
+      "sourceFile": "docs/tmp/xbox360-more-batch2/Slither360-v0.10.2-dev.1-PUBLIC.rar",
+      "assetEndpoint": "https://mathuwsgamermw.itch.io/slither360/file/19738640"
+    },
+    {
+      "id": "portal-clone",
+      "title": "Portal Clone · tech demo",
+      "author": "Cayama0811",
+      "group": "games",
+      "version": "Unversioned tech demo · reviewed 2026-11-02",
+      "source": "https://cayama0811.itch.io/portal-clone-xbox-360",
+      "publicDownloadUrl": "https://cayama0811.itch.io/portal-clone-xbox-360#download",
+      "sourceUrl": "https://cayama0811.itch.io/portal-clone-xbox-360/file/18822655",
+      "filename": "PortalCloneXbox.rar",
+      "description": "Small Portal-inspired Unity 5.4.1f experiment: a room for trying portals, rather than a full campaign or puzzle set.",
+      "runtime": "Xbox 360 capable of homebrew/unsigned software with a USB or external storage device supported by the existing setup. No firmware or model pin is published.",
+      "temporary": "The author does not certify specific temporary exploits or payloads.",
+      "prerequisites": "Retain the complete PortalClone directory and companion data. No retail Portal game is requested by the author.",
+      "installPath": "Hdd1:\\Homebrew\\PortalClone\\",
+      "usbPath": "Usb0:\\Homebrew\\PortalClone\\",
+      "setup": [
+        "Extract only the Xbox archive PortalCloneXbox.rar on your PC.",
+        "Copy the complete PortalClone directory into a game/homebrew folder scanned by Aurora, or open its XEX from a file manager.",
+        "Launch PortalClone\\default.xex with all Media files retained.",
+        "Launch PortalClone\\default.xex with all Media files retained."
+      ],
+      "notes": "Tech demo: no test chambers or actual puzzles. Controls: sticks move/look; RT/LT place blue/orange portals, A jumps, left-stick click sprints. No physical-console execution was performed.",
+      "downloadFlow": "Choose the PortalCloneXbox.rar download, not PortalClonePC.rar.",
+      "status": "ready",
+      "stagedFile": "docs/tmp/xbox360-more-batch2/PortalCloneXbox.rar",
+      "expectedBytes": 55805775,
+      "expectedSha256": "2dbc6172f0802f8adab9e2ce53bde3d5397785caf4fca0dfac5e5d45574630cd",
+      "imageUrl": "https://img.itch.zone/aW1nLzI5MzAzMDIwLnBuZw==/original/YCPzph.png",
+      "imageCredit": "Cayama0811 · official itch.io artwork",
+      "format": "RAR / XEX",
+      "formatVerification": {
+        "type": "RAR / XEX native XEX2",
+        "archiveTest": "7-Zip t: Everything is Ok",
+        "entryCount": 82,
+        "executables": [
+          {
+            "name": "PortalClone/default.xex",
+            "bytes": 8949760,
+            "sha256": "bcef1e3e215166973f2b011c1994beea02b9fad3d99d4ca6b9dacfe858f072a0",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/Assembly-CSharp.dll.xex",
+            "bytes": 32768,
+            "sha256": "7437d0e51f91ad71658f33577f75945422809b690590330323cb4961a5d8bd10",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/Mono.Posix.dll.xex",
+            "bytes": 151552,
+            "sha256": "9aaf9b5457aa72b417fe38508b010482b18f97a1b69635d09500a0338d07ee8c",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/Mono.Security.dll.xex",
+            "bytes": 200704,
+            "sha256": "cefff6a6d845061c36c5b13544e1d52032b65d99d2999476582d9b2f733ee26d",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/mscorlib.dll.xex",
+            "bytes": 1302528,
+            "sha256": "4798e62b133293ae755de94dfc863122e43a4ac55307e3a79cac9231d7e98af4",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/System.Configuration.dll.xex",
+            "bytes": 94208,
+            "sha256": "f4546bebf0deb28bcfd63acc0821d77c32f1d04047304a41a47a5f37396cfbce",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/System.Core.dll.xex",
+            "bytes": 241664,
+            "sha256": "58f06808c9448a79e5c4a7a8dc0a1e0bba8d815c202b3c0d1f1a044008cb0e2a",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/System.dll.xex",
+            "bytes": 843776,
+            "sha256": "79f5aa2f27719b4d6b93c4469923c77379e3ca99fb36668016c635192777160e",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/System.Security.dll.xex",
+            "bytes": 102400,
+            "sha256": "f8bc395fbe03c1acf7d8f5d58087c548cee39970f7f29273496f009559747132",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/System.Xml.dll.xex",
+            "bytes": 679936,
+            "sha256": "ce98e7e6c78484be9f625b0c4331236b5afe24951caa54437ea7f12631706eaa",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/UnityEngine.dll.xex",
+            "bytes": 815104,
+            "sha256": "5cf24f4a9a20976bb161c8b99605885878be0f27253ed3a506d99eb2506f1282",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/UnityEngine.Networking.dll.xex",
+            "bytes": 417792,
+            "sha256": "0c21c563bdfce9b6e1ed7be46b3e7bd3448f75eb021fd18f236300d6a3081f80",
+            "magic": "XEX2"
+          },
+          {
+            "name": "PortalClone/Media/Managed/UnityEngine.UI.dll.xex",
+            "bytes": 311296,
+            "sha256": "dae307c330cfb940aa6cd656f29ce842a2a0eaedd8d7044056725833ec339557",
+            "magic": "XEX2"
+          }
+        ],
+        "upstreamManifestMatches": 0,
+        "upstreamManifestMismatches": []
+      },
+      "launch": "default.xex",
+      "downloadUrl": "https://cayama0811.itch.io/portal-clone-xbox-360#download",
+      "downloadLinkKind": "publisher-page",
+      "fileName": "PortalCloneXbox.rar",
+      "sourceFile": "docs/tmp/xbox360-more-batch2/PortalCloneXbox.rar",
+      "assetEndpoint": "https://cayama0811.itch.io/portal-clone-xbox-360/file/18822655"
+    }
+  ]
+}

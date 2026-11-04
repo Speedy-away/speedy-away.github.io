@@ -1,0 +1,582 @@
+{
+  "reviewed": "2026-11-02",
+  "pages": [
+    "console/retro/wii.html",
+    "console/retro/gamecube.html",
+    "console/retro/ds.html",
+    "console/retro/3ds.html"
+  ],
+  "sources": [
+    {
+      "url": "https://wii.hacks.guide/get-started.html",
+      "supports": "Console-specific Wii, Wii mini and vWii routes; Homebrew Channel and backup preparation."
+    },
+    {
+      "url": "https://www.gc-forever.com/wiki/index.php?title=Booting_homebrew",
+      "supports": "GameCube boot methods and memory-card requirements."
+    },
+    {
+      "url": "https://dsi.cfw.guide/",
+      "supports": "DSi entry points, SD homebrew, optional Unlaunch and backups."
+    },
+    {
+      "url": "https://wiki.ds-homebrew.com/twilightmenu/installing-flashcard",
+      "supports": "Separate flashcard installation for DS / DS Lite."
+    },
+    {
+      "url": "https://3ds.hacks.guide/",
+      "supports": "2DS / 3DS family boot9strap and Luma3DS setup."
+    },
+    {
+      "url": "https://3ds.hacks.guide/checking-for-cfw.html",
+      "supports": "Check for existing CFW before choosing a stock-console route."
+    }
+  ],
+  "releaseVerification": "Exact tags and asset filenames read from official GitHub releases/latest and expanded_assets HTML. GitHub REST API was rate limited; no source archives or repositories were cloned.",
+  "images": [
+    {
+      "id": "wii",
+      "image": "/assets/images/expansion-nintendo-retro/wii.png",
+      "source": "https://wii.hacks.guide/images/get-started/wii.png",
+      "description": "Wii Hacks Guide console illustration",
+      "bytes": 1526072,
+      "width": 2721,
+      "height": 2247,
+      "sha256": "05899a829f612b58e346d44b91c1edf14084f06185f66234a48fc851fc8d1feb"
+    },
+    {
+      "id": "gamecube",
+      "image": "/assets/images/expansion-nintendo-retro/gamecube.png",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/GameCube-Console-Set.png/960px-GameCube-Console-Set.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:GameCube-Console-Set.png",
+      "description": "Nintendo GameCube console, controller and memory card",
+      "author": "Evan-Amos",
+      "license": "Public domain (PD-self)",
+      "bytes": 360251,
+      "width": 960,
+      "height": 539,
+      "sha256": "b695612ebdcf1cfd610ba9b0a52cf5757092ef890e712b4b949bcc10676c015d"
+    },
+    {
+      "id": "swiss",
+      "image": "/assets/images/expansion-nintendo-retro/swiss.png",
+      "source": "https://raw.githubusercontent.com/emukidid/swiss-gc/master/cube/swiss/source/images/backdrop.png",
+      "description": "Swiss interface backdrop",
+      "bytes": 5649,
+      "width": 320,
+      "height": 240,
+      "sha256": "4b83103fab30bfa3b17b080e65368b1cae38d062e9bd696186b4b01fa85c62ad"
+    },
+    {
+      "id": "priiloader",
+      "image": "/assets/images/expansion-nintendo-retro/priiloader.png",
+      "source": "https://raw.githubusercontent.com/DacoTaco/priiloader/master/Images/Logo.png",
+      "description": "Priiloader project logo",
+      "bytes": 496240,
+      "width": 2021,
+      "height": 404,
+      "sha256": "065352b4f546975de79ad4ca296eee16ef1b16df2ae2bdd836a508bcae506d5d"
+    },
+    {
+      "id": "usbloadergx",
+      "image": "/assets/images/expansion-nintendo-retro/usbloadergx.png",
+      "source": "https://raw.githubusercontent.com/wiidev/usbloadergx/enhanced/HBC/icon.png",
+      "description": "USB Loader GX Homebrew Channel banner",
+      "bytes": 7944,
+      "width": 128,
+      "height": 48,
+      "sha256": "bff3eba7e8774fdacbe12a76870d63c8bc50adcdde0ede1eeb54af1e2c11c9a2"
+    },
+    {
+      "id": "nintendont",
+      "image": "/assets/images/expansion-nintendo-retro/nintendont.png",
+      "source": "https://raw.githubusercontent.com/FIX94/Nintendont/c683db301c941a64e6fe5cef6ac079bd1a726074/nintendont/icon.png",
+      "description": "Nintendont Homebrew Channel banner",
+      "bytes": 1156,
+      "width": 128,
+      "height": 48,
+      "sha256": "419d3c533dc53cc6c4228d7dd3e273cbf18082c5362e70b061c9af64180b4dc6"
+    },
+    {
+      "id": "cleanrip",
+      "image": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+      "source": "https://raw.githubusercontent.com/emukidid/cleanrip/master/release/apps/CleanRip/icon.png",
+      "description": "CleanRip Homebrew Channel banner",
+      "bytes": 4290,
+      "width": 128,
+      "height": 48,
+      "sha256": "91ba0326b18a75686749f684307e6f3c0eff78fea3bb0cdfe612d3fb6e8653fd"
+    },
+    {
+      "id": "gcmm",
+      "image": "/assets/images/expansion-nintendo-retro/gcmm.png",
+      "source": "https://raw.githubusercontent.com/suloku/gcmm/master/hbc/icon.png",
+      "description": "GCMM Homebrew Channel banner",
+      "bytes": 7489,
+      "width": 128,
+      "height": 48,
+      "sha256": "fa3cf01e45aa15c0b039d5fdec6bdcd8ba27dde347653b67d991f339eae6c119"
+    },
+    {
+      "id": "twilight",
+      "image": "/assets/images/expansion-nintendo-retro/twilight.png",
+      "source": "https://raw.githubusercontent.com/DS-Homebrew/TWiLightMenu/master/logo.png",
+      "description": "TWiLight Menu++ project logo",
+      "bytes": 204347,
+      "width": 2766,
+      "height": 768,
+      "sha256": "8c0dc236824de7ecdcc136ce5004d0d51f1c938e298b95661a30af09485cbeab"
+    },
+    {
+      "id": "nds-bootstrap",
+      "image": "/assets/images/expansion-nintendo-retro/nds-bootstrap.png",
+      "source": "https://raw.githubusercontent.com/DS-Homebrew/nds-bootstrap/master/images/Anniversaries/10th/Logo.png",
+      "description": "nds-bootstrap tenth anniversary project logo",
+      "bytes": 16982,
+      "width": 1894,
+      "height": 216,
+      "sha256": "92bf3e38b5df0284dbc075b0980a07d2e45bc22f61af78f2391df42c54c84deb"
+    },
+    {
+      "id": "godmode9i",
+      "image": "/assets/images/expansion-nintendo-retro/godmode9i.png",
+      "source": "https://raw.githubusercontent.com/DS-Homebrew/GodMode9i/master/resources/screenshots/file-list.png",
+      "description": "GodMode9i file-list screenshot",
+      "bytes": 3165,
+      "width": 256,
+      "height": 384,
+      "sha256": "ea9e83e4f407ad1f70d125a4c3b76f3e855fd13c4d3d6cb6130b68d180470a09"
+    },
+    {
+      "id": "luma",
+      "image": "/assets/images/expansion-nintendo-retro/luma.png",
+      "source": "https://raw.githubusercontent.com/LumaTeam/Luma3DS/master/img/rosalina_menu_v135.png",
+      "description": "Luma3DS Rosalina menu screenshot",
+      "bytes": 5859,
+      "width": 320,
+      "height": 240,
+      "sha256": "3819cae61df3679dc3c064d84984dcd296c79fe5425c57cec43de0571b2dbbf5"
+    },
+    {
+      "id": "godmode9",
+      "image": "/assets/images/expansion-nintendo-retro/godmode9.png",
+      "source": "https://raw.githubusercontent.com/d0k3/GodMode9/master/resources/logo.png",
+      "description": "GodMode9 project logo",
+      "bytes": 9316,
+      "width": 371,
+      "height": 110,
+      "sha256": "d15f817d94e25cabffbbcf99b7669a593992393241b25d2263238f44405f808c"
+    },
+    {
+      "id": "universal-updater",
+      "image": "/assets/images/expansion-nintendo-retro/universal-updater.png",
+      "source": "https://raw.githubusercontent.com/Universal-Team/Universal-Updater/master/resources/2d-banner.png",
+      "description": "Universal-Updater project banner",
+      "bytes": 24475,
+      "width": 256,
+      "height": 128,
+      "sha256": "4e520437ba9303c492dd6f9af7b0a99ecbde808dff36d8be3568c0e0670340de"
+    },
+    {
+      "id": "checkpoint",
+      "image": "/assets/images/expansion-nintendo-retro/checkpoint.png",
+      "source": "https://raw.githubusercontent.com/BernardoGiordano/Checkpoint/master/3ds/assets/banner.png",
+      "description": "Checkpoint Nintendo 3DS banner",
+      "bytes": 5618,
+      "width": 256,
+      "height": 128,
+      "sha256": "af4b032b625798db9ef554ccd2fa2519fa4204fe085f00625dad348084181bac"
+    },
+    {
+      "id": "ftpd",
+      "image": "/assets/images/expansion-nintendo-retro/ftpd.png",
+      "source": "https://raw.githubusercontent.com/mtheall/ftpd/master/meta/banner.png",
+      "description": "ftpd project banner",
+      "bytes": 2124,
+      "width": 256,
+      "height": 128,
+      "sha256": "9a93238c85d12ba62a284a495b2c5d3d651f6ca6d106a6dddfb379d21ac9c7ba"
+    }
+  ],
+  "apps": [
+    {
+      "id": "priiloader",
+      "platform": "wii",
+      "title": "Priiloader",
+      "version": "0.10.0",
+      "description": "Boot before the Wii System Menu, apply menu fixes and launch homebrew. Follow the model-specific setup guide; Priiloader complements your NAND backup.",
+      "project": "https://github.com/DacoTaco/priiloader",
+      "guide": "https://wii.hacks.guide/priiloader.html",
+      "jobs": [
+        "wii-priiloader",
+        "wii-loadpriiloader"
+      ],
+      "labels": [
+        "Download installer ZIP",
+        "Download Load Priiloader"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/priiloader.png",
+      "tags": [
+        "System menu",
+        "Recovery",
+        "Wii / vWii"
+      ]
+    },
+    {
+      "id": "usbloadergx",
+      "platform": "wii",
+      "title": "USB Loader GX",
+      "version": "4.0 r1283",
+      "description": "Browse and launch Wii disc backups from compatible storage. Set up the cIOS appropriate to your console first; Wii, Wii mini and vWii use different instructions.",
+      "project": "https://github.com/wiidev/usbloadergx",
+      "guide": "https://wii.hacks.guide/usbloadergx.html",
+      "jobs": [
+        "wii-usbloadergx"
+      ],
+      "labels": [
+        "Download Wii ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/usbloadergx.png",
+      "tags": [
+        "USB / SD",
+        "Wii loader",
+        "cIOS required"
+      ]
+    },
+    {
+      "id": "nintendont",
+      "platform": "wii",
+      "title": "Nintendont",
+      "version": "build c683db3",
+      "description": "Run GameCube software on Wii or Wii U’s vWii with controller options and memory-card emulation. This Wii application does not run on an original GameCube.",
+      "project": "https://github.com/FIX94/Nintendont",
+      "jobs": [
+        "wii-nintendont-dol",
+        "wii-nintendont-meta",
+        "wii-nintendont-icon"
+      ],
+      "labels": [
+        "Download loader.dol",
+        "Get meta.xml",
+        "Get icon.png"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/nintendont.png",
+      "tags": [
+        "GameCube on Wii",
+        "Wii / vWii",
+        "DOL"
+      ]
+    },
+    {
+      "id": "cleanrip-wii",
+      "platform": "wii",
+      "title": "CleanRip · Wii build",
+      "version": "2.4",
+      "description": "Create disc backups from Wii or GameCube discs using a compatible Wii drive. Keep the resulting dump and its verification information together.",
+      "project": "https://github.com/emukidid/cleanrip",
+      "guide": "https://wii.hacks.guide/dump-games.html",
+      "jobs": [
+        "wii-cleanrip"
+      ],
+      "labels": [
+        "Download Wii ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+      "tags": [
+        "Disc backups",
+        "Wii DOL",
+        "Checksums"
+      ]
+    },
+    {
+      "id": "gcmm-wii",
+      "platform": "wii",
+      "title": "GCMM · memory-card manager",
+      "version": "1.5.2",
+      "description": "Back up and restore GameCube memory cards using a Wii with GameCube memory-card ports. The shared archive also includes the original GameCube build.",
+      "project": "https://github.com/suloku/gcmm",
+      "jobs": [
+        "gamecube-gcmm"
+      ],
+      "labels": [
+        "Download Wii / GC ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/gcmm.png",
+      "tags": [
+        "GameCube saves",
+        "RVL-001",
+        "Backups"
+      ]
+    },
+    {
+      "id": "swiss",
+      "platform": "gamecube",
+      "title": "Swiss",
+      "version": "0.6 r2119",
+      "description": "GameCube homebrew launcher and file browser with video options and support for SD adapters, optical-drive replacements and other devices. Choose the build for your boot method.",
+      "project": "https://github.com/emukidid/swiss-gc",
+      "guide": "https://www.gc-forever.com/wiki/index.php?title=Swiss/Usage",
+      "jobs": [
+        "gamecube-swiss"
+      ],
+      "labels": [
+        "Download Swiss 7z"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/gamecube.png",
+      "tags": [
+        "GameCube",
+        "DOL / GCI",
+        "SD adapters"
+      ]
+    },
+    {
+      "id": "gcmm",
+      "platform": "gamecube",
+      "title": "GCMM · GameCube saves",
+      "version": "1.5.2",
+      "description": "Export individual saves or a complete raw memory-card backup, then restore when needed. Choose the GameCube DOL from the shared release archive.",
+      "project": "https://github.com/suloku/gcmm",
+      "jobs": [
+        "gamecube-gcmm"
+      ],
+      "labels": [
+        "Download GC / Wii ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/gcmm.png",
+      "tags": [
+        "Memory cards",
+        "GCI / raw",
+        "Save backups"
+      ]
+    },
+    {
+      "id": "cleanrip-gamecube",
+      "platform": "gamecube",
+      "title": "CleanRip · GameCube build",
+      "version": "2.4",
+      "description": "Dump original GameCube discs to supported storage. This is the dedicated GameCube release, separate from the Wii package.",
+      "project": "https://github.com/emukidid/cleanrip",
+      "jobs": [
+        "gamecube-cleanrip"
+      ],
+      "labels": [
+        "Download GameCube ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+      "tags": [
+        "Disc dumping",
+        "GameCube DOL",
+        "Storage"
+      ]
+    },
+    {
+      "id": "twilight",
+      "platform": "ds",
+      "title": "TWiLight Menu++",
+      "version": "27.25.1",
+      "description": "A menu for DS-mode homebrew and nds-bootstrap. Choose the Flashcard package for a DS / DS Lite flashcart, or the DSi package for a prepared DSi SD card.",
+      "project": "https://github.com/DS-Homebrew/TWiLightMenu",
+      "guide": "https://wiki.ds-homebrew.com/twilightmenu/",
+      "jobs": [
+        "ds-twilight-flashcard",
+        "dsi-twilight"
+      ],
+      "labels": [
+        "Download Flashcard 7z",
+        "Download DSi 7z"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/twilight.png",
+      "tags": [
+        "DS / DSi",
+        "Flashcart / SD",
+        "Launcher"
+      ]
+    },
+    {
+      "id": "nds-bootstrap",
+      "platform": "ds",
+      "title": "nds-bootstrap",
+      "version": "2.17.0",
+      "description": "DS(i) loading backend used by TWiLight Menu++. Normally update it through your menu; standalone files are here for documented manual setups.",
+      "project": "https://github.com/DS-Homebrew/nds-bootstrap",
+      "guide": "https://wiki.ds-homebrew.com/nds-bootstrap/",
+      "jobs": [
+        "ds-nds-bootstrap"
+      ],
+      "labels": [
+        "Download bootstrap ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/nds-bootstrap.png",
+      "tags": [
+        "DS / DSi",
+        "Loading backend",
+        "Homebrew"
+      ]
+    },
+    {
+      "id": "godmode9i",
+      "platform": "ds",
+      "title": "GodMode9i",
+      "version": "3.10.0",
+      "description": "Browse files, inspect data and back up supported cartridges or saves. Cartridge access depends on the model and launch method; DSi Slot-1 dumping requires Unlaunch.",
+      "project": "https://github.com/DS-Homebrew/GodMode9i",
+      "guide": "https://wiki.ds-homebrew.com/godmode9i/",
+      "jobs": [
+        "ds-godmode9i"
+      ],
+      "labels": [
+        "Download DS / DSi 7z"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/godmode9i.png",
+      "tags": [
+        "File manager",
+        "Cartridge backups",
+        "DS / DSi"
+      ]
+    },
+    {
+      "id": "ftpd-ds",
+      "platform": "ds",
+      "title": "ftpd · Nintendo DS build",
+      "version": "3.2.1",
+      "description": "Transfer files over a local wireless network using an FTP client. Launch the NDS build through your compatible DS homebrew setup and connect to the address it displays.",
+      "project": "https://github.com/mtheall/ftpd",
+      "jobs": [
+        "ds-ftpd"
+      ],
+      "labels": [
+        "Download ftpd.nds"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/ftpd.png",
+      "tags": [
+        "NDS",
+        "FTP",
+        "Wireless transfers"
+      ]
+    },
+    {
+      "id": "luma",
+      "platform": "3ds",
+      "title": "Luma3DS CFW",
+      "version": "13.5",
+      "description": "Custom firmware for the 2DS / 3DS family, including New models. It runs through a persistent exploit such as boot9strap; an archive alone does not install CFW on a stock console.",
+      "project": "https://github.com/LumaTeam/Luma3DS",
+      "guide": "https://3ds.hacks.guide/",
+      "jobs": [
+        "3ds-luma"
+      ],
+      "labels": [
+        "Download Luma ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/luma.png",
+      "tags": [
+        "CFW",
+        "boot9strap",
+        "2DS / 3DS"
+      ]
+    },
+    {
+      "id": "godmode9",
+      "platform": "3ds",
+      "title": "GodMode9",
+      "version": "2.2.3",
+      "description": "A full-access file browser for NAND backups, cartridge dumping and system maintenance. Follow its usage guide before making writes to system storage.",
+      "project": "https://github.com/d0k3/GodMode9",
+      "guide": "https://3ds.hacks.guide/godmode9-usage.html",
+      "jobs": [
+        "3ds-godmode9"
+      ],
+      "labels": [
+        "Download GodMode9 ZIP"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/godmode9.png",
+      "tags": [
+        "FIRM payload",
+        "NAND backups",
+        "File manager"
+      ]
+    },
+    {
+      "id": "universal-updater",
+      "platform": "3ds",
+      "title": "Universal-Updater",
+      "version": "3.4.1",
+      "description": "Find, install and update homebrew from Universal-DB and other Unistores directly on the console. Includes app search, screenshots and a download queue.",
+      "project": "https://github.com/Universal-Team/Universal-Updater",
+      "guide": "https://universal-team.net/projects/universal-updater",
+      "jobs": [
+        "3ds-universal-updater"
+      ],
+      "labels": [
+        "Download CIA"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/universal-updater.png",
+      "tags": [
+        "App store",
+        "Homebrew updates",
+        "CIA"
+      ]
+    },
+    {
+      "id": "checkpoint",
+      "platform": "3ds",
+      "title": "Checkpoint",
+      "version": "5.3.0",
+      "description": "Back up and restore supported game saves and extdata. Use the 3DS CIA on a prepared 2DS / 3DS, and keep an original backup before restoring or editing saves.",
+      "project": "https://github.com/BernardoGiordano/Checkpoint",
+      "jobs": [
+        "3ds-checkpoint"
+      ],
+      "labels": [
+        "Download 3DS CIA"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/checkpoint.png",
+      "tags": [
+        "Save manager",
+        "Backups",
+        "3DS CIA"
+      ]
+    },
+    {
+      "id": "ftpd-3ds",
+      "platform": "3ds",
+      "title": "ftpd · Nintendo 3DS build",
+      "version": "3.2.1",
+      "description": "Access SD-card files from an FTP client on your local network. This CIA is the 2DS / 3DS build, separate from the Nintendo DS binary.",
+      "project": "https://github.com/mtheall/ftpd",
+      "jobs": [
+        "3ds-ftpd"
+      ],
+      "labels": [
+        "Download 3DS CIA"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/ftpd.png",
+      "tags": [
+        "FTP",
+        "SD files",
+        "2DS / 3DS"
+      ]
+    },
+    {
+      "id": "twilight-3ds",
+      "platform": "3ds",
+      "title": "TWiLight Menu++ · 3DS",
+      "version": "27.25.1",
+      "description": "Launch DS-mode homebrew on a CFW-enabled 2DS / 3DS. Follow the 3DS-specific installation steps; its package differs from the DS flashcard and DSi builds.",
+      "project": "https://github.com/DS-Homebrew/TWiLightMenu",
+      "guide": "https://wiki.ds-homebrew.com/twilightmenu/installing-3ds",
+      "jobs": [
+        "3ds-twilight"
+      ],
+      "labels": [
+        "Download 3DS 7z"
+      ],
+      "image": "/assets/images/expansion-nintendo-retro/twilight.png",
+      "tags": [
+        "DS mode",
+        "Launcher",
+        "3DS CFW"
+      ]
+    }
+  ]
+}

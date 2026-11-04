@@ -1,0 +1,368 @@
+{
+  "reviewed": "2026-11-02",
+  "pages": [
+    "console/psvita/index.html",
+    "console/psvita/apps.html",
+    "console/psvita/jailbreak.html",
+    "console/psvita/cfw.html"
+  ],
+  "video": {
+    "id": "9cbJqNYbk0w",
+    "url": "https://youtu.be/9cbJqNYbk0w?si=u2SMhpCYGH4NXMTb",
+    "title": "The Fastest & Easiest PlayStation Vita Jailbreak Ever!",
+    "creator": "Blaine Locklair",
+    "published": "2026-09-07",
+    "transcript": "English auto-generated transcript exported from YouTube and read on 2026-11-02. The written guide paraphrases the sequence and checks installation details against vita.hacks.guide.",
+    "transcriptCorrection": "The automatic captions misread the hostname as jailbreak.psv2.dev; the supplied host and maintained guide confirm jailbreak.psp2.dev.",
+    "chapters": [
+      {
+        "seconds": 0,
+        "label": "Preparation and setup"
+      },
+      {
+        "seconds": 54,
+        "label": "Browser configuration"
+      },
+      {
+        "seconds": 115,
+        "label": "Launching HENlo"
+      },
+      {
+        "seconds": 204,
+        "label": "Installing HENkaku and VitaDeploy"
+      },
+      {
+        "seconds": 240,
+        "label": "HENkaku settings"
+      },
+      {
+        "seconds": 283,
+        "label": "Installing firmware 3.65 and Ensō"
+      },
+      {
+        "seconds": 371,
+        "label": "iTLS installation"
+      },
+      {
+        "seconds": 471,
+        "label": "Final configuration"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://vita.hacks.guide/",
+      "role": "Firmware and model-specific starting route",
+      "checked": "2026-11-02"
+    },
+    {
+      "url": "https://jailbreak.psp2.dev/",
+      "role": "HENlo host advertises firmware 3.65–3.74; page inspected without launching the exploit",
+      "checked": "2026-11-02"
+    },
+    {
+      "url": "https://vita.hacks.guide/using-henlo.html",
+      "role": "HENlo bootstrap, HENkaku, VitaDeploy and unsafe-homebrew setup",
+      "checked": "2026-11-02"
+    },
+    {
+      "url": "https://vita.hacks.guide/creating-an-internal-memory-card.html",
+      "role": "Vita 1000 without official memory card requires a separate storage procedure",
+      "checked": "2026-11-02"
+    },
+    {
+      "url": "https://vita.hacks.guide/installing-enso.html",
+      "role": "VitaDeploy Quick 3.65 Install, Ensō persistence and reboot prompt",
+      "checked": "2026-11-02"
+    },
+    {
+      "url": "https://vita.hacks.guide/finalizing-setup.html",
+      "role": "iTLS, automatic-update setting and firmware-spoofing configuration",
+      "checked": "2026-11-02"
+    },
+    {
+      "url": "https://vita.hacks.guide/yamt.html",
+      "role": "SD2Vita storage and YAMT firmware restrictions",
+      "checked": "2026-11-02"
+    },
+    {
+      "url": "https://vita.hacks.guide/adrenaline.html",
+      "role": "Adrenaline PSP/PS1 setup and PSP firmware installation flow",
+      "checked": "2026-11-02"
+    }
+  ],
+  "apps": [
+    {
+      "id": "vitashell",
+      "title": "VitaShell",
+      "version": "v2.02",
+      "group": "essentials",
+      "description": "File manager for USB or FTP transfers, browsing storage and installing VPK homebrew packages. Useful as the first tool for adding the apps below.",
+      "image": "/assets/images/expansion-vita/vitashell.png",
+      "project": "https://github.com/TheOfficialFloW/VitaShell",
+      "download": "/downloads/archive/da0dfc594f62/VitaShell.vpk",
+      "original": "https://github.com/TheOfficialFloW/VitaShell/releases/download/v2.02/VitaShell.vpk",
+      "tags": [
+        "file manager",
+        "USB",
+        "FTP",
+        "VPK installer",
+        "homebrew"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "vitadeploy",
+      "title": "VitaDeploy",
+      "version": "v1.2.1",
+      "group": "essentials",
+      "description": "Setup toolbox with an app downloader, firmware installer, storage tools and a file manager. Its Quick 3.65 Install prepares firmware 3.65 and Ensō.",
+      "image": "/assets/images/expansion-vita/vitadeploy.png",
+      "project": "https://github.com/SKGleba/VitaDeploy",
+      "job": "vita-vitadeploy",
+      "tags": [
+        "setup",
+        "firmware",
+        "Ensō",
+        "app downloader",
+        "HENlo"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "apollo",
+      "title": "Apollo Save Tool",
+      "version": "v2.4.0",
+      "group": "essentials",
+      "description": "Manage PS Vita, PSP/Adrenaline and PS1 saves, with import, export, patches and resigning tools. Keep original save backups before editing.",
+      "image": "/assets/images/consoles/apollo-save-tool.png",
+      "project": "https://github.com/bucanero/apollo-vita",
+      "download": "/downloads/archive/fe91136b6bc0/apollo-vita.vpk",
+      "original": "https://github.com/bucanero/apollo-vita/releases/download/v2.4.0/apollo-vita.vpk",
+      "tags": [
+        "save manager",
+        "backup",
+        "restore",
+        "patch",
+        "resign",
+        "PSP",
+        "PS1"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "vitadb",
+      "title": "VitaDB Downloader",
+      "version": "v.2.8",
+      "group": "homebrew",
+      "description": "Browse Vita homebrew with categories, screenshots and author searches. Downloads supported VPKs and required data files from the VitaDB catalogue.",
+      "image": "/assets/images/expansion-vita/vitadb.png",
+      "project": "https://github.com/Rinnegatamante/VitaDB-Downloader",
+      "job": "vita-vitadb",
+      "tags": [
+        "homebrew catalogue",
+        "apps",
+        "downloads",
+        "VitaDB",
+        "updates"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "adrenaline",
+      "title": "Adrenaline",
+      "version": "v7",
+      "group": "homebrew",
+      "description": "PSP 6.61 custom-firmware environment using the Vita’s PSP emulator, with PSP and PS1 support. Follow the dedicated setup for its first-run firmware installation.",
+      "image": "/assets/images/expansion-vita/adrenaline.png",
+      "project": "https://github.com/TheOfficialFloW/Adrenaline",
+      "job": "vita-adrenaline",
+      "guide": "https://vita.hacks.guide/adrenaline.html",
+      "guideLabel": "PSP & PS1 setup",
+      "tags": [
+        "PSP",
+        "PS1",
+        "PlayStation",
+        "6.61",
+        "emulation"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "pkgj",
+      "title": "PKGj",
+      "version": "v0.57",
+      "group": "homebrew",
+      "description": "On-console package downloader with catalogue filters and download queues. Requires configured catalogue sources and any licences needed for the selected content.",
+      "image": "/assets/images/expansion-vita/pkgj.png",
+      "project": "https://github.com/blastrock/pkgj",
+      "job": "vita-pkgj",
+      "tags": [
+        "package manager",
+        "catalogue",
+        "download queue",
+        "PKG"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "autoplugin2",
+      "title": "AutoPlugin II",
+      "version": "2.19",
+      "group": "system",
+      "description": "Install and manage supported Vita plugins from a console interface. Check each plugin’s firmware requirements and existing configuration before enabling it.",
+      "image": "/assets/images/expansion-vita/autoplugin2.png",
+      "project": "https://github.com/ONElua/AutoPlugin2",
+      "job": "vita-autoplugin2",
+      "tags": [
+        "plugins",
+        "taiHEN",
+        "configuration",
+        "utilities"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "itls",
+      "title": "iTLS-Enso",
+      "version": "v3.2.1",
+      "group": "system",
+      "description": "TLS 1.2 and certificate support for older Vita firmware. The full package is for Ensō systems; the project also documents a separate browser-only installation.",
+      "image": "/assets/images/expansion-vita/itls.png",
+      "project": "https://github.com/SKGleba/iTLS-Enso",
+      "job": "vita-itls",
+      "guide": "https://vita.hacks.guide/finalizing-setup.html",
+      "guideLabel": "Final setup instructions",
+      "tags": [
+        "TLS 1.2",
+        "HTTPS",
+        "certificates",
+        "Ensō",
+        "browser"
+      ],
+      "sourceChecked": "2026-11-02"
+    },
+    {
+      "id": "yamt",
+      "title": "YAMT · SD2Vita storage",
+      "version": "v4.0",
+      "group": "system",
+      "description": "Storage driver for SD2Vita and other supported devices. Requires Ensō on firmware 3.60 or 3.65; VitaDeploy’s Quick 3.65 Install already includes YAMT.",
+      "image": "/assets/images/expansion-vita/yamt.png",
+      "project": "https://github.com/SKGleba/yamt-vita",
+      "job": "vita-yamt",
+      "guide": "https://vita.hacks.guide/yamt.html",
+      "guideLabel": "SD2Vita setup guide",
+      "tags": [
+        "SD2Vita",
+        "microSD",
+        "storage",
+        "YAMT",
+        "3.60",
+        "3.65",
+        "Ensō"
+      ],
+      "sourceChecked": "2026-11-02"
+    }
+  ],
+  "assets": [
+    {
+      "id": "vitadeploy",
+      "file": "/assets/images/expansion-vita/vitadeploy.png",
+      "source": "https://raw.githubusercontent.com/SKGleba/VitaDeploy/main/res/icon0.png",
+      "bytes": 8743,
+      "sha256": "90ef286f1d18909e0d57b3147fb7ec8753e90b65f634cc9423485c5cde6b6e85",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "vitashell",
+      "file": "/assets/images/expansion-vita/vitashell.png",
+      "source": "https://raw.githubusercontent.com/TheOfficialFloW/VitaShell/master/pkg/sce_sys/icon0.png",
+      "bytes": 2552,
+      "sha256": "a3a4c8f0d2d8c3d6de1f2228fc4b162a70bfd96ac3010df47e01a8655119f4a8",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "adrenaline",
+      "file": "/assets/images/expansion-vita/adrenaline.png",
+      "source": "https://raw.githubusercontent.com/TheOfficialFloW/Adrenaline/master/bubble/pkg/sce_sys/icon0.png",
+      "bytes": 7348,
+      "sha256": "b4cdad16380f49c1cf31bdd6ad1279d14d157d07e3fb9c4cd58f4ab512f245cd",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "autoplugin2",
+      "file": "/assets/images/expansion-vita/autoplugin2.png",
+      "source": "https://raw.githubusercontent.com/ONElua/AutoPlugin2/master/AUTOPLUG2/sce_sys/icon0.png",
+      "bytes": 4049,
+      "sha256": "a05d20cb65855baff547b131e3bd1f715e7f81a6cc4caeabad6ecee27123e54a",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "vitadb",
+      "file": "/assets/images/expansion-vita/vitadb.png",
+      "source": "https://raw.githubusercontent.com/Rinnegatamante/VitaDB-Downloader/main/livearea/icon0.png",
+      "bytes": 7024,
+      "sha256": "31becca7e4e5093e8c88233592dd2f6197617b79c72f9d7828c0f2185f876fce",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "pkgj",
+      "file": "/assets/images/expansion-vita/pkgj.png",
+      "source": "https://raw.githubusercontent.com/blastrock/pkgj/master/assets/sce_sys/icon0.png",
+      "bytes": 2404,
+      "sha256": "653e09a3a3fa94a0412d4a15a15e3654b1d768fd04ff1a5b42b3638a57a61a2a",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "itls",
+      "file": "/assets/images/expansion-vita/itls.png",
+      "source": "https://raw.githubusercontent.com/SKGleba/iTLS-Enso/master/sce_sys/icon0.png",
+      "bytes": 9883,
+      "sha256": "b9c96fdea24b1917c23cdec29d26b33df1d7c6582769f539dc68f03b6c2d0680",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "yamt",
+      "file": "/assets/images/expansion-vita/yamt.png",
+      "source": "https://raw.githubusercontent.com/SKGleba/yamt-vita/master/res/icon0.png",
+      "bytes": 2320,
+      "sha256": "7e27649caa623591812c843516468300fea2622434184bb540630550225b80e5",
+      "status": "downloaded",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "id": "jailbreak-video",
+      "file": "/assets/images/expansion-vita/jailbreak-video.jpg",
+      "source": "https://i.ytimg.com/vi/9cbJqNYbk0w/hqdefault.jpg",
+      "bytes": 23322,
+      "sha256": "6b8a3514ae11e7fb7a646170d45689108a29a83ee2eca9a604bbda24bf76905e",
+      "status": "downloaded",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "id": "apollo",
+      "file": "/assets/images/consoles/apollo-save-tool.png",
+      "source": "Existing Apollo Save Tool artwork used by scripts/apollo-tools.cjs",
+      "bytes": 3725062,
+      "sha256": "7c087b73a016e09212fc0e6d6181e522f2c34a2d23e8eac499aff0ef73de5069",
+      "status": "reused"
+    }
+  ]
+}

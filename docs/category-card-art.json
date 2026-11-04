@@ -1,0 +1,3606 @@
+{
+  "version": "category-card-art-v1",
+  "policy": "Native HTML/CSS composition of unchanged existing local artwork; sourcePage records identify where projects are listed. No emulator/platform compatibility inferred.",
+  "destinations": {
+    "/console/3ds/apps.html": {
+      "title": "Apps & save tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/luma.png",
+          "alt": "Luma3DS CFW",
+          "label": "Luma3DS CFW",
+          "sourcePage": "console/3ds/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/godmode9.png",
+          "alt": "GodMode9",
+          "label": "GodMode9",
+          "sourcePage": "console/3ds/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/universal-updater.png",
+          "alt": "Universal-Updater",
+          "label": "Universal-Updater",
+          "sourcePage": "console/3ds/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/checkpoint.png",
+          "alt": "Checkpoint",
+          "label": "Checkpoint",
+          "sourcePage": "console/3ds/apps.html"
+        }
+      ]
+    },
+    "/console/3ds/emulators.html": {
+      "title": "Emulators & native GBA mode",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/3ds-more/apps/daedalusx64.png",
+          "alt": "DaedalusX64-3DS",
+          "label": "DaedalusX64-3DS",
+          "sourcePage": "console/3ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/apps/snes9x-3ds.png",
+          "alt": "Snes9x (updated fork)",
+          "label": "Snes9x (updated fork)",
+          "sourcePage": "console/3ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/apps/red-viper.png",
+          "alt": "Red Viper",
+          "label": "Red Viper",
+          "sourcePage": "console/3ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/apps/mgba.png",
+          "alt": "mGBA",
+          "label": "mGBA",
+          "sourcePage": "console/3ds/emulators.html"
+        }
+      ]
+    },
+    "/console/3ds/game-downloads.html": {
+      "title": "Nintendo 2DS & 3DS game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/3ds-more/apps/super-haxagon.png",
+          "alt": "Super-Haxagon",
+          "label": "Super-Haxagon",
+          "sourcePage": "console/3ds/games.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/games.svg",
+          "alt": "prboom3ds",
+          "label": "prboom3ds",
+          "sourcePage": "console/3ds/games.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/apps/flappy-bird.png",
+          "alt": "Flappy-Bird",
+          "label": "Flappy-Bird",
+          "sourcePage": "console/3ds/games.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/hero.svg",
+          "alt": "Nintendo 2DS & 3DS",
+          "label": "Nintendo 2DS & 3DS",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/3ds/games.html": {
+      "title": "Homebrew games & ports",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/3ds-more/apps/super-haxagon.png",
+          "alt": "Super-Haxagon",
+          "label": "Super-Haxagon",
+          "sourcePage": "console/3ds/games.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/games.svg",
+          "alt": "prboom3ds",
+          "label": "prboom3ds",
+          "sourcePage": "console/3ds/games.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/apps/flappy-bird.png",
+          "alt": "Flappy-Bird",
+          "label": "Flappy-Bird",
+          "sourcePage": "console/3ds/games.html"
+        }
+      ]
+    },
+    "/console/3ds/setup.html": {
+      "title": "CFW & core setup",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/luma.png",
+          "alt": "CFW & core setup",
+          "label": "CFW & core setup",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/3ds-more/hero.svg",
+          "alt": "Nintendo 2DS & 3DS",
+          "label": "Nintendo 2DS & 3DS",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ds/apps.html": {
+      "title": "Apps & launch tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/twilight.png",
+          "alt": "TWiLight Menu++",
+          "label": "TWiLight Menu++",
+          "sourcePage": "console/ds/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/nds-bootstrap.png",
+          "alt": "nds-bootstrap",
+          "label": "nds-bootstrap",
+          "sourcePage": "console/ds/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/godmode9i.png",
+          "alt": "GodMode9i",
+          "label": "GodMode9i",
+          "sourcePage": "console/ds/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/ftpd.png",
+          "alt": "ftpd · Nintendo DS build",
+          "label": "ftpd · Nintendo DS build",
+          "sourcePage": "console/ds/apps.html"
+        }
+      ]
+    },
+    "/console/ds/emulators.html": {
+      "title": "Emulators on DS",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/ds-dsi-more/nesds.png",
+          "alt": "nesDS",
+          "label": "nesDS",
+          "sourcePage": "console/ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/gameyob.png",
+          "alt": "GameYob · mavica build",
+          "label": "GameYob · mavica build",
+          "sourcePage": "console/ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/nitrografx.png",
+          "alt": "NitroGrafx",
+          "label": "NitroGrafx",
+          "sourcePage": "console/ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/s8ds.png",
+          "alt": "S8DS",
+          "label": "S8DS",
+          "sourcePage": "console/ds/emulators.html"
+        }
+      ]
+    },
+    "/console/ds/game-downloads.html": {
+      "title": "Nintendo DS & DSi game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/ds-dsi-more/wordle-ds.png",
+          "alt": "Wordle DS",
+          "label": "Wordle DS",
+          "sourcePage": "console/ds/games.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/portalds.png",
+          "alt": "Aperture Science DS · portalDS",
+          "label": "Aperture Science DS · portalDS",
+          "sourcePage": "console/ds/games.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/counter-strike-ds.png",
+          "alt": "Counter Strike DS",
+          "label": "Counter Strike DS",
+          "sourcePage": "console/ds/games.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/twilight.png",
+          "alt": "Nintendo DS & DSi",
+          "label": "Nintendo DS & DSi",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ds/games.html": {
+      "title": "Homebrew games & ports",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/ds-dsi-more/wordle-ds.png",
+          "alt": "Wordle DS",
+          "label": "Wordle DS",
+          "sourcePage": "console/ds/games.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/portalds.png",
+          "alt": "Aperture Science DS · portalDS",
+          "label": "Aperture Science DS · portalDS",
+          "sourcePage": "console/ds/games.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/counter-strike-ds.png",
+          "alt": "Counter Strike DS",
+          "label": "Counter Strike DS",
+          "sourcePage": "console/ds/games.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/punch-a-rooney.png",
+          "alt": "PUNCH-A-ROONEY!",
+          "label": "PUNCH-A-ROONEY!",
+          "sourcePage": "console/ds/games.html"
+        }
+      ]
+    },
+    "/console/ds/setup.html": {
+      "title": "Flashcart & DSi setup",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/twilight.png",
+          "alt": "Flashcart & DSi setup",
+          "label": "Flashcart & DSi setup",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ds/themes.html": {
+      "title": "TWiLight Menu++ skins",
+      "kind": "themes",
+      "images": [
+        {
+          "src": "/assets/images/ds-dsi-more/switch-basic-light.png",
+          "alt": "Switch - Basic Light",
+          "label": "Switch - Basic Light",
+          "sourcePage": "console/ds/themes.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/switch-basic-dark.png",
+          "alt": "Switch - Basic Dark",
+          "label": "Switch - Basic Dark",
+          "sourcePage": "console/ds/themes.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/3darks.png",
+          "alt": "3DarkS",
+          "label": "3DarkS",
+          "sourcePage": "console/ds/themes.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/sky.png",
+          "alt": "Sky",
+          "label": "Sky",
+          "sourcePage": "console/ds/themes.html"
+        }
+      ]
+    },
+    "/console/game-downloads/index.html": {
+      "title": "Console game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/ps2-expansion/supertux.svg",
+          "alt": "SuperTux",
+          "label": "SuperTux",
+          "sourcePage": "console/ps2/games.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gamecube.png",
+          "alt": "Homebrew on an unmodified GameCube",
+          "label": "Homebrew on an unmodified GameCube",
+          "sourcePage": "console/retro/gamecube.html"
+        },
+        {
+          "src": "/assets/images/wii-more/cavestory.png",
+          "alt": "Cave Story",
+          "label": "Cave Story",
+          "sourcePage": "console/wii/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/Connect4.png",
+          "alt": "Connect4",
+          "label": "Connect4",
+          "sourcePage": "console/wiiu/games.html"
+        }
+      ]
+    },
+    "/console/gamecube/apps.html": {
+      "title": "Swiss & homebrew loading",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gamecube.png",
+          "alt": "Swiss",
+          "label": "Swiss",
+          "sourcePage": "console/gamecube/apps.html"
+        }
+      ]
+    },
+    "/console/gamecube/boot-methods.html": {
+      "title": "Homebrew boot methods",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gamecube.png",
+          "alt": "Homebrew boot methods",
+          "label": "Homebrew boot methods",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/gamecube/game-downloads.html": {
+      "title": "Nintendo GameCube game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gamecube.png",
+          "alt": "Homebrew on an unmodified GameCube",
+          "label": "Homebrew on an unmodified GameCube",
+          "sourcePage": "console/retro/gamecube.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gcmm.png",
+          "alt": "Storage & hardware boot methods",
+          "label": "Storage & hardware boot methods",
+          "sourcePage": "console/retro/gamecube.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+          "alt": "CleanRip · GameCube build",
+          "label": "CleanRip · GameCube build",
+          "sourcePage": "console/retro/gamecube.html"
+        }
+      ]
+    },
+    "/console/gamecube/save-disc-tools.html": {
+      "title": "Disc & memory-card tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gcmm.png",
+          "alt": "GCMM · GameCube saves",
+          "label": "GCMM · GameCube saves",
+          "sourcePage": "console/gamecube/save-disc-tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+          "alt": "CleanRip · GameCube build",
+          "label": "CleanRip · GameCube build",
+          "sourcePage": "console/gamecube/save-disc-tools.html"
+        }
+      ]
+    },
+    "/console/gamecube/setup.html": {
+      "title": "App installation & documentation",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+          "alt": "App installation & documentation",
+          "label": "App installation & documentation",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gamecube.png",
+          "alt": "Nintendo GameCube",
+          "label": "Nintendo GameCube",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/mods/ps4/index.html": {
+      "title": "PS4/PS5 Mods / Mod Menus",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/gta52.png",
+          "alt": "Grand Theft Auto V",
+          "label": "Grand Theft Auto V",
+          "sourcePage": "console/mods/ps4/index.html"
+        },
+        {
+          "src": "/assets/images/rdr2.png",
+          "alt": "Red Dead Redemption 2",
+          "label": "Red Dead Redemption 2",
+          "sourcePage": "console/mods/ps4/index.html"
+        },
+        {
+          "src": "/assets/images/covers/cod-black-ops-3.jpg",
+          "alt": "Call of Duty",
+          "label": "Call of Duty",
+          "sourcePage": "console/mods/ps4/index.html"
+        },
+        {
+          "src": "/assets/images/ps4-ps5/dying-light-2.jpg",
+          "alt": "Other Games",
+          "label": "Other Games",
+          "sourcePage": "console/mods/ps4/index.html"
+        }
+      ]
+    },
+    "/console/nintendo-switch-2.html?view=all": {
+      "title": "Nintendo Switch 2 full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch2-console/console.jpg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch-2.svg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch-2/civswitch.html": {
+      "title": "CivSwitch entry point",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch2-console/console.jpg",
+          "alt": "CivSwitch entry point",
+          "label": "CivSwitch entry point",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch-2.svg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch-2/game-downloads.html": {
+      "title": "Nintendo Switch 2 game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch-2.svg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/switch2-console/console.jpg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch-2/game-tools.html": {
+      "title": "Game & asset tools",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/switch2-console/joy-con-2.jpg",
+          "alt": "Game & asset tools",
+          "label": "Game & asset tools",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/switch2-console/console.jpg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch-2.svg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch-2/ns2jb.html": {
+      "title": "ns2jb research",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch-2.svg",
+          "alt": "ns2jb research",
+          "label": "ns2jb research",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/switch2-console/console.jpg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch-2/save-tools.html": {
+      "title": "Save backup tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch2-console/dock.jpg",
+          "alt": "Save backup tools",
+          "label": "Save backup tools",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/switch2-console/console.jpg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch-2.svg",
+          "alt": "Nintendo Switch 2",
+          "label": "Nintendo Switch 2",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch.html?view=all": {
+      "title": "Nintendo Switch full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch-homebrew/appstore.png",
+          "alt": "Homebrew App Store",
+          "label": "Homebrew App Store",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/mGBA.png",
+          "alt": "mGBA",
+          "label": "mGBA",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/OpenSupaplex.png",
+          "alt": "OpenSupaplex",
+          "label": "OpenSupaplex",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        }
+      ]
+    },
+    "/console/nintendo-switch/app-store.html": {
+      "title": "Homebrew App Store",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch-homebrew/appstore.png",
+          "alt": "Homebrew App Store 2.3.2",
+          "label": "Homebrew App Store 2.3.2",
+          "sourcePage": "console/nintendo-switch/app-store.html"
+        },
+        {
+          "src": "/assets/images/consoles/nintendo-switch.jpg",
+          "alt": "Nintendo Switch",
+          "label": "Nintendo Switch",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch.svg",
+          "alt": "Nintendo Switch",
+          "label": "Nintendo Switch",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch/apps.html": {
+      "title": "Apps & utilities",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch-homebrew/appstore.png",
+          "alt": "Homebrew App Store",
+          "label": "Homebrew App Store",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/hbmenu.png",
+          "alt": "Homebrew Menu",
+          "label": "Homebrew Menu",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/jksv.png",
+          "alt": "JKSV",
+          "label": "JKSV",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/Checkpoint.png",
+          "alt": "Checkpoint",
+          "label": "Checkpoint",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        }
+      ]
+    },
+    "/console/nintendo-switch/apps.html?category=Emulators": {
+      "title": "Emulators on Switch",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/switch-homebrew/mGBA.png",
+          "alt": "mGBA",
+          "label": "mGBA",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/melonDS.png",
+          "alt": "melonDS",
+          "label": "melonDS",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/pNES.png",
+          "alt": "pNES",
+          "label": "pNES",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/psnes.png",
+          "alt": "pSNES",
+          "label": "pSNES",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        }
+      ]
+    },
+    "/console/nintendo-switch/apps.html?category=Homebrew%20games": {
+      "title": "Homebrew games",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/switch-homebrew/OpenSupaplex.png",
+          "alt": "OpenSupaplex",
+          "label": "OpenSupaplex",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/2048.png",
+          "alt": "2048",
+          "label": "2048",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/SuDokuL.png",
+          "alt": "SuDokuL",
+          "label": "SuDokuL",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/BrogueCE.png",
+          "alt": "BrogueCE",
+          "label": "BrogueCE",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        }
+      ]
+    },
+    "/console/nintendo-switch/cfw.html": {
+      "title": "CFW & bootloader",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch-core-tools/atmosphere-banner.png",
+          "alt": "CFW & bootloader",
+          "label": "CFW & bootloader",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch.svg",
+          "alt": "Nintendo Switch",
+          "label": "Nintendo Switch",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch/firmware.html": {
+      "title": "Firmware archive",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch-themes/boot-recovery.svg",
+          "alt": "Firmware archive",
+          "label": "Firmware archive",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch.svg",
+          "alt": "Nintendo Switch",
+          "label": "Nintendo Switch",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch/game-downloads.html": {
+      "title": "Nintendo Switch game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/switch-homebrew/OpenSupaplex.png",
+          "alt": "OpenSupaplex",
+          "label": "OpenSupaplex",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/2048.png",
+          "alt": "2048",
+          "label": "2048",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/switch-homebrew/SuDokuL.png",
+          "alt": "SuDokuL",
+          "label": "SuDokuL",
+          "sourcePage": "console/nintendo-switch/apps.html"
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch.svg",
+          "alt": "Nintendo Switch",
+          "label": "Nintendo Switch",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch/mods.html": {
+      "title": "Game mods",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/switch-game-mods/racing.svg",
+          "alt": "CTGP Deluxe",
+          "label": "CTGP Deluxe",
+          "sourcePage": "console/nintendo-switch/mods.html"
+        },
+        {
+          "src": "/assets/images/switch-card-recovery/mario-kart.jpg",
+          "alt": "Nextendo country flag · GB · 3.0.5",
+          "label": "Nextendo country flag · GB · 3.0.5",
+          "sourcePage": "console/nintendo-switch/mods.html"
+        },
+        {
+          "src": "/assets/images/switch-game-mods/arena.svg",
+          "alt": "Ultimate Training Modpack",
+          "label": "Ultimate Training Modpack",
+          "sourcePage": "console/nintendo-switch/mods.html"
+        },
+        {
+          "src": "/assets/images/switch-card-recovery/playable-bosses.png",
+          "alt": "Competitive Playable Bosses",
+          "label": "Competitive Playable Bosses",
+          "sourcePage": "console/nintendo-switch/mods.html"
+        }
+      ]
+    },
+    "/console/nintendo-switch/setup.html": {
+      "title": "Homebrew setup",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/switch-themes/switch-setup.svg",
+          "alt": "Homebrew setup",
+          "label": "Homebrew setup",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/nintendo-switch.svg",
+          "alt": "Nintendo Switch",
+          "label": "Nintendo Switch",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/nintendo-switch/themes.html": {
+      "title": "Themes & customization",
+      "kind": "themes",
+      "images": [
+        {
+          "src": "/assets/images/switch-themes/1997E.webp",
+          "alt": "SWITCH2 Neon Nebula",
+          "label": "SWITCH2 Neon Nebula",
+          "sourcePage": "console/nintendo-switch/themes.html"
+        },
+        {
+          "src": "/assets/images/switch-themes/1984E.webp",
+          "alt": "Cozy Snorlax Adventures",
+          "label": "Cozy Snorlax Adventures",
+          "sourcePage": "console/nintendo-switch/themes.html"
+        },
+        {
+          "src": "/assets/images/switch-themes/1E93C.webp",
+          "alt": "Pixel Forest",
+          "label": "Pixel Forest",
+          "sourcePage": "console/nintendo-switch/themes.html"
+        },
+        {
+          "src": "/assets/images/switch-themes/18815.webp",
+          "alt": "PS5 Theme",
+          "label": "PS5 Theme",
+          "sourcePage": "console/nintendo-switch/themes.html"
+        }
+      ]
+    },
+    "/console/ps2/apps.html": {
+      "title": "Apps & tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps2/opl.png",
+          "alt": "Open PS2 Loader",
+          "label": "Open PS2 Loader",
+          "sourcePage": "console/ps2/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps2/wlaunchelf-screen.png",
+          "alt": "wLaunchELF",
+          "label": "wLaunchELF",
+          "sourcePage": "console/ps2/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps2/apollo.png",
+          "alt": "Apollo Save Tool · PS2",
+          "label": "Apollo Save Tool · PS2",
+          "sourcePage": "console/ps2/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps2/ps2ident.png",
+          "alt": "PS2Ident",
+          "label": "PS2Ident",
+          "sourcePage": "console/ps2/apps.html"
+        }
+      ]
+    },
+    "/console/ps2/emulators.html": {
+      "title": "Emulators on PS2",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/ps2-expansion/fceumm.svg",
+          "alt": "FCEUmm-PS2",
+          "label": "FCEUmm-PS2",
+          "sourcePage": "console/ps2/emulators.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/picodrive.svg",
+          "alt": "PicoDrive",
+          "label": "PicoDrive",
+          "sourcePage": "console/ps2/emulators.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/ps2me.svg",
+          "alt": "PS2ME",
+          "label": "PS2ME",
+          "sourcePage": "console/ps2/emulators.html"
+        }
+      ]
+    },
+    "/console/ps2/game-downloads.html": {
+      "title": "PlayStation 2 game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/ps2-expansion/supertux.svg",
+          "alt": "SuperTux",
+          "label": "SuperTux",
+          "sourcePage": "console/ps2/games.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/quake.svg",
+          "alt": "Quake · PS2 engine port",
+          "label": "Quake · PS2 engine port",
+          "sourcePage": "console/ps2/games.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/quake2.svg",
+          "alt": "Quake II · PS2 engine port",
+          "label": "Quake II · PS2 engine port",
+          "sourcePage": "console/ps2/games.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps2/fmcb.png",
+          "alt": "PlayStation 2",
+          "label": "PlayStation 2",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ps2/games.html": {
+      "title": "Homebrew games & ports",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/ps2-expansion/supertux.svg",
+          "alt": "SuperTux",
+          "label": "SuperTux",
+          "sourcePage": "console/ps2/games.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/quake.svg",
+          "alt": "Quake · PS2 engine port",
+          "label": "Quake · PS2 engine port",
+          "sourcePage": "console/ps2/games.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/quake2.svg",
+          "alt": "Quake II · PS2 engine port",
+          "label": "Quake II · PS2 engine port",
+          "sourcePage": "console/ps2/games.html"
+        }
+      ]
+    },
+    "/console/ps2/setup.html": {
+      "title": "Softmods & boot methods",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps2/fmcb.png",
+          "alt": "Softmods & boot methods",
+          "label": "Softmods & boot methods",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ps2/storage.html": {
+      "title": "Storage & installation",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps2/opl.png",
+          "alt": "USB & app folders",
+          "label": "USB & app folders",
+          "sourcePage": "console/ps2/storage.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps2/apollo.png",
+          "alt": "Saves & virtual memory cards",
+          "label": "Saves & virtual memory cards",
+          "sourcePage": "console/ps2/storage.html"
+        }
+      ]
+    },
+    "/console/ps2/themes.html": {
+      "title": "OPL themes",
+      "kind": "themes",
+      "images": [
+        {
+          "src": "/assets/images/ps2-expansion/deckyos.png",
+          "alt": "DeckyOS · OPL theme",
+          "label": "DeckyOS · OPL theme",
+          "sourcePage": "console/ps2/themes.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/pados.png",
+          "alt": "PadOS · OPL theme",
+          "label": "PadOS · OPL theme",
+          "sourcePage": "console/ps2/themes.html"
+        }
+      ]
+    },
+    "/console/ps3/apps.html": {
+      "title": "PS3 apps",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/ps3-resources/multiman.png",
+          "alt": "multiMAN",
+          "label": "multiMAN",
+          "sourcePage": "console/ps3/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps3/irisman.png",
+          "alt": "IRISMAN",
+          "label": "IRISMAN",
+          "sourcePage": "console/ps3/apps.html"
+        },
+        {
+          "src": "/assets/images/ps3-resources/pkgi.png",
+          "alt": "PKGi · PS3",
+          "label": "PKGi · PS3",
+          "sourcePage": "console/ps3/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps3/prepiso.png",
+          "alt": "prepISO",
+          "label": "prepISO",
+          "sourcePage": "console/ps3/apps.html"
+        }
+      ]
+    },
+    "/console/ps3/downloads.html": {
+      "title": "PS3 downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/consoles/ps3.png",
+          "alt": "Console file list",
+          "label": "Console file list",
+          "sourcePage": "console/ps3/downloads.html"
+        },
+        {
+          "src": "/assets/images/menu-previews/ps3-base/project-safe-candidate-XGKwgja1B00.jpg",
+          "alt": "Desktop RTM helpers",
+          "label": "Desktop RTM helpers",
+          "sourcePage": "console/ps3/downloads.html"
+        },
+        {
+          "src": "/assets/images/ps3-resources/vimm.png",
+          "alt": "Vimm’s Lair · PS3",
+          "label": "Vimm’s Lair · PS3",
+          "sourcePage": "console/ps3/downloads.html"
+        }
+      ]
+    },
+    "/console/ps3/emulators.html": {
+      "title": "PS3 emulators",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/emulators/retroarch.png",
+          "alt": "RetroArch · PS3",
+          "label": "RetroArch · PS3",
+          "sourcePage": "console/ps3/emulators.html"
+        },
+        {
+          "src": "/assets/images/platform-logos/ps3.svg",
+          "alt": "PS3",
+          "label": "PS3",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ps3/game-downloads.html": {
+      "title": "PlayStation 3 game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/platform-logos/ps3.svg",
+          "alt": "PlayStation 3",
+          "label": "PlayStation 3",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/consoles/ps3.png",
+          "alt": "PlayStation 3",
+          "label": "PlayStation 3",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ps3/jailbreaks.html": {
+      "title": "PS3 jailbreaks",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/ps3-resources/ps3xploit.jpg",
+          "alt": "HEN on HFW 4.93.1",
+          "label": "HEN on HFW 4.93.1",
+          "sourcePage": "console/ps3/jailbreaks.html"
+        },
+        {
+          "src": "/assets/images/consoles/ps3.png",
+          "alt": "Evilnat 4.93 CFW",
+          "label": "Evilnat 4.93 CFW",
+          "sourcePage": "console/ps3/jailbreaks.html"
+        }
+      ]
+    },
+    "/console/ps3/mods.html": {
+      "title": "PS3 mods",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/gta52.png",
+          "alt": "Grand Theft Auto V",
+          "label": "Grand Theft Auto V",
+          "sourcePage": "console/ps3/mods.html"
+        },
+        {
+          "src": "/assets/images/covers/cod-black-ops-2.jpg",
+          "alt": "Call of Duty",
+          "label": "Call of Duty",
+          "sourcePage": "console/ps3/mods.html"
+        },
+        {
+          "src": "/assets/images/gta4.png",
+          "alt": "Grand Theft Auto IV",
+          "label": "Grand Theft Auto IV",
+          "sourcePage": "console/ps3/mods.html"
+        },
+        {
+          "src": "/assets/images/game-card-covers/uncharted-1-official-v1.jpg",
+          "alt": "Uncharted series",
+          "label": "Uncharted series",
+          "sourcePage": "console/ps3/mods.html"
+        }
+      ]
+    },
+    "/console/ps3/save-tools.html": {
+      "title": "PS3 save tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/consoles/apollo-save-tool.png",
+          "alt": "Apollo Save Tool · PS3",
+          "label": "Apollo Save Tool · PS3",
+          "sourcePage": "console/ps3/save-tools.html"
+        },
+        {
+          "src": "/assets/images/consoles/ps3.png",
+          "alt": "Bruteforce Save Data",
+          "label": "Bruteforce Save Data",
+          "sourcePage": "console/ps3/save-tools.html"
+        }
+      ]
+    },
+    "/console/ps3/transfer-tools.html": {
+      "title": "PS3 transfer tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps3/webman.png",
+          "alt": "webMAN MOD",
+          "label": "webMAN MOD",
+          "sourcePage": "console/ps3/transfer-tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps3/ezremote.png",
+          "alt": "ezRemote Client",
+          "label": "ezRemote Client",
+          "sourcePage": "console/ps3/transfer-tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps3/simplefm.png",
+          "alt": "Simple File Manager",
+          "label": "Simple File Manager",
+          "sourcePage": "console/ps3/transfer-tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps3/managunz.png",
+          "alt": "File Manager by Zarh",
+          "label": "File Manager by Zarh",
+          "sourcePage": "console/ps3/transfer-tools.html"
+        }
+      ]
+    },
+    "/console/ps4/apps.html": {
+      "title": "PS4 apps",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/ps4-store-apps/scratch-everywhere.png",
+          "alt": "Scratch Everywhere! · PS4",
+          "label": "Scratch Everywhere! · PS4",
+          "sourcePage": "console/ps4/apps.html"
+        },
+        {
+          "src": "/assets/images/ps4-store-apps/mtp-explorer.svg",
+          "alt": "PS MTP Explorer · PS4",
+          "label": "PS MTP Explorer · PS4",
+          "sourcePage": "console/ps4/apps.html"
+        },
+        {
+          "src": "/assets/images/ps4-store-apps/switchfin.svg",
+          "alt": "Switchfin · PS4 Jellyfin client",
+          "label": "Switchfin · PS4 Jellyfin client",
+          "sourcePage": "console/ps4/apps.html"
+        },
+        {
+          "src": "/assets/images/ps4-store-apps/wiliwili.svg",
+          "alt": "wiliwili · PS4",
+          "label": "wiliwili · PS4",
+          "sourcePage": "console/ps4/apps.html"
+        }
+      ]
+    },
+    "/console/ps4/downloads.html": {
+      "title": "PS4 downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps4-ps5/games-installer.jpg",
+          "alt": "Browse in a native app",
+          "label": "Browse in a native app",
+          "sourcePage": "console/ps4/downloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/ps4-ezremote.jpg",
+          "alt": "Save apps, menus & payload files",
+          "label": "Save apps, menus & payload files",
+          "sourcePage": "console/ps4/downloads.html"
+        },
+        {
+          "src": "/assets/images/console-software/storage-folders.svg",
+          "alt": "Create folders & extract archives",
+          "label": "Create folders & extract archives",
+          "sourcePage": "console/ps4/downloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/homebrew-store.png",
+          "alt": "Homebrew Store · PS4",
+          "label": "Homebrew Store · PS4",
+          "sourcePage": "console/ps4/downloads.html"
+        }
+      ]
+    },
+    "/console/ps4/emulators.html": {
+      "title": "PS4 emulators",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/emulators/Dolphin.png",
+          "alt": "DolphinPS4 · GameCube & Wii",
+          "label": "DolphinPS4 · GameCube & Wii",
+          "sourcePage": "console/ps4/emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/Cemu.png",
+          "alt": "Crema · Wii U",
+          "label": "Crema · Wii U",
+          "sourcePage": "console/ps4/emulators.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/flycast.png",
+          "alt": "Resonance · Dreamcast",
+          "label": "Resonance · Dreamcast",
+          "sourcePage": "console/ps4/emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/PCSX2.png",
+          "alt": "PS4SX2 · PlayStation 2",
+          "label": "PS4SX2 · PlayStation 2",
+          "sourcePage": "console/ps4/emulators.html"
+        }
+      ]
+    },
+    "/console/ps4/game-downloads.html": {
+      "title": "PlayStation 4 game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/platform-logos/ps4.svg",
+          "alt": "PlayStation 4",
+          "label": "PlayStation 4",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/consoles/playstation.jpg",
+          "alt": "PlayStation 4",
+          "label": "PlayStation 4",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ps4/jailbreak.html": {
+      "title": "PS4 jailbreak",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/platform-logos/ps4.svg",
+          "alt": "PS4",
+          "label": "PS4",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ps4/jailbreaks.html": {
+      "title": "PS4 jailbreaks",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/consoles/playstation.jpg",
+          "alt": "PS4 system software & recovery",
+          "label": "PS4 system software & recovery",
+          "sourcePage": "console/ps4/jailbreaks.html"
+        },
+        {
+          "src": "/assets/images/console-software/goldhen.png",
+          "alt": "GoldHEN page",
+          "label": "GoldHEN page",
+          "sourcePage": "console/ps4/jailbreaks.html"
+        }
+      ]
+    },
+    "/console/ps4/payloads.html": {
+      "title": "PS4 payloads",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/console-software/goldhen.png",
+          "alt": "GoldHEN",
+          "label": "GoldHEN",
+          "sourcePage": "console/ps4/payloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/ftpsrv.png",
+          "alt": "ftpsrv · PS4",
+          "label": "ftpsrv · PS4",
+          "sourcePage": "console/ps4/payloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/klogsrv.png",
+          "alt": "klogsrv · PS4",
+          "label": "klogsrv · PS4",
+          "sourcePage": "console/ps4/payloads.html"
+        },
+        {
+          "src": "/assets/images/consoles/playstation.jpg",
+          "alt": "ps4debug",
+          "label": "ps4debug",
+          "sourcePage": "console/ps4/payloads.html"
+        }
+      ]
+    },
+    "/console/ps4/transfer-tools.html": {
+      "title": "PS4 transfer tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps4-ps5/ps4-ezremote.jpg",
+          "alt": "ezRemote Client 2.08",
+          "label": "ezRemote Client 2.08",
+          "sourcePage": "console/ps4/transfer-tools.html"
+        },
+        {
+          "src": "/assets/images/console-software/whatsite-launcher.png",
+          "alt": "whatwhatboy console downloader",
+          "label": "whatwhatboy console downloader",
+          "sourcePage": "console/ps4/transfer-tools.html"
+        }
+      ]
+    },
+    "/console/ps5/apps.html": {
+      "title": "PS5 apps",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/console-software/store/ppsa99109.webp",
+          "alt": "Prospero Explorer",
+          "label": "Prospero Explorer",
+          "sourcePage": "console/ps5/apps.html"
+        },
+        {
+          "src": "/assets/images/console-software/store/ppsa99110.webp",
+          "alt": "Prospero Multi Tools",
+          "label": "Prospero Multi Tools",
+          "sourcePage": "console/ps5/apps.html"
+        },
+        {
+          "src": "/assets/images/console-software/store/ppsa98766.webp",
+          "alt": "DriftCheck",
+          "label": "DriftCheck",
+          "sourcePage": "console/ps5/apps.html"
+        },
+        {
+          "src": "/assets/images/console-software/store/ppsa69420.webp",
+          "alt": "ScreenTester5",
+          "label": "ScreenTester5",
+          "sourcePage": "console/ps5/apps.html"
+        }
+      ]
+    },
+    "/console/ps5/downloads.html": {
+      "title": "PS5 downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps4-ps5/payload-manager.png",
+          "alt": "Browse in a native app",
+          "label": "Browse in a native app",
+          "sourcePage": "console/ps5/downloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/ps5-ezremote.jpg",
+          "alt": "Save apps, menus & payload files",
+          "label": "Save apps, menus & payload files",
+          "sourcePage": "console/ps5/downloads.html"
+        },
+        {
+          "src": "/assets/images/console-software/storage-folders.svg",
+          "alt": "Create folders & extract archives",
+          "label": "Create folders & extract archives",
+          "sourcePage": "console/ps5/downloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/ffplay.png",
+          "alt": "FFplay · PS5",
+          "label": "FFplay · PS5",
+          "sourcePage": "console/ps5/downloads.html"
+        }
+      ]
+    },
+    "/console/ps5/emulators.html": {
+      "title": "PS5 emulators",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/emulators/PCSX2.png",
+          "alt": "PS5SX2 · PlayStation 2",
+          "label": "PS5SX2 · PlayStation 2",
+          "sourcePage": "console/ps5/emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/Dolphin.png",
+          "alt": "Porpoise · GameCube & Wii",
+          "label": "Porpoise · GameCube & Wii",
+          "sourcePage": "console/ps5/emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/Cemu.png",
+          "alt": "PS5-ECAM · Wii U and handhelds",
+          "label": "PS5-ECAM · Wii U and handhelds",
+          "sourcePage": "console/ps5/emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/Xenia.png",
+          "alt": "PS5X360 · Xbox 360",
+          "label": "PS5X360 · Xbox 360",
+          "sourcePage": "console/ps5/emulators.html"
+        }
+      ]
+    },
+    "/console/ps5/game-downloads.html": {
+      "title": "PlayStation 5 game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/platform-logos/ps5.svg",
+          "alt": "PlayStation 5",
+          "label": "PlayStation 5",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/consoles/ps5-featured-image.avif",
+          "alt": "PlayStation 5",
+          "label": "PlayStation 5",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/ps5/jailbreaks.html": {
+      "title": "PS5 jailbreaks",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/consoles/ps5-featured-image.avif",
+          "alt": "PS5 system software & recovery",
+          "label": "PS5 system software & recovery",
+          "sourcePage": "console/ps5/jailbreaks.html"
+        },
+        {
+          "src": "/assets/images/consoles/ps5-y2jb.jpg",
+          "alt": "Y2JB installer & autoloader",
+          "label": "Y2JB installer & autoloader",
+          "sourcePage": "console/ps5/jailbreaks.html"
+        }
+      ]
+    },
+    "/console/ps5/mods.html": {
+      "title": "PS5 mods",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/host-trainers/the-last-of-us-part-ii-remastered-f1c0691e29a5.jpg",
+          "alt": "The Last of Us Part II Remastered",
+          "label": "The Last of Us Part II Remastered",
+          "sourcePage": "console/ps5/mods.html"
+        },
+        {
+          "src": "/assets/images/host-trainers/dragons-dogma-2-4474b5997a4b.jpg",
+          "alt": "Dragon's Dogma 2",
+          "label": "Dragon's Dogma 2",
+          "sourcePage": "console/ps5/mods.html"
+        },
+        {
+          "src": "/assets/images/host-trainers/silent-hill-2-7e0743d7eb02.jpg",
+          "alt": "Silent Hill 2",
+          "label": "Silent Hill 2",
+          "sourcePage": "console/ps5/mods.html"
+        },
+        {
+          "src": "/assets/images/host-trainers/astro-bot-19e37c8f055d.jpg",
+          "alt": "Astro Bot",
+          "label": "Astro Bot",
+          "sourcePage": "console/ps5/mods.html"
+        }
+      ]
+    },
+    "/console/ps5/payloads.html": {
+      "title": "PS5 payloads",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/console-software/shadowmountplus.png",
+          "alt": "ShadowMountPlus",
+          "label": "ShadowMountPlus",
+          "sourcePage": "console/ps5/payloads.html"
+        },
+        {
+          "src": "/assets/images/console-software/etahen.jpg",
+          "alt": "etaHEN",
+          "label": "etaHEN",
+          "sourcePage": "console/ps5/payloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/klogsrv.png",
+          "alt": "klogsrv · PS5",
+          "label": "klogsrv · PS5",
+          "sourcePage": "console/ps5/payloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/elfldr.png",
+          "alt": "ELF Loader · PS5",
+          "label": "ELF Loader · PS5",
+          "sourcePage": "console/ps5/payloads.html"
+        }
+      ]
+    },
+    "/console/ps5/transfer-tools.html": {
+      "title": "PS5 transfer tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/console-software/ps5upload.png",
+          "alt": "PS5upload",
+          "label": "PS5upload",
+          "sourcePage": "console/ps5/transfer-tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/ps5-ezremote.jpg",
+          "alt": "ezRemote Client · PS5",
+          "label": "ezRemote Client · PS5",
+          "sourcePage": "console/ps5/transfer-tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/ftpsrv.png",
+          "alt": "ftpsrv · PS5",
+          "label": "ftpsrv · PS5",
+          "sourcePage": "console/ps5/transfer-tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-ps4-ps5/websrv.png",
+          "alt": "websrv · PS5",
+          "label": "websrv · PS5",
+          "sourcePage": "console/ps5/transfer-tools.html"
+        }
+      ]
+    },
+    "/console/psp/apps.html": {
+      "title": "Apps & utilities",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/apollo.png",
+          "alt": "Apollo Save Tool",
+          "label": "Apollo Save Tool",
+          "sourcePage": "console/psp/apps.html"
+        },
+        {
+          "src": "/assets/images/psp-more/cmfilemanager.png",
+          "alt": "CMFileManager PSP",
+          "label": "CMFileManager PSP",
+          "sourcePage": "console/psp/apps.html"
+        },
+        {
+          "src": "/assets/images/psp-more/homebrew-sorter.png",
+          "alt": "Homebrew Sorter Ultimate",
+          "label": "Homebrew Sorter Ultimate",
+          "sourcePage": "console/psp/apps.html"
+        },
+        {
+          "src": "/assets/images/psp-more/pkgi.png",
+          "alt": "PKGi PSP",
+          "label": "PKGi PSP",
+          "sourcePage": "console/psp/apps.html"
+        }
+      ]
+    },
+    "/console/psp/emulators.html": {
+      "title": "Emulators on PSP",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/daedalus.png",
+          "alt": "DaedalusX64",
+          "label": "DaedalusX64",
+          "sourcePage": "console/psp/emulators.html"
+        },
+        {
+          "src": "/assets/images/psp-more/picodrive.png",
+          "alt": "PicoDrive",
+          "label": "PicoDrive",
+          "sourcePage": "console/psp/emulators.html"
+        },
+        {
+          "src": "/assets/images/psp-more/scummvm.png",
+          "alt": "ScummVM",
+          "label": "ScummVM",
+          "sourcePage": "console/psp/emulators.html"
+        }
+      ]
+    },
+    "/console/psp/game-downloads.html": {
+      "title": "PlayStation Portable game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/opensupaplex.png",
+          "alt": "OpenSupaplex",
+          "label": "OpenSupaplex",
+          "sourcePage": "console/psp/games.html"
+        },
+        {
+          "src": "/assets/images/psp-more/ccleste.png",
+          "alt": "Ccleste",
+          "label": "Ccleste",
+          "sourcePage": "console/psp/games.html"
+        },
+        {
+          "src": "/assets/images/psp-more/nzportable.png",
+          "alt": "Nazi Zombies: Portable",
+          "label": "Nazi Zombies: Portable",
+          "sourcePage": "console/psp/games.html"
+        },
+        {
+          "src": "/assets/images/psp-more/ark4.png",
+          "alt": "PlayStation Portable",
+          "label": "PlayStation Portable",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psp/games.html": {
+      "title": "Homebrew games & ports",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/opensupaplex.png",
+          "alt": "OpenSupaplex",
+          "label": "OpenSupaplex",
+          "sourcePage": "console/psp/games.html"
+        },
+        {
+          "src": "/assets/images/psp-more/ccleste.png",
+          "alt": "Ccleste",
+          "label": "Ccleste",
+          "sourcePage": "console/psp/games.html"
+        },
+        {
+          "src": "/assets/images/psp-more/nzportable.png",
+          "alt": "Nazi Zombies: Portable",
+          "label": "Nazi Zombies: Portable",
+          "sourcePage": "console/psp/games.html"
+        },
+        {
+          "src": "/assets/images/psp-more/wagic.png",
+          "alt": "Wagic, the Homebrew",
+          "label": "Wagic, the Homebrew",
+          "sourcePage": "console/psp/games.html"
+        }
+      ]
+    },
+    "/console/psp/plugins.html": {
+      "title": "CXMB & theme plugins",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/jumbled-ctf.jpg",
+          "alt": "CXMB · custom theme plugin",
+          "label": "CXMB · custom theme plugin",
+          "sourcePage": "console/psp/plugins.html"
+        },
+        {
+          "src": "/assets/images/psp-more/ark4.png",
+          "alt": "PlayStation Portable",
+          "label": "PlayStation Portable",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psp/setup.html": {
+      "title": "Firmware & homebrew setup",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/ark4.png",
+          "alt": "Firmware & homebrew setup",
+          "label": "Firmware & homebrew setup",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psp/themes.html": {
+      "title": "PTF & CTF themes",
+      "kind": "themes",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/material-design.jpg",
+          "alt": "Material Design Tiny White",
+          "label": "Material Design Tiny White",
+          "sourcePage": "console/psp/themes.html"
+        },
+        {
+          "src": "/assets/images/psp-more/clearxmb-ptf.jpg",
+          "alt": "clearXMB black · PTF",
+          "label": "clearXMB black · PTF",
+          "sourcePage": "console/psp/themes.html"
+        },
+        {
+          "src": "/assets/images/psp-more/jumbled-ctf.jpg",
+          "alt": "Jumbled · CTF 6.60",
+          "label": "Jumbled · CTF 6.60",
+          "sourcePage": "console/psp/themes.html"
+        },
+        {
+          "src": "/assets/images/psp-more/allure-ctf.jpg",
+          "alt": "Allure v2 · CTF 6.60",
+          "label": "Allure v2 · CTF 6.60",
+          "sourcePage": "console/psp/themes.html"
+        }
+      ]
+    },
+    "/console/psvita/apps.html": {
+      "title": "Apps & essential tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-vita/vitashell.png",
+          "alt": "VitaShell",
+          "label": "VitaShell",
+          "sourcePage": "console/psvita/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-vita/vitadeploy.png",
+          "alt": "VitaDeploy",
+          "label": "VitaDeploy",
+          "sourcePage": "console/psvita/apps.html"
+        },
+        {
+          "src": "/assets/images/consoles/apollo-save-tool.png",
+          "alt": "Apollo Save Tool",
+          "label": "Apollo Save Tool",
+          "sourcePage": "console/psvita/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-vita/vitadb.png",
+          "alt": "VitaDB Downloader",
+          "label": "VitaDB Downloader",
+          "sourcePage": "console/psvita/apps.html"
+        }
+      ]
+    },
+    "/console/psvita/cfw.html": {
+      "title": "CFW & Ensō",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-vita/vitadeploy.png",
+          "alt": "VitaDeploy",
+          "label": "VitaDeploy",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/psvita.svg",
+          "alt": "PS Vita",
+          "label": "PS Vita",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psvita/emulators.html": {
+      "title": "Emulators on Vita",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/vita-more/mgba.png",
+          "alt": "mGBA",
+          "label": "mGBA",
+          "sourcePage": "console/psvita/emulators.html"
+        },
+        {
+          "src": "/assets/images/vita-more/daedalus.png",
+          "alt": "DaedalusX64 vitaGL",
+          "label": "DaedalusX64 vitaGL",
+          "sourcePage": "console/psvita/emulators.html"
+        }
+      ]
+    },
+    "/console/psvita/firmware.html": {
+      "title": "Firmware archive",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-vita/vitadeploy.png",
+          "alt": "Firmware archive",
+          "label": "Firmware archive",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/psvita.svg",
+          "alt": "PS Vita",
+          "label": "PS Vita",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psvita/game-downloads.html": {
+      "title": "PS Vita game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/vita-more/supertux.png",
+          "alt": "SuperTux Classic",
+          "label": "SuperTux Classic",
+          "sourcePage": "console/psvita/games.html"
+        },
+        {
+          "src": "/assets/images/vita-more/jumpnbump.png",
+          "alt": "Jump ’n’ Bump",
+          "label": "Jump ’n’ Bump",
+          "sourcePage": "console/psvita/games.html"
+        },
+        {
+          "src": "/assets/images/vita-more/enigma.png",
+          "alt": "Enigma",
+          "label": "Enigma",
+          "sourcePage": "console/psvita/games.html"
+        },
+        {
+          "src": "/assets/images/platform-logos/psvita.svg",
+          "alt": "PS Vita",
+          "label": "PS Vita",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psvita/games.html": {
+      "title": "Games & source ports",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/vita-more/supertux.png",
+          "alt": "SuperTux Classic",
+          "label": "SuperTux Classic",
+          "sourcePage": "console/psvita/games.html"
+        },
+        {
+          "src": "/assets/images/vita-more/jumpnbump.png",
+          "alt": "Jump ’n’ Bump",
+          "label": "Jump ’n’ Bump",
+          "sourcePage": "console/psvita/games.html"
+        },
+        {
+          "src": "/assets/images/vita-more/enigma.png",
+          "alt": "Enigma",
+          "label": "Enigma",
+          "sourcePage": "console/psvita/games.html"
+        },
+        {
+          "src": "/assets/images/vita-more/chocolate-doom.png",
+          "alt": "Chocolate Doom",
+          "label": "Chocolate Doom",
+          "sourcePage": "console/psvita/games.html"
+        }
+      ]
+    },
+    "/console/psvita/jailbreak.html": {
+      "title": "Jailbreak & homebrew setup",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/custom-console-art/vita-henlo.jpg",
+          "alt": "HENlo setup",
+          "label": "HENlo setup",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/expansion-vita/vitadeploy.png",
+          "alt": "VitaDeploy",
+          "label": "VitaDeploy",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psvita/library.html?view=all": {
+      "title": "PS Vita full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-vita/vitashell.png",
+          "alt": "VitaShell",
+          "label": "VitaShell",
+          "sourcePage": "console/psvita/apps.html"
+        },
+        {
+          "src": "/assets/images/vita-more/mgba.png",
+          "alt": "mGBA",
+          "label": "mGBA",
+          "sourcePage": "console/psvita/emulators.html"
+        },
+        {
+          "src": "/assets/images/vita-more/supertux.png",
+          "alt": "SuperTux Classic",
+          "label": "SuperTux Classic",
+          "sourcePage": "console/psvita/games.html"
+        },
+        {
+          "src": "/assets/images/vita-more/psvshell-screenshot.png",
+          "alt": "PSVshell",
+          "label": "PSVshell",
+          "sourcePage": "console/psvita/plugins.html"
+        }
+      ]
+    },
+    "/console/psvita/plugins.html": {
+      "title": "Plugins & controls",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/vita-more/psvshell-screenshot.png",
+          "alt": "PSVshell",
+          "label": "PSVshell",
+          "sourcePage": "console/psvita/plugins.html"
+        },
+        {
+          "src": "/assets/images/vita-more/shellbat-screenshot.jpg",
+          "alt": "shellbat",
+          "label": "shellbat",
+          "sourcePage": "console/psvita/plugins.html"
+        },
+        {
+          "src": "/assets/images/vita-more/revita-screenshot.png",
+          "alt": "reVita",
+          "label": "reVita",
+          "sourcePage": "console/psvita/plugins.html"
+        }
+      ]
+    },
+    "/console/psvita/save-tools.html": {
+      "title": "Save tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/consoles/apollo-save-tool.png",
+          "alt": "Apollo Save Tool · PS Vita",
+          "label": "Apollo Save Tool · PS Vita",
+          "sourcePage": "console/psvita/save-tools.html"
+        },
+        {
+          "src": "/assets/images/custom-console-art/vita-henlo.jpg",
+          "alt": "PS Vita",
+          "label": "PS Vita",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/psvita.svg",
+          "alt": "PS Vita",
+          "label": "PS Vita",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/psvita/themes.html": {
+      "title": "Themes & customization",
+      "kind": "themes",
+      "images": [
+        {
+          "src": "/assets/images/vita-more/imago.png",
+          "alt": "Imago",
+          "label": "Imago",
+          "sourcePage": "console/psvita/themes.html"
+        },
+        {
+          "src": "/assets/images/vita-more/custom-themes-manager.png",
+          "alt": "Custom Themes Manager",
+          "label": "Custom Themes Manager",
+          "sourcePage": "console/psvita/themes.html"
+        },
+        {
+          "src": "/assets/images/vita-more/minimal-theme-preview.png",
+          "alt": "MINIMAL",
+          "label": "MINIMAL",
+          "sourcePage": "console/psvita/themes.html"
+        }
+      ]
+    },
+    "/console/retro/3ds-themes.html": {
+      "title": "Themes & boot splashes",
+      "kind": "themes",
+      "images": [
+        {
+          "src": "/assets/images/3ds-more/themes/1B6B0.webp",
+          "alt": "Adventure Time Home Screen",
+          "label": "Adventure Time Home Screen",
+          "sourcePage": "console/retro/3ds-themes.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/themes/1B453.webp",
+          "alt": "Sleepy Yoshi",
+          "label": "Sleepy Yoshi",
+          "sourcePage": "console/retro/3ds-themes.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/themes/1B328.webp",
+          "alt": "Pixel City",
+          "label": "Pixel City",
+          "sourcePage": "console/retro/3ds-themes.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/themes/1F4B6.webp",
+          "alt": "Pokemon - RGB x Y Starters",
+          "label": "Pokemon - RGB x Y Starters",
+          "sourcePage": "console/retro/3ds-themes.html"
+        }
+      ]
+    },
+    "/console/retro/3ds.html?view=all": {
+      "title": "Nintendo 2DS & 3DS full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/luma.png",
+          "alt": "Luma3DS CFW",
+          "label": "Luma3DS CFW",
+          "sourcePage": "console/3ds/apps.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/apps/daedalusx64.png",
+          "alt": "DaedalusX64-3DS",
+          "label": "DaedalusX64-3DS",
+          "sourcePage": "console/3ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/3ds-more/apps/super-haxagon.png",
+          "alt": "Super-Haxagon",
+          "label": "Super-Haxagon",
+          "sourcePage": "console/3ds/games.html"
+        }
+      ]
+    },
+    "/console/retro/ds.html?view=all": {
+      "title": "Nintendo DS & DSi full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/twilight.png",
+          "alt": "TWiLight Menu++",
+          "label": "TWiLight Menu++",
+          "sourcePage": "console/ds/apps.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/nesds.png",
+          "alt": "nesDS",
+          "label": "nesDS",
+          "sourcePage": "console/ds/emulators.html"
+        },
+        {
+          "src": "/assets/images/ds-dsi-more/wordle-ds.png",
+          "alt": "Wordle DS",
+          "label": "Wordle DS",
+          "sourcePage": "console/ds/games.html"
+        }
+      ]
+    },
+    "/console/retro/gamecube.html?view=all": {
+      "title": "Nintendo GameCube full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gamecube.png",
+          "alt": "Homebrew on an unmodified GameCube",
+          "label": "Homebrew on an unmodified GameCube",
+          "sourcePage": "console/retro/gamecube.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gcmm.png",
+          "alt": "Storage & hardware boot methods",
+          "label": "Storage & hardware boot methods",
+          "sourcePage": "console/retro/gamecube.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+          "alt": "CleanRip · GameCube build",
+          "label": "CleanRip · GameCube build",
+          "sourcePage": "console/retro/gamecube.html"
+        }
+      ]
+    },
+    "/console/retro/ps2.html?view=all": {
+      "title": "PlayStation 2 full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-ps2/opl.png",
+          "alt": "Open PS2 Loader",
+          "label": "Open PS2 Loader",
+          "sourcePage": "console/ps2/apps.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/fceumm.svg",
+          "alt": "FCEUmm-PS2",
+          "label": "FCEUmm-PS2",
+          "sourcePage": "console/ps2/emulators.html"
+        },
+        {
+          "src": "/assets/images/ps2-expansion/supertux.svg",
+          "alt": "SuperTux",
+          "label": "SuperTux",
+          "sourcePage": "console/ps2/games.html"
+        }
+      ]
+    },
+    "/console/retro/psp.html?view=all": {
+      "title": "PlayStation Portable full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/psp-more/apollo.png",
+          "alt": "Apollo Save Tool",
+          "label": "Apollo Save Tool",
+          "sourcePage": "console/psp/apps.html"
+        },
+        {
+          "src": "/assets/images/psp-more/daedalus.png",
+          "alt": "DaedalusX64",
+          "label": "DaedalusX64",
+          "sourcePage": "console/psp/emulators.html"
+        },
+        {
+          "src": "/assets/images/psp-more/opensupaplex.png",
+          "alt": "OpenSupaplex",
+          "label": "OpenSupaplex",
+          "sourcePage": "console/psp/games.html"
+        },
+        {
+          "src": "/assets/images/psp-more/jumbled-ctf.jpg",
+          "alt": "CXMB · custom theme plugin",
+          "label": "CXMB · custom theme plugin",
+          "sourcePage": "console/psp/plugins.html"
+        }
+      ]
+    },
+    "/console/retro/wii.html?view=all": {
+      "title": "Nintendo Wii full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wii-more/wiimc.png",
+          "alt": "WiiMC",
+          "label": "WiiMC",
+          "sourcePage": "console/wii/apps.html"
+        },
+        {
+          "src": "/assets/images/wii-more/snes9xgx.png",
+          "alt": "Snes9x GX",
+          "label": "Snes9x GX",
+          "sourcePage": "console/wii/emulators.html"
+        },
+        {
+          "src": "/assets/images/wii-more/cavestory.png",
+          "alt": "Cave Story",
+          "label": "Cave Story",
+          "sourcePage": "console/wii/games.html"
+        }
+      ]
+    },
+    "/console/retro/wiiu-themes.html": {
+      "title": "Wii U themes",
+      "kind": "themes",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-themes/dark-theme-purple.webp",
+          "alt": "Dark Theme - Purple",
+          "label": "Dark Theme - Purple",
+          "sourcePage": "console/retro/wiiu-themes.html"
+        },
+        {
+          "src": "/assets/images/wiiu-themes/dark-theme-light-blue.webp",
+          "alt": "Dark Theme - Light Blue",
+          "label": "Dark Theme - Light Blue",
+          "sourcePage": "console/retro/wiiu-themes.html"
+        },
+        {
+          "src": "/assets/images/wiiu-themes/vaporwave-summer.webp",
+          "alt": "Vaporwave Summer",
+          "label": "Vaporwave Summer",
+          "sourcePage": "console/retro/wiiu-themes.html"
+        },
+        {
+          "src": "/assets/images/wiiu-themes/cloudy-day.webp",
+          "alt": "Cloudy Day",
+          "label": "Cloudy Day",
+          "sourcePage": "console/retro/wiiu-themes.html"
+        }
+      ]
+    },
+    "/console/retro/wiiu.html?view=all": {
+      "title": "Nintendo Wii U full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/appstore.png",
+          "alt": "Homebrew App Store",
+          "label": "Homebrew App Store",
+          "sourcePage": "console/wiiu/apps.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/retroarch.png",
+          "alt": "RetroArch",
+          "label": "RetroArch",
+          "sourcePage": "console/wiiu/emulators.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/Connect4.png",
+          "alt": "Connect4",
+          "label": "Connect4",
+          "sourcePage": "console/wiiu/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/SDCafiine_WUPS.png",
+          "alt": "SDCafiine",
+          "label": "SDCafiine",
+          "sourcePage": "console/wiiu/plugins.html"
+        }
+      ]
+    },
+    "/console/steamdeck.html?view=all": {
+      "title": "Steam Deck full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/emudeck-icon.png",
+          "alt": "EmuDeck",
+          "label": "EmuDeck",
+          "sourcePage": "console/steamdeck/emulators.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/decky-icon.png",
+          "alt": "Decky Loader",
+          "label": "Decky Loader",
+          "sourcePage": "console/steamdeck/plugins.html"
+        }
+      ]
+    },
+    "/console/steamdeck/emulators.html": {
+      "title": "Emulation & your library",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/emudeck-icon.png",
+          "alt": "EmuDeck",
+          "label": "EmuDeck",
+          "sourcePage": "console/steamdeck/emulators.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/retrodeck.png",
+          "alt": "RetroDECK",
+          "label": "RetroDECK",
+          "sourcePage": "console/steamdeck/emulators.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/steam-rom-manager.png",
+          "alt": "Steam ROM Manager",
+          "label": "Steam ROM Manager",
+          "sourcePage": "console/steamdeck/emulators.html"
+        }
+      ]
+    },
+    "/console/steamdeck/game-downloads.html": {
+      "title": "Steam Deck game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/heroic.png",
+          "alt": "Heroic Games Launcher",
+          "label": "Heroic Games Launcher",
+          "sourcePage": "console/steamdeck.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/protonup-qt.png",
+          "alt": "ProtonUp-Qt",
+          "label": "ProtonUp-Qt",
+          "sourcePage": "console/steamdeck.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/lutris.png",
+          "alt": "Lutris",
+          "label": "Lutris",
+          "sourcePage": "console/steamdeck.html"
+        },
+        {
+          "src": "/assets/images/platform-logos/steamdeck.svg",
+          "alt": "Steam Deck",
+          "label": "Steam Deck",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/steamdeck/launchers.html": {
+      "title": "Launchers, Proton & fixes",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/heroic.png",
+          "alt": "Heroic Games Launcher",
+          "label": "Heroic Games Launcher",
+          "sourcePage": "console/steamdeck/launchers.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/protonup-qt.png",
+          "alt": "ProtonUp-Qt",
+          "label": "ProtonUp-Qt",
+          "sourcePage": "console/steamdeck/launchers.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/lutris.png",
+          "alt": "Lutris",
+          "label": "Lutris",
+          "sourcePage": "console/steamdeck/launchers.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/protontricks.png",
+          "alt": "Protontricks",
+          "label": "Protontricks",
+          "sourcePage": "console/steamdeck/launchers.html"
+        }
+      ]
+    },
+    "/console/steamdeck/plugins.html": {
+      "title": "Plugins & customization",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/decky-icon.png",
+          "alt": "Decky Loader",
+          "label": "Decky Loader",
+          "sourcePage": "console/steamdeck/plugins.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/css-loader.png",
+          "alt": "CSS Loader",
+          "label": "CSS Loader",
+          "sourcePage": "console/steamdeck/plugins.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/steamgriddb.png",
+          "alt": "SteamGridDB",
+          "label": "SteamGridDB",
+          "sourcePage": "console/steamdeck/plugins.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/protondb-badges.png",
+          "alt": "ProtonDB Badges",
+          "label": "ProtonDB Badges",
+          "sourcePage": "console/steamdeck/plugins.html"
+        }
+      ]
+    },
+    "/console/steamdeck/remote-play.html": {
+      "title": "Remote play",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/moonlight.png",
+          "alt": "Moonlight",
+          "label": "Moonlight",
+          "sourcePage": "console/steamdeck/remote-play.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/chiaki-ng.svg",
+          "alt": "chiaki-ng",
+          "label": "chiaki-ng",
+          "sourcePage": "console/steamdeck/remote-play.html"
+        }
+      ]
+    },
+    "/console/steamdeck/setup.html": {
+      "title": "Setup & compatibility",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/protonup-qt.png",
+          "alt": "Setup & compatibility",
+          "label": "Setup & compatibility",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/steamdeck.svg",
+          "alt": "Steam Deck",
+          "label": "Steam Deck",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/steamdeck/tools.html": {
+      "title": "Files & desktop tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/steamdeck/flatseal.png",
+          "alt": "Flatseal",
+          "label": "Flatseal",
+          "sourcePage": "console/steamdeck/tools.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/localsend.png",
+          "alt": "LocalSend",
+          "label": "LocalSend",
+          "sourcePage": "console/steamdeck/tools.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/syncthing.png",
+          "alt": "Syncthing",
+          "label": "Syncthing",
+          "sourcePage": "console/steamdeck/tools.html"
+        },
+        {
+          "src": "/assets/images/steamdeck/filelight.png",
+          "alt": "Filelight",
+          "label": "Filelight",
+          "sourcePage": "console/steamdeck/tools.html"
+        }
+      ]
+    },
+    "/console/wii/apps.html": {
+      "title": "Apps & system tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wii-more/wiimc.png",
+          "alt": "WiiMC",
+          "label": "WiiMC",
+          "sourcePage": "console/wii/apps.html"
+        },
+        {
+          "src": "/assets/images/wii-more/wiixplorer.png",
+          "alt": "WiiXplorer",
+          "label": "WiiXplorer",
+          "sourcePage": "console/wii/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/priiloader.png",
+          "alt": "Priiloader",
+          "label": "Priiloader",
+          "sourcePage": "console/wii/apps.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/usbloadergx.png",
+          "alt": "USB Loader GX",
+          "label": "USB Loader GX",
+          "sourcePage": "console/wii/apps.html"
+        }
+      ]
+    },
+    "/console/wii/emulators.html": {
+      "title": "Emulators on Wii",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/wii-more/snes9xgx.png",
+          "alt": "Snes9x GX",
+          "label": "Snes9x GX",
+          "sourcePage": "console/wii/emulators.html"
+        },
+        {
+          "src": "/assets/images/wii-more/not64.png",
+          "alt": "Not64",
+          "label": "Not64",
+          "sourcePage": "console/wii/emulators.html"
+        },
+        {
+          "src": "/assets/images/wii-more/wiisxrx.png",
+          "alt": "WiiSXRX",
+          "label": "WiiSXRX",
+          "sourcePage": "console/wii/emulators.html"
+        },
+        {
+          "src": "/assets/images/wii-more/vbagx.png",
+          "alt": "Visual Boy Advance GX",
+          "label": "Visual Boy Advance GX",
+          "sourcePage": "console/wii/emulators.html"
+        }
+      ]
+    },
+    "/console/wii/game-downloads.html": {
+      "title": "Nintendo Wii game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/wii-more/cavestory.png",
+          "alt": "Cave Story",
+          "label": "Cave Story",
+          "sourcePage": "console/wii/games.html"
+        },
+        {
+          "src": "/assets/images/wii-more/supertux.png",
+          "alt": "SuperTux Wii",
+          "label": "SuperTux Wii",
+          "sourcePage": "console/wii/games.html"
+        },
+        {
+          "src": "/assets/images/wii-more/helium.png",
+          "alt": "Helium Boy",
+          "label": "Helium Boy",
+          "sourcePage": "console/wii/games.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/wii.png",
+          "alt": "Nintendo Wii",
+          "label": "Nintendo Wii",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/wii/gamecube.html": {
+      "title": "GameCube software & tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/nintendont.png",
+          "alt": "Nintendont",
+          "label": "Nintendont",
+          "sourcePage": "console/wii/gamecube.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+          "alt": "CleanRip · Wii build",
+          "label": "CleanRip · Wii build",
+          "sourcePage": "console/wii/gamecube.html"
+        },
+        {
+          "src": "/assets/images/expansion-nintendo-retro/gcmm.png",
+          "alt": "GCMM · memory-card manager",
+          "label": "GCMM · memory-card manager",
+          "sourcePage": "console/wii/gamecube.html"
+        }
+      ]
+    },
+    "/console/wii/games.html": {
+      "title": "Homebrew games",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/wii-more/cavestory.png",
+          "alt": "Cave Story",
+          "label": "Cave Story",
+          "sourcePage": "console/wii/games.html"
+        },
+        {
+          "src": "/assets/images/wii-more/supertux.png",
+          "alt": "SuperTux Wii",
+          "label": "SuperTux Wii",
+          "sourcePage": "console/wii/games.html"
+        },
+        {
+          "src": "/assets/images/wii-more/helium.png",
+          "alt": "Helium Boy",
+          "label": "Helium Boy",
+          "sourcePage": "console/wii/games.html"
+        }
+      ]
+    },
+    "/console/wii/setup.html": {
+      "title": "Homebrew setup & storage",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-nintendo-retro/wii.png",
+          "alt": "Homebrew setup & storage",
+          "label": "Homebrew setup & storage",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/wiiu/apps.html": {
+      "title": "Apps & utilities",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/appstore.png",
+          "alt": "Homebrew App Store",
+          "label": "Homebrew App Store",
+          "sourcePage": "console/wiiu/apps.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/AromaUpdater.png",
+          "alt": "Aroma Updater",
+          "label": "Aroma Updater",
+          "sourcePage": "console/wiiu/apps.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/WiiUIdent.png",
+          "alt": "WiiUIdent",
+          "label": "WiiUIdent",
+          "sourcePage": "console/wiiu/apps.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/SaveMiiProcessMod.png",
+          "alt": "SaveMii /ProcessMod",
+          "label": "SaveMii /ProcessMod",
+          "sourcePage": "console/wiiu/apps.html"
+        }
+      ]
+    },
+    "/console/wiiu/emulators.html": {
+      "title": "Emulators on Wii U",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/retroarch.png",
+          "alt": "RetroArch",
+          "label": "RetroArch",
+          "sourcePage": "console/wiiu/emulators.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/NooDS.png",
+          "alt": "NooDS",
+          "label": "NooDS",
+          "sourcePage": "console/wiiu/emulators.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/Fake-08.png",
+          "alt": "FAKE-08",
+          "label": "FAKE-08",
+          "sourcePage": "console/wiiu/emulators.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew-more/CHIP8.png",
+          "alt": "CHIP8 Emulator",
+          "label": "CHIP8 Emulator",
+          "sourcePage": "console/wiiu/emulators.html"
+        }
+      ]
+    },
+    "/console/wiiu/game-downloads.html": {
+      "title": "Nintendo Wii U game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/Connect4.png",
+          "alt": "Connect4",
+          "label": "Connect4",
+          "sourcePage": "console/wiiu/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/Dynamismal.png",
+          "alt": "Dynamismal",
+          "label": "Dynamismal",
+          "sourcePage": "console/wiiu/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/SnakeBattleRoyale.png",
+          "alt": "Snake Battle Royale",
+          "label": "Snake Battle Royale",
+          "sourcePage": "console/wiiu/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/library.svg",
+          "alt": "Nintendo Wii U",
+          "label": "Nintendo Wii U",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/wiiu/games.html": {
+      "title": "Homebrew games & ports",
+      "kind": "games",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/Connect4.png",
+          "alt": "Connect4",
+          "label": "Connect4",
+          "sourcePage": "console/wiiu/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/Dynamismal.png",
+          "alt": "Dynamismal",
+          "label": "Dynamismal",
+          "sourcePage": "console/wiiu/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/SnakeBattleRoyale.png",
+          "alt": "Snake Battle Royale",
+          "label": "Snake Battle Royale",
+          "sourcePage": "console/wiiu/games.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/SuDokuL.png",
+          "alt": "SuDokuL",
+          "label": "SuDokuL",
+          "sourcePage": "console/wiiu/games.html"
+        }
+      ]
+    },
+    "/console/wiiu/mods.html": {
+      "title": "Game mods & patches",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/SDCafiine_WUPS.png",
+          "alt": "SDCafiine",
+          "label": "SDCafiine",
+          "sourcePage": "console/wiiu/mods.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/second-wind-quest.png",
+          "alt": "Second Wind · Breath of the Wild",
+          "label": "Second Wind · Breath of the Wild",
+          "sourcePage": "console/wiiu/mods.html"
+        },
+        {
+          "src": "/assets/images/wii-games-online/ctgp.png",
+          "alt": "CTGP Revolution · Mario Kart Wii",
+          "label": "CTGP Revolution · Mario Kart Wii",
+          "sourcePage": "console/wiiu/mods.html"
+        },
+        {
+          "src": "/assets/images/wiiu-games-batch2/vwii-riivolution.png",
+          "alt": "Riivolution",
+          "label": "Riivolution",
+          "sourcePage": "console/wiiu/mods.html"
+        }
+      ]
+    },
+    "/console/wiiu/online.html": {
+      "title": "Get online with Pretendo",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/Inkay.png",
+          "alt": "Pretendo Network",
+          "label": "Pretendo Network",
+          "sourcePage": "console/wiiu/online.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/evWii.png",
+          "alt": "Already on vWii?",
+          "label": "Already on vWii?",
+          "sourcePage": "console/wiiu/online.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/SaveMiiProcessMod.png",
+          "alt": "Account and save data",
+          "label": "Account and save data",
+          "sourcePage": "console/wiiu/online.html"
+        }
+      ]
+    },
+    "/console/wiiu/plugins.html": {
+      "title": "Plugins & mods",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/SDCafiine_WUPS.png",
+          "alt": "SDCafiine",
+          "label": "SDCafiine",
+          "sourcePage": "console/wiiu/plugins.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/Inkay.png",
+          "alt": "Inkay",
+          "label": "Inkay",
+          "sourcePage": "console/wiiu/plugins.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/evWii.png",
+          "alt": "evWii",
+          "label": "evWii",
+          "sourcePage": "console/wiiu/plugins.html"
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew-more/GamePadAutoStandby.png",
+          "alt": "GamePad Auto Standby",
+          "label": "GamePad Auto Standby",
+          "sourcePage": "console/wiiu/plugins.html"
+        }
+      ]
+    },
+    "/console/wiiu/setup.html": {
+      "title": "Environment & installation",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wiiu-homebrew/AromaUpdater.png",
+          "alt": "Environment & installation",
+          "label": "Environment & installation",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/wiiu-homebrew/library.svg",
+          "alt": "Nintendo Wii U",
+          "label": "Nintendo Wii U",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/wiiu/vwii.html": {
+      "title": "vWii on Wii U",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/wii-more/wiimc.png",
+          "alt": "WiiMC · 1.3.4",
+          "label": "WiiMC · 1.3.4",
+          "sourcePage": "console/wiiu/vwii.html"
+        },
+        {
+          "src": "/assets/images/wii-more/cavestory.png",
+          "alt": "Cave Story · 1.0.1",
+          "label": "Cave Story · 1.0.1",
+          "sourcePage": "console/wiiu/vwii.html"
+        },
+        {
+          "src": "/assets/images/wii-more/supertux.png",
+          "alt": "SuperTux Wii · 0.1.4-wii-d.07",
+          "label": "SuperTux Wii · 0.1.4-wii-d.07",
+          "sourcePage": "console/wiiu/vwii.html"
+        },
+        {
+          "src": "/assets/images/wii-more/snes9xgx.png",
+          "alt": "Snes9x GX · 5.0.4",
+          "label": "Snes9x GX · 5.0.4",
+          "sourcePage": "console/wiiu/vwii.html"
+        }
+      ]
+    },
+    "/console/xbox-one-series.html?view=all": {
+      "title": "Xbox One / Series X|S full library",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/xbsx2.png",
+          "alt": "XBSX2 · PlayStation 2",
+          "label": "XBSX2 · PlayStation 2",
+          "sourcePage": "console/xbox-one-series.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/dolphin.png",
+          "alt": "Dolphin UWP · GameCube & Wii",
+          "label": "Dolphin UWP · GameCube & Wii",
+          "sourcePage": "console/xbox-one-series.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/ppsspp.png",
+          "alt": "PPSSPP · PlayStation Portable",
+          "label": "PPSSPP · PlayStation Portable",
+          "sourcePage": "console/xbox-one-series.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/flycast.png",
+          "alt": "Flycast · Dreamcast & arcade",
+          "label": "Flycast · Dreamcast & arcade",
+          "sourcePage": "console/xbox-one-series.html"
+        }
+      ]
+    },
+    "/console/xbox-one-series/apps.html": {
+      "title": "Apps & emulators",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/xbsx2.png",
+          "alt": "XBSX2 · PlayStation 2",
+          "label": "XBSX2 · PlayStation 2",
+          "sourcePage": "console/xbox-one-series/apps.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/dolphin.png",
+          "alt": "Dolphin UWP · GameCube & Wii",
+          "label": "Dolphin UWP · GameCube & Wii",
+          "sourcePage": "console/xbox-one-series/apps.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/ppsspp.png",
+          "alt": "PPSSPP · PlayStation Portable",
+          "label": "PPSSPP · PlayStation Portable",
+          "sourcePage": "console/xbox-one-series/apps.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/flycast.png",
+          "alt": "Flycast · Dreamcast & arcade",
+          "label": "Flycast · Dreamcast & arcade",
+          "sourcePage": "console/xbox-one-series/apps.html"
+        }
+      ]
+    },
+    "/console/xbox-one-series/dependencies.html": {
+      "title": "Framework downloads",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/frameworks/9c17b521f9d6.png",
+          "alt": "Microsoft.VCLibs.140.00",
+          "label": "Microsoft.VCLibs.140.00",
+          "sourcePage": "console/xbox-one-series/dependencies.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/frameworks/07f8b0400dfd.png",
+          "alt": "Microsoft.NET.Native.Framework.2.2",
+          "label": "Microsoft.NET.Native.Framework.2.2",
+          "sourcePage": "console/xbox-one-series/dependencies.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/frameworks/27fae660d8c6.png",
+          "alt": "Microsoft.NET.Native.Runtime.2.2",
+          "label": "Microsoft.NET.Native.Runtime.2.2",
+          "sourcePage": "console/xbox-one-series/dependencies.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/frameworks/009f7db134c6.png",
+          "alt": "Microsoft.VCLibs.140.00",
+          "label": "Microsoft.VCLibs.140.00",
+          "sourcePage": "console/xbox-one-series/dependencies.html"
+        }
+      ]
+    },
+    "/console/xbox-one-series/dev-mode.html": {
+      "title": "Developer Mode setup",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/dev-home.png",
+          "alt": "Developer Mode setup",
+          "label": "Developer Mode setup",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/xbox-one-series.svg",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox-one-series/device-portal.html": {
+      "title": "Device Portal",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/remote-access.png",
+          "alt": "Device Portal",
+          "label": "Device Portal",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/xbox-one-series/dev-home.png",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/xbox-one-series.svg",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox-one-series/game-downloads.html": {
+      "title": "Xbox One / Series X|S game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/xbsx2.png",
+          "alt": "XBSX2 · PlayStation 2",
+          "label": "XBSX2 · PlayStation 2",
+          "sourcePage": "console/xbox-one-series.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/dolphin.png",
+          "alt": "Dolphin UWP · GameCube & Wii",
+          "label": "Dolphin UWP · GameCube & Wii",
+          "sourcePage": "console/xbox-one-series.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/ppsspp.png",
+          "alt": "PPSSPP · PlayStation Portable",
+          "label": "PPSSPP · PlayStation Portable",
+          "sourcePage": "console/xbox-one-series.html"
+        },
+        {
+          "src": "/assets/images/platform-logos/xbox-one-series.svg",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox-one-series/install.html": {
+      "title": "Install apps",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/ppsspp.png",
+          "alt": "Install apps",
+          "label": "Install apps",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/xbox-one-series/dev-home.png",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/xbox-one-series.svg",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox-one-series/retail-mode.html": {
+      "title": "Retail Mode & app removal",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/dev-home.png",
+          "alt": "Retail Mode & app removal",
+          "label": "Retail Mode & app removal",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/xbox-one-series.svg",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox-one-series/storage.html": {
+      "title": "Storage & save backups",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/durangoftp.png",
+          "alt": "Storage & save backups",
+          "label": "Storage & save backups",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/xbox-one-series/dev-home.png",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        },
+        {
+          "src": "/assets/images/platform-logos/xbox-one-series.svg",
+          "alt": "Xbox One / Series X|S",
+          "label": "Xbox One / Series X|S",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox/game-downloads.html": {
+      "title": "Original Xbox game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/consoles/xbox.jpg",
+          "alt": "Original Xbox",
+          "label": "Original Xbox",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox360/apps.html": {
+      "title": "XBOX360 apps",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-xbox360/aurora.png",
+          "alt": "Aurora Dashboard 0.7b",
+          "label": "Aurora Dashboard 0.7b",
+          "sourcePage": "console/xbox360/apps.html"
+        },
+        {
+          "src": "/assets/images/consoles/xbox360.png",
+          "alt": "FreeStyle Dash",
+          "label": "FreeStyle Dash",
+          "sourcePage": "console/xbox360/apps.html"
+        },
+        {
+          "src": "/assets/images/emulators/retroarch.png",
+          "alt": "RetroArch 360",
+          "label": "RetroArch 360",
+          "sourcePage": "console/xbox360/apps.html"
+        }
+      ]
+    },
+    "/console/xbox360/downloads.html": {
+      "title": "XBOX360 downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/custom-console-art/xbox360-peer-pressure.jpg",
+          "alt": "Peer Pressure 1.0.477",
+          "label": "Peer Pressure 1.0.477",
+          "sourcePage": "console/xbox360/downloads.html"
+        },
+        {
+          "src": "/assets/images/custom-console-art/xbox360-system-update.jpg",
+          "alt": "17559 System Update",
+          "label": "17559 System Update",
+          "sourcePage": "console/xbox360/downloads.html"
+        },
+        {
+          "src": "/assets/images/custom-console-art/xbox360-rock-band-blitz.jpg",
+          "alt": "Rock Band Blitz Trial",
+          "label": "Rock Band Blitz Trial",
+          "sourcePage": "console/xbox360/downloads.html"
+        },
+        {
+          "src": "/assets/images/custom-console-art/xbox360-backwards-compatibility.jpg",
+          "alt": "Xbox backwards compatibility",
+          "label": "Xbox backwards compatibility",
+          "sourcePage": "console/xbox360/downloads.html"
+        }
+      ]
+    },
+    "/console/xbox360/game-downloads.html": {
+      "title": "Xbox 360 game downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/gta52.png",
+          "alt": "Grand Theft Auto V",
+          "label": "Grand Theft Auto V",
+          "sourcePage": "console/xbox360/mods/index.html"
+        },
+        {
+          "src": "/assets/images/covers/cod-black-ops-2.jpg",
+          "alt": "Call of Duty",
+          "label": "Call of Duty",
+          "sourcePage": "console/xbox360/mods/index.html"
+        },
+        {
+          "src": "/assets/images/gta4.png",
+          "alt": "Grand Theft Auto IV",
+          "label": "Grand Theft Auto IV",
+          "sourcePage": "console/xbox360/mods/index.html"
+        },
+        {
+          "src": "/assets/images/platform-logos/xbox360.svg",
+          "alt": "Xbox 360",
+          "label": "Xbox 360",
+          "sourcePage": null
+        }
+      ]
+    },
+    "/console/xbox360/hardware.html": {
+      "title": "XBOX360 hardware",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/custom-console-art/xbox360-jtag.jpg",
+          "alt": "JTAG Installation",
+          "label": "JTAG Installation",
+          "sourcePage": "console/xbox360/hardware.html"
+        },
+        {
+          "src": "/assets/images/custom-console-art/xbox360-rgh.jpg",
+          "alt": "RGH 1.2/2.0/3.0",
+          "label": "RGH 1.2/2.0/3.0",
+          "sourcePage": "console/xbox360/hardware.html"
+        },
+        {
+          "src": "/assets/images/custom-console-art/xbox360-glitch-chips.jpg",
+          "alt": "CoolRunner & Matrix",
+          "label": "CoolRunner & Matrix",
+          "sourcePage": "console/xbox360/hardware.html"
+        }
+      ]
+    },
+    "/console/xbox360/jailbreaks.html": {
+      "title": "XBOX360 jailbreaks",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/custom-console-art/xbox360-peer-pressure.jpg",
+          "alt": "Peer Pressure · persistent softmod",
+          "label": "Peer Pressure · persistent softmod",
+          "sourcePage": "console/xbox360/jailbreaks.html"
+        },
+        {
+          "src": "/assets/images/custom-console-art/xbox360-jtag.jpg",
+          "alt": "JTAG / RGH · hardware",
+          "label": "JTAG / RGH · hardware",
+          "sourcePage": "console/xbox360/jailbreaks.html"
+        }
+      ]
+    },
+    "/console/xbox360/mods.html": {
+      "title": "XBOX360 mods",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/gta52.png",
+          "alt": "Grand Theft Auto V",
+          "label": "Grand Theft Auto V",
+          "sourcePage": "console/xbox360/mods.html"
+        },
+        {
+          "src": "/assets/images/covers/cod-black-ops-2.jpg",
+          "alt": "Call of Duty",
+          "label": "Call of Duty",
+          "sourcePage": "console/xbox360/mods.html"
+        },
+        {
+          "src": "/assets/images/gta4.png",
+          "alt": "Grand Theft Auto IV",
+          "label": "Grand Theft Auto IV",
+          "sourcePage": "console/xbox360/mods.html"
+        },
+        {
+          "src": "/assets/images/game-card-covers/gta-san-andreas-official-v1.jpg",
+          "alt": "Grand Theft Auto: San Andreas",
+          "label": "Grand Theft Auto: San Andreas",
+          "sourcePage": "console/xbox360/mods.html"
+        }
+      ]
+    },
+    "/console/xbox360/mods/index.html": {
+      "title": "Xbox 360 Mods & Mod Menus",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/gta52.png",
+          "alt": "Grand Theft Auto V",
+          "label": "Grand Theft Auto V",
+          "sourcePage": "console/xbox360/mods/index.html"
+        },
+        {
+          "src": "/assets/images/covers/cod-black-ops-2.jpg",
+          "alt": "Call of Duty",
+          "label": "Call of Duty",
+          "sourcePage": "console/xbox360/mods/index.html"
+        },
+        {
+          "src": "/assets/images/gta4.png",
+          "alt": "Grand Theft Auto IV",
+          "label": "Grand Theft Auto IV",
+          "sourcePage": "console/xbox360/mods/index.html"
+        },
+        {
+          "src": "/assets/images/game-card-covers/gta-san-andreas-official-v1.jpg",
+          "alt": "Grand Theft Auto: San Andreas",
+          "label": "Grand Theft Auto: San Andreas",
+          "sourcePage": "console/xbox360/mods/index.html"
+        }
+      ]
+    },
+    "/console/xbox360/payloads.html": {
+      "title": "XBOX360 payloads",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-xbox360/badupdate-late.png",
+          "alt": "BadUpdate 1.3",
+          "label": "BadUpdate 1.3",
+          "sourcePage": "console/xbox360/payloads.html"
+        },
+        {
+          "src": "/assets/images/consoles/xbox360.png",
+          "alt": "ABadAvatar · public beta",
+          "label": "ABadAvatar · public beta",
+          "sourcePage": "console/xbox360/payloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-xbox360/free60.png",
+          "alt": "FreeMyXe 1.2.1",
+          "label": "FreeMyXe 1.2.1",
+          "sourcePage": "console/xbox360/payloads.html"
+        },
+        {
+          "src": "/assets/images/expansion-xbox360/xeunshackle.png",
+          "alt": "XeUnshackle · beta 1.03",
+          "label": "XeUnshackle · beta 1.03",
+          "sourcePage": "console/xbox360/payloads.html"
+        }
+      ]
+    },
+    "/console/xbox360/tools.html": {
+      "title": "XBOX360 tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/expansion-xbox360/fatxplorer.png",
+          "alt": "FATXplorer · Windows x64",
+          "label": "FATXplorer · Windows x64",
+          "sourcePage": "console/xbox360/tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-xbox360/velocity.png",
+          "alt": "Velocity · Windows",
+          "label": "Velocity · Windows",
+          "sourcePage": "console/xbox360/tools.html"
+        },
+        {
+          "src": "/assets/images/expansion-xbox360/xecli.png",
+          "alt": "XeCLI 2.0 · Windows x64",
+          "label": "XeCLI 2.0 · Windows x64",
+          "sourcePage": "console/xbox360/tools.html"
+        }
+      ]
+    },
+    "/games-downloads/index.html": {
+      "title": "Games & Downloads",
+      "kind": "downloads",
+      "images": [
+        {
+          "src": "/assets/images/games/minecraft-legacy.png",
+          "alt": "Minecraft Legacy",
+          "label": "Minecraft Legacy",
+          "sourcePage": "games-downloads/index.html"
+        },
+        {
+          "src": "/assets/images/games/plants-vs-zombies.jpg",
+          "alt": "Plants vs Zombies",
+          "label": "Plants vs Zombies",
+          "sourcePage": "games-downloads/index.html"
+        }
+      ]
+    },
+    "/mods/gta5.html": {
+      "title": "GTA V Mods",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/mods/shvdn.jpg",
+          "alt": "Community Script Hook V .NET",
+          "label": "Community Script Hook V .NET",
+          "sourcePage": "mods/gta5.html"
+        },
+        {
+          "src": "/assets/images/mods/menyoo.jpg",
+          "alt": "Menyoo",
+          "label": "Menyoo",
+          "sourcePage": "mods/gta5.html"
+        },
+        {
+          "src": "/assets/images/mods/rampage-gta5.jpg",
+          "alt": "Rampage Trainer",
+          "label": "Rampage Trainer",
+          "sourcePage": "mods/gta5.html"
+        }
+      ]
+    },
+    "/mods/rdr2.html": {
+      "title": "Red Dead Redemption 2 Mods",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/mods/scripthook-rdr2.webp",
+          "alt": "Script Hook RDR2",
+          "label": "Script Hook RDR2",
+          "sourcePage": "mods/rdr2.html"
+        },
+        {
+          "src": "/assets/images/mods/rampage-1.jpg",
+          "alt": "Rampage Trainer",
+          "label": "Rampage Trainer",
+          "sourcePage": "mods/rdr2.html"
+        },
+        {
+          "src": "/assets/images/mods/ironman-1.jpg",
+          "alt": "Iron Man",
+          "label": "Iron Man",
+          "sourcePage": "mods/rdr2.html"
+        },
+        {
+          "src": "/assets/images/mods/thor-1.jpg",
+          "alt": "Thor / Zeus",
+          "label": "Thor / Zeus",
+          "sourcePage": "mods/rdr2.html"
+        }
+      ]
+    },
+    "/pc/emulators.html": {
+      "title": "Console Emulators for PC",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/emulators/PCSX2.png",
+          "alt": "PCSX2",
+          "label": "PCSX2",
+          "sourcePage": "pc/emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/Dolphin.png",
+          "alt": "Dolphin",
+          "label": "Dolphin",
+          "sourcePage": "pc/emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/RPCS3.jpg",
+          "alt": "RPCS3",
+          "label": "RPCS3",
+          "sourcePage": "pc/emulators.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/xenia.png",
+          "alt": "Xenia",
+          "label": "Xenia",
+          "sourcePage": "pc/emulators.html"
+        }
+      ]
+    },
+    "/pc/nintendo-emulators.html": {
+      "title": "Nintendo Emulators for PC",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/emulators/Dolphin.png",
+          "alt": "Dolphin",
+          "label": "Dolphin",
+          "sourcePage": "pc/nintendo-emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/Cemu.png",
+          "alt": "Cemu",
+          "label": "Cemu",
+          "sourcePage": "pc/nintendo-emulators.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/azahar.png",
+          "alt": "Azahar",
+          "label": "Azahar",
+          "sourcePage": "pc/nintendo-emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/mGBA.png",
+          "alt": "mGBA",
+          "label": "mGBA",
+          "sourcePage": "pc/nintendo-emulators.html"
+        }
+      ]
+    },
+    "/pc/playstation-emulators.html": {
+      "title": "PlayStation Emulators for PC",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/emulators/PCSX2.png",
+          "alt": "PCSX2",
+          "label": "PCSX2",
+          "sourcePage": "pc/playstation-emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/RPCS3.jpg",
+          "alt": "RPCS3",
+          "label": "RPCS3",
+          "sourcePage": "pc/playstation-emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/PPSSPP.jpg",
+          "alt": "PPSSPP",
+          "label": "PPSSPP",
+          "sourcePage": "pc/playstation-emulators.html"
+        },
+        {
+          "src": "/assets/images/emulators/ePSXe.jpg",
+          "alt": "ePSXe",
+          "label": "ePSXe",
+          "sourcePage": "pc/playstation-emulators.html"
+        }
+      ]
+    },
+    "/pc/xbox-emulators.html": {
+      "title": "Xbox Emulators for PC",
+      "kind": "emulators",
+      "images": [
+        {
+          "src": "/assets/images/xbox-one-series/xenia.png",
+          "alt": "Xenia",
+          "label": "Xenia",
+          "sourcePage": "pc/xbox-emulators.html"
+        },
+        {
+          "src": "/assets/images/xbox-one-series/xemu.png",
+          "alt": "xemu",
+          "label": "xemu",
+          "sourcePage": "pc/xbox-emulators.html"
+        }
+      ]
+    },
+    "/tools/index.html": {
+      "title": "Gaming Tools & Injectors",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/tools/extreme-injector.png",
+          "alt": "Extreme Injector",
+          "label": "Extreme Injector",
+          "sourcePage": "tools/index.html"
+        },
+        {
+          "src": "/assets/images/tools/process-hacker.png",
+          "alt": "System Informer",
+          "label": "System Informer",
+          "sourcePage": "tools/index.html"
+        },
+        {
+          "src": "/assets/images/tools/cheat-engine.jpg",
+          "alt": "Cheat Engine",
+          "label": "Cheat Engine",
+          "sourcePage": "tools/index.html"
+        },
+        {
+          "src": "/assets/images/gamemods.png",
+          "alt": "ReShade",
+          "label": "ReShade",
+          "sourcePage": "tools/index.html"
+        }
+      ]
+    },
+    "/tools/injectors.html": {
+      "title": "DLL Injectors & Memory Tools",
+      "kind": "tools",
+      "images": [
+        {
+          "src": "/assets/images/tools/extreme-injector.png",
+          "alt": "Extreme Injector v3.7.3",
+          "label": "Extreme Injector v3.7.3",
+          "sourcePage": "tools/injectors.html"
+        },
+        {
+          "src": "/assets/images/tools/cheat-engine.jpg",
+          "alt": "Cheat Engine 7.7",
+          "label": "Cheat Engine 7.7",
+          "sourcePage": "tools/injectors.html"
+        },
+        {
+          "src": "/assets/images/tools/process-hacker.png",
+          "alt": "System Informer (formerly Process Hacker)",
+          "label": "System Informer (formerly Process Hacker)",
+          "sourcePage": "tools/injectors.html"
+        },
+        {
+          "src": "/assets/images/tools/xenos-injector.png",
+          "alt": "Xenos Injector",
+          "label": "Xenos Injector",
+          "sourcePage": "tools/injectors.html"
+        }
+      ]
+    },
+    "/tools/mods.html": {
+      "title": "Game Mods & Utilities",
+      "kind": "mods",
+      "images": [
+        {
+          "src": "/assets/images/gamemods.png",
+          "alt": "ReShade 6.8.0",
+          "label": "ReShade 6.8.0",
+          "sourcePage": "tools/mods.html"
+        },
+        {
+          "src": "/assets/images/tools.png",
+          "alt": "MSI Afterburner",
+          "label": "MSI Afterburner",
+          "sourcePage": "tools/mods.html"
+        }
+      ]
+    }
+  }
+}

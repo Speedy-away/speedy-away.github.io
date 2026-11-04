@@ -1,0 +1,268 @@
+{
+  "checkedAt": "2026-11-03T18:51:10.221Z",
+  "status": "complete-three-verified-repairs-one-unmapped-unused-placeholder",
+  "repairs": [
+    {
+      "originalPath": "ps5/pr/payloads/CheatRunner_v0.17.2.elf",
+      "version": "v0.17.2",
+      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
+      "resolvedURL": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
+      "status": "verified-original",
+      "bytes": 10091832,
+      "sha256": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f",
+      "expectedBytes": 10091832,
+      "expectedSha256": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f",
+      "elf": {
+        "metadata": {
+          "bytes": 10091832,
+          "bits": 64,
+          "endianness": "little",
+          "type": 3,
+          "machineId": 62,
+          "machine": "x86-64",
+          "entry": "0x1978e0",
+          "programHeaderOffset": "64",
+          "headerBytes": 64,
+          "programHeaderBytes": 56,
+          "programHeaderCount": 4,
+          "loadSegments": [
+            {
+              "index": 0,
+              "flags": 7,
+              "fileOffset": "16384",
+              "virtualAddress": "0x0",
+              "fileBytes": "1707333",
+              "memoryBytes": "1707333"
+            },
+            {
+              "index": 1,
+              "flags": 6,
+              "fileOffset": "1736704",
+              "virtualAddress": "0x1a4000",
+              "fileBytes": "8323504",
+              "memoryBytes": "8323504"
+            },
+            {
+              "index": 2,
+              "flags": 6,
+              "fileOffset": "10076160",
+              "virtualAddress": "0x998000",
+              "fileBytes": "14268",
+              "memoryBytes": "5656960"
+            }
+          ]
+        },
+        "issues": []
+      },
+      "local": "tmp/karo-repairs/cheatrunner/v0.17.2/CheatRunner.elf",
+      "compatibility": {
+        "platform": "ps5",
+        "sourceURL": "https://github.com/notmaj0r/CheatRunner/releases/tag/v0.17.2",
+        "projectURL": "https://github.com/notmaj0r/CheatRunner",
+        "note": "Exact original release/version; retain existing KARO console/firmware constraints. Does not establish support for every PS5 firmware."
+      }
+    },
+    {
+      "originalPath": "ps5/UMTX/payloads/psplay.elf",
+      "version": "KARO743646c9df9a exactLFSobject",
+      "url": "https://media.githubusercontent.com/media/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/ps5/UMTX/payloads/psplay.elf",
+      "resolvedURL": "https://media.githubusercontent.com/media/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/ps5/UMTX/payloads/psplay.elf",
+      "status": "verified-original",
+      "bytes": 32294128,
+      "sha256": "e3392379d5bc6ca4e44cb0d2a1d8921083b2c3ea480725f68378831874542d8d",
+      "expectedBytes": 32294128,
+      "expectedSha256": "e3392379d5bc6ca4e44cb0d2a1d8921083b2c3ea480725f68378831874542d8d",
+      "elf": {
+        "metadata": {
+          "bytes": 32294128,
+          "bits": 64,
+          "endianness": "little",
+          "type": 3,
+          "machineId": 62,
+          "machine": "x86-64",
+          "entry": "0x4fa0",
+          "programHeaderOffset": "64",
+          "headerBytes": 64,
+          "programHeaderBytes": 56,
+          "programHeaderCount": 4,
+          "loadSegments": [
+            {
+              "index": 0,
+              "flags": 7,
+              "fileOffset": "16384",
+              "virtualAddress": "0x0",
+              "fileBytes": "55224",
+              "memoryBytes": "55224"
+            },
+            {
+              "index": 1,
+              "flags": 6,
+              "fileOffset": "81920",
+              "virtualAddress": "0x10000",
+              "fileBytes": "32194960",
+              "memoryBytes": "32194960"
+            },
+            {
+              "index": 2,
+              "flags": 6,
+              "fileOffset": "32292864",
+              "virtualAddress": "0x1ec8000",
+              "fileBytes": "28",
+              "memoryBytes": "2360"
+            }
+          ]
+        },
+        "issues": []
+      },
+      "local": "tmp/karo-repairs/psplay/e3392379d5bc/psplay.elf",
+      "compatibility": {
+        "platform": "ps5",
+        "note": "Exact original object identified by pinned KARO Git LFS pointer; both pointer size and SHA256 match. No version or firmware expansion inferred."
+      }
+    },
+    {
+      "originalPath": "702/enablebrowser.bin",
+      "status": "verified-original-replacement",
+      "version": "Scene Collective payloads1.0.5",
+      "url": "https://github.com/Scene-Collective/ps4-payload-repo/releases/download/1.0.5/payloads_1.0.5.zip",
+      "archive": {
+        "local": "tmp/karo-repairs/enable-browser/payloads_1.0.5.zip",
+        "bytes": 81442,
+        "sha256": "04aae9039d84b0baa0f86a6773ce10ce5f0b466d7185bfbf4df41e06da063650",
+        "member": "Enable-Browser.bin",
+        "crc32": "d5c360f9",
+        "integrityTest": "7-Zip t passed"
+      },
+      "local": "tmp/karo-repairs/enable-browser/1.0.5/Enable-Browser.bin",
+      "filename": "Enable-Browser.bin",
+      "bytes": 10114,
+      "sha256": "caa7fec3b657d60c86b5ffce01e868f9499544c53116a138dd9f68ecb15bd7b4",
+      "validation": {
+        "status": "structurally-valid",
+        "format": "BIN",
+        "metadata": {
+          "bytes": 10114
+        },
+        "issues": [],
+        "hardwareVerified": false
+      },
+      "compatibility": {
+        "platform": "ps4",
+        "selectedFirmware": "7.02",
+        "publisherRange": "4.00-7.02",
+        "evidenceURL": "https://github.com/Scene-Collective/ps4-payload-repo/releases/tag/1.0.5",
+        "sourceCommit": "7ef5bb927866c23bf1607abcb827832f316f29dd",
+        "commitMessage": "Update for 4.00-7.02",
+        "sourceProject": "https://github.com/Scene-Collective/ps4-enable-browser",
+        "note": "Original publisher compiled release selected for source-confirmed7.02; not inferred from another firmware folder. Flat BIN header/data checks do not prove native execution."
+      }
+    }
+  ],
+  "nativeCodeExecuted": false,
+  "consoleContact": false,
+  "unresolved": [
+    {
+      "originalPath": "ps5/UMTX/payloads/OnionHENv1.11.elf",
+      "status": "unmapped-placeholder-not-renamed",
+      "bytes": 2,
+      "reason": "CRLF-only file is unused by the source payload_map.js. The actual source UI maps OnionHENk1.11.elf;1.11 is the bundled kstuff version, not an established OnionHEN release.",
+      "verifiedExistingAlternative": {
+        "originalPath": "ps5/UMTX/payloads/OnionHENk1.11.elf",
+        "version": "OnionHENv0.9.0 with kstuff-lite1.11",
+        "bytes": 4676224,
+        "sha256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
+        "officialReleaseURL": "https://github.com/aydencharles/onionHEN/releases/tag/v0.9.0",
+        "officialAssetURL": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0/OnionHEN.elf",
+        "identity": "Already staged original KARO bytes match the official publisher SHA256 exactly; existing correctly-labelled file remains usable. Do not rename it as1.11."
+      }
+    }
+  ],
+  "quarantinePolicy": "The distinct Defender-quarantined900NM/payload.js and900New/payload.js were never restored, fetched, renamed or encoded. No replacements for those paths were attempted.",
+  "limitations": [
+    "No downloaded code executed.",
+    "No physical console contacted or hardware execution verified.",
+    "Original malformed/empty files remain unchanged and should remain archived as historical evidence.",
+    "Known filenames and versions are retained; OnionHEN ambiguous placeholder is excluded from ready downloads rather than mislabeled."
+  ],
+  "distinctOriginalActivatorAlternative": {
+    "projectURL": "https://github.com/sleirsgoevy/ps4-web-activator",
+    "commit": "bb23a402eb36e33a8097b774f8d53018415a21b1",
+    "files": [
+      {
+        "path": "900.html",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f077a7bc19f133943ff0c51ef6a7825212155443",
+        "size": 953,
+        "url": "https://api.github.com/repos/sleirsgoevy/ps4-web-activator/git/blobs/f077a7bc19f133943ff0c51ef6a7825212155443"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f0b48115745dded287393008cd71d7e27552b847",
+        "size": 291,
+        "url": "https://api.github.com/repos/sleirsgoevy/ps4-web-activator/git/blobs/f0b48115745dded287393008cd71d7e27552b847"
+      },
+      {
+        "path": "frontend.js",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4ce654d5d75c30a7e45bcdbfcaef6e00b7b32cd7",
+        "size": 6159,
+        "url": "https://api.github.com/repos/sleirsgoevy/ps4-web-activator/git/blobs/4ce654d5d75c30a7e45bcdbfcaef6e00b7b32cd7"
+      },
+      {
+        "path": "payload.js",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e591ff7960f485391c7c7ea32a25ac2f9e6c8012",
+        "size": 54882,
+        "url": "https://api.github.com/repos/sleirsgoevy/ps4-web-activator/git/blobs/e591ff7960f485391c7c7ea32a25ac2f9e6c8012"
+      }
+    ],
+    "sourceScope": "Original author repository supplies900.html and payload.js; README documents tested7.5X and untested6.72/7.02.9.00file existence alone is not physical execution proof.",
+    "method": "Metadata only for this alternative; no quarantined file or alternative compiled code was fetched. A distinct original integration needs its own source/dependency validation; no silent replacement of quarantined paths.",
+    "existingByteIdenticalCopies": [
+      {
+        "sourcePaths": [
+          "900C/payload.js",
+          "900CM/payload.js",
+          "900N/payload.js",
+          "900NA/payload.js"
+        ],
+        "authorPath": "payload.js",
+        "bytes": 54882,
+        "gitBlobSHA1": "e591ff7960f485391c7c7ea32a25ac2f9e6c8012",
+        "sha256": "15481cbb4d91e0d52ed26f61e5d059421e08ed4e9ad0fc2ba1fd75d135f4c105"
+      },
+      {
+        "sourcePaths": [
+          "900C/frontend.js",
+          "900CM/frontend.js",
+          "900N/frontend.js",
+          "900NA/frontend.js"
+        ],
+        "authorPath": "frontend.js",
+        "bytes": 6159,
+        "gitBlobSHA1": "4ce654d5d75c30a7e45bcdbfcaef6e00b7b32cd7",
+        "sha256": "cc779cadfe74ab7f406137a4736eac3010ac3ce66432730de12686028ac02cd3"
+      }
+    ]
+  },
+  "summary": {
+    "verifiedRepairs": 3,
+    "readyELFs": 2,
+    "readyBINs": 1,
+    "preservedReleaseArchives": 1,
+    "unmappedUnusedPlaceholders": 1,
+    "quarantinedPathsFetchedOrRestored": 0,
+    "nativeCodeExecuted": false
+  },
+  "sourcePages": [
+    "https://github.com/notmaj0r/CheatRunner/releases/tag/v0.17.2",
+    "https://github.com/Scene-Collective/ps4-payload-repo/releases/tag/1.0.5",
+    "https://github.com/aydencharles/onionHEN/releases/tag/v0.9.0",
+    "https://github.com/sleirsgoevy/ps4-web-activator"
+  ]
+}

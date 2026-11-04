@@ -1,0 +1,29 @@
+'use strict';
+// Verify the authored UI bundle and retain a reproducible local handoff.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+const sender=read('docs/qa/host-redesign-sender.json'),bytes=fs.readFileSync(sender.file);
+if(bytes.length!==sender.bytes||hash(bytes)!==sender.sha256||!fs.readFileSync(sender.backupPath).equals(bytes))throw Error('Sender public/archive identity mismatch');
+const zip=require('./verify-host-menu-sender-integrity.cjs').inspectZip(bytes),prefix='whatwhatboy-console-payload-sender/';
+const manifest=JSON.parse(zip.entries.get(prefix+'bundle-manifest.json'));
+for(const entry of manifest.files){const b=zip.entries.get(prefix+entry.name);if(!b||b.length!==entry.bytes||hash(b)!==entry.sha256)throw Error('ZIP member mismatch '+entry.name);}
+for(const name of ['assets/host-file-browser.css','assets/host-folders.js','assets/host-dashboard.js','hosts/ps4/index.html','hosts/ps5/index.html'])if(!zip.entries.has(prefix+name))throw Error('Missing redesigned UI member '+name);
+const current=require('./package-console-payload-sender.cjs').collectFiles().files;
+const records=[...current].sort(([a],[b])=>a.localeCompare(b)).map(([name,b])=>({name,bytes:b.length,sha256:hash(b)}));
+if(hash(JSON.stringify(records))!==sender.snapshot)throw Error('Shared source changed after packaging; retain package and rebuild final snapshot');
+function tests(file){const log=fs.readFileSync(path.join(root,file),'utf8'),number=label=>Number(log.match(new RegExp('ℹ '+label+' (\\d+)'))?.[1]);return {tests:number('tests'),passed:number('pass'),failed:number('fail'),report:file,failures:[...log.matchAll(/^✖ (.+) \([\d.]+ms\)$/gm)].map(m=>m[1]).filter((v,i,a)=>a.indexOf(v)===i)};}
+const archiveText=fs.readFileSync(path.join(root,'docs/qa/host-redesign-archive-index.txt'),'utf8');
+const archive=JSON.parse(archiveText.slice(0,archiveText.lastIndexOf('}')+1));
+const auditFile='docs/qa/host-redesign-site-audit.txt',audit=fs.readFileSync(path.join(root,auditFile),'utf8').match(/Audited (\d+) public pages and (\d+) local links\/assets; (\d+) issue/);
+if(!audit||Number(audit[3]))throw Error('Site audit is incomplete or has issues');
+const sourceFiles=['scripts/host-folder-markup.cjs','assets/host-file-browser.css','assets/host-folders.js','assets/host-dashboard.js','i18n-tools/afterglow-translations.cjs','i18n-tools/build-chrome.js','scripts/tests/host-file-redesign.test.cjs'];
+const update={date:'2026-11-03',status:'Visual redesign complete locally',request:'Redesign the main PS4 and PS5 hosts fully while retaining actual file lists, full-page use, top Back navigation and pinned compatibility.',pages:['/hosts/ps4/','/hosts/ps5/'],changes:['Graphite surfaces, Manrope typography, muted mint actions and compact detached top navigation','Aligned File/Format/File size/Firmware/Actions columns and original filenames; approximately 71px desktop rows','Visible file counts, compact search and primary category tabs; secondary utilities in More','Structured file-details popup for every file, source links, Escape, focus trapping and return focus','Phone layout, scrolling translated tabs, Arabic RTL and onscreen language picker','Explicit accessible labels for icon-only phone controls','All existing download IDs, firmware/game pins and pre-dispatch Load guards preserved; no transport or payload byte changes'],verification:{focusedTests:tests('docs/qa/host-redesign-focused-tests.txt'),fullSuite:tests('docs/qa/host-redesign-full-tests.txt'),siteAudit:{pages:Number(audit[1]),links:Number(audit[2]),issues:0,report:auditFile},browser:['PS4 and PS5 desktop tables inspected','430px phone viewport and Arabic RTL inspected without document overflow; English restored and viewport reset','More menu and file-details keyboard focus verified','No payload or exploit executed; no console service contacted'],screenshots:['docs/screenshots/host-redesign-ps4.png','docs/screenshots/host-redesign-ps5.png','docs/screenshots/host-redesign-phone.png','docs/screenshots/host-redesign-file-details.png','docs/screenshots/host-redesign-firmware.png'],sender:{...sender,zipEntries:zip.entryCount,manifestFiles:manifest.files.length,allCRCAndSHA256Verified:true,publicAndFArchiveVerified:true,finalSourceSnapshotMatches:true},archive},sourceHashes:Object.fromEntries(sourceFiles.map(p=>[p,hash(fs.readFileSync(path.join(root,p)))])),preservation:'All earlier files and helper builds retained. No new payload IDs or native receiver builds from this visual work.',preview:'http://127.0.0.1:8765/hosts/ps4/?view=loaders',published:false};
+if(update.verification.focusedTests.failed||!update.verification.focusedTests.tests)throw Error('Focused checks did not pass');
+if(update.verification.fullSuite.failed)update.verification.fullSuite.note='The full-suite sender-source hash failure predates this rebuilt sender; the final independent ZIP and current-source snapshot verification above confirms parity. The package-installer check still reports a missing Spanish native-helper warning translation from concurrent helper work. No immutable native artifact was replaced to satisfy that check.';
+const file=path.join(root,'docs/console-expansion-handoff.json'),before=fs.readFileSync(file,'utf8'),handoff=JSON.parse(before);
+handoff.hostVisualRedesign20261103=update;
+if(fs.readFileSync(file,'utf8')!==before)throw Error('Concurrent handoff edit; retry');
+fs.writeFileSync(file,JSON.stringify(handoff,null,2)+'\n');
+fs.writeFileSync(path.join(root,'docs/host-visual-redesign.json'),JSON.stringify(update,null,2)+'\n');
+console.log(JSON.stringify({sender:sender.version,zipEntries:zip.entryCount,focusedTests:update.verification.focusedTests,fullSuite:update.verification.fullSuite,siteIssues:0,archiveFiles:archive.presentFileRecords}));

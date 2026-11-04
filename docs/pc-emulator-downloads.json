@@ -1,0 +1,726 @@
+{
+  "schemaVersion": 1,
+  "scope": "pc-emulators",
+  "files": [
+    {
+      "appId": "ps4-shadps4",
+      "name": "shadps4-win64-sdl-0.21.0.zip",
+      "version": "v.0.21.0",
+      "bytes": 31725856,
+      "sha256": "95295b8f109663f70c2dac685e6232aa97be1353f6ed0a5d5e0c5dd24a797d88",
+      "sourceUrl": "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.21.0/shadps4-win64-sdl-0.21.0.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-ps4-shadps4",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/ps4-shadps4/95295b8f1096/shadps4-win64-sdl-0.21.0.zip",
+      "format": "ZIP",
+      "entries": 1,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "pcsx2",
+      "name": "pcsx2-v2.8.2-windows-x64-Qt.7z",
+      "version": "v2.8.2",
+      "bytes": 25670075,
+      "sha256": "7dfc829ca1994cc1045ac49f05e39b6cf968b72e6a374c40e05c2a2b4ac200b4",
+      "sourceUrl": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-windows-x64-Qt.7z",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-pcsx2",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/pcsx2/7dfc829ca199/pcsx2-v2.8.2-windows-x64-Qt.7z",
+      "format": "7z",
+      "entries": 259,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "rpcs3",
+      "name": "rpcs3-v0.0.43-20551-ad468a13_win64_msvc.7z",
+      "version": "0.0.43-20551 · checked build",
+      "bytes": 37195158,
+      "sha256": "41bcdaca12a15a10503dffecee67df47847de1f0b1ba8735e81f4d20354673e6",
+      "sourceUrl": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-ad468a13f6374f364467a9e4988e95938c37bb42/rpcs3-v0.0.43-20551-ad468a13_win64_msvc.7z",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-rpcs3",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/rpcs3/41bcdaca12a1/rpcs3-v0.0.43-20551-ad468a13_win64_msvc.7z",
+      "format": "7z",
+      "entries": 286,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "cemu",
+      "name": "cemu-2.6-windows-x64.zip",
+      "version": "v2.6",
+      "bytes": 26374093,
+      "sha256": "a6bcc2bc42a362d10213819948f3152fae7d47f70067f25939b51d3ddcfb0896",
+      "sourceUrl": "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-cemu",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/cemu/a6bcc2bc42a3/cemu-2.6-windows-x64.zip",
+      "format": "ZIP",
+      "entries": 284,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "desmume",
+      "name": "desmume-0.9.13-win64.zip",
+      "version": "0.9.13",
+      "bytes": 6086795,
+      "sha256": "cbf710b8e6b29f0904e289a9b9a895548a2d7c7af5a3145c8279b97a69a09276",
+      "sourceUrl": "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-win64.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-desmume",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/desmume/cbf710b8e6b2/desmume-0.9.13-win64.zip",
+      "format": "ZIP",
+      "entries": 7,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "mupen64plus",
+      "name": "mupen64plus-bundle-win64-2.6.0.zip",
+      "version": "2.6.0",
+      "bytes": 2721037,
+      "sha256": "8292c68d6ffc3428d4181ac09b1368ef2adb2cc568325545aac78cb6c1e66e21",
+      "sourceUrl": "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-bundle-win64-2.6.0.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-mupen64plus",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/mupen64plus/8292c68d6ffc/mupen64plus-bundle-win64-2.6.0.zip",
+      "format": "ZIP",
+      "entries": 25,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "snes9x",
+      "name": "snes9x-1.63-win32-x64.zip",
+      "version": "1.63",
+      "bytes": 5328695,
+      "sha256": "e2bd103819051eae57d163cdbbf6b3b92db73fdd4a6a0ee6a939e507eaa95db8",
+      "sourceUrl": "https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-win32-x64.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-snes9x",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/snes9x/e2bd10381905/snes9x-1.63-win32-x64.zip",
+      "format": "ZIP",
+      "entries": 6,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "xenia-canary",
+      "name": "xenia_canary_windows.7z",
+      "version": "96ce1ac",
+      "bytes": 3697475,
+      "sha256": "ee99aeddf6a18a6ca9b624b1dce0193a7c8d0e8f8a2af2d9a12f154ad5d10f5c",
+      "sourceUrl": "https://github.com/xenia-canary/xenia-canary/releases/download/96ce1ac/xenia_canary_windows.7z",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-xenia-canary",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/xenia-canary/ee99aeddf6a1/xenia_canary_windows.7z",
+      "format": "7z",
+      "entries": 2,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "dolphin",
+      "name": "dolphin-2609a-x64.7z",
+      "version": "2609a",
+      "bytes": 20037671,
+      "sha256": "bbfd13bf9e6d2a4164a15c392b1f32a9b18150e5136746b388704608fbb60f76",
+      "sourceUrl": "https://dl.dolphin-emu.org/releases/2609a/dolphin-2609a-x64.7z",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-dolphin",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/dolphin/bbfd13bf9e6d/dolphin-2609a-x64.7z",
+      "format": "7z",
+      "entries": 2812,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "ppsspp",
+      "name": "ppsspp_win.zip",
+      "version": "1.20.4",
+      "bytes": 27658759,
+      "sha256": "a60f04ebdb0b5f1655422bd7f88349a46999b17ad5115d6ddb290c3934bd5163",
+      "sourceUrl": "https://www.ppsspp.org/files/1_20_4/ppsspp_win.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-ppsspp",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows",
+      "local": "/downloads/archive/pc-emulators/ppsspp/a60f04ebdb0b/ppsspp_win.zip",
+      "format": "ZIP",
+      "entries": 207,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "mgba",
+      "name": "mGBA-0.10.5-win64.7z",
+      "version": "0.10.5",
+      "bytes": 14156919,
+      "sha256": "b497a57c7d9093834dadc64f33a90f7c411439c21fdb8a0143255a45ea37563a",
+      "sourceUrl": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-win64.7z",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-mgba",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/mgba/b497a57c7d90/mGBA-0.10.5-win64.7z",
+      "format": "7z",
+      "entries": 88,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "epsxe",
+      "name": "ePSXe2018.zip",
+      "version": "Windows 2.0.18",
+      "bytes": 1551309,
+      "sha256": "ec0d0e235f839261818acc5118cd810a7193b0fbcbd339517f884dffc31792bb",
+      "sourceUrl": "https://www.epsxe.com/files/ePSXe2018.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-epsxe",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows",
+      "local": "/downloads/archive/pc-emulators/epsxe/ec0d0e235f83/ePSXe2018.zip",
+      "format": "ZIP",
+      "entries": 37,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "project64",
+      "name": "Project64-3.0.1-5664-2df3434.zip",
+      "version": "3.0.1-5664-2df3434",
+      "bytes": 4496865,
+      "sha256": "f8be471f105e844e32589d21f3c1ee466d5ff4d93b8b7aff69e1badf511faf7f",
+      "sourceUrl": "https://www.pj64-emu.com/file/project64-3-0-1-5664-2df3434/",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-project64",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows",
+      "local": "/downloads/archive/pc-emulators/project64/f8be471f105e/Project64-3.0.1-5664-2df3434.zip",
+      "format": "ZIP",
+      "entries": 843,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "retroarch",
+      "name": "RetroArch-1.22.2-Windows-x64.7z",
+      "version": "1.22.2",
+      "bytes": 202509078,
+      "sha256": "b2139b1d0f9d4526dc6b5ce23cbb3efdc766096fa6f2c3df016818b486ac6372",
+      "sourceUrl": "https://buildbot.libretro.com/stable/1.22.2/windows/x86_64/RetroArch.7z",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-retroarch",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "format": "7z",
+      "entries": 15646,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "ps5-sharpemu",
+      "name": "sharpemu-0.0.7-pulse-win-x64.zip",
+      "version": "v0.0.7-pulse",
+      "bytes": 65025257,
+      "sha256": "3ab0ac49f2401dc8aa73ec671e6c83fb7785f7aacbaedc194de15c2bc4d0733c",
+      "sourceUrl": "https://github.com/sharpemu/sharpemu/releases/download/v0.0.7-pulse/sharpemu-0.0.7-pulse-win-x64.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-ps5-sharpemu",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/ps5-sharpemu/3ab0ac49f240/sharpemu-0.0.7-pulse-win-x64.zip",
+      "format": "ZIP",
+      "entries": 20,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "ps5-kyty",
+      "name": "KytyPS5-2026-11-02-02b17af-Windows-x64.zip",
+      "version": "KytyPS5-2026-11-02-02b17af",
+      "bytes": 26905044,
+      "sha256": "c7d8595f6c091070594ca7b3dbc907af53c9ff20bf6f3f482ff5973352ee7e7c",
+      "sourceUrl": "https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-11-02-02b17af/KytyPS5-2026-11-02-02b17af-Windows-x64.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-ps5-kyty",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/ps5-kyty/c7d8595f6c09/KytyPS5-2026-11-02-02b17af-Windows-x64.zip",
+      "format": "ZIP",
+      "entries": 50,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "azahar",
+      "name": "azahar-windows-mxe-2126.2.zip",
+      "version": "2126.2",
+      "bytes": 69427557,
+      "sha256": "dae9f107d9141ebc0e64ba251f9796393aab651cf3437ab9e083b45354624486",
+      "sourceUrl": "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-mxe-2126.2.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-azahar",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/azahar/dae9f107d914/azahar-windows-mxe-2126.2.zip",
+      "format": "ZIP",
+      "entries": 76,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "xemu",
+      "name": "xemu-0.8.139-windows-x86_64.zip",
+      "version": "v0.8.139",
+      "bytes": 11420991,
+      "sha256": "fbb14dd7ea08120ca9ec99c955758786645af16a5058250553b3b7d7592e8701",
+      "sourceUrl": "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-x86_64.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-xemu",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/xemu/fbb14dd7ea08/xemu-0.8.139-windows-x86_64.zip",
+      "format": "ZIP",
+      "entries": 2,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "xenia",
+      "name": "xenia_master.zip",
+      "version": "v1.0.2844-master",
+      "bytes": 18242678,
+      "sha256": "6d41aa4bef26b395b0d48230dc4be6c43cf6ba0a93f43c0674ca2f7150f846e0",
+      "sourceUrl": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2844-master/xenia_master.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-xenia",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/xenia/6d41aa4bef26/xenia_master.zip",
+      "format": "ZIP",
+      "entries": 3,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "cxbx-reloaded",
+      "name": "CxbxReloaded-Release.zip",
+      "version": "CI-585c49a · checked build",
+      "bytes": 4579292,
+      "sha256": "010d1e85bee9f82f05ae57ca483e7ae61fecba06c1637bf6b5a74ca09b03bf43",
+      "sourceUrl": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-585c49a/CxbxReloaded-Release.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-cxbx-reloaded",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/cxbx-reloaded/010d1e85bee9/CxbxReloaded-Release.zip",
+      "format": "ZIP",
+      "entries": 27,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    },
+    {
+      "appId": "play",
+      "name": "Play-x86-64.exe",
+      "version": "0.70",
+      "bytes": 10862195,
+      "sha256": "d4cd4583694d555771483526b87b7ff29ca42b0fab0693ae69d1189575a56883",
+      "sourceUrl": "https://purei.org/downloads/play/stable/0.70/Play-x86-64.exe",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-play",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/play/d4cd4583694d/Play-x86-64.exe",
+      "format": "PE installer",
+      "validation": "MZ and PE signatures; installer not executed"
+    },
+    {
+      "appId": "duckstation",
+      "name": "duckstation-windows-x64-release.zip",
+      "version": "Latest rolling build · checked 2 November 2026",
+      "bytes": 73988909,
+      "sha256": "b55d1cf45bdb6d0326a9083cf787ca7d6386dff6c837f6d3b8713f48af2a02b7",
+      "sourceUrl": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
+      "archiveRole": [
+        "Builds",
+        "Windows"
+      ],
+      "itemId": "pc-emulators-duckstation",
+      "platform": "PC",
+      "category": [
+        "Emulators"
+      ],
+      "os": "windows",
+      "osLabel": "Windows x64",
+      "local": "/downloads/archive/pc-emulators/duckstation/b55d1cf45bdb/duckstation-windows-x64-release.zip",
+      "format": "ZIP",
+      "entries": 286,
+      "validation": "7-Zip integrity test and path list; ready EXE present; no program executed"
+    }
+  ],
+  "attempts": [
+    {
+      "appId": "ps4-shadps4",
+      "url": "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.21.0/shadps4-win64-sdl-0.21.0.zip",
+      "checkedAt": "2026-11-02T08:25:16.566Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 31725856,
+      "sha256": "95295b8f109663f70c2dac685e6232aa97be1353f6ed0a5d5e0c5dd24a797d88"
+    },
+    {
+      "appId": "pcsx2",
+      "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-windows-x64-Qt.7z",
+      "checkedAt": "2026-11-02T08:25:24.924Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 25670075,
+      "sha256": "7dfc829ca1994cc1045ac49f05e39b6cf968b72e6a374c40e05c2a2b4ac200b4"
+    },
+    {
+      "appId": "rpcs3",
+      "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-ad468a13f6374f364467a9e4988e95938c37bb42/rpcs3-v0.0.43-20551-ad468a13_win64_msvc.7z",
+      "checkedAt": "2026-11-02T08:25:30.352Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 37195158,
+      "sha256": "41bcdaca12a15a10503dffecee67df47847de1f0b1ba8735e81f4d20354673e6"
+    },
+    {
+      "appId": "cemu",
+      "url": "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip",
+      "checkedAt": "2026-11-02T08:25:46.283Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 26374093,
+      "sha256": "a6bcc2bc42a362d10213819948f3152fae7d47f70067f25939b51d3ddcfb0896"
+    },
+    {
+      "appId": "desmume",
+      "url": "https://github.com/TASEmulators/desmume/releases/download/release_0_9_13/desmume-0.9.13-win64.zip",
+      "checkedAt": "2026-11-02T08:25:50.768Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 6086795,
+      "sha256": "cbf710b8e6b29f0904e289a9b9a895548a2d7c7af5a3145c8279b97a69a09276"
+    },
+    {
+      "appId": "mupen64plus",
+      "url": "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.6.0/mupen64plus-bundle-win64-2.6.0.zip",
+      "checkedAt": "2026-11-02T08:25:54.316Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 2721037,
+      "sha256": "8292c68d6ffc3428d4181ac09b1368ef2adb2cc568325545aac78cb6c1e66e21"
+    },
+    {
+      "appId": "snes9x",
+      "url": "https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-win32-x64.zip",
+      "checkedAt": "2026-11-02T08:25:56.131Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 5328695,
+      "sha256": "e2bd103819051eae57d163cdbbf6b3b92db73fdd4a6a0ee6a939e507eaa95db8"
+    },
+    {
+      "appId": "xenia-canary",
+      "url": "https://github.com/xenia-canary/xenia-canary/releases/download/96ce1ac/xenia_canary_windows.7z",
+      "checkedAt": "2026-11-02T08:26:20.427Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 3697475,
+      "sha256": "ee99aeddf6a18a6ca9b624b1dce0193a7c8d0e8f8a2af2d9a12f154ad5d10f5c"
+    },
+    {
+      "appId": "dolphin",
+      "url": "https://dl.dolphin-emu.org/releases/2609a/dolphin-2609a-x64.7z",
+      "checkedAt": "2026-11-02T08:26:24.357Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 20037671,
+      "sha256": "bbfd13bf9e6d2a4164a15c392b1f32a9b18150e5136746b388704608fbb60f76"
+    },
+    {
+      "appId": "ppsspp",
+      "url": "https://www.ppsspp.org/files/1_20_4/ppsspp_win.zip",
+      "checkedAt": "2026-11-02T08:26:36.420Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 27658759,
+      "sha256": "a60f04ebdb0b5f1655422bd7f88349a46999b17ad5115d6ddb290c3934bd5163"
+    },
+    {
+      "appId": "mgba",
+      "url": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-win64.7z",
+      "checkedAt": "2026-11-02T08:26:42.205Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 14156919,
+      "sha256": "b497a57c7d9093834dadc64f33a90f7c411439c21fdb8a0143255a45ea37563a"
+    },
+    {
+      "appId": "epsxe",
+      "url": "https://www.epsxe.com/files/ePSXe2018.zip",
+      "checkedAt": "2026-11-02T08:26:45.067Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 1551309,
+      "sha256": "ec0d0e235f839261818acc5118cd810a7193b0fbcbd339517f884dffc31792bb"
+    },
+    {
+      "appId": "project64",
+      "url": "https://www.pj64-emu.com/file/project64-3-0-1-5664-2df3434/",
+      "checkedAt": "2026-11-02T08:26:46.763Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 4496865,
+      "sha256": "f8be471f105e844e32589d21f3c1ee466d5ff4d93b8b7aff69e1badf511faf7f"
+    },
+    {
+      "appId": "retroarch",
+      "url": "https://buildbot.libretro.com/stable/1.22.2/windows/x86_64/RetroArch.7z",
+      "checkedAt": "2026-11-02T08:26:49.006Z",
+      "status": "ready",
+      "reusedEarlierArchive": true,
+      "bytes": 202509078,
+      "sha256": "b2139b1d0f9d4526dc6b5ce23cbb3efdc766096fa6f2c3df016818b486ac6372"
+    },
+    {
+      "appId": "ps5-sharpemu",
+      "url": "https://github.com/sharpemu/sharpemu/releases/download/v0.0.7-pulse/sharpemu-0.0.7-pulse-win-x64.zip",
+      "checkedAt": "2026-11-02T08:27:16.090Z",
+      "status": "ready",
+      "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/1178856997/d0e4cc97-7709-4a3c-ae12-e2fef986387a",
+      "contentType": "application/octet-stream",
+      "bytes": 65025257,
+      "sha256": "3ab0ac49f2401dc8aa73ec671e6c83fb7785f7aacbaedc194de15c2bc4d0733c"
+    },
+    {
+      "appId": "ps5-kyty",
+      "url": "https://github.com/KytyPS5/KytyPS5/releases/download/KytyPS5-2026-11-02-02b17af/KytyPS5-2026-11-02-02b17af-Windows-x64.zip",
+      "checkedAt": "2026-11-02T08:27:42.130Z",
+      "status": "ready",
+      "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/1264098367/796f1849-054d-4212-a8db-b01d898772a1",
+      "contentType": "application/octet-stream",
+      "bytes": 26905044,
+      "sha256": "c7d8595f6c091070594ca7b3dbc907af53c9ff20bf6f3f482ff5973352ee7e7c"
+    },
+    {
+      "appId": "duckstation",
+      "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
+      "checkedAt": "2026-11-02T08:28:06.516Z",
+      "status": "unavailable",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "appId": "azahar",
+      "url": "https://github.com/azahar-emu/azahar/releases/download/2126.2/azahar-windows-mxe-2126.2.zip",
+      "checkedAt": "2026-11-02T08:29:06.520Z",
+      "status": "ready",
+      "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/767183985/6bdf8569-b111-4822-846c-02bf23a31ff7",
+      "contentType": "application/octet-stream",
+      "bytes": 69427557,
+      "sha256": "dae9f107d9141ebc0e64ba251f9796393aab651cf3437ab9e083b45354624486"
+    },
+    {
+      "appId": "xemu",
+      "url": "https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-x86_64.zip",
+      "checkedAt": "2026-11-02T08:29:51.888Z",
+      "status": "ready",
+      "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/241270996/356d27ed-b25a-4003-ab5c-0290d155ddd8",
+      "contentType": "application/octet-stream",
+      "bytes": 11420991,
+      "sha256": "fbb14dd7ea08120ca9ec99c955758786645af16a5058250553b3b7d7592e8701"
+    },
+    {
+      "appId": "xenia",
+      "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2844-master/xenia_master.zip",
+      "checkedAt": "2026-11-02T08:30:20.885Z",
+      "status": "ready",
+      "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/451357176/1aad76e7-c39c-49f0-9844-fdd0f8b43122",
+      "contentType": "application/octet-stream",
+      "bytes": 18242678,
+      "sha256": "6d41aa4bef26b395b0d48230dc4be6c43cf6ba0a93f43c0674ca2f7150f846e0"
+    },
+    {
+      "appId": "cxbx-reloaded",
+      "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-585c49a/CxbxReloaded-Release.zip",
+      "checkedAt": "2026-11-02T08:30:46.054Z",
+      "status": "ready",
+      "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/1214933335/d5648ccf-aef9-4340-afab-293a38acf72d",
+      "contentType": "application/octet-stream",
+      "bytes": 4579292,
+      "sha256": "010d1e85bee9f82f05ae57ca483e7ae61fecba06c1637bf6b5a74ca09b03bf43"
+    },
+    {
+      "appId": "play",
+      "url": "https://purei.org/downloads/play/stable/0.70/Play-x86-64.exe",
+      "checkedAt": "2026-11-02T08:31:11.985Z",
+      "status": "ready",
+      "resolvedUrl": "https://purei.org/downloads/play/stable/0.70/Play-x86-64.exe",
+      "contentType": "application/x-msdos-program",
+      "bytes": 10862195,
+      "sha256": "d4cd4583694d555771483526b87b7ff29ca42b0fab0693ae69d1189575a56883"
+    },
+    {
+      "appId": "duckstation",
+      "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
+      "checkedAt": "2026-11-02T08:32:24.184Z",
+      "status": "ready",
+      "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/207245092/ea7eb432-43b1-45fe-9e90-ac2d27cb3b6b",
+      "contentType": "application/octet-stream",
+      "bytes": 73988909,
+      "sha256": "b55d1cf45bdb6d0326a9083cf787ca7d6386dff6c837f6d3b8713f48af2a02b7"
+    }
+  ],
+  "updatedAt": "2026-11-02T08:34:41.762Z"
+}

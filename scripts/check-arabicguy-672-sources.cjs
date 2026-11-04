@@ -1,0 +1,6 @@
+'use strict';
+// HEAD only: record upstream availability/CORS without executing any response.
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),dir='docs/host-reviews/ps4/6.72/arabicguy',build=JSON.parse(fs.readFileSync(path.join(root,dir,'prepared.json'),'utf8'));
+async function main(){const rows=[];for(const p of [build.pins.html,build.pins.kernel,build.pins.loader,...Object.values(build.pins.builds)]){const r=await fetch(p.url,{method:'HEAD',signal:AbortSignal.timeout(30000)});rows.push({path:p.path,url:p.url,responseURL:r.url,status:r.status,contentType:r.headers.get('content-type'),cors:r.headers.get('access-control-allow-origin'),nosniff:r.headers.get('x-content-type-options'),matchesPinnedURL:r.url===p.url});}const report={checkedAt:new Date().toISOString(),method:'HEAD only, no custom Origin header, no downloaded code execution. Header checks do not establish physical PS4 browser/TLS compatibility.',files:rows};fs.writeFileSync(path.join(root,dir,'upstream-availability.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(rows.map(x=>({path:x.path,status:x.status,cors:x.cors,matchesPinnedURL:x.matchesPinnedURL}))));if(rows.some(x=>x.status!==200||x.cors!=='*'||!x.matchesPinnedURL))process.exitCode=1;}
+main().catch(e=>{console.error(e.message);process.exitCode=1;});

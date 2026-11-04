@@ -1,0 +1,29 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "New titles and projects absent from the baseline: pinned original GoldHEN cheat definitions, title-specific patch XMLs and original PS5 native app releases. Preserve all existing versions and requirements.",
+  "patchFiles": [
+    "SonicXShadowGenerations-Orbis.xml",
+    "Daymare1998-Orbis.xml",
+    "AmnesiaTheBunker-Orbis.xml",
+    "LostJudgmentJP-orbis.xml",
+    "TheTechnomancer-Orbis.xml",
+    "HellbladeGame-Orbis.xml",
+    "FarCry3BloodDragonClassicEdition.xml",
+    "Mafia1Remake-Orbis.xml",
+    "Back4Blood.xml",
+    "TheSinkingCity-Orbis.xml",
+    "AssettoCorsaCompetizione-Orbis.xml",
+    "Homefront2-Orbis.xml",
+    "FatalFrame_MaskoftheLunarEclipse-Orbis.xml"
+  ],
+  "cheats": [
+    {"game":"lost-judgment","title":"Lost Judgment","filename":"CUSA28183_01.11.json","steamApp":2058190,"expectedName":"lost judgment"},
+    {"game":"the-technomancer","title":"The Technomancer","filename":"CUSA03803_01.04.json","steamApp":338390,"expectedName":"technomancer"},
+    {"game":"far-cry-3-blood-dragon","title":"Far Cry 3: Blood Dragon Classic Edition","filename":"CUSA29007_01.00.json","steamApp":233270,"expectedName":"blood dragon"},
+    {"game":"mafia-definitive-edition","title":"Mafia: Definitive Edition","filename":"CUSA18100_01.03.json","steamApp":1030840,"expectedName":"mafia"},
+    {"game":"the-sinking-city","title":"The Sinking City","filename":"CUSA13152_01.04.json","steamApp":750130,"expectedName":"sinking city"},
+    {"game":"homefront-the-revolution","title":"Homefront: The Revolution","filename":"CUSA00938_01.00.json","steamApp":223100,"expectedName":"homefront"},
+    {"game":"nioh-2","title":"Nioh 2","filename":"CUSA15526_01.27.json","steamApp":1325200,"expectedName":"nioh 2"},
+    {"game":"yakuza-0","title":"Yakuza 0","filename":"CUSA05133_01.05.json","steamApp":638970,"expectedName":"yakuza 0"}
+  ]
+}

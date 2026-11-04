@@ -1,0 +1,132 @@
+{
+  "updatedAt": "2026-11-03T21:08:03.213Z",
+  "pages": 24,
+  "theme": "Forest/mint, sharp borders, image headings, native HTML/CSS; matches the root home.",
+  "actionContractsUnchanged": true,
+  "nativeRuntimeFilesChanged": 0,
+  "downloadFilesChanged": 0,
+  "browserRenderVerified": false,
+  "hardwareExecutionVerified": false,
+  "records": [
+    {
+      "page": "hosts/index.html",
+      "image": "/assets/images/logo.png",
+      "actionContractSHA256": "87d1df661a5f1641e16b5c17e75a62915cd190942a007295bae30b598328fc37"
+    },
+    {
+      "page": "hosts/karo/index.html",
+      "image": "/assets/images/exploit-hosts/ps4-KaroIMG.png",
+      "actionContractSHA256": "a3c57b10591f00bea0a3196abc5c07f6d3ab6ed149a6fcd94f0a46ca735810dc"
+    },
+    {
+      "page": "hosts/karo/versions.html",
+      "image": "/assets/images/exploit-hosts/ps4-KaroIMG.png",
+      "actionContractSHA256": "ffcdd78cabb4af6ed81548780484e9916f933830b124b9f98726db4f12c97201"
+    },
+    {
+      "page": "hosts/ps4/afterglow/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "327f7bc8d68585cc683c5990a3d886bc50fe20372cd09ed41b79fc449bf79b44"
+    },
+    {
+      "page": "hosts/ps4/cheats/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "28318651240b525c17eff05d78a746b7421abed153e8000abc1e4de2cd274d6c"
+    },
+    {
+      "page": "hosts/ps4/files/index.html",
+      "image": "/assets/images/host-catalog/files.svg",
+      "actionContractSHA256": "a36ba29f392d58d4cf695180959158a7a959fd3698ce613008ed906fcca45036"
+    },
+    {
+      "page": "hosts/ps4/firmware/index.html",
+      "image": "/assets/images/host-catalog/loaders.svg",
+      "actionContractSHA256": "7b0c04a5b3fad12bbb2fadc1d06c7e1d964bc46bde2c96af880cdbe179a0b573"
+    },
+    {
+      "page": "hosts/ps4/gta5/index.html",
+      "image": "/assets/images/gta52.png",
+      "actionContractSHA256": "0391000faab9e463780eff68065f8217599ca0f139e7c2767ce7f3b232b92742"
+    },
+    {
+      "page": "hosts/ps4/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "actionContractSHA256": "6b613a596aab74108854e3222f18a0c0196a0561aa3692cf9a605dc55ec84cba"
+    },
+    {
+      "page": "hosts/ps4/lua/index.html",
+      "image": "/assets/images/host-catalog/payloads.svg",
+      "actionContractSHA256": "eace6a03d63c197d2b2fcd183354c55dc5f7a83916a9321407925796b369127c"
+    },
+    {
+      "page": "hosts/ps4/other-games/index.html",
+      "image": "/assets/images/host-catalog/games.svg",
+      "actionContractSHA256": "9f84b153cec2ffaefdbebc44aefaab7b7e845acccbbf3f87625f5a21c20da8c7"
+    },
+    {
+      "page": "hosts/ps4/packages/index.html",
+      "image": "/assets/images/host-catalog/files.svg",
+      "actionContractSHA256": "cdcdecd551ca6e30490a80b77934494c76bfc0db8a1a8e4797c241752ddf0514"
+    },
+    {
+      "page": "hosts/ps4/payload-manager/index.html",
+      "image": "/assets/images/host-catalog/payloads.svg",
+      "actionContractSHA256": "1b111ff549ea42dd18f481a5f3297e6c42de7fdb15c329d88e56a3b7d4333801"
+    },
+    {
+      "page": "hosts/ps4/rdr2/index.html",
+      "image": "/assets/images/rdr2.png",
+      "actionContractSHA256": "5748bdc1cd08efb7d287d034f19348a29faa39c14b1ddf9b121967fa89363ead"
+    },
+    {
+      "page": "hosts/ps5/files/index.html",
+      "image": "/assets/images/host-catalog/files.svg",
+      "actionContractSHA256": "1da707d8a9e0a347c0681c4ddf10b06a7b3571af922b25793425549236a592d4"
+    },
+    {
+      "page": "hosts/ps5/gta5/index.html",
+      "image": "/assets/images/gta52.png",
+      "actionContractSHA256": "b0e896fbe37c7b47d6f13f50f3a6dcc6b1597673b3ec9d115059f209ceb126e8"
+    },
+    {
+      "page": "hosts/ps5/index.html",
+      "image": "/assets/images/host-selector/whatwhatboy-ps5.jpg",
+      "actionContractSHA256": "0d88a997c695d6ec55b9cc854bf2275794ab2228048cf5a070d852dcfc1cc591"
+    },
+    {
+      "page": "hosts/ps5/lua/index.html",
+      "image": "/assets/images/host-catalog/payloads.svg",
+      "actionContractSHA256": "eace6a03d63c197d2b2fcd183354c55dc5f7a83916a9321407925796b369127c"
+    },
+    {
+      "page": "hosts/ps5/other-games/index.html",
+      "image": "/assets/images/host-catalog/games.svg",
+      "actionContractSHA256": "6e674b23303969e019a5bd5d6c8c0424407842bf449a7a11494950adf72af7e7"
+    },
+    {
+      "page": "hosts/ps5/packages/index.html",
+      "image": "/assets/images/host-catalog/files.svg",
+      "actionContractSHA256": "c36226d966ed6c7459c8018bcb67429061807d6ff1005deeb7c3c1bfc30e2695"
+    },
+    {
+      "page": "hosts/ps5/payload-manager/index.html",
+      "image": "/assets/images/host-catalog/payloads.svg",
+      "actionContractSHA256": "a86ff69217d7a5bf77726b781504e853d0a0e590e24d1542eebe7944efec08dc"
+    },
+    {
+      "page": "hosts/ps5/rdr2/index.html",
+      "image": "/assets/images/rdr2.png",
+      "actionContractSHA256": "7d00410f4057b0c1767a678ee90e2be0dcf7a33a9a0d42bb6f595eae7c59c334"
+    },
+    {
+      "page": "hosts/tools/esp-flasher/index.html",
+      "image": "/assets/images/host-catalog/tools.svg",
+      "actionContractSHA256": "559512becbdf3d84a6b398e63077185b3fd01b4d6e85ff07c8938044cf004d62"
+    },
+    {
+      "page": "hosts/tools/ps4-trainer/index.html",
+      "image": "/assets/images/host-catalog/tools.svg",
+      "actionContractSHA256": "768252447a3ea307974f2cba08fc9e534b504a911bd262ab66957523cb20c282"
+    }
+  ]
+}

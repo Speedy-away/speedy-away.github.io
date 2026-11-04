@@ -1,0 +1,51 @@
+'use strict';
+// Presentation and navigation only. Native scripts and downloaded files are never edited.
+const fs=require('node:fs'),path=require('node:path');
+const popup=require('./host-self-host-popup.cjs');
+const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+function groups(root){
+ const localFile=path.join(root,'docs/host-local-launchers.json');
+ let rows=fs.existsSync(localFile)?JSON.parse(fs.readFileSync(localFile)).groups:[];
+ rows=rows.filter(g=>['ps4-afterglow','karo-g2allpro','karo-ps5-umtx'].includes(g.id)).map(g=>g.id==='karo-g2allpro'?{...g,label:'PS4 WebKit Exploit - 10.00–13.52',firmwares:g.firmwares.filter(f=>Number(f)>=10)}:g.id==='ps4-afterglow'?{...g,label:'PS4 WebKit Exploit - 13.52–14.00'}:{...g,label:'PS5 WebKit Exploit - '+g.firmwares[0]+'–'+g.firmwares[g.firmwares.length-1]});
+ const gamerFile=path.join(root,'docs/host-gamerhack-local-build.json');
+ if(fs.existsSync(gamerFile))rows.push(...JSON.parse(fs.readFileSync(gamerFile)).groups);
+ const ps5File=path.join(root,'docs/ps5-webkit-build.json');
+ if(fs.existsSync(ps5File)){const b=JSON.parse(fs.readFileSync(ps5File));rows.push({id:b.id,label:'PS5 WebKit Exploit - 7.00–13.60',platform:'ps5',firmwares:b.firmwares,entry:b.entry,runtimeEntry:b.entry,preferred:true,source:b.source});}
+ const rawFile=path.join(root,'docs/host-runtime-builds.json');
+ if(fs.existsSync(rawFile))for(const r of JSON.parse(fs.readFileSync(rawFile)).runtimes||[]){
+  if(r.id==='ps4-psfree-700-960')rows.push({id:r.id,label:'PS4 WebKit Exploit - 7.00–9.60',platform:'ps4',firmwares:r.firmwares,entry:r.entry,runtimeEntry:r.entry,preferred:true,source:r.source});
+ }
+ // A family label is presentation; compatibility remains the exact source array.
+ return rows.filter(g=>g.firmwares?.length&&/^\/hosts\//.test(g.entry)&&fs.existsSync(path.join(root,g.entry.replace(/^\//,'').replace(/\/$/,'/index.html')))).sort((a,b)=>Number(a.firmwares[0])-Number(b.firmwares[0]));
+}
+function actions(root,platform,previous){
+ const local=groups(root).filter(g=>g.platform===platform).map(g=>({id:'local-'+g.id,platform,category:'loaders',label:g.label,firmwareLabel:g.label.replace(/^PS[45] WebKit Exploit - /,''),firmwares:g.firmwares.slice(),format:'Local browser exploit',launchURL:g.entry,launchLabel:'Choose HEN / Load',runtimeId:g.id,localLauncher:true,source:g.source.repository+'/tree/'+g.source.commit,requirements:['Open this local launcher on the matching console. Firmware is checked again before Load.']}));
+ return [...local,...previous.filter(a=>a.category!=='loaders')];
+}
+function directory(root,platform){
+ const rows=groups(root).filter(g=>g.platform===platform),name=platform.toUpperCase();
+ const tiles=rows.map(g=>'<a class="host-firmware-family" data-firmwares="'+g.firmwares.join(',')+'" href="'+esc(g.entry)+'"><strong>'+esc(g.label.replace(/^PS[45] WebKit Exploit - /,''))+'</strong><span>'+((g.payloadChoice||[]).map(p=>esc(p.label)).join(' / ')||'Load exploit')+'</span></a>').join('');
+ return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+' WebKit Exploits | WWB HOST</title><link rel="stylesheet" href="/assets/host-compact.css"><script defer src="/assets/host-firmware-families.js?v=1"></script></head><body class="host-compact"><nav class="host-taskbar"><a href="/hosts/'+platform+'/">← '+name+' host</a><a href="/hosts/">Choose console</a><a href="/hosts/'+platform+'/?view=payloads">Payloads</a></nav><main class="host-compact-main"><header><h1>'+name+' WebKit Exploits</h1><p id="host-family-detected" role="status">Choose your firmware.</p></header><div class="host-firmware-families">'+tiles+'</div></main></body></html>';
+}
+function build(root){for(const p of ['ps4','ps5']){const file=path.join(root,'hosts',p,'firmware/index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,directory(root,p));}}
+function apply(html,name,{base='',root}={}){
+ const runtimeAfter=/^hosts\/runtime\/ps4-afterglow-[a-f0-9]{12}\/web\/index\.html$/.test(name);
+ const runtimePS5=/^hosts\/runtime\/ps5-webkit-[a-f0-9]{12}\/index\.html$/.test(name);
+ const nativeLanding=runtimeAfter||runtimePS5;
+ if(/^hosts\/runtime\//.test(name)&&!nativeLanding)return html;
+ if(!nativeLanding&&!popup.eligible(name,html))return html;
+ const options={base};
+ if(runtimeAfter){
+  const title='PS4 WebKit Exploit - 13.52–14.00';
+  html=html.replace(/<title>[^<]*<\/title>/,'<title>'+title+' | WWB HOST</title>').replace(/<b>afterglow<\/b>/i,'<b>'+title+'</b>').replace(/<img class="meme"[^>]*>/,'').replace('>Start</button>','>Load exploit</button>');
+  html=html.replace(/<p class="byline">[\s\S]*?<\/p>/,'');
+  options.technicalNotes=['Original project: Afterglow by well0nez/m0zz. GoldHEN by SiSTRo. The included ps4-hen is patched pre-release-main-182; the bundled GoldHEN numeric version is not independently established.','Afterglow and patchsets: AGPL-3.0-or-later. raw13g scaffolding: MIT. Primitive lineage and all original notices remain in the linked technical documentation. The upstream README states GoldHEN was included with the author’s permission.','Exact firmware support: 13.52 and 14.00. A grouped label does not imply intermediate versions.'];
+  const dir=base+'/'+name.replace(/web\/index\.html$/,'');
+  options.projectLinks=[{label:'Original source and attribution',url:'https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d'},{label:'AGPL license',url:'https://speedy-away.github.io'+dir+'web/LICENSE'},{label:'MIT notice',url:'https://speedy-away.github.io'+dir+'web/LICENSE-raw13g'},{label:'Technical lineage',url:'https://speedy-away.github.io'+dir+'web/TECHNICAL.md'}];
+ }
+ if(runtimePS5){html=html.replace(/<div class="details">([\s\S]*?)<\/div>/,'<details class="details"><summary>Requirements &amp; source</summary>$1</details>');}
+ if(nativeLanding)html=html.replace('<body>','<body class="host-compact host-runtime-landing">').replace('</head>','<link rel="stylesheet" href="'+base+'/assets/host-compact.css?v=1"><link rel="stylesheet" href="'+base+'/assets/host-blue-theme.css?v=1"></head>');
+ // Never add site/popup code to execution documents, only authored landing controls.
+ return popup.apply(nativeLanding?'hosts/launcher/index.html':name,html,options);
+}
+module.exports={groups,actions,directory,build,apply};

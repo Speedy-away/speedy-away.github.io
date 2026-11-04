@@ -1,0 +1,157 @@
+{
+  "verifiedAt": "2026-11-02T07:05:03.502Z",
+  "credit": "Icons from the respective homebrew projects as distributed by the Homebrew App Store; unavailable icons use the site fallback.",
+  "images": [
+    {
+      "id": "mGBA",
+      "url": "https://switch.cdn.fortheusers.org/packages/mGBA/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/mGBA/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/mGBA.png",
+      "bytes": 11034,
+      "sha256": "00db8c1684abe66fd0bf62aca288681295a1984e1f088f64ab674f902b9bf421"
+    },
+    {
+      "id": "melonDS",
+      "url": "https://switch.cdn.fortheusers.org/packages/melonDS/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/melonDS/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/melonDS.png",
+      "bytes": 20413,
+      "sha256": "212547a45a144d98a337eac98504167f2a8ad16a13f664ebc488b8dd3a935341"
+    },
+    {
+      "id": "pNES",
+      "url": "https://switch.cdn.fortheusers.org/packages/pNES/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/pNES/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/pNES.png",
+      "bytes": 8072,
+      "sha256": "52fe9d6a92de82116a0e90acf3d8014ef0b446a73d0cbe1c827944a8da561492"
+    },
+    {
+      "id": "psnes",
+      "url": "https://switch.cdn.fortheusers.org/packages/psnes/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/psnes/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/psnes.png",
+      "bytes": 11904,
+      "sha256": "6d7c95659afb767241370783057e85c5e63e7a04f6dc715be8589d605794f57c"
+    },
+    {
+      "id": "ppsspp",
+      "url": "https://switch.cdn.fortheusers.org/packages/ppsspp/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/ppsspp/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/ppsspp.png",
+      "bytes": 68981,
+      "sha256": "9d798229d7549e5808217e0db8b32cadafeb0ab4d084a771688836e71bd1479c"
+    },
+    {
+      "id": "BrogueCE",
+      "url": "https://switch.cdn.fortheusers.org/packages/BrogueCE/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/BrogueCE/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/BrogueCE.png",
+      "bytes": 18855,
+      "sha256": "9933ab0da3db337e802e353baf66938d1c8b116c0db20335727929c8278ea1fb"
+    },
+    {
+      "id": "Minesweeper",
+      "url": "https://switch.cdn.fortheusers.org/packages/Minesweeper/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/Minesweeper/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/Minesweeper.png",
+      "bytes": 66626,
+      "sha256": "836cb7a55506b05ac598567d0018daf0da470f30cf802e76a5a87674a3aaeef0"
+    },
+    {
+      "id": "spacenx",
+      "url": "https://switch.cdn.fortheusers.org/packages/spacenx/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/spacenx/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/spacenx.png",
+      "bytes": 18003,
+      "sha256": "10ee2d09061a455c76b99eba0df445c931e3191e445eabadf472e5249d551c92"
+    },
+    {
+      "id": "pinballnx",
+      "url": "https://switch.cdn.fortheusers.org/packages/pinballnx/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/pinballnx/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/pinballnx.png",
+      "bytes": 18396,
+      "sha256": "33cd4045b3ab0359a3beab3b8a74dc78e3d74be2cceb39459be113f7abb2aef0"
+    },
+    {
+      "id": "Cpp-Snake-NX",
+      "url": "https://switch.cdn.fortheusers.org/packages/Cpp-Snake-NX/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/Cpp-Snake-NX/manifest.install",
+      "status": 404,
+      "manifestStatus": 200
+    },
+    {
+      "id": "jumpnbump",
+      "url": "https://raw.githubusercontent.com/rsn8887/jumpnbump/master/screenshots/jumpnbump_shot_1.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/jumpnbump/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/jumpnbump-gameplay-6a05aecfe667.png",
+      "bytes": 48416,
+      "sha256": "6a05aecfe667fdfb636e4d1fb74c213bbd28ac58a988b173de28b214d092b9bb",
+      "recovery": true,
+      "kind": "Original publisher gameplay screenshot",
+      "credit": "rsn8887 / Brainchild Design · original Jump n Bump gameplay screenshot",
+      "previousImage": {
+        "id": "jumpnbump",
+        "url": "https://switch.cdn.fortheusers.org/packages/jumpnbump/icon.png",
+        "manifestUrl": "https://switch.cdn.fortheusers.org/packages/jumpnbump/manifest.install",
+        "status": 200,
+        "manifestStatus": 200,
+        "file": "/assets/images/switch-homebrew/jumpnbump.png",
+        "bytes": 82539,
+        "sha256": "a3ad1ba70f6da7ace7a77e2e2ddfd9687d0188c7a12f7bbc6802f1044a3685fc"
+      },
+      "verification": "Original screenshot shared by the publisher of the Switch/Vita ports. Associated game appearance only; not a build compatibility claim. Preserved former store icon bytes because Pillow rejects its metadata although libvips decodes it."
+    },
+    {
+      "id": "SpaceVue",
+      "url": "https://switch.cdn.fortheusers.org/packages/SpaceVue/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/SpaceVue/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/SpaceVue.png",
+      "bytes": 70417,
+      "sha256": "f0b83c3d0ce1973decbaa41d56636b7bff6e4e169c0a7886f1cf899d09985ee7"
+    },
+    {
+      "id": "NXthemes_Installer",
+      "url": "https://switch.cdn.fortheusers.org/packages/NXthemes_Installer/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/NXthemes_Installer/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/NXthemes_Installer.png",
+      "bytes": 22996,
+      "sha256": "14d78fc71f0fa57292d4478eb59f3d8496dd8f44dce0532c94bbf87f3fdc759c"
+    },
+    {
+      "id": "SimpleModManager",
+      "url": "https://switch.cdn.fortheusers.org/packages/SimpleModManager/icon.png",
+      "manifestUrl": "https://switch.cdn.fortheusers.org/packages/SimpleModManager/manifest.install",
+      "status": 200,
+      "manifestStatus": 200,
+      "file": "/assets/images/switch-homebrew/SimpleModManager.png",
+      "bytes": 9320,
+      "sha256": "e22310a9f8178dba5b4a74a1edc631d4ca5b1989e71c27c048554339fe337218"
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02",
+  "scope": "Exact original releases discovered through requested GamerHack review. Original-only Downloads and explicitly opted-in user-selected BIN loading. No public payload mirror.",
+  "actions": [
+    {
+      "id": "ps4-original-orbis-toolbox-1-0-1190-505",
+      "platform": "ps4",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "label": "Orbis Toolbox · 5.05",
+      "version": "1.0.1190 Alpha",
+      "format": "BIN",
+      "firmwares": [
+        "5.05"
+      ],
+      "bytes": 626472,
+      "sha256": "657aad360767ce7f9cef3c374f8ea448870df8d3cf6534a582930bbec0b400ce",
+      "downloadURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-505.bin",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready",
+        "input": "user-file"
+      },
+      "source": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+      "sourceURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-505.bin",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "instructionsURL": "/docs/host-original-tool-loading.md",
+      "license": "Original compiled pre-release by OSM-Made. No open-source or redistribution licence is asserted; Download uses the original release asset, and Load reads a user-selected exact file without persistence.",
+      "publicMirror": false,
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "imageAlt": "PS4 console for Orbis Toolbox",
+      "imageRole": "Console artwork",
+      "imageDescription": "Existing PS4 console artwork; not an Orbis Toolbox interface screenshot.",
+      "requirements": [
+        "PS4 firmware 5.05 only. Download the matching Orbis Toolbox 1.0.1190 BIN; other firmware builds are separate files.",
+        "Start a compatible HEN before loading Orbis Toolbox. The original author reports Mira and GoldHEN support; use retail executables, not Hybrid Flasher or Updater POC.",
+        "Load requires an already running compatible GoldHEN HTTP BinLoader on port 9090 and the paired desktop sender. Select the exact original BIN downloaded above.",
+        "This is an alpha pre-release. The original GoldHEN release reports possible rest-mode problems with Orbis Toolbox.",
+        "A successful transfer does not prove Orbis Toolbox executed. Check the console before loading another payload."
+      ],
+      "tags": [
+        "PS4",
+        "5.05",
+        "Orbis Toolbox",
+        "Orbis-Toolbox",
+        "1.0.1190",
+        "Alpha Build 1190",
+        "BIN",
+        "homebrew UI",
+        "HEN",
+        "retail executables"
+      ],
+      "sourceEvidence": {
+        "release": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+        "readme": "https://github.com/OSM-Made/Orbis-Toolbox/blob/83c935231d664ee9d523edf32a1c1aecaac1a92a/README.md",
+        "readmeSHA256": "b09a2bafa5be8cc28d610d331f08a647310808683f2611a8ef50f698e8d45e5f",
+        "assetId": 52318717,
+        "assetUpdatedAt": "2021-12-22T00:37:14Z",
+        "review": "/docs/qa/host-original-tool-source-review.json"
+      },
+      "loaderEvidence": {
+        "source": "Original release requires HEN then the exact firmware BIN; original README names Mira and GoldHEN. GoldHEN HTTP9090 is the existing reviewed flat-BIN transport after its readiness check.",
+        "hardwareExecution": false,
+        "sourceConfirmedGoldHENFirmware": true
+      }
+    },
+    {
+      "id": "ps4-original-orbis-toolbox-1-0-1190-672",
+      "platform": "ps4",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "label": "Orbis Toolbox · 6.72",
+      "version": "1.0.1190 Alpha",
+      "format": "BIN",
+      "firmwares": [
+        "6.72"
+      ],
+      "bytes": 626504,
+      "sha256": "c19e3f0d549b241aa31febd5a5223d0bf0156bdc4e419e1083f795ea90d5ce30",
+      "downloadURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-672.bin",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready",
+        "input": "user-file"
+      },
+      "source": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+      "sourceURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-672.bin",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "instructionsURL": "/docs/host-original-tool-loading.md",
+      "license": "Original compiled pre-release by OSM-Made. No open-source or redistribution licence is asserted; Download uses the original release asset, and Load reads a user-selected exact file without persistence.",
+      "publicMirror": false,
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "imageAlt": "PS4 console for Orbis Toolbox",
+      "imageRole": "Console artwork",
+      "imageDescription": "Existing PS4 console artwork; not an Orbis Toolbox interface screenshot.",
+      "requirements": [
+        "PS4 firmware 6.72 only. Download the matching Orbis Toolbox 1.0.1190 BIN; other firmware builds are separate files.",
+        "Start a compatible HEN before loading Orbis Toolbox. The original author reports Mira and GoldHEN support; use retail executables, not Hybrid Flasher or Updater POC.",
+        "Load requires an already running compatible GoldHEN HTTP BinLoader on port 9090 and the paired desktop sender. Select the exact original BIN downloaded above.",
+        "This is an alpha pre-release. The original GoldHEN release reports possible rest-mode problems with Orbis Toolbox.",
+        "A successful transfer does not prove Orbis Toolbox executed. Check the console before loading another payload."
+      ],
+      "tags": [
+        "PS4",
+        "6.72",
+        "Orbis Toolbox",
+        "Orbis-Toolbox",
+        "1.0.1190",
+        "Alpha Build 1190",
+        "BIN",
+        "homebrew UI",
+        "HEN",
+        "retail executables"
+      ],
+      "sourceEvidence": {
+        "release": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+        "readme": "https://github.com/OSM-Made/Orbis-Toolbox/blob/83c935231d664ee9d523edf32a1c1aecaac1a92a/README.md",
+        "readmeSHA256": "b09a2bafa5be8cc28d610d331f08a647310808683f2611a8ef50f698e8d45e5f",
+        "assetId": 52318719,
+        "assetUpdatedAt": "2021-12-22T00:37:15Z",
+        "review": "/docs/qa/host-original-tool-source-review.json"
+      },
+      "loaderEvidence": {
+        "source": "Original release requires HEN then the exact firmware BIN; original README names Mira and GoldHEN. GoldHEN HTTP9090 is the existing reviewed flat-BIN transport after its readiness check.",
+        "hardwareExecution": false,
+        "sourceConfirmedGoldHENFirmware": true
+      }
+    },
+    {
+      "id": "ps4-original-orbis-toolbox-1-0-1190-702",
+      "platform": "ps4",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "label": "Orbis Toolbox · 7.02",
+      "version": "1.0.1190 Alpha",
+      "format": "BIN",
+      "firmwares": [
+        "7.02"
+      ],
+      "bytes": 626664,
+      "sha256": "9f8a34ff2ab3918f3a01e3126817c3c0afd4671c3f0613e05cef540cf7d79a3c",
+      "downloadURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-702.bin",
+      "run": null,
+      "source": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+      "sourceURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-702.bin",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "instructionsURL": "/docs/host-original-tool-loading.md",
+      "license": "Original compiled pre-release by OSM-Made. No open-source or redistribution licence is asserted; Download uses the original release asset, and Load reads a user-selected exact file without persistence.",
+      "publicMirror": false,
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "imageAlt": "PS4 console for Orbis Toolbox",
+      "imageRole": "Console artwork",
+      "imageDescription": "Existing PS4 console artwork; not an Orbis Toolbox interface screenshot.",
+      "requirements": [
+        "PS4 firmware 7.02 only. Download the matching Orbis Toolbox 1.0.1190 BIN; other firmware builds are separate files.",
+        "Start a compatible HEN before loading Orbis Toolbox. The original author reports Mira and GoldHEN support; use retail executables, not Hybrid Flasher or Updater POC.",
+        "This 7.02 or 7.55 build remains download-only here. Its original HEN requirement does not establish a compatible GoldHEN HTTP loader; use the original native loading instructions.",
+        "This is an alpha pre-release. The original GoldHEN release reports possible rest-mode problems with Orbis Toolbox.",
+        "A successful transfer does not prove Orbis Toolbox executed. Check the console before loading another payload."
+      ],
+      "tags": [
+        "PS4",
+        "7.02",
+        "Orbis Toolbox",
+        "Orbis-Toolbox",
+        "1.0.1190",
+        "Alpha Build 1190",
+        "BIN",
+        "homebrew UI",
+        "HEN",
+        "retail executables"
+      ],
+      "sourceEvidence": {
+        "release": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+        "readme": "https://github.com/OSM-Made/Orbis-Toolbox/blob/83c935231d664ee9d523edf32a1c1aecaac1a92a/README.md",
+        "readmeSHA256": "b09a2bafa5be8cc28d610d331f08a647310808683f2611a8ef50f698e8d45e5f",
+        "assetId": 52318714,
+        "assetUpdatedAt": "2021-12-22T00:37:13Z",
+        "review": "/docs/qa/host-original-tool-source-review.json"
+      },
+      "loaderEvidence": {
+        "source": "Original release requires HEN then the exact firmware BIN; original README names Mira and GoldHEN. GoldHEN HTTP9090 is the existing reviewed flat-BIN transport after its readiness check.",
+        "hardwareExecution": false,
+        "sourceConfirmedGoldHENFirmware": false
+      }
+    },
+    {
+      "id": "ps4-original-orbis-toolbox-1-0-1190-755",
+      "platform": "ps4",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "label": "Orbis Toolbox · 7.55",
+      "version": "1.0.1190 Alpha",
+      "format": "BIN",
+      "firmwares": [
+        "7.55"
+      ],
+      "bytes": 626664,
+      "sha256": "421131368229e986385a5a5cf4a65d1be8a5835d7ba018720b8764e00153871c",
+      "downloadURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-755.bin",
+      "run": null,
+      "source": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+      "sourceURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-755.bin",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "instructionsURL": "/docs/host-original-tool-loading.md",
+      "license": "Original compiled pre-release by OSM-Made. No open-source or redistribution licence is asserted; Download uses the original release asset, and Load reads a user-selected exact file without persistence.",
+      "publicMirror": false,
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "imageAlt": "PS4 console for Orbis Toolbox",
+      "imageRole": "Console artwork",
+      "imageDescription": "Existing PS4 console artwork; not an Orbis Toolbox interface screenshot.",
+      "requirements": [
+        "PS4 firmware 7.55 only. Download the matching Orbis Toolbox 1.0.1190 BIN; other firmware builds are separate files.",
+        "Start a compatible HEN before loading Orbis Toolbox. The original author reports Mira and GoldHEN support; use retail executables, not Hybrid Flasher or Updater POC.",
+        "This 7.02 or 7.55 build remains download-only here. Its original HEN requirement does not establish a compatible GoldHEN HTTP loader; use the original native loading instructions.",
+        "This is an alpha pre-release. The original GoldHEN release reports possible rest-mode problems with Orbis Toolbox.",
+        "A successful transfer does not prove Orbis Toolbox executed. Check the console before loading another payload."
+      ],
+      "tags": [
+        "PS4",
+        "7.55",
+        "Orbis Toolbox",
+        "Orbis-Toolbox",
+        "1.0.1190",
+        "Alpha Build 1190",
+        "BIN",
+        "homebrew UI",
+        "HEN",
+        "retail executables"
+      ],
+      "sourceEvidence": {
+        "release": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+        "readme": "https://github.com/OSM-Made/Orbis-Toolbox/blob/83c935231d664ee9d523edf32a1c1aecaac1a92a/README.md",
+        "readmeSHA256": "b09a2bafa5be8cc28d610d331f08a647310808683f2611a8ef50f698e8d45e5f",
+        "assetId": 52318715,
+        "assetUpdatedAt": "2021-12-22T00:37:13Z",
+        "review": "/docs/qa/host-original-tool-source-review.json"
+      },
+      "loaderEvidence": {
+        "source": "Original release requires HEN then the exact firmware BIN; original README names Mira and GoldHEN. GoldHEN HTTP9090 is the existing reviewed flat-BIN transport after its readiness check.",
+        "hardwareExecution": false,
+        "sourceConfirmedGoldHENFirmware": false
+      }
+    },
+    {
+      "id": "ps4-original-orbis-toolbox-1-0-1190-900",
+      "platform": "ps4",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "label": "Orbis Toolbox · 9.00",
+      "version": "1.0.1190 Alpha",
+      "format": "BIN",
+      "firmwares": [
+        "9.00"
+      ],
+      "bytes": 626392,
+      "sha256": "466d816ad26393deb6476c90acda77cb80a6e2c7a15ed70cf588c9447b0a7835",
+      "downloadURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-900.bin",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready",
+        "input": "user-file"
+      },
+      "source": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+      "sourceURL": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-900.bin",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "instructionsURL": "/docs/host-original-tool-loading.md",
+      "license": "Original compiled pre-release by OSM-Made. No open-source or redistribution licence is asserted; Download uses the original release asset, and Load reads a user-selected exact file without persistence.",
+      "publicMirror": false,
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "imageAlt": "PS4 console for Orbis Toolbox",
+      "imageRole": "Console artwork",
+      "imageDescription": "Existing PS4 console artwork; not an Orbis Toolbox interface screenshot.",
+      "requirements": [
+        "PS4 firmware 9.00 only. Download the matching Orbis Toolbox 1.0.1190 BIN; other firmware builds are separate files.",
+        "Start a compatible HEN before loading Orbis Toolbox. The original author reports Mira and GoldHEN support; use retail executables, not Hybrid Flasher or Updater POC.",
+        "Load requires an already running compatible GoldHEN HTTP BinLoader on port 9090 and the paired desktop sender. Select the exact original BIN downloaded above.",
+        "This is an alpha pre-release. The original GoldHEN release reports possible rest-mode problems with Orbis Toolbox.",
+        "A successful transfer does not prove Orbis Toolbox executed. Check the console before loading another payload."
+      ],
+      "tags": [
+        "PS4",
+        "9.00",
+        "Orbis Toolbox",
+        "Orbis-Toolbox",
+        "1.0.1190",
+        "Alpha Build 1190",
+        "BIN",
+        "homebrew UI",
+        "HEN",
+        "retail executables"
+      ],
+      "sourceEvidence": {
+        "release": "https://github.com/OSM-Made/Orbis-Toolbox/releases/tag/1.0.1190",
+        "readme": "https://github.com/OSM-Made/Orbis-Toolbox/blob/83c935231d664ee9d523edf32a1c1aecaac1a92a/README.md",
+        "readmeSHA256": "b09a2bafa5be8cc28d610d331f08a647310808683f2611a8ef50f698e8d45e5f",
+        "assetId": 52318716,
+        "assetUpdatedAt": "2021-12-22T00:37:14Z",
+        "review": "/docs/qa/host-original-tool-source-review.json"
+      },
+      "loaderEvidence": {
+        "source": "Original release requires HEN then the exact firmware BIN; original README names Mira and GoldHEN. GoldHEN HTTP9090 is the existing reviewed flat-BIN transport after its readiness check.",
+        "hardwareExecution": false,
+        "sourceConfirmedGoldHENFirmware": true
+      }
+    },
+    {
+      "id": "ps4-original-goldhen-2-4b18-900",
+      "platform": "ps4",
+      "category": "payloads",
+      "label": "GoldHEN 2.4b18 · 9.00",
+      "version": "2.4b18",
+      "format": "BIN",
+      "firmwares": [
+        "9.00"
+      ],
+      "bytes": 260160,
+      "sha256": "eb9fee5e9e3618c0a144a6fc6b8fc1ec7e89cf06483ad64ae7c1085efc9525a3",
+      "downloadURL": "https://raw.githubusercontent.com/GoldHEN/GoldHEN/f2cd6f8ec51b6291ef961dc6aa721c96556dbeb4/goldhen.bin",
+      "run": {
+        "type": "bin-tcp",
+        "port": 9020,
+        "input": "user-file"
+      },
+      "source": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.4b18",
+      "sourceURL": "https://raw.githubusercontent.com/GoldHEN/GoldHEN/f2cd6f8ec51b6291ef961dc6aa721c96556dbeb4/goldhen.bin",
+      "sourceCommit": "f2cd6f8ec51b6291ef961dc6aa721c96556dbeb4",
+      "publicMirror": false,
+      "image": "/assets/images/console-software/goldhen.png",
+      "imageAlt": "GoldHEN project logo",
+      "imageRole": "Project preview",
+      "instructionsURL": "/docs/host-original-tool-loading.md",
+      "releaseArchiveURL": "https://github.com/GoldHEN/GoldHEN/releases/download/2.4b18/GoldHEN_v2.4b18.7z",
+      "license": "Official compiled GoldHEN release by SiSTRo. No open-source or redistribution licence is asserted; Download uses the pinned original publisher file, and Load reads a user-selected exact file without persistence.",
+      "requirements": [
+        "This Load action is for PS4 firmware 9.00 only. Start the built-in PSFree / Lapse loader on the console and wait for its BIN listener on TCP 9020.",
+        "Connect the paired desktop sender, choose Load and select the exact original GoldHEN 2.4b18 goldhen.bin downloaded above. The sender verifies its size and SHA-256 before transfer.",
+        "The official 2.4b18 release supports previous WebKit entry points and PPPwn. PPPwn requires the release-specific custom stage2; this action uses the separate waiting PS4 9.00 BIN listener.",
+        "This is official 2.4b18, not a host-modified 2.4b18.12 build. No PS4 13.xx, 14.00 or PS5 support is established by this entry.",
+        "TCP delivery confirms a transfer only. Check the console for successful GoldHEN execution before sending another payload."
+      ],
+      "tags": [
+        "PS4",
+        "9.00",
+        "GoldHEN",
+        "2.4b18",
+        "BIN",
+        "TCP 9020",
+        "PSFree",
+        "Lapse",
+        "official release",
+        "user-selected file"
+      ],
+      "sourceEvidence": {
+        "release": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.4b18",
+        "readme": "https://github.com/GoldHEN/GoldHEN/blob/f2cd6f8ec51b6291ef961dc6aa721c96556dbeb4/README.md",
+        "readmeSHA256": "29c71a5526e43d7395145b10ac8a414063b58321a65784c0be2b4975c719ffd3",
+        "review": "/docs/qa/host-original-tool-source-review.json"
+      },
+      "originalReleaseFirmwares": [
+        "5.05",
+        "6.71",
+        "6.72",
+        "9.00",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00"
+      ],
+      "extraction": {
+        "archive": "GoldHEN_v2.4b18.7z",
+        "archiveURL": "https://github.com/GoldHEN/GoldHEN/releases/download/2.4b18/GoldHEN_v2.4b18.7z",
+        "archiveSHA256": "d0c84c79f65df5afc79a00c578f33ab1aa70aeb9c205f1e789895dc7d4fca38d",
+        "member": "goldhen.bin",
+        "crc32": "F431EE2B",
+        "transformation": "7-Zip member decompression only; exact bytes also match the official commit-pinned raw BIN."
+      },
+      "loaderEvidence": {
+        "source": "Official release lists9.00 and previous WebKit support; the existing pinned PSFree/Lapse runBinLoader receives raw flat BIN bytes on9020. The ready file has a flat x64 jump entry rather than an ELF header. Protocol integration is structurally reviewed and mock-tested, not physically executed.",
+        "hardwareExecution": false
+      }
+    }
+  ]
+}

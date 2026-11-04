@@ -1,0 +1,320 @@
+{
+  "reviewed": "2026-11-02",
+  "items": [
+    {
+      "id": "ps5-store-ppsa99109",
+      "title": "Prospero Explorer",
+      "archive": "/downloads/console-store/ps5-store-ppsa99109/ProsperoExplorer-v1.zip",
+      "bytes": 1580531,
+      "sha256": "3eaee706e8aca772fce734b494e56729ddedec218597ab9baf940094a0cdfc7e",
+      "regularFiles": 4,
+      "titleId": "PPSA99109",
+      "contentVersion": "01.000.000",
+      "paramPath": "sce_sys/param.json",
+      "ebootPath": "eboot.bin",
+      "ebootBytes": 2286845,
+      "ebootMagic": "5414f5ee",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "sce_module/libc.prx"
+      ],
+      "otherElfs": [],
+      "licenseFiles": [],
+      "archiveTopFolder": null,
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Prospero SELF"
+    },
+    {
+      "id": "ps5-store-ppsa99110",
+      "title": "Prospero Multi Tools",
+      "archive": "/downloads/console-store/ps5-store-ppsa99110/ProsperoMultiTools.zip",
+      "bytes": 3057587,
+      "sha256": "0e7c60d0e860cd0cafb939f668ccae57f53503f2c2371b4193a81ab306346d6b",
+      "regularFiles": 7,
+      "titleId": "PPSA99110",
+      "contentVersion": "01.000.000",
+      "paramPath": "PPSA99110/sce_sys/param.json",
+      "ebootPath": "PPSA99110/eboot.bin",
+      "ebootBytes": 2346858,
+      "ebootMagic": "5414f5ee",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA99110/sce_module/libc.prx"
+      ],
+      "otherElfs": [],
+      "licenseFiles": [],
+      "archiveTopFolder": "PPSA99110",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Prospero SELF"
+    },
+    {
+      "id": "ps5-store-ppsa98766",
+      "title": "DriftCheck",
+      "archive": "/downloads/console-store/ps5-store-ppsa98766/PPSA98766.zip",
+      "bytes": 126538,
+      "sha256": "06fa838c0747ea25075876e28df9c684d17988938b82707c9592f1d2c217c86c",
+      "regularFiles": 4,
+      "titleId": "PPSA98766",
+      "contentVersion": "01.000.000",
+      "paramPath": "PPSA98766/sce_sys/param.json",
+      "ebootPath": "PPSA98766/eboot.bin",
+      "ebootBytes": 31465,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA98766/sce_module/libc.prx"
+      ],
+      "otherElfs": [],
+      "licenseFiles": [],
+      "archiveTopFolder": "PPSA98766",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    },
+    {
+      "id": "ps5-store-ppsa69420",
+      "title": "ScreenTester5",
+      "archive": "/downloads/console-store/ps5-store-ppsa69420/PPSA69420.zip",
+      "bytes": 1235565,
+      "sha256": "49a5c6d7bbb08f5a1539feb65b7fd2b537b6d7b304bdd3eed1c923e4ccbec8fd",
+      "regularFiles": 4,
+      "titleId": "PPSA69420",
+      "contentVersion": "01.000.000",
+      "paramPath": "PPSA69420/sce_sys/param.json",
+      "ebootPath": "PPSA69420/eboot.bin",
+      "ebootBytes": 2258608,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA69420/sce_module/libc.prx"
+      ],
+      "otherElfs": [],
+      "licenseFiles": [],
+      "archiveTopFolder": "PPSA69420",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    },
+    {
+      "id": "ps5-store-ppsa96024",
+      "title": "Chiral-FTP",
+      "archive": "/downloads/console-store/ps5-store-ppsa96024/chiral-ftp-ps5-1.1.zip",
+      "bytes": 2500981,
+      "sha256": "ff5dcee48e4c853c039af444bb3d16172b1b14dd6a71e948d0715d55f4c9e067",
+      "regularFiles": 16,
+      "titleId": "PPSA96024",
+      "contentVersion": "01.001.000",
+      "paramPath": "PPSA96024/sce_sys/param.json",
+      "ebootPath": "PPSA96024/eboot.bin",
+      "ebootBytes": 3620474,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA96024/sce_module/libc.prx"
+      ],
+      "otherElfs": [
+        "PPSA96024/lapy.elf"
+      ],
+      "licenseFiles": [
+        "PPSA96024/licenses/DearImGui-MIT.txt",
+        "PPSA96024/licenses/IBMPlexMono-OFL.txt",
+        "PPSA96024/licenses/Lapy-MIT.txt",
+        "PPSA96024/licenses/NotoSans-OFL.txt",
+        "PPSA96024/licenses/chiral-ftp-GPL-3.0.txt",
+        "PPSA96024/licenses/libmicrohttpd-LGPL-2.1.txt",
+        "PPSA96024/licenses/libssh2-BSD.txt",
+        "PPSA96024/licenses/mbedTLS-Apache-2.0.txt"
+      ],
+      "archiveTopFolder": "PPSA96024",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    },
+    {
+      "id": "ps5-store-ppsa99001",
+      "title": "ProsperoRadio",
+      "archive": "/downloads/console-store/ps5-store-ppsa99001/PPSA99001.zip",
+      "bytes": 18186530,
+      "sha256": "cadcb62e3a55ed0f81fa449dd53a9e52edbc2ebb1cb0e4148c9b1d7a3085e370",
+      "regularFiles": 19,
+      "titleId": "PPSA99001",
+      "contentVersion": "01.000.010",
+      "paramPath": "PPSA99001/sce_sys/param.json",
+      "ebootPath": "PPSA99001/eboot.bin",
+      "ebootBytes": 33830757,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA99001/sce_module/libc.prx"
+      ],
+      "otherElfs": [
+        "PPSA99001/lapy.elf",
+        "PPSA99001/self-updater.elf"
+      ],
+      "licenseFiles": [
+        "PPSA99001/assets/fonts/DejaVu-LICENSE.txt",
+        "PPSA99001/assets/fonts/Inter-LICENSE.txt",
+        "PPSA99001/assets/fonts/Montserrat-LICENSE.txt",
+        "PPSA99001/licenses/Lapy-MIT.txt",
+        "PPSA99001/licenses/miniz-MIT.txt"
+      ],
+      "archiveTopFolder": "PPSA99001",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    },
+    {
+      "id": "ps5-store-ppsa98427",
+      "title": "CD Player",
+      "archive": "/downloads/console-store/ps5-store-ppsa98427/PPSA98427.zip",
+      "bytes": 16716470,
+      "sha256": "f394c3a84ce61a95b67a7c0987edea596abdffe5f3b170f9e05983dc2286837d",
+      "regularFiles": 150,
+      "titleId": "PPSA98427",
+      "contentVersion": "01.001.002",
+      "paramPath": "PPSA98427/sce_sys/param.json",
+      "ebootPath": "PPSA98427/eboot.bin",
+      "ebootBytes": 32583616,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA98427/sce_module/libc.prx"
+      ],
+      "otherElfs": [
+        "PPSA98427/lapy.elf"
+      ],
+      "licenseFiles": [
+        "PPSA98427/assets/fonts/DejaVu-LICENSE.txt",
+        "PPSA98427/assets/fonts/Inter-LICENSE.txt",
+        "PPSA98427/licenses/curl-LICENSE.txt",
+        "PPSA98427/licenses/Doto-OFL.txt",
+        "PPSA98427/licenses/GPL-3.0.txt",
+        "PPSA98427/licenses/Inter-OFL.txt",
+        "PPSA98427/licenses/iwrzwr-MIT.txt",
+        "PPSA98427/licenses/Lapy-MIT.txt",
+        "PPSA98427/licenses/libpsl-LICENSE.txt",
+        "PPSA98427/licenses/nlohmann-json-MIT.txt",
+        "PPSA98427/licenses/OpenSSL-LICENSE.txt",
+        "PPSA98427/licenses/PS5-OpenGL/Dear-ImGui.txt",
+        "PPSA98427/licenses/PS5-OpenGL/Mesa/Apache-2.0",
+        "PPSA98427/licenses/PS5-OpenGL/Mesa/BSL-1.0",
+        "PPSA98427/licenses/PS5-OpenGL/Mesa/exceptions/Linux-Syscall-Note",
+        "PPSA98427/licenses/PS5-OpenGL/Mesa/GPL-1.0-or-later",
+        "PPSA98427/licenses/PS5-OpenGL/Mesa/GPL-2.0-only",
+        "PPSA98427/licenses/PS5-OpenGL/Mesa/MIT",
+        "PPSA98427/licenses/PS5-OpenGL/Mesa/SGI-B-2.0",
+        "PPSA98427/licenses/PS5-OpenGL/NanoVG.txt",
+        "PPSA98427/licenses/PS5-OpenGL/OpenGNM-PSBC.txt",
+        "PPSA98427/licenses/PS5-OpenGL/OpenGNM.txt",
+        "PPSA98427/licenses/PS5-OpenGL/SDL2.txt",
+        "PPSA98427/licenses/PS5-OpenGL/Sokol-Samples.txt",
+        "PPSA98427/licenses/PS5-OpenGL/Sokol.txt",
+        "PPSA98427/licenses/PS5-OpenGL/SPIRV-Headers.txt",
+        "PPSA98427/licenses/PS5-OpenGL/vecmath.txt",
+        "PPSA98427/licenses/PS5-OpenGL/VK-GL-CTS.txt",
+        "PPSA98427/licenses/PS5-OpenGL/Vulkan-Headers.txt",
+        "PPSA98427/licenses/PS5-OpenGL-GPL.txt",
+        "PPSA98427/licenses/PS5-OpenGL-NOTICES.md",
+        "PPSA98427/licenses/PSSwanStation-ADDITIONAL-TERMS.txt",
+        "PPSA98427/licenses/QuickJS-MIT.txt",
+        "PPSA98427/licenses/stb-MIT.txt",
+        "PPSA98427/licenses/SuperDrive-MIT.txt",
+        "PPSA98427/licenses/zlib-LICENSE.txt",
+        "PPSA98427/licenses/zstd-LICENSE.txt",
+        "PPSA98427/THIRD_PARTY_NOTICES.md"
+      ],
+      "archiveTopFolder": "PPSA98427",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    },
+    {
+      "id": "ps5-store-ppsa99051",
+      "title": "Surround Sound Studio",
+      "archive": "/downloads/console-store/ps5-store-ppsa99051/PPSA99051.zip",
+      "bytes": 20122222,
+      "sha256": "fcb4e3cb794d36b30b9dee9ed86f0eea317e7c0071d193c18d9a07734e7beb69",
+      "regularFiles": 96,
+      "titleId": "PPSA99051",
+      "contentVersion": "01.000.003",
+      "paramPath": "PPSA99051/sce_sys/param.json",
+      "ebootPath": "PPSA99051/eboot.bin",
+      "ebootBytes": 24129940,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA99051/sce_module/libc.prx"
+      ],
+      "otherElfs": [],
+      "licenseFiles": [
+        "PPSA99051/assets/fonts/DejaVu-LICENSE.txt",
+        "PPSA99051/assets/fonts/Inter-LICENSE.txt",
+        "PPSA99051/assets/fonts/Montserrat-LICENSE.txt",
+        "PPSA99051/assets/fonts/PatrickHand-LICENSE.txt",
+        "PPSA99051/assets/fonts/PressStart2P-LICENSE.txt"
+      ],
+      "archiveTopFolder": "PPSA99051",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    },
+    {
+      "id": "ps5-store-ppsa11019",
+      "title": "Home5",
+      "archive": "/downloads/console-store/ps5-store-ppsa11019/PPSA11019.zip",
+      "bytes": 8315903,
+      "sha256": "ac97390d6fb853334f4ed85226842dd24d40ff68edbc605b53047c2158f33a1d",
+      "regularFiles": 8,
+      "titleId": "PPSA11019",
+      "contentVersion": "01.000.003",
+      "paramPath": "PPSA11019/sce_sys/param.json",
+      "ebootPath": "PPSA11019/eboot.bin",
+      "ebootBytes": 758154,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PPSA11019/sce_module/libc.prx"
+      ],
+      "otherElfs": [],
+      "licenseFiles": [],
+      "archiveTopFolder": "PPSA11019",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    },
+    {
+      "id": "ps5-store-prwb00001",
+      "title": "ProsperoWeb",
+      "archive": "/downloads/console-store/ps5-store-prwb00001/PRWB00001.zip",
+      "bytes": 168437564,
+      "sha256": "77cfede8773b58650684a82e051d001bee0d2d9a864ae5dafb6004453ddc5b93",
+      "regularFiles": 80,
+      "titleId": "PRWB00001",
+      "contentVersion": "01.002.000",
+      "paramPath": "PRWB00001/sce_sys/param.json",
+      "ebootPath": "PRWB00001/eboot.bin",
+      "ebootBytes": 131355743,
+      "ebootMagic": "4f153d1d",
+      "format": "SELF-wrapped native app-folder build (publisher project and param.json establish PS5 title identity)",
+      "runtimeModules": [
+        "PRWB00001/sce_module/libc.prx"
+      ],
+      "otherElfs": [
+        "PRWB00001/prosperoweb-broker.elf",
+        "PRWB00001/prosperoweb.elf"
+      ],
+      "licenseFiles": [
+        "PRWB00001/data/LICENSES/DejaVu-fonts.txt",
+        "PRWB00001/data/LICENSES/GPL-3.0-or-later.txt",
+        "PRWB00001/data/LICENSES/Liberation-fonts-OFL-1.1.txt",
+        "PRWB00001/data/LICENSES/Noto-Color-Emoji-OFL-1.1.txt",
+        "PRWB00001/data/LICENSES/Noto-Sans-CJK-OFL-1.1.txt",
+        "PRWB00001/data/LICENSES/Noto-fonts-OFL-1.1.txt",
+        "PRWB00001/data/LICENSES/README.txt",
+        "PRWB00001/data/LICENSES/cacert-MPL-2.0.txt",
+        "PRWB00001/data/LICENSES/filter-lists.txt",
+        "PRWB00001/data/fonts/LICENSE-DejaVu"
+      ],
+      "archiveTopFolder": "PRWB00001",
+      "method": "7-Zip listing, param.json text and first 64 executable bytes only; no app or payload was executed",
+      "container": "Orbis-compatible SELF"
+    }
+  ],
+  "formatSources": [
+    "https://github.com/ps5-payload-dev/ftpsrv/blob/master/self.h",
+    "https://github.com/SvenGDK/SharpProspero/blob/main/docs/signed-and-unsigned.md"
+  ]
+}

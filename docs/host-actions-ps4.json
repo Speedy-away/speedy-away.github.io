@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "platform": "ps4",
+  "notes": [
+    "Launch URLs were read from the original live menu HTML or primary project source. No exploit JavaScript or downloaded payload was executed during review.",
+    "Open host navigates to the original UI; Launch host is used only where its own page auto-starts the exploit sequence. No invented payload query parameters are used.",
+    "Empty firmwares means this tool depends on a compatible installed server/loader and has no independently established numeric firmware matrix. Do not label it as all-firmware compatibility.",
+    "HTML fetch success is a route check only; no physical PS4 validation was performed.",
+    "Raw TCP ELF on 9021 is distinct from GoldHEN HTTP BIN delivery on 9090. Neither is a normal file-download endpoint."
+  ],
+  "sources": [
+    "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+    "https://karo218.ir/",
+    "https://www.kmeps4.site/",
+    "https://wrozen.com/",
+    "https://gamerhack.github.io/g2all/",
+    "https://github.com/ps4-payload-dev/elfldr",
+    "https://github.com/n0llptr/remote_lua_loader",
+    "https://github.com/kmeps4/PS4OfflineTrainer"
+  ],
+  "actions": [
+    {
+      "id": "gamerhack-g2all",
+      "label": "GamerHack · 5.05 / 5.07 / 7.00–13.52",
+      "category": "loaders",
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "launchURL": "https://gamerhack.github.io/g2all/",
+      "launchLabel": "Launch host",
+      "format": "HTML host",
+      "requirements": [
+        "Open on a PS4 firmware recognized by this host; separate 5.05/5.07 branch is included.",
+        "This route starts its exploit/GoldHEN sequence. Confirm firmware before opening."
+      ],
+      "source": "https://github.com/GamerHack/GamerHack.github.io/tree/23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "license": "External link only; no third-party runtime redistributed",
+      "automatic": true,
+      "version": "GoldHEN 2.4b18.12 advertised by live host",
+      "notes": "Exact router whitelist preserved. This external host selects separate firmware-specific chains; it is not a built-in whatwhatboy runtime.",
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceReview": "/docs/qa/gamerhack-source-review.json",
+      "instructionsURL": "/docs/host-repository-review.md"
+    },
+    {
+      "id": "karo-g2allpro",
+      "label": "Karo G2AllPro · through 13.52",
+      "category": "loaders",
+      "firmwares": [
+        "5.05",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "launchURL": "https://karo218.ir/g2allpro/index.html",
+      "launchLabel": "Launch host",
+      "format": "HTML host",
+      "requirements": [
+        "Use the PS4 browser and only a firmware recognized by the host."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "automatic": true,
+      "notes": "Live main menu advertises 5.05 and 7.xx–13.52. No 6.xx or 14.00 support inferred."
+    },
+    {
+      "id": "karo-900-light",
+      "label": "Karo · 9.00 Light",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://karo218.ir/900L/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. Follow the selected host’s own cache and exploit prompts."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "karo-900-manual",
+      "label": "Karo · 9.00 Manual",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://karo218.ir/900NM/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. Manual payload selection after the host finishes its required exploit stage."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "karo-900-new",
+      "label": "Karo · 9.00 PSFree",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://karo218.ir/900New/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "karo-900-goldhen",
+      "label": "Karo · 9.00 GoldHEN",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://karo218.ir/G900/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "The dedicated page references goldhen_v2.4b17.3.bin; do not infer its embedded payload version from the newer main-menu hover label."
+    },
+    {
+      "id": "karo-505",
+      "label": "Karo · 5.05",
+      "category": "loaders",
+      "firmwares": [
+        "5.05"
+      ],
+      "launchURL": "https://karo218.ir/505/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 5.05."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "karo-672",
+      "label": "Karo · 6.72",
+      "category": "loaders",
+      "firmwares": [
+        "6.72"
+      ],
+      "launchURL": "https://karo218.ir/672/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 6.72."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "karo-672-auto",
+      "label": "Karo · 6.72 Auto",
+      "category": "loaders",
+      "firmwares": [
+        "6.72"
+      ],
+      "launchURL": "https://karo218.ir/672A/index.html",
+      "launchLabel": "Launch host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 6.72."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "automatic": true
+    },
+    {
+      "id": "karo-702",
+      "label": "Karo · 7.02 PSFree",
+      "category": "loaders",
+      "firmwares": [
+        "7.02"
+      ],
+      "launchURL": "https://karo218.ir/702/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 7.02."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "karo-755",
+      "label": "Karo · 7.55 PSFree",
+      "category": "loaders",
+      "firmwares": [
+        "7.55"
+      ],
+      "launchURL": "https://karo218.ir/755/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 7.55."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "karo-g2all",
+      "label": "Karo · PSFree + Lapse",
+      "category": "loaders",
+      "firmwares": [
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "launchURL": "https://karo218.ir/g2all/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "Use only the firmware recognized by this original PSFree/Lapse host."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Main menu labels this original route 7.02–9.60; it is separate from G2AllPro."
+    },
+    {
+      "id": "karo-binloader-505",
+      "label": "BIN Loader · 5.05",
+      "category": "loaders",
+      "firmwares": [
+        "5.05"
+      ],
+      "launchURL": "https://karo218.ir/binloader/505/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 5.05. Follow the host’s displayed binloader stage before sending a compatible BIN."
+      ],
+      "source": "https://karo218.ir/binloader/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Dedicated binloader selector lists only 5.05, 6.72, 7.02 and 7.55; a broader main-menu hover label was not used as evidence."
+    },
+    {
+      "id": "karo-binloader-672",
+      "label": "BIN Loader · 6.72",
+      "category": "loaders",
+      "firmwares": [
+        "6.72"
+      ],
+      "launchURL": "https://karo218.ir/binloader/672/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 6.72. Follow the host’s displayed binloader stage before sending a compatible BIN."
+      ],
+      "source": "https://karo218.ir/binloader/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Dedicated binloader selector lists only 5.05, 6.72, 7.02 and 7.55; a broader main-menu hover label was not used as evidence."
+    },
+    {
+      "id": "karo-binloader-702",
+      "label": "BIN Loader · 7.02",
+      "category": "loaders",
+      "firmwares": [
+        "7.02"
+      ],
+      "launchURL": "https://karo218.ir/binloader/702/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 7.02. Follow the host’s displayed binloader stage before sending a compatible BIN."
+      ],
+      "source": "https://karo218.ir/binloader/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Dedicated binloader selector lists only 5.05, 6.72, 7.02 and 7.55; a broader main-menu hover label was not used as evidence."
+    },
+    {
+      "id": "karo-binloader-755",
+      "label": "BIN Loader · 7.55",
+      "category": "loaders",
+      "firmwares": [
+        "7.55"
+      ],
+      "launchURL": "https://karo218.ir/binloader/755/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 7.55. Follow the host’s displayed binloader stage before sending a compatible BIN."
+      ],
+      "source": "https://karo218.ir/binloader/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Dedicated binloader selector lists only 5.05, 6.72, 7.02 and 7.55; a broader main-menu hover label was not used as evidence."
+    },
+    {
+      "id": "kme-900-fontface",
+      "label": "Kameleon · 9.00 FontFaceSet",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://www.kmeps4.site/900/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. Follow this host’s prompts; these are separate entry points, not a universal firmware launcher."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "kme-900-psfree-auto",
+      "label": "Kameleon · 9.00 PSFree Auto",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://www.kmeps4.site/psfree900a/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. Follow this host’s prompts; these are separate entry points, not a universal firmware launcher."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "kme-900-psfree-manual",
+      "label": "Kameleon · 9.00 PSFree Manual",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://www.kmeps4.site/psfree900m/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. Follow this host’s prompts; these are separate entry points, not a universal firmware launcher."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "kme-900-phive",
+      "label": "Kameleon · 9.00 PS-PHIVE v4",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://www.kmeps4.site/psphive/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. Follow this host’s prompts; these are separate entry points, not a universal firmware launcher."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "kme-psfree-lapse",
+      "label": "Kameleon · PSFree-Lapse",
+      "category": "loaders",
+      "firmwares": [
+        "5.05",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "launchURL": "https://www.kmeps4.site/psfree/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "Use a firmware explicitly recognized by the selected host."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Live root menu labels this Feyzee61 5.05,[6.72–9.60] PSFree-Lapse; it does not establish 13.52 support."
+    },
+    {
+      "id": "kme-prb",
+      "label": "Kameleon · PRB Essential",
+      "category": "loaders",
+      "firmwares": [
+        "5.05",
+        "6.72",
+        "9.00"
+      ],
+      "launchURL": "https://www.kmeps4.site/prb/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "Choose the matching 5.05, 6.72 or 9.00 entry inside the original host."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "wrozen-phwoar",
+      "label": "PS-Phwoar! · 5.05",
+      "category": "loaders",
+      "firmwares": [
+        "5.05"
+      ],
+      "launchURL": "https://www.wrozen.com/phwoar/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 5.05. The original host may cache or start exploit stages after opening."
+      ],
+      "source": "https://wrozen.com/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "wrozen-xproject",
+      "label": "X-Project · 5.05",
+      "category": "loaders",
+      "firmwares": [
+        "5.05"
+      ],
+      "launchURL": "https://www.wrozen.com/xproject/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 5.05. The original host may cache or start exploit stages after opening."
+      ],
+      "source": "https://wrozen.com/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "wrozen-phive",
+      "label": "PS-Phive! · 6.72",
+      "category": "loaders",
+      "firmwares": [
+        "6.72"
+      ],
+      "launchURL": "https://www.wrozen.com/phive/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 6.72. The original host may cache or start exploit stages after opening."
+      ],
+      "source": "https://wrozen.com/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "wrozen-phivev3",
+      "label": "PS-Phive! V3 · 9.00",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://www.wrozen.com/phivev3/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. The original host may cache or start exploit stages after opening."
+      ],
+      "source": "https://wrozen.com/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "wrozen-leeful900",
+      "label": "Leeful · 9.00",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://www.wrozen.com/leeful900/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. The original host may cache or start exploit stages after opening."
+      ],
+      "source": "https://wrozen.com/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "wrozen-phivevfree",
+      "label": "PS-Phive! V3 · PSFree Beta",
+      "category": "loaders",
+      "firmwares": [
+        "9.00"
+      ],
+      "launchURL": "https://www.wrozen.com/phivevfree/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 9.00. The original host may cache or start exploit stages after opening."
+      ],
+      "source": "https://wrozen.com/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "kme-webpayloads",
+      "label": "GoldHEN Web Payloads",
+      "category": "payloads",
+      "firmwares": [],
+      "launchURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "GoldHEN must already be active, with its BinLoader server enabled on port 9090.",
+        "This sender uses HTTP POST /status and HTTP POST binary payloads; choose a firmware-compatible payload inside the host."
+      ],
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Firmware-neutral launcher UI is not a claim that every embedded payload supports every firmware. Live page has 13.00-specific payload labels, plus separate 9.60/10.0x/11.00 Linux payloads."
+    },
+    {
+      "id": "karo-copy-cheats",
+      "label": "Copy GoldHEN Cheats",
+      "category": "tools",
+      "firmwares": [],
+      "launchURL": "https://karo218.ir/copych/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "GoldHEN must already be active and its BinLoader server enabled on 9090.",
+        "Review the original host’s Cheat Copy action before pressing it."
+      ],
+      "source": "https://karo218.ir/copych/main.js",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "This page’s own source uses GoldHEN’s HTTP receiver; it is not an exploit by itself."
+    },
+    {
+      "id": "karo-offline-trainer",
+      "label": "PS4 Offline Trainer · Karo",
+      "category": "tools",
+      "firmwares": [],
+      "launchURL": "https://karo218.ir/PS4TRAINER/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "A compatible WebRTE/ps4debug trainer environment already running on PS4.",
+        "Enter the console IP, select the exact game title ID and game update, and allow the original page’s offline cache to complete."
+      ],
+      "source": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html",
+      "license": "External link only; no third-party runtime redistributed",
+      "notes": "Opening the trainer does not automatically start WebRTE. Game and trainer compatibility remain separate from system firmware."
+    },
+    {
+      "id": "kme-offline-trainer",
+      "label": "PS4 Offline Trainer · Kameleon",
+      "category": "tools",
+      "firmwares": [],
+      "launchURL": "https://www.kmeps4.site/trainer/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "A compatible trainer server must already be running on the PS4.",
+        "Select the exact CUSA title and game update in the original trainer."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "GPL-3.0 source at https://github.com/kmeps4/PS4OfflineTrainer; external link only"
+    },
+    {
+      "id": "kme-esp-flasher",
+      "label": "ESP Web Flasher",
+      "category": "tools",
+      "firmwares": [],
+      "launchURL": "https://www.kmeps4.site/EspWeb/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "Use a supported desktop browser with Web Serial and compatible ESP hardware connected by USB.",
+        "This is a hardware host setup utility, not an ELF loader for the PS4 browser."
+      ],
+      "source": "https://www.kmeps4.site/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "wrozen-linux-baikal",
+      "label": "Linux · 6.72 Baikal",
+      "category": "tools",
+      "firmwares": [
+        "6.72"
+      ],
+      "launchURL": "https://www.wrozen.com/baikal/index.html",
+      "launchLabel": "Open host",
+      "format": "HTML host",
+      "requirements": [
+        "PS4 firmware 6.72, compatible console hardware, and the Linux boot media required by the original host."
+      ],
+      "source": "https://wrozen.com/",
+      "license": "External link only; no third-party runtime redistributed"
+    },
+    {
+      "id": "ps4-ftpsrv-elf",
+      "label": "FTP Server · ELF",
+      "category": "payloads",
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps4-ftpsrv/5f00e2df7fa8/ftpsrv-ps4.elf",
+      "format": "ELF",
+      "filename": "ftpsrv-ps4.elf",
+      "version": "v0.21.1",
+      "bytes": 146720,
+      "sha256": "5f00e2df7fa8ab7daa084343f38394e6672cd389e03fc8598a54d7d9e1d58d16",
+      "source": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps4.elf",
+      "license": "GPL-3.0-or-later",
+      "run": {
+        "type": "elf-tcp",
+        "port": 9021
+      },
+      "requirements": [
+        "Start a firmware-compatible PS4 elfldr first; it must listen on TCP 9021.",
+        "A TCP-capable local bridge is required to send this ELF from a normal browser.",
+        "After loading, connect an FTP client to console port 2121."
+      ],
+      "notes": "Ready PS4 ELF build already archived and mirrored with its existing SHA-256. Empty firmware list means no app-specific numeric firmware matrix was established; it is not universal support."
+    },
+    {
+      "id": "ps4-klogsrv-elf",
+      "label": "Kernel Log Server · ELF",
+      "category": "payloads",
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps4-klogsrv/7e89c33eb90d/klogsrv-ps4.elf",
+      "format": "ELF",
+      "filename": "klogsrv-ps4.elf",
+      "version": "v0.9",
+      "bytes": 91208,
+      "sha256": "7e89c33eb90d44ea4644b80c56c29084d93faf415a9d64f1397a58ac7ca752d8",
+      "source": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps4.elf",
+      "license": "GPL-3.0-or-later",
+      "run": {
+        "type": "elf-tcp",
+        "port": 9021
+      },
+      "requirements": [
+        "Start a firmware-compatible PS4 elfldr first; it must listen on TCP 9021.",
+        "A TCP-capable local bridge is required to send this ELF from a normal browser.",
+        "After loading, a local-network log client connects to console port 3232."
+      ],
+      "notes": "Ready PS4 ELF build already archived and mirrored with its existing SHA-256. Empty firmware list means no app-specific numeric firmware matrix was established; it is not universal support."
+    },
+    {
+      "id": "ps4-lua-game-loader",
+      "label": "Lua game loader",
+      "category": "tools",
+      "firmwares": [],
+      "firmwareScope": "game-and-kernel-payload-specific",
+      "launchURL": "https://github.com/n0llptr/remote_lua_loader/blob/main/SETUP.md",
+      "launchLabel": "Open Lua setup",
+      "format": "Game save loader",
+      "requirements": [
+        "Requires a supported Artemis game and its matching CUSA/build, plus a prepared account-matched save installed using the upstream setup. Start the game to open the userland loader.",
+        "The native sender uses TCP9026 with an unsigned 64-bit little-endian byte length followed by Lua code. This is not raw ELF/BIN or a browser launch endpoint.",
+        "No packaged upstream release or ready encrypted save was found. This button opens installation instructions; it does not download or run a prepared loader.",
+        "Userland entry does not establish kernel-payload compatibility. Reviewed Lapse supports PS4 5.00–12.02 and PS5 through10.01; UMTX targets PS5 through7.61. These reviewed payloads do not establish PS4 13.52 kernel support."
+      ],
+      "source": "https://github.com/n0llptr/remote_lua_loader",
+      "protocolSource": "https://github.com/n0llptr/remote_lua_loader/blob/main/payloads/send_lua.py",
+      "license": "Upstream file terms vary; no runtime is bundled and no new license claim is made."
+    },
+    {
+      "id": "raw13g-1302-1352",
+      "label": "RAW GAME · 13.02 / 13.04 / 13.50 / 13.52",
+      "category": "loaders",
+      "firmwares": [
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "launchURL": "https://raw13g.github.io/",
+      "launchLabel": "Launch host",
+      "format": "HTML host",
+      "requirements": [
+        "Open in the PS4 browser only on 13.02, 13.04, 13.50 or 13.52. This external host starts its exploit sequence after cache handling.",
+        "The reviewed source has separate exact kernel patch files. Other offset entries and an upstream run-anyway option do not establish compatibility.",
+        "No physical-console execution has been verified by whatwhatboy. The 13.50 and 13.52 patch notes include hardware-testing limitations."
+      ],
+      "source": "https://github.com/raw13g/raw13g.github.io/tree/9ba2f0719591d6900d91aba6cc5291f8fff97e6d",
+      "sourceCommit": "9ba2f0719591d6900d91aba6cc5291f8fff97e6d",
+      "sourceEvidence": {
+        "review": "docs/qa/raw13g-source-review.json",
+        "landing": {
+          "path": "index.html",
+          "url": "https://raw.githubusercontent.com/raw13g/raw13g.github.io/9ba2f0719591d6900d91aba6cc5291f8fff97e6d/index.html",
+          "lines": "40-82",
+          "status": 200,
+          "bytes": 24773,
+          "sha256": "4898a1249458a4e1baaff5480a92810db010bdf538cdb8f7a58715805166f65c",
+          "gitBlobSHA": "f0cfb39d2b4ad48534993003ad501b1d7d297440"
+        },
+        "offsets": {
+          "path": "ps4_offsets.js",
+          "url": "https://raw.githubusercontent.com/raw13g/raw13g.github.io/9ba2f0719591d6900d91aba6cc5291f8fff97e6d/ps4_offsets.js",
+          "lines": "444-645",
+          "status": 200,
+          "bytes": 17675,
+          "sha256": "12e3886508e13e176018691def0a192c352b72959e2d1f1ea2b8fbd90a62b2dc",
+          "gitBlobSHA": "297ddf140c4074abb471188b084a3c3b1d5dc960"
+        },
+        "license": {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/raw13g/raw13g.github.io/9ba2f0719591d6900d91aba6cc5291f8fff97e6d/LICENSE",
+          "lines": "1-23",
+          "status": 200,
+          "bytes": 1362,
+          "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68",
+          "gitBlobSHA": "5d006df406dfd4c9a5d92d424a92339882a3345e"
+        }
+      },
+      "license": "External link only. MIT covers raw13g-authored code; mandatory primitive files, kernel patches and bundled payload binaries are explicitly excluded. No third-party runtime redistributed.",
+      "automatic": true,
+      "version": "Pinned source review 9ba2f0719591; bundled numeric payload version unconfirmed",
+      "notes": "External original host, not a built-in runtime. goldhen.bin and payload2.bin are byte-identical in this revision; no generic Load transport or PS5 support is asserted.",
+      "instructionsURL": "/docs/host-repository-review.md"
+    },
+    {
+      "id": "ps4-goldhen-2-3-900-binloader",
+      "platform": "ps4",
+      "label": "GoldHEN 2.3 · 9.00",
+      "category": "payloads",
+      "format": "BIN",
+      "firmwares": [
+        "9.00"
+      ],
+      "version": "2.3",
+      "bytes": 282648,
+      "sha256": "c9b8f33d28258af9e80465da591868dada25a1454f30f63882668d5e0dcff9c2",
+      "downloadURL": "/downloads/hosts/ps4/goldhen/2.3-firmware-9.00/goldhen_2.3_900.bin",
+      "consoleFileId": "goldhen-2-3-9-00",
+      "source": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.3",
+      "sourceURL": "https://raw.githubusercontent.com/GoldHEN/GoldHEN/b5a78e1e1f6ecbc2dfdcd63b4bb5446f49e309c9/goldhen_2.3_900.bin",
+      "sourceCommit": "b5a78e1e1f6ecbc2dfdcd63b4bb5446f49e309c9",
+      "instructionsURL": "/docs/host-repository-review.md",
+      "image": "/assets/images/console-software/goldhen.png",
+      "run": {
+        "type": "bin-tcp",
+        "port": 9020,
+        "protocolSource": "/hosts/runtime/ps4-900/web/lapse.js"
+      },
+      "requirements": [
+        "PS4 firmware 9.00 only. Start the built-in PSFree / Lapse loader on the console and wait for its BIN listener on TCP 9020.",
+        "Connect the paired desktop sender to load this BIN.",
+        "This is the existing official GoldHEN 2.3 build, also byte-identical to GamerHack’s 9.00 copy. It does not provide features introduced in newer GoldHEN releases.",
+        "TCP delivery confirms a transfer only. Check the console for successful GoldHEN execution before sending another payload."
+      ],
+      "license": "Official compiled GoldHEN release; no open-source license is asserted. Original publisher attribution and exact bytes retained.",
+      "tags": [
+        "PS4",
+        "9.00",
+        "GoldHEN",
+        "2.3",
+        "BIN",
+        "TCP 9020",
+        "PSFree",
+        "Lapse",
+        "GamerHack",
+        "ready-to-use"
+      ],
+      "provenance": {
+        "review": "/docs/qa/gamerhack-source-review.json",
+        "sameBytesAs": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/goldhen_2.3.bin",
+        "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\GoldHEN\\GoldHEN\\Builds\\2.3-FW9.00\\goldhen_2.3_900.bin"
+      }
+    }
+  ],
+  "updated": "2026-11-02"
+}

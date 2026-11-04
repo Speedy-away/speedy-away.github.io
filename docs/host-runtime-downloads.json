@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "runtimes": [
+    {
+      "runtimeId": "ps4-900",
+      "archives": [
+        {
+          "role": "Builds",
+          "url": "/downloads/ps4-ps5/host-runtime-ps4-900-web-b5f298341018/ps4-900-web-b5f298341018.zip",
+          "bytes": 280352,
+          "sha256": "b5f2983410186c7869937e89c2cd9a5a52e0b623b4a3f09fd5e71a22a8d47277",
+          "version": "368d82aa40d3-integration-2026.11.02.2",
+          "sourceUrl": "https://github.com/kmeps4/PSFree/tree/368d82aa40d3017c220757ce315761adb5f06678"
+        },
+        {
+          "role": "Source Code",
+          "url": "/downloads/ps4-ps5/host-runtime-ps4-900-source-a3b8a49c4c34/ps4-900-source-a3b8a49c4c34.zip",
+          "bytes": 90651,
+          "sha256": "a3b8a49c4c34db536af79e5e455d494cd2d7c8f75129f5cc18c6104984cdafed",
+          "version": "368d82aa40d3-integration-2026.11.02.2",
+          "sourceUrl": "https://github.com/kmeps4/PSFree/tree/368d82aa40d3017c220757ce315761adb5f06678"
+        }
+      ]
+    },
+    {
+      "runtimeId": "ps5-umtx",
+      "archives": [
+        {
+          "role": "Builds",
+          "url": "/downloads/ps4-ps5/host-runtime-ps5-umtx-web-56c9ea9c18e0/ps5-umtx-web-56c9ea9c18e0.zip",
+          "bytes": 304158,
+          "sha256": "56c9ea9c18e047a50a86c6b69226fbf32b98c707d78dab13a717b479f64afbd9",
+          "version": "2cf6778ebe89-integration-2026.11.02.2",
+          "sourceUrl": "https://github.com/PS5Dev/PS5-UMTX-Jailbreak/tree/2cf6778ebe89ff35255e1c228826d0d2155e9d2a"
+        },
+        {
+          "role": "Source Code",
+          "url": "/downloads/ps4-ps5/host-runtime-ps5-umtx-source-ee70ec8c7909/ps5-umtx-source-ee70ec8c7909.zip",
+          "bytes": 252708,
+          "sha256": "ee70ec8c7909253e64022be27b4790decc55477598884b1594227560c9248e3d",
+          "version": "2cf6778ebe89-integration-2026.11.02.2",
+          "sourceUrl": "https://github.com/PS5Dev/PS5-UMTX-Jailbreak/tree/2cf6778ebe89ff35255e1c228826d0d2155e9d2a"
+        }
+      ]
+    },
+    {
+      "runtimeId": "ps4-psfree-700-960",
+      "archives": [
+        {
+          "role": "Builds",
+          "url": "/downloads/ps4-ps5/host-runtime-ps4-psfree-700-960-web-485da781385c/ps4-psfree-700-960-web-485da781385c.zip",
+          "bytes": 608606,
+          "sha256": "485da781385cac20ba1856b2672209dafc582c234b93225619eb167bd7d1000b",
+          "version": "08ecf038c94a-llvm19.1.5-integration-2026.11.03.1",
+          "sourceUrl": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6"
+        },
+        {
+          "role": "Source Code",
+          "url": "/downloads/ps4-ps5/host-runtime-ps4-psfree-700-960-source-d67c982cd8df/ps4-psfree-700-960-source-d67c982cd8df.zip",
+          "bytes": 303223,
+          "sha256": "d67c982cd8df1e1f0c4c11e76d763a20ece7d6fb4d1cf11c9e43fb588473cd61",
+          "version": "08ecf038c94a-llvm19.1.5-integration-2026.11.03.1",
+          "sourceUrl": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6"
+        }
+      ]
+    }
+  ]
+}

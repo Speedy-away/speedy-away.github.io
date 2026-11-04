@@ -1,0 +1,84 @@
+{
+  "scope": "xbox360-more",
+  "batch": 3,
+  "baseline": "docs/qa/xbox360-more-batch3-baseline.json",
+  "addedIds": [
+    "snes360-enhanced",
+    "amiga360-refresh",
+    "ace-driver-collection",
+    "dashlaunch-temporary-gui",
+    "triangle-runtime",
+    "liquid-glass",
+    "polar-glass",
+    "silenthill360-alpha1",
+    "matrix-v4"
+  ],
+  "sourceFiles": [
+    "docs/xbox360-more-batch3-apps.json",
+    "docs/xbox360-more-batch3-skins.json",
+    "docs/xbox360-more-batch3-games.json"
+  ],
+  "updatedAt": "2026-11-02T12:20:48.068Z",
+  "unavailable": [
+    {
+      "id": "xbox360-more-sonic-exe",
+      "title": "Sonic.exe · Xbox 360 Final Update",
+      "source": "https://andkfox.itch.io/xbox360-sonicexe",
+      "status": "incomplete",
+      "attempts": [
+        {
+          "checkedAt": "2026-11-02T12:31:32.132Z",
+          "sourceUrl": "https://andkfox.itch.io/xbox360-sonicexe",
+          "status": "incomplete-download",
+          "reason": "Original author page and ordinary free file flow verified. Node transport had DNS/connect failures; system curl recovered, but full binary downloads did not complete in the bounded retry window. Prior attempts timed out and an expired signed URL returned403. Partial bytes retained locally; no full-file SHA256 or ready-build claim.",
+          "uploadId": "19049130",
+          "expectedDownloadBytes": 99590619
+        }
+      ]
+    },
+    {
+      "id": "xbox360-more-sally-exe",
+      "title": "Sally.exe · Xbox 360 Demo1",
+      "source": "https://andkfox.itch.io/x360-sallyexe",
+      "status": "incomplete",
+      "attempts": [
+        {
+          "checkedAt": "2026-11-02T12:31:32.132Z",
+          "sourceUrl": "https://andkfox.itch.io/x360-sallyexe",
+          "status": "incomplete-download",
+          "reason": "Original author page and ordinary free file flow verified. Node transport had DNS/connect failures; system curl recovered, but full binary downloads did not complete in the bounded retry window. Prior attempts timed out and an expired signed URL returned403. Partial bytes retained locally; no full-file SHA256 or ready-build claim.",
+          "uploadId": "18948616",
+          "expectedDownloadBytes": 126278336
+        }
+      ]
+    },
+    {
+      "id": "xbox360-more-silent-hill-skins",
+      "title": "Silent Hill · Aurora skin collection",
+      "source": "https://www.reddit.com/r/silenthill/comments/1neu5n8/",
+      "status": "incomplete",
+      "attempts": [
+        {
+          "checkedAt": "2026-11-02T12:31:32.132Z",
+          "sourceUrl": "https://drive.google.com/file/d/1rj0Q3Ug-6KOKpYfR76cDg_bPzddmSk6X/view",
+          "status": "incomplete-download",
+          "reason": "Original-author Google Drive accepted the selected ZIP, but sequential and supported range transfers timed out. The range run completed112501721of154625941bytes before a request exhausted retries. Preallocated partial contains unfilled ranges and must not be treated as a valid ZIP.",
+          "expectedDownloadBytes": 154625941,
+          "completedRangeBytes": 112501721,
+          "partialFiles": [
+            "docs/tmp/xbox360-more-batch3/silent-hill.partial-1793621151574",
+            "docs/tmp/xbox360-more-batch3/silent-hill.ranged-partial-1793621616402"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "All 29 earlier entries and 34 earlier files are preserved with exact names, versions, sources, byte counts and hashes.",
+    "Triangle ZIP is a local convenience bundle of the 50 unchanged publisher runtime files at pinned commit03cb4bc8e0e1; all originals are separately archived, with Git blob hashes checked.",
+    "The temporary DashLaunch GUI fork requires an already-loaded launch.xex; BadUpdate/ABadAvatar support is distinct from persistent installation and Peer Pressure.",
+    "Silent Hill Xbox360Alpha1 requires personal USA BIN data and the documented BadUpdate/XeUnshackle route. No commercial game data supplied.",
+    "Sonic.exe, Sally.exe and the Silent Hill skin collection did not complete downloading. Partial files remain preserved; do not execute, publish or hash-claim them as ready builds. Use a new staging filename for future retries.",
+    "No payloads/builds executed, no physical-console testing, no commit or deployment."
+  ]
+}

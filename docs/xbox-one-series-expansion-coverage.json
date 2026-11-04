@@ -1,0 +1,133 @@
+{
+  "reviewed": "2026-11-02",
+  "added": [
+    {
+      "id": "retroarch",
+      "version": "Xbox snapshot 2026-08-19",
+      "models": [
+        "one",
+        "series"
+      ],
+      "release": "https://github.com/XboxEmulationHub/RetroArch/releases/tag/08-19-2026",
+      "readyFilesVerified": true
+    },
+    {
+      "id": "dosbox-pure",
+      "version": "1.0.0.236",
+      "models": [
+        "series"
+      ],
+      "release": "https://github.com/marcelofrau/dosbox-pure-uwp/releases/tag/v1.0.0.236",
+      "readyFilesVerified": true
+    },
+    {
+      "id": "scummvm",
+      "version": "2026.3.1.155",
+      "models": [
+        "one",
+        "series"
+      ],
+      "release": "https://github.com/marcelofrau/scummvm-uwp/releases/tag/v2026.3.1.155",
+      "readyFilesVerified": true
+    },
+    {
+      "id": "xemu",
+      "version": "0.9.1010.0",
+      "models": [
+        "series"
+      ],
+      "release": "https://github.com/skitzellez/xemu-uwp/releases/tag/uwp-0.9.1010.0",
+      "readyFilesVerified": true
+    },
+    {
+      "id": "xenia",
+      "version": "legacy 1.1.5a",
+      "models": [
+        "one",
+        "series"
+      ],
+      "release": "https://github.com/SirMangler/xenia/releases/tag/1.1.5a",
+      "readyFilesVerified": true
+    },
+    {
+      "id": "retropass",
+      "version": "1.13.0",
+      "models": [
+        "one",
+        "series"
+      ],
+      "release": "https://github.com/retropassdev/RetroPass/releases/tag/RetroPass_v1.13.0",
+      "readyFilesVerified": true
+    },
+    {
+      "id": "xfiles",
+      "version": "1.8.0.1527",
+      "models": [
+        "one",
+        "series"
+      ],
+      "release": "https://github.com/marcelofrau/x-files-uwp/releases/tag/v1.8.0.1527",
+      "readyFilesVerified": true
+    },
+    {
+      "id": "kodi",
+      "version": "21.3 Omega",
+      "models": [
+        "one"
+      ],
+      "release": "https://kodi.tv/download/windows/",
+      "readyFilesVerified": true
+    }
+  ],
+  "automatedDocumentationBlocks": [
+    {
+      "url": "https://kodi.tv/",
+      "status": 403,
+      "ok": false,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://kodi.tv/download/windows/",
+      "status": 403,
+      "ok": false,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://kodi.wiki/view/First_time_user",
+      "status": 403,
+      "ok": false,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://kodi.tv/article/kodi-21-3-omega-release/",
+      "status": 403,
+      "ok": false,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://kodi.wiki/view/Backup",
+      "status": 403,
+      "ok": false,
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
+  "skipped": [
+    {
+      "project": "SafeExit",
+      "url": "https://github.com/Dantes-Dungeon/safe-exit",
+      "status": "not-downloaded",
+      "reason": "Publisher describes an undocumented-functionality demonstration originally not intended for end users; normal Developer Home retail switching remains documented."
+    },
+    {
+      "project": "DuckStation UWP alternatives",
+      "status": "not-downloaded",
+      "reason": "No current source-confirmed publisher-ready release selected; known alternative release URL returned404 and other inspected forks had no published releases."
+    },
+    {
+      "project": "Adv File Explorer / NetShareX",
+      "status": "not-downloaded",
+      "reason": "No sufficiently verified publisher-ready console asset selected."
+    }
+  ],
+  "note": "403 statuses concern automated Kodi documentation HEAD requests. The official Kodi UWP MSIX downloaded successfully and is archived with actual byte count and SHA-256. No failed link is inventoried as a ready file."
+}

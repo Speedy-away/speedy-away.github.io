@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "source": {
+    "server": "DaOfficialGaming's HQ",
+    "forum": "The-Vault",
+    "evidence": "All 6 full posts and the final forum boundary were read through native Discord UI on 2 November 2026.",
+    "fullPostCaptureComplete": true
+  },
+  "resources": [
+    {
+      "id": "pkg-zone",
+      "name": "PKG-Zone",
+      "url": "https://pkg-zone.com/",
+      "category": "Homebrew apps",
+      "description": "Browse the PKG-Zone app catalogue and the publisher’s HB-Store links for PS4 and PS5.",
+      "tags": [
+        "PS4",
+        "PS5",
+        "Homebrew",
+        "HB-Store",
+        "Apps"
+      ],
+      "accessCheck": "Website read successfully on 2 November 2026.",
+      "guide": "Choose the entry for your console and read the app’s requirements. The catalogue and store packages are separate from individual game mods.",
+      "source": "https://discord.com/channels/1528329794947776572/1562382603598696499"
+    },
+    {
+      "id": "orbispatches",
+      "name": "OrbisPatches",
+      "url": "https://www.orbispatches.com/",
+      "category": "Game updates",
+      "description": "PS4 game-update database. Look up the title ID and the particular update needed by a resource.",
+      "tags": [
+        "PS4",
+        "Game updates",
+        "Title IDs",
+        "CUSA",
+        "Patch database"
+      ],
+      "accessCheck": "Website read successfully on 2 November 2026; interactive lookup requires JavaScript.",
+      "guide": "Match the installed game’s CUSA ID and the menu’s stated game update. A newer update does not establish compatibility with an older menu build.",
+      "source": "https://discord.com/channels/1528329794947776572/1559942890262896720"
+    },
+    {
+      "id": "garlicsaves",
+      "name": "Garlicsaves",
+      "url": "https://garlicsaves.com/",
+      "category": "Save and development tools",
+      "description": "PS4 and PS5 reference tools, including title-ID lookup, a filesystem browser, param.sfo viewer and sample saves.",
+      "tags": [
+        "PS4",
+        "PS5",
+        "Save tools",
+        "Title IDs",
+        "param.sfo"
+      ],
+      "accessCheck": "Website read successfully on 2 November 2026.",
+      "guide": "Start with the title-ID lookup or the tool matching your task. Back up saves before editing them and check the title and region requirements for any sample save.",
+      "source": "https://discord.com/channels/1528329794947776572/1556276421612015717"
+    },
+    {
+      "id": "superpsx",
+      "name": "SuperPSX",
+      "url": "https://www.superpsx.com/",
+      "category": "External libraries",
+      "description": "External website linked in The Vault. Its current content and individual file availability have not been verified in this pass.",
+      "tags": [
+        "External website",
+        "Vault reference"
+      ],
+      "accessCheck": "The web reader could not retrieve the site on 2 November 2026; this does not prove the site is offline.",
+      "guide": "Use the original website link to check its current listings. No individual game package from this reference has been added to the local download inventory.",
+      "source": "https://discord.com/channels/1528329794947776572/1556275419374944266"
+    },
+    {
+      "id": "playstation-firmware",
+      "name": "PlayStation Firmware",
+      "url": "https://archive.midnightchannel.net/SonyPS/Firmware/?cat=ps4sys",
+      "category": "Firmware archives",
+      "description": "The Midnight Channel PS4 system-firmware archive. The Discord post links the ps4sys category specifically.",
+      "tags": [
+        "PlayStation",
+        "Firmware",
+        "System update",
+        "Recovery",
+        "Checksums",
+        "PS4",
+        "System firmware"
+      ],
+      "accessCheck": "Exact PS4 system-firmware archive URL captured from the full Discord post on 2 November 2026; the archive directory was read in the prior website check.",
+      "guide": "Choose the console, exact firmware version and system-update or recovery category required by your guide. Compare the listed hash before using a file. Firmware downloads are references here; no console update is started by this page.",
+      "source": "https://discord.com/channels/1528329794947776572/1556274747241664644"
+    },
+    {
+      "id": "vimms-lair",
+      "name": "Vimm’s Lair",
+      "url": "https://vimm.net/",
+      "category": "External libraries",
+      "description": "External reference website linked in The Vault. Check the site itself for current catalogue and access availability.",
+      "tags": [
+        "External website",
+        "Vault reference",
+        "Vimm"
+      ],
+      "accessCheck": "The web reader could not retrieve the site on 2 November 2026; this does not prove the site is offline.",
+      "guide": "Follow the original website link for its current information. A listing on this directory does not mean a particular title or download is currently available.",
+      "source": "https://discord.com/channels/1528329794947776572/1556267182743363605"
+    }
+  ]
+}

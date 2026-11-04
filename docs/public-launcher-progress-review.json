@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03T22:45:53.022Z",
+  "target": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+  "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\public-launcher-progress-backup-2026-11-03T22-45-53-018Z",
+  "records": [
+    {
+      "path": "assets/host-local-launcher.js",
+      "beforeSha256": "fd05c5c0f28a69215fe389831c35ed32c167663bc570c44979c9b2cce6dcca5d",
+      "afterSha256": "592df0e6b36744992dc68921699a4f40b3c524848409e5dbbe49578cfd89ac37",
+      "bytes": 4760
+    },
+    {
+      "path": "assets/afterglow-public-launcher.js",
+      "beforeSha256": "4f2cbc1834d7f38a158d57c8edd69ce7fbc56af479cf68fccfffc8a6e67b91d5",
+      "afterSha256": "ce938cfe5be6a0542691fc984f5f21ed6b4df6fb6119a8a88fe3151568c3e214",
+      "bytes": 2422
+    },
+    {
+      "path": "scripts/host-local-launchers.cjs",
+      "beforeSha256": "5180d43b35e953e741f2b170c22879dd299ceeb13b34707b18e602e88b50292c",
+      "afterSha256": "8ddd36c05dad765c2aca50d3373ae0902937d0e34c0eb60ea6f6f640143168b0",
+      "bytes": 7795
+    }
+  ],
+  "changes": [
+    "Local public entry announces Loading before authorize/navigation, disables Load/confirm/clear during handoff, and remains blocked on restored entry.",
+    "Missing guard methods and inaccessible browser storage fail closed with an announced guard-unavailable message instead of an uncaught exception or incorrect saved-attempt claim.",
+    "Afterglow public adapter only announces opening its existing inert picker; installation is idempotent and repeat fallback clicks are prevented during handoff.",
+    "Builder checks required public UI guard/launcher/style files before writing and emits explicit live status attributes. New local launcher script query is v2."
+  ],
+  "nativeReadOnlyEvidence": [
+    {
+      "path": "hosts/runtime/ps4-afterglow-acf25a831725/web/index.html",
+      "sha256": "68b73a93c1e59ad13fe539a97ac19ea9e65f7516c3c4388d8d33705ac57c5148"
+    },
+    {
+      "path": "hosts/runtime/ps4-afterglow-acf25a831725/web/jb.js",
+      "sha256": "c0e5d287cfb3e2a3720bea96c960a7244e910be08c6e3181c8e1fe6804941568"
+    },
+    {
+      "path": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/G900/index.html",
+      "sha256": "62ae41f16980dec643bbb6bc90f9241d31e5185b260fa0572d70c4ee3ec4e970"
+    }
+  ],
+  "nativeSuccessTextReadAsData": {
+    "afterglowFile": "hosts/runtime/ps4-afterglow-acf25a831725/web/jb.js",
+    "function": "finishUI(ok,ran)",
+    "branches": [
+      "ok → DONE",
+      "!ok && ran → Restart your console",
+      "!ok && !ran → Refresh the page and run again"
+    ],
+    "publicClaim": "No public adapter reports success or native execution. Status belongs to the actual selected native entry after navigation."
+  },
+  "nativeFilesChanged": 0,
+  "downloadFilesChanged": 0,
+  "consoleRequests": 0,
+  "hardwareTested": false,
+  "publishedPagesRegenerated": false,
+  "publication": false,
+  "remaining": [
+    "Root regenerates public launcher pages; afterglow public asset version bump/publisher cache busting remains root-owned.",
+    "Root refreshes ready packages that include public launcher assets without replacing any older runtime/package.",
+    "HTTP/native dependencies after handoff remain owned by existing native resource guards and browser/native status. Public UI does not claim to verify successful execution."
+  ],
+  "verification": {
+    "command": "node --test scripts/tests/host-launcher-progress.test.cjs scripts/tests/host-local-launchers.test.cjs scripts/tests/afterglow-public-launcher.test.cjs scripts/tests/gamerhack-local-build.test.cjs",
+    "tests": 19,
+    "passed": 19,
+    "failed": 0,
+    "method": "Authored launcher/guard calls use inert fixtures; original/runtime/download bytes are read for integrity only. No original native or exploit script evaluated.",
+    "nativeOriginalsValidated": 48,
+    "browser": "Disabled; no browser/headless workaround.",
+    "consoleOrHardwareExecution": false
+  },
+  "testFile": {
+    "path": "scripts/tests/host-launcher-progress.test.cjs",
+    "bytes": 5363,
+    "sha256": "c8ff9d6bd5c2f296b288560f59c67db3608c334be8078b6cb36bf864ac32d251"
+  },
+  "frozen": true
+}

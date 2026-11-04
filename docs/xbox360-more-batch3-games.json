@@ -1,0 +1,106 @@
+{
+  "scope": "xbox360-more",
+  "batch": 3,
+  "reviewed": "2026-11-02",
+  "status": "Complete focused research: one verified native port; two full game downloads remain incomplete and are recorded honestly",
+  "resources": [
+    {
+      "id": "silenthill360-alpha1",
+      "title": "Silent Hill · Xbox 360 alpha port",
+      "author": "SlickAmogus / Silent Hill decompilation contributors; original game by Konami",
+      "group": "ports",
+      "version": "Xbox 360 Alpha 1 · 2026-10-29",
+      "source": "https://github.com/SlickAmogus/silent-hill-decomp",
+      "release": "https://github.com/SlickAmogus/silent-hill-decomp/releases/tag/xbox360-alpha-1",
+      "downloadUrl": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/SilentHill_Xbox360.zip",
+      "fileName": "SilentHill_Xbox360.zip",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/SilentHill_Xbox360.zip",
+      "expectedBytes": 4535839,
+      "expectedSha256": "f9d0fccc547a0860c6541e8946f3213b2b5a7e906eb22928c4ea6936e27536e1",
+      "format": "ZIP / XEX",
+      "description": "Early native Xbox 360 port with classic or third-person camera options. It requires your own USA PlayStation disc data.",
+      "prerequisites": "Your own Silent Hill USA .bin disc image in the silenthill subfolder; any filename ending in .bin is accepted. Keep the complete release folder writable for logs and saves. No game image is included.",
+      "runtime": "BadUpdate + XeUnshackle is the publisher’s documented Xbox 360 route. Its BadUpdate entry point requires dashboard 17559; the app does not publish a separate motherboard or minimum-dashboard matrix.",
+      "temporary": "BadUpdate followed by XeUnshackle is explicitly documented. Re-establish that runtime after reboot. Other temporary payloads and Peer Pressure are not separately certified by this release.",
+      "requirementFilter": "badupdate",
+      "installPath": "Hdd1:\\Homebrew\\SilentHill\\",
+      "usbPath": "Usb0:\\Homebrew\\SilentHill\\",
+      "launch": "default.xex",
+      "setup": [
+        "Extract the ZIP on your PC. Copy its Silent Hill folder to a dedicated homebrew location, or copy that folder’s contents into the shown SilentHill path; avoid nesting it twice.",
+        "Put your own USA .bin under silenthill\\ beside the optional silenthill.cfg. The final executable sits one directory above the disc image.",
+        "Launch default.xex from Aurora, FreeStyle or xbGuard after the documented runtime. Preserve silenthill\\save\\0.MCD when updating."
+      ],
+      "notes": "Alpha build: busy scenes can slow down and visual/combat/save behavior has known issues. Earlier test saves can have lost inventory items; memory cards are not interchangeable with the PC port. Keep your current saves and build. No physical-console execution was performed by this site.",
+      "requiredEntries": [
+        "Silent Hill/default.xex",
+        "Silent Hill/README.txt"
+      ],
+      "imageCredit": "SlickAmogus · published Xenia screenshot of the Xbox 360 port; original artwork by Konami, not a physical-console test screenshot",
+      "imageAttempt": {
+        "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/03_street_16x9.png",
+        "reason": "Publisher screenshot transfer timed out during network problems; no screenshot download claimed."
+      },
+      "image": {
+        "local": "/assets/images/consoles/xbox360.png",
+        "sourceUrl": "https://github.com/SlickAmogus/silent-hill-decomp/releases/tag/xbox360-alpha-1",
+        "credit": "Site Xbox 360 console illustration · publisher game screenshot temporarily unavailable"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "source": "https://andkfox.itch.io/xbox360-sonicexe",
+      "readyLabel": "[XBOX360] Final Update",
+      "uploadId": "19049130",
+      "approximateBytes": "94 MB",
+      "status": "Original author page and ordinary free file flow verified. Node transport had DNS/connect failures; system curl recovered, but full binary downloads did not complete in the bounded retry window. Prior attempts timed out and an expired signed URL returned403. Partial bytes retained locally; no full-file SHA256 or ready-build claim.",
+      "publisherFileName": "FinalUpdate.rar",
+      "publisherExpectedBytes": 99590619
+    },
+    {
+      "source": "https://andkfox.itch.io/x360-sallyexe",
+      "readyLabel": "[XBOX360] Demo 1 (v0.1.0)",
+      "uploadId": "18948616",
+      "approximateBytes": "120 MB",
+      "status": "Original author page and ordinary free file flow verified. Node transport had DNS/connect failures; system curl recovered, but full binary downloads did not complete in the bounded retry window. Prior attempts timed out and an expired signed URL returned403. Partial bytes retained locally; no full-file SHA256 or ready-build claim.",
+      "publisherFileName": "Demo1.rar",
+      "publisherExpectedBytes": 126278336
+    },
+    {
+      "source": "https://cayama0811.itch.io/driving-simulator",
+      "status": "Original author page specifies Windows and keyboard controls; no Xbox 360 ready build was offered. Not included."
+    },
+    {
+      "source": "https://github.com/dfsf2151/ucn360",
+      "status": "Original author links a Google Drive folder containing a runtime/game-data bundle. No complete public ready archive verified during this check; no source archive was substituted."
+    }
+  ],
+  "verification": {
+    "downloadedFiles": 1,
+    "physicalHardwareTested": false,
+    "downloadedBuildsExecuted": false,
+    "archiveWrites": false,
+    "archiveCrcTestsPassed": 1,
+    "officialPackageSha256Matched": true,
+    "nativeXexHeaders": 1,
+    "partialFiles": [
+      {
+        "source": "https://andkfox.itch.io/xbox360-sonicexe",
+        "publisherFileName": "FinalUpdate.rar",
+        "publisherExpectedBytes": 99590619,
+        "partialFile": "docs/tmp/xbox360-more-batch3/sonicexe360-1793620989800.download",
+        "partialBytes": 23117824,
+        "status": "Incomplete; not a ready download and not eligible for archive intake"
+      },
+      {
+        "source": "https://andkfox.itch.io/x360-sallyexe",
+        "publisherFileName": "Demo1.rar",
+        "publisherExpectedBytes": 126278336,
+        "partialFile": "docs/tmp/xbox360-more-batch3/sallyexe360-1793620989809.download",
+        "partialBytes": 20516864,
+        "status": "Incomplete; not a ready download and not eligible for archive intake"
+      }
+    ]
+  }
+}

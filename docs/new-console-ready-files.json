@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "policy": "Preserve original archives and versions. Extract selected bytes only, never execute them. Direct PRX downloads are replacement binaries requiring the matching support files and license; they are not complete installations.",
+  "packs": [
+    {
+      "id": "expulsion-v5-ready",
+      "title": "Expulsion V5.0 · direct files",
+      "version": "5.0-GTA1.57-direct",
+      "source": "https://www.mediafire.com/file/f20tsz8dj37n1ax/Expulsion-V5.0-PS4-1.57-Release.rar/file",
+      "archive": "/downloads/ps4-ps5/gta5-expulsion-v5-1-57/Expulsion-V5.0-PS4-1.57-Release.rar",
+      "archiveSha256": "7d907976539ee8c10bf810e7655dcb77db6e2e60850bc97e840dafddbcb4cac6",
+      "licensePath": "LICENSE",
+      "license": "MIT notice embedded in supplied pack",
+      "selection": "all",
+      "binary": "data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "compatibility": "PS4 GoldHEN plugins; GTA V CUSA00419 game update 1.57. V5.0 INSTALL.txt supplies only this title ID.",
+      "supportArchive": "/downloads/ps4-ps5/gta5-expulsion-v5-1-57-prepared-zip/Expulsion-V5.0-PS4-1.57.zip",
+      "installation": "Merge the complete data and user support trees into /data and /user. Keep the maps directory and existing saves. Merge the exact PRX entry under CUSA00419 in your existing plugins.ini. Direct PRX download alone is appropriate only for a matching installation with its support files already present.",
+      "page": "/console/ps4/archive-files.html"
+    },
+    {
+      "id": "expulsion-v7-ready",
+      "title": "Expulsion V7.0 · direct replacement files",
+      "version": "7.0-GTA1.57-direct",
+      "source": "https://www.mediafire.com/file/t3kgvyhof1ig5sm/Expulsion_V7.0.zip/file",
+      "archive": "/downloads/ps4/GTA5/157/Expulsion_V7.0.zip",
+      "archiveSha256": "1e947e676dd228ebb34f61282fa4de343d503fc4b8b5cfa1d5a86d8bead5cad4",
+      "licensePath": "Expulsion V7.0/LICENSE",
+      "license": "MIT and Lua MIT notices embedded in supplied pack",
+      "selection": [
+        "Expulsion V7.0/LICENSE",
+        "Expulsion V7.0/LUA-LICENSE.txt",
+        "Expulsion V7.0/INSTALL.txt",
+        "Expulsion V7.0/plugins.ini.example",
+        "Expulsion V7.0/PS4/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+        "Expulsion V7.0/PS4/data/Expulsion/LUA-Scripts/MountMod.lua",
+        "Expulsion V7.0/PS4/data/Expulsion/LUA-Scripts/LushModzFunV1Menu.lua",
+        "Expulsion V7.0/PS4/data/Expulsion/LUA-Scripts/API.md",
+        "Expulsion V7.0/PS4/data/Expulsion/LUA-Scripts/README.txt"
+      ],
+      "binary": "Expulsion V7.0/PS4/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "compatibility": "PS4 GoldHEN plugins; GTA V game update 1.57, CUSA00419 USA or CUSA00411 EUR per INSTALL.txt. The author states EUR hardware testing remains required.",
+      "supportArchive": "/downloads/ps4/GTA5/157/Expulsion_V7.0.zip",
+      "installation": "Use the full ZIP for a new installation: merge PS4/data and PS4/user, preserve existing custom files and match the title ID. The direct PRX is a replacement option for a matching installed support tree. The Lua scripts need this Expulsion build and its documented API; desktop Python background tools remain in the original archive and are not console payloads.",
+      "page": "/console/ps4/archive-files.html"
+    }
+  ],
+  "officialDirectBins": {
+    "release": "https://github.com/GoldHEN/GoldHEN/releases/tag/2.3",
+    "sourceCommit": "b5a78e1e1f6ecbc2dfdcd63b4bb5446f49e309c9",
+    "archive": "/downloads/archive/f07434d99146/GoldHEN_v2.3.7z",
+    "archiveSha256": "fc49f6ada1d73da63187f27c4dc1e1569aff3c355d3d5ae5acf9a674e268ac68",
+    "distribution": "Official direct BIN URLs match the archived release byte for byte. No general redistribution license was found; use the author's pinned official URLs as the public direct download and archive locally without claiming an open license.",
+    "files": [
+      {"filename":"goldhen_2.3_505.bin","firmware":"5.05","bytes":280792,"sha256":"a58e3633c6992b0b392a572679ba56d2a5344d03ad715e0cf30df3341f17e6be"},
+      {"filename":"goldhen_2.3_672.bin","firmware":"6.72","bytes":285304,"sha256":"75218e080d6a46c3778ef1e4338d453e8c2ce8ff1bc368818943bd21a1d5e681"},
+      {"filename":"goldhen_2.3_900.bin","firmware":"9.00","bytes":282648,"sha256":"c9b8f33d28258af9e80465da591868dada25a1454f30f63882668d5e0dcff9c2"}
+    ]
+  }
+}

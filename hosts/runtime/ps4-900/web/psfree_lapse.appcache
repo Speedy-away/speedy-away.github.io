@@ -1,0 +1,34 @@
+CACHE MANIFEST 
+# PSFree-Lapse
+# whatwhatboy BIN-only integration 2026-11-02
+../guard.js
+../README.md
+send.js
+
+about.html
+alert.js
+cache.html
+config.js
+index.html
+lapse.js
+aio_patches.bin
+psfree.js
+fonts/LiberationMono-Regular.ttf
+kpatch/900.elf
+module/chain.js
+module/constants.js
+module/int64.js
+module/mem.js
+module/memtools.js
+module/offset.js
+module/rw.js
+module/utils.js
+module/view.js
+rop/900.js
+
+NETWORK:
+*
+
+SETTINGS:
+prefer-online
+

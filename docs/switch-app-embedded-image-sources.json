@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-02T12:20:03.653Z",
+  "images": [
+    {
+      "id": "ftpsrv",
+      "localPath": "/assets/images/switch-homebrew/ftpsrv-embedded.jpg",
+      "source": "https://switch.cdn.fortheusers.org/zips/ftpsrv.zip",
+      "member": "switch/ftpsrv.nro embedded ASET icon",
+      "size": 6285,
+      "sha256": "0b942950df9fb30f08336b681e24a3ceeeaa6f0915d7dd404d5ebb9bd4e15214",
+      "credit": "Original ftpsrv icon embedded in its pinned Switch NRO",
+      "storeIconStatus": 404
+    },
+    {
+      "id": "Switch_90DNS_Tester",
+      "localPath": "/assets/images/switch-homebrew/Switch_90DNS_Tester-embedded.jpg",
+      "source": "https://switch.cdn.fortheusers.org/zips/Switch_90DNS_Tester.zip",
+      "member": "Switch_90DNS_tester.nro embedded ASET icon",
+      "size": 34710,
+      "sha256": "7f02d009a288dad3eedea5c7c4742ca9667473a4009a84fdabb0ed62635ffef4",
+      "credit": "Original Switch 90DNS tester icon embedded in its pinned Switch NRO",
+      "storeIconStatus": 404
+    },
+    {
+      "id": "Cpp-Snake-NX",
+      "localPath": "/assets/images/switch-homebrew/Cpp-Snake-NX-embedded.jpg",
+      "source": "https://github.com/CompSciOrBust/Cpp-Snake-NX/releases/download/1.1.0/Cpp-Snake-NX.nro",
+      "member": "Cpp-Snake-NX.nro embedded ASET icon",
+      "size": 6285,
+      "sha256": "0b942950df9fb30f08336b681e24a3ceeeaa6f0915d7dd404d5ebb9bd4e15214",
+      "credit": "Original Cpp-Snake-NX icon embedded in its pinned Switch NRO",
+      "storeIconStatus": 404
+    }
+  ]
+}

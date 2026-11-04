@@ -1,0 +1,184 @@
+/* Shared responsive layer. Keep after page styles so legacy pages receive the
+   same phone navigation, readable controls and overflow protection. */
+:root { --mobile-header-height: 72px; }
+.mobile-site-header { display: none; }
+.skip-link { position: fixed; inset-inline-start: 16px; top: -100px; z-index: 100002; padding: 12px 18px; border-radius: 8px; background: #f4f4f5; color: #101012; }
+.skip-link:focus { top: max(12px, env(safe-area-inset-top)); }
+.main-content, .container, .section, .footer, .footer-content > *,
+:is(.games-grid,.cheats-grid,.tools-grid,.console-grid,.contact-grid,.info-cards,.videos-grid,.social-grid,.content-grid) > * { min-width: 0; }
+.games-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.cheats-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.contact-grid, .info-cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.videos-grid, .video-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+.social-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+.main-content :is(p,li,h1,h2,h3,h4,dd,.btn,.feature,.status-badge,.game-status), .footer p { overflow-wrap: anywhere; }
+.btn, .game-btn, .tool-link, .discord-join { max-width: 100%; white-space: normal; line-height: 1.4; justify-content: center; text-align: center; }
+.features-grid .feature, .status-badge { white-space: normal; }
+.main-content :is(video,iframe) { max-width: 100%; }
+.main-content pre { max-width: 100%; overflow-x: auto; }
+.mobile-table-scroll { width: 100%; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+.mobile-table-scroll:focus-visible { outline: 2px solid #a7f3d0; outline-offset: 3px; }
+.main-content :not(pre) > code { overflow-wrap: anywhere; }
+.nav-sublist { visibility: hidden; }
+.nav-group.open > .nav-sublist { visibility: visible; max-height: none; }
+.sidebar-nav { min-height: 0; overscroll-behavior-y: contain; }
+
+/* Large iPads can use a desktop-width viewport while still being touch-only. */
+@media (pointer: coarse), (min-width: 1025px) and (max-width: 1366px) {
+    .nav-link, .nav-group-toggle, .sidebar-toggle, .btn, .game-btn,
+    .filter-btn, .filter-pill, .tab-btn, .tool-link { min-height: 44px; }
+    input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea { font-size: 16px !important; }
+    select, input[type="file"] { min-height: 48px; }
+}
+
+@media (max-width: 1024px) {
+    html { scroll-padding-top: calc(var(--mobile-header-height) + env(safe-area-inset-top) + 16px); }
+    .mobile-site-header { display: flex; align-items: center; position: fixed; inset: 0 0 auto; min-height: calc(var(--mobile-header-height) + env(safe-area-inset-top)); padding-top: env(safe-area-inset-top); z-index: 998; background: rgba(10,10,12,.95); border-bottom: 1px solid rgba(255,255,255,.09); }
+    .mobile-brand { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; max-width: calc(100% - 174px); margin-inline-start: calc(72px + env(safe-area-inset-left)); color: #f4f4f5; font-size: 14px; font-weight: 700; letter-spacing: -.025em; }
+    .mobile-brand img { width: 26px; height: 26px; border-radius: 7px; flex: 0 0 auto; }
+    .mobile-brand span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .mobile-sidebar-btn { display: flex; position: absolute; left: max(16px, env(safe-area-inset-left)); top: calc(14px + env(safe-area-inset-top)); width: 44px; height: 44px; background: #19191d; border: 1px solid rgba(255,255,255,.13); }
+    .sidebar, .sidebar.collapsed { width: min(320px, calc(100vw - 48px)); height: 100vh; height: 100dvh; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); transform: translateX(-100%); visibility: hidden; background: #101013; }
+    .sidebar.active, .sidebar.collapsed.active { transform: translateX(0); visibility: visible; }
+    html[dir="rtl"] .sidebar { left: auto; right: 0; border-right: 0; border-left: 1px solid rgba(255,255,255,.08); transform: translateX(100%); }
+    html[dir="rtl"] .sidebar.active { transform: translateX(0); }
+    .sidebar-header { padding: 14px 16px; padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); min-height: 72px; }
+    .sidebar-toggle { width: 44px; height: 44px; }
+    .sidebar-brand { min-width: 0; }
+    .sidebar-nav { padding-block: 10px 16px; padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+    .nav-link { min-height: 46px; white-space: normal; padding-block: 11px; }
+    .nav-link span { min-width: 0; overflow-wrap: anywhere; }
+    .nav-sublink { font-size: 14px; }
+    .sidebar-social { padding: 16px 20px; }
+    .sidebar-social .social-links a { width: 44px; height: 44px; }
+    .main-content, .sidebar.collapsed ~ .main-content, .sidebar.collapsed + .mobile-sidebar-btn + .main-content { margin-left: 0; min-height: 100svh; }
+    .site-atmosphere .main-content { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+    .site-atmosphere .footer { padding-bottom: max(84px,env(safe-area-inset-bottom)); }
+    .mobile-site-header ~ .main-content { padding-top: calc(var(--mobile-header-height) + env(safe-area-inset-top)); }
+    .footer, .sidebar.collapsed ~ .footer { margin-left: 0; padding-bottom: env(safe-area-inset-bottom); }
+    html body .i18n-floating { top: calc(14px + env(safe-area-inset-top)); z-index: 998; }
+    html body .i18n-floating.i18n-float-right { right: max(16px, env(safe-area-inset-right)); }
+    html[dir="rtl"] body .mobile-sidebar-btn { left: auto; right: max(16px, env(safe-area-inset-right)); }
+    html[dir="rtl"] body .i18n-floating.i18n-float-right { right: auto; left: max(16px, env(safe-area-inset-left)); }
+    html body .i18n-toggle { min-height: 44px; }
+    html body .i18n-option { min-height: 44px; }
+    html body .i18n-modal { max-height: calc(100dvh - 32px); max-width: 520px; overflow-x: hidden; overscroll-behavior: contain; }
+    html body .i18n-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    html body .i18n-pick { min-width: 0; min-height: 44px; overflow-wrap: anywhere; }
+    html body .i18n-dismiss { min-height: 44px; color: #b7b7c3; }
+    .hero, .compact-game-page .hero { min-height: auto; padding: 44px 24px 40px; }
+    .console-guide .guide-hero { padding-top: 32px; }
+    .console-guide .section[id] { scroll-margin-top: 0; }
+    .hero img { max-width: 100% !important; height: auto; }
+    .page-header { padding: 40px 24px 28px; }
+    .hero-title { font-size: clamp(1.85rem, 5.5vw, 3rem); text-wrap: balance; }
+    .hero-subtitle { font-size: 1rem; line-height: 1.7; }
+    .hero-buttons { margin-bottom: 24px; }
+    .hero-stats { gap: 20px; }
+    .hero-stats .stat h3 { font-size: 1.5rem; }
+    .section { padding-block: 44px; }
+    .section-header { margin-bottom: 28px; }
+    .page-title { font-size: clamp(1.7rem, 4.5vw, 2.5rem); line-height: 1.2; text-wrap: balance; }
+    .fade-in { opacity: 1; transform: none; }
+    .search-container, .help-search, .faq-search { width: 100%; min-width: 0; }
+    /* Keep focused controls readable and prevent Safari's automatic form zoom,
+       including controls introduced by independently generated page styles. */
+    input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea { font-size: 16px !important; max-width: 100%; min-width: 0; }
+    .search-input, .form-input, .form-control { min-height: 48px; }
+    select, input[type="file"] { min-height: 48px; }
+    textarea { min-height: 120px; resize: vertical; }
+    input, select, textarea { scroll-margin-block: 12px 28px; }
+    input[readonly], textarea[readonly], .code-block, .guide-code { -webkit-user-select: text; user-select: text; }
+    input[type="file"] { width: 100%; overflow: hidden; }
+    input[type="file"]::file-selector-button { min-height: 44px; margin-inline-end: 10px; padding: 8px 12px; border: 1px solid var(--border, #45454b); border-radius: 8px; background: var(--bg-tertiary, #1a1a1e); color: inherit; font: inherit; }
+    #console-download-center input[readonly], #console-download-center textarea[readonly] { font-size: 16px; }
+    .filter-buttons .filter-btn, .blog-filter-btn, .suggestion-tag, .filter-pill { min-height: 44px; padding: 10px 16px; }
+    .filter-buttons { gap: 8px; margin-bottom: 24px; }
+    .faq-question { min-height: 52px; gap: 14px; text-align: start; }
+    .faq-question h3, .faq-question h4 { flex: 1; min-width: 0; }
+    .faq-question i { flex-shrink: 0; }
+    .faq-item.active .faq-answer { max-height: none; }
+    .req-table { width: 100%; table-layout: fixed; }
+    .req-table :is(th,td) { padding: 10px; overflow-wrap: anywhere; }
+    .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+    .footer .social-links a, .copy-btn { min-width: 44px; min-height: 44px; }
+    .back-to-top { right: max(16px,env(safe-area-inset-right)); bottom: calc(16px + env(safe-area-inset-bottom)); width: 48px; height: 48px; }
+    .modal { padding-top: calc(64px + env(safe-area-inset-top)); padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right)); padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+    .modal-content { max-width: 100%; }
+    .modal-content, .modal-content img { max-height: calc(100dvh - 104px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
+    .modal-close { display: grid; place-items: center; width: 48px; height: 48px; top: calc(8px + env(safe-area-inset-top)); right: max(8px,env(safe-area-inset-right)); }
+    .site-ad, .site-ad-panel { min-width: 0; max-width: 100%; }
+    .site-ad-stage { max-width: 100%; overscroll-behavior-x: contain; }
+    body::before { inset: -10%; filter: blur(32px); animation: none; will-change: auto; }
+    body::after, #home .hero-bg, #home .hero-bg::before, #home .hero-bg::after { animation: none; }
+    .btn, .game-btn, .tool-link, .nav-link, .mobile-sidebar-btn, .sidebar-toggle, .filter-btn { touch-action: manipulation; }
+}
+
+/* Landscape phones can have a wide viewport and still need notch gutters. */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container { padding-inline: max(24px, env(safe-area-inset-left)) max(24px, env(safe-area-inset-right)); }
+    .hero, .compact-game-page .hero, .page-header { padding-inline: max(24px, env(safe-area-inset-left)) max(24px, env(safe-area-inset-right)); }
+}
+
+@media (max-width: 600px) {
+    .container { padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right)); }
+    .hero, .compact-game-page .hero { padding: 32px 16px; }
+    .hero-title, .compact-game-page .hero-title { font-size: clamp(1.75rem, 7vw, 2.2rem); }
+    .hero-buttons, .quick-links { flex-direction: row; align-items: stretch; }
+    .hero-buttons .btn, .quick-links .btn { flex: 1 1 140px; width: auto; min-width: 0; }
+    .hero-stats, .youtube-stats, .help-stats { flex-direction: row; gap: 16px 24px; }
+    .section-title, .compact-game-page .section-title { font-size: 1.4rem; line-height: 1.3; }
+    .section-subtitle { font-size: .95rem; }
+    .page-header { padding: 32px 16px 24px; }
+    #argInput { min-width: 0 !important; width: 100%; }
+    .main-content [style*="min-width: 260px"] { min-width: 0 !important; }
+    .games-grid, .cheats-grid, .console-grid, .tools-grid, .contact-grid, .info-cards, .social-grid, .videos-grid, .video-grid, .content-grid, .safety-grid, .warning-grid, .opportunity-grid, .discord-grid, .blog-grid,
+    .compact-game-page .games-grid, .compact-game-page .cheats-grid, .compact-game-page .tools-grid { grid-template-columns: minmax(0,1fr); }
+    .cheat-actions, .compact-game-page .cheat-actions { flex-direction: row; align-items: stretch; gap: 8px; }
+    .cheat-actions .btn, .compact-game-page .cheat-actions .btn { flex: 1 1 140px; width: auto; min-width: 0; min-height: 48px; font-size: 14px; }
+    .compact-game-page .cheat-info h3, .compact-game-page .game-title { font-size: 16px; }
+    .compact-game-page .game-description, .compact-game-page .cheat-info p, .compact-game-page .cheat-details p { font-size: 14px; line-height: 1.65; }
+    .compact-game-page .status-badge, .compact-game-page .feature-tag, .compact-game-page .features-grid .feature { font-size: 11px; }
+    .cheat-header, .cheat-details, .cheat-features, .cheat-actions { padding-inline: 16px; }
+    .game-info, .info-card, .contact-card, .content-card, .download-card, .profile-card { padding: 20px; }
+    .game-link { display: inline-flex; align-items: center; min-height: 44px; }
+    .footer-content { grid-template-columns: minmax(0,1fr); gap: 20px; }
+    .footer-bottom-content { flex-direction: column; }
+    .footer-brand p { max-width: 40ch; }
+    .error-container { padding: 24px 16px; }
+    .error-actions { flex-wrap: wrap; }
+    .error-actions .btn { flex: 1 1 140px; }
+}
+
+@media (max-width: 360px) {
+    .mobile-brand { gap: 6px; font-size: 12px; margin-inline-start: 66px; max-width: calc(100% - 160px); }
+    .mobile-brand img { width: 22px; height: 22px; }
+    .filter-buttons .filter-btn { padding-inline: 12px; }
+    html body .i18n-modal { padding: 16px; }
+    html body .i18n-pick { padding: 9px 7px; gap: 6px; }
+}
+
+@media (hover: none) {
+    .btn:hover, .game-btn:hover, .tool-link:hover, .cheat-card:hover, .game-card:hover { transform: none; }
+    .cheat-card:hover .cheat-image img, .game-card:hover .game-image img { transform: none; }
+}
+
+/* Keep content and the drawer reachable when a phone turns sideways. The
+   controls retain their touch size while decorative spacing becomes smaller. */
+@media (max-width: 1024px) and (max-height: 500px) and (orientation: landscape) {
+    :root { --mobile-header-height: 64px; }
+    .mobile-sidebar-btn, html body .i18n-floating { top: calc(10px + env(safe-area-inset-top)); }
+    .sidebar-header { min-height: 64px; padding-block: 8px; }
+    .sidebar-nav { padding-block: 6px; }
+    .nav-link { min-height: 44px; padding-block: 9px; }
+    .sidebar-social { padding-block: 8px; }
+    .sidebar-social h4 { margin-bottom: 6px; }
+    .hero, .compact-game-page .hero { padding-block: 24px; }
+    .hero-buttons { margin-bottom: 16px; }
+    .hero-image { margin-bottom: 14px; }
+    .hero-image img, .compact-game-page .hero-image img, .console-guide .guide-hero img { max-height: 128px; object-fit: contain; }
+    .hero-stats .stat h3 { font-size: 1.25rem; }
+    .hero .scroll-indicator { display: none; }
+    .section { padding-block: 32px; }
+    html body .i18n-menu { max-height: calc(100dvh - 84px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
+}

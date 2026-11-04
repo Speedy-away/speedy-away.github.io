@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02",
+  "scope": "One selected original-author ready BIN. Private archive intake is separate; original-only public links and no F: writes performed by the source review.",
+  "jobs": [
+    {
+      "id": "host-original-hippie68-ftp-1-08b-900",
+      "title": "hippie68 FTP Server 1.08b · PS4 9.00",
+      "project": "hippie68 FTP Server",
+      "category": [
+        "Tools"
+      ],
+      "url": "https://github.com/hippie68/ps4-ftp/releases/download/v1.08b/ftp_server_v1.08b.bin",
+      "version": "1.08b - firmware 9.00",
+      "sourceCommit": "c903943d93dd082b590ee747c114a8c2436aaf71",
+      "firmwareScope": [
+        "9.00"
+      ],
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "ftp_server_v1.08b.bin",
+      "importPath": "tmp/host-repository-review/utility-next/ftp_server_v1.08b.bin",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 37824,
+      "expectedSha256": "695082f37c5cfdce14a06fbd567fa8651017ee2e31f3e95ae7a769b4287cb0e9",
+      "maxBytes": 1048576,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    }
+  ]
+}

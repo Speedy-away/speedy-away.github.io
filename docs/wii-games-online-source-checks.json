@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-02T09:52:08.600Z",
+  "requestedWiimmfiLinks": [
+    "https://wiimmfi.de/patcher/dnspatch",
+    "https://wiimmfi.de/patcher/disc"
+  ],
+  "checks": [
+    {
+      "url": "https://wiimmfi.de/patcher/dnspatch",
+      "status": 403,
+      "note": "Automated access received a JavaScript/cookie challenge; official user-facing link retained. No challenge bypass attempted."
+    },
+    {
+      "url": "https://wiimmfi.de/patcher/disc",
+      "status": 403,
+      "note": "Automated access received a JavaScript/cookie challenge; official user-facing link retained. No challenge bypass attempted."
+    },
+    {
+      "url": "https://wiimmfi.de/stat?all=1",
+      "status": 403,
+      "note": "Automated access received a JavaScript/cookie challenge; official user-facing link retained. No challenge bypass attempted."
+    },
+    {
+      "url": "https://wiimmfi.de/error",
+      "status": 403,
+      "note": "Automated access received a JavaScript/cookie challenge; official user-facing link retained. No challenge bypass attempted."
+    },
+    {
+      "url": "https://newerteam.com/wii/help/installation.html",
+      "status": 404,
+      "replacement": "https://newerteam.com/wii/help/ihashomebrew.html"
+    },
+    {
+      "url": "https://wfc.wiilink.ca/online/ST7E01",
+      "status": 404,
+      "note": "Fortune Street quick-link target inaccessible; not added to page."
+    },
+    {
+      "url": "https://api.github.com/repos/Retro-Rewind-Team/rr-launcher/releases/latest",
+      "status": 404,
+      "note": "No latest release asset at this endpoint; source repo was not cloned. Ready full distribution selected from the author-maintained wiki instead."
+    }
+  ],
+  "dnsCorroboration": "https://wii.hacks.guide/nintendowfc.html",
+  "wiiLinkCurrentGui": "https://github.com/WiiLink24/WiiLink-Patcher-GUI/releases/tag/v1.5.3",
+  "preservation": "Source URLs, original packages, failed partials and earlier inventories are preserved."
+}

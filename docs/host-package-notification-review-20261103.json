@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-03",
+  "scope": "Exact reviewed native PKG installer, download completion and console notification contracts. Source text only; no console contact, install, payload execution or archive writes.",
+  "sources": {
+    "ps4Client": {
+      "version": "2.08",
+      "commit": "266d9b8fa7af1cd106688999f95960841c3e894d",
+      "httpServer": "https://github.com/cy33hc/ps4-ezremote-client/blob/266d9b8fa7af1cd106688999f95960841c3e894d/source/server/http_server.cpp",
+      "httpSHA256": "dd295327ed2cdfb87576682597e4138dbd1fc48eee4ac31115b6290a725be10c",
+      "installer": "https://github.com/cy33hc/ps4-ezremote-client/blob/266d9b8fa7af1cd106688999f95960841c3e894d/source/installer.cpp",
+      "installerSHA256": "eb086dcf47ae32f2b44f61f79771f8bc03cb15cf6b2dca26f3efe3c2c6307ba3"
+    },
+    "ps5Client": {
+      "version": "2.18",
+      "commit": "f3ac2abab304a807f20a8b97480dbd169e5b6be6",
+      "httpServer": "https://github.com/cy33hc/ps5-ezremote-client/blob/f3ac2abab304a807f20a8b97480dbd169e5b6be6/source/server/http_server.cpp",
+      "httpSHA256": "3df2af33fb9bb04d8900f26196cfa699416b97ee78689c68479131af0b7507e0",
+      "installer": "https://github.com/cy33hc/ps5-ezremote-client/blob/f3ac2abab304a807f20a8b97480dbd169e5b6be6/source/installer.cpp",
+      "installerSHA256": "de03a55f3aa3d0198d794960c5257b203bf261782048a6b96458780fd1fd7338"
+    },
+    "ps4BackgroundServer": {
+      "commit": "4d8b1075bcf3bb1d2d05fc52d73ed26446f6358a",
+      "httpServer": "https://github.com/cy33hc/ps4-ezremote-server/blob/4d8b1075bcf3bb1d2d05fc52d73ed26446f6358a/source/server/http_server.cpp",
+      "httpSHA256": "3a3825880eb402582df87cc821b1a38b446c3e4306cf39c53d6100ffed659d17",
+      "notificationImplementation": "https://github.com/cy33hc/ps4-ezremote-server/blob/4d8b1075bcf3bb1d2d05fc52d73ed26446f6358a/source/util.h"
+    },
+    "ps5BackgroundServer": {
+      "commit": "22cfffe76001a3bd5a6e136cee753c77ab93abde",
+      "httpServer": "https://github.com/cy33hc/ps5-ezremote-server/blob/22cfffe76001a3bd5a6e136cee753c77ab93abde/source/server/http_server.cpp",
+      "httpSHA256": "0f457bd642e26016e7c1f3ed8f2651037162c1e02cff6a9d51fba0164caa6d79",
+      "notificationImplementation": "https://github.com/cy33hc/ps5-ezremote-server/blob/22cfffe76001a3bd5a6e136cee753c77ab93abde/source/util.h"
+    },
+    "ps5PayloadManager": {
+      "commit": "3f881e8e569eba3054d1784a1962439b2eee92c2",
+      "httpServer": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/src/http_server.c",
+      "httpSHA256": "9e8d6a8bc8ac5cb15937b4201a63b731cd27ada9fde1e76ad6ebc2792f4932b5"
+    },
+    "ps4RemotePackageInstaller": {
+      "commit": "f12834101553d0f42c36107cff2b3d1708574937",
+      "readme": "https://github.com/flatz/ps4_remote_pkg_installer/blob/f12834101553d0f42c36107cff2b3d1708574937/README",
+      "server": "https://github.com/flatz/ps4_remote_pkg_installer/blob/f12834101553d0f42c36107cff2b3d1708574937/server.c",
+      "serverSHA256": "297457fe3b6df03f9eb864349626b12882825ac59381865882d6c4315749c806"
+    }
+  },
+  "localPackageInstall": {
+    "origins": {
+      "ps4": "http://CONSOLE-IP:8080",
+      "ps5": "http://CONSOLE-IP:9090"
+    },
+    "method": "POST",
+    "route": "/__local__/install",
+    "json": {
+      "items": [
+        "/data/whatwhatboy/app.pkg"
+      ]
+    },
+    "response": {
+      "result": {
+        "success": true,
+        "error": null
+      }
+    },
+    "ps4Semantics": "InstallLocalPkg validates PKG magic/title, starts a BGFT task and loops until reported transferred length reaches total or an error. The HTTP result is still the native service's report, not independent application verification.",
+    "ps4ReplacementBehavior": "BGFT registration errors 0x80990088 or 0x80990015 cause the native client to uninstall the existing title and retry registration. The helper must warn and require explicit reviewed-package consent; never trigger this automatically on open or after download.",
+    "ps5Semantics": "The local-file overload passes remove_after_install=false, calls Direct Package Installer and returns success after acceptance. It does not wait for final installation and does not remove the original PKG. Compatible DPI must already be running.",
+    "safeIntegration": "Install an authored helper at the matching native client origin. Opening it with a selected path makes no request. Explicitly verify the exact saved regular-file entry and expected size with /__local__/list, refuse a matching .tmp, require consent, then recheck metadata and send one exact items entry. Preserve a durable request guard even after an accepted result until the user reviews the console outcome.",
+    "limits": [
+      "A metadata listing cannot verify a file's full SHA-256, signature, content ID, firmware compatibility or free space.",
+      "Native file metadata checks are not atomic locks against another process changing contents.",
+      "PS4 installation may block its request for a long time. A timeout does not prove the native operation stopped.",
+      "PS5 Direct Package Installer has its own native prerequisites; do not send arbitrary TCP probes or claim ezRemote starts it automatically."
+    ],
+    "savedPathContract": {
+      "allowed": [
+        "/data/.../*.pkg",
+        "/mnt/usb[0-9]/.../*.pkg"
+      ],
+      "rejected": [
+        "/mnt/extN/...",
+        "/user/data/... alias",
+        "arbitrary roots",
+        "traversal or encoded path syntax"
+      ],
+      "evidence": "PS4 local-file overload reads the given path and maps /data to /user/data for BGFT. The PS5 overload explicitly permits /data, /user/data and /mnt/usb prefixes, rejecting other roots. The helper uses a narrower data-or-single-digit-USB contract for both platforms.",
+      "verification": "Exact parent listing and regular-file name/size check, no matching .tmp. USB index is a native mount name, never a physical-port claim. Existing metadata does not prove mounted/writable state, free space, or hash integrity."
+    }
+  },
+  "installFromURL": {
+    "method": "POST",
+    "route": "/__local__/install_url",
+    "json": {
+      "url": "https://whatwhatboy.com/downloads/example.pkg",
+      "use_alldebrid": false,
+      "use_realdebrid": false,
+      "use_disk_cache": false,
+      "enable_rpi": true
+    },
+    "notes": "Both pinned clients parse these fields. PS5 explicitly checks Direct Package Installer before continuing. This route is a separate native installation workflow, not a file-save queue. It is intentionally not used by the authored local-PKG helper. No debrid credentials or arbitrary URL proxy are added."
+  },
+  "completionAndOSNotification": {
+    "queueOrigin": "http://CONSOLE-IP:6701",
+    "submit": {
+      "method": "POST",
+      "route": "/download_url"
+    },
+    "status": {
+      "method": "GET",
+      "route": "/get_download_state",
+      "shape": [
+        {
+          "path": "/data/whatwhatboy/app.pkg",
+          "bytes_transfered": 4096,
+          "file_size": 4096,
+          "state": 4,
+          "timestamp": 0
+        }
+      ]
+    },
+    "automaticNativePS4": "The background worker calls Util::Notify with the destination path after its remote Get operation returns success and after attempting the temporary-to-final rename. Util::Notify uses sceKernelSendNotificationRequest.",
+    "automaticNativePS5": "The background worker calls Util::RichNotify with the item id and destination path at the same stage. RichNotify uses sceNotificationSend. These are actual native OS calls rather than browser toasts.",
+    "importantLimit": "Both workers ignore the return of FS::Rename before emitting completion and marking STATE_SUCCESS. State4 and the existing OS toast therefore mean receiver-reported completion, not verified final-path existence or file hash.",
+    "authoredUIToastRule": "Do not toast completed from the POST acknowledgement. Wait for a matching path and completion record, then inspect actual destination existence/size and partial-file state where supported. Say receiver reports complete if that is all the evidence available. Keep failed and ambiguous states distinct and never auto-retry.",
+    "genericNotifyEndpoint": "No generic HTTP notify/notification route was found in the reviewed ezRemote Client/Server or PS5 Payload Manager HTTP dispatchers. Do not invent /notify or a cross-origin bridge to it. Native notifications already belong to the running receiver.",
+    "brandingLimit": "The receiver owns native notification wording and icon. Changing it would require a separately reviewed native server build; a web page cannot truthfully claim to customize the console OS notification by showing browser UI."
+  },
+  "ps4RemotePackageInstaller": {
+    "origin": "http://CONSOLE-IP:12800",
+    "install": {
+      "method": "POST",
+      "route": "/api/install",
+      "json": {
+        "type": "direct",
+        "packages": [
+          "http://LAN-OR-PUBLIC-HOST/app.pkg"
+        ]
+      }
+    },
+    "installResult": {
+      "status": "success",
+      "task_id": 123,
+      "title": "Native package title"
+    },
+    "progress": {
+      "method": "POST",
+      "route": "/api/get_task_progress",
+      "json": {
+        "task_id": 123
+      }
+    },
+    "requirements": "RPI must be installed and foregrounded while it receives commands. Package URLs must be reachable from the PS4; a PC loopback URL is not a console-reachable server. Compatible HEN/ShellCore/fPKG prerequisites remain required.",
+    "parserCaveat": "The pinned progress handler prints some numeric fields as unquoted 0x hexadecimal literals, which are not standard JSON. Do not silently JSON.parse this output or evaluate it as code. A future adapter would need a bounded, field-specific non-executing parser preserving safe integer limits.",
+    "scopeDecision": "The new helper uses the already-reviewed local ezRemote installer route rather than introducing RPI, new LAN exposure or a broad package-serving service. No uninstall, task-stop or task-remove operation is exposed."
+  },
+  "ps5PayloadManager": {
+    "purpose": "Its repository install/upload APIs manage payloads. The reviewed dispatcher does not establish a generic PKG installation API. AUTO_INSTALL_APP relates to the manager's own app workflow, not permission to send any PKG to it.",
+    "decision": "Keep payload management on8084 separate from native package installation through ezRemote/DPI."
+  },
+  "authoredImplementation": {
+    "javascript": "assets/host-package-installer.js",
+    "stylesheet": "assets/host-package-installer.css",
+    "preparer": "scripts/prepare-host-package-installer.cjs",
+    "metadata": "docs/host-package-installer-build.json",
+    "tests": "scripts/tests/host-package-installer.test.cjs",
+    "archiveStatus": "Prepared only; parent agent imports active and retained archive jobs before enabling final public links.",
+    "languages": {
+      "sourceKeys": 64,
+      "newTranslatedRows": 60,
+      "languageCount": 20,
+      "method": "Embed only exported UI keys and existing authored local-only adapter in each immutable helper; no remote scripts or expanded API origin.",
+      "status": "Final inline dictionaries generated and validated in both immutable helpers."
+    },
+    "preparedArtifacts": [
+      {
+        "platform": "ps4",
+        "local": "/downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html",
+        "bytes": 241332,
+        "sha256": "faa27756cd4563207626a8db78f9e4ef858b95a76163b2076b10b00a6fd3a4b0",
+        "installPath": "/data/whatsite-package-installer-ps4.html",
+        "nativeURL": "http://{consoleIP}:8080/data/whatsite-package-installer-ps4.html"
+      },
+      {
+        "platform": "ps5",
+        "local": "/downloads/helpers/host-package-installer/ps5/48aa27c4c9899826/whatsite-package-installer-ps5.html",
+        "bytes": 241332,
+        "sha256": "48aa27c4c9899826f8dc4cb7ecdbf24b360fe7ee7fc884a7c74a8cd8030f5e98",
+        "installPath": "/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html",
+        "nativeURL": "http://{consoleIP}:9090/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html"
+      }
+    ],
+    "retainedArtifactCount": 4,
+    "validation": {
+      "testCommand": "node --test scripts/tests/host-self-hosted.test.cjs scripts/tests/host-package-installer.test.cjs",
+      "passed": 17,
+      "failed": 0,
+      "consoleRequests": 0,
+      "downloadedPayloadExecution": false,
+      "archiveWrites": false
+    }
+  }
+}

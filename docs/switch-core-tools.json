@@ -1,0 +1,430 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T09:12:38.704Z",
+  "platform": "Nintendo Switch",
+  "tools": [
+    {
+      "id": "switch-core-tools-atmosphere",
+      "slug": "atmosphere",
+      "title": "Atmosphère",
+      "version": "1.12.1",
+      "sourceUrl": "https://github.com/Atmosphere-NX/Atmosphere/releases/tag/1.12.1",
+      "files": [
+        {
+          "name": "atmosphere-1.12.1-master-6b0c077b4+hbl-2.4.5+hbmenu-3.6.1.zip",
+          "version": "1.12.1",
+          "bytes": 4772493,
+          "sha256": "f42161b3bce11442ea487eb84811013cf0e5ba571a7964323e206990b341a297",
+          "sourceUrl": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.12.1/atmosphere-1.12.1-master-6b0c077b4%2Bhbl-2.4.5%2Bhbmenu-3.6.1.zip",
+          "archiveRole": [
+            "Builds"
+          ],
+          "local": "/downloads/nintendo-switch/core-tools/atmosphere/1.12.1/atmosphere-1.12.1-master-6b0c077b4+hbl-2.4.5+hbmenu-3.6.1.zip",
+          "itemId": "switch-core-tools-atmosphere",
+          "platform": "Nintendo Switch",
+          "category": [
+            "Tools",
+            "Custom Firmware"
+          ],
+          "archived": true,
+          "publisherSha256": "f42161b3bce11442ea487eb84811013cf0e5ba571a7964323e206990b341a297",
+          "memberCount": 22,
+          "layout": [
+            {
+              "path": "atmosphere/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/config/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/config_templates/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/config_templates/exosphere.ini",
+              "bytes": 2680,
+              "sha256": "bcea1f57206eea58a389c573e638b29a10e9dc817fe588931afcb72051b59d15",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/config_templates/override_config.ini",
+              "bytes": 614,
+              "sha256": "5e8d44790c0d2c4866e75e95626b81d311028eb427ae4966992c869e1cbadbeb",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/config_templates/stratosphere.ini",
+              "bytes": 91,
+              "sha256": "dbbca30bc20df0dcb7951c84e8360f47ce01fc92b6b40c62c0d2b044abb9ae26",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/config_templates/system_settings.ini",
+              "bytes": 3840,
+              "sha256": "8816cd782c995a8e606cb051ca9507284aadbd04d4ff5a14d42ca4051c77f7b6",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/fatal_errors/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/flags/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/hbl.nsp",
+              "bytes": 40946,
+              "sha256": "853df8526557b82c6b2018a8a102d22e8306687415e49653530dfd9a1d603b32",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/hbl_html/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/hbl_html/accessible-urls/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/hbl_html/accessible-urls/accessible-urls.txt",
+              "bytes": 7,
+              "sha256": "c0ef504fc74165be6bc13b8924e02eca8670234d4431466c1bd089c2f52d6bdc",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/kip_patches/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "atmosphere/package3",
+              "bytes": 8388608,
+              "sha256": "94c2e6f7e438571c51964b2d730c6cc7ab5557e19b2fd0315878c004dd8d56a6",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/reboot_payload.bin",
+              "bytes": 112064,
+              "sha256": "6559017e4df5ac418ce09fb347c32d071649f8b6d3d4bac9a874505fc8bed1bd",
+              "directory": false
+            },
+            {
+              "path": "atmosphere/stratosphere.romfs",
+              "bytes": 1484420,
+              "sha256": "d8923ea0614a5f192068cd1e9a6322f2058303bb3e9c875e1d47c46b888f4371",
+              "directory": false
+            },
+            {
+              "path": "hbmenu.nro",
+              "bytes": 2455539,
+              "sha256": "6cf6d130515723ebe0041c2479420caf9726895087439ff7b2e528c2ed39c100",
+              "directory": false
+            },
+            {
+              "path": "switch/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "switch/daybreak.nro",
+              "bytes": 454275,
+              "sha256": "cf8a958baffbd9a306d29b2cba62133c25bd5ab7fcedf841523c7590f90593ba",
+              "directory": false
+            },
+            {
+              "path": "switch/haze.nro",
+              "bytes": 344799,
+              "sha256": "475c8daa9ca93de5ebd14c996e77f9f467d96ff0b7416bf45bd9d7eb8a5a9d12",
+              "directory": false
+            },
+            {
+              "path": "switch/reboot_to_payload.nro",
+              "bytes": 225189,
+              "sha256": "7472ef269efa7bf9dcd19fd74260f5a0fb5654cbaef26985cdd078c5aceca113",
+              "directory": false
+            }
+          ]
+        },
+        {
+          "name": "fusee.bin",
+          "version": "1.12.1",
+          "bytes": 112064,
+          "sha256": "6559017e4df5ac418ce09fb347c32d071649f8b6d3d4bac9a874505fc8bed1bd",
+          "sourceUrl": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.12.1/fusee.bin",
+          "archiveRole": [
+            "Builds"
+          ],
+          "local": "/downloads/nintendo-switch/core-tools/atmosphere/1.12.1/fusee.bin",
+          "itemId": "switch-core-tools-atmosphere",
+          "platform": "Nintendo Switch",
+          "category": [
+            "Tools",
+            "Custom Firmware"
+          ],
+          "archived": true,
+          "publisherSha256": "6559017e4df5ac418ce09fb347c32d071649f8b6d3d4bac9a874505fc8bed1bd"
+        }
+      ]
+    },
+    {
+      "id": "switch-core-tools-hekate",
+      "slug": "hekate",
+      "title": "Hekate + Nyx",
+      "version": "6.5.4 + Nyx 1.9.4",
+      "sourceUrl": "https://github.com/CTCaer/hekate/releases/tag/v6.5.4",
+      "files": [
+        {
+          "name": "hekate_ctcaer_6.5.4.bin",
+          "version": "6.5.4 + Nyx 1.9.4",
+          "bytes": 110144,
+          "sha256": "95f6e933e32e028f3ae90f0b0857ff47800e834bdace38a0ab019d8ed35a8c24",
+          "sourceUrl": "https://github.com/CTCaer/hekate/releases/download/v6.5.4/hekate_ctcaer_6.5.4.bin",
+          "archiveRole": [
+            "Builds"
+          ],
+          "local": "/downloads/nintendo-switch/core-tools/hekate/6.5.4_+_Nyx_1.9.4/hekate_ctcaer_6.5.4.bin",
+          "itemId": "switch-core-tools-hekate",
+          "platform": "Nintendo Switch",
+          "category": [
+            "Tools",
+            "Bootloaders"
+          ],
+          "archived": true,
+          "publisherSha256": "95f6e933e32e028f3ae90f0b0857ff47800e834bdace38a0ab019d8ed35a8c24"
+        },
+        {
+          "name": "hekate_ctcaer_6.5.4_Nyx_1.9.4.zip",
+          "version": "6.5.4 + Nyx 1.9.4",
+          "bytes": 895887,
+          "sha256": "a5ee4faa956f1ffe49fdd31d795be3fd556c8dffd9cbed69cec7cff92b8b43f6",
+          "sourceUrl": "https://github.com/CTCaer/hekate/releases/download/v6.5.4/hekate_ctcaer_6.5.4_Nyx_1.9.4.zip",
+          "archiveRole": [
+            "Builds"
+          ],
+          "local": "/downloads/nintendo-switch/core-tools/hekate/6.5.4_+_Nyx_1.9.4/hekate_ctcaer_6.5.4_Nyx_1.9.4.zip",
+          "itemId": "switch-core-tools-hekate",
+          "platform": "Nintendo Switch",
+          "category": [
+            "Tools",
+            "Bootloaders"
+          ],
+          "archived": true,
+          "publisherSha256": "a5ee4faa956f1ffe49fdd31d795be3fd556c8dffd9cbed69cec7cff92b8b43f6",
+          "memberCount": 22,
+          "layout": [
+            {
+              "path": "bootloader/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "bootloader/ini/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "bootloader/payloads/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "bootloader/res/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "bootloader/res/icon_payload.bmp",
+              "bytes": 147512,
+              "sha256": "69ab9e410962878ee419777d29415b967e7a67ca3e984e384d0ef212baee9c0d",
+              "directory": false
+            },
+            {
+              "path": "bootloader/res/icon_switch.bmp",
+              "bytes": 147512,
+              "sha256": "0c0f95889f874e6de0e04d55adfcbca127b251e31d358f27244869b5e80fa073",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "bootloader/sys/emummc.kipm",
+              "bytes": 352384,
+              "sha256": "fe4e96486e2bb4518358b0260da89071a511714485280ed4d0e54a524ecd829d",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/l4t/",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "directory": true
+            },
+            {
+              "path": "bootloader/sys/l4t/bpmpfw.bin",
+              "bytes": 101780,
+              "sha256": "943463950880ae7892a1eb8d3a280b3f86083bca0164c663bf4126210be73ecb",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/l4t/bpmpfw_b01.bin",
+              "bytes": 198692,
+              "sha256": "19e907f80a8760da39d6a97fae825955daacccc6c1a382e22df52169e39ac09b",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/l4t/mtc_tbl_b01.bin",
+              "bytes": 141904,
+              "sha256": "12e49e9770b61539d072c6145700659977917076325540aeba9022ff51672822",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/l4t/sc7entry.bin",
+              "bytes": 1764,
+              "sha256": "676aedce279d0912bb30c1e06c28b6cbfbaee24f7b21cb8e1f7da422b34b28cf",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/l4t/sc7exit.bin",
+              "bytes": 2420,
+              "sha256": "5e9ce4dd187145c096043509aa8e5a576668bdf8c6781d7bc70bece2aaca79a3",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/l4t/sc7exit_b01.bin",
+              "bytes": 3624,
+              "sha256": "2d8629e4e8fe8e7973b1cf5f0d0fa2e3614ede96a3e939f5508e5d807d8c7786",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/libsys_lp0.bso",
+              "bytes": 42956,
+              "sha256": "38b73773d47014841823c72cade509e1986cf1c0809e39c64a20cc2186c4d4f2",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/libsys_minerva.bso",
+              "bytes": 146680,
+              "sha256": "73d6c05475e530a3e098065024a5a3bbde5a2371123081904c8ac0cb7bae395b",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/nyx.bin",
+              "bytes": 477509,
+              "sha256": "441d4ca58099f277de76c90c172f2804e9a809ec1db44ca6a011b0a92b93a4f4",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/res.pak",
+              "bytes": 405504,
+              "sha256": "3570aa7a28b6c7cc3bd1003f3e0aa6e3ef58064da9708717b18ab1e178f959bc",
+              "directory": false
+            },
+            {
+              "path": "bootloader/sys/thk.bin",
+              "bytes": 7936,
+              "sha256": "4c04434899d04a364fe9cb98aa98c0a3f0bb5c4ba42deab15e0485e9872519e2",
+              "directory": false
+            },
+            {
+              "path": "bootloader/update.bin",
+              "bytes": 110144,
+              "sha256": "95f6e933e32e028f3ae90f0b0857ff47800e834bdace38a0ab019d8ed35a8c24",
+              "directory": false
+            },
+            {
+              "path": "hekate_ctcaer_6.5.4.bin",
+              "bytes": 110144,
+              "sha256": "95f6e933e32e028f3ae90f0b0857ff47800e834bdace38a0ab019d8ed35a8c24",
+              "directory": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "switch-core-tools-retroarch",
+      "slug": "retroarch",
+      "title": "RetroArch",
+      "version": "1.22.2",
+      "sourceUrl": "https://docs.libretro.com/guides/install-libnx/",
+      "files": [
+        {
+          "name": "RetroArch.7z",
+          "version": "1.22.2",
+          "bytes": 308863490,
+          "sha256": "bce9764137b6bce974704c4edbe55f730ec5e101dcd0cfb9058f01c160e51ddb",
+          "sourceUrl": "https://buildbot.libretro.com/stable/1.22.2/nintendo/switch/libnx/RetroArch.7z",
+          "archiveRole": [
+            "Builds"
+          ],
+          "local": "/downloads/nintendo-switch/core-tools/retroarch/1.22.2/RetroArch.7z",
+          "itemId": "switch-core-tools-retroarch",
+          "platform": "Nintendo Switch",
+          "category": [
+            "Emulators"
+          ],
+          "archived": true,
+          "memberCount": 7076,
+          "frontend": {
+            "path": "switch\\retroarch_switch.nro",
+            "bytes": 17106342,
+            "sha256": "a295010f1f282a63507fc48f97875dd0238a05d426b0393c63d57ffcb0ca53d2",
+            "format": "NRO0"
+          },
+          "coreCount": 134,
+          "integrity": "7-Zip test passed"
+        }
+      ],
+      "image": {
+        "local": "/assets/images/switch-core-tools/retroarch-icon.jpg",
+        "sourceUrl": "https://buildbot.libretro.com/stable/1.22.2/nintendo/switch/libnx/RetroArch.7z",
+        "member": "switch\\retroarch_switch.nro embedded ASET icon",
+        "credit": "Libretro / RetroArch project",
+        "bytes": 17774,
+        "sha256": "1fbcfb8f4e1d1f64217f202cce15b46cc87800fb97eb210c7873870b7b3e9ef0"
+      }
+    }
+  ],
+  "images": [
+    {
+      "local": "/assets/images/switch-core-tools/atmosphere-banner.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Atmosphere-NX/Atmosphere/master/img/banner.png",
+      "credit": "Atmosphère project; graphical resources credited to jaames",
+      "bytes": 14320,
+      "sha256": "f3ed449fe26c7e239ac4486147908a438e51110b6440202eb8fe2a5d39a71ca0"
+    },
+    {
+      "local": "/assets/images/switch-core-tools/hekate-workflow.svg",
+      "credit": "Original workflow illustration created for this site; not a console screenshot",
+      "sourceUrl": "https://github.com/CTCaer/hekate",
+      "bytes": 1444,
+      "sha256": "4e9dbb22a519aa768ba01b819e1c4e55909f492ca1e6a066cd033f87c3a9feda"
+    }
+  ]
+}

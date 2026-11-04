@@ -1,0 +1,683 @@
+{
+  "verifiedAt": "2026-11-02T07:03:02.548Z",
+  "source": "https://hb-app.store/",
+  "catalogueSource": "https://wiiu.cdn.fortheusers.org/repo.json",
+  "compatibilitySources": [
+    "https://wiiu.hacks.guide/",
+    "https://wiiu.hacks.guide/aroma/getting-started",
+    "https://github.com/wiiu-env/Aroma",
+    "https://github.com/wiiu-env/ftpiiu_plugin",
+    "https://docs.libretro.com/development/retroarch/compilation/wiiu/"
+  ],
+  "apps": [
+    {
+      "id": "AromaUpdater",
+      "project": "https://github.com/wiiu-env/AromaUpdater",
+      "store": {
+        "name": "AromaUpdater",
+        "title": "Aroma Updater",
+        "version": "0.2.3",
+        "updated": "18/12/2024",
+        "binary": "/wiiu/apps/AromaUpdater/AromaUpdater.rpx",
+        "category": "tool",
+        "md5": "b420ceabeb55375f2b62fd000ef8d128",
+        "filesizeKiB": 2978,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/wiiu-env/AromaUpdater/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/wiiu-env/AromaUpdater/releases/tag/v0.2.3",
+        "tag": "v0.2.3",
+        "publishedAt": "2024-05-06T16:20:31Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "AromaUpdater_v0_2_3.zip",
+            "url": "https://github.com/wiiu-env/AromaUpdater/releases/download/v0.2.3/AromaUpdater_v0_2_3.zip",
+            "bytes": 1587068,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "AromaUpdater_v0_2_3_Tiramisu.zip",
+            "url": "https://github.com/wiiu-env/AromaUpdater/releases/download/v0.2.3/AromaUpdater_v0_2_3_Tiramisu.zip",
+            "bytes": 1463058,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "installationSummary": "An existing Aroma setup and internet connection. This updates Aroma packages; it does not perform initial CFW installation. Keep the supplied Wii U folders, then launch AromaUpdater from the Wii U Menu. Its official Aroma release uses AromaUpdater.wuhb."
+    },
+    {
+      "id": "Connect4",
+      "project": "https://github.com/MartinButlerAAA/Connect4U",
+      "store": {
+        "name": "Connect4",
+        "title": "Connect4",
+        "version": "1.2.2",
+        "updated": "28/07/2025",
+        "binary": "/wiiu/apps/Connect4/Connect4U.wuhb",
+        "category": "game",
+        "md5": "602ec1644576f13a1dacc9f05b565857",
+        "filesizeKiB": 897,
+        "license": "MIT"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/MartinButlerAAA/Connect4U/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/MartinButlerAAA/Connect4U/releases/tag/v1.2.2",
+        "tag": "v1.2.2",
+        "publishedAt": "2025-07-22T09:35:07Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "Connect4U.wuhb",
+            "url": "https://github.com/MartinButlerAAA/Connect4U/releases/download/v1.2.2/Connect4U.wuhb",
+            "bytes": 924584,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "installationSummary": "A homebrew-capable Wii U. The official Wii U release supplies a self-contained WUHB for Aroma. Place Connect4U.wuhb under /wiiu/apps/ or preserve the store app folder, and launch it from the Wii U Menu."
+    },
+    {
+      "id": "Dynamismal",
+      "project": "https://codeberg.org/BigStackOfHay/dynamismal",
+      "store": {
+        "name": "Dynamismal",
+        "title": "Dynamismal",
+        "version": "1.2.2",
+        "updated": "19/06/2026",
+        "binary": "none",
+        "category": "game",
+        "md5": "0c07231d4f891e826b026217968b2ad2",
+        "sha256": "407c82a4a84b5fe8db835424fbeba3deaed8815f03020f9c45cf89cf92105905",
+        "filesizeKiB": 16611,
+        "license": "AGPLv3"
+      },
+      "readme": {},
+      "installationSummary": "Use the complete Wii U package from the store. Keep all supplied data files and use the executable variant matching your environment. Extract the complete store ZIP to the SD root. Preserve the app folder and launch its Wii U build; no commercial base game is required."
+    },
+    {
+      "id": "Fake-08",
+      "project": "https://github.com/jtothebell/fake-08",
+      "store": {
+        "name": "Fake-08",
+        "title": "Fake-08",
+        "version": "0.0.2.20",
+        "updated": "10/02/2025",
+        "binary": "/wiiu/apps/Fake-08/FAKE-08.rpx",
+        "category": "legacy",
+        "md5": "6ebae93e85ca296f6f957fee79e69d3b",
+        "filesizeKiB": 1274,
+        "license": "MIT"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/jtothebell/fake-08/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 404,
+        "assets": []
+      },
+      "installationSummary": "The store marks this RPX build as legacy; use a compatible Tiramisu/Homebrew Launcher setup. Cartridge compatibility varies, and no commercial PICO-8 package is included. Extract the bundle to the SD root. Put legal .p8 or .p8.png cartridges in /p8carts/; multi-cart games need all their carts in that folder."
+    },
+    {
+      "id": "Inkay",
+      "project": "https://github.com/PretendoNetwork/Inkay",
+      "store": {
+        "name": "Inkay",
+        "title": "Inkay",
+        "version": "3.0.0",
+        "updated": "21/02/2025",
+        "binary": "none",
+        "category": "aroma",
+        "md5": "c88feaa77229e23e25a643ce1ca07de0",
+        "filesizeKiB": 209,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/PretendoNetwork/Inkay/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/PretendoNetwork/Inkay/releases/tag/v3.0.0",
+        "tag": "v3.0.0",
+        "publishedAt": "2025-02-15T21:25:28Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "Inkay-pretendo.zip",
+            "url": "https://github.com/PretendoNetwork/Inkay/releases/download/v3.0.0/Inkay-pretendo.zip",
+            "bytes": 212845,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "installationSummary": "Release Aroma configured for autoboot/coldboot, plus the Pretendo setup and a separate Pretendo account. Support depends on the game/service. Extract the complete plugin bundle to the SD root, reboot into Aroma and follow Pretendo’s Wii U account and service setup."
+    },
+    {
+      "id": "NooDS",
+      "project": "https://github.com/Hydr8gon/NooDS",
+      "store": {
+        "name": "NooDS",
+        "title": "NooDS",
+        "version": "release",
+        "updated": "18/12/2024",
+        "binary": "/wiiu/apps/NooDS/noods.wuhb",
+        "category": "emu",
+        "md5": "3e07023276eee22d1f8b26f8ea0e0a64",
+        "filesizeKiB": 928,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/Hydr8gon/NooDS/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/Hydr8gon/NooDS/releases/tag/release",
+        "tag": "release",
+        "publishedAt": "2026-08-09T19:30:22Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "noods-android.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-android.zip",
+            "bytes": 3959212,
+            "contentType": "raw"
+          },
+          {
+            "name": "noods-ios.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-ios.zip",
+            "bytes": 1722827,
+            "contentType": "raw"
+          },
+          {
+            "name": "noods-linux.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-linux.zip",
+            "bytes": 7982944,
+            "contentType": "raw"
+          },
+          {
+            "name": "noods-mac.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-mac.zip",
+            "bytes": 2912200,
+            "contentType": "raw"
+          },
+          {
+            "name": "noods-switch.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-switch.zip",
+            "bytes": 2714438,
+            "contentType": "raw"
+          },
+          {
+            "name": "noods-vita.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-vita.zip",
+            "bytes": 479924,
+            "contentType": "raw"
+          },
+          {
+            "name": "noods-wiiu.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-wiiu.zip",
+            "bytes": 1104071,
+            "contentType": "raw"
+          },
+          {
+            "name": "noods-windows.zip",
+            "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-windows.zip",
+            "bytes": 3749165,
+            "contentType": "raw"
+          }
+        ]
+      },
+      "installationSummary": "The store provides a Wii U WUHB for Aroma. Use your own game dumps. DS BIOS and original-DS firmware are needed to boot the DS system menu; a GBA BIOS is optional. Keep the package layout under /wiiu/apps/NooDS/ and launch the WUHB from the Wii U Menu. Configure your own ROM and optional BIOS/firmware paths in the app."
+    },
+    {
+      "id": "RadiiU",
+      "project": "https://github.com/dkosmari/RadiiU",
+      "store": {
+        "name": "RadiiU",
+        "title": "RadiiU",
+        "version": "0.4.0",
+        "updated": "27/10/2026",
+        "binary": "none",
+        "category": "_misc",
+        "md5": "48a709a87b43a0687b182f90290bd423",
+        "sha256": "3850098c967442427c4ed7026c49795e445f87504d5c90d28dbc5b030165034f",
+        "filesizeKiB": 6787,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/dkosmari/RadiiU/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/dkosmari/RadiiU/releases/tag/v0.4.0",
+        "tag": "v0.4.0",
+        "publishedAt": "2026-10-27T02:25:45Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "radiiu-0.4.0.tar.gz",
+            "url": "https://github.com/dkosmari/RadiiU/releases/download/v0.4.0/radiiu-0.4.0.tar.gz",
+            "bytes": 7219886,
+            "contentType": "application/gzip"
+          },
+          {
+            "name": "radiiu.wuhb",
+            "url": "https://github.com/dkosmari/RadiiU/releases/download/v0.4.0/radiiu.wuhb",
+            "bytes": 7330044,
+            "contentType": "application/octet-stream"
+          }
+        ]
+      },
+      "installationSummary": "Aroma and a network connection. Availability and formats depend on the radio station. No audio collection is bundled. Keep radiiu.wuhb under /wiiu/apps/ and launch it from the Wii U Menu. The About tab shows the app’s SD save/configuration path."
+    },
+    {
+      "id": "SDCafiine_WUPS",
+      "project": "https://github.com/wiiu-env/sdcafiine_plugin",
+      "store": {
+        "name": "SDCafiine_WUPS",
+        "title": "SDCafiine - WUPS",
+        "version": "0.1.5",
+        "updated": "18/12/2024",
+        "binary": "none",
+        "category": "aroma",
+        "md5": "14434f7783f2938cd98092e917e8b271",
+        "filesizeKiB": 105,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/wiiu-env/sdcafiine_plugin/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/wiiu-env/sdcafiine_plugin/releases/tag/v0.1.6",
+        "tag": "v0.1.6",
+        "publishedAt": "2026-04-19T13:59:25Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "sdcafiine_v0_1_6.zip",
+            "url": "https://github.com/wiiu-env/sdcafiine_plugin/releases/download/v0.1.6/sdcafiine_v0_1_6.zip",
+            "bytes": 111891,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "installationSummary": "Aroma with WiiUPluginLoaderBackend and ContentRedirectionModule. Mods must match the exact Wii U game title ID and game version. Extract the plugin bundle to the SD root. The plugin belongs in /wiiu/environments/aroma/plugins/. Store mods under /wiiu/sdcafiine/<TITLEID>/<MODPACK>/content/ or aoc/ as documented."
+    },
+    {
+      "id": "SaveMiiProcessMod",
+      "project": "https://github.com/w3irDv/savemii",
+      "store": {
+        "name": "SaveMiiProcessMod",
+        "title": "SaveMii /ProcessMod",
+        "version": "1.8.1i",
+        "updated": "21/06/2026",
+        "binary": "/wiiu/apps/SaveMiiProcessMod/savemii.rpx",
+        "category": "tool",
+        "md5": "f37794e30816f96e51e88625f25d8fac",
+        "sha256": "00ad64b99c4f6c7f46e381ec6123a48a12ad08f8b33c251ec606ea6ece508f64",
+        "filesizeKiB": 3451,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/w3irDv/savemii/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/w3irDv/savemii/releases/tag/1.9.0",
+        "tag": "1.9.0",
+        "publishedAt": "2026-11-01T14:20:54Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "SaveMiiProcessMod-Aroma.zip",
+            "url": "https://github.com/w3irDv/savemii/releases/download/1.9.0/SaveMiiProcessMod-Aroma.zip",
+            "bytes": 1990025,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SaveMiiProcessMod-HBL.zip",
+            "url": "https://github.com/w3irDv/savemii/releases/download/1.9.0/SaveMiiProcessMod-HBL.zip",
+            "bytes": 1706224,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "installationSummary": "A supported Wii U homebrew environment. Use the Aroma variant for Aroma and the HBL variant for a legacy launcher. Keep backups before restores. Extract the complete package to the SD root. Launch the variant for your environment; make a backup before using restore, delete or profile-transfer functions."
+    },
+    {
+      "id": "SnakeBattleRoyale",
+      "project": "https://codeberg.org/BigStackOfHay/snake-battle-royale",
+      "store": {
+        "name": "SnakeBattleRoyale",
+        "title": "Snake Battle Royale",
+        "version": "1.1.0",
+        "updated": "31/07/2026",
+        "binary": "none",
+        "category": "game",
+        "md5": "5c03bdcdaf477d3a0402450c0f10b955",
+        "sha256": "7b856f2955c3be8986fefd6b427924438c95d82d71e0709eee5c7403adbfb238",
+        "filesizeKiB": 10530,
+        "license": "AGPLv3"
+      },
+      "readme": {},
+      "installationSummary": "The complete Wii U package and two to four local players/controllers as documented by the project. Extract the complete bundle to the SD root. Keep its game resources together and start the Wii U build for your environment."
+    },
+    {
+      "id": "SuDokuL",
+      "project": "https://github.com/Mode8fx/SuDokuL",
+      "store": {
+        "name": "SuDokuL",
+        "title": "SuDokuL",
+        "version": "1.5",
+        "updated": "10/05/2026",
+        "binary": "/wiiu/apps/SuDokuL/SuDokuL.rpx",
+        "category": "game",
+        "md5": "382a077cb7f779b24a6a0d8c22263a5a",
+        "sha256": "758a8c62ca3a8787ec6d3d3e310b2a4ae03349651d8a87cf743b93da534daf5d",
+        "filesizeKiB": 7228,
+        "license": "MIT"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/Mode8fx/SuDokuL/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/Mode8fx/SuDokuL/releases/tag/v1.5",
+        "tag": "v1.5",
+        "publishedAt": "2026-05-10T02:54:37Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "SuDokuL-v1.5-3ds-cia.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-3ds-cia.zip",
+            "bytes": 2692972,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-3ds.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-3ds.zip",
+            "bytes": 2171732,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-android.apk",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-android.apk",
+            "bytes": 11655335,
+            "contentType": "application/vnd.android.package-archive"
+          },
+          {
+            "name": "SuDokuL-v1.5-funkey.opk",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-funkey.opk",
+            "bytes": 913408,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "SuDokuL-v1.5-gamecube.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-gamecube.zip",
+            "bytes": 2538252,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-linux.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-linux.zip",
+            "bytes": 1370967,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-psp.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-psp.zip",
+            "bytes": 3100048,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-switch.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-switch.zip",
+            "bytes": 5424660,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-vita.vpk",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-vita.vpk",
+            "bytes": 3504034,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "SuDokuL-v1.5-wii.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-wii.zip",
+            "bytes": 3092800,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-wiiu.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-wiiu.zip",
+            "bytes": 7398757,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-x64.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-x64.zip",
+            "bytes": 12220029,
+            "contentType": "application/x-zip-compressed"
+          },
+          {
+            "name": "SuDokuL-v1.5-x86.zip",
+            "url": "https://github.com/Mode8fx/SuDokuL/releases/download/v1.5/SuDokuL-v1.5-x86.zip",
+            "bytes": 9045088,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "installationSummary": "The complete Wii U build and its supplied assets. This is the console package, separate from PC and other-console releases. Extract the complete Wii U bundle to the SD root. Keep its data/music files with the executable and use the launcher variant provided for your environment."
+    },
+    {
+      "id": "WiiUIdent",
+      "project": "https://github.com/GaryOderNichts/WiiUIdent",
+      "store": {
+        "name": "WiiUIdent",
+        "title": "WiiUIdent",
+        "version": "1.1",
+        "updated": "31/01/2025",
+        "binary": "/wiiu/apps/WiiUIdent/wiiuident.wuhb",
+        "category": "tool",
+        "md5": "317beab4d4753fc007b9cc5618502543",
+        "filesizeKiB": 4002,
+        "license": "GPLv2"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/GaryOderNichts/WiiUIdent/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/GaryOderNichts/WiiUIdent/releases/tag/wiiuident-v1.1",
+        "tag": "wiiuident-v1.1",
+        "publishedAt": "2023-04-01T10:26:23Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "wiiuident.wuhb",
+            "url": "https://github.com/GaryOderNichts/WiiUIdent/releases/download/wiiuident-v1.1/wiiuident.wuhb",
+            "bytes": 2064800,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "wiiuident.zip",
+            "url": "https://github.com/GaryOderNichts/WiiUIdent/releases/download/wiiuident-v1.1/wiiuident.zip",
+            "bytes": 2043226,
+            "contentType": "application/zip"
+          }
+        ]
+      },
+      "installationSummary": "MochaPayload as provided by a supported Aroma or Tiramisu environment. Choose the WUHB for Aroma. Optional database uploads are a separate in-app choice. Place wiiuident.wuhb under /wiiu/apps/ or preserve the supplied app folder, then launch from the Wii U Menu."
+    },
+    {
+      "id": "appstore",
+      "project": "https://github.com/fortheusers/hb-appstore",
+      "store": {
+        "name": "appstore",
+        "title": "HB App Store",
+        "version": "2.3.2",
+        "updated": "10/06/2025",
+        "binary": "/wiiu/apps/appstore/appstore.rpx",
+        "category": "_misc",
+        "md5": "f12369a58f7682ab2d971f1bd1f7facf",
+        "filesizeKiB": 9899,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/fortheusers/hb-appstore/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/fortheusers/hb-appstore/releases/tag/v2.3.2",
+        "tag": "v2.3.2",
+        "publishedAt": "2023-03-23T15:54:19Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "appstore.nro",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/appstore.nro",
+            "bytes": 11104808,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "appstore.rpx",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/appstore.rpx",
+            "bytes": 3441085,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "appstore.wuhb",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/appstore.wuhb",
+            "bytes": 3499520,
+            "contentType": "application/octet-stream"
+          },
+          {
+            "name": "switch-extracttosd.zip",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/switch-extracttosd.zip",
+            "bytes": 7784395,
+            "contentType": "application/zip"
+          },
+          {
+            "name": "wiiu-extracttosd.zip",
+            "url": "https://github.com/fortheusers/hb-appstore/releases/download/v2.3.2/wiiu-extracttosd.zip",
+            "bytes": 10128199,
+            "contentType": "application/zip"
+          }
+        ]
+      },
+      "installationSummary": "A homebrew-enabled Wii U and internet access. Prefer the official WUHB on Aroma; the RPX is the separate launcher variant. Copy the WUHB to sd:/wiiu/apps/appstore/appstore.wuhb for Aroma, or extract the complete store ZIP preserving its app folder."
+    },
+    {
+      "id": "evWii",
+      "project": "https://github.com/GaryOderNichts/evwii",
+      "store": {
+        "name": "evWii",
+        "title": "evWii",
+        "version": "0.4",
+        "updated": "10/05/2026",
+        "binary": "none",
+        "category": "aroma",
+        "md5": "0bc8a4ecaa9a73dd299fd7569d0db423",
+        "sha256": "f77bb869322a03963c6be54abe22b8cbb3c327a862e615259ed5b14c6bc7d8cf",
+        "filesizeKiB": 112,
+        "license": "GPLv2"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/GaryOderNichts/evwii/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/GaryOderNichts/evwii/releases/tag/v0.4",
+        "tag": "v0.4",
+        "publishedAt": "2026-05-05T17:06:24Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "evwii.wps",
+            "url": "https://github.com/GaryOderNichts/evwii/releases/download/v0.4/evwii.wps",
+            "bytes": 115562,
+            "contentType": "application/vnd.ms-works"
+          }
+        ]
+      },
+      "installationSummary": "Aroma. The plugin runs on the Wii U side and is not a vWii homebrew installer. It does not apply when booting vWii through Boot Selector. Copy the supplied plugin to /wiiu/environments/aroma/plugins/ and configure it in the Aroma plugin menu before opening vWii."
+    },
+    {
+      "id": "retroarch",
+      "project": "https://github.com/libretro/RetroArch",
+      "store": {
+        "name": "retroarch",
+        "title": "Retroarch",
+        "version": "1.22.1",
+        "updated": "16/11/2025",
+        "binary": "/wiiu/apps/retroarch/retroarch.rpx",
+        "category": "emu",
+        "md5": "ca3ec97354ec4981608b7f132bbd82f5",
+        "sha256": "0efb679f0938fc462d10c664b0a6709dcd9fb7d3452025786d11af3557a24ecc",
+        "filesizeKiB": 33424,
+        "license": "GPLv3"
+      },
+      "readme": {
+        "url": "https://raw.githubusercontent.com/libretro/RetroArch/HEAD/README.md",
+        "status": 200
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/libretro/RetroArch/releases/tag/v1.22.2",
+        "tag": "v1.22.2",
+        "publishedAt": "2025-11-20T03:12:17Z",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "retroarch-sourceonly-1.22.2.tar.xz",
+            "url": "https://github.com/libretro/RetroArch/releases/download/v1.22.2/retroarch-sourceonly-1.22.2.tar.xz",
+            "bytes": 13564476,
+            "contentType": "application/x-xz"
+          }
+        ]
+      },
+      "installationSummary": "This pinned RPX package uses a compatible legacy Homebrew Launcher/Tiramisu route. The maintained guide identifies legacy RetroArch RPX incompatibility with Aroma. Add your own games and any core-required BIOS. Extract the entire bundle to the SD root, keeping /retroarch/ and /wiiu/apps/retroarch/ intact. Launch using its supported legacy environment; choose a bundled core and your own content."
+    },
+    {
+      "id": "ftpiiu-plugin",
+      "project": "https://github.com/wiiu-env/ftpiiu_plugin",
+      "readme": {
+        "url": "https://github.com/wiiu-env/ftpiiu_plugin#installation"
+      },
+      "officialLatestRelease": {
+        "status": 200,
+        "url": "https://github.com/wiiu-env/ftpiiu_plugin/releases/tag/v0.4.5",
+        "tag": "v0.4.5",
+        "publishedAt": "2026-04-19T13:59:05Z",
+        "assets": [
+          {
+            "name": "ftpiiu_v0_4_5.zip",
+            "url": "https://github.com/wiiu-env/ftpiiu_plugin/releases/download/v0.4.5/ftpiiu_v0_4_5.zip",
+            "bytes": 300296,
+            "contentType": "application/x-zip-compressed"
+          }
+        ]
+      },
+      "installationSummary": "Aroma with WiiUPluginLoaderBackend and a trusted local network. The server runs while the plugin is loaded; its configuration menu shows the console IP and port. System-file access is disabled by default. Extract the official ZIP, then copy ftpiiu.wps to sd:/wiiu/environments/aroma/plugins/ftpiiu.wps. The ZIP is flat: copying its contents only to the SD root is insufficient. Reboot Aroma, open its plugin menu with L + D-pad Down + Minus, then connect an FTP client to the displayed address. Keep system-file access disabled unless you specifically need it."
+    }
+  ]
+}

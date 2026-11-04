@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02T07:11:21.364Z",
+  "scope": "Read-only inventory and byte-integrity audit. Recommendations are PS4 download/installation entries only, not new direct Run controls. Nothing was downloaded, extracted, changed in the archive or executed. Existing versions remain unchanged.",
+  "sources": [
+    "downloads/ps4/GTA5/manifest.json",
+    "downloads/ps4-ps5/manifest.json",
+    "docs/new-console-ready-files.json",
+    "docs/console-ready-file-descriptors.json",
+    "docs/console-download-catalog.json",
+    "docs/ps4-ps5-game-resources.json",
+    "F backup download-inventory.json",
+    "F backup existing-site-files.json"
+  ],
+  "actions": [
+    {
+      "id": "ps4-modern-gta5-157-expulsion-v7-0",
+      "label": "Expulsion V7.0",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": "7.0",
+      "titleIds": [
+        "CUSA00419",
+        "CUSA00411"
+      ],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/console-ready/expulsion-v7-ready/PS4/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "bytes": 1775984,
+      "sha256": "823656c96305e4373ec132d8f5dfd9fa2ec24a38d941dfb980f92616d84cb268",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/downloads/console-ready/expulsion-v7-ready/INSTALL.txt",
+      "source": "https://www.mediafire.com/file/t3kgvyhof1ig5sm/Expulsion_V7.0.zip/file",
+      "license": "MIT and Lua MIT notices embedded in supplied pack",
+      "image": "/assets/images/ps4-gta5/expulsion-preview.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "PS4 GoldHEN plugins; GTA V game update 1.57, CUSA00419 USA or CUSA00411 EUR per INSTALL.txt. The author states EUR hardware testing remains required.",
+        "Use the full ZIP for a new installation: merge PS4/data and PS4/user, preserve existing custom files and match the title ID. The direct PRX is a replacement option for a matching installed support tree. The Lua scripts need this Expulsion build and its documented API; desktop Python background tools remain in the original archive and are not console payloads.",
+        "USA/EUR support is declared in INSTALL.txt, but the author explicitly states EUR console testing remains required. This audit did not execute either build.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-expulsion-v7-ready-b163fbc0653f"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      },
+      "supportArchiveURL": "/downloads/ps4/GTA5/157/Expulsion_V7.0.zip",
+      "directFileScope": "Replacement PRX for an existing matching installation; the complete support tree is required for a fresh install.",
+      "consoleDestination": "/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "inventorySources": [
+        "docs/new-console-ready-files.json",
+        "docs/console-ready-file-descriptors.json"
+      ]
+    },
+    {
+      "id": "ps4-modern-gta5-157-beach",
+      "label": "Beach",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/ps4/GTA5/157/BeachMenu157.prx",
+      "bytes": 1230442,
+      "sha256": "d622d3d867244e5854e4773b9e03631d24918e26b634c4b74c8678b01ed06b8a",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://cdn.discordapp.com/attachments/1552861165477040219/1552861203787812914/BeachMenu157.prx?ex=6ae89671&is=6ae744f1&hm=f80f7ddec485b36b232a368815c344d57c02ecea8f66a1239687d846503b0a6d&",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-gta5/beach.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "Compatibility is recorded from the supplied PS4 download group; regional title IDs were not supplied in this record.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-gta5-beach-1-57"
+          },
+          {
+            "inventory": "existing-site-files.json",
+            "entrySitePath": "downloads/ps4/GTA5/157/BeachMenu157.prx"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-cyprus-1-57",
+      "label": "Cyprus LE",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/ps4-ps5/gta5-cyprus-1-57/CyprusMenu.prx",
+      "bytes": 724286,
+      "sha256": "7731188ec03a0bee74fe0946ffcf6eefed466c13a9b68c4a29df3263bd724157",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://www.mediafire.com/file/5wc7w9lrdcy5ysd/CyprusMenu.prx/file",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-ps5/edited/gta5-cyprus-image.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "The supplied PS4 source labels this exact game update; regional title IDs and a hardware-tested firmware matrix are absent.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-gta5-cyprus-1-57"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-explosive-1-57",
+      "label": "Explosive",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "SPRX",
+      "downloadURL": "/downloads/ps4-ps5/gta5-explosive-1-57/explosive_temp.sprx",
+      "bytes": 1037599,
+      "sha256": "4986ff700f57d72a61516abd0daa6cf1ba557a63b4fe39c1eecc38064c1f2e6a",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://cdn.discordapp.com/attachments/1553709164423942255/1553709165753409596/explosive_temp.sprx",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-ps5/originals/gta5-explosive-1-57-image.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "The supplied PS4 source labels this exact game update; regional title IDs and a hardware-tested firmware matrix are absent.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-gta5-explosive-1-57"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-157-expulsion-v5-0",
+      "label": "Expulsion V5.0",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": "5.0",
+      "titleIds": [
+        "CUSA00419"
+      ],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/console-ready/expulsion-v5-ready/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "bytes": 909328,
+      "sha256": "dfdc05bbe590bced0ca53059c017cb05c18054695a90053b7c91da269fb57dc3",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/downloads/console-ready/expulsion-v5-ready/INSTALL.txt",
+      "source": "https://www.mediafire.com/file/f20tsz8dj37n1ax/Expulsion-V5.0-PS4-1.57-Release.rar/file",
+      "license": "MIT notice embedded in supplied pack",
+      "image": "/assets/images/ps4-gta5/expulsion-preview.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "PS4 GoldHEN plugins; GTA V CUSA00419 game update 1.57. V5.0 INSTALL.txt supplies only this title ID.",
+        "Merge the complete data and user support trees into /data and /user. Keep the maps directory and existing saves. Merge the exact PRX entry under CUSA00419 in your existing plugins.ini. Direct PRX download alone is appropriate only for a matching installation with its support files already present.",
+        "The archived V5 package pins CUSA00419. A forum reply shows a different EUR example; this candidate retains the package pin rather than assuming it proves EUR compatibility.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-expulsion-v5-ready-0b8241baaa1b"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      },
+      "supportArchiveURL": "/downloads/ps4-ps5/gta5-expulsion-v5-1-57-prepared-zip/Expulsion-V5.0-PS4-1.57.zip",
+      "directFileScope": "Replacement PRX for an existing matching installation; the complete support tree is required for a fresh install.",
+      "consoleDestination": "/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "inventorySources": [
+        "docs/new-console-ready-files.json",
+        "docs/console-ready-file-descriptors.json"
+      ]
+    },
+    {
+      "id": "ps4-modern-gta5-157-lts",
+      "label": "LTS / LRS",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/ps4/GTA5/157/LRS.prx",
+      "bytes": 2187104,
+      "sha256": "4816609641ec21b9a7f151abe19eb234dee69c959d0da8a7a7c1718185704a96",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://cdn.discordapp.com/attachments/1553009205764685856/1554233714660081734/LRS.prx?ex=6ae8f771&is=6ae7a5f1&hm=f6a4b81491a85c6add4b5fa02e6a9e2806d031dcbe86e51bd1966058f271a888&",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-gta5/lts.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "The supplied post uses LTS; its actual binary and preview use LRS. Both names are preserved.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "existing-site-files.json",
+            "entrySitePath": "downloads/ps4/GTA5/157/LRS.prx"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-157-serendipity",
+      "label": "Serendipity",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/ps4/GTA5/157/Seren.prx",
+      "bytes": 1956688,
+      "sha256": "e4f085add22697b0bb3ef8f0028f1fe373ff4737ae3a1d7b2bb1a24afff18f35",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://cdn.discordapp.com/attachments/1563209961096613918/1563210180227764276/Seren.prx?ex=6ae8a9ee&is=6ae7586e&hm=7b3ccfdb3da7466417a452588e4f522591951274d24e3cde18fd97a6259e4d26&",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-gta5/serendipity.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "Compatibility is recorded from the supplied PS4 download group; regional title IDs were not supplied in this record.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "existing-site-files.json",
+            "entrySitePath": "downloads/ps4/GTA5/157/Seren.prx"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-157-velora-1-5",
+      "label": "Velora 1.5",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": "1.5",
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "SPRX",
+      "downloadURL": "/downloads/ps4/GTA5/157/Velora.sprx",
+      "bytes": 1718289,
+      "sha256": "e6e79ad27a87f2b7ea9d519167e5d9c48d096bdf1a17b2abf1de70c057bd2653",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://cdn.discordapp.com/attachments/1551562290258518167/1561212081712136232/Velora.sprx?ex=6ae8a54e&is=6ae753ce&hm=6e211c1eff62ace1d7ee06de406a5c19e84dacc7888261a718dccf3024ecf2de&",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-gta5/velora.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.57; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "Compatibility is recorded from the supplied PS4 download group; regional title IDs were not supplied in this record.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "existing-site-files.json",
+            "entrySitePath": "downloads/ps4/GTA5/157/Velora.sprx"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-156-beach",
+      "label": "Beach",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.56",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/ps4/GTA5/156/BeachMenu156.prx",
+      "bytes": 1320839,
+      "sha256": "8ca31fa51e3401f678a9514fe4a93976d5a52c685fe07a3d2772a1523c90c073",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://cdn.discordapp.com/attachments/1552861357584425001/1552861390170234950/BeachMenu156.prx?ex=6ae8969e&is=6ae7451e&hm=6f59cb323c55c7f5e894bd0b6d7ad6490e3dea82e37239a65e4d0bb229003ca7&",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-gta5/beach.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.56; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "Compatibility is recorded from the supplied PS4 download group; regional title IDs were not supplied in this record.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-gta5-beach-1-56"
+          },
+          {
+            "inventory": "existing-site-files.json",
+            "entrySitePath": "downloads/ps4/GTA5/156/BeachMenu156.prx"
+          }
+        ],
+        "magicHex": "7f454c46",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-cyprus-1-56",
+      "label": "Cyprus LE",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.56",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "PRX",
+      "downloadURL": "/downloads/ps4-ps5/gta5-cyprus-1-56/CyprusMenu.prx",
+      "bytes": 724382,
+      "sha256": "9bedea869077bb6016171a79823b4b98703631d904b1cb52173dd97349fbb1c0",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://www.mediafire.com/file/m6waack9a13u41t/CyprusMenu.prx/file",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-ps5/edited/gta5-cyprus-image.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.56; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "The supplied PS4 source labels this exact game update; regional title IDs and a hardware-tested firmware matrix are absent.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-gta5-cyprus-1-56"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    },
+    {
+      "id": "ps4-modern-gta5-156-velora",
+      "label": "Velora",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.56",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [],
+      "firmwareScope": "compatible-GoldHEN-plugin-enabler-required",
+      "format": "SPRX",
+      "downloadURL": "/downloads/ps4/GTA5/156/Velora.sprx",
+      "bytes": 882981,
+      "sha256": "d50d1582a67d978e347692b3bce951262dd061a649e75410595ae36f9bec3823",
+      "run": null,
+      "launchURL": "/console/mods/ps4/gta5/install.html",
+      "launchLabel": "Open installation guide",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "source": "https://cdn.discordapp.com/attachments/1551562652281602089/1551562896880828506/Velora.sprx?ex=6ae87a8d&is=6ae7290d&hm=c9a477ff72e4208e939947e43287198de4dc71593a8739e2e4374c043e56255d&",
+      "license": "No redistribution license was verified for this supplied closed-source module; preserve its original source and attribution.",
+      "image": "/assets/images/ps4-gta5/velora.png",
+      "imageRole": "Supplied game/menu artwork; not a hardware test of this exact binary.",
+      "requirements": [
+        "GTA V PS4 game update 1.56; match the exact regional title ID and executable build. The update number is not console firmware.",
+        "Compatibility is recorded from the supplied PS4 download group; regional title IDs were not supplied in this record.",
+        "PS4 game plugin: requires a GoldHEN release with plugin support that is compatible with your console firmware. No numeric firmware matrix is established by this inventory.",
+        "Install with the console file manager and the matching menu instructions. Merge only the correct title section into existing plugins.ini; preserve unrelated entries, custom files and saves.",
+        "This PRX/SPRX module is not a raw BIN or standalone SDK ELF payload. A browser Run/GoldHEN HTTP/ELF-loader button is not provided. Do not rename files to change their type.",
+        "PS5 native and PS4-on-PS5 support are not established for this exact binary. A PS5 plugin framework alone does not verify a particular PS4 menu."
+      ],
+      "audit": {
+        "verifiedAt": "2026-11-02T07:11:21.364Z",
+        "localBytesVerified": true,
+        "localSha256Verified": true,
+        "backupPresent": true,
+        "backupSha256Verified": true,
+        "backupInventoryReferences": [
+          {
+            "inventory": "download-inventory.json",
+            "entryId": "ps4-ps5-gta5-velora-1-56"
+          },
+          {
+            "inventory": "existing-site-files.json",
+            "entrySitePath": "downloads/ps4/GTA5/156/Velora.sprx"
+          }
+        ],
+        "magicHex": "4f153d1d",
+        "executed": false
+      }
+    }
+  ],
+  "deferredArchives": [
+    {
+      "label": "Expulsion 7.0",
+      "gameVersion": "1.57",
+      "archiveURL": "/downloads/ps4/GTA5/157/Expulsion_V7.0.zip",
+      "sha256": "1e947e676dd228ebb34f61282fa4de343d503fc4b8b5cfa1d5a86d8bead5cad4",
+      "reason": "Selected replacement PRX is already a verified candidate above; full archive remains necessary for new installations."
+    },
+    {
+      "label": "Ozark",
+      "gameVersion": "1.57",
+      "archiveURL": "/downloads/ps4/GTA5/157/ozarkrbn_1.zip",
+      "sha256": "cc2605fb2c06c404970bd58d9a85864ec399858c22341b0a731e291e517cf985",
+      "reason": "Only the original archive is represented by this manifest entry. Inspect/select its exact module and support files through the existing archive-preparation workflow before presenting a new direct-plugin action."
+    },
+    {
+      "label": "Ozark",
+      "gameVersion": "1.56",
+      "archiveURL": "/downloads/ps4/GTA5/156/ozarkrbn_2.rar",
+      "sha256": "4c181bc3f63dec638a71c7673cdda5ca4150a9acebf321ab6d7d53dd402ae445",
+      "reason": "Only the original archive is represented by this manifest entry. Inspect/select its exact module and support files through the existing archive-preparation workflow before presenting a new direct-plugin action."
+    },
+    {
+      "label": "Oxagon Full",
+      "gameVersion": "1.56",
+      "archiveURL": "/downloads/ps4/GTA5/156/Oxagon-v1.0.zip",
+      "sha256": "fac5dd065475242c7f92d2f5b8344028311524009a99fb75817a6dec7cc45070",
+      "reason": "Only the original archive is represented by this manifest entry. Inspect/select its exact module and support files through the existing archive-preparation workflow before presenting a new direct-plugin action."
+    },
+    {
+      "label": "Oxagon Lite",
+      "gameVersion": "1.56",
+      "archiveURL": "/downloads/ps4/GTA5/156/Oxagon-Lite-v1.4.zip",
+      "sha256": "b327e4236ae0c2e74576be85bf2f86e66e061af35e5c8fd768aab92aaeb1ab38",
+      "reason": "Only the original archive is represented by this manifest entry. Inspect/select its exact module and support files through the existing archive-preparation workflow before presenting a new direct-plugin action."
+    }
+  ],
+  "ps5Findings": [
+    {
+      "id": "native-ps5-gta-story-menu-research",
+      "kind": "native-PS5-desktop-installed-resident-menu",
+      "publication": "research-only",
+      "source": "https://github.com/GronedWaffel/ps-neighborhood",
+      "detailsSource": "https://github.com/GronedWaffel/ps-neighborhood/blob/main/trainers/gta5-story/README.md",
+      "version": "Windows app v0.13.0 per repository README",
+      "profiles": [
+        {
+          "titleId": "PPSA04263",
+          "gameVersion": "01.000.000"
+        },
+        {
+          "titleId": "PPSA04264",
+          "gameVersion": "01.010.002"
+        }
+      ],
+      "developmentFirmware": "13.60",
+      "requirements": [
+        "Author-published community project; not an official Sony/Rockstar tool.",
+        "Requires the Windows PS Neighborhood app, compatible PS5Debug-NG, Story Mode and explicit MCP compare-and-write permission. Run GTA V In-Game Menu.cmd on the computer; the resident menu then remains inside the game until GTA restarts.",
+        "The author fingerprints separate native PS5 executables and refuses other builds; these PPSA versions are not the PS4 CUSA 1.56/1.57 update numbers.",
+        "The console-direct web workflow is stated to be unreleased. No browser one-click or standalone raw-ELF integration is established by this review."
+      ],
+      "inventoryMatchFound": false,
+      "downloaded": false,
+      "executed": false,
+      "reasonNotAnAction": "No existing site/F inventory entry matched this project, so no downloadable file, checksum or native Run action was fabricated."
+    },
+    {
+      "id": "ps4-plugins-on-ps5-not-inferred",
+      "kind": "compatibility-boundary",
+      "sources": [
+        "https://github.com/etaHEN/etaHEN",
+        "https://github.com/Scripter-prog/GoldHEN_Plugins_Repository_PS5"
+      ],
+      "finding": "etaHEN documents its own plugin system; the PS5 port repository contains explicitly ported general plugins. Neither reviewed source verifies these exact Velora/Beach/LTS/Serendipity/Expulsion/Cyprus PS4 binaries on PS5. Retain PS4-only recommendations until per-menu evidence exists."
+    },
+    {
+      "id": "existing-ps5-backcompat-gta-fps-data",
+      "kind": "PS4-title-on-PS5-patch-data-not-menu",
+      "source": "docs/ps4-ps5-game-patches.json",
+      "primarySource": "https://github.com/illusionyy/PS-Game-Patch/blob/65914503123d4e643aa5aa0e8c720de8e99ef7e8/patches/xml/GrandTheftAutoV-Orbis.xml",
+      "titleIds": [
+        "CUSA00411",
+        "CUSA00419",
+        "CUSA00880"
+      ],
+      "gameVersion": "01.56 plus an upstream mask-scanned option",
+      "finding": "The existing catalogue has ready FPS patch XML for a PS4 Orbis title, explicitly including backward compatibility on PS5. This is patch data for a separate native patch engine, not a full mod menu and not a native PS5 PPSA build."
+    }
+  ]
+}

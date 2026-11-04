@@ -1,0 +1,35 @@
+// Download original pinned script/source ZIPs; inspect data only, never run their code.
+const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
+const {inspectZip}=require('./archive-switch-homebrew.cjs');
+const {createArchive}=require('./console-expansion-archive.cjs');
+const root=path.resolve(__dirname,'..');
+const crypto=require('node:crypto');
+const {crc32}=require('./archive-switch-homebrew.cjs');
+function zip(entries){let offset=0;const local=[],central=[];for(const {name,data,mode} of entries){const n=Buffer.from(name),crc=crc32(data),h=Buffer.alloc(30),c=Buffer.alloc(46);h.writeUInt32LE(0x04034b50);h.writeUInt16LE(20,4);h.writeUInt32LE(crc,14);h.writeUInt32LE(data.length,18);h.writeUInt32LE(data.length,22);h.writeUInt16LE(n.length,26);c.writeUInt32LE(0x02014b50);c.writeUInt16LE(0x0314,4);c.writeUInt16LE(20,6);c.writeUInt32LE(crc,16);c.writeUInt32LE(data.length,20);c.writeUInt32LE(data.length,24);c.writeUInt16LE(n.length,28);c.writeUInt32LE((parseInt(mode,8)*65536)>>>0,38);c.writeUInt32LE(offset,42);local.push(h,n,data);central.push(c,n);offset+=h.length+n.length+data.length;}const directory=Buffer.concat(central),end=Buffer.alloc(22);end.writeUInt32LE(0x06054b50);end.writeUInt16LE(entries.length,8);end.writeUInt16LE(entries.length,10);end.writeUInt32LE(directory.length,12);end.writeUInt32LE(offset,16);return Buffer.concat([...local,directory,end]);}
+async function gitlabSnapshot(j,commit){const base='https://gitlab.com/api/v4/projects/'+encodeURIComponent(j.repo)+'/repository',tree=[];for(let page=1;page<=100;page++){const rows=JSON.parse((await fetchBytes(base+'/tree?recursive=true&per_page=100&page='+page+'&ref='+commit)).toString());tree.push(...rows);if(rows.length<100)break;if(page===100)throw Error('Tree too large');}const blobs=tree.filter(e=>e.type==='blob'),out=[],sources=[];let cursor=0;await Promise.all(Array.from({length:5},async()=>{while(cursor<blobs.length){const e=blobs[cursor++];if(!['100644','100755'].includes(e.mode))throw Error('Unsupported Git mode');const u=base+'/blobs/'+e.id+'/raw',cache=path.join(root,'tmp/switch2-script-blobs',e.id);let bytes;if(fs.existsSync(cache))bytes=fs.readFileSync(cache);else{bytes=await fetchBytes(u);fs.mkdirSync(path.dirname(cache),{recursive:true});if(!fs.existsSync(cache))fs.writeFileSync(cache,bytes,{flag:'wx'});}const sha=crypto.createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex');if(sha!==e.id)throw Error('Git blob mismatch');out.push({name:j.id+'-'+commit+'/'+e.path,data:bytes,mode:e.mode});sources.push({path:e.path,sourceUrl:u,gitBlobSha1:e.id,bytes:bytes.length});}}));out.sort((a,b)=>a.name.localeCompare(b.name));return {bytes:zip(out),sources};}
+const jobs=[
+ {id:'ns2jb',repo:'pepsipu/ns2jb',host:'gitlab',label:'ns2jb original host ZIP',required:['run.cjs','bootstrap.bas']},
+ {id:'ns2jb-rpc',project:'ns2jb',repo:'kurumuz/ns2jb',host:'gitlab',label:'ns2jb RPC fork ZIP · dependency for tools below',required:['run.cjs','rpc.cjs','bootstrap.bas']},
+ {id:'ns2-savekit',repo:'dougchansan/ns2-savekit',host:'github',label:'ns2-savekit scripts ZIP',required:['tools/kit.cjs','patches/apply.sh','config/titles.json','LICENSE']},
+ {id:'ouncecake',repo:'misshexa66/OunceCake',host:'github',label:'OunceCake scripts ZIP',required:['ouncecake.cjs','package.json','LICENSE']}
+];
+async function fetchBytes(url){for(let attempt=0;attempt<4;attempt++){const r=await fetch(url,{signal:AbortSignal.timeout(120000)});if(r.status===429&&attempt<3){const retry=Number(r.headers.get('retry-after')||30);await r.arrayBuffer();if(retry>60)throw Error(url+' HTTP429; retry after '+retry+' seconds (upstream rate limit)');await new Promise(resolve=>setTimeout(resolve,Math.max(1,retry)*1000));continue;}if(!r.ok)throw Error(url+' HTTP '+r.status);const b=Buffer.from(await r.arrayBuffer());if(b.length>128*1024*1024)throw Error('Archive size limit');return b;}}
+async function main(){const archive=createArchive(),file=path.join(root,'docs/switch2-project-downloads.json'),report=JSON.parse(fs.readFileSync(file));
+ for(const j of jobs.filter(j=>!process.argv.includes('--github-only')||j.host==='github')){
+  const repoUrl='https://'+j.host+'.com/'+j.repo;
+  const api=j.host==='github'?'https://api.github.com/repos/'+j.repo+'/commits/main':'https://gitlab.com/api/v4/projects/'+encodeURIComponent(j.repo)+'/repository/commits/main';
+  let commit;try{const d=JSON.parse((await fetchBytes(api)).toString());commit=d.sha||d.id;}catch{const output=cp.execFileSync('git',['ls-remote',repoUrl+'.git','refs/heads/main'],{encoding:'utf8'});commit=output.split(/\s/)[0];}
+  if(!/^[a-f0-9]{40}$/.test(commit))throw Error('Cannot pin '+j.id);
+  const sourceUrl=j.host==='github'?'https://codeload.github.com/'+j.repo+'/zip/'+commit:repoUrl+'/-/archive/'+commit+'/ns2jb-'+commit+'.zip';
+  let bytes,derivedFrom,archiveAttempt;try{bytes=await fetchBytes(sourceUrl);}catch(error){if(j.host!=='gitlab')throw error;archiveAttempt={url:sourceUrl,error:error.message};const snapshot=await gitlabSnapshot(j,commit);bytes=snapshot.bytes;derivedFrom=snapshot.sources;console.log(j.id+' GitLab ZIP unavailable; rebuilt original files from verified Git blobs.');}
+  const entries=inspectZip(bytes),prefix=entries[0].path.split('/')[0]+'/';
+  for(const wanted of ['README.md',...j.required])if(!entries.some(e=>e.path===prefix+wanted))throw Error(j.id+' missing '+wanted);
+  if(j.id==='ouncecake'&&!entries.some(e=>/^.*\/engine\/.*\.(?:bin|elf)$/.test(e.path)))throw Error('OunceCake lacks bundled native FTP helper');
+  const version=commit,name=j.id+'-'+commit.slice(0,12)+'.zip';
+  const result=await archive.writeBytes({scope:'switch2-script-bundles',item:{id:'switch2-script-bundles-'+j.id,title:j.label,url:repoUrl,platform:'Nintendo Switch 2',category:['Tools',j.id],pages:['console/nintendo-switch-2.html']},file:{name,sourceUrl,version,archiveRole:['Source Code'],format:'Original ZIP with runnable host scripts and upstream documentation'},bytes});
+  const local='/downloads/nintendo-switch-2/'+j.id+'/'+commit.slice(0,12)+'/'+name,target=path.join(root,local);fs.mkdirSync(path.dirname(target),{recursive:true});if(fs.existsSync(target)&&!fs.readFileSync(target).equals(bytes))throw Error('Different existing mirror');if(!fs.existsSync(target))fs.writeFileSync(target,bytes,{flag:'wx'});
+  const record={...result.publicFile,project:j.project||j.id,bundleId:j.id,label:j.label,local,commit,rootFolder:prefix.slice(0,-1),entryCount:entries.length,derivedFrom,archiveAttempt,inspection:'ZIP paths, sizes and CRCs checked; required runtime files present; no downloaded code executed.'};
+  const latest=JSON.parse(fs.readFileSync(file));latest.files=latest.files.filter(f=>!(f.bundleId===j.id&&f.commit===commit));latest.files.push(record);latest.checkedAt=new Date().toISOString();fs.writeFileSync(file,JSON.stringify(latest,null,2)+'\n');console.log(j.id+' '+commit+' '+bytes.length+' bytes, '+entries.length+' entries');
+ }
+}
+if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1;});

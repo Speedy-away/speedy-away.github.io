@@ -1,0 +1,20 @@
+{
+  "scope": "vita-more",
+  "checked": "2026-11-02",
+  "items": [
+    {"id":"moonlight","title":"Moonlight","author":"xyzz / Moonlight contributors","repo":"xyzz/vita-moonlight","version":"0.13.2","category":"Apps","assets":["https://github.com/xyzz/vita-moonlight/releases/download/0.13.2/moonlight.vpk"]},
+    {"id":"imago","title":"Imago","author":"Sevy","repo":"SevyW/imago","version":"1.3.0","category":"Themes","assets":["https://github.com/SevyW/imago/releases/download/v1.3.0/imago-v1.3.0.vpk"]},
+    {"id":"custom-themes-manager","title":"Custom Themes Manager","author":"Red Squirrel","project":"https://redsquirrel87.com/custom-themes-manager","version":"4.02","category":"Themes","assets":["https://bitbucket.org/Red_Squirrel/custom-themes-manager/downloads/CTManager_v4.02.vpk"]},
+    {"id":"daedalus","title":"DaedalusX64 vitaGL","author":"Rinnegatamante / DaedalusX64 team","repo":"Rinnegatamante/DaedalusX64-vitaGL","version":"Nightly snapshot 2026-11-02","category":"Emulators","assets":["https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.vpk","https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.zip"]},
+    {"id":"mgba","title":"mGBA","author":"Vicki Pfau / mGBA contributors","repo":"mgba-emu/mgba","version":"0.10.5","category":"Emulators","assets":["https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-vita.7z"]},
+    {"id":"chocolate-doom","title":"Chocolate Doom","author":"fgsfds / Chocolate Doom contributors","repo":"fgsfdsfgs/chocolate-doom","version":"Vita r3.1","category":"Ports","assets":["https://github.com/fgsfdsfgs/chocolate-doom/releases/download/chocolate-doom-3.0.0-vita-3.1/ChocolateDoom_r3_1.vpk","https://github.com/fgsfdsfgs/chocolate-doom/releases/download/chocolate-doom-3.0.0-vita-3.1/data.zip"]},
+    {"id":"supertux","title":"SuperTux Classic","author":"theheroGAC / DeltaResero / SuperTux team","repo":"theheroGAC/SuperTux-PSVITA","version":"1.04","category":"Games","assets":["https://github.com/theheroGAC/SuperTux-PSVITA/releases/download/1.04/SuperTux-PSVITA.vpk"]},
+    {"id":"jumpnbump","title":"Jump ’n’ Bump","author":"rsn8887 / Brainchild Design / Jump ’n’ Bump contributors","repo":"rsn8887/jumpnbump","version":"Vita 1.00 (release tag 1.02)","category":"Games","assets":["https://github.com/rsn8887/jumpnbump/releases/download/1.02/jumpnbump_1.00.vpk"]},
+    {"id":"enigma","title":"Enigma","author":"rsn8887 / Enigma team","repo":"rsn8887/Enigma","version":"Vita 1.11 (release tag 1.16)","category":"Games","assets":["https://github.com/rsn8887/Enigma/releases/download/1.16/enigma_1.11.vpk","https://github.com/rsn8887/Enigma/releases/download/1.16/data.zip"]},
+    {"id":"psvshell","title":"PSVshell","author":"Electry","repo":"Electry/PSVshell","version":"1.1 stable","category":"Plugins","assets":["https://github.com/Electry/PSVshell/releases/download/v1.1/PSVshell.skprx"]},
+    {"id":"shellbat","title":"shellbat","author":"nowrep","repo":"nowrep/vita-shellbat","version":"r10","category":"Plugins","assets":["https://github.com/nowrep/vita-shellbat/releases/download/r10/shellbat.suprx"]},
+    {"id":"ds34vita","title":"ds34vita","author":"MERLev / xerpi / TheFloW","repo":"MERLev/ds34vita","version":"1.1","category":"Plugins","assets":["https://github.com/MERLev/ds34vita/releases/download/v1.1/ds34vita.skprx"]},
+    {"id":"revita","title":"reVita","author":"MERLev","repo":"MERLev/reVita","version":"1.0.8","category":"Plugins","assets":["https://github.com/MERLev/reVita/releases/download/1.0.8/reVita.skprx","https://github.com/MERLev/reVita/releases/download/1.0/ioplus.skprx","https://github.com/MERLev/reVita/releases/download/1.0.8/reVitaMotion.suprx"]},
+    {"id":"minimal-theme","title":"MINIMAL","author":"Alberto Munguia","project":"https://psvt.ovh/theme.php?id=1780106831","version":"01.00","category":"Themes","filename":"MINIMAL-v01.00.zip","assets":["https://psvt.ovh/download.php?id=1fcf7e0a23b6e77e7928ca717b2807a4a49e9c64"]}
+  ]
+}

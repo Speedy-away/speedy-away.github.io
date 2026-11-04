@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "jobs": [
+    {
+      "id": "host-gta505-gamerhack-arabicguy505100",
+      "title": "ArabicGuy · GTA V 1.00 · PS4 5.05",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.00"
+      ],
+      "project": "ArabicGuy",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/arabic-guy100.bin",
+      "capturedUrl": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "version": "game 1.00 - PS4 5.05 - GamerHack 505 23c946a7f85f - 49d151bfb960",
+      "filename": "arabic-guy100.bin",
+      "mirror": false,
+      "importPath": "tmp/host-review-20261103/GamerHack/505/arabic-guy100.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1055340,
+      "expectedSha256": "49d151bfb960fb42d465134ab91f5173407a8ac202d75d23a3b2e441bc7cffd0",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/gta5/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "bbae1123b41834a2dc3b289ebd63c38503c4049e",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "gameVersion": "1.00",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "ArabicGuy",
+      "license": "No redistribution licence was established for this compiled menu. Preserve original authorship and host attribution; original upstream download only."
+    },
+    {
+      "id": "host-gta505-gamerhack-wildemodz505133",
+      "title": "WildeModz · GTA V 1.33 · PS4 5.05",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.33"
+      ],
+      "project": "WildeModz",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/WildeModz-1.33.bin",
+      "capturedUrl": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "version": "game 1.33 - PS4 5.05 - GamerHack 505 23c946a7f85f - 1c742c48aeb6",
+      "filename": "WildeModz-1.33.bin",
+      "mirror": false,
+      "importPath": "tmp/host-review-20261103/GamerHack/505/WildeModz-1.33.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1074320,
+      "expectedSha256": "1c742c48aeb6009f3e99468ab2702499ed66f0d642d624e9844a0f4aa595fb60",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/gta5/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "962e8567ae349e649da0e481feec45089eb67d05",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "gameVersion": "1.33",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "WildeModz",
+      "license": "No redistribution licence was established for this compiled menu. Preserve original authorship and host attribution; original upstream download only."
+    },
+    {
+      "id": "host-gta505-gamerhack-wildemodz505146",
+      "title": "WildeModz · GTA V 1.46 · PS4 5.05",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.46"
+      ],
+      "project": "WildeModz",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/WildeModz-1.46.bin",
+      "capturedUrl": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "version": "game 1.46 - PS4 5.05 - GamerHack 505 23c946a7f85f - f262d4878e01",
+      "filename": "WildeModz-1.46.bin",
+      "mirror": false,
+      "importPath": "tmp/host-review-20261103/GamerHack/505/WildeModz-1.46.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 29416,
+      "expectedSha256": "f262d4878e01d057e4ee4d35a49ddf1363fa4ee9667dd50acf181a99aa8af07d",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/gta5/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "65d7142a7d084d7a4fffc71d63e0633dd5a0701e",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "gameVersion": "1.46",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "WildeModz",
+      "license": "No redistribution licence was established for this compiled menu. Preserve original authorship and host attribution; original upstream download only."
+    }
+  ]
+}

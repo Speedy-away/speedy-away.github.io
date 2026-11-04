@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T12:08:19.512Z",
+  "checkedDate": "2026-11-02",
+  "title": "3DS Pretendo game-support snapshot",
+  "sources": {
+    "community": "https://wiki.pretendo.zip/game-support-status",
+    "april": "https://forum.pretendo.network/t/announcement-2026-04-02-games-released-to-public/27434",
+    "december": "https://forum.pretendo.network/t/service-update-2025-12-08-acnl-game-servers-more/25381",
+    "may": "https://forum.pretendo.network/t/animal-crossing-new-leaf-available-to-everyone-more/16460",
+    "pokemon": "https://forum.pretendo.network/t/pokemon-y-online-servers/29077",
+    "maintenance": "https://forum.pretendo.network/t/update-on-july-maintenance/29218",
+    "official": "https://pretendo.network/"
+  },
+  "method": "Current maintainer/community status export checked against original Pretendo release announcements and support posts where available. Public describes announced/listed access, not a physical-console test or live uptime guarantee. Source-specific limitations remain visible.",
+  "maintenanceNotice": true,
+  "games": [
+    {
+      "game": "Mario Kart 7",
+      "access": "public",
+      "notes": "Races; rankings/ghosts incomplete.",
+      "aliases": "mk7",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Animal Crossing: New Leaf",
+      "access": "public",
+      "notes": "Current Nimbus required; Dream Suite unavailable.",
+      "aliases": "acnl welcome amiibo",
+      "sourceUrl": "https://forum.pretendo.network/t/service-update-2025-12-08-acnl-game-servers-more/25381",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Kid Icarus: Uprising",
+      "access": "public",
+      "notes": "Listed for public play.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "partial": false,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Luigi’s Mansion 2 / Dark Moon",
+      "access": "public",
+      "notes": "Public access announced December 2025.",
+      "aliases": "",
+      "sourceUrl": "https://forum.pretendo.network/t/service-update-2025-12-08-acnl-game-servers-more/25381",
+      "evidence": "Official Pretendo announcement/support",
+      "partial": false,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Super Street Fighter IV: 3D Edition",
+      "access": "public",
+      "notes": "Public access announced December 2025.",
+      "aliases": "",
+      "sourceUrl": "https://forum.pretendo.network/t/service-update-2025-12-08-acnl-game-servers-more/25381",
+      "evidence": "Official Pretendo announcement/support",
+      "partial": false,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Monster Hunter 4 / 4G / 4 Ultimate",
+      "access": "public",
+      "notes": "Multiplayer; DLC is a separate service.",
+      "aliases": "mh4 mh4g mh4u",
+      "sourceUrl": "https://forum.pretendo.network/t/announcement-2026-04-02-games-released-to-public/27434",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Monster Hunter Generations / X",
+      "access": "public",
+      "notes": "Multiplayer; DLC support differs.",
+      "aliases": "mhgen mhx",
+      "sourceUrl": "https://forum.pretendo.network/t/announcement-2026-04-02-games-released-to-public/27434",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Monster Hunter Stories",
+      "access": "public",
+      "notes": "Public access announced April 2026.",
+      "aliases": "",
+      "sourceUrl": "https://forum.pretendo.network/t/announcement-2026-04-02-games-released-to-public/27434",
+      "evidence": "Official Pretendo announcement/support",
+      "partial": false,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Super Smash Bros. for Nintendo 3DS",
+      "access": "public",
+      "notes": "Battles; Spectate/Share incomplete.",
+      "aliases": "smash3ds ssb4",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "The Legend of Zelda: Tri Force Heroes",
+      "access": "public",
+      "notes": "Online play; friend-room limits remain.",
+      "aliases": "triforce zelda",
+      "sourceUrl": "https://forum.pretendo.network/t/animal-crossing-new-leaf-available-to-everyone-more/16460",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Steel Diver: Sub Wars",
+      "access": "public",
+      "notes": "Listed for public play.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "partial": false,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "IRONFALL: Invasion",
+      "access": "public",
+      "notes": "Listed for public play.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "partial": false,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Yo-kai Watch 2",
+      "access": "public",
+      "notes": "Online play; rankings incomplete.",
+      "aliases": "",
+      "sourceUrl": "https://forum.pretendo.network/t/animal-crossing-new-leaf-available-to-everyone-more/16460",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Yo-kai Watch Blasters",
+      "access": "public",
+      "notes": "Regional matchmaking restrictions apply.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Dr. Mario: Miracle Cure",
+      "access": "public",
+      "notes": "Public online play announced May 2025.",
+      "aliases": "",
+      "sourceUrl": "https://forum.pretendo.network/t/animal-crossing-new-leaf-available-to-everyone-more/16460",
+      "evidence": "Official Pretendo announcement/support",
+      "partial": false,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Super Mario Maker for Nintendo 3DS",
+      "access": "public",
+      "notes": "100 Mario Challenge; browsing unreliable.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Team Kirby Clash Deluxe",
+      "access": "public",
+      "notes": "Listed public; SpotPass unavailable.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Pokémon Rumble World",
+      "access": "public",
+      "notes": "Listed public; SpotPass unavailable.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Pokémon X / Y",
+      "access": "tester",
+      "notes": "PSS trading/battles require tester access.",
+      "aliases": "pokemon xy pss trading battles",
+      "sourceUrl": "https://forum.pretendo.network/t/pokemon-y-online-servers/29077",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Pokémon Omega Ruby / Alpha Sapphire",
+      "access": "tester",
+      "notes": "PSS trading/battles require tester access.",
+      "aliases": "pokemon oras pss trading battles",
+      "sourceUrl": "https://forum.pretendo.network/t/pokemon-y-online-servers/29077",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Monster Hunter XX",
+      "access": "tester",
+      "notes": "Tester access; patch compatibility matters.",
+      "aliases": "mhxx double cross",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "F1 2011",
+      "access": "tester",
+      "notes": "Tester channel announced December 2025.",
+      "aliases": "",
+      "sourceUrl": "https://forum.pretendo.network/t/service-update-2025-12-08-acnl-game-servers-more/25381",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Metroid Prime: Federation Force / Blast Ball",
+      "access": "tester",
+      "notes": "Tester channel; Blast Ball scope.",
+      "aliases": "",
+      "sourceUrl": "https://forum.pretendo.network/t/service-update-2025-12-08-acnl-game-servers-more/25381",
+      "evidence": "Official Pretendo announcement/support",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Ice Station Z",
+      "access": "tester",
+      "notes": "Lobbies/chat; limitations remain.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Resident Evil: The Mercenaries 3D",
+      "access": "tester",
+      "notes": "Listed tester-only.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Puyo Puyo Tetris",
+      "access": "tester",
+      "notes": "Listed tester-only; further testing needed.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Resident Evil: Revelations",
+      "access": "development",
+      "notes": "Not a confirmed public release.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "RPG Maker Fes",
+      "access": "development",
+      "notes": "Listed in development.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    },
+    {
+      "game": "Pokémon Sun / Moon / Ultra Sun / Ultra Moon",
+      "access": "unconfirmed",
+      "notes": "No public support confirmed here.",
+      "aliases": "",
+      "sourceUrl": "https://wiki.pretendo.zip/game-support-status",
+      "evidence": "Community status listing",
+      "featureSource": "https://wiki.pretendo.zip/game-support-status",
+      "partial": true,
+      "checkedDate": "2026-11-02"
+    }
+  ]
+}

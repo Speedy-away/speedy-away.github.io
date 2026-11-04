@@ -1,0 +1,24 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {
+      "id": "dead-island-dev-installer-v2",
+      "resourceId": "dead-island-dev-installer-v2",
+      "title": "Dead Island Series Developer Menu Installer V2",
+      "platform": "PS3",
+      "category": ["Games", "Dead Island"],
+      "project": "Developer Menu Installer",
+      "version": "V2",
+      "gameVersion": "Not stated by source",
+      "filename": "Dead Island Series Dev Menu Installer V2 [HEN&CFW].rar",
+      "url": "https://www.mediafire.com/file/ukcihgnjgnolw0v/Dead_Island_Series_Dev_Menu_Installer_V2_%255BHEN%2526CFW%255D.rar/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/dead-island-series-dev-menu-installer",
+      "pages": ["console/ps3/mods/dead-island/index.html"],
+      "archiveRole": ["Builds"],
+      "expectedBytes": 467616167,
+      "maxBytes": 536870912,
+      "verifyArchive": true,
+      "extractionLimits": {"maxDepth": 2, "maxExpandedBytes": 3221225472, "maxMemberBytes": 1073741824, "maxMembers": 6000, "timeoutMs": 600000, "maxTotalExtractedBytes": 3221225472}
+    }
+  ]
+}

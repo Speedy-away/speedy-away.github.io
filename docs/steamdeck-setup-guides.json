@@ -1,0 +1,470 @@
+[
+  {
+    "id": "guide-decky",
+    "title": "Install Decky Loader and your first plugin",
+    "shortTitle": "Decky plugins",
+    "intro": "Decky adds a plugin menu to Game Mode. Start with its stable release and install plugins through the built-in store.",
+    "steps": [
+      "In Desktop Mode, open Decky's official site, download the installer, and follow its stable-release installation instructions.",
+      "Return to Game Mode, press the three-dot Quick Access button, and select the Decky plug tab.",
+      "Open the store icon, search for the plugin's exact name, and select Install.",
+      "Open the installed plugin from the Decky tab. Check Decky and plugin updates after Steam client changes."
+    ],
+    "note": "PowerTools is advanced manual tuning, with no guaranteed FPS gain. ProtonDB Badges shows community reports, separate from Valve's Deck Verified rating.",
+    "sources": [
+      {
+        "url": "https://decky.xyz/",
+        "label": "Decky installation"
+      },
+      {
+        "url": "https://docs.deckthemes.com/CSSLoader/Install/",
+        "label": "Plugin store walkthrough"
+      },
+      {
+        "url": "https://gitlab.com/NGnius/PowerTools",
+        "label": "PowerTools documentation"
+      },
+      {
+        "url": "https://github.com/bschelst/protondb-decky",
+        "label": "ProtonDB Badges project"
+      }
+    ]
+  },
+  {
+    "id": "guide-customization",
+    "title": "Customize Steam menus and game artwork",
+    "shortTitle": "Themes & artwork",
+    "intro": "Use CSS Loader for interface themes and SteamGridDB for game artwork. Both install through Decky's store in Game Mode.",
+    "steps": [
+      "Open Quick Access, select the Decky plug tab, and open its store. Install CSS Loader and SteamGridDB.",
+      "Open CSS Loader from the Decky tab, browse its theme collection, and enable the theme you want to try.",
+      "For artwork, open a game's context menu from your library or its settings cog, then choose Change Artwork.",
+      "Browse SteamGridDB's images or select a local image. Check the result in your library before changing other games."
+    ],
+    "note": "Try one interface theme at a time so you can identify and disable it if a Steam update changes the layout.",
+    "sources": [
+      {
+        "url": "https://docs.deckthemes.com/CSSLoader/Install/",
+        "label": "CSS Loader installation"
+      },
+      {
+        "url": "https://docs.deckthemes.com/",
+        "label": "CSS Loader features and themes"
+      },
+      {
+        "url": "https://github.com/SteamGridDB/decky-steamgriddb",
+        "label": "SteamGridDB usage guide"
+      }
+    ]
+  },
+  {
+    "id": "guide-proton",
+    "title": "Install GE-Proton and select it for one game",
+    "shortTitle": "GE-Proton",
+    "intro": "ProtonUp-Qt manages additional compatibility tools. Install a version first, then choose it separately for the game that needs it.",
+    "steps": [
+      "In Desktop Mode, install ProtonUp-Qt from Discover or use the Linux download on its official site.",
+      "Open ProtonUp-Qt, select your Steam installation, choose Add version, and select the GE-Proton version you need.",
+      "Wait for installation to finish, then fully restart Steam so it can find the new compatibility tool.",
+      "Open the game's Properties, select Compatibility, enable the specific compatibility-tool option, and select the installed GE-Proton version."
+    ],
+    "note": "Compatibility varies by game. Keep a working configuration available and test changes one game at a time.",
+    "sources": [
+      {
+        "url": "https://davidotek.github.io/protonup-qt/",
+        "label": "ProtonUp-Qt installation"
+      },
+      {
+        "url": "https://github.com/DavidoTek/ProtonUp-Qt/discussions/411",
+        "label": "Selecting a compatibility tool"
+      }
+    ]
+  },
+  {
+    "id": "guide-windows-games",
+    "title": "Choose a launcher for non-Steam Windows games",
+    "shortTitle": "Windows games",
+    "intro": "Choose the workflow that matches your game's source. Heroic, Lutris, and Bottles each manage their own installations and settings.",
+    "steps": [
+      "Use Heroic for your Epic, GOG, or Amazon library. Sign into the relevant service and install a game you own.",
+      "Use Lutris for a supported game installer or another collection. Follow that game's installation instructions and test its launcher entry.",
+      "Use Bottles for a separate Windows software environment. Create a Gaming bottle and follow the app's installer instructions inside it.",
+      "Once the game works in Desktop Mode, use the launcher's Steam shortcut option where available, then test the shortcut in Game Mode."
+    ],
+    "note": "Pick one suitable workflow for each installation; adding more launchers does not fix an incompatible game.",
+    "sources": [
+      {
+        "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki",
+        "label": "Heroic documentation"
+      },
+      {
+        "url": "https://lutris.net/downloads",
+        "label": "Lutris on SteamOS"
+      },
+      {
+        "url": "https://docs.usebottles.com/getting-started/installation",
+        "label": "Bottles installation"
+      },
+      {
+        "url": "https://docs.usebottles.com/getting-started/environments",
+        "label": "Bottles Gaming environment"
+      }
+    ]
+  },
+  {
+    "id": "guide-emulation",
+    "title": "Set up emulation and organize your library",
+    "shortTitle": "Emulation",
+    "intro": "Choose EmuDeck or RetroDECK as your starting setup. Steam ROM Manager handles library shortcuts and artwork for an existing collection.",
+    "steps": [
+      "In Desktop Mode, follow EmuDeck's installer guide or install RetroDECK from Discover and complete its first-run setup.",
+      "Choose your storage location, then copy your own game dumps and required BIOS files into the setup's documented folders.",
+      "Launch one game through the chosen frontend and check its controls before importing a larger library.",
+      "If you want individual Steam entries, configure Steam ROM Manager for your emulator paths, preview the results, and save only the shortcuts you want."
+    ],
+    "note": "EmuDeck and RetroDECK are alternative setups. Their documentation explains supported formats, folder locations, and emulator-specific requirements.",
+    "sources": [
+      {
+        "url": "https://manual.emudeck.com/install-guide/1_index/",
+        "label": "EmuDeck setup guide"
+      },
+      {
+        "url": "https://retrodeck.readthedocs.io/en/latest/wiki_devices/steamdeck/steamdeck-start/",
+        "label": "RetroDECK Steam Deck setup"
+      },
+      {
+        "url": "https://github.com/SteamGridDB/steam-rom-manager/wiki",
+        "label": "Steam ROM Manager guide"
+      }
+    ]
+  },
+  {
+    "id": "guide-moonlight",
+    "title": "Pair Moonlight with a gaming PC",
+    "shortTitle": "PC streaming",
+    "intro": "Moonlight receives the stream on your Deck. Sunshine runs on the gaming PC that renders and launches the games.",
+    "steps": [
+      "Install Sunshine on the host PC using its official instructions, start it, and complete the initial configuration.",
+      "Install Moonlight on the Deck and connect both devices to the same local network for the first pairing.",
+      "Open Moonlight and select the PC. If it is not discovered, add the PC's local IP address manually.",
+      "Enter the PIN shown by Moonlight in Sunshine's PIN page on the host, then select a game or application to test."
+    ],
+    "note": "Keep the host PC running while streaming. Confirm local play works before following the projects' separate remote-network instructions.",
+    "sources": [
+      {
+        "url": "https://github.com/moonlight-stream/moonlight-docs/wiki/Setup-Guide",
+        "label": "Moonlight pairing guide"
+      },
+      {
+        "url": "https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2getting__started.html",
+        "label": "Sunshine setup and PIN pairing"
+      }
+    ]
+  },
+  {
+    "id": "guide-chiaki",
+    "title": "Register a PS4 or PS5 with chiaki-ng",
+    "shortTitle": "PlayStation streaming",
+    "intro": "Set up your own PlayStation console first, then register chiaki-ng. Start with the Deck and console on the same home network.",
+    "steps": [
+      "Enable Remote Play in your console's settings. Use the official configuration guide for the different PS4 and PS5 menu paths.",
+      "Install and open chiaki-ng in Desktop Mode. Keep the console powered on and select it when it is discovered.",
+      "Follow chiaki-ng's PSN account and registration guide. Use its automatic registration flow or the documented console-link PIN method.",
+      "Confirm the console is marked registered, then open it and test a game locally before configuring optional rest-mode wake or remote access."
+    ],
+    "note": "Use the guide matching your console and chosen registration method; account registration and console pairing are separate setup steps.",
+    "sources": [
+      {
+        "url": "https://chiaki-ng.github.io/chiaki-ng/setup/configuration/",
+        "label": "Console and PSN registration"
+      },
+      {
+        "url": "https://chiaki-ng.github.io/chiaki-ng/setup/",
+        "label": "chiaki-ng setup overview"
+      }
+    ]
+  },
+  {
+    "id": "guide-files",
+    "title": "Move files between your Deck and another device",
+    "shortTitle": "File transfers",
+    "intro": "LocalSend transfers files over your local network. Install it on both devices and keep its receive window available on the destination.",
+    "steps": [
+      "Install LocalSend on the Deck in Desktop Mode and on the phone or computer holding your files.",
+      "Connect both devices to the same local network and open LocalSend on each device so they can discover one another.",
+      "On the sending device, choose the files, select Send, and pick the receiving device's displayed name.",
+      "Confirm the incoming transfer on the receiving device. Wait for completion, then open its receive folder and check the files."
+    ],
+    "note": "If discovery fails, check the project's network troubleshooting instructions. A guest Wi-Fi network may separate connected devices.",
+    "sources": [
+      {
+        "url": "https://localsend.org/",
+        "label": "LocalSend download and overview"
+      },
+      {
+        "url": "https://github.com/localsend/localsend#setup",
+        "label": "LocalSend network setup"
+      }
+    ]
+  },
+  {
+    "id": "guide-flatpak",
+    "title": "Fix a Flatpak folder permission or game dependency",
+    "shortTitle": "Permissions & fixes",
+    "intro": "Use Flatseal for a specific app's folder access. Use Protontricks only when a game's instructions require a Windows component or prefix change.",
+    "steps": [
+      "Close the affected application, open Flatseal, and select that application's entry rather than changing permissions for every app.",
+      "For an inaccessible library folder, add only its required path under Filesystem, Other files. Use read-only access when sufficient.",
+      "Restart the affected app and test access. Use Flatseal's Reset button if your permission changes cause problems.",
+      "For a documented Protontricks fix, launch the game once through Steam with its selected Proton tool, close it, then select it in Protontricks.",
+      "Apply only the components or actions named by the game's instructions, then test the game again."
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/tchx84/Flatseal/blob/master/DOCUMENTATION.md",
+        "label": "Flatseal permission reference"
+      },
+      {
+        "url": "https://github.com/tchx84/Flatseal",
+        "label": "Flatseal reset and restart"
+      },
+      {
+        "url": "https://github.com/Matoking/protontricks",
+        "label": "Protontricks instructions"
+      }
+    ]
+  },
+  {
+    "id": "guide-sync",
+    "title": "Sync a selected folder with Syncthing",
+    "shortTitle": "Folder syncing",
+    "intro": "Set up a shared folder between your own devices. Start with a small test folder before choosing a game-save or document folder.",
+    "steps": [
+      "In Desktop Mode, unpack the official Linux AMD64 build and start its syncthing executable following the project guide. Start Syncthing on your other device too.",
+      "Open the local browser interface shown by Syncthing. Add the other device using its device ID, and accept the matching device on that device.",
+      "Add a folder with the path you want to share. Select the paired device, then accept the shared folder and choose its destination on the receiving device.",
+      "Copy a test file into the shared folder and wait for both devices to report that they are up to date. Keep Syncthing running while you need synchronization."
+    ],
+    "note": "Sync propagates edits and deletions. Keep independent save backups; optional versioning archives incoming changes and is configured separately on each device.",
+    "sources": [
+      {
+        "url": "https://docs.syncthing.net/intro/getting-started.html",
+        "label": "Device and folder setup"
+      },
+      {
+        "url": "https://docs.syncthing.net/users/versioning.html",
+        "label": "File versioning explained"
+      }
+    ]
+  },
+  {
+    "id": "guide-archives",
+    "title": "Inspect and extract an archive with PeaZip",
+    "shortTitle": "Archive extraction",
+    "intro": "Use Desktop Mode to browse a download before extracting it into a chosen folder.",
+    "steps": [
+      "Unpack the official portable Linux Qt6 build and open PeaZip from the extracted application folder, following its Linux setup notes.",
+      "Open the archive in PeaZip and review the file list. For a multipart archive, keep all supplied parts together.",
+      "Choose Extract, select a new destination folder, and review the overwrite and output options. Keep deletion of the original archive disabled.",
+      "Complete extraction and check the output folder in Dolphin. Keep the original archive and use the extracted files only as directed by their project."
+    ],
+    "sources": [
+      {
+        "url": "https://peazip.github.io/peazip-linux.html",
+        "label": "Portable Linux setup"
+      },
+      {
+        "url": "https://peazip.github.io/how-to-extract-rar-zip-archives.html",
+        "label": "Official extraction instructions"
+      }
+    ]
+  },
+  {
+    "id": "guide-storage",
+    "title": "Inspect disk usage and game caches",
+    "shortTitle": "Storage inspection",
+    "intro": "Filelight maps folders in Desktop Mode. Storage Cleaner shows per-game cache and compatibility-data usage through Decky.",
+    "steps": [
+      "Install Filelight from Discover in Desktop Mode. Scan your home folder or the drive you want to inspect.",
+      "Explore larger segments of the ring map to identify the folders using space. Review their paths and contents before making changes.",
+      "For Game Mode inspection, install Storage Cleaner through Decky's stable store, then open it from the Decky tab.",
+      "Read the per-game shader-cache and compatibility-data sizes. Leave cleanup actions untouched while you identify the data and check your backups."
+    ],
+    "note": "Compatibility folders can contain saves and settings. Shader caches may regenerate after removal, so clearing them is not a permanent storage saving.",
+    "sources": [
+      {
+        "url": "https://docs.kde.org/stable_kf6/en/filelight/filelight/index.html",
+        "label": "Filelight handbook"
+      },
+      {
+        "url": "https://github.com/mcarlucci/decky-storage-cleaner",
+        "label": "Storage Cleaner behavior"
+      },
+      {
+        "url": "https://github.com/ValveSoftware/Proton/wiki/Proton-FAQ",
+        "label": "Proton prefixes and saves"
+      }
+    ]
+  },
+  {
+    "id": "guide-library",
+    "title": "Organize library tabs and compare game lengths",
+    "shortTitle": "Library organization",
+    "intro": "TabMaster customizes your library tabs. HLTB for Deck adds completion-time estimates to game pages.",
+    "steps": [
+      "Install TabMaster and HLTB for Deck from Decky's stable plugin store in Game Mode.",
+      "Open TabMaster in Quick Access. Add or edit a tab, then choose a collection, installed-game, or platform filter for the titles you want to see.",
+      "Reorder or hide tabs as needed, then return to the library and check the result.",
+      "Open a game page to see its HowLongToBeat estimates. Use View Details to inspect the source listing, and adjust the bar's appearance in the HLTB plugin menu."
+    ],
+    "note": "Completion times are community estimates. HLTB data can become temporarily unavailable when its upstream service changes.",
+    "sources": [
+      {
+        "url": "https://github.com/Tormak9970/TabMaster",
+        "label": "TabMaster filters and usage"
+      },
+      {
+        "url": "https://github.com/morwy/hltb-for-deck",
+        "label": "HLTB for Deck instructions"
+      }
+    ]
+  },
+  {
+    "id": "guide-bluetooth",
+    "title": "Reconnect Bluetooth devices from your game",
+    "shortTitle": "Bluetooth devices",
+    "intro": "Pair a device once in Steam Settings, then use the Bluetooth plugin as a Quick Access shortcut.",
+    "steps": [
+      "Open Steam Settings, select Bluetooth, enable it, and pair your headphones or controller using the normal Steam interface.",
+      "Open Quick Access with the three-dot button, select Decky, and install Bluetooth from its stable plugin store.",
+      "Open Bluetooth in the Decky tab and select your already paired device to reconnect it.",
+      "Check that the controller or headphones work in your game. If the device is missing, return to Steam Settings and confirm its pairing."
+    ],
+    "note": "The plugin connects existing pairings; it does not replace initial device pairing in Steam Settings.",
+    "sources": [
+      {
+        "url": "https://github.com/Outpox/Bluetooth",
+        "label": "Plugin instructions"
+      },
+      {
+        "url": "https://decky.xyz/",
+        "label": "Decky installation"
+      }
+    ]
+  },
+  {
+    "id": "guide-pause-games",
+    "title": "Pause and resume an offline game",
+    "shortTitle": "Pause games",
+    "intro": "Use manual pause first so you can check how a game behaves before enabling focus-based automation.",
+    "steps": [
+      "Install Pause Games from the stable Decky store, launch an offline game, and save your progress.",
+      "Open Quick Access, select Decky, then open Pause Games to see its running-game list.",
+      "Select the game icon with the pause symbol to stop it. Select its play symbol to resume, then check controls and audio.",
+      "If manual pausing works, optionally enable Pause on focus loss. Test switching apps and turn the option off if the game freezes or loses input."
+    ],
+    "note": "This stops running processes; it does not save their state to disk or release their RAM/VRAM. Network sessions may time out while paused. Save frequently.",
+    "sources": [
+      {
+        "url": "https://github.com/wynn1212/SDH-PauseGames",
+        "label": "Plugin instructions"
+      },
+      {
+        "url": "https://decky.xyz/",
+        "label": "Decky installation"
+      }
+    ]
+  },
+  {
+    "id": "guide-audio-loader",
+    "title": "Install a Steam menu sound pack",
+    "shortTitle": "Menu sounds",
+    "intro": "Audio Loader uses a curated Pack Manager to install sound packs for the Steam interface.",
+    "steps": [
+      "Install Audio Loader from the stable Decky store, then open it from the Decky tab in Quick Access.",
+      "While connected to the internet, open the plugin's Pack Manager and browse the available sound packs.",
+      "Install a pack and select it in Audio Loader. Navigate the Steam menus to check its sound effects.",
+      "Try one pack at a time. Return to Audio Loader to disable or change the selected pack if you want different menu sounds."
+    ],
+    "note": "Menu sound packs are separate from game audio. Use the plugin manager rather than manually copying theme folders.",
+    "sources": [
+      {
+        "url": "https://github.com/EMERALD0874/SDH-AudioLoader",
+        "label": "Plugin instructions"
+      },
+      {
+        "url": "https://decky.xyz/",
+        "label": "Decky installation"
+      }
+    ]
+  },
+  {
+    "id": "guide-animations",
+    "title": "Choose a custom startup animation",
+    "shortTitle": "Startup animations",
+    "intro": "Animation Changer manages installed startup animations and can choose a different one each boot.",
+    "steps": [
+      "Install Animation Changer from Decky's stable plugin store and open it from Quick Access.",
+      "Open its animation browser, choose a startup animation from SteamDeckRepo, and install it.",
+      "Select the installed animation in the plugin. Check Steam Settings > Customization if a different Startup Movie overrides it; follow the project's current setting instructions.",
+      "Restart the Deck when convenient to check the result. Enable randomization only if you want to rotate through your installed animations."
+    ],
+    "note": "The built-in browser supplies startup animations. Suspend-animation configuration is a separate advanced feature described by the project.",
+    "sources": [
+      {
+        "url": "https://github.com/TheLogicMaster/SDH-AnimationChanger",
+        "label": "Plugin instructions"
+      },
+      {
+        "url": "https://decky.xyz/",
+        "label": "Decky installation"
+      }
+    ]
+  },
+  {
+    "id": "guide-autoflatpaks",
+    "title": "Check Flatpak app updates in Game Mode",
+    "shortTitle": "Flatpak updates",
+    "intro": "Start with manual update checks before deciding whether you want background automation.",
+    "steps": [
+      "Install AutoFlatpaks from Decky's stable plugin store and open it from Quick Access.",
+      "Keep automatic upgrading disabled initially. Run a manual check for available Flatpak updates.",
+      "Open the package manager to review the apps and runtimes. Select the updates you want, start the queue, and keep the Deck awake until it finishes.",
+      "Choose a check interval and notification style if useful. Enable upgrading without user interaction only if you want automatic updates."
+    ],
+    "note": "The plugin requires root permissions and currently supports system-installed Flatpaks only. It updates Flatpak apps and runtimes, not SteamOS or Steam games.",
+    "sources": [
+      {
+        "url": "https://github.com/jurassicplayer/decky-autoflatpaks",
+        "label": "Plugin instructions"
+      },
+      {
+        "url": "https://decky.xyz/",
+        "label": "Decky installation"
+      }
+    ]
+  },
+  {
+    "id": "guide-quick-launch",
+    "title": "Open an installed desktop app from Quick Access",
+    "shortTitle": "App shortcuts",
+    "intro": "Quick Launch opens installed apps in Game Mode and can create Steam library shortcuts.",
+    "steps": [
+      "Install the desktop application you need in Desktop Mode and check its normal setup first.",
+      "Return to Game Mode and install Quick Launch from the stable Decky plugin store.",
+      "Open Quick Launch from Decky's Quick Access tab, choose an installed app, and launch it.",
+      "Close that application before opening another through the plugin. Use the plugin's shortcut action if you also want the app listed in your Steam library."
+    ],
+    "note": "The author reports limited maintenance and support for one application at a time. If it stops working after a Steam update, add the application to Steam from Desktop Mode instead.",
+    "sources": [
+      {
+        "url": "https://github.com/Fisch03/SDH-QuickLaunch",
+        "label": "Plugin instructions"
+      },
+      {
+        "url": "https://decky.xyz/",
+        "label": "Decky installation"
+      }
+    ]
+  }
+]

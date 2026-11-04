@@ -1,0 +1,120 @@
+{
+  "status": "Published and live verified",
+  "checkedAt": "2026-11-03T23:44:02.624Z",
+  "focusedTests": {
+    "passed": 342,
+    "failed": 0
+  },
+  "measurements": {
+    "before": {
+      "extraTileCalculations": 60,
+      "extraVersionListReplacements": 5,
+      "visibleTiles": 12,
+      "consoleSends": 0
+    },
+    "after": {
+      "extraTileCalculations": 0,
+      "extraVersionListReplacements": 0,
+      "visibleTiles": 12,
+      "consoleSends": 0
+    }
+  },
+  "patchCatalogues": {
+    "ps4Games": 98,
+    "ps5Games": 101,
+    "consoleInitialTiles": 18,
+    "consoleTileImages": 0,
+    "desktopArtworkRetained": true,
+    "allTitleIdsAndDownloadXMLPreserved": true
+  },
+  "improvements": [
+    "Patch pages debounce console search, precompute search metadata and append new tiles without replacing focused controls",
+    "Catalogue calculations are reused while search, firmware, browser detection and visible batch are unchanged",
+    "Active Load details and busy/uncertain transfer guards still refresh on every state update",
+    "Version-list controls retain their DOM and focus when only selected/busy state changes",
+    "Workspace startup tolerates omitted optional search/game/legacy controls",
+    "Preserve latest browser-handoff lock in the catalogue cache key and keep lowercase Pages routes"
+  ],
+  "verification": {
+    "status": "passed",
+    "bytes": 863277371,
+    "pagesLinks": 3816,
+    "nativeScriptsUnchanged": 898,
+    "cachedResourcesRetained": 1536,
+    "runtimeDocumentsOptimized": 218,
+    "offloadedFiles": 281,
+    "compactAliasesVerified": 6905,
+    "sharedCatalogueFiles": 3,
+    "routingBytes": {
+      "full": 1090441,
+      "runtime": 247734
+    },
+    "activeRuntimeFiles": 259,
+    "issues": 0
+  },
+  "preservation": {
+    "nativeFilesChanged": 0,
+    "downloadsChanged": 0,
+    "readyPackagesChanged": 0,
+    "allOlderVersionsRetained": true,
+    "advertisingIntegrationUnchanged": true
+  },
+  "legacyAudit": {
+    "baselineCommit": "d3bf8a5",
+    "selectedExistingAuditTests": 26,
+    "baselinePassed": 17,
+    "baselineFailed": 9,
+    "currentPassed": 18,
+    "currentFailed": 8,
+    "fixed": "Missing optional workspace controls no longer crash startup.",
+    "remaining": "Missing private historical audit files and expectations predating current homepage/first-party routing/Details labels.",
+    "excludedFromFocusedRun": [
+      "host-gta505-continuation.test.cjs",
+      "host-language-labels.test.cjs",
+      "host-next-batch.test.cjs",
+      "host-repository-review.test.cjs",
+      "host-self-hosted.test.cjs"
+    ]
+  },
+  "limits": [
+    "No physical-console FPS, native execution or browser rendering test",
+    "Browser automation is disabled in Work settings"
+  ],
+  "integratedBase": "360d394cc837fe08b2980ff8428b9037e9c3c187",
+  "canonicalSite": "https://speedy-away.github.io/wwb-host/",
+  "commit": "d37a2b00d588aa19a2fb4f51651b36341c6dd39a",
+  "liveVerification": {
+    "patchDownloadXMLsVerified": 280,
+    "changedAssetsVerified": 3,
+    "status": "passed",
+    "checkedAt": "2026-11-03T23:51:43.761Z",
+    "revision": "d37a2b00d588aa19a2fb4f51651b36341c6dd39a",
+    "run": 41741965896,
+    "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41741965896",
+    "livePages": 1149,
+    "sharedCatalogueFiles": 3,
+    "aliasesVerified": 6905,
+    "pagesBuild": {
+      "revision": "d37a2b00d588aa19a2fb4f51651b36341c6dd39a",
+      "base": "/wwb-host",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 863277371,
+      "budget": 922746880,
+      "files": 6177,
+      "offloadedFiles": 281,
+      "nativeScriptsUnchanged": 898,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+      "routingBytes": {
+        "full": 1090441,
+        "runtime": 247734
+      },
+      "activeRuntimeFiles": 259,
+      "sharedCatalogueFiles": 3
+    },
+    "limits": [
+      "Static HTTP and authored adapter verification only; no browser or native console execution"
+    ]
+  }
+}

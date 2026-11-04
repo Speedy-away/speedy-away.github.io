@@ -1,0 +1,118 @@
+{
+  "updatedAt": "2026-11-04T00:49:16.743Z",
+  "status": "Integration checkpoint for the user-requested new redesign/migration chat; publish the finished redesign at the new root domain.",
+  "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
+  "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
+  "publicURL": "https://speedy-away.github.io/",
+  "oldPublicURL": "https://speedy-away.github.io/wwb-host/",
+  "userRequestedNewChat": true,
+  "userRequestedPush": true,
+  "requests": [
+    "Full PlayStation-themed redesign of homepage, PS4/PS5 hosts and related pages, with supplied game artwork as backgrounds and improved cards.",
+    "Animated background with a lightweight console mode: the user previously reported severe PS4/PS5 lag. Keep decorative scripts out of native execution documents.",
+    "Fix inconsistent image frames, resize artwork without cutting off content, fetch missing game artwork, and take honest visual previews during redesign.",
+    "Credits page linked from the top taskbar.",
+    "PS4 and PS5 game patch install/load workflows using actual supported native services; include supported PS4 games running on PS5 and more source-confirmed PS5-host mods. XML patch files are not executable payloads.",
+    "Audit every local WebKit route, exact firmware coverage, ELF/BIN transfers, native download/PKG queue handling and error/progress behavior. Do not claim physical console execution was verified.",
+    "Update descriptive titles, descriptions, canonical/OG URLs, keywords and tags, including PS4 jailbreak/WebKit 14.00 and mod menus. Preserve the main whatwhatboy.com red design; only update its relevant metadata/links.",
+    "Migrate the complete preserved host repository/history to the existing speedy-away.github.io repository. Retain the old repo and all old downloads/releases; do not overwrite its destination .git or remove source history."
+  ],
+  "build": {
+    "directory": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/wwb-migration-checkpoint-20261104",
+    "status": "passed",
+    "bytes": 863570471,
+    "publicLinks": 3839,
+    "localRuntimeConfigs": 38,
+    "runtimeHandoffConfigs": 2,
+    "nativeScriptsUnchanged": 898,
+    "cachedResources": 1536,
+    "pinnedRuntimeFiles": 319,
+    "issues": 0
+  },
+  "tests": {
+    "preFinalRemoteMerge": {
+      "tests": 367,
+      "passed": 367
+    },
+    "postMergeInitial": {
+      "tests": 393,
+      "passed": 389,
+      "failed": 4
+    },
+    "pending": "All source regressions are resolved. Rebuild/version/archive/release the latest helper only after the new redesign and root-domain routing are frozen, then rerun the complete suite with no test-name exclusions.",
+    "mergedSource": {
+      "tests": 393,
+      "passed": 393,
+      "failed": 0,
+      "log": "tmp/host-migration-checkpoint-tests.tap",
+      "excluded": "Strict current-helper snapshot equality is intentionally deferred until the redesign/new-domain helper rebuild; it remains intact in the test source."
+    }
+  },
+  "archive": {
+    "items": 4997,
+    "fileRecords": 8616,
+    "present": 8616,
+    "missing": 0,
+    "note": "Six stale paths were repaired from explicit verified relocation history. No files restored, fetched, moved or deleted."
+  },
+  "receiver": {
+    "version": "2026.11.02.20",
+    "activated": true,
+    "ps4Items": 542,
+    "ps5Items": 350,
+    "oldRecordsPreserved": 588,
+    "retainedGoldHENNativeMappings": 33,
+    "engineBytesUnchanged": true
+  },
+  "sender": {
+    "version": "2.1.0+4642d2affd19",
+    "bytes": 106840279,
+    "sha256": "5295c1c33d14f3fb069da7cf074a51b24315750afcef243c63b96d8e2ba5fdd8",
+    "release": "https://github.com/Speedy-away/wwb-host/releases/tag/sender-2.1.0-4642d2affd19",
+    "archived": true,
+    "published": true,
+    "note": "This exact immutable helper was built before the final newer remote UI merge; preserve it and every earlier snapshot. Rebuild/version/archive/release a new helper after redesign. ZIPs >=95 MiB stay ignored in Git."
+  },
+  "migrationRisks": [
+    "BASE must become empty for the new root site. Adapt publisher, verifier, canonical URLs, JSON runtime/handoff fields, 404 and generated Home links together; root Home must not redirect to whatwhatboy.com.",
+    "Critical: raw download URLs currently combine old WWB-HOST repository with build GITHUB_SHA. A new-repository SHA must point to the repository actually containing its artifact. Preserve old pinned raw/release URLs rather than silently changing them.",
+    "Audit sender release API/allowlists, fixed trusted public-host metadata, new receiver job origin, popup fork/source links, host-file-entry.js and style-host-pages.cjs. The old uppercase /WWB-HOST/ URL returns404; /wwb-host/ currently returns200.",
+    "Native guards already accept root /hosts/runtime paths. Preserve same-origin, exact firmware/path, trusted gesture, one-use ticket, reload/BFcache and durable uncertain-attempt locks. No global replacement in original native modules/BIN/ELF.",
+    "The new domain shares origin with the current Pages project. Existing local/session storage persists. Never auto-clear old native attempt locks; reject obsolete path-bound receipts.",
+    "Preserve 5 primary PS4 families and 3 disjoint PS5 families (builtin23+KARO subset6+ntfargo33=62 exact firmware versions). Preserve other original hosts as documented rather than inventing compatibility.",
+    "Maintain 319 active native-file pins, original JS/BIN/ELF identities, cache closure, 38 public runtime JSON checks, native handoff JSON checks, shared/lazy catalogues, private-inventory exclusions and size budget.",
+    "Browser automation was disabled in Work settings in this chat. Check available browser tools in the new chat. Do not bypass the restriction or invent screenshots. Visual previews and physical console operation must be reported honestly."
+  ],
+  "assets": [
+    "C:/Users/whatw/Desktop/kratos-atreus-alfheim-god-of-war.avif",
+    "C:/Users/whatw/Desktop/dedds.jpg",
+    "C:/Users/whatw/Desktop/Key-Art-Images-Light-for-Feb-11-Blog_200304_205427.jpg",
+    "C:/Users/whatw/Desktop/official-call-of-duty-black-ops-3-description-and-box-art-v0-m36M9Ft2wZQ9aGwpra-5opFKuOJuCA0d5Dw0dbzRVyQ.webp",
+    "C:/Users/whatw/Desktop/sss.jpg",
+    "C:/Users/whatw/Desktop/gvs0d0g5dzwf1.jpg"
+  ],
+  "references": [
+    "C:/Users/whatw/AppData/Local/Temp/codex-clipboard-41560932-b126-4773-8672-ffb8053c6123.png",
+    "C:/Users/whatw/AppData/Local/Temp/codex-clipboard-9eefb419-1a4b-437e-b7b4-3d61bc8ff43d.png",
+    "C:/Users/whatw/AppData/Local/Temp/codex-clipboard-58f901ce-ae95-46b8-b859-dad30103ebe2.png",
+    "C:/Users/whatw/AppData/Local/Temp/codex-clipboard-d5381c4a-97e8-4b40-95d3-cf62268bb640.png",
+    "C:/Users/whatw/AppData/Local/Temp/codex-clipboard-868db4f0-62ea-48b8-bf4f-cae7308730a4.png"
+  ],
+  "constraints": [
+    "Read AGENTS.md and docs/migration/status.json. Also read the main whatsite docs/console-expansion-handoff.json before touching its metadata.",
+    "Keep all old versions and archives. F:/whatsite-backup-downloads-etc is the authorized archive, using scripts/download-archive-layout.cjs and full source/version/size/SHA inventory.",
+    "Do not execute downloaded/native code or refetch recorded quarantined files. Test authored guards with inert fixtures only.",
+    "The user asked payload cards and their popups to have outlines and no images; retain that behavior while giving games/artwork proper consistent frames.",
+    "No videos added. Match exact platform, firmware, game version/title ID and engine requirements; PS4 binaries do not become PS5 native payloads merely because the PS5 runs some PS4 games.",
+    "Prefer source-verified real install/load actions and truthful unsupported states. Never fake native writes, installation, execution or successful payload loading."
+  ],
+  "integration": {
+    "previousCheckpoint": "9cca712",
+    "remoteMerged": "072f4333ea10296d0e9d8bb999ce9edbb3719eab",
+    "nativeRouteFirmwareCases": 76,
+    "builtinPS5FirmwareCases": 23,
+    "homepageLanguageMountRestored": true,
+    "sourceFrozen": true,
+    "pushedOldSite": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T18:44:41.357Z",
+  "status": "prepared-awaiting-archive",
+  "scope": "Four exact ready BINs for PS4 5.05. Use the targeted importer and normal permission tooling for the F: archive. mirror:false retains original public Downloads; no source archive or helper binary is included.",
+  "jobs": [
+    {
+      "id": "host-legacy-firmware-gamerhack-oysters505-100",
+      "title": "Oysters · RDR2 1.00 · PS4 5.05 · GamerHack",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "1.00"
+      ],
+      "project": "Oysters",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.00.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "version": "game 1.00 - PS4 5.05 - GamerHack 505 23c946a7f85f - 09925fe9288b",
+      "filename": "OystersMenu-v1.00.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/505/OystersMenu-v1.00.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1260864,
+      "expectedSha256": "09925fe9288bd9e68f49ffaffba3e92fb6ddb1c8cf416e16251cdef53f19a67a",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/rdr2/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "a658ceafd4b580c1bfd71173f9c7e6ec4ec91d4c",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "sourceFunction": "load_Oysters100",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "gameVersion": "1.00",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "Oysters",
+      "license": "No redistribution licence established for this exact compiled build; original upstream download only."
+    },
+    {
+      "id": "host-legacy-firmware-gamerhack-oysters505-113",
+      "title": "Oysters · RDR2 1.13 · PS4 5.05 · GamerHack",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "1.13"
+      ],
+      "project": "Oysters",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.13.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "version": "game 1.13 - PS4 5.05 - GamerHack 505 23c946a7f85f - 38f847706303",
+      "filename": "OystersMenu-v1.13.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/505/OystersMenu-v1.13.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1260864,
+      "expectedSha256": "38f847706303c2c2b5b71102073ac86fa534f1bc09b6c40129275a53b0c81718",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/rdr2/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "5d14a719a814a38a9e2d3083b07e815f7760686a",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "sourceFunction": "load_Oysters113",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "gameVersion": "1.13",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "Oysters",
+      "license": "No redistribution licence established for this exact compiled build; original upstream download only."
+    },
+    {
+      "id": "host-legacy-firmware-gamerhack-oysters505-119",
+      "title": "Oysters · RDR2 1.19 · PS4 5.05 · GamerHack",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "1.19"
+      ],
+      "project": "Oysters",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.19.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "version": "game 1.19 - PS4 5.05 - GamerHack 505 23c946a7f85f - 93fd71c737f4",
+      "filename": "OystersMenu-v1.19.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/505/OystersMenu-v1.19.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1260864,
+      "expectedSha256": "93fd71c737f4433f72dd594685303e23183859fa448dfafefc15bd8906676f7e",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/rdr2/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "563eab1efea2447849115fb12a86d98ff6ae43a9",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "sourceFunction": "load_Oysters119",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "gameVersion": "1.19",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "Oysters",
+      "license": "No redistribution licence established for this exact compiled build; original upstream download only."
+    },
+    {
+      "id": "host-legacy-firmware-gamerhack-oysters505-124",
+      "title": "Oysters · RDR2 1.24 · PS4 5.05 · GamerHack",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "1.24"
+      ],
+      "project": "Oysters",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.24.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "version": "game 1.24 - PS4 5.05 - GamerHack 505 23c946a7f85f - b5566c5629c8",
+      "filename": "OystersMenu-v1.24.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/505/OystersMenu-v1.24.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1260864,
+      "expectedSha256": "b5566c5629c86f8860ba190537e0c2a2e220c879f469a155b924467b975ec08d",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/rdr2/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "9ec99c1ae2c4133edc4f39ac90f65890598ced8f",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+      "sourceFunction": "load_Oysters124",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "gameVersion": "1.24",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "Oysters",
+      "license": "No redistribution licence established for this exact compiled build; original upstream download only."
+    }
+  ]
+}

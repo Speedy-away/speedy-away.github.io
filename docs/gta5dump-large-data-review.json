@@ -1,0 +1,409 @@
+{
+  "checkedAt": "2026-11-02T15:03:40.701Z",
+  "policy": "Read-only public HTML, README and folder listing review. No repository archive, clone, extraction or execution.",
+  "apiStatus": 403,
+  "projects": [
+    {
+      "repo": "GTA5dump/GtaV_2.1",
+      "branch": "main",
+      "commit": "8b6fbec85361c835df1f8e4d70f77ea79a655f03",
+      "classification": "reference-data-and-script-templates",
+      "label": "GTA V reference data & script templates",
+      "note": "Hashes, model images, globals/locals, native references and script templates. This is not an original GTA game-engine source release or a complete mod menu.",
+      "compatibility": "Global offset folders identify versions1.60/build2628,1.61/build2699,1.64/build2802,1.66/build2824,1.66/build2845 and1.67/build2944. No later game-build support is asserted.",
+      "sourceArchiveAdvice": "User requested all repositories; a full original snapshot is a data-heavy archive including model images. Keep its data classification visible.",
+      "rootFiles": [
+        {
+          "name": "Global_Offsets",
+          "path": "Global_Offsets",
+          "type": "directory"
+        },
+        {
+          "name": "Natives",
+          "path": "Natives",
+          "type": "directory"
+        },
+        {
+          "name": "Offsets",
+          "path": "Offsets",
+          "type": "directory"
+        },
+        {
+          "name": "PedModels",
+          "path": "PedModels",
+          "type": "directory"
+        },
+        {
+          "name": "PedModelsLow",
+          "path": "PedModelsLow",
+          "type": "directory"
+        },
+        {
+          "name": "Weapons",
+          "path": "Weapons",
+          "type": "directory"
+        },
+        {
+          "name": "_Template_ModScripts",
+          "path": "_Template_ModScripts",
+          "type": "directory"
+        },
+        {
+          "name": "boats",
+          "path": "boats",
+          "type": "directory"
+        },
+        {
+          "name": "commercials",
+          "path": "commercials",
+          "type": "directory"
+        },
+        {
+          "name": "compacts",
+          "path": "compacts",
+          "type": "directory"
+        },
+        {
+          "name": "coupes",
+          "path": "coupes",
+          "type": "directory"
+        },
+        {
+          "name": "cycles",
+          "path": "cycles",
+          "type": "directory"
+        },
+        {
+          "name": "emergency",
+          "path": "emergency",
+          "type": "directory"
+        },
+        {
+          "name": "heist",
+          "path": "heist",
+          "type": "directory"
+        },
+        {
+          "name": "helicopters",
+          "path": "helicopters",
+          "type": "directory"
+        },
+        {
+          "name": "industrial",
+          "path": "industrial",
+          "type": "directory"
+        },
+        {
+          "name": "military",
+          "path": "military",
+          "type": "directory"
+        },
+        {
+          "name": "motorcycles",
+          "path": "motorcycles",
+          "type": "directory"
+        },
+        {
+          "name": "muscle",
+          "path": "muscle",
+          "type": "directory"
+        },
+        {
+          "name": "off-road",
+          "path": "off-road",
+          "type": "directory"
+        },
+        {
+          "name": "open-wheel",
+          "path": "open-wheel",
+          "type": "directory"
+        },
+        {
+          "name": "planes",
+          "path": "planes",
+          "type": "directory"
+        },
+        {
+          "name": "sedans",
+          "path": "sedans",
+          "type": "directory"
+        },
+        {
+          "name": "service",
+          "path": "service",
+          "type": "directory"
+        },
+        {
+          "name": "sport-classic",
+          "path": "sport-classic",
+          "type": "directory"
+        },
+        {
+          "name": "sports",
+          "path": "sports",
+          "type": "directory"
+        },
+        {
+          "name": "super",
+          "path": "super",
+          "type": "directory"
+        },
+        {
+          "name": "suvs",
+          "path": "suvs",
+          "type": "directory"
+        },
+        {
+          "name": "trailer",
+          "path": "trailer",
+          "type": "directory"
+        },
+        {
+          "name": "trains",
+          "path": "trains",
+          "type": "directory"
+        },
+        {
+          "name": "utility",
+          "path": "utility",
+          "type": "directory"
+        },
+        {
+          "name": "vans",
+          "path": "vans",
+          "type": "directory"
+        },
+        {
+          "name": "Locations",
+          "path": "Locations",
+          "type": "file"
+        },
+        {
+          "name": "PedHash",
+          "path": "PedHash",
+          "type": "file"
+        },
+        {
+          "name": "PickupHash",
+          "path": "PickupHash",
+          "type": "file"
+        },
+        {
+          "name": "README.md",
+          "path": "README.md",
+          "type": "file"
+        },
+        {
+          "name": "VehicleHash",
+          "path": "VehicleHash",
+          "type": "file"
+        },
+        {
+          "name": "WeaponComponentHash",
+          "path": "WeaponComponentHash",
+          "type": "file"
+        },
+        {
+          "name": "WeaponHash",
+          "path": "WeaponHash",
+          "type": "file"
+        }
+      ],
+      "rootItemCount": 39,
+      "readme": {
+        "name": "GtaV_2.1",
+        "url": "https://raw.githubusercontent.com/GTA5dump/GtaV_2.1/main/README.md",
+        "status": 200,
+        "text": "# GtaV_2\n\n## Join The [NHA GTA Discord](https://discord.gg/3EQvmNMr2c)!\n\n# What Is Inside This Repo?\n(Everything Is Made To Easily Code Your Application To Use This Repo As A Place To Grab Images Ect)\n\n(Note: I Dont Research And Add Any Vehicles From GTA Online, These Were Added By People Messaging Me!)\n\n## Hashes For Almost Everything\n[Weapon](https://github.com/dr-NHA/GtaV_2/blob/main/WeaponHash), \n[Vehicle](https://github.com/dr-NHA/GtaV_2/blob/main/VehicleHash), \n[Pickup](https://github.com/dr-NHA/GtaV_2/blob/main/PickupHash), \n[Ped](https://github.com/dr-NHA/GtaV_2/blob/main/PedHash), \n[Weapon Component](https://github.com/dr-NHA/GtaV_2/blob/main/WeaponComponentHash)\n\n\n## Model Images For Cars, Peds & Weapons\n[Weapons](https://github.com/dr-NHA/GtaV_2/tree/main/Weapons)\n\n[Peds](https://github.com/dr-NHA/GtaV_2/tree/main/PedModels), \n[Peds (Low Quality)](https://github.com/dr-NHA/GtaV_2/tree/main/PedModelsLow)\n\nVehicle Images: \n[Boats](https://github.com/dr-NHA/GtaV_2/tree/main/boats), \n[Compacts](https://github.com/dr-NHA/GtaV_2/tree/main/compacts), \n[Coupes](https://github.com/dr-NHA/GtaV_2/tree/main/coupes), \n[Cycles](https://github.com/dr-NHA/GtaV_2/tree/main/cycles), \n[Emergency](https://github.com/dr-NHA/GtaV_2/tree/main/emergency), \n[Heist](https://github.com/dr-NHA/GtaV_2/tree/main/heist), \n[Helicopters](https://github.com/dr-NHA/GtaV_2/tree/main/helicopters), \n[Industrial](https://github.com/dr-NHA/GtaV_2/tree/main/industrial), \n[Military](https://github.com/dr-NHA/GtaV_2/tree/main/military), \n[Motorcycles](https://github.com/dr-NHA/GtaV_2/tree/main/motorcycles), \n[Muscle](https://github.com/dr-NHA/GtaV_2/tree/main/muscle), \n[Off Road](https://github.com/dr-NHA/GtaV_2/tree/main/off-road), \n[Open Wheel](https://github.com/dr-NHA/GtaV_2/tree/main/open-wheel), \n[Planes](https://github.com/dr-NHA/GtaV_2/tree/main/planes), \n[Sedans](https://github.com/dr-NHA/GtaV_2/tree/main/sedans), \n[Service](https://github.com/dr-NHA/GtaV_2/tree/main/service), \n[Sport Classic](https://github.com/dr-NHA/GtaV_2/tree/main/sport-classic), \n[Sports](https://github.com/dr-NHA/GtaV_2/tree/main/sports), \n[Super](https://github.com/dr-NHA/GtaV_2/tree/main/super), \n[Suvs](https://github.com/dr-NHA/GtaV_2/tree/main/suvs), \n[Trailer](https://github.com/dr-NHA/GtaV_2/tree/main/trailer), \n[Trains](https://github.com/dr-NHA/GtaV_2/tree/main/trains), \n[Utility](https://github.com/dr-NHA/GtaV_2/tree/main/utility), \n[Vans](https://github.com/dr-NHA/GtaV_2/tree/main/vans)\n\n\n## [Globals, Locals & Other Scripting Stuff](https://github.com/dr-NHA/GtaV_2/tree/main/Global_Offsets) (Updated Via My [GTAV C Source Scanner](https://github.com/dr-NHA/GTAV-C-Source-Scanner))\n\n## Currently Known And Unknown Natives\n[Known Natives](https://github.com/dr-NHA/GtaV_2/tree/main/Natives/Natives.dat), \n[Unknown Natives](https://github.com/dr-NHA/GtaV_2/tree/main/Natives/NativesUnknown.dat)\n\n\n# Please Post Issues Of Anything You Want To Add Or Fix!\n"
+      },
+      "nestedTrees": [
+        {
+          "name": "GtaV_2.1",
+          "folder": "Global_Offsets",
+          "url": "https://github.com/GTA5dump/GtaV_2.1/tree/main/Global_Offsets",
+          "status": 200,
+          "paths": [
+            "Global_Offsets",
+            "Global_Offsets/V1.60_Build_2628.Offsets",
+            "Global_Offsets/V1.61_Build_2699.Offsets",
+            "Global_Offsets/V1.64_Build_2802.Offsets",
+            "Global_Offsets/V1.66_Build_2824.Offsets",
+            "Global_Offsets/V1.66_Build_2845.Offsets",
+            "Global_Offsets/V1.67_Build_2944.Offsets",
+            "Global_Offsets/Versions",
+            "Natives",
+            "Offsets",
+            "PedModels",
+            "PedModelsLow",
+            "Weapons",
+            "_Template_ModScripts",
+            "boats",
+            "commercials",
+            "compacts",
+            "coupes",
+            "cycles",
+            "emergency",
+            "heist",
+            "helicopters",
+            "industrial",
+            "military",
+            "motorcycles",
+            "muscle",
+            "off-road",
+            "open-wheel",
+            "planes",
+            "sedans",
+            "service",
+            "sport-classic",
+            "sports",
+            "super",
+            "suvs",
+            "trailer",
+            "trains",
+            "utility",
+            "vans",
+            "Locations",
+            "PedHash",
+            "PickupHash",
+            "README.md",
+            "VehicleHash",
+            "WeaponComponentHash",
+            "WeaponHash"
+          ]
+        },
+        {
+          "name": "GtaV_2.1",
+          "folder": "_Template_ModScripts",
+          "url": "https://github.com/GTA5dump/GtaV_2.1/tree/main/_Template_ModScripts",
+          "status": 200,
+          "paths": [
+            "_Template_ModScripts",
+            "_Template_ModScripts/Advanced",
+            "_Template_ModScripts/Basic",
+            "Global_Offsets",
+            "Natives",
+            "Offsets",
+            "PedModels",
+            "PedModelsLow",
+            "Weapons",
+            "boats",
+            "commercials",
+            "compacts",
+            "coupes",
+            "cycles",
+            "emergency",
+            "heist",
+            "helicopters",
+            "industrial",
+            "military",
+            "motorcycles",
+            "muscle",
+            "off-road",
+            "open-wheel",
+            "planes",
+            "sedans",
+            "service",
+            "sport-classic",
+            "sports",
+            "super",
+            "suvs",
+            "trailer",
+            "trains",
+            "utility",
+            "vans",
+            "Locations",
+            "PedHash",
+            "PickupHash",
+            "README.md",
+            "VehicleHash",
+            "WeaponComponentHash",
+            "WeaponHash"
+          ]
+        }
+      ],
+      "evidence": [
+        "https://github.com/GTA5dump/GtaV_2.1/tree/8b6fbec85361c835df1f8e4d70f77ea79a655f03",
+        "https://raw.githubusercontent.com/GTA5dump/GtaV_2.1/8b6fbec85361c835df1f8e4d70f77ea79a655f03/README.md"
+      ]
+    },
+    {
+      "repo": "GTA5dump/NHA-Cleaned-Decompiled-Scripts",
+      "branch": "main",
+      "commit": "76fad386e3d047e50e7b4eeec3271ccf0df137aa",
+      "classification": "decompiled-scripts",
+      "label": "Cleaned decompiled GTA scripts",
+      "note": "README explicitly describes cleaned decompiled scripts for comparing updates and finding globals. Do not label them original Rockstar engine source or a working menu.",
+      "compatibility": "Observed script folders are Version1.61 Build2699,1.64 Build2802,1.66 Build2824,1.66 Build2845 and1.67 Build2944.",
+      "sourceArchiveAdvice": "User requested all repositories; keep the complete original snapshot under Source Code with an explicit decompiled-script label, preserving per-version folders.",
+      "rootFiles": [
+        {
+          "name": "Cleaned_Decompiled_Scripts",
+          "path": "Cleaned_Decompiled_Scripts",
+          "type": "directory"
+        },
+        {
+          "name": "README.md",
+          "path": "README.md",
+          "type": "file"
+        }
+      ],
+      "rootItemCount": 2,
+      "readme": {
+        "name": "NHA-Cleaned-Decompiled-Scripts",
+        "url": "https://raw.githubusercontent.com/GTA5dump/NHA-Cleaned-Decompiled-Scripts/main/README.md",
+        "status": 200,
+        "text": "# NHA-Cleaned-Decompiled-Scripts\nGTA CLEANED Decompiled Scripts For Newer Updates,\nUsed For Creating Scripts Ect For Automatically Finding Globals Or Whatever You Want :)\n\nCleaned For The Same Formatting For Each Update (Shouldnt Be A Single Extra Space (In Theory!))\n\n# Cleaned By [NHA C Source Scanner](https://github.com/dr-NHA/GTAV-C-Source-Scanner)\n"
+      },
+      "nestedTrees": [
+        {
+          "name": "NHA-Cleaned-Decompiled-Scripts",
+          "folder": "Cleaned_Decompiled_Scripts",
+          "url": "https://github.com/GTA5dump/NHA-Cleaned-Decompiled-Scripts/tree/main/Cleaned_Decompiled_Scripts",
+          "status": 200,
+          "paths": [
+            "Cleaned_Decompiled_Scripts",
+            "Cleaned_Decompiled_Scripts/Version 1.61 Build 2699",
+            "Cleaned_Decompiled_Scripts/Version 1.64 Build 2802",
+            "Cleaned_Decompiled_Scripts/Version 1.66 Build 2824",
+            "Cleaned_Decompiled_Scripts/Version 1.66 Build 2845",
+            "Cleaned_Decompiled_Scripts/Version 1.67 Build 2944",
+            "README.md"
+          ]
+        }
+      ],
+      "evidence": [
+        "https://github.com/GTA5dump/NHA-Cleaned-Decompiled-Scripts/tree/76fad386e3d047e50e7b4eeec3271ccf0df137aa",
+        "https://raw.githubusercontent.com/GTA5dump/NHA-Cleaned-Decompiled-Scripts/76fad386e3d047e50e7b4eeec3271ccf0df137aa/README.md"
+      ]
+    },
+    {
+      "repo": "GTA5dump/bronze",
+      "branch": "main",
+      "commit": "a98a34ee90daeecd8e1c10ea3be1aa16c568cdfe",
+      "classification": "incomplete-project",
+      "label": "Bronze · solution file only",
+      "note": "The root contains only MH_Base_V2.sln. It references MH_Base_V2/MH_Base_V2.vcxproj, which is absent. No C/C++ implementation files appear in the public root.",
+      "compatibility": "No exact game build or working build support established.",
+      "sourceArchiveAdvice": "Preserve the original solution-only snapshot if archiving all repositories; do not present it as a complete or ready-to-build source project.",
+      "rootFiles": [
+        {
+          "name": "MH_Base_V2.sln",
+          "path": "MH_Base_V2.sln",
+          "type": "file"
+        }
+      ],
+      "rootItemCount": 1,
+      "readme": {
+        "name": "bronze",
+        "url": "https://raw.githubusercontent.com/GTA5dump/bronze/main/README.md",
+        "status": 404,
+        "text": "404: Not Found"
+      },
+      "nestedTrees": [],
+      "evidence": [
+        "https://github.com/GTA5dump/bronze/tree/a98a34ee90daeecd8e1c10ea3be1aa16c568cdfe",
+        "https://raw.githubusercontent.com/GTA5dump/bronze/a98a34ee90daeecd8e1c10ea3be1aa16c568cdfe/MH_Base_V2.sln"
+      ]
+    }
+  ]
+}

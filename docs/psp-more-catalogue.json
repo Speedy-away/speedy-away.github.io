@@ -1,0 +1,714 @@
+{
+  "schemaVersion": 1,
+  "scope": "psp-more",
+  "reviewed": "2026-11-02",
+  "items": [
+    {
+      "id": "ark4",
+      "title": "ARK-4 · final release",
+      "category": "Setup",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/PSP-Archive/ARK-4/releases/tag/v42069r206",
+      "author": "ARK Team",
+      "description": "Pinned final ARK-4 custom firmware bundle. Upstream development has moved to ARK-5.",
+      "compatibility": "Retail PSP-1000, 2000, 3000, Go and E1000 (Street); official 6.60/6.61 for the live-loader route. Existing CFW needs the separate official migration instructions.",
+      "install": "Copy ARK_01234 to PSP/SAVEDATA and ARK_Loader to PSP/GAME on the same storage device. Launch ARK Loader from Game. Follow the official cIPL guide separately for permanent installation.",
+      "files": [
+        {
+          "name": "ARK4.zip",
+          "version": "v4.20.69 r206",
+          "sourceUrl": "https://github.com/PSP-Archive/ARK-4/releases/download/v42069r206/ARK4.zip",
+          "local": "/downloads/psp-more/ark4/v42069r206/ARK4.zip",
+          "bytes": 40193265,
+          "sha256": "d38f3dda6f18b783bdb05a9c1bf6ed46bf4cbd7963a66db4eca9f6b2fd32c483",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "ARK_01234/VBOOT.PBP",
+            "ARK_01234/XBOOT.PBP",
+            "ARK_Loader/EBOOT.PBP",
+            "PC/MagicMemoryCreator/TM/DCARK/ARK_01234/VBOOT.PBP",
+            "PC/MagicMemoryCreator/TM/DCARK/ARK_01234/XBOOT.PBP",
+            "PSP/FinalSpeed/EBOOT.PBP",
+            "PSP/ARK_Full_Installer/EBOOT.PBP",
+            "PSP/ARK_cIPL/EBOOT.PBP",
+            "PSP/ARK_150Addon/EBOOT.PBP",
+            "PSP/ARK_DC/EBOOT.PBP",
+            "PSP/ARK_DC/ARK_01234/VBOOT.PBP",
+            "PSP/ARK_DC/ARK_01234/XBOOT.PBP",
+            "PSP/ARK_Uninstaller/EBOOT.PBP",
+            "PSVita/PSPCFW/NPUZ01234/EBOOT.PBP",
+            "PSVita/PSPCFW/NPUZ01234/PBOOT.PBP",
+            "PSVita/PS1CFW/SCPS10084/EBOOT.PBP",
+            "UPDATE/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-ark4",
+          "platform": "PSP",
+          "category": [
+            "Setup"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/ark4.png",
+      "imageCredit": "ARK Team · ICON0 embedded in official PSP build",
+      "imageSource": "https://github.com/PSP-Archive/ARK-4/releases/download/v42069r206/ARK4.zip"
+    },
+    {
+      "id": "cxmb",
+      "title": "CXMB · custom theme plugin",
+      "category": "Plugins",
+      "format": "PRX",
+      "source": "https://github.com/cello0314/CXMB/releases/tag/v1.2.1",
+      "author": "Poison and CXMB contributors; cello0314 fork",
+      "description": "Theme plugin with relative-path loading fixes. Required for CTF themes; PTF files use the built-in theme menu.",
+      "compatibility": "CXMB 3.71–6.61 Classic / Infinity lineage. Use a CTF made for the exact firmware; the collection below is pinned to the distributor’s stated versions.",
+      "install": "Save as ms0:/seplugins/cxmb/cxmb.prx (Memory Stick) or ef0:/seplugins/cxmb/cxmb.prx (Go internal). On ARK-4 enable only VSH/XMB through Custom Launcher plugin installation, then restart VSH.",
+      "files": [
+        {
+          "name": "cxmb.prx",
+          "version": "v1.2.1",
+          "sourceUrl": "https://github.com/cello0314/CXMB/releases/download/v1.2.1/cxmb.prx",
+          "local": "/downloads/psp-more/cxmb/v1.2.1/cxmb.prx",
+          "sha256": "f7b9a705df7c0a527a7e3703adda8ef7ba4f5636979c5f09bada3aa1d8885ffa",
+          "bytes": 24822,
+          "verifiedFormat": "PRX · module signature verified",
+          "nativePbpPaths": [],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-cxmb",
+          "platform": "PSP",
+          "category": [
+            "Plugins"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/jumbled-ctf.jpg",
+      "imageCredit": "CXMB example: Jumbled theme · screenshot hosted by pspunk",
+      "imageSource": "https://www.pspunk.com/psp-themes/"
+    },
+    {
+      "id": "material-design",
+      "title": "Material Design Tiny White",
+      "category": "Themes",
+      "format": "PTF",
+      "source": "https://www.pspunk.com/psp-themes/",
+      "author": "JohnEdwa (as named in distributed file); hosted by pspunk",
+      "description": "A compact Material-inspired XMB icon theme. Preview supplied by the theme distributor.",
+      "compatibility": "Distributor lists 6.60 and 6.61; official or custom firmware. No CXMB needed.",
+      "install": "Copy the PTF to ms0:/PSP/THEME/ or ef0:/PSP/THEME/ on Go internal storage. Apply in Settings → Theme Settings → Theme.",
+      "imageSource": "https://pspunk.com/files/pic_0002-1.jpg",
+      "files": [
+        {
+          "name": "MaterialDesignTinyWhite_JohnEdwa_v09.ptf",
+          "version": "v0.9 (distributed file)",
+          "sourceUrl": "https://www.pspunk.com/files/theme/ptf/MaterialDesignTinyWhite_JohnEdwa_v09.ptf",
+          "local": "/downloads/psp-more/material-design/v0.9/MaterialDesignTinyWhite_JohnEdwa_v09.ptf",
+          "bytes": 249792,
+          "sha256": "858087c4b06e60ba0edf482e14631043abbfcf878fc2a237b93b41bc4b30239f",
+          "verifiedFormat": "PTF · PTF container header verified",
+          "nativePbpPaths": [],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-material-design",
+          "platform": "PSP",
+          "category": [
+            "Themes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clearxmb-ptf",
+      "title": "clearXMB black · PTF",
+      "category": "Themes",
+      "format": "PTF",
+      "source": "https://www.pspunk.com/psp-themes/",
+      "author": "Original author unlisted by distributor; hosted by pspunk",
+      "description": "Dark XMB icon theme using the PSP’s native theme format. Preview supplied by pspunk.",
+      "compatibility": "Distributor lists 6.60 and 6.61; official or custom firmware. No CXMB needed.",
+      "install": "Copy clearXMBblack.ptf to ms0:/PSP/THEME/ or ef0:/PSP/THEME/. Select it in Settings → Theme Settings → Theme.",
+      "imageSource": "https://pspunk.com/files/pic_0003-2.jpg",
+      "files": [
+        {
+          "name": "clearXMBblack.ptf",
+          "version": "Distributor snapshot 2026-11-02",
+          "sourceUrl": "https://www.pspunk.com/files/theme/ptf/clearXMBblack.ptf",
+          "local": "/downloads/psp-more/clearxmb-ptf/2026-11-02/clearXMBblack.ptf",
+          "bytes": 215036,
+          "sha256": "0a43e3917096b0475f5a4c2c008c22a2183b94f3a2b1c8cd6a9ed99b0779da08",
+          "verifiedFormat": "PTF · PTF container header verified",
+          "nativePbpPaths": [],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-clearxmb-ptf",
+          "platform": "PSP",
+          "category": [
+            "Themes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jumbled-ctf",
+      "title": "Jumbled · CTF 6.60",
+      "category": "Themes",
+      "format": "CTF",
+      "source": "https://www.pspunk.com/psp-themes/",
+      "author": "Original author unlisted by distributor; hosted by pspunk",
+      "description": "A full XMB layout theme. Keep this 6.60-labelled original separate from PTF themes and converted CTF builds.",
+      "compatibility": "File is explicitly jumbled660.ctf. Distributor lists its collection for 6.60/6.61; use on 6.60 CFW + CXMB. No independent 6.61/ARK-5 compatibility claim.",
+      "install": "Copy to ms0:/PSP/THEME/ or ef0:/PSP/THEME/. Enable CXMB in VSH/XMB, restart VSH, then choose it in Theme Settings.",
+      "imageSource": "https://pspunk.com/files/pic_0010.jpg",
+      "files": [
+        {
+          "name": "jumbled660.ctf",
+          "version": "6.60 · distributor snapshot 2026-11-02",
+          "sourceUrl": "https://www.pspunk.com/files/theme/ctf/jumbled660.ctf",
+          "local": "/downloads/psp-more/jumbled-ctf/6.60/jumbled660.ctf",
+          "bytes": 6742963,
+          "sha256": "8db608712ced0506d72be4972d2d769b7c3c6b1c34d8eb09eb2c96f18aa83563",
+          "verifiedFormat": "CTF · PTF container header verified",
+          "nativePbpPaths": [],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-jumbled-ctf",
+          "platform": "PSP",
+          "category": [
+            "Themes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "allure-ctf",
+      "title": "Allure v2 · CTF 6.60",
+      "category": "Themes",
+      "format": "CTF",
+      "source": "https://www.pspunk.com/psp-themes/",
+      "author": "Original author unlisted by distributor; hosted by pspunk",
+      "description": "Alternative XMB styling with a matching distributor screenshot. This is the original 6.60-labelled CTF.",
+      "compatibility": "6.60 CFW + CXMB for this allure.v2.660.ctf build. Distributor also lists 6.61, but that has not been independently hardware-tested here.",
+      "install": "Copy to ms0:/PSP/THEME/ or ef0:/PSP/THEME/. Enable CXMB only for VSH/XMB, restart VSH and apply through Theme Settings.",
+      "imageSource": "https://pspunk.com/files/pic_0017.jpg",
+      "files": [
+        {
+          "name": "allure.v2.660.ctf",
+          "version": "v2 · 6.60",
+          "sourceUrl": "https://www.pspunk.com/files/theme/ctf/allure.v2.660.ctf",
+          "local": "/downloads/psp-more/allure-ctf/v2-6.60/allure.v2.660.ctf",
+          "bytes": 7183768,
+          "sha256": "ee6f45ae9d2e696456ae2edb2a0f9bed56f5720fd9d34b0d4963c6d89caf2a87",
+          "verifiedFormat": "CTF · PTF container header verified",
+          "nativePbpPaths": [],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-allure-ctf",
+          "platform": "PSP",
+          "category": [
+            "Themes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apollo",
+      "title": "Apollo Save Tool",
+      "category": "Apps",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/bucanero/apollo-psp/releases/tag/v2.3.2",
+      "author": "Damián Parrino (bucanero)",
+      "description": "Manage PSP and PS1 saves, export/import and apply source-provided save patches.",
+      "compatibility": "Homebrew-enabled PSP. Save decryption requires game-specific keys; author documents SGKeyDumper / SGDeemer. Back up original saves before editing.",
+      "install": "Extract APOLLO into PSP/GAME. Author scans Memory Stick saves in ms0:/PSP/SAVEDATA/ and PSP Go internal memory. Launch from Game.",
+      "expectedPath": "PSP/GAME/APOLLO/EBOOT.PBP",
+      "files": [
+        {
+          "name": "apollo-psp.zip",
+          "version": "v2.3.2",
+          "sourceUrl": "https://github.com/bucanero/apollo-psp/releases/download/v2.3.2/apollo-psp.zip",
+          "local": "/downloads/psp-more/apollo/v2.3.2/apollo-psp.zip",
+          "bytes": 7362152,
+          "sha256": "3ed0ccf9b5eb2d5b10af014630d6ff57070f63d5e8d6a725b3a5619da5e71d41",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "APOLLO/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-apollo",
+          "platform": "PSP",
+          "category": [
+            "Apps"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/apollo.png",
+      "imageCredit": "Damián Parrino (bucanero) · ICON0 embedded in official PSP build",
+      "imageSource": "https://github.com/bucanero/apollo-psp/releases/download/v2.3.2/apollo-psp.zip"
+    },
+    {
+      "id": "cmfilemanager",
+      "title": "CMFileManager PSP",
+      "category": "Apps",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/joel16/CMFileManager-PSP/releases/tag/v4.12",
+      "author": "Joel16",
+      "description": "File management, text editing, image/audio playback, archive extraction and FTP.",
+      "compatibility": "Custom firmware. Standard build covers regular PSP and PSP Go without external M2. Use GO-M2 build if the PSP Go has an external memory card.",
+      "install": "Merge the archive’s PSP folder into the storage root, producing PSP/GAME/CMFileManager/EBOOT.PBP. Keep every file together. Select the GO-M2 ZIP for PSP Go with external M2; standard ZIP for other setups. FTP: START → FTP connection, anonymous login, port 1337. Street has no WLAN.",
+      "expectedPath": "PSP/GAME/CMFileManager/EBOOT.PBP",
+      "files": [
+        {
+          "name": "CMFileManager-PSP.zip",
+          "version": "v4.12",
+          "sourceUrl": "https://github.com/joel16/CMFileManager-PSP/releases/download/v4.12/CMFileManager-PSP.zip",
+          "local": "/downloads/psp-more/cmfilemanager/v4.12/CMFileManager-PSP.zip",
+          "bytes": 2648443,
+          "sha256": "498c5e24f1d10696b3faa848da9fa2e08a67e02aac8fd7c553199dcdcc54e678",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "PSP/GAME/CMFileManager/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-cmfilemanager",
+          "platform": "PSP",
+          "category": [
+            "Apps"
+          ]
+        },
+        {
+          "name": "CMFileManager-PSP-GO-M2.zip",
+          "version": "v4.12",
+          "sourceUrl": "https://github.com/joel16/CMFileManager-PSP/releases/download/v4.12/CMFileManager-PSP-GO-M2.zip",
+          "local": "/downloads/psp-more/cmfilemanager/v4.12/CMFileManager-PSP-GO-M2.zip",
+          "label": "PSP Go with external M2 memory",
+          "bytes": 2722300,
+          "sha256": "5ca159e68cd48a6f3f17afac8f7bd14ad6f1800dc1db64beb983c1fea0b87eb4",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "PSP/GAME/CMFileManager/APP.PBP",
+            "PSP/GAME/CMFileManager/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-cmfilemanager",
+          "platform": "PSP",
+          "category": [
+            "Apps"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/cmfilemanager.png",
+      "imageCredit": "Joel16 · ICON0 embedded in official PSP build",
+      "imageSource": "https://github.com/joel16/CMFileManager-PSP/releases/download/v4.12/CMFileManager-PSP.zip"
+    },
+    {
+      "id": "opensupaplex",
+      "title": "OpenSupaplex",
+      "category": "Games",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/sergiou87/open-supaplex/releases/tag/v7.2.2",
+      "author": "Sergio Padrino / sergiou87",
+      "description": "Controller-friendly recreation of the classic puzzle game.",
+      "compatibility": "Homebrew-enabled PSP. Keep included data with the executable; author distributes original resources as freeware.",
+      "install": "Extract the PSP package and copy its app folder intact into PSP/GAME.",
+      "expectedPath": "PSP/GAME/OpenSupaplex/EBOOT.PBP",
+      "files": [
+        {
+          "name": "OpenSupaplex-psp.zip",
+          "version": "v7.2.2",
+          "sourceUrl": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-psp.zip",
+          "local": "/downloads/psp-more/opensupaplex/v7.2.2/OpenSupaplex-psp.zip",
+          "bytes": 5038192,
+          "sha256": "346fd0c62b3c601cc1c2476a58b6cb0d9ee07056f45ed682aaa3696b8e98c380",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "OpenSupaplex/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-opensupaplex",
+          "platform": "PSP",
+          "category": [
+            "Games"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/opensupaplex.png",
+      "imageCredit": "Sergio Padrino / sergiou87 · PIC1 embedded in official PSP build",
+      "imageSource": "https://github.com/sergiou87/open-supaplex/releases/download/v7.2.2/OpenSupaplex-psp.zip"
+    },
+    {
+      "id": "ccleste",
+      "title": "Ccleste",
+      "category": "Ports",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/fjtrujy/ccleste/releases/tag/v1.0.4",
+      "author": "Celeste Classic authors; C port by leiflundgren; PSP port by fjtrujy",
+      "description": "Native C port of Celeste Classic, packaged for PSP.",
+      "compatibility": "Homebrew-enabled PSP. This .tar.gz is a binary release asset, not a source archive. Preserve bundled data.",
+      "install": "Extract the gzip/tar package on the computer and copy the folder containing EBOOT.PBP and its resources into PSP/GAME.",
+      "expectedPath": "PSP/GAME/ccleste/EBOOT.PBP",
+      "files": [
+        {
+          "name": "ccleste_psp-v1.0.4.tar.gz",
+          "version": "v1.0.4",
+          "sourceUrl": "https://github.com/fjtrujy/ccleste/releases/download/v1.0.4/ccleste_psp-v1.0.4.tar.gz",
+          "local": "/downloads/psp-more/ccleste/v1.0.4/ccleste_psp-v1.0.4.tar.gz",
+          "bytes": 2665593,
+          "sha256": "1f54e79fbeb634f354d7f12e7a392ddcc605213f2a33003dce66db6e8bfea288",
+          "verifiedFormat": "TAR.GZ · read verified",
+          "nativePbpPaths": [
+            "ccleste/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-ccleste",
+          "platform": "PSP",
+          "category": [
+            "Ports"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/ccleste.png",
+      "imageCredit": "Celeste Classic authors; C port by leiflundgren; PSP port by fjtrujy · PIC1 embedded in official PSP build",
+      "imageSource": "https://github.com/fjtrujy/ccleste/releases/download/v1.0.4/ccleste_psp-v1.0.4.tar.gz"
+    },
+    {
+      "id": "nzportable",
+      "title": "Nazi Zombies: Portable",
+      "category": "Games",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/nzp-team/nzportable/releases/tag/nightly",
+      "author": "NZ:P team",
+      "description": "Quake-derived standalone zombie survival demake.",
+      "compatibility": "Homebrew-enabled PSP. The project lists PSP-1000 PHAT and PSP-2000+ SLIM. This download is pinned to the recorded nightly build and checksum.",
+      "install": "Author: extract the folder inside the PSP ZIP into PSP/GAME. Preserve all included maps and data.",
+      "expectedPath": "PSP/GAME/nzportable/EBOOT.PBP",
+      "files": [
+        {
+          "name": "nzportable-psp.zip",
+          "version": "2.0.0-indev+20261031133122 · snapshot 2026-11-02",
+          "sourceUrl": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-psp.zip",
+          "local": "/downloads/psp-more/nzportable/nightly--pin-retrieval-date-and-build-version.txt-/nzportable-psp.zip",
+          "bytes": 64684966,
+          "sha256": "e859ceda7068178d67eddac5c03bdb6c3fcdfb2fe78d172e57098105f6ed3590",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "nzportable/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-nzportable",
+          "platform": "PSP",
+          "category": [
+            "Games"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/nzportable.png",
+      "imageCredit": "NZ:P team · PIC1 embedded in official PSP build",
+      "imageSource": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-psp.zip",
+      "buildMarker": {
+        "source": "https://github.com/nzp-team/nzportable/releases/download/nightly/build-version.txt",
+        "value": "2.0.0-indev+20261031133122",
+        "checkedAt": "2026-11-02T08:34:58.618Z"
+      }
+    },
+    {
+      "id": "daedalus",
+      "title": "DaedalusX64",
+      "category": "Emulators",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/DaedalusX64/daedalus/releases/tag/1.1.8",
+      "author": "DaedalusX64 team",
+      "description": "Nintendo 64 emulator with PSP Media Engine audio support.",
+      "compatibility": "Homebrew-enabled PSP. Supply your own N64 ROMs; compatibility and speed vary per game.",
+      "install": "Author: copy the entire DaedalusX64 folder into PSP/GAME. Keep emulator support files together.",
+      "expectedPath": "PSP/GAME/DaedalusX64/EBOOT.PBP",
+      "files": [
+        {
+          "name": "DaedalusX64_1_1_8.zip",
+          "version": "1.1.8",
+          "sourceUrl": "https://github.com/DaedalusX64/daedalus/releases/download/1.1.8/DaedalusX64_1_1_8.zip",
+          "local": "/downloads/psp-more/daedalus/1.1.8/DaedalusX64_1_1_8.zip",
+          "bytes": 35895692,
+          "sha256": "7e734cb48ba092b44a60c61218c5d6789a23db43f4909beb8cb1a783fe658224",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "DaedalusX64/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-daedalus",
+          "platform": "PSP",
+          "category": [
+            "Emulators"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/daedalus.png",
+      "imageCredit": "DaedalusX64 team · PIC1 embedded in official PSP build",
+      "imageSource": "https://github.com/DaedalusX64/daedalus/releases/download/1.1.8/DaedalusX64_1_1_8.zip"
+    },
+    {
+      "id": "picodrive",
+      "title": "PicoDrive",
+      "category": "Emulators",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/irixxxx/picodrive/releases/tag/v2.05",
+      "author": "Notaz and irixxxx contributors",
+      "description": "Sega emulator; this asset is the native PSP build.",
+      "compatibility": "Homebrew-enabled PSP. Supply your own ROMs. Sega/Mega CD requires a suitable user-supplied BIOS. Feature availability and speed depend on PSP build and game.",
+      "install": "Extract and retain the complete PSP package under PSP/GAME/PicoDrive. Consult included README for supported ROM and BIOS names.",
+      "expectedPath": "PSP/GAME/PicoDrive/EBOOT.PBP",
+      "files": [
+        {
+          "name": "PicoDrive_psp_2.05-19d4108.zip",
+          "version": "v2.05",
+          "sourceUrl": "https://github.com/irixxxx/picodrive/releases/download/v2.05/PicoDrive_psp_2.05-19d4108.zip",
+          "local": "/downloads/psp-more/picodrive/v2.05/PicoDrive_psp_2.05-19d4108.zip",
+          "bytes": 1075570,
+          "sha256": "ceb1b1c7e5b9b2f73542d5de1ee6aef387160d8d782f07fd14e018cf9a361407",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "PicoDrive/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-picodrive",
+          "platform": "PSP",
+          "category": [
+            "Emulators"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/picodrive.png",
+      "imageCredit": "Notaz and irixxxx contributors · ICON0 embedded in official PSP build",
+      "imageSource": "https://github.com/irixxxx/picodrive/releases/download/v2.05/PicoDrive_psp_2.05-19d4108.zip",
+      "directSourceOnly": true,
+      "distributionNote": "Original upstream download; private backup retained. The bundled readme restricts commercial redistribution."
+    },
+    {
+      "id": "wagic",
+      "title": "Wagic, the Homebrew",
+      "category": "Games",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/WagicProject/wagic/releases/tag/wagic-v0.25.5",
+      "author": "WagicProject contributors",
+      "description": "Customizable card game engine with computer opponents.",
+      "compatibility": "Homebrew-enabled PSP. This PSP package already contains WTH/Res game resources. The separate core archive is also preserved as an optional resource package; it is not a second required installation.",
+      "install": "Copy the complete WTH folder to PSP/GAME/WTH/. Keep WTH/Res beside EBOOT.PBP. The optional matching core ZIP contains the resource folders at its root; these correspond to WTH/Res/, not PSP/GAME/ itself.",
+      "expectedPath": "PSP/GAME/WTH/EBOOT.PBP",
+      "files": [
+        {
+          "name": "WagicPSP-0255.zip",
+          "version": "wagic-v0.25.5",
+          "sourceUrl": "https://github.com/WagicProject/wagic/releases/download/wagic-v0.25.5/WagicPSP-0255.zip",
+          "local": "/downloads/psp-more/wagic/wagic-v0.25.5/WagicPSP-0255.zip",
+          "bytes": 28947867,
+          "sha256": "529b565225c1887de4f6a9b852d31264ad1fd20c20428a1c1410c3f0417b61a7",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "WTH/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-wagic",
+          "platform": "PSP",
+          "category": [
+            "Games"
+          ]
+        },
+        {
+          "name": "Wagic-core-0255.zip",
+          "version": "wagic-v0.25.5",
+          "sourceUrl": "https://github.com/WagicProject/wagic/releases/download/wagic-v0.25.5/Wagic-core-0255.zip",
+          "local": "/downloads/psp-more/wagic/wagic-v0.25.5/Wagic-core-0255.zip",
+          "label": "Core resources · optional separate archive",
+          "bytes": 54872290,
+          "sha256": "8e56b587d7d308de373807e1b76dc2b91766b8b311d94481f5489180df362ca0",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [],
+          "containsNativeApp": false,
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-wagic",
+          "platform": "PSP",
+          "category": [
+            "Games"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/wagic.png",
+      "imageCredit": "WagicProject contributors · PIC1 embedded in official PSP build",
+      "imageSource": "https://github.com/WagicProject/wagic/releases/download/wagic-v0.25.5/WagicPSP-0255.zip"
+    },
+    {
+      "id": "crosscraft",
+      "title": "CrossCraft Classic",
+      "category": "Games",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/CrossCraft/CrossCraft-Classic/releases/tag/v1.3",
+      "author": "Nathan Bourgeois (IridescentRose), MotoLegacy / CrossCraft",
+      "description": "Independent implementation of Minecraft Classic creative building.",
+      "compatibility": "Homebrew-enabled PSP; project is archived (May 2024). Official project describes Classic v0.30 creative mode, saves and multiplayer; not a Minecraft Java/Bedrock binary.",
+      "install": "Create PSP/GAME/CrossCraft/ and extract all six files from the PSP ZIP into it: EBOOT.PBP, CrossCraft-Classic.prx, default.zip, config.cfg, LICENSE and README.md. Preserve default.zip as the bundled data archive. Multiplayer needs a WLAN-equipped model.",
+      "expectedPath": "PSP/GAME/CrossCraft/EBOOT.PBP",
+      "files": [
+        {
+          "name": "CrossCraft-PSP.zip",
+          "version": "v1.3",
+          "sourceUrl": "https://github.com/CrossCraft/CrossCraft-Classic/releases/download/v1.3/CrossCraft-PSP.zip",
+          "local": "/downloads/psp-more/crosscraft/v1.3/CrossCraft-PSP.zip",
+          "bytes": 11863120,
+          "sha256": "be79e3fcbcd1c2fcdf81d13be052ddb7374735b5f750d4eeb2eaeb3f36aad3f9",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-crosscraft",
+          "platform": "PSP",
+          "category": [
+            "Games"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/crosscraft.png",
+      "imageCredit": "Nathan Bourgeois (IridescentRose), MotoLegacy / CrossCraft · PIC1 embedded in official PSP build",
+      "imageSource": "https://github.com/CrossCraft/CrossCraft-Classic/releases/download/v1.3/CrossCraft-PSP.zip"
+    },
+    {
+      "id": "homebrew-sorter",
+      "title": "Homebrew Sorter Ultimate",
+      "category": "Apps",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/wad11656/Homebrew-Sorter-Ultimate/releases/tag/v1.29",
+      "author": "wad11656",
+      "description": "Sort XMB apps, alphabetize categories and manage PSP Go storage.",
+      "compatibility": "Custom firmware. On PSP Go run from Memory Stick to access Memory Stick storage. Categories can use author's bundled plugin or an existing category_lite.prx.",
+      "install": "Author: copy PSP/GAME/Homebrew Sorter Ultimate to the matching PSP/GAME directory. No Animations edition omits animation frames and XMB song. Use Storage Device selector for Memory Stick/System Storage.",
+      "expectedPath": "PSP/GAME/Homebrew Sorter Ultimate/EBOOT.PBP",
+      "files": [
+        {
+          "name": "No.Animations.-.Homebrew.Sorter.Ultimate.zip",
+          "version": "v1.29",
+          "sourceUrl": "https://github.com/wad11656/Homebrew-Sorter-Ultimate/releases/download/v1.29/No.Animations.-.Homebrew.Sorter.Ultimate.zip",
+          "local": "/downloads/psp-more/homebrew-sorter/v1.29/No.Animations.-.Homebrew.Sorter.Ultimate.zip",
+          "bytes": 2723431,
+          "sha256": "131f15324ccd7f7d4e8da5511ba5deff883abac76d528735133cac5bacb0ceed",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "PSP/GAME/Homebrew Sorter Ultimate/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-homebrew-sorter",
+          "platform": "PSP",
+          "category": [
+            "Apps"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/homebrew-sorter.png",
+      "imageCredit": "wad11656 · PIC1 embedded in official PSP build",
+      "imageSource": "https://github.com/wad11656/Homebrew-Sorter-Ultimate/releases/download/v1.29/No.Animations.-.Homebrew.Sorter.Ultimate.zip"
+    },
+    {
+      "id": "pkgi",
+      "title": "PKGi PSP",
+      "category": "Apps",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://github.com/bucanero/pkgi-psp/releases/tag/v1.1.0",
+      "author": "bucanero",
+      "description": "On-device downloader with a homebrew database and ZIP installation support.",
+      "compatibility": "Custom firmware and a WLAN-equipped PSP for downloads. This homebrew-db package contains a homebrew catalogue. Content requiring a license also requires your own valid console activation and license.",
+      "install": "Copy the full PKGI folder to PSP/GAME/. The homebrew-db asset includes the homebrew list. Config and pkgi.txt live with the app. PSP Go defaults to internal ef0 storage; set storage ms0 in its config to choose Memory Stick. Network use requires WLAN.",
+      "expectedPath": "PSP/GAME/PKGI/EBOOT.PBP",
+      "files": [
+        {
+          "name": "pkgi-psp_homebrew-db.zip",
+          "version": "v1.1.0",
+          "sourceUrl": "https://github.com/bucanero/pkgi-psp/releases/download/v1.1.0/pkgi-psp_homebrew-db.zip",
+          "local": "/downloads/psp-more/pkgi/v1.1.0/pkgi-psp_homebrew-db.zip",
+          "bytes": 5545939,
+          "sha256": "217be4e8821b40861edd81fcb14ab26c0a12d4518b5930ebbe0ac5d6bd092df8",
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "PKGI/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-pkgi",
+          "platform": "PSP",
+          "category": [
+            "Apps"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/pkgi.png",
+      "imageCredit": "bucanero · ICON0 embedded in official PSP build",
+      "imageSource": "https://github.com/bucanero/pkgi-psp/releases/download/v1.1.0/pkgi-psp_homebrew-db.zip"
+    },
+    {
+      "id": "scummvm",
+      "title": "ScummVM",
+      "category": "Emulators",
+      "format": "EBOOT.PBP bundle",
+      "source": "https://www.scummvm.org/downloads/",
+      "author": "ScummVM team",
+      "description": "Adventure game interpreter with a current native PSP package.",
+      "compatibility": "Homebrew-enabled PSP and supported game data you own or official freeware data. All plugins must match exact ScummVM version. 81 MiB official PSP package; updated 18 October 2026.",
+      "install": "Copy the full scummvm folder to PSP/GAME/. Keep its exact-version plugin folder and kbd.zip with EBOOT.PBP. Add supported game data through the launcher. Source paths: ms0:/scummvm_savegames/ and ms0:/scummvm.ini; check ARK Go redirection before assuming an ef0 path.",
+      "expectedPath": "PSP/GAME/scummvm/EBOOT.PBP",
+      "files": [
+        {
+          "name": "scummvm-2026.4.0-psp.zip",
+          "version": "2026.4.0",
+          "sourceUrl": "https://downloads.scummvm.org/frs/scummvm/2026.4.0/scummvm-2026.4.0-psp.zip",
+          "local": "/downloads/psp-more/scummvm/2026.4.0/scummvm-2026.4.0-psp.zip",
+          "sha256": "779926abf21b70e79ec34727396e6e9c80b89ca11f653f982e71a4c430113a98",
+          "bytes": 84983547,
+          "verifiedFormat": "ZIP · CRC verified",
+          "nativePbpPaths": [
+            "scummvm/EBOOT.PBP"
+          ],
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "psp-more-scummvm",
+          "platform": "PSP",
+          "category": [
+            "Emulators"
+          ]
+        }
+      ],
+      "image": "/assets/images/psp-more/scummvm.png",
+      "imageCredit": "ScummVM team · PIC1 embedded in official PSP build",
+      "imageSource": "https://downloads.scummvm.org/frs/scummvm/2026.4.0/scummvm-2026.4.0-psp.zip"
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "nimbus",
+      "title": "Nimbus",
+      "group": "online",
+      "version": "v2.2.0",
+      "project": "https://github.com/PretendoNetwork/nimbus",
+      "description": "Pretendo Network access through its official 3DS network switcher.",
+      "requirements": "Luma3DS 13+ and a prepared 3DS/2DS. Extract the COMPLETE combined 2.2.0 ZIP to the SD root: its IPS patches, certificate and plugin under /3ds/nimbus/update/ are required alongside the CIA or 3DSX. Follow Pretendo’s current guide to enable external FIRMs/modules and game patching. Keep the existing NNID.",
+      "tags": [
+        "Pretendo",
+        "online",
+        "Nimbus",
+        "Luma13+"
+      ],
+      "author": "Pretendo Network",
+      "assets": [
+        {
+          "name": "combined.2.2.0.zip",
+          "url": "https://github.com/PretendoNetwork/nimbus/releases/download/v2.2.0/combined.2.2.0.zip",
+          "format": "ZIP",
+          "label": "Complete Nimbus2.2.0 package"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Nintendo",
+          "url": "https://db.universal-team.net/assets/images/screenshots/nimbus/nintendo.png"
+        },
+        {
+          "description": "Pretendo",
+          "url": "https://db.universal-team.net/assets/images/screenshots/nimbus/pretendo.png"
+        }
+      ],
+      "pages": [
+        "console/retro/3ds-online.html"
+      ],
+      "archiveCategory": [
+        "Online Services"
+      ],
+      "sources": [
+        "https://github.com/PretendoNetwork/nimbus",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://pretendo.network/docs/install/3ds",
+        "https://github.com/PretendoNetwork/website/blob/master/content/docs/install/3ds.md"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.669Z",
+      "image": "/assets/images/3ds-more/apps/nimbus-pretendo.png"
+    },
+    {
+      "id": "netpass",
+      "title": "NetPass",
+      "group": "online",
+      "version": "v2.1.1",
+      "project": "https://gitlab.com/3ds-netpass/netpass",
+      "description": "Exchange StreetPass encounters through the internet, independently of Pretendo’s game servers.",
+      "requirements": "The project requires system software 11.15+ (11.17 recommended) and current Luma3DS. Install CIA on CFW or use3DSX with Homebrew Launcher. NetPass exchanges StreetPass encounters via virtual locations; it does not provide live game multiplayer or indicate Pretendo game support.",
+      "tags": [
+        "StreetPass",
+        "social",
+        "internet"
+      ],
+      "author": "NetPass",
+      "assets": [
+        {
+          "name": "netpass.cia",
+          "url": "https://netpass.cafe/netpass.cia",
+          "format": "CIA"
+        },
+        {
+          "name": "netpass.3dsx",
+          "url": "https://netpass.cafe/netpass.3dsx",
+          "format": "3DSX"
+        }
+      ],
+      "screenshots": [],
+      "pages": [
+        "console/retro/3ds-online.html"
+      ],
+      "archiveCategory": [
+        "Online Services"
+      ],
+      "sources": [
+        "https://gitlab.com/3ds-netpass/netpass",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://netpass.cafe/installation.html"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.670Z",
+      "guide": "https://netpass.cafe/installation.html"
+    },
+    {
+      "id": "ctgp-7",
+      "title": "CTGP-7 Downloader",
+      "group": "mods",
+      "version": "v1.1 downloader",
+      "project": "https://ctgp-7.github.io/",
+      "description": "Install the Mario Kart 7 custom-track and character mod using the publisher-linked on-console downloader.",
+      "requirements": "System software 11.4+ and CFW; your own Mario Kart 7 plus matching-region v1.2 update. USA/EUR/JPN/KOR copies supported; CHN/TWN unsupported. This CIA is a DOWNLOADER, not the full modpack: console internet and the installer’s displayed free-space requirement still apply. CTGP-7 uses its own online network; follow its current routing instructions.",
+      "tags": [
+        "Mario Kart 7",
+        "v1.2",
+        "USA",
+        "EUR",
+        "JPN",
+        "KOR",
+        "downloader"
+      ],
+      "author": "CTGP-7 Team",
+      "assets": [
+        {
+          "name": "CTGP-7_Downloader.cia",
+          "url": "https://github.com/PabloMK7/CTGP-7_Launcher/releases/download/v1.1/CTGP-7_Downloader.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Character selection",
+          "url": "https://db.universal-team.net/assets/images/screenshots/ctgp-7-downloader/character-selection.png"
+        },
+        {
+          "description": "Extra features menu",
+          "url": "https://db.universal-team.net/assets/images/screenshots/ctgp-7-downloader/extra-features-menu.png"
+        },
+        {
+          "description": "Title & cup selection",
+          "url": "https://db.universal-team.net/assets/images/screenshots/ctgp-7-downloader/title-&-cup-selection.png"
+        }
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "archiveCategory": [
+        "Games",
+        "Mario Kart7",
+        "Mods"
+      ],
+      "sources": [
+        "https://ctgp-7.github.io/",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://github.com/PabloMK7/CTGP-7_Launcher/releases/tag/v1.1"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.670Z",
+      "guide": "https://github.com/PabloMK7/CTGP-7_Launcher/releases/tag/v1.1",
+      "image": "/assets/images/3ds-more/apps/ctgp-7.png"
+    },
+    {
+      "id": "ctgp7-save-transfer",
+      "title": "CTGP7-SaveTransfer",
+      "group": "mods",
+      "version": "v0.4r1",
+      "project": "https://github.com/CyberYoshi64/CTGP7-SaveTransfer",
+      "description": "Copy save progress between Mario Kart 7 and CTGP-7 with a dedicated on-console helper.",
+      "requirements": "Back up both saves with Checkpoint before using the copy operation. Requires installed Mario Kart 7 and CTGP-7 data. Select the intended source and destination in the app; the base game and mod normally maintain separate saves.",
+      "tags": [
+        "Mario Kart 7",
+        "CTGP-7",
+        "save transfer",
+        "backup"
+      ],
+      "author": "CyberYoshi64",
+      "assets": [
+        {
+          "name": "CTGP7SaveTransfer.3dsx",
+          "url": "https://github.com/CyberYoshi64/CTGP7-SaveTransfer/releases/download/v0.4r1/CTGP7SaveTransfer.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "CTGP7SaveTransfer.cia",
+          "url": "https://github.com/CyberYoshi64/CTGP7-SaveTransfer/releases/download/v0.4r1/CTGP7SaveTransfer.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "1 main menu",
+          "url": "https://db.universal-team.net/assets/images/screenshots/ctgp7-savetransfer/1-main-menu.png"
+        },
+        {
+          "description": "2 transfer",
+          "url": "https://db.universal-team.net/assets/images/screenshots/ctgp7-savetransfer/2-transfer.png"
+        },
+        {
+          "description": "3 cycle continuation",
+          "url": "https://db.universal-team.net/assets/images/screenshots/ctgp7-savetransfer/3-cycle-continuation.png"
+        }
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "archiveCategory": [
+        "Games",
+        "Mario Kart7",
+        "Mods"
+      ],
+      "sources": [
+        "https://github.com/CyberYoshi64/CTGP7-SaveTransfer",
+        "https://db.universal-team.net/unistore/universal-db.unistore"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.670Z",
+      "image": "/assets/images/3ds-more/apps/ctgp7-save-transfer.png"
+    },
+    {
+      "id": "ctgp7-mod-manager",
+      "title": "CTGP-7 Mod Manager",
+      "group": "mods",
+      "version": "v1.0.0",
+      "project": "https://github.com/Team-BrewSearch/CTGP-7-Mod-Manager",
+      "description": "Manage compatible CTGP-7 add-ons from GameBanana on the console.",
+      "requirements": "Install CTGP-7 and the matching Mario Kart 7 v1.2 game/update first. This manager is not a game or full CTGP-7 pack. Add-ons must match the installed CTGP-7 release; check each creator’s dependencies and restart the launcher after changes. Internet features depend on the upstream catalogue.",
+      "tags": [
+        "Mario Kart 7",
+        "CTGP-7",
+        "cosmetic mods",
+        "manager"
+      ],
+      "author": "NitroShell and Contributors",
+      "assets": [
+        {
+          "name": "CTGP-7-Mod-Manager.3dsx",
+          "url": "https://github.com/Team-BrewSearch/CTGP-7-Mod-Manager/releases/download/v1.0.0/CTGP-7-Mod-Manager.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "CTGP-7-Mod-Manager.cia",
+          "url": "https://github.com/Team-BrewSearch/CTGP-7-Mod-Manager/releases/download/v1.0.0/CTGP-7-Mod-Manager.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "archiveCategory": [
+        "Games",
+        "Mario Kart7",
+        "Mods"
+      ],
+      "sources": [
+        "https://github.com/Team-BrewSearch/CTGP-7-Mod-Manager",
+        "https://db.universal-team.net/unistore/universal-db.unistore"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.670Z"
+    },
+    {
+      "id": "modmoon",
+      "title": "ModMoon",
+      "group": "mods",
+      "version": "v3.0.1",
+      "project": "https://github.com/Swiftloke/ModMoon",
+      "description": "Organise separate mod slots for installed 3DS games and switch between them.",
+      "requirements": "Requires CFW, the corresponding game and a mod built for that game’s exact titleID, region and update. Run its initial title-selection tutorial. Default slot layout: /3ds/ModMoon/<TITLE_ID>/Slot_1/. Follow each mod’s internal layout; do not mix two active code patches for the same game. Exit using Start or its Launch action so the manager saves its state.",
+      "tags": [
+        "mod manager",
+        "LayeredFS",
+        "slots"
+      ],
+      "author": "Swiftloke",
+      "assets": [
+        {
+          "name": "ModMoon.3dsx",
+          "url": "https://github.com/Swiftloke/ModMoon/releases/download/v3.0.1/ModMoon.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "ModMoon.cia",
+          "url": "https://github.com/Swiftloke/ModMoon/releases/download/v3.0.1/ModMoon.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Main menu dark",
+          "url": "https://db.universal-team.net/assets/images/screenshots/modmoon/main-menu-dark.png"
+        },
+        {
+          "description": "Main menu",
+          "url": "https://db.universal-team.net/assets/images/screenshots/modmoon/main-menu.png"
+        },
+        {
+          "description": "Tools menu",
+          "url": "https://db.universal-team.net/assets/images/screenshots/modmoon/tools-menu.png"
+        }
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "archiveCategory": [
+        "Games",
+        "Mod Managers",
+        "Mods"
+      ],
+      "sources": [
+        "https://github.com/Swiftloke/ModMoon",
+        "https://db.universal-team.net/unistore/universal-db.unistore"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.670Z",
+      "image": "/assets/images/3ds-more/apps/modmoon.png"
+    },
+    {
+      "id": "oot3d-randomizer",
+      "title": "OoT3D_Randomizer",
+      "group": "mods",
+      "version": "v4.0.2",
+      "project": "https://github.com/gamestabled/OoT3D_Randomizer",
+      "description": "Generate a new item placement and optional quality-of-life settings for Ocarina of Time 3D on the console.",
+      "requirements": "Requires your own supported Ocarina of Time 3D, CFW and Luma game patching. The v4.0.2 patch source handles USA 0004000000033500 and EUR 0004000000033600; select the correct region in the app. Other regions are not asserted here. Back up the save first: randomised and base-game playthroughs share save data. Generate for 3DS, then launch the game from HOME Menu.",
+      "tags": [
+        "Ocarina of Time 3D",
+        "randomizer",
+        "USA",
+        "EUR",
+        "save backup"
+      ],
+      "author": "gamestabled",
+      "assets": [
+        {
+          "name": "OoT3D_Randomizer.3dsx",
+          "url": "https://github.com/gamestabled/OoT3D_Randomizer/releases/download/v4.0.2/OoT3D_Randomizer.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "OoT3D_Randomizer.cia",
+          "url": "https://github.com/gamestabled/OoT3D_Randomizer/releases/download/v4.0.2/OoT3D_Randomizer.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "archiveCategory": [
+        "Games",
+        "Ocarina of Time3D",
+        "Mods"
+      ],
+      "sources": [
+        "https://github.com/gamestabled/OoT3D_Randomizer",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://raw.githubusercontent.com/gamestabled/OoT3D_Randomizer/v4.0.2/source/patch.cpp"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.671Z"
+    },
+    {
+      "id": "project-restoration",
+      "title": "Project Restoration",
+      "group": "mods",
+      "version": "v1.5.9",
+      "project": "https://restoration.zora.re/",
+      "description": "Restore Majora’s Mask 3D movement and mechanics, with quick mask transforms and quality-of-life improvements.",
+      "requirements": "Luma3DS 10.1+ with game patching. Supports USA 0004000000125500, EUR 0004000000125600 and JPN 00040000000D6E00; Korean release unsupported. Choose v110 only for a cartridge with 1.1 built in; use v100 for unupdated 1.0 or a 1.0/eShop copy updated to 1.1 (v101 is the documented fallback). Copy the chosen variant’s 3ds/code.bps and exheader.bin into /luma/titles/<TITLE_ID>/. Preserve its matching pair.",
+      "tags": [
+        "Majora’s Mask 3D",
+        "quality of life",
+        "USA",
+        "EUR",
+        "JPN",
+        "v100",
+        "v101",
+        "v110"
+      ],
+      "assets": [
+        {
+          "name": "mm3d_project_restoration_v1.5.9-0-ge099fcc.7z",
+          "url": "https://github.com/leoetlino/project-restoration/releases/download/v1.5.9/mm3d_project_restoration_v1.5.9-0-ge099fcc.7z",
+          "format": "7Z",
+          "kind": "patch"
+        }
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "archiveCategory": [
+        "Games",
+        "Majora’s Mask3D",
+        "Mods"
+      ],
+      "sources": [
+        "https://restoration.zora.re/",
+        "https://github.com/leoetlino/project-restoration"
+      ],
+      "checkedAt": "2026-11-02T09:35:00.671Z"
+    },
+    {
+      "id": "mm3d-randomizer",
+      "title": "Majora’s Mask 3D Randomizer",
+      "group": "mods",
+      "version": "v1.5.1 stable",
+      "project": "https://github.com/Z3DR/MM3D_Randomizer",
+      "guide": "https://z3dr.github.io/MM3D_Randomizer/setup-guide-3ds/",
+      "description": "Generate a new item placement and playthrough for Majora’s Mask 3D on the console.",
+      "requirements": "Own USA or EUR Majora’s Mask 3D: 0004000000125500 or 0004000000125600. Use current Luma3DS with game patching. In Game Settings select the matching game revision and 3DS, not Emulator. 1.1 games may take longer while the patch adapts the code. Back up saves and existing /luma/titles/<TITLE_ID>/ patches: a new seed replaces old patch files and shares the base-game save. Do not stack a separately downloaded Project Restoration code patch on top of this randomizer.",
+      "tags": [
+        "Majora’s Mask 3D",
+        "randomizer",
+        "USA",
+        "EUR",
+        "stable",
+        "save backup"
+      ],
+      "assets": [
+        {
+          "name": "MM3D_Randomizer.3dsx",
+          "url": "https://github.com/Z3DR/MM3D_Randomizer/releases/download/v1.5.1/MM3D_Randomizer.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "MM3D_Randomizer.cia",
+          "url": "https://github.com/Z3DR/MM3D_Randomizer/releases/download/v1.5.1/MM3D_Randomizer.cia",
+          "format": "CIA"
+        }
+      ],
+      "archiveCategory": [
+        "Games",
+        "Majora’s Mask 3D",
+        "Mods"
+      ],
+      "sources": [
+        "https://z3dr.github.io/MM3D_Randomizer/setup-guide-3ds/",
+        "https://github.com/Z3DR/MM3D_Randomizer/releases/tag/v1.5.1"
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "checkedAt": "2026-11-02T12:01:42.598Z"
+    },
+    {
+      "id": "vapecord-acnl",
+      "title": "Vapecord · Animal Crossing: New Leaf",
+      "group": "mods",
+      "version": "v3.4.1",
+      "project": "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin",
+      "guide": "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin/wiki/How-to-install",
+      "description": "An on-console Animal Crossing: New Leaf plugin with item, town and gameplay customisation tools.",
+      "requirements": "Requires your own Animal Crossing: New Leaf and Luma’s 3GX plugin loader. Use the archive’s title-ID folder matching the installed region and original/Welcome amiibo edition; preserve its supplied layout and follow the author’s installation guide. The author supports every game region, but that does not establish arbitrary ROM-hack or update compatibility. Back up the town/save before editing. This plugin is not required for Pretendo access; Nimbus and its official service patch remain separate. Follow the server’s mod rules, and do not combine competing default plugins blindly.",
+      "tags": [
+        "Animal Crossing: New Leaf",
+        "3GX plugin",
+        "town customisation",
+        "save backup"
+      ],
+      "assets": [
+        {
+          "name": "Vapecord.Public.zip",
+          "url": "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin/releases/download/v3.4.1/Vapecord.Public.zip",
+          "format": "ZIP",
+          "kind": "patch"
+        }
+      ],
+      "archiveCategory": [
+        "Games",
+        "Animal Crossing New Leaf",
+        "Mods"
+      ],
+      "sources": [
+        "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin/releases/tag/v3.4.1",
+        "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin/wiki/How-to-install"
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "checkedAt": "2026-11-02T12:01:42.599Z"
+    },
+    {
+      "id": "minecraft-classic-textures",
+      "title": "Minecraft 3DS · Classic Textures",
+      "group": "mods",
+      "version": "v1.0.6",
+      "project": "https://github.com/wyndchyme/mc3ds-classic-textures",
+      "description": "A standalone classic-look texture pack for Minecraft: New Nintendo 3DS Edition.",
+      "requirements": "New 3DS / New 3DS XL / New 2DS XL only, with your own Minecraft: New Nintendo 3DS Edition. Use the creator’s documented 1.9.19 setup and Luma game patching. Choose the ZIP matching the game region: USA 00040000001B8700, EUR 000400000017CA00 or JPN 000400000017FD00. Copy the archive’s title-ID folder into SD:/luma/titles/ so its romfs stays inside that folder. The original ZIP retains Mac metadata; that metadata is not required on the SD card. Back up existing texture overrides before merging. This pack replaces Candy resource-pack textures, so it requires access to your own Candy DLC. It does not unlock DLC.",
+      "tags": [
+        "Minecraft: New Nintendo 3DS Edition",
+        "New 3DS only",
+        "1.9.19",
+        "USA",
+        "EUR",
+        "JPN",
+        "LayeredFS"
+      ],
+      "assets": [
+        {
+          "name": "Classic.Textures.Standalone.v1.0.6.EUR.zip",
+          "url": "https://github.com/wyndchyme/mc3ds-classic-textures/releases/download/v1.0.6/Classic.Textures.Standalone.v1.0.6.EUR.zip",
+          "size": 1553626,
+          "format": "ZIP",
+          "kind": "patch",
+          "label": "EUR patch ZIP"
+        },
+        {
+          "name": "Classic.Textures.Standalone.v1.0.6.JPN.zip",
+          "url": "https://github.com/wyndchyme/mc3ds-classic-textures/releases/download/v1.0.6/Classic.Textures.Standalone.v1.0.6.JPN.zip",
+          "size": 1553626,
+          "format": "ZIP",
+          "kind": "patch",
+          "label": "JPN patch ZIP"
+        },
+        {
+          "name": "Classic.Textures.Standalone.v1.0.6.USA.zip",
+          "url": "https://github.com/wyndchyme/mc3ds-classic-textures/releases/download/v1.0.6/Classic.Textures.Standalone.v1.0.6.USA.zip",
+          "size": 1553626,
+          "format": "ZIP",
+          "kind": "patch",
+          "label": "USA patch ZIP"
+        }
+      ],
+      "archiveCategory": [
+        "Games",
+        "Minecraft New Nintendo 3DS Edition",
+        "Mods"
+      ],
+      "sources": [
+        "https://github.com/wyndchyme/mc3ds-classic-textures/releases/tag/v1.0.6",
+        "https://github.com/wyndchyme/mc3ds-modern/blob/main/docs/README.md"
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "checkedAt": "2026-11-02T12:01:42.599Z"
+    },
+    {
+      "id": "minecraft-achievement-art",
+      "title": "Minecraft 3DS · New Achievement Art",
+      "group": "mods",
+      "version": "1.0.1",
+      "project": "https://github.com/wyndchyme/mc3ds-achievements",
+      "description": "A standalone achievement-icon artwork mod for Minecraft: New Nintendo 3DS Edition.",
+      "requirements": "New 3DS / New 3DS XL / New 2DS XL only, with your own Minecraft: New Nintendo 3DS Edition. Use the creator’s documented 1.9.19 setup and Luma game patching. Choose the ZIP matching the game region: USA 00040000001B8700, EUR 000400000017CA00 or JPN 000400000017FD00. Copy the archive’s title-ID folder into SD:/luma/titles/ so its romfs stays inside that folder. The original ZIP retains Mac metadata; that metadata is not required on the SD card. Back up existing texture overrides before merging. This standalone artwork replaces vanilla achievement textures; it is separate from the full Modernization MegaPack.",
+      "tags": [
+        "Minecraft: New Nintendo 3DS Edition",
+        "New 3DS only",
+        "1.9.19",
+        "USA",
+        "EUR",
+        "JPN",
+        "LayeredFS"
+      ],
+      "assets": [
+        {
+          "name": "Achievements.Standalone.1.0.1.EUR.zip",
+          "url": "https://github.com/wyndchyme/mc3ds-achievements/releases/download/1.0.1/Achievements.Standalone.1.0.1.EUR.zip",
+          "size": 50589,
+          "format": "ZIP",
+          "kind": "patch",
+          "label": "EUR patch ZIP"
+        },
+        {
+          "name": "Achievements.Standalone.1.0.1.JPN.zip",
+          "url": "https://github.com/wyndchyme/mc3ds-achievements/releases/download/1.0.1/Achievements.Standalone.1.0.1.JPN.zip",
+          "size": 50589,
+          "format": "ZIP",
+          "kind": "patch",
+          "label": "JPN patch ZIP"
+        },
+        {
+          "name": "Achievements.Standalone.1.0.1.USA.zip",
+          "url": "https://github.com/wyndchyme/mc3ds-achievements/releases/download/1.0.1/Achievements.Standalone.1.0.1.USA.zip",
+          "size": 50589,
+          "format": "ZIP",
+          "kind": "patch",
+          "label": "USA patch ZIP"
+        }
+      ],
+      "archiveCategory": [
+        "Games",
+        "Minecraft New Nintendo 3DS Edition",
+        "Mods"
+      ],
+      "sources": [
+        "https://github.com/wyndchyme/mc3ds-achievements/releases/tag/1.0.1",
+        "https://github.com/wyndchyme/mc3ds-modern/blob/main/docs/README.md"
+      ],
+      "pages": [
+        "console/retro/3ds-mods.html"
+      ],
+      "checkedAt": "2026-11-02T12:01:42.599Z"
+    }
+  ],
+  "checkedAt": "2026-11-02T12:01:42.599Z",
+  "pretendo": {
+    "homepage": "https://pretendo.network/",
+    "guide": "https://pretendo.network/docs/install/3ds",
+    "officialSource": "https://github.com/PretendoNetwork/website/blob/master/content/docs/install/3ds.md",
+    "fetchStatus": {
+      "homepage": 403,
+      "guide": 403,
+      "officialRawSource": 200
+    },
+    "note": "Official website challenge blocked automated retrieval. Installation text was checked in Pretendo’s own website source repository; original Pretendo URLs remain linked."
+  }
+}

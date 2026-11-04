@@ -1,0 +1,61 @@
+{
+  "updatedAt": "2026-11-03T23:59:32.802Z",
+  "status": "Native metadata and receiver20 archived, verified and activated; not hardware-tested",
+  "retainedActions": 33,
+  "addedCatalogRows": 30,
+  "reusedExactOfficialIDs": 3,
+  "totalCatalogItems": 618,
+  "ps4Items": 542,
+  "ps5Items": 350,
+  "boundedPlatformMaximum": 1024,
+  "olderCatalogItemsPreservedUnchanged": 588,
+  "downloadOnDeviceRemovedForRetainedOnly": true,
+  "userSuppliedSpecialDownloadPreserved": true,
+  "sourceDelivery": "Uncompressed upstream source-pinned BIN URLs; three decoded ready BINs pin previously committed exact WWB-HOST Git blobs instead of their compressed provenance files.",
+  "receivers": [
+    {
+      "platform": "ps4",
+      "version": "2026.11.02.20",
+      "immutablePath": "downloads/helpers/console-download-receivers/ps4/2026.11.02.20-9cc45f58fc4a/whatsite-ps4.html",
+      "bytes": 771667,
+      "sha256": "9cc45f58fc4a54c69e14754b4b428adfa57156ac81f2b01e9c88abdcb99ce897",
+      "items": 542,
+      "previousItems": 512,
+      "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps4/retained-2f717510aa96/whatsite-ps4.html"
+    },
+    {
+      "platform": "ps5",
+      "version": "2026.11.02.20",
+      "immutablePath": "downloads/helpers/console-download-receivers/ps5/2026.11.02.20-f83f4a82ba25/whatsite-ps5.html",
+      "bytes": 570248,
+      "sha256": "f83f4a82ba25fa21ed290126583bb844de8ae88d41cc32b5d5e53d29cd3e6e28",
+      "items": 350,
+      "previousItems": 350,
+      "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps5/retained-f83f4a82ba25/whatsite-ps5.html"
+    }
+  ],
+  "receiverActivated": true,
+  "allNonCatalogHTMLIdentical": true,
+  "archive": {
+    "receiverFilesVerified": 2,
+    "globalInventoryMerged": true,
+    "scopedIntake": "docs/.console-expansion-private-inventory/receiver20-2a5fd0a7ce53-private-inventory.json",
+    "itemsAtMerge": 4996,
+    "filesAtMerge": 8724
+  },
+  "migrationRepairs": [
+    "Preserved exact prior version19 QA job set from original workspace after matching report hashes/bytes/paths",
+    "Restored receiver stylesheet byte-identical to existing embedded native companion style"
+  ],
+  "tests": {
+    "passed": 61,
+    "failed": 0,
+    "inertReceiverFixtures": true,
+    "consoleRequests": false,
+    "nativePayloadExecution": false
+  },
+  "remaining": [
+    "Root packages updated sender UI after all authored host pages are frozen",
+    "Physical PS4 download, folder and runtime checks remain untested"
+  ]
+}

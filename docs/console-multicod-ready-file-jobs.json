@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {
+      "id": "matrix-ps4-bo3-100",
+      "title": "MatrixMods · Black Ops 3 · PS4 game 1.00 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.00",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565343630321909790/1565343631374557245/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/BO3_100.elf",
+      "filename": "BO3_100.elf",
+      "expectedBytes": 51072,
+      "expectedSha256": "f676ae332f20e81fc2ac31c450835e198c5d16c0bbaac7361388f9219df458ef",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/BO3_100.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565343630321909790",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565343630321909790/1565343631374557245/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-bo3-resources.json#matrix",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 6,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x1f1e",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    },
+    {
+      "id": "matrix-ps4-bo3-126",
+      "title": "MatrixMods · Black Ops 3 · PS4 game 1.26 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.26",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565343630321909790/1565343631374557245/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/BO3_126.elf",
+      "filename": "BO3_126.elf",
+      "expectedBytes": 55520,
+      "expectedSha256": "27ca886fb12d178c62ecedc3cb64961c60fee5f82d6e4a91ce5ae9ff6f6e815b",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/BO3_126.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565343630321909790",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565343630321909790/1565343631374557245/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-bo3-resources.json#matrix",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 6,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x1fe1",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    },
+    {
+      "id": "matrix-ps4-ghosts-100",
+      "title": "MatrixMods · Ghosts · PS4 game 1.00 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Ghosts",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.00",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565346658869317742/1565346660152909985/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/Ghosts_100.elf",
+      "filename": "Ghosts_100.elf",
+      "expectedBytes": 2162800,
+      "expectedSha256": "11ec8f73e5965a7ed908cfa5d72d344080d4c79ab39dcfad4504172a307700ca",
+      "pages": [
+        "console/mods/ps4/call-of-duty/ghosts/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/Ghosts_100.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565346658869317742",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565346658869317742/1565346660152909985/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-ps5-cod-resources.json#ghosts-matrixmods",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 2,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x0",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    },
+    {
+      "id": "matrix-ps4-ghosts-120",
+      "title": "MatrixMods · Ghosts · PS4 game 1.20 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Ghosts",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.20",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565346658869317742/1565346660152909985/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/Ghosts_120.elf",
+      "filename": "Ghosts_120.elf",
+      "expectedBytes": 2162560,
+      "expectedSha256": "794e3232e862c9f3bf0bd950dbb30e74182e0e0ce6c989ae7efcec5efca4cd6a",
+      "pages": [
+        "console/mods/ps4/call-of-duty/ghosts/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/Ghosts_120.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565346658869317742",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565346658869317742/1565346660152909985/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-ps5-cod-resources.json#ghosts-matrixmods",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 2,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x0",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    },
+    {
+      "id": "matrix-ps4-aw-100",
+      "title": "MatrixMods · Advanced Warfare · PS4 game 1.00 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Advanced Warfare",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.00",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565343349681029200/1565343350410706974/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/AW_100.elf",
+      "filename": "AW_100.elf",
+      "expectedBytes": 2162408,
+      "expectedSha256": "4f196d7ae8271e351bfb1ce20e9a106f8857f81121168a43fb3f6841b9fc355f",
+      "pages": [
+        "console/mods/ps4/call-of-duty/advanced-warfare/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/AW_100.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565343349681029200",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565343349681029200/1565343350410706974/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-ps5-cod-resources.json#aw-matrixmods",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 2,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x0",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    },
+    {
+      "id": "matrix-ps4-aw-123",
+      "title": "MatrixMods · Advanced Warfare · PS4 game 1.23 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Advanced Warfare",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.23",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565343349681029200/1565343350410706974/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/AW_123.elf",
+      "filename": "AW_123.elf",
+      "expectedBytes": 2162664,
+      "expectedSha256": "03bf6ebf4bc68c22f12fc4b2348aba05ec5323b128b287eb0ff7f3f2390ba57e",
+      "pages": [
+        "console/mods/ps4/call-of-duty/advanced-warfare/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/AW_123.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565343349681029200",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565343349681029200/1565343350410706974/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-ps5-cod-resources.json#aw-matrixmods",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 2,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x0",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    },
+    {
+      "id": "matrix-ps4-mwr-102",
+      "title": "MatrixMods · Modern Warfare Remastered · PS4 game 1.02 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Modern Warfare Remastered",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.02",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565343901152317523/1565343902507073606/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/MWR_102.elf",
+      "filename": "MWR_102.elf",
+      "expectedBytes": 2161456,
+      "expectedSha256": "96b858b3b5147d848488f1e31a0159c4732f9a28c6f666610d38255d8f08c231",
+      "pages": [
+        "console/mods/ps4/call-of-duty/modern-warfare-remastered/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/MWR_102.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565343901152317523",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565343901152317523/1565343902507073606/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-ps5-cod-resources.json#mwr-matrixmods",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 2,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x0",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    },
+    {
+      "id": "matrix-ps4-mwr-113",
+      "title": "MatrixMods · Modern Warfare Remastered · PS4 game 1.13 ELF",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Modern Warfare Remastered",
+        "Menus",
+        "Ready ELF files"
+      ],
+      "project": "MatrixMods",
+      "version": "Unversioned-Game1.13",
+      "kind": "generated",
+      "archiveRole": [
+        "Builds"
+      ],
+      "url": "https://cdn.discordapp.com/attachments/1565343901152317523/1565343902507073606/MatrixMenusPS4.rar",
+      "importPath": "docs/tmp/console-multicod-ready-files/2d26c5032081/MWR_113.elf",
+      "filename": "MWR_113.elf",
+      "expectedBytes": 2161336,
+      "expectedSha256": "42bc11612c904b18df4413ab3bf2f9c466da30b1615d83d2c8daf4b266695bf8",
+      "pages": [
+        "console/mods/ps4/call-of-duty/modern-warfare-remastered/index.html",
+        "console/mods/ps4/call-of-duty/multicod/index.html",
+        "console/ps4/downloads.html"
+      ],
+      "mirror": true,
+      "provenance": {
+        "sourceArchive": "/downloads/ps4/BO3/both/MatrixMenusPS4.rar",
+        "sourceArchiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+        "sourceArchiveBytes": 215383,
+        "archiveEntry": "Matrix_Menus/MWR_113.elf",
+        "sourcePost": "https://discord.com/channels/1528329794947776572/1565343901152317523",
+        "sourceAttachment": "https://cdn.discordapp.com/attachments/1565343901152317523/1565343902507073606/MatrixMenusPS4.rar",
+        "sourceRecord": "docs/ps4-ps5-cod-resources.json#mwr-matrixmods",
+        "archiveEvidence": "docs/console-archive-readiness-audit.json",
+        "method": "Exact 7-Zip member bytes extracted to private staging; no downloaded file was executed",
+        "documentation": "No README, license, installation or control instructions were present in the inspected archive",
+        "elf": {
+          "format": "ELF64",
+          "endianness": "little",
+          "machine": "x86-64",
+          "type": "ET_DYN",
+          "elfVersion": 1,
+          "programHeaderCount": 2,
+          "sectionHeaderCount": 15,
+          "entryPoint": "0x0",
+          "verification": "Static ELF header and program/section file-range checks; not a runtime or hardware test"
+        }
+      }
+    }
+  ]
+}

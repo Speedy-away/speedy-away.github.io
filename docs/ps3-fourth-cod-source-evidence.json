@@ -1,0 +1,2357 @@
+{
+  "checkedAt": "2026-11-02T07:07:18.554Z",
+  "scope": "Fourth COD source pass: PS3 console-side archives only. No gates bypassed, no payloads downloaded/executed by research probe.",
+  "games": [
+    {
+      "id": "advanced-warfare",
+      "title": "Call of Duty: Advanced Warfare",
+      "short": "Advanced Warfare",
+      "url": "/console/ps3/mods/call-of-duty/advanced-warfare/",
+      "image": "/assets/images/covers/cod-advanced-warfare.jpg",
+      "aliases": [
+        "COD AW",
+        "Advanced Warfare",
+        "AW Zombies",
+        "AW SPRX"
+      ],
+      "parent": "call-of-duty"
+    }
+  ],
+  "resources": [
+    {
+      "id": "mw2-hestia-dex",
+      "name": "Hestia SPRX · DEX CFW",
+      "gameId": "modern-warfare-2",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "Separate BLES-BLUS and NPUB-NPEB EBOOT folders; exact title IDs not supplied.",
+      "compatibility": "Source button explicitly says CFW/DEX and All Version. This is not proof of all game updates or HEN/CEX compatibility.",
+      "description": "Console-side SPRX menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/x7s56h4iettqw0h/MW2_Hestia_Sprx_DEX_Sprx.rar/file",
+          "label": "Original public RAR",
+          "filename": "MW2 Hestia Sprx DEX Sprx.rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-mw2-hestia-dex.jpg",
+      "tags": [
+        "SPRX",
+        "DEX"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 6692262,
+        "sourceCompatibility": "Source button explicitly says CFW/DEX and All Version. This is not proof of all game updates or HEN/CEX compatibility."
+      },
+      "imageAlt": "Hestia SPRX · DEX CFW source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "mw2-hestia-dex",
+        "originalSha256": "b8da643dbd0359084a7a84c495be499d3856c5efc5f9f622ffc51fbce24fb9d9",
+        "originalBytes": 6692262,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "MW2 Hestia Sprx DEX Sprx.rar",
+            "bytes": 6692262,
+            "sha256": "b8da643dbd0359084a7a84c495be499d3856c5efc5f9f622ffc51fbce24fb9d9",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/mw2-hestia-dex/b8da643dbd03/MW2%20Hestia%20Sprx%20DEX%20Sprx.rar"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 9038144,
+            "sha256": "c83085bb41ab0ee3e162d057076cd547ec6c4d6575b59eaf309d532053d58a69",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "MW2 Hestia Sprx DEX Sprx\\BLES-BLUS EBOOT\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-hestia-dex/c83085bb41ab/MW2%20Hestia%20Sprx%20DEX%20Sprx/BLES-BLUS%20EBOOT/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 9038144,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2432",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "Hestia_Mw2.sprx",
+            "bytes": 171024,
+            "sha256": "a92d26bb728bc4a552ee304b3f933cbbc0eb430ac3332b7f254cf437a255deea",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "MW2 Hestia Sprx DEX Sprx\\Hestia_Mw2.sprx",
+            "local": "/downloads/ps3/mw2-hestia-dex/a92d26bb728b/MW2%20Hestia%20Sprx%20DEX%20Sprx/Hestia_Mw2.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 171024,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 576,
+              "headerBytes": "1536",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 9038144,
+            "sha256": "c4c15000ac64a4c84b3da03bb98ac5a9dab459f263ec138cc9f63c1542bb9714",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "MW2 Hestia Sprx DEX Sprx\\NPUB-NPEB EBOOT\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-hestia-dex/c4c15000ac64/MW2%20Hestia%20Sprx%20DEX%20Sprx/NPUB-NPEB%20EBOOT/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 9038144,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2432",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "README.txt",
+            "bytes": 455,
+            "sha256": "3bf850e21a1c8db712f35ba45a5875fdefe326c497528ac54fd154d8f7feb8b1",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "MW2 Hestia Sprx DEX Sprx\\README.txt",
+            "local": "/downloads/ps3/mw2-hestia-dex/3bf850e21a1c/MW2%20Hestia%20Sprx%20DEX%20Sprx/README.txt"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected",
+      "note": "Archive README places Hestia_Mw2.sprx in /dev_hdd0/tmp/ and the matching EBOOT.BIN in the game USRDIR. The two EBOOT branches are preserved separately even where their hashes match. The 06/04/2024 readme date is not a game-update version."
+    },
+    {
+      "id": "mw2-black-ice-v2",
+      "name": "Black Ice V2 · HEN / CFW",
+      "gameId": "modern-warfare-2",
+      "category": "sprx",
+      "version": "V2",
+      "gameUpdate": "Not stated by source",
+      "region": "BLES-BLUS, NPEB00731 and NPUB30585 folders; the DEX digital branch is labelled Digital DEX All Versions by its author.",
+      "compatibility": "Source labels HEN / CFW. The archive contains separately named CEX, DEX and HEN SPRX/EBOOT branches; choose one matching environment and game edition. This does not establish support for any specific firmware version.",
+      "description": "Console-side SPRX menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/dv1ni3zw192loct/BlackIceV2_HEN-CFW.rar/file",
+          "label": "Original public RAR",
+          "filename": "BlackIceV2 HEN-CFW.rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-mw2-black-ice-v2.jpg",
+      "tags": [
+        "SPRX"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 31654345,
+        "sourceCompatibility": "HEN-CFW explicit in source button and filename. Source lists BLES/BLUS/NPUB/NPEB; exact CEX/DEX variants not established."
+      },
+      "imageAlt": "Black Ice V2 · HEN / CFW source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "mw2-black-ice-v2",
+        "originalSha256": "298d1c66d4a1121702e6770d82a38b489c89792f6a5c136b08bcad2ef46baf6d",
+        "originalBytes": 31654345,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "BlackIceV2 HEN-CFW.rar",
+            "bytes": 31654345,
+            "sha256": "298d1c66d4a1121702e6770d82a38b489c89792f6a5c136b08bcad2ef46baf6d",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/mw2-black-ice-v2/298d1c66d4a1/BlackIceV2%20HEN-CFW.rar"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 74016,
+            "sha256": "7e08c64160542f2caae0613eca4490842f8619c8717d05163dba0c7c23ded532",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\Clean MW2 Eboot\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/7e08c6416054/BlackIceV2%20HEN-CFW/Clean%20MW2%20Eboot/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 74016,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1184,
+              "headerBytes": "2688",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "BlackIceV2.sprx",
+            "bytes": 44864,
+            "sha256": "e08cd3da5070e62b9fb8cb350fe8532a517c8acd4d967c6e949b47210e90f69a",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\CEX\\BlackIceV2.sprx",
+            "local": "/downloads/ps3/mw2-black-ice-v2/e08cd3da5070/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/CEX/BlackIceV2.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 44864,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 576,
+              "headerBytes": "1536",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4130896,
+            "sha256": "a31cc0afcc59a91a0856c202c2e0379193b9c60c28603b15ac9033a5ab827a51",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\CEX\\BLES-BLUS\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/a31cc0afcc59/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/CEX/BLES-BLUS/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4130896,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1008,
+              "headerBytes": "1920",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4131024,
+            "sha256": "7702b447579cd7e085c2adc0ac05bb33840d4593908b55fca07d757d53c9592b",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\CEX\\NPEB00731\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/7702b447579c/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/CEX/NPEB00731/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4131024,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2048",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4131024,
+            "sha256": "9cca30ec08b2683640fd4b179639c53027a041ff21eda96ab6ebe7986bf461cc",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\CEX\\NPUB30585\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/9cca30ec08b2/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/CEX/NPUB30585/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4131024,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2048",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "BlackIceV2.sprx",
+            "bytes": 503748,
+            "sha256": "3d9a4d22b8130ec13fe61ca2927f7601b05790f4b9501dda2390134b6c91e36a",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\DEX\\BlackIceV2.sprx",
+            "local": "/downloads/ps3/mw2-black-ice-v2/3d9a4d22b813/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/DEX/BlackIceV2.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 503748,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 608,
+              "headerBytes": "1664",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 9038016,
+            "sha256": "472092517c89c504a3a97f49916aa5b7c27a15a81bb5dfef7b9a69689b5a6265",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\DEX\\BLES-BLUS\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/472092517c89/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/DEX/BLES-BLUS/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 9038016,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1008,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 9038144,
+            "sha256": "c23425ec97c757e68db895e73b50c955d1e5ca02c23f71dd720bac143b85f69d",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\DEX\\Digital DEX All Versions\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/c23425ec97c7/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/DEX/Digital%20DEX%20All%20Versions/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 9038144,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2432",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "BlackIceV2.sprx",
+            "bytes": 44864,
+            "sha256": "e08cd3da5070e62b9fb8cb350fe8532a517c8acd4d967c6e949b47210e90f69a",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\HEN\\BlackIceV2.sprx",
+            "local": "/downloads/ps3/mw2-black-ice-v2/e08cd3da5070/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/HEN/BlackIceV2.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 44864,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 576,
+              "headerBytes": "1536",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4131888,
+            "sha256": "c1b5522b973b1dc0acc99b8c35009348df07c5d89b0cf4e241ce45635c134738",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\HEN\\BLES-BLUS\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/c1b5522b973b/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/HEN/BLES-BLUS/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4131888,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1008,
+              "headerBytes": "2816",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4131024,
+            "sha256": "7702b447579cd7e085c2adc0ac05bb33840d4593908b55fca07d757d53c9592b",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\HEN\\NPEB00731\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/7702b447579c/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/HEN/NPEB00731/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4131024,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2048",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4131024,
+            "sha256": "9cca30ec08b2683640fd4b179639c53027a041ff21eda96ab6ebe7986bf461cc",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "BlackIceV2 HEN-CFW\\EBOOT Files & Sprx Files\\HEN\\NPUB30585\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-black-ice-v2/9cca30ec08b2/BlackIceV2%20HEN-CFW/EBOOT%20Files%20%26%20Sprx%20Files/HEN/NPUB30585/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4131024,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2048",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected",
+      "note": "CEX, DEX and HEN files stay separate. The clean MW2 EBOOT is a separate archive component, not a universal loader. A folder called All Versions does not verify every title update."
+    },
+    {
+      "id": "mw2-evolve-dex-cex",
+      "name": "Evolve SPRX · DEX / CEX",
+      "gameId": "modern-warfare-2",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "BLES-BLUS, NPEB00731 and NPUB30585 folders explicitly labelled DEX-CEX.",
+      "compatibility": "DEX-CEX explicit in filename; no HEN claim established. Source button lists BLES/BLUS/NPUB/NPEB.",
+      "description": "Console-side SPRX menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/tc8ldfu0mi203rq/MW2_Sprx_Evolve_%255BDEX-CEX%255D.rar/file",
+          "label": "Original public RAR",
+          "filename": "MW2 Sprx Evolve [DEX-CEX].rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-mw2-evolve.jpg",
+      "tags": [
+        "SPRX",
+        "DEX"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 12443061,
+        "sourceCompatibility": "DEX-CEX explicit in filename; no HEN claim established. Source button lists BLES/BLUS/NPUB/NPEB."
+      },
+      "imageAlt": "Evolve SPRX · DEX / CEX source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "note": "The archive readme refers to a different updated commercial version; it does not prove this legacy distribution includes those newer fixes or features.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "mw2-evolve-dex-cex",
+        "originalSha256": "a318e7712eee8c4fc5c3d92fad15483a976c028f5745421ed4d1b8348e2b7f7d",
+        "originalBytes": 12443061,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "MW2 Sprx Evolve [DEX-CEX].rar",
+            "bytes": 12443061,
+            "sha256": "a318e7712eee8c4fc5c3d92fad15483a976c028f5745421ed4d1b8348e2b7f7d",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/mw2-evolve-dex-cex/a318e7712eee/MW2%20Sprx%20Evolve%20%5BDEX-CEX%5D.rar"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4130880,
+            "sha256": "61195330fd0eccec48fdef979160f043b46037fafde936caa1060e11d3c52896",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "MW2 Sprx Evolve [DEX-CEX]\\BLES-BLUS [DEX-CEX]\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-evolve-dex-cex/61195330fd0e/MW2%20Sprx%20Evolve%20%5BDEX-CEX%5D/BLES-BLUS%20%5BDEX-CEX%5D/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4130880,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1008,
+              "headerBytes": "1920",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "Evolve.sprx",
+            "bytes": 327664,
+            "sha256": "ac4e5a9db8f2fd8e404b84e7a6a2da51d436f708a7a6cf0dbb9098018c4a0601",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "MW2 Sprx Evolve [DEX-CEX]\\Evolve.sprx",
+            "local": "/downloads/ps3/mw2-evolve-dex-cex/ac4e5a9db8f2/MW2%20Sprx%20Evolve%20%5BDEX-CEX%5D/Evolve.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 327664,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 576,
+              "headerBytes": "1408",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4131008,
+            "sha256": "a3a93d641f12f69946322de014dd225ba0de48c3a8ec0bc4c81ee28d9a2be2e2",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "MW2 Sprx Evolve [DEX-CEX]\\NPEB00731 [DEX-CEX]\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-evolve-dex-cex/a3a93d641f12/MW2%20Sprx%20Evolve%20%5BDEX-CEX%5D/NPEB00731%20%5BDEX-CEX%5D/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4131008,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2048",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4131008,
+            "sha256": "74a2cce889599191b1463137518460c939b68a9b9737c72a501d6328f77d535c",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "MW2 Sprx Evolve [DEX-CEX]\\NPUB30585 [DEX-CEX]\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw2-evolve-dex-cex/74a2cce88959/MW2%20Sprx%20Evolve%20%5BDEX-CEX%5D/NPUB30585%20%5BDEX-CEX%5D/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4131008,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2048",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "read.txt",
+            "bytes": 146,
+            "sha256": "7eb219f4ddf8a520c447ebe19f331a035bd72cdc2609ed8b38887caf43ec1f8c",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "MW2 Sprx Evolve [DEX-CEX]\\read.txt",
+            "local": "/downloads/ps3/mw2-evolve-dex-cex/7eb219f4ddf8/MW2%20Sprx%20Evolve%20%5BDEX-CEX%5D/read.txt"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    },
+    {
+      "id": "mw2-lewis-pp-v5-114",
+      "name": "LewisRTMs P.P v5 · MW2 1.14 patch",
+      "gameId": "modern-warfare-2",
+      "category": "script",
+      "version": "v5",
+      "gameUpdate": "1.14",
+      "region": "BLES / BLUS page claim",
+      "compatibility": "Source page labels these console patches HEN+CFW, BLES+BLUS. The author name does not imply this ZIP is a Windows RTM helper; inspect members before classification.",
+      "description": "Console-side patch/menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/mw2-mod-menu-1-14-patch",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/0y4pwjiqoysowvx/LewisRTMs_P.P_v5_RELEASE_MW2_1.14.zip/file",
+          "label": "Original public ZIP",
+          "filename": "LewisRTMs_P.P_v5_RELEASE_MW2_1.14.zip"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-mw2-lewis-pp-v5.jpg",
+      "tags": [
+        "Console patch"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 177087,
+        "sourceCompatibility": "Source page labels these console patches HEN+CFW, BLES+BLUS. The author name does not imply this ZIP is a Windows RTM helper; inspect members before classification."
+      },
+      "imageAlt": "LewisRTMs P.P v5 · MW2 1.14 patch source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "note": "The ZIP contains a console patch_mp.ff. Its __MACOSX AppleDouble companion is metadata and is excluded from console-ready links.",
+      "archiveEvidence": {
+        "formatSignature": "IWffu100",
+        "formatLimitation": "Read-only signature observation; game, region and title-update requirements remain source-defined.",
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "mw2-lewis-pp-v5-114",
+        "originalSha256": "13fb55f4e6f513721aec1916c88f8e71bcd63582d81a9ec34a237b7f59042f83",
+        "originalBytes": 177087,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "LewisRTMs_P.P_v5_RELEASE_MW2_1.14.zip",
+            "bytes": 177087,
+            "sha256": "13fb55f4e6f513721aec1916c88f8e71bcd63582d81a9ec34a237b7f59042f83",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/mw2-lewis-pp-v5-114/13fb55f4e6f5/LewisRTMs_P.P_v5_RELEASE_MW2_1.14.zip"
+          },
+          {
+            "name": "patch_mp.ff",
+            "bytes": 242236,
+            "sha256": "1fa5e023aadc3424552ec6da362515a2cdcc70b73e9266ec305eff808ad57f92",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "LewisRTMs P.P v5\\patch_mp.ff",
+            "local": "/downloads/ps3/mw2-lewis-pp-v5-114/1fa5e023aadc/LewisRTMs%20P.P%20v5/patch_mp.ff"
+          },
+          {
+            "name": "._patch_mp.ff",
+            "bytes": 602,
+            "sha256": "408a90a6d7c16b9673480fbe5ef16e241d70c0c8537e4952a3da10d02d353e52",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "__MACOSX\\LewisRTMs P.P v5\\._patch_mp.ff",
+            "local": "/downloads/ps3/mw2-lewis-pp-v5-114/408a90a6d7c1/__MACOSX/LewisRTMs%20P.P%20v5/._patch_mp.ff"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    },
+    {
+      "id": "aw-defcon-zm-dex",
+      "name": "Defcon Zombies Host Menu · DEX only",
+      "gameId": "advanced-warfare",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "Archive EBOOT branches: BLES-BLUS, Digital, NPEB02087, NPEB02088 and NPUB31553.",
+      "compatibility": "DEX only; HEN/CEX support is not established. Multiplayer menu adapted for Zombies. Its readme says Aimbot, Lobby, Bullet and Account menus do not work and Teleport is laggy; this is not a fully functional Zombies menu.",
+      "description": "DEX-only distribution with Zombies-labelled EBOOT variants and DefconZM.sprx. The archive says the menu was made for multiplayer and lists several features that do not work in the Zombies adaptation.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/h8v2pzswhkev966/COD_AW_Defcon_ZM_Sprx_Host_Menu%255BDEX-Only%255D.rar/file",
+          "label": "Original public RAR",
+          "filename": "COD AW Defcon ZM Sprx Host Menu[DEX-Only].rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-aw-defcon-zm.jpg",
+      "tags": [
+        "SPRX",
+        "DEX"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 24157655,
+        "sourceCompatibility": "DEX-Only explicit in source button and archive filename. Zombies host menu. HEN/CEX support not established."
+      },
+      "imageAlt": "Defcon Zombies Host Menu · DEX only source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "note": "The included Mods Not Working.txt says Aimbot, Lobby, Bullet and Account menus do not work and Teleport is laggy. Do not treat this adapted menu as fully functional. Its controls readme says DPAD Up opens the menu; Square selects and R3 closes or goes back.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "aw-defcon-zm-dex",
+        "originalSha256": "a7d3a3467140b7924526dafcb5446012d9262c075221e5c6caa5dbfd79138a85",
+        "originalBytes": 24157655,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "COD AW Defcon ZM Sprx Host Menu[DEX-Only].rar",
+            "bytes": 24157655,
+            "sha256": "a7d3a3467140b7924526dafcb5446012d9262c075221e5c6caa5dbfd79138a85",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/aw-defcon-zm-dex/a7d3a3467140/COD%20AW%20Defcon%20ZM%20Sprx%20Host%20Menu%5BDEX-Only%5D.rar"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 10522360,
+            "sha256": "f21cd5dd15646762b21ab2daf25aed9912273a6d668b35f4b8224aedf0dea7d7",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\DEX-EBOOT\\BLES-BLUS\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/f21cd5dd1564/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/DEX-EBOOT/BLES-BLUS/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 10522360,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1008,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 10522488,
+            "sha256": "bb87f1a43c4a589935a6c59038d746d2d3edd38cf1dfd2f4eafabd87611be3d7",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\DEX-EBOOT\\Digital\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/bb87f1a43c4a/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/DEX-EBOOT/Digital/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 10522488,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2432",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 5258080,
+            "sha256": "fb98503a56e3248c56577ea01837c766860112803f305b084f57212218f83b77",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\NPEB02087-EBOOT\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/fb98503a56e3/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/NPEB02087-EBOOT/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 5258080,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 5258080,
+            "sha256": "523f7ee3397bdaf00b5a8d96843d96c5b89ac4da463f746574cf1a410c95f081",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\NPEB02088-EBOOT\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/523f7ee3397b/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/NPEB02088-EBOOT/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 5258080,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 5258080,
+            "sha256": "4e6172891fd749e9e2ebe37d0e5761360d0ad5e7427cc7107d5c1c4c311e9a86",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\NPUB31553-EBOOT\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/4e6172891fd7/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/NPUB31553-EBOOT/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 5258080,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "Press DPAD Up To Open Mod Menu .txt",
+            "bytes": 123,
+            "sha256": "355d86c092d612cb763bc037c1f643f64cb175995fefdbecc51f7afb492bdf21",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\Press DPAD Up To Open Mod Menu .txt",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/355d86c092d6/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/Press%20DPAD%20Up%20To%20Open%20Mod%20Menu%20.txt"
+          },
+          {
+            "name": "DefconZM.sprx",
+            "bytes": 267472,
+            "sha256": "c6f88ad97b968affc5627ab0713fe95bff9959b99d6865b28bda41d400a210c7",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\Sprx-File\\DefconZM.sprx",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/c6f88ad97b96/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/Sprx-File/DefconZM.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 267472,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 608,
+              "headerBytes": "1664",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "©Credits.txt",
+            "bytes": 323,
+            "sha256": "556b0502a1e5aab55d095a1295fd7f34c68edd6dc34de5f1f505f772a0129584",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\©Credits.txt",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/556b0502a1e5/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/%C2%A9Credits.txt"
+          },
+          {
+            "name": "⚠️Mods Not Working⚠️.txt",
+            "bytes": 313,
+            "sha256": "081a6727c5a62829bfb83b854ade2be4355ef2926d512f00b62c4650da336cc1",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "COD AW Defcon ZM Version [DEX-Only]\\⚠️Mods Not Working⚠️.txt",
+            "local": "/downloads/ps3/aw-defcon-zm-dex/081a6727c5a6/COD%20AW%20Defcon%20ZM%20Version%20%5BDEX-Only%5D/%E2%9A%A0%EF%B8%8FMods%20Not%20Working%E2%9A%A0%EF%B8%8F.txt"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    },
+    {
+      "id": "aw-salvation-hen-disc",
+      "name": "Salvation SPRX · HEN disc editions",
+      "gameId": "advanced-warfare",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "BLES / BLUS source button",
+      "compatibility": "HEN explicit in filename; source button labels BLES/BLUS. Separate digital source build exists and must not be merged with this disc-edition file.",
+      "description": "Console-side SPRX menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/j7gyg7oiiyabvqe/Salvation_SPRX_%2528HEN%2529.rar/file",
+          "label": "Original public RAR",
+          "filename": "Salvation SPRX (HEN).rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-aw-salvation.jpg",
+      "tags": [
+        "SPRX",
+        "HEN"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 5317160,
+        "sourceCompatibility": "HEN explicit in filename; source button labels BLES/BLUS. Separate digital source build exists and must not be merged with this disc-edition file."
+      },
+      "imageAlt": "Salvation SPRX · HEN disc editions source showcase still",
+      "imageCaption": "Salvation menu shown in the source digital showcase; select the separate disc build listed here.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "aw-salvation-hen-disc",
+        "originalSha256": "b8cc849d7552a4f606825f695786d888f0e3d10c5aa3c7b7470f0fa0b4e5b393",
+        "originalBytes": 5317160,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "Salvation SPRX (HEN).rar",
+            "bytes": 5317160,
+            "sha256": "b8cc849d7552a4f606825f695786d888f0e3d10c5aa3c7b7470f0fa0b4e5b393",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/aw-salvation-hen-disc/b8cc849d7552/Salvation%20SPRX%20(HEN).rar"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 5257952,
+            "sha256": "1bdb284ca16844b272c29ff34f333deb037b152e30ae1501b7003939617a76aa",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Salvation SPRX [HEN] \\EBOOT\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-salvation-hen-disc/1bdb284ca168/Salvation%20SPRX%20%5BHEN%5D/EBOOT/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 5257952,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1008,
+              "headerBytes": "2176",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "Salvation.sprx",
+            "bytes": 60992,
+            "sha256": "5aa2aeb914d4ff6804ac64a94a1255f922928cb00fb7f5543590a80cdac10104",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Salvation SPRX [HEN] \\tmp\\Salvation.sprx",
+            "local": "/downloads/ps3/aw-salvation-hen-disc/5aa2aeb914d4/Salvation%20SPRX%20%5BHEN%5D/tmp/Salvation.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 60992,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 576,
+              "headerBytes": "1536",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    },
+    {
+      "id": "aw-salvation-hen-digital",
+      "name": "Salvation SPRX · HEN digital edition",
+      "gameId": "advanced-warfare",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "NPEB02087, NPEB02088 and NPUB31553 EBOOT folders.",
+      "compatibility": "HEN-labelled digital distribution. Archive contains distinct NPEB02087, NPEB02088 and NPUB31553 EBOOT variants plus Salvation.sprx; choose the matching installed title ID. Specific firmware and title updates are not established.",
+      "description": "Console-side SPRX menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/hzedv5ffqujt0yq/Salvation_SPRX-HEN_%255BDigitalVersion%255D.rar/file",
+          "label": "Original public RAR",
+          "filename": "Salvation SPRX-HEN [DigitalVersion].rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-aw-salvation.jpg",
+      "tags": [
+        "SPRX",
+        "HEN"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 15834366,
+        "sourceCompatibility": "HEN and DigitalVersion explicit in filename; source button labels NPUB. Exact NPUB title ID not stated."
+      },
+      "imageAlt": "Salvation SPRX · HEN digital edition source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "note": "Keep this digital distribution separate from the disc-edition HEN package. Static PS3 binary headers were recognized, without loading or executing the files.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "aw-salvation-hen-digital",
+        "originalSha256": "7f9a3a4cf5909c4386ae3e893b9e1b22e72de59a2b51c2970ed01e21d6a5ccec",
+        "originalBytes": 15834366,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "Salvation SPRX-HEN [DigitalVersion].rar",
+            "bytes": 15834366,
+            "sha256": "7f9a3a4cf5909c4386ae3e893b9e1b22e72de59a2b51c2970ed01e21d6a5ccec",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/aw-salvation-hen-digital/7f9a3a4cf590/Salvation%20SPRX-HEN%20%5BDigitalVersion%5D.rar"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 5258080,
+            "sha256": "7aa7f447327538133f30f553fef911564f3ae5800e1c69387de833a9d52f651b",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Salvation SPRX-HEN [DigitalVersion]\\[EBOOT]-[Files]\\NPEB02087\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-salvation-hen-digital/7aa7f4473275/Salvation%20SPRX-HEN%20%5BDigitalVersion%5D/%5BEBOOT%5D-%5BFiles%5D/NPEB02087/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 5258080,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 5258080,
+            "sha256": "78ba11437f073460032b54426e3176f4e3a5e7aa15c5b1085b5d31e7ed73e07a",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Salvation SPRX-HEN [DigitalVersion]\\[EBOOT]-[Files]\\NPEB02088\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-salvation-hen-digital/78ba11437f07/Salvation%20SPRX-HEN%20%5BDigitalVersion%5D/%5BEBOOT%5D-%5BFiles%5D/NPEB02088/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 5258080,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 5258080,
+            "sha256": "eb0a6b6082a9de14fea44d7643eb7126ad8b2659c6c27bc0e67b7d8ceef8c6f6",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Salvation SPRX-HEN [DigitalVersion]\\[EBOOT]-[Files]\\NPUB31553\\EBOOT.BIN",
+            "local": "/downloads/ps3/aw-salvation-hen-digital/eb0a6b6082a9/Salvation%20SPRX-HEN%20%5BDigitalVersion%5D/%5BEBOOT%5D-%5BFiles%5D/NPUB31553/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 5258080,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1152,
+              "headerBytes": "2304",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "Salvation.sprx",
+            "bytes": 60992,
+            "sha256": "5aa2aeb914d4ff6804ac64a94a1255f922928cb00fb7f5543590a80cdac10104",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Salvation SPRX-HEN [DigitalVersion]\\[tmp]-[File]\\Salvation.sprx",
+            "local": "/downloads/ps3/aw-salvation-hen-digital/5aa2aeb914d4/Salvation%20SPRX-HEN%20%5BDigitalVersion%5D/%5Btmp%5D-%5BFile%5D/Salvation.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 60992,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 576,
+              "headerBytes": "1536",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    },
+    {
+      "id": "waw-paradise-hen",
+      "name": "Paradise SPRX · World at War HEN",
+      "gameId": "world-at-war",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "BLES / BLUS source button",
+      "compatibility": "HEN explicit in archive filename; source button lists BLES/BLUS. Other modes and title update not stated.",
+      "description": "Console-side SPRX menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-sprx-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/nxdl9kk07zavcrs/%25E2%259C%25AFParadiseWAW%25E2%259C%25AF_Hen.rar/file",
+          "label": "Original public RAR",
+          "filename": "✯ParadiseWAW✯ Hen.rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-waw-paradise.jpg",
+      "tags": [
+        "SPRX",
+        "HEN"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 4938103,
+        "sourceCompatibility": "HEN explicit in archive filename; source button lists BLES/BLUS. Other modes and title update not stated."
+      },
+      "imageAlt": "Paradise SPRX · World at War HEN source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "waw-paradise-hen",
+        "originalSha256": "cc4a3177c7b2922971070f6b879e0b1f80a120ffff40901ae0bee916aab59b91",
+        "originalBytes": 4938103,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "✯ParadiseWAW✯ Hen.rar",
+            "bytes": 4938103,
+            "sha256": "cc4a3177c7b2922971070f6b879e0b1f80a120ffff40901ae0bee916aab59b91",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-paradise-hen/cc4a3177c7b2/%E2%9C%AFParadiseWAW%E2%9C%AF%20Hen.rar"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 4910128,
+            "sha256": "cb2c0970838743fe266ec3786e7a1ce757e8b8aacd1deb124cad373636951595",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "ParadiseWAW ✯Hen✯\\EBOOT.BIN",
+            "local": "/downloads/ps3/waw-paradise-hen/cb2c09708387/ParadiseWAW%20%E2%9C%AFHen%E2%9C%AF/EBOOT.BIN",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 4910128,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 1008,
+              "headerBytes": "2816",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0x2",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 8,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "ParadiseWAW.sprx",
+            "bytes": 27614,
+            "sha256": "66f1ef9cfc781c0f7826b9052a949da0a68b4b691021593d5c654d4fc2543eef",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "ParadiseWAW ✯Hen✯\\ParadiseWAW.sprx",
+            "local": "/downloads/ps3/waw-paradise-hen/66f1ef9cfc78/ParadiseWAW%20%E2%9C%AFHen%E2%9C%AF/ParadiseWAW.sprx",
+            "consoleBinaryHeader": {
+              "status": "valid-static-PS3-PPU-header",
+              "actualBytes": 27614,
+              "reference": "https://github.com/RPCS3/rpcs3/blob/master/rpcs3/Crypto/unself.h",
+              "limitation": "Static container/PPU ELF recognition only; not a signature authenticity, menu identity, firmware compatibility or hardware execution test.",
+              "magicHex": "53434500",
+              "container": "SCE/SELF",
+              "sceVersion": 2,
+              "category": 1,
+              "metadataOffset": 576,
+              "headerBytes": "1408",
+              "extendedHeaderVersion": "3",
+              "elfOffset": "144",
+              "elfClass": 2,
+              "byteOrder": "big-endian",
+              "machine": 21,
+              "elfType": "0xffa4",
+              "elfOsAbi": 102,
+              "elfHeaderBytes": 64,
+              "programEntryBytes": 56,
+              "programCount": 3,
+              "programTableOffset": "208"
+            }
+          },
+          {
+            "name": "Link By SnowyModzYT.txt",
+            "bytes": 180234,
+            "sha256": "19828f407ad3f0cb25deace936e0929282bec4d40fa45dcebfb78fcc64494582",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "Link By SnowyModzYT.txt",
+            "local": "/downloads/ps3/waw-paradise-hen/19828f407ad3/Link%20By%20SnowyModzYT.txt"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    },
+    {
+      "id": "cod4-teh1337-infinite-r2r-v5",
+      "name": "Teh1337 Infinite R2R v5 · PS3",
+      "gameId": "cod4",
+      "category": "script",
+      "version": "v5",
+      "gameUpdate": "Not stated by source",
+      "region": "BLES / BLUS source button",
+      "compatibility": "Decoded source button explicitly names PS3 BLES/BLUS. HEN/CFW page-wide claim is not a verified per-file requirement.",
+      "description": "Console-side patch/menu distribution from the supplied PS3 catalogue. Preserve its exact mode and edition; source claims are not hardware testing.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-patches",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/9onqb3tnte3f83k/COD4_Teh1337s_Infinite_R2R_v5_PS3.rar/file",
+          "label": "Original public RAR",
+          "filename": "COD4 Teh1337s Infinite R2R v5 PS3.rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-cod4-teh1337-r2r.jpg",
+      "tags": [
+        "Console patch"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 1137660,
+        "sourceCompatibility": "Decoded source button explicitly names PS3 BLES/BLUS. HEN/CFW page-wide claim is not a verified per-file requirement."
+      },
+      "imageAlt": "Teh1337 Infinite R2R v5 · PS3 source showcase still",
+      "imageCaption": "Static source showcase image; files have not been tested on PS3 hardware.",
+      "archiveEvidence": {
+        "formatSignature": "IWffu100",
+        "formatLimitation": "Read-only signature observation; game, region and title-update requirements remain source-defined.",
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "cod4-teh1337-infinite-r2r-v5",
+        "originalSha256": "01bc7d45e45a575d1474ae5ae0c2a01a83fb07cda4326bb858bfb4360698ff47",
+        "originalBytes": 1137660,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "COD4 Teh1337s Infinite R2R v5 PS3.rar",
+            "bytes": 1137660,
+            "sha256": "01bc7d45e45a575d1474ae5ae0c2a01a83fb07cda4326bb858bfb4360698ff47",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/cod4-teh1337-infinite-r2r-v5/01bc7d45e45a/COD4%20Teh1337s%20Infinite%20R2R%20v5%20PS3.rar"
+          },
+          {
+            "name": "patch_mp.ff",
+            "bytes": 1139488,
+            "sha256": "b1cd678faec4521a1a6fdfef052face69b9135c698690cf2286bde7f5f22e17b",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Teh1337s Infinite Nig Patch v5\\patch_mp.ff",
+            "local": "/downloads/ps3/cod4-teh1337-infinite-r2r-v5/b1cd678faec4/Teh1337s%20Infinite%20Nig%20Patch%20v5/patch_mp.ff"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    },
+    {
+      "id": "cod4-texture-installer-super-lite",
+      "name": "COD4 Texture Installer · Super Lite",
+      "gameId": "cod4",
+      "category": "texture",
+      "version": "Super Lite (Unversioned)",
+      "gameUpdate": "Not stated by source",
+      "region": "The archive Infos file says Only BLES000148 (retained verbatim, apparent title-ID typo). The actual supported title ID is not independently established.",
+      "compatibility": "Source labels HEN / CFW. The Super Lite archive limits itself to BLES000148, an apparent typo; do not infer BLUS support or all choices shown in the shared source screenshot. Specific firmware support is not established.",
+      "description": "Source-linked Super Lite texture/camo installer. The archived Infos file lists three camo packs, fourteen modified loading/map intros and eight glove camos. Its original RAR and extracted PS3 PKG are preserved separately.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-4-custom-texture-installer",
+      "downloads": [
+        {
+          "url": "https://e.pcloud.link/publink/show?code=XZArgSZeM4hN5R0dxzbEYO83BVHqLbgfppk",
+          "label": "Original public RAR",
+          "filename": "COD4 Texture Pack Installer By VirusMike [Super Lite Version].rar"
+        }
+      ],
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "image": "/assets/images/ps3-mods/fourth-cod4-texture-installer.jpg",
+      "tags": [
+        "Console patch"
+      ],
+      "evidence": {
+        "method": "Live source page and decoded custom embed text/CSS labels inspected; public landing HTML and attachment HEAD checked; no scripts from the source were executed.",
+        "attachmentStatus": 200,
+        "advertisedBytes": 530823816,
+        "sourceCompatibility": "Source labels HEN/CFW. Super Lite column lists BLES000148 (source typo); actual package title IDs must be read before presenting compatibility."
+      },
+      "imageAlt": "COD4 Texture Installer · Super Lite source showcase still",
+      "imageCaption": "Source installer interface; exact Super Lite package requirements come from the preserved archive.",
+      "screenshotEvidence": {
+        "titleIdsShown": [
+          "BLES00148",
+          "BLUS30072",
+          "BLES00155"
+        ],
+        "environmentShown": "4.90 CEX",
+        "limitation": "Source showcase UI only; not exact Super Lite package compatibility proof."
+      },
+      "note": "The Infos file repeats BLES000148 rather than a verified title ID. The shared showcase shows BLES00148, BLUS30072 and BLES00155 choices with a 4.90 CEX footer; those images do not establish this Super Lite package supports all three or newer firmware. Confirm the matching edition before applying it. The PKG content ID identifies the installer only.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "cod4-texture-installer-super-lite",
+        "originalSha256": "900191b8a793f5268b71e63a19d3c6a65db7c5da9ef64d8832b3eba97d302bd0",
+        "originalBytes": 530823816,
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "COD4 Texture Pack Installer By VirusMike [Super Lite Version].rar",
+            "bytes": 530823816,
+            "sha256": "900191b8a793f5268b71e63a19d3c6a65db7c5da9ef64d8832b3eba97d302bd0",
+            "archiveRole": [
+              "Builds"
+            ]
+          },
+          {
+            "name": "COD4 Texture Installer Super Lite Version.pkg",
+            "bytes": 530822816,
+            "sha256": "ce76f6af9c34ef83da62935e03209cee4a3c524738b97aa8f0c4fb8f2c1680e1",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "COD4 Texture Pack Installer By VirusMike [Super Lite Version]\\COD4 Texture Installer Super Lite Version.pkg",
+            "pkgHeader": {
+              "status": "valid-static-PS3-header",
+              "magic": "7f504b47",
+              "type": 1,
+              "revision": 0,
+              "actualBytes": 530822816,
+              "declaredBytes": "530822816",
+              "dataOffset": "416",
+              "dataBytes": "530822304",
+              "metadataOffset": 192,
+              "metadataBytes": 224,
+              "contentId": "TA9000-VIRUSTEX4_00-0000000000000000",
+              "contentIdIsInstallerIdentity": true,
+              "reference": "https://github.com/ps3dev/ps3sdk/blob/master/tools/pkg/pkg.c",
+              "limitation": "Structural header check only; no installation, execution, signature authenticity or game compatibility test."
+            }
+          },
+          {
+            "name": "[❔]Infos[❔].txt",
+            "bytes": 91,
+            "sha256": "ec97344dbd21ad689d32bc994c8f0671c1c3d26fa58b829deb1a97b679ad2353",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "COD4 Texture Pack Installer By VirusMike [Super Lite Version]\\[❔]Infos[❔].txt",
+            "local": "/downloads/ps3/cod4-texture-installer-super-lite/ec97344dbd21/COD4%20Texture%20Pack%20Installer%20By%20VirusMike%20%5BSuper%20Lite%20Version%5D/%5B%E2%9D%94%5DInfos%5B%E2%9D%94%5D.txt"
+          },
+          {
+            "name": "[🌟]Credits[🌟].txt",
+            "bytes": 452,
+            "sha256": "716c65044876cfdce96bcdf60c5eb2798b7cc5caa15ebf6f44fbd745e8a73ad0",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "COD4 Texture Pack Installer By VirusMike [Super Lite Version]\\[🌟]Credits[🌟].txt",
+            "local": "/downloads/ps3/cod4-texture-installer-super-lite/716c65044876/COD4%20Texture%20Pack%20Installer%20By%20VirusMike%20%5BSuper%20Lite%20Version%5D/%5B%F0%9F%8C%9F%5DCredits%5B%F0%9F%8C%9F%5D.txt"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "mw2-hestia-dex",
+      "name": "Hestia SPRX · DEX CFW",
+      "gameId": "modern-warfare-2",
+      "category": "sprx",
+      "version": "Unversioned",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "url": "https://www.mediafire.com/file/x7s56h4iettqw0h/MW2_Hestia_Sprx_DEX_Sprx.rar/file",
+      "compatibility": "Source button explicitly says CFW/DEX and All Version. This is not proof of all game updates or HEN/CEX compatibility.",
+      "region": "All Version claimed by source; exact title IDs unverified",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "mw2-hestia-dex",
+      "checkedAt": "2026-11-02T07:07:17.144Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "MW2 Hestia Sprx DEX Sprx",
+      "advertisedSizeText": "6.38MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 6692262,
+      "contentType": "application/x-rar",
+      "filename": "MW2 Hestia Sprx DEX Sprx.rar",
+      "readyForBoundedArchive": true,
+      "existingUrlMatches": []
+    },
+    {
+      "id": "mw2-black-ice-v2",
+      "name": "Black Ice V2 · HEN / CFW",
+      "gameId": "modern-warfare-2",
+      "category": "sprx",
+      "version": "V2",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "url": "https://www.mediafire.com/file/dv1ni3zw192loct/BlackIceV2_HEN-CFW.rar/file",
+      "compatibility": "HEN-CFW explicit in source button and filename. Source lists BLES/BLUS/NPUB/NPEB; exact CEX/DEX variants not established.",
+      "region": "BLES / BLUS / NPUB / NPEB claimed by source",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "mw2-black-ice-v2",
+      "checkedAt": "2026-11-02T07:07:17.172Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "BlackIceV2 HEN-CFW",
+      "advertisedSizeText": "30.19MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 31654345,
+      "contentType": "application/x-rar",
+      "filename": "BlackIceV2 HEN-CFW.rar",
+      "readyForBoundedArchive": true,
+      "existingUrlMatches": []
+    },
+    {
+      "id": "mw2-evolve-dex-cex",
+      "name": "Evolve SPRX · DEX / CEX",
+      "gameId": "modern-warfare-2",
+      "category": "sprx",
+      "version": "Unversioned",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "url": "https://www.mediafire.com/file/tc8ldfu0mi203rq/MW2_Sprx_Evolve_%255BDEX-CEX%255D.rar/file",
+      "compatibility": "DEX-CEX explicit in filename; no HEN claim established. Source button lists BLES/BLUS/NPUB/NPEB.",
+      "region": "BLES / BLUS / NPUB / NPEB claimed by source",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "mw2-evolve-dex-cex",
+      "checkedAt": "2026-11-02T07:07:17.173Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "MW2 Sprx Evolve [DEX-CEX]",
+      "advertisedSizeText": "11.87MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 12443061,
+      "contentType": "application/x-rar",
+      "filename": "MW2 Sprx Evolve [DEX-CEX].rar",
+      "readyForBoundedArchive": true,
+      "existingUrlMatches": []
+    },
+    {
+      "id": "mw2-lewis-pp-v5-114",
+      "name": "LewisRTMs P.P v5 · MW2 1.14 patch",
+      "gameId": "modern-warfare-2",
+      "category": "script",
+      "version": "v5",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/mw2-mod-menu-1-14-patch",
+      "url": "https://www.mediafire.com/file/0y4pwjiqoysowvx/LewisRTMs_P.P_v5_RELEASE_MW2_1.14.zip/file",
+      "compatibility": "Source page labels these console patches HEN+CFW, BLES+BLUS. The author name does not imply this ZIP is a Windows RTM helper; inspect members before classification.",
+      "region": "BLES / BLUS page claim",
+      "gameUpdate": "1.14",
+      "resourceId": "mw2-lewis-pp-v5-114",
+      "checkedAt": "2026-11-02T07:07:17.173Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "LewisRTMs_P.P_v5_RELEASE_MW2_1.14",
+      "advertisedSizeText": "172.94KB",
+      "attachmentStatus": 200,
+      "expectedBytes": 177087,
+      "contentType": "application/zip",
+      "filename": "LewisRTMs_P.P_v5_RELEASE_MW2_1.14.zip",
+      "readyForBoundedArchive": true,
+      "existingUrlMatches": []
+    },
+    {
+      "id": "aw-defcon-zm-dex",
+      "name": "Defcon Zombies Host Menu · DEX only",
+      "gameId": "advanced-warfare",
+      "category": "sprx",
+      "version": "Unversioned",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "url": "https://www.mediafire.com/file/h8v2pzswhkev966/COD_AW_Defcon_ZM_Sprx_Host_Menu%255BDEX-Only%255D.rar/file",
+      "compatibility": "DEX-Only explicit in source button and archive filename. Zombies host menu. HEN/CEX support not established.",
+      "region": "Not stated by source",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "aw-defcon-zm-dex",
+      "checkedAt": "2026-11-02T07:07:17.173Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "COD AW Defcon ZM Sprx Host Menu[DEX-Only]",
+      "advertisedSizeText": "23.04MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 24157655,
+      "contentType": "application/x-rar",
+      "filename": "COD AW Defcon ZM Sprx Host Menu[DEX-Only].rar",
+      "readyForBoundedArchive": true,
+      "existingUrlMatches": []
+    },
+    {
+      "id": "aw-salvation-hen-disc",
+      "name": "Salvation SPRX · HEN disc editions",
+      "gameId": "advanced-warfare",
+      "category": "sprx",
+      "version": "Unversioned",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "url": "https://www.mediafire.com/file/j7gyg7oiiyabvqe/Salvation_SPRX_%2528HEN%2529.rar/file",
+      "compatibility": "HEN explicit in filename; source button labels BLES/BLUS. Separate digital source build exists and must not be merged with this disc-edition file.",
+      "region": "BLES / BLUS source button",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "aw-salvation-hen-disc",
+      "checkedAt": "2026-11-02T07:07:17.174Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "Salvation SPRX (HEN)",
+      "advertisedSizeText": "5.07MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 5317160,
+      "contentType": "application/x-rar",
+      "filename": "Salvation SPRX (HEN).rar",
+      "readyForBoundedArchive": true,
+      "existingUrlMatches": []
+    },
+    {
+      "id": "aw-salvation-hen-digital",
+      "name": "Salvation SPRX · HEN digital edition",
+      "gameId": "advanced-warfare",
+      "category": "sprx",
+      "version": "Unversioned",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "url": "https://www.mediafire.com/file/hzedv5ffqujt0yq/Salvation_SPRX-HEN_%255BDigitalVersion%255D.rar/file",
+      "compatibility": "HEN and DigitalVersion explicit in filename; source button labels NPUB. Exact NPUB title ID not stated.",
+      "region": "NPUB source button",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "aw-salvation-hen-digital",
+      "checkedAt": "2026-11-02T07:07:17.174Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "Salvation SPRX-HEN [DigitalVersion]",
+      "advertisedSizeText": "15.1MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 15834366,
+      "contentType": "application/x-rar",
+      "filename": "Salvation SPRX-HEN [DigitalVersion].rar",
+      "readyForBoundedArchive": true,
+      "existingUrlMatches": []
+    },
+    {
+      "id": "waw-external-v3-107",
+      "name": "External V3.0 · World at War 1.07",
+      "gameId": "world-at-war",
+      "category": "sprx",
+      "version": "V3.0",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-sprx-menu",
+      "url": "https://www.mediafire.com/file/666s8c7rv6xld3h/External+V3.0+WAW+1.07.zip/file",
+      "compatibility": "Source button lists BLES/BLUS. Exact HEN/CFW/CEX/DEX requirements are not established by the button; inspect archive documentation.",
+      "region": "BLES / BLUS source button",
+      "gameUpdate": "1.07",
+      "resourceId": "waw-external-v3-107",
+      "checkedAt": "2026-11-02T07:07:17.175Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "External V3.0 WAW 1.07",
+      "advertisedSizeText": "9.4MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 9852840,
+      "contentType": "application/zip",
+      "filename": "External V3.0 WAW 1.07.zip",
+      "readyForBoundedArchive": false,
+      "existingUrlMatches": [],
+      "archiveDisposition": "supplemental-source-evidence-only",
+      "relatedExistingResourceId": "discord-ps3-waw-external-3",
+      "existingArchiveSha256": "0de7ccb9282aedc40ceba7b4c00d08abbc4bbf3a10e17d434b109c1c39c20e5c",
+      "reason": "Different public source URL but same menu/version and exact9852840-byte advertised size as preserved Discord archive. Avoid a likely duplicate download; root may reconcile supplemental1.07source pin with existing record."
+    },
+    {
+      "id": "waw-paradise-hen",
+      "name": "Paradise SPRX · World at War HEN",
+      "gameId": "world-at-war",
+      "category": "sprx",
+      "version": "Unversioned",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-sprx-menu",
+      "url": "https://www.mediafire.com/file/nxdl9kk07zavcrs/%25E2%259C%25AFParadiseWAW%25E2%259C%25AF_Hen.rar/file",
+      "compatibility": "HEN explicit in archive filename; source button lists BLES/BLUS. Other modes and title update not stated.",
+      "region": "BLES / BLUS source button",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "waw-paradise-hen",
+      "checkedAt": "2026-11-02T07:07:17.175Z",
+      "downloadedByProbe": false,
+      "landingStatus": 200,
+      "landingTitle": "✯ParadiseWAW✯ Hen",
+      "advertisedSizeText": "4.71MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 4938103,
+      "contentType": "application/x-rar",
+      "filename": "✯ParadiseWAW✯ Hen.rar",
+      "readyForBoundedArchive": true,
+      "rawContentDispositionFilename": "â¯ParadiseWAWâ¯ Hen.rar",
+      "filenameEncodingNote": "UTF-8 source filename decoded from Latin-1 HTTP header bytes; raw header representation retained.",
+      "existingUrlMatches": []
+    },
+    {
+      "id": "cod4-myten-v1-campaign",
+      "name": "Myten v1 · COD4 campaign menu",
+      "gameId": "cod4",
+      "category": "script",
+      "version": "v1",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-patches",
+      "url": "https://www.mediafire.com/file/afdjz43dyid5w17/Cod4+Myten+v1+Campaign+PS3.rar/file",
+      "compatibility": "Source explicitly labels Campaign Menu and PS3 filename. Page-wide BLES/BLUS and HEN/CFW claim is not per-file proof; inspect archive requirements.",
+      "region": "BLES / BLUS page claim",
+      "gameUpdate": "Not stated by source",
+      "resourceId": "cod4-myten-v1-campaign",
+      "checkedAt": "2026-11-02T07:07:17.175Z",
+      "downloadedByProbe": false,
+      "landingStatus": 404,
+      "landingTitle": "File sharing and storage made simple",
+      "readyForBoundedArchive": false,
+      "existingUrlMatches": [],
+      "archiveDisposition": "unavailable-source-only",
+      "relatedExistingResourceId": "discord-ps3-cod4-myten-v1",
+      "reason": "This specific supplied-site MediaFire link returns404. A distinct Discord source version is already archived; do not relabel that as this failed link."
+    },
+    {
+      "id": "cod4-teh1337-infinite-r2r-v5",
+      "name": "Teh1337 Infinite R2R v5 · PS3",
+      "gameId": "cod4",
+      "category": "script",
+      "version": "v5",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-patches",
+      "url": "https://www.mediafire.com/file/9onqb3tnte3f83k/COD4_Teh1337s_Infinite_R2R_v5_PS3.rar/file",
+      "landingStatus": 200,
+      "readyForBoundedArchive": true,
+      "compatibility": "Decoded source button explicitly names PS3 BLES/BLUS. HEN/CFW page-wide claim is not a verified per-file requirement.",
+      "region": "BLES / BLUS source button",
+      "gameUpdate": "Not stated by source",
+      "attachmentStatus": 200,
+      "expectedBytes": 1137660,
+      "filename": "COD4 Teh1337s Infinite R2R v5 PS3.rar",
+      "contentType": "application/x-rar",
+      "existingUrlMatches": []
+    },
+    {
+      "id": "cod4-texture-installer-super-lite",
+      "name": "COD4 Texture Installer · Super Lite",
+      "gameId": "cod4",
+      "category": "texture",
+      "version": "Super Lite (Unversioned)",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-4-custom-texture-installer",
+      "url": "https://e.pcloud.link/publink/show?code=XZArgSZeM4hN5R0dxzbEYO83BVHqLbgfppk",
+      "filename": "COD4 Texture Pack Installer By VirusMike [Super Lite Version].rar",
+      "expectedBytes": 530823816,
+      "metadataResult": 0,
+      "readyForBoundedArchive": true,
+      "compatibility": "Source labels HEN/CFW. Super Lite column lists BLES000148 (source typo); actual package title IDs must be read before presenting compatibility.",
+      "region": "BLES000148 as written by source; unverified title-ID spelling",
+      "gameUpdate": "Not stated by source",
+      "attachmentStatus": 200,
+      "headBytes": 530823816,
+      "contentType": "application/vnd.rar",
+      "existingUrlMatches": []
+    }
+  ],
+  "existingGameReferences": [
+    {
+      "id": "modern-warfare-2",
+      "url": "/console/ps3/mods/call-of-duty/modern-warfare-2/"
+    },
+    {
+      "id": "world-at-war",
+      "url": "/console/ps3/mods/call-of-duty/world-at-war/"
+    },
+    {
+      "id": "cod4",
+      "url": "/console/ps3/mods/call-of-duty/cod4/"
+    }
+  ],
+  "supplementalEvidence": [
+    {
+      "resourceId": "waw-external-v3-107",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-sprx-menu",
+      "url": "https://www.mediafire.com/file/666s8c7rv6xld3h/External+V3.0+WAW+1.07.zip/file",
+      "status": "supplemental-source-evidence-only",
+      "reason": "Different public source URL but same menu/version and exact9852840-byte advertised size as preserved Discord archive. Avoid a likely duplicate download; root may reconcile supplemental1.07source pin with existing record.",
+      "relatedExistingResourceId": "discord-ps3-waw-external-3",
+      "existingArchiveSha256": "0de7ccb9282aedc40ceba7b4c00d08abbc4bbf3a10e17d434b109c1c39c20e5c",
+      "gameUpdate": "1.07",
+      "advertisedBytes": 9852840
+    },
+    {
+      "resourceId": "cod4-myten-v1-campaign",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-patches",
+      "url": "https://www.mediafire.com/file/afdjz43dyid5w17/Cod4+Myten+v1+Campaign+PS3.rar/file",
+      "status": "unavailable-source-only",
+      "reason": "This specific supplied-site MediaFire link returns404. A distinct Discord source version is already archived; do not relabel that as this failed link.",
+      "relatedExistingResourceId": "discord-ps3-cod4-myten-v1",
+      "gameUpdate": "Not stated by source"
+    }
+  ],
+  "sourceVariants": [
+    {
+      "name": "COD4 Texture Installer Full",
+      "url": "https://e.pcloud.link/publink/show?code=XZKrgSZxIThpxghl9hfR4LuLarewXMKN8i7",
+      "bytes": 1585227033,
+      "status": "Metadata-only; not selected or downloaded"
+    },
+    {
+      "name": "COD4 Texture Installer Lite",
+      "url": "https://e.pcloud.link/publink/show?code=XZUrgSZw6Axcn99kE8rmUqhdtSr8LFlRh4V",
+      "bytes": 1058025402,
+      "status": "Metadata-only; not selected or downloaded"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.507Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/mw2-mod-menu-1-14-patch",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-sprx-menu",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-patches",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-4-custom-texture-installer",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-sprx",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-ghosts-camo-installer",
+      "status": "Live HTTPS source inspected; useful links may be in custom embeds",
+      "checkedAt": "2026-11-02T07:10:01.508Z"
+    }
+  ],
+  "notes": [
+    "All game definitions reuse current catalogue IDs; Advanced Warfare is the only newly supplied game definition.",
+    "All selected sources are PS3 console distributions; desktop-only RTM helpers were excluded.",
+    "HEN, CFW, CEX, DEX and disc/digital variants remain distinct; unknown requirements remain labelled.",
+    "No Bstlar, subscription-unlock gates, DLC license-fix packages or Ghosts DLC camo installers were selected.",
+    "All original archives/versions must be preserved. Downloading, extracting, installing and running are separate steps; research did not execute downloaded content.",
+    "Source clean/CID checkmarks were not adopted as safety guarantees.",
+    "Selected distributions were reconciled with static archive inspection. Source labels and recognized headers do not establish complete feature functionality or hardware compatibility."
+  ],
+  "totalAdvertisedSelectedBytes": 633175515,
+  "images": [
+    {
+      "path": "/assets/images/ps3-mods/fourth-mw2-hestia-dex.jpg",
+      "url": "https://i.ytimg.com/vi/fluDEgyPMOc/maxresdefault.jpg",
+      "bytes": 103539,
+      "sha256": "88fac65aa439eb8e42662cf93138b42c40191427d2e181b2e31b4a883e0e113b",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx"
+      ],
+      "resourceIds": [
+        "mw2-hestia-dex"
+      ],
+      "verification": "Hestia named main menu clearly visible in the source showcase composition.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-mw2-black-ice-v2.jpg",
+      "url": "https://i.ytimg.com/vi/IvpewAt7edI/maxresdefault.jpg",
+      "bytes": 92166,
+      "sha256": "9d05f0d9626ba0e59fbe0f9988aa544e7a54ba8004ed8b9c9c8cfcde4c2e33d6",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx"
+      ],
+      "resourceIds": [
+        "mw2-black-ice-v2"
+      ],
+      "verification": "Black Ice v2 heading and gameplay menu visibly identify this exact source menu family/version.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-mw2-evolve.jpg",
+      "url": "https://i.ytimg.com/vi/HI0zFMQ7b5k/maxresdefault.jpg",
+      "bytes": 88974,
+      "sha256": "3857d4915b32ad10150c6f30f03c40597c4e3572a50717a225da0d75c8f2c93e",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx"
+      ],
+      "resourceIds": [
+        "mw2-evolve-dex-cex"
+      ],
+      "verification": "Evolve by mrtn menu visibly shown beside PS3 source artwork.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-mw2-lewis-pp-v5.jpg",
+      "url": "https://i.ytimg.com/vi/4Lki1ENf1_M/maxresdefault.jpg",
+      "bytes": 88564,
+      "sha256": "06b50b561d3a68d124df65cdef30412d2cfe4de2225798a7b436d2b94486fd05",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/mw2-mod-menu-1-14-patch"
+      ],
+      "resourceIds": [
+        "mw2-lewis-pp-v5-114"
+      ],
+      "verification": "LewisRTMs Private Patch V5 heading and console gameplay visible. RTMs is an author name here, not proof of a desktop executable.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-aw-defcon-zm.jpg",
+      "url": "https://i.ytimg.com/vi/3BTdY6hDv7M/maxresdefault.jpg",
+      "bytes": 106139,
+      "sha256": "28014984aeb29e618b7c3d3fc80f7da394e0a75625354c86cd8e7425c2073580",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx"
+      ],
+      "resourceIds": [
+        "aw-defcon-zm-dex"
+      ],
+      "verification": "Defcon menu visibly over Advanced Warfare Zombies gameplay. Firmware/mode support comes from source labels, not the screenshot.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-aw-salvation.jpg",
+      "url": "https://i.ytimg.com/vi/VbUIXfvTmlY/maxresdefault.jpg",
+      "bytes": 102805,
+      "sha256": "7d2ab4fb9e9c7468612b4aec23e1c5568e8eb515a881d52a9977da6c6c65c3ab",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx"
+      ],
+      "resourceIds": [
+        "aw-salvation-hen-disc",
+        "aw-salvation-hen-digital"
+      ],
+      "verification": "Actual Salvation menu still from source digital-version showcase. It illustrates the menu family and does not verify the separate disc archive compatibility. Actual Salvation menu still from source digital-version showcase. Exact NPUB title ID is not visible.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-waw-paradise.jpg",
+      "url": "https://i.ytimg.com/vi/OiT6IDTWGek/maxresdefault.jpg",
+      "bytes": 160265,
+      "sha256": "941270020d84ecfb83f57aea80eb7c30c8e654d2eb4f7f9ce06530953ce171cd",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-sprx-menu"
+      ],
+      "resourceIds": [
+        "waw-paradise-hen"
+      ],
+      "verification": "Paradise SPRX menu visibly over World at War gameplay; no HEN/CFW hardware verification implied.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-cod4-teh1337-r2r.jpg",
+      "url": "https://i.ytimg.com/vi/aFunY8UMQAU/maxresdefault.jpg",
+      "bytes": 113167,
+      "sha256": "a016c0369a4681618f952343800d2d71c4c074540dd8f65b86dbe9c8ed4bf7d4",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-patches"
+      ],
+      "resourceIds": [
+        "cod4-teh1337-infinite-r2r-v5"
+      ],
+      "verification": "Teh1337s Patch V5 title and actual COD4 menu gameplay shown.",
+      "kind": "unaltered static source-showcase thumbnail"
+    },
+    {
+      "path": "/assets/images/ps3-mods/fourth-cod4-texture-installer.jpg",
+      "url": "https://i.ytimg.com/vi/vzTYY5ADLSM/maxresdefault.jpg",
+      "bytes": 73847,
+      "sha256": "ddc0583157911aba1423ea6d10834218d3d49bf913f00c5547c520730b64151e",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "sourcePages": [
+        "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-4-custom-texture-installer"
+      ],
+      "resourceIds": [
+        "cod4-texture-installer-super-lite"
+      ],
+      "verification": "Actual COD4 texture/camo XMB installer UI from source showcase; it shows BLES00148, BLUS30072 and BLES00155 options plus 4.90 CEX. This is not proof that the separately linked Super Lite binary supports every option or current firmware.",
+      "kind": "unaltered static source-showcase thumbnail"
+    }
+  ],
+  "sourceAudit": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-4/cod-4-sprx",
+      "finding": "Retribution V2 links encountered here were subscription-unlock gated; no gate was bypassed and no new build from that page was selected."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "finding": "Multiple public PS3 patch candidates exist, but this bounded pass prioritised the selected SPRX/edition-specific builds. Unselected links are not described as unavailable."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-ghosts-camo-installer",
+      "finding": "Page explicitly calls the distribution a DLC camo installer. No new licence/content installer job selected."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-bo2-xmb-tools",
+      "finding": "Previously checked public injector v4.1/v3 links returned403; no new job or saved-package claim added in this pass."
+    }
+  ]
+}

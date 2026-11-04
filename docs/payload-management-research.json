@@ -1,0 +1,185 @@
+{
+  "reviewedAt": "2026-11-02",
+  "scope": "Read-only primary-source review for the PS4/PS5 host controls. No console connection or payload execution.",
+  "ps5": {
+    "project": "itsPLK/ps5-payload-manager",
+    "repository": "https://github.com/itsPLK/ps5-payload-manager",
+    "reviewedVersion": "0.6.3",
+    "latestReleaseAtReview": "v0.6.3",
+    "tagCommit": "3f881e8e569eba3054d1784a1962439b2eee92c2",
+    "release": {
+      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/tag/v0.6.3",
+      "publishedAt": "2026-10-19T13:42:55Z",
+      "assetURL": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.3/pldmgr_v0.6.3.elf",
+      "filename": "pldmgr_v0.6.3.elf",
+      "bytes": 2795992,
+      "githubAssetSHA256": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "verification": "Metadata read from GitHub release API; this research did not download or execute the asset. Check local archive inventory separately."
+    },
+    "service": {
+      "urlTemplate": "http://{consoleIP}:8084/",
+      "nativeUIRequired": "Version 0.6.3 restricts browser CORS and writes to its own exact HTTP origin. An external website cannot directly operate this API with browser fetch.",
+      "readIdentity": "GET /version returns text; GET /getip returns text.",
+      "transport": "HTTP on TCP 8084; manager sends payloads to its console ELF loader on TCP 9021.",
+      "originRules": [
+        "Mutation routes require POST; GET receives HTTP 405.",
+        "Sec-Fetch-Site: cross-site is rejected.",
+        "If Origin exists it must equal http:// plus Host, including port; Referer is checked when Origin is absent.",
+        "Requests without Origin and Referer may use X-PLDMGR-Request: 1. This is intended for native nonbrowser clients, not a bypass available to external website JavaScript.",
+        "Access-Control-Allow-Origin is returned only for the exact same origin; external GET response bodies are also unavailable to browser fetch.",
+        "Host matching is CSRF protection, not authentication."
+      ],
+      "recommendedIntegration": "Open native manager deep links. A paired native local sender could proxy verified operations later, but external-page no-cors fetch is not a usable management API."
+    },
+    "nativeLinks": [
+      { "label": "Dashboard / installed payloads", "path": "/#/" },
+      { "label": "Autoload", "path": "/#/autoload" },
+      { "label": "Get Payloads / repository browser", "path": "/#/storage" },
+      { "label": "Settings", "path": "/#/settings" },
+      { "label": "Repository sources", "path": "/#/sources" },
+      { "label": "Active processes", "path": "/#/processes" },
+      { "label": "Payload details", "pathTemplate": "/#/payload/{encodedPayloadID}?src={sourceID}" },
+      { "label": "Import known USB payload", "pathTemplate": "/#/move-from-usb?path={encodedUSBPayloadPath}", "note": "Requires an actual discovered path; route without a path falls back to storage." }
+    ],
+    "unsupportedDeepLinkAssumptions": [
+      "mode=manage and mode=favorites are history states, but the initial navigation effect deletes mode/modal before seeding history. Do not promise that an external manage-mode deep link opens edit mode. Open the dashboard, then use Manage in the native app.",
+      "No general console file-manager route is supplied by this project. Use the existing ezRemote native client for arbitrary filesystem management."
+    ],
+    "storage": {
+      "baseDirectory": "/data/pldmgr",
+      "payloadDirectory": "/data/pldmgr/payloads",
+      "managedRepositories": "/data/pldmgr/payloads/repo/",
+      "localUploadsAndUSBImports": "/data/pldmgr/payloads/local/",
+      "autoloadFile": "/data/pldmgr/autoload.txt",
+      "settingsFile": "/data/pldmgr/pldmgr_config.txt",
+      "favoritesFile": "/data/pldmgr/favorites.txt",
+      "sourcesFile": "/data/pldmgr/sources.json",
+      "payloadFormats": [".elf", ".bin"],
+      "selectionRule": "Use actual slot keys supplied by /list_payloads. Do not synthesize slot keys from display names or version filenames. USB entries use their discovered console paths.",
+      "listResponse": {
+        "self": "Manager running and pending version metadata",
+        "items": "Array with slot, path, kind and filename; repository entries include id, source_url, name, version and checksum metadata.",
+        "usb": "Array of discovered USB payload paths"
+      },
+      "scanning": "Lists internal managed slots, scans /mnt/usb0/pldmgr through /mnt/usb7/pldmgr, and additionally scans only the USB roots for .elf/.bin when SCAN_USB_PAYLOADS is enabled."
+    },
+    "autoload": {
+      "configEndpoint": "POST /set_config with application/json",
+      "exampleJSON": {
+        "AUTOLOAD_ENABLED": true,
+        "AUTOLOAD_LIST": "local/example-one,!2500,repo/example-two",
+        "AUTOLOAD_DELAY": 5
+      },
+      "exampleIsIllustrative": "Replace example slot keys with actual installed items. Saving does not run the sequence immediately.",
+      "orderedListWireType": "Comma-separated string, not JSON array.",
+      "fileFormat": "One slot key or delay entry per line, preserving list order.",
+      "delayEntry": "!N waits N milliseconds between entries; accepted range is 0 through 3600000.",
+      "startupDelay": "AUTOLOAD_DELAY is an integer in seconds, accepted range 0 through 3600; default 5.",
+      "booleans": "Settings JSON uses real JSON booleans; on-disk settings use KEY=0 or KEY=1.",
+      "returnAfterSuccess": "AUTOLOAD_RETURN_TO_DASHBOARD defaults false; the native UI may return after about three seconds only when every payload succeeded.",
+      "processBoundary": "Manager autoload starts when the manager is launched. This is separate from an exploit/autoloader's own autoload.txt.",
+      "abort": "POST /abort stops the current autoload sequence.",
+      "clearStatus": "POST /autoload_clear resets execution status; it does not remove configured autoload entries.",
+      "status": "GET /autoload_status supplies state, remaining, total, done, current, successful, failed, skipped and outcomes. An authorized native GET marks the frontend ready, so it is not entirely passive.",
+      "safeUI": "Autoload editor supports add, remove, up/down order, explicit delay entries and enable/disable with serial autosave. Never claim a save succeeded before the server acknowledgement."
+    },
+    "settings": {
+      "read": "GET /get_config",
+      "partialUpdates": "POST /set_config accepts an object containing only changed keys and preserves unrelated settings.",
+      "keys": [
+        "AUTOLOAD_ENABLED",
+        "AUTO_BROWSER_OPEN",
+        "AUTOLOAD_DELAY",
+        "SCAN_USB_PAYLOADS",
+        "AUTO_INSTALL_APP",
+        "MULTI_SOURCES_ENABLED",
+        "KILL_DISC_PLAYER_ON_STARTUP",
+        "SHOW_DASHBOARD_ICONS",
+        "AUTOLOAD_RETURN_TO_DASHBOARD",
+        "AUTOLOAD_LIST",
+        "FAVORITES"
+      ],
+      "favorites": "FAVORITES accepts CSV or an array of strings; use installed slot keys."
+    },
+    "managementEndpoints": [
+      { "method": "GET", "path": "/list_payloads", "purpose": "List installed items and discovered USB paths" },
+      { "method": "GET", "path": "/manage:check?filename={filename}", "purpose": "Inspect upload filename conflicts before uploading" },
+      { "method": "POST", "path": "/manage:upload?filename={filename}&mode=new", "body": "Raw application/octet-stream file bytes", "purpose": "Import without running; use conflict UI before a replace operation" },
+      { "method": "POST", "path": "/manage:delete?slot={slot}", "purpose": "Delete installed payload; manager also updates its autoload/favorites references" },
+      { "method": "POST", "path": "/loadpayload:{encodedSlotOrPath}", "purpose": "Run installed or USB payload; this is execution and is outside this task's read-only verification" },
+      { "method": "GET", "path": "/repository_payloads", "purpose": "Read available repository payloads" },
+      { "method": "POST", "path": "/repository_refresh", "purpose": "Force repository refresh" },
+      { "method": "POST", "path": "/repository_install?id={id}&source_url={repositoryURL}", "purpose": "Download selected repository item to console storage; optional mode and replace_slot select conflict behavior" },
+      { "method": "GET", "path": "/usb_move_check?path={path}", "purpose": "Inspect a USB import and conflict" },
+      { "method": "POST", "path": "/usb_move_perform?path={path}&mode=new&keep_original=true", "purpose": "Copy USB item to managed storage while retaining original; keep_original=false moves it" },
+      { "method": "GET", "path": "/sources_list", "purpose": "List repository sources" },
+      { "method": "POST", "path": "/sources_add?url={repositoryURL}", "purpose": "Add HTTP/HTTPS source" },
+      { "method": "POST", "path": "/sources_remove?index={index}", "purpose": "Remove source by actual current index" },
+      { "method": "POST", "path": "/sources_set", "body": "Sources JSON used by native Manage Sources view", "purpose": "Save/reorder sources" },
+      { "method": "GET", "path": "/history_list", "purpose": "Read current session launch history" },
+      { "method": "GET", "path": "/processes_list", "purpose": "Read process metadata" }
+    ],
+    "repositoryFormat": {
+      "defaultSource": "https://itsplk.github.io/ps5-payloads-mirror/payloads_v2.json",
+      "wrapper": "Object with name and payloads array, or bare array; prefer wrapper.",
+      "requiredItemFields": ["name", "filename", "url"],
+      "recommendedItemFields": ["id", "version", "checksum", "description", "author", "source"],
+      "checksum": "SHA-256 as 64 hex characters; provide known hashes. Binary/catalog fetching happens in console daemon, so browser CORS is not needed for those downloads.",
+      "pinning": "Only include PS5-supported payloads and preserve firmware/feature compatibility. A catalogue download installs a file; a separate native action runs it."
+    },
+    "bootstrap": {
+      "managerReadme": "Use the manager as the only payload in the chosen compatible autoloader's own sequence when manager-controlled ordering is desired.",
+      "currentY2JB": "Current upstream Y2JB defaults to the manager if no autoload.txt exists. Manual files are in USB-root/ps5_autoloader or /data/ps5_autoloader, with USB taking priority. Its sequence and the manager's /data/pldmgr/autoload.txt are distinct.",
+      "loopbackLoader": "Current Y2JB's bundled elfldr accepts localhost only by default; desktop TCP 9021 sending can fail even when manager operations work. Do not silently replace it or imply every ELF loader accepts remote connections.",
+      "initial9020Versus9021": "The upstream elfldr README documents sending elfldr-ps5.elf to an exploit's initial basic ELF loader on TCP 9020. Once elfldr is running it accepts ordinary payloads on TCP 9021. Use the actual chosen exploit's stage and firmware; do not assume every entry point starts the same port.",
+      "compatibility": "Keep the host's existing firmware/entry-point pins; this research does not extend them."
+    }
+  },
+  "ps4": {
+    "ps5ManagerCompatible": false,
+    "managerCompatibilityEvidence": "The itsPLK manager is PS5-native; no source confirms it as a PS4 manager.",
+    "nativeManager": "GoldHEN PayLoader LaunchPad and AutoRun Queue",
+    "minimumFeatureVersion": "GoldHEN v2.4b18.10",
+    "officialFeatureAnnouncement": "https://ko-fi.com/s/d64a916507",
+    "workflow": [
+      "Use the PS4 file manager/downloader or GoldHEN FTP to save a compatible BIN/ELF in /data/payloads/.",
+      "Open GoldHEN, Utilities, PayLoader LaunchPad on the console.",
+      "Select a payload to run once; Square adds it to AutoRun Queue.",
+      "Review enabled entries in AutoRun Queue; disable an older entry before adding a new version."
+    ],
+    "queueFile": "/data/GoldHEN/payloads.ini",
+    "documentedExample": "[AutoRun]\n/user/data/payloads/control4free.elf = 1\n",
+    "pathCaution": "Control4Free documents /data/payloads/ for copying and the exact /user/data/payloads/ registration above. This review does not establish a universal alias rule between these paths; use the native Queue UI and actual generated entry.",
+    "queueExampleLimit": "The exact example is documented by Control4Free's author. GoldHEN's internal binary implementation is not public, so generic order/delay semantics and complete INI preservation are not confirmed. Prefer native Queue UI over external blind rewrites.",
+    "ftp": "GoldHEN FTP TCP 2121",
+    "payloadSender": "GoldHEN PayLoader/BinLoader TCP 9090 when enabled; this is raw payload transport, not HTTP file management.",
+    "webManagementAPI": "No GoldHEN HTTP queue API or native browser deep link confirmed. Do not show a fake http://IP:9090 manager or route PS4 to PS5 port 8084.",
+    "fallback": "Provide local Download and Save controls, a valid ezRemote native file-manager link, and honest console steps for GoldHEN LaunchPad/AutoRun. Separate older firmware/GoldHEN builds that lack this feature."
+  },
+  "evidence": [
+    { "url": "https://api.github.com/repos/itsPLK/ps5-payload-manager/releases/latest", "supports": "Latest release at review" },
+    { "url": "https://api.github.com/repos/itsPLK/ps5-payload-manager/releases/tags/v0.6.3", "supports": "Release date, ready ELF asset URL, bytes and GitHub asset digest" },
+    { "url": "https://api.github.com/repos/itsPLK/ps5-payload-manager/git/ref/tags/v0.6.3", "supports": "Immutable tag commit" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/include/pldmgr.h", "supports": "Ports, route names, config paths and default repository" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/src/http_server.c", "supports": "Method/origin validation, request/response fields and action parameters" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/src/config.c", "supports": "Partial settings, JSON types, delay bounds, CSV autoload and favorites" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/src/autoload.c", "supports": "Ordered sequence parsing and millisecond delay entries" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/src/payload_mgr.c", "supports": "Storage-list schema, formats and USB scanning" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/frontend/src/hooks/useHistoryNavigation.js", "supports": "Supported hash routes and initial mode/modal removal" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/frontend/src/utils/autoloadEditorSession.js", "supports": "Autoload CSV serialization, autosave and acknowledgement behavior" },
+    { "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/CUSTOM_REPOSITORIES.md", "supports": "Repository schema, stable keys, checksum and daemon downloads" },
+    { "url": "https://github.com/itsPLK/ps5-y2jb-autoloader/blob/main/README.md", "supports": "Current manager bootstrap, distinct manual sequence and loopback-only ELF loader" },
+    { "url": "https://github.com/ps5-payload-dev/elfldr#quick-start", "supports": "Initial basic loader 9020 bootstrap versus persistent ELF loader 9021 payload port" },
+    { "url": "https://ko-fi.com/s/d64a916507", "supports": "SiSTRo's GoldHEN 2.4b18.10 LaunchPad and AutoRun announcement" },
+    { "url": "https://github.com/MoHadiShibli/Control4Free/blob/main/docs/installation.md", "supports": "PS4 minimum version, menu steps, payload location and actual AutoRun INI example" },
+    { "url": "https://github.com/j117mw3/ps4-hen-rest/blob/main/keeper/README.md", "supports": "PS4 LaunchPad Square/AutoRun Queue steps observed by project author on GoldHEN 2.4b18.12" },
+    { "url": "https://github.com/GoldHEN/GoldHEN/blob/master/README.md", "supports": "Official GoldHEN FTP and BinLoader ports; this older GitHub README does not describe current beta AutoRun" }
+  ],
+  "verificationLimits": [
+    "No physical PS4 or PS5 connected.",
+    "No payload downloaded, sent, loaded, installed or executed by this research.",
+    "No local F: archive records were changed.",
+    "No source/catalogue files were edited; only this evidence document was added.",
+    "Source-confirmed behavior is not evidence of hardware execution success."
+  ]
+}

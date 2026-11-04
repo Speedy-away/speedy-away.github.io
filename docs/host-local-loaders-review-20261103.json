@@ -1,0 +1,1944 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-03T17:30:29.266Z",
+  "status": "Source audit and additional licensed PS4 runtime staged; no runtime activation or archive writes performed by this agent.",
+  "scope": {
+    "externalLoaderCards": 31,
+    "ps4": 29,
+    "ps5": 2,
+    "userLatestClarification": "Own features first; other-host links allowed in separate secondary section, according to parent task update."
+  },
+  "repositories": [
+    {
+      "repository": "https://github.com/KAR0218/KAR0218.github.io",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "treeFiles": 2277,
+      "treeTruncated": false,
+      "declaredLicenseFiles": [
+        "ps5/UMTX/psfree/COPYING"
+      ]
+    },
+    {
+      "repository": "https://github.com/soniciso1/relapse",
+      "commit": "112dbe5949e9c3de923bb0909289c58a9c082151",
+      "treeFiles": 78,
+      "treeTruncated": false,
+      "declaredLicenseFiles": []
+    },
+    {
+      "repository": "https://github.com/idlesauce/umtx2",
+      "commit": "a080beb74d9e4bc34f3563798b716bd86b2d6ee0",
+      "treeFiles": 82,
+      "treeTruncated": false,
+      "declaredLicenseFiles": [
+        "LICENSE",
+        "document/en/ps5/psfree/COPYING"
+      ]
+    },
+    {
+      "repository": "https://github.com/kmeps4/PSFree",
+      "commit": "368d82aa40d3017c220757ce315761adb5f06678",
+      "treeFiles": 42,
+      "treeTruncated": false,
+      "declaredLicenseFiles": [
+        "COPYING",
+        "LICENSE",
+        "fonts/FONTS.LICENSE"
+      ]
+    },
+    {
+      "repository": "https://github.com/GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "treeFiles": 334,
+      "treeTruncated": false,
+      "declaredLicenseFiles": []
+    },
+    {
+      "repository": "https://github.com/raw13g/raw13g.github.io",
+      "commit": "9ba2f0719591d6900d91aba6cc5291f8fff97e6d",
+      "treeFiles": 19,
+      "treeTruncated": false,
+      "declaredLicenseFiles": [
+        "LICENSE"
+      ]
+    }
+  ],
+  "existingLocalRuntimes": [
+    {
+      "id": "ps4-900",
+      "entry": "/hosts/runtime/ps4-900/",
+      "firmwares": [
+        "9.00"
+      ],
+      "source": {
+        "repository": "https://github.com/kmeps4/PSFree",
+        "commit": "368d82aa40d3017c220757ce315761adb5f06678"
+      },
+      "license": "AGPL-3.0-or-later; Liberation font OFL"
+    },
+    {
+      "id": "ps5-umtx",
+      "entry": "/hosts/runtime/ps5-umtx/",
+      "firmwares": [
+        "1.00",
+        "1.01",
+        "1.02",
+        "1.05",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "2.00",
+        "2.20",
+        "2.25",
+        "2.26",
+        "2.30",
+        "2.50",
+        "2.70",
+        "3.00",
+        "3.20",
+        "4.00",
+        "4.02",
+        "4.03",
+        "4.50",
+        "4.51"
+      ],
+      "source": {
+        "repository": "https://github.com/PS5Dev/PS5-UMTX-Jailbreak",
+        "commit": "2cf6778ebe89ff35255e1c228826d0d2155e9d2a"
+      },
+      "license": "Unlicense host; AGPL-3.0-or-later PSFree; GPL-3.0 ELF loader"
+    }
+  ],
+  "newStagedRuntime": {
+    "schemaVersion": 1,
+    "id": "ps4-psfree-700-960",
+    "title": "PS4 7.00–9.60 · PSFree / Lapse",
+    "console": "ps4",
+    "entry": "/hosts/runtime/ps4-psfree-700-960/",
+    "runEntry": "/hosts/runtime/ps4-psfree-700-960/web/index.html",
+    "firmwares": [
+      "7.00",
+      "7.01",
+      "7.02",
+      "7.50",
+      "7.51",
+      "7.55",
+      "8.00",
+      "8.01",
+      "8.03",
+      "8.50",
+      "8.52",
+      "9.00",
+      "9.03",
+      "9.04",
+      "9.50",
+      "9.51",
+      "9.60"
+    ],
+    "listener": {
+      "transport": "tcp",
+      "port": 9020,
+      "format": "bin"
+    },
+    "source": {
+      "repository": "https://github.com/Al-Azif/psfree-lapse",
+      "commit": "08ecf038c94aa99b56e46c9f32e2e486f83656b6"
+    },
+    "license": "AGPL-3.0-or-later; Liberation Mono OFL",
+    "offline": "No offline persistence claim; upstream entry has no active cache manifest.",
+    "verified": {
+      "staticDependencies": true,
+      "hardwareExecution": false,
+      "downloadedCodeExecuted": false,
+      "authoredGuardOnlyTested": true
+    },
+    "compiler": {
+      "version": "clang version 19.1.5\nTarget: x86_64-pc-windows-msvc\nThread model: posix\nInstalledDir: C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin\n",
+      "tools": "Official installed Microsoft Visual Studio LLVM19.1.5; x86_64 ELF target, no emitted output executed.",
+      "records": [
+        {
+          "name": "700",
+          "commands": [
+            {
+              "tool": "clang.exe",
+              "args": [
+                "--target=x86_64-unknown-elf",
+                "-O3",
+                "-std=gnu11",
+                "-Wno-int-conversion",
+                "-masm=intel",
+                "-ffreestanding",
+                "-fno-stack-protector",
+                "-fcf-protection=none",
+                "-fno-asynchronous-unwind-tables",
+                "-mno-red-zone",
+                "-fno-vectorize",
+                "-fno-slp-vectorize",
+                "-c",
+                "700.c",
+                "-o",
+                "700.o"
+              ]
+            },
+            {
+              "tool": "ld.lld.exe",
+              "args": [
+                "-T",
+                "script.ld",
+                "-e",
+                "kpatch",
+                "--no-undefined",
+                "700.o",
+                "-o",
+                "700.elf"
+              ]
+            },
+            {
+              "tool": "llvm-objcopy.exe",
+              "args": [
+                "-O",
+                "binary",
+                "--only-section=.text",
+                "700.elf",
+                "700.bin"
+              ]
+            }
+          ],
+          "bytes": 744,
+          "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/700.c",
+          "sha256": "7702a57e2c11929439de53fe885ca1357e2c33ee824b3540a42221619c56725e",
+          "elfBytes": 5400,
+          "elfSHA256": "bcd4a797e98fb696581edd1f3f4e9d3243c6254121d15d88d2de9936de7d176b",
+          "checks": {
+            "elf64LE": true,
+            "machine": "x86-64",
+            "entry": 0,
+            "textOnly": true,
+            "noRelocations": true,
+            "noRequiredDataSections": true,
+            "outputExecuted": false
+          }
+        },
+        {
+          "name": "750",
+          "commands": [
+            {
+              "tool": "clang.exe",
+              "args": [
+                "--target=x86_64-unknown-elf",
+                "-O3",
+                "-std=gnu11",
+                "-Wno-int-conversion",
+                "-masm=intel",
+                "-ffreestanding",
+                "-fno-stack-protector",
+                "-fcf-protection=none",
+                "-fno-asynchronous-unwind-tables",
+                "-mno-red-zone",
+                "-fno-vectorize",
+                "-fno-slp-vectorize",
+                "-c",
+                "750.c",
+                "-o",
+                "750.o"
+              ]
+            },
+            {
+              "tool": "ld.lld.exe",
+              "args": [
+                "-T",
+                "script.ld",
+                "-e",
+                "kpatch",
+                "--no-undefined",
+                "750.o",
+                "-o",
+                "750.elf"
+              ]
+            },
+            {
+              "tool": "llvm-objcopy.exe",
+              "args": [
+                "-O",
+                "binary",
+                "--only-section=.text",
+                "750.elf",
+                "750.bin"
+              ]
+            }
+          ],
+          "bytes": 916,
+          "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/750.c",
+          "sha256": "41b6655c6926ea345d451d5d94bdd701949d96677b5e917a888a12c49a88db66",
+          "elfBytes": 5568,
+          "elfSHA256": "4e6397c146c3fe7c385e639aedffc775af38f999fa34bbba3d87836994547e93",
+          "checks": {
+            "elf64LE": true,
+            "machine": "x86-64",
+            "entry": 0,
+            "textOnly": true,
+            "noRelocations": true,
+            "noRequiredDataSections": true,
+            "outputExecuted": false
+          }
+        },
+        {
+          "name": "800",
+          "commands": [
+            {
+              "tool": "clang.exe",
+              "args": [
+                "--target=x86_64-unknown-elf",
+                "-O3",
+                "-std=gnu11",
+                "-Wno-int-conversion",
+                "-masm=intel",
+                "-ffreestanding",
+                "-fno-stack-protector",
+                "-fcf-protection=none",
+                "-fno-asynchronous-unwind-tables",
+                "-mno-red-zone",
+                "-fno-vectorize",
+                "-fno-slp-vectorize",
+                "-c",
+                "800.c",
+                "-o",
+                "800.o"
+              ]
+            },
+            {
+              "tool": "ld.lld.exe",
+              "args": [
+                "-T",
+                "script.ld",
+                "-e",
+                "kpatch",
+                "--no-undefined",
+                "800.o",
+                "-o",
+                "800.elf"
+              ]
+            },
+            {
+              "tool": "llvm-objcopy.exe",
+              "args": [
+                "-O",
+                "binary",
+                "--only-section=.text",
+                "800.elf",
+                "800.bin"
+              ]
+            }
+          ],
+          "bytes": 904,
+          "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/800.c",
+          "sha256": "d20dc58d4f1c45b0adc7345aa03acc3072c9ca177006178cae7fbf70c922dd41",
+          "elfBytes": 5560,
+          "elfSHA256": "3fc0462675a274f15377d4962e7a2d6dc70aea19c0430901a64d64a4784842da",
+          "checks": {
+            "elf64LE": true,
+            "machine": "x86-64",
+            "entry": 0,
+            "textOnly": true,
+            "noRelocations": true,
+            "noRequiredDataSections": true,
+            "outputExecuted": false
+          }
+        },
+        {
+          "name": "850",
+          "commands": [
+            {
+              "tool": "clang.exe",
+              "args": [
+                "--target=x86_64-unknown-elf",
+                "-O3",
+                "-std=gnu11",
+                "-Wno-int-conversion",
+                "-masm=intel",
+                "-ffreestanding",
+                "-fno-stack-protector",
+                "-fcf-protection=none",
+                "-fno-asynchronous-unwind-tables",
+                "-mno-red-zone",
+                "-fno-vectorize",
+                "-fno-slp-vectorize",
+                "-c",
+                "850.c",
+                "-o",
+                "850.o"
+              ]
+            },
+            {
+              "tool": "ld.lld.exe",
+              "args": [
+                "-T",
+                "script.ld",
+                "-e",
+                "kpatch",
+                "--no-undefined",
+                "850.o",
+                "-o",
+                "850.elf"
+              ]
+            },
+            {
+              "tool": "llvm-objcopy.exe",
+              "args": [
+                "-O",
+                "binary",
+                "--only-section=.text",
+                "850.elf",
+                "850.bin"
+              ]
+            }
+          ],
+          "bytes": 904,
+          "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/850.c",
+          "sha256": "f2f12ba78d25e6fa9a5a63ee190baa68c86efc92f7de126e132c4d5fd418e982",
+          "elfBytes": 5560,
+          "elfSHA256": "f083a7b36a70e722967bad9ebeeb2aca446ab8fdb611502c9a6e7672d110db10",
+          "checks": {
+            "elf64LE": true,
+            "machine": "x86-64",
+            "entry": 0,
+            "textOnly": true,
+            "noRelocations": true,
+            "noRequiredDataSections": true,
+            "outputExecuted": false
+          }
+        },
+        {
+          "name": "900",
+          "commands": [
+            {
+              "tool": "clang.exe",
+              "args": [
+                "--target=x86_64-unknown-elf",
+                "-O3",
+                "-std=gnu11",
+                "-Wno-int-conversion",
+                "-masm=intel",
+                "-ffreestanding",
+                "-fno-stack-protector",
+                "-fcf-protection=none",
+                "-fno-asynchronous-unwind-tables",
+                "-mno-red-zone",
+                "-fno-vectorize",
+                "-fno-slp-vectorize",
+                "-c",
+                "900.c",
+                "-o",
+                "900.o"
+              ]
+            },
+            {
+              "tool": "ld.lld.exe",
+              "args": [
+                "-T",
+                "script.ld",
+                "-e",
+                "kpatch",
+                "--no-undefined",
+                "900.o",
+                "-o",
+                "900.elf"
+              ]
+            },
+            {
+              "tool": "llvm-objcopy.exe",
+              "args": [
+                "-O",
+                "binary",
+                "--only-section=.text",
+                "900.elf",
+                "900.bin"
+              ]
+            }
+          ],
+          "bytes": 904,
+          "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/900.c",
+          "sha256": "7cc4a5a38fef3b9872ee9fbf84e48e0c92a5e885e70c54dd18ea322af0a6a0a4",
+          "elfBytes": 5560,
+          "elfSHA256": "a4a6403f1edaada7b4de342b53f40241438ea4f2ea8d74120d4171a1ec40ad14",
+          "checks": {
+            "elf64LE": true,
+            "machine": "x86-64",
+            "entry": 0,
+            "textOnly": true,
+            "noRelocations": true,
+            "noRequiredDataSections": true,
+            "outputExecuted": false
+          }
+        },
+        {
+          "name": "903",
+          "commands": [
+            {
+              "tool": "clang.exe",
+              "args": [
+                "--target=x86_64-unknown-elf",
+                "-O3",
+                "-std=gnu11",
+                "-Wno-int-conversion",
+                "-masm=intel",
+                "-ffreestanding",
+                "-fno-stack-protector",
+                "-fcf-protection=none",
+                "-fno-asynchronous-unwind-tables",
+                "-mno-red-zone",
+                "-fno-vectorize",
+                "-fno-slp-vectorize",
+                "-c",
+                "903.c",
+                "-o",
+                "903.o"
+              ]
+            },
+            {
+              "tool": "ld.lld.exe",
+              "args": [
+                "-T",
+                "script.ld",
+                "-e",
+                "kpatch",
+                "--no-undefined",
+                "903.o",
+                "-o",
+                "903.elf"
+              ]
+            },
+            {
+              "tool": "llvm-objcopy.exe",
+              "args": [
+                "-O",
+                "binary",
+                "--only-section=.text",
+                "903.elf",
+                "903.bin"
+              ]
+            }
+          ],
+          "bytes": 904,
+          "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/903.c",
+          "sha256": "7a02684c7cfc5bd667519a6dc33437aad8084e266929ed8aad6e20089755faf8",
+          "elfBytes": 5560,
+          "elfSHA256": "9059cd087b46231663846639cb44d40abadb989f5f42702642fd36d39d41758c",
+          "checks": {
+            "elf64LE": true,
+            "machine": "x86-64",
+            "entry": 0,
+            "textOnly": true,
+            "noRelocations": true,
+            "noRequiredDataSections": true,
+            "outputExecuted": false
+          }
+        },
+        {
+          "name": "950",
+          "commands": [
+            {
+              "tool": "clang.exe",
+              "args": [
+                "--target=x86_64-unknown-elf",
+                "-O3",
+                "-std=gnu11",
+                "-Wno-int-conversion",
+                "-masm=intel",
+                "-ffreestanding",
+                "-fno-stack-protector",
+                "-fcf-protection=none",
+                "-fno-asynchronous-unwind-tables",
+                "-mno-red-zone",
+                "-fno-vectorize",
+                "-fno-slp-vectorize",
+                "-c",
+                "950.c",
+                "-o",
+                "950.o"
+              ]
+            },
+            {
+              "tool": "ld.lld.exe",
+              "args": [
+                "-T",
+                "script.ld",
+                "-e",
+                "kpatch",
+                "--no-undefined",
+                "950.o",
+                "-o",
+                "950.elf"
+              ]
+            },
+            {
+              "tool": "llvm-objcopy.exe",
+              "args": [
+                "-O",
+                "binary",
+                "--only-section=.text",
+                "950.elf",
+                "950.bin"
+              ]
+            }
+          ],
+          "bytes": 904,
+          "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/950.c",
+          "sha256": "7da78fd8bca1e215160a82976bfd62b89ca90bed8efaa44c5d99c0cf59a11e35",
+          "elfBytes": 5560,
+          "elfSHA256": "cb150c18e48dc0f68214271bde7c9eb015a4e5c28db06156b183a58f690d3c15",
+          "checks": {
+            "elf64LE": true,
+            "machine": "x86-64",
+            "entry": 0,
+            "textOnly": true,
+            "noRelocations": true,
+            "noRequiredDataSections": true,
+            "outputExecuted": false
+          }
+        }
+      ]
+    },
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 34523,
+        "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+      },
+      {
+        "path": "README.md",
+        "bytes": 1871,
+        "sha256": "3c641d2af7b22b1cfec5153eaee68a01fe1cf3791258fc6eea08ece6b756a9b9"
+      },
+      {
+        "path": "compiler-build.json",
+        "bytes": 11896,
+        "sha256": "1c4db4447ed8ea56e11c46c157a93848e6c77939540e0c8bd87083ff2c6e7995"
+      },
+      {
+        "path": "entry.js",
+        "bytes": 1094,
+        "sha256": "394d7d38962b66e0a5b0380b597a23547c4b36ae0dea3c79d65e802727cd46c6"
+      },
+      {
+        "path": "guard.js",
+        "bytes": 1027,
+        "sha256": "8aa6820f761c9c50953a1e8c077621e2d71a87addde28f20ca4b926ab3ff4c54"
+      },
+      {
+        "path": "index.html",
+        "bytes": 1301,
+        "sha256": "7c239ad4c49dc05adaf93d2c3845df8d976538dd4c570772a960cd1f16e2721b"
+      },
+      {
+        "path": "source-record.json",
+        "bytes": 14557,
+        "sha256": "67a9a5332b997f6501362da3dbc608a150e11580947e85e4e994a22f74f95aa3"
+      },
+      {
+        "path": "source.zip",
+        "bytes": 303223,
+        "sha256": "d67c982cd8df1e1f0c4c11e76d763a20ece7d6fb4d1cf11c9e43fb588473cd61"
+      },
+      {
+        "path": "style.css",
+        "bytes": 539,
+        "sha256": "42e15d343f8854f341ebc54c4f64c400ef9e79a29d5d7c62671fd6de51b6e3e9"
+      },
+      {
+        "path": "web/about.html",
+        "bytes": 7644,
+        "sha256": "7918af1af96a42dc1facfb3535fd75c0da1bcd6bc0a378f84afb3437752e7f6c"
+      },
+      {
+        "path": "web/alert.js",
+        "bytes": 1697,
+        "sha256": "b3352504520ecf2a187d21cc3de4b1db93dedbfacd9d238e84428d5b0714759b"
+      },
+      {
+        "path": "web/config.js",
+        "bytes": 2609,
+        "sha256": "f31906b947300e11642f571e779a00468a2bd9993083dcd232bd4e6b6a8c0f83"
+      },
+      {
+        "path": "web/fonts/FONTS.LICENSE",
+        "bytes": 4416,
+        "sha256": "fa16ee0fd3c2ff3a19309b4867baaf1f265e532e7f4911589592c2d8ee54f8e8"
+      },
+      {
+        "path": "web/fonts/LiberationMono-Regular.ttf",
+        "bytes": 319624,
+        "sha256": "6299433c96540e07cc0f48e5f00f28e4e5551a717e518c23b243293b9105d42b"
+      },
+      {
+        "path": "web/fonts/README.txt",
+        "bytes": 97,
+        "sha256": "e28d12100052eebf61eb70e3ee307b974935f62c20054d46693730a565ea8ee9"
+      },
+      {
+        "path": "web/index.html",
+        "bytes": 1358,
+        "sha256": "3fe79278ac8ce9505a07f620c65a6160c943211e26665b4ef68f8b348b484a20"
+      },
+      {
+        "path": "web/kpatch/700.bin",
+        "bytes": 744,
+        "sha256": "7702a57e2c11929439de53fe885ca1357e2c33ee824b3540a42221619c56725e"
+      },
+      {
+        "path": "web/kpatch/700.c",
+        "bytes": 7626,
+        "sha256": "a0e3d017f24437330a3ce5a71cf474cc68d254291030c07967b2197e65a7723c"
+      },
+      {
+        "path": "web/kpatch/750.bin",
+        "bytes": 916,
+        "sha256": "41b6655c6926ea345d451d5d94bdd701949d96677b5e917a888a12c49a88db66"
+      },
+      {
+        "path": "web/kpatch/750.c",
+        "bytes": 8682,
+        "sha256": "75e52d7f98dd918f3ab9f2b48bf19a52725ffe3f46f79567e9e7857d2c6db538"
+      },
+      {
+        "path": "web/kpatch/800.bin",
+        "bytes": 904,
+        "sha256": "d20dc58d4f1c45b0adc7345aa03acc3072c9ca177006178cae7fbf70c922dd41"
+      },
+      {
+        "path": "web/kpatch/800.c",
+        "bytes": 8612,
+        "sha256": "039a32a50620cec03c16498fde563a86e5e10c37eede113c87af88fc5453bbd5"
+      },
+      {
+        "path": "web/kpatch/850.bin",
+        "bytes": 904,
+        "sha256": "f2f12ba78d25e6fa9a5a63ee190baa68c86efc92f7de126e132c4d5fd418e982"
+      },
+      {
+        "path": "web/kpatch/850.c",
+        "bytes": 8605,
+        "sha256": "99d05614adade9c2a8bfa093414aeb694c511640b48b365ac894d37bde034f34"
+      },
+      {
+        "path": "web/kpatch/900.bin",
+        "bytes": 904,
+        "sha256": "7cc4a5a38fef3b9872ee9fbf84e48e0c92a5e885e70c54dd18ea322af0a6a0a4"
+      },
+      {
+        "path": "web/kpatch/900.c",
+        "bytes": 8601,
+        "sha256": "9590258d11bcb564207393597e63af7801f14839d70838919bc92dd6af820afc"
+      },
+      {
+        "path": "web/kpatch/903.bin",
+        "bytes": 904,
+        "sha256": "7a02684c7cfc5bd667519a6dc33437aad8084e266929ed8aad6e20089755faf8"
+      },
+      {
+        "path": "web/kpatch/903.c",
+        "bytes": 8607,
+        "sha256": "1e014cc3c09d1216fe0c45244d1e1f66e0b7ecee2e489ec256bf3d6d3105011a"
+      },
+      {
+        "path": "web/kpatch/950.bin",
+        "bytes": 904,
+        "sha256": "7da78fd8bca1e215160a82976bfd62b89ca90bed8efaa44c5d99c0cf59a11e35"
+      },
+      {
+        "path": "web/kpatch/950.c",
+        "bytes": 8614,
+        "sha256": "243abf1db227ecfae892884e122514716c29ae34327a0debb830ffde566e1f17"
+      },
+      {
+        "path": "web/kpatch/Makefile",
+        "bytes": 491,
+        "sha256": "a14928a083e1c684edf7ec7933d29244a97818c9179d6b314b0df1f6abc4a063"
+      },
+      {
+        "path": "web/kpatch/script.ld",
+        "bytes": 178,
+        "sha256": "d933f197ef2ab23b44c7bc55edf7ba91dab03c2b0da4962bd356b76d2eada8da"
+      },
+      {
+        "path": "web/kpatch/types.h",
+        "bytes": 950,
+        "sha256": "28dd1c9ba814f1bc6112eb638a44d4a6a6e9a5e41c8ff4d945b0c9fa8317aa26"
+      },
+      {
+        "path": "web/kpatch/utils.h",
+        "bytes": 1622,
+        "sha256": "76e9b1ac494fed0790fab38ecc482dd0667fc8bc1dc27a62e1af38d49c90d934"
+      },
+      {
+        "path": "web/lapse.js",
+        "bytes": 60029,
+        "sha256": "93e49080d19bcb5f18ff0035ff2ab1df4f74d66a936cfd6e7c9265f699d989f7"
+      },
+      {
+        "path": "web/lapse/ps4/700.js",
+        "bytes": 1203,
+        "sha256": "2cfe5fd9ac1d7483b568620c6e1685ae053912ceb32bbcdf04c2ac67a2cea0d0"
+      },
+      {
+        "path": "web/lapse/ps4/750.js",
+        "bytes": 1191,
+        "sha256": "484168cd85145976bdcb445e1dd6e59688f3f3d5e70042ec51af494c9d287b6a"
+      },
+      {
+        "path": "web/lapse/ps4/751.js",
+        "bytes": 1435,
+        "sha256": "8833ef22bf84095c0bb07df82a136a3f10398af8ca38b5dd1ea23330e33c642e"
+      },
+      {
+        "path": "web/lapse/ps4/800.js",
+        "bytes": 1203,
+        "sha256": "369a96565b1e62f6a03e20a73105917ab3742e6b74edf39eaaa76082450597c0"
+      },
+      {
+        "path": "web/lapse/ps4/850.js",
+        "bytes": 1190,
+        "sha256": "6be397db953356e0a6a191c4beb622a3bb9694ceada532f1605e54327df51dfa"
+      },
+      {
+        "path": "web/lapse/ps4/852.js",
+        "bytes": 1190,
+        "sha256": "7dd4b84217bce3378455f7a641e17fd89af6f75794775d4387f58b532088c5ae"
+      },
+      {
+        "path": "web/lapse/ps4/900.js",
+        "bytes": 1189,
+        "sha256": "0045e662d80060a2fecf101be131ef2b38f5c12ec38ad05ac2f87e9507115f9f"
+      },
+      {
+        "path": "web/lapse/ps4/903.js",
+        "bytes": 1195,
+        "sha256": "b70a4e1ee4ec609e0c24f597f959b6f44c7b939b97c2eec0df05ba912f3d49fd"
+      },
+      {
+        "path": "web/lapse/ps4/950.js",
+        "bytes": 1204,
+        "sha256": "730be5e6e39cfdf901753dec35d08add09f324805fd7c5dde4202bd474dcccf0"
+      },
+      {
+        "path": "web/module/chain.js",
+        "bytes": 15414,
+        "sha256": "6d09e6033d7c6b8815dab1f2910d1974f185abb5215d382aaab1a5b73b1827b2"
+      },
+      {
+        "path": "web/module/int64.js",
+        "bytes": 3176,
+        "sha256": "cdd42b5e94f19b3eb821beb8417032a4068282d6f5f7ddd23be32d749c5e3e2e"
+      },
+      {
+        "path": "web/module/mem.js",
+        "bytes": 10871,
+        "sha256": "3d3e476455d751d09a1108818b8d016cf026229dbacafe9b47e923d4191bcbb8"
+      },
+      {
+        "path": "web/module/memtools.js",
+        "bytes": 8342,
+        "sha256": "576357a691a279f1aee7398eb7743d861fe2d9734a16b57761814bec9201f4f3"
+      },
+      {
+        "path": "web/module/offset.js",
+        "bytes": 1930,
+        "sha256": "88ae276045da184e796b08fe951eae176e7b76f657d561a5803a62006d24a34b"
+      },
+      {
+        "path": "web/module/rw.js",
+        "bytes": 4090,
+        "sha256": "b7effb458d101b060fd167c5d310f44970c04f01c96cb21abeb5beb8187a7218"
+      },
+      {
+        "path": "web/module/utils.js",
+        "bytes": 4152,
+        "sha256": "2e7c5cf8d1be8455cd8400d2b476fcecff93474f2a54081742b4f81d022426b1"
+      },
+      {
+        "path": "web/module/view.js",
+        "bytes": 6272,
+        "sha256": "86365d053a7fb2f0f63dd1ebe230a57fbdeb7573d4e4a0ad9c35195db9d019d6"
+      },
+      {
+        "path": "web/psfree.js",
+        "bytes": 25706,
+        "sha256": "9bf49cbf35d6987290f0269e8bb73d8cf38006e31fdc60c3206498257ac24ba2"
+      },
+      {
+        "path": "web/rop/ps4/700.js",
+        "bytes": 8362,
+        "sha256": "a61413f6df441988f6b7386b4c61eb93ccb759d518d72985e93176811d6facd2"
+      },
+      {
+        "path": "web/rop/ps4/750.js",
+        "bytes": 8362,
+        "sha256": "870f270d9ff6e672a7ff22227d6977bc7d6dbcb267f0f12075d33d66b084fbc7"
+      },
+      {
+        "path": "web/rop/ps4/800.js",
+        "bytes": 8360,
+        "sha256": "e6830d50036434095efa83c8e9cfee94c025998f74dabd3909fee66fa80154ed"
+      },
+      {
+        "path": "web/rop/ps4/850.js",
+        "bytes": 8354,
+        "sha256": "80a5f545685ec9fb7d52c8a9f6f9aef834ccb6872ce6101c7631cd3765e0bac7"
+      },
+      {
+        "path": "web/rop/ps4/900.js",
+        "bytes": 8964,
+        "sha256": "5a036474014f50a158e2e8c7dcbff4491b658de1cd9772e6b6cc3afc5ebeb3c6"
+      },
+      {
+        "path": "web/rop/ps4/950.js",
+        "bytes": 9056,
+        "sha256": "c314497fa78609a8a2ec4ef4a48591c50c07cf2b8210ea75bddf664398e323f6"
+      },
+      {
+        "path": "web/send.js",
+        "bytes": 7346,
+        "sha256": "dcb3682deadc1e1e7a382e0de0421e616d918829097024b70e36ca16021ff2b0"
+      }
+    ],
+    "deploymentDirectory": "tmp/host-local-loader-review/ps4-psfree-700-960/runtime",
+    "sourceDirectory": "tmp/host-local-loader-review/ps4-psfree-700-960/source",
+    "archiveJobs": "tmp/host-local-loader-review/ps4-psfree-700-960/archive-jobs.json",
+    "webArchive": {
+      "id": "host-runtime-ps4-psfree-700-960-web-485da781385c",
+      "title": "PS4 7.00–9.60 · PSFree / Lapse · ready static runtime",
+      "platform": "PS4",
+      "category": [
+        "Hosts",
+        "whatwhatboy"
+      ],
+      "project": "ps4-psfree-700-960",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "08ecf038c94a-llvm19.1.5-integration-2026.11.03.1",
+      "kind": "generated",
+      "url": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6",
+      "filename": "ps4-psfree-700-960-web-485da781385c.zip",
+      "importPath": "tmp/host-local-loader-review/ps4-psfree-700-960/ps4-psfree-700-960-web-485da781385c.zip",
+      "expectedBytes": 608606,
+      "expectedSha256": "485da781385cac20ba1856b2672209dafc582c234b93225619eb167bd7d1000b",
+      "mirror": true,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    "correspondingSourceArchive": {
+      "id": "host-runtime-ps4-psfree-700-960-source-d67c982cd8df",
+      "title": "PS4 7.00–9.60 · PSFree / Lapse · corresponding source",
+      "platform": "PS4",
+      "category": [
+        "Hosts",
+        "whatwhatboy"
+      ],
+      "project": "ps4-psfree-700-960",
+      "archiveRole": [
+        "Source Code"
+      ],
+      "version": "08ecf038c94a-llvm19.1.5-integration-2026.11.03.1",
+      "kind": "generated",
+      "url": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6",
+      "filename": "ps4-psfree-700-960-source-d67c982cd8df.zip",
+      "importPath": "tmp/host-local-loader-review/ps4-psfree-700-960/ps4-psfree-700-960-source-d67c982cd8df.zip",
+      "expectedBytes": 303223,
+      "expectedSha256": "d67c982cd8df1e1f0c4c11e76d763a20ece7d6fb4d1cf11c9e43fb588473cd61",
+      "mirror": true,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    "internalPatchArchives": 7,
+    "guardCases": 28,
+    "staticDependencies": 161,
+    "status": "Prepared, not archived or activated; root owns import/promote.",
+    "guards": "Entry does not import exploit code. Start requires exact PS4 browser whitelist and creates one-use30-second firmware ticket. Execution entry consumes ticket before dynamically adding alert.js module. Restored/direct entry has no valid ticket and remains inert.",
+    "build": "Compiled exact pinned Al-Azif kernelpatch C with official installed Visual Studio LLVM19.1.5, ELF64x86-64, entry0, raw text only, no relocations/required data sections. Compiler output never executed. These are new local build bytes; no byte-equivalence to arbitrary hosted binaries is claimed.",
+    "metadataSelfReference": false,
+    "verifiedRuntimeFiles": 60,
+    "retainedArchiveJobs": [
+      {
+        "id": "host-runtime-ps4-psfree-700-960-web-1e02bc988849",
+        "title": "PS4 7.00–9.60 · PSFree / Lapse · ready static runtime",
+        "platform": "PS4",
+        "category": [
+          "Hosts",
+          "whatwhatboy"
+        ],
+        "project": "ps4-psfree-700-960",
+        "archiveRole": [
+          "Builds"
+        ],
+        "version": "08ecf038c94a-llvm19.1.5-integration-2026.11.03.1",
+        "kind": "generated",
+        "url": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6",
+        "filename": "ps4-psfree-700-960-web-1e02bc988849.zip",
+        "importPath": "tmp/host-local-loader-review/ps4-psfree-700-960/ps4-psfree-700-960-web-1e02bc988849.zip",
+        "expectedBytes": 608652,
+        "expectedSha256": "1e02bc9888495ce9cf1546a1fe7aa936c2012f28147bd34fd88752851a3d7d9d",
+        "mirror": true,
+        "pages": [
+          "hosts/ps4/index.html"
+        ]
+      }
+    ]
+  },
+  "externalCardCoverage": [
+    {
+      "id": "gamerhack-g2all",
+      "platform": "ps4",
+      "label": "GamerHack · 5.05 / 5.07 / 7.00–13.52",
+      "url": "https://gamerhack.github.io/g2all/",
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.00",
+            "7.01",
+            "7.02",
+            "7.50",
+            "7.51",
+            "7.55",
+            "8.00",
+            "8.01",
+            "8.03",
+            "8.50",
+            "8.52",
+            "9.00",
+            "9.03",
+            "9.04",
+            "9.50",
+            "9.51",
+            "9.60"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-g2allpro",
+      "platform": "ps4",
+      "label": "Karo G2AllPro · through 13.52",
+      "url": "https://karo218.ir/g2allpro/index.html",
+      "firmwares": [
+        "5.05",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.00",
+            "7.01",
+            "7.02",
+            "7.50",
+            "7.51",
+            "7.55",
+            "8.00",
+            "8.01",
+            "8.03",
+            "8.50",
+            "8.52",
+            "9.00",
+            "9.03",
+            "9.04",
+            "9.50",
+            "9.51",
+            "9.60"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-900-light",
+      "platform": "ps4",
+      "label": "Karo · 9.00 Light",
+      "url": "https://karo218.ir/900L/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-900-manual",
+      "platform": "ps4",
+      "label": "Karo · 9.00 Manual",
+      "url": "https://karo218.ir/900NM/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-900-new",
+      "platform": "ps4",
+      "label": "Karo · 9.00 PSFree",
+      "url": "https://karo218.ir/900New/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-900-goldhen",
+      "platform": "ps4",
+      "label": "Karo · 9.00 GoldHEN",
+      "url": "https://karo218.ir/G900/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-505",
+      "platform": "ps4",
+      "label": "Karo · 5.05",
+      "url": "https://karo218.ir/505/index.html",
+      "firmwares": [
+        "5.05"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-672",
+      "platform": "ps4",
+      "label": "Karo · 6.72",
+      "url": "https://karo218.ir/672/index.html",
+      "firmwares": [
+        "6.72"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-672-auto",
+      "platform": "ps4",
+      "label": "Karo · 6.72 Auto",
+      "url": "https://karo218.ir/672A/index.html",
+      "firmwares": [
+        "6.72"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-702",
+      "platform": "ps4",
+      "label": "Karo · 7.02 PSFree",
+      "url": "https://karo218.ir/702/index.html",
+      "firmwares": [
+        "7.02"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.02"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-755",
+      "platform": "ps4",
+      "label": "Karo · 7.55 PSFree",
+      "url": "https://karo218.ir/755/index.html",
+      "firmwares": [
+        "7.55"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.55"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-g2all",
+      "platform": "ps4",
+      "label": "Karo · PSFree + Lapse",
+      "url": "https://karo218.ir/g2all/index.html",
+      "firmwares": [
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.02",
+            "7.50",
+            "7.51",
+            "7.55",
+            "8.00",
+            "8.01",
+            "8.03",
+            "8.50",
+            "8.52",
+            "9.00",
+            "9.03",
+            "9.04",
+            "9.50",
+            "9.51",
+            "9.60"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-binloader-505",
+      "platform": "ps4",
+      "label": "BIN Loader · 5.05",
+      "url": "https://karo218.ir/binloader/505/index.html",
+      "firmwares": [
+        "5.05"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-binloader-672",
+      "platform": "ps4",
+      "label": "BIN Loader · 6.72",
+      "url": "https://karo218.ir/binloader/672/index.html",
+      "firmwares": [
+        "6.72"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-binloader-702",
+      "platform": "ps4",
+      "label": "BIN Loader · 7.02",
+      "url": "https://karo218.ir/binloader/702/index.html",
+      "firmwares": [
+        "7.02"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.02"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "karo-binloader-755",
+      "platform": "ps4",
+      "label": "BIN Loader · 7.55",
+      "url": "https://karo218.ir/binloader/755/index.html",
+      "firmwares": [
+        "7.55"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.55"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "kme-900-fontface",
+      "platform": "ps4",
+      "label": "Kameleon · 9.00 FontFaceSet",
+      "url": "https://www.kmeps4.site/900/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "kme-900-psfree-auto",
+      "platform": "ps4",
+      "label": "Kameleon · 9.00 PSFree Auto",
+      "url": "https://www.kmeps4.site/psfree900a/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "kme-900-psfree-manual",
+      "platform": "ps4",
+      "label": "Kameleon · 9.00 PSFree Manual",
+      "url": "https://www.kmeps4.site/psfree900m/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "kme-900-phive",
+      "platform": "ps4",
+      "label": "Kameleon · 9.00 PS-PHIVE v4",
+      "url": "https://www.kmeps4.site/psphive/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "kme-psfree-lapse",
+      "platform": "ps4",
+      "label": "Kameleon · PSFree-Lapse",
+      "url": "https://www.kmeps4.site/psfree/index.html",
+      "firmwares": [
+        "5.05",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "7.00",
+            "7.01",
+            "7.02",
+            "7.50",
+            "7.51",
+            "7.55",
+            "8.00",
+            "8.01",
+            "8.03",
+            "8.50",
+            "8.52",
+            "9.00",
+            "9.03",
+            "9.04",
+            "9.50",
+            "9.51",
+            "9.60"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "kme-prb",
+      "platform": "ps4",
+      "label": "Kameleon · PRB Essential",
+      "url": "https://www.kmeps4.site/prb/index.html",
+      "firmwares": [
+        "5.05",
+        "6.72",
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "wrozen-phwoar",
+      "platform": "ps4",
+      "label": "PS-Phwoar! · 5.05",
+      "url": "https://www.wrozen.com/phwoar/index.html",
+      "firmwares": [
+        "5.05"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "wrozen-xproject",
+      "platform": "ps4",
+      "label": "X-Project · 5.05",
+      "url": "https://www.wrozen.com/xproject/index.html",
+      "firmwares": [
+        "5.05"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "wrozen-phive",
+      "platform": "ps4",
+      "label": "PS-Phive! · 6.72",
+      "url": "https://www.wrozen.com/phive/index.html",
+      "firmwares": [
+        "6.72"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "wrozen-phivev3",
+      "platform": "ps4",
+      "label": "PS-Phive! V3 · 9.00",
+      "url": "https://www.wrozen.com/phivev3/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "wrozen-leeful900",
+      "platform": "ps4",
+      "label": "Leeful · 9.00",
+      "url": "https://www.wrozen.com/leeful900/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "wrozen-phivevfree",
+      "platform": "ps4",
+      "label": "PS-Phive! V3 · PSFree Beta",
+      "url": "https://www.wrozen.com/phivevfree/index.html",
+      "firmwares": [
+        "9.00"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps4-900",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        },
+        {
+          "runtimeId": "ps4-psfree-700-960",
+          "matchingFirmwares": [
+            "9.00"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    },
+    {
+      "id": "raw13g-1302-1352",
+      "platform": "ps4",
+      "label": "RAW GAME · 13.02 / 13.04 / 13.50 / 13.52",
+      "url": "https://raw13g.github.io/",
+      "firmwares": [
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "ps5-relapse",
+      "platform": "ps5",
+      "label": "Relapse",
+      "url": "https://soniciso1.github.io/relapse/relapse.html",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.20",
+        "7.40",
+        "7.60",
+        "7.61",
+        "8.00",
+        "8.20",
+        "8.40",
+        "8.60",
+        "9.00",
+        "9.20",
+        "9.40",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.20",
+        "10.40",
+        "11.00",
+        "11.20",
+        "11.60",
+        "12.00",
+        "12.02",
+        "12.20",
+        "12.40",
+        "12.60",
+        "12.70",
+        "13.00",
+        "13.20",
+        "13.40",
+        "13.42",
+        "13.60"
+      ],
+      "localCanonicalAlternatives": [],
+      "notExactMirror": true
+    },
+    {
+      "id": "ps5-umtx2",
+      "platform": "ps5",
+      "label": "UMTX2",
+      "url": "https://umtx2.pages.dev/",
+      "firmwares": [
+        "1.00",
+        "1.01",
+        "1.02",
+        "1.05",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "2.00",
+        "2.20",
+        "2.25",
+        "2.26",
+        "2.30",
+        "2.50",
+        "2.70",
+        "3.00",
+        "3.10",
+        "3.20",
+        "3.21",
+        "4.00",
+        "4.02",
+        "4.03",
+        "4.50",
+        "4.51",
+        "5.00",
+        "5.02",
+        "5.10",
+        "5.50"
+      ],
+      "localCanonicalAlternatives": [
+        {
+          "runtimeId": "ps5-umtx",
+          "matchingFirmwares": [
+            "1.00",
+            "1.01",
+            "1.02",
+            "1.05",
+            "1.10",
+            "1.11",
+            "1.12",
+            "1.13",
+            "1.14",
+            "2.00",
+            "2.20",
+            "2.25",
+            "2.26",
+            "2.30",
+            "2.50",
+            "2.70",
+            "3.00",
+            "3.20",
+            "4.00",
+            "4.02",
+            "4.03",
+            "4.50",
+            "4.51"
+          ]
+        }
+      ],
+      "notExactMirror": true
+    }
+  ],
+  "licensingAndDependencyFindings": [
+    {
+      "group": "KAR0218 classic5.05/6.72/7.02/7.55/g2allpro and GamerHack",
+      "finding": "No repository-wide licence was found. Selected KARg2all PSFree .mjs components do carry explicit AGPL notices; that grant does not automatically establish the status of every monolithic exploit/payload in other directories.",
+      "action": "Use reviewed licensed canonical runtime as own-site primary alternative on its exact firmware list. Keep unmatched original hosts in secondary source-reference links until their dependencies are reviewed, rather than relabelling a redirect as built-in."
+    },
+    {
+      "group": "Al-Azif/psfree-lapse",
+      "commit": "08ecf038c94aa99b56e46c9f32e2e486f83656b6",
+      "finding": "Complete AGPL corresponding kernelpatch C/source is available. Seven compiled kernelpatch outputs are intentionally gitignored upstream and neither published release has ready assets. Existing installed LLVM enabled a new local build without running output.",
+      "action": "Import staged9jobs, verify hashes/F: backups, copy deployment and append its build metadata without altering earlier runtimes. Preserve local source.zip and source download link."
+    },
+    {
+      "group": "raw13g",
+      "finding": "MIT licence expressly excludes payload binaries, patch blobs and core/mem/int64 primitives. Exact original required files are present, so this is an unresolved redistribution/provenance boundary, not an inaccessible-source claim.",
+      "action": "Keep source-reference links separate. Afterglow chat owns any reviewed13.52/14.00 runtime; do not infer13.02/13.04/13.50 from it."
+    },
+    {
+      "group": "Relapse",
+      "commit": "112dbe5949e9c3de923bb0909289c58a9c082151",
+      "finding": "78-file tree has no declared licence file. Readme confirms32 exact retail/testkit firmware values7.00–13.60, omits10.60/11.40, and says the in-chain payload menu uses native syscalls/TCP9021 so a static host suffices. README describes elf.html but that file is absent from this tree. Generic PHP/Node standalone handlers do not make another site a valid native-origin manager.",
+      "action": "No mirrored runtime marked accepted by this audit. Preserve exact32-firmware source notes and existing native PS5 utilities; use original reference as secondary pending component provenance."
+    },
+    {
+      "group": "UMTX2",
+      "commit": "a080beb74d9e4bc34f3563798b716bd86b2d6ee0",
+      "finding": "Host is Unlicense and PSFree component is AGPL. Static runtime technically self-hostable; index has sessionStorage autorun which needs an authored guarded-entry adaptation. Its29-value source whitelist differs from existing local UMTX23-value whitelist. Bundled bootstrap ELF380616bytes SHA256cc67181843afc56b33421468d4c3610942f150c6bebf0107c663c36918b63af0 has no existing audit match; last file commit eb2d4d9a954953a32e5aec92eab29d5d9a3712e6 says only that John Tornblom payloads were updated, without a version.",
+      "action": "Preserve existing local UMTX as known fallback. Do not broaden its matrix or substitute an arbitrary ELF until source/ABI provenance of new bootstrap is established."
+    },
+    {
+      "group": "Kameleon/Wrozen",
+      "finding": "Direct static fetches of both original landing pages returned HTTP200, with expected titles and no repository links. Browser search-tool403/error was not genuine source disappearance. No full mirror/licence assessment was completed for each historical subtree.",
+      "action": "Secondary external reference links remain truthful. Do not report source inaccessible merely because browser fetch failed."
+    }
+  ],
+  "evidence": {
+    "repositoryTrees": "tmp/host-local-loader-review/repository-trees.json",
+    "pinnedSourceFiles": "tmp/host-local-loader-review/source-files.json",
+    "alAzifSource": "tmp/host-local-loader-review/al-azif-source.json",
+    "alAzifReleases": "tmp/host-local-loader-review/al-azif-releases.json",
+    "umtx2ELFHistory": "tmp/host-local-loader-review/umtx2-elf-history.json",
+    "liveOrigins": "tmp/host-local-loader-review/live-origin-status.json",
+    "stagedBuild": "tmp/host-local-loader-review/ps4-psfree-700-960/staged-build-review.json"
+  },
+  "safety": {
+    "downloadedExploitJavaScriptExecuted": false,
+    "compiledPatchExecuted": false,
+    "consoleContact": false,
+    "flashing": false,
+    "archiveWrites": false,
+    "sharedCatalogueChanges": false
+  },
+  "limitations": [
+    "No physical console execution.",
+    "Clang-generated patch bytes are a new local build, not byte-equivalent to other host builds.",
+    "Exact 17-firmware allowlist; no5.05/6.72/PS5/10+ support.",
+    "No automatic GoldHEN, no application-cache claim, no copied third-party ad scripts.",
+    "Root must archive and verify all jobs, then activate reviewed deployment and expose corresponding-source download link."
+  ],
+  "metadataRepair": {
+    "fixedAt": "2026-11-03T17:45:09.626Z",
+    "cause": "Preparing again on existing staging directory included the old build.json hash in its own files array.",
+    "fix": "Exclude build.json fromfiles[]; generated metadata is outsideitsownhashinventory. All60 declared files freshly rehashed. Deployedbuild.json patched only; runtimecode/source/compiledpatchbytesunchanged.",
+    "webArchive": {
+      "id": "host-runtime-ps4-psfree-700-960-web-485da781385c",
+      "title": "PS4 7.00–9.60 · PSFree / Lapse · ready static runtime",
+      "platform": "PS4",
+      "category": [
+        "Hosts",
+        "whatwhatboy"
+      ],
+      "project": "ps4-psfree-700-960",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "08ecf038c94a-llvm19.1.5-integration-2026.11.03.1",
+      "kind": "generated",
+      "url": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6",
+      "filename": "ps4-psfree-700-960-web-485da781385c.zip",
+      "importPath": "tmp/host-local-loader-review/ps4-psfree-700-960/ps4-psfree-700-960-web-485da781385c.zip",
+      "expectedBytes": 608606,
+      "expectedSha256": "485da781385cac20ba1856b2672209dafc582c234b93225619eb167bd7d1000b",
+      "mirror": true,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    "priorWebPreserved": [
+      {
+        "id": "host-runtime-ps4-psfree-700-960-web-1e02bc988849",
+        "title": "PS4 7.00–9.60 · PSFree / Lapse · ready static runtime",
+        "platform": "PS4",
+        "category": [
+          "Hosts",
+          "whatwhatboy"
+        ],
+        "project": "ps4-psfree-700-960",
+        "archiveRole": [
+          "Builds"
+        ],
+        "version": "08ecf038c94a-llvm19.1.5-integration-2026.11.03.1",
+        "kind": "generated",
+        "url": "https://github.com/Al-Azif/psfree-lapse/tree/08ecf038c94aa99b56e46c9f32e2e486f83656b6",
+        "filename": "ps4-psfree-700-960-web-1e02bc988849.zip",
+        "importPath": "tmp/host-local-loader-review/ps4-psfree-700-960/ps4-psfree-700-960-web-1e02bc988849.zip",
+        "expectedBytes": 608652,
+        "expectedSha256": "1e02bc9888495ce9cf1546a1fe7aa936c2012f28147bd34fd88752851a3d7d9d",
+        "mirror": true,
+        "pages": [
+          "hosts/ps4/index.html"
+        ]
+      }
+    ],
+    "status": "Root must import the corrected new webarchive beforeactivate."
+  }
+}

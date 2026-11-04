@@ -1,0 +1,132 @@
+{
+  "reviewed": "2026-11-02",
+  "store": "https://plugins.deckbrew.xyz/plugins",
+  "plugins": [
+    {
+      "id": "bluetooth",
+      "title": "Bluetooth",
+      "url": "https://github.com/Outpox/Bluetooth",
+      "version": "3.1.1",
+      "created": "2026-10-23T15:11:19Z",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/f07f7b74f31da15b5e3a8234a3f00faa01365b56b8f496aca7bb79120be7b8a5.zip",
+      "filename": "bluetooth-3.1.1.zip",
+      "expectedBytes": 1387251,
+      "expectedSha256": "f07f7b74f31da15b5e3a8234a3f00faa01365b56b8f496aca7bb79120be7b8a5",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ],
+      "image": {
+        "filename": "bluetooth.png",
+        "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/Bluetooth-c04d77cc7911ae2ed69cf648dc7066b0c27b150c3fe1043ca7d0956338464826.png"
+      }
+    },
+    {
+      "id": "pause-games",
+      "title": "Pause Games",
+      "url": "https://github.com/wynn1212/SDH-PauseGames",
+      "version": "1.0.3",
+      "created": "2026-10-20T15:04:35Z",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/4aefdfb0ef25dea9c6d9fd037731c8b99ee8a1be966c2f7d5b0602112ef29f62.zip",
+      "filename": "pause-games-1.0.3.zip",
+      "expectedBytes": 699197,
+      "expectedSha256": "4aefdfb0ef25dea9c6d9fd037731c8b99ee8a1be966c2f7d5b0602112ef29f62",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ],
+      "image": {
+        "filename": "pause-games.jpg",
+        "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/Pause%20Games-14da87b69a6682d5cee6644f03daa6e4b13655ef96061f097d963ac84a5ef9af.jpg"
+      }
+    },
+    {
+      "id": "audio-loader",
+      "title": "Audio Loader",
+      "url": "https://github.com/EMERALD0874/SDH-AudioLoader",
+      "version": "1.6.1",
+      "created": "2025-10-05T02:33:03Z",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/fd5a090c2e2cd4da6723d7bd08937ab31b9f8d4663510431713da531343e303f.zip",
+      "filename": "audio-loader-1.6.1.zip",
+      "expectedBytes": 127807,
+      "expectedSha256": "fd5a090c2e2cd4da6723d7bd08937ab31b9f8d4663510431713da531343e303f",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ],
+      "image": {
+        "filename": "audio-loader.png",
+        "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/Audio%20Loader.png"
+      }
+    },
+    {
+      "id": "animation-changer",
+      "title": "Animation Changer",
+      "url": "https://github.com/TheLogicMaster/SDH-AnimationChanger",
+      "version": "1.3.2",
+      "created": "2025-02-10T21:25:10Z",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/f2c62b90ca60d8a80b6d0f75d8027552b1509c7a05842c6f4a24a9072846d133.zip",
+      "filename": "animation-changer-1.3.2.zip",
+      "expectedBytes": 52224,
+      "expectedSha256": "f2c62b90ca60d8a80b6d0f75d8027552b1509c7a05842c6f4a24a9072846d133",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ],
+      "image": {
+        "filename": "animation-changer.png",
+        "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/Animation%20Changer-2f01eb07e607c3ebd99b7e76648bc2486910d33081fa8571a8f18f718727d8bd.png"
+      }
+    },
+    {
+      "id": "autoflatpaks",
+      "title": "AutoFlatpaks",
+      "url": "https://github.com/jurassicplayer/decky-autoflatpaks",
+      "version": "1.6.8",
+      "created": "2025-06-29T19:22:33Z",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/344fce82cfb4800caccb4d6c0ec46e1ad6c9594a622d5baa0bb31286baf2d1a5.zip",
+      "filename": "autoflatpaks-1.6.8.zip",
+      "expectedBytes": 37818,
+      "expectedSha256": "344fce82cfb4800caccb4d6c0ec46e1ad6c9594a622d5baa0bb31286baf2d1a5",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ],
+      "image": {
+        "filename": "autoflatpaks.png",
+        "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/AutoFlatpaks-93dbace5a31e869ea8e1c6e822c17a8498e651d86c83a195d9bb501030321758.png"
+      }
+    },
+    {
+      "id": "quick-launch",
+      "title": "Quick Launch",
+      "url": "https://github.com/Fisch03/SDH-QuickLaunch",
+      "version": "1.2.1",
+      "created": "2025-12-17T18:50:14Z",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/709746bfe2a7e19bda54b4de0b3f4a311053de10fa58aa070d421dbf92317ede.zip",
+      "filename": "quick-launch-1.2.1.zip",
+      "expectedBytes": 23036,
+      "expectedSha256": "709746bfe2a7e19bda54b4de0b3f4a311053de10fa58aa070d421dbf92317ede",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ],
+      "image": {
+        "filename": "quick-launch.png",
+        "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/Quick%20Launch-7c408083451947f5be988e7a1905fd731631c10b248839bb7efb50b6cc0f181c.png"
+      }
+    }
+  ]
+}

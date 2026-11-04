@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T16:36:48.635Z",
+  "status": "prepared-awaiting-archive",
+  "scope": "Four exact ready BIN files. Run the existing targeted importer with these jobs and an explicitly supplied F: backup root using normal permission tooling. mirror:false preserves original-only public Downloads. No source repository archive or unrelated binary is included.",
+  "jobs": [
+    {
+      "id": "host-repository-gamerhack-wildemodz138",
+      "title": "WildeModz · GTA V 1.38 · GamerHack 900v3",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.38"
+      ],
+      "project": "WildeModz",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/WildeModz-1.38.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "version": "game 1.38 - PS4 9.00 - GamerHack 900v3 23c946a7f85f - e82fe24709f9",
+      "filename": "WildeModz-1.38.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/900v3/WildeModz-1.38.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 593216,
+      "expectedSha256": "e82fe24709f9155bc1c77ffa1b2318bee03b5ec7bb4d120b7aadf21b48f6adf8",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/gta5/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "8ee4341f7250f2d488e596ba0de0d5f341608e3e",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "sourceFunction": "load_WildeModz138",
+      "firmwareScope": [
+        "9.00"
+      ],
+      "gameVersion": "1.38",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "WildeModz",
+      "license": "No redistribution licence established for this exact compiled build; personal archive and original upstream download only."
+    },
+    {
+      "id": "host-repository-gamerhack-arabicguy100",
+      "title": "ArabicGuy · GTA V 1.00 · GamerHack 900v3",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.00"
+      ],
+      "project": "ArabicGuy",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/arabic-guy100.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "version": "game 1.00 - PS4 9.00 - GamerHack 900v3 23c946a7f85f - 80849dc10d77",
+      "filename": "arabic-guy100.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/900v3/arabic-guy100.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1055408,
+      "expectedSha256": "80849dc10d770b5e4596b0c32774b03b156245c18f1527157d6a967854b990a8",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/gta5/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "4d1404d679dcb5710b0ca71d55e8abfc07c5fabb",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "sourceFunction": "load_arabicGuy100",
+      "firmwareScope": [
+        "9.00"
+      ],
+      "gameVersion": "1.00",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "ArabicGuy",
+      "license": "No redistribution licence established for this exact compiled build; personal archive and original upstream download only."
+    },
+    {
+      "id": "host-repository-gamerhack-arabicguy127",
+      "title": "ArabicGuy · GTA V 1.27 · GamerHack 900v3",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.27"
+      ],
+      "project": "ArabicGuy",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/arabic-guy127.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "version": "game 1.27 - PS4 9.00 - GamerHack 900v3 23c946a7f85f - a603fa84029a",
+      "filename": "arabic-guy127.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/900v3/arabic-guy127.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1055408,
+      "expectedSha256": "a603fa84029a0c9bd29e3e5d6ea2f97aa668f0600403c4102f4c35b186b982f4",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/gta5/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "dc3d212ad24087957c9fea7584dea4dac7c0e39a",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "sourceFunction": "load_arabicGuy127",
+      "firmwareScope": [
+        "9.00"
+      ],
+      "gameVersion": "1.27",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "ArabicGuy",
+      "license": "No redistribution licence established for this exact compiled build; personal archive and original upstream download only."
+    },
+    {
+      "id": "host-repository-gamerhack-arabicguy132",
+      "title": "ArabicGuy · GTA V 1.32 · GamerHack 900v3",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.32"
+      ],
+      "project": "ArabicGuy",
+      "kind": "direct",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/arabic-guy132.bin",
+      "capturedUrl": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "version": "game 1.32 - PS4 9.00 - GamerHack 900v3 23c946a7f85f - 3dddf0161fb4",
+      "filename": "arabic-guy132.bin",
+      "mirror": false,
+      "importPath": "tmp/host-repository-review/gamerhack-review/files/900v3/arabic-guy132.bin",
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1055408,
+      "expectedSha256": "3dddf0161fb409e7e9711c6b53e4eaef4c34f9768e263a9821b217b1bde00daa",
+      "maxBytes": 2097152,
+      "pages": [
+        "hosts/ps4/gta5/index.html"
+      ],
+      "sourceCommit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "sourceGitBlobSHA1": "e3877ca8e373c51703eebaf774d58d1651877b96",
+      "sourcePage": "https://github.com/GamerHack/GamerHack.github.io/blob/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/index.html",
+      "sourceFunction": "load_arabicGuy132",
+      "firmwareScope": [
+        "9.00"
+      ],
+      "gameVersion": "1.32",
+      "menuVersion": null,
+      "titleIds": [],
+      "author": "ArabicGuy",
+      "license": "No redistribution licence established for this exact compiled build; personal archive and original upstream download only."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "verifiedAt": "2026-11-01",
+  "scope": "Observed official Windows emulator software downloads only. No games, BIOS, firmware, or third-party bundles.",
+  "mappings": {
+    "https://dolphin-emu.org/": "https://dl.dolphin-emu.org/releases/2609a/dolphin-2609a-x64.7z",
+    "https://cemu.info/": "https://github.com/cemu-project/Cemu/releases/tag/v2.6",
+    "https://pcsx2.net/": "https://github.com/PCSX2/pcsx2/releases",
+    "https://rpcs3.net/": "https://github.com/RPCS3/rpcs3-binaries-win/releases",
+    "https://www.ppsspp.org/": "https://www.ppsspp.org/files/1_20_4/ppsspp_win.zip",
+    "https://xemu.app/": "https://github.com/xemu-project/xemu/releases/latest/download/xemu-0.8.139-windows-x86_64.zip",
+    "https://xenia.jp/": "https://github.com/xenia-project/release-builds-windows/releases/latest/download/xenia_master.zip",
+    "https://github.com/xenia-canary/xenia-canary/releases": "https://github.com/xenia-canary/xenia-canary/releases/latest/download/xenia_canary_windows.7z",
+    "https://mgba.io/": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-win64.7z",
+    "http://www.snes9x.com/": "https://github.com/snes9xgit/snes9x/releases",
+    "https://www.snes9x.com/": "https://github.com/snes9xgit/snes9x/releases",
+    "https://desmume.org/": "https://github.com/TASEmulators/desmume/releases/tag/release_0_9_13",
+    "https://www.pj64-emu.com/": "https://www.pj64-emu.com/file/project64-3-0-1-5664-2df3434/",
+    "https://github.com/stenzek/duckstation": "https://github.com/stenzek/duckstation/releases",
+    "https://www.epsxe.com/": "https://www.epsxe.com/files/ePSXe2018.zip"
+  },
+  "projects": [
+    {
+      "name": "Dolphin",
+      "status": "available",
+      "officialPage": "https://dolphin-emu.org/download/",
+      "observedVersion": "2609a",
+      "windowsDownloadUrl": "https://dl.dolphin-emu.org/releases/2609a/dolphin-2609a-x64.7z",
+      "filename": "dolphin-2609a-x64.7z",
+      "repository": "https://github.com/dolphin-emu/dolphin",
+      "notes": "Direct Windows x64 release link observed on the official download page. Prefer this release over development snapshots for this archive."
+    },
+    {
+      "name": "Cemu",
+      "status": "available",
+      "officialPage": "https://cemu.info/",
+      "observedVersion": "2.6",
+      "releaseUrl": "https://github.com/cemu-project/Cemu/releases/tag/v2.6",
+      "repository": "https://github.com/cemu-project/Cemu",
+      "notes": "Official homepage links this release. Resolve its Windows binary through GitHub release assets."
+    },
+    {
+      "name": "PCSX2",
+      "status": "available",
+      "officialPage": "https://pcsx2.net/downloads/",
+      "releaseUrl": "https://github.com/PCSX2/pcsx2/releases",
+      "repository": "https://github.com/PCSX2/pcsx2",
+      "notes": "Official project repository verified via pcsx2.net. Releases include stable and frequent nightly builds; choose a Windows stable asset when available."
+    },
+    {
+      "name": "RPCS3",
+      "status": "available",
+      "officialPage": "https://rpcs3.net/",
+      "releaseUrl": "https://github.com/RPCS3/rpcs3-binaries-win/releases",
+      "repository": "https://github.com/RPCS3/rpcs3-binaries-win",
+      "notes": "Official website returned 403 to the research tool. The official RPCS3 GitHub organization identifies this repository as its Windows x64 binary repository. Binary release page verified."
+    },
+    {
+      "name": "PPSSPP",
+      "status": "available",
+      "officialPage": "https://www.ppsspp.org/download/",
+      "observedVersion": "1.20.4",
+      "windowsDownloadUrl": "https://www.ppsspp.org/files/1_20_4/ppsspp_win.zip",
+      "filename": "ppsspp_win.zip",
+      "notes": "Free Windows portable ZIP, distinct from paid PPSSPP Gold downloads."
+    },
+    {
+      "name": "xemu",
+      "status": "available",
+      "officialPage": "https://xemu.app/",
+      "observedVersion": "0.8.139",
+      "windowsDownloadUrl": "https://github.com/xemu-project/xemu/releases/latest/download/xemu-0.8.139-windows-x86_64.zip",
+      "filename": "xemu-0.8.139-windows-x86_64.zip",
+      "releaseUrl": "https://github.com/xemu-project/xemu/releases",
+      "repository": "https://github.com/xemu-project/xemu",
+      "notes": "Windows x86_64 link observed directly on official xemu homepage. No BIOS/firmware files included in this mapping."
+    },
+    {
+      "name": "Xenia Master",
+      "status": "inactive_available",
+      "officialPage": "https://xenia.jp/download/",
+      "windowsDownloadUrl": "https://github.com/xenia-project/release-builds-windows/releases/latest/download/xenia_master.zip",
+      "filename": "xenia_master.zip",
+      "notes": "Official download page labels Master inactive. This is its observed archive link; Canary is the maintained experimental alternative."
+    },
+    {
+      "name": "Xenia Canary",
+      "status": "available",
+      "officialPage": "https://xenia.jp/download/",
+      "windowsDownloadUrl": "https://github.com/xenia-canary/xenia-canary/releases/latest/download/xenia_canary_windows.7z",
+      "filename": "xenia_canary_windows.7z",
+      "releaseUrl": "https://github.com/xenia-canary/xenia-canary/releases",
+      "repository": "https://github.com/xenia-canary/xenia-canary",
+      "notes": "Canary Windows download link observed on the official Xenia download page."
+    },
+    {
+      "name": "mGBA",
+      "status": "available",
+      "officialPage": "https://mgba.io/downloads.html",
+      "observedVersion": "0.10.5",
+      "windowsDownloadUrl": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-win64.7z",
+      "filename": "mGBA-0.10.5-win64.7z",
+      "releaseUrl": "https://github.com/mgba-emu/mgba/releases",
+      "repository": "https://github.com/mgba-emu/mgba",
+      "notes": "Windows 64-bit portable archive observed on official download page."
+    },
+    {
+      "name": "Snes9x",
+      "status": "available",
+      "officialPage": "https://www.snes9x.com/downloads.php",
+      "observedVersion": "1.63",
+      "releaseUrl": "https://github.com/snes9xgit/snes9x/releases",
+      "repository": "https://github.com/snes9xgit/snes9x",
+      "notes": "Legacy homepage lists mirror sites. Project's own GitHub wiki explicitly recommends the official GitHub releases page; that release page was verified. Resolve a Windows asset there."
+    },
+    {
+      "name": "DeSmuME",
+      "status": "available_legacy_stable",
+      "officialPage": "https://desmume.org/download/",
+      "observedVersion": "0.9.13",
+      "releaseUrl": "https://github.com/TASEmulators/desmume/releases/tag/release_0_9_13",
+      "repository": "https://github.com/TASEmulators/desmume",
+      "nightlyUrl": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip",
+      "notes": "Official downloads page names 0.9.13 as stable and links this release. Stable is from 2022; nightly builds remain separately listed."
+    },
+    {
+      "name": "Project64",
+      "status": "available",
+      "officialPage": "https://www.pj64-emu.com/public-releases",
+      "observedVersion": "3.0.1",
+      "windowsDownloadUrl": "https://www.pj64-emu.com/file/project64-3-0-1-5664-2df3434/",
+      "repository": "https://github.com/project64/project64",
+      "notes": "Portable ZIP target observed through official public releases page and its Try again link. Target has no file extension; use response Content-Disposition if available. GitHub project releases page is empty, so do not treat it as a binary source. Development builds are supporter-only."
+    },
+    {
+      "name": "DuckStation",
+      "status": "available",
+      "officialPage": "https://github.com/stenzek/duckstation",
+      "releaseUrl": "https://github.com/stenzek/duckstation/releases",
+      "windowsDownloadUrl": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-installer.exe",
+      "filename": "duckstation-windows-x64-installer.exe",
+      "repository": "https://github.com/stenzek/duckstation",
+      "notes": "Direct x64 installer linked in the official repository README. Windows portable ZIPs are documented as release assets; prefer ZIP if the archive script selects one. Preserve files unmodified."
+    },
+    {
+      "name": "ePSXe",
+      "status": "available",
+      "officialPage": "https://www.epsxe.com/download.php",
+      "observedVersion": "2.0.18",
+      "windowsDownloadUrl": "https://www.epsxe.com/files/ePSXe2018.zip",
+      "filename": "ePSXe2018.zip",
+      "notes": "Official homepage HTML navigation points to download.php. That page and the v2.0.18 Windows binary target were observed. No BIOS files included."
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "checkedAt": "2026-11-02",
+  "scope": "PS3 Call of Duty and Uncharted resources linked from the user-supplied ImVirusMike PS3 hub",
+  "method": "Browsed source pages and fetched their original HTML to inspect Google Sites custom embeds. Static showcase images were visually inspected. No tools, packages or payloads were executed.",
+  "cautions": [
+    "A source-page checkmark, VirusTotal link or claim of being clean is not independent safety verification and must not be repeated as a safety guarantee.",
+    "RTM tools are desktop helpers. A downloaded EXE or DLL cannot run in the PS3 web browser or be installed through Package Manager.",
+    "SPRX and package compatibility is specific to the game update, region and console mode. Blanket headings on the source do not prove every listed file supports every HEN, CEX or DEX configuration.",
+    "DLC fix packages and license-bypass files are deliberately excluded. Official add-ons still require the matching game region and a valid entitlement.",
+    "Source names and filenames disagree for several BO1 embeds. Unresolved identities remain separate; archive-confirmed identities retain a note about the source mismatch.",
+    "Uncharted reference offsets are developer research for specific game IDs and versions, not a compatibility claim for the separately linked VirusMike installer."
+  ],
+  "sources": [
+    {
+      "id": "hub",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "status": "accessible; custom embeds contain the catalogue navigation"
+    },
+    {
+      "id": "bo1-rtm",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/bo1-rtm-tools",
+      "status": "accessible"
+    },
+    {
+      "id": "bo1-sprx",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "status": "accessible by raw HTTPS fetch; web reader failed"
+    },
+    {
+      "id": "bo1-dlc",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/bo1-dlcs",
+      "status": "accessible"
+    },
+    {
+      "id": "bo2-rtm",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-rtm-tool",
+      "status": "accessible"
+    },
+    {
+      "id": "bo2-sprx",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "status": "accessible"
+    },
+    {
+      "id": "bo2-dlc",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-dlcs",
+      "status": "accessible"
+    },
+    {
+      "id": "uncharted",
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/uncharted-series",
+      "status": "accessible; download in custom HTML embed"
+    },
+    {
+      "id": "uncharted-reference",
+      "url": "https://dron-3.blogspot.com/2017/",
+      "status": "accessible; primary developer research, February 23 2017"
+    }
+  ],
+  "resources": [
+    {
+      "id": "bo1-modded-classes-rtm",
+      "name": "Modded Classes BO1 RTM Tool",
+      "gameId": "black-ops-1",
+      "category": "rtm",
+      "version": "not stated",
+      "gameUpdate": "1.13 shown in source showcase image",
+      "compatibility": "Source heading claims BLES/BLUS and HEN/CFW; the photographed desktop window says Black Ops 1.13 (CEX / DEX). Connection API and exact title IDs require archive documentation.",
+      "description": "Windows RTM helper for Black Ops class editing. Keep the desktop helper separate from PS3-side SPRX and PKG files.",
+      "downloads": [
+        {
+          "url": "https://e.pcloud.link/publink/show?code=XZOkLDZWORyYxLB5HF3klnwBbhExXl9RqPk",
+          "label": "pCloud source file"
+        },
+        {
+          "url": "https://drive.filen.io/d/93e0d38a-3f7b-4b1d-a019-4d258a0a8cc4#6QZURAKauIJdvKYzbepKLLgslZviJFQK",
+          "label": "Filen mirror"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/bo1-modded-classes-rtm.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/bo1-rtm-tools",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo1-tyman-zombies-rtm",
+      "name": "Tyman1294 Zombies RTM Tool",
+      "gameId": "black-ops-1",
+      "category": "rtm",
+      "version": "not stated",
+      "gameUpdate": "not stated",
+      "compatibility": "Source heading claims BLES/BLUS and HEN/CFW. No per-file CEX/DEX, title-update or API requirement is stated.",
+      "description": "Desktop Zombies RTM helper credited to Tyman1294. File retrieval and documentation determine its usable console connection modes.",
+      "downloads": [
+        {
+          "url": "https://u.pcloud.link/publink/show?code=XZIjSsVZ6UupXBHuKKS2cUf4rzYHckbMVnF7",
+          "label": "pCloud source file"
+        },
+        {
+          "url": "https://terabox.com/s/18qWvXRQDAwOVBm4wiiPJgA",
+          "label": "TeraBox mirror"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-1.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/bo1-rtm-tools",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo1-project-safe-rtm",
+      "name": "Project Safe · Zombies / Multiplayer",
+      "gameId": "black-ops-1",
+      "category": "rtm",
+      "version": "not stated",
+      "gameUpdate": "not stated",
+      "compatibility": "Source heading claims BLES/BLUS and HEN/CFW; per-file requirements are not provided.",
+      "description": "Desktop RTM tool credited to MRBLUEMODS14 for Zombies and Multiplayer. Check its own documentation before selecting the PS3 connection backend.",
+      "downloads": [
+        {
+          "url": "https://u.pcloud.link/publink/show?code=XZ23gTVZCYtctpqtd9RGjbCXNM01JHF5kGEk",
+          "label": "pCloud source file"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-1.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/bo1-rtm-tools",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo1-viridian",
+      "name": "Viridian by Jimbo · DEX CFW",
+      "gameId": "black-ops-1",
+      "category": "sprx",
+      "version": "not stated",
+      "gameUpdate": "not stated",
+      "compatibility": "Archive README requires both Target Type and LV2 Kernel to be DEX in Rebug Toolbox. The archive labels its EBOOT folder BLES-BLUS; exact title IDs and title update are not stated. CEX and HEN are not supported by this evidence.",
+      "region": "BLES / BLUS folder labels; exact title IDs not stated",
+      "description": "Archive-confirmed Viridian SPRX with a matching DEX-labelled EBOOT. Its README places the Jimbo folder under the PS3 tmp folder and the EBOOT in the matching game folder. Preserve the original game executable before following its instructions.",
+      "note": "The source embed heading says Ventix V2, but the preserved archive contains Jimbo/Viridian.sprx and a DEX README. The catalogue uses the archive-confirmed Viridian identity.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/lcnm3rd5a6jlvds/COD_BO1_Viridian_By_Jimbo_Sprx_%255BDEX_CFW%255D.rar/file",
+          "label": "DEX CFW RAR",
+          "filename": "COD_BO1_Viridian_By_Jimbo_Sprx_DEX_CFW.rar"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-1.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "availability": "Original RAR, SPRX, EBOOT and README archived and hashed; no hardware execution tested",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "bo1-viridian",
+        "archiveSha256": "6aaec0d3524368cfb05f3004a63113b8645344c8f04b83294c140ca19ddcdaa7",
+        "sprxSha256": "ad3921ae1c2cd5124ba3ca0dd72a1aaefd93f1981207718e687e24c31ec3c8c8",
+        "readmeSha256": "d752f9c5ae95db7b4a4c34fed11ac2c9bf682a9ef5dec1d31072584231ce42ce",
+        "readme": "/downloads/ps3/bo1-viridian/d752f9c5ae95/COD BO1 Jimbo Sprx [DEX CFW]/READ ME.txt",
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "id": "bo1-jo-milk-playground-v2-dex",
+      "name": "Jo-Milk Playground V2 · DEX package",
+      "gameId": "black-ops-1",
+      "category": "sprx",
+      "version": "V2",
+      "gameUpdate": "not stated",
+      "compatibility": "DEX is explicit in the supplied PKG filename. CEX and HEN compatibility are not established.",
+      "description": "BO1 menu package linked by the supplied SPRX catalogue. Keep this DEX-labelled build separate from HEN/CEX files.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/odjv8hy5wmphec0/Jo-Milk_Playground_V2_-_%255BDEX%255D.pkg/file",
+          "label": "DEX PKG",
+          "filename": "Jo-Milk_Playground_V2_-_[DEX].pkg"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-1.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo2-reflex-25-hen",
+      "name": "Reflex 2.5 Un-Nerfed · HEN",
+      "gameId": "black-ops-2",
+      "category": "sprx",
+      "version": "2.5",
+      "gameUpdate": "not stated",
+      "compatibility": "HEN explicit in the link and RAR filename. Source page claims BLES/BLUS; exact title IDs and game update are not supplied.",
+      "description": "BO2 SPRX archive labelled for HEN. The static image shows the actual Reflex Engine 2.5 menu; it is not a compatibility test.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/vk97mbcwo5h0vgp/Reflex_2.5_BO2_Un-Nerfed_-_Hen.rar/file",
+          "label": "HEN RAR",
+          "filename": "Reflex_2.5_BO2_Un-Nerfed_-_Hen.rar"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/bo2-reflex-25-menu.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo2-fury-v3-hen",
+      "name": "Fury V3 · HEN",
+      "gameId": "black-ops-2",
+      "category": "sprx",
+      "version": "V3",
+      "gameUpdate": "not stated",
+      "compatibility": "HEN is explicit in the RAR filename. Source page claims BLES/BLUS; exact title IDs and game update are not supplied.",
+      "description": "Fury V3 SPRX menu archive, with a relevant actual menu still. Older V2 remains a separate source entry.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/pcjmh60zesftg60/FuryV3_Hen.rar/file",
+          "label": "HEN RAR",
+          "filename": "FuryV3_Hen.rar"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/bo2-fury-v3-menu.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo2-fury-v2-hen",
+      "name": "Fury V2 · HEN",
+      "gameId": "black-ops-2",
+      "category": "sprx",
+      "version": "V2",
+      "gameUpdate": "not stated",
+      "compatibility": "HEN explicit in link and filename; exact game update/region not supplied.",
+      "description": "Older Fury HEN SPRX archive. Preserve this version separately from Fury V3.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/l8llswc93ht75pc/FuryV2_Hen_SPRX.rar/file",
+          "label": "Older HEN RAR",
+          "filename": "FuryV2_Hen_SPRX.rar"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-2.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "availability": "source-linked; archive job checks file retrieval",
+      "archiveEvidence": {
+        "sourceArchiveSha256": "a9190c89c0f4adeb174d82f54dc0c4a8bc4db2553583471a7ac5d8b7d1c1a113",
+        "integrity": "passed",
+        "readyMemberCounts": {
+          "bin": 1,
+          "sprx": 1
+        },
+        "execution": "Archive contents, text and static file headers inspected; no installation or execution.",
+        "checkedAt": "2026-11-02T05:53:33.948Z",
+        "allArchiveMembersExtracted": true,
+        "allRecordedFileHashesVerified": true,
+        "originalIntegrity": "7-Zip CRC test passed",
+        "formatCounts": {
+          "BIN": 1,
+          "SPRX": 1
+        },
+        "memberPaths": [
+          "FuryV2 Hen SPRX\\EBOOT.BIN",
+          "FuryV2 Hen SPRX\\FuryV2.sprx"
+        ],
+        "notes": [
+          "Archive contains EBOOT.BIN and FuryV2.sprx inside FuryV2 Hen SPRX. Keep this V2 older build separate from retained FuryV3.",
+          "HEN is archive-labelled; exact game update, region IDs and CEX/DEX state are not established."
+        ]
+      },
+      "status": "archived"
+    },
+    {
+      "id": "bo2-infarcted-v1",
+      "name": "INFARCTED V1 · HEN / CFW",
+      "gameId": "black-ops-2",
+      "category": "sprx",
+      "version": "V1",
+      "gameUpdate": "not stated",
+      "compatibility": "Source explicitly labels V1 HEN/CFW and ZM/MP. Exact regions, update and CEX/DEX are not provided.",
+      "description": "BO2 Zombies/Multiplayer SPRX archive. The source also lists separate V2 HEN and CFW Mega files; do not merge their compatibility.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/wt4rbopyw5esuw8/INFARCTED_SPRX.rar/file",
+          "label": "V1 RAR",
+          "filename": "INFARCTED_SPRX.rar"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-2.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "availability": "source-linked; archive job checks file retrieval",
+      "archiveEvidence": {
+        "sourceArchiveSha256": "9cd140f74490c20c21d9a17704f6a80991505e074e965fbc0736b4cced74a622",
+        "integrity": "passed",
+        "readyMemberCounts": {
+          "bin": 2,
+          "cfg": 2,
+          "sprx": 4,
+          "gsc": 154,
+          "dds": 98
+        },
+        "execution": "Archive contents, text and static file headers inspected; no installation or execution.",
+        "checkedAt": "2026-11-02T05:53:34.335Z",
+        "allArchiveMembersExtracted": true,
+        "allRecordedFileHashesVerified": true,
+        "originalIntegrity": "7-Zip CRC test passed",
+        "formatCounts": {
+          "BIN": 2,
+          "CFG": 2,
+          "SPRX": 4,
+          "GSC": 154,
+          "PNG": 8,
+          "DDS": 98
+        },
+        "memberPaths": [
+          "INFARCTED HFW HEN\\EBOOT.BIN HEN\\EBOOT.BIN",
+          "INFARCTED HFW HEN\\EFK\\BO2_GSC_Injector.sprx",
+          "INFARCTED HFW HEN\\INFARCTEDHEN.sprx",
+          "INFARCTED CFW\\EBOOT.BIN\\EBOOT.BIN",
+          "INFARCTED CFW\\EFK\\BO2_GSC_Injector.sprx",
+          "INFARCTED CFW\\EFKMODZ.sprx"
+        ],
+        "notes": [
+          "Archive separates INFARCTED HFW HEN and INFARCTED CFW directories, with distinct EBOOT/SPRX/injector configurations.",
+          "Preserved 154 binary GSC scripts, 98 DDS runtime textures, 4 SPRX files, 2 EBOOTs, 2 CFGs and 8 PNG preview assets. Sample GSC headers are 804753430d0a0006; these are binary script files, not plain text source.",
+          "Exact game update, title IDs and the CFW kernel subtype are not established by the archive names."
+        ]
+      },
+      "note": "The archive has separate HFW/HEN and CFW folders. Keep each variant’s SPRX, EBOOT, GSC, DDS and configuration files together; the archive does not document an exact game update.",
+      "status": "archived"
+    },
+    {
+      "id": "bo2-scarz-v4-rtm",
+      "name": "ScaRzModZ Ultimate RTM Tool V4",
+      "gameId": "black-ops-2",
+      "category": "rtm",
+      "version": "V4 in filename",
+      "gameUpdate": "not stated",
+      "compatibility": "Source RTM heading mentions BLES/BLUS and NPUB/NPEB but gives no per-tool game update or CEX/DEX connection API.",
+      "description": "Desktop BO2 RTM helper. Its EXE/DLL components belong in desktop helpers, outside console-ready SPRX/PKG builds.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/fqfq8ptcy65shcy/ScaRz_BO2_RTM_Tool_V4.rar/file",
+          "label": "Desktop RTM RAR",
+          "filename": "ScaRz_BO2_RTM_Tool_V4.rar"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-2.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-rtm-tool",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo2-efk-v2-rtm",
+      "name": "RTM Tool EFK V2 Final",
+      "gameId": "black-ops-2",
+      "category": "rtm",
+      "version": "V2 Final",
+      "gameUpdate": "not stated",
+      "compatibility": "Source labels the tool Inject GSC Mod Menu HEN & CFW. Exact title IDs, update and connection backend remain unverified.",
+      "description": "Desktop RTM/GSC injection helper. Avoid the separate Purple Haze heading: its adjacent direct link points at this same EFK filename.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/6tj5ovcmnwfnuzn/RTM_TOOL_EFK_V2_FINAL.rar/file",
+          "label": "Desktop RTM RAR",
+          "filename": "RTM_TOOL_EFK_V2_FINAL.rar"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-2.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-rtm-tool",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "bo2-ultimate-class-tool",
+      "name": "Ultimate Class Tool · ExIIL",
+      "gameId": "black-ops-2",
+      "category": "rtm",
+      "version": "not stated",
+      "gameUpdate": "not stated",
+      "compatibility": "No per-file game update, region or CEX/DEX/HEN backend is supplied.",
+      "description": "Desktop class-editing helper credited to ExIIL, with a direct RAR link on the supplied BO2 RTM page.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/qx7kg29h8q5zsl6/BO2_Ultimate_Class_Tool_by_ExIIL.rar/file",
+          "label": "Desktop RTM RAR",
+          "filename": "BO2_Ultimate_Class_Tool_by_ExIIL.rar"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-2.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-rtm-tool",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "uncharted-series-dev-installer",
+      "name": "Uncharted Series Dev Menu Installer",
+      "gameId": "uncharted",
+      "category": "developer-menu",
+      "version": "not stated",
+      "gameUpdate": "not stated",
+      "compatibility": "The supplied page names a PS3 series installer. The author showcase still lists Uncharted 1/2/3 and displays a 4.90 CEX setup. This does not establish compatibility with all regions, updates, HEN or current 4.93 firmware.",
+      "description": "VirusMike's series developer-menu installer. Inspect the preserved RAR for the actual PS3 package and instructions; downloading the RAR does not install or run the tool.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/eqvmqypdq6ddocd/PS3_Uncharted_Series_Dev_Menu_Installer_Tool_By_VirusMike.rar/file",
+          "label": "Installer RAR",
+          "filename": "PS3_Uncharted_Series_Dev_Menu_Installer_Tool_By_VirusMike.rar"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/uncharted-dev-installer.jpg",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/uncharted-series",
+      "availability": "source-linked; archive job checks file retrieval"
+    },
+    {
+      "id": "uncharted-1-debug-reference",
+      "name": "Uncharted: Drake's Fortune · developer-menu reference",
+      "gameId": "uncharted-1",
+      "category": "reference",
+      "version": "developer research dated 2017-02-23",
+      "gameUpdate": "1.01; separate 1.00 offsets",
+      "compatibility": "BCES00065 only in this reference; firmware/mode not established by the post.",
+      "description": "Developer-published game-specific debug-menu research. Keep its BCES00065 version checks separate from the series installer.",
+      "downloads": [],
+      "image": "/assets/images/ps3-mods/uncharted-dev-installer.jpg",
+      "source": "https://dron-3.blogspot.com/2017/",
+      "availability": "reference page accessible"
+    },
+    {
+      "id": "uncharted-2-debug-reference",
+      "name": "Uncharted 2: Among Thieves · developer-menu reference",
+      "gameId": "uncharted-2",
+      "category": "reference",
+      "version": "developer research dated 2017-02-23",
+      "gameUpdate": "1.09; separate 1.00 offsets",
+      "compatibility": "BCES00757 only in this reference; do not apply the offsets to BCES00509 or another release.",
+      "description": "Developer-published debug-menu research for a specific Uncharted 2 release and update.",
+      "downloads": [],
+      "image": "/assets/images/ps3-mods/uncharted-dev-installer.jpg",
+      "source": "https://dron-3.blogspot.com/2017/",
+      "availability": "reference page accessible"
+    },
+    {
+      "id": "uncharted-3-debug-reference",
+      "name": "Uncharted 3: Drake's Deception · developer-menu reference",
+      "gameId": "uncharted-3",
+      "category": "reference",
+      "version": "developer research dated 2017-02-23",
+      "gameUpdate": "1.19; separate 1.00 offsets",
+      "compatibility": "BCES01175 only in this reference; firmware/mode not established by the post.",
+      "description": "Developer-published game-specific debug-menu research for the PS3 release, distinct from the PS4 Nathan Drake Collection.",
+      "downloads": [],
+      "image": "/assets/images/ps3-mods/uncharted-dev-installer.jpg",
+      "source": "https://dron-3.blogspot.com/2017/",
+      "availability": "reference page accessible"
+    },
+    {
+      "id": "bo1-kebab-engine",
+      "name": "Kebab Engine BO1",
+      "gameId": "black-ops-1",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated in source or archive",
+      "compatibility": "Archive contains separately labelled Dex and Hen SPRX files and a shared EBOOT.BIN. Exact game update and title IDs are not documented; CEX support is not established.",
+      "region": "Not specified in archive",
+      "description": "Archive-confirmed Black Ops menu with separate DEX and HEN variants. Preserve the original RAR and choose the appropriate extracted build.",
+      "note": "The source embed heading incorrectly says Jo-Milk Playground V2. The downloaded archive identifies Kebab Engine BO1; these are separate entries.",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/v44gj2nhygwcqov/Kebab_Engine_BO1.rar/file",
+          "label": "Original Kebab archive"
+        }
+      ],
+      "image": "/assets/images/covers/cod-black-ops-1.jpg",
+      "imageAlt": "Call of Duty Black Ops game artwork",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "availability": "archived",
+      "tags": [
+        "SPRX",
+        "HEN",
+        "DEX"
+      ],
+      "archiveEvidence": {
+        "sourceArchiveSha256": "3428ec8eb6d4327fada150fade829f8240a6df08f8b5e82bc2f33be3aa4bc701",
+        "integrity": "7-Zip CRC test passed",
+        "members": [
+          {
+            "name": "KebabBO1.sprx",
+            "path": "Kebab Engine BO1\\Dex\\KebabBO1.sprx",
+            "bytes": 84464,
+            "sha256": "8397e5a4d3a14f82147a7713d20d8039562807bf174aeda6f98468f9cbe84104"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "path": "Kebab Engine BO1\\EBOOT.BIN",
+            "bytes": 6798672,
+            "sha256": "01855a6bc3039ffc53861614b06758c435504a9d616a130e52d9b6029d9f107e"
+          },
+          {
+            "name": "KebabBO1.sprx",
+            "path": "Kebab Engine BO1\\Hen\\KebabBO1.sprx",
+            "bytes": 84096,
+            "sha256": "2b039686f069d79bc583f783be642ebc5cd457287ec6159b4a664b07724fe6e3"
+          }
+        ],
+        "execution": "Archive contents, text and static file headers inspected; no installation or execution.",
+        "checkedAt": "2026-11-02T05:53:34.593Z",
+        "allArchiveMembersExtracted": true,
+        "allRecordedFileHashesVerified": true,
+        "originalIntegrity": "7-Zip CRC test passed",
+        "formatCounts": {
+          "SPRX": 2,
+          "BIN": 1
+        },
+        "memberPaths": [
+          "Kebab Engine BO1\\Dex\\KebabBO1.sprx",
+          "Kebab Engine BO1\\EBOOT.BIN",
+          "Kebab Engine BO1\\Hen\\KebabBO1.sprx"
+        ],
+        "notes": [
+          "Identity confirmed by Kebab Engine BO1/Dex/KebabBO1.sprx and Kebab Engine BO1/Hen/KebabBO1.sprx, plus a shared EBOOT.BIN.",
+          "Archive-labelled DEX and HEN variants; exact title IDs and game update remain unknown. Do not relabel as Jo-Milk."
+        ],
+        "readyMemberCounts": {
+          "sprx": 2,
+          "bin": 1
+        }
+      },
+      "status": "archived"
+    }
+  ],
+  "dlcResources": [
+    {
+      "gameId": "black-ops-1",
+      "name": "Black Ops DLC region reference",
+      "category": "reference",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/bo1-dlcs",
+      "regions": [
+        "BLES01031"
+      ],
+      "packs": [
+        "Classic Zombies maps",
+        "First Strike",
+        "Escalation",
+        "Annihilation",
+        "Moon"
+      ],
+      "description": "The supplied catalogue identifies official PlayStation CDN packages for BLES01031. Use the PS3 account's purchase/download list for licensed content and match the game region. DLC license-fix packages were not included.",
+      "downloads": [],
+      "availability": "source reference accessible; package availability not checked"
+    },
+    {
+      "gameId": "black-ops-2",
+      "name": "Black Ops II DLC region reference",
+      "category": "reference",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-dlcs",
+      "regions": [
+        "BLES01717",
+        "BLUS31140",
+        "BLUS31011",
+        "BLES01719"
+      ],
+      "packs": [
+        "Revolution",
+        "Uprising",
+        "Vengeance",
+        "Apocalypse",
+        "Nuketown Zombies"
+      ],
+      "description": "The source groups official PlayStation CDN add-ons by region and also contains third-party fixes. Only the region and licensed add-on reference is retained. A CDN download alone does not grant a license.",
+      "downloads": [],
+      "availability": "source reference accessible; package availability not checked"
+    }
+  ],
+  "excludedOrAmbiguous": [
+    {
+      "name": "Kebab Engine BO1",
+      "reason": "The source heading says Jo-Milk Playground V2, but the preserved archive identifies Kebab Engine BO1 and contains separate Dex/Hen SPRX variants.",
+      "url": "https://www.mediafire.com/file/v44gj2nhygwcqov/Kebab_Engine_BO1.rar/file",
+      "status": "resolved-by-archive-inspection",
+      "resourceId": "bo1-kebab-engine"
+    },
+    {
+      "name": "Viridian By Jimbo DEX CFW",
+      "status": "resolved by archive inspection",
+      "resourceId": "bo1-viridian",
+      "reason": "Embedded heading says Ventix V2. The preserved archive proves Viridian identity through Jimbo/Viridian.sprx and a README requiring DEX target type and DEX LV2 kernel; it is now listed as Viridian, not Ventix.",
+      "url": "https://www.mediafire.com/file/lcnm3rd5a6jlvds/COD_BO1_Viridian_By_Jimbo_Sprx_%255BDEX_CFW%255D.rar/file"
+    },
+    {
+      "name": "Purple Haze V2",
+      "reason": "Its adjacent direct MediaFire link points at RTM_TOOL_EFK_V2_FINAL.rar. Avoid duplicating EFK as a differently named verified tool."
+    },
+    {
+      "name": "BO2 1.19 HEN Anti-Freeze Tool",
+      "reason": "The supplied source explicitly says Link Down."
+    },
+    {
+      "name": "BO2 SKush420 Zombies RTM Tool",
+      "reason": "The supplied source explicitly says Link Down."
+    },
+    {
+      "name": "Chameleon Camo RTM Tool",
+      "reason": "The supplied source explicitly says Link Down and Windows Virus Alert."
+    },
+    {
+      "name": "BO2 TrickShot HEN SPRX",
+      "reason": "The supplied source marks this build Unstable."
+    },
+    {
+      "name": "Sub4unlock-only downloads",
+      "reason": "Subscription-unlock gates were not bypassed. Do not label these as direct downloads."
+    },
+    {
+      "name": "DLC FIX / All DLC Fix packages",
+      "reason": "License-bypass files excluded; retain only licensed add-on and region guidance."
+    }
+  ],
+  "images": [
+    {
+      "path": "/assets/images/ps3-mods/bo1-modded-classes-rtm.jpg",
+      "url": "https://i.ytimg.com/vi/LVh-NIxqIxY/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/bo1-rtm-tools",
+      "kind": "static source-showcase still",
+      "verified": "Actual BO1 class screen and Windows RTM window; window title shows Black Ops 1.13 (CEX / DEX)."
+    },
+    {
+      "path": "/assets/images/ps3-mods/bo2-reflex-25-menu.jpg",
+      "url": "https://i.ytimg.com/vi/2DBEixiDjjk/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "kind": "static source-showcase still",
+      "verified": "Actual BO2 Reflex Engine v2.5 menu visible."
+    },
+    {
+      "path": "/assets/images/ps3-mods/bo2-fury-v3-menu.jpg",
+      "url": "https://i.ytimg.com/vi/91uC-7M21gU/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "kind": "static source-showcase still",
+      "verified": "Actual BO2 Fury V3 by Zeam overlay visible."
+    },
+    {
+      "path": "/assets/images/ps3-mods/uncharted-dev-installer.jpg",
+      "url": "https://i.ytimg.com/vi/R5VpgiiymJ4/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/uncharted-series",
+      "kind": "static author-showcase still",
+      "verified": "Actual Uncharted XMB installer screen lists games 1/2/3 and backups, displays Firmware 4.90 (CEX)."
+    }
+  ]
+}

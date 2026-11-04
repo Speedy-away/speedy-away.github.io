@@ -1,0 +1,800 @@
+{
+  "copiedAt": "2026-11-03T20:07:54.180Z",
+  "source": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite",
+  "target": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
+  "files": [
+    {
+      "name": "scripts/tests/host-file-list.test.cjs",
+      "bytes": 2331,
+      "sha256": "264d639f31f1ade7927844218f4a1decd994424ef6fbf6390025dcbcbfaa318a",
+      "previousSha256": "264d639f31f1ade7927844218f4a1decd994424ef6fbf6390025dcbcbfaa318a"
+    },
+    {
+      "name": "scripts/tests/host-dashboard.test.cjs",
+      "bytes": 9259,
+      "sha256": "206cc52ca6dcf1e10bb751cfa0413c0d803cb69ff9757c99f1fa91e7664f54ef",
+      "previousSha256": "206cc52ca6dcf1e10bb751cfa0413c0d803cb69ff9757c99f1fa91e7664f54ef"
+    },
+    {
+      "name": "scripts/tests/host-menu-actions.test.cjs",
+      "bytes": 3938,
+      "sha256": "725abc0dd7c24cae20e9aaf03d9342c747692209018599d3e18779dafa1a40b9",
+      "previousSha256": "725abc0dd7c24cae20e9aaf03d9342c747692209018599d3e18779dafa1a40b9"
+    },
+    {
+      "name": "scripts/build-console-guides.cjs",
+      "bytes": 41734,
+      "sha256": "273bfebcd8c9f4940b3fcead1d9d7baaff6c8ca0948c259728a73f9e7d6802c1",
+      "previousSha256": "273bfebcd8c9f4940b3fcead1d9d7baaff6c8ca0948c259728a73f9e7d6802c1"
+    },
+    {
+      "name": "scripts/templates/host-page.html",
+      "bytes": 50135,
+      "sha256": "6560d2a7f952b4f2d87d34c2b4b15b3950eef8fb0f4187e7f22563dbaed77530",
+      "previousSha256": "6560d2a7f952b4f2d87d34c2b4b15b3950eef8fb0f4187e7f22563dbaed77530"
+    },
+    {
+      "name": "assets/host-dashboard.js",
+      "bytes": 68576,
+      "sha256": "04643f4cc00e418cc067912be3a4e18db29f0b16879bdd84148576419b722b1b",
+      "previousSha256": "04643f4cc00e418cc067912be3a4e18db29f0b16879bdd84148576419b722b1b"
+    },
+    {
+      "name": "assets/host-folders.js",
+      "bytes": 3229,
+      "sha256": "73ed152011d949dca02de9416712ce1a1c1b61cd79ac40a40164806661db33fe",
+      "previousSha256": "73ed152011d949dca02de9416712ce1a1c1b61cd79ac40a40164806661db33fe"
+    },
+    {
+      "name": "assets/host-catalog-grid.js",
+      "bytes": 5978,
+      "sha256": "99b01774dd851e34d715840d7c0cce1a97f4fac72e9bc3b433b36e0d3226a90c",
+      "previousSha256": "99b01774dd851e34d715840d7c0cce1a97f4fac72e9bc3b433b36e0d3226a90c"
+    },
+    {
+      "name": "assets/host-catalog-grid.css",
+      "bytes": 3486,
+      "sha256": "c890977907339174a9baa220217fdefb0a4ba3254d57148367f85fa13169a94c",
+      "previousSha256": "648bb7e4332c05516d5b9f53669575477611bf148571f34e9cae95e49598591e"
+    },
+    {
+      "name": "assets/host-firmware-buttons.css",
+      "bytes": 1992,
+      "sha256": "6c554c2facf47f5c7ae9347471076dbeb1028d104ea97b25af0ee25836fbaa45",
+      "previousSha256": "32671c203be42e400a39ac8660163f0e316413c65fb7a95224572d42d7533f80"
+    },
+    {
+      "name": "scripts/build-host-selector.cjs",
+      "bytes": 16678,
+      "sha256": "38e8c46b568be8352659c6d01651a4d82493ae938c3f01b2df2176c3220ea741",
+      "previousSha256": "38e8c46b568be8352659c6d01651a4d82493ae938c3f01b2df2176c3220ea741"
+    },
+    {
+      "name": "scripts/host-webhost-markup.cjs",
+      "bytes": 9322,
+      "sha256": "68f8b79afd59b3f11bd0d26bb5bb54383fb0eea30a7bc96536e887a38f317571",
+      "previousSha256": "68f8b79afd59b3f11bd0d26bb5bb54383fb0eea30a7bc96536e887a38f317571"
+    },
+    {
+      "name": "scripts/host-folder-markup.cjs",
+      "bytes": 4995,
+      "sha256": "fd2ed356f2753d5aea17f8e5b13d1f0f1399a0f8344d51a6b63484ac6d303353",
+      "previousSha256": "fd2ed356f2753d5aea17f8e5b13d1f0f1399a0f8344d51a6b63484ac6d303353"
+    },
+    {
+      "name": "scripts/build-host-support-pages.cjs",
+      "bytes": 5844,
+      "sha256": "84a1f9a56c8512130ed53a02e28a628c370fc0fce4aa937dd89a0f700eab4441",
+      "previousSha256": "84a1f9a56c8512130ed53a02e28a628c370fc0fce4aa937dd89a0f700eab4441"
+    },
+    {
+      "name": "scripts/package-console-payload-sender.cjs",
+      "bytes": 23401,
+      "sha256": "704c85b8466953661fe98e6eb31bf8863382e3238b9b0e428f42e27937061fad",
+      "previousSha256": "9f38540382a7b801663d957b9458c708913cdd12b02f821ae458379b380099fe"
+    },
+    {
+      "name": "scripts/console-payload-bridge.cjs",
+      "bytes": 37001,
+      "sha256": "8a96f583a67c60671820e499b466540ddf4c38c2ed4716494012cb753785e410",
+      "previousSha256": "8a96f583a67c60671820e499b466540ddf4c38c2ed4716494012cb753785e410"
+    },
+    {
+      "name": "scripts/tests/host-continuation-dom.cjs",
+      "bytes": 9470,
+      "sha256": "18c638bd70c427f13eed6cb4b2bf7c26dd054679670a58b7e34954d1178e4e09",
+      "previousSha256": "18c638bd70c427f13eed6cb4b2bf7c26dd054679670a58b7e34954d1178e4e09"
+    },
+    {
+      "name": "scripts/tests/host-firmware-buttons.test.cjs",
+      "bytes": 4817,
+      "sha256": "9212d342a99419c2fa29fd94673c3d7b50721c91b549e86e0c99e711b654f731",
+      "previousSha256": "9212d342a99419c2fa29fd94673c3d7b50721c91b549e86e0c99e711b654f731"
+    },
+    {
+      "name": "scripts/tests/host-catalog-grid.test.cjs",
+      "bytes": 8252,
+      "sha256": "2ba468380d10c1266c36c8f514d4f22b97e89f161958c0efa4a4d3ccb3dd3688",
+      "previousSha256": "e847a37a592491d172af1e2b455e0d277c2c8e67b923e1516592655855778c11"
+    },
+    {
+      "name": "scripts/tests/host-gallery-navigation.test.cjs",
+      "bytes": 4845,
+      "sha256": "bbaca25dffd945842c1455205f3b04b85eaea49f3dd13a9c4ab90721ee29e957",
+      "previousSha256": "bbaca25dffd945842c1455205f3b04b85eaea49f3dd13a9c4ab90721ee29e957"
+    },
+    {
+      "name": "assets/host-trainer.js",
+      "bytes": 23827,
+      "sha256": "d44221f2ccb9fdc7c68fbe9d71cabda6790b5cf231307c14bf1f92fd3f3c3405",
+      "previousSha256": "d44221f2ccb9fdc7c68fbe9d71cabda6790b5cf231307c14bf1f92fd3f3c3405"
+    },
+    {
+      "name": "assets/host-trainer.css",
+      "bytes": 9105,
+      "sha256": "5774596ee47e34b22b39a5445fc7f4f79cd7c3135e70aa957dac307256a827a9",
+      "previousSha256": "5774596ee47e34b22b39a5445fc7f4f79cd7c3135e70aa957dac307256a827a9"
+    },
+    {
+      "name": "scripts/templates/host-trainer.html",
+      "bytes": 5495,
+      "sha256": "2ceb777a6a918df858534d2415f239765d9030c2360b25b8f9401008e2621d4f",
+      "previousSha256": "2ceb777a6a918df858534d2415f239765d9030c2360b25b8f9401008e2621d4f"
+    },
+    {
+      "name": "scripts/prepare-host-local-tools.cjs",
+      "bytes": 13098,
+      "sha256": "1d7a4be9aabe113e29520655e7c8ee17d8b044aa49053c80251daf5e7bc0a212",
+      "previousSha256": "1d7a4be9aabe113e29520655e7c8ee17d8b044aa49053c80251daf5e7bc0a212"
+    },
+    {
+      "name": "scripts/build-host-trainer-art.cjs",
+      "bytes": 5212,
+      "sha256": "c36d68c72dfc1c206c84f238044596afa9d177cc5684d0fee8431c7183666e30",
+      "previousSha256": "c36d68c72dfc1c206c84f238044596afa9d177cc5684d0fee8431c7183666e30"
+    },
+    {
+      "name": "scripts/tests/host-local-tools.test.cjs",
+      "bytes": 22953,
+      "sha256": "e844f4efae0c88b659f8f9ea0cc68befba309fa30cb38fcfb4d99e7b9b9e59fb",
+      "previousSha256": "e844f4efae0c88b659f8f9ea0cc68befba309fa30cb38fcfb4d99e7b9b9e59fb"
+    },
+    {
+      "name": "hosts/tools/ps4-trainer/tile-art.json",
+      "bytes": 52175,
+      "sha256": "b17150c8798a305f67636b7e870e17f31d180143687301f85055726abad073b4",
+      "previousSha256": "b17150c8798a305f67636b7e870e17f31d180143687301f85055726abad073b4"
+    },
+    {
+      "name": "hosts/tools/ps4-trainer/art/letter-cover.svg",
+      "bytes": 397,
+      "sha256": "84806c575fcd4d8162ddfd512cc99a00ed5fbc07f464c84eb5b497a369c2ca1c",
+      "previousSha256": "84806c575fcd4d8162ddfd512cc99a00ed5fbc07f464c84eb5b497a369c2ca1c"
+    },
+    {
+      "name": "i18n-tools/host-trainer-gallery-translations.cjs",
+      "bytes": 8329,
+      "sha256": "ae66fc0260ac62a1df6b3c79294e8634df0856bb4ed6d00662fd56ce3037f90c",
+      "previousSha256": "ae66fc0260ac62a1df6b3c79294e8634df0856bb4ed6d00662fd56ce3037f90c"
+    },
+    {
+      "name": "i18n-tools/console-translations.cjs",
+      "bytes": 959362,
+      "sha256": "96071f03976c66cd6daac6b351cbb494342053e7c439db96996f3ebfa8bef6e1",
+      "previousSha256": "96071f03976c66cd6daac6b351cbb494342053e7c439db96996f3ebfa8bef6e1"
+    },
+    {
+      "name": "docs/host-trainer-gallery-review.json",
+      "bytes": 4105,
+      "sha256": "0eda86dae6c7abb5b55825056995006f593e120a3c7e9fa5b483edcf0846684d",
+      "previousSha256": "0eda86dae6c7abb5b55825056995006f593e120a3c7e9fa5b483edcf0846684d"
+    },
+    {
+      "name": "docs/host-trainer-tile-artwork.json",
+      "bytes": 44856,
+      "sha256": "f11ffa838519951a0ed909888b7ef9fb78f8c7a2cafbf3208de50365977e421c",
+      "previousSha256": "f11ffa838519951a0ed909888b7ef9fb78f8c7a2cafbf3208de50365977e421c"
+    },
+    {
+      "name": "assets/images/host-catalog/games.svg",
+      "bytes": 464,
+      "sha256": "f64e7c4a8920c7c7b919ee568ca65b012bb36155fff11af635ab1c9ee6f42763",
+      "previousSha256": "f64e7c4a8920c7c7b919ee568ca65b012bb36155fff11af635ab1c9ee6f42763"
+    },
+    {
+      "name": "assets/images/host-catalog/updates.svg",
+      "bytes": 327,
+      "sha256": "ee0b78aedb5c3ce623b403a53c26235de77f042399da9f549d69211a4b60d325",
+      "previousSha256": "ee0b78aedb5c3ce623b403a53c26235de77f042399da9f549d69211a4b60d325"
+    },
+    {
+      "name": "assets/images/host-catalog/payloads.svg",
+      "bytes": 469,
+      "sha256": "e154463fb2fabbf8b11ff1daf04096235b9d087b7eaebd2fc6fd0f491e56acb5",
+      "previousSha256": "e154463fb2fabbf8b11ff1daf04096235b9d087b7eaebd2fc6fd0f491e56acb5"
+    },
+    {
+      "name": "assets/images/host-catalog/loaders.svg",
+      "bytes": 334,
+      "sha256": "b7523b72baf9a5758f2e2393387696c3b36e441bebc8b7041603510a4fc454f5",
+      "previousSha256": "b7523b72baf9a5758f2e2393387696c3b36e441bebc8b7041603510a4fc454f5"
+    },
+    {
+      "name": "assets/images/host-catalog/tools.svg",
+      "bytes": 415,
+      "sha256": "6ff42fba03bbb2f841558ad66616320e37fd1db1dd86851a8ac8002f578ae226",
+      "previousSha256": "6ff42fba03bbb2f841558ad66616320e37fd1db1dd86851a8ac8002f578ae226"
+    },
+    {
+      "name": "assets/images/host-catalog/files.svg",
+      "bytes": 384,
+      "sha256": "543af4934e23f16c1a7c413a04ef94fbd11b0be71487daab9e0e7cc89aff2142",
+      "previousSha256": "543af4934e23f16c1a7c413a04ef94fbd11b0be71487daab9e0e7cc89aff2142"
+    },
+    {
+      "name": "assets/images/game-patches/bloodborne-official.jpg",
+      "bytes": 227582,
+      "sha256": "33f33a882619f432c4de142473520977509c731fed6f15c747cf5b9d32d7bd35",
+      "previousSha256": "33f33a882619f432c4de142473520977509c731fed6f15c747cf5b9d32d7bd35"
+    },
+    {
+      "name": "assets/images/game-patches/red-dead-redemption-2-official.jpg",
+      "bytes": 51987,
+      "sha256": "27aa89c336b381083a1b3e8de84ffbcb842219dabca97aabfcf707b1dd8c135c",
+      "previousSha256": "27aa89c336b381083a1b3e8de84ffbcb842219dabca97aabfcf707b1dd8c135c"
+    },
+    {
+      "name": "assets/images/game-patches/assassin-s-creed-syndicate-official.jpg",
+      "bytes": 58688,
+      "sha256": "c53916bdb6ca7391286a570481cc7d7284447414a406b5ce60be33a50152b0b4",
+      "previousSha256": "c53916bdb6ca7391286a570481cc7d7284447414a406b5ce60be33a50152b0b4"
+    },
+    {
+      "name": "assets/images/game-patches/assassin-s-creed-unity-official.jpg",
+      "bytes": 117184,
+      "sha256": "5979f04fd8f01c17295c537a616173b674b211224cbd6eee441a942e8b30331b",
+      "previousSha256": "5979f04fd8f01c17295c537a616173b674b211224cbd6eee441a942e8b30331b"
+    },
+    {
+      "name": "assets/images/game-patches/batman-arkham-knight-official.jpg",
+      "bytes": 47943,
+      "sha256": "a36e699b87b6da039cbab04afc6c13fba50770abd7a2ff33aff45e5c3452ac0d",
+      "previousSha256": "a36e699b87b6da039cbab04afc6c13fba50770abd7a2ff33aff45e5c3452ac0d"
+    },
+    {
+      "name": "assets/images/game-patches/crash-bandicoot-n-sane-trilogy-official.jpg",
+      "bytes": 72184,
+      "sha256": "d10b452bef598a02493a64728f1b8b13ebafb6b6792aaecc600c040f43b3d8fb",
+      "previousSha256": "d10b452bef598a02493a64728f1b8b13ebafb6b6792aaecc600c040f43b3d8fb"
+    },
+    {
+      "name": "assets/images/game-patches/cyberpunk-2077-official.jpg",
+      "bytes": 41042,
+      "sha256": "7ad6e0ee4f23e26416f5663146f3e97b1c85bbfb157781027e2aa615a4be68cf",
+      "previousSha256": "7ad6e0ee4f23e26416f5663146f3e97b1c85bbfb157781027e2aa615a4be68cf"
+    },
+    {
+      "name": "assets/images/game-patches/dead-island-2-official.jpg",
+      "bytes": 73636,
+      "sha256": "cfa188a50b1b33baa5eb21391f437376c8d88114b6816961bae6db459569cc72",
+      "previousSha256": "cfa188a50b1b33baa5eb21391f437376c8d88114b6816961bae6db459569cc72"
+    },
+    {
+      "name": "assets/images/game-patches/demons-souls-official.jpg",
+      "bytes": 228373,
+      "sha256": "0ad4126d16cbb34a0edcafe93dc55762c9e8df88a87c8a172e3c5c202de4b8e6",
+      "previousSha256": "0ad4126d16cbb34a0edcafe93dc55762c9e8df88a87c8a172e3c5c202de4b8e6"
+    },
+    {
+      "name": "assets/images/game-patches/dishonored-definitive-edition-official.jpg",
+      "bytes": 33676,
+      "sha256": "e6ddfdb5db88cb0ce0d9d9a8bcfbd0739cdb8a58ad4b31bef10592151883e8cc",
+      "previousSha256": "e6ddfdb5db88cb0ce0d9d9a8bcfbd0739cdb8a58ad4b31bef10592151883e8cc"
+    },
+    {
+      "name": "assets/images/game-patches/dying-light-official.jpg",
+      "bytes": 43436,
+      "sha256": "044bc1c51ab6e312fd79664430cc1e6e00b57f6a44f10dd812bc25e065d46f29",
+      "previousSha256": "044bc1c51ab6e312fd79664430cc1e6e00b57f6a44f10dd812bc25e065d46f29"
+    },
+    {
+      "name": "assets/images/game-patches/dying-light-2-stay-human-official.jpg",
+      "bytes": 41221,
+      "sha256": "7fac6a047e20e7e5e57d33ce725f85208fb536fe75ff4136537a6f626e2b66ee",
+      "previousSha256": "7fac6a047e20e7e5e57d33ce725f85208fb536fe75ff4136537a6f626e2b66ee"
+    },
+    {
+      "name": "assets/images/game-patches/fallout-4-official.jpg",
+      "bytes": 37114,
+      "sha256": "1d90e4bffb552583c8183095756edfa784e10cc2b79e552e31371de0eb83ab42",
+      "previousSha256": "1d90e4bffb552583c8183095756edfa784e10cc2b79e552e31371de0eb83ab42"
+    },
+    {
+      "name": "assets/images/game-patches/god-of-war-official.jpg",
+      "bytes": 37714,
+      "sha256": "cef450471bbaf6058991c841c30539069f436a92ba5e91994bf12d12657e3b80",
+      "previousSha256": "cef450471bbaf6058991c841c30539069f436a92ba5e91994bf12d12657e3b80"
+    },
+    {
+      "name": "assets/images/game-patches/grand-theft-auto-v-official.jpg",
+      "bytes": 63566,
+      "sha256": "e1ee8ed03ef2926d224e331a1bc61711822bbe7261cf847624089c1e95207a9a",
+      "previousSha256": "e1ee8ed03ef2926d224e331a1bc61711822bbe7261cf847624089c1e95207a9a"
+    },
+    {
+      "name": "assets/images/game-patches/gravity-rush-2-official.jpg",
+      "bytes": 273977,
+      "sha256": "b4357cf71569f8324b25c860a7366a1bee9a4d5d9bf01d94678f4129eb94c0b8",
+      "previousSha256": "b4357cf71569f8324b25c860a7366a1bee9a4d5d9bf01d94678f4129eb94c0b8"
+    },
+    {
+      "name": "assets/images/game-patches/just-cause-4-official.jpg",
+      "bytes": 46934,
+      "sha256": "5f9402f0e2073c24c97fcc413603cd357eec5d5e66686f600686b57ee7df8778",
+      "previousSha256": "5f9402f0e2073c24c97fcc413603cd357eec5d5e66686f600686b57ee7df8778"
+    },
+    {
+      "name": "assets/images/game-patches/mad-max-official.jpg",
+      "bytes": 46229,
+      "sha256": "b08b074fa76ced52b78e3c1f1f877e57f89e35625366449f6ecdc3d07309b9e7",
+      "previousSha256": "b08b074fa76ced52b78e3c1f1f877e57f89e35625366449f6ecdc3d07309b9e7"
+    },
+    {
+      "name": "assets/images/game-patches/metal-gear-solid-snake-eater-digital-deluxe-edition-official.jpg",
+      "bytes": 30812,
+      "sha256": "94fb78155a53f6fa4f789d6e9e44bbbe0b808ed8b7d8787eb65de0611c83d7f2",
+      "previousSha256": "94fb78155a53f6fa4f789d6e9e44bbbe0b808ed8b7d8787eb65de0611c83d7f2"
+    },
+    {
+      "name": "assets/images/game-patches/red-dead-redemption-official.jpg",
+      "bytes": 50174,
+      "sha256": "97a73571e540df7092dbf7bfc9f945e461291f14cc230b6d9010ec922ecb5067",
+      "previousSha256": "97a73571e540df7092dbf7bfc9f945e461291f14cc230b6d9010ec922ecb5067"
+    },
+    {
+      "name": "assets/images/game-patches/resident-evil-4-remake-official.jpg",
+      "bytes": 28807,
+      "sha256": "33c8dcd2a189dec8c053773e10df4fef2d68cb1db73ab4401de5c078b8650e4b",
+      "previousSha256": "33c8dcd2a189dec8c053773e10df4fef2d68cb1db73ab4401de5c078b8650e4b"
+    },
+    {
+      "name": "assets/images/game-patches/sekiro-shadows-die-twice-official.jpg",
+      "bytes": 39009,
+      "sha256": "1a7309b8cef162b7bd4ed33ebddbc70b15734ac0250492110535a4d22eb88b5b",
+      "previousSha256": "1a7309b8cef162b7bd4ed33ebddbc70b15734ac0250492110535a4d22eb88b5b"
+    },
+    {
+      "name": "assets/images/game-patches/shadow-of-the-colossus-official.jpg",
+      "bytes": 138015,
+      "sha256": "edb005ba902092d861e17df9cd85c7ec980823025279b5aa4aebf5099ce05aa2",
+      "previousSha256": "edb005ba902092d861e17df9cd85c7ec980823025279b5aa4aebf5099ce05aa2"
+    },
+    {
+      "name": "assets/images/game-patches/the-evil-within-official.jpg",
+      "bytes": 36710,
+      "sha256": "9846895fd55bf6c633e320a903df00bda836437e190c0c6829df9b096951a027",
+      "previousSha256": "9846895fd55bf6c633e320a903df00bda836437e190c0c6829df9b096951a027"
+    },
+    {
+      "name": "assets/images/game-patches/the-last-guardian-official.jpg",
+      "bytes": 179943,
+      "sha256": "4cd60a9da2ec7a0db09c6d567337558859d6909d5553eee889561f4e66349595",
+      "previousSha256": "4cd60a9da2ec7a0db09c6d567337558859d6909d5553eee889561f4e66349595"
+    },
+    {
+      "name": "assets/images/game-patches/the-last-of-us-part-ii-official.jpg",
+      "bytes": 135501,
+      "sha256": "c46fd16fcc42b6cc70eebe80faeb625b11424b0c51cd901dbcce0683da497f63",
+      "previousSha256": "c46fd16fcc42b6cc70eebe80faeb625b11424b0c51cd901dbcce0683da497f63"
+    },
+    {
+      "name": "assets/images/game-patches/the-last-of-us-remastered-official.jpg",
+      "bytes": 132476,
+      "sha256": "7a89ceaceea20787cc7559043670c9fea70550ec4419e7884555168ed4345875",
+      "previousSha256": "7a89ceaceea20787cc7559043670c9fea70550ec4419e7884555168ed4345875"
+    },
+    {
+      "name": "assets/images/game-patches/the-order-1886-official.jpg",
+      "bytes": 258850,
+      "sha256": "7dce497fc09ea611c50bc10731dbf7c0320bd8048404a11aef872ec2a9180ff5",
+      "previousSha256": "7dce497fc09ea611c50bc10731dbf7c0320bd8048404a11aef872ec2a9180ff5"
+    },
+    {
+      "name": "assets/images/game-patches/the-witcher-3-official.jpg",
+      "bytes": 43744,
+      "sha256": "572a97138980ded27bc2d953458bb4c2801860975dd0a6501641d34fa601d821",
+      "previousSha256": "572a97138980ded27bc2d953458bb4c2801860975dd0a6501641d34fa601d821"
+    },
+    {
+      "name": "assets/images/game-patches/dark-souls-iii-official.jpg",
+      "bytes": 43735,
+      "sha256": "27220371fbd76f7d1012b3ac91757435b0e532ae6fdf983d22a59586581fdbc3",
+      "previousSha256": "27220371fbd76f7d1012b3ac91757435b0e532ae6fdf983d22a59586581fdbc3"
+    },
+    {
+      "name": "assets/images/game-patches/far-cry-6-official.jpg",
+      "bytes": 42006,
+      "sha256": "459c8105022b61c68ab88a1c645776c0a99d753a43e82c56dd9855aa356a0abf",
+      "previousSha256": "459c8105022b61c68ab88a1c645776c0a99d753a43e82c56dd9855aa356a0abf"
+    },
+    {
+      "name": "assets/images/game-patches/far-cry-primal-official.jpg",
+      "bytes": 46390,
+      "sha256": "18ec1879c91f16416b413e945cd1cd9d9c3f26ffa2bf1f1b1214fb7e77e5de5f",
+      "previousSha256": "18ec1879c91f16416b413e945cd1cd9d9c3f26ffa2bf1f1b1214fb7e77e5de5f"
+    },
+    {
+      "name": "assets/images/game-patches/just-cause-3-official.jpg",
+      "bytes": 65979,
+      "sha256": "aa7606193d27e0b840efefdd84a207d28f0428222013d91b070b9424912fb1ec",
+      "previousSha256": "aa7606193d27e0b840efefdd84a207d28f0428222013d91b070b9424912fb1ec"
+    },
+    {
+      "name": "assets/images/game-patches/alien-isolation-official.jpg",
+      "bytes": 21064,
+      "sha256": "169afafbf683d7529559ad30b6cf7568c45e0a9c99e7390555a3c29117521f83",
+      "previousSha256": "169afafbf683d7529559ad30b6cf7568c45e0a9c99e7390555a3c29117521f83"
+    },
+    {
+      "name": "assets/images/game-patches/armored-core-vi-fires-of-rubicon-official.jpg",
+      "bytes": 47173,
+      "sha256": "265c2e2e00b542a65dadd577a24ef8f994cbe600b6ce51325020ba7780b64e65",
+      "previousSha256": "265c2e2e00b542a65dadd577a24ef8f994cbe600b6ce51325020ba7780b64e65"
+    },
+    {
+      "name": "assets/images/game-patches/days-gone-official.jpg",
+      "bytes": 18193,
+      "sha256": "07dbc4d574f7d0550213a440efa534b316830720378576762d7592ed636e2ef2",
+      "previousSha256": "07dbc4d574f7d0550213a440efa534b316830720378576762d7592ed636e2ef2"
+    },
+    {
+      "name": "assets/images/game-patches/detroit-become-human-official.jpg",
+      "bytes": 36437,
+      "sha256": "6090057ad69a66278d19259834f867d4223569b93ac5b2bffd3894a49425fa53",
+      "previousSha256": "6090057ad69a66278d19259834f867d4223569b93ac5b2bffd3894a49425fa53"
+    },
+    {
+      "name": "assets/images/ps4-ps5/elden-ring.jpg",
+      "bytes": 32689,
+      "sha256": "d46402528e357350bdb31a00be57a7896238515e6dc8afc0669aa54573307c02",
+      "previousSha256": "d46402528e357350bdb31a00be57a7896238515e6dc8afc0669aa54573307c02"
+    },
+    {
+      "name": "assets/images/game-patches/final-fantasy-vii-remake-ps4-official.jpg",
+      "bytes": 569155,
+      "sha256": "0d40e857016608e13a0d71259970313185826eab245b94eda47dc19f4091c740",
+      "previousSha256": "0d40e857016608e13a0d71259970313185826eab245b94eda47dc19f4091c740"
+    },
+    {
+      "name": "assets/images/game-patches/final-fantasy-xv-ps4-official.jpg",
+      "bytes": 256172,
+      "sha256": "32ee0d10d0109dfccf807f31b632fb31d2463852a27bd5a50eb360238061c8b7",
+      "previousSha256": "32ee0d10d0109dfccf807f31b632fb31d2463852a27bd5a50eb360238061c8b7"
+    },
+    {
+      "name": "assets/images/game-patches/ghost-of-tsushima-director-s-cut-official.jpg",
+      "bytes": 36239,
+      "sha256": "fe1bf015452d5e52a6a9fb9b7e535996a5b8f950fd5b4fd958636095ac02f39a",
+      "previousSha256": "fe1bf015452d5e52a6a9fb9b7e535996a5b8f950fd5b4fd958636095ac02f39a"
+    },
+    {
+      "name": "assets/images/game-patches/horizon-forbidden-west-official.jpg",
+      "bytes": 58665,
+      "sha256": "6104bbc74ffcc2c87d724897d9ea8cf59f6398af2633e5e9d4443fb4c5c0bf03",
+      "previousSha256": "6104bbc74ffcc2c87d724897d9ea8cf59f6398af2633e5e9d4443fb4c5c0bf03"
+    },
+    {
+      "name": "assets/images/ps4-ps5/horizon-zero-dawn.jpg",
+      "bytes": 54076,
+      "sha256": "95971139817f59677278b82584523cf15d0ce57e1d3382e8753dd889e2d31334",
+      "previousSha256": "95971139817f59677278b82584523cf15d0ce57e1d3382e8753dd889e2d31334"
+    },
+    {
+      "name": "assets/images/game-patches/marvel-s-spider-man-ps4-hero-official.jpg",
+      "bytes": 198136,
+      "sha256": "fa7aebdf30d2cb662db5241f802ff7b2339b6cd9a261f6e9dd376b421f60b2d5",
+      "previousSha256": "fa7aebdf30d2cb662db5241f802ff7b2339b6cd9a261f6e9dd376b421f60b2d5"
+    },
+    {
+      "name": "assets/images/game-patches/marvel-s-spider-man-miles-morales-official.jpg",
+      "bytes": 28196,
+      "sha256": "a5d7caa2ec02c532d4f8d173f15bbc142c16e11cfbba03bb5d03b3149d32c08c",
+      "previousSha256": "a5d7caa2ec02c532d4f8d173f15bbc142c16e11cfbba03bb5d03b3149d32c08c"
+    },
+    {
+      "name": "assets/images/game-patches/persona-5-royal-official.jpg",
+      "bytes": 57228,
+      "sha256": "d9ec3a9814a67b255033d0b21a7d1431f19183c0d4ee65354a7e4cd7a6533451",
+      "previousSha256": "d9ec3a9814a67b255033d0b21a7d1431f19183c0d4ee65354a7e4cd7a6533451"
+    },
+    {
+      "name": "assets/images/game-patches/sleeping-dogs-definitive-edition-official.jpg",
+      "bytes": 110392,
+      "sha256": "770bfdc8f7882c86e2c8ca92d9229ccdb5887c19b663d6e274c5b26250384bfb",
+      "previousSha256": "770bfdc8f7882c86e2c8ca92d9229ccdb5887c19b663d6e274c5b26250384bfb"
+    },
+    {
+      "name": "assets/images/game-patches/stray-official.jpg",
+      "bytes": 34498,
+      "sha256": "1af3d4aa0b05098c29ebeb95dc4a7e38d6335553304d29e93232fb260f0b7d4d",
+      "previousSha256": "1af3d4aa0b05098c29ebeb95dc4a7e38d6335553304d29e93232fb260f0b7d4d"
+    },
+    {
+      "name": "assets/images/game-patches/assassin-s-creed-rogue-remastered-ps4-official.jpg",
+      "bytes": 224594,
+      "sha256": "ad5941bacdbdf096ef257f20fac4148987b0f4915eacfcfa16e9ad088e1b23e3",
+      "previousSha256": "ad5941bacdbdf096ef257f20fac4148987b0f4915eacfcfa16e9ad088e1b23e3"
+    },
+    {
+      "name": "assets/images/game-patches/concrete-genie-official.jpg",
+      "bytes": 229940,
+      "sha256": "9dc0c9c66b6650d0911619fd39e23e9a1c156eccbba449c505e2499109d59a48",
+      "previousSha256": "9dc0c9c66b6650d0911619fd39e23e9a1c156eccbba449c505e2499109d59a48"
+    },
+    {
+      "name": "assets/images/game-patches/crisis-core-final-fantasy-vii-reunion-official.jpg",
+      "bytes": 34889,
+      "sha256": "215145de5f3c4b8c02e205d59ae5302bc3191b14545eda555cc56079ecfc84df",
+      "previousSha256": "215145de5f3c4b8c02e205d59ae5302bc3191b14545eda555cc56079ecfc84df"
+    },
+    {
+      "name": "assets/images/game-patches/deus-ex-mankind-divided-official.jpg",
+      "bytes": 32969,
+      "sha256": "3b9e4e06f93e6d7a775aea6c3b0e113b3569516e6aa4f56ca0011f95175b0fbf",
+      "previousSha256": "3b9e4e06f93e6d7a775aea6c3b0e113b3569516e6aa4f56ca0011f95175b0fbf"
+    },
+    {
+      "name": "assets/images/game-patches/dragon-age-inquisition-official.jpg",
+      "bytes": 46052,
+      "sha256": "5c7deabf1f3b30394191361cbdf122ff73c269b86610891c646aa4d6229e3e7f",
+      "previousSha256": "5c7deabf1f3b30394191361cbdf122ff73c269b86610891c646aa4d6229e3e7f"
+    },
+    {
+      "name": "assets/images/game-patches/dragon-s-dogma-dark-arisen-official.jpg",
+      "bytes": 32113,
+      "sha256": "83a1b788811734dd6cd0c8feb8b89bb1e82334f423d28a84421580af8cca7a56",
+      "previousSha256": "83a1b788811734dd6cd0c8feb8b89bb1e82334f423d28a84421580af8cca7a56"
+    },
+    {
+      "name": "assets/images/game-patches/god-of-war-ragnarok-official.jpg",
+      "bytes": 47645,
+      "sha256": "6f12e8e431fc55073cd0255b9bc7c5ce7e8eeb130e31bd179a7e9ba0d2267b3a",
+      "previousSha256": "6f12e8e431fc55073cd0255b9bc7c5ce7e8eeb130e31bd179a7e9ba0d2267b3a"
+    },
+    {
+      "name": "assets/images/game-patches/hogwarts-legacy-official.jpg",
+      "bytes": 34362,
+      "sha256": "5d406f44f7725e2249ddb63a40c15d05531bbf504837c4374bb2586fe3c07b79",
+      "previousSha256": "5d406f44f7725e2249ddb63a40c15d05531bbf504837c4374bb2586fe3c07b79"
+    },
+    {
+      "name": "assets/images/game-patches/kena-bridge-of-spirits-official.jpg",
+      "bytes": 46853,
+      "sha256": "3d7e9d93924b5ba3877946b47241851dbee9570a3dc0711aee9f23633cfdfb40",
+      "previousSha256": "3d7e9d93924b5ba3877946b47241851dbee9570a3dc0711aee9f23633cfdfb40"
+    },
+    {
+      "name": "assets/images/game-patches/lies-of-p-official.jpg",
+      "bytes": 30245,
+      "sha256": "dc7ef97a04831df980463c59aef256348661ad054c0b28fd4ceb4457ffe8dae6",
+      "previousSha256": "dc7ef97a04831df980463c59aef256348661ad054c0b28fd4ceb4457ffe8dae6"
+    },
+    {
+      "name": "assets/images/game-patches/life-is-strange-true-colors-official.jpg",
+      "bytes": 61255,
+      "sha256": "b232513467f7f6fe4beceee9d043d523acb1839756c21a8bcdb51b4269ed88c9",
+      "previousSha256": "b232513467f7f6fe4beceee9d043d523acb1839756c21a8bcdb51b4269ed88c9"
+    },
+    {
+      "name": "assets/images/game-patches/need-for-speed-heat-official.jpg",
+      "bytes": 49264,
+      "sha256": "f61e3b999ae9c9fb0faaa492bb30434df0537f7e1c0d5f9f93440220be97fac1",
+      "previousSha256": "f61e3b999ae9c9fb0faaa492bb30434df0537f7e1c0d5f9f93440220be97fac1"
+    },
+    {
+      "name": "assets/images/game-patches/resident-evil-hd-official.jpg",
+      "bytes": 44740,
+      "sha256": "785ced77787b3d3c10aed3915c52b99d1a83bd288a7c799dca96a4176668fd00",
+      "previousSha256": "785ced77787b3d3c10aed3915c52b99d1a83bd288a7c799dca96a4176668fd00"
+    },
+    {
+      "name": "assets/images/game-patches/rise-of-the-tomb-raider-official.jpg",
+      "bytes": 52966,
+      "sha256": "ee29f710737e4a5e493c272f82ca8fb053f8180632c35a37f3597de272f2a7f9",
+      "previousSha256": "ee29f710737e4a5e493c272f82ca8fb053f8180632c35a37f3597de272f2a7f9"
+    },
+    {
+      "name": "assets/images/game-patches/skyrim-official.jpg",
+      "bytes": 32023,
+      "sha256": "160aaf40eddb413b83b1da78c846b4d66b5123eee1d7e43e287bcfa0bf3584d9",
+      "previousSha256": "160aaf40eddb413b83b1da78c846b4d66b5123eee1d7e43e287bcfa0bf3584d9"
+    },
+    {
+      "name": "assets/images/game-patches/sonic-frontiers-official.jpg",
+      "bytes": 55812,
+      "sha256": "02b509ae2e569475c3a240375f2060845ac4acf2a5a5307fdbf74317173aef82",
+      "previousSha256": "02b509ae2e569475c3a240375f2060845ac4acf2a5a5307fdbf74317173aef82"
+    },
+    {
+      "name": "assets/images/game-patches/the-outer-worlds-official.jpg",
+      "bytes": 62605,
+      "sha256": "a31b73fb952e9d01fcf4a41ddb5bc338743daf2033e40f9634f6cf2a8059362f",
+      "previousSha256": "a31b73fb952e9d01fcf4a41ddb5bc338743daf2033e40f9634f6cf2a8059362f"
+    },
+    {
+      "name": "assets/images/game-patches/wo-long-fallen-dynasty-official.jpg",
+      "bytes": 38533,
+      "sha256": "5e5e6b321e1f373d8a47698b3bc38c98a13b874a2f5d12bfd2a610edd072a612",
+      "previousSha256": "5e5e6b321e1f373d8a47698b3bc38c98a13b874a2f5d12bfd2a610edd072a612"
+    },
+    {
+      "name": "assets/images/game-patches/wreckfest-official.jpg",
+      "bytes": 40625,
+      "sha256": "95ca937db84571d739052246d68792b1323e6e0d5daa283cff035d56dc9fd741",
+      "previousSha256": "95ca937db84571d739052246d68792b1323e6e0d5daa283cff035d56dc9fd741"
+    },
+    {
+      "name": "assets/images/game-patches/assassin-s-creed-iii-remastered-official.jpg",
+      "bytes": 38718,
+      "sha256": "0876e3223685ca2a6ef7a43f770594467fcb21903f2f2232c3157fc9ec611745",
+      "previousSha256": "0876e3223685ca2a6ef7a43f770594467fcb21903f2f2232c3157fc9ec611745"
+    },
+    {
+      "name": "assets/images/game-patches/atomic-heart-official.jpg",
+      "bytes": 42366,
+      "sha256": "3e42bc5679d1bf5c7fe3657b200de638008f9080ae8224435c329e964e844d43",
+      "previousSha256": "3e42bc5679d1bf5c7fe3657b200de638008f9080ae8224435c329e964e844d43"
+    },
+    {
+      "name": "assets/images/game-patches/fatal-frame-maiden-of-black-water-official.jpg",
+      "bytes": 30473,
+      "sha256": "e08a671d2d4c45e790c1da008b1d3da81a61810859ad843c1a3b8bac55b76547",
+      "previousSha256": "e08a671d2d4c45e790c1da008b1d3da81a61810859ad843c1a3b8bac55b76547"
+    },
+    {
+      "name": "assets/images/game-patches/grand-theft-auto-vice-city-the-definitive-edition-official.jpg",
+      "bytes": 48450,
+      "sha256": "b7a793d5462421167d2a4cc471d88bce1c0c155ff545ff67df757e0eb9705b39",
+      "previousSha256": "b7a793d5462421167d2a4cc471d88bce1c0c155ff545ff67df757e0eb9705b39"
+    },
+    {
+      "name": "assets/images/game-patches/judgment-official.jpg",
+      "bytes": 36040,
+      "sha256": "51f34f0711c06bfa5463214d1574d299c73dfaaf6912eba14f242d8e15b6fa82",
+      "previousSha256": "51f34f0711c06bfa5463214d1574d299c73dfaaf6912eba14f242d8e15b6fa82"
+    },
+    {
+      "name": "assets/images/game-patches/life-is-strange-before-the-storm-official.jpg",
+      "bytes": 46698,
+      "sha256": "d50892d86106007df21bc710b06434f83ad1bc6ef00d3d3564059da357c3829d",
+      "previousSha256": "d50892d86106007df21bc710b06434f83ad1bc6ef00d3d3564059da357c3829d"
+    },
+    {
+      "name": "assets/images/game-patches/mirror-s-edge-catalyst-official.jpg",
+      "bytes": 60883,
+      "sha256": "1e724bb66e64b7480ac0a7bc368e655ead5c7f60e36cebac7fd1313f2748effe",
+      "previousSha256": "1e724bb66e64b7480ac0a7bc368e655ead5c7f60e36cebac7fd1313f2748effe"
+    },
+    {
+      "name": "assets/images/game-patches/need-for-speed-payback-official.jpg",
+      "bytes": 47404,
+      "sha256": "0e17e3a6ae765833deec75d08b3b11ba699cc419e7bf718c19321d832ad0caa0",
+      "previousSha256": "0e17e3a6ae765833deec75d08b3b11ba699cc419e7bf718c19321d832ad0caa0"
+    },
+    {
+      "name": "assets/images/game-patches/persona-3-reload-official.jpg",
+      "bytes": 62160,
+      "sha256": "3de53e4065607641183888e7c291af90c7be8e90ace694f9215c5e567df5b208",
+      "previousSha256": "3de53e4065607641183888e7c291af90c7be8e90ace694f9215c5e567df5b208"
+    },
+    {
+      "name": "assets/images/game-patches/resident-evil-zero-official.jpg",
+      "bytes": 72036,
+      "sha256": "1029d84b4bfd4dc35740cac01321ed71fa7bf0fbb53f872f5d3aa29e00ca3952",
+      "previousSha256": "1029d84b4bfd4dc35740cac01321ed71fa7bf0fbb53f872f5d3aa29e00ca3952"
+    },
+    {
+      "name": "assets/images/game-patches/soul-hackers-2-official.jpg",
+      "bytes": 40856,
+      "sha256": "9f5c8873787fccca0ecae2efd1e0915e57517b01cb556e85804bfcbfd236fe10",
+      "previousSha256": "9f5c8873787fccca0ecae2efd1e0915e57517b01cb556e85804bfcbfd236fe10"
+    },
+    {
+      "name": "assets/images/game-patches/spyro-reignited-trilogy-official.jpg",
+      "bytes": 73038,
+      "sha256": "929c02a9a0c38613080840ba66c75ef32c6aaa40b291bec2784acb45fd3858d4",
+      "previousSha256": "929c02a9a0c38613080840ba66c75ef32c6aaa40b291bec2784acb45fd3858d4"
+    },
+    {
+      "name": "assets/images/game-patches/street-fighter-6-official.jpg",
+      "bytes": 68241,
+      "sha256": "1335203e286ed008bebe940a073da638010665f01b7cabe8e38ae3b2b7db73d8",
+      "previousSha256": "1335203e286ed008bebe940a073da638010665f01b7cabe8e38ae3b2b7db73d8"
+    },
+    {
+      "name": "assets/images/game-patches/vampyr-official.jpg",
+      "bytes": 64894,
+      "sha256": "e95360cf8468e7c5c382d076e2ce2e153b50a1265c177fae37b1df4f9fa533d9",
+      "previousSha256": "e95360cf8468e7c5c382d076e2ce2e153b50a1265c177fae37b1df4f9fa533d9"
+    },
+    {
+      "name": "assets/images/game-patches/amnesia-the-bunker-official.jpg",
+      "bytes": 31091,
+      "sha256": "2488ae71f9870c46c812afc7859090dee0c7def49a04b5cea1bfd86cfe3a5d37",
+      "previousSha256": "2488ae71f9870c46c812afc7859090dee0c7def49a04b5cea1bfd86cfe3a5d37"
+    },
+    {
+      "name": "assets/images/game-patches/assetto-corsa-competizione-official.jpg",
+      "bytes": 38153,
+      "sha256": "c0e4056f25bbaae0f59b9c8347e9b57f0e8d4c2c12c703f7f04310e14945d7fe",
+      "previousSha256": "c0e4056f25bbaae0f59b9c8347e9b57f0e8d4c2c12c703f7f04310e14945d7fe"
+    },
+    {
+      "name": "assets/images/game-patches/back-4-blood-official.jpg",
+      "bytes": 48665,
+      "sha256": "70b394d36c218f01a1f3de3a6bf8541366316885c12bab1de7953fd90fed49eb",
+      "previousSha256": "70b394d36c218f01a1f3de3a6bf8541366316885c12bab1de7953fd90fed49eb"
+    },
+    {
+      "name": "assets/images/game-patches/daymare-1998-official.jpg",
+      "bytes": 40950,
+      "sha256": "2d613372c39d7f63c4ee97a8e333745267068feab3fea0d57be30991fbaf0548",
+      "previousSha256": "2d613372c39d7f63c4ee97a8e333745267068feab3fea0d57be30991fbaf0548"
+    },
+    {
+      "name": "assets/images/game-patches/far-cry-3-blood-dragon-classic-edition-official.jpg",
+      "bytes": 41083,
+      "sha256": "0fcf008f042577a1d08982c967b09e9c6a80baff4c00735ce48ad65c70a7abbc",
+      "previousSha256": "0fcf008f042577a1d08982c967b09e9c6a80baff4c00735ce48ad65c70a7abbc"
+    },
+    {
+      "name": "assets/images/game-patches/fatal-frame-mask-of-the-lunar-eclipse-official.jpg",
+      "bytes": 34877,
+      "sha256": "2c75eab880389ada548c2b3583b84b3ca323fa7d56c18e3d8268b88bc2b55029",
+      "previousSha256": "2c75eab880389ada548c2b3583b84b3ca323fa7d56c18e3d8268b88bc2b55029"
+    },
+    {
+      "name": "assets/images/game-patches/hellblade-senua-s-sacrifice-official.jpg",
+      "bytes": 27557,
+      "sha256": "6b4f6610a77a18c3e772ad6a96ad958d26931c66185ab4517e2fa2e23ac901e8",
+      "previousSha256": "6b4f6610a77a18c3e772ad6a96ad958d26931c66185ab4517e2fa2e23ac901e8"
+    },
+    {
+      "name": "assets/images/game-patches/homefront-2-official.jpg",
+      "bytes": 34943,
+      "sha256": "701a25edc6d25c7860fa4715d0142bfbc44f91cffb4ac66caa2eb683fb19a2cb",
+      "previousSha256": "701a25edc6d25c7860fa4715d0142bfbc44f91cffb4ac66caa2eb683fb19a2cb"
+    },
+    {
+      "name": "assets/images/game-patches/lost-judgment-official.jpg",
+      "bytes": 26679,
+      "sha256": "701d3626f41836f2efe9631beef8901732281563530f6263cf5cdbb5188b7d59",
+      "previousSha256": "701d3626f41836f2efe9631beef8901732281563530f6263cf5cdbb5188b7d59"
+    },
+    {
+      "name": "assets/images/game-patches/mafia-definitive-edition-official.jpg",
+      "bytes": 32136,
+      "sha256": "9c22ee09c278ebfcd8d86646d4171bba3e015c3892caf55e84344a6b5e9e42ee",
+      "previousSha256": "9c22ee09c278ebfcd8d86646d4171bba3e015c3892caf55e84344a6b5e9e42ee"
+    },
+    {
+      "name": "assets/images/game-patches/sonic-x-shadow-generations-official.jpg",
+      "bytes": 67804,
+      "sha256": "fb0fad3aec5177ce69550b6e3bf3dc8cf83493d656ab701d18c558a0c018b719",
+      "previousSha256": "fb0fad3aec5177ce69550b6e3bf3dc8cf83493d656ab701d18c558a0c018b719"
+    },
+    {
+      "name": "assets/images/game-patches/the-sinking-city-official.jpg",
+      "bytes": 37313,
+      "sha256": "0fbb65aa526e0fa18ec6256f749b4141863e1c416f20a87e2b8aee1e30d9199e",
+      "previousSha256": "0fbb65aa526e0fa18ec6256f749b4141863e1c416f20a87e2b8aee1e30d9199e"
+    },
+    {
+      "name": "assets/images/game-patches/the-technomancer-official.jpg",
+      "bytes": 112438,
+      "sha256": "10ac09991f0a44bade2a70b3fff6ba09f27e0c6f798d068436e7c4fc00fc8c72",
+      "previousSha256": "10ac09991f0a44bade2a70b3fff6ba09f27e0c6f798d068436e7c4fc00fc8c72"
+    }
+  ],
+  "scope": "Authored firmware-button/game-gallery/trainer UI only. Main redirects, native runtimes, original payloads and all archived versions preserved."
+}

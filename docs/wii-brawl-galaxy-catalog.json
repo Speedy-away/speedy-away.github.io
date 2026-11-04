@@ -1,0 +1,515 @@
+{
+  "scope": "wii-brawl-galaxy",
+  "checkedAt": "2026-11-02T12:57:05.866Z",
+  "entries": [
+    {
+      "id": "project-plus",
+      "title": "Project+ · Wii Lite",
+      "kind": "mod",
+      "version": "3.2.1",
+      "group": "Super Smash Bros. Brawl",
+      "description": "A competitive Brawl overhaul with revised mechanics, fighters, stages and balance. This is the Wii Lite console package, with compressed music and the same gameplay as the standard Wii build.",
+      "requirements": "Original NTSC-U Brawl (RSBE01), compatible SD and the chosen console launch method. Homebrew Channel for the guide on this page.",
+      "compatibility": "Targets the NTSC-U game. Do not assume PAL or Japanese game support. The official FAQ distinguishes console region from game region and has separate disc, hackless and USB requirements.",
+      "setup": "Open the outer Project+ v3.2.1 (Wii Lite) folder after extracting. Copy its apps, Project+ and private folders directly to a dedicated SD root. Launch Project+ from /apps/project+/boot.dol in Homebrew Channel with the matching Brawl disc. Keep older Project+ and other Brawl mods on separate backed-up SD setups. Use the official FAQ for hackless/USB alternatives.",
+      "online": "Console build · Dolphin netplay is a separate PC package",
+      "source": "https://projectplusgame.com/download",
+      "extraSources": [
+        [
+          "https://projectplusgame.com/faq",
+          "Official hardware / method matrix"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-brawl-galaxy/project-plus.webp",
+        "credit": "Project+ development team"
+      },
+      "credit": "Project+ development team",
+      "status": "ready",
+      "file": {
+        "name": "Project+.v3.2.1.Wii.Lite.zip",
+        "version": "3.2.1",
+        "bytes": 1561917280,
+        "sha256": "1691cc998b1244604e9ff3b0d82ac07111d6e388ffcc618e58d788b7be5012df",
+        "sourceUrl": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.2.1/Project%2B.v3.2.1.Wii.Lite.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-brawl-galaxy-project-plus",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Super Smash Bros. Brawl",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · mod data + Wii launcher",
+      "uncompressedBytes": 1801986515,
+      "roots": [
+        "Project+ v3.2.1 (Wii Lite)"
+      ],
+      "bootFiles": [
+        {
+          "path": "Project+ v3.2.1 (Wii Lite)/apps/project+/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        },
+        {
+          "path": "Project+ v3.2.1 (Wii Lite)/apps/project+/boot.elf",
+          "headerPassed": false,
+          "note": "Invalid ELF load segment"
+        }
+      ],
+      "patchSelectors": []
+    },
+    {
+      "id": "brawl-minus",
+      "title": "Brawl Minus",
+      "kind": "mod",
+      "version": "5.1.5",
+      "group": "Super Smash Bros. Brawl",
+      "description": "An intentionally high-powered Brawl overhaul with expanded fighter options and custom stages. The selected file is the console distribution, not one of the platform-specific Dolphin builds.",
+      "requirements": "Original NTSC-U Super Smash Bros. Brawl, a dedicated SD setup and Homebrew Channel for the supplied console launcher.",
+      "compatibility": "Use the console package’s RSBE game files and its packaged instructions. Do not mix it with Project+ files. The 5.1.5 release must be downloaded afresh; the publisher says the 5.1 auto-update path cannot install it.",
+      "setup": "Open the ZIP’s outer Brawl Minus v5.1.5 Console folder, then copy its contents to a separate SD root. Keep its app and Minusery data directories together. Launch the included console app in Homebrew Channel with the matching disc inserted. Preserve the previous SD files and original Brawl save before changing versions.",
+      "online": "Console build · publisher’s Dolphin netplay downloads are separate",
+      "source": "https://forums.brawlminus.net/threads/brawl-minus-5-1-5-is-here.1691/",
+      "extraSources": [
+        [
+          "https://brawlminus.net/",
+          "Brawl Minus project"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-brawl-galaxy/brawl-minus.png",
+        "credit": "Brawl Minus team"
+      },
+      "credit": "Brawl Minus team",
+      "status": "ready",
+      "file": {
+        "name": "Minusery-Console-v5.1.5.zip",
+        "version": "5.1.5",
+        "bytes": 984927268,
+        "sha256": "21bf5d18f40467de108241f1a3d277a0362809aab7d373ff6805d62261e42ddc",
+        "sourceUrl": "https://github.com/MinuseryGames/Minusery-Dolphin/releases/download/v5.1.5/Minusery-Console-v5.1.5.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-brawl-galaxy-brawl-minus",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Super Smash Bros. Brawl",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · mod data + Wii launcher",
+      "uncompressedBytes": 1324973759,
+      "roots": [
+        "Brawl Minus v5.1.5 Console"
+      ],
+      "bootFiles": [
+        {
+          "path": "Brawl Minus v5.1.5 Console/apps/MinusLauncher/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        },
+        {
+          "path": "Brawl Minus v5.1.5 Console/boot.elf",
+          "headerPassed": false,
+          "note": "Invalid ELF load segment"
+        }
+      ],
+      "patchSelectors": []
+    },
+    {
+      "id": "galaxy-daredevil",
+      "title": "Super Mario Galaxy · Daredevil Mode",
+      "kind": "mod",
+      "version": "2020-04-16 creator distribution",
+      "group": "Super Mario Galaxy",
+      "description": "A one-hit challenge for the original Super Mario Galaxy, with altered comet challenges and removed checkpoints.",
+      "requirements": "Original Super Mario Galaxy disc, Wii or Wii U vWii homebrew, Riivolution 1.06 and SD.",
+      "compatibility": "The supplied XMLs select RMG with E (North America) or P (PAL). No J/K selector is supplied in this package. These files are for Galaxy 1.",
+      "setup": "Copy /smg1daredevil and /riivolution to SD root. Start Riivolution with the matching disc, enable SMG1D Core and choose With SD save for a redirected mod save or With Wii save to use the console save. Back up the original first.",
+      "online": "Offline mod · no network multiplayer added",
+      "source": "https://aurumsmods.com/daredevil/",
+      "image": {
+        "path": "/assets/images/wii-brawl-galaxy/galaxy-daredevil.webp",
+        "credit": "Aurum · Daredevil Mode"
+      },
+      "credit": "Aurum · Daredevil Mode",
+      "status": "ready",
+      "file": {
+        "name": "SMG-Daredevil-Mode.zip",
+        "version": "2020-04-16 creator distribution",
+        "bytes": 989846,
+        "sha256": "c0c8cc5141f50e0fd8db7ff602b1699265b781359841dd888b4056c399fd0328",
+        "sourceUrl": "https://mega.nz/file/VgM2yZSC#3vvH8V4pwjkqIyvG8y01diwmEDXNATT9M0_MbDHgVTU",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-brawl-galaxy/SMG-Daredevil-Mode.zip",
+        "itemId": "wii-brawl-galaxy-galaxy-daredevil",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Super Mario Galaxy",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 1122371,
+      "roots": [
+        "riivolution",
+        "smg1daredevil"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/smg1daredevil_E.xml",
+          "discs": [
+            {
+              "game": "RMG"
+            }
+          ],
+          "regions": [
+            {
+              "type": "E"
+            }
+          ]
+        },
+        {
+          "path": "riivolution/smg1daredevil_P.xml",
+          "discs": [
+            {
+              "game": "RMG"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "galaxy2-daredevil",
+      "title": "Super Mario Galaxy 2 · Daredevil Mode",
+      "kind": "mod",
+      "version": "2020-04-16 creator distribution",
+      "group": "Super Mario Galaxy 2",
+      "description": "A separate one-hit difficulty patch for Galaxy 2, with tougher comet timers and checkpoint changes.",
+      "requirements": "Original Super Mario Galaxy 2 disc, Wii or Wii U vWii homebrew, Riivolution 1.06 and SD.",
+      "compatibility": "The supplied XML selects SB4 with E, J or P. It does not list K/W. This is the Galaxy 2 package, separate from the original Galaxy mod.",
+      "setup": "Copy /smg2daredevil and /riivolution to SD root. Launch Riivolution, enable SMG2D Core and select With SD save to redirect mod progress or With Wii save to use the console save. Keep a backup before launch.",
+      "online": "Offline mod · no network multiplayer added",
+      "source": "https://aurumsmods.com/daredevil/",
+      "image": {
+        "path": "/assets/images/wii-brawl-galaxy/galaxy-daredevil.webp",
+        "credit": "Aurum · Daredevil Mode"
+      },
+      "credit": "Aurum · Daredevil Mode",
+      "status": "ready",
+      "file": {
+        "name": "SMG2-Daredevil-Mode.zip",
+        "version": "2020-04-16 creator distribution",
+        "bytes": 790245,
+        "sha256": "a3263a0a9eb4a80287d1b7a26487132692b35375ecf3372beee5434e706f0ea4",
+        "sourceUrl": "https://mega.nz/file/I91UiLJI#FIm3LKFvyEiQb2N22v4OvREqORIzzDBxTbartVo2pYw",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-brawl-galaxy/SMG2-Daredevil-Mode.zip",
+        "itemId": "wii-brawl-galaxy-galaxy2-daredevil",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Super Mario Galaxy 2",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 855008,
+      "roots": [
+        "riivolution",
+        "smg2daredevil"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/smg2daredevil.xml",
+          "discs": [
+            {
+              "game": "SB4"
+            }
+          ],
+          "regions": [
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "P"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-lillie-galaxy",
+      "title": "Super Lillie Galaxy",
+      "kind": "mod",
+      "version": "4.4.0",
+      "group": "Super Mario Galaxy",
+      "description": "A character and presentation overhaul starring Lillie, with other Pokémon characters, dialogue, audio and texture changes. Optional cutscene files are separate and are not required or linked here.",
+      "requirements": "Original Super Mario Galaxy; Riivolution on a homebrew Wii for disc setup, SD and a 7z extraction tool on PC/phone.",
+      "compatibility": "Creator builds for USA with Japanese/Korean compatibility; PAL support is incomplete, with missing text and a possible Toy Time Galaxy crash despite P appearing in the XML. USA was console-tested by the creator; other regions were Dolphin-tested. Significant Toy Time lag is reported on Wii.",
+      "setup": "Extract the 7z. Copy /Lillie1 to SD root and Super Lillie Galaxy.xml into /riivolution, then enable it in Riivolution with the matching disc. Keep the supplied XML and current 4.4.0 data together; optional cutscenes are a separate archive. Keep an original save backup; this patch has no save-redirection option.",
+      "online": "Offline mod · creator recommends Dolphin for performance",
+      "source": "https://gamebanana.com/mods/500469",
+      "extraSources": [
+        [
+          "https://lumasworkshop.com/mods/",
+          "Luma’s Workshop catalogue"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-brawl-galaxy/lillie.jpg",
+        "credit": "Camyoshi · creator screenshot"
+      },
+      "credit": "Camyoshi · creator screenshot",
+      "status": "ready",
+      "file": {
+        "name": "super_lillie_galaxy_v440_5c8ec.7z",
+        "version": "4.4.0",
+        "bytes": 42463692,
+        "sha256": "038e5c17ad363d6abb64a655eeea3f3cf08bcb0c5571ef1c84081c381775ffbc",
+        "sourceUrl": "https://gamebanana.com/dl/1771446",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-brawl-galaxy/super_lillie_galaxy_v440_5c8ec.7z",
+        "itemId": "wii-brawl-galaxy-super-lillie-galaxy",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Super Mario Galaxy",
+          "Mods"
+        ]
+      },
+      "format": "7z · Riivolution mod data",
+      "uncompressedBytes": 56733035,
+      "roots": [
+        "Lillie1",
+        "README.txt",
+        "riivolution"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/Super Lillie Galaxy.xml",
+          "discs": [
+            {
+              "game": "RMG"
+            }
+          ],
+          "regions": [
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "P"
+            },
+            {
+              "type": "K"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-green-stars",
+      "title": "SMG2: The New Green Stars V1.2",
+      "kind": "mod",
+      "version": "1.2",
+      "group": "Super Mario Galaxy 2",
+      "description": "More than 140 new or relocated green stars, including extra challenges in galaxies that originally had fewer. Version 1.2 adds Luigi support and fixes the final star.",
+      "requirements": "Original Super Mario Galaxy 2, Riivolution, homebrew Wii/vWii and SD. Preserve existing saves before using the supplied modified progress.",
+      "compatibility": "Creator says all regions; archived XML actually lists SB4 P/E/J/W, so K is not claimed here. The patch redirects saves with clone=false and supplies a 120-star starting save: it is not a continuation of your normal progress.",
+      "setup": "Open the ZIP’s outer SMG2 The New Green Stars folder. Copy its two INNER directories, riivolution and SMG2 The New Green Stars, directly to SD root. Keep the supplied SaveGame data with the mod and back up any existing mod SaveGame folder separately. In Riivolution set Play :) to Enabled, then Launch.",
+      "online": "Offline mod · no network multiplayer added",
+      "source": "https://gamebanana.com/mods/150989",
+      "image": {
+        "path": "/assets/images/wii-brawl-galaxy/green-stars.jpg",
+        "credit": "Laurozz · creator screenshot"
+      },
+      "credit": "Laurozz · creator screenshot",
+      "status": "ready",
+      "file": {
+        "name": "smg2_the_new_green_stars_v12_7eefb.zip",
+        "version": "1.2",
+        "bytes": 16081882,
+        "sha256": "3eb655c2342afdd4bc8b26538fa1ae10bd46d0ade7e257a7698eb7d17461b7b5",
+        "sourceUrl": "https://gamebanana.com/dl/624935",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-brawl-galaxy/smg2_the_new_green_stars_v12_7eefb.zip",
+        "itemId": "wii-brawl-galaxy-new-green-stars",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Super Mario Galaxy 2",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 16742188,
+      "roots": [
+        "SMG2 The New Green Stars"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "SMG2 The New Green Stars/riivolution/SMG2 The New Green Stars.xml",
+          "discs": [
+            {
+              "game": "SB4"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            },
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "W"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neo-mario-galaxy",
+      "title": "Neo Mario Galaxy",
+      "kind": "mod",
+      "version": "1.6.0",
+      "group": "Super Mario Galaxy 2",
+      "description": "An eight-galaxy adventure with 42 stars, custom music, Ice Flower and Red Star powers, and Normal or Daredevil difficulty.",
+      "requirements": "Original Super Mario Galaxy 2 disc, Wii or Wii U vWii homebrew, Riivolution 1.06, FAT-formatted SD with at least 96 MB free and a PC/phone to extract the ZIP.",
+      "compatibility": "Creator lists SB4P, SB4E, SB4J, SB4W and SB4K. Use the current 1.6.0 mod ZIP from the official folder; the optional Dolphin HD texture archive is separate.",
+      "setup": "Extract nmg_v1.6.0.zip and copy /nmg and /riivolution to SD root. Insert the Galaxy 2 disc, start Riivolution, enable Neo Mario Galaxy and disable other mods. Set a supported language override if needed, then Launch; choose Normal or Daredevil within the adventure. The XML redirects progress to /nmg/save/SB4<region> with clone=false, so preserve any existing mod save before updating.",
+      "online": "Offline mod · no network multiplayer added",
+      "source": "https://aurumsmods.com/nmg/",
+      "image": {
+        "path": "/assets/images/wii-brawl-galaxy/neo.webp",
+        "credit": "Aurum · Neo Mario Galaxy"
+      },
+      "credit": "Aurum · Neo Mario Galaxy",
+      "status": "ready",
+      "file": {
+        "name": "nmg_v1.6.0.zip",
+        "version": "1.6.0",
+        "bytes": 70237328,
+        "sha256": "78a432da16b00a6ab9215f13e33fbe93b7d069395cb17075a07eb54a223e11da",
+        "sourceUrl": "https://mega.nz/folder/xhcDWTzQ#sf7Iya2oNGqQ15LWnWYjWQ",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-brawl-galaxy-neo-mario-galaxy",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Super Mario Galaxy 2",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 82096793,
+      "roots": [
+        "nmg",
+        "riivolution"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/nmg-SB4E.xml",
+          "discs": [
+            {
+              "game": "SB4"
+            }
+          ],
+          "regions": [
+            {
+              "type": "E"
+            }
+          ]
+        },
+        {
+          "path": "riivolution/nmg-SB4J.xml",
+          "discs": [
+            {
+              "game": "SB4"
+            }
+          ],
+          "regions": [
+            {
+              "type": "J"
+            }
+          ]
+        },
+        {
+          "path": "riivolution/nmg-SB4K.xml",
+          "discs": [
+            {
+              "game": "SB4"
+            }
+          ],
+          "regions": [
+            {
+              "type": "K"
+            }
+          ]
+        },
+        {
+          "path": "riivolution/nmg-SB4P.xml",
+          "discs": [
+            {
+              "game": "SB4"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            }
+          ]
+        },
+        {
+          "path": "riivolution/nmg-SB4W.xml",
+          "discs": [
+            {
+              "game": "SB4"
+            }
+          ],
+          "regions": [
+            {
+              "type": "W"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

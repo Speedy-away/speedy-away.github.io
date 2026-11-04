@@ -1,0 +1,1059 @@
+{
+  "scope": "wii-games-online",
+  "checkedAt": "2026-11-02T10:20:14.924Z",
+  "entries": [
+    {
+      "id": "riivolution-mini",
+      "title": "Riivolution for Wii Mini",
+      "kind": "app",
+      "version": "v1.07",
+      "group": "Mod loaders",
+      "description": "A separate Riivolution build listed by Open Shop Channel for Wii Mini.",
+      "requirements": "A homebrew-enabled Wii Mini, compatible USB storage, retail disc and a mod that explicitly supports its own Mini/USB data route.",
+      "compatibility": "Wii Mini only for this listed package. A Mini-capable loader does not make Newer or CTGP SD-only packages compatible.",
+      "setup": "Copy apps/riivolution-mini to the USB root and keep the supplied boot.elf and metadata together. Follow the chosen mod’s USB/XML paths. OSC flags NAND-writing capability; do not install a shortcut simply to test a patch.",
+      "online": "A stock Mini lacks Wi-Fi; no online-support inference",
+      "source": "https://oscwii.org/library/app/riivolution-mini",
+      "credit": "Riivolution Mini contributors · supplied banner",
+      "status": "ready",
+      "file": {
+        "name": "riivolution-mini-v1.07.zip",
+        "version": "v1.07",
+        "bytes": 2139803,
+        "sha256": "d3d6fe4609857db21c82fb2de80e51b926f141b5ded4f0df6dc614ccd3c28f25",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/riivolution-mini/riivolution-mini.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/riivolution-mini-v1.07.zip",
+        "itemId": "wii-games-online-riivolution-mini",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Mod loaders"
+        ]
+      },
+      "format": "ZIP · Wii homebrew",
+      "uncompressedBytes": 2142672,
+      "roots": [
+        "apps"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/riivolution-mini/boot.elf",
+          "headerPassed": true,
+          "format": "ELF32 big-endian PowerPC"
+        }
+      ],
+      "patchSelectors": [],
+      "image": {
+        "path": "/assets/images/wii-games-online/riivolution-mini.png",
+        "credit": "Riivolution for Wii Mini project · supplied Homebrew Channel banner",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/riivolution-mini/riivolution-mini.zip",
+        "sha256": "bb96b657e47a48f22f97eb81bee735950a2d988867451797dc35682501620339"
+      }
+    },
+    {
+      "id": "wiilink-account-linker",
+      "title": "WiiLink Account Linker",
+      "kind": "app",
+      "version": "v2.1.0",
+      "group": "Online tools",
+      "description": "Link a console to WiiLink Accounts for services that require an account.",
+      "requirements": "Homebrew Channel, internet connectivity and a WiiLink account. Account creation and linking are actions you perform yourself.",
+      "compatibility": "OSC lists Wii / vWii / Mini. Service availability and actual networking still depend on console setup.",
+      "setup": "Copy apps/wiilink-account-linker to SD or compatible USB. Use it when the WiiLink guide asks you to link your console; follow its displayed account instructions.",
+      "online": "WiiLink Accounts",
+      "source": "https://oscwii.org/library/app/wiilink-account-linker",
+      "extraSources": [
+        [
+          "https://wiilink.ca/guide/",
+          "Account and service guides"
+        ]
+      ],
+      "credit": "WiiLink project · supplied banner",
+      "status": "ready",
+      "file": {
+        "name": "wiilink-account-linker-v2.1.0.zip",
+        "version": "v2.1.0",
+        "bytes": 1328780,
+        "sha256": "5b3552d2b6a236fff130aa039a10e036af840b2242a4b6ed80f8f24534697f1e",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiilink-account-linker/wiilink-account-linker.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/wiilink-account-linker-v2.1.0.zip",
+        "itemId": "wii-games-online-wiilink-account-linker",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Online tools"
+        ]
+      },
+      "format": "ZIP · Wii homebrew",
+      "uncompressedBytes": 2759882,
+      "roots": [
+        "apps"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/wiilink-account-linker/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        }
+      ],
+      "patchSelectors": [],
+      "image": {
+        "path": "/assets/images/wii-games-online/wiilink-account-linker.png",
+        "credit": "WiiLink Account Linker project · supplied Homebrew Channel banner",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiilink-account-linker/wiilink-account-linker.zip",
+        "sha256": "8d22ce375012efcbf39b173d13519fdabc606ab7f5b6c67b5339123cb0dc7dcd"
+      }
+    },
+    {
+      "id": "wiimmfipatcher",
+      "title": "Wiimmfi Patcher",
+      "kind": "app",
+      "version": "v0.7.5",
+      "group": "Online tools",
+      "description": "Patch a supported inserted retail disc at launch for Wiimmfi online play.",
+      "requirements": "Homebrew Channel, an internet connection and a Wiimmfi-supported retail disc. Check the live compatibility list for the game you want.",
+      "compatibility": "OSC lists Wii / vWii / Mini. A stock Mini has no normal network interface; the label alone does not provide connectivity.",
+      "setup": "Extract apps/wiimmfipatcher to SD or compatible USB, then launch the app in Homebrew Channel with your disc inserted. Let it patch and boot the game. This differs from the no-homebrew DNS route described above.",
+      "online": "Wiimmfi",
+      "source": "https://oscwii.org/library/app/wiimmfipatcher",
+      "extraSources": [
+        [
+          "https://wiimmfi.de/patcher/disc",
+          "Official disc patch guide"
+        ],
+        [
+          "https://wiimmfi.de/stat?all=1",
+          "Supported games / status"
+        ],
+        [
+          "https://wiimmfi.de/error",
+          "Wiimmfi error lookup"
+        ]
+      ],
+      "credit": "MrBean35000vr / Chadderz / Leseratte · supplied banner",
+      "status": "ready",
+      "file": {
+        "name": "wiimmfipatcher-v0.7.5.zip",
+        "version": "v0.7.5",
+        "bytes": 294461,
+        "sha256": "ba4569ac6de619d4501684d49345d305a465a22caacbea58d2f0c795c266d582",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiimmfipatcher/wiimmfipatcher.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/wiimmfipatcher-v0.7.5.zip",
+        "itemId": "wii-games-online-wiimmfipatcher",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Online tools"
+        ]
+      },
+      "format": "ZIP · Wii homebrew",
+      "uncompressedBytes": 571582,
+      "roots": [
+        "apps",
+        "readme.txt"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/wiimmfipatcher/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        }
+      ],
+      "patchSelectors": [],
+      "image": {
+        "path": "/assets/images/wii-games-online/wiimmfipatcher.png",
+        "credit": "Wiimmfi Patcher project · supplied Homebrew Channel banner",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiimmfipatcher/wiimmfipatcher.zip",
+        "sha256": "8c1470a887742b889677b044708efaaf469f380095705474d262435887c54b2f"
+      }
+    },
+    {
+      "id": "riivolution",
+      "title": "Riivolution",
+      "kind": "app",
+      "version": "v1.06",
+      "group": "Mod loaders",
+      "description": "Apply custom levels, textures, music and other patches to retail Wii discs at launch.",
+      "requirements": "Homebrew Channel on Wii or vWii, your retail disc, and matching mod XML/data. The project documents an updated IOS37 on original Wii; use model-specific instructions for vWii rather than a stock-Wii IOS installer.",
+      "compatibility": "Standard v1.06 is for Wii and vWii. The Wii Mini build is listed separately.",
+      "setup": "Copy apps/riivolution to the storage root. Mod XML files normally go in /riivolution; keep mod data at the paths specified inside that XML. Start Riivolution, select the intended patch and launch the disc. Installing a System Menu shortcut is optional.",
+      "online": "Depends on the selected mod",
+      "source": "https://riivolution.github.io/wiki/Riivolution/",
+      "extraSources": [
+        [
+          "https://oscwii.org/library/app/riivolution",
+          "OSC package and models"
+        ]
+      ],
+      "credit": "Riivolution project · supplied banner",
+      "status": "ready",
+      "file": {
+        "name": "riivolution-v1.06.zip",
+        "version": "v1.06",
+        "bytes": 1990601,
+        "sha256": "74f4014cdd490cbb18c77f5b1d75fd01ec6a7d7a2bd9e9127ce977ef0416243f",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/riivolution/riivolution.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/riivolution-v1.06.zip",
+        "itemId": "wii-games-online-riivolution",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Mod loaders"
+        ]
+      },
+      "format": "ZIP · Wii homebrew",
+      "uncompressedBytes": 1993268,
+      "roots": [
+        "apps"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/riivolution/boot.elf",
+          "headerPassed": true,
+          "format": "ELF32 big-endian PowerPC"
+        }
+      ],
+      "patchSelectors": [],
+      "image": {
+        "path": "/assets/images/wii-games-online/riivolution.png",
+        "credit": "Riivolution project · supplied Homebrew Channel banner",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/riivolution/riivolution.zip",
+        "sha256": "bb96b657e47a48f22f97eb81bee735950a2d988867451797dc35682501620339"
+      }
+    },
+    {
+      "id": "mail-patcher",
+      "title": "WiiLink Mail Patcher",
+      "kind": "app",
+      "version": "2.2.2",
+      "group": "Online tools",
+      "description": "Configure the Wii’s mail files for WiiLink Message Board services.",
+      "requirements": "A homebrew-enabled console, networking and the current model-specific WiiLink guide. This is not a game-multiplayer patcher.",
+      "compatibility": "OSC lists Wii / vWii / Mini, but each model has different channel/service requirements. This tool changes console configuration.",
+      "setup": "Copy apps/Mail-Patcher to SD or compatible USB and retain meta.xml. Follow the WiiLink installation guide for your model before running it; keep a console backup as documented there.",
+      "online": "WiiLink Message Board",
+      "source": "https://oscwii.org/library/app/Mail-Patcher",
+      "extraSources": [
+        [
+          "https://wiilink.ca/guide/install/",
+          "WiiLink installation guide"
+        ]
+      ],
+      "credit": "WiiLink project · supplied banner",
+      "status": "ready",
+      "file": {
+        "name": "Mail-Patcher-2.2.2.zip",
+        "version": "2.2.2",
+        "bytes": 587887,
+        "sha256": "595bc899eb02d76851e9ab1c19b4c975fda4aba32486144a980f156f626e6aca",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/Mail-Patcher/Mail-Patcher.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/Mail-Patcher-2.2.2.zip",
+        "itemId": "wii-games-online-mail-patcher",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Online tools"
+        ]
+      },
+      "format": "ZIP · Wii homebrew",
+      "uncompressedBytes": 1258793,
+      "roots": [
+        "apps"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/Mail-Patcher/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        }
+      ],
+      "patchSelectors": [],
+      "image": {
+        "path": "/assets/images/wii-games-online/mail-patcher.png",
+        "credit": "WiiLink Mail Patcher project · supplied Homebrew Channel banner",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/Mail-Patcher/Mail-Patcher.zip",
+        "sha256": "600f9a22608e156662a463b19d8fa621e12a22e9885d362f096aa439822dbe20"
+      }
+    },
+    {
+      "id": "wiilink-wfc-patcher",
+      "title": "WiiLink WFC Patcher",
+      "kind": "app",
+      "version": "0.7",
+      "group": "Online tools",
+      "description": "A native disc auto-patcher for WiiLink WFC multiplayer servers.",
+      "requirements": "A homebrew-enabled Wii with an internet connection and a supported retail disc. Check the service’s game list.",
+      "compatibility": "This specific OSC package lists Wii only. Do not infer vWii or Mini support from a different service guide.",
+      "setup": "Copy apps/WiiLink-WFC-Patcher to SD or compatible USB. Launch it in Homebrew Channel with the disc inserted. WiiLink WFC and Wiimmfi are different servers, so friends need the same service.",
+      "online": "WiiLink WFC",
+      "source": "https://oscwii.org/library/app/WiiLink-WFC-Patcher",
+      "extraSources": [
+        [
+          "https://wfc.wiilink.ca/",
+          "Game support and status"
+        ]
+      ],
+      "credit": "WiiLink WFC project · supplied banner",
+      "status": "ready",
+      "file": {
+        "name": "WiiLink-WFC-Patcher-0.7.zip",
+        "version": "0.7",
+        "bytes": 226239,
+        "sha256": "348007ae80cd98ccc8e7b45a92c48103378dc094ed8049ae1044ddf22eefccc8",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/WiiLink-WFC-Patcher/WiiLink-WFC-Patcher.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/WiiLink-WFC-Patcher-0.7.zip",
+        "itemId": "wii-games-online-wiilink-wfc-patcher",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Online tools"
+        ]
+      },
+      "format": "ZIP · Wii homebrew",
+      "uncompressedBytes": 451311,
+      "roots": [
+        "apps"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/WiiLink-WFC-Patcher/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        }
+      ],
+      "patchSelectors": [],
+      "image": {
+        "path": "/assets/images/wii-games-online/wiilink-wfc-patcher.png",
+        "credit": "WiiLink WFC Patcher project · supplied Homebrew Channel banner",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/WiiLink-WFC-Patcher/WiiLink-WFC-Patcher.zip",
+        "sha256": "625428aebeb0f56bfab652f057b5e6e472b16acf021d16ec244f49b468f8b559"
+      }
+    },
+    {
+      "id": "wiilink-desktop",
+      "title": "WiiLink Patcher · Windows x64",
+      "kind": "windows-helper",
+      "version": "v3.0.0",
+      "group": "Desktop helpers",
+      "description": "The separate command-line WiiLink patcher for Windows x64, retained as a CLI alternative.",
+      "requirements": "A compatible Windows x64 PC, internet connection and SD/USB access. This EXE runs on a PC, not on the Wii.",
+      "compatibility": "CLI v3.0.0 from the original patcher repository. The newer GUI is a separate project with its own version numbering.",
+      "setup": "Save the helper on your PC and follow its own release instructions. Select the actual console model, region, language and output device. Keep generated channel files separate from the helper executable.",
+      "online": "WiiLink channel setup",
+      "source": "https://github.com/WiiLink24/WiiLink24-Patcher/releases/tag/v3.0.0",
+      "extraSources": [
+        [
+          "https://wiilink.ca/guide/patcher/",
+          "Current guide and GUI alternative"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-games-online/wiilink.webp",
+        "credit": "WiiLink"
+      },
+      "credit": "WiiLink",
+      "status": "ready",
+      "file": {
+        "name": "WiiLinkPatcher_Windows-x64_v300.exe",
+        "version": "v3.0.0",
+        "bytes": 12725427,
+        "sha256": "fd2ef171f83db0375ea28c040c11a0168756f08f64bc4c5fd28e5b821f10d4e8",
+        "sourceUrl": "https://github.com/WiiLink24/WiiLink24-Patcher/releases/download/v3.0.0/WiiLinkPatcher_Windows-x64_v300.exe",
+        "archiveRole": [
+          "Helpers",
+          "Windows"
+        ],
+        "local": "/downloads/wii-games-online/WiiLinkPatcher_Windows-x64_v300.exe",
+        "itemId": "wii-games-online-wiilink-desktop",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Desktop helpers"
+        ]
+      },
+      "format": "PE x64 · Windows helper"
+    },
+    {
+      "id": "ctgp-revolution",
+      "title": "CTGP Revolution",
+      "kind": "mod",
+      "version": "1.03.1190 all-inclusive",
+      "group": "Mario Kart Wii",
+      "description": "Custom tracks, time-trial features and Wiimmfi racing through CTGP Revolution.",
+      "requirements": "A working Mario Kart Wii retail disc, Wii or Wii U vWii, Homebrew Channel and an SD card. The official download page specifies at least 768 MB; this newer all-inclusive package is larger, so allow the unpacked size below plus update space.",
+      "compatibility": "PAL / NTSC-U / NTSC-J discs. Korean discs are excluded by the project. Wii Mini and Dolphin are not offered for this package.",
+      "setup": "Extract the complete package to the SD root and launch its CTGP app through Homebrew Channel with the disc inserted. Preserve the supplied ctgpr, apps and riivolution structure. Use the CTGP updater before online play; back up existing CTGP settings and My Stuff first.",
+      "online": "Wiimmfi · built into CTGP",
+      "source": "https://www.chadsoft.co.uk/download/",
+      "extraSources": [
+        [
+          "https://www.chadsoft.co.uk/install-guide/",
+          "CTGP installation"
+        ],
+        [
+          "https://www.chadsoft.co.uk/download/updates.html",
+          "CTGP update notes"
+        ],
+        [
+          "https://chadsoft.co.uk/ctgp_bot/",
+          "Project disc-region requirements"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-games-online/ctgp.png",
+        "credit": "CTGP Revolution / ChadSoft"
+      },
+      "credit": "CTGP Revolution / ChadSoft",
+      "status": "ready",
+      "file": {
+        "name": "CTGP-R v1.03.1190 All Inclusive.zip",
+        "version": "1.03.1190 all-inclusive",
+        "bytes": 1003926952,
+        "sha256": "98426d1bfdb20620b0b7c027fb392a281810dd6d27ae964b62cbf02a7de2be89",
+        "sourceUrl": "https://mega.nz/file/Ae4xWKaY#guxkfuaYnaAof5awsJxje0N_qsRO-fjKwRJ9BkA3vYc",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-games-online-ctgp-revolution",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Mario Kart Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · mod data + Wii launcher",
+      "uncompressedBytes": 1009879363,
+      "roots": [
+        "apps",
+        "boot.elf",
+        "ctgpr",
+        "licenses.txt",
+        "readme.txt",
+        "riivolution"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/ctgpr/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        }
+      ],
+      "patchSelectors": [
+        {
+          "path": "riivolution/mkwiiriivoslottest.xml",
+          "discs": [
+            {
+              "game": "RMC",
+              "disc": "0",
+              "version": "0"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            }
+          ]
+        },
+        {
+          "path": "riivolution/mkwiiriivoslottestnstcj.xml",
+          "discs": [
+            {
+              "game": "RMC",
+              "disc": "0",
+              "version": "0"
+            }
+          ],
+          "regions": [
+            {
+              "type": "J"
+            }
+          ]
+        },
+        {
+          "path": "riivolution/mkwiiriivoslottestnstcu.xml",
+          "discs": [
+            {
+              "game": "RMC",
+              "disc": "0",
+              "version": "0"
+            }
+          ],
+          "regions": [
+            {
+              "type": "E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "newer-smbw",
+      "title": "Newer Super Mario Bros. Wii",
+      "kind": "mod",
+      "version": "1.30",
+      "group": "New Super Mario Bros. Wii",
+      "description": "Newer Team’s full-length New Super Mario Bros. Wii mod with new worlds, levels and features.",
+      "requirements": "A retail New Super Mario Bros. Wii disc, Wii or Wii U vWii, FAT/FAT32 SD storage and Riivolution. The official guide excludes Wii Mini.",
+      "compatibility": "Use only the disc region and revision accepted by the included XML. The package’s exact game/region selectors appear below. Newer is a Wii disc mod, separate from the DS and Wii U games.",
+      "setup": "Copy NewerSMBW and riivolution to the SD root; put the Riivolution app in apps/riivolution. Launch Riivolution from Homebrew Channel, insert your disc, enable Newer and disable competing game patches. Follow the project’s vWii exit note.",
+      "online": "Local game mod · no online multiplayer claim",
+      "source": "https://newerteam.com/wii/download.html",
+      "extraSources": [
+        [
+          "https://newerteam.com/wii/help/ihashomebrew.html",
+          "Homebrew Channel installation"
+        ],
+        [
+          "https://newerteam.com/wii/help/reque.html",
+          "Requirements and Mini exclusion"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-games-online/newer.png",
+        "credit": "Newer Team"
+      },
+      "credit": "Newer Team",
+      "status": "ready",
+      "file": {
+        "name": "Newer_W_1.30.zip",
+        "version": "1.30",
+        "bytes": 496257877,
+        "sha256": "948336a3a111de3094452abbe0c11f702544b1db325c010561c0c3242d088220",
+        "sourceUrl": "https://mega.nz/file/eugETbRb#1ehlOokX_lLtIwjlzJQgsklGKMlVcWQhfHtCNjZkgOw",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-games-online-newer-smbw",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "New Super Mario Bros. Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 586268934,
+      "roots": [
+        "Install instructions.url",
+        "NewerSMBW",
+        "riivolution"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/NewerSMBW.xml",
+          "discs": [
+            {
+              "game": "SMN"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            },
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "K"
+            },
+            {
+              "type": "W"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "falling-leaf",
+      "title": "Newer Falling Leaf",
+      "kind": "mod",
+      "version": "1.12",
+      "group": "New Super Mario Bros. Wii",
+      "description": "An autumn-themed Newer special featuring eight new levels.",
+      "requirements": "New Super Mario Bros. Wii retail disc, SD card, and a compatible Riivolution setup. Keep this special separate from the full Newer installation.",
+      "compatibility": "Wii / vWii SD route. Region and revision restrictions come from the included Riivolution XML; no Mini compatibility is inferred.",
+      "setup": "Extract the supplied mod-data folder and riivolution directory to the SD root. Enable this special’s option in Riivolution with the correct disc inserted. Disable other NSMBW overhaul patches.",
+      "online": "Local game mod",
+      "source": "https://newerteam.com/wii/specials.html",
+      "image": {
+        "path": "/assets/images/wii-games-online/falling-leaf.png",
+        "credit": "Newer Team"
+      },
+      "credit": "Newer Team",
+      "status": "ready",
+      "file": {
+        "name": "Newer_Falling_Leaf_1.12.zip",
+        "version": "1.12",
+        "bytes": 149915067,
+        "sha256": "3c77287b95e1ad5c95ccce39e711ddf56b5e2e8de94ffe34d5f18b654d9037ee",
+        "sourceUrl": "https://mega.nz/#!a2ZXTRgA!aWQ2JkrUpXiUfpx-gTpjw0WjI5EajitnqkQR8aW6x28",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-games-online-falling-leaf",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "New Super Mario Bros. Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 171326068,
+      "roots": [
+        "NewerFL",
+        "riivolution"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/NewerFALLING.xml",
+          "discs": [
+            {
+              "game": "SMN"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            },
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "K"
+            },
+            {
+              "type": "W"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summer-sun",
+      "title": "Newer Summer Sun",
+      "kind": "mod",
+      "version": "1.12",
+      "group": "New Super Mario Bros. Wii",
+      "description": "A Newer summer adventure with 23 levels and its own music.",
+      "requirements": "New Super Mario Bros. Wii retail disc, SD card and Riivolution. This download is the mod package, not the separate soundtrack.",
+      "compatibility": "Wii / vWii SD route; use the region selectors from this package’s XML. Do not reuse another special’s XML or data folder.",
+      "setup": "Copy the supplied data and riivolution folders to the SD root. Launch Riivolution, enable Summer Sun for your disc and disable other competing NSMBW patches.",
+      "online": "Local game mod",
+      "source": "https://newerteam.com/wii/specials.html",
+      "image": {
+        "path": "/assets/images/wii-games-online/summer-sun.png",
+        "credit": "Newer Team"
+      },
+      "credit": "Newer Team",
+      "status": "ready",
+      "file": {
+        "name": "Newer_Summer_Sun_1.12.zip",
+        "version": "1.12",
+        "bytes": 131888515,
+        "sha256": "6027aa8e211b126beffb7c8130e45d16ec336557fdcea3ebe4691eb3faefa2de",
+        "sourceUrl": "https://mega.nz/#!S2gxSQJK!EnzSuFO3d0LtjN9gEv6jzykwGB-yRvDha3w_iWk6mNk",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-games-online-summer-sun",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "New Super Mario Bros. Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 147461692,
+      "roots": [
+        "Readme.txt",
+        "SumSun",
+        "riivolution"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/SumSun.xml",
+          "discs": [
+            {
+              "game": "SMN"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            },
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "K"
+            },
+            {
+              "type": "W"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "holiday-special",
+      "title": "Newer Holiday Special",
+      "kind": "mod",
+      "version": "1.12",
+      "group": "New Super Mario Bros. Wii",
+      "description": "A winter Newer special with eight levels and seasonal textures and music.",
+      "requirements": "New Super Mario Bros. Wii retail disc, SD card and Riivolution. Use the game download rather than its separate soundtrack.",
+      "compatibility": "Wii / vWii SD route, subject to the included XML’s disc-region and revision selectors. Mini support is not claimed.",
+      "setup": "Extract the full mod package to SD, keeping its data and riivolution folders. Enable Holiday Special and turn off other NSMBW overhaul patches before launch.",
+      "online": "Local game mod",
+      "source": "https://newerteam.com/wii/specials.html",
+      "image": {
+        "path": "/assets/images/wii-games-online/holiday-special.png",
+        "credit": "Newer Team"
+      },
+      "credit": "Newer Team",
+      "status": "ready",
+      "file": {
+        "name": "Newer_W_Holiday_Special_1.12.zip",
+        "version": "1.12",
+        "bytes": 68818998,
+        "sha256": "66594cefe80859fc6326ba8174eaca22496ec30f24560a89dd12f5a6c2ed483b",
+        "sourceUrl": "https://mega.nz/#!T2IGCTDb!1fW9TSvsBqEuJq5Qjvh-4roAaWZ0Scx5HwPZe_mWqkU",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-games-online-holiday-special",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "New Super Mario Bros. Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 72974241,
+      "roots": [
+        "Info.txt",
+        "XmasNewer",
+        "riivolution"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/XmasNewer.xml",
+          "discs": [
+            {
+              "game": "SMN"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            },
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "K"
+            },
+            {
+              "type": "W"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "another-smbw",
+      "title": "Another Super Mario Bros. Wii",
+      "kind": "mod",
+      "version": "3.2",
+      "group": "New Super Mario Bros. Wii",
+      "description": "Skawo’s alternate set of levels using the original game’s world themes.",
+      "requirements": "New Super Mario Bros. Wii retail disc, SD card and Riivolution. This is Another Super Mario Bros. Wii, not the full Newer campaign.",
+      "compatibility": "Wii / vWii SD route; exact disc matching is governed by its own XML. No Wii Mini compatibility is assumed.",
+      "setup": "Copy the archive’s complete data and riivolution folders to SD root. Select its option in Riivolution, insert the matching disc, and disable other NSMBW level packs.",
+      "online": "Local game mod",
+      "source": "https://newerteam.com/wii/specials.html",
+      "image": {
+        "path": "/assets/images/wii-games-online/another-smbw.png",
+        "credit": "Newer Team"
+      },
+      "credit": "Newer Team",
+      "status": "ready",
+      "file": {
+        "name": "Another_W_3.2.zip",
+        "version": "3.2",
+        "bytes": 45608228,
+        "sha256": "e4e24be445880eb2ba315f3de03af637e472cae3bdea7995997ed41048eec308",
+        "sourceUrl": "https://mega.nz/#!vnZVFSoB!d82zukoZ7zgiYICJZKFoNM4te6t6yOxOXn17xTg4qrs",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/another-smbw.zip",
+        "itemId": "wii-games-online-another-smbw",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "New Super Mario Bros. Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · Riivolution mod data",
+      "uncompressedBytes": 48219506,
+      "roots": [
+        "Another",
+        "riivolution"
+      ],
+      "bootFiles": [],
+      "patchSelectors": [
+        {
+          "path": "riivolution/Another.xml",
+          "discs": [
+            {
+              "game": "SMN"
+            }
+          ],
+          "regions": [
+            {
+              "type": "P"
+            },
+            {
+              "type": "E"
+            },
+            {
+              "type": "J"
+            },
+            {
+              "type": "K"
+            },
+            {
+              "type": "W"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mkw-sp",
+      "title": "Mario Kart Wii Service Pack",
+      "kind": "mod",
+      "version": "v0.1.12",
+      "group": "Mario Kart Wii",
+      "description": "Mario Kart Wii Service Pack adds practice, ghost, HUD and quality-of-life features.",
+      "requirements": "Your Mario Kart Wii game disc and a homebrew-enabled console. Preserve your existing saves and My Stuff separately before installing this distinct mod.",
+      "compatibility": "Wii and vWii. The project supports the four retail region versions, including NTSC-K; select the appropriate disc. Most Gecko codes are incompatible with its altered memory map.",
+      "setup": "Extract the complete ZIP to the storage root. Launch /apps/mkw-sp/boot.dol through Homebrew Channel and retain any mkw-sp data directory created by the app. This build is a standalone app rather than a Riivolution XML pack.",
+      "online": "Practice / local features · do not assume CTGP or Wiimmfi parity",
+      "source": "https://mkw-sp.com/download/",
+      "extraSources": [
+        [
+          "https://mkw-sp.com/features/",
+          "Features and known limits"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-games-online/mkw-sp.png",
+        "credit": "MKW-SP project · official 11-ghosts screenshot"
+      },
+      "credit": "MKW-SP project · official 11-ghosts screenshot",
+      "status": "ready",
+      "file": {
+        "name": "mkw-sp-v0.1.12.zip",
+        "version": "v0.1.12",
+        "bytes": 4366987,
+        "sha256": "8cc60bcc9e7d781ef727a4013e3b54e414fd2325ec7797c8d8cdee438e65fe96",
+        "sourceUrl": "https://github.com/mkw-sp/mkw-sp/releases/download/v0.1.12/mkw-sp-v0.1.12.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-games-online/mkw-sp-v0.1.12.zip",
+        "itemId": "wii-games-online-mkw-sp",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Mario Kart Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · standalone Wii DOL",
+      "uncompressedBytes": 4434907,
+      "roots": [
+        "apps"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/mkw-sp/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        }
+      ],
+      "patchSelectors": []
+    },
+    {
+      "id": "wiilink-gui",
+      "title": "WiiLink GUI Patcher · Windows x64",
+      "kind": "windows-helper",
+      "version": "v1.5.3",
+      "group": "Desktop helpers",
+      "description": "The graphical WiiLink patcher downloads and prepares supported channel-service files.",
+      "requirements": "Windows 10 version 1809 or newer on x64, an internet connection and SD/USB access. The download is a Windows helper, not a Wii executable.",
+      "compatibility": "GUI v1.5.3; console model, region and language must be selected in the patcher. Native Wii, vWii and Dolphin setup paths are distinct.",
+      "setup": "Save the EXE on the PC. In the patcher select the correct model, channel region/language and output folder, then follow the WiiLink guide for installation. Do not install stock Wii channel/IOS files on vWii.",
+      "online": "WiiLink channel setup",
+      "source": "https://github.com/WiiLink24/WiiLink-Patcher-GUI/releases/tag/v1.5.3",
+      "extraSources": [
+        [
+          "https://wiilink.ca/guide/patcher/",
+          "Official patcher setup"
+        ]
+      ],
+      "image": {
+        "path": "/assets/images/wii-games-online/wiilink.webp",
+        "credit": "WiiLink"
+      },
+      "credit": "WiiLink",
+      "status": "ready",
+      "file": {
+        "name": "WiiLinkPatcherGUI-Windows-onefile-x64.exe",
+        "version": "v1.5.3",
+        "bytes": 27562328,
+        "sha256": "37d685b02f5bb06904043a21d25687401f751d665864ff4537baebe7b1a669bc",
+        "sourceUrl": "https://github.com/WiiLink24/WiiLink-Patcher-GUI/releases/download/v1.5.3/WiiLinkPatcherGUI-Windows-onefile-x64.exe",
+        "archiveRole": [
+          "Helpers",
+          "Windows"
+        ],
+        "local": "/downloads/wii-games-online/WiiLinkPatcherGUI-Windows-onefile-x64.exe",
+        "itemId": "wii-games-online-wiilink-gui",
+        "platform": "Wii",
+        "category": [
+          "Tools",
+          "Desktop helpers"
+        ]
+      },
+      "format": "PE x64 · Windows helper"
+    },
+    {
+      "id": "retro-rewind",
+      "title": "Retro Rewind",
+      "kind": "mod",
+      "version": "6.13.4",
+      "group": "Mario Kart Wii",
+      "description": "A large custom-track distribution with its own launcher, updater and Retro WFC online service.",
+      "requirements": "A working Mario Kart Wii disc, SD storage with space for the full unpacked distribution, and homebrew access on Wii or vWii. This is the full installation, not the one-version update archive.",
+      "compatibility": "PAL / NTSC-U / NTSC-J. Keep the supplied region payloads together. This console package is distinct from the Dolphin Wheel Wizard launcher and Wii U Menu forwarder.",
+      "setup": "Extract the full ZIP to SD root, keeping RetroRewind6, riivolution and apps together. Launch /apps/RetroRewind/boot.dol in Homebrew Channel. The bundled RetroRewind.wad and RetroRewindVWii.wad are optional model-specific shortcuts, not required for this HBC route; do not interchange them. Preserve custom assets and saves before updating.",
+      "online": "Retro WFC · separate from Wiimmfi",
+      "source": "https://mkwiiki.org/wiki/Retro_Rewind",
+      "extraSources": [
+        [
+          "https://github.com/Retro-Rewind-Team/rr-launcher",
+          "Official launcher project"
+        ],
+        [
+          "https://status.rwfc.net/",
+          "Retro WFC service status"
+        ]
+      ],
+      "credit": "Retro Rewind team / ZPL · supplied banner",
+      "status": "ready",
+      "file": {
+        "name": "RetroRewind-6.13.4-full.zip",
+        "version": "6.13.4",
+        "bytes": 1939356115,
+        "sha256": "586b929de36018e5fc3f7ee73b0aba407730d38470d7a54b8a455dca14be7002",
+        "sourceUrl": "https://cdn.update.rwfc.net/RetroRewind/zip/6.13.4-full.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "itemId": "wii-games-online-retro-rewind",
+        "platform": "Wii",
+        "category": [
+          "Games",
+          "Mario Kart Wii",
+          "Mods"
+        ]
+      },
+      "format": "ZIP · mod data + Wii launcher",
+      "uncompressedBytes": 2203007239,
+      "roots": [
+        "RetroRewind.wad",
+        "RetroRewind6",
+        "RetroRewindChannel",
+        "RetroRewindVWii.wad",
+        "apps",
+        "riivolution"
+      ],
+      "bootFiles": [
+        {
+          "path": "apps/RetroRewind/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        },
+        {
+          "path": "apps/riivolution/boot.elf",
+          "headerPassed": true,
+          "format": "ELF32 big-endian PowerPC"
+        },
+        {
+          "path": "apps/yawmME/boot.dol",
+          "headerPassed": true,
+          "format": "DOL"
+        }
+      ],
+      "patchSelectors": [
+        {
+          "path": "riivolution/RetroRewind6.xml",
+          "discs": [
+            {
+              "game": "RMC"
+            }
+          ],
+          "regions": []
+        }
+      ],
+      "image": {
+        "path": "/assets/images/wii-games-online/retro-rewind.png",
+        "credit": "Retro Rewind project · supplied Homebrew Channel banner",
+        "sourceUrl": "https://cdn.update.rwfc.net/RetroRewind/zip/6.13.4-full.zip",
+        "sha256": "22e18a0e053b5e77130ffe033da990147a9f2fc396e78d8687653b09058b7430"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3098 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T12:29:08.666Z",
+  "scope": "Audit-only exact-action capability map. The live UI must still use its source catalogue and source-defined prerequisites. This file grants no new transports or firmware compatibility.",
+  "sourceCatalogueHashes": {
+    "docs/host-actions-ps4.json": "c7eb3b96a35fdf3452f8521114026e0af0bf1e4d95eaacf5ed4ec292d4d54fcc",
+    "docs/host-actions-ps5.json": "be076abca320f279d24be956cbbed8710489aceeec76beb30d18a377ea02ae81",
+    "docs/host-game-actions.json": "377e64dbaf6fdab206781d587e2f6462e982080d0e139273fb947e3d4655e6bd",
+    "docs/host-modern-plugin-actions.json": "325d883a42555cb883b2675ae10d4744a5b9328e0520644c4419383ccb0ff27b",
+    "docs/host-current-cheat-actions.json": "abaf32a139df27da0be719f7197441694a342ba05340c0a7662054d62038b8b8",
+    "docs/host-legacy-menu-actions.json": "9a421ff0c79c292f5a7c6673b0e17b98b5626f1c954ff51df165f4c7bd1cc9b5",
+    "docs/host-extra-game-actions.json": "906cebfecc1d43895fab707a5f1ceec3b374d9b682ca3ccf9adfb2934d9e502d"
+  },
+  "definitions": {
+    "integrated-load": {
+      "canOfferNetworkLoad": true,
+      "sourceVerified": true,
+      "hardwareTested": false,
+      "meaning": "The existing exact-file action has a source-backed network transport. A successful send is not proof that a menu appeared in the game.",
+      "preserve": [
+        "platform",
+        "firmwares",
+        "gameVersion",
+        "titleIds",
+        "sha256",
+        "run"
+      ],
+      "requirements": "Use the exact action prerequisites, running compatible loader and configured target address. Do not expand support from the file extension."
+    },
+    "native-game-plugin": {
+      "canOfferNetworkLoad": false,
+      "reason": "native-plugin-install-and-game-launch",
+      "sources": [
+        "goldhenPluginLoader",
+        "goldhenPluginInstructions",
+        "goldhenPluginStates"
+      ],
+      "workflow": "Install the complete matching support files, preserve the existing plugins.ini, enable only the title-matched plugin and launch the exact game build. A replacement-only PRX is not a complete first installation.",
+      "integrationLimit": "No source-backed public HTTP PRX/SPRX launch endpoint was established. Download must not be renamed to Load; do not send a game module to a raw BIN or ELF listener."
+    },
+    "native-cheat-manager": {
+      "canOfferNetworkLoad": false,
+      "reason": "native-cheat-data-enable",
+      "sources": [
+        "goldhenCheats",
+        "etahenCheats"
+      ],
+      "workflow": "Save the exact title/update definition to the documented native-manager directory, open the matching game and enable the desired cheats in its console menu.",
+      "integrationLimit": "MC4/JSON definitions are data. No generic BIN/ELF Load operation applies."
+    },
+    "original-host-payload": {
+      "canOfferNetworkLoad": false,
+      "reason": "exact-file-direct-protocol-not-established",
+      "sources": [
+        "nazkyHTTP"
+      ],
+      "workflow": "Download the preserved ready BIN or use its separately labelled original host.",
+      "integrationLimit": "No matching direct HTTP mapping for this exact source variant and game pin. An external-host URL must not masquerade as an integrated Load button."
+    },
+    "original-host-page": {
+      "canOfferNetworkLoad": false,
+      "reason": "external-page-not-integrated",
+      "workflow": "Open the credited original site. A locally implemented bootstrap requires separately reviewed assets, exact firmware pins and a real loader.",
+      "integrationLimit": "Navigating to a host is not built-in payload execution."
+    },
+    "initial-loader-bootstrap": {
+      "canOfferNetworkLoad": false,
+      "reason": "initial-loader-stage-required",
+      "sources": [
+        "elfldr"
+      ],
+      "workflow": "Follow the selected exploit initial basic-loader instructions before using the persistent 9021 loader. Initial 9020 and persistent 9021 are distinct stages.",
+      "integrationLimit": "The catalogue has no run method for this bootstrap action; do not invent one from ELF extension alone."
+    },
+    "game-save-bootstrap": {
+      "canOfferNetworkLoad": false,
+      "reason": "account-and-game-save-bootstrap",
+      "workflow": "Follow the exact game-save loader instructions, account-matched save and game requirements.",
+      "integrationLimit": "This is not a web page that automatically runs a Lua script. Do not alias the separate Lua sender or save installation to raw ELF/BIN Load."
+    }
+  },
+  "protocols": {
+    "goldhen-http": {
+      "actionCount": 13,
+      "targetPlatform": "ps4",
+      "port": 9090,
+      "request": "Check /status for status=ready, then POST unchanged ArrayBuffer to /. Original Nazky source uses POST for loopback status and GET for remote address status.",
+      "prerequisites": [
+        "Exact curated BIN and PS4 firmware 9.00 source pin",
+        "GoldHEN HTTP BinLoader enabled and ready",
+        "Correct exact GTA V/RDR2 game update; retain all existing action requirements"
+      ],
+      "sources": [
+        "nazkyHTTP"
+      ],
+      "limits": [
+        "HTTP acceptance is not in-game success.",
+        "Do not replace a failed status/readiness check with silent external-host navigation.",
+        "Raw TCP and HTTP are distinct protocols even if both use port 9090."
+      ]
+    },
+    "elf-tcp": {
+      "actionCount": 2,
+      "targetPlatform": "ps4",
+      "port": 9021,
+      "request": "A paired local sender transmits unchanged verified ELF bytes over TCP to an already running compatible elfldr.",
+      "prerequisites": [
+        "PS4-specific ELF",
+        "Compatible PS4 elfldr already running and listening on TCP 9021",
+        "Paired sender; browser JavaScript has no raw TCP socket"
+      ],
+      "sources": [
+        "elfldr"
+      ],
+      "limits": [
+        "An ELF transfer is not evidence of service startup.",
+        "No numeric firmware range is inferred where the catalogue has none."
+      ]
+    },
+    "elf-http": {
+      "actionCount": 8,
+      "targetPlatform": "ps5",
+      "port": 9021,
+      "request": "The existing direct action opens the documented elfldr URI-fetch request; the paired sender can instead send verified local ELF bytes.",
+      "prerequisites": [
+        "Already jailbroken compatible PS5 with persistent elfldr",
+        "ELF URL reachable from the console; localhost desktop URL is not a console URL",
+        "Remote TCP requires a LAN-bound listener; loopback-only autoloaders need the native local manager"
+      ],
+      "sources": [
+        "elfldr"
+      ],
+      "limits": [
+        "HTTP 200 precedes downloading/spawning and does not prove payload success.",
+        "PS5 Payload Manager service on 8084 is separate and restricts browser origins."
+      ]
+    }
+  },
+  "counts": {
+    "actions": 133,
+    "capabilities": {
+      "original-host-page": 36,
+      "integrated-load": 23,
+      "game-save-bootstrap": 2,
+      "initial-loader-bootstrap": 1,
+      "original-host-payload": 14,
+      "native-game-plugin": 11,
+      "native-cheat-manager": 46
+    },
+    "protocols": {
+      "elf-tcp": 2,
+      "elf-http": 8,
+      "goldhen-http": 13
+    }
+  },
+  "actions": [
+    {
+      "id": "gamerhack-g2all",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "GamerHack · 7.00–13.52",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "exactFileSource": "https://github.com/GamerHack/GamerHack.github.io"
+    },
+    {
+      "id": "karo-g2allpro",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo G2AllPro · through 13.52",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-900-light",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 9.00 Light",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-900-manual",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 9.00 Manual",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-900-new",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 9.00 PSFree",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-900-goldhen",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 9.00 GoldHEN",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-505",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 5.05",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-672",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 6.72",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "6.72"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-672-auto",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 6.72 Auto",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "6.72"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-702",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 7.02 PSFree",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "7.02"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-755",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · 7.55 PSFree",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "7.55"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-g2all",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Karo · PSFree + Lapse",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "karo-binloader-505",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "BIN Loader · 5.05",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05"
+      ],
+      "exactFileSource": "https://karo218.ir/binloader/index.html"
+    },
+    {
+      "id": "karo-binloader-672",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "BIN Loader · 6.72",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "6.72"
+      ],
+      "exactFileSource": "https://karo218.ir/binloader/index.html"
+    },
+    {
+      "id": "karo-binloader-702",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "BIN Loader · 7.02",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "7.02"
+      ],
+      "exactFileSource": "https://karo218.ir/binloader/index.html"
+    },
+    {
+      "id": "karo-binloader-755",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "BIN Loader · 7.55",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "7.55"
+      ],
+      "exactFileSource": "https://karo218.ir/binloader/index.html"
+    },
+    {
+      "id": "kme-900-fontface",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Kameleon · 9.00 FontFaceSet",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "kme-900-psfree-auto",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Kameleon · 9.00 PSFree Auto",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "kme-900-psfree-manual",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Kameleon · 9.00 PSFree Manual",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "kme-900-phive",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Kameleon · 9.00 PS-PHIVE v4",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "kme-psfree-lapse",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Kameleon · PSFree-Lapse",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "kme-prb",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Kameleon · PRB Essential",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05",
+        "6.72",
+        "9.00"
+      ],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "wrozen-phwoar",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "PS-Phwoar! · 5.05",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05"
+      ],
+      "exactFileSource": "https://wrozen.com/"
+    },
+    {
+      "id": "wrozen-xproject",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "X-Project · 5.05",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "5.05"
+      ],
+      "exactFileSource": "https://wrozen.com/"
+    },
+    {
+      "id": "wrozen-phive",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "PS-Phive! · 6.72",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "6.72"
+      ],
+      "exactFileSource": "https://wrozen.com/"
+    },
+    {
+      "id": "wrozen-phivev3",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "PS-Phive! V3 · 9.00",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://wrozen.com/"
+    },
+    {
+      "id": "wrozen-leeful900",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Leeful · 9.00",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://wrozen.com/"
+    },
+    {
+      "id": "wrozen-phivevfree",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "PS-Phive! V3 · PSFree Beta",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "9.00"
+      ],
+      "exactFileSource": "https://wrozen.com/"
+    },
+    {
+      "id": "kme-webpayloads",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "GoldHEN Web Payloads",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "exactFileSource": "https://www.kmeps4.site/webpayloads/index.html"
+    },
+    {
+      "id": "karo-copy-cheats",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Copy GoldHEN Cheats",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "exactFileSource": "https://karo218.ir/copych/main.js"
+    },
+    {
+      "id": "karo-offline-trainer",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "PS4 Offline Trainer · Karo",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "exactFileSource": "https://github.com/KAR0218/KAR0218.github.io/blob/main/index.html"
+    },
+    {
+      "id": "kme-offline-trainer",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "PS4 Offline Trainer · Kameleon",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "kme-esp-flasher",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "ESP Web Flasher",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "exactFileSource": "https://www.kmeps4.site/"
+    },
+    {
+      "id": "wrozen-linux-baikal",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Linux · 6.72 Baikal",
+      "format": "HTML host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "6.72"
+      ],
+      "exactFileSource": "https://wrozen.com/"
+    },
+    {
+      "id": "ps4-ftpsrv-elf",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "FTP Server · ELF",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps4-ftpsrv/5f00e2df7fa8/ftpsrv-ps4.elf",
+      "sha256": "5f00e2df7fa8ab7daa084343f38394e6672cd389e03fc8598a54d7d9e1d58d16",
+      "bytes": 146720,
+      "run": {
+        "type": "elf-tcp",
+        "port": 9021
+      },
+      "exactFileSource": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps4.elf",
+      "protocol": "elf-tcp",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-klogsrv-elf",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Kernel Log Server · ELF",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps4-klogsrv/7e89c33eb90d/klogsrv-ps4.elf",
+      "sha256": "7e89c33eb90d44ea4644b80c56c29084d93faf415a9d64f1397a58ac7ca752d8",
+      "bytes": 91208,
+      "run": {
+        "type": "elf-tcp",
+        "port": 9021
+      },
+      "exactFileSource": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps4.elf",
+      "protocol": "elf-tcp",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-lua-game-loader",
+      "platform": "ps4",
+      "catalogue": "docs/host-actions-ps4.json",
+      "label": "Lua game loader",
+      "format": "Game save loader",
+      "capability": "game-save-bootstrap",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "exactFileSource": "https://github.com/n0llptr/remote_lua_loader"
+    },
+    {
+      "id": "ps5-relapse",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "Relapse",
+      "format": "Browser host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.20",
+        "7.40",
+        "7.60",
+        "7.61",
+        "8.00",
+        "8.20",
+        "8.40",
+        "8.60",
+        "9.00",
+        "9.20",
+        "9.40",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.20",
+        "10.40",
+        "11.00",
+        "11.20",
+        "11.60",
+        "12.00",
+        "12.02",
+        "12.20",
+        "12.40",
+        "12.60",
+        "12.70",
+        "13.00",
+        "13.20",
+        "13.40",
+        "13.42",
+        "13.60"
+      ],
+      "exactFileSource": "https://github.com/soniciso1/relapse"
+    },
+    {
+      "id": "ps5-umtx2",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "UMTX2",
+      "format": "Browser host",
+      "capability": "original-host-page",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [
+        "1.00",
+        "1.01",
+        "1.02",
+        "1.05",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "2.00",
+        "2.20",
+        "2.25",
+        "2.26",
+        "2.30",
+        "2.50",
+        "2.70",
+        "3.00",
+        "3.10",
+        "3.20",
+        "3.21",
+        "4.00",
+        "4.02",
+        "4.03",
+        "4.50",
+        "4.51",
+        "5.00",
+        "5.02",
+        "5.10",
+        "5.50"
+      ],
+      "exactFileSource": "https://github.com/idlesauce/umtx2"
+    },
+    {
+      "id": "ps5-payload-manager",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "Payload Manager",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-payload-manager/2a42054fd972/pldmgr_v0.6.3.elf",
+      "sha256": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "bytes": 2795992,
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "exactFileSource": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.3/pldmgr_v0.6.3.elf",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-websrv",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "File Explorer / websrv",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-websrv/54730c867c6e/websrv-ps5.elf",
+      "sha256": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263",
+      "bytes": 1597864,
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "exactFileSource": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-ftpsrv",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "FTP server",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-ftpsrv/7d4b31c83eae/ftpsrv-ps5.elf",
+      "sha256": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+      "bytes": 191864,
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "exactFileSource": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-klogsrv",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "Kernel log server",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-klogsrv/e828ec144231/klogsrv-ps5.elf",
+      "sha256": "e828ec144231f81547cb58bc7d2c396fa984be0c2295f31364b58017816dcceb",
+      "bytes": 136016,
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "exactFileSource": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-elfldr",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "ELF Loader",
+      "format": "ELF",
+      "capability": "initial-loader-bootstrap",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-elfldr/82f622761017/elfldr-ps5.elf",
+      "sha256": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d",
+      "bytes": 394568,
+      "exactFileSource": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-shadowmountplus",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "ShadowMountPlus",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/archive/f22d8b3749d7/shadowmountplus.elf",
+      "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "exactFileSource": "https://github.com/drakmor/ShadowMountPlus/releases",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-upload",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "PS5upload service",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/archive/cd469f63fa67/ps5upload-10.6.0.elf",
+      "sha256": "2f67651bf1320a83202b632782a1f404543b1ea4911dfb3be5a510971f015392",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "exactFileSource": "https://github.com/phantomptr/ps5upload/releases",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-orbit-store",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "Orbit Store",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "firmwares": [],
+      "downloadURL": "/downloads/archive/5a12cb950970/orbit_store.elf",
+      "sha256": "a9fe33c3b0338af074edb4f7c68bb3806a84efba718e3897f94eba9dc720f914",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "exactFileSource": "https://github.com/saawant12/orbit-store-ps5/releases/tag/v1.8.1",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-lua-game-loader",
+      "platform": "ps5",
+      "catalogue": "docs/host-actions-ps5.json",
+      "label": "Lua game loader",
+      "format": "Game save loader",
+      "capability": "game-save-bootstrap",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "firmwares": [],
+      "exactFileSource": "https://github.com/n0llptr/remote_lua_loader"
+    },
+    {
+      "id": "ps4-arabicguy-gta5-100",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "ArabicGuy",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.00",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/arabicguy-gta5-100-ps4-900.bin",
+      "sha256": "0de5452601ca151ad3bb6c86c2fb97e2a0bac89b5ff77cf238638dd19bddd372",
+      "bytes": 1055408,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_ArabicGuy100.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-arabicguy-gta5-127",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "ArabicGuy",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.27",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-127-ps4-900.bin",
+      "sha256": "be9ee0dacc71e94d607584770c08cdc39c1319427e9fd83424fc19dd15782aa6",
+      "bytes": 1059520,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-arabicguy-gta5-132",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "ArabicGuy",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.32",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-132-ps4-900.bin",
+      "sha256": "7b9c1242b0c18c4e8ce43216518c09bb8550ad31328a3dc16185d8d2ee7f7b8b",
+      "bytes": 1059520,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-arabicguy-gta5-133",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "ArabicGuy",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.33",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-133-ps4-900.bin",
+      "sha256": "617318304d6303272e5d6287f812e7c8a4c6cf99684c5664b5ec27a6704bc85b",
+      "bytes": 1059520,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-beefqueef-gta5-133",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "BeefQueefMod",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.33",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/beefqueef-gta5-133-ps4-900.bin",
+      "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+      "bytes": 1073700,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/BeefQueefMod-1.33.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.33.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-lamance-gta5-138",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "Lamance",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.38",
+      "menuVersion": "0.9",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/lamance-gta5-138-ps4-900.bin",
+      "sha256": "7c9985cae235bffd95092765a6f294d668ab8f0421344dbef6b6ddd1230b3745",
+      "bytes": 1128208,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_lamance.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-oysters-rdr2-100",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "Oysters",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "RDR2",
+      "gameVersion": "1.00",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-100-ps4-900.bin",
+      "sha256": "199b68feb24e1d202589b7ccb7b9ee28fdf3cab5546b41bd1263939ecedb7add",
+      "bytes": 1190392,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-oysters-rdr2-113",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "Oysters",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "RDR2",
+      "gameVersion": "1.13",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-113-ps4-900.bin",
+      "sha256": "089f1c3144dffb35589a7fb36a05dd54f642c1eeef3873daa3b7f4ce965af06d",
+      "bytes": 1190392,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-oysters-rdr2-119",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "Oysters",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "RDR2",
+      "gameVersion": "1.19",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-119-ps4-900.bin",
+      "sha256": "370b5bd2b4bace7a2dd51bd28f9b080b1e5221f3bd9e6dec64c5e72baa183254",
+      "bytes": 1190392,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-oysters-rdr2-124",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "Oysters",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "RDR2",
+      "gameVersion": "1.24",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-124-ps4-900.bin",
+      "sha256": "58e2317dd8fe1cc44ce834a174ac06e566b34eb3709ce39e088f63aa51a5944a",
+      "bytes": 1190392,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-oysters-rdr2-129",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "Oysters",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "RDR2",
+      "gameVersion": "1.29",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-129-ps4-900.bin",
+      "sha256": "424f9dbf4813cd55366d446d36d0dc84aa950025a6341a47d1ac0f5f8dbf6986",
+      "bytes": 1260864,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-north-beta-rdr2-129",
+      "platform": "ps4",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "North Beta",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "RDR2",
+      "gameVersion": "1.29",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/north-beta-rdr2-129-ps4-900.bin",
+      "sha256": "5ab2f81616290b3f8c9705aaf127e6db8c006ff29da87c023c9c1ccdfb4db4eb",
+      "bytes": 1219048,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_NorthBeta011.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-rdr2-60fps-v2-0",
+      "platform": "ps5",
+      "catalogue": "docs/host-game-actions.json",
+      "label": "RDR2 60FPS runtime patch",
+      "format": "ELF",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "RDR2",
+      "gameVersion": "1.32",
+      "titleIds": [
+        "CUSA08519",
+        "CUSA03041",
+        "CUSA08568"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/hosts/ps5/game-mods/rdr2-60fps/v2.0/RedDead2.60FPS_v2.0.elf",
+      "sha256": "646ecb71e80415ab9d9c651539451d38ee0052a5997f7ef7504a42932c7f8261",
+      "bytes": 154304,
+      "run": {
+        "type": "elf-http",
+        "port": 9021
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c",
+        "protocol": "GET http://CONSOLE-IP:9021/?uri=encoded-console-reachable-ELF-URL",
+        "acknowledgement": "HTTP 200 is sent before the ELF is downloaded or spawned."
+      },
+      "instructionsURL": "/downloads/hosts/ps5/game-mods/rdr2-60fps/v2.0/README-upstream.md",
+      "exactFileSource": "https://github.com/armanate/rdr2-60fps-runtime-patcher/releases/download/v2.0/RedDead2.60FPS_v2.0.elf",
+      "protocol": "elf-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-157-expulsion-v7-0",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Expulsion V7.0",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": "7.0",
+      "titleIds": [
+        "CUSA00419",
+        "CUSA00411"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/console-ready/expulsion-v7-ready/PS4/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "sha256": "823656c96305e4373ec132d8f5dfd9fa2ec24a38d941dfb980f92616d84cb268",
+      "bytes": 1775984,
+      "consoleDestination": "/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "directFileScope": "Replacement PRX for an existing matching installation; the complete support tree is required for a fresh install.",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://www.mediafire.com/file/t3kgvyhof1ig5sm/Expulsion_V7.0.zip/file",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-157-beach",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Beach",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4/GTA5/157/BeachMenu157.prx",
+      "sha256": "d622d3d867244e5854e4773b9e03631d24918e26b634c4b74c8678b01ed06b8a",
+      "bytes": 1230442,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://cdn.discordapp.com/attachments/1552861165477040219/1552861203787812914/BeachMenu157.prx?ex=6ae89671&is=6ae744f1&hm=f80f7ddec485b36b232a368815c344d57c02ecea8f66a1239687d846503b0a6d&",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-cyprus-1-57",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Cyprus LE",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/gta5-cyprus-1-57/CyprusMenu.prx",
+      "sha256": "7731188ec03a0bee74fe0946ffcf6eefed466c13a9b68c4a29df3263bd724157",
+      "bytes": 724286,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://www.mediafire.com/file/5wc7w9lrdcy5ysd/CyprusMenu.prx/file",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-explosive-1-57",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Explosive",
+      "format": "SPRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/gta5-explosive-1-57/explosive_temp.sprx",
+      "sha256": "4986ff700f57d72a61516abd0daa6cf1ba557a63b4fe39c1eecc38064c1f2e6a",
+      "bytes": 1037599,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://cdn.discordapp.com/attachments/1553709164423942255/1553709165753409596/explosive_temp.sprx",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-157-expulsion-v5-0",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Expulsion V5.0",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": "5.0",
+      "titleIds": [
+        "CUSA00419"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/console-ready/expulsion-v5-ready/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "sha256": "dfdc05bbe590bced0ca53059c017cb05c18054695a90053b7c91da269fb57dc3",
+      "bytes": 909328,
+      "consoleDestination": "/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+      "directFileScope": "Replacement PRX for an existing matching installation; the complete support tree is required for a fresh install.",
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://www.mediafire.com/file/f20tsz8dj37n1ax/Expulsion-V5.0-PS4-1.57-Release.rar/file",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-157-lts",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "LTS / LRS",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4/GTA5/157/LRS.prx",
+      "sha256": "4816609641ec21b9a7f151abe19eb234dee69c959d0da8a7a7c1718185704a96",
+      "bytes": 2187104,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://cdn.discordapp.com/attachments/1553009205764685856/1554233714660081734/LRS.prx?ex=6ae8f771&is=6ae7a5f1&hm=f6a4b81491a85c6add4b5fa02e6a9e2806d031dcbe86e51bd1966058f271a888&",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-157-serendipity",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Serendipity",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4/GTA5/157/Seren.prx",
+      "sha256": "e4f085add22697b0bb3ef8f0028f1fe373ff4737ae3a1d7b2bb1a24afff18f35",
+      "bytes": 1956688,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://cdn.discordapp.com/attachments/1563209961096613918/1563210180227764276/Seren.prx?ex=6ae8a9ee&is=6ae7586e&hm=7b3ccfdb3da7466417a452588e4f522591951274d24e3cde18fd97a6259e4d26&",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-157-velora-1-5",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Velora 1.5",
+      "format": "SPRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.57",
+      "menuVersion": "1.5",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4/GTA5/157/Velora.sprx",
+      "sha256": "e6e79ad27a87f2b7ea9d519167e5d9c48d096bdf1a17b2abf1de70c057bd2653",
+      "bytes": 1718289,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://cdn.discordapp.com/attachments/1551562290258518167/1561212081712136232/Velora.sprx?ex=6ae8a54e&is=6ae753ce&hm=6e211c1eff62ace1d7ee06de406a5c19e84dacc7888261a718dccf3024ecf2de&",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-156-beach",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Beach",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.56",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4/GTA5/156/BeachMenu156.prx",
+      "sha256": "8ca31fa51e3401f678a9514fe4a93976d5a52c685fe07a3d2772a1523c90c073",
+      "bytes": 1320839,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://cdn.discordapp.com/attachments/1552861357584425001/1552861390170234950/BeachMenu156.prx?ex=6ae8969e&is=6ae7451e&hm=6f59cb323c55c7f5e894bd0b6d7ad6490e3dea82e37239a65e4d0bb229003ca7&",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-cyprus-1-56",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Cyprus LE",
+      "format": "PRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.56",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/gta5-cyprus-1-56/CyprusMenu.prx",
+      "sha256": "9bedea869077bb6016171a79823b4b98703631d904b1cb52173dd97349fbb1c0",
+      "bytes": 724382,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://www.mediafire.com/file/m6waack9a13u41t/CyprusMenu.prx/file",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-modern-gta5-156-velora",
+      "platform": "ps4",
+      "catalogue": "docs/host-modern-plugin-actions.json",
+      "label": "Velora",
+      "format": "SPRX",
+      "capability": "native-game-plugin",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.56",
+      "titleIds": [],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4/GTA5/156/Velora.sprx",
+      "sha256": "d50d1582a67d978e347692b3bce951262dd061a649e75410595ae36f9bec3823",
+      "bytes": 882981,
+      "instructionsURL": "/console/mods/ps4/gta5/install.html",
+      "exactFileSource": "https://cdn.discordapp.com/attachments/1551562652281602089/1551562896880828506/Velora.sprx?ex=6ae87a8d&is=6ae7290d&hm=c9a477ff72e4208e939947e43287198de4dc71593a8739e2e4374c043e56255d&",
+      "localFileVerified": true
+    },
+    {
+      "id": "gta5-ps5-04263-01010002",
+      "platform": "ps5",
+      "catalogue": "docs/host-current-cheat-actions.json",
+      "label": "GTA V cheats",
+      "format": "MC4",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "01.010.002",
+      "titleIds": [
+        "PPSA04263"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA04263_01.010.002.mc4",
+      "sha256": "25c47d2bb864fd065d2645e7bc13a45b12f046c18786f310d9c217d111181910",
+      "bytes": 3928,
+      "installPath": "/data/etaHEN/cheats/mc4/PPSA04263_01.010.002.mc4",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/TeeKay87/HEN-Cheats-Collection/39a55c2b0030864e7e42812faa8d6157a4a40269/cheats/mc4/PPSA04263_01.010.002_37ab95f2.mc4",
+      "localFileVerified": true
+    },
+    {
+      "id": "gta5-ps5-04264-01005000",
+      "platform": "ps5",
+      "catalogue": "docs/host-current-cheat-actions.json",
+      "label": "GTA V cheats",
+      "format": "MC4",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "01.005.000",
+      "titleIds": [
+        "PPSA04264"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA04264_01.005.000.mc4",
+      "sha256": "7460de5fa64318bc7544eeb7ae1b1ef06f148df78f2668df93d838a9c57cb695",
+      "bytes": 6380,
+      "installPath": "/data/etaHEN/cheats/mc4/PPSA04264_01.005.000.mc4",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/TeeKay87/HEN-Cheats-Collection/39a55c2b0030864e7e42812faa8d6157a4a40269/cheats/mc4/PPSA04264_01.005.000_33feea8f.mc4",
+      "localFileVerified": true
+    },
+    {
+      "id": "gta5-ps5-04264-01010002",
+      "platform": "ps5",
+      "catalogue": "docs/host-current-cheat-actions.json",
+      "label": "GTA V cheats",
+      "format": "MC4",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "01.010.002",
+      "titleIds": [
+        "PPSA04264"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA04264_01.010.002.mc4",
+      "sha256": "fc5de09d593fc308c10f308ea94832116b7aa6ee5c68d9eabe74f951a3db46c6",
+      "bytes": 3928,
+      "installPath": "/data/etaHEN/cheats/mc4/PPSA04264_01.010.002.mc4",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/TeeKay87/HEN-Cheats-Collection/39a55c2b0030864e7e42812faa8d6157a4a40269/cheats/mc4/PPSA04264_01.010.002_666864a2.mc4",
+      "localFileVerified": true
+    },
+    {
+      "id": "miles-morales-ps5-01417-01013002",
+      "platform": "ps5",
+      "catalogue": "docs/host-current-cheat-actions.json",
+      "label": "Marvel's Spider-Man: Miles Morales cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Marvel's Spider-Man: Miles Morales",
+      "gameVersion": "01.013.002",
+      "titleIds": [
+        "PPSA01417"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA01417_01.013.002.json",
+      "sha256": "4eb328cdf5d89aaacf3bd24341947cd249e3396fd437961dd353a00fd0cd21e2",
+      "bytes": 7658,
+      "installPath": "/data/etaHEN/cheats/json/PPSA01417_01.013.002.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/TeeKay87/HEN-Cheats-Collection/39a55c2b0030864e7e42812faa8d6157a4a40269/cheats/json/PPSA01417_01.013.002_9f37ad8d.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "miles-morales-ps5-01460-01015001",
+      "platform": "ps5",
+      "catalogue": "docs/host-current-cheat-actions.json",
+      "label": "Marvel's Spider-Man: Miles Morales cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Marvel's Spider-Man: Miles Morales",
+      "gameVersion": "01.015.001",
+      "titleIds": [
+        "PPSA01460"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA01460_01.015.001.json",
+      "sha256": "e51ef057511671d4175e6d4f3b6fa25228d7e2d6f9597daecaf43909ec21be7a",
+      "bytes": 3717,
+      "installPath": "/data/etaHEN/cheats/json/PPSA01460_01.015.001.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/TeeKay87/HEN-Cheats-Collection/39a55c2b0030864e7e42812faa8d6157a4a40269/cheats/json/PPSA01460_01.015.001_4eed96b4.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "sonic-frontiers-ps5-03831-01041000",
+      "platform": "ps5",
+      "catalogue": "docs/host-current-cheat-actions.json",
+      "label": "Sonic Frontiers cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Sonic Frontiers",
+      "gameVersion": "01.041.000",
+      "titleIds": [
+        "PPSA03831"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA03831_01.041.000.json",
+      "sha256": "58863f93e82adcc14cc853451742c28d61ff477b45fe9b5c670496728100a0c5",
+      "bytes": 6024,
+      "installPath": "/data/etaHEN/cheats/json/PPSA03831_01.041.000.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/TeeKay87/HEN-Cheats-Collection/39a55c2b0030864e7e42812faa8d6157a4a40269/cheats/json/PPSA03831_01.041.000_cbdc02fa.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-nazky-bq134",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "BeefQueefMod",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.34",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-bq134-game-1.34-ps4-900.bin",
+      "sha256": "e34c81b6464dbc58fe69458823d8e4029c93d4e9bfdc601c56f8430b4c3aaaf5",
+      "bytes": 1063880,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/BeefQueefMod-1.34.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port9090 after its status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.34.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-nazky-bq138",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "BeefQueefMod",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.38",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-bq138-game-1.38-ps4-900.bin",
+      "sha256": "1c649bab177d47b0128b28b16e1b5002195f5ebf4d4eddb06dc54f6965f93e9e",
+      "bytes": 1073836,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/BeefQueefMod-1.38.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port9090 after its status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.38.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-nazky-wilde132",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "WildeModz",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.32",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-wilde132-game-1.32-ps4-900.bin",
+      "sha256": "f8ec40617e59fcfbba033547f17a567c82ed50fb00563f3349f0d88283ccd2b9",
+      "bytes": 1074320,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/WildeModz-1.32.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port9090 after its status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/WildeModz-1.32.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-nazky-wilde138",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "WildeModz",
+      "format": "BIN",
+      "capability": "integrated-load",
+      "canOfferNetworkLoad": true,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.38",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-wilde138-game-1.38-ps4-900.bin",
+      "sha256": "2da00a14596b5e148097d209c3ca440c064e85356d10d61f584743a59895ce92",
+      "bytes": 592864,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/WildeModz-1.38.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port9090 after its status reports ready."
+      },
+      "exactFileSource": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/WildeModz-1.38.bin",
+      "protocol": "goldhen-http",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-bq138-thief",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "BeefQueefMod",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.38",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-bq138-thief-game-1.38-ps4-900.bin",
+      "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+      "bytes": 1073700,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_BeefQueefMod138.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-bq146",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "BeefQueefMod",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.46",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-bq146-game-1.46-ps4-900.bin",
+      "sha256": "fbae10e4d9c0ac09e745755959a1c71a444a1c16bb5da2c51361e56fef1e2c00",
+      "bytes": 480804,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_BeefQueefMod146.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-bq147",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "BeefQueefMod",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.47",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-bq147-game-1.47-ps4-900.bin",
+      "sha256": "a8a6789cd8873224dde81f4924cfd12f9d87f430e552d50064e9aabd23171ead",
+      "bytes": 480740,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_BeefQueefMod147.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde132",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "WildeModz",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.32",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde132-game-1.32-ps4-900.bin",
+      "sha256": "007f3418bee3f2fe27034262a84a148a9f8c0577e517133286a19c4bf18d55eb",
+      "bytes": 1080016,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_132.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde133",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "WildeModz",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.33",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde133-game-1.33-ps4-900.bin",
+      "sha256": "d9ebf4cdf4150ac59865d7744713dfc99037ad75b08ea7551c5bcb3e992972a9",
+      "bytes": 1080016,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_133.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde146",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "WildeModz",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.46",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde146-game-1.46-ps4-900.bin",
+      "sha256": "9a8bc055f89a056b12b5bfd56c8b4b55f4f66025e9bea48475eae38b25f1a45b",
+      "bytes": 2610904,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_146.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde147",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "WildeModz",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.47",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde147-game-1.47-ps4-900.bin",
+      "sha256": "beac207b97220a57f22c9a7ec9064e6fdb2ef98ec33852b2ee1c5f7a1717010f",
+      "bytes": 2819184,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_147.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-kameleon-expulsion138",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "Expulsion",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.38",
+      "menuVersion": "4.0",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-expulsion138-game-1.38-ps4-900.bin",
+      "sha256": "c3df5201df8b17add26ea58794d3ec95d39a021586f1e4e2517b48fa540754e1",
+      "bytes": 1055312,
+      "exactFileSource": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_LushModz40_138.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-karo-expulsion135",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "Expulsion",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.35",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/743646c9df9a/karo-expulsion135-game-1.35-ps4-900.bin",
+      "sha256": "ef21be6c36b117ba8b362c1488ae887a0daece3d7a791bc2ac3130a6d27ff1af",
+      "bytes": 1055264,
+      "exactFileSource": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/LushModz-1.0-9.00.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-karo-menubase127",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "Menu Base",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.27",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/743646c9df9a/karo-menubase127-game-1.27-ps4-900.bin",
+      "sha256": "822d4897941512e8cbf29806e1985848aceb5c54bb3f9149d52df07e8b0e8545",
+      "bytes": 1054984,
+      "exactFileSource": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/gtavmb127.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps4-legacy-karo-lts127",
+      "platform": "ps4",
+      "catalogue": "docs/host-legacy-menu-actions.json",
+      "label": "LTS",
+      "format": "BIN",
+      "capability": "original-host-payload",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "GTA V",
+      "gameVersion": "1.27",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "downloadURL": "/downloads/hosts/ps4/legacy-menus/743646c9df9a/karo-lts127-game-1.27-ps4-900.bin",
+      "sha256": "ead0911d40795a0503305dd739680bb3ebd3f51e9b65a9878101c4bd9c2aaf10",
+      "bytes": 1054664,
+      "exactFileSource": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/gtavLTS127.bin.bz2",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa03290-01-03",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dead Island: Riptide - Definitive Edition cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dead Island: Riptide - Definitive Edition",
+      "gameVersion": "01.03",
+      "titleIds": [
+        "CUSA03290"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03290-01-03/CUSA03290_01.03.json",
+      "sha256": "d4fbc6fd4ec69f08eebead146971b695a5a1bf0b34ca822341354a48d10b7d68",
+      "bytes": 1853,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA03290_01.03.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA03290_01.03.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa03291-01-03",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dead Island - Definitive Edition cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dead Island - Definitive Edition",
+      "gameVersion": "01.03",
+      "titleIds": [
+        "CUSA03291"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03291-01-03/CUSA03291_01.03.json",
+      "sha256": "6ababd420bc867d6dbfc36f445c4cf3b483d70249418a112955e4e53ea1cef08",
+      "bytes": 1409,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA03291_01.03.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA03291_01.03.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa03991-01-00",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dying Light cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dying Light",
+      "gameVersion": "01.00",
+      "titleIds": [
+        "CUSA03991"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03991-01-00/CUSA03991_01.00.json",
+      "sha256": "6d78917053ab62a993853282af124f71bc7825cb7eb276b8805c803f32230348",
+      "bytes": 2149,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA03991_01.00.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA03991_01.00.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa03991-01-35",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dying Light: The Following – Enhanced Edition cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dying Light: The Following – Enhanced Edition",
+      "gameVersion": "01.35",
+      "titleIds": [
+        "CUSA03991"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03991-01-35/CUSA03991_01.35.json",
+      "sha256": "ddbaeb4f66deadedef7dada84cfedda1c90471ae99b5874d3e0b19fa43289475",
+      "bytes": 4863,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA03991_01.35.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA03991_01.35.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa12555-01-00",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dying Light 2: Stay Human cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dying Light 2: Stay Human",
+      "gameVersion": "01.00",
+      "titleIds": [
+        "CUSA12555"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa12555-01-00/CUSA12555_01.00.json",
+      "sha256": "310516df7924cd96e7281a791ecaf94c375050bf3deb71682f57e36a19ebf505",
+      "bytes": 2350,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA12555_01.00.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA12555_01.00.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa12555-01-01",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dying Light 2: Stay Human cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dying Light 2: Stay Human",
+      "gameVersion": "01.01",
+      "titleIds": [
+        "CUSA12555"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa12555-01-01/CUSA12555_01.01.json",
+      "sha256": "0b8f6ecadab15f31c62174d4da876fad4a70bd0fdb7e3f3d458f50bd31d197a8",
+      "bytes": 2349,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA12555_01.01.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA12555_01.01.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa12555-01-30",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dying Light 2: Stay Human cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dying Light 2: Stay Human",
+      "gameVersion": "01.30",
+      "titleIds": [
+        "CUSA12555"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa12555-01-30/CUSA12555_01.30.json",
+      "sha256": "f227052ba1366a106aae4e9d08d3bf66049c9419742208ef7b72bb50ccca122e",
+      "bytes": 3202,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA12555_01.30.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA12555_01.30.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa27043-01-10",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dead Island 2 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dead Island 2",
+      "gameVersion": "01.10",
+      "titleIds": [
+        "CUSA27043"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa27043-01-10/CUSA27043_01.10.json",
+      "sha256": "e4d0c327f98eda803d87beffe85331bb626d25f51256b8985b80038b12e6276f",
+      "bytes": 3319,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA27043_01.10.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA27043_01.10.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa02962-01-37",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Fallout 4 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Fallout 4",
+      "gameVersion": "01.37",
+      "titleIds": [
+        "CUSA02962"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa02962-01-37/CUSA02962_01.37.json",
+      "sha256": "1a7c447379733adce25d8c5376cf2b42f1d9225593e1daf801e5b509ae221bb5",
+      "bytes": 19908,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA02962_01.37.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA02962_01.37.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa05574-04-06",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "The Witcher 3: Wild Hunt cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "The Witcher 3: Wild Hunt",
+      "gameVersion": "04.06",
+      "titleIds": [
+        "CUSA05574"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa05574-04-06/CUSA05574_04.06.json",
+      "sha256": "729d5e405004a3f860c866f132fa5f04a8a8c3d70244ecd1e828f4a14eed02a2",
+      "bytes": 13640,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA05574_04.06.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA05574_04.06.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa07410-01-35",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "God of War cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "God of War",
+      "gameVersion": "01.35",
+      "titleIds": [
+        "CUSA07410"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa07410-01-35/CUSA07410_01.35.json",
+      "sha256": "5c8187ee948e54b9812e43afb1f67e0668f50908947c23243ee90c87877b5b82",
+      "bytes": 2230,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA07410_01.35.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA07410_01.35.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa34386-06-02",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "God of War Ragnarök cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "God of War Ragnarök",
+      "gameVersion": "06.02",
+      "titleIds": [
+        "CUSA34386"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa34386-06-02/CUSA34386_06.02.json",
+      "sha256": "4514eaef84d36605c9b53dfc0929b406c588652e687c6e830be2f65af5c60ee4",
+      "bytes": 2894,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA34386_06.02.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA34386_06.02.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa10211-01-54",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Horizon Zero Dawn cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Horizon Zero Dawn",
+      "gameVersion": "01.54",
+      "titleIds": [
+        "CUSA10211"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa10211-01-54/CUSA10211_01.54.json",
+      "sha256": "ead367bb8651c82b145ec8e03f7b542bdbf0e23142aefde9efe21d8457324e5a",
+      "bytes": 10243,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA10211_01.54.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA10211_01.54.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa09171-01-05",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Resident Evil 2 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Resident Evil 2",
+      "gameVersion": "01.05",
+      "titleIds": [
+        "CUSA09171"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa09171-01-05/CUSA09171_01.05.json",
+      "sha256": "c4d14bf36ce01e00619e5491d7c354e1f1a3b1561c9b1bf52b8a9340361a2aef",
+      "bytes": 2236,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA09171_01.05.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA09171_01.05.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa14168-01-05",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Resident Evil 3 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Resident Evil 3",
+      "gameVersion": "01.05",
+      "titleIds": [
+        "CUSA14168"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa14168-01-05/CUSA14168_01.05.json",
+      "sha256": "435d5660b04f571447073f3c4166fd5d9d2594b4ac4547850defe80744746fbc",
+      "bytes": 1019,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA14168_01.05.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA14168_01.05.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa33388-01-04",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Resident Evil 4 Remake cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Resident Evil 4 Remake",
+      "gameVersion": "01.04",
+      "titleIds": [
+        "CUSA33388"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa33388-01-04/CUSA33388_01.04.json",
+      "sha256": "f8bee169fbee9ca4b8f18b175c03c375b2ed0e577b6658dcbd59f49e58ef09fc",
+      "bytes": 4194,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA33388_01.04.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA33388_01.04.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa28863-01-22",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Elden Ring cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Elden Ring",
+      "gameVersion": "01.22",
+      "titleIds": [
+        "CUSA28863"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa28863-01-22/CUSA28863_01.22.json",
+      "sha256": "cfd181fb86f73ff04df1a996293f5e94ac7d6f463213dd275116005656596076",
+      "bytes": 24786,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA28863_01.22.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA28863_01.22.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa13801-01-06",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Sekiro: Shadows Die Twice cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Sekiro: Shadows Die Twice",
+      "gameVersion": "01.06",
+      "titleIds": [
+        "CUSA13801"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa13801-01-06/CUSA13801_01.06.json",
+      "sha256": "8fa4d2dc0dd3231a588c9a33a1d6d8fda1c812c458ea71b0b763805b4dac0e6b",
+      "bytes": 2294,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA13801_01.06.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA13801_01.06.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa02092-01-12",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "DOOM cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "DOOM",
+      "gameVersion": "01.12",
+      "titleIds": [
+        "CUSA02092"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa02092-01-12/CUSA02092_01.12.json",
+      "sha256": "58ca70551863aca205ab8fde139819494f214e22f1b98138526acb2743f1af46",
+      "bytes": 990,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA02092_01.12.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA02092_01.12.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa13338-01-25",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "DOOM Eternal cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "DOOM Eternal",
+      "gameVersion": "01.25",
+      "titleIds": [
+        "CUSA13338"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa13338-01-25/CUSA13338_01.25.json",
+      "sha256": "c77e0c5970804060ccf773bbf254531a986114cdebc206df2e3809b5ed20681e",
+      "bytes": 4901,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA13338_01.25.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA13338_01.25.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa05904-01-15",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Far Cry 5 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Far Cry 5",
+      "gameVersion": "01.15",
+      "titleIds": [
+        "CUSA05904"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa05904-01-15/CUSA05904_01.15.json",
+      "sha256": "6cb656425459fffe50b11920c289ec1d3b8c03ece3a741d676a0da7cee92f3f4",
+      "bytes": 2702,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA05904_01.15.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA05904_01.15.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa11454-01-12",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Control cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Control",
+      "gameVersion": "01.12",
+      "titleIds": [
+        "CUSA11454"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa11454-01-12/CUSA11454_01.12.json",
+      "sha256": "4356e33e8d98e513a624e8bdb9b7664f80efd40062baa1e9243ef736066528c4",
+      "bytes": 2350,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA11454_01.12.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA11454_01.12.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa00341-01-33",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Uncharted 4: A Thief’s End cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Uncharted 4: A Thief’s End",
+      "gameVersion": "01.33",
+      "titleIds": [
+        "CUSA00341"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00341-01-33/CUSA00341_01.33.json",
+      "sha256": "a11a60c6aec6699d4995b9f2c0dc76e9a939b84cd8ae853acbe09039ddd36869",
+      "bytes": 504,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA00341_01.33.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA00341_01.33.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa07875-01-08",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Uncharted: The Lost Legacy cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Uncharted: The Lost Legacy",
+      "gameVersion": "01.08",
+      "titleIds": [
+        "CUSA07875"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa07875-01-08/CUSA07875_01.08.json",
+      "sha256": "b8e4db7485f9e63ac385693fc34d5c2c6469cbb2bc0dd470458f4d29c62b76ce",
+      "bytes": 674,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA07875_01.08.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA07875_01.08.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa00207-01-09",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Bloodborne cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Bloodborne",
+      "gameVersion": "01.09",
+      "titleIds": [
+        "CUSA00207"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00207-01-09/CUSA00207_01.09.json",
+      "sha256": "d4da403382829c29fcf6afe29e9bba5fae320ac73feded091f41bf8e29c7bb93",
+      "bytes": 2653,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA00207_01.09.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA00207_01.09.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa00208-01-09",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Bloodborne cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Bloodborne",
+      "gameVersion": "01.09",
+      "titleIds": [
+        "CUSA00208"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00208-01-09/CUSA00208_01.09.json",
+      "sha256": "3943d226cb78133b29309dee54ccdab45a19826d7bb09eb32c8b6b461a62e1ad",
+      "bytes": 2653,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA00208_01.09.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA00208_01.09.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa00900-01-09",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Bloodborne cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Bloodborne",
+      "gameVersion": "01.09",
+      "titleIds": [
+        "CUSA00900"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00900-01-09/CUSA00900_01.09.json",
+      "sha256": "668127e64c77985e08361dca6144088b7944542d7069330458a62c44a7ac432c",
+      "bytes": 2653,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA00900_01.09.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA00900_01.09.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa16579-01-61",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Cyberpunk 2077 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Cyberpunk 2077",
+      "gameVersion": "01.61",
+      "titleIds": [
+        "CUSA16579"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa16579-01-61/CUSA16579_01.61.json",
+      "sha256": "155d2921111667e912686a74d744d06212102ce15441eb2e1dd3ce5d2edda2be",
+      "bytes": 22248,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA16579_01.61.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA16579_01.61.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa15778-01-06",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Far Cry 6 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Far Cry 6",
+      "gameVersion": "01.06",
+      "titleIds": [
+        "CUSA15778"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa15778-01-06/CUSA15778_01.06.json",
+      "sha256": "048ff952981d284d3994cc5688e5ee2a33d6a4a2a7ff1d8071894733c84cdf2f",
+      "bytes": 1168,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA15778_01.06.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA15778_01.06.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa03309-01-03",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Far Cry Primal cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Far Cry Primal",
+      "gameVersion": "01.03",
+      "titleIds": [
+        "CUSA03309"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03309-01-03/CUSA03309_01.03.json",
+      "sha256": "3772c268ac763c020d2797cc112b78d28a9054865e77c9fb3f50661a57769065",
+      "bytes": 1014,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA03309_01.03.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA03309_01.03.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa24705-01-18",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Horizon Forbidden West cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Horizon Forbidden West",
+      "gameVersion": "01.18",
+      "titleIds": [
+        "CUSA24705"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa24705-01-18/CUSA24705_01.18.json",
+      "sha256": "93d3149929d21c3c5ad0ffacd22f76ee2fe0e73fa849304e3379b29a2a3f5955",
+      "bytes": 4431,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA24705_01.18.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA24705_01.18.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa28561-01-18",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Horizon Forbidden West cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Horizon Forbidden West",
+      "gameVersion": "01.18",
+      "titleIds": [
+        "CUSA28561"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa28561-01-18/CUSA28561_01.18.json",
+      "sha256": "92078576141bc29f12a98e9ff7963c94df25f8951ab6eae7506e54156fc5b8d8",
+      "bytes": 4430,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA28561_01.18.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA28561_01.18.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa01067-01-00",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Resident Evil HD Remaster cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Resident Evil HD Remaster",
+      "gameVersion": "01.00",
+      "titleIds": [
+        "CUSA01067"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa01067-01-00/CUSA01067_01.00.json",
+      "sha256": "bb9ed3247032aab9558ecc6280e866e78dfc327239f9de1b451908801a466db3",
+      "bytes": 968,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA01067_01.00.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA01067_01.00.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "goldhen-cusa02882-01-00",
+      "platform": "ps4",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Resident Evil 0 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Resident Evil 0",
+      "gameVersion": "01.00",
+      "titleIds": [
+        "CUSA02882"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/goldhen-cusa02882-01-00/CUSA02882_01.00.json",
+      "sha256": "b7999dfcc7c129efbfc08bd8a8408b0c79ef8a192ee6212a117766b77a1938a6",
+      "bytes": 12004,
+      "installPath": "/user/data/GoldHEN/cheats/json/CUSA02882_01.00.json",
+      "instructionsURL": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/GoldHEN/GoldHEN_Cheat_Repository/3a4ca53414ed6653d091d9dcd82c838333585d2f/json/CUSA02882_01.00.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-native-cheats-ppsa10662-01-001-030",
+      "platform": "ps5",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "The Last of Us Part II Remastered cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "The Last of Us Part II Remastered",
+      "gameVersion": "01.001.030",
+      "titleIds": [
+        "PPSA10662"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa10662-01-001-030/PPSA10662_01.001.030.json",
+      "sha256": "ff004b7c81b0ebeb69a9bc3b76c4642e76495299373eb17d6b8a85cec6d0ea46",
+      "bytes": 1640,
+      "installPath": "/data/etaHEN/cheats/json/PPSA10662_01.001.030.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA10662_01.001.030.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-native-cheats-ppsa09663-01-000-000",
+      "platform": "ps5",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Dragon's Dogma 2 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Dragon's Dogma 2",
+      "gameVersion": "01.000.000",
+      "titleIds": [
+        "PPSA09663"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa09663-01-000-000/PPSA09663_01.000.000.json",
+      "sha256": "64b48d7605989d5ba1c0e337b64a20e41a59f58714c4824d9e1f38a2794a99d8",
+      "bytes": 1337,
+      "installPath": "/data/etaHEN/cheats/json/PPSA09663_01.000.000.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09663_01.000.000.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-native-cheats-ppsa08710-01-005-000",
+      "platform": "ps5",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Silent Hill 2 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Silent Hill 2",
+      "gameVersion": "01.005.000",
+      "titleIds": [
+        "PPSA08710"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa08710-01-005-000/PPSA08710_01.005.000.json",
+      "sha256": "e8acaefdb28aaa5c6f9610d39050f60e6bd0a3d71710216772c924bf05356661",
+      "bytes": 1407,
+      "installPath": "/data/etaHEN/cheats/json/PPSA08710_01.005.000.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA08710_01.005.000.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-native-cheats-ppsa21564-01-007-000",
+      "platform": "ps5",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Astro Bot cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Astro Bot",
+      "gameVersion": "01.007.000",
+      "titleIds": [
+        "PPSA21564"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa21564-01-007-000/PPSA21564_01.007.000.json",
+      "sha256": "42d3d4c39c7f607eedc1205014176790eb6c782fd20f20d264fff14c41a6d683",
+      "bytes": 949,
+      "installPath": "/data/etaHEN/cheats/json/PPSA21564_01.007.000.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA21564_01.007.000.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-native-cheats-ppsa23226-01-000-010",
+      "platform": "ps5",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Black Myth: Wukong cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Black Myth: Wukong",
+      "gameVersion": "01.000.010",
+      "titleIds": [
+        "PPSA23226"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa23226-01-000-010/PPSA23226_01.000.010.json",
+      "sha256": "067fb30324492c673cb42646f847df040f9ec28de4fda945058818ad390cd23d",
+      "bytes": 1577,
+      "installPath": "/data/etaHEN/cheats/json/PPSA23226_01.000.010.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA23226_01.000.010.json",
+      "localFileVerified": true
+    },
+    {
+      "id": "ps5-native-cheats-ppsa09911-01-000-000",
+      "platform": "ps5",
+      "catalogue": "docs/host-extra-game-actions.json",
+      "label": "Ghostrunner 2 cheats",
+      "format": "JSON",
+      "capability": "native-cheat-manager",
+      "canOfferNetworkLoad": false,
+      "hardwareTested": false,
+      "game": "Ghostrunner 2",
+      "gameVersion": "01.000.000",
+      "titleIds": [
+        "PPSA09911"
+      ],
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa09911-01-000-000/PPSA09911_01.000.000.json",
+      "sha256": "489497800a06e8995a3798e601c12fa27a305fdde2f0151a980ba2b71ea2f1b3",
+      "bytes": 947,
+      "installPath": "/data/etaHEN/cheats/json/PPSA09911_01.000.000.json",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "exactFileSource": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09911_01.000.000.json",
+      "localFileVerified": true
+    }
+  ]
+}

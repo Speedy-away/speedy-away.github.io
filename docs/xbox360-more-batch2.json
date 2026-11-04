@@ -1,0 +1,27 @@
+{
+  "scope": "xbox360-more",
+  "batch": 2,
+  "baseline": "docs/qa/xbox360-more-batch2-baseline.json",
+  "addedIds": [
+    "auroraflow-global",
+    "auroraflow-en",
+    "nxe-avatar-v5",
+    "xboxone-experience",
+    "fce360-enhanced",
+    "salvia360",
+    "simple360player",
+    "multiplex360",
+    "silverdash360",
+    "quad-carnage",
+    "wowjay",
+    "nest-bound",
+    "slither360",
+    "portal-clone"
+  ],
+  "sourceFiles": [
+    "docs/xbox360-more-batch2-skins.json",
+    "docs/xbox360-more-batch2-apps.json",
+    "docs/xbox360-more-batch2-games.json"
+  ],
+  "updatedAt": "2026-11-02T09:43:19.302Z"
+}

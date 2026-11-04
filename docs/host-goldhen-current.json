@@ -1,0 +1,39 @@
+{
+  "updatedAt": "2026-11-03T20:28:48.238Z",
+  "source": "User attachment: C:/Users/whatw/Desktop/goldhen.bin",
+  "compatibilityVerified": false,
+  "actions": [
+    {
+      "id": "ps4-goldhen-user-supplied",
+      "platform": "ps4",
+      "label": "Goldhen PS4",
+      "category": "goldhen",
+      "format": "BIN",
+      "version": "Afterglow snapshot acf25a831725",
+      "firmwares": [],
+      "downloadURL": "/downloads/ps4/goldhen/user-supplied-39452f5e1c30/goldhen.bin",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "image": "/assets/images/console-software/goldhen.png",
+      "imageAlt": "GoldHEN logo",
+      "requirements": [
+        "Exact supplied file matches the GoldHEN bundled with Afterglow acf25a831725 for PS4 13.52 / 14.00. Numeric GoldHEN version is not established.",
+        "Start it through the matching Afterglow browser loader. Generic BIN sender compatibility is not established.",
+        "Download this BIN on PC or mobile. On PS4 use the matching Load route."
+      ],
+      "notes": "Replaces the active GoldHEN download listing. Earlier build files remain preserved; this file has not been executed.",
+      "source": "https://raw.githubusercontent.com/well0nez/afterglow-web/acf25a831725f0d44fcb64725d4ce35acbba8f9d/goldhen.bin",
+      "instructionsURL": "/hosts/ps4/afterglow/",
+      "downloadOnDevice": true
+    }
+  ],
+  "matchedArchiveSource": "https://raw.githubusercontent.com/well0nez/afterglow-web/acf25a831725f0d44fcb64725d4ce35acbba8f9d/goldhen.bin",
+  "compatibilityContext": {
+    "runtime": "Afterglow acf25a831725",
+    "firmwares": [
+      "13.52",
+      "14.00"
+    ],
+    "genericSenderVerified": false
+  }
+}

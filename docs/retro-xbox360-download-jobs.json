@@ -1,0 +1,649 @@
+{
+  "reviewed": "2026-11-02",
+  "selection": "New retro-console and Xbox 360 ready builds, saved without execution; desktop helpers kept separately.",
+  "jobs": [
+    {
+      "id": "ps2-freemcboot",
+      "title": "FreeMcBoot 1.966 installer",
+      "platform": "PS2",
+      "category": "Tools",
+      "project": "FreeMcBoot",
+      "version": "1.966-custom-6aa96da",
+      "filename": "FMCB-1966.7z",
+      "url": "https://github.com/israpps/FreeMcBoot-Installer/releases/download/latest/FMCB-1966.7z",
+      "pages": [
+        "console/retro/ps2.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ps2-opentuna",
+      "title": "OpenTuna installer",
+      "platform": "PS2",
+      "category": "Tools",
+      "project": "OpenTuna",
+      "version": "build-9b61aee",
+      "filename": "OpenTuna_Installer.elf",
+      "url": "https://github.com/ps2homebrew/opentuna-installer/releases/download/latest/OpenTuna_Installer.elf",
+      "pages": [
+        "console/retro/ps2.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ps2-opl",
+      "title": "Open PS2 Loader",
+      "platform": "PS2",
+      "category": "Tools",
+      "project": "Open PS2 Loader",
+      "version": "v1.1.0",
+      "filename": "OPNPS2LD-v1.1.0.7z",
+      "url": "https://github.com/ps2homebrew/Open-PS2-Loader/releases/download/v1.1.0/OPNPS2LD-v1.1.0.7z",
+      "pages": [
+        "console/retro/ps2.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ps2-wlaunchelf",
+      "title": "wLaunchELF",
+      "platform": "PS2",
+      "category": "Tools",
+      "project": "wLaunchELF",
+      "version": "v4.43a-dev-57c2049",
+      "filename": "BOOT.ELF",
+      "url": "https://github.com/ps2homebrew/wLaunchELF/releases/download/latest/BOOT.ELF",
+      "pages": [
+        "console/retro/ps2.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ps2-apollo",
+      "title": "Apollo Save Tool PS2",
+      "platform": "PS2",
+      "category": "Tools",
+      "project": "Apollo Save Tool",
+      "version": "v1.0.2",
+      "filename": "apollo-ps2.zip",
+      "url": "https://github.com/bucanero/apollo-ps2/releases/download/v1.0.2/apollo-ps2.zip",
+      "pages": [
+        "console/retro/ps2.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ps2-ps2ident",
+      "title": "PS2Ident",
+      "platform": "PS2",
+      "category": "Tools",
+      "project": "PS2Ident",
+      "version": "v0.850-ca2b5acc",
+      "filename": "PS2Ident-ca2b5acc.7z",
+      "url": "https://github.com/ps2homebrew/PS2Ident/releases/download/stable/PS2Ident-ca2b5acc.7z",
+      "pages": [
+        "console/retro/ps2.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-priiloader",
+      "title": "Priiloader",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Priiloader",
+      "version": "0.10.0",
+      "filename": "Priiloader_v0_10.zip",
+      "url": "https://github.com/DacoTaco/priiloader/releases/download/0.10.0/Priiloader_v0_10.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-loadpriiloader",
+      "title": "Load Priiloader",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Priiloader",
+      "version": "0.10.0",
+      "filename": "LoadPriiloader.zip",
+      "url": "https://github.com/DacoTaco/priiloader/releases/download/0.10.0/LoadPriiloader.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-usbloadergx",
+      "title": "USB Loader GX",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "USB Loader GX",
+      "version": "v4.0-r1283",
+      "filename": "usbloadergx_r1283.zip",
+      "url": "https://github.com/wiidev/usbloadergx/releases/download/v4.0-r1283/usbloadergx_r1283.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-nintendont-dol",
+      "title": "Nintendont",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Nintendont",
+      "version": "build-c683db3",
+      "filename": "loader.dol",
+      "url": "https://raw.githubusercontent.com/FIX94/Nintendont/c683db301c941a64e6fe5cef6ac079bd1a726074/loader/loader.dol",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-nintendont-meta",
+      "title": "Nintendont",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Nintendont",
+      "version": "build-c683db3",
+      "filename": "meta.xml",
+      "url": "https://raw.githubusercontent.com/FIX94/Nintendont/c683db301c941a64e6fe5cef6ac079bd1a726074/nintendont/meta.xml",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-nintendont-icon",
+      "title": "Nintendont",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "Nintendont",
+      "version": "build-c683db3",
+      "filename": "icon.png",
+      "url": "https://raw.githubusercontent.com/FIX94/Nintendont/c683db301c941a64e6fe5cef6ac079bd1a726074/nintendont/icon.png",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "wii-cleanrip",
+      "title": "CleanRip",
+      "platform": "Wii",
+      "category": "Tools",
+      "project": "CleanRip",
+      "version": "2.4",
+      "filename": "CleanRip-v2.4.zip",
+      "url": "https://github.com/emukidid/cleanrip/releases/download/2.4/CleanRip-v2.4.zip",
+      "pages": [
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "gamecube-gcmm",
+      "title": "GCMM",
+      "platform": "GameCube",
+      "category": "Tools",
+      "project": "GCMM",
+      "version": "1.5.2",
+      "filename": "gcmm_1.5.2.zip",
+      "url": "https://github.com/suloku/gcmm/releases/download/1.5.2/gcmm_1.5.2.zip",
+      "pages": [
+        "console/retro/gamecube.html",
+        "console/retro/wii.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "gamecube-swiss",
+      "title": "Swiss",
+      "platform": "GameCube",
+      "category": "Tools",
+      "project": "Swiss",
+      "version": "v0.6r2119",
+      "filename": "swiss_r2119.7z",
+      "url": "https://github.com/emukidid/swiss-gc/releases/download/v0.6r2119/swiss_r2119.7z",
+      "pages": [
+        "console/retro/gamecube.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "gamecube-cleanrip",
+      "title": "CleanRip",
+      "platform": "GameCube",
+      "category": "Tools",
+      "project": "CleanRip",
+      "version": "2.4",
+      "filename": "CleanRip-v2.4-gc.zip",
+      "url": "https://github.com/emukidid/cleanrip/releases/download/2.4/CleanRip-v2.4-gc.zip",
+      "pages": [
+        "console/retro/gamecube.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-twilight-flashcard",
+      "title": "TWiLight Menu++ Flashcard",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "TWiLight Menu++",
+      "version": "v27.25.1",
+      "filename": "TWiLightMenu-Flashcard.7z",
+      "url": "https://github.com/DS-Homebrew/TWiLightMenu/releases/download/v27.25.1/TWiLightMenu-Flashcard.7z",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "dsi-twilight",
+      "title": "TWiLight Menu++ DSi",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "TWiLight Menu++",
+      "version": "v27.25.1",
+      "filename": "TWiLightMenu-DSi.7z",
+      "url": "https://github.com/DS-Homebrew/TWiLightMenu/releases/download/v27.25.1/TWiLightMenu-DSi.7z",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-nds-bootstrap",
+      "title": "nds-bootstrap",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "nds-bootstrap",
+      "version": "v2.17.0",
+      "filename": "nds-bootstrap.zip",
+      "url": "https://github.com/DS-Homebrew/nds-bootstrap/releases/download/v2.17.0/nds-bootstrap.zip",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-godmode9i",
+      "title": "GodMode9i",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "GodMode9i",
+      "version": "v3.10.0",
+      "filename": "GodMode9i.7z",
+      "url": "https://github.com/DS-Homebrew/GodMode9i/releases/download/v3.10.0/GodMode9i.7z",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "ds-ftpd",
+      "title": "ftpd for Nintendo DS",
+      "platform": "Nintendo DS",
+      "category": "Tools",
+      "project": "ftpd",
+      "version": "v3.2.1",
+      "filename": "ftpd.nds",
+      "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.nds",
+      "pages": [
+        "console/retro/ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-luma",
+      "title": "Luma3DS",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "Luma3DS",
+      "version": "v13.5",
+      "filename": "Luma3DSv13.5.zip",
+      "url": "https://github.com/LumaTeam/Luma3DS/releases/download/v13.5/Luma3DSv13.5.zip",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-godmode9",
+      "title": "GodMode9",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "GodMode9",
+      "version": "v2.2.3",
+      "filename": "GodMode9-v2.2.3-20260331144941.zip",
+      "url": "https://github.com/d0k3/GodMode9/releases/download/v2.2.3/GodMode9-v2.2.3-20260331144941.zip",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-universal-updater",
+      "title": "Universal-Updater",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "Universal-Updater",
+      "version": "v3.4.1",
+      "filename": "Universal-Updater.cia",
+      "url": "https://github.com/Universal-Team/Universal-Updater/releases/download/v3.4.1/Universal-Updater.cia",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-checkpoint",
+      "title": "Checkpoint",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "Checkpoint",
+      "version": "v5.3.0",
+      "filename": "Checkpoint.cia",
+      "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.cia",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-ftpd",
+      "title": "ftpd for Nintendo 3DS",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "ftpd",
+      "version": "v3.2.1",
+      "filename": "ftpd.cia",
+      "url": "https://github.com/mtheall/ftpd/releases/download/v3.2.1/ftpd.cia",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "3ds-twilight",
+      "title": "TWiLight Menu++ 3DS",
+      "platform": "Nintendo 3DS",
+      "category": "Tools",
+      "project": "TWiLight Menu++",
+      "version": "v27.25.1",
+      "filename": "TWiLightMenu-3DS.7z",
+      "url": "https://github.com/DS-Homebrew/TWiLightMenu/releases/download/v27.25.1/TWiLightMenu-3DS.7z",
+      "pages": [
+        "console/retro/3ds.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "mirror": false
+    },
+    {
+      "id": "xbox360-peerpressure-installer",
+      "title": "Peer Pressure installer",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "Peer Pressure",
+      "version": "v1.0.477",
+      "filename": "SoftmodInstaller.zip",
+      "url": "https://github.com/grimdoomer/Xbox360PeerPressure/releases/download/v1.0.477/SoftmodInstaller.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-badupdate",
+      "title": "Xbox360BadUpdate",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "BadUpdate",
+      "version": "v1.3",
+      "filename": "Xbox360BadUpdate-Retail-USB-v1.3.zip",
+      "url": "https://github.com/grimdoomer/Xbox360BadUpdate/releases/download/BadUpdate-v1.3/Xbox360BadUpdate-Retail-USB-v1.3.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-abadavatar",
+      "title": "ABadAvatar",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "ABadAvatar",
+      "version": "public beta 1.0",
+      "filename": "ABadAvatar-publicbeta1.0.zip",
+      "url": "https://github.com/shutterbug2000/ABadAvatar/releases/download/vPB1.0/ABadAvatar-publicbeta1.0.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-freemyxe",
+      "title": "FreeMyXe",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "FreeMyXe",
+      "version": "1.2.1",
+      "filename": "FreeMyXe-1.2.1-xell-b1bb00b.zip",
+      "url": "https://github.com/FreeMyXe/FreeMyXe/releases/download/1.2.1/FreeMyXe-1.2.1-xell-b1bb00b.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-xeunshackle",
+      "title": "XeUnshackle",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "XeUnshackle",
+      "version": "BETA v1.03",
+      "filename": "XeUnshackle-BETA-v1_03.zip",
+      "url": "https://github.com/Byrom90/XeUnshackle/releases/download/v1.03/XeUnshackle-BETA-v1_03.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-xell",
+      "title": "XeLL Reloaded",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "XeLL Reloaded",
+      "version": "v0.993",
+      "filename": "XeLL_Reloaded-2stages-v0.993.tar.gz",
+      "url": "https://github.com/Free60Project/xell-reloaded/releases/download/v0.993/XeLL_Reloaded-2stages-v0.993.tar.gz",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-fatxplorer",
+      "title": "FATXplorer x64 beta",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "FATXplorer",
+      "version": "3.0.0.27437 Beta 37 Hotfix 2",
+      "filename": "FATXplorerBeta64.zip",
+      "url": "https://api.eaton-works.com/download/FATXplorer/Beta/FATXplorerBeta64.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-velocity",
+      "title": "Velocity Windows",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "Velocity",
+      "version": "v1.0.0 cf0b84cc8b",
+      "filename": "Velocity-Windows-cf0b84cc8b.zip",
+      "url": "https://github.com/hetelek/Velocity/releases/download/v1.0.0/Velocity-Windows-cf0b84cc8b.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "xbox360-xecli",
+      "title": "XeCLI portable Windows x64",
+      "platform": "Xbox 360",
+      "category": "Tools",
+      "project": "XeCLI",
+      "version": "v2.0.0",
+      "filename": "XeCLI-2.0.0-win-x64.zip",
+      "url": "https://github.com/SaveEditors/xecli/releases/download/v2.0.0/XeCLI-2.0.0-win-x64.zip",
+      "pages": [
+        "console/xbox360.html"
+      ],
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "mirror": false
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "scope": "xbox360-more",
+  "batch": 2,
+  "researchedAt": "2026-11-02",
+  "resources": [
+    {
+      "group": "skins",
+      "format": "XZP",
+      "runtime": "Aurora Dashboard 0.7 family on a homebrew-enabled Xbox 360. No exact console model or system-dashboard pin is published by this skin author.",
+      "temporary": "This skin does not enable unsigned code or persist a temporary exploit. A working Aurora setup is required; no specific temporary exploit or Peer Pressure certification is made.",
+      "launch": "Aurora → B → Skin → Change",
+      "id": "auroraflow-global",
+      "title": "AuroraFlow Global",
+      "family": "AuroraFlow",
+      "author": "MaZ3PlaYZ / MaZ3; based on CH360 Full Background Theme and Dark Ultimate/DASH menu assets",
+      "version": "Final v1.5",
+      "source": "https://github.com/MaZ3PlaYZ/AuroraFlow-",
+      "release": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/tag/Final-v1.5",
+      "description": "Modern full-background Aurora skin with temperature/IP panels, green borders and a matching coverflow layout.",
+      "prerequisites": "Aurora 0.7 family, any Aurora language. Use the matching Global Modern by MaZ3 layout; language variants are not interchangeable.",
+      "installPath": "Hdd1:\\Aurora\\Skins\\AuroraFlow.Global.xzp",
+      "usbPath": "Usb0:\\Aurora\\Skins\\AuroraFlow.Global.xzp",
+      "setup": [
+        "Copy AuroraFlow.Global.xzp into the Skins folder of your actual Aurora installation. Keep your existing XZP until the new skin is checked.",
+        "Copy Modern.by.MaZ3.Global.cfljson into Aurora\\Media\\Layouts\\. Keep skin and layout language variants matched.",
+        "Press B → Skin and select AuroraFlow (Global). Disable Animation and select the matching Modern by MaZ3 layout. Restart Aurora."
+      ],
+      "notes": "Global supports all Aurora languages; English is explicitly English-only. Current README has an apparent destination typo (User/Backgrounds); original-author release/post and Aurora conventions put XZP files in Skins and CFLJSON layouts in Media/Layouts. Publisher skin.meta has trailing bytes after its first JSON object; the original asset is preserved byte-for-byte and hardware behavior is untested.",
+      "downloadUrl": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/download/Final-v1.5/AuroraFlow.Global.xzp",
+      "expectedBytes": 31007960,
+      "expectedSha256": "bdc72ccda62de7ebdaa05bccf08311ec7ce65e4ca3021f60e945af8510abeaf3",
+      "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-global.xzp",
+      "file": {
+        "name": "AuroraFlow.Global.xzp",
+        "sourceUrl": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/download/Final-v1.5/AuroraFlow.Global.xzp",
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-global.xzp",
+        "bytes": 31007960,
+        "sha256": "bdc72ccda62de7ebdaa05bccf08311ec7ce65e4ca3021f60e945af8510abeaf3"
+      },
+      "companions": [
+        {
+          "name": "Modern.by.MaZ3.Global.cfljson",
+          "sourceUrl": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/download/Final-v1.5/Modern.by.MaZ3.Global.cfljson",
+          "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-global.cfljson",
+          "bytes": 40975,
+          "sha256": "643fc6e17f24330c8cc59a1d954528365eaacf40de539f7b37cb197caf4a37ec",
+          "format": "CFLJSON",
+          "role": "Matching coverflow layout",
+          "installPath": "Aurora\\Media\\Layouts\\Modern.by.MaZ3.Global.cfljson"
+        }
+      ],
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-main-preview.png",
+        "sourceUrl": "https://raw.githubusercontent.com/MaZ3PlaYZ/AuroraFlow-/2938da99358c47f3b4e7228f1337cf68d6db6dab/ss2.png",
+        "credit": "MaZ3PlaYZ · official AuroraFlow interface screenshot from author repository; shared family preview",
+        "bytes": 1122958,
+        "sha256": "a6ad23df2d438dc09a6ab177b01fd6f0e400d46c2f9ecab887e64114ea4ddbc4"
+      },
+      "verification": {
+        "magic": "XUIZ",
+        "declaredBytes": 31007960,
+        "headerVersion": 1,
+        "entryCount": 446,
+        "allEntriesWithinBounds": true,
+        "hasAuroraMainScene": true,
+        "skinMetaRaw": "{\"metaver\":1,\"skinname\":\"AuroraFlow (Global)\",\"author\":\"MaZ3\",\"revision\":1,\"description\":\"Modern reimagining of the Xbox 360 Aurora Dashboard, featuring a clean interface, custom flow layout, and a custom boot animation for a fresh, refined dashboard experience.\",\"creationdate\":\"2026-09-20\",\"updateid\":\"\",\"auroraver\":\"0.7\"}te\":\"2018-06-26\",\"updateid\":\"\",\"auroraver\":\"0.7\"}",
+        "skinVer": [
+          0,
+          7,
+          1595,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "group": "skins",
+      "format": "XZP",
+      "runtime": "Aurora Dashboard 0.7 family on a homebrew-enabled Xbox 360. No exact console model or system-dashboard pin is published by this skin author.",
+      "temporary": "This skin does not enable unsigned code or persist a temporary exploit. A working Aurora setup is required; no specific temporary exploit or Peer Pressure certification is made.",
+      "launch": "Aurora → B → Skin → Change",
+      "id": "auroraflow-en",
+      "title": "AuroraFlow English",
+      "family": "AuroraFlow",
+      "author": "MaZ3PlaYZ / MaZ3; based on CH360 Full Background Theme and Dark Ultimate/DASH menu assets",
+      "version": "Final v1.5",
+      "source": "https://github.com/MaZ3PlaYZ/AuroraFlow-",
+      "release": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/tag/Final-v1.5",
+      "description": "Modern full-background Aurora skin with temperature/IP panels, green borders and a matching coverflow layout.",
+      "prerequisites": "Aurora 0.7 family, English only. Use the matching English Modern by MaZ3 layout; language variants are not interchangeable.",
+      "installPath": "Hdd1:\\Aurora\\Skins\\AuroraFlow.EN.xzp",
+      "usbPath": "Usb0:\\Aurora\\Skins\\AuroraFlow.EN.xzp",
+      "setup": [
+        "Copy AuroraFlow.EN.xzp into the Skins folder of your actual Aurora installation. Keep your existing XZP until the new skin is checked.",
+        "Copy Modern.by.MaZ3.cfljson into Aurora\\Media\\Layouts\\. Keep skin and layout language variants matched.",
+        "Press B → Skin and select AuroraFlow (EN). Disable Animation and select the matching Modern by MaZ3 layout. Restart Aurora."
+      ],
+      "notes": "Global supports all Aurora languages; English is explicitly English-only. Current README has an apparent destination typo (User/Backgrounds); original-author release/post and Aurora conventions put XZP files in Skins and CFLJSON layouts in Media/Layouts. Publisher skin.meta has trailing bytes after its first JSON object; the original asset is preserved byte-for-byte and hardware behavior is untested.",
+      "downloadUrl": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/download/Final-v1.5/AuroraFlow.EN.xzp",
+      "expectedBytes": 31210299,
+      "expectedSha256": "868fc3c8374c5217da4247077e51e8693cb81f146bf4d50339c9b17eac41bb83",
+      "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-en.xzp",
+      "file": {
+        "name": "AuroraFlow.EN.xzp",
+        "sourceUrl": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/download/Final-v1.5/AuroraFlow.EN.xzp",
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-en.xzp",
+        "bytes": 31210299,
+        "sha256": "868fc3c8374c5217da4247077e51e8693cb81f146bf4d50339c9b17eac41bb83"
+      },
+      "companions": [
+        {
+          "name": "Modern.by.MaZ3.cfljson",
+          "sourceUrl": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/download/Final-v1.5/Modern.by.MaZ3.cfljson",
+          "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-en.cfljson",
+          "bytes": 40968,
+          "sha256": "831aed750a6fe9c8d5c6c179cc38c2f4193bb3cfe922f7152b918762b85bf412",
+          "format": "CFLJSON",
+          "role": "Matching coverflow layout",
+          "installPath": "Aurora\\Media\\Layouts\\Modern.by.MaZ3.cfljson"
+        }
+      ],
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\auroraflow-main-preview.png",
+        "sourceUrl": "https://raw.githubusercontent.com/MaZ3PlaYZ/AuroraFlow-/2938da99358c47f3b4e7228f1337cf68d6db6dab/ss2.png",
+        "credit": "MaZ3PlaYZ · official AuroraFlow interface screenshot from author repository; shared family preview",
+        "bytes": 1122958,
+        "sha256": "a6ad23df2d438dc09a6ab177b01fd6f0e400d46c2f9ecab887e64114ea4ddbc4"
+      },
+      "verification": {
+        "magic": "XUIZ",
+        "declaredBytes": 31210299,
+        "headerVersion": 1,
+        "entryCount": 447,
+        "allEntriesWithinBounds": true,
+        "hasAuroraMainScene": true,
+        "skinMetaRaw": "{\"metaver\":1,\"skinname\":\"AuroraFlow (EN)\",\"author\":\"MaZ3\",\"revision\":1,\"description\":\"Modern reimagining of the Xbox 360 Aurora Dashboard, featuring a clean interface, custom flow layout, and a custom boot animation for a fresh, refined dashboard experience.\",\"creationdate\":\"2026-09-20\",\"updateid\":\"\",\"auroraver\":\"0.7\"}te\":\"2018-06-26\",\"updateid\":\"\",\"auroraver\":\"0.7\"}",
+        "skinVer": [
+          0,
+          7,
+          1595,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "group": "skins",
+      "format": "XZP",
+      "runtime": "Aurora 0.7 family on an already homebrew-enabled Xbox 360; packaged skin.ver is0.7 revision1622. Later-Aurora compatibility is not independently hardware-tested.",
+      "temporary": "This skin does not enable unsigned code or persist a temporary exploit. A working Aurora setup is required; no specific temporary exploit or Peer Pressure certification is made.",
+      "launch": "Aurora → B → Skin → Change",
+      "id": "nxe-avatar-v5",
+      "title": "NXE Splash + Avatar + Xbox logo",
+      "family": "NXE Splash Avatar",
+      "author": "Phoenix, Mynam3isnathan and Theodor94 / Theodor Andrei",
+      "version": "v5",
+      "source": "https://github.com/theodor-ubp/xbox360-skins-aurora",
+      "release": "https://github.com/theodor-ubp/xbox360-skins-aurora/releases/tag/v5",
+      "description": "Default-style Aurora skin with an NXE-inspired splash, an avatar and Xbox-logo elements.",
+      "prerequisites": "Aurora 0.7 family (packaged skin.meta targets 0.7; skin.ver contains revision1622). No minimum system dashboard or motherboard is specified.",
+      "installPath": "Hdd1:\\Aurora\\Skins\\Def-NXESp-Av-Xblogov5.xzp",
+      "usbPath": "Usb0:\\Aurora\\Skins\\Def-NXESp-Av-Xblogov5.xzp",
+      "setup": [
+        "Copy the original XZP to the Skins folder of your actual Aurora install via USB or FTP.",
+        "Press B → Skins and choose NXE Splash + Avatar + Xblogo. Restart Aurora.",
+        "Keep a working skin and file-manager recovery route before changing themes."
+      ],
+      "notes": "The author reports avatar prop animation is faster than normal. For personal use only; author grants no commercial or derivative-use license.",
+      "license": "Personal use only; no commercial/derivative license granted",
+      "downloadUrl": "https://github.com/theodor-ubp/xbox360-skins-aurora/releases/download/v5/Def-NXESp-Av-Xblogov5.xzp",
+      "expectedBytes": 5605497,
+      "expectedSha256": "b7fcd1cfbb9f4ebd96b717e6afc03716c18291d5d23185f3a94b2f5a35be7b53",
+      "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\nxe-avatar-v5.xzp",
+      "file": {
+        "name": "Def-NXESp-Av-Xblogov5.xzp",
+        "sourceUrl": "https://github.com/theodor-ubp/xbox360-skins-aurora/releases/download/v5/Def-NXESp-Av-Xblogov5.xzp",
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\nxe-avatar-v5.xzp",
+        "bytes": 5605497,
+        "sha256": "b7fcd1cfbb9f4ebd96b717e6afc03716c18291d5d23185f3a94b2f5a35be7b53"
+      },
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\nxe-avatar-v5-background.jpg",
+        "bytes": 155117,
+        "sha256": "00fb92c438220fdff411ada9aa8edb479c67676a1eec805f52cd7a62c168bec4",
+        "archiveEntry": "Images\\Background\\Aurora.Background.jpg",
+        "sourceUrl": "https://github.com/theodor-ubp/xbox360-skins-aurora/releases/download/v5/Def-NXESp-Av-Xblogov5.xzp",
+        "credit": "Phoenix / Mynam3isnathan / Theodor94 · packaged skin background artwork, not a UI screenshot"
+      },
+      "verification": {
+        "magic": "XUIZ",
+        "declaredBytes": 5605497,
+        "headerVersion": 1,
+        "entryCount": 426,
+        "allEntriesWithinBounds": true,
+        "hasAuroraMainScene": true,
+        "skinMetaRaw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"NXE Splash + Avatar + Xblogo\",\r\n\t\"author\" : \"Phoenix, Mynam3isnathan, Theodor94\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Aurora's Default Skin with NXE styled minimal splash screen. Avatar included.\",\r\n\t\"creationdate\" : \"2024-08-24\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}\r\n",
+        "skinVer": [
+          0,
+          7,
+          1622,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "group": "skins",
+      "format": "XZP",
+      "runtime": "Legacy Aurora0.6b on an RGH Xbox360, as described by the author; no exact system firmware or motherboard requirement published.",
+      "temporary": "Original source describes an RGH setup. Temporary exploit and Peer Pressure compatibility are not confirmed; the skin itself cannot enable homebrew.",
+      "launch": "Aurora → B → Skin → Change",
+      "id": "xboxone-experience",
+      "title": "Xbox ONE Experience · Aurora0.6b",
+      "family": "Xbox ONE Experience",
+      "author": "CEOISS / juanoliveira82; based on Aurora SteamOS by mrknorton",
+      "version": "Revision1 · snapshot e7c17cada718",
+      "source": "https://github.com/juanoliveira82/aurora-skins/tree/master/XboxOneExperience-Skin",
+      "description": "Legacy Aurora skin with Xbox One / Windows10-inspired colors, buttons and layouts.",
+      "prerequisites": "Specifically Aurora0.6b as stated by the author. Packaged skin.ver is0.6 revision1238. Do not assume0.7b.2 support.",
+      "installPath": "Hdd1:\\Aurora\\Skins\\XboxOneExperience.xzp",
+      "usbPath": "Usb0:\\Aurora\\Skins\\XboxOneExperience.xzp",
+      "setup": [
+        "Confirm you are using the source-pinned Aurora0.6b installation and retain the working skin.",
+        "Copy XboxOneExperience.xzp into that installation’s Skins folder. Do not unpack it or overwrite Default.xzp.",
+        "Select Xbox ONE Experience in Aurora’s B → Skin menu, then restart Aurora."
+      ],
+      "notes": "The repository ships a ready XZP directly; only that file was downloaded, not a repository/source archive. Original packaged metadata identifies author CEOISS, revision1, creationdate2017-06-05 and auroraver0.6.",
+      "downloadUrl": "https://raw.githubusercontent.com/juanoliveira82/aurora-skins/e7c17cada7189fa5bee2535ed4d6b7424ad1a7a6/XboxOneExperience-Skin/XboxOneExperience.xzp",
+      "expectedBytes": 6420180,
+      "expectedSha256": "bca1ecf133245b6e6a61d83633f3ef3a85c9878bf467308ec95c8fdf56fbc4c7",
+      "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\xboxone-experience.xzp",
+      "file": {
+        "name": "XboxOneExperience.xzp",
+        "sourceUrl": "https://raw.githubusercontent.com/juanoliveira82/aurora-skins/e7c17cada7189fa5bee2535ed4d6b7424ad1a7a6/XboxOneExperience-Skin/XboxOneExperience.xzp",
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\xboxone-experience.xzp",
+        "bytes": 6420180,
+        "sha256": "bca1ecf133245b6e6a61d83633f3ef3a85c9878bf467308ec95c8fdf56fbc4c7"
+      },
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch2\\xboxone-experience-background.jpg",
+        "bytes": 132163,
+        "sha256": "500b7aec2e2ca7de14a67f0b95d253221af790b045eb624cabc233cf033170fa",
+        "archiveEntry": "Images\\Background\\Aurora.Background.jpg",
+        "sourceUrl": "https://raw.githubusercontent.com/juanoliveira82/aurora-skins/e7c17cada7189fa5bee2535ed4d6b7424ad1a7a6/XboxOneExperience-Skin/XboxOneExperience.xzp",
+        "credit": "CEOISS / juanoliveira82 · packaged skin background artwork, not a UI screenshot"
+      },
+      "verification": {
+        "magic": "XUIZ",
+        "declaredBytes": 6420180,
+        "headerVersion": 1,
+        "entryCount": 311,
+        "allEntriesWithinBounds": true,
+        "hasAuroraMainScene": true,
+        "skinMetaRaw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Xbox ONE Experience\",\r\n\t\"author\" : \"CEOISS\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Xbox ONE inspired skin.\",\r\n\t\"creationdate\" : \"2017-06-05\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.6\"\r\n}",
+        "skinVer": [
+          0,
+          6,
+          1238,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "readySkinFiles": 4,
+  "readyLayoutCompanions": 2,
+  "families": 3,
+  "downloadedPayloadsExecuted": false,
+  "hardwareTested": false,
+  "sources": [
+    {
+      "url": "https://github.com/MaZ3PlaYZ/AuroraFlow-/releases/tag/Final-v1.5",
+      "purpose": "Exact EN/Global language requirements and official XZP/layout asset digests"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MaZ3PlaYZ/AuroraFlow-/2938da99358c47f3b4e7228f1337cf68d6db6dab/README.md",
+      "purpose": "Original author setup and source screenshot references; destination typo called out"
+    },
+    {
+      "url": "https://www.reddit.com/r/360hacks/comments/1x53gd2/auroraflow_skin_final_version_release/",
+      "purpose": "Original author release post and correct Skins/Media/Layouts destinations"
+    },
+    {
+      "url": "https://github.com/theodor-ubp/xbox360-skins-aurora/releases/tag/v5",
+      "purpose": "Official latest NXE ready XZP, author credits and known avatar prop speed issue"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/juanoliveira82/aurora-skins/e7c17cada7189fa5bee2535ed4d6b7424ad1a7a6/XboxOneExperience-Skin/README.md",
+      "purpose": "Aurora0.6b pin and SteamOS/mrknorton base credit"
+    },
+    {
+      "url": "https://github.com/rene0/xbox360/blob/master/extract360.py",
+      "purpose": "Read-only XUIZ index format reference; downloaded reference was not executed"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://github.com/mLoaDs/XBox360-Skins",
+      "reason": "Placeholder README only; no ready skin file found."
+    },
+    {
+      "url": "https://www.realmodscene.com/index.php?/topic/16899-skin-aurora-avatar-v07b2/",
+      "reason": "HTTP403 from web reader; no file downloaded through this inaccessible reference."
+    }
+  ]
+}

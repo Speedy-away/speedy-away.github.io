@@ -1,0 +1,40 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "Additional original GoldHEN PS4 cheat definitions and exact XMLs from the already pinned official PS Game Patch release; no compatibility or version replacements.",
+  "patchFiles": [
+    "GodofWarRagnarok-Orbis.xml",
+    "ConcreteGenie-Orbis.xml",
+    "AssassinsCreedEzioCollection-Orbis.xml",
+    "LiesOfP-Orbis.xml",
+    "DragonAgeInquisition-Orbis.xml",
+    "CrisisCoreFinalFantasyVIIReunion-Orbis.xml",
+    "AssassinsCreedRougeRemastered-Orbis.xml",
+    "SonicFrontiers-Orbis.xml",
+    "ResidentEvilHD-Orbis.xml",
+    "HogwartsLegacy-Orbis.xml",
+    "TheOuterWorlds-Orbis.xml",
+    "DragonsDogmaDarkArisen-Orbis.xml",
+    "LifeisStrange3-TrueColors-Orbis.xml",
+    "Skyrim-Orbis.xml",
+    "KenaBridgeofSpirits-Orbis.xml",
+    "NeedforSpeedHeat-Orbis.xml",
+    "DeusExMankindDivided-Orbis.xml",
+    "RiseoftheTombRaider-Orbis.xml",
+    "WoLong-Orbis.xml",
+    "Wreckfest-Orbis.xml"
+  ],
+  "cheats": [
+    {"game":"hogwarts-legacy","title":"Hogwarts Legacy","filename":"CUSA12824_01.05.json","steamApp":990080,"expectedName":"hogwarts legacy"},
+    {"game":"dragon-age-inquisition","title":"Dragon Age: Inquisition","filename":"CUSA00503_01.12.json","steamApp":1222690,"expectedName":"dragon age"},
+    {"game":"kena-bridge-of-spirits","title":"Kena: Bridge of Spirits","filename":"CUSA24853_02.08.json","steamApp":1954200,"expectedName":"kena bridge of spirits"},
+    {"game":"need-for-speed-heat","title":"Need for Speed Heat","filename":"CUSA15090_01.07.json","steamApp":1222680,"expectedName":"need for speed heat"},
+    {"game":"wo-long-fallen-dynasty","title":"Wo Long: Fallen Dynasty","filename":"CUSA36986_01.27.json","steamApp":1448440,"expectedName":"wo long fallen dynasty"},
+    {"game":"resident-evil-hd","title":"Resident Evil HD Remaster","filename":"CUSA01067_01.00.json","steamApp":304240,"expectedName":"resident evil"},
+    {"game":"sonic-frontiers","title":"Sonic Frontiers","filename":"CUSA28194_01.10.json","steamApp":1237320,"expectedName":"sonic frontiers"},
+    {"game":"deus-ex-mankind-divided","title":"Deus Ex: Mankind Divided","filename":"CUSA01836_01.14.json","steamApp":337000,"expectedName":"deus ex mankind divided"},
+    {"game":"the-outer-worlds","title":"The Outer Worlds","filename":"CUSA13689_01.04.json","steamApp":578650,"expectedName":"the outer worlds"},
+    {"game":"final-fantasy-xv","title":"Final Fantasy XV","filename":"CUSA01615_01.29.json","steamApp":637650,"expectedName":"final fantasy xv"},
+    {"game":"final-fantasy-vii-remake","title":"Final Fantasy VII Remake","filename":"CUSA07187_01.02.json","steamApp":1462040,"expectedName":"final fantasy vii remake"},
+    {"game":"persona-5-royal","title":"Persona 5 Royal","filename":"CUSA17419_01.01.json","steamApp":1687950,"expectedName":"persona 5 royal"}
+  ]
+}

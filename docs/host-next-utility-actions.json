@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02",
+  "scope": "One original-author stable FTP ready BIN reviewed through the exact GamerHack 9.00 utility follow-up. Original-only Download and user-selected exact-file Load; no public payload mirror.",
+  "actions": [
+    {
+      "id": "ps4-original-hippie68-ftp-1-08b-900",
+      "platform": "ps4",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "label": "FTP Server · hippie68",
+      "version": "1.08b",
+      "format": "BIN",
+      "firmwares": [
+        "9.00"
+      ],
+      "bytes": 37824,
+      "sha256": "695082f37c5cfdce14a06fbd567fa8651017ee2e31f3e95ae7a769b4287cb0e9",
+      "downloadURL": "https://github.com/hippie68/ps4-ftp/releases/download/v1.08b/ftp_server_v1.08b.bin",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready",
+        "input": "user-file"
+      },
+      "source": "https://github.com/hippie68/ps4-ftp/releases/tag/v1.08b",
+      "sourceURL": "https://github.com/hippie68/ps4-ftp/releases/download/v1.08b/ftp_server_v1.08b.bin",
+      "sourceCommit": "c903943d93dd082b590ee747c114a8c2436aaf71",
+      "instructionsURL": "https://github.com/hippie68/ps4-ftp/blob/c903943d93dd082b590ee747c114a8c2436aaf71/README.md",
+      "license": "Original compiled stable release by hippie68. No redistribution licence is asserted. Download uses the author's release asset; Load reads a user-selected exact file without persistence.",
+      "publicMirror": false,
+      "mirror": false,
+      "image": "/assets/images/host-selector/whatwhatboy-ps4.jpg",
+      "imageAlt": "PS4 console for hippie68 FTP Server",
+      "imageRole": "Console artwork",
+      "imageDescription": "Existing PS4 console artwork; not an FTP Server interface screenshot.",
+      "requirements": [
+        "This action is pinned to PS4 firmware 9.00. Use the original stable ftp_server_v1.08b.bin above; the older GamerHack FTP file is a different binary.",
+        "Start compatible GoldHEN on the PS4, enable its HTTP BinLoader on port 9090 and pair the desktop sender. Load requires selecting the exact downloaded BIN.",
+        "The FTP server listens on port 1337. After the console reports its address, connect an FTP client on the same local network to that address and port.",
+        "Do not start a second FTP server on port 1337 or send this payload again while it is running. Use the custom FTP command SHUTDOWN to stop it.",
+        "A completed transfer confirms bytes sent, not execution. Check the console's FTP notification before using the server or loading another payload."
+      ],
+      "tags": [
+        "PS4",
+        "9.00",
+        "FTP",
+        "FTP Server",
+        "hippie68",
+        "1.08b",
+        "BIN",
+        "1337",
+        "GoldHEN"
+      ],
+      "sourceEvidence": {
+        "release": "https://github.com/hippie68/ps4-ftp/releases/tag/v1.08b",
+        "readme": "https://github.com/hippie68/ps4-ftp/blob/c903943d93dd082b590ee747c114a8c2436aaf71/README.md",
+        "readmeSHA256": "23368510ea44a9e0c3d146b0410dfce9f4c220b73d7f1673b02b5b91a56ec7b3",
+        "assetId": 164883784,
+        "assetUpdatedAt": "2024-04-29T09:24:13Z",
+        "review": "/docs/qa/host-next-utility-source-review.json"
+      },
+      "loaderEvidence": {
+        "source": "The FTP author's pinned 9.00 host names this FTP source and sends ftp.bin through GoldHEN HTTP9090. Only dumper.bin, history_blocker.bin and web_activator.bin are diverted to WebKit. The FTP author's discussion separately confirms manual FTP payload loading on 9.00 with GoldHEN's BinLoader. The stable source builds a native position-independent flat BIN with a self-initializing _main entry.",
+        "host": "https://github.com/hippie68/hippie68.github.io/blob/24905c2e85a3c7c753ded8da2e26dc368bdfde2d/900/index.html#L1370-L1426",
+        "authorStatement": "https://github.com/hippie68/ftpdump/discussions/22",
+        "hardwareExecution": false,
+        "sourceConfirmedGoldHENFirmware": true
+      }
+    }
+  ]
+}

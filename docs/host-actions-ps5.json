@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "platform": "ps5",
+  "reviewed": "2026-11-02",
+  "scope": "Launcher actions, not a claim that every payload supports every firmware. Empty firmware lists mean release-specific compatibility must be checked. Existing binary versions and checksums are preserved.",
+  "actions": [
+    {
+      "id": "ps5-relapse",
+      "label": "Relapse",
+      "category": "loaders",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.20",
+        "7.40",
+        "7.60",
+        "7.61",
+        "8.00",
+        "8.20",
+        "8.40",
+        "8.60",
+        "9.00",
+        "9.20",
+        "9.40",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.20",
+        "10.40",
+        "11.00",
+        "11.20",
+        "11.60",
+        "12.00",
+        "12.02",
+        "12.20",
+        "12.40",
+        "12.60",
+        "12.70",
+        "13.00",
+        "13.20",
+        "13.40",
+        "13.42",
+        "13.60"
+      ],
+      "launchURL": "https://soniciso1.github.io/relapse/relapse.html",
+      "launchLabel": "Launch Relapse",
+      "format": "Browser host",
+      "requirements": [
+        "Open on a retail PS5 or testkit running an exact listed firmware; devkits use the separate upstream devkit build.",
+        "This navigation starts the external host on the device where it is opened. Use the console browser to run its exploit chain.",
+        "9.05, 10.60 and 11.40 are not in this host's firmware whitelist. Its integrated payload menu operates after a successful jailbreak."
+      ],
+      "source": "https://github.com/soniciso1/relapse/tree/112dbe5949e9c3de923bb0909289c58a9c082151",
+      "license": "No license was declared in the reviewed repository README; external launch link only. No runtime is bundled here.",
+      "sourceCommit": "112dbe5949e9c3de923bb0909289c58a9c082151",
+      "sourceReview": "/docs/qa/ps5-original-hosts.json"
+    },
+    {
+      "id": "ps5-umtx2",
+      "label": "UMTX2",
+      "category": "loaders",
+      "firmwares": [
+        "1.00",
+        "1.01",
+        "1.02",
+        "1.05",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "2.00",
+        "2.20",
+        "2.25",
+        "2.26",
+        "2.30",
+        "2.50",
+        "2.70",
+        "3.00",
+        "3.10",
+        "3.20",
+        "3.21",
+        "4.00",
+        "4.02",
+        "4.03",
+        "4.50",
+        "4.51",
+        "5.00",
+        "5.02",
+        "5.10",
+        "5.50"
+      ],
+      "launchURL": "https://umtx2.pages.dev/",
+      "launchLabel": "Open UMTX2 host",
+      "alternativeLaunchURL": "https://idlesauce.github.io/umtx2/",
+      "format": "Browser host",
+      "requirements": [
+        "Open in the PS5 browser on an exact supported firmware.",
+        "The official host provides a payload menu and automatic loader. This browser chain supports only its listed versions through 5.50."
+      ],
+      "source": "https://github.com/idlesauce/umtx2/tree/a080beb74d9e4bc34f3563798b716bd86b2d6ee0",
+      "license": "Unlicense; linked upstream build.",
+      "licenseURL": "https://github.com/idlesauce/umtx2/blob/main/LICENSE",
+      "sourceCommit": "a080beb74d9e4bc34f3563798b716bd86b2d6ee0",
+      "sourceReview": "/docs/qa/ps5-original-hosts.json"
+    },
+    {
+      "id": "ps5-payload-manager",
+      "label": "Payload Manager",
+      "category": "tools",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v0.6.3",
+      "launchURL": "http://{address}:8084/",
+      "launchLabel": "Open manager",
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-payload-manager/2a42054fd972/pldmgr_v0.6.3.elf",
+      "format": "ELF",
+      "bytes": 2795992,
+      "sha256": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "Requires an already jailbroken compatible PS5 and a running ELF loader.",
+        "Run through the local sender requires the loader to accept network connections on TCP 9021. Some autoloaders deliberately bind their loader to console loopback only; use the installed manager in that case.",
+        "Open manager works after the manager ELF is running. Its HTTP API is restricted to its own origin; a public website cannot directly launch files through that API.",
+        "To use this site's native download feed, add https://whatwhatboy.com/console/ps5/payloads.json in the manager's source settings.",
+        "Direct Run uses the documented HTTP URL interface of elfldr v0.27 on port 9021 to fetch the mirror from the actual hosting origin. The HTTP200 response is sent before downloading/spawning; it does not confirm success. Requires files hosted at a console-reachable public or computer LAN URL. Desktop localhost previews must use the paired sender; HTTPS pages can open the explicit loader link. The local sender instead sends verified local ELF bytes."
+      ],
+      "source": "https://github.com/itsPLK/ps5-payload-manager/releases/tag/v0.6.3",
+      "sourceURL": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.3/pldmgr_v0.6.3.elf",
+      "license": "No license was declared in the reviewed v0.6.3 README; retain the upstream release terms and attribution."
+    },
+    {
+      "id": "ps5-websrv",
+      "label": "File Explorer / websrv",
+      "category": "tools",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v0.34",
+      "launchURL": "http://{address}:8080/fs/",
+      "launchLabel": "Open file explorer",
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-websrv/54730c867c6e/websrv-ps5.elf",
+      "format": "ELF",
+      "bytes": 1597864,
+      "sha256": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "Requires a compatible, already running network ELF loader on TCP 9021.",
+        "After loading websrv, its file browser opens on HTTP 8080 at /fs/. The homebrew launcher is at /index.html; its ELF launcher is at /elfldr.",
+        "A normal public web page cannot create console directories or access internal storage without a native console service.",
+        "Direct Run uses the documented HTTP URL interface of elfldr v0.27 on port 9021 to fetch the mirror from the actual hosting origin. The HTTP200 response is sent before downloading/spawning; it does not confirm success. Requires files hosted at a console-reachable public or computer LAN URL. Desktop localhost previews must use the paired sender; HTTPS pages can open the explicit loader link. The local sender instead sends verified local ELF bytes."
+      ],
+      "source": "https://github.com/ps5-payload-dev/websrv/releases/tag/v0.34",
+      "sourceURL": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
+      "license": "GPL-3.0-or-later; bundled xterm.js uses MIT.",
+      "licenseURL": "https://github.com/ps5-payload-dev/websrv/blob/v0.34/README.md#license"
+    },
+    {
+      "id": "ps5-ftpsrv",
+      "label": "FTP server",
+      "category": "payloads",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v0.21.1",
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-ftpsrv/7d4b31c83eae/ftpsrv-ps5.elf",
+      "format": "ELF",
+      "bytes": 191864,
+      "sha256": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "Requires a jailbroken PS5, a compatible firmware/build and an active network ELF loader on TCP 9021.",
+        "After the payload starts, connect an FTP client to the console's LAN IP on port 2121. It is not an HTTP file browser.",
+        "Direct Run uses the documented HTTP URL interface of elfldr v0.27 on port 9021 to fetch the mirror from the actual hosting origin. The HTTP200 response is sent before downloading/spawning; it does not confirm success. Requires files hosted at a console-reachable public or computer LAN URL. Desktop localhost previews must use the paired sender; HTTPS pages can open the explicit loader link. The local sender instead sends verified local ELF bytes."
+      ],
+      "source": "https://github.com/ps5-payload-dev/ftpsrv/releases/tag/v0.21.1",
+      "sourceURL": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
+      "license": "GPL-3.0-or-later",
+      "licenseURL": "https://github.com/ps5-payload-dev/ftpsrv/blob/v0.21.1/README.md#license"
+    },
+    {
+      "id": "ps5-klogsrv",
+      "label": "Kernel log server",
+      "category": "payloads",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v0.9",
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-klogsrv/e828ec144231/klogsrv-ps5.elf",
+      "format": "ELF",
+      "bytes": 136016,
+      "sha256": "e828ec144231f81547cb58bc7d2c396fa984be0c2295f31364b58017816dcceb",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "Requires a jailbroken PS5, a compatible build and an active network ELF loader on TCP 9021.",
+        "After loading, read the console's kernel log with a TCP client on port 3232. The website does not pretend that this is an HTTP service.",
+        "Direct Run uses the documented HTTP URL interface of elfldr v0.27 on port 9021 to fetch the mirror from the actual hosting origin. The HTTP200 response is sent before downloading/spawning; it does not confirm success. Requires files hosted at a console-reachable public or computer LAN URL. Desktop localhost previews must use the paired sender; HTTPS pages can open the explicit loader link. The local sender instead sends verified local ELF bytes."
+      ],
+      "source": "https://github.com/ps5-payload-dev/klogsrv/releases/tag/v0.9",
+      "sourceURL": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
+      "license": "GPL-3.0-or-later",
+      "licenseURL": "https://github.com/ps5-payload-dev/klogsrv/blob/v0.9/README.md#license"
+    },
+    {
+      "id": "ps5-elfldr",
+      "label": "ELF Loader",
+      "category": "loaders",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v0.27",
+      "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-elfldr/82f622761017/elfldr-ps5.elf",
+      "format": "ELF",
+      "bytes": 394568,
+      "sha256": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d",
+      "requirements": [
+        "Bootstrap through an existing compatible jailbreak loader. Upstream documents initial loading on TCP 9020; that initial loader is a separate prerequisite.",
+        "Once started, the background loader receives raw ELF files on TCP 9021. Downloading this file does not start or install it."
+      ],
+      "source": "https://github.com/ps5-payload-dev/elfldr/releases/tag/v0.27",
+      "sourceURL": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
+      "license": "GPL-3.0-or-later",
+      "licenseURL": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/README.md#license"
+    },
+    {
+      "id": "ps5-shadowmountplus",
+      "label": "ShadowMountPlus",
+      "category": "payloads",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "1.7beta11",
+      "downloadURL": "/downloads/archive/f22d8b3749d7/shadowmountplus.elf",
+      "format": "ELF",
+      "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "Retains the site's existing pinned 1.7beta11 build; check its exact firmware and loader requirements before running.",
+        "The local sender requires a compatible active network ELF loader on TCP 9021. A successful transfer does not confirm a mount completed.",
+        "Direct Run uses the documented HTTP URL interface of elfldr v0.27 on port 9021 to fetch the mirror from the actual hosting origin. The HTTP200 response is sent before downloading/spawning; it does not confirm success. Requires files hosted at a console-reachable public or computer LAN URL. Desktop localhost previews must use the paired sender; HTTPS pages can open the explicit loader link. The local sender instead sends verified local ELF bytes."
+      ],
+      "source": "https://github.com/drakmor/ShadowMountPlus/releases",
+      "license": "Retain the pinned upstream build's license and attribution; no new license claim is made."
+    },
+    {
+      "id": "ps5-upload",
+      "label": "PS5upload service",
+      "category": "tools",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v10.6.0",
+      "downloadURL": "/downloads/archive/cd469f63fa67/ps5upload-10.6.0.elf",
+      "format": "ELF",
+      "sha256": "2f67651bf1320a83202b632782a1f404543b1ea4911dfb3be5a510971f015392",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "The native PS5 console service ELF is separate from desktop/mobile senders.",
+        "Retains the site's pinned v10.6.0 build and its release-specific firmware requirements. Requires a compatible active network ELF loader on TCP 9021.",
+        "Direct Run uses the documented HTTP URL interface of elfldr v0.27 on port 9021 to fetch the mirror from the actual hosting origin. The HTTP200 response is sent before downloading/spawning; it does not confirm success. Requires files hosted at a console-reachable public or computer LAN URL. Desktop localhost previews must use the paired sender; HTTPS pages can open the explicit loader link. The local sender instead sends verified local ELF bytes."
+      ],
+      "source": "https://github.com/phantomptr/ps5upload/releases",
+      "license": "Retain the pinned upstream build's license and attribution; no new license claim is made."
+    },
+    {
+      "id": "ps5-orbit-store",
+      "label": "Orbit Store",
+      "category": "tools",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v1.8.1",
+      "downloadURL": "/downloads/archive/5a12cb950970/orbit_store.elf",
+      "format": "ELF",
+      "sha256": "a9fe33c3b0338af074edb4f7c68bb3806a84efba718e3897f94eba9dc720f914",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "Retains the site's pinned v1.8.1 console ELF installer. Follow its firmware, homebrew and storage prerequisites.",
+        "The local sender requires a compatible active network ELF loader on TCP 9021. A sent result does not confirm the store installation completed.",
+        "Direct Run uses the documented HTTP URL interface of elfldr v0.27 on port 9021 to fetch the mirror from the actual hosting origin. The HTTP200 response is sent before downloading/spawning; it does not confirm success. Requires files hosted at a console-reachable public or computer LAN URL. Desktop localhost previews must use the paired sender; HTTPS pages can open the explicit loader link. The local sender instead sends verified local ELF bytes."
+      ],
+      "source": "https://github.com/saawant12/orbit-store-ps5/releases/tag/v1.8.1",
+      "license": "Retain the pinned upstream build's license and attribution; no new license claim is made."
+    },
+    {
+      "id": "ps5-lua-game-loader",
+      "label": "Lua game loader",
+      "category": "tools",
+      "firmwares": [],
+      "firmwareScope": "game-and-kernel-payload-specific",
+      "launchURL": "https://github.com/n0llptr/remote_lua_loader/blob/main/SETUP.md",
+      "launchLabel": "Open Lua setup",
+      "format": "Game save loader",
+      "requirements": [
+        "Requires a supported Artemis game and its matching CUSA/build, plus a prepared account-matched save installed using the upstream setup. Start the game to open the userland loader.",
+        "The native sender uses TCP9026 with an unsigned 64-bit little-endian byte length followed by Lua code. This is not raw ELF/BIN or a browser launch endpoint.",
+        "No packaged upstream release or ready encrypted save was found. This button opens installation instructions; it does not download or run a prepared loader.",
+        "Userland entry does not establish kernel-payload compatibility. Reviewed Lapse supports PS4 5.00–12.02 and PS5 through10.01; UMTX targets PS5 through7.61. These reviewed payloads do not establish PS4 13.52 kernel support."
+      ],
+      "source": "https://github.com/n0llptr/remote_lua_loader",
+      "protocolSource": "https://github.com/n0llptr/remote_lua_loader/blob/main/payloads/send_lua.py",
+      "license": "Upstream file terms vary; no runtime is bundled and no new license claim is made."
+    }
+  ]
+}

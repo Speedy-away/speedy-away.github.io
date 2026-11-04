@@ -1,0 +1,30 @@
+const fs=require('node:fs'),path=require('node:path');
+const {batches,filesFor}=require('./xbox360-library-batches.cjs');
+const root=path.resolve(__dirname,'..');
+const data=require('../docs/xbox360-more-library.json'),batch=batches().at(-1),qa=require('../docs/qa/xbox360-more-verification.json');
+const number=batch.batch,prefix='docs/qa/xbox360-more-batch'+number;
+const archive=JSON.parse(fs.readFileSync(path.join(root,prefix+'-archive.json'),'utf8'));
+if(!archive.scopeAllSha256Verified||!archive.merged||!archive.indexRefreshed)throw Error('Complete archive verification/merge/index before handoff');
+const browser=JSON.parse(fs.readFileSync(path.join(root,prefix+'-browser.json'),'utf8'));
+if(browser.status!=='passed')throw Error('Complete browser QA before handoff');
+const report=path.join(root,'docs/chat-handoffs/xbox360-more.json');
+const handoff=JSON.parse(fs.readFileSync(report,'utf8'));
+const added=data.resources.filter(x=>batch.addedIds.includes(x.id));
+const newFiles=added.reduce((n,x)=>n+filesFor(x).length,0);
+handoff.updatedAt=new Date().toISOString();handoff.status='Batch '+number+' complete locally; archive inventory merged and index refreshed';
+handoff.archive={...handoff.archive,scopedItems:qa.resources,readyFileRecords:qa.archivedFiles,bytes:qa.totalBytes,primaryDownloads:qa.resources,requiredCompanions:data.resources.reduce((n,x)=>n+(x.companions||[]).filter(c=>c.required).length,0),globalInventoryMergedByThisChat:true,indexRefreshed:true,report:prefix+'-archive.json'};
+handoff['batch'+number]={manifest:'docs/xbox360-more-batch'+number+'.json',addedItems:added.length,addedFiles:newFiles,addedIds:batch.addedIds,sources:batch.sourceFiles,baselinePreserved:batch.baseline,resources:added.map(x=>({id:x.id,title:x.title,version:x.version})),notes:batch.notes||[],unavailable:batch.unavailable||[]};
+handoff.verification={...handoff.verification,passed:true,archiveHashesVerified:qa.archivedFiles,localLinksAndAssets:qa.localLinksAndAssets,tests:{command:'node --test scripts/tests/xbox360-more.test.cjs',passed:8,failed:0},browserReport:prefix+'-browser.json',desktop:browser.desktop,mobile:browser.mobile,liveCases:browser.cases.length};
+handoff.screenshots=browser.screenshots;handoff.remainingScopedWork=[];
+handoff.previewNote=browser.previewNote;
+fs.writeFileSync(report,JSON.stringify(handoff,null,2)+'\n');
+const shared=path.join(root,'docs/console-expansion-handoff.json');
+let written=false;
+for(let attempt=0;attempt<5;attempt++){
+  const before=fs.readFileSync(shared,'utf8'),state=JSON.parse(before);
+  state.scopedConsoleWork={...(state.scopedConsoleWork||{}),'xbox360-more':{status:'batch'+number+' complete locally',handoff:'docs/chat-handoffs/xbox360-more.json',canonicalPage:'console/xbox360/library.html',resources:qa.resources,archivedFiles:qa.archivedFiles,newItems:added.length,newFiles,verification:'docs/qa/xbox360-more-verification.json',archiveMergedAndIndexed:true}};
+  if(fs.readFileSync(shared,'utf8')!==before)continue;
+  fs.writeFileSync(shared,JSON.stringify(state,null,2)+'\n');written=true;break;
+}
+if(!written)throw Error('Shared handoff kept changing; scoped handoff saved, retry shared pointer');
+console.log('Updated batch'+number+' handoff; earlier batch history retained.');

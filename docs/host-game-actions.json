@@ -1,0 +1,751 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02T06:20:01.670Z",
+  "sourceCommit": "da9c138e47c52773aa9ab999cff69590c573667f",
+  "actions": [
+    {
+      "id": "ps4-arabicguy-gta5-100",
+      "label": "ArabicGuy",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.00",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Kameleon host README targets PS4 firmware 9.00; its index maps this exact game-update payload. Other firmware and PS5 support are not established.",
+      "format": "BIN",
+      "bytes": 1055408,
+      "sha256": "0de5452601ca151ad3bb6c86c2fb97e2a0bac89b5ff77cf238638dd19bddd372",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/arabicguy-gta5-100-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": null,
+      "launchLabel": "Open menu host",
+      "launchURL": "https://www.kmeps4.site/",
+      "hostURL": "https://www.kmeps4.site/",
+      "source": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+      "sourceURL": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_ArabicGuy100.bin.bz2",
+      "sourceCommit": "da9c138e47c52773aa9ab999cff69590c573667f",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 and the exact game update shown for this menu.",
+        "This ready BIN is preserved from the pinned Kameleon browser host. Open that host and select its matching menu option.",
+        "Native GoldHEN HTTP compatibility of this exact variant has not been established, so this site does not provide a direct Send action for it.",
+        "Check the original menu requirements for regional title IDs and use one menu at a time in offline/story mode."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/gta52.png",
+      "imageRole": "Game artwork; not a screenshot of this menu build.",
+      "tags": [
+        "PS4",
+        "9.00",
+        "GTA V",
+        "1.00",
+        "ArabicGuy",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": null
+    },
+    {
+      "id": "ps4-arabicguy-gta5-127",
+      "label": "ArabicGuy",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.27",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1059520,
+      "sha256": "be9ee0dacc71e94d607584770c08cdc39c1319427e9fd83424fc19dd15782aa6",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-127-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "GTA V PS4 game update 1.27; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/gta52.png",
+      "imageRole": "Game artwork; not a screenshot of this menu build.",
+      "tags": [
+        "PS4",
+        "9.00",
+        "GTA V",
+        "1.27",
+        "ArabicGuy",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      }
+    },
+    {
+      "id": "ps4-arabicguy-gta5-132",
+      "label": "ArabicGuy",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.32",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1059520,
+      "sha256": "7b9c1242b0c18c4e8ce43216518c09bb8550ad31328a3dc16185d8d2ee7f7b8b",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-132-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "GTA V PS4 game update 1.32; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/gta52.png",
+      "imageRole": "Game artwork; not a screenshot of this menu build.",
+      "tags": [
+        "PS4",
+        "9.00",
+        "GTA V",
+        "1.32",
+        "ArabicGuy",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      }
+    },
+    {
+      "id": "ps4-arabicguy-gta5-133",
+      "label": "ArabicGuy",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.33",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1059520,
+      "sha256": "617318304d6303272e5d6287f812e7c8a4c6cf99684c5664b5ec27a6704bc85b",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-133-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "GTA V PS4 game update 1.33; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/gta52.png",
+      "imageRole": "Game artwork; not a screenshot of this menu build.",
+      "tags": [
+        "PS4",
+        "9.00",
+        "GTA V",
+        "1.33",
+        "ArabicGuy",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      }
+    },
+    {
+      "id": "ps4-beefqueef-gta5-133",
+      "label": "BeefQueefMod",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.33",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1073700,
+      "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/beefqueef-gta5-133-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.33.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "GTA V PS4 game update 1.33; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/gta52.png",
+      "imageRole": "Game artwork; not a screenshot of this menu build.",
+      "tags": [
+        "PS4",
+        "9.00",
+        "GTA V",
+        "1.33",
+        "BeefQueefMod",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/BeefQueefMod-1.33.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      }
+    },
+    {
+      "id": "ps4-lamance-gta5-138",
+      "label": "Lamance",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "GTA V",
+      "gameVersion": "1.38",
+      "menuVersion": "0.9",
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Kameleon host README targets PS4 firmware 9.00; its index maps this exact game-update payload. Other firmware and PS5 support are not established.",
+      "format": "BIN",
+      "bytes": 1128208,
+      "sha256": "7c9985cae235bffd95092765a6f294d668ab8f0421344dbef6b6ddd1230b3745",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/lamance-gta5-138-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": null,
+      "launchLabel": "Open menu host",
+      "launchURL": "https://www.kmeps4.site/",
+      "hostURL": "https://www.kmeps4.site/",
+      "source": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+      "sourceURL": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_lamance.bin.bz2",
+      "sourceCommit": "da9c138e47c52773aa9ab999cff69590c573667f",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 and the exact game update shown for this menu.",
+        "This ready BIN is preserved from the pinned Kameleon browser host. Open that host and select its matching menu option.",
+        "Native GoldHEN HTTP compatibility of this exact variant has not been established, so this site does not provide a direct Send action for it.",
+        "Check the original menu requirements for regional title IDs and use one menu at a time in offline/story mode."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/gta52.png",
+      "imageRole": "Game artwork; not a screenshot of this menu build.",
+      "tags": [
+        "PS4",
+        "9.00",
+        "GTA V",
+        "1.38",
+        "Lamance",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": null
+    },
+    {
+      "id": "ps4-oysters-rdr2-100",
+      "label": "Oysters",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "RDR2",
+      "gameVersion": "1.00",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1190392,
+      "sha256": "199b68feb24e1d202589b7ccb7b9ee28fdf3cab5546b41bd1263939ecedb7add",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-100-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "RDR2 PS4 game update 1.00; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "tags": [
+        "PS4",
+        "9.00",
+        "RDR2",
+        "1.00",
+        "Oysters",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "menuFamily": "Oysters",
+      "imageDescription": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-113",
+      "label": "Oysters",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "RDR2",
+      "gameVersion": "1.13",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1190392,
+      "sha256": "089f1c3144dffb35589a7fb36a05dd54f642c1eeef3873daa3b7f4ce965af06d",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-113-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "RDR2 PS4 game update 1.13; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "tags": [
+        "PS4",
+        "9.00",
+        "RDR2",
+        "1.13",
+        "Oysters",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "menuFamily": "Oysters",
+      "imageDescription": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-119",
+      "label": "Oysters",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "RDR2",
+      "gameVersion": "1.19",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1190392,
+      "sha256": "370b5bd2b4bace7a2dd51bd28f9b080b1e5221f3bd9e6dec64c5e72baa183254",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-119-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "RDR2 PS4 game update 1.19; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "tags": [
+        "PS4",
+        "9.00",
+        "RDR2",
+        "1.19",
+        "Oysters",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "menuFamily": "Oysters",
+      "imageDescription": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-124",
+      "label": "Oysters",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "RDR2",
+      "gameVersion": "1.24",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1190392,
+      "sha256": "58e2317dd8fe1cc44ce834a174ac06e566b34eb3709ce39e088f63aa51a5944a",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-124-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "RDR2 PS4 game update 1.24; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "tags": [
+        "PS4",
+        "9.00",
+        "RDR2",
+        "1.24",
+        "Oysters",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "menuFamily": "Oysters",
+      "imageDescription": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-129",
+      "label": "Oysters",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "RDR2",
+      "gameVersion": "1.29",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "format": "BIN",
+      "bytes": 1260864,
+      "sha256": "424f9dbf4813cd55366d446d36d0dc84aa950025a6341a47d1ac0f5f8dbf6986",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-129-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null,
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 with an already active compatible jailbreak and GoldHEN BinLoader HTTP server on port 9090.",
+        "RDR2 PS4 game update 1.29; game update and console firmware are separate requirements.",
+        "Use the original menu requirements to confirm your regional title ID; the upstream host does not supply a title-ID list.",
+        "The console and sender must be reachable on the same network. Open the site over HTTP when the browser blocks HTTPS-to-HTTP console requests.",
+        "Use one menu at a time in offline/story mode. HTTP acceptance confirms delivery, not successful injection into the game."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "tags": [
+        "PS4",
+        "9.00",
+        "RDR2",
+        "1.29",
+        "Oysters",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "menuFamily": "Oysters",
+      "imageDescription": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-north-beta-rdr2-129",
+      "label": "North Beta",
+      "platform": "ps4",
+      "category": "mods",
+      "game": "RDR2",
+      "gameVersion": "1.29",
+      "menuVersion": null,
+      "titleIds": [],
+      "firmwares": [
+        "9.00"
+      ],
+      "firmwareEvidence": "The pinned Kameleon host README targets PS4 firmware 9.00; its index maps this exact game-update payload. Other firmware and PS5 support are not established.",
+      "format": "BIN",
+      "bytes": 1219048,
+      "sha256": "5ab2f81616290b3f8c9705aaf127e6db8c006ff29da87c023c9c1ccdfb4db4eb",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/north-beta-rdr2-129-ps4-900.bin",
+      "downloadLabel": "Download BIN",
+      "run": null,
+      "launchLabel": "Open menu host",
+      "launchURL": "https://www.kmeps4.site/",
+      "hostURL": "https://www.kmeps4.site/",
+      "source": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+      "sourceURL": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_NorthBeta011.bin.bz2",
+      "sourceCommit": "da9c138e47c52773aa9ab999cff69590c573667f",
+      "license": "Not declared for this closed-source menu build; publicly distributed by the credited upstream host. No open-source license is asserted.",
+      "requirements": [
+        "PS4 firmware 9.00 and the exact game update shown for this menu.",
+        "This ready BIN is preserved from the pinned Kameleon browser host. Open that host and select its matching menu option.",
+        "Native GoldHEN HTTP compatibility of this exact variant has not been established, so this site does not provide a direct Send action for it.",
+        "Check the original menu requirements for regional title IDs and use one menu at a time in offline/story mode."
+      ],
+      "installation": "This is a raw PS4 payload BIN, already decompressed on the server. It is not an ELF, PRX plugin, game PKG or an archive.",
+      "image": "/assets/images/ps4-ps5/originals/rdr2-north-beta-image.webp",
+      "imageRole": "Menu preview",
+      "tags": [
+        "PS4",
+        "9.00",
+        "RDR2",
+        "1.29",
+        "North Beta",
+        "mod menu",
+        "BIN payload",
+        "GoldHEN HTTP",
+        "ready-to-use"
+      ],
+      "loaderEvidence": null,
+      "menuFamily": "North Beta",
+      "imageDescription": "Source-published North Beta menu showcase. The historical BIN revision is not inferred from the image or filename."
+    },
+    {
+      "id": "ps5-rdr2-60fps-v2-0",
+      "label": "RDR2 60FPS runtime patch",
+      "platform": "ps5",
+      "category": "mods",
+      "game": "RDR2",
+      "gameVersion": "1.32",
+      "menuVersion": null,
+      "version": "v2.0",
+      "titleIds": [
+        "CUSA08519",
+        "CUSA03041",
+        "CUSA08568"
+      ],
+      "firmwares": [],
+      "firmwareEvidence": "The author requires a jailbroken PS5 with elfldr, and discusses 8.40 or newer including 13.60, but does not publish a complete validated firmware list. An empty list means compatibility is unspecified, not universal.",
+      "firmwarePolicy": "requirements-only",
+      "format": "ELF",
+      "bytes": 154304,
+      "sha256": "646ecb71e80415ab9d9c651539451d38ee0052a5997f7ef7504a42932c7f8261",
+      "downloadURL": "/downloads/hosts/ps5/game-mods/rdr2-60fps/v2.0/RedDead2.60FPS_v2.0.elf",
+      "downloadLabel": "Download ELF",
+      "run": {
+        "type": "elf-http",
+        "port": 9021
+      },
+      "launchLabel": "Send to PS5",
+      "launchURL": null,
+      "loaderEvidence": {
+        "sourceURL": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c",
+        "protocol": "GET http://CONSOLE-IP:9021/?uri=encoded-console-reachable-ELF-URL",
+        "acknowledgement": "HTTP 200 is sent before the ELF is downloaded or spawned."
+      },
+      "source": "https://github.com/armanate/rdr2-60fps-runtime-patcher/releases/tag/v2.0",
+      "sourceURL": "https://github.com/armanate/rdr2-60fps-runtime-patcher/releases/download/v2.0/RedDead2.60FPS_v2.0.elf",
+      "sourceCodeURL": "https://github.com/armanate/rdr2-60fps-runtime-patcher/tree/v2.0",
+      "sourceArchiveURL": "https://github.com/armanate/rdr2-60fps-runtime-patcher/archive/refs/tags/v2.0.zip",
+      "license": "GPL-3.0; see the retained upstream GPL and MIT component notices.",
+      "licenseURL": "/downloads/hosts/ps5/game-mods/rdr2-60fps/v2.0/LICENSE.txt",
+      "instructionsURL": "/downloads/hosts/ps5/game-mods/rdr2-60fps/v2.0/README-upstream.md",
+      "copyright": "Copyright (c) 2026 KurohaXR and Arman Jafari; includes code ported from OpenSourcereR/ps5debug-NG. Distributed without warranty under the upstream licence.",
+      "requirements": [
+        "A jailbroken PS5 with elfldr v0.27 or another loader implementing its HTTP URL interface on port 9021. A configured local sender can alternatively use the compatible raw TCP loader route.",
+        "For native URL loading, the ready ELF must be published at a URL the console can reach. A computer-only 127.0.0.1 URL is not reachable from the PS5.",
+        "RDR2 PS4 game update 1.32, clean and unmodified, with title ID CUSA08519, CUSA03041 or CUSA08568.",
+        "Fully close RDR2, load this ELF first, wait for its ready notification, then start RDR2 within 10 minutes.",
+        "This applies a runtime FPS/resolution patch; it is not a full mod menu or a PS4 payload.",
+        "The author does not provide a complete validated PS5 firmware list. Check the release requirements for your existing loader and firmware.",
+        "The HTTP loader accepts the request before download and execution; HTTP 200 does not confirm the patch ran. Read the console notification and /data/rdr2-60fps/rdr2-60fps.log for the actual result."
+      ],
+      "installation": "The ready ELF is loaded in memory. Its first run creates /data/rdr2-60fps/scale.txt for optional resolution settings. Closing the game removes the runtime game changes.",
+      "image": "/assets/images/rdr2.png",
+      "imageRole": "Game artwork; not a screenshot of this runtime patch.",
+      "tags": [
+        "PS5",
+        "RDR2",
+        "1.32",
+        "60 FPS",
+        "runtime patch",
+        "ELF",
+        "elfldr",
+        "CUSA08519",
+        "CUSA03041",
+        "CUSA08568"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "reviewed": "2026-11-02",
+  "pages": ["console/ps4/jailbreak.html", "console/ps5/relapse.html"],
+  "sources": [
+    {"url":"https://github.com/quatrixone/p5-manager","supports":"The DNS provider handles console DNS requests, may block PSN, and the documented normal-PSN route restores automatic DNS."},
+    {"url":"https://github.com/X-F1REBALL-X/ps4hostjailbreak","supports":"Search-indexed primary project documentation describes update-host blocking for the two supplied resolvers; direct repository retrieval returned404 during review, so no guarantee of current resolver behavior is claimed."},
+    {"url":"https://www.playstation.com/en-gb/support/connectivity/internet-connect-playstation/","supports":"Console network settings and advanced DNS configuration."},
+    {"url":"https://www.playstation.com/en-gb/support/account/suspensions/","supports":"PlayStation can suspend accounts or consoles; account and console restrictions are distinct."},
+    {"url":"https://www.playstation.com/en-au/legal/terms-of-service/","supports":"Current official terms prohibit unauthorized hardware/software and describe actions against accounts and systems."}
+  ],
+  "editorialDecision": "Describe intended update-server blocking and possible PSN restrictions, rather than promising all Sony domains are blocked or that DNS prevents bans. Restoring normal DNS may permit update connections; it does not guarantee safe online jailbreak use."
+}

@@ -1,0 +1,168 @@
+{
+  "reviewed": "2026-11-02",
+  "microsoft": {
+    "account": "https://learn.microsoft.com/en-us/windows/apps/publish/partner-center/open-a-developer-account",
+    "activation": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/devkit-activation",
+    "home": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/devhome-home",
+    "portal": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/device-portal-xbox",
+    "lan": "https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/remote-debugging-xbox",
+    "deployment": "https://learn.microsoft.com/en-us/windows/uwp/apps-for-xbox/development-options",
+    "install": "https://learn.microsoft.com/en-us/windows/advanced-settings/device-portal",
+    "architecture": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/development-environment-setup",
+    "storage": "https://learn.microsoft.com/en-gb/previous-versions/windows/uwp/debug-test-perf/device-portal-api-core",
+    "resources": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/system-resource-allocation",
+    "deactivate": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/devkit-deactivation"
+  },
+  "apps": [
+    {
+      "id": "xbsx2",
+      "project": "https://github.com/XboxEmulationHub/XBSX2",
+      "release": "https://github.com/XboxEmulationHub/XBSX2/releases/tag/v2.0.9.2",
+      "setup": "https://github.com/XboxEmulationHub/devmodewiki/blob/master/docs/emulation/xbsx2-guide.mdx"
+    },
+    {
+      "id": "dolphin",
+      "project": "https://github.com/danprice142/dolphin-uwp",
+      "release": "https://github.com/danprice142/dolphin-uwp/releases/tag/1.2.0.2",
+      "setup": "https://github.com/XboxEmulationHub/devmodewiki/blob/master/docs/emulation/dolphin-guide.mdx"
+    },
+    {
+      "id": "ppsspp",
+      "project": "https://www.ppsspp.org/",
+      "release": "https://www.ppsspp.org/download/",
+      "setup": "https://www.ppsspp.org/docs/getting-started/how-to-run-on-xbox/"
+    },
+    {
+      "id": "flycast",
+      "project": "https://github.com/flyinghead/flycast",
+      "release": "https://github.com/flyinghead/flycast/releases/tag/v2.7",
+      "setup": "https://github.com/TheArcadeStriker/flycast-wiki/wiki/Getting-started-with-Flycast"
+    },
+    {
+      "id": "durangoftp",
+      "project": "https://github.com/Dantes-Dungeon/DURANGO-FTP",
+      "release": "https://github.com/Dantes-Dungeon/DURANGO-FTP/releases/tag/v1.2",
+      "setup": "https://github.com/Dantes-Dungeon/DURANGO-FTP"
+    },
+    {
+      "id": "moonlight",
+      "project": "https://github.com/TheElixZammuto/moonlight-xbox",
+      "release": "https://github.com/TheElixZammuto/moonlight-xbox/releases/tag/1.18.2",
+      "setup": "https://github.com/TheElixZammuto/moonlight-xbox#installation"
+    },
+    {
+      "id": "retroarch",
+      "project": "https://github.com/XboxEmulationHub/RetroArch",
+      "release": "https://github.com/XboxEmulationHub/RetroArch/releases/tag/08-19-2026",
+      "setup": "https://github.com/XboxEmulationHub/devmodewiki/blob/master/docs/emulation/retroarch-guide.mdx"
+    },
+    {
+      "id": "dosbox-pure",
+      "project": "https://github.com/marcelofrau/dosbox-pure-uwp",
+      "release": "https://github.com/marcelofrau/dosbox-pure-uwp/releases/tag/v1.0.0.236",
+      "setup": "https://github.com/marcelofrau/dosbox-pure-uwp"
+    },
+    {
+      "id": "scummvm",
+      "project": "https://github.com/marcelofrau/scummvm-uwp",
+      "release": "https://github.com/marcelofrau/scummvm-uwp/releases/tag/v2026.3.1.155",
+      "setup": "https://github.com/marcelofrau/scummvm-uwp/releases/tag/v2026.3.1.155"
+    },
+    {
+      "id": "xemu",
+      "project": "https://github.com/skitzellez/xemu-uwp",
+      "release": "https://github.com/skitzellez/xemu-uwp/releases/tag/uwp-0.9.1010.0",
+      "setup": "https://github.com/skitzellez/xemu-uwp/blob/uwp-0.9.1010.0/README-UWP.md"
+    },
+    {
+      "id": "xenia",
+      "project": "https://github.com/SirMangler/xenia",
+      "release": "https://github.com/SirMangler/xenia/releases/tag/1.1.5a",
+      "setup": "https://github.com/SirMangler/xenia"
+    },
+    {
+      "id": "retropass",
+      "project": "https://github.com/retropassdev/RetroPass",
+      "release": "https://github.com/retropassdev/RetroPass/releases/tag/RetroPass_v1.13.0",
+      "setup": "https://github.com/retropassdev/RetroPass"
+    },
+    {
+      "id": "xfiles",
+      "project": "https://github.com/marcelofrau/x-files-uwp",
+      "release": "https://github.com/marcelofrau/x-files-uwp/releases/tag/v1.8.0.1527",
+      "setup": "https://github.com/marcelofrau/x-files-uwp"
+    },
+    {
+      "id": "kodi",
+      "project": "https://kodi.tv/",
+      "release": "https://kodi.tv/download/windows/",
+      "setup": "https://kodi.wiki/view/First_time_user"
+    },
+    {
+      "id": "azahar",
+      "project": "https://github.com/danprice142/Azahar-UWP",
+      "release": "https://github.com/danprice142/Azahar-UWP/releases/tag/0.2126.2.1",
+      "setup": "https://github.com/danprice142/Azahar-UWP"
+    },
+    {
+      "id": "cemu",
+      "project": "https://github.com/danprice142/Cemu-UWP",
+      "release": "https://github.com/danprice142/Cemu-UWP/releases/tag/0.2.6.7",
+      "setup": "https://github.com/danprice142/Cemu-UWP"
+    },
+    {
+      "id": "ymir",
+      "project": "https://github.com/marcelofrau/Ymir",
+      "release": "https://github.com/marcelofrau/Ymir/releases/tag/uwp-v0.4.2.1",
+      "setup": "https://github.com/marcelofrau/Ymir"
+    },
+    {
+      "id": "devilutionx",
+      "project": "https://github.com/diasurgical/DevilutionX",
+      "release": "https://github.com/diasurgical/DevilutionX/releases/tag/1.5.5",
+      "setup": "https://github.com/diasurgical/DevilutionX/blob/master/docs/installing.md"
+    },
+    {
+      "id": "jazz2",
+      "project": "https://github.com/deathkiller/jazz2",
+      "release": "https://github.com/deathkiller/jazz2/releases/tag/3.9.0",
+      "setup": "https://de4th.dev/jazz2/"
+    },
+    {
+      "id": "openlara",
+      "project": "https://github.com/XProger/OpenLara",
+      "release": "https://github.com/XProger/OpenLara/releases/tag/latest",
+      "setup": "https://github.com/XProger/OpenLara/blob/master/src/platform/xb1/main.cpp"
+    },
+    {
+      "id": "sdlpop",
+      "project": "https://github.com/Xbox-Homebrew/SDLPoP",
+      "release": "https://github.com/Xbox-Homebrew/SDLPoP/releases/tag/1.0.0.0",
+      "setup": "https://github.com/Xbox-Homebrew/SDLPoP"
+    },
+    {
+      "id": "ioquake3",
+      "project": "https://github.com/Mayo1970/ioQuake3-One",
+      "release": "https://github.com/Mayo1970/ioQuake3-One/releases/tag/1.4",
+      "setup": "https://github.com/Mayo1970/ioQuake3-One/blob/1.4/INSTALLATION.md"
+    },
+    {
+      "id": "2ship",
+      "project": "https://github.com/XboxEmulationHub/2ship2harkinian-uwp",
+      "release": "https://github.com/XboxEmulationHub/2ship2harkinian-uwp/releases/tag/0.1.0-uwp",
+      "setup": "https://github.com/XboxEmulationHub/2ship2harkinian-uwp/blob/0.1.0-uwp/README.md"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "/assets/images/xbox-one-series/dev-home.png",
+      "source": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/images/device-portal-xbox-1.png",
+      "credit": "Microsoft Learn"
+    },
+    {
+      "file": "/assets/images/xbox-one-series/remote-access.png",
+      "source": "https://learn.microsoft.com/en-us/previous-versions/windows/uwp/xbox-apps/images/device-portal-xbox-15.png",
+      "credit": "Microsoft Learn"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "capturedAt": "2026-11-03T19:31:12.822Z",
+  "status": "retained-for-review-not-active",
+  "files": [
+    {
+      "name": "assets/host-dashboard.js",
+      "bytes": 68117,
+      "sha256": "33f1470afcaebecb58026a91f59e614a2eca54aaafb2a20ce2ae7a7993fc7ecc"
+    },
+    {
+      "name": "assets/host-folders.js",
+      "bytes": 3229,
+      "sha256": "73ed152011d949dca02de9416712ce1a1c1b61cd79ac40a40164806661db33fe"
+    },
+    {
+      "name": "assets/host-trainer.css",
+      "bytes": 9105,
+      "sha256": "5774596ee47e34b22b39a5445fc7f4f79cd7c3135e70aa957dac307256a827a9"
+    },
+    {
+      "name": "assets/host-trainer.js",
+      "bytes": 23827,
+      "sha256": "d44221f2ccb9fdc7c68fbe9d71cabda6790b5cf231307c14bf1f92fd3f3c3405"
+    },
+    {
+      "name": "assets/host-catalog-grid.css",
+      "bytes": 3525,
+      "sha256": "01f49e89c59239d2c28bef6ceb048c14e6c9a5154093bfdf0a3941a6f48ee67b"
+    },
+    {
+      "name": "assets/host-catalog-grid.js",
+      "bytes": 5963,
+      "sha256": "7d9e36264977c86b27889c8a812a2befbab61d53a00bf44af5de890999f02816"
+    },
+    {
+      "name": "assets/host-firmware-buttons.css",
+      "bytes": 1932,
+      "sha256": "32671c203be42e400a39ac8660163f0e316413c65fb7a95224572d42d7533f80"
+    },
+    {
+      "name": "scripts/build-host-selector.cjs",
+      "bytes": 16678,
+      "sha256": "38e8c46b568be8352659c6d01651a4d82493ae938c3f01b2df2176c3220ea741"
+    },
+    {
+      "name": "scripts/host-folder-markup.cjs",
+      "bytes": 4995,
+      "sha256": "fd2ed356f2753d5aea17f8e5b13d1f0f1399a0f8344d51a6b63484ac6d303353"
+    },
+    {
+      "name": "scripts/build-host-trainer-art.cjs",
+      "bytes": 5212,
+      "sha256": "c36d68c72dfc1c206c84f238044596afa9d177cc5684d0fee8431c7183666e30"
+    },
+    {
+      "name": "scripts/tests/host-catalog-grid.test.cjs",
+      "bytes": 8271,
+      "sha256": "e847a37a592491d172af1e2b455e0d277c2c8e67b923e1516592655855778c11"
+    },
+    {
+      "name": "scripts/tests/host-firmware-buttons.test.cjs",
+      "bytes": 4817,
+      "sha256": "9212d342a99419c2fa29fd94673c3d7b50721c91b549e86e0c99e711b654f731"
+    },
+    {
+      "name": "i18n-tools/host-trainer-gallery-translations.cjs",
+      "bytes": 8329,
+      "sha256": "ae66fc0260ac62a1df6b3c79294e8634df0856bb4ed6d00662fd56ce3037f90c"
+    },
+    {
+      "name": "hosts/tools/ps4-trainer/tile-art.json",
+      "bytes": 52175,
+      "sha256": "b17150c8798a305f67636b7e870e17f31d180143687301f85055726abad073b4"
+    },
+    {
+      "name": "assets/images/host-catalog/files.svg",
+      "bytes": 384,
+      "sha256": "543af4934e23f16c1a7c413a04ef94fbd11b0be71487daab9e0e7cc89aff2142"
+    },
+    {
+      "name": "assets/images/host-catalog/games.svg",
+      "bytes": 464,
+      "sha256": "f64e7c4a8920c7c7b919ee568ca65b012bb36155fff11af635ab1c9ee6f42763"
+    },
+    {
+      "name": "assets/images/host-catalog/loaders.svg",
+      "bytes": 334,
+      "sha256": "b7523b72baf9a5758f2e2393387696c3b36e441bebc8b7041603510a4fc454f5"
+    },
+    {
+      "name": "assets/images/host-catalog/payloads.svg",
+      "bytes": 469,
+      "sha256": "e154463fb2fabbf8b11ff1daf04096235b9d087b7eaebd2fc6fd0f491e56acb5"
+    },
+    {
+      "name": "assets/images/host-catalog/tools.svg",
+      "bytes": 415,
+      "sha256": "6ff42fba03bbb2f841558ad66616320e37fd1db1dd86851a8ac8002f578ae226"
+    },
+    {
+      "name": "assets/images/host-catalog/updates.svg",
+      "bytes": 327,
+      "sha256": "ee0b78aedb5c3ce623b403a53c26235de77f042399da9f549d69211a4b60d325"
+    },
+    {
+      "name": "scripts/templates/host-trainer.html",
+      "bytes": 5495,
+      "sha256": "2ceb777a6a918df858534d2415f239765d9030c2360b25b8f9401008e2621d4f"
+    },
+    {
+      "name": "hosts/tools/ps4-trainer/art/letter-cover.svg",
+      "bytes": 397,
+      "sha256": "84806c575fcd4d8162ddfd512cc99a00ed5fbc07f464c84eb5b497a369c2ca1c"
+    }
+  ]
+}

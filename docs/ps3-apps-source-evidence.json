@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "scope": "PS3-only package, file-transfer, browser and archive workflows. Primary project evidence; no claim of testing on PS3 hardware.",
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "role": "User-supplied hub",
+      "finding": "The hub navigation distinguishes PS3 mods, HEN/CFW and game-region resources. Its links are discovery evidence, not independent compatibility validation."
+    },
+    {
+      "url": "https://github.com/aldostools/webMAN-MOD/wiki/Web-Commands",
+      "role": "Developer documentation",
+      "finding": "webMAN MOD exposes an HTTP file manager and documented download commands. Current commands use /xmb.ps3/download.ps3. Download and install endpoints have different effects."
+    },
+    {
+      "url": "https://github.com/aldostools/webMAN-MOD",
+      "role": "Developer README",
+      "finding": "File/web/FTP service features, external-storage support and experimental archive extraction are documented. Extraction via its integration requires PKGLAUNCH and app_home/PS3_GAME."
+    },
+    {
+      "url": "https://github.com/cy33hc/ps3-ezremote-client",
+      "role": "Developer README",
+      "finding": "PS3 native FTP/SMB/NFS/WebDAV/HTTP client; supports HTTP HTML directory listings, GitHub release browsing, local file operations and archive extraction. Remote PKG workflow creates a Package Manager install bubble; background tasks need reboot."
+    },
+    {
+      "url": "https://github.com/bucanero/pkgi-ps3",
+      "role": "Developer README",
+      "finding": "PS3 native package downloader; custom catalogues, SHA256 checksum field, direct/background modes, resume; background tasks appear after reboot. It does not turn arbitrary RAR/SPRX into installable packages."
+    },
+    {
+      "url": "https://github.com/Zarh/ManaGunZ/releases/tag/1.41",
+      "role": "Developer release",
+      "finding": "The 1.41 release offers a separate FileManager_v1.41.pkg console build and ManaGunZ_v1.41.pkg. FileManager release MD5 is 7693629675c2f4d3f8986bae1c314903; archive records SHA256 independently."
+    },
+    {
+      "url": "https://github.com/ferelking242/ps3-archive-manager",
+      "role": "Developer README",
+      "finding": "Experimental PS3 HEN archive tool. Developer explicitly says no real hardware validation. ZIP and supported 7z extraction implemented; RAR extraction is not listed. TAR/GZ/BZ2/XZ are detection only; copy/move/rename/delete and archive creation are not yet implemented."
+    },
+    {
+      "url": "https://manuals.playstation.net/document/en/ps3/current/browser/browser.html",
+      "role": "Official PS3 manual",
+      "finding": "Documents built-in browser operation. This is not evidence that modern file hosts, TLS, JavaScript or every attachment type work on a PS3."
+    }
+  ],
+  "resources": [
+    {
+      "id": "ps3-filemanager-zarh",
+      "name": "File Manager by Zarh",
+      "category": "file-manager",
+      "version": "1.41",
+      "format": "PKG",
+      "compatibility": "PS3 console build. Match project requirements to your CFW/HEN configuration; this is not firmware.",
+      "description": "Standalone File Manager package from the ManaGunZ developer release. Keep it separate from the full ManaGunZ manager.",
+      "image": "/assets/images/expansion-ps3/managunz.png",
+      "source": "https://github.com/Zarh/ManaGunZ/releases/tag/1.41",
+      "downloads": [
+        {
+          "url": "https://github.com/Zarh/ManaGunZ/releases/download/1.41/FileManager_v1.41.pkg",
+          "label": "File Manager 1.41 PKG"
+        }
+      ],
+      "status": "download-candidate"
+    },
+    {
+      "id": "ps3-archive-manager",
+      "name": "PS3 Archive Manager · experimental",
+      "category": "archive-tool",
+      "version": "ci-latest snapshot 2026-11-02",
+      "format": "PKG",
+      "compatibility": "Experimental HEN project; developer reports no real-hardware validation. ZIP and supported 7z only; RAR extraction not supported by this project.",
+      "description": "An optional experimental archive tool with split ZIP/7z volume checks. Prefer the documented ezRemote route for RAR extraction. Detection of TAR/GZ/BZ2/XZ does not mean it can extract those formats.",
+      "image": "/assets/images/consoles/ps3.png",
+      "source": "https://github.com/ferelking242/ps3-archive-manager",
+      "downloads": [
+        {
+          "url": "https://github.com/ferelking242/ps3-archive-manager/releases/download/ci-latest/PS3-Archive-Manager.pkg",
+          "label": "Experimental CI PKG"
+        }
+      ],
+      "status": "download-candidate"
+    }
+  ],
+  "browserWorkflow": {
+    "default": "Use a short static PS3-only list with ordinary attachment links. Downloading a file is separate from extracting an archive, installing a PKG and running homebrew.",
+    "webman": {
+      "requires": "A supported CFW/HEN setup with webMAN MOD already installed and its HTTP service running. Enable HEN after boot where required.",
+      "base": "http://<PS3-LAN-IP> on port 80",
+      "download": "/xmb.ps3/download.ps3?url=<URL>",
+      "downloadTo": "/xmb.ps3/download.ps3?to=<PS3-path>&url=<URL>",
+      "defaultDirectory": "/dev_hdd0/packages",
+      "requestLimitBytes": 2048,
+      "installWarning": "/xmb.ps3/install_ps3?url= downloads and installs a PKG. Do not present that endpoint as download-only.",
+      "network": "Use the console LAN address from another device. localhost means the current device; a PC loopback preview URL is not reachable from PS3. Put a reachable HTTP/HTTPS file URL on a LAN host or public host. Browser mixed-content/TLS restrictions can prevent remote commands; provide an ordinary navigation link and manual instructions."
+    },
+    "ezremote": {
+      "remote": "Set server to a reachable HTTP directory listing or supported FTP/SMB/NFS/WebDAV server. PS3 does not see the desktop F: path.",
+      "extract": "Choose a ZIP/RAR/7zip/TAR/TAR.GZ/TAR.BZ2 archive in ezRemote and use its extraction operation. Check free storage for both the preserved original and extracted files.",
+      "install": "After the documented remote-PKG operation, complete installation via the Package Manager bubble. SPRX, EBOOT, RPF and SCO require game-specific placement and compatibility; they are not generic PKG installation files."
+    },
+    "pkgi": {
+      "configDirectory": "/dev_hdd0/game/NP00PKGI3/USRDIR",
+      "catalogues": [
+        "pkgi_apps.txt",
+        "pkgi_tools.txt"
+      ],
+      "checksum": "SHA256 is supported in the package catalogue checksum field.",
+      "background": "Tasks appear after reboot. Enable HEN again before launching homebrew if required.",
+      "limit": "Use PKGi for PKG packages from an explicitly configured catalogue. Do not label RAR, SPRX, Windows EXE, APK or Vita VPK as PS3-installable PKG files."
+    },
+    "storage": {
+      "fat32": "FAT32 has a per-file limit below 4 GiB. A homebrew tool supporting NTFS/exFAT does not add those filesystems to the stock PS3 updater or Package Manager.",
+      "space": "Allow room for both compressed archive and extracted content; installing a PKG can require additional storage.",
+      "separation": "Original archives retained. Ready console builds remain separate from Windows RTM helper programs, source code and documentation."
+    }
+  },
+  "apps": [
+    {
+      "id": "ps3-filemanager-zarh",
+      "name": "File Manager by Zarh",
+      "category": "file-manager",
+      "version": "1.41",
+      "format": "PKG",
+      "compatibility": "PS3 console build. Match project requirements to your CFW/HEN configuration; this is not firmware.",
+      "description": "Standalone File Manager package from the ManaGunZ developer release. Keep it separate from the full ManaGunZ manager.",
+      "image": "/assets/images/expansion-ps3/managunz.png",
+      "source": "https://github.com/Zarh/ManaGunZ/releases/tag/1.41",
+      "downloads": [
+        {
+          "url": "https://github.com/Zarh/ManaGunZ/releases/download/1.41/FileManager_v1.41.pkg",
+          "label": "File Manager 1.41 PKG"
+        }
+      ],
+      "status": "download-candidate",
+      "title": "File Manager by Zarh",
+      "url": "https://github.com/Zarh/ManaGunZ/releases/download/1.41/FileManager_v1.41.pkg"
+    },
+    {
+      "id": "ps3-archive-manager",
+      "name": "PS3 Archive Manager · experimental",
+      "category": "archive-tool",
+      "version": "ci-latest snapshot 2026-11-02",
+      "format": "PKG",
+      "compatibility": "Experimental HEN project; developer reports no real-hardware validation. ZIP and supported 7z only; RAR extraction not supported by this project.",
+      "description": "An optional experimental archive tool with split ZIP/7z volume checks. Prefer the documented ezRemote route for RAR extraction. Detection of TAR/GZ/BZ2/XZ does not mean it can extract those formats.",
+      "image": "/assets/images/consoles/ps3.png",
+      "source": "https://github.com/ferelking242/ps3-archive-manager",
+      "downloads": [
+        {
+          "url": "https://github.com/ferelking242/ps3-archive-manager/releases/download/ci-latest/PS3-Archive-Manager.pkg",
+          "label": "Experimental CI PKG"
+        }
+      ],
+      "status": "download-candidate",
+      "title": "PS3 Archive Manager · experimental",
+      "url": "https://github.com/ferelking242/ps3-archive-manager/releases/download/ci-latest/PS3-Archive-Manager.pkg"
+    }
+  ],
+  "unchartedArchiveEvidence": {
+    "sourceUrl": "https://www.mediafire.com/file/eqvmqypdq6ddocd/PS3_Uncharted_Series_Dev_Menu_Installer_Tool_By_VirusMike.rar/file",
+    "sourceArchiveSha256": "df025fe7f87d49a3d441d5a50362d0f41208f0fa26574bbeb1ab542b2f9c2b35",
+    "member": "PS3 Uncharted Series Dev Menu Installer Tool By VirusMike/Supported Versions.txt",
+    "memberSha256": "d414887d7b861bfd071ae704e8662f345804b5bb332b735cef62b74afe28f43c",
+    "supportedTitleIds": {
+      "Uncharted 1": [
+        "BCUS98103",
+        "BCES00065",
+        "NPEA00363"
+      ],
+      "Uncharted 2": [
+        "BCES00509",
+        "BCES00757",
+        "BCUS98123",
+        "NPEA00365",
+        "NPUA80698"
+      ],
+      "Uncharted 3": [
+        "BCAS25014",
+        "BCES01175"
+      ]
+    },
+    "gameUpdates": "Not stated by the archive documentation.",
+    "execution": "Only archive members and text read. Package never installed or run."
+  }
+}

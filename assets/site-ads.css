@@ -1,0 +1,8 @@
+.site-ad { position: relative; clear: both; margin: 28px 0; }
+.site-ad-panel { min-width: 0; padding: 14px; border: 1px solid var(--border, #303036); border-radius: 12px; background: var(--bg-secondary, #121214); }
+.site-ad-label { display: block; margin-bottom: 10px; color: var(--text-secondary, #b1b1ba); font: 500 10px/1.4 Arial, sans-serif; text-align: center; text-transform: uppercase; letter-spacing: 1.5px; }
+.site-ad-stage { min-height: 230px; max-height: 420px; overflow: auto; }
+.site-ad-stage > div { width: 100%; max-width: 100%; }
+.site-ad-empty { margin: 0; padding: 18px 10px; color: var(--text-secondary, #b1b1ba); font: 12px/1.5 Arial, sans-serif; text-align: center; }
+.site-ad-stage [hidden] { display: none !important; }
+@media (max-width: 600px) { .site-ad { margin: 22px 0; } .site-ad-panel { padding: 12px 8px; } }

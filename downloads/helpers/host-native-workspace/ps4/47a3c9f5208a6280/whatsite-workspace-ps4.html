@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"><title>PS4 files &amp; payloads · whatsite</title><style>:root{color-scheme:dark;--paper:#101419;--surface:#171e26;--line:#35414e;--ink:#edf3f8;--muted:#aebcca;--accent:#a4ddb8}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1100px;margin:auto;padding:36px 24px 70px}header{padding-bottom:24px}h1{font-size:clamp(28px,5vw,45px);line-height:1.15;margin:18px 0 12px;letter-spacing:-.03em}h2{font-size:25px;margin:0 0 12px}p{max-width:88ch}a{color:var(--accent);text-underline-offset:4px}header>a{font-size:13px;text-transform:uppercase;letter-spacing:.12em}header p,footer,fieldset p{color:var(--muted)}button,input,textarea{font:inherit}button,.workspace-actions a{padding:10px 15px;min-height:44px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);cursor:pointer}button:hover:enabled{border-color:var(--accent)}button:disabled{opacity:.43;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}nav [aria-pressed=true]{background:var(--accent);color:#0e2717;border-color:var(--accent)}section{padding:24px 0}[hidden]{display:none!important}.workspace-gate{padding:16px 18px;background:#1d2924;border-left:3px solid var(--accent);color:#d9eee0}.workspace-error{color:#ffc7af}#workspace-status{min-height:26px;padding:0 2px;overflow-wrap:anywhere}.workspace-path{display:flex;gap:10px;align-items:end;flex-wrap:wrap}.workspace-path label{flex-basis:100%}.workspace-path input{flex:1;min-width:200px}input:not([type=file]):not([type=checkbox]),textarea{padding:11px 12px;color:var(--ink);background:#0c1015;border:1px solid var(--line);border-radius:5px}input[type=file]{max-width:100%;padding:12px 0}textarea{display:block;width:100%;margin:9px 0 16px;resize:vertical;font-family:ui-monospace,Consolas,monospace;font-size:14px;line-height:1.5;white-space:pre}.workspace-actions{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}.workspace-actions a{text-decoration:none;display:inline-flex;align-items:center}.workspace-table-wrap{overflow-x:auto;margin:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-height:470px}table{border-collapse:collapse;width:100%;text-align:left}th{color:var(--muted);font-size:13px;font-weight:500}th,td{padding:11px 12px;border-bottom:1px solid #27313d}td:first-child{width:72%}td button{padding:5px 8px;min-height:38px;background:transparent;border-color:transparent;text-align:left;overflow-wrap:anywhere}fieldset{border:1px solid var(--line);border-radius:7px;padding:18px;margin-top:26px}legend{color:var(--accent);padding:0 8px}fieldset label{display:block}fieldset button{margin:8px 8px 0 0}code,#workspace-selected,#workspace-config-hash{font-family:ui-monospace,Consolas,monospace;overflow-wrap:anywhere;font-size:14px}#workspace-config{display:block;padding:10px 0;color:var(--accent)}.workspace-confirm{display:block;padding:8px 0 18px}.workspace-confirm input{width:20px;height:20px;vertical-align:middle;margin-right:8px}footer{border-top:1px solid var(--line);padding-top:24px;font-size:13px;margin-top:32px}@media(max-width:600px){main{padding:22px 15px 45px}.workspace-path input{width:100%;flex-basis:100%}.workspace-path button{width:100%}th,td{padding:9px 5px}.workspace-actions>*{flex:1}nav button{flex:1}fieldset{padding:14px}}
+</style></head><body><main id="native-workspace" data-platform="ps4"></main><noscript>Enable JavaScript, copy this HTML file to the documented console path and open it through the running native ezRemote Client.</noscript><script>/* Authored console workspace. Native ezRemote APIs only; no payload execution. */
+(function (root, factory) {
+  var api = factory(root);
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else { root.WhatsiteNativeWorkspace = api; if (root.document) api.mount(root.document); }
+}(typeof window !== 'undefined' ? window : globalThis, function (root) {
+  'use strict';
+  // Small ES5 promise fallback for older console WebKit. No external runtime.
+  var Promise = root.Promise || (function () {
+    function defer(fn) { root.setTimeout(fn,0); }
+    function finish(p,state,value) { if(p.state)return;p.state=state;p.value=value;flush(p); }
+    function adopt(p,value) {
+      if(value===p){finish(p,2,new TypeError('Promise cycle'));return;}
+      if(value&&(typeof value==='object'||typeof value==='function')){
+        var then;try{then=value.then;}catch(e){finish(p,2,e);return;}
+        if(typeof then==='function'){var once=false;try{then.call(value,function(v){if(once)return;once=true;adopt(p,v);},function(e){if(once)return;once=true;finish(p,2,e);});}catch(e){if(!once){once=true;finish(p,2,e);}}return;}
+      }
+      finish(p,1,value);
+    }
+    function flush(p) { if(!p.state)return;defer(function(){var tasks=p.tasks.splice(0);for(var i=0;i<tasks.length;i++){var task=tasks[i],fn=p.state===1?task.yes:task.no;try{if(typeof fn==='function')task.resolve(fn(p.value));else(p.state===1?task.resolve:task.reject)(p.value);}catch(e){task.reject(e);}}}); }
+    function P(executor) { if(!(this instanceof P))throw new TypeError('Use new Promise');this.state=0;this.value=undefined;this.tasks=[];var self=this,called=false;try{executor(function(v){if(called)return;called=true;adopt(self,v);},function(e){if(called)return;called=true;finish(self,2,e);});}catch(e){if(!called){called=true;finish(self,2,e);}} }
+    P.prototype.then=function(yes,no){var self=this;return new P(function(resolve,reject){self.tasks.push({yes:yes,no:no,resolve:resolve,reject:reject});flush(self);});};
+    P.prototype['catch']=function(no){return this.then(null,no);};
+    P.resolve=function(value){return new P(function(resolve){resolve(value);});};P.reject=function(value){return new P(function(resolve,reject){reject(value);});};return P;
+  }());
+  var MAX_TEXT = 65536, MAX_FILE = 32 * 1024 * 1024, MAX_UPLOAD = 8 * 1024 * 1024;
+  var SETTINGS = {
+    ps4: {port:'8080',installPath:'/data/whatsite-workspace-ps4.html',config:'/data/GoldHEN/payloads.ini',roots:['/data/payloads','/data/whatwhatboy']},
+    ps5: {port:'9090',installPath:'/data/homebrew/ezremote-client/assets/whatsite-workspace-ps5.html',config:'/data/pldmgr/autoload.txt',roots:['/data/payloads','/data/whatwhatboy','/data/pldmgr/payloads/local']}
+  };
+  function error(code, message) { var e = new Error(message); e.code = code; return e; }
+  function platformName(value) { if (!SETTINGS[value]) throw error('platform','Choose PS4 or PS5.'); return value; }
+  function privateHost(host) {
+    if (host === 'localhost') return true;
+    if (/^\d+\.\d+\.\d+\.\d+$/.test(host)) {
+      var p = host.split('.').map(Number);
+      if (p.some(function (n) { return n > 255; })) return false;
+      return p[0] === 10 || p[0] === 127 || p[0] === 192 && p[1] === 168 || p[0] === 172 && p[1] >= 16 && p[1] <= 31 || p[0] === 169 && p[1] === 254;
+    }
+    return /^(?!-)[a-z0-9-]{1,63}\.local$/i.test(host) && !/-\.local$/i.test(host) || /^(?!-)[a-z][a-z0-9-]{0,62}$/i.test(host) && !/-$/.test(host);
+  }
+  function nativeOrigin(platform, location) {
+    var s = SETTINGS[platformName(platform)];
+    return !!(location && location.protocol === 'http:' && String(location.port) === s.port && privateHost(String(location.hostname || '')) && location.pathname === s.installPath);
+  }
+  function cleanPath(value) {
+    var p = String(value || '');
+    if (p.length > 1024 || p.charAt(0) !== '/' || /[\x00-\x1f\x7f\\%?#]/.test(p) || /\/\//.test(p) || p.split('/').some(function (v) { return v === '.' || v === '..'; })) throw error('path','Use a normal absolute console path without traversal or URL encoding.');
+    return p.length > 1 ? p.replace(/\/$/,'') : p;
+  }
+  function readPath(value, mountedRoots) {
+    var p = cleanPath(value);
+    if (p === '/data' || p.indexOf('/data/') === 0) return p;
+    if ((mountedRoots || []).some(function (v) { return /^\/mnt\/(?:usb|ext)[0-7]$/.test(v) && (p === v || p.indexOf(v + '/') === 0); })) return p;
+    throw error('path-scope','This workspace reads /data and explicitly verified mounted-device roots only. A numbered directory does not verify a mount.');
+  }
+  function namePart(value) {
+    var n = String(value || '');
+    if (!n || n.length > 120 || n === '.' || n === '..' || /[\x00-\x1f\x7f/\\%?#]/.test(n) || /[. ]$/.test(n)) throw error('name','Use a simple filename without slashes, traversal or trailing dots.');
+    return n;
+  }
+  function parentPath(p) { return p.slice(0,p.lastIndexOf('/')) || '/'; }
+  function baseName(p) { return p.slice(p.lastIndexOf('/') + 1); }
+  function writePath(platform, value, internal) {
+    var s = SETTINGS[platformName(platform)], p = readPath(value);
+    if (s.roots.some(function (v) { return p === v || p.indexOf(v + '/') === 0; })) return p;
+    if (internal && parentPath(p) === parentPath(s.config) && (p === s.config || p.indexOf(s.config + '.whatsite-backup-') === 0 || p.indexOf(s.config + '.whatsite-stage-') === 0)) return p;
+    throw error('write-scope','Writes are limited to the managed payload folders and the selected native autoload file.');
+  }
+  function bytes(value) {
+    if (value instanceof Uint8Array) return value;
+    if (value instanceof ArrayBuffer) return new Uint8Array(value);
+    throw error('bytes','The native service did not return file bytes.');
+  }
+  function encode(text) {
+    if (typeof TextEncoder !== 'undefined') return new TextEncoder().encode(text);
+    var s = unescape(encodeURIComponent(text)), b = new Uint8Array(s.length);
+    for (var i = 0; i < s.length; i++) b[i] = s.charCodeAt(i);
+    return b;
+  }
+  function decode(data) {
+    data = bytes(data);
+    if (typeof TextDecoder !== 'undefined') return new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(data);
+    var out = '';
+    for (var i = 0; i < data.length; i++) out += '%' + ('0' + data[i].toString(16)).slice(-2);
+    return decodeURIComponent(out);
+  }
+  function sha256(data) {
+    data = bytes(data);
+    var k = [0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+    var h = [0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19], w = [], blocks = Math.ceil((data.length + 9) / 64), low = data.length * 8 >>> 0, high = Math.floor(data.length / 536870912);
+    function r(v,n) { return v >>> n | v << 32-n; }
+    function at(i) { if (i < data.length) return data[i]; if (i === data.length) return 128; var t = i - (blocks*64-8); return t >= 0 ? (t < 4 ? high >>> ((3-t)*8) : low >>> ((7-t)*8)) & 255 : 0; }
+    for (var b = 0; b < blocks; b++) {
+      for (var i = 0; i < 16; i++) { var j=b*64+i*4; w[i]=at(j)<<24|at(j+1)<<16|at(j+2)<<8|at(j+3); }
+      for (i=16;i<64;i++) w[i]=((r(w[i-15],7)^r(w[i-15],18)^w[i-15]>>>3)+w[i-16]+(r(w[i-2],17)^r(w[i-2],19)^w[i-2]>>>10)+w[i-7])|0;
+      var a=h[0],c=h[2],d=h[3],e=h[4],f=h[5],g=h[6],v=h[7],bb=h[1];
+      for(i=0;i<64;i++){var t=(v+(r(e,6)^r(e,11)^r(e,25))+(e&f^~e&g)+k[i]+w[i])|0,u=((r(a,2)^r(a,13)^r(a,22))+(a&bb^a&c^bb&c))|0;v=g;g=f;f=e;e=d+t|0;d=c;c=bb;bb=a;a=t+u|0;}
+      h[0]=h[0]+a|0;h[1]=h[1]+bb|0;h[2]=h[2]+c|0;h[3]=h[3]+d|0;h[4]=h[4]+e|0;h[5]=h[5]+f|0;h[6]=h[6]+g|0;h[7]=h[7]+v|0;
+    }
+    return h.map(function (n) { return ('00000000'+(n>>>0).toString(16)).slice(-8); }).join('');
+  }
+  function normalizeLines(text) { return text.replace(/\r\n|\r/g,'\n'); }
+  function preserveLines(original, edited) {
+    edited = normalizeLines(edited);
+    if (edited === normalizeLines(original)) return original;
+    var parts = original.split(/(\r\n|\n|\r)/), endings = Object.create(null), fallback = '\n';
+    for (var i=0;i<parts.length;i+=2) { var key='$'+parts[i]; if (!endings[key]) endings[key]=[]; if (parts[i+1]) { endings[key].push(parts[i+1]); if (fallback==='\n') fallback=parts[i+1]; } }
+    return edited.split('\n').map(function (line,index,all) { var list=endings['$'+line]; return line + (index === all.length-1 ? '' : list && list.length ? list.shift() : fallback); }).join('');
+  }
+  function xhrTransport(method, route, body, type, limit, changed, options) {
+    return new Promise(function (resolve,reject) {
+      var xhr = options.xhrFactory ? options.xhrFactory() : new root.XMLHttpRequest(), done=false;
+      function finish(e,value) { if(done)return;done=true;if(e){if(changed)e.mayHaveChanged=true;reject(e);}else resolve(value); }
+      xhr.open(method,route,true);xhr.timeout=options.timeoutMs || 20000;
+      if(type==='bytes')xhr.responseType='arraybuffer';
+      if(body && typeof body==='string')xhr.setRequestHeader('Content-Type','application/json');
+      xhr.onprogress=function(ev){if(ev.loaded>limit){finish(error('response-too-large','The native response exceeded the workspace limit.'));xhr.abort();}};
+      xhr.onerror=function(){finish(error('network','The native connection was lost. Inspect the console before repeating any write.'));};
+      xhr.ontimeout=function(){finish(error('timeout','The native request timed out. Inspect the console before repeating any write.'));};
+      xhr.onload=function(){
+        if(xhr.status<200||xhr.status>=300){finish(error('http-'+xhr.status,'ezRemote returned HTTP '+xhr.status+'.'));return;}
+        try {var result=type==='bytes'?bytes(xhr.response):String(xhr.responseText);if((type==='bytes'?result.length:encode(result).length)>limit)throw error('response-too-large','The native response exceeded the workspace limit.');finish(null,result);}catch(e){finish(e);}
+      };
+      try{xhr.send(body || null);}catch(e){finish(e);}
+    });
+  }
+  function createClient(options) {
+    options=options || {};var platform=platformName(options.platform), s=SETTINGS[platform], ready=false, serial=0;
+    function perform(method,route,body,type,limit,changed) {
+      if(!nativeOrigin(platform,options.location))return Promise.reject(error('native-origin','Open the installed workspace through the running ezRemote Client on its default native port. Public previews are read-only.'));
+      if(changed&&!ready)return Promise.reject(error('not-checked','Read a folder successfully before enabling file changes.'));
+      var pending=options.transport?Promise.resolve().then(function(){return options.transport(method,route,body,type,limit,changed);}):xhrTransport(method,route,body,type,limit,changed,options);
+      return pending.catch(function(e){ready=false;if(changed)e.mayHaveChanged=true;throw e;});
+    }
+    function json(route,body,changed) {
+      return perform('POST',route,JSON.stringify(body),'text',1024*1024,changed).then(function(text){var out;try{out=JSON.parse(text);}catch(_){var e=error('invalid-response','ezRemote returned an unreadable response. Inspect the console before repeating any write.');if(changed)e.mayHaveChanged=true;throw e;}if(!out||out.result===undefined)throw error('invalid-response','ezRemote did not return its native result.');if(changed&&(!out.result||out.result.success!==true)){var failure=error('native-error','ezRemote did not confirm the file change. Inspect the console before repeating it.');failure.mayHaveChanged=true;throw failure;}return out.result;});
+    }
+    function list(folder) {
+      folder=readPath(folder,options.mountedRoots);
+      return json('/__local__/list',{path:folder,onlyFolders:false},false).then(function(items){
+        if(!Array.isArray(items)||items.length>5000||items.some(function(item){return !item||typeof item.name!=='string'||['dir','file'].indexOf(item.type)<0||!/^\d*$/.test(String(item.size));}))throw error('invalid-list','ezRemote did not return a bounded directory listing.');
+        items.forEach(function(item){namePart(item.name);});ready=true;return items;
+      }).catch(function(e){ready=false;throw e;});
+    }
+    function find(items,name) { for(var i=0;i<items.length;i++)if(items[i].name===name)return items[i];return null; }
+    function readBinary(file,limit) {
+      file=readPath(file,options.mountedRoots);limit=limit || MAX_FILE;
+      return list(parentPath(file)).then(function(items){var item=find(items,baseName(file));if(!item||item.type!=='file')throw error('missing-file','The selected file is not present in the native listing.');var size=Number(item.size);if(!isFinite(size)||Math.floor(size)!==size||size<0||size>limit)throw error('file-limit','This file exceeds the workspace read limit. Use the native file manager.');return perform('GET','/__local__/downloadFile?path='+encodeURIComponent(file),null,'bytes',limit,false).then(function(data){data=bytes(data);if(data.length!==size||data.length>limit)throw error('file-changed','The file size changed while it was being read. Read it again before proceeding.');return data;});});
+    }
+    function getContent(file) {file=readPath(file,options.mountedRoots);return list(parentPath(file)).then(function(items){var item=find(items,baseName(file));if(!item||item.type!=='file'||Number(item.size)>MAX_TEXT)throw error('text-limit','The native text file could not be read within the editor limit.');return json('/__local__/getContent',{item:file},false);}).then(function(text){if(typeof text!=='string'||encode(text).length>MAX_TEXT)throw error('text-limit','The native text file could not be read within the editor limit.');return text;});}
+    function operation(route,body) {return json(route,body,true);}
+    function uploadBytes(file,data,internal) {
+      file=writePath(platform,file,internal);data=bytes(data);if(!data.length&&!internal||data.length>MAX_UPLOAD)throw error('upload-limit','Uploads must contain 1 byte through 8 MiB. Use the native file manager for larger files.');
+      var form=options.formDataFactory?options.formDataFactory():new root.FormData();
+      form.append('destination',parentPath(file));form.append('_chunkSize',String(data.length));form.append('_chunkNumber','0');form.append('_totalSize',String(data.length));form.append('_currentChunkSize',String(data.length));
+      form.append('file',new (options.Blob || root.Blob)([data],{type:'application/octet-stream'}),baseName(file));
+      return perform('POST','/__local__/upload',form,'text',1024*1024,true).then(function(text){var out;try{out=JSON.parse(text);}catch(_){throw error('invalid-response','The upload acknowledgement could not be read. Inspect the console before retrying.');}if(!out||!out.result||out.result.success!==true)throw error('native-error','ezRemote did not confirm the upload.');return readBinary(file,MAX_UPLOAD);}).then(function(saved){if(sha256(saved)!==sha256(data))throw error('verify-failed','The saved file did not match its expected SHA-256. Inspect the console; no retry was sent.');return {path:file,bytes:data.length,sha256:sha256(data)};}).catch(function(e){e.mayHaveChanged=true;throw e;});
+    }
+    function unique(file,kind) {serial++;var entropy='';if(root.crypto&&root.crypto.getRandomValues){var b=new Uint32Array(2);root.crypto.getRandomValues(b);entropy=b[0].toString(16)+b[1].toString(16);}else entropy=Math.random().toString(16).slice(2);return file+'.whatsite-'+kind+'-'+Date.now()+'-'+serial+'-'+entropy+(kind==='backup'?'.bak':'.tmp');}
+    function absent(file) {return list(parentPath(file)).then(function(items){if(find(items,baseName(file)))throw error('already-exists','The destination already exists. Choose a new name; existing files are preserved.');});}
+    function verifyHash(file,expected,limit) {return readBinary(file,limit).then(function(data){if(sha256(data)!==expected)throw error('file-changed','The file changed since it was read. Read it again; no replacement was requested.');return data;});}
+    function createFolder(folder) {
+      folder=writePath(platform,folder);namePart(baseName(folder));
+      var started=false;
+      return absent(folder).then(function(){started=true;return operation('/__local__/createFolder',{newPath:folder});}).then(function(){return list(parentPath(folder));}).then(function(items){var item=find(items,baseName(folder));if(!item||item.type!=='dir')throw error('verify-failed','The native listing did not confirm the new folder. Inspect the console before retrying.');return {path:folder};}).catch(function(e){if(started)e.mayHaveChanged=true;throw e;});
+    }
+    function uploadPayload(folder,filename,data) {
+      folder=writePath(platform,folder);filename=namePart(filename);data=bytes(data);
+      if(!/\.(?:bin|elf)$/i.test(filename))throw error('payload-format','Choose a ready BIN or ELF file. This page saves files and never executes them.');
+      if(/\.elf$/i.test(filename)&&(data.length<64||data[0]!==127||data[1]!==69||data[2]!==76||data[3]!==70))throw error('payload-format','The selected ELF does not have its executable header.');
+      if(data.length>MAX_UPLOAD||!data.length)throw error('upload-limit','Uploads must contain 1 byte through 8 MiB. Use the native file manager for larger files.');
+      var file=folder+'/'+filename;return absent(file).then(function(){return uploadBytes(file,data,false);});
+    }
+    function renameFile(file,newName) {
+      file=writePath(platform,file);newName=namePart(newName);
+      if(s.roots.indexOf(file)>=0)throw error('write-scope','Managed root folders cannot be renamed.');
+      var destination=parentPath(file)+'/'+newName,original,started=false;
+      writePath(platform,destination);
+      return readBinary(file).then(function(data){original=sha256(data);return absent(destination);}).then(function(){started=true;return operation('/__local__/rename',{item:file,newItemPath:destination});}).then(function(){return list(parentPath(file));}).then(function(items){if(find(items,baseName(file))||!find(items,newName))throw error('verify-failed','The listing did not confirm the rename. Inspect the console before retrying.');return verifyHash(destination,original,MAX_FILE);}).then(function(data){return {path:destination,bytes:data.length,sha256:original};}).catch(function(e){if(started)e.mayHaveChanged=true;throw e;});
+    }
+    function readConfig() {
+      return readBinary(s.config,MAX_TEXT).then(function(data){var text;try{text=decode(data);}catch(_){throw error('text-encoding','The autoload file is not valid UTF-8. Download it and use its native editor.');}if(text.indexOf('\0')>=0)throw error('text-encoding','The autoload file contains binary data. It will not be edited.');return getContent(s.config).then(function(nativeText){if(nativeText!==text)throw error('text-changed','Native text and binary reads differ. Read the file again before editing.');return {path:s.config,text:text,bytes:data.length,data:data,sha256:sha256(data)};});});
+    }
+    function saveConfig(snapshot,edited) {
+      if(!snapshot||snapshot.path!==s.config||typeof snapshot.text!=='string'||sha256(snapshot.data)!==snapshot.sha256)return Promise.reject(error('snapshot','Read the actual autoload file before saving.'));
+      var content=preserveLines(snapshot.text,String(edited)),data=encode(content),backup=unique(s.config,'backup'),stage=unique(s.config,'stage'),started=false;
+      if(content===snapshot.text)return Promise.resolve({status:'unchanged',path:s.config,sha256:snapshot.sha256});
+      if(data.length>MAX_TEXT||content.indexOf('\0')>=0)return Promise.reject(error('text-limit','Keep the native autoload file within 64 KiB with no binary data.'));
+      return verifyHash(s.config,snapshot.sha256,MAX_TEXT).then(function(){return absent(backup);}).then(function(){started=true;return uploadBytes(backup,snapshot.data,true);}).then(function(){return verifyHash(s.config,snapshot.sha256,MAX_TEXT);}).then(function(){return absent(stage);}).then(function(){writePath(platform,stage,true);if(!data.length)return uploadBytes(stage,data,true);return operation('/__local__/edit',{item:stage,content:content});}).then(function(){return verifyHash(stage,sha256(data),MAX_TEXT);}).then(function(){return verifyHash(s.config,snapshot.sha256,MAX_TEXT);}).then(function(){return operation('/__local__/rename',{item:stage,newItemPath:s.config});}).then(function(){return verifyHash(s.config,sha256(data),MAX_TEXT);}).then(function(){return {status:'saved',path:s.config,backupPath:backup,sha256:sha256(data),bytes:data.length};}).catch(function(e){if(started){e.mayHaveChanged=true;e.backupPath=backup;e.stagePath=stage;}throw e;});
+    }
+    return {platform:platform,settings:s,isNative:nativeOrigin(platform,options.location),isReady:function(){return ready;},list:list,readBinary:readBinary,getContent:getContent,createFolder:createFolder,uploadPayload:uploadPayload,renameFile:renameFile,readConfig:readConfig,saveConfig:saveConfig};
+  }
+  function mount(document) {
+    var el=document.getElementById('native-workspace');if(!el)return;
+    var platform=platformName(el.getAttribute('data-platform')),s=SETTINGS[platform],client=createClient({platform:platform,location:root.location}),active='files',folder='/data',selected=null,snapshot=null,busy=false,warning=false;
+    var match=String(root.location.search || '').match(/[?&]view=(files|payloads|autoload)(?:&|$)/);if(match)active=match[1];
+    el.innerHTML='<header><a href="https://whatwhatboy.com/hosts/">whatsite / console workspace</a><h1>'+platform.toUpperCase()+' files &amp; payloads</h1><p>Manage actual console files through ezRemote Client. No payload runs when this page opens.</p></header><div class="workspace-gate" id="workspace-gate"></div><nav aria-label="Workspace"><button data-view="files">File manager</button><button data-view="payloads">Payload files</button><button data-view="autoload">Autoload file</button></nav><p id="workspace-status" role="status" aria-live="polite">Choose a view, then read the console when ready.</p><section id="workspace-files"><div class="workspace-path"><label for="workspace-folder">Console folder</label><input id="workspace-folder" value="/data" spellcheck="false"><button id="workspace-read">Read folder</button></div><div id="workspace-shortcuts" class="workspace-actions"></div><div class="workspace-table-wrap"><table><thead><tr><th>Name</th><th>Type</th><th>Bytes</th></tr></thead><tbody id="workspace-list"></tbody></table></div><p id="workspace-selected">No file selected.</p><div class="workspace-actions"><button id="workspace-download">Download selected file</button><button id="workspace-rename">Rename selected file</button></div><fieldset><legend>Managed payload folders only</legend><p>Uploads accept ready BIN or ELF files up to 8 MiB. Existing filenames are preserved. This workspace never executes a payload.</p><label for="workspace-upload">Choose a file</label><input type="file" id="workspace-upload" accept=".bin,.elf"><button id="workspace-send">Upload &amp; verify</button><button id="workspace-create">Create folder</button></fieldset></section><section id="workspace-autoload" hidden><h2>Native autoload file</h2><code id="workspace-config"></code><p id="workspace-config-note"></p><button id="workspace-config-read">Read actual file</button><label for="workspace-editor">Raw file editor · comments, unknown sections and entries are retained unless you edit them</label><textarea id="workspace-editor" rows="16" spellcheck="false" disabled></textarea><label class="workspace-confirm"><input id="workspace-confirm" type="checkbox"> I reviewed these edits and checked that no native autoload sequence is active. Save must keep a verified backup.</label><button id="workspace-config-save" disabled>Back up, save &amp; verify</button><p id="workspace-config-hash"></p><div id="workspace-manager" class="workspace-actions"></div></section><footer>Only ezRemote Client on its own HTTP origin can operate this workspace. External storage remains in the native file manager until its actual mount is verified. No files are deleted here.</footer>';
+    function node(id){return document.getElementById(id);}
+    function status(text,bad){node('workspace-status').textContent=text;node('workspace-status').className=bad?'workspace-error':'';}
+    function update(){Array.prototype.forEach.call(el.querySelectorAll('button'),function(b){b.disabled=busy||!client.isNative;});['workspace-folder','workspace-upload','workspace-confirm'].forEach(function(id){node(id).disabled=busy||!client.isNative;});node('workspace-editor').disabled=busy||!snapshot||!client.isNative;node('workspace-download').disabled=busy||!selected||!client.isNative;node('workspace-rename').disabled=busy||!selected||!client.isReady()||warning;node('workspace-send').disabled=busy||!client.isReady()||warning;node('workspace-create').disabled=busy||!client.isReady()||warning;node('workspace-config-save').disabled=busy||!snapshot||!node('workspace-confirm').checked||warning||!client.isNative;Array.prototype.forEach.call(el.querySelectorAll('[data-view]'),function(b){b.disabled=busy;b.setAttribute('aria-pressed',b.getAttribute('data-view')===active?'true':'false');});}
+    function task(label,run,done){if(busy)return;busy=true;status(label);update();Promise.resolve().then(run).then(function(value){busy=false;if(done)done(value);update();},function(e){busy=false;if(e.mayHaveChanged)warning=true;status(e.message+(e.backupPath?' Any backup or staging files are retained: '+e.backupPath:'')+(warning?' Read the console again before another change.':''),true);update();});}
+    function read(folderValue){task('Reading the native directory…',function(){folder=readPath(folderValue);return client.list(folder);},function(items){warning=false;selected=null;node('workspace-folder').value=folder;var body=node('workspace-list');body.textContent='';items.forEach(function(item){var row=document.createElement('tr'),name=document.createElement('td'),button=document.createElement('button');button.type='button';button.textContent=item.name;button.addEventListener('click',function(){if(item.type==='dir')read(folder+'/'+item.name);else{selected={path:folder+'/'+item.name,size:item.size};node('workspace-selected').textContent=selected.path;update();}});name.appendChild(button);row.appendChild(name);['type','size'].forEach(function(k){var cell=document.createElement('td');cell.textContent=item[k];row.appendChild(cell);});body.appendChild(row);});node('workspace-selected').textContent='No file selected.';status('Native listing read: '+items.length+' entries. An empty result does not establish that a directory exists or is writable.');});}
+    function view(next){active=next;node('workspace-files').hidden=next==='autoload';node('workspace-autoload').hidden=next!=='autoload';if(next==='payloads')node('workspace-folder').value='/data/payloads';update();}
+    Array.prototype.forEach.call(el.querySelectorAll('[data-view]'),function(b){b.addEventListener('click',function(){view(b.getAttribute('data-view'));});});
+    s.roots.forEach(function(p){var b=document.createElement('button');b.type='button';b.textContent=p;b.addEventListener('click',function(){read(p);});node('workspace-shortcuts').appendChild(b);});
+    node('workspace-read').addEventListener('click',function(){read(node('workspace-folder').value);});
+    node('workspace-create').addEventListener('click',function(){var name=root.prompt('New folder name');if(!name)return;task('Creating and verifying the folder…',function(){return client.createFolder(cleanPath(node('workspace-folder').value)+'/'+namePart(name));},function(out){status('Verified new folder: '+out.path+'. Read the folder to refresh the listing.');});});
+    node('workspace-rename').addEventListener('click',function(){if(!selected)return;var name=root.prompt('New filename',baseName(selected.path));if(!name)return;task('Checking the original, renaming and verifying the result…',function(){return client.renameFile(selected.path,name);},function(out){selected={path:out.path};node('workspace-selected').textContent=out.path;status('Renamed file verified by SHA-256: '+out.sha256+'. Read the folder to refresh the listing.');});});
+    node('workspace-download').addEventListener('click',function(){if(!selected)return;var filename=baseName(selected.path);task('Reading selected file…',function(){return client.readBinary(selected.path);},function(data){var link=document.createElement('a'),url=root.URL.createObjectURL(new root.Blob([data],{type:'application/octet-stream'}));link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.parentNode.removeChild(link);root.setTimeout(function(){root.URL.revokeObjectURL(url);},30000);status('File read for download. SHA-256: '+sha256(data));});});
+    node('workspace-send').addEventListener('click',function(){var file=node('workspace-upload').files[0],destination=node('workspace-folder').value;if(!file){status('Choose a ready BIN or ELF file first.',true);return;}task('Reading, uploading and verifying the file…',function(){if(file.size>MAX_UPLOAD)throw error('upload-limit','Uploads are limited to 8 MiB. Use the native file manager for larger files.');return new Promise(function(resolve,reject){var reader=new root.FileReader();reader.onload=function(){resolve(bytes(reader.result));};reader.onerror=function(){reject(error('file-read','The selected local file could not be read.'));};reader.readAsArrayBuffer(file);}).then(function(data){return client.uploadPayload(cleanPath(destination),file.name,data);});},function(out){status('Saved file verified: '+out.path+' · SHA-256 '+out.sha256+'. No execution was requested. Read the folder to refresh the listing.');});});
+    node('workspace-config').textContent=s.config;
+    node('workspace-config-note').textContent=platform==='ps4'?'GoldHEN uses payloads.ini with an [AutoRun] section. This raw editor does not invent ordering, delay syntax or firmware support. Keep actual generated paths and use a compatible GoldHEN version.':'This edits the actual on-disk list, not the manager’s current execution state. Review the native manager before editing; use its own Autoload page to apply supported configuration changes. Saving here never runs a sequence.';
+    node('workspace-config-read').addEventListener('click',function(){task('Reading native autoload bytes and text…',function(){return client.readConfig();},function(out){snapshot=out;warning=false;node('workspace-editor').disabled=false;node('workspace-editor').value=out.text;node('workspace-confirm').checked=false;node('workspace-config-hash').textContent='Read SHA-256: '+out.sha256;status('Actual native file read. No file has been changed.');});});
+    node('workspace-confirm').addEventListener('change',update);
+    node('workspace-config-save').addEventListener('click',function(){if(!snapshot||!node('workspace-confirm').checked)return;task('Verifying the original, preserving a verified backup, staging and checking the replacement…',function(){return client.saveConfig(snapshot,node('workspace-editor').value);},function(out){node('workspace-confirm').checked=false;if(out.status==='unchanged'){status('No edits to save. No write was requested.');return;}snapshot=null;node('workspace-editor').disabled=true;status('On-disk file verified. Backup retained: '+out.backupPath+'. Read the actual file again. Native autoload execution and applied settings have not been verified.');});});
+    if(platform==='ps5'&&client.isNative)['autoload','storage','settings'].forEach(function(route){var a=document.createElement('a');a.href='http://'+root.location.hostname+':8084/#/'+route;a.textContent='Native manager: '+route;a.target='_blank';a.rel='noopener noreferrer';node('workspace-manager').appendChild(a);});
+    node('workspace-gate').textContent=client.isNative?'ezRemote origin selected. Read a folder or the autoload file to check its API. Keep the native app running.':'Read-only preview. Copy this self-contained HTML file to '+s.installPath+', start ezRemote Client with its Web Server enabled, then open http://CONSOLE-IP:'+s.port+s.installPath+'. No console requests are made from this preview.';
+    view(active);
+  }
+  return {settings:SETTINGS,limits:{text:MAX_TEXT,file:MAX_FILE,upload:MAX_UPLOAD},nativeOrigin:nativeOrigin,cleanPath:cleanPath,readPath:readPath,writePath:writePath,namePart:namePart,encode:encode,decode:decode,sha256:sha256,preserveLines:preserveLines,createClient:createClient,mount:mount};
+}));
+</script></body></html>

@@ -1,0 +1,877 @@
+{
+  "updatedAt": "2026-11-02T12:22:27.879Z",
+  "scope": "wiiu-games-batch2",
+  "items": [
+    {
+      "id": "second-wind",
+      "title": "Second Wind",
+      "platform": "Wii U",
+      "category": "Game Mods",
+      "version": "v1.9.14-alpha-7",
+      "url": "https://github.com/CEObrainz/Second-Wind/releases/download/v1.9.14-alpha-7/Second.Wind.v1.9.14-alpha-7-UKMM.zip",
+      "source": "https://github.com/CEObrainz/Second-Wind/releases/tag/v1.9.14-alpha-7",
+      "name": "Second.Wind.v1.9.14-alpha-7-UKMM.zip",
+      "expectedBytes": 546775559,
+      "description": "Breath of the Wild expansion mod · alpha release for UKMM.",
+      "requirements": "Wii U Breath of the Wild 1.5.0 with DLC 3.0; own game/update/DLC dumps; UKMM 0.17.0 or later. At least20 GB free on PC and SD. The project’s console guide recommends a legacy Tiramisu route for this mod; do not assume generic Aroma instructions apply.",
+      "setup": "Import this ZIP unopened into UKMM configured for your Wii U region/language and own base/update/DLC dumps. Apply and deploy the console layout, then follow the original Wii U loader guide. Back up saves first. Remove the deployed mod pack or disable its loader to return to clean files.",
+      "status": "unavailable",
+      "error": "Transfer failed or remained incomplete after bounded retries. No completed F archive or ready download is claimed."
+    },
+    {
+      "id": "falling-leaf",
+      "title": "Newer Falling Leaf",
+      "platform": "Wii U",
+      "category": "Game Mods",
+      "version": "1.12",
+      "url": "https://mega.nz/#!a2ZXTRgA!aWQ2JkrUpXiUfpx-gTpjw0WjI5EajitnqkQR8aW6x28",
+      "source": "https://newerteam.com/wii/specials.html",
+      "name": "Newer_Falling_Leaf_1.12.zip",
+      "expectedBytes": 149915067,
+      "mega": true,
+      "description": "New Super Mario Bros. Wii level mod for Wii/vWii, supplied as a full patch bundle.",
+      "requirements": "Wii U vWii Homebrew Channel, Riivolution1.06 or later, and your New Super Mario Bros. Wii retail disc. Use only game IDs accepted by the included Riivolution XML; no game image is supplied.",
+      "setup": "Extract the entire original archive preserving its mod data folder and riivolution XML at SD root. Launch Riivolution from vWii HBC with your disc inserted, select this patch and launch. Disable the patch or move its folder off SD to undo; preserve saves and original ZIP.",
+      "status": "unavailable",
+      "error": "Transfer failed or remained incomplete after bounded retries. No completed F archive or ready download is claimed."
+    },
+    {
+      "id": "summer-sun",
+      "title": "Newer Summer Sun",
+      "platform": "Wii U",
+      "category": "Game Mods",
+      "version": "1.12",
+      "url": "https://mega.nz/#!S2gxSQJK!EnzSuFO3d0LtjN9gEv6jzykwGB-yRvDha3w_iWk6mNk",
+      "source": "https://newerteam.com/wii/specials.html",
+      "name": "Newer_Summer_Sun_1.12.zip",
+      "expectedBytes": 131888515,
+      "mega": true,
+      "description": "New Super Mario Bros. Wii level mod for Wii/vWii, supplied as a full patch bundle.",
+      "requirements": "Wii U vWii Homebrew Channel, Riivolution1.06 or later, and your New Super Mario Bros. Wii retail disc. Use only game IDs accepted by the included Riivolution XML; no game image is supplied.",
+      "setup": "Extract the entire original archive preserving its mod data folder and riivolution XML at SD root. Launch Riivolution from vWii HBC with your disc inserted, select this patch and launch. Disable the patch or move its folder off SD to undo; preserve saves and original ZIP.",
+      "status": "unavailable",
+      "error": "Transfer failed or remained incomplete after bounded retries. No completed F archive or ready download is claimed."
+    },
+    {
+      "id": "holiday-special",
+      "title": "Newer Holiday Special",
+      "platform": "Wii U",
+      "category": "Game Mods",
+      "version": "1.12",
+      "url": "https://mega.nz/#!T2IGCTDb!1fW9TSvsBqEuJq5Qjvh-4roAaWZ0Scx5HwPZe_mWqkU",
+      "source": "https://newerteam.com/wii/specials.html",
+      "name": "Newer_W_Holiday_Special_1.12.zip",
+      "expectedBytes": 68818998,
+      "mega": true,
+      "description": "New Super Mario Bros. Wii level mod for Wii/vWii, supplied as a full patch bundle.",
+      "requirements": "Wii U vWii Homebrew Channel, Riivolution1.06 or later, and your New Super Mario Bros. Wii retail disc. Use only game IDs accepted by the included Riivolution XML; no game image is supplied.",
+      "setup": "Extract the entire original archive preserving its mod data folder and riivolution XML at SD root. Launch Riivolution from vWii HBC with your disc inserted, select this patch and launch. Disable the patch or move its folder off SD to undo; preserve saves and original ZIP.",
+      "status": "unavailable",
+      "error": "Transfer failed or remained incomplete after bounded retries. No completed F archive or ready download is claimed."
+    },
+    {
+      "id": "ctgp-r",
+      "title": "CTGP Revolution",
+      "platform": "Wii U",
+      "category": "Game Mods",
+      "version": "1.03.1190",
+      "url": "https://mega.nz/file/Ae4xWKaY#guxkfuaYnaAof5awsJxje0N_qsRO-fjKwRJ9BkA3vYc",
+      "source": "https://chadsoft.co.uk/install-guide/",
+      "name": "CTGP-R v1.03.1190 All Inclusive.zip",
+      "expectedBytes": 1003926952,
+      "mega": true,
+      "description": "Mario Kart Wii custom tracks and CTGP-R channel bundle for Wii/vWii.",
+      "requirements": "Wii U vWii, working Mario Kart Wii retail disc, SD card and the official Wii U installation wizard. This is not Mario Kart8.",
+      "setup": "Back up SD contents and My Stuff first. Extract the entire original bundle to SD root and follow the official wizard selecting Wii U and your disc region. Keep all ctgpr/apps files. Use the in-channel updater as documented.",
+      "status": "unavailable",
+      "error": "Transfer failed or remained incomplete after bounded retries. No completed F archive or ready download is claimed."
+    },
+    {
+      "id": "wiiu-DonkeyKongish",
+      "title": "DonkeyKong-ish",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "2.0.0",
+      "url": "https://wiiu.cdn.fortheusers.org/zips/DonkeyKongish.zip",
+      "source": "https://hb-app.store/wiiu/DonkeyKongish",
+      "name": "DonkeyKongish-2.0.0.zip",
+      "description": "Game based on the legendary Donkey Kong.",
+      "author": "Martin Butler",
+      "details": "This was a game I originally wrote in Java; my then 9 year old son designed the levels. Sorry I can't remember where I got the sprites, other elements were drawn by my son. I've ported it over to the Wii U. I got the music from Donkey Kong Soundboard.",
+      "md5": "1806694201364b09caa3efbed2c7e02e",
+      "icon": "https://wiiu.cdn.fortheusers.org/packages/DonkeyKongish/icon.png",
+      "requirements": "Aroma for the bundled WUHB. Keep the complete package; any separate RPX variant needs the environment documented by the project.",
+      "setup": "Extract the complete SD bundle to the SD root; keep every app folder, music file and companion asset. Launch the matching executable from its documented environment.",
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 3,
+        "uncompressedBytes": 822077,
+        "builds": [
+          {
+            "path": "wiiu/apps/DonkeyKongish/DonkeyKong-ish.wuhb",
+            "bytes": 821324,
+            "sha256": "97431515754fc7c6ea38b15ac68048981328816cbdeb55d49b03cdffe5d72656"
+          }
+        ],
+        "xmlFiles": [],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/wiiu-DonkeyKongish.png",
+      "file": {
+        "name": "DonkeyKongish-2.0.0.zip",
+        "version": "2.0.0",
+        "bytes": 814088,
+        "sha256": "6ea546b0cde189dc9496b6729e2e50c3ddfadfe7bd41c02b684e2423d37f5bae",
+        "sourceUrl": "https://wiiu.cdn.fortheusers.org/zips/DonkeyKongish.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/DonkeyKongish-2.0.0.zip",
+        "itemId": "wiiu-games-batch2-wiiu-DonkeyKongish",
+        "platform": "Wii U",
+        "category": [
+          "Wii U",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Wii U\\Homebrew Games\\DonkeyKong-ish\\Builds\\2.0.0\\DonkeyKongish-2.0.0.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "wiiu-PacManish",
+      "title": "PacMan-ish",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "1.0.4",
+      "url": "https://wiiu.cdn.fortheusers.org/zips/PacManish.zip",
+      "source": "https://hb-app.store/wiiu/PacManish",
+      "name": "PacManish-1.0.4.zip",
+      "description": "Variation on PacMan translated for Wii U",
+      "author": "Martin Butler",
+      "details": "This is a variation on PacMan that I wrote a number of years ago. My then 8 year old son designed the screen and the images and told me how he wanted the game to play. I then wrote the game in Java. As a programming exercise I've now converted it to C, to run on the Wii U under Homebrew (https://wiiubrew.org/). It uses the OSScreen interfaces for the graphics and sndcore2 for the sound.\\n\\nThe images used by Draw.c have been converted from bitmap files into two dimensional arrays in .h files, so that they can easily be incorporated into the software. This is done using the tool https://github.com/MartinButlerAAA/ProcessBmp.\\n\\nThe Sounds.c code has been developed using https://github.com/ashquarky/LiveSynthesisU as an example. The code uses .wav sound files that have been converted to data arrays in .h files (I have borrowed the sounds I used from https://scratch.mit.edu/). The .wav files are converted to .h files using the tool https://github.com/MartinButlerAAA/ProcessWav.",
+      "md5": "b9aeb2716efea4bcec9676ef215bc717",
+      "icon": "https://wiiu.cdn.fortheusers.org/packages/PacManish/icon.png",
+      "requirements": "Aroma for the bundled WUHB. Keep the complete package; any separate RPX variant needs the environment documented by the project.",
+      "setup": "Extract the complete SD bundle to the SD root; keep every app folder, music file and companion asset. Launch the matching executable from its documented environment.",
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 3,
+        "uncompressedBytes": 1551910,
+        "builds": [
+          {
+            "path": "wiiu/apps/PacManish/PacMan-ishU.wuhb",
+            "bytes": 1550028,
+            "sha256": "fe945468867df41366a398a1c9dca083d248c71da382b2b4ac8e7507c37a4614"
+          }
+        ],
+        "xmlFiles": [],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/wiiu-PacManish.png",
+      "file": {
+        "name": "PacManish-1.0.4.zip",
+        "version": "1.0.4",
+        "bytes": 1545113,
+        "sha256": "354c8cdc2a756b1d1eeb25720aaf7995fdbe4b6e9c5597d182d34855dd803208",
+        "sourceUrl": "https://wiiu.cdn.fortheusers.org/zips/PacManish.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/PacManish-1.0.4.zip",
+        "itemId": "wiiu-games-batch2-wiiu-PacManish",
+        "platform": "Wii U",
+        "category": [
+          "Wii U",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Wii U\\Homebrew Games\\PacMan-ish\\Builds\\1.0.4\\PacManish-1.0.4.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "wiiu-Trogdor-Reburninated",
+      "title": "Trogdor-Reburninated",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "2.4",
+      "url": "https://wiiu.cdn.fortheusers.org/zips/Trogdor-Reburninated.zip",
+      "source": "https://hb-app.store/wiiu/Trogdor-Reburninated",
+      "name": "Trogdor-Reburninated-2.4.zip",
+      "description": "Burninate the countryside!",
+      "author": "Mode8fx",
+      "details": "An enhanced recreation of the Homestar Runner Flash game, \"Trogdor\", expanded with new features.\\n- New Options menu to customize your game\\n- Level select\\n- New cheats\\n- Optional soundtrack from Stinkoman 20X6, another Homestar Runner game\\n- Multiple screen scaling options\\n- Bugs from the original game have been fixed",
+      "md5": "7308e2e629ef8df0fb5ed7ba2ce43081",
+      "expectedSha256": "dfb887e10801f16c8268ca03da5b7ae0d16cc48c519ce8ecbeb9237090f66bd1",
+      "icon": "https://wiiu.cdn.fortheusers.org/packages/Trogdor-Reburninated/icon.png",
+      "requirements": "Aroma for the bundled WUHB. Keep the complete package; any separate RPX variant needs the environment documented by the project.",
+      "setup": "Extract the complete SD bundle to the SD root; keep every app folder, music file and companion asset. Launch the matching executable from its documented environment.",
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 57,
+        "uncompressedBytes": 14519194,
+        "builds": [
+          {
+            "path": "wiiu/apps/Trogdor-RB/Trogdor-Reburninated.wuhb",
+            "bytes": 3405408,
+            "sha256": "d41cf97590ad82af580d3bb49658df56ef8a86130e5a66bf80f3e4a1d74dfdf5"
+          },
+          {
+            "path": "wiiu/apps/Trogdor-RB/Trogdor-Reburninated.rpx",
+            "bytes": 3375986,
+            "sha256": "ef9ac7448b7369d7a51b57fc0e72ebe96c39aa9c914b5e1f33aa94d16d5ab3f9"
+          }
+        ],
+        "xmlFiles": [
+          "wiiu/apps/Trogdor-RB/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/wiiu-Trogdor-Reburninated.png",
+      "file": {
+        "name": "Trogdor-Reburninated-2.4.zip",
+        "version": "2.4",
+        "bytes": 14270774,
+        "sha256": "dfb887e10801f16c8268ca03da5b7ae0d16cc48c519ce8ecbeb9237090f66bd1",
+        "sourceUrl": "https://wiiu.cdn.fortheusers.org/zips/Trogdor-Reburninated.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/Trogdor-Reburninated-2.4.zip",
+        "itemId": "wiiu-games-batch2-wiiu-Trogdor-Reburninated",
+        "platform": "Wii U",
+        "category": [
+          "Wii U",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Wii U\\Homebrew Games\\Trogdor-Reburninated\\Builds\\2.4\\Trogdor-Reburninated-2.4.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "wiiu-ConwaysGameofLife",
+      "title": "Conway's Game of Life",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "0.1",
+      "url": "https://wiiu.cdn.fortheusers.org/zips/ConwaysGameofLife.zip",
+      "source": "https://hb-app.store/wiiu/ConwaysGameofLife",
+      "name": "ConwaysGameofLife-0.1.zip",
+      "description": "Conway's Game of Life for the Wii U !",
+      "author": "MathewDiMarco, Benchaton",
+      "details": "Description :\\nAn implementation of Conway's Game of Life in C/C++ and SDL2.\\n\\nCells record their age. Red cells are volatile and changing; the older stationary cells emerge as\\ngreen. Hovering the pointer over groups of cells will illuminate them.\\n\\nControls :\\n+: pause/play\\nR: toggle wireframe\\nL: toggle colorization\\nZL: reduce pointer speed\\nZR: increase pointer speed\\nL Stick: move the pointer\\nDpad Up: slow down\\nDpad Down: speed up\\nA: spawn cell\\nB: delete cell\\nX: grow spawn perimeter\\nY: shrink spawn perimeter",
+      "md5": "3c4d18b49f62308e1b78d4e6e776de1e",
+      "icon": "https://wiiu.cdn.fortheusers.org/packages/ConwaysGameofLife/icon.png",
+      "requirements": "Aroma for the bundled WUHB. Keep the complete package; any separate RPX variant needs the environment documented by the project.",
+      "setup": "Extract the complete SD bundle to the SD root; keep every app folder, music file and companion asset. Launch the matching executable from its documented environment.",
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 4,
+        "uncompressedBytes": 1146626,
+        "builds": [
+          {
+            "path": "wiiu/apps/ConwaysGameofLife/GameofLife.wuhb",
+            "bytes": 640348,
+            "sha256": "141f79a512c09b2bc0a36ee810a900ff26040b70bd579eed1317470aca759df6"
+          },
+          {
+            "path": "wiiu/apps/ConwaysGameofLife/GameofLife.rpx",
+            "bytes": 505336,
+            "sha256": "63b23e4d0c7b304062a677b894cab8f5eaad8359362168afdbc9f197495a1c44"
+          }
+        ],
+        "xmlFiles": [],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/wiiu-ConwaysGameofLife.png",
+      "file": {
+        "name": "ConwaysGameofLife-0.1.zip",
+        "version": "0.1",
+        "bytes": 1132813,
+        "sha256": "0543563bb8d8bae9656d9dfcc1bbefb51642f44b454daef46a5cd9a691090e7d",
+        "sourceUrl": "https://wiiu.cdn.fortheusers.org/zips/ConwaysGameofLife.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/ConwaysGameofLife-0.1.zip",
+        "itemId": "wiiu-games-batch2-wiiu-ConwaysGameofLife",
+        "platform": "Wii U",
+        "category": [
+          "Wii U",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Wii U\\Homebrew Games\\Conway's Game of Life\\Builds\\0.1\\ConwaysGameofLife-0.1.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "wiiu-PongU",
+      "title": "Pong U",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "1.4",
+      "url": "https://wiiu.cdn.fortheusers.org/zips/PongU.zip",
+      "source": "https://hb-app.store/wiiu/PongU",
+      "name": "PongU-1.4.zip",
+      "description": "1979 pong but worse!",
+      "author": "SpookScoop93",
+      "details": "A simple, lightweigh (~500 kb size with metadata) pong clone written in C with SDL2. (Cross-platform. For more platforms check out my github.)\\n\\nFeatures:\\nVery small size. (As I said, 524 kb with metadata)\\n\\nControls:\\n| DPad |\\nUp - Go up\\nDown - Go down\\nLeft - Go down\\nRight - Go up\\n\\nWarning:\\nDoes not support WiiMotes. (Tho the controls are made with those in mind in case I add the support)",
+      "md5": "210f74c484578f13712b2246a3730bc4",
+      "expectedSha256": "d9f1df8e05394d62b6b9b0319408af7762c1ba317727e92a41b2a8fa7a25ac73",
+      "icon": "https://wiiu.cdn.fortheusers.org/packages/PongU/icon.png",
+      "requirements": "Aroma for the bundled WUHB. Keep the complete package; any separate RPX variant needs the environment documented by the project. The source explicitly excludes Wii Remote support.",
+      "setup": "Extract the complete SD bundle to the SD root; keep every app folder, music file and companion asset. Launch the matching executable from its documented environment.",
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 4,
+        "uncompressedBytes": 1064002,
+        "builds": [
+          {
+            "path": "wiiu/apps/PongU/pong_u.rpx",
+            "bytes": 527194,
+            "sha256": "252ad686a6f80f481f4a84639582ed2df7ef4a8bff33f098f9e04f9459d83eb7"
+          },
+          {
+            "path": "wiiu/apps/PongU/pong_u.wuhb",
+            "bytes": 536032,
+            "sha256": "1227c5ba5b8192df7bc692a653f22cb17cf0286201932cb13e18b04334c6f780"
+          }
+        ],
+        "xmlFiles": [],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/wiiu-PongU.png",
+      "file": {
+        "name": "PongU-1.4.zip",
+        "version": "1.4",
+        "bytes": 1056565,
+        "sha256": "d9f1df8e05394d62b6b9b0319408af7762c1ba317727e92a41b2a8fa7a25ac73",
+        "sourceUrl": "https://wiiu.cdn.fortheusers.org/zips/PongU.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/PongU-1.4.zip",
+        "itemId": "wiiu-games-batch2-wiiu-PongU",
+        "platform": "Wii U",
+        "category": [
+          "Wii U",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\Wii U\\Homebrew Games\\Pong U\\Builds\\1.4\\PongU-1.4.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "vwii-NewoShooter",
+      "title": "Newo Shooter",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "2.2",
+      "url": "https://hbb1.oscwii.org/api/contents/NewoShooter/NewoShooter.zip",
+      "source": "https://oscwii.org/library/app/NewoShooter",
+      "name": "NewoShooter-2.2.zip",
+      "description": "On rails 3d Shoot-'em-up",
+      "author": "Owen",
+      "details": "Controllers: Wiimote, Pointer, Classic, or Gamecube\nDevTeam: Julian Mathonet, Des Walker. Music By: @benanderson89 Title by: www.Kenney.nl\nVisit: http://wiibrew.org\n\t",
+      "expectedBytes": 12074148,
+      "icon": "https://hbb1.oscwii.org/api/contents/NewoShooter/icon.png",
+      "requirements": "vWii Homebrew Channel and the game’s supported Wii controls. OSC explicitly lists vWii support; Wii U GamePad support is not implied.",
+      "setup": "Extract the full ZIP to SD root. Keep /apps/<game>/boot.dol and all supplied folders together, then launch from the vWii Homebrew Channel.",
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 81,
+        "uncompressedBytes": 13753908,
+        "builds": [
+          {
+            "path": "apps/NewoShooter/boot.dol",
+            "bytes": 2185472,
+            "sha256": "001e51a8cdaceb12e2f28e61135046f8ff9b1930fe4796865f05ed546f19bed1"
+          }
+        ],
+        "xmlFiles": [
+          "apps/NewoShooter/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/vwii-NewoShooter.png",
+      "file": {
+        "name": "NewoShooter-2.2.zip",
+        "version": "2.2",
+        "bytes": 12074148,
+        "sha256": "16a0f279d1822d89149f2e086abf8c1f0da4246cfd17d875840902e55cb5d2a3",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/NewoShooter/NewoShooter.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/NewoShooter-2.2.zip",
+        "itemId": "wiiu-games-batch2-vwii-NewoShooter",
+        "platform": "Wii U",
+        "category": [
+          "vWii",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\vWii\\Homebrew Games\\Newo Shooter\\Builds\\2.2\\NewoShooter-2.2.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "vwii-Wii-Tac-Toe",
+      "title": "Wii-Tac-Toe",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "1.1.0",
+      "url": "https://hbb1.oscwii.org/api/contents/Wii-Tac-Toe/Wii-Tac-Toe.zip",
+      "source": "https://oscwii.org/library/app/Wii-Tac-Toe",
+      "name": "Wii-Tac-Toe-1.1.0.zip",
+      "description": "Tic-Tac-Toe game",
+      "author": "Crayon",
+      "details": "Wii-Tac-Toe is a Tic-Tac-Toe game for the Nintendo Wii. It was programmed in C++ using devkitPro along with GRRLIB.\n\nProgrammer: Crayon\nGraphics: Mr_Nick666",
+      "expectedBytes": 1563260,
+      "icon": "https://hbb1.oscwii.org/api/contents/Wii-Tac-Toe/icon.png",
+      "requirements": "vWii Homebrew Channel and the game’s supported Wii controls. OSC explicitly lists vWii support; Wii U GamePad support is not implied.",
+      "setup": "Extract the full ZIP to SD root. Keep /apps/<game>/boot.dol and all supplied folders together, then launch from the vWii Homebrew Channel.",
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Wii Remote",
+        "Wii Remote",
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 3,
+        "uncompressedBytes": 2887298,
+        "builds": [
+          {
+            "path": "apps/Wii-Tac-Toe/boot.dol",
+            "bytes": 2877920,
+            "sha256": "14455ab51c9109c9ce1f39137611d8e83abf89054aee4e91c0f9c97e66a68795"
+          }
+        ],
+        "xmlFiles": [
+          "apps/Wii-Tac-Toe/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/vwii-Wii-Tac-Toe.png",
+      "file": {
+        "name": "Wii-Tac-Toe-1.1.0.zip",
+        "version": "1.1.0",
+        "bytes": 1563260,
+        "sha256": "1ff1bddefac6905fea4c01ff2c0586a65a794b24c969a84a74e2f3cbfea87c7b",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/Wii-Tac-Toe/Wii-Tac-Toe.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/Wii-Tac-Toe-1.1.0.zip",
+        "itemId": "wiiu-games-batch2-vwii-Wii-Tac-Toe",
+        "platform": "Wii U",
+        "category": [
+          "vWii",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\vWii\\Homebrew Games\\Wii-Tac-Toe\\Builds\\1.1.0\\Wii-Tac-Toe-1.1.0.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "vwii-NewoFox",
+      "title": "Newo Fox",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "1.2",
+      "url": "https://hbb1.oscwii.org/api/contents/NewoFox/NewoFox.zip",
+      "source": "https://oscwii.org/library/app/NewoFox",
+      "name": "NewoFox-1.2.zip",
+      "description": "on rails arcade shooter",
+      "author": "Owen",
+      "details": "Newo Fox - Fighter One-X on rails arcade shooter. \nGetting the highest score, go for the Top worldwide Ranking! 100 levels of fun.\n\nBut its not that simple as you think. You need to get points by destroying Enemies, getting as far as the rounds let you, until, when you arrived to the finish.  So, what are you waiting for? Get your Wiimote, sit down, keep calm and SMASH THOSE ENEMIES!\n\nDo you want to training, to putting yourself to the limit?\n\nTry changing difficulty on menu, its simple!\n- BOSS RUSH......(only bosses!)\n- HARD...........(more enemies, longer stages)\n- NORMAL.........(default)\n- EASY...........(no bosses, only space)\n- RANDOM JUMP....(option: goes to a random level)\n",
+      "expectedBytes": 4270009,
+      "icon": "https://hbb1.oscwii.org/api/contents/NewoFox/icon.png",
+      "requirements": "vWii Homebrew Channel and the game’s supported Wii controls. OSC explicitly lists vWii support; Wii U GamePad support is not implied.",
+      "setup": "Extract the full ZIP to SD root. Keep /apps/<game>/boot.dol and all supplied folders together, then launch from the vWii Homebrew Channel.",
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 71,
+        "uncompressedBytes": 6105660,
+        "builds": [
+          {
+            "path": "apps/NewoFox/boot.dol",
+            "bytes": 1707360,
+            "sha256": "4b83d0b032cf87cff9497dfb616ea35f81aa0ecb1a3b04629ab8268ccd5cad7c"
+          }
+        ],
+        "xmlFiles": [
+          "apps/NewoFox/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/vwii-NewoFox.png",
+      "file": {
+        "name": "NewoFox-1.2.zip",
+        "version": "1.2",
+        "bytes": 4270009,
+        "sha256": "9ca7af80e8b71e5de71919d3b20113ad02504d9a9df54f36d65b019d4165240d",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/NewoFox/NewoFox.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/NewoFox-1.2.zip",
+        "itemId": "wiiu-games-batch2-vwii-NewoFox",
+        "platform": "Wii U",
+        "category": [
+          "vWii",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\vWii\\Homebrew Games\\Newo Fox\\Builds\\1.2\\NewoFox-1.2.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "vwii-chromono2",
+      "title": "chro.mono 2",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "2.3.0",
+      "url": "https://hbb1.oscwii.org/api/contents/chromono2/chromono2.zip",
+      "source": "https://oscwii.org/library/app/chromono2",
+      "name": "chromono2-2.3.0.zip",
+      "description": "A very circular puzzle game",
+      "author": "thp",
+      "details": "\nchro.mono is back! New levels, new puzzle mechanics and\nadded motion controls in select levels. Solve puzzles\nwith time limits in 120 exciting levels over 6 different\nlevel packs. Improve your scores by finishing levels\nfaster than the target time.\n\nhttps://thp.itch.io/chromono2\n",
+      "expectedBytes": 2842565,
+      "icon": "https://hbb1.oscwii.org/api/contents/chromono2/icon.png",
+      "requirements": "vWii Homebrew Channel and the game’s supported Wii controls. OSC explicitly lists vWii support; Wii U GamePad support is not implied.",
+      "setup": "Extract the full ZIP to SD root. Keep /apps/<game>/boot.dol and all supplied folders together, then launch from the vWii Homebrew Channel.",
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote"
+      ],
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 3,
+        "uncompressedBytes": 3564465,
+        "builds": [
+          {
+            "path": "apps/chromono2/boot.dol",
+            "bytes": 3552000,
+            "sha256": "1468c7b0fa6e5aae701fbe4e8e50994ea4c3e7b095fd959a86a42399cd087204"
+          }
+        ],
+        "xmlFiles": [
+          "apps/chromono2/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/vwii-chromono2.png",
+      "file": {
+        "name": "chromono2-2.3.0.zip",
+        "version": "2.3.0",
+        "bytes": 2842565,
+        "sha256": "e5f216bfdf7a9e91565e994d724801144e996643ea807238187a1bb506da057d",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/chromono2/chromono2.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/chromono2-2.3.0.zip",
+        "itemId": "wiiu-games-batch2-vwii-chromono2",
+        "platform": "Wii U",
+        "category": [
+          "vWii",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\vWii\\Homebrew Games\\chro.mono 2\\Builds\\2.3.0\\chromono2-2.3.0.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "vwii-retro_tennis_2",
+      "title": "Retro Tennis 2",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "1.0",
+      "url": "https://hbb1.oscwii.org/api/contents/retro_tennis_2/retro_tennis_2.zip",
+      "source": "https://oscwii.org/library/app/retro_tennis_2",
+      "name": "retro_tennis_2-1.0.zip",
+      "description": "A fancy pong clone for Wii",
+      "author": "ZombieNW",
+      "details": "The sequel to the (unreleased) Retro Tennis 1. The first one was so bad I decided to make a 2nd one and not release the 1st one. This game has menu's, sound, and tons of easy to use options for your choice of gameplay.\n",
+      "expectedBytes": 4786501,
+      "icon": "https://hbb1.oscwii.org/api/contents/retro_tennis_2/icon.png",
+      "requirements": "vWii Homebrew Channel and the game’s supported Wii controls. OSC explicitly lists vWii support; Wii U GamePad support is not implied.",
+      "setup": "Extract the full ZIP to SD root. Keep /apps/<game>/boot.dol and all supplied folders together, then launch from the vWii Homebrew Channel.",
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote"
+      ],
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 3,
+        "uncompressedBytes": 5565595,
+        "builds": [
+          {
+            "path": "apps/retro_tennis_2/boot.dol",
+            "bytes": 5558848,
+            "sha256": "6636919302fee626cc5b5ce8823ddfa24294f08db249001a4c52f912b446b3d9"
+          }
+        ],
+        "xmlFiles": [
+          "apps/retro_tennis_2/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/vwii-retro_tennis_2.png",
+      "file": {
+        "name": "retro_tennis_2-1.0.zip",
+        "version": "1.0",
+        "bytes": 4786501,
+        "sha256": "c9550fb68ec1f438a3b992e6381c31522f6aa6a680a9a1ffdbb496ceb8c2df4a",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/retro_tennis_2/retro_tennis_2.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/retro_tennis_2-1.0.zip",
+        "itemId": "wiiu-games-batch2-vwii-retro_tennis_2",
+        "platform": "Wii U",
+        "category": [
+          "vWii",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\vWii\\Homebrew Games\\Retro Tennis 2\\Builds\\1.0\\retro_tennis_2-1.0.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "vwii-wiirdle",
+      "title": "Wiirdle",
+      "platform": "Wii U",
+      "category": "Homebrew Games",
+      "version": "1.0.0",
+      "url": "https://hbb1.oscwii.org/api/contents/wiirdle/wiirdle.zip",
+      "source": "https://oscwii.org/library/app/wiirdle",
+      "name": "wiirdle-1.0.0.zip",
+      "description": "Wordle clone for the Wii",
+      "author": "HTV04",
+      "details": "Wiirdle is a Wordle clone for the Wii, powered by the WiiLÖVE framework. Every day, you will have six attempts to guess a five-letter word, with feedback given for each guess indicating when letters match or occupy the correct position. \"Wordle\" by Josh Wardle and the New York Times.",
+      "expectedBytes": 1308331,
+      "icon": "https://hbb1.oscwii.org/api/contents/wiirdle/icon.png",
+      "requirements": "vWii Homebrew Channel and the game’s supported Wii controls. OSC explicitly lists vWii support; Wii U GamePad support is not implied.",
+      "setup": "Extract the full ZIP to SD root. Keep /apps/<game>/boot.dol and all supplied folders together, then launch from the vWii Homebrew Channel.",
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote"
+      ],
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 13,
+        "uncompressedBytes": 2845251,
+        "builds": [
+          {
+            "path": "apps/wiirdle/boot.dol",
+            "bytes": 2618208,
+            "sha256": "17a5f5ac925301684aa24470cd01d2638ddc519785beab5b07a60380e3d1c46b"
+          }
+        ],
+        "xmlFiles": [
+          "apps/wiirdle/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/vwii-wiirdle.png",
+      "file": {
+        "name": "wiirdle-1.0.0.zip",
+        "version": "1.0.0",
+        "bytes": 1308331,
+        "sha256": "dddb61b42e86c9d58dc8127e656f87d7c9cb79da7b43a41bc69b7ce9afd85300",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiirdle/wiirdle.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/wiirdle-1.0.0.zip",
+        "itemId": "wiiu-games-batch2-vwii-wiirdle",
+        "platform": "Wii U",
+        "category": [
+          "vWii",
+          "Homebrew Games"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\vWii\\Homebrew Games\\Wiirdle\\Builds\\1.0.0\\wiirdle-1.0.0.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "vwii-riivolution",
+      "title": "Riivolution",
+      "platform": "Wii U",
+      "category": "Game Mods",
+      "version": "v1.06",
+      "url": "https://hbb1.oscwii.org/api/contents/riivolution/riivolution.zip",
+      "source": "https://oscwii.org/library/app/riivolution",
+      "name": "riivolution-v1.06.zip",
+      "description": "Riivolution Patcher",
+      "author": "Aaron tueidj Tempus megazig",
+      "details": "Riivolution is an on-the-fly game patcher for use with retail discs. It allows users to place content on their SD or USB devices, which will be read by the game during regular play. Riivolution can be used for custom textures, music, levels, memory patches, game translations, and more.\n\nRiivolution requires valid game content and an XML file to apply changes to games.\n\nhttp://rvlution.net/riivolution",
+      "expectedBytes": 1990601,
+      "icon": "https://hbb1.oscwii.org/api/contents/riivolution/icon.png",
+      "requirements": "vWii Homebrew Channel and the original supported retail disc. Riivolution patch XML must match the disc game/region. Optional channel installation writes NAND; it is not required to launch the app from HBC.",
+      "setup": "Extract the complete apps/riivolution folder to SD root. Keep each mod’s XML in /riivolution/ and its data at the paths named inside that XML. Launch from HBC with your retail disc inserted. Disable patches to return to the original game.",
+      "supportedPlatforms": [
+        "wii",
+        "vwii"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Wii Remote",
+        "Wii Remote",
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 4,
+        "uncompressedBytes": 1993268,
+        "builds": [
+          {
+            "path": "apps/riivolution/boot.elf",
+            "bytes": 1983348,
+            "sha256": "fb35c678f7f72643fe6089263aa5085565ca4c612037b6ddda283db75dd3a951"
+          }
+        ],
+        "xmlFiles": [
+          "apps/riivolution/meta.xml"
+        ],
+        "patchGameIds": []
+      },
+      "image": "/assets/images/wiiu-games-batch2/vwii-riivolution.png",
+      "file": {
+        "name": "riivolution-v1.06.zip",
+        "version": "v1.06",
+        "bytes": 1990601,
+        "sha256": "74f4014cdd490cbb18c77f5b1d75fd01ec6a7d7a2bd9e9127ce977ef0416243f",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/riivolution/riivolution.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/riivolution-v1.06.zip",
+        "itemId": "wiiu-games-batch2-vwii-riivolution",
+        "platform": "Wii U",
+        "category": [
+          "vWii",
+          "Game Mods"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii U\\vWii\\Game Mods\\Riivolution\\Builds\\v1.06\\riivolution-v1.06.zip"
+      },
+      "mirrorReason": null
+    },
+    {
+      "id": "wii-nsmbw-project",
+      "title": "mkwcat's NSMBW project",
+      "platform": "Wii",
+      "targetLabel": "Wii patch · vWii unconfirmed",
+      "category": "Game Mods",
+      "version": "v0.6.5",
+      "url": "https://github.com/mkwcat/nsmbw-project/releases/download/v0.6.5/mkwcat-nsmbw.zip",
+      "source": "https://github.com/mkwcat/nsmbw-project/releases/tag/v0.6.5",
+      "name": "mkwcat-nsmbw.zip",
+      "expectedBytes": 7586799,
+      "expectedSha256": "9f731f1012878b32ada6b47d0e99ad32f25e93672be315875d4405263cceeea3",
+      "description": "Experimental New Super Mario Bros. Wii Riivolution feature pack.",
+      "requirements": "Publisher documents real Wii and Dolphin; vWii-specific testing is not confirmed. Retail New Super Mario Bros. Wii disc and Riivolution required. The expanded8-player mode depends on4GameCube controllers, which is not a standard vWii peripheral setup; do not assume it works on Wii U.",
+      "setup": "Extract the complete release ZIP to SD root and merge its riivolution folder. Enable Core (Required) in Riivolution. Disable other mod sections to avoid conflicts. Retain the original XML disc/region checks. Back up saves; disable this patch to undo. Review the publisher requirements before trying vWii.",
+      "status": "downloaded",
+      "inspection": {
+        "crcPassed": true,
+        "entries": 3,
+        "uncompressedBytes": 10505331,
+        "builds": [],
+        "xmlFiles": [
+          "riivolution/mkwcat-nsmbw.xml"
+        ],
+        "patchGameIds": [
+          "SMN"
+        ]
+      },
+      "file": {
+        "name": "mkwcat-nsmbw.zip",
+        "version": "v0.6.5",
+        "bytes": 7586799,
+        "sha256": "9f731f1012878b32ada6b47d0e99ad32f25e93672be315875d4405263cceeea3",
+        "sourceUrl": "https://github.com/mkwcat/nsmbw-project/releases/download/v0.6.5/mkwcat-nsmbw.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-games-batch2/mkwcat-nsmbw.zip",
+        "itemId": "wiiu-games-batch2-wii-nsmbw-project",
+        "platform": "Wii",
+        "category": [
+          "Wii U",
+          "Game Mods"
+        ],
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Wii\\Wii U\\Game Mods\\nsmbw project\\Builds\\v0.6.5\\mkwcat-nsmbw.zip"
+      },
+      "mirrorReason": null
+    }
+  ],
+  "limits": [
+    "No console execution or installation.",
+    "Large Second Wind/Newer/CTGP-R transfers did not complete; partial workspace files retained and no ready links advertised.",
+    "mkwcat NSMBW release is documented for Wii/Dolphin; vWii-specific testing/peripheral support unconfirmed."
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {
+      "id": "expand-ps4-homebrew-store",
+      "title": "Homebrew Store · PS4",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "Homebrew Store · PS4",
+      "version": "4.5",
+      "filename": "Store-R2.pkg",
+      "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
+      "pages": [
+        "console/ps4/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-ezremote",
+      "title": "ezRemote Client · PS4",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "ezRemote Client · PS4",
+      "version": "2.08",
+      "filename": "ezremote_client.pkg",
+      "url": "https://github.com/cy33hc/ps4-ezremote-client/releases/download/2.08/ezremote_client.pkg",
+      "pages": [
+        "console/ps4/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-ipi",
+      "title": "Internal PKG Installer",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "Internal PKG Installer",
+      "version": "01.01",
+      "filename": "IV0000-BREW00050_00-IPI0000000000000.pkg",
+      "url": "https://github.com/0x199/ps4-ipi/releases/download/01.01/IV0000-BREW00050_00-IPI0000000000000.pkg",
+      "pages": [
+        "console/ps4/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-games-installer",
+      "title": "PS4 Games Installer",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "PS4 Games Installer",
+      "version": "r40",
+      "filename": "PS4Game_installer-r40.pkg",
+      "url": "https://github.com/e1z0/PS4-Games-Installer/releases/download/r40/PS4Game_installer-r40.pkg",
+      "pages": [
+        "console/ps4/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-payload-guest",
+      "title": "Payload Guest",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "Payload Guest",
+      "version": "v0.98",
+      "filename": "IV0000-AZIF00003_00-PAYLOADGUEST0000.pkg",
+      "url": "https://github.com/Al-Azif/ps4-payload-guest/releases/download/v0.98/IV0000-AZIF00003_00-PAYLOADGUEST0000.pkg",
+      "pages": [
+        "console/ps4/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-ftpsrv",
+      "title": "ftpsrv · PS4",
+      "platform": "PS4",
+      "category": "Payloads",
+      "project": "ftpsrv · PS4",
+      "version": "v0.21.1",
+      "filename": "ftpsrv-ps4.elf",
+      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps4.elf",
+      "pages": [
+        "console/ps4/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-klogsrv",
+      "title": "klogsrv · PS4",
+      "platform": "PS4",
+      "category": "Payloads",
+      "project": "klogsrv · PS4",
+      "version": "v0.9",
+      "filename": "klogsrv-ps4.elf",
+      "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps4.elf",
+      "pages": [
+        "console/ps4/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-ps4debug",
+      "title": "ps4debug",
+      "platform": "PS4",
+      "category": "Payloads",
+      "project": "ps4debug",
+      "version": "v1.1.19",
+      "filename": "ps4debug_v1.1.19.bin",
+      "url": "https://github.com/GoldHEN/ps4debug/releases/download/v1.1.19/ps4debug_v1.1.19.bin",
+      "pages": [
+        "console/ps4/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps4-gdbsrv",
+      "title": "gdbsrv · PS4",
+      "platform": "PS4",
+      "category": "Payloads",
+      "project": "gdbsrv · PS4",
+      "version": "v0.9",
+      "filename": "gdbsrv-ps4.elf",
+      "url": "https://github.com/ps5-payload-dev/gdbsrv/releases/download/v0.9/gdbsrv-ps4.elf",
+      "pages": [
+        "console/ps4/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-ezremote-ezremote-client",
+      "title": "ezRemote Client · PS5",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "ezRemote Client · PS5",
+      "version": "2.18",
+      "filename": "ezremote-client.zip",
+      "url": "https://github.com/cy33hc/ps5-ezremote-client/releases/download/2.18/ezremote-client.zip",
+      "pages": [
+        "console/ps5/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-ezremote-ezremote-loader-1-01",
+      "title": "ezRemote Client · PS5",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "ezRemote Client · PS5",
+      "version": "2.18",
+      "filename": "ezRemote-Loader-1.01.elf",
+      "url": "https://github.com/cy33hc/ps5-ezremote-client/releases/download/2.18/ezRemote-Loader-1.01.elf",
+      "pages": [
+        "console/ps5/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-payload-manager",
+      "title": "Payload Manager",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "Payload Manager",
+      "version": "v0.6.3",
+      "filename": "pldmgr_v0.6.3.elf",
+      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.3/pldmgr_v0.6.3.elf",
+      "pages": [
+        "console/ps5/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-ffplay",
+      "title": "FFplay · PS5",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "FFplay · PS5",
+      "version": "v0.34",
+      "filename": "FFplay.zip",
+      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/FFplay.zip",
+      "pages": [
+        "console/ps5/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-pkginstall",
+      "title": "PKGInstall · PS5",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "PKGInstall · PS5",
+      "version": "v0.34",
+      "filename": "PKGInstall.zip",
+      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/PKGInstall.zip",
+      "pages": [
+        "console/ps5/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-garlic",
+      "title": "Garlic SaveMgr",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "Garlic SaveMgr",
+      "version": "v1.14",
+      "filename": "garlic-savemgr.elf",
+      "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.14/garlic-savemgr.elf",
+      "pages": [
+        "console/ps5/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-ftpsrv",
+      "title": "ftpsrv · PS5",
+      "platform": "PS5",
+      "category": "Payloads",
+      "project": "ftpsrv · PS5",
+      "version": "v0.21.1",
+      "filename": "ftpsrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
+      "pages": [
+        "console/ps5/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-websrv",
+      "title": "websrv · PS5",
+      "platform": "PS5",
+      "category": "Payloads",
+      "project": "websrv · PS5",
+      "version": "v0.34",
+      "filename": "websrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
+      "pages": [
+        "console/ps5/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-klogsrv",
+      "title": "klogsrv · PS5",
+      "platform": "PS5",
+      "category": "Payloads",
+      "project": "klogsrv · PS5",
+      "version": "v0.9",
+      "filename": "klogsrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
+      "pages": [
+        "console/ps5/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "expand-ps5-elfldr",
+      "title": "ELF Loader · PS5",
+      "platform": "PS5",
+      "category": "Payloads",
+      "project": "ELF Loader · PS5",
+      "version": "v0.27",
+      "filename": "elfldr-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
+      "pages": [
+        "console/ps5/payloads.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "ps3-ezremote-client",
+      "title": "ezRemote Client · PS3",
+      "platform": "PS3",
+      "category": "Tools",
+      "project": "ezRemote Client",
+      "version": "1.15",
+      "filename": "ps3-ezremote-client.pkg",
+      "url": "https://github.com/cy33hc/ps3-ezremote-client/releases/download/1.15/ps3-ezremote-client.pkg",
+      "pages": [
+        "console/ps3.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "ps3-simple-file-manager",
+      "title": "Simple File Manager · PS3",
+      "platform": "PS3",
+      "category": "Tools",
+      "project": "Simple File Manager",
+      "version": "v0.5.2",
+      "filename": "sfm_ps3.pkg",
+      "url": "https://github.com/lmirel/fm_psx/releases/download/v0.5.2/sfm_ps3.pkg",
+      "pages": [
+        "console/ps3.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "ps3-managunz",
+      "title": "ManaGunZ · PS3",
+      "platform": "PS3",
+      "category": "Tools",
+      "project": "ManaGunZ",
+      "version": "1.41",
+      "filename": "ManaGunZ_v1.41.pkg",
+      "url": "https://github.com/Zarh/ManaGunZ/releases/download/1.41/ManaGunZ_v1.41.pkg",
+      "pages": [
+        "console/ps3.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "vita-vitadeploy",
+      "title": "VitaDeploy",
+      "platform": "PS Vita",
+      "category": "Tools",
+      "project": "VitaDeploy",
+      "version": "v1.2.1",
+      "filename": "VitaDeploy.vpk",
+      "url": "https://github.com/SKGleba/VitaDeploy/releases/download/v1.2.1/VitaDeploy.vpk",
+      "pages": [
+        "console/psvita/apps.html",
+        "console/psvita/jailbreak.html",
+        "console/psvita/cfw.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "vita-adrenaline",
+      "title": "Adrenaline",
+      "platform": "PS Vita",
+      "category": "Tools",
+      "project": "Adrenaline",
+      "version": "v7",
+      "filename": "Adrenaline.vpk",
+      "url": "https://github.com/TheOfficialFloW/Adrenaline/releases/download/v7/Adrenaline.vpk",
+      "pages": [
+        "console/psvita/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "vita-autoplugin2",
+      "title": "AutoPlugin II",
+      "platform": "PS Vita",
+      "category": "Tools",
+      "project": "AutoPlugin II",
+      "version": "2.19",
+      "filename": "AutoPlugin2.vpk",
+      "url": "https://github.com/ONElua/AutoPlugin2/releases/download/2.19/AutoPlugin2.vpk",
+      "pages": [
+        "console/psvita/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "vita-vitadb",
+      "title": "VitaDB Downloader",
+      "platform": "PS Vita",
+      "category": "Tools",
+      "project": "VitaDB Downloader",
+      "version": "v.2.8",
+      "filename": "VitaDB.vpk",
+      "url": "https://github.com/Rinnegatamante/VitaDB-Downloader/releases/download/v.2.8/VitaDB.vpk",
+      "pages": [
+        "console/psvita/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "vita-pkgj",
+      "title": "PKGj",
+      "platform": "PS Vita",
+      "category": "Tools",
+      "project": "PKGj",
+      "version": "v0.57",
+      "filename": "pkgj.vpk",
+      "url": "https://github.com/blastrock/pkgj/releases/download/v0.57/pkgj.vpk",
+      "pages": [
+        "console/psvita/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "vita-itls",
+      "title": "iTLS-Enso",
+      "platform": "PS Vita",
+      "category": "Tools",
+      "project": "iTLS-Enso",
+      "version": "v3.2.1",
+      "filename": "iTLS-Enso.vpk",
+      "url": "https://github.com/SKGleba/iTLS-Enso/releases/download/v3.2.1/iTLS-Enso.vpk",
+      "pages": [
+        "console/psvita/apps.html",
+        "console/psvita/cfw.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    },
+    {
+      "id": "vita-yamt",
+      "title": "YAMT",
+      "platform": "PS Vita",
+      "category": "Tools",
+      "project": "YAMT",
+      "version": "v4.0",
+      "filename": "yamt.vpk",
+      "url": "https://github.com/SKGleba/yamt-vita/releases/download/v4.0/yamt.vpk",
+      "pages": [
+        "console/psvita/apps.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false
+    }
+  ]
+}

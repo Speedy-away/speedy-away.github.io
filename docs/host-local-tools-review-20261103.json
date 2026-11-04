@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-03T18:21:35.435Z",
+  "status": "Authored trainer and ESP pages, full-width taskbar/ads and explicit runtime translations are complete. Root owns shared integration/browser QA, final language generation, final ZIP regeneration and F: import. No console/hardware operation or downloaded payload execution.",
+  "sources": {
+    "trainer": {
+      "repository": "https://github.com/kmeps4/PS4OfflineTrainer",
+      "commit": "56f7c588162d3d869f592d2adf3d78e5c20189ee",
+      "license": "GPL-3.0",
+      "files": 1182,
+      "activeBuilds": 1169,
+      "unavailable": [
+        {
+          "name": "RESIDENT EVIL 2",
+          "title": "CUSA09171",
+          "version": "01.01",
+          "url": "CUSA09171_01.01.json",
+          "reason": "Pinned source filename does not contain valid JSON."
+        },
+        {
+          "name": "Aliens: Fireteam Elite (PS4)",
+          "title": "CUSA27462",
+          "version": "01.32",
+          "url": ".games/CUSA27462_01.32.json",
+          "reason": "Pinned source filename does not contain valid JSON."
+        }
+      ],
+      "notes": [
+        "Only pinned JSON and GPL license are vendored; no game images or upstream runtime UI.",
+        "Exact original bytes and hashes retained, including BOM-bearing JSON and two malformed source files. Malformed data is excluded from live choices.",
+        "Version labels retain both original index and definition forms. Comparison ignores leading zeros per numeric version component but does not conflate1.3 with1.30.",
+        "Karo and Kameleon UI aliases should point to one accurately credited shared PS4 trainer, not be called exact independent source clones."
+      ]
+    },
+    "flasher": {
+      "repository": "https://github.com/nabucasa/ESP-Web-flasher",
+      "npm": "https://unpkg.com/esp-web-flasher@5.1.4/",
+      "version": "5.1.4",
+      "license": "MIT",
+      "files": 7,
+      "notes": [
+        "All six ES module files and device stub chunks plus license.md are local. Import paths contain no CDN query or external dependency.",
+        "The authored UI requires secure-context Web Serial on a compatible desktop browser. It cannot flash ESP hardware in a PS4/PS5 browser.",
+        "Connect requires user-selected hardware, initializes it and uploads the vendor temporary RAM stub. No flash programming occurs until separate explicit Program, checked files/offsets and confirmation.",
+        "No erase-all UI. Programming only user-selected nonempty BIN files, maximum32MiB boundary, rejecting overlapping ranges. No automatic program or retry."
+      ]
+    },
+    "copyGoldHENCheats": {
+      "original": "https://karo218.ir/copych/index.html",
+      "script": "https://karo218.ir/copych/main.js",
+      "payload": "https://karo218.ir/copych/CopyCH.bin",
+      "protocol": "Original source readiness POSThttp://{PS4IP}:9090/status, then flat CopyCH.bin POSThttp://{PS4IP}:9090/. UI states JSON/SHN copy fromUSB.",
+      "licensing": "No licence or exact firmware matrix located for the live payload; source states allFW but does not justify a broad inferred matrix.",
+      "warning": "Live main.js includes an unrelated obfuscated cookie/referrer-gated remote JavaScript evaluation tail. It was read as text only, not mirrored or executed. Prefer a new local SHA-verified loader wrapper or a reviewed native file-copy equivalent."
+    },
+    "goldHENWebPayloads": {
+      "original": "https://www.kmeps4.site/webpayloads/index.html",
+      "existing": "docs/host-web-utility-actions.json",
+      "integration": "All18 current exact BINs already have first-party public downloads and exact firmware pins. Replace redundant external card with local payload filter/directory; do not add new firmware support."
+    },
+    "lua": {
+      "repository": "https://github.com/n0llptr/remote_lua_loader",
+      "commit": "7c2840e47506f258fc815533d5f7ed7c842cbc3c",
+      "setup": "https://github.com/n0llptr/remote_lua_loader/blob/7c2840e47506f258fc815533d5f7ed7c842cbc3c/SETUP.md",
+      "sender": "https://github.com/n0llptr/remote_lua_loader/blob/7c2840e47506f258fc815533d5f7ed7c842cbc3c/payloads/send_lua.py",
+      "licensing": "No repository-level licence shown; per-file terms need retaining. Source tree is a game save preparation kit, not an encrypted ready universal save.",
+      "protocol": "TCP9026. Unsigned64-bit little-endian code byte length followed by Lua source. Native loader accepts bounded code below500KiB and returns text/crash information. It is not raw ELF9021 or browser HTTP.",
+      "integration": "Provide a local source-backed setup page and explicitly prepared save files where terms permit; a real paired sender can implement the documented length-prefixed TCP9026 contract. A local page must not pretend it can install account-matched encrypted saves or run a universal browser exploit."
+    }
+  },
+  "interfaces": {
+    "trainer": {
+      "route": "/hosts/tools/ps4-trainer/",
+      "asset": "/assets/host-trainer.js",
+      "nativePort": 771,
+      "readOnlyAttach": [
+        "GET/list",
+        "GET/info?pid=N",
+        "GET/mapping?pid=N"
+      ],
+      "explicitChanges": [
+        "GET/alloc?pid=N&length=1 when a master code needs{ALLOC}",
+        "GET/pause?pid=N",
+        "GET/write?pid=N&address=DECIMAL&data=BASE64&length=N",
+        "GET/read?pid=N&address=DECIMAL&length=N for byte readback",
+        "GET/resume?pid=N"
+      ],
+      "checks": [
+        "Private LAN target, desktop loopback rejected.",
+        "Exact native title ID and process must match selected definition. Native service does not report game update; manual exact-update checkbox is required.",
+        "Attach never allocates, pauses or writes. Master-code allocation happens only on explicit Apply.",
+        "Per-write native readback must match before reporting verified memory. A memory check does not prove in-game behavior.",
+        "Ambiguous mutating requests lock Apply. No automatic retry/resume after failure; user can explicitly request Resume on the same verified process.",
+        "Native CORS/mixed-content/private-network restrictions can block direct requests. No arbitrary proxy or Origin spoofing is used."
+      ]
+    },
+    "flasher": {
+      "route": "/hosts/tools/esp-flasher/",
+      "asset": "/assets/host-esp-flasher.js",
+      "vendor": "/hosts/tools/esp-flasher/vendor/esp-web-flasher-5.1.4/"
+    }
+  },
+  "layout": {
+    "fullWidth": "body.host-toolpage main uses widthcalc(100%-64px),max1600px; phonewidthminus28px.",
+    "taskbar": "Same shared host-taskbar class, brand/Back/PS4/PS5/Home. No sidebar.",
+    "images": false,
+    "ads": "Existing scripts/site-ads.cjs placement after main, existingsite-ads.css/js?v=2. Ad script is not in a hardware handler; local tool code/data have no remote imports. Offline ads may be unavailable."
+  },
+  "archive": {
+    "jobs": "docs/host-local-tools-jobs.json",
+    "build": "docs/host-local-tools-build.json",
+    "active": [
+      {
+        "scope": "ps4-trainer",
+        "local": "/downloads/helpers/host-local-tools/ps4-trainer/ps4-trainer-d057dba4a7a6da98.zip",
+        "bytes": 1879462,
+        "sha256": "481dfaee7749388b555a16da7f0c35687bc5a681e3201419e2f0d50d4467f247",
+        "files": 1214
+      },
+      {
+        "scope": "esp-flasher",
+        "local": "/downloads/helpers/host-local-tools/esp-flasher/esp-flasher-59931e6598beb178.zip",
+        "bytes": 805499,
+        "sha256": "b747c7c827778519952009eebf462b36ae5e82bb1c3fe4f78bc474802f6fcb7c",
+        "files": 38
+      }
+    ],
+    "retained": 12,
+    "totalJobs": 14,
+    "workflow": "Root imports all jobs with existing download-ps4-ps5-import.cjs and --backup=F:/whatsite-backup-downloads-etc. No F: or sharedinventory was changed by this agent. Prepared older ZIPs are preserved and retained jobs remain included.",
+    "finalRebuildRequired": false,
+    "rebuildCommand": "node scripts/prepare-host-local-tools.cjs --package",
+    "note": "Final packages rebuilt with all20 frozen1182-entry dictionaries, explicit runtime translation wiring, shared full-width taskbar CSS, shared background CSS/JS and existing ads CSS/JS. All current source bytes match their active ZIP manifest; all older ZIPs and jobs are retained."
+  },
+  "verification": {
+    "command": "node --test scripts/tests/host-local-tools.test.cjs",
+    "tests": 10,
+    "passed": 10,
+    "failed": 0,
+    "method": "Authored code/mocktransport and mockserial only; pinned file reads and bounded independent ZIP CRC/size/SHA checks. Third-party library/payloads not executed.",
+    "browserQA": "Root CUA only; do not connect real serial hardware or Apply a live cheat.",
+    "limits": [
+      "No real console or ESP hardware tested.",
+      "Two malformed upstream trainer entries preserved as data and excluded.",
+      "WebRTE771 and exact matching game/build remain prerequisites.",
+      "Actual game update cannot be automatically verified by this API.",
+      "Native service browser access can be blocked by browser security and is reported honestly."
+    ],
+    "currentSourceManifestMatch": {
+      "trainer": 1213,
+      "flasher": 37,
+      "readme": "Generated standalone README is the extra package member."
+    },
+    "layout": "Both authored HTML files have host-toolpage site-atmosphere, fixed host-taskbar/Back/PS4/PS5/Home, no sidebar/images, full-width1600pxmax and phonewidthminus28px, v2 local background and existing sanctioned ad placement. All dependencies are in both ZIP manifests."
+  },
+  "sourceFiles": [
+    {
+      "path": "assets/host-trainer.js",
+      "sha256": "575e05752843aa532fe05363c8f0f8a2ff9b3b08241b43fb1669d27de1a713b8"
+    },
+    {
+      "path": "assets/host-trainer.css",
+      "sha256": "09eea6f4fd6e619ef246ef4a57c4f2a6ee458a7f291d4629f583a562389131df"
+    },
+    {
+      "path": "assets/host-esp-flasher.js",
+      "sha256": "dd8e12165f5714300d517e88cb67f51dad14f4207ca44623433f688eafc04c90"
+    },
+    {
+      "path": "hosts/tools/ps4-trainer/index.html",
+      "sha256": "bdaf98bf3123a82bb699915c1bef4689cd7c8b22bdad673cf0c448cf23fe58f3"
+    },
+    {
+      "path": "hosts/tools/esp-flasher/index.html",
+      "sha256": "9df789591eedafd16f78649dc5c26f80b95688b2bc693f62d8f6294aacde64df"
+    },
+    {
+      "path": "scripts/prepare-host-local-tools.cjs",
+      "sha256": "b52f452884a5c95b1cb76190081271f813fe80aa51f9a7bcd34b0ae8767b52aa"
+    },
+    {
+      "path": "scripts/tests/host-local-tools.test.cjs",
+      "sha256": "94e28a21158e3f29d2e02f5b53f2b428c0681f45689639b6432d458bc777da67"
+    },
+    {
+      "path": "i18n-tools/host-tool-translations.cjs",
+      "sha256": "e9957dbcc8bc7ab623f081001664e92facba1f29e183c28f840269643bd502f6"
+    },
+    {
+      "path": "i18n-tools/host-trainer-errors-translations.cjs",
+      "sha256": "07a815feff91e611b4a73c07a1f071b65ab42780135b2a13f69639b1fd1725bf"
+    }
+  ],
+  "localization": {
+    "status": "Final20-language dictionaries generated by loader agent and included in final packages. Both pure modules retain complete20-language cells and unchanged placeholders.",
+    "modules": [
+      {
+        "path": "i18n-tools/host-tool-translations.cjs",
+        "keys": 44,
+        "cells": 880,
+        "scope": "All authored ESP static/dynamic UI, exact confirmation/error/status messages and short trainer controls."
+      },
+      {
+        "path": "i18n-tools/host-trainer-errors-translations.cjs",
+        "keys": 36,
+        "cells": 720,
+        "scope": "Every exact static trainer fail/Error message, with no dynamic catch-all replacement."
+      }
+    ],
+    "runtime": [
+      "ESP uses __scoobyI18n.t for authored logs, support status and explicit programming confirmation, rerendering on scooby:langchange. Vendor logs, user filenames and SHA-256 values remain literal.",
+      "Trainer stores original status templates and resolves translations on repaint; count, exact-title attachment and ambiguous-write warning use parameterized messages. Error message is itself translated before interpolation. Game/mod names, credits, metadata and source JSON remain unchanged.",
+      "No language change triggers a console request, serial connection or programming action."
+    ],
+    "remaining": "Root imports every active/retained archive job and completes live browser QA without console/hardware actions."
+  }
+}

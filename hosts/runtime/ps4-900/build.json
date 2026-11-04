@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "id": "ps4-900",
+  "title": "PS4 9.00 · PSFree / Lapse",
+  "console": "ps4",
+  "entry": "/hosts/runtime/ps4-900/",
+  "runEntry": "/hosts/runtime/ps4-900/web/index.html",
+  "firmwares": [
+    "9.00"
+  ],
+  "listener": {
+    "transport": "tcp",
+    "port": 9020,
+    "format": "bin"
+  },
+  "source": {
+    "repository": "https://github.com/kmeps4/PSFree",
+    "commit": "368d82aa40d3017c220757ce315761adb5f06678"
+  },
+  "license": "AGPL-3.0-or-later; Liberation font OFL",
+  "offline": "PS4 application cache manifest included; actual cache persistence needs console verification.",
+  "verified": {
+    "staticDependencies": true,
+    "hardwareExecution": false,
+    "downloadedCodeExecuted": false
+  },
+  "files": [
+    {
+      "path": "guard.js",
+      "bytes": 711,
+      "sha256": "e44011b100a26579622e7baf1465c060545613a0737562b89df6f7bb45e70bbe"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2420,
+      "sha256": "0c57e228914892c177312882a14974abce1af074b6fd0221e45e288481efb97e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2716,
+      "sha256": "5612c32a0766f485c78ac9a8d47a29091f6665698c729128aeb056d36efd0d46"
+    },
+    {
+      "path": "style.css",
+      "bytes": 513,
+      "sha256": "4f72941fc8d67148ad721d0179de9acce636a5bcf5f4b3774f9de7ed78ebfb88"
+    },
+    {
+      "path": "upstream/about.html",
+      "bytes": 5498,
+      "sha256": "3bb1dbe2bd84fd1305f96df59a3e3f815d12746d81ef4c61e0488266be8645a0"
+    },
+    {
+      "path": "upstream/AIO_Fix_Temp/patch_aio.c",
+      "bytes": 1815,
+      "sha256": "bb8b852ff7206a92562f130e1253d509d65d1b6f6b8701fb0040c7cc0616ad45"
+    },
+    {
+      "path": "upstream/AIO_Fix_Temp/vfs_aio2_pdtor.c",
+      "bytes": 1875,
+      "sha256": "9047656530cebabea66b84747e9d2cb3671b60a644328ffc2d865f79df9ed2fc"
+    },
+    {
+      "path": "upstream/aio_patches.bin",
+      "bytes": 5588,
+      "sha256": "edf729eb5fe532b679cf2f7fb7c9af852d83199ad6d1364d40fb68b9983ac1e5"
+    },
+    {
+      "path": "upstream/alert.mjs",
+      "bytes": 1810,
+      "sha256": "279cd1bafbbf872430f14d139da9786d66de604873c9f5928089aac7c0fe97e8"
+    },
+    {
+      "path": "upstream/cache.html",
+      "bytes": 1328,
+      "sha256": "29518ca8b9637b3a31ef9e765702519c3c612c9e1a46a77e028d05d51b8b796e"
+    },
+    {
+      "path": "upstream/config.mjs",
+      "bytes": 2115,
+      "sha256": "47490b6ef4b7642c89f4c455a479c2f67eb0b33f3514b26d14c02d31661f7e12"
+    },
+    {
+      "path": "upstream/COPYING",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "upstream/fonts/FONTS.LICENSE",
+      "bytes": 4416,
+      "sha256": "fa16ee0fd3c2ff3a19309b4867baaf1f265e532e7f4911589592c2d8ee54f8e8"
+    },
+    {
+      "path": "upstream/fonts/LiberationMono-Regular.ttf",
+      "bytes": 319624,
+      "sha256": "6299433c96540e07cc0f48e5f00f28e4e5551a717e518c23b243293b9105d42b"
+    },
+    {
+      "path": "upstream/fonts/README.txt",
+      "bytes": 97,
+      "sha256": "e28d12100052eebf61eb70e3ee307b974935f62c20054d46693730a565ea8ee9"
+    },
+    {
+      "path": "upstream/index.html",
+      "bytes": 1536,
+      "sha256": "671cceee8ba252cdfa2d57ba3ef0df56cd2f306715da764ca766bde4844288e5"
+    },
+    {
+      "path": "upstream/kpatch/900.c",
+      "bytes": 5855,
+      "sha256": "9b55a579a6c75e9928961f55561cc9ad64687d58e4758c52a9e91f23e8ba2eec"
+    },
+    {
+      "path": "upstream/kpatch/900.elf",
+      "bytes": 5288,
+      "sha256": "56183734c0b4c694344971479c3e070a6a6f0d13f783804b1610218314a7ae33"
+    },
+    {
+      "path": "upstream/kpatch/Makefile",
+      "bytes": 568,
+      "sha256": "41ecaae5b714b242ae498c141fe3060e96a76bed9b356c4ea765ce05bad0d2a1"
+    },
+    {
+      "path": "upstream/kpatch/script.ld",
+      "bytes": 160,
+      "sha256": "de75142349343bf9794da133b87a97094873a24d0978705ffc257f63195fdeec"
+    },
+    {
+      "path": "upstream/kpatch/types.h",
+      "bytes": 921,
+      "sha256": "1460b2fcce7bd632612b0ac0c3b20c262d47941d706a3340028e5d36204660e4"
+    },
+    {
+      "path": "upstream/kpatch/utils.h",
+      "bytes": 1569,
+      "sha256": "bbd5241ed324f6bc816ad7880974c02546dbd3058f86f37d06f39fca4b97a5e4"
+    },
+    {
+      "path": "upstream/lapse.mjs",
+      "bytes": 58267,
+      "sha256": "1bedab6c77188cdef97ccc65bab38d917997dc3ee03c705e6025464d1240936a"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "upstream/module/chain.mjs",
+      "bytes": 16171,
+      "sha256": "a6cd4a6db5e47c5adf6c18e2547d46aa949ad6c682a75d31440309caea6bf781"
+    },
+    {
+      "path": "upstream/module/constants.mjs",
+      "bytes": 773,
+      "sha256": "27ce6981d3a26ce5ae125bceef73daf62040394e5c10541c1527bd15e66a86a7"
+    },
+    {
+      "path": "upstream/module/int64.mjs",
+      "bytes": 3560,
+      "sha256": "46a2d5113d4aaa367463675cee605062c1a17dade7214d80b5428e67a0ba383c"
+    },
+    {
+      "path": "upstream/module/mem.mjs",
+      "bytes": 12130,
+      "sha256": "b9e1705014fc61b884dc80299c80c4c553f9ebc21f90a52a1fe21b6862b3a900"
+    },
+    {
+      "path": "upstream/module/memtools.mjs",
+      "bytes": 8950,
+      "sha256": "0de1e462cf27727febd4c12bb205c6e1085979453a23767f3b3b442aa8cd4a93"
+    },
+    {
+      "path": "upstream/module/offset.mjs",
+      "bytes": 1931,
+      "sha256": "1966bff1bd12a296bf8f1f0e6510416d2d9c2d40c20bfb85959034b281c955e1"
+    },
+    {
+      "path": "upstream/module/rw.mjs",
+      "bytes": 4105,
+      "sha256": "05bc55e2650b2df42f78c3a9548f79c93bc3614107906a03ab9b17dac5acebd6"
+    },
+    {
+      "path": "upstream/module/utils.mjs",
+      "bytes": 4528,
+      "sha256": "99cc04db2f8ba58db027213ca5d7d256879651d92a96602ab214d8f700fe7c47"
+    },
+    {
+      "path": "upstream/module/view.mjs",
+      "bytes": 6717,
+      "sha256": "6d747f11d79e090fedb7bebc731e14b2093c9581e0c838eee3a7858b06d7a0aa"
+    },
+    {
+      "path": "upstream/psfree_lapse.cache",
+      "bytes": 389,
+      "sha256": "5f742c14d03a8b47b8729926a1411e4da07b644c2fb2e2953f0c680d6cae4467"
+    },
+    {
+      "path": "upstream/psfree.mjs",
+      "bytes": 27601,
+      "sha256": "6899353d5a87e47b2cb77be70a8c467dcdd3e7195a6b94d3ac0f1c7f060e45dd"
+    },
+    {
+      "path": "upstream/README.md",
+      "bytes": 940,
+      "sha256": "e6b22764c2f4c82df4b9b79dad4036d6e674d45e977778665c8fdad84adbe51e"
+    },
+    {
+      "path": "upstream/rop/900.mjs",
+      "bytes": 11657,
+      "sha256": "13e19f77e758ddc3541732b07774f5715ef7a10f33005241616222f0f18f02c6"
+    },
+    {
+      "path": "upstream/send.mjs",
+      "bytes": 7643,
+      "sha256": "7b2a1dea266c4a2a730de45a34c6b09e3d6e2fadec546905bae670b4a5b9858f"
+    },
+    {
+      "path": "web/about.html",
+      "bytes": 5440,
+      "sha256": "84921ecd11cacf54cc81ca50e450661275717a7b27fdb69feeafbe81dc0b7fdd"
+    },
+    {
+      "path": "web/AIO_Fix_Temp/patch_aio.c",
+      "bytes": 1815,
+      "sha256": "bb8b852ff7206a92562f130e1253d509d65d1b6f6b8701fb0040c7cc0616ad45"
+    },
+    {
+      "path": "web/AIO_Fix_Temp/vfs_aio2_pdtor.c",
+      "bytes": 1875,
+      "sha256": "9047656530cebabea66b84747e9d2cb3671b60a644328ffc2d865f79df9ed2fc"
+    },
+    {
+      "path": "web/aio_patches.bin",
+      "bytes": 5588,
+      "sha256": "edf729eb5fe532b679cf2f7fb7c9af852d83199ad6d1364d40fb68b9983ac1e5"
+    },
+    {
+      "path": "web/alert.js",
+      "bytes": 1844,
+      "sha256": "7b9a3547e3ab4ce7821f03dc197fe5c02d242539090a1ff8535c75f0d02026cb"
+    },
+    {
+      "path": "web/cache.html",
+      "bytes": 1247,
+      "sha256": "ed75e953ca5895264a49ed6d0ba0d71ce1c535793bd4693fdbc1fd18b79de784"
+    },
+    {
+      "path": "web/config.js",
+      "bytes": 2115,
+      "sha256": "47490b6ef4b7642c89f4c455a479c2f67eb0b33f3514b26d14c02d31661f7e12"
+    },
+    {
+      "path": "web/COPYING",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "web/fonts/FONTS.LICENSE",
+      "bytes": 4416,
+      "sha256": "fa16ee0fd3c2ff3a19309b4867baaf1f265e532e7f4911589592c2d8ee54f8e8"
+    },
+    {
+      "path": "web/fonts/LiberationMono-Regular.ttf",
+      "bytes": 319624,
+      "sha256": "6299433c96540e07cc0f48e5f00f28e4e5551a717e518c23b243293b9105d42b"
+    },
+    {
+      "path": "web/fonts/README.txt",
+      "bytes": 97,
+      "sha256": "e28d12100052eebf61eb70e3ee307b974935f62c20054d46693730a565ea8ee9"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 1625,
+      "sha256": "afb887b9dd2c4a42fe035342ed249b649ebc2a9cc797594407bdaf05dd217dc7"
+    },
+    {
+      "path": "web/kpatch/900.c",
+      "bytes": 5855,
+      "sha256": "9b55a579a6c75e9928961f55561cc9ad64687d58e4758c52a9e91f23e8ba2eec"
+    },
+    {
+      "path": "web/kpatch/900.elf",
+      "bytes": 5288,
+      "sha256": "56183734c0b4c694344971479c3e070a6a6f0d13f783804b1610218314a7ae33"
+    },
+    {
+      "path": "web/kpatch/Makefile",
+      "bytes": 568,
+      "sha256": "41ecaae5b714b242ae498c141fe3060e96a76bed9b356c4ea765ce05bad0d2a1"
+    },
+    {
+      "path": "web/kpatch/script.ld",
+      "bytes": 160,
+      "sha256": "de75142349343bf9794da133b87a97094873a24d0978705ffc257f63195fdeec"
+    },
+    {
+      "path": "web/kpatch/types.h",
+      "bytes": 921,
+      "sha256": "1460b2fcce7bd632612b0ac0c3b20c262d47941d706a3340028e5d36204660e4"
+    },
+    {
+      "path": "web/kpatch/utils.h",
+      "bytes": 1569,
+      "sha256": "bbd5241ed324f6bc816ad7880974c02546dbd3058f86f37d06f39fca4b97a5e4"
+    },
+    {
+      "path": "web/lapse.js",
+      "bytes": 58267,
+      "sha256": "25d5a13efaa14e58d61af644bd568afdc53ea8b85521550926a215aef683ba9f"
+    },
+    {
+      "path": "web/LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "web/module/chain.js",
+      "bytes": 16166,
+      "sha256": "c781cd17442fec664c31c283a5af0131b0ef6e25ee22754ba630affdf173bf04"
+    },
+    {
+      "path": "web/module/constants.js",
+      "bytes": 773,
+      "sha256": "27ce6981d3a26ce5ae125bceef73daf62040394e5c10541c1527bd15e66a86a7"
+    },
+    {
+      "path": "web/module/int64.js",
+      "bytes": 3560,
+      "sha256": "46a2d5113d4aaa367463675cee605062c1a17dade7214d80b5428e67a0ba383c"
+    },
+    {
+      "path": "web/module/mem.js",
+      "bytes": 12128,
+      "sha256": "8013bf066270bdd7cd497e67843b58d53d99073a67354f24b039caf88dfbe593"
+    },
+    {
+      "path": "web/module/memtools.js",
+      "bytes": 8942,
+      "sha256": "52ac8d514ab4709ff3b322a0692f394301da980d0de833712d2fe47e4ac4c730"
+    },
+    {
+      "path": "web/module/offset.js",
+      "bytes": 1930,
+      "sha256": "88ae276045da184e796b08fe951eae176e7b76f657d561a5803a62006d24a34b"
+    },
+    {
+      "path": "web/module/rw.js",
+      "bytes": 4104,
+      "sha256": "d605153f35655b6706e5c4bb4e752f490af56436e4d0956430bde90b12085e15"
+    },
+    {
+      "path": "web/module/utils.js",
+      "bytes": 4527,
+      "sha256": "8ea22cfe8960c24e6da12fda9d04cb2ee16f20327bde23d710e1d930693711c4"
+    },
+    {
+      "path": "web/module/view.js",
+      "bytes": 6711,
+      "sha256": "a925b9e2021ecd4d4b6fb90b42188f2ce921f645faba937e613fd53f1a6b93ed"
+    },
+    {
+      "path": "web/psfree_lapse.appcache",
+      "bytes": 441,
+      "sha256": "46941f7d0824ae1067efc892c4e9317e98ede75a1b89c8d3cc7b09b2df41b32d"
+    },
+    {
+      "path": "web/psfree.js",
+      "bytes": 27593,
+      "sha256": "85d848c437a10eded0d22534c88fa4e27b07c0d9083ec6d21865824fab953e57"
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 940,
+      "sha256": "e6b22764c2f4c82df4b9b79dad4036d6e674d45e977778665c8fdad84adbe51e"
+    },
+    {
+      "path": "web/rop/900.js",
+      "bytes": 11651,
+      "sha256": "4a90eeac58ec37d9f40945a16485fa80847ce7877743b9723636e480d9e1bc53"
+    },
+    {
+      "path": "web/send.js",
+      "bytes": 7635,
+      "sha256": "d915c293b1f1f3c2bbdb0af692e711cb0691edbc6cd92f230034f4b2a0555a33"
+    }
+  ],
+  "entryFlow": {
+    "type": "same-origin-native-host",
+    "url": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2all/index.html",
+    "advancedEntry": "web/index.html"
+  }
+}

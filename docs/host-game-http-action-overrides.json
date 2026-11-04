@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02T06:18:06.004Z",
+  "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+  "actions": [
+    {
+      "id": "ps4-arabicguy-gta5-127",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-127-ps4-900.bin",
+      "bytes": 1059520,
+      "sha256": "be9ee0dacc71e94d607584770c08cdc39c1319427e9fd83424fc19dd15782aa6",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-arabicguy-gta5-132",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-132-ps4-900.bin",
+      "bytes": 1059520,
+      "sha256": "7b9c1242b0c18c4e8ce43216518c09bb8550ad31328a3dc16185d8d2ee7f7b8b",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-arabicguy-gta5-133",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-133-ps4-900.bin",
+      "bytes": 1059520,
+      "sha256": "617318304d6303272e5d6287f812e7c8a4c6cf99684c5664b5ec27a6704bc85b",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-beefqueef-gta5-133",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/beefqueef-gta5-133-ps4-900.bin",
+      "bytes": 1073700,
+      "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.33.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/GTA/BeefQueefMod-1.33.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-oysters-rdr2-100",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-100-ps4-900.bin",
+      "bytes": 1190392,
+      "sha256": "199b68feb24e1d202589b7ccb7b9ee28fdf3cab5546b41bd1263939ecedb7add",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-oysters-rdr2-113",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-113-ps4-900.bin",
+      "bytes": 1190392,
+      "sha256": "089f1c3144dffb35589a7fb36a05dd54f642c1eeef3873daa3b7f4ce965af06d",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-oysters-rdr2-119",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-119-ps4-900.bin",
+      "bytes": 1190392,
+      "sha256": "370b5bd2b4bace7a2dd51bd28f9b080b1e5221f3bd9e6dec64c5e72baa183254",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-oysters-rdr2-124",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-124-ps4-900.bin",
+      "bytes": 1190392,
+      "sha256": "58e2317dd8fe1cc44ce834a174ac06e566b34eb3709ce39e088f63aa51a5944a",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-oysters-rdr2-129",
+      "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-129-ps4-900.bin",
+      "bytes": 1260864,
+      "sha256": "424f9dbf4813cd55366d446d36d0dc84aa950025a6341a47d1ac0f5f8dbf6986",
+      "source": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin",
+      "sourceCommit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "hostURL": "https://nazky.github.io/PSFree/",
+      "firmwareEvidence": "The pinned Nazky host lists PS4 9.00 and maps this exact BIN through its GoldHEN HTTP sender. No other firmware or PS5 compatibility is asserted; hardware execution was not tested here.",
+      "loaderEvidence": {
+        "sourceURL": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "payloadPath": "./payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin",
+        "transport": "Raw BIN ArrayBuffer POST to GoldHEN HTTP port 9090, after /status reports ready."
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "launchLabel": "Send to PS4",
+      "launchURL": null
+    },
+    {
+      "id": "ps4-arabicguy-gta5-100",
+      "run": null,
+      "launchURL": "https://www.kmeps4.site/",
+      "launchLabel": "Open menu host",
+      "loaderEvidence": null,
+      "requirements": [
+        "PS4 firmware 9.00 and the exact game update shown for this menu.",
+        "This ready BIN is preserved from the pinned Kameleon browser host. Open that host and select its matching menu option.",
+        "Native GoldHEN HTTP compatibility of this exact variant has not been established, so this site does not provide a direct Send action for it.",
+        "Check the original menu requirements for regional title IDs and use one menu at a time in offline/story mode."
+      ]
+    },
+    {
+      "id": "ps4-lamance-gta5-138",
+      "run": null,
+      "launchURL": "https://www.kmeps4.site/",
+      "launchLabel": "Open menu host",
+      "loaderEvidence": null,
+      "requirements": [
+        "PS4 firmware 9.00 and the exact game update shown for this menu.",
+        "This ready BIN is preserved from the pinned Kameleon browser host. Open that host and select its matching menu option.",
+        "Native GoldHEN HTTP compatibility of this exact variant has not been established, so this site does not provide a direct Send action for it.",
+        "Check the original menu requirements for regional title IDs and use one menu at a time in offline/story mode."
+      ]
+    },
+    {
+      "id": "ps4-north-beta-rdr2-129",
+      "run": null,
+      "launchURL": "https://www.kmeps4.site/",
+      "launchLabel": "Open menu host",
+      "loaderEvidence": null,
+      "requirements": [
+        "PS4 firmware 9.00 and the exact game update shown for this menu.",
+        "This ready BIN is preserved from the pinned Kameleon browser host. Open that host and select its matching menu option.",
+        "Native GoldHEN HTTP compatibility of this exact variant has not been established, so this site does not provide a direct Send action for it.",
+        "Check the original menu requirements for regional title IDs and use one menu at a time in offline/story mode."
+      ]
+    }
+  ]
+}

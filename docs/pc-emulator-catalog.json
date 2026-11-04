@@ -1,0 +1,1157 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-02T07:54:19.051Z",
+  "title": "PC Console Emulator Catalogue",
+  "scope": "Desktop host support and official release routes. OS badges distinguish native packages, experimental builds, source builds, legacy packages, Wine and frontend cores. No games, firmware, keys or BIOS are included.",
+  "platforms": [
+    {
+      "id": "windows",
+      "label": "Windows",
+      "icon": "/assets/images/pc-emulators/windows.svg"
+    },
+    {
+      "id": "macos",
+      "label": "macOS",
+      "icon": "/assets/images/pc-emulators/macos.svg"
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "icon": "/assets/images/pc-emulators/linux.svg"
+    }
+  ],
+  "apps": [
+    {
+      "id": "eden-ns2",
+      "title": "Eden NS2",
+      "repo": "0x2593/Eden-NS2",
+      "family": "Nintendo",
+      "systems": [
+        "Nintendo Switch 2"
+      ],
+      "group": "research",
+      "status": "Build from source",
+      "version": "Source snapshot · checked 2 November 2026",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "source",
+          "note": "MSYS2 MINGW64 build instructions; no published release binary"
+        }
+      ],
+      "image": "/assets/images/pc-emulators/workstation.svg",
+      "description": "The requested Eden NS2 fork, presented as an experimental Nintendo Switch 2 research project with a Windows source-build route.",
+      "requirements": "No packaged release exists on this exact repository’s releases page at the check date. The README documents Windows MSYS2 MINGW64 builds. Its Linux instructions are explicitly untested; no macOS build or support was verified.",
+      "setup": "Use the exact repository’s README and dependency documentation if you intend to build it. The documented output is build/bin/eden.exe with the required MinGW/Qt runtime files. Supply your own extracted game dump, keys and firmware. The README recommends Vulkan, multi-core CPU and the 12 GB emulated-memory-layout setting; that setting is not a measurement of host RAM requirements.",
+      "compatibility": "Upstream lists selected Switch 2 games as playable or booting, with slowdown and graphics caveats. These are author-reported results, not tests performed by this site. Read the exact title, update and GPU notes in the repository before assuming compatibility.",
+      "downloadsPage": "https://github.com/0x2593/Eden-NS2/releases",
+      "guide": "https://github.com/0x2593/Eden-NS2#building-windows-msys2-mingw64",
+      "tags": [
+        "Switch 2",
+        "NS2",
+        "Eden",
+        "experimental",
+        "Windows build",
+        "Linux untested",
+        "source only",
+        "Nintendo Switch 2",
+        "Nintendo",
+        "Build from source"
+      ],
+      "project": "https://github.com/0x2593/Eden-NS2",
+      "releaseUrl": "https://github.com/0x2593/Eden-NS2/releases"
+    },
+    {
+      "id": "ps5-sharpemu",
+      "title": "SharpEmu",
+      "repo": "sharpemu/sharpemu",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 5",
+        "PlayStation 4 research"
+      ],
+      "group": "research",
+      "status": "Experimental builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x64 experimental release"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "x64 experimental release"
+        }
+      ],
+      "image": "/assets/images/emulators/SharpEmu.png",
+      "description": "An experimental PS5 project with an author-described PS4 backward-compatibility mode, distributed for Windows and Linux.",
+      "requirements": "A Vulkan-capable GPU and current graphics driver. macOS work lives in a separate repository and is not covered by these Windows/Linux assets.",
+      "setup": "Extract the complete release archive for your host. Use the GUI or the documented command line to open your own game’s eboot.bin. Keep game files and the release runtime together; this is a PC emulator, not a PS5 payload.",
+      "compatibility": "The project is developing CPU/GPU and platform infrastructure. Screenshots and selected-game results in its README are upstream claims; this site has not tested PS5 or PS4 games with it.",
+      "guide": "https://github.com/sharpemu/sharpemu#using",
+      "downloadsPage": "https://github.com/sharpemu/sharpemu/releases/tag/v0.0.7-pulse",
+      "project": "https://github.com/sharpemu/sharpemu",
+      "releaseUrl": "https://github.com/sharpemu/sharpemu/releases/tag/v0.0.7-pulse",
+      "version": "v0.0.7-pulse",
+      "tags": [
+        "PlayStation 5",
+        "PlayStation 4 research",
+        "PlayStation",
+        "Experimental builds"
+      ]
+    },
+    {
+      "id": "ps5-kyty",
+      "title": "KytyPS5",
+      "repo": "KytyPS5/KytyPS5",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 5"
+      ],
+      "group": "research",
+      "status": "Experimental builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x64 primary target"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "x64 primary target"
+        },
+        {
+          "id": "macos",
+          "mode": "experimental",
+          "note": "Experimental x86-64; Apple Silicon uses Rosetta 2 and MoltenVK"
+        }
+      ],
+      "image": "/assets/images/emulators/KytyPS5.jpg",
+      "description": "A PS5 translation-layer project with published Windows, Linux and experimental Intel-macOS archives.",
+      "requirements": "Windows/Linux are the primary targets. The macOS build is x86-64; the README documents Rosetta 2 on Apple Silicon and bundled MoltenVK. Check the project’s current GPU and build requirements.",
+      "setup": "Extract the complete operating-system archive, retain its libraries, and use the supplied launcher. Select your own supported game dump using the project’s instructions; command-line and GUI packages differ from source archives.",
+      "compatibility": "Compatibility and performance are changing quickly. The current README contains author/community results; none was independently reproduced here.",
+      "guide": "https://github.com/KytyPS5/KytyPS5#current-status",
+      "downloadsPage": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-11-02-02b17af",
+      "project": "https://github.com/KytyPS5/KytyPS5",
+      "releaseUrl": "https://github.com/KytyPS5/KytyPS5/releases/tag/KytyPS5-2026-11-02-02b17af",
+      "version": "KytyPS5-2026-11-02-02b17af",
+      "tags": [
+        "PlayStation 5",
+        "PlayStation",
+        "Experimental builds"
+      ]
+    },
+    {
+      "id": "ps4-shadps4",
+      "title": "shadPS4",
+      "repo": "shadps4-emu/shadPS4",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 4"
+      ],
+      "group": "modern",
+      "status": "Experimental builds",
+      "image": "/assets/images/emulators/shadps4.jpg",
+      "description": "A native PS4 emulator with Windows, Linux and macOS builds, title-specific compatibility and separate launcher options.",
+      "requirements": "Use a host meeting the project’s CPU/GPU requirements and your own supported PS4 game dumps. Required firmware modules must come from your own PS4 and belong in shadPS4’s sys_modules folder. The pinned 0.21.0 README requires macOS 26.0 or later and excludes Intel Macs. For a GUI, use the separately released QtLauncher.",
+      "setup": "The checked 0.21.0 archives are SDL/CLI builds. Extract all files, configure the documented game directory and sys_modules, and use the CLI or the separately documented QtLauncher. A desktop ZIP is not a console PKG.",
+      "compatibility": "Check the exact game update and emulator version in the project’s compatibility tracker. Enhancements and patches can have their own prerequisites.",
+      "guide": "https://github.com/shadps4-emu/shadPS4#usage",
+      "downloadsPage": "https://github.com/shadps4-emu/shadPS4/releases/tag/v.0.21.0",
+      "project": "https://github.com/shadps4-emu/shadPS4",
+      "releaseUrl": "https://github.com/shadps4-emu/shadPS4/releases/tag/v.0.21.0",
+      "version": "v.0.21.0",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit desktop build"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "macOS 26.0+ on Apple Silicon; Intel Macs unsupported"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Published desktop build"
+        }
+      ],
+      "tags": [
+        "PlayStation 4",
+        "PlayStation",
+        "Experimental builds"
+      ]
+    },
+    {
+      "id": "pcsx2",
+      "title": "PCSX2",
+      "repo": "PCSX2/pcsx2",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 2"
+      ],
+      "group": "modern",
+      "image": "/assets/images/emulators/PCSX2.png",
+      "description": "A PS2 emulator with released Windows, macOS and Linux packages and a guided first-run setup.",
+      "requirements": "A supported 64-bit host and compatible graphics driver. A real PS2 BIOS dump is required; the project does not include one.",
+      "setup": "Extract the portable archive or use the official installer, then complete the setup wizard. Select your own BIOS dump, add a game directory, configure the controller and start with default emulation settings.",
+      "compatibility": "Use the project’s title-specific compatibility list and recommended fixes before raising resolution or enabling game patches.",
+      "guide": "https://pcsx2.net/docs/setup/bios/",
+      "downloadsPage": "https://pcsx2.net/downloads/",
+      "project": "https://github.com/PCSX2/pcsx2",
+      "releaseUrl": "https://github.com/PCSX2/pcsx2/releases/tag/v2.8.2",
+      "version": "v2.8.2",
+      "status": "Released builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit desktop build"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Published desktop build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Published desktop build"
+        }
+      ],
+      "tags": [
+        "PlayStation 2",
+        "PlayStation",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "play",
+      "title": "Play!",
+      "repo": "jpd002/Play-",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 2"
+      ],
+      "group": "modern",
+      "status": "Experimental builds",
+      "version": "0.70 · official stable build",
+      "image": "/assets/images/emulators/PCSX2.png",
+      "description": "An alternative PS2 emulator with Windows, macOS and Linux distributions and a built-in high-level BIOS.",
+      "requirements": "Use the hardware and rendering requirements in the official documentation. Play! uses its own HLE BIOS; an external PS2 BIOS is neither needed nor supported.",
+      "setup": "Choose the appropriate stable host build from the project’s download selector, install or extract it, add your own game dump and configure a controller. A lack of GitHub Releases on the source repository does not mean the official build selector is source-only.",
+      "compatibility": "It has a separate compatibility tracker from PCSX2. Check your title there rather than assuming the two emulators behave the same.",
+      "guide": "https://github.com/jpd002/Play-#play-",
+      "downloadsPage": "https://purei.org/downloads.php",
+      "project": "https://github.com/jpd002/Play-",
+      "releaseUrl": "https://github.com/jpd002/Play-/releases",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit desktop build"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Published desktop build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Published desktop build"
+        }
+      ],
+      "tags": [
+        "PlayStation 2",
+        "PlayStation",
+        "Experimental builds"
+      ]
+    },
+    {
+      "id": "rpcs3",
+      "title": "RPCS3",
+      "repo": "RPCS3/rpcs3",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 3"
+      ],
+      "group": "modern",
+      "version": "0.0.43-20551 · checked build",
+      "image": "/assets/images/emulators/RPCS3.jpg",
+      "description": "A PS3 emulator with separate published desktop builds for Windows, Linux and macOS.",
+      "requirements": "A host meeting RPCS3’s current CPU/GPU requirements, the required official PS3 system software, and your own correctly dumped games. Windows users also need the runtime specified in the project’s README.",
+      "setup": "Choose the host package from the official download page. Follow RPCS3’s Quickstart to install PS3 firmware and add your game dump, then configure the controller and check the title’s wiki settings. The firmware package is separate from the emulator archive.",
+      "compatibility": "Check RPCS3’s compatibility list for the exact title and region. A game that boots may still have gameplay or performance issues.",
+      "guide": "https://rpcs3.net/quickstart",
+      "downloadsPage": "https://rpcs3.net/download",
+      "project": "https://github.com/RPCS3/rpcs3",
+      "releaseUrl": "https://github.com/RPCS3/rpcs3/releases/tag/v0.0.43",
+      "status": "Released builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit desktop build"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Published desktop build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Published desktop build"
+        }
+      ],
+      "tags": [
+        "PlayStation 3",
+        "PlayStation",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "duckstation",
+      "title": "DuckStation",
+      "repo": "stenzek/duckstation",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 1"
+      ],
+      "group": "retro",
+      "version": "Latest rolling build · checked 2 November 2026",
+      "image": "/assets/images/emulators/ePSXe.jpg",
+      "description": "A PS1 emulator with released Windows, Linux and macOS builds, a setup wizard and per-game settings.",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "Windows 10/11 x64 or ARM64"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "AppImage x64/ARM32/ARM64"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "macOS 13.3+ Universal"
+        }
+      ],
+      "requirements": "Provide a PS1 or supported PS2 BIOS image from your own console. The project warns that mismatched BIOS/game regions can cause compatibility issues.",
+      "setup": "Extract the complete package, run its setup wizard, choose your BIOS directory and add your own disc dumps. Keep multi-track BIN/CUE files together; select the cue sheet where appropriate.",
+      "compatibility": "Use default compatibility settings first. The latest tag is rolling, so archived checksums identify the exact file captured.",
+      "guide": "https://github.com/stenzek/duckstation#downloading-and-running",
+      "downloadsPage": "https://github.com/stenzek/duckstation/releases/tag/latest",
+      "project": "https://github.com/stenzek/duckstation",
+      "releaseUrl": "https://github.com/stenzek/duckstation/releases/tag/latest",
+      "status": "Released builds",
+      "tags": [
+        "PlayStation 1",
+        "PlayStation",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "epsxe",
+      "title": "ePSXe",
+      "project": "https://www.epsxe.com/",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation 1"
+      ],
+      "group": "retro",
+      "status": "Legacy builds",
+      "version": "Windows 2.0.18 · Linux/macOS 2.0.5",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "Published Win32 build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Legacy x86/x64 2.0.5"
+        },
+        {
+          "id": "macos",
+          "mode": "legacy",
+          "note": "Legacy Intel x64 2.0.5 alpha; no modern Mac guarantee"
+        }
+      ],
+      "image": "/assets/images/emulators/ePSXe.jpg",
+      "description": "The preserved PS1 emulator with distinct Windows and older Linux/Intel-macOS downloads.",
+      "requirements": "Use the documentation for the chosen OS release and provide the required BIOS/plugin setup. The macOS packages are explicitly alpha builds; they are not Apple Silicon-native releases.",
+      "setup": "Download the intended OS package from the official page. Keep its required files together, configure BIOS and controller settings, and open your own supported disc dump. Do not assume the Windows version number applies to Linux or macOS.",
+      "compatibility": "Kept as a legacy option. Published older packages do not establish support for every current OS release.",
+      "guide": "https://www.epsxe.com/help.php",
+      "downloadsPage": "https://www.epsxe.com/download.php",
+      "tags": [
+        "PlayStation 1",
+        "PlayStation",
+        "Legacy builds"
+      ]
+    },
+    {
+      "id": "ppsspp",
+      "title": "PPSSPP",
+      "project": "https://www.ppsspp.org/",
+      "family": "PlayStation",
+      "systems": [
+        "PlayStation Portable"
+      ],
+      "group": "handheld",
+      "version": "1.20.4",
+      "image": "/assets/images/emulators/PPSSPP.jpg",
+      "description": "A PSP emulator with official Windows and macOS downloads plus Linux Flatpak/AppImage routes.",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x64/ARM64 packages"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Official DMG"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Flatpak; AppImage from official CI"
+        }
+      ],
+      "requirements": "Your own supported PSP game dump. PPSSPP includes its emulated PSP system environment; it does not need a separate PSP BIOS download.",
+      "setup": "Use the OS-specific official download, configure controls and choose your own ISO/CSO or homebrew. Keep normal saves backed up independently; save states can depend on emulator version.",
+      "compatibility": "Check game-specific settings in the project’s documentation. The desktop builds are separate from the legacy Switch console port.",
+      "guide": "https://www.ppsspp.org/docs/",
+      "downloadsPage": "https://www.ppsspp.org/download/",
+      "status": "Released builds",
+      "tags": [
+        "PlayStation Portable",
+        "PlayStation",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "dolphin",
+      "title": "Dolphin",
+      "project": "https://dolphin-emu.org/",
+      "family": "Nintendo",
+      "systems": [
+        "GameCube",
+        "Wii"
+      ],
+      "group": "modern",
+      "version": "2609a",
+      "image": "/assets/images/emulators/Dolphin.png",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x64 or ARM64; VC++ runtime required"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "ARM/Intel Universal"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Official Flatpak builds"
+        }
+      ],
+      "description": "A GameCube and Wii emulator with stable desktop releases and clearly separated development snapshots.",
+      "requirements": "A compatible graphics driver and your own game dumps. The official Windows page requires the 64-bit Visual C++ v14 redistributable. Some Wii features need additional data from your own console.",
+      "setup": "Choose the latest release rather than a development snapshot when you want that release channel. Extract or install the complete package, add a game directory, configure emulated GameCube/Wii controls and test with default settings.",
+      "compatibility": "Use Dolphin’s per-game wiki/compatibility reports. Higher resolution and enhancements can expose issues that are absent at default settings.",
+      "guide": "https://dolphin-emu.org/docs/guides/",
+      "downloadsPage": "https://dolphin-emu.org/download/",
+      "status": "Released builds",
+      "tags": [
+        "GameCube",
+        "Wii",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "cemu",
+      "title": "Cemu",
+      "repo": "cemu-project/Cemu",
+      "family": "Nintendo",
+      "systems": [
+        "Wii U"
+      ],
+      "group": "modern",
+      "image": "/assets/images/emulators/Cemu.png",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit portable build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "AppImage or supported Linux build"
+        },
+        {
+          "id": "macos",
+          "mode": "experimental",
+          "note": "Experimental Intel build; Rosetta/MoltenVK caveats on ARM"
+        }
+      ],
+      "description": "A Wii U emulator with Windows and Linux packages and an explicitly experimental macOS build.",
+      "requirements": "A 64-bit host, supported graphics driver and your own Wii U game dumps. The macOS README warns about stability and performance, including MoltenVK and Rosetta use on ARM Macs.",
+      "setup": "Extract the complete OS package, choose storage for Cemu’s user data, add your game directory and configure a controller profile. Follow the official dumping guide for updates, DLC and online-account files when needed.",
+      "compatibility": "The macOS icon denotes an available experimental build, not equal compatibility or performance with Windows/Linux.",
+      "guide": "https://cemu.info/",
+      "downloadsPage": "https://github.com/cemu-project/Cemu/releases/tag/v2.6",
+      "project": "https://github.com/cemu-project/Cemu",
+      "releaseUrl": "https://github.com/cemu-project/Cemu/releases/tag/v2.6",
+      "version": "v2.6",
+      "status": "Released builds",
+      "tags": [
+        "Wii U",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "azahar",
+      "title": "Azahar",
+      "repo": "azahar-emu/azahar",
+      "family": "Nintendo",
+      "systems": [
+        "Nintendo 3DS"
+      ],
+      "group": "handheld",
+      "image": "/assets/images/emulators/Citra.jpg",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x64; current README recommends MXE when unsure"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Universal, Apple Silicon or Intel; macOS 13.4+"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Flatpak recommended; AppImage available"
+        }
+      ],
+      "description": "An actively developed 3DS project continuing Citra’s legacy, with current desktop release packages.",
+      "requirements": "The documented desktop baseline includes Windows 10 64-bit, macOS 13.4 or modern 64-bit Linux, SSE4.2 on x86-64 and OpenGL 4.3 or Vulkan 1.1. Provide your own game/system data as required by its setup guide.",
+      "setup": "Choose a standalone desktop package, not a libretro core or Android build. Follow Azahar’s system/game-dumping instructions, configure controls and add your dumped content. Linux users can use the recommended Flatpak route.",
+      "compatibility": "Use Azahar’s own compatibility reports. Old Citra results and settings do not automatically apply to current Azahar builds.",
+      "guide": "https://azahar-emu.org/",
+      "downloadsPage": "https://github.com/azahar-emu/azahar/releases/tag/2126.2",
+      "project": "https://github.com/azahar-emu/azahar",
+      "releaseUrl": "https://github.com/azahar-emu/azahar/releases/tag/2126.2",
+      "version": "2126.2",
+      "status": "Released builds",
+      "tags": [
+        "Nintendo 3DS",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "desmume",
+      "title": "DeSmuME",
+      "repo": "TASEmulators/desmume",
+      "family": "Nintendo",
+      "systems": [
+        "Nintendo DS"
+      ],
+      "group": "handheld",
+      "version": "0.9.13",
+      "image": "/assets/images/emulators/DeSmuME.jpg",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "Published Win64 ZIP"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Published macOS DMG"
+        },
+        {
+          "id": "linux",
+          "mode": "source",
+          "note": "Official source-build route"
+        }
+      ],
+      "description": "A DS emulator with Windows and macOS release packages and a Linux source-build route.",
+      "requirements": "Choose the documented build for your host. The selected release includes source for Linux rather than a Linux installer; distribution packages can have their own version and maintenance policies.",
+      "setup": "Install or extract the host build, configure controls and open your own DS game dump. Keep battery saves separate from save states when moving between versions or emulator frontends.",
+      "compatibility": "Release 0.9.13 is a published version, not a guarantee of a current binary for every Linux distribution.",
+      "guide": "https://github.com/TASEmulators/desmume",
+      "downloadsPage": "https://github.com/TASEmulators/desmume/releases/tag/release_0_9_13",
+      "project": "https://github.com/TASEmulators/desmume",
+      "releaseUrl": "https://github.com/TASEmulators/desmume/releases/tag/release_0_9_13",
+      "status": "Released builds",
+      "tags": [
+        "Nintendo DS",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "mgba",
+      "title": "mGBA",
+      "project": "https://mgba.io/",
+      "family": "Nintendo",
+      "systems": [
+        "Game Boy",
+        "Game Boy Color",
+        "Game Boy Advance"
+      ],
+      "group": "handheld",
+      "version": "0.10.5",
+      "image": "/assets/images/emulators/mGBA.png",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x86/x64 portable or installer"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Modern 10.13+ and separate legacy package"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "x64/ARM64 AppImage or Ubuntu packages"
+        }
+      ],
+      "description": "A Game Boy family emulator with separate desktop and console homebrew distributions.",
+      "requirements": "Your own supported game dump. A built-in BIOS implementation is provided; external BIOS files are optional for supported features.",
+      "setup": "Choose a desktop build from the current-downloads section, install or extract it, configure input and open your GB/GBC/GBA dump. The Nintendo Switch NRO is a different target from the desktop packages.",
+      "compatibility": "Back up normal saves before upgrading and check the project’s release notes for game-specific fixes.",
+      "guide": "https://mgba.io/docs.html",
+      "downloadsPage": "https://mgba.io/downloads.html",
+      "status": "Released builds",
+      "tags": [
+        "Game Boy",
+        "Game Boy Color",
+        "Game Boy Advance",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "project64",
+      "title": "Project64",
+      "repo": "project64/project64",
+      "family": "Nintendo",
+      "systems": [
+        "Nintendo 64",
+        "Nintendo 64DD"
+      ],
+      "group": "retro",
+      "version": "Official public-release selector",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "Windows-only project; current README targets Windows 10/11"
+        }
+      ],
+      "image": "/assets/images/emulators/Project64.png",
+      "description": "A Windows N64 emulator with public releases and a separate development channel.",
+      "requirements": "The project currently supports Windows only. GPU requirements depend on the selected video plugin; check the current requirements rather than applying another emulator’s settings.",
+      "setup": "Use the complete public package from the official Windows downloads page, configure the graphics/input plugins and open your own supported ROM dump. Development builds are a separate channel.",
+      "compatibility": "Planned future platforms do not count as current Linux or macOS support.",
+      "guide": "https://github.com/project64/project64#supported-requirements",
+      "downloadsPage": "https://www.pj64-emu.com/windows-downloads",
+      "project": "https://github.com/project64/project64",
+      "releaseUrl": "https://github.com/project64/project64/releases",
+      "status": "Released builds",
+      "tags": [
+        "Nintendo 64",
+        "Nintendo 64DD",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "mupen64plus",
+      "title": "Mupen64Plus",
+      "repo": "mupen64plus/mupen64plus-core",
+      "family": "Nintendo",
+      "systems": [
+        "Nintendo 64"
+      ],
+      "group": "retro",
+      "image": "/assets/images/emulators/Project64.png",
+      "description": "A cross-platform N64 emulator core and plugins with complete host-specific bundles.",
+      "requirements": "Use a complete bundle or a frontend that supplies the matching core and plugins. A core-only source archive is not a ready desktop application.",
+      "setup": "Extract the bundle for Windows, Linux or macOS and follow its included README. Configure the input and video plugins, or use a compatible frontend. Keep the plugin versions paired with the core. The official 2.6.0 bundle includes the ui-console command-line frontend, not a graphical launcher.",
+      "compatibility": "Architecture and graphics-plugin selection affect compatibility. The macOS bundle name does not imply a native build for every Apple Silicon configuration.",
+      "guide": "https://www.mupen64plus.org/docs/",
+      "downloadsPage": "https://github.com/mupen64plus/mupen64plus-core/releases/tag/2.6.0",
+      "project": "https://github.com/mupen64plus/mupen64plus-core",
+      "releaseUrl": "https://github.com/mupen64plus/mupen64plus-core/releases/tag/2.6.0",
+      "version": "2.6.0",
+      "status": "Released builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit desktop build"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Published desktop build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Published desktop build"
+        }
+      ],
+      "tags": [
+        "Nintendo 64",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "snes9x",
+      "title": "Snes9x",
+      "repo": "snes9xgit/snes9x",
+      "family": "Nintendo",
+      "systems": [
+        "Super Nintendo",
+        "Super Famicom"
+      ],
+      "group": "retro",
+      "image": "/assets/images/emulators/Snes9x.jpg",
+      "description": "A SNES emulator with Windows, macOS and Linux release packages, separate from its libretro cores.",
+      "requirements": "Your own compatible SNES game dumps. Select the standalone OS package when you want the desktop application; libretro ZIPs need a compatible frontend.",
+      "setup": "Extract or install the full desktop package, set input bindings and open a game dump. Back up normal save RAM and keep save-state versions in mind during upgrades.",
+      "compatibility": "Use the project’s game-specific notes for enhancement chips and unusual cartridges.",
+      "guide": "https://github.com/snes9xgit/snes9x",
+      "downloadsPage": "https://github.com/snes9xgit/snes9x/releases/tag/1.63",
+      "project": "https://github.com/snes9xgit/snes9x",
+      "releaseUrl": "https://github.com/snes9xgit/snes9x/releases/tag/1.63",
+      "version": "1.63",
+      "status": "Released builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit desktop build"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Published desktop build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Published desktop build"
+        }
+      ],
+      "tags": [
+        "Super Nintendo",
+        "Super Famicom",
+        "Nintendo",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "xemu",
+      "title": "xemu",
+      "repo": "xemu-project/xemu",
+      "family": "Xbox",
+      "systems": [
+        "Original Xbox"
+      ],
+      "group": "modern",
+      "image": "/assets/images/emulators/xemu.png",
+      "description": "A full-system original-Xbox emulator with native Windows, macOS and Linux downloads.",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x86-64 or ARM64 release"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Universal release"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "x86-64 or ARM64 AppImage"
+        }
+      ],
+      "requirements": "Requires an MCPX boot ROM, compatible flash BIOS and Xbox hard-disk image. These are separate from the emulator download. Match the project’s required-file documentation and use your own console data where needed.",
+      "setup": "Extract the host build and configure the required file paths in xemu’s settings. Add your supported disc image, map the controller and test a single title. Renaming an arbitrary ISO does not convert it to an Xbox disc image.",
+      "compatibility": "Use xemu’s compatibility reports for the exact title; reports depend on the tested version and host.",
+      "guide": "https://xemu.app/docs/required-files/",
+      "downloadsPage": "https://xemu.app/#download",
+      "project": "https://github.com/xemu-project/xemu",
+      "releaseUrl": "https://github.com/xemu-project/xemu/releases/tag/v0.8.139",
+      "version": "v0.8.139",
+      "status": "Released builds",
+      "tags": [
+        "Original Xbox",
+        "Xbox",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "xenia",
+      "title": "Xenia",
+      "repo": "xenia-project/release-builds-windows",
+      "family": "Xbox",
+      "systems": [
+        "Xbox 360"
+      ],
+      "group": "modern",
+      "status": "Experimental builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "Official master build"
+        }
+      ],
+      "image": "/assets/images/emulators/Xenia.png",
+      "description": "The upstream experimental Xbox 360 emulator’s Windows master build.",
+      "requirements": "A host meeting Xenia’s current CPU/GPU requirements and your own game dumps. Linux development references in the source repository are not a verified native release on this master-download route.",
+      "setup": "Extract the entire Windows archive, retain its files and open your supported game executable/disc dump. Configure the renderer and input according to the official documentation.",
+      "compatibility": "Use the master-branch compatibility reports. Results and patches for Canary do not automatically apply to this build.",
+      "guide": "https://github.com/xenia-project/xenia/wiki/Quickstart",
+      "downloadsPage": "https://github.com/xenia-project/release-builds-windows/releases/tag/v1.0.2844-master",
+      "project": "https://github.com/xenia-project/release-builds-windows",
+      "releaseUrl": "https://github.com/xenia-project/release-builds-windows/releases/tag/v1.0.2844-master",
+      "version": "v1.0.2844-master",
+      "tags": [
+        "Xbox 360",
+        "Xbox",
+        "Experimental builds"
+      ]
+    },
+    {
+      "id": "xenia-canary",
+      "title": "Xenia Canary",
+      "repo": "xenia-canary/xenia-canary",
+      "family": "Xbox",
+      "systems": [
+        "Xbox 360"
+      ],
+      "group": "modern",
+      "status": "Experimental builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "Canary 7z release"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Experimental native AppImage"
+        }
+      ],
+      "image": "/assets/images/emulators/xenia-canary.png",
+      "description": "An experimental Xenia fork with additional options and separate Windows and Linux release assets.",
+      "requirements": "Choose the package for your host and the branch documented by the project. The checked Canary release publishes a native Linux AppImage; no macOS release was verified.",
+      "setup": "Extract the Windows archive or follow the Linux AppImage instructions, then add your own game dump. Apply title/update-specific patches only when they match the selected build and game version.",
+      "compatibility": "Canary has its own compatibility list. New features and patches can improve one title and regress another.",
+      "guide": "https://github.com/xenia-canary/xenia-canary",
+      "downloadsPage": "https://github.com/xenia-canary/xenia-canary/releases/tag/96ce1ac",
+      "project": "https://github.com/xenia-canary/xenia-canary",
+      "releaseUrl": "https://github.com/xenia-canary/xenia-canary/releases/tag/96ce1ac",
+      "version": "96ce1ac",
+      "tags": [
+        "Xbox 360",
+        "Xbox",
+        "Experimental builds"
+      ]
+    },
+    {
+      "id": "cxbx-reloaded",
+      "title": "Cxbx-Reloaded",
+      "repo": "Cxbx-Reloaded/Cxbx-Reloaded",
+      "family": "Xbox",
+      "systems": [
+        "Original Xbox"
+      ],
+      "group": "modern",
+      "status": "Experimental builds",
+      "version": "CI-585c49a · checked build",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "x64 host; Windows package"
+        },
+        {
+          "id": "linux",
+          "mode": "wine",
+          "note": "Windows build under Wine; unstable and version-dependent"
+        }
+      ],
+      "image": "/assets/images/emulators/cxbx-reloaded.png",
+      "description": "An original-Xbox emulator targeting Windows, with a separately documented Wine route on x86-64 Linux.",
+      "requirements": "Follow the project’s Windows runtime prerequisites. Linux uses Wine rather than a native Linux binary, and the README warns about instability. The README explicitly says macOS with Wine is not working.",
+      "setup": "Extract the complete Windows release and configure your own supported Xbox game dump. For Linux, follow the project’s Wine dependencies and known-version caveats; do not treat it as a normal native Linux package.",
+      "compatibility": "Check its compatibility list and Wine caveats for the selected title. It is a separate approach from xemu’s full-system setup.",
+      "guide": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded#system-requirements",
+      "downloadsPage": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases",
+      "project": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded",
+      "releaseUrl": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases",
+      "tags": [
+        "Original Xbox",
+        "Xbox",
+        "Experimental builds"
+      ]
+    },
+    {
+      "id": "retroarch",
+      "title": "RetroArch",
+      "project": "https://www.retroarch.com/",
+      "family": "Multi-system",
+      "systems": [
+        "Multi-system"
+      ],
+      "group": "frontend",
+      "version": "1.22.2",
+      "image": "/assets/images/emulators/retroarch.png",
+      "description": "A desktop frontend that runs separately installed libretro cores, with per-core content and BIOS requirements.",
+      "requirements": "Install a desktop package for your OS, then obtain the intended core. A RetroArch source-only archive is not an installed frontend, and an emulator core is not the whole application.",
+      "setup": "Install or extract the complete desktop package. Set the System/BIOS, savefile and save-state directories under Settings > Directory, install the chosen core, then use Load Content with your own files.",
+      "compatibility": "Core support, required firmware and save-state behaviour vary by emulated system. Check the selected core’s documentation.",
+      "guide": "https://docs.libretro.com/guides/install-windows/",
+      "downloadsPage": "https://www.retroarch.com/?page=platforms",
+      "status": "Released builds",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "native",
+          "note": "64-bit desktop build"
+        },
+        {
+          "id": "macos",
+          "mode": "native",
+          "note": "Published desktop build"
+        },
+        {
+          "id": "linux",
+          "mode": "native",
+          "note": "Published desktop build"
+        }
+      ],
+      "tags": [
+        "Multi-system",
+        "Released builds"
+      ]
+    },
+    {
+      "id": "genesis-plus-gx",
+      "title": "Genesis Plus GX · RetroArch core",
+      "project": "https://github.com/ekeeke/Genesis-Plus-GX",
+      "family": "Multi-system",
+      "systems": [
+        "Mega Drive",
+        "Genesis",
+        "Master System",
+        "Game Gear",
+        "Sega CD"
+      ],
+      "group": "retro",
+      "status": "Libretro core",
+      "version": "Core version from the selected frontend",
+      "platforms": [
+        {
+          "id": "windows",
+          "mode": "core",
+          "note": "Through RetroArch"
+        },
+        {
+          "id": "macos",
+          "mode": "core",
+          "note": "Through RetroArch"
+        },
+        {
+          "id": "linux",
+          "mode": "core",
+          "note": "Through RetroArch"
+        }
+      ],
+      "image": "/assets/images/emulators/GensGenesisPlusGX.jpg",
+      "description": "A Sega 8/16-bit emulation core used inside a compatible libretro frontend, rather than a standalone Gens desktop download.",
+      "requirements": "A compatible RetroArch installation and this core. Sega CD support requires a matching region BIOS in the frontend’s System directory; 32X is not supported by this core.",
+      "setup": "Install the Genesis Plus GX core through your frontend. Put required region-specific Sega CD BIOS files in its System directory and load your own supported cartridge or cue-sheet/disc content.",
+      "compatibility": "The previous catalogue grouped Gens and Genesis Plus GX together. This entry now identifies the actual core, its frontend requirement and its supported Sega systems.",
+      "guide": "https://docs.libretro.com/library/genesis_plus_gx/",
+      "downloadsPage": "https://docs.libretro.com/library/genesis_plus_gx/",
+      "tags": [
+        "Mega Drive",
+        "Genesis",
+        "Master System",
+        "Game Gear",
+        "Sega CD",
+        "Multi-system",
+        "Libretro core"
+      ]
+    },
+    {
+      "id": "lakka",
+      "title": "Lakka",
+      "project": "https://www.lakka.tv/",
+      "family": "Multi-system",
+      "systems": [
+        "Dedicated emulation OS"
+      ],
+      "group": "distribution",
+      "status": "Standalone operating system",
+      "version": "Official hardware-image selector",
+      "platforms": [],
+      "image": "/assets/images/emulators/retroarch.png",
+      "description": "A dedicated Linux-based RetroArch distribution installed on supported PC or single-board hardware.",
+      "requirements": "A hardware-matched image and the separate storage/install procedure. The Windows/macOS/Linux choices on its website refer to the computer used to prepare media, not three desktop application builds.",
+      "setup": "Use the official hardware selector and installation tutorial. Keep existing data backed up and choose the intended boot/storage device. This catalogue links the publisher’s images without downloading every hardware variant.",
+      "compatibility": "Listed separately from desktop apps because it supplies an operating-system image.",
+      "guide": "https://www.lakka.tv/get/",
+      "downloadsPage": "https://www.lakka.tv/get/",
+      "tags": [
+        "Dedicated emulation OS",
+        "Multi-system",
+        "Standalone operating system"
+      ]
+    },
+    {
+      "id": "recalbox",
+      "title": "Recalbox",
+      "project": "https://www.recalbox.com/",
+      "family": "Multi-system",
+      "systems": [
+        "Dedicated emulation OS"
+      ],
+      "group": "distribution",
+      "status": "Standalone operating system",
+      "version": "Official hardware-image selector",
+      "platforms": [],
+      "image": "/assets/images/emulators/retroarch.png",
+      "description": "A dedicated emulation system with hardware-specific PC and single-board-computer images.",
+      "requirements": "Choose the exact target hardware from the publisher’s download page. This is not a Windows or macOS desktop app, even when those systems prepare the install media.",
+      "setup": "Follow the official target-hardware installation route and preserve existing storage data before preparing boot media. Add your own supported content after setup.",
+      "compatibility": "Image support and available systems vary with the selected hardware.",
+      "guide": "https://wiki.recalbox.com/",
+      "downloadsPage": "https://www.recalbox.com/download/",
+      "tags": [
+        "Dedicated emulation OS",
+        "Multi-system",
+        "Standalone operating system"
+      ]
+    },
+    {
+      "id": "legacy-yuzu",
+      "title": "yuzu · historical reference",
+      "systems": [
+        "Nintendo Switch"
+      ],
+      "reference": "https://yuzu-emu.org/",
+      "family": "Nintendo",
+      "group": "historical",
+      "status": "Historical reference",
+      "version": "No current official package verified",
+      "platforms": [],
+      "project": "https://yuzu-emu.org/",
+      "downloadsPage": null,
+      "description": "A legacy name retained from the previous catalogue. No current official package is presented here.",
+      "requirements": "No Windows, macOS or Linux support badge is inferred from a former project’s name. This entry is not a new download source.",
+      "setup": "Use a maintained project above with a documented release and the correct system requirements. Azahar is listed separately for 3DS; the requested Eden NS2 fork has its own Switch 2 source-build section.",
+      "compatibility": "Previous compatibility claims, generic 4K claims and game-count statistics have been removed rather than presented as current verified support.",
+      "guide": null,
+      "tags": [
+        "historical",
+        "legacy reference",
+        "Nintendo Switch",
+        "Nintendo",
+        "Historical reference"
+      ]
+    },
+    {
+      "id": "legacy-ryujinx",
+      "title": "Ryujinx · historical reference",
+      "systems": [
+        "Nintendo Switch"
+      ],
+      "reference": "https://ryujinx.org/",
+      "family": "Nintendo",
+      "group": "historical",
+      "status": "Historical reference",
+      "version": "No current official package verified",
+      "platforms": [],
+      "project": "https://ryujinx.org/",
+      "downloadsPage": null,
+      "description": "A legacy name retained from the previous catalogue. No current official package is presented here.",
+      "requirements": "No Windows, macOS or Linux support badge is inferred from a former project’s name. This entry is not a new download source.",
+      "setup": "Use a maintained project above with a documented release and the correct system requirements. Azahar is listed separately for 3DS; the requested Eden NS2 fork has its own Switch 2 source-build section.",
+      "compatibility": "Previous compatibility claims, generic 4K claims and game-count statistics have been removed rather than presented as current verified support.",
+      "guide": null,
+      "tags": [
+        "historical",
+        "legacy reference",
+        "Nintendo Switch",
+        "Nintendo",
+        "Historical reference"
+      ]
+    },
+    {
+      "id": "legacy-citra",
+      "title": "Citra · historical reference",
+      "systems": [
+        "Nintendo 3DS"
+      ],
+      "reference": "https://citra-emu.org/",
+      "family": "Nintendo",
+      "group": "historical",
+      "status": "Historical reference",
+      "version": "No current official package verified",
+      "platforms": [],
+      "project": "https://citra-emu.org/",
+      "downloadsPage": null,
+      "description": "A legacy name retained from the previous catalogue. No current official package is presented here.",
+      "requirements": "No Windows, macOS or Linux support badge is inferred from a former project’s name. This entry is not a new download source.",
+      "setup": "Use a maintained project above with a documented release and the correct system requirements. Azahar is listed separately for 3DS; the requested Eden NS2 fork has its own Switch 2 source-build section.",
+      "compatibility": "Previous compatibility claims, generic 4K claims and game-count statistics have been removed rather than presented as current verified support.",
+      "guide": null,
+      "tags": [
+        "historical",
+        "legacy reference",
+        "Nintendo 3DS",
+        "Nintendo",
+        "Historical reference"
+      ]
+    }
+  ]
+}

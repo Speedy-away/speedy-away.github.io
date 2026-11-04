@@ -1,0 +1,95 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "Additive console games and apps: original pinned GoldHEN JSONs, unchanged title-specific PS Game Patch XMLs, and selected official PS4 release builds. Existing versions and compatibility remain pinned.",
+  "patchFiles": [
+    "StreetFighter6-Orbis.xml",
+    "Persona3Reload.xml",
+    "SoulHacker2-Orbis.xml",
+    "LifeIsStrange-BeforeTheStorm-Orbis.xml",
+    "AssassinsCreedIII-LiberationRemastered-Orbis.xml",
+    "MirrorsEdgeCatalyst-Orbis.xml",
+    "GrandTheftAutoViceCityDefinitive-Orbis.xml",
+    "JudgmentEU-orbis.xml",
+    "Deadpool-Orbis.xml",
+    "ResidentEvilOrigins-Orbis.xml",
+    "Vampyr-Orbis.xml",
+    "MediEvil-Orbis.xml",
+    "AtomicHeart-Orbis.xml",
+    "NeedforSpeedPayback-Orbis.xml",
+    "SpyroReignitedTrilogyEU-Orbis.xml",
+    "FatalFrame_MaidenofBlackWater-Orbis.xml"
+  ],
+  "cheats": [
+    {
+      "game": "assassins-creed-iii-remastered",
+      "title": "Assassin’s Creed III Remastered",
+      "filename": "CUSA11560_01.03.json",
+      "steamApp": 911400,
+      "expectedName": "assassin",
+      "artworkName": "assassin"
+    },
+    {
+      "game": "mirrors-edge-catalyst",
+      "title": "Mirror’s Edge Catalyst",
+      "filename": "CUSA01499_01.00.json",
+      "steamApp": 1233570,
+      "expectedName": "mirror"
+    },
+    {
+      "game": "gta-vice-city-definitive",
+      "title": "Grand Theft Auto: Vice City – The Definitive Edition",
+      "filename": "CUSA26615_01.07.json",
+      "steamApp": 1546990,
+      "expectedName": "vice city"
+    },
+    {
+      "game": "judgment",
+      "title": "Judgment",
+      "filename": "CUSA13197_01.09.json",
+      "steamApp": 2058180,
+      "expectedName": "judgment"
+    },
+    {
+      "game": "deadpool",
+      "title": "Deadpool",
+      "filename": "CUSA03528_01.00.json",
+      "expectedName": "deadpool",
+      "image": "/assets/images/ps4-ps5/deadpool-title.png",
+      "artwork": {
+        "source": "Original site title illustration",
+        "type": "Original typeset vector illustration, not publisher artwork or a game screenshot"
+      }
+    },
+    {
+      "game": "resident-evil-zero",
+      "title": "Resident Evil 0",
+      "filename": "CUSA02882_01.00.json",
+      "steamApp": 339340,
+      "expectedName": "resident evil"
+    },
+    {
+      "game": "atomic-heart",
+      "title": "Atomic Heart",
+      "filename": "CUSA37321_01.08.json",
+      "steamApp": 668580,
+      "expectedName": "atomic heart"
+    },
+    {
+      "game": "spyro-reignited-trilogy",
+      "title": "Spyro Reignited Trilogy",
+      "filename": "CUSA12085_01.03.json",
+      "steamApp": 996580,
+      "expectedName": "spyro"
+    }
+  ],
+  "unavailable": [
+    {
+      "project": "Next-Xplore PS4",
+      "source": "https://github.com/Phoenixx1202/Next-Xplore-PS4",
+      "checkedAt": "2026-11-02",
+      "status": "No published release assets",
+      "evidence": "docs/qa/batch3-next-xplore-releases.json",
+      "note": "The official release API returned an empty array; no source archive was requested or downloaded."
+    }
+  ]
+}

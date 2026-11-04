@@ -1,0 +1,246 @@
+{
+  "checkedAt": "2026-11-03T18:05:33.944Z",
+  "status": "statically-matched-hardware-untested",
+  "source": {
+    "html": {
+      "path": "672/index.html",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/index.html",
+      "bytes": 1334148,
+      "sha256": "5a7876c7322a0bf65604dcc2143d4363fbb1f0d4a7d6a36de9a02d9b4b3abfd3"
+    },
+    "kernel": {
+      "path": "672/jb2.js",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/jb2.js",
+      "bytes": 800857,
+      "sha256": "364fbbb1091ddd5e6b68447b92e57c87a5cab26aa5a8122a018e7ae3905959eb"
+    },
+    "loader": {
+      "path": "672/pl_loader.js",
+      "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_loader.js",
+      "bytes": 501574,
+      "sha256": "d1950c98f4225abd58fa1166d2b7b3f50fae215fa0c1d50d5d7c47a39f12b13f"
+    },
+    "boot": {
+      "path": "672/index.html#inline-script-0",
+      "bytes": 1319553,
+      "sha256": "d370393716783b9a6cb764d59c3cc9a5cf264f5385684d560ff8c62f276b78fe"
+    },
+    "builds": {
+      "100": {
+        "path": "672/pl_GTA_ArabicGuy100.bin",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy100.bin",
+        "bytes": 1055064,
+        "sha256": "41a189bec891d371cb48fe5d727b986bdb0ae15a50fc6a0df4e2106caa6041d5",
+        "gameVersion": "1.00",
+        "filename": "pl_GTA_ArabicGuy100.bin"
+      },
+      "127": {
+        "path": "672/pl_GTA_ArabicGuy127.bin",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy127.bin",
+        "bytes": 1055384,
+        "sha256": "1291b7a2f14b888bea93a076beb889a8980be8d92b489f62f742e0cc2126b5ee",
+        "gameVersion": "1.27",
+        "filename": "pl_GTA_ArabicGuy127.bin"
+      },
+      "132": {
+        "path": "672/pl_GTA_ArabicGuy132.bin",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy132.bin",
+        "bytes": 1054936,
+        "sha256": "c868f5f52fa6ead0464f37066702865470f4010210b2ade595b47cf490b6e6ae",
+        "gameVersion": "1.32",
+        "filename": "pl_GTA_ArabicGuy132.bin"
+      }
+    }
+  },
+  "gitIdentities": [
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672/index.html",
+      "gitBlobSHA1": "a9fb5a8983da9bcf439211dcb0f592f170d36a5c",
+      "sha256": "5a7876c7322a0bf65604dcc2143d4363fbb1f0d4a7d6a36de9a02d9b4b3abfd3"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672/pl_loader.js",
+      "gitBlobSHA1": "35c3950ef943cff5b0048b56708fabb90b384c1b",
+      "sha256": "d1950c98f4225abd58fa1166d2b7b3f50fae215fa0c1d50d5d7c47a39f12b13f"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672/jb2.js",
+      "gitBlobSHA1": "29e68feff36d66e6578d5d7ef1fb6a1553b5d52d",
+      "sha256": "364fbbb1091ddd5e6b68447b92e57c87a5cab26aa5a8122a018e7ae3905959eb"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672/pl_GTA_ArabicGuy100.bin",
+      "gitBlobSHA1": "decebf6d379d4e283927ff51094f51ea610f5ec0",
+      "sha256": "41a189bec891d371cb48fe5d727b986bdb0ae15a50fc6a0df4e2106caa6041d5"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672/pl_GTA_ArabicGuy127.bin",
+      "gitBlobSHA1": "f37b97e4d6a65ea37e8cd6c59bea4fcda479f23d",
+      "sha256": "1291b7a2f14b888bea93a076beb889a8980be8d92b489f62f742e0cc2126b5ee"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672/pl_GTA_ArabicGuy132.bin",
+      "gitBlobSHA1": "691650d2ea8e65cdc3bd43a246fd942f0f9fb178",
+      "sha256": "c868f5f52fa6ead0464f37066702865470f4010210b2ade595b47cf490b6e6ae"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672/cache.manifest",
+      "gitBlobSHA1": "0888082cbc29338e15cb21deda73c5fc8c93c30b",
+      "sha256": "4a01a331c5de2379a458dbc03ac2be620bf571d0ff256a01606df9fce8cf886e"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "672goldhen/index.html",
+      "gitBlobSHA1": "92b67a1866a2757e0f018a35b9d3c01b0a278381",
+      "sha256": "cb7839da704885d4673bf4a8d363196c942fac63c5af48e65e3fe77c266947da"
+    },
+    {
+      "repo": "GamerHack/GamerHack.github.io",
+      "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+      "path": "README.md",
+      "gitBlobSHA1": "5c5cff5c26e2f6c64cc8d89dbfd77ff805e860bb",
+      "sha256": "0108329ad825843906ef60edd1dc28d898dbd15c129f180ff1bb661d4d7f1880"
+    },
+    {
+      "repo": "KAR0218/KAR0218.github.io",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "path": "672/index.html",
+      "gitBlobSHA1": "fa23f582e58c95d5e0d0e5254703b0f81624745a",
+      "sha256": "bb1de6749f19b1ef0ae3c3d86a13bcfd43127dd55d68dedc2cb93fc9106d06a5"
+    },
+    {
+      "repo": "KAR0218/KAR0218.github.io",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "path": "672A/index.html",
+      "gitBlobSHA1": "fa7732dd636a5f5e0f37bea54b6c4f2ea10b946e",
+      "sha256": "5beba17394b994a5b895f735214edc5ed1f02ed37b8ce1717016400a2b9a04ad"
+    },
+    {
+      "repo": "KAR0218/KAR0218.github.io",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "path": "672L/index.html",
+      "gitBlobSHA1": "582ee17424bd7ab367139311d397389996a60ef2",
+      "sha256": "281972a1af2b0cd6ef6cfc6a7607c9ba81a2ce64b57de6028b3bd7047bb68b76"
+    },
+    {
+      "repo": "KAR0218/KAR0218.github.io",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "path": "Goldhen672/index.html",
+      "gitBlobSHA1": "71f991fd46cd35379b6c6a2594eb166301f63761",
+      "sha256": "b1896fd9ed4f078964c6392483a22f0270a47278d748b79713e482ae3be3326c"
+    },
+    {
+      "repo": "KAR0218/KAR0218.github.io",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "path": "binloader/index.html",
+      "gitBlobSHA1": "4b0af29fec88da170115f73891b71d10779aad5c",
+      "sha256": "19dcd2a393743e714eff5fa44fc8b1a89521d8014d08f07490afbb10f0dd9681"
+    }
+  ],
+  "firmware": "6.72",
+  "gameUpdates": [
+    "1.00",
+    "1.27",
+    "1.32"
+  ],
+  "nativeSourcesUnmodified": true,
+  "sourceBoot": "Byte-identical first inline bootstrap from verified original HTML",
+  "kernel": "Exact jb2.js; source success branch main_ret179/0 and counters checked, not an execution acknowledgement",
+  "menu": "Exact pl_loader.js reading the already verified BIN through its original ArrayBuffer XHR, using a preflighted memory Blob URL",
+  "adaptation": "Bypass the initial script-element BIN request; do not change native ROP or payload bytes.",
+  "externalTransportVerified": false,
+  "firstPartyController": true,
+  "requiresUpstreamInternet": true,
+  "automaticRetry": false,
+  "restoredPageBlocked": true,
+  "hardwareVerified": false,
+  "nativeCodeExecutedDuringQA": false,
+  "upstreamAvailability": {
+    "checkedAt": "2026-11-03T17:24:07.194Z",
+    "method": "HEAD only, no custom Origin header, no downloaded code execution. Header checks do not establish physical PS4 browser/TLS compatibility.",
+    "files": [
+      {
+        "path": "672/index.html",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/index.html",
+        "responseURL": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/index.html",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cors": "*",
+        "nosniff": "nosniff",
+        "matchesPinnedURL": true
+      },
+      {
+        "path": "672/jb2.js",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/jb2.js",
+        "responseURL": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/jb2.js",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cors": "*",
+        "nosniff": "nosniff",
+        "matchesPinnedURL": true
+      },
+      {
+        "path": "672/pl_loader.js",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_loader.js",
+        "responseURL": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_loader.js",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "cors": "*",
+        "nosniff": "nosniff",
+        "matchesPinnedURL": true
+      },
+      {
+        "path": "672/pl_GTA_ArabicGuy100.bin",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy100.bin",
+        "responseURL": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy100.bin",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cors": "*",
+        "nosniff": "nosniff",
+        "matchesPinnedURL": true
+      },
+      {
+        "path": "672/pl_GTA_ArabicGuy127.bin",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy127.bin",
+        "responseURL": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy127.bin",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cors": "*",
+        "nosniff": "nosniff",
+        "matchesPinnedURL": true
+      },
+      {
+        "path": "672/pl_GTA_ArabicGuy132.bin",
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy132.bin",
+        "responseURL": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy132.bin",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "cors": "*",
+        "nosniff": "nosniff",
+        "matchesPinnedURL": true
+      }
+    ]
+  },
+  "licensing": "No GamerHack repository licence declared; original native runtime and menu bytes are not publicly mirrored. Original source files archived separately from ready BINs and authored helpers.",
+  "karoComparison": {
+    "repository": "KAR0218/KAR0218.github.io",
+    "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+    "arabicGuyNamedFiles": 0,
+    "substituted": false
+  }
+}

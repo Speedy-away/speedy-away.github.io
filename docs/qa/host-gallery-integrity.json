@@ -1,0 +1,44 @@
+{
+  "verifiedAt": "2026-11-03T20:16:38.851Z",
+  "sender": {
+    "id": "console-payload-sender-8d8bda70ee88",
+    "name": "console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "version": "2.1.0+8d8bda70ee88",
+    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "source": "https://speedy-away.github.io/WWB-HOST/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "bytes": 106736981,
+    "sha256": "e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
+    "snapshot": "8d8bda70ee88b7bd20738c10bb0fc22b3bdcad75a00972674dcb269eb7f3b76c",
+    "files": 1572,
+    "payloads": 125,
+    "actions": 185,
+    "file": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST\\downloads\\helpers\\console-payload-sender\\console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\Console Payload Sender\\Helpers\\2.1.0+8d8bda70ee88\\console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "zipEntries": 1572,
+    "manifestFiles": 1571,
+    "sourceSnapshotMatches": true,
+    "archiveVerified": true
+  },
+  "tools": [
+    {
+      "scope": "ps4-trainer",
+      "version": "2026.11.03.1+750a7b8fb4d7212c",
+      "local": "/downloads/helpers/host-local-tools/ps4-trainer/ps4-trainer-750a7b8fb4d7212c.zip",
+      "bytes": 7330450,
+      "sha256": "fbe209c41d6f2f87b9c5bf6c9b9647265fdd8059c918decc69a5aea89041f63a",
+      "files": 1290
+    },
+    {
+      "scope": "esp-flasher",
+      "version": "2026.11.03.1+fac1e070e9ec024f",
+      "local": "/downloads/helpers/host-local-tools/esp-flasher/esp-flasher-fac1e070e9ec024f.zip",
+      "bytes": 810271,
+      "sha256": "c2bf8921f55ec0561d4fc390acb256e5e3fa954a8c5b61a758f487b03220a3a9",
+      "files": 38
+    }
+  ],
+  "toolArchiveJobs": 16,
+  "ZIPCRCAndSHA256Verified": true,
+  "consoleExecutionTested": false,
+  "browserQA": "Unavailable: local browser use is disabled in Work settings. No alternate browser automation was used."
+}

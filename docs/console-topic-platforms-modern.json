@@ -1,0 +1,414 @@
+[
+  {
+    "id": "nintendo-switch",
+    "title": "Nintendo Switch",
+    "source": "console/nintendo-switch.html",
+    "base": "/console/nintendo-switch/",
+    "image": "/assets/images/consoles/nintendo-switch.jpg",
+    "description": "Choose your Switch setup, then browse native apps, emulators, game mods, themes and firmware resources.",
+    "groups": [
+      {
+        "slug": "setup",
+        "title": "Homebrew setup",
+        "description": "Identify your console model, prepare storage and follow its supported homebrew route.",
+        "image": "/assets/images/switch-themes/switch-setup.svg",
+        "sections": [],
+        "route": "/console/nintendo-switch/setup.html"
+      },
+      {
+        "slug": "cfw",
+        "title": "CFW & bootloader",
+        "description": "Atmosphère and Hekate resources, with model-specific setup and compatible version requirements.",
+        "image": "/assets/images/switch-core-tools/atmosphere-banner.png",
+        "sections": [
+          "cfw"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & utilities",
+        "description": "Save managers, file transfer, media players and diagnostics with ready Switch downloads.",
+        "image": "/assets/images/switch-homebrew/library.svg",
+        "sections": [],
+        "route": "/console/nintendo-switch/apps.html"
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators on Switch",
+        "description": "Browse Switch-native emulators, their supported systems, launch modes and required runtime files.",
+        "image": "/assets/images/switch-homebrew/mGBA.png",
+        "sections": [],
+        "route": "/console/nintendo-switch/apps.html?category=Emulators#apps"
+      },
+      {
+        "slug": "games",
+        "title": "Homebrew games",
+        "description": "Free homebrew games for Switch, with complete bundles and installation requirements.",
+        "image": "/assets/images/switch-homebrew/jumpnbump.png",
+        "sections": [],
+        "route": "/console/nintendo-switch/apps.html?category=Homebrew%20games#apps"
+      },
+      {
+        "slug": "mods",
+        "title": "Game mods",
+        "description": "Game-specific mods with their exact version requirements and setup instructions.",
+        "image": "/assets/images/switch-game-mods/racing.svg",
+        "sections": [],
+        "route": "/console/nintendo-switch/mods.html"
+      },
+      {
+        "slug": "themes",
+        "title": "Themes & customization",
+        "description": "Creator previews, complete theme packs and individual menu components with installation steps.",
+        "image": "/assets/images/switch-themes/theme-desk.svg",
+        "sections": [],
+        "route": "/console/nintendo-switch/themes.html"
+      },
+      {
+        "slug": "app-store",
+        "title": "Homebrew App Store",
+        "description": "Download the Switch App Store NRO or full microSD bundle and install community apps on the console.",
+        "image": "/assets/images/switch-homebrew/appstore.png",
+        "sections": [],
+        "route": "/console/nintendo-switch/app-store.html"
+      },
+      {
+        "slug": "firmware",
+        "title": "Firmware archive",
+        "description": "System-software packages and archive notes, separate from CFW and bootloader downloads.",
+        "image": "/assets/images/switch-themes/boot-recovery.svg",
+        "sections": [
+          "firmware-downloads"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nintendo-switch-2",
+    "title": "Nintendo Switch 2",
+    "source": "console/nintendo-switch-2.html",
+    "base": "/console/nintendo-switch-2/",
+    "image": "/assets/images/switch2-console/console.jpg",
+    "description": "CivSwitch, ns2jb, save tools and game-asset tools. Choose a project and check its exact firmware, game and host requirements.",
+    "groups": [
+      {
+        "slug": "civswitch",
+        "title": "CivSwitch entry point",
+        "description": "Civilization VII userland access with distinct Pico 1 and Pico 2 firmware downloads and exact setup requirements.",
+        "image": "/assets/images/switch2-console/console.jpg",
+        "sections": [
+          "civswitch"
+        ]
+      },
+      {
+        "slug": "ns2jb",
+        "title": "ns2jb research",
+        "description": "The SmileBASIC execution and filesystem demo, including its firmware, Node.js and host requirements.",
+        "image": "/assets/images/platform-logos/nintendo-switch-2.svg",
+        "sections": [
+          "ns2jb"
+        ]
+      },
+      {
+        "slug": "save-tools",
+        "title": "Save backup tools",
+        "description": "ns2-savekit backup, verification and save tools for the documented patched RPC environment.",
+        "image": "/assets/images/switch2-console/dock.jpg",
+        "sections": [
+          "ns2-savekit"
+        ]
+      },
+      {
+        "slug": "game-tools",
+        "title": "Game & asset tools",
+        "description": "OunceCake requirements and instructions for extracting files from your own games through its supported RPC fork.",
+        "image": "/assets/images/switch2-console/joy-con-2.jpg",
+        "sections": [
+          "ouncecake"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xbox-one-series",
+    "title": "Xbox One / Series X|S",
+    "source": "console/xbox-one-series.html",
+    "base": "/console/xbox-one-series/",
+    "image": "/assets/images/xbox-one-series/dev-home.png",
+    "description": "Set up Microsoft Developer Mode, connect Device Portal and choose native Xbox apps with their model-specific builds and dependencies.",
+    "groups": [
+      {
+        "slug": "dev-mode",
+        "title": "Developer Mode setup",
+        "description": "Check your console model, register your developer account and activate Microsoft’s retail Developer Mode route.",
+        "image": "/assets/images/xbox-one-series/dev-home.png",
+        "sections": [
+          "start",
+          "activate"
+        ]
+      },
+      {
+        "slug": "device-portal",
+        "title": "Device Portal",
+        "description": "Enable Remote Access and connect from a computer on the same local network.",
+        "image": "/assets/images/xbox-one-series/remote-access.png",
+        "sections": [
+          "connect"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & emulators",
+        "description": "Native Xbox UWP emulators, remote play and file-transfer apps, filtered by model and package requirements.",
+        "image": "/assets/images/xbox-one-series/xbsx2.png",
+        "sections": [
+          "apps"
+        ]
+      },
+      {
+        "slug": "install",
+        "title": "Install apps",
+        "description": "Upload the correct APPX or MSIX package through Portal and supply its required x64 dependencies.",
+        "image": "/assets/images/xbox-one-series/ppsspp.png",
+        "sections": [
+          "install"
+        ]
+      },
+      {
+        "slug": "dependencies",
+        "title": "Framework downloads",
+        "description": "The original Microsoft x64 framework packages, with exact identities, versions and checksums.",
+        "image": "/assets/images/xbox-one-series/dolphin.png",
+        "sections": [
+          "frameworks"
+        ]
+      },
+      {
+        "slug": "storage",
+        "title": "Storage & save backups",
+        "description": "App-specific folders, USB storage, permissions and save-backup requirements.",
+        "image": "/assets/images/xbox-one-series/durangoftp.png",
+        "sections": [
+          "storage"
+        ]
+      },
+      {
+        "slug": "retail-mode",
+        "title": "Retail Mode & app removal",
+        "description": "Back up app data, remove individual apps and switch between Retail and Developer Mode.",
+        "image": "/assets/images/xbox-one-series/dev-home.png",
+        "sections": [
+          "remove"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "steamdeck",
+    "title": "Steam Deck",
+    "source": "console/steamdeck.html",
+    "base": "/console/steamdeck/",
+    "image": "/assets/images/platform-logos/steamdeck.svg",
+    "description": "Choose launchers, emulation, Decky plugins, remote play or desktop tools, then follow the matching setup guide.",
+    "groups": [
+      {
+        "slug": "launchers",
+        "title": "Launchers, Proton & fixes",
+        "description": "Heroic, Lutris, Bottles and compatibility tools for Windows games, with matching setup walkthroughs.",
+        "image": "/assets/images/steamdeck/heroic.png",
+        "sections": [
+          "launchers-proton",
+          "guide-proton",
+          "guide-windows-games",
+          "guide-flatpak"
+        ]
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulation & your library",
+        "description": "Compare EmuDeck and RetroDECK, then organize game shortcuts and artwork with Steam ROM Manager.",
+        "image": "/assets/images/steamdeck/emudeck-icon.png",
+        "sections": [
+          "emulation",
+          "guide-emulation"
+        ]
+      },
+      {
+        "slug": "plugins",
+        "title": "Plugins & customization",
+        "description": "Decky plugins for artwork, library tabs, devices, game pausing, menu sounds, startup animations and Flatpak updates, with setup guides.",
+        "image": "/assets/images/steamdeck/decky-icon.png",
+        "sections": [
+          "decky-plugins",
+          "guide-decky",
+          "guide-customization",
+          "guide-library",
+          "guide-storage",
+          "guide-bluetooth",
+          "guide-pause-games",
+          "guide-audio-loader",
+          "guide-animations",
+          "guide-autoflatpaks",
+          "guide-quick-launch"
+        ]
+      },
+      {
+        "slug": "remote-play",
+        "title": "Remote play",
+        "description": "Stream from your gaming PC or PlayStation console using Moonlight and chiaki-ng.",
+        "image": "/assets/images/steamdeck/moonlight.png",
+        "sections": [
+          "remote-play",
+          "guide-moonlight",
+          "guide-chiaki"
+        ]
+      },
+      {
+        "slug": "tools",
+        "title": "Files & desktop tools",
+        "description": "Syncthing, LocalSend, PeaZip, Filelight and Flatseal for syncing, transfers, archives, disk usage and app permissions.",
+        "image": "/assets/images/steamdeck/localsend.png",
+        "sections": [
+          "desktop-utilities",
+          "guide-files",
+          "guide-flatpak",
+          "guide-sync",
+          "guide-archives",
+          "guide-storage"
+        ]
+      },
+      {
+        "slug": "setup",
+        "title": "Setup & compatibility",
+        "description": "Start here and read all 19 guides for launchers, plugins, emulation, streaming, files, storage and permissions.",
+        "image": "/assets/images/steamdeck/protonup-qt.png",
+        "sections": [
+          "start-here",
+          "guides"
+        ]
+      }
+    ],
+    "hubTitle": "Steam Deck Plugins & Tools"
+  },
+  {
+    "id": "psvita",
+    "title": "PS Vita",
+    "source": "console/psvita/library.html",
+    "base": "/console/psvita/",
+    "hubFile": "console/psvita/home.html",
+    "image": "/assets/images/custom-console-art/vita-henlo.jpg",
+    "description": "Choose your jailbreak and CFW guide, then browse Vita apps, native games, ports, emulators, plugins and themes.",
+    "groups": [
+      {
+        "slug": "jailbreak",
+        "title": "Jailbreak & homebrew setup",
+        "description": "Start with your Vita model, firmware and storage, then follow the HENlo and VitaDeploy instructions.",
+        "image": "/assets/images/custom-console-art/vita-henlo.jpg",
+        "sections": [],
+        "route": "/console/psvita/jailbreak.html"
+      },
+      {
+        "slug": "cfw",
+        "title": "CFW & Ensō",
+        "description": "Continue to the documented persistent homebrew setup and preserve its firmware-specific requirements.",
+        "image": "/assets/images/expansion-vita/vitadeploy.png",
+        "sections": [],
+        "route": "/console/psvita/cfw.html"
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & essential tools",
+        "description": "VitaShell, VitaDB, Adrenaline, storage tools and other essential apps for an already prepared Vita.",
+        "image": "/assets/images/expansion-vita/vitashell.png",
+        "sections": [],
+        "route": "/console/psvita/apps.html"
+      },
+      {
+        "slug": "games",
+        "title": "Games & source ports",
+        "description": "Free native Vita games and engine ports, with the required data files and installation paths identified.",
+        "image": "/assets/images/vita-more/supertux.png",
+        "sections": [
+          "library",
+          "install"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Games",
+            "Ports"
+          ]
+        }
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators on Vita",
+        "description": "Native emulator builds with supported systems, complete packages and author-specific requirements.",
+        "image": "/assets/images/vita-more/mgba.png",
+        "sections": [
+          "library",
+          "install"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Emulators"
+          ]
+        }
+      },
+      {
+        "slug": "plugins",
+        "title": "Plugins & controls",
+        "description": "Shell displays and controller plugins, with the exact taiHEN configuration and firmware notes retained.",
+        "image": "/assets/images/vita-more/revita-screenshot.png",
+        "sections": [
+          "library",
+          "install"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Plugins"
+          ]
+        }
+      },
+      {
+        "slug": "themes",
+        "title": "Themes & customization",
+        "description": "Custom Themes Manager and the preserved example theme, with their installation and storage details.",
+        "image": "/assets/images/vita-more/minimal-theme-preview.png",
+        "sections": [
+          "library",
+          "install"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Themes"
+          ]
+        }
+      },
+      {
+        "slug": "save-tools",
+        "title": "Save tools",
+        "description": "Apollo Save Tool for Vita, PSP and PS1 saves, with backup and installation instructions.",
+        "image": "/assets/images/consoles/apollo-save-tool.png",
+        "source": "console/psvita/index.html",
+        "sections": [
+          "save-tools",
+          "setup"
+        ]
+      },
+      {
+        "slug": "firmware",
+        "title": "Firmware archive",
+        "description": "Normal, preinstalled and systemdata firmware packages, separate from the pinned homebrew setup.",
+        "image": "/assets/images/expansion-vita/vitadeploy.png",
+        "source": "console/psvita/index.html",
+        "sections": [
+          "firmware-downloads"
+        ]
+      }
+    ]
+  }
+]

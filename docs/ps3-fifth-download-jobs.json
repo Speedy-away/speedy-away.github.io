@@ -1,0 +1,114 @@
+{
+  "jobs": [
+    {
+      "id": "waw-oldgenmodderz-v1",
+      "resourceId": "waw-oldgenmodderz-v1",
+      "title": "OldGenModderz v1.0",
+      "project": "OldGenModderz v1.0",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "World at War"
+      ],
+      "version": "v1.0",
+      "filename": "OldGenModderz V1.0.zip",
+      "url": "https://www.mediafire.com/file/wcquchi9gjc750b/OldGenModderz_V1.0.zip/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "pages": [
+        "console/ps3/mods/call-of-duty/world-at-war/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 3089141,
+      "maxBytes": 4137717,
+      "verifyArchive": true
+    },
+    {
+      "id": "waw-trickshot-menu",
+      "resourceId": "waw-trickshot-menu",
+      "title": "World at War Trickshot Menu",
+      "project": "World at War Trickshot Menu",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "World at War"
+      ],
+      "version": "Unversioned",
+      "filename": "WAW Trickshot Menu.rar",
+      "url": "https://www.mediafire.com/file/e25l38x3b8a317m/WAW_Trickshot_Menu.rar/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "pages": [
+        "console/ps3/mods/call-of-duty/world-at-war/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1075295,
+      "maxBytes": 2123871,
+      "verifyArchive": true
+    },
+    {
+      "id": "waw-ofly-nightclub",
+      "resourceId": "waw-ofly-nightclub",
+      "title": "oFly-x Night Club",
+      "project": "oFly-x Night Club",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "World at War"
+      ],
+      "version": "Unversioned",
+      "filename": "oFly-x Night Club Ps3.rar",
+      "url": "https://www.mediafire.com/file/ayxphv1136d40vy/oFly-x_Night_Club_Ps3.rar/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "pages": [
+        "console/ps3/mods/call-of-duty/world-at-war/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1104574,
+      "maxBytes": 2153150,
+      "verifyArchive": true
+    },
+    {
+      "id": "waw-forflah123-private",
+      "resourceId": "waw-forflah123-private",
+      "title": "FORFLAH123 Private Patch",
+      "project": "FORFLAH123 Private Patch",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "World at War"
+      ],
+      "version": "Unversioned",
+      "filename": "forflah123 private patch_mp.ff",
+      "url": "https://www.mediafire.com/?jxjz3c85zajp2if=",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "pages": [
+        "console/ps3/mods/call-of-duty/world-at-war/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 1086818,
+      "maxBytes": 2135394,
+      "verifyArchive": true
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Cloud Patch v7",
+      "reason": "Exact source URL already archived; existing version retained."
+    },
+    {
+      "name": "Sphinx V2",
+      "reason": "MediaFire page exposes no public attachment; not downloaded."
+    }
+  ]
+}

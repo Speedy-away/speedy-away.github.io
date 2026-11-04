@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-11-02T10:25:27.524Z",
+  "scope": "wii-games-online",
+  "status": "complete locally",
+  "packages": 16,
+  "packageBytes": 3886994265,
+  "artworkFiles": 8,
+  "privateInventoryItems": 24,
+  "verifiedArchivePackages": 16,
+  "httpMirrors": 10,
+  "localLinksChecked": 412,
+  "brokenLocalLinks": [],
+  "sourceAccessExceptions": [
+    {
+      "url": "https://wiimmfi.de/patcher/disc",
+      "status": 403,
+      "accessible": false
+    },
+    {
+      "url": "https://wiimmfi.de/stat?all=1",
+      "status": 403,
+      "accessible": false
+    },
+    {
+      "url": "https://wiimmfi.de/error",
+      "status": 403,
+      "accessible": false
+    },
+    {
+      "url": "https://wiimmfi.de/patcher/dnspatch",
+      "status": 403,
+      "accessible": false
+    }
+  ],
+  "browserChecks": 108,
+  "wiiHubBrowserChecks": 60,
+  "browserFailures": [],
+  "olderItemsPreserved": 1638,
+  "olderFilesPreserved": 2568,
+  "archiveIndex": {
+    "updated": "2026-11-02T10:25:09.184Z",
+    "mode": "metadata-only",
+    "history": "F:\\whatsite-backup-downloads-etc\\archive-history\\index-refresh-2026-11-02T10-25-09-184Z-glMr4m",
+    "items": 1715,
+    "fileRecords": 2572,
+    "presentFileRecords": 2572,
+    "missingFileRecords": 0,
+    "missingPaths": 0,
+    "otherUnavailableRecords": 0,
+    "availability": {
+      "present": 2572
+    }
+  },
+  "downloadedProgramsExecuted": false,
+  "physicalHardwareTested": false,
+  "publication": "No commit, publish or deployment"
+}

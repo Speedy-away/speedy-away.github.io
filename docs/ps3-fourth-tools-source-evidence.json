@@ -1,0 +1,174 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "Fourth PS3 pass: public console installers from the supplied site. Source compatibility remains separate from static archive checks and hardware testing.",
+  "games": [
+    {
+      "id": "dead-island",
+      "title": "Dead Island",
+      "short": "Dead Island",
+      "url": "/console/ps3/mods/dead-island/",
+      "image": "/assets/images/ps3-mods/dead-island-installer-v2-source.jpg",
+      "aliases": [
+        "Dead Island Original",
+        "Dead Island developer menu",
+        "Dead Island V2"
+      ],
+      "summary": "Source-listed PS3 developer-menu installer with its package, original archive and setup caveats."
+    },
+    {
+      "id": "dead-island-riptide",
+      "title": "Dead Island Riptide",
+      "short": "Dead Island Riptide",
+      "url": "/console/ps3/mods/dead-island-riptide/",
+      "image": "/assets/images/ps3-mods/dead-island-installer-v2-source.jpg",
+      "aliases": [
+        "Dead Island Riptide",
+        "Dead Island series",
+        "Riptide developer menu"
+      ],
+      "summary": "The source series installer includes a Riptide option; verify the exact game edition and requirements before applying changes."
+    }
+  ],
+  "resources": [
+    {
+      "id": "dead-island-dev-installer-v2",
+      "name": "Dead Island Series Developer Menu Installer V2",
+      "gameId": "dead-island",
+      "gameIds": [
+        "dead-island-riptide"
+      ],
+      "category": "developer-menu",
+      "version": "V2",
+      "gameUpdate": "Not stated by source",
+      "region": "Dead Island: source V2 screen lists BLES01681, BLUS30790, NPEB00721 and NPUB31066. Riptide title IDs are not established by the archive text.",
+      "compatibility": "Source labels HEN / CFW. The showcase footer says 4.91 CEX; 4.93 support is not established. Match the exact game edition and update. The archive requires a game-folder rename but omits the target name in text; confirm that requirement before applying it.",
+      "description": "PS3 developer-menu installer for the source-listed Dead Island series. The source tool menu names Dead Island Original and Dead Island Riptide; the preserved V2 archive contains a PS3 PKG and version notes. This is an installer utility, not a game download.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/dead-island-series-dev-menu-installer",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/ukcihgnjgnolw0v/Dead_Island_Series_Dev_Menu_Installer_V2_%255BHEN%2526CFW%255D.rar/file",
+          "label": "Original V2 RAR",
+          "filename": "Dead Island Series Dev Menu Installer V2 [HEN&CFW].rar"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/dead-island-installer-v2-source.jpg",
+      "imageAlt": "Dead Island developer-menu installer V2 with original-game region choices",
+      "imageCaption": "Static source V2 installer screen. Its 4.91 CEX footer is a showcase detail, not proof of current-firmware support.",
+      "tags": [
+        "PS3",
+        "PKG",
+        "Developer menu",
+        "HEN",
+        "CFW"
+      ],
+      "note": "The archive says a game-folder rename is required but does not supply the target name in text. Confirm that setup requirement before applying the installer. V2.txt lists NPEB00721 and NPUB31066 as additions. Riptide-specific title IDs and game updates remain unverified.",
+      "availability": "Original archive and selected console files archived; CRC passed. Static console headers checked where applicable; no hardware execution tested.",
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "dead-island-dev-installer-v2",
+        "archiveSha256": "4972dbfeedd9bbdf50e87a7ff0af111974316a0b7486f4257e4cd63dc219252c",
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "package": {
+          "name": "Dead Island Series Dev Menu Installer By VirusMike V2.pkg",
+          "bytes": 467615184,
+          "sha256": "437d8d2eea1dd69a2d9610dc7359e99c08ef4f0b87d0bf62f271a161797e910c",
+          "memberPath": "Dead Island Series Dev Menu Installer V2 [HEN&CFW]\\Dead Island Series Dev Menu Installer By VirusMike V2.pkg",
+          "header": "valid-static-PS3-header"
+        },
+        "writtenVersionNotes": "V2.txt adds NPEB00721 and NPUB31066; full Riptide region list and the required rename target are not present in the plain-text instructions.",
+        "limitation": "Source-listed game support is not a hardware test. The PKG content ID identifies the installer, not a supported game.",
+        "originalSha256": "4972dbfeedd9bbdf50e87a7ff0af111974316a0b7486f4257e4cd63dc219252c",
+        "originalBytes": 467616167,
+        "files": [
+          {
+            "name": "Dead Island Series Dev Menu Installer V2 [HEN&CFW].rar",
+            "bytes": 467616167,
+            "sha256": "4972dbfeedd9bbdf50e87a7ff0af111974316a0b7486f4257e4cd63dc219252c",
+            "archiveRole": [
+              "Builds"
+            ]
+          },
+          {
+            "name": "@_Credits_@.txt",
+            "bytes": 170,
+            "sha256": "84cebcc65e6182bc35921cd6a0244d26bfa3f7d571de63e81186adc3d3142428",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "Dead Island Series Dev Menu Installer V2 [HEN&CFW]\\@_Credits_@.txt",
+            "local": "/downloads/ps3/dead-island-dev-installer-v2/84cebcc65e61/Dead%20Island%20Series%20Dev%20Menu%20Installer%20V2%20%5BHEN%26CFW%5D/%40_Credits_%40.txt"
+          },
+          {
+            "name": "Dead Island Series Dev Menu Installer By VirusMike V2.pkg",
+            "bytes": 467615184,
+            "sha256": "437d8d2eea1dd69a2d9610dc7359e99c08ef4f0b87d0bf62f271a161797e910c",
+            "archiveRole": [
+              "Builds"
+            ],
+            "memberPath": "Dead Island Series Dev Menu Installer V2 [HEN&CFW]\\Dead Island Series Dev Menu Installer By VirusMike V2.pkg",
+            "pkgHeader": {
+              "status": "valid-static-PS3-header",
+              "magic": "7f504b47",
+              "type": 1,
+              "revision": 0,
+              "actualBytes": 467615184,
+              "declaredBytes": "467615184",
+              "dataOffset": "416",
+              "dataBytes": "467614672",
+              "metadataOffset": 192,
+              "metadataBytes": 224,
+              "contentId": "TA9000-DEADISDEV_00-0000000000000000",
+              "contentIdIsInstallerIdentity": true,
+              "reference": "https://github.com/ps3dev/ps3sdk/blob/master/tools/pkg/pkg.c",
+              "limitation": "Structural header check only; no installation, execution, signature authenticity or game compatibility test."
+            }
+          },
+          {
+            "name": "V2.txt",
+            "bytes": 39,
+            "sha256": "52958d8ea7f2adfe3bac6af307e90b714fe87d8a43e43a484aa23d65bd1da658",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "Dead Island Series Dev Menu Installer V2 [HEN&CFW]\\V2.txt",
+            "local": "/downloads/ps3/dead-island-dev-installer-v2/52958d8ea7f2/Dead%20Island%20Series%20Dev%20Menu%20Installer%20V2%20%5BHEN%26CFW%5D/V2.txt"
+          },
+          {
+            "name": "⚠️Important⚠️.txt",
+            "bytes": 90,
+            "sha256": "2af999fe1e7f91f859049a839685c04cfb6a9354d0af29870f000fa73ad825e6",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "memberPath": "Dead Island Series Dev Menu Installer V2 [HEN&CFW]\\⚠️Important⚠️.txt",
+            "local": "/downloads/ps3/dead-island-dev-installer-v2/2af999fe1e7f/Dead%20Island%20Series%20Dev%20Menu%20Installer%20V2%20%5BHEN%26CFW%5D/%E2%9A%A0%EF%B8%8FImportant%E2%9A%A0%EF%B8%8F.txt"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "readiness": "archive-inspected"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/dead-island-series-dev-menu-installer",
+      "finding": "The V2 developer-menu installer has a direct public MediaFire archive and a source HEN/CFW label. The separate V1 links include gated hosts; no V1 gate was bypassed. The static V2 source image shows a 4.91 CEX showcase footer, which does not establish 4.93 support."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/sprx-tool-installer",
+      "finding": "The listed HEN SPRX tool v5.5.6 download redirects to an unlock page. No ready build was downloaded through that gate."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/sprx-tool-installer-digital",
+      "finding": "The source lists digital SPRX tool v1.1.4 and an older beta with NPEB/NPUB and HEN/CFW labels. Downloads use unlock pages; no build or compatibility claim was inferred from those labels."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/hen-icon-changer",
+      "finding": "HEN Icon Changer v2.0.2 download buttons use unlock pages. No ready package was acquired through those gates."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/matrix-mods-xmb-tool",
+      "finding": "The fetched page only exposes a showcase embed and no direct ready console download. No video was copied, embedded or linked in the catalogue."
+    }
+  ]
+}

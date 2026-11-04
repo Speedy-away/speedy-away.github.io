@@ -1,0 +1,793 @@
+{
+  "verifiedAt": "2026-11-02T07:05:03.502Z",
+  "source": "https://hb-app.store/",
+  "catalogueSource": "https://switch.cdn.fortheusers.org/repo.json",
+  "method": "Selected store metadata, installation manifests and linked official project release and README documentation; downloads not executed.",
+  "apps": [
+    {
+      "id": "mGBA",
+      "store": {
+        "url": "https://hb-app.store/switch/mGBA",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/mGBA.zip",
+        "version": "0.10.5",
+        "updated": "23/03/2025",
+        "md5": "896c038299c8830bb6413231da2d9c2d",
+        "sha256": "20be0f72699415c2b25036833863ae1c9221be72371511bd186b28ae11214f55",
+        "binary": "/switch/mgba.nro",
+        "estimatedPackageKiB": 2920,
+        "estimatedExpandedKiB": 7831
+      },
+      "project": "https://github.com/mgba-emu/mgba",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/mgba-emu/mgba/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/mgba-emu/mgba/releases/tag/0.10.5",
+        "tag": "0.10.5",
+        "published": "2025-03-09T03:59:39Z",
+        "selectedAsset": {
+          "name": "mGBA-0.10.5-switch.7z",
+          "url": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-switch.7z",
+          "size": 2211306
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/mGBA/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/mgba.nro"
+        ]
+      },
+      "requirementsSummary": "An existing Switch homebrew setup and your own compatible ROM files. mGBA has a built-in BIOS implementation; an external BIOS is optional for supported features. No ROMs or BIOS dumps are supplied.",
+      "installationSummary": "Place mgba.nro in /switch/. Open it from hbmenu, browse to your own GB, GBC or GBA files and choose a game. Keep save files backed up before moving between emulator versions."
+    },
+    {
+      "id": "melonDS",
+      "store": {
+        "url": "https://hb-app.store/switch/melonDS",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/melonDS.zip",
+        "version": "7.2.1",
+        "updated": "25/04/2026",
+        "md5": "e44e2d56005f4199d14693d138161bd3",
+        "sha256": "a7a30f699d6f930800c5df9be3a150e0c0eafacfece836f1444c99134850d7c2",
+        "binary": "/switch/melonds/melonDS.nro",
+        "estimatedPackageKiB": 1356,
+        "estimatedExpandedKiB": 3176
+      },
+      "project": "https://github.com/ArcDelta/melonDS",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/ArcDelta/melonDS/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/ArcDelta/melonDS/releases/tag/7.2.1",
+        "tag": "7.2.1",
+        "published": "2025-11-19T01:59:30Z",
+        "selectedAsset": {
+          "name": "melonDS.nro",
+          "url": "https://github.com/ArcDelta/melonDS/releases/download/7.2.1/melonDS.nro",
+          "size": 3252598
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/melonDS/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/melonds/melonDS.nro"
+        ]
+      },
+      "requirementsSummary": "Needs your own DS game dumps plus bios7.bin (16 KiB), bios9.bin (4 KiB) and firmware.bin (128, 256 or 512 KiB). This fork is a recompilation of 7.2 for newer HOS/Atmosphère changes; it does not claim universal game compatibility. Use application mode for memory-intensive emulation.",
+      "installationSummary": "Place melonDS.nro at /switch/melonds/melonDS.nro. Supply the required DS BIOS and firmware files at the paths configured by the emulator, then select your own DS game dump. A firmware boot needs an original DS/DS Lite firmware dump; reduced DSi/3DS DS-mode firmware is for direct game boot."
+    },
+    {
+      "id": "pNES",
+      "store": {
+        "url": "https://hb-app.store/switch/pNES",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/pNES.zip",
+        "version": "7.2",
+        "updated": "19/08/2026",
+        "md5": "98881e32e0966bd7ce09922406ff02db",
+        "sha256": "610c2941b64c231959dc0ad968bbba029b0fc3e3664c06f06c2821c4e4f7cd81",
+        "binary": "/switch/pnes/pnes.nro",
+        "estimatedPackageKiB": 14637,
+        "estimatedExpandedKiB": 31928
+      },
+      "project": "https://github.com/Cpasjuste/pemu",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/Cpasjuste/pemu/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/Cpasjuste/pemu/releases/tag/v7.2",
+        "tag": "v7.2",
+        "published": "2026-08-18T20:06:55Z",
+        "selectedAsset": {
+          "name": "pnes.nro",
+          "url": "https://github.com/Cpasjuste/pemu/releases/download/v7.2/pnes.nro",
+          "size": 32694687
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/pNES/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/pnes/pnes.nro"
+        ]
+      },
+      "requirementsSummary": "An existing Switch homebrew setup and your own supported NES/Famicom ROM files. This is the Switch NRO from pEMU, separate from its PC, Vita and PlayStation builds.",
+      "installationSummary": "Place pnes.nro in /switch/pnes/. Put your own ROMs in /switch/pnes/roms/, or configure another ROM path in config.cfg. Version 7.x can use gamelist.xml inside ROM folders for library media; the emulator supplies its default skin inside the NRO."
+    },
+    {
+      "id": "psnes",
+      "store": {
+        "url": "https://hb-app.store/switch/psnes",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/psnes.zip",
+        "version": "7.2",
+        "updated": "19/08/2026",
+        "md5": "41abf92e5926b2c3b32dc9fb81a696ba",
+        "sha256": "2986e7ed26c8adaa729e9341fe22469fe8e8496b7c8407c40b3e4833d6011391",
+        "binary": "/switch/psnes/psnes.nro",
+        "estimatedPackageKiB": 14510,
+        "estimatedExpandedKiB": 31301
+      },
+      "project": "https://github.com/Cpasjuste/pemu",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/Cpasjuste/pemu/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/Cpasjuste/pemu/releases/tag/v7.2",
+        "tag": "v7.2",
+        "published": "2026-08-18T20:06:55Z",
+        "selectedAsset": {
+          "name": "psnes.nro",
+          "url": "https://github.com/Cpasjuste/pemu/releases/download/v7.2/psnes.nro",
+          "size": 32052730
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/psnes/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/psnes/psnes.nro"
+        ]
+      },
+      "requirementsSummary": "An existing Switch homebrew setup and your own supported SNES ROM files. Performance and enhancement-chip support vary by game. Use the Switch build rather than pEMU assets for other platforms.",
+      "installationSummary": "Place psnes.nro in /switch/psnes/ and your own ROMs in /switch/psnes/roms/, or configure ROM directories in config.cfg. The current pEMU 7.x interface uses optional gamelist.xml files inside ROM folders; old db.xml instructions in historic store text are not the current 7.x library format."
+    },
+    {
+      "id": "ppsspp",
+      "store": {
+        "url": "https://hb-app.store/switch/ppsspp",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/ppsspp.zip",
+        "version": "1.17.x (Sept 9, 2024)",
+        "updated": "29/04/2025",
+        "md5": "7d1aa226c86ff924f9211c82ff645793",
+        "sha256": "9296552c26d96c61f04d2aaf12f06f867cf59172b3748c1a4a97367c6361903f",
+        "binary": "/switch/ppsspp/PPSSPP_GL.nro",
+        "estimatedPackageKiB": 19752,
+        "estimatedExpandedKiB": 41830
+      },
+      "project": "https://www.ppsspp.org/legacybuilds/",
+      "otherSources": [
+        {
+          "url": "https://www.ppsspp.org/legacybuilds/",
+          "note": "Official page links the 11 September 2024 Switch build and explicitly warns it currently does not work on the latest Switch OS."
+        },
+        {
+          "url": "https://www.ppsspp.org/files/Switch/Release_PPSSPP_Standalone_11.09.2024.7z",
+          "note": "Publisher-linked ready Switch container; store ZIP retained for the selected catalogue download."
+        }
+      ],
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/ppsspp/manifest.install",
+        "status": 200,
+        "files": [
+          "LICENSE.txt",
+          "README.txt",
+          "switch/ppsspp/PPSSPP_GL.nro",
+          "switch/ppsspp/assets/sfx_toggle_off.wav",
+          "switch/ppsspp/assets/logo.png",
+          "switch/ppsspp/assets/zip.png",
+          "switch/ppsspp/assets/sfx_leaderbord_submitted.wav",
+          "switch/ppsspp/assets/icon_regular_72.png",
+          "switch/ppsspp/assets/unknown.png",
+          "switch/ppsspp/assets/rargray.png",
+          "switch/ppsspp/assets/sfx_achievement_unlocked.wav",
+          "switch/ppsspp/assets/ppge_atlas.meta",
+          "switch/ppsspp/assets/font_atlas.meta",
+          "switch/ppsspp/assets/asciifont_atlas.meta",
+          "switch/ppsspp/assets/gamecontrollerdb.txt",
+          "switch/ppsspp/assets/sfx_confirm.wav",
+          "switch/ppsspp/assets/sfx_back.wav",
+          "switch/ppsspp/assets/sfx_toggle_on.wav",
+          "switch/ppsspp/assets/7z.png",
+          "switch/ppsspp/assets/ui_atlas.meta",
+          "switch/ppsspp/assets/ppge_atlas.zim",
+          "switch/ppsspp/assets/ui_atlas.zim",
+          "switch/ppsspp/assets/asciifont_atlas.zim",
+          "switch/ppsspp/assets/Roboto-Condensed.ttf",
+          "switch/ppsspp/assets/langregion.ini",
+          "switch/ppsspp/assets/compat.ini",
+          "switch/ppsspp/assets/sfx_select.wav",
+          "switch/ppsspp/assets/font_atlas.zim",
+          "switch/ppsspp/config/ppsspp/PSP/SYSTEM/controls.ini",
+          "switch/ppsspp/assets/lang/dr_ID.ini",
+          "switch/ppsspp/assets/lang/bg_BG.ini",
+          "switch/ppsspp/assets/lang/tg_PH.ini",
+          "switch/ppsspp/assets/lang/tr_TR.ini",
+          "switch/ppsspp/assets/lang/pt_PT.ini",
+          "switch/ppsspp/assets/lang/pl_PL.ini",
+          "switch/ppsspp/assets/lang/hu_HU.ini",
+          "switch/ppsspp/assets/lang/ko_KR.ini",
+          "switch/ppsspp/assets/lang/zh_CN.ini",
+          "switch/ppsspp/assets/lang/lo_LA.ini",
+          "switch/ppsspp/assets/lang/sv_SE.ini",
+          "switch/ppsspp/assets/lang/da_DK.ini",
+          "switch/ppsspp/assets/lang/gr_EL.ini",
+          "switch/ppsspp/assets/lang/zh_TW.ini",
+          "switch/ppsspp/assets/lang/uk_UA.ini",
+          "switch/ppsspp/assets/lang/hr_HR.ini",
+          "switch/ppsspp/assets/lang/es_ES.ini",
+          "switch/ppsspp/assets/lang/th_TH.ini",
+          "switch/ppsspp/assets/lang/ja_JP.ini",
+          "switch/ppsspp/assets/lang/cz_CZ.ini",
+          "switch/ppsspp/assets/lang/nl_NL.ini",
+          "switch/ppsspp/assets/lang/de_DE.ini",
+          "switch/ppsspp/assets/lang/vi_VN.ini",
+          "switch/ppsspp/assets/lang/es_LA.ini",
+          "switch/ppsspp/assets/lang/he_IL_invert.ini",
+          "switch/ppsspp/assets/lang/lt-LT.ini",
+          "switch/ppsspp/assets/lang/fa_IR.ini",
+          "switch/ppsspp/assets/lang/ru_RU.ini",
+          "switch/ppsspp/assets/lang/it_IT.ini",
+          "switch/ppsspp/assets/lang/he_IL.ini",
+          "switch/ppsspp/assets/lang/gl_ES.ini",
+          "switch/ppsspp/assets/lang/jv_ID.ini",
+          "switch/ppsspp/assets/lang/id_ID.ini",
+          "switch/ppsspp/assets/lang/pt_BR.ini",
+          "switch/ppsspp/assets/lang/en_US.ini",
+          "switch/ppsspp/assets/lang/az_AZ.ini",
+          "switch/ppsspp/assets/lang/ca_ES.ini",
+          "switch/ppsspp/assets/lang/no_NO.ini",
+          "switch/ppsspp/assets/lang/ar_AE.ini",
+          "switch/ppsspp/assets/lang/ro_RO.ini",
+          "switch/ppsspp/assets/lang/fi_FI.ini",
+          "switch/ppsspp/assets/lang/ms_MY.ini",
+          "switch/ppsspp/assets/lang/ku_SO.ini",
+          "switch/ppsspp/assets/lang/fr_FR.ini",
+          "switch/ppsspp/assets/lang/README.md",
+          "switch/ppsspp/assets/vfpu/vfpu_asin_lut65536.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_sin_lut_exceptions.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_sqrt_lut.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_rsqrt_lut.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_log2_lut.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_exp2_lut.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_sin_lut8192.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_sin_lut_delta.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_log2_lut65536_quadratic.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_exp2_lut65536.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_rcp_lut.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_asin_lut_indices.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_asin_lut_deltas.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_log2_lut65536.dat",
+          "switch/ppsspp/assets/vfpu/vfpu_sin_lut_interval_delta.dat",
+          "switch/ppsspp/assets/shaders/4xhqglsl.fsh",
+          "switch/ppsspp/assets/shaders/natural.vsh",
+          "switch/ppsspp/assets/shaders/cartoon.fsh",
+          "switch/ppsspp/assets/shaders/persistence.fsh",
+          "switch/ppsspp/assets/shaders/aacolor.vsh",
+          "switch/ppsspp/assets/shaders/upscale_bicubic.vsh",
+          "switch/ppsspp/assets/shaders/5xBR.vsh",
+          "switch/ppsspp/assets/shaders/4xhqglsl.vsh",
+          "switch/ppsspp/assets/shaders/bloom.fsh",
+          "switch/ppsspp/assets/shaders/videoAA.fsh",
+          "switch/ppsspp/assets/shaders/scanlines.fsh",
+          "switch/ppsspp/assets/shaders/checkers.fsh",
+          "switch/ppsspp/assets/shaders/naturalA.vsh",
+          "switch/ppsspp/assets/shaders/upscale_spline36.fsh",
+          "switch/ppsspp/assets/shaders/upscale_bicubic.fsh",
+          "switch/ppsspp/assets/shaders/stereo_sbs.fsh",
+          "switch/ppsspp/assets/shaders/cartoon.vsh",
+          "switch/ppsspp/assets/shaders/upscale_spline36.vsh",
+          "switch/ppsspp/assets/shaders/GaussianDownscale.fsh",
+          "switch/ppsspp/assets/shaders/fakereflections.fsh",
+          "switch/ppsspp/assets/shaders/natural.fsh",
+          "switch/ppsspp/assets/shaders/psp_color.fsh",
+          "switch/ppsspp/assets/shaders/aacolor.fsh",
+          "switch/ppsspp/assets/shaders/defaultshaders.ini",
+          "switch/ppsspp/assets/shaders/crt.fsh",
+          "switch/ppsspp/assets/shaders/fxaa.vsh",
+          "switch/ppsspp/assets/shaders/bloomnoblur.fsh",
+          "switch/ppsspp/assets/shaders/tex_2xbrz.csh",
+          "switch/ppsspp/assets/shaders/tex_4xbrz.csh",
+          "switch/ppsspp/assets/shaders/stereo_red_blue.fsh",
+          "switch/ppsspp/assets/shaders/5xBR.fsh",
+          "switch/ppsspp/assets/shaders/fxaa.fsh",
+          "switch/ppsspp/assets/shaders/vignette.fsh",
+          "switch/ppsspp/assets/shaders/colorcorrection.fsh",
+          "switch/ppsspp/assets/shaders/naturalA.fsh",
+          "switch/ppsspp/assets/shaders/5xBR-lv2.fsh",
+          "switch/ppsspp/assets/shaders/tex_mmpx.csh",
+          "switch/ppsspp/assets/shaders/sharpen.fsh",
+          "switch/ppsspp/assets/themes/defaultthemes.ini",
+          "switch/ppsspp/assets/debugger/favicon.ico",
+          "switch/ppsspp/assets/debugger/.git",
+          "switch/ppsspp/assets/debugger/manifest.json",
+          "switch/ppsspp/assets/debugger/asset-manifest.json",
+          "switch/ppsspp/assets/debugger/index.html",
+          "switch/ppsspp/assets/debugger/.nojekyll",
+          "switch/ppsspp/assets/flash0/font/ltn7.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn12.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn1.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn15.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn0.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn11.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn4.pgf",
+          "switch/ppsspp/assets/flash0/font/kr0.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn14.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn3.pgf",
+          "switch/ppsspp/assets/flash0/font/jpn0.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn10.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn2.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn13.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn5.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn8.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn6.pgf",
+          "switch/ppsspp/assets/flash0/font/ltn9.pgf",
+          "switch/ppsspp/assets/debugger/static/media/logo.94f885ce93dfb6d29a122402a15cccca.svg",
+          "switch/ppsspp/assets/debugger/static/css/main.3eab8a01.css",
+          "switch/ppsspp/assets/debugger/static/css/main.3eab8a01.css.map",
+          "switch/ppsspp/assets/debugger/static/js/main.fe87e942.js",
+          "switch/ppsspp/assets/debugger/static/js/main.fe87e942.js.LICENSE.txt",
+          "switch/ppsspp/assets/debugger/static/js/main.fe87e942.js.map"
+        ]
+      },
+      "requirementsSummary": "Legacy compatibility: PPSSPP’s official page currently says this Switch port does not work on the latest Switch OS. Use only an already compatible setup; no numeric firmware range is guessed. Atmosphère title redirection is required by the port documentation. Supply your own PSP game dumps.",
+      "installationSummary": "Extract the entire store ZIP to the SD root, preserving /switch/ppsspp/ and its assets and configuration. Launch PPSSPP_GL.nro through Atmosphère title redirection. Do not use an NSP forwarder. Consult the official current-OS warning before trying this preserved build."
+    },
+    {
+      "id": "BrogueCE",
+      "store": {
+        "url": "https://hb-app.store/switch/BrogueCE",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/BrogueCE.zip",
+        "version": "1.9.2-r2",
+        "updated": "26/11/2020",
+        "md5": "a71b86e3745dac4b89d483be5d7b0c71",
+        "binary": "/switch/brogue/brogue.nro",
+        "estimatedPackageKiB": 4324,
+        "estimatedExpandedKiB": 10535
+      },
+      "project": "https://github.com/capsterx-switch/BrogueCE",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/capsterx-switch/BrogueCE/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/capsterx-switch/BrogueCE/releases/tag/v1.9.2-r2",
+        "tag": "v1.9.2-r2",
+        "published": "2020-11-23T18:12:59Z",
+        "selectedAsset": {
+          "name": "BrogueCE-1.9.2-r2.zip",
+          "url": "https://github.com/capsterx-switch/BrogueCE/releases/download/v1.9.2-r2/BrogueCE-1.9.2-r2.zip",
+          "size": 4425335
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/BrogueCE/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/brogue/brogue.nro"
+        ]
+      },
+      "requirementsSummary": "A homebrew-capable Switch. This preserved 2020 Switch port has no documented current firmware range. It is a complete homebrew game and does not require a commercial ROM.",
+      "installationSummary": "Place brogue.nro in /switch/brogue/. Launch it through hbmenu. The release maps A to Enter and B to Escape; directional controls navigate, and optional custom key mappings use /switch/brogue/switch_keys."
+    },
+    {
+      "id": "Minesweeper",
+      "store": {
+        "url": "https://hb-app.store/switch/Minesweeper",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/Minesweeper.zip",
+        "version": "2.0",
+        "updated": "23/07/2018",
+        "md5": "3dd062b4b08fe33f8f232a06567b5fb7",
+        "binary": "/switch/Minesweeper/Minesweeper-Switch.nro",
+        "estimatedPackageKiB": 785,
+        "estimatedExpandedKiB": 1695
+      },
+      "project": "https://github.com/rincew1nd/Minesweeper-Switch",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/rincew1nd/Minesweeper-Switch/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/rincew1nd/Minesweeper-Switch/releases/tag/v2.0",
+        "tag": "v2.0",
+        "published": "2018-07-23T22:38:45Z",
+        "selectedAsset": {
+          "name": "Minesweeper-Switch.nro",
+          "url": "https://github.com/rincew1nd/Minesweeper-Switch/releases/download/v2.0/Minesweeper-Switch.nro",
+          "size": 1669972
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/Minesweeper/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/Minesweeper/Minesweeper-Switch.nro"
+        ]
+      },
+      "requirementsSummary": "A homebrew-capable Switch in handheld mode for touch input. The project documents touchscreen controls and Plus to exit. This older port has no documented current firmware range.",
+      "installationSummary": "Place Minesweeper-Switch.nro in /switch/Minesweeper/. Open it from hbmenu. Use touch input to reveal or flag cells, pinch to resize the board and drag to move it."
+    },
+    {
+      "id": "spacenx",
+      "store": {
+        "url": "https://hb-app.store/switch/spacenx",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/spacenx.zip",
+        "version": "1.1",
+        "updated": "04/02/2020",
+        "md5": "f3a419dc378c951dfbf1c951da5cd766",
+        "binary": "/switch/spacenx.nro",
+        "estimatedPackageKiB": 325,
+        "estimatedExpandedKiB": 766
+      },
+      "project": "https://github.com/vgmoose/space-nx",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/vgmoose/spacenx/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/vgmoose/space-nx/releases/tag/1.1",
+        "tag": "1.1",
+        "published": "2018-07-22T04:25:15Z",
+        "selectedAsset": {
+          "name": "spacenx.nro",
+          "url": "https://github.com/vgmoose/space-nx/releases/download/1.1/spacenx.nro",
+          "size": 759712
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/spacenx/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/spacenx.nro"
+        ]
+      },
+      "requirementsSummary": "A homebrew-capable Switch. This preserved 1.1 build is an older port; its release notes describe historical 5.x support, not a current firmware range. No commercial game files are required.",
+      "installationSummary": "Place spacenx.nro in /switch/ and launch it with hbmenu. Use the gamepad or the build’s optional touch controls. This Switch version has no music and differs from the Wii U game."
+    },
+    {
+      "id": "pinballnx",
+      "store": {
+        "url": "https://hb-app.store/switch/pinballnx",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/pinballnx.zip",
+        "version": "1.0",
+        "updated": "19/06/2025",
+        "md5": "b7633c5eb5db163eb4685cd33a61f4b2",
+        "binary": "/switch/pinballnx/pinball.nro",
+        "estimatedPackageKiB": 4401,
+        "estimatedExpandedKiB": 10056
+      },
+      "project": "https://github.com/minkcv/pinballnx",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/minkcv/pinballnx/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/minkcv/pinballnx/releases/tag/1.0",
+        "tag": "1.0",
+        "published": "2021-04-23T18:37:44Z",
+        "selectedAsset": {
+          "name": "pinballnx.zip",
+          "url": "https://github.com/minkcv/pinballnx/releases/download/1.0/pinballnx.zip",
+          "size": 4513773
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/pinballnx/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/pinballnx/pinball.nro",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget4-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger2disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape2off.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget0-1enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget0-2enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget3-1enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget3-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget0-1enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget0-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget0-2disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall4disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape1on.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall7disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget0-1disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall7enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall8disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/controls.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-1.png",
+          "switch/pinballnx/data_romfs/pinballnx/advanced_dot_digital-7.ttf",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-2.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-1disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape4on.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall1disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-1enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumper2.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-1enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger3disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape3off.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape5on.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-3.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-7.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger3enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/wheel0.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall5disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/flipper.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape6on.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape5off.png",
+          "switch/pinballnx/data_romfs/pinballnx/layer2.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall1enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall3disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger1disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger1enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape3on.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget3-2enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget1-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-4disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget3-2disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-2enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget1-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget2-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget0-2disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget0-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget0-2enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape1off.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape0off.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall6disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-3enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-9.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape7off.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget2-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-0.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape6off.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall8enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumper1.png",
+          "switch/pinballnx/data_romfs/pinballnx/pinball.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape2on.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall6enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-4enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget4-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/layer1.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall2disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-8.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall4enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape7on.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget0-1disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/trigger2enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-2disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-3disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape4off.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-6.png",
+          "switch/pinballnx/data_romfs/pinballnx/layer3.png",
+          "switch/pinballnx/data_romfs/pinballnx/bumpershape0on.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget3-1disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-3disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-2enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/layer0.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-4.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget5-1disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall3enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/gtarget3-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/spinner0-5.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall2enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget0-0enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-3enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/optwall5enabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget0-0disabled.png",
+          "switch/pinballnx/data_romfs/pinballnx/plunger.png",
+          "switch/pinballnx/data_romfs/pinballnx/ptarget1-2disabled.png"
+        ]
+      },
+      "requirementsSummary": "A homebrew-capable Switch and the complete runtime data folder. The 1.0 release is an older port with no documented current firmware range. Keep the table textures and other data files alongside the executable.",
+      "installationSummary": "Extract the complete store ZIP to the SD root so /switch/pinballnx/ contains pinball.nro and data_romfs/. Detach the Joy-Cons and rotate the display to portrait. L/R control the flippers, either stick down pulls the plunger, and Plus exits."
+    },
+    {
+      "id": "Cpp-Snake-NX",
+      "store": {
+        "url": "https://hb-app.store/switch/Cpp-Snake-NX",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/Cpp-Snake-NX.zip",
+        "version": "1.1.0",
+        "updated": "18/09/2019",
+        "md5": "6ee60b3e2b3d883854f3c174fa0f0163",
+        "binary": "/switch/Cpp-Snake-NX/Cpp-Snake-NX.nro",
+        "estimatedPackageKiB": 290,
+        "estimatedExpandedKiB": 734
+      },
+      "project": "https://github.com/CompSciOrBust/Cpp-Snake-NX",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/CompSciOrBust/Cpp-Snake-NX/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/CompSciOrBust/Cpp-Snake-NX/releases/tag/1.1.0",
+        "tag": "1.1.0",
+        "published": "2019-08-15T22:31:04Z",
+        "selectedAsset": {
+          "name": "Cpp-Snake-NX.nro",
+          "url": "https://github.com/CompSciOrBust/Cpp-Snake-NX/releases/download/1.1.0/Cpp-Snake-NX.nro",
+          "size": 751813
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/Cpp-Snake-NX/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/Cpp-Snake-NX/Cpp-Snake-NX.nro"
+        ]
+      },
+      "requirementsSummary": "A homebrew-capable Switch. This preserved 1.1.0 port has no documented current firmware range. No external commercial game data is needed.",
+      "installationSummary": "Place Cpp-Snake-NX.nro in /switch/Cpp-Snake-NX/ and launch it from hbmenu. Use the directional controls to steer the snake."
+    },
+    {
+      "id": "jumpnbump",
+      "store": {
+        "url": "https://hb-app.store/switch/jumpnbump",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/jumpnbump.zip",
+        "version": "1.02",
+        "updated": "12/06/2021",
+        "md5": "c9044286db12847a89e830837a0dcadb",
+        "binary": "/switch/jumpnbump/jumpnbump.nro",
+        "estimatedPackageKiB": 3381,
+        "estimatedExpandedKiB": 8274
+      },
+      "project": "https://github.com/rsn8887/jumpnbump",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/rsn8887/jumpnbump/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/rsn8887/jumpnbump/releases/tag/1.02",
+        "tag": "1.02",
+        "published": "2021-05-23T03:07:07Z",
+        "selectedAsset": {
+          "name": "jumpnbump_1.02_switch.zip",
+          "url": "https://github.com/rsn8887/jumpnbump/releases/download/1.02/jumpnbump_1.02_switch.zip",
+          "size": 3466848
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/jumpnbump/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/jumpnbump/jumpnbump.nro"
+        ]
+      },
+      "requirementsSummary": "A homebrew-capable Switch and additional local players/controllers. The game is multiplayer-only. This is the Switch build, separate from the project’s Vita VPK; no current firmware range is claimed.",
+      "installationSummary": "Place jumpnbump.nro in /switch/jumpnbump/ or extract the store ZIP to the SD root. Up to four controllers are supported. Move with the stick or D-pad, jump with a face button, and press L on controller 1 to toggle split Joy-Con mode."
+    },
+    {
+      "id": "SpaceVue",
+      "store": {
+        "url": "https://hb-app.store/switch/SpaceVue",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/SpaceVue.zip",
+        "version": "3.0.1",
+        "updated": "18/05/2026",
+        "md5": "ee37846f99b2c2353d4394fda4976dad",
+        "sha256": "acd0e0fb41dc635e12a34461921649861e21bc86db4802f58649a6a3a1d2cc0f",
+        "binary": "/switch/SpaceVue.nro",
+        "estimatedPackageKiB": 3509,
+        "estimatedExpandedKiB": 8224
+      },
+      "project": "https://github.com/esteban-cz/SpaceVue",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/esteban-cz/SpaceVue/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/esteban-cz/SpaceVue/releases/tag/v3.0.1",
+        "tag": "v3.0.1",
+        "published": "2026-05-11T19:07:51Z",
+        "selectedAsset": {
+          "name": "SpaceVue.nro",
+          "url": "https://github.com/esteban-cz/SpaceVue/releases/download/v3.0.1/SpaceVue.nro",
+          "size": 8421717
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/SpaceVue/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/SpaceVue.nro"
+        ]
+      },
+      "requirementsSummary": "A homebrew-capable Switch with the storage devices you want to inspect. SpaceVue reads storage information; it does not format storage or modify your files.",
+      "installationSummary": "Place SpaceVue.nro in /switch/ and launch it from hbmenu. Press A to refresh capacity figures, Minus to change the accent theme and Plus to exit."
+    },
+    {
+      "id": "NXthemes_Installer",
+      "store": {
+        "url": "https://hb-app.store/switch/NXthemes_Installer",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/NXthemes_Installer.zip",
+        "version": "nxt-3.0.2",
+        "updated": "23/09/2026",
+        "md5": "5cba25eca2b9044625d8e923b6ba1281",
+        "sha256": "d45b52de0438d3176443dde162565609a7cfaec1dfaa4ec99f43ec9f99c476c9",
+        "binary": "none",
+        "estimatedPackageKiB": 5324,
+        "estimatedExpandedKiB": 10222
+      },
+      "project": "https://github.com/exelix11/SwitchThemeInjector",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/exelix11/SwitchThemeInjector/HEAD/README.md",
+        "status": 404
+      },
+      "officialRelease": {
+        "url": "https://github.com/exelix11/SwitchThemeInjector/releases/tag/nxt-3.0.2",
+        "tag": "nxt-3.0.2",
+        "published": "2026-09-22T20:47:51Z",
+        "selectedAsset": {
+          "name": "NXThemesInstaller.nro",
+          "url": "https://github.com/exelix11/SwitchThemeInjector/releases/download/nxt-3.0.2/NXThemesInstaller.nro",
+          "size": 10467778
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/NXthemes_Installer/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/Switch_themes_Installer/NXThemesInstaller.nro"
+        ]
+      },
+      "requirementsSummary": "A compatible Atmosphère setup and a theme matching your HOME Menu version. The nxt-3.0.2 release documents firmware 23.0/23.0.1 support with Atmosphère 1.12.1 or newer. Match other firmware versions to the project notes; theme compatibility is separate from the NRO build version.",
+      "installationSummary": "Place NXThemesInstaller.nro at /switch/Switch_themes_Installer/NXThemesInstaller.nro, or extract the store ZIP to the SD root. Open it in hbmenu and follow its theme installation interface. Keep the console NRO separate from the PC-side NxThemeTool archive."
+    },
+    {
+      "id": "SimpleModManager",
+      "store": {
+        "url": "https://hb-app.store/switch/SimpleModManager",
+        "packageUrl": "https://switch.cdn.fortheusers.org/zips/SimpleModManager.zip",
+        "version": "2.1.4",
+        "updated": "24/02/2026",
+        "md5": "0fb3f07a773d86065da4d85c809f2685",
+        "sha256": "ace860afe31286b9ff8569e040bd56d6c948ea094f889b67ab05f43144a527d6",
+        "binary": "/switch/SimpleModManager/SimpleModManager.nro",
+        "estimatedPackageKiB": 4053,
+        "estimatedExpandedKiB": 8566
+      },
+      "project": "https://github.com/nadrino/SimpleModManager",
+      "officialReadme": {
+        "url": "https://raw.githubusercontent.com/nadrino/SimpleModManager/HEAD/README.md",
+        "status": 200
+      },
+      "officialRelease": {
+        "url": "https://github.com/nadrino/SimpleModManager/releases/tag/2.1.4",
+        "tag": "2.1.4",
+        "published": "2026-02-23T20:28:29Z",
+        "selectedAsset": {
+          "name": "SimpleModManager.nro",
+          "url": "https://github.com/nadrino/SimpleModManager/releases/download/2.1.4/SimpleModManager.nro",
+          "size": 8771712
+        }
+      },
+      "installationManifest": {
+        "url": "https://switch.cdn.fortheusers.org/packages/SimpleModManager/manifest.install",
+        "status": 200,
+        "files": [
+          "switch/SimpleModManager/SimpleModManager.nro"
+        ]
+      },
+      "requirementsSummary": "Atmosphère CFW and game mods matched to the exact title ID and game update. The manager does not make incompatible mods compatible. The selected store package no longer includes a Tesla overlay.",
+      "installationSummary": "Place SimpleModManager.nro in /switch/SimpleModManager/. Create /mods/<Game>/<Mod>/contents/<title-id>/romfs/ using each mod’s documented tree. Apply or disable the chosen mod in the app. Current upstream uses contents/; historic store examples using titles/ predate current Atmosphère layout."
+    }
+  ]
+}

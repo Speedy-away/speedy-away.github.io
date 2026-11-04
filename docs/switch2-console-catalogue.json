@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "scope": "switch2-console",
+  "checkedOn": "2026-11-02",
+  "platform": "Nintendo Switch 2",
+  "firmware": { "version": "23.0.1", "releasedOnAU": "2026-10-01", "releasedOnUS": "2026-09-30", "source": "updates" },
+  "researchCommit": "95f5525089273c5fce0b95047f3600f8442e96ae",
+  "sources": {
+    "specs": { "title": "Nintendo UK · Switch 2 specifications", "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-Switch-2/Nintendo-Switch-2-Specifications-2785627.html" },
+    "models": { "title": "Nintendo UK · Identify your Switch 2 battery/model revision", "url": "https://www.nintendo.com/en-gb/Support/Troubleshooting/Battery-replacement/How-to-identify-whether-your-Nintendo-Switch-2-console-contains-a-user-replaceable-battery-3212762.html" },
+    "setup": { "title": "Nintendo UK · First-time setup and connection", "url": "https://www.nintendo.com/en-gb/Support/Nintendo-Switch-2/Nintendo-Switch-2-First-Time-Setup-and-Connection-2843806.html" },
+    "power": { "title": "Nintendo Australia · Charging the Switch 2", "url": "https://www.nintendo.com/au/support/articles/how-to-charge-the-nintendo-switch-2-console/" },
+    "storage": { "title": "Nintendo UK · microSD Express FAQ", "url": "https://www.nintendo.com/en-gb/Support/Nintendo-Switch-2/microSD-Express-Card-FAQ-2843737.html" },
+    "format": { "title": "Nintendo UK · Format a microSD / microSD Express card", "url": "https://www.nintendo.com/en-gb/Support/Troubleshooting/How-to-Format-a-microSD-Card-or-microSD-Express-card-on-a-Console-1496751.html" },
+    "transfer": { "title": "Nintendo Support · System transfer to Switch 2", "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/68432" },
+    "compatibility": { "title": "Nintendo · Switch game compatibility on Switch 2", "url": "https://www.nintendo.com/us/gaming-systems/switch-2/transfer-guide/compatible-games/" },
+    "updates": { "title": "Nintendo Australia · Switch 2 system update history", "url": "https://www.nintendo.com/au/support/articles/system-update-information-for-nintendo-switch-2/" },
+    "updatesUS": { "title": "Nintendo Support · Switch 2 system update information", "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/68473/" },
+    "ns2jb": { "title": "pepsipu · Original Switch 2 jailbreak research", "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/" },
+    "ns2jbProject": { "title": "pepsipu/ns2jb · Canonical GitLab project", "url": "https://gitlab.com/pepsipu/ns2jb" },
+    "ns2jbReadme": { "title": "ns2jb · Pinned demo README", "url": "https://gitlab.com/pepsipu/ns2jb/-/raw/95f5525089273c5fce0b95047f3600f8442e96ae/README.md" },
+    "ns2jbReleases": { "title": "ns2jb · Releases API (empty at review)", "url": "https://gitlab.com/api/v4/projects/87928237/releases" },
+    "ns2jbTags": { "title": "ns2jb · Tags API (empty at review)", "url": "https://gitlab.com/api/v4/projects/87928237/repository/tags" },
+    "switchbrew": { "title": "SwitchBrew · Switch 2 hardware and software documentation", "url": "https://switchbrew.org/wiki/Main_Page" }
+  },
+  "resources": [
+    { "id": "setup-resource", "title": "First-time setup", "category": "setup", "format": "Official guide", "description": "Charge the console, attach both Joy-Con 2 controllers and follow the language, region, network, time-zone and account prompts. Decide on a system transfer during setup.", "requirement": "Switch 2 + Joy-Con 2; internet for a system transfer.", "path": "Initial setup screens", "sources": ["setup"], "image": "joy-con-2" },
+    { "id": "dock-resource", "title": "Power, dock & TV mode", "category": "setup", "format": "Hardware guide", "description": "Use the Switch 2 dock (BEE-005), NGN-01 AC adapter, BEE-011 USB-C cable and supplied Ultra High Speed HDMI cable. A Switch AC adapter can charge directly, but cannot power Switch 2 TV mode.", "requirement": "Switch 2 dock and compatible display; output depends on game and display.", "path": "Bottom USB-C → Switch 2 dock → HDMI input", "sources": ["power", "specs"], "image": "dock" },
+    { "id": "express-resource", "title": "Choose microSD Express", "category": "storage", "format": "microSD Express", "description": "Software expansion supports microSD Express up to 2 TB. An internet system update is required for first use. Ordinary Switch microSD cards can only import existing captures.", "requirement": "Express-marked card; sold separately.", "path": "microSD Express slot under the console stand", "sources": ["storage", "specs"] },
+    { "id": "data-resource", "title": "Software storage & save data", "category": "storage", "format": "Console-managed", "description": "Express cards can hold downloaded software, updates, DLC and captures. When inserted, the card is the default destination for software downloads. Game saves stay in system memory and cannot be copied to the card.", "requirement": "Use Nintendo’s data-management tools for software and captures.", "path": "System Settings → Data Management", "sources": ["storage"] },
+    { "id": "format-resource", "title": "Prepare a memory card", "category": "storage", "format": "Console format", "description": "Back up captures before formatting: this erases the card. Use the console’s own format option and read the confirmation. Nintendo does not specify a manual PC folder layout here.", "requirement": "microSD Express card inserted; preserve existing files first.", "path": "System Settings → System → Format microSD Card", "sources": ["format"] },
+    { "id": "transfer-resource", "title": "Move to Switch 2", "category": "compatibility", "format": "System transfer", "description": "Use Nintendo’s transfer guide for Switch or Switch 2 to Switch 2. Local transfer is recommended with both consoles available. Downloadable software is redownloaded. Server upload initializes the source console; read its warnings first.", "requirement": "Internet, Nintendo Account and the source-specific transfer checklist.", "path": "Choose system transfer during Switch 2 setup", "sources": ["transfer"] },
+    { "id": "games-resource", "title": "Check your Switch games", "category": "compatibility", "format": "Compatibility lookup", "description": "Compatible physical and digital Nintendo Switch games run on Switch 2. Check each game’s current listing: some have issues or require original Joy-Con and separate charging hardware.", "requirement": "Exact game and required peripherals; compatibility varies by title.", "path": "Nintendo’s game listing / Nintendo eShop", "sources": ["compatibility"] },
+    { "id": "update-resource", "title": "System software 23.0.1", "category": "firmware", "format": "On-console update", "description": "Latest official version checked on 2 November 2026: 23.0.1, dated 1 October in Australia (30 September in US support). It fixes slow software start, pause or close in 23.0.0. Nintendo delivers the update through the console.", "requirement": "Internet; check your installed version and research compatibility before changing it.", "path": "HOME → System Settings → System → System Update", "sources": ["updates", "updatesUS"] },
+    { "id": "ns2jb-resource", "title": "ns2jb · native Switch 2 research", "category": "research", "format": "Research / source", "description": "pepsipu documents a software-only, tethered native execution chain for Switch 2 on 23.0.1. The published FS demo is experimental; it does not install custom firmware or persistence. No tagged release or release asset was published at this review.", "requirement": "Exact demo prerequisites below; no model-revision compatibility matrix supplied.", "path": "Computer project folder; no documented SD-root install path", "sources": ["ns2jbProject", "ns2jb"], "detail": "native-research" },
+    { "id": "switchbrew-resource", "title": "Switch 2 technical documentation", "category": "research", "format": "Developer reference", "description": "SwitchBrew separates Switch 2 hardware and software documentation from Switch 1. Use the Switch 2 columns for processor, services, system versions and compatibility-mode research.", "requirement": "Research reference; a wiki page is not a ready console build.", "path": "SwitchBrew → Switch 2 Hardware / Switch 2 Software Stack", "sources": ["switchbrew"] }
+  ],
+  "downloadStatus": {
+    "readyFilesAdded": 0,
+    "classification": "Research source only",
+    "reason": "ns2jb has no published tagged release or release asset. Its repository snapshot contains source and a bundled helper; no source archive was requested. Nintendo system updates are delivered through the console. No firmware mirror or Switch 1 tool is represented as a Switch 2 build.",
+    "hardwareTestedByUs": false,
+    "downloadedPayloadsExecuted": false
+  }
+}

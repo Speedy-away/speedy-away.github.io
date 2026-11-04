@@ -1,0 +1,198 @@
+{
+  "groups": [
+    {
+      "id": "playstation",
+      "title": "PlayStation",
+      "description": "Home consoles and handhelds, together in one place.",
+      "entries": [
+        {
+          "title": "PlayStation 5",
+          "url": "/console/ps5/",
+          "art": "ps5",
+          "description": "Firmware guides, payloads, homebrew apps and native emulator ports."
+        },
+        {
+          "title": "PlayStation 4",
+          "url": "/console/ps4/",
+          "art": "ps4",
+          "description": "Firmware-specific setup, GoldHEN, apps and game modifications."
+        },
+        {
+          "title": "PlayStation 3",
+          "url": "/console/ps3/",
+          "art": "ps3",
+          "description": "PS3HEN and CFW guides, apps, save tools and P3T themes."
+        },
+        {
+          "title": "PlayStation 2",
+          "url": "/console/ps2/",
+          "art": "PS2",
+          "description": "FreeMcBoot, OpenTuna, Open PS2 Loader and PS2 utilities."
+        },
+        {
+          "title": "PlayStation",
+          "url": "/pc/emulators.html#emu-duckstation",
+          "art": "PS1",
+          "description": "Original PlayStation emulation on PC. This link opens the PC emulator collection."
+        },
+        {
+          "title": "PlayStation Portable",
+          "url": "/console/psp/",
+          "art": "PSP",
+          "description": "PSP setup, ARK-4, homebrew games, apps and themes."
+        },
+        {
+          "title": "PlayStation Vita",
+          "url": "/console/psvita/home.html",
+          "art": "psvita",
+          "description": "Vita setup, homebrew apps, Adrenaline, save tools and storage."
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "title": "Xbox",
+      "description": "Original Xbox, Xbox 360, Xbox One and Xbox Series.",
+      "entries": [
+        {
+          "title": "Xbox One / Series X|S",
+          "url": "/console/xbox-one-series/",
+          "art": "xbox-one-series",
+          "description": "Developer Mode, Device Portal and compatible UWP apps."
+        },
+        {
+          "title": "Xbox 360",
+          "url": "/console/xbox360/",
+          "art": "xbox360",
+          "description": "Model-specific setup, dashboards, homebrew and file tools."
+        },
+        {
+          "title": "Original Xbox",
+          "url": "/console/retro/xbox.html",
+          "art": "XBOX",
+          "description": "Native XBE dashboards and game port downloads, plus emulator source projects."
+        }
+      ]
+    },
+    {
+      "id": "nintendo",
+      "title": "Nintendo",
+      "description": "Switch generations, earlier home consoles and portable systems.",
+      "entries": [
+        {
+          "title": "Nintendo Switch 2",
+          "url": "/console/nintendo-switch-2/",
+          "art": "nintendo-switch-2",
+          "description": "Setup, storage, system software and compatibility research."
+        },
+        {
+          "title": "Nintendo Switch",
+          "url": "/console/nintendo-switch/",
+          "art": "nintendo-switch",
+          "description": "Atmosphère setup, homebrew, game mods and themes."
+        },
+        {
+          "title": "Nintendo Wii U",
+          "url": "/console/wiiu/",
+          "art": "Wii U",
+          "description": "Aroma setup, apps, plugins, save tools and homebrew games."
+        },
+        {
+          "title": "Nintendo Wii",
+          "url": "/console/wii/",
+          "art": "Wii",
+          "description": "Homebrew Channel, apps, disc tools and GameCube support."
+        },
+        {
+          "title": "Nintendo GameCube",
+          "url": "/console/gamecube/",
+          "art": "GAMECUBE",
+          "description": "Swiss, homebrew boot methods and memory-card tools."
+        },
+        {
+          "title": "Nintendo DS & DSi",
+          "url": "/console/ds/",
+          "art": "DS / DSi",
+          "description": "Flashcart and DSi setup, TWiLight Menu++ and homebrew."
+        },
+        {
+          "title": "Nintendo 2DS & 3DS",
+          "url": "/console/3ds/",
+          "art": "2DS / 3DS",
+          "description": "Model-specific setup, Luma3DS, apps and save backups."
+        }
+      ]
+    },
+    {
+      "id": "sega",
+      "title": "Sega",
+      "description": "Find the Sega coverage currently available on the site.",
+      "entries": [
+        {
+          "title": "Sega classics",
+          "url": "/pc/emulators.html#emu-genesis-plus-gx",
+          "art": "SEGA",
+          "description": "Mega Drive / Genesis, Master System, Game Gear and Sega CD through PC emulation."
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "title": "Other platforms",
+      "description": "Handheld PC gaming and its tools.",
+      "entries": [
+        {
+          "title": "Steam Deck",
+          "url": "/console/steamdeck/",
+          "art": "steamdeck",
+          "description": "Plugins, launchers, Proton tools, emulation and remote play."
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "Themes & shared resources",
+      "description": "Collections covering more than one console family.",
+      "entries": [
+        {
+          "title": "Console game downloads",
+          "url": "/console/game-downloads/",
+          "art": "GAMES",
+          "description": "Game directories grouped by console: Vimm’s Lair, DLPSGame, PSP / Vita and Nintendo sources."
+        },
+        {
+          "title": "Console themes",
+          "url": "/console/themes.html",
+          "art": "THEMES",
+          "description": "PS3, Switch, Wii U and 2DS / 3DS themes with previews and installation guides."
+        },
+        {
+          "title": "Retro consoles",
+          "url": "/console/retro/",
+          "art": "RETRO",
+          "description": "Browse the retro console directory for setup, apps and tools."
+        },
+        {
+          "title": "Console game mods",
+          "url": "/console/mods/index.html",
+          "art": "MODS",
+          "description": "Game-specific console mod collections and installation guidance."
+        },
+        {
+          "title": "PS4 / PS5 game mods",
+          "url": "/console/mods/ps4/",
+          "art": "PS4 / PS5",
+          "description": "The existing PS4 / PS5 game-mod collection, including GTA V resources."
+        },
+        {
+          "title": "PC emulators",
+          "url": "/pc/emulators.html",
+          "art": "EMULATION",
+          "description": "Console emulation on Windows, macOS and Linux, with platform requirements."
+        }
+      ]
+    }
+  ],
+  "artwork": "Existing platform SVGs retain their recorded provenance. Remaining console/category panels use matching local artwork from console-rest-card-images.cjs; category artwork stays inside the image frame.",
+  "scope": "Organisation only. PC-only coverage is explicitly labelled; no new console builds or compatibility claims."
+}

@@ -1,0 +1,128 @@
+{
+  "mode": "built-in imagegen",
+  "note": "Original illustrative artwork, not software screenshots or wiring diagrams. PNG originals retained; JPEG renditions resized and encoded for web delivery.",
+  "promptFiles": [
+    "docs/image-prompts/custom-console-hardware.json",
+    "docs/image-prompts/custom-console-softmod.json",
+    "docs/image-prompts/custom-console-vita-legacy.json"
+  ],
+  "images": [
+    {
+      "id": "xbox360-jtag",
+      "image": "/assets/images/custom-console-art/xbox360-jtag.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-jtag.png",
+      "originalSha256": "3ce1001be4122e49f497a52cc1414116c274c442626546bedc563b180b155301",
+      "promptFile": "docs/image-prompts/custom-console-hardware.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 landscape website card artwork, 1536x864 composition. Photorealistic premium editorial technology still-life for a dark console homebrew website. Deep charcoal seamless studio and antistatic work surface, careful green rim lighting and subtle warm amber indicator lights, realistic PCB materials, clean restrained composition, subject fills the frame and remains clear at 300 pixels wide. No text, no watermark, no headline, no fake UI, no schematic or instructional pinout. Subject: a close three-quarter overhead view of a recognizable Xbox 360-era motherboard on an antistatic mat, a small NAND programmer module and a fine soldering iron resting safely to one side. Focus on the big chips and precise electronics craftsmanship. An editorial concept of JTAG installation, not a functional wiring diagram. No hands, no flowing solder, no ambiguous exposed power connections. Distinct dramatic macro composition.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 243578,
+      "sha256": "1bbea753159067d21813c759244a46b41498ac24ae85151515c4ad35cb66b6c5"
+    },
+    {
+      "id": "xbox360-rgh",
+      "image": "/assets/images/custom-console-art/xbox360-rgh.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-rgh.png",
+      "originalSha256": "6558817e8269d0cf3b3cca73fca0827ac98376e57f86b5acf23e366a4d69b186",
+      "promptFile": "docs/image-prompts/custom-console-hardware.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 landscape website card artwork, 1536x864 composition. Photorealistic premium editorial technology still-life for a dark console homebrew website. Deep charcoal seamless studio and antistatic work surface, careful green rim lighting and subtle warm amber indicator lights, realistic PCB materials, clean restrained composition, subject fills the frame and remains clear at 300 pixels wide. No text, no watermark, no headline, no fake UI, no schematic or instructional pinout. Subject: a white original-era Xbox 360 console standing at a three-quarter angle beside its removed green motherboard and a small timing-related circuit module. An understated luminous green pulse trace arcs in the background as a conceptual visual for Reset Glitch Hack timing, clearly artistic rather than a wiring instruction. Keep console silhouette and circular front power button recognizably Xbox 360-era. Distinct wider product composition; motherboard in foreground.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 192494,
+      "sha256": "0add127b08dea76f622f5df808079dedd34b90f45f6c90c87ea9c45e7c00cfc7"
+    },
+    {
+      "id": "xbox360-glitch-chips",
+      "image": "/assets/images/custom-console-art/xbox360-glitch-chips.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-glitch-chips.png",
+      "originalSha256": "8b6adbcde3f3e7a077cd36cbcb6525504d7723c88165e4e80816c4ca5e797140",
+      "promptFile": "docs/image-prompts/custom-console-hardware.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 landscape website card artwork, 1536x864 composition. Photorealistic premium editorial technology still-life for a dark console homebrew website. Deep charcoal seamless studio and antistatic work surface, careful green rim lighting and subtle warm amber indicator lights, realistic PCB materials, clean restrained composition, subject fills the frame and remains clear at 300 pixels wide. No text, no watermark, no headline, no fake UI, no schematic or instructional pinout. Subject: two distinct tiny Xbox 360-era glitch-mod circuit boards on an antistatic electronics workbench, one slim blue-green rectangular board and one compact green rectangular board with realistic microchips, pin headers and a small crystal oscillator, representing the CoolRunner and Matrix hardware category. A macro product photograph with the boards large and sharply focused. No invented branding or readable board labels. No console or controller. The image should communicate physical glitch-chip hardware rather than software.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 190307,
+      "sha256": "d0378805ed449f9f9fe9e1b4b321e84854d151ef45c1e41d3c2531a571bbdb2b"
+    },
+    {
+      "id": "xbox360-peer-pressure",
+      "image": "/assets/images/custom-console-art/xbox360-peer-pressure.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-peer-pressure.png",
+      "originalSha256": "1fbf12a52bf5235f424d08f164110eaca64e47f11103d77d843498b4f9a4ddd9",
+      "promptFile": "docs/image-prompts/custom-console-softmod.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 website card illustration, landscape. Create a premium photorealistic editorial still life about Xbox 360 homebrew installation. Scene: a deep charcoal studio surface. Main subject: an authentic white original-generation Xbox 360 standing at a slight three-quarter angle with its removable grey hard drive attached; a compact USB flash drive rests clearly beside it. Restrained Xbox-green rim light, small warm amber accent, tactile plastic, subtle surface reflections, crisp realistic details. A quiet abstract green connection arc between drive and console evokes a connected homebrew setup without depicting software UI. Large simple subjects readable at 300px card width, generous margins so neither object is cut off when cropped to 16:9. Calm technical mood, sophisticated dark composition. No headline text, no labels, no watermarks, no fabricated screen interface, no large brand wordmark. This is an illustrative category image, not an installation diagram.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 124947,
+      "sha256": "77222b35b729ac347bb5f25d1cc4d0e976b5a5a52031ce3f1702ad5ed089103c"
+    },
+    {
+      "id": "xbox360-system-update",
+      "image": "/assets/images/custom-console-art/xbox360-system-update.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-system-update.png",
+      "originalSha256": "4aa4706c231a9651d4eb6c7e1b3577cff0ddf08a6c3ea063496b9effe0a93b36",
+      "promptFile": "docs/image-prompts/custom-console-softmod.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 landscape website card illustration for an Xbox 360 firmware update. Premium photorealistic technological editorial still life on a deep charcoal studio surface: an authentic white Xbox 360 controller, a USB flash drive, and a restrained luminous green circular progress ring as a simple abstract physical light motif behind them. Controller and USB drive are the large clearly readable subjects at small 300px card width. Realistic white plastic, soft shadows, clean green rim light and tiny warm amber accents, generous object margins, no cut-off hardware. Keep the composition sophisticated and uncluttered. Do not show a real or fake dashboard screenshot. No text, no numbers, no firmware labels, no watermark, no giant Xbox logo. Consistent dark homebrew technology aesthetic.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 110867,
+      "sha256": "cf47c049259f2d5bc946e0db752fe4c9c81319547df021aac508c7b7fca3cb9f"
+    },
+    {
+      "id": "xbox360-rock-band-blitz",
+      "image": "/assets/images/custom-console-art/xbox360-rock-band-blitz.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-rock-band-blitz.png",
+      "originalSha256": "60b1bc3dbd42b87981df4ffbeaedf56492105d0955f0c8d2e75b5dc248f9dd73",
+      "promptFile": "docs/image-prompts/custom-console-softmod.json",
+      "prompt": "Use case: stylized-concept. Asset type: original 16:9 landscape website card illustration for a rhythm-game trial. A polished cinematic editorial still life of an electric guitar and two drumsticks, with five glowing rhythm lanes in green, red, yellow, blue and orange receding into a dark concert-stage atmosphere. Evoke the energetic console rhythm games of the Xbox 360 era without reproducing any game artwork or interface. Large guitar silhouette and drumsticks remain clear at 300px card width. Deep charcoal backdrop, restrained colored arcade lighting, realistic materials, strong clean composition, generous margins suitable for 16:9 cropping. No people, no screenshot, no text, no logos, no album art, no watermark. This artwork should visually distinguish the music game from firmware and hardware tools.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 186420,
+      "sha256": "b97b524e34d535cb24da1d03043c7eec6ce9993a6d2668f24718597f965bcb6e"
+    },
+    {
+      "id": "vita-henlo",
+      "image": "/assets/images/custom-console-art/vita-henlo.jpg",
+      "original": "/assets/images/custom-console-art/vita-henlo.png",
+      "originalSha256": "fe13bbc07f5a802b1b13599711dde8d924a2872633258c2b73171304695271db",
+      "promptFile": "docs/image-prompts/custom-console-vita-legacy.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 website card illustration for a PS Vita HENlo jailbreak guide. Create one premium photorealistic editorial product still life: an authentic black original PS Vita 1000 handheld, viewed at a natural gentle three-quarter landscape angle on a deep charcoal studio surface. The handheld is the clear dominant subject, fully in frame with safe margins, its actual physical layout accurately proportioned: wide central touchscreen, dual analogue sticks, D-pad left, four face buttons right. On the screen show only a clean abstract arrangement of softly glowing homebrew-inspired bubbles, not a screenshot or any instructional menu. Restrained mint and forest-green edge light, fine plastic/glass material detail, quiet premium dark technology style. Make the subject large and readable as a small 300px card thumbnail. Horizontal 16:9 composition, no letterboxing. No promotional headlines, no year, no firmware version, no added text, no watermark, no fake software instructions. This is illustrative artwork, not documentation of actual installed software.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 137969,
+      "sha256": "2a012808b14f92d5af489f66cd22b8bb50c16ab949771302d52a221f3e14458a"
+    },
+    {
+      "id": "xbox360-backwards-compatibility",
+      "image": "/assets/images/custom-console-art/xbox360-backwards-compatibility.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-backwards-compatibility.png",
+      "originalSha256": "3394ff92ea51c51800226e5c77eb5780c915703dbafcfd08836fefb4c23ec763",
+      "promptFile": "docs/image-prompts/custom-console-vita-legacy.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 website card illustration for Xbox backwards compatibility. Create a premium photorealistic editorial still life of two generations of authentic Xbox hardware. Foreground: a black original Xbox Controller S and a white Xbox 360 wireless controller, both complete and recognizable, arranged side by side at natural three-quarter angles. Background, softly out of focus but recognizable: an original black Xbox console and a white first-generation Xbox 360 console. Subtle restrained mint light visually connects the two generations across the charcoal studio workbench, without literal arrows or diagrams. Deep charcoal background, green accents, realistic worn plastic and glass material detail, clean technological editorial style matching a dark homebrew website. Subjects large and readable at 300px thumbnail size, composed for a wide 16:9 card, all controllers fully within safe frame margins. No added headlines, no labels, no watermarks, no game covers, no diagram, no fake user interface, no letterboxing. This is illustrative category artwork rather than a claim about any specific game's compatibility.",
+      "refinementPrompt": "Edit target: the supplied Xbox backwards-compatibility product illustration. Change only the foreground BLACK controller so it accurately depicts an ORIGINAL 2002 Xbox Controller S, visibly different from the white Xbox 360 controller beside it. The original Controller S must have its authentic oval black centre area with a static Xbox emblem badge near the top, the Back and Start buttons down near the lower-left, and the two small BLACK and WHITE buttons below the four coloured ABXY buttons at right. Do not give the black controller Xbox 360's two tiny top navigation buttons around a modern Guide button. Retain its black worn-plastic shell, left analog stick upper-left, D-pad lower-left, right analog stick lower-right. Preserve the WHITE Xbox 360 controller exactly, the two background consoles, deep charcoal surface, mint lighting, framing, scene layout, and 16:9 composition. No headlines, watermark or new objects. This remains illustrative category artwork.",
+      "width": 1280,
+      "height": 720,
+      "bytes": 159923,
+      "sha256": "0ea73d7d20581dd7a94144f744af23df7744147b86a155d45f76a812b0d0505c"
+    },
+    {
+      "id": "xbox360-game-library",
+      "image": "/assets/images/custom-console-art/xbox360-game-library.jpg",
+      "original": "/assets/images/custom-console-art/xbox360-game-library.png",
+      "originalSha256": "1f1d624376f1a9218012e2b535a0a5c1fe50257f957b9a35574d5d0d7d89b493",
+      "promptFile": "docs/image-prompts/custom-console-vita-legacy.json",
+      "prompt": "Use case: product-mockup. Asset type: original 16:9 website card illustration for an Xbox 360 game library category. Create a premium photorealistic editorial product still life on a deep charcoal studio tabletop: a tidy small library of translucent green Xbox 360-era DVD cases standing neatly in a row, their spines and fronts unlabelled, two clean optical game discs laid in front with realistic rainbow surface reflections, and one authentic white Xbox 360 wireless controller beside the discs. Keep the library and optical media as the main visual idea, not a repeating Xbox logo. Restrained soft green and mint rim light with neutral key light, fine plastic material texture, subtle cinematic depth of field, clean dark technology style matching a homebrew website. Horizontal 16:9 composition, all important objects within safe margins, strong clear silhouettes readable as a 300px thumbnail. No invented game cover artwork, no words or labels on cases or discs, no promotional text, no added logos or watermark, no fake user interface, no letterboxing. Original illustrative category artwork, not a screenshot of an actual download service.",
+      "refinementPrompt": null,
+      "width": 1280,
+      "height": 720,
+      "bytes": 143279,
+      "sha256": "5a86b380d67e5912fade31aedd8f4189a17fa037145d8b3906c4abe2734d0449"
+    }
+  ]
+}

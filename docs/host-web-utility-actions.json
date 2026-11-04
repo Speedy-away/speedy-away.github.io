@@ -1,0 +1,1479 @@
+{
+  "schemaVersion": 1,
+  "platform": "ps4",
+  "reviewedAt": "2026-11-02T14:49:55.894Z",
+  "status": "prepared-pending-archive-verification",
+  "scope": "Eighteen first-party host dispatch mappings for direct GoldHEN HTTP loading. No Open Host action substitutes for Load. Seventeen exact live 13.00 ports plus the publisher-whitelisted ps4debug v1.1.19. These files have not yet been imported/archived by this review.",
+  "actions": [
+    {
+      "id": "ps4-kme-web-pkg-backup-1300",
+      "label": "PKG Backup",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Copy already installed base, update and DLC package files to the configured external drive.",
+      "author": "Kameleon; based on xVortex App Dumper",
+      "version": "Kameleon-13.00-2026.11.02-1a3d3dd41843",
+      "utilityVersion": "1.3",
+      "format": "BIN",
+      "filename": "pl_pkgbackup.bin",
+      "bytes": 33352,
+      "sha256": "1a3d3dd41843d94cc4a3517caaefe8f8996f1bda7709a5856a711bfbaca6021b",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-pkg-backup-1300/pl_pkgbackup.bin",
+      "downloadFilename": "pl_pkgbackup.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_pkgbackup.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_pkgbackup",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://github.com/kmeps4/PKG-BackUP/releases/tag/PKG-Backup-v1.3",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "Use the matching PKG Backup configuration and preserve any existing config.cfg on the external drive root.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The PKG Backup family reads its external-drive configuration and copies the selected installed package files.",
+        "Connect the intended external drive and prepare the matching config.cfg in its root. Its cusa selector chooses a title; method selects base, update, DLC or all three.",
+        "Preserve the existing configuration and backup output. This 13.00 host port differs from the older official 1.3 binary; use the host snapshot identified here."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "PKG-Backup v1.3 - Modded Version Of App Dumper / 13.00 Port By Kamaleon",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:15 GMT",
+        "originalFilename": "pl_pkgbackup.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "PKG Backup",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The PKG Backup family reads its external-drive configuration and copies the selected installed package files.",
+      "storageInstructions": [
+        "Connect the intended external drive and prepare the matching config.cfg in its root. Its cusa selector chooses a title; method selects base, update, DLC or all three.",
+        "Preserve the existing configuration and backup output. This 13.00 host port differs from the older official 1.3 binary; use the host snapshot identified here."
+      ],
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-app-dumper-1300",
+      "label": "App Dumper",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Dump an installed app/game to the USB output used by this build.",
+      "author": "xVortex; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-290f83e02fb0",
+      "utilityVersion": "1.8",
+      "format": "BIN",
+      "filename": "pl_appdumper.bin",
+      "bytes": 26216,
+      "sha256": "290f83e02fb0cc86e659e7ec380021942430a7608d975f03676c8afc52ba7ab0",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-app-dumper-1300/pl_appdumper.bin",
+      "downloadFilename": "pl_appdumper.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_appdumper.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_appdumper",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "Follow the dumper’s storage and complete-copy instructions for your selected title.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: Creates dump output for the installed title through the App Dumper workflow.",
+        "Connect the intended writable USB drive, start the target title as required by the dumper instructions and leave enough room for its complete output.",
+        "A dumped app and its installation workflow are separate from downloading this BIN."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "App Dumper Only v1.8 - Original Version By xVortex / 13.00 Port Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:01 GMT",
+        "originalFilename": "pl_appdumper.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "App Dumper",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "Creates dump output for the installed title through the App Dumper workflow.",
+      "storageInstructions": [
+        "Connect the intended writable USB drive, start the target title as required by the dumper instructions and leave enough room for its complete output.",
+        "A dumped app and its installation workflow are separate from downloading this BIN."
+      ],
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-disable-updates-1300",
+      "label": "Disable Updates",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Block firmware-update downloads using the PS4 update-file paths.",
+      "author": "Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-d6d38701f528",
+      "utilityVersion": "1.0",
+      "format": "BIN",
+      "filename": "pl_disableupdates.bin",
+      "bytes": 8420,
+      "sha256": "d6d38701f5284f4764f47197052cb189a17120a7de5b961136c5f6045c30a1fc",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-disable-updates-1300/pl_disableupdates.bin",
+      "downloadFilename": "pl_disableupdates.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_disableupdates.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_disableupdates",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The exact build references /update/PS4UPDATE.PUP and /update/PS4UPDATE.PUP.net.temp and reports updates disabled."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Disable-Updates v1.0 - 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:04 GMT",
+        "originalFilename": "pl_disableupdates.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Disable Updates",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The exact build references /update/PS4UPDATE.PUP and /update/PS4UPDATE.PUP.net.temp and reports updates disabled.",
+      "confirmBeforeLoad": "Disable update downloads by changing the update-file blockers on this PS4?",
+      "changeScope": "persistent-update-paths",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-enable-updates-1300",
+      "label": "Enable Updates",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Remove the update-file blockers so firmware-update downloads can work again.",
+      "author": "Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-e261f6e0d18f",
+      "utilityVersion": "1.0",
+      "format": "BIN",
+      "filename": "pl_enableupdates.bin",
+      "bytes": 8388,
+      "sha256": "e261f6e0d18fbe95f3998b0d4b39f0683e125a04633d5333b44ade31ca074de8",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-enable-updates-1300/pl_enableupdates.bin",
+      "downloadFilename": "pl_enableupdates.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_enableupdates.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_enableupdates",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The exact build references /update/PS4UPDATE.PUP and /update/PS4UPDATE.PUP.net.temp and reports updates enabled."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Enable-Updates v1.0 - 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:07 GMT",
+        "originalFilename": "pl_enableupdates.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Enable Updates",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The exact build references /update/PS4UPDATE.PUP and /update/PS4UPDATE.PUP.net.temp and reports updates enabled.",
+      "confirmBeforeLoad": "Remove the update blockers on this PS4? System-update downloads will be allowed again.",
+      "changeScope": "persistent-update-paths",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-enable-browser-1300",
+      "label": "Enable Browser",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Apply the console browser-enabled setting used by this payload.",
+      "author": "Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-0e7c5fadc6fa",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_enablebrowser.bin",
+      "bytes": 10420,
+      "sha256": "0e7c5fadc6fa4abbe5df7954f956d4c75aa71a4c03bcaf514c83578583a1a8ad",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-enable-browser-1300/pl_enablebrowser.bin",
+      "downloadFilename": "pl_enablebrowser.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_enablebrowser.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_enablebrowser",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The build calls its enable-browser kernel helper and reports that the browser is enabled."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Enable Browser / 13.00 Port Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:05 GMT",
+        "originalFilename": "pl_enablebrowser.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Enable Browser",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The build calls its enable-browser kernel helper and reports that the browser is enabled.",
+      "confirmBeforeLoad": "Change this PS4’s browser-enabled setting?",
+      "changeScope": "system-setting",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-exit-idu-1300",
+      "label": "Exit IDU",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Exit IDU mode and restart the console.",
+      "author": "Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-f3aa40ba3508",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_exitidu.bin",
+      "bytes": 10332,
+      "sha256": "f3aa40ba35081f2384d4ec5382950f04769153f4da9b4240989283ad14a94c48",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-exit-idu-1300/pl_exitidu.bin",
+      "downloadFilename": "pl_exitidu.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_exitidu.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_exitidu",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The exact build reports exiting IDU and references sceKernelReboot."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Exit IDU / 13.00 Port Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:08 GMT",
+        "originalFilename": "pl_exitidu.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Exit IDU",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The exact build reports exiting IDU and references sceKernelReboot.",
+      "confirmBeforeLoad": "Exit IDU mode and restart this PS4 now?",
+      "changeScope": "system-setting-and-reboot",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-rif-renamer-1300",
+      "label": "RIF Renamer",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Rename licence RIF files in the console licence directories.",
+      "author": "Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-8dcb00ee0275",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_rifrenamer.bin",
+      "bytes": 9188,
+      "sha256": "8dcb00ee027503d4388f2af88a6d386049458199669209511234f7dc9d36b79e",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-rif-renamer-1300/pl_rifrenamer.bin",
+      "downloadFilename": "pl_rifrenamer.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_rifrenamer.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_rifrenamer",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The exact build identifies /system_data/priv/license and /user/license and reports renamed RIFs."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Rifrenamer / 13.00 Port Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:19 GMT",
+        "originalFilename": "pl_rifrenamer.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "RIF Renamer",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The exact build identifies /system_data/priv/license and /user/license and reports renamed RIFs.",
+      "confirmBeforeLoad": "Rename RIF licence files in this PS4’s system and user licence directories?",
+      "changeScope": "persistent-file-renames",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-ftp-1300",
+      "label": "FTP Server",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Start the supplied FTP server so a client can connect to the console.",
+      "author": "xVortex; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-68577a874540",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_ftp.bin",
+      "bytes": 27492,
+      "sha256": "68577a874540b877ba7e95906a77060ff05480b37777d81bb0a4dfe139bda1d1",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-ftp-1300/pl_ftp.bin",
+      "downloadFilename": "pl_ftp.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_ftp.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_ftp",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "Use the server address and port reported by the actual payload; this review does not infer them from another FTP build.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: Loads the host-distributed FTP service; it does not itself transfer an app to the console.",
+        "Use the address and port shown by the running payload. No port number is borrowed from a different FTP build."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Ftp Server - Original Version By xVortex / 13.00 Port Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:09 GMT",
+        "originalFilename": "pl_ftp.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "FTP Server",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "Loads the host-distributed FTP service; it does not itself transfer an app to the console.",
+      "storageInstructions": [
+        "Use the address and port shown by the running payload. No port number is borrowed from a different FTP build."
+      ],
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-history-blocker-1300",
+      "label": "History Blocker",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Toggle browser history blocking for console users.",
+      "author": "Stooged; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-a10b34e1cd81",
+      "utilityVersion": "2.0",
+      "format": "BIN",
+      "filename": "pl_historyblocker.bin",
+      "bytes": 10972,
+      "sha256": "a10b34e1cd810b11069c00eca5ca7672a9ab9a5f1c801a81faad36f264137d38",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-history-blocker-1300/pl_historyblocker.bin",
+      "downloadFilename": "pl_historyblocker.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_historyblocker.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_historyblocker",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The build references /user/home/%x/webbrowser/endhistory.txt and contains both enabled and disabled status messages."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "History-Blocker - v2.0 Original Version By Stooged / 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:10 GMT",
+        "originalFilename": "pl_historyblocker.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "History Blocker",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The build references /user/home/%x/webbrowser/endhistory.txt and contains both enabled and disabled status messages.",
+      "confirmBeforeLoad": "Toggle browser history blocking for the users on this PS4?",
+      "changeScope": "persistent-browser-history-paths",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-kernel-dumper-1300",
+      "label": "Kernel Dumper",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Write a kernel dump through the selected payload’s native output workflow.",
+      "author": "Eversion; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-e4ea6a8b13a2",
+      "utilityVersion": "1.0",
+      "format": "BIN",
+      "filename": "pl_kerneldumper.bin",
+      "bytes": 18588,
+      "sha256": "e4ea6a8b13a28991ece96b70fe88baeaea1cd99aee316db218fa1ce7464956d0",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-kernel-dumper-1300/pl_kerneldumper.bin",
+      "downloadFilename": "pl_kerneldumper.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_kerneldumper.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_kerneldumper",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: Runs the kernel-dump utility credited by the host to Eversion and Al Azif.",
+        "Connect the writable output device required by the native dumper and follow the destination/status reported on the console. The website’s download folder does not choose the dumper’s output."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Kernel-Dumper - v1.0 Original Version By Eversion / 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:11 GMT",
+        "originalFilename": "pl_kerneldumper.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Kernel Dumper",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "Runs the kernel-dump utility credited by the host to Eversion and Al Azif.",
+      "storageInstructions": [
+        "Connect the writable output device required by the native dumper and follow the destination/status reported on the console. The website’s download folder does not choose the dumper’s output."
+      ],
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-module-dumper-1300",
+      "label": "Kernel Module Dumper",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Dump console kernel modules through the native utility.",
+      "author": "13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-62640e215bec",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_moduledumper.bin",
+      "bytes": 17772,
+      "sha256": "62640e215becf50e60690ea5867525e32443b23c1ac74f94a8c1ca78ba964457",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-module-dumper-1300/pl_moduledumper.bin",
+      "downloadFilename": "pl_moduledumper.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_moduledumper.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_moduledumper",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: Runs the kernel-module dump utility distributed by the host.",
+        "Prepare the native dumper’s required writable output device. Downloading this BIN into whatwhatboy does not configure its module-dump destination."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Kernel-Module Dumper -  13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:12 GMT",
+        "originalFilename": "pl_moduledumper.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Kernel Module Dumper",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "Runs the kernel-module dump utility distributed by the host.",
+      "storageInstructions": [
+        "Prepare the native dumper’s required writable output device. Downloading this BIN into whatwhatboy does not configure its module-dump destination."
+      ],
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-ps4debug-v1-1-19",
+      "label": "ps4debug",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Start the exact official ps4debug v1.1.19 service for a matching debugger client.",
+      "author": "CTN123; official GoldHEN distribution",
+      "version": "v1.1.19",
+      "utilityVersion": "1.1.19",
+      "format": "BIN",
+      "filename": "pl_ps4debug.bin",
+      "bytes": 84936,
+      "sha256": "8af40c2412768bb2cd64c46b9913ee2f7ff2f076c98f6a2f5c7c0534aee15b2e",
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "6.71",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.50",
+        "10.51",
+        "10.70",
+        "10.71",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02"
+      ],
+      "firmwarePolicy": "publisher-exact-whitelist",
+      "firmwareEvidence": "Exact byte match to official GoldHEN/ps4debug v1.1.19; retain the publisher’s enumerated firmware whitelist. The host does not declare a 13.00 port for this file.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-ps4debug-v1-1-19/pl_ps4debug.bin",
+      "downloadFilename": "pl_ps4debug.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_ps4debug.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_ps4debug",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://github.com/GoldHEN/ps4debug/releases/tag/v1.1.19",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "Exact byte match to official GoldHEN/ps4debug v1.1.19; retain the publisher’s enumerated firmware whitelist. The host does not declare a 13.00 port for this file.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: Loads the already archived official v1.1.19 bytes; its supported firmware is the publisher’s explicit whitelist.",
+        "Connect the matching debugger client only after the payload has started. Payload transfer acceptance is not service startup confirmation."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-and-exact-publisher-byte-match",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Ps4Debug v1.1.19 - By CTN123",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:17 GMT",
+        "originalFilename": "pl_ps4debug.bin",
+        "exactPublisherMatch": true,
+        "publisherRepository": "https://github.com/GoldHEN/ps4debug",
+        "publisherCommit": "ff8068c45a6d65012fd232e59c4835d1064f4ede",
+        "publisherAssetURL": "https://github.com/GoldHEN/ps4debug/releases/download/v1.1.19/ps4debug_v1.1.19.bin",
+        "existingInventoryId": "ps4-ps5-expand-ps4-ps4debug"
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "ps4debug",
+        "v1.1.19"
+      ],
+      "effects": "Loads the already archived official v1.1.19 bytes; its supported firmware is the publisher’s explicit whitelist.",
+      "storageInstructions": [
+        "Connect the matching debugger client only after the payload has started. Payload transfer acceptance is not service startup confirmation."
+      ],
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-db-backup-1300",
+      "label": "Database Backup",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Back up the app/add-on/content databases internally and to the utility’s USB backup layout.",
+      "author": "Leeful; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-91eaee1292f8",
+      "utilityVersion": "1.0",
+      "format": "BIN",
+      "filename": "pl_backup.bin",
+      "bytes": 15092,
+      "sha256": "91eaee1292f8741bd9514fe4c4e3af99189359ae79ee3f75a7292df014d1f4b4",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-db-backup-1300/pl_backup.bin",
+      "downloadFilename": "pl_backup.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_backup.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_backupdb",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The live build includes app.db, addcont.db and av_content_bg.db, internal .bak paths, and /mnt/usb0|usb1/PS4/Backup output; its messages distinguish an internal database-only backup from a fuller USB backup.",
+        "For USB output, use the intended writable device at an actual /mnt/usb0 or /mnt/usb1 mount and preserve /PS4/Backup before replacing an older backup.",
+        "With no writable USB device, the build reports an internal database-only backup. That is not a full user-data backup."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "DB-Backup v1.0 - By Leeful / 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:02 GMT",
+        "originalFilename": "pl_backup.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Database Backup",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The live build includes app.db, addcont.db and av_content_bg.db, internal .bak paths, and /mnt/usb0|usb1/PS4/Backup output; its messages distinguish an internal database-only backup from a fuller USB backup.",
+      "storageInstructions": [
+        "For USB output, use the intended writable device at an actual /mnt/usb0 or /mnt/usb1 mount and preserve /PS4/Backup before replacing an older backup.",
+        "With no writable USB device, the build reports an internal database-only backup. That is not a full user-data backup."
+      ],
+      "confirmBeforeLoad": "Create database backups using this utility’s internal or connected USB paths?",
+      "changeScope": "backup-output-files",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-db-restore-1300",
+      "label": "Database Restore",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Replace console databases from a matching backup, then restart the console.",
+      "author": "Leeful; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-20c5fd911366",
+      "utilityVersion": "1.0",
+      "format": "BIN",
+      "filename": "pl_restore.bin",
+      "bytes": 10796,
+      "sha256": "20c5fd911366bf688d3c569008d1e4e9a020948a0a18ffaa3a34077d898f2a49",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-db-restore-1300/pl_restore.bin",
+      "downloadFilename": "pl_restore.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_restore.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_restoredb",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "Use the original restore instructions and a matching backup for this console.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The live build references USB /PS4/Backup/{app.db,addcont.db,av_content_bg.db}, corresponding internal .bak files and a console reboot.",
+        "Use a backup made for this console. The live build names /mnt/usb0/PS4/Backup/ and /mnt/usb1/PS4/Backup/; keep those database files in their original backup layout.",
+        "The source family can fall back to internal /system_data/priv/mms/*.bak when USB is not writable. The database destination is /system_data/priv/mms/.",
+        "Close running work and verify the intended backup before loading. The utility reports a restart after restoring; the website’s download-folder choice does not select its restore source."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "DB-Restore v1.0 - By Leeful / 13.00 Port Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:18 GMT",
+        "originalFilename": "pl_restore.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Database Restore",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The live build references USB /PS4/Backup/{app.db,addcont.db,av_content_bg.db}, corresponding internal .bak files and a console reboot.",
+      "storageInstructions": [
+        "Use a backup made for this console. The live build names /mnt/usb0/PS4/Backup/ and /mnt/usb1/PS4/Backup/; keep those database files in their original backup layout.",
+        "The source family can fall back to internal /system_data/priv/mms/*.bak when USB is not writable. The database destination is /system_data/priv/mms/.",
+        "Close running work and verify the intended backup before loading. The utility reports a restart after restoring; the website’s download-folder choice does not select its restore source."
+      ],
+      "confirmBeforeLoad": "Restore can replace this PS4’s databases and restart the console. Verify a backup made for this console before continuing.",
+      "changeScope": "persistent-database-overwrite-and-reboot",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-app2usb-1300",
+      "label": "App2USB",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Move configured installed package files to USB and replace their internal paths with links.",
+      "author": "Stooged; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-a2e4ae50d28f",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_app2usb.bin",
+      "bytes": 25908,
+      "sha256": "a2e4ae50d28f7e870df21723d976ad9a714db7cd2bb3db21cbf1aac17dc68438",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-app2usb-1300/pl_app2usb.bin",
+      "downloadFilename": "pl_app2usb.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_app2usb.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_app2usb",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "Follow the matching App2USB instructions and preserve the drive’s existing app2usb.ini configuration.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The App2USB source family copies and checks files, removes internal originals and creates links to the USB copies. Update/DLC selection follows its configuration.",
+        "Use the intended supported USB file-storage drive and review its configuration before loading. Keep that drive connected for linked games to launch.",
+        "The exact live build references /mnt/usbN/PS4/AppToUsb.ini and the name app2usb.ini. Preserve the configuration already used by this build instead of replacing or renaming it blindly.",
+        "Match MOUNT_POINT to the actual mounted device. USB mount numbers can change and do not identify physical USB slots. Source options include IGNORE_UPDATES, MOVE_DLC and a move/ignore title list."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "App-2-Usb - Original Version By Stooged / 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:00 GMT",
+        "originalFilename": "pl_app2usb.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "App2USB",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The App2USB source family copies and checks files, removes internal originals and creates links to the USB copies. Update/DLC selection follows its configuration.",
+      "storageInstructions": [
+        "Use the intended supported USB file-storage drive and review its configuration before loading. Keep that drive connected for linked games to launch.",
+        "The exact live build references /mnt/usbN/PS4/AppToUsb.ini and the name app2usb.ini. Preserve the configuration already used by this build instead of replacing or renaming it blindly.",
+        "Match MOUNT_POINT to the actual mounted device. USB mount numbers can change and do not identify physical USB slots. Source options include IGNORE_UPDATES, MOVE_DLC and a move/ignore title list."
+      ],
+      "confirmBeforeLoad": "App2USB moves installed package files to USB and replaces their internal paths with links. Verify the intended drive, mount and configuration before continuing.",
+      "changeScope": "persistent-file-relocation-and-links",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-to-dex-1300",
+      "label": "ToDEX",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Spoof the running PS4 target ID for testkit/debug behavior.",
+      "author": "notzecoxao; 13.00 port credited to Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-2fc2357636a0",
+      "utilityVersion": "1.0",
+      "format": "BIN",
+      "filename": "pl_todex.bin",
+      "bytes": 10164,
+      "sha256": "2fc2357636a04c073d7f904fb5e7ce65f75f3aa9e561287c1123a325b53bd30c",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-to-dex-1300/pl_todex.bin",
+      "downloadFilename": "pl_todex.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_todex.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_todex",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The original source calls spoof_target_id(0x82); the reviewed SDK helper patches kernel memory rather than installing firmware.",
+        "This is a running-kernel target-ID utility. It does not need a USB output folder."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "To-Dex v1.0 - By notzecoxao / 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:20 GMT",
+        "originalFilename": "pl_todex.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "ToDEX",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The original source calls spoof_target_id(0x82); the reviewed SDK helper patches kernel memory rather than installing firmware.",
+      "storageInstructions": [
+        "This is a running-kernel target-ID utility. It does not need a USB output folder."
+      ],
+      "confirmBeforeLoad": "Change the running PS4’s target ID to spoof testkit/debug behavior?",
+      "changeScope": "kernel-memory-target-id",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-permanent-uart-1300",
+      "label": "Permanent UART",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Enable hardware UART through a persistent system-controller setting.",
+      "author": "Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-1fe274714228",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_permanentuart.bin",
+      "bytes": 10228,
+      "sha256": "1fe2747142285df475abbaaf2a02c28d30628d068c983d3178fab4c4609987f9",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-permanent-uart-1300/pl_permanentuart.bin",
+      "downloadFilename": "pl_permanentuart.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_permanentuart.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_uart",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: The original source calls enable_perm_uart(); its reviewed SDK helper writes the UART flag to system-controller NVS, and the README states it persists through updates.",
+        "This is a hardware diagnostics setting. No download or external-drive folder changes its destination."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Permanent UART - 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:13 GMT",
+        "originalFilename": "pl_permanentuart.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Permanent UART",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "The original source calls enable_perm_uart(); its reviewed SDK helper writes the UART flag to system-controller NVS, and the README states it persists through updates.",
+      "storageInstructions": [
+        "This is a hardware diagnostics setting. No download or external-drive folder changes its destination."
+      ],
+      "confirmBeforeLoad": "Enable permanent hardware UART on this PS4? This setting can persist across firmware updates.",
+      "changeScope": "persistent-system-controller-nvs",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    },
+    {
+      "id": "ps4-kme-web-disable-aslr-1300",
+      "label": "Disable ASLR",
+      "platform": "ps4",
+      "category": "payloads",
+      "resourceType": "system-utility",
+      "description": "Apply the source’s address-randomization disabling patch.",
+      "author": "Al Azif",
+      "version": "Kameleon-13.00-2026.11.02-9548e6163969",
+      "utilityVersion": null,
+      "format": "BIN",
+      "filename": "pl_disableaslr.bin",
+      "bytes": 10276,
+      "sha256": "9548e6163969a77864eb4b9ef946faa9dd2322c08bf31a7af749eb123a08b59f",
+      "firmwares": [
+        "13.00"
+      ],
+      "firmwarePolicy": "primary-host-declared-exact-only",
+      "firmwareEvidence": "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+      "downloadURL": "/downloads/ps4-ps5/ps4-kme-web-disable-aslr-1300/pl_disableaslr.bin",
+      "downloadFilename": "pl_disableaslr.bin",
+      "source": "https://www.kmeps4.site/webpayloads/index.html",
+      "sourceURL": "https://www.kmeps4.site/webpayloads/pl_disableaslr.bin",
+      "hostURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "launchURL": null,
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "loaderEvidence": {
+        "dispatchSource": "https://www.kmeps4.site/webpayloads/index.html",
+        "dispatchSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceFunction": "load_disableaslr",
+        "sourceLoader": "LoadpayloadGoldHEN",
+        "transport": "The original source checks POST /status on loopback 9090, requires ready, then POSTs the exact fetched raw ArrayBuffer to port 9090. No bootstrap/exploit or archive decompression is used for these eighteen files."
+      },
+      "license": "No explicit licence was identified for this exact host-distributed BIN; public source and author attribution are retained without an invented open-source grant.",
+      "instructionsURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "requirements": [
+        "Already homebrew-enabled PS4 with its compatible GoldHEN HTTP BinLoader enabled; this utility does not bootstrap GoldHEN.",
+        "The primary host’s button description explicitly credits a 13.00 port. This snapshot is pinned only to 13.00; no other firmware is inferred from its filename, general SDK support or a similarly named older payload.",
+        "Loading sends the exact hash-pinned raw BIN through the running console service. Transfer acceptance does not prove that the utility completed its operation.",
+        "No payload was run during this source/file review. Native PS5 support is not established for this exact PS4 binary.",
+        "Effect: Runs the source’s Disable ASLR utility for this pinned firmware build."
+      ],
+      "sourceProvenance": {
+        "kind": "primary-host-distribution",
+        "reviewedAt": "2026-11-02T14:49:55.894Z",
+        "sourceSnapshot": "docs/qa/host-kameleon-webpayloads-source.json",
+        "sourceSnapshotSHA256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+        "sourceDescription": "Disable ASLR - 13.00 Port By Al Azif",
+        "sourceLastModified": "Thu, 12 Mar 2026 10:30:03 GMT",
+        "originalFilename": "pl_disableaslr.bin",
+        "exactPublisherMatch": false,
+        "numericPortRelease": null,
+        "exactGitHubSourceBuildMatch": false
+      },
+      "tags": [
+        "PS4",
+        "payload",
+        "BIN",
+        "GoldHEN HTTP",
+        "web utility",
+        "Disable ASLR",
+        "13.00",
+        "Kameleon"
+      ],
+      "effects": "Runs the source’s Disable ASLR utility for this pinned firmware build.",
+      "confirmBeforeLoad": "Apply the Disable ASLR patch to this running PS4?",
+      "changeScope": "kernel-security-setting",
+      "effectsEvidence": {
+        "liveBinaryStrings": "docs/qa/host-kameleon-utility-effects.json",
+        "scope": "Exact-build embedded paths/messages plus clearly identified original-source behavior; no bit-for-bit source rebuild or hardware execution claimed."
+      }
+    }
+  ]
+}

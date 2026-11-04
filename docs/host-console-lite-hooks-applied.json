@@ -1,0 +1,55 @@
+{
+  "updatedAt": "2026-11-03T21:34:46.181Z",
+  "target": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+  "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z",
+  "records": [
+    {
+      "path": "assets/site-background.js",
+      "beforeSha256": "9e95f83705dcc28c02a3ba3bc2b7e799ab0fe089ce255faef5217b21d54687be",
+      "afterSha256": "ca852a3dbb87fce5e370f4b31c29f8d0a31323e77196b5001302dec35588df8b",
+      "bytesBefore": 13748,
+      "bytesAfter": 13951,
+      "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z\\assets\\site-background.js"
+    },
+    {
+      "path": "script.js",
+      "beforeSha256": "8efb5c4d073ef67e429621b119f112b392b5dd2dde291311870ca6fd48666079",
+      "afterSha256": "efe0c7f2a9380225fecb9f767cac5b6e48542ee350b1719f983d5448242d7dc4",
+      "bytesBefore": 37033,
+      "bytesAfter": 37710,
+      "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z\\script.js"
+    },
+    {
+      "path": "languages/i18n.js",
+      "beforeSha256": "2b885e881d2c81ca15e8f013b0d4b228b425e2e63f8131fd4535f0d32cb402c9",
+      "afterSha256": "7c40e84d42797b79b2bba82363f58d7e4cc2c9ee39645918b2fe34383ad20a1c",
+      "bytesBefore": 52757,
+      "bytesAfter": 52985,
+      "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z\\languages\\i18n.js"
+    },
+    {
+      "path": "assets/host-console-lite.js",
+      "afterSha256": "0f6cc71113c7da39838ae84733f896a946c444a0a53dfb2b031853bc7325d090",
+      "bytesAfter": 2825,
+      "added": true
+    },
+    {
+      "path": "assets/host-console-lite.css",
+      "afterSha256": "86c8b112b0e5d9f874d2222333a6d1dffb68ad98e78f3df8659625c58c35807b",
+      "bytesAfter": 3479,
+      "added": true
+    },
+    {
+      "path": "scripts/tests/host-console-lite.test.cjs",
+      "afterSha256": "8a23c91195017526540cdcbd50a48574a8dbfce92d4b54b27bbacbe7cd5de33a",
+      "bytesAfter": 7627,
+      "added": true
+    }
+  ],
+  "trainerCoreUnchanged": true,
+  "trainerFileUnchanged": true,
+  "trainerSha256": "b2de014563c882e75682cfc1b364e8b1958a8904c5521260f6e2950c60a6fbfc",
+  "existingConsoleTrainerBatch": 18,
+  "existingPerformanceCompatible": true,
+  "mutationSafety": "Fresh source bytes checked before writes; every modified source retained in backup. Only authored UI scripts modified. No native runtime, payload, cache, console or serial action."
+}

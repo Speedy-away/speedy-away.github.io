@@ -1,0 +1,49 @@
+{
+  "reviewed": "2026-11-01",
+  "design": {
+    "mode": "preserve",
+    "variance": 3,
+    "motion": 2,
+    "density": 5,
+    "foundation": "existing native HTML/CSS, dark palette, Font Awesome and sidebar navigation"
+  },
+  "images": [
+    {
+      "file": "assets/images/consoles/ps5-relapse.jpg",
+      "source": "https://i.ytimg.com/vi/HqF1rmvA2iE/maxresdefault.jpg",
+      "role": "Supplied video thumbnail"
+    },
+    {
+      "file": "assets/images/consoles/ps5-y2jb.jpg",
+      "source": "https://i.ytimg.com/vi/9ciuKNY7T7w/maxresdefault.jpg",
+      "role": "Supplied video thumbnail"
+    },
+    {
+      "file": "assets/images/consoles/ps4-jailbreak.jpg",
+      "source": "https://i.ytimg.com/vi/F7y-hk5qpxM/maxresdefault.jpg",
+      "role": "Supplied video thumbnail"
+    }
+  ],
+  "videoTranscripts": "Unavailable for all three supplied videos; checked using browser transcript export. Written guide steps cite project documentation.",
+  "incompleteLinks": [
+    "MediaFire DNS tool mirror",
+    "PS4Xplorer Mega URL and file key"
+  ],
+  "compatibilityNotes": [
+    "Relapse linked build supports listed firmware 7.00–13.60; excludes 10.60 and 11.40.",
+    "Y2JB Installer requires an existing compatible exploit and ELF loader.",
+    "PS4 14.00 is marked unstable; arbitrary GoldHEN support is not claimed.",
+    "KB-RPCS3 is marked source-only alpha."
+  ],
+  "navigationMigration": {
+    "oldPrefix": "console/",
+    "newPrefix": "pc/",
+    "pages": [
+      "emulators.html",
+      "playstation-emulators.html",
+      "nintendo-emulators.html",
+      "xbox-emulators.html"
+    ],
+    "redirectsPreserve": "query string and fragment"
+  }
+}

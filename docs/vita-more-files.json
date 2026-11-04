@@ -1,0 +1,776 @@
+{
+  "scope": "vita-more",
+  "checkedAt": "2026-11-02T08:34:50.323Z",
+  "items": [
+    {
+      "id": "moonlight",
+      "files": [
+        {
+          "name": "moonlight.vpk",
+          "version": "0.13.2",
+          "bytes": 2788529,
+          "sha256": "2ed4d1a3960f8344ce7928419c7e925286415ffd6d8369a1e3f1286ae3047e56",
+          "sourceUrl": "https://github.com/xyzz/vita-moonlight/releases/download/0.13.2/moonlight.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-moonlight",
+          "platform": "PS Vita",
+          "category": [
+            "Apps"
+          ],
+          "local": "/downloads/vita-more/moonlight/2ed4d1a3960f/moonlight.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 7,
+            "crc": "passed",
+            "samplePaths": [
+              "sce_sys\\param.sfo",
+              "eboot.bin",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml",
+              "assets\\nerdfont.ttf"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/moonlight.png",
+        "source": "https://github.com/xyzz/vita-moonlight/releases/download/0.13.2/moonlight.vpk#sce_sys/icon0.png",
+        "credit": "xyzz / Moonlight contributors · original package icon",
+        "bytes": 1749,
+        "sha256": "79ea7c0b0471eea5f27d8eaa6b38da9ac524e59632970164f4e8271d9771f0e1"
+      }
+    },
+    {
+      "id": "imago",
+      "files": [
+        {
+          "name": "imago-v1.3.0.vpk",
+          "version": "1.3.0",
+          "bytes": 3736541,
+          "sha256": "73167cc9cc1837181d0e586225d65305a5f49d29f4dede2dac2ba78a02fc0bc5",
+          "sourceUrl": "https://github.com/SevyW/imago/releases/download/v1.3.0/imago-v1.3.0.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-imago",
+          "platform": "PS Vita",
+          "category": [
+            "Themes"
+          ],
+          "local": "/downloads/vita-more/imago/73167cc9cc18/imago-v1.3.0.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 11,
+            "crc": "passed",
+            "samplePaths": [
+              "sce_sys\\param.sfo",
+              "eboot.bin",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml",
+              "assets\\Inter-Regular.ttf",
+              "assets\\Inter-SemiBold.ttf",
+              "assets\\Inter-LICENSE.txt",
+              "assets\\logo.png",
+              "assets\\splash.jpg"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/imago.png",
+        "source": "https://github.com/SevyW/imago/releases/download/v1.3.0/imago-v1.3.0.vpk#sce_sys/icon0.png",
+        "credit": "Sevy · original package icon",
+        "bytes": 8491,
+        "sha256": "80b4bef88b30167b4aadbf68df380cda8a5ce30ec818c55a99d373dca6766a58"
+      },
+      "screenshot": {
+        "local": "/assets/images/vita-more/imago-screenshot.png",
+        "source": "https://raw.githubusercontent.com/SevyW/imago/v1.3.0/docs/images/discover.png",
+        "credit": "Sevy · official Imago emulator screenshot (MIT project)",
+        "creditSource": "https://github.com/SevyW/imago",
+        "bytes": 340287,
+        "sha256": "9bdf89c2126047039cdcb7ab0ae898371d1b5a1ba273934b624db5ddaf09a01f"
+      }
+    },
+    {
+      "id": "custom-themes-manager",
+      "files": [
+        {
+          "name": "CTManager_v4.02.vpk",
+          "version": "4.02",
+          "bytes": 3114645,
+          "sha256": "469fca4a12c7bef3d72f7b3a38b66318c271550d8bfaa9c5da3689409c013c91",
+          "sourceUrl": "https://bitbucket.org/Red_Squirrel/custom-themes-manager/downloads/CTManager_v4.02.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-custom-themes-manager",
+          "platform": "PS Vita",
+          "category": [
+            "Themes"
+          ],
+          "local": "/downloads/vita-more/custom-themes-manager/469fca4a12c7/CTManager_v4.02.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 6,
+            "crc": "passed",
+            "samplePaths": [
+              "sce_sys\\param.sfo",
+              "eboot.bin",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea\\contents\\bg0.png",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/custom-themes-manager.png",
+        "source": "https://bitbucket.org/Red_Squirrel/custom-themes-manager/downloads/CTManager_v4.02.vpk#sce_sys/icon0.png",
+        "credit": "Red Squirrel · original package icon",
+        "bytes": 11096,
+        "sha256": "127d8c01b1e8d612745b99c750e6cfc3fccf77e0c3fcdcac3a8028ac5a449153"
+      }
+    },
+    {
+      "id": "daedalus",
+      "files": [
+        {
+          "name": "DaedalusX64.vpk",
+          "version": "Nightly snapshot 2026-11-02",
+          "bytes": 3152182,
+          "sha256": "b6d077c2845ce252ed6ca6f39356d0b6f85be6b2ecee1db305d7198f0a65f94c",
+          "sourceUrl": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-daedalus",
+          "platform": "PS Vita",
+          "category": [
+            "Emulators"
+          ],
+          "local": "/downloads/vita-more/daedalus/b6d077c2845c/DaedalusX64.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 7,
+            "crc": "passed",
+            "samplePaths": [
+              "sce_sys\\param.sfo",
+              "eboot.bin",
+              "Roboto_compact.ttf",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml"
+            ]
+          }
+        },
+        {
+          "name": "DaedalusX64.zip",
+          "version": "Nightly snapshot 2026-11-02",
+          "bytes": 78694138,
+          "sha256": "9f3b14d6c64e96655dc47b444fb871f19ad98d7de73b047c3433ad07b580e8a0",
+          "sourceUrl": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.zip",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-daedalus",
+          "platform": "PS Vita",
+          "category": [
+            "Emulators"
+          ],
+          "local": "/downloads/vita-more/daedalus/9f3b14d6c64e/DaedalusX64.zip",
+          "verification": {
+            "format": "ZIP",
+            "entries": 633,
+            "crc": "passed",
+            "samplePaths": [
+              "DaedalusX64",
+              "DaedalusX64\\Languages",
+              "DaedalusX64\\Languages\\Japanese.ini",
+              "DaedalusX64\\Languages\\Danish.ini",
+              "DaedalusX64\\Languages\\Deutsch.ini",
+              "DaedalusX64\\Languages\\Romanian.ini",
+              "DaedalusX64\\Languages\\Ukrainian.ini",
+              "DaedalusX64\\Languages\\Russian.ini",
+              "DaedalusX64\\Languages\\Italiano.ini",
+              "DaedalusX64\\Languages\\English.ini",
+              "DaedalusX64\\Languages\\PortugueseBR.ini",
+              "DaedalusX64\\Languages\\Spanish.ini"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/daedalus.png",
+        "source": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.vpk#sce_sys/icon0.png",
+        "credit": "Rinnegatamante / DaedalusX64 team · original package icon",
+        "bytes": 15181,
+        "sha256": "60c60207d3042086a19c85b629f3d15ff3c94afa50584e54887512477e5cd1dd"
+      }
+    },
+    {
+      "id": "mgba",
+      "files": [
+        {
+          "name": "mGBA-0.10.5-vita.7z",
+          "version": "0.10.5",
+          "bytes": 852635,
+          "sha256": "1ac95c786335b26f209e6f840edfb73368eb8357bee1dbc159cfd83335694024",
+          "sourceUrl": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-vita.7z",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-mgba",
+          "platform": "PS Vita",
+          "category": [
+            "Emulators"
+          ],
+          "local": "/downloads/vita-more/mgba/1ac95c786335/mGBA-0.10.5-vita.7z",
+          "verification": {
+            "format": "7Z",
+            "entries": 11,
+            "crc": "passed",
+            "samplePaths": [
+              "mGBA-0.10.5-vita",
+              "mGBA-0.10.5-vita\\licenses",
+              "mGBA-0.10.5-vita\\CHANGES",
+              "mGBA-0.10.5-vita\\LICENSE",
+              "mGBA-0.10.5-vita\\README.md",
+              "mGBA-0.10.5-vita\\README_DE.md",
+              "mGBA-0.10.5-vita\\README_ES.md",
+              "mGBA-0.10.5-vita\\README_ZH_CN.md",
+              "mGBA-0.10.5-vita\\licenses\\blip_buf.txt",
+              "mGBA-0.10.5-vita\\licenses\\inih.txt",
+              "mGBA-0.10.5-vita\\mgba.vpk"
+            ]
+          }
+        },
+        {
+          "name": "mgba.vpk",
+          "version": "0.10.5",
+          "bytes": 784831,
+          "sha256": "215321c19f4e588ee1d04a6ad9973484b9c7e8b7c7da65a0b1c6bb3525225564",
+          "sourceUrl": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-vita.7z",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-mgba",
+          "platform": "PS Vita",
+          "category": [
+            "Emulators"
+          ],
+          "local": "/downloads/vita-more/mgba/215321c19f4e/mgba.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 7,
+            "crc": "passed",
+            "samplePaths": [
+              "sce_sys\\param.sfo",
+              "eboot.bin",
+              "sce_sys\\icon0.png",
+              "sce_sys\\pic0.png",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/mgba.png",
+        "source": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-vita.7z#sce_sys/icon0.png",
+        "credit": "Vicki Pfau / mGBA contributors · original package icon",
+        "bytes": 5573,
+        "sha256": "1066fba46a06896656c93b1691895ab5bc1677406f47b73eb6f15f3c4e9721a1"
+      }
+    },
+    {
+      "id": "chocolate-doom",
+      "files": [
+        {
+          "name": "ChocolateDoom_r3_1.vpk",
+          "version": "Vita r3.1",
+          "bytes": 7221728,
+          "sha256": "373915d5225d7f8cce9f52126a62f82e35a7324b666eed2456dd27a80fb6e74f",
+          "sourceUrl": "https://github.com/fgsfdsfgs/chocolate-doom/releases/download/chocolate-doom-3.0.0-vita-3.1/ChocolateDoom_r3_1.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-chocolate-doom",
+          "platform": "PS Vita",
+          "category": [
+            "Ports"
+          ],
+          "local": "/downloads/vita-more/chocolate-doom/373915d5225d/ChocolateDoom_r3_1.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 10,
+            "crc": "passed",
+            "samplePaths": [
+              "sce_sys\\param.sfo",
+              "eboot.bin",
+              "doom.bin",
+              "heretic.bin",
+              "hexen.bin",
+              "strife.bin",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml"
+            ]
+          }
+        },
+        {
+          "name": "data.zip",
+          "version": "Vita r3.1",
+          "bytes": 3916646,
+          "sha256": "58fe4548dfa74748260044214b3fae76ef09d492d84d3768107867b3b6dbc6cf",
+          "sourceUrl": "https://github.com/fgsfdsfgs/chocolate-doom/releases/download/chocolate-doom-3.0.0-vita-3.1/data.zip",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-chocolate-doom",
+          "platform": "PS Vita",
+          "category": [
+            "Ports"
+          ],
+          "local": "/downloads/vita-more/chocolate-doom/58fe4548dfa7/data.zip",
+          "verification": {
+            "format": "ZIP",
+            "entries": 20,
+            "crc": "passed",
+            "samplePaths": [
+              "data",
+              "data\\chocolate",
+              "data\\chocolate\\chocolate-doom.cfg",
+              "data\\chocolate\\chocolate-heretic.cfg",
+              "data\\chocolate\\chocolate-hexen.cfg",
+              "data\\chocolate\\chocolate-strife.cfg",
+              "data\\chocolate\\default.cfg",
+              "data\\chocolate\\heretic.cfg",
+              "data\\chocolate\\hexen.cfg",
+              "data\\chocolate\\iwads",
+              "data\\chocolate\\iwads\\doom1.wad",
+              "data\\chocolate\\iwads\\heretic1.wad"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/chocolate-doom.png",
+        "source": "https://github.com/fgsfdsfgs/chocolate-doom/releases/download/chocolate-doom-3.0.0-vita-3.1/ChocolateDoom_r3_1.vpk#sce_sys/icon0.png",
+        "credit": "fgsfds / Chocolate Doom contributors · original package icon",
+        "bytes": 11888,
+        "sha256": "b3929f534a52e00809bbe0ba0cb9d13a71ac1637b81537791c36ef25518376a0"
+      }
+    },
+    {
+      "id": "supertux",
+      "files": [
+        {
+          "name": "SuperTux-PSVITA.vpk",
+          "version": "1.04",
+          "bytes": 10481119,
+          "sha256": "5edea0830269795b4531ef8e3903a08a84e260ffad72a986a80d20328c418510",
+          "sourceUrl": "https://github.com/theheroGAC/SuperTux-PSVITA/releases/download/1.04/SuperTux-PSVITA.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-supertux",
+          "platform": "PS Vita",
+          "category": [
+            "Games"
+          ],
+          "local": "/downloads/vita-more/supertux/5edea0830269/SuperTux-PSVITA.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 724,
+            "crc": "passed",
+            "samplePaths": [
+              "sce_sys\\param.sfo",
+              "eboot.bin",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml",
+              "data\\credits.txt",
+              "data\\extro-bonus.txt",
+              "data\\extro-bonus2.txt",
+              "data\\extro.txt",
+              "data\\images\\background\\arctis2.jpg",
+              "data\\images\\background\\arctis_dark.jpg"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/supertux.png",
+        "source": "https://github.com/theheroGAC/SuperTux-PSVITA/releases/download/1.04/SuperTux-PSVITA.vpk#sce_sys/icon0.png",
+        "credit": "theheroGAC / DeltaResero / SuperTux team · original package icon",
+        "bytes": 6502,
+        "sha256": "9fc9a61bd49329caa59b03c0f0256bfabe8fa995f36e9b75d7d9f5c923659088"
+      }
+    },
+    {
+      "id": "jumpnbump",
+      "files": [
+        {
+          "name": "jumpnbump_1.00.vpk",
+          "version": "Vita 1.00 (release tag 1.02)",
+          "bytes": 1286536,
+          "sha256": "e58de95513d797f3d8c7a9cf27b2d0efa4c416506fca1d3b1b7a31f74f2112d7",
+          "sourceUrl": "https://github.com/rsn8887/jumpnbump/releases/download/1.02/jumpnbump_1.00.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-jumpnbump",
+          "platform": "PS Vita",
+          "category": [
+            "Games"
+          ],
+          "local": "/downloads/vita-more/jumpnbump/e58de95513d7/jumpnbump_1.00.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 9,
+            "crc": "passed",
+            "samplePaths": [
+              "eboot.bin",
+              "sce_sys",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea",
+              "sce_sys\\livearea\\contents",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\param.sfo"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/jumpnbump.png",
+        "source": "https://github.com/rsn8887/jumpnbump/releases/download/1.02/jumpnbump_1.00.vpk#sce_sys/icon0.png",
+        "credit": "rsn8887 / Brainchild Design / Jump ’n’ Bump contributors · original package icon",
+        "bytes": 11008,
+        "sha256": "33b34ae76ed3c6568e7381ccae0e8bf2da846543c8003ac592cbf15908f68d6b"
+      },
+      "screenshot": {
+        "local": "/assets/images/vita-more/jumpnbump-screenshot.png",
+        "source": "https://raw.githubusercontent.com/rsn8887/jumpnbump/master/screenshots/jumpnbump_shot_1.png",
+        "credit": "rsn8887 / Brainchild Design · official port screenshot",
+        "creditSource": "https://github.com/rsn8887/jumpnbump#thanks",
+        "bytes": 48416,
+        "sha256": "6a05aecfe667fdfb636e4d1fb74c213bbd28ac58a988b173de28b214d092b9bb"
+      }
+    },
+    {
+      "id": "enigma",
+      "files": [
+        {
+          "name": "enigma_1.11.vpk",
+          "version": "Vita 1.11 (release tag 1.16)",
+          "bytes": 5209786,
+          "sha256": "13041d9edb54c45ae83c7289905315b9eccd616d81164bdd87d0eb78910fd7a7",
+          "sourceUrl": "https://github.com/rsn8887/Enigma/releases/download/1.16/enigma_1.11.vpk",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-enigma",
+          "platform": "PS Vita",
+          "category": [
+            "Games"
+          ],
+          "local": "/downloads/vita-more/enigma/13041d9edb54/enigma_1.11.vpk",
+          "verification": {
+            "format": "VPK",
+            "entries": 12,
+            "crc": "passed",
+            "samplePaths": [
+              "eboot.bin",
+              "sce_sys",
+              "sce_sys\\.DS_Store",
+              "sce_sys\\icon0.png",
+              "sce_sys\\livearea",
+              "sce_sys\\livearea\\contents",
+              "sce_sys\\livearea\\contents\\.DS_Store",
+              "sce_sys\\livearea\\contents\\startup.png",
+              "sce_sys\\livearea\\contents\\template.xml",
+              "sce_sys\\livearea\\contents\\bg.png",
+              "sce_sys\\livearea\\.DS_Store",
+              "sce_sys\\param.sfo"
+            ]
+          }
+        },
+        {
+          "name": "data.zip",
+          "version": "Vita 1.11 (release tag 1.16)",
+          "bytes": 70226743,
+          "sha256": "e997b169d3639f3759f840f4f3a7afcfb3129382ec9fe761511f99f6cf041bec",
+          "sourceUrl": "https://github.com/rsn8887/Enigma/releases/download/1.16/data.zip",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-enigma",
+          "platform": "PS Vita",
+          "category": [
+            "Games"
+          ],
+          "local": "/downloads/vita-more/enigma/e997b169d363/data.zip",
+          "verification": {
+            "format": "ZIP",
+            "entries": 10014,
+            "crc": "passed",
+            "samplePaths": [
+              "enigma",
+              "enigma\\PEROXYD.DAT",
+              "enigma\\OXYDEX.DAT",
+              "enigma\\locale",
+              "enigma\\locale\\sk",
+              "enigma\\locale\\sk\\LC_MESSAGES",
+              "enigma\\locale\\sk\\LC_MESSAGES\\enigma.mo",
+              "enigma\\locale\\pl",
+              "enigma\\locale\\pl\\LC_MESSAGES",
+              "enigma\\locale\\pl\\LC_MESSAGES\\enigma.mo",
+              "enigma\\locale\\sv",
+              "enigma\\locale\\sv\\LC_MESSAGES"
+            ]
+          }
+        }
+      ],
+      "image": {
+        "local": "/assets/images/vita-more/enigma.png",
+        "source": "https://github.com/rsn8887/Enigma/releases/download/1.16/enigma_1.11.vpk#sce_sys/icon0.png",
+        "credit": "rsn8887 / Enigma team · original package icon",
+        "bytes": 7948,
+        "sha256": "b214fb53043f0b5290beeaa269bfcb26e0ec68a34061328ac596c9fdc02c2037"
+      },
+      "screenshot": {
+        "local": "/assets/images/vita-more/enigma-screenshot.jpg",
+        "source": "https://raw.githubusercontent.com/rsn8887/Enigma/master/screenshots/enigma_vita_4.jpg",
+        "credit": "rsn8887 / Enigma team · official Vita screenshot",
+        "creditSource": "https://github.com/rsn8887/Enigma/blob/master/README.MD",
+        "bytes": 141840,
+        "sha256": "bb559f433c9ccb2ca3b300b232314f666da1633b6cb1ee8ac6d042474c6fb752"
+      }
+    },
+    {
+      "id": "psvshell",
+      "files": [
+        {
+          "name": "PSVshell.skprx",
+          "version": "1.1 stable",
+          "bytes": 32732,
+          "sha256": "032b77c2863f93895343b23132e325c12299d478a6e7a3417a114722f034c63e",
+          "sourceUrl": "https://github.com/Electry/PSVshell/releases/download/v1.1/PSVshell.skprx",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-psvshell",
+          "platform": "PS Vita",
+          "category": [
+            "Plugins"
+          ],
+          "local": "/downloads/vita-more/psvshell/032b77c2863f/PSVshell.skprx",
+          "verification": {
+            "format": "SKPRX",
+            "magic": "SCE SELF"
+          }
+        }
+      ],
+      "screenshot": {
+        "local": "/assets/images/vita-more/psvshell-screenshot.png",
+        "source": "https://user-images.githubusercontent.com/12598379/71311344-c1f68980-241e-11ea-9ca1-4207d4887002.png",
+        "credit": "Electry · official PSVshell HUD screenshot",
+        "creditSource": "https://github.com/Electry/PSVshell",
+        "bytes": 149570,
+        "sha256": "16e092bb0f025458e4dc958279e2d1122e021219d5777eeedae91dbc21295ec4"
+      }
+    },
+    {
+      "id": "shellbat",
+      "files": [
+        {
+          "name": "shellbat.suprx",
+          "version": "r10",
+          "bytes": 3014,
+          "sha256": "d169ca70683795dd7257998f55c8b922b664343bf1d45bc0cf146a94bccb38ec",
+          "sourceUrl": "https://github.com/nowrep/vita-shellbat/releases/download/r10/shellbat.suprx",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-shellbat",
+          "platform": "PS Vita",
+          "category": [
+            "Plugins"
+          ],
+          "local": "/downloads/vita-more/shellbat/d169ca706837/shellbat.suprx",
+          "verification": {
+            "format": "SUPRX",
+            "magic": "SCE SELF"
+          }
+        }
+      ],
+      "screenshot": {
+        "local": "/assets/images/vita-more/shellbat-screenshot.jpg",
+        "source": "https://raw.githubusercontent.com/nowrep/vita-shellbat/r10/doc/screenshot.jpg",
+        "credit": "nowrep · official shellbat screenshot (MIT repository)",
+        "creditSource": "https://github.com/nowrep/vita-shellbat",
+        "bytes": 5191,
+        "sha256": "6f75ac5c73fe5e346730a0dc0f2d6997f628a282f6ef38353c5f958de309f11c"
+      }
+    },
+    {
+      "id": "ds34vita",
+      "files": [
+        {
+          "name": "ds34vita.skprx",
+          "version": "1.1",
+          "bytes": 12618,
+          "sha256": "5212c4460d105d417829419df8ef5abc803ff13b1332f991263e6ea4ee412fb6",
+          "sourceUrl": "https://github.com/MERLev/ds34vita/releases/download/v1.1/ds34vita.skprx",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-ds34vita",
+          "platform": "PS Vita",
+          "category": [
+            "Plugins"
+          ],
+          "local": "/downloads/vita-more/ds34vita/5212c4460d10/ds34vita.skprx",
+          "verification": {
+            "format": "SKPRX",
+            "magic": "SCE SELF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "revita",
+      "files": [
+        {
+          "name": "reVita.skprx",
+          "version": "1.0.8",
+          "bytes": 86609,
+          "sha256": "64a6dc604bd251a25fc0ce15e3a30e7422f3987191aac5c16174a5e00df28e09",
+          "sourceUrl": "https://github.com/MERLev/reVita/releases/download/1.0.8/reVita.skprx",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-revita",
+          "platform": "PS Vita",
+          "category": [
+            "Plugins"
+          ],
+          "local": "/downloads/vita-more/revita/64a6dc604bd2/reVita.skprx",
+          "verification": {
+            "format": "SKPRX",
+            "magic": "SCE SELF"
+          }
+        },
+        {
+          "name": "ioplus.skprx",
+          "version": "1.0",
+          "bytes": 1849,
+          "sha256": "a3b149ef17407483db1ee2419c9ca186550b16614c7f3a1c1343cafe8728fdad",
+          "sourceUrl": "https://github.com/MERLev/reVita/releases/download/1.0/ioplus.skprx",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-revita",
+          "platform": "PS Vita",
+          "category": [
+            "Plugins"
+          ],
+          "local": "/downloads/vita-more/revita/a3b149ef1740/ioplus.skprx",
+          "verification": {
+            "format": "SKPRX",
+            "magic": "SCE SELF"
+          }
+        },
+        {
+          "name": "reVitaMotion.suprx",
+          "version": "1.0.8",
+          "bytes": 5878,
+          "sha256": "d6242a39b88434c22e8ba14a3e245f7e5a80970b1175b2fcf4eaa1371e92a6ef",
+          "sourceUrl": "https://github.com/MERLev/reVita/releases/download/1.0.8/reVitaMotion.suprx",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-revita",
+          "platform": "PS Vita",
+          "category": [
+            "Plugins"
+          ],
+          "local": "/downloads/vita-more/revita/d6242a39b884/reVitaMotion.suprx",
+          "verification": {
+            "format": "SUPRX",
+            "magic": "SCE SELF"
+          }
+        }
+      ],
+      "screenshot": {
+        "local": "/assets/images/vita-more/revita-screenshot.png",
+        "source": "https://raw.githubusercontent.com/MERLev/reVita/1.0.8/include/screenshot.png",
+        "credit": "MERLev · official reVita menu screenshot",
+        "creditSource": "https://github.com/MERLev/reVita",
+        "bytes": 261907,
+        "sha256": "92bee5171c7bb5f3e7550e66d24daeb4de85b864fcd67ca03dd24dac46d3d9a0"
+      }
+    },
+    {
+      "id": "minimal-theme",
+      "files": [
+        {
+          "name": "MINIMAL-v01.00.zip",
+          "version": "01.00",
+          "bytes": 7051543,
+          "sha256": "05625c766d9dc5f767ff1c3cbf8f078d8e9b519599fae77e9abd4bd31f43168f",
+          "sourceUrl": "https://psvt.ovh/download.php?id=1fcf7e0a23b6e77e7928ca717b2807a4a49e9c64",
+          "archiveRole": [
+            "Builds"
+          ],
+          "itemId": "vita-more-minimal-theme",
+          "platform": "PS Vita",
+          "category": [
+            "Themes"
+          ],
+          "local": "/downloads/vita-more/minimal-theme/05625c766d9d/MINIMAL-v01.00.zip",
+          "verification": {
+            "format": "ZIP",
+            "entries": 46,
+            "crc": "passed",
+            "samplePaths": [
+              "gb8.png",
+              "preview_page.png",
+              "preview_lockscreen.png",
+              "theme.xml",
+              "gb7t.png",
+              "gb7.png",
+              "cbasepage.png",
+              "curpage.png",
+              "ilogo1.png",
+              "ilogo.png",
+              "preview_thumbnail.png",
+              "icon_music.png"
+            ]
+          }
+        }
+      ],
+      "screenshot": {
+        "local": "/assets/images/vita-more/minimal-theme-preview.png",
+        "source": "https://psvt.ovh/theme.php?id=1780106831",
+        "credit": "Alberto Munguia · MINIMAL original packaged dashboard preview; image rights remain with author",
+        "bytes": 77763,
+        "sha256": "9333c6848f461578e358e0e59dc86b5847a64033eb1b47531a7c128f0f1ecbff"
+      }
+    }
+  ]
+}

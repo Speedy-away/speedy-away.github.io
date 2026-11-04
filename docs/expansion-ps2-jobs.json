@@ -1,0 +1,11 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {"id":"ps2-freemcboot","title":"FreeMcBoot 1.966 installer","platform":"PS2","category":"Tools","project":"FreeMcBoot","version":"1.966-custom-6aa96da","filename":"FMCB-1966.7z","url":"https://github.com/israpps/FreeMcBoot-Installer/releases/download/latest/FMCB-1966.7z","pages":["console/retro/ps2.html"],"archiveRole":["Builds"],"type":"tool","mirror":false},
+    {"id":"ps2-opentuna","title":"OpenTuna installer","platform":"PS2","category":"Tools","project":"OpenTuna","version":"build-9b61aee","filename":"OpenTuna_Installer.elf","url":"https://github.com/ps2homebrew/opentuna-installer/releases/download/latest/OpenTuna_Installer.elf","pages":["console/retro/ps2.html"],"archiveRole":["Builds"],"type":"tool","mirror":false},
+    {"id":"ps2-opl","title":"Open PS2 Loader","platform":"PS2","category":"Tools","project":"Open PS2 Loader","version":"v1.1.0","filename":"OPNPS2LD-v1.1.0.7z","url":"https://github.com/ps2homebrew/Open-PS2-Loader/releases/download/v1.1.0/OPNPS2LD-v1.1.0.7z","pages":["console/retro/ps2.html"],"archiveRole":["Builds"],"type":"tool","mirror":false},
+    {"id":"ps2-wlaunchelf","title":"wLaunchELF","platform":"PS2","category":"Tools","project":"wLaunchELF","version":"v4.43a-dev-57c2049","filename":"BOOT.ELF","url":"https://github.com/ps2homebrew/wLaunchELF/releases/download/latest/BOOT.ELF","pages":["console/retro/ps2.html"],"archiveRole":["Builds"],"type":"tool","mirror":false},
+    {"id":"ps2-apollo","title":"Apollo Save Tool PS2","platform":"PS2","category":"Tools","project":"Apollo Save Tool","version":"v1.0.2","filename":"apollo-ps2.zip","url":"https://github.com/bucanero/apollo-ps2/releases/download/v1.0.2/apollo-ps2.zip","pages":["console/retro/ps2.html"],"archiveRole":["Builds"],"type":"tool","mirror":false},
+    {"id":"ps2-ps2ident","title":"PS2Ident","platform":"PS2","category":"Tools","project":"PS2Ident","version":"v0.850-ca2b5acc","filename":"PS2Ident-ca2b5acc.7z","url":"https://github.com/ps2homebrew/PS2Ident/releases/download/stable/PS2Ident-ca2b5acc.7z","pages":["console/retro/ps2.html"],"archiveRole":["Builds"],"type":"tool","mirror":false}
+  ]
+}

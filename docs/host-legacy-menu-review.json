@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T09:57:43.293Z",
+  "method": "Primary host source inspection, selected compiled file download and BZIP2 decompression only. No payload/host exploit JavaScript was executed.",
+  "scope": "Older GTA V PS4 menu variants for exact game updates and firmware9.00; no PS5 or broader firmware claims.",
+  "counts": {
+    "actions": 15,
+    "nativeHTTP": 4,
+    "upstreamHostOnly": 11,
+    "readyFiles": 15,
+    "archiveFiles": 26,
+    "readyBytes": 17650488
+  },
+  "sources": [
+    {
+      "repo": "KAR0218/KAR0218.github.io",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "sources": [
+        {
+          "file": "900New/index.html",
+          "url": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/index.html",
+          "sha256": "a7e96f6170279242780d77a79ceee6ea3ebba82a1e165ca49bb02ec401015e26"
+        },
+        {
+          "file": "900New/README.md",
+          "url": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/README.md",
+          "error": "404 https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/README.md"
+        },
+        {
+          "file": "900New/payload.js",
+          "url": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/payload.js",
+          "sha256": "3a0cb7491cdb4aecbb91daf0822aff301257629be7615134d512b8e49dbf818f"
+        }
+      ]
+    },
+    {
+      "repo": "Nazky/PSFree",
+      "commit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "sources": [
+        {
+          "file": "README.md",
+          "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/README.md",
+          "sha256": "ef9206297f3a5ac880889586985dfca1384ebf7180901c19cb6c904bbfc9ac74"
+        },
+        {
+          "file": "payloads/payloads.js",
+          "url": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+          "sha256": "0bd3f4d58601838642b726ce88ad79fdcd1bb27198737384554a12bfd5ddd42f"
+        }
+      ]
+    },
+    {
+      "repo": "kmeps4/psfree900a",
+      "commit": "da9c138e47c52773aa9ab999cff69590c573667f",
+      "sources": [
+        {
+          "file": "README.md",
+          "url": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/README.md",
+          "sha256": "c934b153860efd82f24546a6e0844b39346d19fd7389b21107747b1adeebad75"
+        },
+        {
+          "file": "index.html",
+          "url": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+          "sha256": "da64d80381bcd1a5139b515846864108e05e5d4e3961c879c167d9f8d884de1b"
+        }
+      ]
+    }
+  ],
+  "notImported": [
+    {
+      "candidate": "Nazky WildeModz game1.34",
+      "reason": "Pinned payload dispatcher references payloads/Bins/GTA/WildeModz-1.34.bin, absent from the pinned repository tree. A different 1.33 file is present but was not silently substituted."
+    },
+    {
+      "candidate": "Kameleon WildeModz menu1.2 versus1.3",
+      "reason": "Pinned source hover caption says1.2 while dispatch message says1.3 for game1.32/1.33. The binaries are imported at their confirmed game updates but menuVersion stays null with the contradiction recorded."
+    }
+  ],
+  "liveReaderLimits": [
+    {
+      "url": "https://www.kmeps4.site/",
+      "result": "Automated web reader returned403; pinned original GitHub source used for compatibility/file mapping."
+    },
+    {
+      "url": "https://es7in1.site/ps4/nazky/index.html",
+      "result": "Automated web reader unavailable; pinned original Nazky source used."
+    }
+  ],
+  "verification": {
+    "readyMirrorsAndArchiveHashes": "15ready mirrors and26F:files match recorded bytes/SHA256",
+    "masterInventory": "All15items/26files recorded in docs/download-audit.json",
+    "olderDownloads": "Existing action catalogues and older downloads untouched; no files moved or deleted.",
+    "menuVersions": "Game update and menu version are separate. Unknown/contradictory menu versions remain null.",
+    "hardwareExecutionTested": false,
+    "payloadsExecuted": false
+  },
+  "definitions": [
+    {
+      "id": "ps4-legacy-nazky-bq134",
+      "family": "BeefQueefMod",
+      "gameVersion": "1.34",
+      "menuVersion": null,
+      "host": "Nazky",
+      "sha256": "e34c81b6464dbc58fe69458823d8e4029c93d4e9bfdc601c56f8430b4c3aaaf5",
+      "bytes": 1063880,
+      "source": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.34.bin",
+      "dispatch": {
+        "dispatchSource": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "function": "load_GTABQ134",
+        "file": "BeefQueefMod-1.34.bin",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "menuFamily": "BeefQueefMod"
+    },
+    {
+      "id": "ps4-legacy-nazky-bq138",
+      "family": "BeefQueefMod",
+      "gameVersion": "1.38",
+      "menuVersion": null,
+      "host": "Nazky",
+      "sha256": "1c649bab177d47b0128b28b16e1b5002195f5ebf4d4eddb06dc54f6965f93e9e",
+      "bytes": 1073836,
+      "source": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/BeefQueefMod-1.38.bin",
+      "dispatch": {
+        "dispatchSource": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "function": "load_GTABQ138",
+        "file": "BeefQueefMod-1.38.bin",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "menuFamily": "BeefQueefMod"
+    },
+    {
+      "id": "ps4-legacy-nazky-wilde132",
+      "family": "WildeModz",
+      "gameVersion": "1.32",
+      "menuVersion": null,
+      "host": "Nazky",
+      "sha256": "f8ec40617e59fcfbba033547f17a567c82ed50fb00563f3349f0d88283ccd2b9",
+      "bytes": 1074320,
+      "source": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/WildeModz-1.32.bin",
+      "dispatch": {
+        "dispatchSource": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "function": "load_GTAWM132",
+        "file": "WildeModz-1.32.bin",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "menuFamily": "WildeModz"
+    },
+    {
+      "id": "ps4-legacy-nazky-wilde138",
+      "family": "WildeModz",
+      "gameVersion": "1.38",
+      "menuVersion": null,
+      "host": "Nazky",
+      "sha256": "2da00a14596b5e148097d209c3ca440c064e85356d10d61f584743a59895ce92",
+      "bytes": 592864,
+      "source": "https://raw.githubusercontent.com/Nazky/PSFree/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/Bins/GTA/WildeModz-1.38.bin",
+      "dispatch": {
+        "dispatchSource": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+        "function": "load_GTAWM138",
+        "file": "WildeModz-1.38.bin",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090,
+        "statusPath": "/status",
+        "readyStatus": "ready"
+      },
+      "menuFamily": "WildeModz"
+    },
+    {
+      "id": "ps4-legacy-kameleon-bq138-thief",
+      "family": "BeefQueefMod",
+      "gameVersion": "1.38",
+      "menuVersion": null,
+      "host": "Kameleon",
+      "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+      "bytes": 1073700,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_BeefQueefMod138.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavbeefqueef138",
+        "file": "pl_BeefQueefMod138.bin.bz2",
+        "menuVersion": null,
+        "note": "Thief Edition"
+      },
+      "run": null,
+      "menuFamily": "BeefQueefMod"
+    },
+    {
+      "id": "ps4-legacy-kameleon-bq146",
+      "family": "BeefQueefMod",
+      "gameVersion": "1.46",
+      "menuVersion": null,
+      "host": "Kameleon",
+      "sha256": "fbae10e4d9c0ac09e745755959a1c71a444a1c16bb5da2c51361e56fef1e2c00",
+      "bytes": 480804,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_BeefQueefMod146.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavbeefqueef146",
+        "file": "pl_BeefQueefMod146.bin.bz2",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "BeefQueefMod"
+    },
+    {
+      "id": "ps4-legacy-kameleon-bq147",
+      "family": "BeefQueefMod",
+      "gameVersion": "1.47",
+      "menuVersion": null,
+      "host": "Kameleon",
+      "sha256": "a8a6789cd8873224dde81f4924cfd12f9d87f430e552d50064e9aabd23171ead",
+      "bytes": 480740,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_BeefQueefMod147.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavbeefqueef147",
+        "file": "pl_BeefQueefMod147.bin.bz2",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "BeefQueefMod"
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde132",
+      "family": "WildeModz",
+      "gameVersion": "1.32",
+      "menuVersion": null,
+      "host": "Kameleon",
+      "sha256": "007f3418bee3f2fe27034262a84a148a9f8c0577e517133286a19c4bf18d55eb",
+      "bytes": 1080016,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_132.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavwildemodz132",
+        "file": "pl_WildeModz_132.bin.bz2",
+        "menuVersion": null,
+        "note": "Source lists menu 1.2 and 1.3 inconsistently; menu version unconfirmed"
+      },
+      "run": null,
+      "menuFamily": "WildeModz"
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde133",
+      "family": "WildeModz",
+      "gameVersion": "1.33",
+      "menuVersion": null,
+      "host": "Kameleon",
+      "sha256": "d9ebf4cdf4150ac59865d7744713dfc99037ad75b08ea7551c5bcb3e992972a9",
+      "bytes": 1080016,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_133.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavwildemodz133",
+        "file": "pl_WildeModz_133.bin.bz2",
+        "menuVersion": null,
+        "note": "Source lists menu 1.2 and 1.3 inconsistently; menu version unconfirmed"
+      },
+      "run": null,
+      "menuFamily": "WildeModz"
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde146",
+      "family": "WildeModz",
+      "gameVersion": "1.46",
+      "menuVersion": null,
+      "host": "Kameleon",
+      "sha256": "9a8bc055f89a056b12b5bfd56c8b4b55f4f66025e9bea48475eae38b25f1a45b",
+      "bytes": 2610904,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_146.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavwildemodz146",
+        "file": "pl_WildeModz_146.bin.bz2",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "WildeModz"
+    },
+    {
+      "id": "ps4-legacy-kameleon-wilde147",
+      "family": "WildeModz",
+      "gameVersion": "1.47",
+      "menuVersion": null,
+      "host": "Kameleon",
+      "sha256": "beac207b97220a57f22c9a7ec9064e6fdb2ef98ec33852b2ee1c5f7a1717010f",
+      "bytes": 2819184,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_WildeModz_147.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavwildemodz147",
+        "file": "pl_WildeModz_147.bin.bz2",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "WildeModz"
+    },
+    {
+      "id": "ps4-legacy-kameleon-expulsion138",
+      "family": "Expulsion",
+      "gameVersion": "1.38",
+      "menuVersion": "4.0",
+      "host": "Kameleon",
+      "sha256": "c3df5201df8b17add26ea58794d3ec95d39a021586f1e4e2517b48fa540754e1",
+      "bytes": 1055312,
+      "source": "https://raw.githubusercontent.com/kmeps4/psfree900a/da9c138e47c52773aa9ab999cff69590c573667f/pl_LushModz40_138.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/kmeps4/psfree900a/blob/da9c138e47c52773aa9ab999cff69590c573667f/index.html",
+        "function": "load_gtavexpulsion138",
+        "file": "pl_LushModz40_138.bin.bz2",
+        "menuVersion": "4.0",
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "Expulsion"
+    },
+    {
+      "id": "ps4-legacy-karo-expulsion135",
+      "family": "Expulsion",
+      "gameVersion": "1.35",
+      "menuVersion": null,
+      "host": "Karo",
+      "sha256": "ef21be6c36b117ba8b362c1488ae887a0daece3d7a791bc2ac3130a6d27ff1af",
+      "bytes": 1055264,
+      "source": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/LushModz-1.0-9.00.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/index.html",
+        "function": "load_expul",
+        "file": "LushModz-1.0-9.00.bin.bz2",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "Expulsion"
+    },
+    {
+      "id": "ps4-legacy-karo-menubase127",
+      "family": "Menu Base",
+      "gameVersion": "1.27",
+      "menuVersion": null,
+      "host": "Karo",
+      "sha256": "822d4897941512e8cbf29806e1985848aceb5c54bb3f9149d52df07e8b0e8545",
+      "bytes": 1054984,
+      "source": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/gtavmb127.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/index.html",
+        "function": "load_GTAVMB",
+        "file": "gtavmb127.bin.bz2",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "Menu Base"
+    },
+    {
+      "id": "ps4-legacy-karo-lts127",
+      "family": "LTS",
+      "gameVersion": "1.27",
+      "menuVersion": null,
+      "host": "Karo",
+      "sha256": "ead0911d40795a0503305dd739680bb3ebd3f51e9b65a9878101c4bd9c2aaf10",
+      "bytes": 1054664,
+      "source": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/gtavLTS127.bin.bz2",
+      "dispatch": {
+        "dispatchSource": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/900New/index.html",
+        "function": "load_GTAVLTS",
+        "file": "gtavLTS127.bin.bz2",
+        "menuVersion": null,
+        "note": null
+      },
+      "run": null,
+      "menuFamily": "LTS / LRS"
+    }
+  ]
+}

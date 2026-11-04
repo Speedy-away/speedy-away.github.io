@@ -1,0 +1,62 @@
+{
+  "reviewedAt": "2026-11-02",
+  "method": "Primary project and maintained guide pages read; no console builds executed.",
+  "sources": [
+    {
+      "url": "https://wiiu.hacks.guide/",
+      "supports": [
+        "The maintained initial setup covers all Wii U models and regions, up to 5.5.6 for North American consoles and 5.5.5 for other regions.",
+        "A 32 GB SD card is enough for most initial uses."
+      ]
+    },
+    {
+      "url": "https://wiiu.hacks.guide/aroma/sd-preparation.html",
+      "supports": [
+        "Use FAT32 and 32 KiB allocation units; do not label the card wiiu.",
+        "Merge the complete wiiu folder into the SD root, preserving its environment layout."
+      ]
+    },
+    {
+      "url": "https://wiiu.hacks.guide/aroma/getting-started",
+      "supports": [
+        "WUHB files integrate with the Wii U Menu through the homebrew_on_menu plugin.",
+        "Aroma cannot run legacy ELF applications and some older RPX applications, including the legacy RetroArch build."
+      ]
+    },
+    {
+      "url": "https://wiiu.hacks.guide/aroma/finalizing-setup",
+      "supports": [
+        "Tiramisu is archived, but the guide retains a separate legacy application route.",
+        "vWii is modded separately from Wii U mode.",
+        "Bloopair setup modules use modules/setup, while ordinary WMS modules use modules."
+      ]
+    },
+    {
+      "url": "https://github.com/wiiu-env/sdcafiine_plugin",
+      "supports": [
+        "SDCafiine WPS requires WiiUPluginLoaderBackend and ContentRedirectionModule.",
+        "The current mod root is sd:/wiiu/sdcafiine/<TITLEID>/<MODPACK>/content or aoc.",
+        "Disable SDCafiine in its plugin settings, or use X at Preparing modpack when that screen remains enabled."
+      ]
+    },
+    {
+      "url": "https://github.com/ThemeCafe/Themiify",
+      "supports": [
+        "Themiify installs local .utheme files from sd:/wiiu/themes and uses StyleMiiU to display them.",
+        "It requires original unmodified Wii U Menu NAND files."
+      ]
+    },
+    {
+      "url": "https://themecafe.github.io/Docs/faq/",
+      "supports": [
+        "Themiify and StyleMiiU load themes from SD instead of replacing Wii U system files.",
+        "European menus have additional language resources and tighter theme memory limits; individual themes may need optimization.",
+        "The documented recovery routes include moving the installed theme off SD or booting Aroma Safe Mode with L + Up + SELECT."
+      ]
+    }
+  ],
+  "limits": [
+    "Guide firmware bounds describe initial setup and do not certify every app or theme on every system version.",
+    "No physical Wii U installation, launching, theme application or recovery was performed."
+  ]
+}

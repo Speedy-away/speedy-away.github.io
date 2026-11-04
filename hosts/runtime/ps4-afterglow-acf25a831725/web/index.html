@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="landing" lang="en" manifest="cache.appcache">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>afterglow</title>
+    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="landing-layout.css"><script defer src="site-load-receipt.js"></script></head>
+  <body>
+    <!-- Every run starts from here. The referrer guard in jb.js arms the chain
+         only when it was reached from this page, so that a browser restoring
+         its last session cannot re-run it unattended. -->
+    <div id="brand"><nav aria-label="Page navigation"><a href="../../../ps4/firmware/"><span aria-hidden="true">←</span> <span>Back</span></a><a href="../../../ps4/">PS4 host</a><a href="../../../ps4/firmware/">Firmware selection</a></nav><b>afterglow</b></div>
+
+    <div class="shell">
+      <img class="meme" src="meme.png" alt="" />
+
+      <main class="panel">
+        <p id="browser-firmware" role="status"></p><p class="lede">PS4 kernel exploit &middot; firmware 13.52 and 14.00</p>
+
+        <form class="pick" id="pick">
+          <label class="opt">
+            <input type="radio" name="payload" value="hen" />
+            <span>ps4-hen</span>
+          </label>
+          <label class="opt">
+            <input type="radio" name="payload" value="goldhen" checked />
+            <span>GoldHEN</span>
+          </label>
+
+          <label class="opt opt-auto">
+            <input type="checkbox" id="auto" />
+            <span>Autostart</span>
+          </label>
+
+          <button class="btn" id="start" type="submit">Start</button>
+          <button class="btn" id="cancel" type="button">Cancel</button><p><span>Autostart</span> · <span id="count" aria-live="polite"></span></p>
+          <p class="count" id="cache" aria-live="polite"></p>
+        </form>
+      </main>
+    </div>
+
+    <p class="byline">by well0nez/m0zz · <a href="../../../ps4/firmware/">Firmware selection</a> · <a href="../README.md">Source &amp; licenses</a></p>
+    <script src="entry-i18n.js"></script><script src="launch.js"></script>
+  </body>
+</html>

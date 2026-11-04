@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "id": "lutris",
+      "group": "launchers-proton",
+      "title": "Lutris",
+      "kind": "Game launcher",
+      "categories": [
+        "launchers"
+      ],
+      "search": "lutris non steam games launcher windows wine proton installer library shortcuts discover flatpak",
+      "icon": "/assets/images/steamdeck/lutris.png",
+      "description": "Manage non-Steam games and launchers in one library. Install Lutris through Discover in Desktop Mode, then create Steam shortcuts for the games you want in Game Mode.",
+      "features": [
+        "Non-Steam games",
+        "Steam shortcuts",
+        "Flatpak"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/net.lutris.Lutris",
+          "label": "Get Lutris"
+        },
+        {
+          "url": "https://lutris.net/downloads",
+          "label": "Steam Deck setup"
+        }
+      ],
+      "guide": "guide-windows-games",
+      "archiveJobId": "steamdeck-lutris-installer"
+    },
+    {
+      "id": "protontricks",
+      "group": "launchers-proton",
+      "title": "Protontricks",
+      "kind": "Game dependency manager",
+      "categories": [
+        "compatibility"
+      ],
+      "search": "protontricks winetricks proton windows dependencies components runtimes steam game prefix flatpak discover",
+      "icon": "/assets/images/steamdeck/protontricks.png",
+      "description": "Install game-specific Windows components inside a Steam game's Proton environment. Use its graphical interface when a game's setup instructions call for particular dependencies, rather than changing every game.",
+      "features": [
+        "Per-game dependencies",
+        "Proton environments",
+        "Flatpak"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/com.github.Matoking.protontricks",
+          "label": "Get Protontricks"
+        },
+        {
+          "url": "https://github.com/Matoking/protontricks#installation",
+          "label": "Installation guide"
+        }
+      ],
+      "requirement": "Use the dependencies named by the game's setup guide.",
+      "guide": "guide-flatpak",
+      "archiveJobId": "steamdeck-protontricks-installer"
+    },
+    {
+      "id": "bottles",
+      "group": "launchers-proton",
+      "title": "Bottles",
+      "kind": "Windows app environments",
+      "categories": [
+        "launchers"
+      ],
+      "search": "bottles wine windows software programs launchers environments prefixes runners dependencies flatpak discover",
+      "icon": "/assets/images/steamdeck/bottles.png",
+      "description": "Create separate environments for Windows games and software. Manage runners and dependencies through a graphical interface, then run the installer or program inside its selected bottle in Desktop Mode.",
+      "features": [
+        "Separate environments",
+        "Runner management",
+        "Flatpak"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/com.usebottles.bottles",
+          "label": "Get Bottles"
+        },
+        {
+          "url": "https://docs.usebottles.com/getting-started/installation",
+          "label": "Installation guide"
+        }
+      ],
+      "requirement": "The official supported package is the Flatpak version.",
+      "guide": "guide-windows-games",
+      "archiveJobId": "steamdeck-bottles-installer"
+    },
+    {
+      "id": "flatseal",
+      "group": "desktop-utilities",
+      "title": "Flatseal",
+      "kind": "Flatpak permissions",
+      "categories": [
+        "desktop"
+      ],
+      "search": "flatseal flatpak permissions filesystem folders sd card storage access desktop discover sandbox",
+      "icon": "/assets/images/steamdeck/flatseal.png",
+      "description": "Review permissions for Flatpak apps and grant access to a particular game folder when needed. Select the affected app, change its permissions, then restart it to apply the changes.",
+      "features": [
+        "App permissions",
+        "Folder access",
+        "Desktop Mode"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/com.github.tchx84.Flatseal",
+          "label": "Get Flatseal"
+        },
+        {
+          "url": "https://github.com/tchx84/Flatseal/blob/master/DOCUMENTATION.md",
+          "label": "Permission guide"
+        }
+      ],
+      "requirement": "Applies to Flatpak apps; choose the specific folder they need.",
+      "guide": "guide-flatpak",
+      "archiveJobId": "steamdeck-flatseal-installer"
+    },
+    {
+      "id": "localsend",
+      "group": "desktop-utilities",
+      "title": "LocalSend",
+      "kind": "Local file transfers",
+      "categories": [
+        "desktop"
+      ],
+      "search": "localsend local send files transfer phone pc android ios wifi network desktop appimage flatpak",
+      "icon": "/assets/images/steamdeck/localsend.png",
+      "description": "Transfer files between your Deck, phone, and PC over the same local network. Install LocalSend on both devices, select the receiving device, and accept the transfer without creating an account.",
+      "features": [
+        "Local network",
+        "Phone and PC",
+        "No account"
+      ],
+      "links": [
+        {
+          "url": "https://localsend.org/download",
+          "label": "Get LocalSend"
+        },
+        {
+          "url": "https://github.com/localsend/localsend#setup",
+          "label": "Setup and troubleshooting"
+        }
+      ],
+      "requirement": "Both devices need LocalSend and access to the same local network.",
+      "guide": "guide-files",
+      "archiveJobId": "steamdeck-localsend"
+    }
+  ],
+  "images": [
+    {
+      "filename": "lutris.png",
+      "source": "https://dl.flathub.org/media/net/lutris/Lutris/ef38bc8331f9102f611cc71700cf5770/icons/128x128/net.lutris.Lutris.png"
+    },
+    {
+      "filename": "protontricks.png",
+      "source": "https://dl.flathub.org/media/com/github/Matoking.protontricks/85b5b73abdddd0bbea6861732d4d850c/icons/128x128/com.github.Matoking.protontricks.png"
+    },
+    {
+      "filename": "bottles.png",
+      "source": "https://dl.flathub.org/media/com/usebottles/bottles/f29e28385fc02b82a5005340e4df443b/icons/128x128/com.usebottles.bottles.png"
+    },
+    {
+      "filename": "flatseal.png",
+      "source": "https://dl.flathub.org/media/com/github/tchx84.Flatseal/462bde383c024a52b3132ae3df79704a/icons/128x128/com.github.tchx84.Flatseal.png"
+    },
+    {
+      "filename": "localsend.png",
+      "source": "https://localsend.org/img/logo.png"
+    }
+  ],
+  "notes": [
+    "Lutris, Protontricks, Flatseal and Bottles use rolling stable Flathub online installer references. These references are not offline application bundles or fixed application-version downloads.",
+    "KDE Connect was not added as a downloadable tool: https://dl.flathub.org/repo/appstream/org.kde.kdeconnect.flatpakref returned HTTP 404. Its official download page at https://kdeconnect.kde.org/download.html remains a useful reference; the linked KDE UserBase pairing page returned HTTP 403 through web lookup."
+  ],
+  "purpose": "Primary-source research snapshot. Edit docs/steamdeck-resources.json and docs/steamdeck-setup-guides.json for current page content."
+}

@@ -1,0 +1,171 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "Expanded PS3 homebrew catalogue and illustrated HEN/CFW tool cards. Existing firmware and archived versions remain pinned.",
+  "apps": [
+    {
+      "id": "multiman",
+      "title": "multiMAN",
+      "description": "PS3 file and backup manager with FTP and game-mounting tools. Browse the supplied Brewology listing for its available builds.",
+      "image": "/assets/images/ps3-resources/multiman.png",
+      "url": "https://store.brewology.com/ahomebrew.php?brewid=24",
+      "label": "multiMAN listing",
+      "source": "https://store.brewology.com/ahomebrew.php?brewid=24"
+    },
+    {
+      "id": "irisman",
+      "title": "IRISMAN",
+      "description": "File and backup manager with FTP and external-storage tools. The archived package is version 4.91; check the project requirements for your setup.",
+      "image": "/assets/images/expansion-ps3/irisman.png",
+      "url": "/downloads/archive/84490ca8dc8a/IRISMAN_4.91.pkg",
+      "label": "Download archived 4.91",
+      "source": "https://github.com/aldostools/IRISMAN",
+      "download": true
+    },
+    {
+      "id": "webman",
+      "title": "webMAN MOD",
+      "description": "Web and FTP services, file management, game mounting and temperature controls for supported PS3 homebrew environments.",
+      "image": "/assets/images/expansion-ps3/webman.png",
+      "url": "/downloads/archive/d399822b2a60/webMAN_MOD_1.47.50_Installer.pkg",
+      "label": "Download archived 1.47.50",
+      "source": "https://github.com/aldostools/webMAN-MOD",
+      "download": true
+    },
+    {
+      "id": "pkgi",
+      "title": "PKGi · PS3",
+      "description": "Package downloader with background-download support. Configure your own catalogue and use content you have permission to download.",
+      "image": "/assets/images/ps3-resources/pkgi.png",
+      "url": "/downloads/archive/3ce2651a8a0d/pkgi-ps3.pkg",
+      "label": "Download archived PKGi",
+      "source": "https://github.com/bucanero/pkgi-ps3",
+      "download": true
+    },
+    {
+      "id": "prepiso",
+      "title": "prepISO",
+      "description": "Prepare external-drive content for webMAN MOD scanning and mounting. Follow the project instructions for storage formats and folder layout.",
+      "image": "/assets/images/expansion-ps3/prepiso.png",
+      "url": "/downloads/archive/d399822b2a60/prepISO_1.33.pkg",
+      "label": "Download archived 1.33",
+      "source": "https://github.com/aldostools/webMAN-MOD/tree/master/_Projects_/prepISO",
+      "download": true
+    },
+    {
+      "id": "ezremote",
+      "title": "ezRemote Client",
+      "description": "Transfer files over FTP, SMB, NFS, WebDAV or HTTP, with local file management and remote package-installation tools.",
+      "image": "/assets/images/expansion-ps3/ezremote.png",
+      "url": "https://github.com/cy33hc/ps3-ezremote-client/releases/download/1.15/ps3-ezremote-client.pkg",
+      "label": "Download 1.15",
+      "source": "https://github.com/cy33hc/ps3-ezremote-client",
+      "download": true
+    },
+    {
+      "id": "simplefm",
+      "title": "Simple File Manager",
+      "description": "Two-panel PS3 file manager for copying, renaming and organizing files, including NTFS and exFAT drive support in this release.",
+      "image": "/assets/images/expansion-ps3/simplefm.png",
+      "url": "https://github.com/lmirel/fm_psx/releases/download/v0.5.2/sfm_ps3.pkg",
+      "label": "Download v0.5.2",
+      "source": "https://github.com/lmirel/fm_psx",
+      "download": true
+    },
+    {
+      "id": "managunz",
+      "title": "ManaGunZ",
+      "description": "PS3 manager with game-library and file utilities. Read the release notes before choosing a build for your firmware and homebrew environment.",
+      "image": "/assets/images/expansion-ps3/managunz.png",
+      "url": "https://github.com/Zarh/ManaGunZ/releases/download/1.41/ManaGunZ_v1.41.pkg",
+      "label": "Download 1.41",
+      "source": "https://github.com/Zarh/ManaGunZ",
+      "download": true
+    },
+    {
+      "id": "retroarch",
+      "title": "RetroArch · PS3",
+      "description": "Multi-system emulation frontend with core-specific compatibility, controller settings and save states. Select the PS3 package from the official platforms page.",
+      "image": "/assets/images/emulators/retroarch.png",
+      "url": "https://www.retroarch.com/?page=platforms",
+      "label": "PS3 platform downloads",
+      "source": "https://www.retroarch.com/?page=platforms"
+    }
+  ],
+  "toolImages": {
+    "ps3xploit": "/assets/images/ps3-resources/ps3xploit.jpg",
+    "toolset": "/assets/images/consoles/ps3.png",
+    "rufus": "/assets/images/expansion-ps3/rufus.png",
+    "pyps3tools": "/assets/images/consoles/playstation.jpg",
+    "evilnat": "/assets/images/consoles/ps3.png",
+    "hfw": "/assets/images/consoles/ps3.png",
+    "hen": "/assets/images/ps3-resources/ps3xploit.jpg",
+    "homebrew": "/assets/images/ps3-resources/multiman.png"
+  },
+  "imageSources": {
+    "irisman": {
+      "image": "/assets/images/expansion-ps3/irisman.png",
+      "source": "https://raw.githubusercontent.com/aldostools/IRISMAN/master/ICON0.PNG",
+      "bytes": 28015,
+      "sha256": "c0af3cd06ba4bc07047fd94f24abff5a985497f81e73f0a7eb95769f62982d15",
+      "width": 256,
+      "height": 128
+    },
+    "webman": {
+      "image": "/assets/images/expansion-ps3/webman.png",
+      "source": "https://raw.githubusercontent.com/aldostools/webMAN-MOD/master/_Projects_/updater/pkgfiles/USRDIR/xmbm/webman.png",
+      "bytes": 14021,
+      "sha256": "3b69485822d178a5856a5d65c757169b65646ae30a2b8217b18dd309b2be3544",
+      "width": 128,
+      "height": 128
+    },
+    "prepiso": {
+      "image": "/assets/images/expansion-ps3/prepiso.png",
+      "source": "https://raw.githubusercontent.com/aldostools/webMAN-MOD/master/_Projects_/prepISO/pkgfiles/ICON0.PNG",
+      "bytes": 62844,
+      "sha256": "809b5d1ee58924a16beb6f53700de27b6242e8352173f127d01551beccafe418",
+      "width": 320,
+      "height": 176
+    },
+    "ezremote": {
+      "image": "/assets/images/expansion-ps3/ezremote.png",
+      "source": "https://raw.githubusercontent.com/cy33hc/ps3-ezremote-client/master/pkgfiles/ICON0.PNG",
+      "bytes": 10072,
+      "sha256": "8e64d92adad2d13ef739e8685defe1ca4eec90050b37c2d088e485e3d26e6497",
+      "width": 320,
+      "height": 176
+    },
+    "simplefm": {
+      "image": "/assets/images/expansion-ps3/simplefm.png",
+      "source": "https://raw.githubusercontent.com/lmirel/fm_psx/master/ICON0.PNG",
+      "bytes": 9582,
+      "sha256": "26d737d94a7dad085b03f9b8ec62ea4a359cfa2a137d8cb9eede7af88ef2ea98",
+      "width": 320,
+      "height": 176
+    },
+    "managunz": {
+      "image": "/assets/images/expansion-ps3/managunz.png",
+      "source": "https://raw.githubusercontent.com/Zarh/ManaGunZ/master/pkgfiles/ICON0.PNG",
+      "bytes": 42865,
+      "sha256": "b51d10c5db560ac1c30dca4d85b1e83bc47c7647a5f4b2ac956781844e1d04d9",
+      "width": 320,
+      "height": 176
+    },
+    "rufus": {
+      "image": "/assets/images/expansion-ps3/rufus.png",
+      "source": "https://raw.githubusercontent.com/pbatard/rufus/master/res/appstore/Images/Square150x150Logo.scale-400.png",
+      "bytes": 38051,
+      "sha256": "313812f630039ae3d7a019716e76e296245e8477b6c676ae1ffa564f42e7ece8",
+      "width": 600,
+      "height": 600
+    }
+  },
+  "sources": [
+    "https://github.com/cy33hc/ps3-ezremote-client",
+    "https://github.com/lmirel/fm_psx/releases/tag/v0.5.2",
+    "https://github.com/Zarh/ManaGunZ/releases/tag/1.41",
+    "https://raw.githubusercontent.com/Zarh/ManaGunZ/master/Changelog.txt",
+    "https://aldostools.github.io/webMAN-MOD/",
+    "https://github.com/aldostools/IRISMAN"
+  ],
+  "imageNotes": "PS3 Toolset, PyPS3tools, HFW and Evilnat use neutral existing PlayStation artwork; the project-specific apps use their own artwork."
+}

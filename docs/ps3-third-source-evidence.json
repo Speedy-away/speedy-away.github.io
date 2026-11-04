@@ -1,0 +1,867 @@
+{
+  "checkedAt": "2026-11-02T06:07:25.684Z",
+  "scope": "Third PS3 expansion: new Call of Duty console-side SPRX resources. No desktop RTM tools, license fixes, gated-download bypasses or videos.",
+  "games": [
+    {
+      "id": "black-ops-3",
+      "title": "Call of Duty: Black Ops III",
+      "short": "Black Ops 3",
+      "url": "/console/ps3/mods/call-of-duty/black-ops-3/",
+      "image": "/assets/images/covers/cod-black-ops-3.jpg",
+      "aliases": [
+        "BO3",
+        "Black Ops III",
+        "Black Ops 3",
+        "PS3 last generation"
+      ],
+      "parent": "call-of-duty",
+      "summary": "PS3 SPRX resources with explicit DEX CFW labels and preserved source archives."
+    },
+    {
+      "id": "ghosts",
+      "title": "Call of Duty: Ghosts",
+      "short": "Ghosts",
+      "url": "/console/ps3/mods/call-of-duty/ghosts/",
+      "image": "/assets/images/covers/cod-ghosts.jpg",
+      "aliases": [
+        "COD Ghosts",
+        "COD Ghost",
+        "Ghosts 1.16",
+        "Rebound",
+        "DayDream"
+      ],
+      "parent": "call-of-duty",
+      "summary": "PS3 Ghosts menus for the listed game update and disc or digital edition."
+    },
+    {
+      "id": "modern-warfare-3",
+      "title": "Call of Duty: Modern Warfare 3 (2011)",
+      "short": "Modern Warfare 3",
+      "url": "/console/ps3/mods/call-of-duty/modern-warfare-3/",
+      "image": "/assets/images/covers/cod-mw3-2011.jpg",
+      "aliases": [
+        "MW3",
+        "MW3 2011",
+        "Modern Warfare 3 2011",
+        "Resurgence"
+      ],
+      "parent": "call-of-duty",
+      "summary": "PS3 Modern Warfare 3 SPRX resources. Keep CFW-only menus separate from HEN builds."
+    }
+  ],
+  "resources": [
+    {
+      "id": "bo3-spectre-engine-v1",
+      "name": "Spectre Engine v1.0 · DEX CFW",
+      "gameId": "black-ops-3",
+      "category": "sprx",
+      "version": "v1.00",
+      "gameUpdate": "1.07",
+      "region": "Not stated by source",
+      "compatibility": "Source custom-button text explicitly says Spectre Engine v1.0 [DEX-CFW]. HEN/CEX support is not established.",
+      "description": "Spectre Engine v1.0 console menu archive linked as Official Files. The source button specifies DEX CFW; do not treat the broader page heading as HEN support for this file.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/3lbqahw09dvuy4c/%255BBO3%255D_Spectre_Engine_v1.0_%255BOfficial_Files%255D.rar/file",
+          "label": "Original RAR",
+          "filename": "[BO3] Spectre Engine v1.0 [Official Files].rar"
+        }
+      ],
+      "availability": "Original archive and documented console members preserved, SHA-256 recorded and archive CRC checked; no hardware execution tested",
+      "image": "/assets/images/ps3-mods/bo3-spectre-engine-v1-source.jpg",
+      "imageAlt": "Spectre Engine v1.0 · DEX CFW source showcase still",
+      "tags": [
+        "SPRX",
+        "DEX",
+        "CFW"
+      ],
+      "evidence": {
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+        "method": "Original Google Sites HTML and decoded custom-embed text inspected without executing source scripts.",
+        "compatibility": "Source custom-button text explicitly says Spectre Engine v1.0 [DEX-CFW]. HEN/CEX support is not established.",
+        "archiveReadme": "readme.txt explicitly names Black ops 3 Update 1.07 and Spectre Engine Update 1.00."
+      },
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "bo3-spectre-engine-v1",
+        "archiveSha256": "76e9666e0a0c5f44beffbdef2197525ea584028b7d33439bbd6fa3a933eed358",
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 15050680,
+            "sha256": "25225ac51bc5f910099249740c8d6cecc9278c98894c59e8be7d46f2ee7fca78",
+            "memberPath": "[BO3] Spectre Engine v1.0 [Official Files]\\EBOOT.BIN",
+            "local": "/downloads/ps3/bo3-spectre-engine-v1/25225ac51bc5/%5BBO3%5D%20Spectre%20Engine%20v1.0%20%5BOfficial%20Files%5D/EBOOT.BIN"
+          },
+          {
+            "name": "Menu.sprx",
+            "bytes": 134912,
+            "sha256": "0592291cf1b5a399b69c67cc93001c448d885c2ce5644a64a56222e9ae1442f8",
+            "memberPath": "[BO3] Spectre Engine v1.0 [Official Files]\\Menu.sprx",
+            "local": "/downloads/ps3/bo3-spectre-engine-v1/0592291cf1b5/%5BBO3%5D%20Spectre%20Engine%20v1.0%20%5BOfficial%20Files%5D/Menu.sprx"
+          },
+          {
+            "name": "readme.txt",
+            "bytes": 132,
+            "sha256": "a0d35938c9c3fad081205019e154b0ede50dfcef8093b1220d97de8dd43bb235",
+            "memberPath": "[BO3] Spectre Engine v1.0 [Official Files]\\readme.txt",
+            "local": "/downloads/ps3/bo3-spectre-engine-v1/a0d35938c9c3/%5BBO3%5D%20Spectre%20Engine%20v1.0%20%5BOfficial%20Files%5D/readme.txt"
+          }
+        ]
+      },
+      "note": "Preserved readme.txt states Black Ops 3 update 1.07 and Spectre Engine update 1.00. Source button identifies DEX CFW; no per-title region proof is supplied."
+    },
+    {
+      "id": "ghosts-daydream-116",
+      "name": "DayDream distribution · Ghosts 1.16 (incomplete)",
+      "gameId": "ghosts",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "1.16 in filename",
+      "region": "BLES / BLUS in source",
+      "compatibility": "BLES/BLUS source card; exact CFW/HEN/CEX/DEX mode is not stated. The file is explicitly named for Ghosts 1.16.",
+      "description": "Incomplete DayDream distribution named for Ghosts 1.16. The original archive and its extracted components are preserved for reference; this is not a verified complete working DayDream build.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/14rndxx4h1gp3q7/DayDream_COD_Ghost_1.16.zip/file",
+          "label": "Original ZIP",
+          "filename": "DayDream COD Ghost 1.16.zip"
+        }
+      ],
+      "availability": "Incomplete distribution · original archive and available components preserved for reference",
+      "image": "/assets/images/ps3-mods/ghosts-daydream-116-archive.png",
+      "imageAlt": "DayDreams menu screenshot preserved inside the original Ghosts 1.16 archive",
+      "tags": [
+        "SPRX",
+        "Ghosts 1.16",
+        "BLES",
+        "BLUS",
+        "Incomplete distribution",
+        "Archive reference"
+      ],
+      "evidence": {
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+        "method": "Original Google Sites HTML and decoded custom-embed text inspected without executing source scripts.",
+        "compatibility": "BLES/BLUS source card; exact CFW/HEN/CEX/DEX mode is not stated. The file is explicitly named for Ghosts 1.16.",
+        "archiveInspection": {
+          "componentBytes": 43600,
+          "identicalComponents": [
+            "tmp/Genusion.sprx",
+            "tmp/Custom.sprx Load In Genusion"
+          ],
+          "sha256": "8ee62015d60aabf55f448cd7b6a725f9f9f085646fa857633122cbe4440acf4d",
+          "emptyPlaceholder": "Ghost/Custom.sprx",
+          "emptyPlaceholderBytes": 0,
+          "dependencyIdentity": "not verified",
+          "textDocumentation": "Features and known bugs only; no verified complete dependency list."
+        }
+      },
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "ghosts-daydream-116",
+        "archiveSha256": "83811f674c168eea1145f681518cc61246eb6ee1531cd2033f2b1103ee8be6d3",
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "DayDreams.txt",
+            "bytes": 439,
+            "sha256": "9e19a169fb42c1d264867d269a6b3e56e6ebf203b48fae75b3b5a3ab7e511501",
+            "memberPath": "DayDream COD Ghost 1.16\\DayDreams.txt",
+            "local": "/downloads/ps3/ghosts-daydream-116/9e19a169fb42/DayDream%20COD%20Ghost%201.16/DayDreams.txt"
+          },
+          {
+            "name": "Call of DutyÂ® Ghosts_8.png",
+            "bytes": 435002,
+            "sha256": "929189cc457e61d4d95718d86ac05f8ffc51b065a1cc6e40814409e65ef85d08",
+            "memberPath": "DayDream COD Ghost 1.16\\ScreenShots\\Call of DutyÂ® Ghosts_8.png",
+            "local": "/downloads/ps3/ghosts-daydream-116/929189cc457e/DayDream%20COD%20Ghost%201.16/ScreenShots/Call%20of%20Duty%C3%82%C2%AE%20Ghosts_8.png"
+          },
+          {
+            "name": "Call of DutyÂ® Ghosts_7.png",
+            "bytes": 1534363,
+            "sha256": "b73fad6d7a282c17a8f83a46c3cda0d3ea42c27951d9ed7d9067ac08c0a7941c",
+            "memberPath": "DayDream COD Ghost 1.16\\ScreenShots\\Call of DutyÂ® Ghosts_7.png",
+            "local": "/downloads/ps3/ghosts-daydream-116/b73fad6d7a28/DayDream%20COD%20Ghost%201.16/ScreenShots/Call%20of%20Duty%C3%82%C2%AE%20Ghosts_7.png"
+          },
+          {
+            "name": "Genusion.sprx",
+            "bytes": 43600,
+            "sha256": "8ee62015d60aabf55f448cd7b6a725f9f9f085646fa857633122cbe4440acf4d",
+            "memberPath": "DayDream COD Ghost 1.16\\tmp\\Genusion.sprx",
+            "local": "/downloads/ps3/ghosts-daydream-116/8ee62015d60a/DayDream%20COD%20Ghost%201.16/tmp/Genusion.sprx"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 6208192,
+            "sha256": "9faeaff36f6691e176d4723ab5445659b8f32205e767d924ca5c91caadfbec3c",
+            "memberPath": "DayDream COD Ghost 1.16\\USDIR\\EBOOT.BIN",
+            "local": "/downloads/ps3/ghosts-daydream-116/9faeaff36f66/DayDream%20COD%20Ghost%201.16/USDIR/EBOOT.BIN"
+          }
+        ]
+      },
+      "note": "The archive contains two byte-identical 43,600-byte SCE components named Genusion.sprx and Custom.sprx Load In Genusion, while Ghost/Custom.sprx is zero bytes. Their intended dependency identity is not verified. The text file describes features and reports Build Skybase freezing and Jet Pack not working, without establishing a complete required file set. Do not present these components as a complete working DayDream menu.",
+      "readiness": "incomplete",
+      "imageCaption": "Screenshot preserved inside the incomplete DayDream archive; it does not establish that the downloadable distribution is complete or working."
+    },
+    {
+      "id": "ghosts-rebound-digital",
+      "name": "Rebound · Ghosts digital editions",
+      "gameId": "ghosts",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "NPEB01832 / NPEB01835 / NPUB31301; separate generic BLES-BLUS EBOOT branch",
+      "compatibility": "NPUB/NPEB source heading; HEN & CFW explicit in RAR filename. Exact title IDs and title update not stated.",
+      "description": "Rebound SPRX archive linked specifically for NPUB/NPEB digital editions. The source also offers a separate BLES/BLUS link; do not silently interchange those builds.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/snchu1ktoxtxo63/COD_GHOSTS_Rebound_Sprx_HEN_%2526_CFW.rar/file",
+          "label": "Original RAR",
+          "filename": "COD GHOSTS Rebound Sprx HEN & CFW.rar"
+        }
+      ],
+      "availability": "Original archive and documented console members preserved, SHA-256 recorded and archive CRC checked; no hardware execution tested",
+      "image": "/assets/images/ps3-mods/ghosts-rebound-source.jpg",
+      "imageAlt": "Rebound · Ghosts digital editions source showcase still",
+      "tags": [
+        "SPRX",
+        "HEN",
+        "CFW",
+        "NPUB",
+        "NPEB"
+      ],
+      "screenshotEvidence": {
+        "titleId": "NPEB01835",
+        "claim": "Visible in the source showcase overlay; archive documentation must establish whether the downloaded pack supports this exact ID."
+      },
+      "evidence": {
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+        "method": "Original Google Sites HTML and decoded custom-embed text inspected without executing source scripts.",
+        "compatibility": "NPUB/NPEB source heading; HEN & CFW explicit in RAR filename. Exact title IDs and title update not stated."
+      },
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "ghosts-rebound-digital",
+        "archiveSha256": "da68016211ea395fc80a451fb3570a2a5a1842f502164ae678cd97f080a43e9b",
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 6208304,
+            "sha256": "c311b24556284bffe777edb306dbbc9e199ebb6c1d897a421aa0d5f358721ddd",
+            "memberPath": "COD GHOSTS Rebound Sprx HEN & CFW\\Digital-EBOOT Files\\NPEB01832\\EBOOT.BIN",
+            "local": "/downloads/ps3/ghosts-rebound-digital/c311b2455628/COD%20GHOSTS%20Rebound%20Sprx%20HEN%20%26%20CFW/Digital-EBOOT%20Files/NPEB01832/EBOOT.BIN"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 6208304,
+            "sha256": "b69d2ee21a33aa95dcaef6918bbb3fb389365e7f4c05ea55de70d9154754b59b",
+            "memberPath": "COD GHOSTS Rebound Sprx HEN & CFW\\Digital-EBOOT Files\\NPEB01835\\EBOOT.BIN",
+            "local": "/downloads/ps3/ghosts-rebound-digital/b69d2ee21a33/COD%20GHOSTS%20Rebound%20Sprx%20HEN%20%26%20CFW/Digital-EBOOT%20Files/NPEB01835/EBOOT.BIN"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 6208304,
+            "sha256": "272d2940563287cb99f6864c7a64104b8307511a3bf7cf42fbb3729ffb617ee9",
+            "memberPath": "COD GHOSTS Rebound Sprx HEN & CFW\\Digital-EBOOT Files\\NPUB31301\\EBOOT.BIN",
+            "local": "/downloads/ps3/ghosts-rebound-digital/272d29405632/COD%20GHOSTS%20Rebound%20Sprx%20HEN%20%26%20CFW/Digital-EBOOT%20Files/NPUB31301/EBOOT.BIN"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 6208176,
+            "sha256": "60d282a5e1dc5ea670a9be994f8efac98bf4393e3545960e74ea7ab06db34069",
+            "memberPath": "COD GHOSTS Rebound Sprx HEN & CFW\\EBOOT BLES-BLUS\\EBOOT.BIN",
+            "local": "/downloads/ps3/ghosts-rebound-digital/60d282a5e1dc/COD%20GHOSTS%20Rebound%20Sprx%20HEN%20%26%20CFW/EBOOT%20BLES-BLUS/EBOOT.BIN"
+          },
+          {
+            "name": "Rebound.txt",
+            "bytes": 109,
+            "sha256": "70ce82190a8a55c8ba11e4c5cdf4681b547670bd78ac1322ee513d7c1fcb0b42",
+            "memberPath": "COD GHOSTS Rebound Sprx HEN & CFW\\Rebound.txt",
+            "local": "/downloads/ps3/ghosts-rebound-digital/70ce82190a8a/COD%20GHOSTS%20Rebound%20Sprx%20HEN%20%26%20CFW/Rebound.txt"
+          },
+          {
+            "name": "Screenshot_1.png",
+            "bytes": 27118,
+            "sha256": "13584ada390ec32f0354e151928d966a5abc4ce2ee2ea2d4bfbf560098fb92a4",
+            "memberPath": "COD GHOSTS Rebound Sprx HEN & CFW\\Screenshot_1.png",
+            "local": "/downloads/ps3/ghosts-rebound-digital/13584ada390e/COD%20GHOSTS%20Rebound%20Sprx%20HEN%20%26%20CFW/Screenshot_1.png"
+          },
+          {
+            "name": "iw6mp.sprx",
+            "bytes": 299216,
+            "sha256": "bfd449956f032a20529d296da82712da322fce77d2011ec51471464f715839db",
+            "memberPath": "COD GHOSTS Rebound Sprx HEN & CFW\\Sprx-Files\\iw6mp.sprx",
+            "local": "/downloads/ps3/ghosts-rebound-digital/bfd449956f03/COD%20GHOSTS%20Rebound%20Sprx%20HEN%20%26%20CFW/Sprx-Files/iw6mp.sprx"
+          }
+        ]
+      },
+      "note": "Archive has separate digital-title EBOOT directories and an EBOOT BLES-BLUS directory, plus iw6mp.sprx. Select the exact title branch; the digital source heading alone is not the complete archive contents."
+    },
+    {
+      "id": "mw3-resurgence",
+      "name": "Resurgence · Modern Warfare 3",
+      "gameId": "modern-warfare-3",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "BLES / BLUS in source",
+      "compatibility": "Source card explicitly allows CFW and marks HEN unsupported. BLES/BLUS listed; CEX/DEX and title update not stated.",
+      "description": "Modern Warfare 3 console SPRX menu from the BLES/BLUS source card. The source explicitly marks CFW supported and HEN unsupported.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/mrmhnys782fz6qu/MW3_Resurgence_Sprx.rar/file",
+          "label": "Original RAR",
+          "filename": "MW3 Resurgence Sprx.rar"
+        }
+      ],
+      "availability": "Original archive and documented console members preserved, SHA-256 recorded and archive CRC checked; no hardware execution tested",
+      "image": "/assets/images/ps3-mods/mw3-resurgence-source.jpg",
+      "imageAlt": "Resurgence · Modern Warfare 3 source showcase still",
+      "tags": [
+        "SPRX",
+        "CFW only",
+        "HEN unsupported"
+      ],
+      "evidence": {
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+        "method": "Original Google Sites HTML and decoded custom-embed text inspected without executing source scripts.",
+        "compatibility": "Source card explicitly allows CFW and marks HEN unsupported. BLES/BLUS listed; CEX/DEX and title update not stated."
+      },
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "mw3-resurgence",
+        "archiveSha256": "e22d51f2643d1c27f4fd0c6939e4bf6a1f0b975d318c7d888bd0679e26125059",
+        "integrity": "7-Zip CRC/data integrity passed without execution",
+        "files": [
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 7580760,
+            "sha256": "f06e99ecbf88fd19b4059d24d55604828a35e8aa77c1e5291e582be6995be46c",
+            "memberPath": "MW3 Resurgence Sprx\\EBOOT.BIN",
+            "local": "/downloads/ps3/mw3-resurgence/f06e99ecbf88/MW3%20Resurgence%20Sprx/EBOOT.BIN"
+          },
+          {
+            "name": "README.txt",
+            "bytes": 455,
+            "sha256": "51d1084683c5af13a7254fb19b2d54dec433c65dbe452bb37c4bfb635dca5449",
+            "memberPath": "MW3 Resurgence Sprx\\README.txt",
+            "local": "/downloads/ps3/mw3-resurgence/51d1084683c5/MW3%20Resurgence%20Sprx/README.txt"
+          },
+          {
+            "name": "Resurgence.sprx",
+            "bytes": 165056,
+            "sha256": "42226f0cd3e70048eb8715e9f4589a881f6dda125f5398fdaaec67e07ea312fd",
+            "memberPath": "MW3 Resurgence Sprx\\Resurgence.sprx",
+            "local": "/downloads/ps3/mw3-resurgence/42226f0cd3e7/MW3%20Resurgence%20Sprx/Resurgence.sprx"
+          }
+        ]
+      },
+      "note": "README gives Resurgence.sprx under /dev_hdd0/tmp and EBOOT.BIN in the matching game USRDIR, with host and non-host controls. Its 28 November 2023 update date is a menu date, not a game title update."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "bo3-spectre-engine-v1",
+      "name": "Spectre Engine v1.0 · DEX CFW",
+      "gameId": "black-ops-3",
+      "category": "sprx",
+      "version": "v1.0",
+      "gameUpdate": "Not stated by source",
+      "region": "Not stated by source",
+      "compatibility": "Source custom-button text explicitly says Spectre Engine v1.0 [DEX-CFW]. HEN/CEX support is not established.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+      "url": "https://www.mediafire.com/file/3lbqahw09dvuy4c/%255BBO3%255D_Spectre_Engine_v1.0_%255BOfficial_Files%255D.rar/file",
+      "filename": "[BO3] Spectre Engine v1.0 [Official Files].rar",
+      "maxBytes": 33554432,
+      "resourceId": "bo3-spectre-engine-v1",
+      "checkedAt": "2026-11-02T06:07:24.081Z",
+      "landingStatus": 200,
+      "landingTitle": "[BO3] Spectre Engine v1.0 [Official Files]",
+      "advertisedSizeText": "5.01MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 5254007,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"[BO3] Spectre Engine v1.0 [Official Files].rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "suggestedJob": {
+        "id": "bo3-spectre-engine-v1",
+        "resourceId": "bo3-spectre-engine-v1",
+        "title": "Spectre Engine v1.0 · DEX CFW",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "Call of Duty",
+          "Black Ops 3"
+        ],
+        "project": "Spectre Engine v1.0 · DEX CFW",
+        "version": "v1.0",
+        "url": "https://www.mediafire.com/file/3lbqahw09dvuy4c/%255BBO3%255D_Spectre_Engine_v1.0_%255BOfficial_Files%255D.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+        "pages": [
+          "console/ps3/mods/call-of-duty/black-ops-3/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "[BO3] Spectre Engine v1.0 [Official Files].rar",
+        "expectedBytes": 5254007,
+        "maxBytes": 14680064,
+        "verifyArchive": true,
+        "extractionLimits": {
+          "maxMembers": 5000,
+          "maxExpandedBytes": 536870912,
+          "maxMemberBytes": 268435456,
+          "maxTotalExtractedBytes": 536870912,
+          "maxDepth": 2,
+          "timeoutMs": 300000
+        }
+      },
+      "inspectionQuestions": [
+        "Read the archive instructions for exact game update/title IDs; unknown source requirements must stay unknown.",
+        "Keep original archive and separate HEN/CEX/DEX or edition-specific SPRX/EBOOT branches, helpers, source and metadata.",
+        "Do not execute or install the downloaded files."
+      ]
+    },
+    {
+      "id": "ghosts-daydream-116",
+      "name": "DayDream · Ghosts 1.16",
+      "gameId": "ghosts",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "1.16 in filename",
+      "region": "BLES / BLUS in source",
+      "compatibility": "BLES/BLUS source card; exact CFW/HEN/CEX/DEX mode is not stated. The file is explicitly named for Ghosts 1.16.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "url": "https://www.mediafire.com/file/14rndxx4h1gp3q7/DayDream_COD_Ghost_1.16.zip/file",
+      "filename": "DayDream COD Ghost 1.16.zip",
+      "maxBytes": 67108864,
+      "resourceId": "ghosts-daydream-116",
+      "checkedAt": "2026-11-02T06:07:24.109Z",
+      "landingStatus": 200,
+      "landingTitle": "DayDream COD Ghost 1.16",
+      "advertisedSizeText": "7.88MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 8260753,
+      "contentType": "application/zip",
+      "contentDisposition": "attachment; filename=\"DayDream COD Ghost 1.16.zip\"",
+      "readyForBoundedArchive": true,
+      "format": "ZIP",
+      "suggestedJob": {
+        "id": "ghosts-daydream-116",
+        "resourceId": "ghosts-daydream-116",
+        "title": "DayDream · Ghosts 1.16",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "Call of Duty",
+          "Ghosts"
+        ],
+        "project": "DayDream · Ghosts 1.16",
+        "version": "Unversioned",
+        "url": "https://www.mediafire.com/file/14rndxx4h1gp3q7/DayDream_COD_Ghost_1.16.zip/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+        "pages": [
+          "console/ps3/mods/call-of-duty/ghosts/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "DayDream COD Ghost 1.16.zip",
+        "expectedBytes": 8260753,
+        "maxBytes": 16777216,
+        "verifyArchive": true,
+        "extractionLimits": {
+          "maxMembers": 5000,
+          "maxExpandedBytes": 536870912,
+          "maxMemberBytes": 268435456,
+          "maxTotalExtractedBytes": 536870912,
+          "maxDepth": 2,
+          "timeoutMs": 300000
+        }
+      },
+      "inspectionQuestions": [
+        "Read the archive instructions for exact game update/title IDs; unknown source requirements must stay unknown.",
+        "Keep original archive and separate HEN/CEX/DEX or edition-specific SPRX/EBOOT branches, helpers, source and metadata.",
+        "Do not execute or install the downloaded files."
+      ]
+    },
+    {
+      "id": "ghosts-rebound-digital",
+      "name": "Rebound · Ghosts digital editions",
+      "gameId": "ghosts",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "NPUB / NPEB (digital-edition source link)",
+      "compatibility": "NPUB/NPEB source heading; HEN & CFW explicit in RAR filename. Exact title IDs and title update not stated.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "url": "https://www.mediafire.com/file/snchu1ktoxtxo63/COD_GHOSTS_Rebound_Sprx_HEN_%2526_CFW.rar/file",
+      "filename": "COD GHOSTS Rebound Sprx HEN & CFW.rar",
+      "maxBytes": 100663296,
+      "resourceId": "ghosts-rebound-digital",
+      "checkedAt": "2026-11-02T06:07:24.110Z",
+      "landingStatus": 200,
+      "landingTitle": "COD GHOSTS Rebound Sprx HEN &amp; CFW",
+      "advertisedSizeText": "23.99MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 25159791,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"COD GHOSTS Rebound Sprx HEN & CFW.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "suggestedJob": {
+        "id": "ghosts-rebound-digital",
+        "resourceId": "ghosts-rebound-digital",
+        "title": "Rebound · Ghosts digital editions",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "Call of Duty",
+          "Ghosts"
+        ],
+        "project": "Rebound · Ghosts digital editions",
+        "version": "Unversioned",
+        "url": "https://www.mediafire.com/file/snchu1ktoxtxo63/COD_GHOSTS_Rebound_Sprx_HEN_%2526_CFW.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+        "pages": [
+          "console/ps3/mods/call-of-duty/ghosts/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "COD GHOSTS Rebound Sprx HEN & CFW.rar",
+        "expectedBytes": 25159791,
+        "maxBytes": 33554432,
+        "verifyArchive": true,
+        "extractionLimits": {
+          "maxMembers": 5000,
+          "maxExpandedBytes": 536870912,
+          "maxMemberBytes": 268435456,
+          "maxTotalExtractedBytes": 536870912,
+          "maxDepth": 2,
+          "timeoutMs": 300000
+        }
+      },
+      "inspectionQuestions": [
+        "Read the archive instructions for exact game update/title IDs; unknown source requirements must stay unknown.",
+        "Keep original archive and separate HEN/CEX/DEX or edition-specific SPRX/EBOOT branches, helpers, source and metadata.",
+        "Do not execute or install the downloaded files."
+      ]
+    },
+    {
+      "id": "mw3-resurgence",
+      "name": "Resurgence · Modern Warfare 3",
+      "gameId": "modern-warfare-3",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "BLES / BLUS in source",
+      "compatibility": "Source card explicitly allows CFW and marks HEN unsupported. BLES/BLUS listed; CEX/DEX and title update not stated.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "url": "https://www.mediafire.com/file/mrmhnys782fz6qu/MW3_Resurgence_Sprx.rar/file",
+      "filename": "MW3 Resurgence Sprx.rar",
+      "maxBytes": 67108864,
+      "resourceId": "mw3-resurgence",
+      "checkedAt": "2026-11-02T06:07:24.111Z",
+      "landingStatus": 200,
+      "landingTitle": "MW3 Resurgence Sprx",
+      "advertisedSizeText": "3.08MB",
+      "attachmentStatus": 200,
+      "expectedBytes": 3229584,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"MW3 Resurgence Sprx.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "suggestedJob": {
+        "id": "mw3-resurgence",
+        "resourceId": "mw3-resurgence",
+        "title": "Resurgence · Modern Warfare 3",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "Call of Duty",
+          "Modern Warfare 3"
+        ],
+        "project": "Resurgence · Modern Warfare 3",
+        "version": "Unversioned",
+        "url": "https://www.mediafire.com/file/mrmhnys782fz6qu/MW3_Resurgence_Sprx.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+        "pages": [
+          "console/ps3/mods/call-of-duty/modern-warfare-3/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "MW3 Resurgence Sprx.rar",
+        "expectedBytes": 3229584,
+        "maxBytes": 12582912,
+        "verifyArchive": true,
+        "extractionLimits": {
+          "maxMembers": 5000,
+          "maxExpandedBytes": 536870912,
+          "maxMemberBytes": 268435456,
+          "maxTotalExtractedBytes": 536870912,
+          "maxDepth": 2,
+          "timeoutMs": 300000
+        }
+      },
+      "inspectionQuestions": [
+        "Read the archive instructions for exact game update/title IDs; unknown source requirements must stay unknown.",
+        "Keep original archive and separate HEN/CEX/DEX or edition-specific SPRX/EBOOT branches, helpers, source and metadata.",
+        "Do not execute or install the downloaded files."
+      ]
+    },
+    {
+      "id": "ps3-pro-lite-492",
+      "title": "PS3 4K Mod / Pro Lite · 4.92 source build",
+      "url": "https://www.mediafire.com/file/4p6v77e357s7bf1/PS3_Pro_Lite.pkg/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "format": "PKG",
+      "landingStatus": 200,
+      "advertisedSizeText": "714.67MB",
+      "readyForArchive": true,
+      "checkedAt": "2026-11-02T06:09:37.293Z",
+      "attachmentStatus": 200,
+      "expectedBytes": 749383088,
+      "contentType": "application/octet-stream",
+      "filename": "PS3_Pro_Lite.pkg",
+      "resourceId": "ps3-pro-lite-492",
+      "compatibility": "The supplied hub labels this customization package HEN / CFW and firmware 4.92. Compatibility with firmware 4.93 is not established.",
+      "version": "Unversioned",
+      "readyForBoundedArchive": true,
+      "suggestedJob": {
+        "id": "ps3-pro-lite-492",
+        "resourceId": "ps3-pro-lite-492",
+        "title": "PS3 4K Mod / Pro Lite · legacy 4.92",
+        "platform": "PS3",
+        "category": [
+          "Tools"
+        ],
+        "project": "PS3 Pro Lite",
+        "version": "4.92",
+        "url": "https://www.mediafire.com/file/4p6v77e357s7bf1/PS3_Pro_Lite.pkg/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+        "pages": [
+          "console/ps3/apps.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "PS3_Pro_Lite.pkg",
+        "expectedBytes": 749383088,
+        "maxBytes": 805306368,
+        "timeoutMs": 600000,
+        "compatibility": "The supplied hub labels this customization package HEN / CFW and firmware 4.92. Compatibility with firmware 4.93 is not established.",
+        "versionMeaning": "Source firmware compatibility label 4.92, not a verified package application version"
+      }
+    }
+  ],
+  "images": [
+    {
+      "path": "/assets/images/ps3-mods/bo3-spectre-engine-v1-source.jpg",
+      "url": "https://i.ytimg.com/vi/KhAJev673vQ/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+      "kind": "static source-showcase still",
+      "bytes": 137904,
+      "sha256": "93a2f34ec6dc876136c65909743cfecdcc1f504f56088a7a4c387e8c1322dc1e",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Actual Spectre Engine Version 1.00 menu visibly shown beside source artwork. This image is not hardware verification."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ghosts-daydream-116-source.jpg",
+      "url": "https://i.ytimg.com/vi/6eKFCXE8eJY/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "kind": "static source-showcase still",
+      "bytes": 226611,
+      "sha256": "83c7d321d2f2682355e330f9ea708c311003643bd882199c11c52290b0754125",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Static image from the DayDream-linked source showcase shows Ghosts gameplay and a Friendly Modder host menu; it also visibly has a Kebab Engine overlay. Do not claim the image proves a single loaded build or firmware compatibility."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ghosts-rebound-source.jpg",
+      "url": "https://i.ytimg.com/vi/Wiz4JDEGwkA/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "kind": "static source-showcase still",
+      "bytes": 167124,
+      "sha256": "cbdd5a058e087b46f2693d08a150fe2152c02e145704a87d41d99b092e0cf320",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Actual Rebound menu and PS3 overlay visible; overlay identifies NPEB01835. No game update is visible."
+    },
+    {
+      "path": "/assets/images/ps3-mods/mw3-resurgence-source.jpg",
+      "url": "https://i.ytimg.com/vi/CRgCr59nSHY/maxresdefault.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "kind": "static source-showcase still",
+      "bytes": 129002,
+      "sha256": "8dcfee2a46a737991c4121c3628de8b2689d26983ab0dedf612bc265932cc56f",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Static source showcase composition clearly displays the Resurgence main menu. No firmware/update proof implied."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ghosts-daydream-116-archive.png",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "sourceArchiveUrl": "https://www.mediafire.com/file/14rndxx4h1gp3q7/DayDream_COD_Ghost_1.16.zip/file",
+      "archiveSha256": "83811f674c168eea1145f681518cc61246eb6ee1531cd2033f2b1103ee8be6d3",
+      "memberPath": "DayDream COD Ghost 1.16\\ScreenShots\\Call of DutyÂ® Ghosts_7.png",
+      "kind": "unaltered archive screenshot",
+      "bytes": 1534363,
+      "sha256": "b73fad6d7a282c17a8f83a46c3cda0d3ea42c27951d9ed7d9067ac08c0a7941c",
+      "width": 1280,
+      "height": 720,
+      "visuallyVerified": true,
+      "verification": "Actual DayDreams vertical menu label and Friendly Modder credit are visible in the preserved archive screenshot; a Kebab overlay is also present. This is source imagery, not a hardware test."
+    },
+    {
+      "path": "/assets/images/ps3-mods/ps3-pro-lite-source-installer.jpg",
+      "url": "https://www.dekazeta.net/foro/uploads/monthly_2019_10/Installer.thumb.jpg.dc659ef4b089340a5a84b164d8c2c42c.jpg",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "kind": "historical installer artwork used by supplied source",
+      "bytes": 115825,
+      "sha256": "b25810a0fc6d1a7d0093cbb4aa955869a4beda34d1bdcc42a42009182f994834",
+      "width": 1200,
+      "height": 675,
+      "visuallyVerified": true,
+      "verification": "Real PS3 XMB screenshot of PS3 4K Pro installer, visibly labelled an older 4.84 HEN/CFW interface. It is not evidence of the linked Pro Lite package version or 4.92/4.93 execution. Kept as provenance; app card retains neutral PS3 image to avoid misrepresenting the saved build."
+    }
+  ],
+  "cautions": [
+    "Source-page checkmarks and claims of being clean were not repeated as safety guarantees.",
+    "Unknown game updates, exact title IDs and CEX/DEX/HEN variants remain unknown until archive documentation is inspected.",
+    "No videos are added to generated pages: only locally saved and visually checked static images.",
+    "Source headings and adjacent showcase labels sometimes disagree; exact download filename, decoded source button and preserved archive identity take precedence.",
+    "No payloads were downloaded or executed during this source/HEAD probe; the archive agent performs the separate preservation and extraction job."
+  ],
+  "totalAdvertisedBytes": 41904135,
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo3/bo3-sprx",
+      "status": "accessible by direct HTTPS; relevant content in Google Sites custom embeds",
+      "checkedAt": "2026-11-02T06:07:25.684Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ghosts/ghosts-sprx-2",
+      "status": "accessible by direct HTTPS; relevant content in Google Sites custom embeds",
+      "checkedAt": "2026-11-02T06:07:25.684Z"
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "status": "accessible by direct HTTPS; relevant content in Google Sites custom embeds",
+      "checkedAt": "2026-11-02T06:07:25.684Z"
+    }
+  ],
+  "pkgFollowupProbe": [
+    {
+      "id": "ps3-pro-lite-492",
+      "title": "PS3 4K Mod / Pro Lite · 4.92 source build",
+      "url": "https://www.mediafire.com/file/4p6v77e357s7bf1/PS3_Pro_Lite.pkg/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "format": "PKG",
+      "landingStatus": 200,
+      "advertisedSizeText": "714.67MB",
+      "readyForArchive": true,
+      "checkedAt": "2026-11-02T06:09:37.293Z",
+      "attachmentStatus": 200,
+      "expectedBytes": 749383088,
+      "contentType": "application/octet-stream",
+      "filename": "PS3_Pro_Lite.pkg"
+    },
+    {
+      "id": "bo2-ultimate-gsc-injector-v41",
+      "title": "BO2 Ultimate GSC Injector ZM-MP v4.1",
+      "url": "https://www.mediafire.com/file/k0962uh78a37ejf/COD_BO2_Ultimate_GSC_Injector_V4.1_ZM-MP.rar/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/virusmiketools/cod-bo2-xmb-tools",
+      "format": "RAR",
+      "landingStatus": 403,
+      "readyForArchive": false,
+      "checkedAt": "2026-11-02T06:09:37.996Z"
+    },
+    {
+      "id": "bo2-ultimate-gsc-injector-v3",
+      "url": "https://www.mediafire.com/file/p7pwubbtnjw8gia/COD_BO2_Ultimate_GSC_Injector_V3_ZM-MP.rar/file",
+      "landingStatus": 403,
+      "readyForArchive": false,
+      "checkedAt": "2026-11-02T06:10:58.601Z"
+    }
+  ],
+  "apps": [
+    {
+      "id": "ps3-pro-lite-492",
+      "name": "PS3 4K Mod / Pro Lite · legacy 4.92",
+      "title": "PS3 4K Mod / Pro Lite · legacy 4.92",
+      "category": "app",
+      "version": "Unversioned",
+      "gameUpdate": null,
+      "compatibility": "The supplied hub labels this customization package HEN / CFW and firmware 4.92. Compatibility with firmware 4.93 is not established.",
+      "description": "PS3 customization package linked as PS3 Pro Lite by the supplied hub. Keep this source-labelled 4.92 build separate from current 4.93 firmware and homebrew guidance.",
+      "note": "The source name is a customization label; no hardware 4K rendering or performance improvement is claimed. Downloading the PKG does not install or launch it.",
+      "image": "/assets/images/consoles/ps3.png",
+      "imageAlt": "PlayStation 3 console",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/4p6v77e357s7bf1/PS3_Pro_Lite.pkg/file",
+          "label": "Original PKG · source firmware 4.92",
+          "filename": "PS3_Pro_Lite.pkg"
+        }
+      ],
+      "tags": [
+        "PS3 customization",
+        "Legacy source build",
+        "Firmware 4.92",
+        "HEN",
+        "CFW"
+      ],
+      "availability": "Preserved in the local PS3 archive; legacy source firmware4.92",
+      "evidence": {
+        "method": "Decoded original source hub custom embed text and public attachment HEAD.",
+        "sourceLabel": "PS3 4K Mod; HEN & CFW Support; 4.92 FW",
+        "advertisedBytes": 749383088,
+        "attachmentStatus": 200
+      },
+      "historicalSourceArtwork": "/assets/images/ps3-mods/ps3-pro-lite-source-installer.jpg",
+      "status": "archived",
+      "archiveEvidence": {
+        "bytes": 749383088,
+        "sha256": "94049e5baf77b51fab20d3be58a6a289b694a443b66f41d70c738b473d1cf786",
+        "pkgHeader": {
+          "status": "valid-static-PS3-header",
+          "magic": "7f504b47",
+          "type": 1,
+          "revision": 0,
+          "actualBytes": 749383088,
+          "declaredBytes": "749383088",
+          "dataOffset": "320",
+          "dataBytes": "749382672",
+          "metadataOffset": 192,
+          "metadataBytes": 128,
+          "contentId": "CUSTOM-PS34KPROL_00-0000000000000000",
+          "contentIdIsInstallerIdentity": true,
+          "reference": "https://github.com/ps3dev/ps3sdk/blob/master/tools/pkg/pkg.c",
+          "limitation": "Structural header check only; no installation, execution, signature authenticity or game compatibility test."
+        },
+        "compatibility": "Source-labelled legacy4.92; structural validation is not hardware or4.93 compatibility testing.",
+        "execution": "Read-only header/hash inspection; no installation or execution."
+      }
+    }
+  ],
+  "pkgFollowupNotes": [
+    "Direct Pro Lite PKG is the single selected package follow-up. It is explicitly source-labelled legacy firmware 4.92.",
+    "BO2 Ultimate GSC Injector v4.1 and v3 landing pages returned HTTP 403. They are metadata-only observations, with no new download buttons or saved-build claim.",
+    "Matrix XMB pages exposed no usable public package link in this inspection; SPRX Tool Installer links were gated and were skipped."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "vita-more",
+  "checkedAt": "2026-11-02",
+  "title": "MINIMAL",
+  "version": "01.00",
+  "author": "Alberto Munguia",
+  "kind": "Custom theme",
+  "sourceUrl": "https://psvt.ovh/theme.php?id=1780106831",
+  "repositoryId": "1780106831",
+  "downloadUrl": "https://psvt.ovh/download.php?id=1fcf7e0a23b6e77e7928ca717b2807a4a49e9c64",
+  "repositoryHashId": "1fcf7e0a23b6e77e7928ca717b2807a4a49e9c64",
+  "downloadHeaders": {
+    "method": "HEAD",
+    "status": 200,
+    "contentType": "application/zip",
+    "contentDisposition": "attachment; filename=\"theme.zip\"",
+    "bytes": 7051543
+  },
+  "dateAdded": "2025-11-28",
+  "lastUpdated": "2026-05-30",
+  "repositoryValidation": "100.00% (100 valid checks, 0 warnings, 0 errors); repository claim only, not a local archive-format verification",
+  "tags": ["abstract", "art", "dark", "illustration", "minimal", "monochrome", "optical illusion", "pattern", "skull", "texture"],
+  "artwork": {
+    "sourceUrl": "https://psvt.ovh/theme.php?id=1780106831",
+    "previewSelector": "img[alt=\"Theme Dashboard Preview\"]",
+    "previewEncoding": "Embedded PNG data URL in src; decode from the source page or extract the theme's preview asset after archiving. No standalone preview-image URL is exposed by the detail page.",
+    "visuallyInspected": true,
+    "visualDescription": "Black and cream warped abstract pattern with monochrome bubble icons, plus an optical illusion skull lock screen. Public dashboard preview has no recognizable commercial game imagery.",
+    "credit": "MINIMAL custom theme by Alberto Munguia, distributed by PSVita Custom Themes Free Repository (@redsquirrel87). Rights remain with the theme/artwork owners; no permissive artwork licence stated.",
+    "limitations": "Only repository preview inspected. Theme ZIP has not been downloaded or unpacked by this research subagent, so inspect its actual theme.xml/assets and calculate SHA-256 during intake."
+  },
+  "prerequisites": ["Homebrew-enabled PS Vita with HENkaku/h-encore/Ensō/HENlo and a theme installer such as Imago or Custom Themes Manager.", "No exact firmware minimum or PCH model limitation is published for this theme. Do not invent one."],
+  "setup": [
+    "Extract the theme ZIP into its own folder under ux0:customtheme/, retaining theme.xml and its referenced assets: ux0:customtheme/MINIMAL/theme.xml.",
+    "In Imago Library use Square / Add local themes, or select the folder and Add to system themes. Installation requires unsafe homebrew enabled because the system theme database must be updated.",
+    "Apply it separately in Settings > Theme & Background > Theme."
+  ],
+  "setupSources": ["https://github.com/SevyW/imago#questions", "https://psvt.ovh/index.php#tutorials"],
+  "downloadedByResearchAgent": false,
+  "executed": false
+}

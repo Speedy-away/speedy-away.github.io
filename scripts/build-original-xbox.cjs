@@ -1,0 +1,25 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+function build(){
+ const ui=require('./build-console-guides.cjs');
+ const {page,section,grid,note,steps,ext,link,sourceList,esc}=ui;
+ const resource=(title,description,actions,image)=>ui.resource(title,description,actions,image).replace(/(<article\b[^>]*>)/,'$1'+(!image?require('./console-rest-card-images.cjs').markup('console/retro/xbox.html',title):''));
+ const data=JSON.parse(fs.readFileSync(path.join(root,'docs/original-xbox-catalogue.json'),'utf8'));
+ const cards=data.resources.map(item=>resource(esc(item.title)+' · '+esc(item.version),esc(item.description),`<a href="${esc(item.file.local)}" download="${esc(item.file.name)}">Download ${esc(item.file.name)}</a>`+ext(item.release,'Publisher release')+`<details><summary>Setup &amp; checksum</summary><p>${esc(item.setup)}</p><p>${esc(item.notes)}</p><p>${item.file.bytes.toLocaleString('en-GB')} bytes · ZIP · contains ${esc(item.inspection.executable)}</p><p>SHA-256</p><code style="overflow-wrap:anywhere">${item.file.sha256}</code><p>Archive CRC and XBE header/section bounds checked. Console execution remains untested.</p></details>`));
+ const content=section('start','Use your original Xbox',note('<p>These downloads target the original Xbox and its <code>.xbe</code> executable format. Start with an existing, working softmod or compatible modchip/TSOP setup. Xbox 360 XEX and Xbox One/Series APPX packages require different consoles.</p>')+steps([
+  ['Keep the working boot setup','Identify your Xbox hardware revision and use your chosen setup project’s requirements. Preserve the existing boot dashboard, EEPROM backup and recovery files. The apps below do not install a softmod or replace your boot dashboard.'],
+  ['Copy a complete release folder','Download on your PC or phone, extract the ZIP and transfer the full application folder using your existing dashboard’s file manager or FTP. Example E:/Apps paths assume that partition exists; verify your own storage layout.'],
+  ['Launch from the current dashboard','Open the extracted default.xbe from your established dashboard. Retain its companion assets and original archive. No model, RAM upgrade or BIOS compatibility beyond the publisher’s documentation is asserted.']
+ ])+`<div class="guide-links">${ext('https://github.com/Rocky5/Xbox-Softmodding-Tool','Softmod project & model requirements')}${link('/pc/emulators.html#emu-xemu','Original Xbox emulation on PC')}</div>`)+
+ section('online','Xbox Live, online & game modes',grid(resource('Insignia & XLink Kai','Choose Xbox Live restoration, System Link over the internet or local multiplayer, with game-specific versus/co-op limits.',link('/console/retro/xbox-online.html','Online & multiplayer guide')),resource('Find a game mode','Browse ten original Xbox games by System Link versus, co-op and players per console. Check current Halo 2 playlists.',link('/console/retro/xbox-online.html#games','Find a game & mode'))))+
+ section('downloads','Native dashboards & game port',grid(...cards),'Original release ZIPs with exact versions, setup paths and hashes. No commercial game disc image or emulator HDD image is included.')+
+ section('emulators','Emulator source projects',grid(...data.sourceOnly.map(item=>resource(esc(item.title),esc(item.status),ext(item.source,'View Xbox port source')))))+
+ section('sources','Sources & verification',sourceList([...data.resources.map(item=>[item.source,item.title+' · original project']),[data.sourceIndex,'XboxDev native nxdk projects']])+note('<p>These files have been saved in the local archive with source URL, version, size and SHA-256. Checks confirm archive integrity and native XBE structure; no downloaded program was run or tested on an Xbox. A similarly named UWP SDLPoP project was excluded because it targets a different runtime.</p>'));
+ const route='console/retro/xbox.html';
+ page(route,'Original Xbox Homebrew','Original Xbox native dashboards and game port downloads, with exact releases, XBE verification, emulator source links and setup requirements.','/assets/images/consoles/xbox.jpg',[['/console/retro/','Retro consoles'],['#start','Setup'],['#online','Online & game modes'],['#downloads','Native downloads'],['#emulators','Emulator projects']],content,'#downloads','Browse native downloads');
+ const target=path.join(root,route);fs.writeFileSync(target,require('./apply-site-background.cjs').improve(fs.readFileSync(target,'utf8'),route));
+ const sitemapFile=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemapFile,'utf8');const canonical='https://whatwhatboy.com/'+route;
+ if(!xml.includes('<loc>'+canonical+'</loc>')){xml=xml.replace('</urlset>','  <url><loc>'+canonical+'</loc><lastmod>2026-11-02</lastmod></url>\n</urlset>');fs.writeFileSync(sitemapFile,xml);}
+ console.log('Built original Xbox page with '+data.resources.length+' native release downloads and one explicitly source-only emulator.');
+}
+module.exports={build};if(require.main===module)build();

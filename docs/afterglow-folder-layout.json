@@ -1,0 +1,212 @@
+{
+  "date": "2026-11-03",
+  "status": "Complete locally; preview running at user request",
+  "url": "http://127.0.0.1:8765/hosts/ps4/firmware/",
+  "changes": [
+    "Full-width firmware folder rows, newest firmware first; no sidebar or oversized hero",
+    "Opening a folder uses a shareable ?fw= version URL and shows only its exact routes",
+    "Sticky top bar with Back, PS4 host, firmware navigation and existing language control",
+    "Route requirements remain expandable; built-in, external, Ethernet and USB methods stay separately labelled",
+    "Afterglow landing gets a back/navigation bar and responsive larger controls; run document and all exploit/native bytes unchanged"
+  ],
+  "browser": {
+    "folderRootVerified": true,
+    "firmware1400OnlyAfterglow": true,
+    "backVerified": true,
+    "actualRuntimeOpened": false,
+    "landing": "Authored inert fixture only; no exploit module or payload execution",
+    "screenshots": [
+      "docs/screenshots/ps4-firmware-folders.png",
+      "docs/screenshots/afterglow-full-page-inert.png"
+    ]
+  },
+  "tests": {
+    "passed": 20,
+    "failed": 0,
+    "report": "docs/qa/afterglow-folder-tests.txt"
+  },
+  "audit": {
+    "report": "docs/qa/afterglow-folder-site-audit.txt",
+    "note": "Full audit initially found five missing links on concurrently created ESP flasher and PS4 trainer pages, outside this layout change. Do not overwrite their work."
+  },
+  "artifacts": [
+    {
+      "id": "afterglow-builds-5dc1ddd60b9f",
+      "title": "Afterglow PS4 Builds",
+      "project": "Afterglow",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v2",
+      "url": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "local": "/downloads/hosts/afterglow/afterglow-runtime-acf25a831725-5dc1ddd60b9f.zip",
+      "importPath": "downloads/hosts/afterglow/afterglow-runtime-acf25a831725-5dc1ddd60b9f.zip",
+      "filename": "afterglow-runtime-acf25a831725-5dc1ddd60b9f.zip",
+      "bytes": 535596,
+      "sha256": "5dc1ddd60b9fcbb0b7fb96b6294666580b55ab5a286861eabee2aa0987019384",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v2\\afterglow-runtime-acf25a831725-5dc1ddd60b9f.zip"
+    },
+    {
+      "id": "afterglow-source-code-8db24b508bab",
+      "title": "Afterglow PS4 Source Code",
+      "project": "Afterglow",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Source Code"
+      ],
+      "version": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v2",
+      "url": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "local": "/downloads/hosts/afterglow/afterglow-source-acf25a831725-8db24b508bab.zip",
+      "importPath": "downloads/hosts/afterglow/afterglow-source-acf25a831725-8db24b508bab.zip",
+      "filename": "afterglow-source-acf25a831725-8db24b508bab.zip",
+      "bytes": 228497,
+      "sha256": "8db24b508bab3b4c7cc0db66e1f78f2fc292294f8ea67ea10c247ed6e46135e4",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Source Code\\acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v2\\afterglow-source-acf25a831725-8db24b508bab.zip"
+    },
+    {
+      "id": "afterglow-goldhen-bin-39452f5e1c30",
+      "title": "Afterglow goldhen.bin",
+      "project": "Afterglow",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "url": "https://raw.githubusercontent.com/well0nez/afterglow-web/acf25a831725f0d44fcb64725d4ce35acbba8f9d/goldhen.bin",
+      "local": "/hosts/runtime/ps4-afterglow-acf25a831725/web/goldhen.bin",
+      "importPath": "hosts/runtime/ps4-afterglow-acf25a831725/web/goldhen.bin",
+      "filename": "goldhen.bin",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\Afterglow\\Builds\\acf25a831725f0d44fcb64725d4ce35acbba8f9d\\goldhen.bin"
+    },
+    {
+      "id": "afterglow-hen-bin-364e5f6fd59e",
+      "title": "Afterglow hen.bin",
+      "project": "Afterglow",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "url": "https://raw.githubusercontent.com/well0nez/afterglow-web/acf25a831725f0d44fcb64725d4ce35acbba8f9d/hen.bin",
+      "local": "/hosts/runtime/ps4-afterglow-acf25a831725/web/hen.bin",
+      "importPath": "hosts/runtime/ps4-afterglow-acf25a831725/web/hen.bin",
+      "filename": "hen.bin",
+      "bytes": 500448,
+      "sha256": "364e5f6fd59e8a7afc207c70e27b840699f8173f3ae0241b63bc6dec6b394bfe",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\Afterglow\\Builds\\acf25a831725f0d44fcb64725d4ce35acbba8f9d\\hen.bin"
+    },
+    {
+      "id": "afterglow-patchset-1352-bin-adfb9771904f",
+      "title": "Afterglow patchset-1352.bin",
+      "project": "Afterglow",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "url": "https://raw.githubusercontent.com/well0nez/afterglow-web/acf25a831725f0d44fcb64725d4ce35acbba8f9d/patchset-1352.bin",
+      "local": "/hosts/runtime/ps4-afterglow-acf25a831725/web/patchset-1352.bin",
+      "importPath": "hosts/runtime/ps4-afterglow-acf25a831725/web/patchset-1352.bin",
+      "filename": "patchset-1352.bin",
+      "bytes": 632,
+      "sha256": "adfb9771904f71cd1f5a82cbded8ac46c7ffeb3df974579535cf711904ac347e",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\Afterglow\\Builds\\acf25a831725f0d44fcb64725d4ce35acbba8f9d\\patchset-1352.bin"
+    },
+    {
+      "id": "afterglow-patchset-1400-bin-615f275b9683",
+      "title": "Afterglow patchset-1400.bin",
+      "project": "Afterglow",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "url": "https://raw.githubusercontent.com/well0nez/afterglow-web/acf25a831725f0d44fcb64725d4ce35acbba8f9d/patchset-1400.bin",
+      "local": "/hosts/runtime/ps4-afterglow-acf25a831725/web/patchset-1400.bin",
+      "importPath": "hosts/runtime/ps4-afterglow-acf25a831725/web/patchset-1400.bin",
+      "filename": "patchset-1400.bin",
+      "bytes": 641,
+      "sha256": "615f275b96831cc04173757db39e93f0d27b52888976af2a6444604aa8ac5dbf",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\Afterglow\\Builds\\acf25a831725f0d44fcb64725d4ce35acbba8f9d\\patchset-1400.bin"
+    }
+  ],
+  "artifactIntegrity": {
+    "payloadsExecuted": false,
+    "method": "Independent Python ZIP/CRC/SHA reader; no extraction or execution",
+    "artifacts": [
+      {
+        "name": "afterglow-runtime-acf25a831725-5dc1ddd60b9f.zip",
+        "bytes": 535596,
+        "sha256": "5dc1ddd60b9fcbb0b7fb96b6294666580b55ab5a286861eabee2aa0987019384",
+        "backupVerified": true,
+        "zipMembersVerified": 27
+      },
+      {
+        "name": "afterglow-source-acf25a831725-8db24b508bab.zip",
+        "bytes": 228497,
+        "sha256": "8db24b508bab3b4c7cc0db66e1f78f2fc292294f8ea67ea10c247ed6e46135e4",
+        "backupVerified": true,
+        "zipMembersVerified": 42
+      },
+      {
+        "name": "goldhen.bin",
+        "bytes": 297496,
+        "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+        "backupVerified": true,
+        "zipMembersVerified": null
+      },
+      {
+        "name": "hen.bin",
+        "bytes": 500448,
+        "sha256": "364e5f6fd59e8a7afc207c70e27b840699f8173f3ae0241b63bc6dec6b394bfe",
+        "backupVerified": true,
+        "zipMembersVerified": null
+      },
+      {
+        "name": "patchset-1352.bin",
+        "bytes": 632,
+        "sha256": "adfb9771904f71cd1f5a82cbded8ac46c7ffeb3df974579535cf711904ac347e",
+        "backupVerified": true,
+        "zipMembersVerified": null
+      },
+      {
+        "name": "patchset-1400.bin",
+        "bytes": 641,
+        "sha256": "615f275b96831cc04173757db39e93f0d27b52888976af2a6444604aa8ac5dbf",
+        "backupVerified": true,
+        "zipMembersVerified": null
+      }
+    ],
+    "sender": {
+      "version": "1.9.1+24bbed9cc369",
+      "bytes": 100413152,
+      "sha256": "201e3b8956b3b3375801149ca0150a9184c16ffc04800b7ecdbd09843f2cf32d",
+      "zipMembers": 283,
+      "manifestRecords": 282,
+      "backupVerified": true
+    }
+  },
+  "archiveIndex": "docs/qa/afterglow-folder-archive-index.txt",
+  "published": false
+}

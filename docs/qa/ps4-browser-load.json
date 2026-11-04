@@ -1,0 +1,102 @@
+{
+  "updatedAt": "2026-11-03T20:48:34.672Z",
+  "request": "Use a simple Load action for complete PS4 browser jailbreak / GoldHEN hosts.",
+  "status": "Published and live verified",
+  "changes": [
+    "Direct same-tab Load for verified original browser hosts; no modal or separate sender for the jailbreak route.",
+    "GamerHack exact existing whitelist retained:5.05/5.07 and enumerated7.00–13.52 firmwares.",
+    "RAW GAME exact13.02/13.04/13.50/13.52 whitelist retained.",
+    "Afterglow13.52/14.00 restored to generated catalogue using its public build record instead of a missing private archive sidecar.",
+    "One supplied Goldhen PS4 download gains its matching Afterglow browser Load route; download bytes unchanged.",
+    "Old9.00 and7.00–9.60 entry pages now show Load and open GamerHack; advanced BIN listener retained separately."
+  ],
+  "sources": {
+    "gamerhack": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/master/g2all/index.html",
+    "raw13g": "https://raw.githubusercontent.com/raw13g/raw13g.github.io/main/index.html",
+    "afterglow": "https://github.com/well0nez/afterglow-web#running-it",
+    "sentrix": "User-provided URL could not be read using the web review tool; not promoted as a verified loader."
+  },
+  "verification": {
+    "focusedTests": 54,
+    "gameModMetadataUnchanged": true,
+    "newDownloadFiles": 0,
+    "downloadedCodeExecuted": false,
+    "hardwareExecution": false,
+    "browserPreview": "Unavailable in Work settings",
+    "nativeScriptsUnchanged": 848,
+    "cachedResourcesRetained": 1491,
+    "brokenBuildLinks": 0
+  },
+  "live": {
+    "checkedAt": "2026-11-03T20:57:54.968Z",
+    "commit": "6ccc8e8bd29de9f7ac1c3fc649765878e3b49858",
+    "status": "Published and live verified",
+    "completeHosts": [
+      {
+        "id": "built-in-ps4-afterglow",
+        "firmwares": [
+          "13.52",
+          "14.00"
+        ],
+        "launchURL": "/WWB-HOST/hosts/runtime/ps4-afterglow-acf25a831725/web/index.html"
+      },
+      {
+        "id": "gamerhack-g2all",
+        "firmwares": [
+          "5.05",
+          "5.07",
+          "7.00",
+          "7.01",
+          "7.02",
+          "7.50",
+          "7.51",
+          "7.55",
+          "8.00",
+          "8.01",
+          "8.03",
+          "8.50",
+          "8.52",
+          "9.00",
+          "9.03",
+          "9.04",
+          "9.50",
+          "9.51",
+          "9.60",
+          "10.00",
+          "10.01",
+          "10.50",
+          "10.70",
+          "10.71",
+          "11.00",
+          "11.02",
+          "11.50",
+          "11.52",
+          "12.00",
+          "12.02",
+          "12.50",
+          "12.52",
+          "13.00",
+          "13.02",
+          "13.04",
+          "13.50",
+          "13.52"
+        ],
+        "launchURL": "https://gamerhack.github.io/g2all/"
+      },
+      {
+        "id": "raw13g-1302-1352",
+        "firmwares": [
+          "13.02",
+          "13.04",
+          "13.50",
+          "13.52"
+        ],
+        "launchURL": "https://raw13g.github.io/"
+      }
+    ],
+    "singleGoldhenEntry": true,
+    "oldEntryPagesUseLoad": true,
+    "downloadedCodeExecuted": false
+  },
+  "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41716058331"
+}

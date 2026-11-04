@@ -1,0 +1,81 @@
+{
+  "updatedAt": "2026-11-03T21:25:34.459Z",
+  "status": "published-and-verified",
+  "baseline": "bf348610c9ab6a6cf3819833d2eb5d6ebacb86d4",
+  "changes": [
+    "Console catalogue first batch:12 text entries; Show more keeps all entries reachable",
+    "Console trainer first batch:18 entries, no cover images",
+    "Static console artwork deferred; desktop artwork retained",
+    "Hidden animated background and unrelated main-site script removed from authored host deployment",
+    "Unused external font stylesheet removed",
+    "English refresh skips translation scans; language switching still restores source strings",
+    "Catalogue groups cached and redundant JSON parse/grouping removed",
+    "Console search debounced 120 ms"
+  ],
+  "regressionTests": 166,
+  "fixtureComparison": {
+    "entries": 100,
+    "consoleInitialTiles": 12,
+    "desktopTiles": 100,
+    "allEntriesReachable": true,
+    "consoleImageSourceAssignments": 0
+  },
+  "nativeRuntimeFilesChanged": 0,
+  "downloadFilesChanged": 0,
+  "hardwareMeasured": false,
+  "browserRenderVerified": false,
+  "checkedAt": "2026-11-03T21:30:57.500Z",
+  "revision": "2b2cbb563491698019f1a487d3eb2a62499d8e5f",
+  "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41721967832",
+  "publicPages": [
+    {
+      "path": "",
+      "status": 200,
+      "scriptCount": 2,
+      "deferredStaticImages": 5
+    },
+    {
+      "path": "hosts/ps4/",
+      "status": 200,
+      "scriptCount": 9,
+      "deferredStaticImages": 1
+    },
+    {
+      "path": "hosts/ps5/",
+      "status": 200,
+      "scriptCount": 9,
+      "deferredStaticImages": 1
+    },
+    {
+      "path": "hosts/ps4/gta5/",
+      "status": 200,
+      "scriptCount": 7,
+      "deferredStaticImages": 12
+    },
+    {
+      "path": "hosts/ps5/gta5/",
+      "status": 200,
+      "scriptCount": 7,
+      "deferredStaticImages": 12
+    },
+    {
+      "path": "hosts/tools/ps4-trainer/",
+      "status": 200,
+      "scriptCount": 3,
+      "deferredStaticImages": 1
+    }
+  ],
+  "pagesBuild": {
+    "revision": "2b2cbb563491698019f1a487d3eb2a62499d8e5f",
+    "base": "/WWB-HOST",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 842382267,
+    "budget": 922746880,
+    "files": 5587,
+    "offloadedFiles": 274,
+    "nativeScriptsUnchanged": 848,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+  }
+}

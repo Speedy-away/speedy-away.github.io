@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+<title id="title">Console customization</title><desc id="desc">Original green flowing lines and interface tiles on a dark field.</desc>
+<defs><linearGradient id="base" x2="1" y2="1"><stop stop-color="#03271e"/><stop offset="1" stop-color="#080b0b"/></linearGradient><linearGradient id="flow"><stop stop-color="#00d693" stop-opacity=".15"/><stop offset=".6" stop-color="#64e8bc" stop-opacity=".8"/><stop offset="1" stop-color="#00d693" stop-opacity=".1"/></linearGradient></defs>
+<path fill="url(#base)" d="M0 0h1280v720H0z"/>
+<g fill="none" stroke="url(#flow)" stroke-width="2"><path d="M-80 470C180 180 450 700 780 360s470-310 600-200"/><path d="M-80 492C180 202 450 722 780 382s470-310 600-200"/><path d="M-80 514C180 224 450 744 780 404s470-310 600-200"/><path d="M-80 536C180 246 450 766 780 426s470-310 600-200"/><path d="M-80 558C180 268 450 788 780 448s470-310 600-200"/><path d="M-80 580C180 290 450 810 780 470s470-310 600-200"/><path d="M-80 602C180 312 450 832 780 492s470-310 600-200"/></g>
+<g stroke="#6be8bf" fill="#101b18"><rect x="126" y="122" width="150" height="150" rx="26"/><rect x="310" y="122" width="150" height="150" rx="26" opacity=".65"/><rect x="494" y="122" width="150" height="150" rx="26" opacity=".35"/></g>
+<g fill="#83f0cb"><circle cx="201" cy="197" r="33"/><path d="M366 177h38v40h-38z" opacity=".65"/><path d="m568 170 29 49h-58z" opacity=".35"/></g>
+<path stroke="#79ebc3" stroke-width="5" d="M129 323h359"/><path stroke="#56756a" stroke-width="3" d="M129 348h214"/>
+<text x="126" y="652" fill="#9eb8ad" font-family="sans-serif" font-size="18" letter-spacing="5">MAKE IT YOURS</text>
+</svg>

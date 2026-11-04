@@ -1,0 +1,96 @@
+<html>
+<!-- <html manifest="cache.appcache"> -->
+
+<head><script src="../guard.js"></script><script src="../load-request.js"></script>
+    <title>PS5 UMTX Jailbreak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<!-- body is set up as three rows: auto 1fr auto -->
+<body>
+    <!-- Row 1 -->
+    <div class="p-2">
+        <h1 class="text-center">PS5 loader</h1>
+        <p class="text-center">Current firmware: <span class="text-bold" id="current-fw"></span></p>
+
+        <!-- This is absolute positioned to the body-->
+        <div id="toast-container"></div>
+    </div>
+
+    <!-- Row 2 -->
+    <div id="main-content">
+        <div id="pre-jb-view" class="d-flex align-items-center justify-content-center selected">
+            <a tabindex="0" class="btn" id="run-jb" onclick="runJailbreak()">Load</a>
+        </div>
+
+        <div id="console-view">
+            <textarea id="console" class="log"></textarea>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="position-relative text-center p-2 mb-2">
+        <p class="text-secondary" id="version">v1.2</p>
+        <p class="text-secondary">creds & greetz</p>
+        <h3 class="text-secondary mt-2">
+            <a href="https://x.com/fail0verflow">@fail0verflow</a>,
+            <a href="https://twitter.com/flat_z">@flat_z</a>,
+            <a href="https://twitter.com/SpecterDev">@SpecterDev</a>,
+            ChendoChap,
+            SlidyBat,
+            abc/psfree,
+            <br />
+            idlesauce,
+            <a href="https://x.com/znullptr">@znullptr</a>,
+            <a href="https://twitter.com/notnotzecoxao">@notnotzecoxao</a>,
+            <a href="https://twitter.com/SocraticBliss">@SocraticBliss</a>,
+            <a href="https://github.com/john-tornblom">John Tornblom</a>,
+            <a href="https://discord.gg/kbrzGuH3F6">PS5 R&D Discord</a>
+        </h3>
+
+        <div class="position-absolute d-flex align-items-center bottom-0 left-0 m-4"> 
+            <div class="l2-redirect-box">L2</div>
+            <span class="ml-2">Redirect</span>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>if(window.whatsiteRuntimeAllowed){if(window.WWBPS5Load&&window.WWBPS5Load.requested){document.getElementById('pre-jb-view').classList.remove('selected');document.getElementById('console-view').classList.add('selected');document.getElementById('console').value='Loading PS5 loader…\n';}var files=["int64.js","rop.js","exploit.js","custom_host_stuff.js","module/utils.js","module/constants.js","module/int64.js","module/mem.js","module/memtools.js","module/rw.js","module/syscalls.js","webkit_psfree.js","webkit_fontface.js"];var at=0;function next(){if(at===files.length){        addEventListener('unhandledrejection', (event) => {
+            const reason = event.reason;
+            // We log the line and column numbers as well since some exceptions (like
+            // SyntaxError) do not show it in the stack trace.
+            alert(
+                `${reason}\n`
+                + `${reason.sourceURL}:${reason.line}:${reason.column}\n`
+                + `${reason.stack}`
+            );
+            throw reason;
+        });
+        document.getElementById("current-fw").innerHTML = fw_str;
+        localStorage.setItem(LOCALSTORE_WK_EXPLOIT_TYPE_KEY, LOCALSTORE_WK_EXPLOIT_TYPE_VALUE_PSFREE);
+        registerAppCacheEventHandlers();
+        registerL2ButtonHandler();
+        if(window.WWBPS5Load&&window.WWBPS5Load.requested){var firmwareDeadline=Date.now()+30000;function waitForFirmware(){if(typeof OFFSET_wk_vtable_first_element!=='undefined'){runJailbreak(false);return;}if(Date.now()>=firmwareDeadline){document.getElementById('console').value+='\nFirmware data failed to load. Return to the PS5 host and try Load again.';return;}setTimeout(waitForFirmware,50);}waitForFirmware();}else window.onload = function() {
+            if (sessionStorage.getItem(SESSIONSTORE_RUN_WK_EXPLOIT_ON_LOAD_KEY)) {
+                runJailbreak(false);
+            }
+        };
+
+return;}var s=document.createElement('script');s.src=files[at++];s.onload=next;s.onerror=function(){document.getElementById('console').value+='\nRuntime dependency failed to load.';};document.body.appendChild(s);}next();}else{document.getElementById('main-content').innerHTML='<p>Use a supported PS5 browser. <a href="../">Return to loader details</a></p>';}</script></body>
+
+</html>

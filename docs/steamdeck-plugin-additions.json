@@ -1,0 +1,131 @@
+{
+  "items": [
+    {
+      "id": "css-loader",
+      "title": "CSS Loader",
+      "kind": "Decky theme plugin",
+      "description": "Customize the Steam interface with community CSS themes. Install the plugin through Decky, then choose and manage themes from its menu.",
+      "features": [
+        "Decky plugin",
+        "Interface themes",
+        "Game Mode"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/DeckThemes/SDH-CssLoader",
+          "label": "CSS Loader project"
+        },
+        {
+          "url": "https://docs.deckthemes.com/CSSLoader/Install/",
+          "label": "Official instructions"
+        }
+      ],
+      "guide": "guide-customization",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "CSS Loader decky plugin",
+      "icon": "/assets/images/steamdeck/css-loader.png",
+      "requirement": "Requires Decky Loader; install through its built-in stable store.",
+      "archiveJobId": "steamdeck-plugin-css-loader"
+    },
+    {
+      "id": "steamgriddb",
+      "title": "SteamGridDB",
+      "kind": "Decky artwork plugin",
+      "description": "Change library artwork, icons, and game images in Game Mode, including non-Steam shortcuts. Open a game's context menu and choose Change Artwork.",
+      "features": [
+        "Decky plugin",
+        "Library artwork",
+        "Steam shortcuts"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/SteamGridDB/decky-steamgriddb",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-customization",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "SteamGridDB decky plugin",
+      "icon": "/assets/images/steamdeck/steamgriddb.png",
+      "requirement": "Requires Decky Loader; install through its built-in stable store.",
+      "archiveJobId": "steamdeck-plugin-steamgriddb"
+    },
+    {
+      "id": "protondb-badges",
+      "title": "ProtonDB Badges",
+      "kind": "Decky compatibility plugin",
+      "description": "Show tappable ProtonDB community compatibility badges on game pages. Open the reports to compare other players' settings and experiences with a title.",
+      "features": [
+        "Decky plugin",
+        "Community reports",
+        "Game pages"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/bschelst/protondb-decky",
+          "label": "Maintained project"
+        }
+      ],
+      "guide": "guide-decky",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "ProtonDB Badges decky plugin",
+      "icon": "/assets/images/steamdeck/protondb-badges.png",
+      "requirement": "Requires Decky Loader; install through its built-in stable store.",
+      "archiveJobId": "steamdeck-plugin-protondb-badges"
+    },
+    {
+      "id": "powertools",
+      "title": "PowerTools",
+      "kind": "Advanced Decky tuning plugin",
+      "description": "Adjust CPU, GPU, and battery controls with per-game settings. For manual tuning: change one setting at a time and keep defaults available to restore.",
+      "features": [
+        "Decky plugin",
+        "Advanced controls",
+        "Per-game settings"
+      ],
+      "links": [
+        {
+          "url": "https://gitlab.com/NGnius/PowerTools",
+          "label": "Project & documentation"
+        }
+      ],
+      "guide": "guide-decky",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "PowerTools decky plugin",
+      "icon": "/assets/images/steamdeck/powertools.png",
+      "requirement": "Requires Decky Loader. Advanced manual tuning; results depend on the game.",
+      "archiveJobId": "steamdeck-plugin-powertools"
+    }
+  ],
+  "images": [
+    {
+      "filename": "css-loader.png",
+      "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/CSS%20Loader-521e6e0b59bd89ba3632f15b7a1463cb96127a8a43449d487a4e49b1f1cbafe2.png"
+    },
+    {
+      "filename": "steamgriddb.png",
+      "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/SteamGridDB-1a938447c46d3d7816c87181c20b96ca438840cbdbb556c13c37cf1f923b3512.png"
+    },
+    {
+      "filename": "protondb-badges.png",
+      "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/ProtonDB%20Badges-aa57ab7fbf2d1fcbd51e8d671c7e702405df674aeac6de039f77a135c8c7586a.png"
+    },
+    {
+      "filename": "powertools.png",
+      "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/PowerTools-5390b97fa41a45fcfb6529406527059b33c9d982872a286b9dbbbd06c74ca28d.png"
+    }
+  ],
+  "purpose": "Primary-source research snapshot. Edit docs/steamdeck-resources.json and docs/steamdeck-setup-guides.json for current page content."
+}

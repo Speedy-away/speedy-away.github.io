@@ -1,0 +1,2401 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T09:04:20.035Z",
+  "platform": "PS3",
+  "sources": {
+    "themezer": "https://themezer.net/",
+    "catalogue": "https://themezer.net/ps3/themes",
+    "sony": "https://manuals.playstation.net/document/en/ps3/current/settings/themesettings.html",
+    "usb": "https://themezer.net/ps3/faq/how-do-i-install-a-ps3-theme-from-a-usb-drive",
+    "browser": "https://themezer.net/ps3/faq/can-i-install-a-theme-using-the-ps3-browser-or-ftp",
+    "compatibility": "https://themezer.net/ps3/faq/do-i-need-a-modded-ps3-to-use-custom-themes"
+  },
+  "themes": [
+    {
+      "id": "1E4B0",
+      "title": "PS4 XMB 2.0",
+      "author": "akaBATTOUSAI",
+      "sourceUrl": "https://themezer.net/ps3/themes/ps4-xmb-2-0-1E4B0",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E4B0-552c5eac68ca.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/49d72bdf-5313-41e0-a637-4cfcbe383df8/assets/preview.webp?hash=Vu4w3Di78QKIr11%2FQ7UhS0GYbcnN0zTsWL%2Fm%2BcXvs%2FQ%3D",
+      "imageSha256": "552c5eac68cac390acc6ad93654f12f23c41d675ad79bbd9ede22d613f3a5855",
+      "version": "2.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "A PS4-inspired look for the PS3 XMB, with two backgrounds and revised menu sounds. Themezer classifies this P3T as static.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E4B0/cd7c38c8ab110b53/ps4-xmb-2-0-1E4B0.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E4B0/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E4B0",
+      "bytes": 449056,
+      "sha256": "cd7c38c8ab110b530c52e19425e9da983587a29713346970b84cf07d1f70ec11",
+      "createdAt": "2014-11-20T16:11:40.000Z",
+      "checkedAt": "2026-11-02T08:16:41.585Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6912
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6976,
+            "size": 1540
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8528,
+            "size": 468
+          },
+          {
+            "headerOffset": 32,
+            "offset": 9008,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 9008,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 9008,
+            "size": 440048
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 92,
+        "embeddedFiles": 91,
+        "metadata": [
+          {
+            "name": "PS4 XMB 2.0",
+            "author": "akaBATTOUSAI",
+            "version": "2.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "This changes PS3 artwork; it does not install PS4 system software."
+      ]
+    },
+    {
+      "id": "1E74D",
+      "title": "Red Theme",
+      "author": "scei",
+      "sourceUrl": "https://themezer.net/ps3/themes/red-theme-1E74D",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E74D-c1a5c98a97b0.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/0cf4f4aa-031b-42a6-9690-8f8164ac1939/assets/preview.webp?hash=U91XBNf8N%2F9%2B7Z17pwv0rhRaqlf3j6q9XGpBHjKijJ4%3D",
+      "imageSha256": "c1a5c98a97b0bc9691b60e58ae064972a4a388686e4c599421cc18e39e802bb2",
+      "version": "version 1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "A restrained red theme with custom icons and pointers, credited to scei in both the archive listing and P3T metadata.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E74D/750c43481da5c1be/red-theme-1E74D.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E74D/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E74D",
+      "bytes": 830480,
+      "sha256": "750c43481da5c1be03b7d2d025763ea64bb75b6c6792549ed5e45fb56ebd255e",
+      "createdAt": "2007-11-17T11:51:12.000Z",
+      "checkedAt": "2026-11-02T08:16:49.608Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6064
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6128,
+            "size": 1294
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7424,
+            "size": 431
+          },
+          {
+            "headerOffset": 32,
+            "offset": 7856,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 7856,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 7856,
+            "size": 822624
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 80,
+        "embeddedFiles": 76,
+        "metadata": [
+          {
+            "name": "Red Theme",
+            "author": "scei",
+            "version": "version 1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1E702",
+      "title": "PS2 Animated Theme",
+      "author": "lnnlrocklnnl",
+      "sourceUrl": "https://themezer.net/ps3/themes/ps2-animated-theme-1E702",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E702-836ecb15db66.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/a169f883-3b6f-4c4a-b8ee-6ca7189d4f2e/assets/preview.webp?hash=nDl9D0pVy9c%2BX8oiKM3FQH6BXZktrXDTnc5hyp2OqGM%3D",
+      "imageSha256": "836ecb15db66552f0d349944ba472110aabe2a6b737dcf6f1cf9a4552093db19",
+      "version": "1.0.1 Final",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "A moving PS2-inspired background with matching icons and BIOS-style menu sounds.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E702/eba70ceacc1f9974/ps2-animated-theme-1E702.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E702/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E702",
+      "bytes": 2908608,
+      "sha256": "eba70ceacc1f9974f1f576749b38e67aecbc43cb392ed1dfa726a1d15b26d98d",
+      "createdAt": "2018-03-13T17:04:31.000Z",
+      "checkedAt": "2026-11-02T08:16:58.253Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6036
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6112,
+            "size": 1399
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7520,
+            "size": 632
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8160,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8160,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8160,
+            "size": 2900448
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 83,
+        "embeddedFiles": 81,
+        "metadata": [
+          {
+            "name": "PS2 Animated Theme",
+            "author": "lnnlrocklnnl",
+            "version": "1.0.1 Theme Final Ver.1"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Listing version: 1.0.1 Final. Embedded version: 1.0.1 Theme Final Ver.1."
+      ]
+    },
+    {
+      "id": "1D87B",
+      "title": "Yakuza Animated Kamurocho",
+      "author": "YakFan",
+      "sourceUrl": "https://themezer.net/ps3/themes/yakuza-animated-kamurocho-1D87B",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D87B-a33247f8477c.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/cd3cf208-bdb1-4e9b-a288-db613ee31c4b/assets/preview.webp?hash=TamZx65Nm3gVhORpvfWl1Z9piPOkEVpyPK5DDXqquUw%3D",
+      "imageSha256": "a33247f8477c7396a9ec5edf19fca824feff67357daa44ba1ea88722862657c2",
+      "version": "Pro",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "Animated Kamurocho entrance artwork, custom sounds and icons, with day and night background variants.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D87B/96f06212e99f39c5/yakuza-animated-kamurocho-1D87B.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D87B/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D87B",
+      "bytes": 14740736,
+      "sha256": "96f06212e99f39c59ae968c810e8c13d9ba2843dcb60445206b89074dda94bb9",
+      "createdAt": "2012-06-12T12:59:36.000Z",
+      "checkedAt": "2026-11-02T08:17:08.247Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6992
+          },
+          {
+            "headerOffset": 16,
+            "offset": 7056,
+            "size": 1540
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8608,
+            "size": 622
+          },
+          {
+            "headerOffset": 32,
+            "offset": 9232,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 9232,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 9232,
+            "size": 14731504
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 92,
+        "embeddedFiles": 91,
+        "metadata": [
+          {
+            "name": "Yakuza Animated Kamurocho",
+            "author": "YakuzaFan.com",
+            "version": "Pro"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Listed author: YakFan; the embedded author field says YakuzaFan.com."
+      ]
+    },
+    {
+      "id": "1D2DE",
+      "title": "Dark Souls Hope Dynamic Theme",
+      "author": "Sentiel",
+      "sourceUrl": "https://themezer.net/ps3/themes/dark-souls-hope-dynamic-theme-1D2DE",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D2DE-32418d18a1c9.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/e8a93aad-9c61-437e-bc00-262fbd14fa5c/assets/preview.webp?hash=TB8dGCVbQCLxOAFzFxGysp%2B9hNBmUv92uFtl8QVn3yU%3D",
+      "imageSha256": "32418d18a1c9c38ca3840a464c1c5422b99f640503409e143c03c1ec8d00da9b",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "Dark Souls artwork with an animated logo, published by Sentiel as a PS3 dynamic theme.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D2DE/abf96e346bb8f00b/dark-souls-hope-dynamic-theme-1D2DE.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D2DE/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D2DE",
+      "bytes": 4859040,
+      "sha256": "abf96e346bb8f00b9e896b51f394835ef2b9340dca66561f0e04393252a06a60",
+      "createdAt": "2011-08-25T12:15:24.000Z",
+      "checkedAt": "2026-11-02T08:17:10.987Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6176
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6240,
+            "size": 1439
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7680,
+            "size": 517
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8208,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8208,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8208,
+            "size": 4850832
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 84,
+        "embeddedFiles": 78,
+        "metadata": [
+          {
+            "name": "Dark Souls Hope Dynamic Theme",
+            "author": "Sentiel",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1D083",
+      "title": "LBP Dynamic V2+Sounds",
+      "author": "Kevinoss",
+      "sourceUrl": "https://themezer.net/ps3/themes/lbp-dynamic-v2-sounds-1D083",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D083-d2fb16d3abf8.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/a53e7f66-0b2f-44f0-a9e7-f6665e792c02/assets/preview.webp?hash=SwzCFxp6OEpI9NtHCehBgyt9q%2BNfHJTS6kQ4B8fVWIA%3D",
+      "imageSha256": "d2fb16d3abf88a1b8ea1c556c3ba1ca9fc586ece237db3a00434f52a550028c7",
+      "version": "V2+Sounds",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "A LittleBigPlanet animation with revised icons, browser pointer and XMB sound effects.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D083/9e58514c9a939ad3/lbp-dynamic-v2-sounds-1D083.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D083/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D083",
+      "bytes": 4176688,
+      "sha256": "9e58514c9a939ad34fe18c3c3781929acffa786f88621dbeb2b1a89fbc0fd2ef",
+      "createdAt": "2011-05-18T10:39:27.000Z",
+      "checkedAt": "2026-11-02T08:17:13.215Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6744
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6816,
+            "size": 1521
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8352,
+            "size": 619
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8976,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8976,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8976,
+            "size": 4167712
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 90,
+        "embeddedFiles": 88,
+        "metadata": [
+          {
+            "name": "LBP Dynamic V2+Sounds",
+            "author": "Kevinos",
+            "version": "2.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Kevinoss credits the original LittleBigPlanet icons to Mik2121 and notes further icon edits. Embedded author: Kevinos; embedded version: 2.0."
+      ]
+    },
+    {
+      "id": "1D560",
+      "title": "In your hands Animated",
+      "author": "Faxtron",
+      "sourceUrl": "https://themezer.net/ps3/themes/in-your-hands-animated-1D560",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D560-e1198b184970.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/6b9511cf-a570-432f-b14b-efe8d8c17bc7/assets/preview.webp?hash=y%2FmnzI5gXGaoFFxfCyrvJQtnHboof2c41FIDXP%2Fx0lc%3D",
+      "imageSha256": "e1198b18497069e2c6a7b59d89fe4096dbcd6f21621afcd43f91d97cc1b21d06",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "An animated background by Faxtron with recoloured and supplemented icons originally created by hobix.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D560/5cd84ad104627840/in-your-hands-animated-1D560.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D560/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D560",
+      "bytes": 8948352,
+      "sha256": "5cd84ad104627840c0599f9eab9d2a2235cac99a9e61328ed9e44cdd57d48779",
+      "createdAt": "2012-01-09T13:33:35.000Z",
+      "checkedAt": "2026-11-02T08:17:19.606Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6300
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6368,
+            "size": 1477
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7856,
+            "size": 583
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8448,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8448,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8448,
+            "size": 8939904
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 85,
+        "embeddedFiles": 80,
+        "metadata": [
+          {
+            "name": "In your hands Animated",
+            "author": "Faxtron",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "The author recommends background brightness −2 or −3. Adjust under Theme Settings → Background → Brightness."
+      ]
+    },
+    {
+      "id": "1C8BC",
+      "title": "Windows 7 Ultimate Gaming",
+      "author": "FHT Designs",
+      "sourceUrl": "https://themezer.net/ps3/themes/windows-7-ultimate-gaming-1C8BC",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1C8BC-2bc02c8ddb34.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/abf9cfc7-5a01-4239-a358-d856f9da763f/assets/preview.webp?hash=3CHPtJAPkI4zsUFHTadORdyUFoSCVFuXerRQup%2FxVY4%3D",
+      "imageSha256": "2bc02c8ddb347691f233ceb61b87d95474d05ac49ef48b41c1e1ccaaf0d8a0a3",
+      "version": "1.0.01",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "A Windows 7-inspired static XMB appearance using desktop-style icons.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1C8BC/654ee94007f236b5/windows-7-ultimate-gaming-1C8BC.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1C8BC/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1C8BC",
+      "bytes": 3020864,
+      "sha256": "654ee94007f236b5b76943a1d9442c955ff0e79fd7d2986ec252db3cf1b66c13",
+      "createdAt": "2009-12-29T14:45:23.000Z",
+      "checkedAt": "2026-11-02T08:17:24.357Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6660
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6736,
+            "size": 1445
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8192,
+            "size": 849
+          },
+          {
+            "headerOffset": 32,
+            "offset": 9056,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 9056,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 9056,
+            "size": 3011808
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 87,
+        "embeddedFiles": 80,
+        "metadata": [
+          {
+            "name": "Windows 7 Ultimate Gaming",
+            "author": "FHT DESIGN",
+            "version": "1.0.01"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Listed author: FHT Designs; embedded author: FHT DESIGN. This is a PS3 theme, not a Windows installer."
+      ]
+    },
+    {
+      "id": "1E4EB",
+      "title": "Minecraft #6",
+      "author": "The-Marker",
+      "sourceUrl": "https://themezer.net/ps3/themes/minecraft-6-1E4EB",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E4EB-982753e902ec.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/4456dbe4-63cd-4672-8be1-06a2663df056/assets/preview.webp?hash=ph%2FYVbF5QuoDB6%2Fqi0epD40pDosVHBEXKnchvUXgqMs%3D",
+      "imageSha256": "982753e902ec1fa762885ebe1600894581d01abf6d327f8456f8843b87c3d275",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "Minecraft artwork and themed icons for a static PS3 home screen, created by The-Marker.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E4EB/fcc36caf756b3c14/minecraft-6-1E4EB.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E4EB/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E4EB",
+      "bytes": 1643760,
+      "sha256": "fcc36caf756b3c14c5439640d27da3ee766f9cd4bb62dbe74204cecfe61139d4",
+      "createdAt": "2015-01-14T10:21:38.000Z",
+      "checkedAt": "2026-11-02T08:17:26.433Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6536
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6608,
+            "size": 1464
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8080,
+            "size": 550
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8640,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8640,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8640,
+            "size": 1635120
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 86,
+        "embeddedFiles": 80,
+        "metadata": [
+          {
+            "name": "Minecraft #6",
+            "author": "The-Marker",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1D451",
+      "title": "Ultimate PlayStation Theme",
+      "author": "xdarkgeox",
+      "sourceUrl": "https://themezer.net/ps3/themes/ultimate-playstation-theme-1D451",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D451-fc330bdbdc2d.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/1eea5cc3-2585-4f4f-a505-73bbebad695a/assets/preview.webp?hash=k2Mdhawf56GJ5F0swaowvSmEAx5sHUv5tRA1hAU%2BaGo%3D",
+      "imageSha256": "fc330bdbdc2d1c749ccbed44dc4246c7dc6c687661342008cf12d854f9a2c43d",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "A PlayStation-themed collection with 24 HD/SD backgrounds and three custom menu sounds.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom sounds"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D451/d7587a56d30e5db4/ultimate-playstation-theme-1D451.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D451/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D451",
+      "bytes": 11955472,
+      "sha256": "d7587a56d30e5db452752ad787c04671599744000fbe51417cf90984e1530f51",
+      "createdAt": "2011-10-28T11:15:50.000Z",
+      "checkedAt": "2026-11-02T08:17:31.736Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 8332
+          },
+          {
+            "headerOffset": 16,
+            "offset": 8400,
+            "size": 1615
+          },
+          {
+            "headerOffset": 24,
+            "offset": 10016,
+            "size": 601
+          },
+          {
+            "headerOffset": 32,
+            "offset": 10624,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 10624,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 10624,
+            "size": 11944848
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 117,
+        "embeddedFiles": 133,
+        "metadata": [
+          {
+            "name": "Ultimate PlayStation Theme",
+            "author": "xadarkgeox",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "xdarkgeox credits icons to uLtRaMa6nEt1c’s PlayStation 15th Anniversary White theme. Embedded author spelling: xadarkgeox."
+      ]
+    },
+    {
+      "id": "1E45F",
+      "title": "Matrix Code Animated",
+      "author": "Faxtron",
+      "sourceUrl": "https://themezer.net/ps3/themes/matrix-code-animated-1E45F",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E45F-b5296cd46b9d.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/938ed014-e310-40cf-bed3-f1cc3b0717f6/assets/preview.webp?hash=f5hZXr3ZNXNMHJsYlknVN%2FUSLrXmbfVmrP8XwF9r%2Fuc%3D",
+      "imageSha256": "b5296cd46b9de67c05f508b664163a828c1a99567a8a09d0ad126c3417545a1b",
+      "version": "1.00",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "Animated Matrix-style code by Faxtron, with a green-on-black background.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E45F/efeb5d8cd7f624d7/matrix-code-animated-1E45F.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E45F/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E45F",
+      "bytes": 8090496,
+      "sha256": "efeb5d8cd7f624d755bf063ee991be54301ca0a05b437a1586424da1a5bedac0",
+      "createdAt": "2014-08-12T10:56:00.000Z",
+      "checkedAt": "2026-11-02T08:17:38.996Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 5632
+          },
+          {
+            "headerOffset": 16,
+            "offset": 5696,
+            "size": 1322
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7024,
+            "size": 379
+          },
+          {
+            "headerOffset": 32,
+            "offset": 7408,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 7408,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 7408,
+            "size": 8083088
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 76,
+        "embeddedFiles": 72,
+        "metadata": [
+          {
+            "name": "Matrix Code Animated",
+            "author": "Faxtron",
+            "version": "1.00"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Published by the author in response to a request from jdogggyea."
+      ]
+    },
+    {
+      "id": "1CB5E",
+      "title": "Red Dead Redemption John Marston Custom Theme",
+      "author": "Bastart",
+      "sourceUrl": "https://themezer.net/ps3/themes/red-dead-redemption-john-marston-custom-theme-1CB5E",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1CB5E-f645176f486b.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/5f5e44cb-3eaf-4ce0-8ce4-86a9baa5a34b/assets/preview.webp?hash=wMa6cODzFeRgdEjxLJdhaLzl0fUqcG6wMlGG8z1lYoU%3D",
+      "imageSha256": "f645176f486b612bc82949bb17bd4b89a6c98bac70c84220806479dca98c8b71",
+      "version": "version 2.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "John Marston artwork with custom icons and three HD backgrounds, created by Bastart.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1CB5E/b51d38ccb2eef320/red-dead-redemption-john-marston-custom-theme-1CB5E.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1CB5E/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1CB5E",
+      "bytes": 3379760,
+      "sha256": "b51d38ccb2eef320c11a5dd6b9d240e30e14577be5f1737baba2e5b04335bd3b",
+      "createdAt": "2010-06-01T10:41:06.000Z",
+      "checkedAt": "2026-11-02T08:17:41.695Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6488
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6560,
+            "size": 1411
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7984,
+            "size": 565
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8560,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8560,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8560,
+            "size": 3371200
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 86,
+        "embeddedFiles": 79,
+        "metadata": [
+          {
+            "name": "Red Dead Redemption John Marston Custom Theme",
+            "author": "Bastart",
+            "version": "version 2.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Source specifies HD-only backgrounds; SD background coverage is not supplied."
+      ]
+    },
+    {
+      "id": "1E5C8",
+      "title": "Playstation 2 #2",
+      "author": "xemnas-1",
+      "sourceUrl": "https://themezer.net/ps3/themes/playstation-2-2-1E5C8",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E5C8-d2124cb13378.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/7bccdc41-ef18-4c1d-8a51-6b77fe62bda5/assets/preview.webp?hash=q19xgOF91yQTk1e7RNJ07JjxBvZAkT49ahyZK1aHkWE%3D",
+      "imageSha256": "d2124cb13378f39d0e7b600921b954924d5466f788f49056b6bb820994c39f20",
+      "version": "unversioned snapshot 2026-11-02",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "A second PS2-inspired animated PS3 theme, with custom icons, sounds and notification artwork.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E5C8/6858b4cdbe810add/playstation-2-2-1E5C8.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E5C8/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E5C8",
+      "bytes": 1707776,
+      "sha256": "6858b4cdbe810addad879f5bae9284eda4b8c05b5b20593dec1055a19ecc4569",
+      "createdAt": "2015-07-24T12:20:21.000Z",
+      "checkedAt": "2026-11-02T08:59:40.766Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6772
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6848,
+            "size": 1540
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8400,
+            "size": 346
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8752,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8752,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8752,
+            "size": 1699024
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 91,
+        "embeddedFiles": 85,
+        "metadata": [
+          {
+            "name": "Playstation 2 #2",
+            "author": "Playstation Network"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Themezer credits xemnas-1; the embedded author field reads Playstation Network. This metadata is not evidence of an official Sony release. No version is supplied in the P3T."
+      ]
+    },
+    {
+      "id": "1DEFC",
+      "title": "Playstation 2",
+      "author": "hairybones1997",
+      "sourceUrl": "https://themezer.net/ps3/themes/playstation-2-1DEFC",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1DEFC-482ebc289d72.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/d9e9ee00-50fd-45e9-8855-f55b5d683db5/assets/preview.webp?hash=ztIFWYvBkLAYSTA%2F3KMFvnGYneSRNRXlNfdk6krqmRM%3D",
+      "imageSha256": "482ebc289d725a40fdd9df06d98f25b5da3c030f82f4c1080b5e6e0ae7d571d8",
+      "version": "1.00",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "A static PS2-inspired look with BIOS-style sounds and a modified notification bar.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1DEFC/119a422b810cf864/playstation-2-1DEFC.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1DEFC/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1DEFC",
+      "bytes": 442912,
+      "sha256": "119a422b810cf864d10b2241d4fb2b8e56cc131d3b968f4bb0665e3c4ae3c45d",
+      "createdAt": "2013-05-21T11:19:10.000Z",
+      "checkedAt": "2026-11-02T08:59:43.094Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 5760
+          },
+          {
+            "headerOffset": 16,
+            "offset": 5824,
+            "size": 1335
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7168,
+            "size": 439
+          },
+          {
+            "headerOffset": 32,
+            "offset": 7616,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 7616,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 7616,
+            "size": 435296
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 80,
+        "embeddedFiles": 77,
+        "metadata": [
+          {
+            "name": "Playstation 2",
+            "author": "hairybones1997",
+            "version": "1.00"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1DA36",
+      "title": "Scarface Dynamic",
+      "author": "Jaydee1003",
+      "sourceUrl": "https://themezer.net/ps3/themes/scarface-dynamic-1DA36",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1DA36-a15900e446d0.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/78b478f9-4f04-4620-b5dc-84aa0ade0583/assets/preview.webp?hash=fAVpe7hlD5619uxHtR90RSKYD8pg7BXKaIFBPUbs2Zo%3D",
+      "imageSha256": "a15900e446d0a1bb398ac281c30eceda58df17050a93c0c1b61badd86700ab74",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "Scarface artwork with an animated background and custom XMB icons.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1DA36/b73bbcf7cda777ea/scarface-dynamic-1DA36.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1DA36/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1DA36",
+      "bytes": 6474480,
+      "sha256": "b73bbcf7cda777eab156a535f379bed4089f88db90868c359708c4e010861e01",
+      "createdAt": "2012-08-31T11:33:36.000Z",
+      "checkedAt": "2026-11-02T08:59:47.486Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6552
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6624,
+            "size": 1470
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8096,
+            "size": 600
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8704,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8704,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8704,
+            "size": 6465776
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 86,
+        "embeddedFiles": 80,
+        "metadata": [
+          {
+            "name": "Scarface Dynamic",
+            "author": "Jaydee1003",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "The creator recommends background brightness −1, −2 or −3 and credits Seclairty31 as the background inspiration."
+      ]
+    },
+    {
+      "id": "1D7B2",
+      "title": "iOS 5",
+      "author": "Jordan Daniel Murti",
+      "sourceUrl": "https://themezer.net/ps3/themes/ios-5-1D7B2",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D7B2-5480f6b010b1.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/4e705655-1eab-4675-a0c4-7d7c37c5eb83/assets/preview.webp?hash=xNqt7q7WA%2BeTs4vaoYfUcNm571KM5RbOmWgdKLCCnXE%3D",
+      "imageSha256": "5480f6b010b1f67405839d33288173388604f0b7be354c944e3c0fb7e10aea52",
+      "version": "1.8",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "An iOS 5-inspired static PS3 theme using app-style icons and selected Mac-style artwork.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D7B2/126cd129803ebe2d/ios-5-1D7B2.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D7B2/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D7B2",
+      "bytes": 2703456,
+      "sha256": "126cd129803ebe2d05412356f464cdf3f8b4301053abdfcdad8592842b05f54f",
+      "createdAt": "2012-05-05T12:31:56.000Z",
+      "checkedAt": "2026-11-02T08:59:51.894Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 5796
+          },
+          {
+            "headerOffset": 16,
+            "offset": 5872,
+            "size": 1305
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7184,
+            "size": 555
+          },
+          {
+            "headerOffset": 32,
+            "offset": 7744,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 7744,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 7744,
+            "size": 2695712
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 79,
+        "embeddedFiles": 74,
+        "metadata": [
+          {
+            "name": "iOS 5",
+            "author": "Jordan Daniel Murti",
+            "version": "1.8"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1D99C",
+      "title": "Evangelion Animated",
+      "author": "Faxtron",
+      "sourceUrl": "https://themezer.net/ps3/themes/evangelion-animated-1D99C",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D99C-40cc10c42db8.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/5de9ecba-17d9-45a3-8ece-a3bea06d890a/assets/preview.webp?hash=XW4SfRajcEFTjBQFuRwQhM56UuE%2FnyyfLapUuxnOsyc%3D",
+      "imageSha256": "40cc10c42db8d9b8145781cea78659f49e1d0c16c4c3db4def42fd833e56801a",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "Animated Evangelion artwork with custom icons and original sounds.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D99C/7595d53ed8a3a9f0/evangelion-animated-1D99C.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D99C/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D99C",
+      "bytes": 8864080,
+      "sha256": "7595d53ed8a3a9f0965a93d40039e5bee39827974542254d169764e62d6bade2",
+      "createdAt": "2012-08-10T11:57:43.000Z",
+      "checkedAt": "2026-11-02T08:59:57.936Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 5992
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6064,
+            "size": 1401
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7472,
+            "size": 579
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8064,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8064,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8064,
+            "size": 8856016
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 82,
+        "embeddedFiles": 76,
+        "metadata": [
+          {
+            "name": "Evangelion Animated",
+            "author": "Faxtron",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Faxtron credits the custom icons to HollowBattousai and recommends normal background brightness."
+      ]
+    },
+    {
+      "id": "1E152",
+      "title": "Breaking Bad",
+      "author": "Carsette",
+      "sourceUrl": "https://themezer.net/ps3/themes/breaking-bad-1E152",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E152-3370cad7bcb6.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/c86f7654-59e6-4d72-b1ba-403ccf461d82/assets/preview.webp?hash=opMDvflsyhhoXwmqd02tt6E4cjelwWHY7A2UNeDvbec%3D",
+      "imageSha256": "3370cad7bcb6f655997fc41dc4e81e113241c153553e94585293af24473a231b",
+      "version": "version 1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "Breaking Bad artwork with around 15 HD backgrounds and custom XMB graphics.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E152/8b39f722efa620f2/breaking-bad-1E152.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E152/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E152",
+      "bytes": 6590400,
+      "sha256": "8b39f722efa620f242b261ae325fe5615e23c9099689fb80a5081f76e96ed0c8",
+      "createdAt": "2013-09-30T11:40:13.000Z",
+      "checkedAt": "2026-11-02T09:00:03.392Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 7244
+          },
+          {
+            "headerOffset": 16,
+            "offset": 7312,
+            "size": 1477
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8800,
+            "size": 522
+          },
+          {
+            "headerOffset": 32,
+            "offset": 9328,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 9328,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 9328,
+            "size": 6581072
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 101,
+        "embeddedFiles": 94,
+        "metadata": [
+          {
+            "name": "Breaking Bad",
+            "author": "Carsette",
+            "version": "version 1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "The source specifies HD-only backgrounds, with no SD backgrounds included."
+      ]
+    },
+    {
+      "id": "1B9E3",
+      "title": "Windows XP",
+      "author": "Andy Smith",
+      "sourceUrl": "https://themezer.net/ps3/themes/windows-xp-1B9E3",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1B9E3-554eaa41a2bf.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/3f6f6eab-1f0a-41ca-b742-7ef7d23c958f/assets/preview.webp?hash=CVDHzrLw1JITgn7r9GR2gYrOvDSjN%2BPZsJ9SyvIv1Nw%3D",
+      "imageSha256": "554eaa41a2bfe0ca098fcf834515eecdcb479684dcd86c76e21e1f28dce5acb2",
+      "version": "version 1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "A Windows XP-inspired static appearance for the PS3 XMB, with custom icons.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons"
+      ],
+      "localDownload": "/downloads/ps3/themes/1B9E3/a9bb2af2e7ace80d/windows-xp-1B9E3.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1B9E3/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1B9E3",
+      "bytes": 4459872,
+      "sha256": "a9bb2af2e7ace80de06632ec8824bddb9f154764be41be52df087ea32b73f235",
+      "createdAt": "2007-11-20T01:52:53.000Z",
+      "checkedAt": "2026-11-02T09:00:11.409Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 4492
+          },
+          {
+            "headerOffset": 16,
+            "offset": 4560,
+            "size": 1012
+          },
+          {
+            "headerOffset": 24,
+            "offset": 5584,
+            "size": 322
+          },
+          {
+            "headerOffset": 32,
+            "offset": 5920,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 5920,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 5920,
+            "size": 4453952
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 61,
+        "embeddedFiles": 59,
+        "metadata": [
+          {
+            "name": "Windows XP",
+            "author": "bogart27",
+            "version": "version 1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Themezer credits Andy Smith; the embedded author field reads bogart27. Both attributions are retained."
+      ]
+    },
+    {
+      "id": "1E6FA",
+      "title": "Xbox 360 Theme #2",
+      "author": "Aguile1990",
+      "sourceUrl": "https://themezer.net/ps3/themes/xbox-360-theme-2-1E6FA",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1E6FA-79b5ed2b4e92.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/0e6c1e31-75de-47ec-a2f6-27f09c61253f/assets/preview.webp?hash=No%2FRjJQb4US9WCqn5ZfuXN%2F%2FXJ9pCylXg2I27%2FXMg7M%3D",
+      "imageSha256": "79b5ed2b4e9221eff9bf4d0b3aeef46ac9732ed82d5f03ae0b1943d98a7631e8",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "An Xbox 360-inspired static design for PS3, with custom icons and sounds.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1E6FA/52cd02d33b5c4db8/xbox-360-theme-2-1E6FA.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1E6FA/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1E6FA",
+      "bytes": 827440,
+      "sha256": "52cd02d33b5c4db84d2b682fe8fc3acbffadd8cd72c583c6d8d5ce83b02c05d9",
+      "createdAt": "2018-03-13T16:46:53.000Z",
+      "checkedAt": "2026-11-02T09:00:14.956Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6344
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6416,
+            "size": 1442
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7872,
+            "size": 397
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8272,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8272,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8272,
+            "size": 819168
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 86,
+        "embeddedFiles": 84,
+        "metadata": [
+          {
+            "name": "Xbox 360 Theme #2",
+            "author": "Aguile1990",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Aguile1990 credits Kyro’s Xbox 360 theme as inspiration. This file changes PS3 theme artwork; it is not an Xbox download."
+      ]
+    },
+    {
+      "id": "1BBAC",
+      "title": "Crystal Clear Abstract",
+      "author": "Harbinger2020",
+      "sourceUrl": "https://themezer.net/ps3/themes/crystal-clear-abstract-1BBAC",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1BBAC-865121773156.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/5b3ac806-ba44-4a81-9d95-f56700b71706/assets/preview.webp?hash=BsiVzIJ%2BBjSm1LAIjBArRDQiI8tXaL1SwYme7Oj11eI%3D",
+      "imageSha256": "8651217731568baf1dba3bbff52392edb3cbbe41e5426f0d5bab3b42eb200dc8",
+      "version": "version 1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "Six abstract wallpapers with crystal-style icons and custom XMB graphics.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1BBAC/87452bcff3a91799/crystal-clear-abstract-1BBAC.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1BBAC/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1BBAC",
+      "bytes": 4958800,
+      "sha256": "87452bcff3a917997ca78b042ed196ba3fe0d5846f1c5297a46d62fdf6309147",
+      "createdAt": "2008-01-14T12:17:38.000Z",
+      "checkedAt": "2026-11-02T09:03:52.575Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6320
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6384,
+            "size": 1294
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7680,
+            "size": 491
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8176,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8176,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8176,
+            "size": 4950624
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 84,
+        "embeddedFiles": 84,
+        "metadata": [
+          {
+            "name": "Crystal Clear Abstract",
+            "author": "scei",
+            "version": "version 1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Themezer credits Harbinger2020; the embedded author field reads scei."
+      ]
+    },
+    {
+      "id": "1BD7F",
+      "title": "Buuf 2.0",
+      "author": "ricemonkey",
+      "sourceUrl": "https://themezer.net/ps3/themes/buuf-2-0-1BD7F",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1BD7F-476b21973f49.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/4ab722e2-8e96-42d9-b799-ac1287e91df7/assets/preview.webp?hash=lcTbuS%2BonOQgoyisvwl3r1Vg5%2Bj03VWbzxNY8wdvuhc%3D",
+      "imageSha256": "476b21973f4983683753809bbb0d119a5b82f7f4b39537bf9e5be66c3b47b2e1",
+      "version": "version 1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "The Buuf 2.0 static PS3 theme, with custom icons, cursor and notification artwork.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1BD7F/0ae8402d646dd6f8/buuf-2-0-1BD7F.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1BD7F/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1BD7F",
+      "bytes": 4516672,
+      "sha256": "0ae8402d646dd6f824742cb79301e692084bc78157251ba4d8ad960449db7b81",
+      "createdAt": "2008-03-17T11:46:55.000Z",
+      "checkedAt": "2026-11-02T09:03:56.330Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6080
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6144,
+            "size": 1294
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7440,
+            "size": 664
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8112,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8112,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8112,
+            "size": 4508560
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 80,
+        "embeddedFiles": 76,
+        "metadata": [
+          {
+            "name": "Buuf 2.0",
+            "author": "scei",
+            "version": "version 1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "ricemonkey credits mattahan’s desktop icon artwork. The embedded author field reads scei."
+      ]
+    },
+    {
+      "id": "1C8EB",
+      "title": "Somatic",
+      "author": "Stenoxp",
+      "sourceUrl": "https://themezer.net/ps3/themes/somatic-1C8EB",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1C8EB-a76028921338.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/03a80b7e-5792-4ffe-87d3-7b9f2f7b3b3a/assets/preview.webp?hash=%2BH4iIRy%2B8oJMMlmRrVRE3FLW3OhfGAtX8KkjEDhTQuU%3D",
+      "imageSha256": "a76028921338b6b6a7940b54dd6866b5fe684c80024438e3bd5f5927bbe78eb4",
+      "version": "unversioned snapshot 2026-11-02",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "Somatic artwork and custom icons for a static PS3 home screen.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons"
+      ],
+      "localDownload": "/downloads/ps3/themes/1C8EB/d79b1111f5221149/somatic-1C8EB.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1C8EB/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1C8EB",
+      "bytes": 2262624,
+      "sha256": "d79b1111f5221149470c9abe6d4b39cbf72973714a1deed177bdd6aca08776f3",
+      "createdAt": "2010-01-12T15:10:25.000Z",
+      "checkedAt": "2026-11-02T09:03:59.605Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 5820
+          },
+          {
+            "headerOffset": 16,
+            "offset": 5888,
+            "size": 1369
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7264,
+            "size": 345
+          },
+          {
+            "headerOffset": 32,
+            "offset": 7616,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 7616,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 7616,
+            "size": 2255008
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 81,
+        "embeddedFiles": 69,
+        "metadata": [
+          {
+            "name": "Somatic",
+            "author": "Stenoxp",
+            "version": "undefined"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "The embedded version field contains the literal text undefined; no usable release version is supplied."
+      ]
+    },
+    {
+      "id": "1BA2D",
+      "title": "Outline",
+      "author": "Barrie",
+      "sourceUrl": "https://themezer.net/ps3/themes/outline-1BA2D",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1BA2D-ea5976b5f515.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/d2900a6d-8a6a-43b7-98ff-b91583215c9a/assets/preview.webp?hash=Q6Fh%2BWVO0M6vqVsO%2BmrFkBxFrSJkdb5FR2AJohFzVPg%3D",
+      "imageSha256": "ea5976b5f515f769549efa3ea385b566ee80194f1de4f0f24b823ee8e9249666",
+      "version": "version 1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "static",
+      "description": "An outline-style static XMB theme with custom icons, cursor and notifications.",
+      "features": [
+        "Static backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1BA2D/cf1fb8de5a464321/outline-1BA2D.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1BA2D/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1BA2D",
+      "bytes": 1215712,
+      "sha256": "cf1fb8de5a464321abaa67737e6481eb982f3636d8f5b382cc8de53d5c028b51",
+      "createdAt": "2007-11-25T14:12:06.000Z",
+      "checkedAt": "2026-11-02T09:04:05.543Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 5988
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6064,
+            "size": 1287
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7360,
+            "size": 380
+          },
+          {
+            "headerOffset": 32,
+            "offset": 7744,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 7744,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 7744,
+            "size": 1207968
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 79,
+        "embeddedFiles": 76,
+        "metadata": [
+          {
+            "name": "Outline",
+            "author": "Barrie",
+            "version": "version 1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1D06E",
+      "title": "Fallout NV Custom Dynamic",
+      "author": "Devilush",
+      "sourceUrl": "https://themezer.net/ps3/themes/fallout-nv-custom-dynamic-1D06E",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D06E-976c36db2653.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/028f53b4-a431-48a3-a2a8-fac6ae0c0368/assets/preview.webp?hash=KSowKxa1X14ffJcM7srhrRnrkRZ%2F7wr36XgERXMuwC4%3D",
+      "imageSha256": "976c36db2653f186152b7b0ce63100b46c2607e166bc7bed4a54ab9a44aa0886",
+      "version": "2.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "A Fallout: New Vegas-inspired dynamic background with themed XMB artwork.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D06E/c546153365d79cf1/fallout-nv-custom-dynamic-1D06E.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D06E/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D06E",
+      "bytes": 4328064,
+      "sha256": "c546153365d79cf13ad41cd0dc0c5a77b55dbd01cd2fe8c4d0fe451e672a9b12",
+      "createdAt": "2011-04-18T16:00:17.000Z",
+      "checkedAt": "2026-11-02T09:04:08.875Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6716
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6784,
+            "size": 1538
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8336,
+            "size": 461
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8800,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8800,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8800,
+            "size": 4319264
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 89,
+        "embeddedFiles": 83,
+        "metadata": [
+          {
+            "name": "Fallout NV Custom Dynamic",
+            "author": "Devilush",
+            "version": "2.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1D090",
+      "title": "Uncharted Dynamic Theme",
+      "author": "MAXTHUNDER",
+      "sourceUrl": "https://themezer.net/ps3/themes/uncharted-dynamic-theme-1D090",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D090-ed63e3c35916.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/d1fd5280-b66d-404c-abc9-765a9dab3be3/assets/preview.webp?hash=PxxA8h483Yny%2FQJuB3pyJnWotGGQLBJlWzaZd6bBYp4%3D",
+      "imageSha256": "ed63e3c359165f2b2df8fbf2353d6619470a179c7510828f140e70ae7b9186f5",
+      "version": "2.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "Uncharted 3-inspired animation with spinning paw motifs, blowing sand and a matching custom icon set.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D090/cf06e2fcb57f7eff/uncharted-dynamic-theme-1D090.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D090/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D090",
+      "bytes": 4779216,
+      "sha256": "cf06e2fcb57f7effe4e8e04ecc1ac8c9157db86dba0cba36638bc5ddade111f4",
+      "createdAt": "2011-04-26T12:09:33.000Z",
+      "checkedAt": "2026-11-02T09:04:11.537Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6176
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6240,
+            "size": 1439
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7680,
+            "size": 603
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8288,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8288,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8288,
+            "size": 4770928
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 84,
+        "embeddedFiles": 78,
+        "metadata": [
+          {
+            "name": "Uncharted Dynamic Theme",
+            "author": "MAXTHUNDER",
+            "version": "2.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink"
+    },
+    {
+      "id": "1D765",
+      "title": "LBP Dynamic #2",
+      "author": "Kevinoss",
+      "sourceUrl": "https://themezer.net/ps3/themes/lbp-dynamic-2-1D765",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1D765-0e4a02325cc9.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/0910697d-f062-4489-9707-ff0c2ad800e7/assets/preview.webp?hash=tW4EHx7nyN1GVfeuJUwJgZKE9vIhIS%2Bpd5InPuzjERg%3D",
+      "imageSha256": "0e4a02325cc90a640ac536275012bad15d948c624b40f572a57f1586599aa31b",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "An alternative LittleBigPlanet dynamic PS3 theme with an animated Sackboy model.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom cursor",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1D765/cd6e01332b687b9c/lbp-dynamic-2-1D765.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1D765/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1D765",
+      "bytes": 4829056,
+      "sha256": "cd6e01332b687b9c6c09171d77be96522368800f6eab6f7e80d8607a9c20edc0",
+      "createdAt": "2012-04-17T10:52:55.000Z",
+      "checkedAt": "2026-11-02T09:04:14.198Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6552
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6624,
+            "size": 1470
+          },
+          {
+            "headerOffset": 24,
+            "offset": 8096,
+            "size": 606
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8704,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8704,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8704,
+            "size": 4820352
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 86,
+        "embeddedFiles": 80,
+        "metadata": [
+          {
+            "name": "LBP Dynamic #2",
+            "author": "Kevinoss",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "Kevinoss credits Corwin75 for help with the animation. The source warns that its preview uses different icons; the still preview is illustrative."
+      ]
+    },
+    {
+      "id": "1DB82",
+      "title": "Bayonetta Dynamic Theme 2",
+      "author": "uLtRaMa6nEt1c",
+      "sourceUrl": "https://themezer.net/ps3/themes/bayonetta-dynamic-theme-2-1DB82",
+      "originalSourceUrl": "http://ps3-themes.com",
+      "image": "/assets/images/ps3-themes/1DB82-6190f2a864a0.webp",
+      "imageSource": "https://img.themezer.net/unsafe/sd/plain/s3://ps3/themes/038c995d-1081-4994-bd56-189da0711519/assets/preview.webp?hash=%2BRp%2BtGBSL2AoP%2Fb4eoa74tKPS8P7tMLV2s8ic95sUn4%3D",
+      "imageSha256": "6190f2a864a04738fee3b27138cc24eb44a1ca9ba8b56055f8555c8a5dc99b38",
+      "version": "1.0",
+      "platform": "PS3",
+      "requirements": [
+        "PS3 with Theme Settings and a compatible P3T theme",
+        "USB installation: /PS3/THEME/; no HEN, DEX or CFW required",
+        "Publisher does not specify a minimum firmware, model or region restriction"
+      ],
+      "type": "dynamic",
+      "description": "Bayonetta-inspired animation with logo-style icons and custom menu sounds.",
+      "features": [
+        "Animated backgrounds",
+        "Custom icons",
+        "Custom sounds",
+        "Custom notifications"
+      ],
+      "localDownload": "/downloads/ps3/themes/1DB82/2a320b0fa06471dd/bayonetta-dynamic-theme-2-1DB82.p3t",
+      "downloadUrl": "https://api.themezer.net/ps3/themes/1DB82/download?src=webapp",
+      "consoleUrl": "http://ps3.themezer.net/T1DB82",
+      "bytes": 13305280,
+      "sha256": "2a320b0fa06471dd1b09de0edc4a5a50231d3edec89ce8cf9ce2731c9764826b",
+      "createdAt": "2012-10-20T13:20:22.000Z",
+      "checkedAt": "2026-11-02T09:04:20.035Z",
+      "format": {
+        "magic": "P3TF",
+        "version": 272,
+        "sections": [
+          {
+            "headerOffset": 8,
+            "offset": 64,
+            "size": 6192
+          },
+          {
+            "headerOffset": 16,
+            "offset": 6256,
+            "size": 1468
+          },
+          {
+            "headerOffset": 24,
+            "offset": 7728,
+            "size": 608
+          },
+          {
+            "headerOffset": 32,
+            "offset": 8336,
+            "size": 0
+          },
+          {
+            "headerOffset": 40,
+            "offset": 8336,
+            "size": 0
+          },
+          {
+            "headerOffset": 48,
+            "offset": 8336,
+            "size": 13296944
+          }
+        ],
+        "themeRoot": true,
+        "nodeCount": 84,
+        "embeddedFiles": 81,
+        "metadata": [
+          {
+            "name": "Bayonetta Dynamic Theme 2",
+            "author": "uLtRaMa6nEt1c",
+            "version": "1.0"
+          }
+        ],
+        "structurallyChecked": true
+      },
+      "container": "Original publisher download is a ready-to-use P3T; no ZIP supplied",
+      "archiveStatus": "verified",
+      "archiveInventory": "docs/ps3-themes-private-inventory.json",
+      "originalSourceLinkScope": "Themezer supplies the original site, not an original item permalink",
+      "notes": [
+        "The creator credits the Japanese Bayonetta website for much of the artwork and two sounds."
+      ]
+    }
+  ],
+  "failures": [],
+  "verificationLimits": [
+    "Container magic and section bounds checked; no theme or embedded animation executed",
+    "No physical PS3 installation, browser download or display test performed"
+  ]
+}

@@ -1,0 +1,586 @@
+[
+  {
+    "id": "ps2",
+    "title": "PlayStation 2",
+    "source": "console/retro/ps2.html",
+    "base": "/console/ps2/",
+    "image": "/assets/images/expansion-ps2/fmcb.png",
+    "description": "Choose a PS2 boot method, then find native apps, emulators, homebrew games, OPL themes and storage guides for your model.",
+    "libraryLabel": "All PS2 downloads",
+    "groups": [
+      {
+        "slug": "setup",
+        "title": "Softmods & boot methods",
+        "description": "Start with your PS2 model and compare FreeMcBoot and OpenTuna, keeping their memory-card and console requirements separate.",
+        "image": "/assets/images/expansion-ps2/fmcb.png",
+        "sections": [
+          "start",
+          "setup"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & tools",
+        "description": "Open PS2 Loader, wLaunchELF, Apollo, PS2Ident and more native tools for memory cards, hard drives, controllers and networking.",
+        "image": "/assets/images/expansion-ps2/wlaunchelf-screen.png",
+        "sections": [
+          "library",
+          "apps",
+          "ps2-tools"
+        ]
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators on PS2",
+        "description": "Browse native FCEUmm, PicoDrive and PS2ME builds with their storage paths and supported-system notes.",
+        "image": "/assets/images/ps2-expansion/picodrive.svg",
+        "sections": [
+          "library",
+          "ps2-emulators",
+          "ps2-storage-guide"
+        ]
+      },
+      {
+        "slug": "games",
+        "title": "Homebrew games & ports",
+        "description": "SuperTux and the PS2 Quake engine ports, with the exact files and additional game-data requirements shown for each.",
+        "image": "/assets/images/ps2-expansion/supertux.svg",
+        "sections": [
+          "library",
+          "ps2-games",
+          "ps2-storage-guide"
+        ]
+      },
+      {
+        "slug": "themes",
+        "title": "OPL themes",
+        "description": "Preview DeckyOS and PadOS, then follow their Open PS2 Loader version and theme-folder requirements.",
+        "image": "/assets/images/ps2-expansion/deckyos.png",
+        "sections": [
+          "library",
+          "ps2-themes"
+        ]
+      },
+      {
+        "slug": "storage",
+        "title": "Storage & installation",
+        "description": "Choose USB, network or internal storage and check app folders, save backups and dependencies before installing.",
+        "image": "/assets/images/expansion-ps2/opl.png",
+        "sections": [
+          "storage",
+          "ps2-storage-guide",
+          "sources",
+          "ps2-image-credits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gamecube",
+    "title": "Nintendo GameCube",
+    "source": "console/retro/gamecube.html",
+    "base": "/console/gamecube/",
+    "image": "/assets/images/expansion-nintendo-retro/gamecube.png",
+    "description": "Choose a GameCube homebrew boot method, then browse Swiss, memory-card tools and disc-backup utilities with their setup requirements.",
+    "libraryLabel": "All GameCube downloads",
+    "groups": [
+      {
+        "slug": "boot-methods",
+        "title": "Homebrew boot methods",
+        "description": "Compare the documented GameCube boot routes and choose the method that matches your console and available hardware.",
+        "image": "/assets/images/expansion-nintendo-retro/gamecube.png",
+        "sections": [
+          "start"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Swiss & homebrew loading",
+        "description": "Find the native GameCube Swiss build and follow its device, boot and release requirements.",
+        "image": "/assets/images/expansion-nintendo-retro/gamecube.png",
+        "sections": [
+          "apps"
+        ],
+        "category": {
+          "attribute": "id",
+          "values": [
+            "swiss"
+          ]
+        }
+      },
+      {
+        "slug": "save-disc-tools",
+        "title": "Disc & memory-card tools",
+        "description": "Use the GameCube builds of GCMM and CleanRip for memory-card management and disc backups.",
+        "image": "/assets/images/expansion-nintendo-retro/gcmm.png",
+        "sections": [
+          "apps"
+        ],
+        "category": {
+          "attribute": "id",
+          "values": [
+            "gcmm",
+            "cleanrip-gamecube"
+          ]
+        }
+      },
+      {
+        "slug": "setup",
+        "title": "App installation & documentation",
+        "description": "Prepare your selected boot method, place the correct native app files on storage and follow the project instructions.",
+        "image": "/assets/images/expansion-nintendo-retro/cleanrip.png",
+        "sections": [
+          "setup",
+          "sources"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wii",
+    "title": "Nintendo Wii",
+    "source": "console/retro/wii.html",
+    "base": "/console/wii/",
+    "image": "/assets/images/expansion-nintendo-retro/wii.png",
+    "description": "Start with the correct Wii, Wii Mini or vWii setup, then choose native apps, games, emulators and GameCube tools.",
+    "libraryLabel": "All Wii downloads",
+    "groups": [
+      {
+        "slug": "setup",
+        "title": "Homebrew setup & storage",
+        "description": "Follow the route for Wii, Wii Mini or Wii U vWii and prepare the storage and Homebrew Channel app folders it requires.",
+        "image": "/assets/images/expansion-nintendo-retro/wii.png",
+        "sections": [
+          "start",
+          "model-storage",
+          "install"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & system tools",
+        "description": "WiiMC, WiiXplorer, Priiloader and USB Loader GX, with each project's model, installation and storage requirements.",
+        "image": "/assets/images/wii-more/wiimc.png",
+        "sections": [
+          "wii-library",
+          "apps",
+          "install"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "apps"
+          ]
+        }
+      },
+      {
+        "slug": "games",
+        "title": "Homebrew games",
+        "description": "Cave Story, SuperTux Wii and Helium Boy, with ready Wii packages and model-specific notes.",
+        "image": "/assets/images/wii-more/cavestory.png",
+        "sections": [
+          "wii-library",
+          "install"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "games"
+          ]
+        }
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators on Wii",
+        "description": "Browse SNES, Nintendo 64, PlayStation, Game Boy, NES and ScummVM projects built for the Wii.",
+        "image": "/assets/images/wii-more/snes9xgx.png",
+        "sections": [
+          "wii-library",
+          "install"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "emulators"
+          ]
+        }
+      },
+      {
+        "slug": "gamecube",
+        "title": "GameCube software & tools",
+        "description": "Read Nintendont requirements and find the Wii builds of CleanRip and GCMM for discs and memory cards.",
+        "image": "/assets/images/expansion-nintendo-retro/gamecube.png",
+        "sections": [
+          "gamecube",
+          "sources"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wiiu",
+    "title": "Nintendo Wii U",
+    "source": "console/retro/wiiu.html",
+    "base": "/console/wiiu/",
+    "image": "/assets/images/wiiu-homebrew/library.svg",
+    "description": "Choose the correct Wii U environment and file format, then find apps, plugins, homebrew games, emulators and themes.",
+    "libraryLabel": "All Wii U downloads",
+    "groups": [
+      {
+        "slug": "setup",
+        "title": "Environment & installation",
+        "description": "Start with your Wii U environment and distinguish Aroma WUHB apps, plugins and other supported package formats.",
+        "image": "/assets/images/wiiu-homebrew/AromaUpdater.png",
+        "sections": [
+          "setup",
+          "formats",
+          "sources"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & utilities",
+        "description": "Homebrew App Store, system and save tools, file managers, media apps and network utilities for Wii U.",
+        "image": "/assets/images/wiiu-homebrew/appstore.png",
+        "sections": [
+          "apps",
+          "formats"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Essentials",
+            "Saves & system",
+            "Media & network"
+          ]
+        }
+      },
+      {
+        "slug": "plugins",
+        "title": "Plugins & mods",
+        "description": "SDCafiine, Inkay, evWii and other Wii U plugins with their exact environment and installation requirements.",
+        "image": "/assets/images/wiiu-homebrew/SDCafiine_WUPS.png",
+        "sections": [
+          "apps",
+          "formats"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Plugins & mods"
+          ]
+        }
+      },
+      {
+        "slug": "games",
+        "title": "Homebrew games & ports",
+        "description": "Native Wii U games, engine ports and interpreters, including the separate data-file requirements on each project.",
+        "image": "/assets/images/wiiu-homebrew-more/coldstart-wiiu.png",
+        "sections": [
+          "apps",
+          "formats"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Homebrew games",
+            "Game ports & interpreters"
+          ]
+        }
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators on Wii U",
+        "description": "RetroArch, NooDS, FAKE-08, CHIP8 and YAPE 4 U with the package and environment needed by each build.",
+        "image": "/assets/images/wiiu-homebrew/retroarch.png",
+        "sections": [
+          "apps",
+          "formats"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "Emulators"
+          ]
+        }
+      },
+      {
+        "slug": "themes",
+        "title": "Wii U themes",
+        "description": "Browse credited Wii U theme previews and downloads, then follow their console-specific setup instructions.",
+        "image": "/assets/images/wiiu-themes/wii-theme-dark.webp",
+        "route": "/console/retro/wiiu-themes.html",
+        "sections": []
+      },
+      {
+        "slug": "online",
+        "title": "Get online with Pretendo",
+        "description": "Official Pretendo, Inkay and PNID setup for native Wii U services.",
+        "image": "/assets/images/wiiu-homebrew/library.svg",
+        "route": "/console/wiiu/online.html",
+        "sections": []
+      },
+      {
+        "slug": "mods",
+        "title": "Game mods & patches",
+        "description": "SDCafiine paths, exact game requirements, Second Wind and vWii mod resources.",
+        "image": "/assets/images/wiiu-homebrew/library.svg",
+        "route": "/console/wiiu/mods.html",
+        "sections": []
+      },
+      {
+        "slug": "vwii",
+        "title": "vWii on Wii U",
+        "description": "Separate Wii-mode setup, verified vWii app downloads, Wii online and GameCube support.",
+        "image": "/assets/images/wiiu-homebrew/library.svg",
+        "route": "/console/wiiu/vwii.html",
+        "sections": []
+      },
+      {
+        "slug": "game-downloads",
+        "title": "More ready games & mods",
+        "description": "Additional Wii U and vWii homebrew games and original mod packages, with exact setup and F: archive checks.",
+        "image": "/assets/images/wiiu-homebrew/library.svg",
+        "route": "/console/wiiu/game-downloads.html",
+        "sections": []
+      }
+    ]
+  },
+  {
+    "id": "psp",
+    "title": "PlayStation Portable",
+    "source": "console/retro/psp.html",
+    "base": "/console/psp/",
+    "image": "/assets/images/psp-more/ark4.png",
+    "description": "Choose your PSP setup, then browse native apps, homebrew games, emulators, plugins and PTF or CTF themes.",
+    "libraryLabel": "All PSP downloads",
+    "groups": [
+      {
+        "slug": "setup",
+        "title": "Firmware & homebrew setup",
+        "description": "Check your PSP model and storage, preserve the pinned final ARK-4 release and follow the separate current ARK-5 project link.",
+        "image": "/assets/images/psp-more/ark4.png",
+        "sections": [
+          "start",
+          "library"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "setup"
+          ]
+        }
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & utilities",
+        "description": "Apollo, CMFileManager, Homebrew Sorter and PKGi PSP, with native PSP files and their exact installation paths.",
+        "image": "/assets/images/psp-more/apollo.png",
+        "sections": [
+          "library"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "apps"
+          ]
+        }
+      },
+      {
+        "slug": "games",
+        "title": "Homebrew games & ports",
+        "description": "OpenSupaplex, Ccleste, Nazi Zombies: Portable, Wagic and CrossCraft Classic with their complete PSP packages.",
+        "image": "/assets/images/psp-more/opensupaplex.png",
+        "sections": [
+          "library"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "games",
+            "ports"
+          ]
+        }
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators on PSP",
+        "description": "Find DaedalusX64, PicoDrive and ScummVM builds for the handheld and read their project-specific requirements.",
+        "image": "/assets/images/psp-more/daedalus.png",
+        "sections": [
+          "library"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "emulators"
+          ]
+        }
+      },
+      {
+        "slug": "plugins",
+        "title": "CXMB & theme plugins",
+        "description": "Get CXMB and follow the separate ARK-4 and classic PRO/ME plugin configuration paths.",
+        "image": "/assets/images/psp-more/jumbled-ctf.jpg",
+        "sections": [
+          "library",
+          "theme-setup"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "plugins"
+          ]
+        }
+      },
+      {
+        "slug": "themes",
+        "title": "PTF & CTF themes",
+        "description": "Preview the four preserved PSP themes and match each PTF or CTF file to its firmware and CXMB requirements.",
+        "image": "/assets/images/psp-more/material-design.jpg",
+        "sections": [
+          "library",
+          "theme-setup"
+        ],
+        "category": {
+          "attribute": "data-category",
+          "values": [
+            "themes"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "3ds",
+    "title": "Nintendo 2DS & 3DS",
+    "source": "console/retro/3ds.html",
+    "base": "/console/3ds/",
+    "image": "/assets/images/3ds-more/hero.svg",
+    "description": "Start with your 2DS or 3DS model and CFW, then find native apps, games, emulators, save tools and HOME Menu themes.",
+    "libraryLabel": "All 2DS / 3DS downloads",
+    "groups": [
+      {
+        "slug": "setup",
+        "title": "CFW & core setup",
+        "description": "Choose the model-specific setup guide and find Luma3DS, GodMode9 and the core tools for an existing CFW installation.",
+        "image": "/assets/images/expansion-nintendo-retro/luma.png",
+        "sections": [
+          "start",
+          "browse",
+          "apps",
+          "install"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & save tools",
+        "description": "Core homebrew utilities, Checkpoint, PKSM, Anemone3DS, 3DShell and the other native apps with their correct formats.",
+        "image": "/assets/images/3ds-more/apps/3dshell.png",
+        "sections": [
+          "browse",
+          "apps",
+          "more-apps",
+          "install"
+        ]
+      },
+      {
+        "slug": "games",
+        "title": "Homebrew games & ports",
+        "description": "Super-Haxagon, prboom3ds and ctrQuake, with the separate original game-data requirements for engine ports.",
+        "image": "/assets/images/3ds-more/apps/super-haxagon.png",
+        "sections": [
+          "browse",
+          "games",
+          "install"
+        ]
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators & native GBA mode",
+        "description": "Nintendo 64, SNES, Virtual Boy and Game Boy projects, plus the separate open_agb_firm route and its format requirements.",
+        "image": "/assets/images/3ds-more/apps/daedalusx64.png",
+        "sections": [
+          "browse",
+          "emulators",
+          "install"
+        ]
+      },
+      {
+        "slug": "themes",
+        "title": "Themes & boot splashes",
+        "description": "Browse the credited 3DS theme collection, music and boot splashes with previews, downloads and setup notes.",
+        "image": "/assets/images/3ds-more/themes/1F4B6.webp",
+        "route": "/console/retro/3ds-themes.html",
+        "sections": []
+      }
+    ]
+  },
+  {
+    "id": "ds",
+    "title": "Nintendo DS & DSi",
+    "source": "console/retro/ds.html",
+    "base": "/console/ds/",
+    "image": "/assets/images/expansion-nintendo-retro/twilight.png",
+    "description": "Choose the DS flashcart or DSi SD route, then browse native apps, games, emulators and TWiLight Menu++ skins.",
+    "libraryLabel": "All DS / DSi downloads",
+    "groups": [
+      {
+        "slug": "setup",
+        "title": "Flashcart & DSi setup",
+        "description": "Keep DS, DS Lite and DSi launch routes separate and prepare the matching launcher, storage and app folders.",
+        "image": "/assets/images/expansion-nintendo-retro/twilight.png",
+        "sections": [
+          "start",
+          "launch-routes",
+          "setup"
+        ]
+      },
+      {
+        "slug": "apps",
+        "title": "Apps & launch tools",
+        "description": "TWiLight Menu++, nds-bootstrap, GodMode9i, ftpd, Homebrew Menu and the DS input test with native files and setup notes.",
+        "image": "/assets/images/ds-dsi-more/hbmenu-boot.png",
+        "sections": [
+          "library",
+          "apps",
+          "native-apps",
+          "setup"
+        ]
+      },
+      {
+        "slug": "games",
+        "title": "Homebrew games & ports",
+        "description": "Wordle DS, Aperture Science DS, Counter Strike DS and PUNCH-A-ROONEY! with project-specific hardware and launch requirements.",
+        "image": "/assets/images/ds-dsi-more/portalds.png",
+        "sections": [
+          "library",
+          "native-games",
+          "setup"
+        ]
+      },
+      {
+        "slug": "emulators",
+        "title": "Emulators on DS",
+        "description": "NES, Game Boy, PC Engine, Sega and Atari emulators built for DS-mode homebrew, with each project's notes preserved.",
+        "image": "/assets/images/ds-dsi-more/gameyob.png",
+        "sections": [
+          "library",
+          "native-emulators",
+          "setup"
+        ]
+      },
+      {
+        "slug": "themes",
+        "title": "TWiLight Menu++ skins",
+        "description": "Preview the preserved DSi-interface and 3DS-interface skins and copy each to its matching TWiLight Menu++ theme folder.",
+        "image": "/assets/images/ds-dsi-more/switch-basic-dark.png",
+        "sections": [
+          "library",
+          "twilight-skins",
+          "skin-setup"
+        ]
+      }
+    ]
+  }
+]

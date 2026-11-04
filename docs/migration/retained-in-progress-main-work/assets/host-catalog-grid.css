@@ -1,0 +1,20 @@
+/* Scoped catalogue tiles; transport controls and unrelated lists are untouched. */
+.host-catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start;width:100%;margin:0 auto;padding:0;list-style:none}
+.host-folder-page .host-reset #host-action-grid.host-catalog-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;align-items:start;width:100%;margin:0 auto;padding:0;border:0;background:none}
+.host-catalog-grid .host-catalog-tile{display:flex;flex-direction:column;align-items:stretch;min-width:0;width:100%;padding:0 0 12px;margin:0;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--host-ink,#eef3f1);text-align:center;font:inherit;cursor:pointer;overflow:hidden;box-shadow:none;transition:border-color .16s ease,background .16s ease,transform .16s ease}
+.host-catalog-grid .host-catalog-tile:hover{border-color:var(--host-line,#33453d);background:rgba(129,183,154,.055);transform:translateY(-2px)}
+.host-catalog-grid .host-catalog-tile:focus-visible{outline:3px solid var(--host-accent,#a2dfb8);outline-offset:4px}
+.host-catalog-grid .host-catalog-tile__media{display:block;position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;background:#111a1b;border-radius:6px;margin:0 0 11px;line-height:0}
+.host-catalog-grid .host-catalog-tile__media img{display:block;width:100%!important;height:100%!important;max-width:none;max-height:none;aspect-ratio:16/10;object-fit:cover!important;object-position:center;border:0;border-radius:0;margin:0;padding:0}
+.host-catalog-grid .host-catalog-tile__empty{display:block;width:100%;height:100%;min-height:92px;background:#111a1b}
+.host-catalog-grid .host-catalog-tile__label{display:block;padding:0 8px;font-size:14px;line-height:1.4;font-weight:650;overflow-wrap:anywhere}
+.host-catalog-grid .host-catalog-tile__detail{display:block;padding:5px 8px 0;color:var(--host-muted,#a3ada7);font-size:12px;line-height:1.45;font-weight:400;overflow-wrap:anywhere}
+.host-catalog-path{grid-column:1/-1;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;margin:0 0 12px;padding:12px 0;color:#a3ada7;font-size:13px}
+.host-reset .host-catalog-path button{border:0;background:transparent;color:#bcebd2;padding:5px;min-height:36px;font-size:13px}
+.host-catalog-grid,.host-folder-page .host-reset #host-action-grid.host-catalog-grid{max-width:1800px}
+.host-folder-page .host-game-collections.host-catalog-grid{grid-template-columns:inherit}
+@media(min-width:650px){.host-catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.host-folder-page .host-reset #host-action-grid.host-catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(min-width:1000px){.host-catalog-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.host-folder-page .host-reset #host-action-grid.host-catalog-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
+@media(min-width:1500px){.host-catalog-grid{grid-template-columns:repeat(7,minmax(0,1fr))}.host-folder-page .host-reset #host-action-grid.host-catalog-grid{grid-template-columns:repeat(7,minmax(0,1fr))!important}}
+@media(max-width:449px){.host-catalog-grid,.host-folder-page .host-reset #host-action-grid.host-catalog-grid{gap:12px!important}.host-catalog-grid .host-catalog-tile__label{font-size:13px}.host-catalog-grid .host-catalog-tile__detail{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.host-catalog-grid .host-catalog-tile{transition:none;transform:none}}

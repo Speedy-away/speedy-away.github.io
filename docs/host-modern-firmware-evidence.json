@@ -1,0 +1,26 @@
+{
+  "group": "karo-g2allpro-modern",
+  "firmwares": [
+    "10.00",
+    "11.00",
+    "11.02",
+    "11.50",
+    "11.52",
+    "12.00",
+    "12.02",
+    "12.50",
+    "12.52",
+    "13.00",
+    "13.02",
+    "13.04",
+    "13.50",
+    "13.52"
+  ],
+  "source": {
+    "repository": "https://github.com/KAR0218/KAR0218.github.io",
+    "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+    "path": "g2allpro/index.html"
+  },
+  "sourceOriginalHTMLSHA256": "6b233652aa780431db151d06b5fc52ef1900345b6909ea7827a3fe6c4643f784",
+  "evidence": "Explicit offset records intersected with the original HTML dispatcher:10.00–11.02 exploit10.js;11.50–12.02 1150_1202.js;12.50–13.00 1250_13.js;13.02–13.52 1302_1352.js. Nearest-lower fallback-only versions excluded. Original native bytes unchanged."
+}

@@ -1,0 +1,293 @@
+{
+  "scope": "xbox360-more",
+  "reviewed": "2026-11-02",
+  "status": "complete original collection downloaded and statically verified",
+  "resources": [
+    {
+      "id": "silent-hill-skins",
+      "title": "Silent Hill · Aurora skin collection",
+      "family": "Silent Hill",
+      "author": "Jeff Lonestar / JeffLonestar · Aurora base by Phoenix",
+      "group": "skins",
+      "version": "Publisher collection · 2025-09-12",
+      "source": "https://www.reddit.com/r/silenthill/comments/1neu5n8/",
+      "downloadUrl": "https://drive.google.com/file/d/1rj0Q3Ug-6KOKpYfR76cDg_bPzddmSk6X/view",
+      "downloadLinkKind": "publisher-page",
+      "fileName": "Silent Hill Skins Aurora Xbox360.zip",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/silent-hill-finish-1793623868578.zip",
+      "expectedBytes": 154625941,
+      "expectedSha256": "d764fcd76d4f3b582de6ec8d7cbc34667fdcb6f94b38011fe5912ab9330c2cf8",
+      "maxBytes": 268435456,
+      "format": "ZIP / XZP",
+      "description": "Silent Hill character and welcome-sign themes for Aurora, preserved as the original creator’s collection.",
+      "runtime": "Homebrew-enabled Xbox 360 with Aurora 0.7-family skin support. Bundled skin.ver values are 0.7.1595.2; no exact minimum Microsoft dashboard build or motherboard is specified.",
+      "temporary": "This collection requires an existing working Aurora setup. It does not provide an exploit or certify a temporary runtime / Peer Pressure combination.",
+      "prerequisites": "Aurora with compatible 0.7-family skins. The original ZIP contains 7 XZP files; no commercial game data is required.",
+      "installPath": "Hdd1:\\Apps\\Aurora\\Skins\\",
+      "usbPath": "Usb0:\\Aurora\\Skins\\",
+      "launch": "Aurora → B / View → Skin",
+      "setup": [
+        "Download the original ZIP from the creator’s linked Google Drive file page, then extract it on your PC.",
+        "Copy the XZP files from inside the collection folder directly into the Skins folder of your actual Aurora install. Preserve the original ZIP and existing skins; do not nest the collection folder under Skins.",
+        "In Aurora’s View / Skin menu, choose the desired skin and restart Aurora. Keep a known working skin available."
+      ],
+      "notes": "The original collection and every contained variant are retained together. Individual skin names may include their own revision suffixes; these are not separate game builds.",
+      "image": {
+        "staged": "docs/tmp/xbox360-more-batch3/silent-hill-finish-heather.jpg",
+        "sourceUrl": "https://drive.google.com/file/d/1rj0Q3Ug-6KOKpYfR76cDg_bPzddmSk6X/view",
+        "credit": "Jeff Lonestar · packaged Silent Hill 3 Heather background artwork, not a console-test screenshot",
+        "bytes": 587282,
+        "sha256": "26c67f88dea5602acd67efb6a2b3d17d30dacc203623102299ac3f6dab653b29",
+        "archiveEntry": "Silent Hill Skins Aurora Xbox360/Silent Hill 3 Save Me Heather Skin.xzp → Images\\Background\\background.jpg",
+        "visuallyInspected": true
+      },
+      "verification": {
+        "archive": {
+          "file": "silent-hill-finish-1793623868578.zip",
+          "bytes": 154625941,
+          "sha256": "d764fcd76d4f3b582de6ec8d7cbc34667fdcb6f94b38011fe5912ab9330c2cf8",
+          "entryCount": 8,
+          "skins": [
+            {
+              "name": "Silent Hill Skins Aurora Xbox360/Silent Hill 2 Save Me James Skin.xzp",
+              "bytes": 29151926,
+              "sha256": "9d77a02bd50beb3ce9d15ddfaadad5cbd6c74f5dad356b423ff4b4be011247bb",
+              "entryCount": 432,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Silent Hill 2 Save Me James Skin\",\r\n\t\"author\" : \"James\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Save Me with SFX & Pizza & Bowling music\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "declaredBytes": 29151926,
+              "indexBoundsPassed": true
+            },
+            {
+              "name": "Silent Hill Skins Aurora Xbox360/Silent Hill 2 Save Me Maria Skin.xzp",
+              "bytes": 29191010,
+              "sha256": "d46951709a4d55132100488fef56339db3409bf79bda0a29f9e491795ea0f585",
+              "entryCount": 432,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Silent Hill 2 Save Me Maria Skin\",\r\n\t\"author\" : \"Maria\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Save Me with SFX & Pizza & Bowling music\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "declaredBytes": 29191010,
+              "indexBoundsPassed": true
+            },
+            {
+              "name": "Silent Hill Skins Aurora Xbox360/Silent Hill 2 Welcome SkinV2.xzp",
+              "bytes": 57144823,
+              "sha256": "6940cc7a97924412d075880cc2c13aed1c9e46c8c4e2fd980f3245177f1378ea",
+              "entryCount": 432,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Silent Hill 2 Welcome SkinV2\",\r\n\t\"author\" : \"James\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Welcome Sign with the Forest Trail\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "declaredBytes": 57144823,
+              "indexBoundsPassed": true
+            },
+            {
+              "name": "Silent Hill Skins Aurora Xbox360/Silent Hill 3 Save Me Heather Skin.xzp",
+              "bytes": 26152099,
+              "sha256": "7232ae1e65a292c80399123b187abffbcc0f8f85f728eecd2b4d7114e700ee3c",
+              "entryCount": 432,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Silent Hill 3 Save Me Heather Skin\",\r\n\t\"author\" : \"Cheryl\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Save Me with SFX & background music\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "declaredBytes": 26152099,
+              "indexBoundsPassed": true
+            },
+            {
+              "name": "Silent Hill Skins Aurora Xbox360/Silent_Hill_2_Pyramidhead_Skin_V2.xzp",
+              "bytes": 21052739,
+              "sha256": "3527318134ad0d00d95db5031c17d0689ff9e4a73c5498c899665d0b44f2428f",
+              "entryCount": 452,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Silent Hill 2 Pyramidhead SkinV2\",\r\n\t\"author\" : \"James\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Its time to end this nightmare!\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "declaredBytes": 21052739,
+              "indexBoundsPassed": true
+            },
+            {
+              "name": "Silent Hill Skins Aurora Xbox360/Silent_Hill_2_Welcome_Skin.xzp",
+              "bytes": 25387994,
+              "sha256": "6b86ddcc6cb6267b2ea0512bab8a544d443cd9d7109bf4fa1c1c48a9be46a114",
+              "entryCount": 430,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Silent Hill 2 Welcome Skin\",\r\n\t\"author\" : \"Maria\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Welcome Sign with Lost Innocence music\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "declaredBytes": 25387994,
+              "indexBoundsPassed": true
+            },
+            {
+              "name": "Silent Hill Skins Aurora Xbox360/Silent_Hill_SkinV2.xzp",
+              "bytes": 11029977,
+              "sha256": "268ea27228d80a819cdd76c747e2e67518d8eebbb5347d0cbcd0b8d64e876753",
+              "entryCount": 430,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"Silent Hill SkinV2\",\r\n\t\"author\" : \"Harry Mason\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Silent Hill 1 Skin with Music\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "declaredBytes": 11029977,
+              "indexBoundsPassed": true
+            }
+          ],
+          "layouts": [],
+          "crcPassed": true,
+          "pathsSafe": true
+        },
+        "physicalHardwareTested": false,
+        "downloadedBuildsExecuted": false
+      }
+    }
+  ],
+  "preservedAllEarlierPartials": true
+}

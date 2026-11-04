@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-02T09:27:16.155Z",
+  "GitLab": {
+    "originalCommit": "95f5525089273c5fce0b95047f3600f8442e96ae",
+    "archiveHTTP": 406,
+    "subsequentHTTP": 429,
+    "rateLimit": "unauthenticated_traffic_per_ip",
+    "resetAt": "2026-11-02T10:00:00Z",
+    "localCopyStatus": "incomplete staging only; not mirrored or inventoried as ready",
+    "rpcStatus": "blocked before snapshot acquired"
+  },
+  "GitHub": {
+    "savekit": "downloaded and archived",
+    "OunceCake": "downloaded and archived"
+  },
+  "noExecution": true
+}

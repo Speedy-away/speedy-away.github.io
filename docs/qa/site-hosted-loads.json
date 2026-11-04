@@ -1,0 +1,215 @@
+{
+  "status": "Published and live verified",
+  "updatedAt": "2026-11-03T23:19:52.640Z",
+  "tests": {
+    "passed": 112,
+    "failed": 0
+  },
+  "artifact": {
+    "revision": "main",
+    "base": "/WWB-HOST",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 858508361,
+    "budget": 922746880,
+    "files": 6176,
+    "offloadedFiles": 282,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1081275,
+      "runtime": 238734
+    },
+    "sharedCatalogueFiles": 3
+  },
+  "verification": {
+    "status": "passed",
+    "bytes": 858508361,
+    "pagesLinks": 3815,
+    "nativeScriptsUnchanged": 898,
+    "cachedResourcesRetained": 1536,
+    "runtimeDocumentsOptimized": 218,
+    "offloadedFiles": 282,
+    "compactAliasesVerified": 6905,
+    "sharedCatalogueFiles": 3,
+    "routingBytes": {
+      "full": 1081275,
+      "runtime": 238734
+    },
+    "issues": 0
+  },
+  "platforms": {
+    "ps4": {
+      "firmwares": [
+        "5.05",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52",
+        "14.00"
+      ],
+      "count": 34,
+      "localRoutes": [
+        {
+          "id": "local-gamerhack-505",
+          "url": "/WWB-HOST/hosts/runtime/gamerhack-23c946a7f85f-706ca871d370/web/505/index.html",
+          "kind": "karo"
+        },
+        {
+          "id": "local-gamerhack-672goldhen",
+          "url": "/WWB-HOST/hosts/runtime/gamerhack-23c946a7f85f-706ca871d370/web/672goldhen/index.html",
+          "kind": "karo"
+        },
+        {
+          "id": "local-karo-g2all",
+          "url": "/WWB-HOST/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2all/index.html",
+          "kind": "karo"
+        },
+        {
+          "id": "local-karo-g2allpro-modern",
+          "url": "/WWB-HOST/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2allpro/index.html",
+          "kind": "karo"
+        },
+        {
+          "id": "local-ps4-afterglow",
+          "url": "/WWB-HOST/hosts/runtime/ps4-afterglow-acf25a831725/web/index.html",
+          "kind": "afterglow"
+        }
+      ],
+      "firmwareGridOnly": "Choose firmware"
+    },
+    "ps5": {
+      "firmwares": [
+        "1.00",
+        "1.01",
+        "1.02",
+        "1.05",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "2.00",
+        "2.20",
+        "2.25",
+        "2.26",
+        "2.30",
+        "2.50",
+        "2.70",
+        "3.00",
+        "3.10",
+        "3.20",
+        "3.21",
+        "4.00",
+        "4.02",
+        "4.03",
+        "4.50",
+        "4.51",
+        "5.00",
+        "5.02",
+        "5.10",
+        "5.50",
+        "7.00",
+        "7.01",
+        "7.20",
+        "7.40",
+        "7.60",
+        "7.61",
+        "8.00",
+        "8.20",
+        "8.40",
+        "8.60",
+        "9.00",
+        "9.20",
+        "9.40",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.20",
+        "10.40",
+        "10.60",
+        "11.00",
+        "11.20",
+        "11.60",
+        "12.00",
+        "12.02",
+        "12.20",
+        "12.40",
+        "12.60",
+        "12.70",
+        "13.00",
+        "13.20",
+        "13.40",
+        "13.42",
+        "13.60"
+      ],
+      "count": 62,
+      "localRoutes": [
+        {
+          "id": "local-karo-ps5-umtx",
+          "url": "/WWB-HOST/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/UMTX/index.html",
+          "kind": "karo"
+        },
+        {
+          "id": "local-ps5-webkit-dd8e4e0914c5",
+          "url": "/WWB-HOST/hosts/runtime/ps5-webkit-dd8e4e0914c5/web/index.html",
+          "kind": "ps5-native"
+        }
+      ],
+      "firmwareGridOnly": "Choose firmware"
+    }
+  },
+  "limits": [
+    "Physical PS4/PS5 execution has not been tested",
+    "Native exploit and payload code was not executed; handoff tests use inert mocks",
+    "Legacy private KARO acquisition tests require local source-review files absent from isolated worktree"
+  ],
+  "publishedCommit": "2986784ed180731a0f6ca9e8bb01f274d9c973a6",
+  "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41738510347",
+  "live": {
+    "status": "passed",
+    "verifiedAt": "2026-11-03T23:28:43.540Z",
+    "commit": "2986784ed180731a0f6ca9e8bb01f274d9c973a6",
+    "platforms": {
+      "ps4": {
+        "firmwareChoices": 34,
+        "localRoutes": 5
+      },
+      "ps5": {
+        "firmwareChoices": 62,
+        "localRoutes": 2
+      }
+    },
+    "firmwareGridOnly": "Choose firmware",
+    "nativeCodeExecuted": false
+  }
+}

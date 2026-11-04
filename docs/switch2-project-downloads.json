@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-11-02T09:24:48.248Z",
+  "files": [
+    {
+      "name": "civ7-pico1.uf2",
+      "version": "1.0",
+      "bytes": 1489920,
+      "sha256": "f9ce6aa5ca98271768e508a8dc30a662ced9a5065c34c608d1e7ea8e19f4de93",
+      "sourceUrl": "https://github.com/Gezine/CivSwitch/releases/download/1.0/civ7-pico1.uf2",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "itemId": "switch2-projects-civswitch-pico1",
+      "platform": "Nintendo Switch 2",
+      "category": [
+        "Tools",
+        "CivSwitch"
+      ],
+      "project": "civswitch",
+      "label": "Pico 1 / RP2040",
+      "local": "/downloads/nintendo-switch-2/civswitch/1.0/civ7-pico1.uf2"
+    },
+    {
+      "name": "civ7-pico2.uf2",
+      "version": "1.0",
+      "bytes": 1476096,
+      "sha256": "13e16ae13a30c0e1d8bf5f24ac0871c5855083edab4544c3fb3b6f1a3f8fd95b",
+      "sourceUrl": "https://github.com/Gezine/CivSwitch/releases/download/1.0/civ7-pico2.uf2",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "itemId": "switch2-projects-civswitch-pico2",
+      "platform": "Nintendo Switch 2",
+      "category": [
+        "Tools",
+        "CivSwitch"
+      ],
+      "project": "civswitch",
+      "label": "Pico 2 / RP2350",
+      "local": "/downloads/nintendo-switch-2/civswitch/1.0/civ7-pico2.uf2"
+    },
+    {
+      "name": "ns2-savekit-3b4446fb8ef0.zip",
+      "version": "3b4446fb8ef044c46052a53a5836c3071891e7f3",
+      "bytes": 492571,
+      "sha256": "8b2a2f8a2404fdcc59d21a7c99c897362e0596d0e7e6c6c125cd15482744b8df",
+      "sourceUrl": "https://codeload.github.com/dougchansan/ns2-savekit/zip/3b4446fb8ef044c46052a53a5836c3071891e7f3",
+      "archiveRole": [
+        "Source Code"
+      ],
+      "itemId": "switch2-script-bundles-ns2-savekit",
+      "platform": "Nintendo Switch 2",
+      "category": [
+        "Tools",
+        "ns2-savekit"
+      ],
+      "project": "ns2-savekit",
+      "bundleId": "ns2-savekit",
+      "label": "ns2-savekit scripts ZIP",
+      "local": "/downloads/nintendo-switch-2/ns2-savekit/3b4446fb8ef0/ns2-savekit-3b4446fb8ef0.zip",
+      "commit": "3b4446fb8ef044c46052a53a5836c3071891e7f3",
+      "rootFolder": "ns2-savekit-3b4446fb8ef044c46052a53a5836c3071891e7f3",
+      "entryCount": 85,
+      "inspection": "ZIP paths, sizes and CRCs checked; required runtime files present; no downloaded code executed."
+    },
+    {
+      "name": "ouncecake-e3bcbd229be2.zip",
+      "version": "e3bcbd229be2229d44f036455adddda921ade3b2",
+      "bytes": 54646,
+      "sha256": "b6c476ec4236b2851b16d5f9403732460570e17631d69a2a93a8681351feb896",
+      "sourceUrl": "https://codeload.github.com/misshexa66/OunceCake/zip/e3bcbd229be2229d44f036455adddda921ade3b2",
+      "archiveRole": [
+        "Source Code"
+      ],
+      "itemId": "switch2-script-bundles-ouncecake",
+      "platform": "Nintendo Switch 2",
+      "category": [
+        "Tools",
+        "ouncecake"
+      ],
+      "project": "ouncecake",
+      "bundleId": "ouncecake",
+      "label": "OunceCake scripts ZIP",
+      "local": "/downloads/nintendo-switch-2/ouncecake/e3bcbd229be2/ouncecake-e3bcbd229be2.zip",
+      "commit": "e3bcbd229be2229d44f036455adddda921ade3b2",
+      "rootFolder": "OunceCake-e3bcbd229be2229d44f036455adddda921ade3b2",
+      "entryCount": 20,
+      "inspection": "ZIP paths, sizes and CRCs checked; required runtime files present; no downloaded code executed."
+    }
+  ]
+}

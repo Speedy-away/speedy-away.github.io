@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "sourceScope": "Independent primary etaHEN PS5_Cheats expansion; not sourced from the VirusMike Google Site",
+  "repository": "https://github.com/etaHEN/PS5_Cheats",
+  "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+  "licence": "GPL-3.0 (repository LICENSE)",
+  "status": "Six ready JSON files staged and statically checked; public import and F: archival are handled by the root importer",
+  "existingNativeHostResourcesPreserved": [
+    {
+      "id": "gta5-ps5-04263-01010002",
+      "sha256": "25c47d2bb864fd065d2645e7bc13a45b12f046c18786f310d9c217d111181910",
+      "titleIds": [
+        "PPSA04263"
+      ],
+      "gameVersion": "01.010.002"
+    },
+    {
+      "id": "gta5-ps5-04264-01005000",
+      "sha256": "7460de5fa64318bc7544eeb7ae1b1ef06f148df78f2668df93d838a9c57cb695",
+      "titleIds": [
+        "PPSA04264"
+      ],
+      "gameVersion": "01.005.000"
+    },
+    {
+      "id": "gta5-ps5-04264-01010002",
+      "sha256": "fc5de09d593fc308c10f308ea94832116b7aa6ee5c68d9eabe74f951a3db46c6",
+      "titleIds": [
+        "PPSA04264"
+      ],
+      "gameVersion": "01.010.002"
+    },
+    {
+      "id": "miles-morales-ps5-01417-01013002",
+      "sha256": "4eb328cdf5d89aaacf3bd24341947cd249e3396fd437961dd353a00fd0cd21e2",
+      "titleIds": [
+        "PPSA01417"
+      ],
+      "gameVersion": "01.013.002"
+    },
+    {
+      "id": "miles-morales-ps5-01460-01015001",
+      "sha256": "e51ef057511671d4175e6d4f3b6fa25228d7e2d6f9597daecaf43909ec21be7a",
+      "titleIds": [
+        "PPSA01460"
+      ],
+      "gameVersion": "01.015.001"
+    },
+    {
+      "id": "sonic-frontiers-ps5-03831-01041000",
+      "sha256": "58863f93e82adcc14cc853451742c28d61ff477b45fe9b5c670496728100a0c5",
+      "titleIds": [
+        "PPSA03831"
+      ],
+      "gameVersion": "01.041.000"
+    }
+  ],
+  "resources": [
+    {
+      "id": "ps5-native-cheats-ppsa10662-01-001-030",
+      "importJobId": "ps5-native-cheats-ppsa10662-01-001-030",
+      "name": "The Last of Us Part II Remastered · native PS5 01.001.030",
+      "title": "The Last of Us Part II Remastered · native PS5 JSON cheats",
+      "game": "The Last of Us Part II Remastered",
+      "gameSlug": "the-last-of-us-part-ii-remastered",
+      "titleId": "PPSA10662",
+      "titleIds": [
+        "PPSA10662"
+      ],
+      "gameVersion": "01.001.030",
+      "version": "01.001.030",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "gamePlatform": "native-ps5",
+      "format": "JSON",
+      "filename": "PPSA10662_01.001.030.json",
+      "bytes": 1640,
+      "sha256": "ff004b7c81b0ebeb69a9bc3b76c4642e76495299373eb17d6b8a85cec6d0ea46",
+      "url": "/downloads/ps4-ps5/ps5-native-cheats-ppsa10662-01-001-030/PPSA10662_01.001.030.json",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA10662_01.001.030.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA10662_01.001.030.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "page": "/console/ps5/game-cheats/the-last-of-us-part-ii-remastered/",
+      "pages": {
+        "ps5": "/console/ps5/game-cheats/the-last-of-us-part-ii-remastered/"
+      },
+      "image": "/assets/images/host-trainers/the-last-of-us-part-ii-remastered-f1c0691e29a5.jpg",
+      "imageKind": "platform-artwork",
+      "imageAlt": "PS5 console artwork; no game-specific cover is supplied",
+      "description": "Unmodified etaHEN-repository cheat definitions by pedrazadixon: Inf Health; Invincible Mode; Inf Ammo and Items; Inf Weapon Durability.",
+      "compatibility": "Native PS5 The Last of Us Part II Remastered; PPSA10662, exact game version 01.001.030, process eboot.bin. This file does not apply to a PS4 edition or another PPSA/update. No console firmware range is certified by the cheat file.",
+      "preparation": "Native PS5 The Last of Us Part II Remastered, PPSA10662, game version 01.001.030 only. Copy this unchanged file as PPSA10662_01.001.030.json to /data/etaHEN/cheats/json/. Open the matching game, then etaHEN Toolbox (Debug Settings) → Cheats (WIP); highlight an option with Up/Down and toggle with X. Keep an existing file backed up: the publisher supports only one cheat format per title ID and game version. This JSON is cheat data, not a standalone payload.",
+      "installationPath": "/data/etaHEN/cheats/json/PPSA10662_01.001.030.json",
+      "cheats": [
+        "Inf Health",
+        "Invincible Mode",
+        "Inf Ammo and Items",
+        "Inf Weapon Durability"
+      ],
+      "cheatCount": 4,
+      "memoryDefinitions": 8,
+      "credits": [
+        "pedrazadixon"
+      ],
+      "sourceName": "The Last of Us Part II Remastered",
+      "sourceId": "PPSA10662",
+      "sourceIdBlank": false,
+      "metadataValidation": "The original JSON id field, filename and game version agree: PPSA10662 01.001.030. Static schema checks passed; compatibility was not tested on hardware.",
+      "licence": "GPL-3.0 (repository LICENSE); original credits and bytes retained",
+      "licenceURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+      "stagedPath": "docs/tmp/ps5-native-extra-cheats/PPSA10662_01.001.030.json",
+      "provenance": {
+        "repository": "https://github.com/etaHEN/PS5_Cheats",
+        "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+        "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA10662_01.001.030.json",
+        "sourceFile": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA10662_01.001.030.json",
+        "identityEvidence": "Exact game name and PPSA10662 in the JSON; named in the JSON index",
+        "identityIndex": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn.txt",
+        "licence": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+        "instructions": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+        "metadataValidation": "The original JSON id field, filename and game version agree: PPSA10662 01.001.030. Static schema checks passed; compatibility was not tested on hardware.",
+        "bytePreservation": "Original raw JSON saved without reformatting or field changes",
+        "schemaValidation": "PPSA binding, exact game version, eboot.bin process, named checkbox mods, hex memory offsets/on/off data and creator credits; never executed"
+      }
+    },
+    {
+      "id": "ps5-native-cheats-ppsa09663-01-000-000",
+      "importJobId": "ps5-native-cheats-ppsa09663-01-000-000",
+      "name": "Dragon's Dogma 2 · native PS5 01.000.000",
+      "title": "Dragon's Dogma 2 · native PS5 JSON cheats",
+      "game": "Dragon's Dogma 2",
+      "gameSlug": "dragons-dogma-2",
+      "titleId": "PPSA09663",
+      "titleIds": [
+        "PPSA09663"
+      ],
+      "gameVersion": "01.000.000",
+      "version": "01.000.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "gamePlatform": "native-ps5",
+      "format": "JSON",
+      "filename": "PPSA09663_01.000.000.json",
+      "bytes": 1337,
+      "sha256": "64b48d7605989d5ba1c0e337b64a20e41a59f58714c4824d9e1f38a2794a99d8",
+      "url": "/downloads/ps4-ps5/ps5-native-cheats-ppsa09663-01-000-000/PPSA09663_01.000.000.json",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09663_01.000.000.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09663_01.000.000.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "page": "/console/ps5/game-cheats/dragons-dogma-2/",
+      "pages": {
+        "ps5": "/console/ps5/game-cheats/dragons-dogma-2/"
+      },
+      "image": "/assets/images/host-trainers/dragons-dogma-2-4474b5997a4b.jpg",
+      "imageKind": "platform-artwork",
+      "imageAlt": "PS5 console artwork; no game-specific cover is supplied",
+      "description": "Unmodified etaHEN-repository cheat definitions by Talixme: Easy Exp; Inf Money; Inf Stamina.",
+      "compatibility": "Native PS5 Dragon's Dogma 2; PPSA09663, exact game version 01.000.000, process eboot.bin. This file does not apply to a PS4 edition or another PPSA/update. No console firmware range is certified by the cheat file.",
+      "preparation": "Native PS5 Dragon's Dogma 2, PPSA09663, game version 01.000.000 only. Copy this unchanged file as PPSA09663_01.000.000.json to /data/etaHEN/cheats/json/. Open the matching game, then etaHEN Toolbox (Debug Settings) → Cheats (WIP); highlight an option with Up/Down and toggle with X. Keep an existing file backed up: the publisher supports only one cheat format per title ID and game version. This JSON is cheat data, not a standalone payload.",
+      "installationPath": "/data/etaHEN/cheats/json/PPSA09663_01.000.000.json",
+      "cheats": [
+        "Easy Exp",
+        "Inf Money",
+        "Inf Stamina"
+      ],
+      "cheatCount": 3,
+      "memoryDefinitions": 6,
+      "credits": [
+        "Talixme"
+      ],
+      "sourceName": "PPSA09663_00-DD2GAME000000000",
+      "sourceId": " ",
+      "sourceIdBlank": true,
+      "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA09663; its version is 01.000.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+      "licence": "GPL-3.0 (repository LICENSE); original credits and bytes retained",
+      "licenceURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+      "stagedPath": "docs/tmp/ps5-native-extra-cheats/PPSA09663_01.000.000.json",
+      "provenance": {
+        "repository": "https://github.com/etaHEN/PS5_Cheats",
+        "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+        "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09663_01.000.000.json",
+        "sourceFile": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09663_01.000.000.json",
+        "identityEvidence": "PPSA09663 and DD2GAME content-name in the JSON; the same PPSA is named Dragons Dogma 2 in the publisher SHN index",
+        "identityIndex": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn.txt",
+        "licence": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+        "instructions": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+        "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA09663; its version is 01.000.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+        "bytePreservation": "Original raw JSON saved without reformatting or field changes",
+        "schemaValidation": "PPSA binding, exact game version, eboot.bin process, named checkbox mods, hex memory offsets/on/off data and creator credits; never executed"
+      }
+    },
+    {
+      "id": "ps5-native-cheats-ppsa08710-01-005-000",
+      "importJobId": "ps5-native-cheats-ppsa08710-01-005-000",
+      "name": "Silent Hill 2 · native PS5 01.005.000",
+      "title": "Silent Hill 2 · native PS5 JSON cheats",
+      "game": "Silent Hill 2",
+      "gameSlug": "silent-hill-2",
+      "titleId": "PPSA08710",
+      "titleIds": [
+        "PPSA08710"
+      ],
+      "gameVersion": "01.005.000",
+      "version": "01.005.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "gamePlatform": "native-ps5",
+      "format": "JSON",
+      "filename": "PPSA08710_01.005.000.json",
+      "bytes": 1407,
+      "sha256": "e8acaefdb28aaa5c6f9610d39050f60e6bd0a3d71710216772c924bf05356661",
+      "url": "/downloads/ps4-ps5/ps5-native-cheats-ppsa08710-01-005-000/PPSA08710_01.005.000.json",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA08710_01.005.000.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA08710_01.005.000.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "page": "/console/ps5/game-cheats/silent-hill-2/",
+      "pages": {
+        "ps5": "/console/ps5/game-cheats/silent-hill-2/"
+      },
+      "image": "/assets/images/host-trainers/silent-hill-2-7e0743d7eb02.jpg",
+      "imageKind": "platform-artwork",
+      "imageAlt": "PS5 console artwork; no game-specific cover is supplied",
+      "description": "Unmodified etaHEN-repository cheat definitions by Talixme: Inf Ammo; Inf HP; No reload.",
+      "compatibility": "Native PS5 Silent Hill 2; PPSA08710, exact game version 01.005.000, process eboot.bin. This file does not apply to a PS4 edition or another PPSA/update. No console firmware range is certified by the cheat file.",
+      "preparation": "Native PS5 Silent Hill 2, PPSA08710, game version 01.005.000 only. Copy this unchanged file as PPSA08710_01.005.000.json to /data/etaHEN/cheats/json/. Open the matching game, then etaHEN Toolbox (Debug Settings) → Cheats (WIP); highlight an option with Up/Down and toggle with X. Keep an existing file backed up: the publisher supports only one cheat format per title ID and game version. This JSON is cheat data, not a standalone payload.",
+      "installationPath": "/data/etaHEN/cheats/json/PPSA08710_01.005.000.json",
+      "cheats": [
+        "Inf Ammo",
+        "Inf HP",
+        "No reload"
+      ],
+      "cheatCount": 3,
+      "memoryDefinitions": 6,
+      "credits": [
+        "Talixme"
+      ],
+      "sourceName": "PPSA08710_00-MAINGAME00000000",
+      "sourceId": " ",
+      "sourceIdBlank": true,
+      "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA08710; its version is 01.005.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+      "licence": "GPL-3.0 (repository LICENSE); original credits and bytes retained",
+      "licenceURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+      "stagedPath": "docs/tmp/ps5-native-extra-cheats/PPSA08710_01.005.000.json",
+      "provenance": {
+        "repository": "https://github.com/etaHEN/PS5_Cheats",
+        "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+        "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA08710_01.005.000.json",
+        "sourceFile": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA08710_01.005.000.json",
+        "identityEvidence": "PPSA08710 content-name in the JSON; the same PPSA is named Silent Hill 2 in the publisher SHN index. SHN game-update support is not applied to this JSON",
+        "identityIndex": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn.txt",
+        "licence": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+        "instructions": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+        "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA08710; its version is 01.005.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+        "bytePreservation": "Original raw JSON saved without reformatting or field changes",
+        "schemaValidation": "PPSA binding, exact game version, eboot.bin process, named checkbox mods, hex memory offsets/on/off data and creator credits; never executed"
+      }
+    },
+    {
+      "id": "ps5-native-cheats-ppsa21564-01-007-000",
+      "importJobId": "ps5-native-cheats-ppsa21564-01-007-000",
+      "name": "Astro Bot · native PS5 01.007.000",
+      "title": "Astro Bot · native PS5 JSON cheats",
+      "game": "Astro Bot",
+      "gameSlug": "astro-bot",
+      "titleId": "PPSA21564",
+      "titleIds": [
+        "PPSA21564"
+      ],
+      "gameVersion": "01.007.000",
+      "version": "01.007.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "gamePlatform": "native-ps5",
+      "format": "JSON",
+      "filename": "PPSA21564_01.007.000.json",
+      "bytes": 949,
+      "sha256": "42d3d4c39c7f607eedc1205014176790eb6c782fd20f20d264fff14c41a6d683",
+      "url": "/downloads/ps4-ps5/ps5-native-cheats-ppsa21564-01-007-000/PPSA21564_01.007.000.json",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA21564_01.007.000.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA21564_01.007.000.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "page": "/console/ps5/game-cheats/astro-bot/",
+      "pages": {
+        "ps5": "/console/ps5/game-cheats/astro-bot/"
+      },
+      "image": "/assets/images/host-trainers/astro-bot-19e37c8f055d.jpg",
+      "imageKind": "platform-artwork",
+      "imageAlt": "PS5 console artwork; no game-specific cover is supplied",
+      "description": "Unmodified etaHEN-repository cheat definitions by Talixme: Inf Coins; Inf Jumps.",
+      "compatibility": "Native PS5 Astro Bot; PPSA21564, exact game version 01.007.000, process eboot.bin. This file does not apply to a PS4 edition or another PPSA/update. No console firmware range is certified by the cheat file.",
+      "preparation": "Native PS5 Astro Bot, PPSA21564, game version 01.007.000 only. Copy this unchanged file as PPSA21564_01.007.000.json to /data/etaHEN/cheats/json/. Open the matching game, then etaHEN Toolbox (Debug Settings) → Cheats (WIP); highlight an option with Up/Down and toggle with X. Keep an existing file backed up: the publisher supports only one cheat format per title ID and game version. This JSON is cheat data, not a standalone payload.",
+      "installationPath": "/data/etaHEN/cheats/json/PPSA21564_01.007.000.json",
+      "cheats": [
+        "Inf Coins",
+        "Inf Jumps"
+      ],
+      "cheatCount": 2,
+      "memoryDefinitions": 4,
+      "credits": [
+        "Talixme"
+      ],
+      "sourceName": "PPSA21564_00-0000000000000000",
+      "sourceId": " ",
+      "sourceIdBlank": true,
+      "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA21564; its version is 01.007.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+      "licence": "GPL-3.0 (repository LICENSE); original credits and bytes retained",
+      "licenceURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+      "stagedPath": "docs/tmp/ps5-native-extra-cheats/PPSA21564_01.007.000.json",
+      "provenance": {
+        "repository": "https://github.com/etaHEN/PS5_Cheats",
+        "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+        "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA21564_01.007.000.json",
+        "sourceFile": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA21564_01.007.000.json",
+        "identityEvidence": "PPSA21564 content-name in the JSON; the same PPSA/update is named Astro Bot in the publisher SHN index",
+        "identityIndex": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn.txt",
+        "licence": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+        "instructions": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+        "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA21564; its version is 01.007.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+        "bytePreservation": "Original raw JSON saved without reformatting or field changes",
+        "schemaValidation": "PPSA binding, exact game version, eboot.bin process, named checkbox mods, hex memory offsets/on/off data and creator credits; never executed"
+      }
+    },
+    {
+      "id": "ps5-native-cheats-ppsa23226-01-000-010",
+      "importJobId": "ps5-native-cheats-ppsa23226-01-000-010",
+      "name": "Black Myth: Wukong · native PS5 01.000.010",
+      "title": "Black Myth: Wukong · native PS5 JSON cheats",
+      "game": "Black Myth: Wukong",
+      "gameSlug": "black-myth-wukong",
+      "titleId": "PPSA23226",
+      "titleIds": [
+        "PPSA23226"
+      ],
+      "gameVersion": "01.000.010",
+      "version": "01.000.010",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "gamePlatform": "native-ps5",
+      "format": "JSON",
+      "filename": "PPSA23226_01.000.010.json",
+      "bytes": 1577,
+      "sha256": "067fb30324492c673cb42646f847df040f9ec28de4fda945058818ad390cd23d",
+      "url": "/downloads/ps4-ps5/ps5-native-cheats-ppsa23226-01-000-010/PPSA23226_01.000.010.json",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA23226_01.000.010.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA23226_01.000.010.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "page": "/console/ps5/game-cheats/black-myth-wukong/",
+      "pages": {
+        "ps5": "/console/ps5/game-cheats/black-myth-wukong/"
+      },
+      "image": "/assets/images/host-trainers/black-myth-wukong-61095f57d8d6.jpg",
+      "imageKind": "platform-artwork",
+      "imageAlt": "PS5 console artwork; no game-specific cover is supplied",
+      "description": "Unmodified etaHEN-repository cheat definitions by Talixme: Easy Exp; God Mode; Inf Money; Inf Skill Points.",
+      "compatibility": "Native PS5 Black Myth: Wukong; PPSA23226, exact game version 01.000.010, process eboot.bin. This file does not apply to a PS4 edition or another PPSA/update. No console firmware range is certified by the cheat file.",
+      "preparation": "Native PS5 Black Myth: Wukong, PPSA23226, game version 01.000.010 only. Copy this unchanged file as PPSA23226_01.000.010.json to /data/etaHEN/cheats/json/. Open the matching game, then etaHEN Toolbox (Debug Settings) → Cheats (WIP); highlight an option with Up/Down and toggle with X. Keep an existing file backed up: the publisher supports only one cheat format per title ID and game version. This JSON is cheat data, not a standalone payload.",
+      "installationPath": "/data/etaHEN/cheats/json/PPSA23226_01.000.010.json",
+      "cheats": [
+        "Easy Exp",
+        "God Mode",
+        "Inf Money",
+        "Inf Skill Points"
+      ],
+      "cheatCount": 4,
+      "memoryDefinitions": 7,
+      "credits": [
+        "Talixme"
+      ],
+      "sourceName": "PPSA23226_00-GAME000000000000",
+      "sourceId": " ",
+      "sourceIdBlank": true,
+      "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA23226; its version is 01.000.010. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+      "licence": "GPL-3.0 (repository LICENSE); original credits and bytes retained",
+      "licenceURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+      "stagedPath": "docs/tmp/ps5-native-extra-cheats/PPSA23226_01.000.010.json",
+      "provenance": {
+        "repository": "https://github.com/etaHEN/PS5_Cheats",
+        "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+        "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA23226_01.000.010.json",
+        "sourceFile": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA23226_01.000.010.json",
+        "identityEvidence": "PPSA23226 content-name in the JSON; the same PPSA/update is named Black Myth Wukong in the publisher SHN index",
+        "identityIndex": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn.txt",
+        "licence": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+        "instructions": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+        "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA23226; its version is 01.000.010. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+        "bytePreservation": "Original raw JSON saved without reformatting or field changes",
+        "schemaValidation": "PPSA binding, exact game version, eboot.bin process, named checkbox mods, hex memory offsets/on/off data and creator credits; never executed"
+      }
+    },
+    {
+      "id": "ps5-native-cheats-ppsa09911-01-000-000",
+      "importJobId": "ps5-native-cheats-ppsa09911-01-000-000",
+      "name": "Ghostrunner 2 · native PS5 01.000.000",
+      "title": "Ghostrunner 2 · native PS5 JSON cheats",
+      "game": "Ghostrunner 2",
+      "gameSlug": "ghostrunner-2",
+      "titleId": "PPSA09911",
+      "titleIds": [
+        "PPSA09911"
+      ],
+      "gameVersion": "01.000.000",
+      "version": "01.000.000",
+      "platforms": [
+        "ps5"
+      ],
+      "category": "mods",
+      "gamePlatform": "native-ps5",
+      "format": "JSON",
+      "filename": "PPSA09911_01.000.000.json",
+      "bytes": 947,
+      "sha256": "489497800a06e8995a3798e601c12fa27a305fdde2f0151a980ba2b71ea2f1b3",
+      "url": "/downloads/ps4-ps5/ps5-native-cheats-ppsa09911-01-000-000/PPSA09911_01.000.000.json",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09911_01.000.000.json",
+      "sourceURL": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09911_01.000.000.json",
+      "sourceCommit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+      "page": "/console/ps5/game-cheats/ghostrunner-2/",
+      "pages": {
+        "ps5": "/console/ps5/game-cheats/ghostrunner-2/"
+      },
+      "image": "/assets/images/host-trainers/ghostrunner-2-0c6aa18bed2d.jpg",
+      "imageKind": "platform-artwork",
+      "imageAlt": "PS5 console artwork; no game-specific cover is supplied",
+      "description": "Unmodified etaHEN-repository cheat definitions by Talixme: Inf Stamina; Max Score.",
+      "compatibility": "Native PS5 Ghostrunner 2; PPSA09911, exact game version 01.000.000, process eboot.bin. This file does not apply to a PS4 edition or another PPSA/update. No console firmware range is certified by the cheat file.",
+      "preparation": "Native PS5 Ghostrunner 2, PPSA09911, game version 01.000.000 only. Copy this unchanged file as PPSA09911_01.000.000.json to /data/etaHEN/cheats/json/. Open the matching game, then etaHEN Toolbox (Debug Settings) → Cheats (WIP); highlight an option with Up/Down and toggle with X. Keep an existing file backed up: the publisher supports only one cheat format per title ID and game version. This JSON is cheat data, not a standalone payload.",
+      "installationPath": "/data/etaHEN/cheats/json/PPSA09911_01.000.000.json",
+      "cheats": [
+        "Inf Stamina",
+        "Max Score"
+      ],
+      "cheatCount": 2,
+      "memoryDefinitions": 4,
+      "credits": [
+        "Talixme"
+      ],
+      "sourceName": "PPSA09911_00-GHOSTRUNNER2US00",
+      "sourceId": " ",
+      "sourceIdBlank": true,
+      "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA09911; its version is 01.000.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+      "licence": "GPL-3.0 (repository LICENSE); original credits and bytes retained",
+      "licenceURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+      "licenceDownload": "/downloads/ps4-ps5/ps5-native-cheats-license-ef295511ea42/LICENSE.txt",
+      "instructionsURL": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+      "stagedPath": "docs/tmp/ps5-native-extra-cheats/PPSA09911_01.000.000.json",
+      "provenance": {
+        "repository": "https://github.com/etaHEN/PS5_Cheats",
+        "commit": "ef295511ea4252474b16325618ffaafd3afb3cbb",
+        "sourceRaw": "https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09911_01.000.000.json",
+        "sourceFile": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/PPSA09911_01.000.000.json",
+        "identityEvidence": "Exact PPSA09911_00-GHOSTRUNNER2US00 content-name in the JSON and publisher JSON index",
+        "identityIndex": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn.txt",
+        "licence": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE",
+        "instructions": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md",
+        "metadataValidation": "The original JSON id field is blank. Its unmodified filename and name field both identify PPSA09911; its version is 01.000.000. The publisher documents filename-based title/version naming. No field was repaired or rewritten; compatibility was not tested on hardware.",
+        "bytePreservation": "Original raw JSON saved without reformatting or field changes",
+        "schemaValidation": "PPSA binding, exact game version, eboot.bin process, named checkbox mods, hex memory offsets/on/off data and creator credits; never executed"
+      }
+    }
+  ],
+  "notices": [
+    {
+      "id": "ps5-native-cheats-license-ef295511ea42",
+      "filename": "LICENSE.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/LICENSE"
+    },
+    {
+      "id": "ps5-native-cheats-readme-ef295511ea42",
+      "filename": "README-upstream.md",
+      "bytes": 2112,
+      "sha256": "c02526be96be26ed14f4bade5bbc7c6c0001d7168ac701373bd447f9bbbcdc1d",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/.github/README.md"
+    },
+    {
+      "id": "ps5-native-cheats-shn-index-ef295511ea42",
+      "filename": "shn.txt",
+      "bytes": 38152,
+      "sha256": "8f13c6ba38d1cb22e5c7d85eff419feae2dafb3fd0880321de0be3cafaa7584c",
+      "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/shn.txt"
+    }
+  ],
+  "limits": [
+    "Five original JSON id fields are blank; filename/name PPSA and exact version are preserved and disclosed without silent repair.",
+    "Game identity in the SHN index is used only as name evidence, never to apply a different SHN game version to a JSON file.",
+    "All six files are native PPSA definitions, distinct from PS4 CUSA backward-compatibility patches.",
+    "The repository credits the original cheat creators. etaHEN provides format/toolbox support; it does not claim authorship of every cheat.",
+    "No firmware compatibility, successful hardware execution or stable gameplay result is inferred from static checks.",
+    "No payload, cheat or commercial game executable was run; no shared host source, catalogue, helper or inventory was changed."
+  ]
+}

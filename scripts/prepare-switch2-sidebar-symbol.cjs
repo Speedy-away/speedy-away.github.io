@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..');
+const original='assets/images/platform-logos/originals/nintendo-switch-2.svg';
+const output='assets/images/platform-logos/nintendo-switch-2-symbol.svg';
+const text=fs.readFileSync(path.join(root,original),'utf8');
+const display=text.replace('height="316.688"','height="190"').replace('viewBox="0 0 354.5 316.688"','viewBox="0 0 354.5 190"');
+if(display===text)throw Error('Unexpected original Nintendo Switch 2 SVG geometry');
+if(fs.existsSync(path.join(root,output))&&fs.readFileSync(path.join(root,output),'utf8')!==display)throw Error('Refusing to replace a different symbol file');
+fs.writeFileSync(path.join(root,output),display);
+const p=path.join(root,'docs/platform-logo-sources.json'),data=JSON.parse(fs.readFileSync(p,'utf8'));
+const record=data.logos.find(x=>x.platform==='Nintendo Switch 2');
+Object.assign(record,{sidebar_file:output,sidebar_size_bytes:Buffer.byteLength(display),sidebar_sha256:crypto.createHash('sha256').update(display).digest('hex'),sidebar_viewBox:'0 0 354.5 190',sidebar_adaptations:['Cropped display viewBox to the official Joy-Con-and-2 symbol; full original wordmark retained in originals/nintendo-switch-2.svg. Visible symbol geometry unchanged.']});
+fs.writeFileSync(p,JSON.stringify(data,null,2)+'\n');
+console.log('Prepared actual Nintendo Switch 2 sidebar symbol; original wordmark retained.');

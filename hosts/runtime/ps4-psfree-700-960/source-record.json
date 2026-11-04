@@ -1,0 +1,306 @@
+{
+  "repository": "https://github.com/Al-Azif/psfree-lapse",
+  "commit": "08ecf038c94aa99b56e46c9f32e2e486f83656b6",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/CHANGELOG.md",
+      "bytes": 3774,
+      "sha256": "d4e05d74855095735c839cc07652114250cfe0b56ea45711a74b85cf48a42c22"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/README.md",
+      "bytes": 1935,
+      "sha256": "8dff0e2c10d3ea2444f5497717d22a0a77cfd47f8278c72a344dd3597021c8a2"
+    },
+    {
+      "path": "src/about.html",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/about.html",
+      "bytes": 7713,
+      "sha256": "df8288198a9b1d9a0c210bb7efcaf3bfc38b3876439a9d69cc1eddbb88ee1d41"
+    },
+    {
+      "path": "src/alert.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/alert.mjs",
+      "bytes": 1698,
+      "sha256": "7d104c56e81865f25c5abff78a80daa402089f26dd708d646285ef8fede8579a"
+    },
+    {
+      "path": "src/config.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/config.mjs",
+      "bytes": 2609,
+      "sha256": "f31906b947300e11642f571e779a00468a2bd9993083dcd232bd4e6b6a8c0f83"
+    },
+    {
+      "path": "src/fonts/FONTS.LICENSE",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/fonts/FONTS.LICENSE",
+      "bytes": 4416,
+      "sha256": "fa16ee0fd3c2ff3a19309b4867baaf1f265e532e7f4911589592c2d8ee54f8e8"
+    },
+    {
+      "path": "src/fonts/LiberationMono-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/fonts/LiberationMono-Regular.ttf",
+      "bytes": 319624,
+      "sha256": "6299433c96540e07cc0f48e5f00f28e4e5551a717e518c23b243293b9105d42b"
+    },
+    {
+      "path": "src/fonts/README.txt",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/fonts/README.txt",
+      "bytes": 97,
+      "sha256": "e28d12100052eebf61eb70e3ee307b974935f62c20054d46693730a565ea8ee9"
+    },
+    {
+      "path": "src/index.html",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/index.html",
+      "bytes": 1249,
+      "sha256": "912a7fa32f3b0602adecf1cfa7921eef48c3dde9d1122b4dbf9e77e35c538145"
+    },
+    {
+      "path": "src/kpatch/700.c",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/700.c",
+      "bytes": 7626,
+      "sha256": "a0e3d017f24437330a3ce5a71cf474cc68d254291030c07967b2197e65a7723c"
+    },
+    {
+      "path": "src/kpatch/750.c",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/750.c",
+      "bytes": 8682,
+      "sha256": "75e52d7f98dd918f3ab9f2b48bf19a52725ffe3f46f79567e9e7857d2c6db538"
+    },
+    {
+      "path": "src/kpatch/800.c",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/800.c",
+      "bytes": 8612,
+      "sha256": "039a32a50620cec03c16498fde563a86e5e10c37eede113c87af88fc5453bbd5"
+    },
+    {
+      "path": "src/kpatch/850.c",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/850.c",
+      "bytes": 8605,
+      "sha256": "99d05614adade9c2a8bfa093414aeb694c511640b48b365ac894d37bde034f34"
+    },
+    {
+      "path": "src/kpatch/900.c",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/900.c",
+      "bytes": 8601,
+      "sha256": "9590258d11bcb564207393597e63af7801f14839d70838919bc92dd6af820afc"
+    },
+    {
+      "path": "src/kpatch/903.c",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/903.c",
+      "bytes": 8607,
+      "sha256": "1e014cc3c09d1216fe0c45244d1e1f66e0b7ecee2e489ec256bf3d6d3105011a"
+    },
+    {
+      "path": "src/kpatch/950.c",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/950.c",
+      "bytes": 8614,
+      "sha256": "243abf1db227ecfae892884e122514716c29ae34327a0debb830ffde566e1f17"
+    },
+    {
+      "path": "src/kpatch/Makefile",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/Makefile",
+      "bytes": 491,
+      "sha256": "a14928a083e1c684edf7ec7933d29244a97818c9179d6b314b0df1f6abc4a063"
+    },
+    {
+      "path": "src/kpatch/script.ld",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/script.ld",
+      "bytes": 178,
+      "sha256": "d933f197ef2ab23b44c7bc55edf7ba91dab03c2b0da4962bd356b76d2eada8da"
+    },
+    {
+      "path": "src/kpatch/types.h",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/types.h",
+      "bytes": 950,
+      "sha256": "28dd1c9ba814f1bc6112eb638a44d4a6a6e9a5e41c8ff4d945b0c9fa8317aa26"
+    },
+    {
+      "path": "src/kpatch/utils.h",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/utils.h",
+      "bytes": 1622,
+      "sha256": "76e9b1ac494fed0790fab38ecc482dd0667fc8bc1dc27a62e1af38d49c90d934"
+    },
+    {
+      "path": "src/lapse.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse.mjs",
+      "bytes": 60047,
+      "sha256": "45b7fdbc98970f0bf2d87005dacd12f793839cd1cb8d47fbb21f01ce14a75af1"
+    },
+    {
+      "path": "src/lapse/ps4/700.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/700.mjs",
+      "bytes": 1204,
+      "sha256": "b1bf40f780813414626edbf3b6494bf87448f8355aa6b48e1c60087a1ba18f5f"
+    },
+    {
+      "path": "src/lapse/ps4/750.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/750.mjs",
+      "bytes": 1192,
+      "sha256": "5f4c4e45bbb94e5cf165ed8fe3562dce664c6f6df8d16deb3921691d236f0654"
+    },
+    {
+      "path": "src/lapse/ps4/751.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/751.mjs",
+      "bytes": 1436,
+      "sha256": "8a9e076e85b1eec11027cf26539b44526d1db048a6705d1396d58c8abeac4595"
+    },
+    {
+      "path": "src/lapse/ps4/800.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/800.mjs",
+      "bytes": 1204,
+      "sha256": "e44825c7f1cc3936baef4f26a6a98620a39bf09e1d252cd48bf0fa9e36d3d27f"
+    },
+    {
+      "path": "src/lapse/ps4/850.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/850.mjs",
+      "bytes": 1191,
+      "sha256": "1b1a342ea6745860982fd92e5a7ccd097230f5dabdf6448bec7bf3cd579f7ca4"
+    },
+    {
+      "path": "src/lapse/ps4/852.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/852.mjs",
+      "bytes": 1191,
+      "sha256": "4236ef928531448412111269d9daecd2e5f4c54179c1c1ce5866bf507118deb9"
+    },
+    {
+      "path": "src/lapse/ps4/900.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/900.mjs",
+      "bytes": 1190,
+      "sha256": "cb663cc8b41ba67c5f84ca242e8da303277ca13e403cb4585be7d840663ebcba"
+    },
+    {
+      "path": "src/lapse/ps4/903.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/903.mjs",
+      "bytes": 1196,
+      "sha256": "5dabbe779544cbdde4c4e5f769552706ef8511fdfa1e16825e605148fff9feff"
+    },
+    {
+      "path": "src/lapse/ps4/950.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps4/950.mjs",
+      "bytes": 1205,
+      "sha256": "1cd6fcb8639e19861ff697caf7eb4ff94a3294a756a3472996e45f4fb3094212"
+    },
+    {
+      "path": "src/lapse/ps5/.gitinclude",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/lapse/ps5/.gitinclude",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/module/chain.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/chain.mjs",
+      "bytes": 15424,
+      "sha256": "f83215dd3a7e4d1a886d4a0fd334044278c1264df853f71bcc1d04027c12d822"
+    },
+    {
+      "path": "src/module/int64.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/int64.mjs",
+      "bytes": 3176,
+      "sha256": "cdd42b5e94f19b3eb821beb8417032a4068282d6f5f7ddd23be32d749c5e3e2e"
+    },
+    {
+      "path": "src/module/mem.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/mem.mjs",
+      "bytes": 10873,
+      "sha256": "45bc7d6df9a2ac7a59aa64ba85b6c1d2ff26de4e3cb3fbade8e5de53f3f7b9a5"
+    },
+    {
+      "path": "src/module/memtools.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/memtools.mjs",
+      "bytes": 8350,
+      "sha256": "42dad6066ca54c944f1649c2a3c667a80102e3d32488ddc2ef6475f298cc3e68"
+    },
+    {
+      "path": "src/module/offset.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/offset.mjs",
+      "bytes": 1931,
+      "sha256": "1966bff1bd12a296bf8f1f0e6510416d2d9c2d40c20bfb85959034b281c955e1"
+    },
+    {
+      "path": "src/module/rw.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/rw.mjs",
+      "bytes": 4091,
+      "sha256": "2c810030b68161015f75a424d5691bc8294dcf4c895c8ae196ff435e01bad806"
+    },
+    {
+      "path": "src/module/utils.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/utils.mjs",
+      "bytes": 4153,
+      "sha256": "2a0020062efc4c4caba9332d72ecef668dff2bc08652b2b95c2e8939b15166d9"
+    },
+    {
+      "path": "src/module/view.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/module/view.mjs",
+      "bytes": 6278,
+      "sha256": "be11795972cf777ad258715ea5609fa0b18dd28fb60e82c2a03c1a11e2d8f206"
+    },
+    {
+      "path": "src/psfree.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/psfree.mjs",
+      "bytes": 25714,
+      "sha256": "75d955311270b167c04ce73ed5aec5a8186fb3c2f71ec612734eb85404174c7a"
+    },
+    {
+      "path": "src/rop/ps4/700.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/rop/ps4/700.mjs",
+      "bytes": 8368,
+      "sha256": "19739f77229eb5d544af3d22731e981aaca39164523f6bf9c7d553eb455f6dea"
+    },
+    {
+      "path": "src/rop/ps4/750.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/rop/ps4/750.mjs",
+      "bytes": 8368,
+      "sha256": "1479bc238c5913681732afd2c9a93da4baf47b37528b91f8184f515fc9a06aa2"
+    },
+    {
+      "path": "src/rop/ps4/800.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/rop/ps4/800.mjs",
+      "bytes": 8366,
+      "sha256": "dfada0f536de98c0b60baa35064ef6e105376cfcc69ae4e0758cdc9b886ffc34"
+    },
+    {
+      "path": "src/rop/ps4/850.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/rop/ps4/850.mjs",
+      "bytes": 8360,
+      "sha256": "cb50ee20de0c9adb676ff03c129a2ad154f41ef341fc81e2d75a4c87ec2b15b0"
+    },
+    {
+      "path": "src/rop/ps4/900.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/rop/ps4/900.mjs",
+      "bytes": 8970,
+      "sha256": "6621af8afc3d066ed2d3c796c2188ab74d01b0f17e98e48e87338f6581081082"
+    },
+    {
+      "path": "src/rop/ps4/950.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/rop/ps4/950.mjs",
+      "bytes": 9062,
+      "sha256": "3c864714d81487722f1affed1cdb887c7f7f814bf18c94f224a392252c461dbe"
+    },
+    {
+      "path": "src/rop/ps5/.gitinclude",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/rop/ps5/.gitinclude",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/send.mjs",
+      "url": "https://raw.githubusercontent.com/Al-Azif/psfree-lapse/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/send.mjs",
+      "bytes": 7354,
+      "sha256": "0d8b8791c6aa2141d1a2b6f4cf3ea77709d8cc5ae36fda826d3f11d4a7736913"
+    }
+  ],
+  "modifications": [
+    "Deployment-only .mjs → .js extension/import rewrites for consistent JavaScript MIME.",
+    "Manual PS4-only entry and one-use 30-second session ticket; web entry creates the exploit module only after a valid ticket.",
+    "Compile exact kernel C sources into text-only raw binary with recorded LLVM flags; preserve the original source Makefile.",
+    "No payload.bin included or automatic HEN execution; upstream BIN listener remains on TCP9020."
+  ]
+}

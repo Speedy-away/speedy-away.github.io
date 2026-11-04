@@ -1,0 +1,668 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T18:52:34.959Z",
+  "scope": "Base PS3 resource aliases only; preserve existing exact-source images, game/region/update pins and every download. Family images illustrate appearance, not exact archive identity or compatibility.",
+  "resources": {
+    "gta-v-spiderman": {
+      "image": "/assets/images/menu-previews/ps3/original-1554831232561324052-1554831232939073577-9136bfc8dfe8.webp",
+      "sha256": "9136bfc8dfe891ff39dbbac8cda5fe1d9d80716fe9b0b480196096c964e4c370",
+      "bytes": 226668,
+      "width": 640,
+      "height": 358,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta5-loader-spider-man",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1554831232561324052",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1554831232561324052/1554831232939073577/Screenshot_2026-09-30_132254.png?backend=b2&ex=6ae929ad&is=6ae7d82d&hm=501b83d55e981f1bb7b5da4ffc7fedde374b66f34d69ffb3cef9b608a6d2f7f9&=&format=webp&quality=lossless&width=640&height=358",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta5-loader-spider-man.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Spider-Man · menu-family preview; exact archived build unverified. Same GTA V Spider-Man Mod Loader name; separate archives and no version identity established.",
+      "imageAlt": "Spider-Man Mod Loader menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": true,
+      "evidence": "Same GTA V Spider-Man Mod Loader name; separate archives and no version identity established.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/nlen8zvbb334bs9/Spider-Man_Modloader.rar/file",
+        "https://e.pcloud.link/publink/show?code=XZVxgjZrqidObbSb44OXdhN8sXd6YIM5V7y",
+        "https://terabox.com/s/1oQ-6QMWTtBAMzihy-m77BQ"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/5ed4wi4cblmpcq4/GTA_5_Spider-Man_Mod_Loader.zip/file"
+      ]
+    },
+    "gta-v-buzzard-v56": {
+      "image": "/assets/images/menu-previews/ps3/original-1554949824561021018-1554949824783327404-598bafa4cb85.webp",
+      "sha256": "598bafa4cb85ed981e8e20a23ef3c9f80df46f4b78cf2e6fa1baaf646586180f",
+      "bytes": 483980,
+      "width": 1217,
+      "height": 591,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta5-loader-buzzard-v61",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1554949824561021018",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1554949824561021018/1554949824783327404/image.png?backend=b2&ex=6ae9981f&is=6ae8469f&hm=202acc94a852fe33e77b02cfd857df2dc00b1bffaaa5403e0b9666148f4d5a43&=&format=webp&quality=lossless",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta5-loader-buzzard-v61.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Buzzard v6.1 · menu-family preview; exact archived build unverified. Buzzard GTA V loader family. Preview is v6.1; base entry remains pinned to v5.6.",
+      "imageAlt": "Buzzard Private menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": true,
+      "evidence": "Buzzard GTA V loader family. Preview is v6.1; base entry remains pinned to v5.6.",
+      "targetDownloads": [
+        "https://mega.nz/file/tOoQHQBZ#cOdrHS_uXtghO4DkY_19pImFVJyo8ot735F_HlOJNwA"
+      ],
+      "sourceDownloads": [
+        "https://mega.nz/file/4GYTnaRI#eptDhETy5m4XS5HIKMJKb1Xkj9v_rieTWSvyir_B6mU"
+      ]
+    },
+    "gta-v-buzzard-v53": {
+      "image": "/assets/images/menu-previews/ps3/original-1554949824561021018-1554949824783327404-598bafa4cb85.webp",
+      "sha256": "598bafa4cb85ed981e8e20a23ef3c9f80df46f4b78cf2e6fa1baaf646586180f",
+      "bytes": 483980,
+      "width": 1217,
+      "height": 591,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta5-loader-buzzard-v61",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1554949824561021018",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1554949824561021018/1554949824783327404/image.png?backend=b2&ex=6ae9981f&is=6ae8469f&hm=202acc94a852fe33e77b02cfd857df2dc00b1bffaaa5403e0b9666148f4d5a43&=&format=webp&quality=lossless",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta5-loader-buzzard-v61.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Buzzard v6.1 · menu-family preview; exact archived build unverified. Buzzard GTA V loader family. Preview is v6.1; base entry remains pinned to v5.3.",
+      "imageAlt": "Buzzard Private menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Buzzard GTA V loader family. Preview is v6.1; base entry remains pinned to v5.3.",
+      "targetDownloads": [
+        "https://www.dropbox.com/scl/fi/aod8q2xggtotozdxqk75i/Mod-Loader-BUZZARD-v5.3-Private.zip?rlkey=br487wcb8hhjeac1b3j0790k5&e=1&st=sl6iixum&dl=0"
+      ],
+      "sourceDownloads": [
+        "https://mega.nz/file/4GYTnaRI#eptDhETy5m4XS5HIKMJKb1Xkj9v_rieTWSvyir_B6mU"
+      ]
+    },
+    "gta-v-omarghost-v6": {
+      "image": "/assets/images/menu-previews/ps3/original-1554949482670587925-1554949482838237235-dd44d492d387.webp",
+      "sha256": "dd44d492d38728f1b308c3972d2b37bfb343fd9ddf146c05efee429e4f1b824c",
+      "bytes": 126146,
+      "width": 640,
+      "height": 315,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta5-loader-omar-ghost-v71",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1554949482670587925",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1554949482670587925/1554949482838237235/Screenshot_2026-09-30_211329.png?backend=b2&ex=6ae997ce&is=6ae8464e&hm=6dd30fd32dbaae3349ec07067c473c4a53566a7b0b932cb115d2545301d5502f&=&format=webp&quality=lossless&width=640&height=315",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta5-loader-omar-ghost-v71.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Omar Ghost v7.1 · menu-family preview; exact archived build unverified. Omar Ghost GTA V loader family. Preview is v7.1; base entry remains pinned to v6.0.",
+      "imageAlt": "OmarGhost Mod Loader menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Omar Ghost GTA V loader family. Preview is v7.1; base entry remains pinned to v6.0.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/onfxbbqnx32vc42/OmarGhost_ModLoader_V6.0.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/1yssqt2o1e4hfhc/Omar_Ghost_Loader_V7.0.rar/file"
+      ]
+    },
+    "gta-v-pennywise-v6": {
+      "image": "/assets/images/menu-previews/ps3/original-1554940012632477706-1554940013278666803-98c0b07ca3aa.webp",
+      "sha256": "98c0b07ca3aab644e7d916dc92a0c15cb793f5a385c46489f029562e06ff6a4b",
+      "bytes": 188632,
+      "width": 640,
+      "height": 356,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta5-loader-pennywise-v7",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1554940012632477706",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1554940012632477706/1554940013278666803/image.png?backend=b2&ex=6ae98efc&is=6ae83d7c&hm=276bc36795bb8ed61934777e44e854eca9fca3a589ccdef61f9f0b35db5efe6b&=&format=webp&quality=lossless&width=640&height=356",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta5-loader-pennywise-v7.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Pennywise v7.0 · menu-family preview; exact archived build unverified. Pennywise GTA V loader family. Preview is v7.0; base entry remains pinned to v6.0.",
+      "imageAlt": "Pennywise by HackardoPS3M0dxZ menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Pennywise GTA V loader family. Preview is v7.0; base entry remains pinned to v6.0.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/ly9sa16ne1y30lq/Pennywise_V6_By_HackardoPS3M0dxZ.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/u67dv4u6z6n8a46/MOD_LOADER_PENNYWISE_V7.zip/file"
+      ]
+    },
+    "gta-v-fbi4z-v2": {
+      "image": "/assets/images/menu-previews/ps3/original-1554947681074286813-1554947681565151272-2b997a450f00.webp",
+      "sha256": "2b997a450f001b9d9b51868f509ba0d8f8df990edef086443bf4afca1ac08773",
+      "bytes": 158798,
+      "width": 640,
+      "height": 356,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta5-loader-fbi4z-v4",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1554947681074286813",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1554947681074286813/1554947681565151272/Screenshot_2026-09-30_210555.png?backend=b2&ex=6ae99620&is=6ae844a0&hm=8d9bd7d1790baccbcd12cf916a5dde06b7cd264d221bb781961de7b42d9fa2cf&=&format=webp&quality=lossless&width=640&height=356",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta5-loader-fbi4z-v4.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "FBI4Z V4 · menu-family preview; exact archived build unverified. Both records link the same MediaFire file key ipxmgfw1bdlmuco/update.rpf. Source labels disagree (base v2, Discord V4), so retain a family caption instead of asserting an exact screenshot/build match.",
+      "imageAlt": "FBI4Z menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Both records link the same MediaFire file key ipxmgfw1bdlmuco/update.rpf. Source labels disagree (base v2, Discord V4), so retain a family caption instead of asserting an exact screenshot/build match.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/ipxmgfw1bdlmuco/update.rpf/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/ipxmgfw1bdlmuco/update.rpf/file"
+      ]
+    },
+    "gta-iv-glitchinng": {
+      "image": "/assets/images/menu-previews/ps3/original-1558957508025122837-1558957508649820210-f6cb7cd3ce4b.webp",
+      "sha256": "f6cb7cd3ce4b661f833752b81f744807f4db06f4747d14fcb3425e71f6c9119b",
+      "bytes": 212692,
+      "width": 640,
+      "height": 362,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta4-glitching-v91",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558957508025122837",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558957508025122837/1558957508649820210/Screenshot_2026-10-11_223746.png?ex=6ae9ac12&is=6ae85a92&hm=ce4a5ac4df41d57cd02d0ee8b8b8333dc430a337b50f71d5e2b47902920691c2&=&format=webp&quality=lossless&width=640&height=362",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta4-glitching-v91.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "gameId": "gta-iv",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Glitching v9.1 · menu-family preview; exact archived build unverified. Both GTA IV archive filenames explicitly identify Glitchinng V9.1; source keys/archive containers differ, so this is the v9.1 menu-family preview.",
+      "imageAlt": "Glitchinng menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": true,
+      "evidence": "Both GTA IV archive filenames explicitly identify Glitchinng V9.1; source keys/archive containers differ, so this is the v9.1 menu-family preview.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/fe76g9nndz4i62n/Glitchinng_V9.1.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/4via1srad04z03d/GTA_IV_Glitchinng_V9.1_PS3_Xbox.rar/file"
+      ]
+    },
+    "gta-iv-red-motion": {
+      "image": "/assets/images/menu-previews/ps3/original-1558956668866265259-1558956669067600093-800c4193faf6.webp",
+      "sha256": "800c4193faf6b561788dbbe3aeb35fe8bf5af7753750aa7b67e1dc0dfe798e6b",
+      "bytes": 211932,
+      "width": 640,
+      "height": 361,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta4-red-motion",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558956668866265259",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558956668866265259/1558956669067600093/Screenshot_2026-10-11_223634.png?ex=6ae9ab49&is=6ae859c9&hm=47ebb1cdf0256f8e1a4a8221f65b98bb76453326b3d0950afb84b6c51821deda&=&format=webp&quality=lossless&width=640&height=361",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta4-red-motion.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "gameId": "gta-iv",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Red Motion · menu-family preview; exact archived build unverified. Both GTA IV source/archive names explicitly identify Red Motion; separate source archives, no exact-build identity established.",
+      "imageAlt": "Red Motion by PRMX menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": true,
+      "evidence": "Both GTA IV source/archive names explicitly identify Red Motion; separate source archives, no exact-build identity established.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/rjkioprcae32vbt/Red_Motion_by_PRMX.zip/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/ytytzooq3gapby7/GTA_IV_Red_Motion_PS3.rar/file"
+      ]
+    },
+    "gta-iv-major-distribution": {
+      "image": "/assets/images/menu-previews/ps3/original-1530664435860115538-1530664436065632256-c7534e2c294c.webp",
+      "sha256": "c7534e2c294c0ce387747a13b952f73456c260e6496a4485e4308e84d9e8885e",
+      "bytes": 25214,
+      "width": 640,
+      "height": 360,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta4-major-distribution-v31",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1530664435860115538",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1530664435860115538/1530664436065632256/maxresdefault_2.jpg?ex=6ae99317&is=6ae84197&hm=04729e5b540b4cc2e9da45cd321491e0e38b25933c6a39c949625458848d0416&=&format=webp&width=640&height=360",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta4-major-distribution-v31.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "gameId": "gta-iv",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Major Distribution v3.1 · menu-family preview; exact archived build unverified. Major Distribution GTA IV family. Preview belongs to v3.1; base entry remains v1.8. Existing base showcase should be retained.",
+      "imageAlt": "Major Distribution menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Major Distribution GTA IV family. Preview belongs to v3.1; base entry remains v1.8. Existing base showcase should be retained.",
+      "targetDownloads": [
+        "https://mega.nz/file/RbxwTDJb#uSsu3AyUGxJtLmZ-ZHCJmefuvJnJm5xeVRHqRZWbP-k"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/download/d26797t15nif0qf"
+      ]
+    },
+    "gta-iv-orbit-free": {
+      "image": "/assets/images/menu-previews/ps3/original-1560064523732521000-1560064524063608832-88ef4adef96c.webp",
+      "sha256": "88ef4adef96c068997e909fe53ad1aa1918cd636a46a1c2512071f6688b0833a",
+      "bytes": 166840,
+      "width": 640,
+      "height": 361,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-gta4-orbit",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1560064523732521000",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1560064523732521000/1560064524063608832/Screenshot_2026-10-14_235824.png?ex=6ae915cf&is=6ae7c44f&hm=37f7e04577b16b230f8393f158556ea5ba5e0c5c1d4325225b9124bc279ad3a5&=&format=webp&quality=lossless&width=640&height=361",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-gta4-orbit.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-sprx-menu",
+      "gameId": "gta-iv",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Orbit · menu-family preview; exact archived build unverified. Orbit GTA IV family only. Base Free v1.1 requirements remain separate from the recovered Orbit post; retain the already documented developer Free-menu image when present.",
+      "imageAlt": "Orbit Free SPRX menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Orbit GTA IV family only. Base Free v1.1 requirements remain separate from the recovered Orbit post; retain the already documented developer Free-menu image when present.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/1sdqwu5pv5axo8r/GTAIV-Orbit-Menu-Free-v1.1-%2528All-In-One%2529.7z/file"
+      ],
+      "sourceDownloads": []
+    },
+    "bo1-viridian": {
+      "image": "/assets/images/menu-previews/ps3/original-1529560595580588142-1529560595920195728-78e49ff3f60b.webp",
+      "sha256": "78e49ff3f60b8f0512f239966347831ace09e323d50abd40a3f14dc3d85b8fd1",
+      "bytes": 29790,
+      "width": 512,
+      "height": 385,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-bo2-viridian",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1529560595580588142",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1529560595580588142/1529560595920195728/sddefault.jpg?ex=6ae9838f&is=6ae8320f&hm=aea2f0f32c25b2282369e3808ecce6adbe2033a339bd70b072e18c98969dda12&=&format=webp&width=512&height=385",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-bo2-viridian.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "gameId": "black-ops-1",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Viridian · menu-family preview; exact archived build unverified. Both archived source filenames identify COD BO1 Viridian by Jimbo DEX CFW. Discord post was placed in BO2 but is explicitly corrected to BO1 in the reviewed resource; no BO2 support is inferred.",
+      "imageAlt": "Viridian by Jimbo · DEX CFW menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": true,
+      "evidence": "Both archived source filenames identify COD BO1 Viridian by Jimbo DEX CFW. Discord post was placed in BO2 but is explicitly corrected to BO1 in the reviewed resource; no BO2 support is inferred.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/lcnm3rd5a6jlvds/COD_BO1_Viridian_By_Jimbo_Sprx_%255BDEX_CFW%255D.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/b9u0koni50z9axr/COD_BO1_Viridian_By_Jimbo_Sprx_%5BDEX_CFW%5D.rar/file"
+      ]
+    },
+    "bo1-jo-milk-playground-v2-dex": {
+      "image": "/assets/images/menu-previews/ps3/original-1558985168734126090-1558985168939782174-c4b22f9ace23.webp",
+      "sha256": "c4b22f9ace23fd18136529dc3bce42d3b6c0cc20eaaeb3a0a0270cb60fb28a99",
+      "bytes": 198212,
+      "width": 640,
+      "height": 358,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-bo1-mp-jo-milk-playground-v2",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558985168734126090",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558985168734126090/1558985168939782174/Screenshot_2026-10-12_002923.png?ex=6ae91d14&is=6ae7cb94&hm=f0adbba889a835a9bcb36c8d650bfbb06864677f0106fe1904f8343ef23ed717&=&format=webp&quality=lossless&width=640&height=358",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-bo1-mp-jo-milk-playground-v2.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "gameId": "black-ops-1",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Jo-Milk's Playground V2 · menu-family preview; exact archived build unverified. Same BO1 Jo-Milk Playground V2 identity. Recovered ZIP is labelled a V2 testing build; the base DEX PKG remains a different distribution.",
+      "imageAlt": "Jo-Milk Playground V2 · DEX package menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": true,
+      "evidence": "Same BO1 Jo-Milk Playground V2 identity. Recovered ZIP is labelled a V2 testing build; the base DEX PKG remains a different distribution.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/odjv8hy5wmphec0/Jo-Milk_Playground_V2_-_%255BDEX%255D.pkg/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/y1o21qr9x6f07mz/Bo1+-+Jo-Milk's+Playground+V2.zip/file"
+      ]
+    },
+    "bo1-kebab-engine": {
+      "image": "/assets/images/menu-previews/ps3/original-1559130635019354192-1559130635480735764-df406d0045a4.webp",
+      "sha256": "df406d0045a4296288915343c370b4235a5fa0ac54ae26ab523efc5bea2f8e07",
+      "bytes": 177900,
+      "width": 640,
+      "height": 360,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-bo1-mp-kebab-engine",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1559130635019354192",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1559130635019354192/1559130635480735764/Screenshot_2026-10-12_100803.png?ex=6ae9a48e&is=6ae8530e&hm=6fac2a8f762ed14768b9d58f9ecf17d4ec4a926b4162ab7c5ebc386f4e4eea00&=&format=webp&quality=lossless&width=640&height=360",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-bo1-mp-kebab-engine.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "gameId": "black-ops-1",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Kebab Engine · menu-family preview; exact archived build unverified. Both archive/source names identify BO1 Kebab Engine. Base archive-inspected DEX/HEN variants and original requirements remain distinct.",
+      "imageAlt": "Kebab Engine BO1 menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": true,
+      "evidence": "Both archive/source names identify BO1 Kebab Engine. Base archive-inspected DEX/HEN variants and original requirements remain distinct.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/v44gj2nhygwcqov/Kebab_Engine_BO1.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/www9aqk2fcv3hkz/BO1_Kebab_Engine.rar/file"
+      ]
+    },
+    "mw3-resurgence": {
+      "image": "/assets/images/menu-previews/ps3/original-1558989307786563644-1558989307979628635-1b3257da5b82.webp",
+      "sha256": "1b3257da5b82b61d4792212c1e6dd70ec9ad89c01586926f2552f1eb4fe93959",
+      "bytes": 530232,
+      "width": 1226,
+      "height": 690,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-mw3-sprx-resurgence",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558989307786563644",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558989307786563644/1558989307979628635/Screenshot_2026-10-12_004629.png?ex=6ae920ef&is=6ae7cf6f&hm=062f9d20cd8b45cda11b76d2a58da29cd1a35aa43bb89787836a6a4ab1f01cbb&=&format=webp&quality=lossless",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-mw3-sprx-resurgence.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw3/mw3-sprx",
+      "gameId": "modern-warfare-3",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Resurgence · menu-family preview; exact archived build unverified. Same Modern Warfare 3 Resurgence SPRX family. Retain existing source still; differing source archives do not establish exact-build identity.",
+      "imageAlt": "Resurgence · Modern Warfare 3 menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Same Modern Warfare 3 Resurgence SPRX family. Retain existing source still; differing source archives do not establish exact-build identity.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/mrmhnys782fz6qu/MW3_Resurgence_Sprx.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/u7zgo5lkx44mvdr/MW3_Resurgence.rar/file"
+      ]
+    },
+    "mw2-hestia-dex": {
+      "image": "/assets/images/menu-previews/ps3/original-1558973917081632899-1558973917870428190-5b2f894fca50.webp",
+      "sha256": "5b2f894fca50a7bc21503d725b44c33b959c25d9dbfe0c898a15d8fc6486a752",
+      "bytes": 150924,
+      "width": 640,
+      "height": 360,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-mw2-hestia",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558973917081632899",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558973917081632899/1558973917870428190/image.png?ex=6ae9129a&is=6ae7c11a&hm=5d78fcfd1ebc105773fe11f41e5414fe77172f91b51c980c9bbd3a880351ac65&=&format=webp&quality=lossless&width=640&height=360",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-mw2-hestia.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "gameId": "modern-warfare-2",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Hestia · menu-family preview; exact archived build unverified. Same Modern Warfare 2 Hestia SPRX family. Base DEX distribution remains distinct from the recovered post.",
+      "imageAlt": "Hestia SPRX · DEX CFW menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Same Modern Warfare 2 Hestia SPRX family. Base DEX distribution remains distinct from the recovered post.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/x7s56h4iettqw0h/MW2_Hestia_Sprx_DEX_Sprx.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/0hz39erb38e17wa/Hestia_SPRX.rar/file"
+      ]
+    },
+    "mw2-black-ice-v2": {
+      "image": "/assets/images/menu-previews/ps3/original-1558966451027710085-1558966451233361990-b279415c61c5.webp",
+      "sha256": "b279415c61c5864464c1519c0147c3f42bf740597c315f636ad971897f653d08",
+      "bytes": 146794,
+      "width": 640,
+      "height": 361,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-mw2-black-ice-v2",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558966451027710085",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558966451027710085/1558966451233361990/Screenshot_2026-10-11_231533.png?ex=6ae90ba6&is=6ae7ba26&hm=3755390993e5ca54012c6bd98b672c3d39675a45acad8748422c70a164a03519&=&format=webp&quality=lossless&width=640&height=361",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-mw2-black-ice-v2.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-mw2/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-mw2-sprx",
+      "gameId": "modern-warfare-2",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Black Ice v2 · menu-family preview; exact archived build unverified. Both source names identify Modern Warfare 2 Black Ice V2. Separate archive keys; preserve the existing exact-source still where present.",
+      "imageAlt": "Black Ice V2 · HEN / CFW menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Both source names identify Modern Warfare 2 Black Ice V2. Separate archive keys; preserve the existing exact-source still where present.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/dv1ni3zw192loct/BlackIceV2_HEN-CFW.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/m9t3l6ppo6jo954/BlackIce_V2_SPRX.rar/file"
+      ]
+    },
+    "aw-defcon-zm-dex": {
+      "image": "/assets/images/menu-previews/ps3/original-1565086501254209576-1565086501778362538-c098df013ace.webp",
+      "sha256": "c098df013ace6177944d031d1e022097be42155205a43cef51d92a4538d401dc",
+      "bytes": 275890,
+      "width": 1234,
+      "height": 688,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-aw-defcon",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1565086501254209576",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1565086501254209576/1565086501778362538/Screenshot_2026-10-28_193346.png?ex=6ae98ea3&is=6ae83d23&hm=15dc5542e316ee0d842d728c97f8306aa4e49f089e36b36a21db3953309f001b&=&format=webp&quality=lossless",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-aw-defcon.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "gameId": "advanced-warfare",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Defcon [CFW/HEN] · menu-family preview; exact archived build unverified. Same Advanced Warfare Defcon family. Base is the DEX-only Zombies adaptation and must retain its exact mode/known broken-option caveats. Do not copy the recovered post CFW/HEN label.",
+      "imageAlt": "Defcon Zombies Host Menu · DEX only menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Same Advanced Warfare Defcon family. Base is the DEX-only Zombies adaptation and must retain its exact mode/known broken-option caveats. Do not copy the recovered post CFW/HEN label.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/h8v2pzswhkev966/COD_AW_Defcon_ZM_Sprx_Host_Menu%255BDEX-Only%255D.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://cdn.discordapp.com/attachments/1565086501254209576/1565086502289936588/AW_Defcon_SPRX.rar"
+      ]
+    },
+    "aw-salvation-hen-disc": {
+      "image": "/assets/images/menu-previews/ps3/original-1558990265384046652-1558990265887494194-486eb4569877.webp",
+      "sha256": "486eb45698776c4eaef40448bef11bb661c50a99b21cbf8aff43b3ce827cd453",
+      "bytes": 122860,
+      "width": 640,
+      "height": 362,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-aw-salvation",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558990265384046652",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558990265384046652/1558990265887494194/image.png?ex=6ae921d4&is=6ae7d054&hm=c90afa0b50795e311ba341f701ed557777a89770a3ea45da0cf52126393f436a&=&format=webp&quality=lossless&width=640&height=362",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-aw-salvation.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "gameId": "advanced-warfare",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Salvation · menu-family preview; exact archived build unverified. Same Advanced Warfare Salvation SPRX family. Base HEN disc-edition files remain separate from the recovered Salvation archive.",
+      "imageAlt": "Salvation SPRX · HEN disc editions menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Same Advanced Warfare Salvation SPRX family. Base HEN disc-edition files remain separate from the recovered Salvation archive.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/j7gyg7oiiyabvqe/Salvation_SPRX_%2528HEN%2529.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/1o35vfovlfgof2y/AW_Salvation_SPRX.rar/file"
+      ]
+    },
+    "aw-salvation-hen-digital": {
+      "image": "/assets/images/menu-previews/ps3/original-1558990265384046652-1558990265887494194-486eb4569877.webp",
+      "sha256": "486eb45698776c4eaef40448bef11bb661c50a99b21cbf8aff43b3ce827cd453",
+      "bytes": 122860,
+      "width": 640,
+      "height": 362,
+      "visuallyVerified": true,
+      "verification": "Parent visually reviewed all source-selection contact sheets and confirmed selected images decode; local SHA-256 and bytes reverified here.",
+      "sourceResourceId": "discord-ps3-aw-salvation",
+      "sourcePageUrl": "https://discord.com/channels/1528329794947776572/1558990265384046652",
+      "imageSourceUrl": "https://media.discordapp.net/attachments/1558990265384046652/1558990265887494194/image.png?ex=6ae921d4&is=6ae7d054&hm=c90afa0b50795e311ba341f701ed557777a89770a3ea45da0cf52126393f436a&=&format=webp&quality=lossless&width=640&height=362",
+      "sourceCapture": "docs/discord-ps4-ps5-raw/platforms/ps3-aw-salvation.json",
+      "targetSourceUrl": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-aw/aw-sprx",
+      "gameId": "advanced-warfare",
+      "match": "menu-family",
+      "kind": "recovered original same-game menu-family preview",
+      "caption": "Salvation · menu-family preview; exact archived build unverified. Same Advanced Warfare Salvation SPRX family. Base HEN digital-edition files remain separate from the recovered Salvation archive.",
+      "imageAlt": "Salvation SPRX · HEN digital edition menu-family preview",
+      "replaceOnlyArtworkOrMissing": true,
+      "currentlyApplicable": false,
+      "evidence": "Same Advanced Warfare Salvation SPRX family. Base HEN digital-edition files remain separate from the recovered Salvation archive.",
+      "targetDownloads": [
+        "https://www.mediafire.com/file/hzedv5ffqujt0yq/Salvation_SPRX-HEN_%255BDigitalVersion%255D.rar/file"
+      ],
+      "sourceDownloads": [
+        "https://www.mediafire.com/file/1o35vfovlfgof2y/AW_Salvation_SPRX.rar/file"
+      ]
+    }
+  },
+  "unresolved": [
+    {
+      "id": "gta-v-mizdx-eboots",
+      "name": "Mizdx GTA V 1.27 EBOOT variants",
+      "gameId": "gta-v",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "gta-v-craftysnake-v1",
+      "name": "Crafty Snake Mod Manager v1.0",
+      "gameId": "gta-v",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "gta-v-4tt4ck-v9",
+      "name": "4TT4CK SPRX v9",
+      "gameId": "gta-v",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "gta-v-tropa022-v3",
+      "name": "TROPA 022 v3",
+      "gameId": "gta-v",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "gta-v-golden",
+      "name": "Golden Mod Loader",
+      "gameId": "gta-v",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "gta-iv-shockxwave",
+      "name": "SHoCKxWAVE Mod Menu",
+      "gameId": "gta-iv",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "gta-iv-blackland",
+      "name": "Blackland Project by Jack4AU",
+      "gameId": "gta-iv",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "bo1-tyman-zombies-rtm",
+      "name": "Tyman1294 Zombies RTM Tool",
+      "gameId": "black-ops-1",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "bo1-project-safe-rtm",
+      "name": "Project Safe · Zombies / Multiplayer",
+      "gameId": "black-ops-1",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "bo2-fury-v2-hen",
+      "name": "Fury V2 · HEN",
+      "gameId": "black-ops-2",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "bo2-infarcted-v1",
+      "name": "INFARCTED V1 · HEN / CFW",
+      "gameId": "black-ops-2",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "bo2-scarz-v4-rtm",
+      "name": "ScaRzModZ Ultimate RTM Tool V4",
+      "gameId": "black-ops-2",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "bo2-efk-v2-rtm",
+      "name": "RTM Tool EFK V2 Final",
+      "gameId": "black-ops-2",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "bo2-ultimate-class-tool",
+      "name": "Ultimate Class Tool · ExIIL",
+      "gameId": "black-ops-2",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "waw-oldgenmodderz-v1",
+      "name": "OldGenModderz v1.0",
+      "gameId": "world-at-war",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "waw-trickshot-menu",
+      "name": "World at War Trickshot Menu",
+      "gameId": "world-at-war",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "waw-ofly-nightclub",
+      "name": "oFly-x Night Club",
+      "gameId": "world-at-war",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "waw-forflah123-private",
+      "name": "FORFLAH123 Private Patch",
+      "gameId": "world-at-war",
+      "reason": "No same-game, same-menu selected original found; keep accurate game artwork until its own source preview is recovered."
+    },
+    {
+      "id": "black-ops-1-dlc-regions",
+      "name": "Black Ops DLC region reference",
+      "gameId": "black-ops-1",
+      "reason": "DLC reference: game artwork is accurate; not a menu screenshot gap."
+    },
+    {
+      "id": "black-ops-2-dlc-regions",
+      "name": "Black Ops II DLC region reference",
+      "gameId": "black-ops-2",
+      "reason": "DLC reference: game artwork is accurate; not a menu screenshot gap."
+    }
+  ],
+  "summary": {
+    "proposedMappings": 19,
+    "currentlyApplicable": 7,
+    "optionalFamilyFallbacks": 12,
+    "unresolved": 20,
+    "newDownloads": 0
+  }
+}

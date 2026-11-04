@@ -1,0 +1,46 @@
+tmp/
+.pages/
+node_modules/
+.env
+.env.*
+.DS_Store
+
+# Sender ZIP retained locally and in F:; public download is a release asset.
+/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-9aab99b3337b.zip
+
+# Sender ZIP retained locally and in F:; public download is a release asset.
+/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.6.0-05eb2ae569e3.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.6.0-630bb639c32f.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.6.0-bf57d9770657.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.7.0-0c9b6de455cd.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.7.0-39f407c84929.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.8.0-a43cac98804c.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.0-8a3a74427954.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-246831ed1c7c.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-24bbed9cc369.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-24c21e77a811.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-3ee1cb95a23a.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-453ea6d091dd.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-5cd57fb1ee09.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-8b87dc630f9e.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-b5d1eecaa124.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-b9f907326150.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-cee16ad6e0df.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-d4945e8e6b17.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-e3c3cf533eff.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-2.0.0-2744970ce489.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-2.0.0-3860a0014162.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-2.0.0-4d6a3263f2c7.zip
+/downloads/helpers/console-payload-sender/console-payload-sender-2.0.0-67197d90ab00.zip
+
+/docs/.console-expansion-private-inventory/
+
+/docs/host-goldhen-current-private-inventory.json
+
+/docs/host-compact-download-inventory.json
+
+/docs/host-game-patch-file-import.json
+
+# Sender ZIP retained locally and in F:; public download is a release asset.
+/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-4642d2affd19.zip

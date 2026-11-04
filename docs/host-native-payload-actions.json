@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "source": "Existing console download catalogue and exact local file hashes. No upstream version changes or new downloads.",
+  "actions": [
+    {
+      "id": "library-ps5-ezremote-ezremote-loader-1-01-elf",
+      "label": "ezRemote Client · PS5 · Download app loader",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "Loader 1.01 / client bundle 2.18",
+      "format": "ELF",
+      "bytes": 7351176,
+      "sha256": "eda226e008efae5f14bd9e4fb0dd27ee198d1e3b525aa4ab1079e410e66f5e3c",
+      "downloadURL": "/downloads/host-payloads/catalogue/eda226e008ef/ezRemote-Loader-1.01.elf",
+      "consoleFileId": "ps5-ezremote-ezremote-loader-1-01-elf",
+      "image": "/assets/images/expansion-ps4-ps5/ps5-ezremote.jpg",
+      "imageRole": "Project preview",
+      "source": "https://github.com/cy33hc/ps5-ezremote-client",
+      "sourceURL": "https://github.com/cy33hc/ps5-ezremote-client/releases/download/2.18/ezRemote-Loader-1.01.elf",
+      "instructionsURL": "/console/ps5/apps.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Manage PS5 files and transfers with the console client. Requires websrv running on the PS5; follow the loader and client installation instructions for this release.",
+        "Manage PS5 files and transfers with the console client. Requires websrv running on the PS5; follow the loader and client installation instructions for this release.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    },
+    {
+      "id": "library-ps5-garlic",
+      "label": "PS5 Garlic SaveMgr",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "v1.14",
+      "format": "ELF",
+      "bytes": 1721560,
+      "sha256": "aaec2cb0a39e94217665652fd84fa7706f09c9f8640c07785b6a68b1711f18fc",
+      "downloadURL": "/downloads/host-payloads/catalogue/aaec2cb0a39e/garlic-savemgr.elf",
+      "consoleFileId": "ps5-garlic",
+      "image": "/assets/images/expansion-ps4-ps5/garlic.png",
+      "imageRole": "Project preview",
+      "source": "https://github.com/earthonion/garlic-savemgr",
+      "sourceURL": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.14/garlic-savemgr.elf",
+      "instructionsURL": "/console/ps5/apps.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Back up and browse PS5 saves through a browser interface. Load the ELF with elfldr, then open the console’s port 8082 from a device on your local network.",
+        "Back up and browse PS5 saves through a browser interface. Load the ELF with elfldr, then open the console’s port 8082 from a device on your local network.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    },
+    {
+      "id": "library-ps5-78aec0f39465-etahen-2-5b-bin",
+      "label": "PS5 etaHEN 2.5B",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "2.5B",
+      "format": "BIN",
+      "bytes": 4678728,
+      "sha256": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e",
+      "downloadURL": "/downloads/archive/78aec0f39465/etaHEN-2.5B.bin",
+      "consoleFileId": "ps5-78aec0f39465-etahen-2-5b-bin",
+      "image": "/assets/images/console-software/etahen.jpg",
+      "imageRole": "Project preview",
+      "source": "https://github.com/etaHEN/etaHEN/releases",
+      "sourceURL": "/downloads/archive/78aec0f39465/etaHEN-2.5B.bin",
+      "instructionsURL": "/console/ps5/payloads.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "PS5 homebrew enabler. Use the existing pinned 2.5B build only on firmware supported by its release.",
+        "PS5 homebrew enabler. Use the existing pinned 2.5B build only on firmware supported by its release.",
+        "Preserve this release’s BIN filename and use its documented initial loader or native Payload Manager workflow. A generic direct website loading route is not enabled for this BIN."
+      ],
+      "run": null
+    },
+    {
+      "id": "library-ps5-640d68a152b5-ps5sx2installer-elf",
+      "label": "PS5SX2 installer",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "vk-285-182",
+      "format": "ELF",
+      "bytes": 1163520,
+      "sha256": "efdec4f8d968ef4a7c1880e75d26b96d212a042a6c208de46f0a859609f6224c",
+      "downloadURL": "/downloads/archive/640d68a152b5/PS5SX2Installer.elf",
+      "consoleFileId": "ps5-640d68a152b5-ps5sx2installer-elf",
+      "image": "/assets/images/emulators/PCSX2.png",
+      "imageRole": "Project preview",
+      "source": "https://github.com/Swordpdf/PS5SX2/releases",
+      "sourceURL": "/downloads/archive/640d68a152b5/PS5SX2Installer.elf",
+      "instructionsURL": "/console/ps5/emulators.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    },
+    {
+      "id": "library-ps5-640d68a152b5-ps5sxhelper-elf",
+      "label": "PS5SX2 helper",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "vk-285-182",
+      "format": "ELF",
+      "bytes": 2439560,
+      "sha256": "fece3ee9c7e035c51319af018ae6865f0bf5db182074dafd0502c3bb2d5ee7d2",
+      "downloadURL": "/downloads/archive/640d68a152b5/PS5SXHelper.elf",
+      "consoleFileId": "ps5-640d68a152b5-ps5sxhelper-elf",
+      "image": "/assets/images/emulators/PCSX2.png",
+      "imageRole": "Project preview",
+      "source": "https://github.com/Swordpdf/PS5SX2/releases",
+      "sourceURL": "/downloads/archive/640d68a152b5/PS5SXHelper.elf",
+      "instructionsURL": "/console/ps5/emulators.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    },
+    {
+      "id": "library-ps5-3a4d278d7ff5-ps5x360-helper-elf",
+      "label": "PS5X360 helper",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "v1.0.2",
+      "format": "ELF",
+      "bytes": 1295832,
+      "sha256": "4a0250329e63b376f620511c4b6e2c6a2eb959e056824abde27947bf53f07b59",
+      "downloadURL": "/downloads/archive/3a4d278d7ff5/PS5X360-Helper.elf",
+      "consoleFileId": "ps5-3a4d278d7ff5-ps5x360-helper-elf",
+      "image": "/assets/images/emulators/Xenia.png",
+      "imageRole": "Project preview",
+      "source": "https://github.com/BrinooTk/PS5X360/releases",
+      "sourceURL": "/downloads/archive/3a4d278d7ff5/PS5X360-Helper.elf",
+      "instructionsURL": "/console/ps5/emulators.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    },
+    {
+      "id": "library-ps5-7d1b737c85a3-helper-elf",
+      "label": "PS5 XPSemu helper",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "Alpha-2.1",
+      "format": "ELF",
+      "bytes": 111032,
+      "sha256": "31c8a3479937e310f758d36d87c937c91ae942921fa4645473b3d228a7d88959",
+      "downloadURL": "/downloads/archive/7d1b737c85a3/helper.elf",
+      "consoleFileId": "ps5-7d1b737c85a3-helper-elf",
+      "image": "/assets/images/consoles/xbox.jpg",
+      "imageRole": "Project preview",
+      "source": "https://github.com/ZiZc3/XPSemu/releases",
+      "sourceURL": "/downloads/archive/7d1b737c85a3/helper.elf",
+      "instructionsURL": "/console/ps5/emulators.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    },
+    {
+      "id": "library-ps5-theme-stop-elf",
+      "label": "PS5 Themes · ps5-theme-stop.elf",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "1.80",
+      "format": "ELF",
+      "bytes": 156288,
+      "sha256": "90a1ee926eba4277e1ed2827191151872e4d113de0c566614db51d1b4506230c",
+      "downloadURL": "/downloads/ps4-ps5/ps5-theme-stop-elf/ps5-theme-stop.elf",
+      "consoleFileId": "ps5-theme-stop-elf",
+      "image": "/assets/images/ps4-ps5/customization.svg",
+      "imageRole": "Project preview",
+      "source": "https://github.com/Blaze414/ps5-theme/releases/download/v1.80/ps5-theme-stop.elf",
+      "sourceURL": "/downloads/ps4-ps5/ps5-theme-stop-elf/ps5-theme-stop.elf",
+      "instructionsURL": "/console/ps5/themes.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager.",
+        "ELF. Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "firmwareMax": "13.60"
+    },
+    {
+      "id": "library-ps5-theme--elf",
+      "label": "PS5 Themes · ps5-theme.elf",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "1.80",
+      "format": "ELF",
+      "bytes": 1284704,
+      "sha256": "e27473f0f5d3a9c544ed075f3f0a0e831377e0ab5e6316dce81ad732a99c04eb",
+      "downloadURL": "/downloads/ps4-ps5/ps5-theme--elf/ps5-theme.elf",
+      "consoleFileId": "ps5-theme--elf",
+      "image": "/assets/images/ps4-ps5/customization.svg",
+      "imageRole": "Project preview",
+      "source": "https://github.com/Blaze414/ps5-theme/releases/download/v1.80/ps5-theme.elf",
+      "sourceURL": "/downloads/ps4-ps5/ps5-theme--elf/ps5-theme.elf",
+      "instructionsURL": "/console/ps5/themes.html",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager.",
+        "ELF. Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "firmwareMax": "13.60"
+    },
+    {
+      "id": "library-fps-ps5-patch-system-38108724867",
+      "label": "PS5 PS Patch System loader",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "38108724867",
+      "format": "ELF",
+      "bytes": 1794904,
+      "sha256": "10d8636e1b0f07f3f046aadb5c050a24ed9b0fae3585ec29a1ecabec07035589",
+      "downloadURL": "/downloads/ps4-ps5/fps-ps5-patch-system-38108724867/patch-bundle-loader-prospero.elf",
+      "consoleFileId": "fps-ps5-patch-system-38108724867",
+      "image": "/assets/images/game-patches/ps-patch-system-ps5.svg",
+      "imageRole": "Project preview",
+      "source": "https://github.com/illusionyy/ps-patch-system/releases/download/38108724867/patch-bundle-loader-prospero.elf",
+      "sourceURL": "/downloads/ps4-ps5/fps-ps5-patch-system-38108724867/patch-bundle-loader-prospero.elf",
+      "instructionsURL": "/console/ps5/game-patches.html#setup",
+      "firmwares": [
+        "3.00–12.70"
+      ],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "PS5 ELF engine. Project-confirmed firmware range 3.00–12.70; requires a compatible elfldr on 9021. This does not establish support for 13.xx.",
+        "PS5 ELF engine. Project-confirmed firmware range 3.00–12.70; requires a compatible elfldr on 9021. This does not establish support for 13.xx.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    },
+    {
+      "id": "library-ps5-recompstore-installer-2-7-4",
+      "label": "PS5 RecompStore · installer ELF",
+      "platform": "ps5",
+      "category": "payloads",
+      "categories": [
+        "payloads",
+        "tools"
+      ],
+      "version": "v2.7.4",
+      "format": "ELF",
+      "bytes": 26794760,
+      "sha256": "3a20194226cf5e1ee66a5a67d81610c1ac9bf82deee7b791c752d0e7d6202d5c",
+      "downloadURL": "/downloads/host-payloads/catalogue/3a20194226cf/RecompStore-Installer.elf",
+      "consoleFileId": "ps5-recompstore-installer-2-7-4",
+      "image": "/assets/images/console-software/store/ps5-store-recompstore-2-7-4.png",
+      "imageRole": "Project preview",
+      "source": "https://github.com/elripalda/RecompStore/releases/tag/v2.7.4",
+      "sourceURL": "https://github.com/elripalda/RecompStore/releases/download/v2.7.4/RecompStore-Installer.elf",
+      "instructionsURL": "/console/ps5/apps.html#ps5-recompstore-installer-2-7-4",
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "requirements": [
+        "Native PS5 app, PPSA92000. Publisher requires kstuff, an ELF loader on TCP 9021 and ShadowMountPlus 1.7 Beta 5 or newer. No firmware range is inferred from these prerequisites.",
+        "Standalone publisher installer for the matching PS5 store, separate from the manual app ZIP.",
+        "Requires a compatible active PS5 ELF loader on TCP 9021. This file is an executable payload, not a game package. Preserve its release-specific prerequisites."
+      ],
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      }
+    }
+  ]
+}

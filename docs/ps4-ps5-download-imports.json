@@ -1,0 +1,2338 @@
+{
+  "jobs": [
+    {
+      "id": "mwr-mag-menu-v1",
+      "title": "MAG Menu v1 and multi-COD injector",
+      "game": "Modern Warfare Remastered",
+      "group": "Injectors",
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "version": "v1 (post title)",
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/mwr-mag-menu-v1.json",
+      "urlIndex": 0,
+      "importPath": "docs/discord-ps4-ps5-raw/review/mwr-mag-menu-v1/fd8c4b7ed9ced54b.zip",
+      "filename": "MAG_INJECTOR_MAGUPDATE21102026.zip",
+      "expectedSha256": "fd8c4b7ed9ced54bbe71d42cd6b942915bc1f453d1c868f3f060f2c6c4c1ac28",
+      "pages": [
+        "console/mods/ps4/call-of-duty/modern-warfare-remastered/index.html"
+      ]
+    },
+    {
+      "id": "mwr-mag-menu-v1-image",
+      "resource": "mwr-mag-menu-v1",
+      "type": "image",
+      "title": "MAG Menu v1 original screenshot",
+      "game": "Modern Warfare Remastered",
+      "rawFile": "docs/discord-ps4-ps5-raw/mwr-mag-menu-v1-image.txt"
+    },
+    {
+      "id": "aw-matrixmods",
+      "title": "MatrixMods Advanced Warfare",
+      "game": "Advanced Warfare",
+      "group": "Shared",
+      "rawJson": "docs/discord-ps4-ps5-raw/aw-matrixmods.json",
+      "urlIndex": 0,
+      "filename": "MatrixMenusPS4.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/advanced-warfare/index.html"
+      ]
+    },
+    {
+      "id": "aw-matrixmods-image",
+      "resource": "aw-matrixmods",
+      "type": "image",
+      "title": "MatrixMods Advanced Warfare original screenshot",
+      "game": "Advanced Warfare",
+      "rawFile": "docs/discord-ps4-ps5-raw/aw-matrixmods-image.txt"
+    },
+    {
+      "id": "aw-appendum-1-23",
+      "title": "Appendum (1.23 post label)",
+      "game": "Advanced Warfare",
+      "group": "Shared",
+      "version": "1.23 (post label)",
+      "rawJson": "docs/discord-ps4-ps5-raw/aw-appendum-1-23.json",
+      "urlIndex": 0,
+      "filename": "AppendumPS4AW.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/advanced-warfare/index.html"
+      ]
+    },
+    {
+      "id": "aw-appendum-1-23-image",
+      "resource": "aw-appendum-1-23",
+      "type": "image",
+      "title": "Appendum original screenshot",
+      "game": "Advanced Warfare",
+      "rawFile": "docs/discord-ps4-ps5-raw/aw-appendum-1-23-image.txt"
+    },
+    {
+      "id": "mwr-matrixmods",
+      "title": "MatrixMods Modern Warfare Remastered",
+      "game": "Modern Warfare Remastered",
+      "group": "Shared",
+      "rawJson": "docs/discord-ps4-ps5-raw/mwr-matrixmods.json",
+      "urlIndex": 0,
+      "filename": "MatrixMenusPS4.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/modern-warfare-remastered/index.html"
+      ]
+    },
+    {
+      "id": "mwr-matrixmods-image",
+      "resource": "mwr-matrixmods",
+      "type": "image",
+      "title": "MatrixMods MWR original screenshot",
+      "game": "Modern Warfare Remastered",
+      "rawFile": "docs/discord-ps4-ps5-raw/mwr-matrixmods-image.txt"
+    },
+    {
+      "id": "mw2r-ter152",
+      "title": "TER152 MW2 Campaign Remastered",
+      "game": "Modern Warfare 2 Campaign Remastered",
+      "group": "Campaign",
+      "rawJson": "docs/discord-ps4-ps5-raw/mw2r-ter152.json",
+      "urlIndex": 0,
+      "filename": "MW2CR PS4 By TER152.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/modern-warfare-2-remastered/index.html"
+      ]
+    },
+    {
+      "id": "mw2r-ter152-image",
+      "resource": "mw2r-ter152",
+      "type": "image",
+      "title": "TER152 MW2R original screenshot",
+      "game": "Modern Warfare 2 Campaign Remastered",
+      "rawFile": "docs/discord-ps4-ps5-raw/mw2r-ter152-image.txt"
+    },
+    {
+      "id": "ghosts-silentshadaw-v3",
+      "title": "SilentShadaw v3",
+      "game": "Ghosts",
+      "group": "Shared",
+      "version": "v3 (post title)",
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/ghosts-silentshadaw-v3.json",
+      "urlIndex": 0,
+      "pages": [
+        "console/mods/ps4/call-of-duty/ghosts/index.html"
+      ]
+    },
+    {
+      "id": "ghosts-silentshadaw-v3-image",
+      "resource": "ghosts-silentshadaw-v3",
+      "type": "image",
+      "title": "SilentShadaw v3 original screenshot",
+      "game": "Ghosts",
+      "version": "v3 (post title)",
+      "rawFile": "docs/discord-ps4-ps5-raw/ghosts-silentshadaw-v3-image.txt"
+    },
+    {
+      "id": "ghosts-matrixmods",
+      "title": "MatrixMods Ghosts",
+      "game": "Ghosts",
+      "group": "Shared",
+      "rawJson": "docs/discord-ps4-ps5-raw/ghosts-matrixmods.json",
+      "urlIndex": 0,
+      "filename": "MatrixMenusPS4.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/ghosts/index.html"
+      ]
+    },
+    {
+      "id": "ghosts-matrixmods-image",
+      "resource": "ghosts-matrixmods",
+      "type": "image",
+      "title": "MatrixMods Ghosts original screenshot",
+      "game": "Ghosts",
+      "rawFile": "docs/discord-ps4-ps5-raw/ghosts-matrixmods-image.txt"
+    },
+    {
+      "id": "ghosts-silentshadaw-v2",
+      "title": "SilentShadaw v2 (post title)",
+      "game": "Ghosts",
+      "group": "Shared",
+      "version": "v2 (post title)",
+      "rawJson": "docs/discord-ps4-ps5-raw/ghosts-silentshadaw-v2.json",
+      "urlIndex": 0,
+      "filename": "SilentShadowV3PS4.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/ghosts/index.html"
+      ]
+    },
+    {
+      "id": "ghosts-silentshadaw-v2-image",
+      "resource": "ghosts-silentshadaw-v2",
+      "type": "image",
+      "title": "SilentShadaw v2 post original screenshot",
+      "game": "Ghosts",
+      "version": "v2 (post title)",
+      "rawFile": "docs/discord-ps4-ps5-raw/ghosts-silentshadaw-v2-image.txt"
+    },
+    {
+      "id": "bo1-bo2-ps4debug-bin",
+      "resource": "bo1-bo2-payload-injector-debug",
+      "title": "ps4debug supplied payload",
+      "game": "Black Ops 1 and Black Ops 2",
+      "group": "Payloads",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-bo2-payload-injector-debug.json",
+      "urlIndex": 0,
+      "filename": "ps4debug.bin",
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html",
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo1-bo2-payload-injector-tool-v3-6",
+      "resource": "bo1-bo2-payload-injector-debug",
+      "title": "PS4 Payload Injector Tool",
+      "kind": "mega",
+      "game": "Black Ops 1 and Black Ops 2",
+      "group": "Payload Injectors",
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "version": "v3.6 (archive filename)",
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-bo2-payload-injector-debug.json",
+      "urlIndex": 1,
+      "importPath": "docs/discord-ps4-ps5-raw/mega-staging/bo1-bo2-payload-injector/PS4-Payload-Injector-Tool-3.6 Updated.zip",
+      "filename": "PS4-Payload-Injector-Tool-3.6 Updated.zip",
+      "expectedSha256": "1b0bddaefba119b50dac0f21709f9e79f6d00ceef00b2ae25470c3a21c21647c",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html",
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo1-bo2-payload-injector-guide-video",
+      "resource": "bo1-bo2-payload-injector-debug",
+      "type": "video",
+      "title": "Payload Injector original setup video",
+      "game": "Black Ops 1 and Black Ops 2",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-bo2-payload-injector-debug.json",
+      "urlIndex": 3,
+      "maxBytes": 83886080
+    },
+    {
+      "id": "bo2-ials96-v1-2-0",
+      "title": "ials96 BO2",
+      "kind": "github-release",
+      "game": "Black Ops 2",
+      "group": "RTM Tools",
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "version": "v1.2.0",
+      "mirror": false,
+      "url": "https://github.com/ials96/ials96-updates/releases/download/v1.2.0/ials96-BO2-1.2.0-Standalone.zip",
+      "filename": "ials96-BO2-1.2.0-Standalone.zip",
+      "expectedSha256": "1206d1e0b3ffb85283e27912edf7d7fca382ba911b01a2fb516849550f62614f",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo1-bo2-hydra-v1-0-0",
+      "title": "HYDRA v1.0.0 (source post)",
+      "kind": "github-release",
+      "game": "Black Ops 1 and Black Ops 2",
+      "group": "RTM Tools",
+      "version": "v1.0.0",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-bo2-hydra-v1-0-0.json",
+      "urlIndex": 0,
+      "unavailableReason": "Pinned v1.0.0 is absent from current official releases; v1.0.0 tag returned HTTP 404 and none of the v2.2.0/v2.3.0 official asset checksums match the source-post SHA-256. No substitute downloaded.",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html",
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo1-bo2-hydra-v1-0-0-image",
+      "resource": "bo1-bo2-hydra-v1-0-0",
+      "type": "image",
+      "title": "HYDRA v1.0.0 original screenshot",
+      "game": "Black Ops 1 and Black Ops 2",
+      "version": "v1.0.0",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-bo2-hydra-v1-0-0-image.txt"
+    },
+    {
+      "id": "bo2-relay-tutorial-image",
+      "resource": "bo2-relay-tutorial",
+      "type": "image",
+      "title": "BO2 Relay tutorial original screenshot",
+      "game": "Black Ops 2",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo2-relay-tutorial-image.txt"
+    },
+    {
+      "id": "bo1-miles-rtm",
+      "title": "Miles RTM Tool",
+      "game": "Black Ops 1",
+      "group": "RTM Tools",
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-miles-rtm.json",
+      "urlIndex": 0,
+      "filename": "TOOL_UNLOCK_ALL_+_GOD_MOD_BO1.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html"
+      ]
+    },
+    {
+      "id": "bo1-miles-rtm-image",
+      "resource": "bo1-miles-rtm",
+      "type": "image",
+      "title": "Miles RTM original screenshot",
+      "game": "Black Ops 1",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-miles-rtm-image.txt"
+    },
+    {
+      "id": "bo1-modded-files",
+      "title": "BO1 Modded Files",
+      "game": "Black Ops 1",
+      "group": "CFG",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-modded-files.json",
+      "urlIndex": 0,
+      "filename": "zombies.zip",
+      "expectedSha256": "6c87130f89136e4c95a7d8384709adee5b4e507f6eb05809dc04fe10fc4d538b",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html"
+      ]
+    },
+    {
+      "id": "bo1-modded-files-image",
+      "resource": "bo1-modded-files",
+      "type": "image",
+      "title": "BO1 Modded Files original screenshot",
+      "game": "Black Ops 1",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-modded-files-image.txt"
+    },
+    {
+      "id": "bo1-modded-files-controls-image",
+      "resource": "bo1-modded-files",
+      "type": "image",
+      "title": "BO1 Modded Files original controller guide",
+      "game": "Black Ops 1",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-modded-files-controls-image.txt"
+    },
+    {
+      "id": "bo1-relief-cfg",
+      "title": "Relief CFG Zombie and Multiplayer",
+      "game": "Black Ops 1",
+      "group": "CFG",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-relief-cfg.json",
+      "urlIndex": 0,
+      "filename": "Relief_Zombie_&_MP_CFG.zip",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html"
+      ]
+    },
+    {
+      "id": "bo1-relief-cfg-image",
+      "resource": "bo1-relief-cfg",
+      "type": "image",
+      "title": "Relief CFG original screenshot",
+      "game": "Black Ops 1",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-relief-cfg-image.txt",
+      "filename": "bo1-relief-cfg.jpg"
+    },
+    {
+      "id": "bo4-lucy-v1-5-0-image",
+      "resource": "bo4-lucy",
+      "type": "image",
+      "title": "Lucy v1.5.0 original screenshot",
+      "game": "Black Ops 4",
+      "version": "v1.5.0",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo4-lucy-v1-5-0-image.txt",
+      "filename": "bo4-lucy-v1-5-0.png"
+    },
+    {
+      "id": "bo4-atian",
+      "title": "Atian",
+      "game": "Black Ops 4",
+      "group": "Shared",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo4-atian.json",
+      "urlIndex": 0,
+      "filename": "BlackOps4_atianmenu_ps4all_GM.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-4/index.html"
+      ]
+    },
+    {
+      "id": "bo4-atian-image",
+      "resource": "bo4-atian",
+      "type": "image",
+      "title": "Atian original screenshot",
+      "game": "Black Ops 4",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo4-atian-image.txt",
+      "filename": "bo4-atian.png"
+    },
+    {
+      "id": "bo4-b33",
+      "title": "B33",
+      "game": "Black Ops 4",
+      "group": "Shared",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo4-b33.json",
+      "urlIndex": 0,
+      "filename": "BO420PS420B3320EXP201.2620EU.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-4/index.html"
+      ]
+    },
+    {
+      "id": "bo4-lucy-v1-5-0",
+      "resource": "bo4-lucy",
+      "title": "Lucy Menu PS4 Edition",
+      "game": "Black Ops 4",
+      "group": "Shared",
+      "version": "v1.5.0",
+      "url": "https://github.com/AuroraDoesCode/BO4-Lucy-Menu/releases/download/v1.5.0/BO4-Lucy-Menu-PS4-Edition.gscc",
+      "filename": "BO4-Lucy-Menu-PS4-Edition.gscc",
+      "expectedSha256": "459d90ad3bd3ecd00c0da60586e09b77945999e2ec4575280374a71917c3dd00",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-4/index.html"
+      ]
+    },
+    {
+      "id": "bo2-jiggy-v4-5-image",
+      "resource": "bo2-jiggy-v4-5",
+      "type": "image",
+      "title": "Jiggy v4.5 original screenshot",
+      "game": "Black Ops 2",
+      "version": "v4.5 (post title)",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo2-jiggy-v4-5-image.txt",
+      "filename": "bo2-jiggy-v4-5.png"
+    },
+    {
+      "id": "bo2-volt-image",
+      "resource": "bo2-volt",
+      "type": "image",
+      "title": "VOLT original screenshot",
+      "game": "Black Ops 2",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo2-volt-image.txt",
+      "filename": "bo2-volt.png"
+    },
+    {
+      "id": "bo2-baguette-image",
+      "resource": "bo2-baguette",
+      "type": "image",
+      "title": "Baguette original screenshot",
+      "game": "Black Ops 2",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo2-baguette-image.txt",
+      "filename": "bo2-baguette.jpg"
+    },
+    {
+      "id": "bo2-royal-injector-image",
+      "resource": "bo2-royal-injector",
+      "type": "image",
+      "title": "Royal Menu and Injector original screenshot",
+      "game": "Black Ops 2",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo2-royal-injector-image.txt",
+      "filename": "bo2-royal-injector.png"
+    },
+    {
+      "id": "bo2-blazed-v2-image",
+      "resource": "bo2-blazed-v2",
+      "type": "image",
+      "title": "BlazeD v2 original screenshot",
+      "game": "Black Ops 2",
+      "version": "v2 (post title)",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo2-blazed-v2-image.txt",
+      "filename": "bo2-blazed-v2.png"
+    },
+    {
+      "id": "bo2-vengeance-image",
+      "resource": "bo2-vengeance",
+      "type": "image",
+      "title": "Vengeance v2 original screenshot",
+      "game": "Black Ops 2",
+      "version": "v2 (post title)",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo2-vengeance-image.txt",
+      "filename": "bo2-vengeance.jpg"
+    },
+    {
+      "id": "bo2-baguette",
+      "title": "Baguette off host ported for ps4",
+      "game": "Black Ops 2",
+      "group": "Shared",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo2-baguette.json",
+      "urlIndex": 0,
+      "filename": "Baguette_SPRX_PS4_By_Zeem.zip",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo2-volt",
+      "title": "VOLT PC TO PSN RTM AIO TOOL RELAY",
+      "game": "Black Ops 2",
+      "group": "RTM Tools",
+      "url": "https://gofile.io/d/xycQRzqX",
+      "unavailableReason": "GoFile anonymous-session API returned HTTP 200, but public folder contents API returned HTTP 401 on 2026-11-02; no files downloaded.",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo2-blazed-v2",
+      "title": "BlazeD v2",
+      "game": "Black Ops 2",
+      "group": "Shared",
+      "version": "v2 (forum card)",
+      "url": "https://www.mediafire.com/file/lv4s02mw5js308f/PS4_BO2_GSC_BlazeD_v2.rar/file",
+      "filename": "PS4_BO2_GSC_BlazeD_v2.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo2-vengeance",
+      "title": "Vengeance v2",
+      "game": "Black Ops 2",
+      "group": "Shared",
+      "version": "v2 (post title)",
+      "url": "https://www.mediafire.com/file/4kmwp0r3vhqqqhc/PS_Zombies_Menu.zip/file",
+      "filename": "PS_Zombies_Menu.zip",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo2-jiggy-v4-5",
+      "title": "Jiggy v4.5",
+      "game": "Black Ops 2",
+      "group": "Shared",
+      "version": "v4.5 (forum card)",
+      "url": "https://www.mediafire.com/file/nann219um2mn4u7/extract_to_root.zip/file",
+      "filename": "extract_to_root.zip",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo2-spomen-win-v1-5-0",
+      "resource": "bo2-royal-injector",
+      "title": "SPOMEN Royal Menu and Injector",
+      "game": "Black Ops 2",
+      "group": "Injectors",
+      "version": "v1.5.0",
+      "url": "https://github.com/aban-waleed/SPOMEN/releases/download/v1.5.0/SPOMEN-v1.5.0-win-x64.zip",
+      "filename": "SPOMEN-v1.5.0-win-x64.zip",
+      "expectedSha256": "d3acababe201f505f08bfbc4e325218bedf9892e5dee041f8e674611a9112e61",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo1-purple-kush-v4-image",
+      "resource": "bo1-purple-kush-v4",
+      "type": "image",
+      "title": "Purple Kush v4 original screenshot",
+      "game": "Black Ops 1",
+      "version": "v4 (post title)",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-purple-kush-v4-image.txt",
+      "filename": "bo1-purple-kush-v4.jpg"
+    },
+    {
+      "id": "bo1-purple-kush-v4",
+      "title": "Purple Kush v4",
+      "game": "Black Ops 1",
+      "group": "Shared",
+      "version": "v4 (post title)",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-purple-kush-v4-download.txt",
+      "filename": "IProfamily_black_Ops_Menu_Beta_Ps4_Updated.zip",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html"
+      ]
+    },
+    {
+      "id": "bo1-bo2-gsc-injector-prx",
+      "resource": "bo1-bo2-gsc-injector",
+      "title": "GSC Injector BO1 and BO2",
+      "game": "Black Ops 1 and Black Ops 2",
+      "group": "Shared",
+      "version": "v1.0",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-bo2-gsc-injector-prx-download.txt",
+      "filename": "gsc2520injector.prx",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html",
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo1-bo2-gsc-injector-pack",
+      "resource": "bo1-bo2-gsc-injector",
+      "title": "GSC Injector BO1 and BO2",
+      "game": "Black Ops 1 and Black Ops 2",
+      "group": "Shared",
+      "version": "v1.0",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-bo2-gsc-injector-pack-download.txt",
+      "filename": "place20me20in20data-GoldHENorETA.rar",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html",
+        "console/mods/ps4/call-of-duty/black-ops-2/index.html"
+      ]
+    },
+    {
+      "id": "bo1-encore-v8",
+      "title": "EnCoReV8",
+      "game": "Black Ops 1",
+      "group": "Multiplayer and Zombies",
+      "version": "v8",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-encore-v8.txt",
+      "filename": "BO1 MP + ZM Menus.zip",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html"
+      ]
+    },
+    {
+      "id": "bo1-discarded-v3",
+      "title": "Discarded v3 Beta",
+      "game": "Black Ops 1",
+      "group": "Zombies",
+      "version": "v3 Beta",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-discarded-v3.txt",
+      "filename": "Black Ops Zombies Discarded v3 Beta Ported By killhitman40.zip",
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html"
+      ]
+    },
+    {
+      "id": "bo1-encore-v8-image",
+      "resource": "bo1-encore-v8",
+      "type": "image",
+      "title": "EnCoReV8 original screenshot",
+      "game": "Black Ops 1",
+      "version": "v8",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-encore-v8-image.txt",
+      "filename": "bo1-encore-v8.png"
+    },
+    {
+      "id": "bo1-discarded-v3-image",
+      "resource": "bo1-discarded-v3",
+      "type": "image",
+      "title": "Discarded v3 Beta original screenshot",
+      "game": "Black Ops 1",
+      "version": "v3 Beta",
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-discarded-v3-image.txt",
+      "filename": "bo1-discarded-v3.png"
+    },
+    {
+      "id": "gta5-beach-1-56",
+      "title": "Beach 1.56",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.56"
+      ],
+      "project": "Beach 1.56",
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-beach-1-56.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-1-57",
+      "title": "Beach 1.57",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.57"
+      ],
+      "project": "Beach 1.57",
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-beach-1-57.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-explosive-1-57",
+      "title": "Explosive 1.57",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.57"
+      ],
+      "project": "Explosive 1.57",
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-explosive-1-57.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-expulsion-v5-1-57",
+      "title": "Expulsion V5.0",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.57"
+      ],
+      "project": "Expulsion V5.0",
+      "version": "v5.0",
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-expulsion-v5-1-57.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-lotus-1-27",
+      "title": "Lotus",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.27"
+      ],
+      "project": "Lotus",
+      "version": "1.03 (filename)",
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-lotus-1-27.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-oxagon-1-56",
+      "title": "Oxagon",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.56"
+      ],
+      "project": "Oxagon",
+      "version": "v1.0",
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-oxagon-1-56.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-ozark-1-56",
+      "title": "Ozark 1.56",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.56"
+      ],
+      "project": "Ozark 1.56",
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-ozark-1-56.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-ozark-1-57",
+      "title": "Ozark 1.57",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.57"
+      ],
+      "project": "Ozark 1.57",
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-ozark-1-57.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-scorpion-v1-2b",
+      "title": "Scorpion",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Scorpion",
+      "version": "v1.2b",
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-scorpion-v1-2b.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-serendipity-1-57",
+      "title": "Serendipity 1.57",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.57"
+      ],
+      "project": "Serendipity 1.57",
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-serendipity-1-57.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-velora-1-56",
+      "title": "Velora 1.56",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.56"
+      ],
+      "project": "Velora 1.56",
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-velora-1-56.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-velora-1-57",
+      "title": "Velora 1.57 post",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.57"
+      ],
+      "project": "Velora 1.57 post",
+      "version": "1.4 (archive filename)",
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-velora-1-57.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-wildemodz-1-27",
+      "title": "WildeModz",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.27"
+      ],
+      "project": "WildeModz",
+      "version": "1.1 (filename)",
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-wildemodz-1-27.json",
+      "urlIndex": 0,
+      "maxBytes": 67108864,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beta-rebranded",
+      "title": "PS4 rebranded beta test pack",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Beta"
+      ],
+      "project": "Rebranded beta test pack",
+      "version": "045 TEST (filename)",
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-beta-rebranded.json",
+      "urlIndex": 0,
+      "importPath": "docs/discord-ps4-ps5-raw/review/gta5-beta-rebranded/cdbaa2ac40e26d17.zip",
+      "filename": "2TAKE1_PS4_BETA_045_TEST.zip",
+      "expectedSha256": "cdbaa2ac40e26d17a3f8d3d9d9696f1937677c9d76650b6149de5fde1dbc8d8a",
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-cyprus-1-53",
+      "resource": "gta5-cyprus",
+      "title": "Cyprus LE 1.53",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.53"
+      ],
+      "project": "Cyprus LE",
+      "version": "GTA V 1.53 (source folder)",
+      "url": "https://www.mediafire.com/file/x5oh4hl9ajb36zj/CyprusMenu.prx/file",
+      "filename": "CyprusMenu.prx",
+      "expectedBytes": 823786,
+      "maxBytes": 4194304,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-cyprus-1-54",
+      "resource": "gta5-cyprus",
+      "title": "Cyprus LE 1.54",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.54"
+      ],
+      "project": "Cyprus LE",
+      "version": "GTA V 1.54 (source folder)",
+      "url": "https://www.mediafire.com/file/f291wya1cnyt8ia/CyprusMenu.prx/file",
+      "filename": "CyprusMenu.prx",
+      "expectedBytes": 725358,
+      "maxBytes": 4194304,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-cyprus-1-55",
+      "resource": "gta5-cyprus",
+      "title": "Cyprus LE 1.55",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.55"
+      ],
+      "project": "Cyprus LE",
+      "version": "GTA V 1.55 (source folder)",
+      "url": "https://www.mediafire.com/file/8svy6p9bbu9z9e7/CyprusMenu.prx/file",
+      "filename": "CyprusMenu.prx",
+      "expectedBytes": 725038,
+      "maxBytes": 4194304,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-cyprus-1-56",
+      "resource": "gta5-cyprus",
+      "title": "Cyprus LE 1.56",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.56"
+      ],
+      "project": "Cyprus LE",
+      "version": "GTA V 1.56 (source folder)",
+      "url": "https://www.mediafire.com/file/m6waack9a13u41t/CyprusMenu.prx/file",
+      "filename": "CyprusMenu.prx",
+      "expectedBytes": 724382,
+      "maxBytes": 4194304,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-cyprus-1-57",
+      "resource": "gta5-cyprus",
+      "title": "Cyprus LE 1.57",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.57"
+      ],
+      "project": "Cyprus LE",
+      "version": "GTA V 1.57 (source folder)",
+      "url": "https://www.mediafire.com/file/5wc7w9lrdcy5ysd/CyprusMenu.prx/file",
+      "filename": "CyprusMenu.prx",
+      "expectedBytes": 724286,
+      "maxBytes": 4194304,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-gods-blessing-source-1-56",
+      "resource": "gta5-gods-blessing-source",
+      "title": "Gods Blessing source 1.56",
+      "kind": "source-code",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.56"
+      ],
+      "project": "Gods Blessing",
+      "archiveRole": [
+        "Source Code"
+      ],
+      "version": "GTA V 1.56 (source post)",
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-gods-blessing-source.json",
+      "urlIndex": 0,
+      "filename": "gtav_modmenu_156.zip",
+      "expectedBytes": 47878354,
+      "maxBytes": 67108864,
+      "pages": [
+        "source-codes/games/gta5/ps4.html"
+      ],
+      "publication": "private-review"
+    },
+    {
+      "id": "gta5-beach-1-56-image",
+      "resource": "gta5-beach-1-56",
+      "type": "image",
+      "title": "Beach 1.56 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-beach-1-56-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-beach-1-57-image",
+      "resource": "gta5-beach-1-57",
+      "type": "image",
+      "title": "Beach 1.57 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-beach-1-57-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-beach-legacy-image",
+      "resource": "gta5-beach-legacy",
+      "type": "image",
+      "title": "Beach 1.47, 1.48, 1.49, 1.50, 1.51 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-beach-legacy-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-cyprus-image",
+      "resource": "gta5-cyprus",
+      "type": "image",
+      "title": "Cyprus 1.53 1.54 1.55 1.56 .157 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-cyprus-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-explosive-1-52-1-53-image",
+      "resource": "gta5-explosive-1-52-1-53",
+      "type": "image",
+      "title": "Explosive 1.52, 1.53 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-explosive-1-52-1-53-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-explosive-1-57-image",
+      "resource": "gta5-explosive-1-57",
+      "type": "image",
+      "title": "Explosive 1.57 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-explosive-1-57-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-expulsion-v5-1-57-image",
+      "resource": "gta5-expulsion-v5-1-57",
+      "type": "image",
+      "title": "Expulsion V5.0 1.57 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-expulsion-v5-1-57-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-gods-blessing-source-image",
+      "resource": "gta5-gods-blessing-source",
+      "type": "image",
+      "title": "Source code for make own menu original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-gods-blessing-source-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-lotus-1-27-image",
+      "resource": "gta5-lotus-1-27",
+      "type": "image",
+      "title": "Lotus 1.27 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-lotus-1-27-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-lts-1-57-image",
+      "resource": "gta5-lts-1-57",
+      "type": "image",
+      "title": "LTS 1.57 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-lts-1-57-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-oxagon-1-56-image",
+      "resource": "gta5-oxagon-1-56",
+      "type": "image",
+      "title": "Oxagon 1.56 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-oxagon-1-56-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-ozark-1-56-image",
+      "resource": "gta5-ozark-1-56",
+      "type": "image",
+      "title": "Ozark 1.56 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-ozark-1-56-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-ozark-1-57-image",
+      "resource": "gta5-ozark-1-57",
+      "type": "image",
+      "title": "Ozark 1.57 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-ozark-1-57-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-scorpion-v1-2b-image",
+      "resource": "gta5-scorpion-v1-2b",
+      "type": "image",
+      "title": "Scorpion-v1.2b 1.00 1.38. 1.43. 1.46. 148 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-scorpion-v1-2b-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-velora-1-56-image",
+      "resource": "gta5-velora-1-56",
+      "type": "image",
+      "title": "Velora 1.56 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-velora-1-56-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-velora-1-57-image",
+      "resource": "gta5-velora-1-57",
+      "type": "image",
+      "title": "Velora 1.57 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-velora-1-57-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-wildemodz-1-27-image",
+      "resource": "gta5-wildemodz-1-27",
+      "type": "image",
+      "title": "WildeModz 1.27 original screenshot",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/gta5-wildemodz-1-27-image.txt",
+      "maxBytes": 16777216
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-46-v6-2-1-dual",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.46-v6.2.1-dual.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.46-v6.2.1-dual.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/7e996zp76icxi0k/Beach-1.46-v6.2.1-dual.prx/file",
+      "filename": "Beach-1.46-v6.2.1-dual.prx",
+      "expectedBytes": 720624,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-47-v6-2-1-dual",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.47-v6.2.1-dual.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.47-v6.2.1-dual.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/emuvmphg872p4a1/Beach-1.47-v6.2.1-dual.prx/file",
+      "filename": "Beach-1.47-v6.2.1-dual.prx",
+      "expectedBytes": 737392,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-48-v6-2-1-dual",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.48-v6.2.1-dual.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.48-v6.2.1-dual.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/q0mvgo4a2tn9gtx/Beach-1.48-v6.2.1-dual.prx/file",
+      "filename": "Beach-1.48-v6.2.1-dual.prx",
+      "expectedBytes": 737680,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-49-v6-2-1-dual",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.49-v6.2.1-dual.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.49-v6.2.1-dual.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/3z5fjnnko6vlr8g/Beach-1.49-v6.2.1-dual.prx/file",
+      "filename": "Beach-1.49-v6.2.1-dual.prx",
+      "expectedBytes": 737680,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-50-v6-6-30fps",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.50-v6.6-30fps.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.50-v6.6-30fps.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/2d4jr29i4olhgza/Beach-1.50-v6.6-30fps.prx/file",
+      "filename": "Beach-1.50-v6.6-30fps.prx",
+      "expectedBytes": 763408,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-50-v6-6-60fp",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.50-v6.6-60fp.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.50-v6.6-60fp.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/657z0xpprrmjoe5/Beach-1.50-v6.6-60fp.prx/file",
+      "filename": "Beach-1.50-v6.6-60fp.prx",
+      "expectedBytes": 763408,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-51-v6-6-30fps",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.51-v6.6-30fps.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.51-v6.6-30fps.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/uce3ffmr8n0g3zq/Beach-1.51-v6.6-30fps.prx/file",
+      "filename": "Beach-1.51-v6.6-30fps.prx",
+      "expectedBytes": 763584,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-51-v6-6-60fps",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.51-v6.6-60fps.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.51-v6.6-60fps.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/7paeo06g6nmza3w/Beach-1.51-v6.6-60fps.prx/file",
+      "filename": "Beach-1.51-v6.6-60fps.prx",
+      "expectedBytes": 763584,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-1-52b1",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-1.52b1.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-1.52b1.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/6t615a9m4prrfk6/Beach-1.52b1.prx/file",
+      "filename": "Beach-1.52b1.prx",
+      "expectedBytes": 763584,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-6-8v2-1-53",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-6.8V2-1.53.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-6.8V2-1.53.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/7tsstcg21tthyvt/Beach-6.8V2-1.53.prx/file",
+      "filename": "Beach-6.8V2-1.53.prx",
+      "expectedBytes": 764480,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-offline-1-53-6-8v3",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-offline-1.53-6.8v3.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-offline-1.53-6.8v3.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/6fys7z9zwqkzs3q/Beach-offline-1.53-6.8v3.prx/file",
+      "filename": "Beach-offline-1.53-6.8v3.prx",
+      "expectedBytes": 784224,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach-offline-1-53-6-8v4",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach-offline-1.53-6.8v4.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach-offline-1.53-6.8v4.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/h1twblw1nvwj275/Beach-offline-1.53-6.8v4.prx/file",
+      "filename": "Beach-offline-1.53-6.8v4.prx",
+      "expectedBytes": 784304,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach149v63",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach149v63.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach149v63.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/4g0mf4p5lfjldbk/Beach149v63.prx/file",
+      "filename": "Beach149v63.prx",
+      "expectedBytes": 739968,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach150v64",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach150v64.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach150v64.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/kmx7iofzvhvfthp/Beach150v64.prx/file",
+      "filename": "Beach150v64.prx",
+      "expectedBytes": 740368,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-beach150v65",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach150v65.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Beach150v65.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/t9d2yh5vm4csqb5/Beach150v65.prx/file",
+      "filename": "Beach150v65.prx",
+      "expectedBytes": 724496,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-gtav-60fps",
+      "resource": "gta5-beach-legacy",
+      "title": "gtav_60fps.prx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file gtav_60fps.prx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/pkv6csb60ywjwti/gtav_60fps.prx/file",
+      "filename": "gtav_60fps.prx",
+      "expectedBytes": 71904,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-installation-instructions",
+      "resource": "gta5-beach-legacy",
+      "title": "Installation_Instructions.txt",
+      "kind": "guide",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Metadata"
+      ],
+      "version": "Source file Installation_Instructions.txt",
+      "mirror": false,
+      "url": "https://www.mediafire.com/file/dqj1454ndu410b4/Installation_Instructions.txt/file",
+      "filename": "Installation_Instructions.txt",
+      "expectedBytes": 449,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-beach-legacy-plugins-ini",
+      "resource": "gta5-beach-legacy",
+      "title": "plugins.ini.txt",
+      "kind": "guide",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Metadata"
+      ],
+      "version": "Source file plugins.ini.txt",
+      "mirror": false,
+      "url": "https://www.mediafire.com/file/syp84q5ni2rtf22/plugins.ini.txt/file",
+      "filename": "plugins.ini.txt",
+      "expectedBytes": 237,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-explosive-1-52-1-53-design-ini",
+      "resource": "gta5-explosive-1-52-1-53",
+      "title": "design.ini.txt",
+      "kind": "guide",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Explosive Legacy",
+      "archiveRole": [
+        "Metadata"
+      ],
+      "version": "Source file design.ini.txt",
+      "mirror": false,
+      "url": "https://www.mediafire.com/file/x5wft10rez3w2tl/design.ini.txt/file",
+      "filename": "design.ini.txt",
+      "expectedBytes": 214,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-explosive-1-52-1-53-explosive152",
+      "resource": "gta5-explosive-1-52-1-53",
+      "title": "Explosive152.sprx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Explosive Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Explosive152.sprx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/mrg0h4ketpt6sh8/Explosive152.sprx/file",
+      "filename": "Explosive152.sprx",
+      "expectedBytes": 494160,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-explosive-1-52-1-53-explosive153",
+      "resource": "gta5-explosive-1-52-1-53",
+      "title": "Explosive153.sprx",
+      "kind": "direct",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Explosive Legacy",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Source file Explosive153.sprx",
+      "mirror": true,
+      "url": "https://www.mediafire.com/file/bnegpcmp42xb9yu/Explosive153.sprx/file",
+      "filename": "Explosive153.sprx",
+      "expectedBytes": 493728,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-explosive-1-52-1-53-selfoptions-ini",
+      "resource": "gta5-explosive-1-52-1-53",
+      "title": "selfoptions.ini.txt",
+      "kind": "guide",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Explosive Legacy",
+      "archiveRole": [
+        "Metadata"
+      ],
+      "version": "Source file selfoptions.ini.txt",
+      "mirror": false,
+      "url": "https://www.mediafire.com/file/xqo3v9khk5ulcrd/selfoptions.ini.txt/file",
+      "filename": "selfoptions.ini.txt",
+      "expectedBytes": 169,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-explosive-1-52-1-53-tut",
+      "resource": "gta5-explosive-1-52-1-53",
+      "title": "Tut.txt",
+      "kind": "guide",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Explosive Legacy",
+      "archiveRole": [
+        "Metadata"
+      ],
+      "version": "Source file Tut.txt",
+      "mirror": false,
+      "url": "https://www.mediafire.com/file/9r26300presgap6/Tut.txt/file",
+      "filename": "Tut.txt",
+      "expectedBytes": 538,
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "gta5-gods-blessing-source-1-53",
+      "resource": "gta5-gods-blessing-source",
+      "title": "Gods Blessing source 1.53",
+      "kind": "source-code",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "1.53"
+      ],
+      "project": "Gods Blessing",
+      "archiveRole": [
+        "Source Code"
+      ],
+      "version": "GTA V 1.53 (source post)",
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/gta5-gods-blessing-source.json",
+      "urlIndex": 1,
+      "importPath": "docs/discord-ps4-ps5-raw/mega-staging/gta5-gods-blessing-source-1-53/transfer-1793591741321/PS4 GTA V 1.53 Mod Menu Source.zip",
+      "filename": "PS4 GTA V 1.53 Mod Menu Source.zip",
+      "expectedBytes": 292331194,
+      "expectedSha256": "ebb9d46f203eb5f9e842e4b1aa72e7231d0c6a8988f14894743eab835e222a3d",
+      "pages": [
+        "source-codes/games/gta5/ps4.html"
+      ],
+      "publication": "private-review"
+    },
+    {
+      "id": "bo3-daybreak-new-op",
+      "resource": "bo3-daybreak-new",
+      "title": "DayBreak new post SPRX pack",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Zombies"
+      ],
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/bo3-daybreak-new.json",
+      "urlIndex": 0,
+      "maxBytes": 16777216,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html"
+      ]
+    },
+    {
+      "id": "bo3-devolution-v1",
+      "resource": "bo3-devolution-v1",
+      "title": "Devolution V1",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Zombies"
+      ],
+      "version": "v1",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo3-devolution-v1.json",
+      "urlIndex": 0,
+      "maxBytes": 16777216,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html"
+      ]
+    },
+    {
+      "id": "bo3-muzzman-recovery",
+      "resource": "bo3-muzzman-recovery",
+      "title": "MuzzMan V1 Recovery Menu",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Multiplayer"
+      ],
+      "version": "v1 (post title)",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo3-muzzman-recovery.json",
+      "urlIndex": 0,
+      "maxBytes": 16777216,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html"
+      ]
+    },
+    {
+      "id": "bo3-luna",
+      "resource": "bo3-luna",
+      "title": "Luna",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Multiplayer"
+      ],
+      "version": null,
+      "rawJson": "docs/discord-ps4-ps5-raw/bo3-luna.json",
+      "urlIndex": 0,
+      "maxBytes": 16777216,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html"
+      ]
+    },
+    {
+      "id": "bo1-discarded-v3-updated-fixes",
+      "resource": "bo1-discarded-v3",
+      "title": "Discarded v3 Beta updated fixes",
+      "game": "Black Ops 1",
+      "group": "Zombies",
+      "project": "Discarded v3 Beta",
+      "version": "v3 Beta updated fixes (22 October reply)",
+      "rawJson": "docs/discord-ps4-ps5-raw/bo1-discarded-v3-final.json",
+      "urlIndex": 4,
+      "filename": "Black_Ops_Zombies_Discarded_v3_Beta_Updated.zip",
+      "maxBytes": 8388608,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-1/index.html"
+      ]
+    },
+    {
+      "id": "rdr2-oyster-free-v1-3-9",
+      "resource": "rdr2-oyster",
+      "title": "Oyster official Free beta",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2"
+      ],
+      "project": "Oyster Free",
+      "version": "v1.3.9 BETA (official Free)",
+      "mirror": false,
+      "url": "https://rdroysters.com/omm/OystersMenu_v1.3.9-BETA.7z",
+      "filename": "OystersMenu_v1.3.9-BETA.7z",
+      "maxBytes": 33554432,
+      "pages": [
+        "console/mods/ps4/rdr2/index.html"
+      ]
+    },
+    {
+      "id": "source-gta5-ai-files",
+      "title": "GTA V AI development files source folder",
+      "kind": "source-code",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Source Files"
+      ],
+      "archiveRole": [
+        "Source Code"
+      ],
+      "rawJson": "docs/discord-ps4-ps5-raw/source-gta5-ai-files.json",
+      "urlIndex": 0,
+      "unavailableReason": "GoFile anonymous-session API returned HTTP 200 but source folder contents returned HTTP 401; no source files or game eboot downloaded.",
+      "pages": [
+        "source-codes/games/gta5/ps4.html"
+      ]
+    },
+    {
+      "id": "bo3-custom-maps-3-00-image",
+      "resource": "bo3-custom-maps-3-00",
+      "title": "Require bo3 custom maps 3.00 original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-custom-maps-3-00-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-daybreak-new-image",
+      "resource": "bo3-daybreak-new",
+      "title": "DayBreak original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-daybreak-new-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-daybreak-old-image",
+      "resource": "bo3-daybreak-old",
+      "title": "DayBreak original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-daybreak-old-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-devolution-v1-image",
+      "resource": "bo3-devolution-v1",
+      "title": "Devolution V1 original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-devolution-v1-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-encore-v13-2-image",
+      "resource": "bo3-encore-v13-2",
+      "title": "EnCoReV13.2 original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-encore-v13-2-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-encore-v14-2-image",
+      "resource": "bo3-encore-v14-2",
+      "title": "EnCoRe v14.2 original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-encore-v14-2-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-frostbite-image",
+      "resource": "bo3-frostbite",
+      "title": "Frostbite v1.3 original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-frostbite-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-luna-image",
+      "resource": "bo3-luna",
+      "title": "Luna original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-luna-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-matrixmods-image",
+      "resource": "bo3-matrixmods",
+      "title": "MatrixMods original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-matrixmods-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-muzzman-recovery-image",
+      "resource": "bo3-muzzman-recovery",
+      "title": "MuzzMan V1 [Recovery Menu] original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-muzzman-recovery-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-purple-lake-image",
+      "resource": "bo3-purple-lake",
+      "title": "Purple Lake original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-purple-lake-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-synergy-image",
+      "resource": "bo3-synergy",
+      "title": "Synergy original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-synergy-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-whiteshadow-recovery-image",
+      "resource": "bo3-whiteshadow-recovery",
+      "title": "WhiteShadow8500 [Recovery Menu] original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo3-whiteshadow-recovery-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "rdr2-havana-image",
+      "resource": "rdr2-havana",
+      "title": "Havana original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/rdr2-havana-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "rdr2-north-beta-image",
+      "resource": "rdr2-north-beta",
+      "title": "North Beta original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/rdr2-north-beta-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "rdr2-oyster-image",
+      "resource": "rdr2-oyster",
+      "title": "Oyster original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/rdr2-oyster-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "rdr2-sheriff-1-32-image",
+      "resource": "rdr2-sheriff-1-32",
+      "title": "Sheriff 1.32 original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "RDR2",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/rdr2-sheriff-1-32-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "bo3-custom-maps-3-00",
+      "resource": "bo3-custom-maps-3-00",
+      "title": "Custom maps 3.00 — Iron Man Arsenal mod bundle",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 3",
+        "Custom Maps"
+      ],
+      "project": "Iron Man Arsenal",
+      "archiveRole": [
+        "Builds"
+      ],
+      "version": "Post requires custom maps 3.00",
+      "mirror": false,
+      "rawJson": "docs/discord-ps4-ps5-raw/bo3-custom-maps-3-00.json",
+      "urlIndex": 0,
+      "importPath": "docs/discord-ps4-ps5-raw/http-staging/bo3-custom-maps-3-00/transfer-1793592626917/core_mod.zip",
+      "filename": "core_mod.zip",
+      "expectedBytes": 378440234,
+      "expectedSha256": "e30c42b246382ccef5413a8cecb221fcdade8087cd81ebac253393cdb0086d8e",
+      "maxBytes": 419430400,
+      "pages": [
+        "console/mods/ps4/call-of-duty/black-ops-3/index.html"
+      ]
+    },
+    {
+      "id": "bo1-encore-v8-first-image",
+      "resource": "bo1-encore-v8",
+      "title": "Encore v8 first original screenshot",
+      "type": "image",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "Black Ops 1",
+        "Screenshots"
+      ],
+      "rawFile": "docs/discord-ps4-ps5-raw/bo1-encore-v8-first-image.txt",
+      "maxBytes": 33554432
+    },
+    {
+      "id": "gta5-beach-legacy-install-icon",
+      "resource": "gta5-beach-legacy",
+      "title": "Beach installation companion icon",
+      "kind": "guide",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "GTA5",
+        "Legacy"
+      ],
+      "project": "Beach Legacy",
+      "archiveRole": [
+        "Metadata"
+      ],
+      "version": "Source installation companion",
+      "mirror": false,
+      "url": "https://www.mediafire.com/file/kt2q1plc3k79fjg/icon0.png/file",
+      "filename": "icon0.png",
+      "expectedBytes": 25230,
+      "maxBytes": 1048576,
+      "pages": [
+        "console/mods/ps4/gta5/index.html"
+      ]
+    },
+    {
+      "id": "hydra-wwii-v2-2-0",
+      "title": "HYDRA 2.2.0 Windows portable",
+      "game": "WWII and Ghosts",
+      "platform": "PS4",
+      "category": [
+        "Games",
+        "Call of Duty",
+        "WWII and Ghosts",
+        "RTM Tools"
+      ],
+      "project": "HYDRA",
+      "archiveRole": [
+        "Helpers",
+        "Windows"
+      ],
+      "kind": "github-release",
+      "version": "v2.2.0",
+      "url": "https://github.com/SnowdenShadow/HYDRA-Releases/releases/download/v2.2.0/HydraPortable-2.2.0.zip",
+      "filename": "HydraPortable-2.2.0.zip",
+      "expectedBytes": 90946143,
+      "expectedSha256": "19384753aede69b25bc625d477839caff14b90963829879afff2acc4e5178368",
+      "maxBytes": 100000000,
+      "mirror": false,
+      "pages": [
+        "console/mods/ps4/call-of-duty/wwii/index.html",
+        "console/mods/ps4/call-of-duty/ghosts/index.html"
+      ],
+      "releaseEvidenceFile": "docs/discord-ps4-ps5-raw/hydra-v2-2-0-release-evidence.json"
+    }
+  ]
+}

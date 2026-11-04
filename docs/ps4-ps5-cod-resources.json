@@ -1,0 +1,2042 @@
+{
+  "schemaVersion": 1,
+  "games": [
+    {
+      "id": "black-ops-1",
+      "title": "Call of Duty: Black Ops 1",
+      "slug": "black-ops-1",
+      "cover": "/assets/images/covers/cod-black-ops-1.jpg"
+    },
+    {
+      "id": "black-ops-2",
+      "title": "Call of Duty: Black Ops 2",
+      "slug": "black-ops-2",
+      "cover": "/assets/images/covers/cod-black-ops-2.jpg"
+    },
+    {
+      "id": "black-ops-3",
+      "title": "Call of Duty: Black Ops 3",
+      "slug": "black-ops-3",
+      "cover": "/assets/images/covers/cod-black-ops-3.jpg"
+    },
+    {
+      "id": "black-ops-4",
+      "title": "Call of Duty: Black Ops 4",
+      "slug": "black-ops-4",
+      "cover": "/assets/images/covers/cod-black-ops-4.jpg"
+    },
+    {
+      "id": "ghosts",
+      "title": "Call of Duty: Ghosts",
+      "slug": "ghosts",
+      "cover": "/assets/images/covers/cod-ghosts.jpg"
+    },
+    {
+      "id": "advanced-warfare",
+      "title": "Call of Duty: Advanced Warfare",
+      "slug": "advanced-warfare",
+      "cover": "/assets/images/covers/cod-advanced-warfare.jpg"
+    },
+    {
+      "id": "modern-warfare-remastered",
+      "title": "Call of Duty: Modern Warfare Remastered",
+      "slug": "modern-warfare-remastered",
+      "cover": "/assets/images/covers/cod-modern-warfare-remastered-official.jpg",
+      "coverSource": {
+        "page": "https://store.steampowered.com/app/393080/Call_of_Duty_Modern_Warfare_Remastered/",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/393080/header.jpg",
+        "bytes": 35146,
+        "sha256": "77527a5d47fa6aa5cfe1051e0ebe476c6ba839e98e4d101801176db46e5ee85e"
+      }
+    },
+    {
+      "id": "modern-warfare-2-remastered",
+      "title": "Call of Duty: Modern Warfare 2 Campaign Remastered",
+      "slug": "modern-warfare-2-remastered",
+      "cover": "/assets/images/covers/cod-mw2-remastered-official.jpg",
+      "coverSource": {
+        "page": "https://www.playstation.com/en-us/games/call-of-duty-modern-warfare-2-campaign-remastered/",
+        "url": "https://gmedia.playstation.com/is/image/SIEPDC/call-of-duty-modern-warfare-2-campaign-remastered-huge-hero-desktop-tablet-01-ps4-en-26mar20?fmt=jpeg&wid=1280&qlt=85",
+        "bytes": 81221,
+        "sha256": "328bd9ddc8c58042c917ab71eb423a9c40a3e0c8ba8b773c2aba6d4a0a8db3ad"
+      }
+    },
+    {
+      "id": "cold-war",
+      "title": "Call of Duty: Black Ops Cold War",
+      "slug": "cold-war",
+      "cover": "/assets/images/covers/cod-cold-war-official.jpg",
+      "coverSource": {
+        "page": "https://www.playstation.com/en-us/games/call-of-duty-black-ops-cold-war/",
+        "url": "https://gmedia.playstation.com/is/image/SIEPDC/call-of-duty-black-ops-cold-war-pdp-hero-01-ps4-25aug20$en?fmt=jpeg&wid=1280&qlt=85",
+        "bytes": 118427,
+        "sha256": "56239984ff269561d00e7b8adaa5c00bc071bcb5bf819d0b2ec6af12888cd447"
+      }
+    },
+    {
+      "id": "infinite-warfare",
+      "title": "Call of Duty: Infinite Warfare",
+      "slug": "infinite-warfare",
+      "cover": "/assets/images/covers/cod-infinite-warfare.jpg",
+      "summary": "DLC title-ID and game-update reference from the supplied post. No mod menu was attached to this post.",
+      "resourceDescription": "Captured PS4 DLC title IDs and game-update references for Call of Duty: Infinite Warfare. Open the compatibility guide to see the supplied details."
+    },
+    {
+      "id": "wwii",
+      "title": "Call of Duty: WWII",
+      "slug": "wwii",
+      "cover": "/assets/images/ps4-ps5/originals/cod-wwii-cover.jpg",
+      "coverSource": {
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-wwii-review-image.txt",
+        "url": "https://cdn.discordapp.com/attachments/1533919213914165378/1533919214748827739/Game-Hype-COD-WW2-1280x640.jpg",
+        "bytes": 172040,
+        "sha256": "1eb48f1d164f057e22a14da37a8333ff1122e50ca064134f4bda425a25d26601"
+      },
+      "summary": "HYDRA 2.2.0 PS4 WWII injector and menu details, plus captured DLC title-ID references.",
+      "resourceDescription": "PS4 WWII HYDRA 2.2.0 Windows tool, Multiplayer and Zombies menu notes, opening controls and captured DLC title-ID references."
+    }
+  ],
+  "resources": [
+    {
+      "id": "bo1-encore-v8",
+      "gameIds": [
+        "black-ops-1"
+      ],
+      "category": "menu",
+      "publication": "include",
+      "name": "EnCoReV8",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-Menus",
+        "postTitle": "EnCoReV8",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-encore-v8-final.json",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1555640129434161172"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-encore-v8-first-image.png",
+          "caption": "EnCoReV8 first supplied screenshot."
+        },
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-encore-v8-image.png",
+          "caption": "EnCoReV8 Zombie Edition supplied screenshot."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo1-encore-v8",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/xkb8bkkudfgz7jd/BO1+MP+++ZM+Menus.zip/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=fE9XpSzmFmo&t=14s",
+          "title": "Video supplied with the forum post"
+        }
+      ]
+    },
+    {
+      "id": "bo1-discarded-v3",
+      "gameIds": [
+        "black-ops-1"
+      ],
+      "category": "menu",
+      "group": "zombies",
+      "publication": "include",
+      "name": "Discarded v3 Beta",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-Menus",
+        "postTitle": "Discarded v3 Beta",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-discarded-v3-final.json",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1562462279939657778"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-discarded-v3-image.png",
+          "display": "/assets/images/ps4-ps5/edited/bo1-discarded-v3-image.png",
+          "caption": "Discarded v3 Beta"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo1-discarded-v3",
+          "label": "Original beta",
+          "url": "https://www.mediafire.com/file/6hdaikhxi8kptoa/Black+Ops+Zombies+Discarded+v3+Beta+Ported+By+killhitman40.zip/file",
+          "distribution": "include"
+        },
+        {
+          "id": "bo1-discarded-v3-updated-fixes",
+          "label": "Updated fixes",
+          "url": "https://cdn.discordapp.com/attachments/1562462279939657778/1562867460976414770/Black_Ops_Zombies_Discarded_v3_Beta_Updated.zip",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "text": "The second reply from killhitman40 supplies a separate archive labelled “UPDATED FIXES”. Both that attachment and the original beta download are preserved."
+        },
+        {
+          "type": "paragraph",
+          "title": "Updated-fixes README",
+          "text": "Made by xMasterModzx / Homiethefluff; ported to Black Ops Zombies by killhitman40. The README records release date 19 October 2026. On some maps, allow a few seconds before opening the menu. Some options are absent because they are not available in Black Ops Zombies."
+        },
+        {
+          "type": "paragraph",
+          "text": "Spawnables work only on the supported maps Nacht der Untoten and “Der Rise” (source spelling). Other maps can show no supported spawnables."
+        },
+        {
+          "type": "list",
+          "title": "Recorded fixes",
+          "items": [
+            "Fog and Sun menu",
+            "Jump and Speed",
+            "Menu behavior while using Skybase",
+            "Shi No Numa submenu",
+            "Unsupported-map text in Spawnables"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "input": "Aim + Square",
+          "action": "Open menu"
+        },
+        {
+          "input": "L1 / R1",
+          "action": "Scroll"
+        },
+        {
+          "input": "Square",
+          "action": "Select"
+        },
+        {
+          "input": "Knife",
+          "action": "Back"
+        },
+        {
+          "input": "R2 / Frag",
+          "action": "Switch walking/regular mode when using AC130; the README says the same applies to other killstreaks."
+        }
+      ]
+    },
+    {
+      "id": "bo1-purple-kush-v4",
+      "gameIds": [
+        "black-ops-1"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "Purple Kush v4",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-Menus",
+        "postTitle": "Purple Kush v4",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-purple-kush-v4-final.json",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565031599492440166"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-purple-kush-v4-image.jpg",
+          "display": "/assets/images/ps4-ps5/edited/bo1-purple-kush-v4-image.png",
+          "caption": "Purple Kush v4"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo1-purple-kush-v4",
+          "label": "Download",
+          "url": "https://cdn.discordapp.com/attachments/1565031599492440166/1565031600079773788/IProfamily_black_Ops_Menu_Beta_Ps4_Updated.zip",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=eKUndMAE634&t=288s",
+          "title": "Video supplied with the forum post"
+        }
+      ]
+    },
+    {
+      "id": "bo1-bo2-gsc-injector",
+      "gameIds": [
+        "black-ops-1",
+        "black-ops-2"
+      ],
+      "category": "injector",
+      "group": "both",
+      "publication": "include",
+      "name": "GSC Injector v1.0 — BO1 & BO2 (PS4/PS5)",
+      "description": "GoldHEN plugin • in-game menu picker • no PC injector needed",
+      "compatibilityText": "Black Ops 2: Multiplayer + Zombies\nBlack Ops 1: Multiplayer + Zombies",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-Menus",
+        "postTitle": "Injecteur BO1/2 thru game",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-bo2-thru-game-injector-final.json",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1564300494330138826"
+      },
+      "images": [],
+      "downloads": [
+        {
+          "id": "bo1-bo2-gsc-injector-pack",
+          "label": "Download Menu Pack",
+          "url": "https://cdn.discordapp.com/attachments/1564300494330138826/1564300494481006652/place20me20in20data-GoldHENorETA.rar",
+          "distribution": "include"
+        },
+        {
+          "id": "bo1-bo2-gsc-injector-prx",
+          "label": "Download Injector",
+          "url": "https://cdn.discordapp.com/attachments/1564300494330138826/1564300494854164622/gsc2520injector.prx",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "list",
+          "title": "Included Menus",
+          "items": [
+            "BO2 MP — Jiggy • Project Abyss",
+            "BO2 ZM — ByGrEk • ByGrEk Nexus • Heidi v13 • EnCoReV9 • Project Iconic V3 • RMT",
+            "BO1 MP — Redemption • Encore v8 (+7 patches incl. NaTo V1 Treason Edit)",
+            "BO1 ZM — Encore V8 ZM"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Injector filename",
+          "text": "The attached PRX downloads as gsc2520injector.prx. The post’s installation steps and plugins.ini example use gsc%20injector.prx. Keep the installed filename and its plugins.ini path identical."
+        },
+        {
+          "type": "steps",
+          "title": "Install",
+          "items": [
+            {
+              "title": "Put gsc%20injector.prx in /data/GoldHEN/plugins/",
+              "text": ""
+            },
+            {
+              "title": "Use the included plugins.ini (or add the injector lines to yours) → /data/GoldHEN/",
+              "text": ""
+            },
+            {
+              "title": "Copy the GSC Injector folder → /data/GSC Injector/",
+              "text": ""
+            },
+            {
+              "title": "Reboot, launch the game, load into a match",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The complete example below also contains default and Playroom entries. Merge the relevant injector entries into your existing configuration."
+        },
+        {
+          "type": "code",
+          "title": "Post’s plugins.ini example",
+          "text": "; Note: lines starting with semicolon are for comments.\n; Load plugins for any title.\n\n[default]\n/data/GoldHEN/plugins/game_patch.prx\n\n; Load plugins only for Playroom.\n\n[CUSA00001]\n/data/GoldHEN/plugins/afr.prx\n/data/GoldHEN/plugins/no_share_watermark.prx\n\n[CUSA57548] ; This will load when toggled for this title ID.\n/data/GoldHEN/plugins/gsc%20injector.prx\n\n[CUSA57547] ; This will load when toggled for this title ID.\n/data/GoldHEN/plugins/gsc%20injector.prx"
+        },
+        {
+          "type": "paragraph",
+          "title": "Usage",
+          "text": "Hold L2 + R2 + tap X → pick a menu with Square → start a new match → menu loads\nMost menus open with Aim + Knife (Iconic & EnCoReV9: D-Pad Down)"
+        },
+        {
+          "type": "paragraph",
+          "title": "Bugs / Reports",
+          "text": "Send your /data/GSC Injector/log.txt with what you did before the issue."
+        },
+        {
+          "type": "paragraph",
+          "title": "Credits",
+          "text": "Treason • aimyz • ByGrEk — DeadOps release, groundwork, menu ports & testing\nOriginal menu creators keep full credit for their work (CabCon, SeriousHD-, and others)"
+        }
+      ],
+      "controls": [
+        {
+          "input": "Hold L2 + R2, tap X",
+          "action": "In-game panel"
+        },
+        {
+          "input": "Square",
+          "action": "Pick a menu → start a new match → menu loads"
+        },
+        {
+          "input": "Aim + Knife",
+          "action": "Most menus"
+        },
+        {
+          "input": "D-Pad Down",
+          "action": "Iconic & EnCoReV9"
+        }
+      ]
+    },
+    {
+      "id": "bo2-volt",
+      "gameIds": [
+        "black-ops-2"
+      ],
+      "category": "rtm",
+      "group": "shared",
+      "publication": "include",
+      "name": "VOLT PC TO PSN RTM AIO TOOL RELAY",
+      "description": "The GoFile folder returned HTTP 401 during the archive check on 2 November 2026. No local copy was retrieved.",
+      "source": {
+        "forumTitle": "🔵Black-Ops-2-Menus",
+        "postTitle": "VOLT PC TO PSN RTM AIO TOOL RELAY",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1562854301066465391",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-volt.json"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo2-volt-image.png",
+          "caption": "VOLT screenshot"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo2-volt",
+          "label": "Download",
+          "url": "https://gofile.io/d/xycQRzqX",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "bo2-baguette",
+      "gameIds": [
+        "black-ops-2"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "Baguette off host ported for ps4",
+      "source": {
+        "forumTitle": "🔵Black-Ops-2-Menus",
+        "postTitle": "Baguette off host ported for ps4",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1559402129926651904",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-baguette.json"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo2-baguette-image.jpg",
+          "caption": "Screenshot supplied with the forum post."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo2-baguette",
+          "label": "Download",
+          "url": "https://cdn.discordapp.com/attachments/1559402129926651904/1559402130979164231/Baguette_SPRX_PS4_By_Zeem.zip",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "compatibilityText": "The source post is filed under BO2, but its screenshot shows Black Ops III. Game compatibility is unconfirmed."
+    },
+    {
+      "id": "bo2-royal-injector",
+      "gameIds": [
+        "black-ops-2"
+      ],
+      "category": "injector",
+      "group": "shared",
+      "publication": "include",
+      "name": "Royal Menu + Injector",
+      "version": "v1.5.0",
+      "description": "Windows x64 desktop helper requiring .NET 8 Desktop Runtime and a jailbroken PS4 running ps4debug.",
+      "source": {
+        "forumTitle": "🔵Black-Ops-2-Menus",
+        "postTitle": "Royal Menu + Injector",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1552383362105348119",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-royal-injector.json",
+        "releaseUrl": "https://github.com/aban-waleed/SPOMEN/releases/tag/v1.5.0",
+        "writtenGuideFile": "docs/discord-ps4-ps5-raw/spomen-v1-5-0-how-to-use.txt",
+        "writtenGuideOrigin": "HOW_TO_USE.txt bundled in the SPOMEN v1.5.0 Windows release"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo2-royal-injector-image.png",
+          "caption": "Royal Menu + Injector screenshot"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo2-spomen-win-v1-5-0",
+          "label": "Download Windows Tool",
+          "url": "https://github.com/aban-waleed/SPOMEN/releases/download/v1.5.0/SPOMEN-v1.5.0-win-x64.zip",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "steps",
+          "title": "Bundled SPOMEN workflow",
+          "items": [
+            {
+              "title": "Prepare the LAN lobby",
+              "text": "Place the modified PS4 and the second PS4 or PS5 in a LAN Party lobby."
+            },
+            {
+              "title": "Connect and inject",
+              "text": "Use CONNECT, then ATTACH; choose your menu file and select INJECT."
+            },
+            {
+              "title": "Start the match",
+              "text": "Start Match on the modified PS4."
+            },
+            {
+              "title": "Use the countdown action",
+              "text": "When the countdown shows 3, select PUBLIC MATCH in the desktop tool."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Credits",
+          "text": "Aban created the tool; Medo is credited for its base."
+        }
+      ],
+      "controls": []
+    },
+    {
+      "id": "bo2-blazed-v2",
+      "gameIds": [
+        "black-ops-2"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "BlazeD v2",
+      "source": {
+        "forumTitle": "🔵Black-Ops-2-Menus",
+        "postTitle": "BlazeD v2",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1551697807725957200",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-blazed-v2.json"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo2-blazed-v2-image.png",
+          "display": "/assets/images/ps4-ps5/edited/bo2-blazed-v2-image.png",
+          "caption": "BlazeD v2"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo2-blazed-v2",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/lv4s02mw5js308f/PS4_BO2_GSC_BlazeD_v2.rar/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "bo2-vengeance",
+      "gameIds": [
+        "black-ops-2"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "Vengeance v2",
+      "source": {
+        "forumTitle": "🔵Black-Ops-2-Menus",
+        "postTitle": "Vengeance v2",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1551654064985477220",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-vengeance.json"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo2-vengeance-image.jpg",
+          "caption": "Vengeance v2 screenshot"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo2-vengeance",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/4kmwp0r3vhqqqhc/PS_Zombies_Menu.zip/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=dmJPh_d5drM",
+          "title": "Black Ops 2 Vengeance v2 PS4/PS5 Download"
+        }
+      ]
+    },
+    {
+      "id": "bo2-jiggy-v4-5",
+      "gameIds": [
+        "black-ops-2"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "Jiggy Menu v4.5",
+      "source": {
+        "forumTitle": "🔵Black-Ops-2-Menus",
+        "postTitle": "Jiggy Menu v4.5",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1550116014384222349",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-jiggy-v4-5.json"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo2-jiggy-v4-5-image.png",
+          "display": "/assets/images/ps4-ps5/edited/bo2-jiggy-v4-5-image.png",
+          "caption": "Jiggy Menu v4.5"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo2-jiggy-v4-5",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/nann219um2mn4u7/extract_to_root.zip/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=XYxZG8DQudk",
+          "title": "Black Ops 2 Jiggy Menu v4.5 PS4/PS5 Download"
+        }
+      ]
+    },
+    {
+      "id": "bo4-b33",
+      "gameIds": [
+        "black-ops-4"
+      ],
+      "category": "menu",
+      "group": "both",
+      "publication": "include",
+      "name": "B33",
+      "source": {
+        "forumTitle": "🔵Black-Ops-4-Menus",
+        "postTitle": "B33",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1564304649224458330",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo4-b33.json",
+        "writtenGuideFile": "docs/discord-ps4-ps5-raw/bo4-b33-readme.txt",
+        "configurationFile": "docs/discord-ps4-ps5-raw/bo4-b33-plugins.ini.txt",
+        "writtenGuideOrigin": "README and plugins.ini bundled in the supplied B33 archive"
+      },
+      "images": [],
+      "downloads": [
+        {
+          "id": "bo4-b33",
+          "label": "Download",
+          "url": "https://cdn.discordapp.com/attachments/1564304649224458330/1564304649450954955/BO420PS420B3320EXP201.2620EU.rar",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "list",
+          "title": "Requirements",
+          "items": [
+            "PS4 with GoldHEN enabled and plugin support.",
+            "Call of Duty: Black Ops 4, CUSA12446, updated to 1.26. The supplied README states that other versions cause the plugin to shut down."
+          ]
+        },
+        {
+          "type": "steps",
+          "title": "Install B33 EXP",
+          "items": [
+            {
+              "title": "Transfer the plugin",
+              "text": "Using the GoldHEN FTP server on port 2121, copy b33_bo4.prx to /data/GoldHEN/plugins/b33_bo4.prx."
+            },
+            {
+              "title": "Add its game entry",
+              "text": "In /data/GoldHEN/plugins.ini, add the configuration below. If [CUSA12446] already exists, add the plugin path beneath that section."
+            },
+            {
+              "title": "Launch Black Ops 4",
+              "text": "After a few seconds, the plugin displays: B33 EXP - L1 + R3 to open."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "title": "plugins.ini entry",
+          "text": "[CUSA12446]\r\n/data/GoldHEN/plugins/b33_bo4.prx"
+        },
+        {
+          "type": "paragraph",
+          "title": "Usage",
+          "text": "Wait a few seconds at the main menu before starting a game. The plugin loads the B33 script automatically; no external injector is required. In a LAN Multiplayer or Zombies match with bots, use L1 + R3 to open or close the menu. The menu switches between Multiplayer and Zombies modes automatically."
+        },
+        {
+          "type": "list",
+          "title": "Status and co-host menu",
+          "items": [
+            "LIVE in the top-right corner means the script is active.",
+            "NO GSC means the script failed to load; restart the game.",
+            "Players → player name → Co-Host Menu enables the other player’s menu. That player opens it with L2 + knife."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Uninstall",
+          "text": "Remove the plugin line from plugins.ini, or delete b33_bo4.prx."
+        },
+        {
+          "type": "code",
+          "title": "PS4 plugin log",
+          "text": "/data/b33/bo4_log.txt"
+        }
+      ],
+      "controls": [
+        {
+          "input": "L1 + R3",
+          "action": "Open or close the menu"
+        },
+        {
+          "input": "D-pad Up/Down",
+          "action": "Navigate"
+        },
+        {
+          "input": "X",
+          "action": "Select"
+        },
+        {
+          "input": "O",
+          "action": "Back"
+        },
+        {
+          "input": "D-pad Left/Right",
+          "action": "Adjust values"
+        },
+        {
+          "input": "L2 + knife",
+          "action": "Open the other player’s co-host menu after Co-Host Menu is enabled"
+        }
+      ],
+      "description": "B33 EXP for LAN/offline games.",
+      "compatibilityText": "PS4 · CUSA12446 · game update 1.26"
+    },
+    {
+      "id": "bo4-atian",
+      "gameIds": [
+        "black-ops-4"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "Atian",
+      "source": {
+        "forumTitle": "🔵Black-Ops-4-Menus",
+        "postTitle": "Atian",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1555272985798119534",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo4-atian.json"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo4-atian-image.png",
+          "caption": "Atian screenshot"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo4-atian",
+          "label": "Download",
+          "url": "https://cdn.discordapp.com/attachments/1555272985798119534/1555272987341488188/BlackOps4_atianmenu_ps4all_GM.rar",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "bo4-lucy",
+      "gameIds": [
+        "black-ops-4"
+      ],
+      "category": "menu",
+      "group": "zombies",
+      "publication": "include",
+      "name": "Lucy Zombies Menu",
+      "version": "v1.5.0",
+      "source": {
+        "forumTitle": "🔵Black-Ops-4-Menus",
+        "postTitle": "Lucy Zombies Menu",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1555272274762932244",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo4-lucy-v1-5-0.json",
+        "releaseUrl": "https://github.com/AuroraDoesCode/BO4-Lucy-Menu/releases/tag/v1.5.0"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo4-lucy-v1-5-0-image.png",
+          "caption": "Lucy Zombies Menu screenshot"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo4-lucy-v1-5-0",
+          "label": "Download",
+          "url": "https://github.com/AuroraDoesCode/BO4-Lucy-Menu/releases/download/v1.5.0/BO4-Lucy-Menu-PS4-Edition.gscc",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "bo1-relief-cfg",
+      "gameIds": [
+        "black-ops-1"
+      ],
+      "category": "cfg",
+      "group": "both",
+      "publication": "include",
+      "name": "Bo1 Relief CFG Zombie & Multiplayer",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-CFG",
+        "postTitle": "Bo1 Relief CFG Zombie & Multiplayer",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1530961404855582730",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-relief-cfg.json",
+        "writtenGuideFile": "docs/discord-ps4-ps5-raw/bo1-relief-cfg-readme.txt",
+        "writtenGuideOrigin": "ReadME.txt in the supplied Relief CFG save/config bundle"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-relief-cfg-image.jpg",
+          "display": "/assets/images/ps4-ps5/edited/bo1-relief-cfg-image.png",
+          "caption": "Bo1 Relief CFG Zombie & Multiplayer"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo1-relief-cfg",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/r7iw6y91yrse1sm/Relief_Zombie_%26_MP_CFG.zip/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Using the menu",
+          "text": "After selecting the mods, choose ENJOY and close the menu. The supplied README recommends this so that using the knife does not activate another mod."
+        },
+        {
+          "type": "paragraph",
+          "title": "Credits",
+          "text": "Relief CFG by steezys (youtube/@steezys). Made using CFG Menu Maker Tool."
+        }
+      ],
+      "controls": [
+        {
+          "input": "Dpad UP",
+          "action": "Open"
+        },
+        {
+          "input": "Dpad Left & Right",
+          "action": "Scroll"
+        },
+        {
+          "input": "R3",
+          "action": "Select"
+        },
+        {
+          "input": "Select",
+          "action": "Close"
+        }
+      ],
+      "compatibilityText": "The supplied README requires the PS4 version of Black Ops.",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=sUxDoY812Ho",
+          "title": "Black Ops 1 Relief Zombie CFG w/Download PS4/PS5"
+        }
+      ]
+    },
+    {
+      "id": "bo1-modded-files",
+      "gameIds": [
+        "black-ops-1"
+      ],
+      "category": "cfg",
+      "group": "zombies",
+      "publication": "include",
+      "name": "Bo1 Modded Files Link",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-CFG",
+        "postTitle": "Bo1 Modded Files Link",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1528433944071245864",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-modded-files.json",
+        "archiveAssessment": "Save/config bundle only; no full game, executable, maps or audio in the inspected archive."
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-modded-files-image.png",
+          "caption": "Bo1 Modded Files preview"
+        },
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-modded-files-controls-image.png",
+          "caption": "BO1 ZOMBIES SP CFG MENU GUIDE",
+          "role": "guide"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo1-modded-files",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/0i03dcaxxkz1vwj/zombies.zip/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "description": "Save/config mod files."
+    },
+    {
+      "id": "bo1-miles-rtm",
+      "gameIds": [
+        "black-ops-1"
+      ],
+      "category": "rtm",
+      "group": "shared",
+      "publication": "include",
+      "name": "Black Ops 1 Miles RTM Tool",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-And-2-RTM-Tools",
+        "postTitle": "Black Ops 1 Miles RTM Tool",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1557874872397463583",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-miles-rtm.json",
+        "writtenGuideFile": "docs/discord-ps4-ps5-raw/bo1-miles-rtm-readme.txt",
+        "classEditorNoteFile": "docs/discord-ps4-ps5-raw/bo1-miles-rtm-god-mode.txt"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-miles-rtm-image.png",
+          "caption": "Black Ops 1 Miles RTM Tool screenshot"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo1-miles-rtm",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/br8o2ebb81uh2vm/TOOL_UNLOCK_ALL_%2B_GOD_MOD_BO1.rar/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Class editor values",
+          "text": "The bundled god-mode note specifies these class editor values:"
+        },
+        {
+          "type": "code",
+          "text": "Body: 114\nClass Bonus: 12"
+        },
+        {
+          "type": "list",
+          "title": "Using the bundled item-ID reference",
+          "items": [
+            "Enter decimal values in the tool’s numeric input; hexadecimal values are supplied only as a reference.",
+            "The bundled Miles v24 reference lists 116 dropdown entries. This catalog label does not establish the version of the supplied tool binary.",
+            "Categories identify the original table slots. An item’s name identifies its table ID, rather than verifying what happens when it is written to a different field.",
+            "The supplied catalog does not include attachments, camos or other cosmetic values."
+          ]
+        }
+      ],
+      "controls": [],
+      "description": "Desktop RTM tool for Black Ops 1."
+    },
+    {
+      "id": "bo2-relay-guide",
+      "gameIds": [
+        "black-ops-2"
+      ],
+      "category": "rtm",
+      "group": "shared",
+      "publication": "include",
+      "name": "BO2 Relay setup guide",
+      "description": "PC-host instructions for the BO2 Resurge and Microsoft Store clients, as described by the supplied tutorial.",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-And-2-RTM-Tools",
+        "postTitle": "BO2 Relay + Tutorial",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1561719835195478156",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-relay-tutorial.json",
+        "writtenGuideFile": "docs/discord-ps4-ps5-raw/bo2-relay-README.md",
+        "screenshotFacts": {
+          "creatorLabel": "StopMeIfYouCan V1.5",
+          "shownRelayPort": 3076,
+          "shownGamePort": 3074,
+          "compatibilityVerified": false
+        }
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo2-relay-tutorial-image.png",
+          "caption": "Relay screenshot supplied with the forum post."
+        }
+      ],
+      "downloads": [],
+      "controls": [],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Scope of the supplied tutorial",
+          "text": "This is a Windows PC-host setup for the BO2 Resurge or Microsoft Store client. The source describes a UDP relay for friends joining a custom game behind NAT. It does not establish PS4/PS5 game compatibility. The associated packages are not offered here while their distribution/capture review remains incomplete."
+        },
+        {
+          "type": "list",
+          "title": "Prepare the host",
+          "items": [
+            "Install Wireshark with Npcap selected, then install WinPcap 4.1.3. The source calls for both capture drivers, in that order. Reboot after both installations.",
+            "Confirm that Wireshark lists the active Ethernet or Wi-Fi interface. The source runs RUN_GUI.exe with administrator privileges.",
+            "Keep the relay package, supported PC game client and access to the router configuration available."
+          ]
+        },
+        {
+          "type": "steps",
+          "title": "Configure the network",
+          "items": [
+            {
+              "title": "Record the host and gateway addresses",
+              "text": "Run ipconfig in Command Prompt. Under the active adapter, note IPv4 Address for the host PC and Default Gateway for the router. The tutorial recommends a DHCP reservation or static host address."
+            },
+            {
+              "title": "Set the router forwarding rule",
+              "text": "Open the default gateway address and find Port Forwarding/NAT. Forward external UDP 3074 to internal UDP 3077 at the host PC’s IPv4 address. Enable and save the rule."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "title": "Source port mapping",
+          "text": "Protocol: UDP\nExternal game port: 3074\nInternal relay port: 3077\nDestination: host PC IPv4 address"
+        },
+        {
+          "type": "steps",
+          "title": "Open the custom game before starting the relay",
+          "items": [
+            {
+              "title": "Prepare RUN_GUI",
+              "text": "Open the relay tool as administrator. Set Game Port to 3074 and Relay Port to 3077. Do not choose Start yet."
+            },
+            {
+              "title": "Open the lobby",
+              "text": "Launch the supported PC client and open a Custom Game lobby/map first."
+            },
+            {
+              "title": "Start the relay",
+              "text": "Return to RUN_GUI and choose Start. Check the traffic/log output, then have a friend test joining through the public address or the client’s normal invite method."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "VPS option in the tutorial",
+          "items": [
+            "The source offers a VPS with public IPv4 when home forwarding is unavailable, including CGNAT/shared-network setups.",
+            "It opens inbound UDP 3074 and 3077 in both provider and operating-system firewalls, with outbound UDP permitted.",
+            "Its alternatives are the same relay on the VPS pointed at the home/public or VPN address, or WireGuard forwarding VPS UDP 3074 to the home client’s UDP 3077. Friends join the VPS public address.",
+            "The Windows machine running RUN_GUI still needs the packet-capture drivers."
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Check a failed connection",
+          "items": [
+            "For missing traffic, check both capture drivers, required permissions, the selected active network interface and the custom-game-before-Start order.",
+            "For join failures, check UDP forwarding, the host address, double NAT and CGNAT. Use a UDP-specific test rather than a TCP-only port checker.",
+            "If the setup stops working after a reboot, confirm that the host PC address has not changed. Preserve the full error text and relay logs when reporting a problem."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Screenshot and written ports",
+          "text": "The supplied screenshot shows Relay 3076 and Game 3074 as interface defaults. The attached written tutorial uses Relay 3077 and Game 3074. These source differences do not establish console compatibility."
+        }
+      ]
+    },
+    {
+      "id": "bo1-bo2-hydra-v1-0-0",
+      "gameIds": [
+        "black-ops-1",
+        "black-ops-2"
+      ],
+      "category": "rtm",
+      "group": "shared",
+      "publication": "include",
+      "name": "HYDRA v1.0.0",
+      "description": "The exact v1.0.0 release was unavailable upstream at the 2 November 2026 check. The original releases link currently lists other versions.",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-And-2-RTM-Tools",
+        "postTitle": "HYDRA v1.0.0",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1558076826579112007",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-bo2-hydra-v1-0-0.json",
+        "upstreamEvidenceFile": "docs/discord-ps4-ps5-raw/hydra-release-evidence.txt",
+        "reportedScanUrl": "https://www.virustotal.com/gui/file/df7583bac7086fdec218a62c5063b61a0eebd9e8039c9a0b608f95521c9c057b",
+        "exactReleaseAvailable": false
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo1-bo2-hydra-v1-0-0-image.jpg",
+          "display": "/assets/images/ps4-ps5/edited/bo1-bo2-hydra-v1-0-0-image.png",
+          "caption": "HYDRA supplied preview"
+        }
+      ],
+      "downloads": [
+        {
+          "id": "bo1-bo2-hydra-v1-0-0",
+          "label": "View releases (v1.0.0 unavailable)",
+          "url": "https://github.com/SnowdenShadow/HYDRA-Releases/releases",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "bo2-ials96-v1-2-0",
+      "gameIds": [
+        "black-ops-1",
+        "black-ops-2"
+      ],
+      "category": "rtm",
+      "group": "shared",
+      "publication": "include",
+      "name": "ials96 BO2 1.2.0",
+      "description": "Windows desktop tool; includes BO1 LAN Fix and Lobby Modded Classes.",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-And-2-RTM-Tools",
+        "postTitle": "ials96 BO2 1.2.0",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1556316838508634193",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo2-ials96-v1-2-0.json",
+        "releaseUrl": "https://github.com/ials96/ials96-updates/releases/tag/v1.2.0",
+        "rehosting": "Not offered; the author’s pinned release is linked.",
+        "releaseAsset": "https://github.com/ials96/ials96-updates/releases/download/v1.2.0/ials96-BO2-1.2.0-Standalone.zip"
+      },
+      "images": [],
+      "downloads": [
+        {
+          "id": "bo2-ials96-v1-2-0",
+          "label": "Download",
+          "url": "https://github.com/ials96/ials96-updates/releases/download/v1.2.0/ials96-BO2-1.2.0-Standalone.zip",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "bo1-bo2-payload-injector-debug",
+      "gameIds": [
+        "black-ops-1",
+        "black-ops-2"
+      ],
+      "category": "rtm",
+      "group": "shared",
+      "publication": "include",
+      "name": "Payload Injector + ps4debug.bin",
+      "description": "Windows payload injector targeting .NET Framework 4.8, with the supplied ps4debug payload.",
+      "source": {
+        "forumTitle": "🔵Black-Ops-1-And-2-RTM-Tools",
+        "postTitle": "Payload Injector + ps4debug.bin",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1554557103597813882",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/bo1-bo2-payload-injector-debug.json",
+        "originalMessageDeleted": true,
+        "injectorArchiveLabel": "PS4-Payload-Injector-Tool-3.6 Updated.zip",
+        "rehosting": "Not offered; captured upstream attachment/Mega URLs retained.",
+        "runtimeEvidenceFile": "docs/discord-ps4-ps5-raw/bo1-bo2-payload-injector-runtime.txt"
+      },
+      "images": [],
+      "downloads": [
+        {
+          "id": "bo1-bo2-ps4debug-bin",
+          "label": "Download ps4debug",
+          "url": "https://cdn.discordapp.com/attachments/1554557103597813882/1554557148074352841/ps4debug.bin",
+          "distribution": "include"
+        },
+        {
+          "id": "bo1-bo2-payload-injector-tool-v3-6",
+          "label": "Download Injector",
+          "url": "https://mega.nz/file/KFgDjSLZ#rNdRxZt4N2DwCA9cfEbtVOKbrMaoB3llkbSCOtluK5Q",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Observed connection demonstration",
+          "text": "The short video begins with address and port fields already filled. It does not show the initial payload receiver or firmware setup."
+        },
+        {
+          "type": "code",
+          "title": "Fields shown in the source",
+          "text": "PS4 Payload Injector\nConsole address: <CONSOLE_LAN_IP>\nPort: 9090\nPayload: ps4debug.bin\n\nBO2 PlayStation tool\nConsole address: <CONSOLE_LAN_IP>\nPort: 744\nLocal Client: 0"
+        },
+        {
+          "type": "steps",
+          "title": "Sequence visible in the clip",
+          "items": [
+            {
+              "title": "Select the debug payload",
+              "text": "In PS4 Payload Injector, open the file picker and select ps4debug.bin."
+            },
+            {
+              "title": "Injector state shown",
+              "text": "With the payload path selected, the source displays Connected while the cursor is over Send Payload."
+            },
+            {
+              "title": "Connect in the BO2 tool",
+              "text": "The BO2 PlayStation tool uses the same console LAN address, port 744 and Local Client 0. Clicking Connect PS4 changes its display from Not connected to Attached • codmp.elf • pid 76 • RPC ready in the recorded session."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Local Client meaning",
+          "text": "The source explains that Local Client 0 is the PS4 main player. Other values are local split-screen clients, not remote PS5 lobby slots."
+        }
+      ],
+      "controls": [],
+      "videos": [
+        {
+          "kind": "local",
+          "url": "/assets/videos/ps4-ps5/edited/bo1-bo2-payload-injector-guide.mp4",
+          "title": "Recorded payload and BO2 connection demonstration (silent)",
+          "original": "/assets/videos/ps4-ps5/originals/bo1-bo2-payload-injector-guide-video.mov"
+        }
+      ]
+    },
+    {
+      "id": "ghosts-matrixmods",
+      "gameIds": [
+        "ghosts"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "MatrixMods",
+      "source": {
+        "forumTitle": "🔵Ghost-Menus",
+        "postTitle": "MatrixMods",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565346658869317742",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/ghosts-matrixmods.json",
+        "gameUpdateLabels": [
+          "v1.20",
+          "v1.00"
+        ],
+        "archiveAssessment": "Contains Ghosts_100.elf and Ghosts_120.elf, plus other game ELFs; no README/control instructions. Hash matches existing BO3 Matrix archive; both source locations/copies retained."
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/ghosts-matrixmods-image.png",
+          "display": "/assets/images/ps4-ps5/edited/ghosts-matrixmods-image.png",
+          "caption": "Screenshot supplied with the MatrixMods post."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "ghosts-matrixmods",
+          "label": "Download",
+          "url": "https://cdn.discordapp.com/attachments/1565346658869317742/1565346660152909985/MatrixMenusPS4.rar",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "compatibilityText": "Only works on game updates 1.20 and 1.00, as stated in the post.",
+      "description": "ELF menu payloads."
+    },
+    {
+      "id": "ghosts-silentshadaw-v2",
+      "gameIds": [
+        "ghosts"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "SilentShadaw v2",
+      "source": {
+        "forumTitle": "🔵Ghost-Menus",
+        "postTitle": "SilentShadaw v2",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1528801035747983390",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/ghosts-silentshadaw-v2.json",
+        "linkedArchiveLabel": "SilentShadowV3PS4.rar",
+        "menuVersionUnconfirmed": true,
+        "archiveAssessment": "Archive contains SilentShadowV3.elf only; no README/install/control guide. Source-post v2 / archive V3 mismatch retained."
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/ghosts-silentshadaw-v2-image.jpg",
+          "caption": "Source preview labeled SilentShadow v2."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "ghosts-silentshadaw-v2",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/sqzaqcb6v9t2i0m/SilentShadowV3PS4.rar/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "description": "The post is titled v2; its linked archive is labeled v3."
+    },
+    {
+      "id": "ghosts-silentshadaw-v3",
+      "gameIds": [
+        "ghosts"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "SilentShadaw v3",
+      "source": {
+        "forumTitle": "🔵Ghost-Menus",
+        "postTitle": "SilentShadaw v3",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1528800649943191672",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/ghosts-silentshadaw-v3.json"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/ghosts-silentshadaw-v3-image.jpg",
+          "caption": "Source preview labeled SilentShadow v3."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "ghosts-silentshadaw-v3",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/pdqbs6ebw2797jq/",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "aw-matrixmods",
+      "gameIds": [
+        "advanced-warfare"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "MatrixMods",
+      "source": {
+        "forumTitle": "🔵AW-Menus",
+        "postTitle": "MatrixMods",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565343349681029200",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/aw-matrixmods.json",
+        "gameUpdateLabels": [
+          "1.23",
+          "1.00"
+        ]
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/aw-matrixmods-image.png",
+          "display": "/assets/images/ps4-ps5/edited/aw-matrixmods-image.png",
+          "caption": "Screenshot supplied with the forum post."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "aw-matrixmods",
+          "label": "Download",
+          "url": "https://cdn.discordapp.com/attachments/1565343349681029200/1565343350410706974/MatrixMenusPS4.rar",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "compatibilityText": "Only works on game updates 1.23 and 1.00, as stated in the post."
+    },
+    {
+      "id": "aw-appendum-1-23",
+      "gameIds": [
+        "advanced-warfare"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "Appendum (1.23)",
+      "source": {
+        "forumTitle": "🔵AW-Menus",
+        "postTitle": "Appendum (1.23)",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1553479623600250910",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/aw-appendum-1-23.json",
+        "screenshotVersionLabel": "AppendumPS4 v1.0",
+        "creatorCredit": "Created by DeathRGH"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/aw-appendum-1-23-image.png",
+          "caption": "AppendumPS4 v1.0 preview supplied with the Appendum (1.23) post."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "aw-appendum-1-23",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/ucf44a7znuestft/AppendumPS4AW.rar/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": []
+    },
+    {
+      "id": "mwr-matrixmods",
+      "gameIds": [
+        "modern-warfare-remastered"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "MatrixMods",
+      "source": {
+        "forumTitle": "🔵MW4R-Menu",
+        "postTitle": "MatrixMods",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565343901152317523",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/mwr-matrixmods.json",
+        "gameUpdateLabels": [
+          "1.13",
+          "1.02"
+        ]
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/mwr-matrixmods-image.png",
+          "display": "/assets/images/ps4-ps5/edited/mwr-matrixmods-image.png",
+          "caption": "Screenshot supplied with the forum post."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "mwr-matrixmods",
+          "label": "Download",
+          "url": "https://cdn.discordapp.com/attachments/1565343901152317523/1565343902507073606/MatrixMenusPS4.rar",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [],
+      "controls": [],
+      "compatibilityText": "Only works on game updates 1.13 and 1.02, as stated in the post."
+    },
+    {
+      "id": "mwr-mag-menu-v1",
+      "gameIds": [
+        "modern-warfare-remastered"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "MAG Menu v1",
+      "source": {
+        "forumTitle": "🔵MW4R-Menu",
+        "postTitle": "MAG Menu v1",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1563215087957975192",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/mwr-mag-menu-v1.json",
+        "writtenGuideFiles": [
+          "docs/discord-ps4-ps5-raw/mwr-mag-menu-v1-tutorial.txt",
+          "docs/discord-ps4-ps5-raw/mwr-mag-menu-v1-readme.txt"
+        ]
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/mwr-mag-menu-v1-image.jpg",
+          "caption": "Screenshot supplied with the forum post."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "mwr-mag-menu-v1",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/45z1tjfuf0i2zt0/MAG_INJECTOR_MAGUPDATE21102026.zip/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "steps",
+          "title": "MWR-specific setup from the supplied guide",
+          "items": [
+            {
+              "title": "Extract the full package",
+              "text": "Keep the Tools folder and other supplied files together. In the launcher, choose the Modern Warfare Remastered tool."
+            },
+            {
+              "title": "Prepare the PS4 game",
+              "text": "Enable GoldHEN and its bin loader, launch Modern Warfare Remastered update 1.15 and open Multiplayer."
+            },
+            {
+              "title": "Send debug and connect",
+              "text": "On the tool Home page, enter the PS4 IP address and use Send ps4debug (Envoyer ps4debug), port 9090. Wait for the console notification, then choose Connect (Connecter)."
+            },
+            {
+              "title": "Use the built-in menu",
+              "text": "On the GSC Injector page, leave the .gscbin field empty to select the built-in MAG menu."
+            },
+            {
+              "title": "Enable automatic injection",
+              "text": "Stay at the Multiplayer main menu, enable Auto inject (Injection auto), and keep the tool open and connected. The guide explains that MWR restarts its Multiplayer process between menus and matches, so automatic injection restores the menu."
+            },
+            {
+              "title": "Host a private match",
+              "text": "Start a private match as host; the menu loads with the map. Remove (Retirer) at the Multiplayer menu or restart the game to unload it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "AI Zombies mode",
+          "text": "In the menu, use GameMode → AI Zombies and choose a map. The source recommends a private team match, such as Team Deathmatch. The match restarts followed by two ten-second countdowns; selecting an AI Zombies entry again stops the mode."
+        },
+        {
+          "type": "list",
+          "title": "AI Zombies map choices in the guide",
+          "items": [
+            "Backlot, Ambush, Bloc, Vacant, Overgrown, Crash, Bog, Countdown, Crossfire, District, Downpour, Pipeline, Shipment, Showdown, Strike and Wet Work."
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Custom GSC scripts",
+          "items": [
+            "The Compilation card accepts a .gsc file or a folder of .gsc files, then compiles a .gscbin.",
+            "Define init(); the guide says it is called for matches and the menu lobby. Its menu-lobby map name is mp_vlobby_room, where the script should return immediately.",
+            "Supported includes are maps\\mp\\_utility, maps\\mp\\gametypes\\_hud_util and common_scripts\\utility in compiler\\include.",
+            "The stated limit is 128 KB of bytecode per script. Fully restart MWR if the tool reports that the injection area is full.",
+            "The source identifies gsc-tool as the compiler, licensed GPL-3.0; its license file is included in the archive."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Diagnostics and credits",
+          "text": "The Journal card and MAG_GSC_INJECTOR_MWR.log beside the executable record each step. Developers credited by the MWR guide: UrBaaZz and Zerty."
+        }
+      ],
+      "controls": [
+        {
+          "input": "R1 + Square",
+          "action": "Open or close"
+        },
+        {
+          "input": "L1 / R1",
+          "action": "Move up / down"
+        },
+        {
+          "input": "L2 / R2",
+          "action": "Previous / next page"
+        },
+        {
+          "input": "Square",
+          "action": "Select"
+        },
+        {
+          "input": "Change stance (crouch/stand)",
+          "action": "Back"
+        }
+      ],
+      "description": "Windows 10/11 GSC injector with the MAG menu and ps4debug built in.",
+      "compatibilityText": "PS4 Modern Warfare Remastered game update 1.15; GoldHEN with bin loader."
+    },
+    {
+      "id": "mw2r-ter152",
+      "gameIds": [
+        "modern-warfare-2-remastered"
+      ],
+      "category": "menu",
+      "group": "shared",
+      "publication": "include",
+      "name": "TER152",
+      "source": {
+        "forumTitle": "🔵MW2R-Menus",
+        "postTitle": "TER152",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565397515925328024",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/mw2r-ter152.json",
+        "writtenGuideFiles": [
+          "docs/discord-ps4-ps5-raw/mw2r-ter152-1-00-readme.txt",
+          "docs/discord-ps4-ps5-raw/mw2r-ter152-1-01-readme.txt",
+          "docs/discord-ps4-ps5-raw/mw2r-ter152-screen-fix.txt"
+        ],
+        "versionScope": "These are supplied menu build labels, not proven game-update compatibility."
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/mw2r-ter152-image.png",
+          "display": "/assets/images/ps4-ps5/edited/mw2r-ter152-image.png",
+          "caption": "Screenshot supplied with the forum post."
+        }
+      ],
+      "downloads": [
+        {
+          "id": "mw2r-ter152",
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/05rz15lwf7fazt1/MW2CR+PS4+By+TER152.rar/file",
+          "distribution": "include"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Choose the supplied menu build",
+          "text": "The included 1.01 note says to use that build only if there are problems with menu placement. No game-update compatibility is inferred from the 1.00/1.01 folder labels."
+        },
+        {
+          "type": "steps",
+          "title": "Installation from both READMEs",
+          "items": [
+            {
+              "title": "Open the game",
+              "text": "Launch Modern Warfare 2 Campaign Remastered."
+            },
+            {
+              "title": "Inject the ELF",
+              "text": "Use PlayStation 4 Tool Box v2 to inject the selected .elf, as specified by the supplied README."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Credits",
+          "text": "Menu by TER152. The supplied documents list YouTube / TER152 and Twitter / TER152."
+        }
+      ],
+      "controls": [],
+      "description": "Menu builds labeled 1.00 and 1.01; the 1.01 note addresses menu-placement problems."
+    },
+    {
+      "id": "cold-war-menu",
+      "gameIds": [
+        "cold-war"
+      ],
+      "category": "menu",
+      "group": "zombies",
+      "publication": "include",
+      "name": "Call of duty Cold War menu",
+      "description": "Video demonstration from the post; no download was provided.",
+      "guideLabel": "Watch demo",
+      "source": {
+        "forumTitle": "🔵Cold-War-Menus",
+        "postTitle": "Call of duty Cold War menu",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1551970153720455288",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cold-war-menu.json",
+        "originalVideoUrl": "https://youtube.com/shorts/ZRe1TLn7dVI?is=zTjpq8OijIIYFQz5"
+      },
+      "images": [],
+      "downloads": [],
+      "guideBlocks": [],
+      "controls": [],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZRe1TLn7dVI",
+          "title": "PS4 Call of Duty Black Ops Cold War Zombies mod menu demonstration"
+        }
+      ]
+    },
+    {
+      "id": "cod-dlc-cold-war-reference",
+      "gameIds": [
+        "cold-war"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA15010 · Game update 1.41",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD Black Ops Cold War",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-cold-war-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA15010. The post lists game update v1.41."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "cod-dlc-bo4-reference",
+      "gameIds": [
+        "black-ops-4"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA12446, CUSA11100 · Game update 1.26",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD Black Ops 4",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-bo4-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA12446, CUSA11100. The post lists game update v1.26."
+        },
+        {
+          "type": "list",
+          "title": "DLC labels in the post",
+          "items": [
+            "Multiplayer maps (CUSA12446)",
+            "Zombies maps (CUSA12446)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "cod-dlc-mwr-reference",
+      "gameIds": [
+        "modern-warfare-remastered"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA05379 · Game update 1.15",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD Modern Warfare Remastered",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-mwr-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA05379. The post lists game update v1.15."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "cod-dlc-infinite-warfare-reference",
+      "gameIds": [
+        "infinite-warfare"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA04762 · Game update 1.25",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD Infinite Warfare",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-infinite-warfare-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA04762. The post lists game update v1.25."
+        },
+        {
+          "type": "list",
+          "title": "DLC labels in the post",
+          "items": [
+            "Absolution",
+            "Sabotage",
+            "Continuum",
+            "Retribution"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        },
+        {
+          "type": "paragraph",
+          "text": "This game appears in the captured collection through its DLC reference. No mod menu or menu installation steps were supplied in this post."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "cod-dlc-aw-reference",
+      "gameIds": [
+        "advanced-warfare"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA00851 · Game update not specified in the post",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD Advanced Warfare",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-aw-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA00851. The post does not state a game update."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "cod-dlc-wwii-reference",
+      "gameIds": [
+        "wwii"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA05969, CUSA08632, CUSA08634 · Game update not specified in the post",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD WWII",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-wwii-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA05969, CUSA08632, CUSA08634. The post does not state a game update."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        },
+        {
+          "type": "paragraph",
+          "text": "This game appears in the captured collection through its DLC reference. No mod menu or menu installation steps were supplied in this post."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "cod-dlc-ghosts-reference",
+      "gameIds": [
+        "ghosts"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA00018 · Game update not specified in the post",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD Ghosts",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-ghosts-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA00018. The post does not state a game update."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "cod-dlc-bo3-reference",
+      "gameIds": [
+        "black-ops-3"
+      ],
+      "category": "reference",
+      "publication": "include",
+      "name": "DLC compatibility reference",
+      "description": "PS4 title IDs recorded in the supplied DLC post.",
+      "compatibilityText": "CUSA02624, CUSA02290 · Game update not specified in the post",
+      "source": {
+        "forumTitle": "COD-DLCS",
+        "postTitle": "COD Black Ops 3",
+        "capturedAt": "2026-11-02",
+        "captureFile": "docs/discord-ps4-ps5-raw/cod-dlc-bo3-review.json"
+      },
+      "images": [],
+      "downloads": [],
+      "guideLabel": "View compatibility details",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Title IDs in the source",
+          "text": "CUSA02624, CUSA02290. The post does not state a game update."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the PS4 title IDs listed in this specific post. They do not confirm support for other regions, game updates, console firmware or mod menus. Check the installed title ID and update separately."
+        }
+      ],
+      "controls": [],
+      "videos": []
+    },
+    {
+      "id": "hydra-wwii-v2-2-0",
+      "gameIds": [
+        "wwii",
+        "ghosts"
+      ],
+      "category": "rtm",
+      "publication": "include",
+      "name": "HYDRA 2.2.0 · Windows portable",
+      "version": "Pinned v2.2.0 · separate from the captured v1.0.0 entry",
+      "description": "The publisher’s v2.2.0 notes add a PS4 WWII GSC injector with Hydra menus and update the Ghosts menu.",
+      "compatibilityText": "Publisher notes: WWII on PS4, Multiplayer and Zombies; Ghosts Multiplayer and Extinction. No exact game update or CUSA range is specified in these release notes.",
+      "source": {
+        "type": "upstream-release",
+        "releaseUrl": "https://github.com/SnowdenShadow/HYDRA-Releases/releases/tag/v2.2.0",
+        "capturedAt": "2026-11-02",
+        "releaseEvidenceFile": "docs/discord-ps4-ps5-raw/hydra-v2-2-0-release-evidence.json",
+        "linkedFromCaptureFile": "docs/discord-ps4-ps5-raw/bo1-bo2-hydra-v1-0-0.json",
+        "sha256": "19384753aede69b25bc625d477839caff14b90963829879afff2acc4e5178368"
+      },
+      "downloads": [
+        {
+          "id": "hydra-wwii-v2-2-0",
+          "label": "Windows portable 2.2.0",
+          "url": "https://github.com/SnowdenShadow/HYDRA-Releases/releases/download/v2.2.0/HydraPortable-2.2.0.zip",
+          "distribution": "include"
+        }
+      ],
+      "images": [],
+      "guideLabel": "Release details & controls",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "title": "Separate upstream release",
+          "text": "This entry comes from the publisher’s tagged v2.2.0 release, reached through the HYDRA project linked in the captured forum post. It does not replace the unavailable v1.0.0 forum build. The project also lists newer releases; the file offered here is explicitly v2.2.0."
+        },
+        {
+          "type": "list",
+          "title": "Published game support",
+          "items": [
+            "WWII: a PS4 GSC injector and Hydra menus for Multiplayer and Zombies.",
+            "Ghosts: updated Hydra menus for Multiplayer and Extinction."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "title": "Compatibility details",
+          "text": "The release notes do not specify exact CUSA IDs, supported game updates, console firmware, connection ports or file-copy paths. Confirm those details in the tool’s own documentation before connecting it to a console. No PS5 compatibility is inferred."
+        },
+        {
+          "type": "paragraph",
+          "title": "Saved Windows package",
+          "text": "Only the Windows portable ZIP from this release was added. Its 90,946,143 bytes match the SHA-256 digest published by GitHub. A local archive copy is retained; the download button links the exact publisher asset. The package has not been executed."
+        },
+        {
+          "type": "code",
+          "title": "Publisher SHA-256",
+          "text": "19384753aede69b25bc625d477839caff14b90963829879afff2acc4e5178368"
+        }
+      ],
+      "controls": [
+        {
+          "input": "R1 + Square",
+          "action": "Open the WWII Multiplayer Hydra menu, according to the v2.2.0 release notes. Zombies opening controls are not stated."
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

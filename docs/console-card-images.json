@@ -1,0 +1,189 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "Existing PS5 hub and game-mod card image choices. No raster images edited and no new tool or payload downloads.",
+  "notes": [
+    "All listed files decoded with System.Drawing and were visually inspected.",
+    "Artwork identifies projects and games; it does not establish firmware compatibility.",
+    "Use contain for logos and GitHub social cards so the text and symbols remain visible. Screenshots and game art can use cover where the panel composition permits.",
+    "GTA V and RDR2 use existing repository art. Their original image URLs were not recorded, and the Steam pages are references rather than verified origins."
+  ],
+  "groups": {
+    "gameMods": [
+      "/assets/images/covers/cod-black-ops-3.jpg",
+      "/assets/images/gta52.png",
+      "/assets/images/rdr2.png"
+    ],
+    "callOfDuty": [
+      "/assets/images/covers/cod-black-ops-1.jpg",
+      "/assets/images/covers/cod-black-ops-2.jpg",
+      "/assets/images/covers/cod-black-ops-3.jpg"
+    ],
+    "apps": [
+      "/assets/images/console-software/playden.jpg",
+      "/assets/images/console-software/orbit.jpg",
+      "/assets/images/console-software/prosperostore.png"
+    ],
+    "payloads": [
+      "/assets/images/console-software/etahen.jpg",
+      "/assets/images/console-software/shadowmountplus.png",
+      "/assets/images/expansion-ps4-ps5/elfldr.png"
+    ],
+    "transfers": [
+      "/assets/images/expansion-ps4-ps5/ps5-ezremote.jpg",
+      "/assets/images/console-software/ps5upload.png",
+      "/assets/images/expansion-ps4-ps5/ftpsrv.png"
+    ]
+  },
+  "images": [
+    {
+      "image": "/assets/images/covers/cod-black-ops-1.jpg",
+      "bytes": 35824,
+      "width": 460,
+      "height": 215,
+      "sha256": "6b8d9549247ab703190b15c9c92ee38960e5129299c194b6f95720bfc24aa9ce",
+      "fit": "cover",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/42700/header.jpg",
+      "provenanceFile": "scripts/download-covers.sh",
+      "reference": "https://store.steampowered.com/app/42700/",
+      "title": "Call of Duty: Black Ops"
+    },
+    {
+      "image": "/assets/images/covers/cod-black-ops-2.jpg",
+      "bytes": 16165,
+      "width": 460,
+      "height": 215,
+      "sha256": "521070291fe542bbe48fc23c0b076325b7d118841cea3bf913ab64f2e2e4e827",
+      "fit": "cover",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/202970/header.jpg",
+      "provenanceFile": "scripts/download-covers.sh",
+      "reference": "https://store.steampowered.com/app/202970/",
+      "title": "Call of Duty: Black Ops II"
+    },
+    {
+      "image": "/assets/images/covers/cod-black-ops-3.jpg",
+      "bytes": 30895,
+      "width": 460,
+      "height": 215,
+      "sha256": "e529637f2bf1d94ce47e988c3c9c9b7b944253847c5576136f6ea60b86247d2d",
+      "fit": "cover",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311210/header.jpg",
+      "provenanceFile": "scripts/download-covers.sh",
+      "reference": "https://store.steampowered.com/app/311210/",
+      "title": "Call of Duty: Black Ops III"
+    },
+    {
+      "image": "/assets/images/gta52.png",
+      "bytes": 81020,
+      "width": 1280,
+      "height": 720,
+      "sha256": "791da620bfb0d5fa7afdaeca71b96c957ea123710af9c223a54e67d4f103e49b",
+      "fit": "cover",
+      "title": "Grand Theft Auto V",
+      "source": null,
+      "originStatus": "Existing repository artwork; original image URL is not recorded. Visually reviewed as the named game artwork. No claim of publisher-file provenance.",
+      "reference": "https://store.steampowered.com/app/271590/"
+    },
+    {
+      "image": "/assets/images/rdr2.png",
+      "bytes": 41820,
+      "width": 739,
+      "height": 415,
+      "sha256": "1257c022f4e7958041d939130ddad03efca80e9de6af17884be2b8dfd6e1c7e1",
+      "fit": "cover",
+      "title": "Red Dead Redemption 2",
+      "source": null,
+      "originStatus": "Existing repository artwork; original image URL is not recorded. Visually reviewed as the named game artwork. No claim of publisher-file provenance.",
+      "reference": "https://store.steampowered.com/app/1174180/"
+    },
+    {
+      "image": "/assets/images/console-software/etahen.jpg",
+      "bytes": 33672,
+      "width": 500,
+      "height": 500,
+      "sha256": "9417b8824c2a1246b34f48d5bb14c751f0d109880529fb250590c145801ad086",
+      "fit": "contain",
+      "source": "https://raw.githubusercontent.com/etaHEN/etaHEN/main/etaHEN-Icon.jpg",
+      "provenanceFile": "docs/console-software-images.json"
+    },
+    {
+      "image": "/assets/images/console-software/shadowmountplus.png",
+      "bytes": 103682,
+      "width": 512,
+      "height": 512,
+      "sha256": "e4675838cc7876da38717fdb0cd1f1a36967217b00ab0ecb05a6b05b19b981dd",
+      "fit": "contain",
+      "source": "https://raw.githubusercontent.com/drakmor/ShadowMountPlus/1.7/smp_icon.png",
+      "provenanceFile": "docs/console-software-images.json"
+    },
+    {
+      "image": "/assets/images/expansion-ps4-ps5/elfldr.png",
+      "bytes": 46731,
+      "width": 1200,
+      "height": 600,
+      "sha256": "9675d5f825a7497f32afcb06416dec45071934cc34d7a245fba867b36a49cd2a",
+      "fit": "contain",
+      "source": "https://opengraph.githubassets.com/1/ps5-payload-dev/elfldr",
+      "provenanceFile": "assets/images/expansion-ps4-ps5/image-provenance.json"
+    },
+    {
+      "image": "/assets/images/console-software/playden.jpg",
+      "bytes": 242241,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "800efc956d13f61803b7ff5e0ac7bb36ef87778715cc4636b3903fbefcc55d92",
+      "fit": "cover",
+      "source": "https://raw.githubusercontent.com/leolobato/playden-ps5/main/docs/images/library.jpg",
+      "provenanceFile": "docs/console-software-images.json"
+    },
+    {
+      "image": "/assets/images/console-software/orbit.jpg",
+      "bytes": 212850,
+      "width": 1672,
+      "height": 941,
+      "sha256": "83cf502034a422e172b48e9a965bb51563bd9056e23bafd6bc963a50bb01971b",
+      "fit": "cover",
+      "source": "https://raw.githubusercontent.com/saawant12/orbit-store-ps5/main/assets/orbit-preview.jpg",
+      "provenanceFile": "docs/console-software-images.json"
+    },
+    {
+      "image": "/assets/images/console-software/prosperostore.png",
+      "bytes": 288928,
+      "width": 512,
+      "height": 512,
+      "sha256": "d8b18b04b2307ee01b47da974c8e76a9f84ffdb2348975e07321527ad4e88071",
+      "fit": "contain",
+      "source": "https://raw.githubusercontent.com/darkxex/ProsperoStore/main/sce_sys/icon0.png",
+      "provenanceFile": "docs/console-software-images.json"
+    },
+    {
+      "image": "/assets/images/expansion-ps4-ps5/ps5-ezremote.jpg",
+      "bytes": 238069,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "fd3ba2912252d89753e95cc51f699fd7acaf17dcd30f038d9038fc114e40fa01",
+      "fit": "cover",
+      "source": "https://raw.githubusercontent.com/cy33hc/ps5-ezremote-client/HEAD/screenshot.jpg",
+      "provenanceFile": "assets/images/expansion-ps4-ps5/image-provenance.json"
+    },
+    {
+      "image": "/assets/images/console-software/ps5upload.png",
+      "bytes": 36814,
+      "width": 1280,
+      "height": 640,
+      "sha256": "f4dcc5cac95f62a78897a18e815eb680dd1582c4c42eecd375ce49ff0aaf07e5",
+      "fit": "cover",
+      "source": "https://raw.githubusercontent.com/phantomptr/ps5upload/main/branding/png/github-social-preview.png",
+      "provenanceFile": "docs/console-software-images.json"
+    },
+    {
+      "image": "/assets/images/expansion-ps4-ps5/ftpsrv.png",
+      "bytes": 42351,
+      "width": 1200,
+      "height": 600,
+      "sha256": "eb8154b6c398ff46637c4a4fa2c7c9ded9d0c618f1dab54653a90f18ba14daa3",
+      "fit": "contain",
+      "source": "https://opengraph.githubassets.com/1/ps5-payload-dev/ftpsrv",
+      "provenanceFile": "assets/images/expansion-ps4-ps5/image-provenance.json"
+    }
+  ]
+}

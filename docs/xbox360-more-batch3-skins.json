@@ -1,0 +1,411 @@
+{
+  "scope": "xbox360-more",
+  "batch": 3,
+  "reviewed": "2026-11-02",
+  "status": "Three new skin families fully verified; Silent Hill source collection incomplete and not marked ready",
+  "resources": [
+    {
+      "id": "liquid-glass",
+      "title": "Liquid Glass",
+      "family": "Liquid Glass",
+      "author": "ammarsi274 · Aurora base by Phoenix",
+      "group": "skins",
+      "version": "1.0.0",
+      "source": "https://github.com/ammarsi274/liquid-glass-aurora-skin",
+      "release": "https://github.com/ammarsi274/liquid-glass-aurora-skin/releases/tag/v1.0.0",
+      "downloadUrl": "https://github.com/ammarsi274/liquid-glass-aurora-skin/releases/download/v1.0.0/LiquidGlass-Aurora-Skin-v1.0.0.zip",
+      "fileName": "LiquidGlass-Aurora-Skin-v1.0.0.zip",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/LiquidGlass-Aurora-Skin-v1.0.0.zip",
+      "expectedBytes": 2368113,
+      "expectedSha256": "04b3e9328342ef6f462969fd4c694a65ba3e00ecb0eedcf2c0c28a27bc9cbec8",
+      "format": "ZIP / XZP",
+      "description": "Aurora skin with translucent profile and button panels over each game’s artwork, plus a matching coverflow layout.",
+      "runtime": "Homebrew-enabled Xbox 360 running Aurora 0.7b. The author explicitly excludes Aurora 0.6b and older. No exact motherboard or Microsoft dashboard build is pinned.",
+      "temporary": "A working Aurora homebrew session is required. The skin does not supply an exploit, and its author does not certify a particular temporary payload or Peer Pressure combination.",
+      "prerequisites": "Aurora 0.7b and the matching Liquid Glass coverflow layout bundled in this ZIP. Keep the included font notices and licence files.",
+      "installPath": "Hdd1:\\Apps\\Aurora\\Skins\\LiquidGlass.xzp",
+      "usbPath": "Usb0:\\Aurora\\Skins\\LiquidGlass.xzp",
+      "launch": "Aurora → Settings → Appearance → Skin → Liquid Glass",
+      "setup": [
+        "Extract the official release ZIP on your PC. It contains an Aurora directory with both the skin and matching layout.",
+        "Copy LiquidGlass.xzp into the Skins folder of your actual Aurora installation, and Liquid Glass.cfljson into Aurora\\Media\\Layouts\\. Preserve any existing versions before changing them.",
+        "Select Liquid Glass in Aurora’s skin settings. Then press B → View → Theme and choose the matching Liquid Glass CoverFlow layout. Restart Aurora if requested."
+      ],
+      "notes": "Enable game backgrounds for the intended appearance. The author notes that Greek Details text is truncated and the glass effect uses transparency rather than true blur.",
+      "license": "CC BY-NC-SA 4.0 for original artwork/layout; bundled fonts under SIL OFL 1.1",
+      "image": {
+        "staged": "docs/tmp/xbox360-more-batch3/liquid-glass.jpg",
+        "sourceUrl": "https://raw.githubusercontent.com/ammarsi274/liquid-glass-aurora-skin/v1.0.0/docs/home.jpg",
+        "credit": "ammarsi274 · official Liquid Glass real-console photo published by the author",
+        "bytes": 146882,
+        "sha256": "e73a4a2f8c93864770d0ce98347fb8455d6842f4e24cc8f182e8d547971efe47"
+      },
+      "verification": {
+        "archive": {
+          "file": "LiquidGlass-Aurora-Skin-v1.0.0.zip",
+          "bytes": 2368113,
+          "sha256": "04b3e9328342ef6f462969fd4c694a65ba3e00ecb0eedcf2c0c28a27bc9cbec8",
+          "entryCount": 7,
+          "skins": [
+            {
+              "name": "Aurora/Skins/LiquidGlass.xzp",
+              "bytes": 6426872,
+              "sha256": "283e2cafc6d2b8ae97982396053e0227f4e0198191ef5ac181681691a7669a45",
+              "entryCount": 528,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\n\t\"metaver\" : 1,\n\t\"skinname\" : \"Liquid Glass\",\n\t\"author\" : \"Liquid Glass\",\n\t\"revision\" : 1,\n\t\"description\" : \"iOS 26 style Liquid Glass: frosted capsules over a vivid wallpaper. Use with the Liquid Glass coverflow layout.\",\n\t\"creationdate\" : \"2026-10-12\",\n\t\"updateid\" : \"\",\n\t\"auroraver\" : \"0.7\"\n}\n"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006V\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1622,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "image": {
+                "name": "Images\\Background\\Aurora.Background.jpg",
+                "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\LiquidGlass-Aurora-Skin-v1.0.0-art.jpg",
+                "bytes": 102239,
+                "sha256": "fdcb8d3bc3e06f2977c4e17ac0cff5dc75d6d3db20dbd6d633b03265535ceb82"
+              }
+            }
+          ],
+          "layouts": [
+            {
+              "name": "Aurora/Media/Layouts/Liquid Glass.cfljson",
+              "bytes": 41221,
+              "sha256": "8a250006dd8bd49681eff199995312fa13c53a2fe36f16b33bd77516c026b6ef"
+            }
+          ],
+          "crcPassed": true
+        },
+        "physicalHardwareTested": false,
+        "downloadedBuildsExecuted": false
+      }
+    },
+    {
+      "id": "polar-glass",
+      "title": "Polar Glass",
+      "family": "Polar Glass",
+      "author": "ammarsi274 · Aurora base by Phoenix",
+      "group": "skins",
+      "version": "1.0.0",
+      "source": "https://github.com/ammarsi274/polar-glass-aurora-skin",
+      "release": "https://github.com/ammarsi274/polar-glass-aurora-skin/releases/tag/v1.0.0",
+      "downloadUrl": "https://github.com/ammarsi274/polar-glass-aurora-skin/releases/download/v1.0.0/PolarGlass-Aurora-Skin-v1.0.0.zip",
+      "fileName": "PolarGlass-Aurora-Skin-v1.0.0.zip",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/PolarGlass-Aurora-Skin-v1.0.0.zip",
+      "expectedBytes": 1514092,
+      "expectedSha256": "2081dbb5378a5000e9b5186fb79ecf8ba2021e0d720c92731776cd497529bbbc",
+      "format": "ZIP / XZP",
+      "description": "Dark Aurora skin with glass panels, green accents and a matching coverflow layout.",
+      "runtime": "Homebrew-enabled Xbox 360 running Aurora 0.7b. The author explicitly excludes Aurora 0.6b and older. No exact motherboard or Microsoft dashboard build is pinned.",
+      "temporary": "A working Aurora homebrew session is required. The skin does not supply an exploit, and its author does not certify a particular temporary payload or Peer Pressure combination.",
+      "prerequisites": "Aurora 0.7b and the matching Polar Glass coverflow layout bundled in this ZIP. Keep the included font notices and licence files.",
+      "installPath": "Hdd1:\\Apps\\Aurora\\Skins\\PolarGlass.xzp",
+      "usbPath": "Usb0:\\Aurora\\Skins\\PolarGlass.xzp",
+      "launch": "Aurora → Settings → Appearance → Skin → Polar Glass",
+      "setup": [
+        "Extract the official release ZIP on your PC. It contains an Aurora directory with both the skin and matching layout.",
+        "Copy PolarGlass.xzp into the Skins folder of your actual Aurora installation, and Polar Glass.cfljson into Aurora\\Media\\Layouts\\. Preserve any existing versions before changing them.",
+        "Select Polar Glass in Aurora’s skin settings. Then press B → View → Theme and choose the matching Polar Glass CoverFlow layout. Restart Aurora if requested."
+      ],
+      "notes": "Use the bundled matching layout to avoid cover overlap. Keep a known working skin available.",
+      "license": "CC BY-NC-SA 4.0 for original artwork/layout; bundled fonts under SIL OFL 1.1",
+      "image": {
+        "staged": "docs/tmp/xbox360-more-batch3/polar-glass.png",
+        "sourceUrl": "https://raw.githubusercontent.com/ammarsi274/polar-glass-aurora-skin/v1.0.0/docs/preview-large.png",
+        "credit": "ammarsi274 · official Polar Glass preview artwork published by the author",
+        "bytes": 183253,
+        "sha256": "a60d630e696e907f3db324c1978eb358a16817ed9dea2fb1f1455d14bf732cce"
+      },
+      "verification": {
+        "archive": {
+          "file": "PolarGlass-Aurora-Skin-v1.0.0.zip",
+          "bytes": 1514092,
+          "sha256": "2081dbb5378a5000e9b5186fb79ecf8ba2021e0d720c92731776cd497529bbbc",
+          "entryCount": 7,
+          "skins": [
+            {
+              "name": "Aurora/Skins/PolarGlass.xzp",
+              "bytes": 5487872,
+              "sha256": "4dd9b540e3a8a80953ba5ce8d5ea699101338b60c249c599dd2242ad4bc63684",
+              "entryCount": 478,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\n\t\"metaver\" : 1,\n\t\"skinname\" : \"Polar Glass\",\n\t\"author\" : \"Polar Glass\",\n\t\"revision\" : 1,\n\t\"description\" : \"Near-black ground, glass panels, one bright accent. Use with the Polar Glass coverflow layout.\",\n\t\"creationdate\" : \"2026-10-12\",\n\t\"updateid\" : \"\",\n\t\"auroraver\" : \"0.7\"\n}\n"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006V\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1622,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "image": {
+                "name": "Images\\Background\\Aurora.Background.jpg",
+                "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\PolarGlass-Aurora-Skin-v1.0.0-art.jpg",
+                "bytes": 43050,
+                "sha256": "1140bd6f68632fc7f94fe3475497168f74ad23be990c673ac75a087d52291830"
+              }
+            }
+          ],
+          "layouts": [
+            {
+              "name": "Aurora/Media/Layouts/Polar Glass.cfljson",
+              "bytes": 41227,
+              "sha256": "5850efa8648789177d2241b30fff3f9080a26cb1c53ecb3eb1d37d96983419bb"
+            }
+          ],
+          "crcPassed": true
+        },
+        "physicalHardwareTested": false,
+        "downloadedBuildsExecuted": false
+      }
+    },
+    {
+      "id": "matrix-v4",
+      "title": "Matrix Code · V4 skin collection",
+      "family": "Matrix Code",
+      "author": "Jeff Lonestar / JeffLonestar · Aurora base by Phoenix",
+      "group": "skins",
+      "version": "V4 · 2025-09-01 publisher update",
+      "source": "https://psx-place.com/threads/matrix-skins-with-background-music-for-aurora-xbox360.48325/",
+      "downloadUrl": "https://drive.google.com/file/d/1u7kN5qx1kYd-eeuBMOvqzwuhdbBXXNa1/view",
+      "downloadLinkKind": "publisher-page",
+      "fileName": "Matrix Skins Aurora V4.zip",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/matrix-v4.zip",
+      "expectedBytes": 27446593,
+      "expectedSha256": "05b079ebd41aacddca8f5dfd9cdd96fa60352680285b027f3a29d2396806a880",
+      "maxBytes": 268435456,
+      "format": "ZIP / XZP",
+      "description": "Matrix Code and Trinity-themed Aurora skins, with original music and no-music variants kept together.",
+      "runtime": "Homebrew-enabled Xbox 360 with Aurora 0.7-family skin support. Bundled skin.ver values are 0.7.1595.2; the author does not pin a minimum Microsoft dashboard build or motherboard.",
+      "temporary": "This collection requires an existing working Aurora setup. It does not provide an exploit or certify a temporary runtime / Peer Pressure combination.",
+      "prerequisites": "Aurora with compatible 0.7-family skins. The original ZIP contains 4 XZP files; no commercial game data is required.",
+      "installPath": "Hdd1:\\Apps\\Aurora\\Skins\\",
+      "usbPath": "Usb0:\\Aurora\\Skins\\",
+      "launch": "Aurora → B / View → Skin",
+      "setup": [
+        "Download the original ZIP from the creator’s linked Google Drive file page, then extract it on your PC.",
+        "Copy the XZP files from inside the collection folder directly into the Skins folder of your actual Aurora install. Keep the original ZIP and existing skins; do not nest the collection folder under Skins.",
+        "In Aurora’s View / Skin menu, choose the desired skin and restart Aurora. Keep a known working skin available."
+      ],
+      "notes": "Includes four skins: Matrix and Trinity startup variants, each with and without background music. The creator states V1/V2 are retired and recommends V4; no older local version is removed.",
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\matrix-v4-art.jpg",
+        "sourceUrl": "https://drive.google.com/file/d/1u7kN5qx1kYd-eeuBMOvqzwuhdbBXXNa1/view",
+        "credit": "Jeff Lonestar · packaged Matrix background artwork, not a console-test screenshot",
+        "bytes": 494762,
+        "sha256": "2317465baaf4c69edb0940b6c5fda29df69775406081ebb731be469ebd5defc4",
+        "archiveEntry": "Matrix Skins Aurora V4/MatrixCodeAuroraBootNoMusicV4.xzp → Images\\Background\\background.jpg"
+      },
+      "verification": {
+        "archive": {
+          "file": "matrix-v4.zip",
+          "bytes": 27446593,
+          "sha256": "05b079ebd41aacddca8f5dfd9cdd96fa60352680285b027f3a29d2396806a880",
+          "entryCount": 6,
+          "skins": [
+            {
+              "name": "Matrix Skins Aurora V4/MatrixCodeAuroraBootNoMusicV4.xzp",
+              "bytes": 6368993,
+              "sha256": "79882e6c348b3242f7e3d362e6120ab0c4e2741b04054a51620a59a27690c38d",
+              "entryCount": 427,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"MatrixCodeAuroraBootNoMusicV4\",\r\n\t\"author\" : \"Neo\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Matrix Code Skin without Music! (FinalVersion)\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true,
+              "image": {
+                "name": "Images\\Background\\background.jpg",
+                "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\matrix-v4-art.jpg",
+                "bytes": 494762,
+                "sha256": "2317465baaf4c69edb0940b6c5fda29df69775406081ebb731be469ebd5defc4"
+              }
+            },
+            {
+              "name": "Matrix Skins Aurora V4/MatrixCodeAuroraBootV4.xzp",
+              "bytes": 16108532,
+              "sha256": "c8d7054b066e915e8a60dc0d7a22b1261e69afa71948322404d0db6360fe5f6a",
+              "entryCount": 430,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"MatrixCodeAuroraBootV4\",\r\n\t\"author\" : \"Agent Smith\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Mr.Anderson, Welcome Back... We Missed You. (FinalVersion)\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true
+            },
+            {
+              "name": "Matrix Skins Aurora V4/MatrixCodeTrinityBootNoMusicV4.xzp",
+              "bytes": 6512838,
+              "sha256": "7eb21b2ee716b8e18d3df062e1510d9d2a09baa8b65106130278b293a00f84c7",
+              "entryCount": 427,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"MatrixCodeTrinityBootNoMusicV4\",\r\n\t\"author\" : \"Neo\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Matrix Code Skin without Music! (FinalVersion)\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true
+            },
+            {
+              "name": "Matrix Skins Aurora V4/MatrixCodeTrinityBootV4.xzp",
+              "bytes": 15508287,
+              "sha256": "23367e7e2618e5cbf495fe81cae71770083e97446ff1246072afaf2c1d8e4738",
+              "entryCount": 429,
+              "meta": [
+                {
+                  "name": "skin.meta",
+                  "raw": "{\r\n\t\"metaver\" : 1,\r\n\t\"skinname\" : \"MatrixCodeTrinityBootV4\",\r\n\t\"author\" : \"Trinity\",\r\n\t\"revision\" : 1,\r\n\t\"description\" : \"Dodge This! (FinalVersion)\",\r\n\t\"creationdate\" : \"2025-08-30\",\r\n\t\"updateid\" : \"\",\r\n\t\"auroraver\" : \"0.7\"\r\n}"
+                },
+                {
+                  "name": "skin.ver",
+                  "raw": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0006;\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+                  "words": [
+                    0,
+                    7,
+                    1595,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "hasAuroraMain": true
+            }
+          ],
+          "layouts": [],
+          "crcPassed": true
+        },
+        "physicalHardwareTested": false,
+        "downloadedBuildsExecuted": false
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "source": "https://www.realmodscene.com/index.php?/topic/4701-skin-aurora-steamos-beta/",
+      "status": "Source page returned403; no ready asset downloaded."
+    },
+    {
+      "source": "https://github.com/Olegovich17/ElegantModded",
+      "status": "Loose skin-development files; no ready release asset verified. No clone or source archive fetched."
+    }
+  ],
+  "pending": [
+    {
+      "id": "silent-hill-skins",
+      "source": "https://www.reddit.com/r/silenthill/comments/1neu5n8/",
+      "downloadUrl": "https://drive.google.com/file/d/1rj0Q3Ug-6KOKpYfR76cDg_bPzddmSk6X/view",
+      "status": "incomplete-download",
+      "reason": "Original-author Google Drive accepted the selected ZIP, but sequential and supported range transfers timed out. The range run completed112501721of154625941bytes before a request exhausted retries. Preallocated partial contains unfilled ranges and must not be treated as a valid ZIP.",
+      "expectedDownloadBytes": 154625941,
+      "completedRangeBytes": 112501721,
+      "partialFiles": [
+        "docs/tmp/xbox360-more-batch3/silent-hill.partial-1793621151574",
+        "docs/tmp/xbox360-more-batch3/silent-hill.ranged-partial-1793621616402"
+      ],
+      "readyFileMetadataCreated": false,
+      "physicalHardwareTested": false,
+      "downloadedBuildsExecuted": false
+    }
+  ],
+  "limits": [
+    "No build executed; no F: writes or main catalogue edits by this researcher.",
+    "Both glass release package SHA-256 values match official GitHub release asset digests. ZIP CRC and XUIZ index bounds/required Aurora scene and layout JSON verified.",
+    "Collection downloads used normal public Google Drive form plus supported HTTP range requests. Partial transfers were retained; only complete CRC-verified ZIPs are marked ready."
+  ]
+}

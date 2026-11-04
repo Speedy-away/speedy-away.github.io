@@ -1,0 +1,59 @@
+{
+  "updatedAt": "2026-11-03T22:16:18.006Z",
+  "task": "WWB-HOST ads, game patches and lower-firmware GoldHEN inventory",
+  "status": "Ready for root publisher and navigation integration",
+  "ads": {
+    "helper": "scripts/host-ads.cjs",
+    "api": "apply(file,html,{base optional})",
+    "head": "https://accountut.com/1/5f0b4b1c14e59aac1d8c0da4350e58b2",
+    "native": "https://bellnewyork.org/21/62821bf166fc6aeab021ec0455a62244",
+    "scope": "Authored public home/host browsing pages only; runtime, execution, download helpers and redirects remain byte-identical",
+    "stylesheet": "assets/host-ads.css"
+  },
+  "patches": {
+    "pages": [
+      "/hosts/ps4/patches/",
+      "/hosts/ps5/patches/"
+    ],
+    "games": {
+      "ps4": 98,
+      "ps5": 101
+    },
+    "builder": "scripts/build-host-game-patches.cjs",
+    "dataSource": "docs/ps4-ps5-game-patches.json",
+    "existingResourcesCopied": 281,
+    "copiedBytes": 1974972,
+    "allFArchiveBytesReverified": true,
+    "missingArtworkRestoredFromExistingMainAssets": 7,
+    "engineDelivery": "Original version-pinned upstream release ELF links; no new app mirror",
+    "report": "docs/host-game-patch-file-import.json"
+  },
+  "goldhen": {
+    "report": "docs/host-goldhen-retained-versions.json",
+    "actions": 33,
+    "exactFirmwares": [
+      "5.05",
+      "6.72",
+      "7.02",
+      "7.50",
+      "7.51",
+      "7.55",
+      "9.00"
+    ],
+    "genericRunAdded": false,
+    "newDownloads": 0
+  },
+  "validation": {
+    "focusedTests": 14,
+    "failed": 0,
+    "hardwareTested": false,
+    "browserRenderVerified": false,
+    "nativeExecution": false
+  },
+  "integration": [
+    "Root adds Game patches tab links to /hosts/{platform}/patches/.",
+    "Call host-ads.apply after old ad stripping and before or with project prefix rewriting.",
+    "Insert host-goldhen-retained-versions.actions after existing PS4 GoldHEN cleanup; do not replace the current 13.52/14.00 supplied build.",
+    "Publisher will add blue theme, source popup and new ads; no publisher edits by this agent."
+  ]
+}

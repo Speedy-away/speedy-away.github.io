@@ -1,0 +1,1450 @@
+{
+  "scope": "ds-dsi-more",
+  "reviewed": "2026-11-02",
+  "notes": "Exact official ready assets; README versions may be ahead of published builds. No standalone CIA, PC executable or source archive downloads selected. Original publisher bundles remain intact.",
+  "sources": [
+    "https://wiki.ds-homebrew.com/twilightmenu/installing-flashcard",
+    "https://wiki.ds-homebrew.com/twilightmenu/installing-dsi",
+    "https://wiki.ds-homebrew.com/twilightmenu/installing-3ds",
+    "https://wiki.ds-homebrew.com/twilightmenu/faq#how-do-i-install-custom-themes-for-twilight-menu",
+    "https://dsi.cfw.guide/"
+  ],
+  "entries": [
+    {
+      "id": "nesds",
+      "title": "nesDS",
+      "group": "emulators",
+      "version": "v2.1",
+      "project": "https://github.com/DS-Homebrew/NesDS",
+      "release": "https://github.com/DS-Homebrew/NesDS/releases/tag/v2.1",
+      "description": "NES / Famicom emulator with a dedicated DSi build and TWiLight Menu++ integration.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS mode"
+      ],
+      "install": [
+        "For TWiLight integration, install its Virtual Console add-on, then copy nesDS.nds to /_nds/TWiLightMenu/emulators/.",
+        "Keep your own NES/FDS games separately; back up the existing emulator before replacing it."
+      ],
+      "requirements": [
+        "Use the flashcart-compatible .nds asset for flashcarts. The .dsi variant adds a DSi title identity for compatible DSi launch/install routes. The extension alone does not set the CPU mode. The CIA asset belongs to a separate 3DS installation format and is excluded here.",
+        "Famicom Disk System games additionally require your own disksys.rom BIOS at the SD root."
+      ],
+      "files": [
+        {
+          "name": "nesDS.nds",
+          "url": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.nds",
+          "format": "NDS",
+          "label": "nesDS.nds"
+        },
+        {
+          "name": "nesDS.dsi",
+          "url": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.dsi",
+          "format": "DSi",
+          "label": "nesDS.dsi"
+        }
+      ]
+    },
+    {
+      "id": "gameyob",
+      "title": "GameYob · mavica build",
+      "group": "emulators",
+      "version": "v0.5.3b-mavica",
+      "project": "https://github.com/Lana-chan/GameYob",
+      "release": "https://github.com/Lana-chan/GameYob/releases/tag/v0.5.3b-mavica",
+      "description": "Game Boy / Game Boy Color emulator, including Super Game Boy enhancements and scaling options.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL"
+      ],
+      "install": [
+        "Place gameyob.nds in a folder such as /roms/nds/homebrew/. Choose gameyob_dsi.nds only for a launcher with DSi-mode support.",
+        "Create /_nds/ at the storage root; this release saves its settings there. Select your own GB/GBC games in the emulator."
+      ],
+      "requirements": [
+        "Use a launcher with working DLDI/storage access. The release notes acknowledge remaining Super Game Boy palette issues."
+      ],
+      "files": [
+        {
+          "name": "gameyob.nds",
+          "url": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob.nds",
+          "format": "NDS",
+          "label": "gameyob.nds"
+        },
+        {
+          "name": "gameyob_dsi.nds",
+          "url": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob_dsi.nds",
+          "format": "NDS",
+          "label": "gameyob_dsi.nds"
+        }
+      ]
+    },
+    {
+      "id": "nitrografx",
+      "title": "NitroGrafx",
+      "group": "emulators",
+      "version": "v0.9.1",
+      "project": "https://github.com/FluBBaOfWard/NitroGrafx",
+      "release": "https://github.com/FluBBaOfWard/NitroGrafx/releases/tag/v0.9.1",
+      "description": "PC Engine / TurboGrafx-16 emulator with support for some CD-ROM², Super CD-ROM² and Arcade Card software.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS mode"
+      ],
+      "install": [
+        "Extract NitroGrafx.nds and launch it through your homebrew menu. Create /NitroGrafx/ or /data/NitroGrafx/ for settings and saves.",
+        "Keep your games in a folder of your choice. For CD titles, select your own System Card BIOS in Options → Machine → Select Bios and follow CDROM_readme.txt."
+      ],
+      "requirements": [
+        "Some flashcarts need DLDI patching. No SuperGrafx emulation; game and CD compatibility varies. Published build is 0.9.1 even though the main-branch README says 0.9.2."
+      ],
+      "files": [
+        {
+          "name": "NitroGrafx0_9_1.zip",
+          "url": "https://github.com/FluBBaOfWard/NitroGrafx/releases/download/v0.9.1/NitroGrafx0_9_1.zip",
+          "format": "ZIP → NDS",
+          "label": "NitroGrafx0_9_1.zip"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/FluBBaOfWard/NitroGrafx/main/logo.png",
+      "artworkCredit": "PC Engine logo supplied by FluBBaOfWard/NitroGrafx"
+    },
+    {
+      "id": "s8ds",
+      "title": "S8DS",
+      "group": "emulators",
+      "version": "v1.1.8",
+      "project": "https://github.com/FluBBaOfWard/S8DS",
+      "release": "https://github.com/FluBBaOfWard/S8DS/releases/tag/v1.1.8",
+      "description": "Sega 8-bit emulator for Master System, Game Gear, SG-1000 and related machines.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS mode"
+      ],
+      "install": [
+        "Extract S8DS.nds. Create /S8DS/ or /data/S8DS/ for settings and saves.",
+        "Place your own games and any system-specific BIOS files in a folder of your choice, then select them in the emulator."
+      ],
+      "requirements": [
+        "Storage access may require DLDI patching on older flashcarts. Some emulated systems require a BIOS; compatibility varies. This is release 1.1.8, rather than the newer README version."
+      ],
+      "files": [
+        {
+          "name": "S8DS.zip",
+          "url": "https://github.com/FluBBaOfWard/S8DS/releases/download/v1.1.8/S8DS.zip",
+          "format": "ZIP → NDS",
+          "label": "S8DS.zip"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/FluBBaOfWard/S8DS/main/logo.png",
+      "artworkCredit": "S8DS project logo supplied by FluBBaOfWard"
+    },
+    {
+      "id": "a7800ds",
+      "title": "A7800DS",
+      "group": "emulators",
+      "version": "5.2c",
+      "project": "https://github.com/wavemotion-dave/A7800DS",
+      "release": "https://github.com/wavemotion-dave/A7800DS/releases/tag/5.2c",
+      "description": "Atari 7800 ProSystem emulator with per-game configuration and high-score support.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS mode"
+      ],
+      "install": [
+        "Copy A7800DS.nds to your card and launch with TWiLight Menu++ or Unlaunch on DSi, or a homebrew-capable flashcart.",
+        "Optional game folders: /roms/a7800/ or /roms/a78/. An optional 4 KiB BIOS named 7800.rom goes in /roms/bios/, /data/bios/ or beside the emulator."
+      ],
+      "requirements": [
+        "Use your own .a78/.bin games. The published build supports NTSC; PAL is unsupported. DS/DS Lite has less CPU headroom than DSi; do not assume identical performance."
+      ],
+      "files": [
+        {
+          "name": "A7800DS.nds",
+          "url": "https://github.com/wavemotion-dave/A7800DS/releases/download/5.2c/A7800DS.nds",
+          "format": "NDS",
+          "label": "A7800DS.nds"
+        }
+      ]
+    },
+    {
+      "id": "stellads",
+      "title": "StellaDS",
+      "group": "emulators",
+      "version": "8.4a",
+      "project": "https://github.com/wavemotion-dave/StellaDS",
+      "release": "https://github.com/wavemotion-dave/StellaDS/releases/tag/8.4a",
+      "description": "Atari 2600 VCS emulator with touchscreen cartridge selection, per-game settings and ARM-assisted cartridge support.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight (DSi mode for ARM games)"
+      ],
+      "install": [
+        "Copy StellaDS.nds to your flashcart microSD or console SD and launch it. Tap the cartridge slot to select your own .bin/.a26 game.",
+        "Configuration and save data are created under /data/. Keep those files when updating."
+      ],
+      "requirements": [
+        "Advanced DPC+/CDF cartridge types need DSi-class hardware running at 134 MHz for the intended experience. A flashcart normally runs in 67 MHz DS mode, including on a DSi/3DS. Older launchers may need DLDI patching."
+      ],
+      "files": [
+        {
+          "name": "StellaDS.nds",
+          "url": "https://github.com/wavemotion-dave/StellaDS/releases/download/8.4a/StellaDS.nds",
+          "format": "NDS",
+          "label": "StellaDS.nds"
+        }
+      ]
+    },
+    {
+      "id": "wordle-ds",
+      "title": "Wordle DS",
+      "group": "games",
+      "version": "v3.2.3",
+      "project": "https://github.com/Epicpkmn11/WordleDS",
+      "release": "https://github.com/Epicpkmn11/WordleDS/releases/tag/v3.2.3",
+      "description": "A native dual-screen word puzzle with daily words, statistics, mods and shareable results.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS mode"
+      ],
+      "install": [
+        "Copy WordleDS.nds to /roms/nds/homebrew/ (a suggested library folder), then open it in your homebrew launcher.",
+        "The game stores a completed result at /_nds/WordleDS/Wordle DS/share.txt; its statistics screen can show a QR result."
+      ],
+      "requirements": [
+        "Use the NDS asset on flashcarts. The upstream .dsi asset carries a title ID for NTM; the CIA asset belongs to a separate 3DS install route. Neither is needed for the NDS download here."
+      ],
+      "files": [
+        {
+          "name": "WordleDS.nds",
+          "url": "https://github.com/Epicpkmn11/WordleDS/releases/download/v3.2.3/WordleDS.nds",
+          "format": "NDS",
+          "label": "WordleDS.nds"
+        }
+      ]
+    },
+    {
+      "id": "portalds",
+      "title": "Aperture Science DS · portalDS",
+      "group": "games",
+      "version": "r1",
+      "project": "https://github.com/smealum/portalDS",
+      "release": "https://github.com/smealum/portalDS/releases/tag/r1",
+      "description": "A native Portal-inspired puzzle adaptation by smea, with graphics by Lobo. This is the original r1 release.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Extract the ready ZIP. Keep asds/ beside portalDS.nds; custom .map files go in asds/maps/ and controls are configured in asds/config.ini.",
+        "Use a NitroFS-capable launcher, such as hbmenu if the flashcart menu lacks support. This is a standalone adaptation, not the full PC game."
+      ],
+      "requirements": [
+        "The author describes this legacy final version as buggy and incomplete. Modern launcher compatibility has not been hardware-tested here."
+      ],
+      "files": [
+        {
+          "name": "ASDS_r1.zip",
+          "url": "https://github.com/smealum/portalDS/releases/download/r1/ASDS_r1.zip",
+          "format": "ZIP → NDS",
+          "label": "ASDS_r1.zip"
+        }
+      ],
+      "guide": "https://gbatemp.net/download/aperture-science-ds.32304/"
+    },
+    {
+      "id": "counter-strike-ds",
+      "title": "Counter Strike DS",
+      "group": "games",
+      "version": "1.0.0",
+      "project": "https://github.com/Fewnity/Counter-Strike-Nintendo-DS",
+      "release": "https://github.com/Fewnity/Counter-Strike-Nintendo-DS/releases/tag/1.0.0",
+      "description": "A native Counter-Strike demake. Single-player remains usable; the original multiplayer server is closed.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL · DS mode",
+        "3DS · DS mode"
+      ],
+      "install": [
+        "Extract the hardware ZIP. Put its .nds on your card and soundbank.bin plus counter_strike_music.raw at the storage root.",
+        "On a DSi/3DS SD setup, highlight the game in TWiLight Menu++, press Y, then set Run in to DS mode."
+      ],
+      "requirements": [
+        "Download the hardware archive, rather than the separate emulator package. Ad-hoc Ni-Fi multiplayer is unsupported; the publisher reports that the online server is closed."
+      ],
+      "files": [
+        {
+          "name": "Counter.Strike.DS.1.0.0.zip",
+          "url": "https://github.com/Fewnity/Counter-Strike-Nintendo-DS/releases/download/1.0.0/Counter.Strike.DS.1.0.0.zip",
+          "format": "ZIP → NDS",
+          "label": "Counter.Strike.DS.1.0.0.zip"
+        }
+      ],
+      "artworkUrl": "https://user-images.githubusercontent.com/39272935/176778790-14707835-d15d-473b-baeb-3cb51864b004.png",
+      "artworkCredit": "Counter Strike DS screenshot published by Fewnity",
+      "artworkType": "screenshot"
+    },
+    {
+      "id": "punch-a-rooney",
+      "title": "PUNCH-A-ROONEY!",
+      "group": "games",
+      "version": "1.0.1",
+      "project": "https://github.com/seaners42/Punch-A-Rooney",
+      "release": "https://github.com/seaners42/Punch-A-Rooney/releases/tag/1.0.1",
+      "description": "A native homebrew boxing game with a single-player championship and local multiplayer.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL via TWiLight",
+        "3DS DS mode via TWiLight"
+      ],
+      "install": [
+        "Copy Punch-A-Rooney.nds onto your flashcart microSD or prepared console SD, for example /roms/nds/homebrew/.",
+        "Launch it from the flashcart menu or TWiLight Menu++. Open Guide in the game for its controls."
+      ],
+      "requirements": [
+        "Local multiplayer needs two compatible consoles running the game. The author notes that unexpected latency can occur."
+      ],
+      "files": [
+        {
+          "name": "Punch-A-Rooney.nds",
+          "url": "https://github.com/seaners42/Punch-A-Rooney/releases/download/1.0.1/Punch-A-Rooney.nds",
+          "format": "NDS",
+          "label": "Punch-A-Rooney.nds"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/seaners42/Punch-A-Rooney/main/screenshots/gameplay1.png",
+      "artworkCredit": "Sean David / Punch-A-Rooney · CC BY-NC-SA 4.0",
+      "artworkType": "screenshot"
+    },
+    {
+      "id": "hbmenu",
+      "title": "Homebrew Menu · hbmenu",
+      "group": "apps",
+      "version": "v0.11.0",
+      "project": "https://github.com/devkitPro/nds-hb-menu",
+      "release": "https://github.com/devkitPro/nds-hb-menu/releases/tag/v0.11.0",
+      "description": "devkitPro’s file browser and launcher for native DS homebrew.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via supported homebrew route"
+      ],
+      "install": [
+        "Extract the release and use BOOT.NDS with the bootstrap appropriate to your flashcart or existing homebrew route.",
+        "Place additional homebrew in /nds/ and keep required app data in the paths its publisher specifies. Read the release README before choosing a flashcart boot file."
+      ],
+      "requirements": [
+        "This is a launcher for an already supported entry point, not a DSi exploit or a 3DS CIA installer. Bootstrap selection depends on the flashcart.",
+        "The original ready bundle also includes bootstrap.cia for a separate 3DS route. On DS/DSi use BOOT.NDS and the relevant flashcart bootstrap; do not install the CIA."
+      ],
+      "files": [
+        {
+          "name": "hbmenu-0.11.0.zip",
+          "url": "https://github.com/devkitPro/nds-hb-menu/releases/download/v0.11.0/hbmenu-0.11.0.zip",
+          "format": "ZIP → NDS",
+          "label": "hbmenu-0.11.0.zip"
+        }
+      ],
+      "url": "https://github.com/devkitPro/nds-hb-menu/releases/download/v0.11.0/hbmenu-0.11.0.zip"
+    },
+    {
+      "id": "cg-input-test",
+      "title": "CG NDS Input Test",
+      "group": "apps",
+      "version": "1.0.0",
+      "project": "https://github.com/claudechinsta/cg-nds-input-test",
+      "release": "https://github.com/claudechinsta/cg-nds-input-test/releases/tag/1.0.0",
+      "description": "A native diagnostic for buttons, touchscreen, microphone and battery status.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS mode"
+      ],
+      "install": [
+        "Copy cg-input-test.nds to your flashcart microSD or prepared console SD, then launch it as native NDS homebrew.",
+        "No separate data folder is required. /roms/nds/homebrew/ is an optional organizational folder."
+      ],
+      "requirements": [
+        "Battery information depends on hardware and launch mode; original DS hardware only exposes a high/low battery state."
+      ],
+      "files": [
+        {
+          "name": "cg-input-test.nds",
+          "url": "https://github.com/claudechinsta/cg-nds-input-test/releases/download/1.0.0/cg-input-test.nds",
+          "format": "NDS",
+          "label": "cg-input-test.nds"
+        }
+      ],
+      "url": "https://github.com/claudechinsta/cg-nds-input-test/releases/download/1.0.0/cg-input-test.nds",
+      "guide": "https://github.com/claudechinsta/cg-nds-input-test#readme"
+    },
+    {
+      "id": "switch-basic-light",
+      "title": "Switch - Basic Light",
+      "group": "skins",
+      "version": "v1.1.2",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/switch---basic-light",
+      "description": "A Nintendo Switch-inspired custom theme for TWiLight Menu++’s DSi interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS-mode launcher"
+      ],
+      "install": [
+        "Extract the theme directory into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight Menu++.",
+        "Hold SELECT while starting TWiLight Menu++, choose the DSi interface in GUI Settings, select the custom theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “DSi” describes the menu interface, not an exclusive console model. Preserve any existing themes when copying."
+      ],
+      "files": [
+        {
+          "name": "Switch - Basic Light.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Light.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Switch%20-%20Basic%20Light/screenshots/app-list.png",
+      "artworkCredit": "Switch - Basic Light preview · Pk11 / DS-Homebrew skins",
+      "artworkType": "screenshot",
+      "author": "Pk11",
+      "ui": "DSi"
+    },
+    {
+      "id": "switch-basic-dark",
+      "title": "Switch - Basic Dark",
+      "group": "skins",
+      "version": "v1.1.2",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/switch---basic-dark",
+      "description": "A Nintendo Switch-inspired custom theme for TWiLight Menu++’s DSi interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS-mode launcher"
+      ],
+      "install": [
+        "Extract the theme directory into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight Menu++.",
+        "Hold SELECT while starting TWiLight Menu++, choose the DSi interface in GUI Settings, select the custom theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “DSi” describes the menu interface, not an exclusive console model. Preserve any existing themes when copying."
+      ],
+      "files": [
+        {
+          "name": "Switch - Basic Dark.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Dark.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Switch%20-%20Basic%20Dark/screenshots/app-list.png",
+      "artworkCredit": "Switch - Basic Dark preview · Pk11 / DS-Homebrew skins",
+      "artworkType": "screenshot",
+      "author": "Pk11",
+      "ui": "DSi"
+    },
+    {
+      "id": "3darks",
+      "title": "3DarkS",
+      "group": "skins",
+      "version": "v1.1.2",
+      "project": "https://skins.ds-homebrew.com/nintendo-3ds/3darks",
+      "description": "A dark, restrained custom theme for TWiLight Menu++’s 3DS interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS DS-mode launcher"
+      ],
+      "install": [
+        "Extract the theme directory into /_nds/TWiLightMenu/3dsmenu/themes/ on the storage used by TWiLight Menu++.",
+        "Hold SELECT while starting TWiLight Menu++, choose the 3DS interface in GUI Settings, select the custom theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “3DS” describes the menu interface, not an exclusive console model. Preserve any existing themes when copying."
+      ],
+      "files": [
+        {
+          "name": "3DarkS.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/3DarkS.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/3DarkS/screenshots/app-list.png",
+      "artworkCredit": "3DarkS preview · earedguitr, Void / DS-Homebrew skins",
+      "artworkType": "screenshot",
+      "author": "earedguitr, Void",
+      "ui": "3DS"
+    },
+    {
+      "id": "spelunky-ds",
+      "title": "SpelunkyDS",
+      "group": "games",
+      "version": "1.13DSi++",
+      "project": "https://github.com/dbeef/spelunky-ds",
+      "release": "https://github.com/dbeef/spelunky-ds/releases/tag/1.13DSi++",
+      "description": "A native Spelunky remake focused on the cave levels, with generated layouts, traps and equipment.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher",
+        "3DS via DS-mode launcher"
+      ],
+      "install": [
+        "Copy spelunkyds.nds to your homebrew storage, for example /roms/nds/homebrew/, then open it in a compatible homebrew launcher. This folder is a library suggestion, not a fixed app requirement.",
+        "Use the publisher’s 1.13DSi++ ready executable. The older README calls the launcher DSiMenu++; its successor is TWiLight Menu++."
+      ],
+      "requirements": [
+        "This is an incomplete remake rather than the full commercial game. The project documents collision, item and crash issues; the release notes report stability improvements without guaranteeing crash-free play."
+      ],
+      "files": [
+        {
+          "name": "spelunkyds.nds",
+          "url": "https://github.com/dbeef/spelunky-ds/releases/download/1.13DSi%2B%2B/spelunkyds.nds",
+          "format": "NDS",
+          "label": "spelunkyds.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "minicraft-ds",
+      "title": "Minicraft DS Edition",
+      "group": "games",
+      "version": "v1.0.0-beta.3",
+      "project": "https://github.com/ArthurCose/Minicraft-DS-Edition",
+      "release": "https://github.com/ArthurCose/Minicraft-DS-Edition/releases/tag/v1.0.0-beta.3",
+      "description": "A fan port of Minicraft with a lower-screen map, touchscreen inventory management and NBT saves.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Copy Minicraft-DS-Edition.nds to your homebrew storage, for example /roms/nds/homebrew/, then open it in a compatible homebrew launcher. This folder is a library suggestion, not a fixed app requirement.",
+        "Use writable SD storage for the game’s saves, and keep existing save files when replacing the executable."
+      ],
+      "requirements": [
+        "This exact v1.0.0-beta.3 build is a beta. The original project lists unfinished features and interface work. No additional commercial Minecraft files are required."
+      ],
+      "files": [
+        {
+          "name": "Minicraft-DS-Edition.nds",
+          "url": "https://github.com/ArthurCose/Minicraft-DS-Edition/releases/download/v1.0.0-beta.3/Minicraft-DS-Edition.nds",
+          "format": "NDS",
+          "label": "Minicraft-DS-Edition.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch2",
+      "artworkUrl": "https://raw.githubusercontent.com/ArthurCose/Minicraft-DS-Edition/v1.0.0-beta.3/screenshots/overworld.png",
+      "artworkCredit": "ArthurCose · official Minicraft DS Edition overworld screenshot",
+      "artworkType": "screenshot"
+    },
+    {
+      "id": "2048-nds",
+      "title": "2048 NDS",
+      "group": "games",
+      "version": "v1.0.2",
+      "project": "https://github.com/mdmrk/2048-nds",
+      "release": "https://github.com/mdmrk/2048-nds/releases/tag/v1.0.2",
+      "description": "A native 2048 number puzzle with a Professor Layton-inspired presentation.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Copy 2048-nds.nds to your homebrew storage, for example /roms/nds/homebrew/, then open it in a compatible homebrew launcher. This folder is a library suggestion, not a fixed app requirement.",
+        "Open the game to merge tiles and work toward 2048; no separate data archive is supplied with this release."
+      ],
+      "requirements": [
+        "The author credits the presentation to Professor Layton assets. This is an independent homebrew puzzle; use the NDS release rather than a PC build."
+      ],
+      "files": [
+        {
+          "name": "2048-nds.nds",
+          "url": "https://github.com/mdmrk/2048-nds/releases/download/v1.0.2/2048-nds.nds",
+          "format": "NDS",
+          "label": "2048-nds.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "raptords",
+      "title": "RaptorDS · Call of the Shadows",
+      "group": "games",
+      "version": "MultiSys-V1.0.4",
+      "project": "https://github.com/RetroGamer02/raptor-consoles",
+      "release": "https://github.com/RetroGamer02/raptor-consoles/releases/tag/MultiSys-V1.0.4",
+      "description": "A native DS port of the classic vertical shooter. The publisher’s ready package includes the DOS v1.2 shareware data.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL via homebrew launcher"
+      ],
+      "install": [
+        "Extract RAPTOR-NDS-V1.1.0.nds and copy it to your homebrew library, for example /roms/nds/homebrew/. Open that NDS file with a compatible launcher.",
+        "This exact NDS build embeds FILE0000.GLB, FILE0001.GLB and SETUP.INI in NitroFS: no external game-data folder is needed for the included shareware. Full-game data uses the publisher’s separate DOS v1.2 asset procedure."
+      ],
+      "requirements": [
+        "The game build is RaptorDS v1.1.0 within the publisher’s MultiSys-V1.0.4 release. Other DOS revisions are incompatible; 3DS, Switch and Xbox packages are separate and excluded here."
+      ],
+      "files": [
+        {
+          "name": "RAPTOR-NDS-V1.1.0.zip",
+          "url": "https://github.com/RetroGamer02/raptor-consoles/releases/download/MultiSys-V1.0.4/RAPTOR-NDS-V1.1.0.zip",
+          "format": "ZIP → NDS",
+          "label": "RAPTOR-NDS-V1.1.0.zip"
+        }
+      ],
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "3d-maze",
+      "title": "3D Maze · Windows 9x port",
+      "group": "games",
+      "version": "v1.0.0",
+      "project": "https://github.com/headshot2017/3dmaze",
+      "release": "https://github.com/headshot2017/3dmaze/releases/tag/v1.0.0",
+      "description": "A DS port of the Windows 9x maze screensaver with a playable exploration mode.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Extract the FAT release and copy its data/ folder to the SD root. Place its NDS executable in your homebrew library.",
+        "Press START in the program to switch between automatic movement and player control."
+      ],
+      "requirements": [
+        "The selected FAT build needs SD storage and keeps textures in external data files. The publisher also supplies a separate NitroFS package; this catalogue pins the FAT variant for customizable textures."
+      ],
+      "files": [
+        {
+          "name": "3dmaze-nds-fat.zip",
+          "url": "https://github.com/headshot2017/3dmaze/releases/download/v1.0.0/3dmaze-nds-fat.zip",
+          "format": "ZIP → NDS",
+          "label": "3dmaze-nds-fat.zip"
+        }
+      ],
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "space-cadet-ds",
+      "title": "3D Pinball · Space Cadet DS",
+      "group": "games",
+      "version": "v0.5",
+      "project": "https://github.com/headshot2017/3dpinball-nds",
+      "release": "https://github.com/headshot2017/3dpinball-nds/releases/tag/v0.5",
+      "description": "A native Space Cadet Pinball engine port with standard and rotated screen modes. Bring your own game data.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Copy 3dpinball-nds.nds to your homebrew library. Put your own Windows 95 Plus / Windows XP Space Cadet game data in /data/SpaceCadetPinball/.",
+        "The v0.5 release adds Inverted rotation, using ABXY for the flippers. Keep the external data folder intact when updating the executable."
+      ],
+      "requirements": [
+        "Full Tilt! Pinball’s CADET.DAT is not compatible with this port. Some table lights are incorrect in DS mode because images are downscaled; the author says this issue is absent in DSi mode. The download contains the engine, not the commercial data."
+      ],
+      "files": [
+        {
+          "name": "3dpinball-nds.nds",
+          "url": "https://github.com/headshot2017/3dpinball-nds/releases/download/v0.5/3dpinball-nds.nds",
+          "format": "NDS",
+          "label": "3dpinball-nds.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "cereal-box-snow",
+      "title": "Cereal Box Snow",
+      "group": "apps",
+      "version": "v1.2.0",
+      "project": "https://github.com/tallHouse64/CerealBoxSnow",
+      "release": "https://github.com/tallHouse64/CerealBoxSnow/releases/tag/v1.2.0",
+      "description": "A creative particle simulator with snow, fire, rain, birds and fireflies.",
+      "models": [
+        "Nintendo DS homebrew"
+      ],
+      "install": [
+        "Copy CerealBoxSnowNds1.2.0.nds to your homebrew storage, for example /roms/nds/homebrew/, then open it in a compatible homebrew launcher. This folder is a library suggestion, not a fixed app requirement.",
+        "Use the touchscreen and on-screen controls. In the NDS build, X or Up switches between attracting and pushing particles."
+      ],
+      "requirements": [
+        "Select this Nintendo DS executable. The Windows and Linux releases are separate desktop apps and are not included in the console download."
+      ],
+      "files": [
+        {
+          "name": "CerealBoxSnowNds1.2.0.nds",
+          "url": "https://github.com/tallHouse64/CerealBoxSnow/releases/download/v1.2.0/CerealBoxSnowNds1.2.0.nds",
+          "format": "NDS",
+          "label": "CerealBoxSnowNds1.2.0.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "nitroustracker",
+      "title": "NitrousTracker · music studio",
+      "group": "apps",
+      "version": "release/0.6.5",
+      "project": "https://github.com/NitrousTracker/nitroustracker",
+      "release": "https://github.com/NitrousTracker/nitroustracker/releases/tag/release/0.6.5",
+      "description": "A stylus-operated XM music tracker and sampler, with pattern editing and microphone recording.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible homebrew launcher"
+      ],
+      "install": [
+        "Extract the ready ZIP. Copy nitroustracker.nds and the supplied songs/ and themes/ folders to your SD card. Launch nitroustracker.nds; debug and MIDI variants remain preserved in the original ZIP.",
+        "Use the app’s file browser to load or save .xm songs and .wav samples in folders of your choice. Keep copies of your songs before upgrading the app."
+      ],
+      "requirements": [
+        "This pins the ready 0.6.5 GitHub release. Later builds, including native 3DS and beta releases, have separate packages; they are not substituted for this DS build.",
+        "Samples must be uncompressed 8-bit or 16-bit WAV. Memory available for samples is smaller in DS mode than in DSi mode."
+      ],
+      "files": [
+        {
+          "name": "NitrousTracker-0.6.5.zip",
+          "url": "https://github.com/NitrousTracker/nitroustracker/releases/download/release%2F0.6.5/NitrousTracker-0.6.5.zip",
+          "format": "ZIP → NDS",
+          "label": "NitrousTracker-0.6.5.zip"
+        }
+      ],
+      "batch": "2026-11-02-batch2",
+      "guide": "https://docs.asie.pl/nitroustracker/"
+    },
+    {
+      "id": "dsidl",
+      "title": "dsidl · DSi QR downloader",
+      "group": "apps",
+      "version": "v0.1.1",
+      "project": "https://github.com/Epicpkmn11/dsidl",
+      "release": "https://github.com/Epicpkmn11/dsidl/releases/tag/v0.1.1",
+      "description": "A DSi-camera utility for downloading a file from a URL encoded in a QR code.",
+      "models": [
+        "DSi / DSi XL · DSi mode only"
+      ],
+      "install": [
+        "Copy dsidl.dsi to the DSi SD card and open it with a DSi-mode homebrew launcher. A DS / DS Lite flashcart cannot provide its required camera and DSi Wi-Fi functions.",
+        "Configure Wi-Fi through System Settings → Advanced Settings. Scan a QR containing a URL, then choose the SD destination folder and filename in dsidl."
+      ],
+      "requirements": [
+        "The publisher labels v0.1.1 as a prerelease. Requires a working DSi camera, SD access and a compatible router. Its dsiwifi library has router limitations; the author says WEP/open networks may not work. Hold SELECT at launch for connection logs."
+      ],
+      "files": [
+        {
+          "name": "dsidl.dsi",
+          "url": "https://github.com/Epicpkmn11/dsidl/releases/download/v0.1.1/dsidl.dsi",
+          "format": "DSi",
+          "label": "dsidl.dsi"
+        }
+      ],
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "sky",
+      "title": "Sky",
+      "group": "skins",
+      "version": "v0.7",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/sky",
+      "description": "A sky-themed menu designed for the blue DSi profile colour.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the ready archive into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight. Retain the skin’s own folder and original directory name.",
+        "Hold SELECT while launching TWiLight Menu++, choose the DSi user interface in GUI Settings, select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "A working TWiLight Menu++ installation is required. DSi identifies the launcher interface, not a restriction to DSi hardware. Preserve other theme folders when copying."
+      ],
+      "files": [
+        {
+          "name": "Sky.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sky.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Sky/icon.png",
+      "artworkCredit": "kool_duck · official Sky theme preview via DS-Homebrew",
+      "artworkType": "logo",
+      "author": "kool_duck",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "sharp-white-black",
+      "title": "Sharp - White on Black",
+      "group": "skins",
+      "version": "v1.0.1",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/sharp---white-on-black",
+      "description": "A monochrome theme with a 208×143 box-art frame and restrained interface details.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the ready archive into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight. Retain the skin’s own folder and original directory name.",
+        "Hold SELECT while launching TWiLight Menu++, choose the DSi user interface in GUI Settings, select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "A working TWiLight Menu++ installation is required. DSi identifies the launcher interface, not a restriction to DSi hardware. Preserve other theme folders when copying."
+      ],
+      "files": [
+        {
+          "name": "Sharp - White on Black.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sharp%20-%20White%20on%20Black.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Sharp%20-%20White%20on%20Black/screenshots/preview.png",
+      "artworkCredit": "Iruel · official Sharp - White on Black theme preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "Iruel",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "relaxing-space",
+      "title": "Relaxing Space",
+      "group": "skins",
+      "version": "v1.2.1",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/relaxing-space",
+      "description": "A deep-space menu with soothing background music, adapted from an earlier 3DS theme.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the ready archive into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight. Retain the skin’s own folder and original directory name.",
+        "Hold SELECT while launching TWiLight Menu++, choose the DSi user interface in GUI Settings, select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "A working TWiLight Menu++ installation is required. DSi identifies the launcher interface, not a restriction to DSi hardware. Preserve other theme folders when copying."
+      ],
+      "files": [
+        {
+          "name": "Relaxing Space.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Relaxing%20Space.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Relaxing%20Space/screenshots/app-list.png",
+      "artworkCredit": "BlakCake, DVDo · official Relaxing Space theme preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "BlakCake, DVDo",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "darker",
+      "title": "Darker",
+      "group": "skins",
+      "version": "v1.0.2",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/darker",
+      "description": "A darker variation of the default TWiLight DSi interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the ready archive into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight. Retain the skin’s own folder and original directory name.",
+        "Hold SELECT while launching TWiLight Menu++, choose the DSi user interface in GUI Settings, select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "A working TWiLight Menu++ installation is required. DSi identifies the launcher interface, not a restriction to DSi hardware. Preserve other theme folders when copying."
+      ],
+      "files": [
+        {
+          "name": "darker.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/darker.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/darker/screenshots/app-list.png",
+      "artworkCredit": "RocketRobz, spellboundtriangle · official Darker theme preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "RocketRobz, spellboundtriangle",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "default-dark",
+      "title": "Default Dark",
+      "group": "skins",
+      "version": "v1.0.4",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/default-dark",
+      "description": "The default TWiLight DSi layout in black, useful for restoring a familiar dark interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the ready archive into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight. Retain the skin’s own folder and original directory name.",
+        "Hold SELECT while launching TWiLight Menu++, choose the DSi user interface in GUI Settings, select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "A working TWiLight Menu++ installation is required. DSi identifies the launcher interface, not a restriction to DSi hardware. Preserve other theme folders when copying."
+      ],
+      "files": [
+        {
+          "name": "dark.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/dark.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/dark/screenshots/app-list.png",
+      "artworkCredit": "RocketRobz · official Default Dark theme preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "RocketRobz",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "default-white",
+      "title": "Default White",
+      "group": "skins",
+      "version": "v1.0.4",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/default-white",
+      "description": "The default TWiLight DSi layout in white, useful for restoring the familiar light interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the ready archive into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight. Retain the skin’s own folder and original directory name.",
+        "Hold SELECT while launching TWiLight Menu++, choose the DSi user interface in GUI Settings, select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "A working TWiLight Menu++ installation is required. DSi identifies the launcher interface, not a restriction to DSi hardware. Preserve other theme folders when copying."
+      ],
+      "files": [
+        {
+          "name": "white.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/white.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/white/screenshots/app-list.png",
+      "artworkCredit": "RocketRobz · official Default White theme preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "RocketRobz",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch2"
+    },
+    {
+      "id": "terrariads",
+      "title": "TerrariaDS",
+      "group": "games",
+      "version": "0.2",
+      "project": "https://github.com/AzizBgBoss/TerrariaDS",
+      "release": "https://github.com/AzizBgBoss/TerrariaDS/releases/tag/0.2",
+      "description": "A work-in-progress Terraria-inspired remake with generated worlds, crafting and touchscreen interaction.",
+      "models": [
+        "DSi / XL via TWiLight Menu++",
+        "3DS family via TWiLight Menu++",
+        "DS / DS Lite flashcarts · publisher untested"
+      ],
+      "install": [
+        "Copy TerrariaDS.nds to a folder such as /roms/nds/homebrew/ on your homebrew storage and open it in a compatible launcher. This is a suggested library folder, not an app-specific fixed path.",
+        "Use TWiLight Menu++ with the launcher set to Default as the publisher directs. Use writable SD storage and keep the generated world and character saves."
+      ],
+      "requirements": [
+        "This v0.2 fan remake has a limited content set; it is not the complete Terraria game. The author reports DSi and 3DS TWiLight testing, while flashcart support remains untested and may need DLDI patching."
+      ],
+      "files": [
+        {
+          "name": "TerrariaDS.nds",
+          "url": "https://github.com/AzizBgBoss/TerrariaDS/releases/download/0.2/TerrariaDS.nds",
+          "format": "NDS",
+          "label": "TerrariaDS.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch3",
+      "artworkUrl": "https://raw.githubusercontent.com/AzizBgBoss/TerrariaDS/0.2/media/logo.png",
+      "artworkCredit": "AzizBgBoss · official TerrariaDS project logo"
+    },
+    {
+      "id": "derailed",
+      "title": "Derailed!",
+      "group": "games",
+      "version": "1.1alpha",
+      "project": "https://github.com/AzizBgBoss/derailed",
+      "release": "https://github.com/AzizBgBoss/derailed/releases/tag/1.1alpha",
+      "description": "An Unrailed-inspired train-building game with an optional robot assistant.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Copy derailed.nds to a folder such as /roms/nds/homebrew/ on your homebrew storage and open it in a compatible launcher. This is a suggested library folder, not an app-specific fixed path.",
+        "Start with single-player and the game’s tutorial. The included local multiplayer implementation is experimental."
+      ],
+      "requirements": [
+        "The selected release is explicitly 1.1alpha. The author lists multiplayer bugs and further UI work; online multiplayer is a planned feature, not a supported feature of this build."
+      ],
+      "files": [
+        {
+          "name": "derailed.nds",
+          "url": "https://github.com/AzizBgBoss/derailed/releases/download/1.1alpha/derailed.nds",
+          "format": "NDS",
+          "label": "derailed.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "microcitynds",
+      "title": "MicroCityNDS",
+      "group": "games",
+      "version": "v1.0",
+      "project": "https://github.com/AzizBgBoss/MicroCityNDS",
+      "release": "https://github.com/AzizBgBoss/MicroCityNDS/releases/tag/v1.0",
+      "description": "A miniature city-building game ported from jhhoward’s Arduboy MicroCity, with an enlarged DS display.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Copy MicroCityNDS.nds to a folder such as /roms/nds/homebrew/ on your homebrew storage and open it in a compatible launcher. This is a suggested library folder, not an app-specific fixed path.",
+        "The DS port swaps the original A/B button mapping. Follow the game’s interface to build and manage your city."
+      ],
+      "requirements": [
+        "The publisher’s v1.0 notes say this port has no audio. No external commercial game data is listed for the ready NDS release."
+      ],
+      "files": [
+        {
+          "name": "MicroCityNDS.nds",
+          "url": "https://github.com/AzizBgBoss/MicroCityNDS/releases/download/v1.0/MicroCityNDS.nds",
+          "format": "NDS",
+          "label": "MicroCityNDS.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "monty-hall-ds",
+      "title": "Monty Hall DS",
+      "group": "games",
+      "version": "v2.0",
+      "project": "https://github.com/Rph-nsmb/MontyHallDS",
+      "release": "https://github.com/Rph-nsmb/MontyHallDS/releases/tag/v2.0",
+      "description": "A probability puzzle with an interactive door-choice game and a 2,000-game simulation mode.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi via compatible DS-mode launcher"
+      ],
+      "install": [
+        "Extract MontyHallDS.nds and Readme.txt from the ready ZIP. Put MontyHallDS.nds in your homebrew library; this exact release has no external data folder.",
+        "Launch the NDS file from your homebrew menu; choose normal play or the simulation to compare the outcomes of staying and switching."
+      ],
+      "requirements": [
+        "Version 2.0 fixes the simulation and adds sound effects. The bundled Readme.txt explains its controls and game modes."
+      ],
+      "files": [
+        {
+          "name": "Monty.Hall.DS.v2.0.zip",
+          "url": "https://github.com/Rph-nsmb/MontyHallDS/releases/download/v2.0/Monty.Hall.DS.v2.0.zip",
+          "format": "ZIP → NDS",
+          "label": "Monty.Hall.DS.v2.0.zip"
+        }
+      ],
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "spirited-ds",
+      "title": "Spirited DS",
+      "group": "games",
+      "version": "Version1.0",
+      "project": "https://github.com/KahnerC/SpiritedDS",
+      "release": "https://github.com/KahnerC/SpiritedDS/releases/tag/Version1.0",
+      "description": "A Top Trumps-style card game with characters from the television series Spirited.",
+      "models": [
+        "DS flashcart",
+        "DSi via compatible launcher",
+        "3DS DS-mode homebrew"
+      ],
+      "install": [
+        "Copy spirited_ds.nds to a folder such as /roms/nds/homebrew/ on your homebrew storage and open it in a compatible launcher. This is a suggested library folder, not an app-specific fixed path.",
+        "Choose one of the five qualities on your card. Winning a comparison takes both cards; play continues until one side has none."
+      ],
+      "requirements": [
+        "The author describes a minimal independent fan game and explicitly notes that this release has no sound."
+      ],
+      "files": [
+        {
+          "name": "spirited_ds.nds",
+          "url": "https://github.com/KahnerC/SpiritedDS/releases/download/Version1.0/spirited_ds.nds",
+          "format": "NDS",
+          "label": "spirited_ds.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "ikachan-ds",
+      "title": "Ikachan DS",
+      "group": "games",
+      "version": "0.2.1",
+      "project": "https://github.com/awkitsune/IkachanDS",
+      "release": "https://github.com/awkitsune/IkachanDS/releases/tag/0.2.1",
+      "description": "A Nintendo DS adaptation of Pixel’s underwater adventure, following a squid exploring a cave.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL homebrew"
+      ],
+      "install": [
+        "Use IkachanDS.nds for a DS flashcart or compatible NDS launcher. Place it in your homebrew library, such as /roms/nds/homebrew/.",
+        "IkachanDS.dsi is the separate title-identified DSi variant for a compatible direct-boot or hiyaCFW/NTM route; use the installation method documented for that setup."
+      ],
+      "requirements": [
+        "The release tag is 0.2.1; the README’s “Ikachan 1.5.2” refers to the underlying game, not this DS port release. The original NDS and DSi files are kept separately."
+      ],
+      "files": [
+        {
+          "name": "IkachanDS.nds",
+          "url": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.nds",
+          "format": "NDS",
+          "label": "IkachanDS.nds"
+        },
+        {
+          "name": "IkachanDS.dsi",
+          "url": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.dsi",
+          "format": "DSi",
+          "label": "IkachanDS.dsi"
+        }
+      ],
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "dslibris",
+      "title": "dslibris · EPUB reader",
+      "group": "apps",
+      "version": "v1.5.2-2",
+      "project": "https://github.com/rhaleblian/dslibris",
+      "release": "https://github.com/rhaleblian/dslibris/releases/tag/v1.5.2-2",
+      "description": "A two-screen ebook reader for DS, DSi and DSi XL, with bookmarks and configurable TrueType fonts.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / DSi XL"
+      ],
+      "install": [
+        "Extract dslibris.nds, Font/ and Book/ to the storage root, keeping that exact layout. Do not put them inside a new app subfolder.",
+        "Place your EPUB books in /Book/ and optional .ttf fonts in /Font/. Launch dslibris.nds from the homebrew menu."
+      ],
+      "requirements": [
+        "Some flashcarts need the matching DLDI patch. This is the published v1.5.2-2 release; the separate v1.6.0 prerelease is not substituted. The upstream repository is archived."
+      ],
+      "files": [
+        {
+          "name": "dslibris-1.5.2-2.zip",
+          "url": "https://github.com/rhaleblian/dslibris/releases/download/v1.5.2-2/dslibris-1.5.2-2.zip",
+          "format": "ZIP → NDS",
+          "label": "dslibris-1.5.2-2.zip"
+        }
+      ],
+      "batch": "2026-11-02-batch3",
+      "guide": "https://github.com/rhaleblian/dslibris/wiki/User:-Quickstart",
+      "artworkUrl": "https://raw.githubusercontent.com/rhaleblian/dslibris/v1.5.2-2/etc/sample/browser.png",
+      "artworkCredit": "Ray Haleblian · official dslibris book-browser screenshot",
+      "artworkType": "screenshot"
+    },
+    {
+      "id": "dsi-camera",
+      "title": "DSi camera test",
+      "group": "apps",
+      "version": "v1.1.0",
+      "project": "https://github.com/Epicpkmn11/dsi-camera",
+      "release": "https://github.com/Epicpkmn11/dsi-camera/releases/tag/v1.1.0",
+      "description": "A small camera utility that previews the DSi’s cameras and saves 640×480 PNG photos.",
+      "models": [
+        "DSi / DSi XL · DSi mode only"
+      ],
+      "install": [
+        "Copy dsi-camera.nds onto the DSi SD card and open it with a launcher that provides DSi-mode camera and SD access.",
+        "Saved photos use /DCIM/100DSI00/IMG_####.PNG. Keep existing photos and available space on the card."
+      ],
+      "requirements": [
+        "The .nds extension does not make this a DS / DS Lite camera app: it requires the DSi hardware cameras. The publisher supplies a separate CIA asset for another installation route; it is not included here."
+      ],
+      "files": [
+        {
+          "name": "dsi-camera.nds",
+          "url": "https://github.com/Epicpkmn11/dsi-camera/releases/download/v1.1.0/dsi-camera.nds",
+          "format": "NDS",
+          "label": "dsi-camera.nds"
+        }
+      ],
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "ikureader",
+      "title": "IkuReader · modern build",
+      "group": "apps",
+      "version": "6.5_modern",
+      "project": "https://github.com/awkitsune/IkuReader",
+      "release": "https://github.com/awkitsune/IkuReader/releases/tag/6.5_modern",
+      "description": "An updated ebook reader for EPUB, FB2 and text books, with fonts, encodings and bookmarks.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL direct boot or hiyaCFW"
+      ],
+      "install": [
+        "Extract sdcard-root.zip into the SD root, retaining /books/ and /data/ikureader/ with its fonts, encodings and translations.",
+        "Use IkuReader.nds for DS flashcarts, or IkuReader.dsi for the publisher’s DSi direct-boot/hiyaCFW route. Keep your books and /data/ikureader/bookmarks/ when updating."
+      ],
+      "requirements": [
+        "The data ZIP is required alongside the selected executable. Preserve the supplied fonts and encoding tables; this page keeps both original console variants separately."
+      ],
+      "files": [
+        {
+          "name": "IkuReader.nds",
+          "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.nds",
+          "format": "NDS",
+          "label": "IkuReader.nds"
+        },
+        {
+          "name": "IkuReader.dsi",
+          "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.dsi",
+          "format": "DSi",
+          "label": "IkuReader.dsi"
+        },
+        {
+          "name": "sdcard-root.zip",
+          "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/sdcard-root.zip",
+          "format": "ZIP → required reader data",
+          "label": "Required fonts, encodings & book folders · ZIP",
+          "kind": "data",
+          "requiredContents": [
+            "data/ikureader/fonts/LiberationSerif.ttf",
+            "data/ikureader/translations/English.txt"
+          ]
+        }
+      ],
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "wii-u",
+      "title": "Wii U",
+      "group": "skins",
+      "version": "v1.0.0",
+      "project": "https://skins.ds-homebrew.com/nintendo-3ds/wii-u",
+      "description": "A Wii U HOME Menu-inspired TWiLight skin with matching sound and music.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the theme’s own directory into /_nds/TWiLightMenu/3dsmenu/themes/ on the storage used by TWiLight Menu++. Retain the original theme directory name.",
+        "Hold SELECT while starting TWiLight, choose the 3DS user interface under GUI Settings, then select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “3DS” identifies its interface rather than an exclusive console model. This is launcher artwork and settings; it does not install system firmware."
+      ],
+      "files": [
+        {
+          "name": "Wii U.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/Wii%20U.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/Wii%20U/screenshots/Game%20List.png",
+      "artworkCredit": "nayz · official Wii U preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "nayz",
+      "ui": "3DS",
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "retrov1",
+      "title": "RetroV1",
+      "group": "skins",
+      "version": "v1.0.0",
+      "project": "https://skins.ds-homebrew.com/nintendo-3ds/retrov1",
+      "description": "A retro-styled custom skin for the TWiLight 3DS interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the theme’s own directory into /_nds/TWiLightMenu/3dsmenu/themes/ on the storage used by TWiLight Menu++. Retain the original theme directory name.",
+        "Hold SELECT while starting TWiLight, choose the 3DS user interface under GUI Settings, then select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “3DS” identifies its interface rather than an exclusive console model. This is launcher artwork and settings; it does not install system firmware."
+      ],
+      "files": [
+        {
+          "name": "RetroV1.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/RetroV1.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/RetroV1/icon.png",
+      "artworkCredit": "CJ1899 · official RetroV1 preview via DS-Homebrew",
+      "artworkType": "logo",
+      "author": "CJ1899",
+      "ui": "3DS",
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "diisu-dark",
+      "title": "DiiSU Dark",
+      "group": "skins",
+      "version": "v1.0.0",
+      "project": "https://skins.ds-homebrew.com/nintendo-3ds/diisu-dark",
+      "description": "An iiSU-inspired dark menu with custom icons for retro console platforms.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the theme’s own directory into /_nds/TWiLightMenu/3dsmenu/themes/ on the storage used by TWiLight Menu++. Retain the original theme directory name.",
+        "Hold SELECT while starting TWiLight, choose the 3DS user interface under GUI Settings, then select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “3DS” identifies its interface rather than an exclusive console model. This is launcher artwork and settings; it does not install system firmware."
+      ],
+      "files": [
+        {
+          "name": "DiiSU Dark.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/DiiSU%20Dark.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/DiiSU%20Dark/screenshots/app-list.png",
+      "artworkCredit": "Anonymous_cat1 · official DiiSU Dark preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "Anonymous_cat1",
+      "ui": "3DS",
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "nes-classic",
+      "title": "NES Classic",
+      "group": "skins",
+      "version": "v1.01",
+      "project": "https://skins.ds-homebrew.com/nintendo-3ds/nes-classic",
+      "description": "A NES Classic-inspired launcher presentation with custom sounds and music.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the theme’s own directory into /_nds/TWiLightMenu/3dsmenu/themes/ on the storage used by TWiLight Menu++. Retain the original theme directory name.",
+        "Hold SELECT while starting TWiLight, choose the 3DS user interface under GUI Settings, then select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “3DS” identifies its interface rather than an exclusive console model. This is launcher artwork and settings; it does not install system firmware."
+      ],
+      "files": [
+        {
+          "name": "NES Classic.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/NES%20Classic.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/NES%20Classic/screenshots/app-list.png",
+      "artworkCredit": "LetsGoAway · official NES Classic preview via DS-Homebrew",
+      "artworkType": "screenshot",
+      "author": "LetsGoAway",
+      "ui": "3DS",
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "atmosphere-skin",
+      "title": "Atmosphère",
+      "group": "skins",
+      "version": "v1.0.0",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/atmosphre",
+      "description": "A DSi-interface skin inspired by Atmosphère’s visual design.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the theme’s own directory into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight Menu++. Retain the original theme directory name.",
+        "Hold SELECT while starting TWiLight, choose the DSi user interface under GUI Settings, then select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “DSi” identifies its interface rather than an exclusive console model. This is launcher artwork and settings; it does not install system firmware."
+      ],
+      "files": [
+        {
+          "name": "atmosphere.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/atmosphere.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/atmosphere/icon.png",
+      "artworkCredit": "KNBnoob1 · official Atmosphère preview via DS-Homebrew",
+      "artworkType": "logo",
+      "author": "KNBnoob1",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch3"
+    },
+    {
+      "id": "classic-ds-menu",
+      "title": "Classic DS Menu",
+      "group": "skins",
+      "version": "v1.0.0",
+      "project": "https://skins.ds-homebrew.com/nintendo-dsi/classic-ds-menu",
+      "description": "An original Nintendo DS-menu-inspired skin adapted to TWiLight’s DSi interface.",
+      "models": [
+        "DS / DS Lite flashcart",
+        "DSi / XL",
+        "3DS via TWiLight"
+      ],
+      "install": [
+        "Extract the theme’s own directory into /_nds/TWiLightMenu/dsimenu/themes/ on the storage used by TWiLight Menu++. Retain the original theme directory name.",
+        "Hold SELECT while starting TWiLight, choose the DSi user interface under GUI Settings, then select this Custom Theme and press B to apply."
+      ],
+      "requirements": [
+        "Requires a working TWiLight Menu++ installation. “DSi” identifies its interface rather than an exclusive console model. This is launcher artwork and settings; it does not install system firmware."
+      ],
+      "files": [
+        {
+          "name": "classic DS Menu.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/classic%20DS%20Menu.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z"
+        }
+      ],
+      "artworkUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/classic%20DS%20Menu/screenshots/App%20list%202.png",
+      "artworkCredit": "Gemdation · official Classic DS Menu preview via DS-Homebrew · original DS sprites credited to CathodeRayKobold / The Spriters Resource",
+      "artworkType": "screenshot",
+      "author": "Gemdation",
+      "ui": "DSi",
+      "batch": "2026-11-02-batch3"
+    }
+  ]
+}

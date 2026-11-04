@@ -1,0 +1,312 @@
+{
+  "reviewed": "2026-11-02T06:10:54.599Z",
+  "method": "Fetched the exact public HTML URL with Node fetch, recorded its response and SHA-256, and did not execute any HTML scripts or payload files.",
+  "results": [
+    {
+      "url": "https://gamerhack.github.io/g2all/",
+      "status": 200,
+      "finalURL": "https://gamerhack.github.io/g2all/",
+      "bytes": 4119,
+      "sha256": "497511a39c071068b028383c814a2b9d0b340bd1ed5a66233cd9091b9d32e0bb",
+      "title": "PS4 [5.05] 7.00 - 13.52 FW GoldHEN Host by GamerHack",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/505/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/505/index.html",
+      "bytes": 46938,
+      "sha256": "f637c1153c85c64e92f267fb051ae4c9c316f0c40ede982f82ec9259192fd8f8",
+      "title": "Karo Host 5.05 FW",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/672/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/672/index.html",
+      "bytes": 92129,
+      "sha256": "aceffe4fc0283fedcb4ce8167e8cd48b85f6e49a4b86fd435fb60aacbdeda30a",
+      "title": "Karo Host Manual Exploit and Compressed 6.72 FW",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/672A/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/672A/index.html",
+      "bytes": 92223,
+      "sha256": "5a3b361b7d0cc35c6e6e024b6e774897510d97df5576903020d58e32af2515e0",
+      "title": "Karo Host Auto Exploit and Compressed 6.72 FW",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/702/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/702/index.html",
+      "bytes": 24814,
+      "sha256": "129103247565641e5916081463661eb4b2302e9c47e76a8aebc4f68cd320aa65",
+      "title": "Karo Host Auto Exploit + PSFree Webkit Version 7.00 - 7.02 fw",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/755/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/755/index.html",
+      "bytes": 37465,
+      "sha256": "2e5683f71c44e04bfbfcbf11e80559ac26b352d5ad189f380badf85c10f9e34e",
+      "title": "Karo Host Auto Exploit + PSFree Webkit Version 7.50 - 7.55 fw",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/900L/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/900L/index.html",
+      "bytes": 17215,
+      "sha256": "1cf3bbf60589c349709fea597abefe50c95fbdbfef322c5e51a65247120f439a",
+      "title": "Karo Host Auto Exploit Light + New Webkit 9.00 fw",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/900New/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/900New/index.html",
+      "bytes": 59203,
+      "sha256": "a0acfb86072211f142a1ef962c0dc0fe7acf64e74f981721ca7ddfe40fc11b96",
+      "title": "Karo Host Auto Exploit Compressed + New Webkit Version 9.00 fw",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/900NM/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/900NM/index.html",
+      "bytes": 63838,
+      "sha256": "dd0229f3aa01c0a3ee67bab112231b0119a2a17f2e9d19d622f1cc9fb1ebdda6",
+      "title": "Karo Host Manual Exploit Compressed + New Webkit Version 9.00 fw",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/binloader/505/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/binloader/505/index.html",
+      "bytes": 20639,
+      "sha256": "7dce81a764fe04789509d0352fb5c2dab65aaa2f3e83866fcfc6dde3c46bfbf7",
+      "title": "BINLOADER",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/binloader/672/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/binloader/672/index.html",
+      "bytes": 19439,
+      "sha256": "d79d2f96c33bc607113c4e7a2f68d717ba8e82f9d3fc03122f778708783d69de",
+      "title": "{{Karo}}",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/binloader/702/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/binloader/702/index.html",
+      "bytes": 7605,
+      "sha256": "3663837a3de936980a4293f08e69f8d65d33931cf7552f84541e81b5ed204765",
+      "title": "",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/binloader/755/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/binloader/755/index.html",
+      "bytes": 6290,
+      "sha256": "3b50aa0c95d064baaf519debf5360d7fb32d50bdbd8e486e2692098d145ae2d7",
+      "title": "",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/copych/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/copych/index.html",
+      "bytes": 5914,
+      "sha256": "820c7f0266dc4be9bc270cafd29c088248abfa4d74df7fb4dba5bf659d9ec930",
+      "title": "Karo Host Copy Cheats files Payload for all FW",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/g2all/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/g2all/index.html",
+      "bytes": 5603,
+      "sha256": "15e0cd4a61bcc7f9fd9f22601b109ae33d5f8c883d493d6b1e43c48fb45a0591",
+      "title": "Karo Host Auto Exploit GoldHen new PSFree Webkit Lapse 7.XX - 8.XX - 9.XXFW",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/g2allpro/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/g2allpro/index.html",
+      "bytes": 8510,
+      "sha256": "6b233652aa780431db151d06b5fc52ef1900345b6909ea7827a3fe6c4643f784",
+      "title": "Karo Host Auto Exploit GoldHen PS4 5.05 & 7.XX - 13.52 FW",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/G900/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/G900/index.html",
+      "bytes": 6852,
+      "sha256": "9d6c25f1abb2078b282fc63baee8cff18a7724897b148d6568f5f386fce554f8",
+      "title": "Karo Host Auto Exploit GoldHen new PSFree Webkit 900fw",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://karo218.ir/PS4TRAINER/index.html",
+      "status": 200,
+      "finalURL": "https://karo218.ir/PS4TRAINER/index.html",
+      "bytes": 14507,
+      "sha256": "44814811c8e1bd6166f8b37bb812ac977204542a2c16c92d2abd4c7d2c16ca13",
+      "title": "PS4 Trainer Offline",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/900/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/900/index.html",
+      "bytes": 4496,
+      "sha256": "4c3e1be8e4a1b5bc82bb148894920ed9c8e9257ec8f032b516d57689d1db56b5",
+      "title": "Kameleon PS4 9.00FW FontFaceSet WebKit",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/EspWeb/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/EspWeb/index.html",
+      "bytes": 7433,
+      "sha256": "91fbed8aa733fb624c73d7f84efb141a03a6849dbd9fcd2802d08aa8fd39aeed",
+      "title": "ESP Web Flasher",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/prb/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/prb/index.html",
+      "bytes": 847344,
+      "sha256": "7cdd89ca2fcb1993aaef3eafdc0feda4cd259bda3ae39824311818e648d564fa",
+      "title": "Prb Exploit Menu Essentials + Leeful Offline PS4 Trainer",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/psfree/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/psfree/index.html",
+      "bytes": 8660,
+      "sha256": "ba93a822f85b7a99f837a56a27eec98faafae2146d1cf751644b869b2d39553f",
+      "title": "PS4 Jailbreak",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/psfree900a/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/psfree900a/index.html",
+      "bytes": 51397,
+      "sha256": "88530f4f0f77a9823f7c324761521be7c45872275d5e52850dabc26fb3e9716f",
+      "title": "Kameleon 900FW Exploit Host Auto [Psfree]",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/psfree900m/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/psfree900m/index.html",
+      "bytes": 65859,
+      "sha256": "cd03b09e0b8c827616cf248251e00ccb1da9204213f3b2fb9330f5dfec9ba623",
+      "title": "Kameleon 900FW Exploit Host (Manual Method Hybrid) PSFree",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/psphive/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/psphive/index.html",
+      "bytes": 6473,
+      "sha256": "cfefc0ca631f92739fc5b9a63711cc70071894a6511989dfcc3f495998584bfb",
+      "title": "PS-Phive! v4 (FOR PS4 FW v9.00) By Leeful",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/trainer/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/trainer/index.html",
+      "bytes": 9890,
+      "sha256": "3ca27e61cec79a8448fcf2b3c115f29c35df0d3d6ed4fa0e2cdf17110c161ebb",
+      "title": "PS4 Offline Trainer (TylerMods) by Kameleon 12-03-2026",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.kmeps4.site/webpayloads/index.html",
+      "status": 200,
+      "finalURL": "https://www.kmeps4.site/webpayloads/index.html",
+      "bytes": 27685,
+      "sha256": "548313b73ba4309619a4417762035f87f34b5f8724c921629edf490a83951ddd",
+      "title": "GoldHEN Bin Server Web Payloads",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.wrozen.com/baikal/index.html",
+      "status": 200,
+      "finalURL": "https://www.wrozen.com/baikal/index.html",
+      "bytes": 1214,
+      "sha256": "96102340712ca70b724736c4fabe12bbd4517942e1ed6f13de580416d7f8a8f0",
+      "title": "Baikal",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.wrozen.com/leeful900/index.html",
+      "status": 200,
+      "finalURL": "https://www.wrozen.com/leeful900/index.html",
+      "bytes": 934,
+      "sha256": "caf54bc5de4d3e86c423aa74117f7d4c355d69973d2de75087fafc4edda67516",
+      "title": "Leeful 9.00 v5.0 w/ GoldHEN 2.4b18 PS Free Mod By Wr0zen",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.wrozen.com/phive/index.html",
+      "status": 200,
+      "finalURL": "https://www.wrozen.com/phive/index.html",
+      "bytes": 1511141,
+      "sha256": "da89a45fadaf63811b818b0390a92b300482b69a0cea65136340562ee026baaf",
+      "title": "PS-Phive! (FOR PS4 6.72) v1.0 By Leeful (MOD v1.5.6)",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.wrozen.com/phivev3/index.html",
+      "status": 200,
+      "finalURL": "https://www.wrozen.com/phivev3/index.html",
+      "bytes": 6607,
+      "sha256": "ab85e1537376096b2d2366615d1f27b5d12b494ec8ca27f94ce492a8ac6ecfde",
+      "title": "PS-Phive! v3 (FOR PS4 FW v9.00) By Leeful",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.wrozen.com/phivevfree/index.html",
+      "status": 200,
+      "finalURL": "https://www.wrozen.com/phivevfree/index.html",
+      "bytes": 6607,
+      "sha256": "ab85e1537376096b2d2366615d1f27b5d12b494ec8ca27f94ce492a8ac6ecfde",
+      "title": "PS-Phive! v3 (FOR PS4 FW v9.00) By Leeful",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.wrozen.com/phwoar/index.html",
+      "status": 200,
+      "finalURL": "https://www.wrozen.com/phwoar/index.html",
+      "bytes": 103670,
+      "sha256": "87abd66538c33cf25634c001d3cfcd4893f9ff735c41484b842302b8f68832a8",
+      "title": "PS-Phwoar! Host Menu v1.4 By Leeful (MOD v1.9.6)",
+      "review": "Static HTML response only; scripts not executed"
+    },
+    {
+      "url": "https://www.wrozen.com/xproject/index.html",
+      "status": 200,
+      "finalURL": "https://www.wrozen.com/xproject/index.html",
+      "bytes": 21974,
+      "sha256": "dd5b4ac07a00be80ed676eb32e2255e6cd6555ef3590b1357fb3ed35f8296297",
+      "title": "X-PROJECT",
+      "review": "Static HTML response only; scripts not executed"
+    }
+  ]
+}

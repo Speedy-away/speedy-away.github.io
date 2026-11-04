@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03T19:28:45.483Z",
+  "status": "Ready staged source for independent WWB-HOST repository. Main-site redirect preserved; no package generation in old root.",
+  "destination": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+  "entryTemplate": "scripts/templates/host-trainer.html",
+  "writeEntry": "node scripts/prepare-host-local-tools.cjs --trainer-ui (only in active independent repository before Pages prefix adaptation)",
+  "layout": {
+    "wideDesktopColumns": 7,
+    "laptopColumns": 4,
+    "phoneColumns": 2,
+    "centered": true,
+    "initialTiles": 70,
+    "showMoreBatch": 70,
+    "popup": "Custom accessible role=dialog with exact CUSA/update buttons, Tab/Shift+Tab focus trap, Escape/backdrop close, restored trigger focus and hidden background regions."
+  },
+  "artwork": {
+    "sourceReport": "docs/host-trainer-tile-artwork.json",
+    "builds": 1169,
+    "tiles": 730,
+    "existingImages": 74,
+    "letterTiles": 656,
+    "newDownloads": 0,
+    "policy": "Existing source-recorded game artwork identifies the game only. It is not a trainer preview or compatibility evidence. Unmapped games use an authored letter tile; no claim that all builds have unique official artwork."
+  },
+  "nativeGuarding": {
+    "coreUnchanged": true,
+    "noRequestOnOpenOrSelection": true,
+    "attachReadsOnly": true,
+    "explicitNativeApplyAndReadbackUnchanged": true,
+    "pausedOrBusyCannotChangeBuild": true,
+    "closeDoesNotDiscardNativeState": true,
+    "manualUpdateAcknowledgement": true,
+    "realConsoleTested": false
+  },
+  "translations": {
+    "module": "i18n-tools/host-trainer-gallery-translations.cjs",
+    "keys": 7,
+    "languages": 20,
+    "cells": 140,
+    "placeholdersChecked": true,
+    "rootGenerationRequired": true
+  },
+  "verification": {
+    "command": "node --test scripts/tests/host-local-tools.test.cjs",
+    "tests": 13,
+    "passed": 13,
+    "failed": 0,
+    "method": "Native transports and UI/serial use inert mocks only; source/hash/read-only package checks. No native code executed.",
+    "browser": "Local browser use disabled in current shared handoff; no browser workaround attempted."
+  },
+  "sourceFiles": [
+    {
+      "path": "assets/host-trainer.js",
+      "sha256": "d44221f2ccb9fdc7c68fbe9d71cabda6790b5cf231307c14bf1f92fd3f3c3405"
+    },
+    {
+      "path": "assets/host-trainer.css",
+      "sha256": "5774596ee47e34b22b39a5445fc7f4f79cd7c3135e70aa957dac307256a827a9"
+    },
+    {
+      "path": "scripts/templates/host-trainer.html",
+      "sha256": "2ceb777a6a918df858534d2415f239765d9030c2360b25b8f9401008e2621d4f"
+    },
+    {
+      "path": "scripts/prepare-host-local-tools.cjs",
+      "sha256": "0daae2e752c05eac2f81c8a9ca8b221393355759a4cf48876b73b05f02a86817"
+    },
+    {
+      "path": "scripts/build-host-trainer-art.cjs",
+      "sha256": "c36d68c72dfc1c206c84f238044596afa9d177cc5684d0fee8431c7183666e30"
+    },
+    {
+      "path": "scripts/tests/host-local-tools.test.cjs",
+      "sha256": "e844f4efae0c88b659f8f9ea0cc68befba309fa30cb38fcfb4d99e7b9b9e59fb"
+    },
+    {
+      "path": "hosts/tools/ps4-trainer/tile-art.json",
+      "sha256": "b17150c8798a305f67636b7e870e17f31d180143687301f85055726abad073b4"
+    },
+    {
+      "path": "hosts/tools/ps4-trainer/art/letter-cover.svg",
+      "sha256": "84806c575fcd4d8162ddfd512cc99a00ed5fbc07f464c84eb5b497a369c2ca1c"
+    },
+    {
+      "path": "i18n-tools/host-trainer-gallery-translations.cjs",
+      "sha256": "ae66fc0260ac62a1df6b3c79294e8634df0856bb4ed6d00662fd56ce3037f90c"
+    }
+  ],
+  "remaining": [
+    "Root copies staged source files and template to independent repository using normal sandbox tooling.",
+    "Aggregate seven new pure translation keys and regenerate all languages in active target.",
+    "Apply project Pages routing adaptation to authored HTML/JS; preserve native/runtime files.",
+    "Rebuild local tool packages only after final source/dictionary freeze, preserving all predecessors; archive every current and retained job.",
+    "Run target focused tests and site/dependency audit; no live console or serial operation."
+  ]
+}

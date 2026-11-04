@@ -1,0 +1,57 @@
+{
+  "reviewed": "2026-11-02",
+  "status": "passed",
+  "implementation": "Shared responsive stylesheet and mobile header, accessible drawer and FAQ controls, responsive page-family styles, and regeneration integration.",
+  "htmlIntegration": {
+    "pages": 235,
+    "pendingUpdates": 0,
+    "command": "node scripts/apply-mobile-layout.cjs --check"
+  },
+  "browserLayoutAudit": {
+    "renderedPages": 213,
+    "viewportWidths": [320, 390, 768],
+    "checks": 639,
+    "remainingLayoutIssues": 0,
+    "recheckedCases": 72,
+    "recheckIssues": 0,
+    "notes": [
+      "The audit accounts for the left scrollbar origin in right-to-left documents; all 72 initially flagged scrollbar-offset cases were rechecked at 320 pixels.",
+      "Redirect shells and the embedded sponsor frame are covered by static integration rather than standalone rendering.",
+      "Empty third-party advertising click layers are excluded from visible-content overflow measurements."
+    ]
+  },
+  "browserInteractions": [
+    "Phone navigation opens, expands console sections, closes, restores focus and unlocks scrolling.",
+    "Home section links update focus and the URL fragment; game search filters results.",
+    "FAQ answers expand fully; unmatched searches show an accessible empty state.",
+    "Arabic header controls do not overlap and the document does not overflow horizontally.",
+    "Desktop sidebar collapse and expansion work; crossing the 1024-pixel breakpoint restores the saved desktop state.",
+    "Phone image preview opens and closes, with a 48-pixel close target and an image contained within the viewport."
+  ],
+  "regressionTests": {
+    "passed": 78,
+    "failed": 0,
+    "suites": [
+      "free-keys/tests/key-generation.test.cjs",
+      "free-keys/tests/loader-download.test.cjs",
+      "free-keys/tests/page-access.test.cjs",
+      "scripts/tests/console-guide-dialog.test.cjs",
+      "scripts/tests/mobile-navigation.test.cjs",
+      "scripts/tests/i18n-runtime.test.cjs",
+      "scripts/tests/console-download-center.test.cjs",
+      "scripts/tests/console-game-patches.test.cjs",
+      "scripts/tests/console-receiver.test.cjs"
+    ]
+  },
+  "localLinkAudit": {
+    "publicPages": 195,
+    "linksAndAssets": 16716,
+    "issues": 0,
+    "command": "node scripts/audit-site.cjs"
+  },
+  "screenshots": [
+    "docs/screenshots/mobile-home-390.jpg",
+    "docs/screenshots/mobile-desktop-1440.jpg"
+  ],
+  "environment": "Local Chromium browser preview; no physical phone or console execution, downloads, or deployment performed."
+}

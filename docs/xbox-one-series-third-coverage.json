@@ -1,0 +1,254 @@
+{
+  "reviewed": "2026-11-02",
+  "added": [
+    {
+      "id": "azahar",
+      "version": "0.2126.2.1",
+      "models": [
+        "unspecified"
+      ],
+      "project": "https://github.com/danprice142/Azahar-UWP",
+      "release": "https://github.com/danprice142/Azahar-UWP/releases/tag/0.2126.2.1",
+      "files": [
+        {
+          "name": "Azahar_0.2126.2.1.msix",
+          "version": "0.2126.2.1",
+          "bytes": 15953947,
+          "sha256": "7229f465796cef3ce7a96154256c7d65131795bec328a1504e07e62554ee3dc8",
+          "sourceUrl": "https://github.com/danprice142/Azahar-UWP/releases/download/0.2126.2.1/Azahar_0.2126.2.1.msix"
+        }
+      ]
+    },
+    {
+      "id": "cemu",
+      "version": "0.2.6.7",
+      "models": [
+        "unspecified"
+      ],
+      "project": "https://github.com/danprice142/Cemu-UWP",
+      "release": "https://github.com/danprice142/Cemu-UWP/releases/tag/0.2.6.7",
+      "files": [
+        {
+          "name": "Cemu_0.2.6.7.msix",
+          "version": "0.2.6.7",
+          "bytes": 32511582,
+          "sha256": "24441a4e523e7977f0c41c8f64be6d8390e23b3d72def1d87c6eb523ed64fffb",
+          "sourceUrl": "https://github.com/danprice142/Cemu-UWP/releases/download/0.2.6.7/Cemu_0.2.6.7.msix"
+        }
+      ]
+    },
+    {
+      "id": "ymir",
+      "version": "0.4.2.1",
+      "models": [
+        "series"
+      ],
+      "project": "https://github.com/marcelofrau/Ymir",
+      "release": "https://github.com/marcelofrau/Ymir/releases/tag/uwp-v0.4.2.1",
+      "files": [
+        {
+          "name": "ymir-uwp_0.4.2.1_x64.zip",
+          "version": "0.4.2.1",
+          "bytes": 17719079,
+          "sha256": "675334878027bde884927b723e9c7864e910e7633acd97ce41bc3cdcc3ff2b83",
+          "sourceUrl": "https://github.com/marcelofrau/Ymir/releases/download/uwp-v0.4.2.1/ymir-uwp_0.4.2.1_x64.zip"
+        },
+        {
+          "name": "Microsoft.VCLibs.x64.14.00.appx",
+          "version": "14.0.33519.0",
+          "bytes": 896581,
+          "sha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+          "sourceUrl": "https://github.com/marcelofrau/Ymir/releases/download/uwp-v0.4.2.1/ymir-uwp_0.4.2.1_x64.zip"
+        },
+        {
+          "name": "ymir-sdl3_0.4.2.1_x64_RelWithDebInfo.msix",
+          "version": "0.4.2.1",
+          "bytes": 16782742,
+          "sha256": "3903302f059de596e2427956527df7a34a0833cdef2a49972fe4e0e30f92c128",
+          "sourceUrl": "https://github.com/marcelofrau/Ymir/releases/download/uwp-v0.4.2.1/ymir-uwp_0.4.2.1_x64.zip"
+        }
+      ]
+    },
+    {
+      "id": "devilutionx",
+      "version": "1.5.5",
+      "models": [
+        "one",
+        "series"
+      ],
+      "project": "https://github.com/diasurgical/DevilutionX",
+      "release": "https://github.com/diasurgical/DevilutionX/releases/tag/1.5.5",
+      "files": [
+        {
+          "name": "devilutionx-xbox-one-series.zip",
+          "version": "1.5.5",
+          "bytes": 8430484,
+          "sha256": "84adcc90a3f01064bddd85e7794244cee132321550fc54b67f4fc20d72a6a4e5",
+          "sourceUrl": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-xbox-one-series.zip"
+        },
+        {
+          "name": "devilutionX_1.5.5.0_x64.appx",
+          "version": "1.5.5",
+          "bytes": 7558597,
+          "sha256": "0fecf39a248607f4e4259497c2f079b519efdeeb0fa7213b050a5f673fe77d19",
+          "sourceUrl": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-xbox-one-series.zip"
+        },
+        {
+          "name": "Microsoft.VCLibs.x64.14.00.appx",
+          "version": "14.0.33519.0",
+          "bytes": 896581,
+          "sha256": "9c17b521f9d690a1f504da5108ed6eec5669eb3a8fd1331eef43e40d84e74283",
+          "sourceUrl": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-xbox-one-series.zip"
+        }
+      ]
+    },
+    {
+      "id": "jazz2",
+      "version": "3.9.0",
+      "models": [
+        "one",
+        "series"
+      ],
+      "project": "https://github.com/deathkiller/jazz2",
+      "release": "https://github.com/deathkiller/jazz2/releases/tag/3.9.0",
+      "files": [
+        {
+          "name": "Jazz2_3.9.0_UWP.zip",
+          "version": "3.9.0",
+          "bytes": 4407315,
+          "sha256": "363be628630b159059828a76f3a2a50aef73b6b284b2e04ae3a24387d7606dc9",
+          "sourceUrl": "https://github.com/deathkiller/jazz2/releases/download/3.9.0/Jazz2_3.9.0_UWP.zip"
+        },
+        {
+          "name": "Jazz2.msixbundle",
+          "version": "3.9.0",
+          "bytes": 4476506,
+          "sha256": "6a4aafe10ca8f07bff59ba9ca45b7a7f50b26917c09ae536f088eb3f11ba2dec",
+          "sourceUrl": "https://github.com/deathkiller/jazz2/releases/download/3.9.0/Jazz2_3.9.0_UWP.zip"
+        }
+      ]
+    },
+    {
+      "id": "openlara",
+      "version": "xb1 snapshot 2021-01-08",
+      "models": [
+        "one"
+      ],
+      "project": "https://github.com/XProger/OpenLara",
+      "release": "https://github.com/XProger/OpenLara/releases/tag/latest",
+      "files": [
+        {
+          "name": "OpenLara_xb1.zip",
+          "version": "xb1 2021-01-08",
+          "bytes": 555796,
+          "sha256": "62608de20984b061940471c7f9bf69af2f99072d441c8f0b4ea6caf270f8458a",
+          "sourceUrl": "https://github.com/XProger/OpenLara/releases/download/latest/OpenLara_xb1.zip"
+        },
+        {
+          "name": "OpenLara.appxbundle",
+          "version": "xb1 2021-01-08",
+          "bytes": 559238,
+          "sha256": "10082c1a3bff6e5c907dd10a371f12b4c7c099a45c25d5307795b61400ecdce3",
+          "sourceUrl": "https://github.com/XProger/OpenLara/releases/download/latest/OpenLara_xb1.zip"
+        }
+      ]
+    },
+    {
+      "id": "sdlpop",
+      "version": "release 1.0.0.0 · package 1.0.1.0",
+      "models": [
+        "one",
+        "series"
+      ],
+      "project": "https://github.com/Xbox-Homebrew/SDLPoP",
+      "release": "https://github.com/Xbox-Homebrew/SDLPoP/releases/tag/1.0.0.0",
+      "files": [
+        {
+          "name": "sdlpop.appx",
+          "version": "release 1.0.0.0 (package 1.0.1.0)",
+          "bytes": 6552220,
+          "sha256": "0d077f668c6ee1c09d39e4dbf9fda9c8ae0215efc73074f2d94f436171f59bb3",
+          "sourceUrl": "https://github.com/Xbox-Homebrew/SDLPoP/releases/download/1.0.0.0/sdlpop.appx"
+        }
+      ]
+    },
+    {
+      "id": "ioquake3",
+      "version": "1.4",
+      "models": [
+        "one"
+      ],
+      "project": "https://github.com/Mayo1970/ioQuake3-One",
+      "release": "https://github.com/Mayo1970/ioQuake3-One/releases/tag/1.4",
+      "files": [
+        {
+          "name": "ioq3.msixbundle",
+          "version": "1.4",
+          "bytes": 9279089,
+          "sha256": "109122c939c2f484e8d5cb6210b772418160d7b0833d9321cf73a78270df2390",
+          "sourceUrl": "https://github.com/Mayo1970/ioQuake3-One/releases/download/1.4/ioq3.msixbundle"
+        },
+        {
+          "name": "openarena.msixbundle",
+          "version": "1.4",
+          "bytes": 8975101,
+          "sha256": "7c1284b1d573ac7bf57cf60ab15e56097f52bdf7bc445343d1f3ed7e019e5dc1",
+          "sourceUrl": "https://github.com/Mayo1970/ioQuake3-One/releases/download/1.4/openarena.msixbundle"
+        },
+        {
+          "name": "eliteforce.msixbundle",
+          "version": "1.4",
+          "bytes": 9032432,
+          "sha256": "2ab853ff3861a288b302b0446606c7c5e584b5d6c0862e4af6717e7ca0962f6f",
+          "sourceUrl": "https://github.com/Mayo1970/ioQuake3-One/releases/download/1.4/eliteforce.msixbundle"
+        }
+      ]
+    },
+    {
+      "id": "2ship",
+      "version": "0.1.0-uwp",
+      "models": [
+        "unspecified"
+      ],
+      "project": "https://github.com/XboxEmulationHub/2ship2harkinian-uwp",
+      "release": "https://github.com/XboxEmulationHub/2ship2harkinian-uwp/releases/tag/0.1.0-uwp",
+      "files": [
+        {
+          "name": "2ship2harkinian.msixbundle",
+          "version": "0.1.0-uwp",
+          "bytes": 15119651,
+          "sha256": "2fea17c535a5512e80696beae976ab04844752add9accbaa7f13bc1260c87938",
+          "sourceUrl": "https://github.com/XboxEmulationHub/2ship2harkinian-uwp/releases/download/0.1.0-uwp/2ship2harkinian.msixbundle"
+        }
+      ]
+    }
+  ],
+  "preservedPreviousApps": 14,
+  "preservedPreviousFiles": 39,
+  "newFiles": 17,
+  "skipped": [
+    {
+      "project": "NXbox",
+      "url": "https://github.com/NspxMiguel/NXbox/releases",
+      "status": "inaccessible",
+      "observedStatus": 404,
+      "note": "Search cache described a project, but the direct release URL was not accessible; no file invented or downloaded."
+    },
+    {
+      "project": "GZDoom UWP",
+      "status": "not-selected",
+      "note": "Publisher UWP release exists but primary Xbox-family/model evidence was weaker than selected engine ports; no download substituted."
+    },
+    {
+      "project": "RetriXGold",
+      "status": "not-selected-this-batch",
+      "note": "Publisher x64 7z release exists; additional standalone emulator ports were prioritized. Exact model matrix remains unconfirmed."
+    }
+  ],
+  "downloadRetry": {
+    "project": "Ymir UWP",
+    "firstAttempt": "timed out; no completed staged file",
+    "retry": "HTTP200 streamed17,719,079bytes with SHA256675334878027bde884927b723e9c7864e910e7633acd97ce41bc3cdcc3ff2b83; original received partial-name file retained as well as staged name"
+  },
+  "downloadedBuildsExecuted": false
+}

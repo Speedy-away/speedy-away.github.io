@@ -1,0 +1,124 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {
+      "id": "steamdeck-syncthing",
+      "title": "Syncthing",
+      "url": "https://github.com/syncthing/syncthing",
+      "version": "v2.1.7",
+      "assetUrl": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-amd64-v2.1.7.tar.gz",
+      "filename": "syncthing-linux-amd64-v2.1.7.tar.gz",
+      "expectedBytes": 14046697,
+      "expectedSha256": "2edc416e7ed136b7c858ed5f3f02a3b8316589605e54c380228ceea7acbf0142",
+      "maxBytes": 104857600,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-peazip",
+      "title": "PeaZip",
+      "url": "https://github.com/peazip/PeaZip",
+      "version": "11.4.0",
+      "assetUrl": "https://github.com/peazip/PeaZip/releases/download/11.4.0/peazip_portable-11.4.0.LINUX.Qt6.x86_64.tar.gz",
+      "filename": "peazip_portable-11.4.0.LINUX.Qt6.x86_64.tar.gz",
+      "expectedBytes": 18051240,
+      "expectedSha256": "cc414efe5ebb157c299d0fb2f01b527e6675f7220fc25e014526671b0c25df13",
+      "maxBytes": 104857600,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-filelight-installer",
+      "title": "Filelight Flatpak installer",
+      "url": "https://apps.kde.org/filelight/",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://dl.flathub.org/repo/appstream/org.kde.filelight.flatpakref",
+      "filename": "org.kde.filelight.flatpakref",
+      "expectedBytes": 4024,
+      "expectedSha256": "5394e7792f0b8366a941672a01e5c02937685ddee7f0d198b565590f17ea1900",
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-tabmaster",
+      "title": "TabMaster",
+      "url": "https://github.com/Tormak9970/TabMaster",
+      "version": "2.15.1",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e08333859a32b0c177b8e9a7959c5eeeafe38f946578f7f1d161c721f0e05da5.zip",
+      "filename": "tabmaster-2.15.1.zip",
+      "expectedBytes": 5712641,
+      "expectedSha256": "e08333859a32b0c177b8e9a7959c5eeeafe38f946578f7f1d161c721f0e05da5",
+      "maxBytes": 33554432,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-hltb-for-deck",
+      "title": "HLTB for Deck",
+      "url": "https://github.com/morwy/hltb-for-deck",
+      "version": "2.0.12",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/bd54a23b0b8ec0798aa590e5be236522a593529d7680e77fb888e2971bf3d558.zip",
+      "filename": "hltb-for-deck-2.0.12.zip",
+      "expectedBytes": 538045,
+      "expectedSha256": "bd54a23b0b8ec0798aa590e5be236522a593529d7680e77fb888e2971bf3d558",
+      "maxBytes": 33554432,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-storage-cleaner",
+      "title": "Storage Cleaner",
+      "url": "https://github.com/mcarlucci/decky-storage-cleaner",
+      "version": "1.4.0",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1afa1a6f129c5d419de0e0bf0f6db8d8e50385a5659179346e996031ea372591.zip",
+      "filename": "storage-cleaner-1.4.0.zip",
+      "expectedBytes": 460621,
+      "expectedSha256": "1afa1a6f129c5d419de0e0bf0f6db8d8e50385a5659179346e996031ea372591",
+      "maxBytes": 33554432,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "filename": "tabmaster.png",
+      "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/TabMaster-2528f87eed33004efbea4a4de9076c0885b74b13b015e2103dbb7d73ba139a8c.png"
+    },
+    {
+      "filename": "hltb-for-deck.png",
+      "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/HLTB%20for%20Deck-b407060820a5928d859fba7510b21733ebd6b77a1ae6ec47d6b8dba01aa5d4e9.png"
+    },
+    {
+      "filename": "storage-cleaner.png",
+      "source": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/artifact_images/Storage%20Cleaner-9880dcffdd7e9f7db4b7016aec1b6553ffcb1614da3abcb7d608aa1e9d6fb6d6.png"
+    },
+    {
+      "filename": "filelight.png",
+      "source": "https://dl.flathub.org/media/org/kde/filelight.desktop/7048e533959e4a0aeb51946651f85915/icons/128x128/org.kde.filelight.desktop.png"
+    },
+    {
+      "filename": "peazip.png",
+      "source": "https://dl.flathub.org/media/io/github/peazip.PeaZip/93e1fd8d1014b6a8aae84fd70c72557c/icons/128x128/io.github.peazip.PeaZip.png"
+    },
+    {
+      "filename": "syncthing.png",
+      "source": "https://syncthing.net/img/favicons/apple-touch-icon-152x152.png"
+    }
+  ]
+}

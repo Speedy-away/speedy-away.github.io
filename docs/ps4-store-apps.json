@@ -1,0 +1,395 @@
+{
+  "reviewed": "2026-11-02",
+  "policy": "Only ready PS4 packages are selected. No console payload is executed. Publisher-only entries retain official URLs and private local archival instead of website redistribution.",
+  "resources": [
+    {
+      "id": "ps4-store-scratch-everywhere-1-3",
+      "title": "Scratch Everywhere! · PS4",
+      "version": "1.3",
+      "filename": "scratch-ps4.pkg",
+      "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.3/scratch-ps4.pkg",
+      "source": "https://github.com/ScratchEverywhere/ScratchEverywhere/tree/1.3",
+      "storePage": "https://pkg-zone.com/details/NTXS10053",
+      "description": "Run supported Scratch 3 projects on PS4. Projects are separate from the runtime and are not bundled with this package.",
+      "compatibility": "PS4 ready PKG; install using your existing supported HEN/homebrew environment. Scratch project and extension compatibility varies.",
+      "preparation": "Install scratch-ps4.pkg with your supported PS4 package installer. Put your own supported Scratch projects in /data/scratch-ps4 (create the folder if needed), then launch Scratch Everywhere! from the console home screen.",
+      "documentation": "https://scratcheverywhere.github.io/install#ps4",
+      "imageSource": "https://raw.githubusercontent.com/ScratchEverywhere/ScratchEverywhere/1.3/gfx/menu/logo.png",
+      "imageFile": "scratch-everywhere.png",
+      "packageMetadata": {
+        "APP_VER": "01.30",
+        "SYSTEM_VER": "0x00000000",
+        "TITLE": "Scratch Everywhere!",
+        "TITLE_ID": "NTXS10053",
+        "VERSION": "01.30"
+      },
+      "bytes": 71696384,
+      "sha256": "9f89fcca1a6d7e45bf851f3c9039a9596523481ebd67f6fe27a4445d5a11add1",
+      "image": "/assets/images/ps4-store-apps/scratch-everywhere.png",
+      "imageProvenance": {
+        "source": "https://raw.githubusercontent.com/ScratchEverywhere/ScratchEverywhere/1.3/gfx/menu/logo.png",
+        "bytes": 37338,
+        "sha256": "d71d5c426461b56bd76674b2f2c75f6d1d2b566fd28c9e81936816b7fac59c8a"
+      },
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "page": "/console/ps4/apps.html#ps4-store-scratch-everywhere-1-3",
+      "local": "/downloads/ps4-ps5/ps4-store-scratch-everywhere-1-3/scratch-ps4.pkg"
+    },
+    {
+      "id": "ps4-store-mtp-explorer-2-0-0",
+      "title": "PS MTP Explorer · PS4",
+      "version": "v2.0.0",
+      "filename": "PS-MTP-Explorer-2.0.0.pkg",
+      "url": "https://github.com/nueex/ps-mtp-explorer/releases/download/v2.0.0/PS-MTP-Explorer-2.0.0.pkg",
+      "source": "https://github.com/nueex/ps-mtp-explorer/tree/v2.0.0",
+      "description": "Browse an MTP Android phone, mounted USB storage and writable internal folders with the PS4 controller. Supports copying folders and reviewing PKG installation.",
+      "compatibility": "PS4 with GoldHEN active; publisher tested firmware 9.00, 10.01 and 11.00. Android access requires an unlocked MTP-capable phone and data cable. iPhone access is unsupported.",
+      "preparation": "Install the publisher PKG through GoldHEN Package Installer. Connect an unlocked Android phone by a USB data cable and select File Transfer/MTP. Launch PS MTP Explorer on PS4, select a real device or writable /data destination, then use Options > New Folder or Copy/Paste. For a PKG, press X and review Install. Phone installs need temporary-package plus installed-content space.",
+      "documentation": "https://github.com/nueex/ps-mtp-explorer/blob/v2.0.0/README.md",
+      "mirror": false,
+      "distribution": "Publisher download only. The v2.0.0 README states the complete application is not cleared for redistribution; retain the requested private backup without hosting a copy.",
+      "imageFile": "mtp-explorer.svg",
+      "packageMetadata": {
+        "APP_VER": "02.00",
+        "SYSTEM_VER": "0x00000000",
+        "TITLE": "PS MTP Explorer",
+        "TITLE_ID": "NUEX00001",
+        "VERSION": "02.00"
+      },
+      "bytes": 6619136,
+      "sha256": "9e7802be92a4be9b4fa3e3f68715b8d6d87d7daccb889f8ae14d347129710eb2",
+      "image": "/assets/images/ps4-store-apps/mtp-explorer.svg",
+      "imageProvenance": {
+        "source": "https://github.com/nueex/ps-mtp-explorer/releases/download/v2.0.0/PS-MTP-Explorer-2.0.0.pkg",
+        "creator": "Original whatwhatboy site illustration",
+        "bytes": 961,
+        "sha256": "4de9b66e10b89a3a25e1b6349f1778976a60380bcca109c537fcf01db705ac67"
+      },
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "page": "/console/ps4/apps.html#ps4-store-mtp-explorer-2-0-0"
+    },
+    {
+      "id": "ps4-store-switchfin-0-9-4",
+      "title": "Switchfin · PS4 Jellyfin client",
+      "version": "0.9.4",
+      "filename": "IV0001-SFIN00000_00-SFIN000000009400.pkg",
+      "url": "https://github.com/dragonflylee/switchfin/releases/download/0.9.4/IV0001-SFIN00000_00-SFIN000000009400.pkg",
+      "source": "https://github.com/dragonflylee/switchfin/tree/0.9.4",
+      "storePage": "https://pkg-zone.com/details/SFIN00000",
+      "description": "Native PS4 client for browsing a Jellyfin media server and supported remote media sources. This is the PS4 package from a multi-platform project.",
+      "compatibility": "PS4 console PKG in an existing compatible homebrew environment. Requires a reachable Jellyfin server or supported media source; codec and playback limits depend on the PS4 build.",
+      "preparation": "Install the PS4 PKG with your supported package installer, launch Switchfin from the console home screen and enter your Jellyfin server details. Use media and server access you control. No Nintendo Switch or desktop files are needed for this PS4 package.",
+      "documentation": "https://github.com/dragonflylee/switchfin/blob/0.9.4/README.md",
+      "imageSource": "https://raw.githubusercontent.com/dragonflylee/switchfin/0.9.4/scripts/switchfin.svg",
+      "imageFile": "switchfin.svg",
+      "packageMetadata": {
+        "APP_VER": "00.94",
+        "SYSTEM_VER": "0x000003fc",
+        "TITLE": "switchfin",
+        "TITLE_ID": "SFIN00000",
+        "VERSION": "00.94"
+      },
+      "bytes": 58458112,
+      "sha256": "2d0dac54eaec7cf9b86a7a169cb9b88409327fc10bff8c10ea42357d4ba3661c",
+      "image": "/assets/images/ps4-store-apps/switchfin.svg",
+      "imageProvenance": {
+        "source": "https://raw.githubusercontent.com/dragonflylee/switchfin/0.9.4/scripts/switchfin.svg",
+        "bytes": 1480,
+        "sha256": "d22694b3dffaa87d1529a6a4c2b9f08fdd50107699e83ee31c35ca2f86a6a1d2"
+      },
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "page": "/console/ps4/apps.html#ps4-store-switchfin-0-9-4",
+      "local": "/downloads/ps4-ps5/ps4-store-switchfin-0-9-4/IV0001-SFIN00000_00-SFIN000000009400.pkg"
+    },
+    {
+      "id": "ps4-store-wiliwili-1-6-0",
+      "title": "wiliwili · PS4",
+      "version": "v1.6.0",
+      "filename": "wiliwili-PS4.pkg",
+      "url": "https://github.com/xfangfang/wiliwili/releases/download/v1.6.0/wiliwili-PS4.pkg",
+      "source": "https://github.com/xfangfang/wiliwili/tree/v1.6.0",
+      "description": "Controller-friendly Bilibili client with browsing, search, account QR sign-in and playback features. Select the PS4 package for the console.",
+      "compatibility": "PS4 homebrew PKG; use an existing compatible HEN environment and an Internet connection. The PS4 build uses software decoding; playback quality and performance depend on its settings and the media.",
+      "preparation": "Install wiliwili-PS4.pkg with the PS4 package installer and launch its home-screen icon. Configure the app and sign in only if needed. Follow the PS4 software-decoding notes in the publisher README; Nintendo Switch and desktop setup steps do not apply.",
+      "documentation": "https://github.com/xfangfang/wiliwili/blob/v1.6.0/README.md",
+      "imageSource": "https://raw.githubusercontent.com/xfangfang/wiliwili/v1.6.0/resources/svg/cn.xfangfang.wiliwili.svg",
+      "imageFile": "wiliwili.svg",
+      "packageMetadata": {
+        "APP_VER": "01.60",
+        "SYSTEM_VER": "0x000003fc",
+        "TITLE": "wiliwili",
+        "TITLE_ID": "WILI00000",
+        "VERSION": "01.60"
+      },
+      "bytes": 74711040,
+      "sha256": "d9f089bed9d8352ea6f78d6e93fcb5eea22caad29768ff553d87adb0e79bffba",
+      "image": "/assets/images/ps4-store-apps/wiliwili.svg",
+      "imageProvenance": {
+        "source": "https://raw.githubusercontent.com/xfangfang/wiliwili/v1.6.0/resources/svg/cn.xfangfang.wiliwili.svg",
+        "bytes": 6589,
+        "sha256": "b3a58aeafdda3c9ef67815ddbe95eaa0db146212cec9d490e4e6823bb0caccf9"
+      },
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "page": "/console/ps4/apps.html#ps4-store-wiliwili-1-6-0",
+      "local": "/downloads/ps4-ps5/ps4-store-wiliwili-1-6-0/wiliwili-PS4.pkg"
+    },
+    {
+      "id": "ps4-store-sponsorblock-installer-1-0-0",
+      "title": "SponsorBlock Installer · PS4",
+      "version": "v1.0.0",
+      "filename": "IV0000-YTSB42069_00-SPONSORBLK000000.pkg",
+      "url": "https://github.com/earthonion/Sponsorblock-PS4-Installer/releases/download/v1.0.0/IV0000-YTSB42069_00-SPONSORBLK000000.pkg",
+      "source": "https://github.com/earthonion/Sponsorblock-PS4-Installer/tree/v1.0.0",
+      "description": "On-console installer for the author’s YouTube ad-skip and SponsorBlock GoldHEN plugin. It downloads and installs the plugin after an explicit launch.",
+      "compatibility": "PS4 with GoldHEN already active and a network connection for the plugin download. Confirm your YouTube app and firmware against the plugin’s own requirements.",
+      "preparation": "Install the ready PKG through your supported PS4 package installer. Launch Install Sponsorblock from the PS4 home menu and review its prompts. The installer downloads the plugin into /data/GoldHEN/plugins/ and updates plugins.ini; it is not a browser launch command.",
+      "documentation": "https://github.com/earthonion/Sponsorblock-PS4-Installer/releases/tag/v1.0.0",
+      "imageFile": "sponsorblock.png",
+      "packageMetadata": {
+        "APP_VER": "1.00",
+        "SYSTEM_VER": "0x00000000",
+        "TITLE": "Install Sponsorblock",
+        "TITLE_ID": "YTSB42069",
+        "VERSION": "1.00"
+      },
+      "bytes": 6619136,
+      "sha256": "f167ef235426b6fd6b59d2adfd2597a11884d244517c6ddc82c526bdfdfd6c5f",
+      "image": "/assets/images/ps4-store-apps/sponsorblock.png",
+      "imageProvenance": {
+        "source": "https://github.com/earthonion/Sponsorblock-PS4-Installer/releases/download/v1.0.0/IV0000-YTSB42069_00-SPONSORBLK000000.pkg",
+        "embeddedEntry": "icon0.png",
+        "bytes": 27225,
+        "sha256": "c150f8380428e7f3a0b1a38bbef0ab077e5ef2b221c182fb2604b0cacffc8f80"
+      },
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "page": "/console/ps4/apps.html#ps4-store-sponsorblock-installer-1-0-0",
+      "local": "/downloads/ps4-ps5/ps4-store-sponsorblock-installer-1-0-0/IV0000-YTSB42069_00-SPONSORBLK000000.pkg"
+    },
+    {
+      "id": "ps4-store-itemzflow-1-08",
+      "title": "Itemzflow Game Manager · PS4",
+      "version": "1.08",
+      "filename": "Itemzflow-PS4-1.08.pkg",
+      "url": "https://pkg-zone.com/download/ps4/ITEM00001/1.08",
+      "source": "https://github.com/LightningMods/Itemzflow/releases/tag/1.08",
+      "storePage": "https://pkg-zone.com/details/ITEM00001",
+      "description": "Open-source PS4 home-menu alternative and installed-game manager. The publisher’s GitHub release directs downloads to this PKG-Zone package.",
+      "compatibility": "PS4 package 1.08; store label 5.05+ excluding 6.72. Release notes add FUSE support for 12.50, 12.52, 13.00 and 13.02; this is not a guarantee for every function or firmware.",
+      "preparation": "Install the PS4 1.08 package with your existing compatible package installer and launch Itemzflow from the home screen. Use the PS4 package and follow its storage and game-management documentation. The project installs its cooperating daemon on first launch.",
+      "documentation": "https://github.com/LightningMods/Itemzflow",
+      "imageFile": "itemzflow.png",
+      "packageMetadata": {
+        "APP_VER": "01.08",
+        "SYSTEM_VER": "0x00000000",
+        "TITLE": "Itemzflow Game Manager",
+        "TITLE_ID": "ITEM00001",
+        "VERSION": "01.08"
+      },
+      "bytes": 27131904,
+      "sha256": "acd4f37aad8d686a433e73f1b44a3e87b513c10ee7303ff965cb3dc54048e60e",
+      "image": "/assets/images/ps4-store-apps/itemzflow.png",
+      "imageProvenance": {
+        "source": "https://pkg-zone.com/download/ps4/ITEM00001/1.08",
+        "embeddedEntry": "icon0.png",
+        "bytes": 353746,
+        "sha256": "130c089007cca84c862ec088834b7eb7ec47021c4987be42670ae982eb58d9c9"
+      },
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "page": "/console/ps4/apps.html#ps4-store-itemzflow-1-08",
+      "local": "/downloads/ps4-ps5/ps4-store-itemzflow-1-08/Itemzflow-PS4-1.08.pkg"
+    },
+    {
+      "id": "ps4-store-xplorer-2-07",
+      "title": "PS4-Xplorer 2.0 · 2.07",
+      "version": "2.07",
+      "filename": "PS4-Xplorer-2.07.pkg",
+      "url": "https://pkg-zone.com/download/ps4/LAPY20009/2.07",
+      "source": "https://lapygames.wordpress.com/apps/",
+      "storePage": "https://pkg-zone.com/details/LAPY20009",
+      "description": "Lapy’s PS4 file manager with copy, move, rename and other on-console file operations. This version comes from the author-endorsed PKG-Zone distribution.",
+      "compatibility": "PS4 v2.07 package. Store label 4.55+; privileged filesystem support remains firmware-specific. This entry does not establish 13.52 support.",
+      "preparation": "Install the publisher PS4 package with your supported package installer and launch PS4-Xplorer from the console home menu. Use the app’s actual mounted paths and firmware-supported access mode. No browser app-launch protocol is provided.",
+      "documentation": "https://lapygames.wordpress.com/apps/",
+      "mirror": false,
+      "distribution": "Use the author-endorsed store download; no general redistribution grant was established for this ready package.",
+      "image": "/assets/images/console-software/ps4xplorer.png",
+      "packageMetadata": {
+        "APP_VER": "02.07",
+        "SYSTEM_VER": "0x05008000",
+        "TITLE": "PS4-Xplorer 2.0",
+        "TITLE_ID": "LAPY20009",
+        "VERSION": "01.00"
+      },
+      "bytes": 63766528,
+      "sha256": "e7a9296c15c30ee70a4ceac468b4f6952a3c658419b460247f3f80efc9aff5a0",
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "page": "/console/ps4/apps.html#ps4-store-xplorer-2-07"
+    },
+    {
+      "id": "ps4-store-orbisshelf-0-2-0",
+      "title": "OrbisShelf · PS4",
+      "version": "v0.2.0",
+      "releaseRecord": "docs/qa/batch3-orbisshelf-release.json",
+      "filename": "OrbisShelf-v0.2.0.pkg",
+      "stagedPath": "docs/qa/batch3-OrbisShelf-v0.2.0.pkg",
+      "expectedTitleId": "ORBS00001",
+      "expectedAppVer": "0.20",
+      "description": "Small homebrew catalogue, downloader and local PKG installer. Version 0.2.0 is the publisher’s stability test build and retains downloaded packages after installation.",
+      "compatibility": "PS4 PKG for an existing homebrew-enabled console. Publisher reports that runtime behavior still needs target-console testing; no firmware test matrix is supplied. No PS5-native compatibility is claimed.",
+      "preparation": "Install the PKG through your supported PS4 package installer, then launch OrbisShelf. The initial catalogue is empty: add only your own or authorized homebrew with size/hash metadata. Select with D-pad and Cross; Triangle refreshes the catalogue and Circle exits when no job runs. Downloads are staged in /data/OrbisShelf/downloads. Unlike the older README flow, v0.2.0 keeps the downloaded PKG after install; its stage log is /data/OrbisShelf/install_stage.txt.",
+      "source": "https://github.com/apexlions16/OrbisShelf/releases/tag/v0.2.0",
+      "documentation": "https://github.com/apexlions16/OrbisShelf/blob/v0.2.0/README.md",
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 PKG",
+      "url": "https://github.com/apexlions16/OrbisShelf/releases/download/v0.2.0/OrbisShelf-v0.2.0.pkg",
+      "bytes": 6619136,
+      "sha256": "546101fd77b6e4203d986d90bdbeca497f0379e07629cfbfc4b292947aa5a778",
+      "image": "/assets/images/ps4-store-apps/ps4-store-orbisshelf-0-2-0.png",
+      "page": "/console/ps4/apps.html#ps4-store-orbisshelf-0-2-0",
+      "packageMetadata": {
+        "APP_VER": "0.20",
+        "SYSTEM_VER": "0x00000000",
+        "TITLE": "OrbisShelf",
+        "TITLE_ID": "ORBS00001",
+        "VERSION": "0.20"
+      },
+      "mirror": false,
+      "distribution": "Publisher download with preserved local backup; original release container retained.",
+      "imageProvenance": {
+        "source": "https://github.com/apexlions16/OrbisShelf/releases/download/v0.2.0/OrbisShelf-v0.2.0.pkg",
+        "embeddedEntry": "icon0.png",
+        "bytes": 2915,
+        "sha256": "21f0adea95e60143c6dc7cd30961bbcfa39a8e06f5258829a9443a6e47363991"
+      }
+    },
+    {
+      "id": "ps4-store-pplay-3-8",
+      "title": "pPlay · PS4 media player",
+      "version": "v3.8",
+      "releaseRecord": "docs/qa/batch3-pplay-release.json",
+      "filename": "pplay-3.8_ps4.zip",
+      "stagedPath": "docs/qa/batch3-pplay-3.8_ps4.zip",
+      "expectedTitleId": "PPLA00001",
+      "expectedAppVer": "3.8",
+      "description": "Media player with subtitle support and HTTP/FTP streaming. Complete original PS4 release ZIP contains its installable PKG and required subtitle font data. Version 3.8 fixes PS4 playback clock/synchronization.",
+      "compatibility": "PS4 release bundle; install in an already compatible homebrew environment. The pinned release supplies no firmware matrix. Nintendo Switch controls and CPU-clock advice in the shared README do not apply to PS4.",
+      "preparation": "Download the complete ZIP and extract it on your computer. Inside pplay/, install IV0001-PPLA00001_00-PPLA000013080000.pkg with your PS4 package installer. Copy the included data/pplay/ tree to /data/pplay/ on the console, retaining mpv/subfont.ttf. The PKG by itself omits this companion font. Use your own media; network streaming requires a reachable HTTP directory listing or FTP server configured in pplay.cfg. No browser link launches the app.",
+      "source": "https://github.com/Cpasjuste/pplay/releases/tag/v3.8",
+      "documentation": "https://github.com/Cpasjuste/pplay/blob/v3.8/README.MD",
+      "platforms": [
+        "ps4"
+      ],
+      "category": "apps",
+      "format": "PS4 complete ZIP",
+      "url": "https://github.com/Cpasjuste/pplay/releases/download/v3.8/pplay-3.8_ps4.zip",
+      "bytes": 36132906,
+      "sha256": "4df671ac087354b23e3fa43975abe8fee0cecb18bcbe12dc14612fce772ec90f",
+      "image": "/assets/images/ps4-store-apps/ps4-store-pplay-3-8.png",
+      "page": "/console/ps4/apps.html#ps4-store-pplay-3-8",
+      "packageMetadata": {
+        "APP_VER": "3.8",
+        "SYSTEM_VER": "0x000003fc",
+        "TITLE": "pplay @ cpasjuste",
+        "TITLE_ID": "PPLA00001",
+        "VERSION": "3.8"
+      },
+      "mirror": false,
+      "distribution": "Publisher download with preserved local backup; original release container retained.",
+      "imageProvenance": {
+        "source": "https://github.com/Cpasjuste/pplay/releases/download/v3.8/pplay-3.8_ps4.zip",
+        "embeddedEntry": "icon0.png",
+        "bytes": 42307,
+        "sha256": "43bbf625bf85e92ce8542ed4a417a4f3248d6d7e6f4beb2fa7e37d58346eee72"
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "id": "ps4-store-scratch-everywhere-1-3",
+      "status": "ready",
+      "version": "1.3",
+      "source": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.3/scratch-ps4.pkg",
+      "bytes": 71696384,
+      "sha256": "9f89fcca1a6d7e45bf851f3c9039a9596523481ebd67f6fe27a4445d5a11add1"
+    },
+    {
+      "id": "ps4-store-mtp-explorer-2-0-0",
+      "status": "ready",
+      "version": "v2.0.0",
+      "source": "https://github.com/nueex/ps-mtp-explorer/releases/download/v2.0.0/PS-MTP-Explorer-2.0.0.pkg",
+      "bytes": 6619136,
+      "sha256": "9e7802be92a4be9b4fa3e3f68715b8d6d87d7daccb889f8ae14d347129710eb2"
+    },
+    {
+      "id": "ps4-store-switchfin-0-9-4",
+      "status": "ready",
+      "version": "0.9.4",
+      "source": "https://github.com/dragonflylee/switchfin/releases/download/0.9.4/IV0001-SFIN00000_00-SFIN000000009400.pkg",
+      "bytes": 58458112,
+      "sha256": "2d0dac54eaec7cf9b86a7a169cb9b88409327fc10bff8c10ea42357d4ba3661c"
+    },
+    {
+      "id": "ps4-store-wiliwili-1-6-0",
+      "status": "ready",
+      "version": "v1.6.0",
+      "source": "https://github.com/xfangfang/wiliwili/releases/download/v1.6.0/wiliwili-PS4.pkg",
+      "bytes": 74711040,
+      "sha256": "d9f089bed9d8352ea6f78d6e93fcb5eea22caad29768ff553d87adb0e79bffba"
+    },
+    {
+      "id": "ps4-store-sponsorblock-installer-1-0-0",
+      "status": "ready",
+      "version": "v1.0.0",
+      "source": "https://github.com/earthonion/Sponsorblock-PS4-Installer/releases/download/v1.0.0/IV0000-YTSB42069_00-SPONSORBLK000000.pkg",
+      "bytes": 6619136,
+      "sha256": "f167ef235426b6fd6b59d2adfd2597a11884d244517c6ddc82c526bdfdfd6c5f"
+    },
+    {
+      "id": "ps4-store-itemzflow-1-08",
+      "status": "ready",
+      "version": "1.08",
+      "source": "https://pkg-zone.com/download/ps4/ITEM00001/1.08",
+      "bytes": 27131904,
+      "sha256": "acd4f37aad8d686a433e73f1b44a3e87b513c10ee7303ff965cb3dc54048e60e"
+    },
+    {
+      "id": "ps4-store-xplorer-2-07",
+      "status": "ready",
+      "version": "2.07",
+      "source": "https://pkg-zone.com/download/ps4/LAPY20009/2.07",
+      "bytes": 63766528,
+      "sha256": "e7a9296c15c30ee70a4ceac468b4f6952a3c658419b460247f3f80efc9aff5a0"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-03",
+  "status": "Visual redesign complete locally",
+  "request": "Redesign the main PS4 and PS5 hosts fully while retaining actual file lists, full-page use, top Back navigation and pinned compatibility.",
+  "pages": [
+    "/hosts/ps4/",
+    "/hosts/ps5/"
+  ],
+  "changes": [
+    "Graphite surfaces, Manrope typography, muted mint actions and compact detached top navigation",
+    "Aligned File/Format/File size/Firmware/Actions columns and original filenames; approximately 71px desktop rows",
+    "Visible file counts, compact search and primary category tabs; secondary utilities in More",
+    "Structured file-details popup for every file, source links, Escape, focus trapping and return focus",
+    "Phone layout, scrolling translated tabs, Arabic RTL and onscreen language picker",
+    "Explicit accessible labels for icon-only phone controls",
+    "All existing download IDs, firmware/game pins and pre-dispatch Load guards preserved; no transport or payload byte changes"
+  ],
+  "verification": {
+    "focusedTests": {
+      "tests": 52,
+      "passed": 52,
+      "failed": 0,
+      "report": "docs/qa/host-redesign-focused-tests.txt",
+      "failures": []
+    },
+    "fullSuite": {
+      "tests": 680,
+      "passed": 678,
+      "failed": 2,
+      "report": "docs/qa/host-redesign-full-tests.txt",
+      "failures": [
+        "all old sender ZIPs and the current sender match SHA/CRC/manifests, preserve 174 actions and exclude five original binaries",
+        "prepared immutable helpers contain exact authored bytes, native guards and archive jobs without external scripts"
+      ],
+      "note": "The full-suite sender-source hash failure predates this rebuilt sender; the final independent ZIP and current-source snapshot verification above confirms parity. The package-installer check still reports a missing Spanish native-helper warning translation from concurrent helper work. No immutable native artifact was replaced to satisfy that check."
+    },
+    "siteAudit": {
+      "pages": 496,
+      "links": 57791,
+      "issues": 0,
+      "report": "docs/qa/host-redesign-site-audit.txt"
+    },
+    "browser": [
+      "PS4 and PS5 desktop tables inspected",
+      "430px phone viewport and Arabic RTL inspected without document overflow; English restored and viewport reset",
+      "More menu and file-details keyboard focus verified",
+      "No payload or exploit executed; no console service contacted"
+    ],
+    "screenshots": [
+      "docs/screenshots/host-redesign-ps4.png",
+      "docs/screenshots/host-redesign-ps5.png",
+      "docs/screenshots/host-redesign-phone.png",
+      "docs/screenshots/host-redesign-file-details.png",
+      "docs/screenshots/host-redesign-firmware.png"
+    ],
+    "sender": {
+      "id": "console-payload-sender-246831ed1c7c",
+      "name": "console-payload-sender-1.9.1-246831ed1c7c.zip",
+      "version": "1.9.1+246831ed1c7c",
+      "url": "/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-246831ed1c7c.zip",
+      "source": "https://whatwhatboy.com/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-246831ed1c7c.zip",
+      "bytes": 100337924,
+      "sha256": "40b91c66b8d3d0418c8214bf3a2276ed2a02d9d4e317c8a9b84803f57c0ae049",
+      "snapshot": "246831ed1c7c1b2ca014dd9712d3947e5aa5e7176e711f4bba1867f10a80fede",
+      "files": 289,
+      "payloads": 125,
+      "actions": 185,
+      "file": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\downloads\\helpers\\console-payload-sender\\console-payload-sender-1.9.1-246831ed1c7c.zip",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\Console Payload Sender\\Helpers\\1.9.1+246831ed1c7c\\console-payload-sender-1.9.1-246831ed1c7c.zip",
+      "zipEntries": 289,
+      "manifestFiles": 288,
+      "allCRCAndSHA256Verified": true,
+      "publicAndFArchiveVerified": true,
+      "finalSourceSnapshotMatches": true
+    },
+    "archive": {
+      "mode": "write",
+      "backupRoot": "F:\\whatsite-backup-downloads-etc",
+      "items": 2280,
+      "fileRecords": 3404,
+      "presentFileRecords": 3404,
+      "missingFileRecords": 0,
+      "missingPaths": 0,
+      "otherUnavailableRecords": 0,
+      "availability": {
+        "present": 3404
+      }
+    }
+  },
+  "sourceHashes": {
+    "scripts/host-folder-markup.cjs": "642b6ff543a1b1b65e5d1ea068d6dc3298440508ee8475c20107a733dc626a27",
+    "assets/host-file-browser.css": "35fedbaa2320d08f25f5faba76e448ef1b8faf2aa72e2c94c3842024bfaa42e3",
+    "assets/host-folders.js": "3d617e8e75ce1473a2c69ee354df0a2b927c9f438f755f45765f1b3ced8e4f9c",
+    "assets/host-dashboard.js": "2041d8fd9cf4d3a00063f89c95efc8757cc146975a13ecd2bab03809086380dc",
+    "i18n-tools/afterglow-translations.cjs": "9d90bf8010dca5c2e2088ef5b2a72e26426bfc83c25b3f69e334bc5c873fac09",
+    "i18n-tools/build-chrome.js": "4e2c1c65d258061475decc6afce596225ec9d570b477596e87aa5e93973b01e2",
+    "scripts/tests/host-file-redesign.test.cjs": "b0b2ec4fc477e31c9f82ce12f60ba5c14e9685acd28e11efab3c4ece82b60dd2"
+  },
+  "preservation": "All earlier files and helper builds retained. No new payload IDs or native receiver builds from this visual work.",
+  "preview": "http://127.0.0.1:8765/hosts/ps4/?view=loaders",
+  "published": false
+}

@@ -1,0 +1,434 @@
+{
+  "updatedAt": "2026-11-02T09:32:54.036Z",
+  "platforms": [
+    {
+      "id": "ps2",
+      "title": "PlayStation 2",
+      "base": "/console/ps2/",
+      "hub": "/console/ps2/",
+      "source": "console/retro/ps2.html",
+      "image": "/assets/images/expansion-ps2/fmcb.png",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "Vimm’s Lair · PS2",
+          "url": "https://vimm.net/vault/PS2",
+          "description": "Open the PS2 game directory in Vimm’s Vault.",
+          "status": "indexed-route-unverified",
+          "origin": "indexed-reference",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "DLPSGame · PS2",
+          "url": "https://dlpsgame.com/category/ps2/",
+          "description": "Browse the PS2 game directory and listings.",
+          "status": "unretrievable",
+          "origin": "observed-navigation",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "gamecube",
+      "title": "Nintendo GameCube",
+      "base": "/console/gamecube/",
+      "hub": "/console/gamecube/",
+      "source": "console/retro/gamecube.html",
+      "image": "/assets/images/expansion-nintendo-retro/gamecube.png",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "Vimm’s Lair · GameCube",
+          "url": "https://vimm.net/vault/GameCube",
+          "description": "Open the GameCube game directory in Vimm’s Vault.",
+          "status": "unretrievable",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "wii",
+      "title": "Nintendo Wii",
+      "base": "/console/wii/",
+      "hub": "/console/wii/",
+      "source": "console/retro/wii.html",
+      "image": "/assets/images/expansion-nintendo-retro/wii.png",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "Vimm’s Lair · Wii",
+          "url": "https://vimm.net/vault/Wii",
+          "description": "Open the Wii game directory in Vimm’s Vault.",
+          "status": "unretrievable",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "NSWGame · Wii",
+          "url": "https://nswgame.com/category/game-wii/",
+          "description": "Browse the Wii game category.",
+          "status": "retrieved",
+          "origin": "observed-navigation",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "wiiu",
+      "title": "Nintendo Wii U",
+      "base": "/console/wiiu/",
+      "hub": "/console/wiiu/",
+      "source": "console/retro/wiiu.html",
+      "directoryMode": "curated-library",
+      "image": "/assets/images/wiiu-homebrew/library.svg",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "Vimm’s Lair · Wii U",
+          "url": "https://vimm.net/vault/WiiU",
+          "description": "Open the Wii U game directory in Vimm’s Vault.",
+          "status": "indexed-route-unverified",
+          "origin": "indexed-reference",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "NSWGame · Wii U",
+          "url": "https://nswgame.com/category/game-wii-u/",
+          "description": "Browse the Wii U game category.",
+          "status": "retrieved",
+          "origin": "observed-navigation",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "psp",
+      "title": "PlayStation Portable",
+      "base": "/console/psp/",
+      "hub": "/console/psp/",
+      "source": "console/retro/psp.html",
+      "image": "/assets/images/psp-more/ark4.png",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "Vimm’s Lair · PSP",
+          "url": "https://vimm.net/vault/PSP",
+          "description": "Open the PSP game directory in Vimm’s Vault.",
+          "status": "indexed-route-unverified",
+          "origin": "indexed-reference",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "DownloadGamePSP · PSP",
+          "url": "https://downloadgamepsp.org/category/psp/",
+          "description": "Browse the PSP game category.",
+          "status": "retrieved",
+          "origin": "observed-navigation",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "3ds",
+      "title": "Nintendo 2DS & 3DS",
+      "base": "/console/3ds/",
+      "hub": "/console/3ds/",
+      "source": "console/retro/3ds.html",
+      "image": "/assets/images/3ds-more/hero.svg",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "NSWGF · Nintendo 3DS",
+          "url": "https://nswgf.com/category/3ds/",
+          "description": "The supplied Nintendo 3DS game category.",
+          "status": "http-403",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "NSWGame · Nintendo 3DS",
+          "url": "https://nswgame.com/category/3ds/",
+          "description": "An additional Nintendo 3DS game category.",
+          "status": "http-403",
+          "origin": "observed-navigation",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "ds",
+      "title": "Nintendo DS & DSi",
+      "base": "/console/ds/",
+      "hub": "/console/ds/",
+      "source": "console/retro/ds.html",
+      "image": "/assets/images/expansion-nintendo-retro/twilight.png",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "Vimm’s Lair · Nintendo DS",
+          "url": "https://vimm.net/vault/DS",
+          "description": "Open the Nintendo DS game directory in Vimm’s Vault.",
+          "status": "indexed-route-unverified",
+          "origin": "indexed-reference",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "NSWGame · Nintendo DS",
+          "url": "https://nswgame.com/category/ds/",
+          "description": "Browse the Nintendo DS game category.",
+          "status": "retrieved",
+          "origin": "observed-navigation",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-switch",
+      "title": "Nintendo Switch",
+      "base": "/console/nintendo-switch/",
+      "hub": "/console/nintendo-switch/",
+      "source": "console/nintendo-switch.html",
+      "image": "/assets/images/consoles/nintendo-switch.jpg",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "NSWGame · Nintendo Switch",
+          "url": "https://nswgame.com/category/switch/",
+          "description": "Browse the Nintendo Switch game category.",
+          "status": "http-403",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-switch-2",
+      "title": "Nintendo Switch 2",
+      "base": "/console/nintendo-switch-2/",
+      "hub": "/console/nintendo-switch-2/",
+      "source": "console/nintendo-switch-2.html",
+      "image": "/assets/images/switch2-console/console.jpg",
+      "aliases": [],
+      "providers": []
+    },
+    {
+      "id": "xbox-one-series",
+      "title": "Xbox One / Series X|S",
+      "base": "/console/xbox-one-series/",
+      "hub": "/console/xbox-one-series/",
+      "source": "console/xbox-one-series.html",
+      "image": "/assets/images/xbox-one-series/dev-home.png",
+      "aliases": [],
+      "providers": []
+    },
+    {
+      "id": "steamdeck",
+      "title": "Steam Deck",
+      "base": "/console/steamdeck/",
+      "hub": "/console/steamdeck/",
+      "source": "console/steamdeck.html",
+      "image": "/assets/images/platform-logos/steamdeck.svg",
+      "aliases": [],
+      "providers": []
+    },
+    {
+      "id": "psvita",
+      "title": "PS Vita",
+      "base": "/console/psvita/",
+      "hub": "/console/psvita/home.html",
+      "source": "console/psvita/library.html",
+      "image": "/assets/images/custom-console-art/vita-henlo.jpg",
+      "aliases": [],
+      "providers": [
+        {
+          "label": "DownloadGamePSP · PS Vita",
+          "url": "https://downloadgamepsp.org/category/psvita-game-free-new/",
+          "description": "Browse the PS Vita game category.",
+          "status": "retrieved",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "ps3",
+      "title": "PlayStation 3",
+      "base": "/console/ps3/",
+      "hub": "/console/ps3/",
+      "source": "console/ps3.html",
+      "image": "/assets/images/consoles/ps3.png",
+      "providers": [
+        {
+          "label": "Vimm’s Lair · PS3",
+          "url": "https://vimm.net/vault/PS3",
+          "description": "Open the PS3 game directory in Vimm’s Vault.",
+          "status": "existing-link-unverified",
+          "origin": "existing-site-link",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "DLPSGame · PS3",
+          "url": "https://dlpsgame.com/list-all-game-ps3/",
+          "description": "Browse the PS3 game directory and listings.",
+          "status": "unretrievable",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "ps4",
+      "title": "PlayStation 4",
+      "base": "/console/ps4/",
+      "hub": "/console/ps4/",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "providers": [
+        {
+          "label": "DLPSGame · PS4",
+          "url": "https://dlpsgame.com/category/ps4/",
+          "description": "Browse the PS4 game directory and listings.",
+          "status": "unretrievable",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "ps5",
+      "title": "PlayStation 5",
+      "base": "/console/ps5/",
+      "hub": "/console/ps5/",
+      "image": "/assets/images/consoles/ps5-featured-image.avif",
+      "providers": [
+        {
+          "label": "DLPSGame · PS5",
+          "url": "https://dlpsgame.com/category/ps5/",
+          "description": "Browse the PS5 game directory and listings.",
+          "status": "unretrievable",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "xbox360",
+      "title": "Xbox 360",
+      "base": "/console/xbox360/",
+      "hub": "/console/xbox360/",
+      "source": "console/xbox360.html",
+      "image": "/assets/images/custom-console-art/xbox360-game-library.jpg",
+      "providers": [
+        {
+          "label": "Vimm’s Lair · Xbox 360",
+          "url": "https://vimm.net/vault/Xbox360",
+          "description": "Open the Xbox 360 game directory in Vimm’s Vault.",
+          "status": "existing-link-unverified",
+          "origin": "existing-site-link",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "Vimm’s Lair · Xbox 360 Digital",
+          "url": "https://vimm.net/vault/X360-D",
+          "description": "Open the Xbox 360 Digital game directory in Vimm’s Vault.",
+          "status": "indexed-route-unverified",
+          "origin": "indexed-reference",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        },
+        {
+          "label": "Xbox 360 · JTAG / RGH",
+          "url": "https://downloadgamexbox.com/list-all-game-xbox-jtag-rgh/",
+          "description": "A JTAG / RGH game directory. Check the listed console and installation requirements.",
+          "status": "retrieved-after-redirect",
+          "origin": "observed-navigation",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "title": "Original Xbox",
+      "base": "/console/xbox/",
+      "hub": "/console/retro/xbox.html",
+      "source": "console/retro/xbox.html",
+      "image": "/assets/images/consoles/xbox.jpg",
+      "providers": [
+        {
+          "label": "Vimm’s Lair · Original Xbox",
+          "url": "https://vimm.net/vault/Xbox",
+          "description": "Open the Original Xbox game directory in Vimm’s Vault.",
+          "status": "unretrievable",
+          "origin": "user-supplied",
+          "checkedAt": "2026-11-02T09:32:06.041Z"
+        }
+      ]
+    }
+  ],
+  "general": [
+    {
+      "label": "Vimm’s Lair · all consoles",
+      "url": "https://vimm.net/vault",
+      "description": "Browse all systems listed in The Vault.",
+      "status": "unretrievable",
+      "origin": "user-supplied",
+      "checkedAt": "2026-11-02T09:32:06.041Z"
+    },
+    {
+      "label": "DLPSGame · all games",
+      "url": "https://dlpsgame.com/",
+      "description": "Browse DLPSGame and choose a console category.",
+      "status": "unretrievable",
+      "origin": "user-supplied",
+      "checkedAt": "2026-11-02T09:32:06.041Z"
+    },
+    {
+      "label": "DownloadGamePSP · PS Vita",
+      "url": "https://downloadgamepsp.org/category/psvita-game-free-new/",
+      "description": "PS Vita listings; PSP is linked in the console directory.",
+      "status": "retrieved",
+      "origin": "user-supplied",
+      "checkedAt": "2026-11-02T09:32:06.041Z"
+    },
+    {
+      "label": "NSWGame · Nintendo Switch",
+      "url": "https://nswgame.com/category/switch/",
+      "description": "Nintendo Switch game listings.",
+      "status": "http-403",
+      "origin": "user-supplied",
+      "checkedAt": "2026-11-02T09:32:06.041Z"
+    },
+    {
+      "label": "NSWGF · Nintendo 3DS",
+      "url": "https://nswgf.com/category/3ds/",
+      "description": "Nintendo 3DS game listings.",
+      "status": "http-403",
+      "origin": "user-supplied",
+      "checkedAt": "2026-11-02T09:32:06.041Z"
+    }
+  ],
+  "vaultSystems": [
+    {
+      "label": "PS1",
+      "url": "https://vimm.net/vault/PS1",
+      "status": "indexed-route-unverified",
+      "origin": "indexed-reference"
+    },
+    {
+      "label": "Game Boy Advance",
+      "url": "https://vimm.net/vault/GBA",
+      "status": "indexed-route-unverified",
+      "origin": "indexed-reference"
+    },
+    {
+      "label": "Nintendo 64",
+      "url": "https://vimm.net/vault/N64",
+      "status": "indexed-route-unverified",
+      "origin": "indexed-reference"
+    }
+  ],
+  "notes": [
+    "Links open the external directory; no individual game file availability is asserted.",
+    "Vimm main vault includes the other systems shown in the supplied screenshot; no category path was guessed for unconfirmed routes.",
+    "Switch 2, Xbox One / Series and Steam Deck retain access to the all-console index without claiming that the supplied directories contain native builds for them."
+  ]
+}

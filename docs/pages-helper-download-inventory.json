@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-03T23:43:57.143Z",
+  "backupRoot": "F:\\whatsite-backup-downloads-etc",
+  "payloadsExecuted": false,
+  "items": [
+    {
+      "id": "whatsite-ps4-console-downloader-2026-11-02-20",
+      "title": "whatwhatboy PS4 console downloader",
+      "project": "whatsite Console Downloader",
+      "platform": "PS4",
+      "category": [
+        "Tools"
+      ],
+      "release": "2026.11.02.20",
+      "url": "https://speedy-away.github.io/WWB-HOST/downloads/helpers/console-download-receivers/ps4/2026.11.02.20-9cc45f58fc4a/whatsite-ps4.html",
+      "pages": [
+        "console/ps4/whatsite-ps4.html",
+        "console/ps4/downloads.html"
+      ],
+      "status": "downloaded",
+      "files": [
+        {
+          "name": "whatsite-ps4.html",
+          "version": "2026.11.02.20",
+          "releaseTag": "2026.11.02.20",
+          "bytes": 771667,
+          "sha256": "9cc45f58fc4a54c69e14754b4b428adfa57156ac81f2b01e9c88abdcb99ce897",
+          "sourceUrl": "https://speedy-away.github.io/WWB-HOST/downloads/helpers/console-download-receivers/ps4/2026.11.02.20-9cc45f58fc4a/whatsite-ps4.html",
+          "local": "/downloads/helpers/console-download-receivers/ps4/2026.11.02.20-9cc45f58fc4a/whatsite-ps4.html",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.20\\whatsite-ps4.html"
+        }
+      ]
+    },
+    {
+      "id": "whatsite-ps5-console-downloader-2026-11-02-20",
+      "title": "whatwhatboy PS5 console downloader",
+      "project": "whatsite Console Downloader",
+      "platform": "PS5",
+      "category": [
+        "Tools"
+      ],
+      "release": "2026.11.02.20",
+      "url": "https://speedy-away.github.io/WWB-HOST/downloads/helpers/console-download-receivers/ps5/2026.11.02.20-f83f4a82ba25/whatsite-ps5.html",
+      "pages": [
+        "console/ps5/whatsite-ps5.html",
+        "console/ps5/downloads.html"
+      ],
+      "status": "downloaded",
+      "files": [
+        {
+          "name": "whatsite-ps5.html",
+          "version": "2026.11.02.20",
+          "releaseTag": "2026.11.02.20",
+          "bytes": 570248,
+          "sha256": "f83f4a82ba25fa21ed290126583bb844de8ae88d41cc32b5d5e53d29cd3e6e28",
+          "sourceUrl": "https://speedy-away.github.io/WWB-HOST/downloads/helpers/console-download-receivers/ps5/2026.11.02.20-f83f4a82ba25/whatsite-ps5.html",
+          "local": "/downloads/helpers/console-download-receivers/ps5/2026.11.02.20-f83f4a82ba25/whatsite-ps5.html",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.20\\whatsite-ps5.html"
+        }
+      ]
+    }
+  ]
+}

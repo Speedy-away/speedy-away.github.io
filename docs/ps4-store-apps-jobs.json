@@ -1,0 +1,238 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {
+      "id": "ps4-store-scratch-everywhere-1-3",
+      "title": "Scratch Everywhere! · PS4",
+      "platform": "PS4",
+      "category": "Apps",
+      "project": "Scratch Everywhere!",
+      "version": "1.3",
+      "filename": "scratch-ps4.pkg",
+      "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.3/scratch-ps4.pkg",
+      "sourceUrls": [
+        "https://github.com/ScratchEverywhere/ScratchEverywhere/tree/1.3",
+        "https://scratcheverywhere.github.io/install#ps4",
+        "https://pkg-zone.com/details/NTXS10053"
+      ],
+      "importPath": "downloads/ps4-ps5/ps4-store-scratch-everywhere-1-3/scratch-ps4.pkg",
+      "expectedBytes": 71696384,
+      "expectedSha256": "9f89fcca1a6d7e45bf851f3c9039a9596523481ebd67f6fe27a4445d5a11add1",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": true,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-mtp-explorer-2-0-0",
+      "title": "PS MTP Explorer · PS4",
+      "platform": "PS4",
+      "category": "Apps",
+      "project": "PS MTP Explorer",
+      "version": "v2.0.0",
+      "filename": "PS-MTP-Explorer-2.0.0.pkg",
+      "url": "https://github.com/nueex/ps-mtp-explorer/releases/download/v2.0.0/PS-MTP-Explorer-2.0.0.pkg",
+      "sourceUrls": [
+        "https://github.com/nueex/ps-mtp-explorer/tree/v2.0.0",
+        "https://github.com/nueex/ps-mtp-explorer/blob/v2.0.0/README.md"
+      ],
+      "importPath": "docs/tmp/ps4-store-apps/PS-MTP-Explorer-2.0.0.pkg",
+      "expectedBytes": 6619136,
+      "expectedSha256": "9e7802be92a4be9b4fa3e3f68715b8d6d87d7daccb889f8ae14d347129710eb2",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-switchfin-0-9-4",
+      "title": "Switchfin · PS4 Jellyfin client",
+      "platform": "PS4",
+      "category": "Apps",
+      "project": "Switchfin",
+      "version": "0.9.4",
+      "filename": "IV0001-SFIN00000_00-SFIN000000009400.pkg",
+      "url": "https://github.com/dragonflylee/switchfin/releases/download/0.9.4/IV0001-SFIN00000_00-SFIN000000009400.pkg",
+      "sourceUrls": [
+        "https://github.com/dragonflylee/switchfin/tree/0.9.4",
+        "https://github.com/dragonflylee/switchfin/blob/0.9.4/README.md",
+        "https://pkg-zone.com/details/SFIN00000"
+      ],
+      "importPath": "downloads/ps4-ps5/ps4-store-switchfin-0-9-4/IV0001-SFIN00000_00-SFIN000000009400.pkg",
+      "expectedBytes": 58458112,
+      "expectedSha256": "2d0dac54eaec7cf9b86a7a169cb9b88409327fc10bff8c10ea42357d4ba3661c",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": true,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-wiliwili-1-6-0",
+      "title": "wiliwili · PS4",
+      "platform": "PS4",
+      "category": "Apps",
+      "project": "wiliwili",
+      "version": "v1.6.0",
+      "filename": "wiliwili-PS4.pkg",
+      "url": "https://github.com/xfangfang/wiliwili/releases/download/v1.6.0/wiliwili-PS4.pkg",
+      "sourceUrls": [
+        "https://github.com/xfangfang/wiliwili/tree/v1.6.0",
+        "https://github.com/xfangfang/wiliwili/blob/v1.6.0/README.md"
+      ],
+      "importPath": "downloads/ps4-ps5/ps4-store-wiliwili-1-6-0/wiliwili-PS4.pkg",
+      "expectedBytes": 74711040,
+      "expectedSha256": "d9f089bed9d8352ea6f78d6e93fcb5eea22caad29768ff553d87adb0e79bffba",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": true,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-sponsorblock-installer-1-0-0",
+      "title": "SponsorBlock Installer · PS4",
+      "platform": "PS4",
+      "category": "Apps",
+      "project": "SponsorBlock Installer",
+      "version": "v1.0.0",
+      "filename": "IV0000-YTSB42069_00-SPONSORBLK000000.pkg",
+      "url": "https://github.com/earthonion/Sponsorblock-PS4-Installer/releases/download/v1.0.0/IV0000-YTSB42069_00-SPONSORBLK000000.pkg",
+      "sourceUrls": [
+        "https://github.com/earthonion/Sponsorblock-PS4-Installer/tree/v1.0.0",
+        "https://github.com/earthonion/Sponsorblock-PS4-Installer/releases/tag/v1.0.0"
+      ],
+      "importPath": "downloads/ps4-ps5/ps4-store-sponsorblock-installer-1-0-0/IV0000-YTSB42069_00-SPONSORBLK000000.pkg",
+      "expectedBytes": 6619136,
+      "expectedSha256": "f167ef235426b6fd6b59d2adfd2597a11884d244517c6ddc82c526bdfdfd6c5f",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": true,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-itemzflow-1-08",
+      "title": "Itemzflow Game Manager · PS4",
+      "platform": "PS4",
+      "category": "Apps",
+      "project": "Itemzflow Game Manager",
+      "version": "1.08",
+      "filename": "Itemzflow-PS4-1.08.pkg",
+      "url": "https://pkg-zone.com/download/ps4/ITEM00001/1.08",
+      "sourceUrls": [
+        "https://github.com/LightningMods/Itemzflow/releases/tag/1.08",
+        "https://github.com/LightningMods/Itemzflow",
+        "https://pkg-zone.com/details/ITEM00001"
+      ],
+      "importPath": "downloads/ps4-ps5/ps4-store-itemzflow-1-08/Itemzflow-PS4-1.08.pkg",
+      "expectedBytes": 27131904,
+      "expectedSha256": "acd4f37aad8d686a433e73f1b44a3e87b513c10ee7303ff965cb3dc54048e60e",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": true,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-xplorer-2-07",
+      "title": "PS4-Xplorer 2.0 · 2.07",
+      "platform": "PS4",
+      "category": "Apps",
+      "project": "PS4-Xplorer 2.0",
+      "version": "2.07",
+      "filename": "PS4-Xplorer-2.07.pkg",
+      "url": "https://pkg-zone.com/download/ps4/LAPY20009/2.07",
+      "sourceUrls": [
+        "https://lapygames.wordpress.com/apps/",
+        "https://lapygames.wordpress.com/apps/",
+        "https://pkg-zone.com/details/LAPY20009"
+      ],
+      "importPath": "docs/tmp/ps4-store-apps/PS4-Xplorer-2.07.pkg",
+      "expectedBytes": 63766528,
+      "expectedSha256": "e7a9296c15c30ee70a4ceac468b4f6952a3c658419b460247f3f80efc9aff5a0",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-orbisshelf-0-2-0",
+      "title": "OrbisShelf · PS4",
+      "platform": "PS4",
+      "category": [
+        "Apps"
+      ],
+      "project": "OrbisShelf",
+      "version": "v0.2.0",
+      "filename": "OrbisShelf-v0.2.0.pkg",
+      "url": "https://github.com/apexlions16/OrbisShelf/releases/download/v0.2.0/OrbisShelf-v0.2.0.pkg",
+      "sourceUrls": [
+        "https://github.com/apexlions16/OrbisShelf/releases/tag/v0.2.0",
+        "https://github.com/apexlions16/OrbisShelf/blob/v0.2.0/README.md"
+      ],
+      "importPath": "docs/qa/batch3-OrbisShelf-v0.2.0.pkg",
+      "expectedBytes": 6619136,
+      "expectedSha256": "546101fd77b6e4203d986d90bdbeca497f0379e07629cfbfc4b292947aa5a778",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "ps4-store-pplay-3-8",
+      "title": "pPlay · PS4 media player",
+      "platform": "PS4",
+      "category": [
+        "Apps"
+      ],
+      "project": "pPlay",
+      "version": "v3.8",
+      "filename": "pplay-3.8_ps4.zip",
+      "url": "https://github.com/Cpasjuste/pplay/releases/download/v3.8/pplay-3.8_ps4.zip",
+      "sourceUrls": [
+        "https://github.com/Cpasjuste/pplay/releases/tag/v3.8",
+        "https://github.com/Cpasjuste/pplay/blob/v3.8/README.MD"
+      ],
+      "importPath": "docs/qa/batch3-pplay-3.8_ps4.zip",
+      "expectedBytes": 36132906,
+      "expectedSha256": "4df671ac087354b23e3fa43975abe8fee0cecb18bcbe12dc14612fce772ec90f",
+      "archiveRole": [
+        "Builds"
+      ],
+      "mirror": false,
+      "pages": [
+        "console/ps4/apps.html",
+        "console/ps4/downloads.html"
+      ]
+    }
+  ]
+}

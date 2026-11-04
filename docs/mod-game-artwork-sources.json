@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-02",
+  "note": "Official game artwork used for matching titles; previous image files retained.",
+  "replacements": [
+    {
+      "id": "cold-war",
+      "old": "/assets/images/covers/cod-cold-war.jpg",
+      "file": "/assets/images/covers/cod-cold-war-official.jpg",
+      "page": "https://www.playstation.com/en-us/games/call-of-duty-black-ops-cold-war/",
+      "url": "https://gmedia.playstation.com/is/image/SIEPDC/call-of-duty-black-ops-cold-war-pdp-hero-01-ps4-25aug20$en?fmt=jpeg&wid=1280&qlt=85",
+      "bytes": 118427,
+      "sha256": "56239984ff269561d00e7b8adaa5c00bc071bcb5bf819d0b2ec6af12888cd447"
+    },
+    {
+      "id": "modern-warfare-remastered",
+      "old": "/assets/images/covers/cod4.jpg",
+      "file": "/assets/images/covers/cod-modern-warfare-remastered-official.jpg",
+      "page": "https://store.steampowered.com/app/393080/Call_of_Duty_Modern_Warfare_Remastered/",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/393080/header.jpg",
+      "bytes": 35146,
+      "sha256": "77527a5d47fa6aa5cfe1051e0ebe476c6ba839e98e4d101801176db46e5ee85e"
+    },
+    {
+      "id": "modern-warfare-2-remastered",
+      "old": "/assets/images/covers/cod-mw2-2009.jpg",
+      "file": "/assets/images/covers/cod-mw2-remastered-official.jpg",
+      "page": "https://www.playstation.com/en-us/games/call-of-duty-modern-warfare-2-campaign-remastered/",
+      "url": "https://gmedia.playstation.com/is/image/SIEPDC/call-of-duty-modern-warfare-2-campaign-remastered-huge-hero-desktop-tablet-01-ps4-en-26mar20?fmt=jpeg&wid=1280&qlt=85",
+      "bytes": 81221,
+      "sha256": "328bd9ddc8c58042c917ab71eb423a9c40a3e0c8ba8b773c2aba6d4a0a8db3ad"
+    }
+  ],
+  "visuallyCheckedUnchanged": [
+    "cod-black-ops-1.jpg",
+    "cod-black-ops-2.jpg",
+    "cod-black-ops-3.jpg",
+    "cod-black-ops-4.jpg"
+  ]
+}

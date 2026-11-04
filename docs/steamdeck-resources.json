@@ -1,0 +1,862 @@
+{
+  "reviewed": "2026-11-02",
+  "groups": [
+    {
+      "id": "launchers-proton",
+      "title": "Launchers, Proton & fixes",
+      "description": "Manage your game libraries and choose compatibility tools for Windows games."
+    },
+    {
+      "id": "emulation",
+      "title": "Emulation & your library",
+      "description": "Choose an emulation setup, then organize your games in Steam."
+    },
+    {
+      "id": "decky-plugins",
+      "title": "Plugins & customization",
+      "description": "Install Decky Loader first, then add plugins from its stable store."
+    },
+    {
+      "id": "remote-play",
+      "title": "Remote play",
+      "description": "Play games running on a PC or PlayStation console. The host device is required."
+    },
+    {
+      "id": "desktop-utilities",
+      "title": "Files & desktop utilities",
+      "description": "Move files between devices and manage Flatpak app permissions."
+    }
+  ],
+  "items": [
+    {
+      "id": "heroic",
+      "group": "launchers-proton",
+      "title": "Heroic Games Launcher",
+      "kind": "Game launcher",
+      "categories": [
+        "launchers"
+      ],
+      "search": "heroic games launcher epic gog amazon prime non steam games wine proton library",
+      "icon": "/assets/images/steamdeck/heroic.png",
+      "description": "Install Epic, GOG, and Amazon Prime Games titles. Manage Wine or Proton and add games to Steam for access in Game Mode.",
+      "features": [
+        "Epic & GOG",
+        "Amazon Games",
+        "Steam Shortcuts"
+      ],
+      "links": [
+        {
+          "url": "https://heroicgameslauncher.com/",
+          "label": "Get Heroic"
+        },
+        {
+          "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki",
+          "label": "Setup guide"
+        }
+      ],
+      "guide": "guide-windows-games",
+      "archiveJobId": "steamdeck-heroic"
+    },
+    {
+      "id": "protonup",
+      "group": "launchers-proton",
+      "title": "ProtonUp-Qt",
+      "kind": "Compatibility manager",
+      "categories": [
+        "compatibility"
+      ],
+      "search": "protonup qt protonup-qt ge proton compatibility wine versions windows games steamos",
+      "icon": "/assets/images/steamdeck/protonup-qt.png",
+      "description": "Install community compatibility tools such as GE-Proton. Restart Steam, then select the installed version in a game's Compatibility settings.",
+      "features": [
+        "GE-Proton",
+        "Version Manager",
+        "Desktop Mode"
+      ],
+      "links": [
+        {
+          "url": "https://davidotek.github.io/protonup-qt/",
+          "label": "Get ProtonUp-Qt"
+        },
+        {
+          "url": "https://github.com/DavidoTek/ProtonUp-Qt/releases",
+          "label": "Linux releases"
+        }
+      ],
+      "guide": "guide-proton",
+      "archiveJobId": "steamdeck-protonup-qt"
+    },
+    {
+      "id": "emudeck",
+      "group": "emulation",
+      "title": "EmuDeck",
+      "kind": "Emulation setup",
+      "categories": [
+        "emulation"
+      ],
+      "search": "emudeck emulation steam deck retro emulators roms setup installer automatic steam library",
+      "icon": "/assets/images/steamdeck/emudeck-icon.png",
+      "description": "Install and configure emulators, then add your own games to Steam. A starting point for setting up an emulation library on the Deck.",
+      "features": [
+        "Emulation",
+        "Auto Setup",
+        "Steam Library"
+      ],
+      "links": [
+        {
+          "url": "https://www.emudeck.com/",
+          "label": "Get EmuDeck"
+        },
+        {
+          "url": "https://manual.emudeck.com/",
+          "label": "Setup guide"
+        }
+      ],
+      "guide": "guide-emulation",
+      "archiveJobId": "steamdeck-emudeck-installer"
+    },
+    {
+      "id": "retrodeck",
+      "group": "emulation",
+      "title": "RetroDECK",
+      "kind": "Emulation setup",
+      "categories": [
+        "emulation"
+      ],
+      "search": "retrodeck retro deck emulation emulators emulationstation es de flatpak flathub controller retro games",
+      "icon": "/assets/images/steamdeck/retrodeck.png",
+      "description": "A bundled emulation setup with a controller-friendly ES-DE frontend. Install and update through Flathub, then add your own games and required BIOS files.",
+      "features": [
+        "Flatpak",
+        "ES-DE Frontend",
+        "Controller Friendly"
+      ],
+      "links": [
+        {
+          "url": "https://retrodeck.net/",
+          "label": "Get RetroDECK"
+        },
+        {
+          "url": "https://retrodeck.readthedocs.io/",
+          "label": "Setup guide"
+        }
+      ],
+      "guide": "guide-emulation",
+      "archiveJobId": "steamdeck-retrodeck-installer"
+    },
+    {
+      "id": "steam-rom-manager",
+      "group": "emulation",
+      "title": "Steam ROM Manager",
+      "kind": "Steam library utility",
+      "categories": [
+        "emulation"
+      ],
+      "search": "steam rom manager srm emulation roms artwork steamgriddb non steam shortcuts library parsers",
+      "icon": "/assets/images/steamdeck/steam-rom-manager.png",
+      "description": "Add emulated games and non-Steam apps to your library with matching artwork. Configure parsers for the emulators and game folders you already use.",
+      "features": [
+        "Library Shortcuts",
+        "Game Artwork",
+        "Emulator Parsers"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/SteamGridDB/steam-rom-manager/releases",
+          "label": "Linux releases"
+        },
+        {
+          "url": "https://github.com/SteamGridDB/steam-rom-manager/wiki",
+          "label": "Setup guide"
+        }
+      ],
+      "guide": "guide-emulation",
+      "archiveJobId": "steamdeck-steam-rom-manager"
+    },
+    {
+      "id": "decky",
+      "group": "decky-plugins",
+      "title": "Decky Loader",
+      "kind": "Plugin manager",
+      "categories": [
+        "plugins"
+      ],
+      "search": "decky loader plugin manager steam deck game mode plugins store open source customization css loader powertools steamgriddb",
+      "icon": "/assets/images/steamdeck/decky-icon.png",
+      "description": "Add a plugin menu and community plugin store to Game Mode. Browse customization, artwork, and utility plugins from the Deck's Quick Access menu.",
+      "features": [
+        "Plugin Manager",
+        "Game Mode",
+        "Plugin Store",
+        "Open Source"
+      ],
+      "links": [
+        {
+          "url": "https://decky.xyz/",
+          "label": "Get Decky Loader"
+        },
+        {
+          "url": "https://wiki.deckbrew.xyz/",
+          "label": "Setup guide"
+        }
+      ],
+      "guide": "guide-decky",
+      "archiveJobId": "steamdeck-decky-installer"
+    },
+    {
+      "id": "moonlight",
+      "group": "remote-play",
+      "title": "Moonlight",
+      "kind": "PC remote play",
+      "categories": [
+        "streaming"
+      ],
+      "search": "moonlight sunshine pc game streaming remote play desktop network wifi host gaming computer",
+      "icon": "/assets/images/steamdeck/moonlight.png",
+      "description": "Stream games from your gaming PC. Set up Sunshine on the host, pair Moonlight, and use a reliable network for responsive remote play.",
+      "features": [
+        "PC Streaming",
+        "Sunshine Host",
+        "Remote Play"
+      ],
+      "links": [
+        {
+          "url": "https://moonlight-stream.org/",
+          "label": "Get Moonlight"
+        },
+        {
+          "url": "https://docs.lizardbyte.dev/projects/sunshine/latest/",
+          "label": "Sunshine setup"
+        }
+      ],
+      "guide": "guide-moonlight",
+      "archiveJobId": "steamdeck-moonlight"
+    },
+    {
+      "id": "chiaki-ng",
+      "group": "remote-play",
+      "title": "chiaki-ng",
+      "kind": "PlayStation remote play",
+      "categories": [
+        "streaming"
+      ],
+      "search": "chiaki ng chiaki-ng chiaki4deck playstation ps4 ps5 remote play streaming console dualsense",
+      "icon": "/assets/images/steamdeck/chiaki-ng.svg",
+      "description": "Stream from your PS4 or PS5 to the Deck. Enable Remote Play on the console, then follow the registration guide to pair the app.",
+      "features": [
+        "PS4 & PS5",
+        "Console Required",
+        "Remote Play"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/chiaki-ng/chiaki-ng/releases",
+          "label": "Linux releases"
+        },
+        {
+          "url": "https://chiaki-ng.github.io/chiaki-ng/",
+          "label": "Deck setup guide"
+        }
+      ],
+      "guide": "guide-chiaki",
+      "archiveJobId": "steamdeck-chiaki-ng"
+    },
+    {
+      "id": "lutris",
+      "group": "launchers-proton",
+      "title": "Lutris",
+      "kind": "Game launcher",
+      "categories": [
+        "launchers"
+      ],
+      "search": "lutris non steam games launcher windows wine proton installer library shortcuts discover flatpak",
+      "icon": "/assets/images/steamdeck/lutris.png",
+      "description": "Manage non-Steam games and launchers in one library. Install Lutris through Discover in Desktop Mode, then create Steam shortcuts for the games you want in Game Mode.",
+      "features": [
+        "Non-Steam games",
+        "Steam shortcuts",
+        "Flatpak"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/net.lutris.Lutris",
+          "label": "Get Lutris"
+        },
+        {
+          "url": "https://lutris.net/downloads",
+          "label": "Steam Deck setup"
+        }
+      ],
+      "guide": "guide-windows-games",
+      "archiveJobId": "steamdeck-lutris-installer"
+    },
+    {
+      "id": "protontricks",
+      "group": "launchers-proton",
+      "title": "Protontricks",
+      "kind": "Game dependency manager",
+      "categories": [
+        "compatibility"
+      ],
+      "search": "protontricks winetricks proton windows dependencies components runtimes steam game prefix flatpak discover",
+      "icon": "/assets/images/steamdeck/protontricks.png",
+      "description": "Install game-specific Windows components inside a Steam game's Proton environment. Use its graphical interface when a game's setup instructions call for particular dependencies, rather than changing every game.",
+      "features": [
+        "Per-game dependencies",
+        "Proton environments",
+        "Flatpak"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/com.github.Matoking.protontricks",
+          "label": "Get Protontricks"
+        },
+        {
+          "url": "https://github.com/Matoking/protontricks#installation",
+          "label": "Installation guide"
+        }
+      ],
+      "requirement": "Use the dependencies named by the game's setup guide.",
+      "guide": "guide-flatpak",
+      "archiveJobId": "steamdeck-protontricks-installer"
+    },
+    {
+      "id": "bottles",
+      "group": "launchers-proton",
+      "title": "Bottles",
+      "kind": "Windows app environments",
+      "categories": [
+        "launchers"
+      ],
+      "search": "bottles wine windows software programs launchers environments prefixes runners dependencies flatpak discover",
+      "icon": "/assets/images/steamdeck/bottles.png",
+      "description": "Create separate environments for Windows games and software. Manage runners and dependencies through a graphical interface, then run the installer or program inside its selected bottle in Desktop Mode.",
+      "features": [
+        "Separate environments",
+        "Runner management",
+        "Flatpak"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/com.usebottles.bottles",
+          "label": "Get Bottles"
+        },
+        {
+          "url": "https://docs.usebottles.com/getting-started/installation",
+          "label": "Installation guide"
+        }
+      ],
+      "requirement": "The official supported package is the Flatpak version.",
+      "guide": "guide-windows-games",
+      "archiveJobId": "steamdeck-bottles-installer"
+    },
+    {
+      "id": "flatseal",
+      "group": "desktop-utilities",
+      "title": "Flatseal",
+      "kind": "Flatpak permissions",
+      "categories": [
+        "desktop"
+      ],
+      "search": "flatseal flatpak permissions filesystem folders sd card storage access desktop discover sandbox",
+      "icon": "/assets/images/steamdeck/flatseal.png",
+      "description": "Review permissions for Flatpak apps and grant access to a particular game folder when needed. Select the affected app, change its permissions, then restart it to apply the changes.",
+      "features": [
+        "App permissions",
+        "Folder access",
+        "Desktop Mode"
+      ],
+      "links": [
+        {
+          "url": "https://flathub.org/apps/com.github.tchx84.Flatseal",
+          "label": "Get Flatseal"
+        },
+        {
+          "url": "https://github.com/tchx84/Flatseal/blob/master/DOCUMENTATION.md",
+          "label": "Permission guide"
+        }
+      ],
+      "requirement": "Applies to Flatpak apps; choose the specific folder they need.",
+      "guide": "guide-flatpak",
+      "archiveJobId": "steamdeck-flatseal-installer"
+    },
+    {
+      "id": "localsend",
+      "group": "desktop-utilities",
+      "title": "LocalSend",
+      "kind": "Local file transfers",
+      "categories": [
+        "desktop"
+      ],
+      "search": "localsend local send files transfer phone pc android ios wifi network desktop appimage flatpak",
+      "icon": "/assets/images/steamdeck/localsend.png",
+      "description": "Transfer files between your Deck, phone, and PC over the same local network. Install LocalSend on both devices, select the receiving device, and accept the transfer without creating an account.",
+      "features": [
+        "Local network",
+        "Phone and PC",
+        "No account"
+      ],
+      "links": [
+        {
+          "url": "https://localsend.org/download",
+          "label": "Get LocalSend"
+        },
+        {
+          "url": "https://github.com/localsend/localsend#setup",
+          "label": "Setup and troubleshooting"
+        }
+      ],
+      "requirement": "Both devices need LocalSend and access to the same local network.",
+      "guide": "guide-files",
+      "archiveJobId": "steamdeck-localsend"
+    },
+    {
+      "id": "css-loader",
+      "title": "CSS Loader",
+      "kind": "Decky theme plugin",
+      "description": "Customize the Steam interface with community CSS themes. Install the plugin through Decky, then choose and manage themes from its menu.",
+      "features": [
+        "Decky plugin",
+        "Interface themes",
+        "Game Mode"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/DeckThemes/SDH-CssLoader",
+          "label": "CSS Loader project"
+        },
+        {
+          "url": "https://docs.deckthemes.com/CSSLoader/Install/",
+          "label": "Official instructions"
+        }
+      ],
+      "guide": "guide-customization",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "CSS Loader decky plugin",
+      "icon": "/assets/images/steamdeck/css-loader.png",
+      "requirement": "Requires Decky Loader; install through its built-in stable store.",
+      "archiveJobId": "steamdeck-plugin-css-loader",
+      "preview": true
+    },
+    {
+      "id": "steamgriddb",
+      "title": "SteamGridDB",
+      "kind": "Decky artwork plugin",
+      "description": "Change library artwork, icons, and game images in Game Mode, including non-Steam shortcuts. Open a game's context menu and choose Change Artwork.",
+      "features": [
+        "Decky plugin",
+        "Library artwork",
+        "Steam shortcuts"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/SteamGridDB/decky-steamgriddb",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-customization",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "SteamGridDB decky plugin",
+      "icon": "/assets/images/steamdeck/steamgriddb.png",
+      "requirement": "Requires Decky Loader; install through its built-in stable store.",
+      "archiveJobId": "steamdeck-plugin-steamgriddb",
+      "preview": true
+    },
+    {
+      "id": "protondb-badges",
+      "title": "ProtonDB Badges",
+      "kind": "Decky compatibility plugin",
+      "description": "Show tappable ProtonDB community compatibility badges on game pages. Open the reports to compare other players' settings and experiences with a title.",
+      "features": [
+        "Decky plugin",
+        "Community reports",
+        "Game pages"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/bschelst/protondb-decky",
+          "label": "Maintained project"
+        }
+      ],
+      "guide": "guide-decky",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "ProtonDB Badges decky plugin",
+      "icon": "/assets/images/steamdeck/protondb-badges.png",
+      "requirement": "Requires Decky Loader; install through its built-in stable store.",
+      "archiveJobId": "steamdeck-plugin-protondb-badges",
+      "preview": true
+    },
+    {
+      "id": "powertools",
+      "title": "PowerTools",
+      "kind": "Advanced Decky tuning plugin",
+      "description": "Adjust CPU, GPU, and battery controls with per-game settings. For manual tuning: change one setting at a time and keep defaults available to restore.",
+      "features": [
+        "Decky plugin",
+        "Advanced controls",
+        "Per-game settings"
+      ],
+      "links": [
+        {
+          "url": "https://gitlab.com/NGnius/PowerTools",
+          "label": "Project & documentation"
+        }
+      ],
+      "guide": "guide-decky",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "PowerTools decky plugin",
+      "icon": "/assets/images/steamdeck/powertools.png",
+      "requirement": "Requires Decky Loader. Advanced manual tuning; results depend on the game.",
+      "archiveJobId": "steamdeck-plugin-powertools",
+      "preview": true
+    },
+    {
+      "id": "syncthing",
+      "title": "Syncthing",
+      "kind": "Continuous folder sync",
+      "description": "Keep selected folders synchronized between your Deck and another device. Pair the devices, choose a shared folder, and monitor transfers through its browser-based interface in Desktop Mode.",
+      "features": [
+        "Folder sync",
+        "Device pairing",
+        "Linux build"
+      ],
+      "links": [
+        {
+          "url": "https://syncthing.net/downloads/",
+          "label": "Official downloads"
+        },
+        {
+          "url": "https://docs.syncthing.net/intro/getting-started.html",
+          "label": "Getting started"
+        }
+      ],
+      "guide": "guide-sync",
+      "requirement": "Keep Syncthing running on both devices. Changes and deletions can synchronize.",
+      "archiveJobId": "steamdeck-syncthing",
+      "group": "desktop-utilities",
+      "categories": [
+        "desktop"
+      ],
+      "search": "Syncthing Continuous folder sync",
+      "icon": "/assets/images/steamdeck/syncthing.png"
+    },
+    {
+      "id": "filelight",
+      "title": "Filelight",
+      "kind": "Disk usage visualizer",
+      "description": "Find which folders use the most space using an interactive ring map. Scan your home folder or a selected drive, then explore larger directories before deciding what to manage.",
+      "features": [
+        "Disk usage",
+        "Folder scanning",
+        "Desktop Mode"
+      ],
+      "links": [
+        {
+          "url": "https://apps.kde.org/filelight/",
+          "label": "Get Filelight"
+        },
+        {
+          "url": "https://docs.kde.org/stable_kf6/en/filelight/filelight/index.html",
+          "label": "Official handbook"
+        }
+      ],
+      "guide": "guide-storage",
+      "archiveJobId": "steamdeck-filelight-installer",
+      "group": "desktop-utilities",
+      "categories": [
+        "desktop"
+      ],
+      "search": "Filelight Disk usage visualizer",
+      "icon": "/assets/images/steamdeck/filelight.png"
+    },
+    {
+      "id": "peazip",
+      "title": "PeaZip",
+      "kind": "Archive manager",
+      "description": "Browse and extract ZIP, RAR, 7Z, and TAR archives in Desktop Mode. Review the contents and choose an output folder while keeping the original archive available.",
+      "features": [
+        "ZIP, RAR & 7Z",
+        "Portable Linux build",
+        "Archive browser"
+      ],
+      "links": [
+        {
+          "url": "https://peazip.github.io/peazip-linux.html",
+          "label": "Linux downloads"
+        },
+        {
+          "url": "https://peazip.github.io/how-to-extract-rar-zip-archives.html",
+          "label": "Extraction guide"
+        }
+      ],
+      "guide": "guide-archives",
+      "archiveJobId": "steamdeck-peazip",
+      "group": "desktop-utilities",
+      "categories": [
+        "desktop"
+      ],
+      "search": "PeaZip Archive manager",
+      "icon": "/assets/images/steamdeck/peazip.png"
+    },
+    {
+      "id": "tabmaster",
+      "title": "TabMaster",
+      "kind": "Decky library tabs",
+      "description": "Create, reorder, filter, and hide library tabs in Game Mode. Build a tab for a collection, installed games, or non-Steam titles to make a large library easier to browse.",
+      "features": [
+        "Decky plugin",
+        "Custom tabs",
+        "Library filters"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/Tormak9970/TabMaster",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-library",
+      "archiveJobId": "steamdeck-plugin-tabmaster",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "TabMaster Decky library tabs",
+      "icon": "/assets/images/steamdeck/tabmaster.png",
+      "preview": true,
+      "requirement": "Requires Decky Loader; install through its stable plugin store."
+    },
+    {
+      "id": "hltb-for-deck",
+      "title": "HLTB for Deck",
+      "kind": "Decky game-length estimates",
+      "description": "Display HowLongToBeat completion-time estimates on game pages. Open View Details for the source listing and adjust the information bar from the plugin menu.",
+      "features": [
+        "Decky plugin",
+        "Game-length estimates",
+        "Game pages"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/morwy/hltb-for-deck",
+          "label": "Maintained project"
+        }
+      ],
+      "guide": "guide-library",
+      "requirement": "Estimates depend on HowLongToBeat data and its availability.",
+      "archiveJobId": "steamdeck-plugin-hltb-for-deck",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "HLTB for Deck Decky game-length estimates",
+      "icon": "/assets/images/steamdeck/hltb-for-deck.png",
+      "preview": true
+    },
+    {
+      "id": "storage-cleaner",
+      "title": "Storage Cleaner",
+      "kind": "Decky cache inspection",
+      "description": "Inspect per-game shader-cache and compatibility-data usage from Game Mode. Identify space usage before considering selective cleanup; compatibility folders can also contain game settings and saves.",
+      "features": [
+        "Decky plugin",
+        "Per-game storage",
+        "Cache inspection"
+      ],
+      "links": [
+        {
+          "url": "https://github.com/mcarlucci/decky-storage-cleaner",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-storage",
+      "requirement": "Requires Decky Loader. Review data and backups before removing anything.",
+      "archiveJobId": "steamdeck-plugin-storage-cleaner",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "Storage Cleaner Decky cache inspection",
+      "icon": "/assets/images/steamdeck/storage-cleaner.png",
+      "preview": true
+    },
+    {
+      "id": "bluetooth",
+      "title": "Bluetooth",
+      "kind": "Decky device connections",
+      "description": "Reconnect already paired headphones, controllers, and other Bluetooth devices from Quick Access while a game is running.",
+      "features": [
+        "Paired devices",
+        "Quick reconnect",
+        "Game Mode"
+      ],
+      "requirement": "Pair new devices in Steam Settings first; this plugin is a shortcut to existing pairings.",
+      "links": [
+        {
+          "url": "https://github.com/Outpox/Bluetooth",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-bluetooth",
+      "archiveJobId": "steamdeck-plugin-bluetooth",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "Bluetooth Decky device connections",
+      "icon": "/assets/images/steamdeck/bluetooth.png",
+      "preview": true
+    },
+    {
+      "id": "pause-games",
+      "title": "Pause Games",
+      "kind": "Decky game pausing",
+      "description": "Pause and resume a running game from Quick Access, or optionally pause it when it loses focus. Useful for switching between applications without closing them.",
+      "features": [
+        "Manual pause / resume",
+        "Focus-loss option",
+        "Running games"
+      ],
+      "requirement": "Paused games keep their RAM and VRAM. Save first and test with an offline game; some games do not resume reliably.",
+      "links": [
+        {
+          "url": "https://github.com/wynn1212/SDH-PauseGames",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-pause-games",
+      "archiveJobId": "steamdeck-plugin-pause-games",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "Pause Games Decky game pausing",
+      "icon": "/assets/images/steamdeck/pause-games.jpg",
+      "preview": true
+    },
+    {
+      "id": "audio-loader",
+      "title": "Audio Loader",
+      "kind": "Decky menu sounds",
+      "description": "Replace Steam interface sound effects with sound packs from the built-in Pack Manager. Browse packs and try one at a time from Game Mode.",
+      "features": [
+        "Menu sound packs",
+        "Pack Manager",
+        "Interface customization"
+      ],
+      "requirement": "Requires Decky Loader. Sound packs are downloaded separately through the plugin.",
+      "links": [
+        {
+          "url": "https://github.com/EMERALD0874/SDH-AudioLoader",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-audio-loader",
+      "archiveJobId": "steamdeck-plugin-audio-loader",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "Audio Loader Decky menu sounds",
+      "icon": "/assets/images/steamdeck/audio-loader.png",
+      "preview": true
+    },
+    {
+      "id": "animation-changer",
+      "title": "Animation Changer",
+      "kind": "Decky startup customization",
+      "description": "Browse and install startup animations, choose an installed animation, or randomize your selection on boot. Manage the selection from Quick Access.",
+      "features": [
+        "Startup animations",
+        "Animation browser",
+        "Randomize on boot"
+      ],
+      "requirement": "Requires Decky Loader. Animation files are separate downloads; Steam customization settings can affect which movie plays.",
+      "links": [
+        {
+          "url": "https://github.com/TheLogicMaster/SDH-AnimationChanger",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-animations",
+      "archiveJobId": "steamdeck-plugin-animation-changer",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "Animation Changer Decky startup customization",
+      "icon": "/assets/images/steamdeck/animation-changer.png",
+      "preview": true
+    },
+    {
+      "id": "autoflatpaks",
+      "title": "AutoFlatpaks",
+      "kind": "Decky Flatpak updates",
+      "description": "Check and install Flatpak app updates without switching to Desktop Mode. Start with manual checks, then choose whether to enable notifications or automatic updates.",
+      "features": [
+        "Manual update checks",
+        "Optional automation",
+        "Package manager"
+      ],
+      "requirement": "Requires root permissions through Decky. Supports system-installed Flatpaks; user-installed apps and extra installation locations are not supported.",
+      "links": [
+        {
+          "url": "https://github.com/jurassicplayer/decky-autoflatpaks",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-autoflatpaks",
+      "archiveJobId": "steamdeck-plugin-autoflatpaks",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "AutoFlatpaks Decky Flatpak updates",
+      "icon": "/assets/images/steamdeck/autoflatpaks.png",
+      "preview": true
+    },
+    {
+      "id": "quick-launch",
+      "title": "Quick Launch",
+      "kind": "Decky app shortcuts",
+      "description": "Launch desktop applications from the Quick Access menu and add shortcuts to your Steam library. Useful for opening an already installed utility from Game Mode.",
+      "features": [
+        "Desktop app launcher",
+        "Steam shortcuts",
+        "Quick Access"
+      ],
+      "requirement": "Limited maintenance: the author cannot promise fixes. The plugin supports one application at a time; Steam library shortcuts remain an alternative.",
+      "links": [
+        {
+          "url": "https://github.com/Fisch03/SDH-QuickLaunch",
+          "label": "Project & instructions"
+        }
+      ],
+      "guide": "guide-quick-launch",
+      "archiveJobId": "steamdeck-plugin-quick-launch",
+      "group": "decky-plugins",
+      "categories": [
+        "plugins"
+      ],
+      "search": "Quick Launch Decky app shortcuts",
+      "icon": "/assets/images/steamdeck/quick-launch.png",
+      "preview": true
+    }
+  ],
+  "researchNotes": [
+    "Lutris, Protontricks, Flatseal and Bottles use rolling stable Flathub online installer references. These references are not offline application bundles or fixed application-version downloads.",
+    "KDE Connect was not added as a downloadable tool: https://dl.flathub.org/repo/appstream/org.kde.kdeconnect.flatpakref returned HTTP 404. Its official download page at https://kdeconnect.kde.org/download.html remains a useful reference; the linked KDE UserBase pairing page returned HTTP 403 through web lookup."
+  ],
+  "guideSource": "docs/steamdeck-setup-guides.json"
+}

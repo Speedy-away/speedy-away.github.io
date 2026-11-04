@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-11-02T19:11:13.186Z",
+  "scope": "Verified original source screenshots, project identity images and official Nintendo game artwork; images do not broaden build compatibility.",
+  "images": {
+    "ns2-savekit": {
+      "image": "/assets/images/switch-card-recovery/ns2-savekit.png",
+      "sourcePageUrl": "https://github.com/dougchansan/ns2-savekit",
+      "imageSourceUrl": "https://opengraph.githubassets.com/c74b205f09d4052ce0253f5c1932439f6a11001d0707cdf1b008b95ac7fdcd21/dougchansan/ns2-savekit",
+      "bytes": 92421,
+      "sha256": "564608592ad6ee240ffda2854ab69eb46f4674250a41d9345a956995fe72e473",
+      "width": 1200,
+      "height": 600,
+      "kind": "original published project identity image",
+      "visuallyVerified": true,
+      "verification": "Visually reviewed original image in docs/qa/switch-recovery-sheet.jpg; project or game identity is visible."
+    },
+    "themezer": {
+      "image": "/assets/images/switch-card-recovery/themezer.jpg",
+      "sourcePageUrl": "https://github.com/ThemezerNX/Themezer-NX",
+      "imageSourceUrl": "https://raw.githubusercontent.com/ThemezerNX/Themezer-NX/master/screenshot.jpg",
+      "bytes": 385287,
+      "sha256": "434c9c7746aa95ef797b0c8c484f8c21bf443af0f6071cc3d225cf5711fbff0d",
+      "width": 1280,
+      "height": 720,
+      "kind": "original project screenshot",
+      "visuallyVerified": true,
+      "verification": "Visually reviewed original image in docs/qa/switch-recovery-sheet.jpg; project or game identity is visible."
+    },
+    "hdr-launcher": {
+      "image": "/assets/images/switch-card-recovery/hdr-launcher.png",
+      "sourcePageUrl": "https://github.com/techyCoder81/hdr-launcher-react",
+      "imageSourceUrl": "https://user-images.githubusercontent.com/42820193/205082618-e6fbaf05-cced-4625-bbfb-372536f5f2aa.png",
+      "bytes": 97467,
+      "sha256": "c3e254c04f9f4f9afceb82bee442594099d80d05fc35592efb7f39c7d6b55795",
+      "width": 1300,
+      "height": 680,
+      "kind": "original project screenshot",
+      "visuallyVerified": true,
+      "verification": "Original README image visibly says HDR Ryujinx Launcher. Rejected for Switch plugin card; associated official Smash artwork used.",
+      "notForCards": true
+    },
+    "playable-bosses": {
+      "image": "/assets/images/switch-card-recovery/playable-bosses.png",
+      "sourcePageUrl": "https://github.com/NemesisSSBU/Playable_Bosses",
+      "imageSourceUrl": "https://raw.githubusercontent.com/NemesisSSBU/NemesisSSBU/main/CompBossImg.png",
+      "bytes": 2971589,
+      "sha256": "22e9be6b394836de4232adf0b2edb91c433ef90961cc400cbf7f42a054df8e6e",
+      "width": 1920,
+      "height": 1080,
+      "kind": "original project screenshot",
+      "visuallyVerified": true,
+      "verification": "Visually reviewed original image in docs/qa/switch-recovery-sheet.jpg; project or game identity is visible."
+    },
+    "odyssey": {
+      "image": "/assets/images/switch-card-recovery/odyssey.jpg",
+      "sourcePageUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-Odyssey-1173332.html",
+      "imageSourceUrl": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperMarioOdyssey_image1280w.jpg",
+      "bytes": 317212,
+      "sha256": "cd8cf77ed28fb8ffdf42033a74287911efcaddfc60df057cdc724efc113e4e05",
+      "width": 1280,
+      "height": 640,
+      "kind": "official game artwork",
+      "visuallyVerified": true,
+      "verification": "Visually reviewed original image in docs/qa/switch-recovery-sheet.jpg; project or game identity is visible."
+    },
+    "mario-kart": {
+      "image": "/assets/images/switch-card-recovery/mario-kart.jpg",
+      "sourcePageUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Mario-Kart-8-Deluxe-1173281.html",
+      "imageSourceUrl": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_MarioKart8Deluxe_image1280w.jpg",
+      "bytes": 316348,
+      "sha256": "d1a9c32ec1dcd4b5abab8d47a6f6718d264c6343590db68ec1fd75740a376611",
+      "width": 1280,
+      "height": 640,
+      "kind": "official game artwork",
+      "visuallyVerified": true,
+      "verification": "Visually reviewed original image in docs/qa/switch-recovery-sheet.jpg; project or game identity is visible."
+    },
+    "smash": {
+      "image": "/assets/images/switch-card-recovery/smash.jpg",
+      "sourcePageUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Smash-Bros-Ultimate-1395713.html",
+      "imageSourceUrl": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperSmashBrosUltimate_02_image1280w.jpg",
+      "bytes": 357421,
+      "sha256": "6b462834dd565f895c84a69d10dfeccecbda94bfe827581849bcb7ae285f88e8",
+      "width": 1280,
+      "height": 640,
+      "kind": "official game artwork",
+      "visuallyVerified": true,
+      "verification": "Visually reviewed original image in docs/qa/switch-recovery-sheet.jpg; project or game identity is visible."
+    }
+  },
+  "unavailable": [
+    {
+      "id": "hdr",
+      "sourcePageUrl": "https://github.com/HDR-Development/HDR-Releases",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "arcropolis",
+      "sourcePageUrl": "https://github.com/Raytwo/ARCropolis",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "skyline",
+      "sourcePageUrl": "https://github.com/skyline-dev/skyline",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "smashline",
+      "sourcePageUrl": "https://github.com/HDR-Development/smashline",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "nro-hook",
+      "sourcePageUrl": "https://github.com/ultimate-research/nro-hook-plugin",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "smoo-plus",
+      "sourcePageUrl": "https://github.com/SMOO-Plus/SMOO-Plus",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "civswitch",
+      "sourcePageUrl": "https://github.com/Gezine/CivSwitch",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "ouncecake",
+      "sourcePageUrl": "https://github.com/misshexa66/OunceCake",
+      "error": "Image HTTP 429"
+    },
+    {
+      "id": "ns2jb",
+      "sourcePageUrl": "https://gitlab.com/pepsipu/ns2jb",
+      "error": "No published Open Graph image"
+    },
+    {
+      "id": "nextendo",
+      "sourcePageUrl": "https://github.com/alyeri/nextendo-mk8d-country-flags",
+      "error": "Image HTTP 429"
+    }
+  ]
+}

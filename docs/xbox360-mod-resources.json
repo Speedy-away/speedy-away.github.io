@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "scope": "Xbox 360 game-specific resources only; no source-confirmed Xbox 360 MultiCOD resource has been imported. The queued Multicod-Menus channel name is not compatibility evidence.",
+  "sources": [
+    "docs/download-audit.json",
+    "docs/discord-ps3-resources.json",
+    "docs/discord-ps3-cod4-waw-guide-research.json"
+  ],
+  "archivePolicy": "Intentionally cross-reference existing inventory IDs and original mirror paths. All four backup files already match scripts/download-archive-layout.cjs under Xbox 360/Games/Call of Duty/COD4/Patch Menus. No files, versions or PS3 mismatch references were moved, deleted or changed.",
+  "games": [
+    {
+      "id": "cod4",
+      "title": "Call of Duty 4: Modern Warfare",
+      "year": 2007,
+      "page": "/console/xbox360/mods/call-of-duty/cod4/index.html",
+      "image": "/assets/images/covers/cod4.jpg",
+      "imageSource": "https://store.steampowered.com/app/7940/Call_of_Duty_4_Modern_Warfare_2007/",
+      "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/7940/header.jpg?t=1780962383",
+      "imageSha256": "9578377ec9453cef3c26819ce8a4a084fc11be40f9759a0147af02c29542f592"
+    }
+  ],
+  "resources": [
+    {
+      "id": "xbox360-cod4-tree-patch-v1",
+      "name": "Tree Patch v1",
+      "platforms": [
+        "xbox360"
+      ],
+      "gameIds": [
+        "cod4"
+      ],
+      "category": "patch-menu",
+      "version": "v1",
+      "gameUpdate": null,
+      "region": null,
+      "compatibility": "Xbox-labelled COD4 multiplayer archive. Exact title update, region, media ID and supported homebrew method are not documented by the captured source.",
+      "source": "https://discord.com/channels/1528329794947776572/1531338856002228444",
+      "description": "Preserved original archive containing patch_mp.ff and default_mp.xex.",
+      "members": [
+        "Tree Patch/Xbox/patch_mp.ff",
+        "Tree Patch/Xbox/default_mp.xex"
+      ],
+      "archive": {
+        "inventoryId": "ps3-discord-ps3-cod4-tree-patch-v1",
+        "filename": "Tree_Patch.rar",
+        "url": "https://www.mediafire.com/file/8n80q3sqxknhik1/Tree_Patch.rar/file",
+        "local": "/downloads/ps3/discord-ps3-cod4-tree-patch-v1/Tree_Patch.rar",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Xbox 360\\Games\\Call of Duty\\COD4\\Patch Menus\\Tree Patch v1\\Builds\\Unversioned\\Tree_Patch.rar",
+        "bytes": 2755003,
+        "sha256": "d00083ee6d04419281ef098bcf84b6d4932569ed561ced05fe54c80e3ae320a5",
+        "inventoryVersion": "Unversioned"
+      },
+      "liveSourceCheck": {
+        "checked": "2026-11-02",
+        "status": "not-accessible-through-web-tool",
+        "note": "MediaFire landing page could not be read through the web tool; existing local and backup archive bytes were verified independently."
+      }
+    },
+    {
+      "id": "xbox360-cod4-plant-patch",
+      "name": "The Plant Patch",
+      "platforms": [
+        "xbox360"
+      ],
+      "gameIds": [
+        "cod4"
+      ],
+      "category": "patch-menu",
+      "version": "Source unversioned",
+      "gameUpdate": null,
+      "region": null,
+      "compatibility": "Xbox-labelled COD4 multiplayer archive. Exact title update, region, media ID and supported homebrew method are not documented by the captured source.",
+      "source": "https://discord.com/channels/1528329794947776572/1531338365939617953",
+      "description": "Preserved original archive containing patch_mp.ff and default_mp.xex.",
+      "members": [
+        "The Plant Patch/XBOX/patch_mp.ff",
+        "The Plant Patch/XBOX/default_mp.xex"
+      ],
+      "archive": {
+        "inventoryId": "ps3-discord-ps3-cod4-plant-patch",
+        "filename": "The_Plant_Patch.rar",
+        "url": "https://www.mediafire.com/file/yw1uygkglg0trpa/The_Plant_Patch.rar/file",
+        "local": "/downloads/ps3/discord-ps3-cod4-plant-patch/The_Plant_Patch.rar",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Xbox 360\\Games\\Call of Duty\\COD4\\Patch Menus\\The Plant Patch\\Builds\\Unversioned\\The_Plant_Patch.rar",
+        "bytes": 2755010,
+        "sha256": "85124e2ee29e7ee5f51aeca8a019ff78a200fdf5011c95e6638773d29769b650",
+        "inventoryVersion": "Unversioned"
+      },
+      "liveSourceCheck": {
+        "checked": "2026-11-02",
+        "status": "not-accessible-through-web-tool",
+        "note": "MediaFire landing page could not be read through the web tool; existing local and backup archive bytes were verified independently."
+      }
+    },
+    {
+      "id": "xbox360-cod4-cabepex-v1-5",
+      "name": "CabePex V1.5",
+      "platforms": [
+        "xbox360"
+      ],
+      "gameIds": [
+        "cod4"
+      ],
+      "category": "patch-menu",
+      "version": "V1.5",
+      "gameUpdate": null,
+      "region": null,
+      "compatibility": "Xbox-labelled COD4 multiplayer archive. Exact title update, region, media ID and supported homebrew method are not documented by the captured source.",
+      "source": "https://discord.com/channels/1528329794947776572/1531336409250791556",
+      "description": "Preserved original archive containing default_mp.xex and patch_mp.ff.",
+      "members": [
+        "Xbox/default_mp.xex",
+        "Xbox/patch_mp.ff"
+      ],
+      "archive": {
+        "inventoryId": "ps3-discord-ps3-cod4-cabepex-v1-5",
+        "filename": "CabePex_1.5.rar",
+        "url": "https://www.mediafire.com/file/uir4ebo5u8x2io7/CabePex_1.5.rar/file",
+        "local": "/downloads/ps3/discord-ps3-cod4-cabepex-v1-5/CabePex_1.5.rar",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Xbox 360\\Games\\Call of Duty\\COD4\\Patch Menus\\CabePex\\Builds\\Unversioned\\CabePex_1.5.rar",
+        "bytes": 1935189,
+        "sha256": "5e589b15ba638ad971790f866db85bdfd2d1c6a1da27a747da430397e1efc7af",
+        "inventoryVersion": "Unversioned"
+      },
+      "liveSourceCheck": {
+        "checked": "2026-11-02",
+        "status": "not-accessible-through-web-tool",
+        "note": "MediaFire landing page could not be read through the web tool; existing local and backup archive bytes were verified independently."
+      }
+    },
+    {
+      "id": "xbox360-cod4-yardsale-v6-5",
+      "name": "Yardsale v6.5",
+      "platforms": [
+        "xbox360"
+      ],
+      "gameIds": [
+        "cod4"
+      ],
+      "category": "patch-menu",
+      "version": "v6.5",
+      "gameUpdate": null,
+      "region": null,
+      "compatibility": "Xbox-labelled COD4 multiplayer archive. Exact title update, region, media ID and supported homebrew method are not documented by the captured source.",
+      "source": "https://discord.com/channels/1528329794947776572/1531335350583165018",
+      "description": "Preserved original archive containing patch_mp.ff and default_mp.xex.",
+      "members": [
+        "YardSale/Xbox V6.5/patch_mp.ff",
+        "YardSale/Xbox V6.5/default_mp.xex",
+        "YardSale/Xbox V6.5/Controls.txt"
+      ],
+      "archive": {
+        "inventoryId": "ps3-discord-ps3-cod4-yardsale-v6-5",
+        "filename": "YardSale_v6.5.rar",
+        "url": "https://www.mediafire.com/file/8r7s1iwm82uqp8e/YardSale_v6.5.rar/file",
+        "local": "/downloads/ps3/discord-ps3-cod4-yardsale-v6-5/YardSale_v6.5.rar",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\Xbox 360\\Games\\Call of Duty\\COD4\\Patch Menus\\Yardsale\\Builds\\Unversioned\\YardSale_v6.5.rar",
+        "bytes": 2746411,
+        "sha256": "f280c20c84207df3818572301beb70cbee93df312e8280f7ba7a48a077fc8b14",
+        "inventoryVersion": "Unversioned"
+      },
+      "liveSourceCheck": {
+        "checked": "2026-11-02",
+        "status": "not-accessible-through-web-tool",
+        "note": "MediaFire landing page could not be read through the web tool; existing local and backup archive bytes were verified independently."
+      }
+    }
+  ]
+}

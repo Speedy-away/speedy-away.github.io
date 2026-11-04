@@ -1,0 +1,64 @@
+{
+  "hen": {
+    "image": "/assets/images/ps3-resources/ps3xploit.jpg",
+    "source": "https://avatars.githubusercontent.com/u/33543391?v=4",
+    "bytes": 18043,
+    "sha256": "c679474df65a50ad76fea4d3c832dfd410a504702e949b9c4af4508612584447",
+    "width": 400,
+    "height": 400,
+    "reviewed": "2026-11-02",
+    "type": "jpeg"
+  },
+  "multiman": {
+    "image": "/assets/images/ps3-resources/multiman.png",
+    "source": "https://raw.githubusercontent.com/aldostools/webMAN-MOD/master/_Projects_/updater/pkgfiles/USRDIR/xmbm/multiman.png",
+    "bytes": 14021,
+    "sha256": "3b69485822d178a5856a5d65c757169b65646ae30a2b8217b18dd309b2be3544",
+    "width": 128,
+    "height": 128,
+    "reviewed": "2026-11-02",
+    "type": "png"
+  },
+  "pkgi": {
+    "image": "/assets/images/ps3-resources/pkgi.png",
+    "source": "https://raw.githubusercontent.com/bucanero/pkgi-ps3/master/pkgfiles/ICON0.PNG",
+    "bytes": 10616,
+    "sha256": "a6c1b6d75d5400ccff74b83b65537086003f3beacc2669131604bfe304a58bb3",
+    "width": 320,
+    "height": 176,
+    "reviewed": "2026-11-02",
+    "type": "png"
+  },
+  "vimm": {
+    "image": "/assets/images/ps3-resources/vimm.png",
+    "source": "https://vimm.net/images/vimmbutton-100.png",
+    "bytes": 7263,
+    "sha256": "fbec94750acbaa51f8f345a630edc622b40d3d33f9a99a80800a7685b17f96c7",
+    "width": 100,
+    "height": 100,
+    "reviewed": "2026-11-02",
+    "type": "png"
+  },
+  "cfw": {
+    "image": "/assets/images/consoles/ps3.png",
+    "source": "Existing local PS3 console artwork: assets/images/consoles/ps3.png",
+    "bytes": 129489,
+    "sha256": "a8f6a03af17f5b04226656e70fc4dab5738417cb7ac72124873ee2b540563ee0",
+    "width": 1000,
+    "height": 600,
+    "reviewed": "2026-11-02",
+    "note": "Version-neutral console artwork used; the existing CFW video thumbnail describes 4.92 rather than 4.93.",
+    "type": "png"
+  },
+  "homebrew": {
+    "image": "/assets/images/consoles/ps3.png",
+    "source": "Existing local PS3 console artwork: assets/images/consoles/ps3.png",
+    "bytes": 129489,
+    "sha256": "a8f6a03af17f5b04226656e70fc4dab5738417cb7ac72124873ee2b540563ee0",
+    "width": 1000,
+    "height": 600,
+    "reviewed": "2026-11-02",
+    "note": "Brewology direct image sources returned 403; neutral PS3 artwork used.",
+    "type": "png"
+  }
+}

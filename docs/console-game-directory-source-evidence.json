@@ -1,0 +1,212 @@
+{
+  "checkedAt": "2026-11-02T09:32:06.041Z",
+  "sources": [
+    {
+      "url": "https://vimm.net/vault/Wii",
+      "platform": "Wii",
+      "status": "unretrievable",
+      "evidence": "Exact platform URL supplied by the user; web reader returned a non-retryable retrieval error. Catalogue/download availability unverified.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://vimm.net/vault/GameCube",
+      "platform": "GameCube",
+      "status": "unretrievable",
+      "evidence": "Exact platform URL supplied by the user; web reader returned a non-retryable retrieval error. Catalogue/download availability unverified.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://vimm.net/vault/Xbox",
+      "platform": "Xbox",
+      "status": "unretrievable",
+      "evidence": "Exact platform URL supplied by the user; web reader returned a non-retryable retrieval error. Catalogue/download availability unverified.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://vimm.net/vault",
+      "platform": "Multi-platform index",
+      "status": "unretrievable",
+      "evidence": "The web reader could not retrieve the page. Direct Node HTTPS fetch also failed for the Vimm index and DLPS home; no successful availability or download claim is made. Bounded exact-URL searches found third-party references to PS1, PS2, PSP, WiiU, DS, GBA and X360-D paths, but no current Vimm primary-source navigation was obtained. Do not infer other Vimm category routes from labels in the screenshot.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://dlpsgame.com/",
+      "platform": "PlayStation index",
+      "status": "unretrievable",
+      "evidence": "The web reader could not retrieve the page. Direct Node HTTPS fetch also failed for the Vimm index and DLPS home; no successful availability or download claim is made.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://dlpsgame.com/list-all-game-ps3/",
+      "platform": "PS3",
+      "status": "unretrievable",
+      "evidence": "User supplied the exact URL. Web reader could not retrieve it; Vita page navigation also exposes a PS3 all-games list but current title/download availability remains unverified.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://dlpsgame.com/category/ps5/",
+      "platform": "PS5",
+      "status": "unretrievable",
+      "evidence": "Exact URL supplied by user; web reader could not retrieve it. PS5 is separately labelled in retrieved PSP/Vita site navigation.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://dlpsgame.com/category/ps4/",
+      "platform": "PS4",
+      "status": "unretrievable",
+      "evidence": "Exact URL supplied by user; web reader could not retrieve it. PS4 is separately labelled in retrieved PSP/Vita site navigation.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://downloadgamepsp.org/category/psvita-game-free-new/",
+      "platform": "PS Vita",
+      "status": "retrieved",
+      "evidence": "Web reader returned the PSVITA category page with PSVITA heading, project/title list and source navigation. This is a page retrieval, not verification of individual downloads.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://nswgame.com/category/switch/",
+      "platform": "Nintendo Switch",
+      "status": "http-403",
+      "evidence": "Exact user-supplied URL also observed in PSP/Vita navigation. Following it returned HTTP 403; individual titles/downloads were not verified.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://nswgf.com/category/3ds/",
+      "platform": "Nintendo 3DS",
+      "status": "http-403",
+      "evidence": "Exact user-supplied URL returned HTTP 403. Do not replace it silently with the separate nswgame.com 3DS route.",
+      "origin": "user-supplied"
+    },
+    {
+      "url": "https://downloadgamepsp.org/category/psp/",
+      "platform": "PSP",
+      "status": "retrieved",
+      "evidence": "Followed PSP navigation from the retrieved Vita category; returned PSP Archives page with PSP heading. Individual game downloads were not checked.",
+      "origin": "observed-navigation",
+      "observedOn": "https://downloadgamepsp.org/category/psvita-game-free-new/"
+    },
+    {
+      "url": "https://dlpsgame.com/category/ps2/",
+      "platform": "PS2",
+      "status": "unretrievable",
+      "evidence": "Followed PS2 navigation from the retrieved Vita page; web reader identified this exact destination but could not retrieve it.",
+      "origin": "observed-navigation",
+      "observedOn": "https://downloadgamepsp.org/category/psvita-game-free-new/"
+    },
+    {
+      "url": "https://nswgame.com/category/game-wii/",
+      "platform": "Wii",
+      "status": "retrieved",
+      "evidence": "Followed Wii navigation from the retrieved Vita category; returned Game Wii Archives with Wii-specific heading and listings.",
+      "origin": "observed-navigation",
+      "observedOn": "https://downloadgamepsp.org/category/psvita-game-free-new/"
+    },
+    {
+      "url": "https://nswgame.com/category/game-wii-u/",
+      "platform": "Wii U",
+      "status": "retrieved",
+      "evidence": "Followed Wii U navigation from the retrieved Vita category; returned Game Wii U Archives with Wii U-specific heading and listings.",
+      "origin": "observed-navigation",
+      "observedOn": "https://downloadgamepsp.org/category/psvita-game-free-new/"
+    },
+    {
+      "url": "https://nswgame.com/category/ds/",
+      "platform": "Nintendo DS",
+      "status": "retrieved",
+      "evidence": "Followed DS navigation from the retrieved nswgame Wii category; returned DS Archives heading and DS-specific listings.",
+      "origin": "observed-navigation",
+      "observedOn": "https://nswgame.com/category/game-wii/"
+    },
+    {
+      "url": "https://nswgame.com/category/3ds/",
+      "platform": "Nintendo 3DS",
+      "status": "http-403",
+      "evidence": "Followed 3DS navigation from retrieved Vita page; exact destination returned HTTP 403. Separate from the user-supplied nswgf.com address.",
+      "origin": "observed-navigation",
+      "observedOn": "https://downloadgamepsp.org/category/psvita-game-free-new/"
+    },
+    {
+      "url": "https://downloadgamexbox.com/list-all-game-xbox-jtag-rgh/",
+      "platform": "Xbox 360 JTAG/RGH",
+      "status": "retrieved-after-redirect",
+      "evidence": "Followed Xbox JTAG/RGH all-game list in retrieved Vita navigation. Redirected to dlxbgame.com with JTAG/RGH heading and Xbox Classic-to-Xbox-360 category. Do not use as original Xbox compatibility evidence.",
+      "origin": "observed-navigation",
+      "observedOn": "https://downloadgamepsp.org/category/psvita-game-free-new/",
+      "finalUrl": "https://dlxbgame.com/list-all-game-xbox-jtag-rgh/"
+    },
+    {
+      "url": "https://downloadgamexbox.com/list-all-game-xbox-iso/",
+      "platform": "Xbox ISO directory",
+      "status": "retrieved-after-redirect",
+      "evidence": "Followed Xbox ISO list from Vita navigation. Redirected to dlxbgame.com; no additional console compatibility inferred.",
+      "origin": "observed-navigation",
+      "observedOn": "https://downloadgamepsp.org/category/psvita-game-free-new/",
+      "finalUrl": "https://dlxbgame.com/list-all-game-xbox-iso/"
+    },
+    {
+      "url": "https://vimm.net/vault/PS1",
+      "platform": "PS1",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed archive listing explicitly names https://vimm.net:443/vault/PS1 with title Vimm’s Lair: PS1 Vault. Historical route evidence only.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://megalodon.jp/pc/history/20250514/21"
+    },
+    {
+      "url": "https://vimm.net/vault/PS2",
+      "platform": "PS2",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed README explicitly lists https://vimm.net/vault/PS2. Current Vimm page could not be retrieved.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://github.com/Sir-MmD/PCSX2-Installer"
+    },
+    {
+      "url": "https://vimm.net/vault/PSP",
+      "platform": "PSP",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed article explicitly prints https://vimm.net/vault/PSP. Current Vimm page not verified.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://artikel.rumah123.com/download-game-ppsspp-android-lengkap"
+    },
+    {
+      "url": "https://vimm.net/vault/WiiU",
+      "platform": "Wii U",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed community post explicitly prints https://vimm.net/vault/WiiU. Current Vimm route and file availability unverified.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://www.reddit.com/r/Roms/comments/1sd8op4/where_can_i_even_find_wii_u_wua_files/"
+    },
+    {
+      "url": "https://vimm.net/vault/DS",
+      "platform": "Nintendo DS",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed comment explicitly prints https://vimm.net/vault/DS as a DS directory. Current Vimm page not verified.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://www.reddit.com/r/3dspiracy/comments/taa1bv"
+    },
+    {
+      "url": "https://vimm.net/vault/GBA",
+      "platform": "Game Boy Advance",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed comment explicitly prints https://vimm.net/vault/GBA. Current Vimm page not verified.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://www.reddit.com/r/3dspiracy/comments/1wrxv9i/please_help_cant_save_gba_games/"
+    },
+    {
+      "url": "https://vimm.net/vault/X360-D",
+      "platform": "Xbox 360 Digital",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed page explicitly prints https://vimm.net/vault/X360-D next to Xbox360 route. Separately, indexed Vimm community discussion uses system=X360-D for Xbox 360 Digital. Current page not verified.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://2ch.org/cg/res/2609738.html"
+    },
+    {
+      "url": "https://vimm.net/vault/N64",
+      "platform": "Nintendo 64",
+      "status": "indexed-route-unverified",
+      "evidence": "Indexed comment explicitly prints https://vimm.net/vault/N64. Current Vimm page not verified.",
+      "origin": "indexed-reference",
+      "referenceUrl": "https://www.reddit.com/r/VitaPiracy/comments/qv9hj6"
+    }
+  ]
+}

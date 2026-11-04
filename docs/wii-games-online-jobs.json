@@ -1,0 +1,199 @@
+{
+  "scope": "wii-games-online",
+  "jobs": [
+    {
+      "id": "riivolution-mini",
+      "title": "Riivolution for Wii Mini",
+      "version": "v1.07",
+      "filename": "riivolution-mini-v1.07.zip",
+      "url": "https://hbb1.oscwii.org/api/contents/riivolution-mini/riivolution-mini.zip",
+      "expectedBytes": 2139803,
+      "kind": "app",
+      "platforms": [
+        "wii_mini"
+      ],
+      "source": "https://oscwii.org/library/app/riivolution-mini"
+    },
+    {
+      "id": "wiilink-account-linker",
+      "title": "WiiLink Account Linker",
+      "version": "v2.1.0",
+      "filename": "wiilink-account-linker-v2.1.0.zip",
+      "url": "https://hbb1.oscwii.org/api/contents/wiilink-account-linker/wiilink-account-linker.zip",
+      "expectedBytes": 1328780,
+      "kind": "app",
+      "platforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "source": "https://oscwii.org/library/app/wiilink-account-linker"
+    },
+    {
+      "id": "wiimmfipatcher",
+      "title": "Wiimmfi Patcher",
+      "version": "v0.7.5",
+      "filename": "wiimmfipatcher-v0.7.5.zip",
+      "url": "https://hbb1.oscwii.org/api/contents/wiimmfipatcher/wiimmfipatcher.zip",
+      "expectedBytes": 294461,
+      "kind": "app",
+      "platforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "source": "https://oscwii.org/library/app/wiimmfipatcher"
+    },
+    {
+      "id": "riivolution",
+      "title": "Riivolution",
+      "version": "v1.06",
+      "filename": "riivolution-v1.06.zip",
+      "url": "https://hbb1.oscwii.org/api/contents/riivolution/riivolution.zip",
+      "expectedBytes": 1990601,
+      "kind": "app",
+      "platforms": [
+        "wii",
+        "vwii"
+      ],
+      "source": "https://oscwii.org/library/app/riivolution"
+    },
+    {
+      "id": "mail-patcher",
+      "title": "WiiLink Mail Patcher",
+      "version": "2.2.2",
+      "filename": "Mail-Patcher-2.2.2.zip",
+      "url": "https://hbb1.oscwii.org/api/contents/Mail-Patcher/Mail-Patcher.zip",
+      "expectedBytes": 587887,
+      "kind": "app",
+      "platforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "source": "https://oscwii.org/library/app/Mail-Patcher"
+    },
+    {
+      "id": "wiilink-wfc-patcher",
+      "title": "WiiLink WFC Patcher",
+      "version": "0.7",
+      "filename": "WiiLink-WFC-Patcher-0.7.zip",
+      "url": "https://hbb1.oscwii.org/api/contents/WiiLink-WFC-Patcher/WiiLink-WFC-Patcher.zip",
+      "expectedBytes": 226239,
+      "kind": "app",
+      "platforms": [
+        "wii"
+      ],
+      "source": "https://oscwii.org/library/app/WiiLink-WFC-Patcher"
+    },
+    {
+      "id": "wiilink-desktop",
+      "title": "WiiLink Patcher · Windows x64",
+      "version": "v3.0.0",
+      "filename": "WiiLinkPatcher_Windows-x64_v300.exe",
+      "url": "https://github.com/WiiLink24/WiiLink24-Patcher/releases/download/v3.0.0/WiiLinkPatcher_Windows-x64_v300.exe",
+      "expectedBytes": 12725427,
+      "kind": "windows-helper",
+      "source": "https://github.com/WiiLink24/WiiLink24-Patcher/releases/tag/v3.0.0"
+    },
+    {
+      "id": "ctgp-revolution",
+      "title": "CTGP Revolution",
+      "url": "https://mega.nz/file/Ae4xWKaY#guxkfuaYnaAof5awsJxje0N_qsRO-fjKwRJ9BkA3vYc",
+      "version": "1.03.1190 all-inclusive",
+      "filename": "ctgp-revolution.zip",
+      "kind": "mod",
+      "game": "Mario Kart Wii",
+      "source": "https://www.chadsoft.co.uk/download/",
+      "originalName": "CTGP-R v1.03.1190 All Inclusive.zip"
+    },
+    {
+      "id": "newer-smbw",
+      "title": "Newer Super Mario Bros. Wii",
+      "url": "https://mega.nz/file/eugETbRb#1ehlOokX_lLtIwjlzJQgsklGKMlVcWQhfHtCNjZkgOw",
+      "version": "1.30",
+      "filename": "newer-smbw.zip",
+      "kind": "mod",
+      "game": "New Super Mario Bros. Wii",
+      "source": "https://newerteam.com/wii/download.html",
+      "expectedMd5": "bc1edbf1782d5004e13d69826e28af58",
+      "originalName": "Newer_W_1.30.zip"
+    },
+    {
+      "id": "falling-leaf",
+      "title": "Newer Falling Leaf",
+      "url": "https://mega.nz/#!a2ZXTRgA!aWQ2JkrUpXiUfpx-gTpjw0WjI5EajitnqkQR8aW6x28",
+      "version": "1.12",
+      "filename": "falling-leaf.zip",
+      "kind": "mod",
+      "game": "New Super Mario Bros. Wii",
+      "source": "https://newerteam.com/wii/specials.html",
+      "originalName": "Newer_Falling_Leaf_1.12.zip"
+    },
+    {
+      "id": "summer-sun",
+      "title": "Newer Summer Sun",
+      "url": "https://mega.nz/#!S2gxSQJK!EnzSuFO3d0LtjN9gEv6jzykwGB-yRvDha3w_iWk6mNk",
+      "version": "1.12",
+      "filename": "summer-sun.zip",
+      "kind": "mod",
+      "game": "New Super Mario Bros. Wii",
+      "source": "https://newerteam.com/wii/specials.html",
+      "originalName": "Newer_Summer_Sun_1.12.zip"
+    },
+    {
+      "id": "holiday-special",
+      "title": "Newer Holiday Special",
+      "url": "https://mega.nz/#!T2IGCTDb!1fW9TSvsBqEuJq5Qjvh-4roAaWZ0Scx5HwPZe_mWqkU",
+      "version": "1.12",
+      "filename": "holiday-special.zip",
+      "kind": "mod",
+      "game": "New Super Mario Bros. Wii",
+      "source": "https://newerteam.com/wii/specials.html",
+      "originalName": "Newer_W_Holiday_Special_1.12.zip"
+    },
+    {
+      "id": "another-smbw",
+      "title": "Another Super Mario Bros. Wii",
+      "url": "https://mega.nz#!vnZVFSoB!d82zukoZ7zgiYICJZKFoNM4te6t6yOxOXn17xTg4qrs",
+      "version": "3.2",
+      "filename": "another-smbw.zip",
+      "kind": "mod",
+      "game": "New Super Mario Bros. Wii",
+      "source": "https://newerteam.com/wii/specials.html",
+      "originalName": "Another_W_3.2.zip"
+    },
+    {
+      "id": "mkw-sp",
+      "title": "Mario Kart Wii Service Pack",
+      "version": "v0.1.12",
+      "filename": "mkw-sp-v0.1.12.zip",
+      "url": "https://github.com/mkw-sp/mkw-sp/releases/download/v0.1.12/mkw-sp-v0.1.12.zip",
+      "expectedBytes": 4366987,
+      "kind": "mod",
+      "game": "Mario Kart Wii",
+      "source": "https://github.com/mkw-sp/mkw-sp/releases/tag/v0.1.12"
+    },
+    {
+      "id": "wiilink-gui",
+      "title": "WiiLink GUI Patcher · Windows x64",
+      "version": "v1.5.3",
+      "filename": "WiiLinkPatcherGUI-Windows-onefile-x64.exe",
+      "url": "https://github.com/WiiLink24/WiiLink-Patcher-GUI/releases/download/v1.5.3/WiiLinkPatcherGUI-Windows-onefile-x64.exe",
+      "expectedBytes": 27562328,
+      "kind": "windows-helper",
+      "source": "https://github.com/WiiLink24/WiiLink-Patcher-GUI/releases/tag/v1.5.3"
+    },
+    {
+      "id": "retro-rewind",
+      "title": "Retro Rewind",
+      "version": "6.13.4",
+      "filename": "RetroRewind-6.13.4-full.zip",
+      "url": "https://cdn.update.rwfc.net/RetroRewind/zip/6.13.4-full.zip",
+      "expectedBytes": 1939356115,
+      "kind": "mod",
+      "game": "Mario Kart Wii",
+      "source": "https://mkwiiki.org/wiki/Retro_Rewind"
+    }
+  ]
+}

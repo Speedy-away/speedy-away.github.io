@@ -1,0 +1,69 @@
+{
+  "reviewed": "2026-11-02",
+  "release": "https://github.com/hammer-83/ps5-jar-loader/releases/tag/v4.1.1",
+  "compatibility": "PS5 BD-J JAR Loader with UMTX kernel read/write. This guide is scoped to the exact 6.00–7.61 firmware entries in the upstream offset table, and does not certify etaHEN or any other payload on every listed firmware.",
+  "jobs": [
+    {
+      "id": "ps5-bdj-jar-loader-4-1-1",
+      "title": "PS5 BD-J JAR Loader 4.1.1 · trimmed ISO",
+      "project": "PS5 JAR Loader",
+      "platform": "PS5",
+      "category": "Tools",
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "tool",
+      "version": "v4.1.1",
+      "filename": "ps5-jar-loader-4.1.1.iso",
+      "pages": [
+        "console/ps5/bdj.html"
+      ],
+      "expectedBytes": 1900544,
+      "url": "https://github.com/hammer-83/ps5-jar-loader/releases/download/v4.1.1/ps5-jar-loader-4.1.1.iso",
+      "mirror": false
+    },
+    {
+      "id": "ps5-bdj-umtx1-4-1-1",
+      "title": "PS5 BD-J UMTX1 payload · JAR Loader 4.1.1",
+      "project": "PS5 JAR Loader",
+      "platform": "PS5",
+      "category": "Payloads",
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "payload",
+      "version": "v4.1.1",
+      "filename": "umtx1-1.0-SNAPSHOT.jar",
+      "pages": [
+        "console/ps5/bdj.html"
+      ],
+      "expectedBytes": 262836,
+      "url": "https://github.com/hammer-83/ps5-jar-loader/releases/download/v4.1.1/umtx1-1.0-SNAPSHOT.jar",
+      "mirror": false
+    },
+    {
+      "id": "ps5-bdj-process-jailbreak-4-1-1",
+      "title": "PS5 BD-J process jailbreak payload · JAR Loader 4.1.1",
+      "project": "PS5 JAR Loader",
+      "platform": "PS5",
+      "category": "Payloads",
+      "archiveRole": [
+        "Builds"
+      ],
+      "type": "payload",
+      "version": "v4.1.1",
+      "filename": "jailbreak-1.0-SNAPSHOT.jar",
+      "pages": [
+        "console/ps5/bdj.html"
+      ],
+      "expectedBytes": 217947,
+      "url": "https://github.com/hammer-83/ps5-jar-loader/releases/download/v4.1.1/jailbreak-1.0-SNAPSHOT.jar",
+      "mirror": false
+    }
+  ],
+  "image": {
+    "path": "/assets/images/consoles/ps5-bdj-jar-loader.png",
+    "source": "https://raw.githubusercontent.com/hammer-83/ps5-jar-loader/v4.1.1/assembly/src/main/resources/disc/AVCHD/BDMV/META/DL/ps5loader.png",
+    "description": "Official PS5 JAR Loader Blu-ray menu artwork from the pinned v4.1.1 release source."
+  }
+}

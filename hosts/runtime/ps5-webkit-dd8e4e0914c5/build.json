@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 1,
+  "id": "ps5-webkit-dd8e4e0914c5",
+  "title": "PS5 WebKit Exploit 7.00–13.60",
+  "console": "ps5",
+  "entry": "/hosts/runtime/ps5-webkit-dd8e4e0914c5/",
+  "runEntry": "/hosts/runtime/ps5-webkit-dd8e4e0914c5/web/index.html",
+  "firmwares": [
+    "13.60",
+    "13.42",
+    "13.40",
+    "13.20",
+    "13.00",
+    "12.70",
+    "12.60",
+    "12.40",
+    "12.20",
+    "12.02",
+    "12.00",
+    "11.60",
+    "11.20",
+    "11.00",
+    "10.60",
+    "10.40",
+    "10.20",
+    "10.01",
+    "10.00",
+    "9.60",
+    "9.40",
+    "9.20",
+    "9.00",
+    "8.60",
+    "8.40",
+    "8.20",
+    "8.00",
+    "7.61",
+    "7.60",
+    "7.40",
+    "7.20",
+    "7.01",
+    "7.00"
+  ],
+  "listener": {
+    "transport": "tcp",
+    "port": 9021,
+    "format": "elf"
+  },
+  "source": {
+    "repository": "https://github.com/ntfargo/Relapse-Exploit",
+    "commit": "dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0"
+  },
+  "license": "MIT",
+  "sourceFiles": [
+    {
+      "path": "LICENSE",
+      "upstreamPath": "LICENSE",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/LICENSE",
+      "bytes": 1069,
+      "sha256": "27733007935689bfd85e2a13aae08144377e385b9d2aec9b72de295b9a6218f0",
+      "gitBlob": "f1b763b4e461d19dace37af7ef87824dd3842d4b"
+    },
+    {
+      "path": "source/README.md",
+      "upstreamPath": "README.md",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/README.md",
+      "bytes": 1325,
+      "sha256": "7668e15b175a3c95f915e4b1517870523383970441cb2d1e7b241c1a01af075a",
+      "gitBlob": "61fe1b31ccefa6306533951b447dc0f2336f1a52"
+    },
+    {
+      "path": "source/index.html.txt",
+      "upstreamPath": "index.html",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/index.html",
+      "bytes": 550,
+      "sha256": "300474e22327d703006abb3e350594d5794e4cca7fb24aaf43df4247b0c7d180",
+      "gitBlob": "67818e58670b3e12d4e1b350d2a808ed24f08ab4"
+    },
+    {
+      "path": "web/offsets/10.00.js",
+      "upstreamPath": "offsets/10.00.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/10.00.js",
+      "bytes": 11352,
+      "sha256": "23a0e624f4b566b8188c47486177eaf0fe4853148ffe1eaba9894650d3b22a65",
+      "gitBlob": "2b878dbc6c0657dd7b83887314ae26427f833486"
+    },
+    {
+      "path": "web/offsets/10.01.js",
+      "upstreamPath": "offsets/10.01.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/10.01.js",
+      "bytes": 11351,
+      "sha256": "203062c0085941bba84ffc7b40465f642f37f94c0f414b1a16ddd16c89f0073d",
+      "gitBlob": "dc53ef85bd9430f1d07535c68c1625ead119e6f9"
+    },
+    {
+      "path": "web/offsets/10.20.js",
+      "upstreamPath": "offsets/10.20.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/10.20.js",
+      "bytes": 11351,
+      "sha256": "60b5823268fcc855680d9538662144cd1064bb24e5266ea597311925c7437089",
+      "gitBlob": "b405289776a9310b84b8e8f4818a61e12956fa82"
+    },
+    {
+      "path": "web/offsets/10.40.js",
+      "upstreamPath": "offsets/10.40.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/10.40.js",
+      "bytes": 11351,
+      "sha256": "28e86590dee5feeb4918b75e2db1f0b6d6cf1a1358c6e6b4c713cb07a1c95ef7",
+      "gitBlob": "78ab6c4db1fe7cd8d9bcaaf7d89f58ea9aa20115"
+    },
+    {
+      "path": "web/offsets/10.60.js",
+      "upstreamPath": "offsets/10.60.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/10.60.js",
+      "bytes": 11301,
+      "sha256": "e5f8bb96dd50af9419c29c7dd16ac033ef26fa928369c2721a092263ea454a8d",
+      "gitBlob": "9166adf0a7e35a233dcd38786d200d9c135f3bdb"
+    },
+    {
+      "path": "web/offsets/11.00.js",
+      "upstreamPath": "offsets/11.00.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/11.00.js",
+      "bytes": 11351,
+      "sha256": "3f62e413c124d0166141e793e4b190018a92a8ac00022342271da562ba63a6c8",
+      "gitBlob": "a9143a5a42f91a96bec05023554c1c1a3cdae216"
+    },
+    {
+      "path": "web/offsets/11.20.js",
+      "upstreamPath": "offsets/11.20.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/11.20.js",
+      "bytes": 11351,
+      "sha256": "f18615129b879a67b4deae62aa17500c96155ee3eda7bd42cf82aaa27463a848",
+      "gitBlob": "73d8bb0330cbaac2cf309b9ce1c7c92e46a1d896"
+    },
+    {
+      "path": "web/offsets/11.60.js",
+      "upstreamPath": "offsets/11.60.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/11.60.js",
+      "bytes": 11919,
+      "sha256": "67315a4b6868bd2eea3cca36290fb5d3a5e12c2df654e31c503811db3ddfab4d",
+      "gitBlob": "58f97f40eca56bede650468543053321c932c752"
+    },
+    {
+      "path": "web/offsets/12.00.js",
+      "upstreamPath": "offsets/12.00.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/12.00.js",
+      "bytes": 12783,
+      "sha256": "d7f1afffc3d25373c7754ac44a2f6d7aedacc90718b4b814e9ee95c5a314f25f",
+      "gitBlob": "de4f632990abe5bb7eac6d127eb23a02f54915e3"
+    },
+    {
+      "path": "web/offsets/12.02.js",
+      "upstreamPath": "offsets/12.02.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/12.02.js",
+      "bytes": 12320,
+      "sha256": "b913009b5dfd2ed24b952ee976ac1aac4b6e2ff66146510d994d3ec885331af7",
+      "gitBlob": "db9af3659ea8bd33954016c8a5e9886dca63fcaf"
+    },
+    {
+      "path": "web/offsets/12.20.js",
+      "upstreamPath": "offsets/12.20.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/12.20.js",
+      "bytes": 12318,
+      "sha256": "388c4880f44a49a0a8d6cda376115e6a1087485cbc1a91320d5a4358b853bffc",
+      "gitBlob": "e3536b0c8772a5eb966096a38b9010bffa884242"
+    },
+    {
+      "path": "web/offsets/12.40.js",
+      "upstreamPath": "offsets/12.40.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/12.40.js",
+      "bytes": 12320,
+      "sha256": "28269726e800c2ba14112c714e3246ba025533dfe0e4199ea27892dc3bdd17f0",
+      "gitBlob": "18898705a0efe4f017c8e6223de1281fde2b684c"
+    },
+    {
+      "path": "web/offsets/12.60.js",
+      "upstreamPath": "offsets/12.60.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/12.60.js",
+      "bytes": 12320,
+      "sha256": "a51c94ee5f288a2c362b72d802b088568791a2946fa57cfb461155d16886a6e5",
+      "gitBlob": "e6666c85559f2c1b4c4f73f3624f6c8c71c0bbd2"
+    },
+    {
+      "path": "web/offsets/12.70.js",
+      "upstreamPath": "offsets/12.70.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/12.70.js",
+      "bytes": 12177,
+      "sha256": "f7d9c5130a16943f6d18a133bf2e8c71b7e2f3454032d6d64ed4756f6f0a078b",
+      "gitBlob": "182cd6ce04ac0d512cda6fd80727e6d89207afea"
+    },
+    {
+      "path": "web/offsets/13.00.js",
+      "upstreamPath": "offsets/13.00.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/13.00.js",
+      "bytes": 11693,
+      "sha256": "4b009a8a12fa39558f21549bd6d609fa04a6b937124d9574a72c75e9ef738206",
+      "gitBlob": "f26669f49cf1a383ffb0f63aff0119f48aeb44b4"
+    },
+    {
+      "path": "web/offsets/13.20.js",
+      "upstreamPath": "offsets/13.20.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/13.20.js",
+      "bytes": 10952,
+      "sha256": "6c45b7bb2319b1888160fc065a1d50d51cf7150f5a97ed01274dd8ef427926dd",
+      "gitBlob": "691ed8155bfae16f2773e65451a83e881caa1307"
+    },
+    {
+      "path": "web/offsets/13.40.js",
+      "upstreamPath": "offsets/13.40.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/13.40.js",
+      "bytes": 10952,
+      "sha256": "55e07df0216d2bf10b14cb83a393cce14539879a7cd598ecb2c9ed933a85d662",
+      "gitBlob": "d3fd36edcd5ab2b4b5f95b31d896e1b0c23e28f1"
+    },
+    {
+      "path": "web/offsets/13.42.js",
+      "upstreamPath": "offsets/13.42.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/13.42.js",
+      "bytes": 10952,
+      "sha256": "ba2458d7a2317e84ee11edb205e74817965713d90714bd43f4f7c432c51df44f",
+      "gitBlob": "1b06fab187ef43b5af402099ece9f039b54d469f"
+    },
+    {
+      "path": "web/offsets/13.60.js",
+      "upstreamPath": "offsets/13.60.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/13.60.js",
+      "bytes": 11363,
+      "sha256": "fea189d5357f5b9a3b38f8c12c070ebbcc64b0a13a11d587892036606b818b25",
+      "gitBlob": "9f7ee1e958d6682a292e34d924550057715944bd"
+    },
+    {
+      "path": "web/offsets/7.00.js",
+      "upstreamPath": "offsets/7.00.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/7.00.js",
+      "bytes": 11273,
+      "sha256": "2783ad919f990f9a9c32d0a6c1548390d9935f39f12e30e88e8556cb932d54c9",
+      "gitBlob": "09ce8cdc40b98442f8b44ca145e8a4d12e4b9b45"
+    },
+    {
+      "path": "web/offsets/7.01.js",
+      "upstreamPath": "offsets/7.01.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/7.01.js",
+      "bytes": 11273,
+      "sha256": "33159eb5194e68063670d4436269fd9b649cd15e21b740b4a8908fbd083c5a62",
+      "gitBlob": "981702949b62b2276e8fd3cb320dbfe5fc9e606f"
+    },
+    {
+      "path": "web/offsets/7.20.js",
+      "upstreamPath": "offsets/7.20.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/7.20.js",
+      "bytes": 11293,
+      "sha256": "2ad96fb5928bfef623de9715b08f8c8cc97a1b54492f1e88c1f7e67db8a5b454",
+      "gitBlob": "63b3d1ecf769b677a869fe64fce1b32e0b254d83"
+    },
+    {
+      "path": "web/offsets/7.40.js",
+      "upstreamPath": "offsets/7.40.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/7.40.js",
+      "bytes": 11293,
+      "sha256": "0d03f0394133cc9bd63deeee32053f4dd20fe9ed7ddbddc720f1d70cc1d8bd1a",
+      "gitBlob": "451deb5a894fd73d76cc5e51c97d265e4c902a70"
+    },
+    {
+      "path": "web/offsets/7.60.js",
+      "upstreamPath": "offsets/7.60.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/7.60.js",
+      "bytes": 11293,
+      "sha256": "8d193a9c820a9a28d40f4e804824b7e72bbe6a9e1bb0ea40c77f583212220485",
+      "gitBlob": "0f33a972ea67742deb8278a10af23ad0f2a31b63"
+    },
+    {
+      "path": "web/offsets/7.61.js",
+      "upstreamPath": "offsets/7.61.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/7.61.js",
+      "bytes": 11293,
+      "sha256": "cb57359fe88f6f1ddb660a4db1a32628c098f49535e622a17ca59b032b4c82f8",
+      "gitBlob": "835a7e0e617c3f2113920ab0472143823420c98a"
+    },
+    {
+      "path": "web/offsets/8.00.js",
+      "upstreamPath": "offsets/8.00.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/8.00.js",
+      "bytes": 11313,
+      "sha256": "d8bf9a9e6b76dd650b884a0f1bda633166206d42160e15d64008ba98c330a575",
+      "gitBlob": "ef05e1877451fdb1ec78688ef342263f58f7bd19"
+    },
+    {
+      "path": "web/offsets/8.20.js",
+      "upstreamPath": "offsets/8.20.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/8.20.js",
+      "bytes": 11313,
+      "sha256": "920ba75eb9679588465ec0b39f8f04acbee9f93a84549c43ee4c2dc037ed7b4f",
+      "gitBlob": "b8e13b6c18f5c2c075e730c4b16a19779b448644"
+    },
+    {
+      "path": "web/offsets/8.40.js",
+      "upstreamPath": "offsets/8.40.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/8.40.js",
+      "bytes": 11313,
+      "sha256": "e5978f69d09137c65280c7a30524d3ff4d3355452e5af4bdf2cd3782429be3af",
+      "gitBlob": "2dbfb0a719d324f3822237a7141502e5c29a4ef9"
+    },
+    {
+      "path": "web/offsets/8.60.js",
+      "upstreamPath": "offsets/8.60.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/8.60.js",
+      "bytes": 11313,
+      "sha256": "cf9ca033e9f773b9d4a665516f674ebf40daa202bee72390c7bd5f9b0272ca0a",
+      "gitBlob": "4141ab5502e7a4a94c065f72e424240faeecf3d4"
+    },
+    {
+      "path": "web/offsets/9.00.js",
+      "upstreamPath": "offsets/9.00.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/9.00.js",
+      "bytes": 11350,
+      "sha256": "514a79fe229a0f1ac131aa450f9ce2e8b7f4a08fb6fefd036bbfd35bdeb6d458",
+      "gitBlob": "f461c317c8ff009e964139e8affb05e1a4857b5d"
+    },
+    {
+      "path": "web/offsets/9.20.js",
+      "upstreamPath": "offsets/9.20.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/9.20.js",
+      "bytes": 11350,
+      "sha256": "278580cde067cb876caff4a66fab445f64713dc04cf37ef708a8ad93bdde2a7b",
+      "gitBlob": "0ce74a12e1fb1e585073099327c881cb5f179448"
+    },
+    {
+      "path": "web/offsets/9.40.js",
+      "upstreamPath": "offsets/9.40.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/9.40.js",
+      "bytes": 11350,
+      "sha256": "be63f0e84d9dbc5fabdf278ea785e3403aea7051d575ab22e811c162f607761e",
+      "gitBlob": "ee34631a1a34975cdc2db9f30dcdac9f2f9065f5"
+    },
+    {
+      "path": "web/offsets/9.60.js",
+      "upstreamPath": "offsets/9.60.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/offsets/9.60.js",
+      "bytes": 11350,
+      "sha256": "9dad0a62346d5c487ab0a5eebfeb710309535cd9dd3f83b5b6e437878b240273",
+      "gitBlob": "0b3959a3d8cef8b7cfb368efc47990865fa6deb1"
+    },
+    {
+      "path": "web/payloads/elfldr-ps5-1360.elf",
+      "upstreamPath": "payloads/elfldr-ps5-1360.elf",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/payloads/elfldr-ps5-1360.elf",
+      "bytes": 397024,
+      "sha256": "de5dd480d12637527ba2d75e35de851adbb59c455293fa32588c492ef6b44b81",
+      "gitBlob": "6a3aef359659ce185d852405f81795c206df40f4"
+    },
+    {
+      "path": "web/payloads/kexp_2026_05_25.bin",
+      "upstreamPath": "payloads/kexp_2026_05_25.bin",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/payloads/kexp_2026_05_25.bin",
+      "bytes": 18912,
+      "sha256": "7cfb3a8cb86db67893c360ae3531f460f800e9f24039797038e6e81fc50f18a9",
+      "gitBlob": "c6290203e97191808721fa48f413977d37b61339"
+    },
+    {
+      "path": "web/src/firmware.js",
+      "upstreamPath": "src/firmware.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/firmware.js",
+      "bytes": 915,
+      "sha256": "0266eb3ab0a674a83ddcd708f2bd2ff9cbde7aabac50d077f1baaad21b195bf4",
+      "gitBlob": "4d3ea55d2e0fa770b462cd8735c9ec28c80438ad"
+    },
+    {
+      "path": "web/src/kexp.js",
+      "upstreamPath": "src/kexp.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/kexp.js",
+      "bytes": 10419,
+      "sha256": "bbbd824f23a654f0fb1860e13822a421e2feec1047b464b450c9770f92b42481",
+      "gitBlob": "49df0fdefe1d4f9bfa86871a7315d93b70d3fb9b"
+    },
+    {
+      "path": "web/src/main.js",
+      "upstreamPath": "src/main.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/main.js",
+      "bytes": 8788,
+      "sha256": "0602d8565a6eaf2e7c9b8b132d6491d009047e37fbba23c85bdc15f5c6be4fd7",
+      "gitBlob": "b77adf8237f0aadd16273f292848b1b689211de3"
+    },
+    {
+      "path": "web/src/relapse_exploit.js",
+      "upstreamPath": "src/relapse_exploit.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/relapse_exploit.js",
+      "bytes": 40474,
+      "sha256": "85f2999040a9ef99c27588fb7ad0cb6d1921bec2bc000094a3de9c48e45e1d3a",
+      "gitBlob": "cf093a07740f47f4f7a6e0ad39646589957f2ebf"
+    },
+    {
+      "path": "web/src/rop.js",
+      "upstreamPath": "src/rop.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/rop.js",
+      "bytes": 3410,
+      "sha256": "5e07dccb8ebf059964c8d520c5df9ba1abe13b179167da77b7553ac5e47bbdb3",
+      "gitBlob": "55bd101a1d0684e7378c5752d9fbd68e4f61775c"
+    },
+    {
+      "path": "web/src/site.js",
+      "upstreamPath": "src/site.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/site.js",
+      "bytes": 2248,
+      "sha256": "fcda36af0bb567d23fe894eaa3669f528d7ed327ec8e731288d51a13a62f0f19",
+      "gitBlob": "c1040185e04d8b0a14e2d695f83032cfb1c1def0"
+    },
+    {
+      "path": "web/src/utils/int64.js",
+      "upstreamPath": "src/utils/int64.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/utils/int64.js",
+      "bytes": 1370,
+      "sha256": "0ae17a26c6280cf615acf206d013b53ffc6933bbde60066db8aad36f4ae3f015",
+      "gitBlob": "38901e8ca4b8ff8ac72962704010ab6dca6db4b1"
+    },
+    {
+      "path": "web/src/utils/mem.js",
+      "upstreamPath": "src/utils/mem.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/utils/mem.js",
+      "bytes": 4854,
+      "sha256": "250289a34f114f78e4d4893b1fc75dcc067079edb73d495318b5f897344f3513",
+      "gitBlob": "c2ec200690c95f5ba9798c31d7cfdff42b8de261"
+    },
+    {
+      "path": "web/src/utils/rop_slave.js",
+      "upstreamPath": "src/utils/rop_slave.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/utils/rop_slave.js",
+      "bytes": 85,
+      "sha256": "18f8bd08d5fcbea849d2b5253aadfd1564c94967e98ebd6ad70c1fd7db3b1924",
+      "gitBlob": "c657ae79f75bbc90f5eee85f3395906b765fbc37"
+    },
+    {
+      "path": "web/src/utils/syscalls.js",
+      "upstreamPath": "src/utils/syscalls.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/utils/syscalls.js",
+      "bytes": 16460,
+      "sha256": "fb38b26e4e4580a7ecfba56d652d75fbfabc17f3e5630a8940181caaf97829c9",
+      "gitBlob": "2960c3ca67a4b198b68aa2706ca7515bdb2c9587"
+    },
+    {
+      "path": "web/src/webkit.js",
+      "upstreamPath": "src/webkit.js",
+      "source": "https://raw.githubusercontent.com/ntfargo/Relapse-Exploit/dd8e4e0914c5e9d066ee1f9b056be76cb992c8e0/src/webkit.js",
+      "bytes": 20965,
+      "sha256": "3377ccc7c10a86a5ece4ea3249f1b45b54c20de7a5a96e77a75c54ada373b0ca",
+      "gitBlob": "9ae1076516dee4e77df5eede79aa4516b3af8dd8"
+    }
+  ],
+  "files": [
+    {
+      "path": "guard.js",
+      "bytes": 5470,
+      "sha256": "eb5f0792ba06546cf44ab6fcc3e35be0e5125737fe573b24fc5b39b46203c60c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1869,
+      "sha256": "1df57f60d91ca4e0c88cb1193f2858208c772fe65bacc7ba11b75c953addba46"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1069,
+      "sha256": "27733007935689bfd85e2a13aae08144377e385b9d2aec9b72de295b9a6218f0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1526,
+      "sha256": "d5ecd0bf25a3b284fa8df3acf0ec45a568a2383e988b29e02a53935b5d44a235"
+    },
+    {
+      "path": "source/index.html.txt",
+      "bytes": 550,
+      "sha256": "300474e22327d703006abb3e350594d5794e4cca7fb24aaf43df4247b0c7d180"
+    },
+    {
+      "path": "source/README.md",
+      "bytes": 1325,
+      "sha256": "7668e15b175a3c95f915e4b1517870523383970441cb2d1e7b241c1a01af075a"
+    },
+    {
+      "path": "style.css",
+      "bytes": 744,
+      "sha256": "59b1998c75524a65d1371e150779df44c49adee4b3b06de1d5ba47fd3aa4de4c"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 763,
+      "sha256": "957999e731d49a00e2839cd3a4f125b1da813ec51398ff0e8d2ec991fc9d9f88"
+    },
+    {
+      "path": "web/offsets/10.00.js",
+      "bytes": 11352,
+      "sha256": "23a0e624f4b566b8188c47486177eaf0fe4853148ffe1eaba9894650d3b22a65"
+    },
+    {
+      "path": "web/offsets/10.01.js",
+      "bytes": 11351,
+      "sha256": "203062c0085941bba84ffc7b40465f642f37f94c0f414b1a16ddd16c89f0073d"
+    },
+    {
+      "path": "web/offsets/10.20.js",
+      "bytes": 11351,
+      "sha256": "60b5823268fcc855680d9538662144cd1064bb24e5266ea597311925c7437089"
+    },
+    {
+      "path": "web/offsets/10.40.js",
+      "bytes": 11351,
+      "sha256": "28e86590dee5feeb4918b75e2db1f0b6d6cf1a1358c6e6b4c713cb07a1c95ef7"
+    },
+    {
+      "path": "web/offsets/10.60.js",
+      "bytes": 11301,
+      "sha256": "e5f8bb96dd50af9419c29c7dd16ac033ef26fa928369c2721a092263ea454a8d"
+    },
+    {
+      "path": "web/offsets/11.00.js",
+      "bytes": 11351,
+      "sha256": "3f62e413c124d0166141e793e4b190018a92a8ac00022342271da562ba63a6c8"
+    },
+    {
+      "path": "web/offsets/11.20.js",
+      "bytes": 11351,
+      "sha256": "f18615129b879a67b4deae62aa17500c96155ee3eda7bd42cf82aaa27463a848"
+    },
+    {
+      "path": "web/offsets/11.60.js",
+      "bytes": 11919,
+      "sha256": "67315a4b6868bd2eea3cca36290fb5d3a5e12c2df654e31c503811db3ddfab4d"
+    },
+    {
+      "path": "web/offsets/12.00.js",
+      "bytes": 12783,
+      "sha256": "d7f1afffc3d25373c7754ac44a2f6d7aedacc90718b4b814e9ee95c5a314f25f"
+    },
+    {
+      "path": "web/offsets/12.02.js",
+      "bytes": 12320,
+      "sha256": "b913009b5dfd2ed24b952ee976ac1aac4b6e2ff66146510d994d3ec885331af7"
+    },
+    {
+      "path": "web/offsets/12.20.js",
+      "bytes": 12318,
+      "sha256": "388c4880f44a49a0a8d6cda376115e6a1087485cbc1a91320d5a4358b853bffc"
+    },
+    {
+      "path": "web/offsets/12.40.js",
+      "bytes": 12320,
+      "sha256": "28269726e800c2ba14112c714e3246ba025533dfe0e4199ea27892dc3bdd17f0"
+    },
+    {
+      "path": "web/offsets/12.60.js",
+      "bytes": 12320,
+      "sha256": "a51c94ee5f288a2c362b72d802b088568791a2946fa57cfb461155d16886a6e5"
+    },
+    {
+      "path": "web/offsets/12.70.js",
+      "bytes": 12177,
+      "sha256": "f7d9c5130a16943f6d18a133bf2e8c71b7e2f3454032d6d64ed4756f6f0a078b"
+    },
+    {
+      "path": "web/offsets/13.00.js",
+      "bytes": 11693,
+      "sha256": "4b009a8a12fa39558f21549bd6d609fa04a6b937124d9574a72c75e9ef738206"
+    },
+    {
+      "path": "web/offsets/13.20.js",
+      "bytes": 10952,
+      "sha256": "6c45b7bb2319b1888160fc065a1d50d51cf7150f5a97ed01274dd8ef427926dd"
+    },
+    {
+      "path": "web/offsets/13.40.js",
+      "bytes": 10952,
+      "sha256": "55e07df0216d2bf10b14cb83a393cce14539879a7cd598ecb2c9ed933a85d662"
+    },
+    {
+      "path": "web/offsets/13.42.js",
+      "bytes": 10952,
+      "sha256": "ba2458d7a2317e84ee11edb205e74817965713d90714bd43f4f7c432c51df44f"
+    },
+    {
+      "path": "web/offsets/13.60.js",
+      "bytes": 11363,
+      "sha256": "fea189d5357f5b9a3b38f8c12c070ebbcc64b0a13a11d587892036606b818b25"
+    },
+    {
+      "path": "web/offsets/7.00.js",
+      "bytes": 11273,
+      "sha256": "2783ad919f990f9a9c32d0a6c1548390d9935f39f12e30e88e8556cb932d54c9"
+    },
+    {
+      "path": "web/offsets/7.01.js",
+      "bytes": 11273,
+      "sha256": "33159eb5194e68063670d4436269fd9b649cd15e21b740b4a8908fbd083c5a62"
+    },
+    {
+      "path": "web/offsets/7.20.js",
+      "bytes": 11293,
+      "sha256": "2ad96fb5928bfef623de9715b08f8c8cc97a1b54492f1e88c1f7e67db8a5b454"
+    },
+    {
+      "path": "web/offsets/7.40.js",
+      "bytes": 11293,
+      "sha256": "0d03f0394133cc9bd63deeee32053f4dd20fe9ed7ddbddc720f1d70cc1d8bd1a"
+    },
+    {
+      "path": "web/offsets/7.60.js",
+      "bytes": 11293,
+      "sha256": "8d193a9c820a9a28d40f4e804824b7e72bbe6a9e1bb0ea40c77f583212220485"
+    },
+    {
+      "path": "web/offsets/7.61.js",
+      "bytes": 11293,
+      "sha256": "cb57359fe88f6f1ddb660a4db1a32628c098f49535e622a17ca59b032b4c82f8"
+    },
+    {
+      "path": "web/offsets/8.00.js",
+      "bytes": 11313,
+      "sha256": "d8bf9a9e6b76dd650b884a0f1bda633166206d42160e15d64008ba98c330a575"
+    },
+    {
+      "path": "web/offsets/8.20.js",
+      "bytes": 11313,
+      "sha256": "920ba75eb9679588465ec0b39f8f04acbee9f93a84549c43ee4c2dc037ed7b4f"
+    },
+    {
+      "path": "web/offsets/8.40.js",
+      "bytes": 11313,
+      "sha256": "e5978f69d09137c65280c7a30524d3ff4d3355452e5af4bdf2cd3782429be3af"
+    },
+    {
+      "path": "web/offsets/8.60.js",
+      "bytes": 11313,
+      "sha256": "cf9ca033e9f773b9d4a665516f674ebf40daa202bee72390c7bd5f9b0272ca0a"
+    },
+    {
+      "path": "web/offsets/9.00.js",
+      "bytes": 11350,
+      "sha256": "514a79fe229a0f1ac131aa450f9ce2e8b7f4a08fb6fefd036bbfd35bdeb6d458"
+    },
+    {
+      "path": "web/offsets/9.20.js",
+      "bytes": 11350,
+      "sha256": "278580cde067cb876caff4a66fab445f64713dc04cf37ef708a8ad93bdde2a7b"
+    },
+    {
+      "path": "web/offsets/9.40.js",
+      "bytes": 11350,
+      "sha256": "be63f0e84d9dbc5fabdf278ea785e3403aea7051d575ab22e811c162f607761e"
+    },
+    {
+      "path": "web/offsets/9.60.js",
+      "bytes": 11350,
+      "sha256": "9dad0a62346d5c487ab0a5eebfeb710309535cd9dd3f83b5b6e437878b240273"
+    },
+    {
+      "path": "web/payloads/elfldr-ps5-1360.elf",
+      "bytes": 397024,
+      "sha256": "de5dd480d12637527ba2d75e35de851adbb59c455293fa32588c492ef6b44b81"
+    },
+    {
+      "path": "web/payloads/kexp_2026_05_25.bin",
+      "bytes": 18912,
+      "sha256": "7cfb3a8cb86db67893c360ae3531f460f800e9f24039797038e6e81fc50f18a9"
+    },
+    {
+      "path": "web/src/firmware.js",
+      "bytes": 915,
+      "sha256": "0266eb3ab0a674a83ddcd708f2bd2ff9cbde7aabac50d077f1baaad21b195bf4"
+    },
+    {
+      "path": "web/src/kexp.js",
+      "bytes": 10419,
+      "sha256": "bbbd824f23a654f0fb1860e13822a421e2feec1047b464b450c9770f92b42481"
+    },
+    {
+      "path": "web/src/main.js",
+      "bytes": 8788,
+      "sha256": "0602d8565a6eaf2e7c9b8b132d6491d009047e37fbba23c85bdc15f5c6be4fd7"
+    },
+    {
+      "path": "web/src/relapse_exploit.js",
+      "bytes": 40474,
+      "sha256": "85f2999040a9ef99c27588fb7ad0cb6d1921bec2bc000094a3de9c48e45e1d3a"
+    },
+    {
+      "path": "web/src/rop.js",
+      "bytes": 3410,
+      "sha256": "5e07dccb8ebf059964c8d520c5df9ba1abe13b179167da77b7553ac5e47bbdb3"
+    },
+    {
+      "path": "web/src/site.js",
+      "bytes": 2248,
+      "sha256": "fcda36af0bb567d23fe894eaa3669f528d7ed327ec8e731288d51a13a62f0f19"
+    },
+    {
+      "path": "web/src/utils/int64.js",
+      "bytes": 1370,
+      "sha256": "0ae17a26c6280cf615acf206d013b53ffc6933bbde60066db8aad36f4ae3f015"
+    },
+    {
+      "path": "web/src/utils/mem.js",
+      "bytes": 4854,
+      "sha256": "250289a34f114f78e4d4893b1fc75dcc067079edb73d495318b5f897344f3513"
+    },
+    {
+      "path": "web/src/utils/rop_slave.js",
+      "bytes": 85,
+      "sha256": "18f8bd08d5fcbea849d2b5253aadfd1564c94967e98ebd6ad70c1fd7db3b1924"
+    },
+    {
+      "path": "web/src/utils/syscalls.js",
+      "bytes": 16460,
+      "sha256": "fb38b26e4e4580a7ecfba56d652d75fbfabc17f3e5630a8940181caaf97829c9"
+    },
+    {
+      "path": "web/src/webkit.js",
+      "bytes": 20965,
+      "sha256": "3377ccc7c10a86a5ece4ea3249f1b45b54c20de7a5a96e77a75c54ada373b0ca"
+    }
+  ],
+  "verified": {
+    "staticDependencies": true,
+    "hardwareExecution": false,
+    "downloadedCodeExecuted": false,
+    "prefixGuard": true
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "checkedAt": "2026-11-02T09:51:52.683Z",
+  "scope": "Existing host menu metadata and artwork only; no action added or removed, payload executed, or compatibility/download/hash changed.",
+  "records": [
+    {
+      "id": "ps4-modern-gta5-157-expulsion-v7-0",
+      "family": "Expulsion",
+      "game": "GTA V",
+      "gameUpdate": "1.57",
+      "menuVersion": "7.0",
+      "image": "/assets/images/host-menus/expulsion.svg",
+      "imageRole": "Menu cover",
+      "sha256": "c1907f6d14ed8bacb68d2eac17398f7284d3b6e3b7a36c9d0c266cbca739bf1d",
+      "description": "Original family cover. The previous image visibly shows v5.0 and must not represent v7.0."
+    },
+    {
+      "id": "ps4-modern-gta5-cyprus-1-57",
+      "family": "Cyprus",
+      "game": "GTA V",
+      "gameUpdate": "1.57",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/edited/gta5-cyprus-image.png",
+      "imageRole": "Menu preview",
+      "sha256": "5e4b3dd996111bdd0ddf06b95f1a3aa6b470b22e61e8001bb0b64cf015812656",
+      "description": "Supplied Cyprus menu promotional screenshot; no numeric menu build was established for this exact PRX."
+    },
+    {
+      "id": "ps4-modern-gta5-explosive-1-57",
+      "family": "Explosive",
+      "game": "GTA V",
+      "gameUpdate": "1.57",
+      "menuVersion": null,
+      "image": "/assets/images/host-menus/explosive.svg",
+      "imageRole": "Menu cover",
+      "sha256": "a6553a8ee22d3a0179aac2ce7e9ba801528426220d49ed90f811fef346e251d2",
+      "description": "Original menu cover replaces a source screenshot containing an unrelated browser overlay. That screenshot displays 3.7.0, but the exact supplied 1.57 binary has no confirmed menu version."
+    },
+    {
+      "id": "ps4-modern-gta5-157-expulsion-v5-0",
+      "family": "Expulsion",
+      "game": "GTA V",
+      "gameUpdate": "1.57",
+      "menuVersion": "5.0",
+      "image": "/assets/images/ps4-ps5/edited/gta5-expulsion-v5-1-57-image.png",
+      "imageRole": "Menu preview",
+      "sha256": "6e7146addeb7b02a8e23139e0466a7cce61baee19f556e566727b3df89db53fa",
+      "description": "Supplied screenshot visibly shows Expulsion v5.0 and GTA V update 1.57."
+    },
+    {
+      "id": "ps4-modern-gta5-cyprus-1-56",
+      "family": "Cyprus",
+      "game": "GTA V",
+      "gameUpdate": "1.56",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/edited/gta5-cyprus-image.png",
+      "imageRole": "Menu preview",
+      "sha256": "5e4b3dd996111bdd0ddf06b95f1a3aa6b470b22e61e8001bb0b64cf015812656",
+      "description": "Supplied Cyprus menu promotional screenshot; no numeric menu build was established for this exact PRX."
+    },
+    {
+      "id": "ps4-oysters-rdr2-100",
+      "family": "Oysters",
+      "game": "RDR2",
+      "gameUpdate": "1.00",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "sha256": "296877dad17425a5e070e7e7e56a4781cf3d14cb9759253bd762c7effe5ef41e",
+      "description": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-113",
+      "family": "Oysters",
+      "game": "RDR2",
+      "gameUpdate": "1.13",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "sha256": "296877dad17425a5e070e7e7e56a4781cf3d14cb9759253bd762c7effe5ef41e",
+      "description": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-119",
+      "family": "Oysters",
+      "game": "RDR2",
+      "gameUpdate": "1.19",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "sha256": "296877dad17425a5e070e7e7e56a4781cf3d14cb9759253bd762c7effe5ef41e",
+      "description": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-124",
+      "family": "Oysters",
+      "game": "RDR2",
+      "gameUpdate": "1.24",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "sha256": "296877dad17425a5e070e7e7e56a4781cf3d14cb9759253bd762c7effe5ef41e",
+      "description": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-oysters-rdr2-129",
+      "family": "Oysters",
+      "game": "RDR2",
+      "gameUpdate": "1.29",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/originals/rdr2-oyster-image.webp",
+      "imageRole": "Menu preview",
+      "sha256": "296877dad17425a5e070e7e7e56a4781cf3d14cb9759253bd762c7effe5ef41e",
+      "description": "Source-published Oysters Free menu showcase. Its exact historical BIN revision is not established; do not apply the current official SPRX version 1.3.9 to these BINs."
+    },
+    {
+      "id": "ps4-north-beta-rdr2-129",
+      "family": "North Beta",
+      "game": "RDR2",
+      "gameUpdate": "1.29",
+      "menuVersion": null,
+      "image": "/assets/images/ps4-ps5/originals/rdr2-north-beta-image.webp",
+      "imageRole": "Menu preview",
+      "sha256": "c41f71b7e52007a191530c38dec3750a79f382e628ba79317ef172f9f6eaf20c",
+      "description": "Source-published North Beta menu showcase. The historical BIN revision is not inferred from the image or filename."
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "source": "docs/discord-ps4-ps5-coverage.json",
+      "scope": "Exact original screenshot URLs and local asset mappings for Explosive1.57, Expulsion5.0, Cyprus, North Beta and Oysters."
+    },
+    {
+      "url": "https://rdroysters.com/products",
+      "result": "Primary product page reviewed: current1.3.9 is SPRX, supporting game updates1.00/1.13/1.19/1.24/1.29. Does not establish the version of the older host BINs."
+    },
+    {
+      "url": "https://ko-fi.com/s/793712a8ad",
+      "result": "Original Explosive PS4 product page reviewed; game-update compatibility and plugin instructions do not establish the version of the supplied explosive_temp.sprx."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sX8gF4V5klA",
+      "result": "V7 release candidate discovered; primary YouTube/X endpoints inaccessible in web extraction. No unverified thumbnail substituted."
+    }
+  ],
+  "grouping": [
+    {
+      "family": "Expulsion",
+      "game": "GTA V",
+      "variants": "Menu5.0 and7.0, both gameupdate1.57"
+    },
+    {
+      "family": "Cyprus",
+      "game": "GTA V",
+      "variants": "Gameupdate1.56 and1.57; menuversionnotprovided"
+    },
+    {
+      "family": "Oysters",
+      "game": "RDR2",
+      "variants": "Gameupdates1.00/1.13/1.19/1.24/1.29; historicalBIN menuversionnotprovided"
+    }
+  ],
+  "notes": [
+    "Original images remain preserved. The two new SVGs are labelled covers, not screenshots.",
+    "Expulsion5.0 preview is not reused for7.0.",
+    "No new numeric menu version is inferred from a screenshot, filename, or a newer upstream build."
+  ]
+}

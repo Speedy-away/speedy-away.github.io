@@ -1,0 +1,85 @@
+{
+  "scope": "xbox360-more",
+  "reviewed": "2026-11-02",
+  "status": "ready",
+  "resources": [
+    {
+      "id": "sally-exe",
+      "title": "Sally.exe · Xbox 360 Demo 1",
+      "author": "ANDKFOX",
+      "group": "games",
+      "version": "Demo 1 · v0.1.0",
+      "source": "https://andkfox.itch.io/x360-sallyexe",
+      "downloadUrl": "https://andkfox.itch.io/x360-sallyexe#download",
+      "downloadLinkKind": "publisher-page",
+      "uploadId": "18948616",
+      "fileName": "Demo1.rar",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/sally-finish-1793623812053.rar",
+      "expectedBytes": 126278336,
+      "expectedSha256": "97b95de2304ab6c720cde266d60fd0f2dca578b18a833da70fbee283e52a877f",
+      "format": "RAR / XEX",
+      "description": "ANDKFOX’s Unity horror fangame demo, published as an Xbox 360 build. The package includes its native executable and game data.",
+      "prerequisites": "An Xbox 360 environment capable of launching unsigned XEX homebrew. Keep default.xex beside the complete Media folder, including Media\\Managed. The publisher does not publish an exact motherboard, dashboard or exploit compatibility matrix.",
+      "runtime": "Unsigned-code Xbox 360 homebrew setup. The author identifies the download as Xbox 360; no particular temporary exploit or minimum dashboard is certified on the source page.",
+      "temporary": "BadUpdate, XeUnshackle and Peer Pressure compatibility are not separately stated by the publisher. Re-establish any temporary unsigned-code runtime used by your own setup after reboot.",
+      "requirementFilter": "unsigned",
+      "installPath": "Hdd1:\\Homebrew\\SallyExe\\",
+      "usbPath": "Usb0:\\Homebrew\\SallyExe\\",
+      "launch": "default.xex",
+      "setup": [
+        "Extract Demo1.rar on your PC into a dedicated SallyExe folder. This archive has no enclosing game folder: default.xex and Media are already at its root.",
+        "Copy the complete extracted folder to the shown HDD or USB path. Keep Media and its Managed files beside default.xex; allow at least 819 MB for the complete extracted package.",
+        "Launch default.xex through your Xbox 360 homebrew dashboard after establishing your unsigned-code runtime. Keep this demo in its own versioned folder when preserving an older build."
+      ],
+      "notes": "Demo 1 (v0.1.0), marked in development by the author. The complete publisher archive is retained, including its box art and debug symbol files. Download integrity and file layout were inspected; the game was not executed or tested on a physical console.",
+      "requiredEntries": [
+        "default.xex",
+        "Media/globalgamemanagers",
+        "Media/Managed/Assembly-CSharp.dll.xex"
+      ],
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\sallyexe360.png",
+        "sourceUrl": "https://img.itch.zone/aW1nLzI5NTEzNzA3LnBuZw==/original/tM%2FHAt.png",
+        "credit": "ANDKFOX · official Sally.exe artwork from the original author’s itch.io page",
+        "bytes": 447130,
+        "sha256": "a430fcfcad537157ffe49c2891a9696623f2a1ea30ba2e0bd32abb6bdb8afaf8"
+      },
+      "imageCredit": "ANDKFOX · official Sally.exe artwork from the original author’s itch.io page",
+      "sourceInspection": {
+        "sourcePage": "Original author public itch.io page; upload label [XBOX360] Demo 1 (v0.1.0), upload 18948616; in development; Unity; creepypasta/homebrew tags.",
+        "downloadFlow": "Ordinary free public CSRF download request followed by native curl transport. No login, CAPTCHA, certificate bypass or payload execution.",
+        "publisherExpectedBytes": 126278336,
+        "publisherEtag": "\"a05dee55f465579fbacde04084ec28d3-3\"",
+        "publisherLastModified": "Wed, 26 Aug 2026 20:40:22 GMT",
+        "resumedFromBytes": 20516864,
+        "resumeValidated": true,
+        "contentRange": "bytes 20516864-126278335/126278336",
+        "archiveCrcTestPassed": true,
+        "safeArchivePaths": true,
+        "archiveEntries": 112,
+        "files": 105,
+        "totalUncompressedBytes": 818793367,
+        "nativeXexHeaders": 13,
+        "launchHeader": "XEX2",
+        "launchBytes": 8949760,
+        "launchSha256": "48157ec1e8b34f73954dc36f1896e714fffef6538388a439ffe67ae40e6a1283",
+        "inspectionFile": "docs/tmp/xbox360-more-batch3/sally-finish-1793623812053-inspection.json",
+        "originalPartialPreserved": "docs/tmp/xbox360-more-batch3/sallyexe360-1793620989809.download",
+        "originalPartialBytes": 20516864,
+        "physicalHardwareTested": false,
+        "downloadedBuildExecuted": false,
+        "archiveWrites": false
+      }
+    }
+  ],
+  "verification": {
+    "downloadedFiles": 1,
+    "downloadBytes": 126278336,
+    "archiveCrcTestsPassed": 1,
+    "nativeXexHeaders": 13,
+    "downloadedBuildsExecuted": false,
+    "physicalHardwareTested": false,
+    "archiveWrites": false,
+    "priorPartialPreserved": true
+  }
+}

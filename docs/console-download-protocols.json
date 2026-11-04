@@ -1,0 +1,69 @@
+{
+  "reviewed": "2026-11-02",
+  "purpose": "Console-side file saving through already-installed native services. The static website does not bypass browser filesystem restrictions.",
+  "ps4": {
+    "clientVersion": "2.08",
+    "serverCommit": "4d8b1075bcf3bb1d2d05fc52d73ed26446f6358a",
+    "filehostType": 7,
+    "companionDestination": "/data/whatsite-ps4.html",
+    "companionURL": "http://127.0.0.1:6701/data/whatsite-ps4.html",
+    "filesystemMount": "/",
+    "storageDetection": "Not supported by this receiver: there is no directory-listing or mount-enumeration endpoint. The user must inspect the real existing path in ezRemote and confirm it before queuing.",
+    "destinationCheck": "HEAD /<full-destination-file> and HEAD /<full-destination-file>.tmp detect collisions. A 404 does not establish that the destination parent exists or is writable.",
+    "source": "https://github.com/cy33hc/ps4-ezremote-server/blob/4d8b1075bcf3bb1d2d05fc52d73ed26446f6358a/source/server/http_server.cpp",
+    "nativeFeed": "/console/ps4/homebrew.json",
+    "nativeFeedDocumentation": "https://github.com/e1z0/PS4-Games-Installer/blob/main/EXPERT.md"
+  },
+  "ps5": {
+    "clientVersion": "2.18",
+    "serverCommit": "22cfffe76001a3bd5a6e136cee753c77ab93abde",
+    "filehostType": 6,
+    "companionDestination": "/data/homebrew/ezremote-client/assets/whatsite-ps5.html",
+    "companionURL": "http://127.0.0.1:6701/whatsite-ps5.html",
+    "filesystemMount": "/data/homebrew/ezremote-client/assets/",
+    "source": "https://github.com/cy33hc/ps5-ezremote-server/blob/22cfffe76001a3bd5a6e136cee753c77ab93abde/source/server/http_server.cpp",
+    "destinationCheck": "websrv v0.34 on port8080: GET /fs/<existing-folder>/?fmt=json, array of name/mode/size entries",
+    "destinationCheckDocumentation": "https://github.com/ps5-payload-dev/websrv/blob/v0.34/src/fs.c",
+    "storageDetection": "GET http://<console>:8080/fs/mnt/?fmt=json. Offer only usbN/extN entries with mode m: websrv reports directories on a device different from the parent as m; d alone may be an empty mount point. Numbers are mount identifiers, not physical USB slot numbers. Directory listings do not prove write access or available space.",
+    "fileBrowser": "GET http://<console>:8080/fs/<validated-existing-folder>/ opens websrv's real HTML filesystem listing in a new tab. This is a read-only navigation action; saving remains an explicit separate click.",
+    "nativeFeed": "/console/ps5/payloads.json",
+    "nativeFeedDocumentation": "https://github.com/itsPLK/ps5-payload-manager/blob/v0.6.3/CUSTOM_REPOSITORIES.md"
+  },
+  "queue": {
+    "submit": "POST same-origin /download_url with JSON: type,url(origin),username,password,http_server_type,src_path(path+query),dest_path(full filename),size,id",
+    "acknowledgment": "Empty HTTP200 acknowledges submission only. Explicit result.success:false is rejected.",
+    "status": "GET same-origin /get_download_state. Re-read immediately before each download submission; a matching destination record prevents a duplicate POST. Network/unreadable-response submission failures remain uncertain and locked while later status reads can recover the actual record.",
+    "states": {"0":"pending","1":"downloading","2":"resumed","3":"failed","4":"receiver reports complete"},
+    "limitations": [
+      "Destination parents must already exist; the background download code does not create them.",
+      "Receiver-reported completion is not hash verification or proof of console compatibility.",
+      "Public HTTPS pages navigate to the installed local companion; they do not perform unsupported cross-origin POSTs to console services.",
+      "Desktop localhost preview addresses are not reachable from a different console. Catalogue files must be published, or served through a console-reachable LAN host for testing."
+    ]
+  },
+  "preparation": {
+    "downloadFolder": "/data/whatwhatboy or <verified mounted storage folder>/whatwhatboy. It is created only after an explicit action on the local client-origin preparation page; the background receiver cannot create it.",
+    "ps4ClientOrigin": "http://<console>:8080; pinned ezRemote Client 2.08 mounts filesystem / at URL /. The installed companion is available at /data/whatsite-ps4.html?prepare=1&folder=<encoded-folder>.",
+    "ps5ClientOrigin": "http://<console>:9090; pinned ezRemote Client 2.18 mounts filesystem / at URL /. The installed companion is available at /data/homebrew/ezremote-client/assets/whatsite-ps5.html?prepare=1&folder=<encoded-folder>.",
+    "originBoundary": "Client APIs are separate from background receiver 6701 and PS5 websrv 8080. Preparation executes same-origin on the client port, then offers explicit navigation back to the matching receiver URL carrying the verified folder. Public pages cannot call these write APIs. Configured non-default client ports use the native file-manager fallback.",
+    "list": "POST same-origin /__local__/list with JSON {path,onlyFolders:false}; response {result:[{name,type:'dir'|'file',size,rights,date}]}. A nonexistent directory can return an empty listing because the upstream handler ignores its FS::ListDir error, so root/ancestor existence is established from the parent's directory entry.",
+    "mkdir": "POST same-origin /__local__/createFolder with JSON {newPath}. The upstream MkDirs loops mkdir and ignores errors; success:true alone is insufficient. Check each existing parent, skip existing directories, refuse colliding files, create only missing child directories, and verify the new directory through its parent listing. Never create /data or /mnt/usbN placeholders. Never call remove, rename, edit or install APIs.",
+    "storage": "PS5 rechecks websrv mounted-device evidence before external creation/extraction. PS4 requires explicit confirmation of the actual device in ezRemote; directory names do not establish mount or port identity. Existing file/directory permissions and available space remain native-service checks.",
+    "extract": "POST same-origin /__local__/extract with JSON {item:<saved-full-archive-path>,destination:<output-parent>,folderName:<new-child-name>}. Supports ZIP/RAR/7z through libarchive. Never reuse an existing output child. Preserve the original archive. The API is synchronous and has no extraction-percentage endpoint; show an indeterminate operation state, then verify its reported result and a nonempty output listing. Do not retry automatically on lost connections or failed/partial output.",
+    "archiveSafety": "Pinned extractors reject basic absolute/traversal paths but restore symlinks and can overwrite output. Automatic extraction therefore requires item.archiveSafety from docs/console-archive-safety.json: reviewed/noLinks/relativePaths/noDevices/noAlternateStreams/noEncryptedEntries all true; sha256 and bytes match the archive; entryCount1..5000 and expandedBytes0..128MiB. The source archive entry audit rejects symlinks, hardlinks, device/special files, absolute paths, traversal, alternate streams and encrypted entries. Only reviewed archives <=32 MiB are read as same-origin ArrayBuffer and SHA-256 checked against their reviewed bytes before any output directories are created or extraction requested. Unreviewed/larger/changed archives keep native file-manager access; no containment guarantee is invented for them.",
+    "sources": [
+      "https://github.com/cy33hc/ps4-ezremote-client/blob/2.08/source/server/http_server.cpp",
+      "https://github.com/cy33hc/ps4-ezremote-client/blob/2.08/source/fs.cpp",
+      "https://github.com/cy33hc/ps4-ezremote-client/blob/2.08/source/zip_util.cpp",
+      "https://github.com/cy33hc/ps5-ezremote-client/blob/2.18/source/server/http_server.cpp",
+      "https://github.com/cy33hc/ps5-ezremote-client/blob/2.18/source/fs.cpp",
+      "https://github.com/cy33hc/ps5-ezremote-client/blob/2.18/source/zip_util.cpp"
+    ],
+    "verification": "Metadata-only request/response fixtures, native SHA-256 comparison vectors, no physical-console mutations. Directory and extraction operations have not been hardware tested. Native client behavior has no atomic no-overwrite flag, so output names are unique and checked before each explicit request."
+  },
+  "hostFindings": {
+    "goldhen": "GET http://127.0.0.1:9090/status then POST rawBIN to9090 runs a payload; it does not save it to disk. Instant loading is HTTP-only.",
+    "source": "https://github.com/hippie68/hippie68.github.io#instant-payload-loading-with-goldhen-20s-binloader-server"
+  },
+  "verification": "Unit contracts and a loopback metadata-only receiver fixture. No downloaded payloads were executed. Physical PS4/PS5 transfers have not been tested."
+}

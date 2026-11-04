@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-03",
+  "status": "Complete locally; original folder request corrected to actual file-list views",
+  "userClarification": "Use actual files in explorer-like rows; no folder navigation or repeated exploit-host names. Choose firmware for exploit routes. Browse all payload/game files independently of firmware; show source-pinned compatibility in a support popup and keep Load guards.",
+  "pages": [
+    "/hosts/ps4/",
+    "/hosts/ps5/"
+  ],
+  "views": [
+    "loaders",
+    "payloads",
+    "mods",
+    "tools",
+    "connection",
+    "sender"
+  ],
+  "changes": [
+    "Full-width Name/Format/Size/Actions file rows; filenames remain original",
+    "Top Back bar and compact category navigation; no sidebar or hero",
+    "Exploit view is Choose firmware; preferred reviewed route first and alternatives collapsed, with source attribution retained in requirements",
+    "Payload and game-mod browsing no longer hides files based on selected firmware; existing firmware lists, ranges, game/title/update pins and native transports unchanged",
+    "Restricted files have clickable firmware checks. Mismatched Load opens support details and refuses dispatch",
+    "Connection/sender/file/payload-manager workspaces retained; per-game version popups and four-column game pages preserved",
+    "Unknown compatibility is not labelled universal; loader prerequisites remain visible in Requirements",
+    "File-table labels added to all twenty generated language dictionaries"
+  ],
+  "verification": {
+    "focusedTests": {
+      "passed": 45,
+      "failed": 0,
+      "report": "docs/qa/host-files-focused-tests.txt"
+    },
+    "fullSuite": {
+      "tests": 671,
+      "passed": 668,
+      "failed": 3,
+      "report": "docs/qa/host-files-final-full-tests.txt",
+      "remaining": [
+        "Missing external original C:/Users/whatw/Desktop/plugins.ini",
+        "Older RAW GAME external-only expectation conflicts with concurrent source integration",
+        "Concurrent hosts/tools/esp-flasher page lacks expected global background integration"
+      ]
+    },
+    "siteAudit": {
+      "pages": 496,
+      "links": 57743,
+      "issues": 0,
+      "report": "docs/qa/host-files-site-audit.txt"
+    },
+    "browser": [
+      "PS4 and PS5 actual file rows inspected",
+      "PS4 firmware restriction popup opened without any Load",
+      "PS4 all-game file view inspected",
+      "No exploit execution or console contact"
+    ],
+    "screenshots": [
+      "docs/screenshots/ps4-host-file-list.png",
+      "docs/screenshots/ps5-host-file-list.png",
+      "docs/screenshots/ps4-file-support-popup.png"
+    ],
+    "sender": {
+      "id": "console-payload-sender-8b87dc630f9e",
+      "name": "console-payload-sender-1.9.1-8b87dc630f9e.zip",
+      "version": "1.9.1+8b87dc630f9e",
+      "url": "/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-8b87dc630f9e.zip",
+      "source": "https://whatwhatboy.com/downloads/helpers/console-payload-sender/console-payload-sender-1.9.1-8b87dc630f9e.zip",
+      "bytes": 100291819,
+      "sha256": "52360c03b297f5caf6b452f363982a7ff134ca409c67c7e627c62168fdc2090a",
+      "snapshot": "8b87dc630f9eeaefc64570c589836c66e0a11942029eff1e753abcf01dbefd9a",
+      "files": 287,
+      "payloads": 125,
+      "actions": 185,
+      "file": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\downloads\\helpers\\console-payload-sender\\console-payload-sender-1.9.1-8b87dc630f9e.zip",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\Console Payload Sender\\Helpers\\1.9.1+8b87dc630f9e\\console-payload-sender-1.9.1-8b87dc630f9e.zip",
+      "zipEntries": 287,
+      "manifestFiles": 286,
+      "allCRCAndSHA256Verified": true,
+      "publicAndFArchiveVerified": true,
+      "finalSourceSnapshotMatches": true
+    },
+    "archive": {
+      "mode": "write",
+      "backupRoot": "F:\\whatsite-backup-downloads-etc",
+      "items": 2263,
+      "fileRecords": 3387,
+      "presentFileRecords": 3387,
+      "missingFileRecords": 0,
+      "missingPaths": 0,
+      "otherUnavailableRecords": 0,
+      "availability": {
+        "present": 3387
+      }
+    }
+  },
+  "preservation": "No new payload/console catalogue IDs or receiver versions introduced by this layout change. Existing platform-specific/native artifacts and every old sender/archive retained.",
+  "preview": "http://127.0.0.1:8765/hosts/ps4/?view=payloads",
+  "published": false
+}

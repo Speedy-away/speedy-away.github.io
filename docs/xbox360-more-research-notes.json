@@ -1,0 +1,184 @@
+{
+  "scope": "xbox360-more",
+  "researchedAt": "2026-11-02",
+  "role": "Read-only primary-source research; no builds downloaded or executed by this researcher.",
+  "sourceMethod": "Browsed developer repositories/releases, then read fresh official GitHub expanded_assets HTML and raw README/catalogue JSON. GitHub API returned 403 rate limit. Cached web sidebar for Anarch360 was stale; fresh release HTML confirms v1.0.0.",
+  "generalLimits": [
+    "Do not infer any exact minimum dashboard/kernel from unsigned-XEX support. These developers generally do not publish one.",
+    "RGH/JTAG is explicitly required in the xenosworks release notes and Harissa documentation. Balatro360 explicitly also names ABadAvatar. CTR360 describes unsigned XEX support without asserting a specific exploit.",
+    "Inherited upstream README files for Starship, Dusklight and SwanStation describe other platforms. Use the Xbox360 fork release notes for these exact builds.",
+    "Approximate sizes below came from GitHub rendered asset lists. Only marked exactBytes values were confirmed with HTTP HEAD; archival intake must compute final byte counts and SHA-256.",
+    "Manual and store ZIPs are distinct ready-build assets; keep their names and hashes separate. The store catalogue has exact per-file XEX hashes that can verify the generic packages."
+  ],
+  "catalogue": {
+    "source": "https://github.com/xenosworks/homebrew-app-catalogue",
+    "raw": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/catalogue.json",
+    "serialObserved": 5,
+    "artworkSource": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/shots/",
+    "artworkCredit": "Xbox360 screenshots published by xenosworks in the Homebrew App Catalogue; port authors and original game creators retain their respective work.",
+    "artworkEvidence": "Catalogue README specifies screenshots of the app itself on console, PNG/JPEG 1280x720."
+  },
+  "entries": [
+    {
+      "id": "starship",
+      "name": "Starship for Xbox 360",
+      "category": "port",
+      "version": "0.2.0.0",
+      "release": "https://github.com/xenosworks/starship-xenon/releases/tag/xenon-0.2.0.0",
+      "asset": "https://github.com/xenosworks/starship-xenon/releases/download/xenon-0.2.0.0/Starship-Xbox360-0.2.0.0.zip",
+      "exactBytes": 6787372,
+      "sha256": "cfd6f0343d167869843f46d31165212249675e2ab9a28fa81e21b66947c56222",
+      "requires": "RGH/JTAG; own US Star Fox 64 ROM revision 1.0 or 1.1, .z64/.n64/.v64.",
+      "install": "Copy apps/starship to Hdd1:/apps/starship; put ROM beside starship.xex and start it. First run makes sf64.o2r and deletes supplied ROM. Existing sf64.o2r from Xbox360 0.1.0.0 or PC Starship2.0.0 also works.",
+      "storage": "Settings, saves and starship.log stay beside XEX. Keep frame interpolation at default30; developer reports scene-build stalls.",
+      "artwork": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/shots/starship.png"
+    },
+    {
+      "id": "dusklight",
+      "name": "Dusklight for Xbox 360",
+      "category": "port",
+      "version": "0.1.0.0",
+      "release": "https://github.com/xenosworks/dusklight-xenon/releases/tag/xenon-0.1.0.0",
+      "asset": "https://github.com/xenosworks/dusklight-xenon/releases/download/xenon-0.1.0.0/Dusklight-Xbox360-0.1.0.0.zip",
+      "approximateSize": "20.5 MB",
+      "sha256": "fab6cbf59aa476ba3f51d2c602be74d1f18a737124eff9ce87635412bf4aaecd",
+      "requires": "RGH/JTAG; own US GameCube Twilight Princess GZ2E01 as full uncompressed ISO named dusklight.iso, exactly1459978240 bytes; compressed or trimmed images unsupported.",
+      "install": "Copy apps/dusklight including res to Hdd1:/apps/dusklight; put dusklight.iso beside dusklight.xex. It closes immediately without disc.",
+      "storage": "Preserve TwilitRealm/Dusklight in app folder for saves/settings/shader cache. Leave Unlock Framerate off; shader pop-in is a documented issue.",
+      "artwork": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/shots/dusklight.png"
+    },
+    {
+      "id": "swanstation",
+      "name": "SwanStation for Xbox 360",
+      "category": "emulator",
+      "version": "0.1.1.0",
+      "release": "https://github.com/xenosworks/swanstation-xenon/releases/tag/xenon-0.1.1.0",
+      "asset": "https://github.com/xenosworks/swanstation-xenon/releases/download/xenon-0.1.1.0/SwanStation-Xbox360-0.1.1.0.zip",
+      "approximateSize": "2.11 MB",
+      "sha256": "810839e2f70f9a7528d1ef756b47c215445b1535af401e9f2200ed1cf4c42552",
+      "requires": "RGH/JTAG; own PlayStation BIOS such as SCPH1001.BIN and owned disc images.",
+      "install": "Hdd1:/apps/swanstation/swanstation.xex with BIOS beside it; images in apps/swanstation/games or USB games folder. Supports CUE+BIN,CHD,M3U,PBP,ISO,ECM,MDS,BIN.",
+      "storage": "Per-game memory cards in apps/swanstation/saves. Wait a few seconds after in-game save before quitting. 0.1.1.0 fixes prior memory-card loss; keep BIOS and games when updating.",
+      "artwork": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/shots/swanstation.png"
+    },
+    {
+      "id": "balatro360",
+      "name": "Balatro360",
+      "category": "port",
+      "version": "1.0.0.0",
+      "source": "https://github.com/dougieprishpreed/balatro360",
+      "release": "https://github.com/dougieprishpreed/balatro360/releases/tag/v1.0.0",
+      "asset": "https://github.com/dougieprishpreed/balatro360/releases/download/v1.0.0/Balatro360-Xbox360-1.0.0.0.zip",
+      "approximateSize": "2.22 MB",
+      "sha256": "c63dc4ccce4c848ac8c6b975a8326686c0f32e8334897660a783dc0196535c18",
+      "requires": "README explicitly supports RGH or ABadAvatar; own Steam PC Balatro.exe, or Balatro.love from inside Mac Balatro.app; about150MB free.",
+      "install": "Copy apps/balatro360 to Hdd1 root, or folder anywhere on USB; put game executable beside default.xex. First run extracts game files and deletes supplied Balatro.exe.",
+      "storage": "Saves in balatro360/save with PC-compatible profile folders. Back+Start held one second exits. Real console required by author; Xenia unsupported.",
+      "artwork": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/shots/balatro360.png"
+    },
+    {
+      "id": "ctr360",
+      "name": "CTR360",
+      "category": "port",
+      "version": "1.0.3.0",
+      "source": "https://github.com/dougieprishpreed/ctr360",
+      "release": "https://github.com/dougieprishpreed/ctr360/releases/tag/v1.0.3",
+      "asset": "https://github.com/dougieprishpreed/ctr360/releases/download/v1.0.3/CTR360-Xbox360-1.0.3.0.zip",
+      "approximateSize": "12 MB",
+      "sha256": "96fc653f711a9c94950eeb397de824c61fceb7be1c82ece71910cb5509c2ac99",
+      "requires": "Console that launches unsigned XEX, compatible dashboard such as Aurora, writable HDD/USB. Own NTSC-U SCUS-94426 disc BIN with2352-byte sectors and data track at byte0. Other regions/compressed images/extracted ISO unsupported.",
+      "install": "Put own BIN and CUE beside apps/ctr360/default.xex; allow610MB extra free. First launch makes assets/ctr-u.bin then deletes BIN/CUE; optional PC converter in manual ZIP.",
+      "storage": "Preserve memcards and ctr360.ini when updating. Back+Start exits. Catalogue's old needs sentence mentions PC converter; current README explicitly supports console conversion with this release.",
+      "artwork": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/shots/ctr360.png"
+    },
+    {
+      "id": "homebrew-app-store",
+      "name": "Homebrew App Store",
+      "category": "app",
+      "version": "0.1.0.0",
+      "source": "https://github.com/xenosworks/homebrew-app-store",
+      "asset": "https://github.com/xenosworks/homebrew-app-store/releases/download/v0.1.0.0/Homebrew-App-Store-Xbox360-0.1.0.0.zip",
+      "approximateSize": "1.8 MB",
+      "sha256": "43eaec792e733b5cacb85e299af93ac9bac00891e5abd816da65e9db0f929d33",
+      "staleCatalogueAsset": "https://github.com/xenosworks/homebrew-app-store/releases/download/v0.1.0.0/homebrew-app-store-0.1.0.0.zip",
+      "staleCatalogueStatus": "404 confirmed by parent archive intake; use actual manual ZIP listed by live expanded_assets HTML.",
+      "requires": "Unsigned-code console with writable HDD for hdd:/apps/<id>; network needed to obtain catalogue/downloads. No exact minimum kernel version stated.",
+      "install": "Keep cacert.pem beside homebrew_app_store.xex. Store installs apps under hdd:/apps/<id>. HTTPS catalogue signature and package/per-file SHA-256 are verified by app.",
+      "artwork": "https://raw.githubusercontent.com/xenosworks/homebrew-app-catalogue/main/shots/homebrew-app-store.png"
+    },
+    {
+      "id": "harissa64",
+      "name": "Harissa64",
+      "category": "emulator",
+      "version": "2.0.8",
+      "source": "https://github.com/kernel64/Harissa64",
+      "release": "https://github.com/kernel64/Harissa64/releases/tag/v2.0.8",
+      "asset": "https://github.com/kernel64/Harissa64/releases/download/v2.0.8/Harissa64-2.0.8.zip",
+      "approximateSize": "37.3 MB",
+      "sha256": "d181ce07e2b30a78e200cb4a1bea5906f0db38f54508ff109cbbd312aca3f8fc",
+      "requires": "RGH/JTAG Xbox360, controller and dashboard such as Aurora/FSD; own N64 games .z64/.n64/.v64/.zip. Most library remains untested by developer.",
+      "install": "Copy Harissa64 folder with default.xex to Hdd1:/Emulators/Harissa64; roms folder beside XEX. Files browser supports Hdd1,Usb0-2,Dvd; Y selects game folder.",
+      "storage": "Saves and states in saves/<game name> <code>; art/games caches artwork. Release contains art cover/background for Aurora asset manager.",
+      "artwork": "Use cover/background from release art folder after inspection; source README confirms these are Aurora artwork."
+    },
+    {
+      "id": "harissadc",
+      "name": "HarissaDC",
+      "category": "emulator",
+      "version": "0.1.0-dev",
+      "releaseChannel": "early development pre-release",
+      "source": "https://github.com/kernel64/HarissaDC",
+      "release": "https://github.com/kernel64/HarissaDC/releases/tag/v0.1.0-dev",
+      "asset": "https://github.com/kernel64/HarissaDC/releases/download/v0.1.0-dev/HarissaDC-0.1.0-dev.zip",
+      "approximateSize": "20.5 MB",
+      "sha256": "b49d608656832e2dad835f5d56ce4ee22c06b20538f7250269d4c7fd3a00bfb7",
+      "requires": "RGH/JTAG with Aurora/FSD/XeXMenu and owned Dreamcast dumps. No BIOS needed.",
+      "install": "Copy HarissaDC folder to Hdd:/Emulators/HarissaDC; games in games and launch default.xex. GDI+tracks,Redump GD-ROM CUE/BIN,CHDv5,ISO(data track only),7z(one game) supported.",
+      "storage": "config settings,saves states/VMU,art box art,cache extracted7z,harissadc.log. Known graphical glitches/slow cutscenes; CHD loading slower than GDI/CUE."
+    },
+    {
+      "id": "anarch360",
+      "name": "Anarch360",
+      "category": "homebrew game",
+      "version": "1.0.0",
+      "release": "https://github.com/Fhoughton/Anarch360/releases/tag/v1.0.0",
+      "asset": "https://github.com/Fhoughton/Anarch360/releases/download/v1.0.0/anarch360.xex",
+      "exactBytes": 3252224,
+      "sha256": "0652e4aaac97cbecf57ae8bbb1b87d812a80fd0595396d655b73f5c8fc01e23e",
+      "alternativeAsset": "https://github.com/Fhoughton/Anarch360/releases/download/v1.0.0/anarch360.7z",
+      "alternativeSha256": "c6b6bf40385d73f44aaf5da86733fab4b971e644130e2947fcb10ac3ceec86ee",
+      "requires": "README: hacked Xbox360 with Aurora, or Xenia. No exact minimum dashboard/kernel stated; do not infer temporary-exploit certification.",
+      "install": "Self-contained public-domain Doom-style game. Load anarch360.xex from a folder in the homebrew launcher. Original project says content is embedded/no external game assets needed.",
+      "releaseNotes": "First public release with graphics,sound,rumble,input; asset date2026-03-22.",
+      "artwork": "https://raw.githubusercontent.com/Fhoughton/Anarch360/xenon/media/screenshot1.png",
+      "artworkCredit": "Original Anarch game artwork by drummyfish, CC0, inherited in Fhoughton's Xbox360 port source. Label as Anarch game artwork; screenshot is not claimed to be captured on Xbox360."
+    }
+  ],
+  "additionalOriginalAuthorCandidates": [
+    {
+      "name": "Quad Carnage",
+      "source": "https://jaredlevi.itch.io/quad-carnage",
+      "fileName": "Quad Carnage for 360.zip",
+      "approximateSize": "83 MB",
+      "itchUploadId": "13221820",
+      "gameId": "3421567",
+      "status": "Original-author free ready Xbox360 download visible; no build downloaded. Obtain signed temporary download URL through normal itch download_url flow if included.",
+      "artwork": "https://img.itch.zone/aW1nLzIwNDE3Nzk0LnBuZw==/original/OYlTaY.png"
+    },
+    {
+      "name": "WowJay",
+      "source": "https://jaredlevi.itch.io/wowjay",
+      "fileName": "WOWJAY360.7z",
+      "approximateSize": "35 MB",
+      "gameId": "3810031",
+      "status": "Original-author name-your-price download; do not store expiring signed CDN URL as permanent website link. No download performed.",
+      "artwork": "https://img.itch.zone/aW1nLzIyNzE0OTc5LnBuZw==/original/3pRhV8.png"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "https://github.com/Cayama0811/Xbox360-Games",
+      "reason": "Source-only Unity5.4.1f projects. No ready release verified; do not fetch whole source repository."
+    }
+  ]
+}

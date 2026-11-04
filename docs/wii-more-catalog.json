@@ -1,0 +1,787 @@
+{
+  "schemaVersion": 1,
+  "scope": "wii-more",
+  "apps": [
+    {
+      "id": "wiimc",
+      "title": "WiiMC",
+      "version": "1.3.4",
+      "author": "Tantric, rodries",
+      "group": "Apps",
+      "topic": "Media player",
+      "description": "Browse and play supported local media with WiiMC’s Wii interface.",
+      "setup": "Copy the complete apps/wiimc directory and browse your SD/USB media from inside WiiMC. Keep settings and supplied XML files together. OSC’s package includes its documented online-media configuration treatment.",
+      "prerequisites": "Working Homebrew Channel; IOS58 is needed for WiiMC USB 2.0 support. Follow the model-specific guide if IOS setup is needed. DVD playback depends on drive support; newer Wii drives and vWii cannot read DVD video.",
+      "project": "https://github.com/dborth/wiimc",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Classic Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/wiimc/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/wiimc.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiimc/icon.png",
+        "credit": "Courtesy of WiiMC project / distributed by Open Shop Channel",
+        "sha256": "e4ea56586fbe4a36e18dab76a91985a52d0a8105417ee3b02db00369c2032999"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "wiimc",
+        "name": "wiimc-1.3.4.zip",
+        "version": "1.3.4",
+        "bytes": 6267819,
+        "sha256": "58b858bf30e82b0be7dd02f1b832acc725cf32fe2a9f4546ba6e745926ff2cf1",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiimc/wiimc.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/wiimc-1.3.4.zip",
+        "itemId": "wii-more-wiimc",
+        "platform": "Wii",
+        "category": [
+          "Tools"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/wiimc",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/wiimc.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "zip",
+          "repository": "dborth/wiimc",
+          "file": "WiiMC.*.New.Install.zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.554Z"
+    },
+    {
+      "id": "cavestory",
+      "title": "Cave Story",
+      "version": "1.0.1",
+      "author": "autumn_mnya",
+      "group": "Games",
+      "topic": "Cave Story freeware port · SD",
+      "description": "CSE2’s Wii port of the original freeware Cave Story, maintained by autumn_mnya.",
+      "setup": "Extract to the SD card root, keeping BOTH apps/cavestory and the root cavestory directory. Keep /cavestory/data and all supplied mod-data folders intact; this build contains explicit sd:/cavestory paths.",
+      "prerequisites": "Working Homebrew Channel, an SD card and the complete supplied freeware-data package. Wii Remote and Classic Controller are listed by OSC.",
+      "excludedModels": [
+        "wii_mini"
+      ],
+      "compatibilityNote": "OSC also lists Mini, but this executable uses SD-specific paths. This build is offered here for SD-equipped Wii/vWii; Mini/USB support is not claimed.",
+      "project": "https://autumn-mnya.github.io/games/cavestorywii/",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/cavestory/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/cavestory.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/cavestory/icon.png",
+        "credit": "Courtesy of Cave Story project / distributed by Open Shop Channel",
+        "sha256": "bb1337d6574c0d4af15d4e38c183f715626ee0a91e259e2c3186dcdaa9bc4ea2"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "cavestory",
+        "name": "cavestory-1.0.1.zip",
+        "version": "1.0.1",
+        "bytes": 9304946,
+        "sha256": "794840e77b4bd855286f95f3d4059a329653a2d357cfab074e93706f9ff506f0",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/cavestory/cavestory.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/cavestory-1.0.1.zip",
+        "itemId": "wii-more-cavestory",
+        "platform": "Wii",
+        "category": [
+          "Homebrew Games"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/cavestory",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/cavestory.oscmeta",
+        "upstream": {
+          "type": "url",
+          "format": "zip",
+          "location": "https://autumn-mnya.github.io/games/cavestorywii/files/cavestorywii_1.0.1.zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.560Z"
+    },
+    {
+      "id": "supertux",
+      "title": "SuperTux Wii",
+      "version": "0.1.4-wii-d.07",
+      "author": "Two devs, scanff, Arikado, DeltaResero",
+      "group": "Games",
+      "topic": "Platformer · Wii port",
+      "description": "A native Wii port of SuperTux Milestone 1, updated by DeltaResero.",
+      "setup": "Copy the complete apps/supertux folder. Keep /apps/supertux/data with boot.dol; the bundled levels, images, music and sounds are required.",
+      "prerequisites": "Working Homebrew Channel and the complete supplied game-data folder. Wii Remote controls are supported.",
+      "project": "https://github.com/DeltaResero/SuperTux-Wii",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/supertux/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/supertux.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/supertux/icon.png",
+        "credit": "Courtesy of SuperTux Wii project / distributed by Open Shop Channel",
+        "sha256": "1ec4361dcbf9640959cfcbd5194969feaf7b8e4c1f8b6c1e0e55efa56c53232e"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "supertux",
+        "name": "supertux-0.1.4-wii-d.07.zip",
+        "version": "0.1.4-wii-d.07",
+        "bytes": 10219416,
+        "sha256": "7cc4fbaeb1e33a3988266b6be19ac190970c7ec0d0ef4dd3cedb3352e95c73ad",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/supertux/supertux.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/supertux-0.1.4-wii-d.07.zip",
+        "itemId": "wii-more-supertux",
+        "platform": "Wii",
+        "category": [
+          "Homebrew Games"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/supertux",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/supertux.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "zip",
+          "repository": "DeltaResero/SuperTux-Wii",
+          "file": "SuperTux-Wii-v0.1.4-wii-d.*.zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.567Z"
+    },
+    {
+      "id": "snes9xgx",
+      "title": "Snes9x GX",
+      "version": "5.0.4",
+      "author": "Tantric",
+      "group": "Emulators",
+      "topic": "SNES / Super Famicom",
+      "description": "A native Wii SNES emulator with controller profiles and save support.",
+      "setup": "Copy apps/snes9xgx and the root snes9xgx folder. Place ROMs in /snes9xgx/roms; preserve /snes9xgx/saves and /snes9xgx/cheats when updating.",
+      "prerequisites": "Working Homebrew Channel and your own SNES ROM files. Game compatibility varies.",
+      "project": "https://github.com/dborth/snes9xgx",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/snes9xgx/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/snes9xgx.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/snes9xgx/icon.png",
+        "credit": "Courtesy of Snes9x GX project / distributed by Open Shop Channel",
+        "sha256": "9d50f6fe075f95296632f28c470c116290b28e78df95863bce175b9e7ae8b3ac"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "snes9xgx",
+        "name": "snes9xgx-5.0.4.zip",
+        "version": "5.0.4",
+        "bytes": 2988096,
+        "sha256": "b0df208477455d4d7bc8052f9c5698e780551bd14fb6cb0240974ee0e2704bc1",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/snes9xgx/snes9xgx.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/snes9xgx-5.0.4.zip",
+        "itemId": "wii-more-snes9xgx",
+        "platform": "Wii",
+        "category": [
+          "Emulators"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/snes9xgx",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/snes9xgx.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "zip",
+          "repository": "dborth/snes9xgx",
+          "file": "Snes9xGX-*[!GameCube].zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.570Z"
+    },
+    {
+      "id": "not64",
+      "title": "Not64",
+      "version": "2026-04-10",
+      "author": "Extrems",
+      "group": "Emulators",
+      "topic": "Nintendo 64",
+      "description": "Extrems’ Nintendo 64 emulator for Wii, with per-game compatibility and performance limits.",
+      "setup": "Copy apps/not64 and the root not64 folder. Place .z64, .n64 or .v64 ROMs in /not64/roms; saves belong in /not64/saves. Keep the supplied licences.",
+      "prerequisites": "Working Homebrew Channel and your own N64 ROMs. A Classic Controller or Nunchuk is useful for the N64 controls.",
+      "project": "https://github.com/extremscorner/not64",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/not64/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/not64.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/not64/icon.png",
+        "credit": "Courtesy of Not64 project / distributed by Open Shop Channel",
+        "sha256": "963249f8c65df10e5a0f2b0d6cd7b8cd99d27e114d7d3f4c483fe3a076b190b6"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "not64",
+        "name": "not64-2026-04-10.zip",
+        "version": "2026-04-10",
+        "bytes": 1852870,
+        "sha256": "73e31681dd2dbda5769cfd79638f9275ec9b660730950007a75afcc4ff8e7489",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/not64/not64.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/not64-2026-04-10.zip",
+        "itemId": "wii-more-not64",
+        "platform": "Wii",
+        "category": [
+          "Emulators"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/not64",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/not64.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "zip",
+          "repository": "extremscorner/not64",
+          "file": "mupen64-*.zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.571Z"
+    },
+    {
+      "id": "WiiSXRX",
+      "title": "WiiSXRX",
+      "version": "3.3 Beta",
+      "author": "NiuuS",
+      "group": "Emulators",
+      "topic": "PlayStation · FS build",
+      "description": "PlayStation emulation using the smaller FS build. This pinned 3.3 Beta package does not support CDDA audio.",
+      "setup": "Copy apps/WiiSXRX and the root WiiSXRX folder. Put disc images in /WiiSXRX/isos, saves in /WiiSXRX/saves and states in /WiiSXRX/savestates. Keep .cue references beside their .bin files. An optional dumped SCPH1001.BIN belongs in /WiiSXRX/bios.",
+      "prerequisites": "Working Homebrew Channel and your own supported disc image. HLE is available; a real BIOS is optional. Return to the emulator menu to save before exiting.",
+      "project": "https://github.com/niuus/WiiSXRX",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/WiiSXRX/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/wiisxrx.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/WiiSXRX/icon.png",
+        "credit": "Courtesy of WiiSXRX project / distributed by Open Shop Channel",
+        "sha256": "b2423ddd470c8b1d2b0572d0e570bb05e17434b49dea81b5ebaa555b6d584fa7"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "WiiSXRX",
+        "name": "WiiSXRX-3.3_Beta.zip",
+        "version": "3.3 Beta",
+        "bytes": 841768,
+        "sha256": "3ffc03c1e0035d942d8a1dcbe27e0a64b8bd124c138519d19db3c22d68e5b564",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/WiiSXRX/WiiSXRX.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/WiiSXRX-3.3_Beta.zip",
+        "itemId": "wii-more-WiiSXRX",
+        "platform": "Wii",
+        "category": [
+          "Emulators"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/WiiSXRX",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/WiiSXRX.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "zip",
+          "repository": "niuus/WiiSXRX",
+          "file": "WiiSXRX-*-FS.zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.572Z"
+    },
+    {
+      "id": "helium",
+      "title": "Helium Boy",
+      "version": "0.1.1",
+      "author": "Bertil",
+      "group": "Games",
+      "topic": "3D homebrew platformer · SD",
+      "description": "Bertil’s original balloon-powered platform game for Wii.",
+      "setup": "Copy the complete apps/helium folder to an SD card, including /apps/helium/data. Launch it from Homebrew Channel with its models, textures and sounds intact.",
+      "prerequisites": "Working Homebrew Channel, an SD card and a Wii Remote with Nunchuk, with all supplied data retained.",
+      "excludedModels": [
+        "wii_mini"
+      ],
+      "compatibilityNote": "OSC lists Mini, but historical setup documentation specifies front SD. USB data access for this preserved 0.1.1 package is unconfirmed, so it is excluded from the Mini filter.",
+      "project": "https://oscwii.org/library/app/helium",
+      "documentation": "https://wiibrew.org/wiki/Helium_boy",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/helium/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/helium.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/helium/icon.png",
+        "credit": "Courtesy of Helium Boy project / distributed by Open Shop Channel",
+        "sha256": "09e5692656a090ab818bb239e06ecc7bae1d9f77757765c42224e9eaea0b7904"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "helium",
+        "name": "helium-0.1.1.zip",
+        "version": "0.1.1",
+        "bytes": 3166200,
+        "sha256": "bab11081df9ceb062b352ee7f16cbb9a52f766beb8c879b440cf0d6b2c6ed0df",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/helium/helium.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/helium-0.1.1.zip",
+        "itemId": "wii-more-helium",
+        "platform": "Wii",
+        "category": [
+          "Homebrew Games"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/helium",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/helium.oscmeta",
+        "upstream": {
+          "type": "url",
+          "format": "zip",
+          "location": "http://www.beril.se/bin/heliumwii.zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.575Z"
+    },
+    {
+      "id": "wiixplorer",
+      "title": "WiiXplorer",
+      "version": "r259",
+      "author": "Dimok",
+      "group": "Apps",
+      "topic": "File manager",
+      "description": "Manage SD/USB files through a Wii file browser with keyboard and network features.",
+      "setup": "Copy apps/wiixplorer and launch it in Homebrew Channel. Select the SD or USB device in its file browser. Back up files before moving or replacing them; its NAND-writing features require particular care.",
+      "prerequisites": "Working Homebrew Channel. Preserve supplied meta.xml/AHB access flags. Network features require configured networking, which a stock Wii Mini lacks.",
+      "project": "https://sourceforge.net/projects/wiixplorer/",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "USB Keyboard",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/wiixplorer/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/wiixplorer.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiixplorer/icon.png",
+        "credit": "NeoRame / WiiXplorer / distributed by Open Shop Channel",
+        "sha256": "7de1d20e9ea0a71471a20c1ccef255df7e10977fdd4c3e30903ddca65a76c8e7"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "wiixplorer",
+        "name": "wiixplorer-r259.zip",
+        "version": "r259",
+        "bytes": 2452156,
+        "sha256": "2fb33da9736f08398cb59cb4029504094273b4fbcb57b634f8cec8a047ad11cd",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/wiixplorer/wiixplorer.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/wiixplorer-r259.zip",
+        "itemId": "wii-more-wiixplorer",
+        "platform": "Wii",
+        "category": [
+          "Tools"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/wiixplorer",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/wiixplorer.oscmeta",
+        "upstream": {
+          "type": "sourceforge_release",
+          "project": "wiixplorer",
+          "format": "zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.578Z"
+    },
+    {
+      "id": "vbagx",
+      "title": "Visual Boy Advance GX",
+      "version": "3.0.4",
+      "author": "Tantric",
+      "group": "Emulators",
+      "topic": "Game Boy / Color / Advance",
+      "description": "Run Game Boy, Game Boy Color and Game Boy Advance software on Wii.",
+      "setup": "Copy apps/vbagx and the root vbagx folder. Put ROMs in /vbagx/roms; keep /vbagx/saves and /vbagx/cheats beside it.",
+      "prerequisites": "Working Homebrew Channel and your own GB/GBC/GBA ROM files.",
+      "project": "https://github.com/dborth/vbagx",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/vbagx/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/vbagx.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/vbagx/icon.png",
+        "credit": "Courtesy of Visual Boy Advance GX project / distributed by Open Shop Channel",
+        "sha256": "315ffe3de1023d7a99adca7f66c6c761ca4c2928789a4dd3770931e0887d927c"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "vbagx",
+        "name": "vbagx-3.0.4.zip",
+        "version": "3.0.4",
+        "bytes": 3565078,
+        "sha256": "998202066ca46602b642e6f7343985160e3cabcc8e108c4815ab5c82dc5ca79d",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/vbagx/vbagx.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/vbagx-3.0.4.zip",
+        "itemId": "wii-more-vbagx",
+        "platform": "Wii",
+        "category": [
+          "Emulators"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/vbagx",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/vbagx.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "zip",
+          "repository": "dborth/vbagx",
+          "file": "VisualBoyAdvanceGX-*[!GameCube].zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.581Z"
+    },
+    {
+      "id": "mgba",
+      "title": "mGBA",
+      "version": "0.10.5",
+      "author": "Vicki Pfau (endrift)",
+      "group": "Emulators",
+      "topic": "Game Boy Advance / Game Boy",
+      "description": "The native Wii port of mGBA, with its own file browser and emulator interface.",
+      "setup": "Copy apps/mgba including meta.xml, icon.png and licences. Put your ROMs in a clearly named folder such as /roms/gba, then select them in mGBA’s browser; that example folder is your choice, not a required package path.",
+      "prerequisites": "Working Homebrew Channel and your own supported ROM files. This is the Wii DOL port, not the separate Wii U build.",
+      "project": "https://mgba.io/",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/mgba/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/mgba.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/mgba/icon.png",
+        "credit": "Courtesy of mGBA project / distributed by Open Shop Channel",
+        "sha256": "f192fd4d832225acc0c97ee61937c548f522f89786c5f4a5d91308409b440a05"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "mgba",
+        "name": "mgba-0.10.5.zip",
+        "version": "0.10.5",
+        "bytes": 990061,
+        "sha256": "44c65b34b01abfaa06dc084728886319a3561e54d0960a7b0cdba0bb4ecae91f",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/mgba/mgba.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/mgba-0.10.5.zip",
+        "itemId": "wii-more-mgba",
+        "platform": "Wii",
+        "category": [
+          "Emulators"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/mgba",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/mgba.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "7z",
+          "repository": "mgba-emu/mgba",
+          "file": "mGBA-*-wii.7z"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.582Z"
+    },
+    {
+      "id": "scummvm",
+      "title": "ScummVM",
+      "version": "2026.1.0",
+      "author": "The ScummVM Team",
+      "group": "Emulators",
+      "topic": "Adventure game engines",
+      "description": "Run supported adventure-game data through ScummVM’s native Wii port. The archived OSC package is pinned to 2026.1.0.",
+      "setup": "Copy the complete apps/scummvm directory, including plugins and theme/data files. Put each game’s required original files in its own folder on SD/USB, then use Add Game. Keep plugin files matched to this executable.",
+      "prerequisites": "Working Homebrew Channel and the game-specific data files listed by ScummVM. Games are separate from this engine. Check the project for newer upstream versions.",
+      "project": "https://www.scummvm.org/",
+      "documentation": "https://github.com/scummvm/scummvm/blob/master/dists/wii/READMII",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/scummvm/boot.elf",
+      "image": {
+        "path": "/assets/images/wii-more/scummvm.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/scummvm/icon.png",
+        "credit": "Courtesy of ScummVM project / distributed by Open Shop Channel",
+        "sha256": "ea5f730f776d9cf20ab3beae04ee19a818c11fdf26f94800d8ffbdfc6fdf0811"
+      },
+      "format": "ZIP · native Wii ELF",
+      "package": {
+        "slug": "scummvm",
+        "name": "scummvm-2026.1.0.zip",
+        "version": "2026.1.0",
+        "bytes": 73135442,
+        "sha256": "cf7a756cb4e153f59f79fe0ec444c2a0fb007ebb4c192a7de0c11bbaabcab4ef",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/scummvm/scummvm.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/scummvm-2026.1.0.zip",
+        "itemId": "wii-more-scummvm",
+        "platform": "Wii",
+        "category": [
+          "Emulators"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/scummvm",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/scummvm.oscmeta",
+        "upstream": {
+          "type": "manual"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.631Z"
+    },
+    {
+      "id": "fceugx",
+      "title": "FCE Ultra GX",
+      "version": "4.0.3",
+      "author": "Tantric",
+      "group": "Emulators",
+      "topic": "NES / Famicom",
+      "description": "Play NES and Famicom software with saves, cheats and controller mapping.",
+      "setup": "Copy both apps/fceugx and the root fceugx folder. Put your ROMs in /fceugx/roms; saves go in /fceugx/saves. Keep /fceugx/cheats for optional cheat files.",
+      "prerequisites": "Working Homebrew Channel and your own NES/Famicom ROM files.",
+      "project": "https://github.com/dborth/fceugx",
+      "advertisedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "supportedPlatforms": [
+        "wii",
+        "vwii",
+        "wii_mini"
+      ],
+      "peripherals": [
+        "Wii Remote",
+        "Nunchuk",
+        "Classic Controller",
+        "GameCube Controller",
+        "SDHC"
+      ],
+      "systemMenu": "OSC specifies no System Menu version for this app; a working Homebrew Channel for your console model is required.",
+      "bootPath": "/apps/fceugx/boot.dol",
+      "image": {
+        "path": "/assets/images/wii-more/fceugx.png",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/fceugx/icon.png",
+        "credit": "Courtesy of FCE Ultra GX project / distributed by Open Shop Channel",
+        "sha256": "9f5256eb6860db7e9082f3f8483563b62100cdaa7631bf1be62da0ea43d5a852"
+      },
+      "format": "ZIP · native Wii DOL",
+      "package": {
+        "slug": "fceugx",
+        "name": "fceugx-4.0.3.zip",
+        "version": "4.0.3",
+        "bytes": 2768607,
+        "sha256": "fb1c3391996ef3d7e91cf246baf5bbe2dcec4768c69bca5cc0b8e2440c6dee18",
+        "sourceUrl": "https://hbb1.oscwii.org/api/contents/fceugx/fceugx.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wii-more/fceugx-4.0.3.zip",
+        "itemId": "wii-more-fceugx",
+        "platform": "Wii",
+        "category": [
+          "Emulators"
+        ]
+      },
+      "sources": {
+        "distribution": "https://oscwii.org/library/app/fceugx",
+        "manifest": "https://raw.githubusercontent.com/OpenShopChannel/Apps/master/contents/fceugx.oscmeta",
+        "upstream": {
+          "type": "github_release",
+          "format": "zip",
+          "repository": "dborth/fceugx",
+          "file": "FCEUltraGX-*[!GameCube].zip"
+        }
+      },
+      "checkedAt": "2026-11-02T08:48:32.635Z"
+    }
+  ]
+}

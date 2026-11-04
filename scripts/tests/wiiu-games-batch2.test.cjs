@@ -1,0 +1,9 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path'),crypto=require('crypto');
+const root=path.resolve(__dirname,'../..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p))),hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+test('new game downloads preserve exact archived/public bytes and verified console or patch packages',()=>{
+ const c=read('docs/wiiu-games-batch2.json'),ready=c.items.filter(a=>a.status==='downloaded');assert.ok(ready.length>=12);assert.equal(new Set(c.items.map(x=>x.id)).size,c.items.length);
+ for(const a of ready){const f=a.file,b=fs.readFileSync(f.backupPath);assert.equal(b.length,f.bytes);assert.equal(hash(b),f.sha256);assert.equal(f.sourceUrl,a.url);assert.equal(f.version,a.version);assert.equal(a.inspection.crcPassed,true);assert.ok(a.inspection.entries>0);assert.ok(a.inspection.builds.length||a.category==='Game Mods');if(f.local)assert.equal(hash(fs.readFileSync(path.join(root,f.local))),f.sha256);if(a.id.startsWith('vwii-'))assert.ok(a.supportedPlatforms.includes('vwii'));if(a.md5)assert.equal(crypto.createHash('md5').update(b).digest('hex'),a.md5.padStart(32,'0'));assert.ok(!a.inspection.builds.some(b=>/\.nro$/i.test(b.path)));}
+});
+test('ready new resources are cross-linked while failed transfers never become download cards',()=>{
+ const c=read('docs/wiiu-games-batch2.json'),html=fs.readFileSync(path.join(root,'console/wiiu/game-downloads.html'),'utf8');assert.match(html,/\/languages\/i18n\.js\?v=3/);assert.match(html,/site-background\.js/);assert.doesNotMatch(html,/<(?:video|iframe)\b/);for(const a of c.items)assert.equal(html.includes('id="batch2-'+a.id+'"'),a.status==='downloaded');const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);assert.ok(fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').includes('https://whatwhatboy.com/console/wiiu/game-downloads.html'));
+});

@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const {page,section,ext,esc}=require('./build-console-guides.cjs');
+function build(){
+ const data=JSON.parse(fs.readFileSync(path.join(root,'docs/switch2-projects.json')));
+ const record=path.join(root,'docs/switch2-project-downloads.json'),files=fs.existsSync(record)?JSON.parse(fs.readFileSync(record)).files:[];
+ const content=data.projects.map(p=>section(p.id,p.title,`<article class="guide-resource" data-switch2-card>${require('./switch-card-images.cjs').switch2Project(p.id)}<p>${esc(p.summary)}</p><p><strong>Requirements:</strong> ${esc(p.requirements)}</p><p><strong>Setup:</strong> ${esc(p.setup)}</p><p>${esc(p.status)}</p><div class="guide-links">${files.filter(f=>f.project===p.id).map(f=>`<a href="${f.local}" download>Download ${esc(f.label)} · ${Math.round(f.bytes/1024)} KiB</a>`).join('')}${ext(p.url,'Project & instructions')}</div>${files.filter(f=>f.project===p.id).map(f=>`<details><summary>${esc(f.label)} · version ${esc(f.version)} · SHA-256</summary><code style="overflow-wrap:anywhere">${f.sha256}</code>${ext(f.sourceUrl,'Official release file')}</details>`).join('')}</article>`)).join('');
+ page('console/nintendo-switch-2.html','Nintendo Switch 2 Homebrew','CivSwitch, ns2jb, save backups and game / asset dumping tools. Check each project’s exact firmware, game and host requirements.','/assets/images/platform-logos/nintendo-switch-2.svg',data.projects.map(p=>['#'+p.id,p.title]),'<span id="start"></span><span id="resources"></span><span id="native-research"></span>'+content+'<span id="pc-research"></span><span id="sources"></span>','#civswitch','Browse projects');
+ const file=path.join(root,'console/nintendo-switch-2.html');let html=fs.readFileSync(file,'utf8').replace('class="console-guide"','class="console-guide switch2-page"').replace('</head>','<link rel="stylesheet" href="/assets/switch2-console.css?v=2"></head>');
+ for(const p of data.projects){if(!p.guideSteps)continue;const guide=`<div class="switch2-project-guide" id="${p.id}-setup"><h3>${esc(p.title)} setup guide</h3><ol class="guide-steps">${p.guideSteps.map(([title,text])=>`<li><strong>${esc(title)}</strong><p>${esc(text)}</p></li>`).join('')}</ol><p>Packages are pinned script/source snapshots, not upstream binary releases. GitLab snapshots are reconstructed from unchanged, Git-hash-verified files when upstream ZIP downloads are unavailable. Required runtimes are listed above; no console execution was performed here.</p></div>`;const start=html.indexOf('id="'+p.id+'"');const end=html.indexOf('</section>',start);if(start<0||end<0)throw Error('Missing project section');html=html.slice(0,end)+guide+html.slice(end);}
+ for(const p of data.projects){if(!p.upstreamDownloads)continue;const links='<div class="guide-links">'+p.upstreamDownloads.map(d=>ext(d.url,d.label)).join('')+'</div>';const end=html.indexOf('</section>',html.indexOf('id="'+p.id+'"'));html=html.slice(0,end)+links+html.slice(end);}
+ html=html.replaceAll('Official release file','Upstream package source');
+ html=html.replace(/<img\b[^>]*src="\/assets\/images\/platform-logos\/nintendo-switch-2\.svg"[^>]*>/g,'').replace('guide-hero-grid','guide-hero-grid guide-hero-text');
+ fs.writeFileSync(file,require('./apply-site-background.cjs').improve(html,'console/nintendo-switch-2.html'));
+ const topicBuilder=path.join(__dirname,'build-console-topic-hubs.cjs');
+ if(fs.existsSync(topicBuilder)){const topics=require(topicBuilder),platform=topics.platforms().find(p=>p.id==='nintendo-switch-2');if(platform)topics.buildPlatform(platform);}
+ console.log('Built four requested Switch 2 projects.');
+}if(require.main===module)build();module.exports={build};

@@ -1,0 +1,367 @@
+{
+  "reviewed": "2026-11-01",
+  "method": "Exact links observed on primary project/download pages; no payload files downloaded or executed by the research agent.",
+  "sources": [
+    {
+      "title": "Script Hook V",
+      "page": "https://www.dev-c.com/gtav/scripthookv/",
+      "downloads": [
+        {
+          "title": "Script Hook V v3889.0 / 1158.13",
+          "url": "https://www.dev-c.com/files/ScriptHookV_3889.0_1158.13.zip",
+          "filename": "ScriptHookV_3889.0_1158.13.zip",
+          "bytes": 1722210
+        },
+        {
+          "title": "Script Hook V SDK",
+          "url": "https://www.dev-c.com/files/ScriptHookV_SDK_1.0.617.1a.zip",
+          "filename": "ScriptHookV_SDK_1.0.617.1a.zip"
+        }
+      ],
+      "notes": "Plain Node fetch reads the page successfully. Adding a generic Mozilla User-Agent together with a broad custom Accept header produced HTTP 406. HEAD on binary with Referer set to the project page returned application/zip, 200. Web text lookup redirects binary to the site root."
+    },
+    {
+      "title": "Script Hook RDR2",
+      "page": "https://www.dev-c.com/rdr2/scripthookrdr2/",
+      "downloads": [
+        {
+          "title": "Script Hook RDR2 v1.0.1491.17",
+          "url": "https://www.dev-c.com/files/ScriptHookRDR2_1.0.1491.17.zip",
+          "filename": "ScriptHookRDR2_1.0.1491.17.zip",
+          "bytes": 294614
+        },
+        {
+          "title": "Script Hook RDR2 SDK",
+          "url": "https://www.dev-c.com/files/ScriptHookRDR2_SDK_1.0.1207.73.zip",
+          "filename": "ScriptHookRDR2_SDK_1.0.1207.73.zip"
+        }
+      ],
+      "notes": "HEAD on binary with Referer set to the project page returned application/zip, 200."
+    },
+    {
+      "title": "Rampage Trainer",
+      "page": "https://www.gta5-mods.com/scripts/rampage-trainer",
+      "downloads": [
+        {
+          "title": "Rampage 1.4.7 Legacy",
+          "downloadPage": "https://www.gta5-mods.com/scripts/rampage-trainer/download/198648",
+          "url": "https://files.gta5-mods.com/uploads/rampage-trainer/eebac5-Rampage_Legacy_1.0.3889.0.zip",
+          "filename": "Rampage_Legacy_1.0.3889.0.zip"
+        },
+        {
+          "title": "Rampage 1.5E Enhanced",
+          "downloadPage": "https://www.gta5-mods.com/scripts/rampage-trainer/download/198647",
+          "url": "https://files.gta5-mods.com/uploads/rampage-trainer/f9af13-Rampage_Enhanced_1.0.1158.13.zip",
+          "filename": "Rampage_Enhanced_1.0.1158.13.zip"
+        }
+      ],
+      "notes": "Both current variants expose public direct ZIP links on their download confirmation pages. Login/Register links are present but not required to obtain the direct URL."
+    },
+    {
+      "title": "VisualV",
+      "page": "https://www.gta5-mods.com/misc/visualv",
+      "downloads": [
+        {
+          "title": "VisualV 2.0.640 Enhanced",
+          "downloadPage": "https://www.gta5-mods.com/misc/visualv/download/198748",
+          "url": "https://files.gta5-mods.com/uploads/visualv/b59328-VisualV%202.0.640.7z",
+          "filename": "VisualV 2.0.640.7z"
+        },
+        {
+          "title": "VisualV 1.0.630 Legacy",
+          "downloadPage": "https://www.gta5-mods.com/misc/visualv/download/198747",
+          "url": "https://files.gta5-mods.com/uploads/visualv/e3b71c-VisualV%201.0.630.7z",
+          "filename": "VisualV 1.0.630.7z"
+        }
+      ],
+      "notes": "Both current variants expose public direct 7z links on their download confirmation pages. Listing displays approximately 73.3 MB Enhanced and 196 MB Legacy."
+    },
+    {
+      "title": "multiMAN MOD v4.91",
+      "page": "https://store.brewology.com/ahomebrew.php?brewid=24",
+      "downloads": [
+        {
+          "title": "multiMAN MOD v4.91",
+          "url": "https://store.brewology.com/get/homebrew.php?fid=2412&id=24"
+        }
+      ],
+      "barrier": "The public listing loads, but its observed Download endpoint returns HTTP 403 in web lookup and direct network requests. No actual binary URL retrieved."
+    },
+    {
+      "title": "PKGi PS3 v1.3",
+      "page": "https://store.brewology.com/ahomebrew.php?brewid=320",
+      "downloads": [
+        {
+          "title": "PKGi PS3 v1.3",
+          "url": "https://store.brewology.com/get/homebrew.php?fid=2462&id=320"
+        }
+      ],
+      "alternativeReleasePage": "https://github.com/bucanero/pkgi-ps3/releases",
+      "barrier": "The public listing loads, but its observed Download endpoint returns HTTP 403. Its Developer Site link points to the GitHub release page, where v1.3.0 is listed."
+    },
+    {
+      "title": "ControlConsole API 2.80 REV14",
+      "page": "https://www.enstoneworld.com/articles/view/15/ControlConsole_API",
+      "downloads": [
+        {
+          "title": "CCAPI 2.80 REV14 Package",
+          "url": "https://www.enstoneworld.com/downloads/index/41/CCAPI_2_80_REV14_Package",
+          "filename": "CcApi_package_2.80_Rev14.rar"
+        },
+        {
+          "title": "CCAPI 2.80 REV14 Developer Package",
+          "url": "https://www.enstoneworld.com/downloads/index/42/CCAPI_2_80_REV14_Package__developer_"
+        }
+      ],
+      "notes": "Public package endpoint responds HTTP 200 application/octet-stream with the stated attachment filename. Developer endpoint also serves application/octet-stream. No account required for the observed endpoints."
+    },
+    {
+      "title": "ImgBurn 2.5.8.0",
+      "page": "https://www.imgburn.com/index.php?act=download",
+      "downloads": [
+        {
+          "title": "ImgBurn 2.5.8.0 official Mirror 7",
+          "url": "https://download.imgburn.com/SetupImgBurn_2.5.8.0.exe",
+          "filename": "SetupImgBurn_2.5.8.0.exe"
+        }
+      ],
+      "publishedHashes": {
+        "crc32": "1AF3CD36",
+        "md5": "4BF2B8F4B46385BFDA4D65E423CFB868",
+        "sha1": "6A3D20796E1FCD4169D5D339AF6E491DCEA3367C"
+      }
+    },
+    {
+      "title": "WinAPIOverride",
+      "page": "http://jacquelin.potier.free.fr/winapioverride32/",
+      "downloads": [
+        {
+          "title": "WinAPIOverride binaries",
+          "url": "http://jacquelin.potier.free.fr/exe/winapioverride32_bin.zip",
+          "filename": "winapioverride32_bin.zip",
+          "bytes": 35547613
+        },
+        {
+          "title": "WinAPIOverride source code",
+          "url": "http://jacquelin.potier.free.fr/src/winapioverride32_src.zip",
+          "filename": "winapioverride32_src.zip",
+          "bytes": 12370698
+        }
+      ],
+      "notes": "HTTP project page loads and exposes both links. HTTPS timed out in web lookup. HEAD requests to the observed HTTP ZIP URLs return 200 application/zip."
+    },
+    {
+      "title": "PS4SX2 Emu 01.00 experimental alpha",
+      "page": "https://github.com/Phoenixx1202/PS4SX2/releases",
+      "downloads": [
+        {
+          "title": "PS4SX2 Emu 01.00 PS4 package",
+          "url": "https://github.com/Phoenixx1202/PS4SX2/releases/download/01.00/IV0000-PCSX20007_00-PS4SX2EMU0000001.pkg",
+          "filename": "IV0000-PCSX20007_00-PS4SX2EMU0000001.pkg",
+          "bytes": 53149696
+        }
+      ],
+      "evidence": "Exact asset link observed in https://github.com/Phoenixx1202/PS4SX2/releases/expanded_assets/01.00 ; HEAD returned 200 application/octet-stream.",
+      "notes": "Repository is present and the release is a pre-release. GitHub /releases/latest can return 404 when no non-prerelease exists; this does not indicate a removed repository. API currently returns 403 with x-ratelimit-remaining:0, so HTML release/expanded_assets inspection was used."
+    },
+    {
+      "title": "RPCS3 port for PS4 v0.40 pre-release",
+      "page": "https://github.com/RoberixStudios/rpcs3-port-for-ps4/releases",
+      "downloads": [
+        {
+          "title": "RPCS3 port for PS4 v0.40 package",
+          "url": "https://github.com/RoberixStudios/rpcs3-port-for-ps4/releases/download/v0.40/RPCS3.PORT.FOR.PS4.v0.40.by.Roberix.Studio.pkg",
+          "filename": "RPCS3.PORT.FOR.PS4.v0.40.by.Roberix.Studio.pkg",
+          "bytes": 138936320
+        }
+      ],
+      "evidence": "Exact asset link observed in https://github.com/RoberixStudios/rpcs3-port-for-ps4/releases/expanded_assets/v0.40 ; HEAD returned 200 application/octet-stream.",
+      "notes": "Repository is present and the release is a pre-release. GitHub /releases/latest can return 404 when no non-prerelease exists. This is the specified third-party PS4 port, not the PC RPCS3 emulator. Package exceeds 100 MiB."
+    },
+    {
+      "title": "PS5 RetroArch v4.0.0-beta-4",
+      "page": "https://github.com/mihawk-99/PS5_RetroArch/releases",
+      "downloads": [
+        {
+          "title": "PS5 RetroArch v4.0.0-beta-4 archive",
+          "url": "https://github.com/mihawk-99/PS5_RetroArch/releases/download/v4.0.0-beta-4/PS5_RetroArch-v4.0.0-beta-4.zip",
+          "filename": "PS5_RetroArch-v4.0.0-beta-4.zip",
+          "bytes": 1553672845
+        },
+        {
+          "title": "PS5 RetroArch archive checksum",
+          "url": "https://github.com/mihawk-99/PS5_RetroArch/releases/download/v4.0.0-beta-4/PS5_RetroArch-v4.0.0-beta-4.zip.sha256",
+          "filename": "PS5_RetroArch-v4.0.0-beta-4.zip.sha256"
+        }
+      ],
+      "evidence": "Exact asset links observed in https://github.com/mihawk-99/PS5_RetroArch/releases/expanded_assets/v4.0.0-beta-4 ; archive HEAD returned 200 application/octet-stream.",
+      "notes": "The audit failure was a download timeout, not a removed asset. Archive is approximately 1.45 GiB and needs a long streaming download timeout. Release explicitly says games, BIOS files, firmware and keys are not included."
+    },
+    {
+      "title": "Cheat Engine public binaries and GitHub 7.5 source",
+      "page": "https://github.com/cheat-engine/cheat-engine/releases",
+      "downloads": [
+        {
+          "title": "Cheat Engine 7.5 source ZIP",
+          "url": "https://github.com/cheat-engine/cheat-engine/archive/refs/tags/7.5.zip",
+          "filename": "cheat-engine-7.5-source.zip",
+          "type": "source"
+        },
+        {
+          "title": "Cheat Engine 7.5 source tar.gz",
+          "url": "https://github.com/cheat-engine/cheat-engine/archive/refs/tags/7.5.tar.gz",
+          "filename": "cheat-engine-7.5-source.tar.gz",
+          "type": "source"
+        },
+        {
+          "title": "Cheat Engine 7.7 public Windows installer",
+          "url": "https://d3gpt2g9zwv61d.cloudfront.net/jgO7Kbyhc.exe",
+          "filename": "CheatEngine-7.7-public-installer.exe",
+          "version": "7.7",
+          "sourcePage": "https://cheatengine.org/downloads.php"
+        }
+      ],
+      "evidence": "GitHub 7.5 expanded_assets lists only source ZIP/tar.gz and no binary release assets. Official https://cheatengine.org/ and https://cheatengine.org/downloads.php link the exact CloudFront URL and identify it as the current public Windows 7.7 release.",
+      "notes": "Current GitHub API 403 responses are rate limiting (remaining:0), not repository removal. Do not label the 7.7 binary as 7.5. Official downloads page says the public installer includes optional software recommendations; the clean installer without those recommendations is Patreon-only. No Patreon-gated binary was obtained."
+    },
+    {
+      "title": "shadPS4 0.21.0 Windows CLI emulator",
+      "page": "https://shadps4.net/",
+      "downloads": [
+        {
+          "title": "shadPS4 0.21.0 Windows SDL CLI",
+          "url": "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.21.0/shadps4-win64-sdl-0.21.0.zip",
+          "filename": "shadps4-win64-sdl-0.21.0.zip",
+          "bytes": 31725856
+        }
+      ],
+      "evidence": "Official shadps4.net links github.com/shadps4-emu/shadPS4. Its latest stable release resolves to tag v.0.21.0; exact asset observed in expanded_assets/v.0.21.0 and HEAD returned200.",
+      "notes": "This archive contains the emulator executable without a GUI. Official downloads page distinguishes this from the separate Qt GUI launcher; label the actual CLI product. Do not substitute the daily prerelease."
+    },
+    {
+      "title": "LOOT 0.29.2 Windows",
+      "page": "https://loot.github.io/",
+      "downloads": [
+        {
+          "title": "LOOT 0.29.2 Windows x64 portable",
+          "url": "https://github.com/loot/loot/releases/download/0.29.2/loot_0.29.2-win64.7z",
+          "filename": "loot_0.29.2-win64.7z",
+          "bytes": 17720978
+        }
+      ],
+      "evidence": "Official homepage Download LOOT links github.com/loot/loot/releases/latest, resolving to tag0.29.2. Exact Windows asset observed in expanded_assets/0.29.2; HEAD200."
+    },
+    {
+      "title": "Vortex 2.9.0 Windows",
+      "page": "https://www.nexusmods.com/about/vortex/",
+      "downloads": [
+        {
+          "title": "Vortex 2.9.0 Windows installer",
+          "url": "https://nexusmodsapp.nexusmods.com/vortex-setup-2.9.0.exe",
+          "filename": "vortex-setup-2.9.0.exe",
+          "bytes": 378742064
+        }
+      ],
+      "evidence": "Original official page redirects to https://www.nexusmods.com/vortex . Its public Download for Windows button links https://api.nexusmods.com/vortex/download which redirects to this exact installer. HEAD200 application/x-msdos-program.",
+      "notes": "Public application installer, distinct from individual Nexus-hosted mods that require login. File exceeds100MiB."
+    },
+    {
+      "title": "Wrye Bash 315 standalone Windows",
+      "page": "https://www.nexusmods.com/oblivion/mods/22368",
+      "downloads": [
+        {
+          "title": "Wrye Bash 315 Windows standalone",
+          "url": "https://github.com/wrye-bash/wrye-bash/releases/download/v315/Wrye.Bash.315.-.Standalone.Executable.7z",
+          "filename": "Wrye.Bash.315.-.Standalone.Executable.7z",
+          "bytes": 50457474
+        }
+      ],
+      "evidence": "Official wrye-bash.github.io documentation links the wrye-bash/wrye-bash GitHub issue tracker, identifying the same project repository. Its latest stable release is v315. Exact standalone asset observed in expanded_assets/v315; HEAD200.",
+      "notes": "Public official GitHub alternative to the existing Nexus listing, without a Nexus login flow."
+    },
+    {
+      "title": "System Informer 4.0.26241.138",
+      "page": "https://processhacker.sourceforge.io/",
+      "downloads": [
+        {
+          "title": "System Informer 4.0.26241.138 portable Windows binaries",
+          "url": "https://github.com/winsiderss/systeminformer/releases/download/v4.0.26241.138/systeminformer-4.0.26241.138-bin.zip",
+          "filename": "systeminformer-4.0.26241.138-bin.zip",
+          "bytes": 22089103
+        }
+      ],
+      "evidence": "The existing official Process Hacker URL redirects to https://systeminformer.io/ . That site links github.com/winsiderss/systeminformer. Exact stable asset observed in expanded_assets/v4.0.26241.138; HEAD200.",
+      "notes": "Label this System Informer, the successor reached from the old project URL, not Process Hacker3.0."
+    },
+    {
+      "title": "RetroArch 1.22.2 Windows x64",
+      "page": "https://www.retroarch.com/",
+      "downloads": [
+        {
+          "title": "RetroArch 1.22.2 Windows x64 portable",
+          "url": "https://buildbot.libretro.com/stable/1.22.2/windows/x86_64/RetroArch.7z",
+          "filename": "RetroArch-1.22.2-Windows-x64.7z",
+          "bytes": 202509078
+        }
+      ],
+      "evidence": "Official https://www.retroarch.com/platforms.html lists stable1.22.2 and links this exact archive under Windows11/10/8.1/8/7 Download64bit. HEAD200 application/x-7z-compressed.",
+      "notes": "Windows application only, not a Lakka/Recalbox OS image. File exceeds100MiB. Existing card1.16.0 needs updating if this archive is linked."
+    },
+    {
+      "title": "MSI Afterburner",
+      "page": "https://www.msi.com/Landing/afterburner/",
+      "downloads": [],
+      "publisherFlow": {
+        "script": "https://storage-asset.msi.com/event/2024/GNP/afterburner/js/main-2024.js",
+        "tokenEndpoint": "https://www.msi.com/api/v1/get_token?date=YYYYMMDDHH",
+        "archiveBase": "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=",
+        "tokenResult": "data[0]",
+        "filename": "MSIAfterburnerSetup.zip",
+        "bytes": 44244932,
+        "referer": "https://www.msi.com/Landing/afterburner/"
+      },
+      "evidence": "Official page labels the Final button4.6.6 and its linked main-2024.js shows the public token flow. Replicating that normal flow with the token concatenated raw returned200 application/zip,44244932bytes. Body was immediately canceled, not saved.",
+      "notes": "Do not encodeURIComponent the token; raw concatenation exactly matches the publisher script. No token values are stored in this map. MSI_VGA_Norton360_online.zip is a separate promotion and must not be treated as Afterburner.",
+      "version": "4.6.6 Final",
+      "resolver": "msi-token",
+      "tokenEndpoint": "https://www.msi.com/api/v1/get_token",
+      "downloadBase": "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__="
+    },
+    {
+      "title": "Apollo Save Tool PS4 2.4.0",
+      "page": "https://github.com/bucanero/apollo-ps4/releases",
+      "downloads": [
+        {
+          "url": "https://github.com/bucanero/apollo-ps4/releases/download/v2.4.0/IV0000-APOL00004_00-APOLLO0000000PS4.pkg",
+          "filename": "IV0000-APOL00004_00-APOLLO0000000PS4.pkg",
+          "publishedSha256": "ec34add4d2857fa3c947ed5666735a5c35ddb3e47d8be925b36e9ad408f7c090"
+        }
+      ],
+      "evidence": "https://github.com/bucanero/apollo-ps4/releases/tag/v2.4.0"
+    },
+    {
+      "title": "Apollo Save Tool PS3 2.4.0",
+      "page": "https://github.com/bucanero/apollo-ps3/releases",
+      "downloads": [
+        {
+          "url": "https://github.com/bucanero/apollo-ps3/releases/download/v2.4.0/apollo-ps3.pkg",
+          "filename": "apollo-ps3.pkg",
+          "publishedSha256": "adae4a71f08b1c2c8e16924ca27dce79a15453d28f19dfc9e16c04d1bad9e9af"
+        }
+      ],
+      "evidence": "https://github.com/bucanero/apollo-ps3/releases/tag/v2.4.0"
+    },
+    {
+      "title": "Apollo Save Tool VITA 2.4.0",
+      "page": "https://github.com/bucanero/apollo-vita/releases",
+      "downloads": [
+        {
+          "url": "https://github.com/bucanero/apollo-vita/releases/download/v2.4.0/apollo-vita.vpk",
+          "filename": "apollo-vita.vpk",
+          "publishedSha256": "25a3525efc49dd912b97b112c9b20cb333020b663cb74dc060de8697292d262a"
+        }
+      ],
+      "evidence": "https://github.com/bucanero/apollo-vita/releases/tag/v2.4.0"
+    }
+  ]
+}

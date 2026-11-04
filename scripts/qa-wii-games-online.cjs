@@ -1,0 +1,36 @@
+// Installed Edge, isolated local-only UI checks. Never launches a downloaded app.
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),{spawnSync}=require('node:child_process');
+const root=path.resolve(__dirname,'..'),preview=process.env.WII_PREVIEW_BASE||'http://127.0.0.1:8765';
+const work=path.join(root,'.playwright-cli');fs.mkdirSync(work,{recursive:true});fs.mkdirSync(path.join(root,'docs/screenshots'),{recursive:true});
+const harness=`<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;overflow:hidden}iframe{display:block;border:0}pre{display:none}</style></head><body><pre id="result">pending</pre><script>
+localStorage.setItem('scooby.lang','en');var p=new URLSearchParams(location.search),frame=document.createElement('iframe');frame.style.width=p.get('width')+'px';frame.style.height=p.get('height')+'px';
+frame.onload=function(){var d=frame.contentDocument;d.querySelectorAll('img').forEach(function(x){x.loading='eager';});setTimeout(function(){try{var w=frame.contentWindow,checks=[],failures=[];function check(ok,label){checks.push(label);if(!ok)failures.push(label);}var cards=Array.from(d.querySelectorAll('[data-wii-mod]'));function visible(){return cards.filter(function(c){return w.getComputedStyle(c).display!=='none';});}
+check(cards.length===Number(p.get('expected')),'Correct scoped resource count');check(visible().length===cards.length,'All scoped resources visible initially');check(!d.querySelector('.wii-game-unavailable'),'All listed packages have completed archival');
+var search=d.getElementById('wiiModSearch'),group=d.getElementById('wiiModGroup');function input(t){search.value=t;search.dispatchEvent(new w.Event('input'));}
+input(cards[0].querySelector('h3').textContent);check(visible().length===1,'Name search visibly narrows to one resource');
+input('no matching wii resource 90182');check(visible().length===0&&!d.getElementById('wiiModEmpty').hidden,'Empty state visibly shown');d.getElementById('wiiModClear').click();
+if(group.options.length>2){group.selectedIndex=1;group.dispatchEvent(new w.Event('change'));check(visible().length>0&&visible().length<cards.length,'Collection filter visibly narrows the list');}
+d.getElementById('wiiModClear').click();search.blur();check(visible().length===cards.length&&group.value==='all'&&!search.value,'Clear restores all resources');
+var details=cards[0].querySelector('details'),summary=details.querySelector('summary');summary.click();check(details.open&&details.textContent.includes('SHA-256'),'Setup details open with requirements and checksum');check(d.documentElement.scrollWidth<=w.innerWidth+1,'Expanded setup fits viewport');summary.click();check(!details.open,'Setup details close');
+check(!d.querySelector('video,iframe[src*="youtube"],embed'),'No videos added');check(d.querySelectorAll('link[href*="/assets/mobile.css"]').length===1&&!!d.querySelector('script[src="/languages/i18n.js?v=3"]')&&!!d.querySelector('script[src*="/assets/site-background.js"]'),'Shared mobile/language/background integration');
+check(Array.from(d.querySelectorAll('.wii-game-art img')).every(function(x){return x.complete&&x.naturalWidth>0;}),'Project artwork loads');
+check(!d.querySelector('a[href*="dnspatchhttps"]'),'Malformed combined Wiimmfi link absent');
+if(p.get('page')==='online'){check(!!d.querySelector('a[href="https://wiimmfi.de/patcher/dnspatch"]')&&!!d.querySelector('a[href="https://wiimmfi.de/patcher/disc"]'),'Both exact user Wiimmfi links present');check(d.getElementById('wiimmfi-dns').textContent.includes('95.217.77.181')&&d.getElementById('wiimmfi-dns').textContent.includes('1.1.1.1'),'Wiimmfi DNS recipe has its own values');check(d.getElementById('choose-service').textContent.includes('Retro WFC')&&d.getElementById('choose-service').textContent.includes('WiiLink WFC'),'Distinct online services named');}
+var target=d.getElementById(p.get('anchor')||'downloads');d.documentElement.style.scrollBehavior='auto';w.scrollTo(0,w.scrollY+target.getBoundingClientRect().top-(w.innerWidth<760?88:20));
+check(d.documentElement.scrollWidth<=w.innerWidth+1,'No horizontal overflow');check(visible().every(function(x){var r=x.getBoundingClientRect();return r.left>=-1&&r.right<=w.innerWidth+1;}),'Cards fit the viewport');
+document.getElementById('result').textContent=JSON.stringify({width:w.innerWidth,height:w.innerHeight,documentWidth:d.documentElement.scrollWidth,checks:checks,failures:failures});}catch(e){document.getElementById('result').textContent=JSON.stringify({failures:[String(e)]});}},1600);};frame.src='/console/retro/wii/'+p.get('page')+'.html';document.body.appendChild(frame);
+</script></body></html>`;
+fs.writeFileSync(path.join(work,'wii-games-render.html'),harness);
+const entries=require('./build-wii-games-online.cjs').catalog();
+const scopes=[['game-mods',entries.length],['mario-kart-wii',entries.filter(x=>x.group==='Mario Kart Wii').length],['new-super-mario-bros-wii',entries.filter(x=>x.group==='New Super Mario Bros. Wii'||x.id==='riivolution').length],['online',entries.filter(x=>['Online tools','Desktop helpers'].includes(x.group)).length]];
+for(const [slug,game]of [['super-smash-bros-brawl','Super Smash Bros. Brawl'],['super-mario-galaxy','Super Mario Galaxy'],['super-mario-galaxy-2','Super Mario Galaxy 2']])scopes.push([slug,entries.filter(x=>x.group===game||(game!=='Super Smash Bros. Brawl'&&x.id==='riivolution')).length]);
+const results=[];
+for(const [page,expected]of scopes.filter(x=>!process.env.WII_QA_PAGES||process.env.WII_QA_PAGES.split(',').includes(x[0])))for(const width of [1440,390]){
+ const name='wii-'+page+'-'+width,screenshot=path.join(root,'docs/screenshots',name+'.png'),height=width===390?1000:1100;
+ const args=['--headless=new','--disable-gpu','--hide-scrollbars','--no-first-run','--no-default-browser-check','--host-resolver-rules=MAP * 0.0.0.0,EXCLUDE 127.0.0.1','--user-data-dir='+fs.mkdtempSync(path.join(os.tmpdir(),'whatsite-wii-games-qa-')),'--window-size='+width+','+height,'--virtual-time-budget=8000','--screenshot='+screenshot,'--dump-dom',preview+'/.playwright-cli/wii-games-render.html?page='+page+'&width='+width+'&height='+height+'&expected='+expected+'&anchor='+(page==='online'?'wiimmfi-dns':'downloads')];
+ const run=spawnSync('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',args,{encoding:'utf8',windowsHide:true,maxBuffer:5*1024**2,timeout:45000});
+ const raw=run.stdout?.match(/<pre id="result">([\s\S]*?)<\/pre>/)?.[1]?.replaceAll('&quot;','"').replaceAll('&amp;','&').replaceAll('&lt;','<').replaceAll('&gt;','>');
+ let result;try{result=JSON.parse(raw);}catch{throw Error('Local render did not complete: '+name+' '+(run.error?.message||run.stderr?.slice(-250)||raw));}
+ if(result.width!==width||result.height!==height)result.failures.push('Unexpected viewport');results.push({page,name,screenshot:'docs/screenshots/'+name+'.png',...result});console.log(JSON.stringify({name,checks:result.checks?.length,failures:result.failures}));
+}
+fs.writeFileSync(path.join(root,process.env.WII_QA_REPORT||'docs/wii-games-online-browser-qa.json'),JSON.stringify({checkedAt:new Date().toISOString(),mode:'Isolated installed Edge; offline third-party DNS; local preview',results},null,2)+'\n');if(results.some(x=>x.failures.length))process.exitCode=1;

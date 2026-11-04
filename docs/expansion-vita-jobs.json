@@ -1,0 +1,12 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {"id":"vita-vitadeploy","title":"VitaDeploy","platform":"PS Vita","category":"Tools","project":"VitaDeploy","version":"v1.2.1","filename":"VitaDeploy.vpk","url":"https://github.com/SKGleba/VitaDeploy/releases/download/v1.2.1/VitaDeploy.vpk","pages":["console/psvita/apps.html","console/psvita/jailbreak.html","console/psvita/cfw.html"],"archiveRole":["Builds"],"mirror":false},
+    {"id":"vita-adrenaline","title":"Adrenaline","platform":"PS Vita","category":"Tools","project":"Adrenaline","version":"v7","filename":"Adrenaline.vpk","url":"https://github.com/TheOfficialFloW/Adrenaline/releases/download/v7/Adrenaline.vpk","pages":["console/psvita/apps.html"],"archiveRole":["Builds"],"mirror":false},
+    {"id":"vita-autoplugin2","title":"AutoPlugin II","platform":"PS Vita","category":"Tools","project":"AutoPlugin II","version":"2.19","filename":"AutoPlugin2.vpk","url":"https://github.com/ONElua/AutoPlugin2/releases/download/2.19/AutoPlugin2.vpk","pages":["console/psvita/apps.html"],"archiveRole":["Builds"],"mirror":false},
+    {"id":"vita-vitadb","title":"VitaDB Downloader","platform":"PS Vita","category":"Tools","project":"VitaDB Downloader","version":"v.2.8","filename":"VitaDB.vpk","url":"https://github.com/Rinnegatamante/VitaDB-Downloader/releases/download/v.2.8/VitaDB.vpk","pages":["console/psvita/apps.html"],"archiveRole":["Builds"],"mirror":false},
+    {"id":"vita-pkgj","title":"PKGj","platform":"PS Vita","category":"Tools","project":"PKGj","version":"v0.57","filename":"pkgj.vpk","url":"https://github.com/blastrock/pkgj/releases/download/v0.57/pkgj.vpk","pages":["console/psvita/apps.html"],"archiveRole":["Builds"],"mirror":false},
+    {"id":"vita-itls","title":"iTLS-Enso","platform":"PS Vita","category":"Tools","project":"iTLS-Enso","version":"v3.2.1","filename":"iTLS-Enso.vpk","url":"https://github.com/SKGleba/iTLS-Enso/releases/download/v3.2.1/iTLS-Enso.vpk","pages":["console/psvita/apps.html","console/psvita/cfw.html"],"archiveRole":["Builds"],"mirror":false},
+    {"id":"vita-yamt","title":"YAMT","platform":"PS Vita","category":"Tools","project":"YAMT","version":"v4.0","filename":"yamt.vpk","url":"https://github.com/SKGleba/yamt-vita/releases/download/v4.0/yamt.vpk","pages":["console/psvita/apps.html"],"archiveRole":["Builds"],"mirror":false}
+  ]
+}

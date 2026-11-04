@@ -1,0 +1,2086 @@
+{
+  "schemaVersion": 1,
+  "groups": [
+    {
+      "id": "karo-505",
+      "label": "PS4 WebKit Exploit - 5.05",
+      "platform": "ps4",
+      "firmwares": [
+        "5.05"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-505/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/505/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-505",
+        "folder": "505",
+        "path": "505/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "5.05"
+        ],
+        "label": "KARO 5.05",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The chosen action opens its original per-payload HTML inside the exp-loader iframe. Preserve that HTML and its native JavaScript dependencies.",
+        "notes": [
+          "Some original game actions are embedded JavaScript payloads, not standalone BIN files.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "505/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "505/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-505gold",
+      "label": "PS4 WebKit Exploit - 5.05 Gold",
+      "platform": "ps4",
+      "firmwares": [
+        "5.05"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-505gold/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/505Gold/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-505gold",
+        "folder": "505Gold",
+        "path": "505Gold/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "5.05"
+        ],
+        "label": "KARO 5.05 Gold",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The page selects bin and exploit.js; Mira and Orbis AFR use ordered two/three-BIN exploit variants.",
+        "notes": [
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "505Gold/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "505Gold/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-672",
+      "label": "PS4 WebKit Exploit - 6.72 Manual",
+      "platform": "ps4",
+      "firmwares": [
+        "6.72"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-672/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/672/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-672",
+        "folder": "672",
+        "path": "672/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "6.72"
+        ],
+        "label": "KARO 6.72 Manual",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Explicit jailbreak; BZIP2 download into PLS, native memory staging and exp_loader.js.",
+        "notes": [
+          "Menu and utility payloads use the already prepared native browser context.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "672/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "672/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-672a",
+      "label": "PS4 WebKit Exploit - 6.72 Auto",
+      "platform": "ps4",
+      "firmwares": [
+        "6.72"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-672a/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/672A/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-672a",
+        "folder": "672A",
+        "path": "672A/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "6.72"
+        ],
+        "label": "KARO 6.72 Auto",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Application-cache events prepare the native context; compressed payloads use exp_loader.js or pl_loader.js according to the original action.",
+        "notes": [
+          "Application-cache onnoupdate and onerror can automatically invoke jailbreak.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "672A/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "672A/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-672l",
+      "label": "PS4 WebKit Exploit - 6.72 Light",
+      "platform": "ps4",
+      "firmwares": [
+        "6.72"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-672l/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/672L/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-672l",
+        "folder": "672L",
+        "path": "672L/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "6.72"
+        ],
+        "label": "KARO 6.72 Light",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Raw PLfile; HEN uses exp_loader.js, native listener uses pl_loader.js and utilities use pls_loader.js.",
+        "notes": [
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "672L/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "672L/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-702",
+      "label": "PS4 WebKit Exploit - 7.02",
+      "platform": "ps4",
+      "firmwares": [
+        "7.02"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-702/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/702/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-702",
+        "folder": "702",
+        "path": "702/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.02"
+        ],
+        "label": "KARO 7.02",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. ArrayBuffer XHR, native memory allocation/copy and thread launch through the existing ROP chain. Its separate BIN listener advertises TCP 9020.",
+        "notes": [
+          "The source title advertises 7.00–7.02; this entry conservatively selects 7.02 because its native chain is the single 702 build.",
+          "Original Kernel Dumper references missing kerneldumper.bin; enablebrowser.bin is empty. Those actions must remain unavailable.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "702/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "702/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-702l",
+      "label": "PS4 WebKit Exploit - 7.02 Light",
+      "platform": "ps4",
+      "firmwares": [
+        "7.02"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-702l/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/702L/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-702l",
+        "folder": "702L",
+        "path": "702L/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.02"
+        ],
+        "label": "KARO 7.02 Light",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. ArrayBuffer XHR, native memory allocation/copy and thread launch through the existing ROP chain. Its separate BIN listener advertises TCP 9020.",
+        "notes": [
+          "The source title advertises 7.00–7.02; this entry conservatively selects 7.02 because its native chain is the single 702 build.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "702L/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "702L/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-755",
+      "label": "PS4 WebKit Exploit - 7.50 / 7.51 / 7.55",
+      "platform": "ps4",
+      "firmwares": [
+        "7.50",
+        "7.51",
+        "7.55"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-755/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/755/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-755",
+        "folder": "755",
+        "path": "755/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.50",
+          "7.51",
+          "7.55"
+        ],
+        "label": "KARO 7.50 / 7.51 / 7.55",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. BZIP2 to PLS, then jb.js, the exact firmware preloader, payloads.js and loader.js. The native BIN listener advertises 9021.",
+        "notes": [
+          "Some old GoldHEN branches and kernelclock.bin.bz2 are missing upstream; do not enable those individual actions.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "755/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "755/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-755l",
+      "label": "PS4 WebKit Exploit - 7.50 / 7.51 / 7.55 Light",
+      "platform": "ps4",
+      "firmwares": [
+        "7.50",
+        "7.51",
+        "7.55"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-755l/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/755L/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-755l",
+        "folder": "755L",
+        "path": "755L/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.50",
+          "7.51",
+          "7.55"
+        ],
+        "label": "KARO 7.50 / 7.51 / 7.55 Light",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. BZIP2 to PLS, then jb.js, the exact firmware preloader, payloads.js and loader.js. The native BIN listener advertises 9021.",
+        "notes": [
+          "The Light page retains dormant branches for absent full-host files; only its visible, present-file actions are valid.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "755L/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "755L/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-900c",
+      "label": "PS4 WebKit Exploit - 9.00 900C",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-900c/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900C/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-900c",
+        "folder": "900C",
+        "path": "900C/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 900C",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Automatic browser preparation; BZIP2 payload staging and the original native ROP/MiraLoader path.",
+        "notes": [
+          "Retain the original USB/kernel-exploit prerequisites and original payload selection; a sender cannot replace initial preparation.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "900C/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "900C/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-900cm",
+      "label": "PS4 WebKit Exploit - 9.00 900CM",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-900cm/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900CM/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-900cm",
+        "folder": "900CM",
+        "path": "900CM/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 900CM",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Manual browser preparation; BZIP2 payload staging and the original native ROP/MiraLoader path.",
+        "notes": [
+          "Retain the original USB/kernel-exploit prerequisites and original payload selection; a sender cannot replace initial preparation.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "900CM/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "900CM/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-900n",
+      "label": "PS4 WebKit Exploit - 9.00 900N",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-900n/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900N/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-900n",
+        "folder": "900N",
+        "path": "900N/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 900N",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Manual browser preparation; raw payload staging and the original native ROP/MiraLoader path.",
+        "notes": [
+          "Retain the original USB/kernel-exploit prerequisites and original payload selection; a sender cannot replace initial preparation.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "900N/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "900N/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-900na",
+      "label": "PS4 WebKit Exploit - 9.00 900NA",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-900na/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900NA/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-900na",
+        "folder": "900NA",
+        "path": "900NA/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 900NA",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Automatic browser preparation; raw payload staging and the original native ROP/MiraLoader path.",
+        "notes": [
+          "Retain the original USB/kernel-exploit prerequisites and original payload selection; a sender cannot replace initial preparation.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "900NA/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "900NA/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-900nm",
+      "label": "PS4 WebKit Exploit - 9.00 900NM",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-900nm/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900NM/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-900nm",
+        "folder": "900NM",
+        "path": "900NM/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 900NM",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Manual browser preparation using the revised WebKit path; BZIP2 payload staging and the original native ROP/MiraLoader path.",
+        "notes": [
+          "Retain the original USB/kernel-exploit prerequisites and original payload selection; a sender cannot replace initial preparation.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "900NM/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "900NM/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-900new",
+      "label": "PS4 WebKit Exploit - 9.00 900New",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-900new/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900New/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-900new",
+        "folder": "900New",
+        "path": "900New/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 900New",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Automatic browser preparation using the revised WebKit path; BZIP2 payload staging and the original native ROP/MiraLoader path.",
+        "notes": [
+          "Retain the original USB/kernel-exploit prerequisites and original payload selection; a sender cannot replace initial preparation.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "900New/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "900New/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-900l",
+      "label": "PS4 WebKit Exploit - 9.00 Light",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-900l/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900L/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-900l",
+        "folder": "900L",
+        "path": "900L/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 Light",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Automatic revised-WebKit/native kernel preparation, then raw ArrayBuffer payload loading.",
+        "notes": [
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "900L/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "900L/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-g702",
+      "label": "PS4 WebKit Exploit - 7.02",
+      "platform": "ps4",
+      "firmwares": [
+        "7.02"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-g702/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/G702/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": [
+        {
+          "id": "goldhen",
+          "label": "GoldHEN",
+          "file": "goldhen_2.3_702.bin",
+          "embedded": false
+        }
+      ],
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-g702",
+        "folder": "G702",
+        "path": "G702/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.02"
+        ],
+        "label": "KARO 7.02 GoldHEN Auto",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. jbdone automatically selects goldhen_2.3_702.bin and passes its ArrayBuffer to the native ROP loader.",
+        "notes": [
+          "The source title advertises 7.00–7.02; this entry conservatively selects 7.02 because its native chain is the single 702 build.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "G702/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "G702/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-g755",
+      "label": "PS4 WebKit Exploit - 7.55",
+      "platform": "ps4",
+      "firmwares": [
+        "7.55"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-g755/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/G755/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": [
+        {
+          "id": "goldhen",
+          "label": "GoldHEN",
+          "file": "goldhen_2.3_755.js",
+          "embedded": true
+        }
+      ],
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-g755",
+        "folder": "G755",
+        "path": "G755/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.55"
+        ],
+        "label": "KARO 7.55 GoldHEN Auto",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The native chain evaluates rop.js, jb.js, goldhen_2.3_755.js and loader.js.",
+        "notes": [
+          "The source title is broader, but this entry is pinned to the exact 755 embedded payload. There is no standalone BIN asset in this folder.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "G755/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "G755/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-g900",
+      "label": "PS4 WebKit Exploit - 9.00",
+      "platform": "ps4",
+      "firmwares": [
+        "9.00"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-g900/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/G900/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": [
+        {
+          "id": "goldhen",
+          "label": "GoldHEN",
+          "file": "goldhen.bin",
+          "embedded": false
+        }
+      ],
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-g900",
+        "folder": "G900",
+        "path": "G900/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "9.00"
+        ],
+        "label": "KARO 9.00 GoldHEN Auto",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. jbdone automatically selects goldhen.bin and passes its ArrayBuffer to the original native loader.",
+        "notes": [
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "G900/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "G900/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-goldhen505",
+      "label": "PS4 WebKit Exploit - 5.05",
+      "platform": "ps4",
+      "firmwares": [
+        "5.05"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-goldhen505/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/Goldhen505/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": [
+        {
+          "id": "goldhen",
+          "label": "GoldHEN",
+          "file": "goldhen.bin",
+          "embedded": false
+        }
+      ],
+      "preferred": true,
+      "cacheReopen": true,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-goldhen505",
+        "folder": "Goldhen505",
+        "path": "Goldhen505/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "5.05"
+        ],
+        "label": "KARO 5.05 GoldHEN",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The cached-page onload handler sets bin=goldhen.bin and invokes the original exploit.js.",
+        "notes": [
+          "A prior application-cache flag causes automatic native execution on opening.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "Goldhen505/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "Goldhen505/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-goldhen672",
+      "label": "PS4 WebKit Exploit - 6.72",
+      "platform": "ps4",
+      "firmwares": [
+        "6.72"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-goldhen672/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/Goldhen672/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": [
+        {
+          "id": "goldhen",
+          "label": "GoldHEN",
+          "file": "goldhen.bin",
+          "embedded": false
+        }
+      ],
+      "preferred": true,
+      "cacheReopen": true,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-goldhen672",
+        "folder": "Goldhen672",
+        "path": "Goldhen672/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "6.72"
+        ],
+        "label": "KARO 6.72 GoldHEN",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The cached-page onload handler sets PLfile=goldhen.bin, invokes jailbreak and then exp_loader.js.",
+        "notes": [
+          "A prior application-cache flag causes automatic native execution on opening.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "Goldhen672/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "Goldhen672/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-g2all",
+      "label": "PS4 WebKit Exploit - g2all",
+      "platform": "ps4",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-g2all/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2all/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-g2all",
+        "folder": "g2all",
+        "path": "g2all/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.00",
+          "7.01",
+          "7.02",
+          "7.50",
+          "7.51",
+          "7.55",
+          "8.00",
+          "8.01",
+          "8.03",
+          "8.50",
+          "8.52",
+          "9.00",
+          "9.03",
+          "9.04",
+          "9.50",
+          "9.51",
+          "9.60"
+        ],
+        "label": "KARO g2all",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. PSFree and Lapse native preparation with the source-listed per-firmware kernel patches, followed by payload.bin.",
+        "notes": [
+          "The exact firmware list comes from the native per-firmware table, not the 7.XX–9.XX title. PS5 is not implemented by this kernel path.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "g2all/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "g2all/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-g2allproold",
+      "label": "PS4 WebKit Exploit - g2allproold",
+      "platform": "ps4",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-g2allproold/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2allproold/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-g2allproold",
+        "folder": "g2allproold",
+        "path": "g2allproold/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.00",
+          "7.01",
+          "7.02",
+          "7.50",
+          "7.51",
+          "7.55",
+          "8.00",
+          "8.01",
+          "8.03",
+          "8.50",
+          "8.52",
+          "9.00",
+          "9.03",
+          "9.04",
+          "9.50",
+          "9.51",
+          "9.60"
+        ],
+        "label": "KARO g2allproold",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. PSFree and Lapse native preparation with the source-listed per-firmware kernel patches, followed by payload.bin.",
+        "notes": [
+          "The exact firmware list comes from the native per-firmware table, not the 7.XX–9.XX title. PS5 is not implemented by this kernel path.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "g2allproold/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "g2allproold/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-g2allpro",
+      "label": "PS4 WebKit Exploit - g2allpro",
+      "platform": "ps4",
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-g2allpro/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2allpro/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [
+        [
+          "7.00",
+          "9.60"
+        ],
+        [
+          "10.00",
+          "11.02"
+        ],
+        [
+          "11.50",
+          "12.02"
+        ],
+        [
+          "12.50",
+          "13.00"
+        ],
+        [
+          "13.02",
+          "13.52"
+        ]
+      ],
+      "originalEntry": {
+        "id": "karo-g2allpro",
+        "folder": "g2allpro",
+        "path": "g2allpro/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "5.05",
+          "5.07",
+          "7.00",
+          "7.01",
+          "7.02",
+          "7.50",
+          "7.51",
+          "7.55",
+          "8.00",
+          "8.01",
+          "8.03",
+          "8.50",
+          "8.52",
+          "9.00",
+          "9.03",
+          "9.04",
+          "9.50",
+          "9.51",
+          "9.60"
+        ],
+        "label": "KARO g2allpro",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Firmware-dispatched original exploit5/exploit7_9/exploit10 and later native exploit scripts, followed by payload.bin.",
+        "notes": [
+          "The dispatch intervals are discontinuous. Ranges describe the original numeric gates; they do not invent intermediate firmware releases or prove hardware execution.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "ranges": [
+          [
+            "7.00",
+            "9.60"
+          ],
+          [
+            "10.00",
+            "11.02"
+          ],
+          [
+            "11.50",
+            "12.02"
+          ],
+          [
+            "12.50",
+            "13.00"
+          ],
+          [
+            "13.02",
+            "13.52"
+          ]
+        ],
+        "scope": "g2allpro/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "g2allpro/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-binloader-505",
+      "label": "PS4 WebKit Exploit - BIN Loader 5.05",
+      "platform": "ps4",
+      "firmwares": [
+        "5.05"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-binloader-505/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/505/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-binloader-505",
+        "folder": "binloader",
+        "path": "binloader/505/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "5.05"
+        ],
+        "label": "KARO BIN Loader 5.05",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The original standalone browser entry prepares its native listener. Preserve the nested directory, scripts and original listener port.",
+        "notes": [
+          "These pages can start preparation immediately on opening; 6.72, 7.02 and 7.55 advertise port 9021.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "binloader/505/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "binloader/505/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-binloader-672",
+      "label": "PS4 WebKit Exploit - BIN Loader 6.72",
+      "platform": "ps4",
+      "firmwares": [
+        "6.72"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-binloader-672/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/672/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-binloader-672",
+        "folder": "binloader",
+        "path": "binloader/672/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "6.72"
+        ],
+        "label": "KARO BIN Loader 6.72",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The original standalone browser entry prepares its native listener. Preserve the nested directory, scripts and original listener port.",
+        "notes": [
+          "These pages can start preparation immediately on opening; 6.72, 7.02 and 7.55 advertise port 9021.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "binloader/672/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "binloader/672/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-binloader-702",
+      "label": "PS4 WebKit Exploit - BIN Loader 7.02",
+      "platform": "ps4",
+      "firmwares": [
+        "7.02"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-binloader-702/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/702/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-binloader-702",
+        "folder": "binloader",
+        "path": "binloader/702/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.02"
+        ],
+        "label": "KARO BIN Loader 7.02",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The original standalone browser entry prepares its native listener. Preserve the nested directory, scripts and original listener port.",
+        "notes": [
+          "These pages can start preparation immediately on opening; 6.72, 7.02 and 7.55 advertise port 9021.",
+          "Source matching is not a physical-console execution test.",
+          "Original cache manifest is absent; verified native go() runs independently. Online loading only, no offline claim."
+        ],
+        "onlineOnly": true,
+        "scope": "binloader/702/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "binloader/702/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-binloader-755",
+      "label": "PS4 WebKit Exploit - BIN Loader 7.55",
+      "platform": "ps4",
+      "firmwares": [
+        "7.55"
+      ],
+      "entry": "/hosts/ps4/exploit/karo-binloader-755/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/755/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-binloader-755",
+        "folder": "binloader",
+        "path": "binloader/755/index.html",
+        "platform": "ps4",
+        "firmwares": [
+          "7.55"
+        ],
+        "label": "KARO BIN Loader 7.55",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. The original standalone browser entry prepares its native listener. Preserve the nested directory, scripts and original listener port.",
+        "notes": [
+          "These pages can start preparation immediately on opening; 6.72, 7.02 and 7.55 advertise port 9021.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "binloader/755/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "binloader/755/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-ps5-umtx",
+      "label": "PS5 WebKit Exploit - UMTX2",
+      "platform": "ps5",
+      "firmwares": [
+        "1.00",
+        "1.01",
+        "1.02",
+        "1.05",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "2.00",
+        "2.20",
+        "2.25",
+        "2.26",
+        "2.30",
+        "2.50",
+        "2.70",
+        "3.00",
+        "3.10",
+        "3.20",
+        "3.21",
+        "4.00",
+        "4.02",
+        "4.03",
+        "4.50",
+        "4.51",
+        "5.00",
+        "5.02",
+        "5.10",
+        "5.50"
+      ],
+      "entry": "/hosts/ps5/exploit/karo-ps5-umtx/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/UMTX/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-ps5-umtx",
+        "folder": "ps5",
+        "path": "ps5/UMTX/index.html",
+        "platform": "ps5",
+        "firmwares": [
+          "1.00",
+          "1.01",
+          "1.02",
+          "1.05",
+          "1.10",
+          "1.11",
+          "1.12",
+          "1.13",
+          "1.14",
+          "2.00",
+          "2.20",
+          "2.25",
+          "2.26",
+          "2.30",
+          "2.50",
+          "2.70",
+          "3.00",
+          "3.10",
+          "3.20",
+          "3.21",
+          "4.00",
+          "4.02",
+          "4.03",
+          "4.50",
+          "4.51",
+          "5.00",
+          "5.02",
+          "5.10",
+          "5.50"
+        ],
+        "label": "KARO PS5 UMTX2",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Use the original PS5 browser entry, WebKit/native kernel chain and its own ELF-loader handoff. The exact firmware list is read from the original dispatcher and checked against its offset files.",
+        "notes": [
+          "Offset availability establishes source coverage only; author hardware claims are not independent validation. Preserve the original page-to-subpage route and query parameters.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "ps5/UMTX/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "ps5/UMTX/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-ps5-p2jb",
+      "label": "PS5 WebKit Exploit - P2JB",
+      "platform": "ps5",
+      "firmwares": [
+        "12.00",
+        "12.02",
+        "12.20",
+        "12.40",
+        "12.60",
+        "12.70"
+      ],
+      "entry": "/hosts/ps5/exploit/karo-ps5-p2jb/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/P2JB/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-ps5-p2jb",
+        "folder": "ps5",
+        "path": "ps5/P2JB/index.html",
+        "platform": "ps5",
+        "firmwares": [
+          "12.00",
+          "12.02",
+          "12.20",
+          "12.40",
+          "12.60",
+          "12.70"
+        ],
+        "label": "KARO PS5 P2JB",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Use the original PS5 browser entry, WebKit/native kernel chain and its own ELF-loader handoff. The exact firmware list is read from the original dispatcher and checked against its offset files.",
+        "notes": [
+          "Offset availability establishes source coverage only; author hardware claims are not independent validation. Preserve the original page-to-subpage route and query parameters.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "ps5/P2JB/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "ps5/P2JB/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-ps5-poopspl",
+      "label": "PS5 WebKit Exploit - Poopsploit",
+      "platform": "ps5",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.20",
+        "7.40",
+        "7.60",
+        "7.61",
+        "8.00",
+        "8.20",
+        "8.40",
+        "8.60",
+        "9.00",
+        "9.05",
+        "9.20",
+        "9.40",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.20",
+        "10.40",
+        "10.60",
+        "11.00",
+        "11.20",
+        "11.40",
+        "11.60",
+        "12.00"
+      ],
+      "entry": "/hosts/ps5/exploit/karo-ps5-poopspl/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/poopspl/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-ps5-poopspl",
+        "folder": "ps5",
+        "path": "ps5/poopspl/index.html",
+        "platform": "ps5",
+        "firmwares": [
+          "7.00",
+          "7.01",
+          "7.20",
+          "7.40",
+          "7.60",
+          "7.61",
+          "8.00",
+          "8.20",
+          "8.40",
+          "8.60",
+          "9.00",
+          "9.05",
+          "9.20",
+          "9.40",
+          "9.60",
+          "10.00",
+          "10.01",
+          "10.20",
+          "10.40",
+          "10.60",
+          "11.00",
+          "11.20",
+          "11.40",
+          "11.60",
+          "12.00"
+        ],
+        "label": "KARO PS5 Poopsploit",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Use the original PS5 browser entry, WebKit/native kernel chain and its own ELF-loader handoff. The exact firmware list is read from the original dispatcher and checked against its offset files.",
+        "notes": [
+          "Offset availability establishes source coverage only; author hardware claims are not independent validation. Preserve the original page-to-subpage route and query parameters.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "ps5/poopspl/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "ps5/poopspl/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-ps5-relapse",
+      "label": "PS5 WebKit Exploit - Relapse",
+      "platform": "ps5",
+      "firmwares": [
+        "13.60",
+        "13.42",
+        "13.40",
+        "13.20",
+        "13.00",
+        "12.70",
+        "12.60",
+        "12.40",
+        "12.20",
+        "12.02",
+        "12.00",
+        "11.60",
+        "11.20",
+        "11.00",
+        "10.40",
+        "10.20",
+        "10.01",
+        "10.00",
+        "9.60",
+        "9.40",
+        "9.20",
+        "9.00",
+        "8.60",
+        "8.40",
+        "8.20",
+        "8.00",
+        "7.61",
+        "7.60",
+        "7.40",
+        "7.20",
+        "7.01",
+        "7.00"
+      ],
+      "entry": "/hosts/ps5/exploit/karo-ps5-relapse/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/relapse/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": true,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-ps5-relapse",
+        "folder": "ps5",
+        "path": "ps5/relapse/index.html",
+        "platform": "ps5",
+        "firmwares": [
+          "13.60",
+          "13.42",
+          "13.40",
+          "13.20",
+          "13.00",
+          "12.70",
+          "12.60",
+          "12.40",
+          "12.20",
+          "12.02",
+          "12.00",
+          "11.60",
+          "11.20",
+          "11.00",
+          "10.40",
+          "10.20",
+          "10.01",
+          "10.00",
+          "9.60",
+          "9.40",
+          "9.20",
+          "9.00",
+          "8.60",
+          "8.40",
+          "8.20",
+          "8.00",
+          "7.61",
+          "7.60",
+          "7.40",
+          "7.20",
+          "7.01",
+          "7.00"
+        ],
+        "label": "KARO PS5 Relapse",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Use the original PS5 browser entry, WebKit/native kernel chain and its own ELF-loader handoff. The exact firmware list is read from the original dispatcher and checked against its offset files.",
+        "notes": [
+          "Offset availability establishes source coverage only; author hardware claims are not independent validation. Preserve the original page-to-subpage route and query parameters.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "ps5/relapse/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "ps5/relapse/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-ps5-pr-poops",
+      "label": "PS5 WebKit Exploit - PR Poopsploit",
+      "platform": "ps5",
+      "firmwares": [
+        "7.00",
+        "7.01",
+        "7.20",
+        "7.40",
+        "7.60",
+        "7.61",
+        "8.00",
+        "8.20",
+        "8.40",
+        "8.60",
+        "9.00",
+        "9.05",
+        "9.20",
+        "9.40",
+        "9.60",
+        "10.00",
+        "10.01",
+        "10.20",
+        "10.40",
+        "10.60",
+        "11.00",
+        "11.20",
+        "11.40",
+        "11.60",
+        "12.00",
+        "12.02",
+        "12.20",
+        "12.40",
+        "12.60",
+        "12.70"
+      ],
+      "entry": "/hosts/ps5/exploit/karo-ps5-pr-poops/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/pr/poops/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-ps5-pr-poops",
+        "folder": "ps5",
+        "path": "ps5/pr/poops/index.html",
+        "platform": "ps5",
+        "firmwares": [
+          "7.00",
+          "7.01",
+          "7.20",
+          "7.40",
+          "7.60",
+          "7.61",
+          "8.00",
+          "8.20",
+          "8.40",
+          "8.60",
+          "9.00",
+          "9.05",
+          "9.20",
+          "9.40",
+          "9.60",
+          "10.00",
+          "10.01",
+          "10.20",
+          "10.40",
+          "10.60",
+          "11.00",
+          "11.20",
+          "11.40",
+          "11.60",
+          "12.00",
+          "12.02",
+          "12.20",
+          "12.40",
+          "12.60",
+          "12.70"
+        ],
+        "label": "KARO PS5 PR Poopsploit",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Use the original PS5 browser entry, WebKit/native kernel chain and its own ELF-loader handoff. The exact firmware list is read from the original dispatcher and checked against its offset files.",
+        "notes": [
+          "Offset availability establishes source coverage only; author hardware claims are not independent validation. Preserve the original page-to-subpage route and query parameters.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "ps5/pr/poops/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "ps5/pr/poops/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "karo-ps5-pr-relapse",
+      "label": "PS5 WebKit Exploit - PR Relapse",
+      "platform": "ps5",
+      "firmwares": [
+        "13.60",
+        "13.42",
+        "13.40",
+        "13.20",
+        "13.00",
+        "12.70",
+        "12.60",
+        "12.40",
+        "12.20",
+        "12.02",
+        "12.00",
+        "11.60",
+        "11.20",
+        "11.00",
+        "10.60",
+        "10.40",
+        "10.20",
+        "10.01",
+        "10.00",
+        "9.60",
+        "9.40",
+        "9.20",
+        "9.00",
+        "8.60",
+        "8.40",
+        "8.20",
+        "8.00",
+        "7.61",
+        "7.60",
+        "7.40",
+        "7.20",
+        "7.01",
+        "7.00"
+      ],
+      "entry": "/hosts/ps5/exploit/karo-ps5-pr-relapse/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/pr/relapse/index.html",
+      "runtime": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/",
+      "payloadChoice": null,
+      "preferred": false,
+      "cacheReopen": false,
+      "sourceRanges": [],
+      "originalEntry": {
+        "id": "karo-ps5-pr-relapse",
+        "folder": "ps5",
+        "path": "ps5/pr/relapse/index.html",
+        "platform": "ps5",
+        "firmwares": [
+          "13.60",
+          "13.42",
+          "13.40",
+          "13.20",
+          "13.00",
+          "12.70",
+          "12.60",
+          "12.40",
+          "12.20",
+          "12.02",
+          "12.00",
+          "11.60",
+          "11.20",
+          "11.00",
+          "10.60",
+          "10.40",
+          "10.20",
+          "10.01",
+          "10.00",
+          "9.60",
+          "9.40",
+          "9.20",
+          "9.00",
+          "8.60",
+          "8.40",
+          "8.20",
+          "8.00",
+          "7.61",
+          "7.60",
+          "7.40",
+          "7.20",
+          "7.01",
+          "7.00"
+        ],
+        "label": "KARO PS5 PR Relapse",
+        "kind": "loader",
+        "contract": "Original browser-native preparation and payload loader; not the paired desktop sender or an interchangeable GoldHEN HTTP ABI. Use the original PS5 browser entry, WebKit/native kernel chain and its own ELF-loader handoff. The exact firmware list is read from the original dispatcher and checked against its offset files.",
+        "notes": [
+          "Offset availability establishes source coverage only; author hardware claims are not independent validation. Preserve the original page-to-subpage route and query parameters.",
+          "Source matching is not a physical-console execution test."
+        ],
+        "scope": "ps5/pr/relapse/"
+      },
+      "source": {
+        "repository": "https://github.com/KAR0218/KAR0218.github.io",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "path": "ps5/pr/relapse/index.html"
+      },
+      "ticket": "existing-karo-guard"
+    },
+    {
+      "id": "ps4-afterglow",
+      "label": "PS4 WebKit Exploit - 13.52 / 14.00",
+      "platform": "ps4",
+      "firmwares": [
+        "13.52",
+        "14.00"
+      ],
+      "entry": "/hosts/ps4/afterglow/",
+      "runtimeEntry": "/hosts/runtime/ps4-afterglow-acf25a831725/web/index.html",
+      "payloadChoice": [
+        {
+          "id": "hen",
+          "label": "ps4-hen"
+        },
+        {
+          "id": "goldhen",
+          "label": "GoldHEN"
+        }
+      ],
+      "preferred": true,
+      "source": {
+        "repository": "https://github.com/well0nez/afterglow-web",
+        "commit": "acf25a831725f0d44fcb64725d4ce35acbba8f9d"
+      },
+      "ticket": "existing-afterglow-landing"
+    }
+  ],
+  "records": [
+    {
+      "id": "karo-505",
+      "page": "/hosts/ps4/exploit/karo-505/index.html",
+      "bytes": 2506,
+      "sha256": "9c48e15b8a338e7f079fe481f76e3eba3a08cf728f01d9d7364da6152757c8e0",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/505/index.html",
+      "nativeEntrySHA256": "ae7a0690477aad21a450fb177199f064fe2019ed68cdbd8a952c4742a4cf5da0"
+    },
+    {
+      "id": "karo-505gold",
+      "page": "/hosts/ps4/exploit/karo-505gold/index.html",
+      "bytes": 2409,
+      "sha256": "134460113f042c5d5efd378961c0a8cce15e5880b6efa0e9e100387d2f679675",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/505Gold/index.html",
+      "nativeEntrySHA256": "a70085a921c1e6af954e637e247d33b121715b1e4b6b0070c8b6b7cf521a924d"
+    },
+    {
+      "id": "karo-672",
+      "page": "/hosts/ps4/exploit/karo-672/index.html",
+      "bytes": 2458,
+      "sha256": "73a721523dacc5ad7ba33bc90810a9e54f55ffcc7a80e2f67da2b6d40bc9f6cd",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/672/index.html",
+      "nativeEntrySHA256": "eff0a07b16bb97298d21f0693fd17308eb956a48ee8878241d4c9cb61f593514"
+    },
+    {
+      "id": "karo-672a",
+      "page": "/hosts/ps4/exploit/karo-672a/index.html",
+      "bytes": 2514,
+      "sha256": "b9f185121128689854e7d5a4ef11a10cb9b083f2465c8057d26ffaf254c68819",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/672A/index.html",
+      "nativeEntrySHA256": "64ff552b0a65ea5d8cd609e0b69f26169bb51b774d531fb57c342176724f2a3d"
+    },
+    {
+      "id": "karo-672l",
+      "page": "/hosts/ps4/exploit/karo-672l/index.html",
+      "bytes": 2400,
+      "sha256": "bc52bd376342600fceda257e8b71c446394def5487ecd0cee91629a4720dc39c",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/672L/index.html",
+      "nativeEntrySHA256": "b518486668e7d4f228f035352b9aab5c6de3a63875d883f42c025e6acbf308f9"
+    },
+    {
+      "id": "karo-702",
+      "page": "/hosts/ps4/exploit/karo-702/index.html",
+      "bytes": 2679,
+      "sha256": "5b7791b3732826196bac8934e8db875c06c72ec3a675efce09f3f6374c55aef8",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/702/index.html",
+      "nativeEntrySHA256": "fb5ecb67cde0670ca525e771fbd951a368e0f2dd4e856a04db5e04e46ec05df2"
+    },
+    {
+      "id": "karo-702l",
+      "page": "/hosts/ps4/exploit/karo-702l/index.html",
+      "bytes": 2573,
+      "sha256": "7836be43f16f2b226736732165a36ee3c6c905a39929f3259dc43d48327bebf3",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/702L/index.html",
+      "nativeEntrySHA256": "8399e5d3b153a684e153e6eb08ec2105d513291d3d71c010d6724b96034a4381"
+    },
+    {
+      "id": "karo-755",
+      "page": "/hosts/ps4/exploit/karo-755/index.html",
+      "bytes": 2584,
+      "sha256": "62c99edac3482f2fbce956f0ae6b4082fb02d01ae6d2f22bcea50aa6705ce01e",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/755/index.html",
+      "nativeEntrySHA256": "4eee063a7b5dc1e0b028fdb86551a532ef1227f2aea63dff51a933b3c0ac025f"
+    },
+    {
+      "id": "karo-755l",
+      "page": "/hosts/ps4/exploit/karo-755l/index.html",
+      "bytes": 2613,
+      "sha256": "ee17124cb04cc88dc479659c4fc185787fb7defa2f4725b942c0131143d466f2",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/755L/index.html",
+      "nativeEntrySHA256": "eecd2850407731da46815fe5efb4f6f910f9a351b0d03089b4eb285dacc2d2d2"
+    },
+    {
+      "id": "karo-900c",
+      "page": "/hosts/ps4/exploit/karo-900c/index.html",
+      "bytes": 2524,
+      "sha256": "4d0581933611b5b550bbeeb793848f03ee02862f399479d1b0550339de082f4e",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900C/index.html",
+      "nativeEntrySHA256": "24f7ab6502720888de87c8ae2f0a37bba0a134438a7a818456c6bac034f0ff1f"
+    },
+    {
+      "id": "karo-900cm",
+      "page": "/hosts/ps4/exploit/karo-900cm/index.html",
+      "bytes": 2529,
+      "sha256": "801adeedd38a05398fa2d699f8e4dd75e38b0c4a5c63bbbe5c7944c8e8417412",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900CM/index.html",
+      "nativeEntrySHA256": "0853b69e8e05ae1aa8b04b2722a83afd5e816252301cf1bd184958ee784e42f2"
+    },
+    {
+      "id": "karo-900n",
+      "page": "/hosts/ps4/exploit/karo-900n/index.html",
+      "bytes": 2519,
+      "sha256": "a46e022d806a7da15bb1b3a5902aa879d072342b72299046a2e09099e7ddd604",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900N/index.html",
+      "nativeEntrySHA256": "a496baced54fe6ec7fb1009c3eb30f518aa9cfb089a1a6ead2055fb4ac811de4"
+    },
+    {
+      "id": "karo-900na",
+      "page": "/hosts/ps4/exploit/karo-900na/index.html",
+      "bytes": 2530,
+      "sha256": "76700c2c7523ca43eea65f549a0a25a85f303751be2b2d37191bbf8ae12c4ddc",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900NA/index.html",
+      "nativeEntrySHA256": "9e18b5b1aad5184c039de0d3e76b787c3591c175fdcca726862deb743c5b6c46"
+    },
+    {
+      "id": "karo-900nm",
+      "page": "/hosts/ps4/exploit/karo-900nm/index.html",
+      "bytes": 2559,
+      "sha256": "ae9eb803da9d63b2c1d6fcdb536b431ccaf1ce98a14a88349ad7f99d8df66b7d",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900NM/index.html",
+      "nativeEntrySHA256": "5966df3a9101ee16a354040237908d18310fbbe3e3eca289c741f859f323c6d3"
+    },
+    {
+      "id": "karo-900new",
+      "page": "/hosts/ps4/exploit/karo-900new/index.html",
+      "bytes": 2570,
+      "sha256": "68b94ce6b847c2223ba2f93dd3423a69f22051b493d6fef40f854cc64c789d9f",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900New/index.html",
+      "nativeEntrySHA256": "4a354537e13a6bdca5a7f165ef8f9a84a55ebede24cc93b5eed5b3e3f16cd9f0"
+    },
+    {
+      "id": "karo-900l",
+      "page": "/hosts/ps4/exploit/karo-900l/index.html",
+      "bytes": 2387,
+      "sha256": "5402f8ab4c143ed3893b3f6bfa8584603ca77529b8401d0bf5b3cb1c62b0964c",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/900L/index.html",
+      "nativeEntrySHA256": "b293fb379e34c652fb089ad4395567f40508658248de37924c618002b6a9c843"
+    },
+    {
+      "id": "karo-g702",
+      "page": "/hosts/ps4/exploit/karo-g702/index.html",
+      "bytes": 2562,
+      "sha256": "dc105311130f3294d9b5bdc34acc470dfd9d00dfdd385589e411251eb1bb76bc",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/G702/index.html",
+      "nativeEntrySHA256": "1747f0cd9f8abbc08c1256c9d2c2a2544ade9ad8025d75cce7ae7e3c513f5430"
+    },
+    {
+      "id": "karo-g755",
+      "page": "/hosts/ps4/exploit/karo-g755/index.html",
+      "bytes": 2544,
+      "sha256": "2139d4b396616153762f028e07b36f558c5719f6c3e0c0b6dac67bda243716e5",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/G755/index.html",
+      "nativeEntrySHA256": "9934752cd50d3a4fc605276f133fef26883eb5973714a3c63b48f53185587362"
+    },
+    {
+      "id": "karo-g900",
+      "page": "/hosts/ps4/exploit/karo-g900/index.html",
+      "bytes": 2427,
+      "sha256": "73ce376e526be25c14006886e7560101094c562e4732e7a4918d78be13d84c99",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/G900/index.html",
+      "nativeEntrySHA256": "62ae41f16980dec643bbb6bc90f9241d31e5185b260fa0572d70c4ee3ec4e970"
+    },
+    {
+      "id": "karo-goldhen505",
+      "page": "/hosts/ps4/exploit/karo-goldhen505/index.html",
+      "bytes": 2601,
+      "sha256": "7ff09ee2c757d687d21744e397b900cc482871f851aa34af6bf020b752e7ba2b",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/Goldhen505/index.html",
+      "nativeEntrySHA256": "4cdb97e857a4869e36e18f158f7d1fb0e1f817efe7138db5d9bfe97b5ce0297b"
+    },
+    {
+      "id": "karo-goldhen672",
+      "page": "/hosts/ps4/exploit/karo-goldhen672/index.html",
+      "bytes": 2610,
+      "sha256": "9030312932c37e094e6868020ffa87567a001f6c53ea33f37a0ad07304276978",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/Goldhen672/index.html",
+      "nativeEntrySHA256": "951f9c2fecd245480f1a8e89716d7b16a0ce2970679e9d7d01e00a536a068199"
+    },
+    {
+      "id": "karo-g2all",
+      "page": "/hosts/ps4/exploit/karo-g2all/index.html",
+      "bytes": 2779,
+      "sha256": "08ae8a64f0fe95c7d4c0bfc108cd6537731e5d88bac575bf87a24eddec4df4f7",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2all/index.html",
+      "nativeEntrySHA256": "6607c97e815028036683d0ef28b2758accc6c235446f271ea00375c7e6346167"
+    },
+    {
+      "id": "karo-g2allproold",
+      "page": "/hosts/ps4/exploit/karo-g2allproold/index.html",
+      "bytes": 2827,
+      "sha256": "426476e100dba1a891464e9ba8ccab85be469c2945af43f0510c7022570cea82",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2allproold/index.html",
+      "nativeEntrySHA256": "4595b2a48e5fde09b06cbdebb1ef18e23ff847bbf9f1c766c36d567bf1a6d807"
+    },
+    {
+      "id": "karo-g2allpro",
+      "page": "/hosts/ps4/exploit/karo-g2allpro/index.html",
+      "bytes": 2965,
+      "sha256": "755ace01cd359a96deeb84508f626689eaea003866bad5470fd1eea856a6288e",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/g2allpro/index.html",
+      "nativeEntrySHA256": "2eea71f1cd13fb6ce640497828c2fb30039a7c93828cfeb93e094104716ef090"
+    },
+    {
+      "id": "karo-binloader-505",
+      "page": "/hosts/ps4/exploit/karo-binloader-505/index.html",
+      "bytes": 2589,
+      "sha256": "1681c41fcee2093257763684ba0ebd06cbad7bef8a55f001ed136760a2f3eb3f",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/505/index.html",
+      "nativeEntrySHA256": "57604e819a574261f3a25c381c0166c15b81f1266f90d17542297096d1401f6b"
+    },
+    {
+      "id": "karo-binloader-672",
+      "page": "/hosts/ps4/exploit/karo-binloader-672/index.html",
+      "bytes": 2589,
+      "sha256": "c03ebbe33e48c1a7cc27a0dc4b310b8ea103871deea2384e27427c4f8293c4c8",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/672/index.html",
+      "nativeEntrySHA256": "e31f7feea9232c6275f317e37ef775f01ff90ed6c6d55c5f6ad1538ca06d118b"
+    },
+    {
+      "id": "karo-binloader-702",
+      "page": "/hosts/ps4/exploit/karo-binloader-702/index.html",
+      "bytes": 2724,
+      "sha256": "6571b22d7b664cebcb47564c46aa68d46d0307a6edfcf9862cd8268828cc86c8",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/702/index.html",
+      "nativeEntrySHA256": "b7cb34e474d93207c37236589323fe8957ee7077c5c61d250d160603191629b8"
+    },
+    {
+      "id": "karo-binloader-755",
+      "page": "/hosts/ps4/exploit/karo-binloader-755/index.html",
+      "bytes": 2589,
+      "sha256": "108af18cbf7d3314385f743ea4b940d923c41d767362470815f72d2bb24a9df5",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/755/index.html",
+      "nativeEntrySHA256": "3cba1c461c9bb18c147064dfd89f7f987c7ab566231fa028fdaab88251a5679f"
+    },
+    {
+      "id": "karo-ps5-umtx",
+      "page": "/hosts/ps5/exploit/karo-ps5-umtx/index.html",
+      "bytes": 3092,
+      "sha256": "853e780d4137afd1073075c48149ed55ebae279ae2c3ec834aa8d63250292ece",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/UMTX/index.html",
+      "nativeEntrySHA256": "f733c02e5713de7939081ea1f79db0939fadc9ce269fae1173f3f3d5c0d6ef35"
+    },
+    {
+      "id": "karo-ps5-p2jb",
+      "page": "/hosts/ps5/exploit/karo-ps5-p2jb/index.html",
+      "bytes": 2756,
+      "sha256": "214fe388c38ee842b4b3dba0e3340719809c681826f1e0b9bdc89d46aaa65a42",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/P2JB/index.html",
+      "nativeEntrySHA256": "8dd90b2ba4b6c3a0394b81f7bfa8dd1d024856f5d870d75b490b09dc36ad47be"
+    },
+    {
+      "id": "karo-ps5-poopspl",
+      "page": "/hosts/ps5/exploit/karo-ps5-poopspl/index.html",
+      "bytes": 3079,
+      "sha256": "278ceebe6b4820e7c2734d63121f22194d8b8dc41f2ebcd8bc8bf3675f0d747e",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/poopspl/index.html",
+      "nativeEntrySHA256": "750a770447eef1e38b9c2133d4d8aab210bef9235ea8ea481762b5f8addece59"
+    },
+    {
+      "id": "karo-ps5-relapse",
+      "page": "/hosts/ps5/exploit/karo-ps5-relapse/index.html",
+      "bytes": 3191,
+      "sha256": "fe6e6c814bc7b71118d26b8802c5300a51b9361e7c95fb1ca5989ec7a04da682",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/relapse/index.html",
+      "nativeEntrySHA256": "adf285828f27fd5a2b902c303975b60571db488646d363298ea4462a29dc1046"
+    },
+    {
+      "id": "karo-ps5-pr-poops",
+      "page": "/hosts/ps5/exploit/karo-ps5-pr-poops/index.html",
+      "bytes": 3177,
+      "sha256": "39e43aabf6e94f25929f798e3d4dbc7e74e25dcb3e0eeedec507eba27ef7796e",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/pr/poops/index.html",
+      "nativeEntrySHA256": "6d1fd43888b161a7664d47f11250d527d0b1436192b8d48e36138a3454382b38"
+    },
+    {
+      "id": "karo-ps5-pr-relapse",
+      "page": "/hosts/ps5/exploit/karo-ps5-pr-relapse/index.html",
+      "bytes": 3229,
+      "sha256": "390fda6b7615c8cb26b07cd0b2fc14e56674c069772afb07dac2770b9a16e8a5",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/pr/relapse/index.html",
+      "nativeEntrySHA256": "025befbe2d459591125d732841cf9c8672c5401cb71e5c2d2dffa1deb79ee131"
+    }
+  ],
+  "retained": [],
+  "nativeFilesChanged": 0,
+  "downloadFilesChanged": 0,
+  "consoleContact": false,
+  "payloadExecution": false
+}

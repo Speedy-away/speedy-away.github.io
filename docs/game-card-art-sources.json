@@ -1,0 +1,123 @@
+{
+  "checkedAt": "2026-11-02T15:31:00.939Z",
+  "policy": "Official storefront game artwork, not platform compatibility evidence.",
+  "results": [
+    {
+      "id": "dead-rising-2",
+      "name": "Dead Rising® 2",
+      "source": "https://store.steampowered.com/api/appdetails?appids=45740&l=english",
+      "imageURL": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/45740/header.jpg?t=1768868174",
+      "path": "/assets/images/game-card-covers/dead-rising-2-official-v1.jpg",
+      "bytes": 55498,
+      "sha256": "b5ba2d5d8389c28e745ee7974fcb0a458590973bc759b83642fe9ae6797aeeaf",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "dead-island-riptide",
+      "name": "dead-island-riptide",
+      "source": "https://store.steampowered.com/api/appdetails?appids=216250&l=english",
+      "imageURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/216250/header.jpg",
+      "path": "/assets/images/game-card-covers/dead-island-riptide-official-v1.jpg",
+      "bytes": 137588,
+      "sha256": "817f57dbb83649c5878b0552a4b638b12a29856d28a63a939bb40da31e6e8343",
+      "status": "retrieved",
+      "metadataConfirmed": false
+    },
+    {
+      "id": "dead-island",
+      "name": "dead-island",
+      "source": "https://store.steampowered.com/api/appdetails?appids=91310&l=english",
+      "imageURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/91310/header.jpg",
+      "path": "/assets/images/game-card-covers/dead-island-official-v1.jpg",
+      "bytes": 27092,
+      "sha256": "bf92f3b0f3e84e7336e2e4768a079150ad28bbdc367557bef7f9a31c2b6f21ce",
+      "status": "retrieved",
+      "metadataConfirmed": false
+    },
+    {
+      "id": "left-4-dead-2",
+      "name": "Left 4 Dead 2",
+      "source": "https://store.steampowered.com/api/appdetails?appids=550&l=english",
+      "imageURL": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1772742214",
+      "path": "/assets/images/game-card-covers/left-4-dead-2-official-v1.jpg",
+      "bytes": 39230,
+      "sha256": "c9eb41b26bfc9f849ba5c0408d28cfe81a36616079b2a4d1a191521925d8173a",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "cod-world-at-war",
+      "name": "Call of Duty: World at War",
+      "source": "https://store.steampowered.com/api/appdetails?appids=10090&l=english",
+      "imageURL": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10090/header.jpg?t=1780962495",
+      "path": "/assets/images/game-card-covers/cod-world-at-war-official-v1.jpg",
+      "bytes": 29411,
+      "sha256": "6d4a9d620558803809eb749b9a3f3dfeb8e179a546b69a7d8dacf0bb552db04c",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "gta-san-andreas",
+      "name": "Grand Theft Auto: San Andreas",
+      "source": "https://store.steampowered.com/api/appdetails?appids=12120&l=english",
+      "imageURL": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/12120/header.jpg?t=1634144450",
+      "path": "/assets/images/game-card-covers/gta-san-andreas-official-v1.jpg",
+      "bytes": 38042,
+      "sha256": "f3dd1560b03850747cc346ab2aa7e3e24605100eebdde2e8656b80c4f65c32a5",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "quantum-of-solace",
+      "name": "Quantum of Solace",
+      "source": "https://store.steampowered.com/api/appdetails?appids=10080&l=english",
+      "imageURL": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10080/header.jpg?t=1447351546",
+      "path": "/assets/images/game-card-covers/quantum-of-solace-official-v1.jpg",
+      "bytes": 30654,
+      "sha256": "214f2f5b848b6a6851c50b3a7b9b1e36fadb97b86fe639e8c35beb2254c9426d",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "skate-3",
+      "source": "https://www.ea.com/games/skate/skate-3?setLocale=en-us",
+      "imageURL": "https://media.contentapi.ea.com/content/dam/gin/images/2017/01/skate-3-key-art.jpg.adapt.crop16x9.1080p.jpg",
+      "path": "/assets/images/game-card-covers/skate-3-official-v1.jpg",
+      "bytes": 340492,
+      "sha256": "3034424189848f7aca63497f98f85dc7229616d64c0c07d4403233c563a04359",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "uncharted-1",
+      "source": "https://www.playstation.com/en-us/uncharted/",
+      "imageURL": "https://gmedia.playstation.com/is/image/SIEPDC/uncharted-1-drakes-fortune-keyart-16x9-en-04aug21?wid=1200&fmt=jpeg",
+      "path": "/assets/images/game-card-covers/uncharted-1-official-v1.jpg",
+      "bytes": 204472,
+      "sha256": "37e251d6275b4f815c35f79d4977b8858b30d3dd42104e96ce81646fed2d16f9",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "uncharted-2",
+      "source": "https://www.playstation.com/en-us/uncharted/",
+      "imageURL": "https://gmedia.playstation.com/is/image/SIEPDC/uncharted-2-among-theives-16x9-en-04aug21?wid=1200&fmt=jpeg",
+      "path": "/assets/images/game-card-covers/uncharted-2-official-v1.jpg",
+      "bytes": 227640,
+      "sha256": "fefca986bf9f5df5a049407d0491064a96d53b36e2cd36772e984b049379f9e0",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    },
+    {
+      "id": "uncharted-3",
+      "source": "https://www.playstation.com/en-us/uncharted/",
+      "imageURL": "https://gmedia.playstation.com/is/image/SIEPDC/uncharted-3-drakes-deception-16x9-en-04aug21?wid=1200&fmt=jpeg",
+      "path": "/assets/images/game-card-covers/uncharted-3-official-v1.jpg",
+      "bytes": 192966,
+      "sha256": "cc296f0826c835f6e40564a9e4588d8b79ae82b53736aeeeb9a335765c5fe4bf",
+      "status": "retrieved",
+      "metadataConfirmed": true
+    }
+  ]
+}

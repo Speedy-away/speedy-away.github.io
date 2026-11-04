@@ -1,0 +1,9 @@
+.host-selector .host-console-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.host-selector .host-console-card { color: var(--text-primary); text-decoration: none; }
+.host-selector .host-console-card img { aspect-ratio: 16 / 9; object-fit: contain; }
+.host-selector .host-console-card .guide-firmware-open { margin-top: auto; padding-top: 12px; }
+.host-address { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-bottom: 26px; }
+.host-address > span { color: var(--text-secondary); }
+.host-address code { font-size: clamp(1rem, 2.8vw, 1.35rem); overflow-wrap: anywhere; }
+.host-route-note { color: var(--text-secondary); margin-bottom: 24px; }
+@media (max-width: 700px) { .host-selector .host-console-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-11-02",
+  "scope": "Source-confirmed shared Call of Duty resources in the PS4/PS5 collection. MultiCOD is a resource index, not a game or a platform compatibility claim.",
+  "families": [
+    {
+      "id": "bo1-bo2-gsc-injector",
+      "title": "GSC Injector v1.0 · BO1 & BO2 menu pack",
+      "type": "menu-pack",
+      "version": "v1.0",
+      "description": "The captured post lists separate Multiplayer and Zombies menus for both games, selected through an in-game panel.",
+      "environment": "The post labels this PS4/PS5 and supplies a GoldHEN plugin configuration. Match that documented game environment and installed PRX filename; exact game update and console firmware ranges are not stated.",
+      "evidenceFiles": ["docs/discord-ps4-ps5-raw/bo1-bo2-thru-game-injector-final.json"],
+      "games": [
+        {
+          "gameId": "black-ops-1",
+          "resourceId": "bo1-bo2-gsc-injector",
+          "support": "Multiplayer: Redemption, Encore v8 and its supplied patches. Zombies: Encore V8 ZM.",
+          "source": "https://discord.com/channels/1528329794947776572/1564300494330138826"
+        },
+        {
+          "gameId": "black-ops-2",
+          "resourceId": "bo1-bo2-gsc-injector",
+          "support": "Multiplayer: Jiggy and Project Abyss. Zombies: ByGrEk, ByGrEk Nexus, Heidi v13, EnCoReV9, Project Iconic V3 and RMT.",
+          "source": "https://discord.com/channels/1528329794947776572/1564300494330138826"
+        }
+      ]
+    },
+    {
+      "id": "matrix-menus-ps4",
+      "title": "MatrixMenusPS4 · four-game distribution",
+      "type": "menu-pack",
+      "version": "Archive version not stated; individual game updates listed below",
+      "description": "The same preserved archive is attached to four game-specific posts. Its eight ELF filenames match the updates listed by those posts.",
+      "environment": "PS4 game payloads. No native PS5 build, console firmware range, title ID range or controls are established by this archive. It contains no README. Select only the binary for the stated game and update; consult that game's resource page for the preserved source.",
+      "archiveFilename": "MatrixMenusPS4.rar",
+      "archiveSha256": "2d26c503208168dbf9bb83db9344f20519680d835038853461d191962dab4bd5",
+      "evidenceFiles": ["docs/console-archive-readiness-audit.json", "docs/ps4-bo3-resources.json", "docs/ps4-ps5-cod-resources.json"],
+      "games": [
+        {
+          "gameId": "black-ops-3",
+          "resourceId": "bo3-matrix",
+          "legacy": true,
+          "support": "BO3 game updates 1.00 and 1.26 only, as stated in its source post.",
+          "updates": ["1.00", "1.26"],
+          "archiveFiles": ["Matrix_Menus/BO3_100.elf", "Matrix_Menus/BO3_126.elf"],
+          "source": "https://discord.com/channels/1528329794947776572/1565343630321909790"
+        },
+        {
+          "gameId": "ghosts",
+          "resourceId": "ghosts-matrixmods",
+          "support": "Ghosts game updates 1.00 and 1.20 only, as stated in its source post.",
+          "updates": ["1.00", "1.20"],
+          "archiveFiles": ["Matrix_Menus/Ghosts_100.elf", "Matrix_Menus/Ghosts_120.elf"],
+          "source": "https://discord.com/channels/1528329794947776572/1565346658869317742"
+        },
+        {
+          "gameId": "advanced-warfare",
+          "resourceId": "aw-matrixmods",
+          "support": "Advanced Warfare game updates 1.00 and 1.23 only, as stated in its source post.",
+          "updates": ["1.00", "1.23"],
+          "archiveFiles": ["Matrix_Menus/AW_100.elf", "Matrix_Menus/AW_123.elf"],
+          "source": "https://discord.com/channels/1528329794947776572/1565343349681029200"
+        },
+        {
+          "gameId": "modern-warfare-remastered",
+          "resourceId": "mwr-matrixmods",
+          "support": "Modern Warfare Remastered game updates 1.02 and 1.13 only, as stated in its source post.",
+          "updates": ["1.02", "1.13"],
+          "archiveFiles": ["Matrix_Menus/MWR_102.elf", "Matrix_Menus/MWR_113.elf"],
+          "source": "https://discord.com/channels/1528329794947776572/1565343901152317523"
+        }
+      ]
+    },
+    {
+      "id": "hydra-v2-2-0",
+      "title": "HYDRA 2.2.0 · Windows menu tool",
+      "type": "desktop-menu",
+      "version": "Pinned v2.2.0",
+      "description": "The publisher's tagged release adds WWII support and updates its Ghosts menus. This is a Windows portable tool, with separate game-specific menu support.",
+      "environment": "The WWII release notes explicitly name PS4. No PS5 compatibility, exact game updates, title IDs, firmware range or connection ports are stated. This release does not replace the older BO1/BO2 v1.0.0 entry.",
+      "evidenceFiles": ["docs/discord-ps4-ps5-raw/hydra-v2-2-0-release-evidence.json"],
+      "games": [
+        {
+          "gameId": "wwii",
+          "resourceId": "hydra-wwii-v2-2-0",
+          "support": "PS4 WWII GSC injector with Hydra menus for Multiplayer and Zombies. R1 + Square opens the Multiplayer menu; Zombies opening controls are not stated.",
+          "source": "https://github.com/SnowdenShadow/HYDRA-Releases/releases/tag/v2.2.0"
+        },
+        {
+          "gameId": "ghosts",
+          "resourceId": "hydra-wwii-v2-2-0",
+          "support": "Hydra menus for Multiplayer and Extinction, according to the same v2.2.0 release notes.",
+          "source": "https://github.com/SnowdenShadow/HYDRA-Releases/releases/tag/v2.2.0"
+        }
+      ]
+    },
+    {
+      "id": "ials96-v1-2-0",
+      "title": "ials96 BO2 1.2.0 · shared Windows tool",
+      "type": "desktop-helper",
+      "version": "Pinned v1.2.0",
+      "description": "A BO2 desktop tool whose publisher also retains two named BO1 functions. The BO1 mapping is limited to those functions.",
+      "environment": "Windows desktop application. These release notes do not establish native console execution, a complete BO1 menu port or PS5 compatibility.",
+      "evidenceFiles": ["docs/discord-ps4-ps5-raw/bo2-ials96-v1-2-0.json", "docs/ps4-ps5-cod-resources.json"],
+      "games": [
+        {
+          "gameId": "black-ops-2",
+          "resourceId": "bo2-ials96-v1-2-0",
+          "support": "BO2 tool; v1.2.0 notes describe local verification for Send debug and Inject. Exact game update and title IDs are not supplied in these notes.",
+          "source": "https://github.com/ials96/ials96-updates/releases/tag/v1.2.0"
+        },
+        {
+          "gameId": "black-ops-1",
+          "resourceId": "bo2-ials96-v1-2-0",
+          "support": "BO1 LAN Fix and Lobby Modded Classes only, as named in the v1.2.0 notes. This does not establish the same menu support as BO2.",
+          "source": "https://github.com/ials96/ials96-updates/releases/tag/v1.2.0"
+        }
+      ]
+    },
+    {
+      "id": "hydra-v1-0-0-historical",
+      "title": "HYDRA v1.0.0 · historical BO1/BO2 entry",
+      "type": "historical",
+      "version": "v1.0.0 · exact release unavailable",
+      "description": "The captured BO1/BO2 post is preserved on both game pages. The exact v1.0.0 file was unavailable at the 2 November 2026 check.",
+      "environment": "Historical Windows RTM entry. No ready download or new game, region, update or PS5 compatibility claim is inferred from newer HYDRA releases.",
+      "evidenceFiles": ["docs/discord-ps4-ps5-raw/bo1-bo2-hydra-v1-0-0.json", "docs/ps4-ps5-cod-resources.json"],
+      "games": [
+        {
+          "gameId": "black-ops-1",
+          "resourceId": "bo1-bo2-hydra-v1-0-0",
+          "support": "BO1 resource mapping retained from the captured BO1/BO2 post. Exact v1.0.0 file unavailable.",
+          "source": "https://discord.com/channels/1528329794947776572/1558076826579112007"
+        },
+        {
+          "gameId": "black-ops-2",
+          "resourceId": "bo1-bo2-hydra-v1-0-0",
+          "support": "BO2 resource mapping retained from the captured BO1/BO2 post. Exact v1.0.0 file unavailable.",
+          "source": "https://discord.com/channels/1528329794947776572/1558076826579112007"
+        }
+      ]
+    }
+  ]
+}

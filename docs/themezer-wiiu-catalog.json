@@ -1,0 +1,1168 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-02T08:32:44.061Z",
+  "discoveryPath": [
+    "https://themezer.net/",
+    "https://themezer.net/wiiu",
+    "https://themezer.net/wiiu/themes"
+  ],
+  "sources": [
+    {
+      "url": "https://themezer.net/",
+      "title": "Themezer homepage"
+    },
+    {
+      "url": "https://themezer.net/wiiu",
+      "title": "Linked Wii U hub"
+    },
+    {
+      "url": "https://themezer.net/wiiu/themes",
+      "title": "Actual Wii U theme collection"
+    },
+    {
+      "url": "https://themecafe.github.io/Docs/install/themiify/",
+      "title": "Themiify installation"
+    },
+    {
+      "url": "https://themecafe.github.io/Docs/install/loading/",
+      "title": "StyleMiiU and SDCafiine layouts"
+    },
+    {
+      "url": "https://themecafe.github.io/Docs/faq/",
+      "title": "Recovery and region notes"
+    },
+    {
+      "url": "https://wiiu.hacks.guide/",
+      "title": "Wii U firmware and Aroma setup"
+    },
+    {
+      "url": "https://github.com/ThemeCafe/StyleMiiU-Plugin/tree/0.5.3",
+      "title": "Pinned StyleMiiU documentation"
+    },
+    {
+      "url": "https://github.com/wiiu-env/sdcafiine_plugin",
+      "title": "SDCafiine dependencies"
+    }
+  ],
+  "themes": [
+    {
+      "id": "dark-theme-purple",
+      "title": "Dark Theme - Purple",
+      "author": "MikaDubbz",
+      "uploader": "gbatemp-archive",
+      "sourceUrl": "https://themezer.net/wiiu/themes/dark-theme-purple-1F578",
+      "originalSourceUrls": [
+        "https://gbatemp.net/members/mikadubbz.438041/",
+        "https://gbatemp.net/posts/9555837/"
+      ],
+      "image": "/assets/images/wiiu-themes/dark-theme-purple.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/38adbc3f-c3df-411d-b72e-730bb714a314/collage.webp?hash=Ox7Si5gaeL57qmZkEv56qYB1UQ%2FTsEK8SJ3oiz%2BmeiQ%3D",
+        "credit": "MikaDubbz / Themezer",
+        "bytes": 104034,
+        "sha256": "481f12bb83b054ff5d6b8a2df8e591afd3cd914fe3777a95f7540e826330b61d",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F578/57d6ef2805338c20/dark-theme-purple.utheme",
+      "version": "2021-09-10T11:21:52.000Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "A near-black Menu with purple lighting and coordinated USB and display-swap symbols.",
+      "tags": [
+        "Dark",
+        "Purple"
+      ],
+      "animated": false,
+      "customMusic": false,
+      "customMessages": false,
+      "packageMetadata": {
+        "themeID": "Themezer:1F578",
+        "themeName": "Dark Theme - Purple",
+        "themeAuthor": "gbatemp-archive",
+        "themeVersion": "2021-09-10T11:21:52.000Z"
+      },
+      "download": {
+        "name": "Dark Theme - Purple by gbatemp-archive (Themezer-T1F578).utheme",
+        "version": "2021-09-10T11:21:52.000Z",
+        "bytes": 3074520,
+        "sha256": "57d6ef2805338c2048a6fd95d1de46f637dfdcf5be8aa3697e796201acb429dd",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F578/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F578/57d6ef2805338c20/dark-theme-purple.utheme",
+        "itemId": "wiiu-themes-dark-theme-purple",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 420684,
+          "sha256": "c3d610fd6406e120857d4240c7f914f8877ad8e2e32bfd481f5e9e5227158d1a",
+          "sourceBytes": 6859489,
+          "targetBytes": 6929168,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "14851d28",
+          "patchCrc32": "6ff08081"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2568476,
+          "sha256": "ec31ef4f44643c73d099f62635abec557798c2e17e72b433a58309969834fd13",
+          "sourceBytes": 7863004,
+          "targetBytes": 7442268,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "418f2a9a",
+          "patchCrc32": "42aabd3b"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 420684,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2568476,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 132272,
+          "crc32": "2f800437"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 179521,
+          "crc32": "acff9c2f"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 189497,
+          "crc32": "f0356295"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 181,
+          "crc32": "f6232b5a"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    },
+    {
+      "id": "dark-theme-light-blue",
+      "title": "Dark Theme - Light Blue",
+      "author": "MikaDubbz",
+      "uploader": "gbatemp-archive",
+      "sourceUrl": "https://themezer.net/wiiu/themes/dark-theme-light-blue-1F579",
+      "originalSourceUrls": [
+        "https://gbatemp.net/members/mikadubbz.438041/",
+        "https://gbatemp.net/posts/9555986/"
+      ],
+      "image": "/assets/images/wiiu-themes/dark-theme-light-blue.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/f16f146c-790e-418c-8464-035841b71a5d/collage.webp?hash=pmsSz1zEjAjkeQortPbRGACZnTOsPJMcwN%2BvPhaFSEM%3D",
+        "credit": "MikaDubbz / Themezer",
+        "bytes": 127470,
+        "sha256": "dcb0571afd6d8b2212603a19c750c889fe7b4bf01f254e788e2f6316b9c1e37d",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F579/8ddc1285ab51f11e/dark-theme-light-blue.utheme",
+      "version": "2021-09-10T11:09:24.000Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "A dark Menu with pale blue highlights that retain much of the original visual motion.",
+      "tags": [
+        "Dark",
+        "Blue"
+      ],
+      "animated": false,
+      "customMusic": false,
+      "customMessages": false,
+      "packageMetadata": {
+        "themeID": "Themezer:1F579",
+        "themeName": "Dark Theme - Light Blue",
+        "themeAuthor": "gbatemp-archive",
+        "themeVersion": "2021-09-10T11:09:24.000Z"
+      },
+      "download": {
+        "name": "Dark Theme - Light Blue by gbatemp-archive (Themezer-T1F579).utheme",
+        "version": "2021-09-10T11:09:24.000Z",
+        "bytes": 2848197,
+        "sha256": "8ddc1285ab51f11e3f75fa44f9aa7c9d54c858654c155f2426d34a9f393336bc",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F579/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F579/8ddc1285ab51f11e/dark-theme-light-blue.utheme",
+        "itemId": "wiiu-themes-dark-theme-light-blue",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 47239,
+          "sha256": "20c84c6f4164ae18729bc6243c32b3c1027a258d5f342794923fdee6d9a6a8a1",
+          "sourceBytes": 6859489,
+          "targetBytes": 6870241,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "eaeeb695",
+          "patchCrc32": "42c9b351"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2585231,
+          "sha256": "52f9693a7cfcf92f84b665618be04226f8e1696c8490f0c05d22ecb26dc08b74",
+          "sourceBytes": 7863004,
+          "targetBytes": 7454044,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "20ea7f54",
+          "patchCrc32": "ec34165a"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 47239,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2585231,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 138330,
+          "crc32": "6c1e1e5d"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 232982,
+          "crc32": "39e54ba1"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 213462,
+          "crc32": "5bbd9d39"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 185,
+          "crc32": "ba2cf20a"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    },
+    {
+      "id": "vaporwave-summer",
+      "title": "Vaporwave Summer",
+      "author": "MikaDubbz",
+      "uploader": "gbatemp-archive",
+      "sourceUrl": "https://themezer.net/wiiu/themes/vaporwave-summer-1F577",
+      "originalSourceUrls": [
+        "https://gbatemp.net/members/mikadubbz.438041/",
+        "https://gbatemp.net/posts/9545282/"
+      ],
+      "image": "/assets/images/wiiu-themes/vaporwave-summer.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/db48a783-cd13-497d-906e-813059dbdf3c/collage.webp?hash=9AQNIV%2B9yy7cf1JPr3hPAEv3Xe0e2n%2B39lzVIuNGZp8%3D",
+        "credit": "MikaDubbz / Themezer",
+        "bytes": 106244,
+        "sha256": "e40382c0fe04a3a063c03ccb05b41df683f339c011ab3755b7ea10f351d1030e",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F577/f8ff93009b3ff73e/vaporwave-summer.utheme",
+      "version": "2021-12-19T21:00:48.000Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "Pink and blue surfaces with the creator’s later USB and display-swap icon update.",
+      "tags": [
+        "Vaporwave"
+      ],
+      "animated": false,
+      "customMusic": false,
+      "customMessages": false,
+      "packageMetadata": {
+        "themeID": "Themezer:1F577",
+        "themeName": "Vaporwave Summer",
+        "themeAuthor": "gbatemp-archive",
+        "themeVersion": "2021-12-19T21:00:48.000Z"
+      },
+      "download": {
+        "name": "Vaporwave Summer by gbatemp-archive (Themezer-T1F577).utheme",
+        "version": "2021-12-19T21:00:48.000Z",
+        "bytes": 3224013,
+        "sha256": "f8ff93009b3ff73ef7952e3f1237d7a3ade528753163b81f306bdc2ce63e31b0",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F577/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F577/f8ff93009b3ff73e/vaporwave-summer.utheme",
+        "itemId": "wiiu-themes-vaporwave-summer",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 434290,
+          "sha256": "d9722a83b9c42464d77629fa7840441484789364679fe1e1ac675c2cd8d055f9",
+          "sourceBytes": 6859489,
+          "targetBytes": 6937360,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "1aa42edf",
+          "patchCrc32": "1fb5541e"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2695665,
+          "sha256": "b15b6fb85cc26db6506fbf06d474ba037efd4cb20c8df568ee736fc1a2ee44ec",
+          "sourceBytes": 7863004,
+          "targetBytes": 8435804,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "f8cf429b",
+          "patchCrc32": "9a2871ab"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 434290,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2695665,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 143202,
+          "crc32": "219a7ede"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 178098,
+          "crc32": "f3e010d5"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 199284,
+          "crc32": "8e0bc029"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 178,
+          "crc32": "ce18028b"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    },
+    {
+      "id": "cloudy-day",
+      "title": "Cloudy Day",
+      "author": "dewgong64",
+      "uploader": "dewgong64",
+      "sourceUrl": "https://themezer.net/wiiu/themes/cloudy-day-1F5C3",
+      "originalSourceUrls": [
+        "https://discord.com/channels/1195784055296381020/1261281610108764270"
+      ],
+      "image": "/assets/images/wiiu-themes/cloudy-day.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/17ca7416-ab42-4e86-bd96-26d09d2a42cf/collage.webp?hash=F7jayamfnuoYrN%2BfW%2B%2FYTlYnd6Bt2VcyM%2BQIVk4jXs4%3D",
+        "credit": "dewgong64 / Themezer",
+        "bytes": 73482,
+        "sha256": "f92f15accb6f7509b1b1b817268db7a64a84d9c1d8feedb9b2b4d410d31ee187",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F5C3/baef8c421db1e14b/cloudy-day.utheme",
+      "version": "2024-07-12T11:22:49.329Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "A soft cloud backdrop paired with a customized launcher cursor and icons.",
+      "tags": [
+        "Sky",
+        "Clouds"
+      ],
+      "animated": false,
+      "customMusic": false,
+      "customMessages": false,
+      "packageMetadata": {
+        "themeID": "Themezer:1F5C3",
+        "themeName": "Cloudy Day",
+        "themeAuthor": "dewgong64",
+        "themeVersion": "2024-07-12T11:22:49.329Z"
+      },
+      "download": {
+        "name": "Cloudy Day by dewgong64 (Themezer-T1F5C3).utheme",
+        "version": "2024-07-12T11:22:49.329Z",
+        "bytes": 2988507,
+        "sha256": "baef8c421db1e14b79a1a0b8d335cf75f3d0e90dd3e89da41bc79c70ae2d6fb3",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F5C3/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F5C3/baef8c421db1e14b/cloudy-day.utheme",
+        "itemId": "wiiu-themes-cloudy-day",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 72875,
+          "sha256": "0619d919cf00d8140992f8d100ce77e7a52040b58c6b1f1208bec0f9bcfe39b7",
+          "sourceBytes": 6859489,
+          "targetBytes": 6889313,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "7d3a6669",
+          "patchCrc32": "76789f0f"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2944079,
+          "sha256": "78e966df675c46c2a83be5da38adafd8fe78760a3ad08dabb116ad23ac42ecd9",
+          "sourceBytes": 7863004,
+          "targetBytes": 7887196,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "f7a36903",
+          "patchCrc32": "4513cba8"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 72875,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 2944079,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 95366,
+          "crc32": "8f702613"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 130479,
+          "crc32": "4a1d701c"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 153038,
+          "crc32": "c2af1a47"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 166,
+          "crc32": "e0b6b575"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    },
+    {
+      "id": "wii-theme-dark",
+      "title": "Wii Theme - Dark",
+      "author": "dewgong64",
+      "uploader": "dewgong64",
+      "sourceUrl": "https://themezer.net/wiiu/themes/wii-theme-dark-1F5B6",
+      "originalSourceUrls": [
+        "https://discord.com/channels/1195784055296381020/1243749730329034792"
+      ],
+      "image": "/assets/images/wiiu-themes/wii-theme-dark.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/035f7eb5-90c9-4eed-8ec4-0bc60128b679/collage.webp?hash=jS0dU%2FmAq2TO1b27IEeLZTCZU3rqe9THAEdSMQYPd4k%3D",
+        "credit": "dewgong64 / Themezer",
+        "bytes": 68748,
+        "sha256": "7510b78688d5d3d5d5adcbb65d6da8702ee683ca13c5eadd73b49339074fb636",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F5B6/5770dd6a9c3153c4/wii-theme-dark.utheme",
+      "version": "2024-05-25T02:17:36.026Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "A dark, Wii-inspired look for the native Wii U Menu, with its own music and launcher graphics.",
+      "tags": [
+        "Wii",
+        "Dark Mode"
+      ],
+      "animated": false,
+      "customMusic": true,
+      "customMessages": false,
+      "packageMetadata": {
+        "themeID": "Themezer:1F5B6",
+        "themeName": "Wii Theme - Dark",
+        "themeAuthor": "dewgong64",
+        "themeVersion": "2024-05-25T02:17:36.026Z"
+      },
+      "download": {
+        "name": "Wii Theme - Dark by dewgong64 (Themezer-T1F5B6).utheme",
+        "version": "2024-05-25T02:17:36.026Z",
+        "bytes": 7615845,
+        "sha256": "5770dd6a9c3153c4e623c1adbaab06c15a25685796de38809df5433e98d316b8",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F5B6/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F5B6/5770dd6a9c3153c4/wii-theme-dark.utheme",
+        "itemId": "wiiu-themes-wii-theme-dark",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 585471,
+          "sha256": "dd2a11e2fcaeb8d806b36114641272136a6f9ce14c4097d0593bd65f8527f071",
+          "sourceBytes": 6859489,
+          "targetBytes": 6995724,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "e7679f95",
+          "patchCrc32": "8241c4af"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 4154653,
+          "sha256": "9a676ec62fb179408097ccd025be9d91fcb21c24b11239954ecc4ea09913c049",
+          "sourceBytes": 7863004,
+          "targetBytes": 7723912,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "df31ba28",
+          "patchCrc32": "60193f64"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 3136340,
+          "sha256": "418f6e694c83bfbf664297ab38a7511319e92354ba26edca82199f490d64b118",
+          "sourceBytes": 8477808,
+          "targetBytes": 9654624,
+          "metadataBytes": 0,
+          "sourceCrc32": "c9c16521",
+          "targetCrc32": "b159405a",
+          "patchCrc32": "1715545a"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 585471,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 4154653,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 3136340,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 158996,
+          "crc32": "5d06912d"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 292472,
+          "crc32": "91e6ac54"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 144545,
+          "crc32": "0bfc2582"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 172,
+          "crc32": "01e8ce28"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    },
+    {
+      "id": "mario-galaxy-theme-v2",
+      "title": "Mario Galaxy Theme V2",
+      "author": "Radnos",
+      "uploader": "gbatemp-archive",
+      "sourceUrl": "https://themezer.net/wiiu/themes/mario-galaxy-theme-v2-1F590",
+      "originalSourceUrls": [
+        "https://gbatemp.net/members/radnos.505945/",
+        "https://gbatemp.net/posts/10444539/"
+      ],
+      "image": "/assets/images/wiiu-themes/mario-galaxy-theme-v2.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/32c29973-f309-4c7f-b10b-b7d057b42173/collage.webp?hash=LaBUIFMhN5q2P5x9b2TkRROKoA0qmIVTGKRGQ4fiS8c%3D",
+        "credit": "Radnos / Themezer",
+        "bytes": 101864,
+        "sha256": "72f3f6514b86c4ac5450113c6382797ab1d18ec18835c97a300f16f86930dd7f",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F590/82b0d7000d63d6b7/mario-galaxy-theme-v2.utheme",
+      "version": "2024-06-22T12:46:52.000Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "The Comet Observatory rotates behind the Menu, with music contributed by dewgong64 for the second revision.",
+      "tags": [
+        "Mario",
+        "Super Mario Galaxy"
+      ],
+      "animated": false,
+      "customMusic": true,
+      "customMessages": false,
+      "packageMetadata": {
+        "themeID": "Themezer:1F590",
+        "themeName": "Mario Galaxy Theme V2",
+        "themeAuthor": "gbatemp-archive",
+        "themeVersion": "2024-06-22T12:46:52.000Z"
+      },
+      "download": {
+        "name": "Mario Galaxy Theme V2 by gbatemp-archive (Themezer-T1F590).utheme",
+        "version": "2024-06-22T12:46:52.000Z",
+        "bytes": 10623166,
+        "sha256": "82b0d7000d63d6b755758220b5618866357c7b5cfc8b09a5393cea2e0162f3e6",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F590/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F590/82b0d7000d63d6b7/mario-galaxy-theme-v2.utheme",
+        "itemId": "wiiu-themes-mario-galaxy-theme-v2",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 468117,
+          "sha256": "acc66f8dd0a03c40ec720d09e3ed376c530870c2dc9d9a36c37bbb9d89ddca86",
+          "sourceBytes": 6859489,
+          "targetBytes": 6961505,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "8f3bf6c6",
+          "patchCrc32": "a9223c82"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 6404227,
+          "sha256": "eff3d65a0e96961518f3d961876efe979bf4afa3f3351d5743d7e071391d723b",
+          "sourceBytes": 7863004,
+          "targetBytes": 11057756,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "b3d54014",
+          "patchCrc32": "f9af8370"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 4175842,
+          "sha256": "e8fb0a4da7d82b04654bf02e81e054a4199a0e966850dad6f3c93348c68bd1e4",
+          "sourceBytes": 8477808,
+          "targetBytes": 10642592,
+          "metadataBytes": 0,
+          "sourceCrc32": "c9c16521",
+          "targetCrc32": "590aec4a",
+          "patchCrc32": "e72ed695"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 468117,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 6404227,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 4175842,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 133262,
+          "crc32": "9a959ab7"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 172491,
+          "crc32": "ef6ca94f"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 193998,
+          "crc32": "aa1c23e6"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 183,
+          "crc32": "5a279238"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    },
+    {
+      "id": "botw-theme",
+      "title": "BOTW Theme",
+      "author": "perrohuevo",
+      "uploader": "perrohuevo",
+      "sourceUrl": "https://themezer.net/wiiu/themes/botw-theme-1F5A2",
+      "originalSourceUrls": [
+        "https://discord.com/channels/1195784055296381020/1233947340721750076"
+      ],
+      "image": "/assets/images/wiiu-themes/botw-theme.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/fb15efd5-d94b-4428-80e6-0766234ac895/collage.webp?hash=gfFHLOvBjWugow3pJyWGEQvZkt84qEONhWq9KejSpR0%3D",
+        "credit": "perrohuevo / Themezer",
+        "bytes": 109420,
+        "sha256": "51d9b6afdc971a9558a40b7cdbb5a480d0c81efa0ae10a2e6106826e2d337e5b",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F5A2/67b11a563c653575/botw-theme.utheme",
+      "version": "2024-04-28T01:09:19.446Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "Breath of the Wild scenery with animation, custom music and matching launcher graphics.",
+      "tags": [
+        "The Legend Of Zelda",
+        "Animated",
+        "Breath Of The Wild"
+      ],
+      "animated": true,
+      "customMusic": true,
+      "customMessages": false,
+      "packageMetadata": {
+        "themeID": "Themezer:1F5A2",
+        "themeName": "BOTW Theme",
+        "themeAuthor": "perrohuevo",
+        "themeVersion": "2024-04-28T01:09:19.446Z"
+      },
+      "download": {
+        "name": "BOTW Theme by perrohuevo (Themezer-T1F5A2).utheme",
+        "version": "2024-04-28T01:09:19.446Z",
+        "bytes": 15530504,
+        "sha256": "67b11a563c653575aa8de85385f30e84a5f5fdb88962df1db1f5e6065895c55a",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F5A2/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F5A2/67b11a563c653575/botw-theme.utheme",
+        "itemId": "wiiu-themes-botw-theme",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 198507,
+          "sha256": "c5fa8469a3fed5c669b33846320ca5cdf1c80790dce2cf8394cbc27849732f0c",
+          "sourceBytes": 6859489,
+          "targetBytes": 6995809,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "30cb3445",
+          "patchCrc32": "39f0055e"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 13382519,
+          "sha256": "16e6cb30afec8682ddf8fa57b578c404722c5fc26a5115f45b1ca24f07824f6b",
+          "sourceBytes": 7863004,
+          "targetBytes": 17610648,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "8105f8fc",
+          "patchCrc32": "dc4b3582"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 3305457,
+          "sha256": "5c56d183d1a9d0b88506951fda3b86bd07d10e234dad60e491cb8bfcb69c8222",
+          "sourceBytes": 8477808,
+          "targetBytes": 9890528,
+          "metadataBytes": 0,
+          "sourceCrc32": "c9c16521",
+          "targetCrc32": "d15185b5",
+          "patchCrc32": "520ed4da"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 198507,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 13382519,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 3305457,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 186917,
+          "crc32": "19dc3f77"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 150593,
+          "crc32": "20199881"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 196018,
+          "crc32": "eaa4eab4"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 167,
+          "crc32": "f34cb110"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    },
+    {
+      "id": "windwaker-theme",
+      "title": "Windwaker theme!",
+      "author": "wompwomp2.02119",
+      "uploader": "wompwomp2.02119",
+      "sourceUrl": "https://themezer.net/wiiu/themes/windwaker-theme-1F5A3",
+      "originalSourceUrls": [
+        "https://discord.com/channels/1195784055296381020/1233953096338767883"
+      ],
+      "image": "/assets/images/wiiu-themes/windwaker-theme.webp",
+      "imageProvenance": {
+        "url": "https://img.themezer.net/unsafe/hd/plain/s3://wiiu/themes/6b736f64-6630-4901-a8b7-2d658a1f53c1/collage.webp?hash=0bUjSUEpMFy%2BjmM1ZZCBTLi7btdNRpAD7xvxUELHlYQ%3D",
+        "credit": "wompwomp2.02119 / Themezer",
+        "bytes": 84916,
+        "sha256": "a6e35e7f3cb79d16554997d200e4e5b837b768ae739058fc6626e2e1737e6811",
+        "type": "Original project screenshot collage"
+      },
+      "localDownload": "/downloads/wiiu-themes/1F5A3/51b1d24a2e209d9b/windwaker-theme.utheme",
+      "version": "2024-04-28T01:33:41.755Z",
+      "platform": "Wii U",
+      "requirements": "Aroma + Themiify 1.2.1 + StyleMiiU 0.5.3; original Wii U Menu base files matching the bundled BPS checksums. Native Wii U Menu only. No numeric Menu revision is published for this theme; region-specific compatibility must be checked before applying.",
+      "description": "Wind Waker artwork and animation extend to WaraWara Plaza, with music, launcher graphics and selected US-language text patches.",
+      "tags": [
+        "The Legend Of Zelda",
+        "Animated",
+        "The Wind Waker"
+      ],
+      "animated": true,
+      "customMusic": true,
+      "customMessages": true,
+      "packageMetadata": {
+        "themeID": "Themezer:1F5A3",
+        "themeName": "Windwaker theme!",
+        "themeAuthor": "wompwomp2.02119",
+        "themeVersion": "2024-04-28T01:33:41.755Z"
+      },
+      "download": {
+        "name": "Windwaker theme! by wompwomp2.02119 (Themezer-T1F5A3).utheme",
+        "version": "2024-04-28T01:33:41.755Z",
+        "bytes": 12989734,
+        "sha256": "51b1d24a2e209d9b6db3869d5a2c005aafc22b5b2aaf1fe8ea07e44a5134d2e3",
+        "sourceUrl": "https://api.themezer.net/wiiu/themes/1F5A3/download?src=webapp",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/1F5A3/51b1d24a2e209d9b/windwaker-theme.utheme",
+        "itemId": "wiiu-themes-windwaker-theme",
+        "platform": "Wii U",
+        "category": [
+          "Themes"
+        ]
+      },
+      "patches": [
+        {
+          "name": "Men.bps",
+          "bytes": 466498,
+          "sha256": "834745ef596accd3fe128245a32eeb7c307074103b9f643d0a3e49f68224e5ea",
+          "sourceBytes": 6859489,
+          "targetBytes": 6970128,
+          "metadataBytes": 0,
+          "sourceCrc32": "b9a4343a",
+          "targetCrc32": "0758fd33",
+          "patchCrc32": "140e928d"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 7208160,
+          "sha256": "cd87f18d7cf006b9473d3540dd252365e7082f0ec4bd4c594aac557f564f2b5a",
+          "sourceBytes": 7863004,
+          "targetBytes": 11569048,
+          "metadataBytes": 0,
+          "sourceCrc32": "946cd8a2",
+          "targetCrc32": "6d8b97f5",
+          "patchCrc32": "9e4ca7f9"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 5032732,
+          "sha256": "1b9e2fa0a6d6d6b0f5ab32cc72d29d8955349106b4082d701ecb42536dde834e",
+          "sourceBytes": 8477808,
+          "targetBytes": 10379744,
+          "metadataBytes": 0,
+          "sourceCrc32": "c9c16521",
+          "targetCrc32": "72c8c435",
+          "patchCrc32": "35fe4f05"
+        },
+        {
+          "name": "AllMessage_UsEn.bps",
+          "bytes": 245779,
+          "sha256": "bbcc0e6d5c791e4a0d7db03ad955a9f4c876819f96f22f4a9a4be039a9c34480",
+          "sourceBytes": 274975,
+          "targetBytes": 281644,
+          "metadataBytes": 0,
+          "sourceCrc32": "9c91a249",
+          "targetCrc32": "a23c13c1",
+          "patchCrc32": "8c2bb14e"
+        },
+        {
+          "name": "AllMessage_UsFr.bps",
+          "bytes": 259764,
+          "sha256": "0b08929e93864a25ab017085142c6a06c3b01305f17af7e2b0e33dbcc91600a1",
+          "sourceBytes": 288613,
+          "targetBytes": 295817,
+          "metadataBytes": 0,
+          "sourceCrc32": "f80483ee",
+          "targetCrc32": "2f54466f",
+          "patchCrc32": "2f5d7615"
+        },
+        {
+          "name": "AllMessage_UsPt.bps",
+          "bytes": 246916,
+          "sha256": "8f61fd5098e47df3ecb0a2a5af433585eeca6352c4d76ec4219f898a275e48ca",
+          "sourceBytes": 273198,
+          "targetBytes": 280374,
+          "metadataBytes": 0,
+          "sourceCrc32": "82f3cb76",
+          "targetCrc32": "96704938",
+          "patchCrc32": "b084c214"
+        },
+        {
+          "name": "AllMessage_UsEs.bps",
+          "bytes": 258018,
+          "sha256": "978170f38e672cc0ca52e1edb83d4d03286b1577c8b88c45e6ddd2851b79ecd9",
+          "sourceBytes": 285345,
+          "targetBytes": 292610,
+          "metadataBytes": 0,
+          "sourceCrc32": "afa41b10",
+          "targetCrc32": "d5e93370",
+          "patchCrc32": "e884c65d"
+        }
+      ],
+      "contents": [
+        {
+          "name": "Men.bps",
+          "bytes": 466498,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "Men2.bps",
+          "bytes": 7208160,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "cafe_barista_men.bps",
+          "bytes": 5032732,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "AllMessage_UsEn.bps",
+          "bytes": 245779,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "AllMessage_UsFr.bps",
+          "bytes": 259764,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "AllMessage_UsPt.bps",
+          "bytes": 246916,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "AllMessage_UsEs.bps",
+          "bytes": 258018,
+          "crc32": "2144df1c"
+        },
+        {
+          "name": "preview-launcher.jpg",
+          "bytes": 116883,
+          "crc32": "c28939c0"
+        },
+        {
+          "name": "preview-warawara.jpg",
+          "bytes": 141492,
+          "crc32": "f916a791"
+        },
+        {
+          "name": "preview-collage.jpg",
+          "bytes": 170442,
+          "crc32": "0f678fe6"
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 178,
+          "crc32": "7ebac63d"
+        }
+      ],
+      "compatibility": {
+        "environment": "Aroma",
+        "target": "Wii U Menu",
+        "numericMenuRevision": "Not published by theme source",
+        "regions": "Verify against the console’s original Menu files; EUR memory limits still apply",
+        "sourceCrcChecked": true,
+        "uninstall": "Select the default theme in StyleMiiU or move the installed theme folder out of SD:/wiiu/themes; Aroma Safe Mode is L + Up + SELECT while booting Aroma."
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": "themiify",
+      "title": "Themiify",
+      "version": "1.2.1",
+      "project": "https://github.com/ThemeCafe/Themiify",
+      "sourceUrl": "https://github.com/ThemeCafe/Themiify/releases/download/v1.2.1/themiify.wuhb",
+      "local": "/downloads/wiiu-themes/tools/1.2.1/themiify.wuhb",
+      "name": "themiify.wuhb",
+      "installPath": "SD:/wiiu/apps/themiify.wuhb",
+      "requirements": "Aroma and StyleMiiU. WUHB launched from the Wii U Menu. Reads original Menu files and installs .utheme patch archives to the SD card.",
+      "description": "Browse Themezer or install the complete local .utheme files below. Builds patched Menu assets on SD from your own original base files.",
+      "download": {
+        "name": "themiify.wuhb",
+        "version": "1.2.1",
+        "bytes": 9445152,
+        "sha256": "970c7348b5468bc18bafc4c4e6e4c4ac4d22858731b10e26939a8b1cc426cdd4",
+        "sourceUrl": "https://github.com/ThemeCafe/Themiify/releases/download/v1.2.1/themiify.wuhb",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/tools/1.2.1/themiify.wuhb",
+        "itemId": "wiiu-themes-themiify",
+        "platform": "Wii U",
+        "category": [
+          "Tools"
+        ]
+      }
+    },
+    {
+      "id": "stylemiiu",
+      "title": "StyleMiiU",
+      "version": "0.5.3",
+      "project": "https://github.com/ThemeCafe/StyleMiiU-Plugin",
+      "sourceUrl": "https://github.com/ThemeCafe/StyleMiiU-Plugin/releases/download/0.5.3/stylemiiu.wps",
+      "local": "/downloads/wiiu-themes/tools/0.5.3/stylemiiu.wps",
+      "name": "stylemiiu.wps",
+      "installPath": "SD:/wiiu/environments/aroma/plugins/stylemiiu.wps",
+      "requirements": "Aroma with Wii U Plugin System. WPS plugin; not a launchable WUHB/RPX. The release contains the plugin only; retain your complete current Aroma modules.",
+      "description": "Loads a selected theme from SD:/wiiu/themes/ without replacing Wii U system files. Keep Menu themes out of SDCafiine when this plugin handles them.",
+      "download": {
+        "name": "stylemiiu.wps",
+        "version": "0.5.3",
+        "bytes": 163938,
+        "sha256": "8f532f638acf1fcdfc944ddd38f3fe96a34057eede3a2be2c90b8ceecdeecbe0",
+        "sourceUrl": "https://github.com/ThemeCafe/StyleMiiU-Plugin/releases/download/0.5.3/stylemiiu.wps",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/wiiu-themes/tools/0.5.3/stylemiiu.wps",
+        "itemId": "wiiu-themes-stylemiiu",
+        "platform": "Wii U",
+        "category": [
+          "Tools"
+        ]
+      }
+    }
+  ]
+}

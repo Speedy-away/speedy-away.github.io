@@ -1,0 +1,32 @@
+{
+  "version": "2026.11.02.1",
+  "upstream": "https://github.com/kvnhrt/ps5-browser-app",
+  "revision": "d427877157b5ffdf90847a0c3ad54c7025100f55",
+  "builder": "LibProsperoPkg 2.6.0, locally built from pinned source",
+  "buildPatch": "Target net9.0; LangVersion preview; disambiguate byte reversal with Enumerable.Reverse; installed .NET SDK 9.0.307",
+  "target": "https://whatwhatboy.com/console/ps5/",
+  "titleId": "WHAT00001",
+  "filename": "IV9999-WHAT00001_00-WHATWHATBOY00001-A0100-V0100.pkg",
+  "bytes": 1062157,
+  "sha256": "fa4e6e16bd0512c064d548d127d86d9e95992f03425646bcd1cb2b04489f1914",
+  "icon": {
+    "creator": "whatwhatboy site",
+    "path": "/console/ps5/site-launcher-assets/icon0.png",
+    "sha256": "9cae68a186571c7da92eb38f659bd714804b7f6c6f46e0b8aaa45ca79d7e34c1"
+  },
+  "structure": {
+    "format": "FullDebug PS5 FIH with embedded CNT",
+    "entries": 13,
+    "mediaCategory": 65536,
+    "deeplinkUri": "https://whatwhatboy.com/console/ps5/",
+    "titleId": "WHAT00001",
+    "packagedSdkVersion": "0x0200000000000000",
+    "packagedRequiredSystemSoftwareVersion": "0x0200000000000000",
+    "iconSha256": "9cae68a186571c7da92eb38f659bd714804b7f6c6f46e0b8aaa45ca79d7e34c1"
+  },
+  "nativeExecutableReadiness": {
+    "isLaunchReady": false,
+    "reason": "eboot.bin is intentionally empty. The documented browser-app shortcut mechanism uses param.json deeplinkUri instead of starting a native executable."
+  },
+  "verification": "Package generated; FIH/CNT bounds, packaged site URI, Media category, title ID and embedded icon hash checked. Never executed or installed on console hardware."
+}

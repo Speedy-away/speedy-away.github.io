@@ -1,0 +1,767 @@
+{
+  "schemaVersion": 1,
+  "id": "ps5-umtx",
+  "title": "PS5 · UMTX ELF loader",
+  "console": "ps5",
+  "entry": "/hosts/runtime/ps5-umtx/",
+  "runEntry": "/hosts/runtime/ps5-umtx/web/index.html",
+  "firmwares": [
+    "1.00",
+    "1.01",
+    "1.02",
+    "1.05",
+    "1.10",
+    "1.11",
+    "1.12",
+    "1.13",
+    "1.14",
+    "2.00",
+    "2.20",
+    "2.25",
+    "2.26",
+    "2.30",
+    "2.50",
+    "2.70",
+    "3.00",
+    "3.20",
+    "4.00",
+    "4.02",
+    "4.03",
+    "4.50",
+    "4.51"
+  ],
+  "listener": {
+    "transport": "tcp",
+    "port": 9021,
+    "format": "elf"
+  },
+  "source": {
+    "repository": "https://github.com/PS5Dev/PS5-UMTX-Jailbreak",
+    "commit": "2cf6778ebe89ff35255e1c228826d0d2155e9d2a"
+  },
+  "license": "Unlicense host; AGPL-3.0-or-later PSFree; GPL-3.0 ELF loader",
+  "offline": "No offline capability is claimed; upstream application-cache declaration is disabled.",
+  "verified": {
+    "staticDependencies": true,
+    "hardwareExecution": false,
+    "downloadedCodeExecuted": false
+  },
+  "files": [
+    {
+      "path": "corresponding-source/elfldr-v0.17/bootstrap.c",
+      "bytes": 2310,
+      "sha256": "ccdd0e16f4b1ebebda6bf2e0e773a7664ac959e114aa6c710fcf73aa0c2f02ab"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/elfldr.c",
+      "bytes": 16593,
+      "sha256": "dd4a9b98f7744d8d2823c99b8171ac4e8d1aec659ee80e31e2e3d9c51df60fef"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/elfldr.h",
+      "bytes": 958,
+      "sha256": "5b30fdb6f3aa23a8d1750b38f56c90ca997379470ff40e0e3e84df168e1f613f"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/main.c",
+      "bytes": 3107,
+      "sha256": "180e716fb8460703768118da67939d9e39aa877e576b553b5d7bd32828a67c65"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/Makefile",
+      "bytes": 1509,
+      "sha256": "81b4d9f214b005f7b40729ae03220816960019f35d8168c6d5647f2d28fc4447"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/notify.c",
+      "bytes": 1159,
+      "sha256": "3a77821f5325527f2aff1cb4d9e124ed0ed19f0a1c064b3253214bc8e0711e13"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/notify.h",
+      "bytes": 711,
+      "sha256": "bab4ad5406b545c67e7e55546966c2b351713029c20ddc82904f75423e68858c"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/pt.c",
+      "bytes": 6269,
+      "sha256": "d9d06d2c2030fd0f5c01bee0d1f62694aaede5d417813f1a8a8595c073f8fc36"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/pt.h",
+      "bytes": 1919,
+      "sha256": "91b07655d6a0449e84bc7e67bd19bcac7ccdec2efa10cde991a40b24652791ed"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/README.md",
+      "bytes": 2118,
+      "sha256": "b8630dfa2f61d72a44ddc0c58818b8737d22fca73246ad86920ffd1dd62ac217"
+    },
+    {
+      "path": "corresponding-source/elfldr-v0.17/socksrv.c",
+      "bytes": 4535,
+      "sha256": "ae6a51846f54ddf544ed6f0eb1cf733eb8edd8a95bf6abe75fab4c672f4fdbc2"
+    },
+    {
+      "path": "guard.js",
+      "bytes": 898,
+      "sha256": "29ddc60f0c5cd3a5370d3dab5e3063f4f02858fcbd0ca09819fefa17917141b1"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1001,
+      "sha256": "5ea5f224505acdb7527c04c024e566baf66eccec93601381c233988ac7bc6831"
+    },
+    {
+      "path": "LICENSE-elfldr",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "load-request.js",
+      "bytes": 1382,
+      "sha256": "03167762979ac3205a4832ed64a5648159e45caa0dd3dda2f6cf34184eaaa709"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2914,
+      "sha256": "425cf60129b1c4431a45ef69b7c41276d2ca80ac0078a99cc5f051135b82e931"
+    },
+    {
+      "path": "style.css",
+      "bytes": 513,
+      "sha256": "4f72941fc8d67148ad721d0179de9acce636a5bcf5f4b3774f9de7ed78ebfb88"
+    },
+    {
+      "path": "upstream/custom_host_stuff.js",
+      "bytes": 8326,
+      "sha256": "64d4a55d6045ab507226995471231c91723e52b49d1ae2d134e9e67897e92de0"
+    },
+    {
+      "path": "upstream/exploit.js",
+      "bytes": 70301,
+      "sha256": "7083d3f7d121410e1dbdd0ae6ea2ab86a84deeaed7b0b24af04e4590ec642f8a"
+    },
+    {
+      "path": "upstream/index.html",
+      "bytes": 3689,
+      "sha256": "b81eafcb0ada992b69940d1338cd4c9a70898959a0da86f3c827bbf4ff5fdedd"
+    },
+    {
+      "path": "upstream/int64.js",
+      "bytes": 2031,
+      "sha256": "4e30174b476c4c7d646d497aae97a2d55d1d6c28da44440925669e21b729ba27"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "bytes": 1211,
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+    },
+    {
+      "path": "upstream/main.css",
+      "bytes": 4012,
+      "sha256": "737179f5624c70e9e86b6a57268141b2bf9a6647168a5f71a8d41b4aac55d6fc"
+    },
+    {
+      "path": "upstream/module/constants.js",
+      "bytes": 752,
+      "sha256": "b54528345211246f62e2dca8fc76f005fc42f279e565ff2abcf9333777485833"
+    },
+    {
+      "path": "upstream/module/int64.js",
+      "bytes": 5653,
+      "sha256": "90eb4fc37a9f5869609d1d03e9ef008941e34e97a7db009e94af34776fe1cfae"
+    },
+    {
+      "path": "upstream/module/mem.js",
+      "bytes": 5761,
+      "sha256": "9b40776ec4c5b6286d1a8e24b7117a1c2adb0334d9bf8c6a1bd5b14ee1f6cf35"
+    },
+    {
+      "path": "upstream/module/memtools.js",
+      "bytes": 8475,
+      "sha256": "b8432a6bff9ca34b123b07d94815d19ba439b71de51ead8afa63e704848c4c2f"
+    },
+    {
+      "path": "upstream/module/rw.js",
+      "bytes": 2878,
+      "sha256": "807219ecb6cd3f3942390c50fc51cef62a44df0864f1eb5e462ceb62c63ffcf2"
+    },
+    {
+      "path": "upstream/module/syscalls.js",
+      "bytes": 16468,
+      "sha256": "8bec7bf835654f394f65353d4b9e2006f319522fd38b7b6216c312063f0ac986"
+    },
+    {
+      "path": "upstream/module/utils.js",
+      "bytes": 2199,
+      "sha256": "1a34422bd6c1fac5acd395dd114e58e7c68addfe212b1b04ce4529fcbae2ee9d"
+    },
+    {
+      "path": "upstream/offsets/1.00.js",
+      "bytes": 15441,
+      "sha256": "d6ec4c9d652ea84ab5a17db2764325ab702c6fad07794245a9da86cadd8a298a"
+    },
+    {
+      "path": "upstream/offsets/1.01.js",
+      "bytes": 15441,
+      "sha256": "4f5be330cb4c8d2de8f630dfbc9e322d20d35a7d2e86baeae33a66d4a7fef9e6"
+    },
+    {
+      "path": "upstream/offsets/1.02.js",
+      "bytes": 15441,
+      "sha256": "4f5be330cb4c8d2de8f630dfbc9e322d20d35a7d2e86baeae33a66d4a7fef9e6"
+    },
+    {
+      "path": "upstream/offsets/1.05.js",
+      "bytes": 15121,
+      "sha256": "5b398f26dcdb5ab013877461d9691628acd25af01ac6b9c581fb917aeb106efb"
+    },
+    {
+      "path": "upstream/offsets/1.10.js",
+      "bytes": 15121,
+      "sha256": "af95db1c4423908d8f5e69f229344f54d6d097c3e12dafd4fc759b0da005b067"
+    },
+    {
+      "path": "upstream/offsets/1.11.js",
+      "bytes": 15120,
+      "sha256": "af418601ee1db4a50ae5ae54847b200a2d698ff69cc490b0a6b8049450886079"
+    },
+    {
+      "path": "upstream/offsets/1.12.js",
+      "bytes": 15120,
+      "sha256": "3085662f5c4f5d933a1ec81b018452d206f215d1376e454d9f287bab2d64f468"
+    },
+    {
+      "path": "upstream/offsets/1.13.js",
+      "bytes": 15120,
+      "sha256": "3085662f5c4f5d933a1ec81b018452d206f215d1376e454d9f287bab2d64f468"
+    },
+    {
+      "path": "upstream/offsets/1.14.js",
+      "bytes": 15120,
+      "sha256": "1bfcdf06b60074b5c938ffaac16fbae4ad339798c585ea0a41fb4cb81b628810"
+    },
+    {
+      "path": "upstream/offsets/2.00.js",
+      "bytes": 15534,
+      "sha256": "1efeeffa3ed79c9068b64f1fe829e6a1979b01add336abce9d7ecb992c52a572"
+    },
+    {
+      "path": "upstream/offsets/2.20.js",
+      "bytes": 15082,
+      "sha256": "8dc4998d1ca421d4a242b89e0d8bb0f5d3dba08e324b96c32c3e6e101d9ba060"
+    },
+    {
+      "path": "upstream/offsets/2.25.js",
+      "bytes": 15082,
+      "sha256": "d8c5bd27e257550bf421be66cd90255e4b7e69bf1a091e48005614bd74b975b9"
+    },
+    {
+      "path": "upstream/offsets/2.26.js",
+      "bytes": 15082,
+      "sha256": "d8c5bd27e257550bf421be66cd90255e4b7e69bf1a091e48005614bd74b975b9"
+    },
+    {
+      "path": "upstream/offsets/2.30.js",
+      "bytes": 15075,
+      "sha256": "cec45e5285c439c297c627fe5ccb862909be7573f5bbe027caa167603e66ccee"
+    },
+    {
+      "path": "upstream/offsets/2.50.js",
+      "bytes": 15075,
+      "sha256": "31b8c481393ed914a7e7cff1732f182c1deaf717b24d76b51991fe84ff116c5d"
+    },
+    {
+      "path": "upstream/offsets/2.70.js",
+      "bytes": 15535,
+      "sha256": "2f9fdfdf042903560ddc008a9bcf3b5bac03dda0fd575dafabd1b586bb2f9467"
+    },
+    {
+      "path": "upstream/offsets/3.00.js",
+      "bytes": 15079,
+      "sha256": "da07d5183ecc3396df24ac4ad64a995355953c7bf1d7a678348fb67c4d2796b4"
+    },
+    {
+      "path": "upstream/offsets/3.10.js",
+      "bytes": 15127,
+      "sha256": "5b0d6014c44e6c63b60a5685b1d03571c820dbe7233e8880cab333cdad4a62c4"
+    },
+    {
+      "path": "upstream/offsets/3.20.js",
+      "bytes": 15079,
+      "sha256": "d1e85c79473369489d46ffd5459848acd2f266e1345a21f75f56c2fb6940a1b2"
+    },
+    {
+      "path": "upstream/offsets/3.21.js",
+      "bytes": 15087,
+      "sha256": "fa808704c937ac8c81a21635a4b607c319d307955302c0e403ee26e82675caf8"
+    },
+    {
+      "path": "upstream/offsets/4.00.js",
+      "bytes": 15088,
+      "sha256": "828ef4dc48f54246b7fb92f9d31fcc9f600f22af10751d8afe348f898466a69c"
+    },
+    {
+      "path": "upstream/offsets/4.02.js",
+      "bytes": 15079,
+      "sha256": "c688939dc76219cb86d9ed699e1eeec322e8fcae5240563a3324863a00b17132"
+    },
+    {
+      "path": "upstream/offsets/4.03.js",
+      "bytes": 15079,
+      "sha256": "c688939dc76219cb86d9ed699e1eeec322e8fcae5240563a3324863a00b17132"
+    },
+    {
+      "path": "upstream/offsets/4.50.js",
+      "bytes": 15079,
+      "sha256": "bb8ea3de50ad0ea2234d7ea2c0f18d25cf996f0e0bc449a95433addb2da7a552"
+    },
+    {
+      "path": "upstream/offsets/4.51.js",
+      "bytes": 15079,
+      "sha256": "bb8ea3de50ad0ea2234d7ea2c0f18d25cf996f0e0bc449a95433addb2da7a552"
+    },
+    {
+      "path": "upstream/offsets/5.00.js",
+      "bytes": 15235,
+      "sha256": "40f89f772db9d556750e75b7ae54b8ffe15a6be4e9884b247b40da5d8ecaea2e"
+    },
+    {
+      "path": "upstream/offsets/5.02.js",
+      "bytes": 15235,
+      "sha256": "40f89f772db9d556750e75b7ae54b8ffe15a6be4e9884b247b40da5d8ecaea2e"
+    },
+    {
+      "path": "upstream/offsets/5.10.js",
+      "bytes": 15235,
+      "sha256": "412f2eba90641c10083ae48d9ba8142b91edc03c14618fb4ed258747d402bb3a"
+    },
+    {
+      "path": "upstream/offsets/5.50.js",
+      "bytes": 15122,
+      "sha256": "5a1cea170f812e3e8a9667a208306c1d2b2fc904c71b9537473a1f89d13de853"
+    },
+    {
+      "path": "upstream/payloads/elfldr.elf",
+      "bytes": 305328,
+      "sha256": "7e5ac39cf5fbf7c14ff71aeff91bed0149be13a295c5047ecbf8be7b79f18121"
+    },
+    {
+      "path": "upstream/psfree/alert.js",
+      "bytes": 1606,
+      "sha256": "36e1f8eac3705e984f14b91630eba524b8ea43a5ba06e8145299d7ec9d90c927"
+    },
+    {
+      "path": "upstream/psfree/config.js",
+      "bytes": 3317,
+      "sha256": "88a860acc05ec90e46424e5e0ed25e0a10d1ca8d81733f3b72a9b152b0a5118d"
+    },
+    {
+      "path": "upstream/psfree/exploit.js",
+      "bytes": 24358,
+      "sha256": "a598c5a6d76e687261cdb0078ffbb594568edfa2bf3a383f8992914c3666c65a"
+    },
+    {
+      "path": "upstream/psfree/LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "upstream/psfree/module/chain.js",
+      "bytes": 6069,
+      "sha256": "c00b2a0c6e2f76c5398384d237860f247d0276a272110d906864156b7c29f5f5"
+    },
+    {
+      "path": "upstream/psfree/module/constants.js",
+      "bytes": 773,
+      "sha256": "27ce6981d3a26ce5ae125bceef73daf62040394e5c10541c1527bd15e66a86a7"
+    },
+    {
+      "path": "upstream/psfree/module/int64.js",
+      "bytes": 5660,
+      "sha256": "12f386ed3ae50e4f4ea4870b0d0936c9b3251297af85801a91609f8c8e37d185"
+    },
+    {
+      "path": "upstream/psfree/module/mem.js",
+      "bytes": 5759,
+      "sha256": "3d039ff0a5a73ff9eadba65615a79f8b0ad2a34600aa70d7c26a84329ea58011"
+    },
+    {
+      "path": "upstream/psfree/module/memtools.js",
+      "bytes": 8547,
+      "sha256": "d55be5395fd59509567c5cdc84272813e234bb4ca3f58657956eae64367c2216"
+    },
+    {
+      "path": "upstream/psfree/module/offset.js",
+      "bytes": 1158,
+      "sha256": "18db9c0ae608e908d863cf37b5a61c9940338b5aba40d545def90cbf1908e0f1"
+    },
+    {
+      "path": "upstream/psfree/module/rw.js",
+      "bytes": 2923,
+      "sha256": "f4eadfc4b932e36e9a344b68e9aec6b816578a8e84bfc9bbbc4a0a0b41a3f495"
+    },
+    {
+      "path": "upstream/psfree/module/utils.js",
+      "bytes": 2116,
+      "sha256": "7f507d6d8d0d8b39d85304a41fda4a93516ed4b040fbd0b9674220ce85f0f306"
+    },
+    {
+      "path": "upstream/psfree/README.md",
+      "bytes": 1151,
+      "sha256": "d0c2bf0a42140c8903e0991485712f48652cd7b1d748e63420313f13ce79095b"
+    },
+    {
+      "path": "upstream/psfree/send.js",
+      "bytes": 6116,
+      "sha256": "d7f77212fd9d5c48d47b06fcb18f373d164307d8a08456de00ede9c9374a5828"
+    },
+    {
+      "path": "upstream/README.md",
+      "bytes": 8140,
+      "sha256": "fd9e64fbd774fdec75510e47fc80c9d022e7a1501b1632cb14e96aefb99498d1"
+    },
+    {
+      "path": "upstream/rop_slave.js",
+      "bytes": 95,
+      "sha256": "c8c7a127123db9bf976d2a7c7a03fdd17402846a1d0a9860819c25a11e4aab89"
+    },
+    {
+      "path": "upstream/rop.js",
+      "bytes": 12458,
+      "sha256": "4b0b8d563341dbb47b8f09529449bf3687407a6fd64e4776506774f58be1109d"
+    },
+    {
+      "path": "upstream/webkit_fontface.js",
+      "bytes": 14771,
+      "sha256": "360fc0c928e09f985d21fa9ce447edd7761f8b4e41545e1bb57e6081fc0d81da"
+    },
+    {
+      "path": "upstream/webkit_psfree.js",
+      "bytes": 24206,
+      "sha256": "58dfa7daf95df182674f2fc9878183ae264e962f4380c83546d4b17d2114a380"
+    },
+    {
+      "path": "web/custom_host_stuff.js",
+      "bytes": 8326,
+      "sha256": "64d4a55d6045ab507226995471231c91723e52b49d1ae2d134e9e67897e92de0"
+    },
+    {
+      "path": "web/exploit.js",
+      "bytes": 70326,
+      "sha256": "92743946f3c4988d9851e2062540c79a16cc914a4e4725a01aebe7d591106e36"
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 4583,
+      "sha256": "6074e2c1d443cc2764951f84dfe31048659e98924b5332b5431b3075ad7ef5e0"
+    },
+    {
+      "path": "web/int64.js",
+      "bytes": 2031,
+      "sha256": "4e30174b476c4c7d646d497aae97a2d55d1d6c28da44440925669e21b729ba27"
+    },
+    {
+      "path": "web/LICENSE",
+      "bytes": 1211,
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+    },
+    {
+      "path": "web/main.css",
+      "bytes": 4012,
+      "sha256": "737179f5624c70e9e86b6a57268141b2bf9a6647168a5f71a8d41b4aac55d6fc"
+    },
+    {
+      "path": "web/module/constants.js",
+      "bytes": 752,
+      "sha256": "b54528345211246f62e2dca8fc76f005fc42f279e565ff2abcf9333777485833"
+    },
+    {
+      "path": "web/module/int64.js",
+      "bytes": 5653,
+      "sha256": "90eb4fc37a9f5869609d1d03e9ef008941e34e97a7db009e94af34776fe1cfae"
+    },
+    {
+      "path": "web/module/mem.js",
+      "bytes": 5757,
+      "sha256": "eb34c37c00eb3767b52d9719c1c8b03ee44b38d61a3332ec13dc89dca3265a02"
+    },
+    {
+      "path": "web/module/memtools.js",
+      "bytes": 8468,
+      "sha256": "e904292f3e469f64bdeb1a4bd0cb54f06eedc51197af8d6535a74a32b4eb9ae1"
+    },
+    {
+      "path": "web/module/rw.js",
+      "bytes": 2877,
+      "sha256": "bf02f108d78f0f5000bc96b85947136d270ea737b24a85603d4aef47c0eeb59d"
+    },
+    {
+      "path": "web/module/syscalls.js",
+      "bytes": 16468,
+      "sha256": "8bec7bf835654f394f65353d4b9e2006f319522fd38b7b6216c312063f0ac986"
+    },
+    {
+      "path": "web/module/utils.js",
+      "bytes": 2198,
+      "sha256": "16b6d9bfaacdc91df05ba4210cb53d442efa7d94370d334d62b17c85b120489d"
+    },
+    {
+      "path": "web/offsets/1.00.js",
+      "bytes": 15441,
+      "sha256": "d6ec4c9d652ea84ab5a17db2764325ab702c6fad07794245a9da86cadd8a298a"
+    },
+    {
+      "path": "web/offsets/1.01.js",
+      "bytes": 15441,
+      "sha256": "4f5be330cb4c8d2de8f630dfbc9e322d20d35a7d2e86baeae33a66d4a7fef9e6"
+    },
+    {
+      "path": "web/offsets/1.02.js",
+      "bytes": 15441,
+      "sha256": "4f5be330cb4c8d2de8f630dfbc9e322d20d35a7d2e86baeae33a66d4a7fef9e6"
+    },
+    {
+      "path": "web/offsets/1.05.js",
+      "bytes": 15121,
+      "sha256": "5b398f26dcdb5ab013877461d9691628acd25af01ac6b9c581fb917aeb106efb"
+    },
+    {
+      "path": "web/offsets/1.10.js",
+      "bytes": 15121,
+      "sha256": "af95db1c4423908d8f5e69f229344f54d6d097c3e12dafd4fc759b0da005b067"
+    },
+    {
+      "path": "web/offsets/1.11.js",
+      "bytes": 15120,
+      "sha256": "af418601ee1db4a50ae5ae54847b200a2d698ff69cc490b0a6b8049450886079"
+    },
+    {
+      "path": "web/offsets/1.12.js",
+      "bytes": 15120,
+      "sha256": "3085662f5c4f5d933a1ec81b018452d206f215d1376e454d9f287bab2d64f468"
+    },
+    {
+      "path": "web/offsets/1.13.js",
+      "bytes": 15120,
+      "sha256": "3085662f5c4f5d933a1ec81b018452d206f215d1376e454d9f287bab2d64f468"
+    },
+    {
+      "path": "web/offsets/1.14.js",
+      "bytes": 15120,
+      "sha256": "1bfcdf06b60074b5c938ffaac16fbae4ad339798c585ea0a41fb4cb81b628810"
+    },
+    {
+      "path": "web/offsets/2.00.js",
+      "bytes": 15534,
+      "sha256": "1efeeffa3ed79c9068b64f1fe829e6a1979b01add336abce9d7ecb992c52a572"
+    },
+    {
+      "path": "web/offsets/2.20.js",
+      "bytes": 15082,
+      "sha256": "8dc4998d1ca421d4a242b89e0d8bb0f5d3dba08e324b96c32c3e6e101d9ba060"
+    },
+    {
+      "path": "web/offsets/2.25.js",
+      "bytes": 15082,
+      "sha256": "d8c5bd27e257550bf421be66cd90255e4b7e69bf1a091e48005614bd74b975b9"
+    },
+    {
+      "path": "web/offsets/2.26.js",
+      "bytes": 15082,
+      "sha256": "d8c5bd27e257550bf421be66cd90255e4b7e69bf1a091e48005614bd74b975b9"
+    },
+    {
+      "path": "web/offsets/2.30.js",
+      "bytes": 15075,
+      "sha256": "cec45e5285c439c297c627fe5ccb862909be7573f5bbe027caa167603e66ccee"
+    },
+    {
+      "path": "web/offsets/2.50.js",
+      "bytes": 15075,
+      "sha256": "31b8c481393ed914a7e7cff1732f182c1deaf717b24d76b51991fe84ff116c5d"
+    },
+    {
+      "path": "web/offsets/2.70.js",
+      "bytes": 15535,
+      "sha256": "2f9fdfdf042903560ddc008a9bcf3b5bac03dda0fd575dafabd1b586bb2f9467"
+    },
+    {
+      "path": "web/offsets/3.00.js",
+      "bytes": 15079,
+      "sha256": "da07d5183ecc3396df24ac4ad64a995355953c7bf1d7a678348fb67c4d2796b4"
+    },
+    {
+      "path": "web/offsets/3.10.js",
+      "bytes": 15127,
+      "sha256": "5b0d6014c44e6c63b60a5685b1d03571c820dbe7233e8880cab333cdad4a62c4"
+    },
+    {
+      "path": "web/offsets/3.20.js",
+      "bytes": 15079,
+      "sha256": "d1e85c79473369489d46ffd5459848acd2f266e1345a21f75f56c2fb6940a1b2"
+    },
+    {
+      "path": "web/offsets/3.21.js",
+      "bytes": 15087,
+      "sha256": "fa808704c937ac8c81a21635a4b607c319d307955302c0e403ee26e82675caf8"
+    },
+    {
+      "path": "web/offsets/4.00.js",
+      "bytes": 15088,
+      "sha256": "828ef4dc48f54246b7fb92f9d31fcc9f600f22af10751d8afe348f898466a69c"
+    },
+    {
+      "path": "web/offsets/4.02.js",
+      "bytes": 15079,
+      "sha256": "c688939dc76219cb86d9ed699e1eeec322e8fcae5240563a3324863a00b17132"
+    },
+    {
+      "path": "web/offsets/4.03.js",
+      "bytes": 15079,
+      "sha256": "c688939dc76219cb86d9ed699e1eeec322e8fcae5240563a3324863a00b17132"
+    },
+    {
+      "path": "web/offsets/4.50.js",
+      "bytes": 15079,
+      "sha256": "bb8ea3de50ad0ea2234d7ea2c0f18d25cf996f0e0bc449a95433addb2da7a552"
+    },
+    {
+      "path": "web/offsets/4.51.js",
+      "bytes": 15079,
+      "sha256": "bb8ea3de50ad0ea2234d7ea2c0f18d25cf996f0e0bc449a95433addb2da7a552"
+    },
+    {
+      "path": "web/offsets/5.00.js",
+      "bytes": 15235,
+      "sha256": "40f89f772db9d556750e75b7ae54b8ffe15a6be4e9884b247b40da5d8ecaea2e"
+    },
+    {
+      "path": "web/offsets/5.02.js",
+      "bytes": 15235,
+      "sha256": "40f89f772db9d556750e75b7ae54b8ffe15a6be4e9884b247b40da5d8ecaea2e"
+    },
+    {
+      "path": "web/offsets/5.10.js",
+      "bytes": 15235,
+      "sha256": "412f2eba90641c10083ae48d9ba8142b91edc03c14618fb4ed258747d402bb3a"
+    },
+    {
+      "path": "web/offsets/5.50.js",
+      "bytes": 15122,
+      "sha256": "5a1cea170f812e3e8a9667a208306c1d2b2fc904c71b9537473a1f89d13de853"
+    },
+    {
+      "path": "web/payloads/elfldr.elf",
+      "bytes": 305328,
+      "sha256": "7e5ac39cf5fbf7c14ff71aeff91bed0149be13a295c5047ecbf8be7b79f18121"
+    },
+    {
+      "path": "web/psfree/alert.js",
+      "bytes": 1604,
+      "sha256": "bf73d546ad049eff0f56ec972d153a19313827831e96c08cc519baed75ac4216"
+    },
+    {
+      "path": "web/psfree/config.js",
+      "bytes": 3317,
+      "sha256": "88a860acc05ec90e46424e5e0ed25e0a10d1ca8d81733f3b72a9b152b0a5118d"
+    },
+    {
+      "path": "web/psfree/exploit.js",
+      "bytes": 24351,
+      "sha256": "a6d7a892427894dd7472210be0bd8d496f62f2e38cc06abb24d64b13ce1a1b4b"
+    },
+    {
+      "path": "web/psfree/LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "web/psfree/module/chain.js",
+      "bytes": 6069,
+      "sha256": "c00b2a0c6e2f76c5398384d237860f247d0276a272110d906864156b7c29f5f5"
+    },
+    {
+      "path": "web/psfree/module/constants.js",
+      "bytes": 773,
+      "sha256": "27ce6981d3a26ce5ae125bceef73daf62040394e5c10541c1527bd15e66a86a7"
+    },
+    {
+      "path": "web/psfree/module/int64.js",
+      "bytes": 5660,
+      "sha256": "12f386ed3ae50e4f4ea4870b0d0936c9b3251297af85801a91609f8c8e37d185"
+    },
+    {
+      "path": "web/psfree/module/mem.js",
+      "bytes": 5758,
+      "sha256": "9ac41fa34f7e5e70906f6d92209dac4e394783024c3c1614504a36108d672ef5"
+    },
+    {
+      "path": "web/psfree/module/memtools.js",
+      "bytes": 8547,
+      "sha256": "d55be5395fd59509567c5cdc84272813e234bb4ca3f58657956eae64367c2216"
+    },
+    {
+      "path": "web/psfree/module/offset.js",
+      "bytes": 1158,
+      "sha256": "18db9c0ae608e908d863cf37b5a61c9940338b5aba40d545def90cbf1908e0f1"
+    },
+    {
+      "path": "web/psfree/module/rw.js",
+      "bytes": 2923,
+      "sha256": "f4eadfc4b932e36e9a344b68e9aec6b816578a8e84bfc9bbbc4a0a0b41a3f495"
+    },
+    {
+      "path": "web/psfree/module/utils.js",
+      "bytes": 2116,
+      "sha256": "7f507d6d8d0d8b39d85304a41fda4a93516ed4b040fbd0b9674220ce85f0f306"
+    },
+    {
+      "path": "web/psfree/README.md",
+      "bytes": 1151,
+      "sha256": "d0c2bf0a42140c8903e0991485712f48652cd7b1d748e63420313f13ce79095b"
+    },
+    {
+      "path": "web/psfree/send.js",
+      "bytes": 6116,
+      "sha256": "d7f77212fd9d5c48d47b06fcb18f373d164307d8a08456de00ede9c9374a5828"
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 8140,
+      "sha256": "fd9e64fbd774fdec75510e47fc80c9d022e7a1501b1632cb14e96aefb99498d1"
+    },
+    {
+      "path": "web/rop_slave.js",
+      "bytes": 95,
+      "sha256": "c8c7a127123db9bf976d2a7c7a03fdd17402846a1d0a9860819c25a11e4aab89"
+    },
+    {
+      "path": "web/rop.js",
+      "bytes": 12458,
+      "sha256": "4b0b8d563341dbb47b8f09529449bf3687407a6fd64e4776506774f58be1109d"
+    },
+    {
+      "path": "web/webkit_fontface.js",
+      "bytes": 14771,
+      "sha256": "360fc0c928e09f985d21fa9ce447edd7761f8b4e41545e1bb57e6081fc0d81da"
+    },
+    {
+      "path": "web/webkit_psfree.js",
+      "bytes": 24199,
+      "sha256": "332a3a3da1dc4da85165ae02d093932f25c5478f71ab1ca9dad52bd0937622aa"
+    }
+  ],
+  "entryFlow": {
+    "type": "console-browser-load",
+    "runEntry": "/hosts/runtime/ps5-umtx/web/index.html",
+    "request": "One-use same-tab session request; exact detected firmware required.",
+    "progress": "Original PS5 console log; original native retry behavior retained."
+  }
+}

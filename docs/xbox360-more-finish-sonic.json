@@ -1,0 +1,176 @@
+{
+  "scope": "xbox360-more",
+  "batch": 4,
+  "reviewed": "2026-11-02",
+  "status": "Ready: publisher Final Update complete, archive CRC and all native executable headers verified",
+  "resources": [
+    {
+      "id": "sonic-exe",
+      "title": "Sonic.exe · Xbox 360 remake",
+      "author": "ANDKFOX",
+      "group": "games",
+      "version": "Final Update · v1.0.2",
+      "source": "https://andkfox.itch.io/xbox360-sonicexe",
+      "downloadUrl": "https://andkfox.itch.io/xbox360-sonicexe#download",
+      "downloadLinkKind": "publisher-page",
+      "assetEndpoint": "https://andkfox.itch.io/xbox360-sonicexe/file/19049130",
+      "fileName": "FinalUpdate.rar",
+      "sourceFile": "docs/tmp/xbox360-more-finish-sonic/FinalUpdate.rar",
+      "expectedBytes": 99590619,
+      "expectedSha256": "427ad55f5d64950135a969f0413d517c859d3b354e2d2032cb444d9bbf4c593d",
+      "format": "RAR / XEX",
+      "description": "ANDKFOX’s native Xbox 360 remake of the Sonic.exe horror fangame, built with Unity. The Final Update includes revised saves, D-pad control, HUD and title cards.",
+      "prerequisites": "Xbox 360 controller. The publisher supplies the game’s Media data in this archive; no external commercial disc image or game-data installation is requested.",
+      "runtime": "Xbox 360 capable of running unsigned homebrew. The original author identifies this as an Xbox 360 build but does not pin a dashboard version or motherboard.",
+      "temporary": "The publisher does not separately certify BadUpdate, ABadAvatar or Peer Pressure; use a compatible established unsigned-code setup.",
+      "installPath": "Hdd1:\\Homebrew\\SonicEXE\\",
+      "usbPath": "Usb0:\\Homebrew\\SonicEXE\\",
+      "launch": "default.xex",
+      "setup": [
+        "Extract FinalUpdate.rar on your PC into a dedicated SonicEXE folder. Copy the complete extracted contents to the shown HDD or USB Homebrew directory.",
+        "Keep Media and every companion file beside default.xex, including the managed XEX modules under Media\\Managed. Launch default.xex through your existing homebrew file manager or add the directory to Aurora scan paths.",
+        "Keep your current build and saves when upgrading. The included Changelog.txt describes the v1.0.0 save-system rework and v1.0.1–v1.0.2 fixes."
+      ],
+      "notes": "Horror fangame. Final Update is the exact Xbox 360 upload 19049130; Windows builds and older console releases are separate downloads. Archive integrity and executable formats were checked as data; no physical-console execution was performed.",
+      "requiredEntries": [
+        "default.xex",
+        "Media/globalgamemanagers",
+        "Media/Managed/Assembly-CSharp.dll.xex",
+        "Changelog.txt"
+      ],
+      "image": {
+        "id": "sonic-exe",
+        "sourceUrl": "https://img.itch.zone/aW1nLzI3NzE1MDIwLnBuZw==/original/0o8VA7.png",
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\sonicexe360.png",
+        "bytes": 462641,
+        "sha256": "5bfba2722f394637d8d4da00b7c923cddbeb7fd7358aef358c13d3a087969990",
+        "credit": "ANDKFOX · original itch.io Xbox 360 cover artwork, also included unchanged in FinalUpdate.rar"
+      },
+      "formatVerification": {
+        "type": "RAR5 / native XEX2",
+        "archiveTest": "7-Zip t: Everything is Ok",
+        "entryCount": 156,
+        "fileCount": 150,
+        "folderCount": 6,
+        "unsafePaths": 0,
+        "executables": [
+          {
+            "name": "Media/Managed/Assembly-CSharp.dll.xex",
+            "bytes": 40960,
+            "magic": "XEX2",
+            "sha256": "e3d5d0ee3ac0cc8e1bef202266c8389922ab2990c24d08a9adce85c85053e88a"
+          },
+          {
+            "name": "Media/Managed/Mono.Posix.dll.xex",
+            "bytes": 151552,
+            "magic": "XEX2",
+            "sha256": "51f25e00931cc323df5177f2ec13e859d7c90352204bbcbdecefc4a1917f98bd"
+          },
+          {
+            "name": "Media/Managed/Mono.Security.dll.xex",
+            "bytes": 200704,
+            "magic": "XEX2",
+            "sha256": "bcc742be577d6fd07c94beda8bc868501c1a26a8391e732fd18f3ba5ec677af8"
+          },
+          {
+            "name": "Media/Managed/mscorlib.dll.xex",
+            "bytes": 1298432,
+            "magic": "XEX2",
+            "sha256": "2dffaf31153fc10540b099fa4e57527b844fd4cd7bfb4df4a7753cf6c03010a3"
+          },
+          {
+            "name": "Media/Managed/System.Configuration.dll.xex",
+            "bytes": 94208,
+            "magic": "XEX2",
+            "sha256": "9745faf11d1f5abff06c004c277249637596fc73280fb4c711176da6672a2bf0"
+          },
+          {
+            "name": "Media/Managed/System.Core.dll.xex",
+            "bytes": 241664,
+            "magic": "XEX2",
+            "sha256": "091418b1d9baa2688f187def09200c02702fc5e3239cc0da9c4aa980fa35f0bd"
+          },
+          {
+            "name": "Media/Managed/System.dll.xex",
+            "bytes": 843776,
+            "magic": "XEX2",
+            "sha256": "5de3d680a99a6b959460229ac23dda0ebd869a82ab26b0a32978b2951fc5a237"
+          },
+          {
+            "name": "Media/Managed/System.Security.dll.xex",
+            "bytes": 102400,
+            "magic": "XEX2",
+            "sha256": "8e86fd81e501de8d8b6f810c9cd5a39e7a30ce0c4ee00cb114562ed19ead207b"
+          },
+          {
+            "name": "Media/Managed/System.Xml.dll.xex",
+            "bytes": 679936,
+            "magic": "XEX2",
+            "sha256": "60bcf2b739ad61ee8beee506628a04f3cb5f72f9eedeb4f577d57454e8098c4e"
+          },
+          {
+            "name": "Media/Managed/UnityEngine.dll.xex",
+            "bytes": 811008,
+            "magic": "XEX2",
+            "sha256": "4f01328d33e560475195593c5629ff163d8a73ec0c18cb4e8fd891edd41f5f0d"
+          },
+          {
+            "name": "Media/Managed/UnityEngine.Networking.dll.xex",
+            "bytes": 417792,
+            "magic": "XEX2",
+            "sha256": "6448a93f1c68d80925efb4a980d0b322605c540d54a27f5ade038fcd914ce94c"
+          },
+          {
+            "name": "Media/Managed/UnityEngine.UI.dll.xex",
+            "bytes": 311296,
+            "magic": "XEX2",
+            "sha256": "20d63c5ec8e4d120cba213183e2a17121b9dc0aed16a8f7d96eee3d8ff6267c4"
+          },
+          {
+            "name": "default.xex",
+            "bytes": 8896512,
+            "magic": "XEX2",
+            "sha256": "66da1d1f27fb54bf6686010856ce03e7fda100f396784df03a300d7a0f0675b1"
+          }
+        ]
+      },
+      "sourceEvidence": [
+        "Original author page offers [XBOX360] Final Update, upload 19049130.",
+        "Original file response names FinalUpdate.rar, Content-Length 99,590,619, ETag f93e6277a7c181391f436ca958a0535d-2.",
+        "Included Changelog.txt ends with v1.0.2.",
+        "The downloaded creator cover matches XBOX360_BoxArt_SonicEXE228.png in the exact release byte for byte."
+      ]
+    }
+  ],
+  "excluded": [],
+  "verification": {
+    "downloadedFiles": 1,
+    "totalBytes": 99590619,
+    "archiveCrcTestsPassed": 1,
+    "nativeXexHeaders": 13,
+    "physicalHardwareTested": false,
+    "downloadedBuildsExecuted": false,
+    "FArchiveWritesPerformed": false,
+    "hashProvenance": "SHA-256 calculated locally; publisher does not supply a full-file SHA-256 manifest.",
+    "safeResume": {
+      "priorPartial": "docs/tmp/xbox360-more-batch3/sonicexe360-1793620989800.download",
+      "priorPartialBytes": 23117824,
+      "originalRetainedUnchanged": true,
+      "rangeStatus": 206,
+      "rangeTotalBytes": 99590619,
+      "stableEtag": "\"f93e6277a7c181391f436ca958a0535d-2\"",
+      "matchingProbes": [
+        [
+          0,
+          65535
+        ],
+        [
+          23052288,
+          23117823
+        ]
+      ]
+    },
+    "artworkVerified": true,
+    "staticArtworkVisuallyInspected": true
+  }
+}

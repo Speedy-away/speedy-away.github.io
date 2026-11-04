@@ -1,0 +1,36 @@
+{
+  "updatedAt": "2026-11-03T20:30:12.263Z",
+  "scope": "WWB HOST root homepage only",
+  "consolePhotosPreserved": 2,
+  "newIllustratedTools": 4,
+  "images": 12,
+  "allLocalImageAndPageReferencesExist": true,
+  "newRemoteDownloads": 0,
+  "downloadFilesChanged": 0,
+  "nativeFilesChanged": 0,
+  "files": [
+    {
+      "name": "index.html",
+      "sha256": "21b317e64a6829d8f84b0d02c376c693029de09d3cad14c6a4132b9d96eb96c2"
+    },
+    {
+      "name": "assets/host-home.css",
+      "sha256": "b4a66ca7dfccd41967cfe9b06478c2457e902cd008a4c4fdc36e820fdfe05825"
+    }
+  ],
+  "browserQA": "Not performed; local browser use disabled in Work settings.",
+  "published": false,
+  "preview": "http://127.0.0.1:57296/WWB-HOST/",
+  "verification": {
+    "status": "passed",
+    "bytes": 842327627,
+    "pagesLinks": 2388,
+    "nativeScriptsUnchanged": 848,
+    "cachedResourcesRetained": 1491,
+    "offloadedFiles": 274,
+    "issues": 0,
+    "publisherFixtureTests": 3,
+    "publisherFixturePassed": 3,
+    "fixtureCorrection": "Retained sender release alias fixture now uses the required console-payload-sender- filename, matching the real publisher policy."
+  }
+}

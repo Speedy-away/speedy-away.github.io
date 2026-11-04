@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-03T20:36:35.258Z",
+  "status": "published-and-verified",
+  "commit": "468339255178965af15d2cc484550eb0917a8419",
+  "deployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41712758658",
+  "pages": 24,
+  "uniqueHeaderImages": 11,
+  "behaviorTestsPassed": 29,
+  "liveLoadDownloadURLs": 1553,
+  "nativeScriptsUnchanged": 848,
+  "cacheManifestAliases": 7,
+  "retainedBuildVersions": 165,
+  "nativeRuntimeFilesChanged": 0,
+  "downloadFilesChanged": 0,
+  "browserRenderVerified": false,
+  "hardwareExecutionVerified": false,
+  "pagesBuild": {
+    "revision": "468339255178965af15d2cc484550eb0917a8419",
+    "base": "/WWB-HOST",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 842068498,
+    "budget": 922746880,
+    "files": 5568,
+    "offloadedFiles": 274,
+    "nativeScriptsUnchanged": 848,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+  }
+}

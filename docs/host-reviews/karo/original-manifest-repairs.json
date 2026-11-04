@@ -1,0 +1,759 @@
+{
+  "checkedAt": "2026-11-03T18:51:04.079Z",
+  "repo": "KAR0218/KAR0218.github.io",
+  "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+  "status": "research-complete",
+  "scope": [
+    "binloader/702/offlinexmb.cache",
+    "restore/702d/offlinexmb.cache",
+    "restore/702N/offlinexmb.cache",
+    "505/xmbinstaller.html -> ../offlinexmb.cache"
+  ],
+  "method": "Read original Git blobs, current guarded wrapper JSON, original ready ZIP directory/CRC test and GitHub exact-path history. All source treated as data; no runtime or payload execution.",
+  "nativeCases": [
+    {
+      "entry": {
+        "path": "binloader/702/index.html",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/index.html",
+        "bytes": 7268,
+        "sha256": "6b8a467cf60019926a1e18bdb7c39706ce55488303aea921a1385c6773aa43fb",
+        "gitBlobSHA1": "9a858965bec4cdaa33fc9802c7e3b1b9a013fafb",
+        "gitTreeVerified": true
+      },
+      "currentWrapper": {
+        "path": "hosts/runtime/karo-743646c9df9a-51430066e375/web/binloader/702/index.html",
+        "bytes": 20039,
+        "sha256": "8a946d2209095d71cab8c869591d5002d2fae7ae4bed2d3b43a0a1ea150fd39f",
+        "originalSHA256": "6b8a467cf60019926a1e18bdb7c39706ce55488303aea921a1385c6773aa43fb",
+        "matchesPinnedOriginal": true,
+        "currentBlock": "Required original source unavailable: binloader/702/offlinexmb.cache"
+      },
+      "missingManifest": "binloader/702/offlinexmb.cache",
+      "exactManifestRecovered": false,
+      "upstreamPathHistory": {
+        "url": "https://api.github.com/repos/KAR0218/KAR0218.github.io/commits?path=binloader%2F702%2Fofflinexmb.cache&per_page=100",
+        "status": 200,
+        "commitsReturned": 0
+      },
+      "contractSource": [
+        {
+          "file": "binloader/702/index.html",
+          "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/index.html",
+          "lines": [
+            {
+              "line": 1,
+              "text": "<html manifest=\"offlinexmb.cache\">"
+            },
+            {
+              "line": 264,
+              "text": "\t<body onload=\"go()\" class=\"bg\">"
+            },
+            {
+              "line": 266,
+              "text": "           if(window.applicationCache.status==2){localStorage.is702LCached=true;}"
+            },
+            {
+              "line": 267,
+              "text": "\t\t\twindow.applicationCache.ondownloading=function(){document.getElementById(\"progressx\").innerHTML=\"Page Caching Started!!\";localStorage.is702LCached=false;};"
+            },
+            {
+              "line": 268,
+              "text": "\t\t\twindow.applicationCache.onprogress=function(a){document.getElementById(\"progressx\").innerHTML=(Math.round(100*(a.loaded/a.total)))+\"%\";};"
+            },
+            {
+              "line": 269,
+              "text": "\t\t\twindow.applicationCache.oncached=function(){document.getElementById(\"progressx\").innerHTML=\"Page Cached Successfully!!\";localStorage.is702LCached=true;setTimeout(function(){document.getElementById(\"progressx\").innerHTML=\"Turn Off the Internet & Reopen the Page to Run the Exploit!!\"; }, 1500);};"
+            },
+            {
+              "line": 301,
+              "text": "\t\twindow.midExploit = function()"
+            },
+            {
+              "line": 303,
+              "text": "\t\t\tpreloadScripts(['702.js', 'jb.js', 'preloader.js', 'loader.js']);"
+            }
+          ]
+        },
+        {
+          "file": "binloader/702/ps4.js",
+          "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/ps4.js",
+          "lines": [
+            {
+              "line": 446,
+              "text": "function go() {"
+            },
+            {
+              "line": 450,
+              "text": "\tif(window.midExploit)"
+            },
+            {
+              "line": 451,
+              "text": "\t\twindow.midExploit();"
+            }
+          ]
+        }
+      ],
+      "nativeDependencies": [
+        {
+          "path": "binloader/702/702.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/702.js",
+          "bytes": 30205,
+          "sha256": "f9ef826bc75f5ccf171e41656546c499dfb367999aed6865e4e3e6699778c5b8",
+          "gitBlobSHA1": "03439d9fe26ac2a0c8d766e280936a0a32dc8c29",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "binloader/702/jb.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/jb.js",
+          "bytes": 2406195,
+          "sha256": "79aaa5340eb7e80eb1f419d3be096f7e52442426034e563f6e5765d032dc2339",
+          "gitBlobSHA1": "036545acad79309da840c98df8003b01f75ceeb3",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "binloader/702/preloader.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/preloader.js",
+          "bytes": 178720,
+          "sha256": "c74aafcedafa49226e1060fedfe13c1caaacbc5ef131d1d93fe10b45102b619d",
+          "gitBlobSHA1": "d81e9f7936f2eb58058979ea51f91b38985139b8",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "binloader/702/loader.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/loader.js",
+          "bytes": 709910,
+          "sha256": "2e53f899f665b1d0a88d25669011657559a5412bf340c2cf7f77817049197fc2",
+          "gitBlobSHA1": "54e5f7ee37e00f5804ff114249a9c20cd4663ada",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "binloader/702/ps4.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/ps4.js",
+          "bytes": 12662,
+          "sha256": "c8463a2a28d2e65ded9adef670c04c1802b09ed2475fd83475ac0aa4a466acf4",
+          "gitBlobSHA1": "d177cd2d870d4ac00ce2493391322290cd088e59",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "binloader/702/int64.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/int64.js",
+          "bytes": 6558,
+          "sha256": "628234f2e79b4c8362dba924eb4196af376581f74a0f6c690fc759342cfc11af",
+          "gitBlobSHA1": "2ed24ac4b54b685672e8bd858c6fcf2c7bbeab37",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "binloader/702/utils.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/utils.js",
+          "bytes": 2786,
+          "sha256": "c1084e70e324a63b46d2bbc7736292fcb5245a0c64005bcb0cbbc5f38a2fb20d",
+          "gitBlobSHA1": "f0dbc3ed5bfeac756949c851e4a745f697214228",
+          "gitTreeVerified": true
+        }
+      ],
+      "classification": "optional-offline-cache-unavailable; native-online-route-present",
+      "reason": "The original body calls go() directly. Application-cache events only write the is702LCached flag and update progress text; the native source never reads that flag or gates go() on cache installation. Both original ready ZIPs retain this manifest attribute while omitting its file.",
+      "recommendation": "An exact path+SHA reviewed exception may allow the unchanged original online native route while explicitly reporting offline caching unavailable. Do not fabricate a manifest, substitute another folder's cache, claim offline operation or broaden firmware."
+    },
+    {
+      "entry": {
+        "path": "restore/702N/index.html",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/index.html",
+        "bytes": 8400,
+        "sha256": "336b867fa59789cd1f142eae2d4f23492c771f8ec223465c32b11a311f2630c4",
+        "gitBlobSHA1": "dfe8f4c7c72eec35701d692ffa66f62556b8249f",
+        "gitTreeVerified": true
+      },
+      "currentWrapper": {
+        "path": "hosts/runtime/karo-743646c9df9a-51430066e375/web/restore/702N/index.html",
+        "bytes": 26253,
+        "sha256": "f2fbb0ac190b777a3da57f0840e48a7479186addbc5898bfb4cdd63af688c3a1",
+        "originalSHA256": "336b867fa59789cd1f142eae2d4f23492c771f8ec223465c32b11a311f2630c4",
+        "matchesPinnedOriginal": true,
+        "currentBlock": "Required original source unavailable: restore/702N/offlinexmb.cache"
+      },
+      "missingManifest": "restore/702N/offlinexmb.cache",
+      "exactManifestRecovered": false,
+      "upstreamPathHistory": {
+        "url": "https://api.github.com/repos/KAR0218/KAR0218.github.io/commits?path=restore%2F702N%2Fofflinexmb.cache&per_page=100",
+        "status": 200,
+        "commitsReturned": 0
+      },
+      "contractSource": [
+        {
+          "file": "restore/702N/index.html",
+          "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/index.html",
+          "lines": [
+            {
+              "line": 1,
+              "text": "<html manifest=\"offlinexmb.cache\">"
+            },
+            {
+              "line": 275,
+              "text": "\t<body onload=\"go()\" class=\"bg\">"
+            },
+            {
+              "line": 328,
+              "text": "\t\twindow.midExploit = function()"
+            },
+            {
+              "line": 330,
+              "text": "\t\t\tpreloadScripts(['702.js']);"
+            }
+          ]
+        },
+        {
+          "file": "restore/702N/ps4.js",
+          "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/ps4.js",
+          "lines": [
+            {
+              "line": 130,
+              "text": "\t\tpreloadScripts(['jb.js', 'preloader.js', 'restore702.js', 'loader.js']);"
+            },
+            {
+              "line": 464,
+              "text": "function go() {"
+            },
+            {
+              "line": 468,
+              "text": "\tif(window.midExploit)"
+            },
+            {
+              "line": 469,
+              "text": "\t\twindow.midExploit();"
+            }
+          ]
+        }
+      ],
+      "nativeDependencies": [
+        {
+          "path": "restore/702N/702.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/702.js",
+          "bytes": 30205,
+          "sha256": "f9ef826bc75f5ccf171e41656546c499dfb367999aed6865e4e3e6699778c5b8",
+          "gitBlobSHA1": "03439d9fe26ac2a0c8d766e280936a0a32dc8c29",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702N/jb.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/jb.js",
+          "bytes": 2406195,
+          "sha256": "79aaa5340eb7e80eb1f419d3be096f7e52442426034e563f6e5765d032dc2339",
+          "gitBlobSHA1": "036545acad79309da840c98df8003b01f75ceeb3",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702N/preloader.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/preloader.js",
+          "bytes": 178721,
+          "sha256": "fd86d717d4cc91c1e197451bb34b01797cf02a523a4f209284959e351c7ebc91",
+          "gitBlobSHA1": "0ca294e04987f472c7b279b5d039a0a61627d87d",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702N/restore702.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/restore702.js",
+          "bytes": 408870,
+          "sha256": "45c2485c4f88a0a1fb0b4935ad12f8814c27ad4458b59626dfc6af47991b6901",
+          "gitBlobSHA1": "bacf1a1c63185a6c5a080b46acc03b5647245e46",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702N/loader.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/loader.js",
+          "bytes": 736781,
+          "sha256": "ffe82b090ff9488a1b2dfb25eceadbbd3f8e5248b40af65e9ce04166176ffa1f",
+          "gitBlobSHA1": "fc9724c80ad1fdfff5fd9861a3b583dbd7ab34a3",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702N/ps4.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/ps4.js",
+          "bytes": 13320,
+          "sha256": "b323f8f3293fa311aa28de92336c6d241f3c6a0c90c62e22823c6384d28dd980",
+          "gitBlobSHA1": "b094c95ddc9a1c46c706148e2f6d8420913397d0",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702N/int64.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/int64.js",
+          "bytes": 6558,
+          "sha256": "628234f2e79b4c8362dba924eb4196af376581f74a0f6c690fc759342cfc11af",
+          "gitBlobSHA1": "2ed24ac4b54b685672e8bd858c6fcf2c7bbeab37",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702N/utils.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702N/utils.js",
+          "bytes": 2796,
+          "sha256": "ab913e793b364f295a334e591aee3642f2ca1a2b0f7fe77c922a6fc9229b59f1",
+          "gitBlobSHA1": "9e8e1d75b94ea5897658c3f9848f2e2cb8ca2153",
+          "gitTreeVerified": true
+        }
+      ],
+      "classification": "optional-offline-cache-unavailable; native-online-route-present",
+      "reason": "The original body calls go() directly. Neither the HTML nor its ps4.js native dispatch contains an applicationCache/is702LCached gate; the manifest attribute is the only cache reference in the entry.",
+      "recommendation": "An exact path+SHA reviewed exception may allow the unchanged original online native route while explicitly reporting offline caching unavailable. Do not fabricate a manifest, substitute another folder's cache, claim offline operation or broaden firmware."
+    },
+    {
+      "entry": {
+        "path": "restore/702d/index.html",
+        "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+        "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/index.html",
+        "bytes": 8400,
+        "sha256": "336b867fa59789cd1f142eae2d4f23492c771f8ec223465c32b11a311f2630c4",
+        "gitBlobSHA1": "dfe8f4c7c72eec35701d692ffa66f62556b8249f",
+        "gitTreeVerified": true
+      },
+      "currentWrapper": {
+        "path": "hosts/runtime/karo-743646c9df9a-51430066e375/web/restore/702d/index.html",
+        "bytes": 26253,
+        "sha256": "c4651ce413620934be099b70ed8748cca924fea19c4e8ed31dba4fc98eec34cf",
+        "originalSHA256": "336b867fa59789cd1f142eae2d4f23492c771f8ec223465c32b11a311f2630c4",
+        "matchesPinnedOriginal": true,
+        "currentBlock": "Required original source unavailable: restore/702d/offlinexmb.cache"
+      },
+      "missingManifest": "restore/702d/offlinexmb.cache",
+      "exactManifestRecovered": false,
+      "upstreamPathHistory": {
+        "url": "https://api.github.com/repos/KAR0218/KAR0218.github.io/commits?path=restore%2F702d%2Fofflinexmb.cache&per_page=100",
+        "status": 200,
+        "commitsReturned": 0
+      },
+      "contractSource": [
+        {
+          "file": "restore/702d/index.html",
+          "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/index.html",
+          "lines": [
+            {
+              "line": 1,
+              "text": "<html manifest=\"offlinexmb.cache\">"
+            },
+            {
+              "line": 275,
+              "text": "\t<body onload=\"go()\" class=\"bg\">"
+            },
+            {
+              "line": 328,
+              "text": "\t\twindow.midExploit = function()"
+            },
+            {
+              "line": 330,
+              "text": "\t\t\tpreloadScripts(['702.js']);"
+            }
+          ]
+        },
+        {
+          "file": "restore/702d/ps4.js",
+          "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/blob/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/ps4.js",
+          "lines": [
+            {
+              "line": 130,
+              "text": "\t\tpreloadScripts(['jb.js', 'preloader.js', 'restore702.js', 'loader.js']);"
+            },
+            {
+              "line": 464,
+              "text": "function go() {"
+            },
+            {
+              "line": 468,
+              "text": "\tif(window.midExploit)"
+            },
+            {
+              "line": 469,
+              "text": "\t\twindow.midExploit();"
+            }
+          ]
+        }
+      ],
+      "nativeDependencies": [
+        {
+          "path": "restore/702d/702.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/702.js",
+          "bytes": 30205,
+          "sha256": "f9ef826bc75f5ccf171e41656546c499dfb367999aed6865e4e3e6699778c5b8",
+          "gitBlobSHA1": "03439d9fe26ac2a0c8d766e280936a0a32dc8c29",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702d/jb.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/jb.js",
+          "bytes": 2406195,
+          "sha256": "79aaa5340eb7e80eb1f419d3be096f7e52442426034e563f6e5765d032dc2339",
+          "gitBlobSHA1": "036545acad79309da840c98df8003b01f75ceeb3",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702d/preloader.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/preloader.js",
+          "bytes": 178721,
+          "sha256": "fd86d717d4cc91c1e197451bb34b01797cf02a523a4f209284959e351c7ebc91",
+          "gitBlobSHA1": "0ca294e04987f472c7b279b5d039a0a61627d87d",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702d/restore702.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/restore702.js",
+          "bytes": 408870,
+          "sha256": "32547037c4166f796ca98a647bdeed8c3015b660d403938670997938a2b791d2",
+          "gitBlobSHA1": "275e481ee3147a3f99bd500eaba1569f4d011909",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702d/loader.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/loader.js",
+          "bytes": 736781,
+          "sha256": "ffe82b090ff9488a1b2dfb25eceadbbd3f8e5248b40af65e9ce04166176ffa1f",
+          "gitBlobSHA1": "fc9724c80ad1fdfff5fd9861a3b583dbd7ab34a3",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702d/ps4.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/ps4.js",
+          "bytes": 13320,
+          "sha256": "b323f8f3293fa311aa28de92336c6d241f3c6a0c90c62e22823c6384d28dd980",
+          "gitBlobSHA1": "b094c95ddc9a1c46c706148e2f6d8420913397d0",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702d/int64.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/int64.js",
+          "bytes": 6558,
+          "sha256": "628234f2e79b4c8362dba924eb4196af376581f74a0f6c690fc759342cfc11af",
+          "gitBlobSHA1": "2ed24ac4b54b685672e8bd858c6fcf2c7bbeab37",
+          "gitTreeVerified": true
+        },
+        {
+          "path": "restore/702d/utils.js",
+          "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+          "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/restore/702d/utils.js",
+          "bytes": 2796,
+          "sha256": "ab913e793b364f295a334e591aee3642f2ca1a2b0f7fe77c922a6fc9229b59f1",
+          "gitBlobSHA1": "9e8e1d75b94ea5897658c3f9848f2e2cb8ca2153",
+          "gitTreeVerified": true
+        }
+      ],
+      "classification": "optional-offline-cache-unavailable; native-online-route-present",
+      "reason": "The original body calls go() directly. Neither the HTML nor its ps4.js native dispatch contains an applicationCache/is702LCached gate; the manifest attribute is the only cache reference in the entry.",
+      "recommendation": "An exact path+SHA reviewed exception may allow the unchanged original online native route while explicitly reporting offline caching unavailable. Do not fabricate a manifest, substitute another folder's cache, claim offline operation or broaden firmware."
+    }
+  ],
+  "originalReadyZIPs": [
+    {
+      "path": "binloader/702/702.zip",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/702/702.zip",
+      "bytes": 239295,
+      "sha256": "141cdfda969131e62323cc56c25f1a240fc9042ab139a4734c16111eb3a8b131",
+      "gitBlobSHA1": "61d8a934bf9de29b32cd9e9739a7cad35447f782",
+      "gitTreeVerified": true,
+      "archiveTestPassed": true,
+      "members": [
+        "702.js",
+        "index.html",
+        "int64.js",
+        "jb.js",
+        "loader.js",
+        "preloader.js",
+        "ps4.js",
+        "utils.js"
+      ],
+      "containsOfflineManifest": false,
+      "extraction": "Only index.html was streamed into a data buffer and staged; no member was executed."
+    },
+    {
+      "path": "binloader/binloader all.zip",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/binloader/binloader all.zip",
+      "bytes": 904298,
+      "sha256": "cc57fc20959da627050b2c5911068aeddf275644ba74b6327832072ee7da8495",
+      "gitBlobSHA1": "5f3eb440c113607cbe033db621a63bced1ce4d47",
+      "gitTreeVerified": true,
+      "archiveTestPassed": true,
+      "members": [
+        "505",
+        "505/exploit.css",
+        "505/index.html",
+        "702",
+        "702/702.zip",
+        "702/702.js",
+        "702/index.html",
+        "702/int64.js",
+        "702/jb.js",
+        "702/loader.js",
+        "702/preloader.js",
+        "702/ps4.js",
+        "702/utils.js",
+        "672",
+        "672/exp_loader.js",
+        "672/index.html",
+        "672/jailbreak.js",
+        "index.html",
+        "755",
+        "755/index.html",
+        "755/int64.js",
+        "755/jb.js",
+        "755/loader.js",
+        "755/preloader.js",
+        "755/ps4.js",
+        "755/utils.js",
+        "755/exploit.js"
+      ],
+      "containsOfflineManifest": false,
+      "extraction": "Only index.html was streamed into a data buffer and staged; no member was executed."
+    }
+  ],
+  "rootFinding": {
+    "entry": {
+      "path": "505/xmbinstaller.html",
+      "commit": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/xmbinstaller.html",
+      "bytes": 535,
+      "sha256": "6c58e37a313e89e9b16a22fc781a1aaf1cbdf2463f7ce3f021833993828c96ce",
+      "gitBlobSHA1": "17ced02aa8837fe1370d1e8f3a17619b5795c89a",
+      "gitTreeVerified": true
+    },
+    "currentWrapper": {
+      "path": "hosts/runtime/karo-743646c9df9a-51430066e375/web/505/xmbinstaller.html",
+      "bytes": 15516,
+      "sha256": "aac1fc0bebf7b2b9be9c138f9d2ab6c4628723355dbf270ab343f5cd56b6fef4",
+      "originalSHA256": "6c58e37a313e89e9b16a22fc781a1aaf1cbdf2463f7ce3f021833993828c96ce",
+      "matchesPinnedOriginal": true,
+      "currentBlock": "Required original source unavailable: offlinexmb.cache"
+    },
+    "referencedPath": "offlinexmb.cache",
+    "recoveredOriginal": {
+      "commit": "a227079f86597e8b4eac7ad89c11838024be89db",
+      "path": "offlinexmb.cache",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/a227079f86597e8b4eac7ad89c11838024be89db/offlinexmb.cache",
+      "bytes": 112,
+      "sha256": "ba39f6ff9bba67784a9c740b6af66d91333fed91ff0263d23bc0134df99315d9",
+      "gitBlobSHA1": "ef68622c6ae39956b67df982819e228fc1a41d14",
+      "gitCommitBlobVerified": true,
+      "stage": "tmp/karo-repairs/a227079f86597e8b4eac7ad89c11838024be89db/offlinexmb.cache",
+      "content": "CACHE MANIFEST \r\n# v2.5.9 Self-Host \r\n\r\nindex.html\r\nint64.js\r\npayloads.js\r\nps4.js\r\nrop.js\r\nuserland.js\r\nutils.js"
+    },
+    "history": {
+      "addCommit": "a227079f86597e8b4eac7ad89c11838024be89db",
+      "deleteCommit": "8d1b2eec654083ad90ad46b910d48f1fd95b4dcb",
+      "deleteCommitURL": "https://github.com/KAR0218/KAR0218.github.io/commit/8d1b2eec654083ad90ad46b910d48f1fd95b4dcb",
+      "unchangedBlobOnDeletion": true
+    },
+    "cacheEntries": [
+      "index.html",
+      "int64.js",
+      "payloads.js",
+      "ps4.js",
+      "rop.js",
+      "userland.js",
+      "utils.js"
+    ],
+    "missingAtCurrentRoot": [
+      "int64.js",
+      "payloads.js",
+      "ps4.js",
+      "rop.js",
+      "userland.js",
+      "utils.js"
+    ],
+    "contractSource": [
+      {
+        "file": "505/xmbinstaller.html",
+        "lines": [
+          {
+            "line": 1,
+            "text": "<html manifest=\"../offlinexmb.cache\">"
+          },
+          {
+            "line": 6,
+            "text": "window.applicationCache.ondownloading=function(n){parent.ondownloading();},window.applicationCache.oncached=function(n){parent.oncached();},window.applicationCache.onupdateready=function(n){parent.onupdateready();},window.applicationCache.onnoupdate=function(n){parent.onnoupdate();},window.applicationCache.onerror=function(n){parent.onerror();};"
+          }
+        ]
+      },
+      {
+        "file": "505/xmbcache.html",
+        "lines": [
+          {
+            "line": 17,
+            "text": "function ondownloading(){changeText(\"<div class=cache>...در حال ذخیره سازی، لطفا صبر کنید<br></div>\");}"
+          },
+          {
+            "line": 18,
+            "text": "function oncached(){changeText(\"<div class=done>بلوباکس با موفقیت ذخیره شد <br><div class=ib>PRESS</div><div id=PSBUTTON></div><div class=ib>TO EXIT</div></div>\");window.parent.document.getElementById('Ttitle').innerHTML='ذخیره شد Self-Host';window.parent.document.getElementById('Tsubtitle').innerHTML='!با تشکر'; window.parent.pop();}"
+          },
+          {
+            "line": 19,
+            "text": "function onupdateready(){changeText(\"<div class=cache>ذخیره سازی بروز رسانی شد</div>\");}"
+          },
+          {
+            "line": 20,
+            "text": "function onnoupdate(){changeText(\"<div class=cache>بروز رسانی جدیدی در دسترس نیست</div>\");}"
+          },
+          {
+            "line": 21,
+            "text": "function onerror(){changeText(\"<div class=cache>خطا در ذخیره سازی</div>\");}"
+          },
+          {
+            "line": 26,
+            "text": "<iframe id=\"ifrm\" src=\"xmbinstaller.html\" style=\"border:none;\"></iframe>"
+          }
+        ]
+      }
+    ],
+    "classification": "historical-root-manifest-found-but-not-a-valid-505-cache-repair",
+    "reason": "The 505 installer points one directory upward. The recovered original manifest caches root index/int64/payloads/ps4/rop/userland/utils, not505 resources. Six referenced runtime files are absent at the pinned repository root. Copying this exact old file into the current root would not restore a working505 offline cache.",
+    "recommendation": "Keep this cache-only helper unavailable with its real reason; it is not required by the normal505 menu native path. Retain the separate valid505/offlinexmb.cache without pretending it is the originally requested root manifest."
+  },
+  "zipEntryEvidence": [
+    {
+      "archive": "binloader/702/702.zip",
+      "archiveBytes": 239295,
+      "archiveSha256": "141cdfda969131e62323cc56c25f1a240fc9042ab139a4734c16111eb3a8b131",
+      "member": "index.html",
+      "bytes": 7605,
+      "sha256": "3663837a3de936980a4293f08e69f8d65d33931cf7552f84541e81b5ed204765",
+      "stage": "tmp/karo-repairs/binloader-702-702.zip-index.html",
+      "firstLine": "<html manifest=\"offlinexmb.cache\">",
+      "inlineScriptHashes": [
+        "0b7dcb7aa919e2ea2fa21704f13f75c2f0ccdad0adab1e41a813b2a858700dce",
+        "95d900bf129e696a8c075ba153c7861f146c245f571506a6d6cc27bcdae9f49d",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "currentInlineScriptHashes": [
+        "5e3a186b528981ba2749c3ca1d7bf62ab70110ed5a20c955897c83a156aa6fc6",
+        "a9b88a96c08c3a9f3f704627c2be964dcba47bb632e2a135c1e7ce17caa07ab2",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "manifest": "offlinexmb.cache",
+      "contractLines": [
+        {
+          "line": 1,
+          "text": "<html manifest=\"offlinexmb.cache\">"
+        },
+        {
+          "line": 264,
+          "text": "\t<body onload=\"go()\" class=\"bg\">"
+        },
+        {
+          "line": 266,
+          "text": "           if(window.applicationCache.status==2){localStorage.is702LCached=true;}"
+        },
+        {
+          "line": 267,
+          "text": "\t\t\twindow.applicationCache.ondownloading=function(){document.getElementById(\"progressx\").innerHTML=\"Page Caching Started!!\";localStorage.is702LCached=false;};"
+        },
+        {
+          "line": 268,
+          "text": "\t\t\twindow.applicationCache.onprogress=function(a){document.getElementById(\"progressx\").innerHTML=(Math.round(100*(a.loaded/a.total)))+\"%\";};"
+        },
+        {
+          "line": 269,
+          "text": "\t\t\twindow.applicationCache.oncached=function(){document.getElementById(\"progressx\").innerHTML=\"Page Cached Successfully!!\";localStorage.is702LCached=true;setTimeout(function(){document.getElementById(\"progressx\").innerHTML=\"Turn Off the Internet & Reopen the Page to Run the Exploit!!\"; }, 1500);};"
+        },
+        {
+          "line": 276,
+          "text": "\t\tfunction preloadScripts(lst)"
+        },
+        {
+          "line": 303,
+          "text": "\t\t\tpreloadScripts(['702.js', 'jb.js', 'preloader.js', 'loader.js']);"
+        }
+      ]
+    },
+    {
+      "archive": "binloader/binloader all.zip",
+      "archiveBytes": 904298,
+      "archiveSha256": "cc57fc20959da627050b2c5911068aeddf275644ba74b6327832072ee7da8495",
+      "member": "702/index.html",
+      "bytes": 7605,
+      "sha256": "3663837a3de936980a4293f08e69f8d65d33931cf7552f84541e81b5ed204765",
+      "stage": "tmp/karo-repairs/binloader-binloader-all.zip-702-index.html",
+      "firstLine": "<html manifest=\"offlinexmb.cache\">",
+      "inlineScriptHashes": [
+        "0b7dcb7aa919e2ea2fa21704f13f75c2f0ccdad0adab1e41a813b2a858700dce",
+        "95d900bf129e696a8c075ba153c7861f146c245f571506a6d6cc27bcdae9f49d",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "currentInlineScriptHashes": [
+        "5e3a186b528981ba2749c3ca1d7bf62ab70110ed5a20c955897c83a156aa6fc6",
+        "a9b88a96c08c3a9f3f704627c2be964dcba47bb632e2a135c1e7ce17caa07ab2",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "manifest": "offlinexmb.cache",
+      "contractLines": [
+        {
+          "line": 1,
+          "text": "<html manifest=\"offlinexmb.cache\">"
+        },
+        {
+          "line": 264,
+          "text": "\t<body onload=\"go()\" class=\"bg\">"
+        },
+        {
+          "line": 266,
+          "text": "           if(window.applicationCache.status==2){localStorage.is702LCached=true;}"
+        },
+        {
+          "line": 267,
+          "text": "\t\t\twindow.applicationCache.ondownloading=function(){document.getElementById(\"progressx\").innerHTML=\"Page Caching Started!!\";localStorage.is702LCached=false;};"
+        },
+        {
+          "line": 268,
+          "text": "\t\t\twindow.applicationCache.onprogress=function(a){document.getElementById(\"progressx\").innerHTML=(Math.round(100*(a.loaded/a.total)))+\"%\";};"
+        },
+        {
+          "line": 269,
+          "text": "\t\t\twindow.applicationCache.oncached=function(){document.getElementById(\"progressx\").innerHTML=\"Page Cached Successfully!!\";localStorage.is702LCached=true;setTimeout(function(){document.getElementById(\"progressx\").innerHTML=\"Turn Off the Internet & Reopen the Page to Run the Exploit!!\"; }, 1500);};"
+        },
+        {
+          "line": 276,
+          "text": "\t\tfunction preloadScripts(lst)"
+        },
+        {
+          "line": 303,
+          "text": "\t\t\tpreloadScripts(['702.js', 'jb.js', 'preloader.js', 'loader.js']);"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "GitHub exact-path history was read on the default branch, whose reviewed head is the pinned commit. Empty path history is evidence that no exact manifest was returned there, not proof about every unreviewed branch or third-party copy.",
+    "Online native routing is established from original source structure only. Physical console behavior, browser AppCache/TLS and successful payload execution remain untested."
+  ],
+  "modifiedSharedImplementation": false,
+  "downloadedCodeExecuted": false,
+  "consoleContact": false,
+  "quarantinedPayloadsRead": false
+}

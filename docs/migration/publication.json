@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-11-03T19:43:28.999Z",
+  "hostRepository": "https://github.com/Speedy-away/WWB-HOST",
+  "hostCommit": "65ebb2fae24f01b261aece1bfc826cc231431b43",
+  "hostSite": "https://speedy-away.github.io/WWB-HOST/",
+  "hostDeployment": {
+    "id": 41710687092,
+    "url": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41710687092",
+    "conclusion": "success",
+    "head": "65ebb2fae24f01b261aece1bfc826cc231431b43"
+  },
+  "publicHTTP": [
+    {
+      "path": "",
+      "status": 200
+    },
+    {
+      "path": "hosts/ps4/",
+      "status": 200
+    },
+    {
+      "path": "hosts/ps5/",
+      "status": 200
+    },
+    {
+      "path": "hosts/karo/",
+      "status": 200
+    },
+    {
+      "path": "hosts/karo/versions.html",
+      "status": 200
+    }
+  ],
+  "homeImagesVerified": 6,
+  "mainCommit": "fe5386a1738bc9d3d40a9c77c81313fb2d9a4d11",
+  "mainDeployment": {
+    "id": 41707006458,
+    "url": "https://github.com/Speedy-away/whatsite/actions/runs/41707006458",
+    "conclusion": "success",
+    "head": "fe5386a1738bc9d3d40a9c77c81313fb2d9a4d11"
+  },
+  "mainSiteLinkVerified": true,
+  "status": "published-and-verified",
+  "finishedAt": "2026-11-03T20:19:40.034Z",
+  "nativeCodeExecuted": false,
+  "consoleContact": false,
+  "hardwareExecutionVerified": false,
+  "previousHostDeployment": {
+    "id": 41705919245,
+    "url": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41705919245",
+    "conclusion": "success",
+    "head": "0716f70dc70d0b9efebe157f6b3ad34008f65fee"
+  },
+  "pages": {
+    "revision": "65ebb2fae24f01b261aece1bfc826cc231431b43",
+    "base": "/WWB-HOST",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 842053203,
+    "budget": 922746880,
+    "files": 5567,
+    "offloadedFiles": 274,
+    "nativeScriptsUnchanged": 848,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/"
+  },
+  "loadDownloadHTTP": {
+    "status": "passed",
+    "uniqueURLs": 1553,
+    "nativeLoadEntries": 71,
+    "enabledPayloadRecords": 1443,
+    "exactArabicBuilds": 3,
+    "report": "docs/migration/public-http-verification.json"
+  },
+  "cache": {
+    "manifests": 30,
+    "resources": 1491,
+    "offloaded": 0,
+    "missing": 0,
+    "report": "docs/migration/cache-resource-preservation.json"
+  },
+  "retainedReadyZIPs": 165,
+  "oldMainHostLandingVerified": true
+}

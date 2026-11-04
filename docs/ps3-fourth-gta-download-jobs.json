@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T07:08:33.069Z",
+  "scope": "New public GTA IV and GTA V console distributions. No build bodies downloaded or executed by researcher.",
+  "jobs": [
+    {
+      "id": "gta4-ultimate-v2-fourth",
+      "resourceId": "gta-iv-ultimate-mod-v2",
+      "title": "AllInOne Ultimate Mod",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA IV"
+      ],
+      "project": "AllInOne Ultimate Mod",
+      "version": "v2",
+      "filename": "AllInOne-Ultimate_Mod_V2.zip",
+      "url": "https://www.mediafire.com/file/1fytdl959odego0/AllInOne-Ultimate_Mod_V2.zip/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-texture-pack",
+      "pages": [
+        "console/ps3/mods/gta-iv/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 186965523,
+      "maxBytes": 204472320,
+      "timeoutMs": 600000,
+      "verifyArchive": true,
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    },
+    {
+      "id": "gta4-ultimate-npeb-edat-fourth",
+      "resourceId": "gta-iv-ultimate-common-npeb00882",
+      "title": "Ultimate Mod common.edat · NPEB00882",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA IV"
+      ],
+      "project": "Ultimate Mod common.edat · NPEB00882",
+      "version": "v2 folder component",
+      "filename": "common-NPEB00882.edat",
+      "url": "https://www.mediafire.com/file/qk0p66yey2poln5/common-NPEB00882.edat/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-texture-pack",
+      "pages": [
+        "console/ps3/mods/gta-iv/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 17251024,
+      "maxBytes": 34603008,
+      "timeoutMs": 600000,
+      "verifyArchive": false,
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    },
+    {
+      "id": "gta4-ultimate-npub-edat-fourth",
+      "resourceId": "gta-iv-ultimate-common-npub30702",
+      "title": "Ultimate Mod common.edat · NPUB30702",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA IV"
+      ],
+      "project": "Ultimate Mod common.edat · NPUB30702",
+      "version": "v2 folder component",
+      "filename": "common-NPUB30702.edat",
+      "url": "https://www.mediafire.com/file/wzuqbhdnyixsfbc/common-NPUB30702.edat/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-texture-pack",
+      "pages": [
+        "console/ps3/mods/gta-iv/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 17279728,
+      "maxBytes": 34603008,
+      "timeoutMs": 600000,
+      "verifyArchive": false,
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    },
+    {
+      "id": "gta5-rockstar-bles-fourth",
+      "resourceId": "gta-v-rockstar-bles",
+      "title": "Rockstar Loader · BLES",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA5"
+      ],
+      "project": "Rockstar Loader · BLES",
+      "version": "Unversioned",
+      "filename": "Rockstar Loader (BLES).rar",
+      "url": "https://www.mediafire.com/file/jeqlgzs6senigjr/Rockstar_Loader_%2528BLES%2529.rar/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "pages": [
+        "console/ps3/mods/gta-v/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 256281327,
+      "maxBytes": 273678336,
+      "timeoutMs": 600000,
+      "verifyArchive": true,
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    },
+    {
+      "id": "gta5-paradise-rpf-fourth",
+      "resourceId": "gta-v-paradise",
+      "title": "Paradise Mod Loader",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA5"
+      ],
+      "project": "Paradise Mod Loader",
+      "version": "Unversioned source folder build",
+      "filename": "update.rpf",
+      "url": "https://www.mediafire.com/file/yfwlv8a8u0y8cvw/update.rpf/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "pages": [
+        "console/ps3/mods/gta-v/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 143859200,
+      "maxBytes": 161480704,
+      "timeoutMs": 600000,
+      "verifyArchive": false,
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    },
+    {
+      "id": "gta5-rockstar-blus-fourth",
+      "resourceId": "gta-v-rockstar-blus",
+      "title": "Rockstar Loader · BLUS",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA5"
+      ],
+      "project": "Rockstar Loader · BLUS",
+      "version": "Unversioned",
+      "filename": "Rockstar Loader (BLUS).rar",
+      "url": "https://www.mediafire.com/file/gqbvjn5afv4z7qt/Rockstar_Loader_%2528BLUS%2529.rar/file",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "pages": [
+        "console/ps3/mods/gta-v/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 256281886,
+      "maxBytes": 273678336,
+      "timeoutMs": 600000,
+      "verifyArchive": true,
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    },
+    {
+      "id": "gta5-criminal-doss-fourth",
+      "resourceId": "gta-v-criminal-doss-v1",
+      "title": "Criminal Doss",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA5"
+      ],
+      "project": "Criminal Doss",
+      "version": "v1",
+      "gameUpdate": "1.27",
+      "filename": "CRIMINAL DOSS V1.rar",
+      "url": "https://www.dropbox.com/scl/fi/zdne37bvg1jblf85wg74p/CRIMINAL-DOSS-V1.rar?rlkey=iy1l4hgw056wyi6azzqcj0odo&st=pr25a086&dl=0",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "pages": [
+        "console/ps3/mods/gta-v/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 71300561,
+      "maxBytes": 88080384,
+      "timeoutMs": 600000,
+      "verifyArchive": true,
+      "provider": "dropbox-public-share",
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    },
+    {
+      "id": "gta5-buzzard-v53-fourth",
+      "resourceId": "gta-v-buzzard-v53",
+      "title": "Buzzard Private",
+      "platform": "PS3",
+      "category": [
+        "Games",
+        "GTA5"
+      ],
+      "project": "Buzzard Private",
+      "version": "v5.3",
+      "gameUpdate": "1.27",
+      "filename": "Mod Loader BUZZARD v5.3 Private.zip",
+      "url": "https://www.dropbox.com/scl/fi/aod8q2xggtotozdxqk75i/Mod-Loader-BUZZARD-v5.3-Private.zip?rlkey=br487wcb8hhjeac1b3j0790k5&e=1&st=sl6iixum&dl=0",
+      "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "pages": [
+        "console/ps3/mods/gta-v/index.html"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 182131345,
+      "maxBytes": 199229440,
+      "timeoutMs": 600000,
+      "verifyArchive": true,
+      "provider": "dropbox-public-share",
+      "extractionLimits": {
+        "maxExpandedBytes": 1073741824,
+        "maxMemberBytes": 536870912,
+        "maxTotalExtractedBytes": 1073741824,
+        "maxMembers": 5000,
+        "maxDepth": 2,
+        "timeoutMs": 600000
+      }
+    }
+  ],
+  "attachmentChecks": [
+    {
+      "id": "gta4-ultimate-v2-fourth",
+      "resourceId": "gta-iv-ultimate-mod-v2",
+      "url": "https://www.mediafire.com/file/1fytdl959odego0/AllInOne-Ultimate_Mod_V2.zip/file",
+      "checkedAt": "2026-11-02T07:08:28.241Z",
+      "landingStatus": 200,
+      "headStatus": 200,
+      "filename": "AllInOne-Ultimate_Mod_V2.zip",
+      "bytes": 186965523,
+      "contentType": "application/zip",
+      "acceptRanges": "bytes",
+      "expectedBytesSource": "Public MediaFire folder API metadata; exact attachment HEAD matches."
+    },
+    {
+      "id": "gta4-ultimate-npeb-edat-fourth",
+      "resourceId": "gta-iv-ultimate-common-npeb00882",
+      "url": "https://www.mediafire.com/file/qk0p66yey2poln5/common-NPEB00882.edat/file",
+      "checkedAt": "2026-11-02T07:08:28.273Z",
+      "landingStatus": 200,
+      "headStatus": 200,
+      "filename": "common-NPEB00882.edat",
+      "bytes": 17251024,
+      "contentType": "application/octet-stream",
+      "acceptRanges": "bytes",
+      "expectedBytesSource": "Public MediaFire folder API metadata; exact attachment HEAD matches."
+    },
+    {
+      "id": "gta4-ultimate-npub-edat-fourth",
+      "resourceId": "gta-iv-ultimate-common-npub30702",
+      "url": "https://www.mediafire.com/file/wzuqbhdnyixsfbc/common-NPUB30702.edat/file",
+      "checkedAt": "2026-11-02T07:08:28.274Z",
+      "landingStatus": 200,
+      "headStatus": 200,
+      "filename": "common-NPUB30702.edat",
+      "bytes": 17279728,
+      "contentType": "application/octet-stream",
+      "acceptRanges": "bytes",
+      "expectedBytesSource": "Public MediaFire folder API metadata; exact attachment HEAD matches."
+    },
+    {
+      "id": "gta5-rockstar-bles-fourth",
+      "resourceId": "gta-v-rockstar-bles",
+      "url": "https://www.mediafire.com/file/jeqlgzs6senigjr/Rockstar_Loader_%2528BLES%2529.rar/file",
+      "checkedAt": "2026-11-02T07:08:30.908Z",
+      "landingStatus": 200,
+      "headStatus": 200,
+      "filename": "Rockstar Loader (BLES).rar",
+      "bytes": 256281327,
+      "contentType": "application/x-rar",
+      "acceptRanges": "bytes",
+      "expectedBytesSource": "Public MediaFire folder API metadata; exact attachment HEAD matches."
+    },
+    {
+      "id": "gta5-paradise-rpf-fourth",
+      "resourceId": "gta-v-paradise",
+      "url": "https://www.mediafire.com/file/yfwlv8a8u0y8cvw/update.rpf/file",
+      "checkedAt": "2026-11-02T07:08:30.908Z",
+      "landingStatus": 200,
+      "headStatus": 200,
+      "filename": "update.rpf",
+      "bytes": 143859200,
+      "contentType": "application/octet-stream",
+      "acceptRanges": "bytes",
+      "expectedBytesSource": "Public MediaFire folder API metadata; exact attachment HEAD matches."
+    },
+    {
+      "id": "gta5-rockstar-blus-fourth",
+      "resourceId": "gta-v-rockstar-blus",
+      "url": "https://www.mediafire.com/file/gqbvjn5afv4z7qt/Rockstar_Loader_%2528BLUS%2529.rar/file",
+      "checkedAt": "2026-11-02T07:08:30.908Z",
+      "landingStatus": 200,
+      "headStatus": 200,
+      "filename": "Rockstar Loader (BLUS).rar",
+      "bytes": 256281886,
+      "contentType": "application/x-rar",
+      "acceptRanges": "bytes",
+      "expectedBytesSource": "Public MediaFire folder API metadata; exact attachment HEAD matches."
+    },
+    {
+      "id": "gta5-criminal-doss-fourth",
+      "resourceId": "gta-v-criminal-doss-v1",
+      "url": "https://www.dropbox.com/scl/fi/zdne37bvg1jblf85wg74p/CRIMINAL-DOSS-V1.rar?rlkey=iy1l4hgw056wyi6azzqcj0odo&st=pr25a086&dl=0",
+      "checkedAt": "2026-11-02T07:13:04.532Z",
+      "method": "Public share HEAD followed by a single 8-byte GET Range, cancelled after that range.",
+      "headStatus": 200,
+      "headType": "application/json (misleading metadata response; not accepted as a build)",
+      "rangeStatus": 206,
+      "contentType": "application/binary",
+      "contentRange": "bytes 0-7/71300561",
+      "bytes": 71300561,
+      "magic": "526172211a070100",
+      "signInRequired": false
+    },
+    {
+      "id": "gta5-buzzard-v53-fourth",
+      "resourceId": "gta-v-buzzard-v53",
+      "url": "https://www.dropbox.com/scl/fi/aod8q2xggtotozdxqk75i/Mod-Loader-BUZZARD-v5.3-Private.zip?rlkey=br487wcb8hhjeac1b3j0790k5&e=1&st=sl6iixum&dl=0",
+      "checkedAt": "2026-11-02T07:13:04.533Z",
+      "method": "Public share HEAD followed by a single 8-byte GET Range, cancelled after that range.",
+      "headStatus": 200,
+      "headType": "application/json (misleading metadata response; not accepted as a build)",
+      "rangeStatus": 206,
+      "contentType": "application/binary",
+      "contentRange": "bytes 0-7/182131345",
+      "bytes": 182131345,
+      "magic": "504b030414000000",
+      "signInRequired": false
+    }
+  ]
+}

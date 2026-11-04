@@ -1,0 +1,83 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "Compatibility evidence for PS5 guide cards. A listed exploit route does not certify every homebrew payload on the same firmware. Existing firmware and release pins remain unchanged.",
+  "routes": [
+    {
+      "id": "relapse",
+      "title": "7.00–13.60 · Relapse",
+      "method": "WebKit + Relapse/AIO kernel chain",
+      "firmwareLabel": "Listed 7.00–13.60 builds",
+      "supportedVersions": ["7.00", "7.01", "7.20", "7.40", "7.60", "7.61", "8.00", "8.20", "8.40", "8.60", "9.00", "9.20", "9.40", "9.60", "10.00", "10.01", "10.20", "10.40", "11.00", "11.20", "11.60", "12.00", "12.02", "12.20", "12.40", "12.60", "12.70", "13.00", "13.20", "13.40", "13.42", "13.60"],
+      "excludedVersions": ["9.05", "10.60", "11.40"],
+      "excludedEvidence": "10.60 and 11.40 are explicitly excluded in soniciso1's README; 9.05 is absent from its whitelist and explicitly excluded for Relapse by the WebKit Autoloader changelog.",
+      "guidePath": "/console/ps5/relapse.html",
+      "primarySource": "https://github.com/soniciso1/relapse",
+      "hostUrls": [],
+      "image": "/assets/images/consoles/ps5-relapse.jpg",
+      "prerequisites": ["A PS5 on an exact listed firmware.", "Access to a compatible browser host, directly or through a configured User's Guide redirect."],
+      "notes": ["The upstream build is for retail consoles and testkits; devkits use a separate build.", "The run page's own ELF menu works on a static host. Its separate elf.html menu requires a network-reachable backend and an already jailbroken console."]
+    },
+    {
+      "id": "umtx2",
+      "title": "1.00–5.50 · UMTX2",
+      "method": "PSFree browser entry + UMTX kernel chain",
+      "firmwareLabel": "Listed 1.00–5.50 builds",
+      "supportedVersions": ["1.00", "1.01", "1.02", "1.05", "1.10", "1.11", "1.12", "1.13", "1.14", "2.00", "2.20", "2.25", "2.26", "2.30", "2.50", "2.70", "3.00", "3.10", "3.20", "3.21", "4.00", "4.02", "4.03", "4.50", "4.51", "5.00", "5.02", "5.10", "5.50"],
+      "excludedVersions": [],
+      "guidePath": "/console/ps5/umtx2.html",
+      "primarySource": "https://github.com/idlesauce/umtx2",
+      "hostUrls": ["https://umtx2.pages.dev/", "https://idlesauce.github.io/umtx2/"],
+      "imageRecommendation": "Use the current UMTX2 landing screen or an explicitly illustrative browser/firmware graphic, not the older 3.xx–4.xx idlesauce host screenshot.",
+      "prerequisites": ["A PS5 on an exact supported build.", "Access to the project's browser host; no Blu-ray drive is required for this browser chain."],
+      "notes": ["The current project README advertises an included payload menu, automatic ELF loader and an older-payload loader on port 9020.", "This browser chain stops at 5.50. UMTX's kernel vulnerability affecting up to 7.61 does not extend this WebKit chain past its supported versions."]
+    },
+    {
+      "id": "bdj",
+      "title": "6.00–7.61 · BD-J & UMTX",
+      "method": "Blu-ray BD-J JAR Loader + UMTX",
+      "firmwareLabel": "Listed 6.xx–7.xx builds · disc required",
+      "supportedVersions": ["6.00", "6.02", "6.50", "7.00", "7.01", "7.20", "7.40", "7.60", "7.61"],
+      "scopeNote": "This card covers the gap between the browser guide bands. The JAR Loader itself also has offsets for older firmware.",
+      "guidePath": "/console/ps5/bdj.html",
+      "primarySource": "https://github.com/hammer-83/ps5-jar-loader",
+      "release": "https://github.com/hammer-83/ps5-jar-loader/releases/tag/v4.1.1",
+      "downloadJobs": "docs/ps5-bdj-download-jobs.json",
+      "hostUrls": [],
+      "image": "/assets/images/consoles/ps5-bdj-jar-loader.png",
+      "prerequisites": ["A PS5 with a working, enabled Blu-ray drive on an exact listed firmware.", "A computer, Blu-ray writer and writable BD-R or BD-RE media.", "The matching v4.1.1 JAR Loader ISO and updated UMTX1 JAR.", "A computer on the same local network to send the JARs to the remote loader."],
+      "notes": ["The official SDK's firmware switch includes the exact versions listed above and rejects unknown versions.", "The v4.1.1 release instructs sending its updated UMTX via the Remote Loader instead of running the old copy on the Full disc.", "This is a kernel read/write and BD-J process-jailbreak workflow. Kernel-data writes are restricted on 6.00+, and etaHEN or other downstream payload support must be checked separately.", "7.xx owners can also check the Relapse browser route."]
+    }
+  ],
+  "additionalSetup": {
+    "id": "y2jb",
+    "title": "Y2JB & autoloader setup",
+    "guidePath": "/console/ps5/y2jb.html",
+    "image": "/assets/images/consoles/ps5-y2jb.jpg",
+    "primarySource": "https://github.com/Gezine/Y2JB",
+    "installerScope": "The site's existing installer guide uses prior homebrew access. It should remain a separate setup option, rather than a clean-system firmware card.",
+    "upstreamCaveat": "Upstream Y2JB also documents a non-jailbroken USB-backup installation path that factory-resets the PS5. This is a separate workflow, not implicit approval to erase data or change the existing installer guide.",
+    "kernelNote": "Y2JB itself supplies a userland entry. Its README's Lapse payload is limited to firmware through 10.01; compatible app, kernel chain and payload prerequisites remain separate."
+  },
+  "legacyAlternative": {
+    "id": "ipv6",
+    "title": "3.xx–4.xx · original IPv6 research chain",
+    "supportedVersions": ["3.00", "3.10", "3.20", "3.21", "4.00", "4.02", "4.03", "4.50", "4.51"],
+    "primarySource": "https://github.com/Cryptogenic/PS5-IPV6-Kernel-Exploit",
+    "selectorDecision": "Do not add a redundant primary card: these versions are already covered by the current UMTX2 browser guide. Retain existing host-directory links.",
+    "notes": "The README describes a developer research chain with kernel read/write limitations. Do not infer modern payload compatibility from its old status notes."
+  },
+  "sources": [
+    {"url": "https://github.com/soniciso1/relapse/blob/main/README.md", "supports": "Relapse's exact firmware whitelist, exclusions, console types and static-host menu behavior."},
+    {"url": "https://github.com/itsPLK/ps5-webkit-autoloader/blob/main/CHANGELOG.md", "supports": "v0.6.1 explicitly states Relapse does not support 9.05 or 11.40; v0.6.0 drops its legacy UMTX2 branch."},
+    {"url": "https://github.com/idlesauce/umtx2/blob/main/README.md", "supports": "Current UMTX2 browser range, official hosts and included loader/menu features."},
+    {"url": "https://github.com/idlesauce/umtx2/blob/main/document/en/ps5/main.js#L51", "supports": "Exact supportedFirmwares whitelist; unknown firmware is rejected."},
+    {"url": "https://github.com/PS5Dev/PS5-UMTX-Jailbreak/blob/main/README.md", "supports": "Distinguishes the kernel vulnerability's 7.61 ceiling from the browser entry patched in 6.00."},
+    {"url": "https://github.com/hammer-83/ps5-jar-loader/blob/main/README.md", "supports": "BD-J loader prerequisites, BD-R(E) preparation, remote JAR loading and 6.00+ data-write restrictions."},
+    {"url": "https://github.com/hammer-83/ps5-jar-loader/blob/v4.1.1/sdk/src/main/java/org/ps5jb/sdk/core/kernel/KernelOffsets.java", "supports": "Exact BD-J SDK firmware offsets, including 6.00/6.02/6.50 and the listed 7.xx builds."},
+    {"url": "https://github.com/hammer-83/ps5-jar-loader/blob/v4.1.1/xploit/jar/src/main/java/org/ps5jb/client/JarMain.java", "supports": "java -jar <payload.jar> <address> [<port>] sender syntax; the optional port defaults to 9025."},
+    {"url": "https://github.com/hammer-83/ps5-jar-loader/releases/tag/v4.1.1", "supports": "Pinned official ISO/JAR release and requirement to send the updated UMTX remotely."},
+    {"url": "https://github.com/hammer-83/ps5-jar-loader/releases/tag/v4.1.0", "supports": "UMTX1 recommendation, process-jailbreak payload and loader/payload version compatibility."},
+    {"url": "https://github.com/Gezine/Y2JB/blob/main/README.md", "supports": "Userland entry, distinct installed/USB-backup setup paths and the Lapse payload's 10.01 ceiling."},
+    {"url": "https://github.com/Cryptogenic/PS5-IPV6-Kernel-Exploit/blob/main/README.md", "supports": "Exact 3.xx/4.xx legacy IPv6 firmware list and research limitations."}
+  ]
+}

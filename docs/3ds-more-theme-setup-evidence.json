@@ -1,0 +1,40 @@
+{
+  "verifiedAt": "2026-11-02",
+  "themezerSupport": {
+    "hub": "https://themezer.net/3ds",
+    "themes": "https://themezer.net/3ds/themes",
+    "splashes": "https://themezer.net/3ds/splashes",
+    "supportSince": "2026-06-14",
+    "status": "Actual 3DS/2DS themes and Luma3DS splash pages are present. This is distinct from the Switch NXTheme catalogue."
+  },
+  "themezerApp": {
+    "project": "https://github.com/ThemezerNX/Themezer-3DS",
+    "release": "https://github.com/ThemezerNX/Themezer-3DS/releases/tag/v1.1.0",
+    "version": "v1.1.0",
+    "published": "2026-10-24",
+    "cia": "https://github.com/ThemezerNX/Themezer-3DS/releases/download/v1.1.0/themezer-3ds.cia",
+    "threeDsx": "https://github.com/ThemezerNX/Themezer-3DS/releases/download/v1.1.0/themezer-3ds.3dsx",
+    "instructions": "CIA installs with FBI. Copy the 3DSX build to SD:/3ds/ and use Homebrew Launcher. Its input folders are SD:/Themes, SD:/Splashes and SD:/Badges; settings/cache use SD:/3ds/themezer-3ds. Its README says it can uninstall current content and automatically enable Luma splashes. Anemone3DS can still scan Themezer QR codes.",
+    "faq": "https://themezer.net/3ds/faq/how-do-i-install-update-themezer-3ds"
+  },
+  "anemone": {
+    "project": "https://github.com/astronautlevel2/Anemone3DS",
+    "usage": "https://github.com/astronautlevel2/Anemone3DS/wiki/Usage",
+    "prerequisites": "https://github.com/astronautlevel2/Anemone3DS/wiki",
+    "instructions": "Copy original ZIPs into SD:/Themes or SD:/Splashes. R scans QR codes using CFW/Rosalina. Theme mode: hold A and release with Up for full install, Right to preserve current BGM, Left for BGM only. Y previews. Splash mode: A installs to /luma; B removes the installed splash. Shuffle uses 2–10 selected themes. Keep a backup before deleting anything.",
+    "formats": "Theme ZIPs contain body_LZ.bin; optional bgm.bcstm supplies HOME Menu music. Splash ZIPs contain splash.bin and/or splashbottom.bin. These are separate content types."
+  },
+  "lumaSplash": {
+    "source": "https://github.com/LumaTeam/Luma3DS/wiki/Optional-features",
+    "instructions": "Hold Select while powering on for Luma configuration. Set Splash to Before or After. Luma reads SD:/luma/splash.bin and SD:/luma/splashbottom.bin. Top and bottom images are 400×240 and 320×240. Set Splash Off to disable display without deleting the files. Splash duration is configurable."
+  },
+  "recovery": {
+    "source": "https://github.com/astronautlevel2/Anemone3DS/wiki/Known-Bugs",
+    "instructions": "If corrupt theme extdata causes a black screen, the official wiki identifies the region theme-management folder under SD:/Nintendo 3DS/<ID0>/<ID1>/extdata/00000000/: USA 000002cd, EUR 000002ce, JPN 000002cc. Back up the SD and exact folder before following the official removal procedure. Do not remove the entire Nintendo 3DS directory.",
+    "themezerFaqPathCaution": "Themezer's recovery FAQ omits the second 32-character ID in its displayed path. Prefer the official Anemone wiki's full ID0/ID1 path."
+  },
+  "unverified": [
+    "The theme author pages do not state New-model-only requirements. Do not assert a hardware test.",
+    "No explicit minimum system firmware or Korean/Chinese/Taiwan HOME Menu theme support was established by these sources. Require a HOME Menu that actually has the Change Theme option and link current modding guidance; do not recommend a region change solely for themes."
+  ]
+}

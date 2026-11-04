@@ -1,0 +1,255 @@
+{
+  "reviewed": "2026-11-02",
+  "games": [],
+  "resources": [
+    {
+      "id": "waw-oldgenmodderz-v1",
+      "name": "OldGenModderz v1.0",
+      "gameId": "world-at-war",
+      "category": "script",
+      "version": "v1.0",
+      "gameUpdate": "Not stated by source",
+      "region": "Page-wide BLES / BLUS claim; exact title IDs not established",
+      "compatibility": "PS3 multiplayer patch. The source page makes a broad HEN / CFW claim; exact build, firmware and title-update requirements remain unverified.",
+      "description": "Source-listed multiplayer console patch for World at War. Preserve its original distribution and match the documented edition before copying files.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/wcquchi9gjc750b/OldGenModderz_V1.0.zip/file",
+          "label": "Original archive",
+          "filename": "OldGenModderz V1.0.zip"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/waw-official-cover.jpg",
+      "imageCaption": "Official World at War cover artwork; not a screenshot of this patch or evidence of PS3 compatibility.",
+      "tags": [
+        "PS3",
+        "multiplayer",
+        "Console patch"
+      ],
+      "availability": "Saved and SHA-256 verified without execution; archive CRC passed.",
+      "archiveEvidence": {
+        "itemId": "waw-oldgenmodderz-v1",
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "files": [
+          {
+            "name": "OldGenModderz V1.0.zip",
+            "bytes": 3089141,
+            "sha256": "749781b4b1c111831ebbe625500740020b2df31f0d3c2dcacd98b4355d78a5f1",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-oldgenmodderz-v1/749781b4b1c1/OldGenModderz%20V1.0.zip"
+          },
+          {
+            "name": "patch_mp.ff",
+            "bytes": 841738,
+            "sha256": "5a892f1d10a45382e9602006ce72ce13bccf8748556489b9ac3ca64dcdbf9f9a",
+            "memberPath": "oGm V1.00 WAW PATCH\\patch_mp.ff",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-oldgenmodderz-v1/5a892f1d10a4/oGm%20V1.00%20WAW%20PATCH/patch_mp.ff"
+          },
+          {
+            "name": "patch_ui.ff",
+            "bytes": 993882,
+            "sha256": "c12607ae3798d05c116b5b4607a3b33265b21df05345a52fcbb57d925bd77d2f",
+            "memberPath": "oGm V1.00 WAW PATCH\\patch_ui.ff",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-oldgenmodderz-v1/c12607ae3798/oGm%20V1.00%20WAW%20PATCH/patch_ui.ff"
+          },
+          {
+            "name": "patch_ui_mp.ff",
+            "bytes": 304479,
+            "sha256": "cbda3caf500b8aa5ddc4215aeed50cf1f8219cacdb2feb0e365a905047c65187",
+            "memberPath": "oGm V1.00 WAW PATCH\\patch_ui_mp.ff",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-oldgenmodderz-v1/cbda3caf500b/oGm%20V1.00%20WAW%20PATCH/patch_ui_mp.ff"
+          }
+        ],
+        "hardwareExecutionTested": false
+      }
+    },
+    {
+      "id": "waw-trickshot-menu",
+      "name": "World at War Trickshot Menu",
+      "gameId": "world-at-war",
+      "category": "script",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "Page-wide BLES / BLUS claim; exact title IDs not established",
+      "compatibility": "PS3 multiplayer patch. The source page makes a broad HEN / CFW claim; exact build, firmware and title-update requirements remain unverified.",
+      "description": "Source-listed multiplayer console patch for World at War. Preserve its original distribution and match the documented edition before copying files.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/e25l38x3b8a317m/WAW_Trickshot_Menu.rar/file",
+          "label": "Original archive",
+          "filename": "WAW Trickshot Menu.rar"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/waw-official-cover.jpg",
+      "imageCaption": "Official World at War cover artwork; not a screenshot of this patch or evidence of PS3 compatibility.",
+      "tags": [
+        "PS3",
+        "multiplayer",
+        "Console patch"
+      ],
+      "availability": "Saved and SHA-256 verified without execution; archive CRC passed.",
+      "archiveEvidence": {
+        "itemId": "waw-trickshot-menu",
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "files": [
+          {
+            "name": "WAW Trickshot Menu.rar",
+            "bytes": 1075295,
+            "sha256": "564178f1dc02abebffbc031c62f5d8dedbe9a109fe918e0d11ec610ba8ad9e13",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-trickshot-menu/564178f1dc02/WAW%20Trickshot%20Menu.rar"
+          },
+          {
+            "name": "patch_mp.ff",
+            "bytes": 1074556,
+            "sha256": "efc1bb3e2da4d0650c4bcc41f037864c58436af0c43e7fd17327aeccf9c0848a",
+            "memberPath": "WAW Trickshot Menu\\patch_mp.ff",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-trickshot-menu/efc1bb3e2da4/WAW%20Trickshot%20Menu/patch_mp.ff"
+          },
+          {
+            "name": "READ ME.txt",
+            "bytes": 1061,
+            "sha256": "1543f3c17f6e6b7b7b50e51cc6010caffb76dad493a65dab7ce5462cc5616890",
+            "memberPath": "WAW Trickshot Menu\\READ ME.txt",
+            "archiveRole": [
+              "Metadata"
+            ],
+            "local": "/downloads/ps3/waw-trickshot-menu/1543f3c17f6e/WAW%20Trickshot%20Menu/READ%20ME.txt"
+          }
+        ],
+        "hardwareExecutionTested": false
+      },
+      "note": "The included readme labels force-start as CFW-only. Do not infer that feature works with HEN. Other game-update and title-ID requirements are not stated."
+    },
+    {
+      "id": "waw-ofly-nightclub",
+      "name": "oFly-x Night Club",
+      "gameId": "world-at-war",
+      "category": "script",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "Page-wide BLES / BLUS claim; exact title IDs not established",
+      "compatibility": "PS3 multiplayer patch. The source page makes a broad HEN / CFW claim; exact build, firmware and title-update requirements remain unverified.",
+      "description": "Source-listed multiplayer console patch for World at War. Preserve its original distribution and match the documented edition before copying files.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/ayxphv1136d40vy/oFly-x_Night_Club_Ps3.rar/file",
+          "label": "Original archive",
+          "filename": "oFly-x Night Club Ps3.rar"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/waw-official-cover.jpg",
+      "imageCaption": "Official World at War cover artwork; not a screenshot of this patch or evidence of PS3 compatibility.",
+      "tags": [
+        "PS3",
+        "multiplayer",
+        "Console patch"
+      ],
+      "availability": "Saved and SHA-256 verified without execution; archive CRC passed.",
+      "archiveEvidence": {
+        "itemId": "waw-ofly-nightclub",
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "files": [
+          {
+            "name": "oFly-x Night Club Ps3.rar",
+            "bytes": 1104574,
+            "sha256": "e0f1150e1b89ce120a6ac0fb1f32b769186c5028d6862a00dd6b296bbf4ef34f",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-ofly-nightclub/e0f1150e1b89/oFly-x%20Night%20Club%20Ps3.rar"
+          },
+          {
+            "name": "patch_mp.ff",
+            "bytes": 1104316,
+            "sha256": "40d37fb41aeca4271cfb5e74230228cdbab97984221bf2345ba34414fc140bd1",
+            "memberPath": "oFly-x Night Club Ps3\\patch_mp.ff",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-ofly-nightclub/40d37fb41aec/oFly-x%20Night%20Club%20Ps3/patch_mp.ff"
+          }
+        ],
+        "hardwareExecutionTested": false
+      }
+    },
+    {
+      "id": "waw-forflah123-private",
+      "name": "FORFLAH123 Private Patch",
+      "gameId": "world-at-war",
+      "category": "script",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "region": "Page-wide BLES / BLUS claim; exact title IDs not established",
+      "compatibility": "PS3 multiplayer patch. The source page makes a broad HEN / CFW claim; exact build, firmware and title-update requirements remain unverified.",
+      "description": "Source-listed multiplayer console patch for World at War. Preserve its original distribution and match the documented edition before copying files.",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/?jxjz3c85zajp2if=",
+          "label": "Direct console patch",
+          "filename": "forflah123 private patch_mp.ff"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/waw-official-cover.jpg",
+      "imageCaption": "Official World at War cover artwork; not a screenshot of this patch or evidence of PS3 compatibility.",
+      "tags": [
+        "PS3",
+        "multiplayer",
+        "Console patch"
+      ],
+      "availability": "Saved and SHA-256 verified without execution; IWffu100 patch header observed.",
+      "archiveEvidence": {
+        "itemId": "waw-forflah123-private",
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "files": [
+          {
+            "name": "forflah123 private patch_mp.ff",
+            "bytes": 1086818,
+            "sha256": "1d6a66f472c4a6ee71f5c0e5d33d84f78e82613a96846b4515db657f1e19bf9a",
+            "archiveRole": [
+              "Builds"
+            ],
+            "local": "/downloads/ps3/waw-forflah123-private/1d6a66f472c4/forflah123%20private%20patch_mp.ff"
+          }
+        ],
+        "hardwareExecutionTested": false
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-ww/ww-mod-menu",
+      "finding": "Selected direct public PS3 patches; unlock-gated choices skipped. Source compatibility claims remain separate from archive inspection."
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Cloud Patch v7",
+      "reason": "Exact source URL already archived; existing version retained."
+    },
+    {
+      "name": "Sphinx V2",
+      "reason": "MediaFire page exposes no public attachment; not downloaded."
+    }
+  ]
+}

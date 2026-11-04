@@ -1,0 +1,3840 @@
+{
+  "scope": "ds-dsi-more",
+  "checkedAt": "2026-11-02T12:14:51.616Z",
+  "entries": [
+    {
+      "id": "nesds",
+      "files": [
+        {
+          "name": "nesDS.nds",
+          "url": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.nds",
+          "format": "NDS",
+          "label": "nesDS.nds",
+          "sourceUrl": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.nds",
+          "resolvedUrl": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.nds",
+          "local": "/downloads/ds-dsi-more/nesds/v2.1/nesDS.nds",
+          "version": "v2.1",
+          "bytes": 457728,
+          "sha256": "746bd85d0cd040e37e44438f06f9027a3221c57df0f8135abd46e6e2a6864da8",
+          "contents": [],
+          "native": [
+            {
+              "name": "nesDS.nds",
+              "bytes": 457728,
+              "sha256": "746bd85d0cd040e37e44438f06f9027a3221c57df0f8135abd46e6e2a6864da8",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 392632
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 409088,
+                  "bytes": 38476
+                }
+              ],
+              "bannerOffset": 448512
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        },
+        {
+          "name": "nesDS.dsi",
+          "url": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.dsi",
+          "format": "DSi",
+          "label": "nesDS.dsi",
+          "sourceUrl": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.dsi",
+          "resolvedUrl": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.dsi",
+          "local": "/downloads/ds-dsi-more/nesds/v2.1/nesDS.dsi",
+          "version": "v2.1",
+          "bytes": 457728,
+          "sha256": "2fcd285d0e3a32e1b21d1dd8f661a3404c8492ef33cb43cf7316a4670b7c8fbe",
+          "contents": [],
+          "native": [
+            {
+              "name": "nesDS.dsi",
+              "bytes": 457728,
+              "sha256": "2fcd285d0e3a32e1b21d1dd8f661a3404c8492ef33cb43cf7316a4670b7c8fbe",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 3,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 392632
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 409088,
+                  "bytes": 38476
+                }
+              ],
+              "bannerOffset": 448512
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "gameyob",
+      "files": [
+        {
+          "name": "gameyob.nds",
+          "url": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob.nds",
+          "format": "NDS",
+          "label": "gameyob.nds",
+          "sourceUrl": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob.nds",
+          "resolvedUrl": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob.nds",
+          "local": "/downloads/ds-dsi-more/gameyob/v0.5.3b-mavica/gameyob.nds",
+          "version": "v0.5.3b-mavica",
+          "bytes": 508992,
+          "sha256": "172652cdde450e8dc50c28dff1bbd3f9bdd9a3784014116c2cdd2e438ebacebd",
+          "contents": [],
+          "native": [
+            {
+              "name": "gameyob.nds",
+              "bytes": 508992,
+              "sha256": "172652cdde450e8dc50c28dff1bbd3f9bdd9a3784014116c2cdd2e438ebacebd",
+              "format": "Nintendo DS executable",
+              "title": ".j",
+              "unitCode": 0,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 512,
+                  "bytes": 443040
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 443904,
+                  "bytes": 62044
+                }
+              ],
+              "bannerOffset": 506880
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        },
+        {
+          "name": "gameyob_dsi.nds",
+          "url": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob_dsi.nds",
+          "format": "NDS",
+          "label": "gameyob_dsi.nds",
+          "sourceUrl": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob_dsi.nds",
+          "resolvedUrl": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob_dsi.nds",
+          "local": "/downloads/ds-dsi-more/gameyob/v0.5.3b-mavica/gameyob_dsi.nds",
+          "version": "v0.5.3b-mavica",
+          "bytes": 531968,
+          "sha256": "ea113d2710d4c9b219289fc10cff7629162f368af72e8653808f8ab848bf7392",
+          "contents": [],
+          "native": [
+            {
+              "name": "gameyob_dsi.nds",
+              "bytes": 531968,
+              "sha256": "ea113d2710d4c9b219289fc10cff7629162f368af72e8653808f8ab848bf7392",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 3,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 443040
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 459776,
+                  "bytes": 62044
+                }
+              ],
+              "bannerOffset": 522752
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "nitrografx",
+      "files": [
+        {
+          "name": "NitroGrafx0_9_1.zip",
+          "url": "https://github.com/FluBBaOfWard/NitroGrafx/releases/download/v0.9.1/NitroGrafx0_9_1.zip",
+          "format": "ZIP → NDS",
+          "label": "NitroGrafx0_9_1.zip",
+          "sourceUrl": "https://github.com/FluBBaOfWard/NitroGrafx/releases/download/v0.9.1/NitroGrafx0_9_1.zip",
+          "resolvedUrl": "https://github.com/FluBBaOfWard/NitroGrafx/releases/download/v0.9.1/NitroGrafx0_9_1.zip",
+          "local": "/downloads/ds-dsi-more/nitrografx/v0.9.1/NitroGrafx0_9_1.zip",
+          "version": "v0.9.1",
+          "bytes": 124147,
+          "sha256": "32b2969e657a59b8c42fd79ec5ad0aa83b74803549d5a3954d626f6260e3fd64",
+          "contents": [
+            "CDROM_readme.txt",
+            "__MACOSX\\._CDROM_readme.txt",
+            "History.txt",
+            "__MACOSX\\._History.txt",
+            "NitroGrafx.nds",
+            "__MACOSX\\._NitroGrafx.nds",
+            "README.md",
+            "__MACOSX\\._README.md"
+          ],
+          "native": [
+            {
+              "name": "NitroGrafx.nds",
+              "bytes": 218112,
+              "sha256": "264d9553ee59887e8e02c5d3fc710a143b8037ca1a998e494dd919ac62cf7cf2",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 155572
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 172032,
+                  "bytes": 32948
+                }
+              ],
+              "bannerOffset": 205824
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "s8ds",
+      "files": [
+        {
+          "name": "S8DS.zip",
+          "url": "https://github.com/FluBBaOfWard/S8DS/releases/download/v1.1.8/S8DS.zip",
+          "format": "ZIP → NDS",
+          "label": "S8DS.zip",
+          "sourceUrl": "https://github.com/FluBBaOfWard/S8DS/releases/download/v1.1.8/S8DS.zip",
+          "resolvedUrl": "https://github.com/FluBBaOfWard/S8DS/releases/download/v1.1.8/S8DS.zip",
+          "local": "/downloads/ds-dsi-more/s8ds/v1.1.8/S8DS.zip",
+          "version": "v1.1.8",
+          "bytes": 188182,
+          "sha256": "01e5312f2af0685c5e64fd8d4fc5e4d460df9de03b8f97b1df6eaa76c2d702f6",
+          "contents": [
+            "History.txt",
+            "__MACOSX\\._History.txt",
+            "README.md",
+            "__MACOSX\\._README.md",
+            "S8DS.nds",
+            "__MACOSX\\._S8DS.nds"
+          ],
+          "native": [
+            {
+              "name": "S8DS.nds",
+              "bytes": 311296,
+              "sha256": "22df6b1a3426269562bc771c12d98a40ea6dd9adae0d049ba641a81af281b892",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 248668
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 265216,
+                  "bytes": 32948
+                }
+              ],
+              "bannerOffset": 299008
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "a7800ds",
+      "files": [
+        {
+          "name": "A7800DS.nds",
+          "url": "https://github.com/wavemotion-dave/A7800DS/releases/download/5.2c/A7800DS.nds",
+          "format": "NDS",
+          "label": "A7800DS.nds",
+          "sourceUrl": "https://github.com/wavemotion-dave/A7800DS/releases/download/5.2c/A7800DS.nds",
+          "resolvedUrl": "https://github.com/wavemotion-dave/A7800DS/releases/download/5.2c/A7800DS.nds",
+          "local": "/downloads/ds-dsi-more/a7800ds/5.2c/A7800DS.nds",
+          "version": "5.2c",
+          "bytes": 673792,
+          "sha256": "dbe7706bfafeffb283c1435cfd46a1c4e492dfc8e699684da8fcf32d33599bef",
+          "contents": [],
+          "native": [
+            {
+              "name": "A7800DS.nds",
+              "bytes": 673792,
+              "sha256": "dbe7706bfafeffb283c1435cfd46a1c4e492dfc8e699684da8fcf32d33599bef",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 603364
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 620032,
+                  "bytes": 43944
+                }
+              ],
+              "bannerOffset": 664576
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "stellads",
+      "files": [
+        {
+          "name": "StellaDS.nds",
+          "url": "https://github.com/wavemotion-dave/StellaDS/releases/download/8.4a/StellaDS.nds",
+          "format": "NDS",
+          "label": "StellaDS.nds",
+          "sourceUrl": "https://github.com/wavemotion-dave/StellaDS/releases/download/8.4a/StellaDS.nds",
+          "resolvedUrl": "https://github.com/wavemotion-dave/StellaDS/releases/download/8.4a/StellaDS.nds",
+          "local": "/downloads/ds-dsi-more/stellads/8.4a/StellaDS.nds",
+          "version": "8.4a",
+          "bytes": 1699328,
+          "sha256": "a5bea4e4e3af79fe940d2229767664a2a7cbf8096916bc94aea302c7da3cec1b",
+          "contents": [],
+          "native": [
+            {
+              "name": "StellaDS.nds",
+              "bytes": 1699328,
+              "sha256": "a5bea4e4e3af79fe940d2229767664a2a7cbf8096916bc94aea302c7da3cec1b",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 1647632
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 1664512,
+                  "bytes": 24856
+                }
+              ],
+              "bannerOffset": 1690112
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "wordle-ds",
+      "files": [
+        {
+          "name": "WordleDS.nds",
+          "url": "https://github.com/Epicpkmn11/WordleDS/releases/download/v3.2.3/WordleDS.nds",
+          "format": "NDS",
+          "label": "WordleDS.nds",
+          "sourceUrl": "https://github.com/Epicpkmn11/WordleDS/releases/download/v3.2.3/WordleDS.nds",
+          "resolvedUrl": "https://github.com/Epicpkmn11/WordleDS/releases/download/v3.2.3/WordleDS.nds",
+          "local": "/downloads/ds-dsi-more/wordle-ds/v3.2.3/WordleDS.nds",
+          "version": "v3.2.3",
+          "bytes": 978880,
+          "sha256": "cdbf18af105abfb00c699cff1b95de48d781468a3b52aeb3bb5a431e603b7075",
+          "contents": [],
+          "native": [
+            {
+              "name": "WordleDS.nds",
+              "bytes": 978880,
+              "sha256": "cdbf18af105abfb00c699cff1b95de48d781468a3b52aeb3bb5a431e603b7075",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 875292
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 891904,
+                  "bytes": 45940
+                }
+              ],
+              "bannerOffset": 969728
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "portalds",
+      "files": [
+        {
+          "name": "ASDS_r1.zip",
+          "url": "https://github.com/smealum/portalDS/releases/download/r1/ASDS_r1.zip",
+          "format": "ZIP → NDS",
+          "label": "ASDS_r1.zip",
+          "sourceUrl": "https://github.com/smealum/portalDS/releases/download/r1/ASDS_r1.zip",
+          "resolvedUrl": "https://github.com/smealum/portalDS/releases/download/r1/ASDS_r1.zip",
+          "local": "/downloads/ds-dsi-more/portalds/r1/ASDS_r1.zip",
+          "version": "r1",
+          "bytes": 1397420,
+          "sha256": "91db9b5c1b1932fd454571de3da73fe56c369ce0423d515dd81a882cc63da4e9",
+          "contents": [
+            "aperturecover.png",
+            "asds",
+            "asds\\config.ini",
+            "asds\\maps",
+            "portalDS.nds",
+            "README.txt"
+          ],
+          "native": [
+            {
+              "name": "portalDS.nds",
+              "bytes": 2153244,
+              "sha256": "2a1a3a334dea72f128d0e399827c99b6011f00dfe32721dc10abd7e9b14e3479",
+              "format": "Nintendo DS executable",
+              "title": ".j",
+              "unitCode": 0,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 512,
+                  "bytes": 642776
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 643584,
+                  "bytes": 95440
+                }
+              ],
+              "bannerOffset": 743424
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "counter-strike-ds",
+      "files": [
+        {
+          "name": "Counter.Strike.DS.1.0.0.zip",
+          "url": "https://github.com/Fewnity/Counter-Strike-Nintendo-DS/releases/download/1.0.0/Counter.Strike.DS.1.0.0.zip",
+          "format": "ZIP → NDS",
+          "label": "Counter.Strike.DS.1.0.0.zip",
+          "sourceUrl": "https://github.com/Fewnity/Counter-Strike-Nintendo-DS/releases/download/1.0.0/Counter.Strike.DS.1.0.0.zip",
+          "resolvedUrl": "https://github.com/Fewnity/Counter-Strike-Nintendo-DS/releases/download/1.0.0/Counter.Strike.DS.1.0.0.zip",
+          "local": "/downloads/ds-dsi-more/counter-strike-ds/1.0.0/Counter.Strike.DS.1.0.0.zip",
+          "version": "1.0.0",
+          "bytes": 3133189,
+          "sha256": "fcd8cc7930b30ca72d05e94def573a4cf0d94f68646f79d8bc578bc40f0b3837",
+          "contents": [
+            "counter_strike.nds",
+            "counter_strike_music.raw",
+            "PUT FILES IN THE SAME FOLDER",
+            "READ BEFORE INSTALL.txt",
+            "soundbank.bin"
+          ],
+          "native": [
+            {
+              "name": "counter_strike.nds",
+              "bytes": 1648128,
+              "sha256": "434984acb0921413113b8afce02bc056f51399b5226c637af7eac1e8392b898d",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 1578004
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 1594880,
+                  "bytes": 43508
+                }
+              ],
+              "bannerOffset": 1638912
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "punch-a-rooney",
+      "files": [
+        {
+          "name": "Punch-A-Rooney.nds",
+          "url": "https://github.com/seaners42/Punch-A-Rooney/releases/download/1.0.1/Punch-A-Rooney.nds",
+          "format": "NDS",
+          "label": "Punch-A-Rooney.nds",
+          "sourceUrl": "https://github.com/seaners42/Punch-A-Rooney/releases/download/1.0.1/Punch-A-Rooney.nds",
+          "resolvedUrl": "https://github.com/seaners42/Punch-A-Rooney/releases/download/1.0.1/Punch-A-Rooney.nds",
+          "local": "/downloads/ds-dsi-more/punch-a-rooney/1.0.1/Punch-A-Rooney.nds",
+          "version": "1.0.1",
+          "bytes": 13714432,
+          "sha256": "7ea804a7ee2097089046fefa47aad65d466dc79df8aaa33bfe76840251d9a3b7",
+          "contents": [],
+          "native": [
+            {
+              "name": "Punch-A-Rooney.nds",
+              "bytes": 13714432,
+              "sha256": "7ea804a7ee2097089046fefa47aad65d466dc79df8aaa33bfe76840251d9a3b7",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 186824
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 203264,
+                  "bytes": 51440
+                }
+              ],
+              "bannerOffset": 262144
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "hbmenu",
+      "files": [
+        {
+          "name": "hbmenu-0.11.0.zip",
+          "url": "https://github.com/devkitPro/nds-hb-menu/releases/download/v0.11.0/hbmenu-0.11.0.zip",
+          "format": "ZIP → NDS",
+          "label": "hbmenu-0.11.0.zip",
+          "sourceUrl": "https://github.com/devkitPro/nds-hb-menu/releases/download/v0.11.0/hbmenu-0.11.0.zip",
+          "resolvedUrl": "https://github.com/devkitPro/nds-hb-menu/releases/download/v0.11.0/hbmenu-0.11.0.zip",
+          "local": "/downloads/ds-dsi-more/hbmenu/v0.11.0/hbmenu-0.11.0.zip",
+          "version": "v0.11.0",
+          "bytes": 1639323,
+          "sha256": "8e1bd3eabb766383728847d1a66a7551c207102ce86d2c9b20cc98402b47ebc2",
+          "contents": [
+            "hbmenu",
+            "hbmenu\\ismat.dat",
+            "hbmenu\\_BOOT_MP.NDS",
+            "hbmenu\\_ds_menu.dat",
+            "hbmenu\\akmenu4.nds",
+            "hbmenu\\BOOT.NDS",
+            "hbmenu\\EZDS.dat",
+            "hbmenu\\private",
+            "hbmenu\\private\\.DS_Store",
+            "hbmenu\\private\\ds",
+            "hbmenu\\private\\ds\\.DS_Store",
+            "hbmenu\\private\\ds\\app",
+            "hbmenu\\private\\ds\\app\\484E494A",
+            "hbmenu\\private\\ds\\app\\484E494A\\pit.bin",
+            "hbmenu\\SCFW.SC",
+            "hbmenu\\nds",
+            "hbmenu\\nds\\test2.argv",
+            "hbmenu\\nds\\ftpd.nds",
+            "hbmenu\\nds\\dslink.nds",
+            "hbmenu\\nds\\test1.argv",
+            "hbmenu\\nds\\argvTest.nds",
+            "hbmenu\\bootstrap.cia",
+            "hbmenu\\ACE3DS",
+            "hbmenu\\ACE3DS\\_ds_menu.dat",
+            "hbmenu\\ACE3DS\\_dsmenu.dat",
+            "hbmenu\\ez5sys.bin",
+            "hbmenu\\TTMENU.DAT",
+            "README.md",
+            "COPYING"
+          ],
+          "native": [
+            {
+              "name": "hbmenu/akmenu4.nds",
+              "bytes": 155145,
+              "sha256": "68e939da2d2116519e9506bef7f6c620df230ac178a18e6d196671144fdf9a4a",
+              "format": "Nintendo DS executable",
+              "title": "R4XX",
+              "unitCode": 0,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 512,
+                  "bytes": 142820
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 143360,
+                  "bytes": 11700
+                }
+              ],
+              "bannerOffset": 0
+            },
+            {
+              "name": "hbmenu/BOOT.NDS",
+              "bytes": 299008,
+              "sha256": "95f6561daa9d61402d39a2622ce19e7a887f2c8ba24fdb487753db3fcc357d24",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 202460
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 219136,
+                  "bytes": 45940
+                }
+              ],
+              "bannerOffset": 265728
+            },
+            {
+              "name": "hbmenu/nds/argvTest.nds",
+              "bytes": 138816,
+              "sha256": "0000596c5deb438f9c367bf7e64a3e5785c1ba23b6080ef49b169185f9e0a266",
+              "format": "Nintendo DS executable",
+              "title": ".j",
+              "unitCode": 0,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 512,
+                  "bytes": 71596
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 72192,
+                  "bytes": 63976
+                }
+              ],
+              "bannerOffset": 136704
+            },
+            {
+              "name": "hbmenu/nds/dslink.nds",
+              "bytes": 124416,
+              "sha256": "81c3c9fa9d4b561b991e9b58b6410da60291f16d232bcf68b66681618497e77b",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 53756
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 70144,
+                  "bytes": 25088
+                }
+              ],
+              "bannerOffset": 95744
+            },
+            {
+              "name": "hbmenu/nds/ftpd.nds",
+              "bytes": 491520,
+              "sha256": "9059cebd7a38f66ad1469c626d0e07f242188fdb52455803a898c0518136c26d",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 394520
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 411136,
+                  "bytes": 45940
+                }
+              ],
+              "bannerOffset": 457728
+            },
+            {
+              "name": "hbmenu/_BOOT_MP.NDS",
+              "bytes": 155145,
+              "sha256": "d40bf7ac146f906e6c832f391328e4fc934d60d39848b710aa10dbc2f39f039b",
+              "format": "Nintendo DS executable",
+              "title": "R4XX",
+              "unitCode": 0,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 512,
+                  "bytes": 142820
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 143360,
+                  "bytes": 11700
+                }
+              ],
+              "bannerOffset": 0
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "cg-input-test",
+      "files": [
+        {
+          "name": "cg-input-test.nds",
+          "url": "https://github.com/claudechinsta/cg-nds-input-test/releases/download/1.0.0/cg-input-test.nds",
+          "format": "NDS",
+          "label": "cg-input-test.nds",
+          "sourceUrl": "https://github.com/claudechinsta/cg-nds-input-test/releases/download/1.0.0/cg-input-test.nds",
+          "resolvedUrl": "https://github.com/claudechinsta/cg-nds-input-test/releases/download/1.0.0/cg-input-test.nds",
+          "local": "/downloads/ds-dsi-more/cg-input-test/1.0.0/cg-input-test.nds",
+          "version": "1.0.0",
+          "bytes": 312320,
+          "sha256": "f5893193d81138aed6354bd802288cea3d2a1b38e503f149d4906d464c470454",
+          "contents": [],
+          "native": [
+            {
+              "name": "cg-input-test.nds",
+              "bytes": 312320,
+              "sha256": "f5893193d81138aed6354bd802288cea3d2a1b38e503f149d4906d464c470454",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 215676
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 232448,
+                  "bytes": 45940
+                }
+              ],
+              "bannerOffset": 279040
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "switch-basic-light",
+      "files": [
+        {
+          "name": "Switch - Basic Light.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Light.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Light.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Light.7z",
+          "local": "/downloads/ds-dsi-more/switch-basic-light/v1.1.2/Switch - Basic Light.7z",
+          "version": "v1.1.2",
+          "bytes": 8289,
+          "sha256": "7c0b623d8e8c64a8fb7a664750e03f21be9d12eaa59bee590ef113c2646dd22e",
+          "contents": [
+            "Switch - Basic Light",
+            "Switch - Basic Light\\background",
+            "Switch - Basic Light\\battery",
+            "Switch - Basic Light\\grf",
+            "Switch - Basic Light\\ui",
+            "Switch - Basic Light\\volume",
+            "Switch - Basic Light\\background\\bottom.grf",
+            "Switch - Basic Light\\background\\bottom_bubble.grf",
+            "Switch - Basic Light\\background\\bottom_moving.grf",
+            "Switch - Basic Light\\background\\top.grf",
+            "Switch - Basic Light\\battery\\battery1.png",
+            "Switch - Basic Light\\battery\\battery2.png",
+            "Switch - Basic Light\\battery\\battery3.png",
+            "Switch - Basic Light\\battery\\battery4.png",
+            "Switch - Basic Light\\battery\\batterycharge.png",
+            "Switch - Basic Light\\battery\\batterychargeblink.png",
+            "Switch - Basic Light\\battery\\batteryfull.png",
+            "Switch - Basic Light\\battery\\batteryfullDS.png",
+            "Switch - Basic Light\\battery\\batterylow.png",
+            "Switch - Basic Light\\grf\\bips.grf",
+            "Switch - Basic Light\\grf\\box.grf",
+            "Switch - Basic Light\\grf\\brace.grf",
+            "Switch - Basic Light\\grf\\bubble.grf",
+            "Switch - Basic Light\\grf\\button_arrow.grf",
+            "Switch - Basic Light\\grf\\cornerbutton.grf",
+            "Switch - Basic Light\\grf\\dialogbox.grf",
+            "Switch - Basic Light\\grf\\folder.grf",
+            "Switch - Basic Light\\grf\\icon_gb.grf",
+            "Switch - Basic Light\\grf\\icon_gba.grf",
+            "Switch - Basic Light\\grf\\icon_gbamode.grf",
+            "Switch - Basic Light\\grf\\icon_gg.grf",
+            "Switch - Basic Light\\grf\\icon_manual.grf",
+            "Switch - Basic Light\\grf\\icon_md.grf",
+            "Switch - Basic Light\\grf\\icon_nes.grf",
+            "Switch - Basic Light\\grf\\icon_plg.grf",
+            "Switch - Basic Light\\grf\\icon_settings.grf",
+            "Switch - Basic Light\\grf\\icon_sms.grf",
+            "Switch - Basic Light\\grf\\icon_snes.grf",
+            "Switch - Basic Light\\grf\\icon_unk.grf",
+            "Switch - Basic Light\\grf\\launch_dot.grf",
+            "Switch - Basic Light\\grf\\moving_arrow.grf",
+            "Switch - Basic Light\\grf\\progress.grf",
+            "Switch - Basic Light\\grf\\scroll_window.grf",
+            "Switch - Basic Light\\grf\\small_cart.grf",
+            "Switch - Basic Light\\grf\\start_border.grf",
+            "Switch - Basic Light\\grf\\start_text.grf",
+            "Switch - Basic Light\\grf\\wirelessicons.grf",
+            "Switch - Basic Light\\theme.ini",
+            "Switch - Basic Light\\ui\\date_time_font.png",
+            "Switch - Basic Light\\ui\\Lshoulder.png",
+            "Switch - Basic Light\\ui\\Lshoulder_greyed.png",
+            "Switch - Basic Light\\ui\\Rshoulder.png",
+            "Switch - Basic Light\\ui\\Rshoulder_greyed.png",
+            "Switch - Basic Light\\volume\\volume0.png",
+            "Switch - Basic Light\\volume\\volume1.png",
+            "Switch - Basic Light\\volume\\volume2.png",
+            "Switch - Basic Light\\volume\\volume3.png",
+            "Switch - Basic Light\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "switch-basic-dark",
+      "files": [
+        {
+          "name": "Switch - Basic Dark.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Dark.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Dark.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Switch%20-%20Basic%20Dark.7z",
+          "local": "/downloads/ds-dsi-more/switch-basic-dark/v1.1.2/Switch - Basic Dark.7z",
+          "version": "v1.1.2",
+          "bytes": 8370,
+          "sha256": "9f17e21adb3fc98f69824d1f7bdfcc991cad1527ec63c6dfe878f85f8af82214",
+          "contents": [
+            "Switch - Basic Dark",
+            "Switch - Basic Dark\\background",
+            "Switch - Basic Dark\\battery",
+            "Switch - Basic Dark\\grf",
+            "Switch - Basic Dark\\ui",
+            "Switch - Basic Dark\\volume",
+            "Switch - Basic Dark\\background\\bottom.grf",
+            "Switch - Basic Dark\\background\\bottom_bubble.grf",
+            "Switch - Basic Dark\\background\\bottom_moving.grf",
+            "Switch - Basic Dark\\background\\top.grf",
+            "Switch - Basic Dark\\battery\\battery1.png",
+            "Switch - Basic Dark\\battery\\battery2.png",
+            "Switch - Basic Dark\\battery\\battery3.png",
+            "Switch - Basic Dark\\battery\\battery4.png",
+            "Switch - Basic Dark\\battery\\batterycharge.png",
+            "Switch - Basic Dark\\battery\\batterychargeblink.png",
+            "Switch - Basic Dark\\battery\\batteryfull.png",
+            "Switch - Basic Dark\\battery\\batteryfullDS.png",
+            "Switch - Basic Dark\\battery\\batterylow.png",
+            "Switch - Basic Dark\\grf\\bips.grf",
+            "Switch - Basic Dark\\grf\\box.grf",
+            "Switch - Basic Dark\\grf\\brace.grf",
+            "Switch - Basic Dark\\grf\\bubble.grf",
+            "Switch - Basic Dark\\grf\\button_arrow.grf",
+            "Switch - Basic Dark\\grf\\cornerbutton.grf",
+            "Switch - Basic Dark\\grf\\dialogbox.grf",
+            "Switch - Basic Dark\\grf\\folder.grf",
+            "Switch - Basic Dark\\grf\\icon_gb.grf",
+            "Switch - Basic Dark\\grf\\icon_gba.grf",
+            "Switch - Basic Dark\\grf\\icon_gbamode.grf",
+            "Switch - Basic Dark\\grf\\icon_gg.grf",
+            "Switch - Basic Dark\\grf\\icon_manual.grf",
+            "Switch - Basic Dark\\grf\\icon_md.grf",
+            "Switch - Basic Dark\\grf\\icon_nes.grf",
+            "Switch - Basic Dark\\grf\\icon_plg.grf",
+            "Switch - Basic Dark\\grf\\icon_settings.grf",
+            "Switch - Basic Dark\\grf\\icon_sms.grf",
+            "Switch - Basic Dark\\grf\\icon_snes.grf",
+            "Switch - Basic Dark\\grf\\icon_unk.grf",
+            "Switch - Basic Dark\\grf\\launch_dot.grf",
+            "Switch - Basic Dark\\grf\\moving_arrow.grf",
+            "Switch - Basic Dark\\grf\\progress.grf",
+            "Switch - Basic Dark\\grf\\scroll_window.grf",
+            "Switch - Basic Dark\\grf\\small_cart.grf",
+            "Switch - Basic Dark\\grf\\start_border.grf",
+            "Switch - Basic Dark\\grf\\start_text.grf",
+            "Switch - Basic Dark\\grf\\wirelessicons.grf",
+            "Switch - Basic Dark\\theme.ini",
+            "Switch - Basic Dark\\ui\\date_time_font.png",
+            "Switch - Basic Dark\\ui\\Lshoulder.png",
+            "Switch - Basic Dark\\ui\\Lshoulder_greyed.png",
+            "Switch - Basic Dark\\ui\\Rshoulder.png",
+            "Switch - Basic Dark\\ui\\Rshoulder_greyed.png",
+            "Switch - Basic Dark\\volume\\volume0.png",
+            "Switch - Basic Dark\\volume\\volume1.png",
+            "Switch - Basic Dark\\volume\\volume2.png",
+            "Switch - Basic Dark\\volume\\volume3.png",
+            "Switch - Basic Dark\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "3darks",
+      "files": [
+        {
+          "name": "3DarkS.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/3DarkS.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/3DarkS.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/3DarkS.7z",
+          "local": "/downloads/ds-dsi-more/3darks/v1.1.2/3DarkS.7z",
+          "version": "v1.1.2",
+          "bytes": 1027123,
+          "sha256": "ebcd15388d73803866c7e8da3e9fbbbe7af16f771d3d6c848383b20ff437cd92",
+          "contents": [
+            "3darks",
+            "3darks\\background",
+            "3darks\\battery",
+            "3darks\\grf",
+            "3darks\\quickmenu",
+            "3darks\\ui",
+            "3darks\\video",
+            "3darks\\volume",
+            "3darks\\background\\bottom.png",
+            "3darks\\background\\bottom_bubble.png",
+            "3darks\\background\\bottom_bubble_ds.png",
+            "3darks\\background\\bottom_ds.png",
+            "3darks\\background\\top.grf",
+            "3darks\\battery\\battery0.png",
+            "3darks\\battery\\battery1.png",
+            "3darks\\battery\\battery1purple.png",
+            "3darks\\battery\\battery2.png",
+            "3darks\\battery\\battery2purple.png",
+            "3darks\\battery\\battery3.png",
+            "3darks\\battery\\battery3purple.png",
+            "3darks\\battery\\battery4.png",
+            "3darks\\battery\\battery4purple.png",
+            "3darks\\battery\\batterycharge.png",
+            "3darks\\battery\\batterychargeblink.png",
+            "3darks\\battery\\batteryfull.png",
+            "3darks\\battery\\batteryfullDS.png",
+            "3darks\\battery\\batterylow.png",
+            "3darks\\grf\\box_empty.bmp",
+            "3darks\\grf\\box_full.bmp",
+            "3darks\\grf\\bubble.bmp",
+            "3darks\\grf\\cursor.bmp",
+            "3darks\\grf\\dialogbox.bmp",
+            "3darks\\grf\\folder.bmp",
+            "3darks\\grf\\icon_a26.bmp",
+            "3darks\\grf\\icon_gb.bmp",
+            "3darks\\grf\\icon_gba.bmp",
+            "3darks\\grf\\icon_gbamode.bmp",
+            "3darks\\grf\\icon_gg.bmp",
+            "3darks\\grf\\icon_int.bmp",
+            "3darks\\grf\\icon_m5.bmp",
+            "3darks\\grf\\icon_manual.bmp",
+            "3darks\\grf\\icon_md.bmp",
+            "3darks\\grf\\icon_mini.bmp",
+            "3darks\\grf\\icon_msx.bmp",
+            "3darks\\grf\\icon_nes.bmp",
+            "3darks\\grf\\icon_ngp.bmp",
+            "3darks\\grf\\icon_pce.bmp",
+            "3darks\\grf\\icon_plg.bmp",
+            "3darks\\grf\\icon_settings.bmp",
+            "3darks\\grf\\icon_sg.bmp",
+            "3darks\\grf\\icon_sms.bmp",
+            "3darks\\grf\\icon_snes.bmp",
+            "3darks\\grf\\icon_unk.bmp",
+            "3darks\\grf\\icon_ws.bmp",
+            "3darks\\grf\\progress.bmp",
+            "3darks\\grf\\small_cart.bmp",
+            "3darks\\grf\\wirelessicons.bmp",
+            "3darks\\quickmenu\\bottombg.png",
+            "3darks\\quickmenu\\phat_topbg.png",
+            "3darks\\quickmenu\\topbg.png",
+            "3darks\\theme.ini",
+            "3darks\\ui\\Lshoulder.png",
+            "3darks\\ui\\Lshoulder_greyed.png",
+            "3darks\\ui\\Rshoulder.png",
+            "3darks\\ui\\Rshoulder_greyed.png",
+            "3darks\\video\\3dsRotatingCubes.rvid",
+            "3darks\\volume\\volume0.png",
+            "3darks\\volume\\volume1.png",
+            "3darks\\volume\\volume2.png",
+            "3darks\\volume\\volume3.png",
+            "3darks\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "spelunky-ds",
+      "files": [
+        {
+          "name": "spelunkyds.nds",
+          "url": "https://github.com/dbeef/spelunky-ds/releases/download/1.13DSi%2B%2B/spelunkyds.nds",
+          "format": "NDS",
+          "label": "spelunkyds.nds",
+          "sourceUrl": "https://github.com/dbeef/spelunky-ds/releases/download/1.13DSi%2B%2B/spelunkyds.nds",
+          "resolvedUrl": "https://github.com/dbeef/spelunky-ds/releases/download/1.13DSi%2B%2B/spelunkyds.nds",
+          "local": "/downloads/ds-dsi-more/spelunky-ds/1.13DSi__/spelunkyds.nds",
+          "version": "1.13DSi++",
+          "bytes": 3170816,
+          "sha256": "1020d008765fbd7e21bc1122a8fd01187b2090f220e885c1869fa3f37fd9c430",
+          "contents": [],
+          "native": [
+            {
+              "name": "spelunkyds.nds",
+              "bytes": 3170816,
+              "sha256": "1020d008765fbd7e21bc1122a8fd01187b2090f220e885c1869fa3f37fd9c430",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 3100108
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 3116544,
+                  "bytes": 43548
+                }
+              ],
+              "bannerOffset": 3161600
+            }
+          ],
+          "archived": true,
+          "archiveReused": true
+        }
+      ]
+    },
+    {
+      "id": "minicraft-ds",
+      "files": [
+        {
+          "name": "Minicraft-DS-Edition.nds",
+          "url": "https://github.com/ArthurCose/Minicraft-DS-Edition/releases/download/v1.0.0-beta.3/Minicraft-DS-Edition.nds",
+          "format": "NDS",
+          "label": "Minicraft-DS-Edition.nds",
+          "sourceUrl": "https://github.com/ArthurCose/Minicraft-DS-Edition/releases/download/v1.0.0-beta.3/Minicraft-DS-Edition.nds",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/290147914/2479c1ab-0da4-41c6-8020-04744c1dd8ea?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A28%3A58Z&rscd=attachment%3B+filename%3DMinicraft-DS-Edition.nds&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A28%3A04Z&ske=2026-11-02T10%3A28%3A58Z&sks=b&skv=2018-11-09&sig=%2FUlXx7E1ZFLE93V8DBYF6UijRJnusfACt6VkPadqU1o%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjIyOCwibmJmIjoxNzkzNjExOTI4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.5cCTTAQjhf32OyPo3ALd19mp1dPrwP-DytfClu2-0K4&response-content-disposition=attachment%3B%20filename%3DMinicraft-DS-Edition.nds&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/minicraft-ds/v1.0.0-beta.3/Minicraft-DS-Edition.nds",
+          "version": "v1.0.0-beta.3",
+          "bytes": 1214976,
+          "sha256": "d47b57e1dcb1bbac3a6e11d44afd9e444a0aff2fb306e67159a950d485731819",
+          "contents": [],
+          "native": [
+            {
+              "name": "Minicraft-DS-Edition.nds",
+              "bytes": 1214976,
+              "sha256": "d47b57e1dcb1bbac3a6e11d44afd9e444a0aff2fb306e67159a950d485731819",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 1144932
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 1161728,
+                  "bytes": 43508
+                }
+              ],
+              "bannerOffset": 1205760
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "2048-nds",
+      "files": [
+        {
+          "name": "2048-nds.nds",
+          "url": "https://github.com/mdmrk/2048-nds/releases/download/v1.0.2/2048-nds.nds",
+          "format": "NDS",
+          "label": "2048-nds.nds",
+          "sourceUrl": "https://github.com/mdmrk/2048-nds/releases/download/v1.0.2/2048-nds.nds",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/571291581/88bef02c-4afd-4501-a05d-ec713d0b421c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A32%3A11Z&rscd=attachment%3B+filename%3D2048-nds.nds&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A31%3A46Z&ske=2026-11-02T10%3A32%3A11Z&sks=b&skv=2018-11-09&sig=IwVGKELHrIAf%2Br5A4gakoo1NkJHjxwPALjzuL8iFUR4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjI1NywibmJmIjoxNzkzNjExOTU3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.4JGeQBF5RCKwuFVVN5lZdoC5PkbGKJ0yAx8yuKVTeyA&response-content-disposition=attachment%3B%20filename%3D2048-nds.nds&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/2048-nds/v1.0.2/2048-nds.nds",
+          "version": "v1.0.2",
+          "bytes": 923648,
+          "sha256": "dc81c7cfc8919328ef5d5b5a7c1d61bd6b1f4b9d6ef988f2440999c3ff8d2314",
+          "contents": [],
+          "native": [
+            {
+              "name": "2048-nds.nds",
+              "bytes": 923648,
+              "sha256": "dc81c7cfc8919328ef5d5b5a7c1d61bd6b1f4b9d6ef988f2440999c3ff8d2314",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 195652
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 212480,
+                  "bytes": 43508
+                }
+              ],
+              "bannerOffset": 257024
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "raptords",
+      "files": [
+        {
+          "name": "RAPTOR-NDS-V1.1.0.zip",
+          "url": "https://github.com/RetroGamer02/raptor-consoles/releases/download/MultiSys-V1.0.4/RAPTOR-NDS-V1.1.0.zip",
+          "format": "ZIP → NDS",
+          "label": "RAPTOR-NDS-V1.1.0.zip",
+          "sourceUrl": "https://github.com/RetroGamer02/raptor-consoles/releases/download/MultiSys-V1.0.4/RAPTOR-NDS-V1.1.0.zip",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/535133368/4b1574b0-a5be-488b-8784-2be8dd926ab7?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A16%3A35Z&rscd=attachment%3B+filename%3DRAPTOR-NDS-V1.1.0.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A16%3A30Z&ske=2026-11-02T10%3A16%3A35Z&sks=b&skv=2018-11-09&sig=Y%2FN0u%2BfkCv0raKJUNBrxAlp9bkC7FLywjk33UbLOwME%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjI2MywibmJmIjoxNzkzNjExOTYzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.42umDCWFliZrqloI0UQeTw2BCM_bgRGV5Bc9tcVbrU4&response-content-disposition=attachment%3B%20filename%3DRAPTOR-NDS-V1.1.0.zip&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/raptords/MultiSys-V1.0.4/RAPTOR-NDS-V1.1.0.zip",
+          "version": "MultiSys-V1.0.4",
+          "bytes": 1866951,
+          "sha256": "e0dcc3910e998d90f1c03db2f1363bcd5748ac246b1148ec483a99b52053fefd",
+          "contents": [
+            "RAPTOR-NDS-V1.1.0.nds"
+          ],
+          "native": [
+            {
+              "name": "RAPTOR-NDS-V1.1.0.nds",
+              "bytes": 5292544,
+              "sha256": "47f660b9092904fef645ba770b9382864fb9fb9510e8aa7d1d529d1e68f1a433",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 613072
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 629760,
+                  "bytes": 44888
+                }
+              ],
+              "bannerOffset": 675840
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "3d-maze",
+      "files": [
+        {
+          "name": "3dmaze-nds-fat.zip",
+          "url": "https://github.com/headshot2017/3dmaze/releases/download/v1.0.0/3dmaze-nds-fat.zip",
+          "format": "ZIP → NDS",
+          "label": "3dmaze-nds-fat.zip",
+          "sourceUrl": "https://github.com/headshot2017/3dmaze/releases/download/v1.0.0/3dmaze-nds-fat.zip",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/1070414137/2a6f1fc6-f8e8-4405-aa37-5245bb2816b7?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A31%3A36Z&rscd=attachment%3B+filename%3D3dmaze-nds-fat.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A30%3A37Z&ske=2026-11-02T10%3A31%3A36Z&sks=b&skv=2018-11-09&sig=tb6GmuTfPdFoYXMHCzQsR9SRSjxvhmbmObpm0PSB158%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjI3MCwibmJmIjoxNzkzNjExOTcwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.LYOjteHkbE4P4pjH4iLTBv6m8_yUS-Kkh9NcnY4W_64&response-content-disposition=attachment%3B%20filename%3D3dmaze-nds-fat.zip&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/3d-maze/v1.0.0/3dmaze-nds-fat.zip",
+          "version": "v1.0.0",
+          "bytes": 562521,
+          "sha256": "f489f877e45213e24065c6a5ef42e386f2ad5c93dca6dcc3c8ab6682dfe5487f",
+          "contents": [
+            "3dmaze.nds",
+            "data",
+            "data\\3dmaze",
+            "data\\3dmaze\\BHOLE.PNG",
+            "data\\3dmaze\\BRICK.PNG",
+            "data\\3dmaze\\CASTLE.PNG",
+            "data\\3dmaze\\COVER8.PNG",
+            "data\\3dmaze\\CURL4.PNG",
+            "data\\3dmaze\\HAPPY.PNG",
+            "data\\3dmaze\\LETTERS.PNG",
+            "data\\3dmaze\\NBRICK.PNG",
+            "data\\3dmaze\\NEWBRICK.PNG",
+            "data\\3dmaze\\RAT.PNG",
+            "data\\3dmaze\\SBRICK.PNG",
+            "data\\3dmaze\\SNOWFLAK.PNG",
+            "data\\3dmaze\\START.PNG",
+            "data\\3dmaze\\SWIRLX4.PNG",
+            "data\\3dmaze\\textures.cfg",
+            "data\\3dmaze\\WOOD24.PNG"
+          ],
+          "native": [
+            {
+              "name": "3dmaze.nds",
+              "bytes": 217088,
+              "sha256": "c0945508a01cc7d2ba6bb28045597199ef2ad0b46d20403a124e703e3839aac6",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 154752
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 171520,
+                  "bytes": 32508
+                }
+              ],
+              "bannerOffset": 204800
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "space-cadet-ds",
+      "files": [
+        {
+          "name": "3dpinball-nds.nds",
+          "url": "https://github.com/headshot2017/3dpinball-nds/releases/download/v0.5/3dpinball-nds.nds",
+          "format": "NDS",
+          "label": "3dpinball-nds.nds",
+          "sourceUrl": "https://github.com/headshot2017/3dpinball-nds/releases/download/v0.5/3dpinball-nds.nds",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/812565172/8fdc49b6-bbc9-48e4-bd9b-432288e771cc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A32%3A16Z&rscd=attachment%3B+filename%3D3dpinball-nds.nds&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A31%3A21Z&ske=2026-11-02T10%3A32%3A16Z&sks=b&skv=2018-11-09&sig=aH9yNuLm%2BnB5J%2BnVqpB%2B%2Bzztk57iUDa7a4g4S%2BzL4C8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjI3MywibmJmIjoxNzkzNjExOTczLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Ozp3Rw37DLup1xS5ec8MI_jO1B1jBPFhfO0snpbyb28&response-content-disposition=attachment%3B%20filename%3D3dpinball-nds.nds&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/space-cadet-ds/v0.5/3dpinball-nds.nds",
+          "version": "v0.5",
+          "bytes": 1266176,
+          "sha256": "9effee17c9024d9dbd4f3510c888c9e6a035e0232b3385d94f386b9b13edaca2",
+          "contents": [],
+          "native": [
+            {
+              "name": "3dpinball-nds.nds",
+              "bytes": 1266176,
+              "sha256": "9effee17c9024d9dbd4f3510c888c9e6a035e0232b3385d94f386b9b13edaca2",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 476080
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 492544,
+                  "bytes": 58868
+                }
+              ],
+              "bannerOffset": 552448
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "cereal-box-snow",
+      "files": [
+        {
+          "name": "CerealBoxSnowNds1.2.0.nds",
+          "url": "https://github.com/tallHouse64/CerealBoxSnow/releases/download/v1.2.0/CerealBoxSnowNds1.2.0.nds",
+          "format": "NDS",
+          "label": "CerealBoxSnowNds1.2.0.nds",
+          "sourceUrl": "https://github.com/tallHouse64/CerealBoxSnow/releases/download/v1.2.0/CerealBoxSnowNds1.2.0.nds",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/906421545/1f73cf57-a752-4ab0-8505-20fcdb2cad03?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A23%3A12Z&rscd=attachment%3B+filename%3DCerealBoxSnowNds1.2.0.nds&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A22%3A46Z&ske=2026-11-02T10%3A23%3A12Z&sks=b&skv=2018-11-09&sig=FBfo04y6hWwjKc1ZhLK0Hd8PjYcXjb8Dti4TWvx%2FSg0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjI3OCwibmJmIjoxNzkzNjExOTc4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.p4UYmV40EMXDjRj4IqtRQRica51DP3Qx0h558aDzDE8&response-content-disposition=attachment%3B%20filename%3DCerealBoxSnowNds1.2.0.nds&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/cereal-box-snow/v1.2.0/CerealBoxSnowNds1.2.0.nds",
+          "version": "v1.2.0",
+          "bytes": 465920,
+          "sha256": "17de6ca80a8947947d06fb7f78fe5ca389108019aff479f4d99bb148c8c7b5d4",
+          "contents": [],
+          "native": [
+            {
+              "name": "CerealBoxSnowNds1.2.0.nds",
+              "bytes": 465920,
+              "sha256": "17de6ca80a8947947d06fb7f78fe5ca389108019aff479f4d99bb148c8c7b5d4",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 368740
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 385536,
+                  "bytes": 45884
+                }
+              ],
+              "bannerOffset": 432128
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "nitroustracker",
+      "files": [
+        {
+          "name": "NitrousTracker-0.6.5.zip",
+          "url": "https://github.com/NitrousTracker/nitroustracker/releases/download/release%2F0.6.5/NitrousTracker-0.6.5.zip",
+          "format": "ZIP → NDS",
+          "label": "NitrousTracker-0.6.5.zip",
+          "sourceUrl": "https://github.com/NitrousTracker/nitroustracker/releases/download/release%2F0.6.5/NitrousTracker-0.6.5.zip",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/275381589/02afeebc-821d-4b83-baa9-7ce97406978e?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A10%3A32Z&rscd=attachment%3B+filename%3DNitrousTracker-0.6.5.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A09%3A36Z&ske=2026-11-02T10%3A10%3A32Z&sks=b&skv=2018-11-09&sig=IJmjAuiuJMQN8wI1ANNVZXyJwC4HxgrwYTvlrZ52bEA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjI4MCwibmJmIjoxNzkzNjExOTgwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Rpr17FIe4a86XVcqMHDLQGFjF9QqAFoJBRvjixPeqX8&response-content-disposition=attachment%3B%20filename%3DNitrousTracker-0.6.5.zip&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/nitroustracker/release_0.6.5/NitrousTracker-0.6.5.zip",
+          "version": "release/0.6.5",
+          "bytes": 2499709,
+          "sha256": "a9f8a3efc2eaa7dbe9187115f19e30d1648a17d551285d5fb6b2dfe5c14e731c",
+          "contents": [
+            "nitroustracker.debug.nds",
+            "nitroustracker.midi.nds",
+            "README.md",
+            "songs",
+            "songs\\atomtwist-cybernitro.xm",
+            "songs\\nitro2k01-diamond2.xm",
+            "songs\\chrislody-dstort.xm",
+            "songs\\grobsen-some_day.xm",
+            "songs\\notominous-a19.xm",
+            "themes",
+            "themes\\bye2",
+            "themes\\bye2\\bye2theme.nttheme",
+            "themes\\Gobiodon.nttheme",
+            "themes\\orjis",
+            "themes\\orjis\\DarkPink.nttheme",
+            "themes\\orjis\\DarkOrange.nttheme",
+            "themes\\orjis\\GreyMetal.nttheme",
+            "themes\\orjis\\DarkPinkCyan.nttheme",
+            "themes\\Neon.nttheme",
+            "themes\\Velocity.nttheme",
+            "themes\\Sand.nttheme",
+            "themes\\Concrete.nttheme",
+            "themes\\Default.nttheme",
+            "themes\\Sky.nttheme",
+            "themes\\oxygenfad",
+            "themes\\oxygenfad\\tritonpurp.nttheme",
+            "themes\\oxygenfad\\sensiblepink.nttheme",
+            "themes\\oxygenfad\\neofad4.nttheme",
+            "themes\\oxygenfad\\neofad12.nttheme",
+            "themes\\oxygenfad\\standardgreen.nttheme",
+            "themes\\oxygenfad\\sensibleblue.nttheme",
+            "themes\\oxygenfad\\dmg.nttheme",
+            "themes\\oxygenfad\\neofad9.nttheme",
+            "themes\\oxygenfad\\standardblue.nttheme",
+            "themes\\oxygenfad\\tritonviolet.nttheme",
+            "themes\\oxygenfad\\neofad11.nttheme",
+            "themes\\oxygenfad\\triton.nttheme",
+            "themes\\oxygenfad\\energydrink1.nttheme",
+            "themes\\oxygenfad\\standardred.nttheme",
+            "themes\\oxygenfad\\tritongold.nttheme",
+            "themes\\oxygenfad\\neofad10.nttheme",
+            "themes\\oxygenfad\\neofad8.nttheme",
+            "themes\\oxygenfad\\standardpurp.nttheme",
+            "themes\\oxygenfad\\sensibleteal.nttheme",
+            "themes\\oxygenfad\\oxygenfad95.nttheme",
+            "themes\\oxygenfad\\neofad1.nttheme",
+            "themes\\oxygenfad\\neofad13.nttheme",
+            "themes\\oxygenfad\\energydrink3.nttheme",
+            "themes\\oxygenfad\\neofad14.nttheme",
+            "themes\\oxygenfad\\SPACEPIGS.nttheme",
+            "themes\\oxygenfad\\neofad7.nttheme",
+            "themes\\oxygenfad\\neofad3.nttheme",
+            "themes\\oxygenfad\\neofad5.nttheme",
+            "themes\\oxygenfad\\neofad15.nttheme",
+            "themes\\oxygenfad\\energydrink2.nttheme",
+            "themes\\oxygenfad\\neofad2.nttheme",
+            "themes\\oxygenfad\\sensiblegreen.nttheme",
+            "themes\\oxygenfad\\tabarnak.nttheme",
+            "themes\\oxygenfad\\tritongreen.nttheme",
+            "themes\\oxygenfad\\neofad6.nttheme",
+            "themes\\14.4mL",
+            "themes\\14.4mL\\BubblegumWhite.nttheme",
+            "themes\\14.4mL\\Bubblegum.nttheme",
+            "licenses",
+            "licenses\\COPYING.dswifi",
+            "licenses\\COPYING.nitrotracker",
+            "licenses\\COPYING.dserial",
+            "licenses\\COPYING.libdsmi",
+            "licenses\\COPYING.tobkit",
+            "licenses\\COPYING.fatfs",
+            "licenses\\COPYING.libnds",
+            "licenses\\COPYING.tinyusb",
+            "licenses\\COPYING.crt0",
+            "licenses\\COPYING.picolibc",
+            "nitroustracker.nds",
+            "CHANGELOG.TXT"
+          ],
+          "native": [
+            {
+              "name": "nitroustracker.debug.nds",
+              "bytes": 436224,
+              "sha256": "5e8aa9e08e2801b26069a158baf846cec07a401da9e8dc8e9366863e0096fd1e",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 340592
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 357376,
+                  "bytes": 45904
+                }
+              ],
+              "bannerOffset": 403968
+            },
+            {
+              "name": "nitroustracker.midi.nds",
+              "bytes": 428032,
+              "sha256": "ac8e10d066424797953322ea2ff791680a64f8a13a92da5ded486572e8617163",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 334488
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 351232,
+                  "bytes": 43412
+                }
+              ],
+              "bannerOffset": 395264
+            },
+            {
+              "name": "nitroustracker.nds",
+              "bytes": 294912,
+              "sha256": "3f7a4973b3bc718cc4b3e39427baf54fd2104ac3c7b11cc17ebe054ce107ef00",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 238224
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 254976,
+                  "bytes": 29324
+                }
+              ],
+              "bannerOffset": 285184
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "dsidl",
+      "files": [
+        {
+          "name": "dsidl.dsi",
+          "url": "https://github.com/Epicpkmn11/dsidl/releases/download/v0.1.1/dsidl.dsi",
+          "format": "DSi",
+          "label": "dsidl.dsi",
+          "sourceUrl": "https://github.com/Epicpkmn11/dsidl/releases/download/v0.1.1/dsidl.dsi",
+          "resolvedUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/503258270/0f289aec-2fe0-4caa-b2d5-6bcc8ff89781?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-02T10%3A24%3A17Z&rscd=attachment%3B+filename%3Ddsidl.dsi&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-02T09%3A24%3A02Z&ske=2026-11-02T10%3A24%3A17Z&sks=b&skv=2018-11-09&sig=2m7t1TuuBjatV%2B3%2F7oAst6XGPyBH1kBVsitcMY6SDII%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MzYxMjI4OSwibmJmIjoxNzkzNjExOTg5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.WSVFkLHyfliXtF8vK9pdhZhBIG-KGdddL2Oei-rZYSc&response-content-disposition=attachment%3B%20filename%3Ddsidl.dsi&response-content-type=application%2Foctet-stream",
+          "local": "/downloads/ds-dsi-more/dsidl/v0.1.1/dsidl.dsi",
+          "version": "v0.1.1",
+          "bytes": 1217472,
+          "sha256": "23f56f0c6b9d0780f6b8306b25879c0ae2c1cc87fbb020d0fa4a1cd1897db30b",
+          "contents": [],
+          "native": [
+            {
+              "name": "dsidl.dsi",
+              "bytes": 1217472,
+              "sha256": "23f56f0c6b9d0780f6b8306b25879c0ae2c1cc87fbb020d0fa4a1cd1897db30b",
+              "format": "Nintendo DS executable",
+              "title": "DSIDL",
+              "unitCode": 3,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 1080804
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 1097216,
+                  "bytes": 75112
+                }
+              ],
+              "bannerOffset": 1208320
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "sky",
+      "files": [
+        {
+          "name": "Sky.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sky.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sky.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sky.7z",
+          "local": "/downloads/ds-dsi-more/sky/v0.7/Sky.7z",
+          "version": "v0.7",
+          "bytes": 3299535,
+          "sha256": "a8560f813515ce6ae0e0ea5b0676330d713286b0f582eedc126454f82710c1bf",
+          "contents": [
+            "Sky",
+            "Sky\\background",
+            "Sky\\battery",
+            "Sky\\grf",
+            "Sky\\quickmenu",
+            "Sky\\sound",
+            "Sky\\ui",
+            "Sky\\volume",
+            "Sky\\background\\bottom.png",
+            "Sky\\background\\bottom_bubble.png",
+            "Sky\\background\\bottom_bubble_macro.png",
+            "Sky\\background\\bottom_moving.png",
+            "Sky\\background\\top.png",
+            "Sky\\background\\top_photo.png",
+            "Sky\\battery\\battery0.png",
+            "Sky\\battery\\battery1.png",
+            "Sky\\battery\\battery1purple.png",
+            "Sky\\battery\\battery2.png",
+            "Sky\\battery\\battery2purple.png",
+            "Sky\\battery\\battery3.png",
+            "Sky\\battery\\battery3purple.png",
+            "Sky\\battery\\battery4.png",
+            "Sky\\battery\\battery4purple.png",
+            "Sky\\battery\\batterycharge.png",
+            "Sky\\battery\\batterychargeblink.png",
+            "Sky\\battery\\batteryfull.png",
+            "Sky\\battery\\batteryfullDS.png",
+            "Sky\\battery\\batterylow.png",
+            "Sky\\grf\\bips.bmp",
+            "Sky\\grf\\box.bmp",
+            "Sky\\grf\\brace.bmp",
+            "Sky\\grf\\bubble.bmp",
+            "Sky\\grf\\button_arrow.bmp",
+            "Sky\\grf\\cornerbutton.bmp",
+            "Sky\\grf\\dialogbox.bmp",
+            "Sky\\grf\\folder.bmp",
+            "Sky\\grf\\icon_a26.bmp",
+            "Sky\\grf\\icon_gb.bmp",
+            "Sky\\grf\\icon_gba.bmp",
+            "Sky\\grf\\icon_gbamode.bmp",
+            "Sky\\grf\\icon_gg.bmp",
+            "Sky\\grf\\icon_int.bmp",
+            "Sky\\grf\\icon_m5.bmp",
+            "Sky\\grf\\icon_manual.bmp",
+            "Sky\\grf\\icon_md.bmp",
+            "Sky\\grf\\icon_mini.bmp",
+            "Sky\\grf\\icon_msx.bmp",
+            "Sky\\grf\\icon_nes.bmp",
+            "Sky\\grf\\icon_ngp.bmp",
+            "Sky\\grf\\icon_pce.bmp",
+            "Sky\\grf\\icon_plg.bmp",
+            "Sky\\grf\\icon_settings.bmp",
+            "Sky\\grf\\icon_sg.bmp",
+            "Sky\\grf\\icon_sms.bmp",
+            "Sky\\grf\\icon_snes.bmp",
+            "Sky\\grf\\icon_unk.bmp",
+            "Sky\\grf\\icon_ws.bmp",
+            "Sky\\grf\\launch_dot.bmp",
+            "Sky\\grf\\moving_arrow.bmp",
+            "Sky\\grf\\progress.bmp",
+            "Sky\\grf\\scroll_window.bmp",
+            "Sky\\grf\\small_cart.bmp",
+            "Sky\\grf\\start_border.bmp",
+            "Sky\\grf\\start_text.bmp",
+            "Sky\\grf\\wirelessicons.bmp",
+            "Sky\\quickmenu\\bottombg.png",
+            "Sky\\quickmenu\\phat_topbg.png",
+            "Sky\\quickmenu\\topbg.png",
+            "Sky\\sound\\bgm.pcm.raw",
+            "Sky\\theme.ini",
+            "Sky\\ui\\Lshoulder.png",
+            "Sky\\ui\\Lshoulder_greyed.png",
+            "Sky\\ui\\Lshoulder_photo.png",
+            "Sky\\ui\\Lshoulder_photo_greyed.png",
+            "Sky\\ui\\Rshoulder.png",
+            "Sky\\ui\\Rshoulder_greyed.png",
+            "Sky\\ui\\Rshoulder_photo.png",
+            "Sky\\ui\\Rshoulder_photo_greyed.png",
+            "Sky\\volume\\volume0.png",
+            "Sky\\volume\\volume1.png",
+            "Sky\\volume\\volume2.png",
+            "Sky\\volume\\volume3.png",
+            "Sky\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "sharp-white-black",
+      "files": [
+        {
+          "name": "Sharp - White on Black.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sharp%20-%20White%20on%20Black.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sharp%20-%20White%20on%20Black.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Sharp%20-%20White%20on%20Black.7z",
+          "local": "/downloads/ds-dsi-more/sharp-white-black/v1.0.1/Sharp - White on Black.7z",
+          "version": "v1.0.1",
+          "bytes": 18239,
+          "sha256": "4e4b6b6cf546d5527ce69366e5b4cb39daa7ce05832d6db495a1027f4e3f2d1a",
+          "contents": [
+            "Sharp -  White on Black",
+            "Sharp -  White on Black\\background",
+            "Sharp -  White on Black\\battery",
+            "Sharp -  White on Black\\font",
+            "Sharp -  White on Black\\grf",
+            "Sharp -  White on Black\\ui",
+            "Sharp -  White on Black\\volume",
+            "Sharp -  White on Black\\background\\bottom.png",
+            "Sharp -  White on Black\\background\\bottom_bubble.png",
+            "Sharp -  White on Black\\background\\bottom_bubble_macro.png",
+            "Sharp -  White on Black\\background\\bottom_macro.png",
+            "Sharp -  White on Black\\background\\bottom_moving.png",
+            "Sharp -  White on Black\\background\\bottom_moving_macro.png",
+            "Sharp -  White on Black\\background\\top.png",
+            "Sharp -  White on Black\\background\\top_photo.png",
+            "Sharp -  White on Black\\battery\\battery0.png",
+            "Sharp -  White on Black\\battery\\battery1.png",
+            "Sharp -  White on Black\\battery\\battery1purple.png",
+            "Sharp -  White on Black\\battery\\battery2.png",
+            "Sharp -  White on Black\\battery\\battery2purple.png",
+            "Sharp -  White on Black\\battery\\battery3.png",
+            "Sharp -  White on Black\\battery\\battery3purple.png",
+            "Sharp -  White on Black\\battery\\battery4.png",
+            "Sharp -  White on Black\\battery\\battery4purple.png",
+            "Sharp -  White on Black\\battery\\batterycharge.png",
+            "Sharp -  White on Black\\battery\\batterychargeblink.png",
+            "Sharp -  White on Black\\battery\\batteryfull.png",
+            "Sharp -  White on Black\\battery\\batteryfullDS.png",
+            "Sharp -  White on Black\\battery\\batteryfullPurple.png",
+            "Sharp -  White on Black\\battery\\batterylow.png",
+            "Sharp -  White on Black\\font\\date_time.nftr",
+            "Sharp -  White on Black\\font\\large.nftr",
+            "Sharp -  White on Black\\font\\small.nftr",
+            "Sharp -  White on Black\\font\\username.nftr",
+            "Sharp -  White on Black\\grf\\bips.bmp",
+            "Sharp -  White on Black\\grf\\box.bmp",
+            "Sharp -  White on Black\\grf\\brace.bmp",
+            "Sharp -  White on Black\\grf\\bubble.bmp",
+            "Sharp -  White on Black\\grf\\button_arrow.bmp",
+            "Sharp -  White on Black\\grf\\cornerbutton.bmp",
+            "Sharp -  White on Black\\grf\\dialogbox.bmp",
+            "Sharp -  White on Black\\grf\\folder.bmp",
+            "Sharp -  White on Black\\grf\\icon_manual.bmp",
+            "Sharp -  White on Black\\grf\\icon_settings.bmp",
+            "Sharp -  White on Black\\grf\\icon_unk.bmp",
+            "Sharp -  White on Black\\grf\\launch_dot.bmp",
+            "Sharp -  White on Black\\grf\\moving_arrow.bmp",
+            "Sharp -  White on Black\\grf\\progress.bmp",
+            "Sharp -  White on Black\\grf\\scroll_window.bmp",
+            "Sharp -  White on Black\\grf\\small_cart.bmp",
+            "Sharp -  White on Black\\grf\\start_border.bmp",
+            "Sharp -  White on Black\\grf\\start_text.bmp",
+            "Sharp -  White on Black\\grf\\wirelessicons.bmp",
+            "Sharp -  White on Black\\theme.ini",
+            "Sharp -  White on Black\\ui\\date_time_font.png",
+            "Sharp -  White on Black\\ui\\Lshoulder.png",
+            "Sharp -  White on Black\\ui\\Lshoulder_greyed.png",
+            "Sharp -  White on Black\\ui\\Lshoulder_photo.png",
+            "Sharp -  White on Black\\ui\\Lshoulder_photo_greyed.png",
+            "Sharp -  White on Black\\ui\\Rshoulder.png",
+            "Sharp -  White on Black\\ui\\Rshoulder_greyed.png",
+            "Sharp -  White on Black\\ui\\Rshoulder_photo.png",
+            "Sharp -  White on Black\\ui\\Rshoulder_photo_greyed.png",
+            "Sharp -  White on Black\\volume\\volume0.png",
+            "Sharp -  White on Black\\volume\\volume1.png",
+            "Sharp -  White on Black\\volume\\volume2.png",
+            "Sharp -  White on Black\\volume\\volume3.png",
+            "Sharp -  White on Black\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "relaxing-space",
+      "files": [
+        {
+          "name": "Relaxing Space.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Relaxing%20Space.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Relaxing%20Space.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/Relaxing%20Space.7z",
+          "local": "/downloads/ds-dsi-more/relaxing-space/v1.2.1/Relaxing Space.7z",
+          "version": "v1.2.1",
+          "bytes": 1461625,
+          "sha256": "8831545a51211bfbf4be6d3bc1ac407ac2b0a825483eb1f7d6481c3b42a3c0c0",
+          "contents": [
+            "Relaxing Space",
+            "Relaxing Space\\background",
+            "Relaxing Space\\battery",
+            "Relaxing Space\\grf",
+            "Relaxing Space\\quickmenu",
+            "Relaxing Space\\sound",
+            "Relaxing Space\\ui",
+            "Relaxing Space\\volume",
+            "Relaxing Space\\background\\bottom.png",
+            "Relaxing Space\\background\\bottom_bubble.png",
+            "Relaxing Space\\background\\bottom_bubble_macro.png",
+            "Relaxing Space\\background\\bottom_moving.png",
+            "Relaxing Space\\background\\top.png",
+            "Relaxing Space\\background\\top_photo.png",
+            "Relaxing Space\\battery\\battery0.png",
+            "Relaxing Space\\battery\\battery1.png",
+            "Relaxing Space\\battery\\battery1purple.png",
+            "Relaxing Space\\battery\\battery2.png",
+            "Relaxing Space\\battery\\battery2purple.png",
+            "Relaxing Space\\battery\\battery3.png",
+            "Relaxing Space\\battery\\battery3purple.png",
+            "Relaxing Space\\battery\\battery4.png",
+            "Relaxing Space\\battery\\battery4purple.png",
+            "Relaxing Space\\battery\\batterycharge.png",
+            "Relaxing Space\\battery\\batterychargeblink.png",
+            "Relaxing Space\\battery\\batteryfull.png",
+            "Relaxing Space\\battery\\batteryfullDS.png",
+            "Relaxing Space\\battery\\batterylow.png",
+            "Relaxing Space\\grf\\bips.bmp",
+            "Relaxing Space\\grf\\box.bmp",
+            "Relaxing Space\\grf\\brace.bmp",
+            "Relaxing Space\\grf\\bubble.bmp",
+            "Relaxing Space\\grf\\button_arrow.bmp",
+            "Relaxing Space\\grf\\cornerbutton.bmp",
+            "Relaxing Space\\grf\\dialogbox.bmp",
+            "Relaxing Space\\grf\\folder.bmp",
+            "Relaxing Space\\grf\\icon_manual.bmp",
+            "Relaxing Space\\grf\\icon_settings.bmp",
+            "Relaxing Space\\grf\\icon_unk.bmp",
+            "Relaxing Space\\grf\\launch_dot.bmp",
+            "Relaxing Space\\grf\\moving_arrow.bmp",
+            "Relaxing Space\\grf\\progress.bmp",
+            "Relaxing Space\\grf\\scroll_window.bmp",
+            "Relaxing Space\\grf\\small_cart.bmp",
+            "Relaxing Space\\grf\\start_border.bmp",
+            "Relaxing Space\\grf\\start_text.bmp",
+            "Relaxing Space\\grf\\wirelessicons.bmp",
+            "Relaxing Space\\quickmenu\\bottombg.png",
+            "Relaxing Space\\quickmenu\\phat_topbg.png",
+            "Relaxing Space\\quickmenu\\topbg.png",
+            "Relaxing Space\\readme.txt",
+            "Relaxing Space\\theme.ini",
+            "Relaxing Space\\ui\\Lshoulder.png",
+            "Relaxing Space\\ui\\Lshoulder_greyed.png",
+            "Relaxing Space\\ui\\Lshoulder_photo.png",
+            "Relaxing Space\\ui\\Lshoulder_photo_greyed.png",
+            "Relaxing Space\\ui\\Rshoulder.png",
+            "Relaxing Space\\ui\\Rshoulder_greyed.png",
+            "Relaxing Space\\ui\\Rshoulder_photo.png",
+            "Relaxing Space\\ui\\Rshoulder_photo_greyed.png",
+            "Relaxing Space\\volume\\volume0.png",
+            "Relaxing Space\\volume\\volume1.png",
+            "Relaxing Space\\volume\\volume2.png",
+            "Relaxing Space\\volume\\volume3.png",
+            "Relaxing Space\\volume\\volume4.png",
+            "Relaxing Space\\sound\\bgm.wav"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "darker",
+      "files": [
+        {
+          "name": "darker.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/darker.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/darker.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/darker.7z",
+          "local": "/downloads/ds-dsi-more/darker/v1.0.2/darker.7z",
+          "version": "v1.0.2",
+          "bytes": 17699,
+          "sha256": "671fc64b035062386e2772a69aa3b71331d3c884a121f923c875f72ad01dcc34",
+          "contents": [
+            "darker",
+            "darker\\background",
+            "darker\\battery",
+            "darker\\grf",
+            "darker\\quickmenu",
+            "darker\\ui",
+            "darker\\volume",
+            "darker\\background\\bottom.png",
+            "darker\\background\\bottom_bubble.png",
+            "darker\\background\\bottom_bubble_macro.png",
+            "darker\\background\\bottom_moving.png",
+            "darker\\background\\top.png",
+            "darker\\background\\top_photo.png",
+            "darker\\battery\\battery0.png",
+            "darker\\battery\\battery1.png",
+            "darker\\battery\\battery1purple.png",
+            "darker\\battery\\battery2.png",
+            "darker\\battery\\battery2purple.png",
+            "darker\\battery\\battery3.png",
+            "darker\\battery\\battery3purple.png",
+            "darker\\battery\\battery4.png",
+            "darker\\battery\\battery4purple.png",
+            "darker\\battery\\batterycharge.png",
+            "darker\\battery\\batterychargeblink.png",
+            "darker\\battery\\batteryfull.png",
+            "darker\\battery\\batteryfullDS.png",
+            "darker\\battery\\batterylow.png",
+            "darker\\grf\\bips.bmp",
+            "darker\\grf\\box.bmp",
+            "darker\\grf\\brace.bmp",
+            "darker\\grf\\bubble.bmp",
+            "darker\\grf\\button_arrow.bmp",
+            "darker\\grf\\cornerbutton.bmp",
+            "darker\\grf\\dialogbox.bmp",
+            "darker\\grf\\folder.bmp",
+            "darker\\grf\\icon_a26.bmp",
+            "darker\\grf\\icon_gb.bmp",
+            "darker\\grf\\icon_gba.bmp",
+            "darker\\grf\\icon_gbamode.bmp",
+            "darker\\grf\\icon_gg.bmp",
+            "darker\\grf\\icon_int.bmp",
+            "darker\\grf\\icon_m5.bmp",
+            "darker\\grf\\icon_manual.bmp",
+            "darker\\grf\\icon_md.bmp",
+            "darker\\grf\\icon_nes.bmp",
+            "darker\\grf\\icon_ngp.bmp",
+            "darker\\grf\\icon_pce.bmp",
+            "darker\\grf\\icon_plg.bmp",
+            "darker\\grf\\icon_settings.bmp",
+            "darker\\grf\\icon_sg.bmp",
+            "darker\\grf\\icon_sms.bmp",
+            "darker\\grf\\icon_snes.bmp",
+            "darker\\grf\\icon_unk.bmp",
+            "darker\\grf\\icon_ws.bmp",
+            "darker\\grf\\launch_dot.bmp",
+            "darker\\grf\\moving_arrow.bmp",
+            "darker\\grf\\progress.bmp",
+            "darker\\grf\\scroll_window.bmp",
+            "darker\\grf\\small_cart.bmp",
+            "darker\\grf\\start_border.bmp",
+            "darker\\grf\\start_text.bmp",
+            "darker\\grf\\wirelessicons.bmp",
+            "darker\\quickmenu\\bottombg.png",
+            "darker\\quickmenu\\phat_topbg.png",
+            "darker\\quickmenu\\topbg.png",
+            "darker\\theme.ini",
+            "darker\\ui\\Lshoulder.png",
+            "darker\\ui\\Lshoulder_greyed.png",
+            "darker\\ui\\Lshoulder_photo.png",
+            "darker\\ui\\Lshoulder_photo_greyed.png",
+            "darker\\ui\\Rshoulder.png",
+            "darker\\ui\\Rshoulder_greyed.png",
+            "darker\\ui\\Rshoulder_photo.png",
+            "darker\\ui\\Rshoulder_photo_greyed.png",
+            "darker\\volume\\volume0.png",
+            "darker\\volume\\volume1.png",
+            "darker\\volume\\volume2.png",
+            "darker\\volume\\volume3.png",
+            "darker\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "default-dark",
+      "files": [
+        {
+          "name": "dark.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/dark.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/dark.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/dark.7z",
+          "local": "/downloads/ds-dsi-more/default-dark/v1.0.4/dark.7z",
+          "version": "v1.0.4",
+          "bytes": 17111,
+          "sha256": "eaca4b88cfb315be7000b7e937661d89072869a27e0961892367b111491063fd",
+          "contents": [
+            "dark",
+            "dark\\background",
+            "dark\\battery",
+            "dark\\grf",
+            "dark\\quickmenu",
+            "dark\\ui",
+            "dark\\volume",
+            "dark\\background\\bottom.grf",
+            "dark\\background\\bottom_bubble.grf",
+            "dark\\background\\bottom_bubble_macro.png",
+            "dark\\background\\bottom_moving.grf",
+            "dark\\background\\top.png",
+            "dark\\background\\top_photo.grf",
+            "dark\\battery\\battery0.png",
+            "dark\\battery\\battery1.png",
+            "dark\\battery\\battery1purple.png",
+            "dark\\battery\\battery2.png",
+            "dark\\battery\\battery2purple.png",
+            "dark\\battery\\battery3.png",
+            "dark\\battery\\battery3purple.png",
+            "dark\\battery\\battery4.png",
+            "dark\\battery\\battery4purple.png",
+            "dark\\battery\\batterycharge.png",
+            "dark\\battery\\batterychargeblink.png",
+            "dark\\battery\\batteryfull.png",
+            "dark\\battery\\batteryfullDS.png",
+            "dark\\battery\\batterylow.png",
+            "dark\\grf\\bips.grf",
+            "dark\\grf\\box.grf",
+            "dark\\grf\\brace.grf",
+            "dark\\grf\\bubble.grf",
+            "dark\\grf\\button_arrow.grf",
+            "dark\\grf\\cornerbutton.grf",
+            "dark\\grf\\dialogbox.grf",
+            "dark\\grf\\folder.grf",
+            "dark\\grf\\icon_gb.grf",
+            "dark\\grf\\icon_gba.grf",
+            "dark\\grf\\icon_gbamode.grf",
+            "dark\\grf\\icon_gg.grf",
+            "dark\\grf\\icon_manual.grf",
+            "dark\\grf\\icon_md.grf",
+            "dark\\grf\\icon_nes.grf",
+            "dark\\grf\\icon_plg.grf",
+            "dark\\grf\\icon_settings.grf",
+            "dark\\grf\\icon_sms.grf",
+            "dark\\grf\\icon_snes.grf",
+            "dark\\grf\\icon_unk.grf",
+            "dark\\grf\\launch_dot.grf",
+            "dark\\grf\\moving_arrow.grf",
+            "dark\\grf\\progress.grf",
+            "dark\\grf\\scroll_window.grf",
+            "dark\\grf\\small_cart.grf",
+            "dark\\grf\\start_border.grf",
+            "dark\\grf\\start_text.grf",
+            "dark\\grf\\wirelessicons.grf",
+            "dark\\quickmenu\\bottombg.png",
+            "dark\\quickmenu\\phat_topbg.png",
+            "dark\\quickmenu\\topbg.png",
+            "dark\\theme.ini",
+            "dark\\ui\\Lshoulder.png",
+            "dark\\ui\\Lshoulder_greyed.png",
+            "dark\\ui\\Lshoulder_photo.png",
+            "dark\\ui\\Lshoulder_photo_greyed.png",
+            "dark\\ui\\Rshoulder.png",
+            "dark\\ui\\Rshoulder_greyed.png",
+            "dark\\ui\\Rshoulder_photo.png",
+            "dark\\ui\\Rshoulder_photo_greyed.png",
+            "dark\\volume\\volume0.png",
+            "dark\\volume\\volume1.png",
+            "dark\\volume\\volume2.png",
+            "dark\\volume\\volume3.png",
+            "dark\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "default-white",
+      "files": [
+        {
+          "name": "white.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/white.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/white.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/white.7z",
+          "local": "/downloads/ds-dsi-more/default-white/v1.0.4/white.7z",
+          "version": "v1.0.4",
+          "bytes": 17246,
+          "sha256": "64b7f6f75015f0510fda2387bfee7fedcef5de2f328bb8b4e00a3f0f12167c55",
+          "contents": [
+            "white",
+            "white\\background",
+            "white\\battery",
+            "white\\grf",
+            "white\\ui",
+            "white\\volume",
+            "white\\background\\bottom.grf",
+            "white\\background\\bottom_bubble.grf",
+            "white\\background\\bottom_bubble_macro.png",
+            "white\\background\\bottom_moving.grf",
+            "white\\background\\top.png",
+            "white\\background\\top_photo.grf",
+            "white\\battery\\battery0.png",
+            "white\\battery\\battery1.png",
+            "white\\battery\\battery1purple.png",
+            "white\\battery\\battery2.png",
+            "white\\battery\\battery2purple.png",
+            "white\\battery\\battery3.png",
+            "white\\battery\\battery3purple.png",
+            "white\\battery\\battery4.png",
+            "white\\battery\\battery4purple.png",
+            "white\\battery\\batterycharge.png",
+            "white\\battery\\batterychargeblink.png",
+            "white\\battery\\batteryfull.png",
+            "white\\battery\\batteryfullDS.png",
+            "white\\battery\\batterylow.png",
+            "white\\grf\\bips.grf",
+            "white\\grf\\box.grf",
+            "white\\grf\\brace.grf",
+            "white\\grf\\bubble.grf",
+            "white\\grf\\button_arrow.grf",
+            "white\\grf\\cornerbutton.grf",
+            "white\\grf\\dialogbox.grf",
+            "white\\grf\\folder.grf",
+            "white\\grf\\icon_gb.grf",
+            "white\\grf\\icon_gba.grf",
+            "white\\grf\\icon_gbamode.grf",
+            "white\\grf\\icon_gg.grf",
+            "white\\grf\\icon_manual.grf",
+            "white\\grf\\icon_md.grf",
+            "white\\grf\\icon_nes.grf",
+            "white\\grf\\icon_plg.grf",
+            "white\\grf\\icon_settings.grf",
+            "white\\grf\\icon_sms.grf",
+            "white\\grf\\icon_snes.grf",
+            "white\\grf\\icon_unk.grf",
+            "white\\grf\\launch_dot.grf",
+            "white\\grf\\moving_arrow.grf",
+            "white\\grf\\progress.grf",
+            "white\\grf\\scroll_window.grf",
+            "white\\grf\\small_cart.grf",
+            "white\\grf\\start_border.grf",
+            "white\\grf\\start_text.grf",
+            "white\\grf\\wirelessicons.grf",
+            "white\\theme.ini",
+            "white\\ui\\Lshoulder.png",
+            "white\\ui\\Lshoulder_greyed.png",
+            "white\\ui\\Lshoulder_photo.png",
+            "white\\ui\\Lshoulder_photo_greyed.png",
+            "white\\ui\\Rshoulder.png",
+            "white\\ui\\Rshoulder_greyed.png",
+            "white\\ui\\Rshoulder_photo.png",
+            "white\\ui\\Rshoulder_photo_greyed.png",
+            "white\\volume\\volume0.png",
+            "white\\volume\\volume1.png",
+            "white\\volume\\volume2.png",
+            "white\\volume\\volume3.png",
+            "white\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "terrariads",
+      "files": [
+        {
+          "name": "TerrariaDS.nds",
+          "url": "https://github.com/AzizBgBoss/TerrariaDS/releases/download/0.2/TerrariaDS.nds",
+          "format": "NDS",
+          "label": "TerrariaDS.nds",
+          "sourceUrl": "https://github.com/AzizBgBoss/TerrariaDS/releases/download/0.2/TerrariaDS.nds",
+          "resolvedUrl": "https://github.com/AzizBgBoss/TerrariaDS/releases/download/0.2/TerrariaDS.nds",
+          "local": "/downloads/ds-dsi-more/terrariads/0.2/TerrariaDS.nds",
+          "version": "0.2",
+          "bytes": 16017408,
+          "sha256": "81f07f546c2e6f1822c5214a0142258babbb6ae78bc18459e79b6931f39c03e8",
+          "contents": [],
+          "native": [
+            {
+              "name": "TerrariaDS.nds",
+              "bytes": 16017408,
+              "sha256": "81f07f546c2e6f1822c5214a0142258babbb6ae78bc18459e79b6931f39c03e8",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 2597340
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 2613760,
+                  "bytes": 45884
+                }
+              ],
+              "bannerOffset": 2660864
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "derailed",
+      "files": [
+        {
+          "name": "derailed.nds",
+          "url": "https://github.com/AzizBgBoss/derailed/releases/download/1.1alpha/derailed.nds",
+          "format": "NDS",
+          "label": "derailed.nds",
+          "sourceUrl": "https://github.com/AzizBgBoss/derailed/releases/download/1.1alpha/derailed.nds",
+          "resolvedUrl": "https://github.com/AzizBgBoss/derailed/releases/download/1.1alpha/derailed.nds",
+          "local": "/downloads/ds-dsi-more/derailed/1.1alpha/derailed.nds",
+          "version": "1.1alpha",
+          "bytes": 697344,
+          "sha256": "2d694c497524df4ba06cf777c5480686ca8714b4729d5945ceb922f52b6e2879",
+          "contents": [],
+          "native": [
+            {
+              "name": "derailed.nds",
+              "bytes": 697344,
+              "sha256": "2d694c497524df4ba06cf777c5480686ca8714b4729d5945ceb922f52b6e2879",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 371632
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 388096,
+                  "bytes": 58844
+                }
+              ],
+              "bannerOffset": 448000
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "microcitynds",
+      "files": [
+        {
+          "name": "MicroCityNDS.nds",
+          "url": "https://github.com/AzizBgBoss/MicroCityNDS/releases/download/v1.0/MicroCityNDS.nds",
+          "format": "NDS",
+          "label": "MicroCityNDS.nds",
+          "sourceUrl": "https://github.com/AzizBgBoss/MicroCityNDS/releases/download/v1.0/MicroCityNDS.nds",
+          "resolvedUrl": "https://github.com/AzizBgBoss/MicroCityNDS/releases/download/v1.0/MicroCityNDS.nds",
+          "local": "/downloads/ds-dsi-more/microcitynds/v1.0/MicroCityNDS.nds",
+          "version": "v1.0",
+          "bytes": 224256,
+          "sha256": "c3a7910ae2d2200a7a47f9b40aa32d8d4b34e844abcd003dbc1a168bb4d377af",
+          "contents": [],
+          "native": [
+            {
+              "name": "MicroCityNDS.nds",
+              "bytes": 224256,
+              "sha256": "c3a7910ae2d2200a7a47f9b40aa32d8d4b34e844abcd003dbc1a168bb4d377af",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 127228
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 143872,
+                  "bytes": 45884
+                }
+              ],
+              "bannerOffset": 190464
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "monty-hall-ds",
+      "files": [
+        {
+          "name": "Monty.Hall.DS.v2.0.zip",
+          "url": "https://github.com/Rph-nsmb/MontyHallDS/releases/download/v2.0/Monty.Hall.DS.v2.0.zip",
+          "format": "ZIP → NDS",
+          "label": "Monty.Hall.DS.v2.0.zip",
+          "sourceUrl": "https://github.com/Rph-nsmb/MontyHallDS/releases/download/v2.0/Monty.Hall.DS.v2.0.zip",
+          "resolvedUrl": "https://github.com/Rph-nsmb/MontyHallDS/releases/download/v2.0/Monty.Hall.DS.v2.0.zip",
+          "local": "/downloads/ds-dsi-more/monty-hall-ds/v2.0/Monty.Hall.DS.v2.0.zip",
+          "version": "v2.0",
+          "bytes": 480680,
+          "sha256": "6161db175ba98fd62be5d10cdaff3ad4138378acc729d63eb6fadd07e9409291",
+          "contents": [
+            "MontyHallDS.nds",
+            "Readme.txt"
+          ],
+          "native": [
+            {
+              "name": "MontyHallDS.nds",
+              "bytes": 859648,
+              "sha256": "d93119799a4403960480d300071e5c889ddcd83978fb6e9da6d7f4b9986b2807",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 100536
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 117248,
+                  "bytes": 44708
+                }
+              ],
+              "bannerOffset": 164864
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "spirited-ds",
+      "files": [
+        {
+          "name": "spirited_ds.nds",
+          "url": "https://github.com/KahnerC/SpiritedDS/releases/download/Version1.0/spirited_ds.nds",
+          "format": "NDS",
+          "label": "spirited_ds.nds",
+          "sourceUrl": "https://github.com/KahnerC/SpiritedDS/releases/download/Version1.0/spirited_ds.nds",
+          "resolvedUrl": "https://github.com/KahnerC/SpiritedDS/releases/download/Version1.0/spirited_ds.nds",
+          "local": "/downloads/ds-dsi-more/spirited-ds/Version1.0/spirited_ds.nds",
+          "version": "Version1.0",
+          "bytes": 1821696,
+          "sha256": "973d12bd1942888cce975e5e450fa483cca8bf43e379640c45a9f8bbc80ced6f",
+          "contents": [],
+          "native": [
+            {
+              "name": "spirited_ds.nds",
+              "bytes": 1821696,
+              "sha256": "973d12bd1942888cce975e5e450fa483cca8bf43e379640c45a9f8bbc80ced6f",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 223844
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 240640,
+                  "bytes": 43508
+                }
+              ],
+              "bannerOffset": 291840
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "ikachan-ds",
+      "files": [
+        {
+          "name": "IkachanDS.nds",
+          "url": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.nds",
+          "format": "NDS",
+          "label": "IkachanDS.nds",
+          "sourceUrl": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.nds",
+          "resolvedUrl": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.nds",
+          "local": "/downloads/ds-dsi-more/ikachan-ds/0.2.1/IkachanDS.nds",
+          "version": "0.2.1",
+          "bytes": 1117696,
+          "sha256": "fcc9333f5fd018cc31461f65de7e4e43c5995d74883991af29bf3d1a230ad152",
+          "contents": [],
+          "native": [
+            {
+              "name": "IkachanDS.nds",
+              "bytes": 1117696,
+              "sha256": "fcc9333f5fd018cc31461f65de7e4e43c5995d74883991af29bf3d1a230ad152",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 643428
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 659968,
+                  "bytes": 42272
+                }
+              ],
+              "bannerOffset": 704512
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        },
+        {
+          "name": "IkachanDS.dsi",
+          "url": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.dsi",
+          "format": "DSi",
+          "label": "IkachanDS.dsi",
+          "sourceUrl": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.dsi",
+          "resolvedUrl": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.dsi",
+          "local": "/downloads/ds-dsi-more/ikachan-ds/0.2.1/IkachanDS.dsi",
+          "version": "0.2.1",
+          "bytes": 1117696,
+          "sha256": "af43aa7a8930b1eca4c90378b5654dfe8d0c154cb12829a3df3399424054fb59",
+          "contents": [],
+          "native": [
+            {
+              "name": "IkachanDS.dsi",
+              "bytes": 1117696,
+              "sha256": "af43aa7a8930b1eca4c90378b5654dfe8d0c154cb12829a3df3399424054fb59",
+              "format": "Nintendo DS executable",
+              "title": "IKACHAN",
+              "unitCode": 3,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 643428
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 659968,
+                  "bytes": 42272
+                }
+              ],
+              "bannerOffset": 704512
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "dslibris",
+      "files": [
+        {
+          "name": "dslibris-1.5.2-2.zip",
+          "url": "https://github.com/rhaleblian/dslibris/releases/download/v1.5.2-2/dslibris-1.5.2-2.zip",
+          "format": "ZIP → NDS",
+          "label": "dslibris-1.5.2-2.zip",
+          "sourceUrl": "https://github.com/rhaleblian/dslibris/releases/download/v1.5.2-2/dslibris-1.5.2-2.zip",
+          "resolvedUrl": "https://github.com/rhaleblian/dslibris/releases/download/v1.5.2-2/dslibris-1.5.2-2.zip",
+          "local": "/downloads/ds-dsi-more/dslibris/v1.5.2-2/dslibris-1.5.2-2.zip",
+          "version": "v1.5.2-2",
+          "bytes": 1242044,
+          "sha256": "95e24563fb93736e65f3d0f45ba22d704e5b93054572196f6a8f58eef2a63a17",
+          "contents": [
+            "dslibris.nds",
+            "Font",
+            "Font\\LiberationSerif-Bold.ttf",
+            "Font\\LiberationSerif-Italic.ttf",
+            "Font\\LiberationSans-Regular.ttf",
+            "Font\\LiberationSerif-Regular.ttf",
+            "Font\\LiberationSerif-BoldItalic.ttf",
+            "Book",
+            "Book\\quickstart.epub",
+            "Book\\releasenotes.epub"
+          ],
+          "native": [
+            {
+              "name": "dslibris.nds",
+              "bytes": 1417728,
+              "sha256": "16597f690fc99b4fe4768f943379dde4cd1262af0a1d17a9b0304945b2ca6757",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 1347784
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 1364480,
+                  "bytes": 43508
+                }
+              ],
+              "bannerOffset": 1408512
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "dsi-camera",
+      "files": [
+        {
+          "name": "dsi-camera.nds",
+          "url": "https://github.com/Epicpkmn11/dsi-camera/releases/download/v1.1.0/dsi-camera.nds",
+          "format": "NDS",
+          "label": "dsi-camera.nds",
+          "sourceUrl": "https://github.com/Epicpkmn11/dsi-camera/releases/download/v1.1.0/dsi-camera.nds",
+          "resolvedUrl": "https://github.com/Epicpkmn11/dsi-camera/releases/download/v1.1.0/dsi-camera.nds",
+          "local": "/downloads/ds-dsi-more/dsi-camera/v1.1.0/dsi-camera.nds",
+          "version": "v1.1.0",
+          "bytes": 287744,
+          "sha256": "dcce9b1c537f0fbfdb09a97c5992f2a6d75a6137c3787cebf21987a79aea828a",
+          "contents": [],
+          "native": [
+            {
+              "name": "dsi-camera.nds",
+              "bytes": 287744,
+              "sha256": "dcce9b1c537f0fbfdb09a97c5992f2a6d75a6137c3787cebf21987a79aea828a",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 212888
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 229376,
+                  "bytes": 48428
+                }
+              ],
+              "bannerOffset": 278528
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "ikureader",
+      "files": [
+        {
+          "name": "sdcard-root.zip",
+          "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/sdcard-root.zip",
+          "format": "ZIP → required reader data",
+          "label": "Required fonts, encodings & book folders · ZIP",
+          "kind": "data",
+          "requiredContents": [
+            "data/ikureader/fonts/LiberationSerif.ttf",
+            "data/ikureader/translations/English.txt"
+          ],
+          "sourceUrl": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/sdcard-root.zip",
+          "resolvedUrl": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/sdcard-root.zip",
+          "local": "/downloads/ds-dsi-more/ikureader/6.5_modern/sdcard-root.zip",
+          "version": "6.5_modern",
+          "bytes": 379282,
+          "sha256": "95a01f2872e4c0c3e2b52bf15184a4b55c51e90a4dbc30a577a6c5cec829a803",
+          "contents": [
+            "books",
+            "books\\Alice's Adventures in Wonderland.epub",
+            "data",
+            "data\\ikureader",
+            "data\\ikureader\\bookmarks",
+            "data\\ikureader\\encodings",
+            "data\\ikureader\\encodings\\8859-15_Western_2.TXT",
+            "data\\ikureader\\encodings\\8859-1_Western_1.TXT",
+            "data\\ikureader\\encodings\\8859-2_Central_Europe_1.TXT",
+            "data\\ikureader\\encodings\\CP1250_Central_Europe_2.TXT",
+            "data\\ikureader\\encodings\\CP1251_Russian.txt",
+            "data\\ikureader\\encodings\\CP1252_Western_3.TXT",
+            "data\\ikureader\\fonts",
+            "data\\ikureader\\fonts\\LiberationSerif.ttf",
+            "data\\ikureader\\fonts\\LiberationSerifB.ttf",
+            "data\\ikureader\\fonts\\LiberationSerifI.ttf",
+            "data\\ikureader\\translations",
+            "data\\ikureader\\translations\\English.txt",
+            "data\\ikureader\\translations\\German.txt",
+            "data\\ikureader\\translations\\Russian.txt",
+            "data\\ikureader\\translations\\Spanish.txt"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": true
+        },
+        {
+          "name": "IkuReader.nds",
+          "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.nds",
+          "format": "NDS",
+          "label": "IkuReader.nds",
+          "sourceUrl": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.nds",
+          "resolvedUrl": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.nds",
+          "local": "/downloads/ds-dsi-more/ikureader/6.5_modern/IkuReader.nds",
+          "version": "6.5_modern",
+          "bytes": 967168,
+          "sha256": "63c2febdb96db89343373291a5f96111248e5b0afe6f6f7cffb2e5624858c3d0",
+          "contents": [],
+          "native": [
+            {
+              "name": "IkuReader.nds",
+              "bytes": 967168,
+              "sha256": "63c2febdb96db89343373291a5f96111248e5b0afe6f6f7cffb2e5624858c3d0",
+              "format": "Nintendo DS executable",
+              "title": "HOMEBREW",
+              "unitCode": 2,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 931412
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 948224,
+                  "bytes": 9104
+                }
+              ],
+              "bannerOffset": 957952
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        },
+        {
+          "name": "IkuReader.dsi",
+          "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.dsi",
+          "format": "DSi",
+          "label": "IkuReader.dsi",
+          "sourceUrl": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.dsi",
+          "resolvedUrl": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.dsi",
+          "local": "/downloads/ds-dsi-more/ikureader/6.5_modern/IkuReader.dsi",
+          "version": "6.5_modern",
+          "bytes": 967168,
+          "sha256": "d7b0627e240b3e23461efdd6f0eb2a746594717a9017172e0f7805b6deb5800c",
+          "contents": [],
+          "native": [
+            {
+              "name": "IkuReader.dsi",
+              "bytes": 967168,
+              "sha256": "d7b0627e240b3e23461efdd6f0eb2a746594717a9017172e0f7805b6deb5800c",
+              "format": "Nintendo DS executable",
+              "title": "IKUREADER",
+              "unitCode": 3,
+              "headerCrcValid": true,
+              "regions": [
+                {
+                  "label": "ARM9",
+                  "offset": 16384,
+                  "bytes": 931412
+                },
+                {
+                  "label": "ARM7",
+                  "offset": 948224,
+                  "bytes": 9104
+                }
+              ],
+              "bannerOffset": 957952
+            }
+          ],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "wii-u",
+      "files": [
+        {
+          "name": "Wii U.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/Wii%20U.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/Wii%20U.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/Wii%20U.7z",
+          "local": "/downloads/ds-dsi-more/wii-u/v1.0.0/Wii U.7z",
+          "version": "v1.0.0",
+          "bytes": 6061847,
+          "sha256": "f8026fcbfa6252cb51a0e99f9b29c36df0145588c2e88f7d2c3a4feed49ffd98",
+          "contents": [
+            "Wii U",
+            "Wii U\\background",
+            "Wii U\\battery",
+            "Wii U\\grf",
+            "Wii U\\quickmenu",
+            "Wii U\\sound",
+            "Wii U\\ui",
+            "Wii U\\volume",
+            "Wii U\\background\\bottom.png",
+            "Wii U\\background\\bottom_bubble.png",
+            "Wii U\\background\\bottom_bubble_macro.png",
+            "Wii U\\background\\bottom_moving.png",
+            "Wii U\\background\\top.png",
+            "Wii U\\battery\\battery0.png",
+            "Wii U\\battery\\battery1.png",
+            "Wii U\\battery\\battery1purple.png",
+            "Wii U\\battery\\battery2.png",
+            "Wii U\\battery\\battery2purple.png",
+            "Wii U\\battery\\battery3.png",
+            "Wii U\\battery\\battery3purple.png",
+            "Wii U\\battery\\battery4.png",
+            "Wii U\\battery\\battery4purple.png",
+            "Wii U\\battery\\batterycharge.png",
+            "Wii U\\battery\\batterychargeblink.png",
+            "Wii U\\battery\\batteryfull.png",
+            "Wii U\\battery\\batteryfullDS.png",
+            "Wii U\\battery\\batterylow.png",
+            "Wii U\\grf\\bips.bmp",
+            "Wii U\\grf\\box.bmp",
+            "Wii U\\grf\\brace.bmp",
+            "Wii U\\grf\\bubble.bmp",
+            "Wii U\\grf\\button_arrow.bmp",
+            "Wii U\\grf\\cornerbutton.bmp",
+            "Wii U\\grf\\dialogbox.bmp",
+            "Wii U\\grf\\folder.bmp",
+            "Wii U\\grf\\icon_a26.bmp",
+            "Wii U\\grf\\icon_gb.bmp",
+            "Wii U\\grf\\icon_gba.bmp",
+            "Wii U\\grf\\icon_gbamode.bmp",
+            "Wii U\\grf\\icon_gg.bmp",
+            "Wii U\\grf\\icon_int.bmp",
+            "Wii U\\grf\\icon_m5.bmp",
+            "Wii U\\grf\\icon_manual.bmp",
+            "Wii U\\grf\\icon_md.bmp",
+            "Wii U\\grf\\icon_nes.bmp",
+            "Wii U\\grf\\icon_ngp.bmp",
+            "Wii U\\grf\\icon_pce.bmp",
+            "Wii U\\grf\\icon_plg.bmp",
+            "Wii U\\grf\\icon_settings.bmp",
+            "Wii U\\grf\\icon_sg.bmp",
+            "Wii U\\grf\\icon_sms.bmp",
+            "Wii U\\grf\\icon_snes.bmp",
+            "Wii U\\grf\\icon_unk.bmp",
+            "Wii U\\grf\\icon_ws.bmp",
+            "Wii U\\grf\\launch_dot.bmp",
+            "Wii U\\grf\\moving_arrow.bmp",
+            "Wii U\\grf\\progress.bmp",
+            "Wii U\\grf\\scroll_window.bmp",
+            "Wii U\\grf\\small_cart.bmp",
+            "Wii U\\grf\\start_border.ase",
+            "Wii U\\grf\\start_border.bmp",
+            "Wii U\\grf\\start_text.bmp",
+            "Wii U\\grf\\wirelessicons.bmp",
+            "Wii U\\quickmenu\\bottombg.png",
+            "Wii U\\quickmenu\\phat_topbg.png",
+            "Wii U\\quickmenu\\topbg.png",
+            "Wii U\\sound\\bgm.pcm.raw",
+            "Wii U\\sound\\sfx.bin",
+            "Wii U\\theme.ini",
+            "Wii U\\ui\\Lshoulder.png",
+            "Wii U\\ui\\Lshoulder_greyed.png",
+            "Wii U\\ui\\Rshoulder.png",
+            "Wii U\\ui\\Rshoulder_greyed.png",
+            "Wii U\\volume\\volume0.png",
+            "Wii U\\volume\\volume1.png",
+            "Wii U\\volume\\volume2.png",
+            "Wii U\\volume\\volume3.png",
+            "Wii U\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "retrov1",
+      "files": [
+        {
+          "name": "RetroV1.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/RetroV1.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/RetroV1.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/RetroV1.7z",
+          "local": "/downloads/ds-dsi-more/retrov1/v1.0.0/RetroV1.7z",
+          "version": "v1.0.0",
+          "bytes": 6778193,
+          "sha256": "4dde1b4d9da89d9c94542ee52cc851e927783908af3f9f63698af19f132ba2a4",
+          "contents": [
+            "RetroV1",
+            "RetroV1\\background",
+            "RetroV1\\battery",
+            "RetroV1\\font",
+            "RetroV1\\grf",
+            "RetroV1\\quickmenu",
+            "RetroV1\\sound",
+            "RetroV1\\ui",
+            "RetroV1\\video",
+            "RetroV1\\volume",
+            "RetroV1\\background\\bottom.png",
+            "RetroV1\\background\\bottom_bubble.png",
+            "RetroV1\\background\\bottom_bubble_ds.png",
+            "RetroV1\\background\\bottom_ds.bmp",
+            "RetroV1\\background\\top.png",
+            "RetroV1\\battery\\battery0.png",
+            "RetroV1\\battery\\battery1.png",
+            "RetroV1\\battery\\battery1purple.png",
+            "RetroV1\\battery\\battery2.png",
+            "RetroV1\\battery\\battery2purple.png",
+            "RetroV1\\battery\\battery3.png",
+            "RetroV1\\battery\\battery3purple.png",
+            "RetroV1\\battery\\battery4.png",
+            "RetroV1\\battery\\battery4purple.png",
+            "RetroV1\\battery\\batterycharge.png",
+            "RetroV1\\battery\\batterychargeblink.png",
+            "RetroV1\\battery\\batteryfull.png",
+            "RetroV1\\battery\\batteryfullDS.png",
+            "RetroV1\\battery\\batterylow.png",
+            "RetroV1\\font\\date_time.nftr",
+            "RetroV1\\grf\\box_empty.bmp",
+            "RetroV1\\grf\\box_full.bmp",
+            "RetroV1\\grf\\bubble.bmp",
+            "RetroV1\\grf\\cornerbutton.bmp",
+            "RetroV1\\grf\\cursor.bmp",
+            "RetroV1\\grf\\dialogbox.bmp",
+            "RetroV1\\grf\\folder.bmp",
+            "RetroV1\\grf\\icon_a26.bmp",
+            "RetroV1\\grf\\icon_gb.bmp",
+            "RetroV1\\grf\\icon_gba.bmp",
+            "RetroV1\\grf\\icon_gbamode.bmp",
+            "RetroV1\\grf\\icon_gg.bmp",
+            "RetroV1\\grf\\icon_int.bmp",
+            "RetroV1\\grf\\icon_m5.bmp",
+            "RetroV1\\grf\\icon_manual.bmp",
+            "RetroV1\\grf\\icon_md.bmp",
+            "RetroV1\\grf\\icon_nes.bmp",
+            "RetroV1\\grf\\icon_ngp.bmp",
+            "RetroV1\\grf\\icon_pce.bmp",
+            "RetroV1\\grf\\icon_plg.bmp",
+            "RetroV1\\grf\\icon_settings.bmp",
+            "RetroV1\\grf\\icon_sg.bmp",
+            "RetroV1\\grf\\icon_sms.bmp",
+            "RetroV1\\grf\\icon_snes.bmp",
+            "RetroV1\\grf\\icon_unk.bmp",
+            "RetroV1\\grf\\icon_ws.bmp",
+            "RetroV1\\grf\\progress.bmp",
+            "RetroV1\\grf\\small_cart.bmp",
+            "RetroV1\\grf\\wirelessicons.bmp",
+            "RetroV1\\quickmenu\\bottombg.png",
+            "RetroV1\\quickmenu\\phat_topbg.png",
+            "RetroV1\\quickmenu\\topbg.png",
+            "RetroV1\\sound\\bgm.pcm.raw",
+            "RetroV1\\theme.ini",
+            "RetroV1\\ui\\Lshoulder.png",
+            "RetroV1\\ui\\Lshoulder_greyed.png",
+            "RetroV1\\ui\\Rshoulder.png",
+            "RetroV1\\ui\\Rshoulder_greyed.png",
+            "RetroV1\\volume\\volume0.png",
+            "RetroV1\\volume\\volume1.png",
+            "RetroV1\\volume\\volume2.png",
+            "RetroV1\\volume\\volume3.png",
+            "RetroV1\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "diisu-dark",
+      "files": [
+        {
+          "name": "DiiSU Dark.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/DiiSU%20Dark.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/DiiSU%20Dark.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/DiiSU%20Dark.7z",
+          "local": "/downloads/ds-dsi-more/diisu-dark/v1.0.0/DiiSU Dark.7z",
+          "version": "v1.0.0",
+          "bytes": 8684492,
+          "sha256": "255dc65094c942913cd6d2803a2781f529b0d51b14fe42264289ba9e36101238",
+          "contents": [
+            "DiiSU Dark",
+            "DiiSU Dark\\background",
+            "DiiSU Dark\\battery",
+            "DiiSU Dark\\font",
+            "DiiSU Dark\\grf",
+            "DiiSU Dark\\quickmenu",
+            "DiiSU Dark\\sound",
+            "DiiSU Dark\\ui",
+            "DiiSU Dark\\volume",
+            "assets_for_skews.7z",
+            "DiiSU Dark\\background\\bottom.png",
+            "DiiSU Dark\\background\\bottomGENERIC.png",
+            "DiiSU Dark\\background\\bottom_bubble.png",
+            "DiiSU Dark\\background\\bottom_bubbleGENERIC.png",
+            "DiiSU Dark\\background\\bottom_bubble_ds.png",
+            "DiiSU Dark\\background\\bottom_ds.png",
+            "DiiSU Dark\\background\\top.png",
+            "DiiSU Dark\\battery\\battery0.png",
+            "DiiSU Dark\\battery\\battery1.png",
+            "DiiSU Dark\\battery\\battery2.png",
+            "DiiSU Dark\\battery\\battery3.png",
+            "DiiSU Dark\\battery\\battery4.png",
+            "DiiSU Dark\\battery\\batterycharge.png",
+            "DiiSU Dark\\battery\\batterychargeblink.png",
+            "DiiSU Dark\\battery\\batteryfull.png",
+            "DiiSU Dark\\battery\\batteryfullDS.png",
+            "DiiSU Dark\\battery\\batterylow.png",
+            "DiiSU Dark\\font\\date_time.nftr",
+            "DiiSU Dark\\font\\large.nftr",
+            "DiiSU Dark\\font\\small.nftr",
+            "DiiSU Dark\\font\\username.nftr",
+            "DiiSU Dark\\grf\\box_empty.bmp",
+            "DiiSU Dark\\grf\\box_full.bmp",
+            "DiiSU Dark\\grf\\bubble.bmp",
+            "DiiSU Dark\\grf\\cursor.bmp",
+            "DiiSU Dark\\grf\\dialogbox.bmp",
+            "DiiSU Dark\\grf\\folder.bmp",
+            "DiiSU Dark\\grf\\icon_a26.bmp",
+            "DiiSU Dark\\grf\\icon_gb.bmp",
+            "DiiSU Dark\\grf\\icon_gba.bmp",
+            "DiiSU Dark\\grf\\icon_gbamode.bmp",
+            "DiiSU Dark\\grf\\icon_gg.bmp",
+            "DiiSU Dark\\grf\\icon_int.bmp",
+            "DiiSU Dark\\grf\\icon_m5.bmp",
+            "DiiSU Dark\\grf\\icon_manual.bmp",
+            "DiiSU Dark\\grf\\icon_md.bmp",
+            "DiiSU Dark\\grf\\icon_mini.bmp",
+            "DiiSU Dark\\grf\\icon_msx.bmp",
+            "DiiSU Dark\\grf\\icon_nes.bmp",
+            "DiiSU Dark\\grf\\icon_ngp.bmp",
+            "DiiSU Dark\\grf\\icon_pce.bmp",
+            "DiiSU Dark\\grf\\icon_plg.bmp",
+            "DiiSU Dark\\grf\\icon_settings.bmp",
+            "DiiSU Dark\\grf\\icon_sg.bmp",
+            "DiiSU Dark\\grf\\icon_sms.bmp",
+            "DiiSU Dark\\grf\\icon_snes.bmp",
+            "DiiSU Dark\\grf\\icon_unk.bmp",
+            "DiiSU Dark\\grf\\icon_ws.bmp",
+            "DiiSU Dark\\grf\\progress.bmp",
+            "DiiSU Dark\\grf\\small_cart.bmp",
+            "DiiSU Dark\\grf\\wirelessicons.bmp",
+            "DiiSU Dark\\quickmenu\\bottombg.png",
+            "DiiSU Dark\\quickmenu\\phat_topbg.png",
+            "DiiSU Dark\\quickmenu\\topbg.png",
+            "DiiSU Dark\\sound\\sfx.bin",
+            "DiiSU Dark\\theme.ini",
+            "DiiSU Dark\\ui\\Lshoulder.png",
+            "DiiSU Dark\\ui\\Lshoulder_greyed.png",
+            "DiiSU Dark\\ui\\Rshoulder.png",
+            "DiiSU Dark\\ui\\Rshoulder_greyed.png",
+            "DiiSU Dark\\volume\\volume0.png",
+            "DiiSU Dark\\volume\\volume1.png",
+            "DiiSU Dark\\volume\\volume2.png",
+            "DiiSU Dark\\volume\\volume3.png",
+            "DiiSU Dark\\volume\\volume4.png",
+            "READ ME.txt",
+            "DiiSU Dark\\sound\\bgm.wav"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "nes-classic",
+      "files": [
+        {
+          "name": "NES Classic.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/NES%20Classic.7z",
+          "format": "7z → theme",
+          "label": "3DS UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/NES%20Classic.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/NES%20Classic.7z",
+          "local": "/downloads/ds-dsi-more/nes-classic/v1.01/NES Classic.7z",
+          "version": "v1.01",
+          "bytes": 2186351,
+          "sha256": "f7675cfc7cd4ea10b738f9ef37f9891d2124b91fee0e4346b8b652b8a6b3cc58",
+          "contents": [
+            "nesClassic",
+            "nesClassic\\background",
+            "nesClassic\\battery",
+            "nesClassic\\grf",
+            "nesClassic\\quickmenu",
+            "nesClassic\\sound",
+            "nesClassic\\ui",
+            "nesClassic\\video",
+            "nesClassic\\volume",
+            "nesClassic\\background\\bottom.png",
+            "nesClassic\\background\\bottom_bubble.png",
+            "nesClassic\\background\\bottom_bubble_ds.png",
+            "nesClassic\\background\\bottom_ds.png",
+            "nesClassic\\background\\top.png",
+            "nesClassic\\battery\\battery0.png",
+            "nesClassic\\battery\\battery1.png",
+            "nesClassic\\battery\\battery1purple.png",
+            "nesClassic\\battery\\battery2.png",
+            "nesClassic\\battery\\battery2purple.png",
+            "nesClassic\\battery\\battery3.png",
+            "nesClassic\\battery\\battery3purple.png",
+            "nesClassic\\battery\\battery4.png",
+            "nesClassic\\battery\\battery4purple.png",
+            "nesClassic\\battery\\batterycharge.png",
+            "nesClassic\\battery\\batterychargeblink.png",
+            "nesClassic\\battery\\batteryfull.png",
+            "nesClassic\\battery\\batteryfullDS.png",
+            "nesClassic\\battery\\batterylow.png",
+            "nesClassic\\battery0.psd",
+            "nesClassic\\bottom_ds.psd",
+            "nesClassic\\grf\\box_empty.bmp",
+            "nesClassic\\grf\\box_full.bmp",
+            "nesClassic\\grf\\bubble.bmp",
+            "nesClassic\\grf\\cornerbutton.bmp",
+            "nesClassic\\grf\\cursor.bmp",
+            "nesClassic\\grf\\dialogbox.bmp",
+            "nesClassic\\grf\\folder.bmp",
+            "nesClassic\\grf\\icon_a26.bmp",
+            "nesClassic\\grf\\icon_gb.bmp",
+            "nesClassic\\grf\\icon_gba.bmp",
+            "nesClassic\\grf\\icon_gbamode.bmp",
+            "nesClassic\\grf\\icon_gg.bmp",
+            "nesClassic\\grf\\icon_int.bmp",
+            "nesClassic\\grf\\icon_m5.bmp",
+            "nesClassic\\grf\\icon_manual.bmp",
+            "nesClassic\\grf\\icon_md.bmp",
+            "nesClassic\\grf\\icon_nes.bmp",
+            "nesClassic\\grf\\icon_ngp.bmp",
+            "nesClassic\\grf\\icon_pce.bmp",
+            "nesClassic\\grf\\icon_plg.bmp",
+            "nesClassic\\grf\\icon_settings.bmp",
+            "nesClassic\\grf\\icon_sg.bmp",
+            "nesClassic\\grf\\icon_sms.bmp",
+            "nesClassic\\grf\\icon_snes.bmp",
+            "nesClassic\\grf\\icon_unk.bmp",
+            "nesClassic\\grf\\icon_ws.bmp",
+            "nesClassic\\grf\\progress.bmp",
+            "nesClassic\\grf\\small_cart.bmp",
+            "nesClassic\\grf\\Thumbs.db",
+            "nesClassic\\grf\\wirelessicons.bmp",
+            "nesClassic\\small_cart.psd",
+            "nesClassic\\small_cart.xcf",
+            "nesClassic\\sound\\back.wav",
+            "nesClassic\\sound\\launch.wav",
+            "nesClassic\\sound\\Makefile",
+            "nesClassic\\sound\\select.wav",
+            "nesClassic\\sound\\sfx.bin",
+            "nesClassic\\sound\\stop.wav",
+            "nesClassic\\sound\\switch.wav",
+            "nesClassic\\sound\\wrong.wav",
+            "nesClassic\\theme.ini",
+            "nesClassic\\ui\\.DS_Store",
+            "nesClassic\\ui\\Lshoulder.png",
+            "nesClassic\\ui\\Lshoulder_greyed.png",
+            "nesClassic\\ui\\Rshoulder.png",
+            "nesClassic\\ui\\Rshoulder_greyed.png",
+            "nesClassic\\volume\\volume0.png",
+            "nesClassic\\volume\\volume1.png",
+            "nesClassic\\volume\\volume2.png",
+            "nesClassic\\volume\\volume3.png",
+            "nesClassic\\volume\\volume4.png",
+            "nesClassic\\volume1.psd",
+            "nesClassic\\sound\\bgm.wav",
+            "nesClassic\\sound\\startup.wav"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "atmosphere-skin",
+      "files": [
+        {
+          "name": "atmosphere.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/atmosphere.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/atmosphere.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/atmosphere.7z",
+          "local": "/downloads/ds-dsi-more/atmosphere-skin/v1.0.0/atmosphere.7z",
+          "version": "v1.0.0",
+          "bytes": 57796,
+          "sha256": "fb24106df29eb64f378ad7318e3652216f2627913924c503d1a9e8c89766c9d9",
+          "contents": [
+            "atmosphere",
+            "atmosphere\\background",
+            "atmosphere\\battery",
+            "atmosphere\\grf",
+            "atmosphere\\quickmenu",
+            "atmosphere\\ui",
+            "atmosphere\\volume",
+            "atmosphere\\background\\bottom.png",
+            "atmosphere\\background\\bottom_bubble.png",
+            "atmosphere\\background\\bottom_bubble_macro.png",
+            "atmosphere\\background\\bottom_moving.png",
+            "atmosphere\\background\\top.png",
+            "atmosphere\\battery\\battery0.png",
+            "atmosphere\\battery\\battery1.png",
+            "atmosphere\\battery\\battery2.png",
+            "atmosphere\\battery\\battery3.png",
+            "atmosphere\\battery\\battery4.png",
+            "atmosphere\\battery\\batterycharge.png",
+            "atmosphere\\battery\\batterychargeblink.png",
+            "atmosphere\\battery\\batteryfull.png",
+            "atmosphere\\battery\\batteryfullDS.png",
+            "atmosphere\\battery\\batterylow.png",
+            "atmosphere\\grf\\bips.bmp",
+            "atmosphere\\grf\\box.bmp",
+            "atmosphere\\grf\\brace.bmp",
+            "atmosphere\\grf\\bubble.bmp",
+            "atmosphere\\grf\\button_arrow.bmp",
+            "atmosphere\\grf\\cornerbutton.bmp",
+            "atmosphere\\grf\\dialogbox.bmp",
+            "atmosphere\\grf\\folder.bmp",
+            "atmosphere\\grf\\icon_a26.bmp",
+            "atmosphere\\grf\\icon_gb.bmp",
+            "atmosphere\\grf\\icon_gba.bmp",
+            "atmosphere\\grf\\icon_gbamode.bmp",
+            "atmosphere\\grf\\icon_gg.bmp",
+            "atmosphere\\grf\\icon_int.bmp",
+            "atmosphere\\grf\\icon_m5.bmp",
+            "atmosphere\\grf\\icon_manual.bmp",
+            "atmosphere\\grf\\icon_md.bmp",
+            "atmosphere\\grf\\icon_mini.bmp",
+            "atmosphere\\grf\\icon_msx.bmp",
+            "atmosphere\\grf\\icon_nes.bmp",
+            "atmosphere\\grf\\icon_ngp.bmp",
+            "atmosphere\\grf\\icon_pce.bmp",
+            "atmosphere\\grf\\icon_plg.bmp",
+            "atmosphere\\grf\\icon_settings.bmp",
+            "atmosphere\\grf\\icon_sg.bmp",
+            "atmosphere\\grf\\icon_sms.bmp",
+            "atmosphere\\grf\\icon_snes.bmp",
+            "atmosphere\\grf\\icon_unk.bmp",
+            "atmosphere\\grf\\icon_ws.bmp",
+            "atmosphere\\grf\\launch_dot.bmp",
+            "atmosphere\\grf\\moving_arrow.bmp",
+            "atmosphere\\grf\\progress.bmp",
+            "atmosphere\\grf\\scroll_window.bmp",
+            "atmosphere\\grf\\small_cart.bmp",
+            "atmosphere\\grf\\start_border.bmp",
+            "atmosphere\\grf\\start_text.bmp",
+            "atmosphere\\grf\\wirelessicons.bmp",
+            "atmosphere\\quickmenu\\bottombg.png",
+            "atmosphere\\quickmenu\\phat_topbg.png",
+            "atmosphere\\quickmenu\\topbg.png",
+            "atmosphere\\theme.ini",
+            "atmosphere\\ui\\Lshoulder.png",
+            "atmosphere\\ui\\Lshoulder_greyed.png",
+            "atmosphere\\ui\\Rshoulder.png",
+            "atmosphere\\ui\\Rshoulder_greyed.png",
+            "atmosphere\\volume\\volume0.png",
+            "atmosphere\\volume\\volume1.png",
+            "atmosphere\\volume\\volume2.png",
+            "atmosphere\\volume\\volume3.png",
+            "atmosphere\\volume\\volume4.png"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    },
+    {
+      "id": "classic-ds-menu",
+      "files": [
+        {
+          "name": "classic DS Menu.7z",
+          "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/classic%20DS%20Menu.7z",
+          "format": "7z → theme",
+          "label": "DSi UI skin · 7z",
+          "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/classic%20DS%20Menu.7z",
+          "resolvedUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/classic%20DS%20Menu.7z",
+          "local": "/downloads/ds-dsi-more/classic-ds-menu/v1.0.0/classic DS Menu.7z",
+          "version": "v1.0.0",
+          "bytes": 1388146,
+          "sha256": "ce9d6869f1f28b0a8c7bd3fe748d1b60ff75b622c293a4bad51d34db068e7c04",
+          "contents": [
+            "classic DS Menu",
+            "classic DS Menu\\background",
+            "classic DS Menu\\battery",
+            "classic DS Menu\\font",
+            "classic DS Menu\\grf",
+            "classic DS Menu\\palettes",
+            "classic DS Menu\\quickmenu",
+            "classic DS Menu\\sound",
+            "classic DS Menu\\ui",
+            "classic DS Menu\\volume",
+            "classic DS Menu\\background\\bottom.png",
+            "classic DS Menu\\background\\bottom_bubble.png",
+            "classic DS Menu\\background\\bottom_bubble_macro.png",
+            "classic DS Menu\\background\\bottom_moving.png",
+            "classic DS Menu\\background\\top.png",
+            "classic DS Menu\\battery\\battery0.png",
+            "classic DS Menu\\battery\\battery1.png",
+            "classic DS Menu\\battery\\battery1purple.png",
+            "classic DS Menu\\battery\\battery2.png",
+            "classic DS Menu\\battery\\battery2purple.png",
+            "classic DS Menu\\battery\\battery3.png",
+            "classic DS Menu\\battery\\battery3purple.png",
+            "classic DS Menu\\battery\\battery4.png",
+            "classic DS Menu\\battery\\battery4purple.png",
+            "classic DS Menu\\battery\\batterycharge.png",
+            "classic DS Menu\\battery\\batterychargeblink.png",
+            "classic DS Menu\\battery\\batteryfull.png",
+            "classic DS Menu\\battery\\batteryfullDS.png",
+            "classic DS Menu\\battery\\batteryfullPurple.png",
+            "classic DS Menu\\battery\\batterylow.png",
+            "classic DS Menu\\font\\date_time.nftr",
+            "classic DS Menu\\font\\small.nftr",
+            "classic DS Menu\\font\\tiny.nftr",
+            "classic DS Menu\\grf\\bips.bmp",
+            "classic DS Menu\\grf\\box.bmp",
+            "classic DS Menu\\grf\\brace.bmp",
+            "classic DS Menu\\grf\\bubble.bmp",
+            "classic DS Menu\\grf\\button_arrow.bmp",
+            "classic DS Menu\\grf\\cornerbutton.bmp",
+            "classic DS Menu\\grf\\dialogbox.bmp",
+            "classic DS Menu\\grf\\folder.bmp",
+            "classic DS Menu\\grf\\icon_a26.bmp",
+            "classic DS Menu\\grf\\icon_gb.bmp",
+            "classic DS Menu\\grf\\icon_gba.bmp",
+            "classic DS Menu\\grf\\icon_gbamode.bmp",
+            "classic DS Menu\\grf\\icon_gg.bmp",
+            "classic DS Menu\\grf\\icon_int.bmp",
+            "classic DS Menu\\grf\\icon_m5.bmp",
+            "classic DS Menu\\grf\\icon_manual.bmp",
+            "classic DS Menu\\grf\\icon_md.bmp",
+            "classic DS Menu\\grf\\icon_mini.bmp",
+            "classic DS Menu\\grf\\icon_msx.bmp",
+            "classic DS Menu\\grf\\icon_nes.bmp",
+            "classic DS Menu\\grf\\icon_ngp.bmp",
+            "classic DS Menu\\grf\\icon_pce.bmp",
+            "classic DS Menu\\grf\\icon_plg.bmp",
+            "classic DS Menu\\grf\\icon_settings.bmp",
+            "classic DS Menu\\grf\\icon_sg.bmp",
+            "classic DS Menu\\grf\\icon_sms.bmp",
+            "classic DS Menu\\grf\\icon_snes.bmp",
+            "classic DS Menu\\grf\\icon_unk.bmp",
+            "classic DS Menu\\grf\\icon_ws.bmp",
+            "classic DS Menu\\grf\\launch_dot.bmp",
+            "classic DS Menu\\grf\\moving_arrow.bmp",
+            "classic DS Menu\\grf\\progress.bmp",
+            "classic DS Menu\\grf\\scroll_window.bmp",
+            "classic DS Menu\\grf\\small_cart.bmp",
+            "classic DS Menu\\grf\\start_border.bmp",
+            "classic DS Menu\\grf\\start_text.bmp",
+            "classic DS Menu\\grf\\wirelessicons.bmp",
+            "classic DS Menu\\palettes\\button_arrow.bin",
+            "classic DS Menu\\quickmenu\\bottombg.png",
+            "classic DS Menu\\quickmenu\\phat_topbg.png",
+            "classic DS Menu\\quickmenu\\topbg.png",
+            "classic DS Menu\\theme.ini",
+            "classic DS Menu\\ui\\Lshoulder.png",
+            "classic DS Menu\\ui\\Lshoulder_greyed.png",
+            "classic DS Menu\\ui\\Rshoulder.png",
+            "classic DS Menu\\ui\\Rshoulder_greyed.png",
+            "classic DS Menu\\volume\\volume0.png",
+            "classic DS Menu\\volume\\volume1.png",
+            "classic DS Menu\\volume\\volume2.png",
+            "classic DS Menu\\volume\\volume3.png",
+            "classic DS Menu\\volume\\volume4.png",
+            "classic DS Menu\\sound\\bgm.wav",
+            "classic DS Menu\\sound\\hour.wav",
+            "classic DS Menu\\sound\\startup.wav",
+            "classic DS Menu\\sound\\stop.wav",
+            "classic DS Menu\\sound\\switch.wav",
+            "classic DS Menu\\sound\\back.wav",
+            "classic DS Menu\\sound\\launch.wav",
+            "classic DS Menu\\sound\\select.wav"
+          ],
+          "native": [],
+          "archived": true,
+          "archiveReused": false
+        }
+      ]
+    }
+  ],
+  "attempts": [],
+  "artwork": [
+    {
+      "id": "nesds",
+      "local": "/assets/images/ds-dsi-more/nesds.png",
+      "sourceUrl": "https://github.com/DS-Homebrew/NesDS/releases/download/v2.1/nesDS.nds",
+      "credit": "nesDS authors · original packaged Nintendo DS banner icon",
+      "sha256": "cd2f6e4a5bc7ebdc4f1f79d7efd75bc5cc48b171952361c21b24e48d7f528754",
+      "type": "banner-icon"
+    },
+    {
+      "id": "gameyob",
+      "local": "/assets/images/ds-dsi-more/gameyob.png",
+      "sourceUrl": "https://github.com/Lana-chan/GameYob/releases/download/v0.5.3b-mavica/gameyob.nds",
+      "credit": "GameYob · mavica build authors · original packaged Nintendo DS banner icon",
+      "sha256": "96d3c0b8ac2624822e4a611fd9e969ad18233590a57564b220f35219cbf4dcc9",
+      "type": "banner-icon"
+    },
+    {
+      "id": "nitrografx",
+      "local": "/assets/images/ds-dsi-more/nitrografx.png",
+      "sourceUrl": "https://raw.githubusercontent.com/FluBBaOfWard/NitroGrafx/main/logo.png",
+      "credit": "PC Engine logo supplied by FluBBaOfWard/NitroGrafx",
+      "sha256": "14c6e1311acf4b383e614d2d72e1d92e9a3a2d688185e1953b66c7c1d8139a4d",
+      "type": "logo"
+    },
+    {
+      "id": "s8ds",
+      "local": "/assets/images/ds-dsi-more/s8ds.png",
+      "sourceUrl": "https://raw.githubusercontent.com/FluBBaOfWard/S8DS/main/logo.png",
+      "credit": "S8DS project logo supplied by FluBBaOfWard",
+      "sha256": "d5b7f3d15a94105fc59f9a0bf1035283a57ae99b4384d8a9c46248bd1c5439c8",
+      "type": "logo"
+    },
+    {
+      "id": "a7800ds",
+      "local": "/assets/images/ds-dsi-more/a7800ds.png",
+      "sourceUrl": "https://github.com/wavemotion-dave/A7800DS/releases/download/5.2c/A7800DS.nds",
+      "credit": "A7800DS authors · original packaged Nintendo DS banner icon",
+      "sha256": "754c37de00d535e524365a33229a8e0fd042c380a45c15c8a2809223978ae637",
+      "type": "banner-icon"
+    },
+    {
+      "id": "stellads",
+      "local": "/assets/images/ds-dsi-more/stellads.png",
+      "sourceUrl": "https://github.com/wavemotion-dave/StellaDS/releases/download/8.4a/StellaDS.nds",
+      "credit": "StellaDS authors · original packaged Nintendo DS banner icon",
+      "sha256": "adb1cc7558625a31a8738602100506ca6a7b047f39729710869c231a56136042",
+      "type": "banner-icon"
+    },
+    {
+      "id": "wordle-ds",
+      "local": "/assets/images/ds-dsi-more/wordle-ds.png",
+      "sourceUrl": "https://github.com/Epicpkmn11/WordleDS/releases/download/v3.2.3/WordleDS.nds",
+      "credit": "Wordle DS authors · original packaged Nintendo DS banner icon",
+      "sha256": "1cf664d8a2a0a6652c3e6f1da61cb8ff88095c4d25bb4aa504bb1421efc9ec38",
+      "type": "banner-icon"
+    },
+    {
+      "id": "portalds",
+      "local": "/assets/images/ds-dsi-more/portalds.png",
+      "sourceUrl": "https://github.com/smealum/portalDS/releases/download/r1/ASDS_r1.zip",
+      "credit": "Aperture Science DS · portalDS authors · original packaged Nintendo DS banner icon",
+      "sha256": "cc4ef6c3f54853cf6ca7806ec1eff119c15c94a9d1c53795b28fbb1b67634847",
+      "type": "banner-icon"
+    },
+    {
+      "id": "counter-strike-ds",
+      "local": "/assets/images/ds-dsi-more/counter-strike-ds.png",
+      "sourceUrl": "https://user-images.githubusercontent.com/39272935/176778790-14707835-d15d-473b-baeb-3cb51864b004.png",
+      "credit": "Counter Strike DS screenshot published by Fewnity",
+      "sha256": "eb80cddab76cda564637b9e4df1c492cae8beeed994a308303cdd2506f43e2ea",
+      "type": "screenshot"
+    },
+    {
+      "id": "punch-a-rooney",
+      "local": "/assets/images/ds-dsi-more/punch-a-rooney.png",
+      "sourceUrl": "https://raw.githubusercontent.com/seaners42/Punch-A-Rooney/main/screenshots/gameplay1.png",
+      "credit": "Sean David / Punch-A-Rooney · CC BY-NC-SA 4.0",
+      "sha256": "22df86a9900fba440fa5031fa9779ca8d2734b6841e3480605bf60f6279bafc7",
+      "type": "screenshot"
+    },
+    {
+      "id": "hbmenu",
+      "local": "/assets/images/ds-dsi-more/hbmenu-boot.png",
+      "sourceUrl": "https://github.com/devkitPro/nds-hb-menu/releases/download/v0.11.0/hbmenu-0.11.0.zip",
+      "credit": "devkitPro · original BOOT.NDS menu icon from the hbmenu ready release",
+      "sha256": "38e6cd19dd8f2d282178b692083f43882119496ec18ebb53928890af5416d033",
+      "type": "banner-icon"
+    },
+    {
+      "id": "cg-input-test",
+      "local": "/assets/images/ds-dsi-more/cg-input-test.png",
+      "sourceUrl": "https://github.com/claudechinsta/cg-nds-input-test/releases/download/1.0.0/cg-input-test.nds",
+      "credit": "CG NDS Input Test authors · original packaged Nintendo DS banner icon",
+      "sha256": "8615530484cbcf33cd84bbc2af0447929d47fd261074af553f075b5d9d510060",
+      "type": "banner-icon"
+    },
+    {
+      "id": "switch-basic-light",
+      "local": "/assets/images/ds-dsi-more/switch-basic-light.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Switch%20-%20Basic%20Light/screenshots/app-list.png",
+      "credit": "Switch - Basic Light preview · Pk11 / DS-Homebrew skins",
+      "sha256": "813e81577d246f80579d39b1ca5cc8a04937befe24085a364c60a237eb53b92f",
+      "type": "screenshot"
+    },
+    {
+      "id": "switch-basic-dark",
+      "local": "/assets/images/ds-dsi-more/switch-basic-dark.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Switch%20-%20Basic%20Dark/screenshots/app-list.png",
+      "credit": "Switch - Basic Dark preview · Pk11 / DS-Homebrew skins",
+      "sha256": "bcd357f91fa47ce968753f36ec52ad19f269049af141fa0d51e3ccdbaab55370",
+      "type": "screenshot"
+    },
+    {
+      "id": "3darks",
+      "local": "/assets/images/ds-dsi-more/3darks.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/3DarkS/screenshots/app-list.png",
+      "credit": "3DarkS preview · earedguitr, Void / DS-Homebrew skins",
+      "sha256": "14e80157a99a7fd18e4ce24b17e977045e0009c907d4948f5d4044ffee72d6ce",
+      "type": "screenshot"
+    },
+    {
+      "id": "spelunky-ds",
+      "local": "/assets/images/ds-dsi-more/spelunky-ds.png",
+      "sourceUrl": "https://github.com/dbeef/spelunky-ds/releases/download/1.13DSi%2B%2B/spelunkyds.nds",
+      "credit": "SpelunkyDS authors · original packaged Nintendo DS banner icon",
+      "sha256": "00d9e6169aae78ba18eec43643cab61c0c580bbbd1d8e82f04db7b44f3a83de4",
+      "type": "banner-icon"
+    },
+    {
+      "id": "minicraft-ds",
+      "local": "/assets/images/ds-dsi-more/minicraft-ds.png",
+      "sourceUrl": "https://raw.githubusercontent.com/ArthurCose/Minicraft-DS-Edition/v1.0.0-beta.3/screenshots/overworld.png",
+      "credit": "ArthurCose · official Minicraft DS Edition overworld screenshot",
+      "sha256": "d4c903b0f27d75d8af44d744d721eba93e4f6d346fdcabdb57efbc8855dcd6e3",
+      "type": "screenshot"
+    },
+    {
+      "id": "2048-nds",
+      "local": "/assets/images/ds-dsi-more/2048-nds.png",
+      "sourceUrl": "https://github.com/mdmrk/2048-nds/releases/download/v1.0.2/2048-nds.nds",
+      "credit": "2048 NDS authors · original packaged Nintendo DS banner icon",
+      "sha256": "a3236f8ebda7e3b3f093c030ea198f9b6540a69968fa3f752e25578c1d121f6c",
+      "type": "banner-icon"
+    },
+    {
+      "id": "raptords",
+      "local": "/assets/images/ds-dsi-more/raptords.png",
+      "sourceUrl": "https://github.com/RetroGamer02/raptor-consoles/releases/download/MultiSys-V1.0.4/RAPTOR-NDS-V1.1.0.zip",
+      "credit": "RaptorDS · Call of the Shadows authors · original packaged Nintendo DS banner icon",
+      "sha256": "a83b70767e025267f6cf620af37faafc265229fa2120d68447846262709976ce",
+      "type": "banner-icon"
+    },
+    {
+      "id": "3d-maze",
+      "local": "/assets/images/ds-dsi-more/3d-maze.png",
+      "sourceUrl": "https://github.com/headshot2017/3dmaze/releases/download/v1.0.0/3dmaze-nds-fat.zip",
+      "credit": "3D Maze · Windows 9x port authors · original packaged Nintendo DS banner icon",
+      "sha256": "b015b1ae51ba160ec1783d5a9b2014efdcb8ba5b991e23e314acb6b8c76daad3",
+      "type": "banner-icon"
+    },
+    {
+      "id": "space-cadet-ds",
+      "local": "/assets/images/ds-dsi-more/space-cadet-ds.png",
+      "sourceUrl": "https://github.com/headshot2017/3dpinball-nds/releases/download/v0.5/3dpinball-nds.nds",
+      "credit": "3D Pinball · Space Cadet DS authors · original packaged Nintendo DS banner icon",
+      "sha256": "561ccfdd212dd7c9ac8284c432864ef00a231bac6e2859d5ff9b712bc8c28d3f",
+      "type": "banner-icon"
+    },
+    {
+      "id": "cereal-box-snow",
+      "local": "/assets/images/ds-dsi-more/cereal-box-snow.png",
+      "sourceUrl": "https://github.com/tallHouse64/CerealBoxSnow/releases/download/v1.2.0/CerealBoxSnowNds1.2.0.nds",
+      "credit": "Cereal Box Snow authors · original packaged Nintendo DS banner icon",
+      "sha256": "38e6cd19dd8f2d282178b692083f43882119496ec18ebb53928890af5416d033",
+      "type": "banner-icon"
+    },
+    {
+      "id": "nitroustracker",
+      "local": "/assets/images/ds-dsi-more/nitroustracker.png",
+      "sourceUrl": "https://github.com/NitrousTracker/nitroustracker/releases/download/release%2F0.6.5/NitrousTracker-0.6.5.zip",
+      "credit": "NitrousTracker · music studio authors · original packaged Nintendo DS banner icon",
+      "sha256": "19bf630651921c7dfd11bea308e51a37693aae9db62769c7c6b53c2c6e21f2ee",
+      "type": "banner-icon"
+    },
+    {
+      "id": "dsidl",
+      "local": "/assets/images/ds-dsi-more/dsidl.png",
+      "sourceUrl": "https://github.com/Epicpkmn11/dsidl/releases/download/v0.1.1/dsidl.dsi",
+      "credit": "dsidl · DSi QR downloader authors · original packaged Nintendo DS banner icon",
+      "sha256": "dfed221edb89a3e70eb35740f34395f4f9d96e1b414a0cd5a96e2fdfa626f245",
+      "type": "banner-icon"
+    },
+    {
+      "id": "sky",
+      "local": "/assets/images/ds-dsi-more/sky.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Sky/icon.png",
+      "credit": "kool_duck · official Sky theme preview via DS-Homebrew",
+      "sha256": "29a9d76a8081a5f937b3f4356e34cab41bd230af077c6d88c81eb82bf47e5d83",
+      "type": "logo"
+    },
+    {
+      "id": "sharp-white-black",
+      "local": "/assets/images/ds-dsi-more/sharp-white-black.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Sharp%20-%20White%20on%20Black/screenshots/preview.png",
+      "credit": "Iruel · official Sharp - White on Black theme preview via DS-Homebrew",
+      "sha256": "65d1550b3b079453edeee07e56510201a98b26f44f7c7cad402b1ceddf42d7a9",
+      "type": "screenshot"
+    },
+    {
+      "id": "relaxing-space",
+      "local": "/assets/images/ds-dsi-more/relaxing-space.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/Relaxing%20Space/screenshots/app-list.png",
+      "credit": "BlakCake, DVDo · official Relaxing Space theme preview via DS-Homebrew",
+      "sha256": "eb0f276ced8987ce1572240d42c77e74828d9460404e35b1f21a3c52be4fa42d",
+      "type": "screenshot"
+    },
+    {
+      "id": "darker",
+      "local": "/assets/images/ds-dsi-more/darker.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/darker/screenshots/app-list.png",
+      "credit": "RocketRobz, spellboundtriangle · official Darker theme preview via DS-Homebrew",
+      "sha256": "16bd12bc716ee9851abd660e887b42fc28a919a9179ac4c187a01d03ade14a71",
+      "type": "screenshot"
+    },
+    {
+      "id": "default-dark",
+      "local": "/assets/images/ds-dsi-more/default-dark.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/dark/screenshots/app-list.png",
+      "credit": "RocketRobz · official Default Dark theme preview via DS-Homebrew",
+      "sha256": "3fca18879727a909bf0a4f87346e3810cda93b83ce582dd74a4c0bdc7278262c",
+      "type": "screenshot"
+    },
+    {
+      "id": "default-white",
+      "local": "/assets/images/ds-dsi-more/default-white.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/white/screenshots/app-list.png",
+      "credit": "RocketRobz · official Default White theme preview via DS-Homebrew",
+      "sha256": "7ab277f383782aaf28809577c716749966618a51dcdf9bc06b30307da2612499",
+      "type": "screenshot"
+    },
+    {
+      "id": "terrariads",
+      "local": "/assets/images/ds-dsi-more/terrariads.png",
+      "sourceUrl": "https://raw.githubusercontent.com/AzizBgBoss/TerrariaDS/0.2/media/logo.png",
+      "credit": "AzizBgBoss · official TerrariaDS project logo",
+      "sha256": "866bb30fb201f473e1c554706e6a62a63ebb19ea7cf418b3cbb157d74f372a35",
+      "type": "logo"
+    },
+    {
+      "id": "derailed",
+      "local": "/assets/images/ds-dsi-more/derailed.png",
+      "sourceUrl": "https://github.com/AzizBgBoss/derailed/releases/download/1.1alpha/derailed.nds",
+      "credit": "Derailed! authors · original packaged Nintendo DS banner icon",
+      "sha256": "2d60f2fed054f075ca9604410fdd24f5dd6be760aafeef855a8e1758ef46618e",
+      "type": "banner-icon"
+    },
+    {
+      "id": "microcitynds",
+      "local": "/assets/images/ds-dsi-more/microcitynds.png",
+      "sourceUrl": "https://github.com/AzizBgBoss/MicroCityNDS/releases/download/v1.0/MicroCityNDS.nds",
+      "credit": "MicroCityNDS authors · original packaged Nintendo DS banner icon",
+      "sha256": "38e6cd19dd8f2d282178b692083f43882119496ec18ebb53928890af5416d033",
+      "type": "banner-icon"
+    },
+    {
+      "id": "monty-hall-ds",
+      "local": "/assets/images/ds-dsi-more/monty-hall-ds.png",
+      "sourceUrl": "https://github.com/Rph-nsmb/MontyHallDS/releases/download/v2.0/Monty.Hall.DS.v2.0.zip",
+      "credit": "Monty Hall DS authors · original packaged Nintendo DS banner icon",
+      "sha256": "0330dbc823325290b27134227bae66e53c8f47fd42567e5d3565afd6b1b38e88",
+      "type": "banner-icon"
+    },
+    {
+      "id": "spirited-ds",
+      "local": "/assets/images/ds-dsi-more/spirited-ds.png",
+      "sourceUrl": "https://github.com/KahnerC/SpiritedDS/releases/download/Version1.0/spirited_ds.nds",
+      "credit": "Spirited DS authors · original packaged Nintendo DS banner icon",
+      "sha256": "38e6cd19dd8f2d282178b692083f43882119496ec18ebb53928890af5416d033",
+      "type": "banner-icon"
+    },
+    {
+      "id": "ikachan-ds",
+      "local": "/assets/images/ds-dsi-more/ikachan-ds.png",
+      "sourceUrl": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.nds",
+      "credit": "Ikachan DS authors · original packaged Nintendo DS banner icon",
+      "sha256": "8f0ff1b4d5368eae974f0eecd3e157e327f71f89e04960e2357e48f2ac1dc65e",
+      "type": "banner-icon"
+    },
+    {
+      "id": "dslibris",
+      "local": "/assets/images/ds-dsi-more/dslibris.png",
+      "sourceUrl": "https://raw.githubusercontent.com/rhaleblian/dslibris/v1.5.2-2/etc/sample/browser.png",
+      "credit": "Ray Haleblian · official dslibris book-browser screenshot",
+      "sha256": "543b27d872f2a7f1e46d4bd4a6f1a15eb3bc7d2f89174475f0785890a259d0da",
+      "type": "screenshot"
+    },
+    {
+      "id": "dsi-camera",
+      "local": "/assets/images/ds-dsi-more/dsi-camera.png",
+      "sourceUrl": "https://github.com/Epicpkmn11/dsi-camera/releases/download/v1.1.0/dsi-camera.nds",
+      "credit": "DSi camera test authors · original packaged Nintendo DS banner icon",
+      "sha256": "130809919750055b3b8248f1ba0db8115739b0f5c7aa7d7c9e9e6d621f7a18ba",
+      "type": "banner-icon"
+    },
+    {
+      "id": "ikureader",
+      "local": "/assets/images/ds-dsi-more/ikureader.png",
+      "sourceUrl": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.nds",
+      "credit": "IkuReader · modern build authors · original packaged Nintendo DS banner icon",
+      "sha256": "51f36df9e455e23cc72967712b72ee123661c75aacbac333594d15e2fe6b0b6d",
+      "type": "banner-icon"
+    },
+    {
+      "id": "wii-u",
+      "local": "/assets/images/ds-dsi-more/wii-u.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/Wii%20U/screenshots/Game%20List.png",
+      "credit": "nayz · official Wii U preview via DS-Homebrew",
+      "sha256": "b58616e8590f5ebd832324bdb60cb4a9ee40bf0d53c022754f4960d08e65b517",
+      "type": "screenshot"
+    },
+    {
+      "id": "retrov1",
+      "local": "/assets/images/ds-dsi-more/retrov1.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/RetroV1/icon.png",
+      "credit": "CJ1899 · official RetroV1 preview via DS-Homebrew",
+      "sha256": "6a3c7eabf83a27f2118840a6584f450b39ffd1e7702d20d34e33bd206c2fd06e",
+      "type": "logo"
+    },
+    {
+      "id": "diisu-dark",
+      "local": "/assets/images/ds-dsi-more/diisu-dark.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/DiiSU%20Dark/screenshots/app-list.png",
+      "credit": "Anonymous_cat1 · official DiiSU Dark preview via DS-Homebrew",
+      "sha256": "43b1372ed506a8faab96a361e7e8250b2a39cd816b6a79ef537eaab90a27936e",
+      "type": "screenshot"
+    },
+    {
+      "id": "nes-classic",
+      "local": "/assets/images/ds-dsi-more/nes-classic.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/NES%20Classic/screenshots/app-list.png",
+      "credit": "LetsGoAway · official NES Classic preview via DS-Homebrew",
+      "sha256": "67f54da7c53593bb4221af9a0c7de485cadf0975fa2cfb14a66075dbce7490e5",
+      "type": "screenshot"
+    },
+    {
+      "id": "atmosphere-skin",
+      "local": "/assets/images/ds-dsi-more/atmosphere-skin.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/atmosphere/icon.png",
+      "credit": "KNBnoob1 · official Atmosphère preview via DS-Homebrew",
+      "sha256": "7613b413fee305bb8a43a264f9a1fb777bff7ae8d53e24b40ab203f54fb70787",
+      "type": "logo"
+    },
+    {
+      "id": "classic-ds-menu",
+      "local": "/assets/images/ds-dsi-more/classic-ds-menu.png",
+      "sourceUrl": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/classic%20DS%20Menu/screenshots/App%20list%202.png",
+      "credit": "Gemdation · official Classic DS Menu preview via DS-Homebrew · original DS sprites credited to CathodeRayKobold / The Spriters Resource",
+      "sha256": "13b6afc6baf6684fadccce2b61c80c86696c7d8f8a9bb6d16b3b4506e512d874",
+      "type": "screenshot"
+    }
+  ],
+  "attemptHistory": [
+    {
+      "id": "spelunky-ds",
+      "url": "https://github.com/dbeef/spelunky-ds/releases/download/1.13DSi%2B%2B/spelunkyds.nds",
+      "status": "unavailable",
+      "error": "Archive intake lock is busy; retry after the cooperating writer finishes: C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\.console-expansion-intake.lock",
+      "checkedAt": "2026-11-02T09:32:08.667Z"
+    },
+    {
+      "id": "terrariads",
+      "url": "https://github.com/AzizBgBoss/TerrariaDS/releases/download/0.2/TerrariaDS.nds",
+      "status": "unavailable",
+      "error": "The operation was aborted due to timeout",
+      "checkedAt": "2026-11-02T12:00:17.952Z"
+    },
+    {
+      "id": "terrariads",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/AzizBgBoss/TerrariaDS/0.2/media/logo.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "derailed",
+      "url": "https://github.com/AzizBgBoss/derailed/releases/download/1.1alpha/derailed.nds",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.146Z"
+    },
+    {
+      "id": "microcitynds",
+      "url": "https://github.com/AzizBgBoss/MicroCityNDS/releases/download/v1.0/MicroCityNDS.nds",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.149Z"
+    },
+    {
+      "id": "monty-hall-ds",
+      "url": "https://github.com/Rph-nsmb/MontyHallDS/releases/download/v2.0/Monty.Hall.DS.v2.0.zip",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.151Z"
+    },
+    {
+      "id": "spirited-ds",
+      "url": "https://github.com/KahnerC/SpiritedDS/releases/download/Version1.0/spirited_ds.nds",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.153Z"
+    },
+    {
+      "id": "ikachan-ds",
+      "url": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.nds",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.154Z"
+    },
+    {
+      "id": "ikachan-ds",
+      "url": "https://github.com/awkitsune/IkachanDS/releases/download/0.2.1/IkachanDS.dsi",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.155Z"
+    },
+    {
+      "id": "dslibris",
+      "url": "https://github.com/rhaleblian/dslibris/releases/download/v1.5.2-2/dslibris-1.5.2-2.zip",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.156Z"
+    },
+    {
+      "id": "dslibris",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/rhaleblian/dslibris/v1.5.2-2/etc/sample/browser.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "dsi-camera",
+      "url": "https://github.com/Epicpkmn11/dsi-camera/releases/download/v1.1.0/dsi-camera.nds",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.159Z"
+    },
+    {
+      "id": "ikureader",
+      "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.nds",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.160Z"
+    },
+    {
+      "id": "ikureader",
+      "url": "https://github.com/awkitsune/IkuReader/releases/download/6.5_modern/IkuReader.dsi",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:29.161Z"
+    },
+    {
+      "id": "wii-u",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/Wii%20U.7z",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:30.924Z"
+    },
+    {
+      "id": "wii-u",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/Wii%20U/screenshots/Game%20List.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "retrov1",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/RetroV1.7z",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:30.927Z"
+    },
+    {
+      "id": "retrov1",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/RetroV1/icon.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "diisu-dark",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/DiiSU%20Dark.7z",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:30.929Z"
+    },
+    {
+      "id": "diisu-dark",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/DiiSU%20Dark/screenshots/app-list.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "nes-classic",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/NES%20Classic.7z",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:30.931Z"
+    },
+    {
+      "id": "nes-classic",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/meta/NES%20Classic/screenshots/app-list.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "atmosphere-skin",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/atmosphere.7z",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:30.933Z"
+    },
+    {
+      "id": "atmosphere-skin",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/atmosphere/icon.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "classic-ds-menu",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/classic%20DS%20Menu.7z",
+      "status": "unavailable",
+      "error": "fetch failed",
+      "checkedAt": "2026-11-02T12:00:30.935Z"
+    },
+    {
+      "id": "classic-ds-menu",
+      "status": "artwork unavailable",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/dsimenu/themes/meta/classic%20DS%20Menu/screenshots/App%20list%202.png",
+      "error": "fetch failed"
+    },
+    {
+      "id": "wii-u",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/Wii%20U.7z",
+      "status": "unavailable",
+      "error": "curl transfer failed; staging retained at C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ds-dsi-more\\transport\\curl-UFm1E8: curl: (28) Operation timed out after 60017 milliseconds with 506465 out of 6061847 bytes received",
+      "checkedAt": "2026-11-02T12:10:04.517Z"
+    },
+    {
+      "id": "retrov1",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/RetroV1.7z",
+      "status": "unavailable",
+      "error": "curl transfer failed; staging retained at C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ds-dsi-more\\transport\\curl-PQH707: curl: (28) Operation timed out after 60011 milliseconds with 48196 out of 6778193 bytes received",
+      "checkedAt": "2026-11-02T12:11:08.347Z"
+    },
+    {
+      "id": "diisu-dark",
+      "url": "https://raw.githubusercontent.com/DS-Homebrew/twlmenu-extras/master/_nds/TWiLightMenu/3dsmenu/themes/DiiSU%20Dark.7z",
+      "status": "unavailable",
+      "error": "curl transfer failed; staging retained at C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ds-dsi-more\\transport\\curl-Pua76K: curl: (28) Operation timed out after 60005 milliseconds with 4661504 out of 8684492 bytes received",
+      "checkedAt": "2026-11-02T12:12:10.307Z"
+    }
+  ]
+}

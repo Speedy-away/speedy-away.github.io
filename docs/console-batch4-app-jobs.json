@@ -1,0 +1,74 @@
+{
+  "jobs": [
+    {
+      "id": "ps5-store-prosperolight-01-000-110",
+      "title": "ProsperoLight",
+      "platform": "PS5",
+      "category": [
+        "Apps"
+      ],
+      "project": "ProsperoLight",
+      "version": "01.000.110",
+      "filename": "PPSA99002.zip",
+      "url": "https://github.com/LedyBacer/ProsperoLight/releases/download/01.000.110/PPSA99002.zip",
+      "importPath": "docs/tmp/console-expansion-batch4/PPSA99002.zip",
+      "expectedBytes": 36520955,
+      "expectedSha256": "f29935f3bd9d61926c1ea63f8d34019fff19ee993e8d030ee373c004efd974ba",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "pages": [
+        "console/ps5/apps.html",
+        "console/ps5/downloads.html"
+      ]
+    },
+    {
+      "id": "ps5-store-recompstore-2-7-4",
+      "title": "RecompStore",
+      "platform": "PS5",
+      "category": [
+        "Apps"
+      ],
+      "project": "RecompStore",
+      "version": "v2.7.4",
+      "filename": "PPSA92000.zip",
+      "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.4/PPSA92000.zip",
+      "importPath": "docs/tmp/console-expansion-batch4/PPSA92000.zip",
+      "expectedBytes": 25830650,
+      "expectedSha256": "2c7a58ef65d08974cb43a0045388be457b21a1fde3f98d6ecfd77eae6d309601",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "pages": [
+        "console/ps5/apps.html",
+        "console/ps5/downloads.html"
+      ]
+    },
+    {
+      "id": "ps5-recompstore-installer-2-7-4",
+      "title": "RecompStore installer",
+      "platform": "PS5",
+      "category": [
+        "Apps",
+        "Installers"
+      ],
+      "project": "RecompStore",
+      "version": "v2.7.4",
+      "filename": "RecompStore-Installer.elf",
+      "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.4/RecompStore-Installer.elf",
+      "importPath": "docs/tmp/console-expansion-batch4/RecompStore-Installer.elf",
+      "expectedBytes": 26794760,
+      "expectedSha256": "3a20194226cf5e1ee66a5a67d81610c1ac9bf82deee7b791c752d0e7d6202d5c",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "pages": [
+        "console/ps5/apps.html",
+        "console/ps5/downloads.html"
+      ]
+    }
+  ]
+}

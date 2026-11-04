@@ -1,0 +1,523 @@
+{
+  "reviewed": "2026-11-02",
+  "platform": "PS2",
+  "items": [
+    {
+      "id": "mca",
+      "title": "Memory Card Annihilator",
+      "category": "Tools",
+      "version": "2.2.0",
+      "repo": "ffgriever-pl/Memory-Card-Annihilator",
+      "tag": "v2.2.0",
+      "assetNames": [
+        "MemoryCardAnihilator_v2.2.0.zip"
+      ],
+      "description": "Create or restore full memory-card images and format cards on the PS2. The package separates normal retail cards from arcade, developer and prototype cards.",
+      "requires": "A homebrew ELF launcher, a PS2 controller and storage for card images. Select mca_new for normal retail cards with the modern USB drivers; it supports exFAT and SCPH-10000/15000.",
+      "install": "Keep the package as a backup, then copy the mca_new folder and its language files to USB. Launch its ELF. Dump the original card first. Restore, format and unformat operations change the selected card, so check its slot and keep a second backup.",
+      "layout": "USB:/APPS/MCA/ (copy contents of mca_new, including language files)",
+      "tags": [
+        "Card images",
+        "Backup",
+        "Retail PS2",
+        "exFAT"
+      ],
+      "art": "memory",
+      "source": "https://github.com/ffgriever-pl/Memory-Card-Annihilator/blob/v2.2.0/README.MD",
+      "project": "https://github.com/ffgriever-pl/Memory-Card-Annihilator",
+      "release": "https://github.com/ffgriever-pl/Memory-Card-Annihilator/releases/tag/v2.2.0",
+      "downloads": [
+        {
+          "name": "MemoryCardAnihilator_v2.2.0.zip",
+          "sourceUrl": "https://github.com/ffgriever-pl/Memory-Card-Annihilator/releases/download/v2.2.0/MemoryCardAnihilator_v2.2.0.zip",
+          "version": "v2.2.0",
+          "expectedBytes": 6749557,
+          "assetId": 247781938,
+          "publishedAt": "2025-04-19T19:47:18Z"
+        },
+        {
+          "name": "mca-new-retail-v2.2.0.elf",
+          "sourceUrl": "https://github.com/ffgriever-pl/Memory-Card-Annihilator/releases/download/v2.2.0/MemoryCardAnihilator_v2.2.0.zip",
+          "version": "v2.2.0",
+          "derivedFrom": "MemoryCardAnihilator_v2.2.0.zip",
+          "member": "mca_new/mca-packed.elf"
+        }
+      ]
+    },
+    {
+      "id": "hddchecker",
+      "title": "HDDChecker",
+      "category": "Tools",
+      "version": "0.964 · build c7679407",
+      "repo": "ps2homebrew/HDDChecker",
+      "tag": "latest",
+      "assetNames": [
+        "HDDChecker-c7679407.zip"
+      ],
+      "archiveVersion": "0.964-c7679407",
+      "description": "Inspect internal HDD identity and S.M.A.R.T. status, scan surfaces and check APA/PFS structures. This is an internal-drive diagnostic tool.",
+      "requires": "An ATA-compatible internal PS2 HDD connection. Upstream specifies ATA-4, UDMA 4, S.M.A.R.T. and drives up to 2 TB; USB storage is not the target disk.",
+      "install": "Extract the complete release and launch its ELF from your homebrew launcher. Begin with drive information. Back up saves and files before repairs: remapping writes to bad sectors, and zero-fill erases the disk. Keep generated scan logs with your backup.",
+      "layout": "Keep HDDChecker ELF and accompanying resources together",
+      "tags": [
+        "Internal HDD",
+        "S.M.A.R.T.",
+        "APA / PFS",
+        "Diagnostics"
+      ],
+      "art": "disk",
+      "source": "https://github.com/ps2homebrew/HDDChecker#readme",
+      "project": "https://github.com/ps2homebrew/HDDChecker",
+      "release": "https://github.com/ps2homebrew/HDDChecker/releases/tag/latest",
+      "downloads": [
+        {
+          "name": "HDDChecker-c7679407.zip",
+          "sourceUrl": "https://github.com/ps2homebrew/HDDChecker/releases/download/latest/HDDChecker-c7679407.zip",
+          "version": "0.964-c7679407",
+          "expectedBytes": 848212,
+          "assetId": 67332041,
+          "publishedAt": "2022-06-02T10:20:47Z"
+        },
+        {
+          "name": "HDDChecker-c7679407.elf",
+          "sourceUrl": "https://github.com/ps2homebrew/HDDChecker/releases/download/latest/HDDChecker-c7679407.zip",
+          "version": "0.964-c7679407",
+          "derivedFrom": "HDDChecker-c7679407.zip",
+          "member": "HDDChecker.elf"
+        }
+      ]
+    },
+    {
+      "id": "hddtester",
+      "title": "PS2 HDD Tester",
+      "category": "Tools",
+      "version": "1.1",
+      "repo": "ps2homebrew/PS2HDDTester",
+      "tag": "v1.1",
+      "assetNames": [
+        "hddtester_compressed_v1.1.elf"
+      ],
+      "description": "Compare sequential and random internal-HDD read performance, inspect sector size and see supported UDMA modes. The tests measure different transfer paths through the IOP and EE.",
+      "requires": "PS2 with an internal HDD interface, a drive and an ELF launcher. These benchmarks do not measure USB or SMB and are not a promise of game loading speed.",
+      "install": "Copy the ELF to your app folder and launch it with wLaunchELF or your boot menu. Select the read benchmark you need; compare like-for-like block sizes and transfer paths. Record the drive and adapter used.",
+      "layout": "USB:/APPS/HDDTEST/hddtester_compressed_v1.1.elf",
+      "tags": [
+        "Read benchmarks",
+        "HDD",
+        "UDMA",
+        "ELF"
+      ],
+      "art": "disk",
+      "source": "https://github.com/ps2homebrew/PS2HDDTester/tree/v1.1",
+      "project": "https://github.com/ps2homebrew/PS2HDDTester",
+      "release": "https://github.com/ps2homebrew/PS2HDDTester/releases/tag/v1.1",
+      "downloads": [
+        {
+          "name": "hddtester_compressed_v1.1.elf",
+          "sourceUrl": "https://github.com/ps2homebrew/PS2HDDTester/releases/download/v1.1/hddtester_compressed_v1.1.elf",
+          "version": "v1.1",
+          "expectedBytes": 73844,
+          "assetId": 117478620,
+          "publishedAt": "2023-07-18T07:00:35Z"
+        }
+      ]
+    },
+    {
+      "id": "padtest",
+      "title": "PS2 Pad Tester",
+      "category": "Tools",
+      "version": "tests/pad release",
+      "repo": "PCSX2/tools",
+      "tag": "tests/pad",
+      "assetNames": [
+        "padtest_ps2.elf"
+      ],
+      "description": "Test controller buttons and analog input with the PS2 build of PCSX2’s pad test utility. This is a console ELF, separate from the desktop emulator.",
+      "requires": "A PS2 that can launch homebrew and the controller you want to test. Start with a wired PS2 pad; third-party adapter behavior is not verified here.",
+      "install": "Copy padtest_ps2.elf into an app folder and launch it through wLaunchELF. Work through the buttons and stick range while watching the displayed input. No game data or external BIOS file is needed.",
+      "layout": "USB:/APPS/PADTEST/padtest_ps2.elf",
+      "tags": [
+        "Controller",
+        "Analog sticks",
+        "Input test",
+        "Native ELF"
+      ],
+      "art": "pad",
+      "source": "https://github.com/PCSX2/tools/releases/tag/tests/pad",
+      "project": "https://github.com/PCSX2/tools",
+      "release": "https://github.com/PCSX2/tools/releases/tag/tests/pad",
+      "downloads": [
+        {
+          "name": "padtest_ps2.elf",
+          "sourceUrl": "https://github.com/PCSX2/tools/releases/download/tests/pad/padtest_ps2.elf",
+          "version": "tests/pad",
+          "expectedBytes": 199056,
+          "assetId": 157669237,
+          "publishedAt": "2024-03-20T13:59:13Z"
+        }
+      ]
+    },
+    {
+      "id": "ps2link",
+      "title": "PS2Link",
+      "category": "Tools",
+      "version": "build 06a31aae · default",
+      "repo": "ps2dev/ps2link",
+      "tag": "latest",
+      "assetNames": [
+        "ps2link-06a31aae-default.tar.gz"
+      ],
+      "archiveVersion": "06a31aae-default",
+      "description": "A native Ethernet loader for homebrew development. Send your own PS2 programs from a development computer after starting PS2Link on the console.",
+      "requires": "A PS2 Ethernet interface, a wired network, an ELF boot method and a compatible PC development client such as ps2client. This download is the PS2 default-loading build only.",
+      "install": "Extract the complete TAR.GZ. This checked bundle contains PS2LINK.ELF and IPCONFIG.DAT; the modules are embedded in the ELF. Keep the supplied files together. Set IPCONFIG.DAT to PS2 IP, netmask and gateway separated by spaces. Use addresses on your LAN, then start the ELF and connect your development client.",
+      "layout": "PS2LINK/PS2LINK.ELF + IPCONFIG.DAT (modules embedded)",
+      "tags": [
+        "Ethernet",
+        "Development",
+        "Homebrew loader",
+        "IRX"
+      ],
+      "art": "network",
+      "source": "https://github.com/ps2dev/ps2link#readme",
+      "project": "https://github.com/ps2dev/ps2link",
+      "release": "https://github.com/ps2dev/ps2link/releases/tag/latest",
+      "downloads": [
+        {
+          "name": "ps2link-06a31aae-default.tar.gz",
+          "sourceUrl": "https://github.com/ps2dev/ps2link/releases/download/latest/ps2link-06a31aae-default.tar.gz",
+          "version": "06a31aae-default",
+          "expectedBytes": 95114,
+          "assetId": 699012817,
+          "publishedAt": "2026-11-01T17:31:48Z"
+        }
+      ]
+    },
+    {
+      "id": "opl-beta",
+      "title": "OPL 1.2 development option",
+      "category": "Tools",
+      "version": "1.2.0 Beta 2271 · b3a2199",
+      "repo": "ps2homebrew/Open-PS2-Loader",
+      "tag": "latest",
+      "assetNames": [
+        "OPNPS2LD.ELF"
+      ],
+      "archiveVersion": "1.2.0-Beta-2271-b3a2199",
+      "description": "A separately labelled development build for users who want the OPL 1.2 line, including the themes below. The existing stable 1.1.0 entry stays available above.",
+      "requires": "A PS2 ELF launcher. This is a beta, not a replacement recommendation for a working pinned setup. Check per-game compatibility and the exact build’s storage behavior.",
+      "install": "Keep your existing stable OPL ELF and configuration backup. Put this ELF in its own folder and add a distinct boot-menu shortcut. Test it separately before changing your regular setup. Theme authors target OPL 1.2+, but these themes have not been tested on a physical console here.",
+      "layout": "USB:/APPS/OPL-1.2-Beta-2271/OPNPS2LD.ELF",
+      "tags": [
+        "Optional beta",
+        "OPL 1.2",
+        "Themes",
+        "Separate build"
+      ],
+      "art": "loader",
+      "source": "https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/latest",
+      "project": "https://github.com/ps2homebrew/Open-PS2-Loader",
+      "release": "https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/latest",
+      "downloads": [
+        {
+          "name": "OPNPS2LD.ELF",
+          "sourceUrl": "https://github.com/ps2homebrew/Open-PS2-Loader/releases/download/latest/OPNPS2LD.ELF",
+          "version": "1.2.0-Beta-2271-b3a2199",
+          "expectedBytes": 1361812,
+          "assetId": 699064145,
+          "publishedAt": "2026-11-01T17:52:23Z"
+        }
+      ]
+    },
+    {
+      "id": "fceumm",
+      "title": "FCEUmm-PS2",
+      "category": "Emulators",
+      "version": "0.3.3 · USB ELF",
+      "repo": "ps2homebrew/Fceumm-PS2",
+      "tag": "v0.3.3",
+      "assetNames": [
+        "fceu-packed.v0.3.3.elf"
+      ],
+      "description": "A native NES/Famicom emulator with a controller-friendly browser, save states, turbo buttons and multitap support. This is the standard USB-oriented ELF, not the separate CD/DVD build.",
+      "requires": "An ELF launcher, PS2 pad and your own NES ROM dumps or compatible homebrew ROMs. Normal NES cartridges need no BIOS. Famicom Disk System software additionally needs your own compatible disk-system BIOS.",
+      "install": "Copy the ELF and a separate ROM folder to FAT32 USB, launch it and choose a ROM in its browser. Configure a writable save path. Cross is A, Square is B and L1 opens the menu. ROMs and external BIOS files are not included. If upgrading from an old FCEUmm setup, back up the old FCEUltra.cnf and reset that configuration for this release’s controller mapping.",
+      "layout": "USB:/APPS/FCEU/fceu-packed.v0.3.3.elf + USB:/ROMS/NES/",
+      "tags": [
+        "NES",
+        "Famicom",
+        "Save states",
+        "Multitap"
+      ],
+      "art": "cartridge",
+      "source": "https://github.com/ps2homebrew/Fceumm-PS2/tree/v0.3.3",
+      "project": "https://github.com/ps2homebrew/Fceumm-PS2",
+      "release": "https://github.com/ps2homebrew/Fceumm-PS2/releases/tag/v0.3.3",
+      "downloads": [
+        {
+          "name": "fceu-packed.v0.3.3.elf",
+          "sourceUrl": "https://github.com/ps2homebrew/Fceumm-PS2/releases/download/v0.3.3/fceu-packed.v0.3.3.elf",
+          "version": "v0.3.3",
+          "expectedBytes": 617589,
+          "assetId": 7010121,
+          "publishedAt": "2018-04-28T18:01:37Z"
+        }
+      ]
+    },
+    {
+      "id": "picodrive",
+      "title": "PicoDrive · native PS2",
+      "category": "Emulators",
+      "version": "2.05 · 19d4108",
+      "repo": "irixxxx/picodrive",
+      "tag": "v2.05",
+      "assetNames": [
+        "PicoDrive_ps2_2.05-19d4108.zip"
+      ],
+      "mirror": false,
+      "description": "The upstream PS2 build of PicoDrive for Sega Mega Drive/Genesis and related systems. Keep its skin and configuration files with the executable.",
+      "requires": "A homebrew PS2 and your own supported game dumps. Cartridge games need no Mega CD BIOS; Mega CD requires a matching region BIOS dumped from your own hardware. See the included readme for supported BIOS filenames.",
+      "install": "Extract the full PicoDrive folder to FAT32 USB and launch PicoDrive.elf. Select opens its menu. For CD games, keep BIN files with their CUE and load the CUE so track layout is preserved. BIOS files go beside the emulator as described in readme.txt. This standalone release does not use RetroArch BIOS filenames.",
+      "layout": "USB:/PicoDrive/{PicoDrive.elf,readme.txt,game_def.cfg,skin/}",
+      "tags": [
+        "Genesis",
+        "Mega Drive",
+        "Mega CD",
+        "Standalone"
+      ],
+      "art": "cartridge",
+      "source": "https://github.com/irixxxx/picodrive/blob/v2.05/platform/base_readme.txt",
+      "project": "https://github.com/irixxxx/picodrive",
+      "release": "https://github.com/irixxxx/picodrive/releases/tag/v2.05",
+      "downloads": [
+        {
+          "name": "PicoDrive_ps2_2.05-19d4108.zip",
+          "sourceUrl": "https://github.com/irixxxx/picodrive/releases/download/v2.05/PicoDrive_ps2_2.05-19d4108.zip",
+          "version": "v2.05",
+          "expectedBytes": 1048905,
+          "assetId": 259718436,
+          "publishedAt": "2025-05-31T14:21:10Z"
+        }
+      ]
+    },
+    {
+      "id": "ps2me",
+      "title": "PS2ME",
+      "category": "Emulators",
+      "version": "1.4.0",
+      "repo": "Wellinator/PS2ME",
+      "tag": "v1.4.0",
+      "assetNames": [
+        "PS2ME-v1.4.0.zip"
+      ],
+      "description": "Run compatible Java ME MIDlets through a native PS2 launcher and the phoneME virtual machine. It supplies the runtime; add your own JAR applications.",
+      "requires": "A homebrew-capable PS2, FAT32 USB, PS2 controller, memory card for RecordStore saves and compatible CLDC 1.1 / MIDP 2.0 JARs. No phone BIOS is required; compatibility varies by MIDlet.",
+      "install": "Extract the release, put its ELF in mass:/PS2ME/ and add your own MIDlets to mass:/PS2ME/games/. bgm.adpcm is optional menu audio. Launch the ELF; Cross launches the selected game, Circle goes back and Select opens per-game options.",
+      "layout": "mass:/PS2ME/{PS2ME-v1.4.0.elf,bgm.adpcm,games/*.jar}",
+      "tags": [
+        "Java ME",
+        "J2ME",
+        "MIDP 2.0",
+        "FAT32 USB"
+      ],
+      "art": "phone",
+      "source": "https://github.com/Wellinator/PS2ME/blob/v1.4.0/README.md",
+      "project": "https://github.com/Wellinator/PS2ME",
+      "release": "https://github.com/Wellinator/PS2ME/releases/tag/v1.4.0",
+      "downloads": [
+        {
+          "name": "PS2ME-v1.4.0.zip",
+          "sourceUrl": "https://github.com/Wellinator/PS2ME/releases/download/v1.4.0/PS2ME-v1.4.0.zip",
+          "version": "v1.4.0",
+          "expectedBytes": 2045136,
+          "assetId": 476787876,
+          "publishedAt": "2026-07-14T14:24:31Z"
+        },
+        {
+          "name": "PS2ME-v1.4.0.elf",
+          "sourceUrl": "https://github.com/Wellinator/PS2ME/releases/download/v1.4.0/PS2ME-v1.4.0.zip",
+          "version": "v1.4.0",
+          "derivedFrom": "PS2ME-v1.4.0.zip",
+          "member": "PS2ME/PS2ME-v1.4.0.elf"
+        }
+      ]
+    },
+    {
+      "id": "supertux",
+      "title": "SuperTux",
+      "category": "Games",
+      "version": "PS2 port 0.1.1a · USB bundle",
+      "repo": "headshot2017/supertux-ps2",
+      "tag": "v0.1.1a",
+      "assetNames": [
+        "supertux-ps2-usb.zip"
+      ],
+      "description": "An open-source platform game starring Tux. This USB release includes the game’s levels and assets, so it is a complete homebrew game rather than an engine-only port.",
+      "requires": "A PS2 homebrew launcher, FAT32 USB and a PS2 pad. Keep the supplied APPS tree; no commercial game files or external BIOS are needed.",
+      "install": "Extract the USB ZIP to the root of your USB device, retaining both APPS/ and supertux.elf. Launch supertux.elf. Use Cross to jump and Square to run. The similarly named CD release has a different launch layout and is not this download.",
+      "layout": "mass:/supertux.elf + mass:/APPS/SUPERTUX/ (complete supplied tree)",
+      "tags": [
+        "Complete game",
+        "Platformer",
+        "USB bundle",
+        "Open source"
+      ],
+      "art": "snow",
+      "source": "https://github.com/headshot2017/supertux-ps2/releases/tag/v0.1.1a",
+      "project": "https://github.com/headshot2017/supertux-ps2",
+      "release": "https://github.com/headshot2017/supertux-ps2/releases/tag/v0.1.1a",
+      "downloads": [
+        {
+          "name": "supertux-ps2-usb.zip",
+          "sourceUrl": "https://github.com/headshot2017/supertux-ps2/releases/download/v0.1.1a/supertux-ps2-usb.zip",
+          "version": "v0.1.1a",
+          "expectedBytes": 9088429,
+          "assetId": 61565843,
+          "publishedAt": "2022-04-05T03:22:38Z"
+        }
+      ]
+    },
+    {
+      "id": "quake",
+      "title": "Quake · PS2 engine port",
+      "category": "Games",
+      "version": "1.1.0",
+      "repo": "glampert/quake-ps2",
+      "tag": "v1.1.0",
+      "assetNames": [
+        "q1ps2_release_1.1.0.zip"
+      ],
+      "description": "A native Quake engine port with controller support and USB/HDD loading. The release provides the engine and folder layout; game data is separate.",
+      "requires": "Your own Quake data: id1/pak0.pak from a shareware or retail copy; retail content also uses id1/pak1.pak. PS2 controller and USB or supported internal HDD storage. No external BIOS file is needed.",
+      "install": "Extract the release and keep the executable next to id1/. Add your PAK files without renaming them. Start the ELF from the same storage. Optional music goes in id1/music/ as documented WAV/ADP tracks; saves and settings use the memory card in slot 1 in this release.",
+      "layout": "Quake/{quake.elf,id1/pak0.pak,id1/pak1.pak (retail)}",
+      "tags": [
+        "Engine port",
+        "Own PAK data",
+        "USB / HDD",
+        "Controller"
+      ],
+      "art": "corridor",
+      "source": "https://github.com/glampert/quake-ps2/blob/v1.1.0/README.md",
+      "project": "https://github.com/glampert/quake-ps2",
+      "release": "https://github.com/glampert/quake-ps2/releases/tag/v1.1.0",
+      "downloads": [
+        {
+          "name": "q1ps2_release_1.1.0.zip",
+          "sourceUrl": "https://github.com/glampert/quake-ps2/releases/download/v1.1.0/q1ps2_release_1.1.0.zip",
+          "version": "v1.1.0",
+          "expectedBytes": 634699,
+          "assetId": 698474518,
+          "publishedAt": "2026-11-01T13:48:38Z"
+        }
+      ]
+    },
+    {
+      "id": "quake2",
+      "title": "Quake II · PS2 engine port",
+      "category": "Games",
+      "version": "3.22",
+      "repo": "glampert/quake2-ps2",
+      "tag": "v3.22",
+      "assetNames": [
+        "q2ps2_release_3.22.zip"
+      ],
+      "description": "A native Quake II engine port for PS2, supplied as a release bundle without the commercial game data. The desktop host-tools archive is a separate project download.",
+      "requires": "Your own retail Quake II baseq2/pak0.pak, a PS2 pad and USB or supported internal HDD storage. This port’s documented layout and requirements differ from Quake I.",
+      "install": "Extract the release, keeping quake2.elf next to baseq2/. Add your retail pak0.pak there. Optional video, music and player files remain in their documented subfolders under baseq2. Launch quake2.elf; do not substitute the separate Windows host tools for the console build.",
+      "layout": "Quake2/{quake2.elf,baseq2/pak0.pak}",
+      "tags": [
+        "Engine port",
+        "Own retail data",
+        "Native PS2",
+        "USB / HDD"
+      ],
+      "art": "corridor",
+      "source": "https://github.com/glampert/quake2-ps2/blob/v3.22/README.md",
+      "project": "https://github.com/glampert/quake2-ps2",
+      "release": "https://github.com/glampert/quake2-ps2/releases/tag/v3.22",
+      "downloads": [
+        {
+          "name": "q2ps2_release_3.22.zip",
+          "sourceUrl": "https://github.com/glampert/quake2-ps2/releases/download/v3.22/q2ps2_release_3.22.zip",
+          "version": "v3.22",
+          "expectedBytes": 789016,
+          "assetId": 698531467,
+          "publishedAt": "2026-11-01T14:13:10Z"
+        }
+      ]
+    },
+    {
+      "id": "deckyos",
+      "title": "DeckyOS · OPL theme",
+      "category": "Themes",
+      "version": "1.0 · default",
+      "repo": "PixeliGer/OPL-Theme-DeckyOS",
+      "tag": "v1.0",
+      "assetNames": [
+        "thm_DeckyOS.zip"
+      ],
+      "description": "A handheld-style OPL interface with game artwork, designed by PixeliGer. The default package includes the actual theme configuration and assets.",
+      "requires": "OPL 1.2+ according to the theme author, with 4:3 or 16:9 display support. It is not verified for the stable OPL 1.1.0 build kept above. Game cover ART is separate and optional.",
+      "install": "Extract the complete thm_DeckyOS folder into THM/ on an enabled OPL device. Restart OPL, then choose Start > Display Settings > Theme. Retain conf_theme.cfg, images and fonts. The author advises against installing this theme on a memory card.",
+      "layout": "mass:/THM/thm_DeckyOS/conf_theme.cfg + all theme assets",
+      "tags": [
+        "OPL 1.2+",
+        "4:3 / 16:9",
+        "UI theme",
+        "THM"
+      ],
+      "art": "theme",
+      "source": "https://github.com/PixeliGer/OPL-Theme-DeckyOS/blob/v1.0/README.md",
+      "imageSource": "https://raw.githubusercontent.com/PixeliGer/OPL-Theme-DeckyOS/v1.0/assets/screenshots/screenshot_1.png",
+      "project": "https://github.com/PixeliGer/OPL-Theme-DeckyOS",
+      "release": "https://github.com/PixeliGer/OPL-Theme-DeckyOS/releases/tag/v1.0",
+      "downloads": [
+        {
+          "name": "thm_DeckyOS.zip",
+          "sourceUrl": "https://github.com/PixeliGer/OPL-Theme-DeckyOS/releases/download/v1.0/thm_DeckyOS.zip",
+          "version": "v1.0",
+          "expectedBytes": 416571,
+          "assetId": 377811126,
+          "publishedAt": "2026-03-20T09:00:46Z"
+        }
+      ]
+    },
+    {
+      "id": "pados",
+      "title": "PadOS · OPL theme",
+      "category": "Themes",
+      "version": "1.0 · normal 4:3",
+      "repo": "PixeliGer/OPL-Theme-PadOS",
+      "tag": "v1.0",
+      "assetNames": [
+        "thm_PadOS.zip"
+      ],
+      "description": "PixeliGer’s tablet-inspired OPL interface. This is the normal 4:3 theme package, with its own fonts, images and configuration.",
+      "requires": "OPL 1.2+ and Widescreen OFF for this normal package. The author provides a different WIDE build for widescreen; that is a separate variant. Not verified for pinned stable OPL 1.1.0.",
+      "install": "Extract the whole thm_PadOS folder into THM/ on your enabled OPL device. Restart OPL, then select it in Start > Display Settings > Theme. Keep every supplied file. Do not put this theme on the memory card; game ART and optional CFG information are separate.",
+      "layout": "mass:/THM/thm_PadOS/conf_theme.cfg + all theme assets",
+      "tags": [
+        "OPL 1.2+",
+        "4:3",
+        "UI theme",
+        "THM"
+      ],
+      "art": "theme",
+      "source": "https://github.com/PixeliGer/OPL-Theme-PadOS/blob/v1.0/README.md",
+      "imageSource": "https://raw.githubusercontent.com/PixeliGer/OPL-Theme-PadOS/v1.0/assets/screenshots/screenshot1.png",
+      "project": "https://github.com/PixeliGer/OPL-Theme-PadOS",
+      "release": "https://github.com/PixeliGer/OPL-Theme-PadOS/releases/tag/v1.0",
+      "downloads": [
+        {
+          "name": "thm_PadOS.zip",
+          "sourceUrl": "https://github.com/PixeliGer/OPL-Theme-PadOS/releases/download/v1.0/thm_PadOS.zip",
+          "version": "v1.0",
+          "expectedBytes": 829239,
+          "assetId": 237464514,
+          "publishedAt": "2025-03-14T12:29:07Z"
+        }
+      ]
+    }
+  ]
+}

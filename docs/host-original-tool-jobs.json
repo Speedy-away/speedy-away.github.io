@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T18:18:26.262Z",
+  "scope": "Seven selected ready/release files; original-only public links. F: intake is performed separately by the existing targeted importer.",
+  "jobs": [
+    {
+      "id": "host-original-orbis-toolbox-1-0-1190-505",
+      "title": "Orbis Toolbox 1.0.1190 · PS4 5.05",
+      "project": "Orbis Toolbox",
+      "category": [
+        "Tools"
+      ],
+      "url": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-505.bin",
+      "version": "1.0.1190 Alpha - firmware 5.05",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "firmwareScope": [
+        "5.05"
+      ],
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "Orbis-Toolbox-505.bin",
+      "importPath": "tmp/host-repository-review/original-tool-followup/Orbis-Toolbox-505.bin",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 626472,
+      "expectedSha256": "657aad360767ce7f9cef3c374f8ea448870df8d3cf6534a582930bbec0b400ce",
+      "maxBytes": 3145728,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    {
+      "id": "host-original-orbis-toolbox-1-0-1190-672",
+      "title": "Orbis Toolbox 1.0.1190 · PS4 6.72",
+      "project": "Orbis Toolbox",
+      "category": [
+        "Tools"
+      ],
+      "url": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-672.bin",
+      "version": "1.0.1190 Alpha - firmware 6.72",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "firmwareScope": [
+        "6.72"
+      ],
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "Orbis-Toolbox-672.bin",
+      "importPath": "tmp/host-repository-review/original-tool-followup/Orbis-Toolbox-672.bin",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 626504,
+      "expectedSha256": "c19e3f0d549b241aa31febd5a5223d0bf0156bdc4e419e1083f795ea90d5ce30",
+      "maxBytes": 3145728,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    {
+      "id": "host-original-orbis-toolbox-1-0-1190-702",
+      "title": "Orbis Toolbox 1.0.1190 · PS4 7.02",
+      "project": "Orbis Toolbox",
+      "category": [
+        "Tools"
+      ],
+      "url": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-702.bin",
+      "version": "1.0.1190 Alpha - firmware 7.02",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "firmwareScope": [
+        "7.02"
+      ],
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "Orbis-Toolbox-702.bin",
+      "importPath": "tmp/host-repository-review/original-tool-followup/Orbis-Toolbox-702.bin",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 626664,
+      "expectedSha256": "9f8a34ff2ab3918f3a01e3126817c3c0afd4671c3f0613e05cef540cf7d79a3c",
+      "maxBytes": 3145728,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    {
+      "id": "host-original-orbis-toolbox-1-0-1190-755",
+      "title": "Orbis Toolbox 1.0.1190 · PS4 7.55",
+      "project": "Orbis Toolbox",
+      "category": [
+        "Tools"
+      ],
+      "url": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-755.bin",
+      "version": "1.0.1190 Alpha - firmware 7.55",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "firmwareScope": [
+        "7.55"
+      ],
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "Orbis-Toolbox-755.bin",
+      "importPath": "tmp/host-repository-review/original-tool-followup/Orbis-Toolbox-755.bin",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 626664,
+      "expectedSha256": "421131368229e986385a5a5cf4a65d1be8a5835d7ba018720b8764e00153871c",
+      "maxBytes": 3145728,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    {
+      "id": "host-original-orbis-toolbox-1-0-1190-900",
+      "title": "Orbis Toolbox 1.0.1190 · PS4 9.00",
+      "project": "Orbis Toolbox",
+      "category": [
+        "Tools"
+      ],
+      "url": "https://github.com/OSM-Made/Orbis-Toolbox/releases/download/1.0.1190/Orbis-Toolbox-900.bin",
+      "version": "1.0.1190 Alpha - firmware 9.00",
+      "sourceCommit": "83c935231d664ee9d523edf32a1c1aecaac1a92a",
+      "firmwareScope": [
+        "9.00"
+      ],
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "Orbis-Toolbox-900.bin",
+      "importPath": "tmp/host-repository-review/original-tool-followup/Orbis-Toolbox-900.bin",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 626392,
+      "expectedSha256": "466d816ad26393deb6476c90acda77cb80a6e2c7a15ed70cf588c9447b0a7835",
+      "maxBytes": 3145728,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    {
+      "id": "host-original-goldhen-2-4b18-archive",
+      "title": "GoldHEN 2.4b18 · original release archive",
+      "project": "GoldHEN",
+      "category": [
+        "Payloads",
+        "GoldHEN"
+      ],
+      "url": "https://github.com/GoldHEN/GoldHEN/releases/download/2.4b18/GoldHEN_v2.4b18.7z",
+      "version": "2.4b18 - original 7z",
+      "sourceCommit": "f2cd6f8ec51b6291ef961dc6aa721c96556dbeb4",
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "GoldHEN_v2.4b18.7z",
+      "importPath": "tmp/host-repository-review/original-tool-followup/GoldHEN_v2.4b18.7z",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 258065,
+      "expectedSha256": "d0c84c79f65df5afc79a00c578f33ab1aa70aeb9c205f1e789895dc7d4fca38d",
+      "maxBytes": 3145728,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    },
+    {
+      "id": "host-original-goldhen-2-4b18-ready",
+      "title": "GoldHEN 2.4b18 · original ready BIN",
+      "project": "GoldHEN",
+      "category": [
+        "Payloads",
+        "GoldHEN"
+      ],
+      "url": "https://raw.githubusercontent.com/GoldHEN/GoldHEN/f2cd6f8ec51b6291ef961dc6aa721c96556dbeb4/goldhen.bin",
+      "version": "2.4b18 - official unified BIN - f2cd6f8ec51b",
+      "sourceCommit": "f2cd6f8ec51b6291ef961dc6aa721c96556dbeb4",
+      "transformation": "Exact member decompression from the original release archive; byte-identical to the original pinned raw BIN.",
+      "sourceArchiveSHA256": "d0c84c79f65df5afc79a00c578f33ab1aa70aeb9c205f1e789895dc7d4fca38d",
+      "platform": "PS4",
+      "kind": "direct",
+      "filename": "goldhen.bin",
+      "importPath": "tmp/host-repository-review/original-tool-followup/goldhen.bin",
+      "mirror": false,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 260160,
+      "expectedSha256": "eb9fee5e9e3618c0a144a6fc6b8fc1ec7e89cf06483ad64ae7c1085efc9525a3",
+      "maxBytes": 3145728,
+      "pages": [
+        "hosts/ps4/index.html"
+      ]
+    }
+  ]
+}

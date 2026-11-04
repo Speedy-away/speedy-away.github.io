@@ -1,0 +1,24 @@
+/* Firmware is an explicit selection, never an executable action. */
+body.host-folder-page .host-firmware-control {min-width:0}
+.host-firmware-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px}
+.host-firmware-heading>span {font-size:.8rem;color:#aeb9c9}
+body.host-folder-page .host-firmware-heading #host-detect {min-height:44px;padding:6px 12px;font-size:.9rem;grid-column:auto;justify-self:auto}
+.host-firmware-buttons {display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+body.host-folder-page .host-firmware-buttons button {min-height:58px;margin:0;padding:14px 10px;border:1px solid #303d4c;border-radius:6px;background:#19212c;color:#c0cad8;font-variant-numeric:tabular-nums;font-size:1.08rem}
+body.host-folder-page .host-firmware-buttons button:hover {background:#253546;border-color:#6c887c;color:#fff}
+body.host-folder-page .host-firmware-buttons button[aria-pressed="true"] {background:#bcebd2;color:#10261d;border-color:#bcebd2;font-weight:700}
+body.host-folder-page .host-firmware-buttons button:focus-visible {outline:2px solid #bcebd2;outline-offset:3px}
+#host-firmware-status {font-size:.75rem;color:#a7b6c6;line-height:1.5;margin:0 0 12px;min-height:1.5em}
+.host-folder-page.host-dashboard-page #host-file-firmware .host-firmware-control {flex-basis:100%;width:100%;max-width:1600px;margin-inline:auto;min-width:0}
+.host-folder-page.host-dashboard-page #host-file-firmware {max-width:1600px;margin-inline:auto;row-gap:24px}
+.host-reset .host-toolbar {grid-template-columns:minmax(0,1fr)}
+.host-reset #host-address-form {max-width:760px;width:100%}
+.host-folder-page.host-dashboard-page #host-file-firmware .host-search {margin-inline:auto!important}
+@media(max-width:680px){.host-firmware-buttons{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}body.host-folder-page .host-firmware-buttons button{font-size:1rem;min-height:52px;padding:12px 6px}}
+@media(max-width:380px){.host-firmware-buttons{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+body.host-folder-page .host-firmware-buttons button[aria-pressed="true"]{box-shadow:inset 0 0 0 2px #d6ffeb,0 0 0 2px #579d7b;position:relative}body.host-folder-page .host-firmware-buttons button[aria-pressed="true"]::after{content:"✓";margin-left:8px}
+
+.host-firmware-buttons button[hidden]{display:none!important}
+
+.host-folder-page .host-firmware-control[hidden]{display:none!important}

@@ -1,0 +1,25 @@
+{
+  "name": "whatwhatboy - Game Cheats & Mods",
+  "short_name": "whatwhatboy",
+  "description": "Free game cheats, mods, and tools for PC and console games",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "utilities", "entertainment"]
+}

@@ -1,0 +1,489 @@
+{
+  "resources": [
+    {
+      "id": "injector",
+      "group": "injector",
+      "name": "GSC Injector · no PC needed",
+      "description": "T7 GSC Injector plugin for Black Ops 3 on PS4.",
+      "downloads": [
+        {
+          "label": "Download Injector",
+          "filename": "T7_GSC_Injector.prx",
+          "url": "https://cdn.discordapp.com/attachments/1559295386756194445/1559295387091730582/T7_GSC_Injector.prx"
+        }
+      ],
+      "source": {
+        "postTitle": "Injector (thru game) no need pc for inject",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1559295386756194445",
+        "capturedAt": "2026-11-02"
+      },
+      "guideBlocks": [
+        {
+          "type": "steps",
+          "title": "In-game injector setup from the source post",
+          "items": [
+            {
+              "title": "Place the plugin",
+              "text": "Put T7_GSC_Injector.prx in /data/GoldHEN/plugins/."
+            },
+            {
+              "title": "Register it for your game",
+              "text": "Add /data/GoldHEN/plugins/T7_GSC_Injector.prx under the section matching your installed BO3 CUSA in /data/GoldHEN/plugins.ini. Merge this with your existing configuration."
+            },
+            {
+              "title": "Launch BO3 once",
+              "text": "The post says the first launch creates /data/T7 GSC Injector/."
+            },
+            {
+              "title": "Copy menu files",
+              "text": "Place the extracted menu files in /data/T7 GSC Injector/. The poster reports that the MuzzMan menus work; other menus were not all tested."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "muzzman",
+      "group": "packs",
+      "name": "MuzzMan BO3 Menu Pack",
+      "description": "Zombies and Multiplayer GSC menus for a compatible injector.",
+      "downloads": [
+        {
+          "label": "Download Pack",
+          "filename": "MuzzMan_Bo3_Menu_Pack.zip",
+          "url": "https://cdn.discordapp.com/attachments/1559677833985654887/1559677834136526878/MuzzMan_Bo3_Menu_Pack.zip"
+        }
+      ],
+      "source": {
+        "postTitle": "Muzzman menu pack",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1559677833985654887",
+        "capturedAt": "2026-11-02"
+      },
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "text": "The source describes this as a Multiplayer and Zombies menu pack compatible with the posted in-game injector or another compatible injector. For the T7 injector setup shown here, extract the scripts from the ZIP before copying them to its injector directory."
+        }
+      ]
+    },
+    {
+      "id": "daybreak",
+      "group": "zombies",
+      "name": "DayBreak ZM",
+      "image": "daybreak.png",
+      "downloads": [
+        {
+          "label": "Download SPRX Archive",
+          "url": "https://www.mediafire.com/file/7530nrfa9qclu63/BO3_ZM_DayBreak-SPRX.rar/file"
+        },
+        {
+          "label": "Download CUSA02624 ZIP",
+          "filename": "Bo3_ZM_DayBreakCUSA02624.zip",
+          "url": "https://cdn.discordapp.com/attachments/1566180562220351518/1566191799041659131/Bo3_ZM_DayBreakCUSA02624.zip"
+        },
+        {
+          "label": "Download V1.1.2 SPRX archive",
+          "url": "https://cdn.discordapp.com/attachments/1566180562220351518/1566180562836787232/BO3_ZM_DayBreak-SPRX.rar"
+        }
+      ],
+      "source": {
+        "postTitle": "DayBreak",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1560054428738920561",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/daybreak.png",
+          "caption": "DayBreak ZM supplied preview"
+        }
+      ],
+      "sources": [
+        {
+          "postTitle": "DayBreak",
+          "postUrl": "https://discord.com/channels/1528329794947776572/1560054428738920561",
+          "capturedAt": "2026-11-02"
+        },
+        {
+          "postTitle": "DayBreak",
+          "postUrl": "https://discord.com/channels/1528329794947776572/1566180562220351518",
+          "capturedAt": "2026-11-02"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "text": "The forum contains an original SPRX archive, a later SPRX upload, and a reply supplying a ZIP labeled CUSA02624. Match the downloaded build to its own included notes and your installed title ID."
+        },
+        {
+          "type": "paragraph",
+          "title": "Later upload: documented build",
+          "text": "The later SPRX archive README identifies DayBreak V1.1.2 for BO3 game update 1.33. It has separate CUSA02624 and CUSA02290 folders. These notes apply to that later upload; the original archive and the separate CUSA02624 reply ZIP remain available."
+        },
+        {
+          "type": "steps",
+          "title": "PS4 setup described in the later archive",
+          "items": [
+            {
+              "title": "Choose the matching folder",
+              "text": "Confirm your installed BO3 title ID and update. Use the SPRX in the folder for your own title ID."
+            },
+            {
+              "title": "Copy and register the plugin",
+              "text": "Place DayBreak.sprx in /data/GoldHEN/plugins/ and add that exact path only under the matching CUSA section in /data/GoldHEN/plugins.ini. Preserve existing entries."
+            },
+            {
+              "title": "Restart the game",
+              "text": "Restart BO3. After “Press X to start”, the archive says to choose Yes at “Would you like to load DayBreak ZM SPRX?”."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "title": "Example plugin path",
+          "text": "/data/GoldHEN/plugins/DayBreak.sprx"
+        },
+        {
+          "type": "paragraph",
+          "title": "Check the supplied configuration",
+          "text": "The README examples hardcode CUSA02290 even inside the CUSA02624 folder. Use your installed game title ID. The included INI also lists unrelated plugins; merge only your own DayBreak entry."
+        },
+        {
+          "type": "paragraph",
+          "title": "PS5 notes supplied by the archive",
+          "text": "For a matching NexHEN setup, the README says to place DayBreak.sprx in /data/nexHEN/plugins/. Add its exact path under your installed game title ID in NexHEN’s plugins.ini. Append ?autoload=true to the path for autoload, or leave it off and use NexHEN’s Plugin Loader. Start BO3 and accept the DayBreak loading prompt. Console compatibility has not been independently verified."
+        },
+        {
+          "type": "paragraph",
+          "title": "Loading and troubleshooting notes",
+          "text": "For NexHEN autoload, the author says the load prompt may take up to 20 seconds at the main menu. If it does not appear, check the exact plugin path, your game title/update and duplicate INI entries. The README suggests trying DayBreak by itself when another BO3 plugin is loaded."
+        },
+        {
+          "type": "paragraph",
+          "text": "DayBreak SPRX creator: XeX Poiiison. These version-specific steps and controls come from the later archive’s README."
+        }
+      ],
+      "controls": [
+        {
+          "input": "L1 + R1",
+          "action": "Open the menu"
+        },
+        {
+          "input": "D-pad",
+          "action": "Move through options"
+        },
+        {
+          "input": "X",
+          "action": "Select"
+        },
+        {
+          "input": "Circle",
+          "action": "Go back"
+        },
+        {
+          "input": "Left / Right",
+          "action": "Change values"
+        },
+        {
+          "input": "Hold L1, then tap R1; or L1 + Triangle",
+          "action": "Open the verified-player menu"
+        }
+      ]
+    },
+    {
+      "id": "encore-zm",
+      "group": "zombies",
+      "name": "EnCoRe v14.2 ZM",
+      "image": "encore-zombies.png",
+      "downloads": [
+        {
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/x5ydn8kn563ogrf/EnCoReV14.2+Zombies.rar/file"
+        }
+      ],
+      "source": {
+        "postTitle": "EnCoRe v14.2",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1564369717534261328",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/encore-zombies.png",
+          "caption": "EnCoRe v14.2 ZM supplied preview"
+        }
+      ]
+    },
+    {
+      "id": "purple-lake",
+      "group": "zombies",
+      "name": "Purple Lake ZM",
+      "image": "purple-lake.png",
+      "downloads": [
+        {
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/50z4u3sltum66vo/BO3_Purple_Lake_PS4.rar/file"
+        }
+      ],
+      "source": {
+        "postTitle": "Purple Lake",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1564361449260716173",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/purple-lake.png",
+          "caption": "Purple Lake ZM supplied preview"
+        }
+      ],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=oTmhIk6ZCA8&t=9s",
+          "title": "Purple Lake demonstration"
+        }
+      ]
+    },
+    {
+      "id": "frostbite",
+      "group": "zombies",
+      "name": "Frostbite v1.3 ZM",
+      "image": "frostbite.png",
+      "description": "Supplied archive is named Frostbite v1.1.3 PS4 Version.",
+      "downloads": [
+        {
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/2a9sbiub0lzsyih/Frostbite+v1.1.3+PS4+Version.rar/file"
+        }
+      ],
+      "source": {
+        "postTitle": "Frostbite v1.3",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1564990579819946075",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/frostbite.png",
+          "caption": "Frostbite v1.3 ZM supplied preview"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "text": "The post and video are titled Frostbite v1.3; the supplied archive is named Frostbite v1.1.3 PS4 Version. The original naming is retained."
+        }
+      ],
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=QyVQd932NI8&t=11s",
+          "title": "Frostbite demonstration"
+        }
+      ]
+    },
+    {
+      "id": "encore-mp",
+      "group": "multiplayer",
+      "name": "EnCoReV13.2",
+      "image": "encore-multiplayer.png",
+      "downloads": [
+        {
+          "label": "Download",
+          "filename": "MP-Synergy.gsc",
+          "url": "https://cdn.discordapp.com/attachments/1565319709455548477/1565319710361526282/MP-Synergy.gsc"
+        }
+      ],
+      "source": {
+        "postTitle": "EnCoReV13.2",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565319709455548477",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/encore-multiplayer.png",
+          "caption": "EnCoReV13.2 supplied preview"
+        }
+      ],
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "text": "The EnCoReV13.2 post supplies the file MP-Synergy.gsc. This is the attachment supplied with that post."
+        }
+      ]
+    },
+    {
+      "id": "whiteshadow",
+      "group": "multiplayer",
+      "name": "WhiteShadow8500 · Recovery Menu",
+      "image": "whiteshadow8500.png",
+      "downloads": [
+        {
+          "label": "Download",
+          "filename": "WhiteShadow8500_MP_Menu.gscc",
+          "url": "https://cdn.discordapp.com/attachments/1565050587735785533/1565050588897611836/WhiteShadow8500_MP_Menu.gscc"
+        }
+      ],
+      "source": {
+        "postTitle": "WhiteShadow8500 [Recovery Menu]",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565050587735785533",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/whiteshadow8500.png",
+          "caption": "WhiteShadow8500 · Recovery Menu supplied preview"
+        }
+      ]
+    },
+    {
+      "id": "synergy",
+      "group": "multiplayer",
+      "name": "Synergy",
+      "image": "synergy.png",
+      "downloads": [
+        {
+          "label": "Download",
+          "url": "https://www.mediafire.com/file/xyq4ma0emclt0vu/BO3_Synergy_PS4.rar/file"
+        }
+      ],
+      "source": {
+        "postTitle": "Synergy",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1564991264582271216",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/synergy.png",
+          "caption": "Synergy supplied preview",
+          "display": "/assets/images/ps4-ps5/edited/bo3-synergy-image.png"
+        }
+      ]
+    },
+    {
+      "id": "matrix",
+      "group": "both",
+      "name": "MatrixMods PS4",
+      "image": "matrixmods.png",
+      "downloads": [
+        {
+          "label": "Download",
+          "filename": "MatrixMenusPS4.rar",
+          "url": "https://cdn.discordapp.com/attachments/1565343630321909790/1565343631374557245/MatrixMenusPS4.rar"
+        }
+      ],
+      "source": {
+        "postTitle": "MatrixMods",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565343630321909790",
+        "capturedAt": "2026-11-02"
+      },
+      "images": [
+        {
+          "original": "/assets/images/ps4-bo3/matrixmods.png",
+          "caption": "MatrixMods PS4 supplied preview"
+        }
+      ],
+      "compatibilityText": "The source post specifies BO3 updates 1.26 and 1.00."
+    },
+    {
+      "id": "devolution",
+      "group": "zombies",
+      "name": "Devolution V1 ZM",
+      "source": {
+        "postTitle": "Devolution V1",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565063857750409327",
+        "capturedAt": "2026-11-02"
+      },
+      "downloads": [
+        {
+          "label": "Download",
+          "filename": "DevolutionV1-ZM.gscc",
+          "url": "https://cdn.discordapp.com/attachments/1565063857750409327/1565063859243450599/DevolutionV1-ZM.gscc"
+        }
+      ],
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo3-devolution-v1-image.png",
+          "display": "/assets/images/ps4-ps5/edited/bo3-devolution-v1-image.png",
+          "caption": "Devolution V1 Zombies menu preview"
+        }
+      ]
+    },
+    {
+      "id": "muzzman-recovery",
+      "group": "multiplayer",
+      "name": "MuzzMan V1 · Recovery Menu",
+      "source": {
+        "postTitle": "MuzzMan V1 [Recovery Menu]",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1565049374004744243",
+        "capturedAt": "2026-11-02"
+      },
+      "downloads": [
+        {
+          "label": "Download",
+          "filename": "BO3_MuzzMan_Public_MP_Lua_Menu.gscc",
+          "url": "https://cdn.discordapp.com/attachments/1565049374004744243/1565049375191990382/BO3_MuzzMan_Public_MP_Lua_Menu.gscc"
+        }
+      ],
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo3-muzzman-recovery-image.png",
+          "display": "/assets/images/ps4-ps5/edited/bo3-muzzman-recovery-image.png",
+          "caption": "MuzzMan V1 Multiplayer recovery menu preview"
+        }
+      ]
+    },
+    {
+      "id": "custom-maps-core",
+      "group": "zombies",
+      "name": "IronManArsenal · core mod",
+      "compatibilityText": "The source post says BO3 custom maps 3.00 are required. It does not identify a console firmware or installation method.",
+      "source": {
+        "postTitle": "Require bo3 custom maps 3.00",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1559744917767725136",
+        "capturedAt": "2026-11-02"
+      },
+      "downloads": [
+        {
+          "label": "Download",
+          "filename": "core_mod.zip",
+          "url": "https://cdn.discordapp.com/attachments/1559744917767725136/1559744924340060200/core_mod.zip"
+        }
+      ],
+      "description": "A workshop-style mod asset pack whose metadata identifies IronManArsenal and Zombies.",
+      "guideBlocks": [
+        {
+          "type": "paragraph",
+          "text": "The source post requires BO3 custom maps 3.00. The archive is a workshop-style mod pack; the captured post provides no console installation steps. Its presence in the PS4/PS5 forum does not establish a supported console loading method."
+        }
+      ],
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo3-custom-maps-3-00-image.jpg",
+          "caption": "IronManArsenal custom-mod preview supplied with the post"
+        }
+      ]
+    },
+    {
+      "id": "luna",
+      "group": "multiplayer",
+      "name": "Luna",
+      "description": "The archive contains LUNA_MP_PS4.gscc, a Multiplayer-named compiled script. Its supplied screenshot shows Zombies; mode compatibility is unconfirmed.",
+      "source": {
+        "postTitle": "Luna",
+        "postUrl": "https://discord.com/channels/1528329794947776572/1534847374038405160",
+        "capturedAt": "2026-11-02"
+      },
+      "downloads": [
+        {
+          "label": "Download",
+          "filename": "LUNA_MP_PS4.rar",
+          "url": "https://www.mediafire.com/file/4szber4u9iffxsh/LUNA_MP_PS4.rar/file"
+        }
+      ],
+      "images": [
+        {
+          "original": "/assets/images/ps4-ps5/originals/bo3-luna-image.png",
+          "caption": "Luna screenshot supplied with the post"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "captureDate": "2026-11-02"
+}

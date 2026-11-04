@@ -1,0 +1,447 @@
+{
+  "version": "clang version 19.1.5\nTarget: x86_64-pc-windows-msvc\nThread model: posix\nInstalledDir: C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin\n",
+  "tools": "Official installed Microsoft Visual Studio LLVM19.1.5; x86_64 ELF target, no emitted output executed.",
+  "records": [
+    {
+      "name": "700",
+      "commands": [
+        {
+          "tool": "clang.exe",
+          "args": [
+            "--target=x86_64-unknown-elf",
+            "-O3",
+            "-std=gnu11",
+            "-Wno-int-conversion",
+            "-masm=intel",
+            "-ffreestanding",
+            "-fno-stack-protector",
+            "-fcf-protection=none",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-red-zone",
+            "-fno-vectorize",
+            "-fno-slp-vectorize",
+            "-c",
+            "700.c",
+            "-o",
+            "700.o"
+          ]
+        },
+        {
+          "tool": "ld.lld.exe",
+          "args": [
+            "-T",
+            "script.ld",
+            "-e",
+            "kpatch",
+            "--no-undefined",
+            "700.o",
+            "-o",
+            "700.elf"
+          ]
+        },
+        {
+          "tool": "llvm-objcopy.exe",
+          "args": [
+            "-O",
+            "binary",
+            "--only-section=.text",
+            "700.elf",
+            "700.bin"
+          ]
+        }
+      ],
+      "bytes": 744,
+      "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/700.c",
+      "sha256": "7702a57e2c11929439de53fe885ca1357e2c33ee824b3540a42221619c56725e",
+      "elfBytes": 5400,
+      "elfSHA256": "bcd4a797e98fb696581edd1f3f4e9d3243c6254121d15d88d2de9936de7d176b",
+      "checks": {
+        "elf64LE": true,
+        "machine": "x86-64",
+        "entry": 0,
+        "textOnly": true,
+        "noRelocations": true,
+        "noRequiredDataSections": true,
+        "outputExecuted": false
+      }
+    },
+    {
+      "name": "750",
+      "commands": [
+        {
+          "tool": "clang.exe",
+          "args": [
+            "--target=x86_64-unknown-elf",
+            "-O3",
+            "-std=gnu11",
+            "-Wno-int-conversion",
+            "-masm=intel",
+            "-ffreestanding",
+            "-fno-stack-protector",
+            "-fcf-protection=none",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-red-zone",
+            "-fno-vectorize",
+            "-fno-slp-vectorize",
+            "-c",
+            "750.c",
+            "-o",
+            "750.o"
+          ]
+        },
+        {
+          "tool": "ld.lld.exe",
+          "args": [
+            "-T",
+            "script.ld",
+            "-e",
+            "kpatch",
+            "--no-undefined",
+            "750.o",
+            "-o",
+            "750.elf"
+          ]
+        },
+        {
+          "tool": "llvm-objcopy.exe",
+          "args": [
+            "-O",
+            "binary",
+            "--only-section=.text",
+            "750.elf",
+            "750.bin"
+          ]
+        }
+      ],
+      "bytes": 916,
+      "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/750.c",
+      "sha256": "41b6655c6926ea345d451d5d94bdd701949d96677b5e917a888a12c49a88db66",
+      "elfBytes": 5568,
+      "elfSHA256": "4e6397c146c3fe7c385e639aedffc775af38f999fa34bbba3d87836994547e93",
+      "checks": {
+        "elf64LE": true,
+        "machine": "x86-64",
+        "entry": 0,
+        "textOnly": true,
+        "noRelocations": true,
+        "noRequiredDataSections": true,
+        "outputExecuted": false
+      }
+    },
+    {
+      "name": "800",
+      "commands": [
+        {
+          "tool": "clang.exe",
+          "args": [
+            "--target=x86_64-unknown-elf",
+            "-O3",
+            "-std=gnu11",
+            "-Wno-int-conversion",
+            "-masm=intel",
+            "-ffreestanding",
+            "-fno-stack-protector",
+            "-fcf-protection=none",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-red-zone",
+            "-fno-vectorize",
+            "-fno-slp-vectorize",
+            "-c",
+            "800.c",
+            "-o",
+            "800.o"
+          ]
+        },
+        {
+          "tool": "ld.lld.exe",
+          "args": [
+            "-T",
+            "script.ld",
+            "-e",
+            "kpatch",
+            "--no-undefined",
+            "800.o",
+            "-o",
+            "800.elf"
+          ]
+        },
+        {
+          "tool": "llvm-objcopy.exe",
+          "args": [
+            "-O",
+            "binary",
+            "--only-section=.text",
+            "800.elf",
+            "800.bin"
+          ]
+        }
+      ],
+      "bytes": 904,
+      "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/800.c",
+      "sha256": "d20dc58d4f1c45b0adc7345aa03acc3072c9ca177006178cae7fbf70c922dd41",
+      "elfBytes": 5560,
+      "elfSHA256": "3fc0462675a274f15377d4962e7a2d6dc70aea19c0430901a64d64a4784842da",
+      "checks": {
+        "elf64LE": true,
+        "machine": "x86-64",
+        "entry": 0,
+        "textOnly": true,
+        "noRelocations": true,
+        "noRequiredDataSections": true,
+        "outputExecuted": false
+      }
+    },
+    {
+      "name": "850",
+      "commands": [
+        {
+          "tool": "clang.exe",
+          "args": [
+            "--target=x86_64-unknown-elf",
+            "-O3",
+            "-std=gnu11",
+            "-Wno-int-conversion",
+            "-masm=intel",
+            "-ffreestanding",
+            "-fno-stack-protector",
+            "-fcf-protection=none",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-red-zone",
+            "-fno-vectorize",
+            "-fno-slp-vectorize",
+            "-c",
+            "850.c",
+            "-o",
+            "850.o"
+          ]
+        },
+        {
+          "tool": "ld.lld.exe",
+          "args": [
+            "-T",
+            "script.ld",
+            "-e",
+            "kpatch",
+            "--no-undefined",
+            "850.o",
+            "-o",
+            "850.elf"
+          ]
+        },
+        {
+          "tool": "llvm-objcopy.exe",
+          "args": [
+            "-O",
+            "binary",
+            "--only-section=.text",
+            "850.elf",
+            "850.bin"
+          ]
+        }
+      ],
+      "bytes": 904,
+      "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/850.c",
+      "sha256": "f2f12ba78d25e6fa9a5a63ee190baa68c86efc92f7de126e132c4d5fd418e982",
+      "elfBytes": 5560,
+      "elfSHA256": "f083a7b36a70e722967bad9ebeeb2aca446ab8fdb611502c9a6e7672d110db10",
+      "checks": {
+        "elf64LE": true,
+        "machine": "x86-64",
+        "entry": 0,
+        "textOnly": true,
+        "noRelocations": true,
+        "noRequiredDataSections": true,
+        "outputExecuted": false
+      }
+    },
+    {
+      "name": "900",
+      "commands": [
+        {
+          "tool": "clang.exe",
+          "args": [
+            "--target=x86_64-unknown-elf",
+            "-O3",
+            "-std=gnu11",
+            "-Wno-int-conversion",
+            "-masm=intel",
+            "-ffreestanding",
+            "-fno-stack-protector",
+            "-fcf-protection=none",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-red-zone",
+            "-fno-vectorize",
+            "-fno-slp-vectorize",
+            "-c",
+            "900.c",
+            "-o",
+            "900.o"
+          ]
+        },
+        {
+          "tool": "ld.lld.exe",
+          "args": [
+            "-T",
+            "script.ld",
+            "-e",
+            "kpatch",
+            "--no-undefined",
+            "900.o",
+            "-o",
+            "900.elf"
+          ]
+        },
+        {
+          "tool": "llvm-objcopy.exe",
+          "args": [
+            "-O",
+            "binary",
+            "--only-section=.text",
+            "900.elf",
+            "900.bin"
+          ]
+        }
+      ],
+      "bytes": 904,
+      "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/900.c",
+      "sha256": "7cc4a5a38fef3b9872ee9fbf84e48e0c92a5e885e70c54dd18ea322af0a6a0a4",
+      "elfBytes": 5560,
+      "elfSHA256": "a4a6403f1edaada7b4de342b53f40241438ea4f2ea8d74120d4171a1ec40ad14",
+      "checks": {
+        "elf64LE": true,
+        "machine": "x86-64",
+        "entry": 0,
+        "textOnly": true,
+        "noRelocations": true,
+        "noRequiredDataSections": true,
+        "outputExecuted": false
+      }
+    },
+    {
+      "name": "903",
+      "commands": [
+        {
+          "tool": "clang.exe",
+          "args": [
+            "--target=x86_64-unknown-elf",
+            "-O3",
+            "-std=gnu11",
+            "-Wno-int-conversion",
+            "-masm=intel",
+            "-ffreestanding",
+            "-fno-stack-protector",
+            "-fcf-protection=none",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-red-zone",
+            "-fno-vectorize",
+            "-fno-slp-vectorize",
+            "-c",
+            "903.c",
+            "-o",
+            "903.o"
+          ]
+        },
+        {
+          "tool": "ld.lld.exe",
+          "args": [
+            "-T",
+            "script.ld",
+            "-e",
+            "kpatch",
+            "--no-undefined",
+            "903.o",
+            "-o",
+            "903.elf"
+          ]
+        },
+        {
+          "tool": "llvm-objcopy.exe",
+          "args": [
+            "-O",
+            "binary",
+            "--only-section=.text",
+            "903.elf",
+            "903.bin"
+          ]
+        }
+      ],
+      "bytes": 904,
+      "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/903.c",
+      "sha256": "7a02684c7cfc5bd667519a6dc33437aad8084e266929ed8aad6e20089755faf8",
+      "elfBytes": 5560,
+      "elfSHA256": "9059cd087b46231663846639cb44d40abadb989f5f42702642fd36d39d41758c",
+      "checks": {
+        "elf64LE": true,
+        "machine": "x86-64",
+        "entry": 0,
+        "textOnly": true,
+        "noRelocations": true,
+        "noRequiredDataSections": true,
+        "outputExecuted": false
+      }
+    },
+    {
+      "name": "950",
+      "commands": [
+        {
+          "tool": "clang.exe",
+          "args": [
+            "--target=x86_64-unknown-elf",
+            "-O3",
+            "-std=gnu11",
+            "-Wno-int-conversion",
+            "-masm=intel",
+            "-ffreestanding",
+            "-fno-stack-protector",
+            "-fcf-protection=none",
+            "-fno-asynchronous-unwind-tables",
+            "-mno-red-zone",
+            "-fno-vectorize",
+            "-fno-slp-vectorize",
+            "-c",
+            "950.c",
+            "-o",
+            "950.o"
+          ]
+        },
+        {
+          "tool": "ld.lld.exe",
+          "args": [
+            "-T",
+            "script.ld",
+            "-e",
+            "kpatch",
+            "--no-undefined",
+            "950.o",
+            "-o",
+            "950.elf"
+          ]
+        },
+        {
+          "tool": "llvm-objcopy.exe",
+          "args": [
+            "-O",
+            "binary",
+            "--only-section=.text",
+            "950.elf",
+            "950.bin"
+          ]
+        }
+      ],
+      "bytes": 904,
+      "source": "https://github.com/Al-Azif/psfree-lapse/blob/08ecf038c94aa99b56e46c9f32e2e486f83656b6/src/kpatch/950.c",
+      "sha256": "7da78fd8bca1e215160a82976bfd62b89ca90bed8efaa44c5d99c0cf59a11e35",
+      "elfBytes": 5560,
+      "elfSHA256": "cb150c18e48dc0f68214271bde7c9eb015a4e5c28db06156b183a58f690d3c15",
+      "checks": {
+        "elf64LE": true,
+        "machine": "x86-64",
+        "entry": 0,
+        "textOnly": true,
+        "noRelocations": true,
+        "noRequiredDataSections": true,
+        "outputExecuted": false
+      }
+    }
+  ]
+}

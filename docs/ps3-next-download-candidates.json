@@ -1,0 +1,442 @@
+{
+  "checkedAt": "2026-11-02T05:43:45.230Z",
+  "scope": "Bounded PS3 follow-on archive candidates. Public landing HTML and attachment HEAD metadata only; no archive bytes downloaded.",
+  "candidates": [
+    {
+      "resourceId": "bo2-fury-v2-hen",
+      "name": "Fury V2 · HEN",
+      "url": "https://www.mediafire.com/file/l8llswc93ht75pc/FuryV2_Hen_SPRX.rar/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "gameId": "black-ops-2",
+      "category": "sprx",
+      "version": "V2",
+      "gameUpdate": "not stated",
+      "compatibility": "HEN explicit in link and filename; exact game update/region not supplied.",
+      "checkedAt": "2026-11-02T05:43:44.204Z",
+      "landingStatus": 200,
+      "landingTitle": "FuryV2_Hen_SPRX",
+      "advertisedSizeText": "7.13MB",
+      "advertisedFormat": "Compressed Archive",
+      "attachmentStatus": 200,
+      "exactBytes": 7477892,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"FuryV2_Hen_SPRX.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "originalPreserved": true,
+      "downloadedByProbe": false,
+      "extractionExpectation": {
+        "status": "not inspected",
+        "action": "Preserve the original; list and validate archive members; archive PS3-ready builds separately from Windows helpers, sources and documentation; do not execute files.",
+        "questions": [
+          "Identify SPRX and matching EBOOT variants without merging them with Fury V3.",
+          "Read version, HEN, title-ID and title-update instructions."
+        ]
+      },
+      "suggestedJob": {
+        "id": "bo2-fury-v2",
+        "resourceId": "bo2-fury-v2-hen",
+        "title": "Fury V2 · HEN",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "Call of Duty",
+          "Black Ops 2"
+        ],
+        "project": "Fury V2 · HEN",
+        "version": "V2",
+        "gameVersion": "not stated",
+        "url": "https://www.mediafire.com/file/l8llswc93ht75pc/FuryV2_Hen_SPRX.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+        "pages": [
+          "console/ps3/mods/call-of-duty/black-ops-2/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "FuryV2_Hen_SPRX.rar",
+        "maxBytes": 16777216,
+        "expectedBytes": 7477892,
+        "extractionLimits": {
+          "maxDepth": 2,
+          "maxExpandedBytes": 805306368,
+          "maxMemberBytes": 268435456,
+          "maxMembers": 5000,
+          "timeoutMs": 300000,
+          "maxTotalExtractedBytes": 805306368
+        },
+        "verifyArchive": true
+      }
+    },
+    {
+      "resourceId": "bo2-infarcted-v1",
+      "name": "INFARCTED V1 · HEN / CFW",
+      "url": "https://www.mediafire.com/file/wt4rbopyw5esuw8/INFARCTED_SPRX.rar/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+      "gameId": "black-ops-2",
+      "category": "sprx",
+      "version": "V1",
+      "gameUpdate": "not stated",
+      "compatibility": "Source explicitly labels V1 HEN/CFW and ZM/MP. Exact regions, update and CEX/DEX are not provided.",
+      "checkedAt": "2026-11-02T05:43:44.231Z",
+      "landingStatus": 200,
+      "landingTitle": "INFARCTED SPRX",
+      "advertisedSizeText": "27.49MB",
+      "advertisedFormat": "Compressed Archive",
+      "attachmentStatus": 200,
+      "exactBytes": 28824499,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"INFARCTED SPRX.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "originalPreserved": true,
+      "downloadedByProbe": false,
+      "extractionExpectation": {
+        "status": "not inspected",
+        "action": "Preserve the original; list and validate archive members; archive PS3-ready builds separately from Windows helpers, sources and documentation; do not execute files.",
+        "questions": [
+          "Identify Zombies versus Multiplayer and separate HEN/CFW variant folders.",
+          "Read exact title-update and region requirements; do not infer V2 compatibility."
+        ]
+      },
+      "suggestedJob": {
+        "id": "bo2-infarcted-v1",
+        "resourceId": "bo2-infarcted-v1",
+        "title": "INFARCTED V1 · HEN / CFW",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "Call of Duty",
+          "Black Ops 2"
+        ],
+        "project": "INFARCTED V1 · HEN / CFW",
+        "version": "V1",
+        "gameVersion": "not stated",
+        "url": "https://www.mediafire.com/file/wt4rbopyw5esuw8/INFARCTED_SPRX.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo2/bo2-sprx",
+        "pages": [
+          "console/ps3/mods/call-of-duty/black-ops-2/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "INFARCTED_SPRX.rar",
+        "maxBytes": 50331648,
+        "expectedBytes": 28824499,
+        "extractionLimits": {
+          "maxDepth": 2,
+          "maxExpandedBytes": 805306368,
+          "maxMemberBytes": 268435456,
+          "maxMembers": 5000,
+          "timeoutMs": 300000,
+          "maxTotalExtractedBytes": 805306368
+        },
+        "verifyArchive": true
+      }
+    },
+    {
+      "resourceId": "gta-v-predator-v15",
+      "name": "Predator SPRX v15",
+      "url": "https://www.mediafire.com/file/9bq2xaqnt21h0e8/PREDATOR_sPRX_v15.rar/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "category": "sprx",
+      "version": "v15",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / DEX claimed by source button. Source showcase mentions 1.27 / 1.28; this catalogue is pinned to 1.27.",
+      "checkedAt": "2026-11-02T05:43:44.231Z",
+      "landingStatus": 200,
+      "landingTitle": "PREDATOR sPRX v15",
+      "advertisedSizeText": "11.71MB",
+      "advertisedFormat": "Compressed Archive",
+      "attachmentStatus": 200,
+      "exactBytes": 12274080,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"PREDATOR sPRX v15.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "originalPreserved": true,
+      "downloadedByProbe": false,
+      "extractionExpectation": {
+        "status": "not inspected",
+        "action": "Preserve the original; list and validate archive members; archive PS3-ready builds separately from Windows helpers, sources and documentation; do not execute files.",
+        "questions": [
+          "Confirm actual archive identity/version and separate HEN/DEX EBOOT or SPRX branches.",
+          "Keep source GTA V 1.27 pin; the 1.28 showcase claim does not change the pinned entry."
+        ]
+      },
+      "suggestedJob": {
+        "id": "gta5-predator-v15",
+        "resourceId": "gta-v-predator-v15",
+        "title": "Predator SPRX v15",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "GTA5"
+        ],
+        "project": "Predator SPRX v15",
+        "version": "v15",
+        "gameVersion": "1.27",
+        "url": "https://www.mediafire.com/file/9bq2xaqnt21h0e8/PREDATOR_sPRX_v15.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+        "pages": [
+          "console/ps3/mods/gta-v/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "PREDATOR_sPRX_v15.rar",
+        "maxBytes": 25165824,
+        "expectedBytes": 12274080,
+        "extractionLimits": {
+          "maxDepth": 2,
+          "maxExpandedBytes": 805306368,
+          "maxMemberBytes": 268435456,
+          "maxMembers": 5000,
+          "timeoutMs": 300000,
+          "maxTotalExtractedBytes": 805306368
+        },
+        "verifyArchive": true
+      }
+    },
+    {
+      "resourceId": "gta-v-joker-v4",
+      "name": "THE-JOK3R-CREW",
+      "url": "https://www.mediafire.com/file/kldak53rz0kspyv/THE-JOK3R-CREW-V4.rar/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v4",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in source showcase; button identifies GTA RE:V 1.27, BLES / BLUS / NPUB / NPEB.",
+      "checkedAt": "2026-11-02T05:43:44.232Z",
+      "landingStatus": 200,
+      "landingTitle": "THE-JOK3R-CREW-V4",
+      "advertisedSizeText": "77.52MB",
+      "advertisedFormat": "Compressed Archive",
+      "attachmentStatus": 200,
+      "exactBytes": 81283141,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"THE-JOK3R-CREW-V4.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "originalPreserved": true,
+      "downloadedByProbe": false,
+      "extractionExpectation": {
+        "status": "not inspected",
+        "action": "Preserve the original; list and validate archive members; archive PS3-ready builds separately from Windows helpers, sources and documentation; do not execute files.",
+        "questions": [
+          "Separate BLES/BLUS/NPUB/NPEB and HEN/CFW branches actually present.",
+          "Inspect readmes and package headers; preserve archive and edition-specific loaders independently."
+        ]
+      },
+      "suggestedJob": {
+        "id": "gta5-joker-v4",
+        "resourceId": "gta-v-joker-v4",
+        "title": "THE-JOK3R-CREW",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "GTA5"
+        ],
+        "project": "THE-JOK3R-CREW",
+        "version": "v4",
+        "gameVersion": "1.27",
+        "url": "https://www.mediafire.com/file/kldak53rz0kspyv/THE-JOK3R-CREW-V4.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+        "pages": [
+          "console/ps3/mods/gta-v/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "THE-JOK3R-CREW-V4.rar",
+        "maxBytes": 100663296,
+        "expectedBytes": 81283141,
+        "extractionLimits": {
+          "maxDepth": 2,
+          "maxExpandedBytes": 805306368,
+          "maxMemberBytes": 268435456,
+          "maxMembers": 5000,
+          "timeoutMs": 300000,
+          "maxTotalExtractedBytes": 805306368
+        },
+        "verifyArchive": true
+      }
+    },
+    {
+      "resourceId": "bo1-kebab-engine",
+      "name": "Kebab Engine BO1 (identity requires archive inspection)",
+      "url": "https://www.mediafire.com/file/v44gj2nhygwcqov/Kebab_Engine_BO1.rar/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+      "gameId": "black-ops-1",
+      "category": "sprx",
+      "version": "not stated",
+      "gameUpdate": "not stated",
+      "compatibility": "No per-file mode/update proof. Source embed heading is mislabeled Jo-Milk Playground V2; filename says Kebab Engine BO1.",
+      "checkedAt": "2026-11-02T05:43:44.233Z",
+      "landingStatus": 200,
+      "landingTitle": "Kebab Engine BO1",
+      "advertisedSizeText": "6.64MB",
+      "advertisedFormat": "Compressed Archive",
+      "attachmentStatus": 200,
+      "exactBytes": 6962764,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"Kebab Engine BO1.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "originalPreserved": true,
+      "downloadedByProbe": false,
+      "extractionExpectation": {
+        "status": "not inspected",
+        "action": "Preserve the original; list and validate archive members; archive PS3-ready builds separately from Windows helpers, sources and documentation; do not execute files.",
+        "questions": [
+          "Resolve the wrong Jo-Milk Playground heading using archive member names and README before making a normal menu card.",
+          "Record exact HEN/CEX/DEX/update requirements only when the preserved archive states them."
+        ]
+      },
+      "suggestedJob": {
+        "id": "bo1-kebab-engine",
+        "resourceId": "bo1-kebab-engine",
+        "title": "Kebab Engine BO1 (identity requires archive inspection)",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "Call of Duty",
+          "Black Ops 1"
+        ],
+        "project": "Kebab Engine BO1",
+        "version": "Unversioned",
+        "gameVersion": "not stated",
+        "url": "https://www.mediafire.com/file/v44gj2nhygwcqov/Kebab_Engine_BO1.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/cod-bo1/%CE%B1%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF-%CE%B1%CF%80%CF%8C-cod-bo1-sprx-menu",
+        "pages": [
+          "console/ps3/mods/call-of-duty/black-ops-1/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "Kebab_Engine_BO1.rar",
+        "maxBytes": 16777216,
+        "expectedBytes": 6962764,
+        "extractionLimits": {
+          "maxDepth": 2,
+          "maxExpandedBytes": 805306368,
+          "maxMemberBytes": 268435456,
+          "maxMembers": 5000,
+          "timeoutMs": 300000,
+          "maxTotalExtractedBytes": 805306368
+        },
+        "verifyArchive": true
+      },
+      "identityRequiresReview": true,
+      "publishOnlyAfterArchiveIdentityConfirmed": true
+    },
+    {
+      "resourceId": "gta-v-atck-manda-v1",
+      "name": "ATCK MANDA",
+      "url": "https://www.mediafire.com/file/wikyma3k1v53i58/ATCK_MANDA_V1.0-ModLoader.rar/file",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v1.0",
+      "gameUpdate": "1.27",
+      "compatibility": "CFW / HEN; GTA RE:V 1.27 in source showcase.",
+      "checkedAt": "2026-11-02T05:43:44.232Z",
+      "landingStatus": 200,
+      "landingTitle": "ATCK MANDA V1.0-ModLoader",
+      "advertisedSizeText": "129.39MB",
+      "advertisedFormat": "Compressed Archive",
+      "attachmentStatus": 200,
+      "exactBytes": 135671421,
+      "contentType": "application/x-rar",
+      "contentDisposition": "attachment; filename=\"ATCK MANDA V1.0-ModLoader.rar\"",
+      "readyForBoundedArchive": true,
+      "format": "RAR",
+      "originalPreserved": true,
+      "downloadedByProbe": false,
+      "extractionExpectation": {
+        "status": "not inspected",
+        "action": "Preserve the original; list and validate archive members; archive PS3-ready builds separately from Windows helpers, sources and documentation; do not execute files.",
+        "questions": [
+          "Inspect archive for PS3 ready packages or game data rather than inferring its contents.",
+          "Original exceeds current 95 MiB site mirror bound; retain on F and use only safely mirrored small members or a PS3-only LAN file server."
+        ]
+      },
+      "suggestedJob": {
+        "id": "gta5-atck-manda-v1",
+        "resourceId": "gta-v-atck-manda-v1",
+        "title": "ATCK MANDA",
+        "platform": "PS3",
+        "category": [
+          "Games",
+          "GTA5"
+        ],
+        "project": "ATCK MANDA",
+        "version": "v1.0",
+        "gameVersion": "1.27",
+        "url": "https://www.mediafire.com/file/wikyma3k1v53i58/ATCK_MANDA_V1.0-ModLoader.rar/file",
+        "sourcePage": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+        "pages": [
+          "console/ps3/mods/gta-v/index.html"
+        ],
+        "archiveRole": [
+          "Builds"
+        ],
+        "filename": "ATCK_MANDA_V1.0-ModLoader.rar",
+        "maxBytes": 167772160,
+        "expectedBytes": 135671421,
+        "extractionLimits": {
+          "maxDepth": 2,
+          "maxExpandedBytes": 805306368,
+          "maxMemberBytes": 268435456,
+          "maxMembers": 5000,
+          "timeoutMs": 300000,
+          "maxTotalExtractedBytes": 805306368
+        },
+        "verifyArchive": true
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "resourceId": "gta-iv-major-distribution",
+      "name": "Major Distribution v1.8",
+      "url": "https://mega.nz/file/RbxwTDJb#uSsu3AyUGxJtLmZ-ZHCJmefuvJnJm5xeVRHqRZWbP-k",
+      "status": 200,
+      "checkedAt": "2026-11-02T05:44:16.397Z",
+      "size": null,
+      "apiError": -6,
+      "hasPublicDownloadUrl": false,
+      "reason": "Mega metadata API returned -6 and no size/file metadata; no archive fetched. Current PS3 archive importer also has no Mega host/decryption support. Keep the source link and report retrieval unverified rather than claim a saved build.",
+      "readyForBoundedArchive": false
+    }
+  ],
+  "totalAdvertisedBytes": 272493797,
+  "knownArchivedAtProbe": [],
+  "localArchiveServingOpportunity": {
+    "currentBehavior": [
+      "scripts/archive-ps3-expansion.cjs deliberately omits site mirrors at or above 95 MiB.",
+      "scripts/build-ps3-browser-downloads.cjs requires a valid file.local site mirror, so large F-only PS3 packages are excluded from the console download list.",
+      "assets/ps3-browser-downloads.js can prepare documented webMAN download URLs from a chosen HTTP file-server base; it cannot itself expose F-drive files.",
+      "scripts/console-download-companion.cjs explicitly supports PS4/PS5 receiver protocols only and must not be reused as a claimed PS3 receiver."
+    ],
+    "boundedImplementation": "A separate read-only PS3 LAN archive server could stream only allowlisted PS3 Builds records from the private scoped inventory, including large PKGs, without copying them into the site or exposing any filesystem path in public JSON.",
+    "suggestedFeatures": [
+      "Short stable GET/HEAD routes keyed by resource ID and full or sufficiently unique content hash, keeping webMAN source URLs short.",
+      "Serve PS3-only HTML/plain links without requiring modern JavaScript; retain sizes, SHA-256, region and source links.",
+      "Range and Content-Length support for large-file/resume clients; reject invalid/multiple ranges deterministically.",
+      "Allowlist existing private inventory records and resolved files under F:/whatsite-backup-downloads-etc; no arbitrary path parameter or directory browsing.",
+      "Exclude Helpers, Windows, Source Code, Development, APK, Vita, PS4 and PS5; preserve original archives separately from extracted PS3 builds.",
+      "Optional documented webMAN download-only links; no install, execute, USB-mount detection or PS4 receiver assumptions.",
+      "Bind loopback by default; expose to the user-selected private LAN address/port when explicitly launched for their console."
+    ],
+    "evidenceFiles": [
+      "scripts/archive-ps3-expansion.cjs",
+      "scripts/build-ps3-browser-downloads.cjs",
+      "assets/ps3-browser-downloads.js",
+      "scripts/console-download-companion.cjs"
+    ],
+    "status": "Implementation opportunity only; no server or shared infrastructure changed."
+  }
+}

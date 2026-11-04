@@ -1,0 +1,138 @@
+{
+  "reviewed": "2026-11-02",
+  "scope": "original-xbox",
+  "resources": [
+    {
+      "id": "lithiumx",
+      "title": "LithiumX",
+      "group": "Dashboards",
+      "description": "A native nxdk dashboard with title browsing, artwork support and an FTP server.",
+      "setup": "Extract the complete folder to an applications directory on your existing homebrew-enabled Xbox, such as E:/Apps/LithiumX/. Launch default.xbe from your current dashboard. The first launch creates E:/UDATA/LithiumX/lithiumx.toml for search paths.",
+      "source": "https://github.com/Ryzee119/LithiumX",
+      "notes": "This original repository is archived. Its v0.9.7 notes fix cache clearing affecting E:/CACHE. Keep your existing dashboard and configuration; no boot-dashboard replacement is required.",
+      "version": "v0.9.7",
+      "release": "https://github.com/Ryzee119/LithiumX/releases/tag/v0.9.7",
+      "file": {
+        "name": "LithiumX.zip",
+        "version": "v0.9.7",
+        "bytes": 2918811,
+        "sha256": "2f6c514f08a8d79ac05653372291eeeb89d39df3d17c88f60c92fd6e2e80e2f2",
+        "sourceUrl": "https://github.com/Ryzee119/LithiumX/releases/download/v0.9.7/LithiumX.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/original-xbox/lithiumx/v0.9.7/LithiumX.zip",
+        "itemId": "original-xbox-lithiumx",
+        "platform": "Original Xbox",
+        "category": [
+          "Dashboards"
+        ]
+      },
+      "inspection": {
+        "crcPassed": true,
+        "entries": 2,
+        "executable": "bin\\default.xbe",
+        "magic": "XBEH",
+        "bytes": 3170304,
+        "sha256": "a6c0129771bed67f38ee8553428df486eba255c4ea95f056d4b0829d447c5bd3",
+        "sections": 4,
+        "headerBytes": 1465
+      }
+    },
+    {
+      "id": "nevolutionx",
+      "title": "NevolutionX",
+      "group": "Dashboards",
+      "description": "An original Xbox dashboard and application launcher built with nxdk. The release ZIP contains a native Xbox ISO.",
+      "setup": "Extract NevolutionX.iso from the ZIP, then use an Xbox XISO-aware tool on your PC to extract its complete application folder. Transfer default.xbe and all companion assets together to a separate directory, for example E:/Apps/NevolutionX/, and launch from your current dashboard. The project documents DHCP networking and an automatically started FTP server with xbox/xbox credentials.",
+      "source": "https://github.com/dracc/NevolutionX",
+      "notes": "The nevox_hdd.zip emulator HDD image is deliberately excluded. This is the native application ISO in its original ZIP, not an emulator HDD image or a directly installable folder ZIP.",
+      "version": "v0.2.1",
+      "release": "https://github.com/dracc/NevolutionX/releases/tag/v0.2.1",
+      "file": {
+        "name": "NevolutionX.zip",
+        "version": "v0.2.1",
+        "bytes": 3706500,
+        "sha256": "97a026b39adce1ddf74b89b21715610cd3cc406c1469d5341e953e642e67e06e",
+        "sourceUrl": "https://github.com/dracc/NevolutionX/releases/download/v0.2.1/NevolutionX.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/original-xbox/nevolutionx/v0.2.1/NevolutionX.zip",
+        "itemId": "original-xbox-nevolutionx",
+        "platform": "Original Xbox",
+        "category": [
+          "Dashboards"
+        ]
+      },
+      "inspection": {
+        "crcPassed": true,
+        "entries": 1,
+        "container": "Xbox ISO inside ZIP",
+        "iso": "NevolutionX.iso",
+        "executable": "default.xbe",
+        "magic": "XBEH",
+        "bytes": 2015232,
+        "sha256": "322af8ff3d476203e72a25db1477f81061c233d140402b69360957f49f898170",
+        "sections": 5,
+        "headerBytes": 1513
+      }
+    },
+    {
+      "id": "sdlpopx",
+      "title": "SDLPoPX",
+      "group": "Game ports",
+      "description": "The original Xbox port of the SDLPoP Prince of Persia engine.",
+      "setup": "Extract the complete Xbox release into a separate game folder, for example E:/Games/SDLPoPX/. Keep the supplied data and configuration beside default.xbe, then launch it from your existing dashboard.",
+      "source": "https://github.com/Ryzee119/SDLPoPX",
+      "notes": "Use the Xbox ZIP linked here. The similarly named Xbox-Homebrew/SDLPoP release is an APPX/UWP build, which is not an original Xbox XBE.",
+      "version": "v1.22",
+      "release": "https://github.com/Ryzee119/SDLPoP/releases/tag/v1.22",
+      "file": {
+        "name": "SDLPoP_Xbox.zip",
+        "version": "v1.22",
+        "bytes": 2138412,
+        "sha256": "086839e2f5748a9461e3aab9d72bac3b09b242c3f2982e4f9ed250aca52f87e2",
+        "sourceUrl": "https://github.com/Ryzee119/SDLPoP/releases/download/v1.22/SDLPoP_Xbox.zip",
+        "archiveRole": [
+          "Builds"
+        ],
+        "local": "/downloads/original-xbox/sdlpopx/v1.22/SDLPoP_Xbox.zip",
+        "itemId": "original-xbox-sdlpopx",
+        "platform": "Original Xbox",
+        "category": [
+          "Game ports"
+        ]
+      },
+      "inspection": {
+        "crcPassed": true,
+        "entries": 1077,
+        "executable": "bin\\default.xbe",
+        "magic": "XBEH",
+        "bytes": 1581056,
+        "sha256": "020e579f47f412ed12443e1de393e37c7205bfd190f5c7dc8fd36e957412d6f2",
+        "sections": 5,
+        "headerBytes": 1513
+      }
+    }
+  ],
+  "sourceIndex": "https://github.com/XboxDev/nxdk/wiki/Projects-using-nxdk",
+  "sourceOnly": [
+    {
+      "title": "Peanut-GB Xbox port",
+      "source": "https://github.com/Ryzee119/Peanut-GB/tree/xbox/port/xbox",
+      "status": "Source project only; no tagged ready release returned by the publisher release endpoint in this review. No source archive downloaded."
+    }
+  ],
+  "excluded": [
+    {
+      "source": "https://github.com/Xbox-Homebrew/SDLPoP",
+      "reason": "UWP/APPX build, not original Xbox."
+    }
+  ],
+  "limits": [
+    "No downloaded build executed.",
+    "No physical console testing.",
+    "Recorded SHA-256 values measure the fetched release bytes; these older GitHub assets expose no publisher digest."
+  ]
+}

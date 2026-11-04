@@ -1,0 +1,126 @@
+{
+  "reviewed": "2026-11-02",
+  "updatedAt": "2026-11-02T13:06:42.868Z",
+  "status": "passed-locally-with-external-access-limits",
+  "implementation": [
+    "Phone and iPad file options retain native download links and exact filenames/compatibility pins.",
+    "Optional same-origin file sharing rejects incomplete bodies, HTML errors, LFS pointers, changed URLs and oversized responses.",
+    "Console themes, handheld builds and firmware formats receive file options and bypass the service-worker UI cache.",
+    "Phone/tablet forms use readable text, large tablets keep touch targets, and scrollable tables expose named keyboard-accessible regions.",
+    "Optional legacy ads load asynchronously so they cannot block page parsing and download controls.",
+    "Uncached offline pages receive a styled standalone message instead of the wrong homepage with broken relative assets.",
+    "Expired Discord source links use original posts, verified HTTPS alternatives are used, and confirmed inaccessible sources are labelled honestly.",
+    "Pinned vendored console runtime HTML is excluded from UI rewriting and browser QA; four original HTML hashes are verified."
+  ],
+  "htmlIntegration": {
+    "pages": 509,
+    "pending": [],
+    "assetVersion": "3.3.8"
+  },
+  "hostedFileAudit": {
+    "pages": 511,
+    "anchors": 9065,
+    "uniqueFiles": 2327,
+    "inventoryRecords": 2199,
+    "failures": []
+  },
+  "browser": {
+    "pages": 487,
+    "widths": [
+      320,
+      768,
+      1024
+    ],
+    "largeIpadSample": {
+      "pages": 27,
+      "widths": [
+        834,
+        1194
+      ]
+    },
+    "rawChecks": 1719,
+    "finalFailures": [],
+    "initialIssuesResolved": 57,
+    "interactive": [
+      "iPad drawer opens and closes; main content is inert while open.",
+      "iPad file search returns 1 of 464 files for Homebrew Store.",
+      "File-options dialog fits 834x1194 and 1194x834 with a 44px close control.",
+      "Browser downloaded the harmless text file to Downloads; its SHA-256 matched the original."
+    ],
+    "testDownload": {
+      "filename": "phone-download-check.txt",
+      "bytes": 475,
+      "sha256": "ae59be2535d4e8aa31dcaad51ce7615a4d289ce74dfbbf4d8fe10660c813a5b0",
+      "physicalPhone": false
+    }
+  },
+  "external": {
+    "defaultReport": "docs/qa/external-download-links.json",
+    "defaultSnapshotUrls": 5506,
+    "defaultHttpAttempts": 3728,
+    "defaultOutcomes": {
+      "skipped-local-device": 1677,
+      "reachable-page": 2104,
+      "unavailable": 73,
+      "network-error": 749,
+      "reachable-file": 495,
+      "access-blocked": 38,
+      "skipped-gated": 101,
+      "provider-page-unverified": 231,
+      "http-error": 2,
+      "provider-file-available": 19,
+      "provider-target-unverified": 17
+    },
+    "phoneReport": "docs/qa/external-download-phone-responses.json",
+    "downloadTargets": 1652,
+    "deviceResponses": 3304,
+    "byDevice": {
+      "iphone": {
+        "reachable-page": 358,
+        "network-error": 61,
+        "reachable-file": 704,
+        "unavailable": 65,
+        "access-blocked": 19,
+        "provider-page-unverified": 438,
+        "http-error": 1,
+        "provider-file-available": 6
+      },
+      "android": {
+        "reachable-page": 363,
+        "network-error": 75,
+        "reachable-file": 698,
+        "unavailable": 63,
+        "access-blocked": 13,
+        "provider-page-unverified": 432,
+        "http-error": 1,
+        "provider-file-available": 7
+      }
+    },
+    "visibleActionResponses": 860,
+    "currentDownloadTargets": 1652,
+    "uncheckedCurrentDownloadTargets": [],
+    "intentionallySkipped": "Bstlar gates and private console/device address templates are recorded and skipped; no gates solved.",
+    "limits": "Reachable pages and bounded file samples do not prove complete download integrity, physical saving, installation or execution. Provider sessions, access blocks and network errors remain unverified."
+  },
+  "regressionTests": {
+    "tests": 488,
+    "passed": 488,
+    "failed": 0
+  },
+  "localRouteAudit": [
+    "Audited 467 public pages and 49993 local links/assets; 0 issue(s)."
+  ],
+  "verificationLimits": [
+    "No physical iPhone, iPad or Android save destination was verified.",
+    "Native share-sheet destinations were not selected; the browser/OS controls final saving.",
+    "No console payload or downloaded mod/tool was executed.",
+    "No new mod/tool downloads were added by this phone work. Older versions and compatibility-specific archive files were preserved.",
+    "Changes are local; no commit, push, publication, deployment or scheduled monitor."
+  ],
+  "help": "/guides/phone-downloads/",
+  "screenshots": [
+    "docs/screenshots/ipad-home-fixed-834.jpg",
+    "docs/screenshots/ipad-file-options-834.jpg",
+    "docs/screenshots/phone-save-check-390.jpg"
+  ]
+}

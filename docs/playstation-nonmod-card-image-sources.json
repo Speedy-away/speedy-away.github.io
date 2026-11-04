@@ -1,0 +1,38 @@
+{
+  "reviewedAt": "2026-11-02T19:11:02.604Z",
+  "records": [
+    {
+      "id": "y2jb-installer",
+      "image": "/assets/images/console-software/y2jb-installer-official.png",
+      "url": "https://raw.githubusercontent.com/jamesst20/ps5-y2jb-installer/4b8c68a9cb648b2bc813e3d27a2a23615cac628e/app/src-tauri/icons/128x128@2x.png",
+      "source": "https://github.com/jamesst20/ps5-y2jb-installer",
+      "revision": "4b8c68a9cb648b2bc813e3d27a2a23615cac628e",
+      "bytes": 4378,
+      "sha256": "95aa2dabb453cbb798d01c36986edd99460e68845f277058b03cfc4e89e2f0bf",
+      "visuallyVerified": true,
+      "verification": "Official purple play-button app icon reviewed."
+    },
+    {
+      "id": "y2jb-autoloader",
+      "image": "/assets/images/console-software/y2jb-autoloader-official.png",
+      "url": "https://raw.githubusercontent.com/itsPLK/ps5-y2jb-autoloader/ba879c8609f0d9e8208fd9a64ca678ed47bd4291/y2jb_screenshot.png",
+      "source": "https://github.com/itsPLK/ps5-y2jb-autoloader",
+      "revision": "ba879c8609f0d9e8208fd9a64ca678ed47bd4291",
+      "bytes": 318666,
+      "sha256": "dc0f67015e52984ed55021c5ab4dd190e62be3eac8c4add9630fec15950c0d89",
+      "visuallyVerified": true,
+      "verification": "Official screenshot visibly identifies Y2JB Autoloader v0.5 by PLK; used as an interface reference only."
+    },
+    {
+      "id": "ps5-themes",
+      "image": "/assets/images/console-software/ps5-themes-official.png",
+      "url": "https://raw.githubusercontent.com/Blaze414/ps5-theme/18c419a788140d0a6290417c9e14f99b03f99a40/assets/icon0.png",
+      "source": "https://github.com/Blaze414/ps5-theme",
+      "revision": "18c419a788140d0a6290417c9e14f99b03f99a40",
+      "bytes": 2026,
+      "sha256": "767815b5186511db77e1d028bf7b8f674aad9d9500fa41db4ad20858f3fb8944",
+      "visuallyVerified": true,
+      "verification": "Official PS5 Themes three-colour tile icon reviewed."
+    }
+  ]
+}

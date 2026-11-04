@@ -1,0 +1,1409 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02",
+  "sources": [
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need",
+      "status": "HTTP 200 via direct fetch; many real links are inside HTML-escaped data-code embeds."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "status": "HTTP 200; decoded embeds inspected."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "status": "HTTP 200 via direct fetch; web extractor failed."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-sprx-menu",
+      "status": "HTTP 200 via direct fetch."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-texture-pack",
+      "status": "HTTP 200 via direct fetch."
+    },
+    {
+      "url": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-eboot",
+      "status": "HTTP 200 via direct fetch."
+    },
+    {
+      "url": "https://rdroysters.com/orbit/products",
+      "status": "HTTP 200; developer version inconsistencies preserved."
+    }
+  ],
+  "notes": [
+    "No payload, package or desktop mod tool was executed.",
+    "Compatibility is source-declared rather than hardware-tested. A broad HEN/CFW label does not prove every archive has every build.",
+    "Source clean / CID-stealer ticks are unverified third-party assertions and must not become a safety guarantee.",
+    "No videos are added. Local JPGs are static source showcase thumbnails only; original developer PNG is labelled separately.",
+    "Download availability must be reconciled with the separate archive agent inventory; candidate status is not an assertion of a successful download."
+  ],
+  "resources": [
+    {
+      "id": "gta-v-salfety-recovery",
+      "name": "Salfety Recovery SPRX",
+      "gameId": "gta-v",
+      "category": "sprx",
+      "version": "Unversioned",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / DEX; showcase title lists BLES, BLUS, NPEB and NPUB.",
+      "description": "SPRX recovery menu listed on the GTA V 1.27 source page. Use the archive variant matching the console and game edition.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/uxv4nzo9lczi2dq/Sprx_Salfety_Recovery.zip/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-salfety.jpg",
+      "evidence": [
+        "Source embed button: SALFETY RECOVERY [HEN & DEX].",
+        "Source showcase title: Sprx SALFETY RECOVERY / Bles / Blus / Npeb / Npub."
+      ]
+    },
+    {
+      "id": "gta-v-semjase-remastered",
+      "name": "Semjase Remastered",
+      "gameId": "gta-v",
+      "category": "sprx",
+      "version": "beta 1.0",
+      "gameUpdate": "1.27",
+      "compatibility": "DEX stated by the source showcase; HEN / CEX not established.",
+      "description": "Community remastered SPRX menu. Keep this beta separate from other Semjase builds.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/yxaynkxcrt0rczp/Semjase%2527s_remastered_version_beta_1.0.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-semjase.jpg",
+      "evidence": [
+        "Source showcase explicitly identifies PS3 DEX.",
+        "Download filename identifies remastered beta 1.0."
+      ]
+    },
+    {
+      "id": "gta-v-predator-v15",
+      "name": "Predator SPRX v15",
+      "gameId": "gta-v",
+      "category": "sprx",
+      "version": "v15",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / DEX claimed by source button. Source showcase mentions 1.27 / 1.28; this catalogue is pinned to 1.27.",
+      "description": "Legacy community reupload. The supplied page calls this a cracked build; provenance and runtime behavior are unverified.",
+      "status": "archived",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/9bq2xaqnt21h0e8/PREDATOR_sPRX_v15.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-predator.jpg",
+      "archiveEvidence": {
+        "sourceArchiveSha256": "f7925bb71ac6b82113507d776cb148fe54fd92742309995f0940809e0ea1ee64",
+        "integrity": "passed",
+        "readyMemberCounts": {
+          "bin": 1,
+          "sprx": 1,
+          "ini": 1
+        },
+        "execution": "Archive contents, text and static file headers inspected; no installation or execution.",
+        "checkedAt": "2026-11-02T05:53:34.396Z",
+        "allArchiveMembersExtracted": true,
+        "allRecordedFileHashesVerified": true,
+        "originalIntegrity": "7-Zip CRC test passed",
+        "formatCounts": {
+          "BIN": 1,
+          "SPRX": 1,
+          "INI": 1
+        },
+        "memberPaths": [
+          "PREDATOR sPRX v15\\COPY THE CONTENT FILES OF THIS FOLDER INTO tmp\\EBOOT.BIN",
+          "PREDATOR sPRX v15\\COPY THE CONTENT FILES OF THIS FOLDER INTO tmp\\gta5.sprx"
+        ],
+        "notes": [
+          "Archive contains EBOOT.BIN, Predator.sprx and Predator.ini under the Predator v15 directory.",
+          "HEN/DEX and game1.27 are source claims; no additional archive proof of title ID, game update or CEX/DEX subtype was found."
+        ]
+      }
+    },
+    {
+      "id": "gta-v-cloud-v15",
+      "name": "Cloud SPRX",
+      "gameId": "gta-v",
+      "category": "sprx",
+      "version": "v1.5",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / DEX claimed by source button; CEX not established.",
+      "description": "SPRX menu with a source showcase labelled for offline use.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/n22fd48jca0j6bw/CLOUD_SPRX_v1.5.zip/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-cloud.jpg"
+    },
+    {
+      "id": "gta-v-weareghosts-v2",
+      "name": "WeAreGhosts SPRX",
+      "gameId": "gta-v",
+      "category": "sprx",
+      "version": "v2.0",
+      "gameUpdate": "1.27",
+      "compatibility": "Archive contains separately labelled BLES/BLUS CEX, DEX and HEN variants. Runtime compatibility has not been tested.",
+      "description": "SPRX menu with a source showcase labelled for offline use. Two MediaFire copies are supplied.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/4wp7xbdot61pv5d/WeAreGhosts_V2.0_SPRX_MOD_MENU.rar/file",
+          "label": "MediaFire copy 1"
+        },
+        {
+          "url": "https://www.mediafire.com/file/z2sjilodxthkqyz/WeAreGhosts_V2.0_SPRX_MOD_MENU.rar/file",
+          "label": "MediaFire copy 2"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-weareghosts.jpg",
+      "region": "BLES / BLUS; select the matching archive variant",
+      "archiveEvidence": {
+        "sourceArchiveSha256": "d5ebb0438ca6e2131e53101b098751b3dbce3a1d30b539f36d60e67407513420",
+        "variantLabels": [
+          "BLES-CEX",
+          "BLES-DEX",
+          "BLES-HEN",
+          "BLUS-CEX",
+          "BLUS-DEX",
+          "BLUS-HEN"
+        ],
+        "method": "Archive member paths inspected without executing the files."
+      }
+    },
+    {
+      "id": "gta-v-lts-v238",
+      "name": "LTS Script Loader by Jay",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v2.3.8",
+      "gameUpdate": "1.27",
+      "compatibility": "CFW / HEN; source button explicitly identifies GTA RE:V 1.27.",
+      "description": "GTA RE:V 1.27 script loader update. Keep it separate from generic 1.27 loaders and follow its included instructions.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/rqot7e6x4ejs1dz/Script_Loader_Update_v2.3.8_by_Jay.zip/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-lts.jpg"
+    },
+    {
+      "id": "gta-v-joker-v4",
+      "name": "THE-JOK3R-CREW",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v4",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in source showcase; button identifies GTA RE:V 1.27, BLES / BLUS / NPUB / NPEB.",
+      "description": "Mod loader with separate game-edition requirements. Confirm the edition inside the archive before copying files.",
+      "status": "archived",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/kldak53rz0kspyv/THE-JOK3R-CREW-V4.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-joker.jpg",
+      "archiveEvidence": {
+        "sourceArchiveSha256": "29d62c4f9a88c781e5294f1b9713c2e47c0221fca0c1f4329ccab2706a9a75a7",
+        "integrity": "passed",
+        "readyMemberCounts": {
+          "rpf": 1
+        },
+        "execution": "Archive contents, text and static file headers inspected; no installation or execution.",
+        "checkedAt": "2026-11-02T05:53:34.511Z",
+        "allArchiveMembersExtracted": true,
+        "allRecordedFileHashesVerified": true,
+        "originalIntegrity": "7-Zip CRC test passed",
+        "formatCounts": {
+          "RPF": 1
+        },
+        "memberPaths": [
+          "THE-JOK3R-CREW-V4\\update.rpf"
+        ],
+        "notes": [
+          "Archive contains update.rpf only. This is a game-data modloader file, not an installable PKG.",
+          "Keep the source catalogue pinned to GTA V1.27; exact edition/mode is not established by this member name.",
+          "Interrupted81,166,336-byte transfer remains preserved separately; native HTTPS retry completed and passed CRC."
+        ]
+      }
+    },
+    {
+      "id": "gta-v-criminal-doss-v1",
+      "name": "Criminal Doss",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v1",
+      "gameUpdate": "1.27",
+      "compatibility": "Source button identifies GTA RE:V 1.27, BLES / BLUS / NPUB / NPEB; CEX / DEX not separately established.",
+      "description": "Community mod-loader archive linked directly from the supplied 1.27 page.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/zdne37bvg1jblf85wg74p/CRIMINAL-DOSS-V1.rar?rlkey=iy1l4hgw056wyi6azzqcj0odo&st=pr25a086&dl=0",
+          "label": "Source download"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-atck-manda-v1",
+      "name": "ATCK MANDA",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v1.0",
+      "gameUpdate": "1.27",
+      "compatibility": "CFW / HEN; GTA RE:V 1.27 in source showcase.",
+      "description": "GTA RE:V 1.27 mod-loader archive.",
+      "status": "archived",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/wikyma3k1v53i58/ATCK_MANDA_V1.0-ModLoader.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-atck.jpg",
+      "archiveEvidence": {
+        "checkedAt": "2026-11-02T05:53:34.657Z",
+        "sourceArchiveSha256": "064662bdc9e45625a1d661ebf99d2ac53da81766414372dbf01f8a83e30f17f3",
+        "allArchiveMembersExtracted": true,
+        "allRecordedFileHashesVerified": true,
+        "originalIntegrity": "7-Zip CRC test passed",
+        "formatCounts": {
+          "BIN": 3,
+          "RPF": 1
+        },
+        "memberPaths": [
+          "ATCK MANDA V1.0-ModLoader\\BLES-BLUS\\EBOOT.BIN",
+          "ATCK MANDA V1.0-ModLoader\\NPEB01283\\EBOOT.BIN",
+          "ATCK MANDA V1.0-ModLoader\\NPUB31154\\EBOOT.BIN",
+          "ATCK MANDA V1.0-ModLoader\\update.rpf"
+        ],
+        "notes": [
+          "Archive contains update.rpf and EBOOT variants in BLES-BLUS, NPEB01283 and NPUB31154 directories. Preserve those edition-specific paths.",
+          "GTA RE:V1.27 and CFW/HEN are source claims; the archive names do not independently verify a game-update number or CEX/DEX subtype."
+        ],
+        "execution": "Archive contents, text and static file headers inspected; no installation or execution.",
+        "readyMemberCounts": {
+          "bin": 3,
+          "rpf": 1
+        }
+      },
+      "region": "BLES-BLUS folder label / NPEB01283 / NPUB31154",
+      "note": "Archive folders separate the disc-labelled BLES-BLUS, NPEB01283 and NPUB31154 EBOOT variants alongside update.rpf. Folder labels are evidence of supplied variants, not a hardware compatibility test."
+    },
+    {
+      "id": "gta-v-pennywise-v6",
+      "name": "Pennywise by HackardoPS3M0dxZ",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v6",
+      "gameUpdate": "1.27",
+      "compatibility": "Archive includes separately labelled BLES and BLUS EBOOT branches. Their CEX/DEX/HEN build type is not specified by those folder labels. The supplied GTA RE:V 1.27 showcase claims CFW/HEN; runtime compatibility has not been tested.",
+      "description": "Pennywise v6 archive with an extracted update.rpf and separate BLES/BLUS EBOOT.BIN files. Keep the matching executable and game data together.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/ly9sa16ne1y30lq/Pennywise_V6_By_HackardoPS3M0dxZ.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-pennywise.jpg",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:25.239Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "Pennywise V6 By HackardoPS3M0dxZ.rar",
+        "bytes": 109464039,
+        "contentType": "application/x-rar",
+        "advertisedSize": "104.39MB",
+        "uploaded": "2020-08-28 16:26:38",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "region": "BLES / BLUS EBOOT branches; exact title IDs not stated",
+      "imageCaption": "Pennywise v6 source showcase; the archived BLES and BLUS executables remain separate.",
+      "format": "Archive / RPF / EBOOT.BIN",
+      "tags": [
+        "RPF",
+        "EBOOT variants"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-pennywise-v6-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "Pennywise V6 By HackardoPS3M0dxZ.rar",
+          "bytes": 109464039,
+          "sha256": "39bedf5ce4d15a12fc51e45b7142e107e310c2d780def71f55f0d9ffbc33e184"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 30395628,
+            "sha256": "81940b53e13207cb2a921c8bb797f8ceec29dbd6833219b5fca206198c7b809b",
+            "memberPath": "Pennywise V6 By HackardoPS3M0dxZ\\EBOOT BLES\\EBOOT.BIN",
+            "local": "/downloads/ps3/gta5-pennywise-v6-third/81940b53e132/Pennywise%20V6%20By%20HackardoPS3M0dxZ/EBOOT%20BLES/EBOOT.BIN"
+          },
+          {
+            "name": "EBOOT.BIN",
+            "bytes": 15286576,
+            "sha256": "12224b92641ab7bab95572488bcccbaeadcba45a1808c72895c773fafdf4bd83",
+            "memberPath": "Pennywise V6 By HackardoPS3M0dxZ\\EBOOT BLUS\\EBOOT.BIN",
+            "local": "/downloads/ps3/gta5-pennywise-v6-third/12224b92641a/Pennywise%20V6%20By%20HackardoPS3M0dxZ/EBOOT%20BLUS/EBOOT.BIN"
+          },
+          {
+            "name": "update.rpf",
+            "bytes": 83886080,
+            "sha256": "c086821db01fec1009527e0d815112218204a7bee402b4c2d42f710c84c540df",
+            "memberPath": "Pennywise V6 By HackardoPS3M0dxZ\\update.rpf",
+            "local": "/downloads/ps3/gta5-pennywise-v6-third/c086821db01f/Pennywise%20V6%20By%20HackardoPS3M0dxZ/update.rpf"
+          }
+        ],
+        "documentation": [],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-n3me4nt1freeze",
+      "name": "N3me4nT1FreeZe Private",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "666 (filename)",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW; GTA RE:V 1.27 in source showcase.",
+      "description": "Original loader archive contains a single update.rpf console game-data file. Use its game-specific placement and retain the original RAR.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/7onkbqfkrjuk7ui/N3me4nT1FreeZe_Private_ModLoader_666.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-n3me4nt1freeze.jpg",
+      "imageAlt": "N3me4nT1FreeZe Private static source showcase showing the mod menu",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:25.271Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "N3me4nT1FreeZe Private ModLoader 666.rar",
+        "bytes": 67858749,
+        "contentType": "application/x-rar",
+        "advertisedSize": "64.72MB",
+        "uploaded": "2024-07-21 08:33:10",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "imageCaption": "Source showcase labelled for offline use. The archive contains update.rpf.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-n3me4nt1freeze-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "N3me4nT1FreeZe Private ModLoader 666.rar",
+          "bytes": 67858749,
+          "sha256": "815ecfd42ce3694f82358a1899d0e5fa71dafe4d05338621e99894376170b504"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 69914624,
+            "sha256": "6c9843c3b4d6912a1acec7bf0ef06596a05c5d74fb7791211d92670635451e04",
+            "memberPath": "N3me4nT1FreeZe Private ModLoader 666\\update.rpf",
+            "local": "/downloads/ps3/gta5-n3me4nt1freeze-third/6c9843c3b4d6/N3me4nT1FreeZe%20Private%20ModLoader%20666/update.rpf"
+          }
+        ],
+        "documentation": [],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-omarghost-v6",
+      "name": "OmarGhost Mod Loader",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v6.0",
+      "gameUpdate": "1.27",
+      "compatibility": "Archived Changelogs.txt explicitly identifies v6.0 and the author claims DEX/CEX/HEN support. This is an author claim, not a hardware test. Exact game-region title IDs are not supplied by the changelog.",
+      "description": "Archive-confirmed OmarGhost v6.0 with an extracted update.rpf and changelog. The catalogue uses the matching v6.0 static showcase.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/onfxbbqnx32vc42/OmarGhost_ModLoader_V6.0.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-omarghost-v6.jpg",
+      "caveat": "The page showcase describes v7.1; linked download is v6.0.",
+      "imageAlt": "OmarGhost v6.0 actual source showcase; separate from the linked page’s v7.1 showcase",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:25.272Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "OmarGhost ModLoader V6.0.rar",
+        "bytes": 73308985,
+        "contentType": "application/x-rar",
+        "advertisedSize": "69.91MB",
+        "uploaded": "2020-03-31 13:08:02",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "region": "Exact title IDs not stated in archived changelog",
+      "note": "The supplied page embeds a v7.1 showcase beside this link, but both the downloaded filename and archived changelog identify v6.0. Preserve the v6.0 identity.",
+      "imageCaption": "OmarGhost v6.0 source showcase, matching the archived changelog.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-omarghost-v6-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "OmarGhost ModLoader V6.0.rar",
+          "bytes": 73308985,
+          "sha256": "9a6cdb30f8b6cde9eabe94b199a76db781d65cff4f3616bc33ec94b746fbc547"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 74807808,
+            "sha256": "93f3592c1d366b4d2a0035361dd0f8256a9e295c1d4b036d3a9f60000f9b0a54",
+            "memberPath": "OmarGhost ModLoader V6.0\\update.rpf",
+            "local": "/downloads/ps3/gta5-omarghost-v6-third/93f3592c1d36/OmarGhost%20ModLoader%20V6.0/update.rpf"
+          }
+        ],
+        "documentation": [
+          {
+            "name": "Changelogs.txt",
+            "memberPath": "OmarGhost ModLoader V6.0\\Changelogs.txt",
+            "sha256": "119c1b4df8c6673a07f1c3800208127bc552dcfaf065cf8758e8cdaa3b6d9b9f",
+            "local": "/downloads/ps3/gta5-omarghost-v6-third/119c1b4df8c6/OmarGhost%20ModLoader%20V6.0/Changelogs.txt"
+          }
+        ],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-buzzard-v53",
+      "name": "Buzzard Private",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v5.3",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in source showcase. Game edition and CEX / DEX variant not separately established.",
+      "description": "Preserved v5.3 community loader. The supplied button says TeraBox but actually links to Dropbox.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/aod8q2xggtotozdxqk75i/Mod-Loader-BUZZARD-v5.3-Private.zip?rlkey=br487wcb8hhjeac1b3j0790k5&e=1&st=sl6iixum&dl=0",
+          "label": "Source download"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-sick-v2",
+      "name": "SICK Mod Loader",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v2",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in showcase; showcase additionally says 4.89. This is not evidence of 4.93 testing.",
+      "description": "Archive-confirmed SICK v2 contains an extracted update.rpf and credits to SICK0. The source button is mislabelled Rockstar Loader; this download remains SICK v2.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/rydvavteikhojod/SICK_Modloader_v2.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-sick-v2.jpg",
+      "caveat": "Source button label is wrong; archive filename and adjacent showcase identify SICK v2.",
+      "imageAlt": "SICK Mod Loader static source showcase showing the mod menu",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:26.672Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "SICK Modloader v2.rar",
+        "bytes": 98595068,
+        "contentType": "application/x-rar",
+        "advertisedSize": "94.03MB",
+        "uploaded": "2022-12-02 20:14:30",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "note": "The matching source showcase mentions firmware 4.89. It does not establish compatibility with the site’s pinned 4.93 setup.",
+      "imageCaption": "SICK v2 source showcase; its title mentions the older 4.89 setup.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-sick-v2-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "SICK Modloader v2.rar",
+          "bytes": 98595068,
+          "sha256": "30b98930b4336b45f3a56c912ed71a825ee0d84f7872cf1a0efeb9e6b4b46138"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 104918528,
+            "sha256": "257fe4478dec1404d3ca7c3dff9b92cac4666f2ee7250e2e679ff3a13e5ad955",
+            "memberPath": "SICK Modloader v2\\update.rpf\\update.rpf"
+          }
+        ],
+        "documentation": [
+          {
+            "name": "Credits.txt",
+            "memberPath": "SICK Modloader v2\\Credits.txt",
+            "sha256": "313188c18118ae2e51424d891246a9a7aa979286a141229384ee22c6b47ce164",
+            "local": "/downloads/ps3/gta5-sick-v2-third/313188c18118/SICK%20Modloader%20v2/Credits.txt"
+          }
+        ],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-wiof-green",
+      "name": "WIOF Green Private",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "Unversioned",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in source showcase; edition / CEX / DEX variant not separately established.",
+      "description": "WIOF Green Private archive with one extracted update.rpf. No separate version or title-ID documentation was included in this archive.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/wyof8j3ychrmxap/Modloader+WIOF+GREEN+PRIVATE.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-wiof-green.jpg",
+      "imageAlt": "WIOF Green Private static source showcase showing the mod menu",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:26.673Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "Modloader WIOF GREEN PRIVATE.rar",
+        "bytes": 73291258,
+        "contentType": "application/x-rar",
+        "advertisedSize": "69.9MB",
+        "uploaded": "2021-04-16 19:31:44",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "imageCaption": "Matching WIOF Green source showcase; exact build compatibility remains source-declared.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-wiof-green-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "Modloader WIOF GREEN PRIVATE.rar",
+          "bytes": 73291258,
+          "sha256": "3c4ab68c2264a888eb01d9a5a1ac426f17a9e98c79f530995f430e2102b923d7"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 75654144,
+            "sha256": "b3e8f33e0023dda3e1579963ee0f273455e1448cc29cb0f759b0b251d88617bb",
+            "memberPath": "update.rpf",
+            "local": "/downloads/ps3/gta5-wiof-green-third/b3e8f33e0023/update.rpf"
+          }
+        ],
+        "documentation": [],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-godly-v2",
+      "name": "Godly Loader",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v2",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in source showcase; edition / CEX / DEX variant not separately established.",
+      "description": "Godly v2 archive contains an extracted update.rpf game-data file. Keep the original RAR and follow the matching game’s file-placement requirements.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/2821olwtxlwm0dy/Godly_Loader_V2.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-godly.jpg",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:26.673Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "Godly Loader V2.rar",
+        "bytes": 88103450,
+        "contentType": "application/x-rar",
+        "advertisedSize": "84.02MB",
+        "uploaded": "2020-01-14 08:13:03",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "imageCaption": "Godly Loader v2 source showcase; archive contents were inspected without execution.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-godly-v2-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "Godly Loader V2.rar",
+          "bytes": 88103450,
+          "sha256": "0a3e7650ee7cc3f8bbdf2344ae60147bc12ba0db3413d7b42a2d0630f7149d66"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 90559488,
+            "sha256": "fefd30e43b51d5a9cf9fe39abbec7748848a27b94527ff98c3de3a24c4ad240f",
+            "memberPath": "Godly Loader V2\\update.rpf",
+            "local": "/downloads/ps3/gta5-godly-v2-third/fefd30e43b51/Godly%20Loader%20V2/update.rpf"
+          }
+        ],
+        "documentation": [],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-greek-v10",
+      "name": "Greek Hackers",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v10",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in source showcase; edition / CEX / DEX variant not separately established.",
+      "description": "Greek Hackers v10 archive contains update.rpf and credits. The repeated update.rpf folder name is an internal archive path; use the matching game’s documented destination.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/9rez12b0nnk7zho/GREEK_HACKERS_V10_Modloader.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-greek-v10.jpg",
+      "imageAlt": "Greek Hackers static source showcase showing the mod menu",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:27.828Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "GREEK HACKERS V10 Modloader.rar",
+        "bytes": 73315164,
+        "contentType": "application/x-rar",
+        "advertisedSize": "69.92MB",
+        "uploaded": "2022-12-02 21:25:29",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "imageCaption": "Greek Hackers v10 source showcase; older v9 remains a separate version.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-greek-v10-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "GREEK HACKERS V10 Modloader.rar",
+          "bytes": 73315164,
+          "sha256": "441997ca3c779b6f1c6ecb5f5ab961f2d9f8b7c947f7ec7363ac3a7782225829"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 76018688,
+            "sha256": "573e023656532ce0b11a05841361c474e4ee85246748b13e1f5ccff049546ae1",
+            "memberPath": "GREEK HACKERS V10 Modloader\\update.rpf\\update.rpf",
+            "local": "/downloads/ps3/gta5-greek-v10-third/573e02365653/GREEK%20HACKERS%20V10%20Modloader/update.rpf/update.rpf"
+          }
+        ],
+        "documentation": [
+          {
+            "name": "Credits.txt",
+            "memberPath": "GREEK HACKERS V10 Modloader\\Credits.txt",
+            "sha256": "5f4be7f730576c48032c0b7d8db8b9bd7e26bdd66f1443e59cd7a943422f89b3",
+            "local": "/downloads/ps3/gta5-greek-v10-third/5f4be7f73057/GREEK%20HACKERS%20V10%20Modloader/Credits.txt"
+          }
+        ],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-jason-v10",
+      "name": "Jason HackDev",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v10",
+      "gameUpdate": "1.27",
+      "compatibility": "HEN / CFW in source showcase; edition / CEX / DEX variant not separately established.",
+      "description": "Jason HackDev v10 contains one extracted update.rpf. The larger RPF is preserved in the local archive and can be downloaded directly through the PS3 archive server.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/ax67ekh3479udk4/Jason+HackDev+V10.rar",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-jason-v10.jpg",
+      "imageAlt": "Jason HackDev static source showcase showing the mod menu",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:27.828Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "Jason HackDev V10.rar",
+        "bytes": 145795901,
+        "contentType": "application/x-rar",
+        "advertisedSize": "139.04MB",
+        "uploaded": "2018-11-14 09:45:44",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "imageCaption": "Jason HackDev v10 source showcase; no hardware installation or execution tested.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-jason-v10-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "Jason HackDev V10.rar",
+          "bytes": 145795901,
+          "sha256": "ab2dced7676ab0650595a05343fb0adb599ff060cfe6123cb480ba68dc06a190"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 148829696,
+            "sha256": "bbbbd6c559ec69b6fa668f2639735eb5782e7389f827d7134483d42458ee2f0a",
+            "memberPath": "update.rpf"
+          }
+        ],
+        "documentation": [],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-wesley-bles",
+      "name": "Wesley 022 Private · BLES",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "Unversioned BLES package",
+      "gameUpdate": "1.27",
+      "compatibility": "BLES only for this file; HEN / CFW in showcase. Exact BLES title ID not stated.",
+      "description": "Ready PS3 PKG loader variant. Downloading a PKG is separate from installing it through Package Manager.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/5t8g5o20us4nfuf/MODLOADER+WESLEY+022+PRIVADO+(BLES).pkg/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-wesley.jpg",
+      "format": "PKG"
+    },
+    {
+      "id": "gta-v-wesley-blus",
+      "name": "Wesley 022 Private · BLUS",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v2.0 BLUS package",
+      "gameUpdate": "1.27",
+      "compatibility": "BLUS only for this file; HEN / CFW in showcase. Exact BLUS title ID not stated.",
+      "description": "Ready PS3 PKG loader variant. Keep this BLUS v2.0 file separate from the BLES package.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/nhw997nomt9luq1/MODLOADER+WESLEY+022+PRIVADO+(BLUS)+2.0.pkg/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-wesley.jpg",
+      "format": "PKG"
+    },
+    {
+      "id": "gta-v-spiderman",
+      "name": "Spider-Man Mod Loader",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "Unversioned",
+      "gameUpdate": "1.27",
+      "compatibility": "Page-wide HEN / CFW claim; embedded button identifies GTA RE:V 1.27 and BLES / BLUS / NPUB / NPEB.",
+      "description": "Three original host choices are listed. File availability must be checked before offering it as an archived download.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/nlen8zvbb334bs9/Spider-Man_Modloader.rar/file",
+          "label": "MediaFire"
+        },
+        {
+          "url": "https://e.pcloud.link/publink/show?code=XZVxgjZrqidObbSb44OXdhN8sXd6YIM5V7y",
+          "label": "pCloud"
+        },
+        {
+          "url": "https://terabox.com/s/1oQ-6QMWTtBAMzihy-m77BQ",
+          "label": "TeraBox"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-executioner-v7",
+      "name": "The Executioner",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v7.0",
+      "gameUpdate": "1.27",
+      "compatibility": "Archived README requires a CFW/HEN PS3 and explicitly restricts this build to the BLES version of GTA V. BLUS, NPUB and NPEB support is not established. The 1.27 label comes from the supplied catalogue.",
+      "description": "Executioner v7 archive contains update.rpf and an installation README. The README restricts this build to BLES and gives L3 + R3 as the menu-opening combination.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/i3y9tbjpq6tswa3/The_Executioner_7.0%255BBy_GhostPlayCFW%255D%255BP%255D.zip/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-executioner-v7.jpg",
+      "imageAlt": "The Executioner static source showcase showing the mod menu",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:27.828Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "The_Executioner_7.0[By GhostPlayCFW][P].zip",
+        "bytes": 74480063,
+        "contentType": "application/zip",
+        "advertisedSize": "71.03MB",
+        "uploaded": "2020-12-20 09:40:37",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "region": "BLES only (archived README); exact title ID not reliably written",
+      "note": "The README prints a shortened or mistyped bles1807 directory. Confirm the actual installed title ID before following its file-placement instructions. Back up the original game data. Runtime compatibility has not been tested.",
+      "imageCaption": "Community v7 showcase. The downloaded README restricts this build to BLES.",
+      "format": "Archive / RPF",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-executioner-v7-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "The_Executioner_7.0[By GhostPlayCFW][P].zip",
+          "bytes": 74480063,
+          "sha256": "fdf9637396c9b3ca0afbaebea08e399e3eab11c2636fe5db02033dd74ca71150"
+        },
+        "integrity": "7-Zip archive integrity test passed",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 75166208,
+            "sha256": "1dbaa38149f1a5e453b8fcefd519fe863dfabe55be8d592ad4376c4d0ac98149",
+            "memberPath": "The_Executioner_7.0[By GhostPlayCFW][P]\\update.rpf",
+            "local": "/downloads/ps3/gta5-executioner-v7-third/1dbaa38149f1/The_Executioner_7.0%5BBy%20GhostPlayCFW%5D%5BP%5D/update.rpf"
+          }
+        ],
+        "documentation": [
+          {
+            "name": "READ ME !!.txt",
+            "memberPath": "The_Executioner_7.0[By GhostPlayCFW][P]\\READ ME !!.txt",
+            "sha256": "829578de67528afda1c7575237a5c0780f27c53c79bbb7b940217772030f1182",
+            "local": "/downloads/ps3/gta5-executioner-v7-third/829578de6752/The_Executioner_7.0%5BBy%20GhostPlayCFW%5D%5BP%5D/READ%20ME%20!!.txt"
+          }
+        ],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-fbi4z-v2",
+      "name": "FBI4Z",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v2",
+      "gameUpdate": "1.27",
+      "compatibility": "Page-wide HEN / CFW and BLES / BLUS claims only; no per-file CEX / DEX proof.",
+      "description": "Direct update.rpf game-data download for FBI4Z v2, preserved and hashed without an archive wrapper. Use the matching game-specific destination and loader requirements.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/ipxmgfw1bdlmuco/update.rpf/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-fbi4z-v2.jpg",
+      "format": "RPF",
+      "imageAlt": "FBI4Z static source showcase showing the mod menu",
+      "publicAttachmentCheck": {
+        "checkedAt": "2026-11-02T06:06:29.942Z",
+        "landingStatus": 200,
+        "headStatus": 200,
+        "filename": "update.rpf",
+        "bytes": 93972480,
+        "contentType": "application/octet-stream",
+        "advertisedSize": "89.62MB",
+        "uploaded": "2021-01-02 07:52:40",
+        "method": "Public landing page and HEAD only; no attachment body downloaded by researcher."
+      },
+      "imageCaption": "FBI4Z v2 source-author showcase labelled for offline use.",
+      "tags": [
+        "RPF"
+      ],
+      "archiveEvidence": {
+        "inventory": "docs/ps3-expansion-download-inventory.json",
+        "itemId": "gta5-fbi4z-v2-third",
+        "checkedAt": "2026-11-02",
+        "original": {
+          "name": "update.rpf",
+          "bytes": 93972480,
+          "sha256": "711b4bf4f21941a8b99baecbc20ea373fe03dac9dbcc3900c997783051d2755e"
+        },
+        "integrity": "Direct file SHA-256 recorded; no archive container",
+        "readyFiles": [
+          {
+            "name": "update.rpf",
+            "bytes": 93972480,
+            "sha256": "711b4bf4f21941a8b99baecbc20ea373fe03dac9dbcc3900c997783051d2755e",
+            "local": "/downloads/ps3/gta5-fbi4z-v2-third/711b4bf4f219/update.rpf"
+          }
+        ],
+        "documentation": [],
+        "execution": "Archive members and documentation inspected only; no installation or execution."
+      }
+    },
+    {
+      "id": "gta-v-buzzard-v56",
+      "name": "Buzzard Private",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "v5.6",
+      "gameUpdate": "1.27",
+      "compatibility": "Page-wide HEN / CFW and BLES / BLUS claims only.",
+      "description": "Newer version listed separately from v5.3. MEGA availability needs a complete download check.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://mega.nz/file/tOoQHQBZ#cOdrHS_uXtghO4DkY_19pImFVJyo8ot735F_HlOJNwA",
+          "label": "Source download"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-paradise",
+      "name": "Paradise Mod Loader",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "New / old versions separately listed",
+      "gameUpdate": "1.27",
+      "compatibility": "Page-wide HEN / CFW and BLES / BLUS claims only.",
+      "description": "Source provides a MediaFire folder and a distinct old-version Drive folder. Do not merge or relabel versions.",
+      "status": "folder-unverified",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/folder/wcygrrugnbfbn/Paradise",
+          "label": "New-version folder"
+        },
+        {
+          "url": "https://drive.google.com/drive/u/0/folders/1vQWzLXO-XSaMXGbvgzkOgu1aBEvvBdv6",
+          "label": "Old-version folder"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-mizdx-eboots",
+      "name": "Mizdx GTA V 1.27 EBOOT variants",
+      "gameId": "gta-v",
+      "category": "eboot",
+      "version": "1.27",
+      "gameUpdate": "1.27",
+      "compatibility": "Source states BLES / BLUS and HEN / CEX / DEX. Choose one matching variant; these labels are not interchangeable.",
+      "description": "EBOOT archive with platform and game-edition variants. Back up the matching original before following the included installation instructions.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-eboot",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/gi9roh53sunb9m9/GTA_V_EBOOTS_By_Mizdx.zip/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "",
+      "format": "ZIP / EBOOT.BIN"
+    },
+    {
+      "id": "gta-v-craftysnake-v1",
+      "name": "Crafty Snake Mod Manager v1.0",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "See name",
+      "gameUpdate": "1.27",
+      "compatibility": "Not established; original source explicitly marks link down.",
+      "description": "Historical directory entry retained truthfully as unavailable.",
+      "status": "source-marks-down",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://mega.nz/file/1PpGWKDZ#96n2fgDWHzciSWNxeqe5Bkr6R73sI4YAsXp5645Yn6k",
+          "label": "Source download"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-4tt4ck-v9",
+      "name": "4TT4CK SPRX v9",
+      "gameId": "gta-v",
+      "category": "sprx",
+      "version": "See name",
+      "gameUpdate": "1.27",
+      "compatibility": "Not established; original source explicitly marks link down.",
+      "description": "Historical directory entry retained truthfully as unavailable.",
+      "status": "source-marks-down",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://mega.nz/file/sbhX3apJ#rjtJi2CIBdW906pMypG_atNI3Okls2Q1-vPmYjrraQ0",
+          "label": "Source download"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-tropa022-v3",
+      "name": "TROPA 022 v3",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "See name",
+      "gameUpdate": "1.27",
+      "compatibility": "Not established; original source explicitly marks link down.",
+      "description": "Historical directory entry retained truthfully as unavailable.",
+      "status": "source-marks-down",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://mega.nz/file/cWghUawS#HkXaLuc0Byazla2WRKeaahPh5IBBirCUx7u58F-wb64",
+          "label": "Source download"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-v-golden",
+      "name": "Golden Mod Loader",
+      "gameId": "gta-v",
+      "category": "loader",
+      "version": "See name",
+      "gameUpdate": "1.27",
+      "compatibility": "Not established; original source explicitly marks link down.",
+      "description": "Historical directory entry retained truthfully as unavailable.",
+      "status": "source-marks-down",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-v/gta-v-1-27-mods",
+      "downloads": [
+        {
+          "url": "https://mega.nz/file/NPQ20b5I#-Z6kABX-l1yMde8fqD6_gQBcLEfNoOhP2_DIdUvqKy4",
+          "label": "Source download"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-iv-shockxwave",
+      "name": "SHoCKxWAVE Mod Menu",
+      "gameId": "gta-iv",
+      "category": "script",
+      "version": "v20",
+      "gameUpdate": "Not stated by source",
+      "compatibility": "Exact game update, title IDs, HEN / CFW and CEX / DEX compatibility are not stated in this source listing.",
+      "description": "GTA IV script-menu archive. Inspect its edition-specific contents and readme before choosing an installation path.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/dvjcpy29q9x1qfu/SxW_Menu_Public.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-iv-glitchinng",
+      "name": "Glitchinng",
+      "gameId": "gta-iv",
+      "category": "script",
+      "version": "v9.1",
+      "gameUpdate": "Not stated by source",
+      "compatibility": "Exact game update, title IDs, HEN / CFW and CEX / DEX compatibility are not stated in this source listing.",
+      "description": "GTA IV script-menu archive. Inspect its edition-specific contents and readme before choosing an installation path.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/fe76g9nndz4i62n/Glitchinng_V9.1.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-iv-red-motion",
+      "name": "Red Motion by PRMX",
+      "gameId": "gta-iv",
+      "category": "script",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "compatibility": "Exact game update, title IDs, HEN / CFW and CEX / DEX compatibility are not stated in this source listing.",
+      "description": "GTA IV script-menu archive. Inspect its edition-specific contents and readme before choosing an installation path.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/rjkioprcae32vbt/Red_Motion_by_PRMX.zip/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-iv-blackland",
+      "name": "Blackland Project by Jack4AU",
+      "gameId": "gta-iv",
+      "category": "script",
+      "version": "Unversioned",
+      "gameUpdate": "Not stated by source",
+      "compatibility": "Exact game update, title IDs, HEN / CFW and CEX / DEX compatibility are not stated in this source listing.",
+      "description": "GTA IV script-menu archive. Inspect its edition-specific contents and readme before choosing an installation path.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/kah4mycq905yju2/Blackland_Project_by_Jack4AU.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gta-iv-major-distribution",
+      "name": "Major Distribution",
+      "gameId": "gta-iv",
+      "category": "script",
+      "version": "v1.8",
+      "gameUpdate": "Not stated by source",
+      "compatibility": "BLES / BLUS in link text; HEN / CFW in source showcase. Exact title update and CEX / DEX not separately established.",
+      "description": "GTA IV menu pack with static source showcase image. Keep edition-specific scripts separate.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-mod-menu",
+      "downloads": [
+        {
+          "url": "https://mega.nz/file/RbxwTDJb#uSsu3AyUGxJtLmZ-ZHCJmefuvJnJm5xeVRHqRZWbP-k",
+          "label": "Source download"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-major-distribution.jpg"
+    },
+    {
+      "id": "gta-iv-orbit-free",
+      "name": "Orbit Free SPRX",
+      "gameId": "gta-iv",
+      "category": "sprx",
+      "version": "v1.1 (source archive)",
+      "gameUpdate": "Not stated by source",
+      "compatibility": "Source directory claims BLES / BLUS and HEN / CFW. Developer lists GTA IV and EFLC disc/digital title IDs; do not apply its paid v1.5 Complete Edition claim to this free v1.1 archive.",
+      "description": "Free all-in-one SPRX archive, separate from paid Orbit. Developer product screenshot illustrates the free menu UI and displays v1.0, not proof of the archive version.",
+      "status": "download-candidate",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-sprx-menu",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/1sdqwu5pv5axo8r/GTAIV-Orbit-Menu-Free-v1.1-%2528All-In-One%2529.7z/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-orbit-free.png",
+      "developerSource": "https://rdroysters.com/orbit/products",
+      "supportedTitleIds": [
+        "BLUS30127",
+        "NPUB30702",
+        "BLES00229",
+        "NPEB00882",
+        "BLUS30524",
+        "NPUB30704",
+        "BLES00887",
+        "NPEB00907"
+      ],
+      "caveat": "Developer page has inconsistent version labels: current-version field v1.3, changelog v1.5, free-menu image v1.0; archive filename v1.1."
+    },
+    {
+      "id": "gta-iv-texture-installer-v2",
+      "name": "GTA IV Texture Installer",
+      "gameId": "gta-iv",
+      "category": "texture",
+      "version": "v2",
+      "gameUpdate": "Not stated in archive documentation",
+      "compatibility": "Archive readmes name BLES00229, BLUS30127 and NPUB30702. Source labels HEN/CFW; exact firmware, game update and CEX/DEX support remain unverified.",
+      "description": "Offline GTA IV texture-pack installer supplied as an original RAR and a separately extracted PS3 PKG. The preserved package is available through the PS3 local archive server.",
+      "status": "archived",
+      "source": "https://sites.google.com/view/im-virusmike-exe/ps3-all-you-need/gta-iv/gta-iv-texture-pack",
+      "downloads": [
+        {
+          "url": "https://www.mediafire.com/file/7tvnntrnw9tof2c/GTA_IV_Texture_Installer_V2%255BHEN%2526CFW%255D.rar/file",
+          "label": "MediaFire source"
+        }
+      ],
+      "image": "/assets/images/ps3-mods/gta-iv-texture-installer-v2.jpg",
+      "imageAlt": "GTA IV Texture Pack Installer V2 source showcase showing the PS3 tool menu",
+      "sourceCheck": {
+        "checkedAt": "2026-11-02",
+        "sourcePageStatus": 200,
+        "mediafirePageStatus": 200,
+        "attachmentHeadStatus": 200,
+        "filename": "GTA IV Texture Installer V2[HEN&CFW].rar",
+        "format": "RAR",
+        "contentType": "application/x-rar",
+        "bytes": 539573839,
+        "advertisedSize": "514.58MB",
+        "advertisedUploadedAt": "2023-11-19 09:23:03 (timezone not stated)",
+        "acceptRanges": "bytes",
+        "method": "Source pages and attachment HEAD only; archive body download handled separately.",
+        "sourceShowcase": {
+          "title": "GTA IV PS3 Texture Pack Installer Tool V2 NEW! | Offline Use Only 🟠",
+          "author": "ΙmVirus Mike",
+          "thumbnailUrl": "https://i.ytimg.com/vi/zM69V99g2J4/hqdefault.jpg",
+          "label": "Offline Use Only",
+          "imageObservation": "Actual PS3 tool menu, GTA IV artwork and a displayed 4.90 (CEX) setup; this image is not evidence of hardware testing or universal compatibility."
+        }
+      },
+      "region": "BLES00229 / BLUS30127 / NPUB30702",
+      "note": "Read Important.txt for the required disc-game folder names before using the tool. The NPEB0088 entry is incomplete in the archive; NPEB compatibility remains unverified.",
+      "archiveEvidence": {
+        "checkedAt": "2026-11-02T05:46:22.845Z",
+        "sourceArchiveSha256": "f261464a7fab6c5c5b725210182ad72c4f064404a4a97b9f4027bc43f032588a",
+        "allArchiveMembersExtracted": true,
+        "originalIntegrity": "7-Zip CRC test passed",
+        "allRecordedFileHashesVerified": true,
+        "execution": "Archive contents, text and static file headers inspected; no installation or execution.",
+        "readmes": [
+          {
+            "name": "What's new V2.txt",
+            "sha256": "8c7445d896585520503f45ea457975c62ac4ac41305e801a768a032094570957",
+            "memberPath": "GTA IV Texture Installer V2[HEN&CFW]\\What's new V2.txt",
+            "local": "/downloads/ps3/gta4-texture-installer/8c7445d89658/GTA IV Texture Installer V2[HEN&CFW]/What's new V2.txt"
+          },
+          {
+            "name": "⚠️Important⚠️.txt",
+            "sha256": "a46bc17553c8c49e0dab9d560a2825c7c1afdc12d13eed39caad04bff86c56b6",
+            "memberPath": "GTA IV Texture Installer V2[HEN&CFW]\\⚠️Important⚠️.txt",
+            "local": "/downloads/ps3/gta4-texture-installer/a46bc17553c8/GTA IV Texture Installer V2[HEN&CFW]/⚠️Important⚠️.txt"
+          }
+        ],
+        "supportedTitleIdEvidence": [
+          "BLES00229",
+          "BLUS30127",
+          "NPUB30702"
+        ],
+        "incompleteTitleIdInReadme": "NPEB0088",
+        "compatibilityLimits": "NPEB0088 is incomplete as written and must not be silently corrected. Exact game update, firmware versions and CEX/DEX support are not established by these readmes. The installer PKG content ID identifies the installer, not a compatible game edition.",
+        "notes": [
+          "Important readme expects specifically named BLES00229/BLUS30127 game folders; retain original game files and read its preparation instructions before any manual change.",
+          "Readme describes disabling Noise Filter for BLES/BLUS display issues; digital-edition wording includes an NPUB/NPUB typo.",
+          "Video Tutorial.txt is preserved as archive metadata only; no video is added to PS3 pages."
+        ],
+        "readyFiles": [
+          {
+            "name": "GTA_IV_Texture_Installer_V2_HEN_CFW.rar",
+            "bytes": 539573839,
+            "sha256": "f261464a7fab6c5c5b725210182ad72c4f064404a4a97b9f4027bc43f032588a",
+            "role": [
+              "Builds"
+            ],
+            "memberPath": null
+          },
+          {
+            "name": "GTA IV Texture Intsaller V2.pkg",
+            "bytes": 539571872,
+            "sha256": "5faed3be2af6d779a9ad1852fdbccfd64d2f0028a09e6c62b7c55098ce4d36e5",
+            "role": [
+              "Builds"
+            ],
+            "memberPath": "GTA IV Texture Installer V2[HEN&CFW]\\GTA IV Texture Intsaller V2.pkg",
+            "pkgHeader": {
+              "status": "valid-static-PS3-header",
+              "magic": "7f504b47",
+              "type": 1,
+              "revision": 0,
+              "actualBytes": 539571872,
+              "declaredBytes": "539571872",
+              "dataOffset": "416",
+              "dataBytes": "539571360",
+              "metadataOffset": 192,
+              "metadataBytes": 224,
+              "contentId": "TA9000-GTAIVTEXT_00-0000000000000000",
+              "contentIdIsInstallerIdentity": true,
+              "reference": "https://github.com/ps3dev/ps3sdk/blob/master/tools/pkg/pkg.c",
+              "limitation": "Structural header check only; no installation, execution, signature authenticity or game compatibility test."
+            }
+          }
+        ],
+        "readyMemberCounts": {
+          "pkg": 1
+        }
+      }
+    }
+  ]
+}

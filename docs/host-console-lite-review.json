@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03T21:37:19.371Z",
+  "status": "Actual hooks applied to independent WWB-HOST checkout with fresh source checks and preserved backups. Existing early host-performance.js flag works without an extra head script. Publication/build is root-owned.",
+  "sourceFiles": [
+    {
+      "path": "assets/site-background.js",
+      "beforeSha256": "9e95f83705dcc28c02a3ba3bc2b7e799ab0fe089ce255faef5217b21d54687be",
+      "afterSha256": "ca852a3dbb87fce5e370f4b31c29f8d0a31323e77196b5001302dec35588df8b",
+      "bytesBefore": 13748,
+      "bytesAfter": 13951,
+      "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z\\assets\\site-background.js"
+    },
+    {
+      "path": "script.js",
+      "beforeSha256": "8efb5c4d073ef67e429621b119f112b392b5dd2dde291311870ca6fd48666079",
+      "afterSha256": "efe0c7f2a9380225fecb9f767cac5b6e48542ee350b1719f983d5448242d7dc4",
+      "bytesBefore": 37033,
+      "bytesAfter": 37710,
+      "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z\\script.js"
+    },
+    {
+      "path": "languages/i18n.js",
+      "beforeSha256": "2b885e881d2c81ca15e8f013b0d4b228b425e2e63f8131fd4535f0d32cb402c9",
+      "afterSha256": "7c40e84d42797b79b2bba82363f58d7e4cc2c9ee39645918b2fe34383ad20a1c",
+      "bytesBefore": 52757,
+      "bytesAfter": 52985,
+      "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z\\languages\\i18n.js"
+    },
+    {
+      "path": "assets/host-console-lite.js",
+      "afterSha256": "0f6cc71113c7da39838ae84733f896a946c444a0a53dfb2b031853bc7325d090",
+      "bytesAfter": 2825,
+      "added": true
+    },
+    {
+      "path": "assets/host-console-lite.css",
+      "afterSha256": "86c8b112b0e5d9f874d2222333a6d1dffb68ad98e78f3df8659625c58c35807b",
+      "bytesAfter": 3479,
+      "added": true
+    },
+    {
+      "path": "scripts/tests/host-console-lite.test.cjs",
+      "afterSha256": "8a23c91195017526540cdcbd50a48574a8dbfce92d4b54b27bbacbe7cd5de33a",
+      "bytesAfter": 7627,
+      "added": true
+    }
+  ],
+  "scope": "PS4/PS5 user agents only; PC/mobile and native isolated runtime documents are unaffected.",
+  "policy": {
+    "global": "window.WhatsiteConsoleLite",
+    "enabled": "Console UA and eligible authored document",
+    "features": [
+      "background=false",
+      "decorative-motion=false",
+      "global-search=false",
+      "smooth-scroll=false",
+      "i18n-observer/i18n-refresh=false only while current language is en",
+      "Host search, downloads, payload/native controls and language selector remain enabled"
+    ],
+    "imageBatch": {
+      "console": 18,
+      "other": 70
+    },
+    "sideEffects": "Optional new policy script only marks class/attribute. Actual hooks recognize existing WWB_HOST_CONSOLE or optional policy; prevent shared canvas startup and background script injection on console.",
+    "compatibleExistingFlag": "window.WWB_HOST_CONSOLE, set by existing early host-performance.js"
+  },
+  "integration": [
+    {
+      "file": "Public publisher/head",
+      "status": "Root-owned. Existing early host-performance.js already sets the flag; no redundant new JS required. Optional liteCSS supports both html.host-console-browser and html.host-console-lite."
+    },
+    {
+      "file": "assets/site-background.js",
+      "status": "Applied: early console return before body/canvas/DOM access."
+    },
+    {
+      "file": "script.js",
+      "status": "Applied: no console background injection/global game search/hero typing/stats tween/smooth scrolling. Fade observer skipped. Functional Back-to-top stays enabled with instant scrolling; functional sidebar/forms/FAQ/service worker initialization preserved."
+    },
+    {
+      "file": "languages/i18n.js",
+      "status": "Applied: English console mode disconnects existing DOM observer and avoids creating one. Non-English starts normal observer; existing English refresh no-op preserved. Full setLang application, selected locales, live translation, RTL and selector unchanged."
+    },
+    {
+      "file": "assets/host-trainer.js",
+      "status": "Unchanged: retained other chat console batch18, normal70, exact1169-build search and native transport. Entire file SHA256: b2de014563c882e75682cfc1b364e8b1958a8904c5521260f6e2950c60a6fbfc"
+    }
+  ],
+  "verification": {
+    "command": "node --test scripts/tests/host-console-lite.test.cjs scripts/tests/i18n-runtime.test.cjs scripts/tests/i18n-picker.test.cjs scripts/tests/host-local-tools.test.cjs",
+    "tests": 32,
+    "passed": 31,
+    "failed": 1,
+    "focusedConsoleHooks": {
+      "tests": 7,
+      "passed": 7
+    },
+    "existingI18nSuites": {
+      "tests": 12,
+      "passed": 12
+    },
+    "nativeToolTests": {
+      "tests": 13,
+      "passed": 12
+    },
+    "failure": "Legacy host-local-tools assertion rejects every ESP <img>; current root-added heading tools.svg image violates that older visual expectation. This is unrelated to hook code; root notified for compact-page expectation update.",
+    "physicalConsoleProfile": false,
+    "browser": "Disabled. No browser/headless workaround attempted.",
+    "limits": [
+      "No real PS4/PS5 performance, bandwidth, memory or payload execution claim.",
+      "External ad CPU/network behavior not measured.",
+      "Root owns publisher CSS/head integration and final artifact rebuild/publication."
+    ]
+  },
+  "audit": "docs/host-compact-readonly-audit.json",
+  "target": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+  "appliedReport": "docs/host-console-lite-hooks-applied.json",
+  "backup": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\console-lite-hooks-2026-11-03T21-34-46-173Z"
+}

@@ -1,0 +1,448 @@
+{
+  "reviewed": "2026-11-02",
+  "notes": "Official Steam Deck x86_64 Linux builds and online installers only. Desktop and Flatpak reference installers require internet access on the Deck; they are not offline application bundles. Downloaded files must never be executed by the archive workflow.",
+  "jobs": [
+    {
+      "id": "steamdeck-decky-installer",
+      "title": "Decky Loader installer",
+      "url": "https://github.com/SteamDeckHomebrew/decky-installer",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/decky_installer.desktop",
+      "filename": "decky_installer.desktop",
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-emudeck-installer",
+      "title": "EmuDeck installer",
+      "url": "https://www.emudeck.com/",
+      "version": "installer-2026-11-02",
+      "assetUrl": "https://www.emudeck.com/EmuDeck.desktop",
+      "filename": "EmuDeck.desktop",
+      "expectedBytes": 411,
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-heroic",
+      "title": "Heroic Games Launcher",
+      "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+      "version": "v2.22.4",
+      "assetUrl": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-linux-x86_64.AppImage",
+      "filename": "Heroic-2.22.4-linux-x86_64.AppImage",
+      "expectedBytes": 158632422,
+      "expectedSha256": "1664fc3c8e746325f049273272a0eae5a7f653bd3eb4534c2e2a26ef90086e99",
+      "maxBytes": 314572800,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-protonup-qt",
+      "title": "ProtonUp-Qt",
+      "url": "https://github.com/DavidoTek/ProtonUp-Qt",
+      "version": "v2.16.0",
+      "assetUrl": "https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v2.16.0/ProtonUp-Qt-2.16.0-x86_64.AppImage",
+      "filename": "ProtonUp-Qt-2.16.0-x86_64.AppImage",
+      "expectedBytes": 57752056,
+      "maxBytes": 209715200,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-steam-rom-manager",
+      "title": "Steam ROM Manager",
+      "url": "https://github.com/SteamGridDB/steam-rom-manager",
+      "version": "v2.6.0",
+      "assetUrl": "https://github.com/SteamGridDB/steam-rom-manager/releases/download/v2.6.0/Steam-ROM-Manager-2.6.0.AppImage",
+      "filename": "Steam-ROM-Manager-2.6.0.AppImage",
+      "expectedBytes": 173105460,
+      "maxBytes": 314572800,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-retrodeck-installer",
+      "title": "RetroDECK Flatpak installer",
+      "url": "https://retrodeck.net/",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://dl.flathub.org/repo/appstream/net.retrodeck.retrodeck.flatpakref",
+      "filename": "net.retrodeck.retrodeck.flatpakref",
+      "expectedBytes": 4036,
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-moonlight",
+      "title": "Moonlight",
+      "url": "https://github.com/moonlight-stream/moonlight-qt",
+      "version": "v6.2.0",
+      "assetUrl": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/Moonlight-6.2.0-x86_64.AppImage",
+      "filename": "Moonlight-6.2.0-x86_64.AppImage",
+      "expectedBytes": 54032888,
+      "expectedSha256": "787b0dcbd42ae90620e76fb8d77d7c441ba6473a91c2d7fc3a0fc2466f992437",
+      "maxBytes": 209715200,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-chiaki-ng",
+      "title": "chiaki-ng",
+      "url": "https://github.com/chiaki-ng/chiaki-ng",
+      "version": "v1.10.0",
+      "assetUrl": "https://github.com/chiaki-ng/chiaki-ng/releases/download/v1.10.0/chiaki-ng.AppImage_x86_64",
+      "filename": "chiaki-ng.AppImage_x86_64",
+      "expectedBytes": 170043896,
+      "expectedSha256": "cac42c21a19a111f2f0729bb9eef7d3878c6d2a4f06e017d383aff2aba719fd3",
+      "maxBytes": 314572800,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-lutris-installer",
+      "title": "Lutris Flatpak installer",
+      "url": "https://lutris.net/downloads",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://dl.flathub.org/repo/appstream/net.lutris.Lutris.flatpakref",
+      "filename": "net.lutris.Lutris.flatpakref",
+      "expectedBytes": 4024,
+      "expectedSha256": "a676017855d3e18e19fe45f1b0c121200d6429efe48d9faf28ede11f80ab1c2c",
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-protontricks-installer",
+      "title": "Protontricks Flatpak installer",
+      "url": "https://github.com/Matoking/protontricks",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://dl.flathub.org/repo/appstream/com.github.Matoking.protontricks.flatpakref",
+      "filename": "com.github.Matoking.protontricks.flatpakref",
+      "expectedBytes": 4054,
+      "expectedSha256": "3300c25a04aa8592fc1ee04bc533554857210ce4355b5b3e726890615ea7b9ed",
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-flatseal-installer",
+      "title": "Flatseal Flatpak installer",
+      "url": "https://github.com/tchx84/Flatseal",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://dl.flathub.org/repo/appstream/com.github.tchx84.Flatseal.flatpakref",
+      "filename": "com.github.tchx84.Flatseal.flatpakref",
+      "expectedBytes": 4042,
+      "expectedSha256": "71ad45d0ed7d069d1d64fbe110e5a7e7309406007a93f1a1f730b72706897b02",
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-bottles-installer",
+      "title": "Bottles Flatpak installer",
+      "url": "https://usebottles.com/",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://dl.flathub.org/repo/appstream/com.usebottles.bottles.flatpakref",
+      "filename": "com.usebottles.bottles.flatpakref",
+      "expectedBytes": 4034,
+      "expectedSha256": "2228c531429e8a0ef9f8bb5ffb3ae013f0ac6c3aa6f44e9ea8828f096b292c16",
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-localsend",
+      "title": "LocalSend",
+      "url": "https://github.com/localsend/localsend",
+      "version": "v1.18.2",
+      "assetUrl": "https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2-linux-x86-64.AppImage",
+      "filename": "LocalSend-1.18.2-linux-x86-64.AppImage",
+      "expectedBytes": 66471104,
+      "expectedSha256": "19f21613d1834f6caa69517113670461a3f10b80a2a315f86548c0663d9c0aaf",
+      "maxBytes": 104857600,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-css-loader",
+      "title": "CSS Loader",
+      "url": "https://github.com/DeckThemes/SDH-CssLoader",
+      "version": "2.1.3",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/99beaf1374af82408e6d056e0b0147e5fca544e1035fa7ab88419231697bc231.zip",
+      "filename": "CSS-Loader-2.1.3.zip",
+      "expectedBytes": 186133,
+      "expectedSha256": "99beaf1374af82408e6d056e0b0147e5fca544e1035fa7ab88419231697bc231",
+      "maxBytes": 16777216,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-steamgriddb",
+      "title": "SteamGridDB",
+      "url": "https://github.com/SteamGridDB/decky-steamgriddb",
+      "version": "1.8.1",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e84f5b1f111af8862b06218479491fbf61036e1bfd9f16f93f9901e9b9ebc5e0.zip",
+      "filename": "SteamGridDB-1.8.1.zip",
+      "expectedBytes": 3438092,
+      "expectedSha256": "e84f5b1f111af8862b06218479491fbf61036e1bfd9f16f93f9901e9b9ebc5e0",
+      "maxBytes": 16777216,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-protondb-badges",
+      "title": "ProtonDB Badges",
+      "url": "https://github.com/bschelst/protondb-decky",
+      "version": "1.3.4",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/90a3453ac02709cad64096e7539fd8141fa56f99ae3441fc24a4990dc9684358.zip",
+      "filename": "ProtonDB-Badges-1.3.4.zip",
+      "expectedBytes": 1008322,
+      "expectedSha256": "90a3453ac02709cad64096e7539fd8141fa56f99ae3441fc24a4990dc9684358",
+      "maxBytes": 16777216,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-powertools",
+      "title": "PowerTools",
+      "url": "https://gitlab.com/NGnius/PowerTools",
+      "version": "2.0.3",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/47614f53b8c538c4caa15f89a01e4ab106fa328e89f78545bacb3166d104d964.zip",
+      "filename": "PowerTools-2.0.3.zip",
+      "expectedBytes": 4327155,
+      "expectedSha256": "47614f53b8c538c4caa15f89a01e4ab106fa328e89f78545bacb3166d104d964",
+      "maxBytes": 16777216,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-syncthing",
+      "title": "Syncthing",
+      "url": "https://github.com/syncthing/syncthing",
+      "version": "v2.1.7",
+      "assetUrl": "https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-amd64-v2.1.7.tar.gz",
+      "filename": "syncthing-linux-amd64-v2.1.7.tar.gz",
+      "expectedBytes": 14046697,
+      "expectedSha256": "2edc416e7ed136b7c858ed5f3f02a3b8316589605e54c380228ceea7acbf0142",
+      "maxBytes": 104857600,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-peazip",
+      "title": "PeaZip",
+      "url": "https://github.com/peazip/PeaZip",
+      "version": "11.4.0",
+      "assetUrl": "https://github.com/peazip/PeaZip/releases/download/11.4.0/peazip_portable-11.4.0.LINUX.Qt6.x86_64.tar.gz",
+      "filename": "peazip_portable-11.4.0.LINUX.Qt6.x86_64.tar.gz",
+      "expectedBytes": 18051240,
+      "expectedSha256": "cc414efe5ebb157c299d0fb2f01b527e6675f7220fc25e014526671b0c25df13",
+      "maxBytes": 104857600,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-filelight-installer",
+      "title": "Filelight Flatpak installer",
+      "url": "https://apps.kde.org/filelight/",
+      "version": "stable-installer-2026-11-02",
+      "assetUrl": "https://dl.flathub.org/repo/appstream/org.kde.filelight.flatpakref",
+      "filename": "org.kde.filelight.flatpakref",
+      "expectedBytes": 4024,
+      "expectedSha256": "5394e7792f0b8366a941672a01e5c02937685ddee7f0d198b565590f17ea1900",
+      "maxBytes": 1048576,
+      "archiveRole": [
+        "Helpers",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-tabmaster",
+      "title": "TabMaster",
+      "url": "https://github.com/Tormak9970/TabMaster",
+      "version": "2.15.1",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/e08333859a32b0c177b8e9a7959c5eeeafe38f946578f7f1d161c721f0e05da5.zip",
+      "filename": "tabmaster-2.15.1.zip",
+      "expectedBytes": 5712641,
+      "expectedSha256": "e08333859a32b0c177b8e9a7959c5eeeafe38f946578f7f1d161c721f0e05da5",
+      "maxBytes": 33554432,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-hltb-for-deck",
+      "title": "HLTB for Deck",
+      "url": "https://github.com/morwy/hltb-for-deck",
+      "version": "2.0.12",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/bd54a23b0b8ec0798aa590e5be236522a593529d7680e77fb888e2971bf3d558.zip",
+      "filename": "hltb-for-deck-2.0.12.zip",
+      "expectedBytes": 538045,
+      "expectedSha256": "bd54a23b0b8ec0798aa590e5be236522a593529d7680e77fb888e2971bf3d558",
+      "maxBytes": 33554432,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-storage-cleaner",
+      "title": "Storage Cleaner",
+      "url": "https://github.com/mcarlucci/decky-storage-cleaner",
+      "version": "1.4.0",
+      "category": "Plugins",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/1afa1a6f129c5d419de0e0bf0f6db8d8e50385a5659179346e996031ea372591.zip",
+      "filename": "storage-cleaner-1.4.0.zip",
+      "expectedBytes": 460621,
+      "expectedSha256": "1afa1a6f129c5d419de0e0bf0f6db8d8e50385a5659179346e996031ea372591",
+      "maxBytes": 33554432,
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-bluetooth",
+      "title": "Bluetooth",
+      "url": "https://github.com/Outpox/Bluetooth",
+      "version": "3.1.1",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/f07f7b74f31da15b5e3a8234a3f00faa01365b56b8f496aca7bb79120be7b8a5.zip",
+      "filename": "bluetooth-3.1.1.zip",
+      "expectedBytes": 1387251,
+      "expectedSha256": "f07f7b74f31da15b5e3a8234a3f00faa01365b56b8f496aca7bb79120be7b8a5",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-pause-games",
+      "title": "Pause Games",
+      "url": "https://github.com/wynn1212/SDH-PauseGames",
+      "version": "1.0.3",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/4aefdfb0ef25dea9c6d9fd037731c8b99ee8a1be966c2f7d5b0602112ef29f62.zip",
+      "filename": "pause-games-1.0.3.zip",
+      "expectedBytes": 699197,
+      "expectedSha256": "4aefdfb0ef25dea9c6d9fd037731c8b99ee8a1be966c2f7d5b0602112ef29f62",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-audio-loader",
+      "title": "Audio Loader",
+      "url": "https://github.com/EMERALD0874/SDH-AudioLoader",
+      "version": "1.6.1",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/fd5a090c2e2cd4da6723d7bd08937ab31b9f8d4663510431713da531343e303f.zip",
+      "filename": "audio-loader-1.6.1.zip",
+      "expectedBytes": 127807,
+      "expectedSha256": "fd5a090c2e2cd4da6723d7bd08937ab31b9f8d4663510431713da531343e303f",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-animation-changer",
+      "title": "Animation Changer",
+      "url": "https://github.com/TheLogicMaster/SDH-AnimationChanger",
+      "version": "1.3.2",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/f2c62b90ca60d8a80b6d0f75d8027552b1509c7a05842c6f4a24a9072846d133.zip",
+      "filename": "animation-changer-1.3.2.zip",
+      "expectedBytes": 52224,
+      "expectedSha256": "f2c62b90ca60d8a80b6d0f75d8027552b1509c7a05842c6f4a24a9072846d133",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-autoflatpaks",
+      "title": "AutoFlatpaks",
+      "url": "https://github.com/jurassicplayer/decky-autoflatpaks",
+      "version": "1.6.8",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/344fce82cfb4800caccb4d6c0ec46e1ad6c9594a622d5baa0bb31286baf2d1a5.zip",
+      "filename": "autoflatpaks-1.6.8.zip",
+      "expectedBytes": 37818,
+      "expectedSha256": "344fce82cfb4800caccb4d6c0ec46e1ad6c9594a622d5baa0bb31286baf2d1a5",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    },
+    {
+      "id": "steamdeck-plugin-quick-launch",
+      "title": "Quick Launch",
+      "url": "https://github.com/Fisch03/SDH-QuickLaunch",
+      "version": "1.2.1",
+      "assetUrl": "https://cdn.tzatzikiweeb.moe/file/steam-deck-homebrew/versions/709746bfe2a7e19bda54b4de0b3f4a311053de10fa58aa070d421dbf92317ede.zip",
+      "filename": "quick-launch-1.2.1.zip",
+      "expectedBytes": 23036,
+      "expectedSha256": "709746bfe2a7e19bda54b4de0b3f4a311053de10fa58aa070d421dbf92317ede",
+      "maxBytes": 33554432,
+      "category": "Plugins",
+      "archiveRole": [
+        "Builds",
+        "Linux"
+      ]
+    }
+  ]
+}

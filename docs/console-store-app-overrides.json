@@ -1,0 +1,98 @@
+{
+  "reviewed": "2026-11-02",
+  "resources": {
+    "ps5-store-ppsa99109": {
+      "compatibility": "PS5 native folder module, PPSA99109. Publisher installation uses dump_installer and a home-screen launch; its pinned README/release does not supply a firmware test matrix.",
+      "preparation": "This ZIP has eboot.bin, sce_module and sce_sys at its root. Extract all four files into a folder such as PPSA99109, place that folder under /homebrew on the selected USB drive or /data/homebrew on the console, install with dump_installer, then launch its home-screen tile.",
+      "requirements": ["An active PS5 homebrew environment compatible with the publisher's native module", "dump_installer for registration, as specified in the v1.0 release", "Keep sce_module/libc.prx and sce_sys beside eboot.bin"],
+      "installationSteps": ["Extract the ZIP into a new PPSA99109 folder; it does not already contain that outer folder.", "Copy the complete folder to USB /homebrew/PPSA99109 or internal /data/homebrew/PPSA99109, then use dump_installer.", "Launch from the home screen. Use its archive, file and network pages deliberately; settings/logs are under /data/prospero-explorer."],
+      "installDirectory": "/data/homebrew/PPSA99109",
+      "firmwareSupport": {"tested": [], "notes": "No app-specific firmware matrix was found in the pinned v1.0 README/release; do not infer support from param.json's SDK/system-version fields."},
+      "primaryDocumentation": [{"label":"v1.0 installation instructions","url":"https://github.com/SvenGDK/Prospero-Explorer/releases/tag/v1.0"}, {"label":"Pinned README","url":"https://github.com/SvenGDK/Prospero-Explorer/blob/v1.0/README.md"}],
+      "networkIntegration": "The Network page exposes the app's file service with its own login, read-only and root settings. Use the address displayed by that service; no ezRemote endpoint compatibility is claimed."
+    },
+    "ps5-store-ppsa99110": {
+      "compatibility": "PS5 native module PPSA99110; requires SvenGDK's unjail daemon on a firmware it supports. The daemon must be running before the app starts and must be sent again after a reboot. PS1/PS2/PSP launch functions additionally require the separate emulator resources.",
+      "preparation": "Extract the included PPSA99110 folder and copy it intact to USB /homebrew/PPSA99110 or internal /data/homebrew/PPSA99110. Register with dump_installer, send the author's unjail payload before opening, and use Diagnostics to check actual reachable storage. EmulatorPack.zip is a separate dependency for emulator launch features.",
+      "requirements": ["Firmware covered by the author's unjail-ps5app-payload support table", "unjail daemon active whenever the module needs storage or install access outside its sandbox", "dump_installer", "Separate emulator folders and emulator-resources for PS1/PS2/PSP launch features"],
+      "installationSteps": ["Keep the whole PPSA99110 folder, including sce_module and sce_sys, at /data/homebrew/PPSA99110 or the selected USB drive's /homebrew/PPSA99110.", "Install with dump_installer; send unjail before opening and again after reboot.", "Use Diagnostics and Refresh storage to inspect reachable roots. The app documents that its file/folder picker does not yet offer /data and /user even though its broker-backed install/launch operations can reach them.", "Only for emulator launching: obtain the author's emulator resources and follow the separate /data/homebrew/emulators and emulator-resources layout."],
+      "installDirectory": "/data/homebrew/PPSA99110",
+      "firmwareSupport": {"tested": [], "notes": "The app defers firmware support to its unjail dependency. The daemon separately reports one hardware-tested firmware and an offset-coverage table; that is not an app-wide hardware test matrix."},
+      "primaryDocumentation": [{"label":"Pinned app setup and limits","url":"https://github.com/SvenGDK/Prospero-Multi-Tools/blob/v1/README.md"}, {"label":"Required unjail daemon and firmware support","url":"https://github.com/SvenGDK/unjail-ps5app-payload"}],
+      "networkIntegration": "Diagnostics checks the escalation daemon, file broker and actual reachable roots; PS5 Tools also offers its documented payload sender and service-port probes. Backup inspection for other consoles is not a claim that those console games run natively on PS5."
+    },
+    "ps5-store-ppsa98766": {
+      "compatibility": "PS5 native title PPSA98766. Publisher requires a jailbroken PS5, kstuff, ShadowMountPlus and an ELF loader on port 9021. No firmware number is specified in the pinned README.",
+      "preparation": "Extract and copy the complete PPSA98766 folder to /data/homebrew/PPSA98766; preserve 0777 permissions on its files. Keep sce_module/libc.prx and sce_sys. The author's separate DriftCheck.elf installer is an alternative upstream download, rather than this ZIP being a payload.",
+      "requirements": ["kstuff", "ShadowMountPlus", "ELF loader listening on port 9021", "DualSense belonging to the user who launched the app"],
+      "installationSteps": ["For this selected ZIP, extract PPSA98766 and upload the whole folder under /data/homebrew/.", "Check 0777 permissions if FTP changed them; the publisher identifies CE-107750-0 as the failure symptom.", "Wait for ShadowMountPlus registration, launch its tile, then use Options for the rest/circularity tests."],
+      "installDirectory": "/data/homebrew/PPSA98766",
+      "firmwareSupport": {"tested": [], "notes": "Pinned README names the required homebrew components without an app-specific firmware matrix."},
+      "primaryDocumentation": [{"label":"Pinned installation and controller limits","url":"https://github.com/felipemelchior/driftcheck5/blob/01.000.000/README.md"}]
+    },
+    "ps5-store-ppsa69420": {
+      "compatibility": "PS5 native title PPSA69420; the author requires a jailbroken PS5 with ShadowMountPlus. This release is a native app-folder build, rather than the removed websrv/elfldr payload build. The pinned README gives no firmware matrix.",
+      "preparation": "Extract the PPSA69420 folder intact to /data/homebrew/PPSA69420. ShadowMountPlus adds its home-screen tile. Keep eboot.bin, sce_module/libc.prx and sce_sys; close the app using the PS button.",
+      "requirements": ["Jailbroken PS5 with ShadowMountPlus"],
+      "installationSteps": ["Extract PPSA69420.zip and copy its PPSA69420 folder under /data/homebrew/.", "Wait for the ShadowMountPlus scan, then launch from the home screen.", "Follow the app's own confirmation before flashing test patterns; close it with the PS button."],
+      "installDirectory": "/data/homebrew/PPSA69420",
+      "firmwareSupport": {"tested": [], "notes": "No app-specific firmware test matrix in the pinned README/release."},
+      "primaryDocumentation": [{"label":"Pinned native-app installation","url":"https://github.com/Marice/ScreenTester5/blob/01.000.000/README.md"}, {"label":"Native-title release notes","url":"https://github.com/Marice/ScreenTester5/releases/tag/01.000.000"}]
+    },
+    "ps5-store-ppsa96024": {
+      "compatibility": "PS5 native title PPSA96024. Requires ShadowMountPlus and elfldr listening on port 9021 at app startup for full storage access. The author reports testing on firmware 13.60; other firmware is untested in the pinned README.",
+      "preparation": "Copy the complete PPSA96024 folder to /data/homebrew/PPSA96024 and preserve 0777 on the folder and every file. Launch from the dashboard with elfldr active. Its start screen reports whether full storage access succeeded; closing the app stops its servers.",
+      "requirements": ["ShadowMountPlus", "ELF loader on port 9021 when the app starts", "0777 app-folder/file permissions, as documented by the author"],
+      "installationSteps": ["Extract chiral-ftp-ps5-1.1.zip and copy the complete PPSA96024 folder to /data/homebrew/PPSA96024.", "Check 0777 permissions if your FTP client changed them. Keep lapy.elf, libc.prx and all other shipped dependencies.", "Start the app and confirm its full-storage-access message.", "Choose FTP server or Web app and use the address/login shown on screen. Its browser interface supports browsing, download/upload and file operations; Quick connect requires its on-screen approval code."],
+      "installDirectory": "/data/homebrew/PPSA96024",
+      "firmwareSupport": {"tested": ["13.60"], "notes": "Publisher hardware test, not testing performed by this site. Other versions are untested in the pinned README."},
+      "primaryDocumentation": [{"label":"Pinned PS5 requirements and file-manager setup","url":"https://github.com/Herbrax/Chiral-FTP/blob/v1.1/README.md#ps5"}],
+      "networkIntegration": "Open the running app's Web app or FTP server screen and use its displayed endpoint and login. These are Chiral's services; the site's ezRemote JSON commands must not be sent to them. Quick connect uses a code shown on both devices and explicit Allow."
+    },
+    "ps5-store-ppsa99001": {
+      "compatibility": "PS5 native media app PPSA99001, content version 01.000.010. Publisher says it is tested on PS5 but supplies no firmware-specific matrix for this release. Internet access is required to browse and stream stations.",
+      "preparation": "Extract and copy the entire PPSA99001 folder to /data/homebrew/PPSA99001 using your compatible PS5 homebrew app loader. Keep its runtime libraries, assets and helpers. The setup guide says not to leave a same-title FFPFSC image from an earlier release beside this folder; automatic updater compatibility is unverified.",
+      "requirements": ["Compatible PS5 native homebrew app installation/launch environment", "Internet access for station discovery and streams"],
+      "installationSteps": ["Extract PPSA99001.zip and copy the complete PPSA99001 folder under /data/homebrew/.", "Avoid a second registration of the same title from an older FFPFSC image beside the folder; preserve your old archive separately.", "Launch the native media app. Use publisher Releases for updates; the README does not verify the replacement automatic-update service."],
+      "installDirectory": "/data/homebrew/PPSA99001",
+      "firmwareSupport": {"tested": [], "notes": "Release says tested and working on PS5; no firmware number is given."},
+      "primaryDocumentation": [{"label":"Pinned app installation","url":"https://github.com/bornaradusin/ProsperoRadio/blob/01.000.010/README.md"}, {"label":"Pinned folder deployment and version rules","url":"https://github.com/bornaradusin/ProsperoRadio/blob/01.000.010/docs/GETTING_STARTED.md"}]
+    },
+    "ps5-store-ppsa98427": {
+      "compatibility": "PS5 native media app PPSA98427. Requires a compatible active homebrew environment and an external USB optical drive that reads audio CDs; it does not use the PS5's internal drive. The author tested Apple USB SuperDrive on firmware 13.60. A local ELF loader on port 9021 may be needed for its access helper.",
+      "preparation": "Copy the full PPSA98427 folder under /data/homebrew so eboot.bin is directly at /data/homebrew/PPSA98427/eboot.bin, then launch CD Player from Media. Preserve 0777 permissions and its title-specific lapy.elf helper. Boot with the external drive empty, then insert the audio CD after boot.",
+      "requirements": ["Compatible active PS5 homebrew app environment", "Supported external USB audio-CD drive; internal console drive is not used", "Local ELF loader on port 9021 may be required for the bundled title-specific helper"],
+      "installationSteps": ["Extract PPSA98427.zip and copy the complete PPSA98427 folder under /data/homebrew/ without adding another nested folder.", "Keep every shipped asset/helper and preserve 0777 permissions if copying by FTP.", "Start the console with the USB optical drive empty; launch CD Player from Media and insert your audio CD after boot.", "For an older installation reserving about 18 GB, follow the author's 1.1.2 reinstall instructions; replacing loose files alone does not shrink that reservation."],
+      "installDirectory": "/data/homebrew/PPSA98427",
+      "firmwareSupport": {"tested": ["13.60"], "notes": "Publisher tested an Apple USB SuperDrive on this firmware. Other drive/firmware/output combinations need their own verification."},
+      "primaryDocumentation": [{"label":"Pinned USB hardware, installation and update notes","url":"https://github.com/LoZazaMastro/CD-Player/blob/v1.1.2/README.md#installation"}]
+    },
+    "ps5-store-ppsa99051": {
+      "compatibility": "PS5 native app PPSA99051. Publisher tested the passthrough sample on a jailbroken PS5 Pro, firmware 12.70, launched through ShadowMountPlus. HDMI bitstream tests require an audio chain that supports the selected codec. The project says its app runs inside its ordinary sandbox.",
+      "preparation": "The selected release ZIP contains the complete PPSA99051 native app folder. Copy that folder under /data/homebrew/PPSA99051 for ShadowMountPlus. Preserve its runtime and indexed audio clips. The sample README also describes a separate FFPFSC build; that is not the format of this selected ZIP.",
+      "requirements": ["Jailbroken PS5 with a compatible native app loader; publisher uses ShadowMountPlus", "HDMI receiver/soundbar and intervening display that pass/accept the codec selected for passthrough tests"],
+      "installationSteps": ["Extract the selected PPSA99051.zip and keep its complete PPSA99051 folder under /data/homebrew/.", "Let ShadowMountPlus register the native title and launch it from the home screen.", "Use the app's receiver-format display and choose a supported Passthrough clip or Speaker Lab test. Preserve the supplied clip index; /app0 folder enumeration is not available to the app."],
+      "installDirectory": "/data/homebrew/PPSA99051",
+      "firmwareSupport": {"tested": ["12.70"], "notes": "Publisher's PS5 Pro research/test setup. It is not a claim that every PS5 firmware, HDMI device or advertised audio format was tested."},
+      "primaryDocumentation": [{"label":"Pinned hardware test and codec results","url":"https://github.com/sainsaji/PS5-Audio-Passthrough-Research/blob/01.000.003/README.md"}, {"label":"Sample app controls and alternate build instructions","url":"https://github.com/sainsaji/PS5-Audio-Passthrough-Research/blob/01.000.003/sample-app/README.md"}]
+    },
+    "ps5-store-ppsa11019": {
+      "compatibility": "PS5 native media app PPSA11019 for a console that runs homebrew. Requires a reachable Home Assistant server and authorized account or access token. The pinned README supplies no firmware test matrix.",
+      "preparation": "Copy the complete PPSA11019 folder to /data/homebrew/PPSA11019 for your compatible loader, then open Home5 from Media. Enter the Home Assistant server's actual IP address and port; the author says homeassistant.local does not resolve on PS5. Sign in within the app and create your rooms manually.",
+      "requirements": ["Compatible native PS5 homebrew app environment", "Reachable Home Assistant instance", "Home Assistant credentials or an authorized long-lived access token"],
+      "installationSteps": ["Extract PPSA11019.zip and copy the complete PPSA11019 folder under /data/homebrew/.", "Open Home5 from Media and enter your own Home Assistant server IP/port, then complete sign-in in the app.", "Create rooms with Options > New room. The app does not import or change the Home Assistant room structure automatically.", "If using the documented USB token-file option, follow the source's cleanup instruction after importing it."],
+      "installDirectory": "/data/homebrew/PPSA11019",
+      "firmwareSupport": {"tested": [], "notes": "No firmware-specific matrix in the pinned README."},
+      "primaryDocumentation": [{"label":"Pinned installation and Home Assistant setup","url":"https://github.com/bornaradusin/Home5/blob/1.0.3/README.md#using-it"}]
+    },
+    "ps5-store-prwb00001": {
+      "compatibility": "Experimental PS5 native browser PRWB00001. Requires a jailbroken PS5 with etaHEN or kstuff, ShadowMountPlus, and privileged elfldr at 127.0.0.1:9021; websrv on 8080 is a fallback. The author reports testing only firmware 13.42. The 160.6 MiB ZIP requires manual transfer/extraction outside the site's 32 MiB browser verification limit.",
+      "preparation": "Manually extract the complete PRWB00001 folder so its eboot.bin is at /data/homebrew/PRWB00001/eboot.bin. Keep prosperoweb.elf, prosperoweb-broker.elf, runtime modules, assets and licenses. Launch the native home-screen tile after ShadowMountPlus scans it; sending the browser ELF directly to Payload Manager/elfldr can create an invisible background browser instead.",
+      "requirements": ["Jailbroken PS5 with etaHEN or kstuff", "ShadowMountPlus", "Privileged ELF loader listening on 127.0.0.1:9021 for child processes; websrv 8080 fallback", "Manual transfer/extraction for this large app bundle"],
+      "installationSteps": ["Use a computer/file manager to extract the complete PRWB00001 folder; this selected archive exceeds the site's native extraction verification cap.", "Place it at /data/homebrew/PRWB00001 with its complete runtime/assets/license tree and executable permissions preserved.", "Start the required loader, wait for ShadowMountPlus's scan and launch the native ProsperoWeb tile. Its profile and log are under /data/prosperoweb/.", "The separate websrv data bundle uses different folders and its own tile. Do not substitute a loose browser ELF for either documented launch route."],
+      "installDirectory": "/data/homebrew/PRWB00001",
+      "firmwareSupport": {"tested": ["13.42"], "notes": "Only the developer's 13.42 console is reported tested. The pinned README contains older 0.1.0 wording alongside the native route; selected asset is release v0.2.0, inspected contentVersion 01.002.000."},
+      "primaryDocumentation": [{"label":"Pinned native-title requirements and launch routes","url":"https://github.com/kvaps/ProsperoWeb/blob/v0.2.0/README.md#native-title"}, {"label":"Selected v0.2.0 release","url":"https://github.com/kvaps/ProsperoWeb/releases/tag/v0.2.0"}]
+    }
+  }
+}

@@ -1,0 +1,1082 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-02T12:29:08.666Z",
+  "scope": "Read-only source and local-byte review of all existing 133 host actions. No changes to catalogues, UI, bridge or compatibility pins; no payload execution, console contact or automatic console writes.",
+  "counts": {
+    "actions": 133,
+    "capabilities": {
+      "original-host-page": 36,
+      "integrated-load": 23,
+      "game-save-bootstrap": 2,
+      "initial-loader-bootstrap": 1,
+      "original-host-payload": 14,
+      "native-game-plugin": 11,
+      "native-cheat-manager": 46
+    },
+    "integratedLoadProtocols": {
+      "elf-tcp": 2,
+      "elf-http": 8,
+      "goldhen-http": 13
+    },
+    "localReadyFilesRehashed": 95,
+    "matchingSHA256": 95,
+    "sizeMismatches": 0,
+    "missingByteMetadata": [
+      {
+        "id": "ps5-shadowmountplus",
+        "observedBytes": 3614944,
+        "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da"
+      },
+      {
+        "id": "ps5-upload",
+        "observedBytes": 6514240,
+        "sha256": "2f67651bf1320a83202b632782a1f404543b1ea4911dfb3be5a510971f015392"
+      },
+      {
+        "id": "ps5-orbit-store",
+        "observedBytes": 59691728,
+        "sha256": "a9fe33c3b0338af074edb4f7c68bb3806a84efba718e3897f94eba9dc720f914"
+      }
+    ],
+    "newlyQualifiedDirectLoads": 0
+  },
+  "sources": {
+    "nazkyHTTP": {
+      "url": "https://github.com/Nazky/PSFree/blob/af1fcfe9dc079801ed87d10e1133fb9a600f1e14/payloads/payloads.js",
+      "commit": "af1fcfe9dc079801ed87d10e1133fb9a600f1e14",
+      "capturedSHA256": "0bd3f4d58601838642b726ce88ad79fdcd1bb27198737384554a12bfd5ddd42f",
+      "localCapture": "docs/qa/host-legacy-research.json",
+      "scope": "Exact source function-to-BIN mappings and HTTP status/POST protocol; exploit fallback is a separate path."
+    },
+    "goldhenFeatures": {
+      "url": "https://github.com/GoldHEN/GoldHEN/blob/master/README.md",
+      "scope": "Official FTP/BinLoader ports, plugin support and acknowledgement that source is private. Ports alone do not establish compatibility of every binary."
+    },
+    "goldhenPluginLoader": {
+      "url": "https://github.com/GoldHEN/GoldHEN_Plugins_Repository/blob/998fe03fe0275b59310511187ba8550ed475a003/plugin_src/plugin_loader/source/main.c",
+      "commit": "998fe03fe0275b59310511187ba8550ed475a003",
+      "scope": "Native title-specific config loader; module loading and app-initialisation hook. This file supplies no HTTP PRX execution endpoint."
+    },
+    "goldhenPluginInstructions": {
+      "url": "https://github.com/GoldHEN/GoldHEN_Plugins_Repository/releases/tag/1.155",
+      "scope": "Official plugin installation prerequisite and title-specific plugins.ini workflow."
+    },
+    "goldhenPluginStates": {
+      "url": "https://github.com/GoldHEN/GoldHEN_Plugins_Repository/releases/tag/1.188",
+      "scope": "Native plugin true/false enable states; enabled plugins run when the game launches."
+    },
+    "goldhenCheats": {
+      "url": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository#usage",
+      "scope": "Native cheat menu, exact title/update filenames and storage paths; JSON is not executable payload transport."
+    },
+    "etahenCheats": {
+      "url": "https://github.com/etaHEN/PS5_Cheats#usage",
+      "scope": "Native PS5 cheat-menu formats and enable workflow."
+    },
+    "elfldr": {
+      "url": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c",
+      "version": "v0.27",
+      "scope": "Existing PS5 ELF HTTP URL interface and TCP loader protocol; see prior source audit for full behavior."
+    },
+    "ps5Manager": {
+      "url": "https://github.com/itsPLK/ps5-payload-manager/blob/3f881e8e569eba3054d1784a1962439b2eee92c2/src/http_server.c",
+      "commit": "3f881e8e569eba3054d1784a1962439b2eee92c2",
+      "scope": "Native manager request/origin validation; public browser page is not an authorized same-origin API client."
+    },
+    "goldhenLaunchPad": {
+      "url": "https://ko-fi.com/s/d64a916507",
+      "scope": "GoldHEN v2.4b18.10 native LaunchPad and AutoRun feature announcement; no public browser queue API established."
+    },
+    "control4free": {
+      "url": "https://github.com/MoHadiShibli/Control4Free/blob/main/docs/installation.md",
+      "scope": "Native LaunchPad/AutoRun setup example; not a generic HTTP queue API."
+    }
+  },
+  "protocols": {
+    "goldhen-http": {
+      "actionCount": 13,
+      "targetPlatform": "ps4",
+      "port": 9090,
+      "request": "Check /status for status=ready, then POST unchanged ArrayBuffer to /. Original Nazky source uses POST for loopback status and GET for remote address status.",
+      "prerequisites": [
+        "Exact curated BIN and PS4 firmware 9.00 source pin",
+        "GoldHEN HTTP BinLoader enabled and ready",
+        "Correct exact GTA V/RDR2 game update; retain all existing action requirements"
+      ],
+      "sources": [
+        "nazkyHTTP"
+      ],
+      "limits": [
+        "HTTP acceptance is not in-game success.",
+        "Do not replace a failed status/readiness check with silent external-host navigation.",
+        "Raw TCP and HTTP are distinct protocols even if both use port 9090."
+      ]
+    },
+    "elf-tcp": {
+      "actionCount": 2,
+      "targetPlatform": "ps4",
+      "port": 9021,
+      "request": "A paired local sender transmits unchanged verified ELF bytes over TCP to an already running compatible elfldr.",
+      "prerequisites": [
+        "PS4-specific ELF",
+        "Compatible PS4 elfldr already running and listening on TCP 9021",
+        "Paired sender; browser JavaScript has no raw TCP socket"
+      ],
+      "sources": [
+        "elfldr"
+      ],
+      "limits": [
+        "An ELF transfer is not evidence of service startup.",
+        "No numeric firmware range is inferred where the catalogue has none."
+      ]
+    },
+    "elf-http": {
+      "actionCount": 8,
+      "targetPlatform": "ps5",
+      "port": 9021,
+      "request": "The existing direct action opens the documented elfldr URI-fetch request; the paired sender can instead send verified local ELF bytes.",
+      "prerequisites": [
+        "Already jailbroken compatible PS5 with persistent elfldr",
+        "ELF URL reachable from the console; localhost desktop URL is not a console URL",
+        "Remote TCP requires a LAN-bound listener; loopback-only autoloaders need the native local manager"
+      ],
+      "sources": [
+        "elfldr"
+      ],
+      "limits": [
+        "HTTP 200 precedes downloading/spawning and does not prove payload success.",
+        "PS5 Payload Manager service on 8084 is separate and restricts browser origins."
+      ]
+    }
+  },
+  "nativePluginFinding": {
+    "supported": "The official loader reads default/title-specific plugins.ini entries, checks enabled state and calls sceKernelLoadStartModule within app initialisation.",
+    "publicBrowserLoadEndpoint": "No documented public PRX/SPRX HTTP endpoint was established by the reviewed official sources. This is a limited source finding, not a claim that no private implementation could ever provide one.",
+    "queue": "PayLoader LaunchPad/AutoRun handles native payload workflows. A public queue API was not confirmed; do not send game plugins to it by extension.",
+    "preservation": "Title IDs, exact executable/update, complete support tree, existing settings and unrelated plugins must survive installation. Do not automatically overwrite plugins.ini."
+  },
+  "binEquivalence": {
+    "reviewed": 27,
+    "existingExactNazkyHTTPMappings": 13,
+    "sourceHostOnly": 14,
+    "newlyQualified": 0,
+    "allLocalHashesMatch": true,
+    "conflicts": [
+      {
+        "actionId": "ps4-legacy-kameleon-bq138-thief",
+        "existingHTTPActionId": "ps4-beefqueef-gta5-133",
+        "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+        "sourceGamePins": [
+          "Kameleon 1.38",
+          "Nazky 1.33"
+        ],
+        "decision": "Do not enable Load for the 1.38 action on hash identity alone; preserve both source records and exact original names."
+      }
+    ],
+    "sourceDefects": [
+      {
+        "source": "nazkyHTTP",
+        "function": "load_GTAWM134",
+        "referencedFile": "WildeModz-1.34.bin",
+        "finding": "Referenced file absent in captured pinned tree; the tree contains WildeModz-1.33.bin. This does not verify Kameleon Wilde 1.33 for HTTP."
+      }
+    ],
+    "otherUnmappedActions": [
+      "ps4-arabicguy-gta5-100",
+      "ps4-lamance-gta5-138",
+      "ps4-north-beta-rdr2-129",
+      "ps4-legacy-kameleon-bq146",
+      "ps4-legacy-kameleon-bq147",
+      "ps4-legacy-kameleon-wilde132",
+      "ps4-legacy-kameleon-wilde133",
+      "ps4-legacy-kameleon-wilde146",
+      "ps4-legacy-kameleon-wilde147",
+      "ps4-legacy-kameleon-expulsion138",
+      "ps4-legacy-karo-expulsion135",
+      "ps4-legacy-karo-menubase127",
+      "ps4-legacy-karo-lts127"
+    ],
+    "evidenceFiles": [
+      "docs/host-game-source-evidence.json",
+      "docs/host-legacy-menu-review.json",
+      "docs/qa/host-legacy-research.json"
+    ]
+  },
+  "uiIntegrationRules": [
+    "Each menu family may expose one Choose version button, including a one-version family.",
+    "The variant popup may show one Download action and a separate Load action only where the exact selected action has a supported run method.",
+    "For native plugins/cheats, use explicit native setup/enable guidance; never fake Load with file-manager or original-host navigation.",
+    "A single Download can choose local download or a deliberate console save flow according to context; opening the native downloader is not proof of a completed save.",
+    "Keep original external hosts visibly separate from integrated execution.",
+    "No compatibility widening: PS4 firmware 14.00 selection does not certify any old 9.00 BIN, native PRX or PS5 payload."
+  ],
+  "relatedPriorResearch": [
+    "docs/host-console-services.md",
+    "docs/payload-management-research.json",
+    "docs/host-game-source-evidence.json",
+    "docs/host-modern-plugin-candidates.json"
+  ],
+  "verification": {
+    "noPayloadExecution": true,
+    "noConsoleContact": true,
+    "noAutomaticConsoleWrites": true,
+    "noNewDownloadOrArchiveMutation": true,
+    "files": [
+      {
+        "id": "ps4-ftpsrv-elf",
+        "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps4-ftpsrv/5f00e2df7fa8/ftpsrv-ps4.elf",
+        "bytes": 146720,
+        "sha256": "5f00e2df7fa8ab7daa084343f38394e6672cd389e03fc8598a54d7d9e1d58d16",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-klogsrv-elf",
+        "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps4-klogsrv/7e89c33eb90d/klogsrv-ps4.elf",
+        "bytes": 91208,
+        "sha256": "7e89c33eb90d44ea4644b80c56c29084d93faf415a9d64f1397a58ac7ca752d8",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-payload-manager",
+        "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-payload-manager/2a42054fd972/pldmgr_v0.6.3.elf",
+        "bytes": 2795992,
+        "sha256": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-websrv",
+        "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-websrv/54730c867c6e/websrv-ps5.elf",
+        "bytes": 1597864,
+        "sha256": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-ftpsrv",
+        "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-ftpsrv/7d4b31c83eae/ftpsrv-ps5.elf",
+        "bytes": 191864,
+        "sha256": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-klogsrv",
+        "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-klogsrv/e828ec144231/klogsrv-ps5.elf",
+        "bytes": 136016,
+        "sha256": "e828ec144231f81547cb58bc7d2c396fa984be0c2295f31364b58017816dcceb",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-elfldr",
+        "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-elfldr/82f622761017/elfldr-ps5.elf",
+        "bytes": 394568,
+        "sha256": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-shadowmountplus",
+        "downloadURL": "/downloads/archive/f22d8b3749d7/shadowmountplus.elf",
+        "bytes": 3614944,
+        "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da",
+        "hashMatches": true,
+        "sizeRecorded": false,
+        "sizeMatches": null
+      },
+      {
+        "id": "ps5-upload",
+        "downloadURL": "/downloads/archive/cd469f63fa67/ps5upload-10.6.0.elf",
+        "bytes": 6514240,
+        "sha256": "2f67651bf1320a83202b632782a1f404543b1ea4911dfb3be5a510971f015392",
+        "hashMatches": true,
+        "sizeRecorded": false,
+        "sizeMatches": null
+      },
+      {
+        "id": "ps5-orbit-store",
+        "downloadURL": "/downloads/archive/5a12cb950970/orbit_store.elf",
+        "bytes": 59691728,
+        "sha256": "a9fe33c3b0338af074edb4f7c68bb3806a84efba718e3897f94eba9dc720f914",
+        "hashMatches": true,
+        "sizeRecorded": false,
+        "sizeMatches": null
+      },
+      {
+        "id": "ps4-arabicguy-gta5-100",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/arabicguy-gta5-100-ps4-900.bin",
+        "bytes": 1055408,
+        "sha256": "0de5452601ca151ad3bb6c86c2fb97e2a0bac89b5ff77cf238638dd19bddd372",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-arabicguy-gta5-127",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-127-ps4-900.bin",
+        "bytes": 1059520,
+        "sha256": "be9ee0dacc71e94d607584770c08cdc39c1319427e9fd83424fc19dd15782aa6",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-arabicguy-gta5-132",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-132-ps4-900.bin",
+        "bytes": 1059520,
+        "sha256": "7b9c1242b0c18c4e8ce43216518c09bb8550ad31328a3dc16185d8d2ee7f7b8b",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-arabicguy-gta5-133",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/arabicguy-gta5-133-ps4-900.bin",
+        "bytes": 1059520,
+        "sha256": "617318304d6303272e5d6287f812e7c8a4c6cf99684c5664b5ec27a6704bc85b",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-beefqueef-gta5-133",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/beefqueef-gta5-133-ps4-900.bin",
+        "bytes": 1073700,
+        "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-lamance-gta5-138",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/lamance-gta5-138-ps4-900.bin",
+        "bytes": 1128208,
+        "sha256": "7c9985cae235bffd95092765a6f294d668ab8f0421344dbef6b6ddd1230b3745",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-oysters-rdr2-100",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-100-ps4-900.bin",
+        "bytes": 1190392,
+        "sha256": "199b68feb24e1d202589b7ccb7b9ee28fdf3cab5546b41bd1263939ecedb7add",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-oysters-rdr2-113",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-113-ps4-900.bin",
+        "bytes": 1190392,
+        "sha256": "089f1c3144dffb35589a7fb36a05dd54f642c1eeef3873daa3b7f4ce965af06d",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-oysters-rdr2-119",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-119-ps4-900.bin",
+        "bytes": 1190392,
+        "sha256": "370b5bd2b4bace7a2dd51bd28f9b080b1e5221f3bd9e6dec64c5e72baa183254",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-oysters-rdr2-124",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-124-ps4-900.bin",
+        "bytes": 1190392,
+        "sha256": "58e2317dd8fe1cc44ce834a174ac06e566b34eb3709ce39e088f63aa51a5944a",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-oysters-rdr2-129",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/nazky-af1fcfe9dc07/oysters-rdr2-129-ps4-900.bin",
+        "bytes": 1260864,
+        "sha256": "424f9dbf4813cd55366d446d36d0dc84aa950025a6341a47d1ac0f5f8dbf6986",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-north-beta-rdr2-129",
+        "downloadURL": "/downloads/hosts/ps4/game-menus/firmware-9.00/north-beta-rdr2-129-ps4-900.bin",
+        "bytes": 1219048,
+        "sha256": "5ab2f81616290b3f8c9705aaf127e6db8c006ff29da87c023c9c1ccdfb4db4eb",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-rdr2-60fps-v2-0",
+        "downloadURL": "/downloads/hosts/ps5/game-mods/rdr2-60fps/v2.0/RedDead2.60FPS_v2.0.elf",
+        "bytes": 154304,
+        "sha256": "646ecb71e80415ab9d9c651539451d38ee0052a5997f7ef7504a42932c7f8261",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-157-expulsion-v7-0",
+        "downloadURL": "/downloads/console-ready/expulsion-v7-ready/PS4/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+        "bytes": 1775984,
+        "sha256": "823656c96305e4373ec132d8f5dfd9fa2ec24a38d941dfb980f92616d84cb268",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-157-beach",
+        "downloadURL": "/downloads/ps4/GTA5/157/BeachMenu157.prx",
+        "bytes": 1230442,
+        "sha256": "d622d3d867244e5854e4773b9e03631d24918e26b634c4b74c8678b01ed06b8a",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-cyprus-1-57",
+        "downloadURL": "/downloads/ps4-ps5/gta5-cyprus-1-57/CyprusMenu.prx",
+        "bytes": 724286,
+        "sha256": "7731188ec03a0bee74fe0946ffcf6eefed466c13a9b68c4a29df3263bd724157",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-explosive-1-57",
+        "downloadURL": "/downloads/ps4-ps5/gta5-explosive-1-57/explosive_temp.sprx",
+        "bytes": 1037599,
+        "sha256": "4986ff700f57d72a61516abd0daa6cf1ba557a63b4fe39c1eecc38064c1f2e6a",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-157-expulsion-v5-0",
+        "downloadURL": "/downloads/console-ready/expulsion-v5-ready/data/GoldHEN/plugins/LushModz-Expulsion-1.57.prx",
+        "bytes": 909328,
+        "sha256": "dfdc05bbe590bced0ca53059c017cb05c18054695a90053b7c91da269fb57dc3",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-157-lts",
+        "downloadURL": "/downloads/ps4/GTA5/157/LRS.prx",
+        "bytes": 2187104,
+        "sha256": "4816609641ec21b9a7f151abe19eb234dee69c959d0da8a7a7c1718185704a96",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-157-serendipity",
+        "downloadURL": "/downloads/ps4/GTA5/157/Seren.prx",
+        "bytes": 1956688,
+        "sha256": "e4f085add22697b0bb3ef8f0028f1fe373ff4737ae3a1d7b2bb1a24afff18f35",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-157-velora-1-5",
+        "downloadURL": "/downloads/ps4/GTA5/157/Velora.sprx",
+        "bytes": 1718289,
+        "sha256": "e6e79ad27a87f2b7ea9d519167e5d9c48d096bdf1a17b2abf1de70c057bd2653",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-156-beach",
+        "downloadURL": "/downloads/ps4/GTA5/156/BeachMenu156.prx",
+        "bytes": 1320839,
+        "sha256": "8ca31fa51e3401f678a9514fe4a93976d5a52c685fe07a3d2772a1523c90c073",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-cyprus-1-56",
+        "downloadURL": "/downloads/ps4-ps5/gta5-cyprus-1-56/CyprusMenu.prx",
+        "bytes": 724382,
+        "sha256": "9bedea869077bb6016171a79823b4b98703631d904b1cb52173dd97349fbb1c0",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-modern-gta5-156-velora",
+        "downloadURL": "/downloads/ps4/GTA5/156/Velora.sprx",
+        "bytes": 882981,
+        "sha256": "d50d1582a67d978e347692b3bce951262dd061a649e75410595ae36f9bec3823",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "gta5-ps5-04263-01010002",
+        "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA04263_01.010.002.mc4",
+        "bytes": 3928,
+        "sha256": "25c47d2bb864fd065d2645e7bc13a45b12f046c18786f310d9c217d111181910",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "gta5-ps5-04264-01005000",
+        "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA04264_01.005.000.mc4",
+        "bytes": 6380,
+        "sha256": "7460de5fa64318bc7544eeb7ae1b1ef06f148df78f2668df93d838a9c57cb695",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "gta5-ps5-04264-01010002",
+        "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA04264_01.010.002.mc4",
+        "bytes": 3928,
+        "sha256": "fc5de09d593fc308c10f308ea94832116b7aa6ee5c68d9eabe74f951a3db46c6",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "miles-morales-ps5-01417-01013002",
+        "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA01417_01.013.002.json",
+        "bytes": 7658,
+        "sha256": "4eb328cdf5d89aaacf3bd24341947cd249e3396fd437961dd353a00fd0cd21e2",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "miles-morales-ps5-01460-01015001",
+        "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA01460_01.015.001.json",
+        "bytes": 3717,
+        "sha256": "e51ef057511671d4175e6d4f3b6fa25228d7e2d6f9597daecaf43909ec21be7a",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "sonic-frontiers-ps5-03831-01041000",
+        "downloadURL": "/downloads/hosts/ps5/cheats/hen-cheats-collection/39a55c2b0030/PPSA03831_01.041.000.json",
+        "bytes": 6024,
+        "sha256": "58863f93e82adcc14cc853451742c28d61ff477b45fe9b5c670496728100a0c5",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-nazky-bq134",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-bq134-game-1.34-ps4-900.bin",
+        "bytes": 1063880,
+        "sha256": "e34c81b6464dbc58fe69458823d8e4029c93d4e9bfdc601c56f8430b4c3aaaf5",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-nazky-bq138",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-bq138-game-1.38-ps4-900.bin",
+        "bytes": 1073836,
+        "sha256": "1c649bab177d47b0128b28b16e1b5002195f5ebf4d4eddb06dc54f6965f93e9e",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-nazky-wilde132",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-wilde132-game-1.32-ps4-900.bin",
+        "bytes": 1074320,
+        "sha256": "f8ec40617e59fcfbba033547f17a567c82ed50fb00563f3349f0d88283ccd2b9",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-nazky-wilde138",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/af1fcfe9dc07/nazky-wilde138-game-1.38-ps4-900.bin",
+        "bytes": 592864,
+        "sha256": "2da00a14596b5e148097d209c3ca440c064e85356d10d61f584743a59895ce92",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-bq138-thief",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-bq138-thief-game-1.38-ps4-900.bin",
+        "bytes": 1073700,
+        "sha256": "0339fe9288121cb7c74ef81a55cc7b8620d4383c8f053014671340fa7d6204e6",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-bq146",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-bq146-game-1.46-ps4-900.bin",
+        "bytes": 480804,
+        "sha256": "fbae10e4d9c0ac09e745755959a1c71a444a1c16bb5da2c51361e56fef1e2c00",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-bq147",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-bq147-game-1.47-ps4-900.bin",
+        "bytes": 480740,
+        "sha256": "a8a6789cd8873224dde81f4924cfd12f9d87f430e552d50064e9aabd23171ead",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-wilde132",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde132-game-1.32-ps4-900.bin",
+        "bytes": 1080016,
+        "sha256": "007f3418bee3f2fe27034262a84a148a9f8c0577e517133286a19c4bf18d55eb",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-wilde133",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde133-game-1.33-ps4-900.bin",
+        "bytes": 1080016,
+        "sha256": "d9ebf4cdf4150ac59865d7744713dfc99037ad75b08ea7551c5bcb3e992972a9",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-wilde146",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde146-game-1.46-ps4-900.bin",
+        "bytes": 2610904,
+        "sha256": "9a8bc055f89a056b12b5bfd56c8b4b55f4f66025e9bea48475eae38b25f1a45b",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-wilde147",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-wilde147-game-1.47-ps4-900.bin",
+        "bytes": 2819184,
+        "sha256": "beac207b97220a57f22c9a7ec9064e6fdb2ef98ec33852b2ee1c5f7a1717010f",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-kameleon-expulsion138",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/da9c138e47c5/kameleon-expulsion138-game-1.38-ps4-900.bin",
+        "bytes": 1055312,
+        "sha256": "c3df5201df8b17add26ea58794d3ec95d39a021586f1e4e2517b48fa540754e1",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-karo-expulsion135",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/743646c9df9a/karo-expulsion135-game-1.35-ps4-900.bin",
+        "bytes": 1055264,
+        "sha256": "ef21be6c36b117ba8b362c1488ae887a0daece3d7a791bc2ac3130a6d27ff1af",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-karo-menubase127",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/743646c9df9a/karo-menubase127-game-1.27-ps4-900.bin",
+        "bytes": 1054984,
+        "sha256": "822d4897941512e8cbf29806e1985848aceb5c54bb3f9149d52df07e8b0e8545",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps4-legacy-karo-lts127",
+        "downloadURL": "/downloads/hosts/ps4/legacy-menus/743646c9df9a/karo-lts127-game-1.27-ps4-900.bin",
+        "bytes": 1054664,
+        "sha256": "ead0911d40795a0503305dd739680bb3ebd3f51e9b65a9878101c4bd9c2aaf10",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa03290-01-03",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03290-01-03/CUSA03290_01.03.json",
+        "bytes": 1853,
+        "sha256": "d4fbc6fd4ec69f08eebead146971b695a5a1bf0b34ca822341354a48d10b7d68",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa03291-01-03",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03291-01-03/CUSA03291_01.03.json",
+        "bytes": 1409,
+        "sha256": "6ababd420bc867d6dbfc36f445c4cf3b483d70249418a112955e4e53ea1cef08",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa03991-01-00",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03991-01-00/CUSA03991_01.00.json",
+        "bytes": 2149,
+        "sha256": "6d78917053ab62a993853282af124f71bc7825cb7eb276b8805c803f32230348",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa03991-01-35",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03991-01-35/CUSA03991_01.35.json",
+        "bytes": 4863,
+        "sha256": "ddbaeb4f66deadedef7dada84cfedda1c90471ae99b5874d3e0b19fa43289475",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa12555-01-00",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa12555-01-00/CUSA12555_01.00.json",
+        "bytes": 2350,
+        "sha256": "310516df7924cd96e7281a791ecaf94c375050bf3deb71682f57e36a19ebf505",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa12555-01-01",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa12555-01-01/CUSA12555_01.01.json",
+        "bytes": 2349,
+        "sha256": "0b8f6ecadab15f31c62174d4da876fad4a70bd0fdb7e3f3d458f50bd31d197a8",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa12555-01-30",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa12555-01-30/CUSA12555_01.30.json",
+        "bytes": 3202,
+        "sha256": "f227052ba1366a106aae4e9d08d3bf66049c9419742208ef7b72bb50ccca122e",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa27043-01-10",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa27043-01-10/CUSA27043_01.10.json",
+        "bytes": 3319,
+        "sha256": "e4d0c327f98eda803d87beffe85331bb626d25f51256b8985b80038b12e6276f",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa02962-01-37",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa02962-01-37/CUSA02962_01.37.json",
+        "bytes": 19908,
+        "sha256": "1a7c447379733adce25d8c5376cf2b42f1d9225593e1daf801e5b509ae221bb5",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa05574-04-06",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa05574-04-06/CUSA05574_04.06.json",
+        "bytes": 13640,
+        "sha256": "729d5e405004a3f860c866f132fa5f04a8a8c3d70244ecd1e828f4a14eed02a2",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa07410-01-35",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa07410-01-35/CUSA07410_01.35.json",
+        "bytes": 2230,
+        "sha256": "5c8187ee948e54b9812e43afb1f67e0668f50908947c23243ee90c87877b5b82",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa34386-06-02",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa34386-06-02/CUSA34386_06.02.json",
+        "bytes": 2894,
+        "sha256": "4514eaef84d36605c9b53dfc0929b406c588652e687c6e830be2f65af5c60ee4",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa10211-01-54",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa10211-01-54/CUSA10211_01.54.json",
+        "bytes": 10243,
+        "sha256": "ead367bb8651c82b145ec8e03f7b542bdbf0e23142aefde9efe21d8457324e5a",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa09171-01-05",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa09171-01-05/CUSA09171_01.05.json",
+        "bytes": 2236,
+        "sha256": "c4d14bf36ce01e00619e5491d7c354e1f1a3b1561c9b1bf52b8a9340361a2aef",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa14168-01-05",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa14168-01-05/CUSA14168_01.05.json",
+        "bytes": 1019,
+        "sha256": "435d5660b04f571447073f3c4166fd5d9d2594b4ac4547850defe80744746fbc",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa33388-01-04",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa33388-01-04/CUSA33388_01.04.json",
+        "bytes": 4194,
+        "sha256": "f8bee169fbee9ca4b8f18b175c03c375b2ed0e577b6658dcbd59f49e58ef09fc",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa28863-01-22",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa28863-01-22/CUSA28863_01.22.json",
+        "bytes": 24786,
+        "sha256": "cfd181fb86f73ff04df1a996293f5e94ac7d6f463213dd275116005656596076",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa13801-01-06",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa13801-01-06/CUSA13801_01.06.json",
+        "bytes": 2294,
+        "sha256": "8fa4d2dc0dd3231a588c9a33a1d6d8fda1c812c458ea71b0b763805b4dac0e6b",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa02092-01-12",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa02092-01-12/CUSA02092_01.12.json",
+        "bytes": 990,
+        "sha256": "58ca70551863aca205ab8fde139819494f214e22f1b98138526acb2743f1af46",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa13338-01-25",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa13338-01-25/CUSA13338_01.25.json",
+        "bytes": 4901,
+        "sha256": "c77e0c5970804060ccf773bbf254531a986114cdebc206df2e3809b5ed20681e",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa05904-01-15",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa05904-01-15/CUSA05904_01.15.json",
+        "bytes": 2702,
+        "sha256": "6cb656425459fffe50b11920c289ec1d3b8c03ece3a741d676a0da7cee92f3f4",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa11454-01-12",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa11454-01-12/CUSA11454_01.12.json",
+        "bytes": 2350,
+        "sha256": "4356e33e8d98e513a624e8bdb9b7664f80efd40062baa1e9243ef736066528c4",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa00341-01-33",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00341-01-33/CUSA00341_01.33.json",
+        "bytes": 504,
+        "sha256": "a11a60c6aec6699d4995b9f2c0dc76e9a939b84cd8ae853acbe09039ddd36869",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa07875-01-08",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa07875-01-08/CUSA07875_01.08.json",
+        "bytes": 674,
+        "sha256": "b8e4db7485f9e63ac385693fc34d5c2c6469cbb2bc0dd470458f4d29c62b76ce",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa00207-01-09",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00207-01-09/CUSA00207_01.09.json",
+        "bytes": 2653,
+        "sha256": "d4da403382829c29fcf6afe29e9bba5fae320ac73feded091f41bf8e29c7bb93",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa00208-01-09",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00208-01-09/CUSA00208_01.09.json",
+        "bytes": 2653,
+        "sha256": "3943d226cb78133b29309dee54ccdab45a19826d7bb09eb32c8b6b461a62e1ad",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa00900-01-09",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa00900-01-09/CUSA00900_01.09.json",
+        "bytes": 2653,
+        "sha256": "668127e64c77985e08361dca6144088b7944542d7069330458a62c44a7ac432c",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa16579-01-61",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa16579-01-61/CUSA16579_01.61.json",
+        "bytes": 22248,
+        "sha256": "155d2921111667e912686a74d744d06212102ce15441eb2e1dd3ce5d2edda2be",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa15778-01-06",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa15778-01-06/CUSA15778_01.06.json",
+        "bytes": 1168,
+        "sha256": "048ff952981d284d3994cc5688e5ee2a33d6a4a2a7ff1d8071894733c84cdf2f",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa03309-01-03",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa03309-01-03/CUSA03309_01.03.json",
+        "bytes": 1014,
+        "sha256": "3772c268ac763c020d2797cc112b78d28a9054865e77c9fb3f50661a57769065",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa24705-01-18",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa24705-01-18/CUSA24705_01.18.json",
+        "bytes": 4431,
+        "sha256": "93d3149929d21c3c5ad0ffacd22f76ee2fe0e73fa849304e3379b29a2a3f5955",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa28561-01-18",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa28561-01-18/CUSA28561_01.18.json",
+        "bytes": 4430,
+        "sha256": "92078576141bc29f12a98e9ff7963c94df25f8951ab6eae7506e54156fc5b8d8",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa01067-01-00",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa01067-01-00/CUSA01067_01.00.json",
+        "bytes": 968,
+        "sha256": "bb9ed3247032aab9558ecc6280e866e78dfc327239f9de1b451908801a466db3",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "goldhen-cusa02882-01-00",
+        "downloadURL": "/downloads/ps4-ps5/goldhen-cusa02882-01-00/CUSA02882_01.00.json",
+        "bytes": 12004,
+        "sha256": "b7999dfcc7c129efbfc08bd8a8408b0c79ef8a192ee6212a117766b77a1938a6",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-native-cheats-ppsa10662-01-001-030",
+        "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa10662-01-001-030/PPSA10662_01.001.030.json",
+        "bytes": 1640,
+        "sha256": "ff004b7c81b0ebeb69a9bc3b76c4642e76495299373eb17d6b8a85cec6d0ea46",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-native-cheats-ppsa09663-01-000-000",
+        "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa09663-01-000-000/PPSA09663_01.000.000.json",
+        "bytes": 1337,
+        "sha256": "64b48d7605989d5ba1c0e337b64a20e41a59f58714c4824d9e1f38a2794a99d8",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-native-cheats-ppsa08710-01-005-000",
+        "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa08710-01-005-000/PPSA08710_01.005.000.json",
+        "bytes": 1407,
+        "sha256": "e8acaefdb28aaa5c6f9610d39050f60e6bd0a3d71710216772c924bf05356661",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-native-cheats-ppsa21564-01-007-000",
+        "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa21564-01-007-000/PPSA21564_01.007.000.json",
+        "bytes": 949,
+        "sha256": "42d3d4c39c7f607eedc1205014176790eb6c782fd20f20d264fff14c41a6d683",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-native-cheats-ppsa23226-01-000-010",
+        "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa23226-01-000-010/PPSA23226_01.000.010.json",
+        "bytes": 1577,
+        "sha256": "067fb30324492c673cb42646f847df040f9ec28de4fda945058818ad390cd23d",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      },
+      {
+        "id": "ps5-native-cheats-ppsa09911-01-000-000",
+        "downloadURL": "/downloads/ps4-ps5/ps5-native-cheats-ppsa09911-01-000-000/PPSA09911_01.000.000.json",
+        "bytes": 947,
+        "sha256": "489497800a06e8995a3798e601c12fa27a305fdde2f0151a980ba2b71ea2f1b3",
+        "hashMatches": true,
+        "sizeRecorded": true,
+        "sizeMatches": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,994 @@
+{
+  "checkedAt": "2026-11-02",
+  "apps": [
+    {
+      "id": "anemone3ds",
+      "title": "Anemone3DS",
+      "group": "apps",
+      "version": "v3.0.1",
+      "project": "https://github.com/astronautlevel2/Anemone3DS",
+      "releaseUrl": "https://github.com/astronautlevel2/Anemone3DS/releases/tag/v3.0.1",
+      "description": "Manage HOME Menu themes, boot splashes and badges.",
+      "requirements": "Luma3DS custom firmware; CIA installs to HOME Menu, 3DSX runs through Homebrew Launcher. Theme folders or ZIPs belong in /Themes; splash folders in /Splashes. Open HOME Menu theme settings once first. Region-changed systems must use a functioning HOME Menu/theme extdata for their installed region.",
+      "tags": [
+        "themes",
+        "splash",
+        "badges"
+      ],
+      "author": "A. Taber",
+      "assets": [
+        {
+          "name": "Anemone3DS.3dsx",
+          "url": "https://github.com/astronautlevel2/Anemone3DS/releases/download/v3.0.1/Anemone3DS.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/Anemone3DS.3dsx",
+          "selection": "Anemone3DS.3dsx"
+        },
+        {
+          "name": "Anemone3DS.cia",
+          "url": "https://github.com/astronautlevel2/Anemone3DS/releases/download/v3.0.1/Anemone3DS.cia",
+          "format": "CIA",
+          "installTarget": "/Anemone3DS.cia",
+          "selection": "Anemone3DS.cia"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Get themes mode",
+          "url": "https://db.universal-team.net/assets/images/screenshots/anemone3ds/get-themes-mode.png"
+        },
+        {
+          "description": "Theme list",
+          "url": "https://db.universal-team.net/assets/images/screenshots/anemone3ds/theme-list.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/astronautlevel2/Anemone3DS",
+        "https://db.universal-team.net/3ds/anemone3ds"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/anemone3ds.png"
+    },
+    {
+      "id": "pksm",
+      "title": "PKSM",
+      "group": "apps",
+      "version": "10.4.2",
+      "project": "https://github.com/FlagBrew/PKSM",
+      "releaseUrl": "https://github.com/FlagBrew/PKSM/releases/tag/10.4.2",
+      "description": "On-console Pokémon save manager and editor with storage banks.",
+      "requirements": "Supported Pokémon save files; back up each save in Checkpoint before editing. It manages saves, it does not supply the games. Internet is used to obtain verified additional assets. See project wiki for exact generation/title/save support.",
+      "tags": [
+        "saves",
+        "pokemon",
+        "backup"
+      ],
+      "author": "FlagBrew",
+      "assets": [
+        {
+          "name": "PKSM.3dsx",
+          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.2/PKSM.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/PKSM.3dsx",
+          "selection": "PKSM.3dsx"
+        },
+        {
+          "name": "PKSM.cia",
+          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.2/PKSM.cia",
+          "format": "CIA",
+          "installTarget": "/PKSM.cia",
+          "selection": "PKSM.cia"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/FlagBrew/PKSM",
+        "https://db.universal-team.net/3ds/pksm"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained."
+    },
+    {
+      "id": "super-haxagon",
+      "title": "Super-Haxagon",
+      "group": "games",
+      "version": "3.9.1",
+      "project": "https://github.com/RedTopper/Super-Haxagon",
+      "releaseUrl": "https://github.com/RedTopper/Super-Haxagon/releases/tag/3.9.1",
+      "description": "A complete homebrew arcade game inspired by Super Hexagon: dodge rotating walls and survive.",
+      "requirements": "Extract the 3DS package and use its SuperHaxagon.3dsx in /3ds or install SuperHaxagon.cia. Assets are bundled; no commercial game files or BIOS are needed. Use the included README for 3DS controls.",
+      "tags": [
+        "homebrew",
+        "game",
+        "arcade"
+      ],
+      "author": "AJ Walter",
+      "assets": [
+        {
+          "name": "SuperHaxagon-3DS-armhf.3dsx.zip",
+          "url": "https://github.com/RedTopper/Super-Haxagon/releases/download/3.9.1/SuperHaxagon-3DS-armhf.3dsx.zip",
+          "format": "ZIP",
+          "installTarget": "/SuperHaxagon-3DS-armhf.3dsx.zip",
+          "selection": "SuperHaxagon.3dsx"
+        },
+        {
+          "name": "SuperHaxagon-3DS-armhf.cia.zip",
+          "url": "https://github.com/RedTopper/Super-Haxagon/releases/download/3.9.1/SuperHaxagon-3DS-armhf.cia.zip",
+          "format": "ZIP",
+          "installTarget": "/SuperHaxagon-3DS-armhf.cia.zip",
+          "selection": "SuperHaxagon.cia"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Gameplay 1",
+          "url": "https://db.universal-team.net/assets/images/screenshots/super-haxagon/gameplay-1.png"
+        },
+        {
+          "description": "Gameplay 2",
+          "url": "https://db.universal-team.net/assets/images/screenshots/super-haxagon/gameplay-2.png"
+        },
+        {
+          "description": "Gameplay 3",
+          "url": "https://db.universal-team.net/assets/images/screenshots/super-haxagon/gameplay-3.png"
+        },
+        {
+          "description": "Gameplay 4",
+          "url": "https://db.universal-team.net/assets/images/screenshots/super-haxagon/gameplay-4.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/RedTopper/Super-Haxagon",
+        "https://db.universal-team.net/3ds/super-haxagon"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/super-haxagon.png"
+    },
+    {
+      "id": "prboom3ds",
+      "title": "prboom3ds",
+      "group": "games",
+      "version": "v0.7-alpha",
+      "project": "https://github.com/elhobbs/prboom3ds",
+      "releaseUrl": "https://github.com/elhobbs/prboom3ds/releases/tag/v0.7-alpha",
+      "description": "Doom engine port for 3DS with stereoscopic view controls.",
+      "requirements": "Prerelease v0.7-alpha. Place prboom.wad plus a legally obtained Doom IWAD (for example doom.wad or doom2.wad) in /3ds/prboom3ds/. The engine download does not include commercial Doom game data; optional PWADs still need their matching IWAD.",
+      "tags": [
+        "port",
+        "doom",
+        "fps",
+        "data-required"
+      ],
+      "author": "elhobbs",
+      "assets": [
+        {
+          "name": "prboom3ds.3dsx",
+          "url": "https://github.com/elhobbs/prboom3ds/releases/download/v0.7-alpha/prboom3ds.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "prboom3ds.cia",
+          "url": "https://github.com/elhobbs/prboom3ds/releases/download/v0.7-alpha/prboom3ds.cia",
+          "format": "CIA"
+        },
+        {
+          "name": "prboom3ds.smdh",
+          "url": "https://github.com/elhobbs/prboom3ds/releases/download/v0.7-alpha/prboom3ds.smdh",
+          "format": "SMDH"
+        },
+        {
+          "name": "prboom.wad",
+          "url": "https://github.com/elhobbs/prboom3ds/releases/download/v0.7-alpha/prboom.wad",
+          "format": "WAD"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/elhobbs/prboom3ds",
+        "https://db.universal-team.net/3ds/prboom3ds",
+        "https://github.com/elhobbs/prboom3ds/releases/expanded_assets/v0.7-alpha"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained."
+    },
+    {
+      "id": "3dshell",
+      "title": "3DShell",
+      "group": "apps",
+      "version": "v5.1.0",
+      "project": "https://github.com/joel16/3DShell",
+      "releaseUrl": "https://github.com/joel16/3DShell/releases/tag/v5.1.0",
+      "description": "File manager for browsing and organizing files on the console SD card.",
+      "requirements": "Use stable v5.1.0 rather than the separately published next-v1.00 prerelease. CIA needs custom firmware; 3DSX needs Homebrew Launcher. Keep a PC backup before moving/deleting files, especially Nintendo 3DS and save data.",
+      "tags": [
+        "files",
+        "storage",
+        "utility"
+      ],
+      "author": "Joel",
+      "assets": [
+        {
+          "name": "3DShell.3dsx",
+          "url": "https://github.com/joel16/3DShell/releases/download/v5.1.0/3DShell.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/3DShell.3dsx",
+          "selection": "3DShell.3dsx"
+        },
+        {
+          "name": "3DShell.cia",
+          "url": "https://github.com/joel16/3DShell/releases/download/v5.1.0/3DShell.cia",
+          "format": "CIA",
+          "installTarget": "/3DShell.cia",
+          "selection": "3DShell.cia"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Settings",
+          "url": "https://db.universal-team.net/assets/images/screenshots/3dshell/settings.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/joel16/3DShell",
+        "https://db.universal-team.net/3ds/3dshell"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/3dshell.png"
+    },
+    {
+      "id": "3dsident",
+      "title": "3DSident",
+      "group": "apps",
+      "version": "0.94",
+      "project": "https://github.com/joel16/3DSident",
+      "releaseUrl": "https://github.com/joel16/3DSident/releases/tag/0.94",
+      "description": "Read hardware, firmware, battery and system information directly on the handheld.",
+      "requirements": "Runs as CIA on a custom-firmware system or 3DSX in Homebrew Launcher. Useful for identifying the actual Old/New model before choosing model-limited software. No BIOS or game data needed.",
+      "tags": [
+        "hardware",
+        "diagnostics",
+        "model"
+      ],
+      "author": "Joel",
+      "assets": [
+        {
+          "name": "3DSident.3dsx",
+          "url": "https://github.com/joel16/3DSident/releases/download/0.94/3DSident.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/3DSident.3dsx",
+          "selection": "3DSident.3dsx"
+        },
+        {
+          "name": "3DSident.cia",
+          "url": "https://github.com/joel16/3DSident/releases/download/0.94/3DSident.cia",
+          "format": "CIA",
+          "installTarget": "/3DSident.cia",
+          "selection": "3DSident.cia"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Kernel",
+          "url": "https://db.universal-team.net/assets/images/screenshots/3dsident/kernel.png"
+        },
+        {
+          "description": "Storage",
+          "url": "https://db.universal-team.net/assets/images/screenshots/3dsident/storage.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/joel16/3DSident",
+        "https://db.universal-team.net/3ds/3dsident"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/3dsident.png"
+    },
+    {
+      "id": "daedalusx64",
+      "title": "DaedalusX64-3DS",
+      "group": "emulators",
+      "version": "v1.0",
+      "project": "https://github.com/masterfeizz/DaedalusX64-3DS",
+      "releaseUrl": "https://github.com/masterfeizz/DaedalusX64-3DS/releases/tag/v1.0",
+      "description": "Nintendo 64 emulator port with dynamic recompilation and hardware rendering.",
+      "requirements": "New 3DS/New 2DS is the practical target; compatibility and speed vary substantially by game. Extract the release data archive to the SD root; put at least one legally dumped ROM in /3ds/DaedalusX64/Roms/. Use recent Luma and dumped DSP firmware. Remove an older preferences.ini when following the release upgrade instructions.",
+      "tags": [
+        "n64",
+        "new3ds",
+        "emulator",
+        "dsp"
+      ],
+      "author": "Felipe Izzo",
+      "assets": [
+        {
+          "name": "DaedalusX64.3dsx",
+          "url": "https://github.com/masterfeizz/DaedalusX64-3DS/releases/download/v1.0/DaedalusX64.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/DaedalusX64.3dsx",
+          "selection": "DaedalusX64.3dsx"
+        },
+        {
+          "name": "DaedalusX64.cia",
+          "url": "https://github.com/masterfeizz/DaedalusX64-3DS/releases/download/v1.0/DaedalusX64.cia",
+          "format": "CIA",
+          "installTarget": "/DaedalusX64.cia",
+          "selection": "DaedalusX64.cia"
+        },
+        {
+          "name": "3ds.zip",
+          "url": "https://github.com/masterfeizz/DaedalusX64-3DS/releases/download/v1.0/3ds.zip",
+          "format": "ZIP",
+          "role": "required support data",
+          "note": "Exact archive filename verified against official v1.0 expanded release assets; extract its 3ds folder to the SD root."
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Mario kart 64",
+          "url": "https://db.universal-team.net/assets/images/screenshots/daedalusx64-3ds/mario-kart-64.png"
+        },
+        {
+          "description": "Super mario 64",
+          "url": "https://db.universal-team.net/assets/images/screenshots/daedalusx64-3ds/super-mario-64.png"
+        },
+        {
+          "description": "Touch screen menu",
+          "url": "https://db.universal-team.net/assets/images/screenshots/daedalusx64-3ds/touch-screen-menu.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/masterfeizz/DaedalusX64-3DS",
+        "https://db.universal-team.net/3ds/daedalusx64-3ds",
+        "https://github.com/masterfeizz/DaedalusX64-3DS/releases/expanded_assets/v1.0"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/daedalusx64.png"
+    },
+    {
+      "id": "snes9x-3ds",
+      "title": "Snes9x (updated fork)",
+      "group": "emulators",
+      "version": "v1.61",
+      "project": "https://github.com/matbo87/snes9x_3ds",
+      "releaseUrl": "https://github.com/matbo87/snes9x_3ds/releases/tag/v1.61",
+      "description": "Updated Snes9x port with save-state previews, scaling, scanlines and compatibility fixes.",
+      "requirements": "Supports original 3DS/2DS and New models; demanding enhancement-chip games can run more slowly on original hardware. Supply legally dumped SNES ROMs. No general SNES BIOS is needed; consult the project known-issues list for Satellaview/BS-X and title-specific exceptions. Current fork uses NDSP audio, so complete DSP setup.",
+      "tags": [
+        "snes",
+        "old3ds",
+        "new3ds",
+        "emulator"
+      ],
+      "author": "bubble2k16 / matbo87 / willjow / Xeddius-Network",
+      "assets": [
+        {
+          "name": "snes9x_3ds.3dsx",
+          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v1.61/snes9x_3ds.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/snes9x_3ds.3dsx",
+          "selection": "snes9x_3ds.3dsx"
+        },
+        {
+          "name": "snes9x_3ds.cia",
+          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v1.61/snes9x_3ds.cia",
+          "format": "CIA",
+          "installTarget": "/snes9x_3ds.cia",
+          "selection": "snes9x_3ds.cia"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Loading a game",
+          "url": "https://db.universal-team.net/assets/images/screenshots/snes9x-updated-fork/loading-a-game.png"
+        },
+        {
+          "description": "Menu",
+          "url": "https://db.universal-team.net/assets/images/screenshots/snes9x-updated-fork/menu.png"
+        },
+        {
+          "description": "Playing a game",
+          "url": "https://db.universal-team.net/assets/images/screenshots/snes9x-updated-fork/playing-a-game.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/matbo87/snes9x_3ds",
+        "https://db.universal-team.net/3ds/snes9x-updated-fork"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/snes9x-3ds.png"
+    },
+    {
+      "id": "fbi",
+      "title": "FBI (Nintendo Homebrew archive)",
+      "group": "apps",
+      "version": "2.6.1",
+      "project": "https://github.com/nh-server/FBI-NH",
+      "releaseUrl": "https://github.com/nh-server/FBI-NH/releases/tag/2.6.1",
+      "description": "Nintendo Homebrew archive of the original FBI title manager release.",
+      "requirements": "Archived FBI 2.6.1 release, not a new fork version. Use on a system already running custom firmware. CIA files are installers; install only software you trust and keep homebrew 3DSX separate from installed titles. Follow 3ds.hacks.guide finalizing setup for initial FBI installation.",
+      "tags": [
+        "installer",
+        "cia",
+        "title-manager"
+      ],
+      "author": "Steveice10 & Nintendo Homebrew",
+      "assets": [
+        {
+          "name": "FBI.3dsx",
+          "url": "https://github.com/nh-server/FBI-NH/releases/download/2.6.1/FBI.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/FBI.3dsx",
+          "selection": "FBI.3dsx"
+        },
+        {
+          "name": "FBI.cia",
+          "url": "https://github.com/nh-server/FBI-NH/releases/download/2.6.1/FBI.cia",
+          "format": "CIA",
+          "installTarget": "/FBI.cia",
+          "selection": "FBI.cia"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/nh-server/FBI-NH",
+        "https://db.universal-team.net/3ds/fbi-nh"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained."
+    },
+    {
+      "id": "dsp1",
+      "title": "DSP1",
+      "group": "apps",
+      "version": "v1.0",
+      "project": "https://github.com/zoogie/DSP1",
+      "releaseUrl": "https://github.com/zoogie/DSP1/releases/tag/v1.0",
+      "description": "Dump the handheld DSP firmware needed by homebrew audio applications.",
+      "requirements": "Creates /3ds/dspfirm.cdc from your own console. Use the DSP1 CIA or 3DSX; DSP2 is an alternative CIA with automatic self-removal and is intentionally not selected here. No downloaded DSP firmware is supplied.",
+      "tags": [
+        "audio",
+        "dsp",
+        "setup"
+      ],
+      "author": "zoogie",
+      "assets": [
+        {
+          "name": "DSP1.3dsx",
+          "url": "https://github.com/zoogie/DSP1/releases/download/v1.0/DSP1.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/DSP1.3dsx",
+          "selection": "DSP1.3dsx"
+        },
+        {
+          "name": "DSP1.cia",
+          "url": "https://github.com/zoogie/DSP1/releases/download/v1.0/DSP1.cia",
+          "format": "CIA",
+          "installTarget": "/DSP1.cia",
+          "selection": "DSP1.cia"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/zoogie/DSP1",
+        "https://db.universal-team.net/3ds/dsp1"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained."
+    },
+    {
+      "id": "red-viper",
+      "title": "Red Viper",
+      "group": "emulators",
+      "version": "v1.3.4",
+      "project": "https://github.com/skyfloogle/red-viper",
+      "releaseUrl": "https://github.com/skyfloogle/red-viper/releases/tag/v1.3.4",
+      "description": "Virtual Boy emulator with stereoscopic 3D, configurable controls and local wireless multiplayer.",
+      "requirements": "Works on original and New 3DS/2DS; 2DS has no stereoscopic display. Requires Luma custom firmware for the dynamic recompiler and DSP firmware for audio. Load legally dumped .vb ROMs (ZIP supported) from any SD folder. Gateway-style flashcarts alone do not meet the runtime requirement.",
+      "tags": [
+        "virtual-boy",
+        "old3ds",
+        "new3ds",
+        "emulator"
+      ],
+      "author": "Floogle",
+      "assets": [
+        {
+          "name": "red-viper.3dsx",
+          "url": "https://github.com/skyfloogle/red-viper/releases/download/v1.3.4/red-viper.3dsx",
+          "format": "3DSX",
+          "installTarget": "%3DSX%/red-viper.3dsx",
+          "selection": "red-viper.3dsx"
+        },
+        {
+          "name": "red-viper.cia",
+          "url": "https://github.com/skyfloogle/red-viper/releases/download/v1.3.4/red-viper.cia",
+          "format": "CIA",
+          "installTarget": "/red-viper.cia",
+          "selection": "red-viper.cia"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Jack bros",
+          "url": "https://db.universal-team.net/assets/images/screenshots/red-viper/jack-bros.png"
+        },
+        {
+          "description": "Mario tenis",
+          "url": "https://db.universal-team.net/assets/images/screenshots/red-viper/mario-tenis.png"
+        },
+        {
+          "description": "Red alarm",
+          "url": "https://db.universal-team.net/assets/images/screenshots/red-viper/red-alarm.png"
+        },
+        {
+          "description": "Warioland",
+          "url": "https://db.universal-team.net/assets/images/screenshots/red-viper/warioland.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/skyfloogle/red-viper",
+        "https://db.universal-team.net/3ds/red-viper",
+        "https://github.com/skyfloogle/red-viper"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/red-viper.png"
+    },
+    {
+      "id": "mgba",
+      "title": "mGBA",
+      "group": "emulators",
+      "version": "0.10.5",
+      "project": "https://github.com/mgba-emu/mgba",
+      "releaseUrl": "https://github.com/mgba-emu/mgba/releases/tag/0.10.5",
+      "description": "Game Boy, Game Boy Color and Game Boy Advance software emulator with save states.",
+      "requirements": "New 3DS is recommended for GBA; original 3DS is slower and full speed is game-dependent. Supply legally dumped ROMs; original BIOS dumps are optional for normal HLE operation and needed for BIOS-specific behavior. This is software emulation, unlike open_agb_firm using native GBA hardware.",
+      "tags": [
+        "gba",
+        "gb",
+        "gbc",
+        "emulator",
+        "new3ds"
+      ],
+      "author": "mGBA",
+      "assets": [
+        {
+          "name": "mGBA-0.10.5-3ds.7z",
+          "url": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-3ds.7z",
+          "format": "7Z",
+          "installTarget": "/mGBA-0.10.5-3ds.7z",
+          "selection": "mgba.cia"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "File list",
+          "url": "https://db.universal-team.net/assets/images/screenshots/mgba/file-list.png"
+        },
+        {
+          "description": "In game menu",
+          "url": "https://db.universal-team.net/assets/images/screenshots/mgba/in-game-menu.png"
+        },
+        {
+          "description": "Scale 1x",
+          "url": "https://db.universal-team.net/assets/images/screenshots/mgba/scale-1x.png"
+        },
+        {
+          "description": "Scale aspect ratio",
+          "url": "https://db.universal-team.net/assets/images/screenshots/mgba/scale-aspect-ratio.png"
+        },
+        {
+          "description": "Scale stretch",
+          "url": "https://db.universal-team.net/assets/images/screenshots/mgba/scale-stretch.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/mgba-emu/mgba",
+        "https://db.universal-team.net/3ds/mgba",
+        "https://raw.githubusercontent.com/mgba-emu/mgba/master/README.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official Universal-DB unistore downloaded by root; direct publisher release links retained.",
+      "image": "/assets/images/3ds-more/apps/mgba.png"
+    },
+    {
+      "id": "open-agb-firm",
+      "title": "open_agb_firm",
+      "group": "emulators",
+      "version": "beta_2024-12-24",
+      "project": "https://github.com/profi200/open_agb_firm",
+      "releaseUrl": "https://github.com/profi200/open_agb_firm/releases/tag/beta_2024-12-24",
+      "description": "Run GBA games and homebrew on the 3DS built-in GBA hardware, with direct SD saves and a ROM browser.",
+      "requirements": "Original and New 3DS/2DS with Luma3DS or fastboot3DS. Extract the package, copy open_agb_firm.firm into /luma/payloads/ and merge its 3ds folder at the SD root; hold START at boot to choose it. Supply legally dumped .gba files; no external GBA BIOS download is required. Uses native hardware: no save states or GBA link cable, games over 32 MiB unsupported, sleep mode incomplete and reboot required between games. Back up old /3ds/open_agb_firm/config.ini before recreating it for this changed config format.",
+      "tags": [
+        "gba",
+        "firm",
+        "native-hardware",
+        "old3ds",
+        "new3ds"
+      ],
+      "author": "profi200",
+      "assets": [
+        {
+          "name": "open_agb_firm_beta_20241224.7z",
+          "url": "https://github.com/profi200/open_agb_firm/releases/download/beta_2024-12-24/open_agb_firm_beta_20241224.7z",
+          "format": "7Z",
+          "role": "ready FIRM and support data package"
+        }
+      ],
+      "sources": [
+        "https://github.com/profi200/open_agb_firm",
+        "https://raw.githubusercontent.com/profi200/open_agb_firm/master/README.md",
+        "https://github.com/profi200/open_agb_firm/releases/expanded_assets/beta_2024-12-24"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official README and expanded release assets verified via web."
+    },
+    {
+      "id": "themezer-3ds",
+      "title": "Themezer-3DS",
+      "group": "apps",
+      "version": "v1.1.0",
+      "project": "https://github.com/ThemezerNX/Themezer-3DS",
+      "releaseUrl": "https://github.com/ThemezerNX/Themezer-3DS/releases/tag/v1.1.0",
+      "description": "Browse and install actual 3DS/2DS themes, boot splashes and badges from Themezer on the handheld.",
+      "requirements": "Luma3DS custom firmware and a working HOME Menu with Change Theme support. Install the CIA using FBI, or copy the 3DSX to /3ds/ for Homebrew Launcher. Themes use /Themes, splash packages /Splashes and badges /Badges; cache/settings use /3ds/themezer-3ds/. This is the 3DS app, not the Switch NXThemes installer. Region support depends on the installed HOME Menu; do not region-change a console solely to install themes.",
+      "tags": [
+        "themes",
+        "themezer",
+        "splash",
+        "badges",
+        "installer"
+      ],
+      "author": "ThemezerNX",
+      "assets": [
+        {
+          "name": "themezer-3ds.3dsx",
+          "url": "https://github.com/ThemezerNX/Themezer-3DS/releases/download/v1.1.0/themezer-3ds.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "themezer-3ds.cia",
+          "url": "https://github.com/ThemezerNX/Themezer-3DS/releases/download/v1.1.0/themezer-3ds.cia",
+          "format": "CIA"
+        }
+      ],
+      "sources": [
+        "https://github.com/ThemezerNX/Themezer-3DS",
+        "https://github.com/ThemezerNX/Themezer-3DS/releases/expanded_assets/v1.1.0",
+        "https://themezer.net/3ds/faq/how-do-i-install-update-themezer-3ds"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official release expanded assets returned HTTP200 with exact CIA/3DSX names; setup evidence in docs/3ds-more-theme-setup-evidence.json."
+    },
+    {
+      "id": "ctrquake",
+      "title": "ctrQuake",
+      "group": "games",
+      "version": "v0.8",
+      "project": "https://github.com/masterfeizz/ctrQuake",
+      "releaseUrl": "https://github.com/masterfeizz/ctrQuake/releases/tag/v0.8",
+      "description": "Native 3DS port of Quake with the shareware episode, configurable touch controls and network multiplayer.",
+      "requirements": "Extract the entire ctrQuake.zip to the SD root to retain its runtime folders and shareware game data, then launch the included 3DSX from Homebrew Launcher or install the separate CIA. The full game requires pak1.pak from your own Quake copy in the ctrQuake/id1 folder. Original-model controls use ABXY to look; the C-Stick camera is New 3DS only. Most multiplayer servers require the full game. No BIOS is required.",
+      "tags": [
+        "port",
+        "quake",
+        "fps",
+        "shareware",
+        "new3ds",
+        "old3ds"
+      ],
+      "author": "Felipe Izzo (MasterFeizz)",
+      "assets": [
+        {
+          "name": "ctrQuake.zip",
+          "url": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.8/ctrQuake.zip",
+          "format": "ZIP",
+          "role": "3DSX, support data and shareware episode"
+        },
+        {
+          "name": "ctrQuake.cia",
+          "url": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.8/ctrQuake.cia",
+          "format": "CIA",
+          "role": "HOME Menu installer; also retain support ZIP"
+        }
+      ],
+      "sources": [
+        "https://github.com/masterfeizz/ctrQuake",
+        "https://github.com/masterfeizz/ctrQuake/releases/tag/v0.8",
+        "https://github.com/masterfeizz/ctrQuake/releases/expanded_assets/v0.8",
+        "https://raw.githubusercontent.com/masterfeizz/ctrQuake/master/README.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Official release expanded assets and README returned HTTP200. v0.8 is the publisher latest release; original containers retained."
+    },
+    {
+      "id": "2048-3ds",
+      "title": "2048 - 3DS Port",
+      "group": "games",
+      "version": "v1.1.1",
+      "project": "https://github.com/0rientd/2048-port-3ds",
+      "description": "A standalone sliding-tile puzzle game with an on-console leaderboard.",
+      "requirements": "Copy the 3DSX into /3ds/ and use Homebrew Launcher. No commercial game data or BIOS is required.",
+      "tags": [
+        "puzzle",
+        "2048",
+        "standalone"
+      ],
+      "author": "Carlos '0rientd' Henrique",
+      "assets": [
+        {
+          "name": "2048-port-3ds.3dsx",
+          "url": "https://github.com/0rientd/2048-port-3ds/releases/download/v1.1.1/2048-port-3ds.3dsx",
+          "format": "3DSX"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/0rientd/2048-port-3ds",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://raw.githubusercontent.com/0rientd/2048-port-3ds/master/README.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2."
+    },
+    {
+      "id": "minicraft3ds",
+      "title": "Minicraft3DS",
+      "group": "games",
+      "version": "2.1.0",
+      "project": "https://github.com/KaliLugu/Minicraft3DS",
+      "description": "A native 3DS port of the small crafting and survival game Minicraft.",
+      "requirements": "Use the published 3DSX through Homebrew Launcher. This is Minicraft homebrew, separate from commercial Minecraft: New Nintendo 3DS Edition. No Minecraft installation or BIOS is required.",
+      "tags": [
+        "crafting",
+        "survival",
+        "standalone"
+      ],
+      "author": "Adrien Besnier",
+      "assets": [
+        {
+          "name": "Minicraft3DS.3dsx",
+          "url": "https://github.com/KaliLugu/Minicraft3DS/releases/download/2.1.0/Minicraft3DS.3dsx",
+          "format": "3DSX"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/KaliLugu/Minicraft3DS",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://raw.githubusercontent.com/KaliLugu/Minicraft3DS/master/README.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2."
+    },
+    {
+      "id": "flappy-bird",
+      "title": "Flappy-Bird",
+      "group": "games",
+      "version": "1.4.2",
+      "project": "https://github.com/npid7/Flappy-Bird",
+      "description": "A compact homebrew arcade game: guide the bird through gaps and beat your score.",
+      "requirements": "Install the CIA on CFW or launch the 3DSX from /3ds/. This standalone homebrew release does not require a commercial game installation or BIOS.",
+      "tags": [
+        "arcade",
+        "standalone",
+        "CIA",
+        "3DSX"
+      ],
+      "author": "NPI-D7",
+      "assets": [
+        {
+          "name": "Flappy-Bird.3dsx",
+          "url": "https://github.com/npid7/Flappy-Bird/releases/download/1.4.2/Flappy-Bird.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "Flappy-Bird.cia",
+          "url": "https://github.com/npid7/Flappy-Bird/releases/download/1.4.2/Flappy-Bird.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [
+        {
+          "description": "Different colors",
+          "url": "https://db.universal-team.net/assets/images/screenshots/flappy-bird/different-colors.png"
+        },
+        {
+          "description": "Flying",
+          "url": "https://db.universal-team.net/assets/images/screenshots/flappy-bird/flying.png"
+        },
+        {
+          "description": "Game over",
+          "url": "https://db.universal-team.net/assets/images/screenshots/flappy-bird/game-over.png"
+        },
+        {
+          "description": "Title screen",
+          "url": "https://db.universal-team.net/assets/images/screenshots/flappy-bird/title-screen.png"
+        }
+      ],
+      "sources": [
+        "https://github.com/npid7/Flappy-Bird",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://raw.githubusercontent.com/npid7/Flappy-Bird/master/README.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2.",
+      "image": "/assets/images/3ds-more/apps/flappy-bird.png"
+    },
+    {
+      "id": "snakes",
+      "title": "Snakes",
+      "group": "games",
+      "version": "0.2.5",
+      "project": "https://github.com/DDews/Snakes",
+      "description": "A homebrew snake game with local wireless multiplayer.",
+      "requirements": "Install the CIA on CFW or use its 3DSX in Homebrew Launcher. Check the project controls and local-play instructions; multiplayer requires compatible nearby systems and wireless. No commercial game data or BIOS is supplied or required. The publisher labels this release beta.",
+      "tags": [
+        "snake",
+        "local multiplayer",
+        "arcade"
+      ],
+      "author": "DDews",
+      "assets": [
+        {
+          "name": "snakes.3dsx",
+          "url": "https://github.com/DDews/Snakes/releases/download/0.2.5/snakes.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "snakes.cia",
+          "url": "https://github.com/DDews/Snakes/releases/download/0.2.5/snakes.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/DDews/Snakes",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://raw.githubusercontent.com/DDews/Snakes/master/README.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2."
+    },
+    {
+      "id": "gameyob-3ds",
+      "title": "GameYob (3DS)",
+      "group": "emulators",
+      "version": "1.0.8",
+      "project": "https://github.com/SombrAbsol/GameYob-3DS",
+      "description": "A native 3DS port of GameYob for Game Boy and Game Boy Color games.",
+      "requirements": "Supply your own .gb / .gbc ROM dumps and follow this 3DS port’s README. Optional boot-ROM support requires your own corresponding dump. Use this CIA/3DSX release rather than the separate DS-mode GameYob package. Game compatibility varies.",
+      "tags": [
+        "Game Boy",
+        "Game Boy Color",
+        "native 3DS"
+      ],
+      "author": "Steven Smith",
+      "assets": [
+        {
+          "name": "GameYob.3dsx",
+          "url": "https://github.com/SombrAbsol/GameYob-3DS/releases/download/1.0.8/GameYob.3dsx",
+          "format": "3DSX"
+        },
+        {
+          "name": "GameYob.cia",
+          "url": "https://github.com/SombrAbsol/GameYob-3DS/releases/download/1.0.8/GameYob.cia",
+          "format": "CIA"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/SombrAbsol/GameYob-3DS",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://raw.githubusercontent.com/SombrAbsol/GameYob-3DS/master/README.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2."
+    },
+    {
+      "id": "picodrive-3ds",
+      "title": "PicoDrive",
+      "group": "emulators",
+      "version": "v0.94",
+      "project": "https://github.com/bubble2k16/picodrive_3ds",
+      "description": "Mega Drive / Genesis and Sega CD emulation, ported for original 3DS and 2DS hardware.",
+      "requirements": "Preserve the release ZIP’s supplied support files. For Sega CD, put your own region-matched BIOS in /3ds/picodrive_3ds/bios/ as bios_CD_U.bin, bios_CD_J.bin or bios_CD_E.bin. Supply your own ROM/disc dumps. CD games are slower on original hardware; 32X is practical only on New 3DS using the CIA build. Read the project’s game-format notes.",
+      "tags": [
+        "Genesis",
+        "Mega Drive",
+        "Sega CD",
+        "original 3DS"
+      ],
+      "author": "bubble2k16",
+      "assets": [
+        {
+          "name": "picodrive_3ds-v0.94.zip",
+          "url": "https://github.com/bubble2k16/picodrive_3ds/releases/download/v0.94/picodrive_3ds-v0.94.zip",
+          "format": "ZIP"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/bubble2k16/picodrive_3ds",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://github.com/bubble2k16/picodrive_3ds",
+        "https://github.com/bubble2k16/emus3ds/blob/master/readme-picodrive.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2.",
+      "guide": "https://github.com/bubble2k16/emus3ds/blob/master/readme-picodrive.md"
+    },
+    {
+      "id": "temperpce-3ds",
+      "title": "TemperPCE",
+      "group": "emulators",
+      "version": "v1.02",
+      "project": "https://github.com/bubble2k16/temperpce_3ds",
+      "description": "PC Engine / TurboGrafx-16 emulation for the original 3DS family.",
+      "requirements": "Preserve the release files and supply your own HuCard/disc dumps. For CD games, place your own System Card BIOS under /3ds/temperpce_3ds/syscards/, named syscard1.pce, syscard2.pce or syscard3.pce as appropriate; choose it in settings. Match the documented disc-track format. Compatibility varies by title.",
+      "tags": [
+        "PC Engine",
+        "TurboGrafx-16",
+        "CD",
+        "original 3DS"
+      ],
+      "author": "bubble2k16",
+      "assets": [
+        {
+          "name": "temperpce_3ds-v1.02.zip",
+          "url": "https://github.com/bubble2k16/temperpce_3ds/releases/download/v1.02/temperpce_3ds-v1.02.zip",
+          "format": "ZIP"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/bubble2k16/temperpce_3ds",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://raw.githubusercontent.com/bubble2k16/temperpce_3ds/master/README.md",
+        "https://github.com/bubble2k16/emus3ds/blob/master/readme-temperpce.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2.",
+      "guide": "https://github.com/bubble2k16/emus3ds/blob/master/readme-temperpce.md"
+    },
+    {
+      "id": "virtuanes-3ds",
+      "title": "VirtuaNES",
+      "group": "emulators",
+      "version": "v1.02",
+      "project": "https://github.com/bubble2k16/emus3ds",
+      "description": "An NES / Famicom emulator designed for original 3DS and 2DS systems.",
+      "requirements": "Preserve the ZIP’s support files; install CIA on CFW or launch 3DSX. Supply your own NES/Famicom ROM dumps. FDS games additionally need your own BIOS at /3ds/virtuanes_3ds/bios/disksys.rom. This original release is separate from the Download Play fork.",
+      "tags": [
+        "NES",
+        "Famicom",
+        "original 3DS"
+      ],
+      "author": "bubble2k16",
+      "assets": [
+        {
+          "name": "virtuanes_3ds-v1.02.zip",
+          "url": "https://github.com/bubble2k16/emus3ds/releases/download/v1.02/virtuanes_3ds-v1.02.zip",
+          "format": "ZIP"
+        }
+      ],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/bubble2k16/emus3ds",
+        "https://db.universal-team.net/unistore/universal-db.unistore",
+        "https://github.com/bubble2k16/emus3ds",
+        "https://github.com/bubble2k16/emus3ds/blob/master/readme-virtuanes.md"
+      ],
+      "sourceCheckedAt": "2026-11-02",
+      "sourceMetadata": "Current official Universal-DB install metadata and publisher release files; source capture in tmp/3ds-more/batch2.",
+      "guide": "https://github.com/bubble2k16/emus3ds/blob/master/readme-virtuanes.md"
+    }
+  ]
+}

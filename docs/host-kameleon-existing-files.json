@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-02T14:35:46.210Z",
+  "reference": "https://www.kmeps4.site/webpayloads/index.html",
+  "scope": "Read-only audit of existing local inventories and files for the eighteen requested screenshot utility payloads. No upstream downloads, execution, UI/catalogue changes or archive writes.",
+  "summary": {
+    "requested": 18,
+    "matchingNamedVersionReadyBuildArchived": 1,
+    "differentFunctionalAlternativeArchived": 1,
+    "noMatchingNamedReadyBuild": 16,
+    "exactKameleonBytesCompared": 0,
+    "exactKameleonArtifactsNotYetVerified": 18
+  },
+  "searched": {
+    "jsonRecords": [
+      "docs/download-audit.json",
+      "F:/whatsite-backup-downloads-etc/download-inventory.json",
+      "F:/whatsite-backup-downloads-etc/existing-site-files.json",
+      "docs/console-download-catalog.json",
+      "docs/expansion-ps4-ps5.json",
+      "docs/host-actions-ps4.json",
+      "docs/host-legacy-menu-download-inventory.json",
+      "docs/host-game-http-download-inventory.json",
+      "docs/console-archive-readiness-audit.json"
+    ],
+    "physicalFilenameTrees": [
+      "repository, including downloads/",
+      "F:/whatsite-backup-downloads-etc/"
+    ],
+    "method": "Case-insensitive utility-name/alias search of records and physical filenames, followed by size and SHA-256 verification of the three relevant archived candidates. Site-local FTP ELF mirror also rehashed. Existing archives were not executed or unpacked.",
+    "catalogueBuilder": "scripts/console-download-catalog.cjs"
+  },
+  "entries": [
+    {
+      "requestedName": "PKGBackup 1.3",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "AppDumper",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "DisableUpdates",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "EnableUpdates",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "EnableBrowser",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "ExitIDU",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "RifRenamer",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "FTP",
+      "status": "different-functional-alternative-archived-and-mirrored",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": {
+        "source": "docs/host-actions-ps4.json#ps4-ftpsrv-elf",
+        "firmwares": [],
+        "text": "No numeric firmware matrix is established by the existing entry. Requires a firmware-compatible PS4 ELF loader on TCP 9021; then FTP listens on 2121. Empty firmware list does not mean universal support."
+      },
+      "existingFiles": [
+        {
+          "inventoryId": "ps4-ps5-expand-ps4-ftpsrv",
+          "archiveInventoryAlsoRecordsFile": true,
+          "name": "ftpsrv-ps4.elf",
+          "version": "v0.21.1",
+          "sourceUrl": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps4.elf",
+          "bytes": 146720,
+          "sha256": "5f00e2df7fa8ab7daa084343f38394e6672cd389e03fc8598a54d7d9e1d58d16",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\ftpsrv\\Builds\\v0.21.1\\ftpsrv-ps4.elf",
+          "verifiedNow": {
+            "exists": true,
+            "bytes": 146720,
+            "sha256": "5f00e2df7fa8ab7daa084343f38394e6672cd389e03fc8598a54d7d9e1d58d16",
+            "matchesInventory": true,
+            "leading16BytesHex": "7f454c46020101000000000000000000"
+          },
+          "catalogueId": "ps4-ftpsrv",
+          "catalogueCompatibility": "FTP server payload for a jailbroken PS4 with a compatible ELF loader. Connect an FTP client on your local network to port 2121.",
+          "hostActionId": "ps4-ftpsrv-elf",
+          "hostActionFirmwares": [],
+          "hostActionRun": {
+            "type": "elf-tcp",
+            "port": 9021
+          },
+          "siteMirror": {
+            "url": "/downloads/host-payloads/ps4-ps5-expand-ps4-ftpsrv/5f00e2df7fa8/ftpsrv-ps4.elf",
+            "bytes": 146720,
+            "sha256": "5f00e2df7fa8ab7daa084343f38394e6672cd389e03fc8598a54d7d9e1d58d16",
+            "matchesInventory": true
+          }
+        }
+      ],
+      "note": "ftpsrv v0.21.1 is a PS4 ELF, not proof of the exact FTP payload on the supplied Kameleon page. Do not substitute it silently or reuse BIN transport/firmware assumptions."
+    },
+    {
+      "requestedName": "HistoryBlocker",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "KernelDumper",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "KernelModuleDumper",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "Ps4Debug 1.1.19",
+      "status": "matching-product-and-version-ready-build-archived",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": {
+        "source": "docs/console-download-catalog.json#ps4-ps4debug",
+        "text": "Debugging payload for compatible PS4 builds and external debugging clients. Version 1.1.19 lists specific firmware versions from 5.05 through 12.02; it does not establish 14.00 support.",
+        "exactFirmwareListAvailableInSearchedLocalRecord": false,
+        "firmware1400Established": false
+      },
+      "existingFiles": [
+        {
+          "inventoryId": "ps4-ps5-expand-ps4-ps4debug",
+          "archiveInventoryAlsoRecordsFile": true,
+          "name": "ps4debug_v1.1.19.bin",
+          "version": "v1.1.19",
+          "sourceUrl": "https://github.com/GoldHEN/ps4debug/releases/download/v1.1.19/ps4debug_v1.1.19.bin",
+          "bytes": 84936,
+          "sha256": "8af40c2412768bb2cd64c46b9913ee2f7ff2f076c98f6a2f5c7c0534aee15b2e",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\ps4debug\\Builds\\v1.1.19\\ps4debug_v1.1.19.bin",
+          "verifiedNow": {
+            "exists": true,
+            "bytes": 84936,
+            "sha256": "8af40c2412768bb2cd64c46b9913ee2f7ff2f076c98f6a2f5c7c0534aee15b2e",
+            "matchesInventory": true,
+            "leading16BytesHex": "e94b1e0000662e0f1f84000000000090"
+          },
+          "catalogueId": "ps4-ps4debug",
+          "catalogueCompatibility": "Debugging payload for compatible PS4 builds and external debugging clients. Version 1.1.19 lists specific firmware versions from 5.05 through 12.02; it does not establish 14.00 support.",
+          "hostActionId": null,
+          "hostActionFirmwares": null,
+          "hostActionRun": null,
+          "siteMirror": null
+        }
+      ],
+      "note": "Original GoldHEN v1.1.19 release BIN is available on F: and rehashed successfully. The catalogue currently links the original release; no site-local mirror or host action was found. This confirms product/version availability, not byte equivalence with Kameleon’s served payload."
+    },
+    {
+      "requestedName": "DBBackup",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "DBRestore",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "App2USB",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "ToDEX",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "PermanentUART",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    },
+    {
+      "requestedName": "DisableASLR",
+      "status": "not-found-in-existing-inventories-or-named-files",
+      "exactKameleonArtifactVerified": false,
+      "firmwareEvidence": null,
+      "existingFiles": [],
+      "note": "No matching ready build was found in the searched local records or named files. Upstream acquisition and compatibility verification remain separate work."
+    }
+  ],
+  "relatedButNotEquivalent": [
+    {
+      "requestedName": "Ps4Debug 1.1.19",
+      "file": {
+        "inventoryId": "ps4-ps5-bo1-bo2-ps4debug-bin",
+        "archiveInventoryAlsoRecordsFile": true,
+        "name": "ps4debug.bin",
+        "version": null,
+        "sourceUrl": "https://cdn.discordapp.com/attachments/1554557103597813882/1554557148074352841/ps4debug.bin?backend=b2&ex=6ae8d32a&is=6ae781aa&hm=2c0b37a06205690558f7504376a74c7e346addb5468b01c72841ad337815cd84&",
+        "bytes": 3171952,
+        "sha256": "28829f48465d3dfdf97afc15f01edafd8802f8213c44635af6f21e0e8b48c8f6",
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Games\\Call of Duty\\Black Ops 1 and Black Ops 2\\Payloads\\ps4debug supplied payload\\Builds\\Unversioned\\ps4debug.bin",
+        "verifiedNow": {
+          "exists": true,
+          "bytes": 3171952,
+          "sha256": "28829f48465d3dfdf97afc15f01edafd8802f8213c44635af6f21e0e8b48c8f6",
+          "matchesInventory": true,
+          "leading16BytesHex": "e9aa200000f30f1efa55ba0400000053"
+        },
+        "catalogueId": null,
+        "catalogueCompatibility": null,
+        "hostActionId": null,
+        "hostActionFirmwares": null,
+        "hostActionRun": null,
+        "siteMirror": null
+      },
+      "note": "Unversioned BO1/BO2-supplied ps4debug.bin is 3,171,952 bytes with a different SHA-256. Preserve it separately; do not label as GoldHEN v1.1.19 or assume matching firmware."
+    }
+  ],
+  "excludedExistingKameleonFiles": {
+    "inventory": "docs/host-legacy-menu-download-inventory.json",
+    "reason": "Existing Kameleon files are GTA V mod-menu BIN/BZ2 builds. They do not satisfy any of the eighteen requested utility payloads."
+  },
+  "constraints": [
+    "Never execute downloaded payloads.",
+    "Preserve the exact existing files, SHA-256 values and compatibility pins.",
+    "An upstream menu label does not establish byte equivalence, firmware support or redistribution permission.",
+    "Any newly acquired ready build needs source/version/bytes/SHA-256 and a preserved F: archive copy before publication."
+  ]
+}

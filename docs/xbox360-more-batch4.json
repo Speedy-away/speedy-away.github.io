@@ -1,0 +1,29 @@
+{
+  "scope": "xbox360-more",
+  "batch": 4,
+  "baseline": "docs/qa/xbox360-more-batch4-baseline.json",
+  "addedIds": [
+    "sonic-exe",
+    "sally-exe",
+    "silent-hill-skins"
+  ],
+  "sourceFiles": [
+    "docs/xbox360-more-batch4-games.json",
+    "docs/xbox360-more-batch4-skins.json"
+  ],
+  "updatedAt": "2026-11-02T13:03:45.652Z",
+  "notes": [
+    "Completed Sonic.exe Final Update v1.0.2, Sally.exe Demo1 v0.1.0 and the original seven-XZP Silent Hill Aurora collection after normal publisher download retries.",
+    "All38 earlier entries and93 earlier files retain exact filenames, versions, source URLs, sizes and SHA-256. All96 final archive files are verified; old staged partials remain untouched.",
+    "Resolved all three batch3 incomplete inventory records using their existing IDs; original failure-attempt history remains preserved.",
+    "Sonic and Sally launch root default.xex beside complete Media; Sally needs about819MB extracted space. Temporary-exploit compatibility is not inferred from unsigned homebrew support.",
+    "Silent Hill skin collection retains every original variant together; all seven XUIZ skins checked. Displayed Heather art is explicitly credited as packaged artwork rather than a console screenshot.",
+    "Both inventories merged, organized index refreshed, eight tests and twelve live browser checks pass. Temporary preview server and tab closed; no downloaded builds executed, physical-console testing, commit or deployment."
+  ],
+  "resolvedIncomplete": [
+    "xbox360-more-sonic-exe",
+    "xbox360-more-sally-exe",
+    "xbox360-more-silent-hill-skins"
+  ],
+  "unavailable": []
+}

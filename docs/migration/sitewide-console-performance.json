@@ -1,0 +1,172 @@
+{
+  "checkedAt": "2026-11-03T22:19:17.456Z",
+  "status": "Published and live verified",
+  "tests": {
+    "passed": 227,
+    "failed": 0,
+    "combinedRevision": "0488479b84f9ca3ffe1c12c0a9fc44a23d7e67e4",
+    "performanceTestsBeforeMerge": 219
+  },
+  "verification": {
+    "status": "passed",
+    "bytes": 842827985,
+    "pagesLinks": 2604,
+    "nativeScriptsUnchanged": 849,
+    "cachedResourcesRetained": 1491,
+    "runtimeDocumentsOptimized": 213,
+    "offloadedFiles": 274,
+    "compactAliasesVerified": 6395,
+    "sharedCatalogueFiles": 4,
+    "routingBytes": {
+      "full": 1027171,
+      "runtime": 222159
+    },
+    "issues": 0
+  },
+  "catalogues": {
+    "pages": [
+      {
+        "path": "hosts/ps4/cheats/index.html",
+        "actions": 104,
+        "previousBytes": 136126,
+        "currentBytes": 43543,
+        "catalogue": "ps4"
+      },
+      {
+        "path": "hosts/ps4/files/index.html",
+        "actions": 120,
+        "previousBytes": 434200,
+        "currentBytes": 44227,
+        "catalogue": "ps4"
+      },
+      {
+        "path": "hosts/ps4/gta5/index.html",
+        "actions": 120,
+        "previousBytes": 436036,
+        "currentBytes": 46063,
+        "catalogue": "ps4"
+      },
+      {
+        "path": "hosts/ps4/index.html",
+        "actions": 120,
+        "previousBytes": 419147,
+        "currentBytes": 29174,
+        "catalogue": "ps4"
+      },
+      {
+        "path": "hosts/ps4/other-games/index.html",
+        "actions": 120,
+        "previousBytes": 436082,
+        "currentBytes": 46109,
+        "catalogue": "ps4"
+      },
+      {
+        "path": "hosts/ps4/payload-manager/index.html",
+        "actions": 120,
+        "previousBytes": 435887,
+        "currentBytes": 45914,
+        "catalogue": "ps4"
+      },
+      {
+        "path": "hosts/ps4/rdr2/index.html",
+        "actions": 120,
+        "previousBytes": 436020,
+        "currentBytes": 46047,
+        "catalogue": "ps4"
+      },
+      {
+        "path": "hosts/ps5/files/index.html",
+        "actions": 34,
+        "previousBytes": 113854,
+        "currentBytes": 37983,
+        "catalogue": "ps5"
+      },
+      {
+        "path": "hosts/ps5/gta5/index.html",
+        "actions": 34,
+        "previousBytes": 115206,
+        "currentBytes": 39672,
+        "catalogue": "ps5"
+      },
+      {
+        "path": "hosts/ps5/index.html",
+        "actions": 34,
+        "previousBytes": 98231,
+        "currentBytes": 22697,
+        "catalogue": "ps5"
+      },
+      {
+        "path": "hosts/ps5/other-games/index.html",
+        "actions": 34,
+        "previousBytes": 115252,
+        "currentBytes": 39718,
+        "catalogue": "ps5"
+      },
+      {
+        "path": "hosts/ps5/payload-manager/index.html",
+        "actions": 34,
+        "previousBytes": 115481,
+        "currentBytes": 39947,
+        "catalogue": "ps5"
+      },
+      {
+        "path": "hosts/ps5/rdr2/index.html",
+        "actions": 34,
+        "previousBytes": 115190,
+        "currentBytes": 39656,
+        "catalogue": "ps5"
+      }
+    ],
+    "records": 1028,
+    "identical": true,
+    "comparedAtCommit": "4fa06f41d0de8e9f8e2921f781cf8b9b71916ea5"
+  },
+  "changes": [
+    "Compact exact routing membership for all 213 native documents; original native scripts remain untouched",
+    "Four shared content-addressed action assets replace repeated inline data on 13 catalogue pages",
+    "Clear failure message and no Load handlers if shared data cannot load",
+    "Cache keys updated for the dashboard, folder controls and routing adapter"
+  ],
+  "preservation": {
+    "downloadFilesChanged": 0,
+    "nativeFilesChanged": 0,
+    "olderVersionsRetained": true,
+    "readyPackagesChanged": 0
+  },
+  "limits": [
+    "Physical PS4/PS5 performance not measured",
+    "Browser UI automation unavailable in Work settings; no native console files executed"
+  ],
+  "performanceCommit": "4fa06f41d0de8e9f8e2921f781cf8b9b71916ea5",
+  "liveVerification": {
+    "status": "passed",
+    "checkedAt": "2026-11-03T22:28:19.615Z",
+    "revision": "0488479b84f9ca3ffe1c12c0a9fc44a23d7e67e4",
+    "run": 41730210213,
+    "workflow": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41730210213",
+    "livePages": 1104,
+    "sharedCatalogueFiles": 4,
+    "aliasesVerified": 6395,
+    "pagesBuild": {
+      "revision": "0488479b84f9ca3ffe1c12c0a9fc44a23d7e67e4",
+      "base": "/WWB-HOST",
+      "origin": "https://speedy-away.github.io",
+      "bytes": 842827985,
+      "budget": 922746880,
+      "files": 5718,
+      "offloadedFiles": 274,
+      "nativeScriptsUnchanged": 849,
+      "cacheManifestAliases": 7,
+      "historicalLandings": 804,
+      "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+      "routingBytes": {
+        "full": 1027171,
+        "runtime": 222159
+      },
+      "sharedCatalogueFiles": 4
+    },
+    "limits": [
+      "Static HTTP and authored adapter verification only; no browser or native console execution"
+    ]
+  }
+}

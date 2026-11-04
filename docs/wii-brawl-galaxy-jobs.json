@@ -1,0 +1,86 @@
+{
+  "jobs": [
+    {
+      "id": "project-plus",
+      "title": "Project+ · Wii Lite",
+      "version": "3.2.1",
+      "filename": "Project+ v3.2.1 (Wii Lite).zip",
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.2.1/Project%2B.v3.2.1.Wii.Lite.zip",
+      "expectedBytes": 1561917280,
+      "kind": "mod",
+      "game": "Super Smash Bros. Brawl",
+      "source": "https://projectplusgame.com/download",
+      "originalSourceUrl": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.2.1/Project%2B.v3.2.1.Wii.Lite.zip",
+      "expectedSha256": "1691cc998b1244604e9ff3b0d82ac07111d6e388ffcc618e58d788b7be5012df",
+      "originalName": "Project+.v3.2.1.Wii.Lite.zip"
+    },
+    {
+      "id": "brawl-minus",
+      "title": "Brawl Minus",
+      "version": "5.1.5",
+      "filename": "Minusery-Console-v5.1.5.zip",
+      "url": "https://github.com/MinuseryGames/Minusery-Dolphin/releases/download/v5.1.5/Minusery-Console-v5.1.5.zip",
+      "kind": "mod",
+      "game": "Super Smash Bros. Brawl",
+      "source": "https://forums.brawlminus.net/threads/brawl-minus-5-1-5-is-here.1691/",
+      "expectedBytes": 984927268,
+      "expectedSha256": "21bf5d18f40467de108241f1a3d277a0362809aab7d373ff6805d62261e42ddc"
+    },
+    {
+      "id": "galaxy-daredevil",
+      "title": "Super Mario Galaxy · Daredevil Mode",
+      "version": "2020-04-16 creator distribution",
+      "filename": "SMG-Daredevil-Mode.zip",
+      "url": "https://mega.nz/file/VgM2yZSC#3vvH8V4pwjkqIyvG8y01diwmEDXNATT9M0_MbDHgVTU",
+      "kind": "mod",
+      "game": "Super Mario Galaxy",
+      "source": "https://aurumsmods.com/daredevil/"
+    },
+    {
+      "id": "galaxy2-daredevil",
+      "title": "Super Mario Galaxy 2 · Daredevil Mode",
+      "version": "2020-04-16 creator distribution",
+      "filename": "SMG2-Daredevil-Mode.zip",
+      "url": "https://mega.nz/file/I91UiLJI#FIm3LKFvyEiQb2N22v4OvREqORIzzDBxTbartVo2pYw",
+      "kind": "mod",
+      "game": "Super Mario Galaxy 2",
+      "source": "https://aurumsmods.com/daredevil/"
+    },
+    {
+      "id": "super-lillie-galaxy",
+      "title": "Super Lillie Galaxy",
+      "version": "4.4.0",
+      "filename": "super_lillie_galaxy_v440_5c8ec.7z",
+      "url": "https://gamebanana.com/dl/1771446",
+      "kind": "mod",
+      "game": "Super Mario Galaxy",
+      "source": "https://gamebanana.com/mods/500469",
+      "expectedBytes": 42463692,
+      "expectedMd5": "26ecdabaa2d5b0f3c547034d9065df5a"
+    },
+    {
+      "id": "new-green-stars",
+      "title": "SMG2: The New Green Stars V1.2",
+      "version": "1.2",
+      "filename": "smg2_the_new_green_stars_v12_7eefb.zip",
+      "url": "https://gamebanana.com/dl/624935",
+      "kind": "mod",
+      "game": "Super Mario Galaxy 2",
+      "source": "https://gamebanana.com/mods/150989",
+      "expectedBytes": 16081882,
+      "expectedMd5": "a7414ab620c3f897657976409f1cf3e8"
+    },
+    {
+      "id": "neo-mario-galaxy",
+      "title": "Neo Mario Galaxy",
+      "version": "1.6.0",
+      "filename": "nmg_v1.6.0.zip",
+      "url": "https://mega.nz/folder/xhcDWTzQ#sf7Iya2oNGqQ15LWnWYjWQ",
+      "expectedBytes": 70237328,
+      "kind": "mod",
+      "game": "Super Mario Galaxy 2",
+      "source": "https://aurumsmods.com/nmg/",
+      "megaFilename": "nmg_v1.6.0.zip"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T18:17:09.772Z",
+  "version": "2026.11.03.1",
+  "status": "Prepared and mock tested locally; requires archive verification and explicit native helper installation. Hardware untested.",
+  "artifacts": [
+    {
+      "platform": "ps4",
+      "filename": "whatsite-package-installer-ps4.html",
+      "local": "/downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html",
+      "downloadURL": "/downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html",
+      "absoluteDownloadURL": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html",
+      "bytes": 241332,
+      "sha256": "faa27756cd4563207626a8db78f9e4ef858b95a76163b2076b10b00a6fd3a4b0",
+      "version": "2026.11.03.1-faa27756cd456320",
+      "installPath": "/data/whatsite-package-installer-ps4.html",
+      "port": 8080,
+      "nativeURL": "http://{consoleIP}:8080/data/whatsite-package-installer-ps4.html",
+      "query": "?path={encodedSavedAbsolutePkgPath}&bytes={expectedBytes}",
+      "expectedArchivePath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\whatsite Native Package Installer\\Helpers\\2026.11.03.1-faa27756cd456320\\whatsite-package-installer-ps4.html",
+      "archiveStatus": "prepared-not-archived",
+      "source": {
+        "version": "2.08",
+        "commit": "266d9b8fa7af1cd106688999f95960841c3e894d",
+        "httpSHA256": "dd295327ed2cdfb87576682597e4138dbd1fc48eee4ac31115b6290a725be10c",
+        "installerSHA256": "eb086dcf47ae32f2b44f61f79771f8bc03cb15cf6b2dca26f3efe3c2c6307ba3"
+      }
+    },
+    {
+      "platform": "ps5",
+      "filename": "whatsite-package-installer-ps5.html",
+      "local": "/downloads/helpers/host-package-installer/ps5/48aa27c4c9899826/whatsite-package-installer-ps5.html",
+      "downloadURL": "/downloads/helpers/host-package-installer/ps5/48aa27c4c9899826/whatsite-package-installer-ps5.html",
+      "absoluteDownloadURL": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps5/48aa27c4c9899826/whatsite-package-installer-ps5.html",
+      "bytes": 241332,
+      "sha256": "48aa27c4c9899826f8dc4cb7ecdbf24b360fe7ee7fc884a7c74a8cd8030f5e98",
+      "version": "2026.11.03.1-48aa27c4c9899826",
+      "installPath": "/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html",
+      "port": 9090,
+      "nativeURL": "http://{consoleIP}:9090/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html",
+      "query": "?path={encodedSavedAbsolutePkgPath}&bytes={expectedBytes}",
+      "expectedArchivePath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\whatsite Native Package Installer\\Helpers\\2026.11.03.1-48aa27c4c9899826\\whatsite-package-installer-ps5.html",
+      "archiveStatus": "prepared-not-archived",
+      "source": {
+        "version": "2.18",
+        "commit": "f3ac2abab304a807f20a8b97480dbd169e5b6be6",
+        "httpSHA256": "3df2af33fb9bb04d8900f26196cfa699416b97ee78689c68479131af0b7507e0",
+        "installerSHA256": "de03a55f3aa3d0198d794960c5257b203bf261782048a6b96458780fd1fd7338"
+      }
+    }
+  ],
+  "jobs": [
+    {
+      "id": "whatsite-ps4-package-installer-faa27756cd456320",
+      "title": "whatwhatboy PS4 native package installer",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "whatsite Native Package Installer",
+      "version": "2026.11.03.1-faa27756cd456320",
+      "release": "2026.11.03.1-faa27756cd456320",
+      "filename": "whatsite-package-installer-ps4.html",
+      "url": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html",
+      "importPath": "downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html",
+      "kind": "generated",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "mirror": false,
+      "expectedBytes": 241332,
+      "expectedSha256": "faa27756cd4563207626a8db78f9e4ef858b95a76163b2076b10b00a6fd3a4b0",
+      "pages": [
+        "hosts/ps4/files/index.html",
+        "hosts/ps4/payload-manager/index.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "whatsite-ps5-package-installer-48aa27c4c9899826",
+      "title": "whatwhatboy PS5 native package installer",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "whatsite Native Package Installer",
+      "version": "2026.11.03.1-48aa27c4c9899826",
+      "release": "2026.11.03.1-48aa27c4c9899826",
+      "filename": "whatsite-package-installer-ps5.html",
+      "url": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps5/48aa27c4c9899826/whatsite-package-installer-ps5.html",
+      "importPath": "downloads/helpers/host-package-installer/ps5/48aa27c4c9899826/whatsite-package-installer-ps5.html",
+      "kind": "generated",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "mirror": false,
+      "expectedBytes": 241332,
+      "expectedSha256": "48aa27c4c9899826f8dc4cb7ecdbf24b360fe7ee7fc884a7c74a8cd8030f5e98",
+      "pages": [
+        "hosts/ps5/files/index.html",
+        "hosts/ps5/payload-manager/index.html",
+        "console/ps5/downloads.html"
+      ]
+    }
+  ],
+  "retainedArtifacts": [
+    {
+      "platform": "ps4",
+      "filename": "whatsite-package-installer-ps4.html",
+      "local": "/downloads/helpers/host-package-installer/ps4/2c2e17a9b507e17e/whatsite-package-installer-ps4.html",
+      "downloadURL": "/downloads/helpers/host-package-installer/ps4/2c2e17a9b507e17e/whatsite-package-installer-ps4.html",
+      "absoluteDownloadURL": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps4/2c2e17a9b507e17e/whatsite-package-installer-ps4.html",
+      "bytes": 22085,
+      "sha256": "2c2e17a9b507e17e8f9011b0093b30a4d9f98192bac07204bc2d3cec7ad0fe26",
+      "version": "2026.11.03.1-2c2e17a9b507e17e",
+      "installPath": "/data/whatsite-package-installer-ps4.html",
+      "port": 8080,
+      "nativeURL": "http://{consoleIP}:8080/data/whatsite-package-installer-ps4.html",
+      "query": "?path={encodedSavedAbsolutePkgPath}&bytes={expectedBytes}",
+      "expectedArchivePath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\whatsite Native Package Installer\\Helpers\\2026.11.03.1-2c2e17a9b507e17e\\whatsite-package-installer-ps4.html",
+      "archiveStatus": "prepared-not-archived",
+      "source": {
+        "version": "2.08",
+        "commit": "266d9b8fa7af1cd106688999f95960841c3e894d",
+        "httpSHA256": "dd295327ed2cdfb87576682597e4138dbd1fc48eee4ac31115b6290a725be10c",
+        "installerSHA256": "eb086dcf47ae32f2b44f61f79771f8bc03cb15cf6b2dca26f3efe3c2c6307ba3"
+      }
+    },
+    {
+      "platform": "ps4",
+      "filename": "whatsite-package-installer-ps4.html",
+      "local": "/downloads/helpers/host-package-installer/ps4/d14138c484086045/whatsite-package-installer-ps4.html",
+      "downloadURL": "/downloads/helpers/host-package-installer/ps4/d14138c484086045/whatsite-package-installer-ps4.html",
+      "absoluteDownloadURL": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps4/d14138c484086045/whatsite-package-installer-ps4.html",
+      "bytes": 22038,
+      "sha256": "d14138c484086045a560f2d3ee5f3267c32a97ccbc1138bfc8948e420b2769f2",
+      "version": "2026.11.03.1-d14138c484086045",
+      "installPath": "/data/whatsite-package-installer-ps4.html",
+      "port": 8080,
+      "nativeURL": "http://{consoleIP}:8080/data/whatsite-package-installer-ps4.html",
+      "query": "?path={encodedSavedAbsolutePkgPath}&bytes={expectedBytes}",
+      "expectedArchivePath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\whatsite Native Package Installer\\Helpers\\2026.11.03.1-d14138c484086045\\whatsite-package-installer-ps4.html",
+      "archiveStatus": "prepared-not-archived",
+      "source": {
+        "version": "2.08",
+        "commit": "266d9b8fa7af1cd106688999f95960841c3e894d",
+        "httpSHA256": "dd295327ed2cdfb87576682597e4138dbd1fc48eee4ac31115b6290a725be10c",
+        "installerSHA256": "eb086dcf47ae32f2b44f61f79771f8bc03cb15cf6b2dca26f3efe3c2c6307ba3"
+      }
+    },
+    {
+      "platform": "ps5",
+      "filename": "whatsite-package-installer-ps5.html",
+      "local": "/downloads/helpers/host-package-installer/ps5/882bd90e27923797/whatsite-package-installer-ps5.html",
+      "downloadURL": "/downloads/helpers/host-package-installer/ps5/882bd90e27923797/whatsite-package-installer-ps5.html",
+      "absoluteDownloadURL": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps5/882bd90e27923797/whatsite-package-installer-ps5.html",
+      "bytes": 22038,
+      "sha256": "882bd90e2792379798601535b3ed33649fad9613d7ef0da2e51a1a08e9af7eed",
+      "version": "2026.11.03.1-882bd90e27923797",
+      "installPath": "/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html",
+      "port": 9090,
+      "nativeURL": "http://{consoleIP}:9090/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html",
+      "query": "?path={encodedSavedAbsolutePkgPath}&bytes={expectedBytes}",
+      "expectedArchivePath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\whatsite Native Package Installer\\Helpers\\2026.11.03.1-882bd90e27923797\\whatsite-package-installer-ps5.html",
+      "archiveStatus": "prepared-not-archived",
+      "source": {
+        "version": "2.18",
+        "commit": "f3ac2abab304a807f20a8b97480dbd169e5b6be6",
+        "httpSHA256": "3df2af33fb9bb04d8900f26196cfa699416b97ee78689c68479131af0b7507e0",
+        "installerSHA256": "de03a55f3aa3d0198d794960c5257b203bf261782048a6b96458780fd1fd7338"
+      }
+    },
+    {
+      "platform": "ps5",
+      "filename": "whatsite-package-installer-ps5.html",
+      "local": "/downloads/helpers/host-package-installer/ps5/e0173559ff025a9c/whatsite-package-installer-ps5.html",
+      "downloadURL": "/downloads/helpers/host-package-installer/ps5/e0173559ff025a9c/whatsite-package-installer-ps5.html",
+      "absoluteDownloadURL": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps5/e0173559ff025a9c/whatsite-package-installer-ps5.html",
+      "bytes": 22085,
+      "sha256": "e0173559ff025a9cf28d67026b28aea5cbed4bc8aa4c727c85b5af079db8ad1c",
+      "version": "2026.11.03.1-e0173559ff025a9c",
+      "installPath": "/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html",
+      "port": 9090,
+      "nativeURL": "http://{consoleIP}:9090/data/homebrew/ezremote-client/assets/whatsite-package-installer-ps5.html",
+      "query": "?path={encodedSavedAbsolutePkgPath}&bytes={expectedBytes}",
+      "expectedArchivePath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\whatsite Native Package Installer\\Helpers\\2026.11.03.1-e0173559ff025a9c\\whatsite-package-installer-ps5.html",
+      "archiveStatus": "prepared-not-archived",
+      "source": {
+        "version": "2.18",
+        "commit": "f3ac2abab304a807f20a8b97480dbd169e5b6be6",
+        "httpSHA256": "3df2af33fb9bb04d8900f26196cfa699416b97ee78689c68479131af0b7507e0",
+        "installerSHA256": "de03a55f3aa3d0198d794960c5257b203bf261782048a6b96458780fd1fd7338"
+      }
+    }
+  ],
+  "retainedArchiveJobs": [
+    {
+      "id": "whatsite-ps4-package-installer-2c2e17a9b507e17e",
+      "title": "whatwhatboy PS4 native package installer · retained build",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "whatsite Native Package Installer",
+      "version": "2026.11.03.1-2c2e17a9b507e17e",
+      "release": "2026.11.03.1-2c2e17a9b507e17e",
+      "filename": "whatsite-package-installer-ps4.html",
+      "url": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps4/2c2e17a9b507e17e/whatsite-package-installer-ps4.html",
+      "importPath": "downloads/helpers/host-package-installer/ps4/2c2e17a9b507e17e/whatsite-package-installer-ps4.html",
+      "kind": "generated",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "mirror": false,
+      "expectedBytes": 22085,
+      "expectedSha256": "2c2e17a9b507e17e8f9011b0093b30a4d9f98192bac07204bc2d3cec7ad0fe26",
+      "pages": []
+    },
+    {
+      "id": "whatsite-ps4-package-installer-d14138c484086045",
+      "title": "whatwhatboy PS4 native package installer · retained build",
+      "platform": "PS4",
+      "category": "Tools",
+      "project": "whatsite Native Package Installer",
+      "version": "2026.11.03.1-d14138c484086045",
+      "release": "2026.11.03.1-d14138c484086045",
+      "filename": "whatsite-package-installer-ps4.html",
+      "url": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps4/d14138c484086045/whatsite-package-installer-ps4.html",
+      "importPath": "downloads/helpers/host-package-installer/ps4/d14138c484086045/whatsite-package-installer-ps4.html",
+      "kind": "generated",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "mirror": false,
+      "expectedBytes": 22038,
+      "expectedSha256": "d14138c484086045a560f2d3ee5f3267c32a97ccbc1138bfc8948e420b2769f2",
+      "pages": []
+    },
+    {
+      "id": "whatsite-ps5-package-installer-882bd90e27923797",
+      "title": "whatwhatboy PS5 native package installer · retained build",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "whatsite Native Package Installer",
+      "version": "2026.11.03.1-882bd90e27923797",
+      "release": "2026.11.03.1-882bd90e27923797",
+      "filename": "whatsite-package-installer-ps5.html",
+      "url": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps5/882bd90e27923797/whatsite-package-installer-ps5.html",
+      "importPath": "downloads/helpers/host-package-installer/ps5/882bd90e27923797/whatsite-package-installer-ps5.html",
+      "kind": "generated",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "mirror": false,
+      "expectedBytes": 22038,
+      "expectedSha256": "882bd90e2792379798601535b3ed33649fad9613d7ef0da2e51a1a08e9af7eed",
+      "pages": []
+    },
+    {
+      "id": "whatsite-ps5-package-installer-e0173559ff025a9c",
+      "title": "whatwhatboy PS5 native package installer · retained build",
+      "platform": "PS5",
+      "category": "Tools",
+      "project": "whatsite Native Package Installer",
+      "version": "2026.11.03.1-e0173559ff025a9c",
+      "release": "2026.11.03.1-e0173559ff025a9c",
+      "filename": "whatsite-package-installer-ps5.html",
+      "url": "https://whatwhatboy.com/downloads/helpers/host-package-installer/ps5/e0173559ff025a9c/whatsite-package-installer-ps5.html",
+      "importPath": "downloads/helpers/host-package-installer/ps5/e0173559ff025a9c/whatsite-package-installer-ps5.html",
+      "kind": "generated",
+      "archiveRole": [
+        "Helpers"
+      ],
+      "mirror": false,
+      "expectedBytes": 22085,
+      "expectedSha256": "e0173559ff025a9cf28d67026b28aea5cbed4bc8aa4c727c85b5af079db8ad1c",
+      "pages": []
+    }
+  ],
+  "sourceHashes": [
+    {
+      "file": "assets/host-package-installer.js",
+      "sha256": "35002b43801d5c2b7147f6edf46d6dcb9ea36932715c4556c5a6f70e73e75d46"
+    },
+    {
+      "file": "assets/host-package-installer.css",
+      "sha256": "5b1dcfe507e6fe195a3898c56acdfe1eaed1e57f3e816b0d992ec669c44a8249"
+    },
+    {
+      "file": "assets/host-native-workspace-i18n.js",
+      "sha256": "525722fa210cf8ef91d978f1d2e9fb525c523c7453082f2997ee617e1a66e26c"
+    }
+  ],
+  "nativeContracts": {
+    "list": {
+      "method": "POST",
+      "path": "/__local__/list",
+      "json": {
+        "path": "{savedFileParent}",
+        "onlyFolders": false
+      },
+      "result": "result array; require exact regular-file entry with integral byte size and no matching .tmp entry."
+    },
+    "install": {
+      "method": "POST",
+      "path": "/__local__/install",
+      "json": {
+        "items": [
+          "{singleVerifiedAbsolutePkgPath}"
+        ]
+      },
+      "result": "result.success must be exactly true; success is reported as native service success, never proved installed."
+    },
+    "ps4": "Native InstallLocalPkg may uninstall an existing application on BGFT registration collision before retrying. The user-facing warning and explicit checkbox precede each request. The native handler waits on BGFT transfer progress.",
+    "ps5": "Native local install calls the existing Direct Package Installer and returns after acceptance when remove_after_install=false. Compatible DPI must already be running; the helper does not load it or probe its TCP service."
+  },
+  "safeguards": [
+    "No requests on opening, query preselection or view rendering. Public/wrong-origin preview is read-only.",
+    "Writes use only the exact matching default client origin: PS4 8080 or PS5 9090; no Origin spoofing or cross-origin proxy.",
+    "Only absolute bounded /data/.../*.pkg or /mnt/usb[0-9]/.../*.pkg paths; refuse other roots, ext mounts, URL/query/fragment, encoded tricks, traversal, archives and payloads.",
+    "List metadata verifies an exact saved entry, expected size when supplied and absence of a matching .tmp; re-read immediately before install. This is not full-file SHA-256/signature/title/compatibility verification.",
+    "One pending operation per helper; a durable request guard is saved and re-read before dispatch. Existing guards block further installs across reloads.",
+    "A native success acknowledgement also retains the request guard; check the console result, then explicitly clear it. Clearing sends nothing and cancels nothing.",
+    "Lost/invalid/negative responses after dispatch are uncertain; retain the guard and never automatically retry.",
+    "Selected-file metadata is internally copied; mutating or cloning a returned verification object cannot authorize a different path.",
+    "No delete/uninstall API, raw payload launch, install-from-URL route, package upload or silent install-after-download is implemented.",
+    "Native app behavior can replace installed titles. Metadata checks are not atomic file-content locks; use one helper window and keep other native installers/writers idle."
+  ],
+  "languages": {
+    "status": "Self-contained inline language adapter and exact authored-key subset. All 20 non-English dictionary keys are required before generation; filenames, path/size displays and input values are excluded from DOM translation.",
+    "codes": [
+      "es",
+      "pt",
+      "fr",
+      "de",
+      "ru",
+      "tr",
+      "pl",
+      "it",
+      "zh",
+      "ja",
+      "ko",
+      "th",
+      "vi",
+      "id",
+      "hi",
+      "sr",
+      "nl",
+      "ka",
+      "ar",
+      "he"
+    ],
+    "keys": 64
+  },
+  "validation": {
+    "tests": "scripts/tests/host-package-installer.test.cjs",
+    "method": "Mock native transport/storage and data-only immutable artifact checks; no actual console API request, package installation or downloaded payload execution."
+  },
+  "limitations": [
+    "Matching native ezRemote Client must be installed, running and serving this helper at its exact path.",
+    "PS5 requires its native Direct Package Installer prerequisites.",
+    "No firmware compatibility, available-space or successful-installation fact is inferred from a file extension, listing or HTTP200.",
+    "Native service has no atomic installer transaction exposed to this helper; localStorage guard reduces duplicate dispatch but does not control another native app or simultaneous browser process.",
+    "Native completion OS notifications belong to ezRemote Server itself; no generic notification API is invented. See docs/host-package-notification-review-20261103.json."
+  ]
+}

@@ -1,0 +1,843 @@
+{
+  "checkedAt": "2026-11-03T21:21:16.461Z",
+  "repository": "GamerHack/GamerHack.github.io",
+  "commit": "23c946a7f85f1338ea2b78163e72e0ce9bc82b68",
+  "method": "Four pinned original HTML documents and folder Git-blob metadata only; no native code execution or payload fetch.",
+  "folders": [
+    {
+      "folder": "g2all",
+      "entry": {
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/g2all/index.html",
+        "bytes": 4119,
+        "sha256": "497511a39c071068b028383c814a2b9d0b340bd1ed5a66233cd9091b9d32e0bb",
+        "gitBlobSHA1": "1b8cb1143339b4500dcd0a63bcbdb8c490ad8f95"
+      },
+      "title": "PS4 [5.05] 7.00 - 13.52 FW GoldHEN Host by GamerHack",
+      "scripts": [],
+      "dispatch": [
+        "<title>PS4 [5.05] 7.00 - 13.52 FW GoldHEN Host by GamerHack</title>",
+        "var fwNum = parseFloat(fwVersion);",
+        "        msgs.innerHTML = \"Only for PS4 with Firmware 5.05 and 7.00 to 13.52\";",
+        "        if (fwNum == 5.05 || fwNum == 5.07) {",
+        "        } else if (fwNum >= 7.00 && fwNum <= 8.52) {",
+        "        } else if (fwNum >= 9.00 && fwNum <= 9.60) {",
+        "        } else if (fwNum >= 11.50 && fwNum <= 13.52) {",
+        "        if (fwNum == 5.05 || fwNum == 5.07) {",
+        "        else if (fwNum >= 7.00 && fwNum <= 8.52) {",
+        "        else if (fwNum >= 9.00 && fwNum <= 9.60) {",
+        "        else if (fwNum >= 13.02 && fwNum <= 13.52) {",
+        "<h1>PS4 [5.05] 7.00 - 13.52 FW GoldHEN Host by GamerHack</h1>"
+      ],
+      "files": [
+        {
+          "name": "505.manifest",
+          "type": "file",
+          "bytes": 111,
+          "gitBlobSHA1": "46aed091aae8f0b78ffac0eff492c0b006a24c4a"
+        },
+        {
+          "name": "505",
+          "type": "dir",
+          "bytes": 0,
+          "gitBlobSHA1": "bd34f89c9d1fabb2f25d4db6ba8847b979fe71aa"
+        },
+        {
+          "name": "700.manifest",
+          "type": "file",
+          "bytes": 558,
+          "gitBlobSHA1": "fec6413139d92502b2486df9d079a18600a209cb"
+        },
+        {
+          "name": "700",
+          "type": "dir",
+          "bytes": 0,
+          "gitBlobSHA1": "119fe376ea5ce478b8e8f552a90f7ae8e39c6999"
+        },
+        {
+          "name": "900.manifest",
+          "type": "file",
+          "bytes": 482,
+          "gitBlobSHA1": "fb7e9080b01f653ea99bbe1793e2de0d4075e7e4"
+        },
+        {
+          "name": "900",
+          "type": "dir",
+          "bytes": 0,
+          "gitBlobSHA1": "e0ccab8387c59d7335ceb10647618c281e33dfbb"
+        },
+        {
+          "name": "cache505.html",
+          "type": "file",
+          "bytes": 1469,
+          "gitBlobSHA1": "6aa5c11370d6dfa2c4607d2dd0674992c8c3532d"
+        },
+        {
+          "name": "cache700.html",
+          "type": "file",
+          "bytes": 1469,
+          "gitBlobSHA1": "a3014d969a5290bdfd55a56ddc78a618f489a597"
+        },
+        {
+          "name": "cache900.html",
+          "type": "file",
+          "bytes": 1469,
+          "gitBlobSHA1": "77f6c9fdcb52e6b07227fd3e49ef30509c8a1f3e"
+        },
+        {
+          "name": "cachecss.html",
+          "type": "file",
+          "bytes": 1469,
+          "gitBlobSHA1": "43d2eb41ca45c938e32c1ba5a9a3eab7efdad9ef"
+        },
+        {
+          "name": "cacheslopkit.html",
+          "type": "file",
+          "bytes": 1473,
+          "gitBlobSHA1": "a47250a393c4673fe53b5bbdc5828072b2dd1ef8"
+        },
+        {
+          "name": "css.manifest",
+          "type": "file",
+          "bytes": 330,
+          "gitBlobSHA1": "55bc8a7d2ce8498b61a4713ccf52c1bfed2b738b"
+        },
+        {
+          "name": "css",
+          "type": "dir",
+          "bytes": 0,
+          "gitBlobSHA1": "d05dff4f7a5392164d0b78fb7ac93def48b9bca1"
+        },
+        {
+          "name": "goldhen_2.4b18.12.bin",
+          "type": "file",
+          "bytes": 293120,
+          "gitBlobSHA1": "b9c254cb5171f82d8824794c184b968e5c604b24"
+        },
+        {
+          "name": "index.html",
+          "type": "file",
+          "bytes": 4119,
+          "gitBlobSHA1": "1b8cb1143339b4500dcd0a63bcbdb8c490ad8f95"
+        },
+        {
+          "name": "slopkit.manifest",
+          "type": "file",
+          "bytes": 446,
+          "gitBlobSHA1": "d42680e627a6afa90547a3a7b7959bafe88ec7b5"
+        },
+        {
+          "name": "slopkit",
+          "type": "dir",
+          "bytes": 0,
+          "gitBlobSHA1": "a8e28f45c48d6172d10b2f7443a58269b747425a"
+        }
+      ],
+      "existingLocalComparisons": []
+    },
+    {
+      "folder": "505",
+      "entry": {
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/index.html",
+        "bytes": 862350,
+        "sha256": "1b8fdb8d8cc186534ac1b5b58a6c60073aaecc28a7dedafaab98cf64d8fbc3f3",
+        "gitBlobSHA1": "ec9b7d4fddf3b39013bdd37055ac7225dbce3f44"
+      },
+      "title": "PS4 5.05 FW Host v2.5 by GamerHack",
+      "scripts": [
+        "exploit.js"
+      ],
+      "dispatch": [
+        "<title>PS4 5.05 FW Host v2.5 by GamerHack</title>",
+        "<h1 id=msgs>PS4 5.05 FW Host v2.5 by GamerHack</h1>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='GoldHEN v2.4b18.12 for 5.05 FW'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_goldhenbeta()\"> GoldHEN v2.4b18.12 </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='GoldHEN v2.3 for 5.05 FW'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_goldhen23()\"> GoldHEN v2.3 </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Send a Payload using port 9020'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_binloader()\"> Bin Loader </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Enable Some Debugging Functions Available on TestKit'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_todex()\"> ToDex </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Dump Games to USB Drive'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_dumper()\"> Game-Dumper </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Access this console Through FTP (Be careful what you do)'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_ftp()\"> FTP </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Transfer Installed Games to USB Drive in exFAT'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_app2usb()\"> App2USB </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Create a Backup of the Database and Users to a USB Drive'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_dbackup()\"> DB Backup </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Restore a Backup of the Database and Users from a USB Drive'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_dbrestore()\"> DB Restore </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Enable System Updates'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_enablebUpdates()\"> Enable Updates </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Disable System Updates'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_disableUpdates()\"> Disable Updates </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Dump a Console Kernel to a USB Drive'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_kernelDump()\"> Kernel Dumper </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='PS4 Debug for 5.05 FW'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_ps4debug()\"> PS4 Debug </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Renames (fake) RIFs to (free) RIFs'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_rifRen()\"> RIF Renamer </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Active Remote Play'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_ren()\"> Remote Play </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Required to Activate Cheats Through the PS4 Trainer Website'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_webrte()\"> WebRTE </button>",
+        "<a href=\"http://ps4trainer.com/Trainer/index.html\"><button class=\"btn btn-onln\" onmouseover=\"msgs.innerHTML='PS4 Trainer Website (Follow Instructions There)'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\"> PS4 Trainer Web </button></a>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Games Mods'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"mods_group()\"> Games-Mods </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Parental Controls Passcode Notification - if shows 0000 that means passcode is not set'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_parental()\"> Parental Controls </button>",
+        "<button class=\"btn btn-toolbox\" onmouseover=\"msgs.innerHTML='Orbis Toolbox for 5.05 FW'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_toolbox()\" style=\"margin-left: 68px;\"> Orbis-Toolbox </button>",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='Modify PS4 FAN Speed'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_fanthreshold()\" style=\"margin-bottom: 70px\"> Fan Threshold </button><select id=\"tempC\"></select>°C",
+        "<button class=\"btn\" onmouseover=\"msgs.innerHTML='GTA V Mod - Arabic Guy v1.00 (L1 + R1)'\" onmouseout=\"msgs.innerHTML='PS4 5.05 FW Host v2.5 by GamerHack'\" onclick=\"load_arabicGuy100()\"> Arabic Guy v1.00 </button>"
+      ],
+      "files": [
+        {
+          "name": "Lamance-v0.9-1.38.bin",
+          "type": "file",
+          "bytes": 1128208,
+          "gitBlobSHA1": "6147bb34f57c593aeafc20c128fc870352a739b0"
+        },
+        {
+          "name": "Orbis-Toolbox-505.bin",
+          "type": "file",
+          "bytes": 626472,
+          "gitBlobSHA1": "b59c073ba96406acfeae1571d915a4358d6d9ddd"
+        },
+        {
+          "name": "OystersMenu-v1.00.bin",
+          "type": "file",
+          "bytes": 1260864,
+          "gitBlobSHA1": "a658ceafd4b580c1bfd71173f9c7e6ec4ec91d4c"
+        },
+        {
+          "name": "OystersMenu-v1.13.bin",
+          "type": "file",
+          "bytes": 1260864,
+          "gitBlobSHA1": "5d14a719a814a38a9e2d3083b07e815f7760686a"
+        },
+        {
+          "name": "OystersMenu-v1.19.bin",
+          "type": "file",
+          "bytes": 1260864,
+          "gitBlobSHA1": "563eab1efea2447849115fb12a86d98ff6ae43a9"
+        },
+        {
+          "name": "OystersMenu-v1.24.bin",
+          "type": "file",
+          "bytes": 1260864,
+          "gitBlobSHA1": "9ec99c1ae2c4133edc4f39ac90f65890598ced8f"
+        },
+        {
+          "name": "OystersMenu-v1.29.bin",
+          "type": "file",
+          "bytes": 1260864,
+          "gitBlobSHA1": "3daa7accd404f8e0aba7e9498b1daf7ce16d8d02"
+        },
+        {
+          "name": "PS4ren.bin",
+          "type": "file",
+          "bytes": 13030,
+          "gitBlobSHA1": "0601be081266818ea395ff75ed635383f7af8d3c"
+        },
+        {
+          "name": "WildeModz-1.32.bin",
+          "type": "file",
+          "bytes": 1074320,
+          "gitBlobSHA1": "ec0aac6d8c9ba7d38b5c83d628ab3c5d0c7b5885"
+        },
+        {
+          "name": "WildeModz-1.33.bin",
+          "type": "file",
+          "bytes": 1074320,
+          "gitBlobSHA1": "962e8567ae349e649da0e481feec45089eb67d05"
+        },
+        {
+          "name": "WildeModz-1.38.bin",
+          "type": "file",
+          "bytes": 592864,
+          "gitBlobSHA1": "5e12e751558f0b32349d70f6f57492757beae7ba"
+        },
+        {
+          "name": "WildeModz-1.46.bin",
+          "type": "file",
+          "bytes": 29416,
+          "gitBlobSHA1": "65d7142a7d084d7a4fffc71d63e0633dd5a0701e"
+        },
+        {
+          "name": "app2usb.bin",
+          "type": "file",
+          "bytes": 17188,
+          "gitBlobSHA1": "2407efc5772f31d1c68166b6a52f047d1c30ebd2"
+        },
+        {
+          "name": "arabic-guy100.bin",
+          "type": "file",
+          "bytes": 1055340,
+          "gitBlobSHA1": "bbae1123b41834a2dc3b289ebd63c38503c4049e"
+        },
+        {
+          "name": "arabic-guy127.bin",
+          "type": "file",
+          "bytes": 2432450,
+          "gitBlobSHA1": "8af1983411af4e6def9198142acb0f505ca4006e"
+        },
+        {
+          "name": "arabic-guy132.bin",
+          "type": "file",
+          "bytes": 1059520,
+          "gitBlobSHA1": "354974904ddc685109ffeeb8264c9dd00f4f07db"
+        },
+        {
+          "name": "arabic-guy133.bin",
+          "type": "file",
+          "bytes": 1059520,
+          "gitBlobSHA1": "4f7a12d0aacc20f87e6f0fe536b3dd3eff9228bc"
+        },
+        {
+          "name": "backup.bin",
+          "type": "file",
+          "bytes": 9104,
+          "gitBlobSHA1": "523460f544fc8c187ca9bc2a2e864bf5d35c0cc4"
+        },
+        {
+          "name": "cache.html",
+          "type": "file",
+          "bytes": 1551,
+          "gitBlobSHA1": "3a368e802b6ef8935e14118900b2f0bf1d0c1d81"
+        },
+        {
+          "name": "cache.manifest",
+          "type": "file",
+          "bytes": 723,
+          "gitBlobSHA1": "9d3435f03528b03b25f9087e5518445f0524a4f0"
+        },
+        {
+          "name": "disable-updates.bin",
+          "type": "file",
+          "bytes": 4068,
+          "gitBlobSHA1": "1f6978ca35d76333ac8e23fe07aef0f65386e0d1"
+        },
+        {
+          "name": "dumper.bin",
+          "type": "file",
+          "bytes": 14616,
+          "gitBlobSHA1": "1be865871bc47d1498e431c6c2572247dfb61f4e"
+        },
+        {
+          "name": "enable-updates.bin",
+          "type": "file",
+          "bytes": 4032,
+          "gitBlobSHA1": "5087b02f8824c276326f65aae3cb6f10e55ce381"
+        },
+        {
+          "name": "exploit.js",
+          "type": "file",
+          "bytes": 38450,
+          "gitBlobSHA1": "4a5885d44de11080b0b4241eb4784c1859daef1e"
+        },
+        {
+          "name": "fan-threshold50.bin",
+          "type": "file",
+          "bytes": 7472,
+          "gitBlobSHA1": "a8245cf1e7372fe57db834a7674d302df4cab5ba"
+        },
+        {
+          "name": "fan-threshold55.bin",
+          "type": "file",
+          "bytes": 7472,
+          "gitBlobSHA1": "95442aaacbd4d8272564ceb648a7c72202e4d5c6"
+        },
+        {
+          "name": "fan-threshold60.bin",
+          "type": "file",
+          "bytes": 7472,
+          "gitBlobSHA1": "469c7fd5799c156dfe2de4e6314fd486ec29b89a"
+        },
+        {
+          "name": "fan-threshold65.bin",
+          "type": "file",
+          "bytes": 7472,
+          "gitBlobSHA1": "b2b2a3e9d81b6d9e136ecd71ee244adceec5d42e"
+        },
+        {
+          "name": "fan-threshold70.bin",
+          "type": "file",
+          "bytes": 7472,
+          "gitBlobSHA1": "86bf4b8127707e8c724774f4b91851e6a98cd178"
+        },
+        {
+          "name": "fan-threshold75.bin",
+          "type": "file",
+          "bytes": 7472,
+          "gitBlobSHA1": "d1e3178607d220b0a25239fb348368ee8a2a5f04"
+        },
+        {
+          "name": "ftp.bin",
+          "type": "file",
+          "bytes": 17156,
+          "gitBlobSHA1": "5b1df1d16a80578a18b769695a8f0b9ee58941de"
+        },
+        {
+          "name": "goldhen_2.3_505.bin",
+          "type": "file",
+          "bytes": 280792,
+          "gitBlobSHA1": "3e80d192199eeefb783953fbc79922c76e971c90"
+        },
+        {
+          "name": "goldhen_2.4b18.12.bin",
+          "type": "file",
+          "bytes": 293120,
+          "gitBlobSHA1": "b9c254cb5171f82d8824794c184b968e5c604b24"
+        },
+        {
+          "name": "index.html",
+          "type": "file",
+          "bytes": 862350,
+          "gitBlobSHA1": "ec9b7d4fddf3b39013bdd37055ac7225dbce3f44"
+        },
+        {
+          "name": "kernel-dumper.bin",
+          "type": "file",
+          "bytes": 9880,
+          "gitBlobSHA1": "75364c160694bf8e89436a2dad0070dfbc2d35bd"
+        },
+        {
+          "name": "parental-controls.bin",
+          "type": "file",
+          "bytes": 7892,
+          "gitBlobSHA1": "c89b072758f5648abd36b155f38724166160399b"
+        },
+        {
+          "name": "ps4debug100.bin",
+          "type": "file",
+          "bytes": 87384,
+          "gitBlobSHA1": "10125fb0e61f37b246fa4da57db2836576dca5a4"
+        },
+        {
+          "name": "restore.bin",
+          "type": "file",
+          "bytes": 9416,
+          "gitBlobSHA1": "893192b141f27a8b2be8b351865c72a64909f246"
+        },
+        {
+          "name": "rif-renamer.bin",
+          "type": "file",
+          "bytes": 7048,
+          "gitBlobSHA1": "8a23d5050a873b4bc534d0831b25580097d41f42"
+        },
+        {
+          "name": "todex.bin",
+          "type": "file",
+          "bytes": 2288,
+          "gitBlobSHA1": "c5519a75287870fd02d6c4e61ae91b5fb1d30292"
+        },
+        {
+          "name": "webrte.bin",
+          "type": "file",
+          "bytes": 40440,
+          "gitBlobSHA1": "6ef652d9906fc5f89a63a8d08877ed1337214873"
+        }
+      ],
+      "existingLocalComparisons": [
+        {
+          "remote": "exploit.js",
+          "local": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/Goldhen505/exploit.js",
+          "bytes": 19246,
+          "gitBlobSHA1": "e5f8c0fee799cde1e4462d133b1d1053de2db744",
+          "exactGamerHackBlob": false
+        },
+        {
+          "remote": "goldhen_2.3_505.bin",
+          "local": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/Goldhen505/goldhen_2.3_505.bin",
+          "bytes": 280792,
+          "gitBlobSHA1": "3e80d192199eeefb783953fbc79922c76e971c90",
+          "exactGamerHackBlob": true
+        }
+      ]
+    },
+    {
+      "folder": "672goldhen",
+      "entry": {
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672goldhen/index.html",
+        "bytes": 18717,
+        "sha256": "cb7839da704885d4673bf4a8d363196c942fac63c5af48e65e3fe77c266947da",
+        "gitBlobSHA1": "92b67a1866a2757e0f018a35b9d3c01b0a278381"
+      },
+      "title": "PS4 6.72 FW GoldHEN Host by GamerHack",
+      "scripts": [
+        "jb.js"
+      ],
+      "manifest": "cache.manifest",
+      "dispatch": [
+        "<title>PS4 6.72 FW GoldHEN Host by GamerHack</title>",
+        "<body onload=\"if(localStorage.cached672=='yes')setTimeout(load_goldhen, 50);\">",
+        "<h1><font color=\"green\">Pass = <span id=\"passCounter\"></span>&nbsp;&nbsp;&nbsp;&nbsp;<font color=\"white\">PS4 6.72 FW GoldHEN Host by GamerHack</span>&nbsp;&nbsp;&nbsp;&nbsp;<font color=\"red\">Fail = <span id=\"failCounter\"></span></h1>",
+        "function load_goldhen(){",
+        "PLfile=\"goldhen_2.4b18.12.bin\";"
+      ],
+      "files": [
+        {
+          "name": "cache.manifest",
+          "type": "file",
+          "bytes": 94,
+          "gitBlobSHA1": "fea527b404379a69ee5d9c208f531e64a20de9f2"
+        },
+        {
+          "name": "exp_loader.js",
+          "type": "file",
+          "bytes": 501336,
+          "gitBlobSHA1": "6e97612e2b554b2647a262d06c9098e174c7408d"
+        },
+        {
+          "name": "goldhen_2.4b18.12.bin",
+          "type": "file",
+          "bytes": 293120,
+          "gitBlobSHA1": "b9c254cb5171f82d8824794c184b968e5c604b24"
+        },
+        {
+          "name": "index.html",
+          "type": "file",
+          "bytes": 18717,
+          "gitBlobSHA1": "92b67a1866a2757e0f018a35b9d3c01b0a278381"
+        },
+        {
+          "name": "jb.js",
+          "type": "file",
+          "bytes": 800996,
+          "gitBlobSHA1": "d36548d9519ebcc3a5e4a8280ec5f1a59ca5a1ef"
+        }
+      ],
+      "existingLocalComparisons": [
+        {
+          "remote": "jb.js",
+          "local": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/Goldhen672/jb.js",
+          "bytes": 800828,
+          "gitBlobSHA1": "29c4425286d917498fc7f03d526b85a3d02848de",
+          "exactGamerHackBlob": false
+        }
+      ]
+    },
+    {
+      "folder": "672",
+      "entry": {
+        "url": "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/index.html",
+        "bytes": 1334148,
+        "sha256": "5a7876c7322a0bf65604dcc2143d4363fbb1f0d4a7d6a36de9a02d9b4b3abfd3",
+        "gitBlobSHA1": "a9fb5a8983da9bcf439211dcb0f592f170d36a5c"
+      },
+      "title": "PS4 6.72 Host v3.0 by GamerHack",
+      "scripts": [],
+      "manifest": "cache.manifest",
+      "dispatch": [
+        "<title>PS4 6.72 Host v3.0 by GamerHack</title>",
+        "<h1 id=\"msgs\">PS4 6.72 FW Host v3.0 by GamerHack</h1>",
+        "<button class=\"btn\" onclick=\"load_goldhen()\"> GoldHEN v2.4b18.12 </button>",
+        "function load_goldhen(){",
+        "PLfile=\"goldhen_2.4b18.12.bin\";"
+      ],
+      "files": [
+        {
+          "name": "OystersMenu-v1.3.8-v1.00.bin",
+          "type": "file",
+          "bytes": 1567488,
+          "gitBlobSHA1": "076f88586f83333862310ec4976063c3afc3e2fe"
+        },
+        {
+          "name": "OystersMenu-v1.3.8-v1.13.bin",
+          "type": "file",
+          "bytes": 1567488,
+          "gitBlobSHA1": "45ac163a206001ae246351843c0197eb71802350"
+        },
+        {
+          "name": "OystersMenu-v1.3.8-v1.19.bin",
+          "type": "file",
+          "bytes": 1567488,
+          "gitBlobSHA1": "285a8e8cd69d40bc9684d81f4a05cbb7071b24c0"
+        },
+        {
+          "name": "OystersMenu-v1.3.8-v1.24.bin",
+          "type": "file",
+          "bytes": 1567488,
+          "gitBlobSHA1": "1876ccbe363d999d3c871da60caf60cccd682ba1"
+        },
+        {
+          "name": "OystersMenu-v1.3.8-v1.29.bin",
+          "type": "file",
+          "bytes": 1567488,
+          "gitBlobSHA1": "8edbce0217a453d705b1ea8bbd84d8aeb25baa1f"
+        },
+        {
+          "name": "WildeModz-1.46.bin",
+          "type": "file",
+          "bytes": 2610904,
+          "gitBlobSHA1": "f4ba1d660774091a90ddc20332d09516a0a3f730"
+        },
+        {
+          "name": "cache.manifest",
+          "type": "file",
+          "bytes": 1052,
+          "gitBlobSHA1": "0888082cbc29338e15cb21deda73c5fc8c93c30b"
+        },
+        {
+          "name": "frontend.js",
+          "type": "file",
+          "bytes": 5628,
+          "gitBlobSHA1": "87ef261f2c79256386a7f695b60d18f4cc0327de"
+        },
+        {
+          "name": "goldhen_2.4b18.12.bin",
+          "type": "file",
+          "bytes": 293120,
+          "gitBlobSHA1": "b9c254cb5171f82d8824794c184b968e5c604b24"
+        },
+        {
+          "name": "index.html",
+          "type": "file",
+          "bytes": 1334148,
+          "gitBlobSHA1": "a9fb5a8983da9bcf439211dcb0f592f170d36a5c"
+        },
+        {
+          "name": "jb2.js",
+          "type": "file",
+          "bytes": 800857,
+          "gitBlobSHA1": "29e68feff36d66e6578d5d7ef1fb6a1553b5d52d"
+        },
+        {
+          "name": "payload.js",
+          "type": "file",
+          "bytes": 42593,
+          "gitBlobSHA1": "f21e60aa51caf18dcb5b88c7070b55ad9edb0e4e"
+        },
+        {
+          "name": "pl_App2usb.bin",
+          "type": "file",
+          "bytes": 17768,
+          "gitBlobSHA1": "d2296d6d43119323f9aca17ac2b5e422d35ec0a0"
+        },
+        {
+          "name": "pl_AvatarBackup.bin",
+          "type": "file",
+          "bytes": 11565,
+          "gitBlobSHA1": "d676016d32e464d62d72f35d1183c41f21912d88"
+        },
+        {
+          "name": "pl_AvatarRestore.bin",
+          "type": "file",
+          "bytes": 10739,
+          "gitBlobSHA1": "d625113453879857c00a05a31f6852c64f658369"
+        },
+        {
+          "name": "pl_DBbackup.bin",
+          "type": "file",
+          "bytes": 8976,
+          "gitBlobSHA1": "c53537805edb5ad696e5840f3f788557673b59e6"
+        },
+        {
+          "name": "pl_DBrestore.bin",
+          "type": "file",
+          "bytes": 8907,
+          "gitBlobSHA1": "a8ef9713a47218fe8da24720a915db91deeafab4"
+        },
+        {
+          "name": "pl_DumperG.bin",
+          "type": "file",
+          "bytes": 13825,
+          "gitBlobSHA1": "b2bb23f3ad6f06ddf0295d2c9b5a9995b45c23d1"
+        },
+        {
+          "name": "pl_DumperGU.bin",
+          "type": "file",
+          "bytes": 13829,
+          "gitBlobSHA1": "fa67f14399a9a8cfed98572aec6c4019a81ec099"
+        },
+        {
+          "name": "pl_DumperM.bin",
+          "type": "file",
+          "bytes": 13829,
+          "gitBlobSHA1": "c7a0044b43b368a8a625cba98253159da1dbd8dd"
+        },
+        {
+          "name": "pl_DumperU.bin",
+          "type": "file",
+          "bytes": 13827,
+          "gitBlobSHA1": "d9c22e8554a6b2f6bd96781f69a9c1de8885cd61"
+        },
+        {
+          "name": "pl_FTP.bin",
+          "type": "file",
+          "bytes": 20034,
+          "gitBlobSHA1": "342e4591ae6587d3cc5dc6c44592ba6f23d90a11"
+        },
+        {
+          "name": "pl_FWspoof.js",
+          "type": "file",
+          "bytes": 16686,
+          "gitBlobSHA1": "c93156dbb37eb1e7c985fd2d44c5d6e7be140853"
+        },
+        {
+          "name": "pl_FanThresh.js",
+          "type": "file",
+          "bytes": 21162,
+          "gitBlobSHA1": "5522841e84a4526fc192f07e01623dd5c67dcc56"
+        },
+        {
+          "name": "pl_GTA_ArabicGuy100.bin",
+          "type": "file",
+          "bytes": 1055064,
+          "gitBlobSHA1": "decebf6d379d4e283927ff51094f51ea610f5ec0"
+        },
+        {
+          "name": "pl_GTA_ArabicGuy127.bin",
+          "type": "file",
+          "bytes": 1055384,
+          "gitBlobSHA1": "f37b97e4d6a65ea37e8cd6c59bea4fcda479f23d"
+        },
+        {
+          "name": "pl_GTA_ArabicGuy132.bin",
+          "type": "file",
+          "bytes": 1054936,
+          "gitBlobSHA1": "691650d2ea8e65cdc3bd43a246fd942f0f9fb178"
+        },
+        {
+          "name": "pl_GTA_Lamance-v0.9-1.38.bin",
+          "type": "file",
+          "bytes": 1128208,
+          "gitBlobSHA1": "6147bb34f57c593aeafc20c128fc870352a739b0"
+        },
+        {
+          "name": "pl_HDD_Backup.bin",
+          "type": "file",
+          "bytes": 12240,
+          "gitBlobSHA1": "f603aa8a5b755fe71a76d7860c56fbb3d615bbf1"
+        },
+        {
+          "name": "pl_HDD_Restore.bin",
+          "type": "file",
+          "bytes": 10192,
+          "gitBlobSHA1": "a441c29b47d6ff83b8e1781bc0ecd474025ba9eb"
+        },
+        {
+          "name": "pl_HistoryBlocker.bin",
+          "type": "file",
+          "bytes": 7417,
+          "gitBlobSHA1": "8eaf31bd682cc87b4303573ad22a91efdeb3f3ca"
+        },
+        {
+          "name": "pl_KernelDumper.bin",
+          "type": "file",
+          "bytes": 8109,
+          "gitBlobSHA1": "9f4c5f81c5d2841a8d2c58b9362328d18b611c86"
+        },
+        {
+          "name": "pl_LinuxBaikal.bin",
+          "type": "file",
+          "bytes": 21064,
+          "gitBlobSHA1": "06b5259e11a93a28ce8a8b7b7afd499fc0f8ca79"
+        },
+        {
+          "name": "pl_LinuxUSB.bin",
+          "type": "file",
+          "bytes": 17288,
+          "gitBlobSHA1": "ab065ed7763c3a196fec94a4f94be515378e2472"
+        },
+        {
+          "name": "pl_OfflineCacheBackup.bin",
+          "type": "file",
+          "bytes": 8400,
+          "gitBlobSHA1": "e9eefaee3888b8be4e99681edda016f286595c08"
+        },
+        {
+          "name": "pl_OfflineCacheRestore.bin",
+          "type": "file",
+          "bytes": 8384,
+          "gitBlobSHA1": "b9b1f85269149b6845f8882e9a8edb82fb6450ab"
+        },
+        {
+          "name": "pl_Orbis-Toolbox-672.bin",
+          "type": "file",
+          "bytes": 626568,
+          "gitBlobSHA1": "f3ee9a3112443177cc706d2fbd11f95a7696b443"
+        },
+        {
+          "name": "pl_PS4Debug.bin",
+          "type": "file",
+          "bytes": 53088,
+          "gitBlobSHA1": "6f6e7045f36275fe23116a80901b8698a7f55d88"
+        },
+        {
+          "name": "pl_SaveDataBackup.bin",
+          "type": "file",
+          "bytes": 11328,
+          "gitBlobSHA1": "eb4ef31c8d0dd72af0bb6546c0f5ec56a8b87af2"
+        },
+        {
+          "name": "pl_SaveDataRestore.bin",
+          "type": "file",
+          "bytes": 9632,
+          "gitBlobSHA1": "c73e8d055cbe00cb4bfd34ced8e12051fdc566ae"
+        },
+        {
+          "name": "pl_ToDex.bin",
+          "type": "file",
+          "bytes": 2320,
+          "gitBlobSHA1": "aa461c1ff40b7fdc959c3a2ec3a1924cedb3a0f0"
+        },
+        {
+          "name": "pl_TrophyBackup.bin",
+          "type": "file",
+          "bytes": 10216,
+          "gitBlobSHA1": "a730c64ca2ebab8300d98678f150b8cc94d1e403"
+        },
+        {
+          "name": "pl_TrophyRestore.bin",
+          "type": "file",
+          "bytes": 9184,
+          "gitBlobSHA1": "16aa4979a3b03c59e9c8d06f5915685d1ac659df"
+        },
+        {
+          "name": "pl_UpdatesDisable.bin",
+          "type": "file",
+          "bytes": 6793,
+          "gitBlobSHA1": "9f12417a4e2eb0dc236bb99f8a7beb10057ec0c1"
+        },
+        {
+          "name": "pl_UpdatesEnable.bin",
+          "type": "file",
+          "bytes": 6758,
+          "gitBlobSHA1": "63b92a151b1b6678006a796f2537dd316d4d529e"
+        },
+        {
+          "name": "pl_WebRTE.bin",
+          "type": "file",
+          "bytes": 37408,
+          "gitBlobSHA1": "2de3fee4e25e8b76a1f30d08b4c505b2ab444ca0"
+        },
+        {
+          "name": "pl_hen_2.1.3.bin",
+          "type": "file",
+          "bytes": 8704,
+          "gitBlobSHA1": "c65b4e19596003fbeaab442f358a6a19bc5f4599"
+        },
+        {
+          "name": "pl_hen_2.1.3b.bin",
+          "type": "file",
+          "bytes": 8717,
+          "gitBlobSHA1": "18dcf86ce7c577fbff608634582b3a7efd43455f"
+        },
+        {
+          "name": "pl_loader.js",
+          "type": "file",
+          "bytes": 501574,
+          "gitBlobSHA1": "35c3950ef943cff5b0048b56708fabb90b384c1b"
+        },
+        {
+          "name": "pl_loaderBL.js",
+          "type": "file",
+          "bytes": 500872,
+          "gitBlobSHA1": "8355b25ba3d71954f3b4bfdad5bff69803b22298"
+        },
+        {
+          "name": "pl_loaderFW.js",
+          "type": "file",
+          "bytes": 504531,
+          "gitBlobSHA1": "afbabdb2658428711f98583a220ed01af4829055"
+        },
+        {
+          "name": "pl_loaderWeb.js",
+          "type": "file",
+          "bytes": 500870,
+          "gitBlobSHA1": "2cb88143a028a3be08395b3935f52c25077963ad"
+        },
+        {
+          "name": "pl_mira.bin",
+          "type": "file",
+          "bytes": 344824,
+          "gitBlobSHA1": "5825d57dc3da0979a5679244ae494ad7299fc43b"
+        }
+      ],
+      "existingLocalComparisons": []
+    }
+  ]
+}

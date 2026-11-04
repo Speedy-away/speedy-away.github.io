@@ -1,0 +1,1841 @@
+{
+  "scope": "xbox360-more",
+  "batch": 3,
+  "reviewed": "2026-11-02",
+  "resources": [
+    {
+      "id": "snes360-enhanced",
+      "title": "SNES360 Enhanced",
+      "author": "frankischilling · Snes9x / original Snes360 contributors",
+      "group": "emulators",
+      "version": "0.38 Beta",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/snes360-enhanced.v0.38.zip",
+      "fileName": "snes360-enhanced.v0.38.zip",
+      "downloadUrl": "https://github.com/frankischilling/snes360-enhanced/releases/download/0.38/snes360-enhanced.v0.38.zip",
+      "expectedBytes": 11740360,
+      "expectedSha256": "a305a177bc16d481333ed98fbfc217d0cbbc0f9775a0c54554d194ceba6176d6",
+      "source": "https://github.com/frankischilling/snes360-enhanced",
+      "release": "https://github.com/frankischilling/snes360-enhanced/releases/tag/0.38",
+      "format": "ZIP / XEX",
+      "description": "Standalone Snes9x 1.51 port with ROM search, favorites, Game Genie input, save states and display filters.",
+      "prerequisites": "Your own SNES ROMs in Roms\\ or paths configured in settings.xml. Keep Snes360.xex with the entire media folder, including Snes360.xzp, Snes360.ttf and compiled shaders.",
+      "runtime": "Xbox 360 able to run homebrew XEX files, including RGH/JTAG or a development kit. No exact motherboard or minimum system dashboard is published.",
+      "temporary": "No specific BadUpdate, ABadAvatar or Peer Pressure combination is certified by this release. The author says version 0.38 launch, UI navigation and gameplay still require hardware testing.",
+      "installPath": "Hdd1:\\Emulators\\Snes360\\",
+      "usbPath": "Usb0:\\Emulators\\Snes360\\",
+      "launch": "Snes360.xex",
+      "requiredEntries": [
+        "Snes360.xex",
+        "media/Snes360.xzp",
+        "media/Snes360.ttf"
+      ],
+      "setup": [
+        "The complete ZIP has Snes360.xex and media at its root. Extract all contents directly into the shown Snes360 folder.",
+        "Add your own ROMs to Roms or configure settings.xml, then launch Snes360.xex from Aurora, FSD or XeXMenu.",
+        "Preserve settings.xml, favorites.txt, saves and states when installing another version. Press both thumbsticks for the in-game menu."
+      ],
+      "notes": "Beta build. Achievement integration is removed. Supplied screenshots show an earlier interface version; they are publisher references, not hardware tests by this site.",
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\snes360-enhanced-preview.jpg",
+        "sourceUrl": "https://raw.githubusercontent.com/frankischilling/snes360-enhanced/0.38/img/rombrowser.jpg",
+        "credit": "frankischilling · official ROM-browser screenshot; publisher says screenshot shows an earlier interface version",
+        "bytes": 1373799,
+        "sha256": "2fb104b022b3ac09b0a325897e9462b1a32d8bd55c164aecde75ddf5abc0f060"
+      },
+      "sourceInspection": {
+        "name": "snes360-enhanced.v0.38.zip",
+        "entryCount": 18,
+        "crcPassed": true,
+        "xex": [
+          {
+            "name": "Snes360.xex",
+            "bytes": 2809856,
+            "sha256": "bf90a1855c0894979941c2593ae5cfd6af8c4aa1c009c0f353788109e9f25e13",
+            "magic": "XEX2"
+          }
+        ],
+        "entries": [
+          {
+            "name": "BUILD-INFO.txt",
+            "bytes": 452
+          },
+          {
+            "name": "GPL-2",
+            "bytes": 18332
+          },
+          {
+            "name": "LGPL-2.1",
+            "bytes": 27038
+          },
+          {
+            "name": "LICENSE",
+            "bytes": 35823
+          },
+          {
+            "name": "media\\saveicon.png",
+            "bytes": 4290
+          },
+          {
+            "name": "media\\Shaders\\ShadeXuiEffectPixel.xpu",
+            "bytes": 544
+          },
+          {
+            "name": "media\\Shaders\\ShadeXuiEffectVertex.xvu",
+            "bytes": 432
+          },
+          {
+            "name": "media\\Snes360.ttf",
+            "bytes": 257636
+          },
+          {
+            "name": "media\\Snes360.xzp",
+            "bytes": 4710889
+          },
+          {
+            "name": "media\\sounds\\background.mp3",
+            "bytes": 5160716
+          },
+          {
+            "name": "media\\XuiEffect_Texture.png",
+            "bytes": 8925
+          },
+          {
+            "name": "previews",
+            "bytes": 0
+          },
+          {
+            "name": "README.md",
+            "bytes": 12775
+          },
+          {
+            "name": "release-0.38.md",
+            "bytes": 2289
+          },
+          {
+            "name": "Roms",
+            "bytes": 0
+          },
+          {
+            "name": "saveicon.png",
+            "bytes": 4290
+          },
+          {
+            "name": "Snes360.xex",
+            "bytes": 2809856
+          },
+          {
+            "name": "snes9x-license.txt",
+            "bytes": 5583
+          }
+        ]
+      }
+    },
+    {
+      "id": "amiga360-refresh",
+      "title": "Amiga360 Refresh 2026",
+      "author": "Vanni B. Monti-Condesnitt · Amiga360 / P-UAE contributors",
+      "group": "emulators",
+      "version": "1.5 Feature Edition",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/A360RF26-Xbox.7z",
+      "fileName": "A360RF26-Xbox.7z",
+      "downloadUrl": "https://github.com/djforrest33-hash/amiga360-refresh-2026-xbox-binaries/releases/download/v1.5-feature-edition/A360RF26-Xbox.7z",
+      "expectedBytes": 14235921,
+      "expectedSha256": "146a2e42894f57944fbc9dfebb861a6a96992c993e3dbdf32b4ba91d436ed592",
+      "source": "https://github.com/djforrest33-hash/amiga360-refresh-2026-xbox-binaries",
+      "release": "https://github.com/djforrest33-hash/amiga360-refresh-2026-xbox-binaries/releases/tag/v1.5-feature-edition",
+      "format": "7Z / XEX",
+      "description": "Controller-first Amiga emulator with machine profiles, multidisk swapping, savestates and Workbench hardfile support.",
+      "prerequisites": "Your own Kickstart 3.1 ROM at Kickstart\\kick31.rom for A1200 startup, or Kickstart 1.3 at Kickstart\\kick13.rom for A500. Put owned floppy images in Roms and hardfiles in Hardfiles. The release includes no Kickstart, Workbench, games, HDF collection or music.",
+      "runtime": "JTAG/RGH Xbox 360, explicitly required by the author. No particular motherboard or system-dashboard build is pinned.",
+      "temporary": "The publisher targets JTAG/RGH; no BadUpdate, ABadAvatar or Peer Pressure certification is provided.",
+      "installPath": "Hdd1:\\Emulators\\Amiga360Refresh\\",
+      "usbPath": "Usb0:\\Emulators\\Amiga360Refresh\\",
+      "launch": "A360RF26.xex",
+      "requiredEntries": [
+        "A360RF26.xex",
+        "media/font.ttf"
+      ],
+      "setup": [
+        "The 7z contains the runtime directly at its root. Extract all directories and A360RF26.xex together into the shown folder; keep media and the supplied Software helpers intact.",
+        "Supply your owned Kickstart and media in the exact folders above, then launch A360RF26.xex.",
+        "Preserve Config, SAVE, personal media and hardfiles between versions. If a Workbench hardfile misses its first boot, use Reset Amiga in the app before retrying."
+      ],
+      "notes": "The optional 115 MB Tools CD is not needed for the basic emulator and was not downloaded. The author reports hardware testing of this branch; this site did not run the build. Floppy formats include ADF, ADZ, DMS, FDI, compatible IPF, ZIP and M3U.",
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\amiga360-preview.webp",
+        "sourceUrl": "https://cf.preview.redd.it/release-amiga-360-refresh-2026-feature-edition-release-v0-f3nflv2jxsth1.png?width=1080&crop=smart&auto=webp&s=4939cee0673300985cd238bf2d0250207414fbae",
+        "credit": "Vanni B. Monti-Condesnitt · official GUI screenshot linked by the original-author README",
+        "bytes": 229841,
+        "sha256": "a88c1b294542ac52bd458f1133ed8636d490eb183ac2ef453a9acdf8d38edd3b"
+      },
+      "sourceInspection": {
+        "name": "A360RF26-Xbox.7z",
+        "entryCount": 132,
+        "crcPassed": true,
+        "xex": [
+          {
+            "name": "A360RF26.xex",
+            "bytes": 10018816,
+            "sha256": "5299e3ff3a7ca10f65fc740a59ea0ef3c7a96bba0f9f618efa7b8e719d2246c8",
+            "magic": "XEX2"
+          }
+        ],
+        "entries": [
+          {
+            "name": "Cache",
+            "bytes": 0
+          },
+          {
+            "name": "Config",
+            "bytes": 0
+          },
+          {
+            "name": "Config\\images",
+            "bytes": 0
+          },
+          {
+            "name": "DATA",
+            "bytes": 0
+          },
+          {
+            "name": "Disks",
+            "bytes": 0
+          },
+          {
+            "name": "Docs",
+            "bytes": 0
+          },
+          {
+            "name": "Hardfiles",
+            "bytes": 0
+          },
+          {
+            "name": "Kickstart",
+            "bytes": 0
+          },
+          {
+            "name": "media",
+            "bytes": 0
+          },
+          {
+            "name": "Music",
+            "bytes": 0
+          },
+          {
+            "name": "Roms",
+            "bytes": 0
+          },
+          {
+            "name": "SAVE",
+            "bytes": 0
+          },
+          {
+            "name": "Software",
+            "bytes": 0
+          },
+          {
+            "name": "Software\\AmiCDROM",
+            "bytes": 0
+          },
+          {
+            "name": "Software\\AmiCDROM\\c",
+            "bytes": 0
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu",
+            "bytes": 0
+          },
+          {
+            "name": "Software\\AmiCDROM\\icons",
+            "bytes": 0
+          },
+          {
+            "name": "Software\\AmiCDROM\\l",
+            "bytes": 0
+          },
+          {
+            "name": "Software\\AmiCDROM\\src",
+            "bytes": 0
+          },
+          {
+            "name": "Third-Party-Licenses",
+            "bytes": 0
+          },
+          {
+            "name": "A360RF26.xex",
+            "bytes": 10018816
+          },
+          {
+            "name": "BUILD-IDENTITY.txt",
+            "bytes": 173
+          },
+          {
+            "name": "Cache\\README.txt",
+            "bytes": 83
+          },
+          {
+            "name": "Config\\A1200-RTG.XAC",
+            "bytes": 9287
+          },
+          {
+            "name": "Config\\A1200-WHDLoad-AGA.XAC",
+            "bytes": 9656
+          },
+          {
+            "name": "Config\\A1200.XAC",
+            "bytes": 9658
+          },
+          {
+            "name": "Config\\A4000-OS31-CLASSICWB.XAC",
+            "bytes": 10279
+          },
+          {
+            "name": "Config\\A4000-OS35-CLASSICWB.XAC",
+            "bytes": 10047
+          },
+          {
+            "name": "Config\\A4000-OS39-CLASSICWB.XAC",
+            "bytes": 10047
+          },
+          {
+            "name": "Config\\A4000-RTG.XAC",
+            "bytes": 9670
+          },
+          {
+            "name": "Config\\A500.XAC",
+            "bytes": 9265
+          },
+          {
+            "name": "Config\\default.XAC",
+            "bytes": 10184
+          },
+          {
+            "name": "Config\\images\\A1200-CLASSICWB311.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A1200-RTG.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A1200-RTG.jpg",
+            "bytes": 9360
+          },
+          {
+            "name": "Config\\images\\A1200-WHDLoad-AGA.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A1200-WHDLoad.jpg",
+            "bytes": 26620
+          },
+          {
+            "name": "Config\\images\\A1200.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A4000-OS31-CLASSICWB.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A4000-OS35-CLASSICWB.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A4000-OS39-CLASSICWB.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A4000-RTG.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A4000-WHDLoad.jpg",
+            "bytes": 32692
+          },
+          {
+            "name": "Config\\images\\A4000-WHDLoad3333.bmp",
+            "bytes": 230454
+          },
+          {
+            "name": "Config\\images\\A500.jpg",
+            "bytes": 8261
+          },
+          {
+            "name": "Config\\images\\default.jpg",
+            "bytes": 8261
+          },
+          {
+            "name": "Config\\images\\README.txt",
+            "bytes": 269
+          },
+          {
+            "name": "Config\\music.cfg",
+            "bytes": 33
+          },
+          {
+            "name": "Config\\PROFILES-README.txt",
+            "bytes": 619
+          },
+          {
+            "name": "Config\\README.txt",
+            "bytes": 355
+          },
+          {
+            "name": "Config\\software-folder.cfg",
+            "bytes": 164
+          },
+          {
+            "name": "Config\\theme.cfg",
+            "bytes": 6
+          },
+          {
+            "name": "COPYING",
+            "bytes": 18007
+          },
+          {
+            "name": "DATA\\README.txt",
+            "bytes": 64
+          },
+          {
+            "name": "Docs\\A360RF26-Manual.pdf",
+            "bytes": 20592
+          },
+          {
+            "name": "Docs\\BUILDING.md",
+            "bytes": 1145
+          },
+          {
+            "name": "Docs\\CHANGELOG.md",
+            "bytes": 7182
+          },
+          {
+            "name": "Docs\\COMPATIBILITY.md",
+            "bytes": 892
+          },
+          {
+            "name": "Docs\\PROFILE-SETTINGS.md",
+            "bytes": 619
+          },
+          {
+            "name": "Docs\\PUBLIC-TESTING.md",
+            "bytes": 2288
+          },
+          {
+            "name": "Docs\\RELEASE-HISTORY.md",
+            "bytes": 1658
+          },
+          {
+            "name": "Docs\\RELEASE-NOTES.md",
+            "bytes": 2815
+          },
+          {
+            "name": "Docs\\USER-MANUAL.md",
+            "bytes": 12728
+          },
+          {
+            "name": "Hardfiles\\README.txt",
+            "bytes": 83
+          },
+          {
+            "name": "Kickstart\\README.txt",
+            "bytes": 83
+          },
+          {
+            "name": "media\\font.ttf",
+            "bytes": 22428
+          },
+          {
+            "name": "media\\README.txt",
+            "bytes": 243
+          },
+          {
+            "name": "media\\skin-dark.xzp",
+            "bytes": 3991979
+          },
+          {
+            "name": "media\\skin.xzp",
+            "bytes": 2713824
+          },
+          {
+            "name": "Music\\README.txt",
+            "bytes": 83
+          },
+          {
+            "name": "README-FIRST.md",
+            "bytes": 517
+          },
+          {
+            "name": "Roms\\README.txt",
+            "bytes": 83
+          },
+          {
+            "name": "SAVE\\README.txt",
+            "bytes": 83
+          },
+          {
+            "name": "Software\\AmiCDROM\\AmiCDROM.guide",
+            "bytes": 32951
+          },
+          {
+            "name": "Software\\AmiCDROM\\AmiCDROM.guide.info",
+            "bytes": 2986
+          },
+          {
+            "name": "Software\\AmiCDROM\\AmiCDROM.Install",
+            "bytes": 18395
+          },
+          {
+            "name": "Software\\AmiCDROM\\AmiCDROM.readme",
+            "bytes": 836
+          },
+          {
+            "name": "Software\\AmiCDROM\\amicdrom.works",
+            "bytes": 4506
+          },
+          {
+            "name": "Software\\AmiCDROM\\c\\cdcontrol",
+            "bytes": 9276
+          },
+          {
+            "name": "Software\\AmiCDROM\\c\\cdrom",
+            "bytes": 64328
+          },
+          {
+            "name": "Software\\AmiCDROM\\c\\checkcd",
+            "bytes": 51512
+          },
+          {
+            "name": "Software\\AmiCDROM\\c\\GetNames",
+            "bytes": 1608
+          },
+          {
+            "name": "Software\\AmiCDROM\\CD0",
+            "bytes": 158
+          },
+          {
+            "name": "Software\\AmiCDROM\\CD0.info",
+            "bytes": 2454
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\cdromemu",
+            "bytes": 16380
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\cdromemu.c",
+            "bytes": 7240
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\cdromemu.device",
+            "bytes": 32668
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\cdromemu.doc",
+            "bytes": 1325
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\cdromemu.fd",
+            "bytes": 42
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\cdromemu.h",
+            "bytes": 173
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\main.c",
+            "bytes": 873
+          },
+          {
+            "name": "Software\\AmiCDROM\\cdromemu\\SMakefile",
+            "bytes": 555
+          },
+          {
+            "name": "Software\\AmiCDROM\\icons\\cdda.info",
+            "bytes": 2216
+          },
+          {
+            "name": "Software\\AmiCDROM\\Install.info",
+            "bytes": 1608
+          },
+          {
+            "name": "Software\\AmiCDROM\\l\\cdrom-handler",
+            "bytes": 25424
+          },
+          {
+            "name": "Software\\AmiCDROM\\Mountlist",
+            "bytes": 230
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\cdcontrol.c",
+            "bytes": 4988
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\cdcontrol.h",
+            "bytes": 197
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\cdrom.c",
+            "bytes": 17417
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\cdrom.h",
+            "bytes": 2669
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\checkcd.c",
+            "bytes": 12494
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\device.c",
+            "bytes": 45772
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\device.h",
+            "bytes": 2395
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\devsupp.c",
+            "bytes": 15061
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\devsupp.h",
+            "bytes": 582
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\generic.c",
+            "bytes": 8989
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\generic.h",
+            "bytes": 5333
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\GNUmakefile",
+            "bytes": 1870
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\hfs.c",
+            "bytes": 22020
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\hfs.h",
+            "bytes": 2998
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\intui.c",
+            "bytes": 7017
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\intui.h",
+            "bytes": 253
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\iso9660.c",
+            "bytes": 22236
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\iso9660.h",
+            "bytes": 2546
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\main.c",
+            "bytes": 30430
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\params.h",
+            "bytes": 488
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\path.c",
+            "bytes": 2268
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\rock.c",
+            "bytes": 8716
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\rock.h",
+            "bytes": 633
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\SMakefile",
+            "bytes": 1288
+          },
+          {
+            "name": "Software\\AmiCDROM\\src\\volumes.c",
+            "bytes": 8251
+          },
+          {
+            "name": "Software\\AmiCDROM.info",
+            "bytes": 2575
+          },
+          {
+            "name": "Third-Party-Licenses\\AmigaFonts-README-GPL-FE.txt",
+            "bytes": 16600
+          },
+          {
+            "name": "Third-Party-Licenses\\libSDLx360-GPL-3.0.txt",
+            "bytes": 35149
+          },
+          {
+            "name": "Third-Party-Licenses\\MicroKnight-FONT-EXCEPTION.txt",
+            "bytes": 1343
+          },
+          {
+            "name": "Third-Party-Licenses\\zlib-1.1.4-README.txt",
+            "bytes": 7024
+          },
+          {
+            "name": "THIRD-PARTY-NOTICES.md",
+            "bytes": 2705
+          },
+          {
+            "name": "DATA\\drive_click.wav",
+            "bytes": 17998
+          },
+          {
+            "name": "DATA\\drive_snatch.wav",
+            "bytes": 39828
+          },
+          {
+            "name": "DATA\\drive_spin.wav",
+            "bytes": 20180
+          },
+          {
+            "name": "DATA\\drive_spinnd.wav",
+            "bytes": 20180
+          },
+          {
+            "name": "DATA\\drive_startup.wav",
+            "bytes": 43492
+          }
+        ]
+      },
+      "sourceManual": "https://github.com/djforrest33-hash/amiga360-refresh-2026-xbox-binaries/blob/main/docs/USER-MANUAL.md"
+    },
+    {
+      "id": "ace-driver-collection",
+      "title": "Ace Driver System 22 Collection",
+      "author": "wanszai",
+      "group": "emulators",
+      "version": "1.0.1",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/AceDriverCollection.zip",
+      "fileName": "AceDriverCollection.zip",
+      "downloadUrl": "https://github.com/wanszai/Ace-Driver-Collection-X360-Releases/releases/download/v1.0.1/AceDriverCollection.zip",
+      "expectedBytes": 5158650,
+      "expectedSha256": "5a2936b833b7544f804f7cf9a93c9ad31a3116841058023f18c1a6eb670e9d7f",
+      "source": "https://github.com/wanszai/Ace-Driver-Collection-X360-Releases",
+      "release": "https://github.com/wanszai/Ace-Driver-Collection-X360-Releases/releases/tag/v1.0.1",
+      "format": "ZIP / XEX",
+      "description": "Dedicated arcade emulator for Ace Driver Racing Evolution and Ace Driver Victory Lap, with offline solo play and display options.",
+      "prerequisites": "Supply your own acedrvrw.zip, victlapw.zip, namcoc71.zip and namcoc74.zip in roms\\. Keep menu_assets.xpr beside default.xex. No ROM or game content is included.",
+      "runtime": "Native Xbox 360 XEX homebrew. The publisher does not pin a motherboard, dashboard minimum or a particular modification method; a compatible unsigned-code setup is required.",
+      "temporary": "The author does not certify a particular temporary exploit/payload combination or Peer Pressure. Do not infer it from another emulator.",
+      "installPath": "Hdd1:\\Emulators\\AceDriverCollection\\",
+      "usbPath": "Usb0:\\Emulators\\AceDriverCollection\\",
+      "launch": "default.xex",
+      "requiredEntries": [
+        "AceDriverCollection/default.xex",
+        "AceDriverCollection/menu_assets.xpr"
+      ],
+      "setup": [
+        "Extract the ZIP on your computer. Copy its whole AceDriverCollection folder into Emulators on your HDD or USB; avoid nesting another AceDriverCollection folder inside it.",
+        "Place your own four required ROM/driver ZIPs in the included roms folder. Keep them zipped.",
+        "Launch default.xex from an existing homebrew dashboard or file manager."
+      ],
+      "notes": "Version 1.0.1 fixes rebinding and a camera-switch acceleration issue. System Link/online play remains unfinished; force feedback is partial, and the documented difficulty control adds time rather than changing AI behavior.",
+      "image": {
+        "local": "/assets/images/consoles/xbox360.png",
+        "sourceUrl": "https://github.com/wanszai/Ace-Driver-Collection-X360-Releases",
+        "credit": "Xbox 360 console illustration · author supplies no project screenshot here"
+      },
+      "sourceInspection": {
+        "name": "AceDriverCollection.zip",
+        "entryCount": 5,
+        "crcPassed": true,
+        "xex": [
+          {
+            "name": "AceDriverCollection\\default.xex",
+            "bytes": 5042176,
+            "sha256": "225d201fd892c4035fdabd618ffe460396a5b394cfa4850912be775e9ed961dc",
+            "magic": "XEX2"
+          }
+        ],
+        "entries": [
+          {
+            "name": "AceDriverCollection",
+            "bytes": 0
+          },
+          {
+            "name": "AceDriverCollection\\default.xex",
+            "bytes": 5042176
+          },
+          {
+            "name": "AceDriverCollection\\menu_assets.xpr",
+            "bytes": 17819660
+          },
+          {
+            "name": "AceDriverCollection\\ReadMe.txt",
+            "bytes": 1073
+          },
+          {
+            "name": "AceDriverCollection\\roms",
+            "bytes": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "dashlaunch-temporary-gui",
+      "title": "DashLaunch GUI · temporary sessions",
+      "author": "951261 · based on cOz DashLaunch",
+      "group": "apps",
+      "version": "21.3.2 Beta",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/DashLaunch_for_BadUpdate.xex",
+      "fileName": "DashLaunch_for_BadUpdate.xex",
+      "downloadUrl": "https://github.com/951261/dashLaunch-for-BadUpdate/releases/download/21.3.2/DashLaunch_for_BadUpdate.xex",
+      "expectedBytes": 1699840,
+      "expectedSha256": "1280828f7e33c21aa3d05ab2cbc0541e0cfa5eae0b91dcf33723ec744bcd1c9f",
+      "source": "https://github.com/951261/dashLaunch-for-BadUpdate",
+      "release": "https://github.com/951261/dashLaunch-for-BadUpdate/releases/tag/21.3.2",
+      "format": "XEX",
+      "description": "Community DashLaunch settings editor adapted for BadUpdate and ABadAvatar sessions.",
+      "prerequisites": "An established BadUpdate or ABadAvatar runtime with launch.xex already loaded; XeUnshackle is the author’s example. Back up your launch.ini before editing. This app cannot load the module itself.",
+      "runtime": "BadUpdate / ABadAvatar Xbox 360 sessions, explicitly targeted by this community fork. BadUpdate itself requires dashboard 17559. No app-specific model list is supplied. This is separate from the normal persistent RGH/JTAG DashLaunch installer.",
+      "temporary": "Explicit temporary-session support. Re-run your exploit/runtime after reboot. Keep launch.xex loaded: using its unload/load controls can crash the console. Peer Pressure does not support this DashLaunch-plugin workflow.",
+      "requirementFilter": "badupdate",
+      "installPath": "Hdd1:\\Apps\\DashLaunchTemporary\\",
+      "usbPath": "Usb0:\\Apps\\DashLaunchTemporary\\",
+      "launch": "DashLaunch_for_BadUpdate.xex",
+      "setup": [
+        "Copy the standalone original XEX into the shown applications folder; launch it only after your runtime has loaded launch.xex.",
+        "Edit the desired launch.ini settings in the GUI and explicitly save to the intended existing HDD/USB launch.ini. Keep a backup.",
+        "Return to your existing homebrew launcher. This tool is a beta editor and does not make a temporary exploit persistent."
+      ],
+      "notes": "The fork disables installer/uninstaller/patch-update buttons and removes most NAND-writing code, but FTP can still modify flash. Do not write to flash through FTP. The author gives no safety guarantee and still lists unverified NAND paths and unfinished fan controls. No downloaded build was run here.",
+      "image": {
+        "local": "/assets/images/consoles/xbox360.png",
+        "sourceUrl": "https://github.com/951261/dashLaunch-for-BadUpdate",
+        "credit": "Xbox 360 console illustration · author supplies no project screenshot here"
+      }
+    },
+    {
+      "id": "triangle-runtime",
+      "title": "Triangle · pinned runtime bundle",
+      "author": "JakobRangel",
+      "group": "apps",
+      "version": "Alpha runtime snapshot 03cb4bc8e0e1",
+      "source": "https://github.com/JakobRangel/Triangle/tree/03cb4bc8e0e1efd838d1f445775f08095e482e70",
+      "release": "https://homebrewbrowser.com/",
+      "downloadUrl": "https://github.com/JakobRangel/Triangle/tree/03cb4bc8e0e1efd838d1f445775f08095e482e70",
+      "localDownloadUrl": "/downloads/xbox360/Triangle-runtime-03cb4bc8e0e1.zip",
+      "downloadLinkKind": "local-derived",
+      "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1.zip",
+      "fileName": "Triangle-runtime-03cb4bc8e0e1.zip",
+      "expectedBytes": 17172614,
+      "expectedSha256": "4544d5ed997ec5e3059857acd6df141a8a074895f4bd0c6875821a0f0160de2f",
+      "format": "ZIP / XEX",
+      "description": "Native package browser, download queue and file manager for independently operated homebrew sources.",
+      "prerequisites": "RGH/JTAG Xbox 360 and network access to your chosen compatible source server. Keep Triangle.xex, media, certs and sources.json together. Review the source URLs before downloading content.",
+      "runtime": "RGH/JTAG Xbox 360, explicitly targeted by the official project site. No exact dashboard build or motherboard list is published.",
+      "temporary": "The author does not certify BadUpdate, ABadAvatar or Peer Pressure for this alpha runtime.",
+      "installPath": "Hdd1:\\Apps\\Triangle\\",
+      "usbPath": "Usb0:\\Apps\\Triangle\\",
+      "launch": "Triangle.xex",
+      "requiredEntries": [
+        "Triangle.xex",
+        "sources.json",
+        "media/Fonts/Arial_12.xpr",
+        "media/xarialuni.ttf"
+      ],
+      "setup": [
+        "This is a local convenience ZIP assembled solely from the author’s ready runtime files at the pinned commit. Extract it on your PC; copy the contents of its Triangle-runtime-03cb4bc8e0e1 folder into the shown Triangle app directory.",
+        "Keep every original media/certs file and sources.json beside Triangle.xex, including the original secondary media/Triangle.xex.",
+        "Launch Triangle.xex using your existing homebrew dashboard, then review/add a trusted compatible source in Settings. The browser itself does not supply the content of third-party repositories."
+      ],
+      "notes": "Alpha snapshot, not an upstream ZIP release. The source repository contains ready binaries/resources rather than client source code. All 50 runtime originals were downloaded individually, their Git blob IDs checked, and their bytes retained unchanged in this bundle and staging manifest.",
+      "image": {
+        "staged": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\docs\\tmp\\xbox360-more-batch3\\Triangle-runtime-03cb4bc8e0e1\\media\\splash-dark.png",
+        "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/splash-dark.png",
+        "credit": "JakobRangel · packaged Triangle dark splash artwork, not a UI screenshot",
+        "bytes": 5224292,
+        "sha256": "1da8e42b86233a2f669c66577ea720c7e331dedd5d0503f767ddf69e7916d65a"
+      },
+      "componentFiles": [
+        {
+          "fileName": "Triangle.xex",
+          "relativePath": "Triangle.xex",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/Triangle.xex",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/Triangle.xex",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/Triangle.xex",
+          "expectedBytes": 1777664,
+          "expectedSha256": "32ccf9567f3208b04c04e0a9beaf89953c1edaefac4b45b89281b965c8913fcd",
+          "format": "XEX",
+          "gitBlobSha1": "1140e7124861fc236205ed5af3270f06132c3910",
+          "signatureHex": "58455832000000010000200000000000"
+        },
+        {
+          "fileName": "AAA_Certificate_Services.der",
+          "relativePath": "certs/AAA_Certificate_Services.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/AAA_Certificate_Services.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/AAA_Certificate_Services.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/AAA_Certificate_Services.der",
+          "expectedBytes": 1078,
+          "expectedSha256": "d7a7a0fb5d7e2731d771e9484ebcdef71d5f0c3e0a2948782bc83ee0ea699ef4",
+          "format": "DER",
+          "gitBlobSha1": "5c715faed85eae3569262d7f3dd3fa93a62dff60",
+          "signatureHex": "308204323082031aa003020102020101"
+        },
+        {
+          "fileName": "Baltimore_CyberTrust_Root.der",
+          "relativePath": "certs/Baltimore_CyberTrust_Root.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Baltimore_CyberTrust_Root.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Baltimore_CyberTrust_Root.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Baltimore_CyberTrust_Root.der",
+          "expectedBytes": 891,
+          "expectedSha256": "16af57a9f676b0ab126095aa5ebadef22ab31119d644ac95cd4b93dbf3f26aeb",
+          "format": "DER",
+          "gitBlobSha1": "da96dbb2c93d063581e5a96ebb4e258c37923087",
+          "signatureHex": "308203773082025fa003020102020402"
+        },
+        {
+          "fileName": "COMODO_RSA_Certification_Authority.der",
+          "relativePath": "certs/COMODO_RSA_Certification_Authority.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/COMODO_RSA_Certification_Authority.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/COMODO_RSA_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/COMODO_RSA_Certification_Authority.der",
+          "expectedBytes": 1500,
+          "expectedSha256": "52f0e1c4e58ec629291b60317f074671b85d7ea80d5b07273463534b32b40234",
+          "format": "DER",
+          "gitBlobSha1": "83fdeb776b5d848d48813c0e7346b1c9a2562b91",
+          "signatureHex": "308205d8308203c0a00302010202104c"
+        },
+        {
+          "fileName": "Certum_Trusted_Network_CA.der",
+          "relativePath": "certs/Certum_Trusted_Network_CA.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Certum_Trusted_Network_CA.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Certum_Trusted_Network_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Certum_Trusted_Network_CA.der",
+          "expectedBytes": 959,
+          "expectedSha256": "5c58468d55f58e497e743982d2b50010b6d165374acf83a7d4a32db768c4408e",
+          "format": "DER",
+          "gitBlobSha1": "cf29ccc1b794186fe4c9689bfdfddb232c2b45bd",
+          "signatureHex": "308203bb308202a3a003020102020304"
+        },
+        {
+          "fileName": "DST_Root_CA_X3.der",
+          "relativePath": "certs/DST_Root_CA_X3.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/DST_Root_CA_X3.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DST_Root_CA_X3.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DST_Root_CA_X3.der",
+          "expectedBytes": 846,
+          "expectedSha256": "0687260331a72403d909f105e69bcf0d32e1bd2493ffc6d9206d11bcd6770739",
+          "format": "DER",
+          "gitBlobSha1": "95500f6bd1373c2dce681e3779ac7647a84ef251",
+          "signatureHex": "3082034a30820232a003020102021044"
+        },
+        {
+          "fileName": "DigiCert_Global_Root_CA.der",
+          "relativePath": "certs/DigiCert_Global_Root_CA.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/DigiCert_Global_Root_CA.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_CA.der",
+          "expectedBytes": 947,
+          "expectedSha256": "4348a0e9444c78cb265e058d5e8944b4d84f9662bd26db257f8934a443c70161",
+          "format": "DER",
+          "gitBlobSha1": "2f1e5523af47d44e35ea27be89e25a663ea7f99f",
+          "signatureHex": "308203af30820297a003020102021008"
+        },
+        {
+          "fileName": "DigiCert_Global_Root_G2.der",
+          "relativePath": "certs/DigiCert_Global_Root_G2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/DigiCert_Global_Root_G2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G2.der",
+          "expectedBytes": 914,
+          "expectedSha256": "cb3ccbb76031e5e0138f8dd39a23f9de47ffc35e43c1144cea27d46a5ab1cb5f",
+          "format": "DER",
+          "gitBlobSha1": "1e927a7afe06c270670d6bc25c4d465db2e0a7e8",
+          "signatureHex": "3082038e30820276a003020102021003"
+        },
+        {
+          "fileName": "DigiCert_Global_Root_G3.der",
+          "relativePath": "certs/DigiCert_Global_Root_G3.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/DigiCert_Global_Root_G3.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G3.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G3.der",
+          "expectedBytes": 831,
+          "expectedSha256": "61799e3594f6fa6c9f619031e4a3c9f643fda38c083704a5075e5709a21b1ab7",
+          "format": "DER",
+          "gitBlobSha1": "755c7784cafd4c3a71ee11cda196dccd360e413a",
+          "signatureHex": "3082033b308202c0a003020102021008"
+        },
+        {
+          "fileName": "DigiCert_Global_Root_G3_1.der",
+          "relativePath": "certs/DigiCert_Global_Root_G3_1.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/DigiCert_Global_Root_G3_1.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G3_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G3_1.der",
+          "expectedBytes": 579,
+          "expectedSha256": "31ad6648f8104138c738f39ea4320133393e3a18cc02296ef97c2ac9ef6731d0",
+          "format": "DER",
+          "gitBlobSha1": "6dda6a38dc3d4d361acd02e4b52d4759d26ca563",
+          "signatureHex": "3082023f308201c5a003020102021005"
+        },
+        {
+          "fileName": "DigiCert_High_Assurance_EV_Root_CA.der",
+          "relativePath": "certs/DigiCert_High_Assurance_EV_Root_CA.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/DigiCert_High_Assurance_EV_Root_CA.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_High_Assurance_EV_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_High_Assurance_EV_Root_CA.der",
+          "expectedBytes": 969,
+          "expectedSha256": "7431e5f4c3c1ce4690774f0b61e05440883ba9a01ed00ba6abd7806ed3b118cf",
+          "format": "DER",
+          "gitBlobSha1": "dae0196507d9166bbf9de6ed93ed5bd91d2a6f7c",
+          "signatureHex": "308203c5308202ada003020102021002"
+        },
+        {
+          "fileName": "Entrust_Root_Certification_Authority.der",
+          "relativePath": "certs/Entrust_Root_Certification_Authority.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Entrust_Root_Certification_Authority.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority.der",
+          "expectedBytes": 1173,
+          "expectedSha256": "73c176434f1bc6d5adf45b0e76e727287c8de57616c1e6e6141a2b2cbc7d8e4c",
+          "format": "DER",
+          "gitBlobSha1": "6590868cc391ba2bbd4c2757dc4e55617c91512e",
+          "signatureHex": "3082049130820379a003020102020445"
+        },
+        {
+          "fileName": "Entrust_Root_Certification_Authority_1.der",
+          "relativePath": "certs/Entrust_Root_Certification_Authority_1.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Entrust_Root_Certification_Authority_1.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_1.der",
+          "expectedBytes": 1298,
+          "expectedSha256": "13efb39a2f6654e8c67bd04f4c6d4c90cd6cab5091bcedc73787f6b77d3d3fe7",
+          "format": "DER",
+          "gitBlobSha1": "ec8a906fb6b812c2b754d0e92113096b5c033b04",
+          "signatureHex": "3082050e308203f6a003020102020c0e"
+        },
+        {
+          "fileName": "Entrust_Root_Certification_Authority_2.der",
+          "relativePath": "certs/Entrust_Root_Certification_Authority_2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Entrust_Root_Certification_Authority_2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_2.der",
+          "expectedBytes": 1090,
+          "expectedSha256": "43df5774b03e7fef5fe40d931a7bedf1bb2e6b42738c4e6d3841103d3aa7f339",
+          "format": "DER",
+          "gitBlobSha1": "011ca95b3f2d50a21c5023263fea135139625a60",
+          "signatureHex": "3082043e30820326a00302010202044a"
+        },
+        {
+          "fileName": "Entrust_Root_Certification_Authority_3.der",
+          "relativePath": "certs/Entrust_Root_Certification_Authority_3.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Entrust_Root_Certification_Authority_3.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_3.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_3.der",
+          "expectedBytes": 765,
+          "expectedSha256": "02ed0eb28c14da45165c566791700d6451d7fb56f0b2ab1d3b8eb070e56edff5",
+          "format": "DER",
+          "gitBlobSha1": "ae9933cab4f4f764f56a9dcd4715a0ddace1f809",
+          "signatureHex": "308202f930820280a003020102020d00"
+        },
+        {
+          "fileName": "GlobalSign_Root_CA.der",
+          "relativePath": "certs/GlobalSign_Root_CA.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/GlobalSign_Root_CA.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA.der",
+          "expectedBytes": 867,
+          "expectedSha256": "cbb522d7b7f127ad6a0113865bdf1cd4102e7d0759af635a7cf4720dc963c53b",
+          "format": "DER",
+          "gitBlobSha1": "232c4b6121f7236eb429572c591127e8aa60166f",
+          "signatureHex": "3082035f30820247a003020102020b04"
+        },
+        {
+          "fileName": "GlobalSign_Root_CA_1.der",
+          "relativePath": "certs/GlobalSign_Root_CA_1.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/GlobalSign_Root_CA_1.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA_1.der",
+          "expectedBytes": 1415,
+          "expectedSha256": "2cabeafe37d06ca22aba7391c0033d25982952c453647349763a3ab5ad6ccf69",
+          "format": "DER",
+          "gitBlobSha1": "3492b9555d8a927fc048accbdfd510d973a4bf8a",
+          "signatureHex": "308205833082036ba003020102020e45"
+        },
+        {
+          "fileName": "GlobalSign_Root_CA_2.der",
+          "relativePath": "certs/GlobalSign_Root_CA_2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/GlobalSign_Root_CA_2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA_2.der",
+          "expectedBytes": 889,
+          "expectedSha256": "ebd41040e4bb3ec742c9e381d31ef2a41a48b6685c96e7cef3c1df6cd4331c99",
+          "format": "DER",
+          "gitBlobSha1": "1e6967febb897f69cc81064c6ba584fc91bcfb13",
+          "signatureHex": "308203753082025da003020102020b04"
+        },
+        {
+          "fileName": "Go_Daddy_Root_Certificate_Authority_-_G2.der",
+          "relativePath": "certs/Go_Daddy_Root_Certificate_Authority_-_G2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Go_Daddy_Root_Certificate_Authority_-_G2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Go_Daddy_Root_Certificate_Authority_-_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Go_Daddy_Root_Certificate_Authority_-_G2.der",
+          "expectedBytes": 969,
+          "expectedSha256": "45140b3247eb9cc8c5b4f0d7b53091f73292089e6e5a63e2749dd3aca9198eda",
+          "format": "DER",
+          "gitBlobSha1": "3cdad66612f4e8cc4818c314745d0fd7e5429ef7",
+          "signatureHex": "308203c5308202ada003020102020100"
+        },
+        {
+          "fileName": "Go_Daddy_Root_Certificate_Authority_-_G2_1.der",
+          "relativePath": "certs/Go_Daddy_Root_Certificate_Authority_-_G2_1.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Go_Daddy_Root_Certificate_Authority_-_G2_1.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Go_Daddy_Root_Certificate_Authority_-_G2_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Go_Daddy_Root_Certificate_Authority_-_G2_1.der",
+          "expectedBytes": 1236,
+          "expectedSha256": "973a41276ffd01e027a2aad49e34c37846d3e976ff6a620b6712e33832041aa6",
+          "format": "DER",
+          "gitBlobSha1": "885c45a4c350ea8fd2c4fa2ee2bf312e3cf7a6f9",
+          "signatureHex": "308204d0308203b8a003020102020107"
+        },
+        {
+          "fileName": "ISRG_Root_X1.der",
+          "relativePath": "certs/ISRG_Root_X1.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/ISRG_Root_X1.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/ISRG_Root_X1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/ISRG_Root_X1.der",
+          "expectedBytes": 1391,
+          "expectedSha256": "96bcec06264976f37460779acf28c5a7cfe8a3c0aae11a8ffcee05c0bddf08c6",
+          "format": "DER",
+          "gitBlobSha1": "9d2132e7f1e352fabac7eafb231488b5da91ffb2",
+          "signatureHex": "3082056b30820353a003020102021100"
+        },
+        {
+          "fileName": "Microsoft_RSA_Root_Certificate_Authority_2017.der",
+          "relativePath": "certs/Microsoft_RSA_Root_Certificate_Authority_2017.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Microsoft_RSA_Root_Certificate_Authority_2017.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Microsoft_RSA_Root_Certificate_Authority_2017.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Microsoft_RSA_Root_Certificate_Authority_2017.der",
+          "expectedBytes": 1452,
+          "expectedSha256": "c741f70f4b2a8d88bf2e71c14122ef53ef10eba0cfa5e64cfa20f418853073e0",
+          "format": "DER",
+          "gitBlobSha1": "7031f880679bd310f3a39ef7c48a20f9a5cf4cfa",
+          "signatureHex": "308205a830820390a00302010202101e"
+        },
+        {
+          "fileName": "Sectigo_Public_Server_Authentication_Root_R46.der",
+          "relativePath": "certs/Sectigo_Public_Server_Authentication_Root_R46.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Sectigo_Public_Server_Authentication_Root_R46.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Sectigo_Public_Server_Authentication_Root_R46.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Sectigo_Public_Server_Authentication_Root_R46.der",
+          "expectedBytes": 1422,
+          "expectedSha256": "7bb647a62aeeac88bf257aa522d01ffea395e0ab45c73f93f65654ec38f25a06",
+          "format": "DER",
+          "gitBlobSha1": "603c65ed6e7bcfb421405f44c86666b82224418e",
+          "signatureHex": "3082058a30820372a003020102021075"
+        },
+        {
+          "fileName": "Starfield_Root_Certificate_Authority_-_G2.der",
+          "relativePath": "certs/Starfield_Root_Certificate_Authority_-_G2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Starfield_Root_Certificate_Authority_-_G2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Starfield_Root_Certificate_Authority_-_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Starfield_Root_Certificate_Authority_-_G2.der",
+          "expectedBytes": 993,
+          "expectedSha256": "2ce1cb0bf9d2f9e102993fbe215152c3b2dd0cabde1c68e5319b839154dbb7f5",
+          "format": "DER",
+          "gitBlobSha1": "cf6588c801db52a03751774b92da032ff0c00fa8",
+          "signatureHex": "308203dd308202c5a003020102020100"
+        },
+        {
+          "fileName": "Starfield_Services_Root_Certificate_Authority_-_G2.der",
+          "relativePath": "certs/Starfield_Services_Root_Certificate_Authority_-_G2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/Starfield_Services_Root_Certificate_Authority_-_G2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Starfield_Services_Root_Certificate_Authority_-_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Starfield_Services_Root_Certificate_Authority_-_G2.der",
+          "expectedBytes": 1011,
+          "expectedSha256": "568d6905a2c88708a4b3025190edcfedb1974a606a13c6e5290fcb2ae63edab5",
+          "format": "DER",
+          "gitBlobSha1": "42f3c1b9ea851d77a1b156995ee2a5296e08767b",
+          "signatureHex": "308203ef308202d7a003020102020100"
+        },
+        {
+          "fileName": "T-TeleSec_GlobalRoot_Class_2.der",
+          "relativePath": "certs/T-TeleSec_GlobalRoot_Class_2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/T-TeleSec_GlobalRoot_Class_2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/T-TeleSec_GlobalRoot_Class_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/T-TeleSec_GlobalRoot_Class_2.der",
+          "expectedBytes": 967,
+          "expectedSha256": "91e2f5788d5810eba7ba58737de1548a8ecacd014598bc0b143e041b17052552",
+          "format": "DER",
+          "gitBlobSha1": "0911a562934374fbb203efb9d9d94edf0eb1d0b3",
+          "signatureHex": "308203c3308202aba003020102020101"
+        },
+        {
+          "fileName": "USERTrust_ECC_Certification_Authority.der",
+          "relativePath": "certs/USERTrust_ECC_Certification_Authority.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/USERTrust_ECC_Certification_Authority.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority.der",
+          "expectedBytes": 905,
+          "expectedSha256": "5dd661d3cb33b5005cbed045a223ddc4445aaa41d1acb5df700884cad9ba4195",
+          "format": "DER",
+          "gitBlobSha1": "885cd445799ca2c795148dc73889de112de63394",
+          "signatureHex": "308203853082030ca003020102021023"
+        },
+        {
+          "fileName": "USERTrust_ECC_Certification_Authority_1.der",
+          "relativePath": "certs/USERTrust_ECC_Certification_Authority_1.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/USERTrust_ECC_Certification_Authority_1.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority_1.der",
+          "expectedBytes": 659,
+          "expectedSha256": "4ff460d54b9c86dabfbcfc5712e0400d2bed3fbc4d4fbdaa86e06adcd2a9ad7a",
+          "format": "DER",
+          "gitBlobSha1": "9c534960432c5290bc86f2a16a7eeb6037355494",
+          "signatureHex": "3082028f30820215a00302010202105c"
+        },
+        {
+          "fileName": "USERTrust_ECC_Certification_Authority_2.der",
+          "relativePath": "certs/USERTrust_ECC_Certification_Authority_2.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/USERTrust_ECC_Certification_Authority_2.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority_2.der",
+          "expectedBytes": 946,
+          "expectedSha256": "3457106752400212903a3545ca3b2ef384a456972bd951d8d840c1b0a379efa1",
+          "format": "DER",
+          "gitBlobSha1": "f387d66b6e1bec1ae2c5c7242646e23dc4923a74",
+          "signatureHex": "308203ae30820333a003020102021035"
+        },
+        {
+          "fileName": "USERTrust_RSA_Certification_Authority.der",
+          "relativePath": "certs/USERTrust_RSA_Certification_Authority.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/USERTrust_RSA_Certification_Authority.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_RSA_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_RSA_Certification_Authority.der",
+          "expectedBytes": 1506,
+          "expectedSha256": "e793c9b02fd8aa13e21c31228accb08119643b749c898964b1746d46c3d4cbd2",
+          "format": "DER",
+          "gitBlobSha1": "2fa45b280e22a9fe641b25ffb3f7d866bebec657",
+          "signatureHex": "308205de308203c6a003020102021001"
+        },
+        {
+          "fileName": "USERTrust_RSA_Certification_Authority_1.der",
+          "relativePath": "certs/USERTrust_RSA_Certification_Authority_1.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/USERTrust_RSA_Certification_Authority_1.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_RSA_Certification_Authority_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_RSA_Certification_Authority_1.der",
+          "expectedBytes": 1559,
+          "expectedSha256": "7fa4ff68ec04a99d7528d5085f94907f4d1dd1c5381bacdc832ed5c960214676",
+          "format": "DER",
+          "gitBlobSha1": "993b2eb3016820fa947fbc127807c06ea0226347",
+          "signatureHex": "30820613308203fba00302010202107d"
+        },
+        {
+          "fileName": "VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.der",
+          "relativePath": "certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.der",
+          "expectedBytes": 1239,
+          "expectedSha256": "9acfab7e43c8d880d06b262a94deeee4b4659989c3d0caf19baf6405e41ab7df",
+          "format": "DER",
+          "gitBlobSha1": "9818d19d00739f1370bbde9759f98e7294c6e503",
+          "signatureHex": "308204d3308203bba003020102021018"
+        },
+        {
+          "fileName": "thawte_Primary_Root_CA.der",
+          "relativePath": "certs/thawte_Primary_Root_CA.der",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/certs/thawte_Primary_Root_CA.der",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/thawte_Primary_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/thawte_Primary_Root_CA.der",
+          "expectedBytes": 1060,
+          "expectedSha256": "8d722f81a9c113c0791df136a2966db26c950a971db46b4199f4ea54b78bfb9f",
+          "format": "DER",
+          "gitBlobSha1": "8abe3c822da6d74f53278e61f1ba9afa14b62b7e",
+          "signatureHex": "3082042030820308a003020102021034"
+        },
+        {
+          "fileName": "A_button.png",
+          "relativePath": "media/A_button.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/A_button.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/A_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/A_button.png",
+          "expectedBytes": 4548,
+          "expectedSha256": "6d8769aacff836a1edd5dbbb7f4ee7c3652b21509bd286ae77989ad1cf39952d",
+          "format": "PNG",
+          "gitBlobSha1": "cd716d1adee46c185b041b37ab69c9ed0f57d208",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "B_button.png",
+          "relativePath": "media/B_button.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/B_button.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/B_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/B_button.png",
+          "expectedBytes": 4250,
+          "expectedSha256": "8e100cd5aa094f96e70a024eec4433e85cc2b28fd6e91fa559fb12843602ba8b",
+          "format": "PNG",
+          "gitBlobSha1": "73bcb6e0d4e7ba8f3ebb1f3d9d1dd0c52006dc2d",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "Arial_12.xpr",
+          "relativePath": "media/Fonts/Arial_12.xpr",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/Fonts/Arial_12.xpr",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Fonts/Arial_12.xpr",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Fonts/Arial_12.xpr",
+          "expectedBytes": 118796,
+          "expectedSha256": "2f3f1942a2ceb5a1900655d86ed5abb7ba422f3f4d98e4550dd821592bbad5d7",
+          "format": "XPR",
+          "gitBlobSha1": "bf7ac28cf76fe5ac293d152fd788993180ad8c7f",
+          "signatureHex": "58505232000050000001800000000002"
+        },
+        {
+          "fileName": "LB_button.png",
+          "relativePath": "media/LB_button.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/LB_button.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/LB_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/LB_button.png",
+          "expectedBytes": 3007,
+          "expectedSha256": "c9719656a1b8760a5a87f49ae7659c4a48693081a842c0cb98efb2a1a13a1d61",
+          "format": "PNG",
+          "gitBlobSha1": "d83f41878b6c5893b8510e20af5c5a853bac617d",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "RB_button.png",
+          "relativePath": "media/RB_button.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/RB_button.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/RB_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/RB_button.png",
+          "expectedBytes": 2799,
+          "expectedSha256": "80b80b7ad1ea47e9ebd1e949f677a3a55207d47a5ca8e04e39ec20c621f6e1be",
+          "format": "PNG",
+          "gitBlobSha1": "7735e4cc1884e5e735d5356ee84173dd4c6c2bf2",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "RS_button.png",
+          "relativePath": "media/RS_button.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/RS_button.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/RS_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/RS_button.png",
+          "expectedBytes": 4144,
+          "expectedSha256": "2d6bccb502e92f92864864d17063f7bb03d7b1662c975e99430cf3100f2f245f",
+          "format": "PNG",
+          "gitBlobSha1": "dde08c004c7580eb966332abbc505ad0eecd72e3",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "Triangle.xex",
+          "relativePath": "media/Triangle.xex",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/Triangle.xex",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Triangle.xex",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Triangle.xex",
+          "expectedBytes": 1777664,
+          "expectedSha256": "dd4829adbc166169ca59cbacc2bfb69393c618edb3cfdc2a729147dee4fddacd",
+          "format": "XEX",
+          "gitBlobSha1": "110c7da2c3f4d5f7cf62e68f9aeb74e73d33e054",
+          "signatureHex": "58455832000000010000200000000000"
+        },
+        {
+          "fileName": "X_button.png",
+          "relativePath": "media/X_button.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/X_button.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/X_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/X_button.png",
+          "expectedBytes": 4575,
+          "expectedSha256": "e7b5a8beb263f1e75b48c64ba57ffe002ab1b619a57cbd915f68af130c071559",
+          "format": "PNG",
+          "gitBlobSha1": "4b8cec1834610cb45ebf6ecb0fe31d625b584c1c",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "Y_button.png",
+          "relativePath": "media/Y_button.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/Y_button.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Y_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Y_button.png",
+          "expectedBytes": 4346,
+          "expectedSha256": "4da30c178e91381a3b6f7cc32be405b10a2824afc514fb12db633813e6f1639b",
+          "format": "PNG",
+          "gitBlobSha1": "e32b04a323a5d2bb031cd9174b9655ec6f7d876e",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "delete_icon.png",
+          "relativePath": "media/delete_icon.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/delete_icon.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/delete_icon.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/delete_icon.png",
+          "expectedBytes": 455826,
+          "expectedSha256": "4f523fbd028a78efc3fbd7c7303db71e7f615b51893cb9a3e9dc98d0046fd148",
+          "format": "PNG",
+          "gitBlobSha1": "97ed54f147dc3c9f06f790bc9c1f5a794c66f830",
+          "signatureHex": "ffd8ffe000104a46494600010101012c"
+        },
+        {
+          "fileName": "refresh_icon.png",
+          "relativePath": "media/refresh_icon.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/refresh_icon.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/refresh_icon.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/refresh_icon.png",
+          "expectedBytes": 497435,
+          "expectedSha256": "02e2d0bc42ac38a07303100ea1a276733a86b3b578676c4245d628164c22a411",
+          "format": "PNG",
+          "gitBlobSha1": "3322c12474efa01d2b7cb56fbbdb76df5077af70",
+          "signatureHex": "ffd8ffe000104a46494600010101012c"
+        },
+        {
+          "fileName": "rename_icon.png",
+          "relativePath": "media/rename_icon.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/rename_icon.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/rename_icon.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/rename_icon.png",
+          "expectedBytes": 485892,
+          "expectedSha256": "57fabd51ea230c4dace28aee4d4093390357de9bc76245ea10ed54b76d807954",
+          "format": "PNG",
+          "gitBlobSha1": "ffca07213bc3800564b4f852afdf2f59f49f5ac5",
+          "signatureHex": "ffd8ffe000104a46494600010101012c"
+        },
+        {
+          "fileName": "segoe.ttf",
+          "relativePath": "media/segoe.ttf",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/segoe.ttf",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/segoe.ttf",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/segoe.ttf",
+          "expectedBytes": 34164,
+          "expectedSha256": "3745c347d168dd938971aed573ab2140b6a766f658c4f353f06ddc05e976ff7a",
+          "format": "TTF",
+          "gitBlobSha1": "46b3b99387e33ae81940d9a486ba4e0e9fe5b5e6",
+          "signatureHex": "0001000000120100000400204646544d"
+        },
+        {
+          "fileName": "splash-dark.png",
+          "relativePath": "media/splash-dark.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/splash-dark.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/splash-dark.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/splash-dark.png",
+          "expectedBytes": 5224292,
+          "expectedSha256": "1da8e42b86233a2f669c66577ea720c7e331dedd5d0503f767ddf69e7916d65a",
+          "format": "PNG",
+          "gitBlobSha1": "e84475b003b514b85960281e1854dccf1db991fc",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "splash.png",
+          "relativePath": "media/splash.png",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/splash.png",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/splash.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/splash.png",
+          "expectedBytes": 6189806,
+          "expectedSha256": "967d93c7bd87c7be43b5031444c09d3037a23432495e1abe1bc6fb644d19a2bc",
+          "format": "PNG",
+          "gitBlobSha1": "049eeb57be706821b9bb973df8cfa52d58e9d714",
+          "signatureHex": "89504e470d0a1a0a0000000d49484452"
+        },
+        {
+          "fileName": "xarialuni.ttf",
+          "relativePath": "media/xarialuni.ttf",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/media/xarialuni.ttf",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/xarialuni.ttf",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/xarialuni.ttf",
+          "expectedBytes": 1588364,
+          "expectedSha256": "699b818bddd1d7f47b3ccdbf089140303198aebe297fd2e73f7d0fde604553e5",
+          "format": "TTF",
+          "gitBlobSha1": "0d6b2db0923f300e97ed9ccec694ddce9b6bd925",
+          "signatureHex": "0001000000100100000400004c545348"
+        },
+        {
+          "fileName": "sources.json",
+          "relativePath": "sources.json",
+          "sourceFile": "docs/tmp/xbox360-more-batch3/Triangle-runtime-03cb4bc8e0e1/sources.json",
+          "downloadUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/sources.json",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/sources.json",
+          "expectedBytes": 110,
+          "expectedSha256": "b9aeddb97c6e1fb95283077bedf304f2ba8cd7eb1572308303d5644f3cfa6d56",
+          "format": "JSON",
+          "gitBlobSha1": "ac405aac2e76eeca113874a6ea9449bc5207df23",
+          "signatureHex": "7b0a0922736f7572636573223a095b7b"
+        }
+      ],
+      "derivedFrom": [
+        {
+          "path": "Triangle.xex",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/Triangle.xex",
+          "bytes": 1777664,
+          "sha256": "32ccf9567f3208b04c04e0a9beaf89953c1edaefac4b45b89281b965c8913fcd",
+          "gitBlobSha1": "1140e7124861fc236205ed5af3270f06132c3910"
+        },
+        {
+          "path": "certs/AAA_Certificate_Services.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/AAA_Certificate_Services.der",
+          "bytes": 1078,
+          "sha256": "d7a7a0fb5d7e2731d771e9484ebcdef71d5f0c3e0a2948782bc83ee0ea699ef4",
+          "gitBlobSha1": "5c715faed85eae3569262d7f3dd3fa93a62dff60"
+        },
+        {
+          "path": "certs/Baltimore_CyberTrust_Root.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Baltimore_CyberTrust_Root.der",
+          "bytes": 891,
+          "sha256": "16af57a9f676b0ab126095aa5ebadef22ab31119d644ac95cd4b93dbf3f26aeb",
+          "gitBlobSha1": "da96dbb2c93d063581e5a96ebb4e258c37923087"
+        },
+        {
+          "path": "certs/COMODO_RSA_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/COMODO_RSA_Certification_Authority.der",
+          "bytes": 1500,
+          "sha256": "52f0e1c4e58ec629291b60317f074671b85d7ea80d5b07273463534b32b40234",
+          "gitBlobSha1": "83fdeb776b5d848d48813c0e7346b1c9a2562b91"
+        },
+        {
+          "path": "certs/Certum_Trusted_Network_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Certum_Trusted_Network_CA.der",
+          "bytes": 959,
+          "sha256": "5c58468d55f58e497e743982d2b50010b6d165374acf83a7d4a32db768c4408e",
+          "gitBlobSha1": "cf29ccc1b794186fe4c9689bfdfddb232c2b45bd"
+        },
+        {
+          "path": "certs/DST_Root_CA_X3.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DST_Root_CA_X3.der",
+          "bytes": 846,
+          "sha256": "0687260331a72403d909f105e69bcf0d32e1bd2493ffc6d9206d11bcd6770739",
+          "gitBlobSha1": "95500f6bd1373c2dce681e3779ac7647a84ef251"
+        },
+        {
+          "path": "certs/DigiCert_Global_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_CA.der",
+          "bytes": 947,
+          "sha256": "4348a0e9444c78cb265e058d5e8944b4d84f9662bd26db257f8934a443c70161",
+          "gitBlobSha1": "2f1e5523af47d44e35ea27be89e25a663ea7f99f"
+        },
+        {
+          "path": "certs/DigiCert_Global_Root_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G2.der",
+          "bytes": 914,
+          "sha256": "cb3ccbb76031e5e0138f8dd39a23f9de47ffc35e43c1144cea27d46a5ab1cb5f",
+          "gitBlobSha1": "1e927a7afe06c270670d6bc25c4d465db2e0a7e8"
+        },
+        {
+          "path": "certs/DigiCert_Global_Root_G3.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G3.der",
+          "bytes": 831,
+          "sha256": "61799e3594f6fa6c9f619031e4a3c9f643fda38c083704a5075e5709a21b1ab7",
+          "gitBlobSha1": "755c7784cafd4c3a71ee11cda196dccd360e413a"
+        },
+        {
+          "path": "certs/DigiCert_Global_Root_G3_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_Global_Root_G3_1.der",
+          "bytes": 579,
+          "sha256": "31ad6648f8104138c738f39ea4320133393e3a18cc02296ef97c2ac9ef6731d0",
+          "gitBlobSha1": "6dda6a38dc3d4d361acd02e4b52d4759d26ca563"
+        },
+        {
+          "path": "certs/DigiCert_High_Assurance_EV_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/DigiCert_High_Assurance_EV_Root_CA.der",
+          "bytes": 969,
+          "sha256": "7431e5f4c3c1ce4690774f0b61e05440883ba9a01ed00ba6abd7806ed3b118cf",
+          "gitBlobSha1": "dae0196507d9166bbf9de6ed93ed5bd91d2a6f7c"
+        },
+        {
+          "path": "certs/Entrust_Root_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority.der",
+          "bytes": 1173,
+          "sha256": "73c176434f1bc6d5adf45b0e76e727287c8de57616c1e6e6141a2b2cbc7d8e4c",
+          "gitBlobSha1": "6590868cc391ba2bbd4c2757dc4e55617c91512e"
+        },
+        {
+          "path": "certs/Entrust_Root_Certification_Authority_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_1.der",
+          "bytes": 1298,
+          "sha256": "13efb39a2f6654e8c67bd04f4c6d4c90cd6cab5091bcedc73787f6b77d3d3fe7",
+          "gitBlobSha1": "ec8a906fb6b812c2b754d0e92113096b5c033b04"
+        },
+        {
+          "path": "certs/Entrust_Root_Certification_Authority_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_2.der",
+          "bytes": 1090,
+          "sha256": "43df5774b03e7fef5fe40d931a7bedf1bb2e6b42738c4e6d3841103d3aa7f339",
+          "gitBlobSha1": "011ca95b3f2d50a21c5023263fea135139625a60"
+        },
+        {
+          "path": "certs/Entrust_Root_Certification_Authority_3.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Entrust_Root_Certification_Authority_3.der",
+          "bytes": 765,
+          "sha256": "02ed0eb28c14da45165c566791700d6451d7fb56f0b2ab1d3b8eb070e56edff5",
+          "gitBlobSha1": "ae9933cab4f4f764f56a9dcd4715a0ddace1f809"
+        },
+        {
+          "path": "certs/GlobalSign_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA.der",
+          "bytes": 867,
+          "sha256": "cbb522d7b7f127ad6a0113865bdf1cd4102e7d0759af635a7cf4720dc963c53b",
+          "gitBlobSha1": "232c4b6121f7236eb429572c591127e8aa60166f"
+        },
+        {
+          "path": "certs/GlobalSign_Root_CA_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA_1.der",
+          "bytes": 1415,
+          "sha256": "2cabeafe37d06ca22aba7391c0033d25982952c453647349763a3ab5ad6ccf69",
+          "gitBlobSha1": "3492b9555d8a927fc048accbdfd510d973a4bf8a"
+        },
+        {
+          "path": "certs/GlobalSign_Root_CA_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/GlobalSign_Root_CA_2.der",
+          "bytes": 889,
+          "sha256": "ebd41040e4bb3ec742c9e381d31ef2a41a48b6685c96e7cef3c1df6cd4331c99",
+          "gitBlobSha1": "1e6967febb897f69cc81064c6ba584fc91bcfb13"
+        },
+        {
+          "path": "certs/Go_Daddy_Root_Certificate_Authority_-_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Go_Daddy_Root_Certificate_Authority_-_G2.der",
+          "bytes": 969,
+          "sha256": "45140b3247eb9cc8c5b4f0d7b53091f73292089e6e5a63e2749dd3aca9198eda",
+          "gitBlobSha1": "3cdad66612f4e8cc4818c314745d0fd7e5429ef7"
+        },
+        {
+          "path": "certs/Go_Daddy_Root_Certificate_Authority_-_G2_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Go_Daddy_Root_Certificate_Authority_-_G2_1.der",
+          "bytes": 1236,
+          "sha256": "973a41276ffd01e027a2aad49e34c37846d3e976ff6a620b6712e33832041aa6",
+          "gitBlobSha1": "885c45a4c350ea8fd2c4fa2ee2bf312e3cf7a6f9"
+        },
+        {
+          "path": "certs/ISRG_Root_X1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/ISRG_Root_X1.der",
+          "bytes": 1391,
+          "sha256": "96bcec06264976f37460779acf28c5a7cfe8a3c0aae11a8ffcee05c0bddf08c6",
+          "gitBlobSha1": "9d2132e7f1e352fabac7eafb231488b5da91ffb2"
+        },
+        {
+          "path": "certs/Microsoft_RSA_Root_Certificate_Authority_2017.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Microsoft_RSA_Root_Certificate_Authority_2017.der",
+          "bytes": 1452,
+          "sha256": "c741f70f4b2a8d88bf2e71c14122ef53ef10eba0cfa5e64cfa20f418853073e0",
+          "gitBlobSha1": "7031f880679bd310f3a39ef7c48a20f9a5cf4cfa"
+        },
+        {
+          "path": "certs/Sectigo_Public_Server_Authentication_Root_R46.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Sectigo_Public_Server_Authentication_Root_R46.der",
+          "bytes": 1422,
+          "sha256": "7bb647a62aeeac88bf257aa522d01ffea395e0ab45c73f93f65654ec38f25a06",
+          "gitBlobSha1": "603c65ed6e7bcfb421405f44c86666b82224418e"
+        },
+        {
+          "path": "certs/Starfield_Root_Certificate_Authority_-_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Starfield_Root_Certificate_Authority_-_G2.der",
+          "bytes": 993,
+          "sha256": "2ce1cb0bf9d2f9e102993fbe215152c3b2dd0cabde1c68e5319b839154dbb7f5",
+          "gitBlobSha1": "cf6588c801db52a03751774b92da032ff0c00fa8"
+        },
+        {
+          "path": "certs/Starfield_Services_Root_Certificate_Authority_-_G2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/Starfield_Services_Root_Certificate_Authority_-_G2.der",
+          "bytes": 1011,
+          "sha256": "568d6905a2c88708a4b3025190edcfedb1974a606a13c6e5290fcb2ae63edab5",
+          "gitBlobSha1": "42f3c1b9ea851d77a1b156995ee2a5296e08767b"
+        },
+        {
+          "path": "certs/T-TeleSec_GlobalRoot_Class_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/T-TeleSec_GlobalRoot_Class_2.der",
+          "bytes": 967,
+          "sha256": "91e2f5788d5810eba7ba58737de1548a8ecacd014598bc0b143e041b17052552",
+          "gitBlobSha1": "0911a562934374fbb203efb9d9d94edf0eb1d0b3"
+        },
+        {
+          "path": "certs/USERTrust_ECC_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority.der",
+          "bytes": 905,
+          "sha256": "5dd661d3cb33b5005cbed045a223ddc4445aaa41d1acb5df700884cad9ba4195",
+          "gitBlobSha1": "885cd445799ca2c795148dc73889de112de63394"
+        },
+        {
+          "path": "certs/USERTrust_ECC_Certification_Authority_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority_1.der",
+          "bytes": 659,
+          "sha256": "4ff460d54b9c86dabfbcfc5712e0400d2bed3fbc4d4fbdaa86e06adcd2a9ad7a",
+          "gitBlobSha1": "9c534960432c5290bc86f2a16a7eeb6037355494"
+        },
+        {
+          "path": "certs/USERTrust_ECC_Certification_Authority_2.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_ECC_Certification_Authority_2.der",
+          "bytes": 946,
+          "sha256": "3457106752400212903a3545ca3b2ef384a456972bd951d8d840c1b0a379efa1",
+          "gitBlobSha1": "f387d66b6e1bec1ae2c5c7242646e23dc4923a74"
+        },
+        {
+          "path": "certs/USERTrust_RSA_Certification_Authority.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_RSA_Certification_Authority.der",
+          "bytes": 1506,
+          "sha256": "e793c9b02fd8aa13e21c31228accb08119643b749c898964b1746d46c3d4cbd2",
+          "gitBlobSha1": "2fa45b280e22a9fe641b25ffb3f7d866bebec657"
+        },
+        {
+          "path": "certs/USERTrust_RSA_Certification_Authority_1.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/USERTrust_RSA_Certification_Authority_1.der",
+          "bytes": 1559,
+          "sha256": "7fa4ff68ec04a99d7528d5085f94907f4d1dd1c5381bacdc832ed5c960214676",
+          "gitBlobSha1": "993b2eb3016820fa947fbc127807c06ea0226347"
+        },
+        {
+          "path": "certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.der",
+          "bytes": 1239,
+          "sha256": "9acfab7e43c8d880d06b262a94deeee4b4659989c3d0caf19baf6405e41ab7df",
+          "gitBlobSha1": "9818d19d00739f1370bbde9759f98e7294c6e503"
+        },
+        {
+          "path": "certs/thawte_Primary_Root_CA.der",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/certs/thawte_Primary_Root_CA.der",
+          "bytes": 1060,
+          "sha256": "8d722f81a9c113c0791df136a2966db26c950a971db46b4199f4ea54b78bfb9f",
+          "gitBlobSha1": "8abe3c822da6d74f53278e61f1ba9afa14b62b7e"
+        },
+        {
+          "path": "media/A_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/A_button.png",
+          "bytes": 4548,
+          "sha256": "6d8769aacff836a1edd5dbbb7f4ee7c3652b21509bd286ae77989ad1cf39952d",
+          "gitBlobSha1": "cd716d1adee46c185b041b37ab69c9ed0f57d208"
+        },
+        {
+          "path": "media/B_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/B_button.png",
+          "bytes": 4250,
+          "sha256": "8e100cd5aa094f96e70a024eec4433e85cc2b28fd6e91fa559fb12843602ba8b",
+          "gitBlobSha1": "73bcb6e0d4e7ba8f3ebb1f3d9d1dd0c52006dc2d"
+        },
+        {
+          "path": "media/Fonts/Arial_12.xpr",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Fonts/Arial_12.xpr",
+          "bytes": 118796,
+          "sha256": "2f3f1942a2ceb5a1900655d86ed5abb7ba422f3f4d98e4550dd821592bbad5d7",
+          "gitBlobSha1": "bf7ac28cf76fe5ac293d152fd788993180ad8c7f"
+        },
+        {
+          "path": "media/LB_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/LB_button.png",
+          "bytes": 3007,
+          "sha256": "c9719656a1b8760a5a87f49ae7659c4a48693081a842c0cb98efb2a1a13a1d61",
+          "gitBlobSha1": "d83f41878b6c5893b8510e20af5c5a853bac617d"
+        },
+        {
+          "path": "media/RB_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/RB_button.png",
+          "bytes": 2799,
+          "sha256": "80b80b7ad1ea47e9ebd1e949f677a3a55207d47a5ca8e04e39ec20c621f6e1be",
+          "gitBlobSha1": "7735e4cc1884e5e735d5356ee84173dd4c6c2bf2"
+        },
+        {
+          "path": "media/RS_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/RS_button.png",
+          "bytes": 4144,
+          "sha256": "2d6bccb502e92f92864864d17063f7bb03d7b1662c975e99430cf3100f2f245f",
+          "gitBlobSha1": "dde08c004c7580eb966332abbc505ad0eecd72e3"
+        },
+        {
+          "path": "media/Triangle.xex",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Triangle.xex",
+          "bytes": 1777664,
+          "sha256": "dd4829adbc166169ca59cbacc2bfb69393c618edb3cfdc2a729147dee4fddacd",
+          "gitBlobSha1": "110c7da2c3f4d5f7cf62e68f9aeb74e73d33e054"
+        },
+        {
+          "path": "media/X_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/X_button.png",
+          "bytes": 4575,
+          "sha256": "e7b5a8beb263f1e75b48c64ba57ffe002ab1b619a57cbd915f68af130c071559",
+          "gitBlobSha1": "4b8cec1834610cb45ebf6ecb0fe31d625b584c1c"
+        },
+        {
+          "path": "media/Y_button.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/Y_button.png",
+          "bytes": 4346,
+          "sha256": "4da30c178e91381a3b6f7cc32be405b10a2824afc514fb12db633813e6f1639b",
+          "gitBlobSha1": "e32b04a323a5d2bb031cd9174b9655ec6f7d876e"
+        },
+        {
+          "path": "media/delete_icon.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/delete_icon.png",
+          "bytes": 455826,
+          "sha256": "4f523fbd028a78efc3fbd7c7303db71e7f615b51893cb9a3e9dc98d0046fd148",
+          "gitBlobSha1": "97ed54f147dc3c9f06f790bc9c1f5a794c66f830"
+        },
+        {
+          "path": "media/refresh_icon.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/refresh_icon.png",
+          "bytes": 497435,
+          "sha256": "02e2d0bc42ac38a07303100ea1a276733a86b3b578676c4245d628164c22a411",
+          "gitBlobSha1": "3322c12474efa01d2b7cb56fbbdb76df5077af70"
+        },
+        {
+          "path": "media/rename_icon.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/rename_icon.png",
+          "bytes": 485892,
+          "sha256": "57fabd51ea230c4dace28aee4d4093390357de9bc76245ea10ed54b76d807954",
+          "gitBlobSha1": "ffca07213bc3800564b4f852afdf2f59f49f5ac5"
+        },
+        {
+          "path": "media/segoe.ttf",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/segoe.ttf",
+          "bytes": 34164,
+          "sha256": "3745c347d168dd938971aed573ab2140b6a766f658c4f353f06ddc05e976ff7a",
+          "gitBlobSha1": "46b3b99387e33ae81940d9a486ba4e0e9fe5b5e6"
+        },
+        {
+          "path": "media/splash-dark.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/splash-dark.png",
+          "bytes": 5224292,
+          "sha256": "1da8e42b86233a2f669c66577ea720c7e331dedd5d0503f767ddf69e7916d65a",
+          "gitBlobSha1": "e84475b003b514b85960281e1854dccf1db991fc"
+        },
+        {
+          "path": "media/splash.png",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/splash.png",
+          "bytes": 6189806,
+          "sha256": "967d93c7bd87c7be43b5031444c09d3037a23432495e1abe1bc6fb644d19a2bc",
+          "gitBlobSha1": "049eeb57be706821b9bb973df8cfa52d58e9d714"
+        },
+        {
+          "path": "media/xarialuni.ttf",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/media/xarialuni.ttf",
+          "bytes": 1588364,
+          "sha256": "699b818bddd1d7f47b3ccdbf089140303198aebe297fd2e73f7d0fde604553e5",
+          "gitBlobSha1": "0d6b2db0923f300e97ed9ccec694ddce9b6bd925"
+        },
+        {
+          "path": "sources.json",
+          "sourceUrl": "https://raw.githubusercontent.com/JakobRangel/Triangle/03cb4bc8e0e1efd838d1f445775f08095e482e70/sources.json",
+          "bytes": 110,
+          "sha256": "b9aeddb97c6e1fb95283077bedf304f2ba8cd7eb1572308303d5644f3cfa6d56",
+          "gitBlobSha1": "ac405aac2e76eeca113874a6ea9449bc5207df23"
+        }
+      ],
+      "sourceSnapshot": "03cb4bc8e0e1efd838d1f445775f08095e482e70"
+    }
+  ],
+  "exclusions": [
+    {
+      "source": "https://github.com/chemone/Vecx-360",
+      "reason": "Source-only; no native XEX release asset in tree or releases. README describes return-to-XeLL, so this was not presented as a native XEX build."
+    }
+  ],
+  "verification": {
+    "readyAssets": 5,
+    "originalTriangleComponents": 50,
+    "releasePackageCrcChecks": 4,
+    "nativeXexHeadersVerified": 6,
+    "downloadedPayloadsExecuted": false,
+    "physicalHardwareTested": false
+  },
+  "provenanceFiles": [
+    "docs/tmp/xbox360-more-batch3/apps-source-results.json",
+    "docs/tmp/xbox360-more-batch3/apps-extra-results.json",
+    "docs/tmp/xbox360-more-batch3/apps-inspection.json",
+    "docs/tmp/xbox360-more-batch3/apps-ready-files.json"
+  ]
+}

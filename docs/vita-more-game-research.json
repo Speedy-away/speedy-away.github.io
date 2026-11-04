@@ -1,0 +1,123 @@
+{
+  "scope": "vita-more",
+  "researchedAt": "2026-11-02",
+  "method": "Official author GitHub release HTML/expanded_assets and raw author documentation; mGBA official downloads. Read-only metadata research: no builds downloaded or executed by this subagent.",
+  "globalNotes": [
+    "These are native PS Vita packages, not PSP EBOOTs for Adrenaline.",
+    "No exact Vita firmware range is stated in the selected game READMEs; do not invent a minimum. A homebrew-enabled Vita with VitaShell is the installation prerequisite.",
+    "Do not describe repository build dependencies (VitaSDK/SDL development libraries) as dependencies users must install for a ready VPK.",
+    "VitaDB domain currently resolves to a domain-for-sale page. Use author URLs; do not offer its defunct service as a working download source."
+  ],
+  "entries": [
+    {
+      "id": "supertux",
+      "title": "SuperTux Classic Vita",
+      "kind": "Homebrew game",
+      "version": "1.04",
+      "source": "https://github.com/theheroGAC/SuperTux-PSVITA",
+      "release": "https://github.com/theheroGAC/SuperTux-PSVITA/releases/tag/1.04",
+      "files": [{"name": "SuperTux-PSVITA.vpk", "url": "https://github.com/theheroGAC/SuperTux-PSVITA/releases/download/1.04/SuperTux-PSVITA.vpk", "format": "VPK"}],
+      "setup": ["Transfer the VPK and install with VitaShell; launch its LiveArea bubble. Game assets and LiveArea artwork are bundled.", "Saves and configuration are managed in ux0:data/supertux/."],
+      "data": "Standalone free game; no commercial data needed.",
+      "modelFirmware": "Native Vita package. Author does not state an exact firmware range or a handheld model restriction; no independently verified PSTV statement found.",
+      "documentation": "https://github.com/theheroGAC/SuperTux-PSVITA#how-to-build-playstation-vita-build",
+      "artwork": {"url": "https://raw.githubusercontent.com/theheroGAC/SuperTux-PSVITA/master/data/images/title/logo.png", "credit": "SuperTux Team and contributors; PS Vita port theheroGAC. Original asset licensing follows SuperTux Creative Commons notices; software GPL-3.0-or-later.", "creditSource": "https://theherogac00.itch.io/supertuxclassivita"}
+    },
+    {
+      "id": "jumpnbump",
+      "title": "Jump'n'Bump",
+      "kind": "Homebrew game",
+      "version": "1.00 (Vita; distributed in release 1.02)",
+      "source": "https://github.com/rsn8887/jumpnbump",
+      "release": "https://github.com/rsn8887/jumpnbump/releases/tag/1.02",
+      "files": [{"name": "jumpnbump_1.00.vpk", "url": "https://github.com/rsn8887/jumpnbump/releases/download/1.02/jumpnbump_1.00.vpk", "format": "VPK"}],
+      "setup": ["Install the VPK with VitaShell. Multiplayer-only game, up to four controllers supported; Bluetooth keyboard controls are also available.", "D-pad/left stick moves; action button jumps; Select/Start restarts or advances the results screen."],
+      "data": "Standalone; no separate data archive is documented.",
+      "modelFirmware": "Author provides native Vita build and notes Bluetooth keyboard support. No exact firmware minimum is published. Later release 1.01/1.02 changes affect Switch only.",
+      "documentation": "https://github.com/rsn8887/jumpnbump#installation-instructions",
+      "artwork": {"url": "https://raw.githubusercontent.com/rsn8887/jumpnbump/master/screenshots/jumpnbump_shot_1.png", "credit": "Screenshot from rsn8887's official port; original game Brainchild Design (Mattias and Andreas Brynervall, Anders Nilsson and contributors). Repository GPL-2.0.", "creditSource": "https://github.com/rsn8887/jumpnbump#thanks"}
+    },
+    {
+      "id": "enigma",
+      "title": "Enigma",
+      "kind": "Homebrew game",
+      "version": "1.11 (Vita; distributed in release 1.16)",
+      "source": "https://github.com/rsn8887/Enigma",
+      "release": "https://github.com/rsn8887/Enigma/releases/tag/1.16",
+      "files": [
+        {"name": "enigma_1.11.vpk", "url": "https://github.com/rsn8887/Enigma/releases/download/1.16/enigma_1.11.vpk", "format": "VPK"},
+        {"name": "data.zip", "url": "https://github.com/rsn8887/Enigma/releases/download/1.16/data.zip", "format": "ZIP data", "required": true}
+      ],
+      "setup": ["Install the VPK, then extract data.zip contents into ux0:data/.", "Author recommends FTP for approximately 10,000 small files after a reported Mac USB transfer issue. Use stick or touch to guide the marble; D-pad left/right changes mouse sensitivity."],
+      "data": "Free game with supplied level/data archive; no commercial data needed.",
+      "modelFirmware": "Native Vita with touch and Bluetooth keyboard/mouse support. No exact firmware minimum or model limitation published. Versions 1.12–1.16 are Switch-only changes.",
+      "documentation": "https://github.com/rsn8887/Enigma/blob/master/README.MD",
+      "artwork": {"url": "https://raw.githubusercontent.com/rsn8887/Enigma/master/screenshots/enigma_vita_4.jpg", "credit": "Official rsn8887 Vita screenshot; Enigma developers Daniel Heck, Ronald Lamprecht and contributors.", "creditSource": "https://github.com/rsn8887/Enigma/blob/master/README.MD"}
+    },
+    {
+      "id": "chocolate-doom",
+      "title": "Chocolate Doom Vita",
+      "kind": "Source port",
+      "version": "Vita Release 3.1 (pre-release, launcher 3.0.1)",
+      "source": "https://github.com/fgsfdsfgs/chocolate-doom",
+      "release": "https://github.com/fgsfdsfgs/chocolate-doom/releases/tag/chocolate-doom-3.0.0-vita-3.1",
+      "files": [
+        {"name": "ChocolateDoom_r3_1.vpk", "url": "https://github.com/fgsfdsfgs/chocolate-doom/releases/download/chocolate-doom-3.0.0-vita-3.1/ChocolateDoom_r3_1.vpk", "format": "VPK"},
+        {"name": "data.zip", "url": "https://github.com/fgsfdsfgs/chocolate-doom/releases/download/chocolate-doom-3.0.0-vita-3.1/data.zip", "format": "ZIP data", "required": true}
+      ],
+      "setup": ["Install VPK; extract data.zip at memory-card root ux0: (creates data/chocolate).", "User-supplied full-game IWADs belong in ux0:/data/chocolate/iwads/. PWADs go in ux0:/data/chocolate/pwads/doom, heretic, hexen or strife as appropriate."],
+      "data": "Release data includes Doom and Heretic shareware. Full Doom/Ultimate Doom, Doom II, Final Doom, Heretic, Hexen and Strife require the user's own IWADs. FreeDoom also supported. A single VPK supplies the four game engines, not four independently counted apps.",
+      "modelFirmware": "Native Vita port. No exact firmware range/model restriction stated in README.Vita.md.",
+      "documentation": "https://github.com/fgsfdsfgs/chocolate-doom/blob/master/README.Vita.md",
+      "artwork": {"url": "https://raw.githubusercontent.com/fgsfdsfgs/chocolate-doom/master/vita/build/sce_sys/icon0.png", "credit": "LiveArea assets by tiduscrying, launcher graphics by KINGGOLDrus; Vita port fgsfdsfgs, Chocolate Doom contributors. GPL-2.0 project; game trademarks and original artwork remain their respective owners'.", "creditSource": "https://github.com/fgsfdsfgs/chocolate-doom/blob/master/README.Vita.md"}
+    },
+    {
+      "id": "mgba",
+      "title": "mGBA",
+      "kind": "Emulator",
+      "version": "0.10.5",
+      "source": "https://mgba.io/downloads.html",
+      "release": "https://github.com/mgba-emu/mgba/releases/tag/0.10.5",
+      "files": [{"name": "mGBA-0.10.5-vita.7z", "url": "https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-vita.7z", "format": "7z containing Vita VPK"}],
+      "setup": ["Extract the official Vita .7z on the computer, transfer its VPK and install with VitaShell.", "Select your own GB/GBC/GBA game backups in the file browser. A user-chosen folder such as ux0:roms/gba/ is an organizational suggestion, not an upstream-mandated path."],
+      "data": "Emulator only, no commercial games supplied. Built-in BIOS implementation is available; original external BIOS files are optional.",
+      "modelFirmware": "Official site lists PlayStation Vita as a supported homebrew platform. No exact firmware minimum or handheld model restriction stated.",
+      "documentation": "https://github.com/mgba-emu/mgba/blob/0.10.5/README.md",
+      "artwork": {"url": "https://raw.githubusercontent.com/mgba-emu/mgba/0.10.5/src/platform/psp2/icon0.png", "credit": "mGBA project's official PS Vita icon; mGBA © Vicki Pfau and contributors, Mozilla Public License 2.0.", "creditSource": "https://github.com/mgba-emu/mgba/blob/0.10.5/LICENSE"}
+    },
+    {
+      "id": "rocksndiamonds",
+      "title": "Rocks'n'Diamonds",
+      "kind": "Homebrew game",
+      "version": "1.12 (Vita; distributed in release 1.15)",
+      "source": "https://github.com/rsn8887/rocksndiamonds",
+      "release": "https://github.com/rsn8887/rocksndiamonds/releases/tag/1.15",
+      "files": [
+        {"name": "rocksndiamonds_vita_1.12.vpk", "url": "https://github.com/rsn8887/rocksndiamonds/releases/download/1.15/rocksndiamonds_vita_1.12.vpk", "format": "VPK"},
+        {"name": "rocksndiamonds_data.zip", "url": "https://github.com/rsn8887/rocksndiamonds/releases/download/1.15/rocksndiamonds_data.zip", "format": "ZIP data", "required": true}
+      ],
+      "setup": ["Install VPK. Extract the matching data archive into ux0:/data/ so ux0:/data/rocksndiamonds/ contains the game's files.", "Additional level folders go in ux0:/data/rocksndiamonds/levels/. Use binary transfer mode for FTP levelsets."],
+      "data": "Free game and supplied data; optional level pack is not needed for first use.",
+      "modelFirmware": "Author explicitly mentions VitaTV multiplayer up to four players; pair controllers before launching. No exact firmware minimum published. Versions 1.14/1.15 changed Switch only.",
+      "documentation": "https://github.com/rsn8887/rocksndiamonds/blob/master/README.MD",
+      "artwork": {"url": "https://raw.githubusercontent.com/rsn8887/rocksndiamonds/master/screenshots/rnd_new_a.jpg", "credit": "Official screenshot by rsn8887; original game and graphics Holger Schemel and contributors.", "creditSource": "https://github.com/rsn8887/rocksndiamonds/blob/master/README.MD"}
+    },
+    {
+      "id": "mirrormagic",
+      "title": "Mirror Magic",
+      "kind": "Homebrew game",
+      "version": "1.12 (Vita; distributed in release 1.15)",
+      "source": "https://github.com/rsn8887/rocksndiamonds",
+      "release": "https://github.com/rsn8887/rocksndiamonds/releases/tag/1.15",
+      "files": [
+        {"name": "mirrormagic_vita_1.12.vpk", "url": "https://github.com/rsn8887/rocksndiamonds/releases/download/1.15/mirrormagic_vita_1.12.vpk", "format": "VPK"},
+        {"name": "mirrormagic_data.zip", "url": "https://github.com/rsn8887/rocksndiamonds/releases/download/1.15/mirrormagic_data.zip", "format": "ZIP data", "required": true}
+      ],
+      "setup": ["Install VPK. Extract the matching data archive into ux0:/data/ so ux0:/data/mirrormagic/ contains the game's files.", "Additional level folders go in ux0:/data/mirrormagic/levels/. Rotate mirrors to guide the laser before time expires."],
+      "data": "Standalone free game with supplied data archive.",
+      "modelFirmware": "Native Vita build from the same port project; no exact firmware range or additional model restriction stated.",
+      "documentation": "https://github.com/rsn8887/rocksndiamonds/blob/master/README.MD",
+      "artwork": {"url": "https://raw.githubusercontent.com/rsn8887/rocksndiamonds/master/screenshots/mm_new_a.jpg", "credit": "Official screenshot by rsn8887; original game and graphics Holger Schemel and contributors.", "creditSource": "https://github.com/rsn8887/rocksndiamonds/blob/master/README.MD"}
+    }
+  ]
+}

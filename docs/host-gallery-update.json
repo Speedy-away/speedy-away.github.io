@@ -1,0 +1,164 @@
+{
+  "updatedAt": "2026-11-03T20:18:53.723Z",
+  "status": "Complete locally in WWB-HOST; primary host galleries, button firmware selection and trainer popup. Publishing is managed by the separate migration chat.",
+  "repository": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+  "request": "Replace firmware dropdowns with automatic detection and manual buttons; organize all mods as game -> exact game update -> menus; centered image tiles about7 across; image tiles for payloads/tools; trainer game tiles with a popup.",
+  "behavior": {
+    "firmware": "Matching console UA selects firmware on load, overriding stale saved choice. PC/phone can choose manual buttons. Wrong-console UA does not select another platform firmware. Unknown detected firmware does not create compatibility or run anything.",
+    "navigation": "Exact game then source game-update buttons before menu-family popup. No game/firmware dropdowns. Popup preserves exact file IDs, game/menu versions, pins and source requirements.",
+    "tiles": "Centered seven columns at1500px+, four at1000px+, three at650px+, two phones. Firmware buttons seven columns, four on very narrow screens. Applies main hosts and scoped game pages.",
+    "trainer": {
+      "builds": 1169,
+      "gameTiles": 730,
+      "verifiedGameCovers": 74,
+      "letterTiles": 656,
+      "firstRender": 70,
+      "additionalGames": "Explicit Show more games",
+      "popup": "Exact CUSA/update buttons, read-only Attach, explicit Apply/Disable after native service checks, busy/paused/uncertainty guards preserved; Escape/focus trapping/return focus."
+    },
+    "languages": {
+      "languages": 20,
+      "dictionaryEntries": 1189,
+      "newTrainerKeys": 7
+    },
+    "newRemoteDownloads": 0,
+    "sourceNativePayloadsChanged": false
+  },
+  "verification": {
+    "tests": {
+      "total": 67,
+      "passed": 67,
+      "failed": 0,
+      "report": "docs/qa/host-gallery-tests.txt"
+    },
+    "projectBuild": {
+      "bytes": 836341760,
+      "links": 2346,
+      "nativeScriptsUnchanged": 848,
+      "cachedResourcesRetained": 1071,
+      "issues": 0,
+      "note": "This local UI preview was built before a separate migration follow-up expanded historical cache aliases; use the current project publisher on deployment."
+    },
+    "ZIPCRCAndSHA256Verified": true,
+    "toolArchiveJobs": 16,
+    "archive": {
+      "mode": "write",
+      "backupRoot": "F:\\whatsite-backup-downloads-etc",
+      "items": 4868,
+      "fileRecords": 5992,
+      "presentFileRecords": 5992,
+      "missingFileRecords": 0,
+      "missingPaths": 0,
+      "otherUnavailableRecords": 0,
+      "availability": {
+        "present": 5992
+      }
+    },
+    "browser": "Local browser use is disabled in Work settings. No visual/browser QA claimed, no workaround automation used.",
+    "hardwareExecution": false,
+    "consoleContact": false
+  },
+  "sender": {
+    "id": "console-payload-sender-8d8bda70ee88",
+    "name": "console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "version": "2.1.0+8d8bda70ee88",
+    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "source": "https://speedy-away.github.io/WWB-HOST/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "bytes": 106736981,
+    "sha256": "e580a8d9e763b87e4107a84e62d4590b4db9eac804dd3fc435c651c960739e7d",
+    "snapshot": "8d8bda70ee88b7bd20738c10bb0fc22b3bdcad75a00972674dcb269eb7f3b76c",
+    "files": 1572,
+    "payloads": 125,
+    "actions": 185,
+    "file": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST\\downloads\\helpers\\console-payload-sender\\console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\Console Payload Sender\\Helpers\\2.1.0+8d8bda70ee88\\console-payload-sender-2.1.0-8d8bda70ee88.zip",
+    "zipEntries": 1572,
+    "manifestFiles": 1571,
+    "sourceSnapshotMatches": true,
+    "archiveVerified": true
+  },
+  "tools": [
+    {
+      "scope": "ps4-trainer",
+      "version": "2026.11.03.1+750a7b8fb4d7212c",
+      "local": "/downloads/helpers/host-local-tools/ps4-trainer/ps4-trainer-750a7b8fb4d7212c.zip",
+      "bytes": 7330450,
+      "sha256": "fbe209c41d6f2f87b9c5bf6c9b9647265fdd8059c918decc69a5aea89041f63a",
+      "files": 1290
+    },
+    {
+      "scope": "esp-flasher",
+      "version": "2026.11.03.1+fac1e070e9ec024f",
+      "local": "/downloads/helpers/host-local-tools/esp-flasher/esp-flasher-fac1e070e9ec024f.zip",
+      "bytes": 810271,
+      "sha256": "c2bf8921f55ec0561d4fc390acb256e5e3fa954a8c5b61a758f487b03220a3a9",
+      "files": 38
+    }
+  ],
+  "preview": "http://127.0.0.1:61823/WWB-HOST/hosts/ps4/?view=mods",
+  "trainerPreview": "http://127.0.0.1:61823/WWB-HOST/hosts/tools/ps4-trainer/",
+  "sourceHashes": [
+    {
+      "name": "assets/host-dashboard.js",
+      "sha256": "04643f4cc00e418cc067912be3a4e18db29f0b16879bdd84148576419b722b1b"
+    },
+    {
+      "name": "assets/host-catalog-grid.js",
+      "sha256": "99b01774dd851e34d715840d7c0cce1a97f4fac72e9bc3b433b36e0d3226a90c"
+    },
+    {
+      "name": "assets/host-catalog-grid.css",
+      "sha256": "c890977907339174a9baa220217fdefb0a4ba3254d57148367f85fa13169a94c"
+    },
+    {
+      "name": "assets/host-firmware-buttons.css",
+      "sha256": "6c554c2facf47f5c7ae9347471076dbeb1028d104ea97b25af0ee25836fbaa45"
+    },
+    {
+      "name": "assets/host-folders.js",
+      "sha256": "73ed152011d949dca02de9416712ce1a1c1b61cd79ac40a40164806661db33fe"
+    },
+    {
+      "name": "assets/host-trainer.js",
+      "sha256": "d44221f2ccb9fdc7c68fbe9d71cabda6790b5cf231307c14bf1f92fd3f3c3405"
+    },
+    {
+      "name": "assets/host-trainer.css",
+      "sha256": "5774596ee47e34b22b39a5445fc7f4f79cd7c3135e70aa957dac307256a827a9"
+    },
+    {
+      "name": "scripts/host-webhost-markup.cjs",
+      "sha256": "68f8b79afd59b3f11bd0d26bb5bb54383fb0eea30a7bc96536e887a38f317571"
+    },
+    {
+      "name": "scripts/host-folder-markup.cjs",
+      "sha256": "fd2ed356f2753d5aea17f8e5b13d1f0f1399a0f8344d51a6b63484ac6d303353"
+    },
+    {
+      "name": "scripts/build-host-selector.cjs",
+      "sha256": "38e8c46b568be8352659c6d01651a4d82493ae938c3f01b2df2176c3220ea741"
+    },
+    {
+      "name": "scripts/templates/host-trainer.html",
+      "sha256": "2ceb777a6a918df858534d2415f239765d9030c2360b25b8f9401008e2621d4f"
+    },
+    {
+      "name": "hosts/tools/ps4-trainer/tile-art.json",
+      "sha256": "b17150c8798a305f67636b7e870e17f31d180143687301f85055726abad073b4"
+    }
+  ],
+  "preservation": "All prior download/helper versions retained. Main-site host redirects preserved; authored changes staged there were explicitly copied into WWB-HOST. Root homepage and migration publisher retained. No commit/push/deploy performed by this task.",
+  "regenerate": [
+    "node scripts/build-host-selector.cjs --host-only",
+    "node scripts/prepare-host-local-tools.cjs --trainer-ui",
+    "node i18n-tools/build-chrome.js",
+    "node scripts/prepare-host-local-tools.cjs --package (archive new immutable jobs before final links)",
+    "node scripts/package-console-payload-sender.cjs --archive",
+    "node scripts/host-project-pages.cjs <fresh-output-dir> then node scripts/verify-host-project-pages.cjs <output-dir>"
+  ],
+  "limits": [
+    "Native console loading/flashing/installation remains hardware-untested.",
+    "The already running matching console loader or WebRTE service remains necessary. Public UI cannot replace the native service.",
+    "74 trainer games have verified covers; others use honest letter tiles. No unrelated game cover is substituted."
+  ]
+}
