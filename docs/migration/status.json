@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T04:35:42.649Z",
+  "updatedAt": "2026-11-04T04:42:10.669Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "PS4 and PS5 alignment fixes published and live browser verified",
+  "status": "Guides shortcut removal published and live verified",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -14,21 +14,21 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "34a0638df38901abc280247be682a666ee1f8dfc",
+    "revision": "97dd06705f5a72aadb194a074e533067219b1007",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 865584883,
+    "bytes": 865588583,
     "budget": 922746880,
     "files": 6202,
-    "offloadedFiles": 293,
+    "offloadedFiles": 294,
     "nativeScriptsUnchanged": 898,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1040106,
-      "runtime": 255106
+      "full": 1040341,
+      "runtime": 255341
     },
     "activeRuntimeFiles": 319,
     "sharedCatalogueFiles": 4
@@ -1189,11 +1189,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41772877133,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41772877133",
+    "id": 41774383719,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41774383719",
+    "commit": "97dd06705f5a72aadb194a074e533067219b1007",
     "conclusion": "success",
-    "commit": "34a0638df38901abc280247be682a666ee1f8dfc",
-    "verifiedAt": "2026-11-04T04:27:54.333Z"
+    "verifiedAt": "2026-11-04T04:42:10.669Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1425,9 +1425,9 @@
     "liveReport": "docs/qa/console-alignment-live.json"
   },
   "removeGuides": {
-    "status": "All checks passed; publication pending",
+    "status": "Published and live verified",
     "review": "docs/migration/remove-guides-review.json",
-    "publicationPending": true,
+    "publicationPending": false,
     "senderVersion": "2.1.0+2925c5ff39c8",
     "archive": {
       "items": 5014,
@@ -1444,6 +1444,23 @@
       "fail": 0,
       "skipped": 0,
       "evidence": "docs/qa/remove-guides-tests.tap"
-    }
+    },
+    "deployments": {
+      "host": {
+        "id": 41774383719,
+        "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41774383719",
+        "commit": "97dd06705f5a72aadb194a074e533067219b1007",
+        "conclusion": "success",
+        "verifiedAt": "2026-11-04T04:42:10.669Z"
+      },
+      "main": {
+        "id": 41773906142,
+        "url": "https://github.com/Speedy-away/whatsite/actions/runs/41773906142",
+        "commit": "ddc5f89a64afd5223d178d3fad6702325dba2f7e",
+        "conclusion": "success",
+        "verifiedAt": "2026-11-04T04:42:10.669Z"
+      }
+    },
+    "liveReport": "docs/qa/remove-guides-live.json"
   }
 }

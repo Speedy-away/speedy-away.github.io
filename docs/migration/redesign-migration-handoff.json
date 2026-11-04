@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T04:27:54.333Z",
-  "status": "PS4 and PS5 alignment fixes published and live browser verified",
+  "updatedAt": "2026-11-04T04:42:10.669Z",
+  "status": "Guides shortcut removal published and live verified",
   "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
   "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
   "publicURL": "https://speedy-away.github.io/",
@@ -204,50 +204,59 @@
     "physicalConsoleTested": false
   },
   "latestFollowup": {
-    "request": "Fix misaligned controls and layout across PS4 and PS5 pages.",
-    "status": "Published and live browser verified",
+    "request": "Remove Guides buttons leading to the console download guides.",
+    "status": "Published and live verified",
     "publicationPending": false,
-    "review": "docs/migration/console-alignment-review.json",
-    "liveReport": "docs/qa/console-alignment-live.json",
-    "screenshot": "docs/screenshots/console-alignment-20261104/live-ps5-helper.jpg",
-    "deployment": {
-      "id": 41772877133,
-      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41772877133",
-      "conclusion": "success",
-      "commit": "34a0638df38901abc280247be682a666ee1f8dfc",
-      "verifiedAt": "2026-11-04T04:27:54.333Z"
+    "review": "docs/migration/remove-guides-review.json",
+    "liveReport": "docs/qa/remove-guides-live.json",
+    "screenshot": "docs/screenshots/remove-guides-20261104/chooser.jpg",
+    "deployments": {
+      "host": {
+        "id": 41774383719,
+        "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41774383719",
+        "commit": "97dd06705f5a72aadb194a074e533067219b1007",
+        "conclusion": "success",
+        "verifiedAt": "2026-11-04T04:42:10.669Z"
+      },
+      "main": {
+        "id": 41773906142,
+        "url": "https://github.com/Speedy-away/whatsite/actions/runs/41773906142",
+        "commit": "ddc5f89a64afd5223d178d3fad6702325dba2f7e",
+        "conclusion": "success",
+        "verifiedAt": "2026-11-04T04:42:10.669Z"
+      }
     },
     "tests": {
-      "files": 74,
-      "tests": 515,
-      "pass": 515,
+      "files": 5,
+      "tests": 27,
+      "pass": 27,
       "fail": 0,
       "skipped": 0,
-      "evidence": "docs/qa/console-alignment-tests.tap"
+      "evidence": "docs/qa/remove-guides-tests.tap"
     },
     "sender": {
-      "verifiedAt": "2026-11-04T04:20:48.128Z",
-      "version": "2.1.0+de86f180f3ee",
-      "name": "console-payload-sender-2.1.0-de86f180f3ee.zip",
-      "bytes": 107454643,
-      "sha256": "65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
-      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-de86f180f3ee.zip",
-      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+de86f180f3ee\\console-payload-sender-2.1.0-de86f180f3ee.zip",
-      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-de86f180f3ee",
-      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-de86f180f3ee/console-payload-sender-2.1.0-de86f180f3ee.zip",
-      "assetId": 708196004,
-      "serverDigest": "sha256:65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+      "verifiedAt": "2026-11-04T04:33:12.347Z",
+      "version": "2.1.0+2925c5ff39c8",
+      "name": "console-payload-sender-2.1.0-2925c5ff39c8.zip",
+      "bytes": 107454625,
+      "sha256": "e921f5689e5795ef16f06dad163522e704bcf4e22c135797c3ad255517e00671",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-2925c5ff39c8.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+2925c5ff39c8\\console-payload-sender-2.1.0-2925c5ff39c8.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-2925c5ff39c8",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-2925c5ff39c8/console-payload-sender-2.1.0-2925c5ff39c8.zip",
+      "assetId": 708231082,
+      "serverDigest": "sha256:e921f5689e5795ef16f06dad163522e704bcf4e22c135797c3ad255517e00671",
       "zipUnchanged": true,
       "archiveVerified": true,
       "downloadedCodeExecuted": false
     },
     "archive": {
-      "items": 5013,
-      "fileRecords": 8632,
-      "presentFileRecords": 8632,
+      "items": 5014,
+      "fileRecords": 8633,
+      "presentFileRecords": 8633,
       "missingFileRecords": 0,
-      "priorInventoryRecordsPreserved": 8631,
-      "olderSenderSnapshotsPreserved": 44
+      "priorInventoryRecordsPreserved": 8632,
+      "olderSenderSnapshotsPreserved": 45
     }
   },
   "consoleBannerFollowup": {
@@ -389,6 +398,53 @@
       "otherUnavailableFiles": 0,
       "priorInventoryRecordsPreserved": 8630,
       "olderSenderSnapshotsPreserved": 43
+    }
+  },
+  "consoleAlignmentFollowup": {
+    "request": "Fix misaligned controls and layout across PS4 and PS5 pages.",
+    "status": "Published and live browser verified",
+    "publicationPending": false,
+    "review": "docs/migration/console-alignment-review.json",
+    "liveReport": "docs/qa/console-alignment-live.json",
+    "screenshot": "docs/screenshots/console-alignment-20261104/live-ps5-helper.jpg",
+    "deployment": {
+      "id": 41772877133,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41772877133",
+      "conclusion": "success",
+      "commit": "34a0638df38901abc280247be682a666ee1f8dfc",
+      "verifiedAt": "2026-11-04T04:27:54.333Z"
+    },
+    "tests": {
+      "files": 74,
+      "tests": 515,
+      "pass": 515,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/console-alignment-tests.tap"
+    },
+    "sender": {
+      "verifiedAt": "2026-11-04T04:20:48.128Z",
+      "version": "2.1.0+de86f180f3ee",
+      "name": "console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "bytes": 107454643,
+      "sha256": "65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+de86f180f3ee\\console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-de86f180f3ee",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-de86f180f3ee/console-payload-sender-2.1.0-de86f180f3ee.zip",
+      "assetId": 708196004,
+      "serverDigest": "sha256:65d4e543ddc8caea6462f08a7693b371ce18db3dea2b98984d0a9da43323e322",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
+    },
+    "archive": {
+      "items": 5013,
+      "fileRecords": 8632,
+      "presentFileRecords": 8632,
+      "missingFileRecords": 0,
+      "priorInventoryRecordsPreserved": 8631,
+      "olderSenderSnapshotsPreserved": 44
     }
   }
 }

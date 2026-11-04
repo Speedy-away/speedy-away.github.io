@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-04T04:35:42.649Z",
-  "status": "All checks passed; publication pending",
+  "updatedAt": "2026-11-04T04:42:10.669Z",
+  "status": "Published and live verified",
   "request": "Remove Guides buttons leading to the console download guides.",
   "changes": {
     "chooserGuidesAnchorsRemoved": 1,
@@ -86,5 +86,43 @@
     "fail": 0,
     "skipped": 0,
     "evidence": "docs/qa/remove-guides-tests.tap"
+  },
+  "publicationPending": false,
+  "deployments": {
+    "host": {
+      "id": 41774383719,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41774383719",
+      "commit": "97dd06705f5a72aadb194a074e533067219b1007",
+      "conclusion": "success",
+      "verifiedAt": "2026-11-04T04:42:10.669Z"
+    },
+    "main": {
+      "id": 41773906142,
+      "url": "https://github.com/Speedy-away/whatsite/actions/runs/41773906142",
+      "commit": "ddc5f89a64afd5223d178d3fad6702325dba2f7e",
+      "conclusion": "success",
+      "verifiedAt": "2026-11-04T04:42:10.669Z"
+    }
+  },
+  "liveReport": "docs/qa/remove-guides-live.json",
+  "publicBuild": {
+    "revision": "97dd06705f5a72aadb194a074e533067219b1007",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865588583,
+    "budget": 922746880,
+    "files": 6202,
+    "offloadedFiles": 294,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1040341,
+      "runtime": 255341
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
   }
 }

@@ -1,0 +1,55 @@
+{
+  "verifiedAt": "2026-11-04T04:42:10.669Z",
+  "status": "passed",
+  "revision": "97dd06705f5a72aadb194a074e533067219b1007",
+  "deployments": {
+    "host": {
+      "id": 41774383719,
+      "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41774383719",
+      "commit": "97dd06705f5a72aadb194a074e533067219b1007",
+      "conclusion": "success",
+      "verifiedAt": "2026-11-04T04:42:10.669Z"
+    },
+    "main": {
+      "id": 41773906142,
+      "url": "https://github.com/Speedy-away/whatsite/actions/runs/41773906142",
+      "commit": "ddc5f89a64afd5223d178d3fad6702325dba2f7e",
+      "conclusion": "success",
+      "verifiedAt": "2026-11-04T04:42:10.669Z"
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "guideEntryLinks": 0
+    },
+    {
+      "path": "hosts/ps4/",
+      "status": 200,
+      "guideEntryLinks": 0
+    },
+    {
+      "path": "hosts/ps5/",
+      "status": 200,
+      "guideEntryLinks": 0
+    }
+  ],
+  "browser": {
+    "guideEntryLinks": 0,
+    "title": "Choose your console",
+    "url": "https://speedy-away.github.io/"
+  },
+  "publishedChooserGuideLinks": 0,
+  "publishedChooserSHA256": "13bdf181975d2b45d2f78ded4b7eded35efff99bc1f026d26512bbd189b3dd1d",
+  "bothPublishedHostTemplatesGuideFree": true,
+  "senderVersion": "2.1.0+2925c5ff39c8",
+  "senderVersionsPreserved": 46,
+  "senderAssetHTTP": 200,
+  "bundledChooserGuideLinks": 0,
+  "bundledChooserVerification": "tmp/sender-package-no-guides-20261104/archive-verification.json",
+  "screenshot": "docs/screenshots/remove-guides-20261104/chooser.jpg",
+  "screenshotSHA256": "292b12067b42cb76a86fc6fe2ca6aa2c7e3607ffc93e5a5534bad0e7cfce6a08",
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false
+}
