@@ -41,3 +41,4 @@ body.host-offline-page main{max-width:1040px;background:linear-gradient(145deg,#
 #host-offline-verify:focus-visible,.host-offline-open:focus-visible{outline:3px solid #99bdff;outline-offset:3px}
 .host-offline-panel>.host-offline-note{margin:0}
 @media(max-width:560px){body.host-offline-page main{padding:20px;margin:12px auto}.host-offline-panel{padding:16px}.host-offline-panel-title{align-items:flex-start!important;flex-direction:column}.host-offline-actions>*{width:100%}}
+#host-offline-verify[hidden]{display:none}
