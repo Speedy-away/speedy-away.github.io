@@ -127,14 +127,10 @@ function buildHostSelector({hostOnly=false}={}) {
       'Choose firmware, load compatible payloads and manage your console files.', image(platform),
       [['/hosts/', 'Choose another console'], [`/hosts/${platform}/`, name], ...(platform==='ps4'?[['/hosts/ps4/firmware/','Firmware selection']]:[]), [base + 'downloads.html', 'Downloads'], [`/guides/console-files/${platform}.html`, 'Guides']],
       section('actions', 'Host controls', dashboard(platform, actions,{gamesLanding:true})), '#actions', 'Open host', true);
-    const gamePages = [];
-    for (const [scope,label] of [['gta5','GTA 5'],['rdr2','RDR2'],['other-games','Other games']]) {
+    for (const scope of ['gta5','rdr2','other-games']) {
       const relative = `hosts/${platform}/${scope}/index.html`;
-      gamePages.push(relative);
-      savePage(relative, `${label} · ${name} mods`,
-        `Choose exact game updates and menu builds for ${label} on ${name}.`, image(platform),
-        [[`/hosts/${platform}/`,`${name} host`],[`/hosts/${platform}/gta5/`,'GTA 5'],[`/hosts/${platform}/rdr2/`,'RDR2'],[`/hosts/${platform}/other-games/`,'Other games']],
-        section('actions',`${label} mods`,dashboard(platform,actions,{gameScope:scope})), '#actions','Browse mods',true);
+      const file=path.join(root,relative);fs.mkdirSync(path.dirname(file),{recursive:true});
+      fs.writeFileSync(file,require('./host-mods-redirect.cjs').renderModRedirect(platform,scope));
     }
     const managerFile = `hosts/${platform}/payload-manager/index.html`;
     savePage(managerFile, `${brand} · ${name} payload manager`,
@@ -146,7 +142,7 @@ function buildHostSelector({hostOnly=false}={}) {
       `Manage files on your ${name} through its installed native workspace.`,image(platform),
       [[`/hosts/${platform}/`,`${name} host`],[`/hosts/${platform}/files/`,'File manager'],[`/hosts/${platform}/payload-manager/`,'Payload manager'],[base+'downloads.html','Downloads']],
       section('actions','Console files',workspaceDashboard(platform,actions,'files')),'#actions','Open files',true);
-    for (const relative of [`hosts/${platform}/index.html`,managerFile,filesPage,...gamePages]) {
+    for (const relative of [`hosts/${platform}/index.html`,managerFile,filesPage]) {
       const hostFile = path.join(root,relative);
       let hostHtml = fs.readFileSync(hostFile, 'utf8').replace('console-guide host-selector', 'console-guide host-selector host-dashboard-page');
       hostHtml = hostHtml.replace('</head>', '<link rel="stylesheet" href="/assets/host-dashboard.css?v=16"><link rel="stylesheet" href="/assets/host-webhost.css?v=2"><link rel="stylesheet" href="/assets/host-firmware-buttons.css?v=3"><link rel="stylesheet" href="/assets/host-catalog-grid.css?v=2">\n</head>').replace('</body>', '<script defer src="/assets/host-console-client.js?v=15"></script><script defer src="/assets/host-catalog-grid.js?v=3"></script><script defer src="/assets/host-karo-builds.js?v=site-load-1"></script><script defer src="/assets/host-site-load.js?v=1"></script><script defer src="/assets/host-dashboard.js?v=site-load-1"></script></body>');

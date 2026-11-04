@@ -18,5 +18,6 @@ test('receiver 21 preserves every old entry and the exact receiver engine while 
 });
 test('all new exact file IDs resolve through the real console download catalogue and the PS5 host pages',()=>{
  const catalog=read('docs/console-download-catalog.json').items,actions=require('../build-host-selector.cjs').hostActions('ps5');
- for(const p of pins){const item=catalog.find(i=>i.id===p.id),action=actions.find(a=>a.id===p.id);assert.equal(item.sha256,p.sha256);assert.equal(action.consoleFileId,p.id);assert.equal(action.run,null);for(const name of ['hosts/ps5/index.html','hosts/ps5/other-games/index.html'])assert.ok(fs.readFileSync(path.join(root,name),'utf8').includes(p.id));}
+ for(const p of pins){const item=catalog.find(i=>i.id===p.id),action=actions.find(a=>a.id===p.id);assert.equal(item.sha256,p.sha256);assert.equal(action.consoleFileId,p.id);assert.equal(action.run,null);assert.ok(fs.readFileSync(path.join(root,'hosts/ps5/index.html'),'utf8').includes(p.id));}
+ assert.equal(fs.readFileSync(path.join(root,'hosts/ps5/other-games/index.html'),'utf8'),require('../host-mods-redirect.cjs').renderModRedirect('ps5','other-games'));
 });

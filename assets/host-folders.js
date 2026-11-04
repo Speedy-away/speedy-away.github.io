@@ -2,7 +2,7 @@
  'use strict';
  var data=document.getElementById('host-actions-data');if(!data)return;
  var platform=(window.WWB_HOST_CATALOG||JSON.parse(data.textContent)).platform,base='/hosts/'+platform+'/';
- var labels={loaders:'Choose firmware',payloads:'Payloads',mods:'Game mods',tools:'Tools',goldhen:'Goldhen PS4',connection:'Connection & setup',sender:'Desktop sender · connect from a PC'};
+ var labels={loaders:'Choose firmware',payloads:'Payloads',mods:'Mods / Mod Menus',tools:'Tools',goldhen:'Goldhen PS4',connection:'Connection & setup',sender:'Desktop sender · connect from a PC'};
  var params=new URL(location.href).searchParams,selected=params.get('view')||params.get('folder')||'loaders';
  if(!Object.prototype.hasOwnProperty.call(labels,selected))selected='loaders';
  document.querySelectorAll('.host-file-tabs a').forEach(function(link){if(new URL(link.href).searchParams.get('view')===selected)link.setAttribute('aria-current','page');});
@@ -10,6 +10,7 @@
  if(firmwareControl)document.getElementById('host-file-firmware').appendChild(firmwareControl);
  if(firmwareControl)firmwareControl.hidden=selected!=='loaders';
  var fileToolbar=document.getElementById('host-file-firmware');
+ fileToolbar.hidden=selected!=='loaders';
  ['#host-game-filter'].forEach(function(selector){var item=document.querySelector(selector);if(item)fileToolbar.appendChild(item);});
  var options=document.querySelector('.host-options'),setup=document.querySelector('.host-connection-details');if(options&&setup)setup.appendChild(options);
  // Keep Load before the firmware choices in reading and tab order.
@@ -25,7 +26,7 @@
  if(selected){
   var button=document.querySelector('[data-host-category="'+selected+'"]');
   var title=document.getElementById('host-folder-title');
-    title.textContent=selected==='loaders'?labels.loaders:button?button.textContent:labels[selected];
+    title.textContent=labels[selected];
   document.getElementById('host-folder-path').textContent=' / '+title.textContent;
   var back=document.querySelector('.host-taskbar a');back.href=selected==='loaders'?'/hosts/':base;
   if(button)button.click();

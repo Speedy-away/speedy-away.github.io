@@ -53,7 +53,7 @@ function build() {
     page(file,game.title+' · PS5 Cheats','Native PS5 cheat downloads. Match the PPSA title ID and installed game update.',game.image,nav,
       section('files','Choose your installed build',grid(rows(game)))+
       section('setup','Use with your cheat manager','<p>Save the file, then follow Setup &amp; source for its folder and matching game build. Enable individual options through the compatible cheat manager.</p>')+
-      section('more-games','More native PS5 games',`<div class="guide-links">${link(index,'All native PS5 cheats')}${link('/console/ps5/mods.html','Game mods')}</div>`),'#files','View downloads');
+      section('more-games','More native PS5 games',`<div class="guide-links">${link(index,'All native PS5 cheats')}${link('/console/ps5/mods.html','Mods / Mod Menus')}</div>`),'#files','View downloads');
   }
   page('console/ps5/game-cheats.html','Native PS5 Game Cheats','Choose a game, then match its PPSA title ID and exact update before downloading.',fallback,nav,
     section('games','Choose a game',cards(games))+

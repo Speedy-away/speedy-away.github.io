@@ -8,7 +8,7 @@ function dashboard(platform,actions,{manager=false,gameScope='',gamesLanding=fal
   const data=JSON.stringify({platform,actions,managerView:manager,gameScope,gamesLanding,initialCategory,catalogGrid:true,firmwareChoicesOnly}).replace(/</g,'\\u003c');
   const directory=require('./host-first-party-navigation.cjs').directory(platform,require('./console-payload-bridge.cjs').loadActions());
   const games=[...new Set(ui.scopeActions(actions,gameScope).map(a=>a.game).filter(Boolean))].sort();
-  const categories=[['loaders','Jailbreak'],['payloads','Payloads'],['mods','Game mods'],['tools','Tools']];
+  const categories=[['loaders','Jailbreak'],['payloads','Payloads'],['mods','Mods / Mod Menus'],['tools','Tools']];
   if(platform==='ps4')categories.push(['goldhen','Goldhen PS4']);
   const markup=`<div class="host-dashboard host-reset">
   <section class="host-connect" aria-labelledby="host-connect-title">

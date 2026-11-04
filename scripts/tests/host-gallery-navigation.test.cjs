@@ -7,6 +7,27 @@ const actions=[menu('gta157','GTA V','1.57'),menu('gta156','GTA V','1.56'),menu(
 function click(app,attribute,value){const grid=app.ids['host-action-grid'],button=grid.querySelector('['+attribute+'="'+value+'"]');assert.ok(button,'Missing navigation '+attribute+' '+value);grid.fire('click',{target:button});}
 function noDispatch(app){assert.equal(app.sends.length,0);assert.equal(app.checks.length,0);assert.equal(app.opened.length,0);assert.equal(app.anchorClicks.length,0);}
 
+test('shared PS4 and PS5 mods links restore exact selections and keep navigation on the common page',()=>{
+ for(const platform of ['ps4','ps5']){
+  const app=fixture({platform,catalogGrid:true,actions:actions.map(a=>({...a,platform})),pageURL:'https://speedy-away.github.io/hosts/'+platform+'/?view=mods&game=gta5&update=1.57&lang=en#actions'});
+  assert.ok(app.ids['host-action-grid'].querySelector('[data-choose-group]'));
+  click(app,'data-catalog-back','updates');
+  assert.equal(app.ids['host-action-grid'].querySelectorAll('[data-catalog-update]').length,2);
+  assert.doesNotMatch(app.ids['host-action-grid'].innerHTML,/<img\b/);
+  assert.equal(new URL(app.window.location.href).searchParams.has('update'),false);
+  click(app,'data-catalog-back','games');
+  const url=new URL(app.window.location.href);assert.equal(url.pathname,'/hosts/'+platform+'/');assert.equal(url.searchParams.get('view'),'mods');assert.equal(url.searchParams.get('lang'),'en');assert.equal(url.searchParams.has('game'),false);assert.equal(url.hash,'#actions');
+  assert.doesNotMatch(app.ids['host-action-grid'].innerHTML,/host-catalog-path|\/gta5\/|\/rdr2\//);noDispatch(app);
+ }
+});
+
+test('unknown game and partial update links cannot choose an unrelated exact build',()=>{
+ for(const query of ['game=missing&update=1.57','game=gta5&update=1.5']){
+  const app=fixture({catalogGrid:true,actions,pageURL:'https://speedy-away.github.io/hosts/ps4/?view=mods&'+query});
+  assert.equal(app.ids['host-action-grid'].querySelectorAll('[data-choose-group]').length,0);assert.equal(app.ids['host-version-overlay'].hidden,true);noDispatch(app);
+ }
+});
+
 test('game and exact update buttons precede menu families; only that update reaches the popup',()=>{
  const app=fixture({catalogGrid:true,actions});
  assert.equal(app.ids['host-action-grid'].querySelectorAll('[data-catalog-game]').length,2);

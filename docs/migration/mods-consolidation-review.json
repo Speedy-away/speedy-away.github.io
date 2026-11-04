@@ -1,0 +1,156 @@
+{
+  "updatedAt": "2026-11-04T04:03:56.378Z",
+  "status": "All checks passed; publication pending",
+  "request": "Consolidate GTA V and RDR2 into Mods / Mod Menus and remove excess blank space on PS4 and PS5.",
+  "changes": {
+    "sharedViews": [
+      "/hosts/ps4/?view=mods",
+      "/hosts/ps5/?view=mods"
+    ],
+    "legacyRedirects": [
+      "/hosts/ps4/gta5/",
+      "/hosts/ps4/rdr2/",
+      "/hosts/ps4/other-games/",
+      "/hosts/ps5/gta5/",
+      "/hosts/ps5/rdr2/",
+      "/hosts/ps5/other-games/"
+    ],
+    "samePageGameAndUpdateSelection": true,
+    "oldQueryValuesAndHashesPreserved": true,
+    "navigationLabel": "Mods / Mod Menus",
+    "desktopBannerHeight": 180,
+    "phoneBannerHeight": 144,
+    "trainerImage": [
+      80,
+      50
+    ],
+    "updateChoiceMinHeight": 60,
+    "repeatedUpdateCoversRemoved": true,
+    "emptyToolbarHidden": true,
+    "redundantInitialBreadcrumbRemoved": true,
+    "homeLinksUpdated": true,
+    "generatorsUpdated": true
+  },
+  "preservation": {
+    "PS4ActionsUnchanged": 155,
+    "PS5ActionsUnchanged": 42,
+    "nativeAndExistingDownloadBytesChanged": 0,
+    "oldSenderSnapshotsRetained": 43,
+    "oldPageSourcePreservedInGitHistory": true
+  },
+  "preview": {
+    "browser": "Supported in-app browser",
+    "PS4Games": 31,
+    "PS5Games": 15,
+    "PS4ExactMenuPopupVerified": true,
+    "PS4GTAIndexBookmarkVerified": true,
+    "PS5RDR2BookmarkVerified": true,
+    "phoneViewportWidth": 390,
+    "phoneMainWidth": 343,
+    "screenshots": [
+      "docs/screenshots/mods-consolidation-20261104/preview-ps4.jpg",
+      "docs/screenshots/mods-consolidation-20261104/preview-ps5.jpg",
+      "docs/screenshots/mods-consolidation-20261104/preview-updates.jpg",
+      "docs/screenshots/mods-consolidation-20261104/preview-phone.jpg"
+    ]
+  },
+  "tests": {
+    "targetedPassed": 32,
+    "initialFullRun": {
+      "files": 74,
+      "tests": 515,
+      "pass": 514,
+      "fail": 1,
+      "resolvedIssue": "Current desktop helper had previous dashboard assets; a fresh immutable helper snapshot was packaged."
+    },
+    "finalFullRunPending": false,
+    "finalFullRun": {
+      "files": 74,
+      "tests": 515,
+      "pass": 515,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/mods-consolidation-tests.tap"
+    }
+  },
+  "sender": {
+    "version": "2.1.0+537062853155",
+    "bytes": 107453769,
+    "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+    "versionsPreserved": 44,
+    "delivery": {
+      "verifiedAt": "2026-11-04T04:01:45.064Z",
+      "version": "2.1.0+537062853155",
+      "name": "console-payload-sender-2.1.0-537062853155.zip",
+      "bytes": 107453769,
+      "sha256": "c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-537062853155.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+537062853155\\console-payload-sender-2.1.0-537062853155.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-537062853155",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-537062853155/console-payload-sender-2.1.0-537062853155.zip",
+      "assetId": 708146618,
+      "serverDigest": "sha256:c82b330b4275878ad3849bb77b84e7dd31dd6b13e758480767d793393b8f4113",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
+    }
+  },
+  "previewBuild": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865481201,
+    "budget": 922746880,
+    "files": 6202,
+    "offloadedFiles": 291,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1030312,
+      "runtime": 245312
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false,
+  "archive": {
+    "items": 5012,
+    "fileRecords": 8631,
+    "presentFileRecords": 8631,
+    "missingFileRecords": 0,
+    "otherUnavailableFiles": 0,
+    "priorInventoryRecordsPreserved": 8630,
+    "olderSenderSnapshotsPreserved": 43
+  },
+  "releaseBuild": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865484901,
+    "budget": 922746880,
+    "files": 6202,
+    "offloadedFiles": 292,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1030547,
+      "runtime": 245547
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "releaseBuildVerification": {
+    "issues": 0,
+    "nativeScriptsUnchanged": 898,
+    "cachedResourcesRetained": 1536,
+    "localLinks": 3625,
+    "compactAliasesVerified": 6945
+  }
+}

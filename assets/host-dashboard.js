@@ -224,6 +224,7 @@
     var firmwareButtons = doc.querySelector('#host-firmware-buttons'), firmwareStatus = doc.querySelector('#host-firmware-status');
     var catalogGrid = Boolean(catalog.catalogGrid && win.HostCatalogGrid), catalogUI = win.HostCatalogGrid;
     var catalogGame = gameScope==='gta5'||gameScope==='rdr2'?gameScope:'', catalogUpdate = '';
+    if(catalogGrid&&!gameScope){try{var requested=new URL(win.location.href).searchParams,requestedGame=requested.get('game'),requestedUpdate=requested.get('update');if(requestedGame&&catalogUI.gameGroups(actions).some(function(g){return g.key===requestedGame;})){catalogGame=requestedGame;var requestedActions=actions.filter(function(a){return catalogUI.gameKey(a.game)===catalogGame;});if(requestedUpdate&&catalogUI.updates(requestedActions).indexOf(requestedUpdate)!==-1)catalogUpdate=requestedUpdate;}}catch(_){}}
     var consoleBrowser=Boolean(detection.platform),pageSize=12,renderLimit=pageSize,renderKey='',moreButton=null,searchTimer=null,allGameGroups=null;
     var scopedCatalogue=scopeActions(actions,gameScope);
 
@@ -399,7 +400,7 @@
       var collections = [['gta5','GTA 5','/assets/images/gta52.png'],['rdr2','RDR2','/assets/images/rdr2.png'],['other-games','Other games','/assets/images/custom-mod-art/mods-ps4-ps5.jpg']];
       return collections.map(function (collection) {
         var items = scopeActions(actions,collection[0]), groups = groupActions(items);
-        return '<a class="host-action host-game-collection" href="/hosts/' + platform + '/' + collection[0] + '/" target="_blank" rel="noopener"><figure class="host-action-art"><img src="' + collection[2] + '" alt="' + escape(collection[1]) + '" loading="lazy"></figure><div class="host-action-content"><h3>' + escape(collection[1]) + '</h3><p>' + groups.length + ' menus · ' + items.length + ' variants</p><span>Open game page →</span></div></a>';
+        return '<a class="host-action host-game-collection" href="/hosts/' + platform + '/?view=mods'+(collection[0]==='other-games'?'':'&amp;game='+collection[0])+'#actions"><figure class="host-action-art"><img src="' + collection[2] + '" alt="' + escape(collection[1]) + '" loading="lazy"></figure><div class="host-action-content"><h3>' + escape(collection[1]) + '</h3><p>' + groups.length + ' menus · ' + items.length + ' variants</p><span>Browse mods →</span></div></a>';
       }).join('');
     }
     function catalogMarkup(visible) {
@@ -408,6 +409,7 @@
       var allGames=category==='mods'?(allGameGroups||(allGameGroups=catalogUI.gameGroups(scopedCatalogue.filter(function(a){return a.category==='mods';})))):[];
       if (!catalogGame && (gameScope==='gta5'||gameScope==='rdr2')) catalogGame=gameScope;
       var selected=allGames.filter(function(g){return g.key===catalogGame;})[0];
+      grid.setAttribute('data-catalog-level',category==='mods'?(selected?(catalogUpdate?'menus':'updates'):'games'):'');
       if (category!=='mods') {
         renderedGroups=groupActions(visible);
         writeCount(renderedGroups.length);
@@ -415,15 +417,15 @@
         var shown=windowed(renderedGroups);if(category==='loaders'){var primary=shown.filter(function(g){return !g.actions[0].secondaryHost;}),other=shown.filter(function(g){return g.actions[0].secondaryHost;});return primary.map(catalogRow).join('')+(other.length?'<details class="host-other-hosts"><summary>Other hosts</summary><div class="host-catalog-grid">'+other.map(catalogRow).join('')+'</div></details>':'');}
         return shown.map(catalogRow).join('');
       }
-      var groups=catalogUI.gameGroups(visible),path='<nav class="host-catalog-path" aria-label="Mods / Mod Menus">'+(gameScope?'<a href="/hosts/'+platform+'/?view=mods">Mods / Mod Menus</a>':'<button type="button" data-catalog-back="games">Mods / Mod Menus</button>')+(selected?'<span aria-hidden="true">/</span><button type="button" data-catalog-back="updates" translate="no">'+escape(selected.label)+'</button>':'')+(selected&&catalogUpdate?'<span aria-hidden="true">/</span><strong translate="no">'+escape(catalogUpdate==='unspecified'?'Not provided':catalogUpdate)+'</strong>':'')+'</nav>';
+      var groups=catalogUI.gameGroups(visible),path=selected?'<nav class="host-catalog-path" aria-label="Mods / Mod Menus">'+(gameScope?'<a href="/hosts/'+platform+'/?view=mods">Mods / Mod Menus</a>':'<button type="button" data-catalog-back="games">Mods / Mod Menus</button>')+'<span aria-hidden="true">/</span><button type="button" data-catalog-back="updates" translate="no">'+escape(selected.label)+'</button>'+(catalogUpdate?'<span aria-hidden="true">/</span><strong translate="no">'+escape(catalogUpdate==='unspecified'?'Not provided':catalogUpdate)+'</strong>':'')+'</nav>':'';
       if (!selected) {
         renderedGroups=[];writeCount(groups.length);
-        return path+windowed(groups).map(function(group){return catalogTile({id:group.key,label:group.label,image:group.image,detail:catalogUI.updates(group.actions).filter(function(v){return v!=='unspecified';}).join(' · '),attribute:'data-catalog-game'});}).join('');
+        return path+windowed(groups).map(function(group){var updates=catalogUI.updates(group.actions);return catalogTile({id:group.key,label:group.label,image:group.image,detail:updates.length+' update'+(updates.length===1?'':'s'),attribute:'data-catalog-game'});}).join('');
       }
       var gameActions=visible.filter(function(action){return catalogUI.gameKey(action.game)===selected.key;});
       if (!catalogUpdate) {
         var updates=catalogUI.updates(gameActions);renderedGroups=[];writeCount(updates.length);
-        return path+windowed(updates).map(function(update){return catalogTile({id:update,label:update==='unspecified'?'Not provided':update,image:selected.image,detail:selected.label,attribute:'data-catalog-update'});}).join('');
+        return path+windowed(updates).map(function(update){return catalogTile({id:update,label:update==='unspecified'?'Not provided':update,textOnly:true,attribute:'data-catalog-update'});}).join('');
       }
       var exact=catalogUI.filterByGameUpdate(gameActions,selected.key,catalogUpdate);
       renderedGroups=groupActions(exact);writeCount(renderedGroups.length);
@@ -580,6 +582,7 @@
           else if(tile.hasAttribute('data-catalog-update'))catalogUpdate=tile.getAttribute('data-catalog-update');
           else if(tile.getAttribute('data-catalog-back')==='games'){catalogGame='';catalogUpdate='';}
           else catalogUpdate='';
+          if(!gameScope&&win.history&&typeof win.history.replaceState==='function'){try{var catalogueURL=new URL(win.location.href);catalogueURL.searchParams.set('view','mods');if(catalogGame)catalogueURL.searchParams.set('game',catalogGame);else catalogueURL.searchParams.delete('game');if(catalogUpdate)catalogueURL.searchParams.set('update',catalogUpdate);else catalogueURL.searchParams.delete('update');win.history.replaceState(null,'',catalogueURL.pathname+catalogueURL.search+catalogueURL.hash);}catch(_){}}
           closeVersions();render();var first=grid.querySelector('button');if(first)first.focus();return;
         }
       }

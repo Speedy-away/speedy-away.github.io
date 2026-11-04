@@ -104,8 +104,8 @@ test('each catalogue popup uses its exact original Download or receiver ID and o
   const consolePage=fixture({actions,storage:settings(''),userAgent:'Mozilla/5.0 (PlayStation 4 6.72)'});consolePage.openMenu();consolePage.choose(a.id);assert.equal(consolePage.load().disabled,false);assert.equal(consolePage.opened.length,1);const launch=new URL(consolePage.opened[0].url,'https://whatwhatboy.com');assert.equal(launch.pathname,new URL(a.launchURL,'https://whatwhatboy.com').pathname);assert.equal(launch.searchParams.get('build'),a.gameVersion.replace('.',''));assert.equal(consolePage.sends.length,0);
  }
 });
-test('the generated GTA V page keeps one top navigation bar around its version popup',()=>{
- const html=fs.readFileSync(path.resolve(__dirname,'../../hosts/ps4/gta5/index.html'),'utf8');
+test('the shared PS4 mods catalogue keeps one top navigation bar around its version popup',()=>{
+ const html=fs.readFileSync(path.resolve(__dirname,'../../hosts/ps4/index.html'),'utf8');
  assert.equal((html.match(/<nav\b[^>]*class="[^"]*\bhost-taskbar\b/g)||[]).length,1);
  assert.equal((html.match(/id="host-version-overlay"/g)||[]).length,1);
 });

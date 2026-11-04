@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261104loadabove1';
+const ASSET_VERSION='20261104modscompact1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('.')?[]:e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 function cacheResources(root,names){const resources=new Set();for(const name of names.filter(p=>/^hosts\/runtime\/.+\.(?:manifest|appcache|cache)$/i.test(p))){if(!fs.existsSync(path.join(root,name)))continue;let section='CACHE';for(let line of fs.readFileSync(path.join(root,name),'utf8').split(/\r?\n/)){line=line.trim();if(!line||line.startsWith('#')||line==='CACHE MANIFEST')continue;if(/^[A-Z]+:$/.test(line)){section=line.slice(0,-1);continue;}if(section!=='CACHE')continue;try{const url=new URL(line,'https://host.invalid/'+name);if(url.origin==='https://host.invalid')resources.add(decodeURIComponent(url.pathname.slice(1)));}catch{}}}return resources;}
@@ -44,6 +44,7 @@ function build(output,revision='main',root=ROOT){
  const internalRoots=['hosts','assets','languages','downloads','console','docs'];
  function rewrite(text,name){
   if(name==='hosts/index.html')return require('./host-legacy-redirect.cjs').renderHomeRedirect(ORIGIN);
+  var oldMods=name.match(/^hosts\/(ps[45])\/(gta5|rdr2|other-games)\/index\.html$/);if(oldMods)return require('./host-mods-redirect.cjs').renderModRedirect(oldMods[1],oldMods[2]);
   text=text.replaceAll(ORIGIN+'/wwb-host/',ORIGIN+BASE+'/').replaceAll(ORIGIN+'/WWB-HOST/',ORIGIN+BASE+'/').replaceAll('\"/WWB-HOST/','\"'+BASE+'/').replaceAll("'/WWB-HOST/","'"+BASE+'/');
   // Repair migrated image origins and absent social preview images.
   if(name.endsWith('.html'))text=text.replace(/https:\/\/whatwhatboy\.com(\/assets\/images\/[^\s"'<>\\]*)/g,(_,p)=>{const local=p.split(/[?#]/)[0];const fallback='/assets/images/'+require('./style-host-pages.cjs').artwork(name)[0];return ORIGIN+BASE+(fs.existsSync(path.join(root,local))?p:fallback);});
