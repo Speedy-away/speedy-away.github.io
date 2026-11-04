@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T03:08:04.033Z",
+  "updatedAt": "2026-11-04T03:29:43.537Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -1312,6 +1312,21 @@
       "presentationHashes": 4,
       "patchFileHashes": 280,
       "senderAssetHTTP": 200
+    }
+  },
+  "hostOriginFix": {
+    "review": "docs/migration/host-origin-fix-review.json",
+    "status": "Checks passed; publication pending",
+    "canonicalHost": "https://speedy-away.github.io/",
+    "tests": {
+      "files": 73,
+      "tests": 510,
+      "pass": 510,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/host-origin-fix-tests.tap",
+      "mainSiteWorkflowTests": 11,
+      "mainSiteNavigationTests": 4
     }
   }
 }

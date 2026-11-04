@@ -1,0 +1,42 @@
+{
+  "updatedAt": "2026-11-04T03:29:43.537Z",
+  "status": "Checks passed; publication pending",
+  "canonicalHost": "https://speedy-away.github.io/",
+  "requestedURLs": [
+    "https://whatwhatboy.com/hosts/",
+    "https://speedy-away.github.io/WWB-HOST/hosts/"
+  ],
+  "changes": {
+    "mainSiteAuthoredPages": 514,
+    "mainSiteTemplates": 2,
+    "mainSiteRedirectLandings": 23,
+    "mainSiteOwnerInstructionsUpdated": true,
+    "publicHostsChooserRedirectsToRoot": true,
+    "explicitLegacyLandings": [
+      "/WWB-HOST/",
+      "/WWB-HOST/hosts/"
+    ],
+    "deepLegacyFallback": "Known same-origin aliases preserve console path, query and fragment; exact immutable download identities stay allowlisted.",
+    "loopbackHelperSourceUnchanged": true,
+    "oldLowercaseProjectSitePreserved": true,
+    "nativeAndDownloadBytesUnchanged": true
+  },
+  "tests": {
+    "files": 73,
+    "tests": 510,
+    "pass": 510,
+    "fail": 0,
+    "skipped": 0,
+    "evidence": "docs/qa/host-origin-fix-tests.tap",
+    "mainSiteWorkflowTests": 11,
+    "mainSiteNavigationTests": 4
+  },
+  "mainSiteBuild": {
+    "bytes": 943975694,
+    "pages": 559,
+    "localLinks": 52661,
+    "issues": 0
+  },
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false
+}
