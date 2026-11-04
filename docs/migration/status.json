@@ -12,11 +12,11 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T12:57:41.038Z",
+  "updatedAt": "2026-11-04T13:04:09.682Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Host metadata and social previews published and live verified",
+  "status": "PS4 and PS5 offline caching published and live verified",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -27,24 +27,42 @@
     "hardwareVerified": false
   },
   "pages": {
-    "revision": "778bc3d19ada80efd75aa5e866b5c7a8b93fbe46",
+    "revision": "4a4fa397f3eb9e89a27d2551dec30b10fbc19c2d",
     "base": "",
     "origin": "https://speedy-away.github.io",
-    "bytes": 865787478,
+    "bytes": 865258242,
     "budget": 922746880,
-    "files": 6204,
-    "offloadedFiles": 294,
-    "nativeScriptsUnchanged": 898,
+    "files": 6307,
+    "offloadedFiles": 299,
+    "nativeScriptsUnchanged": 959,
     "cacheManifestAliases": 7,
     "historicalLandings": 804,
     "legacyHomePages": 2,
     "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
     "routingBytes": {
-      "full": 1040399,
-      "runtime": 255366
+      "full": 1058088,
+      "runtime": 259233
     },
-    "activeRuntimeFiles": 319,
-    "sharedCatalogueFiles": 4
+    "activeRuntimeFiles": 409,
+    "sharedCatalogueFiles": 4,
+    "offlinePacks": [
+      {
+        "platform": "ps4",
+        "version": "11e7cf3428026bd8222a019c",
+        "files": 1870,
+        "bytes": 41107542,
+        "patchXMLs": 271,
+        "trainerDefinitions": 1181
+      },
+      {
+        "platform": "ps5",
+        "version": "3e509ddf0c2dd88921879f14",
+        "files": 626,
+        "bytes": 14433729,
+        "patchXMLs": 280,
+        "trainerDefinitions": 0
+      }
+    ]
   },
   "publication": {
     "pagesEnabled": true,
@@ -1202,14 +1220,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41829187380,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41829187380",
-    "commit": "778bc3d19ada80efd75aa5e866b5c7a8b93fbe46",
+    "id": 41833968033,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41833968033",
+    "commit": "4a4fa397f3eb9e89a27d2551dec30b10fbc19c2d",
     "conclusion": "success",
-    "verifiedAt": "2026-11-04T12:27:52.747Z",
-    "revision": "778bc3d19ada80efd75aa5e866b5c7a8b93fbe46",
-    "run": 41829187380,
-    "status": "completed"
+    "verifiedAt": "2026-11-04T13:03:04.743Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1495,28 +1510,30 @@
     "mainSiteDeployment": "https://github.com/Speedy-away/whatsite/actions/runs/41829615213"
   },
   "offlineCache20261104": {
-    "status": "Verified locally; publishing",
+    "status": "Published and live verified",
     "report": "docs/migration/offline-cache-review.json",
     "gamerHackCommit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
     "packs": [
       {
         "platform": "ps4",
-        "version": "6b20f4d2f269e06fd07131f1",
+        "version": "11e7cf3428026bd8222a019c",
         "files": 1870,
-        "bytes": 41086590,
-        "patchXMLs": 271,
-        "trainerDefinitions": 1181
+        "bytes": 41107542,
+        "manifestMIME": "text/cache-manifest"
       },
       {
         "platform": "ps5",
-        "version": "0724e534bc4be5a42f01539a",
+        "version": "3e509ddf0c2dd88921879f14",
         "files": 626,
-        "bytes": 14413173,
-        "patchXMLs": 280,
-        "trainerDefinitions": 0
+        "bytes": 14433729,
+        "manifestMIME": "text/cache-manifest"
       }
     ],
     "senderVersion": "2.1.0+5d74a8e3ebeb",
-    "hardwareExecutionVerified": false
+    "hardwareExecutionVerified": false,
+    "commit": "4a4fa397f3eb9e89a27d2551dec30b10fbc19c2d",
+    "deployment": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41833968033",
+    "liveReport": "docs/qa/offline-cache-live.json",
+    "liveCacheURLsVerified": 2083
   }
 }

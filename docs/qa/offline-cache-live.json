@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-04T13:03:04.743Z",
+  "revision": "4a4fa397f3eb9e89a27d2551dec30b10fbc19c2d",
+  "status": "passed",
+  "packs": [
+    {
+      "platform": "ps4",
+      "version": "11e7cf3428026bd8222a019c",
+      "files": 1870,
+      "bytes": 41107542,
+      "manifestMIME": "text/cache-manifest"
+    },
+    {
+      "platform": "ps5",
+      "version": "3e509ddf0c2dd88921879f14",
+      "files": 626,
+      "bytes": 14433729,
+      "manifestMIME": "text/cache-manifest"
+    }
+  ],
+  "uniqueResourcesVerified": 2083,
+  "resourceChecks": "HTTP200, exact decoded bytes andSHA256 for every listed URL",
+  "workerExact": true,
+  "ps5AdapterPresent": true,
+  "issues": 0,
+  "pagesBuild": {
+    "revision": "4a4fa397f3eb9e89a27d2551dec30b10fbc19c2d",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 865258242,
+    "budget": 922746880,
+    "files": 6307,
+    "offloadedFiles": 299,
+    "nativeScriptsUnchanged": 959,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1058088,
+      "runtime": 259233
+    },
+    "activeRuntimeFiles": 409,
+    "sharedCatalogueFiles": 4,
+    "offlinePacks": [
+      {
+        "platform": "ps4",
+        "version": "11e7cf3428026bd8222a019c",
+        "files": 1870,
+        "bytes": 41107542,
+        "patchXMLs": 271,
+        "trainerDefinitions": 1181
+      },
+      {
+        "platform": "ps5",
+        "version": "3e509ddf0c2dd88921879f14",
+        "files": 626,
+        "bytes": 14433729,
+        "patchXMLs": 280,
+        "trainerDefinitions": 0
+      }
+    ]
+  }
+}
