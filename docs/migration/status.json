@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T03:40:40.128Z",
+  "updatedAt": "2026-11-04T03:46:19.405Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -1348,5 +1348,11 @@
     },
     "liveReport": "docs/qa/host-origin-live-verification.json",
     "browserCases": 5
+  },
+  "loadAboveFirmware": {
+    "status": "Preview verified; publication pending",
+    "review": "docs/migration/load-above-firmware-review.json",
+    "testsPassed": 29,
+    "publicationPending": true
   }
 }

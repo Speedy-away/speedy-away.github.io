@@ -12,6 +12,9 @@
  var fileToolbar=document.getElementById('host-file-firmware');
  ['#host-game-filter'].forEach(function(selector){var item=document.querySelector(selector);if(item)fileToolbar.appendChild(item);});
  var options=document.querySelector('.host-options'),setup=document.querySelector('.host-connection-details');if(options&&setup)setup.appendChild(options);
+ // Keep Load before the firmware choices in reading and tab order.
+ var actionGrid=document.getElementById('host-action-grid');
+ if(selected==='loaders'&&actionGrid&&actionGrid.parentNode)actionGrid.parentNode.insertBefore(fileToolbar,actionGrid.nextSibling);
  var warning=document.querySelector('#host-transfer-warning');if(warning)fileToolbar.parentNode.insertBefore(warning,fileToolbar.nextSibling);
  var status=document.querySelector('#host-status'),initialStatus=status.textContent;status.hidden=status.getAttribute('data-host-catalog-error')!=='true';
  new MutationObserver(function(){status.hidden=status.textContent===initialStatus&&status.getAttribute('data-host-catalog-error')!=='true';}).observe(status,{childList:true,characterData:true,subtree:true});

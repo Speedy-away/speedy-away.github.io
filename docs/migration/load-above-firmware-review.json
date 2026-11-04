@@ -1,0 +1,64 @@
+{
+  "updatedAt": "2026-11-04T03:46:19.405Z",
+  "status": "Preview verified; publication pending",
+  "request": "Move the large Load button above the firmware grid on PS4 and PS5.",
+  "changes": [
+    "Move the existing firmware toolbar after the action grid only in Choose firmware.",
+    "Keep actual reading and keyboard order aligned with the visible order.",
+    "Retain the centered Load size, firmware selection and original gated Load handlers.",
+    "Refresh published presentation assets with version 20261104loadabove1."
+  ],
+  "platforms": [
+    "ps4",
+    "ps5"
+  ],
+  "preview": {
+    "browser": "Supported in-app browser",
+    "PS4Firmware": "14.00",
+    "PS5Firmware": "7.01",
+    "loadAboveFirmware": true,
+    "DOMOrderVerified": true,
+    "firmwareSelectionStillUpdatesLoad": true
+  },
+  "tests": {
+    "files": [
+      "site-hosted-loads.test.cjs",
+      "host-firmware-buttons.test.cjs",
+      "host-root-redesign.test.cjs",
+      "host-load-audit.test.cjs"
+    ],
+    "passed": 29,
+    "failed": 0
+  },
+  "build": {
+    "revision": "main",
+    "base": "",
+    "origin": "https://speedy-away.github.io",
+    "bytes": 864198120,
+    "budget": 922746880,
+    "files": 6201,
+    "offloadedFiles": 292,
+    "nativeScriptsUnchanged": 898,
+    "cacheManifestAliases": 7,
+    "historicalLandings": 804,
+    "legacyHomePages": 2,
+    "activeKaro": "hosts/runtime/karo-743646c9df9a-e3c0caf3db54/",
+    "routingBytes": {
+      "full": 1030384,
+      "runtime": 245508
+    },
+    "activeRuntimeFiles": 319,
+    "sharedCatalogueFiles": 4
+  },
+  "buildVerification": {
+    "issues": 0,
+    "nativeScriptsUnchanged": 898,
+    "cachedResourcesRetained": 1536,
+    "localLinks": 3973,
+    "compactAliasesVerified": 6944
+  },
+  "nativeAndDownloadFilesChanged": 0,
+  "existingHelperSnapshotsPreserved": true,
+  "physicalConsoleContact": false,
+  "nativeCodeExecuted": false
+}

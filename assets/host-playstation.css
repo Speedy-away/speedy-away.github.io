@@ -74,6 +74,7 @@ html.host-console-browser body.wwb-host-page [data-wwb-console-banner]::before{b
 html.host-console-browser body.wwb-host-page [data-wwb-console-banner]::after{background-image:linear-gradient(90deg,#0b1728,rgba(11,23,40,.8) 52%,rgba(11,23,40,.12))!important}
 
 /* Firmware Load is the primary action, centered across the whole library. */
+body.wwb-host-page .host-catalog-grid--loaders+#host-file-firmware{margin-top:24px}
 body.wwb-host-page .host-catalog-grid--loaders>.host-catalog-tile[data-launch]{grid-column:1/-1;justify-self:center;width:100%;max-width:760px;min-height:180px;display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:30px 24px!important;text-align:center!important;background:#173455!important;border:1px solid #86b9ff!important;border-radius:12px!important}
 body.wwb-host-page .host-catalog-grid--loaders>.host-catalog-tile[data-launch] .host-catalog-tile__label{font-size:clamp(2.2rem,5vw,3.4rem)!important;font-weight:600!important;line-height:1.1;color:#f1f7ff!important}
 body.wwb-host-page .host-catalog-grid--loaders>.host-catalog-tile[data-launch] .host-catalog-tile__detail{font-size:1rem!important;line-height:1.6;color:#c6daf5!important;max-width:580px}
