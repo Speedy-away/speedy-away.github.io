@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-04T01:53:13.980Z",
+  "updatedAt": "2026-11-04T02:10:00.060Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
-  "status": "Published and live verified at the root domain",
+  "status": "All local and download delivery checks passed; ready for main publication",
   "sourceSnapshot": "docs/migration/source-preservation.json",
   "rootHome": "index.html",
   "karo": {
@@ -87,17 +87,17 @@
     "hardwareExecutionVerified": false
   },
   "senderReleaseDelivery": {
-    "verifiedAt": "2026-11-04T01:42:20.227Z",
-    "version": "2.1.0+25d5c9f0d403",
-    "name": "console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "bytes": 107657508,
-    "sha256": "3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
-    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+25d5c9f0d403\\console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-25d5c9f0d403",
-    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-25d5c9f0d403/console-payload-sender-2.1.0-25d5c9f0d403.zip",
-    "assetId": 707815088,
-    "serverDigest": "sha256:3782faa61e2c85bf7706e730d86f481c1356fb2c9cc717b1a5f1c428b14cd110",
+    "verifiedAt": "2026-11-04T02:09:39.488Z",
+    "version": "2.1.0+a9ba4920dc2b",
+    "name": "console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+    "bytes": 107657801,
+    "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+    "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+    "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+a9ba4920dc2b\\console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-a9ba4920dc2b",
+    "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-a9ba4920dc2b/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+    "assetId": 707887304,
+    "serverDigest": "sha256:84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
     "zipUnchanged": true,
     "archiveVerified": true,
     "downloadedCodeExecuted": false
@@ -1194,5 +1194,35 @@
     "commit": "6f5b64fa942bb547a2c8b40d381b3e478454f236",
     "verifiedAt": "2026-11-04T01:48:04.230Z",
     "physicalConsoleVerified": false
+  },
+  "localOldRepoRemoval": {
+    "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+    "safeToRemove": true,
+    "removedByAgent": false,
+    "privateSnapshot": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST",
+    "filesSHA256Verified": 211089,
+    "bytesSHA256Verified": 55838474903,
+    "privateFilesRestoredAtActivePaths": 13,
+    "oldRemoteRepositoryStillRequired": true
+  },
+  "loadMotionUpdate": {
+    "status": "All local and download delivery checks passed; ready for main publication",
+    "review": "docs/migration/load-motion-review.json",
+    "regression": {
+      "files": 71,
+      "tests": 492,
+      "pass": 492,
+      "fail": 0,
+      "skipped": 0,
+      "evidence": "docs/qa/load-motion-tests.tap"
+    },
+    "preservation": "docs/migration/old-local-preservation.json",
+    "archive": {
+      "items": 5009,
+      "fileRecords": 8628,
+      "presentFileRecords": 8628,
+      "missingFileRecords": 0
+    },
+    "senderVersion": "2.1.0+a9ba4920dc2b"
   }
 }

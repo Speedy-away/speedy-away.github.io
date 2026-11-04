@@ -1,0 +1,101 @@
+{
+  "updatedAt": "2026-11-04T02:10:00.060Z",
+  "status": "All local and download delivery checks passed; ready for main publication",
+  "requests": [
+    "Enlarge and center the firmware Load control",
+    "Remove the Search this console bar",
+    "Create an original animated background",
+    "Preserve every old local repository byte inside the new checkout before local removal",
+    "Push the new repository"
+  ],
+  "ui": {
+    "load": {
+      "desktopWidth": 760,
+      "desktopHeight": 187.46875,
+      "mobileWidth": 343,
+      "mobileHeight": 164,
+      "centerDifference": 0,
+      "blankMediaRemoved": true,
+      "desktopDisabledGatePreserved": true,
+      "firmwareAndTrustedGestureGatesPreserved": true
+    },
+    "consoleSearch": {
+      "removed": true,
+      "authoredPages": 9,
+      "generatorUpdated": true,
+      "optionalSearchControllerVerified": true
+    },
+    "animation": {
+      "name": "Blue Current",
+      "description": "Three drifting blue orbital currents and four floating geometric symbols, drawn with CSS.",
+      "decorativeElements": 7,
+      "motion": "CSS transform and opacity only",
+      "consoleAndReducedMotionSuppressed": true,
+      "nativeExecutionDocumentsUntouched": true,
+      "canvas": false,
+      "video": false,
+      "requests": false,
+      "recurringJavaScript": false
+    }
+  },
+  "visual": {
+    "browser": "Supported ChatGPT in-app browser",
+    "desktopAnd390MobileReviewed": true,
+    "ps4AndPS5FirmwareSelectionReviewed": true,
+    "screenshots": [
+      "docs/screenshots/load-motion-20261104/desktop-load.jpg",
+      "docs/screenshots/load-motion-20261104/mobile-load.jpg"
+    ],
+    "sevenCSSAnimationsRunningVerified": true
+  },
+  "regression": {
+    "files": 71,
+    "tests": 492,
+    "pass": 492,
+    "fail": 0,
+    "skipped": 0,
+    "evidence": "docs/qa/load-motion-tests.tap"
+  },
+  "preservation": "docs/migration/old-local-preservation.json",
+  "sender": {
+    "latest": "2.1.0+a9ba4920dc2b",
+    "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+    "bytes": 107657801,
+    "versions": 41,
+    "allPriorVersionsRetained": true,
+    "delivery": {
+      "verifiedAt": "2026-11-04T02:09:39.488Z",
+      "version": "2.1.0+a9ba4920dc2b",
+      "name": "console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "bytes": 107657801,
+      "sha256": "84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+      "local": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "archivePath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+a9ba4920dc2b\\console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-a9ba4920dc2b",
+      "downloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-a9ba4920dc2b/console-payload-sender-2.1.0-a9ba4920dc2b.zip",
+      "assetId": 707887304,
+      "serverDigest": "sha256:84fbb0d94f854434e236ab134f70cd0a41f8ecec00b7d0e179cec1c49371d562",
+      "zipUnchanged": true,
+      "archiveVerified": true,
+      "downloadedCodeExecuted": false
+    },
+    "publicDownloadVerified": true
+  },
+  "hardwareExecutionVerified": false,
+  "archive": {
+    "items": 5009,
+    "fileRecords": 8628,
+    "presentFileRecords": 8628,
+    "missingFileRecords": 0
+  },
+  "localRemoval": {
+    "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+    "safeToRemove": true,
+    "removedByAgent": false,
+    "privateSnapshot": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST",
+    "filesSHA256Verified": 211089,
+    "bytesSHA256Verified": 55838474903,
+    "privateFilesRestoredAtActivePaths": 13,
+    "oldRemoteRepositoryStillRequired": true
+  }
+}

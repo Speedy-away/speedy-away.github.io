@@ -117,7 +117,10 @@
     "missingSamePathBytes": 40968688573,
     "missingOutsideTmp": 13,
     "missingOutsideTmpBytes": 1194941,
-    "allIncludedInIndependentSnapshot": true
+    "allIncludedInIndependentSnapshot": true,
+    "restoredOutsideTmpFiles": 13,
+    "restoredOutsideTmpBytes": 1194941,
+    "remainingMissingOutsideTmp": 0
   },
   "linkedWorktrees": {
     "passed": true,
@@ -169,5 +172,135 @@
     "separateHistoricalTestSource": "Some tests use WHATSITE_PROVENANCE_ROOT or sibling whatsite for historical evidence; that separate repository was not deleted.",
     "oldRemoteRepositoryMustRemain": true,
     "oldRemoteReason": "Pinned historical raw.githubusercontent.com and GitHub release URLs still use Speedy-away/WWB-HOST. Removing only the old local folder is supported."
+  },
+  "localMaintenanceRestoration": {
+    "completedAt": "2026-11-04T02:08:16.874Z",
+    "files": 13,
+    "bytes": 1194941,
+    "passed": true,
+    "allHashesMatchVerifiedSnapshot": true,
+    "allPathsIgnoredBeforeAndAfter": true,
+    "sourceModified": false,
+    "snapshotModified": false,
+    "activeScriptNeed": "console-expansion-archive.cjs discovers materialized scoped inventories and immutable event JSON during future archive-intake merges. Other restored files retain prior maintenance evidence and generated reports at their original local paths.",
+    "rows": [
+      {
+        "path": "docs/.console-expansion-private-inventory/goldhen-catalog-integration/catalog-before-e6a6a89e4bc7a8f2c12ffa5fbf2ffe079e46629efddcc85deee5176653724f6a.json.snapshot.txt",
+        "bytes": 830251,
+        "sha256": "e6a6a89e4bc7a8f2c12ffa5fbf2ffe079e46629efddcc85deee5176653724f6a",
+        "category": "immutable GoldHEN integration evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/goldhen-catalog-integration/prepare-companions-5e6489230b9abc5de5d957e4938df7ca17661ca30c13e8a72bf73e234f555369.txt",
+        "bytes": 5866,
+        "sha256": "5e6489230b9abc5de5d957e4938df7ca17661ca30c13e8a72bf73e234f555369",
+        "category": "immutable GoldHEN integration evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/goldhen-catalog-integration/retained-before-647db186a6f9b0f6deea5592a6c5c7bb09e843a04bdca3b804f85e2a009ff237.json.snapshot.txt",
+        "bytes": 73879,
+        "sha256": "647db186a6f9b0f6deea5592a6c5c7bb09e843a04bdca3b804f85e2a009ff237",
+        "category": "immutable GoldHEN integration evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/goldhen-catalog-integration/source-scripts_console-download-catalog.cjs-b3d295793b6759760017345129f17136561622e1bacadb2470ca25e07cb6c221.txt",
+        "bytes": 26517,
+        "sha256": "b3d295793b6759760017345129f17136561622e1bacadb2470ca25e07cb6c221",
+        "category": "immutable GoldHEN integration evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/goldhen-catalog-integration/source-scripts_prepare-host-goldhen-versions.cjs-46cde2e0c8f2712b2b8dd3708d995b761ea2d4ebf83c4d5dabc19f408b360b5c.txt",
+        "bytes": 3665,
+        "sha256": "46cde2e0c8f2712b2b8dd3708d995b761ea2d4ebf83c4d5dabc19f408b360b5c",
+        "category": "immutable GoldHEN integration evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/goldhen-catalog-integration/source-scripts_tests_console-download-center.test.cjs-51211f30e2aad5a6e4477e2a0f3ae98943d0a613d151288bb1e34c0be9770e62.txt",
+        "bytes": 24107,
+        "sha256": "51211f30e2aad5a6e4477e2a0f3ae98943d0a613d151288bb1e34c0be9770e62",
+        "category": "immutable GoldHEN integration evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/goldhen-catalog-integration/source-scripts_tests_host-menu-actions.test.cjs-d5b999df4367af1c6e40b05d8fc10854de636873827d76248fc219f9372fc147.txt",
+        "bytes": 5075,
+        "sha256": "d5b999df4367af1c6e40b05d8fc10854de636873827d76248fc219f9372fc147",
+        "category": "immutable GoldHEN integration evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/host-goldhen-current/1793737805908-bf53b9350779539ef3d8e6e6-e9c31a0f9aa202c1c23d555dd2b0e5f4c8e7ee42b5b14425ac4c74d49f6127a2.json",
+        "bytes": 2111,
+        "sha256": "e9c31a0f9aa202c1c23d555dd2b0e5f4c8e7ee42b5b14425ac4c74d49f6127a2",
+        "category": "GoldHEN immutable intake event",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/receiver-7f0cdc740d23-private-inventory.json",
+        "bytes": 2819,
+        "sha256": "7f0cdc740d233899b1222e844d30ba1e0ad04c6838d97cc2925a36a6df41663c",
+        "category": "historical receiver intake evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/.console-expansion-private-inventory/receiver20-2a5fd0a7ce53-private-inventory.json",
+        "bytes": 2842,
+        "sha256": "2a5fd0a7ce5360634f464066eee7a45ab6b07e82c08c9c90c600942173d0c482",
+        "category": "historical receiver intake evidence",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/host-compact-download-inventory.json",
+        "bytes": 52061,
+        "sha256": "c60c81e2eb81648a86f9ecba02168d0e651e6e43fa0cf0a907ca4ab58fd9ca19",
+        "category": "generated local import/inventory report",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/host-game-patch-file-import.json",
+        "bytes": 163637,
+        "sha256": "ada9bb17fcd15c43f546799bf72d13e068e0b9e70b9b072740b11516ff5ff6d5",
+        "category": "generated local import/inventory report",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      },
+      {
+        "path": "docs/host-goldhen-current-private-inventory.json",
+        "bytes": 2111,
+        "sha256": "1b2b053f649193506eebfaf88788e285ff773e14952a491229337ad447a4e4d8",
+        "category": "GoldHEN scoped materialized inventory",
+        "ignoredBeforeWrite": true,
+        "source": "verified independent private snapshot",
+        "overwritten": false
+      }
+    ]
   }
 }

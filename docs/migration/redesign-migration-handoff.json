@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T01:53:13.980Z",
+  "updatedAt": "2026-11-04T02:10:00.060Z",
   "status": "Completed: root-domain redesign, preserved history, verified source expansion, helper releases, deployment and live checks.",
   "source": "C:\\Users\\whatw\\Documents\\GitHub\\WWB-HOST",
   "destination": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
@@ -200,5 +200,28 @@
     "temporaryWriteWorkflowInstalled": false,
     "temporaryWriteWorkflowDeclined": true,
     "physicalConsoleTested": false
+  },
+  "latestFollowup": {
+    "review": "docs/migration/load-motion-review.json",
+    "request": [
+      "Enlarge and center the firmware Load control",
+      "Remove the Search this console bar",
+      "Create an original animated background",
+      "Preserve every old local repository byte inside the new checkout before local removal",
+      "Push the new repository"
+    ],
+    "localOldRepoRemoval": {
+      "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
+      "safeToRemove": true,
+      "removedByAgent": false,
+      "privateSnapshot": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io/.preserved-local/WWB-HOST",
+      "filesSHA256Verified": 211089,
+      "bytesSHA256Verified": 55838474903,
+      "privateFilesRestoredAtActivePaths": 13,
+      "oldRemoteRepositoryStillRequired": true
+    },
+    "publicationPending": true,
+    "senderVersion": "2.1.0+a9ba4920dc2b",
+    "localChecksPassed": true
   }
 }
