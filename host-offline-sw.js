@@ -20,7 +20,7 @@ function validate(data,platform){
  return {platform,version:data.version,files,bytes};
 }
 const cacheName=pack=>PREFIX+pack.platform+'-'+pack.version;
-function send(source,type,fields){if(source&&typeof source.postMessage==='function')source.postMessage(Object.assign({type},fields));}
+function send(source,type,fields){if(source&&typeof source.postMessage==='function')source.postMessage(Object.assign({type,protocol:2},fields));}
 async function bodyBytes(response,limit,expected){
  if(!response||response.status!==200||response.redirected||response.type==='opaque')throw Error('An offline file was unavailable');
  const encoding=response.headers&&response.headers.get('Content-Encoding'),length=response.headers&&response.headers.get('Content-Length');
@@ -52,7 +52,7 @@ async function loadPacks(){
 }
 async function status(platform,source){
  try{const ready=(await loadPacks()).find(item=>item.pack.platform===platform);
- if(ready)send(source,'CACHED',{platform,version:ready.pack.version,files:ready.pack.files.length,bytes:ready.pack.bytes,statusOnly:true});else send(source,'STATUS',{platform,cached:false});}
+ if(ready)send(source,'CACHED',{platform,version:ready.pack.version,files:ready.pack.files.length,bytes:ready.pack.bytes,savedAt:ready.savedAt,statusOnly:true});else send(source,'STATUS',{platform,cached:false});}
  catch(_){packList=null;send(source,'ERROR',{platform,statusOnly:true,message:'Offline storage could not be checked.'});}
 }
 async function install(platform,source){
@@ -65,6 +65,9 @@ async function install(platform,source){
   await cache.put(PLAN,new Response(JSON.stringify(pack),{headers:{'Content-Type':'application/json'}}));
   let completed=0,savedBytes=0;send(source,'PROGRESS',{platform,version:pack.version,completed,total:pack.files.length,bytes:savedBytes,totalBytes:pack.bytes});
   for(const file of pack.files){
+   let cached=await cache.match(ORIGIN+file.url),reusable=false;
+   if(cached)try{const saved=await bodyBytes(cached,file.bytes,file.bytes);reusable=await digest(saved)===file.sha256;}catch(_){/* Retry only the missing or damaged file. */}
+   if(reusable){completed++;savedBytes+=file.bytes;send(source,'PROGRESS',{platform,version:pack.version,completed,total:pack.files.length,bytes:savedBytes,totalBytes:pack.bytes});continue;}
    const result=await fetch(file.url,{cache:'no-store',credentials:'same-origin',redirect:'error'}),data=await bodyBytes(result,file.bytes,file.bytes);
    if(await digest(data)!==file.sha256)throw Error('Offline file checksum mismatch: '+file.url);
    const headers=new Headers(result.headers);headers.delete('Content-Encoding');headers.delete('Transfer-Encoding');headers.set('Content-Length',String(data.byteLength));
@@ -77,6 +80,13 @@ async function install(platform,source){
  finally{installing.delete(platform);}
 }
 function queryMayMatch(url){return /\/$|\.html?$/i.test(url.pathname)||Array.from(url.searchParams.keys()).every(key=>key==='v');}
+async function verify(platform,source){
+ if(installing.has(platform)){send(source,'ERROR',{platform,message:'Wait for the current save to finish.'});return;}
+ try{packList=null;const item=(await loadPacks()).find(p=>p.pack.platform===platform);if(!item)throw Error('No complete saved copy was found. Save an offline copy first.');let completed=0;
+  for(const file of item.pack.files){const response=await item.cache.match(ORIGIN+file.url),bytes=await bodyBytes(response,file.bytes,file.bytes);if(await digest(bytes)!==file.sha256)throw Error('A saved file is damaged. Save again to repair this copy.');completed++;if(completed%20===0||completed===item.pack.files.length)send(source,'VERIFY_PROGRESS',{platform,completed,total:item.pack.files.length});}
+  send(source,'VERIFIED',{platform,version:item.pack.version,files:completed,bytes:item.pack.bytes,savedAt:item.savedAt});
+ }catch(error){send(source,'ERROR',{platform,operation:'verify',message:error.message||'Saved copy could not be verified.'});}
+}
 async function cachedResponse(event,url){
  const packs=await loadPacks(),pinned=clientPacks.get(event.clientId),platform=url.pathname.match(/^\/hosts\/(ps[45])\//)?.[1]||url.pathname.match(/^\/offline\/(ps[45])\//)?.[1];
  const candidates=pinned?packs.filter(pack=>pack.name===pinned):platform?packs.filter(pack=>pack.pack.platform===platform):packs;
@@ -85,7 +95,7 @@ async function cachedResponse(event,url){
 }
 self.addEventListener('message',event=>{
  const data=event.data,source=event.source;if(!data||!platformOK(data.platform)||event.origin&&event.origin!==ORIGIN||!source||typeof source.postMessage!=='function')return;
- if(data.type==='INSTALL')event.waitUntil(install(data.platform,source));else if(data.type==='STATUS')event.waitUntil(status(data.platform,source));
+ if(data.type==='INSTALL')event.waitUntil(install(data.platform,source));else if(data.type==='STATUS')event.waitUntil(status(data.platform,source));else if(data.type==='VERIFY')event.waitUntil(verify(data.platform,source));
 });
 self.addEventListener('fetch',event=>{
  if(event.request.method!=='GET')return;const url=new URL(event.request.url);if(url.origin!==ORIGIN||!safePath(url.pathname))return;

@@ -3,8 +3,9 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const source=fs.readFileSync(path.resolve(__dirname,'../../assets/host-offline.js'),'utf8');
 function node(){return {textContent:'Save for offline',hidden:false,disabled:false,handlers:{},addEventListener(name,fn){this.handlers[name]=fn;},removeAttribute(name){delete this[name];}};}
-function fixture({appCache=null,worker=false,button=true,pathname='/offline/ps4/',manifest=true,secure=true,registerThrow=false}={}){
+function fixture({appCache=null,worker=false,button=true,pathname='/offline/ps4/',manifest=true,secure=true,registerThrow=false,enhanced=false}={}){
  const nodes={'host-offline-status':node(),'host-offline-progress':node(),'host-offline-save':button?node():null},events={},registers=[],posts=[],cacheEvents={};let updates=0;
+ if(enhanced){nodes['host-offline-verify']=node();nodes['host-offline-summary']=node();}
  if(appCache){appCache.addEventListener=(name,fn)=>cacheEvents[name]=fn;appCache.update=()=>{updates++;};appCache.swapCache=()=>{throw Error('Cache switching is forbidden');};}
  const active={scriptURL:'https://speedy-away.github.io/host-offline-sw.js',state:'activated',postMessage:data=>posts.push(data)};
  const service=worker?{addEventListener:(name,fn)=>events[name]=fn,getRegistration:async()=>undefined,register:(url,options)=>{if(registerThrow)throw Error('Browser policy refused registration');registers.push({url,options});return Promise.resolve({active});}}:undefined;
@@ -33,4 +34,11 @@ test('unsupported browsers get an explicit message and native runtime pages rema
 });
 test('synchronous browser registration refusal restores the controls with an explicit status',async()=>{
  const f=fixture({worker:true,manifest:false,registerThrow:true});await f.flush();f.click();await f.flush();assert.match(f.nodes['host-offline-status'].textContent,/could not start.*policy refused/);assert.equal(f.nodes['host-offline-save'].disabled,false);assert.deepEqual(f.posts,[]);
+});
+
+test('enhanced setup shows saved identity and checks files only after an explicit click',async()=>{
+ const f=fixture({worker:true,manifest:false,enhanced:true});f.click();await f.flush();f.events.message({source:f.active,data:{type:'CACHED',platform:'ps4',protocol:2,version:'verified-version',files:22,bytes:2097152}});assert.match(f.nodes['host-offline-summary'].textContent,/22 verified files.*2.0 MiB.*verified-ver/);assert.equal(f.nodes['host-offline-verify'].disabled,false);f.nodes['host-offline-verify'].handlers.click();assert.equal(f.posts.at(-1).type,'VERIFY');assert.equal(f.nodes['host-offline-save'].disabled,true);f.events.message({source:f.active,data:{type:'VERIFIED',platform:'ps4',protocol:2,version:'verified-version',files:22,bytes:2097152}});assert.match(f.nodes['host-offline-status'].textContent,/All files match their checksums/);assert.equal(f.nodes['host-offline-save'].disabled,false);
+});
+test('an older active worker cannot enable an unsupported file check',async()=>{
+ const f=fixture({worker:true,manifest:false,enhanced:true});f.click();await f.flush();f.events.message({source:f.active,data:{type:'CACHED',platform:'ps4',version:'old'}});assert.equal(f.nodes['host-offline-verify'].disabled,true);const n=f.posts.length;f.nodes['host-offline-verify'].handlers.click();assert.equal(f.posts.length,n);
 });

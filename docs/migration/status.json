@@ -1634,5 +1634,29 @@
     "deployment": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41844635377",
     "screenshots": "docs/screenshots/xmb-theme-20261104",
     "buildVerifiersPassed": 4
+  },
+  "offlineSetupImprovements": {
+    "status": "Local checks and browser save/reopen/verify passed; publication pending",
+    "features": [
+      "Resume interrupted saves by reusing checksum-verified files",
+      "Repair missing or corrupt files on retry",
+      "Explicit no-network checksum verification of saved copies",
+      "Saved version, file count, size and date",
+      "Byte/file progress, network state, direct host link and clearer guidance"
+    ],
+    "legacy": "Native AppCache flow preserved; extra verification available on protocol-2 service workers only",
+    "testsPassed": 21,
+    "buildVerifiersPassed": 4,
+    "nativeConsoleCodeExecuted": false,
+    "browserQA": {
+      "platform": "ps5",
+      "files": 739,
+      "bytes": 16311640,
+      "fullPackSaved": true,
+      "checksumsVerified": true,
+      "reopenedWithPreviewServerStopped": true,
+      "physicalConsoleTested": false
+    },
+    "previewServerFix": "Serve original extensionless LICENSE/COPYING files as inert text so the complete pack can be tested"
   }
 }

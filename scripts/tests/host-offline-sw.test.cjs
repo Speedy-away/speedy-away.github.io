@@ -54,3 +54,10 @@ test('unknown HTML aliases and non-version asset queries use the network and nev
  await assert.rejects(f.request('/assets/exact.js?build=unlisted',{clientId:'unknown-query'}),/Network unavailable/);
  assert.equal(await (await f.request('/hosts/ps4/index.html?view=payloads',{clientId:'listed-index'})).text(),'exact index');
 });
+
+test('saved copy verification checks cached checksums without making network requests',async()=>{
+ const f=fixture(),files={'/hosts/ps4/':'inert shell','/assets/safe.js':'inert data'};f.setPack(pack(files),files);await f.message('INSTALL');const calls=f.calls.length;f.routes.clear();const events=await f.message('VERIFY');assert.equal(events.at(-1).type,'VERIFIED');assert.equal(events.at(-1).files,2);assert.equal(f.calls.length,calls);const cache=[...f.stores.values()][0];cache.set(origin+'/assets/safe.js',new Response('damaged'));const bad=await f.message('VERIFY');assert.equal(bad.at(-1).type,'ERROR');assert.equal(bad.at(-1).operation,'verify');assert.match(bad.at(-1).message,/damaged|size mismatch/);assert.equal(f.calls.length,calls);
+});
+test('retry reuses only checksum-verified cached files and repairs corrupt files',async()=>{
+ const f=fixture(),files={'/hosts/ps4/':'inert shell','/assets/first.js':'first inert bytes','/assets/last.js':'last inert bytes'},manifest=pack(files);f.setPack(manifest,files);f.routes.delete(origin+'/assets/last.js');assert.equal((await f.message('INSTALL')).at(-1).type,'ERROR');const cache=[...f.stores.values()][0];cache.set(origin+'/assets/first.js',new Response('broken'));f.setPack(manifest,files);const start=f.calls.length;assert.equal((await f.message('INSTALL')).at(-1).type,'CACHED');const retry=f.calls.slice(start);assert.equal(retry.includes(origin+'/hosts/ps4/'),false);assert.ok(retry.includes(origin+'/assets/first.js'));assert.ok(retry.includes(origin+'/assets/last.js'));assert.equal((await f.message('VERIFY')).at(-1).type,'VERIFIED');assert.equal(f.deletes.length,0);
+});
