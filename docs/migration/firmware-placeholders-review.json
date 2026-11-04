@@ -1,0 +1,117 @@
+{
+  "task": "Add empty PS4 and PS5 firmware choices and accurate search metadata",
+  "versions": {
+    "ps4": [
+      "14.02"
+    ],
+    "ps5": [
+      "14.00",
+      "14.10",
+      "14.20"
+    ]
+  },
+  "ps5DisplayAlias": {
+    "14.0": "14.00"
+  },
+  "status": "Local verification passed; publication pending",
+  "source": {
+    "nativeFilesChanged": 0,
+    "actionCataloguesUnchanged": [
+      {
+        "file": "hosts/ps4/cheats/index.html",
+        "actions": 110,
+        "actionSHA256": "b1dcbaf9a37cae0691182e9454908802a6c23518ae0c7c0a457faada2d1bcd94",
+        "unchanged": true
+      },
+      {
+        "file": "hosts/ps4/files/index.html",
+        "actions": 156,
+        "actionSHA256": "af5aa0e848cec5004df7d4266d229af43537973a7d80a5b6c8a1b118e961a0b6",
+        "unchanged": true
+      },
+      {
+        "file": "hosts/ps4/index.html",
+        "actions": 156,
+        "actionSHA256": "af5aa0e848cec5004df7d4266d229af43537973a7d80a5b6c8a1b118e961a0b6",
+        "unchanged": true
+      },
+      {
+        "file": "hosts/ps4/payload-manager/index.html",
+        "actions": 156,
+        "actionSHA256": "af5aa0e848cec5004df7d4266d229af43537973a7d80a5b6c8a1b118e961a0b6",
+        "unchanged": true
+      },
+      {
+        "file": "hosts/ps5/files/index.html",
+        "actions": 36,
+        "actionSHA256": "bd72ed27ce17c958b48b970eafb8e28b5cf8fb5e844e1fb3bf5d1228e0a03320",
+        "unchanged": true
+      },
+      {
+        "file": "hosts/ps5/index.html",
+        "actions": 42,
+        "actionSHA256": "58342104413867bf49e0def11787c88db8cfc6ddc1d33c87bb62ae1e2c24b4a3",
+        "unchanged": true
+      },
+      {
+        "file": "hosts/ps5/payload-manager/index.html",
+        "actions": 36,
+        "actionSHA256": "bd72ed27ce17c958b48b970eafb8e28b5cf8fb5e844e1fb3bf5d1228e0a03320",
+        "unchanged": true
+      }
+    ],
+    "loadersAdded": 0,
+    "payloadsAdded": 0
+  },
+  "selection": "Manual, saved and matching browser detection retain the requested empty choices. Loader grid is empty and native handoff guards reject these firmware versions.",
+  "metadata": "Keywords include the requested firmware jailbreak and WebKit terms; descriptions, Open Graph, Twitter and JSON-LD explicitly describe empty choices without an exploit or payload.",
+  "tests": {
+    "passed": 60,
+    "failed": 0
+  },
+  "build": {
+    "directory": "tmp/firmware-placeholder-release-20261104",
+    "verifiers": [
+      "verify-host-project-pages",
+      "verify-host-metadata",
+      "verify-host-offline",
+      "verify-all-game-patches"
+    ],
+    "issues": 0,
+    "nativeScriptsUnchanged": 959,
+    "offlinePacks": [
+      {
+        "platform": "ps4",
+        "version": "128767a96359cb77f0b8872e",
+        "files": 1981,
+        "bytes": 42933566,
+        "patchXMLs": 382,
+        "trainerDefinitions": 1181
+      },
+      {
+        "platform": "ps5",
+        "version": "875f15cdca9cf750a19a09a9",
+        "files": 738,
+        "bytes": 16287326,
+        "patchXMLs": 392,
+        "trainerDefinitions": 0
+      }
+    ]
+  },
+  "hardwareExecutionVerified": false,
+  "sender": {
+    "version": "2.1.0+e12a6440d216",
+    "sha256": "717564728932a87721f17795e93151dac7ac2f1c26aef9a542fc87bfc1f80b22",
+    "release": "https://github.com/Speedy-away/speedy-away.github.io/releases/tag/sender-2.1.0-e12a6440d216",
+    "assetId": 709668645,
+    "serverDigest": "sha256:717564728932a87721f17795e93151dac7ac2f1c26aef9a542fc87bfc1f80b22",
+    "olderVersionsPreserved": 47,
+    "archive": {
+      "items": 5695,
+      "files": 9312,
+      "missing": 0
+    },
+    "preservationReport": "docs/qa/firmware-placeholder-preservation.json"
+  },
+  "independentReview": "Passed: exact four placeholders, no native/action compatibility extension, valid metadata and shared catalogues."
+}

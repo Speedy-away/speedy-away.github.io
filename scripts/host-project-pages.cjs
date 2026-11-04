@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261104allpatches1';
+const ASSET_VERSION='20261104firmware1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('.')?[]:e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 function cacheResources(root,names){const resources=new Set();for(const name of names.filter(p=>/^hosts\/runtime\/.+\.(?:manifest|appcache|cache)$/i.test(p))){if(!fs.existsSync(path.join(root,name)))continue;let section='CACHE';for(let line of fs.readFileSync(path.join(root,name),'utf8').split(/\r?\n/)){line=line.trim();if(!line||line.startsWith('#')||line==='CACHE MANIFEST')continue;if(/^[A-Z]+:$/.test(line)){section=line.slice(0,-1);continue;}if(section!=='CACHE')continue;try{const url=new URL(line,'https://host.invalid/'+name);if(url.origin==='https://host.invalid')resources.add(decodeURIComponent(url.pathname.slice(1)));}catch{}}}return resources;}
@@ -63,6 +63,7 @@ function build(output,revision='main',root=ROOT){
    text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-performance.css?v=4"></head>');
   }
   if(name.endsWith('.html'))text=require('./host-compact-pages.cjs').apply(text,name,{root});
+  if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
   // The new exact GamerHack CSS table adds 10.50 to the public PS4 chooser.
   if(/^hosts\/ps4\//.test(name)&&fs.existsSync(path.join(root,'docs/host-gamerhack-g2all-build.json'))&&!text.includes('data-host-firmware="10.50"'))text=text.replace(/(<button\b[^>]*data-host-firmware="10\.00"[^>]*>[\s\S]*?<\/button>)/,'$1<button type="button" data-host-firmware="10.50" aria-pressed="false" translate="no">10.50</button>');
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name))text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-compact.css?v=1"><link rel="stylesheet" href="/assets/host-blue-theme.css?v=1"></head>');

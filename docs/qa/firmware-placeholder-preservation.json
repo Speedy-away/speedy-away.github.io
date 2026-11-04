@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-11-04T13:45:55.682Z",
+  "status": "passed",
+  "package": {
+    "id": "console-payload-sender-e12a6440d216",
+    "name": "console-payload-sender-2.1.0-e12a6440d216.zip",
+    "version": "2.1.0+e12a6440d216",
+    "url": "/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-e12a6440d216.zip",
+    "source": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-e12a6440d216/console-payload-sender-2.1.0-e12a6440d216.zip",
+    "bytes": 107464878,
+    "sha256": "717564728932a87721f17795e93151dac7ac2f1c26aef9a542fc87bfc1f80b22",
+    "snapshot": "e12a6440d21633515f30de6b80fc3c4b98137ac89aa2226a9dfd65cc7cdf0623",
+    "files": 1591,
+    "payloads": 131,
+    "actions": 191,
+    "releaseTag": "sender-2.1.0-e12a6440d216",
+    "publicDownloadURL": "https://github.com/Speedy-away/speedy-away.github.io/releases/download/sender-2.1.0-e12a6440d216/console-payload-sender-2.1.0-e12a6440d216.zip",
+    "originalSource": "https://speedy-away.github.io/downloads/helpers/console-payload-sender/console-payload-sender-2.1.0-e12a6440d216.zip",
+    "localPath": "C:\\Users\\whatw\\Documents\\GitHub\\speedy-away.github.io\\downloads\\helpers\\console-payload-sender\\console-payload-sender-2.1.0-e12a6440d216.zip",
+    "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PC\\Tools\\speedy away.github.io\\Helpers\\2.1.0+e12a6440d216\\console-payload-sender-2.1.0-e12a6440d216.zip",
+    "localAndArchiveBytesSHA256Verified": true,
+    "ignoredFromGit": true
+  },
+  "baseline": {
+    "workspace": {
+      "items": 5694,
+      "files": 9311
+    },
+    "backup": {
+      "items": 5694,
+      "files": 9311
+    },
+    "senderVersions": 47,
+    "localZIPs": 47
+  },
+  "retention": {
+    "everyPriorItemAndFullFileIdentityRetained": true,
+    "everyOldSenderManifestRecordUnchanged": true,
+    "allOlderLocalZIPNamesRetained": true,
+    "workspaceAndBackupInventoryBytesIdentical": true
+  },
+  "final": {
+    "items": 5695,
+    "files": 9312,
+    "senderVersions": 48,
+    "localZIPs": 48,
+    "index": {
+      "updated": "2026-11-04T13:44:44.329Z",
+      "mode": "metadata-only",
+      "history": "F:\\whatsite-backup-downloads-etc\\archive-history\\index-refresh-2026-11-04T13-44-44-329Z-GUyXER",
+      "items": 5695,
+      "fileRecords": 9312,
+      "presentFileRecords": 9312,
+      "missingFileRecords": 0,
+      "missingPaths": 0,
+      "otherUnavailableRecords": 0,
+      "availability": {
+        "present": 9312
+      }
+    }
+  },
+  "runtimeUnchanged": true,
+  "downloadedCodeExecuted": false,
+  "consoleContact": false,
+  "oldRepositoryAccessed": false,
+  "releaseUploaded": false,
+  "freshness": {
+    "status": "passed",
+    "command": "node --test --test-name-pattern='all old sender ZIPs and the current sender' scripts/tests/host-next-batch.test.cjs",
+    "tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "durationMS": 139522.187,
+    "senderZIPsVerified": 48,
+    "checks": [
+      "SHA-256",
+      "CRC32",
+      "bundle manifests",
+      "current authored source freshness",
+      "174 original action pins",
+      "five original-only binaries excluded"
+    ],
+    "evidence": "tmp/sender-package-empty-firmware-20261104/sender-freshness.tap",
+    "downloadedCodeExecuted": false
+  },
+  "releaseUploadOwnedByParent": true
+}
