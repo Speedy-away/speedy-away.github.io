@@ -9,7 +9,7 @@ function apply(file,html,options={}){
  if(!eligible(file,html))return html;
  html=strip(html);
  const head='<script data-cfasync="false" src="'+HEAD+'"></script>';
- const banner='<!-- BEGIN WWB HOST AD --><aside class="wwb-host-ad" aria-label="Advertisement"><span>Advertisement</span><script async="async" data-cfasync="false" src="'+NATIVE+'"></script><div id="'+CONTAINER+'"></div></aside><!-- END WWB HOST AD -->';
+ const banner='<!-- BEGIN WWB HOST AD --><aside class="wwb-host-ad" aria-label="Advertisement"><span>Advertisement</span><div id="'+CONTAINER+'"></div><script async="async" data-cfasync="false" src="'+NATIVE+'"></script></aside><!-- END WWB HOST AD -->';
  const base=String(options.base||'').replace(/\/$/,'');if(base&&!/^\/[A-Za-z0-9_-]+$/.test(base))throw Error('Invalid host project base');
  if(!html.includes('host-ads.css'))html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="'+base+'/assets/host-ads.css?v=1"></head>');
  html=html.replace(/<\/head>/i,head+'</head>');
