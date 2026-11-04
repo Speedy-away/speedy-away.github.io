@@ -1,0 +1,47 @@
+{
+  "verifiedAt": "2026-11-04T13:55:00.313Z",
+  "commit": "aa584e5f8e76f10cf0ac8f9869e7930eae113718",
+  "status": "passed",
+  "pages": [
+    {
+      "platform": "ps4",
+      "url": "https://speedy-away.github.io/hosts/ps4/",
+      "placeholderFirmwares": [
+        "14.02"
+      ],
+      "metadataVerified": true,
+      "catalogue": "assets/host-catalogues/e51776c117c359fe429c6abef478bd851bc50fb2ffb1c5ce69d7218e7e424cb5.js"
+    },
+    {
+      "platform": "ps5",
+      "url": "https://speedy-away.github.io/hosts/ps5/",
+      "placeholderFirmwares": [
+        "14.00",
+        "14.10",
+        "14.20"
+      ],
+      "metadataVerified": true,
+      "catalogue": "assets/host-catalogues/79b220efc9a01000e4ade06b403f280f01d7edb9ed888d5e9485f8c7cd875e02.js"
+    }
+  ],
+  "metadataPages": 5,
+  "authoredAssetsByteVerified": 3,
+  "offlinePacks": [
+    {
+      "platform": "ps4",
+      "version": "ff13eb0a35caf0474bcda325",
+      "descriptorSHA256": "61a0c8823a4cff51f6d95530f169e0ab3a78050fc776f35900f25a30380a259c",
+      "resourceIdentitiesVerified": 1981,
+      "routingOrderingOnly": true
+    },
+    {
+      "platform": "ps5",
+      "version": "8626dec8ae329bca606d2bb7",
+      "descriptorSHA256": "40b544b7ebcab8fb0071aa574e43565fba5a7e82fd4fc575f562fe71e0ed6413",
+      "resourceIdentitiesVerified": 738,
+      "routingOrderingOnly": true
+    }
+  ],
+  "issues": 0,
+  "nativeConsoleCodeExecuted": false
+}

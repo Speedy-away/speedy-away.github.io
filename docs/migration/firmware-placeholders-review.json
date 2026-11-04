@@ -13,7 +13,7 @@
   "ps5DisplayAlias": {
     "14.0": "14.00"
   },
-  "status": "Local verification passed; publication pending",
+  "status": "Published and live verified",
   "source": {
     "nativeFilesChanged": 0,
     "actionCataloguesUnchanged": [
@@ -70,7 +70,7 @@
     "failed": 0
   },
   "build": {
-    "directory": "tmp/firmware-placeholder-release-20261104",
+    "directory": "tmp/firmware-placeholder-production-aa584e5",
     "verifiers": [
       "verify-host-project-pages",
       "verify-host-metadata",
@@ -82,17 +82,17 @@
     "offlinePacks": [
       {
         "platform": "ps4",
-        "version": "128767a96359cb77f0b8872e",
+        "version": "91fd97cfddc5d0ac980ee1e0",
         "files": 1981,
-        "bytes": 42933566,
+        "bytes": 42954590,
         "patchXMLs": 382,
         "trainerDefinitions": 1181
       },
       {
         "platform": "ps5",
-        "version": "875f15cdca9cf750a19a09a9",
+        "version": "6fcf0fdf7c8fbd41ba393f5c",
         "files": 738,
-        "bytes": 16287326,
+        "bytes": 16307954,
         "patchXMLs": 392,
         "trainerDefinitions": 0
       }
@@ -113,5 +113,22 @@
     },
     "preservationReport": "docs/qa/firmware-placeholder-preservation.json"
   },
-  "independentReview": "Passed: exact four placeholders, no native/action compatibility extension, valid metadata and shared catalogues."
+  "independentReview": "Passed: exact four placeholders, no native/action compatibility extension, valid metadata and shared catalogues.",
+  "publication": {
+    "id": 41841624416,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41841624416",
+    "commit": "aa584e5f8e76f10cf0ac8f9869e7930eae113718",
+    "conclusion": "success",
+    "verifiedAt": "2026-11-04T13:55:00.313Z"
+  },
+  "liveReport": "docs/qa/firmware-placeholders-live.json",
+  "liveBrowser": {
+    "ps4": "14.02 selected with no loader",
+    "ps5": "14.20 selected with no loader; all three 14.x choices visible",
+    "screenshots": [
+      "docs/screenshots/firmware-placeholders-20261104/ps4-live.jpg",
+      "docs/screenshots/firmware-placeholders-20261104/ps5-live.jpg"
+    ]
+  },
+  "liveOfflineRoutingVariance": "Windows and Linux routing JSON key order differs; routing semantics match exactly, all other cache resource records match and actual published routing bytes match the published descriptor hashes."
 }

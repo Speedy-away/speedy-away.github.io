@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T13:48:46.575Z",
+  "updatedAt": "2026-11-04T13:55:00.313Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -65,16 +65,11 @@
     ]
   },
   "publication": {
-    "pagesEnabled": true,
-    "archiveUploadPending": false,
-    "homepageCommitPending": false,
-    "homeDeployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41705919245",
-    "cacheFix": "Keep every existing CACHE resource on the Pages origin; offload only files that original caches do not require.",
-    "cacheMimeAliasPending": false,
-    "productionCommit": "2b2cbb563491698019f1a487d3eb2a62499d8e5f",
-    "productionDeployment": "https://github.com/Speedy-away/WWB-HOST/actions/runs/41721967832",
-    "mainCommit": "fe5386a1738bc9d3d40a9c77c81313fb2d9a4d11",
-    "mainLinkVerified": true
+    "id": 41841624416,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41841624416",
+    "commit": "aa584e5f8e76f10cf0ac8f9869e7930eae113718",
+    "conclusion": "success",
+    "verifiedAt": "2026-11-04T13:55:00.313Z"
   },
   "constraints": [
     "Preserve every older version.",
@@ -1220,11 +1215,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41839091282,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41839091282",
-    "commit": "9cf2ab8418eb68c461b7373ca26919574360e05e",
+    "id": 41841624416,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41841624416",
+    "commit": "aa584e5f8e76f10cf0ac8f9869e7930eae113718",
     "conclusion": "success",
-    "verifiedAt": "2026-11-04T13:36:08.490Z"
+    "verifiedAt": "2026-11-04T13:55:00.313Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1516,17 +1511,17 @@
     "packs": [
       {
         "platform": "ps4",
-        "version": "ad74f851eb8b5779b36609ff",
+        "version": "ff13eb0a35caf0474bcda325",
         "files": 1981,
-        "bytes": 42948756,
+        "bytes": 42954590,
         "patchXMLs": 382,
         "trainerDefinitions": 1181
       },
       {
         "platform": "ps5",
-        "version": "ac36499bfffcdbce0791d7df",
+        "version": "8626dec8ae329bca606d2bb7",
         "files": 738,
-        "bytes": 16297276,
+        "bytes": 16307954,
         "patchXMLs": 392,
         "trainerDefinitions": 0
       }
@@ -1565,7 +1560,7 @@
     "liveXMLURLsVerified": 561
   },
   "firmwarePlaceholders20261104": {
-    "status": "Local verification passed; publication pending",
+    "status": "Published and live verified",
     "report": "docs/migration/firmware-placeholders-review.json",
     "versions": {
       "ps4": [
@@ -1589,6 +1584,26 @@
       "files": 9312,
       "missing": 0
     },
-    "hardwareExecutionVerified": false
+    "hardwareExecutionVerified": false,
+    "commit": "aa584e5f8e76f10cf0ac8f9869e7930eae113718",
+    "deployment": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41841624416",
+    "liveReport": "docs/qa/firmware-placeholders-live.json",
+    "liveMetadataPages": 5,
+    "liveOfflinePacks": [
+      {
+        "platform": "ps4",
+        "version": "ff13eb0a35caf0474bcda325",
+        "descriptorSHA256": "61a0c8823a4cff51f6d95530f169e0ab3a78050fc776f35900f25a30380a259c",
+        "resourceIdentitiesVerified": 1981,
+        "routingOrderingOnly": true
+      },
+      {
+        "platform": "ps5",
+        "version": "8626dec8ae329bca606d2bb7",
+        "descriptorSHA256": "40b544b7ebcab8fb0071aa574e43565fba5a7e82fd4fc575f562fe71e0ed6413",
+        "resourceIdentitiesVerified": 738,
+        "routingOrderingOnly": true
+      }
+    ]
   }
 }
