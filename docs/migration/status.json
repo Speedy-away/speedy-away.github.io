@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T13:55:00.313Z",
+  "updatedAt": "2026-11-04T14:06:43.033Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -65,11 +65,11 @@
     ]
   },
   "publication": {
-    "id": 41841624416,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41841624416",
-    "commit": "aa584e5f8e76f10cf0ac8f9869e7930eae113718",
+    "id": 41843607823,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41843607823",
+    "commit": "fcd01678ae751328738ff1121d680968e63dacc1",
     "conclusion": "success",
-    "verifiedAt": "2026-11-04T13:55:00.313Z"
+    "verifiedAt": "2026-11-04T14:06:43.033Z"
   },
   "constraints": [
     "Preserve every older version.",
@@ -1215,11 +1215,11 @@
     "allOlderZIPsAndReleasesPreserved": true
   },
   "currentPublication": {
-    "id": 41841624416,
-    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41841624416",
-    "commit": "aa584e5f8e76f10cf0ac8f9869e7930eae113718",
+    "id": 41843607823,
+    "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41843607823",
+    "commit": "fcd01678ae751328738ff1121d680968e63dacc1",
     "conclusion": "success",
-    "verifiedAt": "2026-11-04T13:55:00.313Z"
+    "verifiedAt": "2026-11-04T14:06:43.033Z"
   },
   "localOldRepoRemoval": {
     "oldFolder": "C:/Users/whatw/Documents/GitHub/WWB-HOST",
@@ -1607,11 +1607,20 @@
     ]
   },
   "firmwareControlOrder": {
-    "status": "Reviewed locally; publication pending",
+    "status": "Published and live verified",
     "heading": "Installed firmware, Detect console and selection status above Load",
     "choices": "Below Load",
     "alternatives": "Below choices, labelled Other",
     "testsPassed": 22,
-    "downloadsChanged": false
+    "downloadsChanged": false,
+    "commit": "fcd01678ae751328738ff1121d680968e63dacc1",
+    "deployment": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/41843607823",
+    "livePages": [
+      "https://speedy-away.github.io/hosts/ps4/",
+      "https://speedy-away.github.io/hosts/ps5/"
+    ],
+    "screenshots": "docs/screenshots/firmware-order-20261104",
+    "cacheRefresh": "Folder controller now uses the publication asset version",
+    "nativeFilesChanged": 0
   }
 }
