@@ -1764,5 +1764,25 @@
     "tests": 6,
     "nativeExecutionVerified": false,
     "deployment": "Previous deploy step cancelled after exactly 10 minutes. Increase documented deployment timeout to 30 minutes; preserve in-progress deploys on subsequent pushes."
+  },
+  "shortHostRoutes20261107": {
+    "updatedAt": "2026-11-07T00:00:00.000Z",
+    "status": "Implemented locally; short WWB loading routes and console download fallback added.",
+    "routes": [
+      "/ps4/14.00/",
+      "/ps4/afterglow/",
+      "/ps4/gamer/",
+      "/ps5/7.61/",
+      "/ps5/relapse/"
+    ],
+    "changes": [
+      "Cache-required GamerHack routes now refuse Load until AppCache is ready",
+      "Saved native-attempt locks now expose an explicit restart-and-clear control",
+      "Console downloads use the downloader queue only when a verified consoleFileId exists; other curated files retain direct download URLs",
+      "Short routes show a WWB loading screen before opening the pinned host route"
+    ],
+    "nativeFilesChanged": 0,
+    "downloadFilesChanged": 0,
+    "physicalConsoleTested": false
   }
 }

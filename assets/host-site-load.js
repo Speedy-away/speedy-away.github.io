@@ -12,6 +12,7 @@
   if(route.kind==='karo'){
    var runtime=local(win,route.runtime),entry=route.entry,guard=win.WhatsiteKaro;
    if(!/^\/(?:(?:WWB-HOST|wwb-host)\/)?hosts\/runtime\/(?:karo|gamerhack|gamerhack-g2all)-[a-f0-9]{12}-[a-f0-9]{12}\/web\/$/.test(runtime.pathname)||!entry||!/^[a-z0-9_-]+(?:\/[a-z0-9_-]+)*\/index\.html$/i.test(entry.path)||entry.scope!==entry.path.slice(0,-10)||!guard||typeof guard.authorize!=='function')throw Error('The local loader entry is unavailable.');
+   if(entry.cacheRequired===true){var cache=win.applicationCache,status=cache&&Number(cache.status);if(status!==1&&status!==4)throw Error('Cache ready required. Open the loader once, wait for the cache to finish, then press Load again.');}
    var selected={platform:action.platform,path:entry.path,scope:entry.scope,firmwares:action.firmwares.slice(),ranges:[],blockedReason:entry.blockedReason,cacheRequired:entry.cacheRequired===true};
    var target=guard.authorize(win,selected,runtime.pathname,true,true);
    if(route.autorun==='umtx2'){win.sessionStorage.setItem('on_load_autorun','kernel');if(win.sessionStorage.getItem('on_load_autorun')!=='kernel')throw Error('Browser session storage is unavailable. Nothing was started.');}

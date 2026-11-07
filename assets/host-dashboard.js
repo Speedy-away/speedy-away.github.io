@@ -161,9 +161,8 @@
   function downloadPlan(action, platform, address, detected, normalize) {
     if (!action.downloadURL) throw Error('This entry does not provide a downloadable file.');
     if(action.downloadOnDevice)return {destination:'device',address:'',url:action.downloadURL};
-    if (String(address || '').trim() || detected.platform === platform) {
+    if ((String(address || '').trim() || detected.platform === platform) && action.consoleFileId) {
       var target = targetAddress(address || '127.0.0.1',platform,detected,normalize);
-      if (!action.consoleFileId) throw Error('Update the console downloader catalogue before saving this file to the console.');
       return {destination:'console',address:target,url:consoleDownloadURL(platform,target,action.consoleFileId,normalize)};
     }
     return {destination:'device',address:'',url:action.downloadURL};
@@ -234,6 +233,17 @@
     function windowed(rows){if(moreButton){moreButton.hidden=rows.length<=renderLimit;moreButton.textContent='Show more ('+Math.min(rows.length,renderLimit)+' of '+rows.length+')';}return consoleBrowser?rows.slice(0,renderLimit):rows;}
     function catalogTile(options){if(consoleBrowser||category==='payloads')options.textOnly=true;return catalogUI.tileMarkup(options);}
     var address = doc.querySelector('#host-console-address'), status = doc.querySelector('#host-status');
+    // A failed native handoff must leave a visible, explicit recovery control.
+    // It never clears the lock automatically; the user must confirm a restart.
+    var nativeRecovery = doc.querySelector('#host-native-recovery');
+    if (!nativeRecovery && status && doc.createElement) {
+      nativeRecovery = doc.createElement('aside'); nativeRecovery.id='host-native-recovery'; nativeRecovery.hidden=true; nativeRecovery.className='host-transfer-warning';
+      nativeRecovery.innerHTML='<strong>Previous native attempt saved</strong><p>Restart the console before clearing this saved attempt.</p><label><input type="checkbox" id="host-native-restarted"> I checked and restarted the console.</label> <button type="button" id="host-native-clear">Clear saved attempt</button>';
+      if(status.parentNode&&typeof status.parentNode.insertBefore==='function') status.parentNode.insertBefore(nativeRecovery,status.nextSibling);
+    }
+    function updateNativeRecovery(){if(!nativeRecovery)return;var locked=false;try{locked=Boolean(win.WhatsiteKaro&&win.WhatsiteKaro.LOCK&&win.localStorage.getItem(win.WhatsiteKaro.LOCK));}catch(_){locked=false;}nativeRecovery.hidden=!locked;var clearButton=doc.querySelector('#host-native-clear');if(clearButton)clearButton.disabled=!locked||!doc.querySelector('#host-native-restarted')||!doc.querySelector('#host-native-restarted').checked;}
+    if(nativeRecovery){var restartBox=doc.querySelector('#host-native-restarted'),clearNative=doc.querySelector('#host-native-clear');if(restartBox)restartBox.addEventListener('change',updateNativeRecovery);if(clearNative)clearNative.addEventListener('click',function(){try{if(!restartBox||!restartBox.checked)throw Error('Check that you restarted the console before clearing the saved attempt.');if(!win.WhatsiteKaro||typeof win.WhatsiteKaro.clear!=='function')throw Error('The native attempt guard is unavailable. Reload this page.');win.WhatsiteKaro.clear(win,true);if(status)status.textContent='Saved attempt cleared. Choose Load again when the console is ready.';updateNativeRecovery();render();}catch(error){if(status)status.textContent=error.message;}});updateNativeRecovery();}
+
     var grid = doc.querySelector('#host-action-grid'), count = doc.querySelector('#host-action-count');
     var lastGridMarkup=null,lastGridKey='',lastCountText=null,gridChanged=false,countChanged=false,catalogueStamp=null,lastChoiceStructure=null;
     function writeGrid(markup){
@@ -759,7 +769,8 @@
       win.open(parsed.href, '_blank', 'noopener');
     });
     try { var saved = JSON.parse(win.localStorage.getItem(storageKey) || '{}'); address.value = saved.address || ''; firmware.value = saved.firmware || ''; if (client) connection.restore(saved.uncertainTransfers,client.normalizeAddress); } catch (_) {}
-    firmwareSource.textContent = firmware.value ? 'Firmware selection: saved choice' : 'Firmware selection: not selected';
+    try { var requestedFirmware = new URL(win.location.href).searchParams.get('firmware') || new URL(win.location.href).searchParams.get('fw'); if (/^\d{1,2}\.\d{2}$/.test(requestedFirmware)) { firmware.value = requestedFirmware; firmwareSource.textContent = 'Firmware selection: short WWB URL'; } } catch (_) {}
+    firmwareSource.textContent = firmware.value ? (firmwareSource.textContent || 'Firmware selection: saved choice') : 'Firmware selection: not selected';
     if (doc.querySelector('meta[name="whatwhatboy-local-sender"]')) bridgeURL.value = win.location.origin;
     detectConsole(false);
   }

@@ -1,0 +1,6 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'../..'),routes=[['ps4/14.00','/hosts/ps4/exploit/gamerhack-g2all/'],['ps4/afterglow','/hosts/ps4/afterglow/'],['ps4/gamer','/hosts/ps4/exploit/gamerhack-g2all/'],['ps5/7.61','/hosts/ps5/?view=loaders&firmware=7.61'],['ps5/relapse','/hosts/ps5/?view=loaders']];
+test('short WWB host routes are loading pages with pinned same-site targets',()=>{for(const pair of routes){const html=fs.readFileSync(path.join(root,pair[0],'index.html'),'utf8');assert.match(html,/wwb-short-loader/);assert.ok(html.includes('data-target="'+pair[1]+'"'));assert.match(html,/host-short-loader\.css/);}});
+test('short loader script validates same-site route targets',()=>{const js=fs.readFileSync(path.join(root,'assets/host-short-loader.js'),'utf8');assert.match(js,/hosts\|ps\[45\]/);});
+test('curated downloads without a console queue id remain downloadable on the device',()=>{const dash=require('../../assets/host-dashboard.js');const action={platform:'ps4',downloadURL:'/downloads/test/menu.bin'};assert.deepEqual(dash.downloadPlan(action,'ps4','',{platform:'ps4',firmware:'14.00'},x=>x),{destination:'device',address:'',url:action.downloadURL});});
