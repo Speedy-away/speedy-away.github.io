@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
-const {getCatalog, MAX_PLATFORM_ITEMS, assertCatalogueBounds} = require('../console-download-catalog.cjs');
+const {getCatalog, nativeFeeds, MAX_PLATFORM_ITEMS, assertCatalogueBounds} = require('../console-download-catalog.cjs');
 const {buildReceiverURL, buildPreparationURL, buildEzRemoteClientURL, matchesFilter, matchesFormat, normalizeConsoleHost} = require('../../assets/console-downloads.js');
 
 test('ezRemote setup opens the native client separately from the installed companion', () => {
@@ -15,7 +15,7 @@ test('ezRemote setup opens the native client separately from the installed compa
 });
 
 const root = path.resolve(__dirname, '../..');
-const readJson = file => { let target=path.join(root,file); if(!fs.existsSync(target)&&['console/ps4/homebrew.json','console/ps5/payloads.json'].includes(file)){ const retained=path.resolve(root,'../whatsite',file); if(fs.existsSync(retained))target=retained; } return JSON.parse(fs.readFileSync(target,'utf8')); };
+const readJson = file => JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
 const catalogue = readJson('docs/console-download-catalog.json').items;
 
 test('console catalogues contain only reviewed PS4/PS5 builds and keep platform scopes separate', () => {
@@ -86,13 +86,18 @@ test('expanded catalogue retains bounded capacity and refuses missing platforms 
 });
 
 test('native feeds exclude archives, cheat JSON, plugins and unsupported platform builds', () => {
-  const ps4 = readJson('console/ps4/homebrew.json');
-  const ps5 = readJson('console/ps5/payloads.json');
+  const origin = 'https://speedy-away.github.io';
+  const {ps4Feed: ps4, ps5Feed: ps5} = nativeFeeds(catalogue, {origin});
   assert.ok(Object.keys(ps4.DATA).length > 0);
   for (const url of Object.keys(ps4.DATA)) {
-    const item = catalogue.find(item => new URL(item.url, 'https://whatwhatboy.com').href === url);
+    const item = catalogue.find(item => new URL(item.url, origin).href === url);
     assert.ok(item && item.platforms.includes('ps4') && item.category === 'apps' && /\.pkg$/i.test(item.filename), url);
   }
+  const apollo = catalogue.find(item => item.name === 'Apollo Save Tool · PS4');
+  const apolloURL = new URL(apollo.url, origin).href;
+  assert.equal(ps4.DATA[apolloURL].size, apollo.bytes);
+  assert.equal(ps4.DATA[apolloURL].version, apollo.version);
+  assert.match(apolloURL, /\/downloads\/archive\/[^/]+\/[^/]+\.pkg$/);
   assert.ok(ps5.payloads.length > 0);
   for (const entry of ps5.payloads) {
     const item = catalogue.find(item => item.id === entry.id);

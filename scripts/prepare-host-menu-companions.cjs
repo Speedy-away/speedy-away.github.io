@@ -6,6 +6,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const root = path.resolve(__dirname,'..');
 const {renderCompanion} = require('./console-download-companion.cjs');
+const {receiverCatalogue} = require('./host-project-pages.cjs');
 const read = name => JSON.parse(fs.readFileSync(path.join(root,name),'utf8'));
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const reportPath = 'docs/host-menu-companion-build.json';
@@ -39,7 +40,7 @@ function prepare() {
     const saved=audit.flatMap(item=>item.files||[]).find(f=>f.sha256===oldHash&&f.backupPath&&fs.existsSync(f.backupPath)&&sha(fs.readFileSync(f.backupPath))===oldHash);
     if(!saved)throw Error('The previous '+platform+' companion must have a matching archived copy.');
     const oldItems=JSON.parse(old.toString().match(/<script id="receiver-catalog" type="application\/json">([\s\S]*?)<\/script>/)[1]).items;
-    const items=catalogue.filter(item=>item.platforms.includes(platform)).map(item=>item.pages?.[platform]?{...item,page:item.pages[platform]}:item);
+    const items=receiverCatalogue(catalogue.filter(item=>item.platforms.includes(platform)).map(item=>item.pages?.[platform]?{...item,page:item.pages[platform]}:item));
     for(const before of oldItems){const after=items.find(item=>item.id===before.id);if(!after||after.sha256!==before.sha256||after.filename!==before.filename)throw Error('A previous receiver file changed or disappeared: '+before.id);}
     const retained='downloads/helpers/console-download-receivers/'+platform+'/retained-'+oldHash.slice(0,12)+'/whatsite-'+platform+'.html';preserve(retained,old);
     const bytes=Buffer.from(renderCompanion(platform,items)),hash=sha(bytes),name='whatsite-'+platform+'.html';

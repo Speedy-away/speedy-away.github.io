@@ -5,8 +5,8 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const receiver=require('../../assets/console-receiver.js'),native=require('../../assets/host-package-installer.js');
 const local={protocol:'http:',hostname:'192.168.1.40',port:'6701'};
 
-function fixture(platform='ps4',{filename='app.pkg',folder='/data/whatwhatboy',location=local,bytes=4096,reviewed=false}={}){
-  const created=[],requests=[],timers=[],ids={};let records=[],queued=null;
+function fixture(platform='ps4',{filename='app.pkg',folder='/data/whatwhatboy',location=local,bytes=4096,reviewed=false,initialRecords=[],receiverSupported}={}){
+  const created=[],requests=[],timers=[],ids={};let records=initialRecords,queued=null;
   function element(tag){
     const node={tagName:tag.toUpperCase(),children:[],value:'',className:'',disabled:false,hidden:false,checked:false,appendChild(child){this.children.push(child);return child;},removeChild(child){this.children.splice(this.children.indexOf(child),1);},setAttribute(key,value){this[key]=value;},removeAttribute(key){delete this[key];},focus(){}};
     Object.defineProperty(node,'firstChild',{get(){return this.children[0];}});
@@ -14,7 +14,7 @@ function fixture(platform='ps4',{filename='app.pkg',folder='/data/whatwhatboy',l
     created.push(node);return node;
   }
   for(const id of ['receiver-catalog','receiver-files','receiver-search','receiver-category','receiver-format','receiver-folder','receiver-storage','receiver-message','receiver-check','receiver-setup','receiver-count','receiver-folder-confirmed','receiver-connection','receiver-queue','receiver-folder-status'])ids[id]=element('div');
-  const item={id:'fixture-app',name:'Fixture app',filename,url:'https://example.invalid/'+filename,bytes,category:'apps',platforms:[platform]};
+  const item={id:'fixture-app',name:'Fixture app',filename,url:'https://example.invalid/'+filename,bytes,category:'apps',platforms:[platform],receiverSupported};
   if(reviewed){
     item.sha256='a'.repeat(64);
     item.archiveSafety={reviewed:true,noLinks:true,relativePaths:true,noDevices:true,noAlternateStreams:true,noEncryptedEntries:true,sha256:item.sha256,bytes,entryCount:1,expandedBytes:bytes};
@@ -105,6 +105,57 @@ test('completed downloads on unsupported native mount paths keep installation pr
     const f=fixture('ps5',{folder});if(folder.includes('usb10')){f.setRecords([{path:folder+'/app.pkg',state:4,bytes_transfered:4096,file_size:4096}]);}f.queue();
     if(!f.queued()){assert.equal(f.requests.filter(r=>r.method==='POST').length,0);assert.equal(f.link().hidden,true);continue;}
     f.poll([{path:f.queued().dest_path,state:4,bytes_transfered:4096,file_size:4096}]);assert.equal(f.link().hidden,true);assert.equal(f.requests.filter(r=>r.method==='POST').length,1);
+    const status=f.created.find(n=>n.className==='receiver-file-status');
+    assert.match(status.textContent,/Install PKG needs .* \/data or USB 0–9.*ezRemote file manager/);
+  }
+});
+
+test('reopening a receiver exposes verified extraction for a completed reviewed archive without requeuing',()=>{
+  const path='/data/whatwhatboy/archive.zip';
+  const complete={path,state:4,bytes_transfered:4096,file_size:4096};
+  for(const platform of ['ps4','ps5']){
+    const f=fixture(platform,{filename:'archive.zip',reviewed:true,initialRecords:[complete]});
+    const link=f.link('Verify & extract saved copy');
+    assert.equal(link.hidden,false);
+    assert.equal(new URL(link.href).searchParams.get('archive'),path);
+    assert.deepEqual(f.requests.map(request=>[request.method,request.url]),[['GET','/get_download_state']]);
+    f.poll([{...complete,bytes_transfered:2048}]);assert.equal(link.hidden,true);
+    f.poll([complete]);assert.equal(link.hidden,false);
+    f.ids['receiver-folder'].value='/data/another-folder';f.ids['receiver-folder'].onchange();
+    assert.equal(link.hidden,true);
+    f.ids['receiver-folder'].value='/data/whatwhatboy';f.ids['receiver-folder'].onchange();
+    assert.equal(link.hidden,false);
+    f.queue();assert.equal(link.hidden,false);assert.equal(f.queued(),null);
+    assert.ok(f.requests.every(request=>request.method==='GET'));
+    f.poll([]);assert.equal(link.hidden,true);
+  }
+  assert.equal(fixture('ps4',{filename:'archive.zip',initialRecords:[complete]}).link('Verify & extract saved copy'),undefined);
+});
+
+test('reopened PKG queue records offer manual review without inferring install identity',()=>{
+  const path='/data/whatwhatboy/app.pkg';
+  for(const platform of ['ps4','ps5']){
+    const f=fixture(platform,{initialRecords:[{path,state:4,bytes_transfered:4096,file_size:4096}]});
+    assert.equal(f.link().hidden,true);
+    f.queue();
+    assert.equal(f.link().hidden,true);
+    assert.equal(f.queued(),null);
+    assert.match(f.created.find(n=>n.className==='receiver-file-status').textContent,/previously saved PKG.*installed package helper/);
+    assert.ok(f.requests.every(request=>request.method==='GET'));
+  }
+});
+
+test('publisher-only files remain manual after changing folders and never enter the download queue',()=>{
+  for(const platform of ['ps4','ps5']){
+    const f=fixture(platform,{filename:'cheat.shn',receiverSupported:false});
+    assert.equal(f.save().disabled,true);
+    assert.match(f.ids['receiver-files'].textContent,/Download URL.*https:\/\/example\.invalid\/cheat\.shn/);
+    assert.equal(new URL(f.link('Open ezRemote file manager').href).port,platform==='ps4'?'8080':'9090');
+    f.ids['receiver-folder'].value='/data/another-folder';f.ids['receiver-folder'].onchange();
+    assert.equal(f.save().disabled,true);
+    f.queue();assert.equal(f.queued(),null);
+    assert.deepEqual(f.requests.map(request=>[request.method,request.url]),[['GET','/get_download_state']]);
+    assert.match(f.ids['receiver-message'].textContent,/Use the publisher URL/);
   }
 });
 

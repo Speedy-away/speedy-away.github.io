@@ -27,6 +27,35 @@ function runtimeConfigHTML(html){
   return open+JSON.stringify(data).replaceAll('<','\\u003c')+close;
  });
 }
+function retainedDownloadAliases(root) {
+ const file=path.join(root,'docs/host-retained-download-aliases.json');
+ if(!fs.existsSync(file))return {};
+ const retained=JSON.parse(fs.readFileSync(file,'utf8'));
+ assert.match(retained.sourceRevision,/^[a-f0-9]{40}$/);
+ for(const [download,url] of Object.entries(retained.aliases)){
+  assert.ok(download.startsWith('/downloads/')&&!download.split('/').some(part=>part==='.'||part==='..'),'Invalid retained download path');
+  const rawPath=download.split('/').map(encodeURIComponent).join('/');
+  const retainedURL='https://raw.githubusercontent.com/Speedy-away/whatsite/'+retained.sourceRevision+rawPath;
+  const cheatName=path.posix.basename(download);
+  const originalCheat=/^PPSA\d{5}_[\d.]+\.shn$/.test(cheatName)&&url==='https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/'+cheatName;
+  assert.ok(url===retainedURL||originalCheat,'Invalid retained download source');
+ }
+ return retained.aliases;
+}
+function externalReceiverFile(url) {
+ return url && url.startsWith('https://raw.githubusercontent.com/etaHEN/PS5_Cheats/');
+}
+function receiverCatalogue(items,root=ROOT) {
+ const aliases=retainedDownloadAliases(root);
+ return items.map(item=>{
+  if(!item.url.startsWith('/downloads/'))return item;
+  const local=decodeURIComponent(item.url),alias=aliases[local];
+  if(!alias||fs.existsSync(path.join(root,local)))return item;
+  const file={...item,url:alias};
+  if(externalReceiverFile(alias))file.receiverSupported=false;
+  return file;
+ });
+}
 function build(output,revision='main',root=ROOT){
  assert.ok(output&&!fs.existsSync(output),'Use a fresh build directory');assert.match(revision,/^(?:main|[a-f0-9]{40})$/);const karo=JSON.parse(fs.readFileSync(path.join(root,'docs/host-reviews/karo/build.json'))),activeKaro=karo.runtime.replace(/^\//,'').replace(/web\/$/,''),all=walk(root).map(f=>slash(path.relative(root,f))).filter(p=>!/^tmp\/|^scripts\/|^i18n-tools\//.test(p));
  const karoRuntimes=new Set([activeKaro,...require('./host-compact-pages.cjs').groups(root)
@@ -39,20 +68,7 @@ function build(output,revision='main',root=ROOT){
  const delivery=fs.existsSync(updateFile)?JSON.parse(fs.readFileSync(updateFile)).legacyDelivery:{};
  const publicCopy=require('./host-public-copy.cjs');
  const excluded=new Set(all.filter(p=>!selected.includes(p))),mapping={};let files=selected.map(name=>({name,bytes:fs.statSync(path.join(root,name)).size}));let bytes=files.reduce((n,f)=>n+f.bytes,0);
- const retainedManifest=path.join(root,'docs/host-retained-download-aliases.json');
- if(fs.existsSync(retainedManifest)){
-  const retained=JSON.parse(fs.readFileSync(retainedManifest,'utf8'));
-  assert.match(retained.sourceRevision,/^[a-f0-9]{40}$/);
-  for(const [file,url] of Object.entries(retained.aliases)){
-   assert.ok(file.startsWith('/downloads/')&&!file.split('/').some(part=>part==='.'||part==='..'),'Invalid retained download path');
-   const rawPath=file.split('/').map(encodeURIComponent).join('/');
-   const retainedURL='https://raw.githubusercontent.com/Speedy-away/whatsite/'+retained.sourceRevision+rawPath;
-   const cheatName=path.posix.basename(file);
-   const originalCheat=/^PPSA\d{5}_[\d.]+\.shn$/.test(cheatName)&&url==='https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/'+cheatName;
-   assert.ok(url===retainedURL||originalCheat,'Invalid retained download source');
-   if(!fs.existsSync(path.join(root,file)))mapping[file]=url;
-  }
- }
+ for(const [file,url] of Object.entries(retainedDownloadAliases(root)))if(!fs.existsSync(path.join(root,file)))mapping[file]=url;
  const senderManifest=path.join(root,'downloads/helpers/console-payload-sender/manifest.json');
  if(fs.existsSync(senderManifest))for(const sender of JSON.parse(fs.readFileSync(senderManifest,'utf8')).files)if(sender.publicDownloadURL){assert.ok(require('./sender-download-url.cjs').isAllowed(sender.publicDownloadURL),'Invalid sender download source');mapping[sender.url]=sender.publicDownloadURL;}
  for(const file of files)if(mapping['/'+file.name])bytes-=file.bytes;
@@ -61,6 +77,24 @@ function build(output,revision='main',root=ROOT){
  for(const f of candidates){if(mapping['/'+f.name])continue;if(pinned.has(f.name)||cached.has(f.name)||bytes<LIMIT&& !/^downloads\/.+\.zip$/.test(f.name))continue;mapping['/'+f.name]=raw(f.name);bytes-=f.bytes;}
  assert.ok(bytes<LIMIT,'Active runtime deployment exceeds Pages budget');
  const hosted=new Set(files.filter(f=>!mapping['/'+f.name]).map(f=>f.name)),directories=new Set();for(const p of hosted){let dir=path.posix.dirname(p);while(dir!=='.'){directories.add(dir+'/');dir=path.posix.dirname(dir);}}function target(value){const original=value.replace(/^\//,''),parts=original.match(/^([^?#]*)(.*)$/),p=parts[1],suffix=parts[2];let lookup=p;try{lookup=decodeURIComponent(p);}catch{}if(p===''||p==='index.html')return BASE+'/'+suffix;if(offline&&/^offline\/ps[45](?:\/|\/index\.html|\.json|\.manifest)$/.test(p))return BASE+'/'+p+suffix;if(mapping['/'+lookup])return mapping['/'+lookup]+suffix;if(hosted.has(lookup)||(/^hosts\/runtime\//.test(lookup)&&directories.has(lookup))||hosted.has(lookup.replace(/\/$/,'')+'/index.html')||['assets/','languages/','hosts/','downloads/'].includes(p))return BASE+'/'+p+suffix;return MAIN+'/'+p+suffix;}
+ const catalogueName='docs/console-download-catalog.json',catalogueFile=path.join(root,catalogueName);
+ const catalogue=fs.existsSync(catalogueFile)?JSON.parse(fs.readFileSync(catalogueFile,'utf8')):null;
+ const generatedFeeds=new Map();
+ if(catalogue){
+  catalogue.items=publicCopy.catalogue(catalogue.items,delivery);
+  for(const item of catalogue.items){
+   const resolved=mapping[decodeURIComponent(item.url)];
+   if(externalReceiverFile(resolved))item.receiverSupported=false;
+  }
+  const artwork=path.join(root,'docs/expansion-ps4-ps5.json');
+  const images=fs.existsSync(artwork)?JSON.parse(fs.readFileSync(artwork,'utf8')).images:[];
+  const {ps4Feed,ps5Feed}=require('./console-download-catalog.cjs').nativeFeeds(catalogue.items,{
+   origin:ORIGIN,name:'WWB HOST · PS5 payloads',images,resolveURL:value=>value.startsWith('/')?target(value):value
+  });
+  generatedFeeds.set('console/ps4/homebrew.json',ps4Feed);
+  generatedFeeds.set('console/ps5/payloads.json',ps5Feed);
+  for(const name of generatedFeeds.keys())hosted.add(name);
+ }
  const manifestAliases=new Map(selected.filter(p=>/^hosts\/runtime\/.+\.cache$/i.test(p)&&/^\uFEFF?CACHE MANIFEST/.test(fs.readFileSync(path.join(root,p),'utf8'))).map(p=>[p,p.replace(/\.cache$/i,'.manifest')]));
  function manifestHTML(html,name){const platform=offline&&offline.platformFor(name,offlineGroups);if(platform)return offline.associate(html,platform);return html.replace(/(<html\b[^>]*?\bmanifest\s*=\s*)(?:"([^"]+)"|'([^']+)'|([^\s>]+))/gi,(whole,start,a,b,c)=>{try{const u=new URL(a||b||c,'https://host.invalid/'+name),alias=manifestAliases.get(decodeURIComponent(u.pathname.slice(1)));return alias?start+'"'+BASE+'/'+alias+u.search+u.hash+'"':whole;}catch{return whole;}});}
  const internalRoots=['hosts','assets','languages','downloads','console','docs'];
@@ -84,15 +118,7 @@ function build(output,revision='main',root=ROOT){
    text=text.replace(/<head\b[^>]*>/i,m=>m+'<script src="/assets/host-performance.js?v=2"></script>');
    text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-performance.css?v=5"></head>');
   }
-  if(name==='docs/console-download-catalog.json'){
-   const catalogue=JSON.parse(text);
-   catalogue.items=publicCopy.catalogue(catalogue.items,delivery);
-   for(const item of catalogue.items){
-    const delivery=mapping[decodeURIComponent(item.url)];
-    if(delivery&&delivery.startsWith('https://raw.githubusercontent.com/etaHEN/PS5_Cheats/'))item.receiverSupported=false;
-   }
-   text=JSON.stringify(catalogue);
-  }
+  if(name===catalogueName)text=JSON.stringify(catalogue);
   if(name.endsWith('.html'))text=require('./host-compact-pages.cjs').apply(text,name,{root});
   if(name.endsWith('.html'))text=publicCopy.html(text,name,delivery);
   if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
@@ -142,6 +168,11 @@ function build(output,revision='main',root=ROOT){
    data=Buffer.from(text);
   }fs.writeFileSync(destination,data);
  }
+ for(const [name,feed] of generatedFeeds){
+  const destination=path.join(output,name);
+  fs.mkdirSync(path.dirname(destination),{recursive:true});
+  fs.writeFileSync(destination,JSON.stringify(feed,null,2)+'\n');
+ }
  for(const [source,alias]of manifestAliases){const bytes=fs.readFileSync(path.join(root,source)),destination=path.join(output,alias);if(fs.existsSync(destination))assert.equal(sha(fs.readFileSync(destination)),sha(bytes),'Conflicting cache alias');else fs.writeFileSync(destination,bytes);hosted.add(alias);}
  // Old native bookmarks get the exact archived build, rather than executing a
  // different current chain. The original files remain untouched in Git.
@@ -163,4 +194,4 @@ function build(output,revision='main',root=ROOT){
  fs.writeFileSync(path.join(output,'404.html'),require('./host-legacy-redirect.cjs').render404(ORIGIN,revision));
  fs.writeFileSync(path.join(output,'.nojekyll'),'');const offlinePacks=offline?offline.build(output,root,offlineGroups):[];for(const file of offline?walk(path.join(output,'offline')):[])hosted.add(slash(path.relative(output,file)));const report={revision,base:BASE,origin:ORIGIN,bytes:walk(output).reduce((n,f)=>n+fs.statSync(f).size,0),budget:LIMIT,files:hosted.size,offloadedFiles:Object.keys(mapping).length,nativeScriptsUnchanged:nativeFiles,cacheManifestAliases:manifestAliases.size,historicalLandings,legacyHomePages:legacyHomePages.length,activeKaro,routingBytes:{full:fs.statSync(path.join(output,'host-project-map.js')).size,runtime:fs.statSync(path.join(output,'host-runtime-map.js')).size},activeRuntimeFiles:pinned.size,sharedCatalogueFiles:[...hosted].filter(p=>p.startsWith('assets/host-catalogues/')).length,offlinePacks,downloadMap:mapping};assert.ok(report.bytes<1e9);fs.writeFileSync(path.join(output,'pages-build.json'),JSON.stringify({...report,downloadMap:undefined},null,2));console.log(JSON.stringify({...report,downloadMap:undefined}));return report;
 }
-if(require.main===module)build(path.resolve(process.argv[2]),process.env.GITHUB_SHA||'main');module.exports={build,cacheResources,activeRuntimeFiles,runtimeConfigHTML,BASE,ORIGIN,MAIN,ASSET_VERSION};
+if(require.main===module)build(path.resolve(process.argv[2]),process.env.GITHUB_SHA||'main');module.exports={build,cacheResources,activeRuntimeFiles,runtimeConfigHTML,receiverCatalogue,BASE,ORIGIN,MAIN,ASSET_VERSION};

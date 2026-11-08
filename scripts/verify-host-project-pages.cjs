@@ -26,5 +26,20 @@ function verify(output){const report=JSON.parse(fs.readFileSync(path.join(output
  }
  const vm=require('node:vm'),parseMap=name=>{const source=fs.readFileSync(path.join(output,name),'utf8');return JSON.parse(source.slice(source.indexOf('=')+1).replace(/;\s*$/,''));},full=parseMap('host-project-map.js'),compact=parseMap('host-runtime-map.js');let routed;const win={WWB_HOST_PROJECT:compact,URL,location:{href:'https://speedy-away.github.io/hosts/runtime/fixture/',origin:'https://speedy-away.github.io'},document:{addEventListener(){}},fetch:value=>{routed=value;}};vm.runInNewContext(fs.readFileSync(path.join(output,'assets/host-project-routing.js'),'utf8'),{window:win});let compactAliasesVerified=0;for(const [p,u]of Object.entries(full.aliases)){win.fetch('https://whatwhatboy.com'+p.split('/').map(encodeURIComponent).join('/')+'?verify=1#same');assert.equal(routed,u+'?verify=1#same',p);compactAliasesVerified++;}const module={exports:{}};vm.runInNewContext(fs.readFileSync(path.join(output,'assets/host-dashboard.js'),'utf8'),{module,exports:module.exports,URL,console,setTimeout,clearTimeout});
  assert.equal(module.exports.loadCapability({runtimeId:'fixture',launchURL:'/hosts/runtime/fixture/',category:'mods',format:'BIN'}).kind,'browser','Project-prefix native Load must stay enabled through its console guard');
- assert.ok(report.bytes<1e9);assert.equal(failures.length,0,failures.slice(0,15).join('\n'));const result={status:'passed',localRuntimeConfigs,runtimeHandoffConfigs,bytes:report.bytes,pagesLinks:links,nativeScriptsUnchanged:checkedScripts,cachedResourcesRetained:cachedResources,runtimeDocumentsOptimized,offloadedFiles:report.offloadedFiles,compactAliasesVerified,sharedCatalogueFiles:report.sharedCatalogueFiles,routingBytes:report.routingBytes,activeRuntimeFiles:pinned.size,issues:0};console.log(JSON.stringify(result));return result;}
+ const catalogue=JSON.parse(fs.readFileSync(path.join(output,'docs/console-download-catalog.json'))).items;
+ const ps4Feed=JSON.parse(fs.readFileSync(path.join(output,'console/ps4/homebrew.json'))).DATA;
+ const ps5Feed=JSON.parse(fs.readFileSync(path.join(output,'console/ps5/payloads.json'))).payloads;
+ const delivery=value=>{
+  const url=new URL(value,report.origin);
+  if(url.origin!==report.origin)return url.href;
+  const mapped=full.aliases[decodeURIComponent(url.pathname)];
+  return new URL(mapped||url.pathname,report.origin).href;
+ };
+ const pkgs=catalogue.filter(item=>item.platforms.includes('ps4')&&item.category==='apps'&&/\.pkg$/i.test(item.filename));
+ assert.deepEqual(Object.keys(ps4Feed).sort(),[...new Set(pkgs.map(item=>delivery(item.url)))].sort());
+ for(const item of pkgs){const row=ps4Feed[delivery(item.url)];assert.equal(row.size,item.bytes,item.id);assert.equal(row.version,item.version,item.id);}
+ const payloads=catalogue.filter(item=>item.platforms.includes('ps5')&&item.category!=='mods'&&/\.(?:elf|bin)$/i.test(item.filename)&&!/^pldmgr[_-]/i.test(item.filename));
+ assert.deepEqual(ps5Feed.map(item=>item.id),payloads.map(item=>item.id));
+ for(const [index,item] of payloads.entries()){assert.equal(ps5Feed[index].url,delivery(item.url),item.id);assert.equal(ps5Feed[index].version,item.version,item.id);assert.equal(ps5Feed[index].checksum,item.sha256,item.id);}
+ assert.ok(report.bytes<1e9);assert.equal(failures.length,0,failures.slice(0,15).join('\n'));const result={status:'passed',localRuntimeConfigs,runtimeHandoffConfigs,bytes:report.bytes,pagesLinks:links,nativeFeedEntries:Object.keys(ps4Feed).length+ps5Feed.length,nativeScriptsUnchanged:checkedScripts,cachedResourcesRetained:cachedResources,runtimeDocumentsOptimized,offloadedFiles:report.offloadedFiles,compactAliasesVerified,sharedCatalogueFiles:report.sharedCatalogueFiles,routingBytes:report.routingBytes,activeRuntimeFiles:pinned.size,issues:0};console.log(JSON.stringify(result));return result;}
 if(require.main===module)verify(path.resolve(process.argv[2]));module.exports={verify};

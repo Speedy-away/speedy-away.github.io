@@ -58,6 +58,7 @@
   }
   function makeRequest(platform, item, folder, id) {
     platform = platformName(platform);
+    if (item.receiverSupported === false) fail('Use the publisher URL in the native ezRemote file manager for this file.');
     var source = parseUrl(item.url), filename = safeFilename(item.filename || source.path.split('?')[0]);
     folder = safeFolder(platform, folder);
     id = Number(id);
@@ -492,6 +493,7 @@
       var prepareOpen = document.getElementById('receiver-prepare-open'), managerOpen = document.getElementById('receiver-manager-open');
       var jobs = Object.create(null), cards = Object.create(null), timer = null, sequence = 0, readingQueue = false;
       var latestMounts = null, mountReadFailed = false, destinationUnavailable = false;
+      var completedPaths = Object.create(null);
       function text(parent, tag, content, className) { var el = document.createElement(tag); if (className) el.className = className; el.appendChild(document.createTextNode(String(content || ''))); parent.appendChild(el); return el; }
       function announce(content, error) { message.textContent = content; message.className = error ? 'receiver-message receiver-error' : 'receiver-message'; }
       function transferLabel(p) {
@@ -510,7 +512,32 @@
           (!p.total || p.total === item.bytes) && (!p.transferred || p.transferred === item.bytes) &&
           (!p.total || p.transferred === p.total);
       }
+      function savedArchive(card) {
+        if (!card.extractLink) return;
+        var path, status;
+        if (allowed && !destinationUnavailable) {
+          try {
+            path = safeFolder(platform, folder.value) + '/' + safeFilename(card.item.filename);
+            status = completedPaths[path];
+          } catch (_) {}
+        }
+        var complete = status && status.total === card.item.bytes && status.transferred === card.item.bytes;
+        card.extractLink.hidden = !complete;
+        if (complete) {
+          if (card.extractLink.textContent !== 'Verify & extract saved copy') card.extractLink.textContent = 'Verify & extract saved copy';
+          card.extractLink.href = preparationURL(window.location, platform, path.slice(0, path.lastIndexOf('/')), path);
+        }
+      }
+      function refreshSavedArchives() {
+        for (var id in cards) if (!jobs[id]) savedArchive(cards[id]);
+      }
       function updateStates(states) {
+        completedPaths = Object.create(null);
+        for (var j = 0; j < states.length; j++) {
+          var completed = progress(states[j]);
+          if (completed.complete) completedPaths[states[j].path] = completed;
+          else delete completedPaths[states[j].path];
+        }
         if (connection) { connection.textContent = 'Receiver answered · ' + states.length + ' download records. Queue status is supplied by ezRemote.'; connection.className = 'receiver-help'; }
         if (queueList) {
           while (queueList.firstChild) queueList.removeChild(queueList.firstChild);
@@ -534,8 +561,11 @@
           }
           paint(key);
         }
+        refreshSavedArchives();
       }
       function statusError(error) {
+        completedPaths = Object.create(null);
+        refreshSavedArchives();
         var content = error.message + ' Keep the matching ezRemote Server running, then use Check receiver. Existing transfers may still be running; do not queue them again until you inspect the receiver.';
         if (connection) { connection.textContent = content; connection.className = 'receiver-help receiver-error'; }
         else announce(content, true);
@@ -560,25 +590,39 @@
         var card = cards[id], job = jobs[id]; if (!card || !job) return;
         var p = job.progress || {label: 'Submitted. Waiting for the receiver.', phase: 'submitted'};
         var canPrepare = ready(job, card.item), dest = job.body.dest_path, status = transferLabel(p) + ' · ' + dest;
+        var canVerifyArchive = card.extractLink && job.existing && allowed && job.current && p.complete &&
+          p.total === card.item.bytes && p.transferred === card.item.bytes;
         if (p.phase === 'failed') status += ' · Check free space, storage and the file URL in ezRemote.';
-        if (p.complete && !canPrepare) status += ' · Check the saved file in the native file manager.';
-        if (card.status.textContent !== status) card.status.textContent = status;
-        card.status.setAttribute('data-state', p.phase);
-        paintBar(card.bar, p); card.button.disabled = true;
         if (card.extractLink) {
-          card.extractLink.hidden = !canPrepare;
-          if (canPrepare) card.extractLink.href = preparationURL(window.location, platform, dest.slice(0, dest.lastIndexOf('/')), dest);
+          card.extractLink.hidden = !canPrepare && !canVerifyArchive;
+          var label = canVerifyArchive ? 'Verify & extract saved copy' : 'Extract';
+          if (card.extractLink.textContent !== label) card.extractLink.textContent = label;
+          if (!card.extractLink.hidden) card.extractLink.href = preparationURL(window.location, platform, dest.slice(0, dest.lastIndexOf('/')), dest);
         }
         if (card.installLink) {
           card.installLink.hidden = true;
           if (canPrepare) {
-            try { card.installLink.href=packageInstallerURL(window.location,platform,dest,card.item.bytes);card.installLink.hidden=false; } catch (_) {}
+            try {
+              card.installLink.href = packageInstallerURL(window.location, platform, dest, card.item.bytes);
+              card.installLink.hidden = false;
+            } catch (_) {
+              status += ' · Install PKG needs a supported local address and a file under /data or USB 0–9. Use the native ezRemote file manager for this copy.';
+            }
+          } else if (p.complete && job.current && job.existing) {
+            status += ' · For a previously saved PKG, inspect it in ezRemote and open the installed package helper from Package Library.';
           }
         }
+        if (p.complete && !canPrepare && !canVerifyArchive && !(card.installLink && job.current && job.existing)) {
+          status += ' · Check the saved file in the native file manager.';
+        }
+        if (card.status.textContent !== status) card.status.textContent = status;
+        card.status.setAttribute('data-state', p.phase);
+        paintBar(card.bar, p); card.button.disabled = true;
       }
       function save(item) {
         var body;
         if (!allowed) { announce('Open the installed local companion through the console receiver to save files.', true); return; }
+        if (item.receiverSupported === false) { announce('Use the publisher URL in the native ezRemote file manager for this file.', true); return; }
         if (destinationUnavailable) { announce('Choose a valid existing folder and confirm that the selected device is still mounted. Detect storage again if needed.', true); return; }
         if (platform === 'ps4' && (!folderConfirmed || !folderConfirmed.checked)) { announce('Confirm this existing save folder in ezRemote, then tick the folder confirmation before saving. The PS4 receiver cannot list folders or detect USB devices.', true); return; }
         try { body = makeRequest(platform, item, folder.value, new Date().getTime() * 1000 + (++sequence)); } catch (error) { announce(error.message, true); return; }
@@ -635,12 +679,24 @@
             var details = document.createElement('details'); article.appendChild(details);
             text(details, 'summary', 'SHA-256 checksum'); text(details, 'code', item.sha256, 'receiver-hash');
           }
-          var button = text(article, 'button', 'Save to console', 'receiver-save'); button.type = 'button'; button.disabled = !allowed || destinationUnavailable;
+          var manualOnly = item.receiverSupported === false;
+          if (manualOnly) {
+            text(article, 'p', 'In ezRemote, use Download URL and enter this exact publisher address.', 'receiver-next-action');
+            try {
+              var publisher = parseUrl(item.url);
+              if (publisher.protocol === 'https:') text(article, 'code', publisher.url, 'receiver-filename');
+            } catch (_) {}
+            if (allowed) {
+              var fileManager = text(article, 'a', 'Open ezRemote file manager', 'receiver-guide');
+              fileManager.href = 'http://' + localHost(window.location) + ':' + (platform === 'ps4' ? '8080' : '9090') + '/index.html';
+            }
+          }
+          var button = text(article, 'button', 'Save to console', 'receiver-save'); button.type = 'button'; button.disabled = !allowed || destinationUnavailable || manualOnly;
           button.onclick = (function (selected) { return function () { save(selected); }; }(item));
           var status = text(article, 'p', '', 'receiver-file-status'); status.setAttribute('aria-live', 'polite');
           var bar = document.createElement('progress'); bar.max = 100; bar.value = 0; bar.hidden = true; bar.setAttribute('aria-label', 'Download progress'); article.appendChild(bar);
-          if (/\.pkg$/i.test(item.filename || '')) { installLink=text(article,'a','Install PKG','receiver-guide receiver-ready'); installLink.target='_blank'; installLink.rel='noopener noreferrer'; installLink.hidden=true; }
-          if (reviewedArchive(item)) { extractLink=text(article,'a','Extract','receiver-guide receiver-ready'); extractLink.target='_blank'; extractLink.rel='noopener noreferrer'; extractLink.hidden=true; }
+          if (!manualOnly && /\.pkg$/i.test(item.filename || '')) { installLink=text(article,'a','Install PKG','receiver-guide receiver-ready'); installLink.target='_blank'; installLink.rel='noopener noreferrer'; installLink.hidden=true; }
+          if (!manualOnly && reviewedArchive(item)) { extractLink=text(article,'a','Extract','receiver-guide receiver-ready'); extractLink.target='_blank'; extractLink.rel='noopener noreferrer'; extractLink.hidden=true; }
           cards[item.id] = {button: button, status: status, bar: bar, extractLink:extractLink, installLink:installLink, item:item}; paint(item.id);
         }
         document.getElementById('receiver-count').textContent = count + ' files' + (format && format.value === 'ready' ? ' · archive files hidden' : '');
@@ -668,8 +724,9 @@
         }
         folder.setAttribute('aria-invalid', destinationUnavailable ? 'true' : 'false');
         for (var id in cards) if (Object.prototype.hasOwnProperty.call(cards, id)) {
-          if (!jobs[id]) cards[id].button.disabled = !allowed || destinationUnavailable;
+          if (!jobs[id]) cards[id].button.disabled = !allowed || destinationUnavailable || cards[id].item.receiverSupported === false;
         }
+        refreshSavedArchives();
       }
       function detectStorage() {
         if (!allowed || platform !== 'ps5') return;

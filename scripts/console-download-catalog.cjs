@@ -307,18 +307,13 @@ function getCatalog(platform) {
   return read('docs/console-download-catalog.json').items.filter(item => item.platforms.includes(platform)).map(item => item.pages?.[platform] ? {...item, page: item.pages[platform]} : item);
 }
 
-function buildCatalog(options = {}) {
+function nativeFeeds(items, options = {}) {
   const origin = new URL(options.origin || 'https://whatwhatboy.com');
   if (!['http:', 'https:'].includes(origin.protocol) || origin.pathname !== '/' || origin.search || origin.hash || origin.username || origin.password) throw Error('Expected a plain HTTP(S) origin');
-  const absolute = value => new URL(value, origin.origin).href;
-  const items = collect();
-  const document = {schemaVersion: 1, reviewed: '2026-11-02',
-    sources: ['docs/download-audit.json', 'docs/expansion-ps4-ps5.json', 'docs/ps4-ps5-customization.json', 'docs/console-prepared-archive-jobs.json', 'docs/console-ready-file-descriptors.json', 'docs/console-multicod-ready-files.json', 'docs/ps4-extra-game-downloads.json', 'docs/ps4-ps5-game-patches.json', 'docs/console-ready-software.json', 'docs/ps4-store-apps.json', 'docs/virusmike-ps4-next-resources.json', 'docs/ps5-native-extra-cheats.json', 'docs/ps5-native-batch5.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-game-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json', 'docs/console-archive-safety.json', 'docs/ps4-ps5-launcher-build.json', 'downloads/ps4/GTA5/manifest.json', 'downloads/ps4/BO3/manifest.json'], items};
-  document.sources.push('docs/console-batch4-apps.json');
-  if(fs.existsSync(path.join(root,'docs/host-goldhen-retained-versions.json')))document.sources.push('docs/host-goldhen-retained-versions.json');
+  const absolute = value => new URL(options.resolveURL ? options.resolveURL(value) : value, origin.origin).href;
   const ps4 = items.filter(item => item.platforms.includes('ps4') && item.category === 'apps' && /\.pkg$/i.test(item.filename));
   const description = item => item.description === item.compatibility ? item.description : item.description + ' ' + item.compatibility;
-  const artMetadata = read('docs/expansion-ps4-ps5.json').images || [];
+  const artMetadata = options.images || [];
   const ps4Feed = {DATA: Object.fromEntries(ps4.map(item => {
     const art = artMetadata.find(entry => entry.image === item.image);
     // PS4 Games Installer accepts covers up to2048px; retain the full screenshot
@@ -327,17 +322,27 @@ function buildCatalog(options = {}) {
     return [absolute(item.url), {name: item.name, version: item.version, description: description(item), size: item.bytes, cover_url: absolute(cover)}];
   }))};
   const ps5 = items.filter(item => item.platforms.includes('ps5') && item.category !== 'mods' && /\.(?:elf|bin)$/i.test(item.filename) && !/^pldmgr[_-]/i.test(item.filename));
-  const ps5Feed = {name: 'whatwhatboy · PS5 payloads', payloads: ps5.map(item => ({
+  const ps5Feed = {name: options.name || 'whatwhatboy · PS5 payloads', payloads: ps5.map(item => ({
     id: item.id, name: item.name, filename: item.filename, url: absolute(item.url), version: item.version,
     description: description(item), category: item.category === 'payloads' ? 'System & services' : 'Apps & helpers',
-    checksum: item.sha256, source: absolute(item.source)
+    checksum: item.sha256, ...(item.source ? {source: absolute(item.source)} : {})
   }))};
+  return {ps4Feed, ps5Feed};
+}
+
+function buildCatalog(options = {}) {
+  const items = collect();
+  const document = {schemaVersion: 1, reviewed: '2026-11-02',
+    sources: ['docs/download-audit.json', 'docs/expansion-ps4-ps5.json', 'docs/ps4-ps5-customization.json', 'docs/console-prepared-archive-jobs.json', 'docs/console-ready-file-descriptors.json', 'docs/console-multicod-ready-files.json', 'docs/ps4-extra-game-downloads.json', 'docs/ps4-ps5-game-patches.json', 'docs/console-ready-software.json', 'docs/ps4-store-apps.json', 'docs/virusmike-ps4-next-resources.json', 'docs/ps5-native-extra-cheats.json', 'docs/ps5-native-batch5.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-game-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json', 'docs/console-archive-safety.json', 'docs/ps4-ps5-launcher-build.json', 'downloads/ps4/GTA5/manifest.json', 'downloads/ps4/BO3/manifest.json'], items};
+  document.sources.push('docs/console-batch4-apps.json');
+  if(fs.existsSync(path.join(root,'docs/host-goldhen-retained-versions.json')))document.sources.push('docs/host-goldhen-retained-versions.json');
+  const {ps4Feed, ps5Feed} = nativeFeeds(items, {...options, images:read('docs/expansion-ps4-ps5.json').images});
   fs.writeFileSync(output, JSON.stringify(document, null, 2) + '\n');
   fs.writeFileSync(path.join(root, 'console/ps4/homebrew.json'), JSON.stringify(ps4Feed, null, 2) + '\n');
   fs.writeFileSync(path.join(root, 'console/ps5/payloads.json'), JSON.stringify(ps5Feed, null, 2) + '\n');
   return {items: items.length, ps4: items.filter(item => item.platforms.includes('ps4')).length,
-    ps5: items.filter(item => item.platforms.includes('ps5')).length, ps4Packages: ps4.length, ps5Payloads: ps5.length};
+    ps5: items.filter(item => item.platforms.includes('ps5')).length, ps4Packages: Object.keys(ps4Feed.DATA).length, ps5Payloads: ps5Feed.payloads.length};
 }
 
 if (require.main === module) console.log(JSON.stringify(buildCatalog(), null, 2));
-module.exports = {getCatalog, buildCatalog, MAX_PLATFORM_ITEMS, assertCatalogueBounds};
+module.exports = {getCatalog, buildCatalog, nativeFeeds, MAX_PLATFORM_ITEMS, assertCatalogueBounds};

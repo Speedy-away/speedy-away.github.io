@@ -54,13 +54,18 @@
       <p>Choose a file to see your download and console options.</p>
       <nav id="host-download-native" hidden aria-label="Installed console tools"></nav>
     </section>
+    <details id="native-feed" class="host-download-setup">
+      <summary>PS5 Payload Manager catalogue</summary>
+      <p>In PS5 Payload Manager, open Settings, Manage Sources, then Add Source. Enter this address for the ready PS5 payload catalogue.</p>
+      <p><code translate="no">https://speedy-away.github.io/console/ps5/payloads.json</code></p>
+    </details>
     <details id="setup" class="host-download-setup">
       <summary>Set up console downloads</summary>
       <p>Saving to your PS5 requires ezRemote and a compatible homebrew setup. <strong>Download file</strong> opens the original file in your browser. If the browser refuses the file type, use ezRemote.</p>
       <p>First-time setup on PS5 requires a compatible homebrew environment. If you already have Payload Manager, ezRemote documents a loader that installs or updates the client from the console. Check that the client version matches the steps below.</p>
       <ol>
         <li>Open <a href="https://github.com/cy33hc/ps5-ezremote-client/releases/tag/2.18">ezRemote Client 2.18</a> on the PS5 after your compatible ELF listener is running on port 9021. Keep ezRemote open so it can start its bundled services. Run compatible websrv on port 8080 for the Download Centre’s save folder checks. In the console browser, choose <strong>Open ezRemote Web UI</strong>. Choose <strong>Download URL</strong>, then use <strong>Change</strong> to select the destination folder. Enter the filename and direct URL shown below.</li>
-        <li>In the ezRemote Web UI, download the <a href="/console/ps5/whatsite-ps5.html">latest downloader companion</a> to <code translate="no">/data/homebrew/ezremote-client/assets/whatsite-ps5.html</code>. If you already installed the companion, replace that local copy with the latest one. Its direct URL is <code translate="no">https://speedy-away.github.io/console/ps5/whatsite-ps5.html</code>.</li>
+        <li>In the ezRemote Web UI, download the <a href="/console/ps5/whatsite-ps5.html">latest downloader companion</a> to <code translate="no">/data/homebrew/ezremote-client/assets/whatsite-ps5.html</code>. If you already installed the companion, update it to version 2026.11.02.23 at the same path. Its direct URL is <code translate="no">https://speedy-away.github.io/console/ps5/whatsite-ps5.html</code>.</li>
         <li>Choose <strong>Save on PS5</strong> for a file, prepare or choose a writable destination and press <strong>Save to console</strong>. The local page shows live progress. When the save completes, eligible files show <strong>Extract</strong> or <strong>Install PKG</strong>.</li>
       </ol>
       <p>Open the ezRemote Web UI on port 9090 first if you need to install the companion. After setup, choose <strong>Open download queue</strong>. If it cannot open, check the companion path and that the matching ezRemote Server is running on port 6701. If the save folder is missing, choose <strong>Prepare a storage folder</strong>.</p>
@@ -71,7 +76,7 @@
       <ol>
         <li>Keep websrv, the installed ezRemote Client and its bundled background server running.</li>
         <li>Choose <a href="?type=archives#downloads">Archives</a>, select a file and wait for the local downloader to report the save complete.</li>
-        <li>In the downloader, choose <strong>Extract</strong>, then <strong>Verify checksum &amp; extract into new folder</strong>. The reviewed extraction keeps your original archive and creates a new folder.</li>
+        <li>In the downloader, choose <strong>Extract</strong>, then <strong>Verify checksum &amp; extract into new folder</strong>. If you reopened the downloader, select the original save folder and choose <strong>Verify &amp; extract saved copy</strong> when it appears. Reviewed extraction keeps your original archive and creates a new folder.</li>
         <li>If the archive contains a compatible PKG, open the extracted folder in the ezRemote Web UI and select that PKG for installation. Check the result on your console.</li>
       </ol>
       <p>The verified extraction action is limited to reviewed archives up to 32 MiB. For larger or unreviewed archives, inspect the saved file in the <a href="/hosts/ps5/files/">native file manager</a> before extracting it there.</p>

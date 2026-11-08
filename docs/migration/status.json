@@ -1964,5 +1964,29 @@
     "sampleArchiveAndPackageHTTPChecks": 6,
     "targetedChecksPassed": 69,
     "physicalConsoleTested": false
+  },
+  "consoleReceiverRetainedDelivery20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.23",
+    "status": "Both receiver companions archived and activated at their stable paths in the local checkout.",
+    "buildReport": "docs/host-menu-companion-build.json",
+    "inventory": "docs/pages-helper-download-inventory.json",
+    "priorJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.22.json",
+    "retainedDownloadAliases": 135,
+    "manualPublisherDownloads": 3,
+    "receiverRowsVerified": {
+      "ps4": 542,
+      "ps5": 356
+    },
+    "nativeFeedEntriesVerified": {
+      "ps4Packages": 20,
+      "ps5Payloads": 18
+    },
+    "apolloVersion": "2.4.0",
+    "externalDownloadHTTPHeadersVerified": 96,
+    "reviewedArchiveRecovery": "After reopening the downloader, select the original folder to recover the checksum-verification action. Previously saved PKGs use the installed package helper.",
+    "priorImmutableAndArchiveCopiesVerified": 2,
+    "focusedTestsPassed": 41,
+    "physicalConsoleTested": false
   }
 }

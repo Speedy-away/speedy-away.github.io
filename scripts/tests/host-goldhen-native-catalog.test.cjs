@@ -8,16 +8,33 @@ test('reuse requires exact platform/version/firmware and never broadens an older
 test('existing exact official catalogue identities are reused without changing their source or compatibility',()=>{const exact={id:'official-old',platforms:['ps4'],version:'2.3',compatibility:'PS4 firmware 5.05 only, through the matching exploit.',filename:'goldhen.bin',sha256:action.sha256,bytes:100,url:action.source};const before=JSON.stringify(exact),merged=mergeCatalogActions([exact],[action]);assert.equal(merged.added,0);assert.equal(merged.reused,1);assert.equal(merged.actions[0].consoleFileId,'official-old');assert.equal(JSON.stringify(merged.items[0]),before);});
 test('metadata integration is idempotent and cannot substitute a compressed source for ready BIN bytes',()=>{const first=mergeCatalogActions([],[action]),again=mergeCatalogActions(first.items,first.actions);assert.equal(again.added,0);assert.equal(again.actions[0].consoleFileId,first.actions[0].consoleFileId);assert.equal(again.items.length,1);assert.throws(()=>mergeCatalogActions([],[{...action,source:action.source+'.bz2'}]),/ready source-pinned BIN/);});
 test('active receiver embeds all33 exact native mappings after archived version activation',()=>{const report=read('docs/host-menu-companion-build.json');assert.equal(report.activated,true);const record=report.records.find(r=>r.platform==='ps4'),html=fs.readFileSync(path.join(root,record.path),'utf8'),embedded=JSON.parse(html.match(/<script id="receiver-catalog" type="application\/json">([\s\S]*?)<\/script>/)[1]);assert.equal(embedded.items.length,542);for(const a of actions){const row=embedded.items.find(i=>i.id===a.consoleFileId);assert.ok(row,a.id);assert.equal(row.sha256,a.sha256);assert.equal(row.filename,path.basename(a.downloadURL));assert.equal(row.url,a.nativeDownloadURL);}});
-test('receiver progress release preserves each catalogue and uses independent host job URLs',()=>{
+test('receiver release preserves every file identity and uses pinned retained delivery',()=>{
  const report=read('docs/host-menu-companion-build.json');
  const embedded=s=>JSON.parse(s.match(/<script id="receiver-catalog" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+ const sources=new Map(items.map(item=>[item.id,item]));
+ const destinations=new Map(require('../host-project-pages.cjs').receiverCatalogue(items,root).map(item=>[item.id,item]));
+ const pinned=new Set(),manual=new Set();
  for(const r of report.records){
   const before=fs.readFileSync(path.join(root,r.previousPublicSnapshot),'utf8');
   const after=fs.readFileSync(path.join(root,r.path),'utf8');
-  assert.deepEqual(embedded(after),embedded(before));
+  const expected=embedded(before);
+  expected.items=expected.items.map(item=>{
+   const target=destinations.get(item.id);
+   assert.ok(target,item.id);
+   if(target.url===sources.get(item.id).url)return item;
+   pinned.add(item.id);
+   if(target.receiverSupported===false){
+    manual.add(item.id);
+    return {...item,url:target.url,receiverSupported:false};
+   }
+   return {...item,url:target.url};
+  });
+  assert.deepEqual(embedded(after),expected);
   assert.equal(after,fs.readFileSync(path.join(root,r.immutablePath),'utf8'));
   assert.match(after,/Live transfer queue/);
  }
+ assert.equal(pinned.size,135);
+ assert.equal(manual.size,3);
  const jobs=read(report.jobsPath).jobs;
  for(const j of jobs)assert.ok(/^https:\/\/speedy-away\.github\.io\/downloads\/helpers\/console-download-receivers\//.test(j.url));
  assert.ok(fs.existsSync(path.join(root,report.previousJobsPath)));
