@@ -153,7 +153,7 @@
         // Reset its session state only as part of explicit restart recovery.
         gamerHackSessionKeys.forEach(function (key) {
           win.sessionStorage.removeItem(key);
-          if (win.sessionStorage.getItem(key) !== null) throw Error('The saved GamerHack state could not be cleared.');
+          if (win.sessionStorage.getItem(key) !== null) throw Error('The saved loader state could not be cleared.');
         });
         guard.clear(win, restarted.checked);
         restarted.checked = false;

@@ -7,7 +7,7 @@ const MODERN_PS4=['10.00','11.00','11.02','11.50','11.52','12.00','12.02','12.50
 const PS5_REMAINING=['3.10','3.21','5.00','5.02','5.10','5.50'];
 const PS4_ENTRY='/ps4/14.00/';
 
-function publicPS4Actions(rows){
+function publicPS4Actions(rows,root){
  const current=rows.find(action=>action.id==='local-gamerhack-g2all'&&action.category==='loaders'&&action.firmwares.includes('14.00'));
  if(!current)return rows;
  const downloads=rows.filter(action=>action.category!=='loaders').map(action=>{
@@ -18,6 +18,7 @@ function publicPS4Actions(rows){
    'This retained BIN is a download. Generic BIN sender compatibility is not established.'
   ]};
  });
+ const update=updatedAction(root,'ps4',rows);
  return [{
   ...current,
   label:'PS4 WebKit Exploit - 14.00',
@@ -26,39 +27,43 @@ function publicPS4Actions(rows){
   entryURL:PS4_ENTRY,
   nativeRoute:{...current.nativeRoute,entry:{...current.nativeRoute.entry,firmwares:['14.00']}},
   requirements:['Open on PS4 firmware 14.00. The launcher checks the browser cache and shows a live log.']
- },...downloads];
+ },...(update?[update]:[]),...downloads];
 }
 
 function ps4FirmwareTile(){
  return '<a class="host-firmware-family" data-firmwares="14.00" href="'+PS4_ENTRY+'"><strong>14.00</strong><span>Open WebKit loader</span></a>';
 }
 
-function projectPS4(html,name){
+function projectPS4(html,name,root){
  if(!/^hosts\/ps4\//.test(name))return html;
  if(name==='hosts/ps4/firmware/index.html'){
-  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+ps4FirmwareTile()+close);
+  const update=root&&groups(root).find(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/');
+  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+ps4FirmwareTile()+(update?firmwareTile(update):'')+close);
  }
  html=html.replace(/<details class="host-other-directory">[\s\S]*?<\/details>/g,'');
  html=html.replace(/<a href="\/hosts\/ps4\/afterglow\/">13\.52 \/ 14\.00 · Afterglow<\/a>/g,'<a href="'+PS4_ENTRY+'">PS4 WebKit 14.00</a>');
  return html.replace(/(<script\b[^>]*\bid=["']host-actions-data["'][^>]*>)([\s\S]*?)(<\/script>)/i,(_,open,json,close)=>{
   const catalogue=JSON.parse(json);
   if(catalogue.platform!=='ps4'||!Array.isArray(catalogue.actions))return open+json+close;
-  catalogue.actions=publicPS4Actions(catalogue.actions);
+  catalogue.actions=publicPS4Actions(catalogue.actions,root);
   return open+JSON.stringify(catalogue).replaceAll('<','\\u003c')+close;
  });
 }
 
-function projectPS5(html, name) {
+function projectPS5(html, name, root) {
  if (!/^hosts\/ps5\//.test(name)) return html;
  if (name === 'hosts/ps5/firmware/index.html') {
   html = html.replace('href="/hosts/runtime/ps5-webkit-dd8e4e0914c5/"', 'href="/ps5/relapse/"');
+  const update=root&&groups(root).find(g=>g.id==='ps5-relapse-current');
+  if(update&&!html.includes(update.entry))html=html.replace('<div class="host-firmware-families">','$&'+firmwareTile(update));
  }
  return html.replace(/(<script\b[^>]*\bid=["']host-actions-data["'][^>]*>)([\s\S]*?)(<\/script>)/i, (_, open, json, close) => {
   const catalogue = JSON.parse(json);
   if (catalogue.platform !== 'ps5' || !Array.isArray(catalogue.actions)) return open + json + close;
   const action = catalogue.actions.find(row => row.category === 'loaders' && row.nativeRoute?.kind === 'ps5-native' && row.runtimeId === 'ps5-webkit-dd8e4e0914c5');
-  if (!action) return open + json + close;
-  action.entryURL = '/ps5/relapse/';
+  if (action) action.entryURL = '/ps5/relapse/';
+  const update=updatedAction(root,'ps5',catalogue.actions);
+  if(update&&!catalogue.actions.some(row=>row.id===update.id))catalogue.actions.unshift(update);
   return open + JSON.stringify(catalogue).replaceAll('<','\\u003c') + close;
  });
 }
@@ -88,14 +93,19 @@ function groups(root){
  const gamerOffline=path.join(root,'docs/host-gamerhack-g2all-build.json');
  if(fs.existsSync(gamerOffline))rows.push(...JSON.parse(fs.readFileSync(gamerOffline)).groups);
  const karoUpdate=path.join(root,'docs/host-upstream-refresh-20261108.json');
- if(fs.existsSync(karoUpdate))rows.push(JSON.parse(fs.readFileSync(karoUpdate)).group);
+ const consoleUpdate=path.join(root,'docs/host-console-updates.json');
+ const update=fs.existsSync(consoleUpdate)?JSON.parse(fs.readFileSync(consoleUpdate)):null;
+ if(fs.existsSync(karoUpdate)){
+  const group=JSON.parse(fs.readFileSync(karoUpdate)).group;
+  rows.push(update?{...group,entry:update.ps4Entry,label:'PS4 Multi-Firmware WebKit · GoldHEN 2.4b18.13'}:group);
+ }
+ if(update)rows.push(update.group);
  const ps5File=path.join(root,'docs/ps5-webkit-build.json');
  if(fs.existsSync(ps5File)){const b=JSON.parse(fs.readFileSync(ps5File));rows.push({id:b.id,label:'PS5 WebKit Exploit - 7.00–13.60',platform:'ps5',firmwares:b.firmwares,entry:b.entry,runtimeEntry:b.runEntry,preferred:true,source:b.source,siteNative:true});}
  // A family label is presentation; compatibility remains the exact source array.
  return rows.filter(g=>g.firmwares?.length&&/^\/hosts\//.test(g.entry)&&fs.existsSync(path.join(root,g.entry.replace(/^\//,'').replace(/\/$/,'/index.html')))).sort((a,b)=>Number(a.firmwares[0])-Number(b.firmwares[0]));
 }
-function actions(root,platform,previous){
- const local=groups(root).filter(g=>g.platform===platform).map(g=>{
+function actionForGroup(g,platform,previous){
   if(g.id==='ps5-umtx'){
    const builtin=previous.find(a=>a.id==='built-in-ps5-umtx');if(!builtin)throw Error('Missing verified PS5 UMTX browser action.');
    return {...builtin,label:g.label,firmwareLabel:g.label.replace(/^PS5 WebKit Exploit - /,''),firmwares:g.firmwares.slice(),launchURL:g.runtimeEntry};
@@ -105,12 +115,23 @@ function actions(root,platform,previous){
   else if(g.siteNative){target=g.runtimeEntry;route={kind:'ps5-native',target};}
   else{const entry=g.originalEntry;if(!entry)throw Error('Missing local native entry: '+g.id);target=g.runtime+entry.path;route={kind:'karo',runtime:g.runtime,entry:{platform:g.platform,path:entry.path,scope:entry.scope,firmwares:g.firmwares.slice(),ranges:[],...(entry.cacheRequired?{cacheRequired:true}:{}),...(entry.blockedReason?{blockedReason:entry.blockedReason}:{})},...(entry.path==='ps5/UMTX/index.html'?{autorun:'umtx2'}:{})};}
   return {id:'local-'+g.id,platform,category:'loaders',label:g.label,firmwareLabel:g.label.replace(/^PS[45] WebKit Exploit - /,''),firmwares:g.firmwares.slice(),format:'Local browser loader',launchURL:target,launchLabel:'Load',runtimeId:g.id,localLauncher:true,browserHost:true,nativeRoute:route,source:g.source.repository+'/tree/'+g.source.commit,requirements:['Open on the matching console. Load starts the local runtime and its console progress.']};
- });
+}
+function updatedAction(root,platform,previous){
+ if(!root)return null;
+ const entry=platform==='ps4'?'/hosts/ps4/exploit/multi-firmware/':'/hosts/ps5/exploit/relapse-current/';
+ const group=groups(root).find(g=>g.entry===entry);
+ return group?{...actionForGroup(group,platform,previous),entryURL:group.entry}:null;
+}
+function actions(root,platform,previous){
+ const local=groups(root).filter(g=>g.platform===platform).map(g=>actionForGroup(g,platform,previous));
  return [...local,...previous.filter(a=>a.category!=='loaders').map(a=>a.id==='ps4-goldhen-user-supplied'?{...a,nativeRoute:{kind:'afterglow',target:a.launchURL}}:a)];
+}
+function firmwareTile(g){
+ return '<a class="host-firmware-family" data-firmwares="'+g.firmwares.join(',')+'" href="'+esc(g.entry)+'"><strong>'+esc(g.label.replace(/^PS[45] WebKit Exploit - /,''))+'</strong><span>'+((g.payloadChoice||[]).map(p=>esc(p.label)).join(' / ')||'Load exploit')+'</span></a>';
 }
 function directory(root,platform){
  const rows=groups(root).filter(g=>g.platform===platform),name=platform.toUpperCase();
- const tiles=platform==='ps4'?ps4FirmwareTile():rows.map(g=>'<a class="host-firmware-family" data-firmwares="'+g.firmwares.join(',')+'" href="'+esc(g.entry)+'"><strong>'+esc(g.label.replace(/^PS[45] WebKit Exploit - /,''))+'</strong><span>'+((g.payloadChoice||[]).map(p=>esc(p.label)).join(' / ')||'Load exploit')+'</span></a>').join('');
+ const tiles=platform==='ps4'?ps4FirmwareTile()+rows.filter(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/').map(firmwareTile).join(''):rows.map(firmwareTile).join('');
  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+' WebKit Exploits | WWB HOST</title><link rel="stylesheet" href="/assets/host-compact.css"><script defer src="/assets/host-firmware-families.js?v=1"></script></head><body class="host-compact"><nav class="host-taskbar"><a href="/hosts/'+platform+'/">← '+name+' host</a><a href="/hosts/">Choose console</a><a href="/hosts/'+platform+'/?view=payloads">Payloads</a></nav><main class="host-compact-main"><header><h1>'+name+' WebKit Exploits</h1><p id="host-family-detected" role="status">Choose your firmware.</p></header><div class="host-firmware-families">'+tiles+'</div></main></body></html>';
 }
 function build(root){
@@ -142,7 +163,7 @@ function apply(html,name,{base='',root}={}){
  }
  if(nativeLanding)html=html.replace('<body>','<body class="host-compact host-runtime-landing">').replace('</head>','<link rel="stylesheet" href="'+base+'/assets/host-compact.css?v=1"><link rel="stylesheet" href="'+base+'/assets/host-blue-theme.css?v=1"></head>');
  // Never add site/popup code to execution documents, only authored landing controls.
- html=popup.apply(nativeLanding?'hosts/launcher/index.html':name,projectPS5(projectPS4(html,name),name),options);
+ html=popup.apply(nativeLanding?'hosts/launcher/index.html':name,projectPS5(projectPS4(html,name,root),name,root),options);
  return require('./host-ps5-webkit-ui.cjs').apply(html,name,{base});
 }
 module.exports={MODERN_PS4,PS5_REMAINING,ps5RemainingRoute,groups,actions,directory,build,apply,publicPS4Actions,showNativeLog};

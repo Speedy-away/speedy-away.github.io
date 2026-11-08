@@ -35,6 +35,9 @@ function build(output,revision='main',root=ROOT){
  const isActiveKaro=p=>karoRuntimes.has(p.split('/').slice(0,3).join('/')+'/');
  const selected=all.filter(p=>!/^docs\/.*-private-inventory\.json$/i.test(p)&&!/^docs\/(?:host-goldhen-current-private-inventory|host-compact-download-inventory|host-game-patch-file-import|host-retained-download-aliases)\.json$/i.test(p)&&!/^docs\/(?:migration|qa|screenshots|host-reviews\/.*(?:retained|full-tests|.*log))/i.test(p)&&!/^AGENTS\.md$|^README\.md$|^SYNC|^sync\./i.test(p)&&(!/^hosts\/runtime\/karo-/.test(p)||isActiveKaro(p))&&!/^hosts\/runtime\/.*\/upstream\//.test(p));
  const offline=fs.existsSync(path.join(root,'assets/host-offline.js'))?require('./host-offline-pack.cjs'):null,offlineGroups=offline?offline.scopes(root):[];
+ const updateFile=path.join(root,'docs/host-console-updates.json');
+ const delivery=fs.existsSync(updateFile)?JSON.parse(fs.readFileSync(updateFile)).legacyDelivery:{};
+ const publicCopy=require('./host-public-copy.cjs');
  const excluded=new Set(all.filter(p=>!selected.includes(p))),mapping={};let files=selected.map(name=>({name,bytes:fs.statSync(path.join(root,name)).size}));let bytes=files.reduce((n,f)=>n+f.bytes,0);
  const retainedManifest=path.join(root,'docs/host-retained-download-aliases.json');
  if(fs.existsSync(retainedManifest)){
@@ -83,6 +86,7 @@ function build(output,revision='main',root=ROOT){
   }
   if(name==='docs/console-download-catalog.json'){
    const catalogue=JSON.parse(text);
+   catalogue.items=publicCopy.catalogue(catalogue.items,delivery);
    for(const item of catalogue.items){
     const delivery=mapping[decodeURIComponent(item.url)];
     if(delivery&&delivery.startsWith('https://raw.githubusercontent.com/etaHEN/PS5_Cheats/'))item.receiverSupported=false;
@@ -90,6 +94,7 @@ function build(output,revision='main',root=ROOT){
    text=JSON.stringify(catalogue);
   }
   if(name.endsWith('.html'))text=require('./host-compact-pages.cjs').apply(text,name,{root});
+  if(name.endsWith('.html'))text=publicCopy.html(text,name,delivery);
   if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
   if(name.endsWith('.html'))text=require('./host-plugin-templates.cjs').apply(text,name);
   // The new exact GamerHack CSS table adds 10.50 to the public PS4 chooser.
@@ -140,7 +145,7 @@ function build(output,revision='main',root=ROOT){
  for(const [source,alias]of manifestAliases){const bytes=fs.readFileSync(path.join(root,source)),destination=path.join(output,alias);if(fs.existsSync(destination))assert.equal(sha(fs.readFileSync(destination)),sha(bytes),'Conflicting cache alias');else fs.writeFileSync(destination,bytes);hosted.add(alias);}
  // Old native bookmarks get the exact archived build, rather than executing a
  // different current chain. The original files remain untouched in Git.
- let historicalLandings=0;for(const name of all.filter(p=>/^hosts\/runtime\/karo-[^/]+\/.+\.html$/i.test(p)&&!isActiveKaro(p))){const m=name.match(/^hosts\/runtime\/karo-([a-f0-9]{12})-([a-f0-9]{12})\/(?:web\/)?(.*)$/);if(!m)continue;const rest=m[3],parts=rest.split('/'),unit=parts[0]==='ps5'?'ps5-'+parts[1]:parts[0],job=(karo.retainedArtifactJobs||[]).find(j=>j.id==='karo-ready-'+unit+'-'+m[2]);const download=job?raw(job.importPath):null;const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, follow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Retained KARO build | WWB HOST</title><link rel="stylesheet" href="'+BASE+'/assets/host-karo-builds.css"></head><body><main><h1>Retained KARO build</h1><p>This bookmark belongs to snapshot '+m[2]+'. Its original files remain preserved.</p>'+(download?'<p><a href="'+download+'" download>Download this exact '+unit+' web-host build</a></p>':'')+'<p><a href="'+BASE+'/hosts/karo/versions.html">All retained versions</a></p><p><a href="'+BASE+'/hosts/karo/">Current reviewed KARO builds</a></p><p>Opening this archive page starts no native code. Extract the complete ready ZIP and use its matching-console entry.</p></main></body></html>';const dest=path.join(output,name);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);hosted.add(name);historicalLandings++;}
+ let historicalLandings=0;for(const name of all.filter(p=>/^hosts\/runtime\/karo-[^/]+\/.+\.html$/i.test(p)&&!isActiveKaro(p))){const m=name.match(/^hosts\/runtime\/karo-([a-f0-9]{12})-([a-f0-9]{12})\/(?:web\/)?(.*)$/);if(!m)continue;const rest=m[3],parts=rest.split('/'),unit=parts[0]==='ps5'?'ps5-'+parts[1]:parts[0],job=(karo.retainedArtifactJobs||[]).find(j=>j.id==='karo-ready-'+unit+'-'+m[2]);const download=job?raw(job.importPath):null;const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, follow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Retained console build | WWB HOST</title><link rel="stylesheet" href="'+BASE+'/assets/host-karo-builds.css"></head><body><main><h1>Retained console build</h1><p>This bookmark belongs to snapshot '+m[2]+'. Its original files remain preserved.</p>'+(download?'<p><a href="'+download+'" download>Download this exact '+unit+' web-host build</a></p>':'')+'<p><a href="'+BASE+'/hosts/karo/versions.html">All retained versions</a></p><p><a href="'+BASE+'/hosts/karo/">Current console builds</a></p><p>Opening this archive page starts no native code. Extract the complete ready ZIP and use its matching-console entry.</p></main></body></html>';const dest=path.join(output,name);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);hosted.add(name);historicalLandings++;}
  const legacyHomePages=['WWB-HOST/index.html','WWB-HOST/hosts/index.html'];for(const name of legacyHomePages){assert.ok(!hosted.has(name),'Legacy landing collides with source');const destination=path.join(output,name);fs.mkdirSync(path.dirname(destination),{recursive:true});fs.writeFileSync(destination,require('./host-legacy-redirect.cjs').renderHomeRedirect(ORIGIN));hosted.add(name);}
  if(offline)for(const name of offline.prepare(output)){
   hosted.add(name);

@@ -1916,6 +1916,31 @@
       "readyZIPReadbackVerified": true
     }
   },
+  "localConsoleUpdates20261108": {
+    "status": "Implemented and verified in local Pages build",
+    "date": "2026-11-08",
+    "updates": "/hosts/updates/",
+    "ps4": "/hosts/ps4/exploit/multi-firmware/",
+    "ps5": "/hosts/ps5/exploit/relapse-current/",
+    "upstreamPins": {
+      "ps4MultiFirmware": "c72eaae8859476d4772e613d011db9f0bb80c80d",
+      "existingPS4": "d05d71ff8db282f28cbc61f84c0a9588efacc451"
+    },
+    "ps5ExactFirmwareVersions": 35,
+    "ps5PayloadMenuFiles": 17,
+    "ps5RuntimeFiles": 67,
+    "newLocalDownloads": 33,
+    "previousUpstreamDownloadURLsLocalized": 41,
+    "archivedDownloadSHA256Readbacks": 74,
+    "focusedTests": 32,
+    "originalNativeFilesReplaced": 0,
+    "physicalConsoleTested": false,
+    "notes": "Public launcher and library copy uses neutral labels and local delivery. Prior bookmarks, source provenance and original runtime notices remain preserved.",
+    "publicPagesScanned": 171,
+    "downloadChecks": 75,
+    "ps5NativePayloadArchiveReadbacks": 19,
+    "pagesVerifiersPassed": 5
+  },
   "consoleOnlySetup20261108": {
     "date": "2026-11-08",
     "status": "Public setup and native Web UI handoff updated. Physical hardware unavailable for this test.",

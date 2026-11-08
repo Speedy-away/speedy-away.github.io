@@ -1,0 +1,1055 @@
+{
+  "sourceCommit": "c72eaae8859476d4772e613d011db9f0bb80c80d",
+  "group": {
+    "id": "ps5-relapse-current",
+    "label": "PS5 WebKit Exploit · Relapse update",
+    "platform": "ps5",
+    "firmwares": [
+      "13.60",
+      "13.42",
+      "13.40",
+      "13.20",
+      "13.00",
+      "12.70",
+      "12.60",
+      "12.40",
+      "12.20",
+      "12.02",
+      "12.00",
+      "11.60",
+      "11.40",
+      "11.20",
+      "11.00",
+      "10.60",
+      "10.40",
+      "10.20",
+      "10.01",
+      "10.00",
+      "9.60",
+      "9.40",
+      "9.20",
+      "9.05",
+      "9.00",
+      "8.60",
+      "8.40",
+      "8.20",
+      "8.00",
+      "7.61",
+      "7.60",
+      "7.40",
+      "7.20",
+      "7.01",
+      "7.00"
+    ],
+    "entry": "/hosts/ps5/exploit/relapse-current/",
+    "runtime": "/hosts/runtime/karo-c72eaae88594-1295a3f4112d/web/",
+    "runtimeEntry": "/hosts/runtime/karo-c72eaae88594-1295a3f4112d/web/ps5/relapse/index.html",
+    "originalEntry": {
+      "id": "ps5-relapse-current",
+      "platform": "ps5",
+      "scope": "ps5/relapse/",
+      "path": "ps5/relapse/index.html",
+      "firmwares": [
+        "13.60",
+        "13.42",
+        "13.40",
+        "13.20",
+        "13.00",
+        "12.70",
+        "12.60",
+        "12.40",
+        "12.20",
+        "12.02",
+        "12.00",
+        "11.60",
+        "11.40",
+        "11.20",
+        "11.00",
+        "10.60",
+        "10.40",
+        "10.20",
+        "10.01",
+        "10.00",
+        "9.60",
+        "9.40",
+        "9.20",
+        "9.05",
+        "9.00",
+        "8.60",
+        "8.40",
+        "8.20",
+        "8.00",
+        "7.61",
+        "7.60",
+        "7.40",
+        "7.20",
+        "7.01",
+        "7.00"
+      ],
+      "ranges": [],
+      "label": "PS5 Relapse WebKit",
+      "kind": "loader",
+      "contract": "Exact PS5 firmware gate. The local WebKit chain opens its own ELF loader and payload menu."
+    },
+    "preferred": true,
+    "source": {
+      "repository": "https://github.com/KAR0218/KAR0218.github.io",
+      "commit": "c72eaae8859476d4772e613d011db9f0bb80c80d",
+      "path": "ps5/relapse/index.html"
+    },
+    "ticket": "existing-karo-guard"
+  },
+  "ps4Entry": "/hosts/ps4/exploit/multi-firmware/",
+  "downloads": [
+    {
+      "url": "/downloads/hosts/console-updates/a3372acad84b/goldhen.bin.bz2",
+      "bytes": 285077,
+      "sha256": "a3372acad84b73605f8fc959dc2ddea63e570e004e196ee9b8a45222df9c0d73",
+      "platform": "PS4",
+      "label": "GoldHEN 2.4b18.13 · BZIP2",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/672/goldhen.bin.bz2"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/39452f5e1c30/goldhen.bin",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "platform": "PS4",
+      "label": "GoldHEN 2.4b18.13 · BIN",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/505/goldhen.bin"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/8162e9c0988e/browser_launcher_v1.0.0.elf",
+      "bytes": 416352,
+      "sha256": "8162e9c0988e0e69d506840d3ba0a239fdbc5fbea60517cfaa6f820b23cd96f4",
+      "platform": "PS5",
+      "label": "PS5Browser",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/browser_launcher_v1.0.0.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/de5dd480d126/elfldr-ps5-1360.elf",
+      "bytes": 397024,
+      "sha256": "de5dd480d12637527ba2d75e35de851adbb59c455293fa32588c492ef6b44b81",
+      "platform": "PS5",
+      "label": "elfldr-ps5-1360.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/elfldr-ps5-1360.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/4845cac45095/etaHEN-2.5B.elf",
+      "bytes": 4678728,
+      "sha256": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e",
+      "platform": "PS5",
+      "label": "etaHEN-2.5B.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/etaHEN-2.5B.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/512c74a9d6f5/etaHEN.elf",
+      "bytes": 4740712,
+      "sha256": "512c74a9d6f56bb5a4ab871a0306a8cbefb8b3d5454ba8f1d833b020b245a126",
+      "platform": "PS5",
+      "label": "etaHEN 2.6B",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/etaHEN.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/f19ae469b254/ftpsrv-drakmor_1.16-ng-stable.elf",
+      "bytes": 230640,
+      "sha256": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32",
+      "platform": "PS5",
+      "label": "ftpsrv-drakmor",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ftpsrv-drakmor_1.16-ng-stable.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/7d4b31c83eae/ftpsrv-ps5.elf",
+      "bytes": 191864,
+      "sha256": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+      "platform": "PS5",
+      "label": "ftpsrv-ps5.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ftpsrv-ps5.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/b0fc2fcdda97/garlic-savemgr_v1.13.1.elf",
+      "bytes": 1665456,
+      "sha256": "b0fc2fcdda977d2a1207d77148746859b7ea7f3cfcad02828a7a9b49651807f5",
+      "platform": "PS5",
+      "label": "garlic-savemgr",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/garlic-savemgr_v1.13.1.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/e828ec144231/klogsrv-ps5.elf",
+      "bytes": 136016,
+      "sha256": "e828ec144231f81547cb58bc7d2c396fa984be0c2295f31364b58017816dcceb",
+      "platform": "PS5",
+      "label": "klogsrv-ps5.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/klogsrv-ps5.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/ab9a6cb4d3b1/kstuff-lite_v1.11.elf",
+      "bytes": 1737080,
+      "sha256": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
+      "platform": "PS5",
+      "label": "kstuff-lite",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/kstuff-lite_v1.11.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/13559b858fc3/Lapy-JB-Daemon_v1.2.elf",
+      "bytes": 154280,
+      "sha256": "13559b858fc33cc7fa3dc89e10dccf139070d99ee5d378dd75c969293700799e",
+      "platform": "PS5",
+      "label": "Lapy-JB-Daemon",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/Lapy-JB-Daemon_v1.2.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/2fbdc9f0b210/MemDBG-ps5.elf",
+      "bytes": 1271008,
+      "sha256": "2fbdc9f0b21043619b1c32b512df47b3ddf79a99f096243c0d48f5ffc14e1906",
+      "platform": "PS5",
+      "label": "MemDBG-ps5.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/MemDBG-ps5.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/ba8db5c287a5/OnionHEN.elf",
+      "bytes": 4947888,
+      "sha256": "ba8db5c287a5f5ea8bc7400c25b90312b751672e8772b2ff15b2c0377b77ea13",
+      "platform": "PS5",
+      "label": "OnionHEN 0.9 | kstuff 1.13",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/OnionHEN.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/1f1f7c883d5d/OnionHENk1.11.elf",
+      "bytes": 4676224,
+      "sha256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
+      "platform": "PS5",
+      "label": "OnionHEN v0.9.0 | kstuff 1.11",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/OnionHENk1.11.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/09adaff13b85/PKG-Manager_v1.4.1.elf",
+      "bytes": 1939016,
+      "sha256": "09adaff13b858bb3db519faaea673ee3fa67298081e608d32f6501ed6e9f706e",
+      "platform": "PS5",
+      "label": "PKG-Manager",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/PKG-Manager_v1.4.1.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/e7a6bb544adb/ProsperoMgr.elf",
+      "bytes": 8841088,
+      "sha256": "e7a6bb544adb2fb2a61aa9cc83b0ad15f70b32d7511a3de0f1fb88812f11983c",
+      "platform": "PS5",
+      "label": "ProsperoMgr.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ProsperoMgr.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/9dc888f66b8d/ps5debug_v1.0b5.elf",
+      "bytes": 148808,
+      "sha256": "9dc888f66b8dd97d1317ac7260ab9499f709ddf0cbab59db82347c0aa93aaa8a",
+      "platform": "PS5",
+      "label": "ps5debug_v1.0b5.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5debug_v1.0b5.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/949b0e6e0fe3/ps5debug-NG_1.3.2.elf",
+      "bytes": 4059688,
+      "sha256": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3",
+      "platform": "PS5",
+      "label": "ps5debug-NG",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5debug-NG_1.3.2.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/6c66a3cbef38/PS5MemoryPeekerWeb.elf",
+      "bytes": 1405912,
+      "sha256": "6c66a3cbef38bce5510598454844321601198b3bf41648eb6968dec2a842d702",
+      "platform": "PS5",
+      "label": "PS5MemoryPeekerWeb.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/PS5MemoryPeekerWeb.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/27fd33576427/webkit-autoloader-installer_v0.6.2.elf",
+      "bytes": 3900672,
+      "sha256": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19",
+      "platform": "PS5",
+      "label": "WebKit Autoloader Installer",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/webkit-autoloader-installer_v0.6.2.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/fc59b60aab2d/zftpd_v1.6.0.elf",
+      "bytes": 19221056,
+      "sha256": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497",
+      "platform": "PS5",
+      "label": "zftpd",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/zftpd_v1.6.0.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/8b655a897126/elfldr-ps5.elf",
+      "bytes": 394480,
+      "sha256": "8b655a8971261f3f121b7a02659c6a818a75622e865177755af4827ef4e0d9d4",
+      "platform": "PS5",
+      "label": "elfldr-ps5.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/poopspl/payloads/elfldr-ps5.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/2a42054fd972/pldmgr_v0.6.3.elf",
+      "bytes": 2795992,
+      "sha256": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "platform": "PS5",
+      "label": "pldmgr",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/pldmgr_v0.6.3.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/08c843018750/shadowmountplus.elf",
+      "bytes": 3614944,
+      "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da",
+      "platform": "PS5",
+      "label": "ShadowMountPlus 1.7beta11",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/shadowmountplus.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/4ae1ea4e37b2/CheatRunner.elf",
+      "bytes": 8272800,
+      "sha256": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
+      "platform": "PS5",
+      "label": "CheatRunner",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/CheatRunner.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/c8e36ea06cfd/payload.elf",
+      "bytes": 2526736,
+      "sha256": "c8e36ea06cfd37c5fad356ff9fcd09d3e62065d88170b5119ce8f1eeb3efacac",
+      "platform": "PS5",
+      "label": "payload.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/payload.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/5165cbe4c133/pldmgr_v0.6.1.elf",
+      "bytes": 3484120,
+      "sha256": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
+      "platform": "PS5",
+      "label": "pldmgr_v0.6.1.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/pldmgr_v0.6.1.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/c850f1df6f27/ps5-app-dumper_v2.10.elf",
+      "bytes": 1410752,
+      "sha256": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
+      "platform": "PS5",
+      "label": "ps5-app-dumper",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5-app-dumper_v2.10.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/1fdf0a79687a/ps5upload_v6.1.2.elf",
+      "bytes": 3274512,
+      "sha256": "1fdf0a79687a4a823dd7c331c267cf492f849bd2bc6666e2db496fc03e544162",
+      "platform": "PS5",
+      "label": "ps5upload_v6.1.2.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ps5upload_v6.1.2.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/e382353612fd/ps5upload_v7.0.22.elf",
+      "bytes": 3299976,
+      "sha256": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
+      "platform": "PS5",
+      "label": "ps5upload",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5upload_v7.0.22.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/e85fd63b7054/ShadowMountPlus_1.7-beta5fix1.elf",
+      "bytes": 2498376,
+      "sha256": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5",
+      "platform": "PS5",
+      "label": "ShadowMountPlus_1.7-beta5fix1.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ShadowMountPlus_1.7-beta5fix1.elf"
+    },
+    {
+      "url": "/downloads/hosts/console-updates/f662c75a502e/WebKit-Autoloader-Installer_v0.6.1.elf",
+      "bytes": 3556608,
+      "sha256": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "platform": "PS5",
+      "label": "WebKit-Autoloader-Installer_v0.6.1.elf",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/WebKit-Autoloader-Installer_v0.6.1.elf"
+    }
+  ],
+  "legacyDelivery": {
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/WildeModz-1.38.bin": {
+      "url": "/downloads/hosts/console-updates/e82fe24709f9/WildeModz-1.38.bin",
+      "bytes": 593216,
+      "sha256": "e82fe24709f9155bc1c77ffa1b2318bee03b5ec7bb4d120b7aadf21b48f6adf8"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/arabic-guy100.bin": {
+      "url": "/downloads/hosts/console-updates/80849dc10d77/arabic-guy100.bin",
+      "bytes": 1055408,
+      "sha256": "80849dc10d770b5e4596b0c32774b03b156245c18f1527157d6a967854b990a8"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/arabic-guy127.bin": {
+      "url": "/downloads/hosts/console-updates/a603fa84029a/arabic-guy127.bin",
+      "bytes": 1055408,
+      "sha256": "a603fa84029a0c9bd29e3e5d6ea2f97aa668f0600403c4102f4c35b186b982f4"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/900v3/arabic-guy132.bin": {
+      "url": "/downloads/hosts/console-updates/3dddf0161fb4/arabic-guy132.bin",
+      "bytes": 1055408,
+      "sha256": "3dddf0161fb409e7e9711c6b53e4eaef4c34f9768e263a9821b217b1bde00daa"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.00.bin": {
+      "url": "/downloads/hosts/console-updates/09925fe9288b/OystersMenu-v1.00.bin",
+      "bytes": 1260864,
+      "sha256": "09925fe9288bd9e68f49ffaffba3e92fb6ddb1c8cf416e16251cdef53f19a67a"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.13.bin": {
+      "url": "/downloads/hosts/console-updates/38f847706303/OystersMenu-v1.13.bin",
+      "bytes": 1260864,
+      "sha256": "38f847706303c2c2b5b71102073ac86fa534f1bc09b6c40129275a53b0c81718"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.19.bin": {
+      "url": "/downloads/hosts/console-updates/93fd71c737f4/OystersMenu-v1.19.bin",
+      "bytes": 1260864,
+      "sha256": "93fd71c737f4433f72dd594685303e23183859fa448dfafefc15bd8906676f7e"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/OystersMenu-v1.24.bin": {
+      "url": "/downloads/hosts/console-updates/b5566c5629c8/OystersMenu-v1.24.bin",
+      "bytes": 1260864,
+      "sha256": "b5566c5629c86f8860ba190537e0c2a2e220c879f469a155b924467b975ec08d"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/arabic-guy100.bin": {
+      "url": "/downloads/hosts/console-updates/49d151bfb960/arabic-guy100.bin",
+      "bytes": 1055340,
+      "sha256": "49d151bfb960fb42d465134ab91f5173407a8ac202d75d23a3b2e441bc7cffd0"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/WildeModz-1.33.bin": {
+      "url": "/downloads/hosts/console-updates/1c742c48aeb6/WildeModz-1.33.bin",
+      "bytes": 1074320,
+      "sha256": "1c742c48aeb6009f3e99468ab2702499ed66f0d642d624e9844a0f4aa595fb60"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/505/WildeModz-1.46.bin": {
+      "url": "/downloads/hosts/console-updates/f262d4878e01/WildeModz-1.46.bin",
+      "bytes": 29416,
+      "sha256": "f262d4878e01d057e4ee4d35a49ddf1363fa4ee9667dd50acf181a99aa8af07d"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy100.bin": {
+      "url": "/downloads/hosts/console-updates/41a189bec891/pl_GTA_ArabicGuy100.bin",
+      "bytes": 1055064,
+      "sha256": "41a189bec891d371cb48fe5d727b986bdb0ae15a50fc6a0df4e2106caa6041d5"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy127.bin": {
+      "url": "/downloads/hosts/console-updates/1291b7a2f14b/pl_GTA_ArabicGuy127.bin",
+      "bytes": 1055384,
+      "sha256": "1291b7a2f14b888bea93a076beb889a8980be8d92b489f62f742e0cc2126b5ee"
+    },
+    "https://raw.githubusercontent.com/GamerHack/GamerHack.github.io/23c946a7f85f1338ea2b78163e72e0ce9bc82b68/672/pl_GTA_ArabicGuy132.bin": {
+      "url": "/downloads/hosts/console-updates/c868f5f52fa6/pl_GTA_ArabicGuy132.bin",
+      "bytes": 1054936,
+      "sha256": "c868f5f52fa6ead0464f37066702865470f4010210b2ade595b47cf490b6e6ae"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_2.1_505.bin": {
+      "url": "/downloads/hosts/console-updates/c623f4b074e5/goldhen_2.1_505.bin",
+      "bytes": 228408,
+      "sha256": "c623f4b074e5de08ae70c9e3f21ee0c56c8f198b4d9156c0ac6d5b4f32b2c75e"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_2.1.1_505.bin": {
+      "url": "/downloads/hosts/console-updates/19cabf51f31b/goldhen_2.1.1_505.bin",
+      "bytes": 230744,
+      "sha256": "19cabf51f31bd3636c3c2855086e31280fa8b5a819722165796347c469613786"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_2.2_505.bin": {
+      "url": "/downloads/hosts/console-updates/4f0c28e4fb44/goldhen_2.2_505.bin",
+      "bytes": 250072,
+      "sha256": "4f0c28e4fb44bc83d71951177c0608717e77920706f194bf4cfa85ac0af1948d"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_2.2.1_505.bin": {
+      "url": "/downloads/hosts/console-updates/a6fef74429bf/goldhen_2.2.1_505.bin",
+      "bytes": 251448,
+      "sha256": "a6fef74429bf2cc6ceab33933fad3edc01b280a4e058992b9657b335498a07bd"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_2.2.2_505.bin": {
+      "url": "/downloads/hosts/console-updates/07d5a3e25b4a/goldhen_2.2.2_505.bin",
+      "bytes": 252024,
+      "sha256": "07d5a3e25b4a3d30e58732d35213c20eea856d44df18409add7a7b0d5ba45d24"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_2.2.3_505.bin": {
+      "url": "/downloads/hosts/console-updates/04be8dcf6988/goldhen_2.2.3_505.bin",
+      "bytes": 267960,
+      "sha256": "04be8dcf69884894deef8ed3c98f0bb63de206202e00154e60284306a78656eb"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_2.2.4_505.bin": {
+      "url": "/downloads/hosts/console-updates/528c2247e729/goldhen_2.2.4_505.bin",
+      "bytes": 272472,
+      "sha256": "528c2247e729c891d99ff17d7ecb2bdf8f376e731e572a50082c8e51bf683739"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/505/goldhen_212_505.bin": {
+      "url": "/downloads/hosts/console-updates/dad90b0deded/goldhen_212_505.bin",
+      "bytes": 233304,
+      "sha256": "dad90b0deded0f68bf792c2c398460e900013d198ef1a2cf01c0e1d9a054c734"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_2.1_672.bin": {
+      "url": "/downloads/hosts/console-updates/92021d8ff479/goldhen_2.1_672.bin",
+      "bytes": 228120,
+      "sha256": "92021d8ff4796182e6e529e29796235e218c6364210abad80582bc75919c0fd2"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_2.1.1_672.bin": {
+      "url": "/downloads/hosts/console-updates/4ddd0f9c009e/goldhen_2.1.1_672.bin",
+      "bytes": 233880,
+      "sha256": "4ddd0f9c009e801ed7778ce9b69e00677faec46fde0ba2caec1e83f9a2f9e802"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_2.2_672.bin": {
+      "url": "/downloads/hosts/console-updates/10242035e9fe/goldhen_2.2_672.bin",
+      "bytes": 249592,
+      "sha256": "10242035e9fea53e0d52ffb79656fb760d8d82482fd997f7449b89d023ca55d3"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_2.2.1_672.bin": {
+      "url": "/downloads/hosts/console-updates/6de99b7336d1/goldhen_2.2.1_672.bin",
+      "bytes": 244792,
+      "sha256": "6de99b7336d1d5a325f801856e04a7dda47da66c2a57860257d1bbdc52f8c936"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_2.2.2_672.bin": {
+      "url": "/downloads/hosts/console-updates/76c3938ce754/goldhen_2.2.2_672.bin",
+      "bytes": 252504,
+      "sha256": "76c3938ce754e558b6b0dcfa4478237e27ba4082985335666fff8c494f1c9d02"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_2.2.3_672.bin": {
+      "url": "/downloads/hosts/console-updates/01e5a0d7e61f/goldhen_2.2.3_672.bin",
+      "bytes": 268088,
+      "sha256": "01e5a0d7e61f34c2f22faf7e432f2c0ffbacb215f743e2ade17e085e30c5deae"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_2.2.4_672.bin": {
+      "url": "/downloads/hosts/console-updates/aa6e138c4211/goldhen_2.2.4_672.bin",
+      "bytes": 272824,
+      "sha256": "aa6e138c4211db4dee74473331a7103f5c71d056e38e4cf5ec12f0e5f63f21ac"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/672L/goldhen_212_672.bin": {
+      "url": "/downloads/hosts/console-updates/9f5bdfb3db6d/goldhen_212_672.bin",
+      "bytes": 235192,
+      "sha256": "9f5bdfb3db6d93814ede54cb02824cc840fa58e9c1ecfb5cfe662673e4ff20dc"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/702/goldhen_2.2.2_702.bin": {
+      "url": "/downloads/hosts/console-updates/2b8e1b21e74c/goldhen_2.2.2_702.bin",
+      "bytes": 251064,
+      "sha256": "2b8e1b21e74c3a026f495aca43c778d5a663bc8379634be8b609c0f9c3ec2e97"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/702/goldhen_2.3_702.bin": {
+      "url": "/downloads/hosts/console-updates/a38ec39705fa/goldhen_2.3_702.bin",
+      "bytes": 285560,
+      "sha256": "a38ec39705fa9536a3e0a2031afdd10ed5a3680c9f7695935ee055c39f98d6ca"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/755/goldhen_2.3_755.bin": {
+      "url": "/downloads/hosts/console-updates/32c378f4be2e/goldhen_2.3_755.bin",
+      "bytes": 297336,
+      "sha256": "32c378f4be2e691f4fd6476c57b8c34bc469c6fcfba380e9deaa0f97d6658942"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900C/goldhen_2.2.2_900.bin": {
+      "url": "/downloads/hosts/console-updates/a791ddff6ccb/goldhen_2.2.2_900.bin",
+      "bytes": 251192,
+      "sha256": "a791ddff6ccb5e8755682e3debdd62c191b9394efdd8c3b138575365c738e917"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900C/goldhen_2.2.3_900.bin": {
+      "url": "/downloads/hosts/console-updates/cb135f5d8ae9/goldhen_2.2.3_900.bin",
+      "bytes": 270424,
+      "sha256": "cb135f5d8ae91b8d0a6e26f5e38642fae080e3067f08dd19ee4ce23b21c6c8e8"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900C/goldhen_2.2.4_900.bin": {
+      "url": "/downloads/hosts/console-updates/8371a836b634/goldhen_2.2.4_900.bin",
+      "bytes": 275192,
+      "sha256": "8371a836b634a09887ebc0c5714e567e7a1ec750edc203f9510352b2466560b9"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900C/goldhen_212_900.bin": {
+      "url": "/downloads/hosts/console-updates/c1b6b5cf2e2a/goldhen_212_900.bin",
+      "bytes": 234872,
+      "sha256": "c1b6b5cf2e2a54f0d5328d16f096f33616eabf1e1cdfbdb086a06b8092ed1fed"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900N/goldhen_2.1_900.bin": {
+      "url": "/downloads/hosts/console-updates/f2c1efc52e99/goldhen_2.1_900.bin",
+      "bytes": 233912,
+      "sha256": "f2c1efc52e99b34dfe31c7b46943ed6f965403ae67fa194fdbf3fe5df828a852"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900N/goldhen_2.1.1_900.bin": {
+      "url": "/downloads/hosts/console-updates/61583ffb9dc2/goldhen_2.1.1_900.bin",
+      "bytes": 227992,
+      "sha256": "61583ffb9dc2e2a2f4ba0bc6c2e2f0e6ec8c8d5c439abec518d3211737ede36a"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900N/goldhen_2.2_900.bin": {
+      "url": "/downloads/hosts/console-updates/e9bab80d7354/goldhen_2.2_900.bin",
+      "bytes": 247160,
+      "sha256": "e9bab80d735449a28a4b7a6bf94198bb4858e366542d495ba9f2eb63167342a8"
+    },
+    "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/743646c9df9ab4c83821b660c12e23a3dda57b49/900N/goldhen_2.2.1_900.bin": {
+      "url": "/downloads/hosts/console-updates/574d4351470c/goldhen_2.2.1_900.bin",
+      "bytes": 253464,
+      "sha256": "574d4351470c4ebdef9d40809c9ca3e03f0a70a5f057b330afc037436c797c56"
+    }
+  },
+  "nativeFiles": [
+    {
+      "path": "ps5/relapse/index.html",
+      "bytes": 13748,
+      "sha256": "74bddbe0e7e9388755f5b6a439bafeb55a563ba6a186d2d7a5fe3b0566926b0d",
+      "servedSHA256": "069a283d565f7a4a2a4084a926ed3a10fa4ef08d3c14a6bc412dd5a409849fc2",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/index.html"
+    },
+    {
+      "path": "ps5/relapse/offsets/10.00.js",
+      "bytes": 11352,
+      "sha256": "23a0e624f4b566b8188c47486177eaf0fe4853148ffe1eaba9894650d3b22a65",
+      "servedSHA256": "23a0e624f4b566b8188c47486177eaf0fe4853148ffe1eaba9894650d3b22a65",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/10.00.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/10.01.js",
+      "bytes": 11351,
+      "sha256": "203062c0085941bba84ffc7b40465f642f37f94c0f414b1a16ddd16c89f0073d",
+      "servedSHA256": "203062c0085941bba84ffc7b40465f642f37f94c0f414b1a16ddd16c89f0073d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/10.01.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/10.20.js",
+      "bytes": 11351,
+      "sha256": "60b5823268fcc855680d9538662144cd1064bb24e5266ea597311925c7437089",
+      "servedSHA256": "60b5823268fcc855680d9538662144cd1064bb24e5266ea597311925c7437089",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/10.20.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/10.40.js",
+      "bytes": 11351,
+      "sha256": "28e86590dee5feeb4918b75e2db1f0b6d6cf1a1358c6e6b4c713cb07a1c95ef7",
+      "servedSHA256": "28e86590dee5feeb4918b75e2db1f0b6d6cf1a1358c6e6b4c713cb07a1c95ef7",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/10.40.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/10.60.js",
+      "bytes": 11301,
+      "sha256": "e5f8bb96dd50af9419c29c7dd16ac033ef26fa928369c2721a092263ea454a8d",
+      "servedSHA256": "e5f8bb96dd50af9419c29c7dd16ac033ef26fa928369c2721a092263ea454a8d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/10.60.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/11.00.js",
+      "bytes": 11351,
+      "sha256": "3f62e413c124d0166141e793e4b190018a92a8ac00022342271da562ba63a6c8",
+      "servedSHA256": "3f62e413c124d0166141e793e4b190018a92a8ac00022342271da562ba63a6c8",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/11.00.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/11.20.js",
+      "bytes": 11351,
+      "sha256": "f18615129b879a67b4deae62aa17500c96155ee3eda7bd42cf82aaa27463a848",
+      "servedSHA256": "f18615129b879a67b4deae62aa17500c96155ee3eda7bd42cf82aaa27463a848",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/11.20.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/11.40.js",
+      "bytes": 13101,
+      "sha256": "b119d5cb242a4c0cad7bc73de71faa473ed4424f01cf602ba32411af6a67fc40",
+      "servedSHA256": "b119d5cb242a4c0cad7bc73de71faa473ed4424f01cf602ba32411af6a67fc40",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/11.40.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/11.60.js",
+      "bytes": 11919,
+      "sha256": "67315a4b6868bd2eea3cca36290fb5d3a5e12c2df654e31c503811db3ddfab4d",
+      "servedSHA256": "67315a4b6868bd2eea3cca36290fb5d3a5e12c2df654e31c503811db3ddfab4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/11.60.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/12.00.js",
+      "bytes": 12783,
+      "sha256": "d7f1afffc3d25373c7754ac44a2f6d7aedacc90718b4b814e9ee95c5a314f25f",
+      "servedSHA256": "d7f1afffc3d25373c7754ac44a2f6d7aedacc90718b4b814e9ee95c5a314f25f",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/12.00.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/12.02.js",
+      "bytes": 12320,
+      "sha256": "b913009b5dfd2ed24b952ee976ac1aac4b6e2ff66146510d994d3ec885331af7",
+      "servedSHA256": "b913009b5dfd2ed24b952ee976ac1aac4b6e2ff66146510d994d3ec885331af7",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/12.02.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/12.20.js",
+      "bytes": 12318,
+      "sha256": "388c4880f44a49a0a8d6cda376115e6a1087485cbc1a91320d5a4358b853bffc",
+      "servedSHA256": "388c4880f44a49a0a8d6cda376115e6a1087485cbc1a91320d5a4358b853bffc",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/12.20.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/12.40.js",
+      "bytes": 12320,
+      "sha256": "28269726e800c2ba14112c714e3246ba025533dfe0e4199ea27892dc3bdd17f0",
+      "servedSHA256": "28269726e800c2ba14112c714e3246ba025533dfe0e4199ea27892dc3bdd17f0",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/12.40.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/12.60.js",
+      "bytes": 12320,
+      "sha256": "a51c94ee5f288a2c362b72d802b088568791a2946fa57cfb461155d16886a6e5",
+      "servedSHA256": "a51c94ee5f288a2c362b72d802b088568791a2946fa57cfb461155d16886a6e5",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/12.60.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/12.70.js",
+      "bytes": 12177,
+      "sha256": "f7d9c5130a16943f6d18a133bf2e8c71b7e2f3454032d6d64ed4756f6f0a078b",
+      "servedSHA256": "f7d9c5130a16943f6d18a133bf2e8c71b7e2f3454032d6d64ed4756f6f0a078b",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/12.70.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/13.00.js",
+      "bytes": 11693,
+      "sha256": "4b009a8a12fa39558f21549bd6d609fa04a6b937124d9574a72c75e9ef738206",
+      "servedSHA256": "4b009a8a12fa39558f21549bd6d609fa04a6b937124d9574a72c75e9ef738206",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/13.00.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/13.20.js",
+      "bytes": 10952,
+      "sha256": "6c45b7bb2319b1888160fc065a1d50d51cf7150f5a97ed01274dd8ef427926dd",
+      "servedSHA256": "6c45b7bb2319b1888160fc065a1d50d51cf7150f5a97ed01274dd8ef427926dd",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/13.20.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/13.40.js",
+      "bytes": 10952,
+      "sha256": "55e07df0216d2bf10b14cb83a393cce14539879a7cd598ecb2c9ed933a85d662",
+      "servedSHA256": "55e07df0216d2bf10b14cb83a393cce14539879a7cd598ecb2c9ed933a85d662",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/13.40.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/13.42.js",
+      "bytes": 10952,
+      "sha256": "ba2458d7a2317e84ee11edb205e74817965713d90714bd43f4f7c432c51df44f",
+      "servedSHA256": "ba2458d7a2317e84ee11edb205e74817965713d90714bd43f4f7c432c51df44f",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/13.42.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/13.60.js",
+      "bytes": 11363,
+      "sha256": "fea189d5357f5b9a3b38f8c12c070ebbcc64b0a13a11d587892036606b818b25",
+      "servedSHA256": "fea189d5357f5b9a3b38f8c12c070ebbcc64b0a13a11d587892036606b818b25",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/13.60.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/7.00.js",
+      "bytes": 11273,
+      "sha256": "2783ad919f990f9a9c32d0a6c1548390d9935f39f12e30e88e8556cb932d54c9",
+      "servedSHA256": "2783ad919f990f9a9c32d0a6c1548390d9935f39f12e30e88e8556cb932d54c9",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/7.00.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/7.01.js",
+      "bytes": 11273,
+      "sha256": "33159eb5194e68063670d4436269fd9b649cd15e21b740b4a8908fbd083c5a62",
+      "servedSHA256": "33159eb5194e68063670d4436269fd9b649cd15e21b740b4a8908fbd083c5a62",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/7.01.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/7.20.js",
+      "bytes": 11293,
+      "sha256": "2ad96fb5928bfef623de9715b08f8c8cc97a1b54492f1e88c1f7e67db8a5b454",
+      "servedSHA256": "2ad96fb5928bfef623de9715b08f8c8cc97a1b54492f1e88c1f7e67db8a5b454",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/7.20.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/7.40.js",
+      "bytes": 11293,
+      "sha256": "0d03f0394133cc9bd63deeee32053f4dd20fe9ed7ddbddc720f1d70cc1d8bd1a",
+      "servedSHA256": "0d03f0394133cc9bd63deeee32053f4dd20fe9ed7ddbddc720f1d70cc1d8bd1a",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/7.40.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/7.60.js",
+      "bytes": 11293,
+      "sha256": "8d193a9c820a9a28d40f4e804824b7e72bbe6a9e1bb0ea40c77f583212220485",
+      "servedSHA256": "8d193a9c820a9a28d40f4e804824b7e72bbe6a9e1bb0ea40c77f583212220485",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/7.60.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/7.61.js",
+      "bytes": 11293,
+      "sha256": "cb57359fe88f6f1ddb660a4db1a32628c098f49535e622a17ca59b032b4c82f8",
+      "servedSHA256": "cb57359fe88f6f1ddb660a4db1a32628c098f49535e622a17ca59b032b4c82f8",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/7.61.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/8.00.js",
+      "bytes": 11313,
+      "sha256": "d8bf9a9e6b76dd650b884a0f1bda633166206d42160e15d64008ba98c330a575",
+      "servedSHA256": "d8bf9a9e6b76dd650b884a0f1bda633166206d42160e15d64008ba98c330a575",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/8.00.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/8.20.js",
+      "bytes": 11313,
+      "sha256": "920ba75eb9679588465ec0b39f8f04acbee9f93a84549c43ee4c2dc037ed7b4f",
+      "servedSHA256": "920ba75eb9679588465ec0b39f8f04acbee9f93a84549c43ee4c2dc037ed7b4f",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/8.20.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/8.40.js",
+      "bytes": 11313,
+      "sha256": "e5978f69d09137c65280c7a30524d3ff4d3355452e5af4bdf2cd3782429be3af",
+      "servedSHA256": "e5978f69d09137c65280c7a30524d3ff4d3355452e5af4bdf2cd3782429be3af",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/8.40.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/8.60.js",
+      "bytes": 11313,
+      "sha256": "cf9ca033e9f773b9d4a665516f674ebf40daa202bee72390c7bd5f9b0272ca0a",
+      "servedSHA256": "cf9ca033e9f773b9d4a665516f674ebf40daa202bee72390c7bd5f9b0272ca0a",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/8.60.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/9.00.js",
+      "bytes": 11350,
+      "sha256": "514a79fe229a0f1ac131aa450f9ce2e8b7f4a08fb6fefd036bbfd35bdeb6d458",
+      "servedSHA256": "514a79fe229a0f1ac131aa450f9ce2e8b7f4a08fb6fefd036bbfd35bdeb6d458",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/9.00.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/9.05.js",
+      "bytes": 13952,
+      "sha256": "8aa6b3abc3ceb977a52ffc2c065dedf8d54bd5181f83bef7fbddfed0b1bb6236",
+      "servedSHA256": "8aa6b3abc3ceb977a52ffc2c065dedf8d54bd5181f83bef7fbddfed0b1bb6236",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/9.05.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/9.20.js",
+      "bytes": 11350,
+      "sha256": "278580cde067cb876caff4a66fab445f64713dc04cf37ef708a8ad93bdde2a7b",
+      "servedSHA256": "278580cde067cb876caff4a66fab445f64713dc04cf37ef708a8ad93bdde2a7b",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/9.20.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/9.40.js",
+      "bytes": 11350,
+      "sha256": "be63f0e84d9dbc5fabdf278ea785e3403aea7051d575ab22e811c162f607761e",
+      "servedSHA256": "be63f0e84d9dbc5fabdf278ea785e3403aea7051d575ab22e811c162f607761e",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/9.40.js"
+    },
+    {
+      "path": "ps5/relapse/offsets/9.60.js",
+      "bytes": 11350,
+      "sha256": "9dad0a62346d5c487ab0a5eebfeb710309535cd9dd3f83b5b6e437878b240273",
+      "servedSHA256": "9dad0a62346d5c487ab0a5eebfeb710309535cd9dd3f83b5b6e437878b240273",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/offsets/9.60.js"
+    },
+    {
+      "path": "ps5/relapse/payloads.js",
+      "bytes": 4003,
+      "sha256": "f789aaf6e62e73d726a995a3f23768833333acea314cb2ef3364fe04e4a1319a",
+      "servedSHA256": "f789aaf6e62e73d726a995a3f23768833333acea314cb2ef3364fe04e4a1319a",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads.js"
+    },
+    {
+      "path": "ps5/relapse/payloads/browser_launcher_v1.0.0.elf",
+      "bytes": 416352,
+      "sha256": "8162e9c0988e0e69d506840d3ba0a239fdbc5fbea60517cfaa6f820b23cd96f4",
+      "servedSHA256": "8162e9c0988e0e69d506840d3ba0a239fdbc5fbea60517cfaa6f820b23cd96f4",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/browser_launcher_v1.0.0.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/CheatRunner.elf",
+      "bytes": 8272800,
+      "sha256": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
+      "servedSHA256": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/CheatRunner.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/etaHEN.elf",
+      "bytes": 4740712,
+      "sha256": "512c74a9d6f56bb5a4ab871a0306a8cbefb8b3d5454ba8f1d833b020b245a126",
+      "servedSHA256": "512c74a9d6f56bb5a4ab871a0306a8cbefb8b3d5454ba8f1d833b020b245a126",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/etaHEN.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ftpsrv-drakmor_1.16-ng-stable.elf",
+      "bytes": 230640,
+      "sha256": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32",
+      "servedSHA256": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ftpsrv-drakmor_1.16-ng-stable.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/garlic-savemgr_v1.13.1.elf",
+      "bytes": 1665456,
+      "sha256": "b0fc2fcdda977d2a1207d77148746859b7ea7f3cfcad02828a7a9b49651807f5",
+      "servedSHA256": "b0fc2fcdda977d2a1207d77148746859b7ea7f3cfcad02828a7a9b49651807f5",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/garlic-savemgr_v1.13.1.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/kstuff-lite_v1.11.elf",
+      "bytes": 1737080,
+      "sha256": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
+      "servedSHA256": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/kstuff-lite_v1.11.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/Lapy-JB-Daemon_v1.2.elf",
+      "bytes": 154280,
+      "sha256": "13559b858fc33cc7fa3dc89e10dccf139070d99ee5d378dd75c969293700799e",
+      "servedSHA256": "13559b858fc33cc7fa3dc89e10dccf139070d99ee5d378dd75c969293700799e",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/Lapy-JB-Daemon_v1.2.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/OnionHEN.elf",
+      "bytes": 4947888,
+      "sha256": "ba8db5c287a5f5ea8bc7400c25b90312b751672e8772b2ff15b2c0377b77ea13",
+      "servedSHA256": "ba8db5c287a5f5ea8bc7400c25b90312b751672e8772b2ff15b2c0377b77ea13",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/OnionHEN.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/OnionHENk1.11.elf",
+      "bytes": 4676224,
+      "sha256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
+      "servedSHA256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/OnionHENk1.11.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/PKG-Manager_v1.4.1.elf",
+      "bytes": 1939016,
+      "sha256": "09adaff13b858bb3db519faaea673ee3fa67298081e608d32f6501ed6e9f706e",
+      "servedSHA256": "09adaff13b858bb3db519faaea673ee3fa67298081e608d32f6501ed6e9f706e",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/PKG-Manager_v1.4.1.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/pldmgr_v0.6.1.elf",
+      "bytes": 3484120,
+      "sha256": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
+      "servedSHA256": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/pldmgr_v0.6.1.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ps5-app-dumper_v2.10.elf",
+      "bytes": 1410752,
+      "sha256": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
+      "servedSHA256": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ps5-app-dumper_v2.10.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ps5debug-NG_1.3.2.elf",
+      "bytes": 4059688,
+      "sha256": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3",
+      "servedSHA256": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ps5debug-NG_1.3.2.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ps5upload_v7.0.22.elf",
+      "bytes": 3299976,
+      "sha256": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
+      "servedSHA256": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ps5upload_v7.0.22.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/shadowmountplus.elf",
+      "bytes": 3264664,
+      "sha256": "7163472217a2390f5bcbe3b61a96963976f7b7bd84d960b8d926f35b9cbecf28",
+      "servedSHA256": "7163472217a2390f5bcbe3b61a96963976f7b7bd84d960b8d926f35b9cbecf28",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/shadowmountplus.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/WebKit-Autoloader-Installer_v0.6.1.elf",
+      "bytes": 3556608,
+      "sha256": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "servedSHA256": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/WebKit-Autoloader-Installer_v0.6.1.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/zftpd_v1.6.0.elf",
+      "bytes": 19221056,
+      "sha256": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497",
+      "servedSHA256": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/zftpd_v1.6.0.elf"
+    },
+    {
+      "path": "ps5/relapse/shared/elfldr-ps5.elf",
+      "bytes": 394480,
+      "sha256": "fa3f0c2b778318000982ada05c01bde70ac875c85e4be6fcc9b5ba836f6d1c3c",
+      "servedSHA256": "fa3f0c2b778318000982ada05c01bde70ac875c85e4be6fcc9b5ba836f6d1c3c",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/shared/elfldr-ps5.elf"
+    },
+    {
+      "path": "ps5/relapse/shared/kexp-ps5.bin",
+      "bytes": 18208,
+      "sha256": "4e29cb74ffc1771b16e59d4998517aea32ecded651f814b71dc7ee50abff089f",
+      "servedSHA256": "4e29cb74ffc1771b16e59d4998517aea32ecded651f814b71dc7ee50abff089f",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/shared/kexp-ps5.bin"
+    },
+    {
+      "path": "ps5/relapse/src/firmware.js",
+      "bytes": 932,
+      "sha256": "e261d828395cc82c1cb37db1122fe0df1e83e1ed6a31fb62b022fa0c25c17114",
+      "servedSHA256": "e261d828395cc82c1cb37db1122fe0df1e83e1ed6a31fb62b022fa0c25c17114",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/firmware.js"
+    },
+    {
+      "path": "ps5/relapse/src/kexp.js",
+      "bytes": 13547,
+      "sha256": "7f84aafcbd5b45939561180ad186df9583c393bae501377ae5715f7455022cfc",
+      "servedSHA256": "7f84aafcbd5b45939561180ad186df9583c393bae501377ae5715f7455022cfc",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/kexp.js"
+    },
+    {
+      "path": "ps5/relapse/src/main.js",
+      "bytes": 14165,
+      "sha256": "de6e3b50b7914bc3909a79adc6af1678ac316f15e1d10782bdf3aa1b1b4a7384",
+      "servedSHA256": "de6e3b50b7914bc3909a79adc6af1678ac316f15e1d10782bdf3aa1b1b4a7384",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/main.js"
+    },
+    {
+      "path": "ps5/relapse/src/relapse_exploit.js",
+      "bytes": 40474,
+      "sha256": "85f2999040a9ef99c27588fb7ad0cb6d1921bec2bc000094a3de9c48e45e1d3a",
+      "servedSHA256": "85f2999040a9ef99c27588fb7ad0cb6d1921bec2bc000094a3de9c48e45e1d3a",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/relapse_exploit.js"
+    },
+    {
+      "path": "ps5/relapse/src/rop.js",
+      "bytes": 3410,
+      "sha256": "5e07dccb8ebf059964c8d520c5df9ba1abe13b179167da77b7553ac5e47bbdb3",
+      "servedSHA256": "5e07dccb8ebf059964c8d520c5df9ba1abe13b179167da77b7553ac5e47bbdb3",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/rop.js"
+    },
+    {
+      "path": "ps5/relapse/src/site.js",
+      "bytes": 3057,
+      "sha256": "ad3e41a0252d9139c798a7a2188d5b2b522fee91860a52f1c2655a25b943a74c",
+      "servedSHA256": "ad3e41a0252d9139c798a7a2188d5b2b522fee91860a52f1c2655a25b943a74c",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/site.js"
+    },
+    {
+      "path": "ps5/relapse/src/utils/int64.js",
+      "bytes": 1370,
+      "sha256": "0ae17a26c6280cf615acf206d013b53ffc6933bbde60066db8aad36f4ae3f015",
+      "servedSHA256": "0ae17a26c6280cf615acf206d013b53ffc6933bbde60066db8aad36f4ae3f015",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/utils/int64.js"
+    },
+    {
+      "path": "ps5/relapse/src/utils/mem.js",
+      "bytes": 4854,
+      "sha256": "250289a34f114f78e4d4893b1fc75dcc067079edb73d495318b5f897344f3513",
+      "servedSHA256": "250289a34f114f78e4d4893b1fc75dcc067079edb73d495318b5f897344f3513",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/utils/mem.js"
+    },
+    {
+      "path": "ps5/relapse/src/utils/rop_slave.js",
+      "bytes": 85,
+      "sha256": "18f8bd08d5fcbea849d2b5253aadfd1564c94967e98ebd6ad70c1fd7db3b1924",
+      "servedSHA256": "18f8bd08d5fcbea849d2b5253aadfd1564c94967e98ebd6ad70c1fd7db3b1924",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/utils/rop_slave.js"
+    },
+    {
+      "path": "ps5/relapse/src/utils/syscalls.js",
+      "bytes": 16460,
+      "sha256": "fb38b26e4e4580a7ecfba56d652d75fbfabc17f3e5630a8940181caaf97829c9",
+      "servedSHA256": "fb38b26e4e4580a7ecfba56d652d75fbfabc17f3e5630a8940181caaf97829c9",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/utils/syscalls.js"
+    },
+    {
+      "path": "ps5/relapse/src/webkit.js",
+      "bytes": 20965,
+      "sha256": "3377ccc7c10a86a5ece4ea3249f1b45b54c20de7a5a96e77a75c54ada373b0ca",
+      "servedSHA256": "3377ccc7c10a86a5ece4ea3249f1b45b54c20de7a5a96e77a75c54ada373b0ca",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/src/webkit.js"
+    }
+  ],
+  "menuPayloads": 17,
+  "physicalConsoleTested": false,
+  "ps4WebHostZIP": {
+    "url": "/downloads/hosts/console-updates/cb12ba07ae82/ps4-multi-firmware-web-host.zip",
+    "bytes": 1319796,
+    "sha256": "cb12ba07ae82fc240fd657a1f9eaa7bb688e3cd5aa3e142698188cb51eff29a0",
+    "version": "c72eaae88594+ecece4c2e855"
+  }
+}
