@@ -41,8 +41,8 @@ function binaryCheck(bytes,extension){
  else if(extension==='bin'&&bytes.length<256)issues.push({code:'raw-bin-too-small',message:'The original flat BIN is shorter than 256 bytes; not offered as a ready payload.'});
  return{status:issues.length?'invalid':'structurally-valid',format:extension.toUpperCase(),metadata,issues,hardwareVerified:false};
 }
-function audit({write=true}={}){
- const input=JSON.parse(fs.readFileSync(path.join(root,'docs/host-reviews/karo/runtime-acquisition.json'),'utf8')),source=JSON.parse(fs.readFileSync(path.join(root,'docs/host-reviews/karo/source-review.json'),'utf8'));
+function audit({write=true,inputDir=path.join(root,'docs/host-reviews/karo'),output=path.join(root,reportFile)}={}){
+ const input=JSON.parse(fs.readFileSync(path.join(inputDir,'runtime-acquisition.json'),'utf8')),source=JSON.parse(fs.readFileSync(path.join(inputDir,'source-review.json'),'utf8'));
  if(input.commit!==source.commit||!/^[a-f0-9]{40}$/.test(input.commit))throw Error('Pinned source identity differs');
  const stage=path.join(root,'tmp/karo-review',input.commit),decodedBase=path.join(root,'tmp/karo-decoded',input.commit),tree=new Map(source.tree.filter(f=>f.type==='blob').map(f=>[f.path,f])),files=[],buffers=new Map(),invalid=[],derived=[],decodeCache=new Map(),localUnavailable=[];
  for(const record of input.files){const absolute=safeLocal(stage,record.path);if(knownLocalUnavailable.has(record.path)&&!fs.existsSync(absolute)){const unavailable={...record,status:'local-unavailable',identityVerified:false,reason:'Windows Defender Operational event 1116 quarantined this source as Trojan:JS/Cryxos.AIDB!MTB. Not restored or fetched again.'};files.push(unavailable);localUnavailable.push(unavailable);continue;}const bytes=fs.readFileSync(absolute),digest=sha(bytes);if(bytes.length!==record.bytes||digest!==record.sha256)throw Error('Staged file identity mismatch: '+record.path);const blob=crypto.createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex'),original=tree.get(record.path);if(record.gitBlobSHA1&&(record.gitBlobSHA1!==blob||!original||original.sha!==blob||original.size!==bytes.length))throw Error('Pinned Git blob identity mismatch: '+record.path);const f={path:record.path,url:record.url,bytes:bytes.length,sha256:digest,gitBlobSHA1:record.gitBlobSHA1||null,identityVerified:true};buffers.set(record.path,bytes);
@@ -89,7 +89,7 @@ function audit({write=true}={}){
  report.localUnavailable=localUnavailable;report.summary.localUnavailable=localUnavailable.length;report.summary.verifiedFiles=files.filter(f=>f.identityVerified).length;report.summary.gitIdentities=files.filter(f=>f.identityVerified&&f.gitBlobSHA1).length;
  report.limits.push('Two pinned source paths were quarantined by Windows Defender Operational event 1116 as Trojan:JS/Cryxos.AIDB!MTB. Their expected acquisition metadata is retained, but unavailable local bytes are not reverified, restored or refetched.');
  report.invalid=invalid.map(f=>({path:f.path,reason:f.issues.map(i=>i.message).join(' '),issues:f.issues}));report.missing=failures;report.external=edges.filter(e=>e.state==='external');
- if(write)fs.writeFileSync(path.join(root,reportFile),JSON.stringify(report,null,2)+'\n');return report;
+ if(write)fs.writeFileSync(output,JSON.stringify(report,null,2)+'\n');return report;
 }
 if(require.main===module){try{const r=audit({write:!process.argv.includes('--check')});console.log(JSON.stringify(r.summary,null,2));}catch(e){console.error(e);process.exitCode=1;}}
 module.exports={audit,withoutJSComments,elfCheck,binaryCheck};

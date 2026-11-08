@@ -1852,5 +1852,33 @@
     "reviewedArchiveCountsInShippedReceiver": {"ps4": 11, "ps5": 15},
     "nativeOrDownloadBytesChanged": 0,
     "physicalConsoleTested": false
+  },
+  "karoGamerHackRefresh20261108": {
+    "status": "Implemented, archive bytes verified and Pages validation passed locally.",
+    "karoCommit": "c72eaae8859476d4772e613d011db9f0bb80c80d",
+    "gamerHackCommit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+    "sourceDelta": {
+      "addedOrChangedPaths": 158,
+      "removedUpstreamPaths": 402,
+      "verifiedStagedFiles": 1819
+    },
+    "newLocalRoute": "/hosts/ps4/exploit/karo-g2allpro-20261108/",
+    "updatesPage": "/hosts/karo/updates/",
+    "runtime": "/hosts/runtime/karo-c72eaae88594-6773d0ba66b1/web/",
+    "readyZIP": {
+      "path": "downloads/hosts/karo/c72eaae88594/g2allpro/ecece4c2e855/karo-g2allpro-c72eaae88594-ecece4c2e855.zip",
+      "platform": "PS4",
+      "bytes": 1319796,
+      "sha256": "cb12ba07ae82fc240fd657a1f9eaa7bb688e3cd5aa3e142698188cb51eff29a0",
+      "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/tree/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro",
+      "version": "c72eaae88594+ecece4c2e855"
+    },
+    "payloadPathsArchived": 58,
+    "httpLinksVerified": 77,
+    "focusedTestsPassed": 30,
+    "nativeSourcesExecuted": false,
+    "hardwareVerified": false,
+    "scope": "New local Karo G2All Pro; current upstream links for other revised PS4 builds and PS5 Relapse and ELF Sender; pinned bytes and archived metadata for updated valid payloads. GamerHack already matches the current upstream revision.",
+    "preserved": "Prior live firmware-specific routes and earlier archives retained. Five invalid upstream payloads and both quarantined paths excluded from new ready downloads. No known quarantined bytes were fetched."
   }
 }

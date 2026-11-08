@@ -87,6 +87,8 @@ function groups(root){
  if(fs.existsSync(gamerFile))rows.push(...JSON.parse(fs.readFileSync(gamerFile)).groups);
  const gamerOffline=path.join(root,'docs/host-gamerhack-g2all-build.json');
  if(fs.existsSync(gamerOffline))rows.push(...JSON.parse(fs.readFileSync(gamerOffline)).groups);
+ const karoUpdate=path.join(root,'docs/host-upstream-refresh-20261108.json');
+ if(fs.existsSync(karoUpdate))rows.push(JSON.parse(fs.readFileSync(karoUpdate)).group);
  const ps5File=path.join(root,'docs/ps5-webkit-build.json');
  if(fs.existsSync(ps5File)){const b=JSON.parse(fs.readFileSync(ps5File));rows.push({id:b.id,label:'PS5 WebKit Exploit - 7.00–13.60',platform:'ps5',firmwares:b.firmwares,entry:b.entry,runtimeEntry:b.runEntry,preferred:true,source:b.source,siteNative:true});}
  // A family label is presentation; compatibility remains the exact source array.

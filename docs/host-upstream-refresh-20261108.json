@@ -1,0 +1,712 @@
+{
+  "commit": "c72eaae8859476d4772e613d011db9f0bb80c80d",
+  "previous": "743646c9df9ab4c83821b660c12e23a3dda57b49",
+  "checkedAt": "2026-11-08T21:29:34.269Z",
+  "gamerHackCommit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+  "changedPaths": 158,
+  "removedPaths": 402,
+  "staged": 1819,
+  "quarantineExcluded": [
+    "900New/payload.js",
+    "900NM/payload.js"
+  ],
+  "invalid": [
+    {
+      "path": "702/enablebrowser.bin",
+      "reason": "The original file is empty. The original flat BIN is shorter than 256 bytes; not offered as a ready payload."
+    },
+    {
+      "path": "ps5/pr/payloads/CheatRunner_v0.17.2.elf",
+      "reason": "The ELF64 header requires at least 64 bytes."
+    },
+    {
+      "path": "ps5/relapse/payloads/CheatRunner_v0.17.2.elf",
+      "reason": "The ELF64 header requires at least 64 bytes."
+    },
+    {
+      "path": "ps5/UMTX/payloads/OnionHENv1.11.elf",
+      "reason": "The ELF64 header requires at least 64 bytes."
+    },
+    {
+      "path": "ps5/UMTX/payloads/psplay.elf",
+      "reason": "The file does not start with ELF magic. The console payload must be a 64-bit ELF. The console payload must use little-endian encoding. The ELF identification version must be 1."
+    }
+  ],
+  "payloads": [
+    {
+      "path": "505/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/505/goldhen.bin"
+    },
+    {
+      "path": "505Gold/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/505Gold/goldhen.bin"
+    },
+    {
+      "path": "672/goldhen.bin.bz2",
+      "platform": "PS4",
+      "bytes": 285077,
+      "sha256": "a3372acad84b73605f8fc959dc2ddea63e570e004e196ee9b8a45222df9c0d73",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/672/goldhen.bin.bz2"
+    },
+    {
+      "path": "672A/goldhen.bin.bz2",
+      "platform": "PS4",
+      "bytes": 285077,
+      "sha256": "a3372acad84b73605f8fc959dc2ddea63e570e004e196ee9b8a45222df9c0d73",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/672A/goldhen.bin.bz2"
+    },
+    {
+      "path": "672L/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/672L/goldhen.bin"
+    },
+    {
+      "path": "702/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/702/goldhen.bin"
+    },
+    {
+      "path": "702L/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/702L/goldhen.bin"
+    },
+    {
+      "path": "755/goldhen.bin.bz2",
+      "platform": "PS4",
+      "bytes": 285077,
+      "sha256": "a3372acad84b73605f8fc959dc2ddea63e570e004e196ee9b8a45222df9c0d73",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/755/goldhen.bin.bz2"
+    },
+    {
+      "path": "755L/goldhen.bin.bz2",
+      "platform": "PS4",
+      "bytes": 285077,
+      "sha256": "a3372acad84b73605f8fc959dc2ddea63e570e004e196ee9b8a45222df9c0d73",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/755L/goldhen.bin.bz2"
+    },
+    {
+      "path": "900L/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/900L/goldhen.bin"
+    },
+    {
+      "path": "900New/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/900New/goldhen.bin"
+    },
+    {
+      "path": "900NM/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/900NM/goldhen.bin"
+    },
+    {
+      "path": "g2all/payload.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2all/payload.bin"
+    },
+    {
+      "path": "g2allpro/payload.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/payload.bin"
+    },
+    {
+      "path": "G702/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/G702/goldhen.bin"
+    },
+    {
+      "path": "G900/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/G900/goldhen.bin"
+    },
+    {
+      "path": "Goldhen505/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/Goldhen505/goldhen.bin"
+    },
+    {
+      "path": "Goldhen672/goldhen.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/Goldhen672/goldhen.bin"
+    },
+    {
+      "path": "ps5/elfsender/payloads/browser_launcher_v1.0.0.elf",
+      "platform": "PS5",
+      "bytes": 416352,
+      "sha256": "8162e9c0988e0e69d506840d3ba0a239fdbc5fbea60517cfaa6f820b23cd96f4",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/browser_launcher_v1.0.0.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/CheatRunner.elf",
+      "platform": "PS5",
+      "bytes": 8272800,
+      "sha256": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/CheatRunner.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/elfldr-ps5-1360.elf",
+      "platform": "PS5",
+      "bytes": 397024,
+      "sha256": "de5dd480d12637527ba2d75e35de851adbb59c455293fa32588c492ef6b44b81",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/elfldr-ps5-1360.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/etaHEN-2.5B.elf",
+      "platform": "PS5",
+      "bytes": 4678728,
+      "sha256": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/etaHEN-2.5B.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/etaHEN.elf",
+      "platform": "PS5",
+      "bytes": 4740712,
+      "sha256": "512c74a9d6f56bb5a4ab871a0306a8cbefb8b3d5454ba8f1d833b020b245a126",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/etaHEN.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/ftpsrv-drakmor_1.16-ng-stable.elf",
+      "platform": "PS5",
+      "bytes": 230640,
+      "sha256": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ftpsrv-drakmor_1.16-ng-stable.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/ftpsrv-ps5.elf",
+      "platform": "PS5",
+      "bytes": 191864,
+      "sha256": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ftpsrv-ps5.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/garlic-savemgr_v1.13.1.elf",
+      "platform": "PS5",
+      "bytes": 1665456,
+      "sha256": "b0fc2fcdda977d2a1207d77148746859b7ea7f3cfcad02828a7a9b49651807f5",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/garlic-savemgr_v1.13.1.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/klogsrv-ps5.elf",
+      "platform": "PS5",
+      "bytes": 136016,
+      "sha256": "e828ec144231f81547cb58bc7d2c396fa984be0c2295f31364b58017816dcceb",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/klogsrv-ps5.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/kstuff-lite_v1.11.elf",
+      "platform": "PS5",
+      "bytes": 1737080,
+      "sha256": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/kstuff-lite_v1.11.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/Lapy-JB-Daemon_v1.2.elf",
+      "platform": "PS5",
+      "bytes": 154280,
+      "sha256": "13559b858fc33cc7fa3dc89e10dccf139070d99ee5d378dd75c969293700799e",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/Lapy-JB-Daemon_v1.2.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/MemDBG-ps5.elf",
+      "platform": "PS5",
+      "bytes": 1271008,
+      "sha256": "2fbdc9f0b21043619b1c32b512df47b3ddf79a99f096243c0d48f5ffc14e1906",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/MemDBG-ps5.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/OnionHEN.elf",
+      "platform": "PS5",
+      "bytes": 4947888,
+      "sha256": "ba8db5c287a5f5ea8bc7400c25b90312b751672e8772b2ff15b2c0377b77ea13",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/OnionHEN.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/OnionHENk1.11.elf",
+      "platform": "PS5",
+      "bytes": 4676224,
+      "sha256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/OnionHENk1.11.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/payload.elf",
+      "platform": "PS5",
+      "bytes": 2526736,
+      "sha256": "c8e36ea06cfd37c5fad356ff9fcd09d3e62065d88170b5119ce8f1eeb3efacac",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/payload.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/PKG-Manager_v1.4.1.elf",
+      "platform": "PS5",
+      "bytes": 1939016,
+      "sha256": "09adaff13b858bb3db519faaea673ee3fa67298081e608d32f6501ed6e9f706e",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/PKG-Manager_v1.4.1.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/pldmgr_v0.6.3.elf",
+      "platform": "PS5",
+      "bytes": 2795992,
+      "sha256": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/pldmgr_v0.6.3.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/ProsperoMgr.elf",
+      "platform": "PS5",
+      "bytes": 8841088,
+      "sha256": "e7a6bb544adb2fb2a61aa9cc83b0ad15f70b32d7511a3de0f1fb88812f11983c",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ProsperoMgr.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/ps5-app-dumper_v2.10.elf",
+      "platform": "PS5",
+      "bytes": 1410752,
+      "sha256": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5-app-dumper_v2.10.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/ps5debug_v1.0b5.elf",
+      "platform": "PS5",
+      "bytes": 148808,
+      "sha256": "9dc888f66b8dd97d1317ac7260ab9499f709ddf0cbab59db82347c0aa93aaa8a",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5debug_v1.0b5.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/ps5debug-NG_1.3.2.elf",
+      "platform": "PS5",
+      "bytes": 4059688,
+      "sha256": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5debug-NG_1.3.2.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/PS5MemoryPeekerWeb.elf",
+      "platform": "PS5",
+      "bytes": 1405912,
+      "sha256": "6c66a3cbef38bce5510598454844321601198b3bf41648eb6968dec2a842d702",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/PS5MemoryPeekerWeb.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/ps5upload_v7.0.22.elf",
+      "platform": "PS5",
+      "bytes": 3299976,
+      "sha256": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/ps5upload_v7.0.22.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/shadowmountplus.elf",
+      "platform": "PS5",
+      "bytes": 3614944,
+      "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/shadowmountplus.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/webkit-autoloader-installer_v0.6.2.elf",
+      "platform": "PS5",
+      "bytes": 3900672,
+      "sha256": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/webkit-autoloader-installer_v0.6.2.elf"
+    },
+    {
+      "path": "ps5/elfsender/payloads/zftpd_v1.6.0.elf",
+      "platform": "PS5",
+      "bytes": 19221056,
+      "sha256": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/elfsender/payloads/zftpd_v1.6.0.elf"
+    },
+    {
+      "path": "ps5/poopspl/payloads/elfldr-ps5.elf",
+      "platform": "PS5",
+      "bytes": 394480,
+      "sha256": "8b655a8971261f3f121b7a02659c6a818a75622e865177755af4827ef4e0d9d4",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/poopspl/payloads/elfldr-ps5.elf"
+    },
+    {
+      "path": "ps5/pr/payloads/pldmgr_v0.6.3.elf",
+      "platform": "PS5",
+      "bytes": 2795992,
+      "sha256": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/pr/payloads/pldmgr_v0.6.3.elf"
+    },
+    {
+      "path": "ps5/pr/payloads/shadowmountplus.elf",
+      "platform": "PS5",
+      "bytes": 3614944,
+      "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/pr/payloads/shadowmountplus.elf"
+    },
+    {
+      "path": "ps5/pr/shared/elfldr-ps5.elf",
+      "platform": "PS5",
+      "bytes": 394480,
+      "sha256": "8b655a8971261f3f121b7a02659c6a818a75622e865177755af4827ef4e0d9d4",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/pr/shared/elfldr-ps5.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/CheatRunner.elf",
+      "platform": "PS5",
+      "bytes": 8272800,
+      "sha256": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/CheatRunner.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/payload.elf",
+      "platform": "PS5",
+      "bytes": 2526736,
+      "sha256": "c8e36ea06cfd37c5fad356ff9fcd09d3e62065d88170b5119ce8f1eeb3efacac",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/payload.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/pldmgr_v0.6.1.elf",
+      "platform": "PS5",
+      "bytes": 3484120,
+      "sha256": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/pldmgr_v0.6.1.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ps5-app-dumper_v2.10.elf",
+      "platform": "PS5",
+      "bytes": 1410752,
+      "sha256": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ps5-app-dumper_v2.10.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ps5upload_v6.1.2.elf",
+      "platform": "PS5",
+      "bytes": 3274512,
+      "sha256": "1fdf0a79687a4a823dd7c331c267cf492f849bd2bc6666e2db496fc03e544162",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ps5upload_v6.1.2.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ps5upload_v7.0.22.elf",
+      "platform": "PS5",
+      "bytes": 3299976,
+      "sha256": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ps5upload_v7.0.22.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/ShadowMountPlus_1.7-beta5fix1.elf",
+      "platform": "PS5",
+      "bytes": 2498376,
+      "sha256": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/ShadowMountPlus_1.7-beta5fix1.elf"
+    },
+    {
+      "path": "ps5/relapse/payloads/WebKit-Autoloader-Installer_v0.6.1.elf",
+      "platform": "PS5",
+      "bytes": 3556608,
+      "sha256": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/payloads/WebKit-Autoloader-Installer_v0.6.1.elf"
+    },
+    {
+      "path": "ps5/relapse/shared/elfldr-ps5.elf",
+      "platform": "PS5",
+      "bytes": 394480,
+      "sha256": "fa3f0c2b778318000982ada05c01bde70ac875c85e4be6fcc9b5ba836f6d1c3c",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/shared/elfldr-ps5.elf"
+    },
+    {
+      "path": "ps5/relapse/shared/kexp-ps5.bin",
+      "platform": "PS5",
+      "bytes": 18208,
+      "sha256": "4e29cb74ffc1771b16e59d4998517aea32ecded651f814b71dc7ee50abff089f",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/ps5/relapse/shared/kexp-ps5.bin"
+    }
+  ],
+  "artifact": {
+    "path": "downloads/hosts/karo/c72eaae88594/g2allpro/ecece4c2e855/karo-g2allpro-c72eaae88594-ecece4c2e855.zip",
+    "platform": "PS4",
+    "bytes": 1319796,
+    "sha256": "cb12ba07ae82fc240fd657a1f9eaa7bb688e3cd5aa3e142698188cb51eff29a0",
+    "sourceURL": "https://github.com/KAR0218/KAR0218.github.io/tree/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro",
+    "version": "c72eaae88594+ecece4c2e855"
+  },
+  "group": {
+    "id": "karo-g2allpro-20261108",
+    "label": "Karo G2All Pro · GoldHEN 2.4b18.13",
+    "platform": "ps4",
+    "firmwares": [
+      "5.05",
+      "5.07",
+      "6.72",
+      "7.00",
+      "7.01",
+      "7.02",
+      "7.50",
+      "7.51",
+      "7.55",
+      "8.00",
+      "8.01",
+      "8.03",
+      "8.50",
+      "8.52",
+      "9.00",
+      "9.03",
+      "9.04",
+      "9.50",
+      "9.51",
+      "9.60",
+      "10.00",
+      "11.00",
+      "11.02",
+      "11.50",
+      "11.52",
+      "12.00",
+      "12.02",
+      "12.50",
+      "12.52",
+      "13.00",
+      "13.02",
+      "13.04",
+      "13.50",
+      "13.52",
+      "14.00"
+    ],
+    "entry": "/hosts/ps4/exploit/karo-g2allpro-20261108/",
+    "runtime": "/hosts/runtime/karo-c72eaae88594-6773d0ba66b1/web/",
+    "runtimeEntry": "/hosts/runtime/karo-c72eaae88594-6773d0ba66b1/web/g2allpro/index.html",
+    "payloadChoice": [
+      {
+        "id": "goldhen",
+        "label": "GoldHEN",
+        "file": "payload.bin"
+      }
+    ],
+    "cacheReopen": true,
+    "preferred": true,
+    "originalEntry": {
+      "id": "karo-g2allpro-20261108",
+      "folder": "g2allpro",
+      "path": "g2allpro/index.html",
+      "scope": "g2allpro/",
+      "platform": "ps4",
+      "firmwares": [
+        "5.05",
+        "5.07",
+        "6.72",
+        "7.00",
+        "7.01",
+        "7.02",
+        "7.50",
+        "7.51",
+        "7.55",
+        "8.00",
+        "8.01",
+        "8.03",
+        "8.50",
+        "8.52",
+        "9.00",
+        "9.03",
+        "9.04",
+        "9.50",
+        "9.51",
+        "9.60",
+        "10.00",
+        "11.00",
+        "11.02",
+        "11.50",
+        "11.52",
+        "12.00",
+        "12.02",
+        "12.50",
+        "12.52",
+        "13.00",
+        "13.02",
+        "13.04",
+        "13.50",
+        "13.52",
+        "14.00"
+      ],
+      "ranges": [],
+      "label": "Karo G2All Pro · GoldHEN 2.4b18.13",
+      "kind": "loader",
+      "contract": "Original Karo PS4 browser and AppCache chain. Match your installed firmware and follow the original cache prompts.",
+      "notes": []
+    },
+    "source": {
+      "repository": "https://github.com/KAR0218/KAR0218.github.io",
+      "commit": "c72eaae8859476d4772e613d011db9f0bb80c80d",
+      "path": "g2allpro/index.html"
+    },
+    "ticket": "existing-karo-guard"
+  },
+  "runtimeFiles": [
+    {
+      "path": "g2allpro/1150_1202.js",
+      "platform": "PS4",
+      "bytes": 268751,
+      "sha256": "e5650a57112eeb5db3ef51855dac9938405ce68ad7ca4998468b27fe2f2e31c5",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/1150_1202.js",
+      "servedSHA256": "e5650a57112eeb5db3ef51855dac9938405ce68ad7ca4998468b27fe2f2e31c5"
+    },
+    {
+      "path": "g2allpro/1250_13.js",
+      "platform": "PS4",
+      "bytes": 189462,
+      "sha256": "3a226220cae204dcdfa5685c6b008a6e19691e03a296dc5caefc259542e102fc",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/1250_13.js",
+      "servedSHA256": "3a226220cae204dcdfa5685c6b008a6e19691e03a296dc5caefc259542e102fc"
+    },
+    {
+      "path": "g2allpro/1302_1352.js",
+      "platform": "PS4",
+      "bytes": 186621,
+      "sha256": "47ed70d830794b63bd96479d578ab4376cab86a7aae294b13f513f100366d550",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/1302_1352.js",
+      "servedSHA256": "47ed70d830794b63bd96479d578ab4376cab86a7aae294b13f513f100366d550"
+    },
+    {
+      "path": "g2allpro/1400.js",
+      "platform": "PS4",
+      "bytes": 226854,
+      "sha256": "5591de567f31fd5ed47219237c219c68f7641f9f696c2dd82e5af538533369ab",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/1400.js",
+      "servedSHA256": "5591de567f31fd5ed47219237c219c68f7641f9f696c2dd82e5af538533369ab"
+    },
+    {
+      "path": "g2allpro/cache.html",
+      "platform": "PS4",
+      "bytes": 6016,
+      "sha256": "9c33b2bf5784b3c9a2096b13e552dc1a262e9ad88c67f884f1945899db3a9c67",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/cache.html",
+      "servedSHA256": "1cca7a2c168b33c2e0a2d9439f712f0cb2a69e5fa217446bde657981844ed218"
+    },
+    {
+      "path": "g2allpro/Cache.manifest",
+      "platform": "PS4",
+      "bytes": 256,
+      "sha256": "7601aefc515c95effc0557e393b6e3f4737bae54626ca22a1e90fae6b1c9b194",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/Cache.manifest",
+      "servedSHA256": "7601aefc515c95effc0557e393b6e3f4737bae54626ca22a1e90fae6b1c9b194"
+    },
+    {
+      "path": "g2allpro/exploit10.js",
+      "platform": "PS4",
+      "bytes": 153818,
+      "sha256": "90b6087aff277a12a26c5e46c74cb1ac2fa6cf03cc15473f7b39943c69a4ec9b",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/exploit10.js",
+      "servedSHA256": "90b6087aff277a12a26c5e46c74cb1ac2fa6cf03cc15473f7b39943c69a4ec9b"
+    },
+    {
+      "path": "g2allpro/exploit5.js",
+      "platform": "PS4",
+      "bytes": 887612,
+      "sha256": "5ac46ae13394e03f01ed8f3a7d2d2afd8317850701b325be4a1861539b718c2d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/exploit5.js",
+      "servedSHA256": "5ac46ae13394e03f01ed8f3a7d2d2afd8317850701b325be4a1861539b718c2d"
+    },
+    {
+      "path": "g2allpro/exploit6.js",
+      "platform": "PS4",
+      "bytes": 1422442,
+      "sha256": "0432716a1214cc77c41594c7fd4e0856fbc1e22306afab644df61a6672552f89",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/exploit6.js",
+      "servedSHA256": "0432716a1214cc77c41594c7fd4e0856fbc1e22306afab644df61a6672552f89"
+    },
+    {
+      "path": "g2allpro/exploit7_9.js",
+      "platform": "PS4",
+      "bytes": 152717,
+      "sha256": "dc62c704454d1c0d64cc4f4479af840d341001da61f03b222f56fd91f2b393c1",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/exploit7_9.js",
+      "servedSHA256": "dc62c704454d1c0d64cc4f4479af840d341001da61f03b222f56fd91f2b393c1"
+    },
+    {
+      "path": "g2allpro/index.html",
+      "platform": "PS4",
+      "bytes": 9220,
+      "sha256": "9f73c6046e063595f12dfa3f7a7d6778932f7961bf6a96e08819c9da6366d66a",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/index.html",
+      "servedSHA256": "9ef891e1df89f88b18fb59708a9a1e9e8e0aa0e0c41412095c4c10dd6ec87159"
+    },
+    {
+      "path": "g2allpro/payload.bin",
+      "platform": "PS4",
+      "bytes": 297496,
+      "sha256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/payload.bin",
+      "servedSHA256": "39452f5e1c305ac9efcb4745eef7958b4db8c6d85299529f08700970b009ea4d"
+    },
+    {
+      "path": "g2allpro/rpc_worker.js",
+      "platform": "PS4",
+      "bytes": 5395,
+      "sha256": "483925eafec03037596a71b95f046ba0ed1ab9018300ffd5ff718e2ce8c181dd",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/rpc_worker.js",
+      "servedSHA256": "483925eafec03037596a71b95f046ba0ed1ab9018300ffd5ff718e2ce8c181dd"
+    },
+    {
+      "path": "g2allpro/worker.js",
+      "platform": "PS4",
+      "bytes": 92281,
+      "sha256": "4081558a381b9bf45cb0bc5b6db2b94fe0621cd3716b7f213ed79a3acdaed8cc",
+      "sourceURL": "https://raw.githubusercontent.com/KAR0218/KAR0218.github.io/c72eaae8859476d4772e613d011db9f0bb80c80d/g2allpro/worker.js",
+      "servedSHA256": "4081558a381b9bf45cb0bc5b6db2b94fe0621cd3716b7f213ed79a3acdaed8cc"
+    }
+  ],
+  "ps5RelapseFirmwares": [
+    "13.60",
+    "13.42",
+    "13.40",
+    "13.20",
+    "13.00",
+    "12.70",
+    "12.60",
+    "12.40",
+    "12.20",
+    "12.02",
+    "12.00",
+    "11.60",
+    "11.40",
+    "11.20",
+    "11.00",
+    "10.60",
+    "10.40",
+    "10.20",
+    "10.01",
+    "10.00",
+    "9.60",
+    "9.40",
+    "9.20",
+    "9.05",
+    "9.00",
+    "8.60",
+    "8.40",
+    "8.20",
+    "8.00",
+    "7.61",
+    "7.60",
+    "7.40",
+    "7.20",
+    "7.01",
+    "7.00"
+  ],
+  "hardwareVerified": false
+}
