@@ -1988,5 +1988,42 @@
     "priorImmutableAndArchiveCopiesVerified": 2,
     "focusedTestsPassed": 41,
     "physicalConsoleTested": false
+  },
+  "apolloFeedAndConsoleAudit20261108": {
+    "status": "Published and live verified",
+    "date": "2026-11-08",
+    "feedPaths": [
+      "/console/ps4/homebrew.json",
+      "/console/ps5/payloads.json"
+    ],
+    "ps4FeedEntries": 20,
+    "ps5FeedEntries": 18,
+    "apollo": {
+      "version": "2.4.0",
+      "bytes": 22806528,
+      "sha256": "ec34add4d2857fa3c947ed5666735a5c35ddb3e47d8be925b36e9ad408f7c090",
+      "localArchiveReadback": true
+    },
+    "checkedHTTPURLs": 3785,
+    "failedHTTPURLs": 0,
+    "authoredPagesChecked": 171,
+    "publicCataloguesChecked": 4,
+    "focusedTestsPassed": 86,
+    "pagesVerifiersPassed": 5,
+    "runtimeFilesStaticallyVerified": 274,
+    "localRuntimeDependencyReferences": 342,
+    "retainedUpstreamFilesHashVerified": 96,
+    "repairs": [
+      "Generate native feeds from the current catalogue and its immutable delivery URLs.",
+      "Use valid local feed artwork.",
+      "Preserve complete quoted paths for retained filenames with spaces.",
+      "Serve reviewed PS5 cache manifests without missing server or maintenance files.",
+      "Remove visible upstream references and external launch links from authored catalogue controls."
+    ],
+    "physicalConsoleTested": false,
+    "downloadedNativeCodeExecuted": false,
+    "publishedCommit": "560e7a268d87b91be2e1cc63da802721540c0226",
+    "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42531539901",
+    "verifiedAt": "2026-11-08T22:45:41.597Z"
   }
 }
