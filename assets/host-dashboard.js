@@ -408,7 +408,7 @@
         var meta = [action.format ? String(action.format).toUpperCase() : '', action.game ? '' : action.version, firmwareLabel(action)].filter(Boolean).join(' · ');
         var details = (action.requirements || []).map(function (text) { return '<li>' + escape(text) + '</li>'; }).join('');
         var facts = payloadFileFacts(action);
-        var fileDetails = facts ? '<dl class="host-file-facts"><div><dt>File</dt><dd><code translate="no" data-i18n-skip>' + escape(facts.filename) + '</code></dd></div><div><dt>File size</dt><dd><code translate="no" data-i18n-skip>' + facts.bytes + ' B</code></dd></div><div><dt translate="no" data-i18n-skip>SHA-256</dt><dd><code translate="no" data-i18n-skip>' + facts.sha256 + '</code></dd></div></dl>' : '';
+        var fileDetails = facts ? '<dl class="host-file-facts"><div><dt>File</dt><dd><code translate="no" data-i18n-skip>' + escape(action.displayFilename || facts.filename) + '</code></dd></div><div><dt>File size</dt><dd><code translate="no" data-i18n-skip>' + facts.bytes + ' B</code></dd></div><div><dt translate="no" data-i18n-skip>SHA-256</dt><dd><code translate="no" data-i18n-skip>' + facts.sha256 + '</code></dd></div></dl>' : '';
         var links = [['source','Project source'],['licenseURL','Licence'],['instructionsURL','Instructions'],['sourceArchiveURL','Corresponding source']].map(function (entry) { var url = navigationURL(action[entry[0]]); return url ? '<a href="' + escape(url) + '" target="_blank" rel="noopener noreferrer">' + entry[1] + '</a>' : ''; }).filter(Boolean).join(' · ');
         var originalHost = action.hostURL || action.launchURL || '';
         if (originalHost.indexOf('{address}') !== -1) originalHost = '';
@@ -431,7 +431,7 @@
       var fact=payloadFileFacts(action),evidence=fact?'\n'+fact.filename+' · '+fact.bytes+' B\nSHA-256: '+fact.sha256:'';
       doc.querySelector('#host-support-text').textContent=platform.toUpperCase()+' · '+fw+'\n'+(action.requirements||[]).join('\n')+evidence;
       var filenameNode=doc.querySelector('#host-support-filename'),factsNode=doc.querySelector('#host-support-facts'),linksNode=doc.querySelector('#host-support-links');
-      if(filenameNode)filenameNode.textContent=fact?fact.filename:action.downloadURL?decodeURIComponent(action.downloadURL.split('/').pop().split('?')[0]):action.label;
+      if(filenameNode)filenameNode.textContent=action.displayFilename||(fact?fact.filename:action.downloadURL?decodeURIComponent(action.downloadURL.split('/').pop().split('?')[0]):action.label);
       if(factsNode)factsNode.textContent=[action.format,Number.isSafeInteger(action.bytes)?action.bytes.toLocaleString()+' B':'',action.game,action.gameVersion].filter(Boolean).join(' · ');
       if(linksNode)linksNode.innerHTML=[['source','Project source'],['licenseURL','Licence'],['instructionsURL','Instructions'],['sourceArchiveURL','Corresponding source']].map(function(entry){var link=navigationURL(action[entry[0]]);return link?'<a href="'+escape(link)+'" target="_blank" rel="noopener noreferrer">'+entry[1]+' <span aria-hidden="true">↗</span></a>':'';}).join('');
       var previousFocus=doc.activeElement;
@@ -448,7 +448,7 @@
     }
     function fileMarkup(action){
       var capability=loadCapability(action),facts=payloadFileFacts(action),url=safeURL(action.downloadURL||'',win.location.href);
-      var filename=facts?facts.filename:action.downloadURL?decodeURIComponent(action.downloadURL.split('/').pop().split('?')[0]):action.label;
+      var filename=action.displayFilename||(facts?facts.filename:action.downloadURL?decodeURIComponent(action.downloadURL.split('/').pop().split('?')[0]):action.label);
       var title=category==='loaders'?platform.toUpperCase()+' '+(firmware.value||''):filename;
       var canBridge=bridge&&bridge.actions&&bridge.actions.some(function(a){return a.id===action.id&&a.platform===platform&&a.available;});
       var requiresSender=action.run&&(action.run.type==='elf-tcp'||action.run.type==='bin-tcp'||action.run.input==='user-file')&&!canBridge;

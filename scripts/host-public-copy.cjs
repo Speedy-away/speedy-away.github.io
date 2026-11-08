@@ -21,9 +21,17 @@ function catalogue(rows, delivery) {
     for (const key of ['source', 'sourceURL', 'hostURL']) {
       if (upstream.test(item[key] || '')) delete item[key];
     }
-    for (const key of ['title', 'label', 'firmwareLabel', 'version', 'versionLabel', 'variantLabel', 'hostVariant', 'firmwareEvidence', 'license', 'imageAlt']) {
+    if (upstream.test(item.launchURL || '')) {
+      delete item.launchURL;
+      delete item.launchLabel;
+      item.requirements = (item.requirements || []).map(requirement =>
+        /\bOpen menu host\b/i.test(requirement) ? 'Use a native loader confirmed for this exact build.' : requirement);
+    }
+    for (const key of ['name', 'title', 'label', 'firmwareLabel', 'version', 'versionLabel', 'variantLabel', 'hostVariant', 'firmwareEvidence', 'license', 'imageAlt', 'compatibility', 'description', 'preparation']) {
       if (typeof item[key] === 'string' && brand.test(item[key])) item[key] = label(item[key]);
     }
+    const file = item.filename || item.downloadURL?.split('/').pop()?.split('?')[0];
+    if (typeof file === 'string' && brand.test(file)) item.displayFilename = file.replace(/\b(?:Karo|GamerHack)[-_. ]*/gi, '');
     for (const key of ['requirements', 'tags', 'credits']) {
       if (Array.isArray(item[key])) item[key] = item[key].map(value => typeof value === 'string' ? label(value) : value);
     }

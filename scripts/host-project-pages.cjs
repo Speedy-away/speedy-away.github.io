@@ -2,8 +2,16 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261108xmb2';
+const ASSET_VERSION='20261108feeds1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+// These original lists include server-only or maintenance files absent from the
+// preserved web runtime. Keep the original manifests and serve a Pages copy.
+const reviewedCacheOmissions=new Map([
+ ['P2JB/P2JB.manifest',new Set(['api/.htaccess','api/payload.php'])],
+ ['poopspl/poopspl.manifest',new Set(['payloads/kexp_2026_05_25.bin.orig'])],
+ ['UMTX/cache.appcache',new Set(['appcache_manifest_generator.py'])],
+ ['UMTX/UMTX.manifest',new Set(['appcache_manifest_generator.py','MIRROR.md'])]
+]);
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('.')?[]:e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 function cacheResources(root,names){const resources=new Set();for(const name of names.filter(p=>/^hosts\/runtime\/.+\.(?:manifest|appcache|cache)$/i.test(p))){if(!fs.existsSync(path.join(root,name)))continue;let section='CACHE';for(let line of fs.readFileSync(path.join(root,name),'utf8').split(/\r?\n/)){line=line.trim();if(!line||line.startsWith('#')||line==='CACHE MANIFEST')continue;if(/^[A-Z]+:$/.test(line)){section=line.slice(0,-1);continue;}if(section!=='CACHE')continue;try{const url=new URL(line,'https://host.invalid/'+name);if(url.origin==='https://host.invalid')resources.add(decodeURIComponent(url.pathname.slice(1)));}catch{}}}return resources;}
 // Active native inputs must remain on Pages; ZIP archives keep their existing delivery policy.
@@ -89,14 +97,30 @@ function build(output,revision='main',root=ROOT){
   const artwork=path.join(root,'docs/expansion-ps4-ps5.json');
   const images=fs.existsSync(artwork)?JSON.parse(fs.readFileSync(artwork,'utf8')).images:[];
   const {ps4Feed,ps5Feed}=require('./console-download-catalog.cjs').nativeFeeds(catalogue.items,{
-   origin:ORIGIN,name:'WWB HOST · PS5 payloads',images,resolveURL:value=>value.startsWith('/')?target(value):value
+   origin:ORIGIN,name:'WWB HOST · PS5 payloads',images,
+   resolveURL:value=>value.startsWith('/')?target(value):value,
+   resolveCover:cover=>{
+    const url=new URL(cover||'/',ORIGIN);
+    const name=decodeURIComponent(url.pathname.slice(1));
+    return (url.origin===ORIGIN||url.origin===MAIN)&&hosted.has(name)&&/\.(?:png|jpe?g)$/i.test(name)?'/'+name:'/assets/images/logo.png';
+   }
   });
   generatedFeeds.set('console/ps4/homebrew.json',ps4Feed);
   generatedFeeds.set('console/ps5/payloads.json',ps5Feed);
   for(const name of generatedFeeds.keys())hosted.add(name);
  }
  const manifestAliases=new Map(selected.filter(p=>/^hosts\/runtime\/.+\.cache$/i.test(p)&&/^\uFEFF?CACHE MANIFEST/.test(fs.readFileSync(path.join(root,p),'utf8'))).map(p=>[p,p.replace(/\.cache$/i,'.manifest')]));
- function manifestHTML(html,name){const platform=offline&&offline.platformFor(name,offlineGroups);if(platform)return offline.associate(html,platform);return html.replace(/(<html\b[^>]*?\bmanifest\s*=\s*)(?:"([^"]+)"|'([^']+)'|([^\s>]+))/gi,(whole,start,a,b,c)=>{try{const u=new URL(a||b||c,'https://host.invalid/'+name),alias=manifestAliases.get(decodeURIComponent(u.pathname.slice(1)));return alias?start+'"'+BASE+'/'+alias+u.search+u.hash+'"':whole;}catch{return whole;}});}
+ const reviewedCaches=new Map();
+ const preservedPS5='hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/';
+ for(const [leaf,omissions] of reviewedCacheOmissions){
+  const source=preservedPS5+leaf;
+  if(!hosted.has(source))continue;
+  const original=fs.readFileSync(path.join(root,source),'utf8');
+  const contents=original.split(/\r?\n/).map(line=>line.replace(/\s+#[a-f0-9]{64}\s*$/i,''))
+   .filter(line=>!omissions.has(line.trim())).join('\n');
+  reviewedCaches.set(source,{name:source+'.pages.manifest',contents});
+ }
+ function manifestHTML(html,name){const platform=offline&&offline.platformFor(name,offlineGroups);if(platform)return offline.associate(html,platform);return html.replace(/(<html\b[^>]*?\bmanifest\s*=\s*)(?:"([^"]+)"|'([^']+)'|([^\s>]+))/gi,(whole,start,a,b,c)=>{try{const u=new URL(a||b||c,'https://host.invalid/'+name),original=decodeURIComponent(u.pathname.slice(1)),alias=reviewedCaches.get(original)?.name||manifestAliases.get(original);return alias?start+'"'+BASE+'/'+alias+u.search+u.hash+'"':whole;}catch{return whole;}});}
  const internalRoots=['hosts','assets','languages','downloads','console','docs'];
  function rewrite(text,name){
   // Crawler directives and canonical sitemap URLs are already deployment-ready.
@@ -109,6 +133,7 @@ function build(output,revision='main',root=ROOT){
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-pages.css')))text=require('./style-host-pages.cjs').themeHTML(text,name);
   if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-console-client\.js|host-catalog-grid\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-short-loader\.(?:js|css)|host-game-patches\.js|host-download-desk\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
   if(name.endsWith('.html'))text=text.replace(/(host-download-desk\.(?:js|css)|console-downloads\.js)(?:\?v=[\w.-]+)?(?=["'])/g,'$1?v=20261108setup1');
+  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108feeds1');
   if(name==='assets/host-dashboard.js')text=text.replaceAll('^\\/hosts\\/runtime\\/','^\\/(?:(?:WWB-HOST|wwb-host)\\/)?hosts\\/runtime\\/');
   if((name==='index.html'||/^hosts\/(?!runtime\/).+\.html$/.test(name))&&fs.existsSync(path.join(root,'assets/host-performance.js'))){
    text=text.replace(/<link\b[^>]*href=["'][^"']*(?:font-awesome|fonts\.googleapis\.com)[^"']*["'][^>]*>/gi,'');
@@ -128,9 +153,10 @@ function build(output,revision='main',root=ROOT){
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name))text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-compact.css?v=1"><link rel="stylesheet" href="/assets/host-blue-theme.css?v=20261104xmb1"></head>');
   // Prefix authored root-relative strings, including concatenated directory roots.
   text=text.replace(/https:\/\/whatwhatboy\.com\/(hosts\/[^\s"'<>\\]*)/g,(_,p)=>{const url=target(p);return /^https?:/.test(url)?url:ORIGIN+url;});
-  text=text.replace(/(["'`=\s(])\/(hosts|assets|languages|downloads|console|docs)\/([^\s"'`<>)]*)/g,(whole,lead,dir,rest)=>{const p=dir+'/'+rest;if((!rest&&name.endsWith('.js'))||/^\$\{|\+/.test(rest))return lead+BASE+'/'+p;return lead+target(p);});
-  text=text.replace(/((?:href|action)\s*=\s*["'])\/(["'])/g,'$1'+ORIGIN+BASE+'/$2');
+  // Resolve complete quoted attributes before matching embedded URL tokens.
   text=text.replace(/((?:href|src|action|poster)\s*=\s*["'])\/([^"']*)(["'])/gi,(whole,start,p,end)=>BASE&&p.startsWith(BASE.slice(1)+'/')?whole:start+target(p)+end);
+  text=text.replace(/\b(?:href|src|action|poster)\s*=\s*(?:"[^"]*"|'[^']*')|(["'`=\s(])\/(hosts|assets|languages|downloads|console|docs)\/([^\s"'`<>)]*)/g,(whole,lead,dir,rest)=>{if(!lead)return whole;const p=dir+'/'+rest;if((!rest&&name.endsWith('.js'))||/^\$\{|\+/.test(rest))return lead+BASE+'/'+p;return lead+target(p);});
+  text=text.replace(/((?:href|action)\s*=\s*["'])\/(["'])/g,'$1'+ORIGIN+BASE+'/$2');
   if(name.endsWith('.html'))text=text.replace(/<!-- BEGIN SITE AD -->[\s\S]*?<!-- END SITE AD -->/g,'').replace(/<script\b[^>]*src=["'][^"']*site-ads\.js[^"']*["'][^>]*><\/script>/g,'');
   if(name.endsWith('.html')){
    const ads=require('./host-ads.cjs');
@@ -172,6 +198,11 @@ function build(output,revision='main',root=ROOT){
   const destination=path.join(output,name);
   fs.mkdirSync(path.dirname(destination),{recursive:true});
   fs.writeFileSync(destination,JSON.stringify(feed,null,2)+'\n');
+ }
+ for(const {name,contents} of reviewedCaches.values()){
+  assert.ok(!hosted.has(name),'Reviewed cache alias collides with a source file');
+  fs.writeFileSync(path.join(output,name),contents);
+  hosted.add(name);
  }
  for(const [source,alias]of manifestAliases){const bytes=fs.readFileSync(path.join(root,source)),destination=path.join(output,alias);if(fs.existsSync(destination))assert.equal(sha(fs.readFileSync(destination)),sha(bytes),'Conflicting cache alias');else fs.writeFileSync(destination,bytes);hosted.add(alias);}
  // Old native bookmarks get the exact archived build, rather than executing a

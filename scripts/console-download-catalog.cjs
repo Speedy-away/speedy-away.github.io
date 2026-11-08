@@ -319,7 +319,8 @@ function nativeFeeds(items, options = {}) {
     // PS4 Games Installer accepts covers up to2048px; retain the full screenshot
     // on the website, but use the valid console artwork for an oversized cover.
     const cover = art && (art.width > 2048 || art.height > 2048) ? '/assets/images/consoles/playstation.jpg' : item.image;
-    return [absolute(item.url), {name: item.name, version: item.version, description: description(item), size: item.bytes, cover_url: absolute(cover)}];
+    return [absolute(item.url), {name: item.name, version: item.version, description: description(item), size: item.bytes,
+      cover_url: absolute(options.resolveCover ? options.resolveCover(cover) : cover)}];
   }))};
   const ps5 = items.filter(item => item.platforms.includes('ps5') && item.category !== 'mods' && /\.(?:elf|bin)$/i.test(item.filename) && !/^pldmgr[_-]/i.test(item.filename));
   const ps5Feed = {name: options.name || 'whatwhatboy · PS5 payloads', payloads: ps5.map(item => ({

@@ -105,7 +105,7 @@
     if (support) link(controls, 'Required support pack', support);
     var details = add(card, 'details');
     add(details, 'summary', 'File details');
-    add(details, 'code', item.filename);
+    add(details, 'code', item.displayFilename || item.filename);
     add(details, 'code', direct.href);
     add(details, 'code', item.sha256);
     if (help) link(details, 'Compatibility guide', help);
