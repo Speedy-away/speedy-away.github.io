@@ -92,9 +92,9 @@
     var saveLabel = reviewed ? 'Save / extract on ' : packageFile(item) ? 'Save / install on ' : 'Save on ';
     if (saveURL) link(controls, saveLabel + platform.toUpperCase(), saveURL, 'host-download-primary');
     if (saveURL && packageFile(item)) add(card, 'p',
-      'Wait for the save to finish. Then choose Verify & install PKG in the receiver to open the compatible installer.', 'host-download-meta');
+      'Watch the progress in the console queue. When ready, choose Install PKG to verify the file and open the compatible installer.', 'host-download-meta');
     if (archive) add(card, 'p', reviewed
-      ? 'Save the complete archive first. Then choose Extract a saved copy in the console receiver. It checks the SHA-256 and extracts into a new folder.'
+      ? 'Watch the progress in the console queue. When ready, choose Extract. The preparation page checks the SHA-256 and extracts into a new folder.'
       : 'Save the archive first, then extract it with the installed console file manager. Follow the build’s compatibility guide.', 'host-download-meta');
     var direct = link(controls, 'Download file', httpsURL(item.url));
     direct.setAttribute('download', item.filename);

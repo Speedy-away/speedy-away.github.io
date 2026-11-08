@@ -87,3 +87,47 @@ test('changing firmware with buttons keeps files browseable but refuses a mismat
  assert.match(app.ids['host-support-text'].textContent,/9\.00/);
  noDispatch(app);
 });
+
+test('PS4 retains historical firmware choices without advertising the 14.00 launcher for them',()=>{
+ const {hostActions}=require('../build-host-selector.cjs');
+ const {publicPS4Actions}=require('../host-compact-pages.cjs');
+ const actions=publicPS4Actions(hostActions('ps4'));
+ const storage=new Map([['whatwhatboy.host.ps4',JSON.stringify({firmware:''})]]);
+ const create=()=>fixture({platform:'ps4',actions,storage,initialCategory:'loaders',catalogGrid:true,
+  firmwareChoicesOnly:true,firmwareButtons:['5.05','9.00','13.52','14.00']});
+ const app=create(),grid=app.ids['host-action-grid'];
+ assert.ok(grid.querySelector('.wwb-primary-loader').getAttribute('href').endsWith('/ps4/14.00/'));
+ const older=app.ids['host-firmware-buttons'].querySelector('[data-host-firmware="13.52"]');
+ assert.equal(older.hidden,false);
+ assert.equal(older.disabled,false);
+ assert.equal(older.getAttribute('data-host-loader-status'),'unavailable');
+ app.selectFirmware('13.52');
+ assert.deepEqual(pressed(app),['13.52']);
+ assert.match(app.ids['host-empty'].textContent,/No WebKit loader is listed here for PS4 13\.52/);
+ assert.equal(grid.querySelector('.wwb-primary-loader,[data-launch]'),null);
+ const restored=create();
+ assert.deepEqual(pressed(restored),['13.52']);
+ assert.equal(restored.ids['host-action-grid'].querySelector('.wwb-primary-loader,[data-launch]'),null);
+ app.selectFirmware('14.00');
+ assert.ok(grid.querySelector('.wwb-primary-loader').getAttribute('href').endsWith('/ps4/14.00/'));
+ noDispatch(app);noDispatch(restored);
+});
+
+test('PS5 shows listed unsupported firmware and retains the exact supported shortcut',()=>{
+ const actions=require('../build-host-selector.cjs').hostActions('ps5');
+ const relapse=actions.find(action=>action.nativeRoute?.kind==='ps5-native');
+ const app=fixture({platform:'ps5',actions:[{...relapse,entryURL:'/ps5/relapse/'}],
+  initialCategory:'loaders',catalogGrid:true,firmwareChoicesOnly:true,firmwareButtons:['4.00','7.61','13.60']});
+ const older=app.ids['host-firmware-buttons'].querySelector('[data-host-firmware="4.00"]'),grid=app.ids['host-action-grid'];
+ assert.equal(older.hidden,false);
+ assert.equal(older.disabled,false);
+ assert.equal(older.getAttribute('data-host-loader-status'),'unavailable');
+ app.selectFirmware('4.00');
+ assert.deepEqual(pressed(app),['4.00']);
+ assert.equal(saved(app).firmware,'4.00');
+ assert.match(app.ids['host-firmware-status'].textContent,/4\.00.*No WebKit loader listed/);
+ assert.equal(grid.querySelector('.wwb-primary-loader,[data-launch]'),null);
+ app.selectFirmware('7.61');
+ assert.ok(grid.querySelector('.wwb-primary-loader').getAttribute('href').endsWith('/ps5/7.61/'));
+ noDispatch(app);
+});

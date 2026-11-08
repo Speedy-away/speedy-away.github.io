@@ -82,7 +82,7 @@ test('the PS5 package filter and native tools use the matching same-console orig
   const {ids, links} = openDesk({platform:'ps5', userAgent:'PlayStation 5/7.61', query:'?type=packages'});
   assert.equal(ids['host-download-type'].value, 'packages');
   assert.equal(links().get('Save / install on PS5'), 'http://127.0.0.1:6701/whatsite-ps5.html?file=' + ps5.id);
-  assert.match(ids['host-download-results'].textContent, /Verify & install PKG/);
+  assert.match(ids['host-download-results'].textContent, /When ready, choose Install PKG/);
   assert.equal(ids['host-download-native'].children[0].href, 'http://127.0.0.1:6701/whatsite-ps5.html');
 });
 

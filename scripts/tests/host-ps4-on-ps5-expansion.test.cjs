@@ -12,9 +12,9 @@ test('modified source data is rejected before use and no firmware or BIN/ELF tra
  const ui=require('../../assets/host-dashboard.js');assert.equal(ui.loadCapability(a).available,false);
 });
 test('receiver 21 preserves every old entry and the exact receiver engine while adding six scoped PS5 IDs',()=>{
- const old=read('docs/qa/ps4-on-ps5-receiver20-retained.json'),current=read('docs/host-menu-companion-build.json');assert.equal(current.version,'2026.11.02.21');assert.equal(current.activated,true);
+ const old=read('docs/qa/ps4-on-ps5-receiver20-retained.json'),release=read('docs/qa/ps4-on-ps5-receiver21-jobs.json');
  const json=s=>JSON.parse(s.match(/<script id="receiver-catalog" type="application\/json">([\s\S]*?)<\/script>/)[1]);const engine=s=>s.replace(/(<script id="receiver-catalog" type="application\/json">)[\s\S]*?(<\/script>)/,'$1{}$2');
- for(const previous of old.records){const now=current.records.find(r=>r.platform===previous.platform),a=fs.readFileSync(path.join(root,previous.immutablePath),'utf8'),b=fs.readFileSync(path.join(root,now.immutablePath),'utf8');assert.equal(engine(a),engine(b));const before=json(a).items,after=json(b).items;assert.deepEqual(after.slice(0,before.length),before);assert.equal(after.length-before.length,now.platform==='ps5'?6:0);if(now.platform==='ps5')for(const p of pins){const item=after.find(i=>i.id===p.id);assert.ok(item);assert.equal(item.sha256,p.sha256);assert.deepEqual(item.platforms,['ps5']);}}
+ for(const previous of old.records){const job=release.jobs.find(r=>r.platform.toLowerCase()===previous.platform),a=fs.readFileSync(path.join(root,previous.immutablePath),'utf8'),b=fs.readFileSync(path.join(root,job.importPath),'utf8');assert.equal(sha(b),job.expectedSha256);assert.equal(engine(a),engine(b));const before=json(a).items,after=json(b).items;assert.deepEqual(after.slice(0,before.length),before);assert.equal(after.length-before.length,previous.platform==='ps5'?6:0);if(previous.platform==='ps5')for(const p of pins){const item=after.find(i=>i.id===p.id);assert.ok(item);assert.equal(item.sha256,p.sha256);assert.deepEqual(item.platforms,['ps5']);}}
 });
 test('all new exact file IDs resolve through the real console download catalogue and the PS5 host pages',()=>{
  const catalog=read('docs/console-download-catalog.json').items,actions=require('../build-host-selector.cjs').hostActions('ps5');

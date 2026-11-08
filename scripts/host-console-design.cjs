@@ -7,8 +7,12 @@ function apply(html, name) {
     /^(?:ps[45]\/.+\/index|offline\/ps[45]\/index|console\/ps[45]\/downloads)\.html$/.test(name);
   if (!authored || !html.includes('</head>') || /http-equiv=["']refresh/i.test(html)) return html;
   const dashboards = /id="host-action-grid"/.test(html);
-  html = html.replace(/<body\b/i, '<body data-wwb-console-ui');
-  html = html.replace('</head>', '<link rel="stylesheet" href="/assets/host-console-design.css?v=20261108">\n' +
+  if (!/<body\b[^>]*data-wwb-console-ui/i.test(html)) {
+    const motion = html.includes('/assets/host-performance.js') ? ' data-wwb-xmb-motion' : '';
+    html = html.replace(/<body\b([^>]*)>/i, '<body data-wwb-console-ui' + motion + '$1>' +
+      '<img class="wwb-xmb-waves" src="/assets/host-xmb-waves.svg" alt="" aria-hidden="true" width="1600" height="900">');
+  }
+  html = html.replace('</head>', '<link rel="stylesheet" href="/assets/host-console-design.css?v=20261108xmb">\n' +
     '<script defer src="/assets/host-console-navigation.js?v=20261108"></script>\n</head>');
   if (!platform || !dashboards) return html;
 

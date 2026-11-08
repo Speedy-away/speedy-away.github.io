@@ -490,10 +490,26 @@
       var detect = document.getElementById('receiver-detect'), storageStatus = document.getElementById('receiver-storage-status');
       var folderConfirmed = document.getElementById('receiver-folder-confirmed'), browse = document.getElementById('receiver-browse');
       var prepareOpen = document.getElementById('receiver-prepare-open'), managerOpen = document.getElementById('receiver-manager-open');
-      var jobs = Object.create(null), cards = Object.create(null), timer = null, sequence = 0;
+      var jobs = Object.create(null), cards = Object.create(null), timer = null, sequence = 0, readingQueue = false;
       var latestMounts = null, mountReadFailed = false, destinationUnavailable = false;
       function text(parent, tag, content, className) { var el = document.createElement(tag); if (className) el.className = className; el.appendChild(document.createTextNode(String(content || ''))); parent.appendChild(el); return el; }
       function announce(content, error) { message.textContent = content; message.className = error ? 'receiver-message receiver-error' : 'receiver-message'; }
+      function transferLabel(p) {
+        if (p.total) return p.label + ' · ' + p.percent + '% · ' + formatBytes(p.transferred) + ' / ' + formatBytes(p.total);
+        return p.label + (p.transferred ? ' · ' + formatBytes(p.transferred) + ' received' : '');
+      }
+      function paintBar(bar, p) {
+        var active = p.phase === 'queued' || p.phase === 'downloading' || p.phase === 'resumed' || p.phase === 'submitted';
+        bar.hidden = !active && !p.complete && !p.total;
+        if (p.total || p.complete) bar.value = p.total ? p.percent : 100;
+        else if (active) bar.removeAttribute('value');
+      }
+      function ready(job, item) {
+        var p = job.progress;
+        return allowed && job.current && !job.existing && p && p.complete &&
+          (!p.total || p.total === item.bytes) && (!p.transferred || p.transferred === item.bytes) &&
+          (!p.total || p.transferred === p.total);
+      }
       function updateStates(states) {
         if (connection) { connection.textContent = 'Receiver answered · ' + states.length + ' download records. Queue status is supplied by ezRemote.'; connection.className = 'receiver-help'; }
         if (queueList) {
@@ -501,18 +517,20 @@
           if (!states.length) text(queueList, 'p', 'The receiver queue is empty.');
           for (var n = states.length - 1; n >= Math.max(0, states.length - 20); n--) {
             var state = progress(states[n]);
-            var row = text(queueList, 'p', state.label + ' · ' + states[n].path + (state.total ? ' · ' + formatBytes(state.transferred) + ' / ' + formatBytes(state.total) : ''), 'receiver-queue-row');
+            var row = text(queueList, 'p', transferLabel(state) + ' · ' + states[n].path, 'receiver-queue-row');
             row.setAttribute('data-state', state.phase);
           }
         }
         for (var key in jobs) if (Object.prototype.hasOwnProperty.call(jobs, key)) {
           var job = jobs[key], found = false;
+          if (job.preflight) continue;
           for (var i = 0; i < states.length; i++) if (states[i].path === job.body.dest_path) { job.progress = progress(states[i]); found = true; }
-          if (!found && job.confirmed && job.progress && !job.progress.complete) job.progress = {label:'The queue record is no longer available. Inspect this destination in the file manager before retrying.',phase:'unknown',percent:0};
+          if (!found && job.confirmed) job.progress = {label:'Queue record unavailable. Inspect the destination in the file manager.',phase:'unknown'};
+          job.current = found;
           if (found) job.confirmed = true;
-          if (found && job.progress.complete && !job.completionAnnounced) {
+          if (found && !job.existing && job.progress.complete && !job.completionAnnounced) {
             job.completionAnnounced = true;
-            announce('Receiver reports saved to: ' + job.body.dest_path + '. Check the native file before installation.');
+            announce('Receiver reports saved to: ' + job.body.dest_path + '. Check the file card for the next step.');
           }
           paint(key);
         }
@@ -521,24 +539,40 @@
         var content = error.message + ' Keep the matching ezRemote Server running, then use Check receiver. Existing transfers may still be running; do not queue them again until you inspect the receiver.';
         if (connection) { connection.textContent = content; connection.className = 'receiver-help receiver-error'; }
         else announce(content, true);
+        for (var id in jobs) {
+          if (!jobs[id].current) continue;
+          jobs[id].current = false;
+          jobs[id].progress = {label:'Live progress unavailable. Check the receiver connection.',phase:'unknown'};
+          paint(id);
+        }
       }
       function refresh() {
-        if (!allowed) return;
+        if (!allowed || readingQueue) return;
+        if (timer !== null) window.clearTimeout(timer);
+        readingQueue = true;
         client.states(function (error, states) {
+          readingQueue = false;
           if (error) statusError(error); else updateStates(states);
           timer = window.setTimeout(refresh, 2500);
         });
       }
       function paint(id) {
         var card = cards[id], job = jobs[id]; if (!card || !job) return;
-        var p = job.progress || {label: 'Submitted; waiting for receiver queue confirmation', percent: 0, phase: 'submitted'};
-        card.status.textContent = p.label + (p.total ? ' · ' + formatBytes(p.transferred) + ' / ' + formatBytes(p.total) : '') + ' · ' + job.body.dest_path + (p.phase === 'failed' ? ' · Check free space, the mounted device and file URL in ezRemote. The receiver may retry automatically; no duplicate will be sent here.' : '') + (p.complete ? ' · Confirm the saved file and checksum before following its install or load guide.' : '');
-        card.status.setAttribute('data-state', p.phase); card.bar.value = p.percent || 0;
-        card.bar.hidden = !p.total; card.button.disabled = true;
+        var p = job.progress || {label: 'Submitted. Waiting for the receiver.', phase: 'submitted'};
+        var canPrepare = ready(job, card.item), dest = job.body.dest_path, status = transferLabel(p) + ' · ' + dest;
+        if (p.phase === 'failed') status += ' · Check free space, storage and the file URL in ezRemote.';
+        if (p.complete && !canPrepare) status += ' · Check the saved file in the native file manager.';
+        if (card.status.textContent !== status) card.status.textContent = status;
+        card.status.setAttribute('data-state', p.phase);
+        paintBar(card.bar, p); card.button.disabled = true;
+        if (card.extractLink) {
+          card.extractLink.hidden = !canPrepare;
+          if (canPrepare) card.extractLink.href = preparationURL(window.location, platform, dest.slice(0, dest.lastIndexOf('/')), dest);
+        }
         if (card.installLink) {
           card.installLink.hidden = true;
-          if (allowed && p.complete && job.confirmed) {
-            try { card.installLink.href=packageInstallerURL(window.location,platform,job.body.dest_path,card.item.bytes);card.installLink.hidden=false; } catch (_) {}
+          if (canPrepare) {
+            try { card.installLink.href=packageInstallerURL(window.location,platform,dest,card.item.bytes);card.installLink.hidden=false; } catch (_) {}
           }
         }
       }
@@ -551,22 +585,21 @@
         if (jobs[item.id]) { announce('This item was already submitted in this session. Check its receiver status.'); return; }
         for (var jobId in jobs) if (Object.prototype.hasOwnProperty.call(jobs, jobId) && jobs[jobId].body.dest_path === body.dest_path) { announce('Another item is using this destination. Choose a different existing folder.', true); return; }
         var card = cards[item.id]; card.button.disabled = true;
-        jobs[item.id] = {body: body, progress: {label: 'Checking current queue and destination', phase: 'checking', percent: 0}}; paint(item.id);
+        jobs[item.id] = {body: body, preflight: true, progress: {label: 'Checking current queue and destination', phase: 'checking'}}; paint(item.id);
         function rejected(error) {
           if (error.uncertainSubmission) {
             jobs[item.id] = {body:body,progress:{label:'Submission could not be confirmed. Check receiver and inspect this destination in ezRemote before retrying.',phase:'unknown',percent:0}};
             paint(item.id); announce(error.message + ' The request may have reached the receiver. A duplicate has not been sent.', true); return;
           }
           delete jobs[item.id];
-          if (cards[item.id]) { cards[item.id].button.disabled = !allowed || destinationUnavailable; cards[item.id].status.textContent = error.message; cards[item.id].status.setAttribute('data-state', 'failed'); }
+          if (cards[item.id]) { cards[item.id].button.disabled = !allowed || destinationUnavailable; cards[item.id].bar.hidden = true; cards[item.id].status.textContent = error.message; cards[item.id].status.setAttribute('data-state', 'failed'); }
           announce(error.message, true);
         }
         announce('Checking the receiver queue and ' + body.dest_path + ' before submitting…');
         client.states(function (stateError, states) {
           if (stateError) { rejected(new Error('Cannot confirm the receiver queue. No download was submitted. ' + stateError.message)); return; }
-          updateStates(states);
           for (var i = 0; i < states.length; i++) if (states[i].path === body.dest_path) {
-            jobs[item.id] = {body:body,progress:progress(states[i]),confirmed:true}; paint(item.id);
+            jobs[item.id] = {body:body,progress:progress(states[i]),confirmed:true,current:true,existing:true}; paint(item.id);
             announce('The receiver already has a record for this destination. No duplicate was queued. Inspect it in ezRemote before choosing another folder.'); return;
           }
           client.checkDestination(platform, body.dest_path.slice(0, body.dest_path.lastIndexOf('/')), safeFilename(body.dest_path), function (checkError) {
@@ -598,8 +631,6 @@
             guide.href = 'https://whatwhatboy.com' + item.page; guide.target = '_blank'; guide.rel = 'noopener noreferrer';
           }
           var extractLink = null, installLink = null;
-          if (/\.pkg$/i.test(item.filename || '')) { installLink=text(article,'a','Verify & install PKG','receiver-guide'); installLink.target='_blank'; installLink.rel='noopener noreferrer'; installLink.hidden=true; }
-          if (isArchive(item)) { extractLink=text(article,'a','Extract a saved copy on console','receiver-guide'); extractLink.target='_blank'; extractLink.rel='noopener noreferrer'; }
           if (/^[a-f0-9]{64}$/i.test(item.sha256 || '')) {
             var details = document.createElement('details'); article.appendChild(details);
             text(details, 'summary', 'SHA-256 checksum'); text(details, 'code', item.sha256, 'receiver-hash');
@@ -608,6 +639,8 @@
           button.onclick = (function (selected) { return function () { save(selected); }; }(item));
           var status = text(article, 'p', '', 'receiver-file-status'); status.setAttribute('aria-live', 'polite');
           var bar = document.createElement('progress'); bar.max = 100; bar.value = 0; bar.hidden = true; bar.setAttribute('aria-label', 'Download progress'); article.appendChild(bar);
+          if (/\.pkg$/i.test(item.filename || '')) { installLink=text(article,'a','Install PKG','receiver-guide receiver-ready'); installLink.target='_blank'; installLink.rel='noopener noreferrer'; installLink.hidden=true; }
+          if (reviewedArchive(item)) { extractLink=text(article,'a','Extract','receiver-guide receiver-ready'); extractLink.target='_blank'; extractLink.rel='noopener noreferrer'; extractLink.hidden=true; }
           cards[item.id] = {button: button, status: status, bar: bar, extractLink:extractLink, installLink:installLink, item:item}; paint(item.id);
         }
         document.getElementById('receiver-count').textContent = count + ' files' + (format && format.value === 'ready' ? ' · archive files hidden' : '');
@@ -636,10 +669,6 @@
         folder.setAttribute('aria-invalid', destinationUnavailable ? 'true' : 'false');
         for (var id in cards) if (Object.prototype.hasOwnProperty.call(cards, id)) {
           if (!jobs[id]) cards[id].button.disabled = !allowed || destinationUnavailable;
-          if (cards[id].extractLink) {
-            cards[id].extractLink.hidden=!allowed || destinationUnavailable;
-            if (!destinationUnavailable) cards[id].extractLink.href=preparationURL(window.location,platform,chosenFolder,chosenFolder + '/' + safeFilename(cards[id].item.filename));
-          }
         }
       }
       function detectStorage() {
@@ -668,7 +697,7 @@
       storage.onchange = function () { if (storage.value) folder.value = storage.value; folderChanged(); };
       folder.oninput = folderChanged; folder.onchange = folderChanged;
       if (detect) { detect.disabled = !allowed || platform !== 'ps5'; detect.onclick = detectStorage; }
-      document.getElementById('receiver-check').onclick = function () { if (allowed) { client.states(function (error, states) { if (error) statusError(error); else { updateStates(states); announce('Receiver answered. ' + states.length + ' download records. Check the queue and saved file before retrying a failed or uncertain transfer.'); } }); } };
+      document.getElementById('receiver-check').onclick = refresh;
       document.getElementById('receiver-check').disabled = !allowed;
       var notice = document.getElementById('receiver-setup'); notice.hidden = allowed;
       if (!allowed) announce('Preview mode. Save buttons work only when this file is opened through your console’s HTTP receiver on port 6701.');

@@ -5,16 +5,21 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const receiver=require('../../assets/console-receiver.js'),native=require('../../assets/host-package-installer.js');
 const local={protocol:'http:',hostname:'192.168.1.40',port:'6701'};
 
-function fixture(platform='ps4',{filename='app.pkg',folder='/data/whatwhatboy',location=local,bytes=4096}={}){
+function fixture(platform='ps4',{filename='app.pkg',folder='/data/whatwhatboy',location=local,bytes=4096,reviewed=false}={}){
   const created=[],requests=[],timers=[],ids={};let records=[],queued=null;
   function element(tag){
-    const node={tagName:tag.toUpperCase(),children:[],value:'',className:'',disabled:false,hidden:false,checked:false,appendChild(child){this.children.push(child);return child;},removeChild(child){this.children.splice(this.children.indexOf(child),1);},setAttribute(key,value){this[key]=value;},focus(){}};
+    const node={tagName:tag.toUpperCase(),children:[],value:'',className:'',disabled:false,hidden:false,checked:false,appendChild(child){this.children.push(child);return child;},removeChild(child){this.children.splice(this.children.indexOf(child),1);},setAttribute(key,value){this[key]=value;},removeAttribute(key){delete this[key];},focus(){}};
     Object.defineProperty(node,'firstChild',{get(){return this.children[0];}});
     Object.defineProperty(node,'textContent',{get(){return this.children.map(c=>c.textContent||'').join('');},set(value){this.children=[{textContent:String(value)}];}});
     created.push(node);return node;
   }
   for(const id of ['receiver-catalog','receiver-files','receiver-search','receiver-category','receiver-format','receiver-folder','receiver-storage','receiver-message','receiver-check','receiver-setup','receiver-count','receiver-folder-confirmed','receiver-connection','receiver-queue','receiver-folder-status'])ids[id]=element('div');
-  ids['receiver-catalog'].textContent=JSON.stringify({platform,items:[{id:'fixture-app',name:'Fixture app',filename,url:'https://example.invalid/'+filename,bytes,category:'apps',platforms:[platform]}]});ids['receiver-folder'].value=folder;ids['receiver-format'].value='ready';
+  const item={id:'fixture-app',name:'Fixture app',filename,url:'https://example.invalid/'+filename,bytes,category:'apps',platforms:[platform]};
+  if(reviewed){
+    item.sha256='a'.repeat(64);
+    item.archiveSafety={reviewed:true,noLinks:true,relativePaths:true,noDevices:true,noAlternateStreams:true,noEncryptedEntries:true,sha256:item.sha256,bytes,entryCount:1,expandedBytes:bytes};
+  }
+  ids['receiver-catalog'].textContent=JSON.stringify({platform,items:[item]});ids['receiver-folder'].value=folder;ids['receiver-format'].value='all';
   const document={readyState:'complete',getElementById:id=>ids[id]||null,createElement:element,createTextNode:text=>({textContent:String(text)}),addEventListener(){},querySelectorAll(){return[];}};
   function XHR(){this.open=(method,url)=>{this.method=method;this.url=url;};this.setRequestHeader=()=>{};this.send=body=>{
     requests.push({method:this.method,url:this.url,body:body&&JSON.parse(body)});this.status=200;
@@ -28,7 +33,7 @@ function fixture(platform='ps4',{filename='app.pkg',folder='/data/whatwhatboy',l
   };}
   const window={location:{...location,search:''},XMLHttpRequest:XHR,setTimeout(fn){timers.push(fn);return timers.length;},clearTimeout(){},addEventListener(){}};
   receiver.install(document,window);
-  const link=()=>created.find(n=>n.tagName==='A'&&n.textContent==='Verify & install PKG'),save=()=>created.find(n=>n.className==='receiver-save');
+  const link=(label='Install PKG')=>created.find(n=>n.tagName==='A'&&n.textContent===label),save=()=>created.find(n=>n.className==='receiver-save');
   return{requests,ids,created,link,save,queued:()=>queued,setRecords(value){records=value;},queue(){ids['receiver-folder-confirmed'].checked=true;save().onclick();},poll(value){records=value;const fn=timers.shift();assert.ok(fn,'No scheduled inert poll');fn();}};
 }
 
@@ -59,6 +64,38 @@ test('submission, full transfer, failure and unrelated completion cannot expose 
     f.poll([{path,state:4,bytes_transfered:4096,file_size:4096}]);assert.equal(f.link().hidden,false);assert.equal(new URL(f.link().href).searchParams.get('path'),path);assert.match(f.ids['receiver-message'].textContent,/Receiver reports saved to:/);assert.doesNotMatch(f.ids['receiver-message'].textContent,/installation (?:finished|complete)|installed successfully/i);
     assert.equal(f.requests.filter(r=>r.method==='POST').length,1);assert.equal(f.requests.find(r=>r.method==='POST').url,'/download_url');assert.equal(f.link().onclick,undefined);assert.equal(f.link().target,'_blank');assert.match(f.link().rel,/noopener/);
   }
+});
+
+test('both console queues show real progress and expose only the matching completed archive or PKG',()=>{
+  for(const platform of ['ps4','ps5']) for(const filename of ['app.pkg','archive.zip']){
+    const archive=filename.endsWith('.zip'), f=fixture(platform,{filename,reviewed:archive});
+    const action=f.link(archive?'Extract':'Install PKG');
+    const bar=f.created.find(n=>n.tagName==='PROGRESS');
+    const status=f.created.find(n=>n.className==='receiver-file-status');
+    assert.equal(action.hidden,true);
+    f.queue();
+    assert.equal(bar.hidden,false);
+    assert.equal(bar.value,undefined);
+    const path=f.queued().dest_path;
+    f.poll([{path,state:1,bytes_transfered:1024,file_size:4096}]);
+    assert.equal(bar.value,25);
+    assert.match(status.textContent,/Downloading · 25%/);
+    assert.match(f.ids['receiver-queue'].textContent,/Downloading · 25%/);
+    assert.equal(action.hidden,true);
+    f.poll([{path,state:4,bytes_transfered:2048,file_size:2048}]);
+    assert.equal(action.hidden,true);
+    f.ids['receiver-folder'].value='/data/another-folder';
+    f.ids['receiver-folder'].onchange();
+    f.poll([{path,state:4,bytes_transfered:4096,file_size:4096}]);
+    assert.equal(action.hidden,false);
+    assert.equal(bar.value,100);
+    assert.equal(new URL(action.href).searchParams.get(archive?'archive':'path'),path);
+    f.poll([]);
+    assert.equal(action.hidden,true);
+    assert.equal(bar.hidden,true);
+    assert.equal(f.requests.filter(r=>r.method==='POST').length,1);
+  }
+  assert.equal(fixture('ps4',{filename:'unreviewed.zip'}).link('Extract'),undefined);
 });
 
 test('completed downloads on unsupported native mount paths keep installation preparation hidden',()=>{

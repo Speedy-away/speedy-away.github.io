@@ -107,7 +107,7 @@ test('companion is standalone and safely embeds untrusted metadata', () => {
 test('loading or preselecting a file only reads status; Save click is required before any POST', () => {
   const created=[];
   function element(tag) {
-    const node={tagName:tag.toUpperCase(),children:[],value:'',className:'',textContent:'',disabled:false,appendChild(child){this.children.push(child);return child;},removeChild(child){this.children.splice(this.children.indexOf(child),1);},setAttribute(name,value){this[name]=value;},focus(){}};
+    const node={tagName:tag.toUpperCase(),children:[],value:'',className:'',textContent:'',disabled:false,appendChild(child){this.children.push(child);return child;},removeChild(child){this.children.splice(this.children.indexOf(child),1);},setAttribute(name,value){this[name]=value;},removeAttribute(name){delete this[name];},focus(){}};
     Object.defineProperty(node,'firstChild',{get(){return this.children[0];}});created.push(node);return node;
   }
   const ids={};for(const id of ['receiver-catalog','receiver-files','receiver-search','receiver-category','receiver-folder','receiver-storage','receiver-message','receiver-check','receiver-setup','receiver-count','receiver-folder-confirmed'])ids[id]=element('div');

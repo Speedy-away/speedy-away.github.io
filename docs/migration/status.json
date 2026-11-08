@@ -1853,6 +1853,27 @@
     "nativeOrDownloadBytesChanged": 0,
     "physicalConsoleTested": false
   },
+  "consoleReceiverProgress20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.22",
+    "status": "Archived and activated at the stable receiver paths in the local checkout",
+    "changes": [
+      "Restore the complete authored PS4 and PS5 firmware pickers and preserve exact loader eligibility",
+      "Restore a dark blue PS3-style wave background across authored host pages with a still image on console browsers",
+      "Show native receiver progress as a percentage and byte counts when the total is available",
+      "Expose Extract or Install PKG only after the current receiver confirms the selected transfer completed",
+      "Keep the saved archive size and SHA-256 checks before extraction and the explicit confirmation before package installation"
+    ],
+    "buildReport": "docs/host-menu-companion-build.json",
+    "inventory": "docs/pages-helper-download-inventory.json",
+    "previousJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.20.json",
+    "receiverCataloguesVerifiedUnchanged": {"ps4": 542, "ps5": 356},
+    "archiveCopiesHashVerified": 2,
+    "previousImmutableCopiesHashVerified": 2,
+    "archiveIndex": {"items": 5842, "presentFileRecords": 9461, "missingFileRecords": 0},
+    "focusedTestsPassed": 77,
+    "physicalConsoleTested": false
+  },
   "karoGamerHackRefresh20261108": {
     "status": "Implemented, archive bytes verified and Pages validation passed locally.",
     "karoCommit": "c72eaae8859476d4772e613d011db9f0bb80c80d",
