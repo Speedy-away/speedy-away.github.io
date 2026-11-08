@@ -28,6 +28,7 @@
   if (requestedFile) {
     try { pinnedId = decodeURIComponent(requestedFile[1]); } catch (_) { /* Show the library. */ }
   }
+  if (type && !packagesOnly && /[?&]type=archives(?:&|$)/.test(win.location.search)) type.value = 'archives';
 
   function add(parent, tag, message, className) {
     var node = doc.createElement(tag);
@@ -74,7 +75,12 @@
     add(card, 'p', item.compatibility || item.description);
     var controls = add(card, 'div', '', 'host-download-controls');
     var saveURL = destination && item.receiverSupported !== false && transport.buildReceiverURL(platform, destination, item.id);
-    if (saveURL) link(controls, 'Save on ' + platform.toUpperCase(), saveURL, 'host-download-primary');
+    var archive = transport.matchesFormat(item.filename, 'archives');
+    var reviewed = archive && item.receiverSupported !== false && item.archiveSafety && item.archiveSafety.reviewed === true;
+    if (saveURL) link(controls, (reviewed ? 'Save / extract on ' : 'Save on ') + platform.toUpperCase(), saveURL, 'host-download-primary');
+    if (archive) add(card, 'p', reviewed
+      ? 'Save the complete archive first. Then choose Extract a saved copy in the console receiver. It checks the SHA-256 and extracts into a new folder.'
+      : 'Save the archive first, then extract it with the installed console file manager. Follow the build’s compatibility guide.', 'host-download-meta');
     var direct = link(controls, 'Direct file', httpsURL(item.url));
     direct.setAttribute('download', item.filename);
     direct.setAttribute('data-no-file-options', '');

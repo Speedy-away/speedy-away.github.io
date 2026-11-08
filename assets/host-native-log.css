@@ -30,7 +30,19 @@ body {
 .wwb-runtime-bar strong { letter-spacing: .13em; }
 h1 { text-shadow: none; }
 #msgs { margin: 15px 0 !important; color: #efc591; }
+#msgs[hidden], #wwb-native-result[hidden] { display: none !important; }
 #wwb-native-log-label { margin: 12px 0 6px; color: #a9edcf; font-weight: bold; }
+#wwb-native-result {
+  padding: 12px 14px;
+  border-left: 3px solid #efc591;
+  background: #23231e;
+  color: #f6d6af;
+}
+#wwb-native-result[data-state="ready"] {
+  border-color: #a9edcf;
+  background: #172823;
+  color: #b8edd7;
+}
 
 #out, #state {
   position: static !important;

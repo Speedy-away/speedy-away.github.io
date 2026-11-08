@@ -1829,5 +1829,16 @@
     "nativeScriptsChanged": 0,
     "downloadFilesChanged": 0,
     "physicalConsoleTested": false
+  },
+  "gamerHackRecovery20261108": {
+    "upstreamCommit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
+    "finding": "The GamerHack 14.00 kernel stage can exhaust its four attempts before opening GoldHEN. GamerHack records its session-done flag even on that failure.",
+    "changes": [
+      "Explicit restart-confirmed recovery clears the two pinned GamerHack session markers as well as the WWB attempt guard",
+      "The authored result panel distinguishes kernel failure, cleanup failure, kernel-only completion and native enabler start reports",
+      "The PS4 download centre exposes archive filtering and the existing receiver's reviewed save, verify and extract workflow"
+    ],
+    "verifiedLiveSHA256": ["jb2.js", "afterglow.js", "1400.bin", "goldhen_2.4b18.13.bin"],
+    "physicalConsoleTested": false
   }
 }

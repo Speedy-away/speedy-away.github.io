@@ -5,6 +5,7 @@
   else api.install(root, root.document);
 }(typeof window === 'undefined' ? this : window, function () {
   'use strict';
+  var gamerHackSessionKeys = ['jb2.goldhen_done', 'jb1352-read-retry'];
 
   function install(win, doc) {
     function node(name) { return doc.getElementById('wwb-short-' + name); }
@@ -51,7 +52,11 @@
 
     try { cache = win.applicationCache; } catch (_) {}
 
-    function savedAttempt() { return Boolean(win.localStorage.getItem(guard.LOCK)); }
+    function savedAttempt() {
+      return Boolean(win.localStorage.getItem(guard.LOCK)) || gamerHackSessionKeys.some(function (key) {
+        return win.sessionStorage.getItem(key) !== null;
+      });
+    }
 
     function render() {
       try {
@@ -141,9 +146,15 @@
       }
     });
     restarted.addEventListener('change', render);
-    clear.addEventListener('click', function () {
-      if (clear.disabled) return;
+    clear.addEventListener('click', function (event) {
+      if (clear.disabled || !restarted.checked || !event || event.isTrusted !== true) return;
       try {
+        // GamerHack sets its done marker even after a failed kernel attempt.
+        // Reset its session state only as part of explicit restart recovery.
+        gamerHackSessionKeys.forEach(function (key) {
+          win.sessionStorage.removeItem(key);
+          if (win.sessionStorage.getItem(key) !== null) throw Error('The saved GamerHack state could not be cleared.');
+        });
         guard.clear(win, restarted.checked);
         restarted.checked = false;
         record('Saved attempt cleared.');

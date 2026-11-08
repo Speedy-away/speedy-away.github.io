@@ -69,6 +69,15 @@ test('a pinned package opens the exact same-console queue and keeps a separate d
   assert.equal(links().has('Save on PS5'), false);
 });
 
+test('the PS4 archive view shows the exact receiver handoff only as reviewed extraction for a reviewed build', () => {
+  const archive = catalogue.find(item => item.platforms.includes('ps4') && item.archiveSafety?.reviewed && /\.(zip|rar|7z)$/i.test(item.filename));
+  const {ids, links} = openDesk({userAgent:'PlayStation 4/14.00', query:'?type=archives', items:[ps4, archive]});
+  assert.equal(ids['host-download-type'].value, 'archives');
+  assert.equal(links().get('Save / extract on PS4'), 'http://127.0.0.1:6701/data/whatsite-ps4.html?file=' + archive.id);
+  assert.match(ids['host-download-results'].textContent, /checks the SHA-256/);
+  assert.equal(links().has('Save on PS4'), false);
+});
+
 test('a failing catalogue can be retried, and desktop only shows native save after selecting a private address', () => {
   const {ids, links} = openDesk({platform:'ps5', statuses:[503, 200]});
   assert.match(ids['host-download-status'].textContent, /could not load/);

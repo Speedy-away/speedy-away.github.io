@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const shortLoader = require('../../assets/host-short-loader.js');
+const gamerHack = require('../../assets/host-gamerhack-result.js');
 const siteLoad = require('../../assets/host-site-load.js');
 const guard = require('../../assets/host-karo-builds.js');
 const compact = require('../host-compact-pages.cjs');
@@ -49,10 +50,20 @@ test('the PS4 native screen adds a back link and log heading without rewriting e
   const name = 'hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec/web/g2all/index.html';
   const original = JSON.parse(read(name).match(/"original"\s*:\s*("(?:\\.|[^"\\])*")/)[1]);
   const themed = compact.showNativeLog(original, name);
-  const scripts = html => [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/gi)].map(match => match[0]);
+  const scripts = html => [...html.matchAll(/<script\b(?![^>]*\bsrc=)[^>]*>[\s\S]*?<\/script>/gi)].map(match => match[0]);
   assert.match(themed, /<header class="wwb-runtime-bar">/);
   assert.match(themed, /Live loader log/);
   assert.deepEqual(scripts(themed), scripts(original));
+});
+
+test('terminal GamerHack reports distinguish kernel misses, kernel-only success and GoldHEN start', () => {
+  const done = 'AG  done -- jailbroken, rwx open, syscall 11 is a kexec gate';
+  assert.match(gamerHack.result('AG  handles implausible -- nothing written\nAG  gave up after 4 attempts', '').message, /GoldHEN was not started/);
+  assert.equal(gamerHack.result(done, 'GoldHEN v2.4b18.13 Loaded ...').state, 'error');
+  assert.equal(gamerHack.result('AG  done', 'GoldHEN v2.4b18.13 Loaded ...').state, 'notice');
+  assert.equal(gamerHack.result(done + ', enabler running', '').state, 'ready');
+  assert.equal(gamerHack.result('AG  the handles are NOT defused\n' + done + ', enabler running', '').state, 'error');
+  assert.equal(gamerHack.result('', 'GoldHEN is Already Loaded ...').state, 'notice');
 });
 
 function fixture(ua) {
@@ -127,16 +138,22 @@ test('14.00 shows real cache events and issues a single trusted handoff only aft
 test('an existing native lock exposes explicit recovery and permits a new handoff only after clearing', () => {
   const { win, doc, nodes, cache } = fixture('PlayStation 4/14.00');
   win.localStorage.setItem(guard.LOCK, '{}');
+  win.sessionStorage.setItem('jb2.goldhen_done', '1');
+  win.sessionStorage.setItem('jb1352-read-retry', '4');
   cache.status = 1;
   shortLoader.install(win, doc);
   assert.equal(nodes.recovery.hidden, false);
   assert.equal(nodes.load.disabled, true);
-  nodes.clear.fire('click');
+  nodes.clear.fire('click', {isTrusted:true});
   assert.equal(win.localStorage.getItem(guard.LOCK), '{}');
   nodes.restarted.checked = true;
   nodes.restarted.fire('change');
-  nodes.clear.fire('click');
+  nodes.clear.fire('click', {isTrusted:false});
+  assert.equal(win.sessionStorage.getItem('jb2.goldhen_done'), '1');
+  nodes.clear.fire('click', {isTrusted:true});
   assert.equal(win.localStorage.getItem(guard.LOCK), null);
+  assert.equal(win.sessionStorage.getItem('jb2.goldhen_done'), null);
+  assert.equal(win.sessionStorage.getItem('jb1352-read-retry'), null);
   assert.equal(nodes.load.disabled, false);
 });
 

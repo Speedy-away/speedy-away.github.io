@@ -65,10 +65,10 @@ function projectPS5(html, name) {
 
 function showNativeLog(html,name){
  if(!/^hosts\/runtime\/gamerhack-g2all-[a-f0-9]{12}-[a-f0-9]{12}\/web\/g2all\/index\.html$/.test(name))return html;
- return html.replace(/<\/head>/i,'<link rel="stylesheet" href="/assets/host-native-log.css?v=2"></head>')
+ return html.replace(/<\/head>/i,'<link rel="stylesheet" href="/assets/host-native-log.css?v=3"><script defer src="/assets/host-gamerhack-result.js?v=1"></script></head>')
   .replace(/(<h1\s+id=msgs[^>]*>[\s\S]*?<\/h1>)/i,
    '<header class="wwb-runtime-bar"><a href="/ps4/14.00/">‹ PS4 launcher</a><strong>WWB HOST</strong><span>PS4 WebKit</span></header>'+
-   '$1<p id="wwb-native-log-label">Live loader log</p>');
+   '$1<p id="wwb-native-result" role="status" hidden></p><p id="wwb-native-log-label">Live loader log</p>');
 }
 function ps5RemainingRoute(rows){
  const source=rows.find(g=>g.id==='karo-ps5-umtx');
