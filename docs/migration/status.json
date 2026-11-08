@@ -1917,7 +1917,7 @@
     }
   },
   "localConsoleUpdates20261108": {
-    "status": "Implemented and verified in local Pages build",
+    "status": "Published and live verified",
     "date": "2026-11-08",
     "updates": "/hosts/updates/",
     "ps4": "/hosts/ps4/exploit/multi-firmware/",
@@ -1939,7 +1939,18 @@
     "publicPagesScanned": 171,
     "downloadChecks": 75,
     "ps5NativePayloadArchiveReadbacks": 19,
-    "pagesVerifiersPassed": 5
+    "pagesVerifiersPassed": 5,
+    "additionalDownloadAndFirmwareTests": 14,
+    "legacyFeedTest": "Inherited Apollo PKG URL assertion still compares the original feed to the archived catalogue URL.",
+    "publication": {
+      "commit": "0a5e6eab9c3682100b2285c6b21b5dee3d3e3279",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42527076512",
+      "verifiedAt": "2026-11-08T21:51:55.207Z",
+      "routes": 12,
+      "downloadURLs": 75,
+      "downloadHashesReadBack": 3,
+      "ps5RuntimeFiles": 67
+    }
   },
   "consoleOnlySetup20261108": {
     "date": "2026-11-08",
