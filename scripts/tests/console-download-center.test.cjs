@@ -4,7 +4,15 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const {getCatalog, MAX_PLATFORM_ITEMS, assertCatalogueBounds} = require('../console-download-catalog.cjs');
-const {buildReceiverURL, buildPreparationURL, matchesFilter, matchesFormat, normalizeConsoleHost} = require('../../assets/console-downloads.js');
+const {buildReceiverURL, buildPreparationURL, buildEzRemoteClientURL, matchesFilter, matchesFormat, normalizeConsoleHost} = require('../../assets/console-downloads.js');
+
+test('ezRemote setup opens the native client separately from the installed companion', () => {
+  assert.equal(buildEzRemoteClientURL('ps4', '127.0.0.1'), 'http://127.0.0.1:8080/');
+  assert.equal(buildEzRemoteClientURL('ps5', '127.0.0.1'), 'http://127.0.0.1:9090/');
+  assert.equal(buildEzRemoteClientURL('ps4', '192.168.1.40'), 'http://192.168.1.40:8080/');
+  assert.equal(buildEzRemoteClientURL('ps5', 'example.com'), null);
+  assert.equal(buildEzRemoteClientURL('ps3', '127.0.0.1'), null);
+});
 
 const root = path.resolve(__dirname, '../..');
 const readJson = file => { let target=path.join(root,file); if(!fs.existsSync(target)&&['console/ps4/homebrew.json','console/ps5/payloads.json'].includes(file)){ const retained=path.resolve(root,'../whatsite',file); if(fs.existsSync(retained))target=retained; } return JSON.parse(fs.readFileSync(target,'utf8')); };

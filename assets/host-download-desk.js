@@ -64,6 +64,7 @@
     nativeTools.textContent = '';
     nativeTools.hidden = !destination;
     if (!destination) return;
+    link(nativeTools, 'Open ezRemote Web UI', transport.buildEzRemoteClientURL(platform, destination));
     link(nativeTools, 'Open download queue', transport.buildReceiverURL(platform, destination));
     link(nativeTools, 'Prepare a storage folder', transport.buildPreparationURL(platform, destination));
   }

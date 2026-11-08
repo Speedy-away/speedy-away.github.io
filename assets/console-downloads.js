@@ -52,6 +52,12 @@
       : ':9090/data/homebrew/ezremote-client/assets/whatsite-ps5.html') + '?prepare=1';
   }
 
+  function buildEzRemoteClientURL(platform, host) {
+    var normalized = normalizeConsoleHost(host);
+    if (!normalized || (platform !== 'ps4' && platform !== 'ps5')) return null;
+    return 'http://' + normalized + (platform === 'ps4' ? ':8080/' : ':9090/');
+  }
+
   function matchesFilter(searchText, category, query, filter) {
     var text = String(searchText || '').toLowerCase();
     var words = trim(query).toLowerCase().split(/\s+/);
@@ -242,6 +248,7 @@
     normalizeConsoleHost: normalizeConsoleHost,
     buildReceiverURL: buildReceiverURL,
     buildPreparationURL: buildPreparationURL,
+    buildEzRemoteClientURL: buildEzRemoteClientURL,
     matchesFilter: matchesFilter,
     matchesFormat: matchesFormat,
     install: install

@@ -83,7 +83,8 @@ test('the PS5 package filter and native tools use the matching same-console orig
   assert.equal(ids['host-download-type'].value, 'packages');
   assert.equal(links().get('Save / install on PS5'), 'http://127.0.0.1:6701/whatsite-ps5.html?file=' + ps5.id);
   assert.match(ids['host-download-results'].textContent, /When ready, choose Install PKG/);
-  assert.equal(ids['host-download-native'].children[0].href, 'http://127.0.0.1:6701/whatsite-ps5.html');
+  assert.equal(ids['host-download-native'].children[0].href, 'http://127.0.0.1:9090/');
+  assert.equal(ids['host-download-native'].children[1].href, 'http://127.0.0.1:6701/whatsite-ps5.html');
 });
 
 test('a failing catalogue can be retried, and desktop only shows native save after selecting a private address', () => {
@@ -100,6 +101,7 @@ test('a failing catalogue can be retried, and desktop only shows native save aft
   assert.equal(links().get('Save / install on PS5'), 'http://192.168.1.40:6701/whatsite-ps5.html?file=' + ps5.id);
   assert.equal(ids['host-download-native'].hidden, false);
   assert.deepEqual(ids['host-download-native'].children.map(item => item.href), [
+    'http://192.168.1.40:9090/',
     'http://192.168.1.40:6701/whatsite-ps5.html',
     'http://192.168.1.40:9090/data/homebrew/ezremote-client/assets/whatsite-ps5.html?prepare=1'
   ]);

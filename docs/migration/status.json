@@ -1915,5 +1915,18 @@
       "missingFileRecords": 0,
       "readyZIPReadbackVerified": true
     }
+  },
+  "consoleOnlySetup20261108": {
+    "date": "2026-11-08",
+    "status": "Public setup and native Web UI handoff updated. Physical hardware unavailable for this test.",
+    "nativeWebUI": {
+      "ps4": "http://127.0.0.1:8080/",
+      "ps5": "http://127.0.0.1:9090/"
+    },
+    "ps4Bootstrap": "Pinned ezRemote 2.08 documents first installation from prepared FAT32 USB and requires a compatible GoldHEN BIN Loader for its bundled background service.",
+    "ps5Bootstrap": "Pinned ezRemote 2.18 documents the Payload Manager loader. The Download Centre uses websrv for storage checks and the native client uses its bundled DPI on port 9040 for local PKGs.",
+    "sampleArchiveAndPackageHTTPChecks": 6,
+    "targetedChecksPassed": 69,
+    "physicalConsoleTested": false
   }
 }
