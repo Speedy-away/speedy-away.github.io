@@ -50,8 +50,11 @@ function retainedDownloadAliases(root) {
  }
  return retained.aliases;
 }
-function externalReceiverFile(url) {
- return url && url.startsWith('https://raw.githubusercontent.com/etaHEN/PS5_Cheats/');
+function pinnedCheatHandoff(item,url) {
+ if(!url||!url.startsWith('https://raw.githubusercontent.com/etaHEN/PS5_Cheats/'))return '';
+ assert.match(item.sha256,/^[a-f0-9]{64}$/);
+ // A new exact handoff ID keeps older installed companions from using a stale URL.
+ return 'shn-'+item.sha256.slice(0,12);
 }
 function receiverCatalogue(items,root=ROOT) {
  const aliases=retainedDownloadAliases(root);
@@ -59,9 +62,8 @@ function receiverCatalogue(items,root=ROOT) {
   if(!item.url.startsWith('/downloads/'))return item;
   const local=decodeURIComponent(item.url),alias=aliases[local];
   if(!alias||fs.existsSync(path.join(root,local)))return item;
-  const file={...item,url:alias};
-  if(externalReceiverFile(alias))file.receiverSupported=false;
-  return file;
+  const receiverFileId=pinnedCheatHandoff(item,alias);
+  return receiverFileId?{...item,url:alias,receiverFileId}:{...item,url:alias};
  });
 }
 function build(output,revision='main',root=ROOT){
@@ -89,11 +91,11 @@ function build(output,revision='main',root=ROOT){
  const catalogue=fs.existsSync(catalogueFile)?JSON.parse(fs.readFileSync(catalogueFile,'utf8')):null;
  const generatedFeeds=new Map();
  if(catalogue){
-  catalogue.items=publicCopy.catalogue(catalogue.items,delivery);
-  for(const item of catalogue.items){
-   const resolved=mapping[decodeURIComponent(item.url)];
-   if(externalReceiverFile(resolved))item.receiverSupported=false;
-  }
+  catalogue.items=publicCopy.catalogue(catalogue.items,delivery).map(item=>{
+   const receiverFileId=pinnedCheatHandoff(item,mapping[decodeURIComponent(item.url)]);
+   // Cached Download Centre scripts must not send these files using the old ID.
+   return receiverFileId?{...item,receiverSupported:false,receiverFileId}:item;
+  });
   const artwork=path.join(root,'docs/expansion-ps4-ps5.json');
   const images=fs.existsSync(artwork)?JSON.parse(fs.readFileSync(artwork,'utf8')).images:[];
   const {ps4Feed,ps5Feed}=require('./console-download-catalog.cjs').nativeFeeds(catalogue.items,{
@@ -133,7 +135,7 @@ function build(output,revision='main',root=ROOT){
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-pages.css')))text=require('./style-host-pages.cjs').themeHTML(text,name);
   if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-console-client\.js|host-catalog-grid\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-short-loader\.(?:js|css)|host-game-patches\.js|host-download-desk\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
   if(name.endsWith('.html'))text=text.replace(/(host-download-desk\.(?:js|css)|console-downloads\.js)(?:\?v=[\w.-]+)?(?=["'])/g,'$1?v=20261108setup1');
-  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108feeds1');
+  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108shn1');
   if(name==='assets/host-dashboard.js')text=text.replaceAll('^\\/hosts\\/runtime\\/','^\\/(?:(?:WWB-HOST|wwb-host)\\/)?hosts\\/runtime\\/');
   if((name==='index.html'||/^hosts\/(?!runtime\/).+\.html$/.test(name))&&fs.existsSync(path.join(root,'assets/host-performance.js'))){
    text=text.replace(/<link\b[^>]*href=["'][^"']*(?:font-awesome|fonts\.googleapis\.com)[^"']*["'][^>]*>/gi,'');

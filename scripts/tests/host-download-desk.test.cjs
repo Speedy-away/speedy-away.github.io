@@ -7,6 +7,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const transport = require('../../assets/console-downloads.js');
 const {resolveTarget} = require('../host-legacy-redirect.cjs');
+const {receiverCatalogue} = require('../host-project-pages.cjs');
 const catalogue = require('../../docs/console-download-catalog.json').items;
 const retained = require('../../docs/host-retained-download-aliases.json');
 
@@ -127,4 +128,30 @@ test('retained catalogue links map to exact versions and an incompatible receive
   assert.equal(links().has('Save on PS5'), false);
   assert.equal(links().get('Download file'), original);
   assert.match(ids['host-download-results'].textContent, /Use the direct URL in ezRemote Client/);
+});
+
+test('the three repaired PS5 cheat files keep their public IDs and use new exact receiver handoffs', () => {
+  const repairedIds = [
+    'ps5-native-shn-ppsa05366-01-005-000',
+    'ps5-native-shn-ppsa02745-01-000-004',
+    'ps5-native-shn-ppsa10261-01-000-000'
+  ];
+  const receiverItems = receiverCatalogue(catalogue);
+  assert.deepEqual(receiverItems.filter(item => item.receiverFileId).map(item => item.id).sort(), repairedIds.slice().sort());
+  for (const id of repairedIds) {
+    const original = catalogue.find(item => item.id === id);
+    const item = receiverItems.find(item => item.id === id);
+    const handoff = 'shn-' + original.sha256.slice(0, 12);
+    assert.equal(item.receiverFileId, handoff);
+    assert.notEqual(item.receiverSupported, false);
+    assert.equal(item.url, retained.aliases[original.url]);
+    assert.deepEqual([item.filename, item.version, item.bytes, item.sha256], [original.filename, original.version, original.bytes, original.sha256]);
+    const {ids, links} = openDesk({
+      platform:'ps5', userAgent:'PlayStation 5/7.61', query:'?file=' + id,
+      items:[{...item, receiverSupported:false}, ps5]
+    });
+    assert.match(ids['host-download-status'].textContent, /1 of 1/);
+    assert.equal(links().get('Save on PS5'), 'http://127.0.0.1:6701/whatsite-ps5.html?file=' + handoff);
+    assert.equal(links().get('Download file'), retained.aliases[original.url]);
+  }
 });

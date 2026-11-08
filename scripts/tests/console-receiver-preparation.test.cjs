@@ -63,6 +63,46 @@ test('unknown, empty, malformed and wrong-platform file IDs show unavailable wit
   }
 });
 
+test('a new PS5 receiver alias selects only its exact file while old IDs remain usable', () => {
+  const alias = 'shn-' + digest.slice(0, 12);
+  const original = {...reviewed, id:'original-cheat', name:'Exact cheat', filename:'PPSA00001_01.000.000.shn', platforms:['ps5']};
+  const repaired = {...original, receiverFileId:alias};
+  const unrelated = {...original, id:'unrelated', filename:'PPSA00002_01.000.000.shn'};
+  for (const fileId of [original.id, alias]) {
+    const app = ui({platform:'ps5', items:[unrelated, repaired], search:'?file=' + fileId, responses:[{status:200,text:'[]'}]});
+    const filenames = app.created.filter(node => node.className === 'receiver-filename');
+    assert.deepEqual(filenames.map(node => node.children[0].textContent), [original.filename]);
+    assert.equal(app.created.filter(node => node.className === 'receiver-save' && !node.disabled).length, 1);
+    assert.deepEqual(app.mock.requests.map(request => [request.method, request.url]), [['GET', '/get_download_state']]);
+  }
+  for (const items of [[original], [repaired, {...unrelated, receiverFileId:alias}], [repaired, {...unrelated, id:alias}]]) {
+    const app = ui({platform:'ps5', items, search:'?file=' + alias, responses:[{status:200,text:'[]'}]});
+    assert.match(app.ids['receiver-message'].textContent, /requested file is unavailable/i);
+    assert.equal(app.created.some(node => node.className === 'receiver-save'), false);
+    assert.deepEqual(app.mock.requests.map(request => [request.method, request.url]), [['GET', '/get_download_state']]);
+  }
+});
+
+test('Save to console queues each repaired SHN from its immutable source', () => {
+  const {receiverCatalogue} = require('../host-project-pages.cjs');
+  const {items} = require('../../docs/console-download-catalog.json');
+  const cheats = receiverCatalogue(items).filter(item => item.receiverFileId);
+  assert.equal(cheats.length, 3);
+  for (const item of cheats) {
+    const app = ui({platform:'ps5', items:cheats, search:'?file=' + item.receiverFileId, responses:[
+      {status:200,text:'[]'}, {status:200,text:'[]'}, {status:200,text:'[{"name":".","mode":"d"}]'}, {status:200}
+    ]});
+    assert.ok(app.mock.requests.every(request => request.method === 'GET'));
+    app.created.find(node => node.className === 'receiver-save').onclick();
+    const queued = app.mock.requests.filter(request => request.method === 'POST');
+    assert.equal(queued.length, 1);
+    assert.equal(queued[0].url, '/download_url');
+    assert.equal(queued[0].body.url + queued[0].body.src_path, item.url);
+    assert.equal(queued[0].body.dest_path, '/data/whatwhatboy/' + item.filename);
+    assert.equal(queued[0].body.size, item.bytes);
+  }
+});
+
 test('folder preparation uses the exact client origin, independently from receiver and PS5 websrv ports',()=>{
   assert.equal(api.managerOrigin('ps4',ps4Manager),true);assert.equal(api.managerOrigin('ps5',ps5Manager),true);
   assert.equal(api.managerOrigin('ps4',ps5Manager),false);assert.equal(api.managerOrigin('ps5',ps4Manager),false);

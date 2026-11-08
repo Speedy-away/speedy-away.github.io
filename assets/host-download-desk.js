@@ -87,11 +87,16 @@
     add(card, 'p', (item.version || 'Archived build') + ' · ' + bytes, 'host-download-meta');
     add(card, 'p', item.compatibility || item.description);
     var controls = add(card, 'div', '', 'host-download-controls');
-    var saveURL = destination && item.receiverSupported !== false && transport.buildReceiverURL(platform, destination, item.id);
+    var receiverAvailable = Boolean(item.receiverFileId) || item.receiverSupported !== false;
+    var saveURL = destination && receiverAvailable &&
+      transport.buildReceiverURL(platform, destination, item.receiverFileId || item.id);
     var archive = transport.matchesFormat(item.filename, 'archives');
-    var reviewed = archive && item.receiverSupported !== false && item.archiveSafety && item.archiveSafety.reviewed === true;
+    var reviewed = archive && receiverAvailable && item.archiveSafety && item.archiveSafety.reviewed === true;
     var saveLabel = reviewed ? 'Save / extract on ' : packageFile(item) ? 'Save / install on ' : 'Save on ';
     if (saveURL) link(controls, saveLabel + platform.toUpperCase(), saveURL, 'host-download-primary');
+    if (saveURL && item.receiverFileId) {
+      link(add(card, 'p', '', 'host-download-meta'), 'Update the PS5 downloader if this file is unavailable', '#setup');
+    }
     if (saveURL && packageFile(item)) add(card, 'p',
       'Watch the progress in the console queue. When ready, choose Install PKG to verify the file and open the compatible installer.', 'host-download-meta');
     if (archive) add(card, 'p', reviewed
@@ -109,7 +114,7 @@
     add(details, 'code', direct.href);
     add(details, 'code', item.sha256);
     if (help) link(details, 'Compatibility guide', help);
-    if (item.receiverSupported === false) {
+    if (!receiverAvailable) {
       add(card, 'p', 'Use the direct URL in ezRemote Client. This file’s original bytes are available from its publisher.');
     }
     if (item.preparation) add(details, 'p', item.preparation);

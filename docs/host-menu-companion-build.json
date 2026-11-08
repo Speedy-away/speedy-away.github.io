@@ -1,36 +1,36 @@
 {
-  "preparedAt": "2026-11-08T22:31:42.884Z",
-  "version": "2026.11.02.23",
+  "preparedAt": "2026-11-08T22:50:41.622Z",
+  "version": "2026.11.02.24",
   "jobsPath": "docs/qa/host-menu-companion-jobs.json",
-  "previousJobsPath": "docs/qa/host-menu-companion-jobs-2026.11.02.22.json",
+  "previousJobsPath": "docs/qa/host-menu-companion-jobs-2026.11.02.23.json",
   "activated": true,
   "records": [
     {
       "platform": "ps4",
-      "version": "2026.11.02.23",
+      "version": "2026.11.02.24",
       "path": "console/ps4/whatsite-ps4.html",
-      "immutablePath": "downloads/helpers/console-download-receivers/ps4/2026.11.02.23-822f0b64b912/whatsite-ps4.html",
-      "bytes": 784415,
-      "sha256": "822f0b64b9128d6f5fef4aa03bc829340b68c5b44af1c4e3c44f651b011d8e21",
-      "previousSha256": "72d05cb8ad5aa162b177ab5dc048f81834b6d48d239cd01def997bc44b5a1e26",
-      "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps4/retained-72d05cb8ad5a/whatsite-ps4.html",
+      "immutablePath": "downloads/helpers/console-download-receivers/ps4/2026.11.02.24-68a0bd061629/whatsite-ps4.html",
+      "bytes": 784505,
+      "sha256": "68a0bd061629ab1eb61f0848e834abc6ccc9a09359db09025055962d00b0efb3",
+      "previousSha256": "822f0b64b9128d6f5fef4aa03bc829340b68c5b44af1c4e3c44f651b011d8e21",
+      "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps4/retained-822f0b64b912/whatsite-ps4.html",
       "previousItems": 542,
       "items": 542,
-      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.23\\whatsite-ps4.html"
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.24\\whatsite-ps4.html"
     },
     {
       "platform": "ps5",
-      "version": "2026.11.02.23",
+      "version": "2026.11.02.24",
       "path": "console/ps5/whatsite-ps5.html",
-      "immutablePath": "downloads/helpers/console-download-receivers/ps5/2026.11.02.23-3fad10833c77/whatsite-ps5.html",
-      "bytes": 583960,
-      "sha256": "3fad10833c779b4d651dd23ff637af7011c7ea738622cc8363bcbf5fcf2a5e46",
-      "previousSha256": "23a805be7bc3a097c3ff2b4a30e235607887673afee1b81837a8ba6411ba1440",
-      "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps5/retained-23a805be7bc3/whatsite-ps5.html",
+      "immutablePath": "downloads/helpers/console-download-receivers/ps5/2026.11.02.24-a42cc60ceb4e/whatsite-ps5.html",
+      "bytes": 584080,
+      "sha256": "a42cc60ceb4e0f0cc7fd0dd00cbd9be7b2829dbdced5201a0e2f3419279bafc6",
+      "previousSha256": "3fad10833c779b4d651dd23ff637af7011c7ea738622cc8363bcbf5fcf2a5e46",
+      "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps5/retained-3fad10833c77/whatsite-ps5.html",
       "previousItems": 356,
       "items": 356,
-      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.23\\whatsite-ps5.html"
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.24\\whatsite-ps5.html"
     }
   ],
-  "verifiedAt": "2026-11-08T22:32:33.746Z"
+  "verifiedAt": "2026-11-08T22:51:02.064Z"
 }

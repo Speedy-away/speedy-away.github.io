@@ -2025,5 +2025,25 @@
     "publishedCommit": "560e7a268d87b91be2e1cc63da802721540c0226",
     "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42531539901",
     "verifiedAt": "2026-11-08T22:45:41.597Z"
+  },
+  "consoleReceiverPublisherCheats20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.24",
+    "status": "Both receiver companions archived and activated at their stable paths in the local checkout.",
+    "buildReport": "docs/host-menu-companion-build.json",
+    "inventory": "docs/pages-helper-download-inventory.json",
+    "priorJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.23.json",
+    "changes": [
+      "Three exact PS5 SHN builds now use distinct receiver handoff IDs with their original pinned publisher URLs.",
+      "The previous catalogue IDs, URLs, compatibility labels, sizes and hashes are retained."
+    ],
+    "receiverRowsVerified": {
+      "ps4": 542,
+      "ps5": 356
+    },
+    "priorImmutableAndArchiveCopiesVerified": 2,
+    "focusedTestsPassed": 93,
+    "physicalConsoleTested": false,
+    "publisherSHNsHTTPHashVerified": 3
   }
 }

@@ -477,7 +477,9 @@
       if (selectedRequest) {
         try { selectedId = decodeURIComponent((selectedRequest[1] || '').replace(/\+/g, ' ')); } catch (ignore) {}
         for (var requestedIndex = 0; requestedIndex < items.length; requestedIndex++) {
-          if (selectedId && items[requestedIndex].id === selectedId && matches(items[requestedIndex], platform, '', '', 'all')) selectedItems.push(items[requestedIndex]);
+          var requestedItem = items[requestedIndex];
+          if (selectedId && (requestedItem.id === selectedId || requestedItem.receiverFileId === selectedId) &&
+            matches(requestedItem, platform, '', '', 'all')) selectedItems.push(requestedItem);
         }
         // A file link is an exact catalogue identity, not a fuzzy name search.
         // Unknown, wrong-platform or ambiguous IDs must not expose other saves.

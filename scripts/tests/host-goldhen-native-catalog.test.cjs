@@ -13,7 +13,7 @@ test('receiver release preserves every file identity and uses pinned retained de
  const embedded=s=>JSON.parse(s.match(/<script id="receiver-catalog" type="application\/json">([\s\S]*?)<\/script>/)[1]);
  const sources=new Map(items.map(item=>[item.id,item]));
  const destinations=new Map(require('../host-project-pages.cjs').receiverCatalogue(items,root).map(item=>[item.id,item]));
- const pinned=new Set(),manual=new Set();
+ const pinned=new Set(),updatedHandoffs=new Set();
  for(const r of report.records){
   const before=fs.readFileSync(path.join(root,r.previousPublicSnapshot),'utf8');
   const after=fs.readFileSync(path.join(root,r.path),'utf8');
@@ -23,9 +23,12 @@ test('receiver release preserves every file identity and uses pinned retained de
    assert.ok(target,item.id);
    if(target.url===sources.get(item.id).url)return item;
    pinned.add(item.id);
-   if(target.receiverSupported===false){
-    manual.add(item.id);
-    return {...item,url:target.url,receiverSupported:false};
+   if(target.receiverFileId){
+    updatedHandoffs.add(item.id);
+    const {receiverSupported,...previous}=item;
+    assert.equal(receiverSupported,false,item.id);
+    assert.equal(target.receiverFileId,'shn-'+item.sha256.slice(0,12));
+    return {...previous,url:target.url,receiverFileId:target.receiverFileId};
    }
    return {...item,url:target.url};
   });
@@ -34,7 +37,7 @@ test('receiver release preserves every file identity and uses pinned retained de
   assert.match(after,/Live transfer queue/);
  }
  assert.equal(pinned.size,135);
- assert.equal(manual.size,3);
+ assert.equal(updatedHandoffs.size,3);
  const jobs=read(report.jobsPath).jobs;
  for(const j of jobs)assert.ok(/^https:\/\/speedy-away\.github\.io\/downloads\/helpers\/console-download-receivers\//.test(j.url));
  assert.ok(fs.existsSync(path.join(root,report.previousJobsPath)));
