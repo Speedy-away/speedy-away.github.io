@@ -66,19 +66,20 @@ function receiverCatalogue(items,root=ROOT) {
   return receiverFileId?{...item,url:alias,receiverFileId}:{...item,url:alias};
  });
 }
-function ps5ReceiverUpdate(root=ROOT){
+function receiverUpdate(platform,root=ROOT){
+ assert.match(platform,/^ps[45]$/);
  const file=path.join(root,'docs/host-menu-companion-build.json');
  if(!fs.existsSync(file))return null;
  const report=JSON.parse(fs.readFileSync(file,'utf8'));
- const record=report.records?.find(row=>row.platform==='ps5');
+ const record=report.records?.find(row=>row.platform===platform);
  if(report.activated!==true||record?.supportsStagedUpdate!==true)return null;
  assert.match(record.version,/^\d{4}\.\d{2}\.\d{2}\.\d{1,5}$/);
  assert.equal(record.version,report.version);
  assert.match(record.sha256,/^[a-f0-9]{64}$/);
- const expected='downloads/helpers/console-download-receivers/ps5/'+record.version+'-'+record.sha256.slice(0,12)+'/whatsite-ps5.html';
+ const expected='downloads/helpers/console-download-receivers/'+platform+'/'+record.version+'-'+record.sha256.slice(0,12)+'/whatsite-'+platform+'.html';
  assert.equal(record.immutablePath,expected);
  const bytes=fs.readFileSync(path.join(root,expected));
- assert.ok(bytes.length>0&&bytes.length<=2*1024*1024,'PS5 downloader update exceeds its staged file bound');
+ assert.ok(bytes.length>0&&bytes.length<=2*1024*1024,'Downloader update exceeds its staged file bound');
  assert.equal(record.bytes,bytes.length);
  assert.equal(record.sha256,sha(bytes));
  return {version:record.version,url:ORIGIN+'/'+expected,bytes:record.bytes,sha256:record.sha256};
@@ -152,8 +153,12 @@ function build(output,revision='main',root=ROOT){
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-pages.css')))text=require('./style-host-pages.cjs').themeHTML(text,name);
   if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-console-client\.js|host-catalog-grid\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-short-loader\.(?:js|css)|host-game-patches\.js|host-download-desk\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
   if(name.endsWith('.html'))text=text.replace(/(host-download-desk\.(?:js|css)|console-downloads\.js)(?:\?v=[\w.-]+)?(?=["'])/g,'$1?v=20261108setup1');
-  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108ps5update1');
-  if(name==='hosts/ps5/downloads/index.html')text=text.replace(/(<script type="application\/json" id="host-ps5-update-data">)null(<\/script>)/,(_,open,close)=>open+JSON.stringify(ps5ReceiverUpdate(root))+close);
+  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108update3');
+  const downloadPage=name.match(/^hosts\/(ps[45])\/downloads\/index\.html$/);
+  if(downloadPage)text=text.replace(/(<script type="application\/json" id="host-(ps[45])-update-data">)null(<\/script>)/,(_,open,platform,close)=>{
+   assert.equal(platform,downloadPage[1]);
+   return open+JSON.stringify(receiverUpdate(platform,root))+close;
+  });
   if(name==='assets/host-dashboard.js')text=text.replaceAll('^\\/hosts\\/runtime\\/','^\\/(?:(?:WWB-HOST|wwb-host)\\/)?hosts\\/runtime\\/');
   if((name==='index.html'||/^hosts\/(?!runtime\/).+\.html$/.test(name))&&fs.existsSync(path.join(root,'assets/host-performance.js'))){
    text=text.replace(/<link\b[^>]*href=["'][^"']*(?:font-awesome|fonts\.googleapis\.com)[^"']*["'][^>]*>/gi,'');
@@ -245,4 +250,4 @@ function build(output,revision='main',root=ROOT){
  fs.writeFileSync(path.join(output,'404.html'),require('./host-legacy-redirect.cjs').render404(ORIGIN,revision));
  fs.writeFileSync(path.join(output,'.nojekyll'),'');const offlinePacks=offline?offline.build(output,root,offlineGroups):[];for(const file of offline?walk(path.join(output,'offline')):[])hosted.add(slash(path.relative(output,file)));const report={revision,base:BASE,origin:ORIGIN,bytes:walk(output).reduce((n,f)=>n+fs.statSync(f).size,0),budget:LIMIT,files:hosted.size,offloadedFiles:Object.keys(mapping).length,nativeScriptsUnchanged:nativeFiles,cacheManifestAliases:manifestAliases.size,historicalLandings,legacyHomePages:legacyHomePages.length,activeKaro,routingBytes:{full:fs.statSync(path.join(output,'host-project-map.js')).size,runtime:fs.statSync(path.join(output,'host-runtime-map.js')).size},activeRuntimeFiles:pinned.size,sharedCatalogueFiles:[...hosted].filter(p=>p.startsWith('assets/host-catalogues/')).length,offlinePacks,downloadMap:mapping};assert.ok(report.bytes<1e9);fs.writeFileSync(path.join(output,'pages-build.json'),JSON.stringify({...report,downloadMap:undefined},null,2));console.log(JSON.stringify({...report,downloadMap:undefined}));return report;
 }
-if(require.main===module)build(path.resolve(process.argv[2]),process.env.GITHUB_SHA||'main');module.exports={build,cacheResources,activeRuntimeFiles,runtimeConfigHTML,receiverCatalogue,ps5ReceiverUpdate,BASE,ORIGIN,MAIN,ASSET_VERSION};
+if(require.main===module)build(path.resolve(process.argv[2]),process.env.GITHUB_SHA||'main');module.exports={build,cacheResources,activeRuntimeFiles,runtimeConfigHTML,receiverCatalogue,receiverUpdate,BASE,ORIGIN,MAIN,ASSET_VERSION};

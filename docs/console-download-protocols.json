@@ -37,7 +37,7 @@
     "limitations": [
       "Destination parents must already exist; the background download code does not create them.",
       "Receiver-reported completion is not hash verification or proof of console compatibility.",
-      "Public HTTPS pages navigate to the installed local companion; they do not perform unsupported cross-origin POSTs to console services.",
+      "For catalogue downloads, public HTTPS pages navigate to the installed local companion. The pinned downloader update uses a user-submitted top-level form to the same console's loopback queue; it does not use cross-origin XHR.",
       "Desktop localhost preview addresses are not reachable from a different console. Catalogue files must be published, or served through a console-reachable LAN host for testing."
     ]
   },

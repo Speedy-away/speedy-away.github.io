@@ -19,7 +19,7 @@ function renderCompanion(platform, items, version) {
   });
   const name = platform.toUpperCase();
   const localFile = platform === 'ps4' ? '/data/whatsite-ps4.html' : '/whatsite-ps5.html';
-  const release = platform === 'ps5' && version ? {version} : {};
+  const release = version ? {version} : {};
   const catalog = JSON.stringify({platform, ...release, items}).replaceAll('<', '\\u003c').replaceAll('&', '\\u0026').replaceAll('\u2028', '\\u2028').replaceAll('\u2029', '\\u2029');
   const css = fs.readFileSync(path.join(root, 'assets/console-receiver.css'), 'utf8');
   const js = fs.readFileSync(path.join(root, 'assets/console-receiver.js'), 'utf8').replace(/<\/script/gi, '<\\/script');

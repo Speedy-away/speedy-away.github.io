@@ -63,7 +63,8 @@
       </form>
       <p><a href="http://127.0.0.1:6701/whatsite-ps5.html">Check the installed download queue</a> · <a id="host-ps5-update-open">Open staged update</a></p>
       <p id="host-ps5-update-status" role="status"></p>
-      <p>If the browser blocks the update request, use the direct URL under <strong>Set up console downloads</strong>.</p>
+      <button id="host-ps5-update-retry" type="button" hidden>I checked the queue. Enable retry.</button>
+      <p>If the staged update is missing, check the queue before retrying. If the browser blocks the update request, use the direct URL under <strong>Set up console downloads</strong>.</p>
       <script type="application/json" id="host-ps5-update-data">null</script>
     </section>
     <details id="native-feed" class="host-download-setup">

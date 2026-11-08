@@ -7,7 +7,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const transport = require('../../assets/console-downloads.js');
 const {resolveTarget} = require('../host-legacy-redirect.cjs');
-const {receiverCatalogue} = require('../host-project-pages.cjs');
+const {receiverCatalogue, receiverUpdate} = require('../host-project-pages.cjs');
 const catalogue = require('../../docs/console-download-catalog.json').items;
 const retained = require('../../docs/host-retained-download-aliases.json');
 
@@ -15,8 +15,8 @@ const source = fs.readFileSync(path.resolve(__dirname, '../../assets/host-downlo
 const ps4 = catalogue.find(item => item.id === 'ps4-homebrew-store');
 const ps5 = catalogue.find(item => item.id === 'ps5-whatsite-site-launcher');
 
-function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query = '', statuses = [200], items = [ps4, ps5], updateRelease} = {}) {
-  const location = new URL('https://speedy-away.github.io/hosts/' + platform + '/' + mode + '/' + query);
+function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query = '', statuses = [200], items = [ps4, ps5], updateRelease, pagePath, localStorage} = {}) {
+  const location = new URL('https://speedy-away.github.io' + (pagePath || '/hosts/' + platform + '/' + mode + '/') + query);
   function element(tag = 'div') {
     return {
       tag, children: [], attrs: {}, events: {}, value: '', hidden: false,
@@ -38,11 +38,12 @@ function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query =
   }
   ids.setup = element('details');
   if (updateRelease !== undefined) {
-    for (const id of ['form','request','submit','open','status','data']) ids['host-ps5-update-' + id] = element();
-    ids['host-ps5-update'] = element('section');
-    ids['host-ps5-update'].hidden = true;
-    ids['host-ps5-update-submit'].disabled = true;
-    ids['host-ps5-update-data'].textContent = JSON.stringify(updateRelease);
+    const prefix = 'host-' + platform + '-update';
+    for (const id of ['form','request','submit','open','status','data','retry']) ids[prefix + '-' + id] = element();
+    ids[prefix] = element('section');
+    ids[prefix].hidden = true;
+    ids[prefix + '-submit'].disabled = true;
+    ids[prefix + '-data'].textContent = JSON.stringify(updateRelease);
   }
   ids['host-download-type'].value = 'all';
   ids['host-download-desk'].attrs = {'data-platform':platform,'data-library':mode,'data-catalogue':'/docs/console-download-catalog.json'};
@@ -56,13 +57,20 @@ function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query =
     };
   }
   const document = {getElementById(id) { return ids[id]; }, createElement:element};
-  const window = {location, navigator:{userAgent}, WWBConsoleDownloads:transport, XMLHttpRequest, setTimeout, clearTimeout};
+  const windowEvents = {};
+  const window = {location, navigator:{userAgent}, WWBConsoleDownloads:transport, XMLHttpRequest, setTimeout, clearTimeout, localStorage,
+    addEventListener(type, callback) { windowEvents[type] = callback; }};
   vm.runInNewContext(source, {window, document});
   function links() {
     function find(node) { return (node.tag === 'a' ? [node] : []).concat(node.children.flatMap(find)); }
     return new Map(find(ids['host-download-results']).map(link => [link.textContent, link.href]));
   }
-  return {ids, requests, links};
+  return {ids, requests, links, windowEvents};
+}
+
+function testUpdateRelease(platform, version = '2026.11.02.26') {
+  return {version, bytes:584080, sha256:'a'.repeat(64),
+    url:`https://speedy-away.github.io/downloads/helpers/console-download-receivers/${platform}/${version}-aaaaaaaaaaaa/whatsite-${platform}.html`};
 }
 
 test('a pinned package opens the exact same-console queue and keeps a separate direct link', () => {
@@ -77,49 +85,121 @@ test('a pinned package opens the exact same-console queue and keeps a separate d
   assert.equal(links().has('Save / install on PS5'), false);
 });
 
-test('the PS5 downloader update posts one explicit form to the exact loopback and staging paths', () => {
-  const html = fs.readFileSync(path.resolve(__dirname, '../../hosts/ps5/downloads/index.html'), 'utf8');
-  const formHTML = html.match(/<form\b[^>]*id="host-ps5-update-form"[^>]*>[\s\S]*?<\/form>/)[0];
+for (const [platform, folder, port, queuePath, type] of [
+  ['ps4', '/data/', '8080', '/data/whatsite-ps4.html', 7],
+  ['ps5', '/data/homebrew/ezremote-client/assets/', '9090', '/whatsite-ps5.html', 6]
+]) test(`${platform.toUpperCase()} downloader update serializes one explicit loopback request to the matching staging path`, () => {
+  const prefix = 'host-' + platform + '-update';
+  const html = fs.readFileSync(path.resolve(__dirname, '../../hosts/' + platform + '/downloads/index.html'), 'utf8');
+  const formHTML = html.match(new RegExp(`<form\\b[^>]*id="${prefix}-form"[^>]*>[\\s\\S]*?<\\/form>`))[0];
   assert.match(formHTML, /action="http:\/\/127\.0\.0\.1:6701\/download_url"/);
   assert.match(formHTML, /method="post" enctype="text\/plain" target="_self"/);
   assert.equal((formHTML.match(/<(?:input|button)\b/g) || []).length, 2);
   assert.doesNotMatch(formHTML, /\bname=/);
-  const release = {
-    version:'2026.11.02.25', bytes:584080, sha256:'a'.repeat(64),
-    url:'https://speedy-away.github.io/downloads/helpers/console-download-receivers/ps5/2026.11.02.25-aaaaaaaaaaaa/whatsite-ps5.html'
-  };
-  const {ids, requests} = openDesk({platform:'ps5', userAgent:'PlayStation 5/7.61', updateRelease:release});
-  const field = ids['host-ps5-update-request'];
-  assert.equal(ids['host-ps5-update'].hidden, false);
+  assert.ok(html.includes(`href="http://127.0.0.1:6701${queuePath}"`));
+  const release = testUpdateRelease(platform);
+  const userAgent = platform === 'ps4' ? 'PlayStation 4/14.00' : 'PlayStation 5/7.61';
+  const {ids, requests} = openDesk({platform, userAgent, updateRelease:release});
+  const field = ids[prefix + '-request'];
+  assert.equal(ids[prefix].hidden, false);
+  assert.equal(ids[prefix + '-retry'].hidden, true);
   assert.equal(field.name, undefined);
   assert.deepEqual(requests, [['GET', '/docs/console-download-catalog.json']]);
-  const stage = '/data/homebrew/ezremote-client/assets/whatsite-ps5-update-2026.11.02.25-aaaaaaaaaaaa.html';
-  assert.equal(ids['host-ps5-update-open'].href, 'http://127.0.0.1:9090' + stage + '?apply-update=1&sha256=' + release.sha256 + '&bytes=' + release.bytes);
-  const submit = ids['host-ps5-update-form'].events.submit;
+  const stage = `${folder}whatsite-${platform}-update-2026.11.02.26-aaaaaaaaaaaa.html`;
+  ids['host-download-address'].value = '192.168.1.40';
+  ids['host-download-connection'].events.submit({preventDefault(){}});
+  const applyURL = 'http://127.0.0.1:' + port + stage + '?apply-update=1&sha256=' + release.sha256 + '&bytes=' + release.bytes;
+  const applyLink = ids[prefix + '-open'];
+  assert.equal(applyLink.href, applyURL);
+  assert.equal(ids[prefix + '-submit'].textContent, 'Download update ' + release.version);
+  applyLink.events.click({preventDefault(){ assert.fail('The apply link should navigate normally'); }});
+  const firstOpen = applyLink.href;
+  assert.ok(firstOpen.startsWith(applyURL + '&wwb-open='));
+  applyLink.events.click({preventDefault(){ assert.fail('The apply link should navigate normally'); }});
+  assert.ok(applyLink.href.startsWith(applyURL + '&wwb-open='));
+  assert.notEqual(applyLink.href, firstOpen);
+  const submit = ids[prefix + '-form'].events.submit;
   let prevented = 0;
   submit({preventDefault(){ prevented++; }});
   assert.equal(prevented, 0);
   const {id, ...payload} = JSON.parse(field.name + '=' + field.value + '\r\n');
   assert.ok(Number.isSafeInteger(id) && id > 0);
   assert.deepEqual(payload, {
-    type:6, url:'https://speedy-away.github.io', username:'', password:'', http_server_type:'',
+    type, url:'https://speedy-away.github.io', username:'', password:'', http_server_type:'',
     src_path:new URL(release.url).pathname, dest_path:stage, size:release.bytes, _form:'='
   });
   assert.deepEqual(requests, [['GET', '/docs/console-download-catalog.json']]);
-  assert.equal(ids['host-ps5-update-submit'].disabled, true);
+  assert.equal(ids[prefix + '-submit'].disabled, true);
+  assert.equal(ids[prefix + '-retry'].hidden, false);
   submit({preventDefault(){ prevented++; }});
   assert.equal(prevented, 1);
+  ids[prefix + '-retry'].events.click();
+  assert.equal(ids[prefix + '-submit'].disabled, false, 'the current page can recover even without storage');
+  assert.equal(ids[prefix + '-submit'].textContent, 'Retry update ' + release.version);
+  assert.deepEqual(requests, [['GET', '/docs/console-download-catalog.json']]);
   for (const options of [
     {userAgent:'Desktop', updateRelease:release},
-    {userAgent:'PlayStation 4/14.00', updateRelease:release},
-    {userAgent:'PlayStation 5/7.61', updateRelease:null},
-    {userAgent:'PlayStation 5/7.61', updateRelease:{...release, url:release.url.replace('speedy-away.github.io','example.net')}},
-    {userAgent:'PlayStation 5/7.61', updateRelease:{...release, bytes:2 * 1024 * 1024 + 1}},
-    {userAgent:'PlayStation 5/7.61', updateRelease:{...release, version:'2026.11.02.123456', url:release.url.replace('02.25-','02.123456-')}}
+    {userAgent:platform === 'ps4' ? 'PlayStation 5/7.61' : 'PlayStation 4/14.00', updateRelease:release},
+    {userAgent, updateRelease:null},
+    {userAgent, updateRelease:{...release, url:release.url.replace('speedy-away.github.io','example.net')}},
+    {userAgent, updateRelease:{...release, bytes:2 * 1024 * 1024 + 1}},
+    {userAgent, updateRelease:{...release, version:'2026.11.02.123456', url:release.url.replace('02.26-','02.123456-')}}
   ]) {
-    const desk = openDesk({platform:'ps5', ...options});
-    assert.equal(desk.ids['host-ps5-update'].hidden, true);
-    assert.equal(desk.ids['host-ps5-update-form'].events.submit, undefined);
+    const desk = openDesk({platform, ...options});
+    assert.equal(desk.ids[prefix].hidden, true);
+    assert.equal(desk.ids[prefix + '-form'].events.submit, undefined);
+  }
+});
+
+test('a staging request survives reload and alias navigation, and one manual retry needs another submit', () => {
+  const state = new Map();
+  const localStorage = {getItem:key => state.get(key), setItem:(key, value) => state.set(key, value)};
+  const config = {platform:'ps4', userAgent:'PlayStation 4/14.00', updateRelease:testUpdateRelease('ps4'), localStorage};
+  const open = options => openDesk({...config, ...options});
+  const prefix = 'host-ps4-update';
+  function submit(desk) {
+    let prevented = false;
+    desk.ids[prefix + '-form'].events.submit({preventDefault(){ prevented = true; }});
+    return prevented;
+  }
+  const first = open();
+  const waitingTab = open({pagePath:'/ps4/downloads/'});
+  first.ids[prefix + '-open'].events.click();
+  assert.equal(state.size, 0, 'opening the staged link is not a queue attempt');
+  assert.equal(submit(first), false);
+  assert.equal(state.size, 1);
+  const [[key, firstId]] = state;
+  assert.match(key, /ps4:2026\.11\.02\.26-aaaaaaaaaaaa$/);
+  waitingTab.windowEvents.storage({key});
+  assert.equal(waitingTab.ids[prefix + '-submit'].disabled, true);
+  const reopened = open({pagePath:'/ps4/downloads/'});
+  assert.equal(reopened.ids[prefix + '-submit'].disabled, true);
+  assert.equal(reopened.ids[prefix + '-retry'].hidden, false);
+  assert.match(reopened.ids[prefix + '-status'].textContent, /was requested/);
+  assert.equal(submit(reopened), true);
+  assert.equal(reopened.ids[prefix + '-request'].name, undefined);
+  reopened.ids[prefix + '-retry'].events.click();
+  assert.equal(reopened.ids[prefix + '-submit'].disabled, false);
+  assert.equal(reopened.ids[prefix + '-request'].name, undefined);
+  assert.equal(state.get(key), firstId, 'enabling retry leaves the stored attempt in place');
+  assert.equal(open().ids[prefix + '-submit'].disabled, true);
+  assert.equal(submit(reopened), false);
+  assert.notEqual(state.get(key), firstId);
+  assert.equal(submit(reopened), true, 'a further attempt needs another explicit retry');
+  assert.equal(open({updateRelease:testUpdateRelease('ps4','2026.11.02.27')}).ids[prefix + '-submit'].disabled, false);
+  const other = open({platform:'ps5', userAgent:'PlayStation 5/7.61', updateRelease:testUpdateRelease('ps5')});
+  assert.equal(other.ids['host-ps5-update-submit'].disabled, false);
+  assert.deepEqual(reopened.requests, [['GET', '/docs/console-download-catalog.json']]);
+});
+
+test('publication exposes only each platform’s activated staged update release', () => {
+  const report = require('../../docs/host-menu-companion-build.json');
+  for (const platform of ['ps4', 'ps5']) {
+    const record = report.records.find(item => item.platform === platform);
+    assert.deepEqual(receiverUpdate(platform), report.activated && record?.supportsStagedUpdate === true ? {
+      version:record.version, url:'https://speedy-away.github.io/' + record.immutablePath,
+      bytes:record.bytes, sha256:record.sha256
+    } : null);
   }
 });
 

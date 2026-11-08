@@ -70,40 +70,79 @@
   }
 
   function showDownloaderUpdate() {
-    var panel = doc.getElementById('host-ps5-update');
-    if (!panel || platform !== 'ps5' || !consolePlatform || consolePlatform[1] !== '5') return;
+    var prefix = 'host-' + platform + '-update';
+    var panel = doc.getElementById(prefix);
+    if (!panel || !consolePlatform || 'ps' + consolePlatform[1] !== platform) return;
     var release;
-    try { release = JSON.parse(doc.getElementById('host-ps5-update-data').textContent); } catch (_) { return; }
+    try { release = JSON.parse(doc.getElementById(prefix + '-data').textContent); } catch (_) { return; }
     if (!release || typeof release.version !== 'string' || !/^\d{4}\.\d{2}\.\d{2}\.\d{1,5}$/.test(release.version) ||
         typeof release.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(release.sha256) ||
         typeof release.bytes !== 'number' || release.bytes <= 0 || release.bytes > 2 * 1024 * 1024 || Math.floor(release.bytes) !== release.bytes) return;
     var releaseKey = release.version + '-' + release.sha256.slice(0, 12);
-    var sourcePath = '/downloads/helpers/console-download-receivers/ps5/' + releaseKey + '/whatsite-ps5.html';
+    var sourcePath = '/downloads/helpers/console-download-receivers/' + platform + '/' + releaseKey + '/whatsite-' + platform + '.html';
     var origin = 'https://speedy-away.github.io';
     if (release.url !== origin + sourcePath) return;
 
-    var stagingPath = '/data/homebrew/ezremote-client/assets/whatsite-ps5-update-' + releaseKey + '.html';
-    var form = doc.getElementById('host-ps5-update-form');
-    var field = doc.getElementById('host-ps5-update-request');
-    var button = doc.getElementById('host-ps5-update-submit');
-    var message = doc.getElementById('host-ps5-update-status');
-    var submitted = false;
-    doc.getElementById('host-ps5-update-open').href = 'http://127.0.0.1:9090' + stagingPath +
+    var ps4 = platform === 'ps4';
+    var stagingFolder = ps4 ? '/data/' : '/data/homebrew/ezremote-client/assets/';
+    var stagingPath = stagingFolder + 'whatsite-' + platform + '-update-' + releaseKey + '.html';
+    var form = doc.getElementById(prefix + '-form');
+    var field = doc.getElementById(prefix + '-request');
+    var button = doc.getElementById(prefix + '-submit');
+    var message = doc.getElementById(prefix + '-status');
+    var open = doc.getElementById(prefix + '-open');
+    var retryUpdate = doc.getElementById(prefix + '-retry');
+    var storageKey = 'wwb-downloader-update:' + platform + ':' + releaseKey;
+    var requested = '';
+    var retryFor = '';
+    var attempts = 0;
+    var applyURL = 'http://127.0.0.1:' + (ps4 ? '8080' : '9090') + stagingPath +
       '?apply-update=1&sha256=' + release.sha256 + '&bytes=' + release.bytes;
-    button.textContent = 'Download downloader ' + release.version;
+    open.href = applyURL;
+    open.addEventListener('click', function () {
+      open.href = applyURL + '&wwb-open=' + new Date().getTime() + '-' + (++attempts);
+    });
+    function previousRequest() {
+      try { return win.localStorage.getItem(storageKey) || requested; } catch (_) { return requested; }
+    }
+    function showRequestState(previous) {
+      var retryEnabled = previous && previous === retryFor;
+      button.disabled = Boolean(previous) && !retryEnabled;
+      retryUpdate.hidden = !button.disabled;
+      button.textContent = (retryEnabled ? 'Retry update ' : 'Download update ') + release.version;
+      message.textContent = retryEnabled ? 'One retry is enabled on this page. Choose Retry update to request it again.' :
+        button.disabled ? 'An update download was requested. Check ezRemote for completion before opening the staged file. Enable a retry only if the request failed.' : '';
+    }
+    retryUpdate.addEventListener('click', function () {
+      retryFor = previousRequest();
+      showRequestState(retryFor);
+      button.focus();
+    });
     form.addEventListener('submit', function (event) {
-      if (submitted) { event.preventDefault(); return; }
-      var request = {type:6, url:origin, username:'', password:'', http_server_type:'',
-        src_path:sourcePath, dest_path:stagingPath, size:release.bytes, id:new Date().getTime() * 1000};
+      var previous = previousRequest();
+      if (previous && previous !== retryFor) {
+        event.preventDefault();
+        showRequestState(previous);
+        return;
+      }
+      var id = new Date().getTime() * 1000;
+      var previousId = Number(previous);
+      if (previousId >= id && previousId < 9007199254740991 && Math.floor(previousId) === previousId) id = previousId + 1;
+      var request = {type:ps4 ? 7 : 6, url:origin, username:'', password:'', http_server_type:'',
+        src_path:sourcePath, dest_path:stagingPath, size:release.bytes, id:id};
       // A text/plain form serializes its sole field as name=value plus CRLF.
       // Keep that equals sign inside an ignored JSON string in the request body.
       field.name = JSON.stringify(request).slice(0, -1) + ',"_form":"';
       field.value = '"}';
-      submitted = true;
-      button.disabled = true;
-      message.textContent = 'Check ezRemote for completion before opening the staged update or requesting it again.';
+      requested = String(id);
+      retryFor = '';
+      try { win.localStorage.setItem(storageKey, requested); } catch (_) { /* Keep the in-page request state. */ }
+      showRequestState(requested);
     });
-    button.disabled = false;
+    win.addEventListener('storage', function (event) {
+      if (event.key === storageKey) showRequestState(previousRequest());
+    });
+    showRequestState(previousRequest());
     panel.hidden = false;
   }
 

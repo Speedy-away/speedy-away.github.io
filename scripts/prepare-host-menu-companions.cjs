@@ -45,8 +45,7 @@ function prepare() {
     const retained='downloads/helpers/console-download-receivers/'+platform+'/retained-'+oldHash.slice(0,12)+'/whatsite-'+platform+'.html';preserve(retained,old);
     const bytes=Buffer.from(renderCompanion(platform,items,version)),hash=sha(bytes),name='whatsite-'+platform+'.html';
     const immutable='downloads/helpers/console-download-receivers/'+platform+'/'+version+'-'+hash.slice(0,12)+'/'+name;preserve(immutable,bytes);
-    const record={platform,version,path:stable,immutablePath:immutable,bytes:bytes.length,sha256:hash,previousSha256:oldHash,previousPublicSnapshot:retained,previousItems:oldItems.length,items:items.length};
-    if(platform==='ps5')record.supportsStagedUpdate=true;
+    const record={platform,version,path:stable,immutablePath:immutable,bytes:bytes.length,sha256:hash,previousSha256:oldHash,previousPublicSnapshot:retained,previousItems:oldItems.length,items:items.length,supportsStagedUpdate:true};
     records.push(record);
     jobs.push({id:'whatsite-'+platform+'-console-downloader-'+version.replaceAll('.','-'),title:'whatwhatboy '+platform.toUpperCase()+' console downloader',platform:platform.toUpperCase(),category:['Tools'],project:'whatsite Console Downloader',version,filename:name,url:'https://speedy-away.github.io/'+immutable,importPath:immutable,mirror:true,archiveRole:['Builds'],expectedBytes:bytes.length,expectedSha256:hash,pages:[stable,'console/'+platform+'/downloads.html']});
   }

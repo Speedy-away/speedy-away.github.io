@@ -1952,6 +1952,22 @@
       "ps5RuntimeFiles": 67
     }
   },
+  "consoleDownloaderUpdates20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.26",
+    "buildReport": "docs/host-menu-companion-build.json",
+    "inventory": "docs/pages-helper-download-inventory.json",
+    "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.25.json",
+    "changes": [
+      "Both Download Centres can stage the exact downloader release through the console's ezRemote queue without typing its source URL.",
+      "Both staged helpers use the native multipart upload contract for an exact verified backup before replacement, and verify the final installed SHA-256.",
+      "A saved queue request prevents accidental resubmission after reload; a separate action enables one retry after the queue is checked.",
+      "Users can reopen a staged link after the queue completes and return to the installed page or its verified backup when Apply fails."
+    ],
+    "focusedTestsPassed": 107,
+    "scopeOfVerification": "SHA-256 readback gates replacement; this does not authenticate the staged HTML before it opens. The pinned ezRemote HTTP client disables server-certificate verification.",
+    "physicalConsoleTested": false
+  },
   "consoleOnlySetup20261108": {
     "date": "2026-11-08",
     "status": "Public setup and native Web UI handoff updated. Physical hardware unavailable for this test.",

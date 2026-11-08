@@ -48,22 +48,26 @@ function verify(output){const report=JSON.parse(fs.readFileSync(path.join(output
  const payloads=catalogue.filter(item=>item.platforms.includes('ps5')&&item.category!=='mods'&&/\.(?:elf|bin)$/i.test(item.filename)&&!/^pldmgr[_-]/i.test(item.filename));
  assert.deepEqual(ps5Feed.map(item=>item.id),payloads.map(item=>item.id));
  for(const [index,item] of payloads.entries()){assert.equal(ps5Feed[index].url,delivery(item.url),item.id);assert.equal(ps5Feed[index].version,item.version,item.id);assert.equal(ps5Feed[index].checksum,item.sha256,item.id);}
- const update=require('./host-project-pages.cjs').ps5ReceiverUpdate(root);
- if(update){
+ const updateReport=JSON.parse(fs.readFileSync(path.join(root,'docs/host-menu-companion-build.json')));
+ for(const platform of ['ps4','ps5']){
+  const update=require('./host-project-pages.cjs').receiverUpdate(platform,root);
+  if(updateReport.activated&&updateReport.records.some(record=>record.platform===platform&&record.supportsStagedUpdate===true))assert.ok(update,platform+' activated update must pass its release checks');
+  if(!update)continue;
   const immutable=fs.readFileSync(path.join(output,new URL(update.url).pathname.slice(1)));
-  const installed=fs.readFileSync(path.join(output,'console/ps5/whatsite-ps5.html'));
+  const installed=fs.readFileSync(path.join(output,'console',platform,'whatsite-'+platform+'.html'));
   assert.equal(sha(immutable),update.sha256);
   assert.deepEqual(installed,immutable);
   const companion=immutable.toString('utf8');
   const receiver=JSON.parse(companion.match(/<script id="receiver-catalog" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+  assert.equal(receiver.platform,platform);
   assert.equal(receiver.version,update.version);
   assert.match(companion,/apply-update/);
-  for(const route of ['hosts/ps5/downloads/index.html','ps5/downloads/index.html']){
+  for(const route of ['hosts/'+platform+'/downloads/index.html',platform+'/downloads/index.html']){
    const html=fs.readFileSync(path.join(output,route),'utf8');
-   const metadata=html.match(/<script type="application\/json" id="host-ps5-update-data">([\s\S]*?)<\/script>/);
+   const metadata=html.match(new RegExp('<script type="application/json" id="host-'+platform+'-update-data">([\\s\\S]*?)</script>'));
    assert.ok(metadata,route+' update metadata');
    assert.deepEqual(JSON.parse(metadata[1]),update);
-   assert.match(html,/<form id="host-ps5-update-form" action="http:\/\/127\.0\.0\.1:6701\/download_url" method="post" enctype="text\/plain"/);
+   assert.ok(html.includes('<form id="host-'+platform+'-update-form" action="http://127.0.0.1:6701/download_url" method="post" enctype="text/plain"'),route+' update form');
   }
  }
  assert.ok(report.bytes<1e9);assert.equal(failures.length,0,failures.slice(0,15).join('\n'));const result={status:'passed',localRuntimeConfigs,runtimeHandoffConfigs,bytes:report.bytes,pagesLinks:links,nativeFeedEntries:Object.keys(ps4Feed).length+ps5Feed.length,nativeScriptsUnchanged:checkedScripts,cachedResourcesRetained:cachedResources,runtimeDocumentsOptimized,offloadedFiles:report.offloadedFiles,compactAliasesVerified,sharedCatalogueFiles:report.sharedCatalogueFiles,routingBytes:report.routingBytes,activeRuntimeFiles:pinned.size,issues:0};console.log(JSON.stringify(result));return result;}
