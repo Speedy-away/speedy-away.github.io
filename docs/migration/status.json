@@ -1875,7 +1875,7 @@
     "physicalConsoleTested": false
   },
   "karoGamerHackRefresh20261108": {
-    "status": "Implemented, archive bytes verified and Pages validation passed locally.",
+    "status": "Published and live verified",
     "karoCommit": "c72eaae8859476d4772e613d011db9f0bb80c80d",
     "gamerHackCommit": "d05d71ff8db282f28cbc61f84c0a9588efacc451",
     "sourceDelta": {
@@ -1900,6 +1900,20 @@
     "nativeSourcesExecuted": false,
     "hardwareVerified": false,
     "scope": "New local Karo G2All Pro; current upstream links for other revised PS4 builds and PS5 Relapse and ELF Sender; pinned bytes and archived metadata for updated valid payloads. GamerHack already matches the current upstream revision.",
-    "preserved": "Prior live firmware-specific routes and earlier archives retained. Five invalid upstream payloads and both quarantined paths excluded from new ready downloads. No known quarantined bytes were fetched."
+    "preserved": "Prior live firmware-specific routes and earlier archives retained. Five invalid upstream payloads and both quarantined paths excluded from new ready downloads. No known quarantined bytes were fetched.",
+    "publication": {
+      "commit": "19268e26a3ac5258ac18088f7dcb5e3a908a49fd",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42525664229",
+      "verifiedAt": "2026-11-08T21:34:58.737Z",
+      "liveRoutes": 7,
+      "liveOriginalSHA256Files": 11,
+      "readyZIPVerifiedFromGitHub": true
+    },
+    "archive": {
+      "karoRecords": 73,
+      "presentFileRecords": 9462,
+      "missingFileRecords": 0,
+      "readyZIPReadbackVerified": true
+    }
   }
 }
