@@ -1,27 +1,65 @@
 html {
-  background: #071320;
-  color: #edf5ff;
-  font: 17px/1.55 Arial, sans-serif;
+  background: #0d1314;
+  color: #e8eeec;
+  font: 17px/1.5 Arial, sans-serif;
 }
 
 body { margin: 0; }
 [hidden] { display: none !important; }
 
-main {
+.webkit-deck main {
   box-sizing: border-box;
-  max-width: 1080px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 28px 40px;
+  padding: 24px 36px;
 }
 
-nav { padding-bottom: 14px; border-bottom: 1px solid #2b4256; }
-nav a { display: inline-block; padding: 8px 10px; margin-right: 10px; }
-a { color: #b9deff; }
-h1 { margin: 0; font-size: 44px; line-height: 1.12; }
+.deck-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  min-height: 52px;
+  padding: 2px 5%;
+  background: #111819;
+  border-bottom: 1px solid #344342;
+}
+.deck-bar a {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 11px 10px;
+  text-decoration: none;
+}
+.deck-brand { font-weight: bold; letter-spacing: .14em; }
+a { color: #b8edd7; }
+.deck-hero {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  min-height: 360px;
+}
+.deck-controls { width: 48%; }
+.deck-console { width: 46%; margin: 0; }
+.deck-console img { display: block; width: 100%; height: auto; border: 1px solid #364646; box-sizing: border-box; }
+.deck-console figcaption { padding: 9px 0; font-size: 14px; color: #bdcac7; }
+.deck-console figcaption span { display: block; }
+.deck-console figcaption strong { color: #e8eeec; }
+h1 { margin: 0; font-size: 42px; line-height: 1.1; letter-spacing: -.035em; }
+h1 span { color: #a9edcf; white-space: nowrap; }
 h2 { margin: 0 0 8px; font-size: 19px; }
-p { margin: 10px 0; color: #c3d3e5; }
-.eyebrow { margin-top: 26px; letter-spacing: .17em; font-size: 12px; color: #a1cdff; }
-.short-actions { margin: 18px 0; }
+p { margin: 10px 0; color: #c5cfcc; }
+.eyebrow { margin-top: 0; letter-spacing: .12em; text-transform: uppercase; font-size: 12px; color: #a9edcf; }
+.deck-checks { margin: 20px 0 14px; border-top: 1px solid #344342; }
+.deck-checks div { display: flex; justify-content: space-between; flex-wrap: wrap; padding: 7px 0; border-bottom: 1px solid #344342; }
+.deck-checks dt { color: #bcc9c6; }
+.deck-checks dd { margin: 0; font-weight: bold; }
+.deck-checks [data-state="ready"] { color: #a9edcf; }
+.deck-checks [data-state="blocked"] { color: #efc591; }
+.short-actions { margin: 15px 0 4px; }
 
 .button {
   box-sizing: border-box;
@@ -29,21 +67,32 @@ p { margin: 10px 0; color: #c3d3e5; }
   margin: 0 10px 8px 0;
   padding: 11px 20px;
   min-height: 48px;
-  border: 1px solid #b9ddff;
+  border: 1px solid #a9edcf;
   border-radius: 4px;
-  background: #c7e8ff;
-  color: #071626;
+  background: #a9edcf;
+  color: #10241d;
   font: bold 17px/1.45 Arial, sans-serif;
   text-decoration: none;
 }
 
-.button.secondary { background: #132841; border-color: #6589a8; color: #edf5ff; }
-.button:disabled { background: #1d3044; border-color: #3f586f; color: #b5c4d3; }
-a:focus, button:focus, input:focus { outline: 3px solid #ffd975; outline-offset: 3px; }
+.button.secondary { background: #1b2929; border-color: #658479; color: #e8eeec; }
+.button:disabled { background: #1b2425; border-color: #445252; color: #b6c1c0; }
+a:focus, button:focus, input:focus, .live-log:focus { outline: 3px solid #a9edcf; outline-offset: 3px; }
 progress { display: block; width: 100%; height: 12px; margin: 14px 0; }
-.short-recovery { margin: 16px 0; padding: 14px 18px; border-left: 3px solid #ffd975; background: #172638; }
+.short-recovery { margin: 16px 0; padding: 14px 18px; border-left: 3px solid #efc591; background: #23231e; }
 .short-recovery label { display: inline-block; padding: 10px 12px 10px 0; }
-.short-activity { margin-top: 22px; }
+.short-activity { margin-top: 10px; border: 1px solid #344342; }
+.short-activity header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+  background: #172120;
+  color: #bdcac7;
+  border-bottom: 1px solid #344342;
+  font-size: 14px;
+}
+.short-activity h2 { margin: 0 12px 0 0; color: #a9edcf; font-size: 16px; }
 
 .live-log {
   box-sizing: border-box;
@@ -51,16 +100,19 @@ progress { display: block; width: 100%; height: 12px; margin: 14px 0; }
   max-height: 240px;
   padding: 12px 16px;
   overflow: auto;
-  border: 1px solid #2b485f;
-  background: #081623;
-  color: #bcd7f2;
+  background: #101717;
+  color: #d4dedb;
   font: 15px/1.55 Consolas, monospace;
   overflow-wrap: break-word;
 }
 
 .short-credit { margin-top: 20px; font-size: 14px; }
 
-@media (max-width: 600px) {
-  main { padding: 20px; }
-  h1 { font-size: 35px; }
+@media (max-width: 680px) {
+  .webkit-deck main { padding: 16px; }
+  .deck-hero { display: block; min-height: 0; padding: 12px 0; }
+  .deck-controls, .deck-console { width: 100%; }
+  .deck-console { margin-top: 16px; }
+  .deck-console img { max-width: 400px; }
+  h1 { font-size: 33px; }
 }

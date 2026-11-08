@@ -10,20 +10,36 @@
   <script defer src="/assets/host-site-load.js"></script>
   <script defer src="/assets/host-short-loader.js?v=3"></script>
 </head>
-<body>
-  <main>
+<body class="webkit-deck">
+  <header class="deck-bar">
+    <a class="deck-brand" href="/">WWB HOST</a>
     <nav aria-label="Host navigation">
       <a href="/hosts/ps4/">PS4 host</a>
       <a href="/hosts/ps5/">PS5 host</a>
     </nav>
-    <p class="eyebrow">WWB HOST / PLAYSTATION 4</p>
-    <h1>WebKit 14.00</h1>
-    <p id="wwb-short-status" role="status">Checking the console and its cache…</p>
-    <div class="short-actions">
-      <button class="button" type="button" id="wwb-short-load" disabled>Load GoldHEN</button>
-      <button class="button secondary" type="button" id="wwb-short-cache" hidden>Retry cache</button>
-    </div>
-    <progress id="wwb-short-progress" hidden aria-label="Files saved to browser cache"></progress>
+  </header>
+  <main id="webkit-loader">
+    <section class="deck-hero" aria-labelledby="webkit-title">
+      <div class="deck-controls">
+        <p class="eyebrow">PlayStation 4 / WebKit loader</p>
+        <h1 id="webkit-title">PS4 WebKit <span>14.00</span></h1>
+        <dl class="deck-checks" aria-label="Loader requirements">
+          <div><dt>Detected browser</dt><dd id="wwb-short-device">Checking</dd></div>
+          <div><dt>Browser cache</dt><dd id="wwb-short-cache-state">Checking</dd></div>
+        </dl>
+        <p id="wwb-short-status" role="status">Checking the console and its cache…</p>
+        <div class="short-actions">
+          <button class="button" type="button" id="wwb-short-load" disabled>Load GoldHEN</button>
+          <button class="button secondary" type="button" id="wwb-short-cache" hidden>Retry cache</button>
+          <button class="button secondary" type="button" id="wwb-short-refresh" hidden>Apply cache update</button>
+        </div>
+        <progress id="wwb-short-progress" hidden aria-label="Files saved to browser cache"></progress>
+      </div>
+      <figure class="deck-console">
+        <img src="/assets/images/host-selector/whatwhatboy-ps4.jpg" width="1672" height="941" alt="PlayStation 4 console and DualShock 4 controller">
+        <figcaption><strong>PlayStation 4</strong><span>Required firmware 14.00</span></figcaption>
+      </figure>
+    </section>
     <section class="short-recovery" id="wwb-short-recovery" hidden aria-labelledby="wwb-short-recovery-title">
       <h2 id="wwb-short-recovery-title">Previous attempt saved</h2>
       <p>Check the result on your PS4. Restart the console before clearing the saved attempt.</p>
@@ -31,8 +47,8 @@
       <button class="button secondary" type="button" id="wwb-short-clear" disabled>Clear saved attempt</button>
     </section>
     <section class="short-activity" aria-labelledby="wwb-short-log-title">
-      <h2 id="wwb-short-log-title">Live log</h2>
-      <div id="wwb-short-log" class="live-log" role="log" aria-labelledby="wwb-short-log-title"></div>
+      <header><h2 id="wwb-short-log-title">Live log</h2><span>Browser and cache events</span></header>
+      <div id="wwb-short-log" class="live-log" role="log" aria-labelledby="wwb-short-log-title" tabindex="0"></div>
     </section>
     <noscript><p>Enable JavaScript and reopen this page on your PS4.</p></noscript>
     <p class="short-credit">Original loader by GamerHack and contributors. GoldHEN by SiSTRo.</p>

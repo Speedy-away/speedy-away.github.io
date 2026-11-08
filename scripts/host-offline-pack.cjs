@@ -3,7 +3,8 @@
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ORIGIN='https://speedy-away.github.io',sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 function scopes(root){return require('./host-compact-pages.cjs').groups(root).map(group=>({platform:group.platform,entry:group.entry,runtime:group.runtime&&group.originalEntry?group.runtime+group.originalEntry.scope:group.runtimeEntry?.match(/^(\/hosts\/runtime\/[^/]+\/)/)?.[1]})).filter(group=>group.runtime);}
-function platformFor(name,groups){name=name.replace(/^(?:es|pt|fr|de|ru|tr|pl|it|zh|ja|ko|th|vi|id|hi|sr|nl|ka|ar|he)\//,'');if(name==='ps4/14.00/index.html')return 'ps4';const direct=name.match(/^(?:hosts\/|offline\/)(ps[45])\//);if(direct)return direct[1];return groups.find(group=>name.startsWith(group.runtime.slice(1)))?.platform||null;}
+const publicLaunchers=['ps4/14.00/index.html','ps5/7.61/index.html','ps5/relapse/index.html'];
+function platformFor(name,groups){name=name.replace(/^(?:es|pt|fr|de|ru|tr|pl|it|zh|ja|ko|th|vi|id|hi|sr|nl|ka|ar|he)\//,'');if(publicLaunchers.includes(name))return name.slice(0,3);const direct=name.match(/^(?:hosts\/|offline\/)(ps[45])\//);if(direct)return direct[1];return groups.find(group=>name.startsWith(group.runtime.slice(1)))?.platform||null;}
 function associate(html,platform){if(!platform||!/<html\b/i.test(html))return html;return html.replace(/<html\b[^>]*>/i,tag=>tag.replace(/\smanifest\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/i,'').replace(/>$/,' manifest="/offline/'+platform+'.manifest">'));}
 function decorate(html,name,groups){
  const platform=platformFor(name,groups),authored=/^hosts\/(?!runtime\/).+\.html$/.test(name)&&!/<meta\b[^>]*http-equiv=["']refresh/i.test(html);
@@ -19,6 +20,7 @@ function build(output,root,groups=scopes(root)){
  const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(dir,entry.name)):[path.relative(output,path.join(dir,entry.name)).replaceAll('\\','/')]);
  if(!fs.existsSync(path.join(output,'offline/ps4/index.html')))prepare(output);
  const names=walk(output),available=new Set(names),reports=[];
+ const publicRoutes=new Set([...require('./host-public-routes.cjs').routes().map(route=>route.target),...publicLaunchers]);
  for(const platform of ['ps4','ps5']){
   const selected=new Set(),knownURLs=new Map(),routes=groups.filter(group=>group.platform===platform),activeEntries=new Set(routes.map(group=>group.entry.slice(1)+'index.html'));
   function add(name,url='/'+name.split('/').map(encodeURIComponent).join('/')){if(!available.has(name)||/\/(?:upstream|source|corresponding-source)\//.test(name)||/\.(?:zip|7z|rar|pkg|md)$/i.test(name))return;selected.add(name);knownURLs.set(url,name);}
@@ -26,7 +28,7 @@ function build(output,root,groups=scopes(root)){
    if(['index.html','host-project-map.js','host-runtime-map.js','style.css'].includes(name)||/^assets\/host-[^/]+\.(?:js|css)$/.test(name)||/^assets\/host-catalogues\/[^/]+\.js$/.test(name)||/^languages\/[^/]+\.(?:js|json)$/.test(name)||name==='offline/'+platform+'/index.html')add(name);
    if(new RegExp('^(?:'+require('./host-locales.cjs').codes.join('|')+')/(?:index\\.html|(?:hosts|offline)/'+platform+'/)').test(name))add(name);
    if(name.startsWith('hosts/'+platform+'/')&&!name.includes('/exploit/')&&!name.includes('/afterglow/'))add(name);
-   if(platform==='ps4'&&name==='ps4/14.00/index.html')add(name);
+   if(name.startsWith(platform+'/')&&publicRoutes.has(name))add(name);
    if(activeEntries.has(name))add(name);
    if(platform==='ps4'&&/^downloads\/hosts\/ps4\/plugin-templates\/20261104\/(?!originals\/).+\.ini$/.test(name))add(name);
    if(platform==='ps4'&&name.startsWith('hosts/tools/ps4-trainer/')&&!name.includes('/source/'))add(name);

@@ -48,10 +48,27 @@ function projectPS4(html,name){
  });
 }
 
+function projectPS5(html, name) {
+ if (!/^hosts\/ps5\//.test(name)) return html;
+ if (name === 'hosts/ps5/firmware/index.html') {
+  html = html.replace('href="/hosts/runtime/ps5-webkit-dd8e4e0914c5/"', 'href="/ps5/relapse/"');
+ }
+ return html.replace(/(<script\b[^>]*\bid=["']host-actions-data["'][^>]*>)([\s\S]*?)(<\/script>)/i, (_, open, json, close) => {
+  const catalogue = JSON.parse(json);
+  if (catalogue.platform !== 'ps5' || !Array.isArray(catalogue.actions)) return open + json + close;
+  const action = catalogue.actions.find(row => row.category === 'loaders' && row.nativeRoute?.kind === 'ps5-native' && row.runtimeId === 'ps5-webkit-dd8e4e0914c5');
+  if (!action) return open + json + close;
+  action.entryURL = '/ps5/relapse/';
+  return open + JSON.stringify(catalogue).replaceAll('<','\\u003c') + close;
+ });
+}
+
 function showNativeLog(html,name){
  if(!/^hosts\/runtime\/gamerhack-g2all-[a-f0-9]{12}-[a-f0-9]{12}\/web\/g2all\/index\.html$/.test(name))return html;
- return html.replace(/<\/head>/i,'<link rel="stylesheet" href="/assets/host-native-log.css?v=1"></head>')
-  .replace(/(<h1\s+id=msgs[^>]*>[\s\S]*?<\/h1>)/i,'$1<p id="wwb-native-log-label">Live loader log</p>');
+ return html.replace(/<\/head>/i,'<link rel="stylesheet" href="/assets/host-native-log.css?v=2"></head>')
+  .replace(/(<h1\s+id=msgs[^>]*>[\s\S]*?<\/h1>)/i,
+   '<header class="wwb-runtime-bar"><a href="/ps4/14.00/">‹ PS4 launcher</a><strong>WWB HOST</strong><span>PS4 WebKit</span></header>'+
+   '$1<p id="wwb-native-log-label">Live loader log</p>');
 }
 function ps5RemainingRoute(rows){
  const source=rows.find(g=>g.id==='karo-ps5-umtx');
@@ -121,9 +138,9 @@ function apply(html,name,{base='',root}={}){
   const dir=base+'/'+name.replace(/web\/index\.html$/,'');
   options.projectLinks=[{label:'Original source and attribution',url:'https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d'},{label:'AGPL license',url:'https://speedy-away.github.io'+dir+'web/LICENSE'},{label:'MIT notice',url:'https://speedy-away.github.io'+dir+'web/LICENSE-raw13g'},{label:'Technical lineage',url:'https://speedy-away.github.io'+dir+'web/TECHNICAL.md'}];
  }
- if(runtimePS5){html=html.replace('<nav>','<nav class="host-taskbar">').replace(/<div class="details">([\s\S]*?)<\/div>/,'<details class="details"><summary>Requirements &amp; source</summary>$1</details>');}
  if(nativeLanding)html=html.replace('<body>','<body class="host-compact host-runtime-landing">').replace('</head>','<link rel="stylesheet" href="'+base+'/assets/host-compact.css?v=1"><link rel="stylesheet" href="'+base+'/assets/host-blue-theme.css?v=1"></head>');
  // Never add site/popup code to execution documents, only authored landing controls.
- return popup.apply(nativeLanding?'hosts/launcher/index.html':name,projectPS4(html,name),options);
+ html=popup.apply(nativeLanding?'hosts/launcher/index.html':name,projectPS5(projectPS4(html,name),name),options);
+ return require('./host-ps5-webkit-ui.cjs').apply(html,name,{base});
 }
 module.exports={MODERN_PS4,PS5_REMAINING,ps5RemainingRoute,groups,actions,directory,build,apply,publicPS4Actions,showNativeLog};

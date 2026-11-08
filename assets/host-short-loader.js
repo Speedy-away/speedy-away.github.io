@@ -22,6 +22,7 @@
 
     var load = node('load'), retry = node('cache'), progress = node('progress');
     var recovery = node('recovery'), restarted = node('restarted'), clear = node('clear');
+    var device = node('device'), cacheState = node('cache-state'), refresh = node('refresh');
     var controller = win.HostSiteLoad, guard = win.WhatsiteKaro;
     var cache, info, action, busy = false, cacheError = '', lastPercent = -10;
 
@@ -36,8 +37,13 @@
     }
 
     var matches = info && info.platform === action.platform && action.firmwares.indexOf(info.firmware) !== -1;
+    if (device) {
+      device.textContent = info ? info.platform.toUpperCase() + ' ' + info.firmware : 'PlayStation not detected';
+      device.setAttribute('data-state', matches ? 'ready' : 'blocked');
+    }
     record(info ? 'Detected ' + info.platform.toUpperCase() + ' ' + info.firmware + '.' : 'PlayStation browser not detected.');
     if (!matches) {
+      if (cacheState) cacheState.textContent = 'Requires PS4 14.00';
       status.textContent = 'Open this page in the PS4 browser on firmware 14.00.';
       record(status.textContent);
       return;
@@ -53,12 +59,20 @@
         var cacheStatus = cache && Number(cache.status);
         var ready = cacheStatus === 1 || cacheStatus === 4;
         var saving = cacheStatus === 2 || cacheStatus === 3;
-        load.disabled = busy || locked || !ready;
+        var canRefresh = refresh && cacheStatus === 4 && typeof cache.swapCache === 'function';
+        if (refresh) refresh.hidden = !canRefresh || busy;
+        if (cacheState) {
+          cacheState.textContent = cacheStatus === 4 ? 'Update ready' : ready ? 'Ready' : cacheError ? 'Check failed' :
+            !cache ? 'Unavailable' : saving ? 'Saving files' : 'Waiting';
+          cacheState.setAttribute('data-state', ready ? 'ready' : cacheError || !cache ? 'blocked' : 'waiting');
+        }
+        load.disabled = busy || locked || !ready || Boolean(canRefresh);
         retry.hidden = !cache || ready || saving || busy;
         recovery.hidden = !locked || busy;
         clear.disabled = busy || !locked || !restarted.checked;
         if (busy) return;
         if (locked) status.textContent = 'Check and restart the console before another attempt.';
+        else if (canRefresh) status.textContent = 'An updated host is available. Apply it before loading.';
         else if (ready) status.textContent = 'Cache ready. Press Load GoldHEN when you are ready.';
         else if (cacheError) status.textContent = cacheError;
         else if (!cache) status.textContent = 'This browser did not provide the offline cache required by this loader.';
@@ -67,6 +81,10 @@
       } catch (_) {
         load.disabled = true;
         clear.disabled = true;
+        if (cacheState) {
+          cacheState.textContent = 'Storage unavailable';
+          cacheState.setAttribute('data-state', 'blocked');
+        }
         status.textContent = 'Browser storage is unavailable. Reopen this page with browser storage enabled.';
       }
     }
@@ -109,6 +127,17 @@
         cacheError = 'Cache check could not start. Reload this page while connected.';
         record(cacheError);
         render();
+      }
+    });
+    if (refresh) refresh.addEventListener('click', function (event) {
+      if (event.isTrusted !== true || busy || !cache || cache.status !== 4) return;
+      try {
+        cache.swapCache();
+        record('Cache update applied. Reloading the host.');
+        win.location.reload();
+      } catch (_) {
+        status.textContent = 'The cache update could not be applied. Close and reopen this page.';
+        record(status.textContent);
       }
     });
     restarted.addEventListener('change', render);

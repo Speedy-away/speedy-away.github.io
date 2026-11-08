@@ -45,6 +45,16 @@ test('the public PS4 loader points to one exact firmware and the offline manifes
   }
 });
 
+test('the PS4 native screen adds a back link and log heading without rewriting embedded scripts', () => {
+  const name = 'hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec/web/g2all/index.html';
+  const original = JSON.parse(read(name).match(/"original"\s*:\s*("(?:\\.|[^"\\])*")/)[1]);
+  const themed = compact.showNativeLog(original, name);
+  const scripts = html => [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/gi)].map(match => match[0]);
+  assert.match(themed, /<header class="wwb-runtime-bar">/);
+  assert.match(themed, /Live loader log/);
+  assert.deepEqual(scripts(themed), scripts(original));
+});
+
 function fixture(ua) {
   function target(properties = {}) {
     return Object.assign({
@@ -63,7 +73,7 @@ function fixture(ua) {
     const data = new Map();
     return { getItem: key => data.get(key) ?? null, setItem: (key, value) => data.set(key, value), removeItem: key => data.delete(key) };
   };
-  const nodes = Object.fromEntries(['status', 'log', 'load', 'cache', 'progress', 'recovery', 'restarted', 'clear'].map(key => [key, target()]));
+  const nodes = Object.fromEntries(['status', 'log', 'load', 'cache', 'progress', 'recovery', 'restarted', 'clear', 'device', 'cache-state', 'refresh'].map(key => [key, target()]));
   nodes.load.disabled = true;
   nodes.data = { textContent: config };
   const doc = { visibilityState: 'visible', getElementById: id => nodes[id.replace('wwb-short-', '')], createElement: () => target() };
@@ -128,6 +138,24 @@ test('an existing native lock exposes explicit recovery and permits a new handof
   nodes.clear.fire('click');
   assert.equal(win.localStorage.getItem(guard.LOCK), null);
   assert.equal(nodes.load.disabled, false);
+});
+
+test('an available cache update requires a trusted refresh before arming a native attempt', () => {
+  const {win, doc, nodes, cache} = fixture('PlayStation 4/14.00');
+  let reloads = 0;
+  cache.status = 4;
+  cache.swapCache = () => { cache.status = 1; };
+  win.location.reload = () => { reloads++; };
+  shortLoader.install(win, doc);
+  assert.equal(nodes['cache-state'].textContent, 'Update ready');
+  assert.equal(nodes.refresh.hidden, false);
+  assert.equal(nodes.load.disabled, true);
+  nodes.refresh.fire('click', {isTrusted: false});
+  assert.equal(reloads, 0);
+  nodes.refresh.fire('click', {isTrusted: true});
+  assert.equal(reloads, 1);
+  assert.equal(win.sessionStorage.getItem(guard.TICKET), null);
+  assert.equal(win.localStorage.getItem(guard.LOCK), null);
 });
 
 test('curated downloads without a console queue id remain downloadable on the device', () => {

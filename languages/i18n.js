@@ -379,7 +379,16 @@
   function setLang(code, opts) {
     opts = opts || {};
     var hostSource=document.documentElement.getAttribute('data-host-source');
-    if(!opts.silent && hostSource && CODES.indexOf(code)!==-1 && code!==current){store(code);window.location.href=(code===DEFAULT_LANG?'':'/'+code)+hostSource+(window.location.search||'')+(window.location.hash||'');return;}
+    if(!opts.silent && hostSource && CODES.indexOf(code)!==-1 && code!==current){
+      var hostSearch=window.location.search||'',hostView=document.documentElement.getAttribute('data-host-view');
+      if(hostView){
+        var hostParams=new URLSearchParams(hostSearch);
+        hostParams.set('view',hostView);
+        hostParams.delete('folder');
+        hostSearch='?'+hostParams.toString();
+      }
+      store(code);window.location.href=(code===DEFAULT_LANG?'':'/'+code)+hostSource+hostSearch+(window.location.hash||'');return;
+    }
     if (CODES.indexOf(code) === -1) code = DEFAULT_LANG;
 
     // Dictionaries load over the network, so a slow one must never overwrite a

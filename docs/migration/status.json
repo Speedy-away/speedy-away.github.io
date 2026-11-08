@@ -1816,5 +1816,18 @@
       "Receiver save and explicit PKG installation on supported setups"
     ],
     "patchEngineLimit": "Pinned upstream PS4 support ends at 12.52. The PS4 14.00 game-patch dialog keeps the exact XML download available."
+  },
+  "shortNavigationAndWebKit20261108": {
+    "date": "2026-11-08",
+    "status": "Authored navigation and WebKit launcher redesign complete; native hardware tests pending",
+    "changes": [
+      "Publish 28 short PS4 and PS5 browsing URLs as full pages, with canonical links and offline access retained",
+      "Redesign PS4 14.00 and PS5 WebKit entry screens with console artwork, detected firmware and session logs",
+      "Add explicit apply-and-reload for a ready PS4 AppCache update before native handoff",
+      "Present the original native console output in full-width log layouts"
+    ],
+    "nativeScriptsChanged": 0,
+    "downloadFilesChanged": 0,
+    "physicalConsoleTested": false
   }
 }

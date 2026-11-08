@@ -1,11 +1,18 @@
 (function(){
  'use strict';
  var data=document.getElementById('host-actions-data');if(!data)return;
- var platform=(window.WWB_HOST_CATALOG||JSON.parse(data.textContent)).platform,base='/hosts/'+platform+'/';
+ var platform=(window.WWB_HOST_CATALOG||JSON.parse(data.textContent)).platform;
+ var shortPath=location.pathname.indexOf('/'+platform+'/')===0;
+ var base=(shortPath?'/':'/hosts/')+platform+'/';
  var labels={loaders:'Choose firmware',payloads:'Payloads',mods:'Mods / Mod Menus',tools:'Tools',goldhen:'Goldhen PS4',connection:'Connection & setup',sender:'Desktop sender · connect from a PC'};
- var params=new URL(location.href).searchParams,selected=params.get('view')||params.get('folder')||'loaders';
+ var params=new URL(location.href).searchParams;
+ var fixedView=document.documentElement.getAttribute('data-host-view');
+ var selected=fixedView||params.get('view')||params.get('folder')||'loaders';
  if(!Object.prototype.hasOwnProperty.call(labels,selected))selected='loaders';
- document.querySelectorAll('.host-file-tabs a').forEach(function(link){if(new URL(link.href).searchParams.get('view')===selected)link.setAttribute('aria-current','page');});
+ document.querySelectorAll('.host-file-tabs a').forEach(function(link){
+  var linkView=link.getAttribute('data-host-view')||new URL(link.href).searchParams.get('view');
+  if(linkView===selected)link.setAttribute('aria-current','page');
+ });
  var firmwareControl=document.querySelector('.host-firmware-control');
  if(firmwareControl)document.getElementById('host-file-firmware').appendChild(firmwareControl);
  var fileToolbar=document.getElementById('host-file-firmware');
@@ -52,7 +59,7 @@
   var title=document.getElementById('host-folder-title');
     title.textContent=labels[selected];
   document.getElementById('host-folder-path').textContent=' / '+title.textContent;
-  var back=document.querySelector('.host-taskbar a');back.href=selected==='loaders'?'/hosts/':base;
+  var back=document.querySelector('.host-taskbar a');back.href=selected==='loaders'?'/':base;
   if(button)button.click();
   if(selected==='sender')document.querySelector('.host-sender').open=true;
  }

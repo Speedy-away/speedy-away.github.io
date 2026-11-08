@@ -65,3 +65,14 @@ test('retry reuses only checksum-verified cached files and repairs corrupt files
 test('declared translated host pages are served from the matching console pack while native paths stay canonical',async()=>{
  const f=fixture(),files={'/es/hosts/ps4/':'host traducido','/ar/offline/ps4/':'offline traducido','/es/':'selector traducido'};f.setPack(pack(files,'locale-1'),files);assert.equal((await f.message('INSTALL')).at(-1).type,'CACHED');f.routes.clear();assert.equal(await(await f.request('/es/hosts/ps4/?view=mods')).text(),'host traducido');assert.equal(await(await f.request('/ar/offline/ps4/')).text(),'offline traducido');assert.equal(f.request('/es/hosts/runtime/payload.bin'),undefined);assert.equal(f.request('/zz/hosts/ps4/'),undefined);
 });
+
+test('short console pages preserve their own offline shell and query state',async()=>{
+ const f=fixture(),files={'/ps4/':'short host','/ps4/mods/':'short mod shelf','/ps4/14.00/':'short loader'};
+ f.setPack(pack(files,'short-1'),files);
+ assert.equal((await f.message('INSTALL')).at(-1).type,'CACHED');
+ f.routes.clear();
+ assert.equal(await(await f.request('/ps4/mods/?game=gta5')).text(),'short mod shelf');
+ assert.equal(await(await f.request('/ps4/14.00/')).text(),'short loader');
+ assert.equal(f.request('/ps5/14.00/'),undefined);
+ assert.equal(f.request('/ps4/runtime/'),undefined);
+});

@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261108console1';
+const ASSET_VERSION='20261108webkit2';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('.')?[]:e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 function cacheResources(root,names){const resources=new Set();for(const name of names.filter(p=>/^hosts\/runtime\/.+\.(?:manifest|appcache|cache)$/i.test(p))){if(!fs.existsSync(path.join(root,name)))continue;let section='CACHE';for(let line of fs.readFileSync(path.join(root,name),'utf8').split(/\r?\n/)){line=line.trim();if(!line||line.startsWith('#')||line==='CACHE MANIFEST')continue;if(/^[A-Z]+:$/.test(line)){section=line.slice(0,-1);continue;}if(section!=='CACHE')continue;try{const url=new URL(line,'https://host.invalid/'+name);if(url.origin==='https://host.invalid')resources.add(decodeURIComponent(url.pathname.slice(1)));}catch{}}}return resources;}
@@ -120,6 +120,7 @@ function build(output,revision='main',root=ROOT){
    if(runtime&&f.name.endsWith('.html')){
     const compact=require('./host-compact-pages.cjs');
     text=runtimeConfigHTML(compact.apply(text,f.name,{base:BASE,root}));
+    text=require('./host-ps5-webkit-ui.cjs').apply(text,f.name,{base:BASE});
     text=text.replace(/("original"\s*:\s*)("(?:\\.|[^"\\])*")/g,(whole,key,value)=>{
      const original=compact.showNativeLog(JSON.parse(value),f.name);
      return key+JSON.stringify(manifestHTML(original,f.name)).replaceAll('<','\\u003c');
@@ -144,6 +145,7 @@ function build(output,revision='main',root=ROOT){
   }
  }
  for(const name of require('./host-locales.cjs').build(output,root))hosted.add(name);
+ for(const name of require('./host-public-routes.cjs').build(output,hosted))hosted.add(name);
  const aliases={};for(const p of hosted){aliases['/'+p]=BASE+'/'+p;if(/(?:^|\/)index\.html$/.test(p)){const directory=p.replace(/index\.html$/,'');aliases['/'+directory]=BASE+'/'+directory;}}for(const [p,u]of Object.entries(mapping))aliases[p]=u;
  fs.writeFileSync(path.join(output,'host-project-map.js'),'window.WWB_HOST_PROJECT='+JSON.stringify({base:BASE,main:MAIN,aliases}).replaceAll('<','\\u003c')+';');
  fs.writeFileSync(path.join(output,'host-runtime-map.js'),'window.WWB_HOST_PROJECT='+JSON.stringify(require('./compact-host-routing.cjs').compact(hosted,mapping,BASE,MAIN)).replaceAll('<','\\u003c')+';');

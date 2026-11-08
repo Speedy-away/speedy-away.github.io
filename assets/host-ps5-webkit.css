@@ -1,0 +1,159 @@
+/* A static control deck for older PlayStation WebKit. */
+html body.wwb-ps5-webkit {
+  margin: 0;
+  background: #101820 !important;
+  color: #ecf3f7;
+  font: 17px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.wwb-ps5-webkit .ps5-deck {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 71rem;
+  margin: 0 auto;
+  padding: 1.35rem 1.5rem 2.5rem;
+}
+
+.wwb-ps5-webkit .ps5-deck-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid #354b57;
+  background: #15212a;
+}
+
+.wwb-ps5-webkit .ps5-deck-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-right: 1.3rem;
+  color: #e4f6ed;
+  text-decoration: none;
+}
+
+.wwb-ps5-webkit .ps5-deck-copy { margin: 0 0 1.2rem; }
+.wwb-ps5-webkit .ps5-deck-art {
+  flex: 0 1 48%;
+  min-width: 0;
+  align-self: center;
+  margin: 0 2rem 0 0;
+}
+.wwb-ps5-webkit .ps5-deck-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #354b57;
+}
+
+.wwb-ps5-webkit .ps5-deck h1 {
+  margin: 0 0 0.65rem;
+  color: #f2faf7;
+  font-size: 2.35rem;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.wwb-ps5-webkit .ps5-deck-kicker {
+  margin: 0 0 0.55rem;
+  color: #a9edcf;
+  font-size: 0.76rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.wwb-ps5-webkit .ps5-deck-subtitle { margin: 0; max-width: 46ch; color: #c7d8e0; }
+.wwb-ps5-webkit .ps5-deck-content { display: flex; align-items: flex-start; }
+.wwb-ps5-webkit .ps5-deck-controls { flex: 1 1 52%; min-width: 0; }
+.wwb-ps5-webkit .ps5-deck-output { margin-top: 1.15rem; }
+.wwb-ps5-webkit .ps5-deck-panel {
+  box-sizing: border-box;
+  border: 1px solid #354b57;
+  padding: 1rem 1.15rem;
+  background: #15212a;
+}
+
+.wwb-ps5-webkit .ps5-deck-panel h2 { margin: 0 0 0.6rem; font-size: 1rem; }
+.wwb-ps5-webkit .ps5-deck-firmware {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0.85rem;
+  color: #c7d8e0;
+}
+.wwb-ps5-webkit .ps5-deck-firmware dt { margin-right: 0.65rem; }
+.wwb-ps5-webkit .ps5-deck-firmware dd { margin: 0; color: #a9edcf; font-weight: bold; }
+
+.wwb-ps5-webkit #runtime-status,
+.wwb-ps5-webkit #host-local-status,
+.wwb-ps5-webkit #ps5-launch-status {
+  margin: 0 0 0.85rem;
+  border-left: 3px solid #a9edcf;
+  padding: 0.6rem 0.8rem;
+  background: #101820;
+  color: #e4f6ed;
+}
+
+.wwb-ps5-webkit .ps5-deck-panel button {
+  box-sizing: border-box;
+  min-height: 44px;
+  border: 1px solid #a9edcf;
+  border-radius: 4px;
+  padding: 0.62rem 0.95rem;
+  background: #a9edcf;
+  color: #13271e;
+  font: bold 1rem Arial, Helvetica, sans-serif;
+}
+
+.wwb-ps5-webkit .ps5-deck-panel button:disabled {
+  opacity: 1;
+  border-color: #425864;
+  background: #283a44;
+  color: #c4d5dc;
+}
+
+.wwb-ps5-webkit .ps5-deck-panel .confirmation {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.wwb-ps5-webkit .ps5-deck-panel .confirmation input { margin-right: 0.6rem; }
+.wwb-ps5-webkit .ps5-deck a { color: #a9edcf; }
+.wwb-ps5-webkit .ps5-deck-panel details { margin-top: 1rem; }
+.wwb-ps5-webkit .ps5-deck-panel summary { display: list-item; min-height: 44px; }
+.wwb-ps5-webkit .ps5-deck-panel :focus,
+.wwb-ps5-webkit .ps5-deck-nav :focus {
+  outline: 3px solid #a9edcf;
+  outline-offset: 3px;
+}
+
+.wwb-ps5-webkit .ps5-deck-log,
+.wwb-ps5-webkit #console {
+  box-sizing: border-box;
+  min-height: 7.5rem;
+  max-height: 42vh;
+  overflow: auto;
+  margin: 0;
+  border: 1px solid #30434e;
+  padding: 0.75rem;
+  background: #0d151b;
+  color: #d9eee4;
+  font: 0.9rem/1.5 Consolas, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+.wwb-ps5-webkit #console { min-height: 13rem; max-height: 66vh; }
+
+.wwb-ps5-webkit .ps5-deck-references { margin-top: 1rem; color: #c7d8e0; }
+.wwb-ps5-webkit .ps5-deck-references summary { color: #e4f6ed; }
+
+@media (max-width: 46rem) {
+  .wwb-ps5-webkit .ps5-deck { padding: 1rem; }
+  .wwb-ps5-webkit .ps5-deck-nav { padding-right: 1rem; padding-left: 1rem; }
+  .wwb-ps5-webkit .ps5-deck h1 { font-size: 1.75rem; }
+  .wwb-ps5-webkit .ps5-deck-content { display: block; }
+  .wwb-ps5-webkit .ps5-deck-art { max-width: 22rem; margin: 0 auto 1.2rem; }
+}

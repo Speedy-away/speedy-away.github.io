@@ -8,6 +8,8 @@ function safePath(pathname){
  let decoded;try{decoded=decodeURIComponent(pathname);}catch(_){return false;}
  if(!pathname.startsWith('/')||pathname.startsWith('//')||/[\\\x00-\x20]/.test(pathname)||/[\\\x00-\x1f]/.test(decoded)||/%(?:2e|2f|5c)/i.test(pathname)||/%(?:2e|2f|5c)/i.test(decoded)||decoded.split('/').some(p=>p==='.'||p==='..')||decoded.startsWith('/offline/__wwb_'))return false;
  if(/^\/(?:es|pt|fr|de|ru|tr|pl|it|zh|ja|ko|th|vi|id|hi|sr|nl|ka|ar|he)\/(?:$|index\.html$|hosts\/(?!runtime\/)|offline\/)/.test(pathname))return true;
+ if(/^\/ps[45]\/(?:(?:payloads|mods|tools|connection|sender|downloads|packages|patches|files|firmware|payload-manager|lua)\/)?(?:index\.html)?$/.test(pathname)||
+    /^\/(?:ps4\/(?:14\.00|cheats|goldhen)|ps5\/(?:7\.61|relapse))\/(?:index\.html)?$/.test(pathname))return true;
  return pathname==='/'||pathname==='/index.html'||pathname==='/style.css'||/^\/downloads\/.+\.xml$/i.test(pathname)||/^\/(?:hosts|assets|languages|console|docs|offline)\//.test(pathname)||/^\/(?:host-project-map|host-runtime-map|host-offline-sw)\.js$/.test(pathname);
 }
 function safeURL(value){
@@ -89,7 +91,7 @@ async function verify(platform,source){
  }catch(error){send(source,'ERROR',{platform,operation:'verify',message:error.message||'Saved copy could not be verified.'});}
 }
 async function cachedResponse(event,url){
- const packs=await loadPacks(),pinned=clientPacks.get(event.clientId),platform=url.pathname.match(/^\/(?:[a-z]{2}\/)?hosts\/(ps[45])\//)?.[1]||url.pathname.match(/^\/(?:[a-z]{2}\/)?offline\/(ps[45])\//)?.[1];
+ const packs=await loadPacks(),pinned=clientPacks.get(event.clientId),platform=url.pathname.match(/^\/(?:[a-z]{2}\/)?(?:(?:hosts|offline)\/)?(ps[45])\//)?.[1];
  const candidates=pinned?packs.filter(pack=>pack.name===pinned):platform?packs.filter(pack=>pack.pack.platform===platform):packs;
  for(const item of candidates){const file=item.exact.get(url.pathname+url.search)||(queryMayMatch(url)&&item.paths.get(url.pathname));if(!file)continue;const response=await item.cache.match(ORIGIN+file.url);if(response){const id=event.resultingClientId||event.clientId;if(id)clientPacks.set(id,item.name);return response;}}
  return fetch(event.request);
