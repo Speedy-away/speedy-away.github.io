@@ -65,7 +65,7 @@ test('a pinned package opens the exact same-console queue and keeps a separate d
   assert.equal(ids.setup.open, true);
   assert.match(ids['host-download-status'].textContent, /1 of 1/);
   assert.equal(links().get('Save / install on PS4'), 'http://127.0.0.1:6701/data/whatsite-ps4.html?file=' + ps4.id);
-  assert.equal(links().get('Direct file'), ps4.url);
+  assert.equal(links().get('Download file'), ps4.url);
   assert.equal(links().has('Save / install on PS5'), false);
 });
 
@@ -94,7 +94,7 @@ test('a failing catalogue can be retried, and desktop only shows native save aft
   assert.equal(ids['host-download-retry'].hidden, true);
   assert.equal(links().has('Save / install on PS5'), false);
   assert.equal(ids['host-download-native'].hidden, true);
-  assert.match(links().get('Direct file'), /\.pkg$/);
+  assert.match(links().get('Download file'), /\.pkg$/);
   ids['host-download-address'].value = '192.168.1.40';
   ids['host-download-connection'].events.submit({preventDefault(){}});
   assert.equal(links().get('Save / install on PS5'), 'http://192.168.1.40:6701/whatsite-ps5.html?file=' + ps5.id);
@@ -123,6 +123,6 @@ test('retained catalogue links map to exact versions and an incompatible receive
     platform:'ps5', userAgent:'Mozilla/5.0 (PlayStation 5 7.61)', items:[{...row, url:original, receiverSupported:false}]
   });
   assert.equal(links().has('Save on PS5'), false);
-  assert.equal(links().get('Direct file'), original);
+  assert.equal(links().get('Download file'), original);
   assert.match(ids['host-download-results'].textContent, /Use the direct URL in ezRemote Client/);
 });

@@ -18,6 +18,32 @@
   margin-bottom: 1.5rem;
 }
 
+.host-download-choices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 1rem;
+}
+
+.host-download-choices a {
+  display: block;
+  flex: 1 1 9rem;
+  min-height: 44px;
+  margin: .25rem .5rem .25rem 0;
+  padding: .7rem 1rem;
+  border: 1px solid #55708a;
+  border-radius: .35rem;
+  background: #172536;
+  color: #edf3ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.host-download-choices a[aria-current="true"] {
+  border-color: #a9edcf;
+  background: #a9edcf;
+  color: #11271f;
+}
+
 .host-download-setup,
 .host-download-toolbar,
 .host-download-item {
@@ -136,6 +162,12 @@
 .host-download-item code {
   display: block;
   margin-bottom: .35rem;
+}
+
+.host-download-item details a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .host-download-desk button[hidden] {

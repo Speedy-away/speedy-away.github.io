@@ -43,32 +43,29 @@
     <header class="host-download-lead" data-wwb-text-heading>
       <p>PS4 · WWB HOST</p>
       <h1>Download centre</h1>
-      <p>Find the exact homebrew app, payload, mod or game patch for your PS4. Check its version and compatibility before saving.</p>
     </header>
-    <section id="workflow" class="host-download-setup" aria-labelledby="host-download-workflow-title">
-      <h2 id="host-download-workflow-title">On your PS4</h2>
-      <p>Once ezRemote is set up, you can save files and open the console’s tools from this PlayStation.</p>
-      <ol>
-        <li><strong>Save.</strong> <a href="#downloads">Choose a file</a>, open <strong>Save on PS4</strong>, then select a writable folder and confirm the transfer in the local downloader.</li>
-        <li><strong>Extract.</strong> <a href="?type=archives#downloads">Browse archives</a>. On reviewed files, <strong>Save / extract on PS4</strong> opens the matching file in the downloader. Save it before extracting.</li>
-        <li><strong>Install.</strong> <a href="?type=packages#downloads">Browse homebrew PKGs</a> or open the <a href="/hosts/ps4/packages/">package library</a>. When the downloader reports the file saved, open <strong>Verify &amp; install PKG</strong> and confirm the request in the compatible installer.</li>
-      </ol>
+    <section id="workflow" aria-label="Browse downloads">
+      <nav class="host-download-choices" aria-label="File categories">
+        <a href="?type=all#downloads" data-download-filter="all">All files</a>
+        <a href="?type=archives#downloads" data-download-filter="archives">Archives</a>
+        <a href="?type=packages#downloads" data-download-filter="packages">PKGs</a>
+      </nav>
+      <p>Choose a file to see your download and console options.</p>
       <nav id="host-download-native" hidden aria-label="Installed console tools"></nav>
-      <p><strong>Direct file</strong> opens the original download in this browser. If it refuses the file type, use the local downloader or enter the direct URL in ezRemote.</p>
     </section>
     <details id="setup" class="host-download-setup">
-      <summary>Console setup and troubleshooting</summary>
-      <p>Use an existing compatible homebrew environment. The browser opens the local native tools after they have been set up.</p>
+      <summary>Set up console downloads</summary>
+      <p>Saving to your PS4 requires ezRemote and a compatible homebrew setup. <strong>Download file</strong> opens the original file in your browser. If the browser refuses the file type, use ezRemote.</p>
       <ol>
         <li>Install <a href="https://github.com/cy33hc/ps4-ezremote-client/releases/tag/2.08">ezRemote Client 2.08</a>. The background server requires a compatible GoldHEN BIN Loader. Start the bundled background server and keep the console awake.</li>
         <li>Use the direct URL download feature in ezRemote to save the <a href="/console/ps4/whatsite-ps4.html">pinned downloader companion</a> to <code translate="no">/data/whatsite-ps4.html</code>. Its direct URL is <code translate="no">https://speedy-away.github.io/console/ps4/whatsite-ps4.html</code>.</li>
         <li>Choose <strong>Save on PS4</strong> for a file, prepare or choose a writable destination and press <strong>Save to console</strong>. The local page shows the receiver queue and transfer progress.</li>
       </ol>
       <p>Choose <strong>Open download queue</strong> under Installed console tools. If it cannot open, check the companion path and that the matching ezRemote Server is running on port 6701. If the save folder is missing, choose <strong>Prepare a storage folder</strong>.</p>
-      <p>Already saved a PKG? The <a href="/hosts/ps4/packages/#setup">package setup</a> explains the next step. Keep enough storage for both a download and any installed or extracted copy. The native installer still needs verification on PS4 firmware 14.00.</p>
+      <p>To install a saved PKG, open the <a href="/hosts/ps4/packages/#setup">package setup</a> and use the compatible installer. Keep enough storage for both a download and any installed or extracted copy. The native installer still needs verification on PS4 firmware 14.00.</p>
     </details>
     <details id="extract" class="host-download-setup">
-      <summary>Download and extract on PS4</summary>
+      <summary>Extract archives on PS4</summary>
       <ol>
         <li>Keep the installed ezRemote Client and its bundled background server running.</li>
         <li>Choose <a href="?type=archives#downloads">Archives</a>, select a file and wait for the local downloader to report the save complete.</li>

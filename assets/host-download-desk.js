@@ -16,6 +16,7 @@
   var address = doc.getElementById('host-download-address');
   var addressStatus = doc.getElementById('host-download-address-status');
   var nativeTools = doc.getElementById('host-download-native');
+  var quickFilters = desk.querySelectorAll ? desk.querySelectorAll('[data-download-filter]') : [];
   var consolePlatform = /PlayStation\s*([45])\b/i.exec(win.navigator.userAgent);
   var destination = consolePlatform && 'ps' + consolePlatform[1] === platform ? '127.0.0.1' : '';
   var requestedFile = /[?&]file=([^&#]*)/.exec(win.location.search);
@@ -95,18 +96,18 @@
     if (archive) add(card, 'p', reviewed
       ? 'Save the complete archive first. Then choose Extract a saved copy in the console receiver. It checks the SHA-256 and extracts into a new folder.'
       : 'Save the archive first, then extract it with the installed console file manager. Follow the build’s compatibility guide.', 'host-download-meta');
-    var direct = link(controls, 'Direct file', httpsURL(item.url));
+    var direct = link(controls, 'Download file', httpsURL(item.url));
     direct.setAttribute('download', item.filename);
     direct.setAttribute('data-no-file-options', '');
     var help = httpsURL(item.pages && item.pages[platform] || item.page);
-    if (help) link(controls, 'Compatibility guide', help);
     var support = httpsURL(item.requiresSupportArchive);
     if (support) link(controls, 'Required support pack', support);
     var details = add(card, 'details');
-    add(details, 'summary', 'Filename, direct URL and SHA-256');
+    add(details, 'summary', 'File details');
     add(details, 'code', item.filename);
     add(details, 'code', direct.href);
     add(details, 'code', item.sha256);
+    if (help) link(details, 'Compatibility guide', help);
     if (item.receiverSupported === false) {
       add(card, 'p', 'Use the direct URL in ezRemote Client. This file’s original bytes are available from its publisher.');
     }
@@ -130,6 +131,10 @@
   function render() {
     var query = search.value;
     var filter = type ? type.value : 'all';
+    Array.prototype.forEach.call(quickFilters, function (choice) {
+      if (choice.getAttribute('data-download-filter') === filter) choice.setAttribute('aria-current', 'true');
+      else choice.removeAttribute('aria-current');
+    });
     matches = items.filter(function (item) {
       if (pinnedId) return item.id === pinnedId;
       if (filter === 'packages' && !packageFile(item)) return false;
