@@ -75,7 +75,7 @@ test('an uncertain A or a busy reply for A cannot lock a different B target',asy
   }
 });
 
-test('the real chooser retains two stable popup actions and changes the exact download with its version button',()=>{
+test('the chooser separates the exact browser download, console save and Load for each version',()=>{
   const seed=fixture().actions[0];
   const older={...seed,id:'ps4-fixture-menu-156',gameVersion:'1.56',menuVersion:'1.0',consoleFileId:'ps4-exact-file-156',downloadURL:'/downloads/fixture/menu-old.bin'};
   const app=fixture({actions:[seed,older]});
@@ -87,13 +87,17 @@ test('the real chooser retains two stable popup actions and changes the exact do
     app.choose(id);
     const panel=app.ids['host-version-detail'];
     assert.equal(panel.querySelectorAll('[data-download-action], [data-launch]').length,2);
-    assert.equal(panel.querySelectorAll('a,button').length,2,'The variant has exactly two controls, without a third Save/file-manager action');
+    assert.equal(panel.querySelectorAll('a,button').length,3);
     assert.equal(panel.querySelector('[data-download-action]').getAttribute('data-download-action'),id);
     assert.equal(panel.querySelector('[data-launch]').getAttribute('data-launch'),id);
     assert.equal(panel.querySelector('[data-download-action]').hasAttribute('data-no-file-options'),true);
+    const variant = id===older.id ? older : seed;
+    const save = panel.querySelector('[data-console-save]');
+    assert.equal(new URL(save.getAttribute('href')).searchParams.get('file'),variant.consoleFileId);
     assert.equal(panel.querySelectorAll('[data-save], [data-open-service]').length,0);
   }
-  app.download();assert.equal(app.opened[0].url,'http://'+A+':6701/data/whatsite-ps4.html?file=ps4-exact-file-156');
+  app.download();assert.equal(app.opened.length,0);
+  assert.match(app.ids['host-status'].textContent,/exact file download/);
   assert.equal(app.sends.length,0,'Choosing/downloading a build must not load it');
 });
 

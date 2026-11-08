@@ -6,7 +6,8 @@ const inside=(base,file)=>{const rel=path.relative(base,file);return !rel.starts
 const server=http.createServer((req,res)=>{
  try{
   const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
-  if(!['GET','HEAD'].includes(req.method)||name.includes('\\')||/(?:^|\/)\.|^\/(?:docs|scripts|node_modules|tests)(?:\/|$)/i.test(name)){res.writeHead(403);res.end();return;}
+  const privatePath=/^\/(?:docs|scripts|node_modules|tests)(?:\/|$)/i.test(name)&&name!=='/docs/console-download-catalog.json';
+  if(!['GET','HEAD'].includes(req.method)||name.includes('\\')||/(?:^|\/)\./.test(name)||privatePath){res.writeHead(403);res.end();return;}
   let target=path.resolve(root,'.'+name);
   if(!inside(root,target)){res.writeHead(403);res.end();return;}
   if(fs.existsSync(target)&&fs.statSync(target).isDirectory())target=path.join(target,'index.html');

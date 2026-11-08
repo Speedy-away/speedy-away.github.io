@@ -1,0 +1,43 @@
+/* The original PS4 runtime already produces these log and state nodes. */
+html {
+  overflow: auto;
+  background: #071320;
+  color: #edf5ff;
+  font: 17px/1.55 Arial, sans-serif;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 36px;
+  text-align: left;
+}
+
+h1 { text-shadow: none; }
+#msgs { margin: 16px 0 !important; }
+#wwb-native-log-label { margin: 22px 0 6px; color: #b9deff; font-weight: bold; }
+
+#out, #state {
+  position: static !important;
+  box-sizing: border-box;
+  width: auto !important;
+  height: auto !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#out {
+  min-height: 110px;
+  max-height: 52vh !important;
+  margin: 8px 0;
+  padding: 12px 16px;
+  border: 1px solid #2b485f;
+  background: #081623;
+  color: #c4dbf1;
+  font: 14px/1.5 Consolas, monospace;
+  white-space: pre-wrap;
+  overflow: auto !important;
+  overflow-wrap: break-word;
+}
+
+#state { font-weight: bold; }

@@ -14,7 +14,7 @@ test('merged Download keeps device and console destinations distinct without sil
   assert.deepEqual(ui.downloadPlan(action,'ps4','192.168.1.42',pc,normalize),{destination:'console',address:'192.168.1.42',url:'http://192.168.1.42:6701/data/whatsite-ps4.html?file=ps4-example'});
   assert.throws(()=>ui.downloadPlan(action,'ps4','localhost',pc,normalize),/LAN address/);
   assert.throws(()=>ui.downloadPlan(action,'ps4','8.8.8.8',pc,normalize));
-  assert.throws(()=>ui.downloadPlan({...action,consoleFileId:null},'ps4','192.168.1.42',pc,normalize),/catalogue/);
+  assert.deepEqual(ui.downloadPlan({...action,consoleFileId:null},'ps4','192.168.1.42',pc,normalize),{destination:'device',address:'',url:action.downloadURL});
   assert.throws(()=>ui.downloadPlan({},'ps4','',pc,normalize),/downloadable file/);
   const ps5 = ui.detectBrowser('PlayStation 5/4.51');
   const native = ui.downloadPlan({...action,consoleFileId:'ps5-example'},'ps5','',ps5,normalize);

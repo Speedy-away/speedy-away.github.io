@@ -1,0 +1,217 @@
+/* Shared authored shell. Static surfaces keep older console WebKit responsive. */
+html body[data-wwb-console-ui] {
+  background: #101820 !important;
+  background-image: none !important;
+  color: #ecf3f7;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+body[data-wwb-console-ui]::before,
+body[data-wwb-console-ui]::after,
+[data-wwb-console-ui] .ps-atmosphere { display: none !important; }
+[data-wwb-console-ui] [hidden] { display: none !important; }
+[data-wwb-console-ui] a:focus,
+[data-wwb-console-ui] button:focus,
+[data-wwb-console-ui] input:focus,
+[data-wwb-console-ui] select:focus,
+[data-wwb-console-ui] summary:focus {
+  outline: 3px solid #a9edcf !important;
+  outline-offset: 3px;
+}
+
+[data-wwb-console-ui] .topbar,
+body.wwb-host-page[data-wwb-console-ui] .host-taskbar,
+[data-wwb-console-ui] .host-patches-taskbar,
+[data-wwb-console-ui] .pkg-taskbar {
+  background: #15212a !important;
+  border-color: #354b57 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.wwb-host-page[data-wwb-console-ui] .host-folder-heading,
+body.wwb-host-page[data-wwb-console-ui] [data-wwb-console-banner] {
+  background: #17252e !important;
+  border: 1px solid #354b57 !important;
+  border-left: 4px solid #a9edcf !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  min-height: 0 !important;
+  padding: 22px 24px !important;
+}
+
+[data-wwb-console-ui] .host-platform-label,
+[data-wwb-console-ui] .home-eyebrow,
+[data-wwb-console-ui] .host-eyebrow { color: #a9edcf !important; }
+[data-wwb-console-ui] .host-file-count { font-variant-numeric: tabular-nums; }
+
+body.wwb-host-page[data-wwb-console-ui] .host-file-tabs {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 0 !important;
+  overflow: visible !important;
+}
+
+body.wwb-host-page[data-wwb-console-ui] .host-file-tabs .host-primary-tabs {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow: visible !important;
+  gap: 6px;
+}
+
+[data-wwb-console-ui] .host-primary-tabs a,
+[data-wwb-console-ui] .wwb-console-links a,
+[data-wwb-console-ui] .wwb-activity summary {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 9px 14px;
+  color: #daedf4;
+  text-decoration: none;
+}
+
+body.wwb-host-page[data-wwb-console-ui] .host-primary-tabs a[aria-current="page"],
+body.wwb-host-page[data-wwb-console-ui] .host-platform-switch a[aria-current="page"] {
+  background: #a9edcf !important;
+  color: #10231e !important;
+  border-color: #a9edcf !important;
+}
+
+[data-wwb-console-ui] .wwb-console-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #354b57;
+}
+
+[data-wwb-console-ui] .wwb-console-links a { background: #1b2a35; }
+[data-wwb-console-ui] .wwb-console-links a:hover { background: #283e4a; }
+
+[data-wwb-console-ui] .wwb-diagnostics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+[data-wwb-console-ui] .wwb-diagnostics div {
+  min-width: 11rem;
+  padding: 10px 12px;
+  background: #17252e;
+  border-left: 3px solid #a9edcf;
+}
+[data-wwb-console-ui] .wwb-diagnostics dt { color: #b6cdd8; }
+[data-wwb-console-ui] .wwb-diagnostics dd { margin: 4px 0 0; }
+
+[data-wwb-console-ui] .wwb-firmware-settings {
+  width: 100%;
+  padding: 8px 12px;
+  background: #17252e;
+}
+[data-wwb-console-ui] .wwb-firmware-settings summary {
+  min-height: 44px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+[data-wwb-console-ui] .wwb-library-search {
+  display: block;
+  max-width: 34rem;
+  margin: 10px 0 18px;
+  color: #c5d8e2;
+}
+
+[data-wwb-console-ui] .wwb-library-search input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  margin-top: 6px;
+  padding: 8px 12px;
+  border: 1px solid #607b88;
+  background: #17252e;
+  color: #ecf3f7;
+  font-size: 1rem;
+}
+
+[data-wwb-console-ui] .wwb-activity,
+[data-wwb-console-ui] .host-activity {
+  margin-top: 16px;
+  border: 1px solid #354b57;
+  background: #132029;
+}
+
+[data-wwb-console-ui] .wwb-activity pre {
+  max-height: 12em;
+  margin: 0;
+  padding: 12px 16px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: #c5d8e2;
+  font: .9rem/1.5 Consolas, monospace;
+}
+
+body.wwb-host-page[data-wwb-console-ui] .wwb-primary-loader {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 1 / -1;
+  gap: 8px;
+  width: 100%;
+  max-width: 48rem;
+  min-height: 105px;
+  padding: 18px 24px;
+  border: 2px solid #a9edcf;
+  background: #1b3a37;
+  color: #e5fff3;
+  text-decoration: none;
+}
+[data-wwb-console-ui] .wwb-primary-loader strong { font-size: 1.45rem; }
+[data-wwb-console-ui] .wwb-primary-loader:hover { background: #254a43; }
+
+[data-wwb-console-ui] .host-patch-primary-actions a,
+[data-wwb-console-ui] .host-patch-primary-actions button,
+[data-wwb-console-ui] .host-version-dialog button,
+[data-wwb-console-ui] .host-version-dialog .host-download { min-height: 44px; }
+
+body.wwb-host-page[data-wwb-console-ui] .host-patch-dialog,
+[data-wwb-console-ui] .host-version-dialog,
+[data-wwb-console-ui] .host-offline-panel {
+  background: #17252e !important;
+  border-color: #607b88 !important;
+  border-radius: 6px !important;
+}
+
+[data-wwb-console-ui] .intro { margin-bottom: 20px; }
+[data-wwb-console-ui] .home-start {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  margin-top: 12px;
+  background: #a9edcf;
+  color: #10231e;
+  font-weight: bold;
+  text-decoration: none;
+}
+[data-wwb-console-ui] .console-copy {
+  background: #17252e;
+  border-color: #354b57;
+  padding: 12px 16px;
+}
+[data-wwb-console-ui] .console-visual { max-height: 32vh; }
+[data-wwb-console-ui] .browser-status { border-color: #a9edcf; }
+
+@media (max-width: 640px) {
+  body.wwb-host-page[data-wwb-console-ui] .host-folder-heading { padding: 14px !important; }
+  [data-wwb-console-ui] .wwb-console-links { gap: 4px; }
+  [data-wwb-console-ui] .wwb-console-links a { padding-right: 10px; padding-left: 10px; }
+  [data-wwb-console-ui] .console-visual { max-height: none; }
+}

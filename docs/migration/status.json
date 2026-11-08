@@ -1784,5 +1784,37 @@
     "nativeFilesChanged": 0,
     "downloadFilesChanged": 0,
     "physicalConsoleTested": false
+  },
+  "consoleRedesign20261108": {
+    "date": "2026-11-08",
+    "status": "Implemented and verified in local Pages build; physical console tests pending",
+    "publicRoutes": [
+      "/ps4/14.00/",
+      "/hosts/ps4/downloads/",
+      "/hosts/ps5/downloads/",
+      "/hosts/ps4/packages/",
+      "/hosts/ps5/packages/"
+    ],
+    "changes": [
+      "Shared console layout with directional focus, library search, visible firmware settings, diagnostics and a session log",
+      "PS4 WebKit flow exposes only exact 14.00, shows actual cache events, and reveals the preserved runtime log",
+      "Browser download and console save are separate actions. Restored 135 missing download paths with pinned aliases",
+      "PS5 ELF navigation is available in the selected payload panel when HTTPS blocks a direct request",
+      "Game patch Load can be used again after returning from the installed patch engine on supported firmware",
+      "Package libraries hand off to the existing installed receiver and require explicit compatible native installer use"
+    ],
+    "validation": {
+      "pagesVerifiersPassed": 5,
+      "publishedAliasesVerified": 8783,
+      "nativeScriptsByteIdentical": 959,
+      "downloadBytesChanged": 0,
+      "physicalConsoleTested": false
+    },
+    "hardwareChecksRemaining": [
+      "PS4 14.00 cache and loader handoff on the actual console",
+      "BIN and ELF transfers through their required running console services",
+      "Receiver save and explicit PKG installation on supported setups"
+    ],
+    "patchEngineLimit": "Pinned upstream PS4 support ends at 12.52. The PS4 14.00 game-patch dialog keeps the exact XML download available."
   }
 }

@@ -274,18 +274,29 @@
         return result('connected', 'goldhen-ready', 'GoldHEN HTTP loader is ready.', {address: address});
       }).catch(function (e) { return failed(e); });
   }
+  // Production Pages may serve a pinned repository URL for an offloaded file.
+  // Arbitrary external URLs and moving branches are not payload sources.
+  function payloadFileURL(value, extension) {
+    var url = String(value || '');
+    var alias = /^https:\/\/raw\.githubusercontent\.com\/Speedy-away\/(?:speedy-away\.github\.io|whatsite)\/[a-f0-9]{40}(\/downloads\/[^?#]+)$/i.exec(url);
+    var decoded = decodeURIComponent(alias ? alias[1] : url);
+    if (decoded.length > 2048 || decoded.indexOf('/downloads/') !== 0 ||
+        decoded.slice(-extension.length).toLowerCase() !== extension || /[%?#\\\x00-\x1f\x7f]/.test(decoded) ||
+        decoded.split('/').some(function (part) { return part === '.' || part === '..'; }))
+      throw fault('invalid-download', 'Choose a verified payload from the site download library.');
+    return {url: url, offloaded: Boolean(alias)};
+  }
   function sendGoldHEN(address, action, options) {
     var url, sha;
     try {
       address = normalizeAddress(address);
       if (!action || String(action.format).toUpperCase() !== 'BIN' || !/^[a-f0-9]{64}$/i.test(action.sha256 || '')) throw fault('invalid-action', 'Choose a verified BIN payload from the host catalogue.');
-      url = String(action.downloadURL || ''); sha = action.sha256.toLowerCase();
-      var decoded = decodeURIComponent(url);
-      if (decoded.length > 2048 || !/^\/downloads\/.+\.bin$/i.test(decoded) || /[%?#\\\x00-\x20]/.test(decoded) || decoded.split('/').some(function (p) { return p === '.' || p === '..'; })) throw fault('invalid-download', 'Run requires a ready-to-use BIN hosted in this site download library.');
+      url = payloadFileURL(action.downloadURL, '.bin');
+      sha = action.sha256.toLowerCase();
     } catch (e) { return Promise.resolve(failed(e)); }
     return inspectGoldHEN(address, options).then(function (state) {
       if (state.status !== 'connected') return state;
-      return request(url, {method: 'GET', mode: 'same-origin', credentials: 'same-origin', cache: 'no-store', redirect: 'error'}, options).then(function (r) { return readResponseBody(r,'arrayBuffer',options); }).then(function (bytes) {
+      return request(url.url, {method: 'GET', mode: url.offloaded ? 'cors' : 'same-origin', credentials: 'omit', cache: 'no-store', redirect: 'error'}, options).then(function (r) { return readResponseBody(r,'arrayBuffer',options); }).then(function (bytes) {
         if (!bytes.byteLength || bytes.byteLength > 32 * 1024 * 1024) throw fault('invalid-payload', 'The payload file size is invalid.');
         return digestSHA256(bytes, options).then(function (hex) {
           if (hex !== sha) throw fault('checksum-mismatch', 'The payload checksum does not match the catalogue. Nothing was sent.');
@@ -311,12 +322,10 @@
   function elfLaunchURL(address, action, options) {
     address = normalizeAddress(address);
     if (!action || String(action.format).toUpperCase() !== 'ELF' || !/^[a-f0-9]{64}$/i.test(action.sha256 || '')) throw fault('invalid-action','Choose an ELF from the verified host catalogue.');
-    var download = String(action.downloadURL || ''), decoded;
-    try { decoded = decodeURIComponent(download); } catch (_) { throw fault('invalid-download','The ELF download path is invalid.'); }
-    if (decoded.length > 2048 || !/^\/downloads\/.+\.elf$/i.test(decoded) || /[%?#\\\x00-\x20]/.test(decoded) || decoded.split('/').some(function (p) { return p === '.' || p === '..'; })) throw fault('invalid-download','Native ELF launch requires a ready-to-use ELF in the site download library.');
+    var download = payloadFileURL(action.downloadURL, '.elf');
     // Use the actual file host, not the canonical domain: a local new build may
     // not be published there yet, and desktop loopback is unreachable by a PS5.
-    return 'http://' + address + ':9021/?uri=' + encodeURIComponent(payloadOrigin(options) + download);
+    return 'http://' + address + ':9021/?uri=' + encodeURIComponent(download.offloaded ? download.url : payloadOrigin(options) + download.url);
   }
   function sendPS5ELF(address, action, options) {
     var url;

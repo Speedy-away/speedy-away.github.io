@@ -1,0 +1,158 @@
+.host-download-desk {
+  width: 92%;
+  max-width: 72rem;
+  margin: 2rem auto 4rem;
+}
+
+.host-download-desk h1,
+.host-download-desk h2,
+.host-download-desk h3 {
+  line-height: 1.2;
+}
+
+.host-download-desk p {
+  max-width: 72ch;
+}
+
+.host-download-lead {
+  margin-bottom: 1.5rem;
+}
+
+.host-download-setup,
+.host-download-toolbar,
+.host-download-item {
+  padding: 1rem 1.25rem;
+  margin: 0 0 .75rem;
+  border: 1px solid #41516a;
+  border-radius: .75rem;
+  background: #121c2c;
+  color: #edf3ff;
+}
+
+.host-download-setup {
+  margin: 1.5rem 0;
+}
+
+.host-download-setup li {
+  padding: .4rem 0;
+}
+
+.host-download-desk code {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #bdd6ff;
+}
+
+.host-download-item-head {
+  display: flex;
+  align-items: baseline;
+}
+
+.host-download-item h3 {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.host-download-format {
+  min-width: 3.2rem;
+  margin-right: .65rem;
+  color: #9dcbff;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.host-download-meta {
+  color: #b6c9e5;
+}
+
+.host-download-controls,
+.host-download-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.host-download-desk .host-download-controls a,
+.host-download-desk button {
+  display: inline-block;
+  margin: .25rem .5rem .25rem 0;
+  padding: .65rem .95rem;
+  min-height: 44px;
+  border: 1px solid #7296c4;
+  border-radius: .35rem;
+  color: #f4f8ff;
+  background: #20324d;
+  text-decoration: none;
+  font: inherit;
+}
+
+.host-download-desk .host-download-controls .host-download-primary {
+  background: #8fbdff;
+  color: #0e2037;
+  border-color: #8fbdff;
+  font-weight: 700;
+}
+
+.host-download-fields label,
+.host-download-connection label {
+  display: block;
+  margin: 0 1rem .5rem 0;
+}
+
+.host-download-fields input,
+.host-download-fields select,
+.host-download-connection input {
+  display: block;
+  min-height: 44px;
+  max-width: 100%;
+  margin: .25rem 0;
+  padding: .5rem .75rem;
+  border: 1px solid #7296c4;
+  border-radius: .35rem;
+  background: #0a1425;
+  color: #f4f8ff;
+  font: inherit;
+}
+
+.host-download-connection {
+  margin-top: .6rem;
+}
+
+.host-download-connection summary,
+.host-download-setup summary,
+.host-download-item summary {
+  min-height: 44px;
+  cursor: pointer;
+  padding-top: .6rem;
+}
+
+.host-download-item code {
+  display: block;
+  margin-bottom: .35rem;
+}
+
+.host-download-desk button[hidden] {
+  display: none;
+}
+
+.host-download-desk a:focus,
+.host-download-desk input:focus,
+.host-download-desk select:focus,
+.host-download-desk summary:focus,
+.host-download-desk button:focus {
+  outline: 3px solid #a7d7ff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 40rem) {
+  .host-download-desk {
+    width: 94%;
+  }
+  .host-download-toolbar,
+  .host-download-item,
+  .host-download-setup {
+    padding: .75rem;
+  }
+}

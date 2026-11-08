@@ -23,6 +23,7 @@ function resolveTarget(location,config){
  }
  // Keep existing immutable downloads on their exact preserved release/revision.
  if(/^https:\/\/raw\.githubusercontent\.com\/Speedy-away\/(?:speedy-away\.github\.io|WWB-HOST|wwb-host|whatsite)\//.test(target)||/^https:\/\/github\.com\/Speedy-away\/(?:speedy-away\.github\.io|WWB-HOST|wwb-host)\/releases\/download\//.test(target))return target;
+ if(/^https:\/\/raw\.githubusercontent\.com\/etaHEN\/PS5_Cheats\/ef295511ea4252474b16325618ffaafd3afb3cbb\/shn\/PPSA\d{5}_[\d.]+\.shn$/.test(target))return target;
  return null;
 }
 function originURL(origin){if(origin!=='https://speedy-away.github.io')throw Error('Unknown host origin');return origin+'/';}

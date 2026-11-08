@@ -24,7 +24,7 @@ function fixture({platform='ps4',firmware='9.00',userAgent=ua(platform,firmware)
  nodes['host-patches-data'].textContent=JSON.stringify({platform,games:[game]});nodes['host-patch-overlay'].hidden=true;nodes['host-patch-overlay'].appendChild(nodes['host-patch-close']);nodes['host-patch-overlay'].appendChild(nodes['host-patch-detail']);
  doc={visibilityState:'visible',wasDiscarded:false,activeElement:null,body:{style:{overflow:''}},getElementById:id=>nodes[id],events:{},addEventListener(k,f){this.events[k]=f;}};
  const refuse=(kind)=>{requests.push(kind);throw Error('Unexpected '+kind+' during patch browsing');};
- const win={navigator:{userAgent},fetch(){return refuse('fetch');},XMLHttpRequest(){return refuse('XHR');},setTimeout(fn){timers.push(fn);return timers.length;},clearTimeout(id){timers[id-1]=null;},get localStorage(){return refuse('storage');},get sessionStorage(){return refuse('session storage');},location:{}};
+ const win={navigator:{userAgent},fetch(){return refuse('fetch');},XMLHttpRequest(){return refuse('XHR');},setTimeout(fn){timers.push(fn);return timers.length;},clearTimeout(id){timers[id-1]=null;},get localStorage(){return refuse('storage');},get sessionStorage(){return refuse('session storage');},location:{},events:{},addEventListener(k,f){this.events[k]=f;}};
  win.top=win.self=win;Object.defineProperty(win.location,'href',{set(value){navigations.push(value);if(navigationError)throw Error('Navigation blocked');}});
  ui.install(win,doc);
  const panel=nodes['host-patch-detail'];
@@ -101,6 +101,26 @@ test('reopening a game after handoff or blocked navigation keeps Load locked and
   const reopened=f.panel.querySelector('[data-patch-load]');assert.notEqual(reopened,firstButton);assert.equal(reopened.disabled,true);assert.equal(reopened.getAttribute('aria-disabled'),'true');assert.ok(f.panel.innerHTML.includes(message));
   const download=f.panel.querySelector('[data-patch-download]');assert.equal(download.getAttribute('href'),f.game.files[0].url);f.load();f.panel.events.click({target:download,isTrusted:true});assert.equal(f.navigations.length,1);assert.deepEqual(f.requests,[]);
  }
+});
+
+test('returning from the native patch engine restores Load for the selected title without sending another request',()=>{
+ const f=fixture();f.open();f.select('CUSA03041');f.load();
+ f.win.events.pageshow({persisted:false});
+ assert.equal(f.panel.querySelector('[data-patch-load]').disabled,true);
+ f.win.events.pageshow({persisted:true});
+ assert.equal(f.panel.querySelector('[data-patch-load]').disabled,false);
+ assert.match(f.panel.innerHTML,/<option value="CUSA03041" selected>/);
+ assert.equal(f.doc.activeElement,f.nodes['host-patch-close']);
+ assert.equal(f.navigations.length,1);assert.deepEqual(f.requests,[]);
+ f.load();assert.deepEqual(f.navigations,[f.navigations[0],f.navigations[0]]);
+});
+
+test('14.00 shows the patch-engine compatibility limit and keeps the exact RDR2 XML available',()=>{
+ const f=fixture({firmware:'14.00'});f.open();f.select('CUSA03041');
+ assert.match(f.panel.innerHTML,/PS4 14\.00 detected\. PS Patch System supports PS4 9\.00–12\.52/);
+ assert.match(f.panel.innerHTML,/\/data\/user\/patches\/xml_orbis\/CUSA03041\.xml/);
+ assert.equal(f.panel.querySelector('[data-patch-load]').disabled,true);
+ assert.equal(f.panel.querySelector('[data-patch-download]').getAttribute('href'),f.game.files[1].url);
 });
 
 test('modal keyboard loop excludes collapsed detail links even when the browser reports their rectangles',()=>{

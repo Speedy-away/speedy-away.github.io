@@ -4,12 +4,14 @@
  var SUPPORT={ps4:{min:900,max:1252,label:'9.00\u201312.52'},ps5:{min:300,max:1270,label:'3.00\u201312.70'}};
  function escape(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
  function availability(platform,ua){
-  var range=SUPPORT[platform],match=/PlayStation\s*(4|5)[ /]+(\d+)\.(\d+)/i.exec(String(ua||''));
+  var range=SUPPORT[platform],match=/PlayStation\s*(4|5)\b(?:[ /]+(\d+)\.(\d+)(?![\d.]))?/i.exec(String(ua||''));
   if(!range)return {available:false,reason:'Choose a supported console.'};
-  if(!match||'ps'+match[1]!==platform)return {available:false,reason:'Open this page on '+platform.toUpperCase()+' to Load.'};
+  var consoleName=platform.toUpperCase();
+  if(!match||'ps'+match[1]!==platform)return {available:false,reason:'Open this page in the '+consoleName+' browser to use Load. PS Patch System supports '+consoleName+' '+range.label+'.'};
+  if(!match[2])return {available:false,reason:'This browser did not report its firmware. Load requires a detected '+consoleName+' firmware within '+range.label+'.'};
   var firmware=Number(match[2])*100+Number((match[3]+'0').slice(0,2));
-  if(firmware<range.min||firmware>range.max)return {available:false,reason:'Load supports '+platform.toUpperCase()+' '+range.label+'. Download is available.'};
-  return {available:true,reason:'Load opens this title in the patch engine already installed on this console.'};
+  if(firmware<range.min||firmware>range.max)return {available:false,reason:consoleName+' '+match[2]+'.'+match[3]+' detected. PS Patch System supports '+consoleName+' '+range.label+'. Use Download to get the selected XML.'};
+  return {available:true,reason:'Start PS Patch System and add the selected XML on this console before choosing Load.'};
  }
  function nativeURL(platform,titleId,ua){
   var state=availability(platform,ua);if(!state.available)throw Error(state.reason);
@@ -25,7 +27,26 @@
  function detail(g,context){
   context=context||{};var platform=g.platform||context.platform,state=availability(platform,context.userAgent),files=g.files||[],chosen=files.filter(function(f){return f.titleId===context.titleId;})[0]||files[0],url=fileURL(chosen);
   var selectedOptions=chosen&&chosen.options||g.options||[],options=selectedOptions.filter(function(o){return !o.titleIds||!chosen||o.titleIds.indexOf(chosen.titleId)>=0;}).map(function(o){return '<li><strong>'+escape(o.name)+'</strong><span>Game '+escape(o.gameVersion==='mask'?'Pattern matched (no exact update pin)':o.gameVersion||'Update not provided')+' \u00b7 '+escape(o.patchVersion?'Patch '+o.patchVersion:'Patch version not provided')+' \u00b7 '+escape(o.author||'Author not provided')+(o.appElf?' \u00b7 '+escape(o.appElf):'')+'</span>'+(o.note?'<p>'+escape(o.note)+'</p>':'')+'</li>';}).join('');
-  return '<p class="host-patch-edition">'+escape(g.edition)+'</p><label class="host-patch-title-picker">Title ID<select data-patch-title aria-label="Title ID">'+files.map(function(f){return '<option value="'+escape(f.titleId)+'"'+(chosen===f?' selected':'')+'>'+escape(f.titleId)+'</option>';}).join('')+'</select></label><div class="host-patch-primary-actions"><button type="button" data-patch-load'+(!state.available||!url||context.locked?' disabled aria-disabled="true"':'')+'>Load</button>'+(url?'<a data-patch-download href="'+escape(url)+'" download="'+escape(chosen.titleId)+'.xml">Download</a>':'<span aria-disabled="true">Download unavailable</span>')+'</div><p class="host-patch-action-status" data-patch-status role="status">'+escape(context.locked?context.message||'A Load request is already open. Reload this page to start another.':state.reason)+'</p><details class="host-patch-information"><summary>Patch details</summary><ul class="host-patch-options">'+options+'</ul>'+(g.id==='red-dead-redemption-2'?'<p>The 01.29 and 01.32 options unlock the FPS cap. The separate 01.32 120fps option requests VideoOut 120Hz; it does not guarantee stable 120 FPS.</p>':'')+'<p><a target="_blank" rel="noopener noreferrer" href="'+escape(chosen&&chosen.source||g.source)+'">Source</a></p></details>';
+  var message=state.reason;
+  if(!url)message='The selected title has no downloadable XML.';
+  if(context.locked)message=context.message||'A Load request is already open. Reload this page to start another.';
+  var titlePicker=files.map(function(file){
+   return '<option value="'+escape(file.titleId)+'"'+(chosen===file?' selected':'')+'>'+escape(file.titleId)+'</option>';
+  }).join('');
+  var setup='';
+  if(url){
+   var directory=chosen.titleId.slice(0,4)==='PPSA'?'xml_prospero':'xml_orbis';
+   var destination='/data/user/patches/'+directory+'/'+chosen.titleId+'.xml';
+   setup='<p>Download the XML and match the title ID and installed game update. On a supported console running PS Patch System, place it at <code>'+escape(destination)+'</code> before choosing Load.</p>';
+  }
+  return '<p class="host-patch-edition">'+escape(g.edition)+'</p>'+
+   '<label class="host-patch-title-picker">Title ID<select data-patch-title aria-label="Title ID">'+titlePicker+'</select></label>'+
+   '<div class="host-patch-primary-actions"><button type="button" data-patch-load'+(!state.available||!url||context.locked?' disabled aria-disabled="true"':'')+'>Load</button>'+
+   (url?'<a data-patch-download href="'+escape(url)+'" download="'+escape(chosen.titleId)+'.xml">Download</a>':'<span aria-disabled="true">Download unavailable</span>')+'</div>'+
+   '<p class="host-patch-action-status" data-patch-status role="status">'+escape(message)+'</p>'+
+   '<details class="host-patch-information"><summary>Patch details</summary>'+setup+'<ul class="host-patch-options">'+options+'</ul>'+
+   (g.id==='red-dead-redemption-2'?'<p>The 01.29 and 01.32 options unlock the FPS cap. The separate 01.32 120fps option requests VideoOut 120Hz; it does not guarantee stable 120 FPS.</p>':'')+
+   '<p><a target="_blank" rel="noopener noreferrer" href="'+escape(chosen&&chosen.source||g.source)+'">Source</a></p></details>';
  }
  function searchText(g){return [g.title,g.id,g.updates.join(' '),g.files.map(function(f){return f.titleId;}).join(' '),(g.options||[]).map(function(o){return [o.name,o.author,o.note].join(' ');}).join(' ')].join(' ').toLowerCase();}
  function updateSummary(g){var updates=g.updates||[],shown=updates.slice(0,3).map(function(v){return v==='mask'?'Pattern matched \u00b7 see source':v;}).join(' \u00b7 ');return shown+(updates.length>3?' \u00b7 +'+(updates.length-3)+' updates':'');}
@@ -35,6 +56,15 @@
   var games=data.games,grid=d.getElementById('host-patch-grid'),search=d.getElementById('host-patch-search'),more=d.getElementById('host-patch-more'),overlay=d.getElementById('host-patch-overlay'),close=d.getElementById('host-patch-close'),panel=d.getElementById('host-patch-detail'),prior=null,active=null,titleId='',opening=false,loadMessage='',consoleBrowser=/PlayStation [45]/i.test(w.navigator.userAgent),pageSize=consoleBrowser?18:36,visible=pageSize,lastQuery=null,painted=0,searchTimer=null,lastCount=null,index=games.map(function(g){return{game:g,text:searchText(g)};});
   function render(){var q=String(search.value||'').toLowerCase().trim(),list=index.filter(function(row){return !q||row.text.indexOf(q)>=0;}).map(function(row){return row.game;});if(q!==lastQuery||visible<painted){grid.innerHTML='';painted=0;lastQuery=q;}var markup=list.slice(painted,visible).map(function(g){return '<button type="button" class="host-patch-tile" data-game="'+escape(g.id)+'">'+(consoleBrowser?'':'<span class="host-patch-art"><img src="'+escape(g.image)+'" loading="lazy" decoding="async" width="960" height="540" alt=""></span>')+'<strong>'+escape(g.title)+'</strong><span>'+escape(updateSummary(g))+'</span></button>';}).join('');if(markup){if(grid.insertAdjacentHTML)grid.insertAdjacentHTML('beforeend',markup);else grid.innerHTML+=markup;}painted=Math.min(visible,list.length);more.hidden=visible>=list.length;if(lastCount!==list.length){d.getElementById('host-patch-count').textContent=list.length+' games';lastCount=list.length;}}
   function renderDetail(){panel.innerHTML=detail(active,{platform:data.platform,userAgent:w.navigator.userAgent,titleId:titleId,locked:opening,message:loadMessage});}
+  if(w.addEventListener)w.addEventListener('pageshow',function(event){
+   if(!event.persisted||!opening)return;
+   opening=false;
+   loadMessage='';
+   if(!overlay.hidden&&active){
+    renderDetail();
+    close.focus();
+   }
+  });
   function shut(){overlay.hidden=true;d.body.style.overflow='';if(prior)prior.focus();}
   grid.addEventListener('click',function(e){var n=e.target;while(n&&n!==grid&&!n.hasAttribute('data-game'))n=n.parentNode;if(!n||n===grid)return;var g=games.filter(function(g){return g.id===n.getAttribute('data-game');})[0];if(!g)return;prior=n;active=g;titleId=g.files[0]&&g.files[0].titleId;d.getElementById('host-patch-title').textContent=g.title;renderDetail();overlay.hidden=false;d.body.style.overflow='hidden';close.focus();});
   panel.addEventListener('change',function(e){if(opening||!active||!e.target.hasAttribute('data-patch-title'))return;var selected=active.files.filter(function(f){return f.titleId===e.target.value;})[0];if(!selected)return;titleId=selected.titleId;renderDetail();var picker=panel.querySelector('[data-patch-title]');if(picker)picker.focus();});

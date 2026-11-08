@@ -1,6 +1,137 @@
 'use strict';
-const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const root=path.resolve(__dirname,'../..'),routes=[['ps4/14.00','/hosts/ps4/exploit/gamerhack-g2all/'],['ps4/afterglow','/hosts/ps4/afterglow/'],['ps4/gamer','/hosts/ps4/exploit/gamerhack-g2all/'],['ps5/7.61','/hosts/ps5/?view=loaders&firmware=7.61'],['ps5/relapse','/hosts/ps5/?view=loaders']];
-test('short WWB host routes are loading pages with pinned same-site targets',()=>{for(const pair of routes){const html=fs.readFileSync(path.join(root,pair[0],'index.html'),'utf8');assert.match(html,/wwb-short-loader/);assert.ok(html.includes('data-target="'+pair[1]+'"'));assert.match(html,/host-short-loader\.css/);}});
-test('short loader script validates same-site route targets',()=>{const js=fs.readFileSync(path.join(root,'assets/host-short-loader.js'),'utf8');assert.match(js,/hosts\|ps\[45\]/);});
-test('curated downloads without a console queue id remain downloadable on the device',()=>{const dash=require('../../assets/host-dashboard.js');const action={platform:'ps4',downloadURL:'/downloads/test/menu.bin'};assert.deepEqual(dash.downloadPlan(action,'ps4','',{platform:'ps4',firmware:'14.00'},x=>x),{destination:'device',address:'',url:action.downloadURL});});
+
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const shortLoader = require('../../assets/host-short-loader.js');
+const siteLoad = require('../../assets/host-site-load.js');
+const guard = require('../../assets/host-karo-builds.js');
+const compact = require('../host-compact-pages.cjs');
+const offline = require('../host-offline-pack.cjs');
+const { hostActions } = require('../build-host-selector.cjs');
+
+const root = path.resolve(__dirname, '../..');
+const read = file => fs.readFileSync(path.join(root, file), 'utf8');
+const route = 'ps4/14.00/index.html';
+const page = read(route);
+const config = page.match(/id="wwb-short-data"[^>]*>([^<]+)</)[1];
+
+test('the public PS4 loader points to one exact firmware and the offline manifest covers its short page', () => {
+  const source = hostActions('ps4');
+  const published = compact.publicPS4Actions(source);
+  const launchers = published.filter(action => action.category === 'loaders');
+  const original = source.find(action => action.id === launchers[0].id);
+  const pinned = JSON.parse(config);
+  assert.equal(launchers.length, 1);
+  assert.equal(launchers[0].entryURL, '/ps4/14.00/');
+  assert.deepEqual(launchers[0].firmwares, ['14.00']);
+  assert.equal(pinned.nativeRoute.runtime, original.nativeRoute.runtime);
+  assert.equal(pinned.nativeRoute.entry.path, original.nativeRoute.entry.path);
+  const isUnchanged = action => action.category !== 'loaders' && action.id !== 'ps4-goldhen-user-supplied';
+  assert.deepEqual(published.filter(isUnchanged), source.filter(isUnchanged));
+  const historical = source.find(action => action.id === 'ps4-goldhen-user-supplied');
+  const download = published.find(action => action.id === historical.id);
+  for (const key of ['downloadURL', 'bytes', 'sha256', 'firmwares', 'source', 'instructionsURL']) {
+    assert.deepEqual(download[key], historical[key], key);
+  }
+  assert.equal(download.nativeRoute, undefined);
+  assert.equal(download.launchURL, undefined);
+  assert.match(offline.decorate(page, route, []), /manifest="\/offline\/ps4\.manifest"/);
+  for (const alias of ['afterglow', 'gamer']) {
+    const bookmark = read('ps4/' + alias + '/index.html');
+    assert.match(bookmark, /href="\/ps4\/14\.00\/"/);
+    assert.doesNotMatch(bookmark, /href="\/hosts\/ps4\/(?:afterglow|exploit)\//);
+  }
+});
+
+function fixture(ua) {
+  function target(properties = {}) {
+    return Object.assign({
+      listeners: {},
+      childNodes: [],
+      checked: false,
+      textContent: '',
+      addEventListener(name, listener) { this.listeners[name] = listener; },
+      fire(name, event) { if (this.listeners[name]) this.listeners[name](event); },
+      appendChild(node) { this.childNodes.push(node); },
+      setAttribute() {},
+      removeAttribute() {}
+    }, properties);
+  }
+  const storage = () => {
+    const data = new Map();
+    return { getItem: key => data.get(key) ?? null, setItem: (key, value) => data.set(key, value), removeItem: key => data.delete(key) };
+  };
+  const nodes = Object.fromEntries(['status', 'log', 'load', 'cache', 'progress', 'recovery', 'restarted', 'clear'].map(key => [key, target()]));
+  nodes.load.disabled = true;
+  nodes.data = { textContent: config };
+  const doc = { visibilityState: 'visible', getElementById: id => nodes[id.replace('wwb-short-', '')], createElement: () => target() };
+  const cache = target({ status: 0 });
+  const win = target({
+    document: doc,
+    navigator: { userAgent: ua },
+    location: new URL('https://host.test/ps4/14.00/'),
+    localStorage: storage(),
+    sessionStorage: storage(),
+    HostSiteLoad: siteLoad,
+    WhatsiteKaro: guard,
+    applicationCache: cache
+  });
+  const logs = () => nodes.log.childNodes.map(node => node.textContent).join('\n');
+  return { win, doc, nodes, cache, logs };
+}
+
+test('14.00 shows real cache events and issues a single trusted handoff only after cache readiness', () => {
+  for (const ua of ['Desktop', 'PlayStation 4/13.52', 'PlayStation 5/14.00']) {
+    const { win, doc, nodes } = fixture(ua);
+    shortLoader.install(win, doc);
+    assert.equal(nodes.load.disabled, true);
+    assert.match(nodes.status.textContent, /PS4 browser on firmware 14\.00/);
+    assert.equal(win.sessionStorage.getItem(guard.TICKET), null);
+  }
+  const { win, doc, nodes, cache, logs } = fixture('PlayStation 4/14.00');
+  shortLoader.install(win, doc);
+  assert.equal(nodes.load.disabled, true);
+  cache.status = 3;
+  cache.fire('downloading');
+  cache.fire('progress', { loaded: 3, total: 10 });
+  assert.equal(nodes.progress.value, 3);
+  assert.match(logs(), /Saved 3 of 10 cache files/);
+  nodes.load.fire('click', { isTrusted: true });
+  assert.equal(win.sessionStorage.getItem(guard.TICKET), null);
+  cache.status = 1;
+  cache.fire('cached');
+  assert.equal(nodes.load.disabled, false);
+  nodes.load.fire('click', { isTrusted: false });
+  assert.equal(win.sessionStorage.getItem(guard.TICKET), null);
+  nodes.load.fire('click', { isTrusted: true });
+  assert.match(win.location.pathname, /\/g2all\/index\.html$/);
+  const ticket = win.sessionStorage.getItem(guard.TICKET);
+  assert.equal(JSON.parse(ticket).firmware, '14.00');
+  assert.match(logs(), /Opening the 14\.00 loader/);
+  nodes.load.fire('click', { isTrusted: true });
+  assert.equal(win.sessionStorage.getItem(guard.TICKET), ticket);
+});
+
+test('an existing native lock exposes explicit recovery and permits a new handoff only after clearing', () => {
+  const { win, doc, nodes, cache } = fixture('PlayStation 4/14.00');
+  win.localStorage.setItem(guard.LOCK, '{}');
+  cache.status = 1;
+  shortLoader.install(win, doc);
+  assert.equal(nodes.recovery.hidden, false);
+  assert.equal(nodes.load.disabled, true);
+  nodes.clear.fire('click');
+  assert.equal(win.localStorage.getItem(guard.LOCK), '{}');
+  nodes.restarted.checked = true;
+  nodes.restarted.fire('change');
+  nodes.clear.fire('click');
+  assert.equal(win.localStorage.getItem(guard.LOCK), null);
+  assert.equal(nodes.load.disabled, false);
+});
+
+test('curated downloads without a console queue id remain downloadable on the device', () => {
+  const dash = require('../../assets/host-dashboard.js');
+  const action = { platform: 'ps4', downloadURL: '/downloads/test/menu.bin' };
+  assert.deepEqual(dash.downloadPlan(action, 'ps4', '', { platform: 'ps4', firmware: '14.00' }, x => x), { destination: 'device', address: '', url: action.downloadURL });
+});

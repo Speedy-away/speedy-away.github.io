@@ -99,6 +99,26 @@ test('GoldHEN busy, mixed-content and bad checksum never POST payload bytes, wit
   assert.equal((await client.inspectGoldHEN('127.0.0.1',{origin:'http://host',fetch:async(url,init)=>{assert.equal(init.method,'POST');return response({status:'busy'});}})).code,'loader-busy');
   assert.equal(sent,0);
 });
+test('offloaded payloads use only pinned repository URLs and keep BIN verification', async () => {
+  const source = 'https://raw.githubusercontent.com/Speedy-away/whatsite/' + 'a'.repeat(40) + '/downloads/fixture/';
+  const bytes = Buffer.from([9, 1, 4]);
+  const action = {format:'BIN', downloadURL:source+'menu.bin', sha256:createHash('sha256').update(bytes).digest('hex')};
+  const fetched = [];
+  const options = {origin:'http://host', crypto:webcrypto, fetch:async (url, init) => {
+    fetched.push([url, init]);
+    if (url.endsWith('/status')) return response({status:'ready'});
+    if (url === action.downloadURL) return response(bytes);
+    return response('OK');
+  }};
+  assert.equal((await client.sendGoldHEN('192.168.1.50',action,options)).status,'accepted');
+  assert.equal(fetched[1][0],action.downloadURL);
+  assert.equal(fetched[1][1].mode,'cors');
+  assert.deepEqual(Buffer.from(fetched[2][1].body),bytes);
+  const elf = {...action, format:'ELF', downloadURL:source+'tool.elf'};
+  const url = new URL(client.elfLaunchURL('127.0.0.1',elf,{origin:'https://speedy-away.github.io'}));
+  assert.equal(url.searchParams.get('uri'),elf.downloadURL);
+  assert.throws(() => client.elfLaunchURL('127.0.0.1',{...elf,downloadURL:elf.downloadURL.replace('a'.repeat(40),'main')}));
+});
 test('the SHA-256 console fallback matches standard hashes, padding boundaries and changed bytes',()=>{
   const inputs = [Buffer.alloc(0),Buffer.from('abc'),Buffer.from('abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq'),Buffer.alloc(55,0x7e),Buffer.alloc(56,0x7e),Buffer.alloc(63,0x7e),Buffer.alloc(64,0x7e),Buffer.alloc(65,0x7e),Buffer.alloc(1000000,0x61)];
   for (const bytes of inputs) assert.equal(client.sha256(bytes),createHash('sha256').update(bytes).digest('hex'));

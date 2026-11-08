@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261104ps4fast1';
+const ASSET_VERSION='20261108console1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('.')?[]:e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 function cacheResources(root,names){const resources=new Set();for(const name of names.filter(p=>/^hosts\/runtime\/.+\.(?:manifest|appcache|cache)$/i.test(p))){if(!fs.existsSync(path.join(root,name)))continue;let section='CACHE';for(let line of fs.readFileSync(path.join(root,name),'utf8').split(/\r?\n/)){line=line.trim();if(!line||line.startsWith('#')||line==='CACHE MANIFEST')continue;if(/^[A-Z]+:$/.test(line)){section=line.slice(0,-1);continue;}if(section!=='CACHE')continue;try{const url=new URL(line,'https://host.invalid/'+name);if(url.origin==='https://host.invalid')resources.add(decodeURIComponent(url.pathname.slice(1)));}catch{}}}return resources;}
@@ -29,9 +29,23 @@ function runtimeConfigHTML(html){
 }
 function build(output,revision='main',root=ROOT){
  assert.ok(output&&!fs.existsSync(output),'Use a fresh build directory');assert.match(revision,/^(?:main|[a-f0-9]{40})$/);const karo=JSON.parse(fs.readFileSync(path.join(root,'docs/host-reviews/karo/build.json'))),activeKaro=karo.runtime.replace(/^\//,'').replace(/web\/$/,''),all=walk(root).map(f=>slash(path.relative(root,f))).filter(p=>!/^tmp\/|^scripts\/|^i18n-tools\//.test(p));
- const selected=all.filter(p=>!/^docs\/.*-private-inventory\.json$/i.test(p)&&!/^docs\/(?:host-goldhen-current-private-inventory|host-compact-download-inventory|host-game-patch-file-import)\.json$/i.test(p)&&!/^docs\/(?:migration|qa|screenshots|host-reviews\/.*(?:retained|full-tests|.*log))/i.test(p)&&!/^AGENTS\.md$|^README\.md$|^SYNC|^sync\./i.test(p)&&(!/^hosts\/runtime\/karo-/.test(p)||p.startsWith(activeKaro))&&!/^hosts\/runtime\/.*\/upstream\//.test(p));
+ const selected=all.filter(p=>!/^docs\/.*-private-inventory\.json$/i.test(p)&&!/^docs\/(?:host-goldhen-current-private-inventory|host-compact-download-inventory|host-game-patch-file-import|host-retained-download-aliases)\.json$/i.test(p)&&!/^docs\/(?:migration|qa|screenshots|host-reviews\/.*(?:retained|full-tests|.*log))/i.test(p)&&!/^AGENTS\.md$|^README\.md$|^SYNC|^sync\./i.test(p)&&(!/^hosts\/runtime\/karo-/.test(p)||p.startsWith(activeKaro))&&!/^hosts\/runtime\/.*\/upstream\//.test(p));
  const offline=fs.existsSync(path.join(root,'assets/host-offline.js'))?require('./host-offline-pack.cjs'):null,offlineGroups=offline?offline.scopes(root):[];
  const excluded=new Set(all.filter(p=>!selected.includes(p))),mapping={};let files=selected.map(name=>({name,bytes:fs.statSync(path.join(root,name)).size}));let bytes=files.reduce((n,f)=>n+f.bytes,0);
+ const retainedManifest=path.join(root,'docs/host-retained-download-aliases.json');
+ if(fs.existsSync(retainedManifest)){
+  const retained=JSON.parse(fs.readFileSync(retainedManifest,'utf8'));
+  assert.match(retained.sourceRevision,/^[a-f0-9]{40}$/);
+  for(const [file,url] of Object.entries(retained.aliases)){
+   assert.ok(file.startsWith('/downloads/')&&!file.split('/').some(part=>part==='.'||part==='..'),'Invalid retained download path');
+   const rawPath=file.split('/').map(encodeURIComponent).join('/');
+   const retainedURL='https://raw.githubusercontent.com/Speedy-away/whatsite/'+retained.sourceRevision+rawPath;
+   const cheatName=path.posix.basename(file);
+   const originalCheat=/^PPSA\d{5}_[\d.]+\.shn$/.test(cheatName)&&url==='https://raw.githubusercontent.com/etaHEN/PS5_Cheats/ef295511ea4252474b16325618ffaafd3afb3cbb/shn/'+cheatName;
+   assert.ok(url===retainedURL||originalCheat,'Invalid retained download source');
+   if(!fs.existsSync(path.join(root,file)))mapping[file]=url;
+  }
+ }
  const senderManifest=path.join(root,'downloads/helpers/console-payload-sender/manifest.json');
  if(fs.existsSync(senderManifest))for(const sender of JSON.parse(fs.readFileSync(senderManifest,'utf8')).files)if(sender.publicDownloadURL){assert.ok(require('./sender-download-url.cjs').isAllowed(sender.publicDownloadURL),'Invalid sender download source');mapping[sender.url]=sender.publicDownloadURL;}
  for(const file of files)if(mapping['/'+file.name])bytes-=file.bytes;
@@ -52,7 +66,7 @@ function build(output,revision='main',root=ROOT){
   // Repair migrated image origins and absent social preview images.
   if(name.endsWith('.html'))text=text.replace(/https:\/\/whatwhatboy\.com(\/assets\/images\/[^\s"'<>\\]*)/g,(_,p)=>{const local=p.split(/[?#]/)[0];const fallback='/assets/images/'+require('./style-host-pages.cjs').artwork(name)[0];return ORIGIN+BASE+(fs.existsSync(path.join(root,local))?p:fallback);});
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-pages.css')))text=require('./style-host-pages.cjs').themeHTML(text,name);
-  if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-catalog-grid\.js|host-folders\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-game-patches\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
+  if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-console-client\.js|host-catalog-grid\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-short-loader\.(?:js|css)|host-game-patches\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
   if(name==='assets/host-dashboard.js')text=text.replaceAll('^\\/hosts\\/runtime\\/','^\\/(?:(?:WWB-HOST|wwb-host)\\/)?hosts\\/runtime\\/');
   if((name==='index.html'||/^hosts\/(?!runtime\/).+\.html$/.test(name))&&fs.existsSync(path.join(root,'assets/host-performance.js'))){
    text=text.replace(/<link\b[^>]*href=["'][^"']*(?:font-awesome|fonts\.googleapis\.com)[^"']*["'][^>]*>/gi,'');
@@ -61,6 +75,14 @@ function build(output,revision='main',root=ROOT){
    text=text.replace(/<img\b[^>]*>/gi,tag=>/\bwidth=["'](?:24|32)["']/.test(tag)?tag:tag.replace(/\bsrc=/i,'data-host-src='));
    text=text.replace(/<head\b[^>]*>/i,m=>m+'<script src="/assets/host-performance.js?v=2"></script>');
    text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-performance.css?v=5"></head>');
+  }
+  if(name==='docs/console-download-catalog.json'){
+   const catalogue=JSON.parse(text);
+   for(const item of catalogue.items){
+    const delivery=mapping[decodeURIComponent(item.url)];
+    if(delivery&&delivery.startsWith('https://raw.githubusercontent.com/etaHEN/PS5_Cheats/'))item.receiverSupported=false;
+   }
+   text=JSON.stringify(catalogue);
   }
   if(name.endsWith('.html'))text=require('./host-compact-pages.cjs').apply(text,name,{root});
   if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
@@ -74,11 +96,18 @@ function build(output,revision='main',root=ROOT){
   text=text.replace(/((?:href|action)\s*=\s*["'])\/(["'])/g,'$1'+ORIGIN+BASE+'/$2');
   text=text.replace(/((?:href|src|action|poster)\s*=\s*["'])\/([^"']*)(["'])/gi,(whole,start,p,end)=>BASE&&p.startsWith(BASE.slice(1)+'/')?whole:start+target(p)+end);
   if(name.endsWith('.html'))text=text.replace(/<!-- BEGIN SITE AD -->[\s\S]*?<!-- END SITE AD -->/g,'').replace(/<script\b[^>]*src=["'][^"']*site-ads\.js[^"']*["'][^>]*><\/script>/g,'');
-  if(name.endsWith('.html'))text=require('./host-ads.cjs').apply(name,text,{base:BASE});
+  if(name.endsWith('.html')){
+   const ads=require('./host-ads.cjs');
+   const controls=/\bid="(?:host-actions-data|host-patches-data|host-local-data|host-package-data|host-download-desk)"/.test(text)||
+    /^(?:hosts\/(?:ps[45]\/(?:packages|downloads)|tools)|console\/ps[45]\/downloads)/.test(name);
+   // Third-party scripts must stay out of pages that control console actions.
+   text=controls?ads.strip(text):ads.apply(name,text,{base:BASE});
+  }
   if(name.endsWith('.html'))text=text.replace(/<link\b[^>]*rel=["']canonical["'][^>]*>/i,'<link rel="canonical" href="'+ORIGIN+BASE+'/'+name.replace(/index\.html$/,'')+'">');
   if((name==='index.html'||/^hosts\/(?!runtime\/).+\.html$/.test(name))&&fs.existsSync(path.join(root,'assets/host-playstation.css')))text=text.replace(/<link\b[^>]*href="[^"]*host-playstation\.css[^"]*"[^>]*>/gi,'').replace('</head>','<link rel="stylesheet" href="'+BASE+'/assets/host-playstation.css?v='+ASSET_VERSION+'"></head>');
   if(name==='hosts/karo/index.html'||name==='hosts/karo/versions.html')text=require('./split-karo-file-lists.cjs').split(text,name,{base:BASE,revision,emit:(p,content)=>{assert.ok(!selected.includes(p),'Generated list collides with source: '+p);const dest=path.join(output,p);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,content);hosted.add(p);}});
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-dashboard.js'))&&fs.readFileSync(path.join(root,'assets/host-dashboard.js'),'utf8').includes('WWB_HOST_ACTION_DATA'))text=require('./share-host-catalogues.cjs').share(text,{base:BASE,emit:(p,content)=>{assert.ok(!selected.includes(p),'Generated catalogue collides with source');const dest=path.join(output,p);fs.mkdirSync(path.dirname(dest),{recursive:true});if(fs.existsSync(dest))assert.equal(fs.readFileSync(dest,'utf8'),content);else fs.writeFileSync(dest,content);hosted.add(p);}});
+  if(name.endsWith('.html')&&fs.existsSync(path.join(root,'assets/host-console-design.css')))text=require('./host-console-design.cjs').apply(text,name);
   if(name.endsWith('.html'))text=require('./host-page-metadata.cjs').apply(text,name);
   if(offline&&name.endsWith('.html'))text=offline.decorate(text,name,offlineGroups);
   return text;
@@ -88,7 +117,17 @@ function build(output,revision='main',root=ROOT){
   const runtime=f.name.startsWith('hosts/runtime/'),immutable=f.name.startsWith('downloads/')||/^console\/ps[45]\/whatsite-ps[45]\.html$/.test(f.name);
   if(runtime&&/\.m?js$/i.test(f.name)){nativeFiles++;}
   else if(!immutable&&/\.(?:html|js|css|json|xml|md|txt)$/i.test(f.name)){let text=original.toString('utf8');if(!runtime)text=rewrite(text,f.name);
-   if(runtime&&f.name.endsWith('.html')){text=runtimeConfigHTML(require('./host-compact-pages.cjs').apply(text,f.name,{base:BASE,root}));text=text.replace(/("original"\s*:\s*)("(?:\\.|[^"\\])*")/g,(whole,key,value)=>key+JSON.stringify(manifestHTML(JSON.parse(value),f.name)).replaceAll('<','\\u003c'));text=manifestHTML(text,f.name);const inject='<script src="'+BASE+'/host-runtime-map.js?v='+revision+'"></script><script src="'+BASE+'/assets/host-project-routing.js?v=2"></script>'+(/^hosts\/runtime\/ps5-webkit-dd8e4e0914c5\/web\/index\.html$/.test(f.name)&&fs.existsSync(path.join(root,'assets/host-offline-runtime.js'))?'<script src="'+BASE+'/assets/host-offline-runtime.js?v=1"></script>':'');text=/<head\b[^>]*>/i.test(text)?text.replace(/<head\b[^>]*>/i,h=>h+inject):inject+text;}
+   if(runtime&&f.name.endsWith('.html')){
+    const compact=require('./host-compact-pages.cjs');
+    text=runtimeConfigHTML(compact.apply(text,f.name,{base:BASE,root}));
+    text=text.replace(/("original"\s*:\s*)("(?:\\.|[^"\\])*")/g,(whole,key,value)=>{
+     const original=compact.showNativeLog(JSON.parse(value),f.name);
+     return key+JSON.stringify(manifestHTML(original,f.name)).replaceAll('<','\\u003c');
+    });
+    text=manifestHTML(text,f.name);
+    const inject='<script src="'+BASE+'/host-runtime-map.js?v='+revision+'"></script><script src="'+BASE+'/assets/host-project-routing.js?v=2"></script>'+(/^hosts\/runtime\/ps5-webkit-dd8e4e0914c5\/web\/index\.html$/.test(f.name)&&fs.existsSync(path.join(root,'assets/host-offline-runtime.js'))?'<script src="'+BASE+'/assets/host-offline-runtime.js?v=1"></script>':'');
+    text=/<head\b[^>]*>/i.test(text)?text.replace(/<head\b[^>]*>/i,h=>h+inject):inject+text;
+   }
    data=Buffer.from(text);
   }fs.writeFileSync(destination,data);
  }
@@ -97,7 +136,13 @@ function build(output,revision='main',root=ROOT){
  // different current chain. The original files remain untouched in Git.
  let historicalLandings=0;for(const name of all.filter(p=>/^hosts\/runtime\/karo-[^/]+\/.+\.html$/i.test(p)&&!p.startsWith(activeKaro))){const m=name.match(/^hosts\/runtime\/karo-([a-f0-9]{12})-([a-f0-9]{12})\/(?:web\/)?(.*)$/);if(!m)continue;const rest=m[3],parts=rest.split('/'),unit=parts[0]==='ps5'?'ps5-'+parts[1]:parts[0],job=(karo.retainedArtifactJobs||[]).find(j=>j.id==='karo-ready-'+unit+'-'+m[2]);const download=job?raw(job.importPath):null;const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, follow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Retained KARO build | WWB HOST</title><link rel="stylesheet" href="'+BASE+'/assets/host-karo-builds.css"></head><body><main><h1>Retained KARO build</h1><p>This bookmark belongs to snapshot '+m[2]+'. Its original files remain preserved.</p>'+(download?'<p><a href="'+download+'" download>Download this exact '+unit+' web-host build</a></p>':'')+'<p><a href="'+BASE+'/hosts/karo/versions.html">All retained versions</a></p><p><a href="'+BASE+'/hosts/karo/">Current reviewed KARO builds</a></p><p>Opening this archive page starts no native code. Extract the complete ready ZIP and use its matching-console entry.</p></main></body></html>';const dest=path.join(output,name);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);hosted.add(name);historicalLandings++;}
  const legacyHomePages=['WWB-HOST/index.html','WWB-HOST/hosts/index.html'];for(const name of legacyHomePages){assert.ok(!hosted.has(name),'Legacy landing collides with source');const destination=path.join(output,name);fs.mkdirSync(path.dirname(destination),{recursive:true});fs.writeFileSync(destination,require('./host-legacy-redirect.cjs').renderHomeRedirect(ORIGIN));hosted.add(name);}
- if(offline)for(const name of offline.prepare(output))hosted.add(name);
+ if(offline)for(const name of offline.prepare(output)){
+  hosted.add(name);
+  if(fs.existsSync(path.join(root,'assets/host-console-design.css'))){
+   const file=path.join(output,name),html=fs.readFileSync(file,'utf8');
+   fs.writeFileSync(file,require('./host-console-design.cjs').apply(html,name));
+  }
+ }
  for(const name of require('./host-locales.cjs').build(output,root))hosted.add(name);
  const aliases={};for(const p of hosted){aliases['/'+p]=BASE+'/'+p;if(/(?:^|\/)index\.html$/.test(p)){const directory=p.replace(/index\.html$/,'');aliases['/'+directory]=BASE+'/'+directory;}}for(const [p,u]of Object.entries(mapping))aliases[p]=u;
  fs.writeFileSync(path.join(output,'host-project-map.js'),'window.WWB_HOST_PROJECT='+JSON.stringify({base:BASE,main:MAIN,aliases}).replaceAll('<','\\u003c')+';');

@@ -1,1 +1,42 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PS4 14.00 | WWB HOST</title><meta name="description" content="WWB HOST short loading URL for PS4 14.00."><link rel="stylesheet" href="/assets/host-short-loader.css"></head><body><main><p class="eyebrow">WWB HOST · SHORT LOADER</p><h1>PS4 14.00</h1><p id="wwb-short-status">Starting the WWB loader…</p><div class="bar" aria-label="Loading"><span id="wwb-short-progress"></span></div><div id="wwb-short-log" class="live-log" aria-live="polite" aria-label="Live loader log"></div><a class="button" id="wwb-short-open" aria-disabled="true" href="/hosts/ps4/exploit/gamerhack-g2all/">Open GamerHack / GoldHEN loader</a><a class="back" href="/">Back to WWB HOST</a></main><script id="wwb-short-loader" data-target="/hosts/ps4/exploit/gamerhack-g2all/" data-label="GamerHack / GoldHEN" src="/assets/host-short-loader.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Check PS4 firmware 14.00, prepare the browser cache, and load with live status.">
+  <title>PS4 WebKit · 14.00 | WWB HOST</title>
+  <link rel="stylesheet" href="/assets/host-short-loader.css?v=3">
+  <script defer src="/assets/host-karo-builds.js"></script>
+  <script defer src="/assets/host-site-load.js"></script>
+  <script defer src="/assets/host-short-loader.js?v=3"></script>
+</head>
+<body>
+  <main>
+    <nav aria-label="Host navigation">
+      <a href="/hosts/ps4/">PS4 host</a>
+      <a href="/hosts/ps5/">PS5 host</a>
+    </nav>
+    <p class="eyebrow">WWB HOST / PLAYSTATION 4</p>
+    <h1>WebKit 14.00</h1>
+    <p id="wwb-short-status" role="status">Checking the console and its cache…</p>
+    <div class="short-actions">
+      <button class="button" type="button" id="wwb-short-load" disabled>Load GoldHEN</button>
+      <button class="button secondary" type="button" id="wwb-short-cache" hidden>Retry cache</button>
+    </div>
+    <progress id="wwb-short-progress" hidden aria-label="Files saved to browser cache"></progress>
+    <section class="short-recovery" id="wwb-short-recovery" hidden aria-labelledby="wwb-short-recovery-title">
+      <h2 id="wwb-short-recovery-title">Previous attempt saved</h2>
+      <p>Check the result on your PS4. Restart the console before clearing the saved attempt.</p>
+      <label><input type="checkbox" id="wwb-short-restarted"> I restarted the console</label>
+      <button class="button secondary" type="button" id="wwb-short-clear" disabled>Clear saved attempt</button>
+    </section>
+    <section class="short-activity" aria-labelledby="wwb-short-log-title">
+      <h2 id="wwb-short-log-title">Live log</h2>
+      <div id="wwb-short-log" class="live-log" role="log" aria-labelledby="wwb-short-log-title"></div>
+    </section>
+    <noscript><p>Enable JavaScript and reopen this page on your PS4.</p></noscript>
+    <p class="short-credit">Original loader by GamerHack and contributors. GoldHEN by SiSTRo.</p>
+  </main>
+  <script id="wwb-short-data" type="application/json">{"platform":"ps4","firmwares":["14.00"],"nativeRoute":{"kind":"karo","runtime":"/hosts/runtime/gamerhack-g2all-d05d71ff8db2-52269ecd47ec/web/","entry":{"path":"g2all/index.html","scope":"g2all/","cacheRequired":true}}}</script>
+</body>
+</html>

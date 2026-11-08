@@ -238,16 +238,16 @@
     updateFiles();
   }
 
-  if (typeof module === 'object' && module.exports) {
-    module.exports = {
-      normalizeConsoleHost: normalizeConsoleHost,
-      buildReceiverURL: buildReceiverURL,
-      buildPreparationURL: buildPreparationURL,
-      matchesFilter: matchesFilter,
-      matchesFormat: matchesFormat,
-      install: install
-    };
-  }
+  var api = {
+    normalizeConsoleHost: normalizeConsoleHost,
+    buildReceiverURL: buildReceiverURL,
+    buildPreparationURL: buildPreparationURL,
+    matchesFilter: matchesFilter,
+    matchesFormat: matchesFormat,
+    install: install
+  };
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  if (global) global.WWBConsoleDownloads = api;
   if (global && global.document) {
     if (global.document.readyState === 'loading') {
       global.document.addEventListener('DOMContentLoaded', function () { install(global.document); });

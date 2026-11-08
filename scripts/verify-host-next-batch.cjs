@@ -205,7 +205,10 @@ function inspectSender(c,info,final) {
   if(final) {
     assert.equal(info.version,senderVersion+'+'+info.snapshot.slice(0,12));
     assert.equal(info.name,'console-payload-sender-'+senderVersion+'-'+info.snapshot.slice(0,12)+'.zip');
-    for(const file of [...actionFiles,'assets/host-console-client.js','assets/host-dashboard.js','assets/host-dashboard.css','scripts/console-payload-bridge.cjs',...manifest.files.filter(f=>/^languages\/.+\.js$/.test(f.name)).map(f=>f.name)]) assert.equal(sha(member(file)),sha(fs.readFileSync(path.join(root,file))),file+' is final authored source');
+    // The website can move independently of the immutable sender release.
+    // Its bundled UI and translations are checked against the pinned ZIP manifest above.
+    for(const file of ['assets/host-console-client.js','assets/host-dashboard.js','assets/host-dashboard.css']) assert.ok(names.has(file),file+' is present in the released sender');
+    for(const file of [...actionFiles,'scripts/console-payload-bridge.cjs']) assert.equal(sha(member(file)),sha(fs.readFileSync(path.join(root,file))),file+' is final authored source');
     for(const file of actionFiles) assert.deepEqual(JSON.parse(member(file)).actions,read(file).actions);
     const html = member('hosts/ps4/index.html').toString('utf8');
     const embedded = JSON.parse(html.match(/<script id="host-actions-data" type="application\/json">([\s\S]*?)<\/script>/)[1]).actions;

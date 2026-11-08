@@ -8,9 +8,17 @@
  document.querySelectorAll('.host-file-tabs a').forEach(function(link){if(new URL(link.href).searchParams.get('view')===selected)link.setAttribute('aria-current','page');});
  var firmwareControl=document.querySelector('.host-firmware-control');
  if(firmwareControl)document.getElementById('host-file-firmware').appendChild(firmwareControl);
- if(firmwareControl)firmwareControl.hidden=selected!=='loaders';
  var fileToolbar=document.getElementById('host-file-firmware');
- fileToolbar.hidden=selected!=='loaders';
+ fileToolbar.hidden=selected==='connection'||selected==='sender';
+ if(firmwareControl&&selected!=='loaders'){
+  var firmwareSettings=document.createElement('details');
+  firmwareSettings.className='wwb-firmware-settings';
+  var firmwareSummary=document.createElement('summary');
+  firmwareSummary.textContent='Installed firmware for Load';
+  firmwareSettings.appendChild(firmwareSummary);
+  firmwareSettings.appendChild(firmwareControl);
+  fileToolbar.appendChild(firmwareSettings);
+ }
  ['#host-game-filter'].forEach(function(selector){var item=document.querySelector(selector);if(item)fileToolbar.appendChild(item);});
  var options=document.querySelector('.host-options'),setup=document.querySelector('.host-connection-details');if(options&&setup)setup.appendChild(options);
  // Keep the firmware heading above Load, and alternative hosts below the choices.
