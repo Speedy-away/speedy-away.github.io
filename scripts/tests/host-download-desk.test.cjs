@@ -15,7 +15,7 @@ const source = fs.readFileSync(path.resolve(__dirname, '../../assets/host-downlo
 const ps4 = catalogue.find(item => item.id === 'ps4-homebrew-store');
 const ps5 = catalogue.find(item => item.id === 'ps5-whatsite-site-launcher');
 
-function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query = '', statuses = [200], items = [ps4, ps5]} = {}) {
+function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query = '', statuses = [200], items = [ps4, ps5], updateRelease} = {}) {
   const location = new URL('https://speedy-away.github.io/hosts/' + platform + '/' + mode + '/' + query);
   function element(tag = 'div') {
     return {
@@ -37,6 +37,13 @@ function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query =
     ids['host-download-' + id] = element();
   }
   ids.setup = element('details');
+  if (updateRelease !== undefined) {
+    for (const id of ['form','request','submit','open','status','data']) ids['host-ps5-update-' + id] = element();
+    ids['host-ps5-update'] = element('section');
+    ids['host-ps5-update'].hidden = true;
+    ids['host-ps5-update-submit'].disabled = true;
+    ids['host-ps5-update-data'].textContent = JSON.stringify(updateRelease);
+  }
   ids['host-download-type'].value = 'all';
   ids['host-download-desk'].attrs = {'data-platform':platform,'data-library':mode,'data-catalogue':'/docs/console-download-catalog.json'};
   const requests = [];
@@ -68,6 +75,52 @@ test('a pinned package opens the exact same-console queue and keeps a separate d
   assert.equal(links().get('Save / install on PS4'), 'http://127.0.0.1:6701/data/whatsite-ps4.html?file=' + ps4.id);
   assert.equal(links().get('Download file'), ps4.url);
   assert.equal(links().has('Save / install on PS5'), false);
+});
+
+test('the PS5 downloader update posts one explicit form to the exact loopback and staging paths', () => {
+  const html = fs.readFileSync(path.resolve(__dirname, '../../hosts/ps5/downloads/index.html'), 'utf8');
+  const formHTML = html.match(/<form\b[^>]*id="host-ps5-update-form"[^>]*>[\s\S]*?<\/form>/)[0];
+  assert.match(formHTML, /action="http:\/\/127\.0\.0\.1:6701\/download_url"/);
+  assert.match(formHTML, /method="post" enctype="text\/plain" target="_self"/);
+  assert.equal((formHTML.match(/<(?:input|button)\b/g) || []).length, 2);
+  assert.doesNotMatch(formHTML, /\bname=/);
+  const release = {
+    version:'2026.11.02.25', bytes:584080, sha256:'a'.repeat(64),
+    url:'https://speedy-away.github.io/downloads/helpers/console-download-receivers/ps5/2026.11.02.25-aaaaaaaaaaaa/whatsite-ps5.html'
+  };
+  const {ids, requests} = openDesk({platform:'ps5', userAgent:'PlayStation 5/7.61', updateRelease:release});
+  const field = ids['host-ps5-update-request'];
+  assert.equal(ids['host-ps5-update'].hidden, false);
+  assert.equal(field.name, undefined);
+  assert.deepEqual(requests, [['GET', '/docs/console-download-catalog.json']]);
+  const stage = '/data/homebrew/ezremote-client/assets/whatsite-ps5-update-2026.11.02.25-aaaaaaaaaaaa.html';
+  assert.equal(ids['host-ps5-update-open'].href, 'http://127.0.0.1:9090' + stage + '?apply-update=1&sha256=' + release.sha256 + '&bytes=' + release.bytes);
+  const submit = ids['host-ps5-update-form'].events.submit;
+  let prevented = 0;
+  submit({preventDefault(){ prevented++; }});
+  assert.equal(prevented, 0);
+  const {id, ...payload} = JSON.parse(field.name + '=' + field.value + '\r\n');
+  assert.ok(Number.isSafeInteger(id) && id > 0);
+  assert.deepEqual(payload, {
+    type:6, url:'https://speedy-away.github.io', username:'', password:'', http_server_type:'',
+    src_path:new URL(release.url).pathname, dest_path:stage, size:release.bytes, _form:'='
+  });
+  assert.deepEqual(requests, [['GET', '/docs/console-download-catalog.json']]);
+  assert.equal(ids['host-ps5-update-submit'].disabled, true);
+  submit({preventDefault(){ prevented++; }});
+  assert.equal(prevented, 1);
+  for (const options of [
+    {userAgent:'Desktop', updateRelease:release},
+    {userAgent:'PlayStation 4/14.00', updateRelease:release},
+    {userAgent:'PlayStation 5/7.61', updateRelease:null},
+    {userAgent:'PlayStation 5/7.61', updateRelease:{...release, url:release.url.replace('speedy-away.github.io','example.net')}},
+    {userAgent:'PlayStation 5/7.61', updateRelease:{...release, bytes:2 * 1024 * 1024 + 1}},
+    {userAgent:'PlayStation 5/7.61', updateRelease:{...release, version:'2026.11.02.123456', url:release.url.replace('02.25-','02.123456-')}}
+  ]) {
+    const desk = openDesk({platform:'ps5', ...options});
+    assert.equal(desk.ids['host-ps5-update'].hidden, true);
+    assert.equal(desk.ids['host-ps5-update-form'].events.submit, undefined);
+  }
 });
 
 test('the PS4 archive view shows the exact receiver handoff only as reviewed extraction for a reviewed build', () => {

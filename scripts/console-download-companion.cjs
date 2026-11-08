@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const esc = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
-function renderCompanion(platform, items) {
+function renderCompanion(platform, items, version) {
   platform = String(platform).toLowerCase();
   if (!['ps4', 'ps5'].includes(platform) || !Array.isArray(items)) throw Error('Expected a PS4/PS5 platform and item array.');
   // Native clients cannot follow the JavaScript fallback on a Pages 404.
@@ -19,7 +19,8 @@ function renderCompanion(platform, items) {
   });
   const name = platform.toUpperCase();
   const localFile = platform === 'ps4' ? '/data/whatsite-ps4.html' : '/whatsite-ps5.html';
-  const catalog = JSON.stringify({platform, items}).replaceAll('<', '\\u003c').replaceAll('&', '\\u0026').replaceAll('\u2028', '\\u2028').replaceAll('\u2029', '\\u2029');
+  const release = platform === 'ps5' && version ? {version} : {};
+  const catalog = JSON.stringify({platform, ...release, items}).replaceAll('<', '\\u003c').replaceAll('&', '\\u0026').replaceAll('\u2028', '\\u2028').replaceAll('\u2029', '\\u2029');
   const css = fs.readFileSync(path.join(root, 'assets/console-receiver.css'), 'utf8');
   const js = fs.readFileSync(path.join(root, 'assets/console-receiver.js'), 'utf8').replace(/<\/script/gi, '<\\/script');
   return `<!DOCTYPE html>

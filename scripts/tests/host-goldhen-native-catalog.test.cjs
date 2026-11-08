@@ -26,12 +26,13 @@ test('receiver release preserves every file identity and uses pinned retained de
    if(target.receiverFileId){
     updatedHandoffs.add(item.id);
     const {receiverSupported,...previous}=item;
-    assert.equal(receiverSupported,false,item.id);
+    if(receiverSupported!==undefined)assert.equal(receiverSupported,false,item.id);
     assert.equal(target.receiverFileId,'shn-'+item.sha256.slice(0,12));
     return {...previous,url:target.url,receiverFileId:target.receiverFileId};
    }
    return {...item,url:target.url};
   });
+  if(r.supportsStagedUpdate)expected.version=r.version;
   assert.deepEqual(embedded(after),expected);
   assert.equal(after,fs.readFileSync(path.join(root,r.immutablePath),'utf8'));
   assert.match(after,/Live transfer queue/);

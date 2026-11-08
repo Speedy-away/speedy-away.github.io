@@ -54,6 +54,18 @@
       <p>Choose a file to see your download and console options.</p>
       <nav id="host-download-native" hidden aria-label="Installed console tools"></nav>
     </section>
+    <section id="host-ps5-update" class="host-download-setup" aria-labelledby="host-ps5-update-title" hidden>
+      <h2 id="host-ps5-update-title">Update the PS5 downloader</h2>
+      <p>Keep ezRemote Client and its background server running. Download this release to a separate staging file on your PS5. When ezRemote reports the download complete, press Back if the browser left this page, then choose <strong>Open staged update</strong> to verify and apply it.</p>
+      <form id="host-ps5-update-form" action="http://127.0.0.1:6701/download_url" method="post" enctype="text/plain" target="_self" accept-charset="UTF-8">
+        <input type="hidden" id="host-ps5-update-request">
+        <button id="host-ps5-update-submit" type="submit" disabled>Download downloader update</button>
+      </form>
+      <p><a href="http://127.0.0.1:6701/whatsite-ps5.html">Check the installed download queue</a> · <a id="host-ps5-update-open">Open staged update</a></p>
+      <p id="host-ps5-update-status" role="status"></p>
+      <p>If the browser blocks the update request, use the direct URL under <strong>Set up console downloads</strong>.</p>
+      <script type="application/json" id="host-ps5-update-data">null</script>
+    </section>
     <details id="native-feed" class="host-download-setup">
       <summary>PS5 Payload Manager catalogue</summary>
       <p>In PS5 Payload Manager, open Settings, Manage Sources, then Add Source. Enter this address for the ready PS5 payload catalogue.</p>
@@ -65,7 +77,7 @@
       <p>First-time setup on PS5 requires a compatible homebrew environment. If you already have Payload Manager, ezRemote documents a loader that installs or updates the client from the console. Check that the client version matches the steps below.</p>
       <ol>
         <li>Open <a href="https://github.com/cy33hc/ps5-ezremote-client/releases/tag/2.18">ezRemote Client 2.18</a> on the PS5 after your compatible ELF listener is running on port 9021. Keep ezRemote open so it can start its bundled services. Run compatible websrv on port 8080 for the Download Centre’s save folder checks. In the console browser, choose <strong>Open ezRemote Web UI</strong>. Choose <strong>Download URL</strong>, then use <strong>Change</strong> to select the destination folder. Enter the filename and direct URL shown below.</li>
-        <li>In the ezRemote Web UI, download the <a href="/console/ps5/whatsite-ps5.html">latest downloader companion</a> to <code translate="no">/data/homebrew/ezremote-client/assets/whatsite-ps5.html</code>. Update to version 2026.11.02.24 at the same path to enable saving the three restored PS5 cheat files. Its direct URL is <code translate="no">https://speedy-away.github.io/console/ps5/whatsite-ps5.html</code>.</li>
+        <li>In the ezRemote Web UI, download the <a href="/console/ps5/whatsite-ps5.html">latest downloader companion</a> to <code translate="no">/data/homebrew/ezremote-client/assets/whatsite-ps5.html</code>. Its direct URL is <code translate="no">https://speedy-away.github.io/console/ps5/whatsite-ps5.html</code>.</li>
         <li>Choose <strong>Save on PS5</strong> for a file, prepare or choose a writable destination and press <strong>Save to console</strong>. The local page shows live progress. When the save completes, eligible files show <strong>Extract</strong> or <strong>Install PKG</strong>.</li>
       </ol>
       <p>Open the ezRemote Web UI on port 9090 first if you need to install the companion. After setup, choose <strong>Open download queue</strong>. If it cannot open, check the companion path and that the matching ezRemote Server is running on port 6701. If the save folder is missing, choose <strong>Prepare a storage folder</strong>.</p>

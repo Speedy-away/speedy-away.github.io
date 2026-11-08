@@ -2045,5 +2045,19 @@
     "focusedTestsPassed": 93,
     "physicalConsoleTested": false,
     "publisherSHNsHTTPHashVerified": 3
+  },
+  "ps5DownloaderUpdate20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.25",
+    "status": "Receiver archived and activated in the checkout.",
+    "buildReport": "docs/host-menu-companion-build.json",
+    "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.24.json",
+    "changes": [
+      "The PS5 Download Centre submits the exact release to the console download queue with an explicit button.",
+      "A separate local page verifies the staged bytes, checks a backup of the installed downloader, applies the update and reads back the installed SHA-256.",
+      "The update refuses to replace a newer version. The prior downloader remains available as a backup."
+    ],
+    "focusedTestsPassed": 98,
+    "physicalConsoleTested": false
   }
 }

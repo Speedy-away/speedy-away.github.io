@@ -69,6 +69,44 @@
     link(nativeTools, 'Prepare a storage folder', transport.buildPreparationURL(platform, destination));
   }
 
+  function showDownloaderUpdate() {
+    var panel = doc.getElementById('host-ps5-update');
+    if (!panel || platform !== 'ps5' || !consolePlatform || consolePlatform[1] !== '5') return;
+    var release;
+    try { release = JSON.parse(doc.getElementById('host-ps5-update-data').textContent); } catch (_) { return; }
+    if (!release || typeof release.version !== 'string' || !/^\d{4}\.\d{2}\.\d{2}\.\d{1,5}$/.test(release.version) ||
+        typeof release.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(release.sha256) ||
+        typeof release.bytes !== 'number' || release.bytes <= 0 || release.bytes > 2 * 1024 * 1024 || Math.floor(release.bytes) !== release.bytes) return;
+    var releaseKey = release.version + '-' + release.sha256.slice(0, 12);
+    var sourcePath = '/downloads/helpers/console-download-receivers/ps5/' + releaseKey + '/whatsite-ps5.html';
+    var origin = 'https://speedy-away.github.io';
+    if (release.url !== origin + sourcePath) return;
+
+    var stagingPath = '/data/homebrew/ezremote-client/assets/whatsite-ps5-update-' + releaseKey + '.html';
+    var form = doc.getElementById('host-ps5-update-form');
+    var field = doc.getElementById('host-ps5-update-request');
+    var button = doc.getElementById('host-ps5-update-submit');
+    var message = doc.getElementById('host-ps5-update-status');
+    var submitted = false;
+    doc.getElementById('host-ps5-update-open').href = 'http://127.0.0.1:9090' + stagingPath +
+      '?apply-update=1&sha256=' + release.sha256 + '&bytes=' + release.bytes;
+    button.textContent = 'Download downloader ' + release.version;
+    form.addEventListener('submit', function (event) {
+      if (submitted) { event.preventDefault(); return; }
+      var request = {type:6, url:origin, username:'', password:'', http_server_type:'',
+        src_path:sourcePath, dest_path:stagingPath, size:release.bytes, id:new Date().getTime() * 1000};
+      // A text/plain form serializes its sole field as name=value plus CRLF.
+      // Keep that equals sign inside an ignored JSON string in the request body.
+      field.name = JSON.stringify(request).slice(0, -1) + ',"_form":"';
+      field.value = '"}';
+      submitted = true;
+      button.disabled = true;
+      message.textContent = 'Check ezRemote for completion before opening the staged update or requesting it again.';
+    });
+    button.disabled = false;
+    panel.hidden = false;
+  }
+
   function usable(item) {
     return item && typeof item.id === 'string' && typeof item.name === 'string' &&
       typeof item.filename === 'string' && typeof item.bytes === 'number' && item.bytes > 0 &&
@@ -209,6 +247,7 @@
   }
   if (destination) address.value = destination;
   showNativeTools();
+  showDownloaderUpdate();
   if (win.location.hash === '#setup') doc.getElementById('setup').open = true;
   doc.getElementById('host-download-connection').addEventListener('submit', useAddress);
   search.addEventListener('input', function () {

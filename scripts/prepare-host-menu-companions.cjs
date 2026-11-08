@@ -43,9 +43,11 @@ function prepare() {
     const items=receiverCatalogue(catalogue.filter(item=>item.platforms.includes(platform)).map(item=>item.pages?.[platform]?{...item,page:item.pages[platform]}:item));
     for(const before of oldItems){const after=items.find(item=>item.id===before.id);if(!after||after.sha256!==before.sha256||after.filename!==before.filename)throw Error('A previous receiver file changed or disappeared: '+before.id);}
     const retained='downloads/helpers/console-download-receivers/'+platform+'/retained-'+oldHash.slice(0,12)+'/whatsite-'+platform+'.html';preserve(retained,old);
-    const bytes=Buffer.from(renderCompanion(platform,items)),hash=sha(bytes),name='whatsite-'+platform+'.html';
+    const bytes=Buffer.from(renderCompanion(platform,items,version)),hash=sha(bytes),name='whatsite-'+platform+'.html';
     const immutable='downloads/helpers/console-download-receivers/'+platform+'/'+version+'-'+hash.slice(0,12)+'/'+name;preserve(immutable,bytes);
-    const record={platform,version,path:stable,immutablePath:immutable,bytes:bytes.length,sha256:hash,previousSha256:oldHash,previousPublicSnapshot:retained,previousItems:oldItems.length,items:items.length};records.push(record);
+    const record={platform,version,path:stable,immutablePath:immutable,bytes:bytes.length,sha256:hash,previousSha256:oldHash,previousPublicSnapshot:retained,previousItems:oldItems.length,items:items.length};
+    if(platform==='ps5')record.supportsStagedUpdate=true;
+    records.push(record);
     jobs.push({id:'whatsite-'+platform+'-console-downloader-'+version.replaceAll('.','-'),title:'whatwhatboy '+platform.toUpperCase()+' console downloader',platform:platform.toUpperCase(),category:['Tools'],project:'whatsite Console Downloader',version,filename:name,url:'https://speedy-away.github.io/'+immutable,importPath:immutable,mirror:true,archiveRole:['Builds'],expectedBytes:bytes.length,expectedSha256:hash,pages:[stable,'console/'+platform+'/downloads.html']});
   }
   fs.writeFileSync(path.join(root,jobsPath),JSON.stringify({reviewed:'2026-11-02',jobs},null,2)+'\n');
