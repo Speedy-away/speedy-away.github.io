@@ -1840,5 +1840,16 @@
     ],
     "verifiedLiveSHA256": ["jb2.js", "afterglow.js", "1400.bin", "goldhen_2.4b18.13.bin"],
     "physicalConsoleTested": false
+  },
+  "consoleDownloadWorkspace20261108": {
+    "routes": ["/ps4/downloads/", "/ps5/downloads/"],
+    "changes": [
+      "Unified save, extract and PKG install navigation for both console browsers",
+      "Short archive and package filters, exact catalogue file handoffs and links to the installed queue and storage preparation",
+      "Separate native setup, reviewed extraction and compatible installer requirements"
+    ],
+    "reviewedArchiveCountsInShippedReceiver": {"ps4": 11, "ps5": 15},
+    "nativeOrDownloadBytesChanged": 0,
+    "physicalConsoleTested": false
   }
 }

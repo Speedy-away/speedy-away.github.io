@@ -15,6 +15,7 @@
   var retry = doc.getElementById('host-download-retry');
   var address = doc.getElementById('host-download-address');
   var addressStatus = doc.getElementById('host-download-address-status');
+  var nativeTools = doc.getElementById('host-download-native');
   var consolePlatform = /PlayStation\s*([45])\b/i.exec(win.navigator.userAgent);
   var destination = consolePlatform && 'ps' + consolePlatform[1] === platform ? '127.0.0.1' : '';
   var requestedFile = /[?&]file=([^&#]*)/.exec(win.location.search);
@@ -28,7 +29,8 @@
   if (requestedFile) {
     try { pinnedId = decodeURIComponent(requestedFile[1]); } catch (_) { /* Show the library. */ }
   }
-  if (type && !packagesOnly && /[?&]type=archives(?:&|$)/.test(win.location.search)) type.value = 'archives';
+  var requestedType = /[?&]type=(archives|packages)(?:&|$)/.exec(win.location.search);
+  if (type && !packagesOnly && requestedType) type.value = requestedType[1];
 
   function add(parent, tag, message, className) {
     var node = doc.createElement(tag);
@@ -56,6 +58,15 @@
     return item.category === 'apps' && /\.pkg$/i.test(item.filename);
   }
 
+  function showNativeTools() {
+    if (!nativeTools) return;
+    nativeTools.textContent = '';
+    nativeTools.hidden = !destination;
+    if (!destination) return;
+    link(nativeTools, 'Open download queue', transport.buildReceiverURL(platform, destination));
+    link(nativeTools, 'Prepare a storage folder', transport.buildPreparationURL(platform, destination));
+  }
+
   function usable(item) {
     return item && typeof item.id === 'string' && typeof item.name === 'string' &&
       typeof item.filename === 'string' && typeof item.bytes === 'number' && item.bytes > 0 &&
@@ -77,7 +88,10 @@
     var saveURL = destination && item.receiverSupported !== false && transport.buildReceiverURL(platform, destination, item.id);
     var archive = transport.matchesFormat(item.filename, 'archives');
     var reviewed = archive && item.receiverSupported !== false && item.archiveSafety && item.archiveSafety.reviewed === true;
-    if (saveURL) link(controls, (reviewed ? 'Save / extract on ' : 'Save on ') + platform.toUpperCase(), saveURL, 'host-download-primary');
+    var saveLabel = reviewed ? 'Save / extract on ' : packageFile(item) ? 'Save / install on ' : 'Save on ';
+    if (saveURL) link(controls, saveLabel + platform.toUpperCase(), saveURL, 'host-download-primary');
+    if (saveURL && packageFile(item)) add(card, 'p',
+      'Wait for the save to finish. Then choose Verify & install PKG in the receiver to open the compatible installer.', 'host-download-meta');
     if (archive) add(card, 'p', reviewed
       ? 'Save the complete archive first. Then choose Extract a saved copy in the console receiver. It checks the SHA-256 and extracts into a new folder.'
       : 'Save the archive first, then extract it with the installed console file manager. Follow the build’s compatibility guide.', 'host-download-meta');
@@ -167,6 +181,7 @@
       return;
     }
     destination = next;
+    showNativeTools();
     address.removeAttribute('aria-invalid');
     addressStatus.textContent = 'Save on console links now open ' + next + '. Start the installed ezRemote Server before opening a file.';
     if (items.length) render();
@@ -182,6 +197,7 @@
     return;
   }
   if (destination) address.value = destination;
+  showNativeTools();
   if (win.location.hash === '#setup') doc.getElementById('setup').open = true;
   doc.getElementById('host-download-connection').addEventListener('submit', useAddress);
   search.addEventListener('input', function () {

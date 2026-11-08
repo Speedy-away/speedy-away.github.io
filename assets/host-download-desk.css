@@ -68,6 +68,7 @@
 }
 
 .host-download-controls,
+#host-download-native,
 .host-download-fields {
   display: flex;
   flex-wrap: wrap;
@@ -75,6 +76,7 @@
 }
 
 .host-download-desk .host-download-controls a,
+.host-download-desk #host-download-native a,
 .host-download-desk button {
   display: inline-block;
   margin: .25rem .5rem .25rem 0;
@@ -87,6 +89,9 @@
   text-decoration: none;
   font: inherit;
 }
+
+#host-download-native { margin: .75rem 0; }
+#host-download-native[hidden] { display: none; }
 
 .host-download-desk .host-download-controls .host-download-primary {
   background: #8fbdff;

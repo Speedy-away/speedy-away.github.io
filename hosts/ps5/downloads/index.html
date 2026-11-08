@@ -43,9 +43,19 @@
     <header class="host-download-lead" data-wwb-text-heading>
       <p>PS5 · WWB HOST</p>
       <h1>Download centre</h1>
-      <p>Find the exact homebrew app, payload, mod or game patch for your console. Check its version and compatibility before saving.</p>
-      <p>Save on PS5 opens the installed ezRemote downloader. Direct file opens the original file in the current browser, which may refuse console file types.</p>
+      <p>Find the exact homebrew app, payload, mod or game patch for your PS5. Check its version and compatibility before saving.</p>
     </header>
+    <section id="workflow" class="host-download-setup" aria-labelledby="host-download-workflow-title">
+      <h2 id="host-download-workflow-title">On your PS5</h2>
+      <p>Once ezRemote is set up, you can save files and open the console’s tools from this PlayStation.</p>
+      <ol>
+        <li><strong>Save.</strong> <a href="#downloads">Choose a file</a>, open <strong>Save on PS5</strong>, then select a writable folder and confirm the transfer in the local downloader.</li>
+        <li><strong>Extract.</strong> <a href="?type=archives#downloads">Browse archives</a>. On reviewed files, <strong>Save / extract on PS5</strong> opens the matching file in the downloader. Save it before extracting.</li>
+        <li><strong>Install.</strong> <a href="?type=packages#downloads">Browse homebrew PKGs</a> or open the <a href="/hosts/ps5/packages/">package library</a>. When the downloader reports the file saved, open <strong>Verify &amp; install PKG</strong> and confirm the request in the compatible installer.</li>
+      </ol>
+      <nav id="host-download-native" hidden aria-label="Installed console tools"></nav>
+      <p><strong>Direct file</strong> opens the original download in this browser. If it refuses the file type, use the local downloader or enter the direct URL in ezRemote.</p>
+    </section>
     <details id="setup" class="host-download-setup">
       <summary>Console setup and troubleshooting</summary>
       <p>Use an existing compatible homebrew environment. The browser opens the local native tools after they have been set up.</p>
@@ -54,8 +64,17 @@
         <li>Use the direct URL download feature in ezRemote to save the <a href="/console/ps5/whatsite-ps5.html">pinned downloader companion</a> to <code translate="no">/data/homebrew/ezremote-client/assets/whatsite-ps5.html</code>. Its direct URL is <code translate="no">https://speedy-away.github.io/console/ps5/whatsite-ps5.html</code>.</li>
         <li>Choose <strong>Save on PS5</strong> for a file, prepare or choose a writable destination and press <strong>Save to console</strong>. The local page shows the receiver queue and transfer progress.</li>
       </ol>
-      <p><a href="http://127.0.0.1:6701/whatsite-ps5.html">Open installed downloader on this console</a>. If the local page cannot open, check the companion path and that the matching ezRemote Server is running on port 6701. If the save folder is missing, choose <strong>Prepare download folder</strong> in the local downloader.</p>
-      <p>Already saved a PKG? The <a href="/hosts/ps5/packages/#setup">package setup</a> explains the next step. Keep enough storage for both a download and any installed or extracted copy.</p>
+      <p>Choose <strong>Open download queue</strong> under Installed console tools. If it cannot open, check the companion path and that the matching ezRemote Server is running on port 6701. If the save folder is missing, choose <strong>Prepare a storage folder</strong>.</p>
+      <p>Already saved a PKG? The <a href="/hosts/ps5/packages/#setup">package setup</a> explains the next step. Keep enough storage for both a download and any installed or extracted copy. PS5 installation requires a compatible Direct Package Installer.</p>
+    </details>
+    <details id="extract" class="host-download-setup">
+      <summary>Download and extract on PS5</summary>
+      <ol>
+        <li>Keep websrv, the installed ezRemote Client and its bundled background server running.</li>
+        <li>Choose <a href="?type=archives#downloads">Archives</a>, select a file and wait for the local downloader to report the save complete.</li>
+        <li>In the downloader, choose <strong>Extract a saved copy on console</strong>, then <strong>Verify checksum &amp; extract into new folder</strong>. The reviewed extraction keeps your original archive and creates a new folder.</li>
+      </ol>
+      <p>The verified extraction action is limited to reviewed archives up to 32 MiB. For larger or unreviewed archives, inspect the saved file in the <a href="/hosts/ps5/files/">native file manager</a> before extracting it there.</p>
     </details>
     <section id="downloads" aria-label="Download centre">
       <div class="host-download-toolbar">
