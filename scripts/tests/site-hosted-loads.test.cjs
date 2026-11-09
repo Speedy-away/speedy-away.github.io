@@ -6,7 +6,7 @@ test('every exact console firmware route authorizes only after Load and stays on
 test('a repeat KARO attempt retains the original restart guard',()=>{const a=hostActions('ps4').find(a=>a.runtimeId==='karo-g2all'),win=consoleWindow('ps4','9.00'),doc={visibilityState:'visible'};load.start(win,doc,a,true);assert.throws(()=>load.start(win,doc,a,true));assert.throws(()=>load.start(win,doc,{...a,nativeRoute:{...a.nativeRoute,runtime:'https://example.com/'}},true));});
 test('cache-required GamerHack Load refuses unready caches before reading or changing saved attempt state',()=>{
  const action=hostActions('ps4').find(a=>a.runtimeId==='gamerhack-g2all');assert.ok(action);assert.equal(action.nativeRoute.entry.cacheRequired,true);
- for(const cache of [undefined,{status:0},{status:2},{status:3},{status:5},{status:'1'}]){
+ for(const cache of [undefined,{status:0},{status:2},{status:3},{status:5},{status:'unavailable'}]){
   const win=consoleWindow('ps4','14.00'),calls=[],guard=win.WhatsiteKaro,local=new Map([[guard.LOCK,'existing attempt'],['unrelated','keep local']]),session=new Map([[guard.TICKET,'existing ticket'],['unrelated','keep session']]);
   function watched(name,values){return{getItem(key){calls.push([name,'get',key]);return values.get(key)||null;},setItem(key,value){calls.push([name,'set',key]);values.set(key,String(value));},removeItem(key){calls.push([name,'remove',key]);values.delete(key);}};}
   win.applicationCache=cache;win.localStorage=watched('local',local);win.sessionStorage=watched('session',session);const location=win.location.href;
@@ -27,7 +27,27 @@ test('a ready cache permits one explicit GamerHack handoff and preserves the exi
 function received(overrides={}){const win=consoleWindow('ps4','14.00');win.location=new URL('https://speedy-away.github.io/WWB-HOST/hosts/runtime/ps4-afterglow-acf25a831725/web/index.html');let submits=0;const radio={},form={querySelector:()=>radio,dispatchEvent:()=>{submits++;}},button={disabled:false};const doc={visibilityState:'visible',referrer:'https://speedy-away.github.io/WWB-HOST/hosts/ps4/',getElementById:id=>id==='pick'?form:button};const ticket={origin:win.location.origin,target:win.location.pathname,firmware:'14.00',at:Date.now(),payload:'goldhen',...overrides};win.sessionStorage.setItem(receipt.key,JSON.stringify(ticket));return {win,doc,radio,get submits(){return submits;}};}
 test('GoldHEN receipt starts the genuine form exactly once and selects the supplied payload',()=>{const a=received();assert.equal(receipt.install(a.win,a.doc),true);assert.equal(a.radio.checked,true);assert.equal(a.submits,1);assert.equal(receipt.install(a.win,a.doc),false);});
 test('stale, cross-origin, hidden, restored and mismatched GoldHEN receipts remain inert',()=>{for(const mutate of [a=>a.doc.referrer='https://example.com/',a=>a.doc.visibilityState='hidden',a=>a.win.performance.getEntriesByType=()=>[{type:'reload'}],a=>a.doc.wasDiscarded=true]){const a=received();mutate(a);assert.equal(receipt.install(a.win,a.doc),false);assert.equal(a.submits,0);}for(const ticket of [{at:Date.now()-31000},{firmware:'13.52'},{origin:'https://example.com'}]){const a=received(ticket);assert.equal(receipt.install(a.win,a.doc),false);assert.equal(a.submits,0);}});
-test('PS4 and PS5 show firmware controls only in Choose firmware; other tabs show their content directly',()=>{const source=fs.readFileSync(require('path').resolve(__dirname,'../../assets/host-folders.js'),'utf8');for(const platform of ['ps4','ps5'])for(const view of ['loaders','payloads','mods','tools']){const control={hidden:false},nodes={};const node=id=>nodes[id]||(nodes[id]={textContent:'',hidden:false,parentNode:{insertBefore(){}},getAttribute:()=>null,setAttribute(){},appendChild(){},click(){}});const doc={getElementById:id=>id==='host-actions-data'?{textContent:JSON.stringify({platform})}:node(id),querySelector:s=>s==='.host-firmware-control'?control:s==='.host-taskbar a'?node('back'):s==='#host-status'?node('status'):s.startsWith('[data-host-category=')?node(view):null,querySelectorAll:()=>[],addEventListener(){},createElement:()=>node('created')};vm.runInNewContext(source,{window:{WWB_HOST_CATALOG:{platform}},document:doc,location:{href:'https://example.com/hosts/'+platform+'/?view='+view},URL,MutationObserver:class{observe(){}}});assert.equal(control.hidden,view!=='loaders',platform+' '+view);}});
+test('PS4 and PS5 keep the firmware picker open on the loader tab and collapse it elsewhere',()=>{
+ const source=fs.readFileSync(require('path').resolve(__dirname,'../../assets/host-folders.js'),'utf8');
+ for(const platform of ['ps4','ps5'])for(const view of ['loaders','payloads','mods','tools']){
+  const nodes={};
+  function element(tagName){return{tagName,textContent:'',children:[],parentNode:{insertBefore(){}},getAttribute:()=>null,querySelector:()=>null,
+   appendChild(child){if(child.parentNode.children)child.parentNode.children=child.parentNode.children.filter(node=>node!==child);this.children.push(child);child.parentNode=this;},click(){}};}
+  const node=id=>nodes[id]||(nodes[id]=element('div'));
+  const control=node('firmware-control'),toolbar=node('host-file-firmware');
+  const doc={documentElement:element('html'),getElementById:id=>id==='host-actions-data'?{textContent:JSON.stringify({platform})}:node(id),
+   querySelector:s=>s==='.host-firmware-control'?control:s==='.host-taskbar a'?node('back'):s==='#host-status'?node('status'):null,
+   querySelectorAll:()=>[],addEventListener(){},createElement:element};
+  const location=new URL('https://example.com/hosts/'+platform+'/?view='+view);
+  vm.runInNewContext(source,{window:{WWB_HOST_CATALOG:{platform}},document:doc,location,URL,MutationObserver:class{observe(){}}});
+  if(view==='loaders')assert.equal(control.parentNode,toolbar);
+  else{
+   assert.equal(control.parentNode.tagName,'details');
+   assert.equal(control.parentNode.parentNode,toolbar);
+   assert.equal(control.parentNode.open,undefined);
+  }
+ }
+});
 
 
 

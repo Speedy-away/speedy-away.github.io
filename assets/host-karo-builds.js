@@ -7,15 +7,33 @@
  function supports(entry,info){if(!info||entry.platform!==info.platform||entry.blockedReason)return false;if((entry.firmwares||[]).indexOf(info.firmware)>=0)return true;var n=numeric(info.firmware);return (entry.ranges||[]).some(function(r){return n>=numeric(r[0])&&n<=numeric(r[1]);});}
  function read(storage,key){try{return JSON.parse(storage.getItem(key)||'null');}catch(e){return null;}}
  function locked(win){try{return !!win.localStorage.getItem(LOCK);}catch(e){return true;}}
+ function checkUnlocked(win){
+  var saved;
+  try{saved=win.localStorage.getItem(LOCK);}catch(_){throw Error('The browser could not read the native-attempt guard.');}
+  if(!saved)return;
+  var error=Error('A previous native attempt is saved. Check and restart the console before clearing it.');
+  error.code='previous-native-attempt';
+  throw error;
+ }
  function authorize(win,entry,base,confirmed,trusted){
   if(!trusted||!confirmed)throw Error('Confirm the selected console and original loader before Load.');
   if(!supports(entry,consoleInfo(win.navigator.userAgent)))throw Error(entry.blockedReason||'Open this entry in its matching console browser and firmware.');
   if(win.document.visibilityState&&win.document.visibilityState!=='visible')throw Error('Keep the loader page visible.');
   // Cache readiness does not gate online Load; the destination manifest saves in the browser.
-  if(locked(win))throw Error('A previous native attempt is saved. Check and restart the console before clearing it.');
+  checkUnlocked(win);
   var now=Date.now(),ticket={entry:entry.path,scope:entry.scope||entry.path.slice(0,entry.path.lastIndexOf('/')+1),platform:entry.platform,firmware:consoleInfo(win.navigator.userAgent).firmware,base:base,expires:now+600000,started:false,visited:[],nonce:String(now)+'-'+String(Math.random()).slice(2)};
-  win.localStorage.setItem(LOCK,JSON.stringify({entry:entry.path,at:now}));if(!locked(win))throw Error('The browser could not save the native-attempt guard.');
-  win.sessionStorage.setItem(TICKET,JSON.stringify(ticket));if(!read(win.sessionStorage,TICKET))throw Error('The browser could not save the entry ticket.');
+  var savedTicket=JSON.stringify(ticket);
+  win.sessionStorage.setItem(TICKET,savedTicket);
+  if(win.sessionStorage.getItem(TICKET)!==savedTicket)throw Error('The browser could not save the entry ticket.');
+  try{
+   checkUnlocked(win);
+   var savedLock=JSON.stringify({entry:entry.path,at:now});
+   win.localStorage.setItem(LOCK,savedLock);
+   if(win.localStorage.getItem(LOCK)!==savedLock)throw Error('The browser could not save the native-attempt guard.');
+  }catch(error){
+   if(win.sessionStorage.getItem(TICKET)===savedTicket)win.sessionStorage.removeItem(TICKET);
+   throw error;
+  }
   return base+entry.path;
  }
  function runtimeAllowed(win,config){

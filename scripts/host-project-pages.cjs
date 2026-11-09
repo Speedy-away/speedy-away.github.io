@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261108feeds1';
+const ASSET_VERSION='20261109cache1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 // These original lists include server-only or maintenance files absent from the
 // preserved web runtime. Keep the original manifests and serve a Pages copy.
@@ -153,7 +153,7 @@ function build(output,revision='main',root=ROOT){
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-pages.css')))text=require('./style-host-pages.cjs').themeHTML(text,name);
   if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-console-client\.js|host-catalog-grid\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-short-loader\.(?:js|css)|host-game-patches\.js|host-download-desk\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
   if(name.endsWith('.html'))text=text.replace(/(host-download-desk\.(?:js|css)|console-downloads\.js)(?:\?v=[\w.-]+)?(?=["'])/g,'$1?v=20261108setup1');
-  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108update3');
+  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108update4');
   const downloadPage=name.match(/^hosts\/(ps[45])\/downloads\/index\.html$/);
   if(downloadPage)text=text.replace(/(<script type="application\/json" id="host-(ps[45])-update-data">)null(<\/script>)/,(_,open,platform,close)=>{
    assert.equal(platform,downloadPage[1]);

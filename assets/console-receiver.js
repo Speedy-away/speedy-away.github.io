@@ -172,19 +172,59 @@
   function receiverUpdateFolder(platform) {
     return platform === 'ps4' ? '/data' : '/data/homebrew/ezremote-client/assets';
   }
-  function receiverUpdateSpec(platform, location, version, hash, size) {
-    platform = platformName(platform);
-    if (!managerOrigin(platform, location)) {
-      fail('Open the staged update through the running ' + platform.toUpperCase() + ' ezRemote Client on port ' + (platform === 'ps4' ? '8080' : '9090') + '.');
-    }
+  function updateRelease(platform, version, hash, size) {
     if (!/^\d{4}\.\d{2}\.\d{2}\.\d{1,5}$/.test(version || '') || !/^[a-f0-9]{64}$/.test(hash || '') ||
         !/^[1-9]\d{0,6}$/.test(String(size)) || Number(size) > updateLimit) {
       fail('The staged receiver version, size or SHA-256 is invalid.');
     }
-    var name = 'whatsite-' + platform + '-update-' + version + '-' + hash.slice(0, 12) + '.html';
-    var path = receiverUpdateFolder(platform) + '/' + name;
-    if (location.pathname !== path) fail('The staged receiver filename does not match this update.');
-    return {name: name, path: path, sha256: hash, bytes: Number(size)};
+    var releaseKey = version + '-' + hash.slice(0, 12);
+    var name = 'whatsite-' + platform + '-update-' + releaseKey + '.html';
+    return {name: name, path: receiverUpdateFolder(platform) + '/' + name, sha256: hash, bytes: Number(size)};
+  }
+  function receiverUpdateSpec(platform, location, version, hash, size) {
+    if (!managerOrigin(platform, location)) {
+      fail('Open the update through the running ' + platform.toUpperCase() + ' ezRemote Client on port ' + (platform === 'ps4' ? '8080' : '9090') + '.');
+    }
+    var update = updateRelease(platform, version, hash, size);
+    var tracked = queryValue(location.search, 'apply-tracked-update') === '1';
+    var installedPath = receiverUpdateFolder(platform) + '/whatsite-' + platform + '.html';
+    if (tracked ? location.hostname !== '127.0.0.1' || location.pathname !== installedPath : location.pathname !== update.path) {
+      fail('The receiver filename does not match this update.');
+    }
+    return update;
+  }
+  function readUpdateFile(xhrFactory, path, size, callback) {
+    if (Math.floor(size) !== size || size < 1 || size > updateLimit) {
+      callback(new Error('A receiver file has an invalid size.')); return;
+    }
+    var xhr = xhrFactory(), finished = false;
+    function done(error, bytes) {
+      if (finished) return;
+      finished = true;
+      callback(error, bytes);
+    }
+    try {
+      xhr.open('GET', path, true);
+      xhr.responseType = 'arraybuffer';
+      xhr.timeout = 20000;
+    } catch (error) { done(error); return; }
+    xhr.onreadystatechange = function () {
+      if (finished || xhr.readyState !== 4) return;
+      if (xhr.status !== 200) {
+        done(new Error(xhr.status === 404 ? 'The staged file is missing.' : 'Could not read the receiver file.')); return;
+      }
+      if (!xhr.response || xhr.response.byteLength !== size) {
+        done(new Error('The receiver file does not match the expected size.')); return;
+      }
+      done(null, new Uint8Array(xhr.response));
+    };
+    xhr.onerror = xhr.ontimeout = function () { done(new Error('Could not verify the file through ezRemote.')); };
+    xhr.onprogress = function (event) {
+      if (event.loaded <= size) return;
+      done(new Error('A receiver file exceeds its expected size.'));
+      if (typeof xhr.abort === 'function') xhr.abort();
+    };
+    try { xhr.send(null); } catch (error) { done(error); }
   }
   function installedReceiverVersion(bytes, platform) {
     var marker = '<script id="receiver-catalog" type="application/json">';
@@ -261,37 +301,12 @@
       if (!data || !data.result || data.result.success !== true) fail(data && data.result && data.result.error || 'ezRemote Client did not confirm the operation.');
     }
     function readUpdateHash(name, size, callback) {
-      if (Math.floor(size) !== size || size < 1 || size > updateLimit) {
-        callback(new Error('A receiver file has an invalid size.')); return;
-      }
-      var xhr = xhrFactory(), finished = false;
-      function done(error, hash, bytes) {
-        if (finished) return;
-        finished = true;
-        callback(error, hash, bytes);
-      }
       // Read each on-disk version rather than a cached response from before the rename.
       var path = updateFolder + '/' + name + '?wwb-read=' + new Date().getTime() + '-' + (++updateReads);
-      try {
-        xhr.open('GET', path, true);
-        xhr.responseType = 'arraybuffer';
-        xhr.timeout = 20000;
-      } catch (error) { done(error); return; }
-      xhr.onreadystatechange = function () {
-        if (finished || xhr.readyState !== 4) return;
-        if (xhr.status !== 200 || !xhr.response || xhr.response.byteLength !== size) {
-          done(new Error('Could not read the complete receiver file ' + name + '.')); return;
-        }
-        var bytes = new Uint8Array(xhr.response);
-        done(null, sha256Bytes(bytes), bytes);
-      };
-      xhr.onerror = xhr.ontimeout = function () { done(new Error('Could not verify ' + name + ' through ezRemote.')); };
-      xhr.onprogress = function (event) {
-        if (event.loaded <= size) return;
-        done(new Error('A receiver file exceeds its expected size.'));
-        if (typeof xhr.abort === 'function') xhr.abort();
-      };
-      try { xhr.send(null); } catch (error) { done(error); }
+      readUpdateFile(xhrFactory, path, size, function (error, bytes) {
+        if (error) callback(error);
+        else callback(null, sha256Bytes(bytes), bytes);
+      });
     }
     function applyReceiverUpdate(version, hash, size, callback) {
       var update;
@@ -310,8 +325,12 @@
         return Number(match.size);
       }
       function verify(name, bytes, expected, callback) {
-        readUpdateHash(name, bytes, function (error, actual) {
-          callback(error || (actual !== expected ? new Error('SHA-256 mismatch for ' + name + '.') : null));
+        readUpdateHash(name, bytes, function (error, actual, content) {
+          if (!error && actual !== expected) error = new Error('SHA-256 mismatch for ' + name + '.');
+          if (!error && name === update.name && queryValue(location.search, 'apply-tracked-update') === '1' && installedReceiverVersion(content, platform) !== version) {
+            error = new Error('The staged file does not contain the expected downloader version.');
+          }
+          callback(error);
         });
       }
       list(updateFolder, function (error, entries) {
@@ -487,6 +506,7 @@
     };
   }
   function createClient(location, xhrFactory) {
+    var stateReads = 0;
     function request(method, path, body, callback) {
       if (!receiverOrigin(location)) { callback(new Error('Open this companion through your console receiver on port 6701.')); return; }
       var xhr = xhrFactory(), finished = false;
@@ -544,7 +564,22 @@
           });
         }
       },
-      states: function (callback) { request('GET', '/get_download_state', null, function (error, text) { if (error) { callback(error); return; } try { var data = JSON.parse(text); if (Object.prototype.toString.call(data) !== '[object Array]') fail('The receiver status is invalid.'); for (var i = 0; i < data.length; i++) if (!data[i] || typeof data[i].path !== 'string' || data[i].path.charAt(0) !== '/') fail('The receiver returned an invalid queue entry.'); callback(null, data); } catch (caught) { callback(caught); } }); },
+      states: function (callback, fresh) {
+        var path = '/get_download_state';
+        if (fresh) path += '?wwb-read=' + new Date().getTime() + '-' + (++stateReads);
+        request('GET', path, null, function (error, text) {
+          if (error) { callback(error); return; }
+          var data;
+          try {
+            data = JSON.parse(text);
+            if (Object.prototype.toString.call(data) !== '[object Array]') fail('The receiver status is invalid.');
+            for (var i = 0; i < data.length; i++) {
+              if (!data[i] || typeof data[i].path !== 'string' || data[i].path.charAt(0) !== '/') fail('The receiver returned an invalid queue entry.');
+            }
+          } catch (caught) { callback(caught); return; }
+          callback(null, data);
+        });
+      },
       queue: function (body, callback) { request('POST', '/download_url', body, function (error, text) { if (error) { error.uncertainSubmission = true; callback(error); return; } try { callback(null, submission(text)); } catch (caught) { caught.uncertainSubmission = caught.code !== 'rejected'; callback(caught); } }); }
     };
   }
@@ -576,6 +611,98 @@
     if (!match) return '';
     try { return decodeURIComponent(match[1].replace(/\+/g, ' ')); } catch (error) { return ''; }
   }
+  function installUpdateProgress(document, window, data) {
+    var platform = platformName(data.platform), location = window.location;
+    var panel = document.getElementById('receiver-preparation');
+    var receiverPath = (platform === 'ps4' ? '/data/' : '/') + 'whatsite-' + platform + '.html';
+    if (!panel || window.top !== window || location.hostname !== '127.0.0.1' ||
+        !receiverOrigin(location) || location.pathname !== receiverPath) return;
+    panel.hidden = false;
+    document.getElementById('receiver-download-ui').hidden = true;
+    document.getElementById('receiver-setup').hidden = true;
+    document.getElementById('receiver-title').textContent = platform.toUpperCase() + ' downloader update';
+    document.getElementById('receiver-intro').textContent = 'Keep this page open while ezRemote downloads and checks the update.';
+    function add(tag, content) {
+      var element = document.createElement(tag);
+      element.textContent = content;
+      panel.appendChild(element);
+      return element;
+    }
+    var status = add('p', 'Checking update…');
+    status.setAttribute('role', 'status');
+    var version = queryValue(location.search, 'version'), hash = queryValue(location.search, 'sha256');
+    var size = queryValue(location.search, 'bytes'), update;
+    var back = add('a', 'Return to Download Centre');
+    back.href = 'https://speedy-away.github.io/' + platform + '/downloads/#host-' + platform + '-update';
+    try { update = updateRelease(platform, version, hash, size); }
+    catch (error) { status.textContent = error.message; return; }
+    if (data.version === version || (data.version && newerVersion(data.version, version))) {
+      status.textContent = 'Your downloader is up to date.';
+      return;
+    }
+    var meter = add('progress', '');
+    meter.hidden = true;
+    meter.max = 100;
+    meter.setAttribute('aria-label', 'Update download progress');
+    var apply = add('a', 'Apply update');
+    apply.hidden = true;
+    apply.className = 'receiver-guide';
+    var timer, stopped = false, reads = 0;
+    var xhrFactory = function () { return new window.XMLHttpRequest(); };
+    var client = createClient(location, xhrFactory);
+    var file = (platform === 'ps4' ? '/data/' : '/') + update.name;
+    var applyURL = 'http://127.0.0.1:' + (platform === 'ps4' ? '8080' : '9090') +
+      receiverUpdateFolder(platform) + '/whatsite-' + platform + '.html?apply-tracked-update=1&version=' +
+      version + '&sha256=' + hash + '&bytes=' + size;
+    function wait(message) {
+      if (stopped) return;
+      if (status.textContent !== message) status.textContent = message;
+      timer = window.setTimeout(poll, 2500);
+    }
+    function verifyStage() {
+      meter.hidden = true;
+      var path = file + '?wwb-read=' + new Date().getTime() + '-' + (++reads);
+      readUpdateFile(xhrFactory, path, update.bytes, function (error, bytes) {
+        if (stopped) return;
+        if (error) { wait(error.message + ' Keep ezRemote running.'); return; }
+        if (sha256Bytes(bytes) !== hash || installedReceiverVersion(bytes, platform) !== version) {
+          status.textContent = 'The saved update could not be verified. Return to the Download Centre for recovery.';
+          return;
+        }
+        status.textContent = 'Version ' + version + ' is downloaded and verified.';
+        meter.hidden = false;
+        meter.value = 100;
+        apply.href = applyURL + '&wwb-open=' + new Date().getTime();
+        apply.hidden = false;
+      });
+    }
+    function poll() {
+      client.states(function (error, states) {
+        if (stopped) return;
+        meter.hidden = true;
+        if (error) { wait('Could not read live progress. Keep ezRemote running.'); return; }
+        var current, active;
+        for (var i = 0; i < states.length; i++) {
+          if (states[i].path !== update.path) continue;
+          current = progress(states[i]);
+          if (current.phase === 'queued' || current.phase === 'downloading' || current.phase === 'resumed') active = current;
+        }
+        if (active) {
+          meter.hidden = false;
+          if (active.total === update.bytes) meter.value = active.percent;
+          else meter.removeAttribute('value');
+          wait(active.label + (active.total === update.bytes ? ' · ' + active.percent + '% received' : ''));
+        } else if (!current || current.complete) {
+          verifyStage();
+        } else {
+          wait(current.phase === 'failed' ? 'ezRemote reported a failure. If it persists, return to the Download Centre to retry.' : 'Waiting for a valid update status from ezRemote.');
+        }
+      }, true);
+    }
+    window.addEventListener('pagehide', function () { stopped = true; window.clearTimeout(timer); });
+    window.addEventListener('pageshow', function (event) { if (event.persisted && stopped) window.location.reload(); });
+    poll();
+  }
   function installReceiverUpdate(document, window, data) {
     var platform = platformName(data.platform);
     var panel = document.getElementById('receiver-preparation');
@@ -599,9 +726,12 @@
     status.setAttribute('role', 'status');
     var sha = queryValue(window.location.search, 'sha256');
     var bytes = queryValue(window.location.search, 'bytes');
-    try { receiverUpdateSpec(platform, window.location, data.version, sha, bytes); }
+    var tracked = queryValue(window.location.search, 'apply-tracked-update') === '1';
+    if (tracked && window.top !== window) return;
+    var version = tracked ? queryValue(window.location.search, 'version') : data.version;
+    try { receiverUpdateSpec(platform, window.location, version, sha, bytes); }
     catch (error) { status.textContent = error.message; return; }
-    status.textContent = 'Staged version ' + data.version + ' is ready to check.';
+    status.textContent = 'Staged version ' + version + ' is ready to check.';
     var button = text('button', 'Apply update', 'receiver-prepare-action');
     button.type = 'button';
     var progressBar = text('progress', '');
@@ -615,7 +745,7 @@
       button.disabled = true;
       progressBar.hidden = false;
       status.textContent = 'Checking the staged file, the installed downloader and its backup…';
-      client.applyReceiverUpdate(data.version, sha, bytes, function (error, result) {
+      client.applyReceiverUpdate(version, sha, bytes, function (error, result) {
         progressBar.hidden = true;
         if (error) {
           status.className = 'receiver-message receiver-error';
@@ -628,7 +758,7 @@
           return;
         }
         status.textContent = result.alreadyCurrent ? 'This version is already installed.' : 'Update installed and verified. The previous downloader is saved as a backup.';
-        text('a', 'Open updated downloader', 'receiver-guide').href = installedURL + '?v=' + data.version;
+        text('a', 'Open updated downloader', 'receiver-guide').href = installedURL + '?v=' + version;
         if (result.backup) text('a', 'Open previous downloader', 'receiver-guide').href = receiver + result.backup;
       });
     };
@@ -695,7 +825,8 @@
       var dataNode = document.getElementById('receiver-catalog');
       if (!dataNode) return;
       var data = JSON.parse(dataNode.textContent), platform = platformName(data.platform), items = data.items || [];
-      if (queryValue(window.location.search, 'apply-update') === '1') { installReceiverUpdate(document, window, data); return; }
+      if (queryValue(window.location.search, 'update-progress') === '1') { installUpdateProgress(document, window, data); return; }
+      if (queryValue(window.location.search, 'apply-update') === '1' || queryValue(window.location.search, 'apply-tracked-update') === '1') { installReceiverUpdate(document, window, data); return; }
       if (queryValue(window.location.search,'prepare') === '1') { installPreparation(document,window,platform,items); return; }
       var selectedRequest = /(?:\?|&)(?:file|id)(?:=([^&]*))?(?=&|$)/.exec(window.location.search || '');
       var selectedId = '', selectedItems = [], unavailableFile = false;

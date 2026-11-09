@@ -39,7 +39,7 @@ function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query =
   ids.setup = element('details');
   if (updateRelease !== undefined) {
     const prefix = 'host-' + platform + '-update';
-    for (const id of ['form','request','submit','open','status','data','retry']) ids[prefix + '-' + id] = element();
+    for (const id of ['form','request','submit','open','track','status','data','retry']) ids[prefix + '-' + id] = element();
     ids[prefix] = element('section');
     ids[prefix].hidden = true;
     ids[prefix + '-submit'].disabled = true;
@@ -96,7 +96,7 @@ for (const [platform, folder, port, queuePath, type] of [
   assert.match(formHTML, /method="post" enctype="text\/plain" target="_self"/);
   assert.equal((formHTML.match(/<(?:input|button)\b/g) || []).length, 2);
   assert.doesNotMatch(formHTML, /\bname=/);
-  assert.ok(html.includes(`href="http://127.0.0.1:6701${queuePath}"`));
+  assert.ok(html.includes(`id="${prefix}-track">View update progress</a>`));
   const release = testUpdateRelease(platform);
   const userAgent = platform === 'ps4' ? 'PlayStation 4/14.00' : 'PlayStation 5/7.61';
   const {ids, requests} = openDesk({platform, userAgent, updateRelease:release});
@@ -108,6 +108,7 @@ for (const [platform, folder, port, queuePath, type] of [
   const stage = `${folder}whatsite-${platform}-update-2026.11.02.26-aaaaaaaaaaaa.html`;
   ids['host-download-address'].value = '192.168.1.40';
   ids['host-download-connection'].events.submit({preventDefault(){}});
+  assert.equal(ids[prefix + '-track'].href, `http://127.0.0.1:6701${queuePath}?update-progress=1&version=${release.version}&sha256=${release.sha256}&bytes=${release.bytes}`);
   const applyURL = 'http://127.0.0.1:' + port + stage + '?apply-update=1&sha256=' + release.sha256 + '&bytes=' + release.bytes;
   const applyLink = ids[prefix + '-open'];
   assert.equal(applyLink.href, applyURL);
@@ -175,7 +176,7 @@ test('a staging request survives reload and alias navigation, and one manual ret
   const reopened = open({pagePath:'/ps4/downloads/'});
   assert.equal(reopened.ids[prefix + '-submit'].disabled, true);
   assert.equal(reopened.ids[prefix + '-retry'].hidden, false);
-  assert.match(reopened.ids[prefix + '-status'].textContent, /was requested/);
+  assert.match(reopened.ids[prefix + '-status'].textContent, /Update requested.*View update progress/);
   assert.equal(submit(reopened), true);
   assert.equal(reopened.ids[prefix + '-request'].name, undefined);
   reopened.ids[prefix + '-retry'].events.click();

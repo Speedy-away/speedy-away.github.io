@@ -1,0 +1,51 @@
+{
+  "reviewed": "2026-11-02",
+  "jobs": [
+    {
+      "id": "whatsite-ps4-console-downloader-2026-11-02-26",
+      "title": "whatwhatboy PS4 console downloader",
+      "platform": "PS4",
+      "category": [
+        "Tools"
+      ],
+      "project": "whatsite Console Downloader",
+      "version": "2026.11.02.26",
+      "filename": "whatsite-ps4.html",
+      "url": "https://speedy-away.github.io/downloads/helpers/console-download-receivers/ps4/2026.11.02.26-c5ab338528fc/whatsite-ps4.html",
+      "importPath": "downloads/helpers/console-download-receivers/ps4/2026.11.02.26-c5ab338528fc/whatsite-ps4.html",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 796676,
+      "expectedSha256": "c5ab338528fcd61ec434be1cf3a8852ed88c92eb431da896861c83464db87464",
+      "pages": [
+        "console/ps4/whatsite-ps4.html",
+        "console/ps4/downloads.html"
+      ]
+    },
+    {
+      "id": "whatsite-ps5-console-downloader-2026-11-02-26",
+      "title": "whatwhatboy PS5 console downloader",
+      "platform": "PS5",
+      "category": [
+        "Tools"
+      ],
+      "project": "whatsite Console Downloader",
+      "version": "2026.11.02.26",
+      "filename": "whatsite-ps5.html",
+      "url": "https://speedy-away.github.io/downloads/helpers/console-download-receivers/ps5/2026.11.02.26-767a78533917/whatsite-ps5.html",
+      "importPath": "downloads/helpers/console-download-receivers/ps5/2026.11.02.26-767a78533917/whatsite-ps5.html",
+      "mirror": true,
+      "archiveRole": [
+        "Builds"
+      ],
+      "expectedBytes": 596251,
+      "expectedSha256": "767a78533917c367e7deb54fc1beffa1a9595c95bec2b296f91ae5dcad26ff00",
+      "pages": [
+        "console/ps5/whatsite-ps5.html",
+        "console/ps5/downloads.html"
+      ]
+    }
+  ]
+}

@@ -62,12 +62,14 @@ function verify(output){const report=JSON.parse(fs.readFileSync(path.join(output
   assert.equal(receiver.platform,platform);
   assert.equal(receiver.version,update.version);
   assert.match(companion,/apply-update/);
+  assert.match(companion,/update-progress/);
   for(const route of ['hosts/'+platform+'/downloads/index.html',platform+'/downloads/index.html']){
    const html=fs.readFileSync(path.join(output,route),'utf8');
    const metadata=html.match(new RegExp('<script type="application/json" id="host-'+platform+'-update-data">([\\s\\S]*?)</script>'));
    assert.ok(metadata,route+' update metadata');
    assert.deepEqual(JSON.parse(metadata[1]),update);
    assert.ok(html.includes('<form id="host-'+platform+'-update-form" action="http://127.0.0.1:6701/download_url" method="post" enctype="text/plain"'),route+' update form');
+   assert.ok(html.includes('id="host-'+platform+'-update-track"'),route+' progress link');
   }
  }
  assert.ok(report.bytes<1e9);assert.equal(failures.length,0,failures.slice(0,15).join('\n'));const result={status:'passed',localRuntimeConfigs,runtimeHandoffConfigs,bytes:report.bytes,pagesLinks:links,nativeFeedEntries:Object.keys(ps4Feed).length+ps5Feed.length,nativeScriptsUnchanged:checkedScripts,cachedResourcesRetained:cachedResources,runtimeDocumentsOptimized,offloadedFiles:report.offloadedFiles,compactAliasesVerified,sharedCatalogueFiles:report.sharedCatalogueFiles,routingBytes:report.routingBytes,activeRuntimeFiles:pinned.size,issues:0};console.log(JSON.stringify(result));return result;}

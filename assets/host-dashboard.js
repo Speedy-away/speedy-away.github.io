@@ -242,17 +242,6 @@
     function windowed(rows){if(moreButton){moreButton.hidden=rows.length<=renderLimit;moreButton.textContent='Show more ('+Math.min(rows.length,renderLimit)+' of '+rows.length+')';}return consoleBrowser?rows.slice(0,renderLimit):rows;}
     function catalogTile(options){if(consoleBrowser||category==='payloads')options.textOnly=true;return catalogUI.tileMarkup(options);}
     var address = doc.querySelector('#host-console-address'), status = doc.querySelector('#host-status');
-    // A failed native handoff must leave a visible, explicit recovery control.
-    // It never clears the lock automatically; the user must confirm a restart.
-    var nativeRecovery = doc.querySelector('#host-native-recovery');
-    if (!nativeRecovery && status && doc.createElement) {
-      nativeRecovery = doc.createElement('aside'); nativeRecovery.id='host-native-recovery'; nativeRecovery.hidden=true; nativeRecovery.className='host-transfer-warning';
-      nativeRecovery.innerHTML='<strong>Previous native attempt saved</strong><p>Restart the console before clearing this saved attempt.</p><label><input type="checkbox" id="host-native-restarted"> I checked and restarted the console.</label> <button type="button" id="host-native-clear">Clear saved attempt</button>';
-      if(status.parentNode&&typeof status.parentNode.insertBefore==='function') status.parentNode.insertBefore(nativeRecovery,status.nextSibling);
-    }
-    function updateNativeRecovery(){if(!nativeRecovery)return;var locked=false;try{locked=Boolean(win.WhatsiteKaro&&win.WhatsiteKaro.LOCK&&win.localStorage.getItem(win.WhatsiteKaro.LOCK));}catch(_){locked=false;}nativeRecovery.hidden=!locked;var clearButton=doc.querySelector('#host-native-clear');if(clearButton)clearButton.disabled=!locked||!doc.querySelector('#host-native-restarted')||!doc.querySelector('#host-native-restarted').checked;}
-    if(nativeRecovery){var restartBox=doc.querySelector('#host-native-restarted'),clearNative=doc.querySelector('#host-native-clear');if(restartBox)restartBox.addEventListener('change',updateNativeRecovery);if(clearNative)clearNative.addEventListener('click',function(){try{if(!restartBox||!restartBox.checked)throw Error('Check that you restarted the console before clearing the saved attempt.');if(!win.WhatsiteKaro||typeof win.WhatsiteKaro.clear!=='function')throw Error('The native attempt guard is unavailable. Reload this page.');win.WhatsiteKaro.clear(win,true);if(status)status.textContent='Saved attempt cleared. Choose Load again when the console is ready.';updateNativeRecovery();render();}catch(error){if(status)status.textContent=error.message;}});updateNativeRecovery();}
-
     var grid = doc.querySelector('#host-action-grid'), count = doc.querySelector('#host-action-count');
     var lastGridMarkup=null,lastGridKey='',lastCountText=null,gridChanged=false,countChanged=false,catalogueStamp=null,lastChoiceStructure=null;
     function writeGrid(markup){
@@ -746,13 +735,21 @@
           else if(action.platform==='ps5'&&action.runtimeId==='ps5-umtx'){var request=JSON.stringify({firmware:firmware.value,createdAt:Date.now()});win.sessionStorage.setItem('wwb.ps5.load.request.v1',request);if(win.sessionStorage.getItem('wwb.ps5.load.request.v1')!==request)throw Error('Browser session storage is unavailable. Nothing was started.');}
           win.location.href=url;
         } catch(error) {
-          if (error.code === 'cache-not-ready') {
+          if (error.code === 'cache-not-ready' || error.code === 'previous-native-attempt') {
             browserHandoff=false;
             button.disabled=false;
           }
           button.setAttribute('aria-busy','false');
           status.setAttribute('role','alert');
           tell(error.message,true);
+          if (error.code === 'previous-native-attempt') {
+            var recovery = doc.createElement('a');
+            var recoveryPath = action.entryURL || '/hosts/karo/#loader';
+            if (action.runtimeId === 'gamerhack-g2all' && detection.firmware === '14.00') recoveryPath = '/ps4/14.00/';
+            recovery.href = navigationURL(recoveryPath);
+            recovery.textContent = ' Open loader recovery';
+            status.appendChild(recovery);
+          }
         }
       }
       else if (url) { win.open(url, '_blank', 'noopener'); tell('Opening ' + action.label + '. Follow the loader status on that page.'); }

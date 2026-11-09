@@ -1,7 +1,7 @@
 'use strict';
 // Presentation and navigation only. Native scripts and downloaded files are never edited.
 const fs=require('node:fs'),path=require('node:path');
-const popup=require('./host-self-host-popup.cjs');
+const {eligible:isAuthoredHostPage}=require('./host-self-host-popup.cjs');
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const MODERN_PS4=['10.00','11.00','11.02','11.50','11.52','12.00','12.02','12.50','12.52','13.00','13.02','13.04','13.50','13.52'];
 const PS5_REMAINING=['3.10','3.21','5.00','5.02','5.10','5.50'];
@@ -151,19 +151,13 @@ function apply(html,name,{base='',root}={}){
  const runtimePS5=/^hosts\/runtime\/ps5-webkit-[a-f0-9]{12}\/index\.html$/.test(name);
  const nativeLanding=runtimeAfter||runtimePS5;
  if(/^hosts\/runtime\//.test(name)&&!nativeLanding)return html;
- if(!nativeLanding&&!popup.eligible(name,html))return html;
- const options={base};
+ if(!nativeLanding&&!isAuthoredHostPage(name,html))return html;
  if(runtimeAfter){
   const title='PS4 WebKit Exploit - 13.52–14.00';
   html=html.replace(/<title>[^<]*<\/title>/,'<title>'+title+' | WWB HOST</title>').replace(/<b>afterglow<\/b>/i,'<b>'+title+'</b>').replace(/<img class="meme"[^>]*>/,'').replace('>Start</button>','>Load exploit</button>');
-  html=html.replace(/<p class="byline">[\s\S]*?<\/p>/,'');
-  options.technicalNotes=['Original project: Afterglow by well0nez/m0zz. GoldHEN by SiSTRo. The included ps4-hen is patched pre-release-main-182; the bundled GoldHEN numeric version is not independently established.','Afterglow and patchsets: AGPL-3.0-or-later. raw13g scaffolding: MIT. Primitive lineage and all original notices remain in the linked technical documentation. The upstream README states GoldHEN was included with the author’s permission.','Exact firmware support: 13.52 and 14.00. A grouped label does not imply intermediate versions.'];
-  const dir=base+'/'+name.replace(/web\/index\.html$/,'');
-  options.projectLinks=[{label:'Original source and attribution',url:'https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d'},{label:'AGPL license',url:'https://speedy-away.github.io'+dir+'web/LICENSE'},{label:'MIT notice',url:'https://speedy-away.github.io'+dir+'web/LICENSE-raw13g'},{label:'Technical lineage',url:'https://speedy-away.github.io'+dir+'web/TECHNICAL.md'}];
  }
  if(nativeLanding)html=html.replace('<body>','<body class="host-compact host-runtime-landing">').replace('</head>','<link rel="stylesheet" href="'+base+'/assets/host-compact.css?v=1"><link rel="stylesheet" href="'+base+'/assets/host-blue-theme.css?v=1"></head>');
- // Never add site/popup code to execution documents, only authored landing controls.
- html=popup.apply(nativeLanding?'hosts/launcher/index.html':name,projectPS5(projectPS4(html,name,root),name,root),options);
+ html=projectPS5(projectPS4(html,name,root),name,root);
  return require('./host-ps5-webkit-ui.cjs').apply(html,name,{base});
 }
 module.exports={MODERN_PS4,PS5_REMAINING,ps5RemainingRoute,groups,actions,directory,build,apply,publicPS4Actions,showNativeLog};

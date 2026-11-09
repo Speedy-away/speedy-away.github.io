@@ -157,16 +157,34 @@ test('an existing native lock exposes explicit recovery and permits a new handof
   assert.equal(nodes.load.disabled, false);
 });
 
-test('an available cache update requires a trusted refresh before arming a native attempt', () => {
+test('the short launcher applies a saved cache update automatically and never arms Load', () => {
   const {win, doc, nodes, cache} = fixture('PlayStation 4/14.00');
   let reloads = 0;
   cache.status = 4;
   cache.swapCache = () => { cache.status = 1; };
   win.location.reload = () => { reloads++; };
   shortLoader.install(win, doc);
-  assert.equal(nodes['cache-state'].textContent, 'Update ready');
+  assert.equal(cache.status, 1);
+  assert.equal(nodes.refresh.hidden, true);
+  assert.equal(nodes.load.disabled, true);
+  assert.equal(reloads, 1);
+  cache.fire('updateready');
+  assert.equal(reloads, 1);
+  assert.equal(win.sessionStorage.getItem(guard.TICKET), null);
+  assert.equal(win.localStorage.getItem(guard.LOCK), null);
+});
+
+test('an unsuccessful automatic cache swap leaves a manual retry and no launch ticket', () => {
+  const {win, doc, nodes, cache} = fixture('PlayStation 4/14.00');
+  let reloads = 0;
+  cache.status = 4;
+  cache.swapCache = () => {};
+  win.location.reload = () => { reloads++; };
+  shortLoader.install(win, doc);
   assert.equal(nodes.refresh.hidden, false);
   assert.equal(nodes.load.disabled, true);
+  assert.match(nodes.status.textContent, /could not be applied/);
+  cache.swapCache = () => { cache.status = 1; };
   nodes.refresh.fire('click', {isTrusted: false});
   assert.equal(reloads, 0);
   nodes.refresh.fire('click', {isTrusted: true});

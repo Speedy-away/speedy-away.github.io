@@ -56,15 +56,19 @@
     </section>
     <section id="host-ps5-update" class="host-download-setup" aria-labelledby="host-ps5-update-title" hidden>
       <h2 id="host-ps5-update-title">Update the PS5 downloader</h2>
-      <p>Keep ezRemote Client and its background server running. Download this release to a separate staging file on your PS5. When ezRemote reports the download complete, press Back if the browser left this page, then choose <strong>Open staged update</strong> to verify and apply it.</p>
+      <p>Keep ezRemote Client and its background server running. Choose <strong>Download update</strong>, then return here if the browser opens a blank page. Choose <strong>View update progress</strong> to see when Apply is ready.</p>
       <form id="host-ps5-update-form" action="http://127.0.0.1:6701/download_url" method="post" enctype="text/plain" target="_self" accept-charset="UTF-8">
         <input type="hidden" id="host-ps5-update-request">
         <button id="host-ps5-update-submit" type="submit" disabled>Download downloader update</button>
       </form>
-      <p><a href="http://127.0.0.1:6701/whatsite-ps5.html">Check the installed download queue</a> · <a id="host-ps5-update-open">Open staged update</a></p>
+      <p><a id="host-ps5-update-track">View update progress</a></p>
       <p id="host-ps5-update-status" role="status"></p>
       <button id="host-ps5-update-retry" type="button" hidden>I checked the queue. Enable retry.</button>
-      <p>If the staged update is missing, check the queue before retrying. If the browser blocks the update request, use the direct URL under <strong>Set up console downloads</strong>.</p>
+      <details>
+        <summary>Update from an older downloader</summary>
+        <p>If View update progress opens the regular queue, wait for the update to complete there, then return here and <a id="host-ps5-update-open">open the staged update</a>. This installs the version that supports the progress screen.</p>
+        <p>If the browser blocks the update request, use the direct URL under <strong>Set up console downloads</strong>.</p>
+      </details>
       <script type="application/json" id="host-ps5-update-data">null</script>
     </section>
     <details id="native-feed" class="host-download-setup">

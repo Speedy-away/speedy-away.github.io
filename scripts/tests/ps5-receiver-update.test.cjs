@@ -101,13 +101,96 @@ function openStagedPage(platform, f) {
     'receiver-catalog': {textContent: JSON.stringify({platform, version, items: []})}
   };
   const document = {readyState: 'complete', createElement: element, getElementById(id) { return elements[id]; }};
-  receiver.install(document, {location: f.location, XMLHttpRequest: f.XHR, ...f.browser});
+  const browser = {location: f.location, XMLHttpRequest: f.XHR, ...f.browser};
+  browser.top = browser;
+  receiver.install(document, browser);
   assert.equal(f.requests.length, 0);
   assert.equal(elements['receiver-download-ui'].hidden, true);
   return elements['receiver-preparation'].children;
 }
 
+function openProgress(platform, f, options = {}) {
+  const receiverPath = (platform === 'ps4' ? '/data/' : '/') + f.target;
+  const nodes = new Map();
+  const timers = [], requests = [], events = {};
+  let states = [];
+  function element(tag) {
+    return {tag, children: [], appendChild(child) { this.children.push(child); }, setAttribute() {}, removeAttribute() {}};
+  }
+  const document = {readyState: 'complete', createElement: element, getElementById(id) {
+    if (!nodes.has(id)) nodes.set(id, element(id));
+    return nodes.get(id);
+  }};
+  document.getElementById('receiver-catalog').textContent = JSON.stringify({platform, version: '2026.11.02.24', items: []});
+  const location = {protocol: 'http:', hostname: '127.0.0.1', port: '6701', pathname: receiverPath,
+    search: '?update-progress=1&version=' + version + '&sha256=' + f.hash + '&bytes=' + f.staged.length, ...options.location};
+  const browser = {location, setTimeout(fn) { timers.push(fn); }, clearTimeout() {}, addEventListener(name, fn) { events[name] = fn; }, XMLHttpRequest: function () {
+    this.open = (method, url) => {
+      assert.equal(method, 'GET');
+      requests.push(url);
+      this.url = url;
+    };
+    this.send = () => {
+      this.status = 200;
+      if (this.url.startsWith('/get_download_state?wwb-read=')) this.responseText = JSON.stringify(states);
+      else {
+        assert.match(this.url, new RegExp('^' + (platform === 'ps4' ? '/data/' : '/') + f.stage.replaceAll('.', '\\.') + '\\?wwb-read='));
+        const bytes = f.files.get(f.stage);
+        if (!bytes) this.status = 404;
+        else this.response = Uint8Array.from(bytes).buffer;
+      }
+      this.readyState = 4;
+      this.onreadystatechange();
+    };
+  }};
+  browser.top = options.framed ? {} : browser;
+  const state = (state, bytes_transfered) => ({state, bytes_transfered, path: f.folder + '/' + f.stage, file_size: f.staged.length});
+  states = options.initialStates || [state(0, 0)];
+  receiver.install(document, browser);
+  return {nodes, requests, state, events, advance(next) { states = next; timers.shift()(); }};
+}
+
 for (const platform of ['ps4', 'ps5']) {
+  test(platform + ' tracks only the selected update and exposes Apply after verifying it', () => {
+    const f = fixture(platform);
+    const page = openProgress(platform, f);
+    const [status, , meter, apply] = page.nodes.get('receiver-preparation').children;
+    assert.equal(apply.hidden, true);
+    page.advance([page.state(4, f.staged.length), page.state(1, Math.floor(f.staged.length / 2))]);
+    assert.match(status.textContent, /Downloading · (49|50)% received/);
+    assert.equal(apply.hidden, true);
+    page.advance([page.state(1, f.staged.length)]);
+    assert.equal(meter.value, 100);
+    assert.equal(apply.hidden, true);
+    assert.ok(page.requests.every(url => url.startsWith('/get_download_state?wwb-read=')));
+    page.advance([page.state(4, f.staged.length)]);
+    assert.equal(apply.hidden, false);
+    assert.match(status.textContent, /downloaded and verified/);
+    const managerURL = new URL(apply.href);
+    assert.equal(managerURL.pathname, f.folder + '/' + f.target);
+    assert.equal(managerURL.searchParams.get('version'), version);
+    assert.equal(managerURL.searchParams.get('sha256'), f.hash);
+    const manager = fixture(platform, {location: {pathname: managerURL.pathname, search: managerURL.search}});
+    const children = openStagedPage(platform, manager);
+    assert.equal(manager.requests.length, 0);
+    children.find(node => node.tagName === 'button').onclick();
+    assert.deepEqual(manager.mutations().map(x => x.path), ['/__local__/upload', '/__local__/rename']);
+  });
+
+  test(platform + ' progress with missing or corrupt staging cannot offer Apply', () => {
+    const f = fixture(platform, {interrupted: true});
+    const page = openProgress(platform, f);
+    const [status, , , apply] = page.nodes.get('receiver-preparation').children;
+    page.advance([page.state(4, f.staged.length)]);
+    assert.match(status.textContent, /missing/);
+    assert.equal(apply.hidden, true);
+    f.files.set(f.stage, Buffer.alloc(f.staged.length));
+    page.advance([page.state(4, f.staged.length)]);
+    assert.match(status.textContent, /could not be verified/);
+    assert.equal(apply.hidden, true);
+    assert.deepEqual(openProgress(platform, f, {framed: true}).requests, []);
+    assert.deepEqual(openProgress(platform, f, {location: {hostname: '192.168.1.10'}}).requests, []);
+  });
   test(platform + ' replaces the installed page only after verifying the staged file and backup', () => {
     const f = fixture(platform);
     assert.equal(f.requests.length, 0);

@@ -1968,6 +1968,35 @@
     "scopeOfVerification": "SHA-256 readback gates replacement; this does not authenticate the staged HTML before it opens. The pinned ezRemote HTTP client disables server-certificate verification.",
     "physicalConsoleTested": false
   },
+  "consoleDownloaderProgress20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.27",
+    "status": "Prepared, archived and verified for the combined host release.",
+    "buildReport": "docs/host-menu-companion-build.json",
+    "inventory": "docs/pages-helper-download-inventory.json",
+    "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.26.json",
+    "changes": [
+      "Both Download Centres open a console-local progress screen that reads the exact update's native transfer status.",
+      "Apply update appears after the local file's size, SHA-256 and embedded version pass. The installed page handles confirmation on the local manager origin.",
+      "Versions before .27 use the existing update steps once to install progress support."
+    ],
+    "focusedTestsPassed": 111,
+    "localPagesVerificationPassed": true,
+    "physicalConsoleTested": false
+  },
+  "consoleHostCacheRecovery20261109": {
+    "date": "2026-11-09",
+    "status": "Host dashboard and PS4 14.00 cache corrections verified for publication.",
+    "changes": [
+      "The dashboard no longer renders the saved-attempt card. A blocked Load links to the relevant recovery page, and failed ticket preparation leaves no new attempt lock.",
+      "The PS4 14.00 launcher applies a finished browser cache update and reloads once. The Load button still needs a separate press.",
+      "Public pages omit the Make your own host popup. Existing source attributions and bookmarks remain available."
+    ],
+    "focusedTestsPassed": 81,
+    "localPagesVerificationPassed": true,
+    "releaseFocusedTestsPassed": 172,
+    "physicalConsoleTested": false
+  },
   "consoleOnlySetup20261108": {
     "date": "2026-11-08",
     "status": "Public setup and native Web UI handoff updated. Physical hardware unavailable for this test.",

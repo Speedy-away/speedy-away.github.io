@@ -42,6 +42,18 @@ test('an uncached GamerHack dashboard Load can retry after the cache becomes rea
   assert.equal(new URL(f.window.location.href).pathname,action.launchURL);assert.ok(f.window.sessionStorage.getItem(karo.TICKET));
  }
 });
+test('a saved native attempt leaves the dashboard clear and offers recovery only after Load',()=>{
+ const action=actions.find(a=>a.runtimeId==='gamerhack-g2all');
+ const f=app(action,'14.00'),grid=f.loadContainer,button=grid.querySelector('[data-launch]');
+ f.storage.set(karo.LOCK,'saved attempt');
+ assert.equal(f.created.some(node=>node.id==='host-native-recovery'),false);
+ const before=f.window.location.href;
+ grid.fire('click',{target:button,isTrusted:true});
+ assert.equal(f.window.location.href,before);
+ assert.equal(f.storage.get(karo.LOCK),'saved attempt');
+ assert.equal(f.window.sessionStorage.getItem(karo.TICKET),null);
+ assert.equal(f.ids['host-status'].querySelector('a').href,new URL('/ps4/14.00/',before).href);
+});
 test('active KARO/GamerHack native documents retain their progress nodes and same-origin script dependencies',()=>{for(const a of actions.filter(a=>a.nativeRoute.kind==='karo')){const file=path.join(root,a.launchURL.slice(1)),text=fs.readFileSync(file,'utf8'),start=text.indexOf('var config=')+11,c=JSON.parse(text.slice(start,text.indexOf(';config.base=',start)));assert.match(c.original,/id\s*=\s*["']?(?:msgs|progress|console)\b/);for(const m of c.original.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["']/gi)){const u=new URL(m[1],'https://site.invalid'+a.launchURL);assert.equal(u.origin,'https://site.invalid');assert.ok(fs.existsSync(path.join(root,u.pathname.slice(1))),u.pathname);}assert.ok(text.includes('WhatsiteKaro.openOriginal'));}});
 test('PS5 native dependency failures remain visible, stop subsequent loads and preserve the native console',()=>{const a=actions.find(a=>a.nativeRoute.kind==='ps5-native'),base=path.posix.dirname(a.launchURL),guard=require(path.join(root,base,'../guard.js'));for(const fw of a.firmwares){const f=app(a,fw),url=load.start(f.window,f.document,a,true);f.window.location=new URL(url);const status={},scripts=[],doc={visibilityState:'visible',getElementById:()=>status,createElement:()=>({}),body:{appendChild:s=>scripts.push(s)}};assert.equal(guard.install(doc,f.window,{mode:'run',runPath:a.launchURL}),true);assert.match(status.textContent,/Starting the local/);assert.equal(scripts.length,1);scripts[0].onerror();assert.match(status.textContent,/could not be loaded/);assert.equal(scripts.length,1);}assert.match(fs.readFileSync(path.join(root,a.launchURL.slice(1)),'utf8'),/id="console"/);});
 test('active runtime scope protects payloads and progress dependencies while keeping ZIP download policy',()=>{const pin=require('../host-project-pages.cjs').activeRuntimeFiles(root,[...actions.filter(a=>a.nativeRoute.kind==='karo').map(a=>a.launchURL.slice(1)), 'hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/UMTX/payloads/OnionHENk1.11.elf','downloads/hosts/older.zip']);assert.ok(pin.has('hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/ps5/UMTX/payloads/OnionHENk1.11.elf'));assert.equal(pin.has('downloads/hosts/older.zip'),false);});

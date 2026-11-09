@@ -6,6 +6,7 @@
 }(typeof window === 'undefined' ? this : window, function () {
   'use strict';
   var gamerHackSessionKeys = ['jb2.goldhen_done', 'jb1352-read-retry'];
+  var cacheReloadKey = 'wwb.ps4.short.cache-reload.v1';
 
   function install(win, doc) {
     function node(name) { return doc.getElementById('wwb-short-' + name); }
@@ -25,7 +26,7 @@
     var recovery = node('recovery'), restarted = node('restarted'), clear = node('clear');
     var device = node('device'), cacheState = node('cache-state'), refresh = node('refresh');
     var controller = win.HostSiteLoad, guard = win.WhatsiteKaro;
-    var cache, info, action, busy = false, cacheError = '', lastPercent = -10;
+    var cache, info, action, busy = false, applyingCache = false, cacheError = '', lastPercent = -10;
 
     try {
       action = JSON.parse(data.textContent);
@@ -65,19 +66,20 @@
         var ready = cacheStatus === 1 || cacheStatus === 4;
         var saving = cacheStatus === 2 || cacheStatus === 3;
         var canRefresh = refresh && cacheStatus === 4 && typeof cache.swapCache === 'function';
-        if (refresh) refresh.hidden = !canRefresh || busy;
+        if (refresh) refresh.hidden = !canRefresh || busy || applyingCache;
         if (cacheState) {
           cacheState.textContent = cacheStatus === 4 ? 'Update ready' : ready ? 'Ready' : cacheError ? 'Check failed' :
             !cache ? 'Unavailable' : saving ? 'Saving files' : 'Waiting';
           cacheState.setAttribute('data-state', ready ? 'ready' : cacheError || !cache ? 'blocked' : 'waiting');
         }
-        load.disabled = busy || locked || !ready || Boolean(canRefresh);
-        retry.hidden = !cache || ready || saving || busy;
+        load.disabled = busy || applyingCache || locked || !ready || cacheStatus === 4;
+        retry.hidden = !cache || ready || saving || busy || applyingCache;
         recovery.hidden = !locked || busy;
         clear.disabled = busy || !locked || !restarted.checked;
         if (busy) return;
+        if (applyingCache) { status.textContent = 'Applying the saved cache update…'; return; }
         if (locked) status.textContent = 'Check and restart the console before another attempt.';
-        else if (canRefresh) status.textContent = 'An updated host is available. Apply it before loading.';
+        else if (cacheStatus === 4) status.textContent = canRefresh ? 'The saved update is ready. Choose Apply cache update if it stays here.' : 'Reopen the launcher to use the saved update.';
         else if (ready) status.textContent = 'Cache ready. Press Load GoldHEN when you are ready.';
         else if (cacheError) status.textContent = cacheError;
         else if (!cache) status.textContent = 'This browser did not provide the offline cache required by this loader.';
@@ -91,6 +93,26 @@
           cacheState.setAttribute('data-state', 'blocked');
         }
         status.textContent = 'Browser storage is unavailable. Reopen this page with browser storage enabled.';
+      }
+    }
+
+    function applyCacheUpdate(automatic) {
+      if (busy || applyingCache || !cache || cache.status !== 4 || typeof cache.swapCache !== 'function') return;
+      try {
+        if (automatic && win.sessionStorage.getItem(cacheReloadKey)) return;
+        win.sessionStorage.setItem(cacheReloadKey, '1');
+        if (win.sessionStorage.getItem(cacheReloadKey) !== '1') throw Error('Cache reload marker unavailable.');
+        applyingCache = true;
+        render();
+        cache.swapCache();
+        if (cache.status !== 1) throw Error('Cache did not become ready.');
+        record('Cache update applied. Reloading the host.');
+        win.location.reload();
+      } catch (_) {
+        applyingCache = false;
+        render();
+        status.textContent = 'The cache update could not be applied automatically. Reopen the launcher while connected.';
+        record(status.textContent);
       }
     }
 
@@ -111,6 +133,7 @@
           if (name !== 'downloading') progress.hidden = true;
           record(cacheMessages[name]);
           render();
+          if (name === 'updateready') applyCacheUpdate(true);
         });
       });
       cache.addEventListener('progress', function (event) {
@@ -135,15 +158,7 @@
       }
     });
     if (refresh) refresh.addEventListener('click', function (event) {
-      if (event.isTrusted !== true || busy || !cache || cache.status !== 4) return;
-      try {
-        cache.swapCache();
-        record('Cache update applied. Reloading the host.');
-        win.location.reload();
-      } catch (_) {
-        status.textContent = 'The cache update could not be applied. Close and reopen this page.';
-        record(status.textContent);
-      }
+      if (event.isTrusted === true) applyCacheUpdate(false);
     });
     restarted.addEventListener('change', render);
     clear.addEventListener('click', function (event) {
@@ -187,6 +202,10 @@
     });
     render();
     record(status.textContent);
+    if (cache && cache.status === 1) {
+      try { win.sessionStorage.removeItem(cacheReloadKey); } catch (_) {}
+    }
+    applyCacheUpdate(true);
   }
 
   return { install: install };

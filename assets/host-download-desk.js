@@ -91,6 +91,7 @@
     var button = doc.getElementById(prefix + '-submit');
     var message = doc.getElementById(prefix + '-status');
     var open = doc.getElementById(prefix + '-open');
+    var track = doc.getElementById(prefix + '-track');
     var retryUpdate = doc.getElementById(prefix + '-retry');
     var storageKey = 'wwb-downloader-update:' + platform + ':' + releaseKey;
     var requested = '';
@@ -98,6 +99,12 @@
     var attempts = 0;
     var applyURL = 'http://127.0.0.1:' + (ps4 ? '8080' : '9090') + stagingPath +
       '?apply-update=1&sha256=' + release.sha256 + '&bytes=' + release.bytes;
+    var trackURL = 'http://127.0.0.1:6701' + (ps4 ? '/data/' : '/') + 'whatsite-' + platform +
+      '.html?update-progress=1&version=' + release.version + '&sha256=' + release.sha256 + '&bytes=' + release.bytes;
+    track.href = trackURL;
+    track.addEventListener('click', function () {
+      track.href = trackURL + '&wwb-open=' + new Date().getTime() + '-' + (++attempts);
+    });
     open.href = applyURL;
     open.addEventListener('click', function () {
       open.href = applyURL + '&wwb-open=' + new Date().getTime() + '-' + (++attempts);
@@ -111,7 +118,7 @@
       retryUpdate.hidden = !button.disabled;
       button.textContent = (retryEnabled ? 'Retry update ' : 'Download update ') + release.version;
       message.textContent = retryEnabled ? 'One retry is enabled on this page. Choose Retry update to request it again.' :
-        button.disabled ? 'An update download was requested. Check ezRemote for completion before opening the staged file. Enable a retry only if the request failed.' : '';
+        button.disabled ? 'Update requested. Open View update progress to see when it is ready.' : '';
     }
     retryUpdate.addEventListener('click', function () {
       retryFor = previousRequest();

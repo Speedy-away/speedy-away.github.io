@@ -8,3 +8,13 @@ test('online Load works before cache exists or finishes, while retaining the nat
   assert.throws(()=>api.authorize(w,e,'/native/web/',true,true),/previous native attempt/);
  }
 });
+
+test('failed ticket preparation leaves no saved native attempt',()=>{
+ const writes=[];
+ const w={navigator:{userAgent:'PlayStation 4/14.00'},document:{visibilityState:'visible'},
+  localStorage:{getItem:()=>null,setItem:(key)=>writes.push(key)},
+  sessionStorage:{getItem:()=>null,setItem:()=>{}}};
+ const entry={platform:'ps4',firmwares:['14.00'],path:'g2all/index.html'};
+ assert.throws(()=>api.authorize(w,entry,'/native/web/',true,true),/could not save the entry ticket/);
+ assert.deepEqual(writes,[]);
+});
