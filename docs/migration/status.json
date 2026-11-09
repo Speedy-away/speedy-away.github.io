@@ -1952,12 +1952,81 @@
       "ps5RuntimeFiles": 67
     }
   },
+  "consoleReceiverRetainedDelivery20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.23",
+    "status": "Both receiver companions and native feeds published and live verified.",
+    "publication": {
+      "commit": "137dd5fff6f8f82ad3f7105153f59c9109b992f5",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42531143166",
+      "receiverHashesVerified": 2,
+      "apolloPackageBytesVerified": 22806528
+    },
+    "buildReport": "docs/host-menu-companion-build.json",
+    "inventory": "docs/pages-helper-download-inventory.json",
+    "priorJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.22.json",
+    "retainedDownloadAliases": 135,
+    "manualPublisherDownloads": 3,
+    "receiverRowsVerified": {"ps4": 542, "ps5": 356},
+    "nativeFeedEntriesVerified": {"ps4Packages": 20, "ps5Payloads": 18},
+    "apolloVersion": "2.4.0",
+    "externalDownloadHTTPHeadersVerified": 96,
+    "reviewedArchiveRecovery": "After reopening the downloader, select the original folder to recover the checksum-verification action. Previously saved PKGs use the installed package helper.",
+    "priorImmutableAndArchiveCopiesVerified": 2,
+    "focusedTestsPassed": 90,
+    "physicalConsoleTested": false
+  },
+  "consoleReceiverPublisherCheats20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.24",
+    "status": "Published and live verified with all three PS5 handoffs and the exact .24 PS5 receiver hash.",
+    "publication": {
+      "commit": "bc28d4a47cc439f660cb7a5d63c5926fbe2a4ba7",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42532459472"
+    },
+    "buildReport": "docs/host-menu-companion-build.json",
+    "inventory": "docs/pages-helper-download-inventory.json",
+    "priorJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.23.json",
+    "changes": [
+      "Three exact PS5 SHN builds now use distinct receiver handoff IDs with their original pinned publisher URLs.",
+      "The previous catalogue IDs, URLs, compatibility labels, sizes and hashes are retained."
+    ],
+    "receiverRowsVerified": {"ps4": 542, "ps5": 356},
+    "priorImmutableAndArchiveCopiesVerified": 2,
+    "focusedTestsPassed": 93,
+    "publisherSHNsHTTPHashVerified": 3,
+    "physicalConsoleTested": false
+  },
+  "ps5DownloaderUpdate20261108": {
+    "date": "2026-11-08",
+    "version": "2026.11.02.25",
+    "status": "Published and live verified on both Download Centre routes and the archived receiver.",
+    "publication": {
+      "commit": "6c3be2dc4c8f5b03a0ba4a50198b29912fa83e3d",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42533500528"
+    },
+    "buildReport": "docs/host-menu-companion-build.json",
+    "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.24.json",
+    "changes": [
+      "The PS5 Download Centre submits the exact release to the console download queue with an explicit button.",
+      "A separate local page verifies the staged bytes, checks a backup of the installed downloader, applies the update and reads back the installed SHA-256.",
+      "The update refuses to replace a newer version. The prior downloader remains available as a backup."
+    ],
+    "focusedTestsPassed": 98,
+    "physicalConsoleTested": false
+  },
   "consoleDownloaderUpdates20261108": {
     "date": "2026-11-08",
     "version": "2026.11.02.26",
+    "status": "Published and live verified on both canonical and short Download Centre routes. Stable and immutable PS4 and PS5 downloads matched their archived sizes and SHA-256.",
+    "publication": {
+      "commit": "896aee489feef68cfcce95d5af36d19d11742976",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42534716340"
+    },
     "buildReport": "docs/host-menu-companion-build.json",
     "inventory": "docs/pages-helper-download-inventory.json",
     "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.25.json",
+    "archiveIndex": {"items": 5860, "presentFileRecords": 9479, "missingFileRecords": 0},
     "changes": [
       "Both Download Centres can stage the exact downloader release through the console's ezRemote queue without typing its source URL.",
       "Both staged helpers use the native multipart upload contract for an exact verified backup before replacement, and verify the final installed SHA-256.",
@@ -1965,16 +2034,22 @@
       "Users can reopen a staged link after the queue completes and return to the installed page or its verified backup when Apply fails."
     ],
     "focusedTestsPassed": 107,
+    "localPagesVerificationPassed": true,
     "scopeOfVerification": "SHA-256 readback gates replacement; this does not authenticate the staged HTML before it opens. The pinned ezRemote HTTP client disables server-certificate verification.",
     "physicalConsoleTested": false
   },
   "consoleDownloaderProgress20261108": {
     "date": "2026-11-08",
     "version": "2026.11.02.27",
-    "status": "Prepared, archived and verified for the combined host release.",
+    "status": "Published and live verified on both canonical and short Download Centre routes. Both stable and immutable .27 downloads matched the archive SHA-256 and size.",
+    "publication": {
+      "commit": "6b093394499778e4e9735bcfc3f21e32be324b64",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42540836018"
+    },
     "buildReport": "docs/host-menu-companion-build.json",
     "inventory": "docs/pages-helper-download-inventory.json",
     "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.26.json",
+    "archiveIndex": {"items": 5862, "presentFileRecords": 9481, "missingFileRecords": 0},
     "changes": [
       "Both Download Centres open a console-local progress screen that reads the exact update's native transfer status.",
       "Apply update appears after the local file's size, SHA-256 and embedded version pass. The installed page handles confirmation on the local manager origin.",
@@ -1986,7 +2061,11 @@
   },
   "consoleHostCacheRecovery20261109": {
     "date": "2026-11-09",
-    "status": "Host dashboard and PS4 14.00 cache corrections verified for publication.",
+    "status": "Published and live verified. Both dashboards omit the retired controls, and the PS4 14.00 launcher and manifest use the new cache assets.",
+    "publication": {
+      "commit": "6b093394499778e4e9735bcfc3f21e32be324b64",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42540836018"
+    },
     "changes": [
       "The dashboard no longer renders the saved-attempt card. A blocked Load links to the relevant recovery page, and failed ticket preparation leaves no new attempt lock.",
       "The PS4 14.00 launcher applies a finished browser cache update and reloads once. The Load button still needs a separate press.",
@@ -2008,30 +2087,6 @@
     "ps5Bootstrap": "Pinned ezRemote 2.18 documents the Payload Manager loader. The Download Centre uses websrv for storage checks and the native client uses its bundled DPI on port 9040 for local PKGs.",
     "sampleArchiveAndPackageHTTPChecks": 6,
     "targetedChecksPassed": 69,
-    "physicalConsoleTested": false
-  },
-  "consoleReceiverRetainedDelivery20261108": {
-    "date": "2026-11-08",
-    "version": "2026.11.02.23",
-    "status": "Both receiver companions archived and activated at their stable paths in the local checkout.",
-    "buildReport": "docs/host-menu-companion-build.json",
-    "inventory": "docs/pages-helper-download-inventory.json",
-    "priorJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.22.json",
-    "retainedDownloadAliases": 135,
-    "manualPublisherDownloads": 3,
-    "receiverRowsVerified": {
-      "ps4": 542,
-      "ps5": 356
-    },
-    "nativeFeedEntriesVerified": {
-      "ps4Packages": 20,
-      "ps5Payloads": 18
-    },
-    "apolloVersion": "2.4.0",
-    "externalDownloadHTTPHeadersVerified": 96,
-    "reviewedArchiveRecovery": "After reopening the downloader, select the original folder to recover the checksum-verification action. Previously saved PKGs use the installed package helper.",
-    "priorImmutableAndArchiveCopiesVerified": 2,
-    "focusedTestsPassed": 41,
     "physicalConsoleTested": false
   },
   "apolloFeedAndConsoleAudit20261108": {
@@ -2070,39 +2125,5 @@
     "publishedCommit": "560e7a268d87b91be2e1cc63da802721540c0226",
     "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42531539901",
     "verifiedAt": "2026-11-08T22:45:41.597Z"
-  },
-  "consoleReceiverPublisherCheats20261108": {
-    "date": "2026-11-08",
-    "version": "2026.11.02.24",
-    "status": "Both receiver companions archived and activated at their stable paths in the local checkout.",
-    "buildReport": "docs/host-menu-companion-build.json",
-    "inventory": "docs/pages-helper-download-inventory.json",
-    "priorJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.23.json",
-    "changes": [
-      "Three exact PS5 SHN builds now use distinct receiver handoff IDs with their original pinned publisher URLs.",
-      "The previous catalogue IDs, URLs, compatibility labels, sizes and hashes are retained."
-    ],
-    "receiverRowsVerified": {
-      "ps4": 542,
-      "ps5": 356
-    },
-    "priorImmutableAndArchiveCopiesVerified": 2,
-    "focusedTestsPassed": 93,
-    "physicalConsoleTested": false,
-    "publisherSHNsHTTPHashVerified": 3
-  },
-  "ps5DownloaderUpdate20261108": {
-    "date": "2026-11-08",
-    "version": "2026.11.02.25",
-    "status": "Receiver archived and activated in the checkout.",
-    "buildReport": "docs/host-menu-companion-build.json",
-    "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.24.json",
-    "changes": [
-      "The PS5 Download Centre submits the exact release to the console download queue with an explicit button.",
-      "A separate local page verifies the staged bytes, checks a backup of the installed downloader, applies the update and reads back the installed SHA-256.",
-      "The update refuses to replace a newer version. The prior downloader remains available as a backup."
-    ],
-    "focusedTestsPassed": 98,
-    "physicalConsoleTested": false
   }
 }
