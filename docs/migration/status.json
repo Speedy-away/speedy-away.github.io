@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-11T00:55:15.879Z",
+  "updatedAt": "2026-11-11T00:58:20.123Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -2241,7 +2241,7 @@
   },
   "consoleURLDownloader20261111": {
     "date": "2026-11-11",
-    "status": "Implemented, archived and locally verified; publication pending.",
+    "status": "Published and live verified.",
     "pages": [
       "/ps4/downloads/",
       "/ps5/downloads/"
@@ -2312,9 +2312,104 @@
       "downloadedNativeCodeExecuted": false
     },
     "remaining": [
-      "Publish and verify the live pages, URL assets and exact .28 helper bytes.",
       "Physical-console execution remains unverified."
     ],
+    "publication": {
+      "status": "published-and-verified",
+      "commit": "182017e57d65c21fbe25471630752c786072f157",
+      "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42935150290",
+      "version": "2026.11.02.28",
+      "verifiedAt": "2026-11-11T00:58:20.123Z",
+      "checks": [
+        {
+          "route": "hosts/ps4/downloads/",
+          "status": 200
+        },
+        {
+          "route": "hosts/ps4/packages/",
+          "status": 200
+        },
+        {
+          "route": "ps4/downloads/",
+          "status": 200
+        },
+        {
+          "route": "ps4/packages/",
+          "status": 200
+        },
+        {
+          "route": "console/ps4/whatsite-ps4.html",
+          "status": 200,
+          "sha256": "b46a8ce10a7fd530bc1be0191926f2500cde5b448c39f6c51e01491ba51587c9"
+        },
+        {
+          "route": "downloads/helpers/console-download-receivers/ps4/2026.11.02.28-b46a8ce10a7f/whatsite-ps4.html",
+          "status": 200,
+          "sha256": "b46a8ce10a7fd530bc1be0191926f2500cde5b448c39f6c51e01491ba51587c9"
+        },
+        {
+          "route": "hosts/ps5/downloads/",
+          "status": 200
+        },
+        {
+          "route": "hosts/ps5/packages/",
+          "status": 200
+        },
+        {
+          "route": "ps5/downloads/",
+          "status": 200
+        },
+        {
+          "route": "ps5/packages/",
+          "status": 200
+        },
+        {
+          "route": "console/ps5/whatsite-ps5.html",
+          "status": 200,
+          "sha256": "d3f71294c07f71ae62e6bb9058284bfc69c0ccdcc5733c7d721ef99e59e9d71f"
+        },
+        {
+          "route": "downloads/helpers/console-download-receivers/ps5/2026.11.02.28-d3f71294c07f/whatsite-ps5.html",
+          "status": 200,
+          "sha256": "d3f71294c07f71ae62e6bb9058284bfc69c0ccdcc5733c7d721ef99e59e9d71f"
+        },
+        {
+          "route": "assets/host-download-desk.css",
+          "status": 200,
+          "sha256": "a95a05eb6798ca0896f581d5c80cabec0054f8fb61ec7ec9cabe7c850415d63c"
+        },
+        {
+          "route": "assets/host-download-desk.js",
+          "status": 200,
+          "sha256": "c16d77fb0cd8bdf1afcb6b9ef09bccc70091a3c3bdf46e2892a0e5291bdb5150"
+        },
+        {
+          "route": "assets/console-url-downloads.js",
+          "status": 200,
+          "sha256": "75781678119a0b4f94c178b953eaf1f5f2f8abc011e75fca886c087452d886f4"
+        },
+        {
+          "route": "assets/host-url-downloader.js",
+          "status": 200,
+          "sha256": "863e4122c2cba6de0527712c4a14cdd841d993821d68e4933da1314cff06eed8"
+        },
+        {
+          "route": "assets/host-package-redirect.js",
+          "status": 200,
+          "sha256": "112203bf6914526c052d50860bdb0a6b527cc532d363c143349dfeaddcf2d9ec"
+        },
+        {
+          "route": "downloads/helpers/console-download-receivers/ps4/2026.11.02.27-1b57d76a0c3d/whatsite-ps4.html",
+          "status": 200,
+          "previousVersionRetained": true
+        },
+        {
+          "route": "downloads/helpers/console-download-receivers/ps5/2026.11.02.27-45c1e338ad7e/whatsite-ps5.html",
+          "status": 200,
+          "previousVersionRetained": true
+        }
+      ]
+    },
     "report": "docs/migration/url-downloader-20261111.json"
   }
 }
