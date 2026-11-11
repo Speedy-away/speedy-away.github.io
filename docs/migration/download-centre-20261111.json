@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "status": "Implemented and locally verified; publication pending.",
+  "status": "Published and live verified.",
   "pages": [
     "/hosts/ps4/downloads/",
     "/hosts/ps5/downloads/"
@@ -30,7 +30,48 @@
     "newArchiveFilesRequired": false
   },
   "remaining": [
-    "Publish the verified source and confirm the GitHub Pages run.",
     "Physical-console execution remains unverified."
-  ]
+  ],
+  "publication": {
+    "status": "published-and-verified",
+    "commit": "ee08764f1e09d6bbcced75f59c9ee81119d0eb67",
+    "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42929716863",
+    "verifiedAt": "2026-11-11T00:17:01.298Z",
+    "checks": [
+      {
+        "route": "hosts/ps4/downloads/",
+        "status": 200
+      },
+      {
+        "route": "hosts/ps5/downloads/",
+        "status": 200
+      },
+      {
+        "route": "ps4/downloads/",
+        "status": 200
+      },
+      {
+        "route": "ps5/downloads/",
+        "status": 200
+      },
+      {
+        "route": "ps4/",
+        "status": 200
+      },
+      {
+        "route": "ps5/",
+        "status": 200
+      },
+      {
+        "route": "assets/host-download-desk.css",
+        "status": 200,
+        "sha256": "6fcbb840f732a31e7ac430bbcb07c03a348233fe838fe49e59e1dc7c2607e7de"
+      },
+      {
+        "route": "assets/host-download-desk.js",
+        "status": 200,
+        "sha256": "7df75521fb8a01146975fc3920bfbb27c8f2269d7b9e9b80cd5cf626ebb61e3a"
+      }
+    ]
+  }
 }
