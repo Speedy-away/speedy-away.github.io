@@ -29,6 +29,7 @@ function themeHTML(html,name){
  html=html.replace(/(<a\b[^>]*class="host-top-brand"[^>]*>)[\s\S]*?<\/a>/g,'$1<img src="/assets/images/logo.png" alt="" width="32" height="32"><span>WWB HOST</span></a>');
  html=html.replace(/<a\b[^>]*class="(?:host-taskbar-brand|host-top-brand)"[^>]*>/g,tag=>tag.replace(/href="[^"]*"/,'href="https://speedy-away.github.io/"'));
  if(!html.includes('href="/hosts/credits/"'))html=html.replace(/(<nav\b[^>]*class="host-taskbar"[^>]*>[\s\S]*?)(<\/nav>)/,'$1<a href="/hosts/credits/">Credits</a>$2');
+ html=require('./host-download-navigation.cjs').apply(name,html);
  if(!html.includes('host-playstation.css'))html=html.replace('</head>','<link rel="stylesheet" href="/assets/host-playstation.css?v=1"><script defer src="/assets/host-playstation.js?v=1"></script></head>');
  // Console photographs form CSS background banners, never a separate image column.
  if(/^hosts\/ps[45]\//.test(name))html=html.replace(/<header\b([^>]*\bdata-wwb-image-heading\b[^>]*)>([\s\S]*?)<\/header>/g,(whole,attrs,inner)=>{

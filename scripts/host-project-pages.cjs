@@ -152,8 +152,7 @@ function build(output,revision='main',root=ROOT){
   if(name.endsWith('.html'))text=text.replace(/https:\/\/whatwhatboy\.com(\/assets\/images\/[^\s"'<>\\]*)/g,(_,p)=>{const local=p.split(/[?#]/)[0];const fallback='/assets/images/'+require('./style-host-pages.cjs').artwork(name)[0];return ORIGIN+BASE+(fs.existsSync(path.join(root,local))?p:fallback);});
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-pages.css')))text=require('./style-host-pages.cjs').themeHTML(text,name);
   if(name.endsWith('.html'))text=text.replace(/(host-playstation\.css|host-blue-theme\.css|host-playstation\.js|host-folders\.js|host-dashboard\.js|host-console-client\.js|host-catalog-grid\.js|host-trainer\.js|host-karo-builds\.js|host-local-launcher\.js|afterglow-public-launcher\.js|host-site-load\.js|host-short-loader\.(?:js|css)|host-game-patches\.js|host-download-desk\.js|i18n\.js)(?:\?v=[\w.-]+)?(?=["'])/g,(_,asset)=>asset+'?v='+ASSET_VERSION);
-  if(name.endsWith('.html'))text=text.replace(/(host-download-desk\.(?:js|css)|console-downloads\.js)(?:\?v=[\w.-]+)?(?=["'])/g,'$1?v=20261108setup1');
-  if(name.endsWith('.html'))text=text.replace(/host-download-desk\.js\?v=20261108setup1(?=["'])/g,'host-download-desk.js?v=20261108update4');
+  if(name.endsWith('.html'))text=text.replace(/(host-download-desk\.(?:js|css)|console-downloads\.js)(?:\?v=[\w.-]+)?(?=["'])/g,'$1?v=20261111desk1');
   const downloadPage=name.match(/^hosts\/(ps[45])\/downloads\/index\.html$/);
   if(downloadPage)text=text.replace(/(<script type="application\/json" id="host-(ps[45])-update-data">)null(<\/script>)/,(_,open,platform,close)=>{
    assert.equal(platform,downloadPage[1]);

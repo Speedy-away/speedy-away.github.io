@@ -12,7 +12,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-04T16:38:14.677Z",
+  "updatedAt": "2026-11-11T00:13:15.512Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -1838,18 +1838,29 @@
       "The authored result panel distinguishes kernel failure, cleanup failure, kernel-only completion and native enabler start reports",
       "The PS4 download centre exposes archive filtering and the existing receiver's reviewed save, verify and extract workflow"
     ],
-    "verifiedLiveSHA256": ["jb2.js", "afterglow.js", "1400.bin", "goldhen_2.4b18.13.bin"],
+    "verifiedLiveSHA256": [
+      "jb2.js",
+      "afterglow.js",
+      "1400.bin",
+      "goldhen_2.4b18.13.bin"
+    ],
     "physicalConsoleTested": false
   },
   "consoleDownloadWorkspace20261108": {
-    "routes": ["/ps4/downloads/", "/ps5/downloads/"],
+    "routes": [
+      "/ps4/downloads/",
+      "/ps5/downloads/"
+    ],
     "changes": [
       "Unified save, extract and PKG install navigation for both console browsers",
       "Short archive and package filters, exact catalogue file handoffs and links to the installed queue and storage preparation",
       "Separate native setup, reviewed extraction and compatible installer requirements",
       "Prominent All files, Archives and PKGs choices with a selected state, shorter copy, and file details behind a disclosure"
     ],
-    "reviewedArchiveCountsInShippedReceiver": {"ps4": 11, "ps5": 15},
+    "reviewedArchiveCountsInShippedReceiver": {
+      "ps4": 11,
+      "ps5": 15
+    },
     "nativeOrDownloadBytesChanged": 0,
     "physicalConsoleTested": false
   },
@@ -1867,10 +1878,17 @@
     "buildReport": "docs/host-menu-companion-build.json",
     "inventory": "docs/pages-helper-download-inventory.json",
     "previousJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.20.json",
-    "receiverCataloguesVerifiedUnchanged": {"ps4": 542, "ps5": 356},
+    "receiverCataloguesVerifiedUnchanged": {
+      "ps4": 542,
+      "ps5": 356
+    },
     "archiveCopiesHashVerified": 2,
     "previousImmutableCopiesHashVerified": 2,
-    "archiveIndex": {"items": 5842, "presentFileRecords": 9461, "missingFileRecords": 0},
+    "archiveIndex": {
+      "items": 5842,
+      "presentFileRecords": 9461,
+      "missingFileRecords": 0
+    },
     "focusedTestsPassed": 77,
     "physicalConsoleTested": false
   },
@@ -1967,8 +1985,14 @@
     "priorJobsRetained": "docs/qa/host-menu-companion-jobs-2026.11.02.22.json",
     "retainedDownloadAliases": 135,
     "manualPublisherDownloads": 3,
-    "receiverRowsVerified": {"ps4": 542, "ps5": 356},
-    "nativeFeedEntriesVerified": {"ps4Packages": 20, "ps5Payloads": 18},
+    "receiverRowsVerified": {
+      "ps4": 542,
+      "ps5": 356
+    },
+    "nativeFeedEntriesVerified": {
+      "ps4Packages": 20,
+      "ps5Payloads": 18
+    },
     "apolloVersion": "2.4.0",
     "externalDownloadHTTPHeadersVerified": 96,
     "reviewedArchiveRecovery": "After reopening the downloader, select the original folder to recover the checksum-verification action. Previously saved PKGs use the installed package helper.",
@@ -1991,7 +2015,10 @@
       "Three exact PS5 SHN builds now use distinct receiver handoff IDs with their original pinned publisher URLs.",
       "The previous catalogue IDs, URLs, compatibility labels, sizes and hashes are retained."
     ],
-    "receiverRowsVerified": {"ps4": 542, "ps5": 356},
+    "receiverRowsVerified": {
+      "ps4": 542,
+      "ps5": 356
+    },
     "priorImmutableAndArchiveCopiesVerified": 2,
     "focusedTestsPassed": 93,
     "publisherSHNsHTTPHashVerified": 3,
@@ -2026,7 +2053,11 @@
     "buildReport": "docs/host-menu-companion-build.json",
     "inventory": "docs/pages-helper-download-inventory.json",
     "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.25.json",
-    "archiveIndex": {"items": 5860, "presentFileRecords": 9479, "missingFileRecords": 0},
+    "archiveIndex": {
+      "items": 5860,
+      "presentFileRecords": 9479,
+      "missingFileRecords": 0
+    },
     "changes": [
       "Both Download Centres can stage the exact downloader release through the console's ezRemote queue without typing its source URL.",
       "Both staged helpers use the native multipart upload contract for an exact verified backup before replacement, and verify the final installed SHA-256.",
@@ -2049,7 +2080,11 @@
     "buildReport": "docs/host-menu-companion-build.json",
     "inventory": "docs/pages-helper-download-inventory.json",
     "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.26.json",
-    "archiveIndex": {"items": 5862, "presentFileRecords": 9481, "missingFileRecords": 0},
+    "archiveIndex": {
+      "items": 5862,
+      "presentFileRecords": 9481,
+      "missingFileRecords": 0
+    },
     "changes": [
       "Both Download Centres open a console-local progress screen that reads the exact update's native transfer status.",
       "Apply update appears after the local file's size, SHA-256 and embedded version pass. The installed page handles confirmation on the local manager origin.",
@@ -2125,5 +2160,42 @@
     "publishedCommit": "560e7a268d87b91be2e1cc63da802721540c0226",
     "run": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/42531539901",
     "verifiedAt": "2026-11-08T22:45:41.597Z"
+  },
+  "downloadCentreSimplicity20261111": {
+    "date": "2026-11-11",
+    "status": "Implemented and locally verified; publication pending.",
+    "pages": [
+      "/hosts/ps4/downloads/",
+      "/hosts/ps5/downloads/"
+    ],
+    "shortRoutes": [
+      "/ps4/downloads/",
+      "/ps5/downloads/"
+    ],
+    "changes": [
+      "Add a canonical Download centre taskbar link across authored PS4/PS5 pages and retain it in shared page passes.",
+      "Use a compact responsive file browser with a collapsible three-step guide and detailed setup below the library.",
+      "Quick filters keep the current search and console destination, update the URL and preserve modified-click navigation.",
+      "Keep file requirements visible and put repeated queue instructions in File details."
+    ],
+    "tests": {
+      "focusedPassed": 27,
+      "pagesChecksPassed": 5,
+      "nativeScriptsVerifiedUnchanged": 1016,
+      "browserDesktop": true,
+      "browserMobileWidth": 390,
+      "physicalConsole": false
+    },
+    "preservation": {
+      "downloadFilesChanged": 0,
+      "nativeRuntimeFilesChanged": 0,
+      "helperVersion": "2026.11.02.27",
+      "newArchiveFilesRequired": false
+    },
+    "remaining": [
+      "Publish the verified source and confirm the GitHub Pages run.",
+      "Physical-console execution remains unverified."
+    ],
+    "report": "docs/migration/download-centre-20261111.json"
   }
 }

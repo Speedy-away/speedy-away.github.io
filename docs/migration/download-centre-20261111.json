@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-11",
+  "status": "Implemented and locally verified; publication pending.",
+  "pages": [
+    "/hosts/ps4/downloads/",
+    "/hosts/ps5/downloads/"
+  ],
+  "shortRoutes": [
+    "/ps4/downloads/",
+    "/ps5/downloads/"
+  ],
+  "changes": [
+    "Add a canonical Download centre taskbar link across authored PS4/PS5 pages and retain it in shared page passes.",
+    "Use a compact responsive file browser with a collapsible three-step guide and detailed setup below the library.",
+    "Quick filters keep the current search and console destination, update the URL and preserve modified-click navigation.",
+    "Keep file requirements visible and put repeated queue instructions in File details."
+  ],
+  "tests": {
+    "focusedPassed": 27,
+    "pagesChecksPassed": 5,
+    "nativeScriptsVerifiedUnchanged": 1016,
+    "browserDesktop": true,
+    "browserMobileWidth": 390,
+    "physicalConsole": false
+  },
+  "preservation": {
+    "downloadFilesChanged": 0,
+    "nativeRuntimeFilesChanged": 0,
+    "helperVersion": "2026.11.02.27",
+    "newArchiveFilesRequired": false
+  },
+  "remaining": [
+    "Publish the verified source and confirm the GitHub Pages run.",
+    "Physical-console execution remains unverified."
+  ]
+}

@@ -37,6 +37,7 @@ function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query =
     ids['host-download-' + id] = element();
   }
   ids.setup = element('details');
+  ids.guide = element('details');
   if (updateRelease !== undefined) {
     const prefix = 'host-' + platform + '-update';
     for (const id of ['form','request','submit','open','track','status','data','retry']) ids[prefix + '-' + id] = element();
@@ -56,16 +57,23 @@ function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query =
       this.onload();
     };
   }
+  const quickFilters = ['all', 'packages', 'archives'].map(filter => {
+    const choice = element('a');
+    choice.attrs = {'data-download-filter':filter};
+    return choice;
+  });
+  ids['host-download-desk'].querySelectorAll = () => quickFilters;
   const document = {getElementById(id) { return ids[id]; }, createElement:element};
   const windowEvents = {};
-  const window = {location, navigator:{userAgent}, WWBConsoleDownloads:transport, XMLHttpRequest, setTimeout, clearTimeout, localStorage,
+  const history = {replaceState(state, title, url) { location.href = new URL(url, location).href; }};
+  const window = {location, history, navigator:{userAgent}, WWBConsoleDownloads:transport, XMLHttpRequest, setTimeout, clearTimeout, localStorage,
     addEventListener(type, callback) { windowEvents[type] = callback; }};
   vm.runInNewContext(source, {window, document});
   function links() {
     function find(node) { return (node.tag === 'a' ? [node] : []).concat(node.children.flatMap(find)); }
     return new Map(find(ids['host-download-results']).map(link => [link.textContent, link.href]));
   }
-  return {ids, requests, links, windowEvents};
+  return {ids, requests, links, windowEvents, quickFilters, window};
 }
 
 function testUpdateRelease(platform, version = '2026.11.02.26') {
@@ -288,4 +296,43 @@ test('the three repaired PS5 cheat files keep their public IDs and use new exact
     assert.equal(links().get('Save on PS5'), 'http://127.0.0.1:6701/whatsite-ps5.html?file=' + handoff);
     assert.equal(links().get('Download file'), retained.aliases[original.url]);
   }
+});
+
+
+test('quick filters keep the search and console address while releasing an exact-file selection', () => {
+  const archive = catalogue.find(item => item.platforms.includes('ps4') && /\.(zip|rar|7z)$/i.test(item.filename));
+  const desk = openDesk({items:[ps4, archive], query:'?file=' + ps4.id, userAgent:'PlayStation 4/14.00'});
+  const {ids, quickFilters, links} = desk;
+  ids['host-download-search'].value = archive.name;
+  let prevented = false;
+  quickFilters[2].events.click({preventDefault(){ prevented = true; }});
+  assert.equal(prevented, true, 'category selection does not reload the page');
+  assert.equal(desk.window.location.search, '?type=archives');
+  quickFilters[0].events.click({ctrlKey:true, preventDefault(){ assert.fail('Modified clicks should retain normal anchor navigation'); }});
+  assert.equal(desk.window.location.search, '?type=archives');
+  assert.equal(ids['host-download-type'].value, 'archives');
+  assert.equal(ids['host-download-search'].value, archive.name);
+  assert.match(ids['host-download-status'].textContent, /1 of 1/);
+  assert.equal(quickFilters[2].attrs['aria-current'], 'true');
+  assert.equal(quickFilters[0].attrs['aria-current'], undefined);
+  assert.equal(links().get('Download file'), new URL(archive.url, 'https://speedy-away.github.io').href);
+  assert.ok([...links().keys()].some(label => /Save.*PS4/.test(label)));
+  ids['host-download-clear'].events.click();
+  assert.equal(ids['host-download-search'].value, '');
+  assert.equal(ids['host-download-type'].value, 'all');
+  assert.equal(quickFilters[0].attrs['aria-current'], 'true');
+  assert.match(ids['host-download-status'].textContent, /2 of 2/);
+});
+
+test('setup links reveal the instructions on first load, hash navigation and repeated clicks', () => {
+  const desk = openDesk({query:'#setup'});
+  assert.equal(desk.ids.setup.open, true);
+  desk.ids.setup.open = false;
+  desk.windowEvents.hashchange();
+  assert.equal(desk.ids.setup.open, true);
+  desk.ids.setup.open = false;
+  desk.ids['host-download-desk'].events.click({target:{tagName:'A', getAttribute:() => '#setup'}});
+  assert.equal(desk.ids.setup.open, true);
+  desk.ids['host-download-desk'].events.click({target:{tagName:'A', getAttribute:() => '#guide'}});
+  assert.equal(desk.ids.guide.open, true);
 });

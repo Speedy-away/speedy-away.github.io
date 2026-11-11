@@ -181,19 +181,19 @@
     if (saveURL && item.receiverFileId) {
       link(add(card, 'p', '', 'host-download-meta'), 'Update the PS5 downloader if this file is unavailable', '#setup');
     }
-    if (saveURL && packageFile(item)) add(card, 'p',
+    var details = add(card, 'details');
+    add(details, 'summary', 'File details');
+    if (saveURL && packageFile(item)) add(details, 'p',
       'Watch the progress in the console queue. When ready, choose Install PKG to verify the file and open the compatible installer.', 'host-download-meta');
-    if (archive) add(card, 'p', reviewed
+    if (saveURL && archive) add(details, 'p', reviewed
       ? 'Watch the progress in the console queue. When ready, choose Extract. The preparation page checks the SHA-256 and extracts into a new folder.'
       : 'Save the archive first, then extract it with the installed console file manager. Follow the build’s compatibility guide.', 'host-download-meta');
-    var direct = link(controls, 'Download file', httpsURL(item.url));
+    var direct = link(controls, 'Download file', httpsURL(item.url), saveURL ? '' : 'host-download-primary');
     direct.setAttribute('download', item.filename);
     direct.setAttribute('data-no-file-options', '');
     var help = httpsURL(item.pages && item.pages[platform] || item.page);
     var support = httpsURL(item.requiresSupportArchive);
     if (support) link(controls, 'Required support pack', support);
-    var details = add(card, 'details');
-    add(details, 'summary', 'File details');
     add(details, 'code', item.displayFilename || item.filename);
     add(details, 'code', direct.href);
     add(details, 'code', item.sha256);
@@ -284,6 +284,13 @@
 
   function clearPin() {
     pinnedId = '';
+    if (win.history && win.history.replaceState) {
+      var query = win.location.search.slice(1).split('&').filter(function (part) {
+        return part && !/^(?:file|type)=/.test(part);
+      });
+      query.push('type=' + encodeURIComponent(type ? type.value : 'all'));
+      try { win.history.replaceState(null, '', win.location.pathname + '?' + query.join('&') + win.location.hash); } catch (_) { /* Filtering still works without history. */ }
+    }
     if (items.length) render();
   }
 
@@ -294,7 +301,31 @@
   if (destination) address.value = destination;
   showNativeTools();
   showDownloaderUpdate();
-  if (win.location.hash === '#setup') doc.getElementById('setup').open = true;
+  function revealHelp(hash) {
+    if (!/^#(?:guide|setup|extract|native-feed|host-ps[45]-update)$/.test(hash)) return;
+    var panel = doc.getElementById(hash.slice(1));
+    if (panel) panel.open = true;
+  }
+  revealHelp(win.location.hash);
+  win.addEventListener('hashchange', function () { revealHelp(win.location.hash); });
+  desk.addEventListener('click', function (event) {
+    var target = event.target;
+    while (target && target !== desk) {
+      if (target.tagName === 'A') {
+        revealHelp(target.getAttribute('href') || '');
+        break;
+      }
+      target = target.parentNode;
+    }
+  });
+  Array.prototype.forEach.call(quickFilters, function (choice) {
+    choice.addEventListener('click', function (event) {
+      if (!type || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || (event.button && event.button !== 0)) return;
+      event.preventDefault();
+      type.value = choice.getAttribute('data-download-filter');
+      clearPin();
+    });
+  });
   doc.getElementById('host-download-connection').addEventListener('submit', useAddress);
   search.addEventListener('input', function () {
     win.clearTimeout(typing);
