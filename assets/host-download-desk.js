@@ -60,6 +60,7 @@
   }
 
   function showNativeTools() {
+    if (win.WWBURLDownloader) win.WWBURLDownloader.setHost(destination);
     if (!nativeTools) return;
     nativeTools.textContent = '';
     nativeTools.hidden = !destination;
@@ -302,7 +303,7 @@
   showNativeTools();
   showDownloaderUpdate();
   function revealHelp(hash) {
-    if (!/^#(?:guide|setup|extract|native-feed|host-ps[45]-update)$/.test(hash)) return;
+    if (!/^#(?:guide|setup|package-setup|extract|connection-settings|native-feed|host-ps[45]-update)$/.test(hash)) return;
     var panel = doc.getElementById(hash.slice(1));
     if (panel) panel.open = true;
   }

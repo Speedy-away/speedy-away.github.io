@@ -1,8 +1,8 @@
 (function (root, factory) {
-  var api = factory();
+  var api = factory(typeof module === 'object' && module.exports ? require('./console-url-downloads.js') : root.ConsoleURLDownloads);
   if (typeof module === 'object' && module.exports) module.exports = api;
   else { root.ConsoleReceiver = api; api.install(root.document, root); }
-}(typeof window !== 'undefined' ? window : this, function () {
+}(typeof window !== 'undefined' ? window : this, function (urlDownloads) {
   'use strict';
   function fail(message, code) { var error = new Error(message); if (code) error.code = code; throw error; }
   function trim(value) { return String(value || '').replace(/^\s+|\s+$/g, ''); }
@@ -586,6 +586,7 @@
   function formatBytes(value) { var n = Number(value) || 0, units = ['B', 'KiB', 'MiB', 'GiB'], i = 0; if (!n) return 'Size not supplied'; while (n >= 1024 && i < 3) { n /= 1024; i++; } return (i ? n.toFixed(1) : n) + ' ' + units[i]; }
   function isArchive(item) { return /\.(?:zip|7z|rar)$/i.test(item.filename || ''); }
   function preparation(item) {
+    if (item.customURL) return 'This user-provided file has no catalogue checksum or compatibility review. Inspect the saved file in ezRemote before extracting, installing or running it.';
     if (trim(item.preparation)) return trim(item.preparation);
     if (isArchive(item)) return 'Extract the complete archive, preserve its folders and follow the installation guide. Saving an archive does not extract it.';
     if (/\.json$/i.test(item.filename)) return 'Place in /data/GoldHEN/cheats/json and open the GoldHEN Cheat Menu for the exact matching PS4 title ID and game update.';
@@ -610,6 +611,14 @@
     var match = new RegExp('(?:\\?|&)' + name + '=([^&]*)').exec(search || '');
     if (!match) return '';
     try { return decodeURIComponent(match[1].replace(/\+/g, ' ')); } catch (error) { return ''; }
+  }
+  function customItem(platform, data) {
+    if (!urlDownloads) fail('The URL download controls did not load. Reopen this downloader.');
+    data = urlDownloads.prepare(data.url, data.filename);
+    return {id:'custom-url-' + encodeURIComponent(data.url + '\n' + data.filename), name:data.filename,
+      url:data.url, filename:data.filename, platforms:[platformName(platform)], category:'custom', bytes:0,
+      customURL:true, version:'User-provided link', description:'Custom file URL. Size and checksum are not supplied.',
+      compatibility:'Check this file’s source, firmware and installation requirements before using it.'};
   }
   function installUpdateProgress(document, window, data) {
     var platform = platformName(data.platform), location = window.location;
@@ -829,8 +838,14 @@
       if (queryValue(window.location.search, 'apply-update') === '1' || queryValue(window.location.search, 'apply-tracked-update') === '1') { installReceiverUpdate(document, window, data); return; }
       if (queryValue(window.location.search,'prepare') === '1') { installPreparation(document,window,platform,items); return; }
       var selectedRequest = /(?:\?|&)(?:file|id)(?:=([^&]*))?(?=&|$)/.exec(window.location.search || '');
-      var selectedId = '', selectedItems = [], unavailableFile = false;
-      if (selectedRequest) {
+      var selectedId = '', selectedItems = [], unavailableFile = false, imported = null, importError = '';
+      try {
+        if (urlDownloads) imported = urlDownloads.fromFragment(window.location.hash);
+        else if (/^#download-url/.test(window.location.hash || '')) fail('The URL download controls did not load. Reopen this downloader.');
+      } catch (error) { importError = error.message; }
+      if (imported) items = [customItem(platform, imported)];
+      else if (importError) { items = []; unavailableFile = true; }
+      else if (selectedRequest) {
         try { selectedId = decodeURIComponent((selectedRequest[1] || '').replace(/\+/g, ' ')); } catch (ignore) {}
         for (var requestedIndex = 0; requestedIndex < items.length; requestedIndex++) {
           var requestedItem = items[requestedIndex];
@@ -849,6 +864,8 @@
       var detect = document.getElementById('receiver-detect'), storageStatus = document.getElementById('receiver-storage-status');
       var folderConfirmed = document.getElementById('receiver-folder-confirmed'), browse = document.getElementById('receiver-browse');
       var prepareOpen = document.getElementById('receiver-prepare-open'), managerOpen = document.getElementById('receiver-manager-open');
+      var urlForm = document.getElementById('receiver-url-form'), urlField = document.getElementById('receiver-url'), urlFilename = document.getElementById('receiver-url-filename');
+      var urlStatus = document.getElementById('receiver-url-status');
       var jobs = Object.create(null), cards = Object.create(null), timer = null, sequence = 0, readingQueue = false;
       var latestMounts = null, mountReadFailed = false, destinationUnavailable = false;
       var completedPaths = Object.create(null);
@@ -865,6 +882,7 @@
         else if (active) bar.removeAttribute('value');
       }
       function ready(job, item) {
+        if (item.customURL) return false;
         var p = job.progress;
         return allowed && job.current && !job.existing && p && p.complete &&
           (!p.total || p.total === item.bytes) && (!p.transferred || p.transferred === item.bytes) &&
@@ -1012,7 +1030,7 @@
               announce('Request submitted. The receiver queue will report progress; submission does not mean the file is saved.');
             });
           });
-        });
+        }, !!item.customURL);
       }
       function draw() {
         while (list.firstChild) list.removeChild(list.firstChild); cards = Object.create(null); var count = 0;
@@ -1033,7 +1051,7 @@
             guide.href = 'https://whatwhatboy.com' + item.page; guide.target = '_blank'; guide.rel = 'noopener noreferrer';
           }
           var extractLink = null, installLink = null;
-          if (/^[a-f0-9]{64}$/i.test(item.sha256 || '')) {
+          if (!item.customURL && /^[a-f0-9]{64}$/i.test(item.sha256 || '')) {
             var details = document.createElement('details'); article.appendChild(details);
             text(details, 'summary', 'SHA-256 checksum'); text(details, 'code', item.sha256, 'receiver-hash');
           }
@@ -1053,8 +1071,8 @@
           button.onclick = (function (selected) { return function () { save(selected); }; }(item));
           var status = text(article, 'p', '', 'receiver-file-status'); status.setAttribute('aria-live', 'polite');
           var bar = document.createElement('progress'); bar.max = 100; bar.value = 0; bar.hidden = true; bar.setAttribute('aria-label', 'Download progress'); article.appendChild(bar);
-          if (!manualOnly && /\.pkg$/i.test(item.filename || '')) { installLink=text(article,'a','Install PKG','receiver-guide receiver-ready'); installLink.target='_blank'; installLink.rel='noopener noreferrer'; installLink.hidden=true; }
-          if (!manualOnly && reviewedArchive(item)) { extractLink=text(article,'a','Extract','receiver-guide receiver-ready'); extractLink.target='_blank'; extractLink.rel='noopener noreferrer'; extractLink.hidden=true; }
+          if (!manualOnly && !item.customURL && /\.pkg$/i.test(item.filename || '')) { installLink=text(article,'a','Install PKG','receiver-guide receiver-ready'); installLink.target='_blank'; installLink.rel='noopener noreferrer'; installLink.hidden=true; }
+          if (!manualOnly && !item.customURL && reviewedArchive(item)) { extractLink=text(article,'a','Extract','receiver-guide receiver-ready'); extractLink.target='_blank'; extractLink.rel='noopener noreferrer'; extractLink.hidden=true; }
           cards[item.id] = {button: button, status: status, bar: bar, extractLink:extractLink, installLink:installLink, item:item}; paint(item.id);
         }
         document.getElementById('receiver-count').textContent = count + ' files' + (format && format.value === 'ready' ? ' · archive files hidden' : '');
@@ -1108,6 +1126,25 @@
         });
       }
       search.oninput = draw; category.onchange = draw;
+      function stageURL(event) {
+        if (event) event.preventDefault();
+        try {
+          if (!urlDownloads) fail('The URL download controls did not load. Reopen this downloader.');
+          var prepared = urlDownloads.prepare(urlField.value, urlFilename.value);
+          items = [customItem(platform, prepared)];
+          unavailableFile = false; importError = ''; imported = prepared;
+          urlField.value = prepared.url; urlFilename.value = prepared.filename;
+          search.value = ''; category.value = ''; if (format) format.value = 'all';
+          if (urlStatus) urlStatus.textContent = 'File ready below. Check the save folder, then press Save to console. No download has started.';
+          announce('Custom link prepared. Size, checksum and compatibility have not been verified. Press Save to console to submit it.');
+          draw();
+        } catch (error) {
+          items = []; unavailableFile = true; importError = error.message;
+          if (urlStatus) urlStatus.textContent = error.message;
+          announce(error.message + ' No download was queued.', true); draw();
+        }
+      }
+      if (urlForm && urlField && urlFilename) urlForm.onsubmit = stageURL;
       if (format) format.onchange = draw;
       storage.onchange = function () { if (storage.value) folder.value = storage.value; folderChanged(); };
       folder.oninput = folderChanged; folder.onchange = folderChanged;
@@ -1120,8 +1157,14 @@
       folderChanged(false);
       var requestedFolder=queryValue(window.location.search,'folder');
       if (requestedFolder) { try { folder.value=safeFolder(platform,requestedFolder); storage.value=folder.value === '/data/whatwhatboy' ? '/data/whatwhatboy' : ''; } catch (error) { announce(error.message,true); } }
-      if (selectedRequest && !unavailableFile) { search.value = items[0].name; if (format) format.value = isArchive(items[0]) ? 'archives' : 'ready'; }
-      if (unavailableFile) announce('The requested file is unavailable in this installed ' + platform.toUpperCase() + ' downloader. Update the companion from the site and open the file again. No download was queued.', true);
+      if (imported) {
+        search.value = ''; category.value = ''; if (format) format.value = 'all';
+        if (urlField) urlField.value = imported.url;
+        if (urlFilename) urlFilename.value = imported.filename;
+        if (urlStatus) urlStatus.textContent = 'Custom link prepared. Check the save folder, then press Save to console. No download has started.';
+        announce('Custom link prepared. Size, checksum and compatibility have not been verified. Press Save to console to submit it.');
+      } else if (selectedRequest && !unavailableFile) { search.value = items[0].name; if (format) format.value = isArchive(items[0]) ? 'archives' : 'ready'; }
+      if (unavailableFile) announce((importError || 'The requested file is unavailable in this installed ' + platform.toUpperCase() + ' downloader. Update the companion from the site and open the file again.') + ' No download was queued.', true);
       draw(); if (allowed) refresh();
       document.addEventListener('keydown', function (event) {
         var code = event.keyCode, target = event.target, tag = target && target.tagName;

@@ -322,3 +322,45 @@ body.wwb-host-page.host-download-page > .wwb-xmb-waves { display: none !importan
 .host-download-guide[open] > summary { border-bottom: 1px solid #30425c; margin-bottom: .75rem; }
 .host-download-page .host-download-guide:not([open]) { padding-top: .25rem; padding-bottom: .25rem; }
 @media (max-width: 760px) { .host-download-guide > summary > span { display: block; margin-left: 1.2rem; } }
+
+.host-url-downloader {
+  margin: 0 0 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid #42638e;
+  border-radius: .75rem;
+  background: #10213a;
+}
+.host-url-downloader h2 { margin: 0; font-size: 1.3rem; }
+.host-url-downloader > p { color: #bdcce1; font-size: .9rem; }
+.host-url-downloader label { display: block; margin-bottom: .4rem; font-size: .875rem; font-weight: 600; }
+.host-url-entry { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.host-url-entry input,
+.host-url-options input {
+  min-width: 0;
+  min-height: 48px;
+  padding: .65rem .85rem;
+  border: 1px solid #7296c4;
+  border-radius: .35rem;
+  background: #0b1628;
+  color: #f4f8ff;
+  font: inherit;
+}
+.host-url-entry input { flex: 1 1 22rem; }
+.host-download-desk .host-url-entry button { margin: 0; min-height: 48px; }
+.host-download-desk #host-url-continue { background: #a8ceff; border-color: #a8ceff; color: #0a1c37; font-weight: 700; }
+.host-url-options { margin-top: .75rem; color: #bdcce1; font-size: .875rem; }
+.host-url-options summary { min-height: 44px; padding: .5rem 0; cursor: pointer; }
+.host-url-options input { width: 100%; max-width: 32rem; }
+.host-url-review { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #42638e; }
+.host-url-review h3 { margin: 0 0 .5rem; font-size: 1.05rem; overflow-wrap: anywhere; }
+.host-url-review code { display: block; max-height: 8rem; overflow-y: auto; overflow-wrap: anywhere; font-size: .8rem; }
+.host-url-review p { font-size: .875rem; }
+.host-url-review .host-download-controls { margin-top: .75rem; }
+.host-url-downloader #host-url-status { margin-bottom: 0; }
+.host-download-page #host-url-input[aria-invalid="true"],
+.host-download-page #host-url-filename[aria-invalid="true"] { border-color: #ffaeae !important; }
+@media (max-width: 760px) {
+  .host-url-downloader { padding: 1rem; }
+  .host-url-entry input { flex-basis: 100%; width: 100%; }
+  .host-url-entry button { flex: 1 1 auto; }
+}

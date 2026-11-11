@@ -18,8 +18,7 @@ function apply(html, name) {
 
   const destination = '/hosts/' + platform + '/';
   const quickLinks = '<nav class="wwb-console-links" aria-label="Console tools">' +
-    '<a href="' + destination + 'downloads/">Downloads</a>' +
-    '<a href="' + destination + 'packages/">Packages</a>' +
+    '<a href="' + destination + 'downloads/">Download centre</a>' +
     '<a href="' + destination + 'files/">Files</a>' +
     '<a href="' + destination + '?view=connection">Diagnostics</a></nav>';
   html = html.replace(/(<div id="host-file-firmware"[^>]*>)/, quickLinks + '$1');

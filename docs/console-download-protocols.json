@@ -33,7 +33,13 @@
     "submit": "POST same-origin /download_url with JSON: type,url(origin),username,password,http_server_type,src_path(path+query),dest_path(full filename),size,id",
     "acknowledgment": "Empty HTTP200 acknowledges submission only. Explicit result.success:false is rejected.",
     "status": "GET same-origin /get_download_state. Re-read immediately before each download submission; a matching destination record prevents a duplicate POST. Network/unreadable-response submission failures remain uncertain and locked while later status reads can recover the actual record.",
-    "states": {"0":"pending","1":"downloading","2":"resumed","3":"failed","4":"receiver reports complete"},
+    "states": {
+      "0": "pending",
+      "1": "downloading",
+      "2": "resumed",
+      "3": "failed",
+      "4": "receiver reports complete"
+    },
     "limitations": [
       "Destination parents must already exist; the background download code does not create them.",
       "Receiver-reported completion is not hash verification or proof of console compatibility.",
@@ -65,5 +71,13 @@
     "goldhen": "GET http://127.0.0.1:9090/status then POST rawBIN to9090 runs a payload; it does not save it to disk. Instant loading is HTTP-only.",
     "source": "https://github.com/hippie68/hippie68.github.io#instant-payload-loading-with-goldhen-20s-binloader-server"
   },
-  "verification": "Unit contracts and a loopback metadata-only receiver fixture. No downloaded payloads were executed. Physical PS4/PS5 transfers have not been tested."
+  "verification": "Unit contracts and a loopback metadata-only receiver fixture. No downloaded payloads were executed. Physical PS4/PS5 transfers have not been tested.",
+  "customURL": {
+    "introducedVersion": "2026.11.02.28",
+    "publicInput": "An explicit HTTP(S) URL and optional single filename. Review on the page; choose browser download or continue to the matching installed local downloader.",
+    "handoff": "?file=custom-url#download-url=<encoded JSON containing only url and filename>. The fragment is not sent to the local HTTP server. Older installed copies reject the exact sentinel rather than showing unrelated saves.",
+    "localSave": "A valid import stages one custom card. Only an explicit Save to console sends a request; existing queue, destination and partial-file checks apply, with a fresh preflight queue read. size is 0 until the native transfer reports a total.",
+    "verification": "Custom links have no catalogue SHA-256, size or compatibility review. No automatic extraction, package installation or native execution action is offered. Native file-manager access remains explicit.",
+    "browserDownload": "The browser handles the direct link and may open a preview. The static site does not proxy file bytes or report browser transfer progress."
+  }
 }

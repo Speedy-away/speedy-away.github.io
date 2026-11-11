@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-11",
+  "status": "Implemented, archived and locally verified; publication pending.",
+  "pages": [
+    "/ps4/downloads/",
+    "/ps5/downloads/"
+  ],
+  "userClarifications": [
+    "Add a paste-URL downloader similar to the URL entry in Downloader on Fire TV, for the PS4/PS5 centres.",
+    "Merge Download centre and Packages into one navigation destination."
+  ],
+  "features": [
+    "Validate a direct HTTP(S) link, suggest or edit its filename, and choose a browser download or matching console handoff.",
+    "Stage custom links in the installed local downloader; Save to console stays separate and retains fresh queue, destination and partial-file checks plus live transfer progress.",
+    "Keep custom links separate from reviewed catalogue files; do not claim a content hash or expose automatic extraction or package installation.",
+    "Provide one Download centre navigation entry with its PKG filter and retained installer setup. Preserve legacy package file and setup bookmarks."
+  ],
+  "receiver": {
+    "version": "2026.11.02.28",
+    "records": [
+      {
+        "platform": "ps4",
+        "version": "2026.11.02.28",
+        "path": "console/ps4/whatsite-ps4.html",
+        "immutablePath": "downloads/helpers/console-download-receivers/ps4/2026.11.02.28-b46a8ce10a7f/whatsite-ps4.html",
+        "bytes": 812513,
+        "sha256": "b46a8ce10a7fd530bc1be0191926f2500cde5b448c39f6c51e01491ba51587c9",
+        "previousSha256": "1b57d76a0c3da2f50084014ce9ed920e24147da97d5e3513c91f23babbf039dd",
+        "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps4/retained-1b57d76a0c3d/whatsite-ps4.html",
+        "previousItems": 542,
+        "items": 542,
+        "supportsStagedUpdate": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.28\\whatsite-ps4.html"
+      },
+      {
+        "platform": "ps5",
+        "version": "2026.11.02.28",
+        "path": "console/ps5/whatsite-ps5.html",
+        "immutablePath": "downloads/helpers/console-download-receivers/ps5/2026.11.02.28-d3f71294c07f/whatsite-ps5.html",
+        "bytes": 612088,
+        "sha256": "d3f71294c07f71ae62e6bb9058284bfc69c0ccdcc5733c7d721ef99e59e9d71f",
+        "previousSha256": "45c1e338ad7e7f7a2b5439667f5d985f9d4faaf2f0d179e78c8fb9fe67898e2e",
+        "previousPublicSnapshot": "downloads/helpers/console-download-receivers/ps5/retained-45c1e338ad7e/whatsite-ps5.html",
+        "previousItems": 356,
+        "items": 356,
+        "supportsStagedUpdate": true,
+        "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\whatsite Console Downloader\\Builds\\2026.11.02.28\\whatsite-ps5.html"
+      }
+    ],
+    "previousJobs": "docs/qa/host-menu-companion-jobs-2026.11.02.27.json",
+    "catalogueItemsUnchanged": {
+      "ps4": 542,
+      "ps5": 356
+    }
+  },
+  "archive": {
+    "copiesHashVerified": 2,
+    "previousImmutableCopiesHashVerified": 2,
+    "olderArchiveRecordsPreserved": 9472,
+    "presentFileRecords": 9491,
+    "missingFileRecords": 0
+  },
+  "validation": {
+    "focusedTestsPassed": 101,
+    "pagesChecksPassed": 5,
+    "nativeScriptsVerifiedUnchanged": 1016,
+    "desktopBrowser": true,
+    "mobileWidth": 390,
+    "legacyPackageBookmarkChecked": true,
+    "physicalConsole": false,
+    "downloadedNativeCodeExecuted": false
+  },
+  "remaining": [
+    "Publish and verify the live pages, URL assets and exact .28 helper bytes.",
+    "Physical-console execution remains unverified."
+  ]
+}

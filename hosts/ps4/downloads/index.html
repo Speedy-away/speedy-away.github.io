@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/host-download-desk.css?v=20261111">
   <script defer src="/assets/console-downloads.js?v=20261108"></script>
-  <script defer src="/assets/host-download-desk.js?v=20261111"></script>
+  <script defer src="/assets/console-url-downloads.js?v=20261111url1"></script>
+  <script defer src="/assets/host-url-downloader.js?v=20261111url1"></script>
+  <script defer src="/assets/host-download-desk.js?v=20261111url1"></script>
 <title>PS4 Download Centre | WWB HOST</title>
-<meta name="description" content="Find exact PS4 app, payload, mod and game patch downloads with version, compatibility and checksum details.">
+<meta name="description" content="Paste a direct file URL or browse PS4 apps, payloads, mods and game patches with compatibility details.">
 <meta name="keywords" content="PS4, PlayStation 4, PS4 homebrew, console downloads, payloads, homebrew, mod files, game patches, WWB HOST, whatwhatboy">
 <meta name="author" content="whatwhatboy">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -38,7 +40,6 @@
     <a href="/hosts/ps4/">PS4</a>
     <a href="/hosts/ps5/">PS5</a>
     <a class="host-download-link" href="/hosts/ps4/downloads/" aria-current="page">Download centre</a>
-    <a href="/hosts/ps4/packages/">Packages</a>
     <a href="/hosts/ps4/files/">File manager</a>
     <a href="/hosts/updates/#ps4">Console updates</a>
   </nav>
@@ -46,15 +47,32 @@
     <header class="host-download-lead" data-wwb-text-heading>
       <p class="host-download-eyebrow">PS4 · WWB HOST</p>
       <h1>Download centre</h1>
-      <p>Apps, payloads, mods and game patches for your PS4. Find a file, check its requirements, then choose where to save it.</p>
-      <div class="host-download-actions"><a class="host-download-primary" href="#downloads">Browse files</a><a href="/hosts/ps5/downloads/">Looking for PS5 downloads?</a></div>
+      <p>Paste a download link or browse apps, payloads, mods and game patches for your PS4.</p>
+      <div class="host-download-actions"><a class="host-download-primary" href="#host-url-downloader">Enter a URL</a><a href="#downloads">Browse files</a><a href="/hosts/ps5/downloads/">Looking for PS5 downloads?</a></div>
     </header>
+    <section id="host-url-downloader" class="host-url-downloader" data-platform="ps4" aria-labelledby="host-url-title">
+      <h2 id="host-url-title">Download from a URL</h2>
+      <p>Have a file link? Paste it here, then choose where to download it.</p>
+      <form id="host-url-form" novalidate>
+        <label for="host-url-input">Direct file URL</label>
+        <div class="host-url-entry"><input id="host-url-input" type="url" inputmode="url" placeholder="https://example.com/file.zip" maxlength="4096" required autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="host-url-help host-url-status"><button id="host-url-continue" type="submit">Continue</button><button id="host-url-clear" type="button">Clear</button></div>
+        <details class="host-url-options"><summary>File name (optional)</summary><label for="host-url-filename">Save as</label><input id="host-url-filename" type="text" placeholder="Use the file name from the link" maxlength="160" autocomplete="off" spellcheck="false" aria-describedby="host-url-status"></details>
+      </form>
+      <p id="host-url-help" class="host-download-meta">Use a direct HTTP or HTTPS download link. For a page with a download button, copy its file link first.</p>
+      <p id="host-url-status" role="status" aria-live="polite"></p>
+      <div id="host-url-review" class="host-url-review" hidden>
+        <h3 id="host-url-name"></h3><code id="host-url-source"></code>
+        <div class="host-download-controls"><a id="host-url-browser" class="host-download-primary" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" data-no-file-options>Download on this device</a><a id="host-url-console" hidden>Continue on PS4</a></div>
+        <p id="host-url-connection-help">To save on your PS4, <a href="#connection-settings">choose its console address</a>.</p>
+        <p class="host-download-meta">Your browser handles downloads on this device; some links open a preview. Console URL downloads need the updated local downloader. It opens a folder chooser and a separate Save to console action. <a id="host-url-update-help" href="#setup">Setup / update help</a>.</p>
+      </div>
+    </section>
     <details id="guide" class="host-download-guide">
       <summary>Simple guide <span>Find a file · Check requirements · Save</span></summary>
       <div class="host-download-section-head"><h2 id="host-download-guide-title">Three simple steps</h2><a href="#setup">First-time console setup</a></div>
       <ol>
-        <li><strong>Find your file</strong><span>Search by name, game or version. Use PKGs or Archives to narrow the list.</span></li>
-        <li><strong>Check the requirements</strong><span>Match your console, firmware and game version. Open File details for the compatibility guide.</span></li>
+        <li><strong>Enter a link or find a file</strong><span>Paste a direct URL above, or search the library by name, game or version.</span></li>
+        <li><strong>Check the requirements</strong><span>Check the filename and match your console, firmware and game version. Library files include a compatibility guide.</span></li>
         <li><strong>Choose where to save</strong><span>Use Download file on this device. After setup, use Save on PS4 and follow the local download queue.</span></li>
       </ol>
       <p class="host-download-guide-note">Saving a file does not install or run it. The console queue shows Extract or Install PKG for eligible files after the save completes.</p>
@@ -73,7 +91,7 @@
         <label>File type<select id="host-download-type"><option value="all">All files</option><option value="apps">Apps and homebrew</option><option value="payloads">Payloads</option><option value="mods">Mods</option><option value="patches">Game patches</option><option value="packages">Homebrew PKGs</option><option value="archives">Archives</option></select></label>
           <button id="host-download-clear" type="button">Clear filters</button>
         </div>
-        <details class="host-download-connection">
+        <details id="connection-settings" class="host-download-connection">
           <summary>Choose console address</summary>
           <form id="host-download-connection">
             <label>Console IP address<input id="host-download-address" type="text" placeholder="192.168.1.10" spellcheck="false" autocomplete="off"></label>
@@ -101,7 +119,7 @@
         <li>Choose <strong>Save on PS4</strong> for a file, prepare or choose a writable destination and press <strong>Save to console</strong>. The local page shows live progress. When the save completes, eligible files show <strong>Extract</strong> or <strong>Install PKG</strong>.</li>
       </ol>
       <p>Open the ezRemote Web UI on port 8080 first if you need to install the companion. After setup, choose <strong>Open download queue</strong>. If it cannot open, check the companion path and that the matching ezRemote Server is running on port 6701. If the save folder is missing, choose <strong>Prepare a storage folder</strong>.</p>
-      <p>To install a saved PKG, open the <a href="/hosts/ps4/packages/#setup">package setup</a> and use the compatible installer. Keep enough storage for both a download and any installed or extracted copy. The native installer still needs verification on PS4 firmware 14.00.</p>
+      <p>To install a saved PKG, open the <a href="#package-setup">package setup</a> and use the compatible installer. Keep enough storage for both a download and any installed or extracted copy. The native installer still needs verification on PS4 firmware 14.00.</p>
     </details>
     <details id="host-ps4-update" class="host-download-setup" aria-labelledby="host-ps4-update-title" hidden>
       <summary id="host-ps4-update-title">Update the PS4 downloader</summary>
@@ -129,6 +147,21 @@
         <li>If the archive contains a compatible PKG, open the extracted folder in the ezRemote Web UI and select that PKG for installation. Check the result on your console.</li>
       </ol>
       <p>The verified extraction action is limited to reviewed archives up to 32 MiB. For larger or unreviewed archives, inspect the saved file in the <a href="/hosts/ps4/files/">native file manager</a> before extracting it there.</p>
+    </details>
+    <details id="package-setup" class="host-download-setup">
+      <summary>Install PKGs on PS4</summary>
+      <p>Use an existing compatible homebrew environment. The browser opens the local native tools after they have been set up.</p>
+      <p>First-time setup on PS4 requires a compatible GoldHEN session. The ezRemote 2.08 instructions use a prepared FAT32 USB drive to install the app. Once ezRemote is installed, the steps below run from your PS4.</p>
+      <ol>
+        <li>Open <a href="https://github.com/cy33hc/ps4-ezremote-client/releases/tag/2.08">ezRemote Client 2.08</a> on the PS4. Enable GoldHEN BIN Loader and start the bundled background server from ezRemote Global Settings. In the console browser, choose <strong>Open ezRemote Web UI</strong>. Choose <strong>Download URL</strong>, then use <strong>Change</strong> to select the destination folder. Enter the filename and direct URL shown below.</li>
+        <li>In the ezRemote Web UI, download the <a href="/console/ps4/whatsite-ps4.html">latest downloader companion</a> to <code translate="no">/data/whatsite-ps4.html</code>. Its direct URL is <code translate="no">https://speedy-away.github.io/console/ps4/whatsite-ps4.html</code>.</li>
+        <li>In ezRemote, save the <a href="/downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html" download data-no-file-options>pinned package helper</a> to <code translate="no">/data/whatsite-package-installer-ps4.html</code>. Enter <code translate="no">https://speedy-away.github.io/downloads/helpers/host-package-installer/ps4/faa27756cd456320/whatsite-package-installer-ps4.html</code> as its direct URL. Keep the client web service running on port 8080.</li>
+        <li>Choose a PKG in the library above and open its console action. Choose a verified destination in the downloader, confirm the transfer and wait for its completion report.</li>
+        <li>Open <strong>Install PKG</strong> on the completed transfer. Verify the expected size and saved file path, review the confirmation and explicitly choose Install. For an already saved PKG, <a href="http://127.0.0.1:8080/data/whatsite-package-installer-ps4.html">open the installed package helper</a> on your console and enter the saved file path. You can also open the file in ezRemote.</li>
+      </ol>
+      <p>Open the ezRemote Web UI on port 8080 first if you need to install the companion. After setup, choose <strong>Open download queue</strong>. If it cannot open, check the companion path and that the matching ezRemote Server is running on port 6701. If the save folder is missing, choose <strong>Prepare a storage folder</strong>.</p>
+      <p>The native PS4 installer can replace an existing title. PS4 firmware 14.00 compatibility with this installer still needs console verification. If you still need to install ezRemote itself, follow the linked project's initial setup for your console.</p>
+      <p>The helper checks filename, size and partial download status. The SHA-256 in File details is a reference for verifying the full saved file. A native acknowledgement still requires checking the installation result on your console.</p>
     </details>
     <details id="native-feed" class="host-download-setup">
       <summary>PS4 Games Installer catalogue</summary>
