@@ -29,3 +29,7 @@ body.host-toolpage.host-trainer-blue .trainer-builds button[aria-pressed=true]{b
 body.host-toolpage.host-trainer-blue .tool-status{background:#172c48;border-color:#99bdff}
 body.host-toolpage.host-trainer-blue .wwb-heading-art img[src$="/tools.svg"]{filter:hue-rotate(65deg)}
 body.host-toolpage.host-trainer-blue :focus-visible{outline-color:#99bdff}
+
+/* Fill trainer artwork frames in the gallery and game-build dialog. */
+body.host-toolpage.host-trainer-blue .trainer-tile-art{overflow:hidden!important}
+body.host-toolpage.host-trainer-blue .trainer-tile-art img{width:100%;height:100%;object-fit:cover!important;object-position:center!important}
