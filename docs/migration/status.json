@@ -2851,5 +2851,22 @@
     "scope": "162 local files plus the existing PS4 picker/SEO commit, preserving remote PS5 manager and deployment records.",
     "payloadsExecuted": false,
     "hardwareVerified": false
+  },
+  "hostMonochrome20261113": {
+    "date": "2026-11-13",
+    "status": "Validated for publication from isolated checkout.",
+    "scope": "Matched whatwhatboy screenshot across authored host pages with black background, grey directory cards, white wave lines, compact headings and persistent light mode. Includes PS4/PS5 routes, downloads, tools, file managers, offline and localized pages. Main-site header link follows Contact Me.",
+    "checks": {
+      "focusedTests": 33,
+      "mainNavigationTests": 21,
+      "baselineFailures": 5,
+      "nativeScriptsUnchanged": 1030,
+      "hardwareVerified": false,
+      "payloadsExecuted": false,
+      "productionChecks": 5
+    },
+    "visual": "Browser inspected homepage, PS4 firmware selection, PS5 firmware and file manager, PS4 downloads at desktop and 390px. Verified theme persistence and no horizontal overflow.",
+    "preservation": "Original native runtime and downloadable bytes unchanged. Existing concurrent PS4 work remains in shared checkout; release is isolated.",
+    "releaseCheckout": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/host-monochrome/release"
   }
 }

@@ -1,31 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="none">
-  <defs>
-    <linearGradient id="ribbon" x1="0" y1="1" x2="1" y2="0">
-      <stop stop-color="#103469" stop-opacity="0"/>
-      <stop offset=".28" stop-color="#1e579f" stop-opacity=".37"/>
-      <stop offset=".59" stop-color="#5aabf1" stop-opacity=".25"/>
-      <stop offset=".84" stop-color="#3178c4" stop-opacity=".29"/>
-      <stop offset="1" stop-color="#17528b" stop-opacity=".04"/>
-    </linearGradient>
-    <linearGradient id="edge">
-      <stop stop-color="#2a6cbe" stop-opacity=".08"/>
-      <stop offset=".38" stop-color="#629ee4" stop-opacity=".34"/>
-      <stop offset=".66" stop-color="#9cd6ff" stop-opacity=".53"/>
-      <stop offset="1" stop-color="#529cdd" stop-opacity=".12"/>
-    </linearGradient>
-    <radialGradient id="glow" cx=".66" cy=".68" r=".64">
-      <stop stop-color="#123467" stop-opacity=".7"/>
-      <stop offset="1" stop-color="#071426" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <path fill="url(#glow)" d="M0 0h1600v900H0z"/>
-  <path fill="url(#ribbon)" d="M-100 582C188 481 374 730 629 665S925 353 1160 412s327 168 540 70v53c-209 90-381-68-547-72-216-5-324 203-521 235C372 739 175 561-100 629Z"/>
-  <path fill="url(#ribbon)" opacity=".61" d="M-100 675c285-174 473 55 726 25 235-28 359-285 598-252 187 26 286 103 476 1v32c-199 115-313 12-482 1-219-14-372 230-596 244-229 15-447-176-722-12Z"/>
-  <g fill="none" stroke="url(#edge)" stroke-width="1.3">
-    <path d="M-100 582C188 481 374 730 629 665S925 353 1160 412s327 168 540 70"/>
-    <path opacity=".61" d="M-100 598C188 495 371 732 630 679s305-296 533-251 332 158 537 72"/>
-    <path opacity=".49" d="M-100 611C174 511 364 735 631 693s312-287 532-252 338 142 537 65"/>
-    <path opacity=".69" d="M-100 675c285-174 473 55 726 25 235-28 359-285 598-252 187 26 286 103 476 1"/>
-    <path opacity=".38" d="M-100 692c281-175 489 52 729 23 249-29 359-273 593-250 193 19 279 114 478 7"/>
-  </g>
-</svg>
+<g fill="none" stroke="#aaa" stroke-width="1">
+<path opacity="0.340" d="M-100 660 C180 620 350 200 690 385 S1120 780 1700 370"/>
+<path opacity="0.315" d="M-100 666 C180 626 350 208 690 390 S1120 784 1700 379"/>
+<path opacity="0.290" d="M-100 672 C180 632 350 216 690 395 S1120 788 1700 388"/>
+<path opacity="0.265" d="M-100 678 C180 638 350 224 690 400 S1120 792 1700 397"/>
+<path opacity="0.240" d="M-100 684 C180 644 350 232 690 405 S1120 796 1700 406"/>
+<path opacity="0.215" d="M-100 690 C180 650 350 240 690 410 S1120 800 1700 415"/>
+<path opacity="0.190" d="M-100 696 C180 656 350 248 690 415 S1120 804 1700 424"/>
+<path opacity="0.165" d="M-100 702 C180 662 350 256 690 420 S1120 808 1700 433"/>
+<path opacity="0.140" d="M-100 708 C180 668 350 264 690 425 S1120 812 1700 442"/>
+<path opacity="0.115" d="M-100 714 C180 674 350 272 690 430 S1120 816 1700 451"/>
+</g><g fill="#aaa" opacity=".24"><circle cx="190" cy="680" r="1.2"/><circle cx="1420" cy="460" r="1"/><circle cx="930" cy="510" r=".8"/></g></svg>
