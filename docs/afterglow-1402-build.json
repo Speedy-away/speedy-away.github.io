@@ -274,7 +274,7 @@
     {
       "path": "cache.appcache",
       "bytes": 933,
-      "sha256": "3d232d4924d215401dc771493e969deef708afd5f429f3d176697d83d90ba6e3"
+      "sha256": "ddbf5fe7b63b2bb2f1213a5219169bcfd8f08e2415ec84fc0d83eac15fadd07a"
     },
     {
       "path": "cache.js",
@@ -318,8 +318,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 6235,
-      "sha256": "d02be46dee0f5f1a018f74af0508600de29460f7b5ccecee1f56b4eb36dbac47"
+      "bytes": 6152,
+      "sha256": "e0db7066a20b0518872e8d2e3eb26517aa5964e22b2a5ac50e2be5ebe5d95694"
     },
     {
       "path": "int64.js",
@@ -384,7 +384,7 @@
     {
       "path": "offline-files.json",
       "bytes": 6647,
-      "sha256": "d37c822186dbb38b933ada7b5d6c07905f25c219915ef965cccf357b7e286a6d"
+      "sha256": "bc3cea681c4134e352697456720ce96f944c9164acc410812fe952635804e71d"
     },
     {
       "path": "offline-sw.js",
@@ -536,10 +536,10 @@
     "GoldHEN numeric version is not identified by the pinned Afterglow README."
   ],
   "archive": {
-    "filename": "afterglow-1402-944d5aeed06f-030dd7b73a64.zip",
-    "local": "downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-030dd7b73a64.zip",
-    "bytes": 1073991,
-    "sha256": "030dd7b73a649ee99498ef1389aab8c92616c33ca586740e2ce463ff69083bd6",
+    "filename": "afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+    "bytes": 1073909,
+    "sha256": "3a1dae9968d7abcfd0abe93a9ac109e9533de7af7c2259f391ef2a4624d7801f",
     "sourceURL": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
     "version": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1"
   }

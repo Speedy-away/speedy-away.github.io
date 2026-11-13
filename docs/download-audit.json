@@ -338221,9 +338221,42 @@
         }
       ],
       "labels": []
+    },
+    {
+      "id": "afterglow-1402-afterglow-1402-944d5aeed06f-3a1dae9968d7-zip-3a1dae9968d7",
+      "project": "Afterglow",
+      "title": "PS4 14.02 WebKit Exploit · afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "files": [
+        {
+          "name": "afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+          "bytes": 1073909,
+          "sha256": "3a1dae9968d7abcfd0abe93a9ac109e9533de7af7c2259f391ef2a4624d7801f",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1\\afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+          "releaseTag": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+          "archiveRole": [
+            "Builds"
+          ]
+        }
+      ]
     }
   ],
-  "updated": "2026-11-13T20:26:29.755Z",
+  "updated": "2026-11-13T20:33:05.567Z",
   "backupRoot": "F:\\whatsite-backup-downloads-etc",
   "scope": "Menus, scripts, tools and source codes; excludes games and firmware",
   "indexRefresh": {

@@ -1,4 +1,23 @@
 {
+  "ps4RequestedAds20261113": {
+    "date": "2026-11-13",
+    "status": "Local ad update; not committed or pushed by this side conversation.",
+    "scope": "14.02 landing page only",
+    "native": "https://bellnewyork.org/21/62821bf166fc6aeab021ec0455a62244",
+    "footer": "https://bellnewyork.org/14/1336a8e97eea4e92505dce7c3820690a",
+    "placement": "One native tag/container in the page body; one supplied footer script immediately before closing body.",
+    "archive": {
+      "filename": "afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+      "local": "downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
+      "bytes": 1073909,
+      "sha256": "3a1dae9968d7abcfd0abe93a9ac109e9533de7af7c2259f391ef2a4624d7801f",
+      "sourceURL": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+      "version": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1"
+    },
+    "archiveVerified": true,
+    "tests": "20 focused tests pass; exact tag counts and footer placement verified.",
+    "nativePayloadsExecuted": false
+  },
   "ps4ReleasePublication20261113": {
     "date": "2026-11-13",
     "status": "User requested final review and push; release staged for main.",
