@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "url": "/downloads/helpers/console-files/console-files-1.0.0-e66704e5cdc5.zip",
-  "bytes": 79419,
-  "sha256": "e66704e5cdc533f3e3cc3f9b442f563b03f89c5f6a6600ba574679a25ef645db",
+  "url": "/downloads/helpers/console-files/console-files-1.0.0-f317af11f8ae.zip",
+  "bytes": 79452,
+  "sha256": "f317af11f8ae7f7576e752eabe773c402038763f72b6dfb375a5d98360388dcc",
   "requirements": [
     "Node.js 22+",
     "7-Zip for archives",
@@ -15,8 +15,8 @@
   "files": [
     {
       "name": "scripts/console-files-helper.cjs",
-      "bytes": 10849,
-      "sha256": "37f73f51be848f036f4632950fc1e1a240ff795606c690480a88d6f58b6b9acc"
+      "bytes": 10906,
+      "sha256": "6ed4c08af7b4a9455d355fd8f0a2051e6196a9b513fe4e1c8ea93f358cc364ae"
     },
     {
       "name": "scripts/console-files-core.cjs",

@@ -131,6 +131,7 @@ if(require.main===module) {
     if(lan)for(const info of Object.values(os.networkInterfaces()).flat())if(info.family==='IPv4'&&!info.internal)console.log('Phone / tablet: http://'+info.address+':'+port);
     console.log('Keep this terminal open. FTP must be enabled on your console. Ctrl+C stops the helper.');
   });
-  process.on('SIGINT',()=>server.close(()=>process.exit(0)));
+  // Let pending temporary-file cleanup finish before Node exits naturally.
+  process.on('SIGINT',()=>server.close());
 }
 module.exports={createServer,run7z,sevenZip};
