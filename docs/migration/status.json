@@ -2839,5 +2839,17 @@
       "hardwareVerified": false
     },
     "remaining": "Physical PS5 file operations, ELF execution and console-browser rendering require hardware verification. No native payload was executed during testing."
+  },
+  "localChangesIntegration20261113": {
+    "date": "2026-11-13",
+    "status": "All requested local changes committed and remote PS5 publication merged; verified for push.",
+    "tests": 60,
+    "passed": 60,
+    "productionChecks": 5,
+    "buildBytes": 905175716,
+    "nativeScriptsUnchanged": 1030,
+    "scope": "162 local files plus the existing PS4 picker/SEO commit, preserving remote PS5 manager and deployment records.",
+    "payloadsExecuted": false,
+    "hardwareVerified": false
   }
 }
