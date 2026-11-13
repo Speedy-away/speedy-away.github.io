@@ -79,7 +79,11 @@
         "Enable the HEN BIN loader on HTTP 9090 before sending the flat BIN. ELF traffic then uses its separate service on 9021.",
         "Do not send an ELF to an older KARO raw BIN listener on 9021."
       ],
-      "license": "Distributed unchanged from the pinned WebKitty snapshot; preserve WebKitty and John Törnblom attribution."
+      "license": "Distributed unchanged from the pinned WebKitty snapshot; preserve WebKitty and John Törnblom attribution.",
+      "run": {
+        "type": "elf-http",
+        "port": 9021
+      }
     }
   ]
 }

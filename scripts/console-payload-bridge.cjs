@@ -12,7 +12,7 @@ const crypto = require('node:crypto');
 const {normalizeAddress} = require('../assets/host-console-client.js');
 const ROOT = path.resolve(__dirname, '..');
 const MAX_FILE = 64 * 1024 * 1024;
-const CATALOGUES = ['docs/host-actions-ps4.json', 'docs/host-webkitty-loader-actions.json', 'docs/host-actions-ps5.json', 'docs/host-game-actions.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-native-payload-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json'];
+const CATALOGUES = ['docs/host-actions-ps4.json', 'docs/host-webkitty-loader-actions.json', 'docs/host-webkitty-payload-actions.json', 'docs/host-actions-ps5.json', 'docs/host-game-actions.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-native-payload-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json'];
 const MIME = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.ico':'image/x-icon','.woff2':'font/woff2','.elf':'application/octet-stream','.bin':'application/octet-stream'};
 function fail(code, message) { const e = new Error(message); e.code = code; return e; }
 function uncertainFailure(error) {
@@ -65,7 +65,7 @@ function localFileFor(action, root = ROOT, {forRun = true} = {}) {
   if (!formats.includes(format) || path.extname(decoded).toUpperCase() !== '.' + format) throw fail('unsupported-format', 'This action does not contain a supported ready-to-use file.');
   if (!/^[a-f0-9]{64}$/i.test(action.sha256 || '')) throw fail('checksum-required', 'The curated action must include its SHA-256 checksum.');
   const run = action.run || {};
-  const supported = (run.type === 'elf-tcp' || run.type === 'elf-http' && action.platform === 'ps5') && format === 'ELF' && run.port === 9021 ||
+  const supported = (run.type === 'elf-tcp' || run.type === 'elf-http' && ['ps4','ps5'].includes(action.platform)) && format === 'ELF' && run.port === 9021 ||
     run.type === 'bin-tcp' && action.platform === 'ps4' && format === 'BIN' && run.port === 9020 ||
     run.type === 'goldhen-http' && action.platform === 'ps4' && format === 'BIN' && (!run.port || run.port === 9090);
   if (forRun && !supported)
@@ -336,7 +336,7 @@ function staticPath(requestURL) {
     /^\/docs\/host-(?:actions-ps[45]|game-actions)\.json$/.test(value);
   return allowed ? value : null;
 }
-function createBridge({root = ROOT, actions = loadActions(root), token = crypto.randomBytes(32).toString('hex'), resolveAddress = resolveConsoleAddress, sendELF = sendRawELF, sendBIN = sendGoldHENHTTP, sendRawBIN: sendTCPBIN = sendRawBIN, inspectServices = inspectConsoleServices, userFileTimeoutMs = 10000} = {}) {
+function createBridge({root = ROOT, actions = loadActions(root), token = crypto.randomBytes(32).toString('hex'), resolveAddress = resolveConsoleAddress, sendELF = sendRawELF, sendBIN = sendGoldHENHTTP, sendRawBIN: sendTCPBIN = sendRawBIN, inspectServices = inspectConsoleServices, userFileTimeoutMs = 10000, elfOptions = {}} = {}) {
   if (!/^[a-f0-9]{64}$/i.test(token)) throw fail('invalid-token', 'The sender token must be 32 random bytes encoded as hexadecimal.');
   root = fs.realpathSync(root);
   const busy = new Set();
@@ -352,7 +352,7 @@ function createBridge({root = ROOT, actions = loadActions(root), token = crypto.
       if (req.method === 'GET' && req.url === '/api/status') return json(res,200,{status:'connected',code:'sender-ready',version:'1.0.0',protocolVersion:2,capabilities:{serviceOverview:true,uncertainOutcomes:true,userSelectedBIN:true},message:'Local sender connected. This check did not send a payload.',actions:actions.map(a => availability(a,root))});
       if (req.method === 'GET' && req.url === '/api/loader-status') return json(res,200,{status:'connected',ps4LoaderUpload:true,message:'PS4 loader sender connected.'});
       if (req.method === 'POST' && req.url === '/api/loader-file') {
-        try { return json(res,200,await require('./ps4-loader-upload.cjs').receive(req,{busy,resolveAddress,sendELF,sendBIN,sendTCPBIN,timeoutMs:userFileTimeoutMs})); }
+        try { return json(res,200,await require('./ps4-loader-upload.cjs').receive(req,{busy,resolveAddress,sendELF,sendBIN,sendTCPBIN,root,elfOptions,timeoutMs:userFileTimeoutMs})); }
         catch(e){res.shouldKeepAlive=false;req.resume();return json(res,e.mayHaveExecuted?200:400,{status:e.mayHaveExecuted?'uncertain':'error',code:e.code||'loader-failed',message:e.message,...(e.mayHaveExecuted?{mayHaveExecuted:true}: {})});}
       }
       if (req.method === 'POST' && req.url === '/api/run-file') {
@@ -396,7 +396,8 @@ function createBridge({root = ROOT, actions = loadActions(root), token = crypto.
         if (busy.has(key)) throw fail('console-busy','Another payload transfer is still in progress for this console.');
         busy.add(key); acquired = true;
         const file = await readVerifiedFile(action,root);
-        const outcome = action.run.type === 'bin-tcp' ? await sendTCPBIN(address,file.data) :
+        const outcome = action.platform==='ps4' && action.format==='ELF' && body.firmware==='14.02' ? await require('./ps4-elf-autostart.cjs').send(address,file.data,{root,firmware:body.firmware,name:path.basename(action.downloadURL),...elfOptions}) :
+          action.run.type === 'bin-tcp' ? await sendTCPBIN(address,file.data) :
           action.run.type === 'elf-tcp' || action.run.type === 'elf-http' ? await sendELF(address,file.data) : await sendBIN(address,file.data);
         return json(res,200,{...outcome,actionId:action.id,platform:action.platform,address,sha256:file.sha256});
       } catch (e) { return json(res,e.mayHaveExecuted ? 200 : 400,{status:e.mayHaveExecuted ? 'uncertain' : 'error',code:e.code || 'sender-failed',message:e.code ? e.message : 'The sender could not complete the action. Nothing has been confirmed on the console.',...(e.mayHaveExecuted ? {mayHaveExecuted:true,outcome:'unknown'} : {})}); }

@@ -2768,5 +2768,29 @@
       },
       "catalogue": "Manager-specific audited entry verified; complete legacy catalogue rebuild unavailable because retained GTA5 manifest is absent from the independent host checkout."
     }
+  },
+  "ps5WebFileManager20261113": {
+    "date": "2026-11-13",
+    "status": "Release prepared for requested push; deployment verification follows.",
+    "version": "v1.14",
+    "source": "https://github.com/owendswang/ps5-web-file-manager",
+    "page": "https://speedy-away.github.io/hosts/ps5/files/",
+    "manifest": "docs/ps5-web-file-manager.json",
+    "changes": [
+      "Default manager replaced with native v1.14, configurable notification port, official pinned ELF and optional extraction-helper downloads.",
+      "Native elfldr HTTP URI launch and paired sender compatibility; previous websrv/ezRemote/autoload workspace retained.",
+      "Independent-host catalogue rebuild preserves migrated download entries without private legacy manifests."
+    ],
+    "verification": {
+      "tests": 71,
+      "passed": 71,
+      "productionChecks": 5,
+      "archiveAssets": 2,
+      "archiveSHA256Verified": true,
+      "payloadsExecuted": false,
+      "hardwareVerified": false,
+      "visual": "No connected browser provider available for interactive visual verification."
+    },
+    "releaseScope": "Isolated checkout contains only the requested PS5 replacement and catalogue fix. Concurrent unpublished PS4/layout work remains in the shared checkout."
   }
 }

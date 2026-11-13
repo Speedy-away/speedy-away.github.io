@@ -58,5 +58,53 @@
       throw e;
     });
   }
-  return {profiles:profiles,validate:validate,sendHTTP:sendHTTP};
+  // Pinned flat loader; this setup transfer only happens after an explicit Load.
+  var elfBootstrap = {url:'/downloads/host-payloads/webkitty/ff181af62e0c/elfldr.bin',bytes:351460,sha256:'e66bbf87e4b5cc961a6ac1ddabca22c8c7a5e965c2a31e22e435a61fe83fdcfe'};
+  function boundedFetch(fetcher,url,init,timeoutMs,bodyType) {
+    var timer,controller=typeof AbortController!=='undefined'?new AbortController():null;
+    if(controller)init.signal=controller.signal;
+    return Promise.race([Promise.resolve().then(function(){return fetcher(url,init);}).then(function(r){
+      if(bodyType){if(!r||!r.ok)throw fail('download-failed','Could not read the pinned payload file.');return r[bodyType]();}return r;
+    }),new Promise(function(_,reject){timer=setTimeout(function(){if(controller)controller.abort();reject(fail('loader-timeout','The loader request timed out.'));},timeoutMs);})]).then(function(r){clearTimeout(timer);return r;},function(e){clearTimeout(timer);throw e;});
+  }
+  function sendAutoELF(meta,data,options) {
+    validate(meta,data);
+    if(meta.profile!=='elf-http'||meta.firmware!=='14.02')return sendHTTP(meta,data,options);
+    if(/^https:/i.test(options.origin||''))throw fail('mixed-content','Open the paired local sender to start the console ELF loader.');
+    var address=options.normalizeAddress(meta.address),fetcher=options.fetch,started=false;
+    var pause=options.pause||function(ms){return new Promise(function(resolve){setTimeout(resolve,ms);});};
+    function probe(){return boundedFetch(fetcher,'http://'+address+':9021/',{method:'GET',mode:'cors',credentials:'omit',redirect:'error',cache:'no-store'},options.probeTimeoutMs||1500).then(function(r){
+      // An HTTP response establishes the HTTP service, never interpret a raw
+      // legacy BIN port as an ELF loader. A failed probe contains no payload.
+      return !!r && r.status>=200 && r.status<500;
+    },function(){return false;});}
+    function bootstrap(){
+      var load=options.readBootstrap?options.readBootstrap():boundedFetch(fetcher,options.bootstrapURL||elfBootstrap.url,{method:'GET',credentials:'omit',redirect:'error'},options.timeoutMs||15000,'arrayBuffer');
+      return Promise.resolve(load).then(function(b){
+        var bytes=new Uint8Array(b);
+        if(bytes.length!==elfBootstrap.bytes||!options.sha256||options.sha256(bytes)!==elfBootstrap.sha256)throw fail('checksum-mismatch','ELF-loader checksum mismatch. Nothing was sent.');
+        var setup={profile:'goldhen-http',address:address,firmware:meta.firmware,name:'elfldr.bin',bytes:bytes.length,sha256:elfBootstrap.sha256,compatible:true};
+        return sendHTTP(setup,bytes,options);
+      }).then(function(){started=true;return pause(options.startDelayMs===undefined?3000:options.startDelayMs);});
+    }
+    function waitReady(left){return probe().then(function(ready){if(ready)return;if(left<=1)throw fail('elf-start-failed','The ELF loader did not become ready. The selected ELF was not sent.');return pause(500).then(function(){return waitReady(left-1);});});}
+    return probe().then(function(ready){if(ready)return;return bootstrap().then(function(){return waitReady(4);});}).then(function(){
+      // Never resend an ELF or restart a loader after a possibly accepted POST.
+      return sendHTTP(meta,data,options);
+    }).then(function(out){out.elfLoaderStarted=started;return out;});
+  }
+  function sendCatalogue(address,action,options){
+    options=options||{};
+    var url=action&&action.downloadURL;
+    if(!action||action.platform!=='ps4'||action.format!=='ELF'||!/^\/downloads\/[a-zA-Z0-9_./-]+\.elf$/.test(url||'')||url.indexOf('..')>=0)throw fail('invalid-action','Choose a verified PS4 ELF.');
+    if((action.firmwares||[]).length&&action.firmwares.indexOf(options.firmware)<0)throw fail('firmware-mismatch','Choose a payload matching the installed firmware.');
+    var meta={profile:'elf-http',address:address,firmware:options.firmware,name:url.split('/').pop(),bytes:action.bytes,sha256:action.sha256,compatible:true};
+    validate(meta);
+    if(/^https:/i.test(options.origin||''))throw fail('mixed-content','Open the paired local sender to load this ELF.');
+    return boundedFetch(options.fetch,url,{method:'GET',credentials:'omit',redirect:'error'},options.timeoutMs||15000,'arrayBuffer').then(function(b){
+      var data=new Uint8Array(b);validate(meta,data);if(options.sha256(data)!==meta.sha256)throw fail('checksum-mismatch','The payload checksum changed. Nothing was sent.');
+      return sendAutoELF(meta,data,options);
+    });
+
+  return {profiles:profiles,validate:validate,sendHTTP:sendHTTP,sendAutoELF:sendAutoELF,sendCatalogue:sendCatalogue,elfBootstrap:elfBootstrap};
 }));

@@ -15,7 +15,7 @@ const OUT = 'downloads/helpers/console-payload-sender';
 const VERSION = '2.1.0';
 const PREFIX = 'whatwhatboy-console-payload-sender/';
 const ORIGIN = fs.existsSync(path.join(ROOT,'docs/migration/status.json')) ? 'https://speedy-away.github.io' : 'https://whatwhatboy.com';
-const CATALOGUES = ['docs/host-actions-ps4.json', 'docs/host-webkitty-loader-actions.json', 'docs/host-actions-ps5.json', 'docs/host-game-actions.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-native-payload-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json'];
+const CATALOGUES = ['docs/host-actions-ps4.json', 'docs/host-webkitty-loader-actions.json', 'docs/host-webkitty-payload-actions.json', 'docs/host-actions-ps5.json', 'docs/host-game-actions.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-native-payload-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json'];
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const slash = value => value.split(path.sep).join('/');
 function contained(base, target) {

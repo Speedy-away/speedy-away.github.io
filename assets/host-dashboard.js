@@ -678,6 +678,7 @@
         });
       }
       else if (bridgeAction) request = client.runViaBridge(destination, action.id, token.value, platform, {bridgeURL: bridgeURL.value, origin: win.location.origin, firmware: firmware.value, gameVersion: action.gameVersion || ''});
+      else if (platform==='ps4' && action.format==='ELF' && firmware.value==='14.02') request = win.PS4Loader.sendCatalogue(destination,action,{firmware:firmware.value,origin:win.location.origin,normalizeAddress:client.normalizeAddress,sha256:client.sha256,fetch:win.fetch.bind(win)});
       else if (action.run.type === 'goldhen-http') request = client.sendGoldHEN(destination, action, {origin: win.location.origin});
       else if (action.run.type === 'elf-http') request = client.sendPS5ELF(destination, action, {origin: win.location.origin});
       else if (action.run.type === 'ps5-manager') request = client.launchInstalled(destination, action.run.path, {origin: win.location.origin});
@@ -727,7 +728,7 @@
       if (button.hasAttribute('data-open-action')) { try { win.open(launchURL(action), '_blank', 'noopener'); tell('Opening the installed service. Its availability has not been verified.'); } catch (error) { tell(error.message, true); } return; }
       if (requiresFirmware(action) && !firmware.value) { tell('Choose your installed firmware first.', true); return; }
       if (!firmwareMatches(action, firmware.value)) { if(fileListView)showSupport(action);tell('Choose a payload matching the installed firmware.', true); return; }
-      if (action.run && (action.run.type === 'goldhen-http' || action.run.type === 'elf-http' || action.run.type === 'ps5-manager' || bridge)) { runAction(action); return; }
+      if (action.run && (action.run.type === 'goldhen-http' || action.run.type === 'elf-http' || platform==='ps4' && action.format==='ELF' && firmware.value==='14.02' || action.run.type === 'ps5-manager' || bridge)) { runAction(action); return; }
       if (action.run && (action.run.type === 'elf-tcp' || action.run.type === 'bin-tcp') && !action.launchURL) { doc.querySelector('.host-sender').open = true; tell(action.run.type === 'bin-tcp' ? 'Connect the paired desktop sender to load this BIN.' : 'Start the local sender, open its host page, and connect with the pairing token to run ELF files.'); return; }
       if (action.category === 'mods' && !loadCapability(action).available) { tell(loadCapability(action).reason,true); return; }
       if (loadCapability(action).kind === 'browser' && detection.platform !== platform) { tell(loadCapability(action).reason,true); return; }

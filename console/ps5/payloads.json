@@ -1,5 +1,5 @@
 {
-  "name": "PS5 payloads",
+  "name": "whatwhatboy · PS5 payloads",
   "payloads": [
     {
       "id": "ps5-ezremote-ezremote-loader-1-01-elf",
@@ -205,7 +205,7 @@
       "filename": "web-file-mgr-v1.14.elf",
       "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
       "version": "v1.14",
-      "description": "Native PS5 web file manager with console and USB browsing, transfers, text editing and remote connections. Requires an already jailbroken PS5 and a compatible PS5 ELF loader on TCP 9021; no universal firmware range is claimed.",
+      "description": "Native PS5 web file manager with console and USB browsing, transfers, text editing and remote connections. Requires an already jailbroken PS5 and a compatible PS5 ELF loader on TCP 9021 (elfldr HTTP URI support, or the paired desktop sender). No universal firmware range is claimed.",
       "category": "System & services",
       "checksum": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231",
       "source": "https://github.com/owendswang/ps5-web-file-manager"

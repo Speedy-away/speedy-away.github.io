@@ -30,7 +30,7 @@ async function receive(req,context){
     const address=await resolveAddress(meta.address);key=address;
     if(busy.has(key))throw error('console-busy','A transfer to this console is already in progress.');
     busy.add(key);acquired=true;
-    const out=meta.profile==='bin-tcp'?await sendTCPBIN(address,bytes):meta.profile==='elf-tcp'?await sendELF(address,bytes):meta.profile==='goldhen-http'?await sendBIN(address,bytes):await loader.sendHTTP({...meta,address},bytes,{normalizeAddress,fetch:context.fetcher||globalThis.fetch,origin:'http://127.0.0.1',timeoutMs:context.timeoutMs});
+    const out=meta.profile==='elf-http'&&meta.firmware==='14.02'?await require('./ps4-elf-autostart.cjs').send(address,bytes,{root:context.root,firmware:meta.firmware,name:meta.name,...context.elfOptions}):meta.profile==='bin-tcp'?await sendTCPBIN(address,bytes):meta.profile==='elf-tcp'?await sendELF(address,bytes):meta.profile==='goldhen-http'?await sendBIN(address,bytes):await loader.sendHTTP({...meta,address},bytes,{normalizeAddress,fetch:context.fetcher||globalThis.fetch,origin:'http://127.0.0.1',timeoutMs:context.timeoutMs});
     return {...out,sha256,address,profile:meta.profile};
   }finally{if(acquired)busy.delete(key);}
 }

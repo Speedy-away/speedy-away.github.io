@@ -175,6 +175,7 @@ function build(output,revision='main',root=ROOT){
   if(/^hosts\/ps4\//.test(name)&&fs.existsSync(path.join(root,'docs/host-gamerhack-g2all-build.json'))&&!text.includes('data-host-firmware="10.50"'))text=text.replace(/(<button\b[^>]*data-host-firmware="10\.00"[^>]*>[\s\S]*?<\/button>)/,'$1<button type="button" data-host-firmware="10.50" aria-pressed="false" translate="no">10.50</button>');
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name))text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-compact.css?v=1"><link rel="stylesheet" href="/assets/host-blue-theme.css?v=20261104xmb1"></head>');
   if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
+  if(name==='hosts/ps5/files/index.html')text=require('./ps5-web-file-manager.cjs').apply(text);
   // Prefix authored root-relative strings, including concatenated directory roots.
   text=text.replace(/https:\/\/whatwhatboy\.com\/(hosts\/[^\s"'<>\\]*)/g,(_,p)=>{const url=target(p);return /^https?:/.test(url)?url:ORIGIN+url;});
   // Resolve complete quoted attributes before matching embedded URL tokens.

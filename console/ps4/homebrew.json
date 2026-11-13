@@ -1,0 +1,144 @@
+{
+  "DATA": {
+    "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg": {
+      "name": "Homebrew Store · PS4",
+      "version": "4.5",
+      "description": "Browse and install PS4 homebrew from the console. Use the standard PS4 package; the PS5 and legacy builds are separate.",
+      "size": 24772608,
+      "cover_url": "https://speedy-away.github.io/assets/images/expansion-ps4-ps5/homebrew-store.png"
+    },
+    "https://github.com/cy33hc/ps4-ezremote-client/releases/download/2.08/ezremote_client.pkg": {
+      "name": "ezRemote Client · PS4",
+      "version": "2.08",
+      "description": "Transfer files between PS4 and FTP, SFTP, SMB, NFS, WebDAV or HTTP servers. Background transfers need GoldHEN’s BIN Loader.",
+      "size": 52822016,
+      "cover_url": "https://speedy-away.github.io/assets/images/expansion-ps4-ps5/ps4-ezremote.jpg"
+    },
+    "https://github.com/0x199/ps4-ipi/releases/download/01.01/IV0000-BREW00050_00-IPI0000000000000.pkg": {
+      "name": "Internal PKG Installer",
+      "version": "01.01",
+      "description": "Install local PKG files from PS4 internal storage after transferring them to /data. Keep space for both the package and installed app.",
+      "size": 6619136,
+      "cover_url": "https://speedy-away.github.io/assets/images/expansion-ps4-ps5/ipi.png"
+    },
+    "https://github.com/e1z0/PS4-Games-Installer/releases/download/r40/PS4Game_installer-r40.pkg": {
+      "name": "PS4 Games Installer",
+      "version": "r40",
+      "description": "Manage your own hosted package catalogue and installed library. Release r40 is tested on PS4 11.00 with GoldHEN and needs a reachable catalogue server.",
+      "size": 6619136,
+      "cover_url": "https://speedy-away.github.io/assets/images/expansion-ps4-ps5/games-installer.jpg"
+    },
+    "https://github.com/Al-Azif/ps4-payload-guest/releases/download/v0.98/IV0000-AZIF00003_00-PAYLOADGUEST0000.pkg": {
+      "name": "Payload Guest",
+      "version": "v0.98",
+      "description": "Launch your compatible BIN payloads from /data/payloads or a USB payloads folder using an on-console menu. Requires existing homebrew access.",
+      "size": 34865152,
+      "cover_url": "https://speedy-away.github.io/assets/images/expansion-ps4-ps5/payload-guest.png"
+    },
+    "https://speedy-away.github.io/downloads/archive/86923843b6f3/IV0000-APOL00004_00-APOLLO0000000PS4.pkg": {
+      "name": "Apollo Save Tool · PS4",
+      "version": "2.4.0",
+      "description": "PS4 console PKG, archived version 2.4.0. Requires an existing compatible homebrew environment.",
+      "size": 22806528,
+      "cover_url": "https://speedy-away.github.io/assets/images/consoles/apollo-save-tool.png"
+    },
+    "https://github.com/iHaiDeeZ/DolphinPS4/releases/download/v04.19/DolphinPS4-v04.19.pkg": {
+      "name": "DolphinPS4",
+      "version": "v04.19",
+      "description": "Native PS4 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "size": 206831616,
+      "cover_url": "https://speedy-away.github.io/assets/images/emulators/Dolphin.png"
+    },
+    "https://github.com/iHaiDeeZ/Crema/releases/download/v03.30/Crema-v03.30.pkg": {
+      "name": "Crema · PS4",
+      "version": "v03.30",
+      "description": "Native PS4 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "size": 101908480,
+      "cover_url": "https://speedy-away.github.io/assets/images/emulators/Cemu.png"
+    },
+    "https://speedy-away.github.io/downloads/archive/628642807328/Resonance-v01.41.pkg": {
+      "name": "Resonance · PS4",
+      "version": "v01.41",
+      "description": "Native PS4 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "size": 55443456,
+      "cover_url": "https://speedy-away.github.io/assets/images/emulators/retroarch.png"
+    },
+    "https://speedy-away.github.io/downloads/archive/b171167057ba/IV0000-PCSX20007_00-PS4SX2EMU0000001.pkg": {
+      "name": "PS4SX2",
+      "version": "Unversioned",
+      "description": "Native PS4 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "size": 53149696,
+      "cover_url": "https://speedy-away.github.io/assets/images/emulators/PCSX2.png"
+    },
+    "https://github.com/RoberixStudios/rpcs3-port-for-ps4/releases/download/v0.40/RPCS3.PORT.FOR.PS4.v0.40.by.Roberix.Studio.pkg": {
+      "name": "RPCS3 port · PS4",
+      "version": "Unversioned",
+      "description": "Native PS4 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "size": 138936320,
+      "cover_url": "https://speedy-away.github.io/assets/images/emulators/RPCS3.jpg"
+    },
+    "https://speedy-away.github.io/downloads/ps4-ps5/fps-ps4-cheats-manager-1-2-2/IV0000-CHTM00777_00-PS4CHEATSMANAGER.pkg": {
+      "name": "PS4 Cheats Manager 1.2.2",
+      "version": "v1.2.2",
+      "description": "PS4 console PKG for managing cheats, patches and plugins. Install in your existing compatible homebrew environment; patch application additionally needs the matching GoldHEN plugin engine.",
+      "size": 19202048,
+      "cover_url": "https://speedy-away.github.io/assets/images/console-software/goldhen.png"
+    },
+    "https://speedy-away.github.io/downloads/ps4-ps5/ps4-store-scratch-everywhere-1-3/scratch-ps4.pkg": {
+      "name": "Scratch Everywhere! · PS4",
+      "version": "1.3",
+      "description": "Run supported Scratch 3 projects on PS4. Projects are separate from the runtime and are not bundled with this package. PS4 ready PKG; install using your existing supported HEN/homebrew environment. Scratch project and extension compatibility varies.",
+      "size": 71696384,
+      "cover_url": "https://speedy-away.github.io/assets/images/ps4-store-apps/scratch-everywhere.png"
+    },
+    "https://github.com/nueex/ps-mtp-explorer/releases/download/v2.0.0/PS-MTP-Explorer-2.0.0.pkg": {
+      "name": "PS MTP Explorer · PS4",
+      "version": "v2.0.0",
+      "description": "Browse an MTP Android phone, mounted USB storage and writable internal folders with the PS4 controller. Supports copying folders and reviewing PKG installation. PS4 with GoldHEN active; publisher tested firmware 9.00, 10.01 and 11.00. Android access requires an unlocked MTP-capable phone and data cable. iPhone access is unsupported.",
+      "size": 6619136,
+      "cover_url": "https://speedy-away.github.io/assets/images/ps4-store-apps/mtp-explorer.svg"
+    },
+    "https://speedy-away.github.io/downloads/ps4-ps5/ps4-store-switchfin-0-9-4/IV0001-SFIN00000_00-SFIN000000009400.pkg": {
+      "name": "Switchfin · PS4 Jellyfin client",
+      "version": "0.9.4",
+      "description": "Native PS4 client for browsing a Jellyfin media server and supported remote media sources. This is the PS4 package from a multi-platform project. PS4 console PKG in an existing compatible homebrew environment. Requires a reachable Jellyfin server or supported media source; codec and playback limits depend on the PS4 build.",
+      "size": 58458112,
+      "cover_url": "https://speedy-away.github.io/assets/images/ps4-store-apps/switchfin.svg"
+    },
+    "https://speedy-away.github.io/downloads/ps4-ps5/ps4-store-wiliwili-1-6-0/wiliwili-PS4.pkg": {
+      "name": "wiliwili · PS4",
+      "version": "v1.6.0",
+      "description": "Controller-friendly Bilibili client with browsing, search, account QR sign-in and playback features. Select the PS4 package for the console. PS4 homebrew PKG; use an existing compatible HEN environment and an Internet connection. The PS4 build uses software decoding; playback quality and performance depend on its settings and the media.",
+      "size": 74711040,
+      "cover_url": "https://speedy-away.github.io/assets/images/ps4-store-apps/wiliwili.svg"
+    },
+    "https://speedy-away.github.io/downloads/ps4-ps5/ps4-store-sponsorblock-installer-1-0-0/IV0000-YTSB42069_00-SPONSORBLK000000.pkg": {
+      "name": "SponsorBlock Installer · PS4",
+      "version": "v1.0.0",
+      "description": "On-console installer for the author’s YouTube ad-skip and SponsorBlock GoldHEN plugin. It downloads and installs the plugin after an explicit launch. PS4 with GoldHEN already active and a network connection for the plugin download. Confirm your YouTube app and firmware against the plugin’s own requirements.",
+      "size": 6619136,
+      "cover_url": "https://speedy-away.github.io/assets/images/ps4-store-apps/sponsorblock.png"
+    },
+    "https://speedy-away.github.io/downloads/ps4-ps5/ps4-store-itemzflow-1-08/Itemzflow-PS4-1.08.pkg": {
+      "name": "Itemzflow Game Manager · PS4",
+      "version": "1.08",
+      "description": "Open-source PS4 home-menu alternative and installed-game manager. The publisher’s GitHub release directs downloads to this PKG-Zone package. PS4 package 1.08; store label 5.05+ excluding 6.72. Release notes add FUSE support for 12.50, 12.52, 13.00 and 13.02; this is not a guarantee for every function or firmware.",
+      "size": 27131904,
+      "cover_url": "https://speedy-away.github.io/assets/images/ps4-store-apps/itemzflow.png"
+    },
+    "https://pkg-zone.com/download/ps4/LAPY20009/2.07": {
+      "name": "PS4-Xplorer 2.0 · 2.07",
+      "version": "2.07",
+      "description": "Lapy’s PS4 file manager with copy, move, rename and other on-console file operations. This version comes from the author-endorsed PKG-Zone distribution. PS4 v2.07 package. Store label 4.55+; privileged filesystem support remains firmware-specific. This entry does not establish 13.52 support.",
+      "size": 63766528,
+      "cover_url": "https://speedy-away.github.io/assets/images/console-software/ps4xplorer.png"
+    },
+    "https://github.com/apexlions16/OrbisShelf/releases/download/v0.2.0/OrbisShelf-v0.2.0.pkg": {
+      "name": "OrbisShelf · PS4",
+      "version": "v0.2.0",
+      "description": "Small homebrew catalogue, downloader and local PKG installer. Version 0.2.0 is the publisher’s stability test build and retains downloaded packages after installation. PS4 PKG for an existing homebrew-enabled console. Publisher reports that runtime behavior still needs target-console testing; no firmware test matrix is supplied. No PS5-native compatibility is claimed.",
+      "size": 6619136,
+      "cover_url": "https://speedy-away.github.io/assets/images/ps4-store-apps/ps4-store-orbisshelf-0-2-0.png"
+    }
+  }
+}
