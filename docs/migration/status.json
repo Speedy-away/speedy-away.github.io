@@ -1,4 +1,33 @@
 {
+  "ps4ReleasePublished20261113": {
+    "date": "2026-11-13",
+    "status": "Pushed to main, deployed successfully, and verified live.",
+    "commit": "3466590e8423ed437df8a8632e1415c166fa446a",
+    "initialRelease": "7e6e2c377a0ab39066f31b938041c83d2fefaa98",
+    "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43504334079",
+    "url": "https://speedy-away.github.io/ps4/14.02/",
+    "firmwarePage": "https://speedy-away.github.io/hosts/ps4/firmware/",
+    "tests": 164,
+    "failed": 0,
+    "productionChecks": 5,
+    "live": {
+      "checkedAt": "2026-11-13T20:46:37.034Z",
+      "commit": "3466590e8423ed437df8a8632e1415c166fa446a",
+      "url": "https://speedy-away.github.io/ps4/14.02/",
+      "deploymentRevision": "3466590e8423ed437df8a8632e1415c166fa446a",
+      "offlineFilesVerified": 48,
+      "offlineBytes": 2170608,
+      "nativeFilesVerified": 19,
+      "controlsVerified": true,
+      "loaderFirmwarePinned": true,
+      "announcementVerified": true,
+      "primaryVerified": true,
+      "payloadsExecuted": false,
+      "hardwareVerified": false
+    },
+    "scope": "14.02 is the first firmware tile, homepage CTA and primary PS4 navigation. Generated short links stay on the independent host. Older firmware routes retain original compatibility pins.",
+    "remaining": "Physical PS4 14.02 execution, loader availability and PS4 AppCache persistence require console testing. Concurrent uncommitted workspace edits are preserved."
+  },
   "ps4RequestedAds20261113": {
     "date": "2026-11-13",
     "status": "Local ad update; not committed or pushed by this side conversation.",
