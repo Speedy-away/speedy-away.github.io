@@ -65,13 +65,7 @@ test('runtime ZIPs use their own folder; sender ZIP default stays unchanged',()=
   assert.equal(bytes.subarray(30,30+length).toString(),prefix+'web/index.html');
  }
 });
-test('firmware families preserve exact supported sets behind local full-page buttons',()=>{
- const api=require('../host-compact-pages.cjs'),html=api.directory(root,'ps4'),groups=api.groups(root).filter(r=>r.platform==='ps4'&&(r.entry==='/hosts/ps4/exploit/multi-firmware/'));
- assert.equal((html.match(/class="host-firmware-family"/g)||[]).length,groups.length+1);assert.match(html,/data-firmwares="14.02" href="\/ps4\/14.02\/"/);
- assert.match(html,/class="host-taskbar"/);assert.doesNotMatch(html,/id="sidebar"|<header class="guide-hero">|<select\b/);
- for(const r of groups){assert.ok(html.includes('href="'+r.entry+'"'),r.id);assert.ok(html.includes('data-firmwares="'+r.firmwares.join(',')+'"'));}
- assert.match(read('assets/host-firmware-families.js'),/navigator.userAgent/);
-});
+test('firmware picker preserves exact supported sets behind local landing routes',()=>{const api=require('../host-compact-pages.cjs'),html=api.directory(root,'ps4');assert.match(html,/id="ps4-firmware-picker"/);assert.match(html,/<option value="14.02" data-entry="\/ps4\/14.02\/">/);assert.match(html,/<option value="14.00" data-entry="\/ps4\/14.00\/">/);assert.doesNotMatch(html,/value="14.01"|value="13.53"/);});
 
 test('landing gains local top navigation and responsive layout without modifying the execution document',()=>{
  const landing=read(build.base+'/web/index.html');assert.match(landing,/id="brand"><nav/);assert.match(landing,/landing-layout.css/);

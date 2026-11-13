@@ -2,7 +2,7 @@
 const icon=(name)=>{const shapes={back:'<path d="m14 6-6 6 6 6M8 12h12"/>',more:'<circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',connection:'<rect x="4" y="4" width="16" height="11" rx="2"/><path d="M9 20h6m-3-5v5"/>'};return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+shapes[name]+'</svg>';};
 function organize(markup,platform){
  const base='/hosts/'+platform+'/',name=platform.toUpperCase();
- const rows=[['?view=loaders','Choose firmware'],['?view=payloads','Payloads'],['?view=mods','Mods / Mod Menus'],['?view=tools','Tools'],['patches/','Game patches'],['patches/','Game patches'],['files/','File manager'],['payload-manager/',name+' Payload Manager'],['/console/'+platform+'/downloads.html','Console downloads'],['?view=connection','Connection &amp; setup'],['?view=sender','Desktop sender · connect from a PC']];
+ const rows=[['?view=loaders',platform==='ps4'?'Jailbreak':'Choose firmware'],['?view=payloads','Payloads'],['?view=mods','Mods / Mod Menus'],['?view=tools','Tools'],['patches/','Game patches'],['patches/','Game patches'],['files/','File manager'],['payload-manager/',name+' Payload Manager'],['/console/'+platform+'/downloads.html','Console downloads'],['?view=connection','Connection &amp; setup'],['?view=sender','Desktop sender · connect from a PC']];
  if(platform==='ps4')rows.splice(4,0,['?view=goldhen','Goldhen PS4']);
  const primaryCount=platform==='ps4'?6:5;
  const anchors=items=>items.map(([href,label])=>`<a href="${href.startsWith('/')?href:base+href}" aria-label="${label}">${label}</a>`).join('');

@@ -20,7 +20,7 @@ function translate(text,table){
 function url(name,code='en'){return ORIGIN+'/'+(code==='en'?'':code+'/')+name.replace(/index\.html$/,'');}
 function nameFor(name,table){const match=name.match(/^(PS4 & PS5 |PS[45] )?(.*)$/);return (match[1]||'')+translate(match[2],table);}
 function localized(data,code,table){if(code==='en')return {...data,language:'en'};const t=s=>translate(s,table),name=nameFor(data.name,table);let description=name+'. '+t('Match the exact firmware, title ID and game update.');
- if(/Hosts, Payloads|Firmware & WebKit/.test(data.name)){const versions=data.platform==='ps4'?'PS4 14.02':data.platform==='ps5'?'PS5 14.00 (14.0), 14.10, 14.20':'PS4 14.02; PS5 14.00 (14.0), 14.10, 14.20';description=name+'. '+t('{versions}: empty firmware choices; no exploit or payload is provided.').replace('{versions}',versions);}
+ if(/Hosts, Payloads|Firmware & WebKit/.test(data.name)){const ps4='PS4 14.02 · '+t('WebKit exploit')+' · GoldHEN / ps4-hen · '+t('Offline cache')+'.';const ps5=t('{versions}: empty firmware choices; no exploit or payload is provided.').replace('{versions}','PS5 14.00 (14.0), 14.10, 14.20');description=name+'. '+(data.platform==='ps4'?ps4:data.platform==='ps5'?ps5:ps4+' '+ps5);}
  if(/Offline cache/i.test(data.name))description=t('Save host pages and supported files for offline use.');
  if(/Credits/.test(data.name))description=t('Credits & Sources')+' · WWB HOST · '+t('Console tools');
  const keywordTerms=[name,...(data.platform?[data.platform.toUpperCase()]:[])];

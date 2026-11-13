@@ -73,7 +73,9 @@ function verify(output){const report=JSON.parse(fs.readFileSync(path.join(output
   }
  }
  const primaryDirectory=fs.readFileSync(path.join(output,'hosts/ps4/firmware/index.html'),'utf8');
- assert.match(primaryDirectory,/href="\/ps4\/14\.02\/"/,'14.02 primary link must stay on this host');assert.doesNotMatch(primaryDirectory,/href="https:\/\/whatwhatboy\.com\/ps4\/14\.02\/"/);
+ assert.match(primaryDirectory,/<option value="14\.02" data-entry="\/ps4\/14\.02\/">14\.02<\/option>/,'14.02 picker route must stay on this host');
+ assert.match(primaryDirectory,/<option value="14\.00" data-entry="\/ps4\/14\.00\/">14\.00<\/option>/,'14.00 picker route must stay on this host');
+ assert.doesNotMatch(primaryDirectory,/(?:href|data-entry)="https:\/\/whatwhatboy\.com\/ps4\/14\.02\/"/);
  const primaryHome=fs.readFileSync(path.join(output,'index.html'),'utf8');
  assert.match(primaryHome,/class="home-start" href="(?:\.\/|\/|https:\/\/speedy-away\.github\.io\/)ps4\/14\.02\/"/,'14.02 home CTA must stay on this host');
  assert.ok(report.bytes<1e9);assert.equal(failures.length,0,failures.slice(0,15).join('\n'));const result={status:'passed',localRuntimeConfigs,runtimeHandoffConfigs,bytes:report.bytes,pagesLinks:links,nativeFeedEntries:Object.keys(ps4Feed).length+ps5Feed.length,nativeScriptsUnchanged:checkedScripts,cachedResourcesRetained:cachedResources,runtimeDocumentsOptimized,offloadedFiles:report.offloadedFiles,compactAliasesVerified,sharedCatalogueFiles:report.sharedCatalogueFiles,routingBytes:report.routingBytes,activeRuntimeFiles:pinned.size,issues:0};console.log(JSON.stringify(result));return result;}

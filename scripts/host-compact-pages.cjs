@@ -39,9 +39,9 @@ function olderPS4(){return '<p class="host-older-firmware">Older firmware: <a hr
 function projectPS4(html,name,root){
  if(!/^hosts\/ps4\//.test(name))return html;
  if(name==='hosts/ps4/firmware/index.html'){
-  const update=root&&groups(root).find(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/');
-  if(!html.includes('class="host-older-firmware"'))html=html.replace('</main>',olderPS4()+'</main>');
-  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+ps4FirmwareTile()+(update?firmwareTile(update):'')+close);
+  html=html.replace(/<p class="host-older-firmware">[\s\S]*?<\/p>/g,'');
+  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+require('./ps4-firmware-picker.cjs').render(groups(root))+close);
+  html=html.replace('<h1>PS4 WebKit Exploits</h1>','<h1>Jailbreak</h1>');
  }
  html=html.replace(/<details class="host-other-directory">[\s\S]*?<\/details>/g,'');
  html=html.replace(/<a href="\/hosts\/ps4\/afterglow\/">13\.52 \/ 14\.00 · Afterglow<\/a>/g,'<a href="/ps4/14.02/">14.02 · WebKit Exploit</a>');
@@ -139,8 +139,8 @@ function firmwareTile(g){
 }
 function directory(root,platform){
  const rows=groups(root).filter(g=>g.platform===platform),name=platform.toUpperCase();
- const tiles=platform==='ps4'?ps4FirmwareTile()+rows.filter(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/').map(firmwareTile).join(''):rows.map(firmwareTile).join('');
- return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+' WebKit Exploits | WWB HOST</title><link rel="stylesheet" href="/assets/host-compact.css"><script defer src="/assets/host-firmware-families.js?v=1"></script></head><body class="host-compact"><nav class="host-taskbar"><a href="/hosts/'+platform+'/">← '+name+' host</a><a href="/hosts/">Choose console</a><a href="/hosts/'+platform+'/?view=payloads">Payloads</a></nav><main class="host-compact-main"><header><h1>'+name+' WebKit Exploits</h1><p id="host-family-detected" role="status">Choose your firmware.</p></header><div class="host-firmware-families">'+tiles+'</div>'+(platform==='ps4'?olderPS4():'')+'</main></body></html>';
+ const tiles=platform==='ps4'?require('./ps4-firmware-picker.cjs').render(rows):rows.map(firmwareTile).join('');
+ return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+' WebKit Exploits | WWB HOST</title><link rel="stylesheet" href="/assets/host-compact.css"><script defer src="/assets/host-firmware-families.js?v=1"></script></head><body class="host-compact"><nav class="host-taskbar"><a href="/hosts/'+platform+'/">← '+name+' host</a><a href="/hosts/">Choose console</a><a href="/hosts/'+platform+'/?view=payloads">Payloads</a></nav><main class="host-compact-main"><header><h1>'+(platform==='ps4'?'Jailbreak':name+' WebKit Exploits')+'</h1><p id="host-family-detected" role="status">Choose your firmware.</p></header><div class="host-firmware-families">'+tiles+'</div>'+'</main></body></html>';
 }
 function build(root){
  const localFile=path.join(root,'docs/host-local-launchers.json');

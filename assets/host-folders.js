@@ -4,7 +4,7 @@
  var platform=(window.WWB_HOST_CATALOG||JSON.parse(data.textContent)).platform;
  var shortPath=location.pathname.indexOf('/'+platform+'/')===0;
  var base=(shortPath?'/':'/hosts/')+platform+'/';
- var labels={loaders:'Choose firmware',payloads:'Payloads',mods:'Mods / Mod Menus',tools:'Tools',goldhen:'Goldhen PS4',connection:'Connection & setup',sender:'Desktop sender · connect from a PC'};
+ var labels={loaders:platform==='ps4'?'Jailbreak':'Choose firmware',payloads:'Payloads',mods:'Mods / Mod Menus',tools:'Tools',goldhen:'Goldhen PS4',connection:'Connection & setup',sender:'Desktop sender · connect from a PC'};
  var params=new URL(location.href).searchParams;
  var fixedView=document.documentElement.getAttribute('data-host-view');
  var selected=fixedView||params.get('view')||params.get('folder')||'loaders';

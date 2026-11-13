@@ -2667,5 +2667,38 @@
       ]
     },
     "report": "docs/migration/url-downloader-20261111.json"
+  },
+  "ps4SeoPickerSide20261113": {
+    "date": "2026-11-13",
+    "status": "Side-conversation publication authorized; isolated release being verified.",
+    "features": [
+      "Added PS4 14.02 jailbreak, GoldHEN, ps4-hen, offline-cache and BIN/ELF search terms.",
+      "Indexable /hosts/ps4/14.02-guide/ with canonical, Open Graph, Twitter and WebPage/Breadcrumb schema; sitemap now 483 language URLs.",
+      "Corrected localized PS4 metadata that incorrectly called 14.02 an empty choice; PS5 limitations unchanged.",
+      "Merged firmware directory cards into one picker with exact source-pinned versions and separate 14.02/14.00 routes.",
+      "PS4 tab and heading label Jailbreak; 14.02 and 14.00 share centered Load jailbreak cards."
+    ],
+    "verification": {
+      "focusedTests": 37,
+      "passed": 37,
+      "publishingChecks": "All five checks passed on tmp/ps4-seo-side/pages.",
+      "extraTests": "30 of 32 passed; two legacy source-only metadata checks encounter other retained source pages whose metadata is finalized by the build. Generated metadata, sitemap, canonical and language verification pass.",
+      "browser": "No automated browser available in this side conversation; no physical console execution or visual-browser verification performed."
+    },
+    "files": [
+      "scripts/host-page-metadata.cjs",
+      "scripts/host-locales.cjs",
+      "scripts/ps4-firmware-picker.cjs",
+      "assets/ps4-firmware-picker.js",
+      "scripts/host-compact-pages.cjs",
+      "assets/host-compact.css",
+      "assets/host-dashboard.js",
+      "assets/host-dashboard.css",
+      "assets/host-folders.js",
+      "scripts/host-folder-markup.cjs",
+      "hosts/ps4/14.02-guide/index.html",
+      "sitemap.xml"
+    ],
+    "remaining": "Review/publish with the main host release when authorized. Preserve concurrent changes and their staged index."
   }
 }

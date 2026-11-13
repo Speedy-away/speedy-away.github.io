@@ -492,15 +492,16 @@
             label = 'Open PS4 14.02 WebKit Exploit';
           } else if (first.entryURL === '/ps4/14.00/') {
             path = first.entryURL;
-            label = 'Open PS4 14.00 loader';
+            label = 'Load jailbreak';
           } else if (platform === 'ps5' && first.entryURL === '/ps5/relapse/') {
             path = firmware.value === '7.61' ? '/ps5/7.61/' : first.entryURL;
             label = 'Open PS5 ' + firmware.value + ' loader';
           }
+          if(path&&platform==='ps4')return '<a class="wwb-primary-loader wwb-jailbreak-launch" href="'+escape(navigationURL(path))+'"><strong>Load jailbreak</strong><span>PS4 '+escape(firmware.value||(/14.02/.test(path)?'14.02':'14.00'))+' · WebKit Exploit</span></a>';
           if (path) return '<a class="wwb-primary-loader" href="'+escape(navigationURL(path))+'"><span class="wwb-loader-copy"><strong>'+escape(path==='/ps4/14.02/'?'14.02 jailbreak is here':label)+'</strong><span>'+escape(path==='/ps4/14.02/'?'PS4 14.02 · GoldHEN / ps4-hen':'WebKit · Console loader')+'</span></span><span class="wwb-loader-cta">Open WebKit Exploit <span aria-hidden="true">→</span></span></a>';
           if (group.firmwarePicker) return catalogTile({id:group.id,label:'GoldHEN',image:catalogUI.representativeImage(group.actions),detail:'Choose firmware · '+group.actions.length+' versions',attribute:'data-choose-group'});
           if (first.localLauncher && !first.nativeRoute) return '<a class="host-firmware-family" href="'+escape(navigationURL(first.launchURL))+'"><strong>'+escape(first.firmwareLabel||group.label)+'</strong><span>Choose HEN / Load</span></a>';
-          if (category === 'loaders' && first.browserHost) return catalogTile({id:first.id,label:'Load',image:'',textOnly:true,detail:group.label+(detection.platform!==platform?' · Open on '+platform.toUpperCase():''),attribute:'data-launch',disabled:browserHandoff||detection.platform!==platform||!firmware.value||!firmwareMatches(first,firmware.value)||Boolean(detection.firmware&&detection.firmware!==firmware.value)});
+          if (category === 'loaders' && first.browserHost) return catalogTile({id:first.id,label:platform==='ps4'?'Load jailbreak':'Load',image:'',textOnly:true,detail:group.label+(detection.platform!==platform?' · Open on '+platform.toUpperCase():''),attribute:'data-launch',disabled:browserHandoff||detection.platform!==platform||!firmware.value||!firmwareMatches(first,firmware.value)||Boolean(detection.firmware&&detection.firmware!==firmware.value)});
           return catalogTile({id:group.id,label:group.label,image:category==='loaders'||category==='payloads'?'':catalogUI.representativeImage(group.actions),detail:[first.format,category==='payloads'&& !/^v?\d+\.\d/i.test(first.version||'')?'':first.version||first.menuVersion||''].filter(Boolean).join(' · '),attribute:'data-choose-group'});
         }
         var shown=windowed(renderedGroups);if(category==='loaders'){var gamer=shown.filter(function(g){return g.actions[0].runtimeId==='gamerhack-g2all';}),primary=gamer.length?gamer:shown.filter(function(g){return !g.actions[0].secondaryHost;}),other=shown.filter(function(g){return primary.indexOf(g)===-1;});return primary.map(catalogRow).join('')+(other.length?'<details class="host-other-hosts"><summary>Other hosts</summary><div class="host-catalog-grid">'+other.map(catalogRow).join('')+'</div></details>':'');}
@@ -849,7 +850,7 @@
         if (value.reportedAddress) doc.querySelector('#host-address-display').textContent = value.reportedAddress + ' (service-reported)';
         var checks = doc.querySelector('#host-service-checks');
         if (checks && Array.isArray(value.checks)) {
-          var labels = {goldhen:'GoldHEN loader','payload-manager':'Payload Manager',downloader:'Console downloader','ps4-files':'PS4 file manager',files:'PS5 websrv',ezremote:'PS5 ezRemote'};
+          var labels = {goldhen:'GoldHEN loader','payload-manager':'Payload Manager',downloader:'Console downloader','ps4-files':'PS4 file manager',files:'PS5 Web File Manager','websrv-files':'Legacy websrv',ezremote:'PS5 ezRemote'};
           checks.hidden = false;
           checks.innerHTML = value.checks.map(function (check) { return '<div class="host-service-result" data-state="' + escape(check.status) + '"><strong>' + escape(labels[check.service || check.id] || check.service || check.id) + '</strong><span>' + escape(check.status === 'connected' ? 'Responding' : 'Not verified') + '</span><p>' + escape(check.message) + '</p></div>'; }).join('');
           refresh(checks);
