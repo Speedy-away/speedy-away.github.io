@@ -7,3 +7,25 @@ body.host-toolpage{padding-top:60px}body.host-toolpage main{width:calc(100% - 64
 @media(max-width:1439px){#trainer-games{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.trainer-tile-name{font-size:.9rem;min-height:3.7em}.trainer-tile-count{font-size:.74rem}}
 @media(max-width:699px){#trainer-games{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.trainer-intro{padding:18px 0}.trainer-intro p{font-size:.8rem}.trainer-intro p:first-of-type{font-size:.95rem}.trainer-tile-name{font-size:.82rem;min-height:4.1em}.trainer-tile-count{font-size:.67rem}.trainer-overlay{padding:10px}.trainer-dialog{max-height:calc(100vh - 20px)}.trainer-dialog-header{padding:14px}.trainer-dialog-header h2{font-size:1.1rem}.trainer-dialog-body{padding:14px}.trainer-dialog-summary{grid-template-columns:1fr;gap:16px}#trainer-dialog-art{max-width:240px;width:70%;margin:auto}.trainer-builds{max-height:200px}.trainer-builds button strong{font-size:.78rem}.trainer-dialog .tool-controls>*{flex-basis:100%}.trainer-dialog .tool-controls button{width:100%}#trainer-mods{grid-template-columns:1fr}.trainer-dialog fieldset{padding:12px}.trainer-tile-letter{font-size:2.3rem}}
 @media(prefers-reduced-motion:reduce){#trainer-games .trainer-game{transition:none}#trainer-games .trainer-game:hover:enabled{transform:none}}
+
+/* Blue PS4 trainer theme; scoped away from the ESP tool sharing this stylesheet. */
+body.host-toolpage.host-trainer-blue{--tool-bg:#0b1425;--tool-panel:#14243b;--tool-line:#344f71;--tool-text:#edf4ff;--tool-muted:#a8bad2;--tool-accent:#99bdff;--text-primary:#edf4ff;--text-secondary:#a8bad2;--host-accent:#99bdff;color:#edf4ff!important}
+body.host-toolpage.host-trainer-blue a,body.host-toolpage.host-trainer-blue .wwb-heading-copy a,body.host-toolpage.host-trainer-blue .host-taskbar a:hover{color:#99bdff}
+body.host-toolpage.host-trainer-blue .wwb-heading-copy p{color:#a8bad2}
+body.host-toolpage.host-trainer-blue .trainer-library,body.host-toolpage.host-trainer-blue .trainer-requirements{background:transparent!important;border-color:#344f71!important}
+body.host-toolpage.host-trainer-blue input,body.host-toolpage.host-trainer-blue select,body.host-toolpage.host-trainer-blue textarea{background:#0b1729!important;color:#edf4ff!important;border-color:#344f71!important;accent-color:#99bdff}
+body.host-toolpage.host-trainer-blue input::placeholder{color:#8fa5c2;opacity:1}
+body.host-toolpage.host-trainer-blue #trainer-games .trainer-game{background:#102039;border-color:#344f71;color:#edf4ff}
+body.host-toolpage.host-trainer-blue #trainer-games .trainer-game:hover:enabled{background:#1a3556;border-color:#99bdff}
+body.host-toolpage.host-trainer-blue .trainer-tile-art{background:#14243b}
+body.host-toolpage.host-trainer-blue .trainer-tile-letter{color:#a8ceff}
+body.host-toolpage.host-trainer-blue .trainer-overlay{background:rgba(3,10,22,.88)}
+body.host-toolpage.host-trainer-blue .trainer-dialog{background:#102039;border-color:#344f71}
+body.host-toolpage.host-trainer-blue .trainer-dialog-header{background:#172c48}
+body.host-toolpage.host-trainer-blue .trainer-dialog-summary .trainer-tile-art{border-color:#344f71}
+body.host-toolpage.host-trainer-blue .trainer-dialog fieldset{background:#14243b!important;border-color:#344f71!important}
+body.host-toolpage.host-trainer-blue .trainer-builds button{background:#0b1729}
+body.host-toolpage.host-trainer-blue .trainer-builds button[aria-pressed=true]{background:#203f67;border-color:#99bdff}
+body.host-toolpage.host-trainer-blue .tool-status{background:#172c48;border-color:#99bdff}
+body.host-toolpage.host-trainer-blue .wwb-heading-art img[src$="/tools.svg"]{filter:hue-rotate(65deg)}
+body.host-toolpage.host-trainer-blue :focus-visible{outline-color:#99bdff}
