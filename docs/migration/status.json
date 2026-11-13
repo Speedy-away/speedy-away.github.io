@@ -2792,7 +2792,7 @@
   },
   "ps5WebFileManager20261113": {
     "date": "2026-11-13",
-    "status": "Release prepared for requested push; deployment verification follows.",
+    "status": "Pushed to main, GitHub Pages deployment succeeded, and live page/download identities verified.",
     "version": "v1.14",
     "source": "https://github.com/owendswang/ps5-web-file-manager",
     "page": "https://speedy-away.github.io/hosts/ps5/files/",
@@ -2812,6 +2812,32 @@
       "hardwareVerified": false,
       "visual": "No connected browser provider available for interactive visual verification."
     },
-    "releaseScope": "Isolated checkout contains only the requested PS5 replacement and catalogue fix. Concurrent unpublished PS4/layout work remains in the shared checkout."
+    "releaseScope": "Isolated checkout contains only the requested PS5 replacement and catalogue fix. Concurrent unpublished PS4/layout work remains in the shared checkout.",
+    "commit": "b04995b8f7e0572452227d68ebb4e5c276077174",
+    "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43505603783",
+    "live": {
+      "checkedAt": "2026-11-13T20:55:22.916Z",
+      "url": "https://speedy-away.github.io/hosts/ps5/files/",
+      "page": true,
+      "clientAssets": true,
+      "payloadFeed": true,
+      "assets": [
+        {
+          "name": "web-file-mgr-v1.14.elf",
+          "url": "https://speedy-away.github.io/downloads/host-payloads/ps5-web-file-manager/v1.14/web-file-mgr-v1.14.elf",
+          "bytes": 854728,
+          "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231"
+        },
+        {
+          "name": "wfm-7zip-helper.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/wfm-7zip-helper.elf",
+          "bytes": 1165088,
+          "sha256": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825"
+        }
+      ],
+      "payloadsExecuted": false,
+      "hardwareVerified": false
+    },
+    "remaining": "Physical PS5 file operations, ELF execution and console-browser rendering require hardware verification. No native payload was executed during testing."
   }
 }

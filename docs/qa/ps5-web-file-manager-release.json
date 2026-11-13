@@ -1,0 +1,56 @@
+{
+  "deployment": {
+    "commit": "b04995b8f7e0572452227d68ebb4e5c276077174",
+    "runs": [
+      {
+        "id": 43505603783,
+        "name": "Deploy WWB HOST",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43505603783"
+      }
+    ],
+    "jobs": [
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": []
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": []
+      }
+    ]
+  },
+  "live": {
+    "checkedAt": "2026-11-13T20:55:22.916Z",
+    "url": "https://speedy-away.github.io/hosts/ps5/files/",
+    "page": true,
+    "clientAssets": true,
+    "payloadFeed": true,
+    "assets": [
+      {
+        "name": "web-file-mgr-v1.14.elf",
+        "url": "https://speedy-away.github.io/downloads/host-payloads/ps5-web-file-manager/v1.14/web-file-mgr-v1.14.elf",
+        "bytes": 854728,
+        "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231"
+      },
+      {
+        "name": "wfm-7zip-helper.elf",
+        "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/wfm-7zip-helper.elf",
+        "bytes": 1165088,
+        "sha256": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825"
+      }
+    ],
+    "payloadsExecuted": false,
+    "hardwareVerified": false
+  },
+  "tests": {
+    "passed": 71,
+    "failed": 0
+  },
+  "productionChecks": 5
+}
