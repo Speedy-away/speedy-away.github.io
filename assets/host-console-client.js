@@ -8,7 +8,7 @@
 }(typeof globalThis !== 'undefined' ? globalThis : this, function (root) {
   'use strict';
   var services = {
-    manager: {port: 8084, path: '/'}, files: {port: 8080, path: '/fs/'},
+    manager: {port: 8084, path: '/'}, files: {port: 8888, path: '/'}, 'websrv-files': {port: 8080, path: '/fs/'},
     homebrew: {port: 8080, path: '/index.html'}, patches: {port: 23900, path: '/'},
     ezremote: {port: 9090, path: '/'}, 'ps4-files': {port: 8080, path: '/'}, saves: {port: 8082, path: '/'}
   };

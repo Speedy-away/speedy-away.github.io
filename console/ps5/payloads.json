@@ -1,0 +1,214 @@
+{
+  "name": "whatwhatboy · PS5 payloads",
+  "payloads": [
+    {
+      "id": "ps5-ezremote-ezremote-loader-1-01-elf",
+      "name": "ezRemote Client · PS5 · Download app loader",
+      "filename": "ezRemote-Loader-1.01.elf",
+      "url": "https://github.com/cy33hc/ps5-ezremote-client/releases/download/2.18/ezRemote-Loader-1.01.elf",
+      "version": "Loader 1.01 / client bundle 2.18",
+      "description": "Manage PS5 files and transfers with the console client. Requires websrv running on the PS5; follow the loader and client installation instructions for this release.",
+      "category": "Apps & helpers",
+      "checksum": "eda226e008efae5f14bd9e4fb0dd27ee198d1e3b525aa4ab1079e410e66f5e3c",
+      "source": "https://github.com/cy33hc/ps5-ezremote-client"
+    },
+    {
+      "id": "ps5-garlic",
+      "name": "Garlic SaveMgr",
+      "filename": "garlic-savemgr.elf",
+      "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.14/garlic-savemgr.elf",
+      "version": "v1.14",
+      "description": "Back up and browse PS5 saves through a browser interface. Load the ELF with elfldr, then open the console’s port 8082 from a device on your local network.",
+      "category": "Apps & helpers",
+      "checksum": "aaec2cb0a39e94217665652fd84fa7706f09c9f8640c07785b6a68b1711f18fc",
+      "source": "https://github.com/earthonion/garlic-savemgr"
+    },
+    {
+      "id": "ps5-ftpsrv",
+      "name": "ftpsrv · PS5",
+      "filename": "ftpsrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
+      "version": "v0.21.1",
+      "description": "FTP server payload for a jailbroken PS5 with a compatible ELF loader. Connect from an FTP client on your local network to port 2121.",
+      "category": "System & services",
+      "checksum": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+      "source": "https://github.com/ps5-payload-dev/ftpsrv"
+    },
+    {
+      "id": "ps5-websrv",
+      "name": "websrv · PS5",
+      "filename": "websrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
+      "version": "v0.34",
+      "description": "Run the PS5 homebrew web interface, browser-based file access and app launcher on port 8080. Requires an existing compatible ELF loader.",
+      "category": "System & services",
+      "checksum": "54730c867c6e1148536fdcb370e63a7762d989ea87b62488ad4caff64d43f263",
+      "source": "https://github.com/ps5-payload-dev/websrv"
+    },
+    {
+      "id": "ps5-klogsrv",
+      "name": "klogsrv · PS5",
+      "filename": "klogsrv-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
+      "version": "v0.9",
+      "description": "Stream console kernel logs to a local-network client on port 3232 for homebrew troubleshooting. Use the PS5 ELF build.",
+      "category": "System & services",
+      "checksum": "e828ec144231f81547cb58bc7d2c396fa984be0c2295f31364b58017816dcceb",
+      "source": "https://github.com/ps5-payload-dev/klogsrv"
+    },
+    {
+      "id": "ps5-elfldr",
+      "name": "ELF Loader · PS5",
+      "filename": "elfldr-ps5.elf",
+      "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
+      "version": "v0.27",
+      "description": "Background ELF payload loader that accepts payloads on port 9021. Start it through the compatible initial loader described by the project.",
+      "category": "System & services",
+      "checksum": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d",
+      "source": "https://github.com/ps5-payload-dev/elfldr"
+    },
+    {
+      "id": "ps5-f22d8b3749d7-shadowmountplus-elf",
+      "name": "ShadowMountPlus payload",
+      "filename": "shadowmountplus.elf",
+      "url": "https://speedy-away.github.io/downloads/archive/f22d8b3749d7/shadowmountplus.elf",
+      "version": "1.7beta11",
+      "description": "PS5 payload; match firmware, loader and the pinned 1.7beta11 release requirements.",
+      "category": "System & services",
+      "checksum": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da",
+      "source": "https://github.com/drakmor/ShadowMountPlus/releases"
+    },
+    {
+      "id": "ps5-78aec0f39465-etahen-2-5b-bin",
+      "name": "etaHEN 2.5B",
+      "filename": "etaHEN-2.5B.bin",
+      "url": "https://speedy-away.github.io/downloads/archive/78aec0f39465/etaHEN-2.5B.bin",
+      "version": "2.5B",
+      "description": "PS5 homebrew enabler. Use the existing pinned 2.5B build only on firmware supported by its release.",
+      "category": "System & services",
+      "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e",
+      "source": "https://github.com/etaHEN/etaHEN/releases"
+    },
+    {
+      "id": "ps5-cd469f63fa67-ps5upload-10-6-0-elf",
+      "name": "PS5upload console service",
+      "filename": "ps5upload-10.6.0.elf",
+      "url": "https://speedy-away.github.io/downloads/archive/cd469f63fa67/ps5upload-10.6.0.elf",
+      "version": "v10.6.0",
+      "description": "PS5 ELF service, not the desktop/mobile sender. Requires a compatible running ELF loader.",
+      "category": "System & services",
+      "checksum": "2f67651bf1320a83202b632782a1f404543b1ea4911dfb3be5a510971f015392",
+      "source": "https://github.com/phantomptr/ps5upload/releases"
+    },
+    {
+      "id": "ps5-5a12cb950970-orbit-store-elf",
+      "name": "Orbit Store 1.8.1",
+      "filename": "orbit_store.elf",
+      "url": "https://speedy-away.github.io/downloads/archive/5a12cb950970/orbit_store.elf",
+      "version": "v1.8.1",
+      "description": "PS5 ELF installer, pinned 1.8.1. Follow Orbit’s supported firmware, loader and storage setup.",
+      "category": "Apps & helpers",
+      "checksum": "a9fe33c3b0338af074edb4f7c68bb3806a84efba718e3897f94eba9dc720f914",
+      "source": "https://github.com/saawant12/orbit-store-ps5/releases/tag/v1.8.1"
+    },
+    {
+      "id": "ps5-640d68a152b5-ps5sx2installer-elf",
+      "name": "PS5SX2 installer",
+      "filename": "PS5SX2Installer.elf",
+      "url": "https://speedy-away.github.io/downloads/archive/640d68a152b5/PS5SX2Installer.elf",
+      "version": "vk-285-182",
+      "description": "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "category": "Apps & helpers",
+      "checksum": "efdec4f8d968ef4a7c1880e75d26b96d212a042a6c208de46f0a859609f6224c",
+      "source": "https://github.com/Swordpdf/PS5SX2/releases"
+    },
+    {
+      "id": "ps5-640d68a152b5-ps5sxhelper-elf",
+      "name": "PS5SX2 helper",
+      "filename": "PS5SXHelper.elf",
+      "url": "https://speedy-away.github.io/downloads/archive/640d68a152b5/PS5SXHelper.elf",
+      "version": "vk-285-182",
+      "description": "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "category": "Apps & helpers",
+      "checksum": "fece3ee9c7e035c51319af018ae6865f0bf5db182074dafd0502c3bb2d5ee7d2",
+      "source": "https://github.com/Swordpdf/PS5SX2/releases"
+    },
+    {
+      "id": "ps5-3a4d278d7ff5-ps5x360-helper-elf",
+      "name": "PS5X360 helper",
+      "filename": "PS5X360-Helper.elf",
+      "url": "https://speedy-away.github.io/downloads/archive/3a4d278d7ff5/PS5X360-Helper.elf",
+      "version": "v1.0.2",
+      "description": "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "category": "Apps & helpers",
+      "checksum": "4a0250329e63b376f620511c4b6e2c6a2eb959e056824abde27947bf53f07b59",
+      "source": "https://github.com/BrinooTk/PS5X360/releases"
+    },
+    {
+      "id": "ps5-7d1b737c85a3-helper-elf",
+      "name": "XPSemu helper",
+      "filename": "helper.elf",
+      "url": "https://speedy-away.github.io/downloads/archive/7d1b737c85a3/helper.elf",
+      "version": "Alpha-2.1",
+      "description": "Native PS5 homebrew build. Follow the linked page’s release-specific firmware, loader, helper and data-file requirements; PC builds are separate.",
+      "category": "Apps & helpers",
+      "checksum": "31c8a3479937e310f758d36d87c937c91ae942921fa4645473b3d228a7d88959",
+      "source": "https://github.com/ZiZc3/XPSemu/releases"
+    },
+    {
+      "id": "ps5-theme-stop-elf",
+      "name": "PS5 Themes · ps5-theme-stop.elf",
+      "filename": "ps5-theme-stop.elf",
+      "url": "https://speedy-away.github.io/downloads/ps4-ps5/ps5-theme-stop-elf/ps5-theme-stop.elf",
+      "version": "1.80",
+      "description": "ELF. Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager. Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager.",
+      "category": "System & services",
+      "checksum": "90a1ee926eba4277e1ed2827191151872e4d113de0c566614db51d1b4506230c",
+      "source": "https://github.com/Blaze414/ps5-theme/releases/download/v1.80/ps5-theme-stop.elf"
+    },
+    {
+      "id": "ps5-theme--elf",
+      "name": "PS5 Themes · ps5-theme.elf",
+      "filename": "ps5-theme.elf",
+      "url": "https://speedy-away.github.io/downloads/ps4-ps5/ps5-theme--elf/ps5-theme.elf",
+      "version": "1.80",
+      "description": "ELF. Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager. Jailbroken PS5; author targets firmware 13.60 and below, tested on 13.42. PS5 ELF loader / Payload Manager.",
+      "category": "System & services",
+      "checksum": "e27473f0f5d3a9c544ed075f3f0a0e831377e0ab5e6316dce81ad732a99c04eb",
+      "source": "https://github.com/Blaze414/ps5-theme/releases/download/v1.80/ps5-theme.elf"
+    },
+    {
+      "id": "fps-ps5-patch-system-38108724867",
+      "name": "PS5 PS Patch System loader",
+      "filename": "patch-bundle-loader-prospero.elf",
+      "url": "https://speedy-away.github.io/downloads/ps4-ps5/fps-ps5-patch-system-38108724867/patch-bundle-loader-prospero.elf",
+      "version": "38108724867",
+      "description": "PS5 ELF engine. Project-confirmed firmware range 3.00–12.70; requires a compatible elfldr on 9021. This does not establish support for 13.xx.",
+      "category": "System & services",
+      "checksum": "10d8636e1b0f07f3f046aadb5c050a24ed9b0fae3585ec29a1ecabec07035589",
+      "source": "https://github.com/illusionyy/ps-patch-system/releases/download/38108724867/patch-bundle-loader-prospero.elf"
+    },
+    {
+      "id": "ps5-recompstore-installer-2-7-4",
+      "name": "RecompStore · installer ELF",
+      "filename": "RecompStore-Installer.elf",
+      "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.4/RecompStore-Installer.elf",
+      "version": "v2.7.4",
+      "description": "Standalone publisher installer for the matching PS5 store, separate from the manual app ZIP. Native PS5 app, PPSA92000. Publisher requires kstuff, an ELF loader on TCP 9021 and ShadowMountPlus 1.7 Beta 5 or newer. No firmware range is inferred from these prerequisites.",
+      "category": "System & services",
+      "checksum": "3a20194226cf5e1ee66a5a67d81610c1ac9bf82deee7b791c752d0e7d6202d5c",
+      "source": "https://github.com/elripalda/RecompStore/releases/tag/v2.7.4"
+    },
+    {
+      "id": "ps5-web-file-manager",
+      "name": "PS5 Web File Manager",
+      "filename": "web-file-mgr-v1.14.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
+      "version": "v1.14",
+      "description": "Native PS5 web file manager with console and USB browsing, transfers, text editing and remote connections. Requires an already jailbroken PS5 and a compatible PS5 ELF loader on TCP 9021 (elfldr HTTP URI support, or the paired desktop sender). No universal firmware range is claimed.",
+      "category": "System & services",
+      "checksum": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231",
+      "source": "https://github.com/owendswang/ps5-web-file-manager"
+    }
+  ]
+}

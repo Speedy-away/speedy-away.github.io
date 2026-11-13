@@ -332,12 +332,17 @@ function nativeFeeds(items, options = {}) {
 }
 
 function buildCatalog(options = {}) {
-  const items = collect();
+  const hostMode = options.legacySource !== true && fs.existsSync(path.join(root, "docs/migration/status.json"));
+  const retained = hostMode ? require("./host-download-catalog.cjs").collect({root}) : null;
+  const items = retained ? retained.items : collect();
+  assertCatalogueBounds(items);
   const document = {schemaVersion: 1, reviewed: '2026-11-02',
     sources: ['docs/download-audit.json', 'docs/expansion-ps4-ps5.json', 'docs/ps4-ps5-customization.json', 'docs/console-prepared-archive-jobs.json', 'docs/console-ready-file-descriptors.json', 'docs/console-multicod-ready-files.json', 'docs/ps4-extra-game-downloads.json', 'docs/ps4-ps5-game-patches.json', 'docs/console-ready-software.json', 'docs/ps4-store-apps.json', 'docs/virusmike-ps4-next-resources.json', 'docs/ps5-native-extra-cheats.json', 'docs/ps5-native-batch5.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-game-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json', 'docs/console-archive-safety.json', 'docs/ps4-ps5-launcher-build.json', 'downloads/ps4/GTA5/manifest.json', 'downloads/ps4/BO3/manifest.json'], items};
   document.sources.push('docs/console-batch4-apps.json');
   if(fs.existsSync(path.join(root,'docs/host-goldhen-retained-versions.json')))document.sources.push('docs/host-goldhen-retained-versions.json');
-  const {ps4Feed, ps5Feed} = nativeFeeds(items, {...options, images:read('docs/expansion-ps4-ps5.json').images});
+  if(retained){document.reviewed=retained.reviewed;document.sources=retained.sources;}
+  const {ps4Feed, ps5Feed} = nativeFeeds(items, {...options, ...(hostMode ? {origin:options.origin || 'https://speedy-away.github.io'} : {}), images:read('docs/expansion-ps4-ps5.json').images});
+  for(const platform of ['ps4','ps5'])fs.mkdirSync(path.join(root,'console',platform),{recursive:true});
   fs.writeFileSync(output, JSON.stringify(document, null, 2) + '\n');
   fs.writeFileSync(path.join(root, 'console/ps4/homebrew.json'), JSON.stringify(ps4Feed, null, 2) + '\n');
   fs.writeFileSync(path.join(root, 'console/ps5/payloads.json'), JSON.stringify(ps5Feed, null, 2) + '\n');

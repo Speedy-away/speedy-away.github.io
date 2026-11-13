@@ -849,7 +849,7 @@
         if (value.reportedAddress) doc.querySelector('#host-address-display').textContent = value.reportedAddress + ' (service-reported)';
         var checks = doc.querySelector('#host-service-checks');
         if (checks && Array.isArray(value.checks)) {
-          var labels = {goldhen:'GoldHEN loader','payload-manager':'Payload Manager',downloader:'Console downloader','ps4-files':'PS4 file manager',files:'PS5 websrv',ezremote:'PS5 ezRemote'};
+          var labels = {goldhen:'GoldHEN loader','payload-manager':'Payload Manager',downloader:'Console downloader','ps4-files':'PS4 file manager',files:'PS5 Web File Manager','websrv-files':'Legacy websrv',ezremote:'PS5 ezRemote'};
           checks.hidden = false;
           checks.innerHTML = value.checks.map(function (check) { return '<div class="host-service-result" data-state="' + escape(check.status) + '"><strong>' + escape(labels[check.service || check.id] || check.service || check.id) + '</strong><span>' + escape(check.status === 'connected' ? 'Responding' : 'Not verified') + '</span><p>' + escape(check.message) + '</p></div>'; }).join('');
           refresh(checks);

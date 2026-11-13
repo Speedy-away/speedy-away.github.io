@@ -265,7 +265,7 @@ async function inspectConsoleServices(address, platform, {fetcher = globalThis.f
       return {...base,status:probeFailure(error),code:error.code || 'service-unavailable',message:error.message || 'The configured service could not be read; its availability is unknown.'};
     }
   }
-  const definitions = [{service:'downloader',port:6701,path:'/get_download_state'},...(platform === 'ps4' ? [{service:'ps4-files',port:8080,path:'/'}] : [{service:'files',port:8080,path:'/fs/'},{service:'ezremote',port:9090,path:'/'}])];
+  const definitions = [{service:'downloader',port:6701,path:'/get_download_state'},...(platform === 'ps4' ? [{service:'ps4-files',port:8080,path:'/'}] : [{service:'files',port:8888,path:'/'},{service:'ezremote',port:9090,path:'/'}])];
   const [main,...checks] = await Promise.all([core(),...definitions.map(extra)]);
   return {...main.result,checks:[main.check,...checks]};
 }

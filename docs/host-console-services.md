@@ -12,7 +12,7 @@ The sender serves the host dashboard and a narrow selection of its public assets
 
 The helper does not create console folders, extract archives, install a PKG or claim to verify a game's runtime result. Those operations require the appropriate running native application. RAR/ZIP entries are never reclassified as raw payloads. Existing direct ELF/BIN mirrors are used as-is; their original versions remain pinned.
 
-The explicit **Check services** request uses the paired local sender's `POST /api/inspect` with only `address` and `platform`. After validating and resolving the LAN address once, it makes fixed read-only requests: PS4 GoldHEN `GET :9090/status`, or PS5 Payload Manager `GET :8084/version` and `GET :8084/getip`; both platforms also read the downloader queue at `:6701/get_download_state`. File-manager checks use PS4 ezRemote `:8080/`, or PS5 websrv `:8080/fs/` and ezRemote `:9090/`. Core metadata is limited to 2 KiB and other checks to 64 KiB, with a four-second deadline including the response body. Requests never accept custom URLs, paths or ports, follow redirects, spoof Origin/Referer, send payloads or open a raw TCP listener. A queue result returns only its validated count and explicitly leaves companion installation/storage unverified. File-manager results prove a bounded HTML response, not application identity or successful filesystem operations. Failures distinguish blocked, unavailable and unknown evidence without declaring a console absent.
+The explicit **Check services** request uses the paired local sender's `POST /api/inspect` with only `address` and `platform`. After validating and resolving the LAN address once, it makes fixed read-only requests: PS4 GoldHEN `GET :9090/status`, or PS5 Payload Manager `GET :8084/version` and `GET :8084/getip`; both platforms also read the downloader queue at `:6701/get_download_state`. File-manager checks use PS4 ezRemote `:8080/`, or PS5 Web File Manager `:8888/` and ezRemote `:9090/`. Core metadata is limited to 2 KiB and other checks to 64 KiB, with a four-second deadline including the response body. Requests never accept custom URLs, paths or ports, follow redirects, spoof Origin/Referer, send payloads or open a raw TCP listener. A queue result returns only its validated count and explicitly leaves companion installation/storage unverified. File-manager results prove a bounded HTML response, not application identity or successful filesystem operations. Failures distinguish blocked, unavailable and unknown evidence without declaring a console absent.
 
 Protocol2 keeps the original top-level loader/manager result and adds the `checks` array. `/api/status` advertises `capabilities.serviceOverview` and `capabilities.uncertainOutcomes`. The dashboard requires uncertainty-aware sending before using an advertised paired action; an older helper gets an update message before any copy or transfer.
 
@@ -53,7 +53,8 @@ To let the native manager download this site's ready files itself, add `https://
 | Service | URL after the native service is started |
 | --- | --- |
 | PS5 Payload Manager | `http://CONSOLE_IP:8084/` |
-| PS5 websrv file explorer | `http://CONSOLE_IP:8080/fs/` |
+| PS5 Web File Manager v1.14 | `http://CONSOLE_IP:8888/` (use the notification port if 8888 is busy) |
+| Legacy PS5 websrv file explorer | `http://CONSOLE_IP:8080/fs/` |
 | PS5 websrv homebrew launcher | `http://CONSOLE_IP:8080/index.html` |
 | PS5 websrv ELF launcher | `http://CONSOLE_IP:8080/elfldr` |
 | PS4 ezRemote file manager | `http://CONSOLE_IP:8080/` by default; keep the native app running |
@@ -72,7 +73,7 @@ Its [native sender](https://github.com/n0llptr/remote_lua_loader/blob/main/paylo
 `assets/host-console-client.js` exposes `window.HostConsoleClient` and a CommonJS export. It makes no requests on import. All network methods return a Promise of an object with `status`, `code` and a human-readable `message`; they never return a synthetic success after a network or CORS failure.
 
 - `normalizeAddress(value)` accepts private IPv4, loopback for native-console browser links, a single local hostname or a `.local` hostname. It rejects URLs, ports, credentials, public IPv4 and external domain syntax. Local-name syntax alone does not establish a device identity.
-- `serviceURL(address, service)` builds a documented native link. Service names: `manager`, `files` (PS5 websrv), `homebrew`, `ps4-files`, `ezremote` (PS5), `saves`, `patches`.
+- `serviceURL(address, service)` builds a documented native link. Service names: `manager`, `files` (PS5 Web File Manager), `websrv-files` (legacy PS5 websrv), `homebrew`, `ps4-files`, `ezremote` (PS5), `saves`, `patches`.
 - `capabilities(address, {origin})` returns `address`, `managerURL`, `canInspectManager`, `canRunManager`, `code`, `reason`. Both capabilities require exactly the manager's HTTP origin.
 - `inspectManager(address, options)` returns `connected`, `unavailable` or `blocked`, plus `version` and `reportedAddress` only after actual readable responses. An unknown `0.0.0.0` address becomes null. Connecting does not run a payload.
 - `launchInstalled(address, installedPath, options)` uses the verified manager POST endpoint only at its own origin. `accepted` means a loader transfer completed.
