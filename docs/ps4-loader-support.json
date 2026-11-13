@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+  "files": {
+    "bin": {
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/elfldr.bin",
+      "name": "elfldr.bin",
+      "bytes": 351460,
+      "sha256": "e66bbf87e4b5cc961a6ac1ddabca22c8c7a5e965c2a31e22e435a61fe83fdcfe",
+      "sourceURL": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.bin"
+    },
+    "elf": {
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/elfldr.elf",
+      "name": "elfldr.elf",
+      "bytes": 263360,
+      "sha256": "fa39e1fb1df62f23703830ed2e2c18cba8ee7582247b09b386851360fe37f8c4",
+      "sourceURL": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.elf"
+    }
+  },
+  "sender": {
+    "url": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
+    "name": "ps4-loader-sender-eae50f5882e6.zip",
+    "bytes": 258774,
+    "sha256": "eae50f5882e622745a7258c683ac74d751fcb250f151bf9206a140afe9ee52d0",
+    "sourceURL": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
+    "version": "1.0.0+eae50f5882e6"
+  },
+  "legacy": [
+    {
+      "id": "karo-binloader-505",
+      "entry": "/hosts/ps4/exploit/karo-binloader-505/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/505/index.html",
+      "firmwares": [
+        "5.05"
+      ]
+    },
+    {
+      "id": "karo-binloader-672",
+      "entry": "/hosts/ps4/exploit/karo-binloader-672/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/672/index.html",
+      "firmwares": [
+        "6.72"
+      ]
+    },
+    {
+      "id": "karo-binloader-702",
+      "entry": "/hosts/ps4/exploit/karo-binloader-702/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/702/index.html",
+      "firmwares": [
+        "7.02"
+      ]
+    },
+    {
+      "id": "karo-binloader-755",
+      "entry": "/hosts/ps4/exploit/karo-binloader-755/",
+      "runtimeEntry": "/hosts/runtime/karo-743646c9df9a-e3c0caf3db54/web/binloader/755/index.html",
+      "firmwares": [
+        "7.55"
+      ]
+    }
+  ],
+  "payloadsExecuted": false,
+  "hardwareTested": false
+}

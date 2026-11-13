@@ -1,4 +1,212 @@
 {
+  "ps4ReleasePublication20261113": {
+    "date": "2026-11-13",
+    "status": "User requested final review and push; release staged for main.",
+    "tests": 157,
+    "failed": 0,
+    "hardwareVerified": false,
+    "archiveRecords": 9514,
+    "missingArchiveRecords": 0,
+    "features": "Built-in 14.02 WebKit Exploit, GoldHEN/ps4-hen, local BIN/ELF tools, settings, optional cache/update/delete controls and native banner.",
+    "remaining": "Confirm push, deployment and public runtime file identities."
+  },
+  "ps4SettingsAndCache20261113": {
+    "date": "2026-11-13",
+    "status": "Complete locally; not committed or published. Physical PS4 execution remains untested.",
+    "page": "/hosts/runtime/ps4-afterglow-944d5aeed06f/web/index.html",
+    "archive": {
+      "filename": "afterglow-1402-944d5aeed06f-030dd7b73a64.zip",
+      "local": "downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-030dd7b73a64.zip",
+      "bytes": 1073991,
+      "sha256": "030dd7b73a649ee99498ef1389aab8c92616c33ca586740e2ce463ff69083bd6",
+      "sourceURL": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+      "version": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1"
+    },
+    "sender": {
+      "url": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
+      "name": "ps4-loader-sender-eae50f5882e6.zip",
+      "bytes": 258774,
+      "sha256": "eae50f5882e622745a7258c683ac74d751fcb250f151bf9206a140afe9ee52d0",
+      "sourceURL": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
+      "version": "1.0.0+eae50f5882e6"
+    },
+    "features": [
+      "Top-left settings gear: Show advanced payloads, Auto Jailbreak, Auto-Retry Jailbreak, Reload after a successful jailbreak, Barebone Jailbreak Experience.",
+      "Advanced tools and auto-retry default on, auto jailbreak/reload/barebone default off. Preferences persist locally. Opening Options pauses countdown.",
+      "Auto Jailbreak shares existing five-second countdown. Retry is bounded to one fresh countdown after explicit JB-THREW before any kernel-stage log. Stalls, crashes, kernel failures and uncertain outcomes never trigger retry.",
+      "Optional reload requires both AG done and handles defused, then returns to restored=1 without autostart. Barebone hides detailed logs; native runtime bytes remain unchanged.",
+      "Cache now, Update cache, Delete cache and Stop. Modern cache uses checksum-verified generations, retains old cache if update fails, aborts response bodies and deletes only this runtime namespace.",
+      "On PS4 AppCache, Delete disables automatic caching and explains OPTIONS > Settings > Clear Website Data; this browser operation also affects other hosts. No false programmatic-deletion claim.",
+      "Offline closure includes firmware-locked 14.02 loader page, sender ZIP, ELF-loader BIN and ELF, authored assets and settings. Cache download never executes payloads.",
+      "Native banner remains on chooser; sending and runtime execution pages have no third-party scripts."
+    ],
+    "verification": {
+      "tests": 137,
+      "passed": 137,
+      "failed": 0,
+      "results": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\test-results.txt",
+      "publishingChecks": [
+        "project links/native bytes",
+        "metadata",
+        "offline packs",
+        "game patches",
+        "locales"
+      ],
+      "releaseBytes": 903458744,
+      "nativeScriptsUnchanged": 1030,
+      "localPayloads": 55,
+      "ps4RuntimeFiles": 132,
+      "nativeKaroScripts": 16,
+      "selectedOriginalFilesPending": 5,
+      "browser": "Desktop/mobile settings inspected; Cache now, Update cache and Delete cache completed; bundled ELF-loader selection verified its SHA-256 without sending.",
+      "hardwareVerified": false,
+      "payloadsExecuted": false,
+      "archiveRecords": 9514,
+      "missingArchiveRecords": 0,
+      "legacyTestUpdates": "HTTP202 accepted per source; HTTP201 remains uncertain. Firmware tests inspect current renderer and preserve old/new firmware isolation rather than assuming one historical group."
+    },
+    "sourceFiles": [
+      "assets/afterglow-1402.html",
+      "assets/afterglow-1402.css",
+      "assets/afterglow-1402-entry.js",
+      "assets/afterglow-1402-settings.js",
+      "assets/afterglow-1402-run-options.js",
+      "assets/afterglow-cache.js",
+      "assets/afterglow-cache-frame.js",
+      "assets/afterglow-offline-sw.js",
+      "scripts/build-1402-loader-page.cjs",
+      "scripts/build-afterglow-1402.cjs"
+    ],
+    "regenerate": [
+      "node scripts/build-ps4-loaders.cjs C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402",
+      "node scripts/build-afterglow-1402.cjs C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402"
+    ],
+    "release": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\pages-final",
+    "previews": [
+      "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\settings-desktop.png",
+      "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\settings-mobile.png",
+      "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\host-desktop.png"
+    ],
+    "remaining": "Publish only when requested. Test on physical PS4 14.02 for exploit timing, HEN execution, actual loader availability, AppCache persistence and native result hooks. No claim that arbitrary BIN/ELF payloads support 14.02. Preserve older downloads and shared changes."
+  },
+  "ps4LoaderSupport20261113": {
+    "date": "2026-11-13",
+    "status": "Implemented and verified locally; not committed or published.",
+    "sourceCommit": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+    "page": "/hosts/ps4/loaders/",
+    "shortRoute": "/ps4/loaders/",
+    "scope": [
+      "Custom BIN/ELF picker with exact loader profiles and user compatibility acknowledgement.",
+      "GoldHEN/nexHEN HTTP9090, WebKitty ELF HTTP9021, paired ELF TCP9021, and PSFree9.00 BIN TCP9020.",
+      "Pinned ELF-loader BIN/ELF downloads and explicit prepare-then-send flow; no automatic bootstrap or retry.",
+      "Four preserved KARO standalone BIN launchers and explicit original PSFree9.00 native listener link.",
+      "Added navigation from the14.02 chooser and host payload/tool catalogues.",
+      "Existing browser and paired GoldHEN senders accept documented HTTP202 responses.",
+      "Sending page excludes third-party scripts under the existing console-controls policy. Native banners remain on the HEN chooser."
+    ],
+    "sender": {
+      "url": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-f1bba5043e0d.zip",
+      "name": "ps4-loader-sender-f1bba5043e0d.zip",
+      "bytes": 258522,
+      "sha256": "f1bba5043e0d5c0ce1aad1bffdc329d2643be9bd17b342145be7211dbd81b108",
+      "sourceURL": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-f1bba5043e0d.zip",
+      "version": "1.0.0+f1bba5043e0d"
+    },
+    "verification": {
+      "tests": 112,
+      "passed": 112,
+      "publishingChecks": [
+        "project links/native bytes",
+        "metadata",
+        "offline packs",
+        "game patches",
+        "locales"
+      ],
+      "releaseBytes": 907833048,
+      "nativeScriptsUnchanged": 1026,
+      "localPayloadFilesVerified": 55,
+      "ps4RuntimeFilesVerified": 132,
+      "karoNativeBINScriptsVerified": 16,
+      "selectedOriginalFilesPending": 5,
+      "details": "docs/ps4-loader-audit.json",
+      "browser": "Pairing and checksum-verified ELF-loader selection passed; desktop/mobile previews saved; no payload was sent.",
+      "legacyVerifierNotes": "verify-host-runtime-builds reaches the missing migrated docs/qa/host-runtime-upstream-files.json. The new read-only audit verifies PS4 runtime manifest hashes and current KARO scripts directly. verify-host-payloads counts five original-only selected-file entries as missing; their metadata/upload contracts pass, but their bytes were not fetched or tested."
+    },
+    "archive": {
+      "itemsThisBatch": 8,
+      "bytes": 2165427,
+      "indexFileRecords": 9509,
+      "missingRecords": 0,
+      "inventory": "docs/ps4-loaders-private-inventory.json",
+      "preserved": "Every sender draft, both WebKitty binaries and updated Afterglow chooser ZIP retained with source/version/size/SHA-256; no original removed."
+    },
+    "regenerate": [
+      "node scripts/build-ps4-loaders.cjs C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402",
+      "node scripts/build-afterglow-1402.cjs C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402",
+      "node scripts/audit-ps4-loaders.cjs --write"
+    ],
+    "release": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-loaders/pages-final",
+    "previews": [
+      "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-loaders/loaders-desktop.jpg",
+      "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-loaders/loaders-mobile.jpg"
+    ],
+    "remaining": "Physical console tests are still required for execution, loader availability and payload-specific compatibility. No payload/native code was executed. Preserve all unrelated shared changes."
+  },
+  "afterglow1402Host20261113": {
+    "date": "2026-11-13",
+    "status": "Built and verified locally; not committed or published.",
+    "repository": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
+    "source": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+    "scope": "Built-in Afterglow PS4 14.02 chooser at /ps4/14.02/. Visible title WebKit Exploit; blue host theme, payload/console panels, native banner placement, optional five-second autostart, optional automatic cache and manual Cache now/Stop. Dashboard announcement: 14.02 jailbreak is here. Older 14.00 and all prior downloads retained. WebKitty was staged but not integrated, per user clarification.",
+    "caching": "Off by default; scoped modern service worker verifies hashes, PS4 AppCache starts only by user choice. Turning off preserves cached bytes. New runtime is excluded from forced platform caching.",
+    "verification": {
+      "focusedTests": 61,
+      "publishingChecksPassed": [
+        "project pages",
+        "metadata",
+        "offline",
+        "game patches",
+        "locales"
+      ],
+      "releaseBytes": 910000775,
+      "nativeScriptsUnchanged": 1026,
+      "runtimeFilesVerified": 41,
+      "physicalConsole": "Pending; no downloaded native payload executed.",
+      "knownPreexistingFailure": "host-ps5-local-subset expects 3 groups but baseline HEAD already supplies 4; unrelated assertion unchanged."
+    },
+    "archive": {
+      "root": "F:/whatsite-backup-downloads-etc",
+      "preservedItems": 6,
+      "bytes": 2480280,
+      "finalZip": "afterglow-1402-944d5aeed06f-8249f36b27ca.zip",
+      "finalSha256": "8249f36b27ca01139924d52c317296c3222a640916bfd3f2f95365049b886fd4",
+      "indexFileRecords": 9500,
+      "missingRecords": 0,
+      "inventory": "docs/afterglow-1402-private-inventory.json"
+    },
+    "regenerate": "node scripts/build-afterglow-1402.cjs C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402",
+    "verifiedRelease": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402/pages-release",
+    "previews": [
+      "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402/firmware-announcement.jpg",
+      "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402/webkit-exploit-desktop.jpg",
+      "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402/webkit-exploit-mobile.jpg"
+    ],
+    "remaining": "Review local changes and perform physical PS4 14.02/cache testing before publishing. Preserve unrelated dirty changes. Main whatsite migration redirects remain intact."
+  },
+  "dashboardFirmwareVersionOrder": {
+    "date": "2026-11-13",
+    "status": "Local change",
+    "scope": "PS4 and PS5 dashboard firmware buttons sort newest first, including dynamically added detections.",
+    "ps4First": [
+      "14.02",
+      "14.00"
+    ],
+    "ps5First": [
+      "14.20",
+      "14.10",
+      "14.00"
+    ]
+  },
   "adCoverage20261104": {
     "date": "2026-11-04",
     "status": "Published 2c7180b and live verified: all 60 authored host ad placements pass HTTP checks; root/PS4/PS5 show four native ads at 1920px and 390px widths",

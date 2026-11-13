@@ -1,0 +1,85 @@
+{
+  "platform": "ps4",
+  "sourceCommit": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+  "actions": [
+    {
+      "id": "ps4-bin-elf-loaders",
+      "platform": "ps4",
+      "label": "BIN / ELF loaders",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "firmwares": [],
+      "format": "Loader controls",
+      "launchURL": "/hosts/ps4/loaders/",
+      "launchLabel": "Open loaders",
+      "requirements": [
+        "Start the matching console loader first. Select a compatible BIN or ELF and confirm its firmware/game requirements."
+      ]
+    },
+    {
+      "id": "ps4-webkitty-elfldr-bin",
+      "platform": "ps4",
+      "label": "WebKitty ELF loader · BIN",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "firmwares": [
+        "14.02"
+      ],
+      "format": "BIN",
+      "downloadURL": "/downloads/host-payloads/webkitty/ff181af62e0c/elfldr.bin",
+      "bytes": 351460,
+      "sha256": "e66bbf87e4b5cc961a6ac1ddabca22c8c7a5e965c2a31e22e435a61fe83fdcfe",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.bin",
+      "sourceURL": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.bin",
+      "sourceCommit": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "launchURL": "/hosts/ps4/loaders/",
+      "launchLabel": "Open loaders",
+      "run": {
+        "type": "goldhen-http",
+        "port": 9090
+      },
+      "requirements": [
+        "PS4 14.02 entry; the pinned WebKitty catalogue lists ELF Loader for 4.71–latest. Native bytes are unchanged; console execution remains untested.",
+        "Enable the HEN BIN loader on HTTP 9090 before sending the flat BIN. ELF traffic then uses its separate service on 9021.",
+        "Do not send an ELF to an older KARO raw BIN listener on 9021."
+      ],
+      "license": "Distributed unchanged from the pinned WebKitty snapshot; preserve WebKitty and John Törnblom attribution."
+    },
+    {
+      "id": "ps4-webkitty-elfldr-elf",
+      "platform": "ps4",
+      "label": "WebKitty ELF loader · ELF",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "firmwares": [
+        "14.02"
+      ],
+      "format": "ELF",
+      "downloadURL": "/downloads/host-payloads/webkitty/ff181af62e0c/elfldr.elf",
+      "bytes": 263360,
+      "sha256": "fa39e1fb1df62f23703830ed2e2c18cba8ee7582247b09b386851360fe37f8c4",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.elf",
+      "sourceURL": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.elf",
+      "sourceCommit": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "launchURL": "/hosts/ps4/loaders/",
+      "launchLabel": "Open loaders",
+      "requirements": [
+        "PS4 14.02 entry; the pinned WebKitty catalogue lists ELF Loader for 4.71–latest. Native bytes are unchanged; console execution remains untested.",
+        "Enable the HEN BIN loader on HTTP 9090 before sending the flat BIN. ELF traffic then uses its separate service on 9021.",
+        "Do not send an ELF to an older KARO raw BIN listener on 9021."
+      ],
+      "license": "Distributed unchanged from the pinned WebKitty snapshot; preserve WebKitty and John Törnblom attribution."
+    }
+  ]
+}

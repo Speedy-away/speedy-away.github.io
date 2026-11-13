@@ -303,7 +303,7 @@
           return request('http://' + address + ':9090/', {method: 'POST', mode: 'cors', credentials: 'omit', redirect: 'error', body: bytes}, options, false, true);
         });
       }).then(function (r) {
-        if (r.status !== 200) { var error = fault('unexpected-response', 'The loader did not acknowledge the payload.'); error.mayHaveExecuted = true; throw error; }
+        if (r.status !== 200 && r.status !== 202) { var error = fault('unexpected-response', 'The loader did not acknowledge the payload.'); error.mayHaveExecuted = true; throw error; }
         return result('accepted', 'goldhen-accepted', 'GoldHEN accepted the payload bytes. Check the game or console for the result.', {address: address, sha256: sha});
       });
     }).catch(function (e) { return failed(e); });

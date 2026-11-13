@@ -1,0 +1,313 @@
+{
+  "date": "2026-11-13",
+  "backupRoot": "F:/whatsite-backup-downloads-etc",
+  "items": [
+    {
+      "id": "ps4-loaders-elfldr-bin-e66bbf87e4b5",
+      "project": "WebKitty ELF Loader",
+      "title": "elfldr.bin",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "url": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.bin",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "elfldr.bin",
+          "bytes": 351460,
+          "sha256": "e66bbf87e4b5cc961a6ac1ddabca22c8c7a5e965c2a31e22e435a61fe83fdcfe",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WebKitty ELF Loader\\Builds\\ff181af62e0c57d7b74b3ea40b7a166b21424864\\elfldr.bin",
+          "local": "/downloads/host-payloads/webkitty/ff181af62e0c/elfldr.bin",
+          "sourceUrl": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.bin",
+          "releaseTag": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+          "archiveRole": [
+            "Builds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-elfldr-elf-fa39e1fb1df6",
+      "project": "WebKitty ELF Loader",
+      "title": "elfldr.elf",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "url": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.elf",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "elfldr.elf",
+          "bytes": 263360,
+          "sha256": "fa39e1fb1df62f23703830ed2e2c18cba8ee7582247b09b386851360fe37f8c4",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WebKitty ELF Loader\\Builds\\ff181af62e0c57d7b74b3ea40b7a166b21424864\\elfldr.elf",
+          "local": "/downloads/host-payloads/webkitty/ff181af62e0c/elfldr.elf",
+          "sourceUrl": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/elfldr.elf",
+          "releaseTag": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+          "archiveRole": [
+            "Builds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-ps4-loader-sender-1023999e68f0-zip-1023999e68f0",
+      "project": "WWB PS4 Loader Sender",
+      "title": "ps4-loader-sender-1023999e68f0.zip",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Helpers"
+      ],
+      "release": "1.0.0+1023999e68f0",
+      "url": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-1023999e68f0.zip",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "ps4-loader-sender-1023999e68f0.zip",
+          "bytes": 258374,
+          "sha256": "1023999e68f0c4e715c1d04bb1fc419c84089921c3ddde75c8999c6582b71682",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WWB PS4 Loader Sender\\Helpers\\1.0.0+1023999e68f0\\ps4-loader-sender-1023999e68f0.zip",
+          "local": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-1023999e68f0.zip",
+          "sourceUrl": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-1023999e68f0.zip",
+          "releaseTag": "1.0.0+1023999e68f0",
+          "archiveRole": [
+            "Helpers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-ps4-loader-sender-60d99a483abe-zip-60d99a483abe",
+      "project": "WWB PS4 Loader Sender",
+      "title": "ps4-loader-sender-60d99a483abe.zip",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Helpers"
+      ],
+      "release": "1.0.0+60d99a483abe",
+      "url": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-60d99a483abe.zip",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "ps4-loader-sender-60d99a483abe.zip",
+          "bytes": 258456,
+          "sha256": "60d99a483abed92b8600fb70f928077016f190a21368ad4af7db1a093e6f876b",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WWB PS4 Loader Sender\\Helpers\\1.0.0+60d99a483abe\\ps4-loader-sender-60d99a483abe.zip",
+          "local": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-60d99a483abe.zip",
+          "sourceUrl": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-60d99a483abe.zip",
+          "releaseTag": "1.0.0+60d99a483abe",
+          "archiveRole": [
+            "Helpers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-ps4-loader-sender-9c27d6084076-zip-9c27d6084076",
+      "project": "WWB PS4 Loader Sender",
+      "title": "ps4-loader-sender-9c27d6084076.zip",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Helpers"
+      ],
+      "release": "1.0.0+9c27d6084076",
+      "url": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-9c27d6084076.zip",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "ps4-loader-sender-9c27d6084076.zip",
+          "bytes": 258428,
+          "sha256": "9c27d60840768d0c34e6b7b12e89351c86e04c009204eb050273f342b928939e",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WWB PS4 Loader Sender\\Helpers\\1.0.0+9c27d6084076\\ps4-loader-sender-9c27d6084076.zip",
+          "local": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-9c27d6084076.zip",
+          "sourceUrl": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-9c27d6084076.zip",
+          "releaseTag": "1.0.0+9c27d6084076",
+          "archiveRole": [
+            "Helpers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-ps4-loader-sender-d47109671c14-zip-d47109671c14",
+      "project": "WWB PS4 Loader Sender",
+      "title": "ps4-loader-sender-d47109671c14.zip",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Helpers"
+      ],
+      "release": "1.0.0+d47109671c14",
+      "url": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-d47109671c14.zip",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "ps4-loader-sender-d47109671c14.zip",
+          "bytes": 258404,
+          "sha256": "d47109671c1489fe3ee919e25d8be8c152edfb2f8ebb9acdc35b927c9f3f6425",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WWB PS4 Loader Sender\\Helpers\\1.0.0+d47109671c14\\ps4-loader-sender-d47109671c14.zip",
+          "local": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-d47109671c14.zip",
+          "sourceUrl": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-d47109671c14.zip",
+          "releaseTag": "1.0.0+d47109671c14",
+          "archiveRole": [
+            "Helpers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-ps4-loader-sender-e377f0cfe331-zip-e377f0cfe331",
+      "project": "WWB PS4 Loader Sender",
+      "title": "ps4-loader-sender-e377f0cfe331.zip",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Helpers"
+      ],
+      "release": "1.0.0+e377f0cfe331",
+      "url": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-e377f0cfe331.zip",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "ps4-loader-sender-e377f0cfe331.zip",
+          "bytes": 258423,
+          "sha256": "e377f0cfe331cc335e3470675aaf6cca92c271f5a57b60cf5d3f9f917755159a",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WWB PS4 Loader Sender\\Helpers\\1.0.0+e377f0cfe331\\ps4-loader-sender-e377f0cfe331.zip",
+          "local": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-e377f0cfe331.zip",
+          "sourceUrl": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-e377f0cfe331.zip",
+          "releaseTag": "1.0.0+e377f0cfe331",
+          "archiveRole": [
+            "Helpers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-ps4-loader-sender-eae50f5882e6-zip-eae50f5882e6",
+      "project": "WWB PS4 Loader Sender",
+      "title": "ps4-loader-sender-eae50f5882e6.zip",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Helpers"
+      ],
+      "release": "1.0.0+eae50f5882e6",
+      "url": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "ps4-loader-sender-eae50f5882e6.zip",
+          "bytes": 258774,
+          "sha256": "eae50f5882e622745a7258c683ac74d751fcb250f151bf9206a140afe9ee52d0",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WWB PS4 Loader Sender\\Helpers\\1.0.0+eae50f5882e6\\ps4-loader-sender-eae50f5882e6.zip",
+          "local": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
+          "sourceUrl": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
+          "releaseTag": "1.0.0+eae50f5882e6",
+          "archiveRole": [
+            "Helpers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ps4-loaders-ps4-loader-sender-f1bba5043e0d-zip-f1bba5043e0d",
+      "project": "WWB PS4 Loader Sender",
+      "title": "ps4-loader-sender-f1bba5043e0d.zip",
+      "platform": "PS4",
+      "category": [
+        "Payloads",
+        "Loaders"
+      ],
+      "archiveRole": [
+        "Helpers"
+      ],
+      "release": "1.0.0+f1bba5043e0d",
+      "url": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-f1bba5043e0d.zip",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/loaders/index.html"
+      ],
+      "files": [
+        {
+          "name": "ps4-loader-sender-f1bba5043e0d.zip",
+          "bytes": 258522,
+          "sha256": "f1bba5043e0d5c0ce1aad1bffdc329d2643be9bd17b342145be7211dbd81b108",
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Payloads\\Loaders\\WWB PS4 Loader Sender\\Helpers\\1.0.0+f1bba5043e0d\\ps4-loader-sender-f1bba5043e0d.zip",
+          "local": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-f1bba5043e0d.zip",
+          "sourceUrl": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-f1bba5043e0d.zip",
+          "releaseTag": "1.0.0+f1bba5043e0d",
+          "archiveRole": [
+            "Helpers"
+          ]
+        }
+      ]
+    }
+  ],
+  "payloadsExecuted": false
+}

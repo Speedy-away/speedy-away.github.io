@@ -170,11 +170,11 @@ function build(output,revision='main',root=ROOT){
   if(name===catalogueName)text=JSON.stringify(catalogue);
   if(name.endsWith('.html'))text=require('./host-compact-pages.cjs').apply(text,name,{root});
   if(name.endsWith('.html'))text=publicCopy.html(text,name,delivery);
-  if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
   if(name.endsWith('.html'))text=require('./host-plugin-templates.cjs').apply(text,name);
   // The new exact GamerHack CSS table adds 10.50 to the public PS4 chooser.
   if(/^hosts\/ps4\//.test(name)&&fs.existsSync(path.join(root,'docs/host-gamerhack-g2all-build.json'))&&!text.includes('data-host-firmware="10.50"'))text=text.replace(/(<button\b[^>]*data-host-firmware="10\.00"[^>]*>[\s\S]*?<\/button>)/,'$1<button type="button" data-host-firmware="10.50" aria-pressed="false" translate="no">10.50</button>');
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name))text=text.replace('</head>','<link rel="stylesheet" href="/assets/host-compact.css?v=1"><link rel="stylesheet" href="/assets/host-blue-theme.css?v=20261104xmb1"></head>');
+  if(name.endsWith('.html'))text=require('./host-firmware-placeholders.cjs').apply(text,name);
   // Prefix authored root-relative strings, including concatenated directory roots.
   text=text.replace(/https:\/\/whatwhatboy\.com\/(hosts\/[^\s"'<>\\]*)/g,(_,p)=>{const url=target(p);return /^https?:/.test(url)?url:ORIGIN+url;});
   // Resolve complete quoted attributes before matching embedded URL tokens.
@@ -184,7 +184,7 @@ function build(output,revision='main',root=ROOT){
   if(name.endsWith('.html'))text=text.replace(/<!-- BEGIN SITE AD -->[\s\S]*?<!-- END SITE AD -->/g,'').replace(/<script\b[^>]*src=["'][^"']*site-ads\.js[^"']*["'][^>]*><\/script>/g,'');
   if(name.endsWith('.html')){
    const ads=require('./host-ads.cjs');
-   const controls=/\bid="(?:host-actions-data|host-patches-data|host-local-data|host-package-data|host-download-desk)"/.test(text)||
+   const controls=/\bid="(?:host-actions-data|host-patches-data|host-local-data|host-package-data|host-download-desk|loader-files)"/.test(text)||
     /^(?:hosts\/(?:ps[45]\/(?:packages|downloads)|tools)|console\/ps[45]\/downloads)/.test(name);
    // Third-party scripts must stay out of pages that control console actions.
    text=controls?ads.strip(text):ads.apply(name,text,{base:BASE});
@@ -203,7 +203,7 @@ function build(output,revision='main',root=ROOT){
   const runtime=f.name.startsWith('hosts/runtime/'),immutable=f.name.startsWith('downloads/')||/^console\/ps[45]\/whatsite-ps[45]\.html$/.test(f.name);
   if(runtime&&/\.m?js$/i.test(f.name)){nativeFiles++;}
   else if(!immutable&&/\.(?:html|js|css|json|xml|md|txt)$/i.test(f.name)){let text=original.toString('utf8');if(!runtime)text=rewrite(text,f.name);
-   if(runtime&&f.name.endsWith('.html')){
+   if(runtime&&f.name.endsWith('.html')&&!f.name.startsWith('hosts/runtime/ps4-afterglow-944d5aeed06f/')){
     const compact=require('./host-compact-pages.cjs');
     text=runtimeConfigHTML(compact.apply(text,f.name,{base:BASE,root}));
     text=require('./host-ps5-webkit-ui.cjs').apply(text,f.name,{base:BASE});

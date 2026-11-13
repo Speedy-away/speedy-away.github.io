@@ -27,7 +27,7 @@ function publicPS4Actions(rows,root){
   entryURL:PS4_ENTRY,
   nativeRoute:{...current.nativeRoute,entry:{...current.nativeRoute.entry,firmwares:['14.00']}},
   requirements:['Open on PS4 firmware 14.00. The launcher checks the browser cache and shows a live log.']
- },...(update?[update]:[]),...downloads];
+ },...(root?groups(root).filter(g=>g.id==='ps4-afterglow-1402').map(g=>actionForGroup(g,'ps4',rows)):rows.filter(a=>a.id==='local-ps4-afterglow-1402')),...(update?[update]:[]),...downloads];
 }
 
 function ps4FirmwareTile(){
@@ -38,7 +38,7 @@ function projectPS4(html,name,root){
  if(!/^hosts\/ps4\//.test(name))return html;
  if(name==='hosts/ps4/firmware/index.html'){
   const update=root&&groups(root).find(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/');
-  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+ps4FirmwareTile()+(update?firmwareTile(update):'')+close);
+  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+ps4FirmwareTile()+groups(root).filter(g=>g.id==='ps4-afterglow-1402').map(firmwareTile).join('')+(update?firmwareTile(update):'')+close);
  }
  html=html.replace(/<details class="host-other-directory">[\s\S]*?<\/details>/g,'');
  html=html.replace(/<a href="\/hosts\/ps4\/afterglow\/">13\.52 \/ 14\.00 · Afterglow<\/a>/g,'<a href="'+PS4_ENTRY+'">PS4 WebKit 14.00</a>');
@@ -46,6 +46,8 @@ function projectPS4(html,name,root){
   const catalogue=JSON.parse(json);
   if(catalogue.platform!=='ps4'||!Array.isArray(catalogue.actions))return open+json+close;
   catalogue.actions=publicPS4Actions(catalogue.actions,root);
+  const loaders=root&&require('path').join(root,'docs/host-webkitty-loader-actions.json');
+  if(loaders&&fs.existsSync(loaders))for(const action of JSON.parse(fs.readFileSync(loaders)).actions)if(!catalogue.actions.some(a=>a.id===action.id))catalogue.actions.push(action);
   return open+JSON.stringify(catalogue).replaceAll('<','\\u003c')+close;
  });
 }
@@ -100,12 +102,15 @@ function groups(root){
   rows.push(update?{...group,entry:update.ps4Entry,label:'PS4 Multi-Firmware WebKit · GoldHEN 2.4b18.13'}:group);
  }
  if(update)rows.push(update.group);
+ const afterglow1402=path.join(root,'docs/afterglow-1402-build.json');
+ if(fs.existsSync(afterglow1402))rows.push(JSON.parse(fs.readFileSync(afterglow1402)).group);
  const ps5File=path.join(root,'docs/ps5-webkit-build.json');
  if(fs.existsSync(ps5File)){const b=JSON.parse(fs.readFileSync(ps5File));rows.push({id:b.id,label:'PS5 WebKit Exploit - 7.00–13.60',platform:'ps5',firmwares:b.firmwares,entry:b.entry,runtimeEntry:b.runEntry,preferred:true,source:b.source,siteNative:true});}
  // A family label is presentation; compatibility remains the exact source array.
  return rows.filter(g=>g.firmwares?.length&&/^\/hosts\//.test(g.entry)&&fs.existsSync(path.join(root,g.entry.replace(/^\//,'').replace(/\/$/,'/index.html')))).sort((a,b)=>Number(a.firmwares[0])-Number(b.firmwares[0]));
 }
 function actionForGroup(g,platform,previous){
+  if(g.chooserOnly)return {id:'local-'+g.id,platform,category:'loaders',label:g.label,firmwareLabel:'14.02 · WebKit Exploit',firmwares:g.firmwares.slice(),format:'Built-in browser loader',launchURL:g.runtimeEntry,entryURL:'/ps4/14.02/',runtimeId:g.id,browserHost:true,source:g.source.repository+'/tree/'+g.source.commit,requirements:['PS4 firmware 14.02. Choose GoldHEN or ps4-hen on the built-in Afterglow page.','Offline caching and autostart are optional.']};
   if(g.id==='ps5-umtx'){
    const builtin=previous.find(a=>a.id==='built-in-ps5-umtx');if(!builtin)throw Error('Missing verified PS5 UMTX browser action.');
    return {...builtin,label:g.label,firmwareLabel:g.label.replace(/^PS5 WebKit Exploit - /,''),firmwares:g.firmwares.slice(),launchURL:g.runtimeEntry};
@@ -131,7 +136,7 @@ function firmwareTile(g){
 }
 function directory(root,platform){
  const rows=groups(root).filter(g=>g.platform===platform),name=platform.toUpperCase();
- const tiles=platform==='ps4'?ps4FirmwareTile()+rows.filter(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/').map(firmwareTile).join(''):rows.map(firmwareTile).join('');
+ const tiles=platform==='ps4'?ps4FirmwareTile()+rows.filter(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/'||g.id==='ps4-afterglow-1402').map(firmwareTile).join(''):rows.map(firmwareTile).join('');
  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+' WebKit Exploits | WWB HOST</title><link rel="stylesheet" href="/assets/host-compact.css"><script defer src="/assets/host-firmware-families.js?v=1"></script></head><body class="host-compact"><nav class="host-taskbar"><a href="/hosts/'+platform+'/">← '+name+' host</a><a href="/hosts/">Choose console</a><a href="/hosts/'+platform+'/?view=payloads">Payloads</a></nav><main class="host-compact-main"><header><h1>'+name+' WebKit Exploits</h1><p id="host-family-detected" role="status">Choose your firmware.</p></header><div class="host-firmware-families">'+tiles+'</div></main></body></html>';
 }
 function build(root){
@@ -147,6 +152,7 @@ function build(root){
  for(const p of ['ps4','ps5']){const file=path.join(root,'hosts',p,'firmware/index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,directory(root,p));}
 }
 function apply(html,name,{base='',root}={}){
+ if(name.startsWith('hosts/runtime/ps4-afterglow-944d5aeed06f/'))return html;
  const runtimeAfter=/^hosts\/runtime\/ps4-afterglow-[a-f0-9]{12}\/web\/index\.html$/.test(name);
  const runtimePS5=/^hosts\/runtime\/ps5-webkit-[a-f0-9]{12}\/index\.html$/.test(name);
  const nativeLanding=runtimeAfter||runtimePS5;

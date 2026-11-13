@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-13",
+  "passed": true,
+  "payloadFiles": {
+    "catalogueActions": 189,
+    "files": 55,
+    "passed": 55,
+    "failed": 0,
+    "bytes": 134768384,
+    "runnableActions": 53,
+    "runnableValidatorPassed": 53,
+    "elfDownloads": 22,
+    "elfPassed": 22
+  },
+  "selectedOriginalFiles": {
+    "count": 5,
+    "status": "Metadata and upload contracts verified; original files must be selected by the user, so their bytes were not loaded or re-fetched.",
+    "ids": [
+      "ps4-original-orbis-toolbox-1-0-1190-505",
+      "ps4-original-orbis-toolbox-1-0-1190-672",
+      "ps4-original-orbis-toolbox-1-0-1190-900",
+      "ps4-original-goldhen-2-4b18-900",
+      "ps4-original-hippie68-ftp-1-08b-900"
+    ]
+  },
+  "standaloneBINLaunchers": 4,
+  "nativeBINScriptsUnchanged": 16,
+  "localHTMLDependencies": 4,
+  "ps4RuntimeFiles": 132,
+  "newLoaderFiles": 2,
+  "payloadExecution": false,
+  "consoleContact": false,
+  "hardwareVerified": false
+}

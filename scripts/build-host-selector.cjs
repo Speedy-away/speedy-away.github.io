@@ -8,7 +8,7 @@ const image = platform => `/assets/images/host-selector/whatwhatboy-${platform}.
 function hostActions(platform) {
   const rows = [];
   const downloads = fs.existsSync(path.join(root,'docs/console-download-catalog.json')) ? JSON.parse(fs.readFileSync(path.join(root,'docs/console-download-catalog.json'),'utf8')).items : [];
-  for (const name of [`host-actions-${platform}.json`, 'host-modern-plugin-actions.json', 'host-current-cheat-actions.json', 'host-game-actions.json', 'host-legacy-menu-actions.json', 'host-extra-game-actions.json', 'host-native-payload-actions.json', 'host-web-utility-actions.json', 'host-repository-menu-actions.json', 'host-original-tool-actions.json', 'host-legacy-firmware-menu-actions.json', 'host-next-utility-actions.json', 'host-gta505-continuation-actions.json', 'host-arabicguy-672-actions.json']) {
+  for (const name of [`host-actions-${platform}.json`, 'host-webkitty-loader-actions.json', 'host-modern-plugin-actions.json', 'host-current-cheat-actions.json', 'host-game-actions.json', 'host-legacy-menu-actions.json', 'host-extra-game-actions.json', 'host-native-payload-actions.json', 'host-web-utility-actions.json', 'host-repository-menu-actions.json', 'host-original-tool-actions.json', 'host-legacy-firmware-menu-actions.json', 'host-next-utility-actions.json', 'host-gta505-continuation-actions.json', 'host-arabicguy-672-actions.json']) {
     const filename = path.join(root, 'docs', name);
     if (!fs.existsSync(filename)) continue;
     const data = JSON.parse(fs.readFileSync(filename, 'utf8'));

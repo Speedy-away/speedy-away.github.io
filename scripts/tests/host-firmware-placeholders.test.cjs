@@ -2,7 +2,7 @@
 // Exercise authored selection and authorization only. Never load a native runtime.
 const test=require('node:test'),assert=require('node:assert/strict');
 const dashboard=require('../../assets/host-dashboard.js'),load=require('../../assets/host-site-load.js'),registry=require('../host-firmware-placeholders.cjs'),{hostActions}=require('../build-host-selector.cjs'),{fixture}=require('./host-continuation-dom.cjs');
-const expected={ps4:['14.02'],ps5:['14.00','14.10','14.20']};
+const expected={ps4:[],ps5:['14.00','14.10','14.20']};
 function make(platform,options={}){
  const actions=options.actions||hostActions(platform),sessionStore=new Map(),app=fixture({platform,actions,catalogGrid:true,firmwareChoicesOnly:true,initialCategory:'loaders',firmwareButtons:[...dashboard.availableBrowserFirmwares(actions),...registry.versions[platform]],sessionStore,...options,dashboardApi:{install(doc,win){const node=doc.querySelector('#host-actions-data'),catalog=JSON.parse(node.textContent);catalog.placeholderFirmwares=registry.versions[platform];node.textContent=JSON.stringify(catalog);dashboard.install(doc,win);}}});
  return {...app,sessionStore};
@@ -45,7 +45,7 @@ test('every existing native authorization route refuses placeholder versions bef
   }
   assert.equal(JSON.stringify(actions),before);
  }
- assert.ok(cases>=12);
+ assert.equal(cases,hostActions('ps5').filter(a=>a.nativeRoute).length*expected.ps5.length);assert.ok(cases>0);
 });
 test('markup adapter adds only platform placeholders once and preserves all action arrays and runtime documents',()=>{
  for(const platform of ['ps4','ps5']){

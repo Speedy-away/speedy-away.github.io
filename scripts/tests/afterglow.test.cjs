@@ -54,7 +54,7 @@ test('runtime isolation, dependency closure, honest firmware pins and ad separat
  const run=read(build.base+'/web/jb.html');assert.doesNotMatch(run,/src=|site-ads|i18n|analytics|invoke\.js/);assert.match(run,/import\('\.\/jb.js'\)/);
  for(const f of build.files.filter(f=>f.path.startsWith('web/')&&/\.js$/.test(f.path))){const text=read(build.base+'/'+f.path);for(const m of text.matchAll(/(?:from\s+|import\s*\(\s*)["']\.\/([^"']+)["']/g))assert.ok(fs.existsSync(path.join(root,build.base,'web',m[1])),m[1]);}
  for(const page of ['firmware','afterglow']){const raw=read('hosts/ps4/'+page+'/index.html'),html=require('../host-ads.cjs').apply('hosts/ps4/'+page+'/index.html',raw,{base:'/WWB-HOST'});assert.match(html,/BEGIN WWB HOST AD/);assert.match(html,/Advertisement/);assert.doesNotMatch(html,/<(?:video|iframe)\b/);}
- const groups=require('../host-compact-pages.cjs').groups(root),route=groups.find(r=>r.id==='ps4-afterglow');assert.deepEqual(route.firmwares,['13.52','14.00']);assert.equal(groups.filter(r=>r.platform==='ps4'&&r.firmwares.includes('14.00')).length,1);assert.equal(route.firmwares.includes('13.51'),false);
+ const groups=require('../host-compact-pages.cjs').groups(root),route=groups.find(r=>r.id==='ps4-afterglow');assert.deepEqual(route.firmwares,['13.52','14.00']);assert.equal(groups.find(r=>r.id==='ps4-afterglow-1402').firmwares.includes('14.00'),false);assert.equal(route.firmwares.includes('13.51'),false);
  const action=require('../build-host-selector.cjs').hostActions('ps4').find(a=>a.id==='local-ps4-afterglow');assert.deepEqual(action.firmwares,['13.52','14.00']);assert.equal(action.run,undefined);assert.equal(require('../build-host-selector.cjs').hostActions('ps5').some(a=>a.id==='local-ps4-afterglow'),false);
 });
 test('runtime ZIPs use their own folder; sender ZIP default stays unchanged',()=>{
@@ -66,8 +66,8 @@ test('runtime ZIPs use their own folder; sender ZIP default stays unchanged',()=
  }
 });
 test('firmware families preserve exact supported sets behind local full-page buttons',()=>{
- const html=read('hosts/ps4/firmware/index.html'),groups=require('../host-compact-pages.cjs').groups(root).filter(r=>r.platform==='ps4');
- assert.equal((html.match(/class="host-firmware-family"/g)||[]).length,groups.length);
+ const api=require('../host-compact-pages.cjs'),html=api.directory(root,'ps4'),groups=api.groups(root).filter(r=>r.platform==='ps4'&&(r.entry==='/hosts/ps4/exploit/multi-firmware/'||r.id==='ps4-afterglow-1402'));
+ assert.equal((html.match(/class="host-firmware-family"/g)||[]).length,groups.length+1);assert.match(html,/data-firmwares="14.00" href="\/ps4\/14.00\/"/);
  assert.match(html,/class="host-taskbar"/);assert.doesNotMatch(html,/id="sidebar"|<header class="guide-hero">|<select\b/);
  for(const r of groups){assert.ok(html.includes('href="'+r.entry+'"'),r.id);assert.ok(html.includes('data-firmwares="'+r.firmwares.join(',')+'"'));}
  assert.match(read('assets/host-firmware-families.js'),/navigator.userAgent/);

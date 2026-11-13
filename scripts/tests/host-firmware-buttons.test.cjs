@@ -55,9 +55,10 @@ test('PC firmware buttons update a single pressed state, preserve the choice and
 });
 
 test('an unlisted detected firmware gets one selectable button without inventing payload compatibility',()=>{
- const app=fixture({userAgent:'Mozilla/5.0 (PlayStation 4/15.00)',firmwareButtons:['9.00','14.00']});
+ const app=fixture({userAgent:'Mozilla/5.0 (PlayStation 4/15.00)',firmwareButtons:['14.00','9.00']});
  assert.equal(app.ids['host-firmware'].value,'15.00');
  assert.deepEqual(pressed(app),['15.00']);
+ assert.deepEqual(app.ids['host-firmware-buttons'].querySelectorAll('[data-host-firmware]').map(button=>button.getAttribute('data-host-firmware')),['15.00','14.00','9.00']);
  assert.equal(app.ids['host-firmware-buttons'].querySelectorAll('[data-host-firmware="15.00"]').length,1);
  assert.equal(app.ids['host-action-grid'].querySelectorAll('[data-launch]').length,0,'A newly detected firmware does not make a pinned 9.00 payload compatible');
  app.ids['host-detect'].click();
@@ -96,7 +97,7 @@ test('PS4 retains historical firmware choices without advertising the 14.00 laun
  const create=()=>fixture({platform:'ps4',actions,storage,initialCategory:'loaders',catalogGrid:true,
   firmwareChoicesOnly:true,firmwareButtons:['5.05','9.00','13.52','14.00']});
  const app=create(),grid=app.ids['host-action-grid'];
- assert.ok(grid.querySelector('.wwb-primary-loader').getAttribute('href').endsWith('/ps4/14.00/'));
+ assert.ok(grid.querySelector('.wwb-primary-loader').getAttribute('href').endsWith('/ps4/14.02/'));
  const older=app.ids['host-firmware-buttons'].querySelector('[data-host-firmware="13.52"]');
  assert.equal(older.hidden,false);
  assert.equal(older.disabled,false);

@@ -24,7 +24,8 @@ test('the public PS4 loader points to one exact firmware and the offline manifes
   const launchers = published.filter(action => action.category === 'loaders');
   const original = source.find(action => action.id === launchers[0].id);
   const pinned = JSON.parse(config);
-  assert.equal(launchers.length, 1);
+  assert.equal(launchers.length, 2);
+  assert.deepEqual(launchers.find(a=>a.id==='local-ps4-afterglow-1402').firmwares,['14.02']);
   assert.equal(launchers[0].entryURL, '/ps4/14.00/');
   assert.deepEqual(launchers[0].firmwares, ['14.00']);
   assert.equal(pinned.nativeRoute.runtime, original.nativeRoute.runtime);

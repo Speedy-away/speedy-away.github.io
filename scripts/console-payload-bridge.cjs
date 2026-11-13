@@ -12,7 +12,7 @@ const crypto = require('node:crypto');
 const {normalizeAddress} = require('../assets/host-console-client.js');
 const ROOT = path.resolve(__dirname, '..');
 const MAX_FILE = 64 * 1024 * 1024;
-const CATALOGUES = ['docs/host-actions-ps4.json', 'docs/host-actions-ps5.json', 'docs/host-game-actions.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-native-payload-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json'];
+const CATALOGUES = ['docs/host-actions-ps4.json', 'docs/host-webkitty-loader-actions.json', 'docs/host-actions-ps5.json', 'docs/host-game-actions.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-native-payload-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json'];
 const MIME = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.ico':'image/x-icon','.woff2':'font/woff2','.elf':'application/octet-stream','.bin':'application/octet-stream'};
 function fail(code, message) { const e = new Error(message); e.code = code; return e; }
 function uncertainFailure(error) {
@@ -167,7 +167,7 @@ async function sendGoldHENHTTP(address, data, {fetcher = globalThis.fetch, timeo
   } finally { clearTimeout(timer); }
   if (!status || status.status !== 'ready') throw fail('loader-busy', 'The GoldHEN HTTP loader is busy or not ready.');
   const response = await send('/','POST',data);
-  if (response.status !== 200) throw uncertainFailure(fail('loader-unacknowledged', 'The loader did not acknowledge the payload.'));
+  if (response.status !== 200 && response.status !== 202) throw uncertainFailure(fail('loader-unacknowledged', 'The loader did not acknowledge the payload.'));
   return {status:'accepted',code:'goldhen-accepted',message:'GoldHEN accepted the payload bytes. Check the game or console for the result.',bytes:data.length,port:9090};
 }
 // Fixed read-only routes, never a URL proxy, write API or TCP/ELF probe.
@@ -326,7 +326,7 @@ function staticPath(requestURL) {
   let value = decoded;
   if (value === '/') value = '/hosts/';
   if (value.endsWith('/') && value.startsWith('/hosts/')) value += 'index.html';
-  const allowed = /^\/hosts\/(?:ps[45]\/(?:(?:payload-manager|files|gta5|rdr2|other-games|cheats|lua|packages)\/)?)?index\.html$/.test(value) ||
+  const allowed = /^\/hosts\/(?:ps[45]\/(?:(?:payload-manager|loaders|files|gta5|rdr2|other-games|cheats|lua|packages)\/)?)?index\.html$/.test(value) ||
     /^\/hosts\/tools\/(?:ps4-trainer|esp-flasher)\/(?:[a-z0-9_ .()+@/-]+\.(?:html|json|js|txt|md|svg))$/i.test(value) ||
     /^\/assets\/(?:images\/.+\.(?:png|jpe?g|svg|webp)|[a-z0-9._-]+\.(?:css|js))$/i.test(value) ||
     /^\/languages\/(?:i18n|[a-z-]+)\.js$/i.test(value) ||
@@ -350,6 +350,11 @@ function createBridge({root = ROOT, actions = loadActions(root), token = crypto.
     if (req.url.startsWith('/api/')) {
       if (!equalToken(token,req.headers['x-whatsite-token'])) return json(res,401,{status:'error',code:'pairing-required',message:'Enter the current sender pairing token.'});
       if (req.method === 'GET' && req.url === '/api/status') return json(res,200,{status:'connected',code:'sender-ready',version:'1.0.0',protocolVersion:2,capabilities:{serviceOverview:true,uncertainOutcomes:true,userSelectedBIN:true},message:'Local sender connected. This check did not send a payload.',actions:actions.map(a => availability(a,root))});
+      if (req.method === 'GET' && req.url === '/api/loader-status') return json(res,200,{status:'connected',ps4LoaderUpload:true,message:'PS4 loader sender connected.'});
+      if (req.method === 'POST' && req.url === '/api/loader-file') {
+        try { return json(res,200,await require('./ps4-loader-upload.cjs').receive(req,{busy,resolveAddress,sendELF,sendBIN,sendTCPBIN,timeoutMs:userFileTimeoutMs})); }
+        catch(e){res.shouldKeepAlive=false;req.resume();return json(res,e.mayHaveExecuted?200:400,{status:e.mayHaveExecuted?'uncertain':'error',code:e.code||'loader-failed',message:e.message,...(e.mayHaveExecuted?{mayHaveExecuted:true}: {})});}
+      }
       if (req.method === 'POST' && req.url === '/api/run-file') {
         let key,acquired=false;
         try {

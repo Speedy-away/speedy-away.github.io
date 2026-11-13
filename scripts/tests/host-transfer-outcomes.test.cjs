@@ -20,7 +20,7 @@ test('raw ELF failures distinguish connection refusal from bytes already offered
 });
 
 test('GoldHEN bridge never retries an ambiguous POST and keeps preflight failures non-executing',async()=>{
-  for(const postResponse of [()=>{throw Error('lost response');},()=>new Promise(()=>{}),()=>response('',500),()=>response('',202)]){
+  for(const postResponse of [()=>{throw Error('lost response');},()=>new Promise(()=>{}),()=>response('',500),()=>response('',201)]){
     const seen=[];
     await assert.rejects(()=>bridge.sendGoldHENHTTP(address,bin,{timeoutMs:5,fetcher:async(url,init)=>{seen.push(init.method);return init.method==='GET'?response({status:'ready'}):postResponse();}}),error=>error.mayHaveExecuted===true&&error.outcome==='unknown');
     assert.deepEqual(seen,['GET','POST']);

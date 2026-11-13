@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="landing" lang="en" manifest="cache.appcache">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PS4 14.02 · WebKit Exploit | WWB HOST</title>
+<meta name="description" content="Built-in WebKit browser loader for PS4 firmware 14.02. Choose GoldHEN or ps4-hen and start on your console.">
+<link rel="stylesheet" href="afterglow-1402.css">
+</head>
+<body>
+<nav class="topbar" aria-label="Host navigation"><button id="settings-open" class="settings-icon" type="button" aria-label="Settings" aria-controls="settings-panel" aria-expanded="false"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="m9 3-.6 2.3-2 .9-2.1-.7-2 3.5 1.6 1.7v2.6L2.3 15l2 3.5 2.1-.7 2 .9L9 21h4l.6-2.3 2-.9 2.1.7 2-3.5-1.6-1.7v-2.6L19.7 9l-2-3.5-2.1.7-2-.9L13 3Z"/><circle cx="11" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button><a href="/hosts/ps4/" class="back">← Back</a><a href="/" class="brand" aria-label="WWB HOST"><img src="logo.png" width="30" height="30" alt="WWB HOST"></a><div class="platform-switch"><a href="/hosts/ps4/" aria-current="page">PS4</a><a href="/hosts/ps5/">PS5</a></div><a id="advanced-payloads" href="loaders.html">BIN / ELF loaders</a><a href="/hosts/credits/">Credits</a><a href="#offline-cache">Offline cache</a><a href="/hosts/ps4/downloads/">Download centre</a></nav>
+<aside id="settings-panel" class="settings-panel" aria-labelledby="settings-title" hidden>
+<div class="settings-heading"><h2 id="settings-title">Options</h2><button id="settings-close" type="button" aria-label="Close settings">×</button></div>
+<label><input id="setting-advanced" type="checkbox" checked><span>Show advanced payloads<small>Show BIN / ELF loader tools.</small></span></label>
+<label><input id="setting-auto" type="checkbox"><span>Auto Jailbreak<small>Start after a 5-second countdown.</small></span></label>
+<label><input id="setting-retry" type="checkbox" checked><span>Auto-Retry Jailbreak<small>One retry after a confirmed WebKit failure, before the kernel stage. Never retry a stall or crash.</small></span></label>
+<label><input id="setting-reload" type="checkbox"><span>Reload after a successful jailbreak<small>Return here after completion, only when the runtime confirms it is safe to close.</small></span></label>
+<label><input id="setting-barebone" type="checkbox"><span>Barebone Jailbreak Experience<small>Show a minimal run screen with detailed logs hidden.</small></span></label>
+<p>Opening Options pauses the countdown. Press Start when ready.</p>
+</aside><main>
+<header class="intro"><div><p class="eyebrow">PLAYSTATION 4 · 14.02</p><h1>WebKit Exploit</h1></div><img src="pepe-banner.png" width="116" height="116" alt="" aria-hidden="true"></header>
+<div class="console-layout">
+<section class="picker" aria-labelledby="picker-title"><div class="panel-heading"><h2 id="picker-title">Payload</h2><span>PS4 · 14.02</span></div>
+<form id="pick">
+<fieldset><legend>Choose your HEN</legend>
+<label class="opt"><input type="radio" name="payload" value="goldhen" checked><span><strong>GoldHEN</strong></span><span class="choice-mark">GH</span></label>
+<label class="opt"><input type="radio" name="payload" value="hen"><span><strong>ps4-hen</strong></span><span class="choice-mark">HN</span></label>
+</fieldset>
+<label class="auto"><input id="auto" type="checkbox"><span>Autostart <small>5-second countdown</small></span></label>
+<div class="actions"><button id="start" class="start" type="submit">Start <span aria-hidden="true">→</span></button><button id="cancel" type="button">Cancel</button></div>
+<p id="count" class="count" aria-live="polite"></p>
+</form></section>
+<section class="terminal" aria-labelledby="status-title"><div class="panel-heading"><h2 id="status-title">Console</h2><span class="status-dot" aria-hidden="true"></span></div>
+<div class="terminal-content"><p><span class="prompt">&gt;</span> PS4 / 14.02</p><p class="terminal-muted">Target firmware <b>14.02</b></p><div class="terminal-divider"></div><p id="browser-firmware" role="status">Checking browser…</p><p id="cache" role="status"></p><p class="terminal-help">Press Start on your PS4.</p><span class="cursor" aria-hidden="true">_</span></div>
+</section>
+</div>
+<section id="offline-cache" class="cache-controls" aria-label="Offline cache"><div><label class="cache-toggle"><input id="cache-enabled" type="checkbox"><strong>Automatic offline cache</strong></label><p id="cache-status" role="status">Automatic caching off · use Cache now to save</p><progress id="cache-progress" hidden max="100" value="0" aria-label="Cache download progress"></progress></div><div class="cache-actions"><button id="cache-now" type="button">Cache now</button><button id="cache-update" type="button">Update cache</button><button id="cache-delete" type="button">Delete cache</button><button id="cache-stop" type="button" disabled>Stop</button></div></section><p class="cache-help">Includes the 14.02 exploit, HENs and BIN / ELF loader tools. Switching off keeps your saved copy.</p>
+<div id="cache-delete-help" class="cache-help" role="status" hidden>On PS4, press OPTIONS in the browser, open Settings, then choose Clear Website Data. This clears saved website data for the browser, including other hosts. <a href="https://manuals.playstation.net/document/en/ps4/browser/web_settings.html">PS4 browser settings guide</a></div>
+@@NATIVE_BANNER@@
+<footer><span>Afterglow by well0nez / m0zz</span><nav aria-label="Documentation"><a href="README.md">Readme</a><a href="TECHNICAL.md">Technical notes</a><a href="LICENSE">License</a></nav></footer>
+</main><script src="cache.js"></script><script src="launch.js"></script><script src="settings.js"></script>
+</body></html>

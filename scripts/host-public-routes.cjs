@@ -11,9 +11,10 @@ function routes() {
     const canonical = 'hosts/' + platform + '/';
     const short = platform + '/';
     const platformViews = platform === 'ps4' ? views.concat('goldhen') : views;
-    const platformSections = platform === 'ps4' ? sections.concat('cheats') : sections;
+    const platformSections = platform === 'ps4' ? sections.concat('cheats','loaders') : sections;
     return [
       {source: canonical + 'index.html', target: short + 'index.html'},
+      ...(platform==='ps4'?[{source:canonical+'afterglow-1402/index.html',target:'ps4/14.02/index.html'}]:[]),
       ...platformViews.map(view => ({source: canonical + 'index.html', target: short + view + '/index.html', view})),
       ...platformSections.map(section => ({
         source: canonical + section + '/index.html', target: short + section + '/index.html'

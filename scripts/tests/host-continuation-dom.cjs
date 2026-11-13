@@ -29,6 +29,7 @@ function fixture({platform='ps4',firmwareChoicesOnly=false,storage=new Map(),ses
       classList:{add(){},remove(){}},
       addEventListener(type,listener){(listeners[type]||=[]).push(listener);},
       appendChild(child){if(child.parentNode)child.parentNode.removeChild(child);child.parentNode=this;this.children.push(child);return child;},
+      insertBefore(child,next){if(child.parentNode)child.parentNode.removeChild(child);child.parentNode=this;this.children.splice(this.children.indexOf(next),0,child);return child;},
       removeChild(child){this.children.splice(this.children.indexOf(child),1);child.parentNode=null;return child;},
       setAttribute(name,value=''){attributes[name]=String(value);if(name==='class')this.className=String(value);if(name==='disabled')this.disabled=true;},
       getAttribute(name){return Object.prototype.hasOwnProperty.call(attributes,name)?attributes[name]:null;},

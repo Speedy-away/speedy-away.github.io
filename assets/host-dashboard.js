@@ -213,7 +213,7 @@
     var catalog; try { catalog = JSON.parse(source.textContent); if(catalog.actionsKey){var shared=win.WWB_HOST_ACTION_DATA;if(!shared||shared.key!==catalog.actionsKey||!Array.isArray(shared.actions)){var unavailable=doc.querySelector('#host-status');if(unavailable){unavailable.textContent='The file catalogue could not load. Reload this page.';unavailable.hidden=false;unavailable.setAttribute('data-host-catalog-error','true');}return;}catalog.actions=shared.actions;}win.WWB_HOST_CATALOG=catalog; } catch (_) { return; }
     var actions = catalog.actions || [], platform = catalog.platform;
     var availableFirmwares=availableBrowserFirmwares(actions),restrictFirmware=platform==='ps5'&&Boolean(catalog.firmwareChoicesOnly);
-    var exactPS4Loader = platform === 'ps4' && actions.filter(function (action) { return action.entryURL === '/ps4/14.00/'; })[0];
+    var exactPS4Loader = platform === 'ps4' && (actions.filter(function (action) { return action.entryURL === '/ps4/14.02/'; })[0] || actions.filter(function (action) { return action.entryURL === '/ps4/14.00/'; })[0]);
     var placeholderFirmwares=(Array.isArray(catalog.placeholderFirmwares)?catalog.placeholderFirmwares:[]).filter(function(version){return typeof version==='string'&&/^\d{1,2}\.\d{2}$/.test(version)&&availableFirmwares.indexOf(version)===-1;});
     var selectableFirmwares=availableFirmwares.concat(placeholderFirmwares);
     function isPlaceholder(){return placeholderFirmwares.indexOf(firmware.value)!==-1;}
@@ -299,7 +299,12 @@
         button.setAttribute('data-host-firmware', version);
         button.setAttribute('translate', 'no');
         button.textContent = version;
-        firmwareButtons.appendChild(button);
+        var existing = firmwareButtons.querySelectorAll('[data-host-firmware]');
+        var next = Array.prototype.find.call(existing, function (choice) {
+          return Number(choice.getAttribute('data-host-firmware')) < Number(version);
+        });
+        if (next) firmwareButtons.insertBefore(button, next);
+        else firmwareButtons.appendChild(button);
       });
       each(firmwareButtons.querySelectorAll('[data-host-firmware]'), function (button) {
         var version = button.getAttribute('data-host-firmware');
@@ -482,14 +487,17 @@
         writeCount(renderedGroups.length);
         function catalogRow(group) {
           var first = group.actions[0], path, label;
-          if (first.entryURL === '/ps4/14.00/') {
+          if (first.entryURL === '/ps4/14.02/') {
+            path = first.entryURL;
+            label = 'Open PS4 14.02 WebKit Exploit';
+          } else if (first.entryURL === '/ps4/14.00/') {
             path = first.entryURL;
             label = 'Open PS4 14.00 loader';
           } else if (platform === 'ps5' && first.entryURL === '/ps5/relapse/') {
             path = firmware.value === '7.61' ? '/ps5/7.61/' : first.entryURL;
             label = 'Open PS5 ' + firmware.value + ' loader';
           }
-          if (path) return '<a class="wwb-primary-loader" href="'+escape(navigationURL(path))+'"><strong>'+escape(label)+'</strong><span>WebKit · Check readiness and view the live log</span></a>';
+          if (path) return '<a class="wwb-primary-loader" href="'+escape(navigationURL(path))+'"><span class="wwb-loader-copy"><strong>'+escape(path==='/ps4/14.02/'?'14.02 jailbreak is here':label)+'</strong><span>'+escape(path==='/ps4/14.02/'?'PS4 14.02 · GoldHEN / ps4-hen':'WebKit · Console loader')+'</span></span><span class="wwb-loader-cta">Open WebKit Exploit <span aria-hidden="true">→</span></span></a>';
           if (group.firmwarePicker) return catalogTile({id:group.id,label:'GoldHEN',image:catalogUI.representativeImage(group.actions),detail:'Choose firmware · '+group.actions.length+' versions',attribute:'data-choose-group'});
           if (first.localLauncher && !first.nativeRoute) return '<a class="host-firmware-family" href="'+escape(navigationURL(first.launchURL))+'"><strong>'+escape(first.firmwareLabel||group.label)+'</strong><span>Choose HEN / Load</span></a>';
           if (category === 'loaders' && first.browserHost) return catalogTile({id:first.id,label:'Load',image:'',textOnly:true,detail:group.label+(detection.platform!==platform?' · Open on '+platform.toUpperCase():''),attribute:'data-launch',disabled:browserHandoff||detection.platform!==platform||!firmware.value||!firmwareMatches(first,firmware.value)||Boolean(detection.firmware&&detection.firmware!==firmware.value)});

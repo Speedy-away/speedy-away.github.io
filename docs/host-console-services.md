@@ -8,7 +8,7 @@ Run `node scripts/console-payload-bridge.cjs` on a computer on the same network 
 
 Open `http://127.0.0.1:8766/hosts/ps4/` or `/hosts/ps5/` on that computer. Enter the fresh pairing token printed by the sender. Then enter the console's **LAN** IPv4 address, select its exact firmware and game update, and explicitly choose Run. In this desktop helper, `127.0.0.1` refers to the computer, so it is refused as a console destination. Stop the helper with Ctrl+C when finished. Tokens are valid only for the current process and are never included in a page URL or API response.
 
-The sender serves the host dashboard and a narrow selection of its public assets, language scripts and curated ELF/BIN downloads. It refuses foreign origins, unrecognized Host headers and unpaired API requests. It accepts only an action ID from `docs/host-actions-ps4.json`, `docs/host-actions-ps5.json` or `docs/host-game-actions.json`. It cannot fetch arbitrary remote URLs, accept uploaded executables, select arbitrary file paths or ports, or execute operating-system commands. Local SHA-256 and ELF magic are checked before sending. Hostnames must resolve exclusively to private IPv4 addresses, and the checked numeric address is used for the connection.
+The sender serves the host dashboard and a narrow selection of its public assets, language scripts and curated ELF/BIN downloads. It refuses foreign origins, unrecognized Host headers and unpaired API requests. It accepts only an action ID from `docs/host-actions-ps4.json`, `docs/host-actions-ps5.json` or `docs/host-game-actions.json`. The curated endpoints cannot fetch arbitrary remote URLs, select arbitrary file paths or ports, or execute operating-system commands. The explicit PS4 loader-file endpoint below additionally accepts user-selected BIN/ELF bytes. Local SHA-256 and ELF magic are checked before sending. Hostnames must resolve exclusively to private IPv4 addresses, and the checked numeric address is used for the connection.
 
 The helper does not create console folders, extract archives, install a PKG or claim to verify a game's runtime result. Those operations require the appropriate running native application. RAR/ZIP entries are never reclassified as raw payloads. Existing direct ELF/BIN mirrors are used as-is; their original versions remain pinned.
 
@@ -26,7 +26,7 @@ Service checks report connectivity, readiness, the manager's application version
 
 | Console service | Supported operation | Result the website can establish |
 | --- | --- | --- |
-| PS4 GoldHEN HTTP BinLoader, port 9090 | Read `/status`, require JSON `status: ready`, then POST raw BIN bytes to `/` | HTTP 200 acknowledges acceptance. Injection and game compatibility still need console confirmation. |
+| PS4 GoldHEN HTTP BinLoader, port 9090 | Read `/status`, require JSON `status: ready`, then POST raw BIN bytes to `/` | HTTP 200 or 202 acknowledges acceptance. Injection and game compatibility still need console confirmation. |
 | Pinned PS4 9.00 PSFree/Lapse BIN loader, TCP 9020 | Send one checksum-verified, explicitly curated PS4 BIN (at most 3 MiB) and close the sending side; never probe or retry | Bytes were written to the socket. There is no execution acknowledgement. Wait for the console's own listener message first. |
 | PS4/PS5 network ELF loader, TCP 9021 | Send raw ELF bytes and close the sending side | Bytes were written to the socket. There is no payload-operation acknowledgement in this transport. |
 | PS5 elfldr v0.27, HTTP on port 9021 | GET `/?uri=<encoded-console-reachable-ELF-URL>`; the loader fetches the payload itself | Its HTTP 200 is sent before downloading or spawning. Only URL-request acceptance is established. |
@@ -87,3 +87,13 @@ Options support injectable `fetch`, `origin`, `crypto` and `timeoutMs` for mock 
 ## Validation
 
 Run `node --test scripts/tests/host-console-client.test.cjs scripts/tests/console-payload-bridge.test.cjs`. Tests use mock transports, inert test bytes and a temporary localhost HTTP fixture. They do not contact a console, launch exploits or execute downloaded payloads.
+
+## PS4 BIN / ELF loader controls
+
+`/hosts/ps4/loaders/` adds the WebKitty-compatible BIN HTTP 9090 and ELF HTTP 9021 routes, plus paired raw ELF TCP 9021 and the existing PSFree 9.00 BIN TCP 9020 route. The four original KARO BIN launchers remain separate. KARO raw BIN 9021 is not ELF 9021. Ports do not establish payload compatibility.
+
+The compact sender in `docs/ps4-loader-support.json` contains the same paired bridge and the loader page, rather than the full payload library. `/api/loader-status` requires pairing. `/api/loader-file` requires the current pairing token, exact same origin, an uncompressed bounded binary body and fixed-profile metadata in `X-Whatsite-Loader`. Both browser and sender validate size, SHA-256, BIN/ELF shape, firmware selection and explicit payload-compatibility acknowledgement. The server resolves only private LAN destinations, serializes transfers per console, saves no uploaded files, and accepts no custom URL or port. Raw BIN is limited to 3 MiB and PS4 9.00; HTTP and ELF uploads to 32 MiB.
+
+ELF HTTP follows the [pinned WebKitty sender](https://github.com/ArabPixel/WebKitty/blob/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/js/deliverPayload.js): POST raw bytes to `:9021/<filename>?pipe=0`, content type text/plain, accept HTTP 200/202. The [pinned catalogue](https://github.com/ArabPixel/WebKitty/blob/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/js/payloadsList.js) limits the standalone exploit BIN listener to older firmware; this is not added as a 14.02 standalone exploit. The included ELF-loader BIN and ELF remain byte-identical to that snapshot.
+
+Selecting the ELF-loader BIN only fetches and hashes it. Sending is a separate gesture; no bootstrap fallback, automatic retry, scanning or payload execution occurs on page load. Uncertain responses remain uncertain. HTTP 202 means accepted, not proof of native execution. Only the HEN chooser keeps its native advertising banner; third-party scripts are excluded from the file-upload/control page.
