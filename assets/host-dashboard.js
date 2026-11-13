@@ -562,7 +562,7 @@
       if (librarySearch) librarySearch.hidden = category === 'loaders';
       var nextKey=[category,firmware.value,query,selectedGame,includeLegacy,catalogGame,catalogUpdate].join('|');if(nextKey!==renderKey){renderLimit=pageSize;renderKey=nextKey;}
       var firmwareNote = doc.querySelector('#host-firmware-note');
-      if (firmwareNote) firmwareNote.hidden = firmware.value !== '14.00';
+      if (firmwareNote) firmwareNote.hidden = firmware.value !== '14.02';
       if (grid) {
       var stamp=JSON.stringify([category,firmware.value,query,selectedGame,includeLegacy,catalogGame,catalogUpdate,renderLimit,detection.platform,detection.firmware,browserHandoff]),reuseCatalogue=catalogGrid&&stamp===catalogueStamp;
       if(!reuseCatalogue){

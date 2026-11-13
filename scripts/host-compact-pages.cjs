@@ -19,7 +19,8 @@ function publicPS4Actions(rows,root){
   ]};
  });
  const update=updatedAction(root,'ps4',rows);
- return [{
+ const latest=root?groups(root).filter(g=>g.id==='ps4-afterglow-1402').map(g=>actionForGroup(g,'ps4',rows)):rows.filter(a=>a.id==='local-ps4-afterglow-1402');
+ return [...latest,{
   ...current,
   label:'PS4 WebKit Exploit - 14.00',
   firmwareLabel:'14.00',
@@ -27,21 +28,23 @@ function publicPS4Actions(rows,root){
   entryURL:PS4_ENTRY,
   nativeRoute:{...current.nativeRoute,entry:{...current.nativeRoute.entry,firmwares:['14.00']}},
   requirements:['Open on PS4 firmware 14.00. The launcher checks the browser cache and shows a live log.']
- },...(root?groups(root).filter(g=>g.id==='ps4-afterglow-1402').map(g=>actionForGroup(g,'ps4',rows)):rows.filter(a=>a.id==='local-ps4-afterglow-1402')),...(update?[update]:[]),...downloads];
+ },...(update?[update]:[]),...downloads];
 }
 
 function ps4FirmwareTile(){
- return '<a class="host-firmware-family" data-firmwares="14.00" href="'+PS4_ENTRY+'"><strong>14.00</strong><span>Open WebKit loader</span></a>';
+ return '<a class="host-firmware-family" data-firmwares="14.02" href="/ps4/14.02/"><strong>14.02</strong><span>Open WebKit Exploit</span></a>';
 }
+function olderPS4(){return '<p class="host-older-firmware">Older firmware: <a href="'+PS4_ENTRY+'">14.00 WebKit loader</a></p>';}
 
 function projectPS4(html,name,root){
  if(!/^hosts\/ps4\//.test(name))return html;
  if(name==='hosts/ps4/firmware/index.html'){
   const update=root&&groups(root).find(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/');
-  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+ps4FirmwareTile()+groups(root).filter(g=>g.id==='ps4-afterglow-1402').map(firmwareTile).join('')+(update?firmwareTile(update):'')+close);
+  if(!html.includes('class="host-older-firmware"'))html=html.replace('</main>',olderPS4()+'</main>');
+  html=html.replace(/(<div class="host-firmware-families">)[\s\S]*?(<\/div>)/,(_,open,close)=>open+ps4FirmwareTile()+(update?firmwareTile(update):'')+close);
  }
  html=html.replace(/<details class="host-other-directory">[\s\S]*?<\/details>/g,'');
- html=html.replace(/<a href="\/hosts\/ps4\/afterglow\/">13\.52 \/ 14\.00 · Afterglow<\/a>/g,'<a href="'+PS4_ENTRY+'">PS4 WebKit 14.00</a>');
+ html=html.replace(/<a href="\/hosts\/ps4\/afterglow\/">13\.52 \/ 14\.00 · Afterglow<\/a>/g,'<a href="/ps4/14.02/">14.02 · WebKit Exploit</a>');
  return html.replace(/(<script\b[^>]*\bid=["']host-actions-data["'][^>]*>)([\s\S]*?)(<\/script>)/i,(_,open,json,close)=>{
   const catalogue=JSON.parse(json);
   if(catalogue.platform!=='ps4'||!Array.isArray(catalogue.actions))return open+json+close;
@@ -136,8 +139,8 @@ function firmwareTile(g){
 }
 function directory(root,platform){
  const rows=groups(root).filter(g=>g.platform===platform),name=platform.toUpperCase();
- const tiles=platform==='ps4'?ps4FirmwareTile()+rows.filter(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/'||g.id==='ps4-afterglow-1402').map(firmwareTile).join(''):rows.map(firmwareTile).join('');
- return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+' WebKit Exploits | WWB HOST</title><link rel="stylesheet" href="/assets/host-compact.css"><script defer src="/assets/host-firmware-families.js?v=1"></script></head><body class="host-compact"><nav class="host-taskbar"><a href="/hosts/'+platform+'/">← '+name+' host</a><a href="/hosts/">Choose console</a><a href="/hosts/'+platform+'/?view=payloads">Payloads</a></nav><main class="host-compact-main"><header><h1>'+name+' WebKit Exploits</h1><p id="host-family-detected" role="status">Choose your firmware.</p></header><div class="host-firmware-families">'+tiles+'</div></main></body></html>';
+ const tiles=platform==='ps4'?ps4FirmwareTile()+rows.filter(g=>g.entry==='/hosts/ps4/exploit/multi-firmware/').map(firmwareTile).join(''):rows.map(firmwareTile).join('');
+ return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+' WebKit Exploits | WWB HOST</title><link rel="stylesheet" href="/assets/host-compact.css"><script defer src="/assets/host-firmware-families.js?v=1"></script></head><body class="host-compact"><nav class="host-taskbar"><a href="/hosts/'+platform+'/">← '+name+' host</a><a href="/hosts/">Choose console</a><a href="/hosts/'+platform+'/?view=payloads">Payloads</a></nav><main class="host-compact-main"><header><h1>'+name+' WebKit Exploits</h1><p id="host-family-detected" role="status">Choose your firmware.</p></header><div class="host-firmware-families">'+tiles+'</div>'+(platform==='ps4'?olderPS4():'')+'</main></body></html>';
 }
 function build(root){
  const localFile=path.join(root,'docs/host-local-launchers.json');

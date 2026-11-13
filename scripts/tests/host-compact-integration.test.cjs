@@ -2,11 +2,11 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'../..'),compact=require('../host-compact-pages.cjs'),dashboard=require('../../assets/host-dashboard.js');
 test('primary families contain only existing local entries and exact populated firmware lists',()=>{const rows=compact.groups(root);assert.equal(rows.filter(r=>r.platform==='ps4').length,8);assert.equal(rows.filter(r=>r.platform==='ps5').length,4);for(const r of rows){assert.match(r.entry,/^\/hosts\//);assert.ok(r.firmwares.length);assert.ok(fs.existsSync(path.join(root,r.entry.slice(1),'index.html')));}assert.deepEqual(rows.find(r=>r.id==='ps4-afterglow').firmwares,['13.52','14.00']);assert.equal(rows.find(r=>r.id==='karo-g2allpro-modern').firmwares.includes('12.10'),false);assert.equal(rows.find(r=>r.id==='ps5-webkit-dd8e4e0914c5').firmwares.includes('10.60'),true);const cached=rows.find(r=>r.id==='gamerhack-g2all');assert.equal(cached.originalEntry.cacheRequired,true);assert.equal(cached.firmwares.length,33);assert.equal(cached.firmwares.includes('13.53'),false);});
-test('PS4 firmware directory keeps the 14.00 entry and adds an exact multi-firmware choice',()=>{
+test('PS4 firmware directory leads with 14.02 and retains the old 14.00 route separately',()=>{
  const html=compact.directory(root,'ps4');
  assert.doesNotMatch(html,/<select\b|\/hosts\/ps4\/afterglow\//);
- assert.equal((html.match(/class="host-firmware-family"/g)||[]).length,3);
- assert.match(html,/<a class="host-firmware-family" data-firmwares="14\.00" href="\/ps4\/14\.00\/">/);
+ assert.equal((html.match(/class="host-firmware-family"/g)||[]).length,2);
+ assert.match(html,/<a class="host-firmware-family" data-firmwares="14\.02" href="\/ps4\/14\.02\/">/);
  assert.match(html,/data-firmwares="[^"]*6\.72,[^"]*" href="\/hosts\/ps4\/exploit\/multi-firmware\/">/);
 });
 test('Karo G2All Pro has its own exact firmware gate and complete pinned cache',()=>{

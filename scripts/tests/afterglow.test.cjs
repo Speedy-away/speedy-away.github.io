@@ -66,8 +66,8 @@ test('runtime ZIPs use their own folder; sender ZIP default stays unchanged',()=
  }
 });
 test('firmware families preserve exact supported sets behind local full-page buttons',()=>{
- const api=require('../host-compact-pages.cjs'),html=api.directory(root,'ps4'),groups=api.groups(root).filter(r=>r.platform==='ps4'&&(r.entry==='/hosts/ps4/exploit/multi-firmware/'||r.id==='ps4-afterglow-1402'));
- assert.equal((html.match(/class="host-firmware-family"/g)||[]).length,groups.length+1);assert.match(html,/data-firmwares="14.00" href="\/ps4\/14.00\/"/);
+ const api=require('../host-compact-pages.cjs'),html=api.directory(root,'ps4'),groups=api.groups(root).filter(r=>r.platform==='ps4'&&(r.entry==='/hosts/ps4/exploit/multi-firmware/'));
+ assert.equal((html.match(/class="host-firmware-family"/g)||[]).length,groups.length+1);assert.match(html,/data-firmwares="14.02" href="\/ps4\/14.02\/"/);
  assert.match(html,/class="host-taskbar"/);assert.doesNotMatch(html,/id="sidebar"|<header class="guide-hero">|<select\b/);
  for(const r of groups){assert.ok(html.includes('href="'+r.entry+'"'),r.id);assert.ok(html.includes('data-firmwares="'+r.firmwares.join(',')+'"'));}
  assert.match(read('assets/host-firmware-families.js'),/navigator.userAgent/);
