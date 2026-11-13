@@ -2868,5 +2868,46 @@
     "visual": "Browser inspected homepage, PS4 firmware selection, PS5 firmware and file manager, PS4 downloads at desktop and 390px. Verified theme persistence and no horizontal overflow.",
     "preservation": "Original native runtime and downloadable bytes unchanged. Existing concurrent PS4 work remains in shared checkout; release is isolated.",
     "releaseCheckout": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/host-monochrome/release"
+  },
+  "consoleFilesWorkspace20261113": {
+    "date": "2026-11-13",
+    "status": "Implemented and verified locally; publication pending.",
+    "page": "https://speedy-away.github.io/ps4/downloads/",
+    "features": [
+      "Desktop and phone local-file uploads through a paired LAN helper.",
+      "FTP IP/port/login, browse/download/create folders/move/rename; preserve existing destination files.",
+      "ZIP/RAR/7z/TAR/GZ/TGZ/BZ2/XZ inspection and selected-member extraction using installed 7-Zip.",
+      "GoldHEN PRX/SPRX folder preparation and uploads; plugins.ini import/export/read/edit/save with SHA conflict check and backups.",
+      "Editable game/plugin presets; disabled by default; preserve existing sections and compatibility pins."
+    ],
+    "verification": {
+      "date": "2026-11-13",
+      "status": "Local verification passed",
+      "tests": 32,
+      "failed": 0,
+      "productionChecks": 5,
+      "ftp": "Actual basic-ftp 6.2.6 against isolated passive FTP test server: upload/list/read/config backup/rename.",
+      "archives": "Actual ZIP and RAR extraction through 7-Zip; RAR also verified in browser.",
+      "browser": "Desktop and 320px/390px phone layouts, pairing, archive selection/extraction, preset editing and public workspace tabs.",
+      "consoleHardwareTested": false,
+      "payloadsExecuted": false,
+      "helper": {
+        "url": "/downloads/helpers/console-files/console-files-1.0.0-e66704e5cdc5.zip",
+        "bytes": 79419,
+        "sha256": "e66704e5cdc533f3e3cc3f9b442f563b03f89c5f6a6600ba574679a25ef645db"
+      },
+      "requirements": [
+        "Node.js 22+",
+        "7-Zip for archives",
+        "A running console FTP server"
+      ],
+      "limits": {
+        "fileBytes": 268435456,
+        "archiveMemberBytes": 67108864,
+        "archiveEntries": 5000
+      },
+      "source": "https://github.com/libarchive/libarchive/blob/master/libarchive/test/test_read_format_rar.rar.uu"
+    },
+    "remaining": "Physical console and real-device iOS/Android verification; no console address was supplied."
   }
 }

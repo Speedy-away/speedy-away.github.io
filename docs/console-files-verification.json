@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-13",
+  "status": "Local verification passed",
+  "tests": 32,
+  "failed": 0,
+  "productionChecks": 5,
+  "ftp": "Actual basic-ftp 6.2.6 against isolated passive FTP test server: upload/list/read/config backup/rename.",
+  "archives": "Actual ZIP and RAR extraction through 7-Zip; RAR also verified in browser.",
+  "browser": "Desktop and 320px/390px phone layouts, pairing, archive selection/extraction, preset editing and public workspace tabs.",
+  "consoleHardwareTested": false,
+  "payloadsExecuted": false,
+  "helper": {
+    "url": "/downloads/helpers/console-files/console-files-1.0.0-e66704e5cdc5.zip",
+    "bytes": 79419,
+    "sha256": "e66704e5cdc533f3e3cc3f9b442f563b03f89c5f6a6600ba574679a25ef645db"
+  },
+  "requirements": [
+    "Node.js 22+",
+    "7-Zip for archives",
+    "A running console FTP server"
+  ],
+  "limits": {
+    "fileBytes": 268435456,
+    "archiveMemberBytes": 67108864,
+    "archiveEntries": 5000
+  },
+  "source": "https://github.com/libarchive/libarchive/blob/master/libarchive/test/test_read_format_rar.rar.uu"
+}

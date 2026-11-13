@@ -1,0 +1,237 @@
+{
+  "version": "1.0.0",
+  "url": "/downloads/helpers/console-files/console-files-1.0.0-e66704e5cdc5.zip",
+  "bytes": 79419,
+  "sha256": "e66704e5cdc533f3e3cc3f9b442f563b03f89c5f6a6600ba574679a25ef645db",
+  "requirements": [
+    "Node.js 22+",
+    "7-Zip for archives",
+    "A running console FTP server"
+  ],
+  "sources": [
+    "https://github.com/patrickjuchli/basic-ftp",
+    "https://github.com/GoldHEN/GoldHEN_Plugins_Repository"
+  ],
+  "files": [
+    {
+      "name": "scripts/console-files-helper.cjs",
+      "bytes": 10849,
+      "sha256": "37f73f51be848f036f4632950fc1e1a240ff795606c690480a88d6f58b6b9acc"
+    },
+    {
+      "name": "scripts/console-files-core.cjs",
+      "bytes": 6492,
+      "sha256": "ca651403ebdfc1225e26149feb267eedb7d107d13cfc5393e98613fb870481b3"
+    },
+    {
+      "name": "assets/console-files.html",
+      "bytes": 579,
+      "sha256": "d241f06bdce19d08e2eadf7685740fc8accc38a76d03971411a9eb40bc4266d2"
+    },
+    {
+      "name": "assets/console-files-ui.js",
+      "bytes": 20922,
+      "sha256": "66f7e4896d7dc1c359cde0b4c13ac76a9e13debd0408ed197716451385604f1b"
+    },
+    {
+      "name": "assets/console-files.css",
+      "bytes": 8818,
+      "sha256": "5ec2fbc911467cde523174aedb6e78551e067ead1e3d67f1c3d95596bbff47c9"
+    },
+    {
+      "name": "assets/console-plugins.js",
+      "bytes": 1857,
+      "sha256": "5eb5bca7fdd9abe83ed002f56fc196b9aa28f14eff400247ad5fbdd5eb46d411"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/Client.d.ts",
+      "bytes": 15173,
+      "sha256": "760bc653d923b25fbba68f7acfea159a6bc99891f4638623d64dafa89b232da4"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/Client.js",
+      "bytes": 34729,
+      "sha256": "69d89310e73b25f18fb92d5afbbb570c4457b1b0081d626d37b66e3e8abc110d"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/FileInfo.d.ts",
+      "bytes": 2488,
+      "sha256": "3c26687cf2f1e3a59b0861928bedd2c16d2c873bb941d3e341e8e21229c1858b"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/FileInfo.js",
+      "bytes": 3176,
+      "sha256": "b8e05da56246c3d33f1ad4ebba1e17ef69c5895413bc2e49c5309472c42b6992"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/FtpContext.d.ts",
+      "bytes": 6484,
+      "sha256": "f8c465d58076f2674a78886d9139a5b0b47b5674bc38f446aad0b587e9e03788"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/FtpContext.js",
+      "bytes": 16945,
+      "sha256": "a23cba71fdf65321cb545873fbaf21d72c8001485975161fcdcef4d7fc0554da"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/index.d.ts",
+      "bytes": 242,
+      "sha256": "5ca8a3d28adc5428faa0c044960ca43bc1d901f6938b6478306799c4a104d58c"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/index.js",
+      "bytes": 1406,
+      "sha256": "57faf343eb71894b9b002449ca5f69d5055bdb3bbe1af5e8ba763d34a2798e30"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/netUtils.d.ts",
+      "bytes": 988,
+      "sha256": "1ca471a970c9d2541a7d9b3c94886aa6da6938e508b5adc1568e19e55e415029"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/netUtils.js",
+      "bytes": 2626,
+      "sha256": "fd6068abebfb63d15e110117ab1edacdccbf15e77fd900161e305585d4b6caf5"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseControlResponse.d.ts",
+      "bytes": 1010,
+      "sha256": "be4905600a86722c7669f74cb8132a48cd4b6b141c6712b7917f96f35e66bea6"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseControlResponse.js",
+      "bytes": 2360,
+      "sha256": "6431afebaa69a48e89404466fc1b81057a206c41dcdc6edae6e602074ba1fd4c"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseList.d.ts",
+      "bytes": 143,
+      "sha256": "dd72f71cc955c30f1daf9fcdcf2877cf6888992efeb190ae4ec3d14180490284"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseList.js",
+      "bytes": 3058,
+      "sha256": "36a4a3d0c17498c8716b90400c2242efa84848cfc9bb8549777a95589df04766"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseListDOS.d.ts",
+      "bytes": 436,
+      "sha256": "7d23af79945579a755e0021006ca0cb399cf900f0f54b646198c24bc1ea333ac"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseListDOS.js",
+      "bytes": 2161,
+      "sha256": "a902206c12ab1f8bf7360e5c143d02772e11747a4545a18d177507c5ac5a2cdf"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseListMLSD.d.ts",
+      "bytes": 1048,
+      "sha256": "5cd7ef34d5fa80d0c30f13f8dbb1db98d2240a8d7a21feddf788a9b4e078bc9f"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseListMLSD.js",
+      "bytes": 8188,
+      "sha256": "a04b9c0a2275ef9a40153b0266b06e8ecd98c4f84d5810fe4cd754e998270805"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseListUnix.d.ts",
+      "bytes": 453,
+      "sha256": "868876bf233690153d045ee04ca8355fd45325b6816a624c3d49f7e62ae69aa3"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/parseListUnix.js",
+      "bytes": 6101,
+      "sha256": "6596240aaaf766b5c9aa6b14f05cbefb734d8bc4b7dc5e3ac4688f9cabf32e33"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/ProgressTracker.d.ts",
+      "bytes": 1601,
+      "sha256": "4f04d28728f52184d5b450184435ce41032c0794583501c0c5ea9d54095abe1a"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/ProgressTracker.js",
+      "bytes": 2078,
+      "sha256": "c24792e9957fb9b5c6b985e5dcde22e4d25b314c2276e85ad195740676bba97c"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/safePathNames.d.ts",
+      "bytes": 268,
+      "sha256": "24a82876155b80a4942085b7a2d84112c0afc34fbae595e9bddc0414caa369d7"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/safePathNames.js",
+      "bytes": 2140,
+      "sha256": "2adda3e5f5ec8994e45a3aae95f34342b2ab24057ac26d1b740885190d1f7f0a"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/StringEncoding.d.ts",
+      "bytes": 141,
+      "sha256": "cc42e1146c9e467ccc15c73648d9f4cf8b119b8ba206faca192f9829d95fe18b"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/StringEncoding.js",
+      "bytes": 77,
+      "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/StringWriter.d.ts",
+      "bytes": 443,
+      "sha256": "6e8c58a69d1a0d37b7ebd186c49860ea8fc9215d476faa25ca7d5e060016b9b0"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/StringWriter.js",
+      "bytes": 997,
+      "sha256": "acb077b15a2f5da70ec42c03c6ffef165c947074acdad2b613baefa9051c2807"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/transfer.d.ts",
+      "bytes": 1701,
+      "sha256": "97d9f0ab84a8011faf2182205c252d0ad0e8701adabe51a48196bc8e52e80ee4"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/transfer.js",
+      "bytes": 18248,
+      "sha256": "4959c836c5ca88857ba55f356152d7ac41f4c891d73749f3cbd1a0b55a3d2841"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/TransferWatchdog.d.ts",
+      "bytes": 1421,
+      "sha256": "b13651304538dcff7b6f5d4cb9665e9496af101e75c8c1df82c8f6180be02c88"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/dist/TransferWatchdog.js",
+      "bytes": 4818,
+      "sha256": "39cbd3e2d5c99332feccbe253860607736c5c527592d54890767eb4c58e9acdf"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/LICENSE.txt",
+      "bytes": 1057,
+      "sha256": "5b417c1f5ee996875e86b4959851c94e102edbbb3c68199bd3336c7351c924f9"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/package.json",
+      "bytes": 1363,
+      "sha256": "9fad4430ff32160f61c9145e4db6e7a4489477eaa5f54f4aa76528e60ef006f1"
+    },
+    {
+      "name": "scripts/vendor/basic-ftp/README.md",
+      "bytes": 13047,
+      "sha256": "49fa14432a720264e64b6195d16983810f9d1f5b49ac64e09910969acbf82c35"
+    },
+    {
+      "name": "Start on this computer.cmd",
+      "bytes": 72,
+      "sha256": "e716c7d1b67a3044df9a2bff0cd9e809255a2cb93ebc76a89e7a777143877ae4"
+    },
+    {
+      "name": "Start for phones.cmd",
+      "bytes": 78,
+      "sha256": "25535ad2ade5cdc75c0ba20724f6bb57b6f357eb23e5e9474a21a4a6b7d98d5a"
+    },
+    {
+      "name": "README.txt",
+      "bytes": 3039,
+      "sha256": "802e1650e4361bcf71aa34f30fda2dc18aca95b8d851b9da125de53f2a748552"
+    }
+  ]
+}
