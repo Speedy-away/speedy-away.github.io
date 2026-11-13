@@ -108,3 +108,8 @@ html body[data-wwb-console-ui][data-wwb-console-ui] .host-workspace-panels butto
 html body[data-wwb-console-ui][data-wwb-console-ui] .host-workspace-panels #ps5-wfm-open{background:var(--mono-selected)!important;color:var(--mono-on-selected)!important;border-color:var(--mono-selected)!important}
 html body[data-wwb-console-ui] .host-workspace-heading img{display:none!important}
 html body[data-wwb-console-ui][data-wwb-console-ui] :is(.host-fw-label,.host-firmware-control label,#host-detected,.host-firmware-status,.host-firmware-note,.host-folder-library>p){color:var(--mono-muted)!important}
+/* The language loader wraps the brand; flatten that wrapper in modern browsers. */
+html body[data-wwb-console-ui] .topbar .i18n-lead{order:0;margin-inline-start:0;margin-inline-end:auto}
+html body[data-wwb-console-ui] .topbar .i18n-lead .brand{order:-1}
+@supports(display:contents){html body[data-wwb-console-ui] .topbar .i18n-lead{display:contents!important}html body[data-wwb-console-ui] .topbar .i18n-switcher{order:2;margin-inline-start:24px}}
+@media(max-width:640px){html body[data-wwb-console-ui] .topbar .i18n-switcher{margin-inline-start:0}html body.wwb-host-home[data-wwb-console-ui][data-wwb-console-ui] .console-copy .open{font-size:0;gap:0}html body.wwb-host-home[data-wwb-console-ui][data-wwb-console-ui] .console-copy h2{font-size:16px}}
