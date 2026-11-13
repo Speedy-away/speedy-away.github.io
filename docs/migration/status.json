@@ -2871,7 +2871,7 @@
   },
   "consoleFilesWorkspace20261113": {
     "date": "2026-11-13",
-    "status": "Implemented and verified locally; publication pending.",
+    "status": "Published, deployed successfully and verified live.",
     "page": "https://speedy-away.github.io/ps4/downloads/",
     "features": [
       "Desktop and phone local-file uploads through a paired LAN helper.",
@@ -2882,7 +2882,7 @@
     ],
     "verification": {
       "date": "2026-11-13",
-      "status": "Local verification passed",
+      "status": "Published and live-verified",
       "tests": 32,
       "failed": 0,
       "productionChecks": 5,
@@ -2892,9 +2892,9 @@
       "consoleHardwareTested": false,
       "payloadsExecuted": false,
       "helper": {
-        "url": "/downloads/helpers/console-files/console-files-1.0.0-e66704e5cdc5.zip",
-        "bytes": 79419,
-        "sha256": "e66704e5cdc533f3e3cc3f9b442f563b03f89c5f6a6600ba574679a25ef645db"
+        "url": "/downloads/helpers/console-files/console-files-1.0.0-f317af11f8ae.zip",
+        "bytes": 79452,
+        "sha256": "f317af11f8ae7f7576e752eabe773c402038763f72b6dfb375a5d98360388dcc"
       },
       "requirements": [
         "Node.js 22+",
@@ -2906,8 +2906,30 @@
         "archiveMemberBytes": 67108864,
         "archiveEntries": 5000
       },
-      "source": "https://github.com/libarchive/libarchive/blob/master/libarchive/test/test_read_format_rar.rar.uu"
+      "source": "https://github.com/libarchive/libarchive/blob/master/libarchive/test/test_read_format_rar.rar.uu",
+      "live": {
+        "date": "2026-11-13T21:43:44.438Z",
+        "revision": "61194abe2bb2318cdbb34b8e9ed56cbb128a1242",
+        "page": "https://speedy-away.github.io/ps4/downloads/",
+        "helperURL": "https://raw.githubusercontent.com/Speedy-away/speedy-away.github.io/61194abe2bb2318cdbb34b8e9ed56cbb128a1242/downloads/helpers/console-files/console-files-1.0.0-f317af11f8ae.zip",
+        "helperBytes": 79452,
+        "sha256": "f317af11f8ae7f7576e752eabe773c402038763f72b6dfb375a5d98360388dcc",
+        "liveVerified": true,
+        "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43510915988",
+        "hardwareTested": false
+      }
     },
-    "remaining": "Physical console and real-device iOS/Android verification; no console address was supplied."
+    "remaining": "Physical console and real-device iOS/Android verification; no console address was supplied.",
+    "live": {
+      "date": "2026-11-13T21:43:44.438Z",
+      "revision": "61194abe2bb2318cdbb34b8e9ed56cbb128a1242",
+      "page": "https://speedy-away.github.io/ps4/downloads/",
+      "helperURL": "https://raw.githubusercontent.com/Speedy-away/speedy-away.github.io/61194abe2bb2318cdbb34b8e9ed56cbb128a1242/downloads/helpers/console-files/console-files-1.0.0-f317af11f8ae.zip",
+      "helperBytes": 79452,
+      "sha256": "f317af11f8ae7f7576e752eabe773c402038763f72b6dfb375a5d98360388dcc",
+      "liveVerified": true,
+      "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43510915988",
+      "hardwareTested": false
+    }
   }
 }
