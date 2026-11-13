@@ -2740,34 +2740,55 @@
   },
   "ps5WebFileManagerSide20261113": {
     "date": "2026-11-13",
-    "status": "Local PS5 Web File Manager replacement requested in side conversation; not committed, pushed or deployed.",
+    "status": "Pushed to main, GitHub Pages deployment succeeded, and live page/download identities verified.",
     "version": "v1.14",
-    "repository": "https://github.com/owendswang/ps5-web-file-manager",
-    "page": "/hosts/ps5/files/",
+    "source": "https://github.com/owendswang/ps5-web-file-manager",
+    "page": "https://speedy-away.github.io/hosts/ps5/files/",
     "manifest": "docs/ps5-web-file-manager.json",
-    "features": [
-      "New default PS5 native file manager on port 8888, adjustable to notification port.",
-      "Pinned official ELF download, paired raw ELF sender action, and optional extraction helper install instructions.",
-      "Preserved websrv binaries, ezRemote helper and autoload workspace under previous tools.",
-      "Both release binaries archived on F: with upstream SHA-256 and size verification."
+    "changes": [
+      "Default manager replaced with native v1.14, configurable notification port, official pinned ELF and optional extraction-helper downloads.",
+      "Native elfldr HTTP URI launch and paired sender compatibility; previous websrv/ezRemote/autoload workspace retained.",
+      "Independent-host catalogue rebuild preserves migrated download entries without private legacy manifests."
     ],
     "verification": {
-      "focusedTests": 58,
-      "passed": 58,
-      "build": "Generated successfully; 905651869 bytes.",
-      "metadata": "passed",
-      "offline": "passed",
-      "gamePatches": "passed",
-      "locales": "passed",
-      "projectCheck": "Blocked by existing PS4 firmware picker assertion expecting href=/ps4/14.02/; current separate picker uses data-entry. Outside this change.",
-      "visual": "Browser preview unavailable: no browser providers connected.",
+      "tests": 71,
+      "passed": 71,
+      "productionChecks": 5,
+      "archiveAssets": 2,
+      "archiveSHA256Verified": true,
+      "payloadsExecuted": false,
       "hardwareVerified": false,
-      "archiveIndex": {
-        "presentFileRecords": 9517,
-        "missingFileRecords": 0
-      },
-      "catalogue": "Manager-specific audited entry verified; complete legacy catalogue rebuild unavailable because retained GTA5 manifest is absent from the independent host checkout."
-    }
+      "visual": "No connected browser provider available for interactive visual verification."
+    },
+    "releaseScope": "Isolated checkout contains only the requested PS5 replacement and catalogue fix. Concurrent unpublished PS4/layout work remains in the shared checkout.",
+    "commit": "b04995b8f7e0572452227d68ebb4e5c276077174",
+    "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43505603783",
+    "live": {
+      "checkedAt": "2026-11-13T20:55:22.916Z",
+      "url": "https://speedy-away.github.io/hosts/ps5/files/",
+      "page": true,
+      "clientAssets": true,
+      "payloadFeed": true,
+      "assets": [
+        {
+          "name": "web-file-mgr-v1.14.elf",
+          "url": "https://speedy-away.github.io/downloads/host-payloads/ps5-web-file-manager/v1.14/web-file-mgr-v1.14.elf",
+          "bytes": 854728,
+          "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231"
+        },
+        {
+          "name": "wfm-7zip-helper.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/wfm-7zip-helper.elf",
+          "bytes": 1165088,
+          "sha256": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825"
+        }
+      ],
+      "payloadsExecuted": false,
+      "hardwareVerified": false
+    },
+    "remaining": "Physical PS5 file operations, ELF execution and console-browser rendering require hardware verification. No native payload was executed during testing.",
+    "checkout": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps5-file-manager/release",
+    "sharedCheckout": "Concurrent edits remain in the original checkout. Its main branch was not reset; integrate remote main before publishing further edits."
   },
   "ps5WebFileManager20261113": {
     "date": "2026-11-13",
