@@ -62,6 +62,7 @@ function hostActions(platform) {
     const build=JSON.parse(fs.readFileSync(path.join(root,'docs/afterglow-build.json'),'utf8'));
     rows.unshift({id:'built-in-ps4-afterglow',runtimeId:'ps4-afterglow',platform:'ps4',label:'Afterglow · ps4-hen / GoldHEN',category:'loaders',format:'Built-in browser loader',firmwares:['13.52','14.00'],launchURL:build.entry,image:image('ps4'),source:'https://github.com/well0nez/afterglow-web/tree/'+build.commit,instructionsURL:'/hosts/ps4/afterglow/',requirements:['PS4 browser required','13.52 / 14.00 only','Autostart is opt-in']});
   }
+  rows.splice(0,rows.length,...require('./host-main-site-mods.cjs').apply(rows,platform));
   return require('./host-compact-pages.cjs').actions(root,platform,require('./ps5-browser-hosts.cjs').prepare(require('./ps4-browser-hosts.cjs').prepare([...new Map(rows.map(action => [action.id, action])).values()],platform),platform).map(require('./host-first-party-navigation.cjs').bind).filter(Boolean));
 }
 
@@ -147,6 +148,7 @@ function buildHostSelector({hostOnly=false}={}) {
       let hostHtml = fs.readFileSync(hostFile, 'utf8').replace('console-guide host-selector', 'console-guide host-selector host-dashboard-page');
       hostHtml = hostHtml.replace('</head>', '<link rel="stylesheet" href="/assets/host-dashboard.css?v=16"><link rel="stylesheet" href="/assets/host-webhost.css?v=2"><link rel="stylesheet" href="/assets/host-firmware-buttons.css?v=3"><link rel="stylesheet" href="/assets/host-catalog-grid.css?v=2">\n</head>').replace('</body>', '<script defer src="/assets/host-console-client.js?v=15"></script><script defer src="/assets/host-catalog-grid.js?v=3"></script><script defer src="/assets/host-karo-builds.js?v=site-load-1"></script><script defer src="/assets/host-site-load.js?v=1"></script><script defer src="/assets/host-dashboard.js?v=site-load-1"></script></body>');
       if(relative===`hosts/${platform}/index.html`)hostHtml=require('./host-folder-markup.cjs').shell(hostHtml);
+      else hostHtml=require('./host-workspace-pages.cjs').apply(hostHtml,relative,{root});
       fs.writeFileSync(hostFile, require('./search-page-output.cjs').finish(relative, hostHtml));
     }
   }

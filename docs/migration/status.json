@@ -28,6 +28,76 @@
     "scope": "14.02 is the first firmware tile, homepage CTA and primary PS4 navigation. Generated short links stay on the independent host. Older firmware routes retain original compatibility pins.",
     "remaining": "Physical PS4 14.02 execution, loader availability and PS4 AppCache persistence require console testing. Concurrent uncommitted workspace edits are preserved."
   },
+  "workspaceMatchingLayoutSide20261113": {
+    "date": "2026-11-13",
+    "status": "Manager layout updated locally in the active host repository; not committed or published by this side conversation.",
+    "pages": [
+      "/ps4/files/",
+      "/ps4/payload-manager/",
+      "/ps5/files/",
+      "/ps5/payload-manager/"
+    ],
+    "features": [
+      "Shared host navigation, compact blue banner and tabs, consistent blue controls and responsive panels.",
+      "Console address first; existing firmware choices preserved in an expandable section.",
+      "All existing main-area controls and embedded action data preserved. Native workspace files and downloadable bytes untouched.",
+      "Integrated scripts/host-workspace-pages.cjs into selector generation and Pages publishing."
+    ],
+    "verification": {
+      "regressionTests": 49,
+      "passed": 49,
+      "managerPagesValidated": 4,
+      "metadataPages": 78,
+      "indexableSitemapURLs": 483,
+      "nativeScriptsUnchangedInBuild": 1030,
+      "output": "C:/Users/whatw/Documents/GitHub/whatsite/tmp/workspace-match/pages",
+      "limitations": [
+        "Browser providers unavailable; rendered visual QA not completed.",
+        "Existing verify-host-project-pages.cjs cannot parse: duplicate const home declaration at line 77."
+      ]
+    }
+  },
+  "ps4SeoPickerSide20261113": {
+    "date": "2026-11-13",
+    "status": "Local changes for side-conversation SEO and merged Jailbreak UI; no commit or push requested in this side conversation.",
+    "features": [
+      "Added PS4 14.02 jailbreak, GoldHEN, ps4-hen, offline-cache and BIN/ELF search terms.",
+      "Indexable /hosts/ps4/14.02-guide/ with canonical, Open Graph, Twitter and WebPage/Breadcrumb schema; sitemap now 483 language URLs.",
+      "Corrected localized PS4 metadata that incorrectly called 14.02 an empty choice; PS5 limitations unchanged.",
+      "Merged firmware directory cards into one picker with exact source-pinned versions and separate 14.02/14.00 routes.",
+      "PS4 tab and heading label Jailbreak; 14.02 and 14.00 share centered Load jailbreak cards."
+    ],
+    "verification": {
+      "focusedTests": 37,
+      "passed": 37,
+      "publishingChecks": "All five checks passed on tmp/ps4-seo-side/pages.",
+      "extraTests": "30 of 32 passed; two legacy source-only metadata checks encounter other retained source pages whose metadata is finalized by the build. Generated metadata, sitemap, canonical and language verification pass.",
+      "browser": "No automated browser available in this side conversation; no physical console execution or visual-browser verification performed."
+    },
+    "files": [
+      "scripts/host-page-metadata.cjs",
+      "scripts/host-locales.cjs",
+      "scripts/ps4-firmware-picker.cjs",
+      "assets/ps4-firmware-picker.js",
+      "scripts/host-compact-pages.cjs",
+      "assets/host-compact.css",
+      "assets/host-dashboard.js",
+      "assets/host-dashboard.css",
+      "assets/host-folders.js",
+      "scripts/host-folder-markup.cjs",
+      "hosts/ps4/14.02-guide/index.html",
+      "sitemap.xml"
+    ],
+    "remaining": "Review/publish with the main host release when authorized. Preserve concurrent changes and their staged index.",
+    "publication": {
+      "date": "2026-11-13T20:51:25.896Z",
+      "commit": "db261c79dc5e663c827662a69ded571932e98dfd",
+      "status": "Committed locally; publishing blocked by missing CLI credentials. GitHub Desktop reports no write access for its current account.",
+      "tests": 65,
+      "productionChecks": 5,
+      "liveVerified": false
+    }
+  },
   "ps4RequestedAds20261113": {
     "date": "2026-11-13",
     "status": "Local ad update; not committed or pushed by this side conversation.",
@@ -2668,37 +2738,35 @@
     },
     "report": "docs/migration/url-downloader-20261111.json"
   },
-  "ps4SeoPickerSide20261113": {
+  "ps5WebFileManagerSide20261113": {
     "date": "2026-11-13",
-    "status": "Side-conversation publication authorized; isolated release being verified.",
+    "status": "Local PS5 Web File Manager replacement requested in side conversation; not committed, pushed or deployed.",
+    "version": "v1.14",
+    "repository": "https://github.com/owendswang/ps5-web-file-manager",
+    "page": "/hosts/ps5/files/",
+    "manifest": "docs/ps5-web-file-manager.json",
     "features": [
-      "Added PS4 14.02 jailbreak, GoldHEN, ps4-hen, offline-cache and BIN/ELF search terms.",
-      "Indexable /hosts/ps4/14.02-guide/ with canonical, Open Graph, Twitter and WebPage/Breadcrumb schema; sitemap now 483 language URLs.",
-      "Corrected localized PS4 metadata that incorrectly called 14.02 an empty choice; PS5 limitations unchanged.",
-      "Merged firmware directory cards into one picker with exact source-pinned versions and separate 14.02/14.00 routes.",
-      "PS4 tab and heading label Jailbreak; 14.02 and 14.00 share centered Load jailbreak cards."
+      "New default PS5 native file manager on port 8888, adjustable to notification port.",
+      "Pinned official ELF download, paired raw ELF sender action, and optional extraction helper install instructions.",
+      "Preserved websrv binaries, ezRemote helper and autoload workspace under previous tools.",
+      "Both release binaries archived on F: with upstream SHA-256 and size verification."
     ],
     "verification": {
-      "focusedTests": 37,
-      "passed": 37,
-      "publishingChecks": "All five checks passed on tmp/ps4-seo-side/pages.",
-      "extraTests": "30 of 32 passed; two legacy source-only metadata checks encounter other retained source pages whose metadata is finalized by the build. Generated metadata, sitemap, canonical and language verification pass.",
-      "browser": "No automated browser available in this side conversation; no physical console execution or visual-browser verification performed."
-    },
-    "files": [
-      "scripts/host-page-metadata.cjs",
-      "scripts/host-locales.cjs",
-      "scripts/ps4-firmware-picker.cjs",
-      "assets/ps4-firmware-picker.js",
-      "scripts/host-compact-pages.cjs",
-      "assets/host-compact.css",
-      "assets/host-dashboard.js",
-      "assets/host-dashboard.css",
-      "assets/host-folders.js",
-      "scripts/host-folder-markup.cjs",
-      "hosts/ps4/14.02-guide/index.html",
-      "sitemap.xml"
-    ],
-    "remaining": "Review/publish with the main host release when authorized. Preserve concurrent changes and their staged index."
+      "focusedTests": 58,
+      "passed": 58,
+      "build": "Generated successfully; 905651869 bytes.",
+      "metadata": "passed",
+      "offline": "passed",
+      "gamePatches": "passed",
+      "locales": "passed",
+      "projectCheck": "Blocked by existing PS4 firmware picker assertion expecting href=/ps4/14.02/; current separate picker uses data-entry. Outside this change.",
+      "visual": "Browser preview unavailable: no browser providers connected.",
+      "hardwareVerified": false,
+      "archiveIndex": {
+        "presentFileRecords": 9517,
+        "missingFileRecords": 0
+      },
+      "catalogue": "Manager-specific audited entry verified; complete legacy catalogue rebuild unavailable because retained GTA5 manifest is absent from the independent host checkout."
+    }
   }
 }

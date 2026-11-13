@@ -4,7 +4,7 @@
   else { root.ConsoleServiceOpener = api; api.bind(document); }
 }(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
-  var services = {manager: {port: 8084, path: '/'}, files: {port: 8080, path: '/fs/'}, 'ps4-files': {port:8080,path:'/'}, homebrew: {port: 8080, path: '/index.html'}, patches: {port: 23900, path: '/'}};
+  var services = {manager: {port: 8084, path: '/'}, files: {port: 8888, path: '/'}, 'websrv-files': {port: 8080, path: '/fs/'}, 'ps4-files': {port:8080,path:'/'}, homebrew: {port: 8080, path: '/index.html'}, patches: {port: 23900, path: '/'}};
   function normalizeAddress(value) {
     var input = String(value || '').trim();
     if (!/^\d{1,3}(?:\.\d{1,3}){3}$/.test(input)) throw Error('Enter the console IPv4 address, for example 192.168.1.50.');

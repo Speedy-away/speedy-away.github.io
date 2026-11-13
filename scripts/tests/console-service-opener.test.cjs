@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const {buildServiceUrl,normalizeAddress,consoleAddress} = require('../../assets/console-service-opener.js');
 test('PS5 services retain their documented ports and routes',()=>{
   assert.equal(buildServiceUrl('192.168.1.50','manager'),'http://192.168.1.50:8084/');
-  assert.equal(buildServiceUrl('192.168.1.50','files'),'http://192.168.1.50:8080/fs/');
+  assert.equal(buildServiceUrl('192.168.1.50','files'),'http://192.168.1.50:8888/');
   assert.equal(buildServiceUrl('127.0.0.1','homebrew'),'http://127.0.0.1:8080/index.html');
   assert.equal(buildServiceUrl('192.168.1.50','patches'),'http://192.168.1.50:23900/');
 });

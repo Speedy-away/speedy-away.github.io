@@ -32,7 +32,9 @@
     "downloads/ps4/GTA5/manifest.json",
     "downloads/ps4/BO3/manifest.json",
     "docs/console-batch4-apps.json",
-    "docs/host-goldhen-retained-versions.json"
+    "docs/host-goldhen-retained-versions.json",
+    "docs/host-actions-ps5.json",
+    "docs/ps5-web-file-manager.json"
   ],
   "items": [
     {
@@ -13552,6 +13554,24 @@
       "description": "PS4-on-PS5 etaHEN JSON cheat definition. Enable Dev Menu",
       "source": "https://github.com/etaHEN/PS5_Cheats/blob/ef295511ea4252474b16325618ffaafd3afb3cbb/json/CUSA10249_01.09.json",
       "preparation": "/data/etaHEN/cheats/json/CUSA10249_01.09.json"
+    },
+    {
+      "id": "ps5-web-file-manager",
+      "name": "PS5 Web File Manager",
+      "filename": "web-file-mgr-v1.14.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
+      "bytes": 854728,
+      "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231",
+      "version": "v1.14",
+      "category": "payloads",
+      "compatibility": "Requires an already jailbroken PS5 and a compatible PS5 ELF loader on TCP 9021 (elfldr HTTP URI support, or the paired desktop sender). No universal firmware range is claimed.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps5/files/",
+      "platforms": [
+        "ps5"
+      ],
+      "description": "Native PS5 web file manager with console and USB browsing, transfers, text editing and remote connections.",
+      "source": "https://github.com/owendswang/ps5-web-file-manager"
     }
   ],
   "updatedAt": "2026-11-03T23:28:31.146Z"

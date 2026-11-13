@@ -87,7 +87,7 @@ function collect() {
     }
     if (!backed) return;
     const mirror = publicMirror(file.local, root);
-    const url = mirror && mirror.bytes === file.bytes ? mirror.local
+    const url = options.preferUpstream ? publicDirect(file.sourceUrl) : mirror && mirror.bytes === file.bytes ? mirror.local
       : [file.sourceUrl, file.resolvedUrl, file.source, owner?.url].map(publicDirect).find(Boolean);
     if (!url) return;
     const platforms = options.platforms || [options.platform];
@@ -139,6 +139,8 @@ function collect() {
       });
     }
   }
+  // PS5 Web File Manager native entry; extraction helper is installed as data, never launched.
+  audited("ps5-web-file-manager-v1-14-manager", "web-file-mgr-v1.14.elf", {"preferUpstream":true,"id":"ps5-web-file-manager","name":"PS5 Web File Manager","filename":"web-file-mgr-v1.14.elf","url":"https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf","bytes":854728,"sha256":"8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231","version":"v1.14","category":"payloads","compatibility":"Requires an already jailbroken PS5 and a compatible PS5 ELF loader on TCP 9021; no universal firmware range is claimed.","image":"/assets/images/consoles/playstation.jpg","page":"/hosts/ps5/files/","platforms":["ps5"],"description":"Native PS5 web file manager with console and USB browsing, transfers, text editing and remote connections.","source":"https://github.com/owendswang/ps5-web-file-manager","platform":"ps5"});
   const core = [
     ['ps4', 'f07434d99146', /^GoldHEN_v2\.3\.7z$/, 'GoldHEN 2.3 archive', 'payloads', 'goldhen', 'GoldHEN 2.3 requires its own supported firmware. This archive is not a direct BIN and does not establish PS4 14.00 support.'],
     ['ps4', '86923843b6f3', /\.pkg$/, 'Apollo Save Tool · PS4', 'apps', null, 'PS4 console PKG, archived version 2.4.0. Requires an existing compatible homebrew environment.'],
@@ -332,12 +334,17 @@ function nativeFeeds(items, options = {}) {
 }
 
 function buildCatalog(options = {}) {
-  const items = collect();
+  const hostMode = options.legacySource !== true && fs.existsSync(path.join(root, "docs/migration/status.json"));
+  const retained = hostMode ? require("./host-download-catalog.cjs").collect({root}) : null;
+  const items = retained ? retained.items : collect();
+  assertCatalogueBounds(items);
   const document = {schemaVersion: 1, reviewed: '2026-11-02',
     sources: ['docs/download-audit.json', 'docs/expansion-ps4-ps5.json', 'docs/ps4-ps5-customization.json', 'docs/console-prepared-archive-jobs.json', 'docs/console-ready-file-descriptors.json', 'docs/console-multicod-ready-files.json', 'docs/ps4-extra-game-downloads.json', 'docs/ps4-ps5-game-patches.json', 'docs/console-ready-software.json', 'docs/ps4-store-apps.json', 'docs/virusmike-ps4-next-resources.json', 'docs/ps5-native-extra-cheats.json', 'docs/ps5-native-batch5.json', 'docs/host-modern-plugin-actions.json', 'docs/host-current-cheat-actions.json', 'docs/host-game-actions.json', 'docs/host-legacy-menu-actions.json', 'docs/host-extra-game-actions.json', 'docs/host-web-utility-actions.json', 'docs/host-repository-menu-actions.json', 'docs/host-original-tool-actions.json', 'docs/host-legacy-firmware-menu-actions.json', 'docs/host-next-utility-actions.json', 'docs/host-gta505-continuation-actions.json', 'docs/host-arabicguy-672-actions.json', 'docs/console-archive-safety.json', 'docs/ps4-ps5-launcher-build.json', 'downloads/ps4/GTA5/manifest.json', 'downloads/ps4/BO3/manifest.json'], items};
   document.sources.push('docs/console-batch4-apps.json');
   if(fs.existsSync(path.join(root,'docs/host-goldhen-retained-versions.json')))document.sources.push('docs/host-goldhen-retained-versions.json');
-  const {ps4Feed, ps5Feed} = nativeFeeds(items, {...options, images:read('docs/expansion-ps4-ps5.json').images});
+  if(retained){document.reviewed=retained.reviewed;document.sources=retained.sources;}
+  const {ps4Feed, ps5Feed} = nativeFeeds(items, {...options, ...(hostMode ? {origin:options.origin || 'https://speedy-away.github.io'} : {}), images:read('docs/expansion-ps4-ps5.json').images});
+  for(const platform of ['ps4','ps5'])fs.mkdirSync(path.join(root,'console',platform),{recursive:true});
   fs.writeFileSync(output, JSON.stringify(document, null, 2) + '\n');
   fs.writeFileSync(path.join(root, 'console/ps4/homebrew.json'), JSON.stringify(ps4Feed, null, 2) + '\n');
   fs.writeFileSync(path.join(root, 'console/ps5/payloads.json'), JSON.stringify(ps5Feed, null, 2) + '\n');

@@ -12,7 +12,7 @@ test('console address validation permits only private IPv4 and local hostname sy
 });
 test('service URLs preserve verified ports and direct manager capabilities require exact origin',()=>{
   assert.equal(client.serviceURL('ps5.local','manager'),'http://ps5.local:8084/');
-  assert.equal(client.serviceURL('192.168.1.50','files'),'http://192.168.1.50:8080/fs/');
+  assert.equal(client.serviceURL('192.168.1.50','files'),'http://192.168.1.50:8888/');
   assert.equal(client.serviceURL('192.168.1.50','ps4-files'),'http://192.168.1.50:8080/');
   assert.equal(client.capabilities('192.168.1.50',{origin}).canRunManager,true);
   for (const other of ['https://whatwhatboy.com','http://192.168.1.50:8080','http://192.168.1.50','http://192.168.1.50:8084.evil','null']) assert.equal(client.capabilities('192.168.1.50',{origin:other}).canRunManager,false);

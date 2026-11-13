@@ -134,14 +134,50 @@
       "license": "No license was declared in the reviewed v0.6.3 README; retain the upstream release terms and attribution."
     },
     {
+      "id": "ps5-web-file-manager",
+      "label": "PS5 Web File Manager",
+      "platform": "ps5",
+      "category": "tools",
+      "categories": [
+        "tools",
+        "payloads"
+      ],
+      "firmwares": [],
+      "firmwareScope": "release-specific",
+      "version": "v1.14",
+      "format": "ELF",
+      "bytes": 854728,
+      "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231",
+      "downloadURL": "/downloads/host-payloads/ps5-web-file-manager/v1.14/web-file-mgr-v1.14.elf",
+      "sourceURL": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
+      "source": "https://github.com/owendswang/ps5-web-file-manager/releases/tag/v1.14",
+      "sourceCommit": "734bda6a75c0594bf4221d337862e55973c7d267",
+      "license": "GPL-3.0-or-later",
+      "licenseURL": "https://github.com/owendswang/ps5-web-file-manager/blob/734bda6a75c0594bf4221d337862e55973c7d267/LICENSE",
+      "instructionsURL": "/hosts/ps5/files/",
+      "launchURL": "http://{address}:8888/",
+      "launchLabel": "Open PS5 Web File Manager",
+      "run": {
+        "type": "elf-http",
+        "port": 9021,
+        "protocolSource": "https://github.com/ps5-payload-dev/elfldr/blob/v0.27/socksrv.c"
+      },
+      "requirements": [
+        "Requires an already jailbroken PS5 and a compatible PS5 ELF loader on TCP 9021 (elfldr HTTP URI support, or the paired desktop sender). No universal firmware range is claimed.",
+        "After loading, open the console address on port 8888, or the port shown in its startup notification.",
+        "Optional extraction helper must be installed at /data/wfm/wfm-7zip-helper.elf; it is not a standalone payload.",
+        "Upstream v1.14 reports fullscreen ShellUI crashes on firmware 11.60; see release notes."
+      ]
+    },
+    {
       "id": "ps5-websrv",
-      "label": "File Explorer / websrv",
+      "label": "websrv · legacy file explorer / homebrew",
       "category": "tools",
       "firmwares": [],
       "firmwareScope": "release-specific",
       "version": "v0.34",
       "launchURL": "http://{address}:8080/fs/",
-      "launchLabel": "Open file explorer",
+      "launchLabel": "Open legacy websrv",
       "downloadURL": "/downloads/host-payloads/ps4-ps5-expand-ps5-websrv/54730c867c6e/websrv-ps5.elf",
       "format": "ELF",
       "bytes": 1597864,

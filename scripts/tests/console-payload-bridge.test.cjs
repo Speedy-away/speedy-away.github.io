@@ -89,7 +89,7 @@ test('read-only service inspection uses only fixed GET metadata routes without O
   const ps5=await bridge.inspectConsoleServices('192.168.1.50','ps5',{fetcher});
   assert.equal(ps5.status,'connected');assert.equal(ps5.version,'0.6.3');assert.equal(ps5.reportedAddress,'192.168.1.50');
   assert.equal(ps5.firmware,undefined);assert.equal(ps5.activeGame,undefined);assert.equal(ps5.service,'payload-manager');
-  assert.deepEqual(seen.map(s=>s.url),['http://192.168.1.50:8084/version','http://192.168.1.50:8084/getip','http://192.168.1.50:6701/get_download_state','http://192.168.1.50:8080/fs/','http://192.168.1.50:9090/']);
+  assert.deepEqual(seen.map(s=>s.url),['http://192.168.1.50:8084/version','http://192.168.1.50:8084/getip','http://192.168.1.50:6701/get_download_state','http://192.168.1.50:8888/','http://192.168.1.50:9090/']);
   assert.deepEqual(ps5.checks.map(check=>check.service),['payload-manager','downloader','files','ezremote']);
   assert.equal(ps5.checks[1].queueCount,0);assert.equal(ps5.checks[1].companionVerified,false);
   const ps4=await bridge.inspectConsoleServices('192.168.1.50','ps4',{fetcher});

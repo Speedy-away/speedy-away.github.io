@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "version": "v1.14",
+  "repository": "https://github.com/owendswang/ps5-web-file-manager",
+  "sourceCommit": "734bda6a75c0594bf4221d337862e55973c7d267",
+  "sourceArchive": "https://github.com/owendswang/ps5-web-file-manager/archive/734bda6a75c0594bf4221d337862e55973c7d267.zip",
+  "releaseURL": "https://github.com/owendswang/ps5-web-file-manager/releases/tag/v1.14",
+  "license": "GPL-3.0-or-later",
+  "reviewed": "2026-11-13",
+  "port": 8888,
+  "helperInstallPath": "/data/wfm/wfm-7zip-helper.elf",
+  "hardwareVerified": false,
+  "assets": [
+    {
+      "name": "web-file-mgr-v1.14.elf",
+      "bytes": 854728,
+      "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231",
+      "sourceURL": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
+      "local": "/downloads/host-payloads/ps5-web-file-manager/v1.14/web-file-mgr-v1.14.elf",
+      "role": "manager",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\File Managers\\ps5 web file manager\\Builds\\v1.14\\web-file-mgr-v1.14.elf"
+    },
+    {
+      "name": "wfm-7zip-helper.elf",
+      "bytes": 1165088,
+      "sha256": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825",
+      "sourceURL": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/wfm-7zip-helper.elf",
+      "local": "/downloads/host-payloads/ps5-web-file-manager/v1.14/wfm-7zip-helper.elf",
+      "role": "helper",
+      "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS5\\Tools\\File Managers\\ps5 web file manager\\Helpers\\v1.14\\wfm-7zip-helper.elf"
+    }
+  ]
+}

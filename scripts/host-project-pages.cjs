@@ -195,6 +195,7 @@ function build(output,revision='main',root=ROOT){
   if(/^hosts\/(?!runtime\/).+\.html$/.test(name)&&fs.existsSync(path.join(root,'assets/host-dashboard.js'))&&fs.readFileSync(path.join(root,'assets/host-dashboard.js'),'utf8').includes('WWB_HOST_ACTION_DATA'))text=require('./share-host-catalogues.cjs').share(text,{base:BASE,emit:(p,content)=>{assert.ok(!selected.includes(p),'Generated catalogue collides with source');const dest=path.join(output,p);fs.mkdirSync(path.dirname(dest),{recursive:true});if(fs.existsSync(dest))assert.equal(fs.readFileSync(dest,'utf8'),content);else fs.writeFileSync(dest,content);hosted.add(p);}});
   if(name.endsWith('.html')&&fs.existsSync(path.join(root,'assets/host-console-design.css')))text=require('./host-console-design.cjs').apply(text,name);
   if(name.endsWith('.html'))text=require('./host-page-metadata.cjs').apply(text,name);
+  if(name.endsWith('.html'))text=require('./host-workspace-pages.cjs').apply(text,name,{root});
   if(offline&&name.endsWith('.html'))text=offline.decorate(text,name,offlineGroups);
   return text;
  }
