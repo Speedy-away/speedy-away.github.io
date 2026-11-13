@@ -29,3 +29,5 @@
 @media(prefers-reduced-motion:reduce){#console-files button{transition:none}}
 .cf-feedback{position:sticky;bottom:8px;z-index:5}
 #console-files .cf-connection-toggle{display:none}@media(max-width:760px){#console-files .cf-connection-toggle{display:flex;margin:0!important;text-align:left;justify-content:space-between}.cf-connect.cf-collapsed>:not(.cf-connection-toggle){display:none!important}.cf-connect:not(.cf-collapsed) .cf-connection-toggle{margin-bottom:20px!important}}
+
+.cf-direct-setup{padding:24px;border:1px solid var(--cf-line);border-radius:8px;background:var(--cf-panel);margin-bottom:22px}.cf-optional-computer{border-top:1px solid var(--cf-line);padding-top:16px}.cf-optional-computer>summary{font-weight:600;padding:14px 0!important}.cf-direct-setup li{margin-bottom:12px}.cf-direct-setup details{margin-top:18px}

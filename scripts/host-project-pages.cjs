@@ -143,6 +143,7 @@ function build(output,revision='main',root=ROOT){
  function manifestHTML(html,name){const platform=offline&&offline.platformFor(name,offlineGroups);if(platform)return offline.associate(html,platform);return html.replace(/(<html\b[^>]*?\bmanifest\s*=\s*)(?:"([^"]+)"|'([^']+)'|([^\s>]+))/gi,(whole,start,a,b,c)=>{try{const u=new URL(a||b||c,'https://host.invalid/'+name),original=decodeURIComponent(u.pathname.slice(1)),alias=reviewedCaches.get(original)?.name||manifestAliases.get(original);return alias?start+'"'+BASE+'/'+alias+u.search+u.hash+'"':whole;}catch{return whole;}});}
  const internalRoots=['hosts','assets','languages','downloads','console','docs'];
  function rewrite(text,name){
+  if(/^downloads\/helpers\/console-direct\/[a-f0-9]{12}\/wwb-console-files\.html$/.test(name))return text;
   // Crawler directives and canonical sitemap URLs are already deployment-ready.
   if(name==='robots.txt'||name==='sitemap.xml')return text;
   if(name==='hosts/index.html')return require('./host-legacy-redirect.cjs').renderHomeRedirect(ORIGIN);

@@ -2931,5 +2931,19 @@
       "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43510915988",
       "hardwareTested": false
     }
+  },
+  "consoleDirectPhone20261113": {
+    "date": "2026-11-13",
+    "tests": 20,
+    "failed": 0,
+    "productionChecks": 5,
+    "browser": "Self-contained UI, preset editor and direct setup tested; 390px viewport has no horizontal overflow.",
+    "hardwareVerified": false,
+    "installPath": "/data/wwb-console-files.html",
+    "helper": "/downloads/helpers/console-direct/937498c0f153/wwb-console-files.html",
+    "sha256": "937498c0f15334be9175ed7162caf23027737481340961674e9b308973fdee23",
+    "status": "Prepared and tested; publication pending",
+    "limits": "Verified uploads 8 MiB; file reads/moves 32 MiB; config 64 KiB. Native ezRemote UI handles larger files and archives.",
+    "source": "https://github.com/cy33hc/ps4-ezremote-client/blob/266d9b8fa7af1cd106688999f95960841c3e894d/source/server/http_server.cpp"
   }
 }
