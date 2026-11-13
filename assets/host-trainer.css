@@ -30,6 +30,6 @@ body.host-toolpage.host-trainer-blue .tool-status{background:#172c48;border-colo
 body.host-toolpage.host-trainer-blue .wwb-heading-art img[src$="/tools.svg"]{filter:hue-rotate(65deg)}
 body.host-toolpage.host-trainer-blue :focus-visible{outline-color:#99bdff}
 
-/* Fill trainer artwork frames in the gallery and game-build dialog. */
-body.host-toolpage.host-trainer-blue .trainer-tile-art{overflow:hidden!important}
-body.host-toolpage.host-trainer-blue .trainer-tile-art img{width:100%;height:100%;object-fit:cover!important;object-position:center!important}
+/* Let every cover fill its width at its original proportions, without cropping. */
+body.host-toolpage.host-trainer-blue .trainer-tile-art{height:auto;padding-top:0;overflow:hidden!important}
+body.host-toolpage.host-trainer-blue .trainer-tile-art img{position:static;display:block;width:100%;height:auto;object-fit:contain!important;object-position:center!important}
