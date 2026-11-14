@@ -8,6 +8,8 @@ function build(root,base,write){
   const bytes=fs.readFileSync(path.join(root,file.url));if(bytes.length!==file.bytes||hash(bytes)!==file.sha256)throw Error('Loader dependency changed: '+file.name);
   write(base+'/web/'+file.name,bytes);files[key]={...file,url:file.name};
  }
+ const payloads=JSON.parse(fs.readFileSync(path.join(root,'docs/host-webkitty-payload-actions.json'))).actions;
+ files.payloads=payloads.map(a=>{const b=fs.readFileSync(path.join(root,a.downloadURL));if(hash(b)!==a.sha256||b.length!==a.bytes)throw Error('Payload dependency changed');const url='webkitty-'+path.basename(a.downloadURL);write(base+'/web/'+url,b);return {...a,downloadURL:url};});
  const sender=fs.readFileSync(path.join(root,report.sender.url));if(hash(sender)!==report.sender.sha256)throw Error('Sender package changed');
  write(base+'/web/ps4-loader-sender.zip',sender);
  for(const name of ['host-console-client.js','ps4-loader-client.js','ps4-loaders.js','ps4-loaders.css'])write(base+'/web/'+name,fs.readFileSync(path.join(root,'assets',name)));

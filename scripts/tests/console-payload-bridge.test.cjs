@@ -78,7 +78,7 @@ test('bridge requires pairing and its own origin before any action or readable s
   r = await request('/api/status',null,{Origin:'https://evil.example'}); assert.equal(r.status,403);
   r = await request('/api/status'); assert.equal(r.status,200);
   const status = await r.json(); assert.equal(status.status,'connected'); assert.equal(status.actions[0].available,true);
-  assert.equal(status.protocolVersion,2);assert.deepEqual(status.capabilities,{serviceOverview:true,uncertainOutcomes:true,userSelectedBIN:true});
+  assert.equal(status.protocolVersion,2);assert.deepEqual(status.capabilities,{ps4ELFAutostart:true,serviceOverview:true,uncertainOutcomes:true,userSelectedBIN:true});
   r = await request('/api/run',{actionId:'fixture-ps5',platform:'ps5',address:'192.168.1.50',firmware:'9.00'},{Origin:'null'}); assert.equal(r.status,403);
   assert.equal(sent,0);
 });

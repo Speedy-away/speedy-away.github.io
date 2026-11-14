@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-13T21:01:48.718Z",
+  "status": "Completed in the shared host checkout. This side conversation did not commit, push or publish.",
+  "sourceCommit": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+  "addedPayloadChoices": 35,
+  "tests": {
+    "passed": 115,
+    "failed": 0,
+    "consoleResponses": "mocked"
+  },
+  "audit": {
+    "date": "2026-11-13",
+    "passed": true,
+    "payloadFiles": {
+      "catalogueActions": 225,
+      "files": 91,
+      "passed": 91,
+      "failed": 0,
+      "bytes": 143500224,
+      "runnableActions": 89,
+      "runnableValidatorPassed": 89,
+      "elfDownloads": 31,
+      "elfPassed": 31
+    },
+    "selectedOriginalFiles": {
+      "count": 5,
+      "status": "Metadata and upload contracts verified; original files must be selected by the user, so their bytes were not loaded or re-fetched.",
+      "ids": [
+        "ps4-original-orbis-toolbox-1-0-1190-505",
+        "ps4-original-orbis-toolbox-1-0-1190-672",
+        "ps4-original-orbis-toolbox-1-0-1190-900",
+        "ps4-original-goldhen-2-4b18-900",
+        "ps4-original-hippie68-ftp-1-08b-900"
+      ]
+    },
+    "standaloneBINLaunchers": 4,
+    "nativeBINScriptsUnchanged": 16,
+    "localHTMLDependencies": 4,
+    "ps4RuntimeFiles": 132,
+    "newLoaderFiles": 2,
+    "payloadExecution": false,
+    "consoleContact": false,
+    "hardwareVerified": false
+  },
+  "archive": {
+    "payloadsVerified": 35,
+    "deliveryArchivesVerified": 2
+  },
+  "sender": {
+    "url": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-57ffb73126da.zip",
+    "name": "ps4-loader-sender-57ffb73126da.zip",
+    "bytes": 1867407,
+    "sha256": "57ffb73126da2a398b72cde834708027c5023ac55d6e8ef3b4b875aa3688f005",
+    "sourceURL": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-57ffb73126da.zip",
+    "version": "1.0.0+57ffb73126da"
+  },
+  "offlineFiles": 86,
+  "features": [
+    "Separate 14.02 WebKitty builds; prior firmware pins/downloads preserved.",
+    "Automatic ELF HTTP startup through the verified flat BIN, only after explicit Load/Send.",
+    "One payload send; no automatic resend after uncertain dispatch.",
+    "Updated compact sender, offline cache, library selection and download catalogue."
+  ],
+  "limitations": [
+    "Physical PS4 execution and console cache persistence remain untested.",
+    "Online application installers require Internet access; Linux loaders need upstream boot files."
+  ],
+  "guide": "docs/webkitty-1402-loading.md"
+}

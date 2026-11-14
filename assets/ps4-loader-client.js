@@ -106,5 +106,6 @@
       return sendAutoELF(meta,data,options);
     });
 
+  }
   return {profiles:profiles,validate:validate,sendHTTP:sendHTTP,sendAutoELF:sendAutoELF,sendCatalogue:sendCatalogue,elfBootstrap:elfBootstrap};
 }));

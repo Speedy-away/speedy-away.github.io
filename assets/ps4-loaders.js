@@ -27,7 +27,7 @@
   el('sender-token').addEventListener('input',function(){paired='';});
   el('pair-sender').addEventListener('click',function(){
     if(busy)return;var token=el('sender-token').value.trim();if(!/^[a-f0-9]{64}$/i.test(token)){say('Enter the pairing token printed by the local sender.');return;}
-    pending(true);limitedFetch('/api/loader-status',{headers:{'X-Whatsite-Token':token},cache:'no-store'}).then(function(out){if(out.status!=='connected'||!out.ps4LoaderUpload)throw Error(out.message||'Update the local sender.');paired=token;say('Sender connected. No payload sent.');}).catch(function(e){paired='';say(e.message);}).then(function(){pending(false);});
+    pending(true);limitedFetch('/api/loader-status',{headers:{'X-Whatsite-Token':token},cache:'no-store'}).then(function(out){if(out.status!=='connected'||!out.ps4LoaderUpload||!out.ps4ELFAutostart)throw Error(out.message||'Update the local sender.');paired=token;say('Sender connected. No payload sent.');}).catch(function(e){paired='';say(e.message);}).then(function(){pending(false);});
   });
   el('prepare-elf').addEventListener('click',function(){
     if(busy)return;select.value='goldhen-http';changed();fileInput.required=false;pending(true);say('Preparing the pinned ELF-loader BIN…');

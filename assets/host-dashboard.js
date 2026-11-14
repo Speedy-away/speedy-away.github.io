@@ -396,7 +396,7 @@
         var needsFirmware = requiresFirmware(action) && !firmware.value;
         var isMenu = action.category === 'mods';
         var label = isMenu || action.run || capability.kind === 'browser' ? 'Load' : launch ? (action.launchLabel || 'Open tool') : '';
-        var requiresSender = action.run && (action.run.type === 'elf-tcp' || action.run.type === 'bin-tcp' || needsFile) && !canBridge;
+        var requiresSender = action.run && (action.run.type === 'elf-tcp' && !(platform==='ps4' && firmware.value==='14.02') || action.run.type === 'bin-tcp' || needsFile) && !canBridge;
         var uncertain = action.run && connection.warning(configuredAddress());
         var disabled = isMenu && !capability.available || needsFirmware || requiresSender || capability.kind === 'browser' && (detection.platform !== platform || !firmwareMatches(action,firmware.value)) || loading || action.browserHost && browserHandoff || uncertain;
         var meta = [action.format ? String(action.format).toUpperCase() : '', action.game ? '' : action.version, firmwareLabel(action)].filter(Boolean).join(' · ');
@@ -445,7 +445,7 @@
       var filename=action.displayFilename||(facts?facts.filename:action.downloadURL?decodeURIComponent(action.downloadURL.split('/').pop().split('?')[0]):action.label);
       var title=category==='loaders'?platform.toUpperCase()+' '+(firmware.value||''):filename;
       var canBridge=bridge&&bridge.actions&&bridge.actions.some(function(a){return a.id===action.id&&a.platform===platform&&a.available;});
-      var requiresSender=action.run&&(action.run.type==='elf-tcp'||action.run.type==='bin-tcp'||action.run.input==='user-file')&&!canBridge;
+      var requiresSender=action.run&&(action.run.type==='elf-tcp'&&!(platform==='ps4'&&firmware.value==='14.02')||action.run.type==='bin-tcp'||action.run.input==='user-file')&&!canBridge;
       var disabled=loading||requiresFirmware(action)&&!firmware.value||requiresSender||action.category==='mods'&&!capability.available||capability.kind==='browser'&&detection.platform!==platform||action.run&&connection.warning(configuredAddress());
       var reason=requiresSender?'Connect the paired desktop sender to load this file.':requiresFirmware(action)&&!firmware.value?'Choose your installed firmware first.':capability.kind==='browser'&&detection.platform!==platform?capability.reason:action.category==='mods'&&!capability.available?capability.reason:loading?'Loading…':'Check the console and its running loader before trying again.';
       var pins=(action.firmwares||[]),restriction=pins.length?pins.join(', '):action.firmwareMax?'≤ '+action.firmwareMax:'';
@@ -653,6 +653,7 @@
       var bridgeAction = needsFile ? bridgeFileReady(action,bridge,platform) && client && typeof client.runFileViaBridge === 'function' : bridge && bridge.actions && bridge.actions.some(function (a) { return a.id === action.id && a.platform === platform && a.available; });
       if (needsFile && !bridgeAction) { tell('Update and connect the paired desktop sender before choosing a BIN.',true); return; }
       if (bridgeAction && (!bridge.capabilities || !bridge.capabilities.uncertainOutcomes)) { tell('Update the desktop sender before loading. This version cannot report uncertain transfer results.',true); return; }
+      if (bridgeAction && platform==='ps4' && action.format==='ELF' && firmware.value==='14.02' && (!bridge.capabilities || !bridge.capabilities.ps4ELFAutostart)) { tell('Update the PS4 sender for automatic ELF-loader startup on 14.02.',true); return; }
       var confirmation = action.confirmBeforeLoad;
       if (confirmation && win.__scoobyI18n && win.__scoobyI18n.t) confirmation = win.__scoobyI18n.t(confirmation);
       if (confirmation && (!win.confirm || !win.confirm(confirmation))) { tell('Load cancelled. Nothing was sent.'); return; }

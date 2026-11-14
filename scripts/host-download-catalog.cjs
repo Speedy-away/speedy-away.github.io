@@ -18,6 +18,16 @@ function collect({root=path.resolve(__dirname,'..')}={}){
  if(old&&(old.sha256!==item.sha256||old.version!==item.version))throw Error('Preserve the older manager under its own versioned ID before adding a different release');
  document.items=old?document.items.map(x=>x.id===item.id?item:x):document.items.concat(item);
  document.sources=[...new Set([...(document.sources||[]),'docs/host-actions-ps5.json','docs/ps5-web-file-manager.json'])];
+ const webkitty='docs/host-webkitty-payload-actions.json';
+ if(fs.existsSync(path.join(root,webkitty))){
+  for(const a of read(webkitty).actions){
+   const b=fs.readFileSync(path.join(root,a.downloadURL));if(b.length!==a.bytes||crypto.createHash('sha256').update(b).digest('hex')!==a.sha256)throw Error('WebKitty payload changed');
+   const item={id:a.id,name:a.label,filename:path.basename(a.downloadURL),url:a.downloadURL,bytes:a.bytes,sha256:a.sha256,version:a.version,category:'payloads',compatibility:a.requirements.join(' '),image:'/assets/images/consoles/playstation.jpg',page:'/hosts/ps4/loaders/',platforms:['ps4'],description:a.description,source:a.sourceURL};
+   const old=document.items.find(x=>x.id===a.id);if(old&&(old.sha256!==a.sha256||old.version!==a.version))throw Error('Preserve the old WebKitty version first');
+   if(!old)document.items.push(item);
+  }
+  document.sources=[...new Set([...document.sources,webkitty])];
+ }
  return document;
 }
 module.exports={collect};

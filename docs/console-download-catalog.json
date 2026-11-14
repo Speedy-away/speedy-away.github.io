@@ -34,7 +34,8 @@
     "docs/console-batch4-apps.json",
     "docs/host-goldhen-retained-versions.json",
     "docs/host-actions-ps5.json",
-    "docs/ps5-web-file-manager.json"
+    "docs/ps5-web-file-manager.json",
+    "docs/host-webkitty-payload-actions.json"
   ],
   "items": [
     {
@@ -13572,6 +13573,636 @@
       ],
       "description": "Native PS5 web file manager with console and USB browsing, transfers, text editing and remote connections.",
       "source": "https://github.com/owendswang/ps5-web-file-manager"
+    },
+    {
+      "id": "ps4-webkitty-1402-ftp",
+      "name": "FTP · WebKitty 14.02",
+      "filename": "ps4-ftp.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-ftp.bin",
+      "bytes": 28764,
+      "sha256": "f91f8356ad2a9580a7b4c15a5ce8d29672747d337e7f057f9d0bdad8e00f0ef2",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Enables FTP server access for file transfers.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-ftp.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-disableupdates",
+      "name": "Disable Updates · WebKitty 14.02",
+      "filename": "ps4-disable-updates.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-disable-updates.bin",
+      "bytes": 8764,
+      "sha256": "57bb6baf15c978bc8cb69369e42dec680e26b01ab883cbeb0310d30cb09e3583",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Disables automatic system software updates.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-disable-updates.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-dbrebuilder",
+      "name": "Database Rebuilder · WebKitty 14.02",
+      "filename": "db-rebuilder-v0.2.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/db-rebuilder-v0.2.bin",
+      "bytes": 653884,
+      "sha256": "15568b7fd41078de9d6fc9ed562d2c40e2bc0705b9f24651af96d56b982abdc3",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Rebuilds the PS4's FPKG database, bringing homebrew icons back to the home screen.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/db-rebuilder-v0.2.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-detectsouthbridge",
+      "name": "Detect Southbridge · WebKitty 14.02",
+      "filename": "ps4-southbridge-detector.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-southbridge-detector.bin",
+      "bytes": 9212,
+      "sha256": "23106452fa17df860dada1c2286fd1f5c68050ec2ae107c79439feb196e05eaa",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Detects your PS4's Southbridge. Useful for setting up PS4 Linux.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-southbridge-detector.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-websrv",
+      "name": "PS4 Websrv · WebKitty 14.02",
+      "filename": "ps4-websrv.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-websrv.bin",
+      "bytes": 30508,
+      "sha256": "0c1ec57554b33b71b0d5506041eda2523d33abf238ea43bf425c5e38826db1d7",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Launches a web server on port 80 on the PS4 to load payloads using external devices on the fly.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-websrv.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-npfakesignin",
+      "name": "NP Fake Signin · WebKitty 14.02",
+      "filename": "np-fake-signin-ps4.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/np-fake-signin-ps4.elf",
+      "bytes": 118272,
+      "sha256": "e92632383e2ddde3f23c67308d0f6ee18e3e85a9f97d183de0ac5cc4803c1c3d",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.71 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Sets PSN state to 'signed in' on PS4, use after fake activation. Useful for vue after free",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/np-fake-signin-ps4.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-backupdb",
+      "name": "Backup DB · WebKitty 14.02",
+      "filename": "ps4-backup.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-backup.bin",
+      "bytes": 15580,
+      "sha256": "bc2aca2202236cc8a2190dd4dc58584579136946b8e5397bdd61c9957de6e1cf",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Backs up your PS4's databases, licenses, and user data. Note this may not be useful if you have to reinitalize as your keys may change.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-backup.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-restoredb",
+      "name": "Restore DB · WebKitty 14.02",
+      "filename": "ps4-restore.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-restore.bin",
+      "bytes": 11196,
+      "sha256": "1f380a84a4db70b40d401d27e09ecf765919b363affd558d4f8cd9ad382c9b36",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Restores the data saved in the 'Backup' payload.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-restore.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-exitidu",
+      "name": "Exit IDU · WebKitty 14.02",
+      "filename": "ps4-exit-idu.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-exit-idu.bin",
+      "bytes": 10796,
+      "sha256": "e59044749754c9784c2347f63ce10f2f8b9f27c5e91214536001518b2203b1be",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Exits IDU mode and restarts the console.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-exit-idu.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-historyblocker",
+      "name": "History Blocker · WebKitty 14.02",
+      "filename": "ps4-history-blocker.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-history-blocker.bin",
+      "bytes": 11036,
+      "sha256": "feaa02d813f9a47515e324198f9c014176587a909978385d86e231f4b3609d52",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Blocks the browser from remembering and returning to the last opened page on start. Run again to enable/disable.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-history-blocker.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-app2usb",
+      "name": "App2USB · WebKitty 14.02",
+      "filename": "ps4-app2usb.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-app2usb.bin",
+      "bytes": 25988,
+      "sha256": "f361bd6c30741b9d9cb27be2343c60c4b3b90f0f427c98d533d3a7d5994e7ec1",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Unofficially Moves installed applications to an external USB drive.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-app2usb.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-linux1024mb",
+      "name": "Linux Loader 1GB · WebKitty 14.02",
+      "filename": "linux-1024mb.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Linux/linux-1024mb.elf",
+      "bytes": 509552,
+      "sha256": "dfb11f30e1a10abdeb4f76c95d7cd7e9201b57740f2fce2f388e1b58c5c82571",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05, 6.72 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once. Prepare the kernel, initramfs and Linux storage required by the upstream Linux loader before loading.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Linux Loader for all consoles. 1GB VRAM. Select for first install",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Linux/linux-1024mb.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-linux2048mb",
+      "name": "Linux Loader 2GB · WebKitty 14.02",
+      "filename": "linux-2048mb.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Linux/linux-2048mb.elf",
+      "bytes": 509552,
+      "sha256": "885de5569db31027f3168e7c8798dc664ed84f7e248648ebf7ce5f8ef49807ca",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05, 6.72 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once. Prepare the kernel, initramfs and Linux storage required by the upstream Linux loader before loading.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Linux Loader for all consoles. 2GB VRAM.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Linux/linux-2048mb.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-linux3072mb",
+      "name": "Linux Loader 3GB · WebKitty 14.02",
+      "filename": "linux-3072mb.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Linux/linux-3072mb.elf",
+      "bytes": 509552,
+      "sha256": "e26aad022ca35d52a65c261bffbf592f83d373d2767b4564c5c7aa2a6b5469ac",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05, 6.72 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once. Prepare the kernel, initramfs and Linux storage required by the upstream Linux loader before loading.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Linux Loader for all consoles. 3GB VRAM.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Linux/linux-3072mb.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-linux4096mb",
+      "name": "Linux Loader 4GB · WebKitty 14.02",
+      "filename": "linux-4096mb.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Linux/linux-4096mb.elf",
+      "bytes": 509552,
+      "sha256": "e383e9e5a79159af8425a0b21ced84210864ae9700e8daf54c085300253c4fd9",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05, 6.72 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once. Prepare the kernel, initramfs and Linux storage required by the upstream Linux loader before loading.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Linux Loader for all consoles. 4GB VRAM.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Linux/linux-4096mb.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-linux128mb",
+      "name": "Linux Loader 128MB · WebKitty 14.02",
+      "filename": "linux-128mb.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Linux/linux-128mb.elf",
+      "bytes": 509552,
+      "sha256": "e619e0b11724fe7af8d8f28003369fc8abfd69371e4216cebf5c0079450cde47",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05, 6.72 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once. Prepare the kernel, initramfs and Linux storage required by the upstream Linux loader before loading.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Linux Loader for all consoles. 128MB VRAM.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Linux/linux-128mb.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-linux256mb",
+      "name": "Linux Loader 256MB · WebKitty 14.02",
+      "filename": "linux-256mb.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Linux/linux-256mb.elf",
+      "bytes": 509552,
+      "sha256": "3a6a55be9b40f0a079f13c3e58fa909001141885c79e876b3f4c2789c0bc99df",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05, 6.72 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once. Prepare the kernel, initramfs and Linux storage required by the upstream Linux loader before loading.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Linux Loader for all consoles. 256MB VRAM.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Linux/linux-256mb.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-linux512mb",
+      "name": "Linux Loader 512MB · WebKitty 14.02",
+      "filename": "linux-512mb.elf",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Linux/linux-512mb.elf",
+      "bytes": 509552,
+      "sha256": "382ba635673dd6fcfd1ccf6e156fbc5f3ff46de6136647b7a4974daa33217d61",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05, 6.72 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. The ELF service on 9021 starts automatically when needed, before this ELF is sent once. Prepare the kernel, initramfs and Linux storage required by the upstream Linux loader before loading.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Linux Loader for all consoles. 512MB VRAM.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Linux/linux-512mb.elf"
+    },
+    {
+      "id": "ps4-webkitty-1402-ps4debugng",
+      "name": "PS4Debug-NG · WebKitty 14.02",
+      "filename": "ps4debug-ng_v1.3.4.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4debug-ng_v1.3.4.bin",
+      "bytes": 3178344,
+      "sha256": "8bfe0507972718e6078778c5f9c44d84293197c0547239ab4227bdb351299b3e",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 5.05 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Next-Gen version of ps4debug for PlayStation 4",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4debug-ng_v1.3.4.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-pupdecrypt",
+      "name": "PUP Decrypt · WebKitty 14.02",
+      "filename": "ps4-pup-decrypt.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-pup-decrypt.bin",
+      "bytes": 27100,
+      "sha256": "89675a6f9e74ee6586321d2e1dfd05d9c226eee2e2670e43edb20f1a16a5424d",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Payload to decrypt the contents of a firmware update file (PUP) on the PS4",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-pup-decrypt.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-moduledumper",
+      "name": "Module Dumper · WebKitty 14.02",
+      "filename": "ps4-module-dumper.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-module-dumper.bin",
+      "bytes": 18468,
+      "sha256": "e7b00e829d1c1367b4b2dec0771cb23102bfb11ca617d16415cb80341519037e",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Dumps the decrypted modules from /system, /system_ex, /update and the root of the filesystem to a USB device.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-module-dumper.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-kerneldumper",
+      "name": "Kernel Dumper · WebKitty 14.02",
+      "filename": "ps4-kernel-dumper.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-kernel-dumper.bin",
+      "bytes": 19156,
+      "sha256": "2ad344bef83fe7da9428571c205d8463739d21776d68e1adcf08f829610f4605",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Dumps the PS4 kernel.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-kernel-dumper.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-disableaslr",
+      "name": "Disable ASLR · WebKitty 14.02",
+      "filename": "ps4-disable-aslr.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-disable-aslr.bin",
+      "bytes": 10844,
+      "sha256": "773c381228e9b78ef5ba6d66440d0dcf7270f826aacf643b87cdd6f8ab46cacf",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Disables the ASLR (Address space layout randomization) to make working with memory easier/repeatable.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-disable-aslr.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-permanentuart",
+      "name": "Permanent UART · WebKitty 14.02",
+      "filename": "ps4-permanent-uart.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-permanent-uart.bin",
+      "bytes": 10668,
+      "sha256": "3446aab9190821e0ff942e695bb3a595cf49d274758cff0d1d18a55b32d7e7e8",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Enabled hardware based UART without a kernel patch, persists though updates.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-permanent-uart.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-rifrenamer",
+      "name": "RIF Renamer · WebKitty 14.02",
+      "filename": "ps4-rif-renamer.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/ps4-rif-renamer.bin",
+      "bytes": 9500,
+      "sha256": "1d0e8c3928dd9532349fb0d6b46bace25e3fb5172291430c263f518a9e056588",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Renames 'fake' RIFs to 'free' RIFs for better HEN compatibility. Use this if your PKGs only work with Mira+HEN.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/ps4-rif-renamer.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-psvue",
+      "name": "PlayStation Vue · base installer · WebKitty 14.02",
+      "filename": "PlayStationVue-base-installer.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Homebrew/PlayStationVue-base-installer.bin",
+      "bytes": 12508,
+      "sha256": "e4ad85b29bb4770544d9abf9eb5f2766cf9765c04e22ab8e7f11f99294c45ac8",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. This installer downloads application data on the console and requires Internet access. Install the base first, wait for completion, then load the separate 1.24 update. This does not install download0 or a save file.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "For setting up PlayStation Vue exploit.  You need an internet connection to use this payload.  This does NOT install and setup download0 nor the save file! ",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Homebrew/PlayStationVue-base-installer.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-onlinestoreinstall",
+      "name": "Homebrew Store · WebKitty 14.02",
+      "filename": "online-store-installer.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Homebrew/online-store-installer.bin",
+      "bytes": 13756,
+      "sha256": "c24067b718bdad1617b562bc43d240713e29eae29c34e816fef343c261d7748e",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. This installer downloads application data on the console and requires Internet access.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Online Installer for the PS4 Homebrew Store. You need an internet connection to use this payload.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Homebrew/online-store-installer.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-apollosavetool",
+      "name": "Apollo Save Tool · WebKitty 14.02",
+      "filename": "ApolloSaveToolv232.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Homebrew/ApolloSaveToolv232.bin",
+      "bytes": 12508,
+      "sha256": "67a2f180a6e78b5c9e965cc8d407f54cbbbf0928765a5b95235f7f2ac0cce215",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. This installer downloads application data on the console and requires Internet access.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Apollo Save Tool is an application to manage save-game files on the PlayStation 4. You need an internet connection to use this payload.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Homebrew/ApolloSaveToolv232.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-itemzflow",
+      "name": "Itemzflow Installer · WebKitty 14.02",
+      "filename": "PS4-Itemzflow-v108.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Homebrew/PS4-Itemzflow-v108.bin",
+      "bytes": 12444,
+      "sha256": "dabf4e2340fbcd5db6f61ad3feaae0e65c574a5df7b36f2c26eaef4134cddc19",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. This installer downloads application data on the console and requires Internet access.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Itemzflow is a Free and Open source PS4 home menu alternative Itemzflow expands the beyond limits of Sony's ShellUI. You need an internet connection to use this payload.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Homebrew/PS4-Itemzflow-v108.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-ps4xplorer2-0",
+      "name": "File Xplorer 2.0 · WebKitty 14.02",
+      "filename": "PS4-Xplorer-209.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Homebrew/PS4-Xplorer-209.bin",
+      "bytes": 12476,
+      "sha256": "6e6a9f06430c4da48b11cb4a4d0553d049c98f8fda153c9f66024445a1f62f98",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. This installer downloads application data on the console and requires Internet access.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "A File Manager for the PlayStation 4 console. You need an internet connection to use this payload.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Homebrew/PS4-Xplorer-209.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-fanthreshold60",
+      "name": "Fan Threshold 60°C · WebKitty 14.02",
+      "filename": "ps4-fan-threshold60.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/fan-thresholds/ps4-fan-threshold60.bin",
+      "bytes": 8992,
+      "sha256": "73bda82299ce84440c678d0b20704bf74df507897eeffb392e7fb076f4417b13",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Sets the fan temperature threshold to 60°C.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/fan-thresholds/ps4-fan-threshold60.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-fanthreshold70",
+      "name": "Fan Threshold 70°C · WebKitty 14.02",
+      "filename": "ps4-fan-threshold70.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/fan-thresholds/ps4-fan-threshold70.bin",
+      "bytes": 8992,
+      "sha256": "7be7b600f0ef89aa5bfa5e7f40d549103138286c0c04d0004f7bc9a6f6d0176c",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Sets the fan temperature threshold to 70°C.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/fan-thresholds/ps4-fan-threshold70.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-fanthreshold80",
+      "name": "Fan Threshold 80°C · WebKitty 14.02",
+      "filename": "ps4-fan-threshold80.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/fan-thresholds/ps4-fan-threshold80.bin",
+      "bytes": 8992,
+      "sha256": "8734cbcd0ffaf2fe1f3169f201dc6d03d2674dd2f9f4c9e256e17945572835dd",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Sets the fan temperature threshold to 80°C.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/fan-thresholds/ps4-fan-threshold80.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-fanthreshold85",
+      "name": "Fan Threshold 85°C · WebKitty 14.02",
+      "filename": "ps4-fan-threshold85.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Bins/fan-thresholds/ps4-fan-threshold85.bin",
+      "bytes": 8992,
+      "sha256": "4793641950377600897cd799d9da1365dfe60452c3de93ed815f104fafc576ec",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "Sets the fan temperature threshold to 85°C.",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Bins/fan-thresholds/ps4-fan-threshold85.bin"
+    },
+    {
+      "id": "ps4-webkitty-1402-psvueupdate124",
+      "name": "PlayStation Vue · 1.24 update · WebKitty 14.02",
+      "filename": "PlayStationVue-124-installer.bin",
+      "url": "/downloads/host-payloads/webkitty/ff181af62e0c/Homebrew/PlayStationVue-124-installer.bin",
+      "bytes": 12508,
+      "sha256": "fb4629c04bc8edeac8ca1c2ee672d155377087bb829db8610951f9f08b162f6d",
+      "version": "ff181af62e0c57d7b74b3ea40b7a166b21424864",
+      "category": "payloads",
+      "compatibility": "PS4 14.02 with the HEN HTTP BIN loader enabled on 9090. Upstream rule: 4.73 - latest. This is a separate pinned WebKitty build; older firmware entries retain their original downloads. This installer downloads application data on the console and requires Internet access. Load only after the PlayStation Vue base installer has completed. This does not install download0 or a save file.",
+      "image": "/assets/images/consoles/playstation.jpg",
+      "page": "/hosts/ps4/loaders/",
+      "platforms": [
+        "ps4"
+      ],
+      "description": "For setting up PlayStation Vue exploit.  You need an internet connection to use this payload.  This does NOT install and setup download0 nor the save file! ",
+      "source": "https://raw.githubusercontent.com/ArabPixel/WebKitty/ff181af62e0c57d7b74b3ea40b7a166b21424864/includes/payloads/Homebrew/PlayStationVue-124-installer.bin"
     }
   ]
 }

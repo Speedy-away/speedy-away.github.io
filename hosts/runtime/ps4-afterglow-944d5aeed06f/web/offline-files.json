@@ -76,8 +76,8 @@
   },
   {
     "path": "host-console-client.js",
-    "bytes": 28252,
-    "sha256": "20644215e129f0159daca5f6c27324ca3067c0f84343a932697603c177c5f3a2"
+    "bytes": 28293,
+    "sha256": "8be1a240e12db4fb91de414e3f140496c19c4a4e1ccdc1c186f7a1a36d5d30df"
   },
   {
     "path": "host-xmb-waves.svg",
@@ -116,8 +116,8 @@
   },
   {
     "path": "loaders.html",
-    "bytes": 4423,
-    "sha256": "7a91df64b2e05744dbec1e9812fab3a729b45c57e40267a6b31e10b1557a56fa"
+    "bytes": 52944,
+    "sha256": "1ceccd76939dd0bdce63765779e1f4f12c294ab2013ed45d6ddfb0b58769d6b2"
   },
   {
     "path": "logo.png",
@@ -201,13 +201,13 @@
   },
   {
     "path": "ps4-loader-client.js",
-    "bytes": 5478,
-    "sha256": "bf2dcc3f3ca55d2d44bc8b83ebf2dd26c9c8c2ec138771b8aad14107570ad944"
+    "bytes": 10083,
+    "sha256": "6426bed194c4ddbef793b4f9f8db9e81a93300bf79989c4bd0878371810146e3"
   },
   {
     "path": "ps4-loader-sender.zip",
-    "bytes": 258774,
-    "sha256": "eae50f5882e622745a7258c683ac74d751fcb250f151bf9206a140afe9ee52d0"
+    "bytes": 1867407,
+    "sha256": "57ffb73126da2a398b72cde834708027c5023ac55d6e8ef3b4b875aa3688f005"
   },
   {
     "path": "ps4-loaders.css",
@@ -216,8 +216,8 @@
   },
   {
     "path": "ps4-loaders.js",
-    "bytes": 7241,
-    "sha256": "2e31773d542c15ab405173d8fc091252aa5f5abf31fc6e12f57863a6d375692c"
+    "bytes": 9415,
+    "sha256": "1ca1f6ab886576dcd6e5118f68b2f682cf46afca21ee737bad030e79ccef4499"
   },
   {
     "path": "ps4_offsets.js",
@@ -235,8 +235,183 @@
     "sha256": "bf6dce6c77b45c39c7a65ab46b29f86bc8ffe2c13e84c038a9701ac8fea52db6"
   },
   {
+    "path": "webkitty-ApolloSaveToolv232.bin",
+    "bytes": 12508,
+    "sha256": "67a2f180a6e78b5c9e965cc8d407f54cbbbf0928765a5b95235f7f2ac0cce215"
+  },
+  {
+    "path": "webkitty-PS4-Itemzflow-v108.bin",
+    "bytes": 12444,
+    "sha256": "dabf4e2340fbcd5db6f61ad3feaae0e65c574a5df7b36f2c26eaef4134cddc19"
+  },
+  {
+    "path": "webkitty-PS4-Xplorer-209.bin",
+    "bytes": 12476,
+    "sha256": "6e6a9f06430c4da48b11cb4a4d0553d049c98f8fda153c9f66024445a1f62f98"
+  },
+  {
+    "path": "webkitty-PlayStationVue-124-installer.bin",
+    "bytes": 12508,
+    "sha256": "fb4629c04bc8edeac8ca1c2ee672d155377087bb829db8610951f9f08b162f6d"
+  },
+  {
+    "path": "webkitty-PlayStationVue-base-installer.bin",
+    "bytes": 12508,
+    "sha256": "e4ad85b29bb4770544d9abf9eb5f2766cf9765c04e22ab8e7f11f99294c45ac8"
+  },
+  {
+    "path": "webkitty-db-rebuilder-v0.2.bin",
+    "bytes": 653884,
+    "sha256": "15568b7fd41078de9d6fc9ed562d2c40e2bc0705b9f24651af96d56b982abdc3"
+  },
+  {
+    "path": "webkitty-linux-1024mb.elf",
+    "bytes": 509552,
+    "sha256": "dfb11f30e1a10abdeb4f76c95d7cd7e9201b57740f2fce2f388e1b58c5c82571"
+  },
+  {
+    "path": "webkitty-linux-128mb.elf",
+    "bytes": 509552,
+    "sha256": "e619e0b11724fe7af8d8f28003369fc8abfd69371e4216cebf5c0079450cde47"
+  },
+  {
+    "path": "webkitty-linux-2048mb.elf",
+    "bytes": 509552,
+    "sha256": "885de5569db31027f3168e7c8798dc664ed84f7e248648ebf7ce5f8ef49807ca"
+  },
+  {
+    "path": "webkitty-linux-256mb.elf",
+    "bytes": 509552,
+    "sha256": "3a6a55be9b40f0a079f13c3e58fa909001141885c79e876b3f4c2789c0bc99df"
+  },
+  {
+    "path": "webkitty-linux-3072mb.elf",
+    "bytes": 509552,
+    "sha256": "e26aad022ca35d52a65c261bffbf592f83d373d2767b4564c5c7aa2a6b5469ac"
+  },
+  {
+    "path": "webkitty-linux-4096mb.elf",
+    "bytes": 509552,
+    "sha256": "e383e9e5a79159af8425a0b21ced84210864ae9700e8daf54c085300253c4fd9"
+  },
+  {
+    "path": "webkitty-linux-512mb.elf",
+    "bytes": 509552,
+    "sha256": "382ba635673dd6fcfd1ccf6e156fbc5f3ff46de6136647b7a4974daa33217d61"
+  },
+  {
+    "path": "webkitty-np-fake-signin-ps4.elf",
+    "bytes": 118272,
+    "sha256": "e92632383e2ddde3f23c67308d0f6ee18e3e85a9f97d183de0ac5cc4803c1c3d"
+  },
+  {
+    "path": "webkitty-online-store-installer.bin",
+    "bytes": 13756,
+    "sha256": "c24067b718bdad1617b562bc43d240713e29eae29c34e816fef343c261d7748e"
+  },
+  {
+    "path": "webkitty-ps4-app2usb.bin",
+    "bytes": 25988,
+    "sha256": "f361bd6c30741b9d9cb27be2343c60c4b3b90f0f427c98d533d3a7d5994e7ec1"
+  },
+  {
+    "path": "webkitty-ps4-backup.bin",
+    "bytes": 15580,
+    "sha256": "bc2aca2202236cc8a2190dd4dc58584579136946b8e5397bdd61c9957de6e1cf"
+  },
+  {
+    "path": "webkitty-ps4-disable-aslr.bin",
+    "bytes": 10844,
+    "sha256": "773c381228e9b78ef5ba6d66440d0dcf7270f826aacf643b87cdd6f8ab46cacf"
+  },
+  {
+    "path": "webkitty-ps4-disable-updates.bin",
+    "bytes": 8764,
+    "sha256": "57bb6baf15c978bc8cb69369e42dec680e26b01ab883cbeb0310d30cb09e3583"
+  },
+  {
+    "path": "webkitty-ps4-exit-idu.bin",
+    "bytes": 10796,
+    "sha256": "e59044749754c9784c2347f63ce10f2f8b9f27c5e91214536001518b2203b1be"
+  },
+  {
+    "path": "webkitty-ps4-fan-threshold60.bin",
+    "bytes": 8992,
+    "sha256": "73bda82299ce84440c678d0b20704bf74df507897eeffb392e7fb076f4417b13"
+  },
+  {
+    "path": "webkitty-ps4-fan-threshold70.bin",
+    "bytes": 8992,
+    "sha256": "7be7b600f0ef89aa5bfa5e7f40d549103138286c0c04d0004f7bc9a6f6d0176c"
+  },
+  {
+    "path": "webkitty-ps4-fan-threshold80.bin",
+    "bytes": 8992,
+    "sha256": "8734cbcd0ffaf2fe1f3169f201dc6d03d2674dd2f9f4c9e256e17945572835dd"
+  },
+  {
+    "path": "webkitty-ps4-fan-threshold85.bin",
+    "bytes": 8992,
+    "sha256": "4793641950377600897cd799d9da1365dfe60452c3de93ed815f104fafc576ec"
+  },
+  {
+    "path": "webkitty-ps4-ftp.bin",
+    "bytes": 28764,
+    "sha256": "f91f8356ad2a9580a7b4c15a5ce8d29672747d337e7f057f9d0bdad8e00f0ef2"
+  },
+  {
+    "path": "webkitty-ps4-history-blocker.bin",
+    "bytes": 11036,
+    "sha256": "feaa02d813f9a47515e324198f9c014176587a909978385d86e231f4b3609d52"
+  },
+  {
+    "path": "webkitty-ps4-kernel-dumper.bin",
+    "bytes": 19156,
+    "sha256": "2ad344bef83fe7da9428571c205d8463739d21776d68e1adcf08f829610f4605"
+  },
+  {
+    "path": "webkitty-ps4-module-dumper.bin",
+    "bytes": 18468,
+    "sha256": "e7b00e829d1c1367b4b2dec0771cb23102bfb11ca617d16415cb80341519037e"
+  },
+  {
+    "path": "webkitty-ps4-permanent-uart.bin",
+    "bytes": 10668,
+    "sha256": "3446aab9190821e0ff942e695bb3a595cf49d274758cff0d1d18a55b32d7e7e8"
+  },
+  {
+    "path": "webkitty-ps4-pup-decrypt.bin",
+    "bytes": 27100,
+    "sha256": "89675a6f9e74ee6586321d2e1dfd05d9c226eee2e2670e43edb20f1a16a5424d"
+  },
+  {
+    "path": "webkitty-ps4-restore.bin",
+    "bytes": 11196,
+    "sha256": "1f380a84a4db70b40d401d27e09ecf765919b363affd558d4f8cd9ad382c9b36"
+  },
+  {
+    "path": "webkitty-ps4-rif-renamer.bin",
+    "bytes": 9500,
+    "sha256": "1d0e8c3928dd9532349fb0d6b46bace25e3fb5172291430c263f518a9e056588"
+  },
+  {
+    "path": "webkitty-ps4-southbridge-detector.bin",
+    "bytes": 9212,
+    "sha256": "23106452fa17df860dada1c2286fd1f5c68050ec2ae107c79439feb196e05eaa"
+  },
+  {
+    "path": "webkitty-ps4-websrv.bin",
+    "bytes": 30508,
+    "sha256": "0c1ec57554b33b71b0d5506041eda2523d33abf238ea43bf425c5e38826db1d7"
+  },
+  {
+    "path": "webkitty-ps4debug-ng_v1.3.4.bin",
+    "bytes": 3178344,
+    "sha256": "8bfe0507972718e6078778c5f9c44d84293197c0547239ab4227bdb351299b3e"
+  },
+  {
     "path": "cache.appcache",
-    "bytes": 933,
-    "sha256": "ddbf5fe7b63b2bb2f1213a5219169bcfd8f08e2415ec84fc0d83eac15fadd07a"
+    "bytes": 1984,
+    "sha256": "7ba8feb4654e452f9a6c4f11050a3d2b948fad70c1171e23eb8676c9e3ea41ae"
   }
 ]

@@ -349,8 +349,8 @@ function createBridge({root = ROOT, actions = loadActions(root), token = crypto.
       return json(res,403,{status:'error',code:'origin-rejected',message:'Open the sender dashboard on its own localhost address.'});
     if (req.url.startsWith('/api/')) {
       if (!equalToken(token,req.headers['x-whatsite-token'])) return json(res,401,{status:'error',code:'pairing-required',message:'Enter the current sender pairing token.'});
-      if (req.method === 'GET' && req.url === '/api/status') return json(res,200,{status:'connected',code:'sender-ready',version:'1.0.0',protocolVersion:2,capabilities:{serviceOverview:true,uncertainOutcomes:true,userSelectedBIN:true},message:'Local sender connected. This check did not send a payload.',actions:actions.map(a => availability(a,root))});
-      if (req.method === 'GET' && req.url === '/api/loader-status') return json(res,200,{status:'connected',ps4LoaderUpload:true,message:'PS4 loader sender connected.'});
+      if (req.method === 'GET' && req.url === '/api/status') return json(res,200,{status:'connected',code:'sender-ready',version:'1.0.0',protocolVersion:2,capabilities:{ps4ELFAutostart:true,serviceOverview:true,uncertainOutcomes:true,userSelectedBIN:true},message:'Local sender connected. This check did not send a payload.',actions:actions.map(a => availability(a,root))});
+      if (req.method === 'GET' && req.url === '/api/loader-status') return json(res,200,{status:'connected',ps4LoaderUpload:true,ps4ELFAutostart:true,message:'PS4 loader sender connected.'});
       if (req.method === 'POST' && req.url === '/api/loader-file') {
         try { return json(res,200,await require('./ps4-loader-upload.cjs').receive(req,{busy,resolveAddress,sendELF,sendBIN,sendTCPBIN,root,elfOptions,timeoutMs:userFileTimeoutMs})); }
         catch(e){res.shouldKeepAlive=false;req.resume();return json(res,e.mayHaveExecuted?200:400,{status:e.mayHaveExecuted?'uncertain':'error',code:e.code||'loader-failed',message:e.message,...(e.mayHaveExecuted?{mayHaveExecuted:true}: {})});}
