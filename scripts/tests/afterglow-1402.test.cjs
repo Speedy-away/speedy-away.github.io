@@ -5,8 +5,9 @@ const root=path.resolve(__dirname,'../..'),read=f=>fs.readFileSync(path.join(roo
 const build=JSON.parse(read('docs/afterglow-1402-build.json')),base=build.base+'/web/';
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 function store(){const data=new Map();return {getItem:k=>data.get(k)||null,setItem:(k,v)=>data.set(k,v),removeItem:k=>data.delete(k),data};}
-function landing(ua='PlayStation 4/14.02'){
+function landing(ua='PlayStation 4/14.02',completed=false){
  const nodes={},events={},timers=new Map(),radios={goldhen:{value:'goldhen',checked:true},hen:{value:'hen',checked:false}},ss=store(),ls=store(),location={href:'',search:''};let cacheBusy=false,notify;
+ if(completed){ss.setItem('wwb.afterglow.1402.completed','1');ls.setItem('whatsite.afterglow.1402.choice.v1',JSON.stringify({payload:'goldhen',autostart:true}));}
  const node=id=>nodes[id]||(nodes[id]={textContent:'',checked:false,disabled:false,addEventListener:(event,fn)=>events[id+':'+event]=fn});
  node('pick').querySelector=s=>s.includes(':checked')?(radios.hen.checked?radios.hen:radios.goldhen):radios[s.match(/value="(.*?)"/)[1]];
  const window={addEventListener:(event,fn)=>events[event]=fn,AfterglowCache:{isBusy:()=>cacheBusy,subscribe:fn=>notify=fn}};
@@ -58,4 +59,13 @@ test('cache toggle defaults off, ignores forged iframe events, and stops AppCach
 test('new page uses requested name, shared blue assets, cache controls and only native banner ads',()=>{
  const html=read(base+'index.html');assert.match(html,/<h1>WebKit Exploit<\/h1>/);assert.match(html,/id="cache-enabled"/);assert.match(html,/id="cache-now"/);assert.match(html,/5-second countdown/);assert.match(html,/bellnewyork/);assert.doesNotMatch(html,/accountut/);assert.match(read(base+'afterglow-1402.css'),/host-xmb-waves.svg/);
  assert.match(read('assets/host-dashboard.js'),/14\.02 jailbreak is here/);
+});
+
+test('completed session blocks manual and automatic reruns without changing preference',()=>{
+ const f=landing('PlayStation 4/14.02',true);assert.equal(f.nodes.start.disabled,true);assert.equal(f.nodes.start.textContent,'Already loaded');assert.equal(f.nodes.auto.checked,true);assert.equal(f.timers.size,0);f.submit();f.auto();f.tick(10);assert.equal(f.location.href,'');assert.equal(f.timers.size,0);
+});
+test('safe success returns after exactly five seconds and records completion',()=>{
+ let inspect,tick,returned='',disconnected=false;const ss=store(),out={textContent:'AG  handles defused\nAG  done',parentNode:{insertBefore(){}}},status={};
+ const context={localStorage:store(),sessionStorage:ss,document:{documentElement:{className:''},body:{className:''},getElementById:id=>id==='out'?out:status,createElement:()=>({style:{},setAttribute(){}})},MutationObserver:class{constructor(fn){inspect=fn;}observe(){}disconnect(){disconnected=true;}},location:{replace:p=>returned=p},window:{addEventListener(){}},setInterval:fn=>{tick=fn;return 1;},clearInterval(){},Date};
+ vm.runInNewContext(read('assets/afterglow-1402-run-options.js'),context);inspect();assert.equal(ss.getItem('wwb.afterglow.1402.completed'),'1');assert.equal(disconnected,true);assert.match(status.textContent,/5 seconds/);for(let i=0;i<4;i++)tick();assert.equal(returned,'');tick();assert.equal(returned,'index.html?restored=1&result=success');
 });

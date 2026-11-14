@@ -2,7 +2,7 @@
 // Build the independent project-site deployment without altering archived files.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const ROOT=path.resolve(__dirname,'..'),BASE='',ORIGIN='https://speedy-away.github.io',MAIN='https://whatwhatboy.com',LIMIT=880*1024*1024;
-const ASSET_VERSION='20261113mono2';
+const ASSET_VERSION='20261114downloads1';
 const slash=p=>p.replaceAll('\\','/'),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 // These original lists include server-only or maintenance files absent from the
 // preserved web runtime. Keep the original manifests and serve a Pages copy.
@@ -199,8 +199,6 @@ function build(output,revision='main',root=ROOT){
   if(name.endsWith('.html'))text=require('./host-page-metadata.cjs').apply(text,name);
   if(name.endsWith('.html'))text=require('./host-workspace-pages.cjs').apply(text,name,{root});
   if(offline&&name.endsWith('.html'))text=offline.decorate(text,name,offlineGroups);
-  // Keep the shared appearance after workspace and offline component styles.
-  if(name.endsWith('.html')&&text.includes('host-monochrome.css'))text=text.replace(/<link\b[^>]*href="[^"]*host-monochrome\.css[^"]*"[^>]*>/g,'').replace('</head>','<link rel="stylesheet" href="/assets/host-monochrome.css?v=20261113mono2"></head>');
   return text;
  }
  fs.mkdirSync(output,{recursive:true});let nativeFiles=0;

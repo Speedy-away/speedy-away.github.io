@@ -3081,5 +3081,26 @@
       "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43515458800",
       "hardwareTested": false
     }
+  },
+  "afterglowReturn20261114": {
+    "date": "2026-11-14",
+    "status": "Successful safe completion saves a session receipt and returns after five seconds; reload defaults on, explicit opt-out preserved. Completed launcher disables and fades Already loaded Start and blocks automatic/manual reruns while preserving autostart preference.",
+    "verification": "UI-only changes. Native modules and payloads untouched. Console testing still required.",
+    "published": false
+  },
+  "hostBlueRestored20261114": {
+    "date": "2026-11-14",
+    "status": "Restored the ten host presentation assets from immediately before the main-site monochrome redesign. Removed monochrome CSS and theme-toggle injection from the page builder. Current navigation, firmware choices, native runtimes and Afterglow return changes retained.",
+    "published": false
+  },
+  "hostMetadataRefresh20261114": {
+    "date": "2026-11-14",
+    "status": "Refreshed independent host descriptions, platform-specific keywords, social preview metadata and structured topics. PS5 14.x placeholder keywords describe firmware information rather than claiming exploit support. Regenerated canonical multilingual sitemap and robots directives.",
+    "published": false
+  },
+  "downloadServiceSelection20261114": {
+    "date": "2026-11-14",
+    "status": "Download centre and URL downloader no longer infer a running localhost receiver from the browser user agent. Save/install offers setup until an address is explicitly selected. Original direct download URLs preserved. Actual installation requires the installed console service.",
+    "published": false
   }
 }

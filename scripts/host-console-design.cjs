@@ -14,10 +14,6 @@ function apply(html, name) {
   }
   html = html.replace('</head>', '<link rel="stylesheet" href="/assets/host-console-design.css?v=20261108xmb">\n' +
     '<script defer src="/assets/host-console-navigation.js?v=20261108"></script>\n</head>');
-  // The final presentation layer also reaches generated short routes and locales.
-  if (!html.includes('host-monochrome.css')) html = html.replace('</head>',
-    '<link rel="stylesheet" href="/assets/host-monochrome.css?v=20261113mono2">' +
-    '<script src="/assets/host-theme.js?v=20261113mono2"></script></head>');
   if (!platform || !dashboards) return html;
 
   const destination = '/hosts/' + platform + '/';

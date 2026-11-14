@@ -15,7 +15,7 @@ const source = fs.readFileSync(path.resolve(__dirname, '../../assets/host-downlo
 const ps4 = catalogue.find(item => item.id === 'ps4-homebrew-store');
 const ps5 = catalogue.find(item => item.id === 'ps5-whatsite-site-launcher');
 
-function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query = '', statuses = [200], items = [ps4, ps5], updateRelease, pagePath, localStorage} = {}) {
+function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query = '', statuses = [200], items = [ps4, ps5], updateRelease, pagePath, localStorage, configured = true} = {}) {
   const location = new URL('https://speedy-away.github.io' + (pagePath || '/hosts/' + platform + '/' + mode + '/') + query);
   function element(tag = 'div') {
     return {
@@ -69,6 +69,7 @@ function openDesk({platform = 'ps4', mode = 'downloads', userAgent = '', query =
   const window = {location, history, navigator:{userAgent}, WWBConsoleDownloads:transport, XMLHttpRequest, setTimeout, clearTimeout, localStorage,
     addEventListener(type, callback) { windowEvents[type] = callback; }};
   vm.runInNewContext(source, {window, document});
+  if(configured && /PlayStation\s*([45])\b/i.test(userAgent)){ids['host-download-address'].value='127.0.0.1';ids['host-download-connection'].events.submit({preventDefault(){}});}
   function links() {
     function find(node) { return (node.tag === 'a' ? [node] : []).concat(node.children.flatMap(find)); }
     return new Map(find(ids['host-download-results']).map(link => [link.textContent, link.href]));
@@ -335,4 +336,11 @@ test('setup links reveal the instructions on first load, hash navigation and rep
   assert.equal(desk.ids.setup.open, true);
   desk.ids['host-download-desk'].events.click({target:{tagName:'A', getAttribute:() => '#guide'}});
   assert.equal(desk.ids.guide.open, true);
+});
+
+for(const platform of ['ps4','ps5'])test(platform+' browser does not assume a localhost downloader exists',()=>{
+ const f=openDesk({platform,userAgent:'PlayStation '+platform.slice(-1)+'/14.02',configured:false});
+ assert.equal(f.ids['host-download-address'].value,'');assert.equal(f.ids['host-download-native'].hidden,true);
+ for(const url of f.links().values())assert.doesNotMatch(url,/127\.0\.0\.1|localhost/);
+ assert.match(f.links().get('Set up save / install'),/#setup$/);
 });

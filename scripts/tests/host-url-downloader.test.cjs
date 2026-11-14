@@ -37,6 +37,9 @@ test('a URL is staged for browser or exact-platform receiver without sending any
     assert.equal(ids['host-url-review'].hidden, false);
     assert.equal(ids['host-url-browser'].href, 'https://example.org/tool.zip?token=abc%2B123');
     assert.equal(ids['host-url-browser'].attrs.download, 'tool.zip');
+    assert.equal(ids['host-url-console'].hidden, true);
+    assert.equal(ids['host-url-console'].href, undefined);
+    page.api.setHost('127.0.0.1');
     const target = new URL(ids['host-url-console'].href);
     assert.equal(target.origin, 'http://127.0.0.1:6701');
     assert.equal(target.pathname, platform === 'ps4' ? '/data/whatsite-ps4.html' : '/whatsite-ps5.html');

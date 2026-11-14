@@ -1,7 +1,7 @@
 /* Local chooser preferences. Does not import any console runtime. */
 (function(){
  'use strict';
- var key='wwb.afterglow.1402.settings.v1',defaults={advanced:true,retry:true,reload:false,barebone:false},values={},nodes={};
+ var key='wwb.afterglow.1402.settings.v1',defaults={advanced:true,retry:true,reload:true,barebone:false},values={},nodes={};
  var panel=document.getElementById('settings-panel'),button=document.getElementById('settings-open'),close=document.getElementById('settings-close');
  try{values=JSON.parse(localStorage.getItem(key)||'{}')||{};}catch(e){}
  function apply(){document.getElementById('advanced-payloads').hidden=!nodes.advanced.checked;}

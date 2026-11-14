@@ -9,6 +9,16 @@
   var match = navigator.userAgent.match(/PlayStation 4[\/ ](\d+\.\d{2})(?:\D|$)/i);
   var allowed = !!match && ['13.52', '14.00'].indexOf(match[1]) >= 0;
   var targets = {hen: 'log=1&afterglow=run&payload=hen.bin', goldhen: 'log=1&afterglow=run&mode=goldhen'};
+  var completed = false;
+  try { completed = sessionStorage.getItem('wwb.afterglow.1402.completed') === '1'; } catch (_) {}
+  function completedUI() {
+    if (!completed) return;
+    stop();
+    startButton.disabled = true;
+    startButton.textContent = 'Already loaded';
+    startButton.className += ' already-loaded';
+    say(count, 'Jailbreak already loaded. BIN / ELF loaders are available.');
+  }
   var appCache = null;
   try { appCache = window.applicationCache; } catch (_) {}
   function picked() { return form.querySelector('input[name="payload"]:checked').value; }
@@ -21,7 +31,7 @@
   }
   function start() {
     stop();
-    if (!allowed || leaving) return;
+    if (!allowed || leaving || completed) return;
     if (appCache && appCache.status === 4) { say(cache, 'Reopen to update cache'); return; }
     if (busy()) { queued = true; say(count, 'Waiting for cache'); return; }
     try { sessionStorage.setItem(armKey, String(Date.now())); } catch (_) { say(count, 'Session storage required'); return; }
@@ -31,7 +41,7 @@
   }
   function clock() {
     stop();
-    if (!allowed) return;
+    if (!allowed || completed) return;
     var left = 5;
     count.textContent = '5';
     timer = setInterval(function () { left--; count.textContent = String(left); if (left <= 0) start(); }, 1000);
@@ -49,7 +59,7 @@
   form.addEventListener('change', function () { stop(); remember(); if (auto.checked) clock(); });
   document.getElementById('cancel').addEventListener('click', function () { stop(); auto.checked = false; remember(); });
   window.addEventListener('pagehide', stop);
-  window.addEventListener('pageshow', function (event) { if (event.persisted) { stop(); try { sessionStorage.removeItem(armKey); } catch (_) {} } });
+  window.addEventListener('pageshow', function (event) { if (event.persisted) { try { completed = sessionStorage.getItem('wwb.afterglow.1402.completed') === '1'; } catch (_) {} completedUI(); stop(); try { sessionStorage.removeItem(armKey); } catch (_) {} } });
   if (appCache) ['checking','downloading','progress','cached','noupdate','updateready','error','obsolete'].forEach(function (name) { appCache.addEventListener(name, note); });
   note();
   var retryVisit=false;
@@ -64,5 +74,6 @@
   if(window.AfterglowCache&&window.AfterglowCache.onDelete)window.AfterglowCache.onDelete(stop);
   var restored = /[?&]restored=1(?:&|$)/.test(location.search);
   try { restored = restored || performance.navigation.type !== 0; } catch (_) {}
-  if (retryVisit || (allowed && auto.checked && !restored)) clock();
+  completedUI();
+  if (!completed && (retryVisit || (allowed && auto.checked && !restored))) clock();
 })();

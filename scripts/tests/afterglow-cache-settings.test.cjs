@@ -23,10 +23,10 @@ test('stop aborts an unfinished response body and retains the previous cache',as
 test('delete stops an active download, removes only this runtime caches, and reports completion',async()=>{const w=worker();await w.send('save');await w.caches.open('unrelated');w.change('new');w.pending();const save=w.send('update');await w.startedPromise;await w.send('delete');await save;assert.deepEqual(await w.caches.keys(),['unrelated']);assert.equal(w.messages.at(-1).state,'deleted');});
 test('cache ignores cross-origin and other-runtime commands',async()=>{const w=worker();await w.send('save',{url:'https://evil.invalid/runtime/index.html',postMessage(){throw Error('foreign');}});await w.send('delete',{url:'https://test.invalid/other/index.html',postMessage(){throw Error('foreign');}});assert.equal(w.all.size,0);});
 function run(options={}){
- const ls=store(),ss=store(),nodes={out:{textContent:''},'bare-status':{textContent:''}},timers=[];let observer,redirect;
+ const ls=store(),ss=store(),nodes={out:{textContent:'',parentNode:{insertBefore(){}}},'bare-status':{textContent:''}},timers=[];let observer,redirect;
  ls.setItem('wwb.afterglow.1402.settings.v1',JSON.stringify(options));
- const document={documentElement:{className:''},body:{className:'log'},getElementById:id=>nodes[id]};
- vm.runInNewContext(read('assets/afterglow-1402-run-options.js'),{localStorage:ls,sessionStorage:ss,document,Date,location:{replace:s=>redirect=s},setTimeout:fn=>timers.push(fn),MutationObserver:class{constructor(fn){observer=fn;}observe(){}disconnect(){}}});
+ const document={createElement:()=>({style:{},setAttribute(){}}),documentElement:{className:''},body:{className:'log'},getElementById:id=>nodes[id]};
+ vm.runInNewContext(read('assets/afterglow-1402-run-options.js'),{localStorage:ls,sessionStorage:ss,document,Date,location:{replace:s=>redirect=s},window:{addEventListener(){}},setInterval:fn=>{timers.push(fn);return 1;},clearInterval(){},setTimeout:fn=>timers.push(fn),MutationObserver:class{constructor(fn){observer=fn;}observe(){}disconnect(){}}});
  return{ss,document,nodes,timers,get redirect(){return redirect;},log(s,fail=false){nodes.out.textContent=s;if(fail)document.body.className='fail';observer?.();}};
 }
 test('retry requires explicit pre-kernel failure, is bounded to once, and never uses a timeout',()=>{
@@ -37,7 +37,7 @@ test('retry requires explicit pre-kernel failure, is bounded to once, and never 
 });
 test('reload needs explicit completion and defused handles, then returns without rearming',()=>{
  const unsafe=run({reload:true});unsafe.log('AG  the handles are NOT defused\nAG  done');assert.equal(unsafe.timers.length,0);
- const r=run({reload:true});r.log('AG  handles defused\nAG  done');assert.equal(r.timers.length,1);r.timers[0]();assert.equal(r.redirect,'index.html?restored=1&result=success');
+ const r=run({reload:true});r.log('AG  handles defused\nAG  done');assert.equal(r.timers.length,1);for(let i=0;i<4;i++)r.timers[0]();assert.equal(r.redirect,undefined);r.timers[0]();assert.equal(r.redirect,'index.html?restored=1&result=success');
  const off=run({reload:false});off.log('AG  handles defused\nAG  done');assert.equal(off.timers.length,0);
 });
 test('barebone hides detailed output and still displays a terminal result',()=>{const r=run({barebone:true});assert.match(r.document.documentElement.className,/barebone/);r.log('AG  done');assert.equal(r.nodes['bare-status'].textContent,'Jailbreak complete');});

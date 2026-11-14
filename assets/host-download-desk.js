@@ -18,7 +18,7 @@
   var nativeTools = doc.getElementById('host-download-native');
   var quickFilters = desk.querySelectorAll ? desk.querySelectorAll('[data-download-filter]') : [];
   var consolePlatform = /PlayStation\s*([45])\b/i.exec(win.navigator.userAgent);
-  var destination = consolePlatform && 'ps' + consolePlatform[1] === platform ? '127.0.0.1' : '';
+  var destination = ''; // A console user agent does not confirm an installed downloader.
   var requestedFile = /[?&]file=([^&#]*)/.exec(win.location.search);
   var pinnedId = '';
   var items = [];
@@ -179,6 +179,7 @@
     var reviewed = archive && receiverAvailable && item.archiveSafety && item.archiveSafety.reviewed === true;
     var saveLabel = reviewed ? 'Save / extract on ' : packageFile(item) ? 'Save / install on ' : 'Save on ';
     if (saveURL) link(controls, saveLabel + platform.toUpperCase(), saveURL, 'host-download-primary');
+    else if (receiverAvailable) link(controls, 'Set up save / install', '#setup', 'host-download-primary');
     if (saveURL && item.receiverFileId) {
       link(add(card, 'p', '', 'host-download-meta'), 'Update the PS5 downloader if this file is unavailable', '#setup');
     }

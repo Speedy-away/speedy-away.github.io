@@ -25,7 +25,6 @@
     var prepared = null, host = '', manualName = false;
     var detected = /PlayStation\s*([45])\b/i.exec(win.navigator.userAgent);
     if (detected && 'ps' + detected[1] === platform) {
-      host = '127.0.0.1';
       if (updateHelp) updateHelp.setAttribute('href', '#host-' + platform + '-update');
     }
 
