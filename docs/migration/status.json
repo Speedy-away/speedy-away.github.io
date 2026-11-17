@@ -1,4 +1,11 @@
 {
+  "ps4AfterglowCompatibilityNotes20261117": {
+    "date": "2026-11-17",
+    "summary": "Documented the exact PS4 firmware versions listed in the Afterglow web README and linked to the short compatibility page from the firmware picker.",
+    "url": "https://speedy-away.github.io/ps4-firmware/",
+    "firmware": ["12.00","12.02","12.50","12.52","13.00","13.02","13.04","13.50","13.52","14.00","14.02"],
+    "verification": "Compared the published-page source and its generator against the upstream README. Compatibility was documented from upstream; console behavior was not tested."
+  },
   "ps4ReleasePublished20261113": {
     "date": "2026-11-13",
     "status": "Pushed to main, deployed successfully, and verified live.",
