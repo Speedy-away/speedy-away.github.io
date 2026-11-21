@@ -55,7 +55,7 @@ test('GoldHEN one-use receipt works on the renamed lowercase Pages path',()=>{co
 
 
 test('only builtin PS5 UMTX uses its own trusted dashboard ticket, with every exact firmware pinned',()=>{
- const {fixture}=require('./host-continuation-dom.cjs'),all=['ps4','ps5'].flatMap(p=>hostActions(p).filter(a=>a.category==='loaders'&&!a.nativeRoute));assert.deepEqual(all.map(a=>a.id),['built-in-ps5-umtx']);const action=all[0];assert.equal(action.platform,'ps5');assert.equal(action.runtimeId,'ps5-umtx');assert.equal(action.firmwares.length,23);assert.equal(action.launchURL,'/hosts/runtime/ps5-umtx/web/index.html');
+ const {fixture}=require('./host-continuation-dom.cjs'),all=hostActions('ps5').filter(a=>a.category==='loaders'&&!a.nativeRoute);assert.deepEqual(all.map(a=>a.id),['built-in-ps5-umtx']);const action=all[0];assert.equal(action.platform,'ps5');assert.equal(action.runtimeId,'ps5-umtx');assert.equal(action.firmwares.length,23);assert.equal(action.launchURL,'/hosts/runtime/ps5-umtx/web/index.html');
  for(const firmware of action.firmwares){
   const win=consoleWindow('ps5',firmware);assert.throws(()=>load.start(win,{visibilityState:'visible'},action,true),'The nativeRoute controller must not invent the separate builtin contract');
   const f=fixture({platform:'ps5',actions:[action],initialCategory:'loaders',catalogGrid:true,userAgent:'PlayStation 5/'+firmware}),grid=f.ids['host-action-grid'],button=grid.querySelector('[data-launch="built-in-ps5-umtx"]');assert.ok(button,firmware);assert.equal(button.disabled,false);

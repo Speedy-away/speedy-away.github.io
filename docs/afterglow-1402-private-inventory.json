@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-13T20:33:05.531Z",
-  "backupRoot": "F:/whatsite-backup-downloads-etc",
-  "sourceCommit": "944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+  "updated": "2026-11-21T14:08:34.568Z",
+  "backupRoot": "F:\\whatsite-backup-downloads-etc",
+  "sourceCommit": "587c00a564c4765b78ab413e400a392efdd9a780",
   "payloadsExecuted": false,
   "items": [
     {
@@ -398,6 +398,140 @@
           "archiveRole": [
             "Builds"
           ]
+        }
+      ]
+    },
+    {
+      "id": "afterglow-1402-4833e620e59f",
+      "project": "Afterglow web",
+      "title": "PS4 14.02 Afterglow · afterglow-1402-587c00a564c4-4833e620e59f.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "587c00a564c4765b78ab413e400a392efdd9a780-upstream-exact-wwb-tools-v2",
+      "url": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "files": [
+        {
+          "name": "afterglow-1402-587c00a564c4-4833e620e59f.zip",
+          "bytes": 4140999,
+          "sha256": "4833e620e59fe84c9e348a144cc786d77a3d1a1c0d96871b623b230844764ff0",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-587c00a564c4-4833e620e59f.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+          "releaseTag": "587c00a564c4765b78ab413e400a392efdd9a780-upstream-exact-wwb-tools-v2",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\587c00a564c4765b78ab413e400a392efdd9a780-upstream-exact-wwb-tools-v2\\afterglow-1402-587c00a564c4-4833e620e59f.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-source-587c00a564c4-55de4933452c",
+      "project": "Afterglow web",
+      "title": "Afterglow source · 587c00a564c4",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Source Code"
+      ],
+      "release": "587c00a564c4765b78ab413e400a392efdd9a780",
+      "url": "https://github.com/well0nez/afterglow-web/archive/587c00a564c4765b78ab413e400a392efdd9a780.zip",
+      "kind": "github-source",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "files": [
+        {
+          "name": "afterglow-web-587c00a564c4765b78ab413e400a392efdd9a780.zip",
+          "bytes": 537409,
+          "sha256": "55de4933452c66c649e314604fe433f7cb7bab80fc0820bafa4c9f34696be0a8",
+          "local": null,
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/archive/587c00a564c4765b78ab413e400a392efdd9a780.zip",
+          "releaseTag": "587c00a564c4765b78ab413e400a392efdd9a780",
+          "archiveRole": [
+            "Source Code"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Source Code\\587c00a564c4765b78ab413e400a392efdd9a780\\afterglow-web-587c00a564c4765b78ab413e400a392efdd9a780.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-79caa7434c8c",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+      "kind": "retained-ready-webhost",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
+          "bytes": 4196463,
+          "sha256": "79caa7434c8c19919e95279f92f250f3fa074cf562fea89eab7b16ccdcd7c726",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+          "releaseTag": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1\\afterglow-1402-944d5aeed06f-79caa7434c8c.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-8bcfeefff53a",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-1402-944d5aeed06f-8bcfeefff53a.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+      "kind": "retained-ready-webhost",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-1402-944d5aeed06f-8bcfeefff53a.zip",
+          "bytes": 4196358,
+          "sha256": "8bcfeefff53a4c76ccab5f85324b5eb1f3607b430dd35bd877990e3945268faf",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-8bcfeefff53a.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+          "releaseTag": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1\\afterglow-1402-944d5aeed06f-8bcfeefff53a.zip"
         }
       ]
     }

@@ -1,21 +1,44 @@
 'use strict';
 // Static cache identities and native dependencies only. Nothing is executed.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
-const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
+const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex'),offline=require('./host-offline-pack.cjs');
 function verify(output){const records=[];for(const platform of ['ps4','ps5']){
  const data=JSON.parse(fs.readFileSync(path.join(output,'offline',platform+'.json'))),manifest=fs.readFileSync(path.join(output,'offline',platform+'.manifest'),'utf8'),known=new Set();let total=0;
  assert.equal(data.platform,platform);assert.match(manifest,/^CACHE MANIFEST\n/);assert.ok(data.files.length>0&&data.files.length<=4096);assert.equal(data.version,sha(JSON.stringify(data.files)).slice(0,24));assert.match(manifest,new RegExp('# WWB HOST '+platform+' '+data.version));
- for(const file of data.files){const url=new URL(file.url,'https://speedy-away.github.io');assert.equal(url.origin,'https://speedy-away.github.io');assert.ok(!known.has(file.url),file.url);known.add(file.url);let name=decodeURIComponent(url.pathname.slice(1));if(!name||name.endsWith('/'))name+='index.html';const bytes=fs.readFileSync(path.join(output,name));assert.equal(bytes.length,file.bytes,file.url);assert.equal(sha(bytes),file.sha256,file.url);total+=bytes.length;assert.ok(manifest.split('\n').includes(file.url),file.url);if(name.endsWith('.html')&&name.startsWith('hosts/')&&!['hosts/index.html','hosts/updates/index.html'].includes(name)&&!require('./host-offline-pack.cjs').optionalCache(name))assert.match(bytes.toString(),new RegExp('<html[^>]*manifest="/offline/'+platform+'\\.manifest"'),name);assert.ok(!/\.(?:zip|7z|rar|pkg)$/.test(url.pathname));}
+ for(const file of data.files){const url=new URL(file.url,'https://speedy-away.github.io');assert.equal(url.origin,'https://speedy-away.github.io');assert.ok(!known.has(file.url),file.url);known.add(file.url);let name=decodeURIComponent(url.pathname.slice(1));if(!name||name.endsWith('/'))name+='index.html';assert.equal(offline.optionalCache(name),false,file.url+' must stay outside the general platform cache');const bytes=fs.readFileSync(path.join(output,name));assert.equal(bytes.length,file.bytes,file.url);assert.equal(sha(bytes),file.sha256,file.url);total+=bytes.length;assert.ok(manifest.split('\n').includes(file.url),file.url);if(name.endsWith('.html')&&name.startsWith('hosts/')&&!['hosts/index.html','hosts/updates/index.html'].includes(name))assert.match(bytes.toString(),new RegExp('<html[^>]*manifest="/offline/'+platform+'\\.manifest"'),name);assert.ok(!/\.(?:zip|7z|rar|pkg)$/.test(url.pathname));}
+ for(const line of manifest.split('\n')){const token=line.trim().split(/\s+/)[0];if(!token.startsWith('/'))continue;const url=new URL(token,'https://speedy-away.github.io');let name=decodeURIComponent(url.pathname.slice(1));if(!name||name.endsWith('/'))name+='index.html';assert.equal(offline.optionalCache(name),false,token+' must stay outside the general platform cache');}
  if(fs.existsSync(path.join(output,'hosts/updates/index.html'))){assert.ok(known.has('/hosts/updates/')&&known.has('/hosts/updates/index.html'));}
  assert.equal(total,data.bytes);assert.ok(total<=80*1024*1024);for(const url of ['/hosts/'+platform+'/','/hosts/'+platform+'/index.html','/offline/'+platform+'/','/offline/'+platform+'/index.html'])assert.ok(known.has(url),url);
  for(const route of require('./host-public-routes.cjs').routes().filter(route=>route.target.startsWith(platform+'/'))){
   const page='/'+route.target,directory=page.replace(/index\.html$/,'');
+  if(offline.optionalCache(route.target)){assert.ok(!known.has(page)&&!known.has(directory),page+' must stay outside the general platform cache');continue;}
   assert.ok(known.has(page)&&known.has(directory),page+' must be cached at both public forms');
   assert.ok(manifest.includes(directory+'? '+directory),directory+' must retain offline query navigation');
  }
  assert.ok(manifest.includes('/hosts/'+platform+'/? /hosts/'+platform+'/'));assert.ok(manifest.includes('/hosts/'+platform+'/index.html? /hosts/'+platform+'/index.html'));
  const hub=fs.readFileSync(path.join(output,'hosts',platform,'index.html'),'utf8');assert.match(hub,new RegExp('href="/offline/'+platform+'/"'));assert.doesNotMatch(hub,/https:\/\/whatwhatboy\.com\/offline\//);if(platform==='ps4')assert.ok(hub.includes('data-host-firmware="10.50"'));
- const root=path.resolve(__dirname,'..'),groups=require('./host-compact-pages.cjs').groups(root).filter(group=>group.platform===platform);for(const group of groups){if(group.id==='ps4-afterglow-1402'){const fresh=JSON.parse(fs.readFileSync(path.join(root,'docs/afterglow-1402-build.json')));for(const file of fresh.files){const bytes=fs.readFileSync(path.join(output,fresh.base,'web',file.path));assert.equal(sha(bytes),file.sha256,file.path+' opt-in cache bytes must stay unchanged');}assert.ok(!known.has(group.runtimeEntry),'Optional runtime is excluded from the automatic platform cache');continue;}assert.ok(known.has(group.runtimeEntry),group.runtimeEntry);const entry=group.entry.endsWith('/')?group.entry+'index.html':group.entry;assert.ok(known.has(entry),entry);}
+ const root=path.resolve(__dirname,'..'),groups=require('./host-compact-pages.cjs').groups(root).filter(group=>group.platform===platform);for(const group of groups){
+  if(group.id==='ps4-afterglow-1402'){
+   const fresh=JSON.parse(fs.readFileSync(path.join(root,'docs/afterglow-1402-build.json')));
+   for(const file of fresh.original.filter(file=>!file.path.startsWith('.'))){
+    const bytes=fs.readFileSync(path.join(output,fresh.base,'web',file.path));
+    assert.equal(sha(bytes),file.sha256,file.path+' published upstream bytes must stay unchanged');
+   }
+   for(const file of fresh.files){
+    const published=path.join(output,fresh.base,'web',file.path);
+    assert.ok(fs.existsSync(published),file.path+' current 14.02 runtime file must be published');
+    assert.equal(sha(fs.readFileSync(published)),file.sha256,file.path+' published optional bytes must stay unchanged');
+   }
+   const loader=fresh.files.find(file=>file.path===fresh.loaderBundle.page);
+   assert.ok(loader,'14.02 loader-page build record is required');
+   const loaderHTML=fs.readFileSync(path.join(output,fresh.base,'web',loader.path),'utf8');
+   assert.doesNotMatch(loaderHTML,/<html\b[^>]*\bmanifest=/i,'loaders.html must remain outside Application Cache');
+   assert.match(loaderHTML,/href="ps4-loader-sender\.zip"\s+download/,'loaders.html must retain its local sender download');
+   for(const url of [group.entry,group.entry+'index.html','/ps4/14.02/','/ps4/14.02/index.html',group.runtimeEntry])assert.ok(!known.has(url),url+' must not be in the general PS4 cache');
+   continue;
+  }
+  assert.ok(known.has(group.runtimeEntry),group.runtimeEntry);const entry=group.entry.endsWith('/')?group.entry+'index.html':group.entry;assert.ok(known.has(entry),entry);
+ }
  if(platform==='ps5'){for(const leaf of ['guard.js','web/payloads/elfldr-ps5-1360.elf','web/payloads/kexp_2026_05_25.bin'])assert.ok(known.has('/hosts/runtime/ps5-webkit-dd8e4e0914c5/'+leaf));for(const fw of require('./host-compact-pages.cjs').groups(root).find(group=>group.id==='ps5-webkit-dd8e4e0914c5').firmwares)assert.ok(known.has('/hosts/runtime/ps5-webkit-dd8e4e0914c5/web/offsets/'+fw+'.js'));const run=fs.readFileSync(path.join(output,'hosts/runtime/ps5-webkit-dd8e4e0914c5/web/index.html'),'utf8');assert.ok(run.indexOf('host-offline-runtime.js')<run.indexOf('src="../guard.js"'));}
  if(platform==='ps4'){const gamer=groups.find(group=>group.id==='gamerhack-g2all');assert.ok(gamer&&gamer.originalEntry.cacheRequired);for(const query of ['g2all/slopkit/core.js?v=10','g2all/slopkit/jb.js?v=19'])assert.ok(known.has(gamer.runtime+query),query);assert.ok(data.files.some(file=>/\/ps4-trainer\/data\//.test(file.url)));}
  assert.ok(data.files.some(file=>file.url.endsWith('.xml')));records.push({platform,files:data.files.length,bytes:total,version:data.version});

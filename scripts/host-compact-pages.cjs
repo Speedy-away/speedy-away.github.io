@@ -113,7 +113,7 @@ function groups(root){
  return rows.filter(g=>g.firmwares?.length&&/^\/hosts\//.test(g.entry)&&fs.existsSync(path.join(root,g.entry.replace(/^\//,'').replace(/\/$/,'/index.html')))).sort((a,b)=>Number(a.firmwares[0])-Number(b.firmwares[0]));
 }
 function actionForGroup(g,platform,previous){
-  if(g.chooserOnly)return {id:'local-'+g.id,platform,category:'loaders',label:g.label,firmwareLabel:'14.02 · WebKit Exploit',firmwares:g.firmwares.slice(),format:'Built-in browser loader',launchURL:g.runtimeEntry,entryURL:'/ps4/14.02/',runtimeId:g.id,browserHost:true,source:g.source.repository+'/tree/'+g.source.commit,requirements:['PS4 firmware 14.02. Choose GoldHEN or ps4-hen on the built-in Afterglow page.','Offline caching and autostart are optional.']};
+  if(g.chooserOnly)return {id:'local-'+g.id,platform,category:'loaders',label:g.label,firmwareLabel:'14.02 · WebKit Exploit',firmwares:g.firmwares.slice(),format:'Built-in browser loader',launchURL:g.runtimeEntry,entryURL:'/ps4/14.02/',runtimeId:g.id,browserHost:true,source:g.source.repository+'/tree/'+g.source.commit,requirements:['PS4 firmware 14.02. Start every attempt from the pinned upstream Afterglow landing page, then choose GoldHEN 2.4b18.14 or the upstream-bundled ps4-hen.','Allow Afterglow\'s Application Cache update and reload to finish before starting. A kernel allocation race can still freeze or power off the console.']};
   if(g.id==='ps5-umtx'){
    const builtin=previous.find(a=>a.id==='built-in-ps5-umtx');if(!builtin)throw Error('Missing verified PS5 UMTX browser action.');
    return {...builtin,label:g.label,firmwareLabel:g.label.replace(/^PS5 WebKit Exploit - /,''),firmwares:g.firmwares.slice(),launchURL:g.runtimeEntry};
@@ -155,7 +155,7 @@ function build(root){
  for(const p of ['ps4','ps5']){const file=path.join(root,'hosts',p,'firmware/index.html');fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,directory(root,p));}
 }
 function apply(html,name,{base='',root}={}){
- if(name.startsWith('hosts/runtime/ps4-afterglow-944d5aeed06f/'))return html;
+ if(/^hosts\/runtime\/ps4-afterglow-(?:944d5aeed06f|587c00a564c4)\//.test(name))return html;
  const runtimeAfter=/^hosts\/runtime\/ps4-afterglow-[a-f0-9]{12}\/web\/index\.html$/.test(name);
  const runtimePS5=/^hosts\/runtime\/ps5-webkit-[a-f0-9]{12}\/index\.html$/.test(name);
  const nativeLanding=runtimeAfter||runtimePS5;

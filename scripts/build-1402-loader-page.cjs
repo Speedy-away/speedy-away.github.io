@@ -21,7 +21,7 @@ function build(root,base,write){
  .replace('href="/hosts/ps4/afterglow-1402/"','href="index.html"')
  .replace('<h1>BIN &amp; ELF loaders</h1>','<h1>14.02 BIN &amp; ELF loaders</h1>')
  .replace('PLAYSTATION 4 · PAYLOAD TOOLS','PLAYSTATION 4 · FIRMWARE 14.02')
- .replace('Start your jailbreak, enable the matching loader, then send one compatible payload.','Run WebKit Exploit first, enable the HEN BIN loader, then send a compatible payload. This page and its ELF-loader files are included when you cache 14.02.')
+ .replace('Start your jailbreak, enable the matching loader, then send one compatible payload.','Run WebKit Exploit first, enable the HEN BIN loader, then send a compatible payload. This separate tool page is not part of Afterglow\'s Application Cache.')
  .replace('placeholder="14.02" pattern=','value="14.02" readonly pattern=')
  .replace(/<option value="bin-tcp">[^<]*<\/option>/,'')
  .replace('http://127.0.0.1:8766/hosts/ps4/loaders/','http://127.0.0.1:8766/hosts/ps4/loaders/?firmware=14.02');

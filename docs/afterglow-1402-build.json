@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "commit": "944d5aeed06fdff7d2fc1ce044d5daa272d85800",
-  "base": "hosts/runtime/ps4-afterglow-944d5aeed06f",
+  "schemaVersion": 2,
+  "commit": "587c00a564c4765b78ab413e400a392efdd9a780",
+  "base": "hosts/runtime/ps4-afterglow-587c00a564c4",
   "group": {
     "id": "ps4-afterglow-1402",
     "label": "PS4 WebKit Exploit - 14.02",
@@ -10,11 +10,11 @@
       "14.02"
     ],
     "entry": "/hosts/ps4/afterglow-1402/",
-    "runtimeEntry": "/hosts/runtime/ps4-afterglow-944d5aeed06f/web/index.html",
+    "runtimeEntry": "/hosts/runtime/ps4-afterglow-587c00a564c4/web/index.html",
     "chooserOnly": true,
     "source": {
       "repository": "https://github.com/well0nez/afterglow-web",
-      "commit": "944d5aeed06fdff7d2fc1ce044d5daa272d85800"
+      "commit": "587c00a564c4765b78ab413e400a392efdd9a780"
     }
   },
   "original": [
@@ -23,263 +23,243 @@
       "bytes": 19,
       "sha256": "f14b3ec7a2da1c6be0f5f85db8320164d0cac821d1bd9af21966b758662ea77c",
       "gitBlobSHA1": "d94c0c85b5174de2c9df20f2b12e793dbf1d0845",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/.gitignore"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/.gitignore"
     },
     {
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "gitBlobSHA1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/.nojekyll"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 34523,
-      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
-      "gitBlobSHA1": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/LICENSE"
-    },
-    {
-      "path": "LICENSE-raw13g",
-      "bytes": 1362,
-      "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68",
-      "gitBlobSHA1": "5d006df406dfd4c9a5d92d424a92339882a3345e",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/LICENSE-raw13g"
-    },
-    {
-      "path": "README.md",
-      "bytes": 5732,
-      "sha256": "fb730074d14c6832b542e8a91b704fb10d8f45a189c35a58307aa8ddcf4e0c2e",
-      "gitBlobSHA1": "33913aa90cf936de42ff06bba878661b3992aa45",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/README.md"
-    },
-    {
-      "path": "TECHNICAL.md",
-      "bytes": 5835,
-      "sha256": "f77d1f564ee13894c4277400ef0f346fe96dd870d12c993bbf7ec00e4aabc673",
-      "gitBlobSHA1": "35498d374ce4fbb040e3eef3f7b24768a4b29b6d",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/TECHNICAL.md"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/.nojekyll"
     },
     {
       "path": "afterglow.js",
       "bytes": 101210,
       "sha256": "550a60485113a8b14def5ef856786b0b3b709d0322072ae5ad36be934759b74e",
       "gitBlobSHA1": "f1bfdf2874e038f8506e8aec858c077d14c75742",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/afterglow.js"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/afterglow.js"
     },
     {
       "path": "cache.appcache",
       "bytes": 1273,
-      "sha256": "9d57017475f8246b7820a7c8df2fa73a3dc6643e90524eff0ac2252aaf54138b",
-      "gitBlobSHA1": "44bc727d9cf134778ccf09a8b35e8ee9fdc8239a",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/cache.appcache"
+      "sha256": "ed89ad464d628fa7463bf56a7360dc6ed1bce14558db6cdfc7578c9d46cda14c",
+      "gitBlobSHA1": "6395a443281b2dad840a246cc4bc16e04519c29b",
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/cache.appcache"
     },
     {
       "path": "core.js",
       "bytes": 48459,
       "sha256": "ca9f4676176f50bd46320bc7fc815c16e8f4c13289b00ac4a34b31e8d0301e8d",
       "gitBlobSHA1": "28fb5747ba20206d905723526a0250b75c913d8f",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/core.js"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/core.js"
     },
     {
       "path": "goldhen.bin",
       "bytes": 298776,
-      "sha256": "fd68056e16a00dd3e18fcc97013b05b0b530d26be438f682bb25af9ab298dd19",
-      "gitBlobSHA1": "e7b90933fae0d637d99d9178fee7ebfc8fc268eb",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/goldhen.bin"
+      "sha256": "c5480587d99efc2e3cc132352d9b7cf052dd3068280f1686e7fbb37d57e9ba8b",
+      "gitBlobSHA1": "2d04ed98d2af86677472278d47eefa1fec45bb48",
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/goldhen.bin"
     },
     {
       "path": "hen.bin",
       "bytes": 500864,
       "sha256": "420f5cfd72ec401f02beaaf3ddbe63b21c2ba1696904810044220e8d5f7cb5a2",
       "gitBlobSHA1": "70b0fd0e4d9f4b5024b7d1c8ba699d27f0057337",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/hen.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/hen.bin"
     },
     {
       "path": "index.html",
       "bytes": 1500,
       "sha256": "bd03972d85c14ee305211c0812b344647dcd4e4e8b0e5da97f0ec92ebb4ab881",
       "gitBlobSHA1": "ba39df7445262ea2e9086b941551bfdfb8df9a3b",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/index.html"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/index.html"
     },
     {
       "path": "int64.js",
       "bytes": 2548,
       "sha256": "611da6a52da5ecf970a3718ab2a4561d3992c655c55342d066d12a9a50554f34",
       "gitBlobSHA1": "ee8d9e6c7e8d4538449fb5eec02062c4fc64e0ef",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/int64.js"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/int64.js"
     },
     {
       "path": "jb.html",
       "bytes": 5340,
       "sha256": "208794fbe6916a74ea8952b0f47ec55bc9aa536ef6817bc62f5aa17dcedfce51",
       "gitBlobSHA1": "b0f8ccbbf680d690df2fc5979d4e6a8b235803e0",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/jb.html"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/jb.html"
     },
     {
       "path": "jb.js",
       "bytes": 28468,
       "sha256": "b3e99d1dc5b6eee7f8a1a26a8d24a9a38abb442f0743f32b9fdec46f85410693",
       "gitBlobSHA1": "7d1d670d18977251a4b9988a665bf809d680ac6a",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/jb.js"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/jb.js"
     },
     {
       "path": "launch.js",
       "bytes": 7663,
       "sha256": "f46f3665fd5a0932a78161f4b05bf6d75561105583573233d2d05cf2492888a9",
       "gitBlobSHA1": "1fd9c012a8bba16330c18fec5cdc53ed0b02ca60",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/launch.js"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/launch.js"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "gitBlobSHA1": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/LICENSE"
+    },
+    {
+      "path": "LICENSE-raw13g",
+      "bytes": 1362,
+      "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68",
+      "gitBlobSHA1": "5d006df406dfd4c9a5d92d424a92339882a3345e",
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/LICENSE-raw13g"
     },
     {
       "path": "make-manifest.sh",
       "bytes": 2128,
       "sha256": "4717a7abd7f65dad32543e982b9ab532bb82f68a79f1a18927d8d3077c47312a",
       "gitBlobSHA1": "9509f28a39bb9d7e8d1dc09b06c93b5478c1fa77",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/make-manifest.sh"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/make-manifest.sh"
     },
     {
       "path": "mem.js",
       "bytes": 26703,
       "sha256": "71f700963b0fd2da1fd877122561a343507eb71050451a376daaeaf4f71f1da0",
       "gitBlobSHA1": "e60e96f9f33b3a5ad592721f4b4f17e4196b2976",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/mem.js"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/mem.js"
     },
     {
       "path": "meme.png",
       "bytes": 39303,
       "sha256": "bfce116aec5b015e29c0b13e96782fc8fcf2dc7c664131df8dfa9e52e7056cdf",
       "gitBlobSHA1": "66c26811fa433ad47b982fc25239492d48f1142f",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/meme.png"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/meme.png"
     },
     {
       "path": "patchset-1200.bin",
       "bytes": 641,
       "sha256": "06f287712759bfb24f44ba54a0b13326bfd02e69f90f3d45f8d57c6e897e46cd",
       "gitBlobSHA1": "94e921d463d52a717c09b377c0dd7c7ec4aa56fa",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1200.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1200.bin"
     },
     {
       "path": "patchset-1202.bin",
       "bytes": 641,
       "sha256": "06f287712759bfb24f44ba54a0b13326bfd02e69f90f3d45f8d57c6e897e46cd",
       "gitBlobSHA1": "94e921d463d52a717c09b377c0dd7c7ec4aa56fa",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1202.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1202.bin"
     },
     {
       "path": "patchset-1250.bin",
       "bytes": 641,
       "sha256": "2807a61641eec265e74a50ca053f35a128704c2195850c53b549b3057348c125",
       "gitBlobSHA1": "dade61ae26e0548bcf50e15533e11261fb114f40",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1250.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1250.bin"
     },
     {
       "path": "patchset-1252.bin",
       "bytes": 641,
       "sha256": "2807a61641eec265e74a50ca053f35a128704c2195850c53b549b3057348c125",
       "gitBlobSHA1": "dade61ae26e0548bcf50e15533e11261fb114f40",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1252.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1252.bin"
     },
     {
       "path": "patchset-1300.bin",
       "bytes": 641,
       "sha256": "7a18b1f8d37a2ef5e1becd51714a3783c3af0bf55047e86938fc9f7b7c7d09c8",
       "gitBlobSHA1": "1d0b392d63cfa00349f40876d5efcd3cd42c6a20",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1300.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1300.bin"
     },
     {
       "path": "patchset-1302.bin",
       "bytes": 641,
       "sha256": "a92beb75ad78986b39cc27e53d6d69a60b2a09f13c16937d292f314644052cf9",
       "gitBlobSHA1": "989e185d035092f2056acc000a3ee42a3e85f2e3",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1302.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1302.bin"
     },
     {
       "path": "patchset-1304.bin",
       "bytes": 641,
       "sha256": "a92beb75ad78986b39cc27e53d6d69a60b2a09f13c16937d292f314644052cf9",
       "gitBlobSHA1": "989e185d035092f2056acc000a3ee42a3e85f2e3",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1304.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1304.bin"
     },
     {
       "path": "patchset-1350.bin",
       "bytes": 641,
       "sha256": "6f60cedb25810886b96227b3e3c2d2b528eda7b0e95aa2667a88baefcdb6f829",
       "gitBlobSHA1": "d110f05e5936c0573bba5054aea3b091a049d3cd",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1350.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1350.bin"
     },
     {
       "path": "patchset-1352.bin",
       "bytes": 632,
       "sha256": "adfb9771904f71cd1f5a82cbded8ac46c7ffeb3df974579535cf711904ac347e",
       "gitBlobSHA1": "cb07a2b2340e054f1b823245ccf74cfe47d36839",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1352.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1352.bin"
     },
     {
       "path": "patchset-1400.bin",
       "bytes": 641,
       "sha256": "615f275b96831cc04173757db39e93f0d27b52888976af2a6444604aa8ac5dbf",
       "gitBlobSHA1": "65256bb99e592ad1f0650aeb1907302ed0149c53",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1400.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1400.bin"
     },
     {
       "path": "patchset-1402.bin",
       "bytes": 641,
       "sha256": "df2145f21ecb8322fd2b062f7f0b8cacca75c96205bc34d96f2d7198bfce9cd3",
       "gitBlobSHA1": "92ead7629a84d9425743249c11d4ec472c756e2b",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/patchset-1402.bin"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/patchset-1402.bin"
     },
     {
       "path": "ps4_offsets.js",
       "bytes": 17995,
       "sha256": "ed375f3bcd2a1807aecbbf6d2c0d7f8a83a43164e6e32895ddd12e739a8cebe2",
       "gitBlobSHA1": "b209331d46b43f71ee2c26bfd4e866a44448d1e7",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/ps4_offsets.js"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/ps4_offsets.js"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5749,
+      "sha256": "2deb19afc55137596c9723959e9d4d2ccfc9b4a25206a155228ba76a29116836",
+      "gitBlobSHA1": "dd13e27349c2dcb1b18efa0de61c43ebf680fad1",
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/README.md"
     },
     {
       "path": "serve.sh",
       "bytes": 2726,
       "sha256": "bf6af8004324e3aa6543498c74f94478d195b1629f50cca221f69316e5fbd461",
       "gitBlobSHA1": "35520cf0758a86284d080780a95e24965231cf5f",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/serve.sh"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/serve.sh"
     },
     {
       "path": "style.css",
       "bytes": 5290,
       "sha256": "bf6dce6c77b45c39c7a65ab46b29f86bc8ffe2c13e84c038a9701ac8fea52db6",
       "gitBlobSHA1": "c531aba7f3cf88edbe58b89bc0c37fc05685777e",
-      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/944d5aeed06fdff7d2fc1ce044d5daa272d85800/style.css"
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/style.css"
+    },
+    {
+      "path": "TECHNICAL.md",
+      "bytes": 5835,
+      "sha256": "f77d1f564ee13894c4277400ef0f346fe96dd870d12c993bbf7ec00e4aabc673",
+      "gitBlobSHA1": "35498d374ce4fbb040e3eef3f7b24768a4b29b6d",
+      "sourceURL": "https://raw.githubusercontent.com/well0nez/afterglow-web/587c00a564c4765b78ab413e400a392efdd9a780/TECHNICAL.md"
     }
   ],
   "files": [
-    {
-      "path": "afterglow-1402.css",
-      "bytes": 9136,
-      "sha256": "a84b80d00a2f5e1dac855a4ea7664b924e9244a9d793845aab31eeed49e6df76"
-    },
     {
       "path": "afterglow.js",
       "bytes": 101210,
       "sha256": "550a60485113a8b14def5ef856786b0b3b709d0322072ae5ad36be934759b74e"
     },
     {
-      "path": "cache-frame.html",
-      "bytes": 178,
-      "sha256": "24d3f24739312d6678c3996a691b3546da6e691ea5851462b52d70facf259879"
-    },
-    {
-      "path": "cache-frame.js",
-      "bytes": 1456,
-      "sha256": "a7d334179bb9b6546382c6bb75a4997b783baa300738699cb35ec892b5ccf48c"
-    },
-    {
       "path": "cache.appcache",
-      "bytes": 1904,
-      "sha256": "e889460c1e01ced7d2c9da44e7ece17d9391b6018e02dc76f2160e8ca15fdda5"
-    },
-    {
-      "path": "cache.js",
-      "bytes": 6531,
-      "sha256": "49d361779f494f4aa51bbd6ccac65182fee0f86849c5d0bec72b773edfbfb07f"
+      "bytes": 1273,
+      "sha256": "ed89ad464d628fa7463bf56a7360dc6ed1bce14558db6cdfc7578c9d46cda14c"
     },
     {
       "path": "core.js",
@@ -299,7 +279,7 @@
     {
       "path": "goldhen.bin",
       "bytes": 298776,
-      "sha256": "fd68056e16a00dd3e18fcc97013b05b0b530d26be438f682bb25af9ab298dd19"
+      "sha256": "c5480587d99efc2e3cc132352d9b7cf052dd3068280f1686e7fbb37d57e9ba8b"
     },
     {
       "path": "hen.bin",
@@ -312,14 +292,9 @@
       "sha256": "8be1a240e12db4fb91de414e3f140496c19c4a4e1ccdc1c186f7a1a36d5d30df"
     },
     {
-      "path": "host-xmb-waves.svg",
-      "bytes": 2009,
-      "sha256": "b4e7e6aa133bd988fdf12a164005fd5684d97f7d44cab063a02208eab7e99d83"
-    },
-    {
       "path": "index.html",
-      "bytes": 6157,
-      "sha256": "1f460b71e7cde98d233f5291162f8106939f15e8178304e2f979a71d322fcbdc"
+      "bytes": 1500,
+      "sha256": "bd03972d85c14ee305211c0812b344647dcd4e4e8b0e5da97f0ec92ebb4ab881"
     },
     {
       "path": "int64.js",
@@ -328,8 +303,8 @@
     },
     {
       "path": "jb.html",
-      "bytes": 9351,
-      "sha256": "d8b1dba04c741d27b691cc32f2b6d333637d8e7cabc40bbfe115bf5b5c8ce2d7"
+      "bytes": 5340,
+      "sha256": "208794fbe6916a74ea8952b0f47ec55bc9aa536ef6817bc62f5aa17dcedfce51"
     },
     {
       "path": "jb.js",
@@ -337,14 +312,9 @@
       "sha256": "b3e99d1dc5b6eee7f8a1a26a8d24a9a38abb442f0743f32b9fdec46f85410693"
     },
     {
-      "path": "landing-layout.css",
-      "bytes": 1343,
-      "sha256": "5874cb5e7cbfff371fd99df14d0d538e80afff44ab3f6ce16460aac8f0414d81"
-    },
-    {
       "path": "launch.js",
-      "bytes": 5413,
-      "sha256": "1d03190b256cafe7141aedf691b1ba84aa10479a0c49034627307729ea1cddb1"
+      "bytes": 7663,
+      "sha256": "f46f3665fd5a0932a78161f4b05bf6d75561105583573233d2d05cf2492888a9"
     },
     {
       "path": "LICENSE",
@@ -359,12 +329,7 @@
     {
       "path": "loaders.html",
       "bytes": 52944,
-      "sha256": "1ceccd76939dd0bdce63765779e1f4f12c294ab2013ed45d6ddfb0b58769d6b2"
-    },
-    {
-      "path": "logo.png",
-      "bytes": 23090,
-      "sha256": "5dea413ba133f8236e385f9107521fd807d8ad3ad89265b8bd223072df3c0293"
+      "sha256": "1dbfed945787f7d5de5cc7a7d5e9034bd776509457099bb3b2d315d8bf901395"
     },
     {
       "path": "make-manifest.sh",
@@ -383,13 +348,8 @@
     },
     {
       "path": "offline-files.json",
-      "bytes": 12081,
-      "sha256": "18373e8dbb43256a5e49826f0ffb5f59afcac6d8e2964b115e9a8de629231d2a"
-    },
-    {
-      "path": "offline-sw.js",
-      "bytes": 5118,
-      "sha256": "b59b310e6573e005c3a40f9d39a1719848835d9c0619efae4390446bb62524b7"
+      "bytes": 10965,
+      "sha256": "d2681646427df7a741b3fe6ac7036acf1b37790670c446b93a99df2514ac7ef6"
     },
     {
       "path": "patchset-1200.bin",
@@ -447,11 +407,6 @@
       "sha256": "df2145f21ecb8322fd2b062f7f0b8cacca75c96205bc34d96f2d7198bfce9cd3"
     },
     {
-      "path": "pepe-banner.png",
-      "bytes": 19617,
-      "sha256": "eac1e414cc19016b87b549e160dc5d75cfedad9c984fa833a205a649061264af"
-    },
-    {
       "path": "ps4-loader-client.js",
       "bytes": 10083,
       "sha256": "6426bed194c4ddbef793b4f9f8db9e81a93300bf79989c4bd0878371810146e3"
@@ -478,18 +433,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5732,
-      "sha256": "fb730074d14c6832b542e8a91b704fb10d8f45a189c35a58307aa8ddcf4e0c2e"
+      "bytes": 5749,
+      "sha256": "2deb19afc55137596c9723959e9d4d2ccfc9b4a25206a155228ba76a29116836"
     },
     {
       "path": "serve.sh",
       "bytes": 2726,
       "sha256": "bf6af8004324e3aa6543498c74f94478d195b1629f50cca221f69316e5fbd461"
-    },
-    {
-      "path": "settings.js",
-      "bytes": 1656,
-      "sha256": "d455cb7c0c45db56ded8a49183728f02772b67d584939a5ffc744eea33135582"
     },
     {
       "path": "style.css",
@@ -699,23 +649,36 @@
     ],
     "senderSHA256": "57ffb73126da2a398b72cde834708027c5023ac55d6e8ef3b4b875aa3688f005"
   },
+  "goldhen": {
+    "version": "2.4b18.14",
+    "sha256": "c5480587d99efc2e3cc132352d9b7cf052dd3068280f1686e7fbb37d57e9ba8b"
+  },
+  "ps4Hen": {
+    "version": "upstream bundled pre-release-main-182",
+    "md5": "e7df7fb94e58a1b4a4a5e7dda4f190e1",
+    "readmeClaimedPatchedMD5": "6417a84a72f9c7988f0e33b3ae190542",
+    "provenanceStatus": "The pinned GitHub bytes do not match the patched MD5 printed in the upstream README; the exact discrepancy is recorded without executing or modifying the payload."
+  },
   "payloadsExecuted": false,
   "hardwareTested": false,
   "changes": [
-    "Exact PS4 14.02 landing and one-use run guard; opt-in autostart.",
-    "All upstream exploit modules, firmware offsets, HEN payloads and patchsets are byte-identical.",
-    "Separate immutable runtime; existing firmware routes and downloads preserved."
+    "Pinned the complete Afterglow tree at the latest upstream commit.",
+    "Published index.html, jb.html, launch.js, cache.appcache, exploit modules, firmware offsets, HEN payloads and patchsets byte-for-byte from upstream.",
+    "Updated bundled GoldHEN to 2.4b18.14.",
+    "Preserved the previous 944d5aeed06f runtime and every older download.",
+    "Kept separate WWB BIN/ELF loader tools outside Afterglow's run document and AppCache manifest."
   ],
   "limitations": [
-    "Physical console and offline persistence not tested locally.",
-    "GoldHEN numeric version is not identified by the pinned Afterglow README."
+    "Afterglow documents an unrecoverable kernel-allocation race that can still freeze or power off a console during an attempt.",
+    "The bundled hen.bin is byte-identical to the prior host and its MD5 does not match the patched MD5 printed in the upstream README.",
+    "Physical-console execution was not performed during this update."
   ],
   "archive": {
-    "filename": "afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
-    "local": "downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
-    "bytes": 4196463,
-    "sha256": "79caa7434c8c19919e95279f92f250f3fa074cf562fea89eab7b16ccdcd7c726",
-    "sourceURL": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
-    "version": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1"
+    "filename": "afterglow-1402-587c00a564c4-4833e620e59f.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-4833e620e59f.zip",
+    "bytes": 4140999,
+    "sha256": "4833e620e59fe84c9e348a144cc786d77a3d1a1c0d96871b623b230844764ff0",
+    "sourceURL": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+    "version": "587c00a564c4765b78ab413e400a392efdd9a780-upstream-exact-wwb-tools-v2"
   }
 }

@@ -338878,9 +338878,279 @@
       ],
       "status": "downloaded",
       "labels": []
+    },
+    {
+      "id": "afterglow-1402-4833e620e59f",
+      "project": "Afterglow web",
+      "title": "PS4 14.02 Afterglow · afterglow-1402-587c00a564c4-4833e620e59f.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "587c00a564c4765b78ab413e400a392efdd9a780-upstream-exact-wwb-tools-v2",
+      "url": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "files": [
+        {
+          "name": "afterglow-1402-587c00a564c4-4833e620e59f.zip",
+          "bytes": 4140999,
+          "sha256": "4833e620e59fe84c9e348a144cc786d77a3d1a1c0d96871b623b230844764ff0",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-587c00a564c4-4833e620e59f.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+          "releaseTag": "587c00a564c4765b78ab413e400a392efdd9a780-upstream-exact-wwb-tools-v2",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\587c00a564c4765b78ab413e400a392efdd9a780-upstream-exact-wwb-tools-v2\\afterglow-1402-587c00a564c4-4833e620e59f.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-source-587c00a564c4-55de4933452c",
+      "project": "Afterglow web",
+      "title": "Afterglow source · 587c00a564c4",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Source Code"
+      ],
+      "release": "587c00a564c4765b78ab413e400a392efdd9a780",
+      "url": "https://github.com/well0nez/afterglow-web/archive/587c00a564c4765b78ab413e400a392efdd9a780.zip",
+      "kind": "github-source",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "files": [
+        {
+          "name": "afterglow-web-587c00a564c4765b78ab413e400a392efdd9a780.zip",
+          "bytes": 537409,
+          "sha256": "55de4933452c66c649e314604fe433f7cb7bab80fc0820bafa4c9f34696be0a8",
+          "local": null,
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/archive/587c00a564c4765b78ab413e400a392efdd9a780.zip",
+          "releaseTag": "587c00a564c4765b78ab413e400a392efdd9a780",
+          "archiveRole": [
+            "Source Code"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Source Code\\587c00a564c4765b78ab413e400a392efdd9a780\\afterglow-web-587c00a564c4765b78ab413e400a392efdd9a780.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-79caa7434c8c",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+      "kind": "retained-ready-webhost",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
+          "bytes": 4196463,
+          "sha256": "79caa7434c8c19919e95279f92f250f3fa074cf562fea89eab7b16ccdcd7c726",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-79caa7434c8c.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+          "releaseTag": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1\\afterglow-1402-944d5aeed06f-79caa7434c8c.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-8bcfeefff53a",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-1402-944d5aeed06f-8bcfeefff53a.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+      "kind": "retained-ready-webhost",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-1402-944d5aeed06f-8bcfeefff53a.zip",
+          "bytes": 4196358,
+          "sha256": "8bcfeefff53a4c76ccab5f85324b5eb1f3607b430dd35bd877990e3945268faf",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-8bcfeefff53a.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
+          "releaseTag": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1\\afterglow-1402-944d5aeed06f-8bcfeefff53a.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-2de0be1de887",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-runtime-acf25a831725-2de0be1de887.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "kind": "retained-ready-webhost",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-runtime-acf25a831725-2de0be1de887.zip",
+          "bytes": 530914,
+          "sha256": "2de0be1de887720f0ca21d1170456c8440b0b864fb9253d7bafaa5b1aaf387d3",
+          "local": "/downloads/hosts/afterglow/afterglow-runtime-acf25a831725-2de0be1de887.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+          "releaseTag": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1\\afterglow-runtime-acf25a831725-2de0be1de887.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-d4445f4e7f3b",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-runtime-acf25a831725-d4445f4e7f3b.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "kind": "retained-ready-webhost",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-runtime-acf25a831725-d4445f4e7f3b.zip",
+          "bytes": 535552,
+          "sha256": "d4445f4e7f3becbc6ad8620cce1911252c28de881274543468d01a6ca5406825",
+          "local": "/downloads/hosts/afterglow/afterglow-runtime-acf25a831725-d4445f4e7f3b.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+          "releaseTag": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1\\afterglow-runtime-acf25a831725-d4445f4e7f3b.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-0a0d89695e9c",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-source-acf25a831725-0a0d89695e9c.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Source Code"
+      ],
+      "release": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "kind": "retained-source-package",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-source-acf25a831725-0a0d89695e9c.zip",
+          "bytes": 228453,
+          "sha256": "0a0d89695e9cf0677b026ab2bc6976c105e8984bdd53ee472e6ac32bc48e67bc",
+          "local": "/downloads/hosts/afterglow/afterglow-source-acf25a831725-0a0d89695e9c.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+          "releaseTag": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+          "archiveRole": [
+            "Source Code"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Source Code\\acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1\\afterglow-source-acf25a831725-0a0d89695e9c.zip"
+        }
+      ]
+    },
+    {
+      "id": "afterglow-retained-12e56a29a5cf",
+      "project": "Afterglow web",
+      "title": "Retained Afterglow package · afterglow-source-acf25a831725-12e56a29a5cf.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Source Code"
+      ],
+      "release": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+      "url": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+      "kind": "retained-source-package",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "provenance": "Exact repository artifact; version recovered from embedded build metadata and the contemporaneous packaging script.",
+      "files": [
+        {
+          "name": "afterglow-source-acf25a831725-12e56a29a5cf.zip",
+          "bytes": 224565,
+          "sha256": "12e56a29a5cf6d55ebaa9cf0cdf32a72bcfb6c977bc0c3d9a4ab33a8a8cf4668",
+          "local": "/downloads/hosts/afterglow/afterglow-source-acf25a831725-12e56a29a5cf.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/acf25a831725f0d44fcb64725d4ce35acbba8f9d",
+          "releaseTag": "acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1",
+          "archiveRole": [
+            "Source Code"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Source Code\\acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1\\afterglow-source-acf25a831725-12e56a29a5cf.zip"
+        }
+      ]
     }
   ],
-  "updated": "2026-11-13T21:59:44.058Z",
+  "updated": "2026-11-21T14:08:34.608Z",
   "backupRoot": "F:\\whatsite-backup-downloads-etc",
   "scope": "Menus, scripts, tools and source codes; excludes games and firmware",
   "indexRefresh": {

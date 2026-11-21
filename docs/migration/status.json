@@ -3,7 +3,19 @@
     "date": "2026-11-17",
     "summary": "Documented the exact PS4 firmware versions listed in the Afterglow web README and linked to the short compatibility page from the firmware picker.",
     "url": "https://speedy-away.github.io/ps4-firmware/",
-    "firmware": ["12.00","12.02","12.50","12.52","13.00","13.02","13.04","13.50","13.52","14.00","14.02"],
+    "firmware": [
+      "12.00",
+      "12.02",
+      "12.50",
+      "12.52",
+      "13.00",
+      "13.02",
+      "13.04",
+      "13.50",
+      "13.52",
+      "14.00",
+      "14.02"
+    ],
     "verification": "Compared the published-page source and its generator against the upstream README. Compatibility was documented from upstream; console behavior was not tested."
   },
   "ps4ReleasePublished20261113": {
@@ -345,7 +357,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-11T00:58:20.123Z",
+  "updatedAt": "2026-11-21T14:09:36.617Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -3109,5 +3121,56 @@
     "date": "2026-11-14",
     "status": "Download centre and URL downloader no longer infer a running localhost receiver from the browser user agent. Save/install offers setup until an address is explicitly selected. Original direct download URLs preserved. Actual installation requires the installed console service.",
     "published": false
+  },
+  "afterglow1402UpstreamRefresh20261121": {
+    "date": "2026-11-21",
+    "status": "Pinned upstream refresh verified locally; publication pending.",
+    "repository": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
+    "source": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+    "publicRoute": "https://speedy-away.github.io/ps4/14.02/",
+    "runtime": "/hosts/runtime/ps4-afterglow-587c00a564c4/web/index.html",
+    "change": "Replaced the active customized 14.02 runtime with the latest complete upstream tree. Allocation-sensitive upstream pages and AppCache are byte-for-byte and receive no WWB injection. Separate WWB loader tools remain outside the upstream cache, their sender ZIP stays beside the loader page, and the general PS4 offline pack excludes the 14.02 launch handoff and current runtime.",
+    "goldHEN": {
+      "version": "2.4b18.14",
+      "sha256": "c5480587d99efc2e3cc132352d9b7cf052dd3068280f1686e7fbb37d57e9ba8b"
+    },
+    "ps4Hen": {
+      "sha256": "420f5cfd72ec401f02beaaf3ddbe63b21c2ba1696904810044220e8d5f7cb5a2",
+      "md5": "e7df7fb94e58a1b4a4a5e7dda4f190e1",
+      "upstreamReadmeClaimedPatchedMd5": "6417a84a72f9c7988f0e33b3ae190542",
+      "note": "The exact pinned GitHub bytes do not match the patched MD5 printed in the upstream README; no payload was modified or executed."
+    },
+    "archive": {
+      "readyZip": "afterglow-1402-587c00a564c4-4833e620e59f.zip",
+      "readySha256": "4833e620e59fe84c9e348a144cc786d77a3d1a1c0d96871b623b230844764ff0",
+      "sourceSha256": "55de4933452c66c649e314604fe433f7cb7bab80fc0820bafa4c9f34696be0a8",
+      "scopedIndex": "F:/whatsite-backup-downloads-etc/files/PS4/Hosts/afterglow web/download-inventory.json",
+      "indexedFiles": 33,
+      "repositoryZipsPreserved": 22,
+      "missingFiles": 0,
+      "hashMismatches": 0
+    },
+    "verification": {
+      "focusedTests": 53,
+      "passed": 53,
+      "failed": 0,
+      "publishingChecks": 5,
+      "releaseBytes": 906079034,
+      "releaseFiles": 7867,
+      "nativeScriptsUnchanged": 1040,
+      "payloadsExecuted": false,
+      "hardwareVerified": false
+    },
+    "limitations": [
+      "Afterglow documents an unrecoverable kernel-allocation race, so an attempt can still freeze or power off a console.",
+      "Physical PS4 14.02 execution and Application Cache persistence remain untested.",
+      "The upstream-bundled hen.bin provenance discrepancy remains unresolved upstream."
+    ],
+    "publication": {
+      "status": "pending",
+      "commit": null,
+      "workflow": null,
+      "liveCheckedAt": null
+    }
   }
 }

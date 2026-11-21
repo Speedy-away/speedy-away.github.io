@@ -101,6 +101,10 @@ function build(output,revision='main',root=ROOT){
  if(fs.existsSync(senderManifest))for(const sender of JSON.parse(fs.readFileSync(senderManifest,'utf8')).files)if(sender.publicDownloadURL){assert.ok(require('./sender-download-url.cjs').isAllowed(sender.publicDownloadURL),'Invalid sender download source');mapping[sender.url]=sender.publicDownloadURL;}
  for(const file of files)if(mapping['/'+file.name])bytes-=file.bytes;
  const pinned=activeRuntimeFiles(root,selected),cached=cacheResources(root,selected),raw=p=>'https://raw.githubusercontent.com/Speedy-away/speedy-away.github.io/'+revision+'/'+p.split('/').map(encodeURIComponent).join('/');
+ // The authored 14.02 loader page links to this small, hash-pinned helper by
+ // relative name. Keep the helper beside the page instead of offloading it.
+ const afterglow1402Sender='hosts/runtime/ps4-afterglow-587c00a564c4/web/ps4-loader-sender.zip';
+ if(selected.includes(afterglow1402Sender))pinned.add(afterglow1402Sender);
  const candidates=files.filter(f=>/^downloads\//.test(f.name)&&!(/\.(?:html|json|js|css|txt|md|ini|xml)$/i.test(f.name))||/^hosts\/runtime\/.*\/(?:_decoded|_unavailable)\//.test(f.name)||/^hosts\/runtime\/.*\.(?:bin|elf|bz2|zip)$/i.test(f.name)).sort((a,b)=>b.bytes-a.bytes);
  for(const f of candidates){if(mapping['/'+f.name])continue;if(pinned.has(f.name)||cached.has(f.name)||bytes<LIMIT&& !/^downloads\/.+\.zip$/.test(f.name))continue;mapping['/'+f.name]=raw(f.name);bytes-=f.bytes;}
  assert.ok(bytes<LIMIT,'Active runtime deployment exceeds Pages budget');
@@ -206,7 +210,7 @@ function build(output,revision='main',root=ROOT){
   const runtime=f.name.startsWith('hosts/runtime/'),immutable=f.name.startsWith('downloads/')||/^console\/ps[45]\/whatsite-ps[45]\.html$/.test(f.name);
   if(runtime&&/\.m?js$/i.test(f.name)){nativeFiles++;}
   else if(!immutable&&/\.(?:html|js|css|json|xml|md|txt)$/i.test(f.name)){let text=original.toString('utf8');if(!runtime)text=rewrite(text,f.name);
-   if(runtime&&f.name.endsWith('.html')&&!f.name.startsWith('hosts/runtime/ps4-afterglow-944d5aeed06f/')){
+   if(runtime&&f.name.endsWith('.html')&&!/^hosts\/runtime\/ps4-afterglow-(?:944d5aeed06f|587c00a564c4)\//.test(f.name)){
     const compact=require('./host-compact-pages.cjs');
     text=runtimeConfigHTML(compact.apply(text,f.name,{base:BASE,root}));
     text=require('./host-ps5-webkit-ui.cjs').apply(text,f.name,{base:BASE});

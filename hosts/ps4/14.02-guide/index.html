@@ -1,5 +1,13 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/assets/host-compact.css"><link rel="stylesheet" href="/assets/host-blue-theme.css"><style>.jailbreak-guide{max-width:900px}.jailbreak-guide p,.jailbreak-guide li{max-width:72ch;line-height:1.75}.jailbreak-guide h2{margin-top:36px}.jailbreak-guide a{color:#b5d4ff}.guide-start{display:inline-block;padding:14px 24px;border:1px solid #82b6f8;background:#213e60;border-radius:5px;text-decoration:none}.host-taskbar{flex-wrap:wrap}</style><title>PS4 14.02 Jailbreak, GoldHEN &amp; Offline Cache | WWB HOST</title>
-<meta name="description" content="PS4 14.02 jailbreak guide: built-in WebKit Exploit, GoldHEN or ps4-hen, BIN/ELF loader tools, autostart and offline cache settings.">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/assets/host-compact.css">
+  <link rel="stylesheet" href="/assets/host-blue-theme.css">
+  <style>.jailbreak-guide{max-width:900px}.jailbreak-guide p,.jailbreak-guide li{max-width:72ch;line-height:1.75}.jailbreak-guide h2{margin-top:36px}.jailbreak-guide a{color:#b5d4ff}.guide-start{display:inline-block;padding:14px 24px;border:1px solid #82b6f8;background:#213e60;border-radius:5px;text-decoration:none}.host-taskbar{flex-wrap:wrap}.warning{padding:16px;border-left:4px solid #ffbe55;background:#251f16}</style>
+  <title>PS4 14.02 Jailbreak, GoldHEN &amp; Offline Cache | WWB HOST</title>
+<meta name="description" content="PS4 14.02 jailbreak guide for the pinned upstream Afterglow host, GoldHEN 2.4b18.14, AppCache, recovery guidance and exact HEN provenance.">
 <meta name="keywords" content="PS4 14.02 jailbreak, PS4 14.02 WebKit exploit, Afterglow, WebKitty, PS4 jailbreak 14.02, PlayStation 4 14.02 jailbreak, PS4 14.02 GoldHEN, PS4 14.02 ps4-hen, PS4 14.02 offline cache, PS4 14.02 BIN loader, PS4 14.02 ELF loader, Afterglow PS4 14.02, WebKitty PS4, ps4-hen, automatic offline cache, WWB HOST, whatwhatboy">
 <meta name="author" content="whatwhatboy">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -9,7 +17,7 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://speedy-away.github.io/hosts/ps4/14.02-guide/">
 <meta property="og:title" content="PS4 14.02 Jailbreak, GoldHEN &amp; Offline Cache | WWB HOST">
-<meta property="og:description" content="PS4 14.02 jailbreak guide: built-in WebKit Exploit, GoldHEN or ps4-hen, BIN/ELF loader tools, autostart and offline cache settings.">
+<meta property="og:description" content="PS4 14.02 jailbreak guide for the pinned upstream Afterglow host, GoldHEN 2.4b18.14, AppCache, recovery guidance and exact HEN provenance.">
 <meta property="og:image" content="https://speedy-away.github.io/assets/images/host-selector/whatwhatboy-ps4.jpg">
 <meta property="og:image:secure_url" content="https://speedy-away.github.io/assets/images/host-selector/whatwhatboy-ps4.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -18,8 +26,45 @@
 <meta property="og:image:alt" content="PlayStation 4 console and DualShock 4 controller">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PS4 14.02 Jailbreak, GoldHEN &amp; Offline Cache | WWB HOST">
-<meta name="twitter:description" content="PS4 14.02 jailbreak guide: built-in WebKit Exploit, GoldHEN or ps4-hen, BIN/ELF loader tools, autostart and offline cache settings.">
+<meta name="twitter:description" content="PS4 14.02 jailbreak guide for the pinned upstream Afterglow host, GoldHEN 2.4b18.14, AppCache, recovery guidance and exact HEN provenance.">
 <meta name="twitter:image" content="https://speedy-away.github.io/assets/images/host-selector/whatwhatboy-ps4.jpg">
 <meta name="twitter:image:alt" content="PlayStation 4 console and DualShock 4 controller">
-<script id="site-page-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://speedy-away.github.io/#website","url":"https://speedy-away.github.io/","name":"WWB HOST","alternateName":"whatwhatboy PS4 / PS5 Host","inLanguage":["en","es","pt","fr","de","ru","tr","pl","it","zh","ja","ko","th","vi","id","hi","sr","nl","ka","ar","he"]},{"@type":"WebPage","@id":"https://speedy-away.github.io/hosts/ps4/14.02-guide/#webpage","url":"https://speedy-away.github.io/hosts/ps4/14.02-guide/","name":"PS4 14.02 Jailbreak, GoldHEN & Offline Cache | WWB HOST","description":"PS4 14.02 jailbreak guide: built-in WebKit Exploit, GoldHEN or ps4-hen, BIN/ELF loader tools, autostart and offline cache settings.","inLanguage":"en","isPartOf":{"@id":"https://speedy-away.github.io/#website"},"keywords":"PS4 14.02 jailbreak, PS4 14.02 WebKit exploit, Afterglow, WebKitty, PS4 jailbreak 14.02, PlayStation 4 14.02 jailbreak, PS4 14.02 GoldHEN, PS4 14.02 ps4-hen, PS4 14.02 offline cache, PS4 14.02 BIN loader, PS4 14.02 ELF loader, Afterglow PS4 14.02, WebKitty PS4, ps4-hen, automatic offline cache, WWB HOST, whatwhatboy","about":{"@type":"Thing","name":"PlayStation 4 browser hosts and homebrew"},"image":"https://speedy-away.github.io/assets/images/host-selector/whatwhatboy-ps4.jpg","breadcrumb":{"@id":"https://speedy-away.github.io/hosts/ps4/14.02-guide/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://speedy-away.github.io/hosts/ps4/14.02-guide/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"WWB HOST","item":"https://speedy-away.github.io/"},{"@type":"ListItem","position":2,"name":"PS4","item":"https://speedy-away.github.io/hosts/ps4/"},{"@type":"ListItem","position":3,"name":"PS4 14.02 Jailbreak, GoldHEN & Offline Cache","item":"https://speedy-away.github.io/hosts/ps4/14.02-guide/"}]}]}</script>
-</head><body class="host-compact"><nav class="host-taskbar" aria-label="Host navigation"><a href="/hosts/ps4/">PS4 host</a><a href="/hosts/ps4/firmware/">Jailbreak</a><a href="/hosts/ps4/loaders/">BIN / ELF loaders</a></nav><main class="host-compact-main jailbreak-guide"><header><p>PLAYSTATION 4 · FIRMWARE 14.02</p><h1>PS4 14.02 jailbreak</h1><p>Open the built-in WebKit Exploit host for PS4 firmware 14.02, powered by Afterglow. Choose GoldHEN or ps4-hen and manage your offline cache from one page.</p><a class="guide-start" href="/ps4/14.02/">Load jailbreak</a></header><section><h2>GoldHEN, ps4-hen and launch options</h2><p>Use the matching PS4 browser. The settings menu includes advanced payload tools, a five-second Auto Jailbreak countdown, one retry after a confirmed pre-kernel failure, a guarded return after success and a minimal run screen. A desktop browser can view the host but cannot start the console exploit.</p></section><section><h2>Offline cache, updates and deletion</h2><p>Enable automatic offline caching or use Cache now. Update cache checks for fresh files; Stop cancels an active download. The saved package includes the 14.02 host, HEN files and BIN / ELF loader tools.</p><p>On PS4, Delete cache turns off automatic caching and explains how to use OPTIONS → Settings → Clear Website Data. That browser operation can clear other hosts’ saved data too.</p></section><section><h2>PS4 14.02 BIN and ELF loader tools</h2><p>After starting a compatible HEN, enable its BIN loader to use HTTP port 9090. The bundled WebKitty ELF loader uses port 9021; a local computer sender is available for raw TCP and HTTPS pages. Every payload still needs to match your firmware and its own requirements.</p><p><a href="/hosts/runtime/ps4-afterglow-944d5aeed06f/web/loaders.html">Open the 14.02 loader tools</a>. Older standalone BIN loaders retain their original firmware limits and do not become compatible with 14.02.</p></section><section><h2>Firmware compatibility</h2><p>This host is pinned to 14.02. For 14.00 and earlier versions, use the <a href="/hosts/ps4/firmware/">firmware picker</a>. Local code and file checks do not replace physical-console testing; execution on a PS4 has not been verified here.</p></section><footer><p>Credits: <a href="https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800">Afterglow</a> and <a href="https://github.com/ArabPixel/WebKitty/tree/ff181af62e0c57d7b74b3ea40b7a166b21424864">WebKitty</a>.</p></footer></main></body></html>
+<script id="site-page-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://speedy-away.github.io/#website","url":"https://speedy-away.github.io/","name":"WWB HOST","alternateName":"whatwhatboy PS4 / PS5 Host","inLanguage":["en","es","pt","fr","de","ru","tr","pl","it","zh","ja","ko","th","vi","id","hi","sr","nl","ka","ar","he"]},{"@type":"WebPage","@id":"https://speedy-away.github.io/hosts/ps4/14.02-guide/#webpage","url":"https://speedy-away.github.io/hosts/ps4/14.02-guide/","name":"PS4 14.02 Jailbreak, GoldHEN & Offline Cache | WWB HOST","description":"PS4 14.02 jailbreak guide for the pinned upstream Afterglow host, GoldHEN 2.4b18.14, AppCache, recovery guidance and exact HEN provenance.","inLanguage":"en","isPartOf":{"@id":"https://speedy-away.github.io/#website"},"keywords":"PS4 14.02 jailbreak, PS4 14.02 WebKit exploit, Afterglow, WebKitty, PS4 jailbreak 14.02, PlayStation 4 14.02 jailbreak, PS4 14.02 GoldHEN, PS4 14.02 ps4-hen, PS4 14.02 offline cache, PS4 14.02 BIN loader, PS4 14.02 ELF loader, Afterglow PS4 14.02, WebKitty PS4, ps4-hen, automatic offline cache, WWB HOST, whatwhatboy","about":{"@type":"Thing","name":"PlayStation 4 browser hosts and homebrew"},"image":"https://speedy-away.github.io/assets/images/host-selector/whatwhatboy-ps4.jpg","breadcrumb":{"@id":"https://speedy-away.github.io/hosts/ps4/14.02-guide/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://speedy-away.github.io/hosts/ps4/14.02-guide/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"WWB HOST","item":"https://speedy-away.github.io/"},{"@type":"ListItem","position":2,"name":"PS4","item":"https://speedy-away.github.io/hosts/ps4/"},{"@type":"ListItem","position":3,"name":"PS4 14.02 Jailbreak, GoldHEN & Offline Cache","item":"https://speedy-away.github.io/hosts/ps4/14.02-guide/"}]}]}</script>
+</head>
+<body class="host-compact">
+  <nav class="host-taskbar" aria-label="Host navigation"><a href="/hosts/ps4/">PS4 host</a><a href="/hosts/ps4/firmware/">Jailbreak</a><a href="/hosts/ps4/loaders/">BIN / ELF loaders</a></nav>
+  <main class="host-compact-main jailbreak-guide">
+    <header>
+      <p>PLAYSTATION 4 · FIRMWARE 14.02</p>
+      <h1>PS4 14.02 jailbreak</h1>
+      <p>This route opens the complete upstream Afterglow build pinned at <code>587c00a564c4</code>. It includes GoldHEN 2.4b18.14, the upstream-bundled ps4-hen choice and Afterglow's own cache/update flow.</p>
+      <a class="guide-start" href="/ps4/14.02/">Open Afterglow</a>
+    </header>
+    <section>
+      <h2>Start every attempt from Afterglow</h2>
+      <p>Open the landing page, choose GoldHEN or ps4-hen, then press Start. Do not bookmark or open <code>jb.html</code> directly: the upstream referrer guard deliberately rejects restored or direct run pages.</p>
+      <p>The published landing, run document, launcher, exploit modules, firmware offsets, patchsets and HEN files are byte-for-byte copies of the pinned upstream tree. No WWB retry, reload or settings code is injected into the allocation-sensitive run page.</p>
+    </section>
+    <section>
+      <h2>Offline cache and stale copies</h2>
+      <p>Afterglow uses its original HTML5 Application Cache. Let any cache update and automatic reload finish before pressing Start. The new host lives at a new immutable runtime path, so it cannot silently mix with the previous <code>944d5aeed06f</code> build.</p>
+      <p>If the browser still restores an older copy, use PS4 Browser OPTIONS → Settings → Clear Website Data, reopen the short 14.02 URL and wait for the cache to finish. Clearing website data can remove other saved hosts too.</p>
+    </section>
+    <section>
+      <h2>Know the failure states</h2>
+      <p class="warning"><strong>A freeze or shutdown can still happen.</strong> Afterglow documents an unrecoverable kernel-allocation race. If the log says <em>the handles are NOT defused</em>, do not close the browser; cold-start the console. If it reports an exploit failure before the kernel stage, reopen the browser and try again manually.</p>
+      <p>If ps4-hen succeeds but launching an app freezes the console, cold-start and use GoldHEN while checking upstream. The pinned GitHub <code>hen.bin</code> has MD5 <code>e7df7fb94e58a1b4a4a5e7dda4f190e1</code>, which does not match the patched MD5 printed in the upstream README. This discrepancy is recorded rather than silently relabelling the payload.</p>
+    </section>
+    <section>
+      <h2>PS4 14.02 BIN and ELF loader tools</h2>
+      <p>After starting a compatible HEN, enable its BIN loader to use HTTP port 9090. The separate WebKitty ELF loader uses port 9021. Payload and game compatibility remain separate from console firmware compatibility.</p>
+      <p><a href="/hosts/runtime/ps4-afterglow-587c00a564c4/web/loaders.html">Open the 14.02 loader tools</a>. These tools are kept outside Afterglow's run document and upstream AppCache manifest.</p>
+    </section>
+    <section>
+      <h2>Firmware compatibility</h2>
+      <p>This host remains pinned to PS4 14.02. For 14.00 and earlier versions, use the <a href="/hosts/ps4/firmware/">firmware picker</a>. Static byte checks do not replace physical-console testing.</p>
+    </section>
+    <footer><p>Credits and pinned source: <a href="https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780">Afterglow</a> and <a href="https://github.com/ArabPixel/WebKitty/tree/ff181af62e0c57d7b74b3ea40b7a166b21424864">WebKitty</a>.</p></footer>
+  </main>
+</body>
+</html>

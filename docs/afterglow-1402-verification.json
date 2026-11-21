@@ -1,108 +1,70 @@
 {
-  "date": "2026-11-13",
-  "status": "Pushed to main, deployed successfully, and verified live.",
-  "page": "/hosts/runtime/ps4-afterglow-944d5aeed06f/web/index.html",
+  "date": "2026-11-21",
+  "status": "Pinned upstream refresh verified locally; publication pending.",
+  "source": {
+    "repository": "https://github.com/well0nez/afterglow-web",
+    "commit": "587c00a564c4765b78ab413e400a392efdd9a780",
+    "url": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780"
+  },
+  "page": "/hosts/runtime/ps4-afterglow-587c00a564c4/web/index.html",
+  "publicRoute": "/ps4/14.02/",
+  "guide": "/hosts/ps4/14.02-guide/",
   "archive": {
-    "filename": "afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
-    "local": "downloads/hosts/afterglow/afterglow-1402-944d5aeed06f-3a1dae9968d7.zip",
-    "bytes": 1073909,
-    "sha256": "3a1dae9968d7abcfd0abe93a9ac109e9533de7af7c2259f391ef2a4624d7801f",
-    "sourceURL": "https://github.com/well0nez/afterglow-web/tree/944d5aeed06fdff7d2fc1ce044d5daa272d85800",
-    "version": "944d5aeed06fdff7d2fc1ce044d5daa272d85800-wwb-1402-v1"
+    "filename": "afterglow-1402-587c00a564c4-4833e620e59f.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-4833e620e59f.zip",
+    "bytes": 4140999,
+    "sha256": "4833e620e59fe84c9e348a144cc786d77a3d1a1c0d96871b623b230844764ff0",
+    "sourceZipSha256": "55de4933452c66c649e314604fe433f7cb7bab80fc0820bafa4c9f34696be0a8",
+    "scopedIndex": "F:/whatsite-backup-downloads-etc/files/PS4/Hosts/afterglow web/download-inventory.json",
+    "indexedFiles": 33,
+    "missingFiles": 0,
+    "hashMismatches": 0,
+    "repositoryZipsPreserved": 22
   },
-  "sender": {
-    "url": "/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
-    "name": "ps4-loader-sender-eae50f5882e6.zip",
-    "bytes": 258774,
-    "sha256": "eae50f5882e622745a7258c683ac74d751fcb250f151bf9206a140afe9ee52d0",
-    "sourceURL": "https://speedy-away.github.io/downloads/helpers/ps4-loader-sender/ps4-loader-sender-eae50f5882e6.zip",
-    "version": "1.0.0+eae50f5882e6"
+  "payloads": {
+    "goldHENVersion": "2.4b18.14",
+    "goldHENSha256": "c5480587d99efc2e3cc132352d9b7cf052dd3068280f1686e7fbb37d57e9ba8b",
+    "ps4HenSha256": "420f5cfd72ec401f02beaaf3ddbe63b21c2ba1696904810044220e8d5f7cb5a2",
+    "ps4HenMd5": "e7df7fb94e58a1b4a4a5e7dda4f190e1",
+    "upstreamReadmeClaimedPatchedMd5": "6417a84a72f9c7988f0e33b3ae190542",
+    "provenance": "The pinned GitHub hen.bin does not match the patched MD5 printed in the upstream README; the exact bytes are retained and the discrepancy is disclosed."
   },
-  "features": [
-    "Top-left settings gear: Show advanced payloads, Auto Jailbreak, Auto-Retry Jailbreak, Reload after a successful jailbreak, Barebone Jailbreak Experience.",
-    "Advanced tools and auto-retry default on, auto jailbreak/reload/barebone default off. Preferences persist locally. Opening Options pauses countdown.",
-    "Auto Jailbreak shares existing five-second countdown. Retry is bounded to one fresh countdown after explicit JB-THREW before any kernel-stage log. Stalls, crashes, kernel failures and uncertain outcomes never trigger retry.",
-    "Optional reload requires both AG done and handles defused, then returns to restored=1 without autostart. Barebone hides detailed logs; native runtime bytes remain unchanged.",
-    "Cache now, Update cache, Delete cache and Stop. Modern cache uses checksum-verified generations, retains old cache if update fails, aborts response bodies and deletes only this runtime namespace.",
-    "On PS4 AppCache, Delete disables automatic caching and explains OPTIONS > Settings > Clear Website Data; this browser operation also affects other hosts. No false programmatic-deletion claim.",
-    "Offline closure includes firmware-locked 14.02 loader page, sender ZIP, ELF-loader BIN and ELF, authored assets and settings. Cache download never executes payloads.",
-    "Native banner remains on chooser; sending and runtime execution pages have no third-party scripts."
+  "integration": [
+    "The current upstream landing, run page, exploit modules, offsets, patchsets, payloads and Application Cache manifest are published byte-for-byte.",
+    "No WWB retry, reload, settings, MutationObserver, service-worker or direct-run code is injected into the allocation-sensitive upstream pages.",
+    "Every attempt starts at upstream index.html; direct or restored jb.html navigation remains blocked by upstream.",
+    "The separate WWB BIN and ELF loader tools remain available outside the upstream run document and Application Cache; their hash-pinned sender ZIP stays beside the loader page.",
+    "The general PS4 offline pack excludes the 14.02 wrapper, short route and current runtime so it cannot preserve a stale handoff into Afterglow's separate Application Cache.",
+    "The previous 944d5aeed06f runtime, ready ZIPs and the 13.52/14.00 Afterglow integration remain preserved."
   ],
   "verification": {
-    "tests": 164,
-    "passed": 164,
-    "failed": 0,
-    "results": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish/isolated-tests.txt",
+    "focusedTests": 53,
+    "focusedPassed": 53,
+    "focusedFailed": 0,
     "publishingChecks": [
-      "project links/native bytes",
+      "project pages",
       "metadata",
       "offline packs",
       "game patches",
       "locales"
     ],
-    "releaseBytes": 903458744,
-    "nativeScriptsUnchanged": 1030,
-    "localPayloads": 55,
-    "ps4RuntimeFiles": 132,
-    "nativeKaroScripts": 16,
-    "selectedOriginalFilesPending": 5,
-    "browser": "Desktop/mobile settings inspected; Cache now, Update cache and Delete cache completed; bundled ELF-loader selection verified its SHA-256 without sending.",
+    "releaseBytes": 906079034,
+    "releaseFiles": 7867,
+    "nativeScriptsUnchanged": 1040,
+    "issues": 0,
     "hardwareVerified": false,
-    "payloadsExecuted": false,
-    "archiveRecords": 9514,
-    "missingArchiveRecords": 0,
-    "legacyTestUpdates": "HTTP202 accepted per source; HTTP201 remains uncertain. Firmware tests inspect current renderer and preserve old/new firmware isolation rather than assuming one historical group."
+    "payloadsExecuted": false
   },
-  "sourceFiles": [
-    "assets/afterglow-1402.html",
-    "assets/afterglow-1402.css",
-    "assets/afterglow-1402-entry.js",
-    "assets/afterglow-1402-settings.js",
-    "assets/afterglow-1402-run-options.js",
-    "assets/afterglow-cache.js",
-    "assets/afterglow-cache-frame.js",
-    "assets/afterglow-offline-sw.js",
-    "scripts/build-1402-loader-page.cjs",
-    "scripts/build-afterglow-1402.cjs"
+  "limitations": [
+    "Afterglow documents an unrecoverable kernel-allocation race, so an attempt can still freeze or power off a console.",
+    "The upstream-bundled hen.bin provenance discrepancy remains unresolved upstream.",
+    "Physical PS4 14.02 execution and Application Cache persistence were not tested in this update."
   ],
-  "regenerate": [
-    "node scripts/build-ps4-loaders.cjs C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402",
-    "node scripts/build-afterglow-1402.cjs C:/Users/whatw/Documents/GitHub/whatsite/tmp/ps4-1402"
-  ],
-  "release": "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\pages-final",
-  "previews": [
-    "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\settings-desktop.png",
-    "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\settings-mobile.png",
-    "C:\\Users\\whatw\\Documents\\GitHub\\whatsite\\tmp\\ps4-finish\\host-desktop.png"
-  ],
-  "remaining": "Physical PS4 14.02 execution, loader availability and PS4 AppCache persistence require console testing. Concurrent uncommitted workspace edits are preserved.",
   "publication": {
-    "date": "2026-11-13",
-    "status": "Pushed to main, deployed successfully, and verified live.",
-    "commit": "3466590e8423ed437df8a8632e1415c166fa446a",
-    "initialRelease": "7e6e2c377a0ab39066f31b938041c83d2fefaa98",
-    "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/43504334079",
+    "status": "pending",
     "url": "https://speedy-away.github.io/ps4/14.02/",
-    "firmwarePage": "https://speedy-away.github.io/hosts/ps4/firmware/",
-    "tests": 164,
-    "failed": 0,
-    "productionChecks": 5,
-    "live": {
-      "checkedAt": "2026-11-13T20:46:37.034Z",
-      "commit": "3466590e8423ed437df8a8632e1415c166fa446a",
-      "url": "https://speedy-away.github.io/ps4/14.02/",
-      "deploymentRevision": "3466590e8423ed437df8a8632e1415c166fa446a",
-      "offlineFilesVerified": 48,
-      "offlineBytes": 2170608,
-      "nativeFilesVerified": 19,
-      "controlsVerified": true,
-      "loaderFirmwarePinned": true,
-      "announcementVerified": true,
-      "primaryVerified": true,
-      "payloadsExecuted": false,
-      "hardwareVerified": false
-    },
-    "scope": "14.02 is the first firmware tile, homepage CTA and primary PS4 navigation. Generated short links stay on the independent host. Older firmware routes retain original compatibility pins.",
-    "remaining": "Physical PS4 14.02 execution, loader availability and PS4 AppCache persistence require console testing. Concurrent uncommitted workspace edits are preserved."
+    "commit": null,
+    "workflow": null,
+    "liveCheckedAt": null
   }
 }
