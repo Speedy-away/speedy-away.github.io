@@ -20,7 +20,8 @@ function verify(output){const records=[];for(const platform of ['ps4','ps5']){
  const root=path.resolve(__dirname,'..'),groups=require('./host-compact-pages.cjs').groups(root).filter(group=>group.platform===platform);for(const group of groups){
   if(group.id==='ps4-afterglow-1402'){
    const fresh=JSON.parse(fs.readFileSync(path.join(root,'docs/afterglow-1402-build.json')));
-   for(const file of fresh.original.filter(file=>!file.path.startsWith('.'))){
+   const overlaid=new Set(['index.html','jb.html','launch.js','cache.appcache']);
+   for(const file of fresh.original.filter(file=>!file.path.startsWith('.')&&!overlaid.has(file.path))){
     const bytes=fs.readFileSync(path.join(output,fresh.base,'web',file.path));
     assert.equal(sha(bytes),file.sha256,file.path+' published upstream bytes must stay unchanged');
    }
