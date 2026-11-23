@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "status": "WWB 14.02 layout restored locally; publication pending.",
+  "status": "WWB 14.02 layout restored, deployed and live verified.",
   "source": {
     "repository": "https://github.com/well0nez/afterglow-web",
     "commit": "587c00a564c4765b78ab413e400a392efdd9a780",
@@ -55,10 +55,10 @@
     "Physical PS4 14.02 execution and cache persistence were not tested in this update."
   ],
   "publication": {
-    "status": "pending",
+    "status": "deployed and live verified",
     "url": "https://speedy-away.github.io/ps4/14.02/",
-    "commit": null,
-    "workflow": null,
-    "liveCheckedAt": null
+    "commit": "c9c4f631c7ca6aeddea6d0e65916ae41102c1878",
+    "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/45271991969",
+    "liveCheckedAt": "2026-11-23T21:43:33.952Z"
   }
 }

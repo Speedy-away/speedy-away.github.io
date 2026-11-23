@@ -357,7 +357,7 @@
     },
     "normalBrowser": "Real ads on root, PS4, PS5, PS4/PS5 Payload Manager and trainer at 1920px and 390px widths."
   },
-  "updatedAt": "2026-11-21T14:09:36.617Z",
+  "updatedAt": "2026-11-23T21:43:33.952Z",
   "repository": "Speedy-away/speedy-away.github.io",
   "site": "https://speedy-away.github.io/",
   "mainSite": "https://whatwhatboy.com/",
@@ -3175,7 +3175,7 @@
   },
   "afterglow1402LayoutRestore20261123": {
     "date": "2026-11-23",
-    "status": "Restored locally; publication pending.",
+    "status": "Restored, deployed and live verified.",
     "repository": "C:/Users/whatw/Documents/GitHub/speedy-away.github.io",
     "publicRoute": "https://speedy-away.github.io/ps4/14.02/",
     "runtime": "/hosts/runtime/ps4-afterglow-587c00a564c4/web/index.html",
@@ -3203,10 +3203,10 @@
       "Afterglow's documented kernel-allocation race can still freeze or power off a console during an attempt."
     ],
     "publication": {
-      "status": "pending",
-      "commit": null,
-      "workflow": null,
-      "liveCheckedAt": null
+      "status": "deployed and live verified",
+      "commit": "c9c4f631c7ca6aeddea6d0e65916ae41102c1878",
+      "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/45271991969",
+      "liveCheckedAt": "2026-11-23T21:43:33.952Z"
     }
   }
 }
