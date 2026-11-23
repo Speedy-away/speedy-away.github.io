@@ -339148,9 +339148,42 @@
           "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Source Code\\acf25a831725f0d44fcb64725d4ce35acbba8f9d-integration-v1\\afterglow-source-acf25a831725-12e56a29a5cf.zip"
         }
       ]
+    },
+    {
+      "id": "afterglow-1402-1d872faa3808",
+      "project": "Afterglow web",
+      "title": "PS4 14.02 Afterglow · afterglow-1402-587c00a564c4-1d872faa3808.zip",
+      "platform": "PS4",
+      "category": [
+        "Hosts"
+      ],
+      "archiveRole": [
+        "Builds"
+      ],
+      "release": "587c00a564c4765b78ab413e400a392efdd9a780-wwb-layout-v3",
+      "url": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+      "kind": "local-console-file",
+      "status": "downloaded",
+      "pages": [
+        "hosts/ps4/afterglow-1402/index.html"
+      ],
+      "files": [
+        {
+          "name": "afterglow-1402-587c00a564c4-1d872faa3808.zip",
+          "bytes": 4196453,
+          "sha256": "1d872faa3808fe19f1f11b63de63b64ca8a84d23e0291424287f6887c49f7978",
+          "local": "/downloads/hosts/afterglow/afterglow-1402-587c00a564c4-1d872faa3808.zip",
+          "sourceUrl": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+          "releaseTag": "587c00a564c4765b78ab413e400a392efdd9a780-wwb-layout-v3",
+          "archiveRole": [
+            "Builds"
+          ],
+          "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\afterglow web\\Builds\\587c00a564c4765b78ab413e400a392efdd9a780-wwb-layout-v3\\afterglow-1402-587c00a564c4-1d872faa3808.zip"
+        }
+      ]
     }
   ],
-  "updated": "2026-11-21T14:08:34.608Z",
+  "updated": "2026-11-23T21:32:36.628Z",
   "backupRoot": "F:\\whatsite-backup-downloads-etc",
   "scope": "Menus, scripts, tools and source codes; excludes games and firmware",
   "indexRefresh": {

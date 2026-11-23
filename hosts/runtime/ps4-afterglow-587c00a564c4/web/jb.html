@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" manifest="cache.appcache">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -176,15 +176,15 @@
       code {
         color: #9fb3d0;
       }
-    </style>
+    #bare-status{display:none}.barebone #out,.barebone #state,.barebone #ramBox{display:none!important}.barebone #bare-status{display:block;text-align:center;margin:35px 15px;color:#b9d5ff;font:16px Arial}.barebone .notice{display:none}</style>
   </head>
   <body>
     <!-- jb.js owns the body class: .log while the step log is shown, .done or
          .fail once the chain has settled. The ids below are its contract --
          #ramBox, #msg, #state and #out are read by name. -->
-    <div id="brand"><b>afterglow</b></div>
+    <div id="brand"><b>WebKit Exploit</b></div>
     <div id="ramBox">RAM: checking...</div>
-    <div id="spin"></div>
+    <p id="bare-status" role="status">Running WebKit Exploit…</p><div id="spin"></div>
     <div id="msg">Restart your console</div>
     <div id="wrap">
       <div id="state"></div>
@@ -192,7 +192,65 @@
     </div>
     <p class="byline">by well0nez/m0zz</p>
     <script type="module">
-      import "./jb.js";
+      /* Inline before importing any upstream module; no exploit or payload is run by this guard. */
+(function () {
+  'use strict';
+  var key = 'whatsite.afterglow.1402.arm.v1', stamp = 0, from = false, navigation = true;
+  try { stamp = Number(sessionStorage.getItem(key)); sessionStorage.removeItem(key); } catch (_) {}
+  try {
+    var ref = new URL(document.referrer), here = location.pathname.replace(/[^/]*$/, '');
+    from = ref.origin === location.origin && (ref.pathname === here || ref.pathname === here + 'index.html');
+    navigation = performance.navigation.type === 0;
+  } catch (_) { navigation = false; }
+  var ua = navigator.userAgent.match(/PlayStation 4[\/ ](\d+\.\d{2})(?:\D|$)/i);
+  var valid = ua && ['14.02'].indexOf(ua[1]) >= 0;
+  var query = location.search;
+  var target = query === '?log=1&afterglow=run&payload=hen.bin' || query === '?log=1&afterglow=run&mode=goldhen';
+  if (valid && target && from && navigation && stamp > 0 && Date.now() - stamp >= 0 && Date.now() - stamp < 30000) {
+/* Optional UI observer: only explicit upstream results may navigate away. */
+(function(){
+ 'use strict';
+ var settings={},retryKey='wwb.afterglow.1402.retry',usedKey=retryKey+'.used',finished=false,kernelSeen=false;
+ try{settings=JSON.parse(localStorage.getItem('wwb.afterglow.1402.settings.v1')||'{}')||{};}catch(e){}
+ var retry=settings.retry!==false,reload=settings.reload!==false,bare=settings.barebone===true;
+ if(bare)document.documentElement.className+=' barebone';
+ if(!(retry||reload||bare)||typeof MutationObserver==='undefined')return;
+ var out=document.getElementById('out'),status=document.getElementById('bare-status');
+ function inspect(){
+  if(finished)return;
+  var log=out.textContent||'',success=/(?:^|\n)AG  done(?:\n|$)/.test(log),defused=/(?:^|\n)AG  handles defused(?:\n|$)/.test(log);
+  kernelSeen=kernelSeen||/(?:^|\n)AG(?:  |-)/.test(log);
+  var early=/(?:^|\n)JB-THREW(?:  |\n|$)/.test(log)&&!kernelSeen;
+  if(success){
+   status.textContent='Jailbreak complete';
+   if(defused){
+    try{sessionStorage.setItem('wwb.afterglow.1402.completed','1');}catch(e){}
+    finished=true;observer.disconnect();
+    if(reload){
+     var left=5,notice=document.createElement('p');notice.setAttribute('role','status');notice.style.cssText='text-align:center;color:#b9d5ff;font:16px Arial';out.parentNode.insertBefore(notice,out);
+     function countdown(){notice.textContent='Jailbreak complete. Returning to the launcher in '+left+' seconds…';status.textContent=notice.textContent;}
+     countdown();var timer=setInterval(function(){left--;if(left<=0){clearInterval(timer);location.replace('index.html?restored=1&result=success');}else countdown();},1000);
+     window.addEventListener('pagehide',function(){clearInterval(timer);});
+    }
+   }
+  }
+  else if(early){
+   status.textContent='WebKit attempt failed';
+   if(retry){try{if(sessionStorage.getItem(usedKey)!=='1'){sessionStorage.setItem(usedKey,'1');sessionStorage.setItem(retryKey,String(Date.now()));finished=true;observer.disconnect();location.replace('index.html?restored=1&retry=1');}}catch(e){}}
+  }else if(document.body.className.indexOf('fail')>=0)status.textContent='Attempt stopped. Reopen the browser; restart the console if the kernel stage ran.';
+ }
+ var observer=new MutationObserver(inspect);
+ observer.observe(out,{childList:true});observer.observe(document.body,{attributes:true,attributeFilter:['class']});
+}());
+
+    import('./jb.js').catch(function () { document.body.className = 'fail'; document.getElementById('msg').textContent = 'Runtime dependency failed'; });
+  } else {
+    document.body.className = 'fail';
+    document.getElementById('msg').textContent = 'Return to the landing page';
+    location.replace('index.html?restored=1');
+  }
+})();
+
     </script>
   </body>
 </html>

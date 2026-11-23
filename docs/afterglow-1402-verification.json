@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-21",
-  "status": "Pinned upstream refresh verified locally; publication pending.",
+  "date": "2026-11-23",
+  "status": "WWB 14.02 layout restored locally; publication pending.",
   "source": {
     "repository": "https://github.com/well0nez/afterglow-web",
     "commit": "587c00a564c4765b78ab413e400a392efdd9a780",
@@ -10,16 +10,16 @@
   "publicRoute": "/ps4/14.02/",
   "guide": "/hosts/ps4/14.02-guide/",
   "archive": {
-    "filename": "afterglow-1402-587c00a564c4-4833e620e59f.zip",
-    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-4833e620e59f.zip",
-    "bytes": 4140999,
-    "sha256": "4833e620e59fe84c9e348a144cc786d77a3d1a1c0d96871b623b230844764ff0",
+    "filename": "afterglow-1402-587c00a564c4-1d872faa3808.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-1d872faa3808.zip",
+    "bytes": 4196453,
+    "sha256": "1d872faa3808fe19f1f11b63de63b64ca8a84d23e0291424287f6887c49f7978",
     "sourceZipSha256": "55de4933452c66c649e314604fe433f7cb7bab80fc0820bafa4c9f34696be0a8",
     "scopedIndex": "F:/whatsite-backup-downloads-etc/files/PS4/Hosts/afterglow web/download-inventory.json",
-    "indexedFiles": 33,
+    "indexedFiles": 34,
     "missingFiles": 0,
     "hashMismatches": 0,
-    "repositoryZipsPreserved": 22
+    "repositoryZipsPreserved": 23
   },
   "payloads": {
     "goldHENVersion": "2.4b18.14",
@@ -30,27 +30,21 @@
     "provenance": "The pinned GitHub hen.bin does not match the patched MD5 printed in the upstream README; the exact bytes are retained and the discrepancy is disclosed."
   },
   "integration": [
-    "The current upstream landing, run page, exploit modules, offsets, patchsets, payloads and Application Cache manifest are published byte-for-byte.",
-    "No WWB retry, reload, settings, MutationObserver, service-worker or direct-run code is injected into the allocation-sensitive upstream pages.",
-    "Every attempt starts at upstream index.html; direct or restored jb.html navigation remains blocked by upstream.",
-    "The separate WWB BIN and ELF loader tools remain available outside the upstream run document and Application Cache; their hash-pinned sender ZIP stays beside the loader page.",
+    "The authored WWB blue/XMB landing, two-panel HEN chooser, console status panel, options and cache controls are restored instead of the stock Afterglow landing.",
+    "The pinned upstream exploit modules, offsets, patchsets and HEN payloads remain byte-for-byte; no native payload was executed.",
+    "A one-use same-origin 14.02 guard still blocks direct or restored run-page execution.",
+    "The separate WWB BIN and ELF loader tools remain available from the restored landing and its verified offline closure.",
     "The general PS4 offline pack excludes the 14.02 wrapper, short route and current runtime so it cannot preserve a stale handoff into Afterglow's separate Application Cache.",
     "The previous 944d5aeed06f runtime, ready ZIPs and the 13.52/14.00 Afterglow integration remain preserved."
   ],
   "verification": {
-    "focusedTests": 53,
-    "focusedPassed": 53,
+    "focusedTests": 52,
+    "focusedPassed": 52,
     "focusedFailed": 0,
-    "publishingChecks": [
-      "project pages",
-      "metadata",
-      "offline packs",
-      "game patches",
-      "locales"
+    "visualChecks": [
+      "1440 x 900 desktop: two 531px panels and no horizontal overflow",
+      "390 x 844 mobile: one 337px column, wrapped navigation and no horizontal overflow"
     ],
-    "releaseBytes": 906079034,
-    "releaseFiles": 7867,
-    "nativeScriptsUnchanged": 1040,
     "issues": 0,
     "hardwareVerified": false,
     "payloadsExecuted": false
@@ -58,7 +52,7 @@
   "limitations": [
     "Afterglow documents an unrecoverable kernel-allocation race, so an attempt can still freeze or power off a console.",
     "The upstream-bundled hen.bin provenance discrepancy remains unresolved upstream.",
-    "Physical PS4 14.02 execution and Application Cache persistence were not tested in this update."
+    "Physical PS4 14.02 execution and cache persistence were not tested in this update."
   ],
   "publication": {
     "status": "pending",

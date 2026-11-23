@@ -1,13 +1,53 @@
 [
   {
+    "path": "LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "LICENSE-raw13g",
+    "bytes": 1362,
+    "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68"
+  },
+  {
+    "path": "README.md",
+    "bytes": 5749,
+    "sha256": "2deb19afc55137596c9723959e9d4d2ccfc9b4a25206a155228ba76a29116836"
+  },
+  {
+    "path": "TECHNICAL.md",
+    "bytes": 5835,
+    "sha256": "f77d1f564ee13894c4277400ef0f346fe96dd870d12c993bbf7ec00e4aabc673"
+  },
+  {
+    "path": "WEBKITTY-LICENSE",
+    "bytes": 34523,
+    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+  },
+  {
+    "path": "afterglow-1402.css",
+    "bytes": 9136,
+    "sha256": "a84b80d00a2f5e1dac855a4ea7664b924e9244a9d793845aab31eeed49e6df76"
+  },
+  {
     "path": "afterglow.js",
     "bytes": 101210,
     "sha256": "550a60485113a8b14def5ef856786b0b3b709d0322072ae5ad36be934759b74e"
   },
   {
-    "path": "cache.appcache",
-    "bytes": 1273,
-    "sha256": "ed89ad464d628fa7463bf56a7360dc6ed1bce14558db6cdfc7578c9d46cda14c"
+    "path": "cache-frame.html",
+    "bytes": 178,
+    "sha256": "24d3f24739312d6678c3996a691b3546da6e691ea5851462b52d70facf259879"
+  },
+  {
+    "path": "cache-frame.js",
+    "bytes": 1456,
+    "sha256": "a7d334179bb9b6546382c6bb75a4997b783baa300738699cb35ec892b5ccf48c"
+  },
+  {
+    "path": "cache.js",
+    "bytes": 6531,
+    "sha256": "bba841810d2b96f0490fb25e4524cb770b08dcc5f5ae93d67b9bdc1ef0750399"
   },
   {
     "path": "core.js",
@@ -40,9 +80,14 @@
     "sha256": "8be1a240e12db4fb91de414e3f140496c19c4a4e1ccdc1c186f7a1a36d5d30df"
   },
   {
+    "path": "host-xmb-waves.svg",
+    "bytes": 2009,
+    "sha256": "b4e7e6aa133bd988fdf12a164005fd5684d97f7d44cab063a02208eab7e99d83"
+  },
+  {
     "path": "index.html",
-    "bytes": 1500,
-    "sha256": "bd03972d85c14ee305211c0812b344647dcd4e4e8b0e5da97f0ec92ebb4ab881"
+    "bytes": 6157,
+    "sha256": "1f460b71e7cde98d233f5291162f8106939f15e8178304e2f979a71d322fcbdc"
   },
   {
     "path": "int64.js",
@@ -51,8 +96,8 @@
   },
   {
     "path": "jb.html",
-    "bytes": 5340,
-    "sha256": "208794fbe6916a74ea8952b0f47ec55bc9aa536ef6817bc62f5aa17dcedfce51"
+    "bytes": 9351,
+    "sha256": "d8b1dba04c741d27b691cc32f2b6d333637d8e7cabc40bbfe115bf5b5c8ce2d7"
   },
   {
     "path": "jb.js",
@@ -61,18 +106,8 @@
   },
   {
     "path": "launch.js",
-    "bytes": 7663,
-    "sha256": "f46f3665fd5a0932a78161f4b05bf6d75561105583573233d2d05cf2492888a9"
-  },
-  {
-    "path": "LICENSE",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-  },
-  {
-    "path": "LICENSE-raw13g",
-    "bytes": 1362,
-    "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68"
+    "bytes": 5413,
+    "sha256": "1d03190b256cafe7141aedf691b1ba84aa10479a0c49034627307729ea1cddb1"
   },
   {
     "path": "loaders.html",
@@ -80,9 +115,9 @@
     "sha256": "1dbfed945787f7d5de5cc7a7d5e9034bd776509457099bb3b2d315d8bf901395"
   },
   {
-    "path": "make-manifest.sh",
-    "bytes": 2128,
-    "sha256": "4717a7abd7f65dad32543e982b9ab532bb82f68a79f1a18927d8d3077c47312a"
+    "path": "logo.png",
+    "bytes": 23090,
+    "sha256": "5dea413ba133f8236e385f9107521fd807d8ad3ad89265b8bd223072df3c0293"
   },
   {
     "path": "mem.js",
@@ -93,6 +128,11 @@
     "path": "meme.png",
     "bytes": 39303,
     "sha256": "bfce116aec5b015e29c0b13e96782fc8fcf2dc7c664131df8dfa9e52e7056cdf"
+  },
+  {
+    "path": "offline-sw.js",
+    "bytes": 5118,
+    "sha256": "4c83fbc77a300244e91633e424eedf158b8af2a15dafc20c0fb185514fc17134"
   },
   {
     "path": "patchset-1200.bin",
@@ -150,6 +190,11 @@
     "sha256": "df2145f21ecb8322fd2b062f7f0b8cacca75c96205bc34d96f2d7198bfce9cd3"
   },
   {
+    "path": "pepe-banner.png",
+    "bytes": 19617,
+    "sha256": "eac1e414cc19016b87b549e160dc5d75cfedad9c984fa833a205a649061264af"
+  },
+  {
     "path": "ps4-loader-client.js",
     "bytes": 10083,
     "sha256": "6426bed194c4ddbef793b4f9f8db9e81a93300bf79989c4bd0878371810146e3"
@@ -175,14 +220,9 @@
     "sha256": "ed375f3bcd2a1807aecbbf6d2c0d7f8a83a43164e6e32895ddd12e739a8cebe2"
   },
   {
-    "path": "README.md",
-    "bytes": 5749,
-    "sha256": "2deb19afc55137596c9723959e9d4d2ccfc9b4a25206a155228ba76a29116836"
-  },
-  {
-    "path": "serve.sh",
-    "bytes": 2726,
-    "sha256": "bf6af8004324e3aa6543498c74f94478d195b1629f50cca221f69316e5fbd461"
+    "path": "settings.js",
+    "bytes": 1656,
+    "sha256": "d455cb7c0c45db56ded8a49183728f02772b67d584939a5ffc744eea33135582"
   },
   {
     "path": "style.css",
@@ -190,24 +230,34 @@
     "sha256": "bf6dce6c77b45c39c7a65ab46b29f86bc8ffe2c13e84c038a9701ac8fea52db6"
   },
   {
-    "path": "TECHNICAL.md",
-    "bytes": 5835,
-    "sha256": "f77d1f564ee13894c4277400ef0f346fe96dd870d12c993bbf7ec00e4aabc673"
-  },
-  {
     "path": "webkitty-ApolloSaveToolv232.bin",
     "bytes": 12508,
     "sha256": "67a2f180a6e78b5c9e965cc8d407f54cbbbf0928765a5b95235f7f2ac0cce215"
   },
   {
+    "path": "webkitty-PS4-Itemzflow-v108.bin",
+    "bytes": 12444,
+    "sha256": "dabf4e2340fbcd5db6f61ad3feaae0e65c574a5df7b36f2c26eaef4134cddc19"
+  },
+  {
+    "path": "webkitty-PS4-Xplorer-209.bin",
+    "bytes": 12476,
+    "sha256": "6e6a9f06430c4da48b11cb4a4d0553d049c98f8fda153c9f66024445a1f62f98"
+  },
+  {
+    "path": "webkitty-PlayStationVue-124-installer.bin",
+    "bytes": 12508,
+    "sha256": "fb4629c04bc8edeac8ca1c2ee672d155377087bb829db8610951f9f08b162f6d"
+  },
+  {
+    "path": "webkitty-PlayStationVue-base-installer.bin",
+    "bytes": 12508,
+    "sha256": "e4ad85b29bb4770544d9abf9eb5f2766cf9765c04e22ab8e7f11f99294c45ac8"
+  },
+  {
     "path": "webkitty-db-rebuilder-v0.2.bin",
     "bytes": 653884,
     "sha256": "15568b7fd41078de9d6fc9ed562d2c40e2bc0705b9f24651af96d56b982abdc3"
-  },
-  {
-    "path": "WEBKITTY-LICENSE",
-    "bytes": 34523,
-    "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
   },
   {
     "path": "webkitty-linux-1024mb.elf",
@@ -253,16 +303,6 @@
     "path": "webkitty-online-store-installer.bin",
     "bytes": 13756,
     "sha256": "c24067b718bdad1617b562bc43d240713e29eae29c34e816fef343c261d7748e"
-  },
-  {
-    "path": "webkitty-PlayStationVue-124-installer.bin",
-    "bytes": 12508,
-    "sha256": "fb4629c04bc8edeac8ca1c2ee672d155377087bb829db8610951f9f08b162f6d"
-  },
-  {
-    "path": "webkitty-PlayStationVue-base-installer.bin",
-    "bytes": 12508,
-    "sha256": "e4ad85b29bb4770544d9abf9eb5f2766cf9765c04e22ab8e7f11f99294c45ac8"
   },
   {
     "path": "webkitty-ps4-app2usb.bin",
@@ -320,11 +360,6 @@
     "sha256": "feaa02d813f9a47515e324198f9c014176587a909978385d86e231f4b3609d52"
   },
   {
-    "path": "webkitty-PS4-Itemzflow-v108.bin",
-    "bytes": 12444,
-    "sha256": "dabf4e2340fbcd5db6f61ad3feaae0e65c574a5df7b36f2c26eaef4134cddc19"
-  },
-  {
     "path": "webkitty-ps4-kernel-dumper.bin",
     "bytes": 19156,
     "sha256": "2ad344bef83fe7da9428571c205d8463739d21776d68e1adcf08f829610f4605"
@@ -365,13 +400,13 @@
     "sha256": "0c1ec57554b33b71b0d5506041eda2523d33abf238ea43bf425c5e38826db1d7"
   },
   {
-    "path": "webkitty-PS4-Xplorer-209.bin",
-    "bytes": 12476,
-    "sha256": "6e6a9f06430c4da48b11cb4a4d0553d049c98f8fda153c9f66024445a1f62f98"
-  },
-  {
     "path": "webkitty-ps4debug-ng_v1.3.4.bin",
     "bytes": 3178344,
     "sha256": "8bfe0507972718e6078778c5f9c44d84293197c0547239ab4227bdb351299b3e"
+  },
+  {
+    "path": "cache.appcache",
+    "bytes": 1965,
+    "sha256": "ddaf4bf6c80c099e75935dc395c902015a39b6632225fe64e7fcb4ec652d05c6"
   }
 ]
