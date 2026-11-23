@@ -11,6 +11,14 @@
  auto.addEventListener('change',function(){window.AfterglowLanding.setAuto(auto.checked);});
  function show(open){panel.hidden=!open;button.setAttribute('aria-expanded',String(open));if(open){window.AfterglowLanding.stop();close.focus();}else button.focus();}
  button.addEventListener('click',function(){show(panel.hidden);});close.addEventListener('click',function(){show(false);});
- document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!panel.hidden)show(false);});
+ document.addEventListener('keydown',function(e){
+  if(panel.hidden)return;
+  if(e.key==='Escape'){show(false);return;}
+  if(e.key==='Tab'){
+   var last=nodes.barebone;
+   if(e.shiftKey&&document.activeElement===close){e.preventDefault();last.focus();}
+   else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();close.focus();}
+  }
+ });
  window.AfterglowSettingsUpdated();apply();
 }());

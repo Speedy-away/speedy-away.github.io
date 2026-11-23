@@ -59,6 +59,12 @@ test('ready-to-use archive and public wrapper match the pinned build',()=>{
 test('14.02 uses the restored WWB two-panel layout instead of the stock Afterglow page',()=>{
  const html=read(base+'index.html'),css=read(base+'afterglow-1402.css');
  assert.match(html,/<h1>WebKit Exploit<\/h1>/);assert.match(html,/class="console-layout"/);assert.match(html,/id="settings-panel"/);assert.match(html,/id="cache-enabled"/);assert.match(html,/BIN \/ ELF loaders/);assert.match(html,/pepe-banner\.png/);
+ assert.match(html,/role="dialog" aria-modal="true"/);assert.match(html,/aria-current="location"/);assert.match(html,/class="choice-mark" aria-hidden="true">GH/);
  assert.doesNotMatch(html,/<div id="brand"><b>afterglow<\/b><\/div>/i);assert.match(css,/host-xmb-waves\.svg/);assert.match(css,/\.console-layout\{display:grid/);
- assert.match(build.archive.version,/wwb-layout-v3$/);assert.match(build.changes.join(' '),/Restored the authored WWB 14\.02 landing/);
+ assert.match(build.archive.version,/wwb-layout-v3\.1$/);assert.match(build.changes.join(' '),/Restored the authored WWB 14\.02 landing/);assert.match(build.changes.join(' '),/keyboard focus loop/);
+});
+test('14.02 guide describes the WWB chooser and optional cache instead of the retired stock copy',()=>{
+ const guide=read('hosts/ps4/14.02-guide/index.html');
+ assert.match(guide,/WWB 14\.02 chooser/);assert.match(guide,/optional offline caching/);assert.match(guide,/WWB supplies the landing page/);assert.match(guide,/included in the WWB offline bundle/);
+ assert.doesNotMatch(guide,/published landing, run document, launcher.*byte-for-byte/i);assert.doesNotMatch(guide,/uses its original HTML5 Application Cache/i);
 });

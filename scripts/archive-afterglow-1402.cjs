@@ -33,6 +33,7 @@ if(sourcePath){
 // identities are recovered from embedded build metadata and the historical builder.
 const old1402='944d5aeed06fdff7d2fc1ce044d5daa272d85800',oldIntegration='acf25a831725f0d44fcb64725d4ce35acbba8f9d';
 const retainedSpecs=[
+ ['afterglow-1402-587c00a564c4-02e6251330cb.zip','Builds',build.commit,build.commit+'-wwb-layout-v3-intermediate-20261123'],
  ['afterglow-1402-944d5aeed06f-79caa7434c8c.zip','Builds',old1402,old1402+'-wwb-1402-v1'],
  ['afterglow-1402-944d5aeed06f-8bcfeefff53a.zip','Builds',old1402,old1402+'-wwb-1402-v1'],
  ['afterglow-runtime-acf25a831725-2de0be1de887.zip','Builds',oldIntegration,oldIntegration+'-integration-v1'],
@@ -49,7 +50,7 @@ const retained=retainedSpecs.map(([name,role,sourceCommit,version])=>{
 
 const inventoryFile=path.join(root,'docs/afterglow-1402-private-inventory.json');
 const inventory=fs.existsSync(inventoryFile)?JSON.parse(fs.readFileSync(inventoryFile,'utf8')):{schemaVersion:1,items:[]};
-for(const item of [...added,...retained.filter(item=>item.release.startsWith(old1402))]){const existing=inventory.items.find(row=>row.id===item.id);if(existing){if(existing.files[0]?.sha256!==item.files[0].sha256)throw Error('Inventory identity conflict: '+item.id);}else inventory.items.push(item);}
+for(const item of [...added,...retained.filter(item=>item.release.startsWith(old1402)||item.release.includes('-wwb-layout-v3-intermediate-'))]){const existing=inventory.items.find(row=>row.id===item.id);if(existing){if(existing.files[0]?.sha256!==item.files[0].sha256)throw Error('Inventory identity conflict: '+item.id);}else inventory.items.push(item);}
 inventory.updated=new Date().toISOString();inventory.backupRoot=backup;inventory.sourceCommit=build.commit;inventory.payloadsExecuted=false;
 writeJSON(inventoryFile,inventory);mergeAudit({items:[...added,...retained]});
 

@@ -42,11 +42,13 @@ test('reload needs explicit completion and defused handles, then returns without
 });
 test('barebone hides detailed output and still displays a terminal result',()=>{const r=run({barebone:true});assert.match(r.document.documentElement.className,/barebone/);r.log('AG  done');assert.equal(r.nodes['bare-status'].textContent,'Jailbreak complete');});
 test('settings persist, advanced tools hide, and Auto Jailbreak uses the landing countdown',()=>{
- const nodes={},events={},ls=store();let stopped=0,auto=false;
- const node=id=>nodes[id]||(nodes[id]={hidden:id==='settings-panel',checked:false,disabled:false,setAttribute(k,v){this[k]=v;},focus(){},addEventListener:(e,fn)=>events[id+':'+e]=fn});
+ const nodes={},events={},ls=store();let stopped=0,auto=false,prevented=0;
+ const document={activeElement:null,getElementById:node,addEventListener:(e,fn)=>events[e]=fn};
+ function node(id){return nodes[id]||(nodes[id]={hidden:id==='settings-panel',checked:false,disabled:false,setAttribute(k,v){this[k]=v;},focus(){document.activeElement=this;},addEventListener:(e,fn)=>events[id+':'+e]=fn});}
  const window={AfterglowLanding:{stop(){stopped++;},isAuto:()=>auto,setAuto(v){auto=v;window.AfterglowSettingsUpdated();}}};
- vm.runInNewContext(read('assets/afterglow-1402-settings.js'),{window,document:{getElementById:node,addEventListener:(e,fn)=>events[e]=fn},localStorage:ls});
+ vm.runInNewContext(read('assets/afterglow-1402-settings.js'),{window,document,localStorage:ls});
  assert.equal(nodes['setting-advanced'].checked,true);assert.equal(nodes['setting-retry'].checked,true);events['settings-open:click']();assert.equal(nodes['settings-panel'].hidden,false);assert.equal(stopped,1);
+ assert.equal(document.activeElement,nodes['settings-close']);events.keydown({key:'Tab',shiftKey:true,preventDefault(){prevented++;}});assert.equal(document.activeElement,nodes['setting-barebone']);events.keydown({key:'Tab',shiftKey:false,preventDefault(){prevented++;}});assert.equal(document.activeElement,nodes['settings-close']);assert.equal(prevented,2);
  nodes['setting-advanced'].checked=false;events['setting-advanced:change']();assert.equal(nodes['advanced-payloads'].hidden,true);assert.equal(JSON.parse(ls.getItem('wwb.afterglow.1402.settings.v1')).advanced,false);
  nodes['setting-auto'].checked=true;events['setting-auto:change']();assert.equal(auto,true);events.keydown({key:'Escape'});assert.equal(nodes['settings-panel'].hidden,true);
 });
@@ -61,6 +63,12 @@ test('PS4 delete disables caching and gives manual browser steps without claimin
  const window={applicationCache:{},addEventListener:(e,fn)=>events[e]=fn};
  vm.runInNewContext(read('assets/afterglow-cache.js'),{window,document:{getElementById:node},navigator:{},localStorage:ls});
  events['cache-delete:click']();assert.equal(nodes['cache-delete-help'].hidden,false);assert.match(nodes['cache-status'].textContent,/PS4 browser settings/);assert.doesNotMatch(nodes['cache-status'].textContent,/cache deleted/);assert.equal(ls.getItem('wwb.afterglow.1402.cache.enabled'),'false');
+});
+test('disabled automatic caching reports only the preference and does not guess saved-copy state',()=>{
+ const events={},nodes={},ls=store();const node=id=>nodes[id]||(nodes[id]={hidden:true,checked:false,addEventListener:(e,fn)=>events[id+':'+e]=fn,removeAttribute(){}});
+ const window={applicationCache:{},addEventListener:(e,fn)=>events[e]=fn};
+ vm.runInNewContext(read('assets/afterglow-cache.js'),{window,document:{getElementById:node},navigator:{},localStorage:ls});
+ events.load();assert.equal(nodes['cache-status'].textContent,'Automatic caching off');assert.match(read('assets/afterglow-1402.html'),/id="cache-status" role="status">Automatic caching off<\/p>/);
 });
 test('modern deletion sends to the active worker without needing an online update',async()=>{
  const events={},nodes={},ls=store(),sent=[];let updates=0;

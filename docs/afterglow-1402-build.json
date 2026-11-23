@@ -274,12 +274,12 @@
     {
       "path": "cache.appcache",
       "bytes": 1965,
-      "sha256": "ddaf4bf6c80c099e75935dc395c902015a39b6632225fe64e7fcb4ec652d05c6"
+      "sha256": "d2c6033cca44bb4e0b18cd110a954906598224c659579dddfaeacab4f767991c"
     },
     {
       "path": "cache.js",
-      "bytes": 6531,
-      "sha256": "bba841810d2b96f0490fb25e4524cb770b08dcc5f5ae93d67b9bdc1ef0750399"
+      "bytes": 6506,
+      "sha256": "9407ca28142aa70abccc1edc18985b70b6455a6aa1b27e3a1d0a7861b50653f6"
     },
     {
       "path": "core.js",
@@ -318,8 +318,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 6157,
-      "sha256": "1f460b71e7cde98d233f5291162f8106939f15e8178304e2f979a71d322fcbdc"
+      "bytes": 6206,
+      "sha256": "3121ff0897eb2241c554583f63045fa173fad7a1ee2746efb38d2db42efe9762"
     },
     {
       "path": "int64.js",
@@ -379,7 +379,7 @@
     {
       "path": "offline-files.json",
       "bytes": 11938,
-      "sha256": "a332055367e1fc424d42990eb42751f10472b846dae1ae379c0cd84f77a8f4db"
+      "sha256": "a6fb6bc577a1ab2016bdfb69d87798f5c1e7957d171ab3a8310ee6753725d1f5"
     },
     {
       "path": "offline-sw.js",
@@ -483,8 +483,8 @@
     },
     {
       "path": "settings.js",
-      "bytes": 1656,
-      "sha256": "d455cb7c0c45db56ded8a49183728f02772b67d584939a5ffc744eea33135582"
+      "bytes": 1908,
+      "sha256": "f44482e7a9893be2452103deca87139c5bff0ceb6ddc68bf2e4538f5bb13a6aa"
     },
     {
       "path": "style.css",
@@ -708,6 +708,9 @@
   "hardwareTested": false,
   "changes": [
     "Restored the authored WWB 14.02 landing, settings, cache controls and guarded run presentation.",
+    "Clarified the WWB chooser, guarded run screen and optional offline-cache behavior in the guide and catalogue.",
+    "Made the disabled automatic-cache status neutral so it does not guess whether a saved copy exists.",
+    "Added dialog semantics, a keyboard focus loop and non-duplicative HEN choice labels.",
     "Kept the current pinned Afterglow exploit modules, firmware offsets, HEN payloads and patchsets byte-identical to upstream.",
     "Kept GoldHEN 2.4b18.14 and the upstream-bundled ps4-hen choice.",
     "Preserved the stock upstream tree, previous 944d5aeed06f runtime and every older download.",
@@ -719,11 +722,11 @@
     "Physical-console execution was not performed during this layout restoration."
   ],
   "archive": {
-    "filename": "afterglow-1402-587c00a564c4-1d872faa3808.zip",
-    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-1d872faa3808.zip",
-    "bytes": 4196453,
-    "sha256": "1d872faa3808fe19f1f11b63de63b64ca8a84d23e0291424287f6887c49f7978",
+    "filename": "afterglow-1402-587c00a564c4-d42fada08cf1.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-d42fada08cf1.zip",
+    "bytes": 4196710,
+    "sha256": "d42fada08cf11660b9cc2c777ad72ed488ed12c8e28fc0a0b4760ff721a4617b",
     "sourceURL": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
-    "version": "587c00a564c4765b78ab413e400a392efdd9a780-wwb-layout-v3"
+    "version": "587c00a564c4765b78ab413e400a392efdd9a780-wwb-layout-v3.1"
   }
 }

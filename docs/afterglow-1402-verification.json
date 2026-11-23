@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "status": "WWB 14.02 layout restored, deployed and live verified.",
+  "status": "WWB 14.02 layout audit fixes verified locally; corrective publication pending.",
   "source": {
     "repository": "https://github.com/well0nez/afterglow-web",
     "commit": "587c00a564c4765b78ab413e400a392efdd9a780",
@@ -10,16 +10,17 @@
   "publicRoute": "/ps4/14.02/",
   "guide": "/hosts/ps4/14.02-guide/",
   "archive": {
-    "filename": "afterglow-1402-587c00a564c4-1d872faa3808.zip",
-    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-1d872faa3808.zip",
-    "bytes": 4196453,
-    "sha256": "1d872faa3808fe19f1f11b63de63b64ca8a84d23e0291424287f6887c49f7978",
+    "filename": "afterglow-1402-587c00a564c4-d42fada08cf1.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-d42fada08cf1.zip",
+    "bytes": 4196710,
+    "sha256": "d42fada08cf11660b9cc2c777ad72ed488ed12c8e28fc0a0b4760ff721a4617b",
     "sourceZipSha256": "55de4933452c66c649e314604fe433f7cb7bab80fc0820bafa4c9f34696be0a8",
     "scopedIndex": "F:/whatsite-backup-downloads-etc/files/PS4/Hosts/afterglow web/download-inventory.json",
-    "indexedFiles": 34,
+    "indexedFiles": 37,
     "missingFiles": 0,
     "hashMismatches": 0,
-    "repositoryZipsPreserved": 23
+    "repositoryZipsPreserved": 26,
+    "preservedIntermediateBuilds": 2
   },
   "payloads": {
     "goldHENVersion": "2.4b18.14",
@@ -34,12 +35,15 @@
     "The pinned upstream exploit modules, offsets, patchsets and HEN payloads remain byte-for-byte; no native payload was executed.",
     "A one-use same-origin 14.02 guard still blocks direct or restored run-page execution.",
     "The separate WWB BIN and ELF loader tools remain available from the restored landing and its verified offline closure.",
-    "The general PS4 offline pack excludes the 14.02 wrapper, short route and current runtime so it cannot preserve a stale handoff into Afterglow's separate Application Cache.",
-    "The previous 944d5aeed06f runtime, ready ZIPs and the 13.52/14.00 Afterglow integration remain preserved."
+    "The general PS4 offline pack excludes the 14.02 wrapper, short route and current runtime so it cannot preserve a stale handoff into the chooser's separate optional cache.",
+    "The previous 944d5aeed06f runtime, ready ZIPs and the 13.52/14.00 Afterglow integration remain preserved.",
+    "The guide and catalogue now describe the WWB chooser and optional cache instead of the retired stock landing.",
+    "The disabled automatic-cache status no longer guesses whether a saved copy exists.",
+    "The Options dialog now traps keyboard focus, exposes dialog semantics and keeps decorative HEN badges out of radio labels."
   ],
   "verification": {
-    "focusedTests": 52,
-    "focusedPassed": 52,
+    "focusedTests": 54,
+    "focusedPassed": 54,
     "focusedFailed": 0,
     "visualChecks": [
       "1440 x 900 desktop: two 531px panels and no horizontal overflow",
@@ -55,10 +59,10 @@
     "Physical PS4 14.02 execution and cache persistence were not tested in this update."
   ],
   "publication": {
-    "status": "deployed and live verified",
+    "status": "corrective publication pending",
     "url": "https://speedy-away.github.io/ps4/14.02/",
-    "commit": "c9c4f631c7ca6aeddea6d0e65916ae41102c1878",
-    "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/45271991969",
-    "liveCheckedAt": "2026-11-23T21:43:33.952Z"
+    "commit": null,
+    "workflow": null,
+    "liveCheckedAt": null
   }
 }

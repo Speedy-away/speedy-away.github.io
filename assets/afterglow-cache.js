@@ -64,6 +64,6 @@
  toggle.addEventListener('change',function(){try{localStorage.setItem(key,String(toggle.checked));}catch(e){}if(toggle.checked)cacheNow(false);else cancel();});
  button.addEventListener('click',function(){cacheNow(false);});update.addEventListener('click',function(){cacheNow(true);});remove.addEventListener('click',deleteCache);stop.addEventListener('click',cancel);
  window.AfterglowCache={isBusy:function(){return busy;},isReady:function(){return ready;},subscribe:function(fn){listeners.push(fn);},stop:cancel,onDelete:function(fn){deleteListeners.push(fn);}};
- window.addEventListener('load',function(){if(toggle.checked)cacheNow(false);else state('Automatic caching off · use Cache now to save',false,false);});
+ window.addEventListener('load',function(){if(toggle.checked)cacheNow(false);else state('Automatic caching off',false,false);});
  window.addEventListener('pagehide',function(){if(busy&&!deleting)cancel();});
 }());
