@@ -3,7 +3,7 @@ const icon=(name)=>{const shapes={back:'<path d="m14 6-6 6 6 6M8 12h12"/>',more:
 function organize(markup,platform){
  const base='/hosts/'+platform+'/',name=platform.toUpperCase();
  const rows=[['?view=loaders',platform==='ps4'?'Jailbreak':'Choose firmware'],['?view=payloads','Payloads'],['?view=mods','Mods / Mod Menus'],['?view=tools','Tools'],['patches/','Game patches'],['patches/','Game patches'],['files/','File manager'],['payload-manager/',name+' Payload Manager'],['/console/'+platform+'/downloads.html','Console downloads'],['?view=connection','Connection &amp; setup'],['?view=sender','Desktop sender · connect from a PC']];
- if(platform==='ps4')rows.splice(4,0,['?view=goldhen','GoldHEN / HEN'],['/ps4/phantomhen/','PhantomHEN · 14.02']);
+ if(platform==='ps4')rows.splice(4,0,['/ps4/hens/','Hens']);
  const primaryCount=platform==='ps4'?6:5;
  const anchors=items=>items.map(([href,label])=>`<a href="${href.startsWith('/')?href:base+href}" aria-label="${label}">${label}</a>`).join('');
  const directory=`<header class="host-folder-heading"><div><p class="host-platform-label" translate="no">PLAYSTATION ${platform==='ps4'?'4':'5'}</p><div class="host-heading-line"><h1 id="host-folder-title">${name}</h1><span class="host-file-count" id="host-file-count" role="status"></span></div></div><span id="host-folder-path" hidden></span></header><nav id="host-folder-directory" class="host-file-tabs" aria-label="${name} files"><div class="host-primary-tabs">${anchors(rows.slice(0,primaryCount))}</div><details class="host-utility-menu"><summary aria-label="More">${icon('more')}<span>More</span></summary><div>${anchors(rows.slice(primaryCount))}</div></details></nav><div id="host-file-firmware"></div>`;

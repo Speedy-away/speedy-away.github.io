@@ -86,6 +86,7 @@ function receiverUpdate(platform,root=ROOT){
 }
 function build(output,revision='main',root=ROOT){
  require('./build-phantomhen.cjs').build(root);
+ require('./host-hens.cjs').build(root);
  assert.ok(output&&!fs.existsSync(output),'Use a fresh build directory');assert.match(revision,/^(?:main|[a-f0-9]{40})$/);const karo=JSON.parse(fs.readFileSync(path.join(root,'docs/host-reviews/karo/build.json'))),activeKaro=karo.runtime.replace(/^\//,'').replace(/web\/$/,''),all=walk(root).map(f=>slash(path.relative(root,f))).filter(p=>!/^tmp\/|^scripts\/|^i18n-tools\//.test(p));
  const karoRuntimes=new Set([activeKaro,...require('./host-compact-pages.cjs').groups(root)
   .map(g=>g.runtime?.match(/^\/(hosts\/runtime\/karo-[a-f0-9]{12}-[a-f0-9]{12}\/)web\/$/)?.[1])
