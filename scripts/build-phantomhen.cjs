@@ -27,6 +27,7 @@ function build(root=path.resolve(__dirname,'..')){
  write('hosts/ps4/phantomhen/index.html',publicPage);write('ps4/phantomhen/index.html',publicPage);
  // Patch only authored landing/controller and run-page presentation in the existing build.
  let landing=read(old+'/index.html').toString();if(!landing.includes('value="phantomhen"'))landing=landing.replace('</fieldset>','<label class="opt"><input type="radio" name="payload" value="phantomhen"><span><strong>PhantomHEN</strong></span><span class="choice-mark" aria-hidden="true">PH</span></label></fieldset>');
+ landing=landing.replace('<h2 id="picker-title">Payload</h2>','<h2 id="picker-title">Hens</h2>').replace('<strong>ps4-hen</strong>','<strong>HEN / SilverHEN</strong>');
  landing=landing.replace('Afterglow by well0nez / m0zz','WWB HOST · PS4 14.02');write(old+'/index.html',landing);
  let entry=read(old+'/launch.js').toString();if(!entry.includes("picked() === 'phantomhen'"))entry=entry.replace('function start() {',"function start() { if (picked() === 'phantomhen') { stop(); location.href='/ps4/phantomhen/'; return; }");entry=entry.replace("var targets = {hen:","var targets = {phantomhen: 'phantomhen', hen:");write(old+'/launch.js',entry);
  write(old+'/hen-console.css',read('assets/hen-console.css'));
