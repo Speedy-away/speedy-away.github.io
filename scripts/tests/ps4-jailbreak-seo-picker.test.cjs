@@ -22,7 +22,7 @@ test('guide has canonical/social/schema metadata and all sitemap language entrie
  const map=fs.readFileSync(root+'/sitemap.xml','utf8');assert.equal(map,seo.sitemap());for(const code of locales.codes)assert.ok(map.includes('<loc>'+locales.url(name,code)+'</loc>'));assert.doesNotMatch(map,/<loc>[^<]*\/hosts\/runtime\//);
 });
 test('localized PS4 metadata describes 14.02 features while PS5 keeps its limitations',()=>{
- for(const code of locales.codes.filter(c=>c!=='en')){const table=locales.dictionary(root,code),ps4=locales.localized(seo.descriptor('hosts/ps4/index.html'),code,table),ps5=locales.localized(seo.descriptor('hosts/ps5/index.html'),code,table),empty=locales.translate('{versions}: empty firmware choices; no exploit or payload is provided.',table).split('{versions}')[1];assert.match(ps4.description,/PS4 14\.02.*GoldHEN \/ ps4-hen/);assert.ok(!ps4.description.includes(empty));assert.ok(ps5.description.includes(empty));}
+ for(const code of locales.codes.filter(c=>c!=='en')){const table=locales.dictionary(root,code),ps4=locales.localized(seo.descriptor('hosts/ps4/index.html'),code,table),ps5=locales.localized(seo.descriptor('hosts/ps5/index.html'),code,table),empty=locales.translate('{versions}: empty firmware choices; no exploit or payload is provided.',table).split('{versions}')[1];assert.match(ps4.description,/PS4 14\.02.*GoldHEN \/ HEN \/ SilverHEN \/ PhantomHEN/);assert.ok(!ps4.description.includes(empty));assert.ok(ps5.description.includes(empty));}
 });
 test('PS4 tab and primary launch cards use the requested labels',()=>{
  assert.match(fs.readFileSync(root+'/assets/host-folders.js','utf8'),/loaders:platform==='ps4'\?'Jailbreak'/);
