@@ -5,6 +5,7 @@ const base='hosts/runtime/ps4-phantomhen-146c21d20c45',old='hosts/runtime/ps4-af
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 function build(root=path.resolve(__dirname,'..')){
  const read=f=>fs.readFileSync(path.join(root,f)),write=(f,b)=>{fs.mkdirSync(path.dirname(path.join(root,f)),{recursive:true});fs.writeFileSync(path.join(root,f),b);};
+ const hub='hosts/ps4/index.html';let hubHTML=read(hub).toString();hubHTML=hubHTML.replace('<a href="/hosts/ps4/?view=goldhen" aria-label="Goldhen PS4">Goldhen PS4</a>','<a href="/hosts/ps4/?view=goldhen" aria-label="GoldHEN / HEN">GoldHEN / HEN</a><a href="/ps4/phantomhen/" aria-label="PhantomHEN for PS4 14.02">PhantomHEN · 14.02</a>');write(hub,hubHTML);
  const inv=JSON.parse(read('docs/phantomhen-source-inventory.json'));
  const source=inv.records.find(r=>r.repo==='PhantomHEN');
  for(const f of source.files){const b=read(f.local);if(hash(b)!==f.sha256)throw Error('Pinned PhantomHEN identity changed: '+f.path);if(!['index.html','launch.html'].includes(f.path))write(base+'/web/'+f.path,b);}
