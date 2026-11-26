@@ -42,6 +42,10 @@ pages["hosts/ps4/firmware/index.html"].description="Choose your exact PS4 firmwa
 pages["hosts/ps4/14.02-guide/index.html"].description="PS4 14.02 jailbreak guide: choose GoldHEN, HEN / SilverHEN or PhantomHEN in the exploit’s Hens panel. Check firmware and offline-cache requirements.";
 pages["hosts/ps4/phantomhen/index.html"].description="PhantomHEN HEN 184 for PS4 14.02. Open the dedicated console from the 14.02 Hens selector alongside GoldHEN and HEN / SilverHEN.";
 pages["hosts/ps4/afterglow-1402/index.html"].description="PS4 14.02 WebKit exploit with an integrated Hens selector. Choose GoldHEN, HEN / SilverHEN or PhantomHEN inside the exploit screen.";
+const psPlusFAQ=require('./ps4-jailbreak-faq.cjs');
+pages['hosts/ps4/14.02-guide/index.html'].faq=psPlusFAQ.questions;
+pages['hosts/ps4/14.02-guide/index.html'].keywords=[...new Set([...pages['hosts/ps4/14.02-guide/index.html'].keywords,...psPlusFAQ.keywords])];
+pages['hosts/ps4/14.02-guide/index.html'].description='PS4 14.02 jailbreak guide: GoldHEN, HEN / SilverHEN and PhantomHEN, offline setup, firmware compatibility and free PS Plus questions explained.';
 for(const name of ['index.html','hosts/ps4/index.html','hosts/ps4/firmware/index.html','hosts/ps4/14.02-guide/index.html','hosts/ps4/phantomhen/index.html'])pages[name].lastmod='2026-11-26';
 function descriptor(name,html=''){
  if(pages[name])return {...pages[name],canonical:ORIGIN+'/'+name.replace(/index\.html$/,'')};
@@ -56,6 +60,7 @@ function markup(data){
  const title=data.name+' | '+BRAND,image=data.image||consoleImage('ps5'),url=data.canonical,keywords=[...new Set([...data.keywords,BRAND,'whatwhatboy'])].join(', '),robots=data.index===false?'noindex, follow':'index, follow, max-image-preview:large';
  const meta=(key,value,property=false)=>'<meta '+(property?'property':'name')+'="'+key+'" content="'+escape(value)+'">';
  const schema={'@context':'https://schema.org','@graph':[{'@type':'WebSite','@id':ORIGIN+'/#website',url:ORIGIN+'/',name:BRAND,alternateName:'whatwhatboy PS4 / PS5 Host',inLanguage:require('./host-locales.cjs').codes},{'@type':'WebPage','@id':url+'#webpage',url,name:title,description:data.description,inLanguage:data.language||'en',isPartOf:{'@id':ORIGIN+'/#website'},keywords,about:{'@type':'Thing',name:data.platform?'PlayStation '+data.platform.slice(-1)+' browser hosts and homebrew':'PlayStation browser hosts and homebrew'},image:ORIGIN+image.path}]};
+ if(data.faq){schema['@graph'][1]['@type']=['WebPage','FAQPage'];schema['@graph'][1].mainEntity=data.faq.map(q=>({'@type':'Question',name:q.question,acceptedAnswer:{'@type':'Answer',text:q.answer}}));}
  if(data.alternateName)schema['@graph'][1].alternateName=data.alternateName;
  if(data.platform==='ps4'&&data.keywords.includes('PhantomHEN'))schema['@graph'][1].mentions={'@type':'SoftwareApplication','@id':ORIGIN+'/hosts/ps4/phantomhen/#software',name:'PhantomHEN',alternateName:'Phantom HEN',applicationCategory:'UtilitiesApplication',operatingSystem:'PlayStation 4 firmware 14.02',softwareVersion:'HEN 184',url:ORIGIN+'/hosts/ps4/phantomhen/',sameAs:'https://github.com/idntusemodz/PhantomHEN/tree/146c21d20c4534b660aec6b64baf3a0d18c9ee42'};
  if(url!==ORIGIN+'/'){
