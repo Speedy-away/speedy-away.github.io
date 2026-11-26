@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PhantomHEN Settings</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0a0a;color:#e0e0e0;font-family:sans-serif;min-height:100vh;padding:20px}
+header{display:flex;align-items:center;gap:14px;padding:16px 0 20px;border-bottom:1px solid #1a3a4a;margin-bottom:20px}
+header img{width:40px;height:40px;object-fit:contain}
+header h1{font-size:18px;color:#00c0ff;letter-spacing:1px}
+header span{font-size:11px;color:#666;margin-left:4px}
+#status-bar{background:#111;border:1px solid #1a3a4a;border-radius:6px;padding:10px 14px;margin-bottom:20px;font-size:12px;color:#888;display:flex;align-items:center;gap:10px}
+#status-dot{width:8px;height:8px;border-radius:50%;background:#444;flex-shrink:0;transition:background .3s}
+#status-dot.ok{background:#00c060}
+#status-dot.err{background:#cc0000}
+#status-text{flex:1}
+a.back{color:#00c0ff;font-size:12px;text-decoration:none;border:1px solid #1a3a4a;padding:4px 10px;border-radius:4px}
+a.back:hover{background:#1a3a4a}
+.sections{display:grid;grid-template-columns:1fr;gap:0 32px}
+@media(min-width:600px){.sections{grid-template-columns:1fr 1fr}}
+.section{margin-bottom:20px}
+.section-title{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#00c0ff;border-bottom:1px solid #1a3a4a;padding-bottom:4px;margin-bottom:8px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid #111;gap:10px}
+.row:last-child{border-bottom:none}
+.row .rlabel{font-size:13px;flex:1;min-width:0}
+/* toggle */
+.tog{position:relative;width:40px;height:22px;flex-shrink:0}
+.tog input{opacity:0;width:0;height:0}
+.tog .sl{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#333;border-radius:11px;transition:.2s}
+.tog .sl:before{position:absolute;content:'';height:16px;width:16px;left:3px;bottom:3px;background:#888;border-radius:50%;transition:.2s}
+.tog input:checked+.sl{background:#0080c0}
+.tog input:checked+.sl:before{transform:translateX(18px);background:#fff}
+/* number / text inputs */
+.ctrl-num,.ctrl-txt{background:#111;border:1px solid #1a3a4a;color:#e0e0e0;padding:4px 8px;font-family:'Courier New',monospace;font-size:12px;border-radius:4px;width:90px;text-align:right;outline:none;transition:border-color .15s}
+.ctrl-txt{text-align:left;width:130px}
+.ctrl-num:focus,.ctrl-txt:focus{border-color:#0080c0}
+/* select */
+.ctrl-sel{background:#111;border:1px solid #1a3a4a;color:#e0e0e0;padding:4px 6px;font-family:sans-serif;font-size:12px;border-radius:4px;outline:none;cursor:pointer;max-width:140px;transition:border-color .15s}
+.ctrl-sel:focus{border-color:#0080c0}
+/* slider */
+.ctrl-range{-webkit-appearance:none;width:100px;height:4px;background:#333;border-radius:2px;outline:none;cursor:pointer}
+.ctrl-range::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:#0080c0;cursor:pointer}
+.range-val{font-size:11px;color:#888;width:32px;text-align:right;flex-shrink:0}
+/* toast */
+#toast-wrap{position:fixed;bottom:24px;right:20px;display:flex;flex-direction:column-reverse;gap:8px;z-index:9999;pointer-events:none}
+.toast{background:#111;border:1px solid #1a3a4a;color:#e0e0e0;font-size:12px;padding:9px 14px;border-radius:6px;display:flex;align-items:center;gap:8px;min-width:200px;max-width:300px;opacity:0;transform:translateX(20px);transition:opacity .2s,transform .2s}
+.toast.show{opacity:1;transform:translateX(0)}
+.toast .ti{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.toast .ti.on{background:#00c060}
+.toast .ti.off{background:#cc0000}
+.toast .ti.set{background:#0080c0}
+footer{text-align:center;padding:30px 0 10px;font-size:11px;color:#444}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="PhantomHEN">
+  <h1>PhantomHEN Settings</h1><span>FW 14.02</span>
+  <a class="back" href="index.html" style="margin-left:auto">← Main Page</a>
+</header>
+<div id="status-bar">
+  <div id="status-dot"></div>
+  <div id="status-text">Checking HEN status…</div>
+</div>
+<div class="sections" id="sections"></div>
+<div id="toast-wrap"></div>
+<footer>PhantomHEN · iDntUseModz · FW 14.02</footer>
+<script>
+/* ── persistence ── */
+var LS_KEY = "phen_settings";
+function loadAll(){try{return JSON.parse(localStorage.getItem(LS_KEY)||"{}");}catch(e){return{};}}
+function persist(id,val){try{var s=loadAll();s[id]=val;localStorage.setItem(LS_KEY,JSON.stringify(s));}catch(e){}}
+function stored(id){try{var s=loadAll();return id in s?s[id]:null;}catch(e){return null;}}
+
+/* ── toast ── */
+function showToast(name,val,type){
+  var wrap=document.getElementById("toast-wrap");
+  var t=document.createElement("div");
+  t.className="toast";
+  var dot="";
+  if(type==="toggle") dot='<span class="ti '+(val?"on":"off")+'"></span>';
+  else dot='<span class="ti set"></span>';
+  var label=type==="toggle"?("<b>"+(val?"ON":"OFF")+"</b>"):("<b>"+val+"</b>");
+  t.innerHTML=dot+name+": "+label;
+  wrap.appendChild(t);
+  requestAnimationFrame(function(){requestAnimationFrame(function(){t.classList.add("show");});});
+  setTimeout(function(){t.classList.remove("show");setTimeout(function(){if(t.parentNode)t.parentNode.removeChild(t);},250);},2500);
+}
+
+/* ── syscall ── */
+var ready=false;
+function callSetting(id,val){
+  persist(id,val);
+  try{if(window.opener&&typeof window.opener.setSetting==="function"){window.opener.setSetting(id,val);return;}}catch(e){}
+  try{if(typeof window.__setSetting==="function"){window.__setSetting(id,val);return;}}catch(e){}
+}
+
+function tryInitSyscall(){
+  ready=true;
+  try{
+    if(window.opener&&window.opener.__openHENSettings){setStatus(true,"HEN active — settings live");return;}
+  }catch(e){}
+  try{if(typeof window.__setSetting==="function"){setStatus(true,"HEN active — settings live");return;}}catch(e){}
+  setStatus(true,"FTP live — settings active");
+}
+
+function setStatus(ok,msg){
+  document.getElementById("status-dot").className=ok?"ok":"err";
+  document.getElementById("status-text").textContent=msg;
+}
+
+/* ── section definitions ──
+   type: toggle | number | select | text | range
+   def: default value
+   min/max/step: for number/range
+   unit: label suffix
+   opts: [{label,val}] for select
+*/
+var SECTIONS=[
+{label:"Network & Remote",items:[
+  {id:11,name:"FTP Server",def:1,type:"toggle"},
+  {id:12,name:"FTP Anonymous",def:0,type:"toggle"},
+  {id:13,name:"FTP Port",def:2121,type:"number",min:1,max:65535,unit:""},
+  {id:14,name:"Remote Play",def:0,type:"toggle"},
+  {id:15,name:"PSN Patch",def:0,type:"toggle"},
+  {id:16,name:"LAN Play",def:0,type:"toggle"},
+]},
+{label:"PKG & Install",items:[
+  {id:46,name:"Fake PKG",def:1,type:"toggle"},
+  {id:47,name:"No Cert Check",def:1,type:"toggle"},
+  {id:48,name:"Allow All PKG",def:1,type:"toggle"},
+  {id:52,name:"Unsigned PKG",def:1,type:"toggle"},
+  {id:50,name:"Region Bypass",def:0,type:"toggle"},
+  {id:49,name:"NP Env Spoof",def:0,type:"toggle"},
+]},
+{label:"Games & Saves",items:[
+  {id:36,name:"Disc Bypass",def:1,type:"toggle"},
+  {id:30,name:"Cheats",def:0,type:"toggle"},
+  {id:31,name:"Trainers",def:0,type:"toggle"},
+  {id:32,name:"Trophy Lock",def:0,type:"toggle"},
+  {id:34,name:"Save Backup",def:0,type:"toggle"},
+  {id:35,name:"Save Resign",def:0,type:"toggle"},
+  {id:37,name:"Remote PKG",def:0,type:"toggle"},
+  {id:83,name:"Game Patch Bypass",def:0,type:"toggle"},
+  {id:84,name:"Trial Unlock",def:0,type:"toggle"},
+  {id:86,name:"DLC Unlock",def:0,type:"toggle"},
+  {id:91,name:"Block Auto Update",def:0,type:"toggle"},
+  {id:93,name:"Force 60FPS",def:0,type:"toggle"},
+  {id:94,name:"Skip Intros",def:0,type:"toggle"},
+]},
+{label:"Plugins",items:[
+  {id:38,name:"Plugins Enabled",def:1,type:"toggle"},
+  {id:42,name:"Allow Unsigned PRX",def:0,type:"toggle"},
+  {id:39,name:"Plugin Log",def:0,type:"toggle"},
+  {id:40,name:"Plugin Error Notify",def:0,type:"toggle"},
+]},
+{label:"System Tweaks",items:[
+  {id:17,name:"Disable HDCP",def:0,type:"toggle"},
+  {id:18,name:"Suspend Patch",def:0,type:"toggle"},
+  {id:19,name:"Sysver Spoof",def:0,type:"toggle"},
+  {id:"19t",name:"Spoof Version",def:"09.00",type:"text",placeholder:"e.g. 09.00",note:"applies on reboot"},
+  {id:21,name:"Safe Mode Patch",def:0,type:"toggle"},
+  {id:22,name:"Poke Patch",def:0,type:"toggle"},
+  {id:24,name:"Boost Mode",def:0,type:"toggle"},
+  {id:45,name:"RGB Full Range",def:0,type:"toggle"},
+  {id:44,name:"Force Resolution",def:0,type:"select",opts:[
+    {label:"Default",val:0},{label:"720p",val:1},{label:"1080p",val:2},{label:"4K",val:3}
+  ]},
+]},
+{label:"PSN",items:[
+  {id:53,name:"PSN Offline",def:0,type:"toggle"},
+  {id:54,name:"NAT Spoof",def:0,type:"toggle"},
+  {id:55,name:"Trophy Bypass",def:0,type:"toggle"},
+  {id:57,name:"Store Bypass",def:0,type:"toggle"},
+  {id:58,name:"Online ID Spoof",def:0,type:"toggle"},
+  {id:"58t",name:"Spoofed ID",def:"",type:"text",placeholder:"your fake PSN name",note:"applies on reboot"},
+]},
+{label:"Display & UI",items:[
+  {id:61,name:"Notify Style",def:0,type:"select",opts:[
+    {label:"Default",val:0},{label:"Minimal",val:1},{label:"Large",val:2},{label:"Off",val:3}
+  ]},
+  {id:67,name:"Notify Duration",def:5,type:"number",min:1,max:30,unit:"s"},
+  {id:63,name:"Clock 24h",def:0,type:"toggle"},
+  {id:64,name:"Show Battery %",def:0,type:"toggle"},
+  {id:71,name:"Show FPS",def:0,type:"toggle"},
+  {id:72,name:"Show CPU Temp",def:0,type:"toggle"},
+  {id:68,name:"Disable Popups",def:0,type:"toggle"},
+  {id:70,name:"Menu Alpha",def:85,type:"range",min:0,max:100,unit:"%"},
+]},
+{label:"System Extended",items:[
+  {id:96,name:"Fast Boot",def:0,type:"toggle"},
+  {id:100,name:"USB Storage",def:0,type:"toggle"},
+  {id:101,name:"BD Drive Bypass",def:0,type:"toggle"},
+  {id:104,name:"Recovery Patch",def:0,type:"toggle"},
+  {id:107,name:"Safe App Bypass",def:1,type:"toggle"},
+  {id:108,name:"Emergency Bypass",def:0,type:"toggle"},
+  {id:96,name:"Power Mode",def:0,type:"select",opts:[
+    {label:"Normal",val:0},{label:"Rest Mode",val:1},{label:"Performance",val:2}
+  ]},
+  {id:"sysname",name:"System Name",def:"",type:"text",placeholder:"PS4 display name",note:"applies on reboot"},
+]},
+{label:"Debug",items:[
+  {id:73,name:"Kernel Debug Log",def:0,type:"toggle"},
+  {id:74,name:"Debug Overlay",def:0,type:"toggle"},
+  {id:75,name:"Core Dump",def:0,type:"toggle"},
+  {id:77,name:"Net Debug Log",def:0,type:"toggle"},
+  {id:79,name:"Memory Debug",def:0,type:"toggle"},
+  {id:81,name:"Crash Report",def:0,type:"toggle"},
+]},
+];
+
+/* ── build UI ── */
+function makeToggle(item){
+  var wrap=document.createElement("label");
+  wrap.className="tog";
+  var inp=document.createElement("input");
+  inp.type="checkbox";
+  inp.id="st-"+item.id;
+  var sv=stored(item.id);
+  inp.checked=sv!==null?!!sv:!!item.def;
+  var sl=document.createElement("span");
+  sl.className="sl";
+  inp.onchange=(function(it){return function(){
+    callSetting(it.id,this.checked?1:0);
+    showToast(it.name,this.checked,"toggle");
+  };})(item);
+  wrap.appendChild(inp);wrap.appendChild(sl);
+  return wrap;
+}
+
+function makeNumber(item){
+  var inp=document.createElement("input");
+  inp.type="number";
+  inp.className="ctrl-num";
+  inp.min=item.min||0;inp.max=item.max||9999;inp.step=item.step||1;
+  var sv=stored(item.id);
+  inp.value=sv!==null?sv:item.def;
+  inp.onchange=(function(it){return function(){
+    var v=parseInt(this.value)||it.def;
+    this.value=Math.min(Math.max(v,it.min||0),it.max||9999);
+    callSetting(it.id,parseInt(this.value));
+    showToast(it.name,this.value+(it.unit||""),"value");
+  };})(item);
+  return inp;
+}
+
+function makeSelect(item){
+  var sel=document.createElement("select");
+  sel.className="ctrl-sel";
+  var sv=stored(item.id);
+  (item.opts||[]).forEach(function(o){
+    var opt=document.createElement("option");
+    opt.value=o.val;opt.textContent=o.label;
+    if((sv!==null?sv:item.def)==o.val)opt.selected=true;
+    sel.appendChild(opt);
+  });
+  sel.onchange=(function(it){return function(){
+    var v=parseInt(this.value);
+    callSetting(it.id,v);
+    showToast(it.name,this.options[this.selectedIndex].text,"value");
+  };})(item);
+  return sel;
+}
+
+function makeText(item){
+  var inp=document.createElement("input");
+  inp.type="text";
+  inp.className="ctrl-txt";
+  inp.placeholder=item.placeholder||"";
+  var sv=stored(item.id);
+  inp.value=sv!==null?sv:(item.def||"");
+  inp.onchange=(function(it){return function(){
+    persist(it.id,this.value);
+    showToast(it.name,this.value||"(cleared)","value");
+  };})(item);
+  return inp;
+}
+
+function makeRange(item){
+  var wrap=document.createElement("div");
+  wrap.style.cssText="display:flex;align-items:center;gap:6px;flex-shrink:0";
+  var r=document.createElement("input");
+  r.type="range";r.className="ctrl-range";
+  r.min=item.min||0;r.max=item.max||100;r.step=item.step||1;
+  var sv=stored(item.id);
+  r.value=sv!==null?sv:item.def;
+  var lbl=document.createElement("span");
+  lbl.className="range-val";lbl.textContent=r.value+(item.unit||"");
+  r.oninput=function(){lbl.textContent=this.value+(item.unit||"");};
+  r.onchange=(function(it,l){return function(){
+    l.textContent=this.value+(it.unit||"");
+    callSetting(it.id,parseInt(this.value));
+    showToast(it.name,this.value+(it.unit||""),"value");
+  };})(item,lbl);
+  wrap.appendChild(r);wrap.appendChild(lbl);
+  return wrap;
+}
+
+function buildUI(){
+  var container=document.getElementById("sections");
+  SECTIONS.forEach(function(sec){
+    var div=document.createElement("div");div.className="section";
+    var title=document.createElement("div");title.className="section-title";title.textContent=sec.label;
+    div.appendChild(title);
+    sec.items.forEach(function(item){
+      var row=document.createElement("div");row.className="row";
+      var lbl=document.createElement("span");lbl.className="rlabel";lbl.textContent=item.name;
+      if(item.note){var n=document.createElement("span");n.style.cssText="font-size:10px;color:#555;display:block";n.textContent=item.note;lbl.appendChild(n);}
+      row.appendChild(lbl);
+      var ctrl;
+      if(item.type==="toggle") ctrl=makeToggle(item);
+      else if(item.type==="number") ctrl=makeNumber(item);
+      else if(item.type==="select") ctrl=makeSelect(item);
+      else if(item.type==="text") ctrl=makeText(item);
+      else if(item.type==="range") ctrl=makeRange(item);
+      if(ctrl) row.appendChild(ctrl);
+      div.appendChild(row);
+    });
+    container.appendChild(div);
+  });
+}
+
+buildUI();
+tryInitSyscall();
+
+window.addEventListener("load",function(){
+  try{
+    if(window.opener&&typeof window.opener.setSetting==="function"||typeof window.__setSetting==="function"){
+      ready=true;setStatus(true,"HEN active — settings live");
+    }
+  }catch(e){}
+});
+</script>
+</body>
+</html>

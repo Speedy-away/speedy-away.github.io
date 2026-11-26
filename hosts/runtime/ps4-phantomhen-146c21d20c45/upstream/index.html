@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PhantomHEN // iDntUseModz</title>
+  <link rel="icon" href="akatsuki_cloud.ico" type="image/x-icon">
+  <style>
+    :root {
+      --bg:    #0a0000;
+      --panel: #0d0000;
+      --sunk:  #110000;
+      --line:  #2a0000;
+      --fg:    #c8c8c8;
+      --bright:#ffffff;
+      --dim:   #884444;
+      --faint: #442222;
+      --ok:    #cc0000;
+      --bad:   #ff4444;
+      --warn:  #cc6600;
+      --sans:  "Segoe UI", system-ui, sans-serif;
+      --mono:  Consolas, "DejaVu Sans Mono", monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font: 15px/1.45 var(--sans);
+      overflow: hidden;
+    }
+
+    /* ── scanline overlay ── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 3px,
+        rgba(0,0,0,0.08) 3px,
+        rgba(0,0,0,0.08) 4px
+      );
+      z-index: 999;
+    }
+
+    /* ── brand bar ── */
+    #brand {
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    #brand img {
+      width: 22px;
+      height: 22px;
+      filter: drop-shadow(0 0 6px #cc0000);
+    }
+    #brand .brand-name {
+      color: var(--bright);
+      font: 700 14px/1 var(--sans);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+    #brand .brand-sep {
+      color: var(--ok);
+      font: 11px/1 var(--mono);
+      opacity: 0.65;
+    }
+    #brand .brand-sub {
+      color: var(--ok);
+      font: 700 12px/1 var(--sans);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    /* ── main layout ── */
+    #main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 44px);
+      gap: 0;
+      position: relative;
+    }
+
+    /* ── glow circle behind logo ── */
+    #halo {
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(204,0,0,0.12) 0%, transparent 70%);
+      animation: haloPulse 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes haloPulse {
+      0%,100% { transform: scale(1);   opacity: 0.7; }
+      50%      { transform: scale(1.1); opacity: 1;   }
+    }
+
+    /* ── logo icon ── */
+    #logo {
+      width: 80px;
+      height: 80px;
+      filter: drop-shadow(0 0 18px #cc0000) drop-shadow(0 0 36px rgba(204,0,0,0.5));
+      animation: logoGlow 2.5s ease-in-out infinite;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 28px;
+    }
+    @keyframes logoGlow {
+      0%,100% { filter: drop-shadow(0 0 18px #cc0000) drop-shadow(0 0 36px rgba(204,0,0,0.5)); }
+      50%      { filter: drop-shadow(0 0 28px #ff2222) drop-shadow(0 0 54px rgba(255,34,34,0.7)); }
+    }
+
+    /* ── title ── */
+    #title {
+      font: 700 28px/1.1 var(--mono);
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--bright);
+      text-shadow: 0 0 32px rgba(204,0,0,0.6);
+      position: relative;
+      z-index: 1;
+      margin-bottom: 6px;
+    }
+
+    #subtitle {
+      font: 400 11px/1 var(--mono);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #663333;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 10px;
+    }
+
+    /* ── fw badge ── */
+    #fw-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      padding: 4px 11px;
+      background: var(--sunk);
+      font: 11px/1 var(--mono);
+      color: var(--dim);
+      letter-spacing: 0.1em;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 44px;
+    }
+    #fw-badge span {
+      color: var(--ok);
+      font-weight: 700;
+    }
+
+    /* ── START button ── */
+    #btn-wrap {
+      position: relative;
+      z-index: 1;
+    }
+
+    #btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 48px;
+      height: 56px;
+      border: 2px solid var(--ok);
+      border-radius: 4px;
+      background: transparent;
+      color: var(--ok);
+      font: 700 15px/1 var(--mono);
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      overflow: hidden;
+      transition: color 0.15s, background 0.15s, box-shadow 0.15s;
+      box-shadow: 0 0 20px rgba(204,0,0,0.25), inset 0 0 20px rgba(204,0,0,0.04);
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    /* shimmer fill on hover/focus */
+    #btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--ok);
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    #btn:hover::before,
+    #btn:focus::before {
+      opacity: 0.08;
+    }
+    #btn:active::before {
+      opacity: 0.18;
+    }
+
+    /* text sits above ::before */
+    #btn span { position: relative; z-index: 1; }
+
+    #btn:hover,
+    #btn:focus {
+      box-shadow: 0 0 32px rgba(204,0,0,0.5), 0 0 60px rgba(204,0,0,0.2), inset 0 0 20px rgba(204,0,0,0.08);
+      border-color: #ff2222;
+      color: #ff2222;
+    }
+    #btn:active {
+      transform: scale(0.97);
+    }
+
+    /* pulse ring */
+    #btn-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border: 1px solid rgba(204,0,0,0.3);
+      border-radius: 7px;
+      animation: btnRing 2.4s ease-out infinite;
+      pointer-events: none;
+    }
+    @keyframes btnRing {
+      0%   { opacity: 0.7; transform: scale(1); }
+      70%  { opacity: 0;   transform: scale(1.08); }
+      100% { opacity: 0;   transform: scale(1.08); }
+    }
+
+    /* ── status hint ── */
+    #hint {
+      position: relative;
+      z-index: 1;
+      margin-top: 24px;
+      font: 11px/1.5 var(--mono);
+      color: var(--faint);
+      letter-spacing: 0.08em;
+      text-align: center;
+    }
+
+    /* ── corner decorations ── */
+    .corner {
+      position: fixed;
+      width: 18px;
+      height: 18px;
+      opacity: 0.3;
+    }
+    .corner-tl { top: 56px; left: 8px;  border-top: 1px solid var(--ok); border-left: 1px solid var(--ok); }
+    .corner-tr { top: 56px; right: 8px; border-top: 1px solid var(--ok); border-right: 1px solid var(--ok); }
+    .corner-bl { bottom: 28px; left: 8px;  border-bottom: 1px solid var(--ok); border-left: 1px solid var(--ok); }
+    .corner-br { bottom: 28px; right: 8px; border-bottom: 1px solid var(--ok); border-right: 1px solid var(--ok); }
+
+    /* ── byline ── */
+    .byline {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: var(--faint);
+      font: 11px/1 var(--mono);
+      letter-spacing: 0.08em;
+    }
+    .byline img {
+      width: 13px;
+      height: 13px;
+      opacity: 0.45;
+      filter: drop-shadow(0 0 2px #cc0000);
+    }
+
+    /* ── toast notifications ── */
+    #toast-wrap {
+      position: fixed;
+      bottom: 54px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      z-index: 1000;
+      pointer-events: none;
+      width: max-content;
+      max-width: 92vw;
+    }
+    .toast {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(8,0,0,0.94);
+      border: 1px solid var(--ok);
+      border-radius: 4px;
+      padding: 9px 18px;
+      font: 700 12px/1.3 var(--mono);
+      color: var(--bright);
+      letter-spacing: 0.08em;
+      box-shadow: 0 0 22px rgba(204,0,0,0.45), inset 0 0 10px rgba(204,0,0,0.06);
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      white-space: nowrap;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast img {
+      width: 22px; height: 22px;
+      filter: drop-shadow(0 0 6px #cc0000);
+      flex-shrink: 0;
+    }
+
+    /* ── HEN links row ── */
+    #hen-links {
+      display: flex;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+    }
+    .hen-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--ok);
+      font: 700 10px/1 var(--mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      padding: 6px 14px;
+      border-radius: 3px;
+      transition: border-color .15s, color .15s, box-shadow .15s;
+    }
+    .hen-link:hover {
+      border-color: var(--ok);
+      box-shadow: 0 0 10px rgba(204,0,0,0.3);
+    }
+    .hen-link img {
+      width: 13px; height: 13px;
+      filter: drop-shadow(0 0 3px #cc0000);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="brand">
+    <img src="akatsuki_cloud.ico" alt="">
+    <span class="brand-name">PhantomHEN</span>
+    <span class="brand-sep">//</span>
+    <span class="brand-sub">iDntUseModz</span>
+  </div>
+
+  <div id="main">
+    <div id="halo"></div>
+
+    <img id="logo" src="akatsuki_cloud.ico" alt="PhantomHEN">
+
+    <div id="title">PhantomHEN</div>
+    <div id="subtitle">PS4 Jailbreak &nbsp;·&nbsp; well0nez / m0zz</div>
+
+    <div id="fw-badge">
+      Firmware &nbsp;<span>14.02</span>&nbsp;·&nbsp; hen184-v3
+    </div>
+
+    <div id="btn-wrap">
+      <button id="btn" onclick="startJB()">
+        <span>⚡&nbsp; Start Jailbreak</span>
+      </button>
+    </div>
+
+    <div id="hint">
+      Press the button to begin exploit chain<br>
+      Keep this page open until jailbreak completes
+    </div>
+
+    <div id="hen-links">
+      <a class="hen-link" href="settings.html"><img src="akatsuki_cloud.ico" alt="">HEN Settings</a>
+      <a class="hen-link" href="modzhen_settings.html" style="color:var(--dim);"><img src="akatsuki_cloud.ico" alt="">ModzHEN</a>
+      <a class="hen-link" href="admin.html" style="color:var(--dim);"><img src="akatsuki_cloud.ico" alt="">Admin</a>
+    </div>
+  </div>
+
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div>
+  <div class="corner corner-br"></div>
+
+  <p class="byline">
+    <img src="akatsuki_cloud.ico" alt="">
+    by well0nez/m0zz &mdash; iDntUseModz build
+  </p>
+
+  <div id="toast-wrap"></div>
+
+  <script>
+    // ── Toast system ─────────────────────────────────────────────────────────
+    function showToast(msg, duration) {
+      duration = duration || 2500;
+      return new Promise(function(resolve) {
+        var wrap = document.getElementById('toast-wrap');
+        var t = document.createElement('div');
+        t.className = 'toast';
+        t.innerHTML = '<img src="akatsuki_cloud.ico" alt=""><span>' + msg + '</span>';
+        wrap.appendChild(t);
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() { t.classList.add('show'); });
+        });
+        setTimeout(function() {
+          t.classList.remove('show');
+          setTimeout(function() { if (t.parentNode) t.parentNode.removeChild(t); resolve(); }, 420);
+        }, duration);
+      });
+    }
+
+    // ── Startup toast sequence ───────────────────────────────────────────────
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        showToast('Welcome To PhantomHEN❤', 2800)
+          .then(function() { return new Promise(function(r){ setTimeout(r, 250); }); })
+          .then(function() { return showToast('Made By iDntUseModz', 2800); })
+          .then(function() { return new Promise(function(r){ setTimeout(r, 350); }); })
+          .then(function() { return showToast('FTP + BIN Loader → Auto-Start ON ✓', 2500); });
+      }, 650);
+    });
+
+    // ── Start jailbreak ──────────────────────────────────────────────────────
+    function startJB() {
+      var btn = document.getElementById('btn');
+      btn.disabled = true;
+      btn.style.opacity = '0.5';
+      btn.querySelector('span').textContent = 'Loading…';
+      showToast('👀Restarting Now...', 1800).then(function() {
+        location.href = 'launch.html?v=hen184-1402-v3&log=1&afterglow=run&mode=kpstep&g=drain:16&g=drainsz:0x4000';
+      });
+    }
+  </script>
+
+</body>
+</html>

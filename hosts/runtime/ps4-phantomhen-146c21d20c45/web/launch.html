@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PhantomHEN // iDntUseModz</title>
+    <link rel="icon" href="akatsuki_cloud.ico" type="image/x-icon" />
+    <style>
+      :root {
+        --bg:    #0a0000;
+        --panel: #0d0000;
+        --sunk:  #110000;
+        --line:  #2a0000;
+        --fg:    #c8c8c8;
+        --bright:#ffffff;
+        --dim:   #884444;
+        --faint: #442222;
+        --ok:    #cc0000;
+        --bad:   #ff4444;
+        --warn:  #cc6600;
+        --sans:  "Segoe UI", system-ui, sans-serif;
+        --mono:  Consolas, "DejaVu Sans Mono", monospace;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background: var(--bg);
+        color: var(--fg);
+        font: 15px/1.45 var(--sans);
+      }
+
+      /* ── top brand bar ── */
+      #brand {
+        padding: 8px 14px;
+        border-bottom: 1px solid var(--line);
+        background: var(--panel);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      #brand img {
+        width: 20px;
+        height: 20px;
+        filter: drop-shadow(0 0 4px #cc0000);
+      }
+      #brand b {
+        color: var(--bright);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      #brand .brand-sep {
+        color: var(--ok);
+        font: 11px/1 var(--mono);
+        letter-spacing: 0.08em;
+        opacity: 0.7;
+      }
+
+      #ramBox {
+        overflow: hidden;
+        padding: 5px 10px;
+        border-bottom: 1px solid var(--line);
+        background: var(--sunk);
+        color: var(--ok);
+        font: 11px/1.4 var(--mono);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      #spin {
+        position: fixed;
+        top: calc(50% + 20px);
+        left: 50%;
+        width: 46px;
+        height: 46px;
+        margin: -23px 0 0 -23px;
+        border: 4px solid var(--line);
+        border-top-color: var(--ok);
+        border-radius: 50%;
+        animation: spin 0.9s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+
+      #msg {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: none;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      #state, #out { display: none; }
+
+      body.done #spin, body.fail #spin { display: none; }
+      body.fail #msg {
+        display: block;
+        color: var(--bad);
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        padding: 0 24px;
+      }
+
+      /* ── done state: full-screen PhantomHEN success overlay ── */
+      body.done #ramBox { display: none; }
+      body.done #msg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: fixed;
+        inset: 0;
+        top: 0;
+        transform: none;
+        z-index: 100;
+        background: #060000;
+        color: #cc0000;
+        font: 700 30px/1.2 var(--mono);
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        text-shadow: 0 0 24px rgba(204,0,0,.75), 0 0 56px rgba(204,0,0,.35);
+        animation: henGlow 2.8s ease-in-out infinite alternate;
+      }
+      body.done #msg::before {
+        content: '';
+        display: block;
+        width: 72px;
+        height: 72px;
+        background: url('akatsuki_cloud.ico') center / contain no-repeat;
+        filter: drop-shadow(0 0 18px #cc0000) drop-shadow(0 0 36px rgba(204,0,0,.5));
+        animation: iconPulse 2.5s ease-in-out infinite;
+      }
+      body.done #msg::after {
+        content: 'PhantomHEN ACTIVE  ·  iDntUseModz';
+        font: 400 11px/1 var(--mono);
+        color: #663333;
+        letter-spacing: 0.14em;
+        text-shadow: none;
+        text-transform: uppercase;
+      }
+      @keyframes henGlow {
+        from { text-shadow: 0 0 24px rgba(204,0,0,.75), 0 0 56px rgba(204,0,0,.35); }
+        to   { text-shadow: 0 0 36px rgba(255,30,30,.95), 0 0 72px rgba(204,0,0,.55); }
+      }
+      @keyframes iconPulse {
+        0%, 100% { filter: drop-shadow(0 0 18px #cc0000) drop-shadow(0 0 36px rgba(204,0,0,.5)); }
+        50%       { filter: drop-shadow(0 0 28px #ff2222) drop-shadow(0 0 56px rgba(255,34,34,.7)); }
+      }
+
+      body.log {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      body.log #spin, body.log #msg { display: none; }
+      body.log #wrap {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+        padding: 14px 18px 30px;
+      }
+      body.log #state {
+        display: block;
+        margin: 0 0 8px;
+        font: 700 13px/1.6 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ok);
+        border-left: 3px solid var(--ok);
+        padding-left: 8px;
+      }
+      body.log #out {
+        display: block;
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: var(--sunk);
+        font: 12px/1.45 var(--mono);
+        white-space: pre-wrap;
+      }
+
+      /* ── notice toast (PhantomHEN branded) ── */
+      .notice {
+        position: relative;
+        margin: 1em 0;
+        padding: 13px 14px 13px 48px;
+        border: 1px solid #cc0000;
+        border-left: 4px solid #cc0000;
+        border-radius: 4px;
+        background: #130000;
+        color: #ffaaaa;
+        font: 500 13px/1.5 var(--sans);
+        box-shadow: 0 0 22px rgba(204,0,0,.28), inset 0 0 14px rgba(204,0,0,.06);
+        animation: noticeIn .22s ease;
+      }
+      .notice::before {
+        content: '';
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url('akatsuki_cloud.ico') center / contain no-repeat;
+        filter: drop-shadow(0 0 5px #cc0000);
+      }
+      .notice::after {
+        content: 'PhantomHEN  ·  iDntUseModz';
+        display: block;
+        margin-top: 5px;
+        font: 700 10px/1 var(--mono);
+        color: #cc0000;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      @keyframes noticeIn {
+        from { opacity: 0; transform: translateX(-8px); }
+        to   { opacity: 1; transform: none; }
+      }
+
+      .byline {
+        position: fixed;
+        bottom: 9px;
+        left: 11px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--faint);
+        font: 11px/1 var(--mono);
+        letter-spacing: 0.06em;
+      }
+      .byline img {
+        width: 14px;
+        height: 14px;
+        opacity: 0.5;
+        filter: drop-shadow(0 0 2px #cc0000);
+      }
+
+      .ok   { color: var(--ok); }
+      .bad  { color: var(--bad); }
+      .warn { color: var(--warn); }
+      code  { color: #884444; }
+    </style>
+  <link rel="stylesheet" href="hen-console.css"></head>
+  <body>
+    <div id="brand"><b>WWB HOST · PhantomHEN · 14.02</b></div>
+    <div id="ramBox">RAM: checking...</div>
+    <div id="spin"></div>
+    <div id="msg">Restart your console</div>
+    <div id="wrap">
+      <div id="state"></div>
+      <div id="out"></div>
+    </div>
+    
+    <script type="module">
+      // If WebKit restored this page with ?afterglow=done, HEN is already
+      // active — show the success overlay immediately without hitting the
+      // server. This is what causes the black screen on restart: the server
+      // may not be reachable at that exact moment, so the fetch fails and
+      // location.replace('/') fires. We skip the network entirely here.
+      if (new URLSearchParams(location.search).get('afterglow') === 'done') {
+        try { document.body.className = 'done'; } catch (e) {}
+        const _m = document.getElementById('msg');
+        if (_m) _m.textContent = 'JAILBROKEN';
+      } else {
+        const stamp=Number(sessionStorage.getItem('wwb.phantom.arm'));sessionStorage.removeItem('wwb.phantom.arm');const ua=navigator.userAgent.match(/PlayStation 4[\/ ](\d+\.\d{2})(?:\D|$)/i);if(ua&&ua[1]==='14.02'&&stamp>0&&Date.now()-stamp>=0&&Date.now()-stamp<30000&&performance.navigation.type===0&&location.search==='?v=hen184-1402-v3&log=1&afterglow=run&mode=kpstep&g=drain:16&g=drainsz:0x4000'){await import('./jb-g.js?v=hen184-1402-v3');}else{location.replace('index.html');}
+      }
+    </script>
+  </body>
+</html>

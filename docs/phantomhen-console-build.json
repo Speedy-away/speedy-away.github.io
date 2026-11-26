@@ -1,0 +1,26 @@
+{
+  "page": "/ps4/phantomhen/",
+  "firmware": "14.02",
+  "sourceInventory": "docs/phantomhen-source-inventory.json",
+  "afterglowArchive": {
+    "filename": "afterglow-1402-587c00a564c4-56b6e30c932f.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-56b6e30c932f.zip",
+    "bytes": 4197579,
+    "sha256": "56b6e30c932fa7618f73ee556fdba5689c3d980eb6dfe138f2a7c5fb3399d910",
+    "sourceURL": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
+    "version": "587c00a564c4765b78ab413e400a392efdd9a780-phantom-option-wwb-layout-v3.1",
+    "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\Afterglow 14.02\\Builds\\587c00a564c4765b78ab413e400a392efdd9a780-phantom-option-wwb-layout-v3.1\\afterglow-1402-587c00a564c4-56b6e30c932f.zip",
+    "verified": true,
+    "payloadExecuted": false
+  },
+  "payloadExecuted": false,
+  "hardwareTested": false,
+  "phantomArchive": {
+    "backupPath": "F:\\whatsite-backup-downloads-etc\\files\\PS4\\Hosts\\PhantomHEN\\Builds\\146c21d20c4534b660aec6b64baf3a0d18c9ee42-wwb\\phantomhen-1402-c5e0725467d2.zip",
+    "version": "146c21d20c4534b660aec6b64baf3a0d18c9ee42-wwb",
+    "bytes": 545616,
+    "sha256": "c5e0725467d21a218ca3f8520362d0d0c2b04734eb6881305f60d739b19a0b39",
+    "sourceURL": "https://github.com/idntusemodz/PhantomHEN/tree/146c21d20c4534b660aec6b64baf3a0d18c9ee42",
+    "files": 21
+  }
+}

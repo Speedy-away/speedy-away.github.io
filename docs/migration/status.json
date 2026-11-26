@@ -3209,5 +3209,17 @@
       "workflow": "https://github.com/Speedy-away/speedy-away.github.io/actions/runs/45275048259",
       "liveCheckedAt": "2026-11-23T22:01:40.841Z"
     }
+  },
+  "phantomHen140220261126": {
+    "date": "2026-11-26",
+    "status": "Added 14.02 PhantomHEN option and dedicated console page; matching WWB run-screen styling for GoldHEN, HEN and PhantomHEN. Source bylines removed from visible screens; originals retained.",
+    "page": "/ps4/phantomhen/",
+    "preferredSource": "https://idntusemodz.github.io/PhantomHEN/",
+    "commit": "146c21d20c4534b660aec6b64baf3a0d18c9ee42",
+    "inventory": "docs/phantomhen-source-inventory.json",
+    "archive": "F:/whatsite-backup-downloads-etc/inventories/phantomhen-20261126.json",
+    "payloadExecuted": false,
+    "hardwareTested": false,
+    "published": false
   }
 }

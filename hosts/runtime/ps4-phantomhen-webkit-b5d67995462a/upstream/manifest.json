@@ -1,0 +1,12 @@
+{
+  "name": "PhantomHEN",
+  "short_name": "PhantomHEN",
+  "description": "PS4 FW 14.02 Jailbreak - iDntUseModz",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050000",
+  "theme_color": "#cc0000",
+  "icons": [
+    { "src": "logo.png", "sizes": "any", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

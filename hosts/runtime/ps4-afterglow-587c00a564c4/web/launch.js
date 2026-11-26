@@ -8,7 +8,7 @@
   function say(element, text) { element.textContent = window.afterglowTranslate ? window.afterglowTranslate(text) : text; }
   var match = navigator.userAgent.match(/PlayStation 4[\/ ](\d+\.\d{2})(?:\D|$)/i);
   var allowed = !!match && ['14.02'].indexOf(match[1]) >= 0;
-  var targets = {hen: 'log=1&afterglow=run&payload=hen.bin', goldhen: 'log=1&afterglow=run&mode=goldhen'};
+  var targets = {phantomhen: 'phantomhen', hen: 'log=1&afterglow=run&payload=hen.bin', goldhen: 'log=1&afterglow=run&mode=goldhen'};
   var completed = false;
   try { completed = sessionStorage.getItem('wwb.afterglow.1402.completed') === '1'; } catch (_) {}
   function completedUI() {
@@ -29,7 +29,7 @@
     say(cache, busy() ? 'Waiting for cache' : appCache && appCache.status === 4 ? 'Reopen to update cache' : '');
     if (queued && !busy()) { queued = false; start(); }
   }
-  function start() {
+  function start() { if (picked() === 'phantomhen') { stop(); location.href='/ps4/phantomhen/'; return; }
     stop();
     if (!allowed || leaving || completed) return;
     if (appCache && appCache.status === 4) { say(cache, 'Reopen to update cache'); return; }

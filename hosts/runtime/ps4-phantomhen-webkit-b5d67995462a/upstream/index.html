@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PhantomHEN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="manifest" href="manifest.json" />
+  <style>
+  #gate{position:fixed;inset:0;z-index:9999;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  #gate-canvas{position:absolute;inset:0;width:100%;height:100%}
+  #gate-box{position:relative;z-index:1;border:1px solid #cc0000;padding:40px 50px;text-align:center;font-family:'Courier New',Courier,monospace;min-width:280px;max-width:340px;background:rgba(5,0,0,0.92);animation:phantomPulse 2s ease-in-out infinite}
+  @keyframes phantomPulse{
+    0%,100%{box-shadow:0 0 8px #cc0000,0 0 20px #2a0000,inset 0 0 8px rgba(204,0,0,.08)}
+    50%{box-shadow:0 0 28px #dd0000,0 0 60px #cc0000,0 0 100px #3d0000,inset 0 0 22px rgba(221,0,0,.2)}
+  }
+  #gate-logo{display:block;width:72px;height:72px;object-fit:contain;margin:0 auto 14px}
+  #gate-title{color:#ffffff;font-size:1rem;letter-spacing:.18em;text-shadow:0 0 10px #ff4444,0 0 22px #cc0000;margin-bottom:6px}
+  #gate-sub{color:#ff4444;font-size:.72rem;letter-spacing:.1em;margin-bottom:28px;text-shadow:0 0 8px #dd0000}
+  #gate-input{display:block;width:100%;background:#000;border:1px solid #330000;color:#ffe8e8;padding:10px 14px;font-family:'Courier New',monospace;font-size:1.1rem;letter-spacing:.2em;text-align:center;outline:none;margin-bottom:14px;box-sizing:border-box;transition:border-color .2s,box-shadow .2s}
+  #gate-input:focus{border-color:#cc0000;box-shadow:0 0 10px #3d0000}
+  #gate-btn{background:transparent;border:1px solid #cc0000;color:#ffffff;padding:9px 28px;font-family:'Courier New',monospace;font-size:.85rem;letter-spacing:.12em;cursor:pointer;width:100%;transition:background .12s,color .12s,box-shadow .15s;text-shadow:0 0 6px #ff4444}
+  #gate-btn:hover{background:#cc0000;color:#fff;box-shadow:0 0 18px #dd0000}
+  #gate-err{color:#ff6666;font-size:.75rem;margin-top:10px;letter-spacing:.08em;min-height:1.2em;text-shadow:0 0 6px #cc0000}
+  @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
+  </style>
+  </head>
+  <body>
+    <audio id="bgMusic" src="akatsuki.mp3" loop preload="auto" style="display:none"></audio>
+
+    <canvas id="matrix"></canvas>
+    <div class="scanlines"></div>
+
+    <div class="content">
+      <img class="brand-image" src="logo.png" width="192" height="192" alt="PhantomHEN">
+
+      <h1 class="title" data-text="â€¢ PhantomHEN â€¢">â€¢ PhantomHEN â€¢</h1>
+      <p class="subtitle">&gt;&gt; PhantomHEN // PS4 FW 14.02</p>
+      <p class="status" id="count">[ INITIALIZING... ]</p>
+
+      <a id="hen-settings-btn" href="settings.html" style="display:inline-block;margin-top:22px;background:transparent;border:1px solid #cc0000;color:#fff;padding:11px 32px;font-family:'Courier New',monospace;font-size:.88rem;letter-spacing:.12em;cursor:pointer;text-shadow:0 0 6px #ff4444;transition:background .15s,box-shadow .15s;text-decoration:none">
+        ⚙ HEN SETTINGS
+      </a>
+    </div>
+
+    <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").catch(function(){});
+    }
+    </script>
+
+    <script>
+    (function(){
+      function unlock(){
+        var bgm=document.getElementById('bgMusic');
+        if(bgm){bgm.volume=0.5;bgm.play().catch(function(){});}
+        var s1=document.createElement('script');
+        s1.src='matrix.js?v=1402b';
+        document.body.appendChild(s1);
+        s1.onload=function(){
+          var s2=document.createElement('script');
+          s2.src='launch.js?v=phantomhen301';
+          document.body.appendChild(s2);
+        };
+      }
+      setTimeout(unlock,300);
+    })();
+    </script>
+  </body>
+</html>

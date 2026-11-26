@@ -252,6 +252,31 @@
   ],
   "files": [
     {
+      "path": "LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "LICENSE-raw13g",
+      "bytes": 1362,
+      "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5749,
+      "sha256": "2deb19afc55137596c9723959e9d4d2ccfc9b4a25206a155228ba76a29116836"
+    },
+    {
+      "path": "TECHNICAL.md",
+      "bytes": 5835,
+      "sha256": "f77d1f564ee13894c4277400ef0f346fe96dd870d12c993bbf7ec00e4aabc673"
+    },
+    {
+      "path": "WEBKITTY-LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
       "path": "afterglow-1402.css",
       "bytes": 9136,
       "sha256": "a84b80d00a2f5e1dac855a4ea7664b924e9244a9d793845aab31eeed49e6df76"
@@ -273,8 +298,8 @@
     },
     {
       "path": "cache.appcache",
-      "bytes": 1965,
-      "sha256": "d2c6033cca44bb4e0b18cd110a954906598224c659579dddfaeacab4f767991c"
+      "bytes": 1940,
+      "sha256": "5a91ad49bfffac397f9da602b0357671f0cc1d295dbb1ea9cd39f52d1f048569"
     },
     {
       "path": "cache.js",
@@ -302,6 +327,11 @@
       "sha256": "c5480587d99efc2e3cc132352d9b7cf052dd3068280f1686e7fbb37d57e9ba8b"
     },
     {
+      "path": "hen-console.css",
+      "bytes": 1114,
+      "sha256": "4c0b006c52590d6c13252100f956728f9c8046111f03a89e1d98168b93cf7e7b"
+    },
+    {
       "path": "hen.bin",
       "bytes": 500864,
       "sha256": "420f5cfd72ec401f02beaaf3ddbe63b21c2ba1696904810044220e8d5f7cb5a2"
@@ -318,8 +348,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 6206,
-      "sha256": "3121ff0897eb2241c554583f63045fa173fad7a1ee2746efb38d2db42efe9762"
+      "bytes": 6374,
+      "sha256": "b2ee9ef60ce71bdc9aeb24a667a2109e5131986351fd8c67fcae0be7a2150dab"
     },
     {
       "path": "int64.js",
@@ -328,8 +358,8 @@
     },
     {
       "path": "jb.html",
-      "bytes": 9351,
-      "sha256": "d8b1dba04c741d27b691cc32f2b6d333637d8e7cabc40bbfe115bf5b5c8ce2d7"
+      "bytes": 9389,
+      "sha256": "258826a8b70fd9b586418bcc61e30f2a009c33428f36aed78c7a859ce17a9f06"
     },
     {
       "path": "jb.js",
@@ -338,18 +368,8 @@
     },
     {
       "path": "launch.js",
-      "bytes": 5413,
-      "sha256": "1d03190b256cafe7141aedf691b1ba84aa10479a0c49034627307729ea1cddb1"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 34523,
-      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
-    },
-    {
-      "path": "LICENSE-raw13g",
-      "bytes": 1362,
-      "sha256": "2ec58a4da676a8401fdf946c0238a458adb9dc7119e772646322caa4fefa2f68"
+      "bytes": 5524,
+      "sha256": "310522c73e996665adbcd1b25e8575340a3fa122ff2b7ee6aab5addcb85878e3"
     },
     {
       "path": "loaders.html",
@@ -378,8 +398,8 @@
     },
     {
       "path": "offline-files.json",
-      "bytes": 11938,
-      "sha256": "a6fb6bc577a1ab2016bdfb69d87798f5c1e7957d171ab3a8310ee6753725d1f5"
+      "bytes": 12352,
+      "sha256": "c026dbbf91ac3883fb267c700260daea2e80de3ccd2b916a981266c5c32df0bf"
     },
     {
       "path": "offline-sw.js",
@@ -472,11 +492,6 @@
       "sha256": "ed375f3bcd2a1807aecbbf6d2c0d7f8a83a43164e6e32895ddd12e739a8cebe2"
     },
     {
-      "path": "README.md",
-      "bytes": 5749,
-      "sha256": "2deb19afc55137596c9723959e9d4d2ccfc9b4a25206a155228ba76a29116836"
-    },
-    {
       "path": "serve.sh",
       "bytes": 2726,
       "sha256": "bf6af8004324e3aa6543498c74f94478d195b1629f50cca221f69316e5fbd461"
@@ -492,24 +507,34 @@
       "sha256": "bf6dce6c77b45c39c7a65ab46b29f86bc8ffe2c13e84c038a9701ac8fea52db6"
     },
     {
-      "path": "TECHNICAL.md",
-      "bytes": 5835,
-      "sha256": "f77d1f564ee13894c4277400ef0f346fe96dd870d12c993bbf7ec00e4aabc673"
-    },
-    {
       "path": "webkitty-ApolloSaveToolv232.bin",
       "bytes": 12508,
       "sha256": "67a2f180a6e78b5c9e965cc8d407f54cbbbf0928765a5b95235f7f2ac0cce215"
     },
     {
+      "path": "webkitty-PS4-Itemzflow-v108.bin",
+      "bytes": 12444,
+      "sha256": "dabf4e2340fbcd5db6f61ad3feaae0e65c574a5df7b36f2c26eaef4134cddc19"
+    },
+    {
+      "path": "webkitty-PS4-Xplorer-209.bin",
+      "bytes": 12476,
+      "sha256": "6e6a9f06430c4da48b11cb4a4d0553d049c98f8fda153c9f66024445a1f62f98"
+    },
+    {
+      "path": "webkitty-PlayStationVue-124-installer.bin",
+      "bytes": 12508,
+      "sha256": "fb4629c04bc8edeac8ca1c2ee672d155377087bb829db8610951f9f08b162f6d"
+    },
+    {
+      "path": "webkitty-PlayStationVue-base-installer.bin",
+      "bytes": 12508,
+      "sha256": "e4ad85b29bb4770544d9abf9eb5f2766cf9765c04e22ab8e7f11f99294c45ac8"
+    },
+    {
       "path": "webkitty-db-rebuilder-v0.2.bin",
       "bytes": 653884,
       "sha256": "15568b7fd41078de9d6fc9ed562d2c40e2bc0705b9f24651af96d56b982abdc3"
-    },
-    {
-      "path": "WEBKITTY-LICENSE",
-      "bytes": 34523,
-      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
     },
     {
       "path": "webkitty-linux-1024mb.elf",
@@ -555,16 +580,6 @@
       "path": "webkitty-online-store-installer.bin",
       "bytes": 13756,
       "sha256": "c24067b718bdad1617b562bc43d240713e29eae29c34e816fef343c261d7748e"
-    },
-    {
-      "path": "webkitty-PlayStationVue-124-installer.bin",
-      "bytes": 12508,
-      "sha256": "fb4629c04bc8edeac8ca1c2ee672d155377087bb829db8610951f9f08b162f6d"
-    },
-    {
-      "path": "webkitty-PlayStationVue-base-installer.bin",
-      "bytes": 12508,
-      "sha256": "e4ad85b29bb4770544d9abf9eb5f2766cf9765c04e22ab8e7f11f99294c45ac8"
     },
     {
       "path": "webkitty-ps4-app2usb.bin",
@@ -622,11 +637,6 @@
       "sha256": "feaa02d813f9a47515e324198f9c014176587a909978385d86e231f4b3609d52"
     },
     {
-      "path": "webkitty-PS4-Itemzflow-v108.bin",
-      "bytes": 12444,
-      "sha256": "dabf4e2340fbcd5db6f61ad3feaae0e65c574a5df7b36f2c26eaef4134cddc19"
-    },
-    {
       "path": "webkitty-ps4-kernel-dumper.bin",
       "bytes": 19156,
       "sha256": "2ad344bef83fe7da9428571c205d8463739d21776d68e1adcf08f829610f4605"
@@ -665,11 +675,6 @@
       "path": "webkitty-ps4-websrv.bin",
       "bytes": 30508,
       "sha256": "0c1ec57554b33b71b0d5506041eda2523d33abf238ea43bf425c5e38826db1d7"
-    },
-    {
-      "path": "webkitty-PS4-Xplorer-209.bin",
-      "bytes": 12476,
-      "sha256": "6e6a9f06430c4da48b11cb4a4d0553d049c98f8fda153c9f66024445a1f62f98"
     },
     {
       "path": "webkitty-ps4debug-ng_v1.3.4.bin",
@@ -714,7 +719,8 @@
     "Kept the current pinned Afterglow exploit modules, firmware offsets, HEN payloads and patchsets byte-identical to upstream.",
     "Kept GoldHEN 2.4b18.14 and the upstream-bundled ps4-hen choice.",
     "Preserved the stock upstream tree, previous 944d5aeed06f runtime and every older download.",
-    "Kept separate WWB BIN/ELF loader tools available from the restored landing."
+    "Kept separate WWB BIN/ELF loader tools available from the restored landing.",
+    "Added the separate pinned PhantomHEN 14.02 console option."
   ],
   "limitations": [
     "Afterglow documents an unrecoverable kernel-allocation race that can still freeze or power off a console during an attempt.",
@@ -722,11 +728,11 @@
     "Physical-console execution was not performed during this layout restoration."
   ],
   "archive": {
-    "filename": "afterglow-1402-587c00a564c4-d42fada08cf1.zip",
-    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-d42fada08cf1.zip",
-    "bytes": 4196710,
-    "sha256": "d42fada08cf11660b9cc2c777ad72ed488ed12c8e28fc0a0b4760ff721a4617b",
+    "filename": "afterglow-1402-587c00a564c4-56b6e30c932f.zip",
+    "local": "downloads/hosts/afterglow/afterglow-1402-587c00a564c4-56b6e30c932f.zip",
+    "bytes": 4197579,
+    "sha256": "56b6e30c932fa7618f73ee556fdba5689c3d980eb6dfe138f2a7c5fb3399d910",
     "sourceURL": "https://github.com/well0nez/afterglow-web/tree/587c00a564c4765b78ab413e400a392efdd9a780",
-    "version": "587c00a564c4765b78ab413e400a392efdd9a780-wwb-layout-v3.1"
+    "version": "587c00a564c4765b78ab413e400a392efdd9a780-phantom-option-wwb-layout-v3.1"
   }
 }
