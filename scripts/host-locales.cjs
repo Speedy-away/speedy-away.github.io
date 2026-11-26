@@ -36,6 +36,7 @@ function localized(data,code,table){if(code==='en')return {...data,language:'en'
  else if(/ESP/.test(data.name))keywordTerms.push('ESP','Web Serial',t('Firmware'));
  else if(/Credits/.test(data.name))keywordTerms.push(t('Credits & Sources'));
  if(data.platform==='ps4'&&/14\.02/.test(data.description))keywordTerms.push('GoldHEN','HEN','SilverHEN','HEN / SilverHEN','PhantomHEN');
+ for(const keyword of data.keywords||[])if(/phantomhen|phantom hen|HEN184|HEN 184|hen1402_184|idntusemodz/i.test(keyword))keywordTerms.push(keyword);
  for(const keyword of data.keywords||[])if(/PS[45] 14\./.test(keyword)){const match=keyword.match(/^(PS[45] [\d.]+) (.+)$/);keywordTerms.push(match?match[1]+' '+t(match[2]==='WebKit'?'WebKit exploit':match[2]==='firmware'?'Firmware':match[2]):keyword);}
  return {...data,name,description,keywords:[...new Set(keywordTerms)],language:code,image:data.image?{...data.image,alt:t('Console')+' '+(data.platform?data.platform.toUpperCase():'PlayStation')}:{path:'/assets/images/host-selector/whatwhatboy-ps5.jpg',width:1672,height:941,alt:t('Console')+' PlayStation'}};
 }
